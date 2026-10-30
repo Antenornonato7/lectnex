@@ -13,7 +13,7 @@
     /* ------------------------------------------------------------------ CONFIG */
     LX.config = Object.assign({
         // Token gratuito em https://brapi.dev (sem token, só PETR4/VALE3/ITUB4/MGLU3 respondem)
-        brapiToken: '',
+        brapiToken: 'uRJnTfjL6jypdHfJ8b5LJd',
         // Valores de referência usados até a resposta das APIs (ou se elas falharem).
         // Atualize aqui quando necessário — a página mostra a data de referência.
         fallback: {
