@@ -161,7 +161,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261030b"></script>
+    <script src="assets/lectnex-core.js?v=20261030c"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -406,7 +406,7 @@
         }
 
         /* ================= FLUXO ESTRANGEIRO (BCB SGS 22927) ================= */
-        LX.sgs(22927, 24).then(rows => {
+        LX.sgs(22927, 20).then(rows => {
             const data = rows.map(r => { const [, m, y] = r.date.split('/'); return { v: r.value, label: `${LX.monthName[+m - 1]}/${y}`, short: `${LX.monthName[+m - 1]}/${y.slice(2)}` }; });
             bars($('fx-foreign'), data, { every: 3, fmt: v => LX.num(v, 0), aria: 'Investimento estrangeiro em ações brasileiras por mês' });
             const last12 = data.slice(-12).reduce((a, d) => a + d.v, 0), last = data[data.length - 1];

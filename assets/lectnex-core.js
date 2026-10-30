@@ -3,7 +3,7 @@
    - Dados reais: Banco Central (SGS / PTAX / Focus) e AwesomeAPI (câmbio, cripto)
    - Calendário B3: feriados, dias úteis, vencimentos de WIN, WDO, DI1 e opções
    - Status dos pregões, relógio, tema claro/escuro e widgets TradingView
-   Nenhuma dependência externa. Carregue com <script src="assets/lectnex-core.js?v=20261030b"></script>
+   Nenhuma dependência externa. Carregue com <script src="assets/lectnex-core.js?v=20261030c"></script>
    ===================================================================================== */
 (function () {
     'use strict';
@@ -231,7 +231,8 @@
     LX.getJSON = getJSON;
 
     async function sgs(code, n = 1) {
-        const j = await getJSON(`https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados/ultimos/${n}?formato=json`);
+        const count = Math.min(n || 1, 20);
+        const j = await getJSON(`https://api.bcb.gov.br/dados/serie/bcdata.sgs.${code}/dados/ultimos/${count}?formato=json`);
         return j.map(r => ({ date: r.data, value: parseFloat(String(r.valor).replace(',', '.')) }));
     }
     LX.sgs = sgs;
