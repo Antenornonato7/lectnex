@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lectnex Terminal — Laboratório Âncora: Enciclopédia do Mercado &amp; Simuladores</title>
+    <title>Lectnex Academia — Lições Interativas, Glossário e Simuladores do Mercado Financeiro</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script src="assets/tw-config.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -21,232 +21,87 @@
     <main class="py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <div class="pb-6 mb-8 border-b border-slate-300 dark:border-lect-borderDark">
-                <div class="flex items-center gap-2">
-                    <span class="px-2.5 py-0.5 bg-lect-navy text-white dark:bg-lect-teal font-mono text-[10px] font-bold uppercase tracking-wider border-l-2 border-lect-orange">
-                        LECTNEX RESEARCH &amp; EDUCATION ACADEMY
-                    </span>
-                    <span class="term-label">ENCICLOPÉDIA DO MERCADO · RENDA FIXA &amp; CDI · AÇÕES &amp; VALUATION · DIVIDENDOS &amp; JCP</span>
+            <!-- HERO DA ACADEMIA -->
+            <section class="relative overflow-hidden bg-lect-navy text-white border-l-4 border-lect-orange mb-6">
+                <div class="absolute inset-0 grid-bg opacity-40 pointer-events-none"></div>
+                <div class="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-lect-teal/20 blur-3xl pointer-events-none"></div>
+                <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8">
+                    <div class="lg:col-span-8">
+                        <span class="inline-flex items-center gap-2 px-2.5 py-1 bg-white/10 font-mono text-[10px] font-bold tracking-widest"><i class="ph-fill ph-graduation-cap text-lect-orange"></i>LECTNEX ACADEMIA</span>
+                        <h1 class="font-display text-3xl sm:text-5xl font-bold mt-4 leading-tight">Aprenda o mercado <span class="text-lect-tealLight">mexendo nos números</span>.</h1>
+                        <p class="text-slate-300 mt-3 text-sm sm:text-base max-w-2xl leading-relaxed">Lições curtas, cada uma com uma ferramenta interativa, um exemplo real e uma pergunta para fixar. Do Copom ao day trade de WIN — no seu ritmo, com o progresso salvo neste navegador.</p>
+                        <div class="flex flex-wrap gap-2 mt-6">
+                            <button id="ac-continue" class="px-4 py-2.5 bg-lect-orange hover:bg-orange-600 text-white font-bold text-sm inline-flex items-center gap-2"><i class="ph-fill ph-play"></i><span>Começar a primeira lição</span></button>
+                            <button onclick="switchLabTab('trade'); document.getElementById('lab-nav').scrollIntoView({behavior:'smooth'})" class="px-4 py-2.5 bg-white/10 hover:bg-white/20 text-white font-bold text-sm inline-flex items-center gap-2"><i class="ph-bold ph-calculator"></i>Ir para os simuladores</button>
+                        </div>
+                        <div class="flex flex-wrap gap-x-6 gap-y-2 mt-6 font-mono text-[11px] text-slate-300">
+                            <span><strong id="ac-n-lessons" class="text-white text-base">11</strong> lições</span>
+                            <span><strong class="text-white text-base">3</strong> trilhas</span>
+                            <span><strong id="ac-n-terms" class="text-white text-base">30</strong> termos no glossário</span>
+                            <span><strong class="text-white text-base">4</strong> simuladores</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 flex lg:justify-end">
+                        <div class="w-full max-w-xs bg-white/5 border border-white/10 p-5">
+                            <div class="flex items-center gap-4">
+                                <div id="ac-ring" class="shrink-0"></div>
+                                <div><span class="term-label !text-slate-400 block">Seu progresso</span><strong id="ac-progress-txt" class="font-display text-xl block">0 de 11</strong><span class="text-[11px] text-slate-400">lições concluídas</span></div>
+                            </div>
+                            <div id="ac-trail-bars" class="mt-4 space-y-2.5"></div>
+                        </div>
+                    </div>
                 </div>
-                <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Laboratório Âncora — Centro de Estudos &amp; Simuladores do Mercado Financeiro</h1>
-                <p class="text-slate-600 dark:text-slate-400 mt-2 text-sm max-w-4xl leading-relaxed">
-                    Explore a base técnica completa sobre o <strong>Sistema Financeiro Nacional</strong>, <strong>Taxa Selic e CDI</strong>, <strong>Ações na B3</strong>, <strong>Dividendos e Juros sobre Capital Próprio (JCP)</strong> e utilize nossas <strong>4 ferramentas de simulação quantitativa</strong> (Compra/Venda vs. CDI, Bola de Neve de Proventos, Preço Teto Bazin/Graham e Comparador de Renda Fixa).
-                </p>
-            </div>
+            </section>
 
-            <!-- NAVEGAÇÃO DOS 6 MÓDULOS -->
-            <div class="bg-white dark:bg-lect-cardDark border border-slate-300 dark:border-lect-borderDark p-2 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-2 font-mono text-[11px]">
-                <button onclick="switchLabTab('sistema')" id="lab-tab-btn-sistema" class="bg-lect-navy text-white border-l-4 border-lect-orange px-3 py-3 text-left font-bold flex items-center justify-between">
-                    <span>01. Sistema Financeiro, Selic &amp; CDI</span>
-                    <i class="ph-bold ph-bank text-lect-orange text-sm shrink-0"></i>
-                </button>
-                <button onclick="switchLabTab('acoes')" id="lab-tab-btn-acoes" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
-                    <span>02. Guia Ações, Dividendos &amp; JCP</span>
-                    <i class="ph-bold ph-books text-lect-teal text-sm shrink-0"></i>
-                </button>
-                <button onclick="switchLabTab('trade')" id="lab-tab-btn-trade" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
-                    <span>03. Simulador Compra &amp; Venda Ações</span>
-                    <i class="ph-bold ph-arrows-left-right text-lect-orange text-sm shrink-0"></i>
-                </button>
-                <button onclick="switchLabTab('proventos')" id="lab-tab-btn-proventos" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
-                    <span>04. Simulador Dividendos &amp; JCP</span>
-                    <i class="ph-bold ph-coins text-lect-teal text-sm shrink-0"></i>
-                </button>
-                <button onclick="switchLabTab('valuation')" id="lab-tab-btn-valuation" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
-                    <span>05. Preço Teto: Bazin &amp; Graham</span>
-                    <i class="ph-bold ph-scales text-lect-orange text-sm shrink-0"></i>
-                </button>
-                <button onclick="switchLabTab('rf')" id="lab-tab-btn-rf" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
-                    <span>06. Comparador Renda Fixa</span>
-                    <i class="ph-bold ph-calculator text-lect-teal text-sm shrink-0"></i>
-                </button>
-            </div>
+            <!-- NAVEGAÇÃO: ESTUDAR / SIMULAR -->
+            <nav id="lab-nav" class="sticky top-[72px] z-30 bg-white/95 dark:bg-lect-cardDark/95 backdrop-blur border border-slate-300 dark:border-lect-borderDark mb-8 flex items-stretch overflow-x-auto thin-scroll font-mono text-[11px] scroll-mt-28">
+                <span class="hidden sm:flex items-center px-3 text-[9px] font-bold tracking-widest text-slate-400 border-r border-slate-200 dark:border-lect-borderDark">ESTUDAR</span>
+                <button onclick="switchLabTab('academia')" id="lab-tab-btn-academia" data-lab-tab><i class="ph-bold ph-graduation-cap"></i>Academia</button>
+                <span class="hidden sm:flex items-center px-3 text-[9px] font-bold tracking-widest text-slate-400 border-x border-slate-200 dark:border-lect-borderDark">SIMULAR</span>
+                <button onclick="switchLabTab('trade')" id="lab-tab-btn-trade" data-lab-tab><i class="ph-bold ph-arrows-left-right"></i>Compra &amp; venda × CDI</button>
+                <button onclick="switchLabTab('proventos')" id="lab-tab-btn-proventos" data-lab-tab><i class="ph-bold ph-coins"></i>Dividendos &amp; JCP</button>
+                <button onclick="switchLabTab('valuation')" id="lab-tab-btn-valuation" data-lab-tab><i class="ph-bold ph-scales"></i>Preço teto</button>
+                <button onclick="switchLabTab('rf')" id="lab-tab-btn-rf" data-lab-tab><i class="ph-bold ph-bank"></i>Renda fixa</button>
+            </nav>
 
             <!-- ======================================================================================== -->
-            <!-- MÓDULO 01: SISTEMA FINANCEIRO, MACROECONOMIA, SELIC, CDI & RENDA FIXA COMPLETA           -->
+            <!-- ACADEMIA: TRILHAS, LIÇÕES INTERATIVAS E GLOSSÁRIO (conteúdo em assets/lectnex-academia.js) -->
             <!-- ======================================================================================== -->
-            <div id="lab-panel-sistema" class="space-y-8">
-                <div class="term-panel p-6 border-t-4 border-t-lect-navy dark:border-t-lect-teal">
-                    <span class="term-label text-lect-teal font-bold">ESTRUTURA INSTITUCIONAL DO MERCADO BRASILEIRO</span>
-                    <h2 class="font-display text-2xl font-bold mt-1">1. Como Funciona o Sistema Financeiro Nacional (SFN)</h2>
-                    <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                        Todo o dinheiro negociado em contas bancárias, títulos públicos, fundos e na bolsa de valores passa por uma hierarquia de órgãos normativos, supervisores e operadores que garantem segurança e liquidação:
-                    </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-5 font-mono text-xs">
-                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                            <strong class="text-lect-navy dark:text-white block text-sm">CMN &amp; BACEN</strong>
-                            <span class="text-[10px] text-lect-orange font-bold uppercase">Moeda e Juros</span>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-2">
-                                O <strong>CMN (Conselho Monetário Nacional)</strong> define a meta de inflação. O <strong>Banco Central (Bacen)</strong> executa a política monetária via <strong>Copom</strong>, definindo a Taxa Selic Meta a cada 45 dias.
-                            </p>
-                        </div>
-                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                            <strong class="text-lect-navy dark:text-white block text-sm">CVM</strong>
-                            <span class="text-[10px] text-lect-teal font-bold uppercase">Xerife do Mercado de Capitais</span>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-2">
-                                A <strong>Comissão de Valores Mobiliários</strong> fiscaliza empresas abertas, fundos de investimento, corretoras, ofertas públicas (IPOs) e pune uso de informação privilegiada (<em>Insider Trading</em>).
-                            </p>
-                        </div>
-                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                            <strong class="text-lect-navy dark:text-white block text-sm">B3 (Brasil, Bolsa, Balcão)</strong>
-                            <span class="text-[10px] text-emerald-600 font-bold uppercase">Negociação, Custódia e BTC</span>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-2">
-                                Onde são negociadas ações, opções, contratos futuros (WIN, WDO, DI) e onde ficam custodiados os títulos privados e ações no seu CPF (antiga CBLC / Cetip).
-                            </p>
-                        </div>
-                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                            <strong class="text-lect-navy dark:text-white block text-sm">FGC (Fundo Garantidor)</strong>
-                            <span class="text-[10px] text-purple-600 font-bold uppercase">Proteção na Renda Fixa</span>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-2">
-                                Garante até <strong>R$ 250 mil por CPF e por instituição financeira</strong> (teto global de R$ 1 milhão a cada 4 anos) para CDB, LCI, LCA, LC e Poupança. (Não cobre Ações, Fundos ou Debêntures).
-                            </p>
-                        </div>
+            <div id="lab-panel-academia" class="space-y-10">
+                <div>
+                    <div class="flex items-end justify-between gap-4 mb-3">
+                        <div><span class="term-label text-lect-teal font-bold">ESCOLHA UMA TRILHA</span><h2 class="font-display text-2xl font-bold">Trilhas de estudo</h2></div>
                     </div>
+                    <div id="ac-trails" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div class="term-panel p-6 border-t-4 border-t-lect-teal">
-                        <span class="term-label text-lect-teal font-bold">O BENCHMARK DE TUDO NO BRASIL</span>
-                        <h3 class="font-display text-xl font-bold mt-1">2. Taxa Selic vs. CDI: O Que São e Como Calculam seu Rendimento</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                            Para saber se uma ação ou qualquer investimento vale a pena, você precisa compará-lo ao <strong>CDI</strong>:
-                        </p>
-                        <div class="mt-4 space-y-3 font-mono text-xs bg-slate-50 dark:bg-lect-bgDark p-4 border border-slate-200 dark:border-lect-borderDark">
-                            <div>
-                                <strong class="text-lect-navy dark:text-white">● Taxa Selic Meta vs. Selic Over:</strong> A Selic Meta (ex: <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">13,75% a.a.</code>) é decidida na reunião do Copom. Já a Selic Over (<code class="px-1 bg-slate-100 dark:bg-lect-bgDark">13,65% a.a.</code>) é a taxa efetiva praticada diariamente entre os bancos com lastro em títulos públicos federais.
-                            </div>
-                            <div>
-                                <strong class="text-lect-teal">● O que é o CDI (Certificado de Depósito Interbancário):</strong> Por regra do Banco Central, nenhum banco pode terminar o dia com caixa negativo. Bancos que sobram caixa emprestam por 1 dia útil para bancos que precisam, usando o CDI. Por isso, a taxa do CDI é praticamente idêntica à Selic Over (<code class="px-1 bg-slate-100 dark:bg-lect-bgDark">13,65% a.a.</code>).
-                            </div>
-                            <div>
-                                <strong class="text-lect-orange">● Fórmula Exata do CDI Diário (Base 252 Dias Úteis):</strong>
-                                <span class="block mt-1 p-2 bg-white dark:bg-lect-cardDark border border-slate-200 dark:border-lect-borderDark">
-                                    Fator Diário = (1 + Taxa_CDI_Anual)^(1 / 252) - 1
-                                </span>
-                                Exemplo: Com CDI a <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">13,65% a.a.</code>, o dinheiro rende cerca de <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">0,0508% por dia útil</code> (ou <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">~1,07% ao mês</code> com 21 dias úteis).
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="term-panel p-6 border-t-4 border-t-lect-orange">
-                        <span class="term-label text-lect-orange font-bold">TÍTULOS PÚBLICOS &amp; PRIVADOS</span>
-                        <h3 class="font-display text-xl font-bold mt-1">3. Mapa dos Instrumentos de Renda Fixa e Tributação</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                            Na Renda Fixa, você empresta dinheiro para o Governo (Tesouro Direto), para um Banco (CDB, LCI, LCA) ou para uma Empresa S.A. (Debêntures, CRI, CRA):
-                        </p>
-                        <div class="mt-4 space-y-2.5 font-mono text-xs">
-                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-lect-teal">
-                                <strong>Pós-Fixados (Tesouro Selic / CDB % CDI):</strong> Acompanham a subida ou descida da Selic/CDI diariamente. Quase não sofrem oscilação negativa na marcação a mercado; ideais para reserva de liquidez e margem de garantia na B3.
-                            </div>
-                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-lect-orange">
-                                <strong>Híbridos (Tesouro IPCA+ / NTN-B):</strong> Pagam a inflação oficial (<code class="px-1 bg-slate-100 dark:bg-lect-bgDark">IPCA</code>) + uma taxa de juro real prefixada (ex: <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">IPCA + 6,40% a.a.</code>). Protegem o poder de compra no longo prazo.
-                            </div>
-                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-emerald-500">
-                                <strong>Isentos de Imposto de Renda (LCI, LCA, CRI, CRA, Debêntures Incentivadas):</strong> Não pagam IR para pessoa física. Uma LCI que paga 88% do CDI equivale a um CDB de 103,5% do CDI após 2 anos (use o Módulo 06 para comparar!). LCI e LCA exigem prazo mínimo de carência definido pelo CMN.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ======================================================================================== -->
-            <!-- MÓDULO 02: TUDO SOBRE AÇÕES, VALUATION, DIVIDENDOS, JCP E OPERAÇÕES NA B3               -->
-            <!-- ======================================================================================== -->
-            <div id="lab-panel-acoes" class="hidden space-y-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                    <div class="lg:col-span-6 term-panel p-6 border-t-4 border-t-lect-teal">
-                        <span class="term-label text-lect-teal font-bold">ANATOMIA DAS AÇÕES NA B3</span>
-                        <h2 class="font-display text-xl font-bold mt-1">1. Códigos de Ações (3, 4, 11), Governança e Eventos</h2>
-                        <div class="mt-4 space-y-3 font-mono text-xs">
-                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                                <strong class="text-lect-navy dark:text-white">● ON — Ordinárias (Final 3 · Ex: VALE3, WEGE3, BBAS3):</strong> Dão direito a voto em assembleia e <em>Tag Along</em> (direito de vender suas ações junto com o controlador caso a empresa seja vendida). No <strong>Novo Mercado</strong>, 100% das ações são ON.
-                            </div>
-                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                                <strong class="text-lect-navy dark:text-white">● PN — Preferenciais (Final 4, 5, 6 · Ex: PETR4, ITUB4, CPLE6):</strong> Têm preferência no recebimento de dividendos e no reembolso de capital, geralmente sem direito a voto.
-                            </div>
-                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                                <strong class="text-lect-navy dark:text-white">● Units (Final 11 · Ex: TAEE11, SANB11, BPAC11, KLBN11):</strong> Certificados de depósito que agrupam ações ON + PN no mesmo pacote.
-                            </div>
-                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                                <strong class="text-lect-orange">● Desdobramento (Split) vs. Grupamento (Inplit):</strong> No <em>Split</em> (ex: 1 para 2), uma ação de R$ 80 vira 2 ações de R$ 40 para aumentar a liquidez (seu patrimônio não muda). No <em>Inplit</em>, várias ações são unidas em 1 ação de valor maior.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lg:col-span-6 term-panel p-6 border-t-4 border-t-lect-orange">
-                        <span class="term-label text-lect-orange font-bold">REMUNERAÇÃO DO ACIONISTA</span>
-                        <h2 class="font-display text-xl font-bold mt-1">2. Dividendos vs. Juros Sobre Capital Próprio (JCP)</h2>
-                        <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">
-                            Como sócio da empresa, você recebe parte dos lucros gerados. Veja a diferença exata entre <strong>Dividendos</strong> e <strong>JCP</strong>:
-                        </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 font-mono text-xs">
-                            <div class="p-4 bg-emerald-500/10 border border-emerald-500/30">
-                                <span class="font-bold text-emerald-700 dark:text-emerald-400 uppercase block">DIVIDENDOS (isentos até R$ 50 mil/mês)</span>
-                                <ul class="mt-2 space-y-1.5 font-sans text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
-                                    <li>Saem do lucro líquido <strong>depois</strong> que a empresa já pagou IRPJ/CSLL (34%).</li>
-                                    <li><strong>Isentos de IR</strong> para pessoa física quando a mesma empresa paga até <strong>R$ 50.000 no mês</strong>.</li>
-                                    <li>Desde jan/2026 (Lei 15.270/2025): acima de R$ 50 mil/mês da mesma empresa, retenção de <strong>10% sobre o total</strong>.</li>
-                                    <li>Rendas anuais acima de R$ 600 mil entram na tributação mínima (IRPFM).</li>
-                                </ul>
-                            </div>
-                            <div class="p-4 bg-amber-500/10 border border-amber-500/30">
-                                <span class="font-bold text-amber-700 dark:text-amber-400 uppercase block">JCP — Juros s/ Capital (17,5% IR)</span>
-                                <ul class="mt-2 space-y-1.5 font-sans text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
-                                    <li>Calculado sobre o Patrimônio Líquido (limitado à variação da TJLP).</li>
-                                    <li>Contabilizado como <strong>despesa</strong> antes do imposto da empresa.</li>
-                                    <li>Sofre <strong>retenção de 17,5% de IR na fonte</strong> desde jan/2026 (antes 15%): você recebe <strong>82,5% líquidos</strong>.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-4 p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark font-mono text-xs">
-                            <strong class="text-lect-navy dark:text-white block">Por que o preço da ação cai na "Data Ex"?</strong>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-1">
-                                Quando uma ação que fechou a <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">R$ 30,00</code> na <strong>Data Com</strong> fica "Ex-Dividendos" de <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">R$ 1,50</code> no dia seguinte (<strong>Data Ex</strong>), o caixa saiu do patrimônio da empresa e foi para o bolso do acionista. Por isso, a B3 ajusta o preço de referência de abertura para <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">R$ 28,50</code> (<code class="px-1 bg-slate-100 dark:bg-lect-bgDark">30,00 - 1,50</code>).
-                            </p>
-                        </div>
-                    </div>
+                <div id="ac-player" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start scroll-mt-40">
+                    <aside class="lg:col-span-4 term-panel lg:sticky lg:top-[136px]">
+                        <div id="ac-side-head" class="p-4 border-b border-slate-200 dark:border-lect-borderDark"></div>
+                        <ol id="ac-side" class="divide-y divide-slate-100 dark:divide-lect-borderDark"></ol>
+                    </aside>
+                    <article id="ac-lesson" class="lg:col-span-8 term-panel"></article>
                 </div>
 
-                <div class="term-panel p-6">
-                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-200 dark:border-lect-borderDark">
-                        <div>
-                            <span class="term-label text-lect-teal font-bold">ANÁLISE FUNDAMENTALISTA &amp; MÚLTIPLOS</span>
-                            <h3 class="font-display text-xl font-bold">3. Principais Indicadores Para Analisar uma Ação</h3>
-                        </div>
-                        <span class="font-mono text-[10px] px-2.5 py-1 bg-lect-navy text-white">GUIA DE VALUATION</span>
+                <section id="glossario" class="term-panel scroll-mt-40">
+                    <div class="p-5 border-b border-slate-200 dark:border-lect-borderDark flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+                        <div><span class="term-label text-lect-orange font-bold">CONSULTA RÁPIDA</span><h2 class="font-display text-2xl font-bold">Glossário do mercado</h2></div>
+                        <label class="relative sm:w-72"><i class="ph ph-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i><input id="ac-gq" class="lx-input !pl-9" placeholder="Buscar termo (ex.: ajuste, tag along)"></label>
                     </div>
+                    <div id="ac-gletters" class="px-5 pt-4 flex flex-wrap gap-1 font-mono text-[11px]"></div>
+                    <div id="ac-gl" class="p-5 grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+                </section>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 font-mono text-xs">
-                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                            <span class="text-lect-teal font-bold text-sm block">P/L (Preço / Lucro)</span>
-                            <span class="text-[10px] text-slate-400">Fórmula: Cotação &divide; LPA</span>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-300 mt-2">
-                                Indica em quantos anos o lucro atual da empresa pagaria o preço da ação. Um <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">P/L = 6x</code> significa que a empresa negocia a 6 vezes seu lucro anual.
-                            </p>
-                        </div>
-                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                            <span class="text-lect-teal font-bold text-sm block">P/VP (Preço / Valor Patrim.)</span>
-                            <span class="text-[10px] text-slate-400">Fórmula: Cotação &divide; VPA</span>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-300 mt-2">
-                                Compara o valor de mercado com o patrimônio líquido contábil. `P/VP < 1,0` indica que a ação negocia com desconto em relação ao valor contábil dos seus ativos líquidos.
-                            </p>
-                        </div>
-                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                            <span class="text-lect-orange font-bold text-sm block">ROE (Return on Equity)</span>
-                            <span class="text-[10px] text-slate-400">Lucro Líquido &divide; Patrimônio Líq.</span>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-300 mt-2">
-                                Mede a rentabilidade que a empresa gera sobre o capital dos acionistas. Empresas de alta qualidade costumam ter `ROE > 15% a 20% a.a.`, superando o CDI.
-                            </p>
-                        </div>
-                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                            <span class="text-emerald-600 font-bold text-sm block">DY &amp; Payout</span>
-                            <span class="text-[10px] text-slate-400">Proventos 12m &divide; Cotação</span>
-                            <p class="font-sans text-xs text-slate-600 dark:text-slate-300 mt-2">
-                                O <strong>Dividend Yield (DY)</strong> mostra o retorno anual em proventos sobre o preço atual. O <strong>Payout</strong> é a porcentagem do lucro líquido que a empresa distribui.
-                            </p>
-                        </div>
+                <section>
+                    <span class="term-label text-lect-teal font-bold">DA TEORIA À PRÁTICA</span>
+                    <h2 class="font-display text-2xl font-bold mb-3">Simuladores</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <button onclick="switchLabTab('trade')" class="group text-left term-panel p-5 hover:border-lect-teal transition-colors"><i class="ph-duotone ph-arrows-left-right text-3xl text-lect-teal"></i><strong class="block mt-3 font-display">Compra &amp; venda × CDI</strong><span class="block text-xs text-slate-500 mt-1">Resultado de uma operação com IR, comparado a deixar no CDI.</span><span class="inline-flex items-center gap-1 mt-3 text-[11px] font-mono font-bold text-lect-teal group-hover:gap-2 transition-all">ABRIR <i class="ph-bold ph-arrow-right"></i></span></button>
+                        <button onclick="switchLabTab('proventos')" class="group text-left term-panel p-5 hover:border-lect-teal transition-colors"><i class="ph-duotone ph-coins text-3xl text-lect-orange"></i><strong class="block mt-3 font-display">Dividendos &amp; JCP</strong><span class="block text-xs text-slate-500 mt-1">A bola de neve dos proventos reinvestidos, com as regras de 2026.</span><span class="inline-flex items-center gap-1 mt-3 text-[11px] font-mono font-bold text-lect-teal group-hover:gap-2 transition-all">ABRIR <i class="ph-bold ph-arrow-right"></i></span></button>
+                        <button onclick="switchLabTab('valuation')" class="group text-left term-panel p-5 hover:border-lect-teal transition-colors"><i class="ph-duotone ph-scales text-3xl text-sky-500"></i><strong class="block mt-3 font-display">Preço teto</strong><span class="block text-xs text-slate-500 mt-1">Bazin (dividendos) e Graham (lucro e patrimônio).</span><span class="inline-flex items-center gap-1 mt-3 text-[11px] font-mono font-bold text-lect-teal group-hover:gap-2 transition-all">ABRIR <i class="ph-bold ph-arrow-right"></i></span></button>
+                        <button onclick="switchLabTab('rf')" class="group text-left term-panel p-5 hover:border-lect-teal transition-colors"><i class="ph-duotone ph-bank text-3xl text-emerald-500"></i><strong class="block mt-3 font-display">Renda fixa</strong><span class="block text-xs text-slate-500 mt-1">CDB × LCI/LCA × IPCA+ no mesmo prazo, já com imposto.</span><span class="inline-flex items-center gap-1 mt-3 text-[11px] font-mono font-bold text-lect-teal group-hover:gap-2 transition-all">ABRIR <i class="ph-bold ph-arrow-right"></i></span></button>
                     </div>
-                </div>
+                </section>
             </div>
 
             <!-- ======================================================================================== -->
@@ -702,7 +557,8 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261030c"></script>
+    <script src="assets/lectnex-core.js?v=20261030g"></script>
+    <script src="assets/lectnex-academia.js?v=20261030a" defer></script>
 
     <script>
 
@@ -711,17 +567,17 @@
         }
 
         function switchLabTab(tabKey) {
-            const tabs = ['sistema', 'acoes', 'trade', 'proventos', 'valuation', 'rf'];
+            if (tabKey === 'sistema' || tabKey === 'acoes') { window.__acStart = tabKey === 'sistema' ? 'A1' : 'B1'; tabKey = 'academia'; }
+            const tabs = ['academia', 'trade', 'proventos', 'valuation', 'rf'];
             tabs.forEach(t => {
                 const panel = document.getElementById('lab-panel-' + t);
                 const btn = document.getElementById('lab-tab-btn-' + t);
                 if (panel) panel.classList.toggle('hidden', t !== tabKey);
-                if (btn) {
-                    btn.className = (t === tabKey)
-                        ? 'bg-lect-navy text-white border-l-4 border-lect-orange px-3 py-3 text-left font-bold flex items-center justify-between'
-                        : 'bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between';
-                }
+                if (btn) btn.className = 'shrink-0 inline-flex items-center gap-1.5 px-4 py-3 font-bold border-b-2 transition-colors ' + (t === tabKey
+                    ? 'border-lect-orange text-lect-navy dark:text-white bg-slate-50 dark:bg-lect-bgDark'
+                    : 'border-transparent text-slate-500 hover:text-lect-teal');
             });
+            if (tabKey !== 'academia') { const n = document.getElementById('lab-nav'); if (n && n.getBoundingClientRect().top < 0) n.scrollIntoView({ behavior: 'smooth' }); }
             if (tabKey === 'trade') runTradeSimulation();
             if (tabKey === 'proventos') runDividendSimulation();
             if (tabKey === 'valuation') runValuationCalc();
@@ -1051,9 +907,8 @@
         });
         ['sim-tr-cdi', 'sim-dv-cdi', 'sim-rf-cdi', 'sim-rf-ipca'].forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('input', () => el.dataset.touched = 1); });
 
-        if (paramTab && ['sistema', 'acoes', 'trade', 'proventos', 'valuation', 'rf'].includes(paramTab)) {
-            switchLabTab(paramTab);
-        }
+        if (paramTab && ['academia', 'sistema', 'acoes', 'trade', 'proventos', 'valuation', 'rf'].includes(paramTab)) switchLabTab(paramTab);
+        else switchLabTab('academia');
     </script>
 </body>
 </html>

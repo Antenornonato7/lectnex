@@ -23,7 +23,7 @@
             <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
                 <div>
                     <span class="px-2.5 py-0.5 bg-lect-navy text-white dark:bg-lect-teal font-mono text-[10px] font-bold uppercase tracking-wider border-l-2 border-lect-orange">MESA DE DERIVATIVOS · B3</span>
-                    <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Futuros: Mini Índice, Mini Dólar &amp; DI</h1>
+                    <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Futuros B3: Mini Índice, Mini Dólar &amp; DI</h1>
                     <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl">Tudo o que o trader de WIN e WDO precisa ter à mão: contrato vigente e rolagem, especificações, vencimentos calculados pelas regras da B3, gestão de risco por operação, IR de day trade e preço justo do dólar futuro.</p>
                 </div>
                 <div class="font-mono text-[11px] flex flex-wrap gap-2">
@@ -113,8 +113,22 @@
                         <div class="p-3 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Stops seguidos até −10%</span><strong id="rk-o-streak" class="block mt-1">—</strong></div>
                     </div>
                     <div>
-                        <span class="term-label block mb-2">Curva de 100 trades simulados com esses parâmetros <span class="lx-demo">SIMULAÇÃO</span></span>
-                        <div id="rk-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-2"></div>
+                        <span class="term-label block">Quanto arriscar por trade · critério de Kelly</span>
+                        <span class="text-[11px] text-slate-500">Crescimento médio da conta conforme o % do capital arriscado em cada operação, com seu acerto e sua relação risco:retorno. Arriscar pouco cresce devagar; arriscar demais destrói a conta mesmo com estratégia vencedora. <strong>Clique na curva</strong> para usar aquele risco.</span>
+                        <div id="rk-kelly" class="relative mt-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-2"></div>
+                        <div id="rk-kstats" class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-2 font-mono tabular-nums"></div>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-end justify-between gap-2 mb-2">
+                            <div>
+                                <span class="term-label block">Curva de capital e drawdown · 100 trades <span class="lx-demo">SIMULAÇÃO</span></span>
+                                <span class="text-[11px] text-slate-500">Um caminho possível com seus parâmetros. Embaixo, em vermelho, o quanto a conta fica abaixo do último topo.</span>
+                            </div>
+                            <button id="rk-play" type="button" class="px-3 py-1.5 bg-lect-orange hover:bg-orange-600 text-white font-mono text-[11px] font-bold inline-flex items-center gap-1.5"><i class="ph-bold ph-shuffle"></i>SORTEAR OUTRA SEQUÊNCIA</button>
+                        </div>
+                        <div id="rk-chart" class="relative bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-2"></div>
+                        <div id="rk-run" class="mt-2 font-mono text-[11px] text-slate-600 dark:text-slate-300"></div>
+                        <div id="rk-stats" class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3 font-mono tabular-nums"></div>
                     </div>
                     <div id="rk-edu" class="p-4 bg-lect-navy text-white border-l-4 border-lect-orange text-xs leading-relaxed"></div>
                 </div>
@@ -176,7 +190,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261030c"></script>
+    <script src="assets/lectnex-core.js?v=20261030g"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -256,24 +270,197 @@
             $('rk-o-ev').className = 'block mt-1 ' + LX.signClass(ev);
             $('rk-o-streak').textContent = loss > 0 ? Math.floor(cap * 0.10 / loss) + ' stops' : '—';
 
-            // Simulação de 5 trajetórias de 100 trades
-            const W = 640, H = 170, paths = [];
-            for (let k = 0; k < 5; k++) {
-                seed = 7 + k * 101; let eq = cap; const pts = [eq];
-                for (let i = 0; i < 100; i++) { eq += rnd() < wr ? gain : -loss; pts.push(eq); }
-                paths.push(pts);
-            }
-            const all = paths.flat(), mn = Math.min(...all), mx = Math.max(...all), span = (mx - mn) || 1;
-            const X = i => 40 + i * (W - 50) / 100, Y = v => 10 + (mx - v) / span * (H - 30);
-            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Simulação de curvas de capital">`;
-            s += `<line x1="40" x2="${W - 10}" y1="${Y(cap)}" y2="${Y(cap)}" stroke="#94A3B8" stroke-dasharray="3 3"/><text x="2" y="${Y(cap) + 3}" font-size="9" fill="#64748B">início</text>`;
-            s += `<text x="2" y="14" font-size="9" fill="#64748B">${LX.num(mx / 1000, 1)}k</text><text x="2" y="${H - 18}" font-size="9" fill="#64748B">${LX.num(mn / 1000, 1)}k</text>`;
-            paths.forEach((pts, k) => s += `<polyline fill="none" stroke="${['#009988', '#F39200', '#6366F1', '#0EA5E9', '#E11D48'][k]}" stroke-width="1.6" opacity=".85" points="${pts.map((v, i) => X(i) + ',' + Y(v)).join(' ')}"/>`);
-            s += `<text x="${W - 10}" y="${H - 4}" font-size="9" text-anchor="end" fill="#64748B">5 sequências aleatórias · acerto ${LX.pct(wr * 100, 0)} · mesmo stop/alvo</text></svg>`;
-            $('rk-chart').innerHTML = s;
+            drawFan(cap, wr, gain, loss);
 
-            $('rk-edu').innerHTML = `Com <strong>${qty} contrato(s) de ${asset}</strong>, cada ponto vale <strong>${LX.brl(qty * p.pv)}</strong>. O stop de ${LX.num(stop, asset === 'WDO' ? 1 : 0)} pts custa <strong>${LX.brl(loss)}</strong> e o alvo rende <strong>${LX.brl(gain)}</strong>. Com relação 1:${LX.num(rr, 2)}, você precisa acertar mais de <strong>${LX.pct(be, 1)}</strong> das operações para não perder dinheiro — ${wr * 100 > be ? `sua taxa de ${LX.pct(wr * 100, 0)} gera expectativa positiva de ${LX.brl(ev)} por trade.` : `com ${LX.pct(wr * 100, 0)} de acerto a expectativa é <strong>negativa</strong>: revise stop, alvo ou setup.`} Repare na simulação como a mesma estratégia produz caminhos muito diferentes: sequências de perdas são normais e o tamanho da posição precisa sobreviver a elas.`;
+            $('rk-edu').innerHTML = `Com <strong>${qty} contrato(s) de ${asset}</strong>, cada ponto vale <strong>${LX.brl(qty * p.pv)}</strong>. O stop de ${LX.num(stop, asset === 'WDO' ? 1 : 0)} pts custa <strong>${LX.brl(loss)}</strong> e o alvo rende <strong>${LX.brl(gain)}</strong>. Com relação 1:${LX.num(rr, 2)}, você precisa acertar mais de <strong>${LX.pct(be, 1)}</strong> das operações para não perder dinheiro — ${wr * 100 > be ? `sua taxa de ${LX.pct(wr * 100, 0)} gera expectativa positiva de ${LX.brl(ev)} por trade.` : `com ${LX.pct(wr * 100, 0)} de acerto a expectativa é <strong>negativa</strong>: revise stop, alvo ou setup.`} Na curva de Kelly, veja que passar do ponto ótimo só aumenta o risco sem aumentar o ganho; a maioria dos profissionais fica em ½ Kelly ou menos, porque a taxa de acerto real é incerta. E sorteie algumas sequências: a mesma estratégia passa por recuos bem diferentes, e o tamanho da posição precisa sobreviver aos piores.`;
         }
+
+        /* ---------- Curva de Kelly + curva de capital/drawdown ---------- */
+        const SIMS = 1000, TRADES = 100;
+        let cur = null, runIdx = 0, runSeed = 12345;
+
+        function drawFan(cap, wr, gain, loss) {
+            const rr = loss > 0 ? gain / loss : 0;
+            cur = { cap, wr, gain, loss, rr };
+            drawKelly();
+            // Monte Carlo para as estatísticas e as sequências sorteáveis
+            const paths = [], finals = [], dds = [], streaks = [];
+            seed = 7;
+            for (let k = 0; k < SIMS; k++) {
+                let eq = cap, peak = cap, dd = 0, run = 0, worst = 0;
+                const pts = new Float64Array(TRADES + 1); pts[0] = eq;
+                for (let i = 1; i <= TRADES; i++) {
+                    if (rnd() < wr) { eq += gain; run = 0; } else { eq -= loss; run++; if (run > worst) worst = run; }
+                    pts[i] = eq; if (eq > peak) peak = eq;
+                    const d = peak > 0 ? (peak - eq) / peak : 0; if (d > dd) dd = d;
+                }
+                paths.push(pts); finals.push(eq); dds.push(dd); streaks.push(worst);
+            }
+            cur.paths = paths;
+            const pctOf = f => LX.pct(f * 100, 0);
+            const sf = finals.slice().sort((a, b) => a - b), med = sf[SIMS >> 1] - cap;
+            const pProfit = finals.filter(v => v > cap).length / SIMS;
+            const p10 = dds.filter(d => d >= 0.10).length / SIMS, p20 = dds.filter(d => d >= 0.20).length / SIMS;
+            const ss = streaks.slice().sort((a, b) => a - b);
+            const k$ = v => (v < 0 ? '−' : '+') + (Math.abs(v) >= 1000 ? LX.num(Math.abs(v) / 1000, 1) + 'k' : LX.num(Math.abs(v), 0));
+            const tile = (label, val, note, cls) => `<div class="p-2.5 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark"><span class="term-label block">${label}</span><strong class="text-lg block mt-0.5 ${cls}">${val}</strong><span class="text-[10px] text-slate-500">${note}</span></div>`;
+            $('rk-stats').innerHTML =
+                tile('Termina no lucro', pctOf(pProfit), 'em 1.000 simulações', pProfit >= 0.5 ? 'text-emerald-600' : 'text-rose-600') +
+                tile('Resultado mediano', (med >= 0 ? '+' : '−') + LX.brl(Math.abs(med)), `90% entre ${k$(sf[50] - cap)} e ${k$(sf[949] - cap)}`, LX.signClass(med)) +
+                tile('Recuo de 10%+', pctOf(p10), `de 20%+: ${pctOf(p20)}`, p10 > 0.5 ? 'text-rose-600' : p10 > 0.2 ? 'text-lect-orange' : 'text-emerald-600') +
+                tile('Pior sequência de stops', ss[SIMS >> 1] + ' seguidos', `em 5% dos casos: ${ss[Math.floor(SIMS * 0.95)]}+`, '');
+            drawRun(false);
+        }
+
+        function drawKelly() {
+            const { cap, wr, rr, loss } = cur;
+            const fU = cap > 0 ? loss / cap : 0;
+            const kelly = rr > 0 ? wr - (1 - wr) / rr : -1;
+            const G = f => f >= 1 ? -Infinity : wr * Math.log(1 + f * rr) + (1 - wr) * Math.log(1 - f);
+            const pt = f => (Math.exp(G(f)) - 1) * 100;          // crescimento médio por trade (%)
+            const p100 = f => (Math.exp(100 * G(f)) - 1) * 100;  // em 100 trades (%)
+            const fmtBig = v => v >= 1000 ? '+' + LX.num(v / 100 + 1, 1) + '×' : (v >= 0 ? '+' : '−') + LX.pct(Math.abs(v), 0);
+            const W = 640, H = 220, L = 50, R = 14, T = 14, B = 30;
+            const xmax = kelly > 0 ? Math.min(0.95, Math.max(2.3 * kelly, fU * 1.25, 0.03)) : Math.min(0.95, Math.max(fU * 1.6, 0.05));
+            const N = 160, xs = Array.from({ length: N + 1 }, (_, i) => i / N * xmax), ys = xs.map(pt);
+            const top = Math.max(0.05, kelly > 0 ? pt(kelly) * 1.25 : 0.05);
+            let bot = Math.min(...ys.filter(isFinite)); bot = Math.max(bot, -top * 1.6); if (bot > -top * 0.25) bot = -top * 0.25;
+            const X = f => L + f / xmax * (W - L - R), Y = v => T + (top - Math.max(bot, Math.min(top, v))) / (top - bot) * (H - T - B);
+            const k = kelly > 0 ? kelly : 0;
+            // ponto onde o crescimento volta a zero (≈ 2× Kelly)
+            let f0 = null; for (let i = 1; i <= N; i++) if (ys[i - 1] > 0 && ys[i] <= 0) { f0 = xs[i]; break; }
+            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono select-none" role="img" aria-label="Curva de crescimento por percentual arriscado (critério de Kelly)">`;
+            const nice = (span, n) => { const raw = span / n, p10 = Math.pow(10, Math.floor(Math.log10(raw))); return [1, 2, 2.5, 5, 10].map(m => m * p10).find(st => st >= raw) || 10 * p10; };
+            const dec = st => st >= 1 ? (st % 1 ? 1 : 0) : Math.min(3, Math.ceil(-Math.log10(st)) + (st * Math.pow(10, Math.ceil(-Math.log10(st))) % 1 ? 1 : 0));
+            const ys_ = nice(top - bot, 4), yd = dec(ys_);
+            for (let v = Math.ceil(bot / ys_) * ys_; v <= top + 1e-9; v += ys_) s += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#94A3B8" stroke-opacity=".18"/><text x="${L - 6}" y="${Y(v) + 3}" font-size="9" text-anchor="end" fill="#64748B">${Math.abs(v) < 1e-9 ? '0%' : (v > 0 ? '+' : '−') + LX.num(Math.abs(v), yd) + '%'}</text>`;
+            const xs_ = nice(xmax * 100, 6), xd = dec(xs_);
+            for (let v = 0; v <= xmax * 100 + 1e-9; v += xs_) s += `<text x="${X(v / 100)}" y="${H - 14}" font-size="9" text-anchor="${v === 0 ? 'start' : 'middle'}" fill="#64748B">${LX.num(v, xd)}%</text>`;
+            s += `<text x="${L + (W - L - R) / 2}" y="${H - 2}" font-size="9" text-anchor="middle" fill="#64748B">% do capital arriscado por trade →</text>`;
+            // zonas
+            if (kelly > 0) {
+                s += `<rect x="${X(0)}" y="${T}" width="${X(k / 2) - X(0)}" height="${H - T - B}" fill="#009988" fill-opacity=".07"/>`;
+                s += `<rect x="${X(k)}" y="${T}" width="${(f0 ? X(f0) : W - R) - X(k)}" height="${H - T - B}" fill="#F39200" fill-opacity=".07"/>`;
+                s += `<text x="${(X(0) + X(k / 2)) / 2}" y="${T + 10}" font-size="8" text-anchor="middle" fill="#00756C" class="dark:fill-[#00B4A2]">PRUDENTE</text>`;
+                s += `<text x="${(X(k) + (f0 ? X(f0) : W - R)) / 2}" y="${T + 10}" font-size="8" text-anchor="middle" fill="#C2410C" class="dark:fill-[#F39200]">AGRESSIVO</text>`;
+            }
+            const z0 = f0 ?? (kelly > 0 ? null : 0);
+            if (z0 !== null) {
+                s += `<rect x="${X(z0)}" y="${T}" width="${W - R - X(z0)}" height="${H - T - B}" fill="#E11D48" fill-opacity=".09"/>`;
+                s += `<text x="${(X(z0) + W - R) / 2}" y="${T + 10}" font-size="8" text-anchor="middle" fill="#E11D48">ZONA DE QUEBRA</text>`;
+            }
+            s += `<line x1="${L}" x2="${W - R}" y1="${Y(0)}" y2="${Y(0)}" stroke="#64748B" stroke-opacity=".7"/>`;
+            // curva
+            const pos = [], neg = [];
+            xs.forEach((f, i) => { const P = X(f).toFixed(1) + ',' + Y(ys[i]).toFixed(1); (ys[i] >= 0 ? pos : neg).push(P); });
+            s += `<path d="M${X(0)},${Y(0)} L${xs.map((f, i) => X(f).toFixed(1) + ',' + Y(Math.max(0, ys[i])).toFixed(1)).join(' L')} L${X(xmax)},${Y(0)} Z" fill="#009988" fill-opacity=".18"/>`;
+            s += `<polyline fill="none" stroke="#00756C" class="dark:stroke-[#00B4A2]" stroke-width="2.4" stroke-linejoin="round" points="${xs.map((f, i) => X(f).toFixed(1) + ',' + Y(ys[i]).toFixed(1)).join(' ')}"/>`;
+            // marcadores
+            const mark = (f, label, color, dy, dash) => {
+                const y = Y(pt(f));
+                return `<line x1="${X(f)}" x2="${X(f)}" y1="${T}" y2="${H - B}" stroke="${color}" stroke-width="1" ${dash ? 'stroke-dasharray="3 3"' : ''} opacity=".8"/>` +
+                    `<circle cx="${X(f)}" cy="${y}" r="4" fill="${color}" stroke="#fff" stroke-width="1.5"/>` +
+                    `<text x="${X(f) + (X(f) > W - 130 ? -6 : 6)}" y="${T + 22 + dy}" font-size="9" font-weight="700" text-anchor="${X(f) > W - 130 ? 'end' : 'start'}" fill="${color}" stroke="#fff" class="dark:stroke-[#0B1626]" stroke-width="3" paint-order="stroke">${label}</text>`;
+            };
+            if (kelly > 0) {
+                s += mark(k / 2, `½ KELLY ${LX.num(k * 50, 1)}%`, '#0EA5E9', 150, true);
+                s += mark(k, `KELLY ${LX.num(k * 100, 1)}% · máximo`, '#00756C', 0, true);
+            }
+            if (fU > 0 && fU <= xmax) {
+                const y = Y(pt(fU));
+                s += `<g pointer-events="none"><circle cx="${X(fU)}" cy="${y}" r="11" fill="#F39200" fill-opacity=".25"><animate attributeName="r" values="6;13;6" dur="2s" repeatCount="indefinite"/></circle><circle cx="${X(fU)}" cy="${y}" r="6" fill="#F39200" stroke="#fff" stroke-width="2"/>` +
+                    `<text x="${X(fU) + (X(fU) > W - 130 ? -12 : 12)}" y="${y + (y > H - B - 20 ? -10 : 16)}" font-size="10" font-weight="700" text-anchor="${X(fU) > W - 130 ? 'end' : 'start'}" fill="#C2410C" stroke="#fff" class="dark:fill-[#F39200] dark:stroke-[#0B1626]" stroke-width="3" paint-order="stroke">VOCÊ ${LX.num(fU * 100, 2)}%</text></g>`;
+            }
+            s += `<g id="rk-kh" style="display:none"><line id="rk-khl" y1="${T}" y2="${H - B}" stroke="#64748B" stroke-width="1"/><circle id="rk-khc" r="3.5" fill="#0C1A2A" stroke="#fff" stroke-width="1.5"/></g>`;
+            s += `<rect id="rk-khit" x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent" style="cursor:pointer"/></svg>`;
+            s += `<div id="rk-ktip" class="hidden absolute pointer-events-none z-10 px-2.5 py-2 bg-lect-navy text-white text-[10px] font-mono leading-snug shadow-lg border-l-2 border-lect-orange whitespace-nowrap"></div>`;
+            $('rk-kelly').innerHTML = s;
+
+            const svg = $('rk-kelly').querySelector('svg'), hit = $('rk-khit'), tip = $('rk-ktip'), hg = $('rk-kh');
+            const fAt = ev => { const r = svg.getBoundingClientRect(); const cx = ((ev.touches ? ev.touches[0].clientX : ev.clientX) - r.left) * W / r.width; return Math.max(0.0005, Math.min(xmax, (cx - L) / (W - L - R) * xmax)); };
+            hit.addEventListener('mousemove', ev => {
+                const f = fAt(ev), v = pt(f), r = svg.getBoundingClientRect();
+                hg.style.display = ''; $('rk-khl').setAttribute('x1', X(f)); $('rk-khl').setAttribute('x2', X(f));
+                $('rk-khc').setAttribute('cx', X(f)); $('rk-khc').setAttribute('cy', Y(v));
+                const v100 = p100(f), stopsTo50 = f > 0 ? Math.ceil(Math.log(0.5) / Math.log(1 - f)) : Infinity;
+                tip.innerHTML = `<div class="text-lect-orange font-bold">Arriscando ${LX.num(f * 100, 2)}% por trade</div>` +
+                    `stop = ${LX.brl(cap * f)} hoje<br>crescimento médio: <strong class="${v >= 0 ? 'text-emerald-300' : 'text-rose-300'}">${(v >= 0 ? '+' : '−') + LX.num(Math.abs(v), 2)}%</strong>/trade<br>` +
+                    `em 100 trades: <strong class="${v100 >= 0 ? 'text-emerald-300' : 'text-rose-300'}">${fmtBig(v100)}</strong><br>` +
+                    `<span class="text-slate-300">${isFinite(stopsTo50) ? stopsTo50 + ' stops seguidos cortam a conta pela metade' : ''}</span>`;
+                tip.classList.remove('hidden');
+                const px = X(f) / W * r.width, bw = $('rk-kelly').getBoundingClientRect().width;
+                tip.style.left = (px + tip.offsetWidth + 24 > bw ? px - tip.offsetWidth - 8 : px + 16) + 'px'; tip.style.top = '30px';
+            });
+            hit.addEventListener('mouseleave', () => { hg.style.display = 'none'; tip.classList.add('hidden'); });
+            hit.addEventListener('click', ev => {
+                const f = fAt(ev);
+                $('rk-riskpct').value = Math.max(0.1, Math.round(f * 100 * 4) / 4);
+                $('rk-qty').value = 0;
+                calcRisk();
+            });
+
+            const tile = (label, val, note, cls) => `<div class="p-2.5 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark"><span class="term-label block">${label}</span><strong class="text-lg block mt-0.5 ${cls}">${val}</strong><span class="text-[10px] text-slate-500">${note}</span></div>`;
+            if (kelly > 0) {
+                const ratio = pt(fU) / pt(kelly);
+                $('rk-kstats').innerHTML =
+                    tile('Kelly (ótimo teórico)', LX.pct(kelly * 100, 1), 'arriscar isso maximiza o crescimento', 'text-lect-teal') +
+                    tile('½ Kelly', LX.pct(kelly * 50, 1), '~75% do crescimento, bem menos recuo', 'text-sky-600') +
+                    tile('Seu risco atual', LX.pct(fU * 100, 2), `${LX.num(kelly > 0 ? fU / kelly : 0, 2)}× Kelly`, fU > kelly ? 'text-rose-600' : fU > kelly / 2 ? 'text-lect-orange' : 'text-emerald-600') +
+                    tile('Seu crescimento', isFinite(ratio) ? LX.pct(Math.max(-999, ratio * 100), 0) : '—', 'do máximo possível', ratio >= 0 ? '' : 'text-rose-600');
+            } else {
+                $('rk-kstats').innerHTML = `<div class="col-span-2 sm:col-span-4 p-3 border-l-4 border-rose-500 bg-rose-50 dark:bg-rose-500/10 text-[11px]"><strong class="text-rose-600">Expectativa negativa:</strong> com ${LX.pct(wr * 100, 0)} de acerto e 1:${LX.num(rr, 2)} não existe tamanho de posição que faça a conta crescer — o Kelly é zero. Qualquer risco leva à quebra no longo prazo; melhore acerto ou relação risco:retorno primeiro.</div>`;
+            }
+        }
+
+        function drawRun(animate) {
+            const { cap, paths } = cur, p = paths[runIdx % paths.length];
+            const W = 640, L = 46, R = 12, T = 10, H1 = 150, GAP = 14, H2 = 70, B = 20, H = T + H1 + GAP + H2 + B;
+            let peak = cap, mdd = 0, mddI = 0, wins = 0, run = 0, worst = 0;
+            const dd = Array.from(p, (v, i) => {
+                if (i > 0) { if (v > p[i - 1]) { wins++; run = 0; } else { run++; worst = Math.max(worst, run); } }
+                peak = Math.max(peak, v); const d = peak > 0 ? (peak - v) / peak : 0; if (d > mdd) { mdd = d; mddI = i; } return d;
+            });
+            let mn = Math.min(cap, ...p), mx = Math.max(cap, ...p); const pad = (mx - mn) * 0.08 || cap * 0.02 || 1; mn -= pad; mx += pad;
+            const ddMax = Math.max(0.05, mdd * 1.15);
+            const X = i => L + i * (W - L - R) / TRADES, Y = v => T + (mx - v) / (mx - mn) * H1, Y2 = d => T + H1 + GAP + d / ddMax * H2;
+            const k$ = v => (Math.abs(v) >= 1000 ? LX.num(v / 1000, 1) + 'k' : LX.num(v, 0));
+            const eqLine = Array.from(p, (v, i) => X(i).toFixed(1) + ',' + Y(v).toFixed(1)).join(' ');
+            const end = p[TRADES], res = end - cap, up = res >= 0, c = up ? '#009988' : '#E11D48';
+            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono select-none" role="img" aria-label="Curva de capital e drawdown"><defs>` +
+                `<linearGradient id="rk-eqg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${c}" stop-opacity=".35"/><stop offset="1" stop-color="${c}" stop-opacity="0"/></linearGradient>` +
+                `<linearGradient id="rk-ddg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#E11D48" stop-opacity=".25"/><stop offset="1" stop-color="#E11D48" stop-opacity=".7"/></linearGradient>` +
+                `<clipPath id="rk-clip"><rect id="rk-cliprect" x="0" y="0" width="${animate ? 0 : W}" height="${H}"/></clipPath></defs>`;
+            for (let g = 0; g <= 3; g++) { const v = mn + (mx - mn) * g / 3; s += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#94A3B8" stroke-opacity=".18"/><text x="${L - 6}" y="${Y(v) + 3}" font-size="9" text-anchor="end" fill="#64748B">${k$(v)}</text>`; }
+            s += `<line x1="${L}" x2="${W - R}" y1="${Y(cap)}" y2="${Y(cap)}" stroke="#64748B" stroke-dasharray="4 3" opacity=".6"/>`;
+            s += `<text x="${L + 4}" y="${Y(cap) - 4}" font-size="9" fill="#64748B">capital inicial</text>`;
+            [0, Math.round(ddMax * 50) / 100, Math.round(ddMax * 100) / 100].forEach(d => s += `<text x="${L - 6}" y="${Y2(d) + 3}" font-size="9" text-anchor="end" fill="#64748B">${d ? '−' + LX.num(d * 100, 0) + '%' : '0%'}</text>`);
+            s += `<line x1="${L}" x2="${W - R}" y1="${Y2(0)}" y2="${Y2(0)}" stroke="#94A3B8" stroke-opacity=".5"/>`;
+            s += `<text x="${W - R}" y="${T + H1 + GAP - 3}" font-size="9" text-anchor="end" fill="#E11D48">DRAWDOWN</text>`;
+            s += `<g clip-path="url(#rk-clip)">`;
+            s += `<path d="M${X(0)},${T + H1} L${eqLine.replace(/ /g, ' L')} L${X(TRADES)},${T + H1} Z" fill="url(#rk-eqg)"/>`;
+            s += `<polyline fill="none" stroke="${c}" stroke-width="2" stroke-linejoin="round" points="${eqLine}"/>`;
+            s += `<path d="M${X(0)},${Y2(0)} ${dd.map((d, i) => 'L' + X(i).toFixed(1) + ',' + Y2(d).toFixed(1)).join(' ')} L${X(TRADES)},${Y2(0)} Z" fill="url(#rk-ddg)"/>`;
+            s += `<circle cx="${X(mddI)}" cy="${Y2(mdd)}" r="3.5" fill="#E11D48" stroke="#fff" stroke-width="1.5"/>`;
+            s += `<text x="${X(mddI) + (mddI > 70 ? -6 : 6)}" y="${Y2(mdd) + 3}" font-size="9" font-weight="700" text-anchor="${mddI > 70 ? 'end' : 'start'}" fill="#E11D48" stroke="#fff" class="dark:stroke-[#0B1626]" stroke-width="3" paint-order="stroke">máx −${LX.num(mdd * 100, 1)}%</text>`;
+            s += `<circle cx="${X(TRADES)}" cy="${Y(end)}" r="4" fill="${c}" stroke="#fff" stroke-width="1.5"/>`;
+            s += `</g>`;
+            [0, 25, 50, 75, 100].forEach(i => s += `<text x="${X(i)}" y="${H - 5}" font-size="9" text-anchor="${i === 0 ? 'start' : i === 100 ? 'end' : 'middle'}" fill="#64748B">${i === 0 ? 'início' : 'trade ' + i}</text>`);
+            s += `</svg>`;
+            $('rk-chart').innerHTML = s;
+            if (animate) {
+                const r = $('rk-cliprect'), t0 = performance.now();
+                const step = t => { const k = Math.min(1, (t - t0) / 1400); r.setAttribute('width', W * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); };
+                requestAnimationFrame(step);
+            }
+            $('rk-run').innerHTML = `<strong>${wins}</strong> ganhos e <strong>${TRADES - wins}</strong> stops · resultado <strong class="${LX.signClass(res)}">${up ? '+' : '−'}${LX.brl(Math.abs(res))}</strong> · maior recuo <strong class="text-rose-600">−${LX.pct(mdd * 100, 1)}</strong> · pior sequência <strong>${worst}</strong> stops seguidos`;
+        }
+
+        $('rk-play').addEventListener('click', () => {
+            if (!cur) return;
+            runSeed = (runSeed * 48271) % 2147483647; runIdx = runSeed % SIMS;
+            drawRun(true);
+        });
+
         ['rk-cap', 'rk-riskpct', 'rk-stop', 'rk-target', 'rk-qty', 'rk-cost', 'rk-margin', 'rk-winrate'].forEach(id => $(id).addEventListener('input', calcRisk));
         setAsset('WIN');
 

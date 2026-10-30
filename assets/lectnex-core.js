@@ -365,8 +365,7 @@
         <path d="M34 49.5 L60 62 L60 91.5 L34 79 Z" fill="#00756C"/><path d="M60 62 L86 49.5 L86 79 L60 91.5 Z" fill="#00B4A2"/></svg>`;
     const NAV = [
         { key: 'mercado', href: 'index.html', label: 'Mercado Hoje', icon: 'ph-pulse' },
-        { key: 'agenda', href: 'index.html#agenda', label: 'Agenda', icon: 'ph-calendar-dots' },
-        { key: 'futuros', href: 'futuros.html', label: 'Futuros WIN · WDO · DI', icon: 'ph-chart-line-up', badge: 'NOVO' },
+        { key: 'futuros', href: 'futuros.html', label: 'Futuros B3', icon: 'ph-chart-line-up', badge: 'NOVO' },
         { key: 'acoes', href: 'acoes.html', label: 'Ações B3', icon: 'ph-chart-bar' },
         { key: 'lab', href: 'laboratorio.html', label: 'Laboratório', icon: 'ph-student' }
     ];
@@ -388,7 +387,6 @@
               <span>USD/BRL <strong class="text-lect-orange" data-lx="usd"></strong> <span data-lx="usd-pct"></span></span>
             </div>
             <div class="flex items-center gap-3 text-[10px] text-slate-400">
-              <button onclick="LX.openPalette()" class="px-2 py-0.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 inline-flex items-center gap-1.5"><i class="ph ph-terminal-window text-lect-orange"></i>BUSCA RÁPIDA <kbd>/</kbd></button>
               <span data-lx-clock class="text-slate-300 font-semibold"></span>
             </div>
           </div>
@@ -410,7 +408,7 @@
                 <span class="text-[11px] text-[#64748B] block mt-1">Inteligência de Mercado &amp; Educação Financeira</span></div></a>
               <nav class="hidden lg:flex items-center gap-1 text-[13px] font-medium text-slate-600 dark:text-slate-300">${NAV.map(n => link(n)).join('')}</nav>
               <div class="flex items-center gap-2">
-                <button onclick="LX.openPalette()" class="hidden sm:flex xl:w-52 items-center justify-between gap-3 px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-lect-cardDark text-xs font-mono text-slate-500 hover:border-lect-teal"><span class="inline-flex items-center gap-1.5"><i class="ph ph-magnifying-glass text-lect-teal"></i><span class="hidden xl:inline">Ativo, ferramenta...</span></span><kbd class="px-1.5 text-[10px] border border-slate-300 dark:border-lect-borderDark">/</kbd></button>
+                <button onclick="LX.openPalette()" class="hidden sm:flex xl:w-52 items-center justify-between gap-3 px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-lect-cardDark text-xs font-mono text-slate-500 hover:border-lect-teal"><span class="inline-flex items-center gap-1.5"><i class="ph ph-magnifying-glass text-lect-teal"></i><span class="hidden xl:inline">Buscar ativo ou ferramenta</span></span><kbd class="px-1.5 text-[10px] border border-slate-300 dark:border-lect-borderDark">/</kbd></button>
                 <button onclick="toggleTheme()" title="Alternar tema" aria-label="Alternar tema claro/escuro" class="p-2.5 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal"><i class="ph-fill ph-moon text-lg dark:hidden"></i><i class="ph-fill ph-sun text-lg hidden dark:block text-lect-orange"></i></button>
               </div>
             </div>
@@ -447,66 +445,207 @@
         buildPalette();
     };
 
-    /* ------------------------------------------------------------------ BUSCA RÁPIDA ("/" ou Ctrl/Cmd+K) */
-    LX.paletteItems = [
-        ['FUTUROS', 'Vencimentos WIN, WDO, DI e opções', 'futuros.html#vencimentos'],
-        ['FUTUROS', 'Calculadora de risco por operação (WIN/WDO)', 'futuros.html#risco'],
-        ['FUTUROS', 'Preço justo do dólar futuro (paridade)', 'futuros.html#paridade'],
-        ['MERCADO', 'Agenda: Copom, FOMC, IPCA, vencimentos', 'index.html#agenda'],
-        ['MERCADO', 'Boletim Focus ao vivo', 'index.html#juros'],
-        ['MERCADO', 'Câmbio e cripto ao vivo', 'index.html#cambio'],
-        ['LAB', 'Simulador Compra/Venda vs. CDI (IR)', 'laboratorio.html?tab=trade'],
-        ['LAB', 'Simulador Dividendos & JCP (regras 2026)', 'laboratorio.html?tab=proventos'],
-        ['LAB', 'Preço teto Bazin & Graham', 'laboratorio.html?tab=valuation'],
-        ['LAB', 'Comparador CDB × LCI/LCA × IPCA+', 'laboratorio.html?tab=rf'],
-        ...['PETR4', 'VALE3', 'ITUB4', 'BBAS3', 'BBDC4', 'B3SA3', 'WEGE3', 'PRIO3', 'ABEV3', 'ELET3', 'SUZB3', 'RENT3', 'MGLU3', 'BPAC11', 'TAEE11']
-            .map(t => ['AÇÃO', t + ' · gráfico, múltiplos e opções', 'acoes.html?ticker=' + t])
+    /* ------------------------------------------------------------------ COMANDO LECTNEX ("/" ou Ctrl/Cmd+K) */
+    // [categoria, código, título, descrição, link, ícone, palavras-chave]
+    const CMD = [
+        ['futuros', 'VENC', 'Vencimentos', 'WIN, WDO, DI1 e opções pelas regras da B3', 'futuros.html#vencimentos', 'ph-calendar-check', 'vencimento rolagem contrato vigente serie'],
+        ['futuros', 'SPEC', 'Especificações dos contratos', 'Valor do ponto, tick, horário, margem', 'futuros.html#specs', 'ph-list-checks', 'especificacao ponto tick lote horario'],
+        ['futuros', 'RISCO', 'Calculadora de risco', 'Tamanho de posição, stop, alvo, expectativa', 'futuros.html#risco', 'ph-shield-check', 'gestao stop alvo posicao contratos day trade'],
+        ['futuros', 'KELLY', 'Quanto arriscar por trade', 'Critério de Kelly e zona de quebra', 'futuros.html#risco', 'ph-chart-line-up', 'kelly risco percentual capital drawdown'],
+        ['futuros', 'DJ', 'Dólar futuro justo', 'Paridade: spot × diferencial de juros', 'futuros.html#paridade', 'ph-currency-dollar', 'dolar justo paridade wdo cupom cambial'],
+        ['futuros', 'IRDT', 'IR de day trade', '20% sobre o lucro, DARF e dedo-duro', 'futuros.html#risco', 'ph-receipt', 'imposto darf day trade irrf dedo duro'],
+        ['mercado', 'AGENDA', 'Agenda da semana', 'Copom, FOMC, IPCA, payroll, vencimentos', 'index.html#agenda', 'ph-calendar-dots', 'agenda eventos calendario copom fomc payroll'],
+        ['mercado', 'FOCUS', 'Boletim Focus e juros', 'Expectativas do mercado e curva', 'index.html#juros', 'ph-trend-up', 'focus expectativa juros curva selic copom'],
+        ['mercado', 'FX', 'Câmbio e cripto ao vivo', 'Dólar, euro, bitcoin, PTAX', 'index.html#cambio', 'ph-arrows-left-right', 'cambio dolar euro bitcoin cripto ptax moeda'],
+        ['mercado', 'GLOBAL', 'Mercados globais', 'Bolsas, Treasuries, DXY, commodities', 'index.html#global', 'ph-globe-hemisphere-west', 'global eua sp500 nasdaq dxy treasury petroleo ouro'],
+        ['mercado', 'NEWS', 'Notícias', 'Manchetes do mercado', 'index.html#noticias', 'ph-newspaper', 'noticias manchetes'],
+        ['acoes', 'DONOS', 'Quem é dono da ação', 'Fundos com a ação na carteira (CVM)', 'acoes.html#donos', 'ph-users-three', 'fundos donos carteira cvm'],
+        ['acoes', 'OPC', 'Laboratório de opções', 'Strangle, venda de call e de put', 'acoes.html#opcoes', 'ph-flask', 'opcoes call put strangle'],
+        ['acoes', 'FLUXO', 'Fluxo estrangeiro', 'Entrada de capital estrangeiro em ações', 'acoes.html#fluxo', 'ph-arrows-down-up', 'fluxo estrangeiro captacao gringo'],
+        ['lab', 'TRADE', 'Simulador compra/venda × CDI', 'Resultado com IR comparado ao CDI', 'laboratorio.html?tab=trade', 'ph-calculator', 'simulador compra venda cdi ir swing'],
+        ['lab', 'JCP', 'Dividendos & JCP', 'Simulador com as regras de 2026', 'laboratorio.html?tab=proventos', 'ph-coins', 'dividendos jcp proventos renda passiva'],
+        ['lab', 'BAZIN', 'Preço teto Bazin & Graham', 'Valuation simples por dividendos e lucro', 'laboratorio.html?tab=valuation', 'ph-scales', 'bazin graham preco teto valuation'],
+        ['lab', 'RF', 'Comparador renda fixa', 'CDB × LCI/LCA × IPCA+', 'laboratorio.html?tab=rf', 'ph-bank', 'renda fixa cdb lci lca tesouro ipca'],
+        ['lab', 'SFN', 'Enciclopédia: Selic e CDI', 'Como funciona o sistema financeiro', 'laboratorio.html?tab=academia&licao=A1', 'ph-book-open', 'aprender selic cdi copom sistema financeiro enciclopedia'],
+        ['lab', 'GUIA', 'Guia de ações', 'Ações, dividendos e JCP para iniciantes', 'laboratorio.html?tab=academia&licao=B1', 'ph-graduation-cap', 'aprender guia acoes iniciante enciclopedia']
     ];
+    const STOCKS = [
+        ['PETR4', 'Petrobras', 'Petróleo'], ['VALE3', 'Vale', 'Mineração'], ['ITUB4', 'Itaú Unibanco', 'Bancos'], ['BBAS3', 'Banco do Brasil', 'Bancos'],
+        ['BBDC4', 'Bradesco', 'Bancos'], ['B3SA3', 'B3', 'Serviços financeiros'], ['WEGE3', 'WEG', 'Bens de capital'], ['PRIO3', 'PRIO', 'Petróleo'],
+        ['ABEV3', 'Ambev', 'Bebidas'], ['ELET3', 'Eletrobras', 'Energia'], ['SUZB3', 'Suzano', 'Papel e celulose'], ['RENT3', 'Localiza', 'Locação'],
+        ['MGLU3', 'Magazine Luiza', 'Varejo'], ['BPAC11', 'BTG Pactual', 'Bancos'], ['TAEE11', 'Taesa', 'Energia'], ['ITSA4', 'Itaúsa', 'Holding'],
+        ['GGBR4', 'Gerdau', 'Siderurgia'], ['RADL3', 'Raia Drogasil', 'Farmácias'], ['EQTL3', 'Equatorial', 'Energia'], ['SBSP3', 'Sabesp', 'Saneamento'],
+        ['VIVT3', 'Vivo', 'Telecom'], ['EMBR3', 'Embraer', 'Aeronáutica'], ['RAIL3', 'Rumo', 'Logística'], ['CMIG4', 'Cemig', 'Energia']
+    ];
+    const SHORT = { VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
+    LX.paletteItems = CMD.map(c => [c[0].toUpperCase(), c[2], c[4]]); // compatibilidade
+    const CATS = [['tudo', 'Tudo'], ['acoes', 'Ações'], ['futuros', 'Futuros'], ['mercado', 'Mercado'], ['lab', 'Laboratório']];
+    const norm = t => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const recents = {
+        get() { try { return JSON.parse(localStorage.getItem('lectnex-recent') || '[]'); } catch (_) { return []; } },
+        add(it) { try { const r = recents.get().filter(x => x.href !== it.href); r.unshift(it); localStorage.setItem('lectnex-recent', JSON.stringify(r.slice(0, 5))); } catch (_) { } }
+    };
+    let pal = { cat: 'tudo', sel: 0, rows: [] };
+
+    // Respostas instantâneas: contas de pontos, indicadores, contrato vigente, expressões
+    function instant(qRaw) {
+        const q = norm(qRaw).replace(',', '.').trim(); if (!q) return null;
+        const PVv = { win: 0.2, wdo: 10, ind: 1, dol: 50 };
+        let m = q.match(/^(\d+(?:\.\d+)?)\s*(?:pts?|pontos?)?\s*(?:de\s+|no\s+|do\s+)?(win|wdo|ind|dol)\s*(?:x\s*)?(\d+)?\s*(?:contratos?|ctts?)?$/);
+        if (m) {
+            const pts = +m[1], a = m[2], n = +(m[3] || 1), v = pts * PVv[a] * n;
+            return { icon: 'ph-calculator', title: `${LX.num(pts, pts % 1 ? 1 : 0)} pts de ${a.toUpperCase()}${n > 1 ? ' × ' + n + ' contratos' : ''} = ${LX.brl(v)}`,
+                sub: `Cada ponto vale ${LX.brl(PVv[a])} por contrato · digite "150 win 3" para 3 contratos`, href: 'futuros.html#risco', tag: 'CONTA' };
+        }
+        const now = () => {
+            if (/^(win|indice|mini indice|ibov futuro)$/.test(q)) { const c = LX.upcomingWIN(1)[0]; return { icon: 'ph-chart-line-up', title: `Mini Índice vigente: ${c.code}`, sub: `vence ${LX.weekday(c.expiry)} ${LX.br(c.expiry)} · faltam ${c.du} dias úteis · R$ 0,20 por ponto`, href: 'futuros.html#vencimentos', tag: 'WIN' }; }
+            if (/^(wdo|mini dolar|dolar futuro)$/.test(q)) { const c = LX.upcomingWDO(2), t = c[0].du <= 1 ? c[1] : c[0]; return { icon: 'ph-currency-dollar', title: `Mini Dólar vigente: ${t.code}`, sub: `vence ${LX.weekday(t.expiry)} ${LX.br(t.expiry)} · faltam ${t.du} dias úteis · R$ 10 por ponto`, href: 'futuros.html#vencimentos', tag: 'WDO' }; }
+            if (/^(usd|dolar|dollar|usdbrl|usd\/brl)$/.test(q)) { const f = LX.data.fx.USDBRL; return { icon: 'ph-currency-dollar', title: f ? `Dólar comercial: R$ ${LX.num(f.bid, 4)}` : 'Dólar comercial', sub: f ? `${f.pct >= 0 ? '+' : ''}${LX.num(f.pct, 2)}% no dia · máx ${LX.num(f.high, 4)} · mín ${LX.num(f.low, 4)}` : 'carregando cotação...', href: 'index.html#cambio', tag: 'AO VIVO', cls: f ? LX.signClass(f.pct) : '' }; }
+            if (/^(eur|euro)$/.test(q)) { const f = LX.data.fx.EURBRL; return { icon: 'ph-currency-eur', title: f ? `Euro: R$ ${LX.num(f.bid, 4)}` : 'Euro', sub: f ? `${f.pct >= 0 ? '+' : ''}${LX.num(f.pct, 2)}% no dia` : 'carregando...', href: 'index.html#cambio', tag: 'AO VIVO' }; }
+            if (/^(btc|bitcoin)$/.test(q)) { const f = LX.data.fx.BTCBRL; return { icon: 'ph-currency-btc', title: f ? `Bitcoin: ${LX.brl(f.bid, 0)}` : 'Bitcoin', sub: f ? `${f.pct >= 0 ? '+' : ''}${LX.num(f.pct, 2)}% no dia` : 'carregando...', href: 'index.html#cambio', tag: 'AO VIVO' }; }
+            if (/^(selic|copom)$/.test(q)) return { icon: 'ph-bank', title: `Selic: ${LX.pct(LX.data.selic.value)} ao ano`, sub: `CDI ${LX.pct(LX.data.cdi.value)} · fonte BCB · ${LX.data.selic.date || ''}`, href: 'index.html#juros', tag: 'BCB' };
+            if (/^cdi$/.test(q)) return { icon: 'ph-bank', title: `CDI: ${LX.pct(LX.data.cdi.value)} ao ano`, sub: `≈ ${LX.pct((Math.pow(1 + LX.data.cdi.value / 100, 1 / 12) - 1) * 100)} ao mês`, href: 'laboratorio.html?tab=rf', tag: 'BCB' };
+            if (/^(ipca|inflacao)$/.test(q)) return { icon: 'ph-shopping-cart', title: `IPCA 12 meses: ${LX.pct(LX.data.ipca12m.value)}`, sub: `no mês: ${LX.pct(LX.data.ipcaMes.value)} (${LX.data.ipcaMes.date}) · juro real ≈ ${LX.pct(((1 + LX.data.selic.value / 100) / (1 + LX.data.ipca12m.value / 100) - 1) * 100)}`, href: 'index.html#juros', tag: 'IBGE' };
+            return null;
+        };
+        const r = now(); if (r) return r;
+        if (/^[\d\s.+\-*/()%]+$/.test(q) && /[+\-*/%]/.test(q) && /\d/.test(q)) {
+            try { const v = Function('"use strict";return (' + q.replace(/(\d+(?:\.\d+)?)%/g, '($1/100)') + ')')(); if (isFinite(v)) return { icon: 'ph-equals', title: `= ${LX.num(v, Math.abs(v) < 100 && v % 1 ? 4 : 2)}`, sub: 'calculadora rápida', tag: 'CONTA' }; } catch (_) { }
+        }
+        return null;
+    }
+
+    function search(qRaw) {
+        const q = norm(qRaw).trim(), toks = q.split(/\s+/).filter(Boolean), out = [];
+        const score = (code, hay) => {
+            if (!q) return 1;
+            const c = norm(code);
+            if (c === q) return 100; if (c.startsWith(q)) return 80;
+            const h = ' ' + hay.replace(/[^a-z0-9]+/g, ' ');
+            return toks.every(t => h.includes(' ' + t)) ? 40 + (h.startsWith(' ' + toks[0]) ? 10 : 0) : 0;
+        };
+        if (pal.cat === 'tudo' || pal.cat === 'acoes') STOCKS.forEach(([t, n, sec]) => {
+            const sc = score(t, norm(`${t} ${n} ${sec}`)); if (sc && (q || pal.cat === 'acoes')) out.push({ sc: sc + 5, cat: 'acoes', code: t, title: n, sub: `${sec} · cotação, gráfico, fundos donos e opções`, href: 'acoes.html?ticker=' + t, icon: 'ph-chart-bar' });
+        });
+        CMD.forEach(([cat, code, title, sub, href, icon, kw]) => {
+            if (pal.cat !== 'tudo' && pal.cat !== cat) return;
+            const sc = score(code, norm(`${code} ${title} ${sub} ${kw}`)); if (sc) out.push({ sc, cat, code, title, sub, href, icon });
+        });
+        const tk = qRaw.trim().toUpperCase();
+        if (/^[A-Z]{4}\d{1,2}$/.test(tk) && !STOCKS.some(s => s[0] === tk)) out.unshift({ sc: 200, cat: 'acoes', code: tk, title: `Abrir ${tk}`, sub: 'buscar cotação e gráfico em Ações B3', href: 'acoes.html?ticker=' + tk, icon: 'ph-magnifying-glass' });
+        return out.sort((a, b) => b.sc - a.sc).slice(0, q ? 12 : 40);
+    }
+
+    const catLabel = { acoes: 'AÇÃO', futuros: 'FUTUROS', mercado: 'MERCADO', lab: 'LAB' };
+    function rowHTML(r, i) {
+        const on = i === pal.sel;
+        return `<a href="${r.href || '#'}" data-i="${i}" class="lx-pr flex items-center gap-3 px-4 py-2.5 border-l-2 ${on ? 'bg-lect-teal/10 border-lect-orange' : 'border-transparent hover:bg-slate-50 dark:hover:bg-lect-bgDark'}">
+            <span class="w-8 h-8 shrink-0 grid place-items-center ${r.instant ? 'bg-lect-orange text-white' : 'bg-slate-100 dark:bg-lect-bgDark text-lect-teal'}"><i class="ph-bold ${r.icon} text-base"></i></span>
+            <span class="min-w-0 flex-1"><span class="flex items-center gap-2"><span class="font-bold text-[13px] ${r.cls || 'text-slate-800 dark:text-white'} truncate">${LX.esc(r.title)}</span></span>
+            <span class="block text-[11px] text-slate-500 truncate">${LX.esc(r.sub || '')}</span></span>
+            ${r.code ? `<span class="shrink-0 px-1.5 py-0.5 text-[10px] font-bold font-mono bg-lect-navy text-white">${LX.esc(r.code)}</span>` : ''}
+            <span class="shrink-0 hidden sm:inline text-[9px] font-bold text-slate-400 w-14 text-right">${r.tag || catLabel[r.cat] || ''}</span></a>`;
+    }
+
+    function renderPalette() {
+        const el = document.getElementById('lx-palette'); if (!el) return;
+        const qRaw = el.querySelector('#lx-palette-input').value, list = el.querySelector('#lx-palette-list');
+        el.querySelectorAll('[data-cat]').forEach(b => b.className = 'px-2.5 py-1 text-[11px] font-bold whitespace-nowrap ' + (b.dataset.cat === pal.cat ? 'bg-lect-navy text-white dark:bg-lect-teal' : 'text-slate-500 hover:text-lect-teal'));
+        let html = '', rows = [];
+        const sec = t => `<div class="px-4 pt-3 pb-1 text-[10px] font-bold tracking-widest text-slate-400">${t}</div>`;
+        const ans = instant(qRaw);
+        if (ans) { ans.instant = true; rows.push(ans); html += sec('RESPOSTA RÁPIDA') + rowHTML(ans, 0); }
+        if (!qRaw.trim() && pal.cat === 'tudo') {
+            const rec = recents.get();
+            if (rec.length) { html += sec('RECENTES'); rec.forEach(r => { r.icon = r.icon || 'ph-clock-counter-clockwise'; html += rowHTML(r, rows.length); rows.push(r); }); }
+            const w = LX.upcomingWIN(1)[0], dd = LX.upcomingWDO(2), d = dd[0].du <= 1 ? dd[1] : dd[0], usd = LX.data.fx.USDBRL;
+            html += sec('AGORA') + `<div class="grid grid-cols-2 sm:grid-cols-4 gap-px bg-slate-200 dark:bg-lect-borderDark mx-4 mb-1 font-mono tabular-nums">` +
+                [['WIN vigente', w.code, `${w.du} DU p/ vencer`], ['WDO vigente', d.code, `${d.du} DU p/ vencer`], ['Selic', LX.pct(LX.data.selic.value), `CDI ${LX.pct(LX.data.cdi.value)}`], ['Dólar', usd ? 'R$ ' + LX.num(usd.bid, 3) : '—', usd ? `${usd.pct >= 0 ? '+' : ''}${LX.num(usd.pct, 2)}%` : 'carregando']]
+                    .map(([l, v, n]) => `<div class="bg-white dark:bg-lect-cardDark p-2"><span class="block text-[9px] text-slate-400 uppercase">${l}</span><strong class="block text-sm text-slate-800 dark:text-white">${v}</strong><span class="text-[10px] text-slate-500">${n}</span></div>`).join('') + `</div>`;
+            html += sec('COMANDOS · DIGITE O CÓDIGO E ENTER') + `<div class="flex flex-wrap gap-1.5 px-4 pb-3">` +
+                CMD.map(c => `<button type="button" data-code="${c[1]}" title="${LX.esc(c[2])}" class="px-2 py-1 text-[10px] font-mono font-bold border border-slate-300 dark:border-lect-borderDark hover:border-lect-orange hover:text-lect-orange"><span class="text-lect-teal">${c[1]}</span> <span class="font-normal text-slate-500">${LX.esc(SHORT[c[1]] || c[2])}</span></button>`).join('') + `</div>`;
+            html += sec('EXPERIMENTE') + `<div class="flex flex-wrap gap-1.5 px-4 pb-3">` + ['150 win', '5 wdo 2', 'PETR4', 'dólar', 'selic', '10000*1.5%'].map(x => `<button type="button" data-try="${x}" class="px-2 py-1 text-[11px] font-mono bg-slate-100 dark:bg-lect-bgDark hover:text-lect-orange">${x}</button>`).join('') + `</div>`;
+        } else {
+            const res = search(qRaw);
+            if (res.length) {
+                let last = null;
+                res.forEach(r => { const g = qRaw.trim() ? 'RESULTADOS' : (catLabel[r.cat] || ''); if (g !== last) { html += sec(g); last = g; } html += rowHTML(r, rows.length); rows.push(r); });
+            } else if (!ans) html += `<div class="p-6 text-center text-xs text-slate-500">Nada encontrado para “${LX.esc(qRaw)}”. Tente um ticker (PETR4), um código (VENC, RISCO) ou uma conta (150 win).</div>`;
+        }
+        pal.rows = rows; if (pal.sel >= rows.length) pal.sel = Math.max(0, rows.length - 1);
+        list.innerHTML = html;
+        list.querySelectorAll('[data-code]').forEach(b => b.onclick = () => go(CMD.find(c => c[1] === b.dataset.code)));
+        list.querySelectorAll('[data-try]').forEach(b => b.onclick = () => { const i = el.querySelector('#lx-palette-input'); i.value = b.dataset.try; pal.sel = 0; renderPalette(); i.focus(); });
+        list.querySelectorAll('.lx-pr').forEach(a => {
+            a.addEventListener('mousemove', () => { const i = +a.dataset.i; if (i !== pal.sel) { pal.sel = i; paintSel(); } });
+            a.addEventListener('click', e => { e.preventDefault(); openRow(pal.rows[+a.dataset.i]); });
+        });
+    }
+    function paintSel() {
+        document.querySelectorAll('#lx-palette-list .lx-pr').forEach(a => {
+            const on = +a.dataset.i === pal.sel;
+            a.classList.toggle('bg-lect-teal/10', on); a.classList.toggle('border-lect-orange', on); a.classList.toggle('border-transparent', !on);
+            if (on) a.scrollIntoView({ block: 'nearest' });
+        });
+    }
+    function go(c) { if (c) openRow({ code: c[1], title: c[2], sub: c[3], href: c[4], icon: c[5], cat: c[0] }); }
+    function openRow(r) {
+        if (!r || !r.href) return;
+        recents.add({ code: r.code, title: r.title, sub: r.sub, href: r.href, icon: r.icon, cat: r.cat, tag: r.tag && !r.instant ? r.tag : undefined });
+        LX.closePalette();
+        const [path, hash] = r.href.split('#'), here = location.pathname.split('/').pop() || 'index.html';
+        if (path === here && hash && !path.includes('?')) { const t = document.getElementById(hash); if (t) { t.scrollIntoView({ behavior: 'smooth' }); history.replaceState(null, '', '#' + hash); return; } }
+        location.href = r.href;
+    }
+
     function buildPalette() {
         if (document.getElementById('lx-palette')) return;
         const el = document.createElement('div');
         el.id = 'lx-palette';
         el.setAttribute('data-lx-modal', '');
-        el.className = 'fixed inset-0 z-50 bg-lect-navy/80 hidden items-start justify-center pt-20 p-4';
+        el.className = 'fixed inset-0 z-50 bg-lect-navy/70 backdrop-blur-sm hidden items-start justify-center pt-[8vh] p-3';
         el.innerHTML = `
-          <div class="bg-white dark:bg-lect-cardDark border-2 border-lect-navy dark:border-lect-teal max-w-2xl w-full shadow-2xl">
-            <div class="p-3 bg-lect-navy text-white flex items-center justify-between font-mono text-xs">
-              <span class="inline-flex items-center gap-2"><i class="ph-bold ph-terminal-window text-lect-orange"></i>BUSCA RÁPIDA LECTNEX</span>
-              <button onclick="LX.closePalette()" class="px-2 py-0.5 bg-slate-800 border border-slate-700 text-[10px]">ESC</button>
+          <div class="bg-white dark:bg-lect-cardDark border border-slate-300 dark:border-lect-borderDark border-t-4 border-t-lect-orange max-w-2xl w-full shadow-2xl flex flex-col max-h-[84vh]">
+            <div class="flex items-center gap-3 px-4 py-3 border-b border-slate-200 dark:border-lect-borderDark">
+              <span class="font-mono font-bold text-lect-orange text-lg leading-none">&gt;</span>
+              <input id="lx-palette-input" autocomplete="off" spellcheck="false" class="flex-1 min-w-0 bg-transparent outline-none text-base font-mono text-slate-800 dark:text-white placeholder:text-slate-400" placeholder="Buscar ativo, ferramenta ou fazer uma conta — ex.: PETR4, VENC, 150 win">
+              <button onclick="LX.closePalette()" class="shrink-0 px-1.5 py-0.5 text-[10px] font-mono border border-slate-300 dark:border-lect-borderDark text-slate-500">ESC</button>
             </div>
-            <div class="p-3 border-b border-slate-200 dark:border-lect-borderDark">
-              <input id="lx-palette-input" class="lx-input" placeholder="Ticker (ex.: PETR4) ou ferramenta (ex.: DI, vencimento, JCP)... Enter abre o ticker">
+            <div class="flex items-center gap-1 px-3 py-2 border-b border-slate-200 dark:border-lect-borderDark overflow-x-auto thin-scroll">${CATS.map(([k, l]) => `<button type="button" data-cat="${k}">${l}</button>`).join('')}</div>
+            <div id="lx-palette-list" class="flex-1 overflow-y-auto thin-scroll pb-2"></div>
+            <div class="hidden sm:flex items-center justify-between gap-3 px-4 py-2 border-t border-slate-200 dark:border-lect-borderDark bg-slate-50 dark:bg-lect-bgDark text-[10px] font-mono text-slate-500">
+              <span class="flex items-center gap-3"><span><kbd class="px-1 border border-slate-300 dark:border-lect-borderDark">↑</kbd><kbd class="px-1 border border-slate-300 dark:border-lect-borderDark">↓</kbd> navegar</span><span><kbd class="px-1 border border-slate-300 dark:border-lect-borderDark">Enter</kbd> abrir</span><span><kbd class="px-1 border border-slate-300 dark:border-lect-borderDark">Tab</kbd> categoria</span></span>
+              <span class="inline-flex items-center gap-1.5"><i class="ph-bold ph-terminal-window text-lect-orange"></i>COMANDO LECTNEX</span>
             </div>
-            <div id="lx-palette-list" class="divide-y divide-slate-100 dark:divide-lect-borderDark font-mono text-xs max-h-80 overflow-y-auto thin-scroll"></div>
           </div>`;
         document.body.appendChild(el);
         el.addEventListener('click', e => { if (e.target === el) LX.closePalette(); });
+        el.querySelectorAll('[data-cat]').forEach(b => b.onclick = () => { pal.cat = b.dataset.cat; pal.sel = 0; renderPalette(); el.querySelector('#lx-palette-input').focus(); });
         const inp = el.querySelector('#lx-palette-input');
-        const render = () => {
-            const q = inp.value.toLowerCase().trim();
-            el.querySelector('#lx-palette-list').innerHTML = LX.paletteItems
-                .filter(([a, b]) => !q || (a + ' ' + b).toLowerCase().includes(q)).slice(0, 30)
-                .map(([tag, label, href]) => `<a href="${href}" class="flex items-center justify-between p-3 hover:bg-slate-50 dark:hover:bg-lect-bgDark"><span>${LX.esc(label)}</span><span class="text-[10px] text-lect-teal font-bold">${tag} →</span></a>`).join('');
-        };
-        inp.addEventListener('input', render);
+        inp.addEventListener('input', () => { pal.sel = 0; renderPalette(); });
         inp.addEventListener('keydown', e => {
-            if (e.key !== 'Enter') return;
-            const v = inp.value.trim().toUpperCase();
-            if (/^[A-Z]{4}\d{1,2}$/.test(v)) location.href = 'acoes.html?ticker=' + v;
-            else { const first = el.querySelector('#lx-palette-list a'); if (first) location.href = first.href; }
+            if (e.key === 'ArrowDown') { e.preventDefault(); if (pal.rows.length) { pal.sel = (pal.sel + 1) % pal.rows.length; paintSel(); } }
+            else if (e.key === 'ArrowUp') { e.preventDefault(); if (pal.rows.length) { pal.sel = (pal.sel - 1 + pal.rows.length) % pal.rows.length; paintSel(); } }
+            else if (e.key === 'Tab') { e.preventDefault(); const i = CATS.findIndex(c => c[0] === pal.cat); pal.cat = CATS[(i + (e.shiftKey ? CATS.length - 1 : 1)) % CATS.length][0]; pal.sel = 0; renderPalette(); }
+            else if (e.key === 'Enter') {
+                e.preventDefault();
+                const exact = CMD.find(c => c[1] === inp.value.trim().toUpperCase());
+                if (exact) return go(exact);
+                const r = pal.rows[pal.sel]; if (r && r.href) openRow(r);
+            }
         });
-        render();
+        document.addEventListener('lx:fx', () => { if (!el.classList.contains('hidden')) renderPalette(); });
     }
     LX.openPalette = function () {
         const el = document.getElementById('lx-palette'); if (!el) return;
         el.classList.remove('hidden'); el.classList.add('flex');
-        const inp = document.getElementById('lx-palette-input'); inp.value = ''; inp.dispatchEvent(new Event('input'));
+        const inp = document.getElementById('lx-palette-input'); inp.value = ''; pal.cat = 'tudo'; pal.sel = 0; renderPalette();
         setTimeout(() => inp.focus(), 30);
     };
     LX.closePalette = function () { const el = document.getElementById('lx-palette'); if (el) { el.classList.add('hidden'); el.classList.remove('flex'); } };
     document.addEventListener('keydown', e => {
         const typing = ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName);
-        if (!typing && (e.key === '/' || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k'))) { e.preventDefault(); LX.openPalette(); }
+        if ((!typing && e.key === '/') || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) { e.preventDefault(); LX.openPalette(); }
     });
 
     /* ------------------------------------------------------------------ BOOT */
