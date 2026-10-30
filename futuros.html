@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lectnex Terminal — Futuros B3: WIN, WDO e DI1 · Vencimentos, Risco e Curva de Juros</title>
-    <meta name="description" content="Mesa de futuros educacional: especificações de WIN, WDO e DI1, calendário de vencimentos calculado pelas regras B3, calculadora de risco por operação, PU do DI e preço justo do dólar futuro.">
+    <title>Lectnex Terminal — Futuros B3: WIN, WDO e DI1 · Vencimentos, Risco e Dólar Justo</title>
+    <meta name="description" content="Mesa de futuros educacional: especificações de WIN, WDO e DI1, calendário de vencimentos calculado pelas regras B3, calculadora de risco por operação, IR de day trade e preço justo do dólar futuro.">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script src="assets/tw-config.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -24,11 +24,10 @@
                 <div>
                     <span class="px-2.5 py-0.5 bg-lect-navy text-white dark:bg-lect-teal font-mono text-[10px] font-bold uppercase tracking-wider border-l-2 border-lect-orange">MESA DE DERIVATIVOS · B3</span>
                     <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Futuros: Mini Índice, Mini Dólar &amp; DI</h1>
-                    <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl">Tudo o que o trader de WIN e WDO precisa ter à mão: contrato vigente e rolagem, especificações, vencimentos calculados pelas regras da B3, gestão de risco por operação, PU do DI e preço justo do dólar futuro.</p>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl">Tudo o que o trader de WIN e WDO precisa ter à mão: contrato vigente e rolagem, especificações, vencimentos calculados pelas regras da B3, gestão de risco por operação, IR de day trade e preço justo do dólar futuro.</p>
                 </div>
                 <div class="font-mono text-[11px] flex flex-wrap gap-2">
                     <a href="#risco" class="px-3 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-semibold">Calculadora de risco</a>
-                    <a href="#di" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Curva DI</a>
                     <a href="#paridade" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Dólar justo</a>
                 </div>
             </div>
@@ -144,36 +143,6 @@
                 </div>
             </section>
 
-            <!-- CURVA DI -->
-            <section id="di" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start scroll-mt-28">
-                <div class="lg:col-span-5 term-panel p-6 space-y-4">
-                    <div class="border-b border-slate-200 dark:border-lect-borderDark pb-3">
-                        <span class="term-label text-lect-teal font-bold">ESTRUTURA A TERMO</span>
-                        <h3 class="font-display text-lg font-bold">Monte a curva DI do dia</h3>
-                        <p class="text-xs text-slate-500 mt-1">Digite as taxas de ajuste (b3.com.br → Taxas referenciais). Os valores iniciais são um <span class="lx-demo">EXEMPLO</span>.</p>
-                    </div>
-                    <div id="di-inputs" class="grid grid-cols-2 gap-3 font-mono text-xs"></div>
-                    <div class="pt-3 border-t border-slate-200 dark:border-lect-borderDark">
-                        <span class="term-label block mb-2">Conversor taxa ↔ PU</span>
-                        <div class="grid grid-cols-3 gap-2 font-mono text-xs">
-                            <label><span class="term-label block mb-1">Taxa (% a.a.)</span><input id="pu-rate" type="number" step="0.005" value="13.25" class="lx-input"></label>
-                            <label><span class="term-label block mb-1">DU</span><input id="pu-du" type="number" step="1" value="252" class="lx-input"></label>
-                            <label><span class="term-label block mb-1">PU</span><input id="pu-pu" type="number" step="0.01" class="lx-input"></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:col-span-7 term-panel p-6 space-y-4">
-                    <div id="di-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-3"></div>
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left font-mono tabular-nums text-xs">
-                            <thead class="quote-head uppercase"><tr><th class="py-2 px-3">Vértice</th><th class="py-2 px-3">DU</th><th class="py-2 px-3">Taxa</th><th class="py-2 px-3">PU</th><th class="py-2 px-3">Termo vs. anterior</th><th class="py-2 px-3 text-right">DV01 / contrato</th></tr></thead>
-                            <tbody id="di-table" class="divide-y divide-slate-200 dark:divide-lect-borderDark"></tbody>
-                        </table>
-                    </div>
-                    <div id="di-edu" class="p-4 bg-lect-navy text-white border-l-4 border-lect-teal text-xs leading-relaxed"></div>
-                </div>
-            </section>
-
             <!-- PARIDADE DO DÓLAR -->
             <section id="paridade" class="term-panel p-6 scroll-mt-28">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -192,45 +161,6 @@
                         <label><span class="term-label block mb-1">DU</span><input id="par-du" type="number" class="lx-input" readonly></label>
                         <label><span class="term-label block mb-1">DC</span><input id="par-dc" type="number" class="lx-input" readonly></label>
                         <div class="col-span-2 sm:col-span-3 p-4 bg-lect-navy text-white border-l-4 border-lect-orange" id="par-out"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- TREINADOR DE TAPE READING -->
-            <section id="tape" class="term-panel overflow-hidden scroll-mt-28">
-                <div class="panel-head">
-                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-game-controller text-lect-orange"></i>Treinador de Tape Reading</span>
-                    <span class="lx-demo">SIMULADOR DE TREINO · DADOS FICTÍCIOS</span>
-                </div>
-                <div class="p-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
-                    <div class="lg:col-span-4 space-y-3">
-                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">Cada rodada mostra ~12 segundos de um pregão simulado do WIN: book, times &amp; trades, preço e saldo de agressão (delta). Observe e responda o que estava acontecendo. Treino de leitura, não previsão de mercado.</p>
-                        <div class="grid grid-cols-3 gap-2 font-mono text-center">
-                            <div class="p-2 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Pontos</span><strong id="tp-score" class="text-lg">0</strong></div>
-                            <div class="p-2 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Acertos</span><strong id="tp-hits" class="text-lg">0/0</strong></div>
-                            <div class="p-2 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Sequência</span><strong id="tp-streak" class="text-lg">0</strong></div>
-                        </div>
-                        <div class="font-mono text-xs flex gap-2">
-                            <label class="flex-1"><span class="term-label block mb-1">Velocidade</span>
-                                <select id="tp-speed" class="lx-input"><option value="320">Iniciante</option><option value="200" selected>Normal</option><option value="120">Rápida</option></select></label>
-                            <button id="tp-start" class="self-end px-4 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-bold">Nova rodada</button>
-                        </div>
-                        <div id="tp-question" class="space-y-2"></div>
-                        <div id="tp-feedback" class="text-xs leading-relaxed"></div>
-                    </div>
-                    <div class="lg:col-span-3">
-                        <span class="term-label block mb-1">Book de ofertas</span>
-                        <div id="tp-book" class="font-mono tabular-nums text-xs border border-slate-200 dark:border-lect-borderDark"></div>
-                    </div>
-                    <div class="lg:col-span-5 space-y-3 min-w-0">
-                        <div>
-                            <div class="flex justify-between"><span class="term-label">Preço e delta acumulado</span><span id="tp-delta" class="font-mono text-xs font-bold">Δ 0</span></div>
-                            <div id="tp-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-1 mt-1"></div>
-                        </div>
-                        <div>
-                            <span class="term-label block mb-1">Times &amp; trades</span>
-                            <div id="tp-tape" class="font-mono tabular-nums text-[11px] h-44 overflow-hidden border border-slate-200 dark:border-lect-borderDark"></div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -368,51 +298,6 @@
         ['ir-gross', 'ir-costs', 'ir-loss', 'ir-irrf'].forEach(id => $(id).addEventListener('input', calcIR));
         calcIR();
 
-        /* ---------- Curva DI ---------- */
-        const exampleRates = [13.30, 12.85, 12.95, 13.10, 13.25, 13.35, 13.40, 13.45]; // EXEMPLO DIDÁTICO
-        $('di-inputs').innerHTML = di.map((v, i) => `<label><span class="term-label block mb-1">${v.code} · ${v.du} DU</span><input data-di="${i}" type="number" step="0.005" value="${exampleRates[i]}" class="lx-input"></label>`).join('');
-        function calcDI() {
-            const rates = di.map((v, i) => parseFloat(document.querySelector(`[data-di="${i}"]`).value));
-            const selic = LX.data.selic.value;
-            let rowsHtml = '';
-            rates.forEach((r, i) => {
-                const pu = LX.diPU(r, di[i].du), dv01 = Math.abs(LX.diPU(r + 0.01, di[i].du) - pu);
-                let fwd = '—';
-                if (i > 0 && !isNaN(rates[i - 1])) {
-                    const f = (Math.pow(Math.pow(1 + r / 100, di[i].du / 252) / Math.pow(1 + rates[i - 1] / 100, di[i - 1].du / 252), 252 / (di[i].du - di[i - 1].du)) - 1) * 100;
-                    fwd = LX.pct(f, 2);
-                }
-                rowsHtml += `<tr><td class="py-2 px-3 font-bold">${di[i].code}</td><td class="px-3">${di[i].du.toLocaleString('pt-BR')}</td><td class="px-3">${LX.pct(r, 3)}</td><td class="px-3">${LX.num(pu, 2)}</td><td class="px-3">${fwd}</td><td class="px-3 text-right text-lect-teal font-bold">${LX.brl(dv01)}</td></tr>`;
-            });
-            $('di-table').innerHTML = rowsHtml;
-
-            const W = 640, H = 220, L = 46, R = 14, T = 16, B = 34;
-            const vals = rates.concat([selic]).filter(v => !isNaN(v)), mn = Math.min(...vals) - 0.3, mx = Math.max(...vals) + 0.3;
-            const maxDu = di[di.length - 1].du;
-            const X = du => L + du / maxDu * (W - L - R), Y = v => T + (mx - v) / (mx - mn) * (H - T - B);
-            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Curva DI montada">`;
-            for (let k = 0; k <= 4; k++) { const v = mn + (mx - mn) * k / 4; s += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#94A3B8" stroke-opacity=".2"/><text x="4" y="${Y(v) + 3}" font-size="9" fill="#64748B">${LX.num(v, 2)}%</text>`; }
-            s += `<line x1="${L}" x2="${W - R}" y1="${Y(selic)}" y2="${Y(selic)}" stroke="#F39200" stroke-dasharray="5 4"/><text x="${W - R}" y="${Y(selic) - 4}" font-size="9" text-anchor="end" fill="#F39200">Selic ${LX.pct(selic)}</text>`;
-            const pts = rates.map((r, i) => [X(di[i].du), Y(r)]);
-            s += `<polyline fill="none" stroke="#009988" stroke-width="2.5" points="${pts.map(p => p.join(',')).join(' ')}"/>`;
-            pts.forEach((p, i) => s += `<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#009988"/><text x="${p[0]}" y="${p[1] - 8}" font-size="9" text-anchor="middle" fill="#009988" font-weight="700">${LX.num(rates[i], 2)}</text><text x="${p[0]}" y="${H - 14}" font-size="9" text-anchor="middle" fill="#64748B">${di[i].code.slice(3)}</text>`);
-            s += `</svg>`;
-            $('di-chart').innerHTML = s;
-
-            const cdi = LX.data.cdi.value, priced = cdi - rates[0];
-            const slope = rates[rates.length - 1] - rates[0];
-            $('di-edu').innerHTML = `<strong>Leitura:</strong> com a Selic em ${LX.pct(selic)} e o ${di[0].code} a ${LX.pct(rates[0], 3)}, a taxa está ${LX.num(Math.abs(priced) * 100, 0)} bps ${priced >= 0 ? 'abaixo' : 'acima'} do CDI atual (${LX.pct(cdi)}): o mercado ${priced > 0.05 ? `precifica <strong>cortes</strong> de juros até ${LX.br(di[0].expiry)}` : priced < -0.05 ? 'precifica <strong>alta</strong> de juros no curto prazo' : 'precifica <strong>estabilidade</strong> no curto prazo'}. Lembre que o DI1 embute também um pequeno prêmio de risco. A inclinação ${di[0].code.slice(3)}→${di[di.length - 1].code.slice(3)} é de <strong>${LX.num(slope * 100, 0)} bps</strong>${slope > 0.3 ? ' — curva positivamente inclinada, com prêmio de risco nos vértices longos.' : slope < -0.3 ? ' — curva invertida, típica de expectativa de cortes.' : ' — curva relativamente plana.'} O DV01 mostra quanto 1 contrato ganha/perde a cada 0,01 p.p.: vértices longos têm DV01 maior e, portanto, mais risco por contrato.`;
-        }
-        document.querySelectorAll('[data-di]').forEach(el => el.addEventListener('input', () => { calcDI(); syncParDI(); }));
-        document.addEventListener('lx:macro', calcDI);
-        calcDI();
-
-        // Conversor taxa ↔ PU
-        $('pu-rate').addEventListener('input', () => { $('pu-pu').value = LX.diPU(num('pu-rate'), num('pu-du')).toFixed(2); });
-        $('pu-du').addEventListener('input', () => { $('pu-pu').value = LX.diPU(num('pu-rate'), num('pu-du')).toFixed(2); });
-        $('pu-pu').addEventListener('input', () => { if (num('pu-pu') > 0) $('pu-rate').value = LX.diRateFromPU(num('pu-pu'), num('pu-du')).toFixed(3); });
-        $('pu-pu').value = LX.diPU(13.25, 252).toFixed(2);
-
         /* ---------- Paridade ---------- */
         $('par-contract').innerHTML = wdo.slice(0, 6).map((c, i) => `<option value="${i}" ${c === wdoLive ? 'selected' : ''}>${c.code} · ${LX.brShort(c.expiry)}</option>`).join('');
         function syncParDI() { if (!$('par-di').dataset.touched) $('par-di').value = (LX.data.cdi.value).toFixed(2); }
@@ -437,102 +322,6 @@
         $('par-spot').addEventListener('input', () => $('par-spot').dataset.touched = 1);
         document.addEventListener('lx:macro', () => { syncParDI(); calcPar(); });
         syncParDI(); calcPar();
-
-        /* ---------- Treinador de Tape Reading (simulação didática) ---------- */
-        (function tapeTrainer() {
-            const SC = {
-                buyAgg: { label: 'Agressão compradora', exp: 'Compradores consumiram as ofertas de venda nível após nível: delta subindo junto com o preço. Fluxo comprador no controle.' },
-                sellAgg: { label: 'Agressão vendedora', exp: 'Vendedores bateram nas ofertas de compra e o preço caiu nível a nível, com delta negativo acompanhando.' },
-                absSell: { label: 'Absorção vendedora (vendedor grande segurando)', exp: 'Muita agressão compradora (delta subindo forte), mas o preço não passou de um nível: a oferta de venda era renovada sem parar. Um vendedor grande estava absorvendo — sinal de possível topo local.' },
-                absBuy: { label: 'Absorção compradora (comprador grande segurando)', exp: 'Muita agressão vendedora, mas o preço parou num nível: a oferta de compra se renovava. Um comprador grande absorvia a venda — sinal de possível fundo local.' },
-                exhaust: { label: 'Exaustão compradora', exp: 'O preço subiu com agressão forte, mas os lotes foram diminuindo, o ritmo caiu e surgiram vendas no topo. A compra perdeu força.' }
-            };
-            const keys = Object.keys(SC);
-            let state = null, timer = null, score = 0, hits = 0, total = 0, streak = 0;
-
-            function newRound() {
-                clearInterval(timer);
-                const sc = keys[Math.floor(Math.random() * keys.length)];
-                const base = Math.round((128000 + Math.random() * 8000) / 5) * 5;
-                state = { sc, price: base, start: base, wall: base + (sc === 'absSell' ? 10 : sc === 'absBuy' ? -10 : 0), delta: 0, tick: 0, n: 48, trades: [], path: [{ p: base, d: 0 }], pressure: 0 };
-                $('tp-question').innerHTML = '<p class="text-xs text-slate-500">Observe o fluxo…</p>';
-                $('tp-feedback').innerHTML = '';
-                $('tp-tape').innerHTML = '';
-                timer = setInterval(step, +$('tp-speed').value);
-                step();
-            }
-            const rnd = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
-            function step() {
-                const s = state, t = s.tick / s.n;
-                let buyProb = 0.5, size = rnd(1, 15);
-                switch (s.sc) {
-                    case 'buyAgg': buyProb = 0.72; size = rnd(5, 40); break;
-                    case 'sellAgg': buyProb = 0.28; size = rnd(5, 40); break;
-                    case 'absSell': buyProb = 0.74; size = rnd(10, 60); break;
-                    case 'absBuy': buyProb = 0.26; size = rnd(10, 60); break;
-                    case 'exhaust': buyProb = t < 0.55 ? 0.75 : 0.42; size = t < 0.55 ? rnd(10, 45) : rnd(1, 8); break;
-                }
-                const isBuy = Math.random() < buyProb;
-                s.delta += isBuy ? size : -size;
-                s.pressure += isBuy ? size : -size;
-                const levelSize = 60;
-                if (s.sc === 'absSell' && isBuy && s.price >= s.wall) { s.pressure = Math.min(s.pressure, 0); }
-                else if (s.sc === 'absBuy' && !isBuy && s.price <= s.wall) { s.pressure = Math.max(s.pressure, 0); }
-                else if (s.pressure > levelSize) { s.price += 5; s.pressure = 0; }
-                else if (s.pressure < -levelSize) { s.price -= 5; s.pressure = 0; }
-                s.trades.unshift({ isBuy, size, price: s.price });
-                s.path.push({ p: s.price, d: s.delta });
-                s.tick++;
-                draw();
-                if (s.tick >= s.n) { clearInterval(timer); ask(); }
-            }
-            function draw() {
-                const s = state, dark = LX.isDark();
-                // book
-                const lv = [];
-                for (let i = 5; i >= 1; i--) {
-                    const p = s.price + i * 5, wall = (s.sc === 'absSell' && p === s.wall) || (s.sc === 'absSell' && i === 1 && s.price >= s.wall);
-                    lv.push(`<div class="flex justify-between px-2 py-1 ${i === 1 ? 'bg-rose-500/10' : ''}"><span class="text-rose-600 dark:text-rose-400">${LX.num(p, 0)}</span><span class="${wall ? 'font-bold text-rose-600' : ''}">${wall ? rnd(800, 1500) : rnd(40, 300)}</span></div>`);
-                }
-                lv.push(`<div class="px-2 py-1 text-center bg-slate-100 dark:bg-lect-bgDark font-bold">${LX.num(s.price, 0)}</div>`);
-                for (let i = 0; i < 5; i++) {
-                    const p = s.price - i * 5, wall = (s.sc === 'absBuy' && i === 0 && s.price <= s.wall);
-                    lv.push(`<div class="flex justify-between px-2 py-1 ${i === 0 ? 'bg-emerald-500/10' : ''}"><span class="text-emerald-600 dark:text-emerald-400">${LX.num(p, 0)}</span><span class="${wall ? 'font-bold text-emerald-600' : ''}">${wall ? rnd(800, 1500) : rnd(40, 300)}</span></div>`);
-                }
-                $('tp-book').innerHTML = `<div class="flex justify-between px-2 py-1 quote-head"><span>PREÇO</span><span>QTD</span></div>` + lv.join('');
-                // tape
-                $('tp-tape').innerHTML = s.trades.slice(0, 14).map(tr => `<div class="flex justify-between px-2 py-0.5 border-l-2 ${tr.isBuy ? 'border-emerald-500 bg-emerald-500/5' : 'border-rose-500 bg-rose-500/5'}"><span>${tr.isBuy ? 'COMPRA' : 'VENDA'}</span><span>${LX.num(tr.price, 0)}</span><strong>${tr.size}</strong></div>`).join('');
-                // chart
-                const W = 400, H = 120, ps = s.path.map(x => x.p), ds = s.path.map(x => x.d);
-                const pmin = Math.min(...ps) - 10, pmax = Math.max(...ps) + 10, dmax = Math.max(1, ...ds.map(Math.abs));
-                const X = i => 6 + i * (W - 12) / s.n, Yp = v => 8 + (pmax - v) / (pmax - pmin) * (H - 16), Yd = v => H / 2 - v / dmax * (H / 2 - 8);
-                $('tp-chart').innerHTML = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto" role="img" aria-label="Preço e delta">
-                    <line x1="0" x2="${W}" y1="${H / 2}" y2="${H / 2}" stroke="#94A3B8" stroke-opacity=".25"/>
-                    <polyline fill="none" stroke="#6366F1" stroke-width="1.4" stroke-dasharray="4 3" points="${ds.map((v, i) => X(i) + ',' + Yd(v)).join(' ')}"/>
-                    <polyline fill="none" stroke="#009988" stroke-width="2.2" points="${ps.map((v, i) => X(i) + ',' + Yp(v)).join(' ')}"/>
-                    <text x="6" y="${H - 3}" font-size="9" fill="#009988" font-family="JetBrains Mono">━ preço</text><text x="70" y="${H - 3}" font-size="9" fill="#6366F1" font-family="JetBrains Mono">┅ delta</text></svg>`;
-                const dEl = $('tp-delta'); dEl.textContent = 'Δ ' + (s.delta > 0 ? '+' : '') + s.delta + ' · ' + (s.price - s.start >= 0 ? '+' : '') + (s.price - s.start) + ' pts';
-                dEl.className = 'font-mono text-xs font-bold ' + LX.signClass(s.delta);
-            }
-            function ask() {
-                const opts = keys.slice().sort(() => Math.random() - 0.5);
-                $('tp-question').innerHTML = `<p class="text-sm font-bold">O que aconteceu nessa janela?</p>` + opts.map(k => `<button data-a="${k}" class="w-full text-left px-3 py-2 text-xs border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal">${SC[k].label}</button>`).join('');
-                document.querySelectorAll('#tp-question button').forEach(b => b.onclick = () => answer(b.dataset.a));
-            }
-            function answer(a) {
-                const ok = a === state.sc;
-                total++; if (ok) { hits++; streak++; score += 10 + 5 * (streak - 1); } else streak = 0;
-                document.querySelectorAll('#tp-question button').forEach(b => {
-                    b.disabled = true;
-                    if (b.dataset.a === state.sc) b.className += ' !border-emerald-500 bg-emerald-500/10 font-bold';
-                    else if (b.dataset.a === a) b.className += ' !border-rose-500 bg-rose-500/10';
-                });
-                $('tp-score').textContent = score; $('tp-hits').textContent = `${hits}/${total}`; $('tp-streak').textContent = streak;
-                $('tp-feedback').innerHTML = `<div class="p-3 border-l-4 ${ok ? 'border-emerald-500 bg-emerald-500/10' : 'border-rose-500 bg-rose-500/10'}"><strong>${ok ? 'Acertou.' : 'Não foi dessa vez.'}</strong> Era <strong>${SC[state.sc].label}</strong>. ${SC[state.sc].exp}</div>`;
-            }
-            $('tp-start').onclick = newRound;
-            newRound();
-        })();
 
         /* ---------- Glossário ---------- */
         const G = [

@@ -2,7 +2,7 @@
 
 ```
 index.html          Mercado Hoje: indicadores oficiais, agenda, câmbio, Focus, Copom, notícias
-futuros.html        NOVA — WIN, WDO e DI: vencimentos, risco por operação, IR, curva DI, dólar justo
+futuros.html        NOVA — WIN, WDO e DI: vencimentos, risco por operação, IR, dólar justo
 acoes.html          Ações B3: cotação (brapi), gráfico (TradingView), painéis didáticos de fluxo/opções
 laboratorio.html    Enciclopédia + simuladores (regras de IR de 2026)
 assets/
@@ -39,7 +39,7 @@ Em `assets/lectnex-core.js`, bloco `LX.config`:
 | Estrangeiro em ações | BCB SGS 22927 | mensal |
 | Gráficos, notícias, calendário global | Widgets TradingView | alguns símbolos B3 podem exigir licença no widget |
 
-Taxas DI em tempo real, posições em aberto e fluxo por corretora são dados da B3 cuja republicação exige autorização — por isso a curva DI é montada pelo usuário e o site usa dados abertos da CVM e do Banco Central no lugar. O único conteúdo simulado é o Treinador de Tape Reading, marcado como tal.
+Taxas DI em tempo real, posições em aberto e fluxo por corretora são dados da B3 cuja republicação exige autorização — por isso o site usa dados abertos da CVM e do Banco Central no lugar (sem curva DI montada pelo usuário nem treinador de tape).
 
 ## Dados da CVM (fundos donos de cada ação e captação dos fundos de ações)
 

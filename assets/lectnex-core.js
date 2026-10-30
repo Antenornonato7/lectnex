@@ -165,10 +165,6 @@
         }
         return out;
     };
-    // PU do DI1: 100.000 / (1 + taxa)^(DU/252)
-    LX.diPU = (rate, du) => 100000 / Math.pow(1 + rate / 100, du / 252);
-    LX.diRateFromPU = (pu, du) => (Math.pow(100000 / pu, 252 / du) - 1) * 100;
-
     /* ------------------------------------------------------------------ STATUS DOS PREGÕES */
     // Horários aproximados (BRT). A B3 ajusta a grade quando os EUA entram/saem do horário de verão.
     LX.sessions = {
@@ -453,7 +449,6 @@
     LX.paletteItems = [
         ['FUTUROS', 'Vencimentos WIN, WDO, DI e opções', 'futuros.html#vencimentos'],
         ['FUTUROS', 'Calculadora de risco por operação (WIN/WDO)', 'futuros.html#risco'],
-        ['FUTUROS', 'Calculadora DI: taxa ↔ PU, DV01', 'futuros.html#di'],
         ['FUTUROS', 'Preço justo do dólar futuro (paridade)', 'futuros.html#paridade'],
         ['MERCADO', 'Agenda: Copom, FOMC, IPCA, vencimentos', 'index.html#agenda'],
         ['MERCADO', 'Boletim Focus ao vivo', 'index.html#juros'],
