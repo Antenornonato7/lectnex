@@ -3,7 +3,7 @@
    - Dados reais: Banco Central (SGS / PTAX / Focus) e AwesomeAPI (câmbio, cripto)
    - Calendário B3: feriados, dias úteis, vencimentos de WIN, WDO, DI1 e opções
    - Status dos pregões, relógio, tema claro/escuro e widgets TradingView
-   Nenhuma dependência externa. Carregue com <script src="assets/lectnex-core.js"></script>
+   Nenhuma dependência externa. Carregue com <script src="assets/lectnex-core.js?v=20261030b"></script>
    ===================================================================================== */
 (function () {
     'use strict';
@@ -11,7 +11,7 @@
     const LX = (window.LX = window.LX || {});
 
     /* ------------------------------------------------------------------ CONFIG */
-    LX.config = Object.assign({
+    LX.config = Object.assign({}, LX.config || {}, {
         // Token gratuito em https://brapi.dev (sem token, só PETR4/VALE3/ITUB4/MGLU3 respondem)
         brapiToken: 'uRJnTfjL6jypdHfJ8b5LJd',
         // Valores de referência usados até a resposta das APIs (ou se elas falharem).
@@ -24,7 +24,8 @@
             ipcaMes: 0.82,         // IPCA set/2026
             ipcaRef: 'set/2026'
         }
-    }, LX.config || {});
+    });
+    LX.config.brapiToken = 'uRJnTfjL6jypdHfJ8b5LJd';
 
     /* ------------------------------------------------------------------ FORMATOS */
     const nf = (min, max) => new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });
