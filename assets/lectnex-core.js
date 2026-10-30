@@ -365,6 +365,7 @@
         <path d="M34 49.5 L60 62 L60 91.5 L34 79 Z" fill="#00756C"/><path d="M60 62 L86 49.5 L86 79 L60 91.5 Z" fill="#00B4A2"/></svg>`;
     const NAV = [
         { key: 'mercado', href: 'index.html', label: 'Mercado Hoje', icon: 'ph-pulse' },
+        { key: 'macro', href: 'macro.html', label: 'Macro & Juros', icon: 'ph-chart-line' },
         { key: 'futuros', href: 'futuros.html', label: 'Futuros B3', icon: 'ph-chart-line-up', badge: 'NOVO' },
         { key: 'acoes', href: 'acoes.html', label: 'Ações B3', icon: 'ph-chart-bar' },
         { key: 'lab', href: 'laboratorio.html', label: 'Laboratório', icon: 'ph-student' }
@@ -455,8 +456,11 @@
         ['futuros', 'DJ', 'Dólar futuro justo', 'Paridade: spot × diferencial de juros', 'futuros.html#paridade', 'ph-currency-dollar', 'dolar justo paridade wdo cupom cambial'],
         ['futuros', 'IRDT', 'IR de day trade', '20% sobre o lucro, DARF e dedo-duro', 'futuros.html#risco', 'ph-receipt', 'imposto darf day trade irrf dedo duro'],
         ['mercado', 'AGENDA', 'Agenda da semana', 'Copom, FOMC, IPCA, payroll, vencimentos', 'index.html#agenda', 'ph-calendar-dots', 'agenda eventos calendario copom fomc payroll'],
-        ['mercado', 'FOCUS', 'Boletim Focus e juros', 'Expectativas do mercado e curva', 'index.html#juros', 'ph-trend-up', 'focus expectativa juros curva selic copom'],
+        ['mercado', 'FOCUS', 'Boletim Focus e Copom', 'Expectativas do mercado e decisões da Selic', 'macro.html#juros', 'ph-trend-up', 'focus expectativa juros curva selic copom'],
         ['mercado', 'FX', 'Câmbio e cripto ao vivo', 'Dólar, euro, bitcoin, PTAX', 'index.html#cambio', 'ph-arrows-left-right', 'cambio dolar euro bitcoin cripto ptax moeda'],
+        ['mercado', 'CURVA', 'Curva de juros (DI1)', 'Como ler a curva e os vértices vigentes', 'macro.html#curva', 'ph-chart-line', 'curva juros di di1 vertice estrutura termo'],
+        ['mercado', 'ESE', 'E se…? Mapa de reações', 'Como Copom, IPCA, Fed e fiscal chegam ao WIN e WDO', 'macro.html#educacao', 'ph-git-branch', 'cenario reacao noticia transmissao copom ipca fed payroll fiscal china e se'],
+        ['mercado', 'REGIME', 'Regimes de risco', 'Risk-on, risk-off e como os ativos reagem', 'macro.html#regimes', 'ph-gauge', 'regime risco risk on off aversao apetite intermercado'],
         ['mercado', 'GLOBAL', 'Mercados globais', 'Bolsas, Treasuries, DXY, commodities', 'index.html#global', 'ph-globe-hemisphere-west', 'global eua sp500 nasdaq dxy treasury petroleo ouro'],
         ['mercado', 'NEWS', 'Notícias', 'Manchetes do mercado', 'index.html#noticias', 'ph-newspaper', 'noticias manchetes'],
         ['acoes', 'DONOS', 'Quem é dono da ação', 'Fundos com a ação na carteira (CVM)', 'acoes.html#donos', 'ph-users-three', 'fundos donos carteira cvm'],
@@ -477,7 +481,7 @@
         ['GGBR4', 'Gerdau', 'Siderurgia'], ['RADL3', 'Raia Drogasil', 'Farmácias'], ['EQTL3', 'Equatorial', 'Energia'], ['SBSP3', 'Sabesp', 'Saneamento'],
         ['VIVT3', 'Vivo', 'Telecom'], ['EMBR3', 'Embraer', 'Aeronáutica'], ['RAIL3', 'Rumo', 'Logística'], ['CMIG4', 'Cemig', 'Energia']
     ];
-    const SHORT = { VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
+    const SHORT = { CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
     LX.paletteItems = CMD.map(c => [c[0].toUpperCase(), c[2], c[4]]); // compatibilidade
     const CATS = [['tudo', 'Tudo'], ['acoes', 'Ações'], ['futuros', 'Futuros'], ['mercado', 'Mercado'], ['lab', 'Laboratório']];
     const norm = t => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -503,9 +507,9 @@
             if (/^(usd|dolar|dollar|usdbrl|usd\/brl)$/.test(q)) { const f = LX.data.fx.USDBRL; return { icon: 'ph-currency-dollar', title: f ? `Dólar comercial: R$ ${LX.num(f.bid, 4)}` : 'Dólar comercial', sub: f ? `${f.pct >= 0 ? '+' : ''}${LX.num(f.pct, 2)}% no dia · máx ${LX.num(f.high, 4)} · mín ${LX.num(f.low, 4)}` : 'carregando cotação...', href: 'index.html#cambio', tag: 'AO VIVO', cls: f ? LX.signClass(f.pct) : '' }; }
             if (/^(eur|euro)$/.test(q)) { const f = LX.data.fx.EURBRL; return { icon: 'ph-currency-eur', title: f ? `Euro: R$ ${LX.num(f.bid, 4)}` : 'Euro', sub: f ? `${f.pct >= 0 ? '+' : ''}${LX.num(f.pct, 2)}% no dia` : 'carregando...', href: 'index.html#cambio', tag: 'AO VIVO' }; }
             if (/^(btc|bitcoin)$/.test(q)) { const f = LX.data.fx.BTCBRL; return { icon: 'ph-currency-btc', title: f ? `Bitcoin: ${LX.brl(f.bid, 0)}` : 'Bitcoin', sub: f ? `${f.pct >= 0 ? '+' : ''}${LX.num(f.pct, 2)}% no dia` : 'carregando...', href: 'index.html#cambio', tag: 'AO VIVO' }; }
-            if (/^(selic|copom)$/.test(q)) return { icon: 'ph-bank', title: `Selic: ${LX.pct(LX.data.selic.value)} ao ano`, sub: `CDI ${LX.pct(LX.data.cdi.value)} · fonte BCB · ${LX.data.selic.date || ''}`, href: 'index.html#juros', tag: 'BCB' };
+            if (/^(selic|copom)$/.test(q)) return { icon: 'ph-bank', title: `Selic: ${LX.pct(LX.data.selic.value)} ao ano`, sub: `CDI ${LX.pct(LX.data.cdi.value)} · fonte BCB · ${LX.data.selic.date || ''}`, href: 'macro.html#juros', tag: 'BCB' };
             if (/^cdi$/.test(q)) return { icon: 'ph-bank', title: `CDI: ${LX.pct(LX.data.cdi.value)} ao ano`, sub: `≈ ${LX.pct((Math.pow(1 + LX.data.cdi.value / 100, 1 / 12) - 1) * 100)} ao mês`, href: 'laboratorio.html?tab=rf', tag: 'BCB' };
-            if (/^(ipca|inflacao)$/.test(q)) return { icon: 'ph-shopping-cart', title: `IPCA 12 meses: ${LX.pct(LX.data.ipca12m.value)}`, sub: `no mês: ${LX.pct(LX.data.ipcaMes.value)} (${LX.data.ipcaMes.date}) · juro real ≈ ${LX.pct(((1 + LX.data.selic.value / 100) / (1 + LX.data.ipca12m.value / 100) - 1) * 100)}`, href: 'index.html#juros', tag: 'IBGE' };
+            if (/^(ipca|inflacao)$/.test(q)) return { icon: 'ph-shopping-cart', title: `IPCA 12 meses: ${LX.pct(LX.data.ipca12m.value)}`, sub: `no mês: ${LX.pct(LX.data.ipcaMes.value)} (${LX.data.ipcaMes.date}) · juro real ≈ ${LX.pct(((1 + LX.data.selic.value / 100) / (1 + LX.data.ipca12m.value / 100) - 1) * 100)}`, href: 'macro.html#juros', tag: 'IBGE' };
             return null;
         };
         const r = now(); if (r) return r;

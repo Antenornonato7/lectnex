@@ -1,13 +1,15 @@
 # Lectnex Terminal — estrutura do site
 
 ```
-index.html          Mercado Hoje: indicadores oficiais, agenda, câmbio, Focus, Copom, notícias
+index.html          Mercado Hoje: indicadores oficiais, agenda, câmbio, mercados globais, notícias
+macro.html          Macro & Juros: Copom, Focus, curva DI, regimes de risco, mapa "E se…?"
 futuros.html        NOVA — WIN, WDO e DI: vencimentos, risco por operação, IR, dólar justo
 acoes.html          Ações B3: cotação (brapi), gráfico (TradingView), painéis didáticos de fluxo/opções
-laboratorio.html    Enciclopédia + simuladores (regras de IR de 2026)
+laboratorio.html    Academia (trilhas, lições interativas, glossário) + simuladores
 assets/
   lectnex-core.js   Núcleo: dados BCB/AwesomeAPI, calendário B3, vencimentos, cabeçalho/rodapé, busca
   lectnex.css       Estilos compartilhados
+  lectnex-academia.js Lições, quizzes e glossário da Academia (edite o array LESSONS)
   tw-config.js      Cores e fontes da marca para o Tailwind
 ```
 

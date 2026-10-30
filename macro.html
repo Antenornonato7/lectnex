@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectnex Terminal — Macro &amp; Juros: Copom, Focus, Curva DI e Cenários</title>
+    <meta name="description" content="Política monetária e cenários para quem opera WIN, WDO e DI: decisões do Copom, Boletim Focus ao vivo, leitura da curva de juros, regimes de risco e o mapa de reações E se…?">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="assets/tw-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link rel="stylesheet" href="assets/lectnex.css">
+</head>
+<body data-page="macro" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <section class="border-b border-slate-300 dark:border-lect-borderDark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <span class="term-label text-lect-teal font-bold">POLÍTICA MONETÁRIA · EXPECTATIVAS · CENÁRIOS</span>
+            <h1 class="font-display text-3xl sm:text-4xl font-bold mt-1">Macro &amp; Juros</h1>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl">O porquê por trás do preço: o ciclo da Selic, o que o mercado espera no Focus, como ler a curva DI e como cada notícia costuma chegar ao WIN e ao WDO.</p>
+            <div class="flex flex-wrap items-center gap-2 mt-5 font-mono text-xs">
+                <span class="px-3 py-1.5 bg-lect-navy text-white">SELIC <strong data-lx="selic">—</strong></span>
+                <span class="px-3 py-1.5 bg-white dark:bg-lect-cardDark border border-slate-300 dark:border-lect-borderDark">CDI <strong data-lx="cdi">—</strong></span>
+                <span class="px-3 py-1.5 bg-white dark:bg-lect-cardDark border border-slate-300 dark:border-lect-borderDark">IPCA 12M <strong data-lx="ipca12m">—</strong></span>
+                <span class="px-3 py-1.5 bg-white dark:bg-lect-cardDark border border-slate-300 dark:border-lect-borderDark">JURO REAL <strong data-lx="real">—</strong></span>
+                <span class="px-3 py-1.5 bg-lect-orange/10 border border-lect-orange/40 text-lect-orange font-bold">PRÓXIMO COPOM <span id="mc-next">—</span></span>
+            </div>
+            <nav class="flex flex-wrap gap-1 mt-5 font-mono text-[11px]">
+                <a href="#juros" class="px-3 py-1.5 bg-slate-100 dark:bg-lect-cardDark hover:text-lect-teal"><i class="ph-bold ph-bank"></i> Copom &amp; Focus</a>
+                <a href="#curva" class="px-3 py-1.5 bg-slate-100 dark:bg-lect-cardDark hover:text-lect-teal"><i class="ph-bold ph-chart-line"></i> Curva DI</a>
+                <a href="#regimes" class="px-3 py-1.5 bg-slate-100 dark:bg-lect-cardDark hover:text-lect-teal"><i class="ph-bold ph-gauge"></i> Regimes de risco</a>
+                <a href="#educacao" class="px-3 py-1.5 bg-slate-100 dark:bg-lect-cardDark hover:text-lect-teal"><i class="ph-bold ph-git-branch"></i> E se…?</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- 03 · JUROS & INFLAÇÃO: COPOM, FOCUS, CURVA                                        -->
+    <!-- ================================================================================= -->
+    <section id="juros" class="py-10 bg-white dark:bg-[#08111F] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-6">
+                <span class="term-label text-lect-orange font-bold">POLÍTICA MONETÁRIA &amp; EXPECTATIVAS</span>
+                <h2 class="font-display text-2xl font-bold">Juros &amp; Inflação</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                <!-- TRAJETÓRIA DA SELIC 2026 -->
+                <div class="lg:col-span-6 term-panel p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div>
+                            <span class="term-label">DECISÕES DO COPOM EM 2026</span>
+                            <h3 class="font-display text-lg font-bold">Ciclo de cortes da Selic</h3>
+                        </div>
+                        <span class="src-tag">FONTE: BCB · COMUNICADOS COPOM</span>
+                    </div>
+                    <div id="copom-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-3"></div>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+                        Após manter a Selic em 15% em janeiro, o Copom iniciou em março um ciclo de cortes de 0,25 p.p. por reunião. Cada corte tende a <strong>fechar</strong> a ponta curta da curva DI (DI1F27/F28), reduz o CDI que remunera a renda fixa pós-fixada e diminui o diferencial de juros que sustenta o real — por isso decisões do Copom mexem ao mesmo tempo com WIN, WDO e DI.
+                    </p>
+                </div>
+
+                <!-- FOCUS AO VIVO -->
+                <div class="lg:col-span-6 term-panel overflow-hidden">
+                    <div class="panel-head">
+                        <span class="font-display text-sm font-bold uppercase tracking-wide">Boletim Focus — Mediana do Mercado</span>
+                        <span id="focus-date" class="font-mono text-[10px] text-slate-300">carregando…</span>
+                    </div>
+                    <table class="w-full text-left font-mono tabular-nums text-xs">
+                        <thead class="quote-head uppercase">
+                            <tr><th class="py-2.5 px-4">Indicador</th><th class="py-2.5 px-3" data-focus-y="0"></th><th class="py-2.5 px-3" data-focus-y="1"></th><th class="py-2.5 px-3" data-focus-y="2"></th></tr>
+                        </thead>
+                        <tbody id="focus-body" class="divide-y divide-slate-200 dark:divide-lect-borderDark"></tbody>
+                    </table>
+                    <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500 leading-relaxed">
+                        Setas comparam com a pesquisa anterior. O Focus é publicado às segundas-feiras pelo BCB e reúne projeções de mais de 100 instituições. Fonte: API Olinda/BCB.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CURVA DE JUROS — LEITURA -->
+            <div id="curva" class="term-panel p-5 mt-6 scroll-mt-28">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                    <div class="lg:col-span-5">
+                        <span class="term-label text-lect-teal font-bold">ESTRUTURA A TERMO (DI1)</span>
+                        <h3 class="font-display text-lg font-bold">Como ler a curva de juros futuros</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                            Os contratos DI1 de janeiro são os vértices mais líquidos. A diferença entre a Selic atual e a taxa do primeiro vértice mostra quanto corte (ou alta) o mercado já precifica. Vértices longos (F31, F33) refletem risco fiscal e prêmio de prazo.
+                        </p>
+                        <ul class="mt-3 space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+                            <li><strong class="text-emerald-600">Curva fechando</strong> (taxas caindo) → alívio para ações domésticas, varejo, construção.</li>
+                            <li><strong class="text-rose-600">Curva abrindo</strong> (taxas subindo) → pressão em ações, apoio ao dólar.</li>
+                            <li><strong class="text-lect-orange">Inclinação</strong> (longo − curto) → leitura de risco fiscal e inflação futura.</li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-7">
+                        <div class="mb-2">
+                            <span class="term-label">VÉRTICES VIGENTES E DIAS ÚTEIS ATÉ O VENCIMENTO</span>
+                        </div>
+                        <div id="di-vertices" class="grid grid-cols-2 sm:grid-cols-4 gap-2 font-mono tabular-nums text-xs"></div>
+                        <p class="text-[11px] text-slate-500 mt-2">Taxas DI em tempo real são dados licenciados da B3. Os cartões mostram o código do vértice e os dias úteis até o vencimento; as taxas referenciais ficam em b3.com.br.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- REGIMES DE RISCO                                                                  -->
+    <!-- ================================================================================= -->
+    <section id="regimes" class="py-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="term-panel p-6">
+                <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-slate-200 dark:border-lect-borderDark">
+                    <div>
+                        <span class="term-label text-lect-teal font-bold">GUIA DE LEITURA · INTERMERCADOS</span>
+                        <h3 class="font-display text-lg font-bold">Como os ativos costumam reagir em cada regime de risco</h3>
+                    </div>
+                    <div class="flex items-center gap-1.5 font-mono text-[11px]" id="regime-btns"></div>
+                </div>
+                <h4 id="regime-title" class="font-display text-xl font-bold leading-snug"></h4>
+                <p id="regime-desc" class="text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed"></p>
+                <div class="mt-4">
+                    <div class="risk-scale h-2.5 w-full my-2"><div id="regime-marker" class="risk-marker" style="left:50%"></div></div>
+                    <div class="flex justify-between font-mono text-[10px] text-slate-500 uppercase"><span>Aversão (dólar, ouro, Treasuries)</span><span>Neutro</span><span>Apetite (bolsa, emergentes)</span></div>
+                </div>
+                <div id="regime-grid" class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-5 font-mono text-xs"></div>
+                <p class="text-[11px] text-slate-500 mt-4">Padrões históricos frequentes, não regras. Correlações mudam — especialmente em ano eleitoral ou com choques fiscais domésticos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- 06 · NOTAS EDUCACIONAIS                                                            -->
+    <!-- ================================================================================= -->
+    <section id="educacao" class="py-10 scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-5">
+                <div>
+                    <span class="term-label text-lect-teal font-bold">E SE…? · MAPA DE REAÇÕES</span>
+                    <h2 class="font-display text-2xl font-bold">Como uma notícia chega ao seu WIN e WDO</h2>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-1 max-w-3xl">Escolha um evento e veja o caminho típico: o gatilho, o primeiro impacto nos juros e no dólar, e onde isso aparece na tela. Embaixo, a tabela-resumo para consultar antes do pregão.</p>
+                </div>
+                <span class="lx-demo shrink-0">REAÇÃO TÍPICA · NÃO É GARANTIA</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+                <div id="tx-events" class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-1.5"></div>
+                <div class="lg:col-span-8 term-panel overflow-hidden">
+                    <div id="tx-head" class="p-5 border-b border-slate-200 dark:border-lect-borderDark"></div>
+                    <div id="tx-flow" class="p-5 bg-slate-50 dark:bg-lect-bgDark grid-bg"></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-200 dark:divide-lect-borderDark border-t border-slate-200 dark:border-lect-borderDark">
+                        <div class="p-5"><span class="term-label font-bold text-lect-teal flex items-center gap-1.5"><i class="ph-bold ph-eye"></i>O QUE OBSERVAR NO PREGÃO</span><ul id="tx-watch" class="mt-2 space-y-1.5 text-xs text-slate-600 dark:text-slate-300"></ul></div>
+                        <div class="p-5"><span class="term-label font-bold text-rose-600 flex items-center gap-1.5"><i class="ph-bold ph-warning"></i>QUANDO A REGRA FALHA</span><p id="tx-fail" class="mt-2 text-xs text-slate-600 dark:text-slate-300 leading-relaxed"></p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-panel mt-5 overflow-x-auto thin-scroll">
+                <div class="px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark flex flex-wrap items-center justify-between gap-2">
+                    <span class="term-label font-bold">TABELA-RESUMO · CLIQUE NUMA LINHA</span>
+                    <span class="font-mono text-[10px] text-slate-500 flex gap-3"><span><b class="text-emerald-600">▲</b> tende a subir</span><span><b class="text-rose-600">▼</b> tende a cair</span><span><b class="text-slate-400">●</b> ambíguo</span><span>duplo = efeito forte</span></span>
+                </div>
+                <table class="w-full min-w-[720px] font-mono text-xs"><thead id="tx-thead"></thead><tbody id="tx-tbody"></tbody></table>
+            </div>
+        </div>
+    </section>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js?v=20261030h"></script>
+    <script>
+    (function () {
+        const today = LX.todayBRT();
+        const nextCopom = LX.copom2026.map(([d]) => LX.parseISO(d)).find(d => d >= today);
+        document.getElementById('mc-next').textContent = nextCopom ? `${LX.weekday(nextCopom)} ${LX.brShort(nextCopom)} · ${LX.businessDaysBetween(today, nextCopom, true)} DU` : 'a definir';
+
+        /* ---------- Gráfico Copom (SVG gerado) ---------- */
+        function renderCopom() {
+            const done = LX.copom2026.filter(([, r]) => r).map(([d, r]) => ({ d: LX.parseISO(d), v: parseFloat(r.replace(',', '.')) }));
+            const pending = LX.copom2026.filter(([, r]) => !r).map(([d]) => LX.parseISO(d));
+            const W = 640, H = 210, L = 44, R = 14, T = 18, B = 34, min = 13, max = 15.5;
+            const n = done.length + pending.length;
+            const x = i => L + (i + 0.5) * (W - L - R) / n;
+            const y = v => T + (max - v) / (max - min) * (H - T - B);
+            const dark = LX.isDark();
+            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Selic definida em cada reunião do Copom de 2026">`;
+            [13.5, 14, 14.5, 15].forEach(v => s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="#94A3B8" stroke-opacity=".25" stroke-dasharray="3 3"/><text x="4" y="${y(v) + 3}" font-size="9" fill="#64748B">${LX.num(v, 2)}%</text>`);
+            done.forEach((p, i) => {
+                const bw = (W - L - R) / n * 0.56;
+                s += `<rect x="${x(i) - bw / 2}" y="${y(p.v)}" width="${bw}" height="${H - B - y(p.v)}" fill="${i === done.length - 1 ? '#009988' : (dark ? '#1E3A5F' : '#0C1A2A')}" opacity="${i === done.length - 1 ? 1 : .85}"/>`;
+                s += `<text x="${x(i)}" y="${y(p.v) - 5}" font-size="10" font-weight="700" text-anchor="middle" fill="${i === done.length - 1 ? '#009988' : '#64748B'}">${LX.num(p.v, 2)}</text>`;
+                s += `<text x="${x(i)}" y="${H - 18}" font-size="9" text-anchor="middle" fill="#64748B">${LX.monthName[p.d.getMonth()]}</text>`;
+            });
+            pending.forEach((d, j) => {
+                const i = done.length + j, bw = (W - L - R) / n * 0.56;
+                s += `<rect x="${x(i) - bw / 2}" y="${T + 10}" width="${bw}" height="${H - B - T - 10}" fill="none" stroke="#F39200" stroke-dasharray="4 3"/>`;
+                s += `<text x="${x(i)}" y="${(H - B + T) / 2 + 4}" font-size="11" text-anchor="middle" fill="#F39200" font-weight="700">?</text>`;
+                s += `<text x="${x(i)}" y="${H - 18}" font-size="9" text-anchor="middle" fill="#F39200">${LX.brShort(d)}</text>`;
+            });
+            s += `<text x="${W - R}" y="${H - 4}" font-size="9" text-anchor="end" fill="#64748B">Meta Selic (% a.a.) definida em cada reunião · tracejado = próximas</text></svg>`;
+            document.getElementById('copom-chart').innerHTML = s;
+        }
+        renderCopom();
+        document.addEventListener('lx:theme', renderCopom);
+
+        /* ---------- Vértices DI ---------- */
+        document.getElementById('di-vertices').innerHTML = LX.diJanuaryVertices(8).map(v => `
+            <div class="p-2.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                <strong class="block text-lect-navy dark:text-white">${v.code}</strong>
+                <span class="text-[10px] text-slate-500 block">Vence ${LX.br(v.expiry)}</span>
+                <span class="text-[10px] text-lect-teal font-bold">${v.du.toLocaleString('pt-BR')} DU</span>
+            </div>`).join('');
+
+        /* ---------- Focus ---------- */
+        const y0 = today.getFullYear(), years = [y0, y0 + 1, y0 + 2];
+        document.querySelectorAll('[data-focus-y]').forEach(th => th.textContent = years[+th.dataset.focusY]);
+        const FOCUS = [['IPCA', 'IPCA (%)', 2], ['Selic', 'Selic fim de ano (%)', 2], ['PIB Total', 'PIB (% cresc.)', 2], ['Câmbio', 'Câmbio (R$/US$)', 2], ['IGP-M', 'IGP-M (%)', 2]];
+        function renderFocus(res) {
+            document.getElementById('focus-body').innerHTML = FOCUS.map(([k, label, d]) => {
+                const r = res && res[k];
+                const cells = years.map(y => {
+                    const v = r && r.byYear[y], p = r && r.prevByYear[y];
+                    if (v == null) return '<td class="py-3 px-3 text-slate-400">—</td>';
+                    const arrow = p == null || Math.abs(v - p) < 1e-9 ? '<span class="text-slate-400">=</span>' : v > p ? '<span class="text-rose-500">▲</span>' : '<span class="text-emerald-500">▼</span>';
+                    return `<td class="py-3 px-3">${LX.num(v, d)} ${arrow}</td>`;
+                }).join('');
+                return `<tr><td class="py-3 px-4 font-bold">${label}</td>${cells}</tr>`;
+            }).join('');
+        }
+        renderFocus(null);
+        LX.loadFocus(FOCUS.map(f => f[0]), years).then(res => {
+            renderFocus(res);
+            const d = Object.values(res).map(r => r.date).filter(Boolean).sort().pop();
+            document.getElementById('focus-date').textContent = d ? 'PESQUISA DE ' + d.split('-').reverse().join('/') : 'INDISPONÍVEL — VEJA BCB.GOV.BR/FOCUS';
+        }).catch(() => { document.getElementById('focus-date').textContent = 'INDISPONÍVEL — VEJA BCB.GOV.BR/FOCUS'; });
+
+        /* ---------- Regimes de risco (educacional) ---------- */
+        const REG = {
+            base: { label: 'Base', marker: '50%', title: 'Regime neutro: fluxo seletivo, juros domésticos guiam a bolsa.',
+                desc: 'Sem choque global dominante, o mercado brasileiro responde principalmente a Copom, inflação e notícias fiscais. Setores sensíveis a juros (varejo, construção, small caps) reagem mais ao DI do que ao exterior.',
+                grid: [['WIN', 'Lateral / segue DI', 'text-slate-500'], ['WDO', 'Ancorado no carry', 'text-slate-500'], ['DI curto', 'Segue Copom', 'text-slate-500'], ['Ouro', 'Estável', 'text-slate-500']] },
+            off: { label: 'Risk-off', marker: '15%', title: 'Aversão a risco: investidores fogem para dólar, Treasuries e ouro.',
+                desc: 'Choques globais (recessão, guerra, Fed mais duro) fortalecem o DXY. Emergentes sofrem saída de capital: o real se desvaloriza, o Ibovespa cai e a curva DI abre, principalmente nos vértices longos.',
+                grid: [['WIN', 'Queda ▼', 'text-rose-600'], ['WDO', 'Alta ▲', 'text-emerald-600'], ['DI longo', 'Abre ▲', 'text-rose-600'], ['Ouro', 'Alta ▲', 'text-emerald-600']] },
+            on: { label: 'Risk-on', marker: '85%', title: 'Apetite a risco: capital estrangeiro busca retorno em emergentes.',
+                desc: 'Com juros globais em queda e dólar fraco, o diferencial de juros brasileiro atrai fluxo. A bolsa sobe puxada por bancos e commodities, o real se aprecia e a curva DI tende a fechar.',
+                grid: [['WIN', 'Alta ▲', 'text-emerald-600'], ['WDO', 'Queda ▼', 'text-rose-600'], ['DI', 'Fecha ▼', 'text-emerald-600'], ['Commodities', 'Alta ▲', 'text-emerald-600']] }
+        };
+        function setRegime(k) {
+            const r = REG[k];
+            document.getElementById('regime-btns').innerHTML = Object.entries(REG).map(([key, v]) => `<button data-r="${key}" class="px-2.5 py-1 ${key === k ? 'bg-lect-navy text-white font-semibold' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300'}">${v.label}</button>`).join('');
+            document.querySelectorAll('#regime-btns button').forEach(b => b.onclick = () => setRegime(b.dataset.r));
+            document.getElementById('regime-marker').style.left = r.marker;
+            document.getElementById('regime-title').textContent = r.title;
+            document.getElementById('regime-desc').textContent = r.desc;
+            document.getElementById('regime-grid').innerHTML = r.grid.map(([a, v, c]) => `<div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">${a}</span><strong class="${c}">${v}</strong></div>`).join('');
+        }
+        setRegime('base');
+
+        /* ---------- E se…? Mapa de reações ---------- */
+        const TX_ASSETS = [['WIN', 'Mini índice'], ['WDO', 'Mini dólar'], ['DIc', 'DI curto'], ['DIl', 'DI longo'], ['VAR', 'Varejo'], ['BAN', 'Bancos'], ['CMD', 'VALE · PETR']];
+        const txNextOf = list => { const t = LX.iso(LX.todayBRT()); const d = list.find(x => x >= t); return d ? LX.parseISO(d) : null; };
+        const txFirstWeekday = (wd, offset = 0) => { const t = LX.todayBRT(); for (let k = 0; k < 2; k++) { const y = t.getFullYear(), m = t.getMonth() + k; const d = new Date(y, m, 1); while (d.getDay() !== wd) d.setDate(d.getDate() + 1); d.setDate(d.getDate() + offset); if (d >= t) return d; } return null; };
+        const txNextCopom = () => txNextOf(LX.copom2026.map(c => c[0])), txNextFomc = () => txNextOf(LX.fomc2026);
+        const txNextIPCA = () => { const t = LX.todayBRT(); let d = new Date(t.getFullYear(), t.getMonth(), 10); if (d < t) d = new Date(t.getFullYear(), t.getMonth() + 1, 10); return d; };
+        const TX = [
+            { id: 'copom-dove', icon: 'ph-scissors', tag: 'COPOM', title: 'Copom corta mais que o esperado', short: 'Copom mais brando', when: () => ['Próximo Copom', txNextCopom()],
+              steps: [['Gatilho', 'Corte maior que o consenso (ou sinalização de mais cortes)', 'ph-bank'], ['Juros', 'DI curto fecha forte; CDI futuro menor', 'ph-chart-line-down'], ['Câmbio', 'Diferencial de juros encolhe: real perde atratividade (carry)', 'ph-currency-dollar'], ['Bolsa', 'Custo de capital cai: ações domésticas e varejo ganham', 'ph-trend-up']],
+              m: { WIN: 1, WDO: 1, DIc: -2, DIl: -1, VAR: 1, BAN: 0, CMD: 0 },
+              watch: ['Reação do DI1F27/F28 nos primeiros minutos após o comunicado', 'Se o WDO sobe junto com o WIN (carry) ou cai (fluxo para bolsa)', 'Tom do comunicado: “dependente de dados” ou porta aberta para mais cortes'],
+              fail: 'Se o mercado ler o corte como precipitado, com inflação ainda alta, a credibilidade cai: o DI longo pode abrir em vez de fechar, o dólar dispara e a bolsa devolve a alta. Corte “errado” é pior que corte nenhum.' },
+            { id: 'copom-hawk', icon: 'ph-hand-palm', tag: 'COPOM', title: 'Copom mais duro que o esperado', short: 'Copom mais duro', when: () => ['Próximo Copom', txNextCopom()],
+              steps: [['Gatilho', 'Pausa nos cortes, alta de juros ou comunicado duro', 'ph-bank'], ['Juros', 'DI curto abre; curva pode achatar (longo cai com a credibilidade)', 'ph-chart-line-up'], ['Câmbio', 'Carry mais atraente: entra dólar, real se valoriza', 'ph-currency-dollar'], ['Bolsa', 'Desconto maior nos lucros futuros: WIN e varejo sofrem', 'ph-trend-down']],
+              m: { WIN: -1, WDO: -1, DIc: 2, DIl: 0, VAR: -1, BAN: 0, CMD: 0 },
+              watch: ['Inclinação da curva: DI curto subindo e longo caindo = mercado comprando a credibilidade', 'Construtoras e varejo (MGLU3, CYRE3) como termômetro', 'Revisões no Focus da semana seguinte'],
+              fail: 'Se a alta for vista como insuficiente diante da inflação, o mercado pede ainda mais juros e o DI longo também abre. E com risco global alto, o dólar pode subir mesmo com o carry maior.' },
+            { id: 'ipca-up', icon: 'ph-thermometer-hot', tag: 'INFLAÇÃO', title: 'IPCA acima do consenso', short: 'IPCA acima', when: () => ['Próximo IPCA (≈ dia 10)', txNextIPCA()],
+              steps: [['Gatilho', 'Inflação do mês acima das projeções', 'ph-thermometer-hot'], ['Expectativa', 'Menos chance de cortes / mais chance de alta da Selic', 'ph-gauge'], ['Juros', 'DI curto e intermediário abrem na hora', 'ph-chart-line-up'], ['Bolsa', 'Setores sensíveis a juros caem; WIN pressionado', 'ph-trend-down']],
+              m: { WIN: -1, WDO: 0, DIc: 1, DIl: 1, VAR: -1, BAN: 0, CMD: 0 },
+              watch: ['A abertura do núcleo e de serviços — é a parte que o Copom mais olha', 'Tamanho da surpresa: 0,05 p.p. raramente move; 0,15 p.p. ou mais costuma mover', 'DI1F27 reagindo às 9h, antes da abertura da bolsa'],
+              fail: 'Se a surpresa vem de itens voláteis (alimentos, combustíveis) e os núcleos vêm bem comportados, o mercado ignora e o efeito some em minutos.' },
+            { id: 'ipca-down', icon: 'ph-thermometer-cold', tag: 'INFLAÇÃO', title: 'IPCA abaixo do consenso', short: 'IPCA abaixo', when: () => ['Próximo IPCA (≈ dia 10)', txNextIPCA()],
+              steps: [['Gatilho', 'Inflação do mês abaixo das projeções', 'ph-thermometer-cold'], ['Expectativa', 'Abre espaço para cortes (ou cortes maiores)', 'ph-gauge'], ['Juros', 'Curva DI fecha', 'ph-chart-line-down'], ['Bolsa', 'Varejo, construção e small caps ganham', 'ph-trend-up']],
+              m: { WIN: 1, WDO: 0, DIc: -1, DIl: -1, VAR: 1, BAN: 0, CMD: 0 },
+              watch: ['Composição: queda em serviços vale muito mais que em alimentos', 'Se o DI fecha e o WIN não sobe, o motivo do dia é outro (exterior)', 'Projeções de bancos para o próximo Copom'],
+              fail: 'Inflação baixa por causa de economia fraca demais pode assustar: lucros menores pesam mais que juros menores e a bolsa não reage.' },
+            { id: 'fed-hawk', icon: 'ph-flag', tag: 'EUA', title: 'Fed duro / payroll forte', short: 'Fed duro', when: () => ['Próxima reunião do Fed', txNextFomc(), 'Payroll (1ª sexta)', txFirstWeekday(5)],
+              steps: [['Gatilho', 'Fed sinaliza juros altos por mais tempo, ou emprego forte nos EUA', 'ph-flag'], ['Global', 'Treasuries (US10Y) e dólar global (DXY) sobem', 'ph-globe-hemisphere-west'], ['Fluxo', 'Investidores saem de emergentes', 'ph-arrows-out'], ['Brasil', 'WDO sobe, WIN cai, DI longo abre', 'ph-currency-dollar']],
+              m: { WIN: -1, WDO: 1, DIc: 0, DIl: 1, VAR: -1, BAN: 0, CMD: -1 },
+              watch: ['US10Y e DXY no exato minuto da divulgação (payroll às 8h30 de Nova York: 9h30 de Brasília no horário de verão americano, 10h30 no resto do ano)', 'S&P 500 futuro: se ele cai, o WIN costuma acompanhar', 'Moedas de emergentes (peso mexicano) como confirmação para o WDO'],
+              fail: 'Emprego forte também pode ser lido como “economia americana saudável, sem recessão”: se as bolsas lá sobem, o efeito negativo aqui some.' },
+            { id: 'fed-dove', icon: 'ph-bird', tag: 'EUA', title: 'Fed brando / payroll fraco', short: 'Fed brando', when: () => ['Próxima reunião do Fed', txNextFomc(), 'Payroll (1ª sexta)', txFirstWeekday(5)],
+              steps: [['Gatilho', 'Fed sinaliza cortes, ou emprego fraco nos EUA', 'ph-bird'], ['Global', 'US10Y e DXY caem; apetite por risco aumenta', 'ph-globe-hemisphere-west'], ['Fluxo', 'Capital volta para emergentes e commodities', 'ph-arrows-in'], ['Brasil', 'WDO cai, WIN sobe, DI longo fecha', 'ph-trend-up']],
+              m: { WIN: 1, WDO: -1, DIc: 0, DIl: -1, VAR: 1, BAN: 0, CMD: 1 },
+              watch: ['Se o DXY cai de forma ampla (contra todas as moedas)', 'Fluxo estrangeiro na B3 nos dias seguintes', 'Commodities: minério e petróleo puxando VALE3 e PETR4'],
+              fail: 'Payroll fraco demais acende medo de recessão: aversão a risco, bolsas caem no mundo todo e o dólar sobe como proteção — o oposto do esperado.' },
+            { id: 'fiscal', icon: 'ph-warning-octagon', tag: 'FISCAL', title: 'Risco fiscal no Brasil', short: 'Risco fiscal', when: () => ['Sem data fixa', null],
+              steps: [['Gatilho', 'Gasto acima do previsto, meta fiscal afrouxada ou ruído em Brasília', 'ph-warning-octagon'], ['Prêmio de risco', 'Investidor exige mais para emprestar ao governo', 'ph-shield-warning'], ['Juros e câmbio', 'DI longo abre forte e dólar dispara juntos', 'ph-chart-line-up'], ['Bolsa', 'Bancos, estatais e varejo caem; WIN sofre', 'ph-trend-down']],
+              m: { WIN: -1, WDO: 2, DIc: 1, DIl: 2, VAR: -1, BAN: -1, CMD: 0 },
+              watch: ['DI longo (DI1F31+) e WDO subindo juntos = sinal clássico de estresse fiscal', 'CDS de 5 anos do Brasil', 'Exportadoras resistindo melhor (receita em dólar)'],
+              fail: 'Quando o exterior está muito favorável (dólar global caindo, fluxo forte), o ruído fiscal pode ser ignorado por um tempo — até deixar de ser.' },
+            { id: 'china', icon: 'ph-factory', tag: 'CHINA', title: 'China anuncia estímulos', short: 'China estimula', when: () => ['Sem data fixa', null],
+              steps: [['Gatilho', 'Pacote de crédito, infraestrutura ou corte de juros na China', 'ph-factory'], ['Commodities', 'Minério de ferro e metais sobem', 'ph-cube'], ['Brasil', 'VALE3, siderúrgicas e mineradoras puxam o índice', 'ph-chart-bar'], ['Câmbio', 'Mais dólar entrando por exportações: real se valoriza', 'ph-currency-dollar']],
+              m: { WIN: 1, WDO: -1, DIc: 0, DIl: 0, VAR: 0, BAN: 0, CMD: 2 },
+              watch: ['Minério em Dalian/Singapura durante a madrugada', 'Peso de VALE3 no índice — o WIN sobe mais quando ela lidera', 'Moedas de países exportadores (dólar australiano)'],
+              fail: 'Estímulos menores que o esperado ou sem detalhes concretos frustram: a alta da madrugada vira queda na abertura.' }
+        ];
+        const txArrow = v => v === 2 ? '<b class="text-emerald-600">▲▲</b>' : v === 1 ? '<b class="text-emerald-600">▲</b>' : v === -1 ? '<b class="text-rose-600">▼</b>' : v === -2 ? '<b class="text-rose-600">▼▼</b>' : '<b class="text-slate-400">●</b>';
+        let txSel = 0;
+        function txRender() {
+            const e = TX[txSel];
+            document.getElementById('tx-events').innerHTML = TX.map((x, i) => `<button onclick="txPick(${i})" class="flex items-center gap-3 px-3 py-2.5 text-left border-l-4 transition-colors ${i === txSel ? 'bg-lect-navy text-white border-lect-orange' : 'bg-white dark:bg-lect-cardDark border-transparent hover:border-lect-teal'}"><i class="ph-duotone ${x.icon} text-xl ${i === txSel ? 'text-lect-orange' : 'text-lect-teal'}"></i><span class="min-w-0"><span class="block text-[9px] font-mono font-bold ${i === txSel ? 'text-slate-300' : 'text-slate-400'}">${x.tag}</span><span class="block text-xs font-bold leading-tight">${x.title}</span></span></button>`).join('');
+            const w = e.when(), dates = [];
+            for (let k = 0; k < w.length; k += 2) dates.push(`<span class="inline-flex items-center gap-1.5 px-2 py-1 bg-slate-100 dark:bg-lect-bgDark font-mono text-[10px]"><i class="ph-bold ph-calendar-dots text-lect-teal"></i>${w[k]}${w[k + 1] ? `: <strong>${LX.weekday(w[k + 1])} ${LX.brShort(w[k + 1])}</strong>` : ''}</span>`);
+            document.getElementById('tx-head').innerHTML = `<div class="flex flex-wrap items-start justify-between gap-3"><div><span class="term-label font-bold text-lect-orange">E SE…</span><h3 class="font-display text-xl font-bold">${e.title}?</h3></div><div class="flex flex-wrap gap-1.5">${dates.join('')}</div></div>`;
+            const step = (s, i) => `<div class="tx-step relative flex-1 min-w-0 p-3 bg-white dark:bg-lect-cardDark border border-slate-200 dark:border-lect-borderDark ${i === 0 ? 'border-l-4 !border-l-lect-orange' : ''}" style="animation:txIn .45s ease ${i * 0.12}s both"><span class="flex items-center gap-1.5 term-label font-bold"><i class="ph-bold ${s[2]} text-sm text-lect-teal"></i>${i + 1}. ${s[0]}</span><p class="text-xs mt-1 leading-snug text-slate-700 dark:text-slate-200">${s[1]}</p></div>`;
+            const sep = i => `<div class="flex items-center justify-center text-lect-teal shrink-0" style="animation:txIn .45s ease ${i * 0.12 + 0.06}s both"><i class="ph-bold ph-arrow-right text-lg hidden md:block"></i><i class="ph-bold ph-arrow-down text-lg md:hidden"></i></div>`;
+            const chips = TX_ASSETS.map(([k, l]) => { const v = e.m[k]; const bg = v > 0 ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-500/10' : v < 0 ? 'border-rose-500 bg-rose-50 dark:bg-rose-500/10' : 'border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark'; return `<div class="px-3 py-2 border-2 ${bg} text-center"><span class="block text-[10px] text-slate-500">${l}</span><span class="font-mono text-sm">${txArrow(v)}</span></div>`; }).join('');
+            document.getElementById('tx-flow').innerHTML = `<div class="flex flex-col md:flex-row items-stretch gap-2">${e.steps.map((s, i) => step(s, i) + (i < e.steps.length - 1 ? sep(i) : '')).join('')}</div>
+                <div class="mt-4" style="animation:txIn .45s ease .5s both"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-monitor text-lect-orange"></i>NA SUA TELA</span><div class="grid grid-cols-4 sm:grid-cols-7 gap-1.5 mt-2">${chips}</div></div>`;
+            document.getElementById('tx-watch').innerHTML = e.watch.map(x => `<li class="flex gap-2"><i class="ph-bold ph-check text-lect-teal mt-0.5 shrink-0"></i><span>${x}</span></li>`).join('');
+            document.getElementById('tx-fail').textContent = e.fail;
+            document.getElementById('tx-thead').innerHTML = `<tr class="text-[10px] text-slate-500 uppercase"><th class="text-left font-bold px-5 py-2">Evento</th>${TX_ASSETS.map(a => `<th class="font-bold px-2 py-2 text-center">${a[1]}</th>`).join('')}</tr>`;
+            document.getElementById('tx-tbody').innerHTML = TX.map((x, i) => `<tr onclick="txPick(${i}, true)" class="cursor-pointer border-t border-slate-100 dark:border-lect-borderDark ${i === txSel ? 'bg-lect-teal/10' : 'hover:bg-slate-50 dark:hover:bg-lect-bgDark'}"><td class="px-5 py-2 font-sans font-semibold text-slate-700 dark:text-slate-200 whitespace-nowrap"><i class="ph-bold ${x.icon} text-lect-teal mr-1.5"></i>${x.short}</td>${TX_ASSETS.map(a => `<td class="text-center px-2 py-2">${txArrow(x.m[a[0]])}</td>`).join('')}</tr>`).join('');
+        }
+        window.txPick = (i, scroll) => { txSel = i; txRender(); if (scroll) document.getElementById('tx-head').scrollIntoView({ behavior: 'smooth', block: 'center' }); };
+        const st = document.createElement('style'); st.textContent = '@keyframes txIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}'; document.head.appendChild(st);
+        txRender();
+    })();
+    </script>
+</body>
+</html>
