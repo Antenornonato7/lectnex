@@ -301,7 +301,8 @@
             bear: ['Trava de baixa (puts)', 'compra uma put e vende outra mais abaixo: aposta na queda com custo menor.', s => [{ t: 'P', side: 1, k: s.atm }, { t: 'P', side: -1, k: s.atm - 2 * s.step }]],
             covered: ['Venda coberta', 'tem a ação e vende uma call acima: recebe prêmio e abre mão da alta além do strike.', s => [{ t: 'S', side: 1 }, { t: 'C', side: -1, k: s.atm + s.step }]],
             collar: ['Collar (proteção)', 'tem a ação, compra put abaixo e vende call acima: limita perdas e ganhos.', s => [{ t: 'S', side: 1 }, { t: 'P', side: 1, k: s.atm - s.step }, { t: 'C', side: -1, k: s.atm + s.step }]],
-            straddle: ['Straddle (volatilidade)', 'compra call e put no mesmo strike: ganha com movimento forte para qualquer lado.', s => [{ t: 'C', side: 1, k: s.atm }, { t: 'P', side: 1, k: s.atm }]]
+            straddle: ['Straddle (volatilidade)', 'compra call e put no mesmo strike: ganha com movimento forte para qualquer lado.', s => [{ t: 'C', side: 1, k: s.atm }, { t: 'P', side: 1, k: s.atm }]],
+            strangle: ['Strangle (volatilidade OTM)', 'compra uma call acima do preço e uma put abaixo: prêmio menor que o straddle, mas precisa de um movimento maior para cobrir o custo. Captura volatilidade, não a direção.', s => [{ t: 'C', side: 1, k: s.atm + s.step }, { t: 'P', side: 1, k: s.atm - s.step }]]
         };
         $('op-strat').innerHTML = Object.entries(STRATS).map(([k, v]) => `<option value="${k}">${v[0]}</option>`).join('');
         const exps = LX.upcomingOptions(6);
