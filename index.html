@@ -275,8 +275,8 @@
             symbols: [
                 { proName: 'BMFBOVESPA:IBOV', title: 'Ibovespa' }, { proName: 'AMEX:EWZ', title: 'EWZ (Brasil)' },
                 { proName: 'FOREXCOM:SPXUSD', title: 'S&P 500' }, { proName: 'FOREXCOM:NSXUSD', title: 'Nasdaq 100' },
-                { proName: 'FX_IDC:USDBRL', title: 'USD/BRL' }, { proName: 'TVC:DXY', title: 'DXY' },
-                { proName: 'TVC:US10Y', title: 'Treasury 10A' }, { proName: 'TVC:UKOIL', title: 'Brent' },
+                { proName: 'FX_IDC:USDBRL', title: 'USD/BRL' }, { proName: 'CBOE:VIX', title: 'VIX' },
+                { proName: 'BMFBOVESPA:WIN1!', title: 'WIN' }, { proName: 'TVC:UKOIL', title: 'Brent' },
                 { proName: 'TVC:GOLD', title: 'Ouro' }, { proName: 'BITSTAMP:BTCUSD', title: 'Bitcoin' }
             ], showSymbolLogo: true, displayMode: 'adaptive'
         });
@@ -285,9 +285,9 @@
             plotLineColorGrowing: '#009988', plotLineColorFalling: '#E11D48', belowLineFillColorGrowing: 'rgba(0,153,136,0.12)', belowLineFillColorFalling: 'rgba(225,29,72,0.10)',
             tabs: [
                 { title: 'Índices', symbols: [{ s: 'BMFBOVESPA:IBOV', d: 'Ibovespa' }, { s: 'AMEX:EWZ', d: 'EWZ' }, { s: 'FOREXCOM:SPXUSD', d: 'S&P 500' }, { s: 'FOREXCOM:NSXUSD', d: 'Nasdaq 100' }, { s: 'FOREXCOM:DJI', d: 'Dow Jones' }, { s: 'INDEX:DEU40', d: 'DAX' }, { s: 'INDEX:NKY', d: 'Nikkei 225' }] },
-                { title: 'Juros', symbols: [{ s: 'TVC:US02Y', d: 'Treasury 2A' }, { s: 'TVC:US10Y', d: 'Treasury 10A' }, { s: 'TVC:US30Y', d: 'Treasury 30A' }, { s: 'TVC:BR10Y', d: 'Brasil 10A' }, { s: 'TVC:DE10Y', d: 'Bund 10A' }] },
+                { title: 'Futuros B3', symbols: [{ s: 'BMFBOVESPA:WIN1!', d: 'WIN' }, { s: 'BMFBOVESPA:WDO1!', d: 'WDO' }, { s: 'BMFBOVESPA:DOL1!', d: 'DOL' }, { s: 'BMFBOVESPA:IND1!', d: 'IND' }, { s: 'BMFBOVESPA:DI1F27', d: 'DI Jan/27' }] },
                 { title: 'Commodities', symbols: [{ s: 'TVC:UKOIL', d: 'Brent' }, { s: 'TVC:USOIL', d: 'WTI' }, { s: 'TVC:GOLD', d: 'Ouro' }, { s: 'COMEX:HG1!', d: 'Cobre' }, { s: 'SGX:FEF1!', d: 'Minério de ferro' }, { s: 'CBOT:ZS1!', d: 'Soja' }] },
-                { title: 'Moedas', symbols: [{ s: 'FX_IDC:USDBRL', d: 'USD/BRL' }, { s: 'TVC:DXY', d: 'DXY' }, { s: 'FX:EURUSD', d: 'EUR/USD' }, { s: 'FX:USDJPY', d: 'USD/JPY' }, { s: 'FX_IDC:USDMXN', d: 'USD/MXN' }, { s: 'FX_IDC:USDCNY', d: 'USD/CNY' }] }
+                { title: 'Moedas', symbols: [{ s: 'FX_IDC:USDBRL', d: 'USD/BRL' }, { s: 'FX_IDC:EURBRL', d: 'EUR/BRL' }, { s: 'FX:EURUSD', d: 'EUR/USD' }, { s: 'FX:USDJPY', d: 'USD/JPY' }, { s: 'FX_IDC:USDMXN', d: 'USD/MXN' }, { s: 'FX_IDC:USDCNY', d: 'USD/CNY' }] }
             ]
         });
         LX.tv('tv-news', 'timeline', { feedMode: 'all_symbols', displayMode: 'regular', width: '100%', height: '100%' });
