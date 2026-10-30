@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectnex Terminal — Mercado Hoje: Selic, Curva de Juros, Câmbio, Agenda e Focus</title>
+    <meta name="description" content="Painel educacional do mercado brasileiro com dados oficiais do Banco Central: Selic, CDI, IPCA, PTAX, Boletim Focus, câmbio, agenda de Copom/FOMC e vencimentos B3.">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="assets/tw-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link rel="stylesheet" href="assets/lectnex.css">
+</head>
+<body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <!-- FAIXA DE COTAÇÕES GLOBAIS (TradingView, dados reais) -->
+    <div class="border-b border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark h-[46px] overflow-hidden" id="tv-tape"></div>
+
+    <!-- ================================================================================= -->
+    <!-- 01 · MERCADO HOJE — INDICADORES OFICIAIS                                           -->
+    <!-- ================================================================================= -->
+    <section id="hero" class="py-8 border-b border-slate-300 dark:border-lect-borderDark grid-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-6">
+                <div>
+                    <span class="term-label text-lect-teal font-bold">PAINEL MACRO · DADOS OFICIAIS DO BANCO CENTRAL</span>
+                    <h1 class="font-display text-3xl sm:text-4xl font-bold tracking-tight mt-1">Mercado Hoje</h1>
+                    <p id="hero-summary" class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl leading-relaxed">Carregando leitura do dia…</p>
+                </div>
+                <div class="font-mono text-[11px] text-slate-500 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Próximo Copom: <strong id="next-copom" class="text-lect-navy dark:text-white">—</strong></span>
+                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">WDO vigente: <strong id="hero-wdo" class="text-lect-orange">—</strong></span>
+                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">WIN vigente: <strong id="hero-win" class="text-lect-teal">—</strong></span>
+                </div>
+            </div>
+
+            <!-- 6 KPIs -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 font-mono tabular-nums">
+                <div class="term-panel p-4 border-t-2 border-t-lect-navy dark:border-t-lect-teal">
+                    <span class="term-label">META SELIC</span>
+                    <strong class="text-2xl font-bold block mt-1" data-lx="selic">—</strong>
+                    <span class="text-[11px] text-slate-500">Copom · decisão a cada ~45 dias</span>
+                    <span class="src-tag block mt-1" data-lx="selic-src"></span>
+                </div>
+                <div class="term-panel p-4 border-t-2 border-t-lect-teal">
+                    <span class="term-label">CDI / TAXA DI</span>
+                    <strong class="text-2xl font-bold text-lect-teal block mt-1" data-lx="cdi">—</strong>
+                    <span class="text-[11px] text-slate-500">Base 252 dias úteis</span>
+                    <span class="src-tag block mt-1" data-lx="cdi-src"></span>
+                </div>
+                <div class="term-panel p-4 border-t-2 border-t-emerald-500">
+                    <span class="term-label">IPCA 12 MESES</span>
+                    <strong class="text-2xl font-bold text-emerald-600 dark:text-emerald-400 block mt-1" data-lx="ipca12m">—</strong>
+                    <span class="text-[11px] text-slate-500">No mês: <span data-lx="ipcames"></span> · Meta 3,0% ±1,5</span>
+                    <span class="src-tag block mt-1" data-lx="ipca-src"></span>
+                </div>
+                <div class="term-panel p-4 border-t-2 border-t-purple-500">
+                    <span class="term-label">JURO REAL EX-POST</span>
+                    <strong class="text-2xl font-bold block mt-1" data-lx="real">—</strong>
+                    <span class="text-[11px] text-slate-500">(1+Selic)/(1+IPCA 12m) − 1</span>
+                    <span class="src-tag block mt-1">CÁLCULO LECTNEX</span>
+                </div>
+                <div class="term-panel p-4 border-t-2 border-t-lect-orange">
+                    <span class="term-label">DÓLAR COMERCIAL</span>
+                    <strong class="text-2xl font-bold text-lect-orange block mt-1">R$ <span data-lx="usd">—</span></strong>
+                    <span class="text-[11px]"><span data-lx="usd-pct"></span> <span class="text-slate-500">· PTAX <span data-lx="ptax">—</span></span></span>
+                    <span class="src-tag block mt-1">AWESOMEAPI · BCB PTAX</span>
+                </div>
+                <div class="term-panel p-4 border-t-2 border-t-amber-400">
+                    <span class="term-label">BITCOIN (R$)</span>
+                    <strong id="kpi-btc" class="text-2xl font-bold block mt-1">—</strong>
+                    <span id="kpi-btc-pct" class="text-[11px]">—</span>
+                    <span class="src-tag block mt-1">AWESOMEAPI · 24H</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- 02 · AGENDA + CÂMBIO + MERCADOS GLOBAIS                                           -->
+    <!-- ================================================================================= -->
+    <section id="agenda" class="py-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+            <!-- AGENDA DO MERCADO -->
+            <div class="lg:col-span-7 term-panel overflow-hidden">
+                <div class="panel-head">
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-calendar-dots text-lect-orange"></i>Agenda que Move o Mercado</span>
+                    <span class="font-mono text-[10px] text-slate-300">VENCIMENTOS CALCULADOS PELAS REGRAS B3</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 p-3 border-b border-slate-200 dark:border-lect-borderDark font-mono text-[11px]" id="agenda-filters"></div>
+                <div id="agenda-list" class="divide-y divide-slate-200 dark:divide-lect-borderDark max-h-[460px] overflow-y-auto thin-scroll"></div>
+                <div class="px-4 py-2.5 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark font-mono text-[10px] text-slate-500 flex flex-wrap justify-between gap-2">
+                    <span>DU = dias úteis de pregão até o evento</span>
+                    <a href="futuros.html#vencimentos" class="text-lect-teal font-bold hover:underline">Calendário completo de vencimentos →</a>
+                </div>
+            </div>
+
+            <!-- CÂMBIO & CRIPTO -->
+            <div id="cambio" class="lg:col-span-5 term-panel overflow-hidden scroll-mt-28">
+                <div class="panel-head">
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-currency-circle-dollar text-lect-orange"></i>Câmbio &amp; Cripto</span>
+                    <span id="fx-time" class="font-mono text-[10px] text-emerald-400">—</span>
+                </div>
+                <div class="quote-row quote-head font-mono uppercase tracking-wider"><span>Par</span><span>Cotação</span><span>Var 24h</span><span>Mín / Máx</span></div>
+                <div id="fx-table" class="font-mono tabular-nums text-xs"></div>
+                <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
+                    <strong>Para quem opera WDO:</strong> o mini dólar é cotado em R$ por US$ 1.000. Dólar à vista a <span class="font-mono" data-lx="usd">—</span> equivale a <strong class="font-mono" id="fx-wdo-eq">—</strong> pontos no spot; o futuro negocia acima disso pelo diferencial de juros (cupom). <a href="futuros.html#paridade" class="text-lect-teal font-bold hover:underline">Calcular preço justo →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- 03 · JUROS & INFLAÇÃO: COPOM, FOCUS, CURVA                                        -->
+    <!-- ================================================================================= -->
+    <section id="juros" class="py-10 bg-white dark:bg-[#08111F] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-6">
+                <span class="term-label text-lect-orange font-bold">POLÍTICA MONETÁRIA &amp; EXPECTATIVAS</span>
+                <h2 class="font-display text-2xl font-bold">Juros &amp; Inflação</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                <!-- TRAJETÓRIA DA SELIC 2026 -->
+                <div class="lg:col-span-6 term-panel p-5">
+                    <div class="flex items-center justify-between mb-3">
+                        <div>
+                            <span class="term-label">DECISÕES DO COPOM EM 2026</span>
+                            <h3 class="font-display text-lg font-bold">Ciclo de cortes da Selic</h3>
+                        </div>
+                        <span class="src-tag">FONTE: BCB · COMUNICADOS COPOM</span>
+                    </div>
+                    <div id="copom-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-3"></div>
+                    <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+                        Após manter a Selic em 15% em janeiro, o Copom iniciou em março um ciclo de cortes de 0,25 p.p. por reunião. Cada corte tende a <strong>fechar</strong> a ponta curta da curva DI (DI1F27/F28), reduz o CDI que remunera a renda fixa pós-fixada e diminui o diferencial de juros que sustenta o real — por isso decisões do Copom mexem ao mesmo tempo com WIN, WDO e DI.
+                    </p>
+                </div>
+
+                <!-- FOCUS AO VIVO -->
+                <div class="lg:col-span-6 term-panel overflow-hidden">
+                    <div class="panel-head">
+                        <span class="font-display text-sm font-bold uppercase tracking-wide">Boletim Focus — Mediana do Mercado</span>
+                        <span id="focus-date" class="font-mono text-[10px] text-slate-300">carregando…</span>
+                    </div>
+                    <table class="w-full text-left font-mono tabular-nums text-xs">
+                        <thead class="quote-head uppercase">
+                            <tr><th class="py-2.5 px-4">Indicador</th><th class="py-2.5 px-3" data-focus-y="0"></th><th class="py-2.5 px-3" data-focus-y="1"></th><th class="py-2.5 px-3" data-focus-y="2"></th></tr>
+                        </thead>
+                        <tbody id="focus-body" class="divide-y divide-slate-200 dark:divide-lect-borderDark"></tbody>
+                    </table>
+                    <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500 leading-relaxed">
+                        Setas comparam com a pesquisa anterior. O Focus é publicado às segundas-feiras pelo BCB e reúne projeções de mais de 100 instituições. Fonte: API Olinda/BCB.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CURVA DE JUROS — LEITURA -->
+            <div class="term-panel p-5 mt-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                    <div class="lg:col-span-5">
+                        <span class="term-label text-lect-teal font-bold">ESTRUTURA A TERMO (DI1)</span>
+                        <h3 class="font-display text-lg font-bold">Como ler a curva de juros futuros</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                            Os contratos DI1 de janeiro são os vértices mais líquidos. A diferença entre a Selic atual e a taxa do primeiro vértice mostra quanto corte (ou alta) o mercado já precifica. Vértices longos (F31, F33) refletem risco fiscal e prêmio de prazo.
+                        </p>
+                        <ul class="mt-3 space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+                            <li><strong class="text-emerald-600">Curva fechando</strong> (taxas caindo) → alívio para ações domésticas, varejo, construção.</li>
+                            <li><strong class="text-rose-600">Curva abrindo</strong> (taxas subindo) → pressão em ações, apoio ao dólar.</li>
+                            <li><strong class="text-lect-orange">Inclinação</strong> (longo − curto) → leitura de risco fiscal e inflação futura.</li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-7">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="term-label">VÉRTICES VIGENTES E DIAS ÚTEIS ATÉ O VENCIMENTO</span>
+                            <a href="futuros.html#di" class="font-mono text-[10px] text-lect-teal font-bold hover:underline">Montar curva com taxas do dia →</a>
+                        </div>
+                        <div id="di-vertices" class="grid grid-cols-2 sm:grid-cols-4 gap-2 font-mono tabular-nums text-xs"></div>
+                        <p class="text-[11px] text-slate-500 mt-2">Taxas DI em tempo real são dados licenciados da B3; consulte as taxas referenciais em b3.com.br e insira na calculadora para obter PU, taxa a termo e DV01.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- 04 · MERCADOS GLOBAIS + REGIMES DE RISCO                                         -->
+    <!-- ================================================================================= -->
+    <section id="global" class="py-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <div class="lg:col-span-5 term-panel overflow-hidden">
+                <div class="panel-head">
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-globe-hemisphere-west text-lect-orange"></i>Mercados Globais</span>
+                    <span class="font-mono text-[10px] text-slate-300">TRADINGVIEW</span>
+                </div>
+                <div id="tv-overview" class="h-[520px]"></div>
+            </div>
+
+            <div class="lg:col-span-7 term-panel p-6">
+                <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-slate-200 dark:border-lect-borderDark">
+                    <div>
+                        <span class="term-label text-lect-teal font-bold">GUIA DE LEITURA · INTERMERCADOS</span>
+                        <h3 class="font-display text-lg font-bold">Como os ativos costumam reagir em cada regime de risco</h3>
+                    </div>
+                    <div class="flex items-center gap-1.5 font-mono text-[11px]" id="regime-btns"></div>
+                </div>
+                <h4 id="regime-title" class="font-display text-xl font-bold leading-snug"></h4>
+                <p id="regime-desc" class="text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed"></p>
+                <div class="mt-4">
+                    <div class="risk-scale h-2.5 w-full my-2"><div id="regime-marker" class="risk-marker" style="left:50%"></div></div>
+                    <div class="flex justify-between font-mono text-[10px] text-slate-500 uppercase"><span>Aversão (dólar, ouro, Treasuries)</span><span>Neutro</span><span>Apetite (bolsa, emergentes)</span></div>
+                </div>
+                <div id="regime-grid" class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-5 font-mono text-xs"></div>
+                <p class="text-[11px] text-slate-500 mt-4">Padrões históricos frequentes, não regras. Correlações mudam — especialmente em ano eleitoral ou com choques fiscais domésticos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- 05 · NOTÍCIAS + CALENDÁRIO ECONÔMICO GLOBAL                                       -->
+    <!-- ================================================================================= -->
+    <section id="noticias" class="py-10 bg-white dark:bg-[#08111F] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+                <div>
+                    <span class="term-label text-lect-orange font-bold">FEED DE NOTÍCIAS &amp; INDICADORES</span>
+                    <h2 class="font-display text-2xl font-bold">Notícias e Calendário Econômico</h2>
+                </div>
+                <span class="text-xs text-slate-500 max-w-md">Feed e calendário em tempo real via TradingView (Brasil e EUA). Clique em um evento para ver consenso, anterior e resultado.</span>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <div class="lg:col-span-6 term-panel h-[560px] overflow-hidden" id="tv-news"></div>
+                <div class="lg:col-span-6 term-panel h-[560px] overflow-hidden" id="tv-calendar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- 06 · NOTAS EDUCACIONAIS                                                            -->
+    <!-- ================================================================================= -->
+    <section id="educacao" class="py-10 scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-6">
+                <span class="term-label text-lect-teal font-bold">LECTNEX ACADEMY</span>
+                <h2 class="font-display text-2xl font-bold">Cadeias de transmissão que todo trader precisa conhecer</h2>
+            </div>
+            <div id="edu-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+        </div>
+    </section>
+
+    <!-- MODAL EDUCACIONAL -->
+    <div id="edu-modal" data-lx-modal class="fixed inset-0 z-50 bg-lect-navy/75 hidden items-center justify-center p-4" onclick="if(event.target===this)closeEdu()">
+        <div class="bg-white dark:bg-lect-cardDark border-2 border-lect-navy dark:border-lect-teal max-w-xl w-full">
+            <div class="panel-head"><span id="modal-tag" class="font-mono text-[11px] font-bold uppercase tracking-wider"></span><button onclick="closeEdu()" class="text-slate-300 font-mono text-xs px-2 py-0.5 border border-slate-700">ESC</button></div>
+            <div class="p-6 space-y-4">
+                <h3 id="modal-title" class="font-display text-xl font-bold"></h3>
+                <p id="modal-body" class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-lect-teal font-mono text-xs font-semibold" id="modal-chain"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js"></script>
+    <script>
+    (function () {
+        const today = LX.todayBRT();
+
+        /* ---------- Widgets TradingView ---------- */
+        LX.tv('tv-tape', 'ticker-tape', {
+            symbols: [
+                { proName: 'BMFBOVESPA:IBOV', title: 'Ibovespa' }, { proName: 'AMEX:EWZ', title: 'EWZ (Brasil)' },
+                { proName: 'FOREXCOM:SPXUSD', title: 'S&P 500' }, { proName: 'FOREXCOM:NSXUSD', title: 'Nasdaq 100' },
+                { proName: 'FX_IDC:USDBRL', title: 'USD/BRL' }, { proName: 'TVC:DXY', title: 'DXY' },
+                { proName: 'TVC:US10Y', title: 'Treasury 10A' }, { proName: 'TVC:UKOIL', title: 'Brent' },
+                { proName: 'TVC:GOLD', title: 'Ouro' }, { proName: 'BITSTAMP:BTCUSD', title: 'Bitcoin' }
+            ], showSymbolLogo: true, displayMode: 'adaptive'
+        });
+        LX.tv('tv-overview', 'market-overview', {
+            dateRange: '1D', showChart: true, width: '100%', height: '100%', showSymbolLogo: true, showFloatingTooltip: true,
+            plotLineColorGrowing: '#009988', plotLineColorFalling: '#E11D48', belowLineFillColorGrowing: 'rgba(0,153,136,0.12)', belowLineFillColorFalling: 'rgba(225,29,72,0.10)',
+            tabs: [
+                { title: 'Índices', symbols: [{ s: 'BMFBOVESPA:IBOV', d: 'Ibovespa' }, { s: 'AMEX:EWZ', d: 'EWZ' }, { s: 'FOREXCOM:SPXUSD', d: 'S&P 500' }, { s: 'FOREXCOM:NSXUSD', d: 'Nasdaq 100' }, { s: 'FOREXCOM:DJI', d: 'Dow Jones' }, { s: 'INDEX:DEU40', d: 'DAX' }, { s: 'INDEX:NKY', d: 'Nikkei 225' }] },
+                { title: 'Juros', symbols: [{ s: 'TVC:US02Y', d: 'Treasury 2A' }, { s: 'TVC:US10Y', d: 'Treasury 10A' }, { s: 'TVC:US30Y', d: 'Treasury 30A' }, { s: 'TVC:BR10Y', d: 'Brasil 10A' }, { s: 'TVC:DE10Y', d: 'Bund 10A' }] },
+                { title: 'Commodities', symbols: [{ s: 'TVC:UKOIL', d: 'Brent' }, { s: 'TVC:USOIL', d: 'WTI' }, { s: 'TVC:GOLD', d: 'Ouro' }, { s: 'COMEX:HG1!', d: 'Cobre' }, { s: 'SGX:FEF1!', d: 'Minério de ferro' }, { s: 'CBOT:ZS1!', d: 'Soja' }] },
+                { title: 'Moedas', symbols: [{ s: 'FX_IDC:USDBRL', d: 'USD/BRL' }, { s: 'TVC:DXY', d: 'DXY' }, { s: 'FX:EURUSD', d: 'EUR/USD' }, { s: 'FX:USDJPY', d: 'USD/JPY' }, { s: 'FX_IDC:USDMXN', d: 'USD/MXN' }, { s: 'FX_IDC:USDCNY', d: 'USD/CNY' }] }
+            ]
+        });
+        LX.tv('tv-news', 'timeline', { feedMode: 'all_symbols', displayMode: 'regular', width: '100%', height: '100%' });
+        LX.tv('tv-calendar', 'events', { width: '100%', height: '100%', importanceFilter: '0,1', countryFilter: 'br,us,cn,eu' });
+
+        /* ---------- Contratos vigentes ---------- */
+        const win = LX.upcomingWIN(6), wdo = LX.upcomingWDO(6), opt = LX.upcomingOptions(4);
+        document.getElementById('hero-win').textContent = win[0].code;
+        // Na véspera/dia do vencimento do WDO a liquidez já migrou para o próximo
+        document.getElementById('hero-wdo').textContent = wdo[0].du <= 2 ? `${wdo[1].code} (rolagem)` : wdo[0].code;
+
+        /* ---------- Agenda ---------- */
+        const fixed = [
+            ['2026-11-02', 'feriado', 'Finados — B3 fechada', 'Sem pregão. Liquidações ficam para o dia útil seguinte.'],
+            ['2026-11-03', 'global', 'Eleições de meio de mandato (EUA)', 'Composição do Congresso americano: impacto em Treasuries, dólar global e risco.'],
+            ['2026-11-04', 'copom', 'Decisão do Copom (282ª reunião)', 'Comunicado após 18h30. Selic atual: 13,75%. Mercado acompanha ritmo de cortes.'],
+            ['2026-11-06', 'global', 'Payroll — emprego nos EUA (out)', '10h30 BRT aprox. Mexe com Treasuries, DXY e, por tabela, WDO.'],
+            ['2026-11-10', 'copom', 'Ata do Copom', '8h. Detalha o balanço de riscos e sinais para as próximas reuniões.'],
+            ['2026-11-12', 'inflacao', 'IPCA de outubro (IBGE)', '9h. Inflação oficial — impacto direto nos vértices curtos do DI.'],
+            ['2026-11-20', 'feriado', 'Consciência Negra — B3 fechada', 'Feriado nacional. Vencimento de opções de novembro antecipado para 19/11.'],
+            ['2026-11-26', 'inflacao', 'IPCA-15 de novembro', '9h. Prévia da inflação.'],
+            ['2026-12-09', 'copom', 'Superquarta: Copom + FOMC', 'Decisões de juros no Brasil (18h30) e nos EUA (16h BRT) no mesmo dia.'],
+            ['2026-12-11', 'inflacao', 'IPCA de novembro (IBGE)', '9h.'],
+            ['2026-12-24', 'feriado', 'Véspera de Natal — sem pregão', 'B3 fechada.'],
+            ['2026-12-31', 'feriado', 'Último dia do ano — sem pregão', 'B3 fechada.']
+        ].map(([d, k, t, n]) => ({ date: LX.parseISO(d), kind: k, title: t, note: n }));
+
+        // Focus: toda segunda-feira (dia útil) às 8h25
+        let mon = LX.addDays(today, (8 - today.getDay()) % 7);
+        for (let i = 0; i < 6; i++, mon = LX.addDays(mon, 7)) {
+            if (LX.isBusinessDay(mon)) fixed.push({ date: mon, kind: 'focus', title: 'Boletim Focus (BCB)', note: '8h25. Expectativas de IPCA, Selic, PIB e câmbio.' });
+        }
+        win.slice(0, 2).forEach(c => fixed.push({ date: c.expiry, kind: 'venc', title: `Vencimento ${c.code} (Ibovespa futuro)`, note: 'Quarta-feira mais próxima do dia 15. Rolagem costuma começar na semana anterior.' }));
+        wdo.slice(0, 3).forEach(c => fixed.push({ date: c.expiry, kind: 'venc', title: `Vencimento ${c.code} (dólar futuro)`, note: 'Primeiro dia útil do mês. Formação da PTAX do último dia útil anterior define a liquidação.' }));
+        opt.slice(0, 3).forEach(c => fixed.push({ date: c.expiry, kind: 'venc', title: `Vencimento de opções sobre ações (séries ${c.callLetter}/${c.putLetter})`, note: 'Terceira sexta-feira; em feriado, antecipa para o dia útil anterior.' }));
+
+        const KIND = {
+            copom: ['Copom/FOMC', 'bg-lect-navy text-white'], inflacao: ['Inflação', 'bg-emerald-600 text-white'],
+            venc: ['Vencimentos', 'bg-lect-orange text-white'], global: ['Global', 'bg-sky-600 text-white'],
+            focus: ['Focus', 'bg-purple-600 text-white'], feriado: ['Feriados', 'bg-slate-500 text-white']
+        };
+        const events = fixed.filter(e => e.date >= today).sort((a, b) => a.date - b.date);
+        let agendaFilter = 'all';
+        function renderAgenda() {
+            document.getElementById('agenda-filters').innerHTML = [['all', 'Todos']].concat(Object.entries(KIND).map(([k, v]) => [k, v[0]]))
+                .map(([k, l]) => `<button data-k="${k}" class="px-2.5 py-1 ${agendaFilter === k ? 'bg-lect-teal text-white font-bold' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300'}">${l}</button>`).join('');
+            document.querySelectorAll('#agenda-filters button').forEach(b => b.onclick = () => { agendaFilter = b.dataset.k; renderAgenda(); });
+            document.getElementById('agenda-list').innerHTML = events.filter(e => agendaFilter === 'all' || e.kind === agendaFilter).map(e => {
+                const du = LX.businessDaysBetween(today, e.date, true);
+                const isToday = +e.date === +today;
+                const when = isToday ? '<span class="text-rose-500 font-bold">HOJE</span>' : e.kind === 'feriado' ? `${e.date - today > 0 ? Math.round((e.date - today) / 864e5) + ' dias' : ''}` : `${du} DU`;
+                return `<div class="p-3.5 flex items-start gap-3 hover:bg-slate-50 dark:hover:bg-lect-bgDark/60">
+                    <div class="w-14 shrink-0 text-center font-mono border border-slate-200 dark:border-lect-borderDark">
+                        <div class="text-[9px] uppercase bg-slate-100 dark:bg-lect-bgDark text-slate-500">${LX.monthName[e.date.getMonth()]}</div>
+                        <div class="text-lg font-bold leading-6">${String(e.date.getDate()).padStart(2, '0')}</div>
+                        <div class="text-[9px] text-slate-400 uppercase">${LX.weekday(e.date)}</div>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex flex-wrap items-center gap-2"><span class="px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase ${KIND[e.kind][1]}">${KIND[e.kind][0]}</span><strong class="text-sm">${e.title}</strong></div>
+                        <p class="text-xs text-slate-500 mt-1">${e.note}</p>
+                    </div>
+                    <span class="font-mono text-[11px] text-slate-500 shrink-0">${when}</span>
+                </div>`;
+            }).join('') || '<p class="p-4 text-xs text-slate-500">Nenhum evento neste filtro.</p>';
+        }
+        renderAgenda();
+
+        const nextCopom = LX.copom2026.map(([d]) => LX.parseISO(d)).find(d => d >= today);
+        document.getElementById('next-copom').textContent = nextCopom ? `${LX.br(nextCopom)} (${LX.businessDaysBetween(today, nextCopom, true)} DU)` : 'calendário 2027 a publicar';
+
+        /* ---------- Gráfico Copom (SVG gerado) ---------- */
+        function renderCopom() {
+            const done = LX.copom2026.filter(([, r]) => r).map(([d, r]) => ({ d: LX.parseISO(d), v: parseFloat(r.replace(',', '.')) }));
+            const pending = LX.copom2026.filter(([, r]) => !r).map(([d]) => LX.parseISO(d));
+            const W = 640, H = 210, L = 44, R = 14, T = 18, B = 34, min = 13, max = 15.5;
+            const n = done.length + pending.length;
+            const x = i => L + (i + 0.5) * (W - L - R) / n;
+            const y = v => T + (max - v) / (max - min) * (H - T - B);
+            const dark = LX.isDark();
+            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Selic definida em cada reunião do Copom de 2026">`;
+            [13.5, 14, 14.5, 15].forEach(v => s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="#94A3B8" stroke-opacity=".25" stroke-dasharray="3 3"/><text x="4" y="${y(v) + 3}" font-size="9" fill="#64748B">${LX.num(v, 2)}%</text>`);
+            done.forEach((p, i) => {
+                const bw = (W - L - R) / n * 0.56;
+                s += `<rect x="${x(i) - bw / 2}" y="${y(p.v)}" width="${bw}" height="${H - B - y(p.v)}" fill="${i === done.length - 1 ? '#009988' : (dark ? '#1E3A5F' : '#0C1A2A')}" opacity="${i === done.length - 1 ? 1 : .85}"/>`;
+                s += `<text x="${x(i)}" y="${y(p.v) - 5}" font-size="10" font-weight="700" text-anchor="middle" fill="${i === done.length - 1 ? '#009988' : '#64748B'}">${LX.num(p.v, 2)}</text>`;
+                s += `<text x="${x(i)}" y="${H - 18}" font-size="9" text-anchor="middle" fill="#64748B">${LX.monthName[p.d.getMonth()]}</text>`;
+            });
+            pending.forEach((d, j) => {
+                const i = done.length + j, bw = (W - L - R) / n * 0.56;
+                s += `<rect x="${x(i) - bw / 2}" y="${T + 10}" width="${bw}" height="${H - B - T - 10}" fill="none" stroke="#F39200" stroke-dasharray="4 3"/>`;
+                s += `<text x="${x(i)}" y="${(H - B + T) / 2 + 4}" font-size="11" text-anchor="middle" fill="#F39200" font-weight="700">?</text>`;
+                s += `<text x="${x(i)}" y="${H - 18}" font-size="9" text-anchor="middle" fill="#F39200">${LX.brShort(d)}</text>`;
+            });
+            s += `<text x="${W - R}" y="${H - 4}" font-size="9" text-anchor="end" fill="#64748B">Meta Selic (% a.a.) definida em cada reunião · tracejado = próximas</text></svg>`;
+            document.getElementById('copom-chart').innerHTML = s;
+        }
+        renderCopom();
+        document.addEventListener('lx:theme', renderCopom);
+
+        /* ---------- Vértices DI ---------- */
+        document.getElementById('di-vertices').innerHTML = LX.diJanuaryVertices(8).map(v => `
+            <div class="p-2.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                <strong class="block text-lect-navy dark:text-white">${v.code}</strong>
+                <span class="text-[10px] text-slate-500 block">Vence ${LX.br(v.expiry)}</span>
+                <span class="text-[10px] text-lect-teal font-bold">${v.du.toLocaleString('pt-BR')} DU</span>
+            </div>`).join('');
+
+        /* ---------- Focus ---------- */
+        const y0 = today.getFullYear(), years = [y0, y0 + 1, y0 + 2];
+        document.querySelectorAll('[data-focus-y]').forEach(th => th.textContent = years[+th.dataset.focusY]);
+        const FOCUS = [['IPCA', 'IPCA (%)', 2], ['Selic', 'Selic fim de ano (%)', 2], ['PIB Total', 'PIB (% cresc.)', 2], ['Câmbio', 'Câmbio (R$/US$)', 2], ['IGP-M', 'IGP-M (%)', 2]];
+        function renderFocus(res) {
+            document.getElementById('focus-body').innerHTML = FOCUS.map(([k, label, d]) => {
+                const r = res && res[k];
+                const cells = years.map(y => {
+                    const v = r && r.byYear[y], p = r && r.prevByYear[y];
+                    if (v == null) return '<td class="py-3 px-3 text-slate-400">—</td>';
+                    const arrow = p == null || Math.abs(v - p) < 1e-9 ? '<span class="text-slate-400">=</span>' : v > p ? '<span class="text-rose-500">▲</span>' : '<span class="text-emerald-500">▼</span>';
+                    return `<td class="py-3 px-3">${LX.num(v, d)} ${arrow}</td>`;
+                }).join('');
+                return `<tr><td class="py-3 px-4 font-bold">${label}</td>${cells}</tr>`;
+            }).join('');
+        }
+        renderFocus(null);
+        LX.loadFocus(FOCUS.map(f => f[0]), years).then(res => {
+            renderFocus(res);
+            const d = Object.values(res).map(r => r.date).filter(Boolean).sort().pop();
+            document.getElementById('focus-date').textContent = d ? 'PESQUISA DE ' + d.split('-').reverse().join('/') : 'INDISPONÍVEL — VEJA BCB.GOV.BR/FOCUS';
+        }).catch(() => { document.getElementById('focus-date').textContent = 'INDISPONÍVEL — VEJA BCB.GOV.BR/FOCUS'; });
+
+        /* ---------- Câmbio ---------- */
+        const FX_ROWS = [['USDBRL', 'Dólar comercial', 4], ['EURBRL', 'Euro', 4], ['GBPBRL', 'Libra', 4], ['CNYBRL', 'Yuan', 4], ['ARSBRL', 'Peso argentino', 5], ['EURUSD', 'EUR/USD', 4], ['USDJPY', 'USD/JPY', 2], ['BTCBRL', 'Bitcoin', 0], ['ETHBRL', 'Ethereum', 0]];
+        const lastFx = {};
+        document.addEventListener('lx:fx', () => {
+            const fx = LX.data.fx;
+            if (!LX.data.fxOk) { document.getElementById('fx-table').innerHTML = '<p class="p-4 text-xs text-slate-500">Cotações indisponíveis no momento. Tentando novamente em 30s.</p>'; return; }
+            document.getElementById('fx-table').innerHTML = FX_ROWS.filter(([k]) => fx[k]).map(([k, name, d]) => {
+                const q = fx[k], flash = lastFx[k] != null && lastFx[k] !== q.bid ? (q.bid > lastFx[k] ? 'tick-up' : 'tick-down') : '';
+                lastFx[k] = q.bid;
+                return `<div class="quote-row ${flash}"><div><strong class="block">${k.slice(0, 3)}/${k.slice(3)}</strong><span class="text-[10px] text-slate-500">${name}</span></div>
+                    <strong>${LX.num(q.bid, d)}</strong><span class="${LX.signClass(q.pct)} font-semibold">${LX.pct(q.pct, 2, true)}</span>
+                    <span class="text-[10px] text-slate-500">${LX.num(q.low, d)}<br>${LX.num(q.high, d)}</span></div>`;
+            }).join('');
+            const u = fx.USDBRL;
+            if (u) {
+                document.getElementById('fx-time').textContent = 'ATUALIZADO ' + u.time.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo' }) + ' BRT';
+                document.getElementById('fx-wdo-eq').textContent = LX.num(u.bid * 1000, 1);
+            }
+            const b = fx.BTCBRL;
+            if (b) {
+                document.getElementById('kpi-btc').textContent = 'R$ ' + LX.num(b.bid / 1000, 1) + ' mil';
+                const el = document.getElementById('kpi-btc-pct'); el.textContent = LX.pct(b.pct, 2, true); el.className = 'text-[11px] font-semibold ' + LX.signClass(b.pct);
+            }
+            renderSummary();
+        });
+
+        /* ---------- Resumo do dia gerado a partir dos dados ---------- */
+        function renderSummary() {
+            const d = LX.data, u = d.fx.USDBRL;
+            const real = ((1 + d.selic.value / 100) / (1 + d.ipca12m.value / 100) - 1) * 100;
+            const parts = [
+                `Selic em <strong>${LX.pct(d.selic.value)}</strong> com IPCA de <strong>${LX.pct(d.ipca12m.value)}</strong> em 12 meses: juro real próximo de <strong>${LX.pct(real, 1)}</strong>, ainda entre os mais altos do mundo.`
+            ];
+            if (u) parts.push(`Dólar a <strong>R$ ${LX.num(u.bid, 4)}</strong> (${LX.pct(u.pct, 2, true)} em 24h).`);
+            if (nextCopom) parts.push(`Próxima decisão do Copom em <strong>${LX.br(nextCopom)}</strong>.`);
+            if (wdo[0].du <= 2) parts.push(`Atenção: <strong>${wdo[0].code}</strong> vence em ${LX.br(wdo[0].expiry)} — liquidez já em <strong>${wdo[1].code}</strong>.`);
+            document.getElementById('hero-summary').innerHTML = parts.join(' ');
+        }
+        renderSummary();
+        document.addEventListener('lx:macro', renderSummary);
+
+        /* ---------- Regimes de risco (educacional) ---------- */
+        const REG = {
+            base: { label: 'Base', marker: '50%', title: 'Regime neutro: fluxo seletivo, juros domésticos guiam a bolsa.',
+                desc: 'Sem choque global dominante, o mercado brasileiro responde principalmente a Copom, inflação e notícias fiscais. Setores sensíveis a juros (varejo, construção, small caps) reagem mais ao DI do que ao exterior.',
+                grid: [['WIN', 'Lateral / segue DI', 'text-slate-500'], ['WDO', 'Ancorado no carry', 'text-slate-500'], ['DI curto', 'Segue Copom', 'text-slate-500'], ['Ouro', 'Estável', 'text-slate-500']] },
+            off: { label: 'Risk-off', marker: '15%', title: 'Aversão a risco: investidores fogem para dólar, Treasuries e ouro.',
+                desc: 'Choques globais (recessão, guerra, Fed mais duro) fortalecem o DXY. Emergentes sofrem saída de capital: o real se desvaloriza, o Ibovespa cai e a curva DI abre, principalmente nos vértices longos.',
+                grid: [['WIN', 'Queda ▼', 'text-rose-600'], ['WDO', 'Alta ▲', 'text-emerald-600'], ['DI longo', 'Abre ▲', 'text-rose-600'], ['Ouro', 'Alta ▲', 'text-emerald-600']] },
+            on: { label: 'Risk-on', marker: '85%', title: 'Apetite a risco: capital estrangeiro busca retorno em emergentes.',
+                desc: 'Com juros globais em queda e dólar fraco, o diferencial de juros brasileiro atrai fluxo. A bolsa sobe puxada por bancos e commodities, o real se aprecia e a curva DI tende a fechar.',
+                grid: [['WIN', 'Alta ▲', 'text-emerald-600'], ['WDO', 'Queda ▼', 'text-rose-600'], ['DI', 'Fecha ▼', 'text-emerald-600'], ['Commodities', 'Alta ▲', 'text-emerald-600']] }
+        };
+        function setRegime(k) {
+            const r = REG[k];
+            document.getElementById('regime-btns').innerHTML = Object.entries(REG).map(([key, v]) => `<button data-r="${key}" class="px-2.5 py-1 ${key === k ? 'bg-lect-navy text-white font-semibold' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300'}">${v.label}</button>`).join('');
+            document.querySelectorAll('#regime-btns button').forEach(b => b.onclick = () => setRegime(b.dataset.r));
+            document.getElementById('regime-marker').style.left = r.marker;
+            document.getElementById('regime-title').textContent = r.title;
+            document.getElementById('regime-desc').textContent = r.desc;
+            document.getElementById('regime-grid').innerHTML = r.grid.map(([a, v, c]) => `<div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">${a}</span><strong class="${c}">${v}</strong></div>`).join('');
+        }
+        setRegime('base');
+
+        /* ---------- Notas educacionais ---------- */
+        const EDU = [
+            { icon: 'ph-bank', tag: 'JUROS', title: 'Copom corta a Selic: o que acontece?', body: 'Um corte reduz o CDI e o custo de capital das empresas. No valuation por fluxo de caixa descontado, a taxa de desconto menor eleva o valor presente — favorecendo ações de crescimento e setores endividados. Ao mesmo tempo, o diferencial de juros contra os EUA encolhe, o que pode enfraquecer o real.', chain: 'Corte da Selic → DI curto fecha → Ações domésticas sobem · Carry menor → pressão no câmbio' },
+            { icon: 'ph-flag', tag: 'FED', title: 'Fed mais duro e o dólar global', body: 'Juros mais altos nos EUA valorizam o dólar contra quase todas as moedas (DXY sobe) e elevam o retorno sem risco em dólar. Fundos globais reduzem exposição a emergentes, pressionando real, bolsa brasileira e taxas longas do DI.', chain: 'Fed hawkish → US10Y e DXY ▲ → WDO ▲ · WIN ▼ · DI longo ▲' },
+            { icon: 'ph-thermometer', tag: 'INFLAÇÃO', title: 'IPCA acima do consenso', body: 'Uma surpresa altista na inflação reduz a chance de cortes futuros. A ponta curta da curva DI abre imediatamente, e ações sensíveis a juros (varejo, imobiliário) costumam cair. O efeito é mais forte quando a surpresa vem de serviços, a parte mais persistente da inflação.', chain: 'IPCA > consenso → DI1F27/F28 ▲ → Varejo e construção ▼' },
+            { icon: 'ph-arrows-clockwise', tag: 'VENCIMENTO', title: 'Por que a rolagem importa no day trade', body: 'Perto do vencimento a liquidez migra para o contrato seguinte. Operar o contrato antigo nesses dias significa book mais fino, spreads maiores e saltos de preço. No WDO a troca acontece todo mês; no WIN, a cada dois meses.', chain: 'Vencimento próximo → liquidez migra → operar o contrato seguinte' }
+        ];
+        document.getElementById('edu-cards').innerHTML = EDU.map((e, i) => `
+            <button onclick="openEdu(${i})" class="term-panel p-5 text-left hover:border-lect-teal transition-colors">
+                <i class="ph-bold ${e.icon} text-2xl text-lect-teal"></i>
+                <span class="term-label block mt-2">${e.tag}</span>
+                <strong class="font-display text-base block leading-snug mt-1">${e.title}</strong>
+                <span class="font-mono text-[11px] text-lect-teal font-bold block mt-3">Ler nota →</span>
+            </button>`).join('');
+        window.openEdu = function (i) {
+            const e = EDU[i];
+            ['tag', 'title', 'body', 'chain'].forEach(k => document.getElementById('modal-' + k).textContent = k === 'tag' ? 'NOTA EDUCACIONAL · ' + e.tag : e[k]);
+            const m = document.getElementById('edu-modal'); m.classList.remove('hidden'); m.classList.add('flex');
+        };
+        window.closeEdu = function () { const m = document.getElementById('edu-modal'); m.classList.add('hidden'); m.classList.remove('flex'); };
+    })();
+    </script>
+</body>
+</html>

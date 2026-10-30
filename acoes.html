@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectnex Terminal — Ações B3: Cotação, Fundos Donos, Laboratório de Opções e Fluxo</title>
+    <meta name="description" content="Ações da B3 com cotação, gráfico, quais fundos são donos de cada ação (dados abertos CVM), laboratório de opções com Black-Scholes e gregas, e fluxo de capital estrangeiro (Banco Central).">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="assets/tw-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link rel="stylesheet" href="assets/lectnex.css">
+</head>
+<body data-page="acoes" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+
+            <!-- TÍTULO + BUSCA -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+                <div>
+                    <span class="px-2.5 py-0.5 bg-lect-navy text-white dark:bg-lect-teal font-mono text-[10px] font-bold uppercase tracking-wider border-l-2 border-lect-orange">AÇÕES B3 · DADOS ABERTOS CVM E BANCO CENTRAL</span>
+                    <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Raio-X da Ação</h1>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-3xl">Cotação, gráfico, quais fundos são donos da ação e o que mudou no mês, laboratório de opções e para onde está indo o dinheiro.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shrink-0">
+                    <div class="relative sm:min-w-[260px]">
+                        <i class="ph-bold ph-magnifying-glass text-lect-orange absolute left-3 top-1/2 -translate-y-1/2"></i>
+                        <input id="ticker-input" type="text" placeholder="Ticker B3 (ex.: PETR4, TAEE11)" class="lx-input pl-9 uppercase border-2 border-lect-navy dark:border-lect-teal">
+                    </div>
+                    <button id="ticker-go" class="bg-lect-navy dark:bg-lect-teal text-white font-mono text-xs font-bold px-5 py-2.5 border-l-2 border-lect-orange uppercase">Carregar</button>
+                </div>
+            </div>
+
+            <!-- SELETOR POR SETOR -->
+            <div class="term-panel p-4">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-slate-200 dark:border-lect-borderDark">
+                    <span class="term-label font-bold">AÇÕES DE ALTA LIQUIDEZ · CLIQUE PARA ABRIR</span>
+                    <div id="sector-btns" class="flex flex-wrap gap-1 font-mono text-[10px]"></div>
+                </div>
+                <div id="pills" class="flex flex-wrap gap-1.5 font-mono text-xs"></div>
+            </div>
+
+            <!-- FICHA -->
+            <div class="term-panel p-5 border-l-4 border-l-lect-teal">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 mb-4 border-b border-slate-200 dark:border-lect-borderDark">
+                    <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span id="st-ticker" class="font-display text-3xl font-bold">—</span>
+                                <span id="st-sector" class="px-2 py-0.5 bg-slate-100 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-mono text-[10px] font-bold"></span>
+                                <span id="st-quote-src" class="px-2 py-0.5 bg-slate-500/10 text-slate-500 font-mono text-[10px] font-bold">CARREGANDO…</span>
+                            </div>
+                            <p id="st-name" class="text-xs text-slate-500 mt-0.5"></p>
+                        </div>
+                        <div class="font-mono tabular-nums">
+                            <div id="st-price" class="text-2xl font-bold whitespace-nowrap">R$&nbsp;—</div>
+                            <div id="st-change" class="text-xs font-bold whitespace-nowrap text-slate-500">carregando cotação…</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs">
+                        <a href="#opcoes" class="px-3.5 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-semibold inline-flex items-center gap-1.5"><i class="ph-bold ph-function text-lect-tealLight"></i>Laboratório de opções</a>
+                        <a id="lnk-div" href="laboratorio.html?tab=proventos" class="px-3.5 py-2 bg-slate-100 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-semibold inline-flex items-center gap-1.5"><i class="ph-bold ph-coins text-lect-orange"></i>Simular dividendos</a>
+                        <a id="lnk-trade" href="laboratorio.html?tab=trade" class="px-3.5 py-2 bg-slate-100 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-semibold inline-flex items-center gap-1.5"><i class="ph-bold ph-calculator text-lect-teal"></i>Compra/venda vs. CDI</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 font-mono tabular-nums text-xs" id="st-cards"></div>
+            </div>
+
+            <!-- GRÁFICO -->
+            <div class="term-panel overflow-hidden">
+                <div class="panel-head">
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-chart-line text-lect-orange"></i>Gráfico <span id="chart-ticker"></span></span>
+                    <span class="font-mono text-[10px] text-slate-300">TRADINGVIEW · B3 COM ATRASO</span>
+                </div>
+                <div id="tv-chart" class="h-[440px]"></div>
+            </div>
+
+            <!-- FUNDOS DONOS + LABORATÓRIO DE OPÇÕES -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+                <section id="donos" class="lg:col-span-5 term-panel overflow-hidden scroll-mt-28">
+                    <div class="panel-head">
+                        <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-buildings text-lect-orange"></i>Quem é dono da ação</span>
+                        <span id="cvm-ref" class="font-mono text-[10px] text-slate-300">FUNDOS · CVM</span>
+                    </div>
+                    <div class="flex font-mono text-[11px] border-b border-slate-200 dark:border-lect-borderDark" id="own-tabs">
+                        <button data-t="holders" class="flex-1 py-2.5 font-bold">Maiores detentores</button>
+                        <button data-t="buyers" class="flex-1 py-2.5 font-bold">Aumentaram</button>
+                        <button data-t="sellers" class="flex-1 py-2.5 font-bold">Reduziram</button>
+                    </div>
+                    <div id="own-body" class="divide-y divide-slate-100 dark:divide-lect-borderDark font-mono tabular-nums text-xs min-h-[200px]"></div>
+                    <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500 leading-relaxed">
+                        Carteiras declaradas pelos fundos de investimento à CVM (CDA). Fundos podem pedir sigilo temporário de posições, por isso o mês de referência fica alguns meses atrás. Mostra o posicionamento de médio prazo das gestoras, não o fluxo do dia. Fonte: <a class="text-lect-teal underline" href="https://dados.cvm.gov.br/dataset/fi-doc-cda" target="_blank" rel="noopener">dados.cvm.gov.br</a> (licença ODbL).
+                    </div>
+                </section>
+
+                <section id="opcoes" class="lg:col-span-7 term-panel overflow-hidden scroll-mt-28">
+                    <div class="panel-head">
+                        <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-function text-lect-tealLight"></i>Laboratório de Opções</span>
+                        <span class="font-mono text-[10px] text-slate-300">BLACK-SCHOLES · GREGAS · PAYOFF</span>
+                    </div>
+                    <div class="p-4 grid grid-cols-2 sm:grid-cols-5 gap-3 font-mono text-xs border-b border-slate-200 dark:border-lect-borderDark">
+                        <label class="col-span-2 sm:col-span-1"><span class="term-label block mb-1">Estratégia</span><select id="op-strat" class="lx-input"></select></label>
+                        <label><span class="term-label block mb-1">Preço da ação</span><input id="op-spot" type="number" step="0.01" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Vencimento</span><select id="op-exp" class="lx-input"></select></label>
+                        <label><span class="term-label block mb-1">Volatilidade %</span><input id="op-vol" type="number" step="1" min="1" value="30" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Juros (CDI) %</span><input id="op-rate" type="number" step="0.05" class="lx-input"></label>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left font-mono tabular-nums text-xs min-w-[640px]">
+                            <thead class="quote-head uppercase"><tr><th class="py-2 px-3">Perna</th><th class="py-2 px-2">Strike</th><th class="py-2 px-2">Lotes</th><th class="py-2 px-2">Prêmio teórico</th><th class="py-2 px-2">Delta</th><th class="py-2 px-2">Gama</th><th class="py-2 px-2">Theta/dia</th><th class="py-2 px-2">Vega/1%</th></tr></thead>
+                            <tbody id="op-legs" class="divide-y divide-slate-200 dark:divide-lect-borderDark"></tbody>
+                        </table>
+                    </div>
+                    <div class="p-4 space-y-4">
+                        <div id="op-summary" class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono tabular-nums text-xs"></div>
+                        <div id="op-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-2"></div>
+                        <p id="op-edu" class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                        <p class="text-[11px] text-slate-500">Preços teóricos pelo modelo de Black-Scholes (opção europeia, sem dividendos); prêmios de mercado variam com oferta e demanda. Lote padrão: 100 ações. Posições em aberto oficiais de cada série: <a class="text-lect-teal underline" href="https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-de-derivativos/contratos-em-aberto/" target="_blank" rel="noopener">B3 → contratos em aberto</a>.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- PARA ONDE VAI O DINHEIRO -->
+            <section id="fluxo" class="scroll-mt-28">
+                <div class="mb-4">
+                    <span class="term-label text-lect-orange font-bold">FLUXO DE CAPITAL · DADOS OFICIAIS</span>
+                    <h2 class="font-display text-2xl font-bold">Para onde vai o dinheiro</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="term-panel p-5 min-w-0">
+                        <div class="flex items-start justify-between gap-2 mb-3">
+                            <div>
+                                <span class="term-label">CAPITAL ESTRANGEIRO EM AÇÕES BRASILEIRAS</span>
+                                <h3 class="font-display text-lg font-bold">Entrada líquida mensal (US$ milhões)</h3>
+                            </div>
+                            <span class="src-tag text-right">BCB · SGS 22927<br>BALANÇO DE PAGAMENTOS</span>
+                        </div>
+                        <div id="fx-foreign" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-2 min-h-[200px]"><p class="p-4 text-xs text-slate-500">Carregando série do Banco Central…</p></div>
+                        <p id="fx-foreign-txt" class="text-xs text-slate-600 dark:text-slate-300 mt-3 leading-relaxed"></p>
+                    </div>
+                    <div class="term-panel p-5 min-w-0">
+                        <div class="flex items-start justify-between gap-2 mb-3">
+                            <div>
+                                <span class="term-label">INVESTIDOR LOCAL</span>
+                                <h3 class="font-display text-lg font-bold">Captação líquida dos fundos de ações (R$ milhões/dia)</h3>
+                            </div>
+                            <span class="src-tag text-right">CVM · INFORME DIÁRIO</span>
+                        </div>
+                        <div id="fx-local" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-2 min-h-[200px]"></div>
+                        <p id="fx-local-txt" class="text-xs text-slate-600 dark:text-slate-300 mt-3 leading-relaxed"></p>
+                    </div>
+                </div>
+                <a href="futuros.html#tape" class="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 term-panel hover:border-lect-teal">
+                    <span class="flex items-center gap-3"><i class="ph-bold ph-game-controller text-2xl text-lect-orange"></i><span><strong class="font-display">Treinador de Tape Reading</strong><span class="block text-xs text-slate-500">Pratique a leitura de agressão, absorção e exaustão num book simulado, com pontuação.</span></span></span>
+                    <span class="font-mono text-xs text-lect-teal font-bold">Treinar agora →</span>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js"></script>
+    <script>
+    (function () {
+        const $ = id => document.getElementById(id);
+
+        /* ================= CATÁLOGO ================= */
+        const CATALOG = [
+            ['PETR4', 'Petrobras PN', 'Commodities'], ['VALE3', 'Vale ON', 'Commodities'], ['PRIO3', 'PRIO ON', 'Commodities'],
+            ['SUZB3', 'Suzano ON', 'Commodities'], ['GGBR4', 'Gerdau PN', 'Commodities'], ['CSNA3', 'CSN ON', 'Commodities'],
+            ['JBSS3', 'JBS ON', 'Commodities'], ['VBBR3', 'Vibra Energia ON', 'Commodities'],
+            ['ITUB4', 'Itaú Unibanco PN', 'Bancos'], ['BBAS3', 'Banco do Brasil ON', 'Bancos'], ['BBDC4', 'Bradesco PN', 'Bancos'],
+            ['B3SA3', 'B3 ON', 'Bancos'], ['BPAC11', 'BTG Pactual Unit', 'Bancos'], ['ITSA4', 'Itaúsa PN', 'Bancos'], ['BBSE3', 'BB Seguridade ON', 'Bancos'],
+            ['ELET3', 'Eletrobras ON', 'Elétricas'], ['TAEE11', 'Taesa Unit', 'Elétricas'], ['EQTL3', 'Equatorial ON', 'Elétricas'],
+            ['SBSP3', 'Sabesp ON', 'Elétricas'], ['CMIG4', 'Cemig PN', 'Elétricas'], ['CPLE6', 'Copel PNB', 'Elétricas'],
+            ['ABEV3', 'Ambev ON', 'Consumo'], ['RENT3', 'Localiza ON', 'Consumo'], ['LREN3', 'Lojas Renner ON', 'Consumo'],
+            ['MGLU3', 'Magazine Luiza ON', 'Consumo'], ['RADL3', 'Raia Drogasil ON', 'Consumo'], ['ASAI3', 'Assaí ON', 'Consumo'], ['HAPV3', 'Hapvida ON', 'Consumo'],
+            ['WEGE3', 'WEG ON', 'Indústria'], ['EMBR3', 'Embraer ON', 'Indústria'], ['TOTS3', 'TOTVS ON', 'Indústria'],
+            ['RAIL3', 'Rumo ON', 'Indústria'], ['VIVT3', 'Vivo ON', 'Indústria']
+        ].map(([ticker, name, sector]) => ({ ticker, name, sector }));
+        const SECTORS = [['all', 'Todas'], ['Commodities', 'Commodities'], ['Bancos', 'Bancos & Fin.'], ['Elétricas', 'Elétricas & Saneam.'], ['Consumo', 'Consumo'], ['Indústria', 'Indústria & Tech']];
+        let sector = 'all', current = null;
+        const quotes = {};
+        let cvm = null;
+
+        function renderSectors() {
+            $('sector-btns').innerHTML = SECTORS.map(([k, l]) => `<button data-s="${k}" class="px-2.5 py-1 ${sector === k ? 'bg-lect-navy text-white font-bold' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300'}">${l}</button>`).join('');
+            document.querySelectorAll('#sector-btns button').forEach(b => b.onclick = () => { sector = b.dataset.s; renderSectors(); renderPills(); });
+        }
+        function renderPills() {
+            $('pills').innerHTML = CATALOG.filter(c => sector === 'all' || c.sector === sector).map(c => {
+                const q = quotes[c.ticker], on = current && current.ticker === c.ticker;
+                const chg = q && q.ok ? `<span class="${q.change >= 0 ? 'text-emerald-500' : 'text-rose-500'} text-[10px] font-semibold">${LX.pct(q.change, 2, true)}</span>` : '';
+                return `<button data-t="${c.ticker}" class="px-3 py-1.5 flex items-center gap-1.5 ${on ? 'bg-lect-navy text-white border-l-2 border-lect-orange font-bold' : 'bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark hover:border-lect-teal'}">${c.ticker}${chg}</button>`;
+            }).join('');
+            document.querySelectorAll('#pills button').forEach(b => b.onclick = () => load(b.dataset.t));
+        }
+
+        /* ================= COTAÇÃO (brapi) ================= */
+        async function fetchQuote(tk) {
+            try {
+                const t = LX.config.brapiToken ? `?token=${encodeURIComponent(LX.config.brapiToken)}` : '';
+                const j = await LX.getJSON(`https://brapi.dev/api/quote/${tk}${t}`);
+                const r = j && j.results && j.results[0];
+                if (!r || !r.regularMarketPrice) throw 0;
+                quotes[tk] = { ok: true, price: r.regularMarketPrice, change: r.regularMarketChangePercent || 0, name: r.longName,
+                    lo52: r.fiftyTwoWeekLow, hi52: r.fiftyTwoWeekHigh, pl: r.priceEarnings, mcap: r.marketCap, vol: r.regularMarketVolume,
+                    time: r.regularMarketTime ? new Date(r.regularMarketTime) : null };
+            } catch (_) { quotes[tk] = { ok: false }; }
+            if (current && current.ticker === tk) { renderQuote(); renderCards(); syncSpot(); }
+            renderPills();
+        }
+
+        function renderQuote() {
+            const q = quotes[current.ticker], price = $('st-price'), chg = $('st-change'), badge = $('st-quote-src');
+            if (!q) {
+                price.textContent = 'R$ —'; chg.textContent = 'carregando cotação…'; chg.className = 'text-xs font-bold whitespace-nowrap text-slate-500';
+                badge.textContent = 'CARREGANDO…'; badge.className = 'px-2 py-0.5 bg-slate-500/10 text-slate-500 font-mono text-[10px] font-bold';
+                return;
+            }
+            if (q.ok) {
+                const up = q.change >= 0, diff = Math.abs(q.price * q.change / (100 + q.change));
+                price.textContent = 'R$ ' + LX.num(q.price);
+                chg.textContent = `${up ? '+' : '−'}${LX.num(Math.abs(q.change))}% (${up ? '+' : '−'}R$ ${LX.num(diff)})`;
+                chg.className = 'text-xs font-bold whitespace-nowrap ' + (up ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400');
+                badge.textContent = 'BRAPI' + (q.time ? ' · ' + q.time.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' }) : '') + ' · ATRASO ATÉ 15 MIN';
+                badge.className = 'px-2 py-0.5 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-mono text-[10px] font-bold';
+                if (q.name) $('st-name').textContent = q.name;
+            } else {
+                price.textContent = 'R$ —';
+                chg.innerHTML = `cotação indisponível · <a class="underline" href="https://www.google.com/finance/quote/${current.ticker}:BVMF" target="_blank" rel="noopener">ver ${current.ticker}</a>`;
+                chg.className = 'text-xs font-bold whitespace-nowrap text-amber-600';
+                badge.textContent = LX.config.brapiToken ? 'SEM CONEXÃO COM A BRAPI' : 'CONFIGURE O TOKEN BRAPI';
+                badge.className = 'px-2 py-0.5 bg-amber-500/15 text-amber-600 font-mono text-[10px] font-bold';
+            }
+        }
+
+        /* ================= CARDS DA FICHA ================= */
+        const big = v => { const a = Math.abs(v); return a >= 1e9 ? LX.num(v / 1e9, 1) + ' bi' : a >= 1e6 ? LX.num(v / 1e6, 1) + ' mi' : a >= 1e3 ? LX.num(v / 1e3, 0) + ' mil' : LX.num(v, 0); };
+        const card = (label, value, sub, cls = '') => `<div class="p-2.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark min-w-0"><span class="term-label block">${label}</span><strong class="block mt-0.5 truncate ${cls}" title="${LX.esc(String(value).replace(/<[^>]+>/g, ''))}">${value}</strong><span class="text-[10px] text-slate-500 block truncate">${sub}</span></div>`;
+        function renderCards() {
+            const q = quotes[current.ticker] || {}, f = cvm && cvm.tickers[current.ticker], ok = q.ok;
+            const pos52 = ok && q.lo52 && q.hi52 ? `${LX.num((q.price - q.lo52) / (q.hi52 - q.lo52) * 100, 0)}% da faixa` : 'via brapi';
+            const chgQty = f && f.qtyPrev ? (f.qty / f.qtyPrev - 1) * 100 : null;
+            const ref = cvm ? cvm.ref.split('-').reverse().join('/') : '';
+            $('st-cards').innerHTML = [
+                card('Faixa 52 sem.', ok && q.lo52 ? `${LX.num(q.lo52)}–${LX.num(q.hi52)}` : '—', pos52),
+                card('P/L', ok && q.pl ? LX.num(q.pl, 1) + 'x' : '—', 'preço / lucro · brapi'),
+                card('Valor de mercado', ok && q.mcap ? 'R$ ' + big(q.mcap) : '—', 'brapi'),
+                card('Volume do dia', ok && q.vol ? big(q.vol) : '—', 'ações negociadas'),
+                card('Fundos donos', f ? f.funds.toLocaleString('pt-BR') : '—', f ? `${f.fundsPrev ? (f.funds >= f.fundsPrev ? '+' : '') + (f.funds - f.fundsPrev) + ' no mês · ' : ''}CVM ${ref}` : 'CVM · aguardando coletor'),
+                card('Valor em fundos', f ? 'R$ ' + big(f.value) : '—', f ? `ref. ${ref}` : 'CVM'),
+                card('Maior detentor', f && f.holders[0] ? LX.esc(f.holders[0].fund) : '—', f && f.holders[0] ? big(f.holders[0].qty) + ' ações' : 'CVM'),
+                card('Posição dos fundos', chgQty == null ? '—' : LX.pct(chgQty, 1, true), 'qtd. total vs. mês anterior', chgQty == null ? '' : LX.signClass(chgQty))
+            ].join('');
+        }
+
+        /* ================= FUNDOS DONOS (CVM) ================= */
+        let ownTab = 'holders';
+        function renderOwners() {
+            document.querySelectorAll('#own-tabs button').forEach(b => b.className = 'flex-1 py-2.5 font-bold ' + (b.dataset.t === ownTab ? 'bg-lect-teal/10 text-lect-teal border-b-2 border-lect-teal' : 'text-slate-500'));
+            const body = $('own-body');
+            if (!cvm) {
+                body.innerHTML = `<div class="p-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed space-y-2 font-sans"><p class="font-bold text-sm">Dados da CVM ainda não coletados.</p><p>Este painel lê o arquivo <code>data/fundos-acoes.json</code>, gerado pelo coletor automático (<code>coletor/coletor_cvm.py</code>) que roda no GitHub Actions. Com o site no GitHub e o coletor ativo, a lista aparece aqui com as carteiras reais dos fundos.</p></div>`;
+                return;
+            }
+            $('cvm-ref').textContent = `CVM · REF. ${cvm.ref.split('-').reverse().join('/')}`;
+            const f = cvm.tickers[current.ticker];
+            if (!f) { body.innerHTML = `<p class="p-5 text-xs text-slate-500">Nenhuma posição de fundos em ${current.ticker} no mês de referência.</p>`; return; }
+            const list = f[ownTab] || [];
+            if (!list.length) { body.innerHTML = `<p class="p-5 text-xs text-slate-500">Sem movimentos neste mês.</p>`; return; }
+            const maxQ = Math.max(...list.map(x => Math.abs(ownTab === 'holders' ? x.qty : x.delta))) || 1;
+            body.innerHTML = list.map((x, i) => {
+                const v = ownTab === 'holders' ? x.qty : x.delta;
+                const color = ownTab === 'sellers' ? 'bg-rose-500' : ownTab === 'buyers' ? 'bg-emerald-500' : 'bg-lect-teal';
+                const right = ownTab === 'holders'
+                    ? `<strong>${big(x.qty)}</strong><span class="block text-[10px] text-slate-500">R$ ${big(x.value)}</span>`
+                    : `<strong class="${LX.signClass(x.delta)}">${x.delta > 0 ? '+' : '−'}${big(Math.abs(x.delta))}</strong><span class="block text-[10px] text-slate-500">${x.qty ? 'posição: ' + big(x.qty) : 'zerou a posição'}</span>`;
+                return `<div class="px-4 py-2.5"><div class="flex items-start justify-between gap-3"><span class="min-w-0"><span class="text-slate-400 mr-1">${i + 1}.</span><span class="font-sans font-semibold text-[12px]">${LX.esc(x.fund)}</span></span><span class="text-right shrink-0">${right}</span></div>
+                    <div class="h-1 mt-1.5 bg-slate-200 dark:bg-lect-borderDark"><div class="h-full ${color}" style="width:${Math.max(3, Math.abs(v) / maxQ * 100)}%"></div></div></div>`;
+            }).join('');
+        }
+        document.querySelectorAll('#own-tabs button').forEach(b => b.onclick = () => { ownTab = b.dataset.t; renderOwners(); });
+
+        /* ================= LABORATÓRIO DE OPÇÕES ================= */
+        const N = x => { const t = 1 / (1 + 0.2316419 * Math.abs(x)), d = 0.3989422804 * Math.exp(-x * x / 2); const p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274)))); return x >= 0 ? 1 - p : p; };
+        const nd = x => Math.exp(-x * x / 2) / Math.sqrt(2 * Math.PI);
+        function bs(type, S, K, T, r, v) {
+            if (T <= 0) return { price: Math.max(0, type === 'C' ? S - K : K - S), delta: type === 'C' ? (S > K ? 1 : 0) : (S < K ? -1 : 0), gamma: 0, vega: 0 };
+            const d1 = (Math.log(S / K) + (r + v * v / 2) * T) / (v * Math.sqrt(T)), d2 = d1 - v * Math.sqrt(T);
+            const price = type === 'C' ? S * N(d1) - K * Math.exp(-r * T) * N(d2) : K * Math.exp(-r * T) * N(-d2) - S * N(-d1);
+            return { price, delta: type === 'C' ? N(d1) : N(d1) - 1, gamma: nd(d1) / (S * v * Math.sqrt(T)), vega: S * nd(d1) * Math.sqrt(T) / 100 };
+        }
+        LX.bs = bs;
+        const STRATS = {
+            call: ['Compra de call', 'aposta na alta com perda limitada ao prêmio pago.', s => [{ t: 'C', side: 1, k: s.atm }]],
+            put: ['Compra de put', 'aposta na queda ou proteção, com perda limitada ao prêmio.', s => [{ t: 'P', side: 1, k: s.atm }]],
+            bull: ['Trava de alta (calls)', 'compra uma call e vende outra mais acima: custo menor, ganho limitado.', s => [{ t: 'C', side: 1, k: s.atm }, { t: 'C', side: -1, k: s.atm + 2 * s.step }]],
+            bear: ['Trava de baixa (puts)', 'compra uma put e vende outra mais abaixo: aposta na queda com custo menor.', s => [{ t: 'P', side: 1, k: s.atm }, { t: 'P', side: -1, k: s.atm - 2 * s.step }]],
+            covered: ['Venda coberta', 'tem a ação e vende uma call acima: recebe prêmio e abre mão da alta além do strike.', s => [{ t: 'S', side: 1 }, { t: 'C', side: -1, k: s.atm + s.step }]],
+            collar: ['Collar (proteção)', 'tem a ação, compra put abaixo e vende call acima: limita perdas e ganhos.', s => [{ t: 'S', side: 1 }, { t: 'P', side: 1, k: s.atm - s.step }, { t: 'C', side: -1, k: s.atm + s.step }]],
+            straddle: ['Straddle (volatilidade)', 'compra call e put no mesmo strike: ganha com movimento forte para qualquer lado.', s => [{ t: 'C', side: 1, k: s.atm }, { t: 'P', side: 1, k: s.atm }]]
+        };
+        $('op-strat').innerHTML = Object.entries(STRATS).map(([k, v]) => `<option value="${k}">${v[0]}</option>`).join('');
+        const exps = LX.upcomingOptions(6);
+        $('op-exp').innerHTML = exps.map((e, i) => `<option value="${i}" ${i === (exps[0].du < 5 ? 1 : 0) ? 'selected' : ''}>${LX.brShort(e.expiry)} · ${e.callLetter}/${e.putLetter} · ${e.du} DU</option>`).join('');
+        let legs = [];
+        const fv = id => parseFloat($(id).value) || 0;
+
+        function buildLegs() {
+            const S = fv('op-spot') || 30;
+            const step = S > 60 ? 2 : S > 25 ? 1 : S > 10 ? 0.5 : 0.25;
+            const atm = Math.round(S / step) * step;
+            legs = STRATS[$('op-strat').value][2]({ atm, step }).map(l => ({ ...l, lots: 1, k: l.k != null ? +l.k.toFixed(2) : null }));
+            calcOptions();
+        }
+        function calcOptions() {
+            const S = fv('op-spot'), e = exps[+$('op-exp').value], T = e.du / 252, r = Math.log(1 + fv('op-rate') / 100), v = fv('op-vol') / 100;
+            if (!(S > 0) || !(v > 0) || !legs.length) return;
+            let optCost = 0, gD = 0, gT = 0, gV = 0;
+            $('op-legs').innerHTML = legs.map((l, i) => {
+                const q = l.side * l.lots * 100;
+                if (l.t === 'S') {
+                    gD += q;
+                    return `<tr><td class="py-2 px-3 font-bold">${l.side > 0 ? 'Compra' : 'Venda'} da ação</td><td class="px-2 text-slate-400">—</td><td class="px-2"><input id="op-lot-${i}" data-lot="${i}" type="number" min="1" value="${l.lots}" class="lx-input !w-16 !py-1"></td><td class="px-2">${LX.brl(S)}</td><td class="px-2">${LX.num(l.side, 2)}</td><td class="px-2 text-slate-400">—</td><td class="px-2 text-slate-400">—</td><td class="px-2 text-slate-400">—</td></tr>`;
+                }
+                const g = bs(l.t, S, l.k, T, r, v), g1 = bs(l.t, S, l.k, Math.max(0, T - 1 / 252), r, v);
+                optCost += q * g.price; gD += q * g.delta; gT += q * (g1.price - g.price); gV += q * g.vega;
+                const name = `${l.side > 0 ? 'Compra' : 'Venda'} ${l.t === 'C' ? 'call' : 'put'} · série ${l.t === 'C' ? e.callLetter : e.putLetter}`;
+                return `<tr><td class="py-2 px-3 font-bold ${l.side > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}">${name}</td>
+                    <td class="px-2"><input id="op-k-${i}" data-k="${i}" type="number" step="0.25" value="${l.k}" class="lx-input !w-20 !py-1"></td>
+                    <td class="px-2"><input id="op-lot-${i}" data-lot="${i}" type="number" min="1" value="${l.lots}" class="lx-input !w-16 !py-1"></td>
+                    <td class="px-2">${LX.brl(g.price)}</td><td class="px-2">${LX.num(g.delta, 2)}</td><td class="px-2">${LX.num(g.gamma, 3)}</td><td class="px-2">${LX.num(g1.price - g.price, 3)}</td><td class="px-2">${LX.num(g.vega, 3)}</td></tr>`;
+            }).join('');
+            document.querySelectorAll('[data-k]').forEach(el => el.onchange = () => { const k = parseFloat(el.value); if (k > 0) legs[+el.dataset.k].k = k; calcOptions(); });
+            document.querySelectorAll('[data-lot]').forEach(el => el.onchange = () => { legs[+el.dataset.lot].lots = Math.max(1, parseInt(el.value) || 1); calcOptions(); });
+
+            // Resultado (R$) se a ação estiver em P, com Tleft anos até o vencimento
+            const pnlAt = (P, Tleft) => legs.reduce((acc, l) => {
+                const q = l.side * l.lots * 100;
+                if (l.t === 'S') return acc + q * (P - S);
+                const val = Tleft <= 0 ? Math.max(0, l.t === 'C' ? P - l.k : l.k - P) : bs(l.t, P, l.k, Tleft, r, v).price;
+                return acc + q * val;
+            }, 0) - optCost;
+            const lo = S * 0.7, hi = S * 1.3, pts = 120, xs = [...Array(pts + 1)].map((_, i) => lo + (hi - lo) * i / pts);
+            const atExp = xs.map(P => pnlAt(P, 0)), today = xs.map(P => pnlAt(P, T));
+            const be = []; for (let i = 1; i < xs.length; i++) if ((atExp[i - 1] < 0) !== (atExp[i] < 0)) be.push(xs[i - 1] + (xs[i] - xs[i - 1]) * (-atExp[i - 1]) / (atExp[i] - atExp[i - 1]));
+            const slopeUp = (pnlAt(S * 3, 0) - pnlAt(S * 2, 0)) > 1e-6, lossAtZero = pnlAt(0.0001, 0);
+            const maxP = slopeUp ? null : Math.max(...xs.concat([S * 2, S * 3]).map(P => pnlAt(P, 0)), ...atExp, lossAtZero);
+            const minP = Math.min(...atExp, lossAtZero, pnlAt(S * 3, 0));
+            const sum = (l, val, sub, c = '') => `<div class="p-3 border border-slate-200 dark:border-lect-borderDark min-w-0"><span class="term-label block">${l}</span><strong class="block mt-0.5 ${c}">${val}</strong><span class="text-[10px] text-slate-500">${sub}</span></div>`;
+            $('op-summary').innerHTML =
+                sum(optCost >= 0 ? 'Custo das opções' : 'Crédito das opções', LX.brl(Math.abs(optCost)), 'prêmios teóricos', optCost >= 0 ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400') +
+                sum('Ganho máximo', maxP == null ? 'ilimitado' : LX.brl(maxP), 'no vencimento', 'text-emerald-600 dark:text-emerald-400') +
+                sum('Perda máxima', minP < -1e9 ? 'ilimitada' : LX.brl(Math.abs(minP)), minP < -0.5 * S * 100 ? 'se a ação for a zero' : 'no vencimento', 'text-rose-600 dark:text-rose-400') +
+                sum('Ponto de equilíbrio', be.length ? be.map(b => LX.brl(b)).join(' · ') : '—', `delta da posição: ${LX.num(gD, 0)} ações`);
+
+            const W = 640, H = 240, L = 62, R = 12, Tm = 14, B = 34;
+            const ys = atExp.concat(today), ymin = Math.min(...ys, 0), ymax = Math.max(...ys, 0), span = (ymax - ymin) || 1;
+            const X = P => L + (P - lo) / (hi - lo) * (W - L - R), Y = val => Tm + (ymax - val) / span * (H - Tm - B);
+            const path = arr => arr.map((val, i) => `${X(xs[i]).toFixed(1)},${Y(val).toFixed(1)}`).join(' ');
+            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Lucro e prejuízo da estratégia por preço da ação">`;
+            s += `<rect x="${L}" y="${Tm}" width="${W - L - R}" height="${Math.max(0, Y(0) - Tm)}" fill="#10B981" fill-opacity=".07"/><rect x="${L}" y="${Y(0)}" width="${W - L - R}" height="${Math.max(0, H - B - Y(0))}" fill="#F43F5E" fill-opacity=".07"/>`;
+            s += `<line x1="${L}" x2="${W - R}" y1="${Y(0)}" y2="${Y(0)}" stroke="#94A3B8"/>`;
+            [...new Set([ymax, 0, ymin])].forEach(val => s += `<text x="${L - 6}" y="${Y(val) + 3}" font-size="9" text-anchor="end" fill="#64748B">R$ ${LX.num(val, 0)}</text>`);
+            [lo, S, hi].forEach(P => s += `<text x="${X(P)}" y="${H - 18}" font-size="9" text-anchor="middle" fill="#64748B">${LX.num(P)}</text>`);
+            s += `<line x1="${X(S)}" x2="${X(S)}" y1="${Tm}" y2="${H - B}" stroke="#F39200" stroke-dasharray="4 3"/><text x="${X(S) + 4}" y="${Tm + 10}" font-size="9" fill="#F39200">preço atual</text>`;
+            legs.filter(l => l.t !== 'S' && l.k > lo && l.k < hi).forEach(l => s += `<line x1="${X(l.k)}" x2="${X(l.k)}" y1="${H - B - 6}" y2="${H - B}" stroke="#64748B"/>`);
+            s += `<polyline fill="none" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="5 4" points="${path(today)}"/>`;
+            s += `<polyline fill="none" stroke="#009988" stroke-width="2.5" points="${path(atExp)}"/>`;
+            s += `<text x="${L}" y="${H - 3}" font-size="9" fill="#009988">━ no vencimento</text><text x="${L + 100}" y="${H - 3}" font-size="9" fill="#6366F1">┅ hoje (teórico)</text><text x="${W - R}" y="${H - 3}" font-size="9" text-anchor="end" fill="#64748B">preço da ação (R$)</text></svg>`;
+            $('op-chart').innerHTML = s;
+            $('op-edu').innerHTML = `<strong>${STRATS[$('op-strat').value][0]}:</strong> ${STRATS[$('op-strat').value][1]} Com volatilidade de ${LX.pct(v * 100, 0)} e ${e.du} dias úteis até ${LX.br(e.expiry)}, a passagem de um dia ${gT < 0 ? 'custa' : 'rende'} cerca de <strong>${LX.brl(Math.abs(gT))}</strong> (theta). Cada 1 ponto a mais de volatilidade ${gV >= 0 ? 'aumenta' : 'reduz'} o valor da posição em <strong>${LX.brl(Math.abs(gV))}</strong> (vega).`;
+        }
+        ['op-vol', 'op-rate'].forEach(id => $(id).addEventListener('input', calcOptions));
+        $('op-spot').addEventListener('input', calcOptions);
+        $('op-spot').addEventListener('change', buildLegs);
+        $('op-exp').addEventListener('change', calcOptions);
+        $('op-strat').addEventListener('change', buildLegs);
+        $('op-rate').value = LX.data.cdi.value.toFixed(2);
+        $('op-rate').addEventListener('input', () => $('op-rate').dataset.touched = 1);
+        document.addEventListener('lx:macro', () => { if (!$('op-rate').dataset.touched) { $('op-rate').value = LX.data.cdi.value.toFixed(2); calcOptions(); } });
+        function syncSpot() {
+            const q = quotes[current.ticker];
+            if (q && q.ok) $('op-spot').value = q.price.toFixed(2);
+            else if (!$('op-spot').value) $('op-spot').value = '30.00';
+            buildLegs();
+        }
+
+        /* ================= GRÁFICO DE BARRAS ================= */
+        function bars(el, data, opts) {
+            if (!data.length) return;
+            const W = 600, H = 210, L = 58, R = 10, T = 12, B = 30;
+            const vals = data.map(d => d.v), mx = Math.max(...vals, 0), mn = Math.min(...vals, 0), span = (mx - mn) || 1;
+            const bw = (W - L - R) / data.length, Y = v => T + (mx - v) / span * (H - T - B);
+            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="${opts.aria}">`;
+            [...new Set([mx, 0, mn])].forEach(v => s += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#94A3B8" stroke-opacity="${v === 0 ? .7 : .2}"/><text x="${L - 5}" y="${Y(v) + 3}" font-size="9" text-anchor="end" fill="#64748B">${opts.fmt(v)}</text>`);
+            data.forEach((d, i) => {
+                const y = Math.min(Y(d.v), Y(0)), h = Math.max(1, Math.abs(Y(d.v) - Y(0)));
+                s += `<rect x="${L + i * bw + bw * .15}" y="${y}" width="${bw * .7}" height="${h}" fill="${d.v >= 0 ? '#10B981' : '#F43F5E'}" opacity="${i === data.length - 1 ? 1 : .75}"><title>${d.label}: ${opts.fmt(d.v)}</title></rect>`;
+                if (i % opts.every === 0 || i === data.length - 1) s += `<text x="${L + i * bw + bw / 2}" y="${H - 12}" font-size="9" text-anchor="middle" fill="#64748B">${d.short}</text>`;
+            });
+            el.innerHTML = s + '</svg>';
+        }
+
+        /* ================= FLUXO ESTRANGEIRO (BCB SGS 22927) ================= */
+        LX.sgs(22927, 24).then(rows => {
+            const data = rows.map(r => { const [, m, y] = r.date.split('/'); return { v: r.value, label: `${LX.monthName[+m - 1]}/${y}`, short: `${LX.monthName[+m - 1]}/${y.slice(2)}` }; });
+            bars($('fx-foreign'), data, { every: 3, fmt: v => LX.num(v, 0), aria: 'Investimento estrangeiro em ações brasileiras por mês' });
+            const last12 = data.slice(-12).reduce((a, d) => a + d.v, 0), last = data[data.length - 1];
+            $('fx-foreign-txt').innerHTML = `Em <strong>${last.label}</strong> o saldo foi de <strong class="${LX.signClass(last.v)}">US$ ${LX.num(last.v, 0)} milhões</strong>. Nos últimos 12 meses: <strong class="${LX.signClass(last12)}">US$ ${LX.num(last12 / 1000, 1)} bilhões</strong>. Positivo significa que estrangeiros compraram mais ações brasileiras do que venderam (bolsa local e ADRs). Dado mensal do balanço de pagamentos.`;
+        }).catch(() => {
+            $('fx-foreign').innerHTML = '<p class="p-4 text-xs text-slate-500">Série do Banco Central indisponível agora. Consulte em dadosabertos.bcb.gov.br (SGS 22927).</p>';
+        });
+
+        /* ================= CAPTAÇÃO FUNDOS DE AÇÕES (CVM) ================= */
+        LX.getJSON('data/captacao-acoes.json').then(j => {
+            const s = j.series.slice(-60);
+            bars($('fx-local'), s.map(d => ({ v: d.net / 1e6, label: d.date.split('-').reverse().join('/'), short: d.date.slice(8) + '/' + d.date.slice(5, 7) })), { every: 10, fmt: v => LX.num(v, 0), aria: 'Captação líquida diária dos fundos de ações' });
+            const sum20 = s.slice(-20).reduce((a, d) => a + d.net, 0), aum = s[s.length - 1].aum;
+            $('fx-local-txt').innerHTML = `Nos últimos 20 dias úteis os fundos de ações tiveram <strong class="${LX.signClass(sum20)}">${sum20 >= 0 ? 'captação' : 'resgate'} líquido de R$ ${LX.num(Math.abs(sum20) / 1e9, 2)} bilhões</strong> (patrimônio total de ~R$ ${LX.num(aum / 1e9, 0)} bi). Resgates fortes obrigam gestores a vender ações; captação traz compras. Atualizado em ${j.generated.slice(0, 10).split('-').reverse().join('/')}.`;
+        }).catch(() => {
+            $('fx-local').innerHTML = '<div class="p-4 text-xs text-slate-600 dark:text-slate-300 leading-relaxed"><p class="font-bold">Dados da CVM ainda não coletados.</p><p class="mt-1">Este gráfico lê <code>data/captacao-acoes.json</code>, gerado diariamente pelo coletor automático no GitHub Actions.</p></div>';
+        });
+
+        /* ================= CARREGAR AÇÃO ================= */
+        function load(raw) {
+            const tk = (raw || '').toUpperCase().trim();
+            if (!/^[A-Z]{4}\d{1,2}$/.test(tk)) return;
+            current = CATALOG.find(c => c.ticker === tk) || { ticker: tk, name: 'Ação listada na B3', sector: 'B3' };
+            $('st-ticker').textContent = tk;
+            $('st-sector').textContent = current.sector.toUpperCase();
+            $('st-name').textContent = current.name;
+            $('chart-ticker').textContent = tk;
+            $('lnk-div').href = `laboratorio.html?tab=proventos&ticker=${tk}`;
+            $('lnk-trade').href = `laboratorio.html?tab=trade&ticker=${tk}`;
+            try { history.replaceState(null, '', '?ticker=' + tk + location.hash); } catch (_) { }
+            renderQuote(); renderCards(); renderOwners(); renderPills();
+            LX.tv('tv-chart', 'advanced-chart', { symbol: 'BMFBOVESPA:' + tk, interval: 'D', timezone: 'America/Sao_Paulo', style: '1', allow_symbol_change: false, hide_side_toolbar: true, autosize: true, studies: ['STD;Volume'] });
+            if (quotes[tk]) syncSpot(); else { buildLegs(); fetchQuote(tk); }
+        }
+        $('ticker-go').onclick = () => load($('ticker-input').value);
+        $('ticker-input').addEventListener('keydown', e => { if (e.key === 'Enter') load(e.target.value); });
+        setInterval(() => { if (current && LX.sessionStatus('b3').state === 'open') fetchQuote(current.ticker); }, 60000);
+
+        LX.getJSON('data/fundos-acoes.json').then(j => { cvm = j; if (current) { renderCards(); renderOwners(); } }).catch(() => { });
+        $('op-spot').value = '30.00';
+        renderSectors();
+        load(new URLSearchParams(location.search).get('ticker') || 'PETR4');
+    })();
+    </script>
+</body>
+</html>

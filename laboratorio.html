@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectnex Terminal — Laboratório Âncora: Enciclopédia do Mercado &amp; Simuladores</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="assets/tw-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link rel="stylesheet" href="assets/lectnex.css">
+</head>
+<body data-page="lab" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <!-- ======================================================================================== -->
+    <!-- CONTEÚDO PRINCIPAL DO LABORATÓRIO ÂNCORA (6 MÓDULOS DE ESTUDO E SIMULAÇÃO)               -->
+    <!-- ======================================================================================== -->
+    <main class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="pb-6 mb-8 border-b border-slate-300 dark:border-lect-borderDark">
+                <div class="flex items-center gap-2">
+                    <span class="px-2.5 py-0.5 bg-lect-navy text-white dark:bg-lect-teal font-mono text-[10px] font-bold uppercase tracking-wider border-l-2 border-lect-orange">
+                        LECTNEX RESEARCH &amp; EDUCATION ACADEMY
+                    </span>
+                    <span class="term-label">ENCICLOPÉDIA DO MERCADO · RENDA FIXA &amp; CDI · AÇÕES &amp; VALUATION · DIVIDENDOS &amp; JCP</span>
+                </div>
+                <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Laboratório Âncora — Centro de Estudos &amp; Simuladores do Mercado Financeiro</h1>
+                <p class="text-slate-600 dark:text-slate-400 mt-2 text-sm max-w-4xl leading-relaxed">
+                    Explore a base técnica completa sobre o <strong>Sistema Financeiro Nacional</strong>, <strong>Taxa Selic e CDI</strong>, <strong>Ações na B3</strong>, <strong>Dividendos e Juros sobre Capital Próprio (JCP)</strong> e utilize nossas <strong>4 ferramentas de simulação quantitativa</strong> (Compra/Venda vs. CDI, Bola de Neve de Proventos, Preço Teto Bazin/Graham e Comparador de Renda Fixa).
+                </p>
+            </div>
+
+            <!-- NAVEGAÇÃO DOS 6 MÓDULOS -->
+            <div class="bg-white dark:bg-lect-cardDark border border-slate-300 dark:border-lect-borderDark p-2 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-2 font-mono text-[11px]">
+                <button onclick="switchLabTab('sistema')" id="lab-tab-btn-sistema" class="bg-lect-navy text-white border-l-4 border-lect-orange px-3 py-3 text-left font-bold flex items-center justify-between">
+                    <span>01. Sistema Financeiro, Selic &amp; CDI</span>
+                    <i class="ph-bold ph-bank text-lect-orange text-sm shrink-0"></i>
+                </button>
+                <button onclick="switchLabTab('acoes')" id="lab-tab-btn-acoes" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
+                    <span>02. Guia Ações, Dividendos &amp; JCP</span>
+                    <i class="ph-bold ph-books text-lect-teal text-sm shrink-0"></i>
+                </button>
+                <button onclick="switchLabTab('trade')" id="lab-tab-btn-trade" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
+                    <span>03. Simulador Compra &amp; Venda Ações</span>
+                    <i class="ph-bold ph-arrows-left-right text-lect-orange text-sm shrink-0"></i>
+                </button>
+                <button onclick="switchLabTab('proventos')" id="lab-tab-btn-proventos" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
+                    <span>04. Simulador Dividendos &amp; JCP</span>
+                    <i class="ph-bold ph-coins text-lect-teal text-sm shrink-0"></i>
+                </button>
+                <button onclick="switchLabTab('valuation')" id="lab-tab-btn-valuation" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
+                    <span>05. Preço Teto: Bazin &amp; Graham</span>
+                    <i class="ph-bold ph-scales text-lect-orange text-sm shrink-0"></i>
+                </button>
+                <button onclick="switchLabTab('rf')" id="lab-tab-btn-rf" class="bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between">
+                    <span>06. Comparador Renda Fixa</span>
+                    <i class="ph-bold ph-calculator text-lect-teal text-sm shrink-0"></i>
+                </button>
+            </div>
+
+            <!-- ======================================================================================== -->
+            <!-- MÓDULO 01: SISTEMA FINANCEIRO, MACROECONOMIA, SELIC, CDI & RENDA FIXA COMPLETA           -->
+            <!-- ======================================================================================== -->
+            <div id="lab-panel-sistema" class="space-y-8">
+                <div class="term-panel p-6 border-t-4 border-t-lect-navy dark:border-t-lect-teal">
+                    <span class="term-label text-lect-teal font-bold">ESTRUTURA INSTITUCIONAL DO MERCADO BRASILEIRO</span>
+                    <h2 class="font-display text-2xl font-bold mt-1">1. Como Funciona o Sistema Financeiro Nacional (SFN)</h2>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                        Todo o dinheiro negociado em contas bancárias, títulos públicos, fundos e na bolsa de valores passa por uma hierarquia de órgãos normativos, supervisores e operadores que garantem segurança e liquidação:
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-5 font-mono text-xs">
+                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                            <strong class="text-lect-navy dark:text-white block text-sm">CMN &amp; BACEN</strong>
+                            <span class="text-[10px] text-lect-orange font-bold uppercase">Moeda e Juros</span>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-2">
+                                O <strong>CMN (Conselho Monetário Nacional)</strong> define a meta de inflação. O <strong>Banco Central (Bacen)</strong> executa a política monetária via <strong>Copom</strong>, definindo a Taxa Selic Meta a cada 45 dias.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                            <strong class="text-lect-navy dark:text-white block text-sm">CVM</strong>
+                            <span class="text-[10px] text-lect-teal font-bold uppercase">Xerife do Mercado de Capitais</span>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-2">
+                                A <strong>Comissão de Valores Mobiliários</strong> fiscaliza empresas abertas, fundos de investimento, corretoras, ofertas públicas (IPOs) e pune uso de informação privilegiada (<em>Insider Trading</em>).
+                            </p>
+                        </div>
+                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                            <strong class="text-lect-navy dark:text-white block text-sm">B3 (Brasil, Bolsa, Balcão)</strong>
+                            <span class="text-[10px] text-emerald-600 font-bold uppercase">Negociação, Custódia e BTC</span>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-2">
+                                Onde são negociadas ações, opções, contratos futuros (WIN, WDO, DI) e onde ficam custodiados os títulos privados e ações no seu CPF (antiga CBLC / Cetip).
+                            </p>
+                        </div>
+                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                            <strong class="text-lect-navy dark:text-white block text-sm">FGC (Fundo Garantidor)</strong>
+                            <span class="text-[10px] text-purple-600 font-bold uppercase">Proteção na Renda Fixa</span>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-2">
+                                Garante até <strong>R$ 250 mil por CPF e por instituição financeira</strong> (teto global de R$ 1 milhão a cada 4 anos) para CDB, LCI, LCA, LC e Poupança. (Não cobre Ações, Fundos ou Debêntures).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="term-panel p-6 border-t-4 border-t-lect-teal">
+                        <span class="term-label text-lect-teal font-bold">O BENCHMARK DE TUDO NO BRASIL</span>
+                        <h3 class="font-display text-xl font-bold mt-1">2. Taxa Selic vs. CDI: O Que São e Como Calculam seu Rendimento</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                            Para saber se uma ação ou qualquer investimento vale a pena, você precisa compará-lo ao <strong>CDI</strong>:
+                        </p>
+                        <div class="mt-4 space-y-3 font-mono text-xs bg-slate-50 dark:bg-lect-bgDark p-4 border border-slate-200 dark:border-lect-borderDark">
+                            <div>
+                                <strong class="text-lect-navy dark:text-white">● Taxa Selic Meta vs. Selic Over:</strong> A Selic Meta (ex: <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">13,75% a.a.</code>) é decidida na reunião do Copom. Já a Selic Over (<code class="px-1 bg-slate-100 dark:bg-lect-bgDark">13,65% a.a.</code>) é a taxa efetiva praticada diariamente entre os bancos com lastro em títulos públicos federais.
+                            </div>
+                            <div>
+                                <strong class="text-lect-teal">● O que é o CDI (Certificado de Depósito Interbancário):</strong> Por regra do Banco Central, nenhum banco pode terminar o dia com caixa negativo. Bancos que sobram caixa emprestam por 1 dia útil para bancos que precisam, usando o CDI. Por isso, a taxa do CDI é praticamente idêntica à Selic Over (<code class="px-1 bg-slate-100 dark:bg-lect-bgDark">13,65% a.a.</code>).
+                            </div>
+                            <div>
+                                <strong class="text-lect-orange">● Fórmula Exata do CDI Diário (Base 252 Dias Úteis):</strong>
+                                <span class="block mt-1 p-2 bg-white dark:bg-lect-cardDark border border-slate-200 dark:border-lect-borderDark">
+                                    Fator Diário = (1 + Taxa_CDI_Anual)^(1 / 252) - 1
+                                </span>
+                                Exemplo: Com CDI a <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">13,65% a.a.</code>, o dinheiro rende cerca de <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">0,0508% por dia útil</code> (ou <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">~1,07% ao mês</code> com 21 dias úteis).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="term-panel p-6 border-t-4 border-t-lect-orange">
+                        <span class="term-label text-lect-orange font-bold">TÍTULOS PÚBLICOS &amp; PRIVADOS</span>
+                        <h3 class="font-display text-xl font-bold mt-1">3. Mapa dos Instrumentos de Renda Fixa e Tributação</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                            Na Renda Fixa, você empresta dinheiro para o Governo (Tesouro Direto), para um Banco (CDB, LCI, LCA) ou para uma Empresa S.A. (Debêntures, CRI, CRA):
+                        </p>
+                        <div class="mt-4 space-y-2.5 font-mono text-xs">
+                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-lect-teal">
+                                <strong>Pós-Fixados (Tesouro Selic / CDB % CDI):</strong> Acompanham a subida ou descida da Selic/CDI diariamente. Quase não sofrem oscilação negativa na marcação a mercado; ideais para reserva de liquidez e margem de garantia na B3.
+                            </div>
+                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-lect-orange">
+                                <strong>Híbridos (Tesouro IPCA+ / NTN-B):</strong> Pagam a inflação oficial (<code class="px-1 bg-slate-100 dark:bg-lect-bgDark">IPCA</code>) + uma taxa de juro real prefixada (ex: <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">IPCA + 6,40% a.a.</code>). Protegem o poder de compra no longo prazo.
+                            </div>
+                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-emerald-500">
+                                <strong>Isentos de Imposto de Renda (LCI, LCA, CRI, CRA, Debêntures Incentivadas):</strong> Não pagam IR para pessoa física. Uma LCI que paga 88% do CDI equivale a um CDB de 103,5% do CDI após 2 anos (use o Módulo 06 para comparar!). LCI e LCA exigem prazo mínimo de carência definido pelo CMN.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================================================================================== -->
+            <!-- MÓDULO 02: TUDO SOBRE AÇÕES, VALUATION, DIVIDENDOS, JCP E OPERAÇÕES NA B3               -->
+            <!-- ======================================================================================== -->
+            <div id="lab-panel-acoes" class="hidden space-y-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <div class="lg:col-span-6 term-panel p-6 border-t-4 border-t-lect-teal">
+                        <span class="term-label text-lect-teal font-bold">ANATOMIA DAS AÇÕES NA B3</span>
+                        <h2 class="font-display text-xl font-bold mt-1">1. Códigos de Ações (3, 4, 11), Governança e Eventos</h2>
+                        <div class="mt-4 space-y-3 font-mono text-xs">
+                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                <strong class="text-lect-navy dark:text-white">● ON — Ordinárias (Final 3 · Ex: VALE3, WEGE3, BBAS3):</strong> Dão direito a voto em assembleia e <em>Tag Along</em> (direito de vender suas ações junto com o controlador caso a empresa seja vendida). No <strong>Novo Mercado</strong>, 100% das ações são ON.
+                            </div>
+                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                <strong class="text-lect-navy dark:text-white">● PN — Preferenciais (Final 4, 5, 6 · Ex: PETR4, ITUB4, CPLE6):</strong> Têm preferência no recebimento de dividendos e no reembolso de capital, geralmente sem direito a voto.
+                            </div>
+                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                <strong class="text-lect-navy dark:text-white">● Units (Final 11 · Ex: TAEE11, SANB11, BPAC11, KLBN11):</strong> Certificados de depósito que agrupam ações ON + PN no mesmo pacote.
+                            </div>
+                            <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                <strong class="text-lect-orange">● Desdobramento (Split) vs. Grupamento (Inplit):</strong> No <em>Split</em> (ex: 1 para 2), uma ação de R$ 80 vira 2 ações de R$ 40 para aumentar a liquidez (seu patrimônio não muda). No <em>Inplit</em>, várias ações são unidas em 1 ação de valor maior.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 term-panel p-6 border-t-4 border-t-lect-orange">
+                        <span class="term-label text-lect-orange font-bold">REMUNERAÇÃO DO ACIONISTA</span>
+                        <h2 class="font-display text-xl font-bold mt-1">2. Dividendos vs. Juros Sobre Capital Próprio (JCP)</h2>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mt-2">
+                            Como sócio da empresa, você recebe parte dos lucros gerados. Veja a diferença exata entre <strong>Dividendos</strong> e <strong>JCP</strong>:
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 font-mono text-xs">
+                            <div class="p-4 bg-emerald-500/10 border border-emerald-500/30">
+                                <span class="font-bold text-emerald-700 dark:text-emerald-400 uppercase block">DIVIDENDOS (isentos até R$ 50 mil/mês)</span>
+                                <ul class="mt-2 space-y-1.5 font-sans text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
+                                    <li>Saem do lucro líquido <strong>depois</strong> que a empresa já pagou IRPJ/CSLL (34%).</li>
+                                    <li><strong>Isentos de IR</strong> para pessoa física quando a mesma empresa paga até <strong>R$ 50.000 no mês</strong>.</li>
+                                    <li>Desde jan/2026 (Lei 15.270/2025): acima de R$ 50 mil/mês da mesma empresa, retenção de <strong>10% sobre o total</strong>.</li>
+                                    <li>Rendas anuais acima de R$ 600 mil entram na tributação mínima (IRPFM).</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 bg-amber-500/10 border border-amber-500/30">
+                                <span class="font-bold text-amber-700 dark:text-amber-400 uppercase block">JCP — Juros s/ Capital (17,5% IR)</span>
+                                <ul class="mt-2 space-y-1.5 font-sans text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
+                                    <li>Calculado sobre o Patrimônio Líquido (limitado à variação da TJLP).</li>
+                                    <li>Contabilizado como <strong>despesa</strong> antes do imposto da empresa.</li>
+                                    <li>Sofre <strong>retenção de 17,5% de IR na fonte</strong> desde jan/2026 (antes 15%): você recebe <strong>82,5% líquidos</strong>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark font-mono text-xs">
+                            <strong class="text-lect-navy dark:text-white block">Por que o preço da ação cai na "Data Ex"?</strong>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-400 mt-1">
+                                Quando uma ação que fechou a <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">R$ 30,00</code> na <strong>Data Com</strong> fica "Ex-Dividendos" de <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">R$ 1,50</code> no dia seguinte (<strong>Data Ex</strong>), o caixa saiu do patrimônio da empresa e foi para o bolso do acionista. Por isso, a B3 ajusta o preço de referência de abertura para <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">R$ 28,50</code> (<code class="px-1 bg-slate-100 dark:bg-lect-bgDark">30,00 - 1,50</code>).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-panel p-6">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-200 dark:border-lect-borderDark">
+                        <div>
+                            <span class="term-label text-lect-teal font-bold">ANÁLISE FUNDAMENTALISTA &amp; MÚLTIPLOS</span>
+                            <h3 class="font-display text-xl font-bold">3. Principais Indicadores Para Analisar uma Ação</h3>
+                        </div>
+                        <span class="font-mono text-[10px] px-2.5 py-1 bg-lect-navy text-white">GUIA DE VALUATION</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 font-mono text-xs">
+                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                            <span class="text-lect-teal font-bold text-sm block">P/L (Preço / Lucro)</span>
+                            <span class="text-[10px] text-slate-400">Fórmula: Cotação &divide; LPA</span>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-300 mt-2">
+                                Indica em quantos anos o lucro atual da empresa pagaria o preço da ação. Um <code class="px-1 bg-slate-100 dark:bg-lect-bgDark">P/L = 6x</code> significa que a empresa negocia a 6 vezes seu lucro anual.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                            <span class="text-lect-teal font-bold text-sm block">P/VP (Preço / Valor Patrim.)</span>
+                            <span class="text-[10px] text-slate-400">Fórmula: Cotação &divide; VPA</span>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-300 mt-2">
+                                Compara o valor de mercado com o patrimônio líquido contábil. `P/VP < 1,0` indica que a ação negocia com desconto em relação ao valor contábil dos seus ativos líquidos.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                            <span class="text-lect-orange font-bold text-sm block">ROE (Return on Equity)</span>
+                            <span class="text-[10px] text-slate-400">Lucro Líquido &divide; Patrimônio Líq.</span>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-300 mt-2">
+                                Mede a rentabilidade que a empresa gera sobre o capital dos acionistas. Empresas de alta qualidade costumam ter `ROE > 15% a 20% a.a.`, superando o CDI.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                            <span class="text-emerald-600 font-bold text-sm block">DY &amp; Payout</span>
+                            <span class="text-[10px] text-slate-400">Proventos 12m &divide; Cotação</span>
+                            <p class="font-sans text-xs text-slate-600 dark:text-slate-300 mt-2">
+                                O <strong>Dividend Yield (DY)</strong> mostra o retorno anual em proventos sobre o preço atual. O <strong>Payout</strong> é a porcentagem do lucro líquido que a empresa distribui.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================================================================================== -->
+            <!-- MÓDULO 03: SIMULADOR DE COMPRA E VENDA DE AÇÕES (LONG, SHORT BTC, IR & VS. CDI)          -->
+            <!-- ======================================================================================== -->
+            <div id="lab-panel-trade" class="hidden space-y-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                    <div class="lg:col-span-5 term-panel p-6 space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-200 dark:border-lect-borderDark pb-3">
+                            <div>
+                                <span class="term-label text-lect-teal font-bold">SIMULADOR PRÁTICO DE OPERAÇÃO B3</span>
+                                <h3 class="font-display text-lg font-bold">Compra e Venda de Ações vs. CDI</h3>
+                            </div>
+                            <span class="px-2 py-0.5 bg-lect-navy text-white font-mono text-[10px]">DARF / IR AUTOMÁTICO</span>
+                        </div>
+
+                        <div>
+                            <span class="term-label block mb-1.5">CARREGAR EXEMPLO RÁPIDO DA B3:</span>
+                            <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                                <button onclick="loadTradePreset('PETR4', 36.40, 39.80, 500, 45)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark hover:border-lect-teal border border-slate-300 dark:border-lect-borderDark font-bold">PETR4 (Swing Isento)</button>
+                                <button onclick="loadTradePreset('VALE3', 61.80, 68.50, 1000, 60)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark hover:border-lect-teal border border-slate-300 dark:border-lect-borderDark font-bold">VALE3 (Acima 20k)</button>
+                                <button onclick="loadTradePreset('WEGE3', 54.00, 62.10, 300, 90)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark hover:border-lect-teal border border-slate-300 dark:border-lect-borderDark font-bold">WEGE3 (90 Dias)</button>
+                                <button onclick="loadTradePreset('MGLU3', 10.20, 8.90, 2000, 30, 'short')" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark hover:border-lect-teal border border-slate-300 dark:border-lect-borderDark font-bold">MGLU3 (Venda Short)</button>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Ação (Ticker B3)</label>
+                                <input id="sim-tr-ticker" type="text" value="PETR4" oninput="runTradeSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold uppercase">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Direção da Operação</label>
+                                <select id="sim-tr-side" onchange="runTradeSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                                    <option value="long">Compra &rarr; Venda (Long)</option>
+                                    <option value="short">Venda &rarr; Recompra (Short BTC)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Modalidade Fiscal (IR)</label>
+                                <select id="sim-tr-mode" onchange="runTradeSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                                    <option value="swing">Swing Trade (Regra R$ 20k / 15%)</option>
+                                    <option value="daytrade">Day Trade (20% s/ lucro · IRRF 1%)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Quantidade de Ações</label>
+                                <input id="sim-tr-qty" type="number" step="100" min="1" value="500" oninput="runTradeSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Preço de Compra (R$)</label>
+                                <input id="sim-tr-buy" type="number" step="0.01" min="0.01" value="36.40" oninput="runTradeSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold text-emerald-600 dark:text-emerald-400">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Preço de Venda (R$)</label>
+                                <input id="sim-tr-sell" type="number" step="0.01" min="0.01" value="39.80" oninput="runTradeSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold text-lect-orange">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Prazo da Operação (Dias)</label>
+                                <input id="sim-tr-days" type="number" step="1" min="1" value="45" oninput="runTradeSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Taxa CDI Anual (% a.a.)</label>
+                                <input id="sim-tr-cdi" type="number" step="0.05" min="1" value="13.65" oninput="runTradeSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="term-panel p-6">
+                            <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-slate-200 dark:border-lect-borderDark">
+                                <div>
+                                    <span class="term-label">DEMONSTRATIVO DE RESULTADO DA OPERAÇÃO (DRE DO TRADE)</span>
+                                    <h4 class="font-display text-xl font-bold mt-0.5">Resultado Líquido vs. Custo de Oportunidade do CDI</h4>
+                                </div>
+                                <span id="sim-tr-ir-badge" class="px-2.5 py-1 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 font-mono text-xs font-bold">
+                                    ISENTO DE IR (VENDAS &le; R$ 20 MIL)
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 font-mono tabular-nums">
+                                <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                    <span class="term-label block">VOLUME DE COMPRA</span>
+                                    <strong id="sim-tr-out-buyvol" class="text-base font-bold block mt-1">R$ 18.200,00</strong>
+                                    <span id="sim-tr-out-sellvol" class="text-[10px] text-slate-500">Venda: R$ 19.900,00</span>
+                                </div>
+                                <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                    <span class="term-label block">LUCRO / PREJUÍZO BRUTO</span>
+                                    <strong id="sim-tr-out-gross" class="text-base font-bold text-emerald-600 block mt-1">+R$ 1.700,00</strong>
+                                    <span id="sim-tr-out-costs" class="text-[10px] text-slate-500">Taxas B3: R$ 11,43</span>
+                                </div>
+                                <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                    <span class="term-label block">IMPOSTO DE RENDA (DARF)</span>
+                                    <strong id="sim-tr-out-tax" class="text-base font-bold text-lect-orange block mt-1">R$ 0,00 (Isento)</strong>
+                                    <span id="sim-tr-out-taxrule" class="text-[10px] text-slate-500">Vendas &le; R$ 20.000/mês</span>
+                                </div>
+                                <div class="p-3.5 bg-lect-navy text-white border-l-4 border-l-lect-teal">
+                                    <span class="font-mono text-[10px] text-slate-300 uppercase block">LUCRO LÍQUIDO FINAL</span>
+                                    <strong id="sim-tr-out-net" class="text-base font-bold text-emerald-400 block mt-1">+R$ 1.688,57</strong>
+                                    <span id="sim-tr-out-netpct" class="text-[10px] text-lect-tealLight">Retorno Líq: +9,28%</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark font-mono text-xs space-y-3">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="font-bold text-lect-navy dark:text-white uppercase">Comparativo: Esta Operação na Ação vs. 100% do CDI no Mesmo Período</span>
+                                    <span id="sim-tr-alpha-badge" class="px-2 py-0.5 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold">SUPEROU O CDI</span>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                                    <div>
+                                        <div class="flex justify-between text-[11px] mb-1">
+                                            <span>Lucro Líquido na Ação:</span>
+                                            <strong id="sim-tr-bar-stock-lbl" class="text-emerald-600 dark:text-emerald-400">+R$ 1.688,57 (+9,28%)</strong>
+                                        </div>
+                                        <div class="w-full h-2.5 bg-slate-200 dark:bg-lect-borderDark">
+                                            <div id="sim-tr-bar-stock" class="bg-lect-teal h-full" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between text-[11px] mb-1">
+                                            <span>Mesmo Capital a 100% do CDI Líquido:</span>
+                                            <strong id="sim-tr-bar-cdi-lbl" class="text-lect-orange">+R$ 224,18 (+1,23%)</strong>
+                                        </div>
+                                        <div class="w-full h-2.5 bg-slate-200 dark:bg-lect-borderDark">
+                                            <div id="sim-tr-bar-cdi" class="bg-lect-orange h-full" style="width: 22%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p id="sim-tr-edu-summary" class="font-sans text-xs text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-200 dark:border-lect-borderDark">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ======================================================================================== -->
+            <!-- MÓDULO 04: SIMULADOR DE DIVIDENDOS, JCP & BOLA DE NEVE                                   -->
+            <!-- ======================================================================================== -->
+            <div id="lab-panel-proventos" class="hidden space-y-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                    <div class="lg:col-span-5 term-panel p-6 space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-200 dark:border-lect-borderDark pb-3">
+                            <div>
+                                <span class="term-label text-lect-orange font-bold">PROJEÇÃO DE RENDA PASSIVA &amp; BOLA DE NEVE</span>
+                                <h3 class="font-display text-lg font-bold">Simulador de Dividendos + JCP vs. CDI</h3>
+                            </div>
+                            <span class="px-2 py-0.5 bg-lect-teal text-white font-mono text-[10px]">REGRAS IR 2026</span>
+                        </div>
+
+                        <div>
+                            <span class="term-label block mb-1.5">PERFIL DE PAGADORA DE PROVENTOS (B3):</span>
+                            <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                                <button onclick="loadDivPreset('BBAS3', 27.64, 5.5, 5.0, 5.0)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark hover:border-lect-teal border border-slate-300 dark:border-lect-borderDark font-bold">BBAS3 (Forte em JCP)</button>
+                                <button onclick="loadDivPreset('TAEE11', 34.80, 7.5, 2.5, 4.0)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark hover:border-lect-teal border border-slate-300 dark:border-lect-borderDark font-bold">TAEE11 (Elétrica Dividendos)</button>
+                                <button onclick="loadDivPreset('PETR4', 36.42, 9.5, 3.0, 3.5)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark hover:border-lect-teal border border-slate-300 dark:border-lect-borderDark font-bold">PETR4 (Alto DY)</button>
+                                <button onclick="loadDivPreset('ITUB4', 34.90, 3.5, 4.8, 6.5)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark hover:border-lect-teal border border-slate-300 dark:border-lect-borderDark font-bold">ITUB4 (JCP + Crescimento)</button>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Ação / Carteira Ref.</label>
+                                <input id="sim-dv-ticker" type="text" value="BBAS3" oninput="runDividendSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold uppercase">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Preço Atual da Ação (R$)</label>
+                                <input id="sim-dv-price" type="number" step="0.10" min="1" value="27.64" oninput="runDividendSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Investimento Inicial (R$)</label>
+                                <input id="sim-dv-init" type="number" step="500" min="0" value="25000" oninput="runDividendSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Aporte Mensal (R$)</label>
+                                <input id="sim-dv-monthly" type="number" step="100" min="0" value="1000" oninput="runDividendSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Dividendos Isentos (% a.a.)</label>
+                                <input id="sim-dv-divpct" type="number" step="0.25" min="0" value="5.5" oninput="runDividendSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold text-emerald-600 dark:text-emerald-400">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">JCP Bruto (% a.a. · −17,5% IR)</label>
+                                <input id="sim-dv-jcppct" type="number" step="0.25" min="0" value="5.0" oninput="runDividendSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold text-lect-orange">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-2 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Valoriz. Ação (%a.a)</label>
+                                <input id="sim-dv-growth" type="number" step="0.5" value="5.0" oninput="runDividendSimulation()" class="w-full px-2.5 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Prazo (Anos)</label>
+                                <input id="sim-dv-years" type="number" step="1" min="1" max="35" value="10" oninput="runDividendSimulation()" class="w-full px-2.5 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">CDI Ref. (%a.a)</label>
+                                <input id="sim-dv-cdi" type="number" step="0.25" value="13.65" oninput="runDividendSimulation()" class="w-full px-2.5 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+
+                        <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark font-mono text-xs flex items-center justify-between">
+                            <label for="sim-dv-reinvest" class="cursor-pointer font-semibold">Reinvestir Dividendos + JCP Líquido ("Bola de Neve")</label>
+                            <input id="sim-dv-reinvest" type="checkbox" checked onchange="runDividendSimulation()" class="w-4 h-4 accent-lect-teal cursor-pointer">
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="term-panel p-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 font-mono tabular-nums">
+                                <div class="p-3.5 bg-lect-navy text-white border-l-4 border-l-lect-teal">
+                                    <span class="text-[10px] text-slate-300 uppercase block">PATRIMÔNIO FINAL EM AÇÕES</span>
+                                    <strong id="sim-dv-out-total" class="text-base font-bold text-emerald-400 block mt-1">R$ 0,00</strong>
+                                    <span id="sim-dv-out-shares" class="text-[10px] text-lect-tealLight">0 ações acumuladas</span>
+                                </div>
+                                <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                    <span class="term-label block">RENDA PASSIVA MENSAL (FIM)</span>
+                                    <strong id="sim-dv-out-monthlyinc" class="text-base font-bold text-lect-teal block mt-1">R$ 0,00 / mês</strong>
+                                    <span id="sim-dv-out-yoc" class="text-[10px] text-slate-500">Yield on Cost: 0,0%</span>
+                                </div>
+                                <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                    <span class="term-label block">DIVIDENDOS ISENTOS + JCP LÍQ</span>
+                                    <strong id="sim-dv-out-provnet" class="text-base font-bold text-emerald-600 block mt-1">R$ 0,00</strong>
+                                    <span id="sim-dv-out-jcptax" class="text-[10px] text-amber-600">IR 17,5% retido JCP: R$ 0</span>
+                                </div>
+                                <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                    <span class="term-label block">SE APLICADO EM 100% CDI LÍQ</span>
+                                    <strong id="sim-dv-out-cdi" class="text-base font-bold text-lect-orange block mt-1">R$ 0,00</strong>
+                                    <span id="sim-dv-out-invested" class="text-[10px] text-slate-500">Saiu do bolso: R$ 0</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs">
+                                <div>
+                                    <span class="term-label block">TOTAL DIVIDENDOS (ISENTO)</span>
+                                    <strong id="sim-dv-brk-div" class="text-emerald-600 dark:text-emerald-400 text-sm">R$ 0,00</strong>
+                                    <span id="sim-dv-brk-divir" class="block text-[10px] text-slate-500">Isento até R$ 50 mil/mês por empresa</span>
+                                </div>
+                                <div>
+                                    <span class="term-label block">TOTAL JCP BRUTO ANUNCIADO</span>
+                                    <strong id="sim-dv-brk-jcpgross" class="text-lect-navy dark:text-white text-sm">R$ 0,00</strong>
+                                    <span id="sim-dv-brk-jcpir" class="block text-[10px] text-rose-500">−17,5% IR Fonte: R$ 0,00</span>
+                                </div>
+                                <div>
+                                    <span class="term-label block">TOTAL JCP LÍQUIDO NA CONTA</span>
+                                    <strong id="sim-dv-brk-jcpnet" class="text-lect-orange text-sm">R$ 0,00</strong>
+                                    <span class="block text-[10px] text-slate-500">Creditado líquido (82,5%)</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 overflow-x-auto max-h-64 overflow-y-auto border border-slate-200 dark:border-lect-borderDark">
+                                <table class="w-full text-left font-mono tabular-nums text-xs">
+                                    <thead class="quote-head uppercase sticky top-0 border-b border-slate-200 dark:border-lect-borderDark">
+                                        <tr>
+                                            <th class="py-2 px-3">Ano</th>
+                                            <th class="py-2 px-3">Qtd Ações</th>
+                                            <th class="py-2 px-3">Dividendos (0% IR)</th>
+                                            <th class="py-2 px-3">JCP Líquido (−17,5%)</th>
+                                            <th class="py-2 px-3">Patrimônio Ações</th>
+                                            <th class="py-2 px-3 text-right">Comparativo CDI Líq.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="sim-dv-table-body" class="divide-y divide-slate-200 dark:divide-lect-borderDark">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ======================================================================================== -->
+            <!-- MÓDULO 05: CALCULADORA DE PREÇO TETO (MÉTODO DÉCIO BAZIN & BENJAMIN GRAHAM)              -->
+            <!-- ======================================================================================== -->
+            <div id="lab-panel-valuation" class="hidden space-y-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                    <div class="lg:col-span-5 term-panel p-6 space-y-4">
+                        <div class="border-b border-slate-200 dark:border-lect-borderDark pb-3">
+                            <span class="term-label text-lect-orange font-bold">MÉTODOS CLÁSSICOS DE VALUATION</span>
+                            <h3 class="font-display text-lg font-bold">Calculadora de Preço Teto (Décio Bazin) &amp; Valor Intrínseco (Benjamin Graham)</h3>
+                        </div>
+
+                        <div>
+                            <span class="term-label block mb-1.5">CARREGAR AÇÃO DA B3:</span>
+                            <div class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                                <button onclick="loadValPreset('BBAS3', 27.64, 2.85, 6.15, 31.40)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">BBAS3</button>
+                                <button onclick="loadValPreset('PETR4', 36.42, 4.40, 7.60, 30.85)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">PETR4</button>
+                                <button onclick="loadValPreset('TAEE11', 34.80, 3.45, 3.95, 20.20)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">TAEE11</button>
+                                <button onclick="loadValPreset('ITUB4', 34.90, 2.75, 4.15, 19.90)" class="px-2.5 py-1 bg-slate-100 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">ITUB4</button>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Ação (Ticker B3)</label>
+                                <input id="val-ticker" type="text" value="BBAS3" oninput="runValuationCalc()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold uppercase">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Cotação Atual (R$)</label>
+                                <input id="val-price" type="number" step="0.10" value="27.64" oninput="runValuationCalc()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Provento Anual / Ação (R$)</label>
+                                <input id="val-dpa" type="number" step="0.05" value="2.85" oninput="runValuationCalc()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold text-emerald-600">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Yield Mínimo Exigido (% Bazin)</label>
+                                <input id="val-min-dy" type="number" step="0.5" value="6.0" oninput="runValuationCalc()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">LPA (Lucro por Ação R$)</label>
+                                <input id="val-lpa" type="number" step="0.10" value="6.15" oninput="runValuationCalc()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">VPA (Valor Patrim./Ação R$)</label>
+                                <input id="val-vpa" type="number" step="0.10" value="31.40" oninput="runValuationCalc()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 term-panel p-6 space-y-5 font-mono text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 tabular-nums">
+                            <div class="p-5 bg-slate-50 dark:bg-lect-bgDark border-t-4 border-t-lect-teal">
+                                <span class="term-label block">1. PREÇO TETO DÉCIO BAZIN</span>
+                                <span class="text-[10px] text-slate-400">Fórmula: Provento por Ação &divide; Yield Mínimo</span>
+                                <strong id="val-out-bazin" class="text-2xl font-bold text-lect-teal block mt-2">R$ 47,50</strong>
+                                <span id="val-out-bazin-margin" class="text-xs font-bold text-emerald-600 block mt-1">Margem de Segurança: +71,8%</span>
+                            </div>
+
+                            <div class="p-5 bg-slate-50 dark:bg-lect-bgDark border-t-4 border-t-lect-orange">
+                                <span class="term-label block">2. VALOR INTRÍNSECO DE GRAHAM</span>
+                                <span class="text-[10px] text-slate-400">Fórmula: &radic;(22,5 &times; LPA &times; VPA)</span>
+                                <strong id="val-out-graham" class="text-2xl font-bold text-lect-orange block mt-2">R$ 65,91</strong>
+                                <span id="val-out-graham-margin" class="text-xs font-bold text-emerald-600 block mt-1">Potencial p/ Valor Justo: +138,4%</span>
+                            </div>
+                        </div>
+
+                        <div id="val-edu-box" class="p-4 bg-lect-navy text-white border-l-4 border-lect-teal font-sans text-xs leading-relaxed">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ======================================================================================== -->
+            <!-- MÓDULO 06: SIMULADOR COMPARATIVO DE RENDA FIXA (CDB vs. LCI/LCA ISENTA vs. IPCA+)        -->
+            <!-- ======================================================================================== -->
+            <div id="lab-panel-rf" class="hidden space-y-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-5 term-panel p-6 space-y-4">
+                        <div class="border-b border-slate-200 dark:border-lect-borderDark pb-3">
+                            <span class="term-label text-lect-teal font-bold">COMPARADOR DE EQUIVALÊNCIA TRIBUTÁRIA</span>
+                            <h3 class="font-display text-lg font-bold">CDB Tributado vs. LCI/LCA Isenta vs. Tesouro IPCA+</h3>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Valor Aplicado (R$)</label>
+                                <input id="sim-rf-cap" type="number" step="1000" value="50000" oninput="runRfSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Prazo (Meses)</label>
+                                <input id="sim-rf-months" type="number" step="1" min="1" max="120" value="24" oninput="runRfSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">Taxa CDI (% a.a.)</label>
+                                <input id="sim-rf-cdi" type="number" step="0.1" value="13.65" oninput="runRfSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">Inflação IPCA (% a.a.)</label>
+                                <input id="sim-rf-ipca" type="number" step="0.1" value="4.50" oninput="runRfSimulation()" class="w-full px-3 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-2 font-mono text-xs">
+                            <div>
+                                <label class="term-label block mb-1">CDB (% CDI)</label>
+                                <input id="sim-rf-cdb" type="number" step="1" value="110" oninput="runRfSimulation()" class="w-full px-2.5 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">LCI/LCA (%CDI)</label>
+                                <input id="sim-rf-lci" type="number" step="1" value="94" oninput="runRfSimulation()" class="w-full px-2.5 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold text-emerald-600">
+                            </div>
+                            <div>
+                                <label class="term-label block mb-1">IPCA + (% a.a.)</label>
+                                <input id="sim-rf-ntnb" type="number" step="0.1" value="6.40" oninput="runRfSimulation()" class="w-full px-2.5 py-2 bg-slate-50 dark:bg-lect-bgDark border border-slate-300 dark:border-lect-borderDark font-bold text-lect-orange">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 term-panel p-6 space-y-5 font-mono text-xs">
+                        <div class="flex items-center justify-between border-b border-slate-200 dark:border-lect-borderDark pb-3">
+                            <span class="font-display text-base font-bold">Resultado Líquido Comparado (Já Descontando o IR Regressivo)</span>
+                            <span id="sim-rf-ir-bracket" class="px-2 py-0.5 bg-lect-navy text-white text-[10px]">ALÍQUOTA IR: 15,0%</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 tabular-nums">
+                            <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                <span class="term-label block">1. CDB TRIBUTADO</span>
+                                <strong id="sim-rf-out-cdb" class="text-lg font-bold text-lect-navy dark:text-white block mt-1">R$ 0,00</strong>
+                                <span id="sim-rf-out-cdb-net" class="text-[11px] text-slate-500">Lucro Líq: R$ 0,00</span>
+                            </div>
+                            <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border-2 border-emerald-500/40">
+                                <span class="term-label block text-emerald-600 font-bold">2. LCI / LCA (ISENTA IR)</span>
+                                <strong id="sim-rf-out-lci" class="text-lg font-bold text-emerald-600 dark:text-emerald-400 block mt-1">R$ 0,00</strong>
+                                <span id="sim-rf-out-lci-net" class="text-[11px] text-slate-500">Lucro Líq: R$ 0,00</span>
+                            </div>
+                            <div class="p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                                <span class="term-label block">3. TESOURO IPCA+ (TRIBUT.)</span>
+                                <strong id="sim-rf-out-ntnb" class="text-lg font-bold text-lect-orange block mt-1">R$ 0,00</strong>
+                                <span id="sim-rf-out-ntnb-net" class="text-[11px] text-slate-500">Lucro Líq: R$ 0,00</span>
+                            </div>
+                        </div>
+
+                        <div id="sim-rf-verdict" class="p-4 bg-lect-navy text-white border-l-4 border-lect-orange font-sans text-xs leading-relaxed">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js"></script>
+
+    <script>
+
+        function fmtBRL(v) {
+            return 'R$ ' + Number(v || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        function switchLabTab(tabKey) {
+            const tabs = ['sistema', 'acoes', 'trade', 'proventos', 'valuation', 'rf'];
+            tabs.forEach(t => {
+                const panel = document.getElementById('lab-panel-' + t);
+                const btn = document.getElementById('lab-tab-btn-' + t);
+                if (panel) panel.classList.toggle('hidden', t !== tabKey);
+                if (btn) {
+                    btn.className = (t === tabKey)
+                        ? 'bg-lect-navy text-white border-l-4 border-lect-orange px-3 py-3 text-left font-bold flex items-center justify-between'
+                        : 'bg-slate-100 dark:bg-lect-bgDark text-slate-700 dark:text-slate-300 hover:border-lect-teal px-3 py-3 text-left font-bold flex items-center justify-between';
+                }
+            });
+            if (tabKey === 'trade') runTradeSimulation();
+            if (tabKey === 'proventos') runDividendSimulation();
+            if (tabKey === 'valuation') runValuationCalc();
+            if (tabKey === 'rf') runRfSimulation();
+        }
+
+        function loadTradePreset(ticker, buy, sell, qty, days, side = 'long') {
+            document.getElementById('sim-tr-ticker').value = ticker;
+            document.getElementById('sim-tr-buy').value = buy.toFixed(2);
+            document.getElementById('sim-tr-sell').value = sell.toFixed(2);
+            document.getElementById('sim-tr-qty').value = qty;
+            document.getElementById('sim-tr-days').value = days;
+            document.getElementById('sim-tr-side').value = side;
+            document.getElementById('sim-tr-mode').value = 'swing';
+            runTradeSimulation();
+        }
+
+        function runTradeSimulation() {
+            const ticker = (document.getElementById('sim-tr-ticker').value || 'AÇÃO').toUpperCase();
+            const side = document.getElementById('sim-tr-side').value;
+            const mode = document.getElementById('sim-tr-mode').value;
+            const qty = Math.max(1, parseFloat(document.getElementById('sim-tr-qty').value) || 100);
+            const buyPrice = Math.max(0.01, parseFloat(document.getElementById('sim-tr-buy').value) || 10);
+            const sellPrice = Math.max(0.01, parseFloat(document.getElementById('sim-tr-sell').value) || 11);
+            const days = Math.max(1, parseInt(document.getElementById('sim-tr-days').value, 10) || 30);
+            const cdiAnnual = Math.max(0.1, parseFloat(document.getElementById('sim-tr-cdi').value) || 13.65);
+
+            const buyVol = qty * buyPrice;
+            const sellVol = qty * sellPrice;
+            const b3Fees = (buyVol + sellVol) * 0.0003;
+            const btcFee = (side === 'short') ? (sellVol * (0.035 * (days / 365))) : 0;
+            const totalCosts = b3Fees + btcFee;
+
+            const grossResult = sellVol - buyVol;
+            const taxableProfit = grossResult - totalCosts;
+
+            let irTax = 0;
+            let irRuleText = '';
+            let irBadgeText = '';
+            let irBadgeClass = '';
+
+            if (taxableProfit <= 0) {
+                irTax = 0;
+                irRuleText = 'Prejuízo compensável no IR';
+                irBadgeText = 'SEM IR (PREJUÍZO COMPENSÁVEL)';
+                irBadgeClass = 'px-2.5 py-1 bg-slate-500/15 text-slate-600 dark:text-slate-300 border border-slate-500/30 font-mono text-xs font-bold';
+            } else if (mode === 'daytrade') {
+                irTax = taxableProfit * 0.20;
+                irRuleText = `20% s/ lucro · IRRF 1% (${fmtBRL(taxableProfit * 0.01)}) abate no DARF`;
+                irBadgeText = 'TRIBUTADO: DAY TRADE (20% IR)';
+                irBadgeClass = 'px-2.5 py-1 bg-amber-500/15 text-amber-600 border border-amber-500/30 font-mono text-xs font-bold';
+            } else if (side === 'long' && sellVol <= 20000) {
+                irTax = 0;
+                irRuleText = 'Vendas no mês ≤ R$ 20.000,00';
+                irBadgeText = 'ISENTO DE IR (VENDAS ≤ R$ 20 MIL)';
+                irBadgeClass = 'px-2.5 py-1 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 font-mono text-xs font-bold';
+            } else {
+                irTax = taxableProfit * 0.15;
+                irRuleText = side === 'short' ? 'Operação Short BTC (15% IR)' : 'Vendas > R$ 20.000/mês (15% IR)';
+                irBadgeText = 'TRIBUTADO: SWING TRADE (15% IR)';
+                irBadgeClass = 'px-2.5 py-1 bg-amber-500/15 text-amber-600 border border-amber-500/30 font-mono text-xs font-bold';
+            }
+
+            const netProfit = taxableProfit - irTax;
+            const capitalBase = side === 'long' ? buyVol : sellVol;
+            const netPct = (netProfit / capitalBase) * 100;
+
+            const businessDays = Math.max(1, Math.round(days * (252 / 365)));
+            const cdiGrossFactor = Math.pow(1 + (cdiAnnual / 100), businessDays / 252) - 1;
+            const rfIrRate = days <= 180 ? 0.225 : (days <= 360 ? 0.20 : (days <= 720 ? 0.175 : 0.15));
+            const cdiNetProfit = capitalBase * cdiGrossFactor * (1 - rfIrRate);
+            const cdiNetPct = (cdiNetProfit / capitalBase) * 100;
+
+            document.getElementById('sim-tr-ir-badge').textContent = irBadgeText;
+            document.getElementById('sim-tr-ir-badge').className = irBadgeClass;
+
+            document.getElementById('sim-tr-out-buyvol').textContent = fmtBRL(buyVol);
+            document.getElementById('sim-tr-out-sellvol').textContent = 'Venda: ' + fmtBRL(sellVol);
+
+            const grossEl = document.getElementById('sim-tr-out-gross');
+            grossEl.textContent = (grossResult >= 0 ? '+' : '') + fmtBRL(grossResult);
+            grossEl.className = 'text-base font-bold block mt-1 ' + (grossResult >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400');
+
+            document.getElementById('sim-tr-out-costs').textContent = `Custos B3${side === 'short' ? '+BTC' : ''}: ${fmtBRL(totalCosts)}`;
+            document.getElementById('sim-tr-out-tax').textContent = irTax === 0 ? 'R$ 0,00 (Isento)' : fmtBRL(irTax);
+            document.getElementById('sim-tr-out-taxrule').textContent = irRuleText;
+
+            const netEl = document.getElementById('sim-tr-out-net');
+            netEl.textContent = (netProfit >= 0 ? '+' : '') + fmtBRL(netProfit);
+            netEl.className = 'text-base font-bold block mt-1 ' + (netProfit >= 0 ? 'text-emerald-400' : 'text-rose-400');
+            document.getElementById('sim-tr-out-netpct').textContent = `Retorno Líq: ${netPct >= 0 ? '+' : ''}${netPct.toFixed(2).replace('.', ',')}%`;
+
+            const beatCdi = netProfit > cdiNetProfit;
+            const alphaBadge = document.getElementById('sim-tr-alpha-badge');
+            alphaBadge.textContent = beatCdi
+                ? `SUPEROU O CDI EM +${fmtBRL(netProfit - cdiNetProfit)}`
+                : `ABAIXO DO CDI (${fmtBRL(netProfit - cdiNetProfit)})`;
+            alphaBadge.className = beatCdi
+                ? 'px-2 py-0.5 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold'
+                : 'px-2 py-0.5 bg-rose-500/15 text-rose-600 dark:text-rose-400 font-bold';
+
+            document.getElementById('sim-tr-bar-stock-lbl').textContent = `${netProfit >= 0 ? '+' : ''}${fmtBRL(netProfit)} (${netPct.toFixed(2).replace('.', ',')}%)`;
+            document.getElementById('sim-tr-bar-cdi-lbl').textContent = `+${fmtBRL(cdiNetProfit)} (+${cdiNetPct.toFixed(2).replace('.', ',')}%)`;
+
+            const maxRef = Math.max(Math.abs(netProfit), cdiNetProfit, 1);
+            document.getElementById('sim-tr-bar-stock').style.width = Math.min(100, Math.max(8, (Math.max(0, netProfit) / maxRef) * 100)) + '%';
+            document.getElementById('sim-tr-bar-cdi').style.width = Math.min(100, Math.max(8, (cdiNetProfit / maxRef) * 100)) + '%';
+
+            document.getElementById('sim-tr-edu-summary').innerHTML =
+                `<strong>Leitura Educacional (${ticker}):</strong> Aplicando <strong>${fmtBRL(capitalBase)}</strong> por <strong>${days} dias corridos</strong> (${businessDays} dias úteis), a renda fixa a 100% do CDI (${cdiAnnual.toFixed(2).replace('.', ',')}% a.a., descontando ${(rfIrRate * 100).toFixed(1).replace('.', ',')}% de IR regressivo) renderia <strong>${fmtBRL(cdiNetProfit)} líquidos</strong>. Na operação com <strong>${qty} ações de ${ticker}</strong>, seu resultado líquido após taxas e IR foi de <strong>${fmtBRL(netProfit)}</strong>.`;
+        }
+
+        function loadDivPreset(ticker, price, divPct, jcpPct, growthPct) {
+            document.getElementById('sim-dv-ticker').value = ticker;
+            document.getElementById('sim-dv-price').value = price.toFixed(2);
+            document.getElementById('sim-dv-divpct').value = divPct;
+            document.getElementById('sim-dv-jcppct').value = jcpPct;
+            document.getElementById('sim-dv-growth').value = growthPct;
+            runDividendSimulation();
+        }
+
+        const JCP_IR = 0.175;          // IRRF sobre JCP desde 01/01/2026 (LC 224/2025)
+        const DIV_IR = 0.10;           // IRRF sobre dividendos acima do limite (Lei 15.270/2025)
+        const DIV_LIMIT_MONTH = 50000; // por empresa, por mês, pessoa física
+
+        function runDividendSimulation() {
+            let cumDivTax = 0;
+            const sharePrice0 = Math.max(0.5, parseFloat(document.getElementById('sim-dv-price').value) || 27.64);
+            const initCap = Math.max(0, parseFloat(document.getElementById('sim-dv-init').value) || 0);
+            const monthlyContrib = Math.max(0, parseFloat(document.getElementById('sim-dv-monthly').value) || 0);
+            const divYield = Math.max(0, parseFloat(document.getElementById('sim-dv-divpct').value) || 0) / 100;
+            const jcpGrossYield = Math.max(0, parseFloat(document.getElementById('sim-dv-jcppct').value) || 0) / 100;
+            const priceGrowth = (parseFloat(document.getElementById('sim-dv-growth').value) || 0) / 100;
+            const years = Math.min(40, Math.max(1, parseInt(document.getElementById('sim-dv-years').value, 10) || 10));
+            const cdiAnnual = Math.max(0, parseFloat(document.getElementById('sim-dv-cdi').value) || 13.65) / 100;
+            const reinvest = document.getElementById('sim-dv-reinvest').checked;
+
+            let currentSharePrice = sharePrice0;
+            let totalShares = initCap / currentSharePrice;
+            let cashPocket = initCap;
+            let cashNotReinvested = 0;
+
+            let cumDivExempt = 0;
+            let cumJcpGross = 0;
+            let cumJcpIr = 0;
+            let cumJcpNet = 0;
+
+            let cdiBalance = initCap;
+            const cdiNetRateAnnual = cdiAnnual * (1 - 0.15);
+
+            const rowsHtml = [];
+            let lastYearPassiveNet = 0;
+
+            for (let y = 1; y <= years; y++) {
+                const yearlyContribution = monthlyContrib * 12;
+                cashPocket += yearlyContribution;
+                totalShares += yearlyContribution / currentSharePrice;
+
+                const positionValBeforeGrowth = totalShares * currentSharePrice;
+                const yearDivGross = positionValBeforeGrowth * divYield;
+                // Lei 15.270/2025: >R$ 50 mil/mês da mesma empresa → IRRF 10% sobre o total do mês
+                const yearDivTax = (yearDivGross / 12) > DIV_LIMIT_MONTH ? yearDivGross * DIV_IR : 0;
+                const yearDiv = yearDivGross - yearDivTax;
+                cumDivTax += yearDivTax;
+                const yearJcpGross = positionValBeforeGrowth * jcpGrossYield;
+                const yearJcpTax = yearJcpGross * JCP_IR;
+                const yearJcpNet = yearJcpGross - yearJcpTax;
+                const yearTotalNetProventos = yearDiv + yearJcpNet;
+
+                cumDivExempt += yearDiv;
+                cumJcpGross += yearJcpGross;
+                cumJcpIr += yearJcpTax;
+                cumJcpNet += yearJcpNet;
+                lastYearPassiveNet = yearTotalNetProventos;
+
+                if (reinvest) {
+                    totalShares += yearTotalNetProventos / currentSharePrice;
+                } else {
+                    cashNotReinvested += yearTotalNetProventos;
+                }
+
+                currentSharePrice = currentSharePrice * (1 + priceGrowth);
+                const endYearStockEquity = (totalShares * currentSharePrice) + cashNotReinvested;
+                cdiBalance = (cdiBalance + yearlyContribution) * (1 + cdiNetRateAnnual);
+
+                rowsHtml.push(`
+                    <tr class="hover:bg-slate-50 dark:hover:bg-lect-bgDark/60">
+                        <td class="py-2 px-3 font-bold">Ano ${y}</td>
+                        <td class="py-2 px-3">${Math.floor(totalShares).toLocaleString('pt-BR')} un.</td>
+                        <td class="py-2 px-3 text-emerald-600 dark:text-emerald-400 font-semibold">${fmtBRL(yearDiv)}</td>
+                        <td class="py-2 px-3 text-lect-orange font-semibold">${fmtBRL(yearJcpNet)}</td>
+                        <td class="py-2 px-3 font-bold text-lect-navy dark:text-white">${fmtBRL(endYearStockEquity)}</td>
+                        <td class="py-2 px-3 text-right text-slate-500">${fmtBRL(cdiBalance)}</td>
+                    </tr>
+                `);
+            }
+
+            const finalEquity = (totalShares * currentSharePrice) + cashNotReinvested;
+            const totalNetProventos = cumDivExempt + cumJcpNet;
+            const yieldOnCost = cashPocket > 0 ? ((lastYearPassiveNet / cashPocket) * 100) : 0;
+
+            document.getElementById('sim-dv-out-total').textContent = fmtBRL(finalEquity);
+            document.getElementById('sim-dv-out-shares').textContent = `${Math.floor(totalShares).toLocaleString('pt-BR')} ações acumuladas`;
+            document.getElementById('sim-dv-out-monthlyinc').textContent = fmtBRL(lastYearPassiveNet / 12) + ' / mês';
+            document.getElementById('sim-dv-out-yoc').textContent = `Yield on Cost: ${yieldOnCost.toFixed(2).replace('.', ',')}% a.a.`;
+            document.getElementById('sim-dv-out-provnet').textContent = fmtBRL(totalNetProventos);
+            document.getElementById('sim-dv-out-jcptax').textContent = `IR 17,5% retido JCP: ${fmtBRL(cumJcpIr)}`;
+            document.getElementById('sim-dv-out-cdi').textContent = fmtBRL(cdiBalance);
+            document.getElementById('sim-dv-out-invested').textContent = `Saiu do bolso: ${fmtBRL(cashPocket)}`;
+
+            document.getElementById('sim-dv-brk-div').textContent = fmtBRL(cumDivExempt);
+            document.getElementById('sim-dv-brk-jcpgross').textContent = fmtBRL(cumJcpGross);
+            document.getElementById('sim-dv-brk-jcpir').textContent = `−17,5% IR Fonte: ${fmtBRL(cumJcpIr)}`;
+            document.getElementById('sim-dv-brk-jcpnet').textContent = fmtBRL(cumJcpNet);
+
+            document.getElementById('sim-dv-table-body').innerHTML = rowsHtml.join('');
+            document.getElementById('sim-dv-brk-divir').textContent = cumDivTax > 0
+                ? `IRRF 10% (acima de R$ 50 mil/mês): ${fmtBRL(cumDivTax)}`
+                : 'Isento: abaixo de R$ 50 mil/mês por empresa';
+        }
+
+        function loadValPreset(ticker, price, dpa, lpa, vpa) {
+            document.getElementById('val-ticker').value = ticker;
+            document.getElementById('val-price').value = price.toFixed(2);
+            document.getElementById('val-dpa').value = dpa.toFixed(2);
+            document.getElementById('val-lpa').value = lpa.toFixed(2);
+            document.getElementById('val-vpa').value = vpa.toFixed(2);
+            runValuationCalc();
+        }
+
+        function runValuationCalc() {
+            const ticker = (document.getElementById('val-ticker').value || 'AÇÃO').toUpperCase();
+            const price = Math.max(0.1, parseFloat(document.getElementById('val-price').value) || 27.64);
+            const dpa = Math.max(0, parseFloat(document.getElementById('val-dpa').value) || 2.85);
+            const minDy = Math.max(1, parseFloat(document.getElementById('val-min-dy').value) || 6.0) / 100;
+            const lpa = Math.max(0.01, parseFloat(document.getElementById('val-lpa').value) || 6.15);
+            const vpa = Math.max(0.01, parseFloat(document.getElementById('val-vpa').value) || 31.40);
+
+            const bazinCeiling = dpa / minDy;
+            const bazinMargin = ((bazinCeiling - price) / price) * 100;
+
+            const grahamIntrinsic = Math.sqrt(22.5 * lpa * vpa);
+            const grahamMargin = ((grahamIntrinsic - price) / price) * 100;
+
+            document.getElementById('val-out-bazin').textContent = fmtBRL(bazinCeiling);
+            const bmEl = document.getElementById('val-out-bazin-margin');
+            bmEl.textContent = `Margem de Segurança: ${bazinMargin >= 0 ? '+' : ''}${bazinMargin.toFixed(1).replace('.', ',')}%`;
+            bmEl.className = 'text-xs font-bold block mt-1 ' + (bazinMargin >= 0 ? 'text-emerald-600' : 'text-rose-500');
+
+            document.getElementById('val-out-graham').textContent = fmtBRL(grahamIntrinsic);
+            const gmEl = document.getElementById('val-out-graham-margin');
+            gmEl.textContent = `Margem p/ Valor Justo: ${grahamMargin >= 0 ? '+' : ''}${grahamMargin.toFixed(1).replace('.', ',')}%`;
+            gmEl.className = 'text-xs font-bold block mt-1 ' + (grahamMargin >= 0 ? 'text-emerald-600' : 'text-rose-500');
+
+            document.getElementById('val-edu-box').innerHTML =
+                `<strong>Interpretação para ${ticker} (Cotação R$ ${price.toFixed(2).replace('.', ',')}):</strong> Pelo método de <strong>Décio Bazin</strong>, para receber no mínimo <strong>${(minDy * 100).toFixed(1).replace('.', ',')}% a.a.</strong> em proventos, o preço máximo de compra seria <strong>${fmtBRL(bazinCeiling)}</strong>. Já pela fórmula clássica de <strong>Benjamin Graham</strong> (que aceita até P/L = 15x e P/VP = 1,5x), o valor intrínseco estimado é de <strong>${fmtBRL(grahamIntrinsic)}</strong>.`;
+        }
+
+        function runRfSimulation() {
+            const cap = Math.max(100, parseFloat(document.getElementById('sim-rf-cap').value) || 50000);
+            const months = Math.max(1, parseInt(document.getElementById('sim-rf-months').value, 10) || 24);
+            const cdi = Math.max(0.1, parseFloat(document.getElementById('sim-rf-cdi').value) || 13.65) / 100;
+            const ipca = Math.max(0, parseFloat(document.getElementById('sim-rf-ipca').value) || 4.50) / 100;
+            const cdbPct = Math.max(1, parseFloat(document.getElementById('sim-rf-cdb').value) || 110) / 100;
+            const lciPct = Math.max(1, parseFloat(document.getElementById('sim-rf-lci').value) || 94) / 100;
+            const spreadNtnb = Math.max(0, parseFloat(document.getElementById('sim-rf-ntnb').value) || 6.40) / 100;
+
+            const days = months * 30;
+            const irRate = days <= 180 ? 0.225 : (days <= 360 ? 0.20 : (days <= 720 ? 0.175 : 0.15));
+            document.getElementById('sim-rf-ir-bracket').textContent = `ALÍQUOTA IR (${days} DIAS): ${(irRate * 100).toFixed(1).replace('.', ',')}%`;
+
+            const years = months / 12;
+
+            const cdbAnnualRate = cdi * cdbPct;
+            const cdbGrossProfit = cap * (Math.pow(1 + cdbAnnualRate, years) - 1);
+            const cdbNetProfit = cdbGrossProfit * (1 - irRate);
+            const cdbTotal = cap + cdbNetProfit;
+
+            const lciAnnualRate = cdi * lciPct;
+            const lciNetProfit = cap * (Math.pow(1 + lciAnnualRate, years) - 1);
+            const lciTotal = cap + lciNetProfit;
+
+            const ntnbNominalRate = (1 + ipca) * (1 + spreadNtnb) - 1;
+            const ntnbGrossProfit = cap * (Math.pow(1 + ntnbNominalRate, years) - 1);
+            const ntnbNetProfit = ntnbGrossProfit * (1 - irRate);
+            const ntnbTotal = cap + ntnbNetProfit;
+
+            document.getElementById('sim-rf-out-cdb').textContent = fmtBRL(cdbTotal);
+            document.getElementById('sim-rf-out-cdb-net').textContent = 'Lucro Líq: +' + fmtBRL(cdbNetProfit);
+
+            document.getElementById('sim-rf-out-lci').textContent = fmtBRL(lciTotal);
+            document.getElementById('sim-rf-out-lci-net').textContent = 'Lucro Líq: +' + fmtBRL(lciNetProfit);
+
+            document.getElementById('sim-rf-out-ntnb').textContent = fmtBRL(ntnbTotal);
+            document.getElementById('sim-rf-out-ntnb-net').textContent = 'Lucro Líq: +' + fmtBRL(ntnbNetProfit);
+
+            const equivCdbForLci = (lciPct / (1 - irRate)) * 100;
+            document.getElementById('sim-rf-verdict').innerHTML =
+                `<strong>Equivalência Tributária no Prazo de ${months} Meses:</strong> Como a LCI/LCA de <strong>${(lciPct * 100).toFixed(0)}% do CDI</strong> é isenta de Imposto de Renda, ela equivale exatamente a um CDB tributado que pague <strong>${equivCdbForLci.toFixed(1).replace('.', ',')}% do CDI</strong> neste prazo.`;
+        }
+
+        // Suporte a parâmetros vindos do Scanner de Ações B3 (?tab=proventos&ticker=PETR4&price=36.42)
+        const urlParams = new URLSearchParams(window.location.search);
+        const paramTab = urlParams.get('tab');
+        const paramTicker = urlParams.get('ticker');
+        const paramPrice = parseFloat(urlParams.get('price'));
+
+        if (paramTicker && paramPrice) {
+            document.getElementById('sim-tr-ticker').value = paramTicker;
+            document.getElementById('sim-tr-buy').value = paramPrice.toFixed(2);
+            document.getElementById('sim-tr-sell').value = (paramPrice * 1.10).toFixed(2);
+            document.getElementById('sim-dv-ticker').value = paramTicker;
+            document.getElementById('sim-dv-price').value = paramPrice.toFixed(2);
+        }
+
+        runTradeSimulation();
+        runDividendSimulation();
+        runValuationCalc();
+        runRfSimulation();
+
+        // Preenche o CDI dos simuladores com a taxa oficial (BCB) assim que ela chegar
+        document.addEventListener('lx:macro', () => {
+            const cdi = LX.data.cdi.value.toFixed(2);
+            ['sim-tr-cdi', 'sim-dv-cdi', 'sim-rf-cdi'].forEach(id => { const el = document.getElementById(id); if (el && !el.dataset.touched) el.value = cdi; });
+            const ip = document.getElementById('sim-rf-ipca'); if (ip && !ip.dataset.touched) ip.value = LX.data.ipca12m.value.toFixed(2);
+            runTradeSimulation(); runDividendSimulation(); runRfSimulation();
+        });
+        ['sim-tr-cdi', 'sim-dv-cdi', 'sim-rf-cdi', 'sim-rf-ipca'].forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('input', () => el.dataset.touched = 1); });
+
+        if (paramTab && ['sistema', 'acoes', 'trade', 'proventos', 'valuation', 'rf'].includes(paramTab)) {
+            switchLabTab(paramTab);
+        }
+    </script>
+</body>
+</html>

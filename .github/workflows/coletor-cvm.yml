@@ -1,0 +1,41 @@
+# Atualiza os dados abertos da CVM usados no site (fundos donos de cada ação e captação dos fundos de ações).
+# Roda de terça a sábado às 07h17 (Brasília), logo depois da atualização diária do portal da CVM.
+name: Coletor CVM
+
+on:
+  schedule:
+    - cron: "17 10 * * 2-6"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coletor-cvm
+  cancel-in-progress: true
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Baixar e processar dados da CVM
+        run: python coletor/coletor_cvm.py --saida data
+
+      - name: Publicar dados atualizados
+        run: |
+          git config user.name "lectnex-bot"
+          git config user.email "lectnex-bot@users.noreply.github.com"
+          git add data/*.json
+          if git diff --cached --quiet; then
+            echo "Sem mudanças nos dados."
+          else
+            git commit -m "dados: atualização CVM $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectnex Terminal — Futuros B3: WIN, WDO e DI1 · Vencimentos, Risco e Curva de Juros</title>
+    <meta name="description" content="Mesa de futuros educacional: especificações de WIN, WDO e DI1, calendário de vencimentos calculado pelas regras B3, calculadora de risco por operação, PU do DI e preço justo do dólar futuro.">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="assets/tw-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link rel="stylesheet" href="assets/lectnex.css">
+</head>
+<body data-page="futuros" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+            <!-- TÍTULO -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+                <div>
+                    <span class="px-2.5 py-0.5 bg-lect-navy text-white dark:bg-lect-teal font-mono text-[10px] font-bold uppercase tracking-wider border-l-2 border-lect-orange">MESA DE DERIVATIVOS · B3</span>
+                    <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Futuros: Mini Índice, Mini Dólar &amp; DI</h1>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl">Tudo o que o trader de WIN e WDO precisa ter à mão: contrato vigente e rolagem, especificações, vencimentos calculados pelas regras da B3, gestão de risco por operação, PU do DI e preço justo do dólar futuro.</p>
+                </div>
+                <div class="font-mono text-[11px] flex flex-wrap gap-2">
+                    <a href="#risco" class="px-3 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-semibold">Calculadora de risco</a>
+                    <a href="#di" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Curva DI</a>
+                    <a href="#paridade" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Dólar justo</a>
+                </div>
+            </div>
+
+            <!-- CONTRATOS VIGENTES -->
+            <div id="active-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"></div>
+            <div id="roll-alert"></div>
+
+            <!-- ESPECIFICAÇÕES -->
+            <section id="specs" class="term-panel overflow-hidden scroll-mt-28">
+                <div class="panel-head">
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-list-checks text-lect-orange"></i>Especificações dos Contratos</span>
+                    <span class="font-mono text-[10px] text-slate-300">RESUMO — CONSULTE O REGULAMENTO B3</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left font-mono tabular-nums text-xs min-w-[860px]">
+                        <thead class="quote-head uppercase">
+                            <tr><th class="py-2.5 px-4">Item</th><th class="py-2.5 px-3">WIN — Mini Ibovespa</th><th class="py-2.5 px-3">WDO — Mini Dólar</th><th class="py-2.5 px-3">DI1 — Taxa DI</th></tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 dark:divide-lect-borderDark">
+                            <tr><td class="py-2.5 px-4 font-bold">Objeto</td><td class="px-3">Ibovespa futuro</td><td class="px-3">Taxa de câmbio R$/US$</td><td class="px-3">Taxa DI de 1 dia acumulada até o vencimento</td></tr>
+                            <tr><td class="py-2.5 px-4 font-bold">Tamanho</td><td class="px-3">Índice × R$ 0,20</td><td class="px-3">US$ 10.000</td><td class="px-3">PU de R$ 100.000 no vencimento</td></tr>
+                            <tr><td class="py-2.5 px-4 font-bold">Cotação</td><td class="px-3">Pontos do índice</td><td class="px-3">R$ por US$ 1.000</td><td class="px-3">Taxa % a.a., base 252 DU</td></tr>
+                            <tr><td class="py-2.5 px-4 font-bold">Variação mínima</td><td class="px-3">5 pontos</td><td class="px-3">0,5 ponto</td><td class="px-3">0,001 a 0,005 p.p. (varia com o prazo)</td></tr>
+                            <tr class="bg-emerald-500/5"><td class="py-2.5 px-4 font-bold">Valor do ponto</td><td class="px-3 text-emerald-600 dark:text-emerald-400 font-bold">R$ 0,20 · tick = R$ 1,00</td><td class="px-3 text-emerald-600 dark:text-emerald-400 font-bold">R$ 10,00 · tick = R$ 5,00</td><td class="px-3 text-emerald-600 dark:text-emerald-400 font-bold">≈ DV01 (ver calculadora)</td></tr>
+                            <tr><td class="py-2.5 px-4 font-bold">Meses de vencimento</td><td class="px-3">Pares: G, J, M, Q, V, Z</td><td class="px-3">Todos os meses</td><td class="px-3">Todos (liquidez em janeiro — F)</td></tr>
+                            <tr><td class="py-2.5 px-4 font-bold">Data de vencimento</td><td class="px-3">Quarta-feira mais próxima do dia 15 (sem pregão → dia útil seguinte)</td><td class="px-3">1º dia útil do mês de vencimento</td><td class="px-3">1º dia útil do mês de vencimento</td></tr>
+                            <tr><td class="py-2.5 px-4 font-bold">Liquidação</td><td class="px-3">Financeira, pelo Ibovespa de vencimento</td><td class="px-3">Financeira, pela PTAX do último dia útil do mês anterior</td><td class="px-3">Financeira, ajuste diário</td></tr>
+                            <tr><td class="py-2.5 px-4 font-bold">Contrato "cheio"</td><td class="px-3">IND (5× o WIN)</td><td class="px-3">DOL (5× o WDO)</td><td class="px-3">—</td></tr>
+                            <tr><td class="py-2.5 px-4 font-bold">Ajuste diário</td><td class="px-3" colspan="3">Todos têm ajuste diário: ganhos e perdas são creditados/debitados em D+1 com base no preço de ajuste. Posições day trade são zeradas no mesmo dia.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500 leading-relaxed">
+                    <strong>Horários (aprox., BRT):</strong> WIN e WDO das 9h00 às ~18h25; ações das 10h00 às ~17h55, com leilões de abertura e fechamento. A B3 ajusta a grade quando os EUA mudam o horário de verão (os EUA saem do horário de verão em 01/11/2026) — confirme sempre no site da B3.
+                </div>
+            </section>
+
+            <!-- CALENDÁRIO DE VENCIMENTOS -->
+            <section id="vencimentos" class="scroll-mt-28">
+                <div class="mb-4">
+                    <span class="term-label text-lect-orange font-bold">CALENDÁRIO CALCULADO · FERIADOS NACIONAIS E B3 INCLUSOS</span>
+                    <h2 class="font-display text-2xl font-bold">Vencimentos e Rolagem</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="exp-tables"></div>
+                <p class="text-[11px] text-slate-500 mt-3">Datas calculadas automaticamente pelas regras de cada contrato. Em caso de feriado municipal ou mudança extraordinária na grade, prevalece o calendário oficial da B3.</p>
+            </section>
+
+            <!-- CALCULADORA DE RISCO -->
+            <section id="risco" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start scroll-mt-28">
+                <div class="lg:col-span-5 term-panel p-6 space-y-4">
+                    <div class="border-b border-slate-200 dark:border-lect-borderDark pb-3">
+                        <span class="term-label text-lect-teal font-bold">GESTÃO DE RISCO · DAY TRADE</span>
+                        <h3 class="font-display text-lg font-bold">Calculadora de Operação e Tamanho de Posição</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1 font-mono text-xs" id="rk-asset">
+                        <button data-a="WIN" class="py-2 font-bold">WIN · R$ 0,20/pt</button>
+                        <button data-a="WDO" class="py-2 font-bold">WDO · R$ 10/pt</button>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                        <label><span class="term-label block mb-1">Capital da conta (R$)</span><input id="rk-cap" type="number" step="500" value="10000" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Risco máx. por trade (%)</span><input id="rk-riskpct" type="number" step="0.25" min="0.1" value="1" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Stop (pontos)</span><input id="rk-stop" type="number" step="5" min="0.5" value="150" class="lx-input text-rose-600"></label>
+                        <label><span class="term-label block mb-1">Alvo (pontos)</span><input id="rk-target" type="number" step="5" min="0.5" value="300" class="lx-input text-emerald-600"></label>
+                        <label><span class="term-label block mb-1">Contratos (0 = automático)</span><input id="rk-qty" type="number" step="1" min="0" value="0" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Custo por contrato ida+volta (R$)</span><input id="rk-cost" type="number" step="0.05" min="0" value="0.50" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Margem day trade/contrato (R$)</span><input id="rk-margin" type="number" step="10" min="0" value="150" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Taxa de acerto esperada (%)</span><input id="rk-winrate" type="number" step="1" min="1" max="99" value="45" class="lx-input"></label>
+                    </div>
+                    <p class="text-[11px] text-slate-500">Custos e margens variam por corretora — use os valores da sua. A margem de day trade é definida pela corretora; a margem para carregar posição (B3/CORE) é bem maior.</p>
+                </div>
+
+                <div class="lg:col-span-7 term-panel p-6 space-y-5">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono tabular-nums">
+                        <div class="p-3.5 bg-lect-navy text-white border-l-4 border-lect-teal"><span class="text-[10px] text-slate-300 uppercase block">Contratos</span><strong id="rk-o-qty" class="text-xl block mt-1">—</strong><span id="rk-o-qtynote" class="text-[10px] text-lect-tealLight"></span></div>
+                        <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Perda no stop</span><strong id="rk-o-loss" class="text-xl text-rose-600 block mt-1">—</strong><span id="rk-o-losspct" class="text-[10px] text-slate-500"></span></div>
+                        <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Ganho no alvo</span><strong id="rk-o-gain" class="text-xl text-emerald-600 block mt-1">—</strong><span id="rk-o-gainnet" class="text-[10px] text-slate-500"></span></div>
+                        <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Risco : Retorno</span><strong id="rk-o-rr" class="text-xl block mt-1">—</strong><span id="rk-o-be" class="text-[10px] text-slate-500"></span></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
+                        <div class="p-3 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Margem utilizada</span><strong id="rk-o-margin" class="block mt-1">—</strong></div>
+                        <div class="p-3 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Expectativa por trade</span><strong id="rk-o-ev" class="block mt-1">—</strong></div>
+                        <div class="p-3 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Stops seguidos até −10%</span><strong id="rk-o-streak" class="block mt-1">—</strong></div>
+                    </div>
+                    <div>
+                        <span class="term-label block mb-2">Curva de 100 trades simulados com esses parâmetros <span class="lx-demo">SIMULAÇÃO</span></span>
+                        <div id="rk-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-2"></div>
+                    </div>
+                    <div id="rk-edu" class="p-4 bg-lect-navy text-white border-l-4 border-lect-orange text-xs leading-relaxed"></div>
+                </div>
+            </section>
+
+            <!-- IR DAY TRADE -->
+            <section class="term-panel p-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <div class="lg:col-span-5">
+                        <span class="term-label text-lect-orange font-bold">TRIBUTAÇÃO</span>
+                        <h3 class="font-display text-lg font-bold">Imposto de renda em futuros (pessoa física)</h3>
+                        <ul class="mt-3 space-y-2 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            <li><strong>Day trade:</strong> 20% sobre o lucro líquido do mês. A corretora retém 1% na fonte ("dedo-duro") sobre o resultado positivo do dia, que é abatido do DARF.</li>
+                            <li><strong>Posição (swing):</strong> 15% sobre o lucro líquido do mês, com retenção de 0,005% sobre o valor das vendas. Não há isenção de R$ 20 mil para futuros.</li>
+                            <li><strong>Prejuízos:</strong> compensáveis com lucros futuros da mesma modalidade (day trade com day trade).</li>
+                            <li><strong>DARF:</strong> código 6015, vencimento no último dia útil do mês seguinte.</li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs content-start">
+                        <label><span class="term-label block mb-1">Lucro bruto day trade no mês (R$)</span><input id="ir-gross" type="number" step="100" value="3500" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Custos totais no mês (R$)</span><input id="ir-costs" type="number" step="10" value="120" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Prejuízo a compensar (R$)</span><input id="ir-loss" type="number" step="100" value="0" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">IRRF 1% já retido (R$)</span><input id="ir-irrf" type="number" step="1" value="" placeholder="auto: 1% do lucro" class="lx-input"></label>
+                        <div class="sm:col-span-2 p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark" id="ir-out"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CURVA DI -->
+            <section id="di" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start scroll-mt-28">
+                <div class="lg:col-span-5 term-panel p-6 space-y-4">
+                    <div class="border-b border-slate-200 dark:border-lect-borderDark pb-3">
+                        <span class="term-label text-lect-teal font-bold">ESTRUTURA A TERMO</span>
+                        <h3 class="font-display text-lg font-bold">Monte a curva DI do dia</h3>
+                        <p class="text-xs text-slate-500 mt-1">Digite as taxas de ajuste (b3.com.br → Taxas referenciais). Os valores iniciais são um <span class="lx-demo">EXEMPLO</span>.</p>
+                    </div>
+                    <div id="di-inputs" class="grid grid-cols-2 gap-3 font-mono text-xs"></div>
+                    <div class="pt-3 border-t border-slate-200 dark:border-lect-borderDark">
+                        <span class="term-label block mb-2">Conversor taxa ↔ PU</span>
+                        <div class="grid grid-cols-3 gap-2 font-mono text-xs">
+                            <label><span class="term-label block mb-1">Taxa (% a.a.)</span><input id="pu-rate" type="number" step="0.005" value="13.25" class="lx-input"></label>
+                            <label><span class="term-label block mb-1">DU</span><input id="pu-du" type="number" step="1" value="252" class="lx-input"></label>
+                            <label><span class="term-label block mb-1">PU</span><input id="pu-pu" type="number" step="0.01" class="lx-input"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 term-panel p-6 space-y-4">
+                    <div id="di-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-3"></div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left font-mono tabular-nums text-xs">
+                            <thead class="quote-head uppercase"><tr><th class="py-2 px-3">Vértice</th><th class="py-2 px-3">DU</th><th class="py-2 px-3">Taxa</th><th class="py-2 px-3">PU</th><th class="py-2 px-3">Termo vs. anterior</th><th class="py-2 px-3 text-right">DV01 / contrato</th></tr></thead>
+                            <tbody id="di-table" class="divide-y divide-slate-200 dark:divide-lect-borderDark"></tbody>
+                        </table>
+                    </div>
+                    <div id="di-edu" class="p-4 bg-lect-navy text-white border-l-4 border-lect-teal text-xs leading-relaxed"></div>
+                </div>
+            </section>
+
+            <!-- PARIDADE DO DÓLAR -->
+            <section id="paridade" class="term-panel p-6 scroll-mt-28">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <div class="lg:col-span-5">
+                        <span class="term-label text-lect-orange font-bold">PARIDADE COBERTA DE JUROS</span>
+                        <h3 class="font-display text-lg font-bold">Preço justo do dólar futuro</h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">O futuro embute o diferencial entre o juro em reais (DI) e o juro em dólar no Brasil (cupom cambial):</p>
+                        <div class="mt-3 p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark font-mono text-xs">F = Spot × (1 + DI)<sup>DU/252</sup> ÷ (1 + cupom × DC/360)</div>
+                        <p class="text-xs text-slate-500 mt-3">O spot é preenchido com a cotação ao vivo. Diferença entre o preço de tela do WDO e o justo indica prêmio/desconto — útil para entender por que o WDO "anda" diferente do dólar à vista perto do vencimento.</p>
+                    </div>
+                    <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-xs content-start">
+                        <label><span class="term-label block mb-1">Dólar spot (R$)</span><input id="par-spot" type="number" step="0.0001" value="5.40" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">DI até o venc. (% a.a.)</span><input id="par-di" type="number" step="0.01" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Cupom cambial (% a.a. linear)</span><input id="par-cupom" type="number" step="0.05" value="5.5" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Contrato</span><select id="par-contract" class="lx-input"></select></label>
+                        <label><span class="term-label block mb-1">DU</span><input id="par-du" type="number" class="lx-input" readonly></label>
+                        <label><span class="term-label block mb-1">DC</span><input id="par-dc" type="number" class="lx-input" readonly></label>
+                        <div class="col-span-2 sm:col-span-3 p-4 bg-lect-navy text-white border-l-4 border-lect-orange" id="par-out"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TREINADOR DE TAPE READING -->
+            <section id="tape" class="term-panel overflow-hidden scroll-mt-28">
+                <div class="panel-head">
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-game-controller text-lect-orange"></i>Treinador de Tape Reading</span>
+                    <span class="lx-demo">SIMULADOR DE TREINO · DADOS FICTÍCIOS</span>
+                </div>
+                <div class="p-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
+                    <div class="lg:col-span-4 space-y-3">
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">Cada rodada mostra ~12 segundos de um pregão simulado do WIN: book, times &amp; trades, preço e saldo de agressão (delta). Observe e responda o que estava acontecendo. Treino de leitura, não previsão de mercado.</p>
+                        <div class="grid grid-cols-3 gap-2 font-mono text-center">
+                            <div class="p-2 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Pontos</span><strong id="tp-score" class="text-lg">0</strong></div>
+                            <div class="p-2 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Acertos</span><strong id="tp-hits" class="text-lg">0/0</strong></div>
+                            <div class="p-2 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Sequência</span><strong id="tp-streak" class="text-lg">0</strong></div>
+                        </div>
+                        <div class="font-mono text-xs flex gap-2">
+                            <label class="flex-1"><span class="term-label block mb-1">Velocidade</span>
+                                <select id="tp-speed" class="lx-input"><option value="320">Iniciante</option><option value="200" selected>Normal</option><option value="120">Rápida</option></select></label>
+                            <button id="tp-start" class="self-end px-4 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-bold">Nova rodada</button>
+                        </div>
+                        <div id="tp-question" class="space-y-2"></div>
+                        <div id="tp-feedback" class="text-xs leading-relaxed"></div>
+                    </div>
+                    <div class="lg:col-span-3">
+                        <span class="term-label block mb-1">Book de ofertas</span>
+                        <div id="tp-book" class="font-mono tabular-nums text-xs border border-slate-200 dark:border-lect-borderDark"></div>
+                    </div>
+                    <div class="lg:col-span-5 space-y-3 min-w-0">
+                        <div>
+                            <div class="flex justify-between"><span class="term-label">Preço e delta acumulado</span><span id="tp-delta" class="font-mono text-xs font-bold">Δ 0</span></div>
+                            <div id="tp-chart" class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark p-1 mt-1"></div>
+                        </div>
+                        <div>
+                            <span class="term-label block mb-1">Times &amp; trades</span>
+                            <div id="tp-tape" class="font-mono tabular-nums text-[11px] h-44 overflow-hidden border border-slate-200 dark:border-lect-borderDark"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GLOSSÁRIO -->
+            <section class="term-panel p-6">
+                <span class="term-label text-lect-teal font-bold">GLOSSÁRIO DO TRADER DE FUTUROS</span>
+                <h3 class="font-display text-lg font-bold mb-4">Conceitos que aparecem todo dia na tela</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs" id="glossary"></div>
+            </section>
+        </div>
+    </main>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js"></script>
+    <script>
+    (function () {
+        const $ = id => document.getElementById(id);
+        const today = LX.todayBRT();
+        const win = LX.upcomingWIN(6), wdo = LX.upcomingWDO(8), opt = LX.upcomingOptions(8), di = LX.diJanuaryVertices(8);
+
+        /* ---------- Cartões de contratos vigentes ---------- */
+        const card = (tag, code, exp, du, extra, color) => `
+            <div class="term-panel p-4 border-t-2 ${color} font-mono tabular-nums">
+                <div class="flex items-center justify-between"><span class="term-label">${tag}</span><span class="text-[10px] px-1.5 py-0.5 ${du <= 2 ? 'bg-rose-500/15 text-rose-500' : du <= 5 ? 'bg-amber-500/15 text-amber-600' : 'bg-emerald-500/10 text-emerald-600'} font-bold">${du === 0 ? 'VENCE HOJE' : du + ' DU'}</span></div>
+                <strong class="text-2xl font-bold block mt-1">${code}</strong>
+                <span class="text-[11px] text-slate-500">Vencimento ${LX.weekday(exp)} ${LX.br(exp)}</span>
+                <span class="text-[11px] text-slate-500 block">${extra}</span>
+            </div>`;
+        const wdoLive = wdo[0].du <= 2 ? wdo[1] : wdo[0];
+        $('active-cards').innerHTML =
+            card('MINI ÍNDICE', win[0].code, win[0].expiry, win[0].du, `Próximo: ${win[1].code}`, 'border-t-lect-teal') +
+            card('MINI DÓLAR (LIQUIDEZ)', wdoLive.code, wdoLive.expiry, wdoLive.du, wdoLive !== wdo[0] ? `${wdo[0].code} vence ${LX.brShort(wdo[0].expiry)}` : `Próximo: ${wdo[1].code}`, 'border-t-lect-orange') +
+            card('DI MAIS CURTO (JAN)', di[0].code, di[0].expiry, di[0].du, `Próximo: ${di[1].code} (${di[1].du} DU)`, 'border-t-purple-500') +
+            card('OPÇÕES SOBRE AÇÕES', `Séries ${opt[0].callLetter} / ${opt[0].putLetter}`, opt[0].expiry, opt[0].du, `Calls ${opt[0].callLetter} · Puts ${opt[0].putLetter}`, 'border-t-emerald-500');
+
+        const alerts = [];
+        if (wdo[0].du <= 3) alerts.push(`<strong>${wdo[0].code}</strong> vence em ${LX.br(wdo[0].expiry)}. A liquidez já migrou (ou está migrando) para <strong>${wdo[1].code}</strong> — book mais fino e spreads maiores no contrato antigo.`);
+        if (win[0].du <= 5) alerts.push(`<strong>${win[0].code}</strong> vence em ${LX.br(win[0].expiry)}. Rolagem para <strong>${win[1].code}</strong> em andamento.`);
+        if (opt[0].du <= 5) alerts.push(`Vencimento de opções sobre ações em ${LX.br(opt[0].expiry)}: movimentos de "pinning" perto dos strikes com maior volume são comuns.`);
+        $('roll-alert').innerHTML = alerts.length ? `<div class="p-4 border-l-4 border-lect-orange bg-amber-500/10 text-sm space-y-1"><span class="term-label font-bold text-lect-orange block">ALERTA DE ROLAGEM / VENCIMENTO</span>${alerts.map(a => `<p>${a}</p>`).join('')}</div>` : '';
+
+        /* ---------- Tabelas de vencimento ---------- */
+        const tbl = (title, sub, rows, cols) => `
+            <div class="term-panel overflow-hidden">
+                <div class="panel-head"><span class="font-display text-sm font-bold uppercase">${title}</span><span class="font-mono text-[10px] text-slate-300">${sub}</span></div>
+                <table class="w-full text-left font-mono tabular-nums text-xs"><thead class="quote-head uppercase"><tr>${cols.map(c => `<th class="py-2 px-3">${c}</th>`).join('')}</tr></thead>
+                <tbody class="divide-y divide-slate-200 dark:divide-lect-borderDark">${rows.join('')}</tbody></table>
+            </div>`;
+        const row = (cells, hl) => `<tr class="${hl ? 'bg-lect-teal/10 font-bold' : ''}">${cells.map(c => `<td class="py-2 px-3">${c}</td>`).join('')}</tr>`;
+        $('exp-tables').innerHTML =
+            tbl('WIN', 'QUARTA ~ DIA 15', win.map((c, i) => row([c.code, `${LX.weekday(c.expiry)} ${LX.br(c.expiry)}`, c.du], i === 0)), ['Contrato', 'Vencimento', 'DU']) +
+            tbl('WDO', '1º DIA ÚTIL', wdo.map((c, i) => row([c.code, `${LX.weekday(c.expiry)} ${LX.br(c.expiry)}`, c.du], c === wdoLive)), ['Contrato', 'Vencimento', 'DU']) +
+            tbl('Opções', '3ª SEXTA', opt.map((c, i) => row([`${c.callLetter} / ${c.putLetter}`, `${LX.weekday(c.expiry)} ${LX.br(c.expiry)}`, c.du], i === 0)), ['Call / Put', 'Vencimento', 'DU']) +
+            tbl('DI1 (Jan)', 'BASE ANBIMA', di.map((c, i) => row([c.code, LX.br(c.expiry), c.du.toLocaleString('pt-BR')], i === 0)), ['Vértice', 'Vencimento', 'DU']);
+
+        /* ---------- Calculadora de risco ---------- */
+        const PV = { WIN: { pv: 0.2, tick: 5, stop: 150, target: 300, margin: 150, cost: 0.5 }, WDO: { pv: 10, tick: 0.5, stop: 5, target: 10, margin: 200, cost: 1.2 } };
+        let asset = 'WIN';
+        function setAsset(a) {
+            asset = a;
+            document.querySelectorAll('#rk-asset button').forEach(b => b.className = 'py-2 font-bold ' + (b.dataset.a === a ? 'bg-lect-navy text-white border-l-2 border-lect-orange' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300'));
+            const p = PV[a];
+            $('rk-stop').value = p.stop; $('rk-target').value = p.target; $('rk-margin').value = p.margin; $('rk-cost').value = p.cost;
+            $('rk-stop').step = $('rk-target').step = p.tick;
+            calcRisk();
+        }
+        document.querySelectorAll('#rk-asset button').forEach(b => b.onclick = () => setAsset(b.dataset.a));
+        const num = id => parseFloat($(id).value) || 0;
+        let seed = 7;
+        const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+        function calcRisk() {
+            const p = PV[asset], cap = num('rk-cap'), rp = num('rk-riskpct') / 100, stop = num('rk-stop'), tgt = num('rk-target'),
+                cost = num('rk-cost'), margin = num('rk-margin'), wr = Math.min(99, Math.max(1, num('rk-winrate'))) / 100;
+            const lossPer = stop * p.pv + cost, gainPer = tgt * p.pv - cost;
+            const auto = lossPer > 0 ? Math.floor(cap * rp / lossPer) : 0;
+            const qty = num('rk-qty') > 0 ? Math.floor(num('rk-qty')) : auto;
+            const loss = qty * lossPer, gain = qty * gainPer;
+            $('rk-o-qty').textContent = qty;
+            $('rk-o-qtynote').textContent = num('rk-qty') > 0 ? `sugerido: ${auto}` : 'pelo risco definido';
+            $('rk-o-loss').textContent = '−' + LX.brl(loss);
+            $('rk-o-losspct').textContent = `${LX.pct(cap ? loss / cap * 100 : 0)} do capital`;
+            $('rk-o-gain').textContent = '+' + LX.brl(gain);
+            $('rk-o-gainnet').textContent = `líquido de custos · IR 20% → ${LX.brl(gain * 0.8)}`;
+            const rr = lossPer > 0 ? gainPer / lossPer : 0;
+            $('rk-o-rr').textContent = '1 : ' + LX.num(rr, 2);
+            const be = 1 / (1 + rr) * 100;
+            $('rk-o-be').textContent = `acerto mínimo p/ empatar: ${LX.pct(be, 1)}`;
+            $('rk-o-margin').textContent = `${LX.brl(qty * margin)} (${LX.pct(cap ? qty * margin / cap * 100 : 0, 1)} do capital)`;
+            const ev = wr * gain - (1 - wr) * loss;
+            $('rk-o-ev').textContent = (ev >= 0 ? '+' : '') + LX.brl(ev);
+            $('rk-o-ev').className = 'block mt-1 ' + LX.signClass(ev);
+            $('rk-o-streak').textContent = loss > 0 ? Math.floor(cap * 0.10 / loss) + ' stops' : '—';
+
+            // Simulação de 5 trajetórias de 100 trades
+            const W = 640, H = 170, paths = [];
+            for (let k = 0; k < 5; k++) {
+                seed = 7 + k * 101; let eq = cap; const pts = [eq];
+                for (let i = 0; i < 100; i++) { eq += rnd() < wr ? gain : -loss; pts.push(eq); }
+                paths.push(pts);
+            }
+            const all = paths.flat(), mn = Math.min(...all), mx = Math.max(...all), span = (mx - mn) || 1;
+            const X = i => 40 + i * (W - 50) / 100, Y = v => 10 + (mx - v) / span * (H - 30);
+            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Simulação de curvas de capital">`;
+            s += `<line x1="40" x2="${W - 10}" y1="${Y(cap)}" y2="${Y(cap)}" stroke="#94A3B8" stroke-dasharray="3 3"/><text x="2" y="${Y(cap) + 3}" font-size="9" fill="#64748B">início</text>`;
+            s += `<text x="2" y="14" font-size="9" fill="#64748B">${LX.num(mx / 1000, 1)}k</text><text x="2" y="${H - 18}" font-size="9" fill="#64748B">${LX.num(mn / 1000, 1)}k</text>`;
+            paths.forEach((pts, k) => s += `<polyline fill="none" stroke="${['#009988', '#F39200', '#6366F1', '#0EA5E9', '#E11D48'][k]}" stroke-width="1.6" opacity=".85" points="${pts.map((v, i) => X(i) + ',' + Y(v)).join(' ')}"/>`);
+            s += `<text x="${W - 10}" y="${H - 4}" font-size="9" text-anchor="end" fill="#64748B">5 sequências aleatórias · acerto ${LX.pct(wr * 100, 0)} · mesmo stop/alvo</text></svg>`;
+            $('rk-chart').innerHTML = s;
+
+            $('rk-edu').innerHTML = `Com <strong>${qty} contrato(s) de ${asset}</strong>, cada ponto vale <strong>${LX.brl(qty * p.pv)}</strong>. O stop de ${LX.num(stop, asset === 'WDO' ? 1 : 0)} pts custa <strong>${LX.brl(loss)}</strong> e o alvo rende <strong>${LX.brl(gain)}</strong>. Com relação 1:${LX.num(rr, 2)}, você precisa acertar mais de <strong>${LX.pct(be, 1)}</strong> das operações para não perder dinheiro — ${wr * 100 > be ? `sua taxa de ${LX.pct(wr * 100, 0)} gera expectativa positiva de ${LX.brl(ev)} por trade.` : `com ${LX.pct(wr * 100, 0)} de acerto a expectativa é <strong>negativa</strong>: revise stop, alvo ou setup.`} Repare na simulação como a mesma estratégia produz caminhos muito diferentes: sequências de perdas são normais e o tamanho da posição precisa sobreviver a elas.`;
+        }
+        ['rk-cap', 'rk-riskpct', 'rk-stop', 'rk-target', 'rk-qty', 'rk-cost', 'rk-margin', 'rk-winrate'].forEach(id => $(id).addEventListener('input', calcRisk));
+        setAsset('WIN');
+
+        /* ---------- IR day trade ---------- */
+        function calcIR() {
+            const gross = num('ir-gross'), costs = num('ir-costs'), prev = num('ir-loss');
+            const net = gross - costs;
+            const base = Math.max(0, net - prev);
+            const irrf = $('ir-irrf').value === '' ? Math.max(0, net) * 0.01 : num('ir-irrf');
+            const tax = base * 0.20;
+            const darf = Math.max(0, tax - irrf);
+            const carry = net < 0 ? prev - net : Math.max(0, prev - net);
+            $('ir-out').innerHTML = `
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 tabular-nums">
+                    <div><span class="term-label block">Lucro líquido</span><strong class="${LX.signClass(net)}">${LX.brl(net)}</strong></div>
+                    <div><span class="term-label block">Base tributável</span><strong>${LX.brl(base)}</strong></div>
+                    <div><span class="term-label block">IR 20% − IRRF</span><strong>${LX.brl(tax)} − ${LX.brl(irrf)}</strong></div>
+                    <div><span class="term-label block">DARF 6015</span><strong class="text-lect-orange">${darf < 10 && darf > 0 ? LX.brl(darf) + ' (acumula*)' : LX.brl(darf)}</strong></div>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-2">${carry > 0 ? `Prejuízo a compensar no próximo mês: <strong>${LX.brl(carry)}</strong>. ` : ''}*DARF abaixo de R$ 10 não é pago: soma-se ao do mês seguinte. Estimativa didática — confira com seu contador.</p>`;
+        }
+        ['ir-gross', 'ir-costs', 'ir-loss', 'ir-irrf'].forEach(id => $(id).addEventListener('input', calcIR));
+        calcIR();
+
+        /* ---------- Curva DI ---------- */
+        const exampleRates = [13.30, 12.85, 12.95, 13.10, 13.25, 13.35, 13.40, 13.45]; // EXEMPLO DIDÁTICO
+        $('di-inputs').innerHTML = di.map((v, i) => `<label><span class="term-label block mb-1">${v.code} · ${v.du} DU</span><input data-di="${i}" type="number" step="0.005" value="${exampleRates[i]}" class="lx-input"></label>`).join('');
+        function calcDI() {
+            const rates = di.map((v, i) => parseFloat(document.querySelector(`[data-di="${i}"]`).value));
+            const selic = LX.data.selic.value;
+            let rowsHtml = '';
+            rates.forEach((r, i) => {
+                const pu = LX.diPU(r, di[i].du), dv01 = Math.abs(LX.diPU(r + 0.01, di[i].du) - pu);
+                let fwd = '—';
+                if (i > 0 && !isNaN(rates[i - 1])) {
+                    const f = (Math.pow(Math.pow(1 + r / 100, di[i].du / 252) / Math.pow(1 + rates[i - 1] / 100, di[i - 1].du / 252), 252 / (di[i].du - di[i - 1].du)) - 1) * 100;
+                    fwd = LX.pct(f, 2);
+                }
+                rowsHtml += `<tr><td class="py-2 px-3 font-bold">${di[i].code}</td><td class="px-3">${di[i].du.toLocaleString('pt-BR')}</td><td class="px-3">${LX.pct(r, 3)}</td><td class="px-3">${LX.num(pu, 2)}</td><td class="px-3">${fwd}</td><td class="px-3 text-right text-lect-teal font-bold">${LX.brl(dv01)}</td></tr>`;
+            });
+            $('di-table').innerHTML = rowsHtml;
+
+            const W = 640, H = 220, L = 46, R = 14, T = 16, B = 34;
+            const vals = rates.concat([selic]).filter(v => !isNaN(v)), mn = Math.min(...vals) - 0.3, mx = Math.max(...vals) + 0.3;
+            const maxDu = di[di.length - 1].du;
+            const X = du => L + du / maxDu * (W - L - R), Y = v => T + (mx - v) / (mx - mn) * (H - T - B);
+            let s = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Curva DI montada">`;
+            for (let k = 0; k <= 4; k++) { const v = mn + (mx - mn) * k / 4; s += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#94A3B8" stroke-opacity=".2"/><text x="4" y="${Y(v) + 3}" font-size="9" fill="#64748B">${LX.num(v, 2)}%</text>`; }
+            s += `<line x1="${L}" x2="${W - R}" y1="${Y(selic)}" y2="${Y(selic)}" stroke="#F39200" stroke-dasharray="5 4"/><text x="${W - R}" y="${Y(selic) - 4}" font-size="9" text-anchor="end" fill="#F39200">Selic ${LX.pct(selic)}</text>`;
+            const pts = rates.map((r, i) => [X(di[i].du), Y(r)]);
+            s += `<polyline fill="none" stroke="#009988" stroke-width="2.5" points="${pts.map(p => p.join(',')).join(' ')}"/>`;
+            pts.forEach((p, i) => s += `<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#009988"/><text x="${p[0]}" y="${p[1] - 8}" font-size="9" text-anchor="middle" fill="#009988" font-weight="700">${LX.num(rates[i], 2)}</text><text x="${p[0]}" y="${H - 14}" font-size="9" text-anchor="middle" fill="#64748B">${di[i].code.slice(3)}</text>`);
+            s += `</svg>`;
+            $('di-chart').innerHTML = s;
+
+            const cdi = LX.data.cdi.value, priced = cdi - rates[0];
+            const slope = rates[rates.length - 1] - rates[0];
+            $('di-edu').innerHTML = `<strong>Leitura:</strong> com a Selic em ${LX.pct(selic)} e o ${di[0].code} a ${LX.pct(rates[0], 3)}, a taxa está ${LX.num(Math.abs(priced) * 100, 0)} bps ${priced >= 0 ? 'abaixo' : 'acima'} do CDI atual (${LX.pct(cdi)}): o mercado ${priced > 0.05 ? `precifica <strong>cortes</strong> de juros até ${LX.br(di[0].expiry)}` : priced < -0.05 ? 'precifica <strong>alta</strong> de juros no curto prazo' : 'precifica <strong>estabilidade</strong> no curto prazo'}. Lembre que o DI1 embute também um pequeno prêmio de risco. A inclinação ${di[0].code.slice(3)}→${di[di.length - 1].code.slice(3)} é de <strong>${LX.num(slope * 100, 0)} bps</strong>${slope > 0.3 ? ' — curva positivamente inclinada, com prêmio de risco nos vértices longos.' : slope < -0.3 ? ' — curva invertida, típica de expectativa de cortes.' : ' — curva relativamente plana.'} O DV01 mostra quanto 1 contrato ganha/perde a cada 0,01 p.p.: vértices longos têm DV01 maior e, portanto, mais risco por contrato.`;
+        }
+        document.querySelectorAll('[data-di]').forEach(el => el.addEventListener('input', () => { calcDI(); syncParDI(); }));
+        document.addEventListener('lx:macro', calcDI);
+        calcDI();
+
+        // Conversor taxa ↔ PU
+        $('pu-rate').addEventListener('input', () => { $('pu-pu').value = LX.diPU(num('pu-rate'), num('pu-du')).toFixed(2); });
+        $('pu-du').addEventListener('input', () => { $('pu-pu').value = LX.diPU(num('pu-rate'), num('pu-du')).toFixed(2); });
+        $('pu-pu').addEventListener('input', () => { if (num('pu-pu') > 0) $('pu-rate').value = LX.diRateFromPU(num('pu-pu'), num('pu-du')).toFixed(3); });
+        $('pu-pu').value = LX.diPU(13.25, 252).toFixed(2);
+
+        /* ---------- Paridade ---------- */
+        $('par-contract').innerHTML = wdo.slice(0, 6).map((c, i) => `<option value="${i}" ${c === wdoLive ? 'selected' : ''}>${c.code} · ${LX.brShort(c.expiry)}</option>`).join('');
+        function syncParDI() { if (!$('par-di').dataset.touched) $('par-di').value = (LX.data.cdi.value).toFixed(2); }
+        $('par-di').addEventListener('input', () => $('par-di').dataset.touched = 1);
+        function calcPar() {
+            const c = wdo[+$('par-contract').value];
+            // Liquidação pela PTAX do último dia útil anterior ao vencimento
+            const du = c.du, dc = c.dc;
+            $('par-du').value = du; $('par-dc').value = dc;
+            const spot = num('par-spot'), dir = num('par-di') / 100, cup = num('par-cupom') / 100;
+            const fair = spot * Math.pow(1 + dir, du / 252) / (1 + cup * dc / 360);
+            const pts = fair * 1000, spotPts = spot * 1000;
+            $('par-out').innerHTML = `<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono tabular-nums">
+                <div><span class="text-[10px] text-slate-300 uppercase block">Justo ${c.code}</span><strong class="text-xl text-lect-orange">${LX.num(pts, 1)}</strong></div>
+                <div><span class="text-[10px] text-slate-300 uppercase block">Spot em pontos</span><strong class="text-xl">${LX.num(spotPts, 1)}</strong></div>
+                <div><span class="text-[10px] text-slate-300 uppercase block">Prêmio (forward points)</span><strong class="text-xl text-lect-tealLight">${LX.num(pts - spotPts, 1)} pts</strong><span class="block text-[10px] text-slate-300">= ${LX.brl((pts - spotPts) * 10)} por contrato</span></div>
+            </div>`;
+        }
+        ['par-spot', 'par-di', 'par-cupom', 'par-contract'].forEach(id => $(id).addEventListener('input', calcPar));
+        $('par-contract').addEventListener('change', calcPar);
+        document.addEventListener('lx:fx', () => { const u = LX.data.fx.USDBRL; if (u && !$('par-spot').dataset.touched) { $('par-spot').value = u.bid.toFixed(4); calcPar(); } });
+        $('par-spot').addEventListener('input', () => $('par-spot').dataset.touched = 1);
+        document.addEventListener('lx:macro', () => { syncParDI(); calcPar(); });
+        syncParDI(); calcPar();
+
+        /* ---------- Treinador de Tape Reading (simulação didática) ---------- */
+        (function tapeTrainer() {
+            const SC = {
+                buyAgg: { label: 'Agressão compradora', exp: 'Compradores consumiram as ofertas de venda nível após nível: delta subindo junto com o preço. Fluxo comprador no controle.' },
+                sellAgg: { label: 'Agressão vendedora', exp: 'Vendedores bateram nas ofertas de compra e o preço caiu nível a nível, com delta negativo acompanhando.' },
+                absSell: { label: 'Absorção vendedora (vendedor grande segurando)', exp: 'Muita agressão compradora (delta subindo forte), mas o preço não passou de um nível: a oferta de venda era renovada sem parar. Um vendedor grande estava absorvendo — sinal de possível topo local.' },
+                absBuy: { label: 'Absorção compradora (comprador grande segurando)', exp: 'Muita agressão vendedora, mas o preço parou num nível: a oferta de compra se renovava. Um comprador grande absorvia a venda — sinal de possível fundo local.' },
+                exhaust: { label: 'Exaustão compradora', exp: 'O preço subiu com agressão forte, mas os lotes foram diminuindo, o ritmo caiu e surgiram vendas no topo. A compra perdeu força.' }
+            };
+            const keys = Object.keys(SC);
+            let state = null, timer = null, score = 0, hits = 0, total = 0, streak = 0;
+
+            function newRound() {
+                clearInterval(timer);
+                const sc = keys[Math.floor(Math.random() * keys.length)];
+                const base = Math.round((128000 + Math.random() * 8000) / 5) * 5;
+                state = { sc, price: base, start: base, wall: base + (sc === 'absSell' ? 10 : sc === 'absBuy' ? -10 : 0), delta: 0, tick: 0, n: 48, trades: [], path: [{ p: base, d: 0 }], pressure: 0 };
+                $('tp-question').innerHTML = '<p class="text-xs text-slate-500">Observe o fluxo…</p>';
+                $('tp-feedback').innerHTML = '';
+                $('tp-tape').innerHTML = '';
+                timer = setInterval(step, +$('tp-speed').value);
+                step();
+            }
+            const rnd = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
+            function step() {
+                const s = state, t = s.tick / s.n;
+                let buyProb = 0.5, size = rnd(1, 15);
+                switch (s.sc) {
+                    case 'buyAgg': buyProb = 0.72; size = rnd(5, 40); break;
+                    case 'sellAgg': buyProb = 0.28; size = rnd(5, 40); break;
+                    case 'absSell': buyProb = 0.74; size = rnd(10, 60); break;
+                    case 'absBuy': buyProb = 0.26; size = rnd(10, 60); break;
+                    case 'exhaust': buyProb = t < 0.55 ? 0.75 : 0.42; size = t < 0.55 ? rnd(10, 45) : rnd(1, 8); break;
+                }
+                const isBuy = Math.random() < buyProb;
+                s.delta += isBuy ? size : -size;
+                s.pressure += isBuy ? size : -size;
+                const levelSize = 60;
+                if (s.sc === 'absSell' && isBuy && s.price >= s.wall) { s.pressure = Math.min(s.pressure, 0); }
+                else if (s.sc === 'absBuy' && !isBuy && s.price <= s.wall) { s.pressure = Math.max(s.pressure, 0); }
+                else if (s.pressure > levelSize) { s.price += 5; s.pressure = 0; }
+                else if (s.pressure < -levelSize) { s.price -= 5; s.pressure = 0; }
+                s.trades.unshift({ isBuy, size, price: s.price });
+                s.path.push({ p: s.price, d: s.delta });
+                s.tick++;
+                draw();
+                if (s.tick >= s.n) { clearInterval(timer); ask(); }
+            }
+            function draw() {
+                const s = state, dark = LX.isDark();
+                // book
+                const lv = [];
+                for (let i = 5; i >= 1; i--) {
+                    const p = s.price + i * 5, wall = (s.sc === 'absSell' && p === s.wall) || (s.sc === 'absSell' && i === 1 && s.price >= s.wall);
+                    lv.push(`<div class="flex justify-between px-2 py-1 ${i === 1 ? 'bg-rose-500/10' : ''}"><span class="text-rose-600 dark:text-rose-400">${LX.num(p, 0)}</span><span class="${wall ? 'font-bold text-rose-600' : ''}">${wall ? rnd(800, 1500) : rnd(40, 300)}</span></div>`);
+                }
+                lv.push(`<div class="px-2 py-1 text-center bg-slate-100 dark:bg-lect-bgDark font-bold">${LX.num(s.price, 0)}</div>`);
+                for (let i = 0; i < 5; i++) {
+                    const p = s.price - i * 5, wall = (s.sc === 'absBuy' && i === 0 && s.price <= s.wall);
+                    lv.push(`<div class="flex justify-between px-2 py-1 ${i === 0 ? 'bg-emerald-500/10' : ''}"><span class="text-emerald-600 dark:text-emerald-400">${LX.num(p, 0)}</span><span class="${wall ? 'font-bold text-emerald-600' : ''}">${wall ? rnd(800, 1500) : rnd(40, 300)}</span></div>`);
+                }
+                $('tp-book').innerHTML = `<div class="flex justify-between px-2 py-1 quote-head"><span>PREÇO</span><span>QTD</span></div>` + lv.join('');
+                // tape
+                $('tp-tape').innerHTML = s.trades.slice(0, 14).map(tr => `<div class="flex justify-between px-2 py-0.5 border-l-2 ${tr.isBuy ? 'border-emerald-500 bg-emerald-500/5' : 'border-rose-500 bg-rose-500/5'}"><span>${tr.isBuy ? 'COMPRA' : 'VENDA'}</span><span>${LX.num(tr.price, 0)}</span><strong>${tr.size}</strong></div>`).join('');
+                // chart
+                const W = 400, H = 120, ps = s.path.map(x => x.p), ds = s.path.map(x => x.d);
+                const pmin = Math.min(...ps) - 10, pmax = Math.max(...ps) + 10, dmax = Math.max(1, ...ds.map(Math.abs));
+                const X = i => 6 + i * (W - 12) / s.n, Yp = v => 8 + (pmax - v) / (pmax - pmin) * (H - 16), Yd = v => H / 2 - v / dmax * (H / 2 - 8);
+                $('tp-chart').innerHTML = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto" role="img" aria-label="Preço e delta">
+                    <line x1="0" x2="${W}" y1="${H / 2}" y2="${H / 2}" stroke="#94A3B8" stroke-opacity=".25"/>
+                    <polyline fill="none" stroke="#6366F1" stroke-width="1.4" stroke-dasharray="4 3" points="${ds.map((v, i) => X(i) + ',' + Yd(v)).join(' ')}"/>
+                    <polyline fill="none" stroke="#009988" stroke-width="2.2" points="${ps.map((v, i) => X(i) + ',' + Yp(v)).join(' ')}"/>
+                    <text x="6" y="${H - 3}" font-size="9" fill="#009988" font-family="JetBrains Mono">━ preço</text><text x="70" y="${H - 3}" font-size="9" fill="#6366F1" font-family="JetBrains Mono">┅ delta</text></svg>`;
+                const dEl = $('tp-delta'); dEl.textContent = 'Δ ' + (s.delta > 0 ? '+' : '') + s.delta + ' · ' + (s.price - s.start >= 0 ? '+' : '') + (s.price - s.start) + ' pts';
+                dEl.className = 'font-mono text-xs font-bold ' + LX.signClass(s.delta);
+            }
+            function ask() {
+                const opts = keys.slice().sort(() => Math.random() - 0.5);
+                $('tp-question').innerHTML = `<p class="text-sm font-bold">O que aconteceu nessa janela?</p>` + opts.map(k => `<button data-a="${k}" class="w-full text-left px-3 py-2 text-xs border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal">${SC[k].label}</button>`).join('');
+                document.querySelectorAll('#tp-question button').forEach(b => b.onclick = () => answer(b.dataset.a));
+            }
+            function answer(a) {
+                const ok = a === state.sc;
+                total++; if (ok) { hits++; streak++; score += 10 + 5 * (streak - 1); } else streak = 0;
+                document.querySelectorAll('#tp-question button').forEach(b => {
+                    b.disabled = true;
+                    if (b.dataset.a === state.sc) b.className += ' !border-emerald-500 bg-emerald-500/10 font-bold';
+                    else if (b.dataset.a === a) b.className += ' !border-rose-500 bg-rose-500/10';
+                });
+                $('tp-score').textContent = score; $('tp-hits').textContent = `${hits}/${total}`; $('tp-streak').textContent = streak;
+                $('tp-feedback').innerHTML = `<div class="p-3 border-l-4 ${ok ? 'border-emerald-500 bg-emerald-500/10' : 'border-rose-500 bg-rose-500/10'}"><strong>${ok ? 'Acertou.' : 'Não foi dessa vez.'}</strong> Era <strong>${SC[state.sc].label}</strong>. ${SC[state.sc].exp}</div>`;
+            }
+            $('tp-start').onclick = newRound;
+            newRound();
+        })();
+
+        /* ---------- Glossário ---------- */
+        const G = [
+            ['Ajuste diário', 'Diferença entre o preço de ajuste do dia e o anterior (ou o preço de entrada), creditada/debitada em D+1. Garante que perdas não se acumulem sem cobertura.'],
+            ['Rolagem', 'Troca da posição do contrato que vai vencer pelo seguinte. No WDO acontece nos últimos dias de cada mês; no WIN, na semana anterior ao vencimento.'],
+            ['PTAX', 'Taxa de câmbio média calculada pelo BCB em 4 janelas de consulta (10h, 11h, 12h, 13h). Liquida o WDO e serve de referência para contratos.'],
+            ['Leilão', 'Período em que ordens são acumuladas sem negócios e executadas a um preço único (abertura, fechamento ou após oscilação brusca).'],
+            ['VWAP', 'Preço médio ponderado pelo volume. Muito usado por institucionais como referência de execução e por traders como "preço justo" intradiário.'],
+            ['Book de ofertas', 'Fila de ordens limitadas de compra e venda. Mostra liquidez disponível, mas ordens podem ser canceladas a qualquer momento.'],
+            ['Times & Trades', 'Registro de cada negócio executado: hora, preço, quantidade e agressor. Base da leitura de fluxo.'],
+            ['Agressão', 'Ordem a mercado que consome o book: compradora quando executa na oferta de venda, vendedora quando executa na de compra.'],
+            ['Cupom cambial', 'Juro em dólar no mercado brasileiro. Junto com o DI, determina o diferencial entre o dólar futuro e o à vista.'],
+            ['DV01', 'Variação de valor de uma posição para cada 0,01 p.p. de mudança na taxa. Medida de risco padrão em juros.'],
+            ['Margem de garantia', 'Valor exigido para manter posição. Day trade usa margem reduzida definida pela corretora; posição carregada usa a margem B3.'],
+            ['Circuit breaker', 'Interrupção do pregão quando o Ibovespa cai 10%, 15% ou 20% no dia, para conter pânico.']
+        ];
+        $('glossary').innerHTML = G.map(([t, d]) => `<div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><strong class="font-mono text-lect-teal block">${t}</strong><p class="text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">${d}</p></div>`).join('');
+    })();
+    </script>
+</body>
+</html>
