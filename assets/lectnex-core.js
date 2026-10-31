@@ -27,7 +27,7 @@
     });
     LX.config.brapiToken = 'uRJnTfjL6jypdHfJ8b5LJd';
     // Newsletter (Buttondown): usuário da conta. Vazio = formulários de inscrição ficam escondidos.
-    LX.config.newsletter = '';
+    LX.config.newsletter = 'lectnex';
 
     /* ------------------------------------------------------------------ FORMATOS */
     const nf = (min, max) => new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });
