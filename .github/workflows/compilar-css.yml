@@ -33,6 +33,8 @@ jobs:
         run: |
           pip install fonttools==4.66.1
           python3 scripts/icones.py
+          # As fontes recortadas podem variar em bytes entre ambientes; só atualiza se a lista de ícones mudou
+          if git diff --quiet -- assets/icons/phosphor.css; then git checkout -- assets/icons/; fi
       - name: Publicar se mudou
         run: |
           git config user.name "lectnex-bot"
