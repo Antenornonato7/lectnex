@@ -27,12 +27,12 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031d">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031e">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031d">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031d">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031e">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031e">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -41,6 +41,11 @@
 
     <!-- FAIXA DE COTAÇÕES GLOBAIS (TradingView, dados reais) -->
     <div class="border-b border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark h-[46px] overflow-hidden" id="tv-tape"></div>
+    <!-- FAIXA B3 (Ibovespa + ações de maior peso) — data/cotacoes.json, atualizado pelo workflow "Cotações B3" -->
+    <div id="b3-tape" class="hidden border-b border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-[#08111F] h-10 overflow-hidden relative">
+        <div class="absolute left-0 inset-y-0 z-10 flex items-center gap-2 px-3 bg-slate-50 dark:bg-[#08111F] border-r border-slate-300 dark:border-lect-borderDark shadow-[6px_0_8px_-4px_rgba(0,0,0,.35)] font-mono text-[10px] font-bold text-lect-teal" title="Cotações com atraso de cerca de 30 minutos (brapi.dev)"><span class="px-1.5 py-0.5 bg-lect-teal text-white">B3</span><span id="b3-when" class="text-slate-500 font-normal hidden sm:inline"></span></div>
+        <div id="b3-track" class="lx-marquee flex items-center h-full font-mono text-xs whitespace-nowrap"></div>
+    </div>
 
     <!-- ================================================================================= -->
     <!-- 01 · MERCADO HOJE — INDICADORES OFICIAIS                                           -->
@@ -219,7 +224,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031d"></script>
+    <script src="assets/lectnex-core.js?v=20261031e"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -227,10 +232,11 @@
         /* ---------- Widgets TradingView ---------- */
         LX.tv('tv-tape', 'ticker-tape', {
             symbols: [
-                { proName: 'BMFBOVESPA:IBOV', title: 'Ibovespa' }, { proName: 'AMEX:EWZ', title: 'EWZ (Brasil)' },
+                // Só ativos que o widget gratuito mostra com variação (dados da B3 vêm da faixa própria abaixo)
                 { proName: 'FOREXCOM:SPXUSD', title: 'S&P 500' }, { proName: 'FOREXCOM:NSXUSD', title: 'Nasdaq 100' },
-                { proName: 'FX_IDC:USDBRL', title: 'USD/BRL' }, { proName: 'BMFBOVESPA:WDO1!', title: 'WDO' },
-                { proName: 'BMFBOVESPA:WIN1!', title: 'WIN' }, { proName: 'TVC:UKOIL', title: 'Brent' },
+                { proName: 'FOREXCOM:DJI', title: 'Dow Jones' }, { proName: 'AMEX:EWZ', title: 'EWZ (Brasil em NY)' },
+                { proName: 'FX_IDC:USDBRL', title: 'USD/BRL' }, { proName: 'TVC:DXY', title: 'DXY' },
+                { proName: 'TVC:US10Y', title: 'Treasury 10a' }, { proName: 'TVC:UKOIL', title: 'Brent' },
                 { proName: 'TVC:GOLD', title: 'Ouro' }, { proName: 'BITSTAMP:BTCUSD', title: 'Bitcoin' }
             ], showSymbolLogo: true, displayMode: 'adaptive'
         });
@@ -246,6 +252,22 @@
         });
         LX.tv('tv-news', 'timeline', { feedMode: 'all_symbols', displayMode: 'regular', width: '100%', height: '100%' });
         LX.tv('tv-calendar', 'events', { width: '100%', height: '100%', importanceFilter: '0,1', countryFilter: 'br,us,cn,eu' });
+
+        /* ---------- Faixa B3 ---------- */
+        fetch('data/cotacoes.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+            if (!d || !Array.isArray(d.itens) || !d.itens.length) return;
+            const chip = x => {
+                const p = x.var_pct, cls = p == null ? 'text-slate-500' : p > 0 ? 'text-emerald-600 dark:text-emerald-400' : p < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500';
+                const arrow = p == null ? '' : p > 0 ? '▲' : p < 0 ? '▼' : '■';
+                const price = x.ticker === 'IBOV' ? LX.num(x.preco, 0) : LX.num(x.preco, 2);
+                return `<a href="${x.ticker === 'IBOV' ? 'macro.html' : 'acoes.html?ticker=' + x.ticker}" class="inline-flex items-center gap-2 px-4 h-full border-r border-slate-200 dark:border-lect-borderDark hover:bg-white dark:hover:bg-lect-cardDark" title="${LX.esc(x.nome)}"><strong class="text-slate-800 dark:text-white">${LX.esc(x.ticker)}</strong><span class="text-slate-600 dark:text-slate-300 tabular-nums">${price}</span><span class="${cls} font-bold tabular-nums">${arrow} ${p == null ? '—' : LX.pct(Math.abs(p), 2)}</span></a>`;
+            };
+            const html = d.itens.map(chip).join('');
+            document.getElementById('b3-track').innerHTML = html + '<span aria-hidden="true" class="contents">' + html + '</span>';
+            const t = d.atualizado_em ? new Date(d.atualizado_em) : null;
+            if (t) document.getElementById('b3-when').textContent = (LX.iso(t) === LX.iso(LX.todayBRT()) ? 'hoje ' : LX.brShort(t) + ' ') + t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+            document.getElementById('b3-tape').classList.remove('hidden');
+        }).catch(() => { });
 
         /* ---------- Leitura do Dia (IA) ---------- */
         (function () {
@@ -282,7 +304,7 @@
                 if (semPregao) el('lt-resumo-lbl').textContent = 'O QUE ACONTECEU E O QUE ESPERAR';
                 el('lt-resumo').innerHTML = d.resumo.slice(0, 5).map(x => `<li class="flex gap-2.5 text-sm leading-relaxed"><span class="mt-2 w-1.5 h-1.5 bg-lect-orange shrink-0"></span><span class="text-slate-700 dark:text-slate-300">${esc(x)}</span></li>`).join('');
                 el('lt-destaques').innerHTML = (d.destaques || []).slice(0, 4).map(x => `<div class="flex gap-2"><span class="shrink-0 w-12 font-mono text-[11px] font-bold text-lect-teal pt-0.5">${esc(x.hora || '')}</span><div><strong class="block text-xs">${esc(x.evento || '')}</strong>${x.por_que ? `<span class="block text-[11px] text-slate-500 leading-snug">${esc(x.por_que)}</span>` : ''}</div></div>`).join('') || '<p class="text-xs text-slate-500">Sem evento relevante marcado.</p>';
-                el('lt-exterior').innerHTML = (d.exterior || []).length ? `<span class="term-label font-bold">EXTERIOR</span><div class="grid grid-cols-2 gap-1 mt-1.5 font-mono text-[11px]">${d.exterior.slice(0, 6).map(x => { const neg = /^[−-]/.test(x.variacao || ''); return `<div class="flex justify-between px-2 py-1 bg-slate-50 dark:bg-lect-bgDark"><span class="text-slate-500 truncate">${esc(x.ativo)}</span><strong class="${neg ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'}">${esc(x.variacao)}</strong></div>`; }).join('')}</div>` : '';
+                el('lt-exterior').innerHTML = (d.exterior || []).length ? `<span class="term-label font-bold">EXTERIOR</span><div class="space-y-1 mt-1.5 font-mono text-[11px]">${d.exterior.slice(0, 6).map(x => { const neg = /^[−-]/.test(x.variacao || ''); return `<div class="flex justify-between gap-3 px-2 py-1 bg-slate-50 dark:bg-lect-bgDark"><span class="text-slate-500">${esc(x.ativo)}</span><strong class="text-right ${neg ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'}">${esc(x.variacao)}</strong></div>`; }).join('')}</div>` : '';
                 const IMP = { alta: ['▲', 'text-emerald-600 dark:text-emerald-400 border-emerald-500/40'], baixa: ['▼', 'text-rose-600 dark:text-rose-400 border-rose-500/40'], neutro: ['●', 'text-slate-500 border-slate-400/40'] };
                 const news = (d.noticias || []).filter(n => n && n.titulo).slice(0, 6);
                 if (news.length) {

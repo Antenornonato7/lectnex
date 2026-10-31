@@ -1,10 +1,13 @@
 # Termômetro de velocidade: roda o Lighthouse (Google) nas 5 páginas do site no ar
-# depois de cada publicação no GitHub Pages e toda segunda-feira.
+# depois de cada publicação de código e toda segunda-feira.
 # As notas aparecem no resumo da execução (aba Actions → Lighthouse) com links para os relatórios completos.
 name: Lighthouse
 
 on:
-  deployment_status: {}
+  # mede depois de publicações de código (atualizações automáticas de dados não disparam)
+  push:
+    branches: [main]
+    paths-ignore: ['data/**', 'docs/**']
   schedule:
     - cron: "23 12 * * 1"
   workflow_dispatch: {}
@@ -14,15 +17,14 @@ permissions:
 
 jobs:
   auditar:
-    if: ${{ github.event_name != 'deployment_status' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages') }}
     # concorrência no nível do job: avisos de deploy que não são 'success' pulam o job e não cancelam a medição
     concurrency:
       group: lighthouse
       cancel-in-progress: false
     runs-on: ubuntu-latest
     steps:
-      - name: Esperar a CDN do GitHub Pages atualizar
-        run: sleep 60
+      - name: Esperar o deploy do GitHub Pages e a CDN atualizarem
+        run: sleep 150
       - uses: actions/setup-node@v4
         with:
           node-version: "20"

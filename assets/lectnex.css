@@ -48,3 +48,9 @@
 .lx-skel-block { width: 100%; height: 100%; min-height: 46px;
     background: linear-gradient(90deg, rgba(148,163,184,.06) 25%, rgba(148,163,184,.16) 50%, rgba(148,163,184,.06) 75%); background-size: 200% 100%; animation: lxShimmer 1.6s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .lx-skel, .lx-skel-block { animation: none; } }
+
+/* Faixa rolante (B3) — pausa ao passar o mouse; parada para quem prefere menos movimento */
+@keyframes lxMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.lx-marquee { width: max-content; animation: lxMarquee 60s linear infinite; }
+.lx-marquee:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .lx-marquee { animation: none; } #b3-tape { overflow-x: auto; } }

@@ -1,0 +1,32 @@
+# Atualiza data/cotacoes.json (Ibovespa + 10 ações de maior peso) a cada 30 min durante o pregão da B3.
+# ~11 consultas por rodada × ~18 rodadas/dia útil ≈ 4.500/mês (plano gratuito da brapi: 15.000/mês).
+name: Cotações B3
+
+on:
+  schedule:
+    - cron: "7,37 13-21 * * 1-5"   # 10h07–18h37 em Brasília (UTC−3)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cotacoes
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Buscar cotações
+        env:
+          BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN || 'uRJnTfjL6jypdHfJ8b5LJd' }}
+        run: python3 coletor/cotacoes.py
+      - name: Publicar se mudou
+        run: |
+          git config user.name "lectnex-bot"
+          git config user.email "lectnex-bot@users.noreply.github.com"
+          git add data/cotacoes.json
+          if git diff --cached --quiet; then echo "Sem mudança."; else git commit -m "cotacoes: $(date -u +%Y-%m-%dT%H:%M)" && (git push || (git pull --rebase && git push)); fi
