@@ -1,0 +1,79 @@
+{
+  "tipo": "sem-pregao",
+  "data": "2026-10-31",
+  "gerado_em": "2026-10-31T14:10:00-03:00",
+  "titulo": "Feriado longo após a pior semana do Ibovespa desde 2020",
+  "resumo": [
+    "Sábado e Finados (seg, 2/11) deixam a B3 fechada; o próximo pregão é na terça (3/11), com quase três dias de notícias acumuladas.",
+    "O Ibovespa fechou sexta em 167.921 pontos (−0,75%), com −18,12% na semana e −9,88% em outubro; o dólar à vista foi a R$ 5,446 (+1,09%), maior fechamento de 2026.",
+    "A incerteza fiscal pós-reeleição segue no centro: a definição do novo ministro da Fazenda ficou para a segunda metade de novembro, o que mantém prêmio de risco no DI e no WDO.",
+    "Lá fora, Wall Street teve o pior dia desde junho com a venda em tecnologia, e o petróleo voltou a subir com novos ataques a petroleiros em Hormuz.",
+    "Na terça, a abertura coincide com as eleições de meio de mandato nos EUA, o vencimento do WDO de novembro e o início da reunião do Copom."
+  ],
+  "destaques": [
+    { "hora": "seg", "evento": "ISM industrial dos EUA (out) — B3 fechada", "por_que": "Mexe em Treasuries e no dólar global enquanto o mercado local está parado." },
+    { "hora": "ter", "evento": "Vencimento do WDO de novembro (WDOX26)", "por_que": "Rolagem e formação da Ptax podem aumentar a volatilidade do mini dólar." },
+    { "hora": "ter", "evento": "Eleições de meio de mandato nos EUA", "por_que": "Composição do Congresso americano afeta Treasuries, DXY e apetite a risco." },
+    { "hora": "ter", "evento": "Copom inicia a 282ª reunião (decisão na quarta, após 18h)", "por_que": "Mercado precifica pausa nos cortes com a Selic em 13,75%; vértices curtos do DI reagem." }
+  ],
+  "exterior": [
+    { "ativo": "S&P 500 (sex)", "variacao": "−1,8%" },
+    { "ativo": "Nasdaq (sex)", "variacao": "−2,9%" },
+    { "ativo": "Dow Jones (sex)", "variacao": "−1,1%" },
+    { "ativo": "Treasury 10 anos (sex)", "variacao": "−6 bps (4,93%)" },
+    { "ativo": "Brent (sex)", "variacao": "+2,4% (US$ 113,43)" }
+  ],
+  "noticias": [
+    {
+      "titulo": "Dólar fecha a R$ 5,44 e tem a maior alta semanal desde 2008; Ibovespa cai 18% na semana",
+      "fonte": "Agência Brasil",
+      "hora": "sex 19h40",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/dolar-fecha-r-544-e-registra-maior-alta-semanal-desde-2008",
+      "por_que": "É o ponto de partida da terça: o dólar subiu 9,15% na semana e a bolsa acumula cinco quedas seguidas, com saída de capital estrangeiro e busca de proteção antes do feriado.",
+      "impacto": { "win": "baixa", "wdo": "alta", "di": "alta" }
+    },
+    {
+      "titulo": "Lula avalia ir ao Piauí convidar Rafael Fonteles para a Fazenda; definição da equipe fica para a 2ª metade de novembro",
+      "fonte": "BE News",
+      "hora": "sáb 09h47",
+      "url": "https://portalbenews.com.br/lula-avalia-ir-ao-piaui-para-convidar-rafael-fonteles-a-assumir-a-fazenda/",
+      "por_que": "Sem nome para a Fazenda e com a montagem do governo só após a COP31, o mercado segue sem âncora fiscal clara — fator que vem pesando sobre DI, dólar e bolsa.",
+      "impacto": { "win": "baixa", "wdo": "alta", "di": "alta" }
+    },
+    {
+      "titulo": "Copom deve manter a Selic na reunião de 3 e 4 de novembro em meio à incerteza fiscal",
+      "fonte": "Safra — O Especialista",
+      "hora": "sex",
+      "url": "https://oespecialista.safra.com.br/copom-manter-juros-incerteza-brasil/",
+      "por_que": "A aposta virou de corte para pausa após a eleição (opções de Copom já davam cerca de 61% para manutenção em 13,75%), o que sustenta as taxas curtas do DI.",
+      "impacto": { "win": "baixa", "di": "alta" }
+    },
+    {
+      "titulo": "Petroleiros atingem minas em Hormuz e Irã interrompe navios; Teerã vê carta dos EUA como 'passo positivo'",
+      "fonte": "Business Recorder (AFP) / Al Jazeera",
+      "hora": "sex 21h33",
+      "url": "https://www.brecorder.com/news/40446767/oman-rescues-25-from-burning-ship-iran-halts-tankers",
+      "por_que": "Petróleo acima de US$ 110 pressiona inflação e juros pelo mundo; um avanço no diálogo EUA–Irã, por outro lado, pode aliviar o barril até terça.",
+      "impacto": { "wdo": "alta", "di": "alta" }
+    },
+    {
+      "titulo": "Wall Street tem o pior dia desde junho com balanços fracos de Intel e Amazon; Nasdaq cai quase 3%",
+      "fonte": "TheStreet",
+      "hora": "sex 17h58",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026",
+      "por_que": "A aversão a risco global se soma ao quadro doméstico; como a B3 não opera na segunda, o fechamento de Nova York no dia 2 vai pesar na abertura de terça.",
+      "impacto": { "win": "baixa", "wdo": "alta" }
+    }
+  ],
+  "proximo_pregao": {
+    "data": "2026-11-03",
+    "o_que_esperar": "A abertura de terça vai refletir três dias de notícias de uma vez: o fechamento de Nova York na segunda, o petróleo após Hormuz e qualquer sinal sobre a Fazenda. No mesmo dia há eleições nos EUA, vencimento do WDO e início do Copom, o que tende a ampliar a volatilidade."
+  },
+  "fontes": [
+    { "titulo": "Agência Brasil — Dólar fecha a R$ 5,44 e registra maior alta semanal desde 2008", "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/dolar-fecha-r-544-e-registra-maior-alta-semanal-desde-2008" },
+    { "titulo": "Seu Dinheiro — Pausa nos cortes dos juros já lidera apostas para o próximo Copom", "url": "https://www.seudinheiro.com/2026/renda-fixa/o-mercado-mudou-de-ideia-sobre-a-selic-pausa-nos-cortes-ja-lidera-apostas-para-o-proximo-copom-mlim/" },
+    { "titulo": "Yahoo Finance — Nasdaq, Dow, S&P 500 clobbered as October closes with brutal sell-off", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html" },
+    { "titulo": "Al Jazeera — Iran war live: Araghchi says US attempt to open dialogue 'positive step'", "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon" },
+    { "titulo": "Newsquawk — Week In Focus 2nd-6th November 2026", "url": "https://www.newsquawk.com/headlines/week-in-focus-2nd-6th-november-2026-highlights-include-us-midterm-election-nfp-ism-pmis-rba-boe-and-ez-cpi-" }
+  ]
+}
