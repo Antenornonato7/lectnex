@@ -505,6 +505,7 @@
     // [categoria, código, título, descrição, link, ícone, palavras-chave]
     const CMD = [
         ['futuros', 'PLANO', 'Plano do Dia', 'Checklist pré-mercado, limite de perda e placar do dia', 'futuros.html#plano', 'ph-clipboard-text', 'plano dia checklist pre mercado disciplina limite perda placar rotina'],
+        ['futuros', 'DIARIO', 'Diário de Trades', 'Histórico mensal, curva de capital, calendário e DARF automático', 'futuros.html#diario', 'ph-notebook', 'diario journal historico operacoes darf imposto ir curva capital calendario exportar planilha'],
         ['futuros', 'VENC', 'Vencimentos', 'WIN, WDO, DI1 e opções pelas regras da B3', 'futuros.html#vencimentos', 'ph-calendar-check', 'vencimento rolagem contrato vigente serie'],
         ['futuros', 'SPEC', 'Especificações dos contratos', 'Valor do ponto, tick, horário, margem', 'futuros.html#specs', 'ph-list-checks', 'especificacao ponto tick lote horario'],
         ['futuros', 'RISCO', 'Calculadora de risco', 'Tamanho de posição, stop, alvo, expectativa', 'futuros.html#risco', 'ph-shield-check', 'gestao stop alvo posicao contratos day trade'],
@@ -537,7 +538,7 @@
         ['GGBR4', 'Gerdau', 'Siderurgia'], ['RADL3', 'Raia Drogasil', 'Farmácias'], ['EQTL3', 'Equatorial', 'Energia'], ['SBSP3', 'Sabesp', 'Saneamento'],
         ['VIVT3', 'Vivo', 'Telecom'], ['EMBR3', 'Embraer', 'Aeronáutica'], ['RAIL3', 'Rumo', 'Logística'], ['CMIG4', 'Cemig', 'Energia']
     ];
-    const SHORT = { PLANO: 'Plano do dia', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
+    const SHORT = { PLANO: 'Plano do dia', DIARIO: 'Diário', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
     LX.paletteItems = CMD.map(c => [c[0].toUpperCase(), c[2], c[4]]); // compatibilidade
     const CATS = [['tudo', 'Tudo'], ['acoes', 'Ações'], ['futuros', 'Futuros'], ['mercado', 'Mercado'], ['lab', 'Laboratório']];
     const norm = t => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');

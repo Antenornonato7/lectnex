@@ -27,12 +27,12 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://antenornonato7.github.io/lectnex/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031c">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031d">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031c">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031c">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031d">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031d">
 </head>
 <body data-page="futuros" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -51,6 +51,7 @@
                 </div>
                 <div class="font-mono text-[11px] flex flex-wrap gap-2">
                     <a href="#plano" class="px-3 py-2 bg-lect-orange text-white font-semibold"><i class="ph-bold ph-clipboard-text"></i> Plano do dia</a>
+                    <a href="#diario" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark font-semibold"><i class="ph-bold ph-notebook"></i> Diário</a>
                     <a href="#risco" class="px-3 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-semibold">Calculadora de risco</a>
                     <a href="#paridade" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Dólar justo</a>
                 </div>
@@ -103,6 +104,55 @@
                     </div>
                 </div>
                 <p class="px-5 py-2 border-t border-slate-200 dark:border-lect-borderDark text-[10px] text-slate-500 font-mono">Salvo só neste navegador. O plano zera sozinho a cada novo dia; os limites ficam lembrados.</p>
+            </section>
+
+            <!-- DIÁRIO DE TRADES -->
+            <section id="diario" class="term-panel overflow-hidden scroll-mt-28">
+                <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
+                    <div class="flex items-center gap-3">
+                        <i class="ph-duotone ph-notebook text-2xl text-lect-teal"></i>
+                        <div><span class="term-label font-bold text-lect-teal block">DIÁRIO DE TRADES · IR AUTOMÁTICO</span><strong class="font-display text-lg">Seu histórico, sua curva e o DARF do mês</strong></div>
+                    </div>
+                    <div class="flex items-center gap-1 font-mono text-xs">
+                        <button id="dv-prev" type="button" class="px-2 py-1.5 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal" aria-label="Mês anterior"><i class="ph-bold ph-caret-left"></i></button>
+                        <strong id="dv-month" class="px-3 py-1.5 min-w-[130px] text-center bg-slate-100 dark:bg-lect-bgDark capitalize">—</strong>
+                        <button id="dv-next" type="button" class="px-2 py-1.5 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal" aria-label="Próximo mês"><i class="ph-bold ph-caret-right"></i></button>
+                    </div>
+                </div>
+                <div id="dv-kpis" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-slate-200 dark:bg-lect-borderDark border-b border-slate-200 dark:border-lect-borderDark"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
+                    <div class="lg:col-span-7 p-5">
+                        <span class="term-label font-bold">CURVA DE CAPITAL DO MÊS</span>
+                        <div id="dv-curve" class="mt-2"></div>
+                        <span class="term-label font-bold block mt-5">CALENDÁRIO</span>
+                        <div id="dv-cal" class="mt-2"></div>
+                    </div>
+                    <div class="lg:col-span-5 p-5">
+                        <span class="term-label font-bold text-lect-orange flex items-center gap-1.5"><i class="ph-bold ph-receipt"></i>IMPOSTO DO MÊS (DAY TRADE)</span>
+                        <div id="dv-ir" class="mt-2"></div>
+                        <span class="term-label font-bold block mt-5">REGISTRAR OPERAÇÃO</span>
+                        <div class="grid grid-cols-2 gap-2 mt-2 font-mono text-xs">
+                            <label><span class="term-label block mb-1">Data</span><input id="dv-date" type="date" class="lx-input"></label>
+                            <label><span class="term-label block mb-1">Ativo</span><select id="dv-asset" class="lx-input"><option>WIN</option><option>WDO</option><option>Outro</option></select></label>
+                            <label><span class="term-label block mb-1">Resultado bruto (R$)</span><input id="dv-r" type="number" step="10" placeholder="ex.: 120 ou -80" class="lx-input"></label>
+                            <label><span class="term-label block mb-1">Custos (R$)</span><input id="dv-c" type="number" step="0.5" min="0" placeholder="0" class="lx-input"></label>
+                            <label class="col-span-2"><span class="term-label block mb-1">Setup / anotação</span><input id="dv-s" type="text" maxlength="80" placeholder="ex.: rompimento da máxima, entrei atrasado" class="lx-input"></label>
+                        </div>
+                        <button id="dv-add" type="button" class="w-full mt-2 py-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold"><i class="ph-bold ph-plus"></i> ADICIONAR AO DIÁRIO</button>
+                    </div>
+                </div>
+                <div class="border-t border-slate-200 dark:border-lect-borderDark">
+                    <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-2.5 bg-slate-50 dark:bg-lect-bgDark">
+                        <span class="term-label font-bold">OPERAÇÕES DO MÊS</span>
+                        <div class="flex flex-wrap gap-1 font-mono text-[11px]">
+                            <button id="dv-csv" type="button" class="px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal"><i class="ph-bold ph-file-csv"></i> Exportar planilha</button>
+                            <button id="dv-backup" type="button" class="px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal"><i class="ph-bold ph-download-simple"></i> Backup</button>
+                            <label class="px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal cursor-pointer"><i class="ph-bold ph-upload-simple"></i> Restaurar<input id="dv-restore" type="file" accept=".json,application/json" class="hidden"></label>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto max-h-80 thin-scroll"><table class="w-full min-w-[620px] font-mono text-xs"><thead class="quote-head uppercase sticky top-0"><tr><th class="text-left px-5 py-2">Data</th><th class="text-left px-2">Hora</th><th class="text-left px-2">Ativo</th><th class="text-right px-2">Bruto</th><th class="text-right px-2">Custos</th><th class="text-right px-2">Líquido</th><th class="text-left px-3">Setup</th><th class="px-2"></th></tr></thead><tbody id="dv-list" class="divide-y divide-slate-100 dark:divide-lect-borderDark"></tbody></table></div>
+                </div>
+                <p class="px-5 py-2 border-t border-slate-200 dark:border-lect-borderDark text-[10px] text-slate-500 font-mono">Salvo só neste navegador — faça backup de vez em quando. O cálculo do DARF é uma estimativa educacional; confira com a nota de corretagem e, se precisar, com um contador.</p>
             </section>
 
             <!-- CONTRATOS VIGENTES -->
@@ -263,7 +313,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031c"></script>
+    <script src="assets/lectnex-core.js?v=20261031d"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -315,7 +365,9 @@
             const st = Object.assign({ limits: { cap: 10000, maxloss: 2, goal: 0, maxtr: 5 }, days: {} }, pdLoad());
             const day = st.days[pdKey] = Object.assign({ checks: [], trades: [] }, st.days[pdKey] || {});
             // mantém só os últimos 90 dias
-            Object.keys(st.days).sort().slice(0, -90).forEach(k => delete st.days[k]);
+            // dias sem operações somem depois de 90 dias; dias com operações ficam (são o diário)
+            Object.keys(st.days).sort().slice(0, -90).forEach(k => { if (!(st.days[k].trades || []).length) delete st.days[k]; });
+            const tv = t => typeof t === 'number' ? t : (+t.r || 0) - (+t.c || 0); // resultado líquido de uma operação
             const CHECKS = [
                 ['agenda', 'Li a agenda de hoje e sei os horários que mexem no preço'],
                 ['contrato', 'Conferi o contrato vigente (e se há rolagem)'],
@@ -371,7 +423,7 @@
             $('pd-cap').value = L.cap; $('pd-maxloss').value = L.maxloss; $('pd-goal').value = L.goal || ''; $('pd-maxtr').value = L.maxtr;
             function renderScore() {
                 const cap = +L.cap || 0, lim = cap * (+L.maxloss || 0) / 100, goal = +L.goal || 0, maxtr = +L.maxtr || 0;
-                const pnl = day.trades.reduce((a, b) => a + b, 0), n = day.trades.length;
+                const pnl = day.trades.reduce((a, b) => a + tv(b), 0), n = day.trades.length;
                 $('pd-stopline').innerHTML = lim > 0 ? `Pare o dia se perder <strong class="text-rose-600 dark:text-rose-400">${LX.brl(lim)}</strong>${maxtr ? ` ou após <strong>${maxtr}</strong> operações` : ''}.${goal ? ` Meta: <strong class="text-emerald-600 dark:text-emerald-400">${LX.brl(goal)}</strong>.` : ''}` : 'Defina capital e perda máxima para ver seu limite.';
                 const lw = lim > 0 && pnl < 0 ? Math.min(50, -pnl / lim * 50) : 0, gw = pnl > 0 ? Math.min(50, pnl / (goal || lim || pnl) * 50) : 0;
                 $('pd-bar-loss').style.width = lw + '%'; $('pd-bar-gain').style.width = gw + '%';
@@ -380,16 +432,16 @@
                 const msg = hitLoss ? `<div class="p-2.5 bg-rose-600 text-white text-xs font-bold"><i class="ph-fill ph-hand-palm"></i> LIMITE DE PERDA ATINGIDO. Encerre o dia — amanhã tem pregão.</div>`
                     : hitTr ? `<div class="p-2.5 bg-lect-orange text-white text-xs font-bold"><i class="ph-fill ph-hand-palm"></i> Você chegou ao máximo de ${maxtr} operações. Pare por hoje.</div>`
                     : hitGoal ? `<div class="p-2.5 bg-emerald-600 text-white text-xs font-bold"><i class="ph-fill ph-trophy"></i> Meta batida! Proteja o resultado: pare ou reduza a mão.</div>` : '';
-                $('pd-score').innerHTML = `<div class="flex items-baseline justify-between font-mono"><span class="text-[11px] text-slate-500">${n} operaç${n === 1 ? 'ão' : 'ões'}${n ? ` · ${day.trades.filter(x => x > 0).length} ganhos` : ''}</span><strong class="text-xl ${LX.signClass(pnl)}">${pnl >= 0 ? '+' : '−'}${LX.brl(Math.abs(pnl))}</strong></div>` + (msg ? `<div class="mt-2">${msg}</div>` : '');
+                $('pd-score').innerHTML = `<div class="flex items-baseline justify-between font-mono"><span class="text-[11px] text-slate-500">${n} operaç${n === 1 ? 'ão' : 'ões'}${n ? ` · ${day.trades.filter(x => tv(x) > 0).length} ganhos` : ''}</span><strong class="text-xl ${LX.signClass(pnl)}">${pnl >= 0 ? '+' : '−'}${LX.brl(Math.abs(pnl))}</strong></div>` + (msg ? `<div class="mt-2">${msg}</div>` : '');
                 $('pd-undo').classList.toggle('invisible', !n);
             }
             ['pd-cap', 'pd-maxloss', 'pd-goal', 'pd-maxtr'].forEach(id => $(id).addEventListener('input', () => {
                 L.cap = +$('pd-cap').value || 0; L.maxloss = +$('pd-maxloss').value || 0; L.goal = +$('pd-goal').value || 0; L.maxtr = +$('pd-maxtr').value || 0;
                 pdSave(st); renderScore();
             }));
-            const add = () => { const v = parseFloat($('pd-res').value); if (!isFinite(v) || v === 0) return; day.trades.push(v); $('pd-res').value = ''; pdSave(st); renderScore(); };
+            const add = () => { const v = parseFloat($('pd-res').value); if (!isFinite(v) || v === 0) return; const h = LX.nowBRT(); day.trades.push({ r: v, c: 0, a: 'WIN', t: String(h.getHours()).padStart(2, '0') + ':' + String(h.getMinutes()).padStart(2, '0') }); $('pd-res').value = ''; pdSave(st); renderScore(); dvRender(); };
             $('pd-add').onclick = add; $('pd-res').addEventListener('keydown', e => { if (e.key === 'Enter') add(); });
-            $('pd-undo').onclick = () => { day.trades.pop(); pdSave(st); renderScore(); };
+            $('pd-undo').onclick = () => { day.trades.pop(); pdSave(st); renderScore(); dvRender(); };
 
             // Checklist
             function renderChecks() {
@@ -405,7 +457,121 @@
                     pdSave(st); renderChecks();
                 });
             }
-            renderChecks(); renderScore(); pdSave(st);
+            /* ----- Diário de Trades ----- */
+            const MES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+            let dvYM = LX.iso(pdToday).slice(0, 7);
+            const norm = t => typeof t === 'number' ? { r: t, c: 0, a: '—', t: '', s: '' } : t;
+            const ymAdd = (ym, k) => { const [y, m] = ym.split('-').map(Number), d = new Date(y, m - 1 + k, 1); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0'); };
+            const lastBizDay = ym => { const [y, m] = ym.split('-').map(Number); let d = new Date(y, m, 0); while (!LX.isBusinessDay(d)) d = LX.addDays(d, -1); return d; };
+            // IR mês a mês, do primeiro registro até o mês escolhido: compensa prejuízo, IRRF excedente e DARF abaixo de R$ 10
+            function irUntil(ym) {
+                const months = [...new Set(Object.keys(st.days).filter(k => (st.days[k].trades || []).length).map(k => k.slice(0, 7)))].sort();
+                let loss = 0, irrfCarry = 0, darfCarry = 0, res = null;
+                for (let m = months[0] || ym; m <= ym; m = ymAdd(m, 1)) {
+                    const days = Object.keys(st.days).filter(k => k.startsWith(m)).map(k => st.days[k].trades.map(norm));
+                    const gross = days.flat().reduce((a, t) => a + (+t.r || 0), 0), costs = days.flat().reduce((a, t) => a + (+t.c || 0), 0), net = gross - costs;
+                    const irrf = days.reduce((a, ts) => { const dn = ts.reduce((x, t) => x + (+t.r || 0) - (+t.c || 0), 0); return a + (dn > 0 ? dn * 0.01 : 0); }, 0);
+                    const lossIn = loss, used = net > 0 ? Math.min(loss, net) : 0, base = Math.max(0, net - used);
+                    loss = net < 0 ? loss - net : loss - used;
+                    const tax = base * 0.20, irrfAvail = irrf + irrfCarry, irrfUsed = Math.min(irrfAvail, tax);
+                    irrfCarry = irrfAvail - irrfUsed;
+                    let darf = tax - irrfUsed + darfCarry, darfIn = darfCarry;
+                    if (darf > 0 && darf < 10) { darfCarry = darf; darf = 0; } else darfCarry = 0;
+                    res = { m, gross, costs, net, lossIn, used, base, tax, irrf, irrfUsed, darf, darfIn, lossOut: loss, irrfCarry, darfCarry };
+                    if (m === ym) break;
+                }
+                return res;
+            }
+            function dvRender() {
+                const [y, m] = dvYM.split('-').map(Number);
+                $('dv-month').textContent = MES[m - 1] + ' ' + y;
+                const keys = Object.keys(st.days).filter(k => k.startsWith(dvYM) && (st.days[k].trades || []).length).sort();
+                const rows = keys.flatMap(k => st.days[k].trades.map((t, i) => Object.assign({ d: k, i }, norm(t))));
+                const nets = rows.map(r => (+r.r || 0) - (+r.c || 0)), total = nets.reduce((a, b) => a + b, 0);
+                const wins = nets.filter(x => x > 0), losses = nets.filter(x => x < 0);
+                const avgW = wins.length ? wins.reduce((a, b) => a + b, 0) / wins.length : 0, avgL = losses.length ? -losses.reduce((a, b) => a + b, 0) / losses.length : 0;
+                let streak = 0, worst = 0; nets.forEach(x => { if (x < 0) { streak++; worst = Math.max(worst, streak); } else streak = 0; });
+                const dayNet = keys.map(k => [k, st.days[k].trades.reduce((a, t) => a + tv(t), 0)]);
+                const best = dayNet.reduce((a, b) => (!a || b[1] > a[1] ? b : a), null), worstD = dayNet.reduce((a, b) => (!a || b[1] < a[1] ? b : a), null);
+                const kpi = (l, v, n, c = '') => `<div class="bg-white dark:bg-lect-cardDark p-3"><span class="term-label block">${l}</span><strong class="block text-lg font-mono tabular-nums ${c}">${v}</strong><span class="text-[10px] text-slate-500">${n}</span></div>`;
+                $('dv-kpis').innerHTML =
+                    kpi('Resultado líquido', (total >= 0 ? '+' : '−') + LX.brl(Math.abs(total)), `${keys.length} dia${keys.length === 1 ? '' : 's'} operado${keys.length === 1 ? '' : 's'}`, LX.signClass(total)) +
+                    kpi('Operações', rows.length, `${wins.length} ganhos · ${losses.length} perdas`) +
+                    kpi('Taxa de acerto', rows.length ? LX.pct(wins.length / rows.length * 100, 0) : '—', avgL ? `acerto mínimo p/ empatar: ${LX.pct(100 / (1 + avgW / avgL), 0)}` : 'ganhos ÷ operações') +
+                    kpi('Payoff', avgL ? LX.num(avgW / avgL, 2) : '—', `ganho médio ${LX.brl(avgW, 0)} · perda média ${LX.brl(avgL, 0)}`) +
+                    kpi('Pior sequência', worst + ' perda' + (worst === 1 ? '' : 's'), 'perdas seguidas', worst >= 4 ? 'text-rose-600 dark:text-rose-400' : '') +
+                    kpi('Melhor / pior dia', best ? LX.brl(best[1], 0) : '—', worstD ? `pior: ${LX.brl(worstD[1], 0)} (${worstD[0].slice(8)}/${worstD[0].slice(5, 7)})` : '—');
+                // curva
+                if (!rows.length) $('dv-curve').innerHTML = '<div class="h-40 grid place-items-center border border-dashed border-slate-300 dark:border-lect-borderDark text-xs text-slate-500 text-center px-4">Nenhuma operação neste mês. Use o placar do Plano do Dia ou o formulário ao lado.</div>';
+                else {
+                    const pts = [0]; nets.forEach(x => pts.push(pts[pts.length - 1] + x));
+                    const W = 600, H = 170, L = 50, R = 8, T = 10, B = 16, mn = Math.min(0, ...pts), mx = Math.max(0, ...pts), sp = (mx - mn) || 1;
+                    const X = i => L + i * (W - L - R) / (pts.length - 1), Y = v => T + (mx - v) / sp * (H - T - B);
+                    let peak = 0; const dd = pts.map(v => { peak = Math.max(peak, v); return [v, peak]; });
+                    const line = pts.map((v, i) => X(i).toFixed(1) + ',' + Y(v).toFixed(1)).join(' ');
+                    const up = total >= 0, col = up ? '#009988' : '#E11D48';
+                    let svg = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Curva de capital do mês">`;
+                    [mx, (mx + mn) / 2, mn].forEach(v => svg += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#94A3B8" stroke-opacity=".18"/><text x="${L - 6}" y="${Y(v) + 3}" font-size="10" text-anchor="end" fill="#64748B">${LX.num(v, 0)}</text>`);
+                    svg += `<path d="M${X(0)},${Y(0)} ${dd.map(([v, p], i) => 'L' + X(i).toFixed(1) + ',' + Y(p).toFixed(1)).join(' ')} ${dd.map(([v], i) => [i, v]).reverse().map(([i, v]) => 'L' + X(i).toFixed(1) + ',' + Y(v).toFixed(1)).join(' ')} Z" fill="#E11D48" fill-opacity=".12"/>`;
+                    svg += `<line x1="${L}" x2="${W - R}" y1="${Y(0)}" y2="${Y(0)}" stroke="#64748B" stroke-dasharray="4 3" stroke-opacity=".7"/>`;
+                    svg += `<polyline fill="none" stroke="${col}" stroke-width="2.2" stroke-linejoin="round" points="${line}"/><circle cx="${X(pts.length - 1)}" cy="${Y(total)}" r="4" fill="${col}" stroke="#fff" stroke-width="1.5"/>`;
+                    svg += `<text x="${W - R}" y="${H - 2}" font-size="10" text-anchor="end" fill="#64748B">${rows.length} operações · área vermelha = recuo a partir do topo</text></svg>`;
+                    $('dv-curve').innerHTML = svg;
+                }
+                // calendário
+                const first = new Date(y, m - 1, 1), nd = new Date(y, m, 0).getDate(), map = Object.fromEntries(dayNet);
+                const maxAbs = Math.max(1, ...dayNet.map(([, v]) => Math.abs(v)));
+                let cal = '<div class="grid grid-cols-7 gap-1 font-mono text-[10px]">' + ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'].map(d => `<div class="text-center text-slate-400">${d}</div>`).join('');
+                for (let i = 0; i < first.getDay(); i++) cal += '<div></div>';
+                for (let d = 1; d <= nd; d++) {
+                    const k = dvYM + '-' + String(d).padStart(2, '0'), v = map[k], biz = LX.isBusinessDay(new Date(y, m - 1, d));
+                    const a = v == null ? 0 : 0.2 + 0.8 * Math.abs(v) / maxAbs;
+                    const bg = v == null ? '' : `background:${v >= 0 ? `rgba(16,185,129,${a})` : `rgba(225,29,72,${a})`}`;
+                    cal += `<div class="h-11 p-1 border ${v == null ? (biz ? 'border-slate-200 dark:border-lect-borderDark' : 'border-transparent opacity-40') : 'border-transparent text-white'} ${k === LX.iso(pdToday) ? 'ring-2 ring-lect-orange' : ''}" style="${bg}" title="${v == null ? '' : LX.brl(v)}"><span class="block ${v == null ? 'text-slate-400' : 'font-bold'}">${d}</span>${v == null ? '' : `<span class="block text-[9px] leading-tight truncate">${v >= 0 ? '+' : '−'}${LX.num(Math.abs(v), 0)}</span>`}</div>`;
+                }
+                $('dv-cal').innerHTML = cal + '</div>';
+                // IR
+                const ir = irUntil(dvYM), due = lastBizDay(ymAdd(dvYM, 1));
+                const row = (l, v, c = '') => `<div class="flex justify-between px-3 py-1.5"><span class="text-slate-500">${l}</span><strong class="${c}">${v}</strong></div>`;
+                $('dv-ir').innerHTML = ir ? `<div class="border border-slate-200 dark:border-lect-borderDark font-mono text-xs divide-y divide-slate-100 dark:divide-lect-borderDark">` +
+                    row('Resultado bruto', LX.brl(ir.gross), LX.signClass(ir.gross)) + row('(−) custos', '−' + LX.brl(ir.costs)) +
+                    row('Resultado líquido', LX.brl(ir.net), LX.signClass(ir.net)) + row('(−) prejuízo de meses anteriores', '−' + LX.brl(ir.used)) +
+                    row('Base de cálculo', LX.brl(ir.base)) + row('IR 20%', LX.brl(ir.tax)) +
+                    row('(−) IRRF 1% retido (estimado)', '−' + LX.brl(ir.irrfUsed)) + (ir.darfIn ? row('(+) DARF < R$ 10 do mês anterior', LX.brl(ir.darfIn)) : '') +
+                    `<div class="flex justify-between items-baseline px-3 py-2.5 bg-lect-navy text-white"><span>DARF · código 6015</span><strong class="text-base text-lect-orange">${LX.brl(ir.darf)}</strong></div>` +
+                    `<div class="px-3 py-2 text-[10px] text-slate-500 leading-relaxed">${ir.darf > 0 ? `Vence em <strong>${LX.weekday(due)} ${LX.br(due)}</strong> (último dia útil do mês seguinte).` : ir.darfCarry ? `Valor abaixo de R$ 10 (${LX.brl(ir.darfCarry)}): acumula para o próximo mês.` : 'Nada a pagar neste mês.'}${ir.lossOut > 0 ? ` Prejuízo a compensar daqui para frente: <strong>${LX.brl(ir.lossOut)}</strong>.` : ''}${ir.irrfCarry > 0 ? ` IRRF a compensar: ${LX.brl(ir.irrfCarry)}.` : ''}</div></div>` : '';
+                // lista
+                $('dv-list').innerHTML = rows.length ? rows.slice().reverse().map(r => { const n = (+r.r || 0) - (+r.c || 0); return `<tr><td class="px-5 py-1.5">${r.d.slice(8)}/${r.d.slice(5, 7)}</td><td class="px-2 text-slate-500">${LX.esc(r.t || '')}</td><td class="px-2">${LX.esc(r.a || '')}</td><td class="px-2 text-right">${LX.num(+r.r || 0, 2)}</td><td class="px-2 text-right text-slate-500">${LX.num(+r.c || 0, 2)}</td><td class="px-2 text-right font-bold ${LX.signClass(n)}">${LX.num(n, 2)}</td><td class="px-3 font-sans text-slate-600 dark:text-slate-300 max-w-[220px] truncate">${LX.esc(r.s || '')}</td><td class="px-2 text-right"><button type="button" data-dvdel="${r.d}|${r.i}" class="text-slate-400 hover:text-rose-500" aria-label="Apagar operação"><i class="ph-bold ph-trash"></i></button></td></tr>`; }).join('')
+                    : '<tr><td colspan="8" class="px-5 py-4 text-slate-500 font-sans">Sem operações registradas neste mês.</td></tr>';
+                document.querySelectorAll('[data-dvdel]').forEach(b => b.onclick = () => {
+                    const [k, i] = b.dataset.dvdel.split('|'); st.days[k].trades.splice(+i, 1); pdSave(st); dvRender(); renderScore();
+                });
+            }
+            $('dv-date').value = LX.iso((() => { let d = new Date(pdToday); while (!LX.isBusinessDay(d)) d = LX.addDays(d, -1); return d; })()); // último pregão
+            $('dv-prev').onclick = () => { dvYM = ymAdd(dvYM, -1); dvRender(); };
+            $('dv-next').onclick = () => { dvYM = ymAdd(dvYM, 1); dvRender(); };
+            $('dv-add').onclick = () => {
+                const r = parseFloat($('dv-r').value), k = $('dv-date').value;
+                if (!isFinite(r) || r === 0 || !/^\d{4}-\d{2}-\d{2}$/.test(k)) { $('dv-r').focus(); return; }
+                const d = st.days[k] = Object.assign({ checks: [], trades: [] }, st.days[k] || {});
+                d.trades.push({ r, c: Math.max(0, parseFloat($('dv-c').value) || 0), a: $('dv-asset').value, t: '', s: $('dv-s').value.trim().slice(0, 80) });
+                $('dv-r').value = ''; $('dv-c').value = ''; $('dv-s').value = '';
+                dvYM = k.slice(0, 7); pdSave(st); dvRender(); renderScore();
+            };
+            const download = (name, text, type) => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); };
+            $('dv-csv').onclick = () => {
+                const lines = ['data;hora;ativo;bruto;custos;liquido;setup'];
+                Object.keys(st.days).sort().forEach(k => (st.days[k].trades || []).map(norm).forEach(t => lines.push([k, t.t || '', t.a || '', (+t.r || 0).toFixed(2).replace('.', ','), (+t.c || 0).toFixed(2).replace('.', ','), ((+t.r || 0) - (+t.c || 0)).toFixed(2).replace('.', ','), '"' + String(t.s || '').replace(/"/g, '""') + '"'].join(';'))));
+                download(`lectnex-diario-${LX.iso(pdToday)}.csv`, '﻿' + lines.join('\n'), 'text/csv;charset=utf-8');
+            };
+            $('dv-backup').onclick = () => download(`lectnex-backup-${LX.iso(pdToday)}.json`, JSON.stringify(st, null, 1), 'application/json');
+            $('dv-restore').onchange = e => {
+                const f = e.target.files[0]; if (!f) return;
+                f.text().then(t => { const j = JSON.parse(t); if (!j || typeof j.days !== 'object') throw 0; Object.entries(j.days).forEach(([k, v]) => { if (!st.days[k] || !(st.days[k].trades || []).length) st.days[k] = v; }); if (j.limits) Object.assign(st.limits, j.limits); pdSave(st); dvRender(); renderScore(); renderChecks(); })
+                    .catch(() => alert('Arquivo de backup inválido.'));
+                e.target.value = '';
+            };
+            renderChecks(); renderScore(); dvRender(); pdSave(st);
         })();
 
         /* ---------- Calculadora de risco ---------- */
