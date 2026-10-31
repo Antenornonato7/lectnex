@@ -1,11 +1,11 @@
-# Recompila assets/tailwind.css sempre que páginas ou scripts mudam,
-# para o site nunca ficar com classes sem estilo.
+# Recompila assets/tailwind.css e o recorte de ícones (assets/icons/) sempre que páginas ou scripts mudam,
+# para o site nunca ficar com classes sem estilo nem ícones faltando.
 name: Compilar CSS
 
 on:
   push:
     branches: [main]
-    paths: ['*.html', 'assets/*.js', 'assets/tailwind.src.css', 'tailwind.config.js']
+    paths: ['*.html', 'assets/*.js', 'assets/tailwind.src.css', 'tailwind.config.js', 'scripts/icones.py']
   workflow_dispatch: {}
 
 permissions:
@@ -26,9 +26,16 @@ jobs:
           chmod +x tailwindcss
       - name: Compilar
         run: ./tailwindcss -c tailwind.config.js -i assets/tailwind.src.css -o assets/tailwind.css --minify
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recortar ícones usados
+        run: |
+          pip install fonttools
+          python3 scripts/icones.py
       - name: Publicar se mudou
         run: |
           git config user.name "lectnex-bot"
           git config user.email "lectnex-bot@users.noreply.github.com"
-          git add assets/tailwind.css
-          if git diff --cached --quiet; then echo "CSS já atualizado."; else git commit -m "css: recompilação automática" && git push; fi
+          git add assets/tailwind.css assets/icons
+          if git diff --cached --quiet; then echo "CSS já atualizado."; else git commit -m "css: recompilação automática (estilos e ícones)" && git push; fi

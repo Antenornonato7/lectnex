@@ -437,7 +437,7 @@
                 const on = n.key === active;
                 const badge = n.badge ? `<span class="ml-1 px-1 text-[8px] font-bold bg-lect-orange text-white">${n.badge}</span>` : '';
                 if (mobile) return `<a href="${n.href}" class="px-2.5 py-1 ${on ? 'bg-lect-navy text-white font-bold' : 'border border-slate-300 dark:border-lect-borderDark'}">${n.label}${badge}</a>`;
-                return `<a href="${n.href}" class="flex items-center gap-1.5 px-2.5 py-2 transition-colors ${on ? 'text-lect-navy dark:text-white font-bold border-b-2 border-lect-teal' : 'hover:text-lect-teal'}"><i class="ph-bold ${n.icon} ${on ? 'text-lect-teal' : 'text-slate-400'}"></i>${n.label}${badge}</a>`;
+                return `<a href="${n.href}" class="flex items-center gap-1.5 px-2 xl:px-2.5 py-2 whitespace-nowrap transition-colors ${on ? 'text-lect-navy dark:text-white font-bold border-b-2 border-lect-teal' : 'hover:text-lect-teal'}"><i class="ph-bold ${n.icon} hidden xl:inline-block ${on ? 'text-lect-teal' : 'text-slate-400'}"></i>${n.label}${badge}</a>`;
             };
             head.innerHTML = `
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between gap-4">
@@ -445,9 +445,9 @@
                 <div><div class="flex items-center gap-2"><div class="text-2xl font-display font-bold tracking-tight leading-none"><span class="text-[#0C1A2A] dark:text-white">Lect</span><span class="text-[#009988] dark:text-[#00B4A2]">nex</span></div>
                 <span class="px-1.5 py-0.5 bg-lect-navy text-white dark:bg-lect-teal/20 dark:text-lect-tealLight font-mono text-[9px] font-bold uppercase tracking-widest">TERMINAL</span></div>
                 <span class="text-[11px] text-[#64748B] block mt-1">Inteligência de Mercado &amp; Educação Financeira</span></div></a>
-              <nav class="hidden lg:flex items-center gap-1 text-[13px] font-medium text-slate-600 dark:text-slate-300">${NAV.map(n => link(n)).join('')}</nav>
+              <nav class="hidden lg:flex items-center gap-0.5 xl:gap-1 text-[13px] font-medium text-slate-600 dark:text-slate-300">${NAV.map(n => link(n)).join('')}</nav>
               <div class="flex items-center gap-2">
-                <button onclick="LX.openPalette()" class="hidden sm:flex xl:w-52 items-center justify-between gap-3 px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-lect-cardDark text-xs font-mono text-slate-500 hover:border-lect-teal"><span class="inline-flex items-center gap-1.5"><i class="ph ph-magnifying-glass text-lect-teal"></i><span class="hidden xl:inline">Buscar ativo ou ferramenta</span></span><kbd class="px-1.5 text-[10px] border border-slate-300 dark:border-lect-borderDark">/</kbd></button>
+                <button onclick="LX.openPalette()" class="hidden sm:flex shrink-0 whitespace-nowrap items-center justify-between gap-3 px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-lect-cardDark text-xs font-mono text-slate-500 hover:border-lect-teal"><span class="inline-flex items-center gap-1.5"><i class="ph ph-magnifying-glass text-lect-teal"></i><span class="hidden xl:inline">Buscar ativo ou ferramenta</span></span></button>
                 <button onclick="LX.openPalette()" title="Buscar" aria-label="Buscar ativo ou ferramenta" class="sm:hidden p-2.5 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal"><i class="ph-bold ph-magnifying-glass text-lg text-lect-teal"></i></button>
                 <button onclick="toggleTheme()" title="Alternar tema" aria-label="Alternar tema claro/escuro" class="p-2.5 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal"><i class="ph-fill ph-moon text-lg dark:hidden"></i><i class="ph-fill ph-sun text-lg hidden dark:block text-lect-orange"></i></button>
               </div>
