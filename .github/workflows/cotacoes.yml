@@ -1,11 +1,16 @@
 # Atualiza data/cotacoes.json (Ibovespa + 10 ações de maior peso) a cada 30 min durante o pregão da B3.
-# ~11 consultas por rodada × ~18 rodadas/dia útil ≈ 4.500/mês (plano gratuito da brapi: 15.000/mês).
+# Faixa: 11 consultas a cada 30 min; mapa de calor: ~23 a mais de hora em hora ≈ 9.000/mês (plano gratuito da brapi: 15.000/mês).
 name: Cotações B3
 
 on:
   schedule:
     - cron: "7,37 13-21 * * 1-5"   # 10h07–18h37 em Brasília (UTC−3)
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      forcar_mapa:
+        description: 'Atualizar o mapa de calor agora'
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -23,6 +28,7 @@ jobs:
       - name: Buscar cotações
         env:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN || 'uRJnTfjL6jypdHfJ8b5LJd' }}
+          FORCAR_MAPA: ${{ github.event.inputs.forcar_mapa == 'true' && '1' || '' }}
         run: python3 coletor/cotacoes.py
       - name: Publicar se mudou
         run: |

@@ -1,7 +1,7 @@
 # Lectnex Terminal — estrutura do site
 
 ```
-index.html          Mercado Hoje: indicadores oficiais, agenda, câmbio, mercados globais, notícias
+index.html          Mercado Hoje: faixa B3, Leitura do Dia (IA), mapa de calor, indicadores, agenda, câmbio, mercados globais, notícias
 macro.html          Macro & Juros: Copom, Focus, curva DI, regimes de risco, mapa "E se…?"
 futuros.html        WIN, WDO e DI: Plano do Dia (checklist, limite de perda, placar), Diário de Trades (curva, calendário, DARF automático), vencimentos, risco, Kelly, IR, dólar justo
 acoes.html          Ações B3: cotação (brapi), gráfico (TradingView), painéis didáticos de fluxo/opções
@@ -73,3 +73,13 @@ Para ativar (uma vez só):
 Teste local: `python coletor/coletor_cvm.py --saida data` (precisa de internet; só biblioteca padrão do Python).
 
 Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem coletor.
+
+## Automação de dados
+
+| Workflow | Quando | O que faz |
+|---|---|---|
+| Cotações B3 | a cada 30 min no pregão | `coletor/cotacoes.py` → `data/cotacoes.json` (faixa B3 + mapa de calor de hora em hora) |
+| Coletor CVM | ter–sáb 07h17 | fundos donos e captação (`data/*.json`) |
+| Compilar CSS | a cada push | Tailwind + recorte de ícones |
+| Lighthouse | a cada push de código e às segundas | notas de velocidade, acessibilidade e SEO |
+| Leitura do Dia | tarefa agendada no Claude, todo dia 07h40 | `data/leitura.json` (ver `docs/leitura-do-dia.md`) |

@@ -27,12 +27,12 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031e">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031f">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031e">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031e">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031f">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031f">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -146,6 +146,28 @@
     </section>
 
     <!-- ================================================================================= -->
+    <!-- MAPA DE CALOR DA B3 — data/cotacoes.json (campo "mapa"), atualizado de hora em hora no pregão -->
+    <!-- ================================================================================= -->
+    <section id="mapa" class="hidden py-8 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-end justify-between gap-3 mb-3">
+                <div>
+                    <span class="term-label text-lect-teal font-bold">MAPA DE CALOR · B3</span>
+                    <h2 class="font-display text-2xl font-bold">Onde está o fluxo hoje</h2>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Tamanho = valor de mercado · cor = variação do dia. Passe o mouse para detalhes; clique para abrir a ação.</p>
+                </div>
+                <div class="flex flex-col items-end gap-1.5">
+                    <div class="flex items-center gap-0.5 font-mono text-[10px]" id="mp-legend"></div>
+                    <span id="mp-when" class="font-mono text-[10px] text-slate-500"></span>
+                </div>
+            </div>
+            <div id="mp-sectors" class="flex flex-wrap gap-1.5 mb-2 font-mono text-[10px]"></div>
+            <div id="mp-box" class="relative w-full h-[440px] sm:h-[480px] bg-slate-200 dark:bg-lect-borderDark overflow-hidden select-none"></div>
+            <div id="mp-tip" class="hidden fixed z-50 pointer-events-none px-3 py-2 bg-lect-navy text-white text-xs font-mono shadow-xl border-l-2 border-lect-orange"></div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
     <!-- 02 · AGENDA + CÂMBIO + MERCADOS GLOBAIS                                           -->
     <!-- ================================================================================= -->
     <section id="agenda" class="py-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
@@ -224,7 +246,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031e"></script>
+    <script src="assets/lectnex-core.js?v=20261031f"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -274,6 +296,81 @@
             }
             document.getElementById('b3-tape').classList.remove('hidden');
         }).catch(() => { });
+
+        /* ---------- Mapa de calor da B3 (treemap por setor) ---------- */
+        (function () {
+            const box = document.getElementById('mp-box'); if (!box) return;
+            let data = null;
+            // escala de cor divergente (vermelho ← cinza → verde), saturando em ±3%
+            const color = p => {
+                if (p == null) return '#475569';
+                const t = Math.max(-1, Math.min(1, p / 3)), a = Math.abs(t);
+                const mix = (c1, c2) => c1.map((v, i) => Math.round(v + (c2[i] - v) * a));
+                const base = [51, 65, 85], [r, g, b] = mix(base, t >= 0 ? [5, 150, 105] : [225, 29, 72]);
+                return `rgb(${r},${g},${b})`;
+            };
+            // treemap "squarified" (Bruls et al.): itens [{v}] dentro do retângulo {x,y,w,h}
+            function squarify(items, rect) {
+                const out = [], total = items.reduce((a, b) => a + b.v, 0); if (!total) return out;
+                const scale = rect.w * rect.h / total, list = items.map(i => Object.assign({}, i, { a: i.v * scale })).sort((a, b) => b.a - a.a);
+                let { x, y, w, h } = rect, row = [];
+                const worst = (r, side) => { const s = r.reduce((a, b) => a + b.a, 0), mx = Math.max(...r.map(i => i.a)), mn = Math.min(...r.map(i => i.a)); return Math.max(side * side * mx / (s * s), s * s / (side * side * mn)); };
+                const lay = (r) => {
+                    const s = r.reduce((a, b) => a + b.a, 0);
+                    if (w >= h) { const cw = s / h; let cy = y; r.forEach(i => { const ch = i.a / cw; out.push(Object.assign(i, { x, y: cy, w: cw, h: ch })); cy += ch; }); x += cw; w -= cw; }
+                    else { const ch = s / w; let cx = x; r.forEach(i => { const cw = i.a / ch; out.push(Object.assign(i, { x: cx, y, w: cw, h: ch })); cx += cw; }); y += ch; h -= ch; }
+                };
+                while (list.length) {
+                    const side = Math.min(w, h), next = list[0];
+                    if (!row.length || worst(row.concat(next), side) <= worst(row, side)) { row.push(list.shift()); }
+                    else { lay(row); row = []; }
+                }
+                if (row.length) lay(row);
+                return out;
+            }
+            function render() {
+                if (!data) return;
+                const W = box.clientWidth, H = box.clientHeight, G = 2;
+                const groups = {};
+                data.forEach(m => { const v = m.mcap || 1e10; (groups[m.setor] = groups[m.setor] || []).push(Object.assign({}, m, { v })); });
+                const secs = squarify(Object.entries(groups).map(([k, arr]) => ({ k, arr, v: arr.reduce((a, b) => a + b.v, 0) })), { x: 0, y: 0, w: W, h: H });
+                let html = '';
+                secs.forEach(sc => {
+                    const top = sc.h > 60 && sc.w > 70 ? 16 : 0;
+                    html += `<div class="absolute" style="left:${sc.x}px;top:${sc.y}px;width:${sc.w}px;height:${sc.h}px">` + (top ? `<div class="absolute left-0 right-0 top-0 h-4 px-1.5 font-mono text-[9px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-lect-cardDark truncate leading-4">${LX.esc(sc.k)}</div>` : '') + '</div>';
+                    squarify(sc.arr, { x: sc.x, y: sc.y + top, w: sc.w, h: sc.h - top }).forEach(t => {
+                        const big = t.w > 70 && t.h > 44, mid = t.w > 44 && t.h > 26, p = t.var_pct;
+                        html += `<a href="acoes.html?ticker=${t.ticker}" data-mp="${t.ticker}" class="absolute flex flex-col items-center justify-center text-white text-center overflow-hidden hover:brightness-125 hover:z-10 hover:outline hover:outline-2 hover:outline-white transition-[filter]" style="left:${t.x + G / 2}px;top:${t.y + G / 2}px;width:${Math.max(0, t.w - G)}px;height:${Math.max(0, t.h - G)}px;background:${color(p)}">`
+                            + (mid ? `<strong class="font-mono leading-tight ${big ? 'text-sm' : 'text-[10px]'}">${t.ticker}</strong><span class="font-mono tabular-nums leading-tight ${big ? 'text-xs' : 'text-[9px]'} opacity-90">${p == null ? '—' : (p > 0 ? '+' : '') + LX.num(p, 2) + '%'}</span>` : '') + '</a>';
+                    });
+                });
+                box.innerHTML = html;
+                const tip = document.getElementById('mp-tip'), by = Object.fromEntries(data.map(m => [m.ticker, m]));
+                box.querySelectorAll('[data-mp]').forEach(a => {
+                    a.addEventListener('mousemove', e => {
+                        const m = by[a.dataset.mp];
+                        tip.innerHTML = `<div class="text-lect-orange font-bold">${m.ticker}</div><div class="text-slate-300">${LX.esc(m.setor)}</div><div class="mt-1">R$ ${LX.num(m.preco, 2)} · <strong class="${m.var_pct > 0 ? 'text-emerald-300' : m.var_pct < 0 ? 'text-rose-300' : ''}">${m.var_pct == null ? '—' : (m.var_pct > 0 ? '+' : '') + LX.num(m.var_pct, 2) + '%'}</strong></div>${m.mcap ? `<div class="text-slate-400">valor de mercado R$ ${LX.num(m.mcap / 1e9, 0)} bi</div>` : ''}`;
+                        tip.classList.remove('hidden');
+                        const x = e.clientX + 14, y = e.clientY + 14;
+                        tip.style.left = Math.min(x, innerWidth - tip.offsetWidth - 8) + 'px'; tip.style.top = Math.min(y, innerHeight - tip.offsetHeight - 8) + 'px';
+                    });
+                    a.addEventListener('mouseleave', () => tip.classList.add('hidden'));
+                });
+            }
+            fetch('data/cotacoes.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+                if (!d || !Array.isArray(d.mapa) || d.mapa.length < 6) return;
+                data = d.mapa;
+                document.getElementById('mapa').classList.remove('hidden');
+                document.getElementById('mp-legend').innerHTML = [-3, -2, -1, 0, 1, 2, 3].map(v => `<span class="w-9 py-0.5 text-center text-white" style="background:${color(v)}">${v > 0 ? '+' : ''}${v}%</span>`).join('');
+                // resumo por setor: variação média ponderada pelo valor de mercado
+                const sec = {}; data.forEach(m => { if (m.var_pct == null) return; const w = m.mcap || 1e10, s = sec[m.setor] = sec[m.setor] || [0, 0]; s[0] += m.var_pct * w; s[1] += w; });
+                document.getElementById('mp-sectors').innerHTML = Object.entries(sec).map(([k, [a, b]]) => [k, a / b]).sort((x, y) => y[1] - x[1]).map(([k, v]) => `<span class="px-2 py-1 border ${v > 0 ? 'border-emerald-500/40 text-emerald-600 dark:text-emerald-400' : v < 0 ? 'border-rose-500/40 text-rose-600 dark:text-rose-400' : 'border-slate-400/40 text-slate-500'}">${LX.esc(k)} ${v > 0 ? '+' : ''}${LX.num(v, 2)}%</span>`).join('');
+                const t = d.mapa_em ? new Date(d.mapa_em) : null;
+                if (t) { let last = new Date(LX.todayBRT()); while (!LX.isBusinessDay(last)) last = LX.addDays(last, -1); const live = LX.isBusinessDay(LX.todayBRT()) && LX.iso(t) === LX.iso(LX.todayBRT()); document.getElementById('mp-when').textContent = live ? `atualizado ${t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' })} · atraso ~30 min · brapi.dev` : `fechamento de ${LX.weekday(last)} ${LX.brShort(last)} · brapi.dev`; }
+                render();
+                if ('ResizeObserver' in window) { let rt; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(render, 120); }).observe(box); }
+            }).catch(() => { });
+        })();
 
         /* ---------- Leitura do Dia (IA) ---------- */
         (function () {
