@@ -25,6 +25,6 @@ jobs:
           fetch-depth: 2
       - name: Enviar edição
         env:
-          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY || secrets.SITE_LECTNEX }}
           MANUAL: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
         run: python3 coletor/newsletter.py
