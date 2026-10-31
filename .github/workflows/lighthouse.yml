@@ -1,0 +1,58 @@
+# Termômetro de velocidade: roda o Lighthouse (Google) nas 5 páginas do site no ar
+# depois de cada publicação no GitHub Pages e toda segunda-feira.
+# As notas aparecem no resumo da execução (aba Actions → Lighthouse) com links para os relatórios completos.
+name: Lighthouse
+
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+  schedule:
+    - cron: "23 12 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lighthouse
+  cancel-in-progress: true
+
+jobs:
+  auditar:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Esperar a CDN do GitHub Pages atualizar
+        run: sleep 60
+      - name: Rodar Lighthouse
+        id: lh
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://antenornonato7.github.io/lectnex/
+            https://antenornonato7.github.io/lectnex/macro.html
+            https://antenornonato7.github.io/lectnex/futuros.html
+            https://antenornonato7.github.io/lectnex/acoes.html
+            https://antenornonato7.github.io/lectnex/laboratorio.html
+          runs: 1
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+      - name: Montar placar
+        env:
+          MANIFEST: ${{ steps.lh.outputs.manifest }}
+          LINKS: ${{ steps.lh.outputs.links }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          m = json.loads(os.environ.get('MANIFEST') or '[]'); links = json.loads(os.environ.get('LINKS') or '{}')
+          cor = lambda v: ('🟢' if v >= 90 else '🟡' if v >= 50 else '🔴') + f' {v}'
+          print('## ⚡ Lighthouse — Lectnex Terminal\n')
+          print('| Página | Velocidade | Acessibilidade | Boas práticas | SEO | Relatório |')
+          print('|---|---|---|---|---|---|')
+          for r in m:
+              if not r.get('isRepresentativeRun', True): continue
+              s = {k: round((v or 0) * 100) for k, v in r['summary'].items()}
+              nome = r['url'].split('/lectnex/')[-1] or 'index (Mercado Hoje)'
+              print(f"| {nome} | {cor(s.get('performance', 0))} | {cor(s.get('accessibility', 0))} | {cor(s.get('best-practices', 0))} | {cor(s.get('seo', 0))} | [abrir]({links.get(r['url'], '#')}) |")
+          PY
