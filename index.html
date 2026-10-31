@@ -27,14 +27,14 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031s">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031t">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031s">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031s">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031t">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031t">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -151,6 +151,9 @@
             </div>
         </div>
     </section>
+
+    <!-- PLACAR DO TERMÔMETRO (data/placar-termometro.json; aparece a partir de 5 pregões) -->
+    <div id="placar-term" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 scroll-mt-28"></div>
 
     <!-- INSCRIÇÃO NA NEWSLETTER (aparece quando LX.config.newsletter estiver preenchido) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6"><div data-lx-news="completo" class="hidden"></div></div>
@@ -272,7 +275,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031s"></script>
+    <script src="assets/lectnex-core.js?v=20261031t"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -298,6 +301,35 @@
             ]
         });
         LX.tv('tv-news', 'timeline', { feedMode: 'all_symbols', displayMode: 'regular', width: '100%', height: '100%' });
+        /* ---------- Placar do termômetro: transparência sobre acertos e erros ---------- */
+        fetch('data/placar-termometro.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(pl => {
+            const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(d => d && d.data && (d.win || d.wdo));
+            if (dias.length < 5) return;
+            const SET = { bullish: 'alta', bearish: 'baixa', neutro: 'neutro' };
+            const taxa = (k, n) => { const v = dias.slice(-n).filter(d => d[k]); const ok = v.filter(d => d[k].acerto).length; return { ok, n: v.length, p: v.length ? ok / v.length * 100 : null }; };
+            const kpi = (k, nome, ref) => { const a = taxa(k, 20), b = taxa(k, 60); return `<div class="p-4 bg-slate-50 dark:bg-lect-bgDark border-l-2 ${k === 'win' ? 'border-lect-teal' : 'border-lect-orange'}"><span class="term-label">${nome}</span>
+                <div class="flex items-baseline gap-2 mt-1"><strong class="font-mono text-3xl ${a.p == null ? '' : a.p >= 55 ? 'text-emerald-600 dark:text-emerald-400' : a.p < 45 ? 'text-rose-600 dark:text-rose-400' : ''}">${a.p == null ? '—' : LX.num(a.p, 0) + '%'}</strong></div>
+                <span class="block font-mono text-[11px] text-slate-600 dark:text-slate-300">${a.ok} de ${a.n} · últimos ${Math.min(20, dias.length)} pregões</span>
+                ${b.n > a.n ? `<span class="block font-mono text-[10px] text-slate-500">${LX.num(b.p, 0)}% em ${Math.min(60, dias.length)} pregões</span>` : ''}
+                <span class="block font-mono text-[10px] text-slate-500 mt-1">medido pelo ${ref}</span></div>`; };
+            const ult = dias.slice(-60);
+            const row = (k, nome, ref) => `<div class="flex items-center gap-2"><span class="w-9 shrink-0 font-mono text-[10px] text-slate-500">${nome}</span><div class="flex flex-wrap gap-[3px]">${ult.map(d => { const x = d[k], dt = LX.brShort(LX.parseISO(d.data));
+                if (!x) return `<span class="w-3 h-3 bg-slate-200 dark:bg-lect-borderDark" title="${dt} · sem termômetro"></span>`;
+                return `<span class="w-3 h-3 ${x.acerto ? 'bg-emerald-500' : 'bg-rose-500'}" title="${dt} · ${nome} ${SET[x.leitura] || x.leitura} · ${ref} ${x.var_pct > 0 ? '+' : ''}${LX.num(x.var_pct, 2)}% · ${x.acerto ? 'acertou' : 'errou'}"></span>`; }).join('')}</div></div>`;
+            const el = document.getElementById('placar-term');
+            el.innerHTML = `<div class="term-panel">
+                <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-target text-lect-orange"></i>Placar do termômetro</span>
+                    <span class="font-mono text-[10px] text-slate-500">mostramos os acertos e os erros · ${dias.length} pregões registrados</span></div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 p-5">
+                    <div class="lg:col-span-5 grid grid-cols-2 gap-3">${kpi('win', 'WIN', 'Ibovespa')}${kpi('wdo', 'WDO', 'dólar à vista')}</div>
+                    <div class="lg:col-span-7 space-y-2"><span class="term-label block">Últimos ${ult.length} pregões <span class="normal-case">(passe o mouse para ver o dia)</span></span>${row('win', 'WIN', 'IBOV')}${row('wdo', 'WDO', 'dólar')}
+                        <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] text-slate-500 pt-1"><span><span class="inline-block w-2.5 h-2.5 bg-emerald-500 align-middle"></span> acertou</span><span><span class="inline-block w-2.5 h-2.5 bg-rose-500 align-middle"></span> errou</span><span><span class="inline-block w-2.5 h-2.5 bg-slate-200 dark:bg-lect-borderDark align-middle"></span> sem termômetro</span></div></div>
+                </div>
+                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">Como medimos: o termômetro sai às 7h40 e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou entre −0,5% e +0,5%. WIN pelo Ibovespa à vista, WDO pelo dólar à vista. <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
+            el.classList.remove('hidden');
+        }).catch(() => { });
+
         /* ---------- Calendário próprio (data/calendario.json); reserva: widget do TradingView ---------- */
         (function () {
             const fallback = () => { document.getElementById('cal-wrap').classList.add('hidden'); const tv = document.getElementById('tv-calendar'); tv.classList.remove('hidden'); LX.tv('tv-calendar', 'events', { width: '100%', height: '100%', importanceFilter: '0,1', countryFilter: 'br,us,cn,eu' }); };
