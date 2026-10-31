@@ -497,6 +497,8 @@
                 <span class="text-white font-bold uppercase tracking-wider block mb-2">Módulos</span>
                 ${NAV.map(n => `<a href="${n.href}" class="block hover:text-lect-tealLight">${n.label}</a>`).join('')}
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
+                <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
+                <span id="lx-install-ios" class="hidden mt-2 text-[10px] leading-snug text-slate-400"><i class="ph-bold ph-device-mobile"></i> iPhone: toque em Compartilhar e depois em "Adicionar à Tela de Início" para usar como app.</span>
               </div>
               <div class="lg:col-span-5 space-y-1.5 font-mono text-[11px]">
                 <span class="text-white font-bold uppercase tracking-wider block mb-2">Fontes de dados</span>
@@ -830,11 +832,25 @@
             ${hot ? '<span class="font-bold">· spread e volatilidade sobem no horário do dado</span>' : ''}</a>`;
     }
 
+    /* ------------------------------------------------------------------ APP (PWA) */
+    let installEvt = null;
+    function pwa() {
+        if ('serviceWorker' in navigator && window.isSecureContext) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => { }));
+        const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+        if (standalone) return;
+        const btn = document.getElementById('lx-install');
+        window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; if (btn) { btn.classList.remove('hidden'); btn.classList.add('inline-flex'); } });
+        if (btn) btn.onclick = async () => { if (!installEvt) return; installEvt.prompt(); try { await installEvt.userChoice; } catch (_) { } installEvt = null; btn.classList.add('hidden'); btn.classList.remove('inline-flex'); };
+        window.addEventListener('appinstalled', () => btn && btn.classList.add('hidden'));
+        if (/iphone|ipad|ipod/i.test(navigator.userAgent)) { const ios = document.getElementById('lx-install-ios'); if (ios) ios.classList.remove('hidden'); }
+    }
+
     /* ------------------------------------------------------------------ BOOT */
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
         rollBanner(); setInterval(rollBanner, 60000);
+        pwa();
         fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && Array.isArray(j.eventos)) { calEvs = j.eventos; nextBar(); setInterval(nextBar, 30000); } }).catch(() => { });
         newsForms();
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });

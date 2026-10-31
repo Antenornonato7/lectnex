@@ -19,6 +19,8 @@ for f in glob.glob('*.html') + glob.glob('assets/*.js'):
 saida = ['/* Phosphor Icons v2.1.1 (MIT) — https://github.com/phosphor-icons/web\n'
          '   Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */']
 os.makedirs('assets/icons', exist_ok=True)
+import hashlib
+VER = hashlib.sha1(','.join(sorted(usados)).encode()).hexdigest()[:8]  # muda só quando a lista de ícones muda (renova o cache do app)
 for peso, fonte, classe in [('regular', 'Phosphor', 'ph'), ('bold', 'Phosphor-Bold', 'ph-bold'),
                             ('fill', 'Phosphor-Fill', 'ph-fill'), ('duotone', 'Phosphor-Duotone', 'ph-duotone')]:
     css = open(os.path.join(PH, 'src', peso, 'style.css'), encoding='utf-8').read()
@@ -26,8 +28,8 @@ for peso, fonte, classe in [('regular', 'Phosphor', 'ph'), ('bold', 'Phosphor-Bo
     for sel, corpo in re.findall(r'([^{}]+)\{([^}]*)\}', css):
         sel = sel.strip()
         if sel.startswith('@font-face'):
-            manter.append('@font-face {\n  font-family: "%s";\n  src: url("./%s.woff?v=2") format("woff");\n'
-                          '  font-weight: normal;\n  font-style: normal;\n  font-display: block;\n}' % (fonte, fonte))
+            manter.append('@font-face {\n  font-family: "%s";\n  src: url("./%s.woff?v=%s") format("woff");\n'
+                          '  font-weight: normal;\n  font-style: normal;\n  font-display: block;\n}' % (fonte, fonte, VER))
             continue
         m = re.match(r'^\.' + re.escape(classe) + r'\.ph-([a-z0-9-]+):(before|after)$', sel)
         if m:

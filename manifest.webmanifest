@@ -20,5 +20,57 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
+  ],
+  "id": "./",
+  "categories": [
+    "finance",
+    "education"
+  ],
+  "shortcuts": [
+    {
+      "name": "Modo Pregão",
+      "short_name": "Pregão",
+      "description": "Tela única para deixar aberta durante o pregão",
+      "url": "index.html#pregao",
+      "icons": [
+        {
+          "src": "assets/brand/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Plano do Dia",
+      "short_name": "Plano",
+      "url": "futuros.html#plano",
+      "icons": [
+        {
+          "src": "assets/brand/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Calendário econômico",
+      "short_name": "Calendário",
+      "url": "index.html#cal-wrap",
+      "icons": [
+        {
+          "src": "assets/brand/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Diário de Trades",
+      "short_name": "Diário",
+      "url": "futuros.html#diario",
+      "icons": [
+        {
+          "src": "assets/brand/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
   ]
 }
