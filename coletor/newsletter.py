@@ -52,17 +52,17 @@ def corpo(d):
 
 def main():
     if not KEY:
-        print('Sem BUTTONDOWN_API_KEY: nada a enviar.'); return
+        print('::warning title=Newsletter::Sem o segredo BUTTONDOWN_API_KEY — nada foi enviado.'); return
     d = json.load(open(os.path.join(ROOT, 'data', 'leitura.json'), encoding='utf-8'))
     if not os.environ.get('MANUAL') and anterior().get('data') == d.get('data'):
-        print('Mesma edição do dia (correção): não reenvia.'); return
+        print('::notice title=Newsletter::Mesma edição do dia (correção) — não reenviado.'); return
     payload = {'subject': f"Leitura do Dia · {d.get('titulo', '')}", 'body': corpo(d), 'status': 'about_to_send'}
     req = urllib.request.Request('https://api.buttondown.com/v1/emails', data=json.dumps(payload).encode(), method='POST', headers={
         'Authorization': f'Token {KEY}', 'Content-Type': 'application/json', 'X-API-Version': '2026-04-01',
         'X-Buttondown-Live-Dangerously': 'true'})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
-            print('Enviado:', r.status)
+            print(f"::notice title=Newsletter enviada::{d.get('data')} · {d.get('titulo', '')} (HTTP {r.status})")
     except urllib.error.HTTPError as e:
         print(f'::error title=Buttondown {e.code}::{e.read().decode()[:500]}'); sys.exit(1)
 
