@@ -20,8 +20,10 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
    - Notícias que mexem com o Brasil: fiscal, política monetária, commodities, China. Selecione as 5 mais relevantes para `noticias`.
    Também confira `LX.agendaFixed` e os vencimentos (WIN: quarta mais próxima do dia 15 dos meses pares; WDO: 1º dia útil do mês).
 3. **Escreva `data/leitura.json`** no formato abaixo (UTF-8, JSON válido).
-4. **Valide**: `python3 -c "import json;d=json.load(open('data/leitura.json'));assert d['data'] and d['tipo'] in ('pregao','sem-pregao') and 3<=len(d['resumo'])<=5 and len(d.get('noticias',[]))>=3"`.
-5. **Publique**: commit `leitura: AAAA-MM-DD` na `main` e push. Não altere nenhum outro arquivo.
+4. **Valide** a leitura: `python3 -c "import json;d=json.load(open('data/leitura.json'));assert d['data'] and d['tipo'] in ('pregao','sem-pregao') and 3<=len(d['resumo'])<=5 and len(d.get('noticias',[]))>=3"`.
+5. **Atualize `data/calendario.json`** (formato na seção "Calendário" abaixo): eventos de hoje até os próximos 7 dias corridos que
+   mexem com WIN, WDO ou DI. Preencha `resultado` dos eventos que já saíram (só com o número oficial). Remova eventos antigos.
+6. **Publique**: commit `leitura: AAAA-MM-DD` com **apenas** `data/leitura.json` e `data/calendario.json`, na `main`, e push.
 
 ## Formato
 
@@ -78,3 +80,34 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
 - **Educacional**: descreva cenário e riscos; nunca diga "compre", "venda", preço-alvo ou ponto de entrada.
 - Só fatos verificados nas fontes do dia; se não encontrou um dado, deixe de fora em vez de estimar.
 - Quando os sinais forem mistos, o termômetro é `neutro`.
+
+## Calendário (`data/calendario.json`)
+
+Usado pelo painel "Calendário que mexe no WIN e WDO" no Mercado Hoje. Só eventos relevantes para mini índice, mini dólar e DI
+(Copom e ata, IPCA/IPCA-15, PIB, varejo, produção industrial, CAGED, fiscal/leilões do Tesouro relevantes; EUA: payroll, CPI, PCE,
+FOMC e falas do Fed, ISM, PIB; China: PMIs e dados de atividade; Europa: BCE e inflação). Feriados da B3 e vencimentos também entram.
+
+```json
+{
+  "atualizado_em": "2026-11-03T07:45:00-03:00",
+  "eventos": [
+    {
+      "data": "2026-11-06",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Payroll — criação de vagas (out)",
+      "importancia": 3,
+      "anterior": "180 mil",
+      "consenso": "150 mil",
+      "resultado": null,
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Emprego forte tende a fortalecer o dólar global."
+    }
+  ]
+}
+```
+
+- `hora` em horário de **Brasília** (atenção ao horário de verão americano). `pais`: BR, US, CN, EU, JP, UK.
+- `importancia`: 1 (baixo) a 3 (alto). `impacto` por ativo (`win`, `wdo`, `di`): `alta`, `baixa`, `neutro` ou `volatil` (direção depende do resultado).
+- `anterior`, `consenso` e `resultado`: só valores confirmados em fonte; se não souber, `null`. Nunca estime número.
+- De 8 a 25 eventos no total; ordem cronológica.
