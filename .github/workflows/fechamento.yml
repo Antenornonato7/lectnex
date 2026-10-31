@@ -1,0 +1,42 @@
+# Fechamento do pregão no Telegram + placar do termômetro (data/placar-termometro.json).
+# Roda depois da última coleta de cotações do dia. Sem pregão (Ibovespa sem negócio hoje), não envia nada.
+name: Fechamento
+
+on:
+  schedule:
+    - cron: "5 22 * * 1-5"   # 19h05 em Brasília
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: 'Enviar mesmo sem cotação de hoje (teste)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fechamento
+  cancel-in-progress: false
+
+jobs:
+  fechar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Montar e enviar o fechamento
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
+          FORCAR: ${{ inputs.forcar && '1' || '' }}
+        run: python3 coletor/fechamento.py
+      - name: Salvar placar do termômetro
+        run: |
+          [ -f data/placar-termometro.json ] || exit 0
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com"
+          git add data/placar-termometro.json
+          git diff --cached --quiet && exit 0
+          git commit -m "placar: termômetro $(TZ=America/Sao_Paulo date +%F)"
+          git pull --rebase -q origin main && git push -q origin HEAD:main

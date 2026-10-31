@@ -89,3 +89,9 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 
 - Usuário: `lectnex` (em `LX.config.newsletter`, em `assets/lectnex-core.js`). Formulários: `<div data-lx-news="completo|compacto|chamada">`.
 - Envio automático: workflow **Newsletter** (`coletor/newsletter.py`) quando a Leitura de um novo dia é publicada. Segredo `BUTTONDOWN_API_KEY` (ou `SITE_LECTNEX`). Se o Buttondown recusar o envio, cria rascunho para envio manual.
+
+## Telegram (canal @lectnex)
+
+- Workflow **Telegram** (`coletor/telegram.py`): publica a Leitura do Dia (novo dia) e cada nova surpresa do calendário. Ações manuais: teste, `boas-vindas` (publica e fixa a apresentação) e `contar` (seguidores → `data/telegram.json`, também todo dia 08h17).
+- Workflow **Fechamento** (`coletor/fechamento.py`): dias úteis 19h05 — IBOV, dólar, maiores altas/baixas, acerto do termômetro e agenda do próximo dia. Registra o placar em `data/placar-termometro.json`.
+- Segredo do robô: `LECTNEX_ALERTAS_BOT` (ou `TELEGRAM_BOT_TOKEN`). Canal padrão `@lectnex` (ou segredo `TELEGRAM_CHAT_ID`).
