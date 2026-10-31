@@ -27,12 +27,12 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031b">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031c">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031b">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031b">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031c">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031c">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -99,6 +99,39 @@
                     <span id="kpi-btc-pct" data-lx-skel="fx" class="lx-skel text-[11px]">—</span>
                     <span class="src-tag block mt-1">AWESOMEAPI · 24H</span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- LEITURA DO DIA (IA) — conteúdo em data/leitura.json, gerado por tarefa agendada nos dias úteis -->
+    <!-- ================================================================================= -->
+    <section id="leitura" class="hidden py-8 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="term-panel overflow-hidden !border-t-4 !border-t-lect-orange">
+                <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
+                    <div class="flex items-center gap-3">
+                        <span class="w-9 h-9 grid place-items-center bg-lect-orange/15"><i class="ph-duotone ph-sparkle text-xl text-lect-orange"></i></span>
+                        <div><span class="term-label font-bold text-lect-orange block">LEITURA DO DIA · IA</span><strong id="lt-title" class="font-display text-lg leading-tight">—</strong></div>
+                    </div>
+                    <div class="flex items-center gap-2 font-mono text-[10px]">
+                        <span id="lt-when" class="px-2 py-1 bg-slate-100 dark:bg-lect-bgDark text-slate-500"></span>
+                        <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
+                    <div class="lg:col-span-4 p-5 space-y-3" id="lt-thermo"></div>
+                    <div class="lg:col-span-5 p-5">
+                        <span class="term-label font-bold">O QUE IMPORTA HOJE</span>
+                        <ul id="lt-resumo" class="mt-2 space-y-2"></ul>
+                    </div>
+                    <div class="lg:col-span-3 p-5">
+                        <span class="term-label font-bold">NA AGENDA</span>
+                        <div id="lt-destaques" class="mt-2 space-y-2"></div>
+                        <div id="lt-exterior" class="mt-4"></div>
+                    </div>
+                </div>
+                <div id="lt-fontes" class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[10px] font-mono text-slate-500 flex flex-wrap gap-x-3 gap-y-1"></div>
             </div>
         </div>
     </section>
@@ -182,7 +215,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031b"></script>
+    <script src="assets/lectnex-core.js?v=20261031c"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -209,6 +242,38 @@
         });
         LX.tv('tv-news', 'timeline', { feedMode: 'all_symbols', displayMode: 'regular', width: '100%', height: '100%' });
         LX.tv('tv-calendar', 'events', { width: '100%', height: '100%', importanceFilter: '0,1', countryFilter: 'br,us,cn,eu' });
+
+        /* ---------- Leitura do Dia (IA) ---------- */
+        (function () {
+            const esc = LX.esc, el = id => document.getElementById(id);
+            const TH = {
+                bullish: ['Comprador', 'ph-trend-up', 'text-emerald-600 dark:text-emerald-400', 'bg-emerald-500', 85],
+                neutro: ['Neutro', 'ph-arrows-left-right', 'text-slate-500', 'bg-slate-400', 50],
+                bearish: ['Vendedor', 'ph-trend-down', 'text-rose-600 dark:text-rose-400', 'bg-rose-500', 15]
+            };
+            fetch('data/leitura.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+                if (!d || !d.data || !Array.isArray(d.resumo) || !d.resumo.length) return;
+                const day = LX.parseISO(d.data), today = LX.todayBRT(), old = (today - day) / 864e5;
+                if (old > 4) return; // leitura velha demais: melhor não mostrar
+                el('leitura').classList.remove('hidden');
+                el('lt-title').textContent = d.titulo || 'Leitura do dia';
+                const hora = d.gerado_em ? new Date(d.gerado_em).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' }) : '';
+                el('lt-when').innerHTML = +day === +today ? `<i class="ph-bold ph-clock"></i> hoje${hora ? ' às ' + hora : ''}` : `<i class="ph-bold ph-clock-counter-clockwise"></i> leitura de ${LX.weekday(day)} ${LX.brShort(day)}`;
+                const gauge = (k, label) => {
+                    const t = (d.termometro || {})[k]; if (!t) return '';
+                    const c = TH[t.leitura] || TH.neutro;
+                    return `<div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
+                        <div class="flex items-center justify-between"><span class="font-mono text-xs font-bold">${label}</span><span class="inline-flex items-center gap-1 font-bold text-sm ${c[2]}"><i class="ph-bold ${c[1]}"></i>${c[0]}</span></div>
+                        <div class="relative h-1.5 mt-2 bg-gradient-to-r from-rose-500 via-slate-400 to-emerald-500 opacity-70"><span class="absolute -top-1 w-1.5 h-3.5 bg-lect-navy dark:bg-white border border-white dark:border-lect-navy" style="left:calc(${c[4]}% - 3px)"></span></div>
+                        ${t.motivo ? `<p class="text-[11px] text-slate-600 dark:text-slate-300 mt-2 leading-snug">${esc(t.motivo)}</p>` : ''}</div>`;
+                };
+                el('lt-thermo').innerHTML = `<span class="term-label font-bold">TERMÔMETRO</span>` + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar');
+                el('lt-resumo').innerHTML = d.resumo.slice(0, 5).map(x => `<li class="flex gap-2.5 text-sm leading-relaxed"><span class="mt-2 w-1.5 h-1.5 bg-lect-orange shrink-0"></span><span class="text-slate-700 dark:text-slate-300">${esc(x)}</span></li>`).join('');
+                el('lt-destaques').innerHTML = (d.destaques || []).slice(0, 4).map(x => `<div class="flex gap-2"><span class="shrink-0 w-12 font-mono text-[11px] font-bold text-lect-teal pt-0.5">${esc(x.hora || '')}</span><div><strong class="block text-xs">${esc(x.evento || '')}</strong>${x.por_que ? `<span class="block text-[11px] text-slate-500 leading-snug">${esc(x.por_que)}</span>` : ''}</div></div>`).join('') || '<p class="text-xs text-slate-500">Sem evento relevante marcado.</p>';
+                el('lt-exterior').innerHTML = (d.exterior || []).length ? `<span class="term-label font-bold">EXTERIOR</span><div class="grid grid-cols-2 gap-1 mt-1.5 font-mono text-[11px]">${d.exterior.slice(0, 6).map(x => { const neg = /^[−-]/.test(x.variacao || ''); return `<div class="flex justify-between px-2 py-1 bg-slate-50 dark:bg-lect-bgDark"><span class="text-slate-500 truncate">${esc(x.ativo)}</span><strong class="${neg ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'}">${esc(x.variacao)}</strong></div>`; }).join('')}</div>` : '';
+                el('lt-fontes').innerHTML = '<span><i class="ph-bold ph-sparkle"></i> Gerado por IA (Claude) a partir de fontes públicas · pode conter imprecisões.</span>' + (d.fontes || []).slice(0, 6).map(f => /^https?:\/\//.test(f.url || '') ? `<a href="${esc(f.url)}" target="_blank" rel="noopener nofollow" class="hover:text-lect-teal underline decoration-dotted">${esc(f.titulo || f.url)}</a>` : '').join('');
+            }).catch(() => { });
+        })();
 
         /* ---------- Contratos vigentes ---------- */
         const win = LX.upcomingWIN(6), wdo = LX.upcomingWDO(6), opt = LX.upcomingOptions(4);
