@@ -30,7 +30,8 @@ jobs:
           fetch-depth: 2
       - name: Publicar no canal
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN || secrets.TOKEN_TELEGRAM || secrets.TELEGRAM }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN || secrets.TOKEN_TELEGRAM || secrets.TELEGRAM || vars.TELEGRAM_BOT_TOKEN }}
+          TOKEN_EM_VARIABLES: ${{ vars.TELEGRAM_BOT_TOKEN && !secrets.TELEGRAM_BOT_TOKEN && '1' || '' }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
           TESTE: ${{ github.event_name == 'workflow_dispatch' && inputs.teste && '1' || '' }}
         run: python3 coletor/telegram.py

@@ -81,6 +81,8 @@ def main():
     if not TOKEN or not CHAT:
         note('warning', 'Telegram não configurado: falta ' + ' e '.join(n for n, v in (('TELEGRAM_BOT_TOKEN', TOKEN), ('TELEGRAM_CHAT_ID', CHAT)) if not v))
         return
+    if os.environ.get('TOKEN_EM_VARIABLES'):
+        note('warning', 'O token do Telegram está em Variables (visível). Mova para Secrets com o nome TELEGRAM_BOT_TOKEN.')
     if os.environ.get('TESTE'):
         ok = enviar('✅ <b>Canal do Lectnex conectado.</b>\nAqui vão chegar a Leitura do Dia e os alertas de surpresa do calendário.\n' + f'<a href="{SITE}">{SITE}</a>')
         note('notice' if ok else 'warning', 'Teste do Telegram enviado' if ok else 'Teste do Telegram falhou')
