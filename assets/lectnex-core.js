@@ -799,6 +799,11 @@
         const [y, mo, d] = e.data.split('-').map(Number);
         return Date.UTC(y, mo - 1, d, +m[1] + 3, +(m[2] || 0));
     }
+    LX.calNext = function () { // próximo evento de alto impacto (até 36 h); null se não houver
+        if (!calEvs) return null; const now = Date.now();
+        return calEvs.map(e => ({ e, t: evTime(e) })).filter(x => x.t && (x.e.importancia || 1) >= 3 && x.t > now - 5 * 60e3 && x.t - now < 36 * 3600e3 && !(x.e.resultado != null && x.e.resultado !== '')).sort((a, b) => a.t - b.t)[0] || null;
+    };
+    LX.calFlag = CAL_FLAG; LX.calArrow = CAL_ARROW;
     function nextBar() {
         const head = document.getElementById('lx-header'); if (!head || !calEvs) return;
         const now = Date.now();

@@ -139,6 +139,9 @@
 .ph.ph-currency-eur:before {
   content: "\e554";
 }
+.ph.ph-device-mobile:before {
+  content: "\e1e0";
+}
 .ph.ph-download-simple:before {
   content: "\e20c";
 }
@@ -277,6 +280,9 @@
 .ph.ph-sun-horizon:before {
   content: "\e5b6";
 }
+.ph.ph-target:before {
+  content: "\e47c";
+}
 .ph.ph-terminal-window:before {
   content: "\eae8";
 }
@@ -288,6 +294,9 @@
 }
 .ph.ph-thermometer-hot:before {
   content: "\e5ca";
+}
+.ph.ph-thermometer-simple:before {
+  content: "\e5cc";
 }
 .ph.ph-timer:before {
   content: "\e492";
@@ -324,6 +333,9 @@
 }
 .ph.ph-warning-octagon:before {
   content: "\e4e4";
+}
+.ph.ph-x:before {
+  content: "\e4f6";
 }
 @font-face {
   font-family: "Phosphor-Bold";
@@ -464,6 +476,9 @@
 .ph-bold.ph-currency-eur:before {
   content: "\e554";
 }
+.ph-bold.ph-device-mobile:before {
+  content: "\e1e0";
+}
 .ph-bold.ph-download-simple:before {
   content: "\e20c";
 }
@@ -602,6 +617,9 @@
 .ph-bold.ph-sun-horizon:before {
   content: "\e5b6";
 }
+.ph-bold.ph-target:before {
+  content: "\e47c";
+}
 .ph-bold.ph-terminal-window:before {
   content: "\eae8";
 }
@@ -613,6 +631,9 @@
 }
 .ph-bold.ph-thermometer-hot:before {
   content: "\e5ca";
+}
+.ph-bold.ph-thermometer-simple:before {
+  content: "\e5cc";
 }
 .ph-bold.ph-timer:before {
   content: "\e492";
@@ -649,6 +670,9 @@
 }
 .ph-bold.ph-warning-octagon:before {
   content: "\e4e4";
+}
+.ph-bold.ph-x:before {
+  content: "\e4f6";
 }
 @font-face {
   font-family: "Phosphor-Fill";
@@ -789,6 +813,9 @@
 .ph-fill.ph-currency-eur:before {
   content: "\e554";
 }
+.ph-fill.ph-device-mobile:before {
+  content: "\e1e0";
+}
 .ph-fill.ph-download-simple:before {
   content: "\e20c";
 }
@@ -927,6 +954,9 @@
 .ph-fill.ph-sun-horizon:before {
   content: "\e5b6";
 }
+.ph-fill.ph-target:before {
+  content: "\e47c";
+}
 .ph-fill.ph-terminal-window:before {
   content: "\eae8";
 }
@@ -938,6 +968,9 @@
 }
 .ph-fill.ph-thermometer-hot:before {
   content: "\e5ca";
+}
+.ph-fill.ph-thermometer-simple:before {
+  content: "\e5cc";
 }
 .ph-fill.ph-timer:before {
   content: "\e492";
@@ -974,6 +1007,9 @@
 }
 .ph-fill.ph-warning-octagon:before {
   content: "\e4e4";
+}
+.ph-fill.ph-x:before {
+  content: "\e4f6";
 }
 @font-face {
   font-family: "Phosphor-Duotone";
@@ -1282,6 +1318,14 @@
 }
 .ph-duotone.ph-currency-eur:after {
   content: "\e555";
+  margin-left: -1em;
+}
+.ph-duotone.ph-device-mobile:before {
+  content: "\e1e0";
+  opacity: 0.2;
+}
+.ph-duotone.ph-device-mobile:after {
+  content: "\e1e1";
   margin-left: -1em;
 }
 .ph-duotone.ph-download-simple:before {
@@ -1652,6 +1696,14 @@
   content: "\e5b7";
   margin-left: -1em;
 }
+.ph-duotone.ph-target:before {
+  content: "\e47c";
+  opacity: 0.2;
+}
+.ph-duotone.ph-target:after {
+  content: "\e47d";
+  margin-left: -1em;
+}
 .ph-duotone.ph-terminal-window:before {
   content: "\eae8";
   opacity: 0.2;
@@ -1682,6 +1734,14 @@
 }
 .ph-duotone.ph-thermometer-hot:after {
   content: "\e5cb";
+  margin-left: -1em;
+}
+.ph-duotone.ph-thermometer-simple:before {
+  content: "\e5cc";
+  opacity: 0.2;
+}
+.ph-duotone.ph-thermometer-simple:after {
+  content: "\e5cd";
   margin-left: -1em;
 }
 .ph-duotone.ph-timer:before {
@@ -1778,5 +1838,13 @@
 }
 .ph-duotone.ph-warning-octagon:after {
   content: "\e4e5";
+  margin-left: -1em;
+}
+.ph-duotone.ph-x:before {
+  content: "\e4f6";
+  opacity: 0.2;
+}
+.ph-duotone.ph-x:after {
+  content: "\e4f7";
   margin-left: -1em;
 }
