@@ -293,7 +293,8 @@
                 return `<a href="${x.ticker === 'IBOV' ? 'macro.html' : 'acoes.html?ticker=' + x.ticker}" class="inline-flex items-center gap-2 px-4 h-full border-r border-slate-200 dark:border-lect-borderDark hover:bg-white dark:hover:bg-lect-cardDark" title="${LX.esc(x.nome)}"><strong class="text-slate-800 dark:text-white">${LX.esc(x.ticker)}</strong><span class="text-slate-600 dark:text-slate-300 tabular-nums">${price}</span><span class="${cls} font-bold tabular-nums">${arrow} ${p == null ? '—' : LX.pct(Math.abs(p), 2)}</span></a>`;
             };
             const html = d.itens.map(chip).join('');
-            document.getElementById('b3-track').innerHTML = html + '<span aria-hidden="true" class="contents">' + html + '</span>';
+            // cópia para a rolagem contínua: escondida de leitores de tela e fora da navegação por teclado
+            document.getElementById('b3-track').innerHTML = html + '<span aria-hidden="true" class="contents">' + html.replace(/<a /g, '<a tabindex="-1" ') + '</span>';
             const t = d.atualizado_em ? new Date(d.atualizado_em) : null;
             if (t) {
                 // fora do pregão a faixa mostra o fechamento do último pregão, não um horário que pareça "ao vivo"
@@ -350,7 +351,7 @@
                     html += `<div class="absolute" style="left:${sc.x}px;top:${sc.y}px;width:${sc.w}px;height:${sc.h}px">` + (top ? `<div class="absolute left-0 right-0 top-0 h-4 px-1.5 font-mono text-[9px] font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-lect-cardDark truncate leading-4">${LX.esc(sc.k)}</div>` : '') + '</div>';
                     squarify(sc.arr, { x: sc.x, y: sc.y + top, w: sc.w, h: sc.h - top }).forEach(t => {
                         const big = t.w > 70 && t.h > 44, mid = t.w > 44 && t.h > 26, p = t.var_pct;
-                        html += `<a href="acoes.html?ticker=${t.ticker}" data-mp="${t.ticker}" class="absolute flex flex-col items-center justify-center text-white text-center overflow-hidden hover:brightness-125 hover:z-10 hover:outline hover:outline-2 hover:outline-white transition-[filter]" style="left:${t.x + G / 2}px;top:${t.y + G / 2}px;width:${Math.max(0, t.w - G)}px;height:${Math.max(0, t.h - G)}px;background:${color(p)}">`
+                        html += `<a href="acoes.html?ticker=${t.ticker}" data-mp="${t.ticker}" aria-label="${t.ticker}: ${p == null ? 'sem variação' : (p > 0 ? '+' : '') + LX.num(p, 2) + '%'} (${LX.esc(t.setor)})" class="absolute flex flex-col items-center justify-center text-white text-center overflow-hidden hover:brightness-125 hover:z-10 hover:outline hover:outline-2 hover:outline-white transition-[filter]" style="left:${t.x + G / 2}px;top:${t.y + G / 2}px;width:${Math.max(0, t.w - G)}px;height:${Math.max(0, t.h - G)}px;background:${color(p)}">`
                             + (p != null && Math.abs(p) >= 5 && t.w > 22 && t.h > 18 ? `<i class="ph-fill ph-lightning absolute top-1 right-1 text-lect-orange ${big ? 'text-sm' : 'text-[10px]'}" style="filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></i>` : '') + (mid ? `<strong class="font-mono leading-tight ${big ? 'text-sm' : 'text-[10px]'}">${t.ticker}</strong><span class="font-mono tabular-nums leading-tight ${big ? 'text-xs' : 'text-[9px]'} opacity-90">${p == null ? '—' : (p > 0 ? '+' : '') + LX.num(p, 2) + '%'}</span>` : '') + '</a>';
                     });
                 });
