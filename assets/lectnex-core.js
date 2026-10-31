@@ -516,6 +516,7 @@
     const CMD = [
         ['futuros', 'PLANO', 'Plano do Dia', 'Checklist pré-mercado, limite de perda e placar do dia', 'futuros.html#plano', 'ph-clipboard-text', 'plano dia checklist pre mercado disciplina limite perda placar rotina'],
         ['futuros', 'DIARIO', 'Diário de Trades', 'Histórico mensal, curva de capital, calendário e DARF automático', 'futuros.html#diario', 'ph-notebook', 'diario journal historico operacoes darf imposto ir curva capital calendario exportar planilha'],
+        ['futuros', 'ROLAGEM', 'Placar de vencimento', 'Contagem regressiva até o último pregão de WIN e WDO', 'futuros.html#placar', 'ph-timer', 'rolagem placar contagem vencimento ultimo pregao win wdo contrato vigente'],
         ['futuros', 'VENC', 'Vencimentos', 'WIN, WDO, DI1 e opções pelas regras da B3', 'futuros.html#vencimentos', 'ph-calendar-check', 'vencimento rolagem contrato vigente serie'],
         ['futuros', 'SPEC', 'Especificações dos contratos', 'Valor do ponto, tick, horário, margem', 'futuros.html#specs', 'ph-list-checks', 'especificacao ponto tick lote horario'],
         ['futuros', 'RISCO', 'Calculadora de risco', 'Tamanho de posição, stop, alvo, expectativa', 'futuros.html#risco', 'ph-shield-check', 'gestao stop alvo posicao contratos day trade'],
@@ -549,7 +550,7 @@
         ['GGBR4', 'Gerdau', 'Siderurgia'], ['RADL3', 'Raia Drogasil', 'Farmácias'], ['EQTL3', 'Equatorial', 'Energia'], ['SBSP3', 'Sabesp', 'Saneamento'],
         ['VIVT3', 'Vivo', 'Telecom'], ['EMBR3', 'Embraer', 'Aeronáutica'], ['RAIL3', 'Rumo', 'Logística'], ['CMIG4', 'Cemig', 'Energia']
     ];
-    const SHORT = { MAPA: 'Mapa de calor', PLANO: 'Plano do dia', DIARIO: 'Diário', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
+    const SHORT = { ROLAGEM: 'Rolagem', MAPA: 'Mapa de calor', PLANO: 'Plano do dia', DIARIO: 'Diário', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
     LX.paletteItems = CMD.map(c => [c[0].toUpperCase(), c[2], c[4]]); // compatibilidade
     const CATS = [['tudo', 'Tudo'], ['acoes', 'Ações'], ['futuros', 'Futuros'], ['mercado', 'Mercado'], ['lab', 'Laboratório']];
     const norm = t => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -720,10 +721,45 @@
         if ((!typing && e.key === '/') || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) { e.preventDefault(); LX.openPalette(); }
     });
 
+    /* ------------------------------------------------------------------ CONTRATOS VIGENTES E ÚLTIMO PREGÃO */
+    // WIN: negocia até o próprio vencimento (quarta mais próxima do dia 15). WDO: até o último dia útil ANTES do vencimento
+    // (1º dia útil do mês). Fechamento considerado: 18h25 de Brasília.
+    LX.FUT_CLOSE = 18 * 60 + 25;
+    LX.liveContracts = function () {
+        const now = LX.nowBRT(), mins = now.getHours() * 60 + now.getMinutes();
+        const prevBiz = d => { let x = LX.addDays(d, -1); while (!LX.isBusinessDay(x)) x = LX.addDays(x, -1); return x; };
+        const pick = (list, lastOf) => {
+            const rows = list.map(c => Object.assign({}, c, { lastTrade: lastOf(c) }));
+            const i = rows.findIndex(c => { const t = LX.iso(c.lastTrade), td = LX.iso(LX.todayBRT()); return t > td || (t === td && mins < LX.FUT_CLOSE); });
+            const cur = rows[Math.max(0, i)], next = rows[Math.max(0, i) + 1];
+            const end = new Date(cur.lastTrade.getFullYear(), cur.lastTrade.getMonth(), cur.lastTrade.getDate(), 18, 25);
+            return Object.assign(cur, { next, end, msLeft: end - now, duLeft: LX.businessDaysBetween(LX.todayBRT(), cur.lastTrade, true) });
+        };
+        return { WIN: pick(LX.upcomingWIN(3), c => c.expiry), WDO: pick(LX.upcomingWDO(3), c => prevBiz(c.expiry)) };
+    };
+    // Aviso no topo de todas as páginas quando o último pregão de WIN/WDO é hoje ou no próximo pregão
+    function rollBanner() {
+        const head = document.getElementById('lx-header'); if (!head) return;
+        let el = document.getElementById('lx-roll');
+        const lc = LX.liveContracts(), today = LX.iso(LX.todayBRT()), nextB = LX.iso(LX.nextBusinessDay(LX.addDays(LX.todayBRT(), 1)));
+        const msgs = ['WDO', 'WIN'].map(k => {
+            const c = lc[k], d = LX.iso(c.lastTrade);
+            if (d !== today && d !== nextB) return '';
+            const when = d === today ? 'HOJE até 18h25' : `${LX.weekday(c.lastTrade)} ${LX.brShort(c.lastTrade)} (próximo pregão)`;
+            return `<span class="inline-flex items-center gap-2"><i class="ph-fill ph-warning"></i><strong>Último pregão do ${c.code}: ${when}</strong><span class="opacity-90">→ a liquidez migra para o ${c.next ? c.next.code : 'próximo contrato'}</span></span>`;
+        }).filter(Boolean);
+        if (!msgs.length) { if (el) el.remove(); return; }
+        if (!el) { el = document.createElement('div'); el.id = 'lx-roll'; head.insertAdjacentElement('afterend', el); }
+        const hot = msgs.some(m => m.includes('HOJE'));
+        el.className = (hot ? 'bg-rose-600' : 'bg-lect-orange') + ' text-white font-mono text-[11px]';
+        el.innerHTML = `<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex flex-wrap items-center justify-between gap-x-6 gap-y-1"><div class="flex flex-wrap gap-x-6 gap-y-1">${msgs.join('')}</div><a href="futuros.html#placar" class="underline decoration-dotted whitespace-nowrap">ver placar de vencimento →</a></div>`;
+    }
+
     /* ------------------------------------------------------------------ BOOT */
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
+        rollBanner(); setInterval(rollBanner, 60000);
         // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs
         if (LX.data.cachedAt) document.dispatchEvent(new CustomEvent('lx:macro', { detail: LX.data }));
         if (LX.data.fxCached) document.dispatchEvent(new CustomEvent('lx:fx', { detail: LX.data.fx }));

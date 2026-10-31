@@ -3,7 +3,7 @@
 ```
 index.html          Mercado Hoje: faixa B3, Leitura do Dia (IA), mapa de calor, indicadores, agenda, câmbio, mercados globais, notícias
 macro.html          Macro & Juros: Copom, Focus, curva DI, regimes de risco, mapa "E se…?"
-futuros.html        WIN, WDO e DI: Plano do Dia (checklist, limite de perda, placar), Diário de Trades (curva, calendário, DARF automático), vencimentos, risco, Kelly, IR, dólar justo
+futuros.html        WIN, WDO e DI: Placar de vencimento (contagem até o último pregão), Plano do Dia (checklist, limite de perda, placar), Diário de Trades (curva, calendário, DARF automático), vencimentos, risco, Kelly, IR, dólar justo
 acoes.html          Ações B3: cotação (brapi), gráfico (TradingView), painéis didáticos de fluxo/opções
 laboratorio.html    Academia (trilhas, lições interativas, glossário) + simuladores
 assets/

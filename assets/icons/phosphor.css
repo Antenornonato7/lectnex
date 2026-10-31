@@ -283,6 +283,9 @@
 .ph.ph-thermometer-hot:before {
   content: "\e5ca";
 }
+.ph.ph-timer:before {
+  content: "\e492";
+}
 .ph.ph-trash:before {
   content: "\e4a6";
 }
@@ -596,6 +599,9 @@
 .ph-bold.ph-thermometer-hot:before {
   content: "\e5ca";
 }
+.ph-bold.ph-timer:before {
+  content: "\e492";
+}
 .ph-bold.ph-trash:before {
   content: "\e4a6";
 }
@@ -908,6 +914,9 @@
 }
 .ph-fill.ph-thermometer-hot:before {
   content: "\e5ca";
+}
+.ph-fill.ph-timer:before {
+  content: "\e492";
 }
 .ph-fill.ph-trash:before {
   content: "\e4a6";
@@ -1630,6 +1639,14 @@
 }
 .ph-duotone.ph-thermometer-hot:after {
   content: "\e5cb";
+  margin-left: -1em;
+}
+.ph-duotone.ph-timer:before {
+  content: "\e492";
+  opacity: 0.2;
+}
+.ph-duotone.ph-timer:after {
+  content: "\e493";
   margin-left: -1em;
 }
 .ph-duotone.ph-trash:before {

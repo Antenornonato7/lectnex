@@ -27,14 +27,14 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://antenornonato7.github.io/lectnex/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031i">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031j">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031i">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031i">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031j">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031j">
 </head>
 <body data-page="futuros" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -52,12 +52,16 @@
                     <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl">Tudo o que o trader de WIN e WDO precisa ter à mão: contrato vigente e rolagem, especificações, vencimentos calculados pelas regras da B3, gestão de risco por operação, IR de day trade e preço justo do dólar futuro.</p>
                 </div>
                 <div class="font-mono text-[11px] flex flex-wrap gap-2">
+                    <a href="#placar" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark font-semibold"><i class="ph-bold ph-timer"></i> Vencimentos</a>
                     <a href="#plano" class="px-3 py-2 bg-lect-orange text-white font-semibold"><i class="ph-bold ph-clipboard-text"></i> Plano do dia</a>
                     <a href="#diario" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark font-semibold"><i class="ph-bold ph-notebook"></i> Diário</a>
                     <a href="#risco" class="px-3 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-semibold">Calculadora de risco</a>
                     <a href="#paridade" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Dólar justo</a>
                 </div>
             </div>
+
+            <!-- PLACAR DE VENCIMENTO (contagem até o último pregão de cada contrato) -->
+            <section id="placar" class="grid grid-cols-1 md:grid-cols-2 gap-3 scroll-mt-28"></section>
 
             <!-- PLANO DO DIA -->
             <section id="plano" class="term-panel overflow-hidden scroll-mt-28">
@@ -315,7 +319,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031i"></script>
+    <script src="assets/lectnex-core.js?v=20261031j"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -356,6 +360,31 @@
             tbl('WDO', '1º DIA ÚTIL', wdo.map((c, i) => row([c.code, `${LX.weekday(c.expiry)} ${LX.br(c.expiry)}`, c.du], c === wdoLive)), ['Contrato', 'Vencimento', 'DU']) +
             tbl('Opções', '3ª SEXTA', opt.map((c, i) => row([`${c.callLetter} / ${c.putLetter}`, `${LX.weekday(c.expiry)} ${LX.br(c.expiry)}`, c.du], i === 0)), ['Call / Put', 'Vencimento', 'DU']) +
             tbl('DI1 (Jan)', 'BASE ANBIMA', di.map((c, i) => row([c.code, LX.br(c.expiry), c.du.toLocaleString('pt-BR')], i === 0)), ['Vértice', 'Vencimento', 'DU']);
+
+        /* ---------- Placar de vencimento ---------- */
+        (function () {
+            const box = document.getElementById('placar'); if (!box) return;
+            const NAMES = { WIN: ['Mini Índice', 'R$ 0,20/pt · vence na quarta mais próxima do dia 15 (meses pares)'], WDO: ['Mini Dólar', 'R$ 10/pt · último pregão é o dia útil antes do vencimento (1º dia útil do mês)'] };
+            function paint() {
+                const lc = LX.liveContracts();
+                box.innerHTML = ['WIN', 'WDO'].map(k => {
+                    const c = lc[k], ms = Math.max(0, c.msLeft), d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4), sec = Math.floor(ms % 6e4 / 1e3);
+                    const du = c.duLeft, lvl = du <= 1 ? 'red' : du <= 5 ? 'orange' : 'teal';
+                    const tone = { red: ['border-rose-500', 'text-rose-600 dark:text-rose-400', 'bg-rose-500', 'ÚLTIMO PREGÃO ' + (LX.iso(c.lastTrade) === LX.iso(LX.todayBRT()) ? 'HOJE' : 'AMANHÃ')], orange: ['border-lect-orange', 'text-lect-orange', 'bg-lect-orange', 'SEMANA DE ROLAGEM'], teal: ['border-lect-teal', 'text-lect-teal', 'bg-lect-teal', 'CONTRATO VIGENTE'] }[lvl];
+                    // ciclo: do último pregão do contrato anterior até o deste (aprox. pela janela de dias úteis)
+                    const cycle = k === 'WIN' ? 42 : 21, pct = Math.max(2, Math.min(100, (1 - du / cycle) * 100));
+                    const cell = (v, l) => `<div class="text-center"><strong class="block font-mono text-2xl sm:text-3xl tabular-nums ${tone[1]}">${String(v).padStart(2, '0')}</strong><span class="font-mono text-[9px] text-slate-500 uppercase">${l}</span></div>`;
+                    return `<div class="term-panel p-4 border-l-4 ${tone[0]}">
+                        <div class="flex items-start justify-between gap-2"><div><span class="term-label block">${NAMES[k][0]} · ${tone[3]}</span><strong class="font-display text-2xl">${c.code}</strong></div>
+                        <div class="text-right font-mono text-[11px] text-slate-500"><span class="block">último pregão</span><strong class="text-slate-800 dark:text-white">${LX.weekday(c.lastTrade)} ${LX.br(c.lastTrade)} · 18h25</strong><span class="block">${du} dia${du === 1 ? '' : 's'} út${du === 1 ? 'il' : 'eis'}</span></div></div>
+                        <div class="grid grid-cols-4 gap-2 mt-3 py-2 bg-slate-50 dark:bg-lect-bgDark">${cell(d, 'dias')}${cell(h, 'horas')}${cell(m, 'min')}${cell(sec, 'seg')}</div>
+                        <div class="h-1.5 mt-3 bg-slate-100 dark:bg-lect-bgDark"><div class="h-full ${tone[2]}" style="width:${pct}%"></div></div>
+                        <p class="text-[11px] text-slate-600 dark:text-slate-300 mt-2 leading-snug">${lvl === 'teal' ? `Liquidez concentrada no <strong>${c.code}</strong>. ${NAMES[k][1]}.` : lvl === 'orange' ? `A rolagem para o <strong>${c.next ? c.next.code : 'próximo'}</strong> costuma ganhar força nesta janela: compare o volume dos dois antes de operar.` : `Book do <strong>${c.code}</strong> fica fino: opere o <strong>${c.next ? c.next.code : 'próximo contrato'}</strong>, que já concentra a liquidez.`}</p>
+                    </div>`;
+                }).join('');
+            }
+            paint(); setInterval(paint, 1000);
+        })();
 
         /* ---------- Plano do Dia ---------- */
         (function () {
