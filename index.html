@@ -27,12 +27,14 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031h">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031i">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031h">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031h">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031i">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031i">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -42,9 +44,9 @@
     <!-- FAIXA DE COTAÇÕES GLOBAIS (TradingView, dados reais) -->
     <div class="border-b border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark h-[46px] overflow-hidden" id="tv-tape"></div>
     <!-- FAIXA B3 (Ibovespa + ações de maior peso) — data/cotacoes.json, atualizado pelo workflow "Cotações B3" -->
-    <div id="b3-tape" class="hidden border-b border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-[#08111F] h-10 overflow-hidden relative">
+    <div id="b3-tape" class="border-b border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-[#08111F] h-10 overflow-hidden relative">
         <div class="absolute left-0 inset-y-0 z-10 flex items-center gap-2 px-3 bg-slate-50 dark:bg-[#08111F] border-r border-slate-300 dark:border-lect-borderDark shadow-[6px_0_8px_-4px_rgba(0,0,0,.35)] font-mono text-[10px] font-bold text-lect-teal" title="Cotações com atraso de cerca de 30 minutos (brapi.dev)"><span class="px-1.5 py-0.5 bg-lect-teal text-white">B3</span><span id="b3-when" class="text-slate-500 font-normal hidden sm:inline"></span></div>
-        <div id="b3-track" class="lx-marquee flex items-center h-full font-mono text-xs whitespace-nowrap"></div>
+        <div id="b3-track" class="lx-marquee flex items-center h-full font-mono text-xs whitespace-nowrap"><span class="lx-skel-block w-[200vw]"></span></div>
     </div>
 
     <!-- ================================================================================= -->
@@ -162,14 +164,14 @@
                 </div>
             </div>
             <div id="mp-sectors" class="flex flex-wrap gap-1.5 mb-2 font-mono text-[10px]"></div>
-            <div class="grid grid-cols-1 xl:grid-cols-12 gap-3">
-                <div id="mp-box" class="xl:col-span-9 relative w-full h-[440px] sm:h-[480px] bg-slate-200 dark:bg-lect-borderDark overflow-hidden select-none"></div>
-                <div class="xl:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-3 content-start">
-                    <div class="term-panel"><div class="px-3 py-2 border-b border-slate-200 dark:border-lect-borderDark flex items-center gap-1.5 term-label font-bold !text-emerald-600 dark:!text-emerald-400"><i class="ph-bold ph-trend-up"></i>MAIORES ALTAS</div><div id="mp-top" class="divide-y divide-slate-100 dark:divide-lect-borderDark"></div></div>
-                    <div class="term-panel"><div class="px-3 py-2 border-b border-slate-200 dark:border-lect-borderDark flex items-center gap-1.5 term-label font-bold !text-rose-600 dark:!text-rose-400"><i class="ph-bold ph-trend-down"></i>MAIORES BAIXAS</div><div id="mp-bottom" class="divide-y divide-slate-100 dark:divide-lect-borderDark"></div></div>
-                    <p class="text-[10px] font-mono text-slate-500 sm:col-span-2 xl:col-span-1"><i class="ph-fill ph-lightning text-lect-orange"></i> = movimento de 5% ou mais no dia</p>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 items-stretch">
+                <div id="mp-box" class="lg:col-span-9 relative w-full h-[440px] sm:h-[480px] bg-slate-200 dark:bg-lect-borderDark overflow-hidden select-none"></div>
+                <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:grid-rows-2 gap-3 lg:h-[480px]">
+                    <div class="term-panel flex flex-col min-h-0"><div class="px-3 py-2.5 border-b border-slate-200 dark:border-lect-borderDark flex items-center justify-center gap-1.5 term-label font-bold !text-emerald-600 dark:!text-emerald-400"><i class="ph-bold ph-trend-up"></i>MAIORES ALTAS</div><div id="mp-top" class="flex-1 flex flex-col justify-around divide-y divide-slate-100 dark:divide-lect-borderDark"></div></div>
+                    <div class="term-panel flex flex-col min-h-0"><div class="px-3 py-2.5 border-b border-slate-200 dark:border-lect-borderDark flex items-center justify-center gap-1.5 term-label font-bold !text-rose-600 dark:!text-rose-400"><i class="ph-bold ph-trend-down"></i>MAIORES BAIXAS</div><div id="mp-bottom" class="flex-1 flex flex-col justify-around divide-y divide-slate-100 dark:divide-lect-borderDark"></div></div>
                 </div>
             </div>
+            <p class="mt-2 text-[10px] font-mono text-slate-500"><i class="ph-fill ph-lightning text-lect-orange"></i> = movimento de 5% ou mais no dia · dados com atraso de ~30 min (brapi.dev)</p>
             <div id="mp-tip" class="hidden fixed z-50 pointer-events-none px-3 py-2 bg-lect-navy text-white text-xs font-mono shadow-xl border-l-2 border-lect-orange"></div>
         </div>
     </section>
@@ -253,7 +255,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031h"></script>
+    <script src="assets/lectnex-core.js?v=20261031i"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -283,7 +285,7 @@
 
         /* ---------- Faixa B3 ---------- */
         fetch('data/cotacoes.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
-            if (!d || !Array.isArray(d.itens) || !d.itens.length) return;
+            if (!d || !Array.isArray(d.itens) || !d.itens.length) { document.getElementById('b3-tape').classList.add('hidden'); return; }
             const chip = x => {
                 const p = x.var_pct, cls = p == null ? 'text-slate-500' : p > 0 ? 'text-emerald-600 dark:text-emerald-400' : p < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500';
                 const arrow = p == null ? '' : p > 0 ? '▲' : p < 0 ? '▼' : '■';
@@ -301,7 +303,7 @@
                 document.getElementById('b3-when').textContent = live ? hm + ' · atraso ~30 min' : 'fech. ' + LX.brShort(last);
             }
             document.getElementById('b3-tape').classList.remove('hidden');
-        }).catch(() => { });
+        }).catch(() => document.getElementById('b3-tape').classList.add('hidden'));
 
         /* ---------- Mapa de calor da B3 (treemap por setor) ---------- */
         (function () {
@@ -377,7 +379,7 @@
                 const t = d.mapa_em ? new Date(d.mapa_em) : null;
                 if (t) { let last = new Date(LX.todayBRT()); while (!LX.isBusinessDay(last)) last = LX.addDays(last, -1); const live = LX.isBusinessDay(LX.todayBRT()) && LX.iso(t) === LX.iso(LX.todayBRT()); document.getElementById('mp-when').textContent = live ? `atualizado ${t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' })} · atraso ~30 min · brapi.dev` : `fechamento de ${LX.weekday(last)} ${LX.brShort(last)} · brapi.dev`; }
                 const valid = data.filter(m => m.var_pct != null).sort((x, y) => y.var_pct - x.var_pct);
-                const row = m => `<a href="acoes.html?ticker=${m.ticker}" class="flex items-center justify-between gap-2 px-3 py-2 font-mono text-xs hover:bg-slate-50 dark:hover:bg-lect-bgDark"><span class="flex items-center gap-1.5 min-w-0"><strong>${m.ticker}</strong>${Math.abs(m.var_pct) >= 5 ? '<i class="ph-fill ph-lightning text-lect-orange"></i>' : ''}<span class="text-[10px] text-slate-500 truncate hidden sm:inline">${LX.esc(m.setor)}</span></span><span class="flex items-center gap-2 shrink-0"><span class="text-slate-500 tabular-nums">${LX.num(m.preco, 2)}</span><strong class="tabular-nums w-16 text-right ${m.var_pct > 0 ? 'text-emerald-600 dark:text-emerald-400' : m.var_pct < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500'}">${m.var_pct > 0 ? '+' : ''}${LX.num(m.var_pct, 2)}%</strong></span></a>`;
+                const row = m => `<a href="acoes.html?ticker=${m.ticker}" title="${LX.esc(m.setor)}" class="flex-1 grid grid-cols-[1fr_auto_auto] items-center gap-3 px-4 py-2 font-mono text-xs hover:bg-slate-50 dark:hover:bg-lect-bgDark"><span class="flex items-center gap-1.5 min-w-0"><strong class="text-sm">${m.ticker}</strong>${Math.abs(m.var_pct) >= 5 ? '<i class="ph-fill ph-lightning text-lect-orange"></i>' : ''}</span><span class="text-slate-500 tabular-nums text-right">R$ ${LX.num(m.preco, 2)}</span><strong class="tabular-nums w-16 text-right ${m.var_pct > 0 ? 'text-emerald-600 dark:text-emerald-400' : m.var_pct < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500'}">${m.var_pct > 0 ? '+' : ''}${LX.num(m.var_pct, 2)}%</strong></a>`;
                 const ups = valid.filter(m => m.var_pct > 0).slice(0, 5), downs = valid.filter(m => m.var_pct < 0).reverse().slice(0, 5);
                 document.getElementById('mp-top').innerHTML = ups.map(row).join('') || '<p class="px-3 py-3 text-xs text-slate-500">Nenhuma alta entre as principais.</p>';
                 document.getElementById('mp-bottom').innerHTML = downs.map(row).join('') || '<p class="px-3 py-3 text-xs text-slate-500">Nenhuma baixa entre as principais.</p>';

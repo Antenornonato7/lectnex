@@ -367,6 +367,16 @@
         const host = document.getElementById(id);
         if (!host) return;
         if (!LX._tvWidgets.find(w => w.id === id)) LX._tvWidgets.push({ id, type, cfg });
+        // Faixa de cotações (topo): carrega quando o navegador estiver livre, depois da primeira pintura
+        if (!now && type === 'ticker-tape') {
+            if (!host.dataset.tvWaiting) {
+                host.dataset.tvWaiting = '1'; host.innerHTML = '<div class="lx-skel-block"></div>';
+                const go = () => LX.tv(id, type, cfg, true);
+                const idle = () => ('requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 2500 }) : setTimeout(go, 1200));
+                if (document.readyState === 'complete') idle(); else addEventListener('load', idle, { once: true });
+            }
+            return;
+        }
         if (!now && tvIO) {
             if (!host.dataset.tvWaiting) { host.dataset.tvWaiting = '1'; host.innerHTML = '<div class="lx-skel-block"></div>'; tvIO.observe(host); }
             return;
