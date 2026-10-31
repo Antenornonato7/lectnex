@@ -12,7 +12,7 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
    - Fechamento de ontem e futuros de agora: S&P 500, Nasdaq, Treasury 10 anos, DXY, petróleo Brent, minério de ferro.
    - Ibovespa e dólar no fechamento de ontem.
    - Agenda de hoje no Brasil e nos EUA, com horário de Brasília (Copom, IPCA, payroll, CPI, falas do Fed/BCB, leilões do Tesouro).
-   - Notícias que mexem com o Brasil: fiscal, política monetária, commodities, China.
+   - Notícias que mexem com o Brasil: fiscal, política monetária, commodities, China. Selecione as 5 mais relevantes para `noticias`.
    Também confira `LX.agendaFixed` e os vencimentos (WIN: quarta mais próxima do dia 15 dos meses pares; WDO: 1º dia útil do mês).
 3. **Escreva `data/leitura.json`** no formato abaixo (UTF-8, JSON válido).
 4. **Valide**: `python3 -c "import json;d=json.load(open('data/leitura.json'));assert d['data'] and 3<=len(d['resumo'])<=5"`.
@@ -40,6 +40,16 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
     { "ativo": "S&P 500 fut.", "variacao": "+0,4%" },
     { "ativo": "DXY", "variacao": "−0,2%" }
   ],
+  "noticias": [
+    {
+      "titulo": "Manchete reescrita de forma objetiva",
+      "fonte": "Nome do veículo",
+      "hora": "07h10",
+      "url": "https://...",
+      "por_que": "Uma frase: por que isso importa para quem opera WIN/WDO hoje.",
+      "impacto": { "win": "alta | baixa | neutro", "wdo": "alta | baixa | neutro", "di": "alta | baixa | neutro" }
+    }
+  ],
   "fontes": [
     { "titulo": "Nome do veículo — título da matéria", "url": "https://..." }
   ]
@@ -49,6 +59,7 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
 - `termometro.*.leitura` é o **viés do dia para o preço** do ativo: no WDO, `bullish` = dólar tende a subir.
 - `exterior`: use `+` ou `−` no início da variação; até 6 itens. Pode ficar vazio se não houver dado confiável.
 - `destaques`: até 4, em ordem de horário.
+- `noticias`: as 5 notícias (máx. 6) das últimas ~18 horas que mais mexem com WIN, WDO e DI. Prefira fatos (decisões, dados, números) a opinião. `impacto` = direção provável do preço do ativo por causa daquela notícia; omita o ativo se não houver efeito claro. A `url` precisa ser o link real da matéria que você abriu.
 - `fontes`: 2 a 6 links reais que você abriu.
 
 ## Regras de conteúdo

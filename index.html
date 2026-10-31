@@ -131,6 +131,10 @@
                         <div id="lt-exterior" class="mt-4"></div>
                     </div>
                 </div>
+                <div id="lt-news-wrap" class="hidden border-t border-slate-200 dark:border-lect-borderDark">
+                    <div class="px-5 pt-4 flex items-center justify-between"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-newspaper text-lect-teal"></i>NOTÍCIAS QUE IMPORTAM</span><span class="font-mono text-[10px] text-slate-500">seleção da IA · com o impacto em cada ativo</span></div>
+                    <div id="lt-news" class="p-5 pt-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3"></div>
+                </div>
                 <div id="lt-fontes" class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[10px] font-mono text-slate-500 flex flex-wrap gap-x-3 gap-y-1"></div>
             </div>
         </div>
@@ -271,6 +275,20 @@
                 el('lt-resumo').innerHTML = d.resumo.slice(0, 5).map(x => `<li class="flex gap-2.5 text-sm leading-relaxed"><span class="mt-2 w-1.5 h-1.5 bg-lect-orange shrink-0"></span><span class="text-slate-700 dark:text-slate-300">${esc(x)}</span></li>`).join('');
                 el('lt-destaques').innerHTML = (d.destaques || []).slice(0, 4).map(x => `<div class="flex gap-2"><span class="shrink-0 w-12 font-mono text-[11px] font-bold text-lect-teal pt-0.5">${esc(x.hora || '')}</span><div><strong class="block text-xs">${esc(x.evento || '')}</strong>${x.por_que ? `<span class="block text-[11px] text-slate-500 leading-snug">${esc(x.por_que)}</span>` : ''}</div></div>`).join('') || '<p class="text-xs text-slate-500">Sem evento relevante marcado.</p>';
                 el('lt-exterior').innerHTML = (d.exterior || []).length ? `<span class="term-label font-bold">EXTERIOR</span><div class="grid grid-cols-2 gap-1 mt-1.5 font-mono text-[11px]">${d.exterior.slice(0, 6).map(x => { const neg = /^[−-]/.test(x.variacao || ''); return `<div class="flex justify-between px-2 py-1 bg-slate-50 dark:bg-lect-bgDark"><span class="text-slate-500 truncate">${esc(x.ativo)}</span><strong class="${neg ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'}">${esc(x.variacao)}</strong></div>`; }).join('')}</div>` : '';
+                const IMP = { alta: ['▲', 'text-emerald-600 dark:text-emerald-400 border-emerald-500/40'], baixa: ['▼', 'text-rose-600 dark:text-rose-400 border-rose-500/40'], neutro: ['●', 'text-slate-500 border-slate-400/40'] };
+                const news = (d.noticias || []).filter(n => n && n.titulo).slice(0, 6);
+                if (news.length) {
+                    el('lt-news-wrap').classList.remove('hidden');
+                    el('lt-news').innerHTML = news.map(n => {
+                        const tags = Object.entries(n.impacto || {}).filter(([, v]) => IMP[v]).map(([k, v]) => `<span class="px-1.5 py-0.5 border font-mono text-[10px] font-bold ${IMP[v][1]}">${esc(k.toUpperCase())} ${IMP[v][0]}</span>`).join('');
+                        const link = /^https?:\/\//.test(n.url || '');
+                        return `<${link ? `a href="${esc(n.url)}" target="_blank" rel="noopener nofollow"` : 'div'} class="group block p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark hover:border-lect-teal transition-colors">
+                            <div class="flex items-center justify-between gap-2 font-mono text-[10px] text-slate-500"><span class="truncate">${esc(n.fonte || '')}${n.hora ? ' · ' + esc(n.hora) : ''}</span>${link ? '<i class="ph-bold ph-arrow-up-right group-hover:text-lect-teal"></i>' : ''}</div>
+                            <strong class="block text-sm leading-snug mt-1.5">${esc(n.titulo)}</strong>
+                            ${n.por_que ? `<p class="text-[11px] text-slate-600 dark:text-slate-300 mt-1.5 leading-snug">${esc(n.por_que)}</p>` : ''}
+                            ${tags ? `<div class="flex flex-wrap gap-1 mt-2">${tags}</div>` : ''}</${link ? 'a' : 'div'}>`;
+                    }).join('');
+                }
                 el('lt-fontes').innerHTML = '<span><i class="ph-bold ph-sparkle"></i> Gerado por IA (Claude) a partir de fontes públicas · pode conter imprecisões.</span>' + (d.fontes || []).slice(0, 6).map(f => /^https?:\/\//.test(f.url || '') ? `<a href="${esc(f.url)}" target="_blank" rel="noopener nofollow" class="hover:text-lect-teal underline decoration-dotted">${esc(f.titulo || f.url)}</a>` : '').join('');
             }).catch(() => { });
         })();

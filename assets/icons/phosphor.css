@@ -43,6 +43,9 @@
 .ph.ph-arrow-right:before {
   content: "\e06c";
 }
+.ph.ph-arrow-up-right:before {
+  content: "\e092";
+}
 .ph.ph-arrows-clockwise:before {
   content: "\e094";
 }
@@ -326,6 +329,9 @@
 .ph-bold.ph-arrow-right:before {
   content: "\e06c";
 }
+.ph-bold.ph-arrow-up-right:before {
+  content: "\e092";
+}
 .ph-bold.ph-arrows-clockwise:before {
   content: "\e094";
 }
@@ -608,6 +614,9 @@
 }
 .ph-fill.ph-arrow-right:before {
   content: "\e06c";
+}
+.ph-fill.ph-arrow-up-right:before {
+  content: "\e092";
 }
 .ph-fill.ph-arrows-clockwise:before {
   content: "\e094";
@@ -900,6 +909,14 @@
 }
 .ph-duotone.ph-arrow-right:after {
   content: "\e06d";
+  margin-left: -1em;
+}
+.ph-duotone.ph-arrow-up-right:before {
+  content: "\e092";
+  opacity: 0.2;
+}
+.ph-duotone.ph-arrow-up-right:after {
+  content: "\e093";
   margin-left: -1em;
 }
 .ph-duotone.ph-arrows-clockwise:before {
