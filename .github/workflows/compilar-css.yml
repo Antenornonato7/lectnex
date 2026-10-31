@@ -31,7 +31,7 @@ jobs:
           python-version: "3.12"
       - name: Recortar ícones usados
         run: |
-          pip install fonttools
+          pip install fonttools==4.66.1
           python3 scripts/icones.py
       - name: Publicar se mudou
         run: |

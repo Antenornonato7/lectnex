@@ -1,7 +1,7 @@
 """Gera assets/icons/ com só os ícones Phosphor usados no site (CSS + fontes recortadas).
 
 Uso: python3 scripts/icones.py            (baixa o Phosphor v2.1.1 do GitHub se precisar)
-Requer: pip install fonttools
+Requer: pip install fonttools==4.66.1 (mesma versão do workflow, para a saída ser idêntica)
 """
 import glob, os, re, subprocess, sys, tempfile
 from fontTools import subset
