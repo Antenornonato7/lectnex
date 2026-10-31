@@ -257,8 +257,7 @@
                 // Só ativos que o widget gratuito mostra com variação (dados da B3 vêm da faixa própria abaixo)
                 { proName: 'FOREXCOM:SPXUSD', title: 'S&P 500' }, { proName: 'FOREXCOM:NSXUSD', title: 'Nasdaq 100' },
                 { proName: 'FOREXCOM:DJI', title: 'Dow Jones' }, { proName: 'AMEX:EWZ', title: 'EWZ (Brasil em NY)' },
-                { proName: 'FX_IDC:USDBRL', title: 'USD/BRL' }, { proName: 'TVC:DXY', title: 'DXY' },
-                { proName: 'TVC:US10Y', title: 'Treasury 10a' }, { proName: 'TVC:UKOIL', title: 'Brent' },
+                { proName: 'FX_IDC:USDBRL', title: 'USD/BRL' }, { proName: 'TVC:UKOIL', title: 'Brent' },
                 { proName: 'TVC:GOLD', title: 'Ouro' }, { proName: 'BITSTAMP:BTCUSD', title: 'Bitcoin' }
             ], showSymbolLogo: true, displayMode: 'adaptive'
         });
@@ -332,7 +331,9 @@
                 if (!data) return;
                 const W = box.clientWidth, H = box.clientHeight, G = 2;
                 const groups = {};
-                data.forEach(m => { const v = m.mcap || 1e10; (groups[m.setor] = groups[m.setor] || []).push(Object.assign({}, m, { v })); });
+                // sem valor de mercado (ex.: units) → tamanho neutro = mediana do mapa, sinalizado no detalhe
+                const mcs = data.map(m => m.mcap).filter(Boolean).sort((a, b) => a - b), med = mcs.length ? mcs[mcs.length >> 1] : 1e10;
+                data.forEach(m => { const v = m.mcap || med; (groups[m.setor] = groups[m.setor] || []).push(Object.assign({}, m, { v })); });
                 const secs = squarify(Object.entries(groups).map(([k, arr]) => ({ k, arr, v: arr.reduce((a, b) => a + b.v, 0) })), { x: 0, y: 0, w: W, h: H });
                 let html = '';
                 secs.forEach(sc => {
@@ -349,7 +350,7 @@
                 box.querySelectorAll('[data-mp]').forEach(a => {
                     a.addEventListener('mousemove', e => {
                         const m = by[a.dataset.mp];
-                        tip.innerHTML = `<div class="text-lect-orange font-bold">${m.ticker}</div><div class="text-slate-300">${LX.esc(m.setor)}</div><div class="mt-1">R$ ${LX.num(m.preco, 2)} · <strong class="${m.var_pct > 0 ? 'text-emerald-300' : m.var_pct < 0 ? 'text-rose-300' : ''}">${m.var_pct == null ? '—' : (m.var_pct > 0 ? '+' : '') + LX.num(m.var_pct, 2) + '%'}</strong></div>${m.mcap ? `<div class="text-slate-400">valor de mercado R$ ${LX.num(m.mcap / 1e9, 0)} bi</div>` : ''}`;
+                        tip.innerHTML = `<div class="text-lect-orange font-bold">${m.ticker}</div><div class="text-slate-300">${LX.esc(m.setor)}</div><div class="mt-1">R$ ${LX.num(m.preco, 2)} · <strong class="${m.var_pct > 0 ? 'text-emerald-300' : m.var_pct < 0 ? 'text-rose-300' : ''}">${m.var_pct == null ? '—' : (m.var_pct > 0 ? '+' : '') + LX.num(m.var_pct, 2) + '%'}</strong></div><div class="text-slate-400">${m.mcap ? `valor de mercado R$ ${LX.num(m.mcap / 1e9, 0)} bi` : 'valor de mercado indisponível (tamanho neutro)'}</div>`;
                         tip.classList.remove('hidden');
                         const x = e.clientX + 14, y = e.clientY + 14;
                         tip.style.left = Math.min(x, innerWidth - tip.offsetWidth - 8) + 'px'; tip.style.top = Math.min(y, innerHeight - tip.offsetHeight - 8) + 'px';
@@ -363,7 +364,8 @@
                 document.getElementById('mapa').classList.remove('hidden');
                 document.getElementById('mp-legend').innerHTML = [-3, -2, -1, 0, 1, 2, 3].map(v => `<span class="w-9 py-0.5 text-center text-white" style="background:${color(v)}">${v > 0 ? '+' : ''}${v}%</span>`).join('');
                 // resumo por setor: variação média ponderada pelo valor de mercado
-                const sec = {}; data.forEach(m => { if (m.var_pct == null) return; const w = m.mcap || 1e10, s = sec[m.setor] = sec[m.setor] || [0, 0]; s[0] += m.var_pct * w; s[1] += w; });
+                const mcs2 = data.map(m => m.mcap).filter(Boolean).sort((a, b) => a - b), med2 = mcs2.length ? mcs2[mcs2.length >> 1] : 1e10;
+                const sec = {}; data.forEach(m => { if (m.var_pct == null) return; const w = m.mcap || med2, s = sec[m.setor] = sec[m.setor] || [0, 0]; s[0] += m.var_pct * w; s[1] += w; });
                 document.getElementById('mp-sectors').innerHTML = Object.entries(sec).map(([k, [a, b]]) => [k, a / b]).sort((x, y) => y[1] - x[1]).map(([k, v]) => `<span class="px-2 py-1 border ${v > 0 ? 'border-emerald-500/40 text-emerald-600 dark:text-emerald-400' : v < 0 ? 'border-rose-500/40 text-rose-600 dark:text-rose-400' : 'border-slate-400/40 text-slate-500'}">${LX.esc(k)} ${v > 0 ? '+' : ''}${LX.num(v, 2)}%</span>`).join('');
                 const t = d.mapa_em ? new Date(d.mapa_em) : null;
                 if (t) { let last = new Date(LX.todayBRT()); while (!LX.isBusinessDay(last)) last = LX.addDays(last, -1); const live = LX.isBusinessDay(LX.todayBRT()) && LX.iso(t) === LX.iso(LX.todayBRT()); document.getElementById('mp-when').textContent = live ? `atualizado ${t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' })} · atraso ~30 min · brapi.dev` : `fechamento de ${LX.weekday(last)} ${LX.brShort(last)} · brapi.dev`; }
