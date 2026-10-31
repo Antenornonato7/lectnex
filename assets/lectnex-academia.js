@@ -277,7 +277,7 @@
                 <div id="w-t-out" class="mt-3"></div>`,
             bind: () => {
                 const run = () => {
-                    const t = $('w-t').value.trim().toUpperCase(), m = t.match(/^([A-Z]{4})(\d{1,2})$/);
+                    const t = $('w-t').value.trim().toUpperCase(), m = t.match(/^([A-Z][A-Z0-9]{3})(\d{1,2})$/);
                     if (!m) { $('w-t-out').innerHTML = '<p class="text-xs text-slate-500">Digite 4 letras e um número, como PETR4.</p>'; return; }
                     const nmb = +m[2], map = { 3: ['ON · ordinária', 'Direito a voto em assembleia e a tag along. É a única classe no Novo Mercado.', '#009988'], 4: ['PN · preferencial', 'Preferência no recebimento de dividendos; em geral sem voto.', '#F39200'], 5: ['PNA · preferencial classe A', 'Preferencial com direitos específicos definidos no estatuto.', '#F39200'], 6: ['PNB · preferencial classe B', 'Outra classe de preferencial, com direitos próprios no estatuto.', '#F39200'], 11: ['Unit, FII ou ETF', 'Final 11 é usado por units (pacote de ON + PN, ex.: TAEE11), fundos imobiliários e ETFs (ex.: BOVA11). Confira o tipo antes de comprar.', '#6366F1'] };
                     const info = map[nmb] || (nmb >= 32 && nmb <= 35 ? ['BDR', 'Recibo de ação estrangeira negociado na B3 (ex.: AAPL34 = Apple).', '#0EA5E9'] : ['Outro tipo', 'Códigos menos comuns: direitos de subscrição (1, 2), recibos (9, 10) etc.', '#64748B']);

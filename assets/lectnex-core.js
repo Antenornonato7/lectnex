@@ -594,7 +594,7 @@
             const sc = score(code, norm(`${code} ${title} ${sub} ${kw}`)); if (sc) out.push({ sc, cat, code, title, sub, href, icon });
         });
         const tk = qRaw.trim().toUpperCase();
-        if (/^[A-Z]{4}\d{1,2}$/.test(tk) && !STOCKS.some(s => s[0] === tk)) out.unshift({ sc: 200, cat: 'acoes', code: tk, title: `Abrir ${tk}`, sub: 'buscar cotação e gráfico em Ações B3', href: 'acoes.html?ticker=' + tk, icon: 'ph-magnifying-glass' });
+        if (/^[A-Z][A-Z0-9]{3}\d{1,2}$/.test(tk) && !STOCKS.some(s => s[0] === tk)) out.unshift({ sc: 200, cat: 'acoes', code: tk, title: `Abrir ${tk}`, sub: 'buscar cotação e gráfico em Ações B3', href: 'acoes.html?ticker=' + tk, icon: 'ph-magnifying-glass' });
         return out.sort((a, b) => b.sc - a.sc).slice(0, q ? 12 : 40);
     }
 

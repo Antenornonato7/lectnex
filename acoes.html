@@ -27,12 +27,12 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-acoes.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Ações B3: Cotação, Fundos Donos e Opções | Lectnex", "url": "https://antenornonato7.github.io/lectnex/acoes.html", "description": "Cotação e gráfico de ações da B3, quais fundos são donos de cada ação (dados abertos da CVM), laboratório de opções com gregas e fluxo do investidor estrangeiro.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031g">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031h">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031g">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031g">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031h">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031h">
 </head>
 <body data-page="acoes" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -91,6 +91,15 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 font-mono tabular-nums text-xs" id="st-cards"></div>
+            </div>
+
+            <!-- SETOR HOJE (dados coletados pelo Lectnex: data/cotacoes.json) -->
+            <div id="peers" class="hidden term-panel p-4">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                    <span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-squares-four text-lect-teal"></i><span id="peers-title">NO SETOR HOJE</span></span>
+                    <span id="peers-rel" class="font-mono text-[11px]"></span>
+                </div>
+                <div id="peers-grid" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-1.5"></div>
             </div>
 
             <!-- GRÁFICO -->
@@ -184,7 +193,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031g"></script>
+    <script src="assets/lectnex-core.js?v=20261031h"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -221,17 +230,37 @@
             document.querySelectorAll('#pills button').forEach(b => b.onclick = () => load(b.dataset.t));
         }
 
-        /* ================= COTAÇÃO (brapi) ================= */
+        /* ================= COTAÇÃO ================= */
+        // 1) Snapshot coletado pelo Lectnex a cada 30 min (data/cotacoes.json): instantâneo e sem gastar o limite da brapi
+        // 2) brapi direto só para a ação aberta (dados extras: 52 semanas, P/L, volume), com cache local de 30 min
+        let snap = null;
+        function loadSnap() {
+            return fetch('data/cotacoes.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+                if (!d) return;
+                snap = d;
+                const t = d.atualizado_em ? new Date(d.atualizado_em) : null, tm = d.mapa_em ? new Date(d.mapa_em) : t;
+                const put = (x, when) => { if (!x || x.preco == null) return; const tk = x.ticker; if (tk === 'IBOV') return; quotes[tk] = Object.assign({}, quotes[tk] || {}, { ok: true, price: x.preco, change: x.var_pct || 0, mcap: x.mcap || (quotes[tk] || {}).mcap, time: when, src: 'lectnex' }); };
+                (d.mapa || []).forEach(x => put(x, tm));
+                (d.itens || []).forEach(x => put(x, t));
+                renderPills(); if (current) { renderQuote(); renderCards(); renderPeers(); if (quotes[current.ticker]) syncSpot(); }
+            }).catch(() => { });
+        }
+        const QC = 'lectnex-quotes-v1';
+        const qcGet = tk => { try { const c = JSON.parse(localStorage.getItem(QC) || '{}')[tk]; return c && Date.now() - c.t < 30 * 60e3 ? c.v : null; } catch (_) { return null; } };
+        const qcSet = (tk, v) => { try { const c = JSON.parse(localStorage.getItem(QC) || '{}'); c[tk] = { t: Date.now(), v }; localStorage.setItem(QC, JSON.stringify(c)); } catch (_) { } };
         async function fetchQuote(tk) {
+            const cached = qcGet(tk);
+            if (cached) { quotes[tk] = Object.assign({}, cached, quotes[tk] && quotes[tk].src === 'lectnex' ? { price: quotes[tk].price, change: quotes[tk].change, time: quotes[tk].time, src: 'lectnex' } : {}, { ok: true }); if (cached.time) quotes[tk].time = new Date(quotes[tk].time); if (current && current.ticker === tk) { renderQuote(); renderCards(); syncSpot(); } renderPills(); return; }
             try {
                 const t = LX.config.brapiToken ? `?token=${encodeURIComponent(LX.config.brapiToken)}` : '';
                 const j = await LX.getJSON(`https://brapi.dev/api/quote/${tk}${t}`);
                 const r = j && j.results && j.results[0];
                 if (!r || !r.regularMarketPrice) throw 0;
-                quotes[tk] = { ok: true, price: r.regularMarketPrice, change: r.regularMarketChangePercent || 0, name: r.longName,
+                const fresh = { ok: true, price: r.regularMarketPrice, change: r.regularMarketChangePercent || 0, name: r.longName,
                     lo52: r.fiftyTwoWeekLow, hi52: r.fiftyTwoWeekHigh, pl: r.priceEarnings, mcap: r.marketCap, vol: r.regularMarketVolume,
-                    time: r.regularMarketTime ? new Date(r.regularMarketTime) : null };
-            } catch (_) { quotes[tk] = { ok: false }; }
+                    time: r.regularMarketTime ? new Date(r.regularMarketTime) : null, src: 'brapi' };
+                quotes[tk] = fresh; qcSet(tk, fresh);
+            } catch (_) { if (!(quotes[tk] && quotes[tk].ok)) quotes[tk] = { ok: false }; }
             if (current && current.ticker === tk) { renderQuote(); renderCards(); syncSpot(); }
             renderPills();
         }
@@ -248,7 +277,10 @@
                 price.textContent = 'R$ ' + LX.num(q.price);
                 chg.textContent = `${up ? '+' : '−'}${LX.num(Math.abs(q.change))}% (${up ? '+' : '−'}R$ ${LX.num(diff)})`;
                 chg.className = 'text-xs font-bold whitespace-nowrap ' + (up ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400');
-                badge.textContent = 'BRAPI' + (q.time ? ' · ' + q.time.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' }) : '') + ' · ATRASO ATÉ 15 MIN';
+                const tq = q.time instanceof Date ? q.time : (q.time ? new Date(q.time) : null);
+                let lastB = new Date(LX.todayBRT()); while (!LX.isBusinessDay(lastB)) lastB = LX.addDays(lastB, -1);
+                const liveDay = tq && LX.isBusinessDay(LX.todayBRT()) && LX.iso(tq) === LX.iso(LX.todayBRT());
+                badge.textContent = (q.src === 'lectnex' ? 'LECTNEX · BRAPI' : 'BRAPI') + ' · ' + (liveDay ? tq.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' }) + ' · ATRASO ~30 MIN' : 'FECHAMENTO ' + LX.brShort(lastB));
                 badge.className = 'px-2 py-0.5 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-mono text-[10px] font-bold';
                 if (q.name) $('st-name').textContent = q.name;
             } else {
@@ -258,6 +290,25 @@
                 badge.textContent = LX.config.brapiToken ? 'SEM CONEXÃO COM A BRAPI' : 'CONFIGURE O TOKEN BRAPI';
                 badge.className = 'px-2 py-0.5 bg-amber-500/15 text-amber-600 font-mono text-[10px] font-bold';
             }
+        }
+
+        /* ================= SETOR HOJE ================= */
+        function renderPeers() {
+            const box = $('peers'); if (!snap || !current) return box.classList.add('hidden');
+            const mapa = snap.mapa || [], me = mapa.find(m => m.ticker === current.ticker);
+            if (!me) return box.classList.add('hidden');
+            const peers = mapa.filter(m => m.setor === me.setor && m.var_pct != null).sort((a, b) => b.var_pct - a.var_pct);
+            const w = m => m.mcap || 1, avg = peers.reduce((a, m) => a + m.var_pct * w(m), 0) / (peers.reduce((a, m) => a + w(m), 0) || 1);
+            const ibov = (snap.itens || []).find(x => x.ticker === 'IBOV');
+            $('peers-title').textContent = `NO SETOR HOJE · ${me.setor.toUpperCase()} ${avg > 0 ? '+' : ''}${LX.num(avg, 2)}%`;
+            if (ibov && ibov.var_pct != null && me.var_pct != null) {
+                const d = me.var_pct - ibov.var_pct;
+                $('peers-rel').innerHTML = `${current.ticker} <strong class="${LX.signClass(me.var_pct)}">${me.var_pct > 0 ? '+' : ''}${LX.num(me.var_pct, 2)}%</strong> vs Ibovespa <strong class="${LX.signClass(ibov.var_pct)}">${ibov.var_pct > 0 ? '+' : ''}${LX.num(ibov.var_pct, 2)}%</strong> → <strong class="${LX.signClass(d)}">${Math.abs(d) < 0.005 ? 'igual ao índice' : LX.num(Math.abs(d), 2) + ' p.p. ' + (d > 0 ? 'acima' : 'abaixo') + ' do índice'}</strong>`;
+            } else $('peers-rel').textContent = '';
+            const col = p => p > 0 ? `rgba(16,185,129,${0.18 + Math.min(1, p / 3) * 0.6})` : p < 0 ? `rgba(225,29,72,${0.18 + Math.min(1, -p / 3) * 0.6})` : 'rgba(100,116,139,.25)';
+            $('peers-grid').innerHTML = peers.map(m => `<button type="button" data-peer="${m.ticker}" class="p-2 text-left font-mono ${m.ticker === current.ticker ? 'ring-2 ring-lect-orange' : 'hover:ring-1 hover:ring-lect-teal'}" style="background:${col(m.var_pct)}"><strong class="block text-xs">${m.ticker}${Math.abs(m.var_pct) >= 5 ? ' <i class="ph-fill ph-lightning text-lect-orange"></i>' : ''}</strong><span class="text-[11px] font-bold tabular-nums">${m.var_pct > 0 ? '+' : ''}${LX.num(m.var_pct, 2)}%</span><span class="block text-[10px] opacity-75 tabular-nums">R$ ${LX.num(m.preco, 2)}</span></button>`).join('');
+            document.querySelectorAll('[data-peer]').forEach(b => b.onclick = () => { load(b.dataset.peer); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+            box.classList.remove('hidden');
         }
 
         /* ================= CARDS DA FICHA ================= */
@@ -454,7 +505,7 @@
         /* ================= CARREGAR AÇÃO ================= */
         function load(raw) {
             const tk = (raw || '').toUpperCase().trim();
-            if (!/^[A-Z]{4}\d{1,2}$/.test(tk)) return;
+            if (!/^[A-Z][A-Z0-9]{3}\d{1,2}$/.test(tk)) return;
             current = CATALOG.find(c => c.ticker === tk) || { ticker: tk, name: 'Ação listada na B3', sector: 'B3' };
             $('st-ticker').textContent = tk;
             $('st-sector').textContent = current.sector.toUpperCase();
@@ -463,13 +514,15 @@
             $('lnk-div').href = `laboratorio.html?tab=proventos&ticker=${tk}`;
             $('lnk-trade').href = `laboratorio.html?tab=trade&ticker=${tk}`;
             try { history.replaceState(null, '', '?ticker=' + tk + location.hash); } catch (_) { }
-            renderQuote(); renderCards(); renderOwners(); renderPills();
+            renderQuote(); renderCards(); renderOwners(); renderPills(); renderPeers();
             LX.tv('tv-chart', 'advanced-chart', { symbol: 'BMFBOVESPA:' + tk, interval: 'D', timezone: 'America/Sao_Paulo', style: '1', allow_symbol_change: false, hide_side_toolbar: true, autosize: true, studies: ['STD;Volume'] });
             if (quotes[tk]) syncSpot(); else { buildLegs(); fetchQuote(tk); }
         }
         $('ticker-go').onclick = () => load($('ticker-input').value);
         $('ticker-input').addEventListener('keydown', e => { if (e.key === 'Enter') load(e.target.value); });
-        setInterval(() => { if (current && LX.sessionStatus('b3').state === 'open') fetchQuote(current.ticker); }, 60000);
+        // Atualiza pelo snapshot a cada 5 min no pregão (sem consultar a brapi a cada minuto por visitante)
+        loadSnap();
+        setInterval(() => { if (LX.sessionStatus('b3').state === 'open') loadSnap(); }, 5 * 60e3);
 
         LX.getJSON('data/fundos-acoes.json').then(j => { cvm = j; if (current) { renderCards(); renderOwners(); } }).catch(() => { });
         $('op-spot').value = '30.00';
