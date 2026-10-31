@@ -5,6 +5,7 @@ index.html          Mercado Hoje: faixa B3, Leitura do Dia (IA), mapa de calor, 
 macro.html          Macro & Juros: Copom, Focus, curva DI, regimes de risco, mapa "E se…?"
 futuros.html        WIN, WDO e DI: Placar de vencimento (contagem até o último pregão), Plano do Dia (checklist, limite de perda, placar), Diário de Trades (curva, calendário, DARF automático), vencimentos, risco, Kelly, IR, dólar justo
 acoes.html          Ações B3: cotação (brapi), gráfico (TradingView), painéis didáticos de fluxo/opções
+sobre.html          Sobre o Lectnex: proposta, o que tem no terminal, princípios, newsletter e contato
 laboratorio.html    Academia (trilhas, lições interativas, glossário) + simuladores
 assets/
   lectnex-core.js   Núcleo: dados BCB/AwesomeAPI, calendário B3, vencimentos, cabeçalho/rodapé, busca
@@ -83,3 +84,8 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 | Compilar CSS | a cada push | Tailwind + recorte de ícones |
 | Lighthouse | a cada push de código e às segundas | notas de velocidade, acessibilidade e SEO |
 | Leitura do Dia | tarefa agendada no Claude, todo dia 07h40 | `data/leitura.json` (ver `docs/leitura-do-dia.md`) |
+
+## Newsletter (Buttondown)
+
+- Usuário: `lectnex` (em `LX.config.newsletter`, em `assets/lectnex-core.js`). Formulários: `<div data-lx-news="completo|compacto|chamada">`.
+- Envio automático: workflow **Newsletter** (`coletor/newsletter.py`) quando a Leitura de um novo dia é publicada. Segredo `BUTTONDOWN_API_KEY` (ou `SITE_LECTNEX`). Se o Buttondown recusar o envio, cria rascunho para envio manual.

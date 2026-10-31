@@ -495,13 +495,14 @@
               <div class="lg:col-span-3 space-y-1.5 font-mono text-xs">
                 <span class="text-white font-bold uppercase tracking-wider block mb-2">Módulos</span>
                 ${NAV.map(n => `<a href="${n.href}" class="block hover:text-lect-tealLight">${n.label}</a>`).join('')}
+                <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
               </div>
               <div class="lg:col-span-5 space-y-1.5 font-mono text-[11px]">
                 <span class="text-white font-bold uppercase tracking-wider block mb-2">Fontes de dados</span>
                 <span class="block">• Selic, CDI, IPCA, PTAX e Focus: Banco Central do Brasil (SGS / Olinda) — oficiais</span>
                 <span class="block">• Câmbio e cripto: AwesomeAPI — cotações com atraso de alguns segundos</span>
                 <span class="block">• Gráficos, notícias e agenda global: widgets TradingView</span>
-                <span class="block">• Ações: brapi.dev (atraso de até 15 min) · Calendário de vencimentos: regras B3</span>
+                <span class="block">• Ações: brapi.dev (atraso de ~30 min) · Calendário de vencimentos: regras B3</span>
                 <span class="block text-amber-400/90">• Itens marcados <span class="lx-demo">SIMULAÇÃO</span> são dados fictícios para fins didáticos</span>
               </div>
             </div>
@@ -730,13 +731,19 @@
         const user = LX.config.newsletter;
         document.querySelectorAll('[data-lx-news]').forEach(el => {
             if (!user) { el.classList.add('hidden'); return; }
-            const full = el.dataset.lxNews === 'completo', action = 'https://buttondown.com/api/emails/embed-subscribe/' + encodeURIComponent(user);
+            const kind = el.dataset.lxNews, full = kind === 'completo', action = 'https://buttondown.com/api/emails/embed-subscribe/' + encodeURIComponent(user);
             const form = `<form action="${action}" method="post" target="_blank" class="flex flex-col sm:flex-row gap-2 ${full ? 'mt-4' : ''}">
                 <input type="hidden" name="embed" value="1"><input type="hidden" name="tag" value="site">
                 <label class="sr-only" for="nl-${full ? 'f' : 'c'}">Seu e-mail</label>
                 <input id="nl-${full ? 'f' : 'c'}" type="email" name="email" required placeholder="seu@email.com" autocomplete="email" class="lx-input flex-1 !text-sm">
                 <button type="submit" class="px-4 py-2 bg-lect-orange hover:bg-orange-600 text-white font-mono text-xs font-bold whitespace-nowrap"><i class="ph-bold ph-envelope-simple"></i> RECEBER GRÁTIS</button></form>`;
             el.classList.remove('hidden');
+            if (kind === 'chamada') {
+                el.innerHTML = `<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 border border-dashed border-lect-orange/50 bg-lect-orange/5">
+                    <div class="flex items-start gap-3"><i class="ph-duotone ph-envelope-simple-open text-3xl text-lect-orange shrink-0"></i><div><strong class="block font-display">${LX.esc(el.dataset.titulo || 'Gostou desta ferramenta?')}</strong><span class="text-sm text-slate-600 dark:text-slate-400">Receba a <strong>Leitura do Dia</strong> às 7h40: termômetro de WIN e WDO, agenda e as notícias que mexem no preço. Grátis.</span></div></div>
+                    <div class="md:w-[420px] shrink-0">${form}</div></div>`;
+                return;
+            }
             el.innerHTML = full
                 ? `<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 bg-lect-navy text-white border-l-4 border-lect-orange relative overflow-hidden"><div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
                     <div class="relative lg:col-span-7"><span class="term-label !text-lect-orange font-bold">LEITURA DO DIA NO SEU E-MAIL</span><h3 class="font-display text-2xl font-bold mt-1">Comece o pregão já sabendo o que importa.</h3>
