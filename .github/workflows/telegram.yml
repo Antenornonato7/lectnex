@@ -1,0 +1,36 @@
+# Publica a Leitura do Dia (novo dia) e as surpresas do calendário no canal do Telegram.
+# Precisa dos segredos TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID; sem eles, não faz nada.
+name: Telegram
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/leitura.json', 'data/calendario.json']
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: 'Mandar mensagem de teste'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telegram
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Publicar no canal
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TESTE: ${{ github.event_name == 'workflow_dispatch' && inputs.teste && '1' || '' }}
+        run: python3 coletor/telegram.py
