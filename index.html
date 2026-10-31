@@ -265,7 +265,13 @@
             const html = d.itens.map(chip).join('');
             document.getElementById('b3-track').innerHTML = html + '<span aria-hidden="true" class="contents">' + html + '</span>';
             const t = d.atualizado_em ? new Date(d.atualizado_em) : null;
-            if (t) document.getElementById('b3-when').textContent = (LX.iso(t) === LX.iso(LX.todayBRT()) ? 'hoje ' : LX.brShort(t) + ' ') + t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+            if (t) {
+                // fora do pregão a faixa mostra o fechamento do último pregão, não um horário que pareça "ao vivo"
+                let last = new Date(LX.todayBRT()); while (!LX.isBusinessDay(last)) last = LX.addDays(last, -1);
+                const hm = t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+                const live = LX.isBusinessDay(LX.todayBRT()) && LX.iso(t) === LX.iso(LX.todayBRT()) && hm < '18:40';
+                document.getElementById('b3-when').textContent = live ? hm + ' · atraso ~30 min' : 'fech. ' + LX.brShort(last);
+            }
             document.getElementById('b3-tape').classList.remove('hidden');
         }).catch(() => { });
 
