@@ -790,11 +790,39 @@
         el.innerHTML = `<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex flex-wrap items-center justify-between gap-x-6 gap-y-1"><div class="flex flex-wrap gap-x-6 gap-y-1">${msgs.join('')}</div><a href="futuros.html#placar" class="underline decoration-dotted whitespace-nowrap">ver placar de vencimento →</a></div>`;
     }
 
+    /* ---------- Próximo evento de alto impacto (data/calendario.json) ---------- */
+    let calEvs = null;
+    const CAL_FLAG = { BR: '🇧🇷', US: '🇺🇸', CN: '🇨🇳', EU: '🇪🇺', JP: '🇯🇵', UK: '🇬🇧' };
+    const CAL_ARROW = { alta: '▲', baixa: '▼', volatil: '↕' };
+    function evTime(e) { // horário de Brasília (UTC−3, sem horário de verão) → instante absoluto
+        const m = /^(\d{1,2})h(\d{2})?$/.exec(String(e.hora || '').trim()); if (!m || !e.data) return null;
+        const [y, mo, d] = e.data.split('-').map(Number);
+        return Date.UTC(y, mo - 1, d, +m[1] + 3, +(m[2] || 0));
+    }
+    function nextBar() {
+        const head = document.getElementById('lx-header'); if (!head || !calEvs) return;
+        const now = Date.now();
+        const ev = calEvs.map(e => ({ e, t: evTime(e) })).filter(x => x.t && (x.e.importancia || 1) >= 3 && x.t > now - 5 * 60e3 && x.t - now < 36 * 3600e3 && !(x.e.resultado != null && x.e.resultado !== '')).sort((a, b) => a.t - b.t)[0];
+        let el = document.getElementById('lx-next');
+        if (!ev) { if (el) el.remove(); return; }
+        const left = ev.t - now, min = Math.max(0, Math.round(left / 60e3)), hot = left <= 15 * 60e3;
+        const when = left <= 0 ? 'AGORA' : min < 60 ? `em ${min} min` : min < 24 * 60 ? `em ${Math.floor(min / 60)}h${String(min % 60).padStart(2, '0')}min` : `amanhã ${LX.esc(ev.e.hora)}`;
+        const tags = Object.entries(ev.e.impacto || {}).filter(([, v]) => CAL_ARROW[v]).map(([k, v]) => `${LX.esc(k.toUpperCase())} ${CAL_ARROW[v]}`).join(' · ');
+        if (!el) { el = document.createElement('div'); el.id = 'lx-next'; (document.getElementById('lx-roll') || head).insertAdjacentElement('afterend', el); }
+        el.className = (hot ? 'bg-lect-orange text-lect-navy' : 'bg-slate-100 text-slate-700 dark:bg-lect-cardDark dark:text-slate-300 border-b border-slate-200 dark:border-lect-borderDark') + ' font-mono text-[11px]';
+        el.innerHTML = `<a href="index.html#cal-wrap" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex flex-wrap items-center gap-x-3 gap-y-0.5 hover:underline decoration-dotted">
+            <span class="inline-flex items-center gap-1.5 font-bold ${hot ? '' : 'text-lect-orange'}"><i class="ph-bold ph-timer"></i>${hot ? 'ATENÇÃO' : 'PRÓXIMO DADO FORTE'}</span>
+            <span>${CAL_FLAG[ev.e.pais] || ''} <strong class="${hot ? '' : 'text-slate-900 dark:text-white'}">${LX.esc(ev.e.evento)}</strong> ${when}${left > 0 && min < 24 * 60 ? ` <span class="opacity-70">(${LX.esc(ev.e.hora)})</span>` : ''}</span>
+            ${tags ? `<span class="opacity-80">${tags}</span>` : ''}
+            ${hot ? '<span class="font-bold">· spread e volatilidade sobem no horário do dado</span>' : ''}</a>`;
+    }
+
     /* ------------------------------------------------------------------ BOOT */
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
         rollBanner(); setInterval(rollBanner, 60000);
+        fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && Array.isArray(j.eventos)) { calEvs = j.eventos; nextBar(); setInterval(nextBar, 30000); } }).catch(() => { });
         newsForms();
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });
         // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs
