@@ -4,9 +4,7 @@
 name: Lighthouse
 
 on:
-  workflow_run:
-    workflows: ["pages build and deployment"]
-    types: [completed]
+  deployment_status: {}
   schedule:
     - cron: "23 12 * * 1"
   workflow_dispatch: {}
@@ -20,7 +18,7 @@ concurrency:
 
 jobs:
   auditar:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name != 'deployment_status' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages') }}
     runs-on: ubuntu-latest
     steps:
       - name: Esperar a CDN do GitHub Pages atualizar
