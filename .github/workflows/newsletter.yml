@@ -1,0 +1,30 @@
+# Envia a Leitura do Dia por e-mail (Buttondown) quando data/leitura.json de um NOVO dia é publicado.
+# Precisa do segredo BUTTONDOWN_API_KEY no repositório; sem ele, não faz nada.
+name: Newsletter
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/leitura.json']
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Enviar edição
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          MANUAL: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+        run: python3 coletor/newsletter.py

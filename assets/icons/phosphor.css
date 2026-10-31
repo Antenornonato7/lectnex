@@ -142,6 +142,9 @@
 .ph.ph-download-simple:before {
   content: "\e20c";
 }
+.ph.ph-envelope-simple:before {
+  content: "\e218";
+}
 .ph.ph-equals:before {
   content: "\e21c";
 }
@@ -458,6 +461,9 @@
 .ph-bold.ph-download-simple:before {
   content: "\e20c";
 }
+.ph-bold.ph-envelope-simple:before {
+  content: "\e218";
+}
 .ph-bold.ph-equals:before {
   content: "\e21c";
 }
@@ -773,6 +779,9 @@
 }
 .ph-fill.ph-download-simple:before {
   content: "\e20c";
+}
+.ph-fill.ph-envelope-simple:before {
+  content: "\e218";
 }
 .ph-fill.ph-equals:before {
   content: "\e21c";
@@ -1263,6 +1272,14 @@
 }
 .ph-duotone.ph-download-simple:after {
   content: "\e20d";
+  margin-left: -1em;
+}
+.ph-duotone.ph-envelope-simple:before {
+  content: "\e218";
+  opacity: 0.2;
+}
+.ph-duotone.ph-envelope-simple:after {
+  content: "\e219";
   margin-left: -1em;
 }
 .ph-duotone.ph-equals:before {

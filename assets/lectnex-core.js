@@ -26,6 +26,8 @@
         }
     });
     LX.config.brapiToken = 'uRJnTfjL6jypdHfJ8b5LJd';
+    // Newsletter (Buttondown): usuário da conta. Vazio = formulários de inscrição ficam escondidos.
+    LX.config.newsletter = '';
 
     /* ------------------------------------------------------------------ FORMATOS */
     const nf = (min, max) => new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });
@@ -488,6 +490,7 @@
               <div class="lg:col-span-4 space-y-3">
                 <div class="text-2xl font-display font-bold text-white">Lect<span class="text-lect-tealLight">nex</span></div>
                 <p class="text-xs leading-relaxed">Leitura de mercado conectada à educação financeira: macroeconomia, juros, câmbio, futuros e ações da B3 explicados com dados oficiais.</p>
+                <div data-lx-news="compacto" class="hidden pt-2"></div>
               </div>
               <div class="lg:col-span-3 space-y-1.5 font-mono text-xs">
                 <span class="text-white font-bold uppercase tracking-wider block mb-2">Módulos</span>
@@ -721,6 +724,28 @@
         if ((!typing && e.key === '/') || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) { e.preventDefault(); LX.openPalette(); }
     });
 
+    /* ------------------------------------------------------------------ NEWSLETTER (Buttondown) */
+    // Qualquer elemento <div data-lx-news="compacto|completo"> vira um formulário de inscrição quando LX.config.newsletter está preenchido.
+    function newsForms() {
+        const user = LX.config.newsletter;
+        document.querySelectorAll('[data-lx-news]').forEach(el => {
+            if (!user) { el.classList.add('hidden'); return; }
+            const full = el.dataset.lxNews === 'completo', action = 'https://buttondown.com/api/emails/embed-subscribe/' + encodeURIComponent(user);
+            const form = `<form action="${action}" method="post" target="_blank" class="flex flex-col sm:flex-row gap-2 ${full ? 'mt-4' : ''}">
+                <input type="hidden" name="embed" value="1"><input type="hidden" name="tag" value="site">
+                <label class="sr-only" for="nl-${full ? 'f' : 'c'}">Seu e-mail</label>
+                <input id="nl-${full ? 'f' : 'c'}" type="email" name="email" required placeholder="seu@email.com" autocomplete="email" class="lx-input flex-1 !text-sm">
+                <button type="submit" class="px-4 py-2 bg-lect-orange hover:bg-orange-600 text-white font-mono text-xs font-bold whitespace-nowrap"><i class="ph-bold ph-envelope-simple"></i> RECEBER GRÁTIS</button></form>`;
+            el.classList.remove('hidden');
+            el.innerHTML = full
+                ? `<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 bg-lect-navy text-white border-l-4 border-lect-orange relative overflow-hidden"><div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+                    <div class="relative lg:col-span-7"><span class="term-label !text-lect-orange font-bold">LEITURA DO DIA NO SEU E-MAIL</span><h3 class="font-display text-2xl font-bold mt-1">Comece o pregão já sabendo o que importa.</h3>
+                    <p class="text-sm text-slate-300 mt-2">Todo dia às 7h40: termômetro de WIN e WDO, agenda com horários, as 5 notícias que mexem no preço e o que esperar. Grátis, sem spam, cancele quando quiser.</p></div>
+                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">Conteúdo educacional · você confirma a inscrição pelo e-mail.</p></div></div>`
+                : `<div class="font-mono text-[11px]"><span class="block text-slate-300 font-bold mb-1.5"><i class="ph-bold ph-envelope-simple text-lect-orange"></i> Leitura do Dia por e-mail, todo dia às 7h40</span>${form}</div>`;
+        });
+    }
+
     /* ------------------------------------------------------------------ CONTRATOS VIGENTES E ÚLTIMO PREGÃO */
     // WIN: negocia até o próprio vencimento (quarta mais próxima do dia 15). WDO: até o último dia útil ANTES do vencimento
     // (1º dia útil do mês). Fechamento considerado: 18h25 de Brasília.
@@ -760,6 +785,7 @@
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
         rollBanner(); setInterval(rollBanner, 60000);
+        newsForms();
         // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs
         if (LX.data.cachedAt) document.dispatchEvent(new CustomEvent('lx:macro', { detail: LX.data }));
         if (LX.data.fxCached) document.dispatchEvent(new CustomEvent('lx:fx', { detail: LX.data.fx }));
