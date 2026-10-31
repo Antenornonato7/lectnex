@@ -101,7 +101,8 @@ FOMC e falas do Fed, ISM, PIB; China: PMIs e dados de atividade; Europa: BCE e i
       "consenso": "150 mil",
       "resultado": null,
       "impacto": { "wdo": "volatil", "di": "volatil" },
-      "nota": "Emprego forte tende a fortalecer o dólar global."
+      "nota": "Emprego forte tende a fortalecer o dólar global.",
+      "surpresa": null
     }
   ]
 }
@@ -111,3 +112,12 @@ FOMC e falas do Fed, ISM, PIB; China: PMIs e dados de atividade; Europa: BCE e i
 - `importancia`: 1 (baixo) a 3 (alto). `impacto` por ativo (`win`, `wdo`, `di`): `alta`, `baixa`, `neutro` ou `volatil` (direção depende do resultado).
 - `anterior`, `consenso` e `resultado`: só valores confirmados em fonte; se não souber, `null`. Nunca estime número.
 - De 8 a 25 eventos no total; ordem cronológica.
+- `surpresa` (só depois que o `resultado` sai): `{"direcao": "acima" | "abaixo", "reacao": "1 frase sobre a reação típica de WIN/WDO/DI"}`
+  quando o resultado ficar claramente fora do consenso (ex.: IPCA ≥ 0,1 p.p., payroll ≥ 50 mil, PMI ≥ 1 ponto, decisão de juros diferente do esperado);
+  senão `null`. Eventos do dia com surpresa aparecem num alerta no topo do Mercado Hoje. A `reacao` descreve o padrão típico, nunca recomenda operação.
+
+## Rodadas de resultado (dias úteis)
+
+Além da edição das 7h40, a tarefa "Resultados do calendário" roda às 12h25 e às 16h55 (Brasília) nos dias úteis.
+Ela **só** mexe em `data/calendario.json`: preenche `resultado` e `surpresa` dos eventos de hoje que já saíram (número oficial
+da fonte primária ou de veículo confiável) e publica com o commit `calendario: AAAA-MM-DD HHhMM`. Não altera mais nada.
