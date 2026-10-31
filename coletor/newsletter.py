@@ -56,15 +56,27 @@ def main():
     d = json.load(open(os.path.join(ROOT, 'data', 'leitura.json'), encoding='utf-8'))
     if not os.environ.get('MANUAL') and anterior().get('data') == d.get('data'):
         print('::notice title=Newsletter::Mesma edição do dia (correção) — não reenviado.'); return
-    payload = {'subject': f"Leitura do Dia · {d.get('titulo', '')}", 'body': corpo(d), 'status': 'about_to_send'}
-    req = urllib.request.Request('https://api.buttondown.com/v1/emails', data=json.dumps(payload).encode(), method='POST', headers={
-        'Authorization': f'Token {KEY}', 'Content-Type': 'application/json', 'X-API-Version': '2026-04-01',
-        'X-Buttondown-Live-Dangerously': 'true'})
-    try:
+    def post(status):
+        payload = {'subject': f"Leitura do Dia · {d.get('titulo', '')}", 'body': corpo(d), 'status': status}
+        req = urllib.request.Request('https://api.buttondown.com/v1/emails', data=json.dumps(payload).encode(), method='POST', headers={
+            'Authorization': f'Token {KEY}', 'Content-Type': 'application/json', 'X-API-Version': '2026-04-01',
+            'X-Buttondown-Live-Dangerously': 'true'})
         with urllib.request.urlopen(req, timeout=30) as r:
-            print(f"::notice title=Newsletter enviada::{d.get('data')} · {d.get('titulo', '')} (HTTP {r.status})")
+            return r.status
+    try:
+        st = post('about_to_send')
+        print(f"::notice title=Newsletter enviada::{d.get('data')} · {d.get('titulo', '')} (HTTP {st})")
     except urllib.error.HTTPError as e:
-        print(f'::error title=Buttondown {e.code}::{e.read().decode()[:500]}'); sys.exit(1)
+        msg = e.read().decode()[:400]
+        if e.code == 403:
+            # Sem permissão de envio (chave sem 'Emails: Write' ou conta ainda não liberada): deixa como rascunho para envio manual
+            try:
+                st = post('draft')
+                print(f"::warning title=Newsletter em rascunho::Envio recusado ({msg}). Rascunho criado no Buttondown (HTTP {st}) — envie pelo painel.")
+                return
+            except urllib.error.HTTPError as e2:
+                print(f'::error title=Buttondown rascunho {e2.code}::{e2.read().decode()[:400]}')
+        print(f'::error title=Buttondown {e.code}::{msg}'); sys.exit(1)
 
 
 if __name__ == '__main__':
