@@ -17,8 +17,12 @@ on:
       acao:
         description: 'Ação especial'
         type: choice
-        options: ['nenhuma', 'boas-vindas', 'contar']
+        options: ['nenhuma', 'boas-vindas', 'contar', 'info', 'apagar']
         default: 'nenhuma'
+      msg_id:
+        description: 'Número da mensagem (só para apagar)'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -41,6 +45,7 @@ jobs:
           TOKEN_EM_VARIABLES: ${{ vars.TELEGRAM_BOT_TOKEN && !secrets.TELEGRAM_BOT_TOKEN && !secrets.LECTNEX_ALERTAS_BOT && '1' || '' }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
           TESTE: ${{ github.event_name == 'workflow_dispatch' && inputs.teste && '1' || '' }}
+          MSG_ID: ${{ inputs.msg_id || '' }}
           ACAO: ${{ github.event_name == 'schedule' && 'contar' || inputs.acao || '' }}
         run: python3 coletor/telegram.py
       - name: Salvar contagem de seguidores

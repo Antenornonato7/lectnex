@@ -36,13 +36,21 @@ def acertou(leitura, var):
 
 
 def dolar():
+    erros = []
     try:
-        with urllib.request.urlopen('https://economia.awesomeapi.com.br/json/last/USD-BRL', timeout=15) as r:
+        with urllib.request.urlopen(urllib.request.Request('https://economia.awesomeapi.com.br/json/last/USD-BRL', headers={'User-Agent': 'lectnex-bot'}), timeout=15) as r:
             d = json.load(r)['USDBRL']
         return float(d['bid']), float(d['pctChange'])
     except Exception as e:
-        tg.note('warning', f'Dólar indisponível: {e}')
-        return None, None
+        erros.append(f'AwesomeAPI: {e}')
+    try:  # reserva: brapi (mesmo token público usado no site)
+        with urllib.request.urlopen('https://brapi.dev/api/v2/currency?currency=USD-BRL&token=uRJnTfjL6jypdHfJ8b5LJd', timeout=15) as r:
+            d = json.load(r)['currency'][0]
+        return float(d['bidPrice']), float(d['percentageChange'])
+    except Exception as e:
+        erros.append(f'brapi: {e}')
+    tg.note('warning', 'Dólar indisponível: ' + ' | '.join(erros))
+    return None, None
 
 
 def main():
@@ -51,6 +59,11 @@ def main():
     dia_ibov = None
     if ibov and ibov.get('hora'):
         dia_ibov = dt.datetime.fromisoformat(ibov['hora'].replace('Z', '+00:00')).astimezone(BRT).date()
+    cal0 = ler('data/calendario.json') or {}
+    feriado = any(e.get('data') == hoje.isoformat() and 'B3 fechada' in (e.get('evento') or '') for e in cal0.get('eventos', []))
+    if (hoje.weekday() >= 5 or feriado) and not FORCAR:
+        tg.note('notice', 'Hoje não tem pregão na B3; fechamento não enviado.')
+        return
     if dia_ibov != hoje and not FORCAR:
         tg.note('notice', f'Sem pregão hoje ou cotação não atualizada (Ibovespa de {dia_ibov}); fechamento não enviado.')
         return

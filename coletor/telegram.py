@@ -41,7 +41,10 @@ def enviar(texto):
         headers={'Content-Type': 'application/json'})
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
-            return json.load(r).get('ok', False)
+            j = json.load(r)
+            if j.get('ok'):
+                note('notice', f'Mensagem {j["result"]["message_id"]} publicada')
+            return j.get('ok', False)
     except urllib.error.HTTPError as err:
         note('warning', f'Telegram recusou ({err.code}): {err.read().decode()[:200]}')
         return False
@@ -130,6 +133,13 @@ def main():
         boas_vindas(); return
     if acao == 'contar':
         contar(); return
+    if acao == 'info':
+        r = api('getChat', {'chat_id': CHAT}); pm = (r.get('result') or {}).get('pinned_message') or {}
+        note('notice', f'Mensagem fixada: {pm.get("message_id")}'); return
+    if acao == 'apagar':
+        mid = os.environ.get('MSG_ID', '').strip()
+        r = api('deleteMessage', {'chat_id': CHAT, 'message_id': int(mid)}) if mid.isdigit() else {'ok': False, 'description': 'informe o número da mensagem'}
+        note('notice' if r.get('ok') else 'warning', f'Mensagem {mid} apagada' if r.get('ok') else f'Não apaguei {mid}: {r.get("description")}'); return
     if os.environ.get('TESTE'):
         ok = enviar('✅ <b>Canal do Lectnex conectado.</b>\nAqui vão chegar a Leitura do Dia e os alertas de surpresa do calendário.\n' + f'<a href="{SITE}">{SITE}</a>')
         note('notice' if ok else 'warning', 'Teste do Telegram enviado' if ok else 'Teste do Telegram falhou')
