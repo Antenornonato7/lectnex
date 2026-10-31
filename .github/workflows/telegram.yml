@@ -1,5 +1,5 @@
 # Publica a Leitura do Dia (novo dia) e as surpresas do calendário no canal do Telegram.
-# Precisa dos segredos TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID; sem eles, não faz nada.
+# Precisa do segredo TELEGRAM_BOT_TOKEN (canal padrão: @lectnex); sem ele, não faz nada.
 name: Telegram
 
 on:
@@ -30,7 +30,7 @@ jobs:
           fetch-depth: 2
       - name: Publicar no canal
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN || secrets.TOKEN_TELEGRAM || secrets.TELEGRAM }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
           TESTE: ${{ github.event_name == 'workflow_dispatch' && inputs.teste && '1' || '' }}
         run: python3 coletor/telegram.py
