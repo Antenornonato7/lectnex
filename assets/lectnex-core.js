@@ -727,8 +727,11 @@
 
     /* ------------------------------------------------------------------ NEWSLETTER (Buttondown) */
     // Qualquer elemento <div data-lx-news="compacto|completo"> vira um formulário de inscrição quando LX.config.newsletter está preenchido.
+    let newsCount = null;
     function newsForms() {
         const user = LX.config.newsletter;
+        // prova social: só a partir de 25 inscritos
+        const social = newsCount >= 25 ? `Junte-se a ${newsCount.toLocaleString('pt-BR')} traders que recebem a Leitura do Dia.` : '';
         document.querySelectorAll('[data-lx-news]').forEach(el => {
             if (!user) { el.classList.add('hidden'); return; }
             const kind = el.dataset.lxNews, full = kind === 'completo', action = 'https://buttondown.com/api/emails/embed-subscribe/' + encodeURIComponent(user);
@@ -740,7 +743,7 @@
             el.classList.remove('hidden');
             if (kind === 'chamada') {
                 el.innerHTML = `<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 border border-dashed border-lect-orange/50 bg-lect-orange/5">
-                    <div class="flex items-start gap-3"><i class="ph-duotone ph-envelope-simple-open text-3xl text-lect-orange shrink-0"></i><div><strong class="block font-display">${LX.esc(el.dataset.titulo || 'Gostou desta ferramenta?')}</strong><span class="text-sm text-slate-600 dark:text-slate-400">Receba a <strong>Leitura do Dia</strong> às 7h40: termômetro de WIN e WDO, agenda e as notícias que mexem no preço. Grátis.</span></div></div>
+                    <div class="flex items-start gap-3"><i class="ph-duotone ph-envelope-simple-open text-3xl text-lect-orange shrink-0"></i><div><strong class="block font-display">${LX.esc(el.dataset.titulo || 'Gostou desta ferramenta?')}</strong><span class="text-sm text-slate-600 dark:text-slate-400">Receba a <strong>Leitura do Dia</strong> às 7h40: termômetro de WIN e WDO, agenda e as notícias que mexem no preço. Grátis.${social ? ` <strong class="text-lect-orange">${social}</strong>` : ''}</span></div></div>
                     <div class="md:w-[420px] shrink-0">${form}</div></div>`;
                 return;
             }
@@ -748,7 +751,7 @@
                 ? `<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 bg-lect-navy text-white border-l-4 border-lect-orange relative overflow-hidden"><div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
                     <div class="relative lg:col-span-7"><span class="term-label !text-lect-orange font-bold">LEITURA DO DIA NO SEU E-MAIL</span><h3 class="font-display text-2xl font-bold mt-1">Comece o pregão já sabendo o que importa.</h3>
                     <p class="text-sm text-slate-300 mt-2">Todo dia às 7h40: termômetro de WIN e WDO, agenda com horários, as 5 notícias que mexem no preço e o que esperar. Grátis, sem spam, cancele quando quiser.</p></div>
-                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">Conteúdo educacional · você confirma a inscrição pelo e-mail.</p></div></div>`
+                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">${social ? `<strong class="text-lect-orange">${social}</strong> · ` : ''}Conteúdo educacional · você confirma a inscrição pelo e-mail.</p></div></div>`
                 : `<div class="font-mono text-[11px]"><span class="block text-slate-300 font-bold mb-1.5"><i class="ph-bold ph-envelope-simple text-lect-orange"></i> Leitura do Dia por e-mail, todo dia às 7h40</span>${form}</div>`;
         });
     }
@@ -793,6 +796,7 @@
         tickClock(); paintSessions(); LX.fill();
         rollBanner(); setInterval(rollBanner, 60000);
         newsForms();
+        if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });
         // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs
         if (LX.data.cachedAt) document.dispatchEvent(new CustomEvent('lx:macro', { detail: LX.data }));
         if (LX.data.fxCached) document.dispatchEvent(new CustomEvent('lx:fx', { detail: LX.data.fx }));

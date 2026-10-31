@@ -6,10 +6,12 @@ on:
   push:
     branches: [main]
     paths: ['data/leitura.json']
+  schedule:
+    - cron: "53 10 * * *"   # 07h53 em Brasília: atualiza a contagem de inscritos
   workflow_dispatch: {}
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: newsletter
@@ -24,7 +26,18 @@ jobs:
         with:
           fetch-depth: 2
       - name: Enviar edição
+        if: github.event_name != 'schedule'
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY || secrets.SITE_LECTNEX }}
           MANUAL: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
         run: python3 coletor/newsletter.py
+      - name: Atualizar contagem de inscritos
+        if: always()
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY || secrets.SITE_LECTNEX }}
+        run: |
+          python3 coletor/inscritos.py
+          git config user.name "lectnex-bot"
+          git config user.email "lectnex-bot@users.noreply.github.com"
+          git add data/newsletter.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "Contagem sem mudança."; else git commit -m "inscritos: $(date -u +%Y-%m-%d)" && (git push || (git pull --rebase && git push)); fi
