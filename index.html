@@ -122,7 +122,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
                     <div class="lg:col-span-4 p-5 space-y-3" id="lt-thermo"></div>
                     <div class="lg:col-span-5 p-5">
-                        <span class="term-label font-bold">O QUE IMPORTA HOJE</span>
+                        <span id="lt-resumo-lbl" class="term-label font-bold">O QUE IMPORTA HOJE</span>
                         <ul id="lt-resumo" class="mt-2 space-y-2"></ul>
                     </div>
                     <div class="lg:col-span-3 p-5">
@@ -271,7 +271,15 @@
                         <div class="relative h-1.5 mt-2 bg-gradient-to-r from-rose-500 via-slate-400 to-emerald-500 opacity-70"><span class="absolute -top-1 w-1.5 h-3.5 bg-lect-navy dark:bg-white border border-white dark:border-lect-navy" style="left:calc(${c[4]}% - 3px)"></span></div>
                         ${t.motivo ? `<p class="text-[11px] text-slate-600 dark:text-slate-300 mt-2 leading-snug">${esc(t.motivo)}</p>` : ''}</div>`;
                 };
-                el('lt-thermo').innerHTML = `<span class="term-label font-bold">TERMÔMETRO</span>` + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar');
+                const semPregao = d.tipo === 'sem-pregao' || !d.termometro;
+                if (semPregao) {
+                    const pp = d.proximo_pregao || {}, ppd = pp.data ? LX.parseISO(pp.data) : LX.nextBusinessDay(LX.addDays(today, 1));
+                    el('lt-thermo').innerHTML = `<span class="term-label font-bold">EDIÇÃO SEM PREGÃO</span>
+                        <div class="p-3 bg-lect-navy text-white border-l-4 border-lect-orange"><span class="block font-mono text-[10px] text-slate-400">PRÓXIMO PREGÃO</span><strong class="font-display text-lg">${LX.weekday(ppd)} ${LX.br(ppd)}</strong>
+                        ${pp.o_que_esperar ? `<p class="text-xs text-slate-300 mt-1.5 leading-snug">${esc(pp.o_que_esperar)}</p>` : ''}</div>
+                        <p class="text-[11px] text-slate-500 leading-snug">Sem termômetro: a bolsa está fechada. O viés de WIN e WDO volta na edição do próximo pregão.</p>`;
+                } else el('lt-thermo').innerHTML = `<span class="term-label font-bold">TERMÔMETRO</span>` + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar');
+                if (semPregao) el('lt-resumo-lbl').textContent = 'O QUE ACONTECEU E O QUE ESPERAR';
                 el('lt-resumo').innerHTML = d.resumo.slice(0, 5).map(x => `<li class="flex gap-2.5 text-sm leading-relaxed"><span class="mt-2 w-1.5 h-1.5 bg-lect-orange shrink-0"></span><span class="text-slate-700 dark:text-slate-300">${esc(x)}</span></li>`).join('');
                 el('lt-destaques').innerHTML = (d.destaques || []).slice(0, 4).map(x => `<div class="flex gap-2"><span class="shrink-0 w-12 font-mono text-[11px] font-bold text-lect-teal pt-0.5">${esc(x.hora || '')}</span><div><strong class="block text-xs">${esc(x.evento || '')}</strong>${x.por_que ? `<span class="block text-[11px] text-slate-500 leading-snug">${esc(x.por_que)}</span>` : ''}</div></div>`).join('') || '<p class="text-xs text-slate-500">Sem evento relevante marcado.</p>';
                 el('lt-exterior').innerHTML = (d.exterior || []).length ? `<span class="term-label font-bold">EXTERIOR</span><div class="grid grid-cols-2 gap-1 mt-1.5 font-mono text-[11px]">${d.exterior.slice(0, 6).map(x => { const neg = /^[−-]/.test(x.variacao || ''); return `<div class="flex justify-between px-2 py-1 bg-slate-50 dark:bg-lect-bgDark"><span class="text-slate-500 truncate">${esc(x.ativo)}</span><strong class="${neg ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'}">${esc(x.variacao)}</strong></div>`; }).join('')}</div>` : '';
