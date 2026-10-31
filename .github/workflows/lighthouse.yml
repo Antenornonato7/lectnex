@@ -12,13 +12,13 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: lighthouse
-  cancel-in-progress: true
-
 jobs:
   auditar:
     if: ${{ github.event_name != 'deployment_status' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'github-pages') }}
+    # concorrência no nível do job: avisos de deploy que não são 'success' pulam o job e não cancelam a medição
+    concurrency:
+      group: lighthouse
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     steps:
       - name: Esperar a CDN do GitHub Pages atualizar
