@@ -27,12 +27,12 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031f">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031g">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031f">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031f">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031g">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031g">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -162,7 +162,14 @@
                 </div>
             </div>
             <div id="mp-sectors" class="flex flex-wrap gap-1.5 mb-2 font-mono text-[10px]"></div>
-            <div id="mp-box" class="relative w-full h-[440px] sm:h-[480px] bg-slate-200 dark:bg-lect-borderDark overflow-hidden select-none"></div>
+            <div class="grid grid-cols-1 xl:grid-cols-12 gap-3">
+                <div id="mp-box" class="xl:col-span-9 relative w-full h-[440px] sm:h-[480px] bg-slate-200 dark:bg-lect-borderDark overflow-hidden select-none"></div>
+                <div class="xl:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-3 content-start">
+                    <div class="term-panel"><div class="px-3 py-2 border-b border-slate-200 dark:border-lect-borderDark flex items-center gap-1.5 term-label font-bold !text-emerald-600 dark:!text-emerald-400"><i class="ph-bold ph-trend-up"></i>MAIORES ALTAS</div><div id="mp-top" class="divide-y divide-slate-100 dark:divide-lect-borderDark"></div></div>
+                    <div class="term-panel"><div class="px-3 py-2 border-b border-slate-200 dark:border-lect-borderDark flex items-center gap-1.5 term-label font-bold !text-rose-600 dark:!text-rose-400"><i class="ph-bold ph-trend-down"></i>MAIORES BAIXAS</div><div id="mp-bottom" class="divide-y divide-slate-100 dark:divide-lect-borderDark"></div></div>
+                    <p class="text-[10px] font-mono text-slate-500 sm:col-span-2 xl:col-span-1"><i class="ph-fill ph-lightning text-lect-orange"></i> = movimento de 5% ou mais no dia</p>
+                </div>
+            </div>
             <div id="mp-tip" class="hidden fixed z-50 pointer-events-none px-3 py-2 bg-lect-navy text-white text-xs font-mono shadow-xl border-l-2 border-lect-orange"></div>
         </div>
     </section>
@@ -246,7 +253,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031f"></script>
+    <script src="assets/lectnex-core.js?v=20261031g"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -342,7 +349,7 @@
                     squarify(sc.arr, { x: sc.x, y: sc.y + top, w: sc.w, h: sc.h - top }).forEach(t => {
                         const big = t.w > 70 && t.h > 44, mid = t.w > 44 && t.h > 26, p = t.var_pct;
                         html += `<a href="acoes.html?ticker=${t.ticker}" data-mp="${t.ticker}" class="absolute flex flex-col items-center justify-center text-white text-center overflow-hidden hover:brightness-125 hover:z-10 hover:outline hover:outline-2 hover:outline-white transition-[filter]" style="left:${t.x + G / 2}px;top:${t.y + G / 2}px;width:${Math.max(0, t.w - G)}px;height:${Math.max(0, t.h - G)}px;background:${color(p)}">`
-                            + (mid ? `<strong class="font-mono leading-tight ${big ? 'text-sm' : 'text-[10px]'}">${t.ticker}</strong><span class="font-mono tabular-nums leading-tight ${big ? 'text-xs' : 'text-[9px]'} opacity-90">${p == null ? '—' : (p > 0 ? '+' : '') + LX.num(p, 2) + '%'}</span>` : '') + '</a>';
+                            + (p != null && Math.abs(p) >= 5 && t.w > 22 && t.h > 18 ? `<i class="ph-fill ph-lightning absolute top-1 right-1 text-lect-orange ${big ? 'text-sm' : 'text-[10px]'}" style="filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></i>` : '') + (mid ? `<strong class="font-mono leading-tight ${big ? 'text-sm' : 'text-[10px]'}">${t.ticker}</strong><span class="font-mono tabular-nums leading-tight ${big ? 'text-xs' : 'text-[9px]'} opacity-90">${p == null ? '—' : (p > 0 ? '+' : '') + LX.num(p, 2) + '%'}</span>` : '') + '</a>';
                     });
                 });
                 box.innerHTML = html;
@@ -369,6 +376,11 @@
                 document.getElementById('mp-sectors').innerHTML = Object.entries(sec).map(([k, [a, b]]) => [k, a / b]).sort((x, y) => y[1] - x[1]).map(([k, v]) => `<span class="px-2 py-1 border ${v > 0 ? 'border-emerald-500/40 text-emerald-600 dark:text-emerald-400' : v < 0 ? 'border-rose-500/40 text-rose-600 dark:text-rose-400' : 'border-slate-400/40 text-slate-500'}">${LX.esc(k)} ${v > 0 ? '+' : ''}${LX.num(v, 2)}%</span>`).join('');
                 const t = d.mapa_em ? new Date(d.mapa_em) : null;
                 if (t) { let last = new Date(LX.todayBRT()); while (!LX.isBusinessDay(last)) last = LX.addDays(last, -1); const live = LX.isBusinessDay(LX.todayBRT()) && LX.iso(t) === LX.iso(LX.todayBRT()); document.getElementById('mp-when').textContent = live ? `atualizado ${t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' })} · atraso ~30 min · brapi.dev` : `fechamento de ${LX.weekday(last)} ${LX.brShort(last)} · brapi.dev`; }
+                const valid = data.filter(m => m.var_pct != null).sort((x, y) => y.var_pct - x.var_pct);
+                const row = m => `<a href="acoes.html?ticker=${m.ticker}" class="flex items-center justify-between gap-2 px-3 py-2 font-mono text-xs hover:bg-slate-50 dark:hover:bg-lect-bgDark"><span class="flex items-center gap-1.5 min-w-0"><strong>${m.ticker}</strong>${Math.abs(m.var_pct) >= 5 ? '<i class="ph-fill ph-lightning text-lect-orange"></i>' : ''}<span class="text-[10px] text-slate-500 truncate hidden sm:inline">${LX.esc(m.setor)}</span></span><span class="flex items-center gap-2 shrink-0"><span class="text-slate-500 tabular-nums">${LX.num(m.preco, 2)}</span><strong class="tabular-nums w-16 text-right ${m.var_pct > 0 ? 'text-emerald-600 dark:text-emerald-400' : m.var_pct < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500'}">${m.var_pct > 0 ? '+' : ''}${LX.num(m.var_pct, 2)}%</strong></span></a>`;
+                const ups = valid.filter(m => m.var_pct > 0).slice(0, 5), downs = valid.filter(m => m.var_pct < 0).reverse().slice(0, 5);
+                document.getElementById('mp-top').innerHTML = ups.map(row).join('') || '<p class="px-3 py-3 text-xs text-slate-500">Nenhuma alta entre as principais.</p>';
+                document.getElementById('mp-bottom').innerHTML = downs.map(row).join('') || '<p class="px-3 py-3 text-xs text-slate-500">Nenhuma baixa entre as principais.</p>';
                 render();
                 if ('ResizeObserver' in window) { let rt; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(render, 120); }).observe(box); }
             }).catch(() => { });
