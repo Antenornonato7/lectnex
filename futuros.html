@@ -27,12 +27,12 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://antenornonato7.github.io/lectnex/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031a">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031b">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031b">
 </head>
 <body data-page="futuros" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -50,10 +50,60 @@
                     <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl">Tudo o que o trader de WIN e WDO precisa ter à mão: contrato vigente e rolagem, especificações, vencimentos calculados pelas regras da B3, gestão de risco por operação, IR de day trade e preço justo do dólar futuro.</p>
                 </div>
                 <div class="font-mono text-[11px] flex flex-wrap gap-2">
+                    <a href="#plano" class="px-3 py-2 bg-lect-orange text-white font-semibold"><i class="ph-bold ph-clipboard-text"></i> Plano do dia</a>
                     <a href="#risco" class="px-3 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-semibold">Calculadora de risco</a>
                     <a href="#paridade" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Dólar justo</a>
                 </div>
             </div>
+
+            <!-- PLANO DO DIA -->
+            <section id="plano" class="term-panel overflow-hidden scroll-mt-28">
+                <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 bg-lect-navy text-white">
+                    <div class="flex items-center gap-3">
+                        <i class="ph-duotone ph-clipboard-text text-2xl text-lect-orange"></i>
+                        <div><span class="block font-mono text-[10px] text-slate-400 tracking-widest">PLANO DO DIA · ANTES DE ABRIR O PREGÃO</span><strong id="pd-date" class="font-display text-lg">—</strong></div>
+                    </div>
+                    <div class="flex items-center gap-2 font-mono text-[11px]">
+                        <span id="pd-session" class="px-2 py-1 bg-white/10"></span>
+                        <span id="pd-streak" class="px-2 py-1 bg-lect-orange/20 text-lect-orange font-bold"></span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
+                    <!-- radar -->
+                    <div class="p-5">
+                        <span class="term-label font-bold text-lect-teal flex items-center gap-1.5"><i class="ph-bold ph-radar"></i>NO RADAR</span>
+                        <div id="pd-radar" class="mt-3 space-y-2"></div>
+                    </div>
+                    <!-- limites + placar -->
+                    <div class="p-5">
+                        <span class="term-label font-bold text-lect-orange flex items-center gap-1.5"><i class="ph-bold ph-shield-warning"></i>MEUS LIMITES DE HOJE</span>
+                        <div class="grid grid-cols-2 gap-2 mt-3 font-mono text-xs">
+                            <label><span class="term-label block mb-1">Capital (R$)</span><input id="pd-cap" type="number" step="500" min="0" class="lx-input"></label>
+                            <label><span class="term-label block mb-1">Perda máx. do dia (%)</span><input id="pd-maxloss" type="number" step="0.5" min="0.5" class="lx-input"></label>
+                            <label><span class="term-label block mb-1">Meta do dia (R$)</span><input id="pd-goal" type="number" step="50" min="0" class="lx-input"></label>
+                            <label><span class="term-label block mb-1">Máx. de operações</span><input id="pd-maxtr" type="number" step="1" min="1" class="lx-input"></label>
+                        </div>
+                        <div id="pd-stopline" class="mt-3 p-3 bg-rose-50 dark:bg-rose-500/10 border-l-4 border-rose-500 text-sm"></div>
+                        <div class="mt-4">
+                            <div class="flex items-center justify-between"><span class="term-label font-bold">PLACAR DO DIA</span><button id="pd-undo" type="button" class="text-[10px] font-mono text-slate-500 hover:text-lect-teal"><i class="ph-bold ph-arrow-counter-clockwise"></i> desfazer</button></div>
+                            <div class="flex gap-2 mt-2">
+                                <input id="pd-res" type="number" step="10" placeholder="Resultado da operação (R$)" class="lx-input flex-1">
+                                <button id="pd-add" type="button" class="px-3 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold">REGISTRAR</button>
+                            </div>
+                            <div class="mt-3 relative h-3 bg-slate-100 dark:bg-lect-bgDark overflow-hidden"><div id="pd-bar-loss" class="absolute inset-y-0 right-1/2 bg-rose-500 transition-all"></div><div id="pd-bar-gain" class="absolute inset-y-0 left-1/2 bg-emerald-500 transition-all"></div><div class="absolute inset-y-0 left-1/2 w-px bg-slate-400"></div></div>
+                            <div class="flex justify-between font-mono text-[10px] text-slate-500 mt-1"><span id="pd-lbl-loss"></span><span id="pd-lbl-gain"></span></div>
+                            <div id="pd-score" class="mt-2"></div>
+                        </div>
+                    </div>
+                    <!-- checklist -->
+                    <div class="p-5">
+                        <div class="flex items-center justify-between"><span class="term-label font-bold text-lect-teal flex items-center gap-1.5"><i class="ph-bold ph-list-checks"></i>CHECKLIST PRÉ-MERCADO</span><span id="pd-ckcount" class="font-mono text-[11px] font-bold"></span></div>
+                        <div id="pd-checks" class="mt-3 space-y-1.5"></div>
+                        <div id="pd-ready" class="mt-3"></div>
+                    </div>
+                </div>
+                <p class="px-5 py-2 border-t border-slate-200 dark:border-lect-borderDark text-[10px] text-slate-500 font-mono">Salvo só neste navegador. O plano zera sozinho a cada novo dia; os limites ficam lembrados.</p>
+            </section>
 
             <!-- CONTRATOS VIGENTES -->
             <div id="active-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"></div>
@@ -213,7 +263,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031a"></script>
+    <script src="assets/lectnex-core.js?v=20261031b"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -254,6 +304,109 @@
             tbl('WDO', '1º DIA ÚTIL', wdo.map((c, i) => row([c.code, `${LX.weekday(c.expiry)} ${LX.br(c.expiry)}`, c.du], c === wdoLive)), ['Contrato', 'Vencimento', 'DU']) +
             tbl('Opções', '3ª SEXTA', opt.map((c, i) => row([`${c.callLetter} / ${c.putLetter}`, `${LX.weekday(c.expiry)} ${LX.br(c.expiry)}`, c.du], i === 0)), ['Call / Put', 'Vencimento', 'DU']) +
             tbl('DI1 (Jan)', 'BASE ANBIMA', di.map((c, i) => row([c.code, LX.br(c.expiry), c.du.toLocaleString('pt-BR')], i === 0)), ['Vértice', 'Vencimento', 'DU']);
+
+        /* ---------- Plano do Dia ---------- */
+        (function () {
+            const PD_KEY = 'lectnex-plano-v1';
+            const pdLoad = () => { try { return JSON.parse(localStorage.getItem(PD_KEY) || '{}'); } catch (_) { return {}; } };
+            const pdSave = st => { try { localStorage.setItem(PD_KEY, JSON.stringify(st)); } catch (_) { } };
+            const pdToday = LX.todayBRT(), pdBday = LX.isBusinessDay(pdToday);
+            const pdRef = pdBday ? pdToday : LX.nextBusinessDay(LX.addDays(pdToday, 1)), pdKey = LX.iso(pdRef); // fim de semana/feriado: plano do próximo pregão
+            const st = Object.assign({ limits: { cap: 10000, maxloss: 2, goal: 0, maxtr: 5 }, days: {} }, pdLoad());
+            const day = st.days[pdKey] = Object.assign({ checks: [], trades: [] }, st.days[pdKey] || {});
+            // mantém só os últimos 90 dias
+            Object.keys(st.days).sort().slice(0, -90).forEach(k => delete st.days[k]);
+            const CHECKS = [
+                ['agenda', 'Li a agenda de hoje e sei os horários que mexem no preço'],
+                ['contrato', 'Conferi o contrato vigente (e se há rolagem)'],
+                ['exterior', 'Olhei o exterior: S&P futuro, DXY e Treasuries'],
+                ['plano', 'Defini setup, stop e alvo antes de entrar'],
+                ['limite', 'Sei meu limite de perda do dia e vou respeitar'],
+                ['cabeca', 'Estou descansado e não vou operar por vingança']
+            ];
+            const $ = id => document.getElementById(id);
+
+            // Cabeçalho: data e sessão
+            const now = LX.nowBRT(), mins = now.getHours() * 60 + now.getMinutes(), bday = pdBday, nextB = pdRef;
+            $('pd-date').textContent = `${bday ? '' : 'Para '}${['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'][pdRef.getDay()].replace(/^./, c => bday ? c : c.toLowerCase())}, ${LX.br(pdRef)}`;
+            $('pd-session').innerHTML = !bday ? `<i class="ph-bold ph-moon"></i> Sem pregão hoje · próximo ${LX.weekday(nextB)} ${LX.brShort(nextB)}`
+                : mins < 9 * 60 ? '<i class="ph-bold ph-sun-horizon"></i> Pré-abertura · pregão às 9h'
+                : mins <= 18 * 60 + 25 ? '<i class="ph-fill ph-circle text-emerald-400"></i> Pregão aberto'
+                : '<i class="ph-bold ph-moon"></i> Pregão encerrado';
+
+            // Sequência: dias seguidos (dias úteis) com checklist completo
+            function streak() {
+                // conta pregões seguidos com checklist completo; o pregão de referência só conta se já estiver completo
+                const full = d => { const x = st.days[LX.iso(d)]; return x && x.checks.length === CHECKS.length; };
+                let n = full(pdRef) ? 1 : 0, d = LX.addDays(pdRef, -1);
+                for (let i = 0; i < 180; i++, d = LX.addDays(d, -1)) {
+                    if (!LX.isBusinessDay(d)) continue;
+                    if (full(d)) n++; else break;
+                }
+                return n;
+            }
+
+            // Radar: eventos de hoje (ou do próximo pregão), vencimentos e rolagem
+            (function radar() {
+                const ref = bday ? pdToday : nextB, refIso = LX.iso(ref), items = [];
+                LX.agendaFixed.filter(e => e[0] === refIso).forEach(e => items.push([e[1] === 'feriado' ? 'ph-calendar-x' : e[1] === 'copom' ? 'ph-bank' : e[1] === 'inflacao' ? 'ph-thermometer' : 'ph-globe-hemisphere-west', e[2], e[3], e[1] === 'copom' || e[1] === 'inflacao' ? 'orange' : 'slate']));
+                if (ref.getDay() === 1) items.push(['ph-chart-line', 'Boletim Focus (8h25)', 'Expectativas de IPCA, Selic, PIB e câmbio.', 'slate']);
+                const w = LX.upcomingWIN(2), d = LX.upcomingWDO(2), o = LX.upcomingOptions(1);
+                const wdoLive = d[0].du <= 1 ? d[1] : d[0];
+                if (d[0].du <= 2) items.push(['ph-arrows-clockwise', `Rolagem do dólar: opere ${d[1].code}`, `${d[0].code} vence ${LX.weekday(d[0].expiry)} ${LX.brShort(d[0].expiry)} — a liquidez já migrou.`, 'orange']);
+                if (w[0].du <= 5) items.push(['ph-arrows-clockwise', `Vencimento do índice em ${w[0].du} DU`, `${w[0].code} vence ${LX.brShort(w[0].expiry)}; a rolagem para ${w[1].code} costuma começar na semana anterior.`, 'orange']);
+                if (o[0].du <= 2) items.push(['ph-flag-checkered', 'Vencimento de opções sobre ações', `${LX.weekday(o[0].expiry)} ${LX.brShort(o[0].expiry)} — volume e volatilidade maiores nas ações com opções.`, 'slate']);
+                const nc = LX.copom2026.map(c => LX.parseISO(c[0])).find(x => x >= pdToday);
+                const cards = `<div class="grid grid-cols-2 gap-2 font-mono">
+                    <div class="p-2.5 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-lect-teal"><span class="term-label block">WIN vigente</span><strong class="text-base">${w[0].code}</strong><span class="block text-[10px] text-slate-500">${w[0].du} DU p/ vencer</span></div>
+                    <div class="p-2.5 bg-slate-50 dark:bg-lect-bgDark border-l-2 border-lect-teal"><span class="term-label block">WDO vigente</span><strong class="text-base">${wdoLive.code}</strong><span class="block text-[10px] text-slate-500">${wdoLive.du} DU p/ vencer</span></div></div>`;
+                const ev = items.length ? items.map(([ic, t, n, c]) => `<div class="flex gap-2.5 p-2.5 border border-slate-200 dark:border-lect-borderDark ${c === 'orange' ? 'border-l-4 !border-l-lect-orange' : ''}"><i class="ph-bold ${ic} text-lg ${c === 'orange' ? 'text-lect-orange' : 'text-slate-400'} shrink-0"></i><div class="min-w-0"><strong class="block text-xs">${t}</strong><span class="block text-[11px] text-slate-500 leading-snug">${n}</span></div></div>`).join('')
+                    : `<div class="p-3 border border-dashed border-slate-300 dark:border-lect-borderDark text-xs text-slate-500"><i class="ph-bold ph-check-circle text-emerald-500"></i> Sem evento de agenda marcado para ${bday ? 'hoje' : LX.brShort(ref)}. Mesmo assim, confira o calendário econômico global.</div>`;
+                $('pd-radar').innerHTML = (bday ? '' : `<p class="text-[11px] text-slate-500">Mostrando o próximo pregão: <strong>${LX.weekday(ref)} ${LX.br(ref)}</strong></p>`) + cards + ev +
+                    (nc ? `<a href="macro.html#juros" class="flex items-center justify-between text-[11px] font-mono text-slate-500 hover:text-lect-teal pt-1"><span><i class="ph-bold ph-bank"></i> Próximo Copom: ${LX.weekday(nc)} ${LX.brShort(nc)} · ${LX.businessDaysBetween(pdToday, nc, true)} DU</span><i class="ph-bold ph-arrow-right"></i></a>` : '');
+            })();
+
+            // Limites e placar
+            const L = st.limits;
+            $('pd-cap').value = L.cap; $('pd-maxloss').value = L.maxloss; $('pd-goal').value = L.goal || ''; $('pd-maxtr').value = L.maxtr;
+            function renderScore() {
+                const cap = +L.cap || 0, lim = cap * (+L.maxloss || 0) / 100, goal = +L.goal || 0, maxtr = +L.maxtr || 0;
+                const pnl = day.trades.reduce((a, b) => a + b, 0), n = day.trades.length;
+                $('pd-stopline').innerHTML = lim > 0 ? `Pare o dia se perder <strong class="text-rose-600 dark:text-rose-400">${LX.brl(lim)}</strong>${maxtr ? ` ou após <strong>${maxtr}</strong> operações` : ''}.${goal ? ` Meta: <strong class="text-emerald-600 dark:text-emerald-400">${LX.brl(goal)}</strong>.` : ''}` : 'Defina capital e perda máxima para ver seu limite.';
+                const lw = lim > 0 && pnl < 0 ? Math.min(50, -pnl / lim * 50) : 0, gw = pnl > 0 ? Math.min(50, pnl / (goal || lim || pnl) * 50) : 0;
+                $('pd-bar-loss').style.width = lw + '%'; $('pd-bar-gain').style.width = gw + '%';
+                $('pd-lbl-loss').textContent = lim ? '−' + LX.brl(lim, 0) : ''; $('pd-lbl-gain').textContent = goal ? '+' + LX.brl(goal, 0) : '';
+                const hitLoss = lim > 0 && pnl <= -lim, hitTr = maxtr && n >= maxtr, hitGoal = goal && pnl >= goal;
+                const msg = hitLoss ? `<div class="p-2.5 bg-rose-600 text-white text-xs font-bold"><i class="ph-fill ph-hand-palm"></i> LIMITE DE PERDA ATINGIDO. Encerre o dia — amanhã tem pregão.</div>`
+                    : hitTr ? `<div class="p-2.5 bg-lect-orange text-white text-xs font-bold"><i class="ph-fill ph-hand-palm"></i> Você chegou ao máximo de ${maxtr} operações. Pare por hoje.</div>`
+                    : hitGoal ? `<div class="p-2.5 bg-emerald-600 text-white text-xs font-bold"><i class="ph-fill ph-trophy"></i> Meta batida! Proteja o resultado: pare ou reduza a mão.</div>` : '';
+                $('pd-score').innerHTML = `<div class="flex items-baseline justify-between font-mono"><span class="text-[11px] text-slate-500">${n} operaç${n === 1 ? 'ão' : 'ões'}${n ? ` · ${day.trades.filter(x => x > 0).length} ganhos` : ''}</span><strong class="text-xl ${LX.signClass(pnl)}">${pnl >= 0 ? '+' : '−'}${LX.brl(Math.abs(pnl))}</strong></div>` + (msg ? `<div class="mt-2">${msg}</div>` : '');
+                $('pd-undo').classList.toggle('invisible', !n);
+            }
+            ['pd-cap', 'pd-maxloss', 'pd-goal', 'pd-maxtr'].forEach(id => $(id).addEventListener('input', () => {
+                L.cap = +$('pd-cap').value || 0; L.maxloss = +$('pd-maxloss').value || 0; L.goal = +$('pd-goal').value || 0; L.maxtr = +$('pd-maxtr').value || 0;
+                pdSave(st); renderScore();
+            }));
+            const add = () => { const v = parseFloat($('pd-res').value); if (!isFinite(v) || v === 0) return; day.trades.push(v); $('pd-res').value = ''; pdSave(st); renderScore(); };
+            $('pd-add').onclick = add; $('pd-res').addEventListener('keydown', e => { if (e.key === 'Enter') add(); });
+            $('pd-undo').onclick = () => { day.trades.pop(); pdSave(st); renderScore(); };
+
+            // Checklist
+            function renderChecks() {
+                const k = day.checks.length, all = k === CHECKS.length;
+                $('pd-checks').innerHTML = CHECKS.map(([id, t]) => { const on = day.checks.includes(id); return `<label class="flex items-start gap-2.5 p-2 cursor-pointer border ${on ? 'border-emerald-500/40 bg-emerald-50 dark:bg-emerald-500/10' : 'border-transparent hover:bg-slate-50 dark:hover:bg-lect-bgDark'}"><input type="checkbox" data-pd="${id}" ${on ? 'checked' : ''} class="mt-0.5 w-4 h-4 accent-[#009988] shrink-0"><span class="text-xs ${on ? 'text-slate-500 line-through' : ''}">${t}</span></label>`; }).join('');
+                $('pd-ckcount').textContent = `${k}/${CHECKS.length}`; $('pd-ckcount').className = 'font-mono text-[11px] font-bold ' + (all ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-500');
+                $('pd-ready').innerHTML = all ? `<div class="p-3 bg-emerald-600 text-white text-sm font-bold flex items-center gap-2"><i class="ph-fill ph-seal-check text-xl"></i> Pronto para operar. Siga o plano.</div>`
+                    : `<div class="h-1.5 bg-slate-100 dark:bg-lect-bgDark"><div class="h-full bg-lect-teal transition-all" style="width:${k / CHECKS.length * 100}%"></div></div><p class="text-[11px] text-slate-500 mt-1.5">Complete o checklist antes da primeira operação.</p>`;
+                const s = streak();
+                $('pd-streak').innerHTML = `<i class="ph-fill ph-fire"></i> ${s} dia${s === 1 ? '' : 's'} seguido${s === 1 ? '' : 's'}`;
+                document.querySelectorAll('[data-pd]').forEach(c => c.onchange = () => {
+                    const id = c.dataset.pd; day.checks = c.checked ? [...new Set([...day.checks, id])] : day.checks.filter(x => x !== id);
+                    pdSave(st); renderChecks();
+                });
+            }
+            renderChecks(); renderScore(); pdSave(st);
+        })();
 
         /* ---------- Calculadora de risco ---------- */
         const PV = { WIN: { pv: 0.2, tick: 5, stop: 150, target: 300, margin: 150, cost: 0.5 }, WDO: { pv: 10, tick: 0.5, stop: 5, target: 10, margin: 200, cost: 1.2 } };

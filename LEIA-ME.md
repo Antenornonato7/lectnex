@@ -3,7 +3,7 @@
 ```
 index.html          Mercado Hoje: indicadores oficiais, agenda, câmbio, mercados globais, notícias
 macro.html          Macro & Juros: Copom, Focus, curva DI, regimes de risco, mapa "E se…?"
-futuros.html        NOVA — WIN, WDO e DI: vencimentos, risco por operação, IR, dólar justo
+futuros.html        WIN, WDO e DI: Plano do Dia (checklist pré-mercado, limite de perda, placar), vencimentos, risco, Kelly, IR, dólar justo
 acoes.html          Ações B3: cotação (brapi), gráfico (TradingView), painéis didáticos de fluxo/opções
 laboratorio.html    Academia (trilhas, lições interativas, glossário) + simuladores
 assets/
@@ -40,7 +40,7 @@ Em `assets/lectnex-core.js`, bloco `LX.config`:
 ## Manutenção periódica
 
 - `LX.copom2026`: preencha o resultado de cada reunião (ex.: `'13,50% (−0,25)'`) e acrescente o calendário de 2027 quando o BCB publicar.
-- Agenda fixa em `index.html` (lista `fixed`): eventos do mês (IPCA, payroll etc.). Vencimentos e Focus são calculados sozinhos.
+- Agenda fixa em `assets/lectnex-core.js` (`LX.agendaFixed`, usada no Mercado Hoje e no Plano do Dia): eventos do mês (IPCA, payroll etc.). Vencimentos e Focus são calculados sozinhos.
 - Feriados nacionais são calculados por regra (inclui Páscoa e 20/11). Feriados extraordinários precisam ser adicionados em `LX.b3Holidays`.
 
 ## Fontes de dados

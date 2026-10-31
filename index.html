@@ -27,12 +27,12 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031a">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031b">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031b">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -182,7 +182,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031a"></script>
+    <script src="assets/lectnex-core.js?v=20261031b"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -217,20 +217,7 @@
         document.getElementById('hero-wdo').textContent = wdo[0].du <= 2 ? `${wdo[1].code} (rolagem)` : wdo[0].code;
 
         /* ---------- Agenda ---------- */
-        const fixed = [
-            ['2026-11-02', 'feriado', 'Finados — B3 fechada', 'Sem pregão. Liquidações ficam para o dia útil seguinte.'],
-            ['2026-11-03', 'global', 'Eleições de meio de mandato (EUA)', 'Composição do Congresso americano: impacto em Treasuries, dólar global e risco.'],
-            ['2026-11-04', 'copom', 'Decisão do Copom (282ª reunião)', 'Comunicado após 18h30. Selic atual: 13,75%. Mercado acompanha ritmo de cortes.'],
-            ['2026-11-06', 'global', 'Payroll — emprego nos EUA (out)', '10h30 BRT aprox. Mexe com Treasuries, DXY e, por tabela, WDO.'],
-            ['2026-11-10', 'copom', 'Ata do Copom', '8h. Detalha o balanço de riscos e sinais para as próximas reuniões.'],
-            ['2026-11-12', 'inflacao', 'IPCA de outubro (IBGE)', '9h. Inflação oficial — impacto direto nos vértices curtos do DI.'],
-            ['2026-11-20', 'feriado', 'Consciência Negra — B3 fechada', 'Feriado nacional. Vencimento de opções de novembro antecipado para 19/11.'],
-            ['2026-11-26', 'inflacao', 'IPCA-15 de novembro', '9h. Prévia da inflação.'],
-            ['2026-12-09', 'copom', 'Superquarta: Copom + FOMC', 'Decisões de juros no Brasil (18h30) e nos EUA (16h BRT) no mesmo dia.'],
-            ['2026-12-11', 'inflacao', 'IPCA de novembro (IBGE)', '9h.'],
-            ['2026-12-24', 'feriado', 'Véspera de Natal — sem pregão', 'B3 fechada.'],
-            ['2026-12-31', 'feriado', 'Último dia do ano — sem pregão', 'B3 fechada.']
-        ].map(([d, k, t, n]) => ({ date: LX.parseISO(d), kind: k, title: t, note: n }));
+        const fixed = LX.agendaFixed.map(([d, k, t, n]) => ({ date: LX.parseISO(d), kind: k, title: t, note: n }));
 
         // Focus: toda segunda-feira (dia útil) às 8h25
         let mon = LX.addDays(today, (8 - today.getDay()) % 7);

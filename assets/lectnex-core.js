@@ -393,6 +393,22 @@
         ['2026-11-04', null], ['2026-12-09', null]
     ];
     LX.fomc2026 = ['2026-01-28', '2026-03-18', '2026-04-29', '2026-06-17', '2026-07-29', '2026-09-16', '2026-10-28', '2026-12-09'];
+    // Agenda fixa (eventos que não são calculados por regra). Usada no Mercado Hoje e no Plano do Dia.
+    // Formato: [data ISO, tipo, título, nota]. Tipos: copom, inflacao, global, feriado, focus, venc.
+    LX.agendaFixed = [
+        ['2026-11-02', 'feriado', 'Finados — B3 fechada', 'Sem pregão. Liquidações ficam para o dia útil seguinte.'],
+        ['2026-11-03', 'global', 'Eleições de meio de mandato (EUA)', 'Composição do Congresso americano: impacto em Treasuries, dólar global e risco.'],
+        ['2026-11-04', 'copom', 'Decisão do Copom (282ª reunião)', 'Comunicado após 18h30. Selic atual: 13,75%. Mercado acompanha ritmo de cortes.'],
+        ['2026-11-06', 'global', 'Payroll — emprego nos EUA (out)', '10h30 BRT aprox. Mexe com Treasuries, DXY e, por tabela, WDO.'],
+        ['2026-11-10', 'copom', 'Ata do Copom', '8h. Detalha o balanço de riscos e sinais para as próximas reuniões.'],
+        ['2026-11-12', 'inflacao', 'IPCA de outubro (IBGE)', '9h. Inflação oficial — impacto direto nos vértices curtos do DI.'],
+        ['2026-11-20', 'feriado', 'Consciência Negra — B3 fechada', 'Feriado nacional. Vencimento de opções de novembro antecipado para 19/11.'],
+        ['2026-11-26', 'inflacao', 'IPCA-15 de novembro', '9h. Prévia da inflação.'],
+        ['2026-12-09', 'copom', 'Superquarta: Copom + FOMC', 'Decisões de juros no Brasil (18h30) e nos EUA (16h BRT) no mesmo dia.'],
+        ['2026-12-11', 'inflacao', 'IPCA de novembro (IBGE)', '9h.'],
+        ['2026-12-24', 'feriado', 'Véspera de Natal — sem pregão', 'B3 fechada.'],
+        ['2026-12-31', 'feriado', 'Último dia do ano — sem pregão', 'B3 fechada.']
+    ];
     LX.parseISO = (s) => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
 
     /* ------------------------------------------------------------------ CABEÇALHO / RODAPÉ COMUNS */
@@ -488,6 +504,7 @@
     /* ------------------------------------------------------------------ COMANDO LECTNEX ("/" ou Ctrl/Cmd+K) */
     // [categoria, código, título, descrição, link, ícone, palavras-chave]
     const CMD = [
+        ['futuros', 'PLANO', 'Plano do Dia', 'Checklist pré-mercado, limite de perda e placar do dia', 'futuros.html#plano', 'ph-clipboard-text', 'plano dia checklist pre mercado disciplina limite perda placar rotina'],
         ['futuros', 'VENC', 'Vencimentos', 'WIN, WDO, DI1 e opções pelas regras da B3', 'futuros.html#vencimentos', 'ph-calendar-check', 'vencimento rolagem contrato vigente serie'],
         ['futuros', 'SPEC', 'Especificações dos contratos', 'Valor do ponto, tick, horário, margem', 'futuros.html#specs', 'ph-list-checks', 'especificacao ponto tick lote horario'],
         ['futuros', 'RISCO', 'Calculadora de risco', 'Tamanho de posição, stop, alvo, expectativa', 'futuros.html#risco', 'ph-shield-check', 'gestao stop alvo posicao contratos day trade'],
@@ -520,7 +537,7 @@
         ['GGBR4', 'Gerdau', 'Siderurgia'], ['RADL3', 'Raia Drogasil', 'Farmácias'], ['EQTL3', 'Equatorial', 'Energia'], ['SBSP3', 'Sabesp', 'Saneamento'],
         ['VIVT3', 'Vivo', 'Telecom'], ['EMBR3', 'Embraer', 'Aeronáutica'], ['RAIL3', 'Rumo', 'Logística'], ['CMIG4', 'Cemig', 'Energia']
     ];
-    const SHORT = { CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
+    const SHORT = { PLANO: 'Plano do dia', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
     LX.paletteItems = CMD.map(c => [c[0].toUpperCase(), c[2], c[4]]); // compatibilidade
     const CATS = [['tudo', 'Tudo'], ['acoes', 'Ações'], ['futuros', 'Futuros'], ['mercado', 'Mercado'], ['lab', 'Laboratório']];
     const norm = t => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
