@@ -118,6 +118,6 @@ FOMC e falas do Fed, ISM, PIB; China: PMIs e dados de atividade; Europa: BCE e i
 
 ## Rodadas de resultado (dias úteis)
 
-Além da edição das 7h40, a tarefa "Resultados do calendário" roda às 12h25 e às 16h55 (Brasília) nos dias úteis.
+Além da edição das 7h40, a tarefa "Resultados do calendário" roda às 12h40 e às 16h40 (Brasília) nos dias úteis.
 Ela **só** mexe em `data/calendario.json`: preenche `resultado` e `surpresa` dos eventos de hoje que já saíram (número oficial
 da fonte primária ou de veículo confiável) e publica com o commit `calendario: AAAA-MM-DD HHhMM`. Não altera mais nada.
