@@ -329,7 +329,7 @@
                         const done = e.resultado != null && e.resultado !== '';
                         const sp = spOf(e);
                         return `<div class="px-4 py-2.5 ${imp >= 3 ? 'bg-lect-orange/5' : ''}">
-                            <div class="flex items-start gap-3"><span class="w-11 shrink-0 font-mono text-xs font-bold ${done ? 'text-slate-400' : 'text-lect-teal'}">${LX.esc(e.hora || '—')}</span>
+                            <div class="flex items-start gap-3"><span class="w-11 shrink-0 font-mono text-xs font-bold ${done ? 'text-slate-400' : 'text-lect-teal'}">${e.hora ? LX.esc(e.hora) : '<span class="text-[10px] text-slate-400">O DIA</span>'}</span>
                             <div class="flex-1 min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><span title="${LX.esc(e.pais || '')}">${FLAG[e.pais] || LX.esc(e.pais || '')}</span><strong class="text-sm leading-snug">${LX.esc(e.evento)}</strong><span class="font-mono text-[10px]">${dots}</span></div>
                             ${e.nota ? `<p class="text-[11px] text-slate-500 leading-snug mt-0.5">${LX.esc(e.nota)}</p>` : ''}
                             ${sp ? `<p class="mt-1 text-[11px] leading-snug"><span class="px-1 mr-1 font-mono text-[9px] font-bold bg-lect-orange text-lect-navy">SURPRESA ${sp.seta}</span><span class="text-slate-600 dark:text-slate-300">${LX.esc(sp.reacao || sp.lbl)}</span></p>` : ''}
