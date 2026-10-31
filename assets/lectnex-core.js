@@ -202,11 +202,12 @@
 
     /* ------------------------------------------------------------------ TEMA */
     LX.isDark = () => document.documentElement.classList.contains('dark');
-    try { if (localStorage.getItem('lectnex-theme') === 'dark') document.documentElement.classList.add('dark'); } catch (_) { }
+    // Modo escuro é o padrão; o claro só quando o visitante escolheu
+    try { if (localStorage.getItem('lectnex-theme') !== 'light') document.documentElement.classList.add('dark'); } catch (_) { document.documentElement.classList.add('dark'); }
     window.toggleTheme = function () {
         const dark = document.documentElement.classList.toggle('dark');
         try { localStorage.setItem('lectnex-theme', dark ? 'dark' : 'light'); } catch (_) { }
-        LX._tvWidgets.forEach(w => LX.tv(w.id, w.type, w.cfg));
+        LX._tvWidgets.forEach(w => { const h = document.getElementById(w.id); if (h && h.dataset.tvLoaded) LX.tv(w.id, w.type, w.cfg, true); });
         document.dispatchEvent(new CustomEvent('lx:theme', { detail: { dark } }));
     };
 
@@ -218,6 +219,23 @@
         ipcaMes: { value: LX.config.fallback.ipcaMes, src: 'ref', date: LX.config.fallback.ipcaRef },
         fx: {}, ptax: null
     };
+
+    /* Cache local: abre a página já com os últimos números e atualiza em seguida */
+    const CACHE_KEY = 'lectnex-cache-v1';
+    const CACHE_TTL = { macro: 7 * 864e5, ptax: 3 * 864e5, fx: 12 * 36e5 };
+    function cacheAll() { try { return JSON.parse(localStorage.getItem(CACHE_KEY) || '{}'); } catch (_) { return {}; } }
+    function cacheSet(k, v) { try { const c = cacheAll(); c[k] = { t: Date.now(), v }; localStorage.setItem(CACHE_KEY, JSON.stringify(c)); } catch (_) { } }
+    (function hydrate() {
+        const c = cacheAll(), now = Date.now(), fresh = k => c[k] && now - c[k].t < CACHE_TTL[k];
+        let newest = 0;
+        if (fresh('macro')) { Object.assign(LX.data, c.macro.v); newest = Math.max(newest, c.macro.t); }
+        if (fresh('ptax')) LX.data.ptax = c.ptax.v;
+        if (fresh('fx')) {
+            Object.entries(c.fx.v).forEach(([k, q]) => { q.time = new Date(q.time); LX.data.fx[k] = q; });
+            LX.data.fxOk = true; LX.data.fxCached = true; newest = Math.max(newest, c.fx.t);
+        }
+        if (newest) LX.data.cachedAt = new Date(newest).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+    })();
 
     async function getJSON(url, ms = 9000) {
         const ctl = new AbortController();
@@ -244,8 +262,10 @@
             sgs(13522).then(r => LX.data.ipca12m = { value: r[0].value, src: 'IBGE via BCB · SGS 13522', date: r[0].date.slice(3) }),
             sgs(433).then(r => LX.data.ipcaMes = { value: r[0].value, src: 'IBGE via BCB · SGS 433', date: r[0].date.slice(3) })
         ];
-        await Promise.allSettled(jobs);
+        const res = await Promise.allSettled(jobs);
+        const macroOk = res.some(r => r.status === 'fulfilled');
         LX.data.realRate = ((1 + LX.data.selic.value / 100) / (1 + LX.data.ipca12m.value / 100) - 1) * 100;
+        if (macroOk) { LX.data.live = true; cacheSet('macro', { selic: LX.data.selic, cdi: LX.data.cdi, ipca12m: LX.data.ipca12m, ipcaMes: LX.data.ipcaMes }); }
         LX.fill();
         document.dispatchEvent(new CustomEvent('lx:macro', { detail: LX.data }));
     };
@@ -260,12 +280,14 @@
                 if (j.value && j.value.length) {
                     const v = j.value[j.value.length - 1];
                     LX.data.ptax = { buy: v.cotacaoCompra, sell: v.cotacaoVenda, date: LX.br(d) };
-                    LX.fill();
+                    cacheSet('ptax', LX.data.ptax);
+                    LX.data.ptaxTried = true; LX.fill();
                     return;
                 }
-            } catch (_) { return; }
+            } catch (_) { break; }
             d = addDays(d, -1);
         }
+        LX.data.ptaxTried = true; LX.fill();
     };
 
     LX.fxPairs = ['USD-BRL', 'EUR-BRL', 'GBP-BRL', 'BTC-BRL', 'ETH-BRL', 'USD-JPY', 'EUR-USD', 'ARS-BRL', 'CNY-BRL'];
@@ -279,8 +301,10 @@
                     time: new Date(+q.timestamp * 1000)
                 };
             });
-            LX.data.fxOk = true;
-        } catch (_) { LX.data.fxOk = false; }
+            LX.data.fxOk = true; LX.data.live = true; LX.data.fxCached = false;
+            cacheSet('fx', LX.data.fx);
+        } catch (_) { if (!LX.data.fxCached) LX.data.fxOk = false; }
+        LX.data.fxTried = true;
         LX.fill();
         document.dispatchEvent(new CustomEvent('lx:fx', { detail: LX.data.fx }));
     };
@@ -318,22 +342,36 @@
             'usd-pct': usd ? LX.pct(usd.pct, 2, true) : '',
             ptax: d.ptax ? `${LX.num(d.ptax.sell, 4)} (${d.ptax.date})` : '—'
         };
-        Object.entries(map).forEach(([k, v]) => document.querySelectorAll(`[data-lx="${k}"]`).forEach(el => { el.textContent = v; }));
+        const waiting = { usd: !usd && !d.fxTried, 'usd-pct': !usd && !d.fxTried, ptax: !d.ptax && !d.ptaxTried };
+        Object.entries(map).forEach(([k, v]) => document.querySelectorAll(`[data-lx="${k}"]`).forEach(el => { el.textContent = v; el.classList.toggle('lx-skel', !!waiting[k]); }));
+        if (d.fxTried || usd) document.querySelectorAll('[data-lx-skel="fx"]').forEach(el => el.classList.remove('lx-skel'));
         if (usd) document.querySelectorAll('[data-lx="usd-pct"]').forEach(el => el.className = LX.signClass(usd.pct));
         document.querySelectorAll('[data-lx-feed]').forEach(el => {
-            const live = d.selic.src !== 'ref' || d.fxOk;
-            el.innerHTML = live
+            el.innerHTML = d.live
                 ? '<span class="w-2 h-2 bg-emerald-400 inline-block animate-pulse"></span>DADOS OFICIAIS CONECTADOS'
-                : `<span class="w-2 h-2 bg-amber-400 inline-block"></span>VALORES DE REFERÊNCIA (${d.selic.date})`;
+                : d.cachedAt
+                    ? `<span class="w-2 h-2 bg-sky-400 inline-block"></span>ÚLTIMOS DADOS · ${d.cachedAt}`
+                    : `<span class="w-2 h-2 bg-amber-400 inline-block"></span>VALORES DE REFERÊNCIA (${d.selic.date})`;
         });
     };
 
     /* ------------------------------------------------------------------ TRADINGVIEW */
     LX._tvWidgets = [];
-    LX.tv = function (id, type, cfg) {
+    // Widgets só carregam quando chegam perto da tela (economiza dezenas de requisições no primeiro acesso)
+    const tvIO = 'IntersectionObserver' in window ? new IntersectionObserver(entries => entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        tvIO.unobserve(en.target);
+        const w = LX._tvWidgets.find(x => x.id === en.target.id); if (w) LX.tv(w.id, w.type, w.cfg, true);
+    }), { rootMargin: '400px 0px' }) : null;
+    LX.tv = function (id, type, cfg, now) {
         const host = document.getElementById(id);
         if (!host) return;
         if (!LX._tvWidgets.find(w => w.id === id)) LX._tvWidgets.push({ id, type, cfg });
+        if (!now && tvIO) {
+            if (!host.dataset.tvWaiting) { host.dataset.tvWaiting = '1'; host.innerHTML = '<div class="lx-skel-block"></div>'; tvIO.observe(host); }
+            return;
+        }
+        host.dataset.tvLoaded = '1';
         host.innerHTML = '';
         const wrap = document.createElement('div');
         wrap.className = 'tradingview-widget-container';
@@ -410,6 +448,7 @@
               <nav class="hidden lg:flex items-center gap-1 text-[13px] font-medium text-slate-600 dark:text-slate-300">${NAV.map(n => link(n)).join('')}</nav>
               <div class="flex items-center gap-2">
                 <button onclick="LX.openPalette()" class="hidden sm:flex xl:w-52 items-center justify-between gap-3 px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-lect-cardDark text-xs font-mono text-slate-500 hover:border-lect-teal"><span class="inline-flex items-center gap-1.5"><i class="ph ph-magnifying-glass text-lect-teal"></i><span class="hidden xl:inline">Buscar ativo ou ferramenta</span></span><kbd class="px-1.5 text-[10px] border border-slate-300 dark:border-lect-borderDark">/</kbd></button>
+                <button onclick="LX.openPalette()" title="Buscar" aria-label="Buscar ativo ou ferramenta" class="sm:hidden p-2.5 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal"><i class="ph-bold ph-magnifying-glass text-lg text-lect-teal"></i></button>
                 <button onclick="toggleTheme()" title="Alternar tema" aria-label="Alternar tema claro/escuro" class="p-2.5 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal"><i class="ph-fill ph-moon text-lg dark:hidden"></i><i class="ph-fill ph-sun text-lg hidden dark:block text-lect-orange"></i></button>
               </div>
             </div>
@@ -656,6 +695,9 @@
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
+        // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs
+        if (LX.data.cachedAt) document.dispatchEvent(new CustomEvent('lx:macro', { detail: LX.data }));
+        if (LX.data.fxCached) document.dispatchEvent(new CustomEvent('lx:fx', { detail: LX.data.fx }));
         setInterval(tickClock, 1000);
         setInterval(paintSessions, 30000);
         LX.loadMacro(); LX.loadPTAX(); LX.loadFX();

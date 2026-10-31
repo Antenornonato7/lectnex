@@ -10,10 +10,25 @@ assets/
   lectnex-core.js   Núcleo: dados BCB/AwesomeAPI, calendário B3, vencimentos, cabeçalho/rodapé, busca
   lectnex.css       Estilos compartilhados
   lectnex-academia.js Lições, quizzes e glossário da Academia (edite o array LESSONS)
-  tw-config.js      Cores e fontes da marca para o Tailwind
+  tailwind.css      CSS compilado do Tailwind (gerado — não editar à mão)
+  tailwind.src.css  Fonte do CSS do Tailwind
+tailwind.config.js  Cores e fontes da marca; o workflow "Compilar CSS" recompila sozinho a cada push
 ```
 
 Mantenha a pasta `assets/` junto dos `.html` ao publicar.
+
+## CSS (Tailwind compilado)
+
+O site não usa mais o Tailwind de testes (Play CDN). O estilo fica em `assets/tailwind.css`, gerado a partir das classes usadas nas páginas.
+Ao mudar classes, recompile localmente com o Tailwind CLI 3.4.16:
+`./tailwindcss -c tailwind.config.js -i assets/tailwind.src.css -o assets/tailwind.css --minify`
+— ou apenas faça o push: o workflow **Compilar CSS** faz isso sozinho.
+
+## Desempenho
+
+- Widgets do TradingView carregam só quando chegam perto da tela.
+- Últimos dados (Selic, CDI, IPCA, PTAX, câmbio) ficam guardados no navegador: a página abre preenchida e atualiza em seguida.
+- Modo escuro é o padrão; o claro fica salvo para quem escolher.
 
 ## Configuração rápida
 
