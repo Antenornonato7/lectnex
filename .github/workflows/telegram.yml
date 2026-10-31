@@ -6,15 +6,22 @@ on:
   push:
     branches: [main]
     paths: ['data/leitura.json', 'data/calendario.json']
+  schedule:
+    - cron: "17 11 * * *"   # 08h17 em Brasília: atualiza a contagem de seguidores
   workflow_dispatch:
     inputs:
       teste:
         description: 'Mandar mensagem de teste'
         type: boolean
-        default: true
+        default: false
+      acao:
+        description: 'Ação especial'
+        type: choice
+        options: ['nenhuma', 'boas-vindas', 'contar']
+        default: 'nenhuma'
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: telegram
@@ -34,4 +41,15 @@ jobs:
           TOKEN_EM_VARIABLES: ${{ vars.TELEGRAM_BOT_TOKEN && !secrets.TELEGRAM_BOT_TOKEN && !secrets.LECTNEX_ALERTAS_BOT && '1' || '' }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
           TESTE: ${{ github.event_name == 'workflow_dispatch' && inputs.teste && '1' || '' }}
+          ACAO: ${{ github.event_name == 'schedule' && 'contar' || inputs.acao || '' }}
         run: python3 coletor/telegram.py
+      - name: Salvar contagem de seguidores
+        if: github.event_name == 'schedule' || inputs.acao == 'contar'
+        run: |
+          [ -f data/telegram.json ] || exit 0
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com"
+          git add data/telegram.json
+          git diff --cached --quiet && exit 0
+          git commit -m "telegram: contagem de seguidores"
+          git pull --rebase -q origin main && git push -q origin HEAD:main

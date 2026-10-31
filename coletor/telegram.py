@@ -77,12 +77,59 @@ def msg_surpresa(ev):
     return '\n'.join(linhas)
 
 
+def api(metodo, dados):
+    req = urllib.request.Request(f'https://api.telegram.org/bot{TOKEN}/{metodo}', data=json.dumps(dados).encode(), headers={'Content-Type': 'application/json'})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as err:
+        return {'ok': False, 'description': err.read().decode()[:200]}
+
+
+def boas_vindas():
+    texto = '\n'.join([
+        '👋 <b>Bem-vindo ao Lectnex</b>',
+        'Educação conectada ao mercado, para quem opera <b>mini índice (WIN)</b>, <b>mini dólar (WDO)</b> e <b>juros (DI)</b>.',
+        '',
+        '<b>O que chega aqui</b>',
+        '📊 <b>Leitura do Dia</b> · todo dia por volta das 7h45: resumo, termômetro de WIN e WDO e o que esperar do pregão.',
+        '⚡ <b>Alertas de surpresa</b> · quando um dado (IPCA, payroll, Copom…) sai fora do consenso, com a reação típica dos ativos.',
+        '',
+        '<b>No site</b>',
+        f'• <a href="{SITE}">Mercado Hoje</a>: calendário, mapa da bolsa e notícias',
+        f'• <a href="{SITE}#pregao">Modo Pregão</a>: tela única para deixar aberta no celular',
+        f'• <a href="{SITE}futuros.html#plano">Plano do Dia e Diário de Trades</a>',
+        f'• <a href="{SITE}#leitura">Leitura do Dia por e-mail</a>',
+        '',
+        '<i>Conteúdo educacional. Não é recomendação de investimento. Operar derivativos envolve risco de perdas.</i>'])
+    r = api('sendMessage', {'chat_id': CHAT, 'text': texto, 'parse_mode': 'HTML', 'disable_web_page_preview': True})
+    if not r.get('ok'):
+        note('warning', 'Boas-vindas não enviada: ' + str(r.get('description'))); return
+    p = api('pinChatMessage', {'chat_id': CHAT, 'message_id': r['result']['message_id'], 'disable_notification': True})
+    note('notice' if p.get('ok') else 'warning', 'Boas-vindas enviada e fixada' if p.get('ok') else 'Boas-vindas enviada, mas sem permissão para fixar: ' + str(p.get('description')))
+
+
+def contar():
+    r = api('getChatMemberCount', {'chat_id': CHAT})
+    if not r.get('ok'):
+        note('warning', 'Não consegui contar seguidores: ' + str(r.get('description'))); return
+    import datetime
+    json.dump({'seguidores': r['result'], 'atualizado_em': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')},
+              open('data/telegram.json', 'w', encoding='utf-8'), ensure_ascii=False)
+    note('notice', f'Telegram: {r["result"]} seguidores')
+
+
 def main():
     if not TOKEN or not CHAT:
         note('warning', 'Telegram não configurado: falta ' + ' e '.join(n for n, v in (('TELEGRAM_BOT_TOKEN', TOKEN), ('TELEGRAM_CHAT_ID', CHAT)) if not v))
         return
     if os.environ.get('TOKEN_EM_VARIABLES'):
         note('warning', 'O token do Telegram está em Variables (visível). Mova para Secrets com o nome TELEGRAM_BOT_TOKEN.')
+    acao = os.environ.get('ACAO', '')
+    if acao == 'boas-vindas':
+        boas_vindas(); return
+    if acao == 'contar':
+        contar(); return
     if os.environ.get('TESTE'):
         ok = enviar('✅ <b>Canal do Lectnex conectado.</b>\nAqui vão chegar a Leitura do Dia e os alertas de surpresa do calendário.\n' + f'<a href="{SITE}">{SITE}</a>')
         note('notice' if ok else 'warning', 'Teste do Telegram enviado' if ok else 'Teste do Telegram falhou')

@@ -283,6 +283,9 @@
 .ph.ph-target:before {
   content: "\e47c";
 }
+.ph.ph-telegram-logo:before {
+  content: "\e5bc";
+}
 .ph.ph-terminal-window:before {
   content: "\eae8";
 }
@@ -620,6 +623,9 @@
 .ph-bold.ph-target:before {
   content: "\e47c";
 }
+.ph-bold.ph-telegram-logo:before {
+  content: "\e5bc";
+}
 .ph-bold.ph-terminal-window:before {
   content: "\eae8";
 }
@@ -956,6 +962,9 @@
 }
 .ph-fill.ph-target:before {
   content: "\e47c";
+}
+.ph-fill.ph-telegram-logo:before {
+  content: "\e5bc";
 }
 .ph-fill.ph-terminal-window:before {
   content: "\eae8";
@@ -1702,6 +1711,14 @@
 }
 .ph-duotone.ph-target:after {
   content: "\e47d";
+  margin-left: -1em;
+}
+.ph-duotone.ph-telegram-logo:before {
+  content: "\e5bc";
+  opacity: 0.2;
+}
+.ph-duotone.ph-telegram-logo:after {
+  content: "\e5bd";
   margin-left: -1em;
 }
 .ph-duotone.ph-terminal-window:before {

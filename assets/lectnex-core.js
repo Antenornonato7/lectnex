@@ -28,6 +28,7 @@
     LX.config.brapiToken = 'uRJnTfjL6jypdHfJ8b5LJd';
     // Newsletter (Buttondown): usuário da conta. Vazio = formulários de inscrição ficam escondidos.
     LX.config.newsletter = 'lectnex';
+    LX.config.telegram = 'lectnex';   // canal público t.me/lectnex
 
     /* ------------------------------------------------------------------ FORMATOS */
     const nf = (min, max) => new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });
@@ -728,6 +729,13 @@
     /* ------------------------------------------------------------------ NEWSLETTER (Buttondown) */
     // Qualquer elemento <div data-lx-news="compacto|completo"> vira um formulário de inscrição quando LX.config.newsletter está preenchido.
     let newsCount = null;
+    let tgCount = 0;
+    function tgBtn(kind) { // botão "Seguir no Telegram" (kind: escuro | claro | link)
+        const tg = LX.config.telegram; if (!tg) return '';
+        const href = 'https://t.me/' + encodeURIComponent(tg), n = tgCount >= 25 ? ` · ${tgCount.toLocaleString('pt-BR')}` : '';
+        if (kind === 'link') return `<a href="${href}" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-[#2AABEE] hover:underline font-mono text-[11px] font-bold"><i class="ph-fill ph-telegram-logo text-sm"></i>Seguir no Telegram${n}</a>`;
+        return `<a href="${href}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#2AABEE] hover:bg-[#229ED9] text-white font-mono text-xs font-bold whitespace-nowrap"><i class="ph-fill ph-telegram-logo text-base"></i>SEGUIR NO TELEGRAM${n}</a>`;
+    }
     function newsForms() {
         const user = LX.config.newsletter;
         // prova social: só a partir de 25 inscritos
@@ -744,15 +752,15 @@
             if (kind === 'chamada') {
                 el.innerHTML = `<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 border border-dashed border-lect-orange/50 bg-lect-orange/5">
                     <div class="flex items-start gap-3"><i class="ph-duotone ph-envelope-simple-open text-3xl text-lect-orange shrink-0"></i><div><strong class="block font-display">${LX.esc(el.dataset.titulo || 'Gostou desta ferramenta?')}</strong><span class="text-sm text-slate-600 dark:text-slate-400">Receba a <strong>Leitura do Dia</strong> às 7h40: termômetro de WIN e WDO, agenda e as notícias que mexem no preço. Grátis.${social ? ` <strong class="text-lect-orange">${social}</strong>` : ''}</span></div></div>
-                    <div class="md:w-[420px] shrink-0">${form}</div></div>`;
+                    <div class="md:w-[420px] shrink-0">${form}${LX.config.telegram ? `<div class="mt-2 text-right">${tgBtn('link')} <span class="text-[11px] text-slate-500 font-mono">· alertas de surpresa em tempo real</span></div>` : ''}</div></div>`;
                 return;
             }
             el.innerHTML = full
                 ? `<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 bg-lect-navy text-white border-l-4 border-lect-orange relative overflow-hidden"><div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
                     <div class="relative lg:col-span-7"><span class="term-label !text-lect-orange font-bold">LEITURA DO DIA NO SEU E-MAIL</span><h3 class="font-display text-2xl font-bold mt-1">Comece o pregão já sabendo o que importa.</h3>
                     <p class="text-sm text-slate-300 mt-2">Todo dia às 7h40: termômetro de WIN e WDO, agenda com horários, as 5 notícias que mexem no preço e o que esperar. Grátis, sem spam, cancele quando quiser.</p></div>
-                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">${social ? `<strong class="text-lect-orange">${social}</strong> · ` : ''}Conteúdo educacional · você confirma a inscrição pelo e-mail.</p></div></div>`
-                : `<div class="font-mono text-[11px]"><span class="block text-slate-300 font-bold mb-1.5"><i class="ph-bold ph-envelope-simple text-lect-orange"></i> Leitura do Dia por e-mail, todo dia às 7h40</span>${form}</div>`;
+                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">${social ? `<strong class="text-lect-orange">${social}</strong> · ` : ''}Conteúdo educacional · você confirma a inscrição pelo e-mail.</p>${LX.config.telegram ? `<div class="mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center gap-3">${tgBtn('escuro')}<span class="text-[11px] text-slate-400">Prefere celular? A Leitura e os alertas de surpresa chegam no canal.</span></div>` : ''}</div></div>`
+                : `<div class="font-mono text-[11px]"><span class="block text-slate-300 font-bold mb-1.5"><i class="ph-bold ph-envelope-simple text-lect-orange"></i> Leitura do Dia por e-mail, todo dia às 7h40</span>${form}${LX.config.telegram ? `<div class="mt-2">${tgBtn('link')}</div>` : ''}</div>`;
         });
     }
 
@@ -830,6 +838,7 @@
         fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && Array.isArray(j.eventos)) { calEvs = j.eventos; nextBar(); setInterval(nextBar, 30000); } }).catch(() => { });
         newsForms();
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });
+        if (LX.config.telegram) fetch('data/telegram.json?t=' + Math.floor(Date.now() / 36e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.seguidores >= 25) { tgCount = j.seguidores; newsForms(); } }).catch(() => { });
         // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs
         if (LX.data.cachedAt) document.dispatchEvent(new CustomEvent('lx:macro', { detail: LX.data }));
         if (LX.data.fxCached) document.dispatchEvent(new CustomEvent('lx:fx', { detail: LX.data.fx }));
