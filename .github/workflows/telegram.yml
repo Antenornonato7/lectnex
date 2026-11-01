@@ -52,7 +52,7 @@ jobs:
         if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.acao == 'push-teste')
         env:
           ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID || secrets.ONESIGNAL_APP_ID || 'c0be7d93-6afb-4bb0-bf56-6f9171302071' }}
-          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY || secrets.LECTNEX2 }}
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY || secrets.LECTNEX2 || secrets.ONESIGNAL_KEY || secrets.ONESIGNAL_REST_API_KEY || secrets.ONESIGNAL || secrets.LECTNEX3 || secrets.LECTNEX || secrets.APP_API_KEY || secrets.API_KEY }}
           TESTE: ${{ inputs.acao == 'push-teste' && '1' || '' }}
         run: python3 coletor/push.py
       - name: Salvar contagem de seguidores
