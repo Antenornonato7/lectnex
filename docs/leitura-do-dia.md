@@ -74,6 +74,19 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
 - `noticias`: as 5 notícias (máx. 6) das últimas ~18 horas que mais mexem com WIN, WDO e DI. Prefira fatos (decisões, dados, números) a opinião. `impacto` = direção provável do preço do ativo por causa daquela notícia; omita o ativo se não houver efeito claro. A `url` precisa ser o link real da matéria que você abriu.
 - `fontes`: 2 a 6 links reais que você abriu.
 
+## Fontes
+
+- **Fechamento do último pregão (uma fonte só, sempre a mesma):** Ibovespa pelo número oficial da B3 (b3.com.br) ou, na falta,
+  pelo InfoMoney/Valor citando a B3; dólar à vista pelo fechamento do InfoMoney ou Valor (e a PTAX pelo Banco Central). Se a
+  edição anterior já trouxe o fechamento do mesmo pregão, **repita os mesmos números** em vez de buscar de outra fonte.
+- **Dados oficiais:** IBGE, Banco Central (BCB), Tesouro Nacional, BLS, BEA, Federal Reserve, ISM. Prefira o comunicado oficial.
+- **Notícias, nesta ordem de preferência:** Valor Econômico, InfoMoney, Reuters, Bloomberg Línea, Folha, Estadão, O Globo,
+  CNN Brasil, CNBC, Agência Brasil, Broadcast; no exterior, Reuters, Bloomberg, CNBC, AP, Financial Times, WSJ.
+- **Evite** veículos com linha política declarada (de qualquer lado) e sites de opinião ou agregadores sem apuração própria.
+  Se um fato só aparecer neles, procure a confirmação em um veículo da lista; sem confirmação, deixe de fora.
+- Fato relevante com fonte única ou anônima (ex.: "autoridades disseram"): atribua sempre ("segundo a Reuters, …") e não o coloque
+  sozinho no título.
+
 ## Regras de conteúdo
 
 - Português do Brasil, direto, para quem opera mini índice e mini dólar.
