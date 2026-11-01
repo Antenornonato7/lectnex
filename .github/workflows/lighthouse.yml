@@ -37,7 +37,8 @@ jobs:
             --url=https://antenornonato7.github.io/lectnex/macro.html \
             --url=https://antenornonato7.github.io/lectnex/futuros.html \
             --url=https://antenornonato7.github.io/lectnex/acoes.html \
-            --url=https://antenornonato7.github.io/lectnex/laboratorio.html 2>&1 | tee lh.log | tail -20
+            --url=https://antenornonato7.github.io/lectnex/laboratorio.html \
+            --url=https://antenornonato7.github.io/lectnex/glossario.html 2>&1 | tee lh.log | tail -20
           lhci upload --target=temporary-public-storage 2>&1 | tee -a lh.log | tail -8 || true
       - name: Montar placar
         if: always()
