@@ -1,0 +1,32 @@
+# Curva de juros pública (Tesouro Direto + Tesouro Transparente) → data/curva.json
+name: Curva de juros
+
+on:
+  schedule:
+    - cron: "23 13,16,19,21 * * 1-5"   # 10h23, 13h23, 16h23 e 18h23 em Brasília
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: curva
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Coletar curva
+        run: python3 coletor/curva.py
+      - name: Publicar
+        run: |
+          [ -f data/curva.json ] || exit 0
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com"
+          git add data/curva.json
+          git diff --cached --quiet && exit 0
+          git commit -m "curva: $(TZ=America/Sao_Paulo date '+%F %H:%M')"
+          git pull --rebase -q origin main && git push -q origin HEAD:main
