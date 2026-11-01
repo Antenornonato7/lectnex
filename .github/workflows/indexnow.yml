@@ -1,0 +1,22 @@
+# Avisa os buscadores (Bing, Yandex… via IndexNow) quando páginas do site mudam.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ['*.html', 'sitemap.xml']
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - run: sleep 60   # espera o GitHub Pages publicar
+      - run: python3 coletor/indexnow.py
