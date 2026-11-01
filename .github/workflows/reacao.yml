@@ -27,7 +27,7 @@ jobs:
       - name: Medir
         env:
           TESTE: ${{ inputs.teste && '1' || '' }}
-        run: if [ -n "$TESTE" ]; then python3 coletor/teste_fontes.py; else python3 coletor/reacao.py; fi
+        run: python3 coletor/reacao.py
       - name: Publicar
         run: |
           [ -f data/reacoes.json ] || exit 0

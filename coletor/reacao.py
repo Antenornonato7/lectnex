@@ -8,7 +8,7 @@ calculada, não as cotações.
 import datetime as dt, json, os, re, unicodedata, urllib.request
 
 BRT = dt.timezone(dt.timedelta(hours=-3))
-UA = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36'}
+UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36', 'Accept': 'application/json,*/*'}
 ATIVOS = {'win': '%5EBVSP', 'wdo': 'BRL%3DX'}
 SAIDA = 'data/reacoes.json'
 
@@ -26,9 +26,17 @@ def tipo(ev):
 
 
 def barras(sym):
-    url = f'https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=5m&range=10d'
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
-        j = json.load(r)['chart']['result'][0]
+    erro = None
+    for host in ('query2', 'query1'):
+        try:
+            url = f'https://{host}.finance.yahoo.com/v8/finance/chart/{sym}?interval=5m&range=10d'
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+                j = json.load(r)['chart']['result'][0]
+            break
+        except Exception as e:
+            erro = e
+    else:
+        raise erro
     ts, cl = j['timestamp'], j['indicators']['quote'][0]['close']
     return [(t, c) for t, c in zip(ts, cl) if c is not None]
 
