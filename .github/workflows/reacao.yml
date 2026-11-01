@@ -1,0 +1,39 @@
+# Mede a reação de WIN (Ibovespa) e WDO (dólar) a cada dado econômico divulgado → data/reacoes.json
+name: Reação aos dados
+
+on:
+  schedule:
+    - cron: "41 15,22 * * 1-5"   # 12h41 e 19h41 em Brasília
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: 'Só testar a fonte de cotações'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reacao
+  cancel-in-progress: false
+
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Medir
+        env:
+          TESTE: ${{ inputs.teste && '1' || '' }}
+        run: python3 coletor/reacao.py
+      - name: Publicar
+        run: |
+          [ -f data/reacoes.json ] || exit 0
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com"
+          git add data/reacoes.json
+          git diff --cached --quiet && exit 0
+          git commit -m "reação: $(TZ=America/Sao_Paulo date '+%F %H:%M')"
+          git pull --rebase -q origin main && git push -q origin HEAD:main
