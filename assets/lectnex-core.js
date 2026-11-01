@@ -466,7 +466,7 @@
             head.className = 'sticky top-0 z-40 bg-white/95 dark:bg-lect-bgDark/95 border-b border-slate-300 dark:border-lect-borderDark backdrop-blur-md';
             const link = (n, mobile) => {
                 const on = n.key === active;
-                const badge = n.badge ? `<span class="ml-1 px-1 text-[8px] font-bold bg-lect-orange text-white">${n.badge}</span>` : '';
+                const badge = n.badge ? `<span class="ml-1 px-1 text-[8px] font-bold bg-lect-orange text-lect-navy">${n.badge}</span>` : '';
                 if (mobile) return `<a href="${n.href}" class="px-2.5 py-1 ${on ? 'bg-lect-navy text-white font-bold' : 'border border-slate-300 dark:border-lect-borderDark'}">${n.label}${badge}</a>`;
                 return `<a href="${n.href}" class="flex items-center gap-1.5 px-2 xl:px-2.5 py-2 whitespace-nowrap transition-colors ${on ? 'text-lect-navy dark:text-white font-bold border-b-2 border-lect-teal' : 'hover:text-lect-teal'}"><i class="ph-bold ${n.icon} hidden xl:inline-block ${on ? 'text-lect-teal' : 'text-slate-400'}"></i>${n.label}${badge}</a>`;
             };
@@ -503,6 +503,7 @@
                 <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
+                <button type="button" id="lx-hc" class="mt-2 flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-circle-half"></i>Alto contraste</button>
                 <button type="button" data-lx-push class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-orange/60 text-lect-orange hover:bg-lect-orange/10"><i class="ph-bold ph-bell-ringing"></i>Alertas no celular</button>
                 <span id="lx-install-ios" class="hidden mt-2 text-[10px] leading-snug text-slate-400"><i class="ph-bold ph-device-mobile"></i> iPhone: toque em Compartilhar e depois em "Adicionar à Tela de Início" para usar como app.</span>
               </div>
@@ -741,8 +742,8 @@
     function tgBtn(kind) { // botão "Seguir no Telegram" (kind: escuro | claro | link)
         const tg = LX.config.telegram; if (!tg) return '';
         const href = 'https://t.me/' + encodeURIComponent(tg), n = tgCount >= 25 ? ` · ${tgCount.toLocaleString('pt-BR')}` : '';
-        if (kind === 'link') return `<a href="${href}" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-[#2AABEE] hover:underline font-mono text-[11px] font-bold"><i class="ph-fill ph-telegram-logo text-sm"></i>Seguir no Telegram${n}</a>`;
-        return `<a href="${href}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#2AABEE] hover:bg-[#229ED9] text-white font-mono text-xs font-bold whitespace-nowrap"><i class="ph-fill ph-telegram-logo text-base"></i>SEGUIR NO TELEGRAM${n}</a>`;
+        if (kind === 'link') return `<a href="${href}" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-[#1C7FB3] dark:text-[#4CB9F0] hover:underline font-mono text-[11px] font-bold"><i class="ph-fill ph-telegram-logo text-sm"></i>Seguir no Telegram${n}</a>`;
+        return `<a href="${href}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#1C7FB3] hover:bg-[#176B97] text-white font-mono text-xs font-bold whitespace-nowrap"><i class="ph-fill ph-telegram-logo text-base"></i>SEGUIR NO TELEGRAM${n}</a>`;
     }
     function newsForms() {
         const user = LX.config.newsletter;
@@ -755,7 +756,7 @@
                 <input type="hidden" name="embed" value="1"><input type="hidden" name="tag" value="site">
                 <label class="sr-only" for="nl-${full ? 'f' : 'c'}">Seu e-mail</label>
                 <input id="nl-${full ? 'f' : 'c'}" type="email" name="email" required placeholder="seu@email.com" autocomplete="email" class="lx-input flex-1 !text-sm">
-                <button type="submit" class="px-4 py-2 bg-lect-orange hover:bg-orange-600 text-white font-mono text-xs font-bold whitespace-nowrap"><i class="ph-bold ph-envelope-simple"></i> RECEBER GRÁTIS</button></form>`;
+                <button type="submit" class="px-4 py-2 bg-lect-orange hover:brightness-110 text-lect-navy font-mono text-xs font-bold whitespace-nowrap"><i class="ph-bold ph-envelope-simple"></i> RECEBER GRÁTIS</button></form>`;
             el.classList.remove('hidden');
             if (kind === 'chamada') {
                 el.innerHTML = `<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 border border-dashed border-lect-orange/50 bg-lect-orange/5">
@@ -888,7 +889,7 @@
         el.innerHTML = `<div class="flex items-start justify-between gap-2"><strong class="font-display inline-flex items-center gap-2"><i class="ph-bold ph-bell-ringing text-lect-orange"></i>Alertas no celular</strong><button type="button" data-x class="text-slate-400 hover:text-lect-teal" aria-label="Fechar"><i class="ph-bold ph-x"></i></button></div>
             ${ios && !standalone ? '<p class="mt-2 text-xs text-slate-500">No iPhone, primeiro instale o app: toque em Compartilhar → "Adicionar à Tela de Início", abra o Lectnex pelo ícone e volte aqui.</p>' : ''}
             <div class="mt-3 space-y-2">${PUSH_OPTS.map(([k, t, d]) => `<label class="flex items-start gap-2.5 cursor-pointer"><input type="checkbox" data-k="${k}" class="mt-0.5 accent-[#009988]" ${saved[k] !== false ? 'checked' : ''}><span><strong class="block text-sm">${t}</strong><span class="text-[11px] text-slate-500">${d}</span></span></label>`).join('')}</div>
-            <button type="button" data-go class="mt-4 w-full px-4 py-2 bg-lect-orange hover:bg-orange-600 text-white font-mono text-xs font-bold">ATIVAR ALERTAS</button>
+            <button type="button" data-go class="mt-4 w-full px-4 py-2 bg-lect-orange hover:brightness-110 text-lect-navy font-mono text-xs font-bold">ATIVAR ALERTAS</button>
             <p data-msg class="mt-2 text-[11px] text-slate-500 font-mono">Grátis. Você pode desligar quando quiser. Educacional, não é recomendação.</p>`;
         document.body.appendChild(el);
         el.querySelector('[data-x]').onclick = () => el.remove();
@@ -935,6 +936,7 @@
         tickClock(); paintSessions(); LX.fill();
         nextSlot(); rollBanner(); setInterval(rollBanner, 60000);
         pwa(); pushButtons();
+        const hc = document.getElementById('lx-hc'); if (hc) hc.onclick = () => { const on = document.documentElement.classList.toggle('lx-hc'); try { localStorage.setItem('lectnex-hc', on ? '1' : '0'); } catch (_) { } };
         fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
         newsForms();
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });

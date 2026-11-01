@@ -34,6 +34,8 @@
             ${LX.config && LX.config.onesignal ? `<label class="mt-3 flex items-start gap-2 text-sm cursor-pointer"><input type="checkbox" data-alerta class="mt-0.5 accent-[#009988]" ${p.alertaAcoes ? 'checked' : ''}><span><strong class="inline-flex items-center gap-1"><i class="ph-bold ph-bell-ringing text-lect-orange"></i>Avisar no celular</strong> quando ${p.acoes.length ? p.acoes.slice(0, 3).join(', ') : 'minhas ações'} subir ou cair mais de 3% no dia (e de novo a 6%).<span class="block text-[10px] text-slate-500">Vale para as 3 primeiras da lista. Cotações com atraso de ~30 min.</span><span data-alerta-msg class="block text-[11px] font-mono"></span></span></label>` : ''}
             <span class="term-label block mt-4 mb-1.5">Seções que aparecem</span>
             <div class="space-y-1.5">${SECOES.map(([id, nome]) => `<label class="flex items-center gap-2 text-sm cursor-pointer"><input type="checkbox" data-sec="${id}" class="accent-[#009988]" ${p.ocultas.includes(id) ? '' : 'checked'}>${nome}</label>`).join('')}</div>
+            <span class="term-label block mt-4 mb-1.5">Leitura</span>
+            <label class="flex items-center gap-2 text-sm cursor-pointer"><input type="checkbox" data-hc class="accent-[#009988]" ${document.documentElement.classList.contains('lx-hc') ? 'checked' : ''}>Alto contraste <span class="text-[11px] text-slate-500">(textos mais fortes e maiores, vale para todo o site)</span></label>
             <button type="button" data-reset class="mt-4 font-mono text-[11px] text-slate-500 hover:text-lect-teal underline">voltar ao padrão</button>`;
         document.body.appendChild(el);
         el.querySelector('[data-x]').onclick = () => el.remove();
@@ -51,6 +53,7 @@
                 msg.innerHTML = al.checked ? '<span class="text-emerald-500">✓ alertas ligados</span>' : 'alertas desligados';
             } catch (err) { al.checked = !al.checked; msg.textContent = 'não deu para ativar: libere as notificações do site e tente de novo'; }
         };
+        el.querySelector('[data-hc]').onchange = e2 => { document.documentElement.classList.toggle('lx-hc', e2.target.checked); try { localStorage.setItem('lectnex-hc', e2.target.checked ? '1' : '0'); } catch (_) { } };
         el.querySelector('[data-reset]').onclick = () => { try { localStorage.removeItem(KEY); } catch (_) { } document.dispatchEvent(new CustomEvent('lx:painel')); aplicar(); redraw(); };
     }
 

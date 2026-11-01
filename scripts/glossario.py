@@ -67,7 +67,7 @@ pagina = f'''<!DOCTYPE html>
     <meta name="twitter:description" content="{e(desc)}">
     <meta name="twitter:image" content="{BASE}assets/brand/og-academia.jpg">
     <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
-    <script>try{{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}}catch(e){{document.documentElement.classList.add('dark')}}</script>
+    <script>try{{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}}catch(e){{document.documentElement.classList.add('dark')}}</script>
     <link rel="stylesheet" href="assets/tailwind.css?v={ver}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

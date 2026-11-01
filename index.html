@@ -31,15 +31,15 @@
     <meta name="twitter:description" content="Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.">
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
-    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261101j">
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261101k">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261101j">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261101j">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261101k">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261101k">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -48,7 +48,7 @@
 
     <!-- FAIXA B3 (Ibovespa + ações de maior peso) — data/cotacoes.json, atualizado pelo workflow "Cotações B3" -->
     <div id="b3-tape" class="border-b border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-[#08111F] h-10 overflow-hidden relative">
-        <div class="absolute left-0 inset-y-0 z-10 flex items-center gap-2 px-3 bg-slate-50 dark:bg-[#08111F] border-r border-slate-300 dark:border-lect-borderDark shadow-[6px_0_8px_-4px_rgba(0,0,0,.35)] font-mono text-[10px] font-bold text-lect-teal" title="Cotações com atraso de cerca de 30 minutos (brapi.dev)"><span class="px-1.5 py-0.5 bg-lect-teal text-white">B3</span><span id="b3-when" class="text-slate-500 font-normal hidden sm:inline"></span></div>
+        <div class="absolute left-0 inset-y-0 z-10 flex items-center gap-2 px-3 bg-slate-50 dark:bg-[#08111F] border-r border-slate-300 dark:border-lect-borderDark shadow-[6px_0_8px_-4px_rgba(0,0,0,.35)] font-mono text-[10px] font-bold text-lect-teal" title="Cotações com atraso de cerca de 30 minutos (brapi.dev)"><span class="px-1.5 py-0.5 bg-lect-tealDark text-white">B3</span><span id="b3-when" class="text-slate-500 font-normal hidden sm:inline"></span></div>
         <div id="b3-track" class="lx-marquee flex items-center h-full font-mono text-xs whitespace-nowrap"><span class="lx-skel-block w-[200vw]"></span></div>
     </div>
 
@@ -286,7 +286,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261101j"></script>
+    <script src="assets/lectnex-core.js?v=20261101k"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -623,7 +623,7 @@
 
         const KIND = {
             copom: ['Copom/FOMC', 'bg-lect-navy text-white'], inflacao: ['Inflação', 'bg-emerald-600 text-white'],
-            venc: ['Vencimentos', 'bg-lect-orange text-white'], global: ['Global', 'bg-sky-600 text-white'],
+            venc: ['Vencimentos', 'bg-lect-orange text-lect-navy'], global: ['Global', 'bg-sky-700 text-white'],
             focus: ['Focus', 'bg-purple-600 text-white'], feriado: ['Feriados', 'bg-slate-500 text-white']
         };
         const events = fixed.filter(e => e.date >= today).sort((a, b) => a.date - b.date);
@@ -699,6 +699,6 @@
     })();
     </script>
     <script src="assets/lectnex-pregao.js?v=20261031b" defer></script>
-    <script src="assets/lectnex-painel.js?v=20261101b" defer></script>
+    <script src="assets/lectnex-painel.js?v=20261101c" defer></script>
 </body>
 </html>

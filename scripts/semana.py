@@ -61,7 +61,7 @@ def head(titulo, desc, url, extra_ld, img=None):
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{img}">
     <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
-    <script>try{{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}}catch(e){{document.documentElement.classList.add('dark')}}</script>
+    <script>try{{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}}catch(e){{document.documentElement.classList.add('dark')}}</script>
     <link rel="stylesheet" href="assets/tailwind.css?v={v}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/icons/phosphor.css?v={v}">
