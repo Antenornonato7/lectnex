@@ -38,10 +38,10 @@ def enviar(tag, titulo, texto, url, chave, quando=None):
             if e.code != 401:
                 break
         except Exception as e:
-            erro, corpo_erro = 'rede', str(e)[:200]
+            erro, corpo_erro = 'rede', type(e).__name__  # nunca imprime a mensagem: pode conter o cabeçalho com a chave
             break
     if j is None:
-        tg.note('warning', f'OneSignal recusou [{tag}] ({erro}): {corpo_erro} · chave com {len(KEY)} caracteres, começa com "{KEY[:7]}"')
+        tg.note('warning', f'OneSignal recusou [{tag}] ({erro}): {corpo_erro}')
         return False
     destino = 'agendado ' + corpo['send_after'] if quando else 'enviado'
     if j.get('errors'):
@@ -66,6 +66,9 @@ def hora_evento(ev):
 def main():
     if not APP or not KEY:
         tg.note('notice', 'Alertas no celular não configurados (faltam ONESIGNAL_APP_ID e/ou ONESIGNAL_API_KEY).')
+        return
+    if not KEY.startswith('os_v2_') or any(c.isspace() for c in KEY):
+        tg.note('warning', 'O segredo do OneSignal não parece uma App API Key (deve ser uma linha só começando com os_v2_app_). Nada foi enviado.')
         return
     site = tg.SITE
     if os.environ.get('TESTE'):
