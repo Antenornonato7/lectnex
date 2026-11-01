@@ -42,12 +42,15 @@ def barras(sym):
 
 
 def var(bs, t0, minutos=30):
-    antes = [c for t, c in bs if t <= t0]
+    antes = [(t, c) for t, c in bs if t <= t0]
     depois = [(t, c) for t, c in bs if t >= t0 + minutos * 60]
     if not antes or not depois:
         return None, None
+    ta, ca = antes[-1]
     t1, c1 = depois[0]
-    return round((c1 / antes[-1] - 1) * 100, 3), int((t1 - t0) / 60)
+    # mercado fechado na hora do dado (último preço muito antes, ou primeiro preço depois muito tarde) = medido na abertura
+    fechado = (t0 - ta) > 15 * 60 or (t1 - t0) > 45 * 60
+    return round((c1 / ca - 1) * 100, 3), fechado
 
 
 def hora_ev(ev):
@@ -92,10 +95,10 @@ def main():
              'resultado': ev.get('resultado'), 'consenso': ev.get('consenso'),
              'surpresa': (ev.get('surpresa') or {}).get('direcao') if ev.get('surpresa') else ('em linha' if ev.get('consenso') and str(ev.get('consenso')) == str(ev.get('resultado')) else None)}
         for k in ATIVOS:
-            v, mins = var(bs[k], t0)
+            v, fechado = var(bs[k], t0)
             r[k] = v
-            if v is not None and mins > 45:
-                r[k + '_abertura'] = True  # medido na abertura seguinte
+            if v is not None and fechado:
+                r[k + '_abertura'] = True  # mercado fechado na hora: inclui o gap da abertura
         if r['win'] is None and r['wdo'] is None:
             continue
         base['registros'].append(r); novos += 1
