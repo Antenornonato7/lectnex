@@ -107,3 +107,7 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 ## Agenda da semana (semana/)
 
 - Workflow **Semana** (`scripts/semana.py`): a cada mudança em `data/calendario.json`, acumula a semana em `data/semana/AAAA-MM-DD.json` e gera `semana/AAAA-MM-DD.html` + `semana/index.html` (estáticos, indexáveis), atualiza o sitemap e avisa o IndexNow. Semanas com menos de 4 eventos não viram página.
+
+## Reação histórica aos dados
+
+- Workflow **Reação aos dados** (`coletor/reacao.py`): dias úteis 12h41 e 19h41 mede a variação do Ibovespa à vista (proxy do WIN) e do dólar à vista (proxy do WDO) nos 30 min após cada dado com resultado → `data/reacoes.json`. Cotações de 5 min do Yahoo Finance (host query2; o query1 bloqueia o GitHub). Guarda só a variação calculada. O agrupamento usa o campo `tipo` do calendário (lista no manual da Leitura).

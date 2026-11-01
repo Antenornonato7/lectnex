@@ -102,6 +102,7 @@ FOMC e falas do Fed, ISM, PIB; China: PMIs e dados de atividade; Europa: BCE e i
       "resultado": null,
       "impacto": { "wdo": "volatil", "di": "volatil" },
       "nota": "Emprego forte tende a fortalecer o dólar global.",
+      "tipo": "payroll",
       "surpresa": null
     }
   ]
@@ -121,3 +122,7 @@ FOMC e falas do Fed, ISM, PIB; China: PMIs e dados de atividade; Europa: BCE e i
 Além da edição das 7h40, a tarefa "Resultados do calendário" roda às 12h40 e às 16h40 (Brasília) nos dias úteis.
 Ela **só** mexe em `data/calendario.json`: preenche `resultado` e `surpresa` dos eventos de hoje que já saíram (número oficial
 da fonte primária ou de veículo confiável) e publica com o commit `calendario: AAAA-MM-DD HHhMM`. Não altera mais nada.
+- `tipo`: identificador fixo do indicador, igual em todas as edições (alimenta a "reação histórica"). Use estes quando couber:
+  `payroll`, `desemprego-eua`, `salario-eua`, `cpi-eua`, `pce-eua`, `pib-eua`, `ism-industrial`, `ism-servicos`, `jolts`, `adp`,
+  `seguro-desemprego`, `fomc`, `ipca`, `ipca-15`, `pib-brasil`, `copom`, `ata-copom`, `caged`, `varejo-brasil`, `producao-industrial`,
+  `pmi-china`, `cpi-china`, `bce`, `inflacao-zona-euro`, `boe`. Para outros, crie um identificador curto em minúsculas com hífens e repita sempre o mesmo.

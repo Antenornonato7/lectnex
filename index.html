@@ -32,14 +32,14 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261101b">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261101c">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261101b">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261101b">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261101c">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261101c">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -274,13 +274,14 @@
                 </div>
                 <div class="hidden lg:col-span-6 term-panel h-[560px] overflow-hidden" id="tv-calendar"></div>
             </div>
+            <div id="rx-wrap" class="hidden mt-6"></div>
         </div>
     </section>
 
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261101b"></script>
+    <script src="assets/lectnex-core.js?v=20261101c"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -335,6 +336,27 @@
             el.classList.remove('hidden');
         }).catch(() => { });
 
+        /* ---------- Reação histórica: como WIN e WDO reagiram a cada tipo de dado ---------- */
+        function rxTabela(j) {
+            const g = {};
+            j.registros.forEach(r => (g[r.tipo] = g[r.tipo] || []).push(r));
+            const tipos = Object.entries(g).filter(([, rs]) => rs.length >= 2).sort((a, b) => b[1].length - a[1].length);
+            if (!tipos.length) return;
+            const FL = { BR: '🇧🇷', US: '🇺🇸', CN: '🇨🇳', EU: '🇪🇺', JP: '🇯🇵', UK: '🇬🇧' };
+            const avg = (rs, k, f) => { const v = rs.filter(f || (() => true)).map(r => r[k]).filter(x => typeof x === 'number'); return v.length ? { m: v.reduce((a, b) => a + b, 0) / v.length, n: v.length } : null; };
+            const absm = (rs, k) => { const v = rs.map(r => r[k]).filter(x => typeof x === 'number'); return v.length ? v.reduce((a, b) => a + Math.abs(b), 0) / v.length : null; };
+            const cel = x => x ? `<span class="${x.m > 0 ? 'text-emerald-600 dark:text-emerald-400' : x.m < 0 ? 'text-rose-600 dark:text-rose-400' : ''}">${(x.m > 0 ? '+' : x.m < 0 ? '−' : '') + LX.num(Math.abs(x.m), 2)}%</span> <span class="text-slate-400">(${x.n})</span>` : '<span class="text-slate-400">—</span>';
+            const el = document.getElementById('rx-wrap');
+            el.innerHTML = `<div class="term-panel">
+                <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark"><span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-clock-counter-clockwise text-lect-orange"></i>Reação histórica aos dados</span><span class="font-mono text-[10px] text-slate-500">variação nos 30 min após a divulgação · ${j.registros.length} divulgações medidas</span></div>
+                <div class="overflow-x-auto thin-scroll"><table class="w-full font-mono text-xs tabular-nums"><thead><tr class="text-[10px] text-slate-500 uppercase"><th class="text-left px-5 py-2 font-bold">Dado</th><th class="px-2 py-2 font-bold">Vezes</th><th class="px-2 py-2 font-bold">WIN média ±</th><th class="px-2 py-2 font-bold">WDO média ±</th><th class="px-2 py-2 font-bold">WDO se acima</th><th class="px-2 py-2 font-bold">WDO se abaixo</th><th class="px-2 py-2 font-bold">WIN se acima</th><th class="px-2 py-2 font-bold">WIN se abaixo</th></tr></thead>
+                <tbody>${tipos.map(([t, rs]) => { const ult = rs[rs.length - 1], aw = absm(rs, 'win'), au = absm(rs, 'wdo');
+                    return `<tr class="border-t border-slate-100 dark:border-lect-borderDark"><td class="px-5 py-2 font-sans font-semibold whitespace-nowrap">${FL[ult.pais] || ''} ${LX.esc(ult.evento.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</td><td class="text-center px-2">${rs.length}</td><td class="text-center px-2">${aw != null ? '±' + LX.num(aw, 2) + '%' : '—'}</td><td class="text-center px-2">${au != null ? '±' + LX.num(au, 2) + '%' : '—'}</td>
+                    <td class="text-center px-2">${cel(avg(rs, 'wdo', r => r.surpresa === 'acima'))}</td><td class="text-center px-2">${cel(avg(rs, 'wdo', r => r.surpresa === 'abaixo'))}</td><td class="text-center px-2">${cel(avg(rs, 'win', r => r.surpresa === 'acima'))}</td><td class="text-center px-2">${cel(avg(rs, 'win', r => r.surpresa === 'abaixo'))}</td></tr>`; }).join('')}</tbody></table></div>
+                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">Medimos do último preço antes do dado até 30 minutos depois (ou a abertura seguinte, se o mercado estava fechado). WIN pelo Ibovespa à vista e WDO pelo dólar à vista; entre parênteses, quantas vezes. Amostra pequena no começo: o histórico cresce a cada divulgação. <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p></div>`;
+            el.classList.remove('hidden');
+        }
+
         /* ---------- Calendário próprio (data/calendario.json); reserva: widget do TradingView ---------- */
         (function () {
             const fallback = () => { document.getElementById('cal-wrap').classList.add('hidden'); const tv = document.getElementById('tv-calendar'); tv.classList.remove('hidden'); LX.tv('tv-calendar', 'events', { width: '100%', height: '100%', importanceFilter: '0,1', countryFilter: 'br,us,cn,eu' }); };
@@ -344,6 +366,15 @@
                 if (!evs.length) return fallback();
                 const FLAG = { BR: '🇧🇷', US: '🇺🇸', CN: '🇨🇳', EU: '🇪🇺', JP: '🇯🇵', UK: '🇬🇧' };
                 const IMP = { alta: ['▲', 'text-emerald-600 dark:text-emerald-400 border-emerald-500/40'], baixa: ['▼', 'text-rose-600 dark:text-rose-400 border-rose-500/40'], neutro: ['●', 'text-slate-500 border-slate-400/40'], volatil: ['↕', 'text-lect-orange border-lect-orange/40'] };
+                let RX = {};  // reação histórica por tipo de evento (data/reacoes.json)
+                const rxTipo = e => e.tipo || (e.evento || '').replace(/\(.*?\)/g, '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
+                const rxPct = v => (v > 0 ? '+' : v < 0 ? '−' : '') + LX.num(Math.abs(v), 2) + '%';
+                function rxLinha(e) {
+                    const rs = RX[rxTipo(e)]; if (!rs || rs.length < 2) return '';
+                    const med = k => { const v = rs.map(r => r[k]).filter(x => typeof x === 'number'); return v.length ? v.reduce((a, b) => a + Math.abs(b), 0) / v.length : null; };
+                    const w = med('win'), u = med('wdo');
+                    return `<p class="mt-1 font-mono text-[10px] text-slate-500"><i class="ph-bold ph-clock-counter-clockwise"></i> Nas últimas ${rs.length}: WIN mexeu ${w != null ? '±' + LX.num(w, 2) + '%' : '—'} · WDO ${u != null ? '±' + LX.num(u, 2) + '%' : '—'} em 30 min</p>`;
+                }
                 const days = [...new Set(evs.map(e => e.data))].slice(0, 7);
                 let sel = days[0];
                 const lbl = iso => { const t = LX.parseISO(iso), diff = Math.round((t - LX.todayBRT()) / 864e5); return diff === 0 ? 'Hoje' : diff === 1 ? 'Amanhã' : LX.weekday(t) + ' ' + LX.brShort(t); };
@@ -370,11 +401,16 @@
                             <div class="flex items-start gap-3"><span class="w-11 shrink-0 font-mono text-xs font-bold ${done ? 'text-slate-400' : 'text-lect-teal'}">${e.hora ? LX.esc(e.hora) : '<span class="text-[10px] text-slate-400">O DIA</span>'}</span>
                             <div class="flex-1 min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><span title="${LX.esc(e.pais || '')}">${FLAG[e.pais] || LX.esc(e.pais || '')}</span><strong class="text-sm leading-snug">${LX.esc(e.evento)}</strong><span class="font-mono text-[10px]">${dots}</span></div>
                             ${e.nota ? `<p class="text-[11px] text-slate-500 leading-snug mt-0.5">${LX.esc(e.nota)}</p>` : ''}
+                            ${rxLinha(e)}
                             ${sp ? `<p class="mt-1 text-[11px] leading-snug"><span class="px-1 mr-1 font-mono text-[9px] font-bold bg-lect-orange text-lect-navy">SURPRESA ${sp.seta}</span><span class="text-slate-600 dark:text-slate-300">${LX.esc(sp.reacao || sp.lbl)}</span></p>` : ''}
                             <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 font-mono text-[11px]">${num('ant.', e.anterior)}${num('cons.', e.consenso)}${done ? num('result.', e.resultado, 'font-bold text-slate-800 dark:text-white') : ''}${tags ? `<span class="flex gap-1">${tags}</span>` : ''}</div></div></div></div>`;
                     }).join('');
                 }
                 render();
+                fetch('data/reacoes.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => {
+                    if (!j || !Array.isArray(j.registros)) return;
+                    j.registros.forEach(r => (RX[r.tipo] = RX[r.tipo] || []).push(r)); render(); rxTabela(j);
+                }).catch(() => { });
                 const t = d.atualizado_em ? new Date(d.atualizado_em) : null;
                 if (t) document.getElementById('cal-when').textContent = 'atualizado ' + LX.brShort(t) + ' ' + t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
             }).catch(fallback);
