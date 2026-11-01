@@ -1,0 +1,8 @@
+name: Diag brapi
+on: workflow_dispatch
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -s "https://brapi.dev/api/quote/VALE3?token=uRJnTfjL6jypdHfJ8b5LJd" | python3 -c "import json,sys;r=json.load(sys.stdin)['results'][0];print('::notice::'+str({k:r.get(k) for k in ['regularMarketPrice','fiftyTwoWeekLow','fiftyTwoWeekHigh','priceEarnings','regularMarketVolume','marketCap','regularMarketTime']}))"
