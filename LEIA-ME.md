@@ -95,3 +95,7 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 - Workflow **Telegram** (`coletor/telegram.py`): publica a Leitura do Dia (novo dia) e cada nova surpresa do calendário. Ações manuais: teste, `boas-vindas` (publica e fixa a apresentação) e `contar` (seguidores → `data/telegram.json`, também todo dia 08h17).
 - Workflow **Fechamento** (`coletor/fechamento.py`): dias úteis 19h05 — IBOV, dólar, maiores altas/baixas, acerto do termômetro e agenda do próximo dia. Registra o placar em `data/placar-termometro.json`.
 - Segredo do robô: `LECTNEX_ALERTAS_BOT` (ou `TELEGRAM_BOT_TOKEN`). Canal padrão `@lectnex` (ou segredo `TELEGRAM_CHAT_ID`).
+
+## Curva de juros (Macro)
+
+- Workflow **Curva de juros** (`coletor/curva.py`): dias úteis 10h23/13h23/16h23/18h23 → `data/curva.json` (até 30 dias). Fonte: arquivo oficial PrecoTaxaTesouroDireto.csv do Tesouro Transparente (títulos Prefixado e IPCA+ sem cupom). Mostrado em `macro.html#curva` (hoje × ontem/1 semana/1 mês, com a Selic de referência).
