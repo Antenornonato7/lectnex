@@ -500,6 +500,7 @@
                 ${NAV.map(n => `<a href="${n.href}" class="block hover:text-lect-tealLight">${n.label}</a>`).join('')}
                 <a href="glossario.html" class="block hover:text-lect-tealLight">Glossário do Trader</a>
                 <a href="semana/" class="block hover:text-lect-tealLight">Agenda da semana</a>
+                <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
                 <button type="button" data-lx-push class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-orange/60 text-lect-orange hover:bg-lect-orange/10"><i class="ph-bold ph-bell-ringing"></i>Alertas no celular</button>

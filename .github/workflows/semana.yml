@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: semana
+  group: sitemap   # mesmo grupo do Arquivo da Leitura: os dois mexem no sitemap
   cancel-in-progress: false
 
 jobs:
@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      - name: Atualizar para a versão mais nova
+        run: git pull -q --rebase origin main
       - name: Gerar páginas
         id: gerar
         run: |

@@ -1,0 +1,134 @@
+{
+ "tipo": "sem-pregao",
+ "data": "2026-10-31",
+ "gerado_em": "2026-10-31T19:40:00-03:00",
+ "titulo": "PMI fraco da China e petróleo em alta marcam o feriado longo",
+ "resumo": [
+  "Sábado e Finados (seg, 2/11) deixam a B3 fechada; o próximo pregão é na terça (3/11), que absorve de uma vez as notícias de três dias.",
+  "O ponto de partida é pesado: o Ibovespa fechou sexta em 167.921 pontos (−0,75%), com −18,12% na semana, e o dólar à vista subiu 1,05%, a R$ 5,444, com a incerteza fiscal após a reeleição no centro.",
+  "A China abriu o fim de semana com PMI industrial oficial de 49,3 em outubro, abaixo dos 50 esperados — sinal ruim para minério e para o peso de Vale e siderúrgicas no WIN.",
+  "O Brent terminou outubro com alta de 13,6% após novos ataques no Estreito de Hormuz; do lado positivo, o Irã chamou de \"passo positivo\" a carta dos EUA para abrir diálogo.",
+  "A semana encurtada concentra eleições nos EUA e vencimento do WDO na terça, Copom na quarta (Selic em 13,75%), BoE na quinta e payroll na sexta."
+ ],
+ "destaques": [
+  {
+   "hora": "seg 12h",
+   "evento": "ISM industrial dos EUA (out) — B3 fechada",
+   "por_que": "Consenso de 54,7 (ant. 54,5); mexe em Treasuries e no dólar global enquanto o mercado local está parado."
+  },
+  {
+   "hora": "ter",
+   "evento": "Vencimento do WDO e do DI de novembro",
+   "por_que": "Rolagem e formação da Ptax podem ampliar a volatilidade do mini dólar na reabertura."
+  },
+  {
+   "hora": "ter",
+   "evento": "Eleições de meio de mandato nos EUA",
+   "por_que": "Composição do Congresso americano afeta Treasuries, DXY e apetite a risco global."
+  },
+  {
+   "hora": "ter 12h",
+   "evento": "JOLTS — vagas em aberto nos EUA (set)",
+   "por_que": "Primeiro dado de emprego da semana do payroll; influencia juros americanos."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "Brent (sex)",
+   "variacao": "+2,4%"
+  },
+  {
+   "ativo": "WTI (sex)",
+   "variacao": "+2,1%"
+  },
+  {
+   "ativo": "PMI industrial China (out)",
+   "variacao": "−0,8 pt (49,3)"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "PMI industrial oficial da China cai a 49,3 em outubro e volta à contração; esperado era 50",
+   "fonte": "Newsquawk / Xinhua",
+   "hora": "sex 22h50",
+   "url": "https://www.newsquawk.com/headlines/chinese-nbs-manufacturing-pmi-oct-493-vs-exp-50-prev-501",
+   "por_que": "Novas encomendas (49,4) e produção (49,8) recuaram; atividade mais fraca na China tende a pesar sobre o minério de ferro, Vale e siderúrgicas, e sobre moedas emergentes como o real.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Petróleo atinge máxima de seis meses com ataques em Hormuz; Brent sobe 13,6% em outubro",
+   "fonte": "Investing.com",
+   "hora": "sáb 02h07",
+   "url": "https://www.investing.com/news/economy-news/oil-hits-sixmonth-highs-as-hormuz-attacks-threaten-iran-peace-efforts-4989133",
+   "por_que": "Outubro teve ao menos 35 ataques a navios na região e o trânsito segue cerca de 70% abaixo do pré-guerra; petróleo caro pressiona inflação e juros pelo mundo, o que pesa no DI.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Irã chama de \"passo positivo\" carta dos EUA para abrir diálogo; delegação iraniana está em Doha",
+   "fonte": "Al Jazeera",
+   "hora": "sáb",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon",
+   "por_que": "Um avanço diplomático até terça poderia aliviar o barril e o prêmio de risco global; ao mesmo tempo, Teerã relatou quatro petroleiros em chamas após atingirem minas, o que mantém o risco aberto.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa"
+   }
+  },
+  {
+   "titulo": "Ibovespa tem maior queda semanal da história com fiscal de Lula; dólar sobe 9% na semana",
+   "fonte": "Investing.com Brasil",
+   "hora": "sex 18h28",
+   "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-ibov-tem-maior-queda-semanal-da-historia-com-fiscal-de-lula-2110448",
+   "por_que": "Falas de que o ajuste fiscal \"não está sendo discutido\" ampliaram o prêmio de risco; a reabertura de terça parte de bolsa em −9,88% no mês e dólar no maior nível do ano.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Fazenda em 2027: Durigan, Rafael Fonteles e Camilo Santana entre os cotados; Galípolo nega disputa",
+   "fonte": "TMC",
+   "hora": "qui 09h34",
+   "url": "https://tmc.com.br/economia/lula-vence-segundo-turno-articula-fazenda-2027/",
+   "por_que": "Sem nome definido para a Fazenda, falta uma âncora fiscal para o mercado; qualquer sinal sobre a equipe econômica no feriado pode mexer forte em DI, dólar e bolsa na terça.",
+   "impacto": {
+    "win": "neutro",
+    "wdo": "neutro",
+    "di": "neutro"
+   }
+  }
+ ],
+ "proximo_pregao": {
+  "data": "2026-11-03",
+  "o_que_esperar": "A abertura de terça deve refletir de uma vez o PMI fraco da China, o petróleo após Hormuz, o fechamento de Nova York e o ISM de segunda, além de qualquer sinal sobre a Fazenda. No mesmo dia há eleições nos EUA e vencimento do WDO, com Copom na quarta, o que tende a manter a volatilidade alta."
+ },
+ "fontes": [
+  {
+   "titulo": "Investing.com Brasil — Ibovespa e dólar hoje: IBOV tem maior queda semanal da história com fiscal de Lula",
+   "url": "https://br.investing.com/news/stock-market-news/ibovespa-e-dolar-hoje-ibov-tem-maior-queda-semanal-da-historia-com-fiscal-de-lula-2110448"
+  },
+  {
+   "titulo": "Suno — Ibovespa tem pior semana desde 2020; Vale (VALE3) sobe",
+   "url": "https://www.suno.com.br/noticias/ibovespa-hoje-outubro-vale-vale3/"
+  },
+  {
+   "titulo": "Xinhua — China's manufacturing PMI softens, high-tech sector maintains expansion",
+   "url": "https://english.news.cn/20261031/d98d1f3fa92a45d6a26f234849bd4957/c.html"
+  },
+  {
+   "titulo": "Investing.com — Oil hits six-month highs as Hormuz attacks threaten Iran peace efforts",
+   "url": "https://www.investing.com/news/economy-news/oil-hits-sixmonth-highs-as-hormuz-attacks-threaten-iran-peace-efforts-4989133"
+  },
+  {
+   "titulo": "Newsquawk — Week In Focus 2nd-6th November 2026",
+   "url": "https://www.newsquawk.com/headlines/week-in-focus-2nd-6th-november-2026-highlights-include-us-midterm-election-nfp-ism-pmis-rba-boe-and-ez-cpi-"
+  }
+ ]
+}

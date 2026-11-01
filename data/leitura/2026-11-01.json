@@ -1,0 +1,140 @@
+{
+ "tipo": "sem-pregao",
+ "data": "2026-11-01",
+ "gerado_em": "2026-11-01T07:50:00-03:00",
+ "titulo": "Ameaça de ataque ao Irã no dia 4 e Copom marcam a semana curta",
+ "resumo": [
+  "Domingo e Finados (seg, 2/11) mantêm a B3 fechada; o próximo pregão é na terça (3/11), que absorve de uma vez o noticiário de quatro dias.",
+  "O ponto de partida é pesado: o Ibovespa fechou sexta em 167.921 pontos (−0,75%), com −18,12% na semana, e o dólar à vista subiu 1,05%, a R$ 5,444 (+9,15% na semana), com o fiscal no centro.",
+  "A principal novidade do fim de semana veio do exterior: autoridades do Golfo dizem que o entorno de Trump fala em ataques ao Irã já em 4/11, e Teerã afirma não ter reunião marcada com os EUA — risco de petróleo mais caro, dólar e DI pressionados.",
+  "No Brasil, o nome da Fazenda segue indefinido: Lula viaja de 9 a 16/11 e a montagem do ministério deve começar só na volta, o que prolonga a falta de âncora fiscal.",
+  "A semana concentra eleições nos EUA e vencimento do WDO na terça, Copom na quarta (consenso de manutenção em 13,75%), BoE na quinta e payroll na sexta."
+ ],
+ "destaques": [
+  {
+   "hora": "ter 8h30",
+   "evento": "Boletim Focus (BCB)",
+   "por_que": "Primeiras projeções depois da semana de estresse fiscal; mexe na expectativa de Selic e no DI."
+  },
+  {
+   "hora": "ter 10h",
+   "evento": "PMI industrial do Brasil (out)",
+   "por_que": "Consenso de 43 (ant. 44,8): indústria em contração pesa nas cíclicas do WIN."
+  },
+  {
+   "hora": "ter",
+   "evento": "Vencimento do WDO e do DI de novembro",
+   "por_que": "Rolagem e formação da Ptax podem ampliar a volatilidade do mini dólar na reabertura."
+  },
+  {
+   "hora": "ter",
+   "evento": "Eleições de meio de mandato nos EUA",
+   "por_que": "Composição do Congresso americano afeta Treasuries, DXY e apetite a risco; resultados saem à noite."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "Ibovespa (sex)",
+   "variacao": "−0,75%"
+  },
+  {
+   "ativo": "Dólar à vista (sex)",
+   "variacao": "+1,05%"
+  },
+  {
+   "ativo": "Ibovespa (semana)",
+   "variacao": "−18,12%"
+  },
+  {
+   "ativo": "Dólar à vista (semana)",
+   "variacao": "+9,15%"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Entorno de Trump fala em ataques ao Irã já em 4 de novembro; Teerã diz não ter reunião marcada com os EUA",
+   "fonte": "EA WorldView",
+   "hora": "dom 04h10",
+   "url": "https://eaworldview.com/2026/11/us-war-on-iran-trump-threatens-strikes-november-4/",
+   "por_que": "Segundo três autoridades do Golfo, os ataques seriam \"breves, mas intensos\", logo após as eleições americanas; com o Brent perto de US$ 118 na sexta, nova escalada tende a pressionar inflação global, dólar e juros.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Ibovespa tem pior semana desde 2020 (−18,12%) e outubro é o pior mês do ano; dólar sobe 9,15% na semana",
+   "fonte": "InfoMoney",
+   "hora": "sex 17h29",
+   "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-30102026/",
+   "por_que": "É o ponto de partida da reabertura de terça: bolsa com −9,88% em outubro e dólar a R$ 5,444, com prêmio de risco fiscal elevado.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Lula viaja à Turquia e às Filipinas de 9 a 16/11; montagem do ministério deve começar só na volta",
+   "fonte": "Brasil 247",
+   "hora": "sex 05h11",
+   "url": "https://www.brasil247.com/poder/lula-ira-a-turquia-e-as-filipinas-ainda-no-mes-de-novembro/",
+   "por_que": "Sem nome para a Fazenda antes da segunda quinzena, o mercado segue sem âncora fiscal; Rafael Fonteles, um dos cotados, negou ter tratado do cargo com Lula.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Copom decide a Selic na quarta; consenso é de manutenção em 13,75%",
+   "fonte": "The Rio Times",
+   "hora": "dom 05h03",
+   "url": "https://www.riotimesonline.com/key-market-events-for-the-week-of-november-2-6-2026/",
+   "por_que": "Primeira reunião após a eleição; o comunicado, sobretudo o tom sobre o fiscal, deve pesar mais que a taxa nos vértices do DI e no câmbio.",
+   "impacto": {
+    "di": "neutro"
+   }
+  },
+  {
+   "titulo": "Eleições de meio de mandato nos EUA na terça; mercados de previsão veem democratas favoritos na Câmara e no Senado",
+   "fonte": "Newsquawk",
+   "hora": "sex",
+   "url": "https://www.newsquawk.com/headlines/week-in-focus-2nd-6th-november-2026-highlights-include-us-midterm-election-nfp-ism-pmis-rba-boe-and-ez-cpi-",
+   "por_que": "Polymarket aponta 94% de chance de maioria democrata na Câmara e 69% no Senado; uma mudança no Congresso mexe em Treasuries e DXY no mesmo dia do vencimento do WDO.",
+   "impacto": {
+    "wdo": "neutro"
+   }
+  }
+ ],
+ "proximo_pregao": {
+  "data": "2026-11-03",
+  "o_que_esperar": "A abertura de terça deve refletir o risco de ataque ao Irã em 4/11 e o petróleo, o ISM industrial de segunda e o PMI da China de domingo à noite, além da falta de definição na Fazenda. No mesmo dia há eleições nos EUA e vencimento do WDO, com Copom na quarta, o que tende a manter a volatilidade alta."
+ },
+ "fontes": [
+  {
+   "titulo": "EA WorldView — US War on Iran, Day 248: Trump Camp Threatens Attacks on November 4",
+   "url": "https://eaworldview.com/2026/11/us-war-on-iran-trump-threatens-strikes-november-4/"
+  },
+  {
+   "titulo": "InfoMoney — Ibovespa emenda 5ª baixa e tem pior semana desde 2020; outubro é o pior mês do ano",
+   "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-30102026/"
+  },
+  {
+   "titulo": "Brasil 247 — Lula irá à Turquia e às Filipinas ainda no mês de novembro",
+   "url": "https://www.brasil247.com/poder/lula-ira-a-turquia-e-as-filipinas-ainda-no-mes-de-novembro/"
+  },
+  {
+   "titulo": "Gazeta do Povo — Fonteles nega conversa com Lula sobre cargos e descarta articulação para a Fazenda",
+   "url": "https://www.gazetadopovo.com.br/republica/fonteles-nega-conversa-com-lula-sobre-cargos-e-descarta-articulacao-para-a-fazenda/"
+  },
+  {
+   "titulo": "The Rio Times — Key Market Events for the Week of November 2–6, 2026",
+   "url": "https://www.riotimesonline.com/key-market-events-for-the-week-of-november-2-6-2026/"
+  },
+  {
+   "titulo": "Newsquawk — Week In Focus 2nd-6th November 2026",
+   "url": "https://www.newsquawk.com/headlines/week-in-focus-2nd-6th-november-2026-highlights-include-us-midterm-election-nfp-ism-pmis-rba-boe-and-ez-cpi-"
+  }
+ ]
+}

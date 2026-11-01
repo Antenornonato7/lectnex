@@ -111,3 +111,7 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 ## Reação histórica aos dados
 
 - Workflow **Reação aos dados** (`coletor/reacao.py`): dias úteis 12h41 e 19h41 mede a variação do Ibovespa à vista (proxy do WIN) e do dólar à vista (proxy do WDO) nos 30 min após cada dado com resultado → `data/reacoes.json`. Cotações de 5 min do Yahoo Finance (host query2; o query1 bloqueia o GitHub). Guarda só a variação calculada. O agrupamento usa o campo `tipo` do calendário (lista no manual da Leitura).
+
+## Arquivo da Leitura (leitura/)
+
+- Workflow **Arquivo da Leitura** (`scripts/arquivo.py`): a cada nova `data/leitura.json`, guarda a edição em `data/leitura/AAAA-MM-DD.json` e gera `leitura/AAAA-MM-DD.html` + `leitura/index.html` (estáticos, indexáveis), atualiza o sitemap e avisa o IndexNow. Usa o mesmo grupo de concorrência ("sitemap") do workflow Semana.
