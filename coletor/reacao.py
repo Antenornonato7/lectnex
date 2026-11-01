@@ -29,7 +29,7 @@ def barras(sym):
     erro = None
     for host in ('query2', 'query1'):
         try:
-            url = f'https://{host}.finance.yahoo.com/v8/finance/chart/{sym}?interval=5m&range=10d'
+            url = f'https://{host}.finance.yahoo.com/v8/finance/chart/{sym}?interval=5m&range=60d'
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
                 j = json.load(r)['chart']['result'][0]
             break
@@ -65,7 +65,7 @@ def main():
         base = {'metodo': 'Variação do último preço antes da divulgação até 30 min depois (ou a abertura seguinte). WIN pelo Ibovespa à vista, WDO pelo dólar à vista (BRL=X). Cotações de 5 min do Yahoo Finance.', 'registros': []}
     feitos = {r['id'] for r in base['registros']}
     evs = []
-    for f in ['data/calendario.json'] + sorted(__import__('glob').glob('data/semana/*.json'))[-2:]:
+    for f in ['data/calendario.json', 'data/reacoes-historico.json'] + sorted(__import__('glob').glob('data/semana/*.json'))[-2:]:
         try:
             evs += json.load(open(f, encoding='utf-8')).get('eventos', [])
         except Exception:
@@ -77,7 +77,7 @@ def main():
         if not t0 or (ev.get('importancia') or 1) < 2 or ev.get('resultado') in (None, ''):
             continue
         rid = f"{ev['data']}|{ev.get('hora')}|{tipo(ev)}"
-        if rid in feitos or t0 > agora - 40 * 60 or t0 < agora - 9 * 86400:
+        if rid in feitos or t0 > agora - 40 * 60 or t0 < agora - 58 * 86400:
             continue
         feitos.add(rid); pend.append((rid, t0, ev))
     if not pend:
@@ -90,7 +90,7 @@ def main():
     for rid, t0, ev in pend:
         r = {'id': rid, 'data': ev['data'], 'hora': ev.get('hora'), 'tipo': tipo(ev), 'evento': ev['evento'], 'pais': ev.get('pais'),
              'resultado': ev.get('resultado'), 'consenso': ev.get('consenso'),
-             'surpresa': (ev.get('surpresa') or {}).get('direcao') if ev.get('surpresa') else 'em linha'}
+             'surpresa': (ev.get('surpresa') or {}).get('direcao') if ev.get('surpresa') else ('em linha' if ev.get('consenso') and str(ev.get('consenso')) == str(ev.get('resultado')) else None)}
         for k in ATIVOS:
             v, mins = var(bs[k], t0)
             r[k] = v
