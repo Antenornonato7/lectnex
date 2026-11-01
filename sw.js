@@ -2,8 +2,8 @@
    Páginas e dados: rede primeiro (sempre o mais novo), cache se a rede falhar.
    CSS/JS/ícones/imagens locais: cache primeiro, atualizando por trás (os arquivos têm ?v= de versão).
    Outros domínios (TradingView, APIs) passam direto, sem cache. */
-const CACHE = 'lectnex-v1';
-const PAGINAS = ['./', 'index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'sobre.html'];
+const CACHE = 'lectnex-v2';
+const PAGINAS = ['./', 'index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'sobre.html', 'glossario.html'];
 
 self.addEventListener('install', e => {
     e.waitUntil(caches.open(CACHE).then(c => c.addAll(PAGINAS)).catch(() => { }).then(() => self.skipWaiting()));

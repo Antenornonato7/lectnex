@@ -99,3 +99,7 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 ## Curva de juros (Macro)
 
 - Workflow **Curva de juros** (`coletor/curva.py`): dias úteis 10h23/13h23/16h23/18h23 → `data/curva.json` (até 30 dias). Fonte: arquivo oficial PrecoTaxaTesouroDireto.csv do Tesouro Transparente (títulos Prefixado e IPCA+ sem cupom). Mostrado em `macro.html#curva` (hoje × ontem/1 semana/1 mês, com a Selic de referência).
+
+## Glossário do Trader (glossario.html)
+
+- Página estática gerada por `python3 scripts/glossario.py` a partir de `data/glossario.json` (termo, categoria, definição, link para ferramenta). Para incluir ou corrigir termos, edite o JSON e rode o script. JSON-LD DefinedTermSet para o Google.

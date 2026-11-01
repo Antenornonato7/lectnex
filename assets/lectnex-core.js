@@ -498,6 +498,7 @@
               <div class="lg:col-span-3 space-y-1.5 font-mono text-xs">
                 <span class="text-white font-bold uppercase tracking-wider block mb-2">Módulos</span>
                 ${NAV.map(n => `<a href="${n.href}" class="block hover:text-lect-tealLight">${n.label}</a>`).join('')}
+                <a href="glossario.html" class="block hover:text-lect-tealLight">Glossário do Trader</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
                 <button type="button" data-lx-push class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-orange/60 text-lect-orange hover:bg-lect-orange/10"><i class="ph-bold ph-bell-ringing"></i>Alertas no celular</button>
@@ -549,6 +550,7 @@
         ['lab', 'JCP', 'Dividendos & JCP', 'Simulador com as regras de 2026', 'laboratorio.html?tab=proventos', 'ph-coins', 'dividendos jcp proventos renda passiva'],
         ['lab', 'BAZIN', 'Preço teto Bazin & Graham', 'Valuation simples por dividendos e lucro', 'laboratorio.html?tab=valuation', 'ph-scales', 'bazin graham preco teto valuation'],
         ['lab', 'RF', 'Comparador renda fixa', 'CDB × LCI/LCA × IPCA+', 'laboratorio.html?tab=rf', 'ph-bank', 'renda fixa cdb lci lca tesouro ipca'],
+        ['lab', 'GLOSS', 'Glossário do Trader', '61 termos de juros, futuros, ações e risco explicados', 'glossario.html', 'ph-book-open-text', 'glossario termos dicionario significado o que e breakeven rolagem ajuste payroll kelly spread tick'],
         ['lab', 'SFN', 'Enciclopédia: Selic e CDI', 'Como funciona o sistema financeiro', 'laboratorio.html?tab=academia&licao=A1', 'ph-book-open', 'aprender selic cdi copom sistema financeiro enciclopedia'],
         ['lab', 'GUIA', 'Guia de ações', 'Ações, dividendos e JCP para iniciantes', 'laboratorio.html?tab=academia&licao=B1', 'ph-graduation-cap', 'aprender guia acoes iniciante enciclopedia']
     ];
@@ -560,7 +562,7 @@
         ['GGBR4', 'Gerdau', 'Siderurgia'], ['RADL3', 'Raia Drogasil', 'Farmácias'], ['EQTL3', 'Equatorial', 'Energia'], ['SBSP3', 'Sabesp', 'Saneamento'],
         ['VIVT3', 'Vivo', 'Telecom'], ['EMBR3', 'Embraer', 'Aeronáutica'], ['RAIL3', 'Rumo', 'Logística'], ['CMIG4', 'Cemig', 'Energia']
     ];
-    const SHORT = { ROLAGEM: 'Rolagem', MAPA: 'Mapa de calor', PLANO: 'Plano do dia', DIARIO: 'Diário', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações' };
+    const SHORT = { ROLAGEM: 'Rolagem', MAPA: 'Mapa de calor', PLANO: 'Plano do dia', DIARIO: 'Diário', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações', GLOSS: 'Glossário' };
     LX.paletteItems = CMD.map(c => [c[0].toUpperCase(), c[2], c[4]]); // compatibilidade
     const CATS = [['tudo', 'Tudo'], ['acoes', 'Ações'], ['futuros', 'Futuros'], ['mercado', 'Mercado'], ['lab', 'Laboratório']];
     const norm = t => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
