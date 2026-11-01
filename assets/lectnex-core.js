@@ -29,7 +29,7 @@
     // Newsletter (Buttondown): usuário da conta. Vazio = formulários de inscrição ficam escondidos.
     LX.config.newsletter = 'lectnex';
     LX.config.telegram = 'lectnex';   // canal público t.me/lectnex
-    LX.config.onesignal = '';         // App ID do OneSignal (notificações no celular); vazio = desligado
+    LX.config.onesignal = 'e59723fb-6a99-46f5-abe7-689376e4c863';         // App ID do OneSignal (notificações no celular); vazio = desligado
 
     /* ------------------------------------------------------------------ FORMATOS */
     const nf = (min, max) => new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });

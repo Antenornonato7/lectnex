@@ -51,7 +51,7 @@ jobs:
       - name: Alertas no celular (OneSignal)
         if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.acao == 'push-teste')
         env:
-          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID || secrets.ONESIGNAL_APP_ID }}
+          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID || secrets.ONESIGNAL_APP_ID || 'e59723fb-6a99-46f5-abe7-689376e4c863' }}
           ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
           TESTE: ${{ inputs.acao == 'push-teste' && '1' || '' }}
         run: python3 coletor/push.py
