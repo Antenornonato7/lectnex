@@ -65,6 +65,20 @@ jobs:
               linhas.append(f"| {nome} | {cor(s.get('performance', 0))} | {cor(s.get('accessibility', 0))} | {cor(s.get('best-practices', 0))} | {cor(s.get('seo', 0))} | [abrir]({links.get(r.get('requestedUrl', ''), '#')}) |")
               # nota também como aviso, para ser lida pela API de check runs
               print(f"::notice title=Lighthouse {nome}::(mediana de 3) velocidade {s.get('performance')} · acessibilidade {s.get('accessibility')} · boas práticas {s.get('best-practices')} · SEO {s.get('seo')}")
+              # o que puxou a nota para baixo (para corrigir sem precisar abrir o relatório)
+              aud = r.get('audits', {})
+              falhas = []
+              for cat in ('best-practices', 'accessibility'):
+                  for ref in c.get(cat, {}).get('auditRefs', []):
+                      a_ = aud.get(ref['id'], {})
+                      if ref.get('weight', 0) > 0 and a_.get('score') is not None and a_['score'] < 1:
+                          det = ''
+                          if ref['id'] == 'errors-in-console':
+                              det = ' [' + ' ; '.join((i.get('description') or '')[:90] for i in a_.get('details', {}).get('items', [])[:3]) + ']'
+                          falhas.append(f"{cat[:4]}:{ref['id']}{det}")
+              ops = sorted([(v.get('details', {}).get('overallSavingsMs', 0), k) for k, v in aud.items() if v.get('details', {}).get('type') == 'opportunity' and v.get('details', {}).get('overallSavingsMs', 0) > 150], reverse=True)[:4]
+              met = {k: aud.get(k, {}).get('displayValue', '') for k in ('first-contentful-paint', 'largest-contentful-paint', 'total-blocking-time', 'cumulative-layout-shift')}
+              print(f"::notice title=Detalhe {nome}::FCP {met['first-contentful-paint']} · LCP {met['largest-contentful-paint']} · TBT {met['total-blocking-time']} · CLS {met['cumulative-layout-shift']} · ganhos: {', '.join(f'{k} ({int(v)} ms)' for v, k in ops) or '—'} · falhas: {'; '.join(falhas) or '—'}")
           if len(linhas) == 4:
               print('::error title=Lighthouse sem resultado::' + log[-900:].replace('\n', ' | '))
           open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('\n'.join(linhas) + '\n')
