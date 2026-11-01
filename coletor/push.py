@@ -95,7 +95,7 @@ def main():
             if agora < quando < agora + dt.timedelta(days=7):
                 imp = ' · '.join(f'{k.upper()} {tg_seta}' for k, v in (ev.get('impacto') or {}).items() for tg_seta in [{'alta': '▲', 'baixa': '▼', 'volatil': '↕'}.get(v, '')] if tg_seta)
                 enviar('agenda', f'⏱ {ev["evento"]} em 15 min', f'{ev.get("hora")} de Brasília' + (f' · cons. {ev["consenso"]}' if ev.get('consenso') else '') + (f' · {imp}' if imp else ''),
-                       site + '#pregao', f'agenda-{tg.chave(ev)}')
+                       site + '#pregao', f'agenda2-{tg.chave(ev)}', quando=quando)
 
 
 if __name__ == '__main__':
