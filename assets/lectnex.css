@@ -54,3 +54,11 @@
 .lx-marquee { width: max-content; animation: lxMarquee 60s linear infinite; }
 .lx-marquee:hover { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .lx-marquee { animation: none; } #b3-tape { overflow-x: auto; } }
+
+/* KPIs compactos do Mercado Hoje (o bloco "Agora" é o destaque) */
+.lx-kpis > .term-panel { padding: .55rem .75rem; border-top-width: 2px; }
+.lx-kpis strong.text-2xl { font-size: 1.05rem; line-height: 1.4rem; margin-top: .1rem; }
+.lx-kpis .src-tag { display: none; }
+.lx-kpis .term-label { font-size: 9px; }
+.lx-kpis > .term-panel > span.text-\[11px\] { font-size: 10px; }
+.lx-kpis > .term-panel > span:not(.term-label):not(.src-tag) { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
