@@ -1,6 +1,6 @@
 """Curva de juros pública (Tesouro Direto) → data/curva.json.
 
-Fonte 1: taxas do Tesouro Direto do momento (site do Tesouro Direto, atualiza algumas vezes ao dia).
+Fonte 1 (tentativa): taxas do momento no site do Tesouro Direto (o endpoint antigo pode estar desativado).
 Fonte 2 (reserva e histórico): arquivo oficial PrecoTaxaTesouroDireto.csv do Tesouro Transparente (fechamento diário).
 Guarda até 30 fotos diárias para comparar "hoje × pregão anterior". Não usa dados licenciados da B3.
 """
@@ -25,7 +25,7 @@ def get(url, timeout=60):
 
 def tipo(nome):
     n = nome.lower()
-    if 'renda+' in n or 'educa+' in n:
+    if 'renda+' in n or 'educa+' in n or 'semestrais' in n:
         return None
     if 'prefixado' in n:
         return 'pre'
