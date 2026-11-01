@@ -31,14 +31,14 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-macro.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Macro & Juros: Copom, Focus e Curva DI | Lectnex", "url": "https://antenornonato7.github.io/lectnex/macro.html", "description": "Entenda o porquê do preço: ciclo da Selic, Boletim Focus ao vivo, leitura da curva DI, regimes de risco e o mapa “E se…?” de como cada notícia chega ao WIN e ao WDO.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261031y">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261031z">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031y">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261031y">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261031z">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261031z">
 </head>
 <body data-page="macro" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -154,6 +154,19 @@
                         <p id="ct-read" class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed"></p>
                     </div>
                 </div>
+                <div id="be-wrap" class="hidden border-t border-slate-200 dark:border-lect-borderDark p-5">
+                    <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+                        <div><span class="term-label text-lect-orange font-bold">INFLAÇÃO IMPLÍCITA (BREAKEVEN)</span><h4 class="font-display font-bold leading-tight" id="be-title">Quanta inflação o mercado está precificando?</h4></div>
+                        <span class="font-mono text-[10px] text-slate-500">prefixado ÷ IPCA+ no mesmo prazo · média anual até o vencimento</span>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                        <div class="lg:col-span-8 space-y-2.5" id="be-bars"></div>
+                        <div class="lg:col-span-4 space-y-2">
+                            <div id="be-focus" class="p-3 bg-slate-50 dark:bg-lect-bgDark font-mono text-[11px]"></div>
+                            <p id="be-read" class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                        </div>
+                    </div>
+                </div>
                 <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[10px] font-mono text-slate-500" id="ct-src"></p>
             </div>
         </div>
@@ -224,7 +237,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261031y"></script>
+    <script src="assets/lectnex-core.js?v=20261031z"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -286,7 +299,7 @@
         }
         renderFocus(null);
         LX.loadFocus(FOCUS.map(f => f[0]), years).then(res => {
-            renderFocus(res);
+            renderFocus(res); window.lxFocus = res; document.dispatchEvent(new Event('lx:focus'));
             const d = Object.values(res).map(r => r.date).filter(Boolean).sort().pop();
             document.getElementById('focus-date').textContent = d ? 'PESQUISA DE ' + d.split('-').reverse().join('/') : 'INDISPONÍVEL — VEJA BCB.GOV.BR/FOCUS';
         }).catch(() => { document.getElementById('focus-date').textContent = 'INDISPONÍVEL — VEJA BCB.GOV.BR/FOCUS'; });
@@ -431,15 +444,50 @@
             const forma = Math.abs(dl - dc) < 0.05 ? (media > 0.02 ? 'a curva subiu por igual' : media < -0.02 ? 'a curva caiu por igual' : 'a curva ficou praticamente parada') : dl > dc ? (media > 0 ? 'os juros longos subiram mais que os curtos (inclinação aumentou: costuma refletir risco fiscal ou inflação à frente)' : 'os curtos caíram mais que os longos (inclinação aumentou: mercado vê mais cortes de Selic à frente)') : (media > 0 ? 'os juros curtos subiram mais que os longos (curva achatou: mercado precificando Selic mais alta por mais tempo)' : 'os longos caíram mais que os curtos (curva achatou: alívio no prêmio de risco)');
             $('ct-read').innerHTML = `<strong>Leitura:</strong> desde ${lbl(dA)}, ${forma}. ${k === 'pre' ? (media > 0.02 ? 'Juros subindo tendem a pesar no <strong>WIN</strong> (varejo, construção, small caps) e a apoiar o <strong>WDO</strong>.' : media < -0.02 ? 'Juros caindo costumam aliviar o <strong>WIN</strong>, principalmente setores ligados à economia doméstica.' : '') : 'A curva IPCA+ mostra o juro real: quanto o título paga acima da inflação.'} <span class="lx-demo">LEITURA TÍPICA</span>`;
             $('ct-title').textContent = Math.abs(media) < 0.02 ? 'Curva estável' : media > 0 ? `Curva abriu ${bp(media)} em média` : `Curva fechou ${bp(Math.abs(media)).replace('+', '')} em média`;
+            renderBE(datas, dH, dA);
             const fH = D.historico[dH];
             $('ct-src').textContent = `Fonte: Tesouro Nacional (taxas de compra do Tesouro Direto${fH.fonte === 'td' ? ', ' + (fH.hora || '') : ', abertura do dia'}) · ${lbl(dH)} vs ${lbl(dA)} · títulos sem cupom (Prefixado e IPCA+). A curva DI da B3 é parecida, mas não idêntica.`;
         }
+        // Inflação implícita: interpola a curva real (IPCA+) nos prazos dos prefixados
+        function interp(pts, a) {
+            if (!pts.length) return null;
+            if (a < pts[0].anos) return pts[0].anos - a <= 0.6 ? pts[0].taxa : null;
+            if (a > pts[pts.length - 1].anos) return a - pts[pts.length - 1].anos <= 0.6 ? pts[pts.length - 1].taxa : null;
+            for (let i = 1; i < pts.length; i++) if (a <= pts[i].anos) { const p = pts[i - 1], q = pts[i]; return p.taxa + (q.taxa - p.taxa) * (a - p.anos) / (q.anos - p.anos); }
+            return null;
+        }
+        function be(d) {
+            const f = D.historico[d]; if (!f || !(f.pre || []).length || !(f.ipca || []).length) return [];
+            return f.pre.map(p => { const r = interp(f.ipca, p.anos); return r == null ? null : { venc: p.venc, anos: p.anos, v: ((1 + p.taxa / 100) / (1 + r / 100) - 1) * 100 }; }).filter(Boolean);
+        }
+        function renderBE(datas, dH, dA) {
+            const H = be(dH), A = Object.fromEntries(be(dA).map(x => [x.venc, x.v]));
+            if (!H.length) return;
+            $('be-wrap').classList.remove('hidden');
+            const max = Math.max(7, Math.ceil(Math.max(...H.map(x => x.v)) + 0.5)), P = v => Math.max(0, Math.min(100, v / max * 100));
+            $('be-bars').innerHTML = H.map(x => { const d = A[x.venc] != null ? x.v - A[x.venc] : null, hot = x.v > 4.5;
+                return `<div><div class="flex justify-between font-mono text-[11px] mb-1"><span class="text-slate-500">${x.venc.slice(0, 4)} <span class="text-slate-400">(${LX.num(x.anos, 1)} anos)</span></span><span><strong class="${hot ? 'text-rose-600 dark:text-rose-400' : ''}">${LX.num(x.v, 2)}% a.a.</strong>${d != null ? ` <span class="${d > 0.005 ? 'text-rose-500' : d < -0.005 ? 'text-emerald-500' : 'text-slate-400'}">${d > 0 ? '+' : d < 0 ? '−' : ''}${Math.abs(Math.round(d * 100))} bps</span>` : ''}</span></div>
+                    <div class="relative h-4 bg-slate-100 dark:bg-lect-bgDark">
+                        <div class="absolute top-0 bottom-0 bg-emerald-500/30" style="left:${P(1.5)}%;width:${P(4.5) - P(1.5)}%" title="Intervalo de tolerância da meta (1,5% a 4,5%)"></div>
+                        <div class="absolute top-1 bottom-1 ${hot ? 'bg-rose-500' : 'bg-lect-orange'}" style="width:${P(x.v)}%"></div>
+                        <div class="absolute -top-0.5 -bottom-0.5 w-0.5 bg-slate-800 dark:bg-white" style="left:${P(3)}%" title="Meta de inflação: 3%"></div>
+                        ${A[x.venc] != null ? `<div class="absolute top-0 bottom-0 w-0.5 bg-slate-400" style="left:${P(A[x.venc])}%" title="${lbl(dA)}: ${LX.num(A[x.venc], 2)}%"></div>` : ''}</div></div>`; }).join('') +
+                `<div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] text-slate-500 pt-1"><span><span class="inline-block w-0.5 h-3 bg-slate-800 dark:bg-white align-middle"></span> meta 3%</span><span><span class="inline-block w-3 h-2.5 bg-emerald-500/30 align-middle"></span> tolerância 1,5%–4,5%</span><span><span class="inline-block w-0.5 h-3 bg-slate-400 align-middle"></span> ${lbl(dA)}</span></div>`;
+            const fx = window.lxFocus && window.lxFocus.IPCA, yrs = fx ? Object.keys(fx.byYear).filter(y => fx.byYear[y] != null).sort().slice(0, 4) : [];
+            $('be-focus').innerHTML = `<span class="term-label block mb-1">Focus · IPCA por ano</span>${yrs.length ? `<div class="grid grid-cols-4 gap-1 text-center">${yrs.map(y => `<div><span class="block text-slate-500 text-[10px]">${y}</span><strong>${LX.num(fx.byYear[y], 2)}%</strong></div>`).join('')}</div><span class="block mt-1 text-[10px] text-slate-500">projeção dos economistas (BCB)</span>` : '<span class="text-slate-500">carregando…</span>'}`;
+            const longo = H[H.length - 1], media = H.reduce((a, x) => a + x.v, 0) / H.length;
+            const dl = A[longo.venc] != null ? longo.v - A[longo.venc] : 0;
+            const fmed = yrs.length ? yrs.reduce((a, y) => a + fx.byYear[y], 0) / yrs.length : null;
+            $('be-title').textContent = `Mercado precifica ~${LX.num(media, 1)}% de inflação ao ano`;
+            $('be-read').innerHTML = `<strong>Leitura:</strong> ${media > 4.5 ? 'a inflação implícita está <strong>acima do teto da meta</strong>: o mercado não acredita que a inflação volte para 3% nesse prazo.' : media > 3.5 ? 'a inflação implícita está acima da meta de 3%, mas dentro da tolerância: credibilidade parcial.' : 'a inflação implícita está perto da meta: sinal de confiança no Banco Central.'} ${Math.abs(dl) >= 0.05 ? `No vencimento mais longo ela ${dl > 0 ? 'subiu' : 'caiu'} ${Math.abs(Math.round(dl * 100))} bps desde ${lbl(dA)}.` : ''} ${fmed != null ? `O Focus projeta ~${LX.num(fmed, 1)}% ao ano; ${media - fmed > 0.4 ? 'a diferença acima disso é o <strong>prêmio de risco</strong> que o mercado cobra.' : 'o mercado está alinhado aos economistas.'}` : ''} <span class="lx-demo">EDUCACIONAL</span>`;
+        }
+
         fetch('data/curva.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => {
             if (!j || !j.historico || Object.keys(j.historico).length < 2) return;
             D = j; $('ct-wrap').classList.remove('hidden');
             document.querySelectorAll('[data-ct-k]').forEach(b => b.onclick = () => { k = b.dataset.ctK; render(); });
             document.querySelectorAll('[data-ct-c]').forEach(b => b.onclick = () => { if (!b.disabled) { back = +b.dataset.ctC; render(); } });
-            render(); document.addEventListener('lx:macro', render); let ctR; window.addEventListener('resize', () => { clearTimeout(ctR); ctR = setTimeout(render, 200); });
+            render(); document.addEventListener('lx:macro', render); document.addEventListener('lx:focus', render); let ctR; window.addEventListener('resize', () => { clearTimeout(ctR); ctR = setTimeout(render, 200); });
         }).catch(() => { });
     })();
     </script>
