@@ -25,7 +25,7 @@ def enviar(tag, titulo, texto, url, chave, quando=None):
              'url': url, 'idempotency_key': str(uuid.uuid5(NS, chave)), 'ttl': 3600}
     if quando:
         corpo['send_after'] = quando.astimezone(dt.timezone.utc).strftime('%Y-%m-%d %H:%M:%S GMT+0000')
-    erro = None
+    j, erro, corpo_erro = None, None, ''
     for esquema in ('Key', 'Basic'):  # chave nova (Key) ou chave REST antiga (Basic)
         req = urllib.request.Request('https://api.onesignal.com/notifications', data=json.dumps(corpo).encode(),
                                      headers={'Content-Type': 'application/json', 'Authorization': f'{esquema} {KEY}'})
@@ -34,20 +34,21 @@ def enviar(tag, titulo, texto, url, chave, quando=None):
                 j = json.load(r)
             break
         except urllib.error.HTTPError as e:
-            erro = e
+            erro, corpo_erro = e.code, e.read().decode(errors='replace')[:200]
             if e.code != 401:
                 break
+        except Exception as e:
+            erro, corpo_erro = 'rede', str(e)[:200]
+            break
+    if j is None:
+        tg.note('warning', f'OneSignal recusou [{tag}] ({erro}): {corpo_erro} · chave com {len(KEY)} caracteres, começa com "{KEY[:7]}"')
+        return False
+    destino = 'agendado ' + corpo['send_after'] if quando else 'enviado'
+    if j.get('errors'):
+        tg.note('warning', f'Push [{tag}] {titulo}: {destino} com aviso {j.get("errors")} (id {j.get("id")})')
     else:
-        j = None
-    if j is None or (erro and j is None):
-        tg.note('warning', f'OneSignal recusou [{tag}] ({erro.code}): {erro.read().decode()[:160]} · chave com {len(KEY)} caracteres, começa com "{KEY[:7]}"')
-        return False
-    try:
-        tg.note('notice', f'Push [{tag}] {titulo}: {"agendado " + corpo["send_after"] if quando else "enviado"} ({j.get("id") or j.get("errors")})')
-        return True
-    except Exception as e:
-        tg.note('warning', f'OneSignal: resposta inesperada [{tag}]: {e}')
-        return False
+        tg.note('notice', f'Push [{tag}] {titulo}: {destino} (id {j.get("id")})')
+    return True
 
 
 def hora_evento(ev):
