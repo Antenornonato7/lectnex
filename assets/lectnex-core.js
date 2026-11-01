@@ -29,7 +29,8 @@
     // Newsletter (Buttondown): usuário da conta. Vazio = formulários de inscrição ficam escondidos.
     LX.config.newsletter = 'lectnex';
     LX.config.telegram = 'lectnex';   // canal público t.me/lectnex
-    LX.config.onesignal = 'e59723fb-6a99-46f5-abe7-689376e4c863';         // App ID do OneSignal (notificações no celular); vazio = desligado
+    LX.config.onesignal = 'c0be7d93-6afb-4bb0-bf56-6f9171302071';
+    LX.config.onesignalSafari = 'web.onesignal.auto.201c9c11-2835-4563-82b9-55a6f9094e87';         // App ID do OneSignal (notificações no celular); vazio = desligado
 
     /* ------------------------------------------------------------------ FORMATOS */
     const nf = (min, max) => new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });
@@ -859,7 +860,7 @@
             OneSignalDeferred.push(async OS => {
                 try {
                     const base = location.pathname.replace(/[^/]*$/, ''); // /lectnex/
-                    await OS.init({ appId: LX.config.onesignal, serviceWorkerPath: base.slice(1) + 'push/OneSignalSDKWorker.js', serviceWorkerParam: { scope: base + 'push/' }, notifyButton: { enable: false } });
+                    await OS.init({ appId: LX.config.onesignal, safari_web_id: LX.config.onesignalSafari, serviceWorkerPath: base.slice(1) + 'push/OneSignalSDKWorker.js', serviceWorkerParam: { scope: base + 'push/' }, notifyButton: { enable: false } });
                     ok(OS);
                 } catch (e) { fail(e); }
             });
