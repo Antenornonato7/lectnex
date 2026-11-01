@@ -4,10 +4,15 @@ import glob, json, os, subprocess, urllib.request
 BASE = 'https://antenornonato7.github.io/lectnex/'
 chave = next(os.path.basename(f)[:-4] for f in glob.glob('*.txt') if len(os.path.basename(f)) == 36)
 mudou = subprocess.run(['git', 'diff', '--name-only', 'HEAD^', 'HEAD'], capture_output=True, text=True).stdout.split()
-paginas = [f for f in mudou if f.endswith('.html') and '/' not in f] if os.environ.get('GITHUB_EVENT_NAME') == 'push' else sorted(glob.glob('*.html'))
+if os.environ.get('PAGINAS') is not None:
+    paginas = os.environ['PAGINAS'].split()
+elif os.environ.get('GITHUB_EVENT_NAME') == 'push':
+    paginas = [f for f in mudou if f.endswith('.html') and (('/' not in f) or f.startswith('semana/'))]
+else:
+    paginas = sorted(glob.glob('*.html') + glob.glob('semana/*.html'))
 if not paginas:
     print('::notice::IndexNow: nenhuma página alterada.'); raise SystemExit
-urls = [BASE + ('' if p == 'index.html' else p) for p in paginas]
+urls = [BASE + ('' if p == 'index.html' else p[:-10] if p.endswith('/index.html') else p) for p in paginas]
 corpo = {'host': 'antenornonato7.github.io', 'key': chave, 'keyLocation': BASE + chave + '.txt', 'urlList': urls}
 req = urllib.request.Request('https://api.indexnow.org/indexnow', data=json.dumps(corpo).encode(), headers={'Content-Type': 'application/json; charset=utf-8'})
 try:

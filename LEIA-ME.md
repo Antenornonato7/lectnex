@@ -103,3 +103,7 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 ## Glossário do Trader (glossario.html)
 
 - Página estática gerada por `python3 scripts/glossario.py` a partir de `data/glossario.json` (termo, categoria, definição, link para ferramenta). Para incluir ou corrigir termos, edite o JSON e rode o script. JSON-LD DefinedTermSet para o Google.
+
+## Agenda da semana (semana/)
+
+- Workflow **Semana** (`scripts/semana.py`): a cada mudança em `data/calendario.json`, acumula a semana em `data/semana/AAAA-MM-DD.json` e gera `semana/AAAA-MM-DD.html` + `semana/index.html` (estáticos, indexáveis), atualiza o sitemap e avisa o IndexNow. Semanas com menos de 4 eventos não viram página.

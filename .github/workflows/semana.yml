@@ -1,0 +1,42 @@
+# Gera as páginas semanais indexáveis da agenda (semana/) sempre que o calendário muda, e avisa os buscadores.
+name: Semana
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/calendario.json']
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: semana
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar páginas
+        id: gerar
+        run: |
+          python3 scripts/semana.py | tee saida.txt
+          echo "paginas=$(grep '^PAGINAS=' saida.txt | cut -d= -f2-)" >> "$GITHUB_OUTPUT"
+      - name: Publicar
+        id: pub
+        run: |
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com"
+          git add semana data/semana sitemap.xml
+          git diff --cached --quiet && { echo "ok=0" >> "$GITHUB_OUTPUT"; exit 0; }
+          git commit -m "semana: agenda $(TZ=America/Sao_Paulo date '+%F %H:%M')"
+          git pull --rebase -q origin main && git push -q origin HEAD:main
+          echo "ok=1" >> "$GITHUB_OUTPUT"
+      - name: Avisar buscadores (IndexNow)
+        if: steps.pub.outputs.ok == '1' && steps.gerar.outputs.paginas != ''
+        env:
+          PAGINAS: ${{ steps.gerar.outputs.paginas }}
+        run: sleep 60 && python3 coletor/indexnow.py
