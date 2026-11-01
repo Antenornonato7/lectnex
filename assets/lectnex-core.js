@@ -371,7 +371,10 @@
     LX.tv = function (id, type, cfg, now) {
         const host = document.getElementById(id);
         if (!host) return;
-        if (!LX._tvWidgets.find(w => w.id === id)) LX._tvWidgets.push({ id, type, cfg });
+        // guarda sempre a configuração mais recente (ex.: trocar de ação troca o gráfico)
+        const reg = LX._tvWidgets.find(w => w.id === id);
+        if (reg) { reg.type = type; reg.cfg = cfg; } else LX._tvWidgets.push({ id, type, cfg });
+        if (!now && host.dataset.tvLoaded) now = true;  // já carregado uma vez: recarrega na hora com o símbolo novo
         // Faixa de cotações (topo): carrega quando o navegador estiver livre, depois da primeira pintura
         if (!now && type === 'ticker-tape') {
             if (!host.dataset.tvWaiting) {
