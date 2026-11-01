@@ -62,3 +62,8 @@
 .lx-kpis .term-label { font-size: 9px; }
 .lx-kpis > .term-panel > span.text-\[11px\] { font-size: 10px; }
 .lx-kpis > .term-panel > span:not(.term-label):not(.src-tag) { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Espaço reservado para o cabeçalho montado por JS: evita que a página "pule" ao carregar (CLS) */
+#lx-topbar:empty { min-height: 37px; }
+#lx-header:empty { min-height: 116px; margin-bottom: 26px; }
+@media (min-width: 1024px) { #lx-header:empty { min-height: 73px; } }

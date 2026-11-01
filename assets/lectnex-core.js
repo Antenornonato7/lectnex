@@ -542,7 +542,6 @@
         ['mercado', 'ESE', 'E se…? Mapa de reações', 'Como Copom, IPCA, Fed e fiscal chegam ao WIN e WDO', 'macro.html#educacao', 'ph-git-branch', 'cenario reacao noticia transmissao copom ipca fed payroll fiscal china e se'],
         ['mercado', 'REGIME', 'Regimes de risco', 'Risk-on, risk-off e como os ativos reagem', 'macro.html#regimes', 'ph-gauge', 'regime risco risk on off aversao apetite intermercado'],
         ['mercado', 'MAPA', 'Mapa de calor da B3', 'Ações do Ibovespa por setor, coloridas pela variação do dia', 'index.html#mapa', 'ph-squares-four', 'mapa calor heatmap setores acoes ibovespa fluxo variacao'],
-        ['mercado', 'GLOBAL', 'Mercados globais', 'Bolsas, Treasuries, DXY, commodities', 'index.html#global', 'ph-globe-hemisphere-west', 'global eua sp500 nasdaq dxy treasury petroleo ouro'],
         ['mercado', 'NEWS', 'Notícias', 'Manchetes do mercado', 'index.html#noticias', 'ph-newspaper', 'noticias manchetes'],
         ['acoes', 'DONOS', 'Quem é dono da ação', 'Fundos com a ação na carteira (CVM)', 'acoes.html#donos', 'ph-users-three', 'fundos donos carteira cvm'],
         ['acoes', 'OPC', 'Laboratório de opções', 'Strangle, venda de call e de put', 'acoes.html#opcoes', 'ph-flask', 'opcoes call put strangle'],
@@ -563,7 +562,7 @@
         ['GGBR4', 'Gerdau', 'Siderurgia'], ['RADL3', 'Raia Drogasil', 'Farmácias'], ['EQTL3', 'Equatorial', 'Energia'], ['SBSP3', 'Sabesp', 'Saneamento'],
         ['VIVT3', 'Vivo', 'Telecom'], ['EMBR3', 'Embraer', 'Aeronáutica'], ['RAIL3', 'Rumo', 'Logística'], ['CMIG4', 'Cemig', 'Energia']
     ];
-    const SHORT = { ROLAGEM: 'Rolagem', MAPA: 'Mapa de calor', PLANO: 'Plano do dia', DIARIO: 'Diário', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', GLOBAL: 'Global', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações', GLOSS: 'Glossário' };
+    const SHORT = { ROLAGEM: 'Rolagem', MAPA: 'Mapa de calor', PLANO: 'Plano do dia', DIARIO: 'Diário', CURVA: 'Curva DI', ESE: 'E se…?', REGIME: 'Regimes', VENC: 'Vencimentos', SPEC: 'Contratos', RISCO: 'Risco', KELLY: 'Kelly', DJ: 'Dólar justo', IRDT: 'IR day trade', AGENDA: 'Agenda', FOCUS: 'Focus', FX: 'Câmbio', NEWS: 'Notícias', DONOS: 'Fundos donos', OPC: 'Opções', FLUXO: 'Fluxo', TRADE: 'Simulador', JCP: 'Dividendos', BAZIN: 'Preço teto', RF: 'Renda fixa', SFN: 'Selic e CDI', GUIA: 'Guia ações', GLOSS: 'Glossário' };
     LX.paletteItems = CMD.map(c => [c[0].toUpperCase(), c[2], c[4]]); // compatibilidade
     const CATS = [['tudo', 'Tudo'], ['acoes', 'Ações'], ['futuros', 'Futuros'], ['mercado', 'Mercado'], ['lab', 'Laboratório']];
     const norm = t => String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -821,18 +820,26 @@
         return calEvs.map(e => ({ e, t: evTime(e) })).filter(x => x.t && (x.e.importancia || 1) >= 3 && x.t > now - 5 * 60e3 && x.t - now < 36 * 3600e3 && !(x.e.resultado != null && x.e.resultado !== '')).sort((a, b) => a.t - b.t)[0] || null;
     };
     LX.calFlag = CAL_FLAG; LX.calArrow = CAL_ARROW;
+    // Faixa com altura fixa criada junto com o cabeçalho: preencher depois não empurra a página (CLS)
+    const NB_BASE = 'h-[26px] bg-slate-100 dark:bg-lect-cardDark border-b border-slate-200 dark:border-lect-borderDark font-mono text-[11px]';
+    function nextSlot() {
+        const head = document.getElementById('lx-header'); if (!head || document.getElementById('lx-next')) return;
+        const el = document.createElement('div'); el.id = 'lx-next'; el.className = NB_BASE + ' text-slate-500';
+        el.innerHTML = '<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center gap-2"><i class="ph-bold ph-timer text-lect-orange"></i>carregando agenda…</div>';
+        head.insertAdjacentElement('afterend', el);
+    }
     function nextBar() {
         const head = document.getElementById('lx-header'); if (!head || !calEvs) return;
         const now = Date.now();
         const ev = calEvs.map(e => ({ e, t: evTime(e) })).filter(x => x.t && (x.e.importancia || 1) >= 3 && x.t > now - 5 * 60e3 && x.t - now < 36 * 3600e3 && !(x.e.resultado != null && x.e.resultado !== '')).sort((a, b) => a.t - b.t)[0];
         let el = document.getElementById('lx-next');
-        if (!ev) { if (el) el.remove(); return; }
+        if (!el) return;
+        if (!ev) { el.innerHTML = `<a href="index.html#cal-wrap" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center gap-2 whitespace-nowrap overflow-hidden hover:underline decoration-dotted"><i class="ph-bold ph-calendar-check text-lect-teal"></i>Sem dado de alto impacto nas próximas 36 h <span class="opacity-60">· ver calendário</span></a>`; el.className = NB_BASE + ' text-slate-500'; return; }
         const left = ev.t - now, min = Math.max(0, Math.round(left / 60e3)), hot = left <= 15 * 60e3;
         const when = left <= 0 ? 'AGORA' : min < 60 ? `em ${min} min` : min < 24 * 60 ? `em ${Math.floor(min / 60)}h${String(min % 60).padStart(2, '0')}min` : `amanhã ${LX.esc(ev.e.hora)}`;
         const tags = Object.entries(ev.e.impacto || {}).filter(([, v]) => CAL_ARROW[v]).map(([k, v]) => `${LX.esc(k.toUpperCase())} ${CAL_ARROW[v]}`).join(' · ');
-        if (!el) { el = document.createElement('div'); el.id = 'lx-next'; (document.getElementById('lx-roll') || head).insertAdjacentElement('afterend', el); }
-        el.className = (hot ? 'bg-lect-orange text-lect-navy' : 'bg-slate-100 text-slate-700 dark:bg-lect-cardDark dark:text-slate-300 border-b border-slate-200 dark:border-lect-borderDark') + ' font-mono text-[11px]';
-        el.innerHTML = `<a href="index.html#cal-wrap" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex flex-wrap items-center gap-x-3 gap-y-0.5 hover:underline decoration-dotted">
+        el.className = NB_BASE + (hot ? ' !bg-lect-orange text-lect-navy' : ' text-slate-700 dark:text-slate-300');
+        el.innerHTML = `<a href="index.html#cal-wrap" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center gap-x-3 whitespace-nowrap overflow-hidden hover:underline decoration-dotted">
             <span class="inline-flex items-center gap-1.5 font-bold ${hot ? '' : 'text-lect-orange'}"><i class="ph-bold ph-timer"></i>${hot ? 'ATENÇÃO' : 'PRÓXIMO DADO FORTE'}</span>
             <span>${CAL_FLAG[ev.e.pais] || ''} <strong class="${hot ? '' : 'text-slate-900 dark:text-white'}">${LX.esc(ev.e.evento)}</strong> ${when}${left > 0 && min < 24 * 60 ? ` <span class="opacity-70">(${LX.esc(ev.e.hora)})</span>` : ''}</span>
             ${tags ? `<span class="opacity-80">${tags}</span>` : ''}
@@ -910,9 +917,9 @@
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
-        rollBanner(); setInterval(rollBanner, 60000);
+        nextSlot(); rollBanner(); setInterval(rollBanner, 60000);
         pwa(); pushButtons();
-        fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && Array.isArray(j.eventos)) { calEvs = j.eventos; nextBar(); setInterval(nextBar, 30000); } }).catch(() => { });
+        fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
         newsForms();
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });
         if (LX.config.telegram) fetch('data/telegram.json?t=' + Math.floor(Date.now() / 36e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.seguidores >= 25) { tgCount = j.seguidores; newsForms(); } }).catch(() => { });

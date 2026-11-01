@@ -32,22 +32,20 @@
     <meta name="twitter:image" content="https://antenornonato7.github.io/lectnex/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://antenornonato7.github.io/lectnex/#org", "name": "Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "logo": "https://antenornonato7.github.io/lectnex/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://antenornonato7.github.io/lectnex/#site", "name": "Lectnex Terminal", "url": "https://antenornonato7.github.io/lectnex/", "inLanguage": "pt-BR", "publisher": {"@id": "https://antenornonato7.github.io/lectnex/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://antenornonato7.github.io/lectnex/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://antenornonato7.github.io/lectnex/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261101e">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261101g">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261101e">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261101e">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261101g">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261101g">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
     <div id="lx-topbar"></div>
     <header id="lx-header"></header>
 
-    <!-- FAIXA DE COTAÇÕES GLOBAIS (TradingView, dados reais) -->
-    <div class="border-b border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark h-[46px] overflow-hidden" id="tv-tape"></div>
     <!-- FAIXA B3 (Ibovespa + ações de maior peso) — data/cotacoes.json, atualizado pelo workflow "Cotações B3" -->
     <div id="b3-tape" class="border-b border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-[#08111F] h-10 overflow-hidden relative">
         <div class="absolute left-0 inset-y-0 z-10 flex items-center gap-2 px-3 bg-slate-50 dark:bg-[#08111F] border-r border-slate-300 dark:border-lect-borderDark shadow-[6px_0_8px_-4px_rgba(0,0,0,.35)] font-mono text-[10px] font-bold text-lect-teal" title="Cotações com atraso de cerca de 30 minutos (brapi.dev)"><span class="px-1.5 py-0.5 bg-lect-teal text-white">B3</span><span id="b3-when" class="text-slate-500 font-normal hidden sm:inline"></span></div>
@@ -64,7 +62,7 @@
                 <div>
                     <span class="term-label text-lect-teal font-bold">PAINEL MACRO · DADOS OFICIAIS DO BANCO CENTRAL</span>
                     <h1 class="font-display text-3xl sm:text-4xl font-bold tracking-tight mt-1">Mercado Hoje</h1>
-                    <p id="hero-summary" class="hidden sm:block text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl leading-relaxed">Carregando leitura do dia…</p>
+                    <p id="hero-summary" class="hidden sm:block sm:min-h-[4.5rem] text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl leading-relaxed">Carregando leitura do dia…</p>
                 </div>
                 <div class="font-mono text-[11px] text-slate-500 flex flex-wrap gap-2">
                     <button type="button" id="pg-open" class="px-2.5 py-1 bg-lect-orange text-lect-navy font-bold inline-flex items-center gap-1.5 hover:brightness-110"><i class="ph-bold ph-device-mobile"></i>MODO PREGÃO</button>
@@ -77,10 +75,10 @@
             <!-- AGORA: o dia em 5 segundos -->
             <div id="agora" class="term-panel border-l-4 border-l-lect-orange mb-4" aria-label="Resumo do momento">
                 <div class="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-slate-200 dark:divide-lect-borderDark">
-                    <a href="#cal-wrap" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-timer text-lect-orange"></i>Próximo dado forte</span><div id="ag-ev" class="mt-1.5 text-sm text-slate-500">—</div></a>
-                    <a href="#leitura" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-thermometer-simple text-lect-teal"></i>Termômetro do dia</span><div id="ag-term" class="mt-1.5 text-sm text-slate-500">—</div></a>
-                    <a href="#mapa" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-chart-line text-lect-teal"></i>Ibovespa · Dólar</span><div id="ag-mkt" class="mt-1.5 font-mono text-sm">—</div></a>
-                    <a href="#cal-wrap" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-lightning text-lect-orange"></i>Surpresas hoje</span><div id="ag-sp" class="mt-1.5 text-sm text-slate-500">—</div></a>
+                    <a href="#cal-wrap" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-timer text-lect-orange"></i>Próximo dado forte</span><div id="ag-ev" class="mt-1.5 text-sm text-slate-500 min-h-[2.75rem]">—</div></a>
+                    <a href="#leitura" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-thermometer-simple text-lect-teal"></i>Termômetro do dia</span><div id="ag-term" class="min-h-[2.75rem] mt-1.5 text-sm text-slate-500">—</div></a>
+                    <a href="#mapa" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-chart-line text-lect-teal"></i>Ibovespa · Dólar</span><div id="ag-mkt" class="min-h-[2.75rem] mt-1.5 font-mono text-sm">—</div></a>
+                    <a href="#cal-wrap" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-lightning text-lect-orange"></i>Surpresas hoje</span><div id="ag-sp" class="min-h-[2.75rem] mt-1.5 text-sm text-slate-500">—</div></a>
                 </div>
             </div>
             <nav class="flex gap-1.5 overflow-x-auto thin-scroll pb-1 mb-4 font-mono text-[11px]" aria-label="Seções da página">
@@ -88,7 +86,6 @@
                 <a href="#noticias" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Calendário e notícias</a>
                 <a href="#mapa" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Mapa da bolsa</a>
                 <a href="#agenda" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Vencimentos e câmbio</a>
-                <a href="#global" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Mercados globais</a>
             </nav>
 
             <!-- 6 KPIs (compactos) -->
@@ -140,7 +137,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div id="sp-list" class="grid gap-3"></div></div>
     </section>
 
-    <section id="leitura" class="hidden py-8 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+    <section id="leitura" class="py-8 min-h-[640px] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="term-panel overflow-hidden !border-t-4 !border-t-lect-orange">
                 <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
@@ -239,7 +236,7 @@
     </section>
 
     <!-- ================================================================================= -->
-    <!-- 02 · AGENDA + CÂMBIO + MERCADOS GLOBAIS                                           -->
+    <!-- 02 · AGENDA + CÂMBIO                                           -->
     <!-- ================================================================================= -->
     <section id="agenda" class="py-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
@@ -271,28 +268,15 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <!-- ================================================================================= -->
-    <!-- 03 · MERCADOS GLOBAIS                                                            -->
-    <!-- ================================================================================= -->
-    <section id="global" class="py-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="term-panel overflow-hidden">
-                <div class="panel-head">
-                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-globe-hemisphere-west text-lect-orange"></i>Mercados Globais</span>
-                    <span class="font-mono text-[10px] text-slate-300">TRADINGVIEW</span>
-                </div>
-                <div id="tv-overview" class="h-[460px]"></div>
-            </div>
-            <a href="macro.html" class="group mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-5 bg-lect-navy text-white border-l-4 border-lect-orange hover:bg-[#10233a] transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><a href="macro.html" class="group mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-5 bg-lect-navy text-white border-l-4 border-lect-orange hover:bg-[#10233a] transition-colors">
                 <span class="flex items-center gap-4"><i class="ph-duotone ph-chart-line-up text-3xl text-lect-orange shrink-0"></i>
                     <span><span class="term-label !text-slate-400 block">POR TRÁS DOS NÚMEROS</span><strong class="font-display text-lg block">Copom, Focus, curva DI e o mapa “E se…?”</strong><span class="text-xs text-slate-300">Entenda por que o mercado se move — na página Macro &amp; Juros.</span></span></span>
                 <span class="shrink-0 inline-flex items-center gap-2 font-mono text-xs font-bold text-lect-orange group-hover:gap-3 transition-all">ABRIR MACRO &amp; JUROS <i class="ph-bold ph-arrow-right"></i></span>
-            </a>
-        </div>
+            </a></div>
     </section>
+
+
+
 
 
 
@@ -300,31 +284,12 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261101e"></script>
+    <script src="assets/lectnex-core.js?v=20261101g"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
 
         /* ---------- Widgets TradingView ---------- */
-        LX.tv('tv-tape', 'ticker-tape', {
-            symbols: [
-                // Só ativos que o widget gratuito mostra com variação (dados da B3 vêm da faixa própria abaixo)
-                { proName: 'FOREXCOM:SPXUSD', title: 'S&P 500' }, { proName: 'FOREXCOM:NSXUSD', title: 'Nasdaq 100' },
-                { proName: 'FOREXCOM:DJI', title: 'Dow Jones' }, { proName: 'AMEX:EWZ', title: 'EWZ (Brasil em NY)' },
-                { proName: 'FX_IDC:USDBRL', title: 'USD/BRL' }, { proName: 'TVC:UKOIL', title: 'Brent' },
-                { proName: 'TVC:GOLD', title: 'Ouro' }, { proName: 'BITSTAMP:BTCUSD', title: 'Bitcoin' }
-            ], showSymbolLogo: true, displayMode: 'adaptive'
-        });
-        LX.tv('tv-overview', 'market-overview', {
-            dateRange: '1D', showChart: true, width: '100%', height: '100%', showSymbolLogo: true, showFloatingTooltip: true,
-            plotLineColorGrowing: '#009988', plotLineColorFalling: '#E11D48', belowLineFillColorGrowing: 'rgba(0,153,136,0.12)', belowLineFillColorFalling: 'rgba(225,29,72,0.10)',
-            tabs: [
-                { title: 'Índices', symbols: [{ s: 'BMFBOVESPA:IBOV', d: 'Ibovespa' }, { s: 'AMEX:EWZ', d: 'EWZ' }, { s: 'FOREXCOM:SPXUSD', d: 'S&P 500' }, { s: 'FOREXCOM:NSXUSD', d: 'Nasdaq 100' }, { s: 'FOREXCOM:DJI', d: 'Dow Jones' }, { s: 'INDEX:DEU40', d: 'DAX' }, { s: 'INDEX:NKY', d: 'Nikkei 225' }] },
-                { title: 'Futuros B3', symbols: [{ s: 'BMFBOVESPA:WIN1!', d: 'WIN' }, { s: 'BMFBOVESPA:WDO1!', d: 'WDO' }, { s: 'BMFBOVESPA:DOL1!', d: 'DOL' }, { s: 'BMFBOVESPA:IND1!', d: 'IND' }, { s: 'BMFBOVESPA:DI1F27', d: 'DI Jan/27' }] },
-                { title: 'Commodities', symbols: [{ s: 'TVC:UKOIL', d: 'Brent' }, { s: 'TVC:USOIL', d: 'WTI' }, { s: 'TVC:GOLD', d: 'Ouro' }, { s: 'COMEX:HG1!', d: 'Cobre' }, { s: 'SGX:FEF1!', d: 'Minério de ferro' }, { s: 'CBOT:ZS1!', d: 'Soja' }] },
-                { title: 'Moedas', symbols: [{ s: 'FX_IDC:USDBRL', d: 'USD/BRL' }, { s: 'FX_IDC:EURBRL', d: 'EUR/BRL' }, { s: 'FX:EURUSD', d: 'EUR/USD' }, { s: 'FX:USDJPY', d: 'USD/JPY' }, { s: 'FX_IDC:USDMXN', d: 'USD/MXN' }, { s: 'FX_IDC:USDCNY', d: 'USD/CNY' }] }
-            ]
-        });
         LX.tv('tv-news', 'timeline', { feedMode: 'all_symbols', displayMode: 'regular', width: '100%', height: '100%' });
         /* ---------- Placar do termômetro: transparência sobre acertos e erros ---------- */
         fetch('data/placar-termometro.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(pl => {
@@ -587,10 +552,11 @@
                 bearish: ['Vendedor', 'ph-trend-down', 'text-rose-600 dark:text-rose-400', 'bg-rose-500', 15]
             };
             fetch('data/leitura.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
-                if (!d || !d.data || !Array.isArray(d.resumo) || !d.resumo.length) return;
+                const ltHide = () => el('leitura').classList.add('hidden');
+                if (!d || !d.data || !Array.isArray(d.resumo) || !d.resumo.length) return ltHide();
                 const day = LX.parseISO(d.data), today = LX.todayBRT(), old = (today - day) / 864e5;
-                if (old > 4) return; // leitura velha demais: melhor não mostrar
-                el('leitura').classList.remove('hidden');
+                if (old > 4) return ltHide(); // leitura velha demais: melhor não mostrar
+                el('leitura').classList.remove('hidden', 'min-h-[640px]');
                 el('lt-title').textContent = d.titulo || 'Leitura do dia';
                 const hora = d.gerado_em ? new Date(d.gerado_em).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' }) : '';
                 el('lt-when').innerHTML = +day === +today ? `<i class="ph-bold ph-clock"></i> hoje${hora ? ' às ' + hora : ''}` : `<i class="ph-bold ph-clock-counter-clockwise"></i> leitura de ${LX.weekday(day)} ${LX.brShort(day)}`;
@@ -629,7 +595,7 @@
                     }).join('');
                 }
                 el('lt-fontes').innerHTML = '<span><i class="ph-bold ph-sparkle"></i> Gerado por IA (Claude) a partir de fontes públicas · pode conter imprecisões.</span>' + (d.fontes || []).slice(0, 6).map(f => /^https?:\/\//.test(f.url || '') ? `<a href="${esc(f.url)}" target="_blank" rel="noopener nofollow" class="hover:text-lect-teal underline decoration-dotted">${esc(f.titulo || f.url)}</a>` : '').join('');
-            }).catch(() => { });
+            }).catch(() => document.getElementById('leitura').classList.add('hidden'));
         })();
 
         /* ---------- Contratos vigentes ---------- */
