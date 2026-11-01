@@ -7,7 +7,8 @@
    "evento": "Finados — B3 fechada",
    "importancia": 2,
    "impacto": {},
-   "nota": "Sem pregão; o mercado externo funciona normalmente."
+   "nota": "Sem pregão; o mercado externo funciona normalmente.",
+   "tipo": "feriado-b3"
   },
   {
    "data": "2026-11-02",
@@ -21,7 +22,8 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Primeiro dado relevante da semana; B3 fechada. EUA já em horário padrão."
+   "nota": "Primeiro dado relevante da semana; B3 fechada. EUA já em horário padrão.",
+   "tipo": "ism-industrial"
   },
   {
    "data": "2026-11-03",
@@ -31,7 +33,8 @@
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "1º dia útil do mês; rolagem e Ptax podem ampliar a volatilidade."
+   "nota": "1º dia útil do mês; rolagem e Ptax podem ampliar a volatilidade.",
+   "tipo": "vencimento-wdo"
   },
   {
    "data": "2026-11-03",
@@ -43,7 +46,34 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Congresso e governos estaduais em disputa; resultados entram pela noite."
+   "nota": "Câmara, 35 cadeiras do Senado e 36 governos estaduais; resultados entram pela noite.",
+   "tipo": "eleicoes-eua"
+  },
+  {
+   "data": "2026-11-03",
+   "hora": "08h30",
+   "pais": "BR",
+   "evento": "Boletim Focus (BCB)",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Primeiras projeções após a semana de estresse fiscal; olhar Selic, IPCA e câmbio.",
+   "tipo": "focus"
+  },
+  {
+   "data": "2026-11-03",
+   "hora": "10h",
+   "pais": "BR",
+   "evento": "PMI industrial S&P Global (out)",
+   "importancia": 1,
+   "anterior": "44,8",
+   "consenso": "43",
+   "impacto": {
+    "win": "volatil"
+   },
+   "nota": "Indústria em contração profunda.",
+   "tipo": "pmi-brasil"
   },
   {
    "data": "2026-11-03",
@@ -54,7 +84,9 @@
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "Termômetro do mercado de trabalho na semana do payroll."
+   "nota": "Termômetro do mercado de trabalho na semana do payroll.",
+   "anterior": "7,1 milhões",
+   "tipo": "jolts"
   },
   {
    "data": "2026-11-04",
@@ -66,7 +98,9 @@
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "Inflação alta na zona do euro mexe no euro e no DXY."
+   "nota": "Inflação alta na zona do euro mexe no euro e no DXY.",
+   "consenso": "3,9% a/a",
+   "tipo": "inflacao-zona-euro"
   },
   {
    "data": "2026-11-04",
@@ -77,7 +111,10 @@
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "Prévia informal do payroll."
+   "nota": "Prévia informal do payroll.",
+   "anterior": "90 mil",
+   "consenso": "65 mil",
+   "tipo": "adp"
   },
   {
    "data": "2026-11-04",
@@ -89,7 +126,8 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Tamanho das emissões afeta Treasuries longas e, por tabela, o DI."
+   "nota": "Tamanho das emissões afeta Treasuries longas e, por tabela, o DI.",
+   "tipo": "refunding-eua"
   },
   {
    "data": "2026-11-04",
@@ -103,7 +141,22 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Serviços são a maior parte da economia americana."
+   "nota": "Serviços são a maior parte da economia americana.",
+   "tipo": "ism-servicos"
+  },
+  {
+   "data": "2026-11-04",
+   "hora": "14h30",
+   "pais": "BR",
+   "evento": "CAGED — saldo de empregos formais (set)",
+   "importancia": 2,
+   "anterior": "165,8 mil",
+   "consenso": "180 mil",
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Mercado de trabalho forte reduz espaço para cortes da Selic.",
+   "tipo": "caged"
   },
   {
    "data": "2026-11-04",
@@ -117,16 +170,22 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Comunicado após o fechamento; reação aparece na quinta. Tom sobre o fiscal é chave."
+   "nota": "Comunicado após o fechamento; reação aparece na quinta. Tom sobre o fiscal é chave.",
+   "consenso": "13,75%",
+   "tipo": "copom"
   },
   {
-   "data": "2026-11-05",
-   "pais": "US",
-   "evento": "Falas do Fed: Hammack e Barkin",
+   "data": "2026-11-04",
+   "hora": "22h45",
+   "pais": "CN",
+   "evento": "PMI de serviços RatingDog/S&P (out)",
    "importancia": 1,
+   "anterior": "51,6",
+   "consenso": "51,5",
    "impacto": {
-    "di": "volatil"
-   }
+    "win": "volatil"
+   },
+   "tipo": "pmi-china-servicos"
   },
   {
    "data": "2026-11-05",
@@ -137,7 +196,24 @@
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "Expectativa de início de ciclo de alta de juros."
+   "nota": "Mercado espera início de ciclo de alta de juros.",
+   "anterior": "3,75%",
+   "consenso": "4,00%",
+   "tipo": "boe"
+  },
+  {
+   "data": "2026-11-05",
+   "hora": "09h",
+   "pais": "BR",
+   "evento": "Produção industrial (set, m/m)",
+   "importancia": 2,
+   "anterior": "−1,2%",
+   "consenso": "1,6%",
+   "impacto": {
+    "win": "volatil",
+    "di": "volatil"
+   },
+   "tipo": "producao-industrial"
   },
   {
    "data": "2026-11-05",
@@ -147,17 +223,10 @@
    "importancia": 1,
    "impacto": {
     "wdo": "volatil"
-   }
-  },
-  {
-   "data": "2026-11-06",
-   "pais": "US",
-   "evento": "Falas do Fed: Logan, Williams, Musalem e Bowman",
-   "importancia": 2,
-   "impacto": {
-    "di": "volatil"
    },
-   "nota": "Primeiras leituras do Fed após o payroll."
+   "anterior": "194 mil",
+   "consenso": "197 mil",
+   "tipo": "seguro-desemprego"
   },
   {
    "data": "2026-11-06",
@@ -171,7 +240,8 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Emprego forte tende a fortalecer o dólar global."
+   "nota": "Emprego forte tende a fortalecer o dólar global.",
+   "tipo": "payroll"
   },
   {
    "data": "2026-11-06",
@@ -184,7 +254,8 @@
    "impacto": {
     "wdo": "volatil",
     "di": "volatil"
-   }
+   },
+   "tipo": "desemprego-eua"
   },
   {
    "data": "2026-11-06",
@@ -198,7 +269,8 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Pressão salarial pesa nas apostas para o Fed."
+   "nota": "Pressão salarial pesa nas apostas para o Fed.",
+   "tipo": "salario-eua"
   },
   {
    "data": "2026-11-06",
@@ -208,7 +280,24 @@
    "importancia": 1,
    "impacto": {
     "wdo": "volatil"
-   }
+   },
+   "anterior": "48,0",
+   "consenso": "47,3",
+   "tipo": "michigan"
+  },
+  {
+   "data": "2026-11-06",
+   "hora": "15h",
+   "pais": "BR",
+   "evento": "Balança comercial (out)",
+   "importancia": 1,
+   "anterior": "US$ 7,74 bi",
+   "consenso": "US$ 7,6 bi",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Saldo positivo ajuda o fluxo de dólares para o país.",
+   "tipo": "balanca-comercial"
   }
  ]
 }
