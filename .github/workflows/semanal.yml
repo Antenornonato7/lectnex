@@ -1,0 +1,29 @@
+# Resumo da semana no Telegram e na newsletter, todo domingo.
+name: Resumo semanal
+
+on:
+  schedule:
+    - cron: "17 13 * * 0"   # domingo 10h17 em Brasília
+  workflow_dispatch:
+    inputs:
+      enviar:
+        description: 'Enviar de verdade (sem marcar, só gera o texto)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  resumo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Montar e enviar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY || secrets.SITE_LECTNEX }}
+          ENVIAR: ${{ (github.event_name == 'schedule' || inputs.enviar) && '1' || '' }}
+        run: python3 coletor/semanal.py
