@@ -34,10 +34,10 @@ def anterior(path):
         return None
 
 
-def enviar(texto):
+def enviar(texto, previa=None):
     req = urllib.request.Request(
         f'https://api.telegram.org/bot{TOKEN}/sendMessage',
-        data=json.dumps({'chat_id': CHAT, 'text': texto, 'parse_mode': 'HTML', 'disable_web_page_preview': True}).encode(),
+        data=json.dumps({'chat_id': CHAT, 'text': texto, 'parse_mode': 'HTML', **({'link_preview_options': {'url': previa, 'prefer_large_media': True, 'show_above_text': True}} if previa else {'disable_web_page_preview': True})}).encode(),
         headers={'Content-Type': 'application/json'})
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
@@ -50,7 +50,7 @@ def enviar(texto):
         return False
 
 
-def msg_leitura(d):
+def msg_leitura(d, link=None):
     dd = '/'.join(reversed(d['data'].split('-')[1:]))
     linhas = [f'📊 <b>Leitura do Dia · {dd}</b>', f'<b>{e(d.get("titulo"))}</b>', '']
     linhas += [f'• {e(x)}' for x in d.get('resumo', [])]
@@ -60,7 +60,7 @@ def msg_leitura(d):
     if d.get('proximo_pregao'):
         p = d['proximo_pregao']
         linhas += ['', f'<b>Próximo pregão ({e("/".join(reversed(p.get("data", "").split("-")[1:])))})</b>: {e(p.get("o_que_esperar"))}']
-    linhas += ['', f'<a href="{SITE}#leitura">Leitura completa, agenda e notícias →</a>', '<i>Conteúdo educacional. Não é recomendação de investimento.</i>']
+    linhas += ['', f'<a href="{link or SITE + "#leitura"}">Leitura completa, agenda e notícias →</a>', '<i>Conteúdo educacional. Não é recomendação de investimento.</i>']
     return '\n'.join(linhas)
 
 
@@ -131,6 +131,13 @@ def main():
     acao = os.environ.get('ACAO', '')
     if acao == 'push-teste':
         return
+    if acao == 'leitura-arquivo':  # chamado pelo workflow do Arquivo, depois que a página e a imagem da edição estão no ar
+        d = atual('data/leitura.json')
+        if d and d.get('data'):
+            link = f"{SITE}leitura/{d['data']}.html"
+            ok = enviar(msg_leitura(d, link), previa=link)
+            note('notice' if ok else 'warning', 'Leitura no Telegram com imagem' if ok else 'Leitura no Telegram falhou')
+        return
     if acao == 'boas-vindas':
         boas_vindas(); return
     if acao == 'contar':
@@ -148,7 +155,7 @@ def main():
         return
     enviados = 0
     l, la = atual('data/leitura.json'), anterior('data/leitura.json')
-    if l and l.get('data') and (not la or la.get('data') != l['data']):
+    if not os.environ.get('SEM_LEITURA') and l and l.get('data') and (not la or la.get('data') != l['data']):
         enviados += enviar(msg_leitura(l))
     c, ca = atual('data/calendario.json'), anterior('data/calendario.json')
     if c:

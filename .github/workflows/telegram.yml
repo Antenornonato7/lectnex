@@ -47,6 +47,7 @@ jobs:
           TESTE: ${{ github.event_name == 'workflow_dispatch' && inputs.teste && '1' || '' }}
           MSG_ID: ${{ inputs.msg_id || '' }}
           ACAO: ${{ github.event_name == 'schedule' && 'contar' || inputs.acao || '' }}
+          SEM_LEITURA: '1'   # a Leitura vai para o canal pelo workflow "Arquivo da Leitura", com a imagem da edição
         run: python3 coletor/telegram.py
       - name: Alertas no celular (OneSignal)
         if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.acao == 'push-teste')

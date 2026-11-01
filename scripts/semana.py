@@ -32,7 +32,8 @@ def ver():
     return re.search(r'tailwind\.css\?v=([0-9a-z]+)', open('index.html', encoding='utf-8').read()).group(1)
 
 
-def head(titulo, desc, url, extra_ld):
+def head(titulo, desc, url, extra_ld, img=None):
+    img = img or BASE + 'assets/brand/og-mercado.jpg'
     v = ver()
     ld = {'@context': 'https://schema.org', '@graph': [{'@type': 'Organization', '@id': BASE + '#org', 'name': 'Lectnex', 'url': BASE, 'logo': BASE + 'assets/brand/icon-512.png'}] + extra_ld}
     return f'''<!DOCTYPE html>
@@ -54,9 +55,11 @@ def head(titulo, desc, url, extra_ld):
     <meta property="og:title" content="{e(titulo)}">
     <meta property="og:description" content="{e(desc)}">
     <meta property="og:url" content="{url}">
-    <meta property="og:image" content="{BASE}assets/brand/og-mercado.jpg">
+    <meta property="og:image" content="{img}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{BASE}assets/brand/og-mercado.jpg">
+    <meta name="twitter:image" content="{img}">
     <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
     <script>try{{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark')}}catch(e){{document.documentElement.classList.add('dark')}}</script>
     <link rel="stylesheet" href="assets/tailwind.css?v={v}">

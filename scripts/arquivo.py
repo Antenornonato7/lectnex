@@ -60,7 +60,9 @@ def pagina(d, datas):
     nav = f'''<nav class="flex justify-between gap-3 font-mono text-xs">{f'<a href="leitura/{ant}.html" class="hover:text-lect-teal">← {br(dt.date.fromisoformat(ant))}</a>' if ant else '<span></span>'}<a href="leitura/" class="hover:text-lect-teal">todas as edições</a>{f'<a href="leitura/{prox}.html" class="hover:text-lect-teal">{br(dt.date.fromisoformat(prox))} →</a>' if prox else '<span></span>'}</nav>'''
     ld = [{'@type': 'Article', 'headline': titulo[:110], 'description': desc, 'url': url, 'inLanguage': 'pt-BR', 'datePublished': d.get('gerado_em') or d['data'],
            'dateModified': d.get('gerado_em') or d['data'], 'author': {'@id': BASE + '#org'}, 'publisher': {'@id': BASE + '#org'}, 'image': BASE + 'assets/brand/og-mercado.jpg'}]
-    return head(titulo + ' | Lectnex', desc, url, ld) + f'''
+    img = f'{BASE}assets/og/leitura-{d["data"]}.jpg' if os.path.exists(f'assets/og/leitura-{d["data"]}.jpg') else None
+    if img: ld[0]['image'] = img
+    return head(titulo + ' | Lectnex', desc, url, ld, img) + f'''
         <section class="border-b border-slate-300 dark:border-lect-borderDark grid-bg"><div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
             <span class="term-label text-lect-teal font-bold">LEITURA DO DIA · {DIAS[dia.weekday()].upper()} {br(dia, True)}{" · SEM PREGÃO" if sem else ""}</span>
             <h1 class="font-display text-2xl sm:text-3xl font-bold tracking-tight mt-1">{e(d.get("titulo"))}</h1>

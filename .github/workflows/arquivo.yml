@@ -24,21 +24,36 @@ jobs:
           fetch-depth: 0
       - name: Atualizar para a versão mais nova
         run: git pull -q --rebase origin main
-      - name: Gerar páginas
+      - name: Gerar páginas e imagem de compartilhamento
         id: gerar
         run: |
-          python3 scripts/arquivo.py | tee saida.txt
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          python3 scripts/arquivo.py > /dev/null      # guarda a edição em data/leitura/
+          python3 scripts/og_leitura.py               # imagem das edições que ainda não têm
+          python3 scripts/arquivo.py | tee saida.txt  # páginas já apontando para a imagem
           echo "paginas=$(grep '^PAGINAS=' saida.txt | cut -d= -f2-)" >> "$GITHUB_OUTPUT"
       - name: Publicar
         id: pub
         run: |
           git config user.name "lectnex-bot"
           git config user.email "bot@lectnex.com"
-          git add leitura data/leitura sitemap.xml
+          git add leitura data/leitura assets/og sitemap.xml
           git diff --cached --quiet && { echo "ok=0" >> "$GITHUB_OUTPUT"; exit 0; }
           git commit -m "arquivo: leitura $(TZ=America/Sao_Paulo date '+%F %H:%M')"
           git pull --rebase -q origin main && git push -q origin HEAD:main
           echo "ok=1" >> "$GITHUB_OUTPUT"
+      - name: Leitura no Telegram (com a imagem da edição)
+        if: github.event_name == 'push'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
+        run: |
+          # só para Leitura de um dia novo (correções no mesmo dia não reenviam)
+          dia() { git show "$1:data/leitura.json" 2>/dev/null | python3 -c "import json,sys;print(json.load(sys.stdin).get('data',''))" 2>/dev/null; }
+          NOVA=$(dia ${{ github.sha }}); ANT=$(dia ${{ github.event.before }})
+          if [ -z "$NOVA" ] || [ "$NOVA" = "$ANT" ]; then echo "::notice::Mesma edição do dia — Telegram não reenviado."; exit 0; fi
+          sleep 90   # espera o GitHub Pages publicar a página e a imagem
+          ACAO=leitura-arquivo python3 coletor/telegram.py
       - name: Avisar buscadores (IndexNow)
         if: steps.pub.outputs.ok == '1' && steps.gerar.outputs.paginas != ''
         env:
