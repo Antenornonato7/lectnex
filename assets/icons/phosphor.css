@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=ef69deea") format("woff");
+  src: url("./Phosphor.woff?v=bf121238") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -63,6 +63,9 @@
 }
 .ph.ph-bank:before {
   content: "\e0b4";
+}
+.ph.ph-bell-ringing:before {
+  content: "\e5e8";
 }
 .ph.ph-bird:before {
   content: "\e72c";
@@ -342,7 +345,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=ef69deea") format("woff");
+  src: url("./Phosphor-Bold.woff?v=bf121238") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -403,6 +406,9 @@
 }
 .ph-bold.ph-bank:before {
   content: "\e0b4";
+}
+.ph-bold.ph-bell-ringing:before {
+  content: "\e5e8";
 }
 .ph-bold.ph-bird:before {
   content: "\e72c";
@@ -682,7 +688,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=ef69deea") format("woff");
+  src: url("./Phosphor-Fill.woff?v=bf121238") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -743,6 +749,9 @@
 }
 .ph-fill.ph-bank:before {
   content: "\e0b4";
+}
+.ph-fill.ph-bell-ringing:before {
+  content: "\e5e8";
 }
 .ph-fill.ph-bird:before {
   content: "\e72c";
@@ -1022,7 +1031,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=ef69deea") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=bf121238") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1127,6 +1136,14 @@
 }
 .ph-duotone.ph-bank:after {
   content: "\e0b5";
+  margin-left: -1em;
+}
+.ph-duotone.ph-bell-ringing:before {
+  content: "\e5e8";
+  opacity: 0.2;
+}
+.ph-duotone.ph-bell-ringing:after {
+  content: "\e5e9";
   margin-left: -1em;
 }
 .ph-duotone.ph-bird:before {

@@ -29,6 +29,7 @@
     // Newsletter (Buttondown): usuário da conta. Vazio = formulários de inscrição ficam escondidos.
     LX.config.newsletter = 'lectnex';
     LX.config.telegram = 'lectnex';   // canal público t.me/lectnex
+    LX.config.onesignal = '';         // App ID do OneSignal (notificações no celular); vazio = desligado
 
     /* ------------------------------------------------------------------ FORMATOS */
     const nf = (min, max) => new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });
@@ -498,6 +499,7 @@
                 ${NAV.map(n => `<a href="${n.href}" class="block hover:text-lect-tealLight">${n.label}</a>`).join('')}
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
+                <button type="button" data-lx-push class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-orange/60 text-lect-orange hover:bg-lect-orange/10"><i class="ph-bold ph-bell-ringing"></i>Alertas no celular</button>
                 <span id="lx-install-ios" class="hidden mt-2 text-[10px] leading-snug text-slate-400"><i class="ph-bold ph-device-mobile"></i> iPhone: toque em Compartilhar e depois em "Adicionar à Tela de Início" para usar como app.</span>
               </div>
               <div class="lg:col-span-5 space-y-1.5 font-mono text-[11px]">
@@ -761,9 +763,10 @@
                 ? `<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 bg-lect-navy text-white border-l-4 border-lect-orange relative overflow-hidden"><div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
                     <div class="relative lg:col-span-7"><span class="term-label !text-lect-orange font-bold">LEITURA DO DIA NO SEU E-MAIL</span><h3 class="font-display text-2xl font-bold mt-1">Comece o pregão já sabendo o que importa.</h3>
                     <p class="text-sm text-slate-300 mt-2">Todo dia às 7h40: termômetro de WIN e WDO, agenda com horários, as 5 notícias que mexem no preço e o que esperar. Grátis, sem spam, cancele quando quiser.</p></div>
-                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">${social ? `<strong class="text-lect-orange">${social}</strong> · ` : ''}Conteúdo educacional · você confirma a inscrição pelo e-mail.</p>${LX.config.telegram ? `<div class="mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center gap-3">${tgBtn('escuro')}<span class="text-[11px] text-slate-400">Prefere celular? A Leitura e os alertas de surpresa chegam no canal.</span></div>` : ''}</div></div>`
+                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">${social ? `<strong class="text-lect-orange">${social}</strong> · ` : ''}Conteúdo educacional · você confirma a inscrição pelo e-mail.</p>${LX.config.telegram ? `<div class="mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center gap-3">${tgBtn('escuro')}<button type="button" data-lx-push class="hidden items-center justify-center gap-2 px-4 py-2 border border-lect-orange text-lect-orange hover:bg-lect-orange/10 font-mono text-xs font-bold"><i class="ph-bold ph-bell-ringing"></i>ALERTAS NO CELULAR</button><span class="text-[11px] text-slate-400">Prefere celular? A Leitura e os alertas de surpresa chegam no canal.</span></div>` : ''}</div></div>`
                 : `<div class="font-mono text-[11px]"><span class="block text-slate-300 font-bold mb-1.5"><i class="ph-bold ph-envelope-simple text-lect-orange"></i> Leitura do Dia por e-mail, todo dia às 7h40</span>${form}${LX.config.telegram ? `<div class="mt-2">${tgBtn('link')}</div>` : ''}</div>`;
         });
+        pushButtons();
     }
 
     /* ------------------------------------------------------------------ CONTRATOS VIGENTES E ÚLTIMO PREGÃO */
@@ -845,12 +848,66 @@
         if (/iphone|ipad|ipod/i.test(navigator.userAgent)) { const ios = document.getElementById('lx-install-ios'); if (ios) ios.classList.remove('hidden'); }
     }
 
+    /* ------------------------------------------------------------------ ALERTAS NO CELULAR (OneSignal) */
+    // Qualquer [data-lx-push] vira botão. As escolhas viram tags: surpresa, agenda (15 min antes), leitura.
+    const PUSH_OPTS = [['surpresa', 'Surpresas do calendário', 'Quando um dado sai fora do consenso'], ['agenda', 'Dado forte em 15 min', 'Payroll, IPCA, Copom, CPI…'], ['leitura', 'Leitura do Dia', 'Todo dia por volta das 7h45']];
+    let osReady = null;
+    function oneSignal() {
+        if (osReady) return osReady;
+        osReady = new Promise((ok, fail) => {
+            window.OneSignalDeferred = window.OneSignalDeferred || [];
+            OneSignalDeferred.push(async OS => {
+                try {
+                    const base = location.pathname.replace(/[^/]*$/, ''); // /lectnex/
+                    await OS.init({ appId: LX.config.onesignal, serviceWorkerPath: base.slice(1) + 'push/OneSignalSDKWorker.js', serviceWorkerParam: { scope: base + 'push/' }, notifyButton: { enable: false } });
+                    ok(OS);
+                } catch (e) { fail(e); }
+            });
+            const sc = document.createElement('script'); sc.src = 'https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js'; sc.defer = true; sc.onerror = fail; document.head.appendChild(sc);
+        });
+        return osReady;
+    }
+    function pushPanel() {
+        let el = document.getElementById('lx-push'); if (el) { el.remove(); return; }
+        let saved = {}; try { saved = JSON.parse(localStorage.getItem('lectnex-push-v1') || '{}'); } catch (_) { }
+        el = document.createElement('div'); el.id = 'lx-push'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', 'Alertas no celular');
+        el.className = 'fixed z-[90] bottom-3 left-3 right-3 sm:left-auto sm:w-[360px] term-panel shadow-2xl p-4 text-slate-800 dark:text-slate-200';
+        const ios = /iphone|ipad|ipod/i.test(navigator.userAgent), standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+        el.innerHTML = `<div class="flex items-start justify-between gap-2"><strong class="font-display inline-flex items-center gap-2"><i class="ph-bold ph-bell-ringing text-lect-orange"></i>Alertas no celular</strong><button type="button" data-x class="text-slate-400 hover:text-lect-teal" aria-label="Fechar"><i class="ph-bold ph-x"></i></button></div>
+            ${ios && !standalone ? '<p class="mt-2 text-xs text-slate-500">No iPhone, primeiro instale o app: toque em Compartilhar → "Adicionar à Tela de Início", abra o Lectnex pelo ícone e volte aqui.</p>' : ''}
+            <div class="mt-3 space-y-2">${PUSH_OPTS.map(([k, t, d]) => `<label class="flex items-start gap-2.5 cursor-pointer"><input type="checkbox" data-k="${k}" class="mt-0.5 accent-[#009988]" ${saved[k] !== false ? 'checked' : ''}><span><strong class="block text-sm">${t}</strong><span class="text-[11px] text-slate-500">${d}</span></span></label>`).join('')}</div>
+            <button type="button" data-go class="mt-4 w-full px-4 py-2 bg-lect-orange hover:bg-orange-600 text-white font-mono text-xs font-bold">ATIVAR ALERTAS</button>
+            <p data-msg class="mt-2 text-[11px] text-slate-500 font-mono">Grátis. Você pode desligar quando quiser. Educacional, não é recomendação.</p>`;
+        document.body.appendChild(el);
+        el.querySelector('[data-x]').onclick = () => el.remove();
+        el.querySelector('[data-go]').onclick = async () => {
+            const msg = el.querySelector('[data-msg]'), tags = {};
+            el.querySelectorAll('[data-k]').forEach(c => { tags[c.dataset.k] = c.checked ? '1' : '0'; });
+            try { localStorage.setItem('lectnex-push-v1', JSON.stringify(Object.fromEntries(Object.entries(tags).map(([k, v]) => [k, v === '1'])))); } catch (_) { }
+            msg.textContent = 'Conectando…';
+            try {
+                const OS = await oneSignal();
+                if (!OS.Notifications.permission) await OS.Notifications.requestPermission();
+                if (!OS.Notifications.permission) { msg.textContent = 'Permissão negada. Libere as notificações do site nas configurações do navegador.'; return; }
+                await OS.User.PushSubscription.optIn();
+                await OS.User.addTags(tags);
+                msg.innerHTML = '<span class="text-emerald-500">✓ Alertas ativados.</span> Para mudar, abra este painel de novo.';
+                setTimeout(() => el.remove(), 2500);
+            } catch (e) { msg.textContent = 'Não foi possível ativar agora. Tente de novo em instantes.'; }
+        };
+    }
+    LX.pushButtons = () => pushButtons();
+    function pushButtons() {
+        if (!LX.config.onesignal || !('Notification' in window || navigator.standalone)) return;
+        document.querySelectorAll('[data-lx-push]').forEach(b => { b.classList.remove('hidden'); b.classList.add('inline-flex'); b.onclick = pushPanel; });
+    }
+
     /* ------------------------------------------------------------------ BOOT */
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
         rollBanner(); setInterval(rollBanner, 60000);
-        pwa();
+        pwa(); pushButtons();
         fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && Array.isArray(j.eventos)) { calEvs = j.eventos; nextBar(); setInterval(nextBar, 30000); } }).catch(() => { });
         newsForms();
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });

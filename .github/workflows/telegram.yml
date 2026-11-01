@@ -17,7 +17,7 @@ on:
       acao:
         description: 'Ação especial'
         type: choice
-        options: ['nenhuma', 'boas-vindas', 'contar', 'info', 'apagar']
+        options: ['nenhuma', 'boas-vindas', 'contar', 'info', 'apagar', 'push-teste']
         default: 'nenhuma'
       msg_id:
         description: 'Número da mensagem (só para apagar)'
@@ -48,6 +48,13 @@ jobs:
           MSG_ID: ${{ inputs.msg_id || '' }}
           ACAO: ${{ github.event_name == 'schedule' && 'contar' || inputs.acao || '' }}
         run: python3 coletor/telegram.py
+      - name: Alertas no celular (OneSignal)
+        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.acao == 'push-teste')
+        env:
+          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID || secrets.ONESIGNAL_APP_ID }}
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
+          TESTE: ${{ inputs.acao == 'push-teste' && '1' || '' }}
+        run: python3 coletor/push.py
       - name: Salvar contagem de seguidores
         if: github.event_name == 'schedule' || inputs.acao == 'contar'
         run: |

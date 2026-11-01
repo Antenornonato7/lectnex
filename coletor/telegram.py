@@ -129,6 +129,8 @@ def main():
     if os.environ.get('TOKEN_EM_VARIABLES'):
         note('warning', 'O token do Telegram está em Variables (visível). Mova para Secrets com o nome TELEGRAM_BOT_TOKEN.')
     acao = os.environ.get('ACAO', '')
+    if acao == 'push-teste':
+        return
     if acao == 'boas-vindas':
         boas_vindas(); return
     if acao == 'contar':

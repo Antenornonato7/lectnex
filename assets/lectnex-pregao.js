@@ -87,9 +87,9 @@
                 ${card('Seu Plano do Dia', 'ph-target', '<div id="pg-plano"></div>')}
                 ${card('Maiores altas · maiores baixas', 'ph-chart-bar', '<div id="pg-movers"></div>', 'lg:col-span-2')}
             </div>
-            <footer class="px-3 sm:px-5 py-1.5 border-t border-slate-200 dark:border-lect-borderDark font-mono text-[10px] text-slate-500 flex justify-between gap-2"><button type="button" id="pg-lock" class="hover:text-lect-teal"></button><span>Educacional · não é recomendação</span></footer>`;
+            <footer class="px-3 sm:px-5 py-1.5 border-t border-slate-200 dark:border-lect-borderDark font-mono text-[10px] text-slate-500 flex justify-between gap-2"><span class="flex gap-3"><button type="button" id="pg-lock" class="hover:text-lect-teal"></button><button type="button" data-lx-push class="hidden items-center gap-1 text-lect-orange hover:underline"><i class="ph-bold ph-bell-ringing"></i>alertas</button></span><span>Educacional · não é recomendação</span></footer>`;
         document.body.appendChild(ov); document.documentElement.style.overflow = 'hidden';
-        $('pg-close').onclick = closePg; $('pg-lock').onclick = wake;
+        $('pg-close').onclick = closePg; $('pg-lock').onclick = wake; if (LX.pushButtons) LX.pushButtons();
         if (location.hash !== '#pregao') history.replaceState(null, '', '#pregao');
         render(); renderSlow(); wake();
         [leitura, cot] = await Promise.all([fetchJSON('data/leitura.json'), fetchJSON('data/cotacoes.json')]); renderSlow();
