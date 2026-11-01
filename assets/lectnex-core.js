@@ -908,6 +908,21 @@
             } catch (e) { msg.textContent = 'Não foi possível ativar agora. Tente de novo em instantes.'; }
         };
     }
+    // Liga/desliga alertas das ações favoritas (até 3, limite de etiquetas do plano grátis do OneSignal): tags a1, a2, a3
+    LX.pushAcoes = async function (lista) {
+        if (!LX.config.onesignal) throw new Error('alertas desligados');
+        const OS = await oneSignal();
+        if (lista.length) {
+            if (!OS.Notifications.permission) await OS.Notifications.requestPermission();
+            if (!OS.Notifications.permission) throw new Error('permissão negada');
+            await OS.User.PushSubscription.optIn();
+        }
+        const tags = {}; ['a1', 'a2', 'a3'].forEach((k, i) => { if (lista[i]) tags[k] = lista[i]; });
+        const tirar = ['a1', 'a2', 'a3'].filter((k, i) => !lista[i]);
+        if (tirar.length) await OS.User.removeTags(tirar);
+        if (Object.keys(tags).length) await OS.User.addTags(tags);
+        return true;
+    };
     LX.pushButtons = () => pushButtons();
     function pushButtons() {
         if (!LX.config.onesignal || !('Notification' in window || navigator.standalone)) return;

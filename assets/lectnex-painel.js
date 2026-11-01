@@ -3,7 +3,7 @@
 (function () {
     const KEY = 'lectnex-painel-v1', $ = id => document.getElementById(id);
     const SECOES = [['leitura', 'Leitura do Dia'], ['noticias', 'Calendário e notícias'], ['placar-term', 'Placar do termômetro'], ['mapa', 'Mapa da bolsa'], ['agenda', 'Vencimentos e câmbio']];
-    const ler = () => (window.lxPainel ? window.lxPainel() : { foco: 'ambos', acoes: [], ocultas: [] });
+    const ler = () => Object.assign({ alertaAcoes: false }, window.lxPainel ? window.lxPainel() : { foco: 'ambos', acoes: [], ocultas: [] });
     const salvar = p => { try { localStorage.setItem(KEY, JSON.stringify(p)); } catch (_) { } document.dispatchEvent(new CustomEvent('lx:painel', { detail: p })); aplicar(); };
     let mapa = [];
 
@@ -31,6 +31,7 @@
             <p class="text-[10px] text-slate-500 mt-1">Filtra o calendário e o termômetro do bloco Agora.</p>
             <span class="term-label block mt-4 mb-1.5">Minhas ações (até 8)</span>
             <div class="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto thin-scroll">${(mapa.length ? mapa.map(x => x.ticker) : p.acoes).sort().map(t => chip(p.acoes.includes(t), `data-acao="${t}"`, t)).join('') || '<span class="text-xs text-slate-500">carregando…</span>'}</div>
+            ${LX.config && LX.config.onesignal ? `<label class="mt-3 flex items-start gap-2 text-sm cursor-pointer"><input type="checkbox" data-alerta class="mt-0.5 accent-[#009988]" ${p.alertaAcoes ? 'checked' : ''}><span><strong class="inline-flex items-center gap-1"><i class="ph-bold ph-bell-ringing text-lect-orange"></i>Avisar no celular</strong> quando ${p.acoes.length ? p.acoes.slice(0, 3).join(', ') : 'minhas ações'} subir ou cair mais de 3% no dia (e de novo a 6%).<span class="block text-[10px] text-slate-500">Vale para as 3 primeiras da lista. Cotações com atraso de ~30 min.</span><span data-alerta-msg class="block text-[11px] font-mono"></span></span></label>` : ''}
             <span class="term-label block mt-4 mb-1.5">Seções que aparecem</span>
             <div class="space-y-1.5">${SECOES.map(([id, nome]) => `<label class="flex items-center gap-2 text-sm cursor-pointer"><input type="checkbox" data-sec="${id}" class="accent-[#009988]" ${p.ocultas.includes(id) ? '' : 'checked'}>${nome}</label>`).join('')}</div>
             <button type="button" data-reset class="mt-4 font-mono text-[11px] text-slate-500 hover:text-lect-teal underline">voltar ao padrão</button>`;
@@ -38,8 +39,18 @@
         el.querySelector('[data-x]').onclick = () => el.remove();
         const redraw = () => { el.remove(); abrir(); };
         el.querySelectorAll('[data-foco]').forEach(b => b.onclick = () => { const q = ler(); q.foco = b.dataset.foco; salvar(q); redraw(); });
-        el.querySelectorAll('[data-acao]').forEach(b => b.onclick = () => { const q = ler(), t = b.dataset.acao; q.acoes = q.acoes.includes(t) ? q.acoes.filter(x => x !== t) : q.acoes.concat(t).slice(-8); salvar(q); redraw(); });
+        el.querySelectorAll('[data-acao]').forEach(b => b.onclick = () => { const q = ler(), t = b.dataset.acao; q.acoes = q.acoes.includes(t) ? q.acoes.filter(x => x !== t) : q.acoes.concat(t).slice(-8); salvar(q); if (q.alertaAcoes && LX.pushAcoes) LX.pushAcoes(q.acoes.slice(0, 3)).catch(() => { }); redraw(); });
         el.querySelectorAll('[data-sec]').forEach(c => c.onchange = () => { const q = ler(); q.ocultas = c.checked ? q.ocultas.filter(x => x !== c.dataset.sec) : q.ocultas.concat(c.dataset.sec); salvar(q); });
+        const al = el.querySelector('[data-alerta]');
+        if (al) al.onchange = async () => {
+            const q = ler(), msg = el.querySelector('[data-alerta-msg]');
+            msg.textContent = 'conectando…';
+            try {
+                await LX.pushAcoes(al.checked ? q.acoes.slice(0, 3) : []);
+                q.alertaAcoes = al.checked; salvar(q);
+                msg.innerHTML = al.checked ? '<span class="text-emerald-500">✓ alertas ligados</span>' : 'alertas desligados';
+            } catch (err) { al.checked = !al.checked; msg.textContent = 'não deu para ativar: libere as notificações do site e tente de novo'; }
+        };
         el.querySelector('[data-reset]').onclick = () => { try { localStorage.removeItem(KEY); } catch (_) { } document.dispatchEvent(new CustomEvent('lx:painel')); aplicar(); redraw(); };
     }
 

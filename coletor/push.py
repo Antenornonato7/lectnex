@@ -18,9 +18,13 @@ BRT = dt.timezone(dt.timedelta(hours=-3))
 NS = uuid.UUID('6f1c6f0e-3c1a-4c55-9a51-6c6563746e78')  # namespace Lectnex para as chaves
 
 
-def enviar(tag, titulo, texto, url, chave, quando=None):
+def enviar_filtro(filtros, titulo, texto, url, chave):
+    return enviar('acoes', titulo, texto, url, chave, filtros=filtros)
+
+
+def enviar(tag, titulo, texto, url, chave, quando=None, filtros=None):
     corpo = {'app_id': APP, 'target_channel': 'push',
-             'filters': [{'field': 'tag', 'key': tag, 'relation': '=', 'value': '1'}],
+             'filters': filtros or [{'field': 'tag', 'key': tag, 'relation': '=', 'value': '1'}],
              'headings': {'en': titulo, 'pt': titulo}, 'contents': {'en': texto, 'pt': texto},
              'url': url, 'idempotency_key': str(uuid.uuid5(NS, chave)), 'ttl': 3600}
     if quando:

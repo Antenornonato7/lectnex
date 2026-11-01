@@ -30,6 +30,12 @@ jobs:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN || 'uRJnTfjL6jypdHfJ8b5LJd' }}
           FORCAR_MAPA: ${{ github.event.inputs.forcar_mapa == 'true' && '1' || '' }}
         run: python3 coletor/cotacoes.py
+      - name: Alertas das ações favoritas (celular)
+        continue-on-error: true
+        env:
+          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID || secrets.ONESIGNAL_APP_ID || 'c0be7d93-6afb-4bb0-bf56-6f9171302071' }}
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY || secrets.LECTNEX2 }}
+        run: python3 coletor/alerta_acoes.py
       - name: Publicar se mudou
         run: |
           git config user.name "lectnex-bot"

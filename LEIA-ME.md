@@ -116,3 +116,8 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 
 - Workflow **Arquivo da Leitura** (`scripts/arquivo.py`): a cada nova `data/leitura.json`, guarda a edição em `data/leitura/AAAA-MM-DD.json` e gera `leitura/AAAA-MM-DD.html` + `leitura/index.html` (estáticos, indexáveis), atualiza o sitemap e avisa o IndexNow. Usa o mesmo grupo de concorrência ("sitemap") do workflow Semana.
 - Imagem de compartilhamento de cada edição: `scripts/og_leitura.py` (Pillow, fontes em `scripts/fonts/`, licença OFL) → `assets/og/leitura-AAAA-MM-DD.jpg`, usada no og:image da página da edição. A Leitura vai para o Telegram por este workflow (depois que página e imagem estão no ar), com prévia grande do link.
+
+## Meu painel e alertas de ações
+
+- `assets/lectnex-painel.js`: preferências do visitante no Mercado Hoje (foco WIN/WDO, até 8 ações favoritas, seções escondidas), salvas em `localStorage` (`lectnex-painel-v1`).
+- Alerta no celular das 3 primeiras favoritas (etiquetas OneSignal `a1`, `a2`, `a3`; o plano grátis permite 6 etiquetas por pessoa, 3 já usadas por surpresa/agenda/leitura): `coletor/alerta_acoes.py` roda no workflow **Cotações B3** e avisa a ±3% e ±6% no dia, só com cotação do próprio dia.
