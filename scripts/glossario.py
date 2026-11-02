@@ -2,7 +2,7 @@
 Rode: python3 scripts/glossario.py   (o HTML sai pronto para o Google: conteúdo no próprio arquivo, JSON-LD DefinedTermSet)."""
 import html, json, re, unicodedata
 
-BASE = 'https://antenornonato7.github.io/lectnex/'
+BASE = 'https://lectnex.com.br/'
 d = json.load(open('data/glossario.json', encoding='utf-8'))
 CAT = d['categorias']
 termos = sorted(d['termos'], key=lambda x: unicodedata.normalize('NFD', x['t'].lower()))

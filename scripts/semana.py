@@ -5,7 +5,7 @@ passaram e os resultados que saíram) e gera HTML estático. Atualiza o sitemap.
 Imprime na última linha as páginas alteradas (para o IndexNow)."""
 import datetime as dt, glob, html, json, os, re
 
-BASE = 'https://antenornonato7.github.io/lectnex/'
+BASE = 'https://lectnex.com.br/'
 FLAG = {'BR': '🇧🇷', 'US': '🇺🇸', 'CN': '🇨🇳', 'EU': '🇪🇺', 'JP': '🇯🇵', 'UK': '🇬🇧'}
 PAIS = {'BR': 'Brasil', 'US': 'EUA', 'CN': 'China', 'EU': 'Zona do euro', 'JP': 'Japão', 'UK': 'Reino Unido'}
 SETA = {'alta': '▲', 'baixa': '▼', 'volatil': '↕', 'neutro': '●'}

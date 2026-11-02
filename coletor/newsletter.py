@@ -7,7 +7,7 @@ Requer o segredo BUTTONDOWN_API_KEY. Só biblioteca padrão.
 import json, os, subprocess, sys, urllib.request
 
 KEY = os.environ.get('BUTTONDOWN_API_KEY', '').strip()
-SITE = 'https://antenornonato7.github.io/lectnex/'
+SITE = 'https://lectnex.com.br/'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 

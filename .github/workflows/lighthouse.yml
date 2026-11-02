@@ -33,12 +33,12 @@ jobs:
           npm install -g @lhci/cli@0.14.0 > /dev/null 2>&1
           lhci collect --numberOfRuns=3 \
             --settings.chromeFlags="--headless=new --no-sandbox" \
-            --url=https://antenornonato7.github.io/lectnex/ \
-            --url=https://antenornonato7.github.io/lectnex/macro.html \
-            --url=https://antenornonato7.github.io/lectnex/futuros.html \
-            --url=https://antenornonato7.github.io/lectnex/acoes.html \
-            --url=https://antenornonato7.github.io/lectnex/laboratorio.html \
-            --url=https://antenornonato7.github.io/lectnex/glossario.html 2>&1 | tee lh.log | tail -20
+            --url=https://lectnex.com.br/ \
+            --url=https://lectnex.com.br/macro.html \
+            --url=https://lectnex.com.br/futuros.html \
+            --url=https://lectnex.com.br/acoes.html \
+            --url=https://lectnex.com.br/laboratorio.html \
+            --url=https://lectnex.com.br/glossario.html 2>&1 | tee lh.log | tail -20
           lhci upload --target=temporary-public-storage 2>&1 | tee -a lh.log | tail -8 || true
       - name: Montar placar
         if: always()
@@ -61,7 +61,7 @@ jobs:
               c = r.get('categories', {})
               s = {k: round((c[k]['score'] or 0) * 100) for k in ('performance', 'accessibility', 'best-practices', 'seo') if k in c}
               url = r.get('finalDisplayedUrl') or r.get('requestedUrl', '')
-              nome = url.split('/lectnex/')[-1] or 'index'
+              nome = url.split('lectnex.com.br/')[-1] or 'index'
               linhas.append(f"| {nome} | {cor(s.get('performance', 0))} | {cor(s.get('accessibility', 0))} | {cor(s.get('best-practices', 0))} | {cor(s.get('seo', 0))} | [abrir]({links.get(r.get('requestedUrl', ''), '#')}) |")
               # nota também como aviso, para ser lida pela API de check runs
               print(f"::notice title=Lighthouse {nome}::(mediana de 3) velocidade {s.get('performance')} · acessibilidade {s.get('accessibility')} · boas práticas {s.get('best-practices')} · SEO {s.get('seo')}")

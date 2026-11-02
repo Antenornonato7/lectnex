@@ -8,7 +8,7 @@ Precisa dos segredos TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID (ex.: @lectnex). Sem 
 """
 import html, json, os, subprocess, sys, urllib.request, urllib.error
 
-SITE = 'https://antenornonato7.github.io/lectnex/'
+SITE = 'https://lectnex.com.br/'
 TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip()
 CHAT = os.environ.get('TELEGRAM_CHAT_ID', '').strip()
 FLAG = {'BR': '🇧🇷', 'US': '🇺🇸', 'CN': '🇨🇳', 'EU': '🇪🇺', 'JP': '🇯🇵', 'UK': '🇬🇧'}
