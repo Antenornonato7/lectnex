@@ -506,6 +506,7 @@
                 <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
+                <a href="https://www.instagram.com/lectnex.oficial/" target="_blank" rel="noopener" class="mt-2 flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-instagram-logo"></i>Instagram @lectnex.oficial</a>
                 <button type="button" id="lx-hc" class="mt-2 flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-circle-half"></i>Alto contraste</button>
                 <button type="button" data-lx-push class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-orange/60 text-lect-orange hover:bg-lect-orange/10"><i class="ph-bold ph-bell-ringing"></i>Alertas no celular</button>
                 <span id="lx-install-ios" class="hidden mt-2 text-[10px] leading-snug text-slate-400"><i class="ph-bold ph-device-mobile"></i> iPhone: toque em Compartilhar e depois em "Adicionar à Tela de Início" para usar como app.</span>
