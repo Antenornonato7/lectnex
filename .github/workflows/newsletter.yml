@@ -8,7 +8,13 @@ on:
     paths: ['data/leitura.json']
   schedule:
     - cron: "53 10 * * *"   # 07h53 em Brasília: atualiza a contagem de inscritos
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: 'enviar = manda a Leitura de hoje; verificar = só testa a chave e conta inscritos'
+        type: choice
+        options: ['verificar', 'enviar']
+        default: 'verificar'
 
 permissions:
   contents: write
@@ -26,7 +32,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: Enviar edição
-        if: github.event_name != 'schedule'
+        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.modo == 'enviar')
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY || secrets.SITE_LECTNEX }}
           MANUAL: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
