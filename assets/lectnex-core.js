@@ -525,7 +525,10 @@
             </div>
             <div class="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[11px] text-slate-500">
               <p class="max-w-4xl"><strong class="text-slate-300">Aviso legal:</strong> conteúdo exclusivamente educacional e informativo. Nada aqui constitui recomendação de compra, venda ou manutenção de valores mobiliários, nem relatório de análise nos termos da Resolução CVM nº 20. Operar derivativos envolve alavancagem e risco de perdas superiores ao capital. Rentabilidade passada ou simulada não garante resultado futuro. Confirme sempre dados e horários nas fontes oficiais.</p>
-              <span class="font-mono shrink-0">&copy; ${new Date().getFullYear()} Lectnex</span>
+              <div class="shrink-0 flex flex-col items-start sm:items-end gap-1.5 font-mono">
+                <span id="lx-status" class="inline-flex items-start gap-1.5 text-slate-400" title="Horário da última atualização de cada dado (Brasília)"><span class="lx-dot mt-1 shrink-0 w-2 h-2 rounded-full bg-slate-500"></span><span>Verificando dados…</span></span>
+                <span>&copy; ${new Date().getFullYear()} Lectnex</span>
+              </div>
             </div>
           </div>
         </footer>`;
@@ -937,6 +940,43 @@
         document.querySelectorAll('[data-lx-push]').forEach(b => { b.classList.remove('hidden'); b.classList.add('inline-flex'); b.onclick = pushPanel; });
     }
 
+    /* ------------------------------------------------------------------ STATUS DOS DADOS (rodapé) */
+    function footStatus() {
+        const el = document.getElementById('lx-status'); if (!el) return;
+        const tz = { timeZone: 'America/Sao_Paulo' };
+        const brt = d => new Date(d.toLocaleString('en-US', tz)); // relógio de Brasília
+        const now = new Date(), nb = brt(now), hojeISO = LX.iso(nb);
+        const hm = d => d.toLocaleTimeString('pt-BR', { ...tz, hour: '2-digit', minute: '2-digit' }).replace(':', 'h');
+        const quando = d => { const min = Math.round((now - d) / 6e4); if (min < 60) return `há ${Math.max(1, min)} min`; return LX.iso(brt(d)) === hojeISO ? `às ${hm(d)}` : `${d.toLocaleDateString('pt-BR', { ...tz, weekday: 'short' }).replace('.', '')} ${hm(d)}`; };
+        const pega = f => fetch(`data/${f}.json?t=${Math.floor(Date.now() / 3e5)}`, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
+        Promise.all([pega('cotacoes'), pega('leitura'), pega('calendario')]).then(([cot, lei, cal]) => {
+            if (!cot && !lei && !cal) { pinta('bg-slate-500', 'Status indisponível', ''); return; }
+            const mins = nb.getHours() * 60 + nb.getMinutes();
+            const pregao = LX.isBusinessDay(nb) && mins >= 10 * 60 + 45 && mins <= 18 * 60 + 45;
+            const partes = [], atrasos = [];
+            if (cot && cot.atualizado_em) {
+                const t = new Date(cot.atualizado_em), h = (now - t) / 36e5;
+                partes.push(`Cotações ${quando(t)}`);
+                if (pregao && h > 1.5) atrasos.push('cotações');
+            }
+            if (lei && lei.data) {
+                const hoje = lei.data === hojeISO;
+                partes.push(hoje ? 'Leitura de hoje' : `Leitura de ${lei.data.slice(8, 10)}/${lei.data.slice(5, 7)}`);
+                if (!hoje && mins >= 9 * 60) atrasos.push('Leitura');
+            }
+            if (cal && cal.atualizado_em) {
+                const t = new Date(cal.atualizado_em);
+                partes.push(`Agenda ${quando(t)}`);
+                if ((now - t) / 36e5 > 28) atrasos.push('agenda');
+            }
+            if (atrasos.length) pinta('bg-amber-400', `Atualização atrasada (${atrasos.join(', ')})`, partes.join(' · '));
+            else pinta('bg-emerald-400 lx-pulse', pregao ? 'Dados em dia' : 'Dados em dia · mercado fechado', partes.join(' · '));
+        });
+        function pinta(cor, titulo, det) {
+            el.innerHTML = `<span class="lx-dot mt-1 shrink-0 w-2 h-2 rounded-full ${cor}"></span><span><strong class="text-slate-300 font-semibold">${titulo}</strong>${det ? `<span class="block sm:inline text-slate-400 sm:ml-1.5">${det}</span>` : ''}</span>`;
+        }
+    }
+
     /* ------------------------------------------------------------------ BOOT */
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
@@ -946,6 +986,7 @@
         const hc = document.getElementById('lx-hc'); if (hc) hc.onclick = () => { const on = document.documentElement.classList.toggle('lx-hc'); try { localStorage.setItem('lectnex-hc', on ? '1' : '0'); } catch (_) { } };
         fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
         newsForms();
+        (window.requestIdleCallback || (f => setTimeout(f, 1500)))(footStatus); setInterval(footStatus, 5 * 6e4);
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });
         if (LX.config.telegram) fetch('data/telegram.json?t=' + Math.floor(Date.now() / 36e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.seguidores >= 25) { tgCount = j.seguidores; newsForms(); } }).catch(() => { });
         // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs
