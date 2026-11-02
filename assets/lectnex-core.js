@@ -693,6 +693,7 @@
         if (!r || !r.href) return;
         recents.add({ code: r.code, title: r.title, sub: r.sub, href: r.href, icon: r.icon, cat: r.cat, tag: r.tag && !r.instant ? r.tag : undefined });
         LX.closePalette();
+        LX.track('select_content', { content_type: 'comando', item_id: r.code || r.title });
         const [path, hash] = r.href.split('#'), here = location.pathname.split('/').pop() || 'index.html';
         if (path === here && hash && !path.includes('?')) { const t = document.getElementById(hash); if (t) { t.scrollIntoView({ behavior: 'smooth' }); history.replaceState(null, '', '#' + hash); return; } }
         location.href = r.href;
@@ -886,6 +887,28 @@
         document.dispatchEvent(new CustomEvent('lx:cookies', { detail: sim }));
     };
     LX.cookiesEscolha = ckGet;
+    // Eventos no Analytics (só se o GA estiver ligado). Nomes curtos e estáveis: aparecem assim nos relatórios.
+    LX.track = function (nome, p) { try { if (LX.config.ga && window.gtag) gtag('event', nome, Object.assign({ pagina: document.body.dataset.page || '' }, p || {})); } catch (_) { } };
+    function rastrear() {
+        const usadas = new Set();
+        document.addEventListener('submit', ev => { if (ev.target.matches && ev.target.matches('form[action*="buttondown"]')) LX.track('sign_up', { method: 'newsletter' }); }, true);
+        document.addEventListener('click', ev => {
+            const a = ev.target.closest && ev.target.closest('a[href]'); if (!a) return;
+            const h = a.getAttribute('href') || '';
+            if (/t\.me\//.test(h)) LX.track('join_group', { group_id: 'telegram_lectnex' });
+            else if (/instagram\.com|tiktok\.com|x\.com\//.test(h)) LX.track('rede_social', { rede: h.includes('instagram') ? 'instagram' : h.includes('tiktok') ? 'tiktok' : 'x' });
+            else if (h.startsWith('mailto:')) LX.track('contato_email');
+        }, true);
+        const usou = ev => {
+            const t = ev.target; if (!t || !t.closest || t.closest('#lx-palette, #lx-cookies, form[action*="buttondown"], header, #lx-topbar')) return;
+            const sec = t.closest('section[id], [data-ferramenta]'); if (!sec) return;
+            const nome = sec.dataset.ferramenta || sec.id; if (usadas.has(nome)) return;
+            usadas.add(nome); LX.track('ferramenta_usada', { ferramenta: nome });
+        };
+        document.addEventListener('input', usou, true);
+        document.addEventListener('change', usou, true);
+        window.addEventListener('appinstalled', () => LX.track('app_instalado'));
+    }
     function analytics() {
         const id = LX.config.ga; if (!id || !/^G-[A-Z0-9]+$/.test(id)) return;
         const esc = ckGet();
@@ -896,6 +919,7 @@
         gtag('config', id, { page_title: document.title });
         const load = () => { const sc = document.createElement('script'); sc.async = true; sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + id; document.head.appendChild(sc); };
         (window.requestIdleCallback || (f => setTimeout(f, 1200)))(load);
+        rastrear();
         if (!esc) banner();
     }
     function banner() {
@@ -953,6 +977,7 @@
                 if (!OS.Notifications.permission) { msg.textContent = 'Permissão negada. Libere as notificações do site nas configurações do navegador.'; return; }
                 await OS.User.PushSubscription.optIn();
                 await OS.User.addTags(tags);
+                LX.track('push_ativado', { tipos: Object.keys(tags).filter(k => tags[k] === '1').join(',') });
                 msg.innerHTML = '<span class="text-emerald-500">✓ Alertas ativados.</span> Para mudar, abra este painel de novo.';
                 setTimeout(() => el.remove(), 2500);
             } catch (e) { msg.textContent = 'Não foi possível ativar agora. Tente de novo em instantes.'; }
@@ -971,6 +996,7 @@
         const tirar = ['a1', 'a2', 'a3'].filter((k, i) => !lista[i]);
         if (tirar.length) await OS.User.removeTags(tirar);
         if (Object.keys(tags).length) await OS.User.addTags(tags);
+        LX.track('alerta_acoes', { quantidade: lista.length });
         return true;
     };
     LX.pushButtons = () => pushButtons();
