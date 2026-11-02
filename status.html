@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status do Lectnex: dados e site em tempo real</title>
+    <meta name="description" content="Transparência do Lectnex Terminal: verificação de hora em hora do site, horário de publicação da Leitura do Dia e atualizações de cotação nos últimos 7 dias.">
+    <link rel="canonical" href="https://lectnex.com.br/status.html">
+    <meta name="theme-color" content="#060D17">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lectnex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lectnex Terminal">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Status do Lectnex: dados e site em tempo real">
+    <meta property="og:description" content="Transparência do Lectnex Terminal: verificação de hora em hora do site, horário de publicação da Leitura do Dia e atualizações de cotação nos últimos 7 dias.">
+    <meta property="og:url" content="https://lectnex.com.br/status.html">
+    <meta property="og:image" content="https://lectnex.com.br/assets/brand/og-sobre.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Status do Lectnex: dados e site em tempo real">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Status do Lectnex: dados e site em tempo real">
+    <meta name="twitter:description" content="Transparência do Lectnex Terminal: verificação de hora em hora do site, horário de publicação da Leitura do Dia e atualizações de cotação nos últimos 7 dias.">
+    <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-sobre.jpg">
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261102d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261102d">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261102d">
+</head>
+<body data-page="status" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        <span class="term-label text-lect-teal font-bold">STATUS</span>
+        <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2 leading-tight">Status do Lectnex</h1>
+        <p class="text-slate-600 dark:text-slate-300 mt-3 max-w-3xl leading-relaxed">Um robô abre o <strong>lectnex.com.br</strong> de hora em hora, como um visitante faria, e confere se o site, os dados e a Leitura do Dia estão em dia. Tudo o que ele vê fica registrado aqui.</p>
+
+        <section id="st-hero" class="term-panel mt-8 p-5 sm:p-6 flex items-start gap-4 min-h-[96px]">
+            <span class="mt-1.5 w-3 h-3 rounded-full bg-slate-400 shrink-0"></span>
+            <div><strong class="font-display text-xl">Carregando…</strong></div>
+        </section>
+
+        <section class="mt-10">
+            <h2 class="font-display text-xl font-bold">Agora</h2>
+            <ul id="st-agora" class="term-panel mt-3 divide-y divide-slate-200 dark:divide-lect-borderDark min-h-[120px]"></ul>
+        </section>
+
+        <section class="mt-10">
+            <div class="flex flex-wrap items-end justify-between gap-2">
+                <h2 class="font-display text-xl font-bold">Disponibilidade · últimos 7 dias</h2>
+                <span class="font-mono text-[11px] text-slate-600 dark:text-slate-400 flex flex-wrap gap-3">
+                    <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 bg-emerald-500"></span>sem falhas</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 bg-amber-400"></span>falha curta</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 bg-red-500"></span>falha longa</span>
+                    <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 bg-slate-300 dark:bg-slate-700"></span>sem registro</span>
+                </span>
+            </div>
+            <div id="st-dispo" class="term-panel mt-3 p-4 sm:p-5 space-y-3"></div>
+        </section>
+
+        <section class="mt-10">
+            <h2 class="font-display text-xl font-bold">Rotina diária</h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Horário em que a Leitura do Dia foi publicada e quantas vezes as cotações das ações foram atualizadas (horário de Brasília).</p>
+            <div class="term-panel mt-3 overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead class="font-mono text-[11px] uppercase tracking-wider text-slate-600 dark:text-slate-400 text-left">
+                        <tr class="border-b border-slate-200 dark:border-lect-borderDark"><th class="px-4 py-2.5">Dia</th><th class="px-4 py-2.5">Pregão</th><th class="px-4 py-2.5">Leitura do Dia</th><th class="px-4 py-2.5">Atualizações de cotação</th></tr>
+                    </thead>
+                    <tbody id="st-dias" class="divide-y divide-slate-200 dark:divide-lect-borderDark font-mono"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <p id="st-nota" class="mt-8 text-xs text-slate-600 dark:text-slate-400 leading-relaxed"></p>
+    </main>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js?v=20261102d"></script>
+    <script>
+    (function () {
+        const tz = { timeZone: 'America/Sao_Paulo' };
+        const $ = id => document.getElementById(id);
+        const brt = d => new Date(d.toLocaleString('en-US', tz));
+        const hm = d => d.toLocaleTimeString('pt-BR', { ...tz, hour: '2-digit', minute: '2-digit' }).replace(':', 'h');
+        const diaCurto = iso => { const d = new Date(iso + 'T12:00:00-03:00'); return d.toLocaleDateString('pt-BR', { ...tz, weekday: 'short', day: '2-digit', month: '2-digit' }).replace('.', ''); };
+        const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        const ICON = { true: ['ph-check-circle', 'text-emerald-500'], false: ['ph-x-circle', 'text-red-500'], null: ['ph-minus-circle', 'text-slate-400'] };
+
+        function hero(cor, titulo, sub) {
+            $('st-hero').innerHTML = `<span class="mt-1.5 w-3 h-3 rounded-full ${cor} shrink-0"></span><div><strong class="font-display text-xl block">${titulo}</strong><span class="text-sm text-slate-600 dark:text-slate-400">${sub}</span></div>`;
+        }
+
+        fetch('data/status.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : Promise.reject()).then(st => {
+            const em = new Date(st.atualizado_em), idadeH = (Date.now() - em) / 36e5;
+            const agora = Object.entries(st.agora || {});
+            const falhas = agora.filter(([, v]) => v[0] === false);
+            const sub = `Última verificação ${brt(em).toDateString() === brt(new Date()).toDateString() ? 'hoje' : diaCurto(LX.iso(brt(em)))} às ${hm(em)} (Brasília)`;
+            if (idadeH > 3) hero('bg-amber-400', 'Monitor sem atualizar', `${sub}. As informações abaixo podem estar desatualizadas.`);
+            else if (!falhas.length) hero('bg-emerald-500 lx-pulse', 'Todos os sistemas operando', sub);
+            else hero('bg-red-500', falhas.length === 1 ? 'Instabilidade em 1 item' : `Instabilidade em ${falhas.length} itens`, sub);
+
+            $('st-agora').innerHTML = agora.map(([nome, [ok, det]]) => {
+                const [ic, cor] = ICON[ok];
+                return `<li class="px-4 py-3 flex items-start gap-3"><i class="ph-fill ${ic} ${cor} text-lg mt-0.5"></i><span class="flex-1"><strong class="font-semibold">${esc(nome)}</strong><span class="block text-xs text-slate-600 dark:text-slate-400 font-mono mt-0.5">${esc(det)}</span></span></li>`;
+            }).join('');
+
+            // 7 dias por item
+            const hoje = brt(new Date()), dias = [];
+            for (let i = 6; i >= 0; i--) { const d = new Date(hoje); d.setDate(d.getDate() - i); dias.push(LX.iso(d)); }
+            const porDia = {};
+            (st.checks || []).forEach(([t, f]) => { const d = LX.iso(brt(new Date(t))); (porDia[d] = porDia[d] || []).push(f); });
+            const linha = (nome, cel, pct) => `<div class="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3"><div class="flex justify-between items-baseline sm:w-52 sm:shrink-0"><span class="text-sm font-semibold">${nome}</span><span class="sm:hidden font-mono text-xs">${pct}</span></div><div class="grid grid-cols-7 gap-1 sm:gap-1.5 flex-1">${cel}</div><span class="hidden sm:block w-14 text-right font-mono text-xs">${pct}</span></div>`;
+            $('st-dispo').innerHTML = `<div class="flex flex-col sm:flex-row gap-1.5 sm:gap-3 font-mono text-[11px] text-slate-600 dark:text-slate-400"><span class="hidden sm:block sm:w-52 sm:shrink-0"></span><div class="grid grid-cols-7 gap-1 sm:gap-1.5 flex-1">${dias.map(d => `<span class="text-center">${diaCurto(d).split(',')[0]}</span>`).join('')}</div><span class="hidden sm:block w-14 text-right">7 dias</span></div>` +
+                agora.map(([nome]) => {
+                    let tot = 0, ruim = 0;
+                    const cel = dias.map(d => {
+                        const cs = porDia[d] || []; const n = cs.filter(f => f.includes(nome)).length;
+                        tot += cs.length; ruim += n;
+                        const cor = !cs.length ? 'bg-slate-300 dark:bg-slate-700' : !n ? 'bg-emerald-500' : n <= 2 ? 'bg-amber-400' : 'bg-red-500';
+                        const tip = !cs.length ? 'sem registro' : !n ? `${cs.length} verificações, sem falhas` : `${n} de ${cs.length} verificações com falha`;
+                        return `<span class="h-6 ${cor}" title="${diaCurto(d)}: ${tip}"></span>`;
+                    }).join('');
+                    const pct = tot ? (100 * (tot - ruim) / tot) : null;
+                    return linha(esc(nome), cel, pct == null ? '—' : pct.toFixed(pct === 100 ? 0 : 1).replace('.', ',') + '%');
+                }).join('');
+
+            // rotina diária (mais recente primeiro)
+            $('st-dias').innerHTML = (st.dias || []).slice().reverse().map(d => {
+                const dt = new Date(d.data + 'T12:00:00-03:00'), pregao = LX.isBusinessDay(dt);
+                const lei = d.leitura ? `${d.leitura.replace(':', 'h')}` : (d.data === LX.iso(hoje) ? 'aguardando' : '—');
+                return `<tr><td class="px-4 py-2.5 whitespace-nowrap">${diaCurto(d.data)}</td><td class="px-4 py-2.5">${pregao ? '<span class="text-emerald-600 dark:text-emerald-400">sim</span>' : '<span class="text-slate-500 dark:text-slate-400 whitespace-nowrap">sem pregão</span>'}</td><td class="px-4 py-2.5">${lei}</td><td class="px-4 py-2.5">${pregao ? d.cotacoes : '—'}</td></tr>`;
+            }).join('');
+
+            const ini = new Date(st.inicio);
+            $('st-nota').innerHTML = `Monitoramento iniciado em ${ini.toLocaleDateString('pt-BR', tz)}. Quando um item não se aplica no horário (cotações fora do pregão, por exemplo), a verificação conta como sem falha. Problema que não aparece aqui? Escreva para <a class="text-lect-teal hover:underline" href="mailto:contato@lectnex.com.br">contato@lectnex.com.br</a>.`;
+        }).catch(() => {
+            hero('bg-slate-400', 'Histórico ainda não disponível', 'O monitor começa a registrar na próxima verificação de hora em hora.');
+            $('st-agora').innerHTML = ''; 
+        });
+    })();
+    </script>
+</body>
+</html>

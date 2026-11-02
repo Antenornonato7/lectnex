@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=d20d1488") format("woff");
+  src: url("./Phosphor.woff?v=dd621fbc") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -229,6 +229,9 @@
 .ph.ph-magnifying-glass:before {
   content: "\e30c";
 }
+.ph.ph-minus-circle:before {
+  content: "\e32c";
+}
 .ph.ph-monitor:before {
   content: "\e32e";
 }
@@ -361,12 +364,15 @@
 .ph.ph-x:before {
   content: "\e4f6";
 }
+.ph.ph-x-circle:before {
+  content: "\e4f8";
+}
 .ph.ph-x-logo:before {
   content: "\e4bc";
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=d20d1488") format("woff");
+  src: url("./Phosphor-Bold.woff?v=dd621fbc") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -593,6 +599,9 @@
 .ph-bold.ph-magnifying-glass:before {
   content: "\e30c";
 }
+.ph-bold.ph-minus-circle:before {
+  content: "\e32c";
+}
 .ph-bold.ph-monitor:before {
   content: "\e32e";
 }
@@ -725,12 +734,15 @@
 .ph-bold.ph-x:before {
   content: "\e4f6";
 }
+.ph-bold.ph-x-circle:before {
+  content: "\e4f8";
+}
 .ph-bold.ph-x-logo:before {
   content: "\e4bc";
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=d20d1488") format("woff");
+  src: url("./Phosphor-Fill.woff?v=dd621fbc") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -957,6 +969,9 @@
 .ph-fill.ph-magnifying-glass:before {
   content: "\e30c";
 }
+.ph-fill.ph-minus-circle:before {
+  content: "\e32c";
+}
 .ph-fill.ph-monitor:before {
   content: "\e32e";
 }
@@ -1089,12 +1104,15 @@
 .ph-fill.ph-x:before {
   content: "\e4f6";
 }
+.ph-fill.ph-x-circle:before {
+  content: "\e4f8";
+}
 .ph-fill.ph-x-logo:before {
   content: "\e4bc";
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=d20d1488") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=dd621fbc") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1641,6 +1659,14 @@
   content: "\e30d";
   margin-left: -1em;
 }
+.ph-duotone.ph-minus-circle:before {
+  content: "\e32c";
+  opacity: 0.2;
+}
+.ph-duotone.ph-minus-circle:after {
+  content: "\e32d";
+  margin-left: -1em;
+}
 .ph-duotone.ph-monitor:before {
   content: "\e32e";
   opacity: 0.2;
@@ -1991,6 +2017,14 @@
 }
 .ph-duotone.ph-x:after {
   content: "\e4f7";
+  margin-left: -1em;
+}
+.ph-duotone.ph-x-circle:before {
+  content: "\e4f8";
+  opacity: 0.2;
+}
+.ph-duotone.ph-x-circle:after {
+  content: "\e4f9";
   margin-left: -1em;
 }
 .ph-duotone.ph-x-logo:before {

@@ -18,6 +18,7 @@ import json
 import os
 import re
 import ssl
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
@@ -163,6 +164,55 @@ def telegram(texto):
     return False
 
 
+STATUS = 'data/status.json'
+
+
+def historico():
+    """Por dia (Brasília): hora em que a Leitura foi publicada e quantas atualizações de cotação houve (via git)."""
+    def git(*a):
+        return subprocess.run(['git', *a], capture_output=True, text=True).stdout.strip().splitlines()
+
+    def brt(iso):
+        return dt.datetime.fromisoformat(iso).astimezone(BRT)
+
+    dias = {}
+    for linha in reversed(git('log', '--since=9 days ago', '--format=%H %cI', '--', 'data/leitura.json')):
+        h, t = linha.split(' ', 1)
+        try:
+            d = json.loads(subprocess.run(['git', 'show', f'{h}:data/leitura.json'], capture_output=True, text=True).stdout).get('data')
+        except Exception:
+            continue
+        if d and d not in dias.setdefault('_lei', {}):
+            dias['_lei'][d] = brt(t).strftime('%H:%M')
+    cot = {}
+    for t in git('log', '--since=9 days ago', '--format=%cI', '--', 'data/cotacoes.json'):
+        d = brt(t).date().isoformat()
+        cot[d] = cot.get(d, 0) + 1
+    lei = dias.get('_lei', {})
+    out = []
+    for i in range(7, -1, -1):
+        d = (AGORA.date() - dt.timedelta(days=i)).isoformat()
+        out.append({'data': d, 'leitura': lei.get(d), 'cotacoes': cot.get(d, 0)})
+    return out
+
+
+def salvar_status(res, falhas):
+    try:
+        st = json.load(open(STATUS, encoding='utf-8'))
+    except Exception:
+        st = {}
+    checks = [c for c in st.get('checks', []) if idade_h(c[0]) <= 24 * 7 + 1]
+    checks.append([AGORA.isoformat(timespec='minutes'), sorted(falhas)])
+    novo = {
+        'atualizado_em': AGORA.isoformat(timespec='minutes'),
+        'inicio': st.get('inicio') or AGORA.isoformat(timespec='minutes'),
+        'agora': {k: [ok, det] for k, (ok, det) in res.items()},
+        'checks': checks,
+        'dias': historico(),
+    }
+    json.dump(novo, open(STATUS, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+
+
 def main():
     if TESTE:
         ok = telegram('🩺 <b>Monitor Lectnex</b>\nTeste: os alertas do site vão chegar aqui, só para você.')
@@ -203,6 +253,8 @@ def main():
         if novas or lembrar:
             enviado = AGORA.isoformat(timespec='minutes')
 
+    if os.environ.get('SALVAR_STATUS') == '1':
+        salvar_status(res, falhas)
     os.makedirs(os.path.dirname(ESTADO), exist_ok=True)
     json.dump({'falhas': sorted(falhas), 'ultimo_alerta': enviado or (ultimo if falhas else None), 'em': AGORA.isoformat(timespec='minutes')},
               open(ESTADO, 'w', encoding='utf-8'), ensure_ascii=False)

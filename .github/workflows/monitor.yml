@@ -11,7 +11,7 @@ on:
         default: false
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: monitor
@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          sparse-checkout: coletor
+          fetch-depth: 0
       - uses: actions/cache/restore@v4
         with:
           path: .monitor
@@ -36,7 +36,19 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
           TESTE: ${{ inputs.teste && '1' || '' }}
+          SALVAR_STATUS: ${{ !inputs.teste && '1' || '' }}
         run: python3 coletor/monitor.py
+      - name: Publicar histórico na página Status
+        if: always() && !inputs.teste
+        run: |
+          [ -f data/status.json ] || exit 0
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com.br"
+          git add data/status.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Status do site $(TZ=America/Sao_Paulo date +'%d/%m %H:%M')"
+          for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep $((i*7)); done
+          exit 1
       - uses: actions/cache/save@v4
         if: always() && !inputs.teste
         with:

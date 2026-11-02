@@ -505,6 +505,7 @@
                 <a href="semana/" class="block hover:text-lect-tealLight">Agenda da semana</a>
                 <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
+                <a href="status.html" class="block hover:text-lect-tealLight">Status do site</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
                 <a href="https://www.instagram.com/lectnex.oficial/" target="_blank" rel="noopener" class="mt-2 flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-instagram-logo"></i>Instagram @lectnex.oficial</a>
                 <a href="https://www.tiktok.com/@lectnex" target="_blank" rel="noopener" class="flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-tiktok-logo"></i>TikTok @lectnex</a>
@@ -526,7 +527,7 @@
             <div class="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[11px] text-slate-500">
               <p class="max-w-4xl"><strong class="text-slate-300">Aviso legal:</strong> conteúdo exclusivamente educacional e informativo. Nada aqui constitui recomendação de compra, venda ou manutenção de valores mobiliários, nem relatório de análise nos termos da Resolução CVM nº 20. Operar derivativos envolve alavancagem e risco de perdas superiores ao capital. Rentabilidade passada ou simulada não garante resultado futuro. Confirme sempre dados e horários nas fontes oficiais.</p>
               <div class="shrink-0 flex flex-col items-start sm:items-end gap-1.5 font-mono">
-                <span id="lx-status" class="inline-flex items-start gap-1.5 text-slate-400" title="Horário da última atualização de cada dado (Brasília)"><span class="lx-dot mt-1 shrink-0 w-2 h-2 rounded-full bg-slate-500"></span><span>Verificando dados…</span></span>
+                <a href="status.html" id="lx-status" class="inline-flex items-start gap-1.5 text-slate-400 hover:text-lect-tealLight" title="Horário da última atualização de cada dado (Brasília) · ver página de status"><span class="lx-dot mt-1 shrink-0 w-2 h-2 rounded-full bg-slate-500"></span><span>Verificando dados…</span></a>
                 <span>&copy; ${new Date().getFullYear()} Lectnex</span>
               </div>
             </div>
