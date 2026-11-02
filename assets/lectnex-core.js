@@ -30,6 +30,7 @@
     LX.config.newsletter = 'lectnex';
     LX.config.telegram = 'lectnex';   // canal público t.me/lectnex
     LX.config.onesignal = 'c0be7d93-6afb-4bb0-bf56-6f9171302071';
+    LX.config.ga = '';   // Google Analytics 4 (ID G-XXXXXXX). Vazio = desligado. Só grava cookies depois do "Aceitar" (LGPD).
     LX.config.onesignalSafari = 'web.onesignal.auto.201c9c11-2835-4563-82b9-55a6f9094e87';         // App ID do OneSignal (notificações no celular); vazio = desligado
 
     /* ------------------------------------------------------------------ FORMATOS */
@@ -506,6 +507,7 @@
                 <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
                 <a href="status.html" class="block hover:text-lect-tealLight">Status do site</a>
+                <a href="privacidade.html" class="block hover:text-lect-tealLight">Privacidade e cookies</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
                 <a href="https://www.instagram.com/lectnex.oficial/" target="_blank" rel="noopener" class="mt-2 flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-instagram-logo"></i>Instagram @lectnex.oficial</a>
                 <a href="https://www.tiktok.com/@lectnex" target="_blank" rel="noopener" class="flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-tiktok-logo"></i>TikTok @lectnex</a>
@@ -872,6 +874,42 @@
         if (/iphone|ipad|ipod/i.test(navigator.userAgent)) { const ios = document.getElementById('lx-install-ios'); if (ios) ios.classList.remove('hidden'); }
     }
 
+    /* ------------------------------------------------------------------ GOOGLE ANALYTICS 4 + CONSENTIMENTO (LGPD) */
+    // Modo de consentimento do Google: começa NEGADO (sem cookies). Cookies de análise só depois do "Aceitar".
+    // Anúncios ficam sempre negados. A escolha fica em localStorage "lectnex-cookies" (sim/nao) e muda em privacidade.html.
+    const CK = 'lectnex-cookies';
+    const ckGet = () => { try { return localStorage.getItem(CK); } catch (_) { return null; } };
+    LX.cookies = function (sim) {
+        try { localStorage.setItem(CK, sim ? 'sim' : 'nao'); } catch (_) { }
+        if (window.gtag) gtag('consent', 'update', { analytics_storage: sim ? 'granted' : 'denied' });
+        const b = document.getElementById('lx-cookies'); if (b) b.remove();
+        document.dispatchEvent(new CustomEvent('lx:cookies', { detail: sim }));
+    };
+    LX.cookiesEscolha = ckGet;
+    function analytics() {
+        const id = LX.config.ga; if (!id || !/^G-[A-Z0-9]+$/.test(id)) return;
+        const esc = ckGet();
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { dataLayer.push(arguments); };
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: esc === 'sim' ? 'granted' : 'denied', wait_for_update: 500 });
+        gtag('js', new Date());
+        gtag('config', id, { page_title: document.title });
+        const load = () => { const sc = document.createElement('script'); sc.async = true; sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + id; document.head.appendChild(sc); };
+        (window.requestIdleCallback || (f => setTimeout(f, 1200)))(load);
+        if (!esc) banner();
+    }
+    function banner() {
+        if (document.getElementById('lx-cookies')) return;
+        const d = document.createElement('div');
+        d.id = 'lx-cookies';
+        d.setAttribute('role', 'dialog'); d.setAttribute('aria-label', 'Cookies de análise');
+        d.className = 'fixed z-[60] bottom-3 left-3 right-3 sm:left-auto sm:right-4 sm:bottom-4 sm:max-w-sm bg-white dark:bg-[#0B1826] border border-slate-300 dark:border-lect-borderDark shadow-2xl p-4 text-sm';
+        d.innerHTML = `<p class="text-slate-700 dark:text-slate-200 leading-relaxed"><i class="ph-bold ph-cookie text-lect-orange"></i> Usamos cookies do <strong>Google Analytics</strong> só para saber quais páginas e ferramentas são mais úteis. Nada de anúncios. <a href="privacidade.html" class="text-lect-teal underline">Saiba mais</a></p>
+            <div class="flex gap-2 mt-3"><button type="button" data-ck="0" class="flex-1 px-3 py-2 border border-slate-300 dark:border-lect-borderDark font-semibold hover:border-lect-teal">Recusar</button><button type="button" data-ck="1" class="flex-1 px-3 py-2 bg-lect-teal hover:bg-teal-700 text-white font-bold">Aceitar</button></div>`;
+        d.addEventListener('click', ev => { const b = ev.target.closest('[data-ck]'); if (b) LX.cookies(b.dataset.ck === '1'); });
+        document.body.appendChild(d);
+    }
+
     /* ------------------------------------------------------------------ ALERTAS NO CELULAR (OneSignal) */
     // Qualquer [data-lx-push] vira botão. As escolhas viram tags: surpresa, agenda (15 min antes), leitura.
     const PUSH_OPTS = [['surpresa', 'Surpresas do calendário', 'Quando um dado sai fora do consenso'], ['agenda', 'Dado forte em 15 min', 'Payroll, IPCA, Copom, CPI…'], ['leitura', 'Leitura do Dia', 'Todo dia por volta das 7h45']];
@@ -983,7 +1021,7 @@
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
         nextSlot(); rollBanner(); setInterval(rollBanner, 60000);
-        pwa(); pushButtons();
+        pwa(); pushButtons(); analytics();
         const hc = document.getElementById('lx-hc'); if (hc) hc.onclick = () => { const on = document.documentElement.classList.toggle('lx-hc'); try { localStorage.setItem('lectnex-hc', on ? '1' : '0'); } catch (_) { } };
         fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
         newsForms();

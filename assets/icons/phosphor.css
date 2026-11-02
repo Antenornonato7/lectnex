@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=dd621fbc") format("woff");
+  src: url("./Phosphor.woff?v=00631730") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -135,6 +135,9 @@
 }
 .ph.ph-coins:before {
   content: "\e78e";
+}
+.ph.ph-cookie:before {
+  content: "\e6ca";
 }
 .ph.ph-cube:before {
   content: "\e1da";
@@ -372,7 +375,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=dd621fbc") format("woff");
+  src: url("./Phosphor-Bold.woff?v=00631730") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -505,6 +508,9 @@
 }
 .ph-bold.ph-coins:before {
   content: "\e78e";
+}
+.ph-bold.ph-cookie:before {
+  content: "\e6ca";
 }
 .ph-bold.ph-cube:before {
   content: "\e1da";
@@ -742,7 +748,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=dd621fbc") format("woff");
+  src: url("./Phosphor-Fill.woff?v=00631730") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -875,6 +881,9 @@
 }
 .ph-fill.ph-coins:before {
   content: "\e78e";
+}
+.ph-fill.ph-cookie:before {
+  content: "\e6ca";
 }
 .ph-fill.ph-cube:before {
   content: "\e1da";
@@ -1112,7 +1121,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=dd621fbc") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=00631730") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1409,6 +1418,14 @@
 }
 .ph-duotone.ph-coins:after {
   content: "\e78f";
+  margin-left: -1em;
+}
+.ph-duotone.ph-cookie:before {
+  content: "\e6ca";
+  opacity: 0.2;
+}
+.ph-duotone.ph-cookie:after {
+  content: "\e6cb";
   margin-left: -1em;
 }
 .ph-duotone.ph-cube:before {
