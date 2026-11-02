@@ -61,7 +61,7 @@ jobs:
         run: |
           [ -f data/telegram.json ] || exit 0
           git config user.name "lectnex-bot"
-          git config user.email "bot@lectnex.com"
+          git config user.email "bot@lectnex.com.br"
           git add data/telegram.json
           git diff --cached --quiet && exit 0
           git commit -m "telegram: contagem de seguidores"
