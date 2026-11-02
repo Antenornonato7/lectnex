@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=c0ebe592") format("woff");
+  src: url("./Phosphor.woff?v=d20d1488") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -322,6 +322,9 @@
 .ph.ph-thermometer-simple:before {
   content: "\e5cc";
 }
+.ph.ph-tiktok-logo:before {
+  content: "\eaf2";
+}
 .ph.ph-timer:before {
   content: "\e492";
 }
@@ -349,9 +352,6 @@
 .ph.ph-users-three:before {
   content: "\e68e";
 }
-.ph.ph-video-camera:before {
-  content: "\e4da";
-}
 .ph.ph-warning:before {
   content: "\e4e0";
 }
@@ -361,9 +361,12 @@
 .ph.ph-x:before {
   content: "\e4f6";
 }
+.ph.ph-x-logo:before {
+  content: "\e4bc";
+}
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=c0ebe592") format("woff");
+  src: url("./Phosphor-Bold.woff?v=d20d1488") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -683,6 +686,9 @@
 .ph-bold.ph-thermometer-simple:before {
   content: "\e5cc";
 }
+.ph-bold.ph-tiktok-logo:before {
+  content: "\eaf2";
+}
 .ph-bold.ph-timer:before {
   content: "\e492";
 }
@@ -710,9 +716,6 @@
 .ph-bold.ph-users-three:before {
   content: "\e68e";
 }
-.ph-bold.ph-video-camera:before {
-  content: "\e4da";
-}
 .ph-bold.ph-warning:before {
   content: "\e4e0";
 }
@@ -722,9 +725,12 @@
 .ph-bold.ph-x:before {
   content: "\e4f6";
 }
+.ph-bold.ph-x-logo:before {
+  content: "\e4bc";
+}
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=c0ebe592") format("woff");
+  src: url("./Phosphor-Fill.woff?v=d20d1488") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1044,6 +1050,9 @@
 .ph-fill.ph-thermometer-simple:before {
   content: "\e5cc";
 }
+.ph-fill.ph-tiktok-logo:before {
+  content: "\eaf2";
+}
 .ph-fill.ph-timer:before {
   content: "\e492";
 }
@@ -1071,9 +1080,6 @@
 .ph-fill.ph-users-three:before {
   content: "\e68e";
 }
-.ph-fill.ph-video-camera:before {
-  content: "\e4da";
-}
 .ph-fill.ph-warning:before {
   content: "\e4e0";
 }
@@ -1083,9 +1089,12 @@
 .ph-fill.ph-x:before {
   content: "\e4f6";
 }
+.ph-fill.ph-x-logo:before {
+  content: "\e4bc";
+}
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=c0ebe592") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=d20d1488") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1880,6 +1889,14 @@
   content: "\e5cd";
   margin-left: -1em;
 }
+.ph-duotone.ph-tiktok-logo:before {
+  content: "\eaf2";
+  opacity: 0.2;
+}
+.ph-duotone.ph-tiktok-logo:after {
+  content: "\eaf3";
+  margin-left: -1em;
+}
 .ph-duotone.ph-timer:before {
   content: "\e492";
   opacity: 0.2;
@@ -1952,14 +1969,6 @@
   content: "\e68f";
   margin-left: -1em;
 }
-.ph-duotone.ph-video-camera:before {
-  content: "\e4da";
-  opacity: 0.2;
-}
-.ph-duotone.ph-video-camera:after {
-  content: "\e4db";
-  margin-left: -1em;
-}
 .ph-duotone.ph-warning:before {
   content: "\e4e0";
   opacity: 0.2;
@@ -1982,5 +1991,13 @@
 }
 .ph-duotone.ph-x:after {
   content: "\e4f7";
+  margin-left: -1em;
+}
+.ph-duotone.ph-x-logo:before {
+  content: "\e4bc";
+  opacity: 0.2;
+}
+.ph-duotone.ph-x-logo:after {
+  content: "\e4bd";
   margin-left: -1em;
 }
