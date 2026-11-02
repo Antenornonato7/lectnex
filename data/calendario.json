@@ -1,23 +1,6 @@
 {
-  "atualizado_em": "2026-11-01T07:50:00-03:00",
+  "atualizado_em": "2026-11-02T07:50:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-01",
-      "hora": "22h45",
-      "pais": "CN",
-      "evento": "PMI industrial RatingDog/S&P (out)",
-      "importancia": 2,
-      "anterior": "52,1",
-      "consenso": "51,6",
-      "resultado": null,
-      "impacto": {
-        "win": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Sai na noite de domingo; segunda leitura da indústria chinesa após o PMI oficial fraco (49,3).",
-      "tipo": "pmi-china",
-      "surpresa": null
-    },
     {
       "data": "2026-11-02",
       "hora": null,
@@ -45,13 +28,13 @@
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Primeiro dado relevante da semana; B3 fechada. EUA já em horário padrão.",
+      "nota": "Primeiro dado relevante da semana, com a B3 fechada; o efeito aparece na reabertura de terça.",
       "tipo": "ism-industrial",
       "surpresa": null
     },
     {
       "data": "2026-11-03",
-      "hora": "08h30",
+      "hora": "08h25",
       "pais": "BR",
       "evento": "Boletim Focus (BCB)",
       "importancia": 1,
@@ -61,7 +44,7 @@
       "impacto": {
         "di": "volatil"
       },
-      "nota": "Primeiras projeções após a semana de estresse fiscal; olhar Selic, IPCA e câmbio.",
+      "nota": "Sai na terça por causa de Finados; olhar Selic, IPCA e câmbio às vésperas do Copom.",
       "tipo": "focus",
       "surpresa": null
     },
@@ -79,6 +62,37 @@
       },
       "nota": "Indústria em contração profunda.",
       "tipo": "pmi-brasil",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-03",
+      "hora": "12h",
+      "pais": "US",
+      "evento": "JOLTS — vagas em aberto (set)",
+      "importancia": 2,
+      "anterior": "7,1 milhões",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Termômetro do mercado de trabalho na semana do payroll.",
+      "tipo": "jolts",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-03",
+      "hora": "22h45",
+      "pais": "CN",
+      "evento": "PMI de serviços RatingDog/S&P (out)",
+      "importancia": 1,
+      "anterior": "51,6",
+      "consenso": "51,5",
+      "resultado": null,
+      "impacto": {
+        "win": "volatil"
+      },
+      "tipo": "pmi-china-servicos",
       "surpresa": null
     },
     {
@@ -113,22 +127,6 @@
       },
       "nota": "Câmara, 35 cadeiras do Senado e 36 governos estaduais; resultados entram pela noite.",
       "tipo": "eleicoes-eua",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-03",
-      "hora": "12h",
-      "pais": "US",
-      "evento": "JOLTS — vagas em aberto (set)",
-      "importancia": 2,
-      "anterior": "7,1 milhões",
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Termômetro do mercado de trabalho na semana do payroll.",
-      "tipo": "jolts",
       "surpresa": null
     },
     {
@@ -204,7 +202,7 @@
       "evento": "CAGED — saldo de empregos formais (set)",
       "importancia": 2,
       "anterior": "165,8 mil",
-      "consenso": "180 mil",
+      "consenso": "150 mil",
       "resultado": null,
       "impacto": {
         "di": "volatil"
@@ -220,30 +218,15 @@
       "evento": "Decisão do Copom (282ª reunião)",
       "importancia": 3,
       "anterior": "13,75%",
-      "consenso": "13,75%",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "win": "volatil",
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Comunicado após o fechamento; reação aparece na quinta. Tom sobre o fiscal é chave.",
+      "nota": "Comunicado após o fechamento; reação aparece na quinta. Mercado dividido entre manter 13,75% e cortar para 13,50%; tom sobre o fiscal é chave.",
       "tipo": "copom",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-04",
-      "hora": "22h45",
-      "pais": "CN",
-      "evento": "PMI de serviços RatingDog/S&P (out)",
-      "importancia": 1,
-      "anterior": "51,6",
-      "consenso": "51,5",
-      "resultado": null,
-      "impacto": {
-        "win": "volatil"
-      },
-      "tipo": "pmi-china-servicos",
       "surpresa": null
     },
     {
@@ -253,7 +236,7 @@
       "evento": "Produção industrial (set, m/m)",
       "importancia": 2,
       "anterior": "−1,2%",
-      "consenso": "1,6%",
+      "consenso": "−0,1%",
       "resultado": null,
       "impacto": {
         "win": "volatil",
@@ -365,7 +348,7 @@
       "evento": "Balança comercial (out)",
       "importancia": 1,
       "anterior": "US$ 7,74 bi",
-      "consenso": "US$ 7,6 bi",
+      "consenso": "US$ 9,4 bi",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
