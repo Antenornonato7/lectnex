@@ -1,9 +1,9 @@
 # Resumo da semana no Telegram e na newsletter, todo domingo.
 name: Resumo semanal
+run-name: "Resumo semanal ${{ (github.event_name == 'schedule' || inputs.enviar) && 'enviar' || 'rascunho' }}"
 
 on:
-  schedule:
-    - cron: "17 13 * * 0"   # domingo 10h17 em Brasília
+  # horário: definido em coletor/relogio.py (workflow "Relógio")
   workflow_dispatch:
     inputs:
       enviar:

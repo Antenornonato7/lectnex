@@ -1,8 +1,8 @@
 name: Monitor do site
+run-name: "${{ inputs.teste && 'Teste do monitor' || 'Monitor do site' }}"
 
 on:
-  schedule:
-    - cron: "41 * * * *"   # de hora em hora, no minuto 41
+  # horário: definido em coletor/relogio.py (workflow "Relógio")
   workflow_dispatch:
     inputs:
       teste:

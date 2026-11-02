@@ -1,13 +1,13 @@
 # Publica a Leitura do Dia (novo dia) e as surpresas do calendário no canal do Telegram.
 # Precisa do segredo LECTNEX_ALERTAS_BOT ou TELEGRAM_BOT_TOKEN (canal padrão: @lectnex); sem ele, não faz nada.
 name: Telegram
+run-name: "Telegram ${{ github.event_name == 'schedule' && 'contar' || inputs.acao || github.event_name }}"
 
 on:
   push:
     branches: [main]
     paths: ['data/leitura.json', 'data/calendario.json']
-  schedule:
-    - cron: "17 11 * * *"   # 08h17 em Brasília: atualiza a contagem de seguidores
+  # horário: definido em coletor/relogio.py (workflow "Relógio")
   workflow_dispatch:
     inputs:
       teste:

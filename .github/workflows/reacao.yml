@@ -2,8 +2,7 @@
 name: Reação aos dados
 
 on:
-  schedule:
-    - cron: "41 15,22 * * 1-5"   # 12h41 e 19h41 em Brasília
+  # horário: definido em coletor/relogio.py (workflow "Relógio")
   workflow_dispatch:
     inputs:
       teste:

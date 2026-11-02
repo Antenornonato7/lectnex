@@ -3,8 +3,7 @@
 name: Fechamento
 
 on:
-  schedule:
-    - cron: "5 22 * * 1-5"   # 19h05 em Brasília
+  # horário: definido em coletor/relogio.py (workflow "Relógio")
   workflow_dispatch:
     inputs:
       forcar:

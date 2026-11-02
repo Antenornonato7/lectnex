@@ -3,8 +3,7 @@
 name: Coletor CVM
 
 on:
-  schedule:
-    - cron: "17 10 * * 2-6"
+  # horário: definido em coletor/relogio.py (workflow "Relógio")
   workflow_dispatch: {}
 
 permissions:

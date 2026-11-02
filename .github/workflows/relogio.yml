@@ -1,0 +1,34 @@
+# Agendador único do site: decide pelo horário de Brasília o que está devido e dispara (coletor/relogio.py).
+# Pode ser chamado a mais sem problema: nada roda duas vezes no mesmo horário.
+name: Relógio
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [relogio]
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: relogio
+  cancel-in-progress: false
+
+jobs:
+  relogio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            coletor
+            data/calendario.json
+          sparse-checkout-cone-mode: false
+      - name: Disparar o que está devido
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 coletor/relogio.py

@@ -1,8 +1,8 @@
 name: Resumo do dono
+run-name: "${{ inputs.teste && 'Teste do resumo' || 'Resumo do dia' }}"
 
 on:
-  schedule:
-    - cron: "25 22 * * *"   # 19h25 em Brasília, depois do fechamento (19h05)
+  # horário: definido em coletor/relogio.py (workflow "Relógio")
   workflow_dispatch:
     inputs:
       teste:

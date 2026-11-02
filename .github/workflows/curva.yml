@@ -2,8 +2,7 @@
 name: Curva de juros
 
 on:
-  schedule:
-    - cron: "23 13,16,19,21 * * 1-5"   # 10h23, 13h23, 16h23 e 18h23 em Brasília
+  # horário: definido em coletor/relogio.py (workflow "Relógio")
   workflow_dispatch: {}
 
 permissions:
