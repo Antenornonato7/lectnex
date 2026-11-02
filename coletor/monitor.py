@@ -2,7 +2,7 @@
 
 Checagens:
 - Site: HTTPS válido (cadeado), página inicial respondendo e com a marca.
-- Redirecionamentos: endereço antigo (github.io) e www levam a lectnex.com.br.
+- Redirecionamentos: endereço antigo (github.io) e www levam a lectnex.com.br; http leva a https.
 - Arquivos do site: CSS e JS principais carregam.
 - Dados: cotações frescas no pregão, calendário do dia, Leitura do Dia publicada, curva de juros recente.
 
@@ -77,6 +77,13 @@ def checar():
             r[nome] = (host == 'lectnex.com.br', f'termina em {host}')
         except Exception as ex:
             r[nome] = (False, erro_legivel(ex))
+
+    try:
+        _, final, _ = get('http://lectnex.com.br/')
+        segura = final.startswith('https://')
+        r['http leva para https'] = (segura, 'ok' if segura else 'falta marcar "Enforce HTTPS" em Settings → Pages')
+    except Exception as ex:
+        r['http leva para https'] = (False, erro_legivel(ex))
 
     if html:
         faltando = []
