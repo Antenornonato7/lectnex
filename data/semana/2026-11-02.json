@@ -22,7 +22,7 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Primeiro dado relevante da semana; B3 fechada. EUA já em horário padrão.",
+   "nota": "Primeiro dado relevante da semana, com a B3 fechada; o efeito aparece na reabertura de terça.",
    "tipo": "ism-industrial"
   },
   {
@@ -51,14 +51,14 @@
   },
   {
    "data": "2026-11-03",
-   "hora": "08h30",
+   "hora": "08h25",
    "pais": "BR",
    "evento": "Boletim Focus (BCB)",
    "importancia": 1,
    "impacto": {
     "di": "volatil"
    },
-   "nota": "Primeiras projeções após a semana de estresse fiscal; olhar Selic, IPCA e câmbio.",
+   "nota": "Sai na terça por causa de Finados; olhar Selic, IPCA e câmbio às vésperas do Copom.",
    "tipo": "focus"
   },
   {
@@ -87,6 +87,19 @@
    "nota": "Termômetro do mercado de trabalho na semana do payroll.",
    "anterior": "7,1 milhões",
    "tipo": "jolts"
+  },
+  {
+   "data": "2026-11-03",
+   "hora": "22h45",
+   "pais": "CN",
+   "evento": "PMI de serviços RatingDog/S&P (out)",
+   "importancia": 1,
+   "anterior": "51,6",
+   "consenso": "51,5",
+   "impacto": {
+    "win": "volatil"
+   },
+   "tipo": "pmi-china-servicos"
   },
   {
    "data": "2026-11-04",
@@ -151,7 +164,7 @@
    "evento": "CAGED — saldo de empregos formais (set)",
    "importancia": 2,
    "anterior": "165,8 mil",
-   "consenso": "180 mil",
+   "consenso": "150 mil",
    "impacto": {
     "di": "volatil"
    },
@@ -170,22 +183,9 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Comunicado após o fechamento; reação aparece na quinta. Tom sobre o fiscal é chave.",
+   "nota": "Comunicado após o fechamento; reação aparece na quinta. Mercado dividido entre manter 13,75% e cortar para 13,50%; tom sobre o fiscal é chave.",
    "consenso": "13,75%",
    "tipo": "copom"
-  },
-  {
-   "data": "2026-11-04",
-   "hora": "22h45",
-   "pais": "CN",
-   "evento": "PMI de serviços RatingDog/S&P (out)",
-   "importancia": 1,
-   "anterior": "51,6",
-   "consenso": "51,5",
-   "impacto": {
-    "win": "volatil"
-   },
-   "tipo": "pmi-china-servicos"
   },
   {
    "data": "2026-11-05",
@@ -208,7 +208,7 @@
    "evento": "Produção industrial (set, m/m)",
    "importancia": 2,
    "anterior": "−1,2%",
-   "consenso": "1,6%",
+   "consenso": "−0,1%",
    "impacto": {
     "win": "volatil",
     "di": "volatil"
@@ -292,7 +292,7 @@
    "evento": "Balança comercial (out)",
    "importancia": 1,
    "anterior": "US$ 7,74 bi",
-   "consenso": "US$ 7,6 bi",
+   "consenso": "US$ 9,4 bi",
    "impacto": {
     "wdo": "volatil"
    },
