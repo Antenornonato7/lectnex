@@ -30,7 +30,7 @@
     LX.config.newsletter = 'lectnex';
     LX.config.telegram = 'lectnex';   // canal público t.me/lectnex
     LX.config.onesignal = 'c0be7d93-6afb-4bb0-bf56-6f9171302071';
-    LX.config.ga = '';   // Google Analytics 4 (ID G-XXXXXXX). Vazio = desligado. Só grava cookies depois do "Aceitar" (LGPD).
+    LX.config.ga = 'G-5D8GS46BN1';   // Google Analytics 4 (ID G-XXXXXXX). Vazio = desligado. Só grava cookies depois do "Aceitar" (LGPD).
     LX.config.onesignalSafari = 'web.onesignal.auto.201c9c11-2835-4563-82b9-55a6f9094e87';         // App ID do OneSignal (notificações no celular); vazio = desligado
 
     /* ------------------------------------------------------------------ FORMATOS */
