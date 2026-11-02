@@ -1,0 +1,47 @@
+name: Teste do site
+
+on:
+  push:
+    branches: [main]
+    paths: ['*.html', 'assets/**', 'semana/**', 'leitura/**', 'tests/**', 'manifest.webmanifest', 'sw.js']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: testes-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  navegador:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Instalar Chromium
+        run: |
+          npm init -y >/dev/null
+          npm install --no-save --no-audit --no-fund playwright@1.48.2
+          npx playwright install --with-deps chromium
+      - name: Abrir todas as páginas
+        run: |
+          python3 -m http.server 8766 >/dev/null 2>&1 &
+          sleep 1
+          node tests/smoke.cjs http://localhost:8766
+      - name: Avisar no Telegram se falhou
+        if: failure() && github.event_name == 'push'
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          LINK: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          MSG: ${{ github.event.head_commit.message }}
+        run: |
+          [ -n "$TOKEN" ] && [ -n "$CHAT" ] || exit 0
+          case "$CHAT" in @*) exit 0;; esac
+          TXT=$(printf '🧪 Teste do site falhou depois da mudança:\n%s\n\nDetalhes: %s' "$(printf '%s' "$MSG" | head -1)" "$LINK")
+          curl -sS -o /dev/null -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" --data-urlencode "chat_id=$CHAT" --data-urlencode "text=$TXT" --data "disable_web_page_preview=true"
