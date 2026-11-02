@@ -1,0 +1,144 @@
+{
+ "tipo": "sem-pregao",
+ "data": "2026-11-02",
+ "gerado_em": "2026-11-02T07:50:00-03:00",
+ "titulo": "Petróleo recua com diálogo sobre Ormuz; B3 reabre na terça com Copom",
+ "resumo": [
+  "Finados mantém a B3 fechada nesta segunda (2/11); o próximo pregão é na terça (3/11), que absorve quatro dias de noticiário de uma vez.",
+  "O ponto de partida segue o de sexta: Ibovespa em 167.921 pontos (−0,75%) e dólar à vista a R$ 5,444 (+1,05%), depois de uma semana de forte estresse fiscal.",
+  "A principal novidade é o petróleo: o Brent cai cerca de 3%, para perto de US$ 110, após sinais de busca de saída diplomática entre EUA e Irã e de conversas mediadas pelo Catar sobre a reabertura de Ormuz — alívio que, se durar, tira pressão de dólar e DI.",
+  "Lá fora, os futuros americanos recuperam parte do tombo de sexta (S&P 500 −1,8%, pior dia desde junho), e o juro da Treasury de 10 anos recua para perto de 4,93%.",
+  "A terça junta Focus, vencimento do WDO e eleições nos EUA; na quarta vem o Copom, com o mercado dividido entre manter a Selic em 13,75% ou cortar para 13,50%."
+ ],
+ "destaques": [
+  {
+   "hora": "ter 8h25",
+   "evento": "Boletim Focus (BCB)",
+   "por_que": "Sai na terça por causa do feriado; primeiras projeções depois da semana de estresse, às vésperas do Copom."
+  },
+  {
+   "hora": "ter 10h",
+   "evento": "PMI industrial do Brasil (out)",
+   "por_que": "Indústria em contração pesa nas cíclicas do WIN."
+  },
+  {
+   "hora": "ter",
+   "evento": "Vencimento do WDO e do DI de novembro",
+   "por_que": "Rolagem e formação da Ptax podem ampliar a volatilidade do mini dólar na reabertura."
+  },
+  {
+   "hora": "ter noite",
+   "evento": "Eleições de meio de mandato nos EUA",
+   "por_que": "Composição do Congresso americano mexe com Treasuries, DXY e apetite a risco; resultados entram pela noite."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 fut.",
+   "variacao": "+0,4%"
+  },
+  {
+   "ativo": "Nasdaq-100 fut.",
+   "variacao": "+0,8%"
+  },
+  {
+   "ativo": "Petróleo Brent",
+   "variacao": "−2,8%"
+  },
+  {
+   "ativo": "Treasury 10 anos",
+   "variacao": "−0,06 p.p. (4,93%)"
+  },
+  {
+   "ativo": "Ibovespa (sex)",
+   "variacao": "−0,75%"
+  },
+  {
+   "ativo": "Dólar à vista (sex)",
+   "variacao": "+1,05%"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Petróleo cai quase 3% após sinal dos EUA de busca de solução diplomática com o Irã",
+   "fonte": "Estadão Conteúdo (via O Povo)",
+   "hora": "07h35",
+   "url": "https://www.opovo.com.br/noticias/economia/2026/11/02/petroleo-cede-apos-sinal-dos-eua-de-busca-de-solucao-diplomatica-com-ira.html",
+   "por_que": "O Brent para janeiro recua 2,8%, a US$ 110,26, após Rubio dizer que Trump prefere resolver a guerra pela diplomacia; petróleo menos caro alivia a inflação global, o dólar e os juros futuros.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa",
+    "di": "baixa"
+   }
+  },
+  {
+   "titulo": "Irã diz negociar no Catar proposta que reabriria Ormuz em dois dias, sem conversa direta com os EUA",
+   "fonte": "Associated Press",
+   "hora": "02h29",
+   "url": "https://www.clickondetroit.com/business/2026/11/02/asian-shares-mostly-advance-but-tech-stocks-remain-volatile-while-oil-sinks-33/",
+   "por_que": "Segundo o chanceler iraniano, a proposta depende de os EUA atenderem a condições de Teerã; é o principal fator para o petróleo e o risco global na reabertura de terça, mas ainda sem acordo.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa",
+    "di": "baixa"
+   }
+  },
+  {
+   "titulo": "Futuros de Nova York sobem após o pior dia de Wall Street desde junho",
+   "fonte": "Yahoo Finance",
+   "hora": "07h00",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html",
+   "por_que": "Na sexta, S&P 500 caiu 1,82% e Nasdaq 2,86% com a venda em tecnologia (Intel −28%, Alphabet −13%); hoje os futuros sobem e o juro de 10 anos recua, o que melhora o humor externo para a terça.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa"
+   }
+  },
+  {
+   "titulo": "Atividade industrial da China volta à contração em outubro",
+   "fonte": "Associated Press",
+   "hora": "02h29",
+   "url": "https://www.clickondetroit.com/business/2026/11/02/asian-shares-mostly-advance-but-tech-stocks-remain-volatile-while-oil-sinks-33/",
+   "por_que": "China mais fraca pesa sobre minério e metálicas, com efeito no WIN; mesmo assim, Xangai subiu 1,2% com a expectativa de medidas de apoio ao mercado de capitais citadas pela imprensa chinesa.",
+   "impacto": {
+    "win": "baixa"
+   }
+  },
+  {
+   "titulo": "Copom decide a Selic na quarta com mercado dividido entre pausa e corte",
+   "fonte": "InfoMoney",
+   "hora": "dom 17h00",
+   "url": "https://www.infomoney.com.br/mercados/calendario-economico-da-semana-copom-trabalho-e-eleicoes-nos-eua-sao-destaques/",
+   "por_que": "Com a Selic em 13,75%, parte do mercado vê interrupção do ciclo e parte projeta corte para 13,50%; a decisão sai às 18h30 de quarta e o tom sobre o fiscal deve mexer forte nos vértices do DI.",
+   "impacto": {
+    "di": "neutro"
+   }
+  }
+ ],
+ "proximo_pregao": {
+  "data": "2026-11-03",
+  "o_que_esperar": "A abertura de terça deve refletir o alívio do petróleo e a recuperação dos futuros americanos, contra o pano de fundo de fiscal ainda sem âncora no Brasil. No mesmo dia há Focus, vencimento do WDO e eleições nos EUA, com Copom na quarta — a volatilidade tende a seguir alta."
+ },
+ "fontes": [
+  {
+   "titulo": "Estadão Conteúdo (O Povo) — Petróleo cede após sinal dos EUA de busca de solução diplomática com Irã",
+   "url": "https://www.opovo.com.br/noticias/economia/2026/11/02/petroleo-cede-apos-sinal-dos-eua-de-busca-de-solucao-diplomatica-com-ira.html"
+  },
+  {
+   "titulo": "AP — Asian shares mostly advance but tech stocks remain volatile, while oil sinks 3.3%",
+   "url": "https://www.clickondetroit.com/business/2026/11/02/asian-shares-mostly-advance-but-tech-stocks-remain-volatile-while-oil-sinks-33/"
+  },
+  {
+   "titulo": "Yahoo Finance — Dow, S&P 500, Nasdaq futures recover from bruising sell-off ahead of busy week",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-2-dow-sp-500-nasdaq-091835095.html"
+  },
+  {
+   "titulo": "InfoMoney — Calendário econômico da semana: Copom, trabalho e eleições nos EUA são destaques",
+   "url": "https://www.infomoney.com.br/mercados/calendario-economico-da-semana-copom-trabalho-e-eleicoes-nos-eua-sao-destaques/"
+  },
+  {
+   "titulo": "Times Brasil — Copom pode cortar Selic e payroll testa apostas sobre Fed; veja a agenda da semana",
+   "url": "https://timesbrasil.com.br/brasil/copom-pode-cortar-selic-e-payroll-testa-apostas-sobre-fed-veja-a-agenda-da-semana/"
+  }
+ ]
+}
