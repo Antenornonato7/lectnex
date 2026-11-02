@@ -101,7 +101,13 @@ def checar():
         r['Arquivos do site (CSS/JS)'] = (not faltando, 'ok' if not faltando else 'falhou: ' + ', '.join(faltando))
 
     def dados(arq):
-        _, _, b = get(SITE + 'data/' + arq)
+        # Se o certificado falhar, lê pelo http para separar "problema de cadeado" de "dado atrasado".
+        try:
+            _, _, b = get(SITE + 'data/' + arq)
+        except urllib.error.URLError as ex:
+            if not isinstance(getattr(ex, 'reason', None), ssl.SSLError):
+                raise
+            _, _, b = get(SITE.replace('https://', 'http://') + 'data/' + arq)
         return json.loads(b)
 
     hoje = AGORA.date().isoformat()
