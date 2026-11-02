@@ -55,6 +55,11 @@ def pagina(d, datas):
         <h3 class="font-semibold leading-snug mt-1"><a href="{e(n.get("url"))}" target="_blank" rel="noopener nofollow" class="hover:text-lect-teal">{e(n.get("titulo"))}</a></h3>
         <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">{e(n.get("por_que"))}</p>
         <div class="mt-2 flex gap-1 font-mono text-[10px]">{"".join(f'<span class="px-1 border">{k.upper()} {SETA.get(v, "")}</span>' for k, v in (n.get("impacto") or {}).items() if v in SETA)}</div></article>''' for n in d.get('noticias', []))
+    def cartoes(lista):
+        return ''.join(f'''<article class="term-panel p-4"><span class="font-mono text-[10px] text-slate-500">{e(n.get("fonte"))}{" · " + e(n.get("hora")) if n.get("hora") else ""}</span>
+        <h3 class="font-semibold leading-snug mt-1"><a href="{e(n.get("url"))}" target="_blank" rel="noopener nofollow" class="hover:text-lect-teal">{e(n.get("titulo"))}</a></h3>
+        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1">{e(n.get("por_que"))}</p></article>''' for n in lista if n.get('titulo'))
+    upd = ''.join(f'''<section><h2 class="font-display font-bold text-lg mb-1">Atualização das {e(u.get("hora"))}</h2>{f'<p class="text-sm text-slate-600 dark:text-slate-300 mb-3">{e(u.get("resumo"))}</p>' if u.get("resumo") else ''}<div class="grid grid-cols-1 md:grid-cols-2 gap-3">{cartoes(u.get("noticias") or [])}</div></section>''' for u in reversed(d.get('atualizacoes') or []) if u.get('noticias'))
     fontes = ' · '.join(f'<a href="{e(f.get("url"))}" target="_blank" rel="noopener nofollow" class="underline decoration-dotted hover:text-lect-teal">{e(f.get("titulo") or f.get("url"))}</a>' for f in d.get('fontes', []))
     i = datas.index(d['data']); ant = datas[i - 1] if i > 0 else None; prox = datas[i + 1] if i + 1 < len(datas) else None
     nav = f'''<nav class="flex justify-between gap-3 font-mono text-xs">{f'<a href="leitura/{ant}.html" class="hover:text-lect-teal">← {br(dt.date.fromisoformat(ant))}</a>' if ant else '<span></span>'}<a href="leitura/" class="hover:text-lect-teal">todas as edições</a>{f'<a href="leitura/{prox}.html" class="hover:text-lect-teal">{br(dt.date.fromisoformat(prox))} →</a>' if prox else '<span></span>'}</nav>'''
@@ -75,6 +80,7 @@ def pagina(d, datas):
                 {f'<section class="term-panel p-4"><h2 class="term-label font-bold mb-2">Agenda</h2><ul class="space-y-2 text-sm">{agenda}</ul></section>' if agenda else ''}
                 {f'<section class="term-panel p-4"><h2 class="term-label font-bold mb-2">Exterior e mercado</h2><ul class="space-y-1.5">{ext}</ul></section>' if ext else ''}
             </div>
+            {upd}
             {f'<section><h2 class="font-display font-bold text-lg mb-3">Notícias que importaram</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-3">{news}</div></section>' if news else ''}
             <p class="text-[11px] text-slate-500">Fontes: {fontes}</p>
             <div class="hidden" data-lx-news="chamada" data-titulo="Receba a Leitura do Dia todo dia às 7h40."></div>

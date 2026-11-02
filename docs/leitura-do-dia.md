@@ -133,8 +133,27 @@ FOMC e falas do Fed, ISM, PIB; China: PMIs e dados de atividade; Europa: BCE e i
 ## Rodadas de resultado (dias úteis)
 
 Além da edição das 7h40, a tarefa "Resultados do calendário" roda às 12h40 e às 16h40 (Brasília) nos dias úteis.
-Ela **só** mexe em `data/calendario.json`: preenche `resultado` e `surpresa` dos eventos de hoje que já saíram (número oficial
-da fonte primária ou de veículo confiável) e publica com o commit `calendario: AAAA-MM-DD HHhMM`. Não altera mais nada.
+Ela faz duas coisas, nesta ordem:
+
+1. **Calendário** — em `data/calendario.json`, preenche `resultado` e `surpresa` dos eventos de hoje que já saíram (número oficial
+   da fonte primária ou de veículo confiável) e publica com o commit `calendario: AAAA-MM-DD HHhMM`.
+2. **Atualização de notícias** — em `data/leitura.json` (só se a `data` for de hoje), acrescenta um item ao fim da lista
+   `atualizacoes` e publica com o commit `leitura: atualização AAAA-MM-DD HHhMM`:
+
+   ```json
+   "atualizacoes": [
+     { "hora": "12h40", "resumo": "Opcional: 1 frase sobre o que mudou desde a manhã.",
+       "noticias": [ { "titulo": "...", "fonte": "...", "hora": "11h50", "url": "https://...", "por_que": "...", "impacto": { "win": "alta" } } ] }
+   ]
+   ```
+
+   - De 1 a 4 notícias **novas** (publicadas depois da edição da manhã ou da atualização anterior), no mesmo formato e com as mesmas
+     regras de fontes de `noticias`. Não repita notícia que já está na edição da manhã ou numa atualização anterior.
+   - `resumo` só quando algo realmente mudou o cenário (ex.: dado com surpresa, decisão, fala relevante); senão omita.
+   - **Não mexa em mais nada** da Leitura (título, resumo, termômetro, destaques, notícias da manhã): o texto da manhã fica como
+     registro do que foi dito antes da abertura. Sem notícia nova relevante, não publique atualização.
+   - Essa mudança atualiza só o site e o arquivo: e-mail e Telegram saem uma vez por dia, na edição da manhã.
+   - Valide antes de publicar: `python3 -c "import json;d=json.load(open('data/leitura.json'));u=d.get('atualizacoes',[]);assert all(x.get('hora') and 1<=len(x.get('noticias',[]))<=4 for x in u)"`.
 - `tipo`: identificador fixo do indicador, igual em todas as edições (alimenta a "reação histórica"). Use estes quando couber:
   `payroll`, `desemprego-eua`, `salario-eua`, `cpi-eua`, `pce-eua`, `pib-eua`, `ism-industrial`, `ism-servicos`, `jolts`, `adp`,
   `seguro-desemprego`, `fomc`, `ipca`, `ipca-15`, `pib-brasil`, `copom`, `ata-copom`, `caged`, `varejo-brasil`, `producao-industrial`,
