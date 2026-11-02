@@ -84,6 +84,7 @@
             <div id="pn-acoes" class="hidden -mt-2 mb-4 term-panel px-4 py-2 font-mono text-xs flex items-center gap-x-4 gap-y-1 flex-wrap"></div>
             <nav class="flex gap-1.5 overflow-x-auto thin-scroll pb-1 mb-4 font-mono text-[11px]" aria-label="Seções da página">
                 <a href="#leitura" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Leitura do Dia</a>
+                <a href="#plantao" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Plantão</a>
                 <a href="#noticias" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Calendário e notícias</a>
                 <a href="#mapa" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Mapa da bolsa</a>
                 <a href="#agenda" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Vencimentos e câmbio</a>
@@ -183,7 +184,28 @@
                     <span class="term-label text-lect-orange font-bold">FEED DE NOTÍCIAS &amp; INDICADORES</span>
                     <h2 class="font-display text-2xl font-bold">Notícias e Calendário Econômico</h2>
                 </div>
-                <span class="text-xs text-slate-500 max-w-md">Feed de notícias em tempo real (TradingView) e calendário filtrado para quem opera WIN, WDO e DI, atualizado todo dia pela Leitura do Dia.</span>
+                <span class="text-xs text-slate-500 max-w-md">O Plantão Lectnex neste bloco é o FLASH editorial, com horário em CT. Em seguida, o feed do TradingView e o calendário filtrado para quem opera WIN, WDO e DI.</span>
+            </div>
+            <!-- Plantão Lectnex: data/plantao.json, desenhado por assets/lectnex-plantao.js. Acima do widget TradingView. -->
+            <div id="plantao" class="hidden mb-6 scroll-mt-28 term-panel overflow-hidden !border-t-4 !border-t-lect-orange" aria-label="Plantão Lectnex">
+                <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <span class="w-9 h-9 grid place-items-center bg-lect-orange/15 shrink-0"><i class="ph-bold ph-lightning text-xl text-lect-orange"></i></span>
+                        <div class="min-w-0">
+                            <span class="term-label font-bold text-lect-orange block">FLASH · PLANTÃO</span>
+                            <strong class="font-display text-lg leading-tight">Plantão Lectnex</strong>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2 font-mono text-[10px]">
+                        <span id="plantao-when" class="px-2 py-1 bg-slate-100 dark:bg-lect-bgDark text-slate-500" title="America/Chicago (CT)"></span>
+                        <span class="lx-demo">TESTE · EDUCACIONAL · NÃO É RECOMENDAÇÃO</span>
+                    </div>
+                </div>
+                <p id="plantao-aviso" class="px-5 pt-3 text-[11px] text-slate-500 leading-relaxed">Plantão educacional de teste. Horário do FLASH em America/Chicago (CT).</p>
+                <div id="plantao-list" class="p-5 pt-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3"></div>
+                <div class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500 flex flex-wrap gap-x-3 gap-y-1">
+                    <span>Conteúdo Lectnex, acima do feed TradingView. Cada card abre a matéria na fonte.</span>
+                </div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
                 <div class="lg:col-span-6 term-panel h-[560px] overflow-hidden" id="tv-news"></div>
@@ -698,6 +720,7 @@
 
     })();
     </script>
+    <script src="assets/lectnex-plantao.js?v=20261102h"></script>
     <script src="assets/lectnex-pregao.js?v=20261031b" defer></script>
     <script src="assets/lectnex-painel.js?v=20261101c" defer></script>
 </body>

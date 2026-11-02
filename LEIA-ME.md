@@ -1,7 +1,7 @@
 # Lectnex Terminal — estrutura do site
 
 ```
-index.html          Mercado Hoje: faixa B3, Leitura do Dia (IA), mapa de calor, indicadores, agenda, câmbio, mercados globais, notícias
+index.html          Mercado Hoje: faixa B3, Leitura do Dia (IA), Plantão/FLASH, mapa de calor, indicadores, agenda, câmbio, mercados globais, notícias
 macro.html          Macro & Juros: Copom, Focus, curva DI, regimes de risco, mapa "E se…?"
 futuros.html        WIN, WDO e DI: Placar de vencimento (contagem até o último pregão), Plano do Dia (checklist, limite de perda, placar), Diário de Trades (curva, calendário, DARF automático), vencimentos, risco, Kelly, IR, dólar justo
 acoes.html          Ações B3: cotação (brapi), gráfico (TradingView), painéis didáticos de fluxo/opções
@@ -9,6 +9,7 @@ sobre.html          Sobre o Lectnex: proposta, o que tem no terminal, princípio
 laboratorio.html    Academia (trilhas, lições interativas, glossário) + simuladores
 assets/
   lectnex-core.js   Núcleo: dados BCB/AwesomeAPI, calendário B3, vencimentos, cabeçalho/rodapé, busca
+  lectnex-plantao.js Plantão/FLASH do Mercado Hoje (lê data/plantao.json)
   lectnex.css       Estilos compartilhados
   lectnex-academia.js Lições, quizzes e glossário da Academia (edite o array LESSONS)
   tailwind.css      CSS compilado do Tailwind (gerado — não editar à mão)
@@ -84,6 +85,11 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 | Compilar CSS | a cada push | Tailwind + recorte de ícones |
 | Lighthouse | a cada push de código e às segundas | notas de velocidade, acessibilidade e SEO |
 | Leitura do Dia | tarefa agendada no Claude, todo dia 07h40 | `data/leitura.json` (ver `docs/leitura-do-dia.md`) |
+
+## Plantão / FLASH (Mercado Hoje)
+
+- `data/plantao.json` alimenta o bloco **Plantão Lectnex** (`index.html#plantao`), acima do feed do TradingView. O desenho fica em `assets/lectnex-plantao.js`.
+- Para o próximo FLASH, substitua o JSON (manchete em `titulo`, nota em `contexto`, `fonte`, `url` https e `publicado_em` em ISO-8601). O horário na tela é esse instante em America/Chicago (CT). Esquema completo no [README](README.md).
 
 ## Newsletter (Buttondown)
 
