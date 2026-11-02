@@ -505,6 +505,7 @@
                 <a href="glossario.html" class="block hover:text-lect-tealLight">Glossário do Trader</a>
                 <a href="semana/" class="block hover:text-lect-tealLight">Agenda da semana</a>
                 <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
+                <a href="comece.html" class="block hover:text-lect-tealLight">Comece por aqui</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
                 <a href="status.html" class="block hover:text-lect-tealLight">Status do site</a>
                 <a href="privacidade.html" class="block hover:text-lect-tealLight">Privacidade e cookies</a>
@@ -551,6 +552,8 @@
         ['futuros', 'DJ', 'Dólar futuro justo', 'Paridade: spot × diferencial de juros', 'futuros.html#paridade', 'ph-currency-dollar', 'dolar justo paridade wdo cupom cambial'],
         ['futuros', 'IRDT', 'IR de day trade', '20% sobre o lucro, DARF e dedo-duro', 'futuros.html#risco', 'ph-receipt', 'imposto darf day trade irrf dedo duro'],
         ['mercado', 'AGENDA', 'Agenda da semana', 'Copom, FOMC, IPCA, payroll, vencimentos', 'index.html#agenda', 'ph-calendar-dots', 'agenda eventos calendario copom fomc payroll'],
+        ['mercado', 'COPOM', 'Copom: o que esperar', 'Expectativa, cenários e reação de juros, dólar e bolsa', 'copom.html', 'ph-bank', 'copom selic decisao juros reuniao banco central comunicado'],
+        ['mercado', 'COMECE', 'Comece por aqui', 'O Lectnex em 1 minuto: as principais ferramentas', 'comece.html', 'ph-rocket-launch', 'comece inicio novo tour guia como usar'],
         ['mercado', 'FOCUS', 'Boletim Focus e Copom', 'Expectativas do mercado e decisões da Selic', 'macro.html#juros', 'ph-trend-up', 'focus expectativa juros curva selic copom'],
         ['mercado', 'FX', 'Câmbio e cripto ao vivo', 'Dólar, euro, bitcoin, PTAX', 'index.html#cambio', 'ph-arrows-left-right', 'cambio dolar euro bitcoin cripto ptax moeda'],
         ['mercado', 'CURVA', 'Curva de juros (DI1)', 'Como ler a curva e os vértices vigentes', 'macro.html#curva', 'ph-chart-line', 'curva juros di di1 vertice estrutura termo'],

@@ -1,0 +1,43 @@
+{
+ "reuniao": "282ª",
+ "data": "2026-11-04",
+ "hora": "18h30",
+ "selic_atual": 13.75,
+ "atualizado_em": "2026-11-02T17:30:00-03:00",
+ "expectativa": {
+  "resumo": "Depois da eleição, o mercado passou a apostar majoritariamente na manutenção da Selic em 13,75%. Antes do segundo turno, a maior parte das apostas era de corte de 0,25 ponto.",
+  "probabilidade_manutencao": 68.8,
+  "probabilidade_fonte": "Opções de Copom da B3, segundo a CNN Brasil (02/11)",
+  "casas": [
+   {"nome": "Itaú", "aposta": "manter em 13,75%"},
+   {"nome": "BTG Pactual", "aposta": "manter em 13,75%"},
+   {"nome": "HSBC", "aposta": "manter em 13,75%"},
+   {"nome": "C6 Bank", "aposta": "manter em 13,75%"},
+   {"nome": "Inter", "aposta": "cortar 0,25 para 13,50%"},
+   {"nome": "ASA", "aposta": "cortar 0,25 para 13,50%"},
+   {"nome": "Daycoval", "aposta": "cortar 0,25 para 13,50%"}
+  ]
+ },
+ "fatores": [
+  {"titulo": "Fiscal e eleição", "texto": "Com o resultado da eleição, o mercado espera sinais concretos sobre os gastos do próximo governo; sem eles, cresce o prêmio de risco nos juros longos."},
+  {"titulo": "Inflação e expectativas", "texto": "Energia, alimentos e combustíveis pressionam, e as projeções do Focus pioraram desde a última reunião, um sinal de desancoragem que o BC acompanha de perto."},
+  {"titulo": "Câmbio e exterior", "texto": "Real mais fraco e petróleo alto por causa das guerras encarecem importados e frete, o que também chega à inflação."},
+  {"titulo": "Atividade", "texto": "A economia está desacelerando, argumento usado por quem ainda defende mais um corte."}
+ ],
+ "cenarios": [
+  {"id": "manter", "titulo": "Manter em 13,75%", "rotulo": "o mais provável", "di": "Reação depende do tom: se o comunicado indicar pausa longa e preocupação com a inflação, as taxas curtas tendem a subir; se deixar a porta aberta para cortes, tendem a cair.", "wdo": "Juro alto por mais tempo costuma dar suporte ao real (dólar para baixo); um tom brando reduz esse efeito.", "win": "Bolsa sensível aos juros: tom duro pesa sobre varejo, construção e empresas endividadas."},
+  {"id": "cortar", "titulo": "Cortar 0,25 para 13,50%", "rotulo": "surpresa para a maioria", "di": "Taxas curtas tendem a cair; as longas podem subir se o mercado ler o corte como leniência com a inflação.", "wdo": "Diferencial de juros menor e dúvida sobre o compromisso com a inflação costumam pressionar o dólar para cima.", "win": "Juro menor ajuda a bolsa no curto prazo, mas o efeito pode se inverter se a curva longa abrir."},
+  {"id": "subir", "titulo": "Subir os juros", "rotulo": "fora do preço", "di": "Quase ninguém espera: seria um choque, com alta forte das taxas curtas.", "wdo": "Real tenderia a se valorizar com o juro maior.", "win": "Bolsa tenderia a cair com o aperto inesperado."}
+ ],
+ "observar": [
+  "Se a decisão é unânime ou dividida (votos diferentes indicam debate interno).",
+  "Se o comunicado fala em \"pausa\", \"interrupção\" ou deixa a porta aberta para novos cortes.",
+  "Como o BC descreve as expectativas de inflação e o risco fiscal."
+ ],
+ "resultado": null,
+ "fontes": [
+  {"titulo": "CNN Brasil — Mercado chega à semana do Copom com expectativa por fim do corte de juros (02/11)", "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/mercado-chega-a-semana-do-copom-com-expectativa-por-fim-do-corte-de-juros/"},
+  {"titulo": "BPMoney — Copom: mercado vê 63,1% de chance de manter Selic em 13,75% (31/10)", "url": "https://bpmoney.com.br/mercado/copom-mercado-ve-631-de-chance-de-manter-selic-em-1375/"},
+  {"titulo": "Banco Central — Copom", "url": "https://www.bcb.gov.br/publicacoes/comunicadoscopom"}
+ ]
+}

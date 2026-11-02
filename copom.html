@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copom 04/11: o que esperar da Selic · Lectnex</title>
+    <meta name="description" content="Decisão do Copom em 4 de novembro às 18h30: o que o mercado espera para a Selic, o que pesa na decisão e como juros, dólar e bolsa costumam reagir em cada cenário.">
+    <link rel="canonical" href="https://lectnex.com.br/copom.html">
+    <meta name="theme-color" content="#060D17">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lectnex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lectnex Terminal">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Copom 04/11: o que esperar da Selic · Lectnex">
+    <meta property="og:description" content="Decisão do Copom em 4 de novembro às 18h30: o que o mercado espera para a Selic, o que pesa na decisão e como juros, dólar e bolsa costumam reagir em cada cenário.">
+    <meta property="og:url" content="https://lectnex.com.br/copom.html">
+    <meta property="og:image" content="https://lectnex.com.br/assets/brand/og-macro.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Copom 04/11: o que esperar da Selic · Lectnex">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Copom 04/11: o que esperar da Selic · Lectnex">
+    <meta name="twitter:description" content="Decisão do Copom em 4 de novembro às 18h30: o que o mercado espera para a Selic, o que pesa na decisão e como juros, dólar e bolsa costumam reagir em cada cenário.">
+    <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-macro.jpg">
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261102h">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261102h">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261102h">
+</head>
+<body data-page="copom" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        <span class="term-label text-lect-teal font-bold">COPOM · <span id="cp-reuniao">REUNIÃO</span></span>
+        <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2 leading-tight">Copom: o que esperar da Selic</h1>
+        <p id="cp-sub" class="text-slate-600 dark:text-slate-300 mt-3 max-w-3xl leading-relaxed">Carregando…</p>
+
+        <section id="cp-hero" class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-3 min-h-[132px]"></section>
+
+        <section id="cp-resultado" class="hidden mt-6 term-panel p-5 border-l-4 border-l-lect-orange"></section>
+
+        <section class="mt-10">
+            <h2 class="font-display text-xl font-bold">O que o mercado espera</h2>
+            <p id="cp-exp" class="text-slate-700 dark:text-slate-300 mt-2 leading-relaxed"></p>
+            <div class="term-panel mt-4 overflow-hidden">
+                <div class="px-4 py-2.5 border-b border-slate-200 dark:border-lect-borderDark font-mono text-[11px] uppercase tracking-wider text-slate-600 dark:text-slate-400">Apostas de bancos e gestoras</div>
+                <ul id="cp-casas" class="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 divide-slate-200 dark:divide-lect-borderDark"></ul>
+            </div>
+        </section>
+
+        <section class="mt-10">
+            <h2 class="font-display text-xl font-bold">O que pesa na decisão</h2>
+            <div id="cp-fatores" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3"></div>
+        </section>
+
+        <section class="mt-10">
+            <h2 class="font-display text-xl font-bold">Cenários e como o mercado costuma reagir</h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Tendências típicas observadas em decisões passadas, para estudo. A reação real depende do comunicado e do contexto do dia. A decisão sai depois do fechamento, então o efeito em WIN e WDO aparece na abertura do dia seguinte.</p>
+            <div id="cp-cenarios" class="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-4"></div>
+        </section>
+
+        <section class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div class="term-panel p-5">
+                <h2 class="term-label font-bold">O QUE OBSERVAR NO COMUNICADO</h2>
+                <ul id="cp-observar" class="mt-3 space-y-2 text-sm text-slate-700 dark:text-slate-300"></ul>
+            </div>
+            <div class="term-panel p-5">
+                <h2 class="term-label font-bold">DECISÕES DE 2026</h2>
+                <ol id="cp-hist" class="mt-3 space-y-1.5 font-mono text-xs"></ol>
+            </div>
+        </section>
+
+        <div class="mt-10" data-lx-news="chamada" data-titulo="Receba o resultado e a leitura do Copom no seu e-mail."></div>
+
+        <p id="cp-fontes" class="mt-8 text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed"></p>
+        <p class="mt-2 text-[11px] text-slate-600 dark:text-slate-400">Conteúdo educacional. Não é recomendação de compra ou venda. Confirme sempre no comunicado oficial do Banco Central.</p>
+    </main>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js?v=20261102h"></script>
+    <script>
+    (function () {
+        const $ = id => document.getElementById(id), esc = LX.esc;
+        const pct = v => v == null ? '—' : Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
+        const IC = { di: ['DI', 'ph-chart-line'], wdo: ['WDO', 'ph-currency-dollar'], win: ['WIN', 'ph-trend-up'] };
+        fetch('data/copom.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-store' }).then(r => r.json()).then(c => {
+            const [y, m, d] = c.data.split('-').map(Number), [hh, mm] = c.hora.replace('h', ':').split(':').map(Number);
+            const alvo = new Date(Date.UTC(y, m - 1, d, hh + 3, mm || 0)); // horário de Brasília (UTC-3)
+            const dataTxt = `${LX.weekday(new Date(y, m - 1, d))}, ${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')} às ${c.hora}`;
+            $('cp-reuniao').textContent = `${c.reuniao} REUNIÃO`;
+            $('cp-sub').innerHTML = `O Comitê de Política Monetária do Banco Central anuncia a nova Selic na <strong>${esc(dataTxt)}</strong> (horário de Brasília). Aqui está o que o mercado espera, o que pesa na decisão e como juros, dólar e bolsa costumam reagir em cada cenário.`;
+            const r = c.resultado;
+            const card = (lbl, val, sub, cls = '') => `<div class="term-panel p-4"><span class="term-label">${lbl}</span><strong class="block font-display text-2xl mt-1 ${cls}">${val}</strong><span class="block text-xs text-slate-600 dark:text-slate-400 mt-1">${sub}</span></div>`;
+            const e = c.expectativa || {};
+            const contagem = () => {
+                const ms = alvo - Date.now();
+                if (ms <= 0) return r ? 'decisão anunciada' : 'aguardando o comunicado';
+                const t = Math.floor(ms / 6e4), dd = Math.floor(t / 1440), h = Math.floor(t % 1440 / 60), mi = t % 60;
+                return (dd ? `${dd}d ` : '') + `${h}h ${String(mi).padStart(2, '0')}min`;
+            };
+            const hero = () => {
+                $('cp-hero').innerHTML = card('SELIC ' + (r ? 'NOVA' : 'ATUAL'), pct(r ? r.selic : c.selic_atual), r ? esc(r.decisao_curta || '') : 'definida na reunião de setembro', 'text-lect-teal')
+                    + card(r ? 'DECISÃO' : 'FALTAM', r ? esc(r.placar || 'anunciada') : contagem(), r ? 'reação na abertura do dia seguinte' : esc(dataTxt), r ? '' : 'font-mono')
+                    + card('EXPECTATIVA', e.probabilidade_manutencao ? `${String(e.probabilidade_manutencao).replace('.', ',')}% manter` : 'dividida', esc(e.probabilidade_fonte || ''));
+            };
+            hero(); if (!r) setInterval(hero, 30000);
+            if (r) {
+                $('cp-resultado').classList.remove('hidden');
+                $('cp-resultado').innerHTML = `<span class="term-label !text-lect-orange font-bold">RESULTADO</span><strong class="block font-display text-xl mt-1">${esc(r.titulo || '')}</strong>${r.trecho ? `<blockquote class="mt-3 pl-3 border-l-2 border-slate-300 dark:border-lect-borderDark text-sm italic text-slate-700 dark:text-slate-300">“${esc(r.trecho)}”</blockquote>` : ''}${r.leitura ? `<p class="text-sm text-slate-700 dark:text-slate-300 mt-3">${esc(r.leitura)}</p>` : ''}${/^https?:/.test(r.url || '') ? `<a href="${esc(r.url)}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm font-bold text-lect-teal hover:underline">Comunicado oficial <i class="ph-bold ph-arrow-up-right"></i></a>` : ''}`;
+            }
+            $('cp-exp').textContent = e.resumo || '';
+            $('cp-casas').innerHTML = (e.casas || []).map(x => `<li class="px-4 py-2.5 flex justify-between gap-3 text-sm"><span class="font-semibold">${esc(x.nome)}</span><span class="font-mono text-xs ${/manter/.test(x.aposta) ? 'text-lect-teal' : 'text-lect-orange'}">${esc(x.aposta)}</span></li>`).join('');
+            $('cp-fatores').innerHTML = (c.fatores || []).map(f => `<div class="term-panel p-4"><strong class="block">${esc(f.titulo)}</strong><p class="text-sm text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">${esc(f.texto)}</p></div>`).join('');
+            $('cp-cenarios').innerHTML = (c.cenarios || []).map((s, i) => `<div class="term-panel p-4 ${r && r.cenario === s.id ? 'ring-2 ring-lect-orange' : ''} ${i === 0 ? 'border-t-4 border-t-lect-teal' : ''}"><div class="flex items-baseline justify-between gap-2"><strong class="font-display text-lg">${esc(s.titulo)}</strong><span class="font-mono text-[10px] uppercase text-slate-600 dark:text-slate-400 shrink-0">${r && r.cenario === s.id ? '✓ aconteceu' : esc(s.rotulo || '')}</span></div><ul class="mt-3 space-y-2.5">${['di', 'wdo', 'win'].map(k => s[k] ? `<li class="flex gap-2.5 text-sm"><span class="shrink-0 w-12 font-mono text-[11px] font-bold text-lect-teal pt-0.5"><i class="ph-bold ${IC[k][1]}"></i> ${IC[k][0]}</span><span class="text-slate-700 dark:text-slate-300 leading-snug">${esc(s[k])}</span></li>` : '').join('')}</ul></div>`).join('');
+            $('cp-observar').innerHTML = (c.observar || []).map(o => `<li class="flex gap-2"><i class="ph-bold ph-eye text-lect-teal mt-0.5"></i><span>${esc(o)}</span></li>`).join('');
+            $('cp-hist').innerHTML = (LX.copom2026 || []).map(([dt, v]) => { const [yy, mo, da] = dt.split('-'); const atual = dt === c.data; const val = atual && r ? r.historico || '' : v; return `<li class="flex justify-between gap-3 px-2 py-1 ${atual ? 'bg-lect-teal/10 font-bold' : ''}"><span>${da}/${mo}</span><span class="${val ? '' : 'text-slate-500'}">${esc(val || (atual ? 'esta reunião' : 'a definir'))}</span></li>`; }).join('');
+            $('cp-fontes').innerHTML = 'Fontes: ' + (c.fontes || []).filter(f => /^https?:/.test(f.url)).map(f => `<a href="${esc(f.url)}" target="_blank" rel="noopener nofollow" class="underline decoration-dotted hover:text-lect-teal">${esc(f.titulo)}</a>`).join(' · ') + ` · atualizado em ${new Date(c.atualizado_em).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })}`;
+        }).catch(() => { $('cp-sub').textContent = 'Não foi possível carregar os dados agora. Tente de novo em instantes.'; });
+    })();
+    </script>
+</body>
+</html>

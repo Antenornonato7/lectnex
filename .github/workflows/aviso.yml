@@ -1,0 +1,36 @@
+# Manda uma mensagem curta para o chat PRIVADO do dono no Telegram (usado pelo relatório semanal).
+name: Aviso ao dono
+run-name: "Aviso ao dono"
+
+on:
+  workflow_dispatch:
+    inputs:
+      mensagem:
+        description: "Texto (HTML simples do Telegram: <b>, <i>, <a>)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Enviar no Telegram privado
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          MSG: ${{ inputs.mensagem }}
+        run: |
+          [ -n "$TOKEN" ] && [ -n "$CHAT" ] || { echo "::error::Falta TELEGRAM_ADMIN_CHAT_ID"; exit 1; }
+          case "$CHAT" in @*) echo "::error::Chat precisa ser o privado"; exit 1;; esac
+          python3 - <<'PY'
+          import json, os, urllib.request
+          req = urllib.request.Request(f"https://api.telegram.org/bot{os.environ['TOKEN']}/sendMessage",
+              data=json.dumps({'chat_id': os.environ['CHAT'], 'text': os.environ['MSG'][:4000], 'parse_mode': 'HTML', 'disable_web_page_preview': True}).encode(),
+              headers={'Content-Type': 'application/json'})
+          urllib.request.urlopen(req, timeout=20).read()
+          print('Enviado.')
+          PY

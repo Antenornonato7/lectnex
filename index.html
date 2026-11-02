@@ -32,14 +32,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261102g">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261102h">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261102g">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261102g">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261102h">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261102h">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -141,6 +141,8 @@
 
     <section id="leitura" class="py-8 min-h-[640px] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a id="promo-copom" href="copom.html" class="mb-4 flex flex-wrap items-center justify-between gap-2 px-4 py-2.5 bg-lect-navy text-white border-l-4 border-lect-orange hover:brightness-110"><span class="flex items-center gap-2 text-sm"><i class="ph-bold ph-bank text-lect-orange"></i><strong>Copom quarta, 04/11, às 18h30</strong><span class="hidden sm:inline text-slate-300">· o que o mercado espera e como juros, dólar e bolsa costumam reagir</span></span><span class="font-mono text-xs font-bold text-lect-orange">ver página especial →</span></a>
+            <script>(function(){var d=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'}));if(d>new Date(2026,10,5,23,59))document.getElementById('promo-copom').remove();})();</script>
             <div class="term-panel overflow-hidden !border-t-4 !border-t-lect-orange">
                 <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
                     <div class="flex items-center gap-3">
@@ -291,7 +293,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261102g"></script>
+    <script src="assets/lectnex-core.js?v=20261102h"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
