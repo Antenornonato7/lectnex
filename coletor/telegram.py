@@ -144,7 +144,8 @@ def main():
         contar(); return
     if acao == 'info':
         r = api('getChat', {'chat_id': CHAT}); pm = (r.get('result') or {}).get('pinned_message') or {}
-        note('notice', f'Mensagem fixada: {pm.get("message_id")}'); return
+        me = (api('getMe', {}).get('result') or {})
+        note('notice', f'Bot: @{me.get("username")} ({me.get("first_name")}) · Mensagem fixada: {pm.get("message_id")}'); return
     if acao == 'apagar':
         mid = os.environ.get('MSG_ID', '').strip()
         r = api('deleteMessage', {'chat_id': CHAT, 'message_id': int(mid)}) if mid.isdigit() else {'ok': False, 'description': 'informe o número da mensagem'}
