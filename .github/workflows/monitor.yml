@@ -1,0 +1,44 @@
+name: Monitor do site
+
+on:
+  schedule:
+    - cron: "41 * * * *"   # de hora em hora, no minuto 41
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Mandar mensagem de teste no Telegram"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: coletor
+      - uses: actions/cache/restore@v4
+        with:
+          path: .monitor
+          key: monitor-${{ github.run_id }}
+          restore-keys: monitor-
+      - name: Conferir lectnex.com.br
+        id: run
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          TESTE: ${{ inputs.teste && '1' || '' }}
+        run: python3 coletor/monitor.py
+      - uses: actions/cache/save@v4
+        if: always() && !inputs.teste
+        with:
+          path: .monitor
+          key: monitor-${{ github.run_id }}
