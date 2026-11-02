@@ -1,0 +1,29 @@
+name: Resumo do dono
+
+on:
+  schedule:
+    - cron: "25 22 * * *"   # 19h25 em Brasília, depois do fechamento (19h05)
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Enviar agora como teste"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  resumo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Enviar resumo no chat privado
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          TESTE: ${{ inputs.teste && '1' || '' }}
+        run: python3 coletor/resumo_dono.py
