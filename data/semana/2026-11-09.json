@@ -1,0 +1,31 @@
+{
+ "semana": "2026-11-09",
+ "eventos": [
+  {
+   "data": "2026-11-10",
+   "hora": "08h",
+   "pais": "BR",
+   "evento": "Ata do Copom",
+   "importancia": 3,
+   "impacto": {
+    "di": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Detalha o balanço de riscos e os sinais para as próximas reuniões.",
+   "tipo": "ata-copom"
+  },
+  {
+   "data": "2026-11-10",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "CPI — inflação ao consumidor (out)",
+   "importancia": 3,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Inflação americana mexe nas apostas para o Fed, nos Treasuries e no dólar global.",
+   "tipo": "cpi-eua"
+  }
+ ]
+}

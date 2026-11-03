@@ -86,8 +86,9 @@
     "wdo": "volatil"
    },
    "nota": "Termômetro do mercado de trabalho na semana do payroll.",
-   "anterior": "7,1 milhões",
-   "tipo": "jolts"
+   "anterior": "7,08 milhões",
+   "tipo": "jolts",
+   "consenso": "7,1 milhões"
   },
   {
    "data": "2026-11-03",
@@ -101,6 +102,18 @@
     "win": "volatil"
    },
    "tipo": "pmi-china-servicos"
+  },
+  {
+   "data": "2026-11-04",
+   "pais": "US",
+   "evento": "Refunding trimestral do Tesouro",
+   "importancia": 2,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Tamanho das emissões afeta Treasuries longas e, por tabela, o DI.",
+   "tipo": "refunding-eua"
   },
   {
    "data": "2026-11-04",
@@ -127,21 +140,8 @@
    },
    "nota": "Prévia informal do payroll.",
    "anterior": "90 mil",
-   "consenso": "65 mil",
+   "consenso": "67 mil",
    "tipo": "adp"
-  },
-  {
-   "data": "2026-11-04",
-   "hora": "10h30",
-   "pais": "US",
-   "evento": "Refunding trimestral do Tesouro",
-   "importancia": 2,
-   "impacto": {
-    "wdo": "volatil",
-    "di": "volatil"
-   },
-   "nota": "Tamanho das emissões afeta Treasuries longas e, por tabela, o DI.",
-   "tipo": "refunding-eua"
   },
   {
    "data": "2026-11-04",
@@ -184,8 +184,8 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Comunicado após o fechamento; reação aparece na quinta. Mercado dividido entre manter 13,75% e cortar para 13,50%; tom sobre o fiscal é chave.",
-   "consenso": "13,75%",
+   "nota": "Comunicado após o fechamento; reação aparece na quinta. Em pesquisa da Reuters, 33 de 48 economistas esperam manutenção e 15, corte para 13,50%; tom sobre o fiscal é chave.",
+   "consenso": "13,75% (manutenção)",
    "tipo": "copom"
   },
   {
@@ -208,7 +208,7 @@
    "pais": "BR",
    "evento": "Produção industrial (set, m/m)",
    "importancia": 2,
-   "anterior": "−1,2%",
+   "anterior": "−0,6%",
    "consenso": "−0,1%",
    "impacto": {
     "win": "volatil",
@@ -226,7 +226,7 @@
     "wdo": "volatil"
    },
    "anterior": "194 mil",
-   "consenso": "197 mil",
+   "consenso": "195 mil",
    "tipo": "seguro-desemprego"
   },
   {
@@ -283,7 +283,7 @@
     "wdo": "volatil"
    },
    "anterior": "48,0",
-   "consenso": "47,3",
+   "consenso": "48,2",
    "tipo": "michigan"
   },
   {
@@ -299,6 +299,19 @@
    },
    "nota": "Saldo positivo ajuda o fluxo de dólares para o país.",
    "tipo": "balanca-comercial"
+  },
+  {
+   "data": "2026-11-08",
+   "hora": "22h30",
+   "pais": "CN",
+   "evento": "Inflação ao consumidor e ao produtor (out)",
+   "importancia": 2,
+   "anterior": "0,9% a/a",
+   "impacto": {
+    "win": "volatil"
+   },
+   "nota": "Preços na China mexem com a leitura de demanda por commodities (minério, Vale).",
+   "tipo": "cpi-china"
   }
  ]
 }
