@@ -185,6 +185,44 @@
           }
         }
       ]
+    },
+    {
+      "hora": "16h40",
+      "noticias": [
+        {
+          "titulo": "Ibovespa cai perto de 1,7% e dólar passa de R$ 5,50 com fiscal e Petrobras pesando",
+          "fonte": "InfoMoney",
+          "hora": "14h05",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-03112026/",
+          "por_que": "Às 14h05 o dólar subia 1,14%, a R$ 5,506, e o Ibovespa rondava 165 mil pontos, com PETR4 caindo mais de 4% e incerteza sobre a equipe econômica na véspera do Copom.",
+          "impacto": {
+            "win": "baixa",
+            "wdo": "alta",
+            "di": "alta"
+          }
+        },
+        {
+          "titulo": "Irã condiciona acordo com os EUA a compromisso claro de encerrar a guerra",
+          "fonte": "InfoMoney",
+          "hora": "13h58",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-03112026/",
+          "por_que": "Segundo o porta-voz iraniano Esmaeil Baghaei, citado pelo InfoMoney, Teerã vê com ceticismo o entendimento; o impasse mantém o prêmio de risco no petróleo e a aversão a risco que pressiona emergentes.",
+          "impacto": {
+            "wdo": "alta",
+            "di": "alta"
+          }
+        },
+        {
+          "titulo": "Nagel, do BCE, diz que alta de juros em dezembro é 'bastante provável'",
+          "fonte": "InfoMoney",
+          "hora": "15h05",
+          "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-03112026/",
+          "por_que": "Sinal de aperto na zona do euro reforça o ambiente de juros globais altos, que já pressiona a curva de DI.",
+          "impacto": {
+            "di": "alta"
+          }
+        }
+      ]
     }
   ]
 }
