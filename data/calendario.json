@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-03T07:55:00-03:00",
+  "atualizado_em": "2026-11-03T12:55:00-03:00",
   "eventos": [
     {
       "data": "2026-11-03",
@@ -9,7 +9,7 @@
       "importancia": 1,
       "anterior": null,
       "consenso": null,
-      "resultado": null,
+      "resultado": "Selic 2026: 13,50%; IPCA 2026: 5,22%",
       "impacto": {
         "di": "volatil"
       },
@@ -25,7 +25,7 @@
       "importancia": 1,
       "anterior": "44,8",
       "consenso": null,
-      "resultado": null,
+      "resultado": "46,1",
       "impacto": {
         "win": "volatil"
       },
@@ -41,13 +41,16 @@
       "importancia": 2,
       "anterior": "7,08 milhões",
       "consenso": "7,1 milhões",
-      "resultado": null,
+      "resultado": "7,52 milhões",
       "impacto": {
         "wdo": "volatil"
       },
       "nota": "Termômetro do mercado de trabalho na semana do payroll.",
       "tipo": "jolts",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "Vagas acima do esperado costumam fortalecer o dólar global e pressionar os Treasuries, o que tende a puxar WDO e DI para cima."
+      }
     },
     {
       "data": "2026-11-03",
