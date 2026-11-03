@@ -10,6 +10,10 @@ on:
         description: 'Enviar mesmo sem cotação de hoje (teste)'
         type: boolean
         default: false
+      previa_story:
+        description: 'Só mandar uma prévia do story no Telegram privado (não posta no canal)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,8 +33,24 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
           FORCAR: ${{ inputs.forcar && '1' || '' }}
+          SO_STORY: ${{ inputs.previa_story && '1' || '' }}
+          FECH_JSON: ${{ runner.temp }}/fechamento.json
         run: python3 coletor/fechamento.py
+      - name: Story do fechamento no Telegram privado do dono
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          PREVIA: ${{ inputs.previa_story && '1' || '' }}
+        run: |
+          [ -f "$RUNNER_TEMP/fechamento.json" ] || { echo "Sem fechamento hoje: sem story."; exit 0; }
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          if [ -n "$PREVIA" ]; then
+            python3 scripts/story_fechamento.py "$RUNNER_TEMP/fechamento.json" "$RUNNER_TEMP/story.png" --previa "PRÉVIA · PARCIAL $(TZ=America/Sao_Paulo date +%Hh%M)"
+          else
+            python3 scripts/story_fechamento.py "$RUNNER_TEMP/fechamento.json" "$RUNNER_TEMP/story.png"
+          fi || echo "::warning::Falha ao gerar ou enviar o story (o fechamento não é afetado)."
       - name: Salvar placar do termômetro
+        if: ${{ !inputs.previa_story }}
         run: |
           [ -f data/placar-termometro.json ] || exit 0
           git config user.name "lectnex-bot"

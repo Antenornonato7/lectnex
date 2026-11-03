@@ -14,7 +14,8 @@ import telegram as tg  # reaproveita token, canal, envio e escape
 
 BRT = dt.timezone(dt.timedelta(hours=-3))
 hoje = dt.datetime.now(BRT).date()
-FORCAR = bool(os.environ.get('FORCAR'))
+SO_STORY = bool(os.environ.get('SO_STORY'))  # prévia: só monta o resumo do story; não posta no canal nem grava placar
+FORCAR = bool(os.environ.get('FORCAR')) or SO_STORY
 SETA = {'bullish': '▲ alta', 'bearish': '▼ baixa', 'neutro': '● neutro'}
 
 
@@ -70,12 +71,15 @@ def main():
     iv = ibov.get('var_pct') if ibov else None
     usd, uv = dolar()
 
+    resumo = {'data': hoje.isoformat(), 'ibov': {'preco': ibov['preco'], 'var': iv} if ibov and iv is not None else None,
+              'dolar': {'preco': usd, 'var': uv} if usd else None, 'altas': [], 'baixas': [], 'termometro': {}, 'placar': None, 'agenda': None}
     linhas = [f'🔔 <b>Fechamento · {hoje:%d/%m}</b>']
     linhas.append(' · '.join(filter(None, [
         'IBOV <b>' + f'{ibov["preco"]:,.0f}'.replace(',', '.') + f'</b> ({pct(iv)})' if ibov and iv is not None else '',
         'Dólar <b>R$ ' + f'{usd:.3f}'.replace('.', ',') + f'</b> ({pct(uv)})' if usd else ''])))
     m = sorted([x for x in cot.get('mapa', []) if isinstance(x.get('var_pct'), (int, float))], key=lambda x: x['var_pct'])
     if len(m) >= 6:
+        resumo['altas'] = [[x['ticker'], x['var_pct']] for x in m[::-1][:3]]; resumo['baixas'] = [[x['ticker'], x['var_pct']] for x in m[:3]]
         linhas += ['', '📈 ' + ' · '.join(f'{tg.e(x["ticker"])} {pct(x["var_pct"])}' for x in m[::-1][:3]),
                    '📉 ' + ' · '.join(f'{tg.e(x["ticker"])} {pct(x["var_pct"])}' for x in m[:3])]
 
@@ -92,6 +96,7 @@ def main():
             if a is None:
                 continue
             reg[k] = {'leitura': t, 'var_pct': round(var, 2), 'acerto': a}
+            resumo['termometro'][k] = reg[k]
             partes.append(f'{k.upper()} {SETA[t]} → {"✅ acertou" if a else "❌ errou"} ({"IBOV" if k == "win" else "dólar"} {pct(var)})')
         if partes:
             placar['dias'] = [d for d in placar['dias'] if d['data'] != reg['data']] + [reg]
@@ -100,7 +105,9 @@ def main():
             tot = sum(1 for d in ult for k in ('win', 'wdo') if k in d)
             ok = sum(1 for d in ult for k in ('win', 'wdo') if d.get(k, {}).get('acerto'))
             placar['atualizado_em'] = dt.datetime.now(BRT).isoformat(timespec='seconds')
-            json.dump(placar, open('data/placar-termometro.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+            if not SO_STORY:
+                json.dump(placar, open('data/placar-termometro.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+            if tot: resumo['placar'] = {'ok': ok, 'tot': tot, 'n': len(ult)}
             linhas += ['', '🎯 <b>Termômetro da manhã</b>'] + partes + [(f'Placar dos últimos {len(ult)} pregões:' if len(ult) > 1 else 'Placar (1º pregão):') + f' <b>{ok}/{tot}</b> ({ok / tot * 100:.0f}%)' if tot else '']
 
     # agenda do próximo dia com eventos
@@ -113,10 +120,18 @@ def main():
         if evs:
             d = dt.date.fromisoformat(prox)
             nome = 'Amanhã' if d == hoje + dt.timedelta(days=1) else ['seg', 'ter', 'qua', 'qui', 'sex', 'sáb', 'dom'][d.weekday()] + f' {d:%d/%m}'
+            top = sorted(evs, key=lambda e: -(e.get('importancia') or 1))[:3]
+            top.sort(key=lambda e: (e.get('hora') is None, e.get('hora') or ''))
+            resumo['agenda'] = {'nome': nome, 'eventos': [[e.get('hora') or 'dia', e['evento'], (e.get('importancia') or 1) >= 3] for e in top]}
             linhas += ['', f'📅 <b>{nome}</b>'] + [f'{e.get("hora") or "dia"} {tg.FLAG.get(e.get("pais"), "")} {tg.e(e["evento"])}{" ⚠️" if (e.get("importancia") or 1) >= 3 else ""}' for e in evs[:5]]
 
     linhas += ['', f'<a href="{tg.SITE}">Mercado Hoje →</a>', '<i>Educacional. Não é recomendação. Cotações com atraso de ~30 min.</i>']
     texto = '\n'.join(l for l in linhas if l is not None)
+    if os.environ.get('FECH_JSON'):  # usado pelo story do fechamento
+        json.dump(resumo, open(os.environ['FECH_JSON'], 'w', encoding='utf-8'), ensure_ascii=False)
+    if SO_STORY:
+        tg.note('notice', 'Prévia do story: resumo montado, nada postado no canal.')
+        return
     if not tg.TOKEN:
         print(texto)
         tg.note('notice', 'Telegram não configurado; fechamento só impresso.')
