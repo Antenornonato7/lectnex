@@ -1,0 +1,28 @@
+# Carrossel semanal (4 imagens 1080×1350) no Telegram privado do dono. Horário: sábado 9h47 (coletor/relogio.py).
+name: Carrossel da semana
+run-name: "${{ inputs.previa && 'Prévia do carrossel' || 'Carrossel da semana' }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      previa:
+        description: "Prévia com a semana em andamento (marcada como PRÉVIA nas imagens)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  carrossel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar e enviar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: |
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          python3 scripts/carrossel_semana.py ${{ inputs.previa && '--previa' || '' }} "$RUNNER_TEMP/carrossel"

@@ -94,8 +94,10 @@ def gerar(r, saida, previa=None):
                 continue
             t = term[k]
             ok = t.get('acerto')
-            txt = f'{k.upper()} {SETA.get(t.get("leitura"), "")}  →  {"✅ acertou" if ok else "❌ errou"}'
-            dr.text((M, y), txt, font=ft, fill=WHITE)
+            txt = f'{k.upper()} {SETA.get(t.get("leitura"), "")}  →  '
+            fj = fonte('JetBrainsMono-Bold.ttf', 34)
+            dr.text((M, y), txt, font=fj, fill=WHITE)
+            dr.text((M + dr.textlength(txt, font=fj), y), 'acertou' if ok else 'errou', font=fj, fill=VERDE if ok else VERMELHO)
             y += 50
         p = r.get('placar')
         if p and p.get('tot'):
@@ -112,11 +114,11 @@ def gerar(r, saida, previa=None):
         y += 46
         fh, fe = fonte('JetBrainsMono-Bold.ttf', 28), fonte('Inter-Medium.otf', 32)
         for hora, ev, forte in ag['eventos']:
-            linhas = quebrar(dr, ev + (' ⚠' if forte else ''), fe, W - 2 * M - 170, 1)
+            linhas = quebrar(dr, ev, fe, W - 2 * M - 170, 1)
             if y + 44 > limite:
                 break
             dr.text((M, y + 2), hora[:8], font=fh, fill=TEAL_L)
-            dr.text((M + 170, y), linhas[0], font=fe, fill=WHITE)
+            dr.text((M + 170, y), linhas[0], font=fe, fill=ORANGE if forte else WHITE)
             y += 48
 
     tracejado(dr, (M, 1480, W - M, 1630), '#334155')
