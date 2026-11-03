@@ -60,7 +60,8 @@
     "di": "volatil"
    },
    "nota": "Sai na terça por causa de Finados; olhar Selic, IPCA e câmbio às vésperas do Copom.",
-   "tipo": "focus"
+   "tipo": "focus",
+   "resultado": "Selic 2026: 13,50%; IPCA 2026: 5,22%"
   },
   {
    "data": "2026-11-03",
@@ -74,7 +75,8 @@
     "win": "volatil"
    },
    "nota": "Indústria em contração profunda.",
-   "tipo": "pmi-brasil"
+   "tipo": "pmi-brasil",
+   "resultado": "46,1"
   },
   {
    "data": "2026-11-03",
@@ -88,7 +90,12 @@
    "nota": "Termômetro do mercado de trabalho na semana do payroll.",
    "anterior": "7,08 milhões",
    "tipo": "jolts",
-   "consenso": "7,1 milhões"
+   "consenso": "7,1 milhões",
+   "resultado": "7,52 milhões",
+   "surpresa": {
+    "direcao": "acima",
+    "reacao": "Vagas acima do esperado costumam fortalecer o dólar global e pressionar os Treasuries, o que tende a puxar WDO e DI para cima."
+   }
   },
   {
    "data": "2026-11-03",
