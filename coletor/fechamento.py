@@ -50,6 +50,17 @@ def dolar():
         return float(d['bidPrice']), float(d['percentageChange'])
     except Exception as e:
         erros.append(f'brapi: {e}')
+    ua = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36', 'Accept': 'application/json,*/*'}
+    for host in ('query2', 'query1'):  # reserva 2: Yahoo Finance (BRL=X), a mesma fonte da "reação aos dados"
+        try:
+            req = urllib.request.Request(f'https://{host}.finance.yahoo.com/v8/finance/chart/BRL=X?interval=5m&range=1d', headers=ua)
+            with urllib.request.urlopen(req, timeout=15) as r:
+                meta = json.load(r)['chart']['result'][0]['meta']
+            preco, ant = float(meta['regularMarketPrice']), float(meta.get('chartPreviousClose') or meta.get('previousClose'))
+            tg.note('notice', f'Dólar pela reserva Yahoo ({host}) após falha de: ' + ' | '.join(erros))
+            return preco, (preco / ant - 1) * 100
+        except Exception as e:
+            erros.append(f'Yahoo {host}: {e}')
     tg.note('warning', 'Dólar indisponível: ' + ' | '.join(erros))
     return None, None
 
