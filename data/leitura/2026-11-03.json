@@ -143,5 +143,48 @@
    "titulo": "Yahoo Finance — Dow, S&P 500, Nasdaq futures waver ahead of midterm election results, AMD earnings",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-090846378.html"
   }
+ ],
+ "atualizacoes": [
+  {
+   "hora": "12h40",
+   "resumo": "Focus com Selic e dólar projetados mais altos e JOLTS bem acima do esperado reforçam a pressão sobre dólar e DI na véspera do Copom.",
+   "noticias": [
+    {
+     "titulo": "Focus pós-eleição eleva Selic de 2026 para 13,50% e de 2027 para 12,50%",
+     "fonte": "CNN Brasil",
+     "hora": "08h30",
+     "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/focus-mercado-eleva-expectativa-e-ve-juros-em-1350-em-2026/",
+     "por_que": "Economistas também subiram IPCA de 2027 (4,76%) e dólar de 2026 (R$ 5,34): expectativas piores pressionam os vértices do DI e o câmbio às vésperas do Copom.",
+     "impacto": {
+      "win": "baixa",
+      "wdo": "alta",
+      "di": "alta"
+     }
+    },
+    {
+     "titulo": "Coordenador do programa de Lula defende proposta de Lara Resende para reduzir juros",
+     "fonte": "InfoMoney",
+     "hora": "09h02",
+     "url": "https://www.infomoney.com.br/politica/coordenador-do-programa-de-lula-defende-proposta-de-lara-resende-para-reduzir-juros/",
+     "por_que": "Segundo o InfoMoney, José Sérgio Gabrielli elogiou a ideia de um conselho para coordenar política fiscal e monetária; o ruído sobre a condução dos juros aumenta o prêmio de risco na curva.",
+     "impacto": {
+      "win": "baixa",
+      "wdo": "alta",
+      "di": "alta"
+     }
+    },
+    {
+     "titulo": "JOLTS: vagas em aberto nos EUA sobem para 7,52 milhões em setembro, acima dos 7,1 milhões esperados",
+     "fonte": "investingLive (dados do BLS)",
+     "hora": "12h00",
+     "url": "https://investinglive.com/news/jolts-job-openings-7-523m-vs-7-100m-estimate/",
+     "por_que": "Mercado de trabalho americano mais firme na semana do payroll reduz espaço para alívio do Fed, o que tende a fortalecer o dólar global e pressionar Treasuries.",
+     "impacto": {
+      "wdo": "alta",
+      "di": "alta"
+     }
+    }
+   ]
+  }
  ]
 }
