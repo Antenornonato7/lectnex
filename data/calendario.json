@@ -1,37 +1,6 @@
 {
-  "atualizado_em": "2026-11-02T13:07:00-03:00",
+  "atualizado_em": "2026-11-03T07:55:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-02",
-      "hora": null,
-      "pais": "BR",
-      "evento": "Finados — B3 fechada",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {},
-      "nota": "Sem pregão; o mercado externo funciona normalmente.",
-      "tipo": "feriado-b3",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-02",
-      "hora": "12h",
-      "pais": "US",
-      "evento": "ISM industrial (out)",
-      "importancia": 3,
-      "anterior": "54,5",
-      "consenso": "54,7",
-      "resultado": "55,5",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Primeiro dado relevante da semana, com a B3 fechada; o efeito aparece na reabertura de terça.",
-      "tipo": "ism-industrial",
-      "surpresa": null
-    },
     {
       "data": "2026-11-03",
       "hora": "08h25",
@@ -55,7 +24,7 @@
       "evento": "PMI industrial S&P Global (out)",
       "importancia": 1,
       "anterior": "44,8",
-      "consenso": "43",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "win": "volatil"
@@ -70,8 +39,8 @@
       "pais": "US",
       "evento": "JOLTS — vagas em aberto (set)",
       "importancia": 2,
-      "anterior": "7,1 milhões",
-      "consenso": null,
+      "anterior": "7,08 milhões",
+      "consenso": "7,1 milhões",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -136,7 +105,7 @@
       "evento": "Inflação ao consumidor — prévia (out)",
       "importancia": 2,
       "anterior": "3,8% a/a",
-      "consenso": "3,9% a/a",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -152,30 +121,13 @@
       "evento": "ADP — emprego privado (out)",
       "importancia": 2,
       "anterior": "90 mil",
-      "consenso": "65 mil",
+      "consenso": "67 mil",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
       },
       "nota": "Prévia informal do payroll.",
       "tipo": "adp",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-04",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Refunding trimestral do Tesouro",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Tamanho das emissões afeta Treasuries longas e, por tabela, o DI.",
-      "tipo": "refunding-eua",
       "surpresa": null
     },
     {
@@ -218,15 +170,32 @@
       "evento": "Decisão do Copom (282ª reunião)",
       "importancia": 3,
       "anterior": "13,75%",
-      "consenso": null,
+      "consenso": "13,75% (manutenção)",
       "resultado": null,
       "impacto": {
         "win": "volatil",
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Comunicado após o fechamento; reação aparece na quinta. Mercado dividido entre manter 13,75% e cortar para 13,50%; tom sobre o fiscal é chave.",
+      "nota": "Comunicado após o fechamento; reação aparece na quinta. Em pesquisa da Reuters, 33 de 48 economistas esperam manutenção e 15, corte para 13,50%; tom sobre o fiscal é chave.",
       "tipo": "copom",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-04",
+      "hora": null,
+      "pais": "US",
+      "evento": "Refunding trimestral do Tesouro",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Tamanho das emissões afeta Treasuries longas e, por tabela, o DI.",
+      "tipo": "refunding-eua",
       "surpresa": null
     },
     {
@@ -235,7 +204,7 @@
       "pais": "BR",
       "evento": "Produção industrial (set, m/m)",
       "importancia": 2,
-      "anterior": "−1,2%",
+      "anterior": "−0,6%",
       "consenso": "−0,1%",
       "resultado": null,
       "impacto": {
@@ -268,7 +237,7 @@
       "evento": "Pedidos de seguro-desemprego (semanal)",
       "importancia": 1,
       "anterior": "194 mil",
-      "consenso": "197 mil",
+      "consenso": "195 mil",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -333,7 +302,7 @@
       "evento": "Confiança do consumidor Michigan — preliminar (nov)",
       "importancia": 1,
       "anterior": "48,0",
-      "consenso": "47,3",
+      "consenso": "48,2",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -348,13 +317,63 @@
       "evento": "Balança comercial (out)",
       "importancia": 1,
       "anterior": "US$ 7,74 bi",
-      "consenso": "US$ 9,4 bi",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
       },
       "nota": "Saldo positivo ajuda o fluxo de dólares para o país.",
       "tipo": "balanca-comercial",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-08",
+      "hora": "22h30",
+      "pais": "CN",
+      "evento": "Inflação ao consumidor e ao produtor (out)",
+      "importancia": 2,
+      "anterior": "0,9% a/a",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "win": "volatil"
+      },
+      "nota": "Preços na China mexem com a leitura de demanda por commodities (minério, Vale).",
+      "tipo": "cpi-china",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-10",
+      "hora": "08h",
+      "pais": "BR",
+      "evento": "Ata do Copom",
+      "importancia": 3,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Detalha o balanço de riscos e os sinais para as próximas reuniões.",
+      "tipo": "ata-copom",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-10",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "CPI — inflação ao consumidor (out)",
+      "importancia": 3,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Inflação americana mexe nas apostas para o Fed, nos Treasuries e no dólar global.",
+      "tipo": "cpi-eua",
       "surpresa": null
     }
   ]
