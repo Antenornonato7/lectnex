@@ -42,6 +42,18 @@ jobs:
           git commit -m "arquivo: leitura $(TZ=America/Sao_Paulo date '+%F %H:%M')"
           git pull --rebase -q origin main && git push -q origin HEAD:main
           echo "ok=1" >> "$GITHUB_OUTPUT"
+      - name: Story da Leitura no Telegram privado do dono
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            dia() { git show "$1:data/leitura.json" 2>/dev/null | python3 -c "import json,sys;print(json.load(sys.stdin).get('data',''))" 2>/dev/null; }
+            NOVA=$(dia ${{ github.sha }}); ANT=$(dia ${{ github.event.before }})
+            if [ -z "$NOVA" ] || [ "$NOVA" = "$ANT" ]; then echo "::notice::Mesma edição do dia: story não reenviado."; exit 0; fi
+          fi
+          python3 scripts/story_leitura.py data/leitura.json "$RUNNER_TEMP/lectnex-story.png" || echo "::warning::Falha ao gerar ou enviar o story (não afeta a publicação)."
       - name: Leitura no Telegram (com a imagem da edição)
         if: github.event_name == 'push'
         env:
