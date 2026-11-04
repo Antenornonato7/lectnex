@@ -118,3 +118,7 @@ html:not(.dark) .term-label { color: #55657A; }
 .lk-destaque small { color: #3B2A06; }
 .lk-social { width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border: 1px solid #1E2D42; background: #0B1626; color: #CBD5E1; font-size: 1.25rem; transition: border-color .15s, color .15s; }
 .lk-social:hover { border-color: #14B8A6; color: #2DD4BF; }
+
+.lx-pulse-red { animation: lx-pulse-r 1.8s ease-out infinite; }
+@keyframes lx-pulse-r { 0% { box-shadow: 0 0 0 0 rgba(239,68,68,.6); } 70% { box-shadow: 0 0 0 6px rgba(239,68,68,0); } 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); } }
+@media (prefers-reduced-motion: reduce) { .lx-pulse-red { animation: none; } }
