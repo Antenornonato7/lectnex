@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T16:38-03:00",
+  "atualizado_em": "2026-11-04T17:08-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -311,11 +311,31 @@
     ],
     [
      "16:20",
-     167257.0
+     167367.0
     ],
     [
-     "16:23",
-     167333.0
+     "16:25",
+     167318.0
+    ],
+    [
+     "16:30",
+     167295.0
+    ],
+    [
+     "16:35",
+     167413.0
+    ],
+    [
+     "16:40",
+     167281.0
+    ],
+    [
+     "16:45",
+     167308.0
+    ],
+    [
+     "16:50",
+     167279.0
     ]
    ]
   },
@@ -688,11 +708,35 @@
     ],
     [
      "16:35",
-     5.4536
+     5.4515
     ],
     [
-     "16:38",
-     5.4532
+     "16:40",
+     5.4547
+    ],
+    [
+     "16:45",
+     5.4542
+    ],
+    [
+     "16:50",
+     5.4512
+    ],
+    [
+     "16:55",
+     5.4485
+    ],
+    [
+     "17:00",
+     5.45
+    ],
+    [
+     "17:05",
+     5.4526
+    ],
+    [
+     "17:08",
+     5.4526
     ]
    ]
   },
@@ -1306,6 +1350,21 @@
     "dolar30": -0.03
    },
    {
+    "hora": "14:11",
+    "titulo": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.02,
+    "dolar30": -0.04
+   },
+   {
     "hora": "14:46",
     "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
     "fonte": "Folha",
@@ -1360,7 +1419,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.05,
+    "ibov30": 0.12,
     "dolar30": -0.16
    },
    {
@@ -1373,8 +1432,24 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.08,
     "dolar30": -0.13
+   },
+   {
+    "hora": "16:30",
+    "titulo": "Petrobras despenca mais de 6% com tombo do petróleo",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmZjVUMzbW0teGxQYXJpNVV3R1RXNEpWcWtBVDAzRURsMG5OUFZNNXpNWHlRYkJvYnNqaTFGcEZMRzZKdm5Hci1MZWxEamZSMzdPTnZYb0dnQU96dnVPR1JiN2RmdzVROWxpOUtySlV3c05EN05EcElyLUJZVWV0MW1acnB5S0s4X3B0QTZqSU5uZnZuZnRfdnBfYkY5WmM4T0hBR1NMT2QxdkFPMEHSAbMBQVVfeXFMTXJkOUY4OEcxSk5RTXdXM001MGF3WDl0Y0ozcGZUT2hpSGZ5dktFSGNKZGV0d3d3QmxMUzctaE5Bc1BwUTdkYjctMEtkRVFzaHRIdE5xMVJzWnNtVTFFeFY0aXVLX1kxeV9hdXJKdzc2d0c1NkdzTFRGNkpRTFdhN1VpNzZscjB6bV9IUVJqOUZEbDRkT1lWZ2VaNHdzSWlhUEtRUTViV3JPTlZ0eXNMWVRHNkk?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": -0.1
    },
    {
     "hora": "16:35",
@@ -1389,60 +1464,38 @@
      "ITUB4"
     ],
     "ibov30": null,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "16:52",
+    "titulo": "Vitória democrata deve ampliar pressão sobre tarifas de Trump",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeDBlRHRrTEl5dmdhYWVtS1pMYXVrVG96UW1fYlBwcHdyd0QzZWtoLUxrdXhRY3ZIUmtHcUpHUnZtN0NPMXEzZUJ3Y01RXzdjNFNHWWZ4ZlU1UTFMWm45V1N4a1F3bWVQb0hnMjNwdmVUWHBvR1Z2aEVwdVlBTUVySEx4dVROaXRiS3RaeVdBVHQ4b0FZUW1TVjF3QmxBUUFJV1FqR1I1dVE4QUJQWmQ5TTRYVnp3UUZPbTZjNzFHbkk1U0pJZDN2YWRMWmhmUy16blJKY2pQdUY?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:06",
+    "titulo": "Dólar fecha em queda de 0,65%, a R$ 5,45, em reação às eleições nos EUA e expectativa por Copom",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1keGI2NmtQNVhWN3pLTUtWVnFWS0ttak1xM3paUmtfVFhXY0lFNlRITmpUUFlCd1pOMDFiYUtBTE5kX3gwZmM1Y2haWlc1MHRZNTAwWmFXWnV1RkNVU2ZQLU5B?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-   "publicado": "2026-11-04T04:27-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Após seis pregões de queda, Ibovespa espera Copom com mercado dividido sobre a Selic",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWXNNR2MtNE52Ny16dUVjNWUtUllBZW1mSlBmQ3lJbml3NUNyemRhaWwxTDdnUFBrV0VSYjdvSFR2TXJPamEyMDlkdDNmaFowRXdUckVPSzJpaUY5V1lKa3YzX0RkZnZIZ2JhR2RxX2dfdDY4QlYtcXhtTWF0cV9VbU92X2VkWHI1WUM1WFhrbnVpT0ZhM2oxWmo2UG5pVHc0SlYtMFRiZE9QMUFlalpDMEVwUTZ5TXM0cEFmcTRLSmlsZDIxNG15dnpwa04wSDVUWXQwOTJUTnZtUdIB3wFBVV95cUxPV1FZbktjOGVIVFF4UlVkeWk0TTJkblJjN1FuckZtVnJQcUs3QkVMVF9CM0dPYXVSRkx1YjlkMmdrLWNhdFliUV9iNFZOelY2S1hqTHdwVHYwNGZSUGtXTHJuOURrSzRiUWJORFpWbzllTWtGNTVoZVpmSG9RcVROSWNZWHZodXJrWGVJYU43WUdVRzRDUXdBREI5YXJOTGRNTERJR25BS3VFVWZ6UHNkdXphdVNxOWlhdlVfaHlSVTdvZFQzZEc0Tjd1eHdXQUFvZlpwRE5VQmpDeTFkVDJv?oc=5",
-   "publicado": "2026-11-04T04:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Após seis pregões de queda, Ibovespa espera Copom com mercado dividido sobre a Selic",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa0VpRnZTX2NtTTVCYjMyVUNLLWZpd0lvYnozZUF6RGpRZmlrQnJoVkJNRDB6VTVqaGt1Z0FJU2FNTnY3cVQxVGthU0ZrT2tIQkhHMmViYXA4YXhGaFNXN01WaGsxcnNDdHJQbWFvWkVLQUxydTJ2b2NrSE12LXZnMFIwOVhqTnlTOVVSZGNFWVZiWkgwM3R0eWJKTnF2TFNMLXd4ZU13a2hQRU5HT2RsckxuNmhtTzVrT0dqNFdVMFg1cDgwTXZDbHpuMEhRUmJWRmx6WHEyQnpMb04tRDFJNHAxRDE?oc=5",
-   "publicado": "2026-11-04T04:32-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Copom: mercado vê teste de credibilidade para o BC e teme piora na curva de juros",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMWpwUXl3dXVvdF9vNDdmc0VBdWR1eVZqUVRFVGx2cElQeUQxQTBmdGsyMnc4ZXZIckhfMjBfZWM1WkNFMV93anlTeUQyY0JFZXJIamw3c3FHcVdUOWpiVFlBU2drcG1NQy1lRmROM1BYb21GT0tzVTJ5cmpHN05JdWxFdGE3WHhXZmlKeFp0aUpULW9nRVF4ZW9HdEZSXzjSAaQBQVVfeXFMT1J1blZPSS1zN0JDRkF0UFp5ZFdJalYxMC1lSE5zRnBLcXhfc3F4R05zbHVwbGRCODBVcDN0UlUyV2ttSllvZ0FUQl9temNySUdFY3cxTzRYTnY1cnBVTmZqRVlWZ2VzRzg0V1NBLU1JLWpoa21uMnpZNFdicExJVnBWTkMxNlM2ZFl0alpSS0swQ3lSeHRoUU0tUmRMdU1GTkdpOXA?oc=5",
-   "publicado": "2026-11-04T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Copom decide taxa de juros sob pressão inflacionária e desconfiança do mercado",
    "fonte": "InfoMoney",
@@ -2289,6 +2342,19 @@
    "tickers": []
   },
   {
+   "titulo": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
+   "publicado": "2026-11-04T14:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468021",
@@ -2350,6 +2416,20 @@
    "tickers": []
   },
   {
+   "titulo": "Petrobras despenca mais de 6% com tombo do petróleo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmZjVUMzbW0teGxQYXJpNVV3R1RXNEpWcWtBVDAzRURsMG5OUFZNNXpNWHlRYkJvYnNqaTFGcEZMRzZKdm5Hci1MZWxEamZSMzdPTnZYb0dnQU96dnVPR1JiN2RmdzVROWxpOUtySlV3c05EN05EcElyLUJZVWV0MW1acnB5S0s4X3B0QTZqSU5uZnZuZnRfdnBfYkY5WmM4T0hBR1NMT2QxdkFPMEHSAbMBQVVfeXFMTXJkOUY4OEcxSk5RTXdXM001MGF3WDl0Y0ozcGZUT2hpSGZ5dktFSGNKZGV0d3d3QmxMUzctaE5Bc1BwUTdkYjctMEtkRVFzaHRIdE5xMVJzWnNtVTFFeFY0aXVLX1kxeV9hdXJKdzc2d0c1NkdzTFRGNkpRTFdhN1VpNzZscjB6bV9IUVJqOUZEbDRkT1lWZ2VaNHdzSWlhUEtRUTViV3JPTlZ0eXNMWVRHNkk?oc=5",
+   "publicado": "2026-11-04T16:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVEzYXNXU09LYVdHYk5WVGc2bVpTXzk2ZlJ3ZUdoR0NMaFAzWHNiX1c0OHZLcjhBMFBPSkVaZTQzRW9PM0ZkbHJwNjlpQWNub19QZ3ZsRlp5aHVaVWtmb1ViRUMyUHJETEFBTmZ1cGRzMVNValU0eGlHN3NqWkxrN2p6QlZPX3JUU0NBV2ZVQmFLU2FnWGtROWUtNWpvLXFNSFVpT3d0ME5fTTUtdTdHeU9ZNjZPVTlMczZwMU5XR2dETkpwNmYwRw?oc=5",
@@ -2361,6 +2441,29 @@
    "tickers": [
     "ITUB4"
    ]
+  },
+  {
+   "titulo": "Vitória democrata deve ampliar pressão sobre tarifas de Trump",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeDBlRHRrTEl5dmdhYWVtS1pMYXVrVG96UW1fYlBwcHdyd0QzZWtoLUxrdXhRY3ZIUmtHcUpHUnZtN0NPMXEzZUJ3Y01RXzdjNFNHWWZ4ZlU1UTFMWm45V1N4a1F3bWVQb0hnMjNwdmVUWHBvR1Z2aEVwdVlBTUVySEx4dVROaXRiS3RaeVdBVHQ4b0FZUW1TVjF3QmxBUUFJV1FqR1I1dVE4QUJQWmQ5TTRYVnp3UUZPbTZjNzFHbkk1U0pJZDN2YWRMWmhmUy16blJKY2pQdUY?oc=5",
+   "publicado": "2026-11-04T16:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em queda de 0,65%, a R$ 5,45, em reação às eleições nos EUA e expectativa por Copom",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1keGI2NmtQNVhWN3pLTUtWVnFWS0ttak1xM3paUmtfVFhXY0lFNlRITmpUUFlCd1pOMDFiYUtBTE5kX3gwZmM1Y2haWlc1MHRZNTAwWmFXWnV1RkNVU2ZQLU5B?oc=5",
+   "publicado": "2026-11-04T17:06-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2390,7 +2493,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T16:38-03:00",
+ "atualizado_em": "2026-11-04T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2403,6 +2506,29 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar fecha em queda de 0,65%, a R$ 5,45, em reação às eleições nos EUA e expectativa por Copom",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1keGI2NmtQNVhWN3pLTUtWVnFWS0ttak1xM3paUmtfVFhXY0lFNlRITmpUUFlCd1pOMDFiYUtBTE5kX3gwZmM1Y2haWlc1MHRZNTAwWmFXWnV1RkNVU2ZQLU5B?oc=5",
+   "publicado": "2026-11-04T17:06-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Vitória democrata deve ampliar pressão sobre tarifas de Trump",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeDBlRHRrTEl5dmdhYWVtS1pMYXVrVG96UW1fYlBwcHdyd0QzZWtoLUxrdXhRY3ZIUmtHcUpHUnZtN0NPMXEzZUJ3Y01RXzdjNFNHWWZ4ZlU1UTFMWm45V1N4a1F3bWVQb0hnMjNwdmVUWHBvR1Z2aEVwdVlBTUVySEx4dVROaXRiS3RaeVdBVHQ4b0FZUW1TVjF3QmxBUUFJV1FqR1I1dVE4QUJQWmQ5TTRYVnp3UUZPbTZjNzFHbkk1U0pJZDN2YWRMWmhmUy16blJKY2pQdUY?oc=5",
+   "publicado": "2026-11-04T16:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
    "fonte": "Money Times",
@@ -2417,12 +2543,39 @@
    ]
   },
   {
+   "titulo": "Petrobras despenca mais de 6% com tombo do petróleo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmZjVUMzbW0teGxQYXJpNVV3R1RXNEpWcWtBVDAzRURsMG5OUFZNNXpNWHlRYkJvYnNqaTFGcEZMRzZKdm5Hci1MZWxEamZSMzdPTnZYb0dnQU96dnVPR1JiN2RmdzVROWxpOUtySlV3c05EN05EcElyLUJZVWV0MW1acnB5S0s4X3B0QTZqSU5uZnZuZnRfdnBfYkY5WmM4T0hBR1NMT2QxdkFPMEHSAbMBQVVfeXFMTXJkOUY4OEcxSk5RTXdXM001MGF3WDl0Y0ozcGZUT2hpSGZ5dktFSGNKZGV0d3d3QmxMUzctaE5Bc1BwUTdkYjctMEtkRVFzaHRIdE5xMVJzWnNtVTFFeFY0aXVLX1kxeV9hdXJKdzc2d0c1NkdzTFRGNkpRTFdhN1VpNzZscjB6bV9IUVJqOUZEbDRkT1lWZ2VaNHdzSWlhUEtRUTViV3JPTlZ0eXNMWVRHNkk?oc=5",
+   "publicado": "2026-11-04T16:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Tesouro Direto volta do apagão com tombo de até 38 pontos-base pouco antes do Copom",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQmJnMXBlNWJCX3czX3B1eFlzQ2xMbjB6YU1CT1VKTjRRMDltLWxlVFhWSGFxRG4yeWRHcFpJRzRmcXJhd3B2RmIzWW5od185enVoU0kzWVk1YVZESE9mckR4RS1sUmpHSmtmU3lRcTFONGkyNTV5S2dUSEh6RVdpNF96NFNvbVNMN3Q5UGJlbFHSAZYBQVVfeXFMUHZ1azgwQzZfYTdQOFo0T2hNVGZhR0Z1b0hmT3FBMElyWFNTcUcxM3pzVnZYWmdDQzdBRWo5M1pDYzBkTzNVUnN5NWJmZW1mM2JoaFdiWVNuXy1JN09CWUpRbWZpVUtCaDFkTTVOaFEtSWx5LWNuV3JSLW1OQ21hMWFuaW1rZU9KY3BObGk1NzRFdEJ3UmtR?oc=5",
    "publicado": "2026-11-04T16:19-03:00",
    "impacto": "alto",
    "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
+   "publicado": "2026-11-04T16:01-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
@@ -2446,73 +2599,6 @@
    "publicado": "2026-11-04T15:24-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Petrobras mantém estável preço do gás vendido a distribuidoras",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVVdKMVlyd1llcjhXRFNpbkVoblhCbU5rclhENmJRVjZhN1NoeVdqNHg5VTBCQVF3RF9zMmdMQ2pMSFZyc19MeUQxNlNXQzA3RzNTUENpWkpwa09XemEyZW9CbHdOemM5cVNRS3VJemx3VVIyZ3RqTklWMDVkbVBnZ1VuanF5ODQwa0tKQXRFUFc1QjRVd2dzRw?oc=5",
-   "publicado": "2026-11-04T14:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468021",
-   "publicado": "2026-11-04T14:46-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Ações de Petrobras, PRIO e de mais petroleiras caem até 8% com derrocada do petróleo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYmxtM0hISTVablpRajVaVW43VEYzcFJJSUNEUThRZEpnYjBSSFlZeXlwWjFwcVdJQ0QxdGl0ejRPTm1LaHBoN1lQOVB2OHZ2ekpLS0NZRzFUaVhyVFpzUjRQZlJ4R0Qta0hnQmdMT0dyTlZmYS16Y0Q3czhBN1NEckRVa1ktNGR0UmdUR010Snd6Wk05NlNBQnM0a09sMTY1LWhZdV9najA5RmZtbUFF0gG0AUFVX3lxTE9yazFJOUlfN0U2SllOMUIwdTRoWkJnZEwzQklTTmdPQ1p4TEpVc0JON0ZxdGRuNXJCVWVHVEI1UUZoMGVQQVJwekg0ZHRwdVp3Rk9PMjhsQmZ0UC1QVWlFNDB2VlJxMWhVaTd6ZHZtN1FLNnJHb2hnMEEtOE9XX1lXVzBOcmVER2Z3ODNzbTdpczBIWFJBeWlIazdrZ2R6SkIzYzg1QkNEN0JHVDRPc1NTOUJGRw?oc=5",
-   "publicado": "2026-11-04T14:34-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4",
-    "PRIO3"
-   ]
-  },
-  {
-   "titulo": "Petróleo brent desaba até 9% com mercado de olho em conflito no Irã após midterms",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQa0xuZjd2UExyMU5LMnFtZ0NJTE9BLWpQWktSNXpoT09oUHlBZDdvUHMwdE9NMEtXS2dSYlpSZlpYdldHNnNWcmZSNVFlRTRSN05La081Y3JJQ1dmdWhnQUNfdzlBN2VuVzE5UWRhdUtYYWJGcEZ0V0g5YXlLUkNUb2d2dWNOdVNLVEdzN9IBkgFBVV95cUxPOC00OVJEOXlqMEg4aDhZNVdod3QxN0tNTTBwS2k1QlVsUm5LRVhVR2VaVFdReTJoby1LaVBXNXprRWZNZ1VQS3NrdGs2dUozOHNKbngtX3cxZ3ZwQkpRanRyUm5RTlZFQU9leDBUb3NtcnRVQ01iRXIwSVBBN1RLcnRSUkJVbnFlamtlSUE5Rms3QQ?oc=5",
-   "publicado": "2026-11-04T14:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-   "publicado": "2026-11-04T14:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
