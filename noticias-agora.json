@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T14:53-03:00",
+  "atualizado_em": "2026-11-04T14:55-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -227,11 +227,11 @@
     ],
     [
      "14:35",
-     167986.0
+     167757.0
     ],
     [
-     "14:38",
-     167953.0
+     "14:40",
+     167834.0
     ]
    ]
   },
@@ -520,11 +520,11 @@
     ],
     [
      "14:50",
-     5.4662
+     5.4664
     ],
     [
-     "14:53",
-     5.4657
+     "14:55",
+     5.4636
     ]
    ]
   },
@@ -2104,13 +2104,12 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T14:53-03:00",
+ "atualizado_em": "2026-11-04T14:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
@@ -2158,6 +2157,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa ensaia recuperação após seis quedas com bom humor global em dia de Copom",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnVudWxxdmc3bTNQQnMxV3JwRVJwdlZfQ3dDdjZtNk9US3RvSHhKRlA1UlJXMDdNejA3V0lCYUZ3MkZob0NraThFTlN2b19sbEF1VkcyNndzbEFfYjZPbmtTNVRSN1NaZkNwSDFiTVVSUDcwOERvbDhmNjB2OFRWeTNUczB3ZVdlQlRucUJXTkNXZER4MUs3WXM3M2pncWI0c0dkMWNEXzNUT1Q0RV80T3JsV0psMlk?oc=5",
+   "publicado": "2026-11-04T13:16-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Rivalidade entre EUA e China impulsiona investimentos em mineração no Brasil",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/rivalidade-entre-eua-e-china-impulsiona-investimentos-em-mineracao-no-brasil.shtml",
@@ -2166,18 +2178,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
-   "publicado": "2026-11-04T12:53-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -2292,31 +2292,6 @@
    "tickers": [
     "EMBR3"
    ]
-  },
-  {
-   "titulo": "Ibovespa ensaia recuperação após seis quedas com bom humor global em dia de Copom",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnVudWxxdmc3bTNQQnMxV3JwRVJwdlZfQ3dDdjZtNk9US3RvSHhKRlA1UlJXMDdNejA3V0lCYUZ3MkZob0NraThFTlN2b19sbEF1VkcyNndzbEFfYjZPbmtTNVRSN1NaZkNwSDFiTVVSUDcwOERvbDhmNjB2OFRWeTNUczB3ZVdlQlRucUJXTkNXZER4MUs3WXM3M2pncWI0c0dkMWNEXzNUT1Q0RV80T3JsV0psMlk?oc=5",
-   "publicado": "2026-11-04T11:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Petróleo recua mais de 3% após eleições para Congresso dos EUA",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQa0xuZjd2UExyMU5LMnFtZ0NJTE9BLWpQWktSNXpoT09oUHlBZDdvUHMwdE9NMEtXS2dSYlpSZlpYdldHNnNWcmZSNVFlRTRSN05La081Y3JJQ1dmdWhnQUNfdzlBN2VuVzE5UWRhdUtYYWJGcEZ0V0g5YXlLUkNUb2d2dWNOdVNLVEdzN9IBkgFBVV95cUxPOC00OVJEOXlqMEg4aDhZNVdod3QxN0tNTTBwS2k1QlVsUm5LRVhVR2VaVFdReTJoby1LaVBXNXprRWZNZ1VQS3NrdGs2dUozOHNKbngtX3cxZ3ZwQkpRanRyUm5RTlZFQU9leDBUb3NtcnRVQ01iRXIwSVBBN1RLcnRSUkJVbnFlamtlSUE5Rms3QQ?oc=5",
-   "publicado": "2026-11-04T11:54-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
