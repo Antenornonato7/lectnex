@@ -103,3 +103,18 @@ html:not(.dark) .term-label { color: #55657A; }
 .lx-pulse { box-shadow: 0 0 0 0 rgba(52, 211, 153, .55); animation: lx-pulse 2.4s ease-out infinite; }
 @keyframes lx-pulse { 0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, .55); } 70% { box-shadow: 0 0 0 6px rgba(52, 211, 153, 0); } 100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); } }
 @media (prefers-reduced-motion: reduce) { .lx-pulse { animation: none; } }
+
+/* Página de links (bio do Instagram) */
+.lk { display: flex; align-items: center; gap: .9rem; padding: 1rem 1.1rem; background: #0B1626; border: 1px solid #1E2D42; color: #F1F5F9; transition: border-color .15s, transform .15s, background .15s; }
+.lk:hover { border-color: #14B8A6; transform: translateY(-1px); background: #0E1C30; }
+.lk > i:first-child { font-size: 1.5rem; color: #2DD4BF; flex-shrink: 0; }
+.lk span { flex: 1; min-width: 0; }
+.lk strong { display: block; font-weight: 700; line-height: 1.25; }
+.lk small { display: block; color: #94A3B8; font-size: .8rem; margin-top: .15rem; }
+.lk-seta { color: #64748B; }
+.lk-destaque { background: #F59E0B; border-color: #F59E0B; color: #05101C; }
+.lk-destaque:hover { background: #FBBF24; border-color: #FBBF24; }
+.lk-destaque > i:first-child, .lk-destaque .lk-seta { color: #05101C; }
+.lk-destaque small { color: #3B2A06; }
+.lk-social { width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border: 1px solid #1E2D42; background: #0B1626; color: #CBD5E1; font-size: 1.25rem; transition: border-color .15s, color .15s; }
+.lk-social:hover { border-color: #14B8A6; color: #2DD4BF; }
