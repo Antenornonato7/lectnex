@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T11:40-03:00",
+  "atualizado_em": "2026-11-04T11:43-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -75,7 +75,11 @@
     ],
     [
      "11:25",
-     167498.0
+     167477.0
+    ],
+    [
+     "11:28",
+     167457.0
     ]
    ]
   },
@@ -212,7 +216,11 @@
     ],
     [
      "11:40",
-     5.4797
+     5.4755
+    ],
+    [
+     "11:43",
+     5.4783
     ]
    ]
   },
@@ -583,7 +591,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.35,
     "dolar30": 0.02
    },
    {
@@ -1344,7 +1352,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T11:40-03:00",
+ "atualizado_em": "2026-11-04T11:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1443,19 +1451,6 @@
    "tickers": []
   },
   {
-   "titulo": "Gerdau encerra produção de aço em unidade de Divinópolis, em Minas Gerais",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/negocios/gerdau-encerra-producao-aco-unidade-divinopolis-minas-gerais/",
-   "publicado": "2026-11-04T10:41-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "GGBR4"
-   ]
-  },
-  {
    "titulo": "Mercado espera que Copom interrompa cortes na Selic e reconheça piora do cenário econômico",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOd1dURTM1RC1VVUppdnVNeGdfRXFnY0pGbEtVRnRBUFJiXzJHQ0R3S0wwRDRta0JJbS1URHlmX3hJS3B2aGgxd0dENTlZVklBSlRGM0dvd201YnpBZ2hEbnRzcmlrWDBsR1dMWU45eEh4Z1hWNlZ1TnBOc3VDMExWTmtqZ2FZMm93cVFBckwtdDRqbzlWellYMldjOHNKbE5MVHcwYXd5MXRVQnN1b2c0Szhvd0Vyd0p5SFRDd2xCS0NXOU9Nd1QtZnZlM1BGZWZwLS1td3JtUC0wUTU2THfSAewBQVVfeXFMUFJLQ1NDbk11VDRYUDJ0eFJvYldUV2JJWjJVcjltNWR6c01RU3dGYTI2VHc2cndnRm9oM1FMYTJ1b2dmdVVNel9Nc0dWTUFmOFRwVjNYVE1RM1hYRHZHdzF6d0FvT1RDVWJoRVVFdzZVclpob3ZRMXBsbjdfRU9hbXliQjBsWGZFWlBoUHQwamg4SzJhSUFjU1JCZk96VUR2YWVkWllEUDFxYlVUVGR6VV96ekpvV045NkRPRkxaSXhZM0FsQzRWdFhnWkVrVGFBclQtVEdCeE9NdE8zMkdpNWl5LU1pSjBVZGxVVlc?oc=5",
@@ -1489,6 +1484,17 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+   "publicado": "2026-11-04T10:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
