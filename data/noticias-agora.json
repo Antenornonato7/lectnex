@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T10:08-03:00",
+  "atualizado_em": "2026-11-04T10:38-03:00",
+  "ibov": {
+   "anterior": 165528.92,
+   "pontos": [
+    [
+     "10:00",
+     165877.0
+    ],
+    [
+     "10:05",
+     166854.0
+    ],
+    [
+     "10:10",
+     167430.0
+    ],
+    [
+     "10:15",
+     167145.0
+    ],
+    [
+     "10:20",
+     167416.0
+    ],
+    [
+     "10:23",
+     167375.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.4883,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.4657
+     5.4608
     ],
     [
-     "10:08",
-     5.4677
+     "10:10",
+     5.4626
+    ],
+    [
+     "10:15",
+     5.465
+    ],
+    [
+     "10:20",
+     5.4661
+    ],
+    [
+     "10:25",
+     5.4616
+    ],
+    [
+     "10:30",
+     5.465
+    ],
+    [
+     "10:35",
+     5.4612
+    ],
+    [
+     "10:38",
+     5.4635
     ]
    ]
   },
@@ -79,6 +132,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.17
    },
    {
@@ -91,6 +145,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.14
    },
    {
@@ -105,6 +160,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.06
    },
    {
@@ -117,6 +173,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.05
    },
    {
@@ -130,6 +187,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.05
    },
    {
@@ -142,6 +200,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.02
    },
    {
@@ -155,6 +214,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.03
    },
    {
@@ -171,7 +231,22 @@
      "KLBN11",
      "SMAL11"
     ],
+    "ibov30": null,
     "dolar30": -0.03
+   },
+   {
+    "hora": "09:36",
+    "titulo": "Juros futuros acompanham Treasuries e têm alívio; mercado segue à espera do Copom",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSTB5TWZuS3hSZnRxTHZveHQtMTN5WWVPTUhXNmZzdHZRVy1lcGx1bnVmbTRXOVpKdU5JXzlrOUFncVV2ZWNqZTFqX1Jmc3UtSkk3Sm1EM2owQzh5MXBadDA2ME1zb0luSC1IdGRmNlczNEUzWUo2SmpyRUJuVzVXV25GRkFSb0swSHFzVkt4cktPZzh0dEtJZno2cmtuaUJ4czFVOU45VHpxaGlBeEhCb3Y2QnVyX0N6anpNajJaMWNYdU53OTlvQm5pN0FrRk1SS2ZSTdIB4wFBVV95cUxOSHhwUlZxSWllSGs3aFFVR1E5eUNwaU90TDRHRjdxSW9hZWx6dGdwem5RMVJIWU9xUGpXcWJFZkhZd0RDdmJnQ3BPN3QwZ3J3V01JMXNUQkVDMjhocWNKM0cwd0kwUldYdUVwaDdseTI2V0Q5VDJiZ1pQYkNPT3V2OVhVamtoejI4WkxteVgxS0t0MUhkUTU5QTFaN055ZjRjZkxfd0Qtb3JpMXczRnpFcWExdnROc3hraC1STnkxV3g0ZW5tSDZTdGRsbk9aY3JlblJsRk5xYTc2akgxb05mM3psdw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.2
    },
    {
     "hora": "09:38",
@@ -184,7 +259,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": -0.11
+    "ibov30": null,
+    "dolar30": -0.2
    },
    {
     "hora": "09:52",
@@ -197,7 +273,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.13
    },
    {
     "hora": "09:53",
@@ -210,7 +287,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.13
    },
    {
     "hora": "09:56",
@@ -223,6 +301,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.14
+   },
+   {
+    "hora": "10:21",
+    "titulo": "Queda das ações faz 8 papéis ultrapassarem a Selic de 13,75% em dividend yield teórico",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTjl5dHRZTUtSYWJXbU5iUU1aVU91QlBKSmxxRE84SXI0cUhxLTVSTnJKa0hacXdRU25nbktiVWF0N0ZlNnR6cDZJZnNhYmUyTnF4blBRNlo3M0xfX2FBYk41bHRicmRIclFNc0FITFhzSzd4SXJJVm5pVzNGTENjM3FCTEtNY2hJcjYyYUQwZUMwNHBVNmJEM0s1MkNUU3M4b284blNaWmlmTGxSaDM3QVZaYUh1Zw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -710,6 +803,18 @@
    ]
   },
   {
+   "titulo": "Juros futuros acompanham Treasuries e têm alívio; mercado segue à espera do Copom",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSTB5TWZuS3hSZnRxTHZveHQtMTN5WWVPTUhXNmZzdHZRVy1lcGx1bnVmbTRXOVpKdU5JXzlrOUFncVV2ZWNqZTFqX1Jmc3UtSkk3Sm1EM2owQzh5MXBadDA2ME1zb0luSC1IdGRmNlczNEUzWUo2SmpyRUJuVzVXV25GRkFSb0swSHFzVkt4cktPZzh0dEtJZno2cmtuaUJ4czFVOU45VHpxaGlBeEhCb3Y2QnVyX0N6anpNajJaMWNYdU53OTlvQm5pN0FrRk1SS2ZSTdIB4wFBVV95cUxOSHhwUlZxSWllSGs3aFFVR1E5eUNwaU90TDRHRjdxSW9hZWx6dGdwem5RMVJIWU9xUGpXcWJFZkhZd0RDdmJnQ3BPN3QwZ3J3V01JMXNUQkVDMjhocWNKM0cwd0kwUldYdUVwaDdseTI2V0Q5VDJiZ1pQYkNPT3V2OVhVamtoejI4WkxteVgxS0t0MUhkUTU5QTFaN055ZjRjZkxfd0Qtb3JpMXczRnpFcWExdnROc3hraC1STnkxV3g0ZW5tSDZTdGRsbk9aY3JlblJsRk5xYTc2akgxb05mM3psdw?oc=5",
+   "publicado": "2026-11-04T09:36-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar cai com resultado das eleições dos EUA e decisão do Copom no radar",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcEZZYVhwM3M3OXZfeGlOVXdWcF91S2wxRVhtd0tRWDVKTjlDRERma3JuR3ExTlgwNHd6QWVCLXZPelZUOHJrSDJiUFh5bUJVRVF2ZHNmSGFrbFlwUF9xbm4yc0xzQ1hGQ1p5dlhIQ19Ub0RCVFIxUGtoUTZac3RvdlhacGVpM0lPZTlkUElKb0MwMTFyZnkxcWF2Ym1wakR2QURiUHFUd09sZjd3d3lhS1Y1NDZueTF1QTZ3bG14OVUxM1U?oc=5",
@@ -756,6 +861,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Queda das ações faz 8 papéis ultrapassarem a Selic de 13,75% em dividend yield teórico",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTjl5dHRZTUtSYWJXbU5iUU1aVU91QlBKSmxxRE84SXI0cUhxLTVSTnJKa0hacXdRU25nbktiVWF0N0ZlNnR6cDZJZnNhYmUyTnF4blBRNlo3M0xfX2FBYk41bHRicmRIclFNc0FITFhzSzd4SXJJVm5pVzNGTENjM3FCTEtNY2hJcjYyYUQwZUMwNHBVNmJEM0s1MkNUU3M4b284blNaWmlmTGxSaDM3QVZaYUh1Zw?oc=5",
+   "publicado": "2026-11-04T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -785,7 +902,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T10:08-03:00",
+ "atualizado_em": "2026-11-04T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -800,6 +917,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Queda das ações faz 8 papéis ultrapassarem a Selic de 13,75% em dividend yield teórico",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTjl5dHRZTUtSYWJXbU5iUU1aVU91QlBKSmxxRE84SXI0cUhxLTVSTnJKa0hacXdRU25nbktiVWF0N0ZlNnR6cDZJZnNhYmUyTnF4blBRNlo3M0xfX2FBYk41bHRicmRIclFNc0FITFhzSzd4SXJJVm5pVzNGTENjM3FCTEtNY2hJcjYyYUQwZUMwNHBVNmJEM0s1MkNUU3M4b284blNaWmlmTGxSaDM3QVZaYUh1Zw?oc=5",
+   "publicado": "2026-11-04T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
@@ -807,6 +936,18 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "China expands overseas mining stakes, tightening grip on critical minerals",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/china-critical-minerals-rare-earths-trump-japan-export-control-.html",
+   "publicado": "2026-11-04T10:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -871,21 +1012,6 @@
    "tickers": []
   },
   {
-   "titulo": "Após tombo da Bolsa, KLBN11 e YDUQ3 podem reagir? E BOVA11 e SMAL11?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZkJJOWhoZ21Ha2U4YlU5Wjh3TXRvY1FBMXRfZU91T25Rd29QbzllUTBGRXJTNG9sVV9uQ2dzX1d2VzB3TFVFREJlTHJWNHVkeEhNQVpINGFrQkxxMWhiVUlhTC1nd1lJelhxRW9BSTJFMFZWUjFfOWZKUllEb0JUMnR2NG5UeDdXUzU4OGMyRC1IVHBDSDYtMEVhaUJFcUhSOHpHLVhmQdIBrAFBVV95cUxNWXYzOXdYZjRkU2xld0pidUtuajlaakpOUXhYb3N4a0wxeGNjdkVzb3NlSmJGR1NQMDZXMzI3RzV3YzBLeXI5SVNDTGtOS1pyZDZBTFNqLWNtbXcxTVBCbUNOSVdwUFV2UzNRUEJCa1NYbngxSERZVnNtQ0lickFVUHJFOE80am1yREs3MXNxQUFOLUFPSXE0ZEQybjFISGtCZnJtb2ZsTWY3Yzdz?oc=5",
-   "publicado": "2026-11-04T09:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BOVA11",
-    "KLBN11",
-    "SMAL11"
-   ]
-  },
-  {
    "titulo": "Dólar acompanha alívio externo após ‘midterms’ e opera em queda ante o real",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZDZnQks5R29pWTdJSjExanZFQXR1dFpsVENoRG9tUkZHbXFTbGtuRnVrampoVVVCUmoya3Y2WmlOWXJLWFEwQzhlMHN6QU1jckxyZURxdUFYcUJhOGlQZkV1X0J0SjNRVWNRWVluU3dFTFdMeFlFQ3hndHNVb2VkWF9vVlY1S3ZndVdqcTMyRG04YmJ1S2pxcm5WVFZOVlphVHJJc3hEUkpXTTlBNUlUMnpsNjRYVXlfbjZnVTJUcDBXRlNYeXF1UjVxUdIB2gFBVV95cUxOSUx0M1huaE1fdmtRdUQ3UThhblR4YzFSc0t5eWt0OW1Qc3M0Um1MZ005N2U3SGxFQ2ZVNXFORWUtZDhuWTdfSjVBNk9NNE5rdHpUM2daTW9SZUFGQURNUkdnNzBqWTdKTFp5VlZhemVFWF9ST21oUXp1QzZwWFJfNFNEcGVjeFg5R3NGRmlBNHRTMHNSaWRsS2NYdDhxcktSd0NfQzg5NTZ4eHdBUVR0aGR3XzFnM0JKNmtJSlhEWVNkcGJCX3NWM2JWM2FzdGtNUkZyOVh1d2ZyZw?oc=5",
@@ -944,18 +1070,6 @@
    "tickers": []
   },
   {
-   "titulo": "Crescimento de serviços da China desacelera para mínima em três meses",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468018",
-   "publicado": "2026-11-04T09:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Selic vai parar de cair? Maioria dos bancos espera pausa do Copom amanhã; veja projeções",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOTk2ajRJQ2JqM0Y3MnFUQkk2MVZCU3VfdURwdjVzNXZ4blVqc1FYNXg0ZVFvcVBuaXJlSHhQVzl0MEZ6VmhoZEtGRFpULXh4OVRUTlhDOENaano3bmhMaTh4VkEwaWNIMWM3N3AwdW9xLXNacXhGVjRobks2YVhveEJkT3ROc0VBYzlIci10bmVJbWtZb252RjZBQ19LWDVhM3ZEUU9wQzhsOE1xQi1HUzdJRHdhemdxVG5RRkJNQQ?oc=5",
@@ -968,22 +1082,23 @@
    "tickers": []
   },
   {
-   "titulo": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
-   "publicado": "2026-11-04T07:47-03:00",
+   "titulo": "Tempo real: Ibovespa sobe 1% à espera de Copom",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPM0lJdlBLNklMRm0zemlscUdWSU1SbTlHTGJsbVUzWURKVEsweTJCTWpJN3VVMW9hdTVDcHYydzJleGZQeF9IZUhzdTh3dHh5T2FNQ3B4MXVnQmc5cEVkMVhYTVJ4NmpDNXF6bzNiMUxiOXJUd2MxUmg0NWh5UU9lcWRR?oc=5",
+   "publicado": "2026-11-04T08:51-03:00",
    "impacto": "alto",
    "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
    "tickers": []
   },
   {
-   "titulo": "Minidólar (WDOZ26): equipe econômica e Copom sustentam cautela",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQ3ZWVlRIZDJSOFVlWmJ4SklEM191SEhxeDhRTHl1SFk0T3Jyc2dOTHF4ZGN2Q2dSTXlnQmlRc3MySk1QSXF0cTQtYlFxOXdFM0RqNTZ6MlpPY0dBTVNvWW5jVXJRQjA0UUl1ajhHa1VzTGl5a1hxNnpSUklvUDl2Y3RRM0tvWnZWOUtIM0lR0gGTAUFVX3lxTFBFV2kya3NOdzRIMmtKZ2psNnlpeUFYQ0lVc1RMWXljcHJQMlQyQU00TVV2SXBuVjgxQU16TC0xMHE1ZDQ2bU94ZXNScmJiTkxLLURwX3Jfc3lFVEMxaGdGOENRdUZsTGQ3aGk2M2t3VnR3NDRpUVJGSmZQUE9fcnNGZlRBbVBhNDc2TnZINko4RE81RQ?oc=5",
-   "publicado": "2026-11-04T07:11-03:00",
+   "titulo": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
+   "publicado": "2026-11-04T07:47-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
