@@ -122,3 +122,11 @@ html:not(.dark) .term-label { color: #55657A; }
 .lx-pulse-red { animation: lx-pulse-r 1.8s ease-out infinite; }
 @keyframes lx-pulse-r { 0% { box-shadow: 0 0 0 0 rgba(239,68,68,.6); } 70% { box-shadow: 0 0 0 6px rgba(239,68,68,0); } 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); } }
 @media (prefers-reduced-motion: reduce) { .lx-pulse-red { animation: none; } }
+
+/* Glossário no texto */
+abbr.lx-gl { text-decoration: underline dotted; text-decoration-color: rgba(20, 184, 166, .7); text-underline-offset: 3px; text-decoration-thickness: 1.5px; cursor: help; }
+abbr.lx-gl:hover, abbr.lx-gl:focus-visible { text-decoration-color: #14B8A6; color: inherit; outline: none; background: rgba(20, 184, 166, .08); }
+.lx-gl-tip { position: absolute; z-index: 70; background: #0B1626; color: #E2E8F0; border: 1px solid #14B8A6; box-shadow: 0 12px 32px rgba(0,0,0,.45); padding: .8rem .9rem; font-size: .8rem; line-height: 1.45; }
+.lx-gl-tip strong { display: block; color: #2DD4BF; font-size: .85rem; margin-bottom: .25rem; }
+.lx-gl-tip p { margin: 0; color: #CBD5E1; }
+.lx-gl-tip a { display: inline-block; margin-top: .5rem; color: #F59E0B; font-weight: 700; font-size: .75rem; }

@@ -1046,6 +1046,89 @@
         }
     }
 
+    /* ------------------------------------------------------------------ GLOSSÁRIO NO TEXTO (dicas ao passar o mouse/tocar) */
+    // Marca a 1ª ocorrência de cada termo de data/glossario.json no conteúdo da página (até 30 por página).
+    function glossDicas() {
+        const pg = document.body.dataset.page || '';
+        if (['glossario', 'links'].includes(pg)) return;
+        const slug = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        fetch('data/glossario.json', { cache: 'force-cache' }).then(r => r.ok ? r.json() : null).then(g => {
+            if (!g) return;
+            const termos = [], vistos = new Set();
+            (g.termos || []).forEach((x, i) => {
+                const m = x.t.match(/^(.*?)\s*\((.*)\)\s*$/);
+                const nomes = m ? [m[1], m[2]] : [x.t];
+                nomes.forEach(n => {
+                    n = n.trim();
+                    if (n.length < 3 && !/^[A-Z]{2,}$/.test(n)) return;
+                    if (/^(dedo-duro|preço\/lucro|juros sobre capital próprio|preço\/valor patrimonial|inflação implícita|dado econômico|aluguel de ações)$/i.test(n)) return;
+                    const k = n.toLowerCase(); if (vistos.has(k)) return; vistos.add(k);
+                    const sigla = /^[A-Z0-9/+]{2,}$/.test(n);
+                    const esc = n.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&').replace(/\s+/g, '\\s+');
+                    termos.push({ i, re: new RegExp(`(^|[^\\p{L}\\p{N}])(${esc})(?![\\p{L}\\p{N}])`, sigla ? 'u' : 'iu') });
+                });
+            });
+            termos.sort((a, b) => b.re.source.length - a.re.source.length);
+            const feitos = new Set(); let total = 0;
+            const varrer = raiz => {
+                if (total >= 30) return;
+                const w = document.createTreeWalker(raiz, NodeFilter.SHOW_TEXT, {
+                    acceptNode: n => {
+                        if (!n.nodeValue || n.nodeValue.trim().length < 3 || !/[a-zà-ú]/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT; // rótulos em caixa alta ficam de fora
+                        const p = n.parentElement;
+                        if (!p || p.closest('.term-label,.src-tag,nav,a,button,input,textarea,select,option,label,code,pre,script,style,abbr,h1,svg,summary,noscript,[contenteditable],#lx-header,#lx-topbar,#lx-footer,#lx-palette,#lx-cookies,[data-sem-glossario],.lx-gl-tip')) return NodeFilter.FILTER_REJECT;
+                        return NodeFilter.FILTER_ACCEPT;
+                    }
+                });
+                const nos = []; while (w.nextNode()) nos.push(w.currentNode);
+                for (const no of nos) {
+                    if (total >= 30) break;
+                    for (const t of termos) {
+                        if (feitos.has(t.i)) continue;
+                        const m = no.nodeValue.match(t.re); if (!m) continue;
+                        const ini = m.index + m[1].length, fim = ini + m[2].length;
+                        const depois = no.splitText(ini); depois.nodeValue = depois.nodeValue.slice(m[2].length);
+                        const ab = document.createElement('abbr');
+                        ab.className = 'lx-gl'; ab.tabIndex = 0; ab.dataset.gl = t.i; ab.textContent = m[2]; ab.removeAttribute('title');
+                        depois.parentNode.insertBefore(ab, depois);
+                        feitos.add(t.i); total++;
+                        break; // um termo por trecho de texto
+                    }
+                }
+            };
+            const main = document.querySelector('main') || document.body;
+            varrer(main);
+            // conteúdo que chega depois (Leitura, calendário…): varre de novo, com folga
+            let tmr; new MutationObserver(ms => { if (total >= 30 || ms.every(m => [...m.addedNodes].every(n => n.classList && n.classList.contains('lx-gl')))) return; clearTimeout(tmr); tmr = setTimeout(() => varrer(main), 900); }).observe(main, { childList: true, subtree: true });
+
+            // dica flutuante
+            const tip = document.createElement('div');
+            tip.className = 'lx-gl-tip'; tip.setAttribute('role', 'tooltip'); tip.hidden = true;
+            document.body.appendChild(tip);
+            let aberto = null, fechar;
+            const mostrar = el => {
+                clearTimeout(fechar);
+                const x = g.termos[+el.dataset.gl]; if (!x) return;
+                const d = x.d.length > 230 ? x.d.slice(0, 227).replace(/\s+\S*$/, '') + '…' : x.d;
+                tip.innerHTML = `<strong>${LX.esc(x.t)}</strong><p>${LX.esc(d)}</p><a href="glossario.html#${slug(x.t)}">Ver no glossário →</a>`;
+                tip.hidden = false; aberto = el;
+                const r = el.getBoundingClientRect(), tw = Math.min(320, window.innerWidth - 24);
+                tip.style.width = tw + 'px';
+                const left = Math.max(12, Math.min(window.innerWidth - tw - 12, r.left + r.width / 2 - tw / 2));
+                const th = tip.offsetHeight, top = r.bottom + 8 + th > window.innerHeight && r.top > th + 12 ? r.top - th - 8 : r.bottom + 8;
+                tip.style.left = left + 'px'; tip.style.top = (top + window.scrollY) + 'px';
+                LX.track('glossario_dica', { termo: x.t });
+            };
+            const esconder = () => { fechar = setTimeout(() => { tip.hidden = true; aberto = null; }, 180); };
+            document.addEventListener('mouseover', e => { const el = e.target.closest && e.target.closest('.lx-gl'); if (el) mostrar(el); else if (aberto && !e.target.closest('.lx-gl-tip')) esconder(); });
+            tip.addEventListener('mouseenter', () => clearTimeout(fechar));
+            document.addEventListener('focusin', e => { if (e.target.classList && e.target.classList.contains('lx-gl')) mostrar(e.target); });
+            document.addEventListener('click', e => { const el = e.target.closest && e.target.closest('.lx-gl'); if (el) { e.preventDefault(); aberto === el && !tip.hidden ? (tip.hidden = true, aberto = null) : mostrar(el); } else if (!e.target.closest('.lx-gl-tip')) { tip.hidden = true; aberto = null; } });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') { tip.hidden = true; aberto = null; } });
+            window.addEventListener('scroll', () => { if (!tip.hidden && aberto) { const r = aberto.getBoundingClientRect(); if (r.bottom < 0 || r.top > window.innerHeight) { tip.hidden = true; aberto = null; } } }, { passive: true });
+        }).catch(() => { });
+    }
+
     /* ------------------------------------------------------------------ BOOT */
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
@@ -1056,6 +1139,7 @@
         fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
         newsForms();
         (window.requestIdleCallback || (f => setTimeout(f, 1500)))(footStatus); setInterval(footStatus, 5 * 6e4);
+        setTimeout(() => (window.requestIdleCallback || (f => f()))(glossDicas), 1800);
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });
         if (LX.config.telegram) fetch('data/telegram.json?t=' + Math.floor(Date.now() / 36e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.seguidores >= 25) { tgCount = j.seguidores; newsForms(); } }).catch(() => { });
         // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs
