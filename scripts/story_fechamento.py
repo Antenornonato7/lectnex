@@ -82,9 +82,38 @@ def gerar(r, saida, previa=None):
                 yy += 46
         y += 46 + 46 * 3 + 20
 
+    # antes × depois: o histórico da manhã contra o que aconteceu hoje (dia de evento forte)
+    ad = r.get('antes_depois')
+    if ad and y < 1200:
+        y += 18
+        dr.text((M, y), f'ANTES × DEPOIS · {ad["evento"].upper()}'[:40], font=fl, fill=ORANGE)
+        y += 48
+        fa = fonte('Inter-Medium.otf', 30)
+        sp = {'acima': 'Veio ACIMA do consenso', 'abaixo': 'Veio ABAIXO do consenso', 'em linha': 'Veio em linha com o consenso'}.get(ad.get('surpresa'))
+        if sp:
+            dr.text((M, y), sp + (f' ({ad["resultado"]} × {ad["consenso"]})' if ad.get('resultado') and ad.get('consenso') else ''), font=fa, fill=WHITE)
+            y += 44
+        nomes = {'win': 'Ibovespa', 'wdo': 'Dólar'}
+        fj = fonte('JetBrainsMono-Bold.ttf', 28)
+        for k in ('win', 'wdo'):
+            h = (ad.get('hist') or {}).get(k)
+            hj = (ad.get('hoje') or {}).get(k)
+            if not h and hj is None:
+                continue
+            t1 = f'{nomes[k]}: subiu em {h["sobe"]}% das {h["n"]} vezes' if h else f'{nomes[k]}:'
+            dr.text((M, y), t1, font=fa, fill=MUTED)
+            if hj is not None:
+                t2 = f'hoje {pct(hj)}'
+                dr.text((W - M - dr.textlength(t2, font=fj), y + 2), t2, font=fj, fill=cor(hj))
+            y += 44
+        if not ad.get('hoje'):
+            dr.text((M, y), 'Reação de hoje: medida na abertura de amanhã', font=fonte('Inter-Medium.otf', 26), fill=MUTED)
+            y += 40
+        y += 12
+
     # termômetro da manhã × fechamento
     term = r.get('termometro') or {}
-    if term:
+    if term and y + 150 < 1440:
         y += 6
         dr.text((M, y), 'TERMÔMETRO DA MANHÃ', font=fl, fill=ORANGE)
         y += 48
@@ -100,7 +129,7 @@ def gerar(r, saida, previa=None):
             dr.text((M + dr.textlength(txt, font=fj), y), 'acertou' if ok else 'errou', font=fj, fill=VERDE if ok else VERMELHO)
             y += 50
         p = r.get('placar')
-        if p and p.get('tot'):
+        if p and p.get('tot') and y + 48 < 1440:
             s = f'Placar dos últimos {p["n"]} pregões: {p["ok"]}/{p["tot"]} ({p["ok"] / p["tot"] * 100:.0f}%)' if p['n'] > 1 else f'Placar do 1º pregão: {p["ok"]}/{p["tot"]}'
             dr.text((M, y + 4), s, font=fonte('Inter-Medium.otf', 28), fill=MUTED)
             y += 48

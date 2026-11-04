@@ -136,6 +136,53 @@ def manchetes_que_mexeram():
     return linhas
 
 
+def antes_depois():
+    """No dia de evento forte: o que o histórico da manhã (data/antes.json) indicava × o que aconteceu hoje."""
+    a = ler('data/antes.json') or {}
+    if a.get('data') != hoje.isoformat() or a.get('vazio'):
+        return None
+    ev = next((e for e in (ler('data/calendario.json') or {}).get('eventos', []) if e.get('data') == hoje.isoformat() and e.get('tipo') == a.get('tipo')), {})
+    sp = (ev.get('surpresa') or {}).get('direcao') if isinstance(ev.get('surpresa'), dict) else None
+    if not sp and ev.get('resultado') not in (None, '') and ev.get('consenso') and str(ev['resultado']) == str(ev['consenso']):
+        sp = 'em linha'
+    hist = (a.get('por_surpresa') or {}).get(sp) if sp in ('acima', 'abaixo') else None
+    base = 'surpresa' if hist else 'geral'
+    hist = hist or a.get('divulgacoes') or {}
+    out = {'evento': a.get('curto') or a.get('evento'), 'hora': a.get('hora'), 'resultado': ev.get('resultado'), 'consenso': ev.get('consenso'),
+           'surpresa': sp, 'base': base, 'hist': {k: hist.get(k) for k in ('win', 'wdo')}, 'hoje': None}
+    try:
+        import reacao  # mesma medida do histórico: último preço antes até 30 min depois (barras de 5 min)
+        t0 = reacao.hora_ev({'data': hoje.isoformat(), 'hora': a.get('hora')})
+        if t0:
+            bs = {k: reacao.barras(sym) for k, sym in reacao.ATIVOS.items()}
+            v = {k: reacao.var(bs[k], t0)[0] for k in bs}
+            if v['win'] is not None or v['wdo'] is not None:
+                abertura = reacao.var(bs['win'], t0)[1]
+                out['hoje'] = {'win': None if abertura else v['win'], 'wdo': v['wdo']}
+    except Exception as e:
+        tg.note('warning', f'Antes × depois: reação de hoje indisponível ({e.__class__.__name__})')
+    return out
+
+
+def texto_antes_depois(ad):
+    """Linhas do Telegram (HTML)."""
+    sp = {'acima': 'acima do consenso', 'abaixo': 'abaixo do consenso', 'em linha': 'em linha com o consenso'}.get(ad['surpresa'])
+    l = [f'🧭 <b>Antes × depois · {tg.e(ad["evento"])}</b>']
+    if sp:
+        l.append(f'Veio {sp}' + (f' ({tg.e(str(ad["resultado"]))} × {tg.e(str(ad["consenso"]))})' if ad.get('resultado') and ad.get('consenso') else '') + '.')
+    nomes = {'win': 'Ibovespa', 'wdo': 'dólar'}
+    hs = [f'{nomes[k]} subiu em {h["sobe"]}% das {h["n"]} vezes' for k, h in ad['hist'].items() if h]
+    if hs:
+        l.append(('Quando veio assim antes: ' if ad['base'] == 'surpresa' else 'No histórico: ') + ' · '.join(hs) + '.')
+    if ad.get('hoje'):
+        hj = [f'{nomes[k]} {"+" if v > 0 else ""}{v:.2f}%'.replace('.', ',') for k, v in ad['hoje'].items() if v is not None]
+        if hj:
+            l.append('Hoje, 30 min depois: ' + ' · '.join(hj) + '.')
+    else:
+        l.append('Hoje: a reação sai com a bolsa fechada e é medida na abertura do próximo pregão.')
+    return l
+
+
 def main():
     cot = ler('data/cotacoes.json') or {}
     ibov = next((x for x in cot.get('itens', []) if x.get('ticker') == 'IBOV'), None)
@@ -191,6 +238,15 @@ def main():
                 json.dump(placar, open('data/placar-termometro.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
             if tot: resumo['placar'] = {'ok': ok, 'tot': tot, 'n': len(ult)}
             linhas += ['', '🎯 <b>Termômetro da manhã</b>'] + partes + [(f'Placar dos últimos {len(ult)} pregões:' if len(ult) > 1 else 'Placar (1º pregão):') + f' <b>{ok}/{tot}</b> ({ok / tot * 100:.0f}%)' if tot else '']
+
+    try:
+        ad = antes_depois()
+    except Exception as e:
+        ad = None
+        tg.note('warning', f'Antes × depois indisponível: {e.__class__.__name__}')
+    if ad:
+        resumo['antes_depois'] = ad
+        linhas += [''] + texto_antes_depois(ad)
 
     mex = manchetes_que_mexeram()
     if mex:
