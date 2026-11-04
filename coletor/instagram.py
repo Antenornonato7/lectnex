@@ -163,6 +163,12 @@ def propor(tipo, legenda_arq, imagens):
     f['pedidos'] = f['pedidos'][-40:]
     fila_gravar(f, sha)
     tem_ig = bool(os.environ.get('INSTAGRAM_TOKEN', '').strip())
+    if not tem_ig:
+        # modo manual: as imagens já chegaram no Telegram; aqui vai só a legenda limpa, fácil de copiar no celular
+        tg('sendMessage', chat_id=admin(), text=f'📋 Legenda pronta para copiar ({TIPOS.get(tipo, tipo)}):')
+        tg('sendMessage', chat_id=admin(), text=legenda, disable_web_page_preview=True)
+        print(f'Pedido {pid}: modo manual, legenda enviada.')
+        return
     texto = (f'📸 <b>Post para o feed: {esc(TIPOS.get(tipo, tipo))}</b>' + (f' ({len(urls)} imagens)' if len(urls) > 1 else '') +
              f'\n\n<b>Legenda:</b>\n{esc(legenda[:700])}' + ('…' if len(legenda) > 700 else '') +
              ('\n\nToque em <b>Publicar</b> para postar agora no Instagram (vale por 36 h).' if tem_ig else
