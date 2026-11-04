@@ -1,0 +1,30 @@
+{
+ "criterio": "O histórico indica uma direção quando o ativo subiu em 60% ou mais (alta) ou em 40% ou menos (queda) das divulgações anteriores com a mesma surpresa (ou de todas, sem surpresa definida). Acerta quando a reação de 30 min (ou da abertura seguinte) vai para esse lado. Entre 40% e 60%: dividido, não conta.",
+ "eventos": [
+  {
+   "data": "2026-11-04",
+   "tipo": "copom",
+   "evento": "Copom",
+   "hora": "18h30",
+   "surpresa": null,
+   "base": "geral",
+   "sobe": {
+    "win": 62,
+    "wdo": 44
+   },
+   "n": {
+    "win": 16,
+    "wdo": 16
+   },
+   "reacao": {
+    "win": null,
+    "wdo": -0.068
+   },
+   "acerto": {
+    "win": null,
+    "wdo": null
+   }
+  }
+ ],
+ "atualizado_em": "2026-11-04T19:10:26-03:00"
+}
