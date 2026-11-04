@@ -7,9 +7,9 @@ mudou = subprocess.run(['git', 'diff', '--name-only', 'HEAD^', 'HEAD'], capture_
 if os.environ.get('PAGINAS') is not None:
     paginas = os.environ['PAGINAS'].split()
 elif os.environ.get('GITHUB_EVENT_NAME') == 'push':
-    paginas = [f for f in mudou if f.endswith('.html') and (('/' not in f) or f.startswith(('semana/', 'leitura/')))]
+    paginas = [f for f in mudou if f.endswith('.html') and (('/' not in f) or f.startswith(('semana/', 'leitura/', 'manchetes/')))]
 else:
-    paginas = sorted(glob.glob('*.html') + glob.glob('semana/*.html') + glob.glob('leitura/*.html'))
+    paginas = sorted(glob.glob('*.html') + glob.glob('semana/*.html') + glob.glob('leitura/*.html') + glob.glob('manchetes/*.html'))
 if not paginas:
     print('::notice::IndexNow: nenhuma página alterada.'); raise SystemExit
 urls = [BASE + ('' if p == 'index.html' else p[:-10] if p.endswith('/index.html') else p) for p in paginas]

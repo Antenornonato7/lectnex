@@ -509,6 +509,7 @@
                 <a href="comece.html" class="block hover:text-lect-tealLight">Comece por aqui</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
                 <a href="hoje.html" class="block hover:text-lect-tealLight">O que mexeu hoje</a>
+                <a href="manchetes.html" class="block hover:text-lect-tealLight">Arquivo de manchetes</a>
                 <a href="status.html" class="block hover:text-lect-tealLight">Status do site</a>
                 <a href="privacidade.html" class="block hover:text-lect-tealLight">Privacidade e cookies</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
@@ -563,6 +564,7 @@
         ['mercado', 'REGIME', 'Regimes de risco', 'Risk-on, risk-off e como os ativos reagem', 'macro.html#regimes', 'ph-gauge', 'regime risco risk on off aversao apetite intermercado'],
         ['mercado', 'MAPA', 'Mapa de calor da B3', 'Ações do Ibovespa por setor, coloridas pela variação do dia', 'index.html#mapa', 'ph-squares-four', 'mapa calor heatmap setores acoes ibovespa fluxo variacao'],
         ['mercado', 'HOJE', 'O que mexeu no mercado hoje', 'Gráfico do Ibovespa e do dólar com as manchetes marcadas', 'hoje.html', 'ph-chart-line', 'hoje grafico noticia preco reacao manchete intraday'],
+        ['mercado', 'ARQUIVO', 'Arquivo de manchetes', 'Como o Ibovespa e o dólar reagiram a cada notícia (busca por tema)', 'manchetes.html', 'ph-archive', 'arquivo manchetes historico noticia reacao copom payroll inflacao petrobras padrao'],
         ['mercado', 'NEWS', 'Agora no mercado', 'Manchetes de maior impacto, a cada ~10 min', 'index.html#ultimas', 'ph-newspaper', 'noticias manchetes'],
         ['acoes', 'DONOS', 'Quem é dono da ação', 'Fundos com a ação na carteira (CVM)', 'acoes.html#donos', 'ph-users-three', 'fundos donos carteira cvm'],
         ['acoes', 'OPC', 'Laboratório de opções', 'Strangle, venda de call e de put', 'acoes.html#opcoes', 'ph-flask', 'opcoes call put strangle'],

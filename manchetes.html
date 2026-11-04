@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo de manchetes: como o mercado reagiu a cada notícia · Lectnex</title>
+    <meta name="description" content="Busque por Copom, payroll, inflação, Petrobras ou qualquer palavra e veja como o Ibovespa e o dólar reagiram nos 30 minutos seguintes a cada manchete desde novembro de 2026.">
+    <link rel="canonical" href="https://lectnex.com.br/manchetes.html">
+    <meta name="theme-color" content="#060D17">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lectnex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lectnex Terminal">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Arquivo de manchetes: como o mercado reagiu a cada notícia · Lectnex">
+    <meta property="og:description" content="Busque por Copom, payroll, inflação, Petrobras ou qualquer palavra e veja como o Ibovespa e o dólar reagiram nos 30 minutos seguintes a cada manchete desde novembro de 2026.">
+    <meta property="og:url" content="https://lectnex.com.br/manchetes.html">
+    <meta property="og:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Arquivo de manchetes: como o mercado reagiu a cada notícia · Lectnex">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arquivo de manchetes: como o mercado reagiu a cada notícia · Lectnex">
+    <meta name="twitter:description" content="Busque por Copom, payroll, inflação, Petrobras ou qualquer palavra e veja como o Ibovespa e o dólar reagiram nos 30 minutos seguintes a cada manchete desde novembro de 2026.">
+    <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261104e">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261104e">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261104e">
+</head>
+<body data-page="manchetes" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+        <span class="term-label text-lect-teal font-bold">ARQUIVO · NOTÍCIA × PREÇO</span>
+        <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2 leading-tight">Como o mercado reagiu a cada manchete</h1>
+        <p class="text-slate-600 dark:text-slate-300 mt-2 max-w-3xl leading-relaxed">Todas as manchetes que o Lectnex marcou no pregão, com a variação do <strong>Ibovespa</strong> e do <strong>dólar</strong> nos 30 minutos seguintes. Busque um tema e veja o padrão: quantas vezes subiu, quanto andou, qual foi o maior movimento.</p>
+
+        <div class="mt-6 term-panel p-4 sm:p-5">
+            <div class="flex flex-col sm:flex-row gap-3">
+                <label class="relative flex-1"><span class="sr-only">Buscar manchetes</span><i class="ph-bold ph-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input id="mc-q" type="search" autocomplete="off" placeholder="Ex.: Copom, payroll, Petrobras, Galípolo, tarifa" class="lx-input !pl-9 w-full"></label>
+                <div class="flex gap-2 font-mono text-xs">
+                    <label class="flex items-center gap-2 px-3 border border-slate-300 dark:border-lect-borderDark cursor-pointer"><input id="mc-alto" type="checkbox" class="accent-[#F39200]"> Só alto impacto</label>
+                    <select id="mc-ord" class="lx-input !py-2" aria-label="Ordenar"><option value="data">Mais recentes</option><option value="mexida">Maiores reações</option></select>
+                </div>
+            </div>
+            <div id="mc-temas" class="flex flex-wrap gap-2 mt-4 font-mono text-[11px]"></div>
+        </div>
+
+        <section id="mc-padrao" class="mt-6"></section>
+
+        <section class="mt-8">
+            <div class="flex items-baseline justify-between gap-3"><h2 class="font-display text-xl font-bold">Manchetes</h2><span id="mc-n" class="font-mono text-xs text-slate-500"></span></div>
+            <div id="mc-lista" class="mt-3 space-y-5"></div>
+            <button id="mc-mais" type="button" class="hidden mt-4 w-full term-panel py-3 font-mono text-xs font-bold text-lect-teal hover:border-lect-teal">MOSTRAR MAIS</button>
+        </section>
+
+        <p class="mt-8 text-[11px] text-slate-600 dark:text-slate-400">Variação do último preço antes da manchete até 30 minutos depois, com cotações de 5 min do Yahoo Finance (Ibovespa e dólar à vista). O movimento seguinte não prova que a notícia foi a causa: o mercado reage a muitas coisas ao mesmo tempo, e o passado não garante o futuro. Manchetes de veículos da nossa lista, coletadas automaticamente. Conteúdo educacional, não é recomendação. <a href="hoje.html" class="text-lect-teal hover:underline">Gráfico de hoje ao vivo →</a></p>
+    </main>
+
+    <div id="lx-footer"></div>
+    <script src="assets/lectnex-core.js?v=20261104e"></script>
+    <script>
+    (function () {
+        const $ = id => document.getElementById(id), esc = LX.esc;
+        let dados = null, tema = '', limite = 40;
+        const norm = s => ' ' + (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') + ' ';
+        const sinal = v => v > 0 ? 'text-emerald-600 dark:text-emerald-400' : v < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500';
+        const chip = (lbl, v) => v == null ? '' : `<span class="px-1.5 py-0.5 font-mono text-[10px] font-bold ${v > 0 ? 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400' : v < 0 ? 'bg-rose-500/15 text-rose-700 dark:text-rose-400' : 'bg-slate-500/10'}">${lbl} ${LX.pct(v, 2, true)}</span>`;
+        const dataBR = d => `${LX.weekday(new Date(d + 'T12:00:00'))} ${d.slice(8, 10)}/${d.slice(5, 7)}/${d.slice(0, 4)}`;
+        const mexida = x => Math.max(Math.abs(x.ib || 0), Math.abs(x.dl || 0) * 1.5);
+
+        function filtrar() {
+            const q = norm($('mc-q').value.trim()).trim(), alto = $('mc-alto').checked;
+            return dados.itens.filter(x => (!tema || (x.tm || []).includes(tema)) && (!alto || x.i === 'alto')
+                && (!q || q.split(/\s+/).every(p => norm(x.t + ' ' + x.f + ' ' + (x.tk || []).join(' ')).includes(p))));
+        }
+
+        function estat(lst, k) {
+            const v = lst.map(x => x[k]).filter(n => n != null);
+            if (!v.length) return null;
+            const ord = v.slice().sort((a, b) => a - b), med = ord.length % 2 ? ord[(ord.length - 1) / 2] : (ord[ord.length / 2 - 1] + ord[ord.length / 2]) / 2;
+            return { n: v.length, media: v.reduce((a, b) => a + b, 0) / v.length, mediana: med, sobe: v.filter(n => n > 0).length / v.length * 100,
+                     absm: v.reduce((a, b) => a + Math.abs(b), 0) / v.length, max: lst.filter(x => x[k] === ord[ord.length - 1])[0], min: lst.filter(x => x[k] === ord[0])[0] };
+        }
+
+        function padrao(lst) {
+            const box = $('mc-padrao'), q = $('mc-q').value.trim();
+            const nome = tema ? dados.temas[tema] : q ? `"${esc(q)}"` : 'todas as manchetes';
+            const dias = new Set(lst.map(x => x.d)).size;
+            const bloco = (titulo, k) => {
+                const s = estat(lst, k);
+                if (!s) return `<div class="term-panel p-4"><span class="term-label font-bold">${titulo}</span><p class="text-sm text-slate-500 mt-2">Sem reação medida ainda.</p></div>`;
+                const ex = (r, x) => x ? `<li class="flex gap-2"><span class="font-mono font-bold w-16 shrink-0 ${sinal(x[k])}">${LX.pct(x[k], 2, true)}</span><span class="min-w-0 truncate" title="${esc(x.t)}">${r}: ${esc(x.t)}</span></li>` : '';
+                return `<div class="term-panel p-4"><span class="term-label font-bold">${titulo} · 30 MIN DEPOIS</span>
+                    <div class="grid grid-cols-3 gap-2 mt-3 text-center">
+                        <div><span class="block font-display text-2xl font-bold">${LX.num(s.sobe, 0)}%</span><span class="block text-[10px] text-slate-500 font-mono">DAS VEZES SUBIU</span></div>
+                        <div><span class="block font-display text-2xl font-bold ${sinal(s.mediana)}">${LX.pct(s.mediana, 2, true)}</span><span class="block text-[10px] text-slate-500 font-mono">MEDIANA</span></div>
+                        <div><span class="block font-display text-2xl font-bold">${LX.num(s.absm, 2)}%</span><span class="block text-[10px] text-slate-500 font-mono">MOVIMENTO MÉDIO</span></div>
+                    </div>
+                    <ul class="mt-3 space-y-1 text-xs">${ex('Maior alta', s.max)}${s.min !== s.max ? ex('Maior queda', s.min) : ''}</ul></div>`;
+            };
+            const n = lst.filter(x => x.ib != null || x.dl != null).length;
+            box.innerHTML = `<div class="flex flex-wrap items-baseline justify-between gap-2"><h2 class="font-display text-xl font-bold">Padrão: ${nome}</h2><span class="font-mono text-xs text-slate-500">${n} manchete${n === 1 ? '' : 's'} com reação · ${dias} pregão${dias === 1 ? '' : 'ões'}</span></div>
+                ${n < 10 ? `<p class="mt-2 text-xs px-3 py-2 border-l-4 border-lect-orange bg-lect-orange/10">Amostra pequena (${n}). Ainda não dá para tirar conclusão: o arquivo cresce a cada pregão.</p>` : ''}
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">${bloco('IBOVESPA · WIN', 'ib')}${bloco('DÓLAR · WDO', 'dl')}</div>`;
+        }
+
+        function pintar() {
+            if (!dados) return;
+            const lst = filtrar();
+            padrao(lst);
+            const ord = $('mc-ord').value === 'mexida' ? lst.slice().sort((a, b) => mexida(b) - mexida(a)) : lst.slice().sort((a, b) => (b.d + b.h).localeCompare(a.d + a.h));
+            $('mc-n').textContent = `${lst.length} resultado${lst.length === 1 ? '' : 's'}`;
+            const vis = ord.slice(0, limite);
+            const item = x => `<li class="px-4 py-3 flex gap-3"><span class="font-mono text-xs font-bold w-12 shrink-0 ${x.i === 'alto' ? 'text-lect-orange' : 'text-lect-teal'}">${esc(x.h)}</span>
+                <div class="min-w-0 flex-1"><a href="${esc(x.u)}" target="_blank" rel="noopener nofollow" class="text-sm font-semibold leading-snug hover:text-lect-teal">${esc(x.t)}</a>
+                <div class="flex flex-wrap items-center gap-1 mt-1.5 font-mono text-[10px] text-slate-500">${esc(x.f || '')} ${chip('Ibov', x.ib)} ${chip('Dólar', x.dl)}${x.ib == null && x.dl == null ? ' · sem reação medida' : ''}</div></div></li>`;
+            let html = '';
+            if ($('mc-ord').value === 'mexida') {
+                html = vis.length ? `<ol class="term-panel divide-y divide-slate-200 dark:divide-lect-borderDark">${vis.map(x => item(x).replace('<span class="font-mono text-xs font-bold w-12', `<span class="font-mono text-[10px] text-slate-500 w-12 shrink-0">${x.d.slice(8, 10)}/${x.d.slice(5, 7)}</span><span class="font-mono text-xs font-bold w-12`)).join('')}</ol>` : '';
+            } else {
+                const grupos = {};
+                vis.forEach(x => (grupos[x.d] = grupos[x.d] || []).push(x));
+                html = Object.keys(grupos).sort().reverse().map(d => { const r = dados.dias[d] || {};
+                    return `<div><a href="manchetes/${d}.html" class="flex flex-wrap items-baseline justify-between gap-2 mb-2 group"><span class="font-display font-bold group-hover:text-lect-teal">${dataBR(d)} <i class="ph-bold ph-arrow-right text-lect-teal text-sm"></i></span><span class="font-mono text-xs">Ibov <b class="${sinal(r.ib)}">${r.ib == null ? '—' : LX.pct(r.ib, 2, true)}</b> · Dólar <b class="${sinal(r.dl)}">${r.dl == null ? '—' : LX.pct(r.dl, 2, true)}</b></span></a>
+                        <ol class="term-panel divide-y divide-slate-200 dark:divide-lect-borderDark">${grupos[d].map(item).join('')}</ol></div>`; }).join('');
+            }
+            $('mc-lista').innerHTML = html || `<p class="term-panel px-4 py-8 text-sm text-slate-500 text-center">Nenhuma manchete encontrada. Tente outra palavra ou limpe o filtro.</p>`;
+            $('mc-mais').classList.toggle('hidden', ord.length <= limite);
+            document.querySelectorAll('#mc-temas button').forEach(b => { const on = b.dataset.t === tema; b.classList.toggle('border-lect-teal', on); b.classList.toggle('text-lect-teal', on); b.setAttribute('aria-pressed', on); });
+        }
+
+        function temas() {
+            const cont = {};
+            dados.itens.forEach(x => (x.tm || []).forEach(t => cont[t] = (cont[t] || 0) + 1));
+            $('mc-temas').innerHTML = `<button type="button" data-t="" class="px-2.5 py-1.5 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal">Todos <span class="text-slate-500">${dados.itens.length}</span></button>`
+                + Object.entries(dados.temas).map(([k, n]) => `<button type="button" data-t="${k}" class="px-2.5 py-1.5 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal">${esc(n)} <span class="text-slate-500">${cont[k] || 0}</span></button>`).join('');
+            $('mc-temas').onclick = e => { const b = e.target.closest('button'); if (!b) return; tema = b.dataset.t; limite = 40; history.replaceState(null, '', tema ? '#' + tema : location.pathname + location.search); pintar(); LX.track && LX.track('manchetes_tema', { tema: tema || 'todos' }); };
+        }
+
+        let tq;
+        $('mc-q').addEventListener('input', () => { clearTimeout(tq); tq = setTimeout(() => { limite = 40; pintar(); const u = new URL(location); $('mc-q').value.trim() ? u.searchParams.set('q', $('mc-q').value.trim()) : u.searchParams.delete('q'); history.replaceState(null, '', u); }, 200); });
+        $('mc-alto').onchange = () => { limite = 40; pintar(); };
+        $('mc-ord').onchange = () => { limite = 40; pintar(); };
+        $('mc-mais').onclick = () => { limite += 40; pintar(); };
+
+        fetch('data/manchetes.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null).then(j => {
+            if (!j || !(j.itens || []).length) {
+                $('mc-padrao').innerHTML = '';
+                $('mc-lista').innerHTML = `<div class="term-panel px-5 py-10 text-center"><i class="ph-duotone ph-archive text-4xl text-lect-teal"></i><p class="font-display font-bold text-lg mt-3">O arquivo começa no pregão de 04/11/2026</p><p class="text-sm text-slate-500 mt-1 max-w-lg mx-auto">Todo dia, depois do fechamento, as manchetes do pregão entram aqui com a reação do Ibovespa e do dólar. Enquanto isso, acompanhe o dia ao vivo.</p><a href="hoje.html" class="inline-block mt-4 px-4 py-2 bg-lect-teal text-white font-mono text-xs font-bold hover:bg-lect-tealDark">VER O GRÁFICO DE HOJE</a></div>`;
+                $('mc-temas').innerHTML = ''; return;
+            }
+            dados = j;
+            const p = new URLSearchParams(location.search);
+            if (p.get('q')) $('mc-q').value = p.get('q');
+            const h = location.hash.slice(1); if (j.temas[h]) tema = h;
+            temas(); pintar();
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -60,12 +60,23 @@ jobs:
           [ -f "$RUNNER_TEMP/mercado.json" ] || { echo "Sem gráfico do dia."; exit 0; }
           python3 scripts/grafico_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/grafico-dia.png" || echo "::warning::Falha no post do gráfico do dia."
       - name: Salvar placar do termômetro
+        id: salvar
         if: ${{ !inputs.previa_story }}
         run: |
           [ -f data/placar-termometro.json ] || [ -d data/dias ] || exit 0
           git config user.name "lectnex-bot"
           git config user.email "bot@lectnex.com.br"
-          git add data/placar-termometro.json data/dias 2>/dev/null || git add data/placar-termometro.json
+          if [ -d data/dias ]; then
+            python3 scripts/manchetes.py | tee "$RUNNER_TEMP/manchetes.txt" || echo "::warning::Falha ao gerar o arquivo de manchetes."
+            echo "paginas=$(grep '^PAGINAS=' "$RUNNER_TEMP/manchetes.txt" 2>/dev/null | cut -d= -f2-)" >> "$GITHUB_OUTPUT"
+          fi
+          git add data/placar-termometro.json data/dias data/manchetes.json manchetes sitemap.xml 2>/dev/null || git add data/placar-termometro.json
           git diff --cached --quiet && exit 0
-          git commit -m "placar e dia: $(TZ=America/Sao_Paulo date +%F)"
+          git commit -m "placar, dia e arquivo de manchetes: $(TZ=America/Sao_Paulo date +%F)"
           git pull --rebase -q origin main && git push -q origin HEAD:main
+          echo "ok=1" >> "$GITHUB_OUTPUT"
+      - name: Avisar buscadores (IndexNow)
+        if: ${{ steps.salvar.outputs.ok == '1' && steps.salvar.outputs.paginas != '' }}
+        env:
+          PAGINAS: ${{ steps.salvar.outputs.paginas }}
+        run: sleep 60 && python3 coletor/indexnow.py || true
