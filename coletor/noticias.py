@@ -160,6 +160,7 @@ def tickers(titulo):
 
 
 ENVIADAS = []  # [{'url', 'titulo', 'em'}] — últimas 24 h; carregado do branch ao-vivo no início
+HOJE = []  # manchetes relevantes do dia (para o fechamento mostrar o que mexeu no preço)
 
 
 def alerta_celular(final):
@@ -204,6 +205,8 @@ def carregar_estado():
         with urllib.request.urlopen(req, timeout=20) as r:
             d = json.loads(r.read())
         ENVIADAS = d.get('enviadas', [])
+        global HOJE
+        HOJE = d.get('hoje', [])
         json.dump(d, open(SAIDA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)  # base de comparação = o que está no ar
     except Exception as e:
         print(f'::warning::Não consegui ler o estado do ao-vivo: {e.__class__.__name__}')
@@ -255,7 +258,18 @@ def main():
             break
     final.sort(key=lambda n: n['idade'])
     enviadas = alerta_celular(final)
+    global HOJE
+    dia = AGORA.astimezone(BRT).date().isoformat()
+    HOJE = [h for h in HOJE if h['publicado'][:10] == dia]
+    urls = {h['url'] for h in HOJE}
+    for n in final:
+        pub = n['publicado'].astimezone(BRT)
+        if pub.date().isoformat() == dia and n['url'] not in urls and (n['impacto'] >= 4 or n.get('tickers')):
+            HOJE.append({'titulo': n['titulo'], 'fonte': n['fonte'], 'url': n['url'], 'publicado': pub.isoformat(timespec='minutes'),
+                         'impacto': 'alto' if n['impacto'] >= 5 else 'medio', 'ativos': n['ativos'], 'tickers': n.get('tickers', [])})
+    HOJE = sorted(HOJE, key=lambda h: h['publicado'])[-80:]
     novo = {
+        'hoje': HOJE,
         'enviadas': enviadas,
         'atualizado_em': AGORA.astimezone(BRT).isoformat(timespec='minutes'),
         'janela_horas': JANELA_H,
@@ -268,7 +282,7 @@ def main():
         antigo = json.load(open(SAIDA, encoding='utf-8'))
     except Exception:
         antigo = {}
-    if [x['url'] for x in antigo.get('noticias', [])] == [x['url'] for x in novo['noticias']] and antigo.get('enviadas') == enviadas:
+    if [x['url'] for x in antigo.get('noticias', [])] == [x['url'] for x in novo['noticias']] and antigo.get('enviadas') == enviadas and len(antigo.get('hoje', [])) == len(HOJE):
         print(f'Sem mudança ({len(final)} manchetes); não grava.')
         return False
     json.dump(novo, open(SAIDA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

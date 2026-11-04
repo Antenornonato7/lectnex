@@ -33,6 +33,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
           FORCAR: ${{ inputs.forcar && '1' || '' }}
+          GITHUB_TOKEN: ${{ github.token }}
           SO_STORY: ${{ inputs.previa_story && '1' || '' }}
           FECH_JSON: ${{ runner.temp }}/fechamento.json
         run: python3 coletor/fechamento.py

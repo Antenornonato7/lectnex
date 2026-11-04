@@ -65,6 +65,59 @@ def dolar():
     return None, None
 
 
+def manchetes_que_mexeram():
+    """As 3 manchetes do dia seguidas dos maiores movimentos em 30 min (Ibovespa para WIN, dólar para WDO).
+    Manchetes: branch ao-vivo (noticias-agora.json → 'hoje'). Preços: Yahoo Finance, barras de 5 min."""
+    tok, repo = os.environ.get('GITHUB_TOKEN'), os.environ.get('GITHUB_REPOSITORY')
+    if not tok or not repo:
+        return []
+    try:
+        req = urllib.request.Request(f'https://api.github.com/repos/{repo}/contents/noticias-agora.json?ref=ao-vivo',
+                                     headers={'Authorization': f'Bearer {tok}', 'Accept': 'application/vnd.github.raw', 'User-Agent': 'lectnex-bot'})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            hoje_n = json.loads(r.read()).get('hoje', [])
+    except Exception as e:
+        tg.note('warning', f'Manchetes do dia indisponíveis: {e.__class__.__name__}')
+        return []
+    ua = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36'}
+    series = {}
+    for nome, sym in (('WIN', '%5EBVSP'), ('WDO', 'BRL%3DX')):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f'https://query2.finance.yahoo.com/v8/finance/chart/{sym}?interval=5m&range=1d', headers=ua), timeout=20) as r:
+                res = json.load(r)['chart']['result'][0]
+            series[nome] = [(dt.datetime.fromtimestamp(t, BRT), c) for t, c in zip(res['timestamp'], res['indicators']['quote'][0]['close']) if c]
+        except Exception as e:
+            tg.note('warning', f'Série de 5 min ({nome}) indisponível: {e.__class__.__name__}')
+
+    def reacao(serie, t0):
+        antes = [c for t, c in serie if t <= t0]
+        depois = [c for t, c in serie if t0 + dt.timedelta(minutes=25) <= t <= t0 + dt.timedelta(minutes=35)]
+        if not antes or not depois:
+            return None
+        return (depois[0] / antes[-1] - 1) * 100
+
+    cands = []
+    for h in hoje_n:
+        t0 = dt.datetime.fromisoformat(h['publicado'])
+        if t0.date() != hoje or not (10 <= t0.hour < 17 or (t0.hour == 17 and t0.minute <= 20)):
+            continue
+        for ativo in [a for a in ('WIN', 'WDO') if a in h.get('ativos', [])] or ['WIN']:
+            v = reacao(series.get(ativo, []), t0)
+            if v is not None:
+                cands.append((abs(v) + (0.05 if h.get('impacto') == 'alto' else 0), v, ativo, h, t0))
+    cands.sort(key=lambda c: -c[0])
+    linhas, usados = [], set()
+    for _, v, ativo, h, t0 in cands:
+        if h['url'] in usados:
+            continue
+        usados.add(h['url'])
+        nome = 'Ibovespa' if ativo == 'WIN' else 'dólar'
+        linhas.append(f'{t0:%Hh%M} · {tg.e(h["titulo"][:110])} ({tg.e(h["fonte"])})\n   → {nome} {pct(v)} em 30 min')
+        if len(linhas) == 3:
+            break
+    return linhas
+
+
 def main():
     cot = ler('data/cotacoes.json') or {}
     ibov = next((x for x in cot.get('itens', []) if x.get('ticker') == 'IBOV'), None)
@@ -120,6 +173,11 @@ def main():
                 json.dump(placar, open('data/placar-termometro.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
             if tot: resumo['placar'] = {'ok': ok, 'tot': tot, 'n': len(ult)}
             linhas += ['', '🎯 <b>Termômetro da manhã</b>'] + partes + [(f'Placar dos últimos {len(ult)} pregões:' if len(ult) > 1 else 'Placar (1º pregão):') + f' <b>{ok}/{tot}</b> ({ok / tot * 100:.0f}%)' if tot else '']
+
+    mex = manchetes_que_mexeram()
+    if mex:
+        resumo['manchetes'] = mex
+        linhas += ['', '📰 <b>Manchetes do dia e o que veio depois</b>'] + mex + ['<i>O movimento seguinte não prova que a notícia foi a causa.</i>']
 
     # agenda do próximo dia com eventos
     cal = ler('data/calendario.json') or {}
