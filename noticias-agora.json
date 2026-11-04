@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T10:23-03:00",
+  "atualizado_em": "2026-11-04T10:25-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -11,11 +11,11 @@
     ],
     [
      "10:05",
-     165705.0
+     166854.0
     ],
     [
-     "10:08",
-     165702.0
+     "10:10",
+     166934.0
     ]
    ]
   },
@@ -88,11 +88,11 @@
     ],
     [
      "10:20",
-     5.4635
+     5.4661
     ],
     [
-     "10:23",
-     5.4635
+     "10:25",
+     5.4646
     ]
    ]
   },
@@ -236,7 +236,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.18
+    "dolar30": -0.13
    },
    {
     "hora": "09:53",
@@ -250,7 +250,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.18
+    "dolar30": -0.13
    },
    {
     "hora": "09:56",
@@ -264,7 +264,21 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.1
+    "dolar30": -0.08
+   },
+   {
+    "hora": "10:21",
+    "titulo": "Queda das ações faz 8 papéis ultrapassarem a Selic de 13,75% em dividend yield teórico",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTjl5dHRZTUtSYWJXbU5iUU1aVU91QlBKSmxxRE84SXI0cUhxLTVSTnJKa0hacXdRU25nbktiVWF0N0ZlNnR6cDZJZnNhYmUyTnF4blBRNlo3M0xfX2FBYk41bHRicmRIclFNc0FITFhzSzd4SXJJVm5pVzNGTENjM3FCTEtNY2hJcjYyYUQwZUMwNHBVNmJEM0s1MkNUU3M4b284blNaWmlmTGxSaDM3QVZaYUh1Zw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -797,6 +811,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Queda das ações faz 8 papéis ultrapassarem a Selic de 13,75% em dividend yield teórico",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTjl5dHRZTUtSYWJXbU5iUU1aVU91QlBKSmxxRE84SXI0cUhxLTVSTnJKa0hacXdRU25nbktiVWF0N0ZlNnR6cDZJZnNhYmUyTnF4blBRNlo3M0xfX2FBYk41bHRicmRIclFNc0FITFhzSzd4SXJJVm5pVzNGTENjM3FCTEtNY2hJcjYyYUQwZUMwNHBVNmJEM0s1MkNUU3M4b284blNaWmlmTGxSaDM3QVZaYUh1Zw?oc=5",
+   "publicado": "2026-11-04T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -826,7 +852,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T10:23-03:00",
+ "atualizado_em": "2026-11-04T10:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -841,6 +867,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Queda das ações faz 8 papéis ultrapassarem a Selic de 13,75% em dividend yield teórico",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTjl5dHRZTUtSYWJXbU5iUU1aVU91QlBKSmxxRE84SXI0cUhxLTVSTnJKa0hacXdRU25nbktiVWF0N0ZlNnR6cDZJZnNhYmUyTnF4blBRNlo3M0xfX2FBYk41bHRicmRIclFNc0FITFhzSzd4SXJJVm5pVzNGTENjM3FCTEtNY2hJcjYyYUQwZUMwNHBVNmJEM0s1MkNUU3M4b284blNaWmlmTGxSaDM3QVZaYUh1Zw?oc=5",
+   "publicado": "2026-11-04T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
@@ -848,6 +886,18 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "China expands overseas mining stakes, tightening grip on critical minerals",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/china-critical-minerals-rare-earths-trump-japan-export-control-.html",
+   "publicado": "2026-11-04T10:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -938,17 +988,6 @@
    "tickers": []
   },
   {
-   "titulo": "Treasury yields fall after Democrats win House and Senate majorities",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-   "publicado": "2026-11-04T09:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "BC da Suécia sobe taxa de juros a 2%, primeira alta em três anos",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468020",
@@ -957,17 +996,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mais dólar, menos Bolsa: o que 20 gestoras agora esperam da economia do País",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSzJtajNGLTREYTVpSTdYZ1V5bUJfZUZUSGZMa2lIR0h3X1lBaWtmaEVTT2hrYlVXMmZna3dpWEdNbmhLa3NLWlNyTHk2VnpDRHJhWk5wMnc5ajk1VXRROHBLWld1WC11TEdoSDFCTEdFX2hmSjQ4LVAzckJmaW1oMDJvT2JPd1RzREdZQzNsZDVFTklmSWhaS1F5SnMxc0RWVzNVcklXeERSRm10VjdxdGIwT1Y3c0Y2NzQ2U1U4QlhBV1RKSFZjVDVfTG9Ba21SN0s0U3ZRY2NoRWc?oc=5",
-   "publicado": "2026-11-04T09:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
