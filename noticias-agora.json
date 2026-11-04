@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T09:55-03:00",
+  "atualizado_em": "2026-11-04T09:58-03:00",
   "dolar": {
    "anterior": 5.4883,
    "pontos": [
@@ -51,7 +51,11 @@
     ],
     [
      "09:55",
-     5.4755
+     5.473
+    ],
+    [
+     "09:58",
+     5.4725
     ]
    ]
   },
@@ -130,7 +134,7 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": 0.14
+    "dolar30": 0.1
    },
    {
     "hora": "09:30",
@@ -143,7 +147,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.08
+    "dolar30": 0.04
    },
    {
     "hora": "09:30",
@@ -159,13 +163,26 @@
      "KLBN11",
      "SMAL11"
     ],
-    "dolar30": 0.08
+    "dolar30": 0.04
    },
    {
     "hora": "09:38",
     "titulo": "Dólar cai com resultado das eleições dos EUA e decisão do Copom no radar",
     "fonte": "CNN Brasil",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcEZZYVhwM3M3OXZfeGlOVXdWcF91S2wxRVhtd0tRWDVKTjlDRERma3JuR3ExTlgwNHd6QWVCLXZPelZUOHJrSDJiUFh5bUJVRVF2ZHNmSGFrbFlwUF9xbm4yc0xzQ1hGQ1p5dlhIQ19Ub0RCVFIxUGtoUTZac3RvdlhacGVpM0lPZTlkUElKb0MwMTFyZnkxcWF2Ym1wakR2QURiUHFUd09sZjd3d3lhS1Y1NDZueTF1QTZ3bG14OVUxM1U?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "09:53",
+    "titulo": "Aumento de juros pelo Banco Central Europeu parece quase certo após inflação atingir maior nível em três anos",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX3hBNjFEQzUyVHBDYUxpbUNCMDc5MkxTVHpZajQyVzBxOGNPMFpVMlZucUtGc0c5NmtNZllJYVdBLW1MWklzUzdwOWM1b0hNd05mdEtfd01yVjF1QmZKWUNtbGg5TE5SNFFFZm1uV3g2eFNJMmdFVXFtdnZhYmMwNXFJQTFYZjUtck1qbmJBX2J1czlWSl9Lc3MyNTZreldnWHNIWDJhOHRoY3lqZzVmSUtBT3hobHQxQ1o4bEJSeFJfSzdGeUE?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -669,6 +686,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Aumento de juros pelo Banco Central Europeu parece quase certo após inflação atingir maior nível em três anos",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX3hBNjFEQzUyVHBDYUxpbUNCMDc5MkxTVHpZajQyVzBxOGNPMFpVMlZucUtGc0c5NmtNZllJYVdBLW1MWklzUzdwOWM1b0hNd05mdEtfd01yVjF1QmZKWUNtbGg5TE5SNFFFZm1uV3g2eFNJMmdFVXFtdnZhYmMwNXFJQTFYZjUtck1qbmJBX2J1czlWSl9Lc3MyNTZreldnWHNIWDJhOHRoY3lqZzVmSUtBT3hobHQxQ1o4bEJSeFJfSzdGeUE?oc=5",
+   "publicado": "2026-11-04T09:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -698,7 +727,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T09:55-03:00",
+ "atualizado_em": "2026-11-04T09:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -720,6 +749,18 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Aumento de juros pelo Banco Central Europeu parece quase certo após inflação atingir maior nível em três anos",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX3hBNjFEQzUyVHBDYUxpbUNCMDc5MkxTVHpZajQyVzBxOGNPMFpVMlZucUtGc0c5NmtNZllJYVdBLW1MWklzUzdwOWM1b0hNd05mdEtfd01yVjF1QmZKWUNtbGg5TE5SNFFFZm1uV3g2eFNJMmdFVXFtdnZhYmMwNXFJQTFYZjUtck1qbmJBX2J1czlWSl9Lc3MyNTZreldnWHNIWDJhOHRoY3lqZzVmSUtBT3hobHQxQ1o4bEJSeFJfSzdGeUE?oc=5",
+   "publicado": "2026-11-04T09:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -856,26 +897,15 @@
    "tickers": []
   },
   {
-   "titulo": "Manhã no mercado: À espera do Copom, investidores monitoram ‘midterms’ e notícias sobre o Lula 4",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMTdiTUhMOUs5dk9rWnluSndoRWlxLWsyalR3aTNOTDlhUVRGa2doVGFEVGJQQnBDUWNYdmEzUzNMbjVIeEJKRjNDTmFDSEJCT2NhaWlMQmw1RjdMMVBNYjNUTFdMMmlLbWs5VVpLeEI3ZmJod3h1cHNyTkR1aWJ4Q3FQelRKYmlHNEhsZUE4b1k2Q3lKeVdyZjNWR0szU3dJbjFVTHp5WWs3ZVhWbDNkbUhoSVFtSXd5RnZRbUpfU1l0bV9BU193aWlaSDdXc2kyTDQ4cHdsM1VLVl9KX2VBeTJ4aVrSAfMBQVVfeXFMUHhfaGx4RDAxYWRfYkNGYWhSdFZnUFduVmVnczF4eExNRmM5dVhEZUpZU0Z2OUlMbU5wdzJ0ajFSb0RzcktaazRfN1dRWGFTdldLVnN1RUdEZ0QxNVhCdktyQ3FjVG1oUFJ6alEzeTlPUzJZZGY2LTJ0dlU4dTQ3ZEpEZUh4WklmeTQ4WjU5RHJLZ1paRDh1Q09BMWEtNlFOT1g4cXdxZEphS0VpbmVjd0w0ZjFmbHpEdGM4Nm5BSEdDVDNsWU5DQ3Z3UTc5b240NGl6LU1HOXNtc3ZsQ2pzSUt5dVFLbEpFcU8wLXMxb3ppcEw4?oc=5",
-   "publicado": "2026-11-04T08:28-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dow Jones hoje dispara após vitória dos democratas nas eleições dos EUA; dólar e petróleo caem",
+   "titulo": "Ibovespa cai mais de 1,4% antes do Copom; dólar fecha no maior patamar do ano, a R$ 5,48",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMjlaejl2YkpIMzFzVVBieWRYY0t2RHcxVzdSZTZFSEVqTTYxRmZpQUU2LWZ1RlVaMUdGcXJCZWJZbUxYRVhQRk5fd1JQS0VIbkpzckhtelp6aGQ3bHRCdmgtWm9PcDYySjNuV2RRa3VDOTZpaVRia19aOER3ajZ1ZVZCczdlYjJkc3NLb21SSmJqQnpnWko0UVl3XzJGMUphTUVjUkY0U1hLS0lzNnI4VnZrdGpQXzB3MmFITEt1cHVud1JFeDVhMjRSVEZBRy0tbTNKQmluTHdxbTNCbjhLYURaUlo4dElqN3FMWVpRUUNuQQ?oc=5",
-   "publicado": "2026-11-04T07:57-03:00",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPRV9ab1UxNkZjZExySE1aWHpYMFJFckR0UzBaSGhLQzhEVWMwWHlkTHdWUlpNQnlaR3NPM0dBU0lxbmtoU2tCY2RsOEpRRVdlT3VFaWs0bjBKb1ZZbllTYkZnTV9GLXpZZHFJTlF0Mkk2cHlNNTFBMEZNTFJXRFJudmxIN0M2bF96YVNiUTZlYkdIWW5nS0Q0NVdneGR5NUkwbHBSQ0RrcGJMYXVBOTdKMkxvVlpRandET0J2V2ctYTZwbXlPMXdTZUxaZE5SQkhwWFduLW41b0tDVWk5QTJqSk5MM3pNU3U5cUhQZEFfTnRYVVlCSVprVQ?oc=5",
+   "publicado": "2026-11-04T08:07-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
