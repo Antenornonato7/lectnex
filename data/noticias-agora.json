@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T18:08-03:00",
+  "atualizado_em": "2026-11-04T18:38-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     167506.0
+     167563.0
     ]
    ]
   },
@@ -788,11 +788,23 @@
     ],
     [
      "18:05",
-     5.4583
+     5.4596
     ],
     [
-     "18:08",
+     "18:10",
      5.4586
+    ],
+    [
+     "18:15",
+     5.4598
+    ],
+    [
+     "18:20",
+     5.458
+    ],
+    [
+     "18:25",
+     5.4591
     ]
    ]
   },
@@ -1519,7 +1531,7 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": 0.06,
+    "ibov30": 0.09,
     "dolar30": -0.03
    },
    {
@@ -1532,7 +1544,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.09,
     "dolar30": -0.03
    },
    {
@@ -1606,78 +1618,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Bolsa cai 1,4%, juro sobe e dólar ronda os R$ 5,50",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb3R0T1dScTRuOWhrMFItZjVDbnRIU2szRDViaWkzTnZBbjBlb3hYSjdzb3JTOS1QMDJ1RS1ONVI1R3lmM2RmRk54M1MxSVBUNGxLRG9aV3dOMXZqYWtJZlpDcGRPZjZ4M0VBTFFhaDFLNGxKUlFtNkxJWVRKMGl1WHdfV19sZUZVYi1odEREckk1ZDdzNFZnMVZzTDVINVRpMkdON0R6ZTJIVTByeHVqckpCd2s?oc=5",
-   "publicado": "2026-11-04T05:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Selic: mercado muda projeções e vê decisão do Copom como teste de credibilidade do BC",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQU9yeTZCVUs1Wjd2S3ZaZXZUN3RoVmZOMm1Jd0FnVFhLUVBkNHplM0RpblRsWWMyS0I1VTVTX09BT0JoOFVUY3dqWG5pVm1mYXoyMU8wVzZYbTd1MG1jUzdrX1VSMThTQjR5TFJ5amdIU0ttUlNFRWQ3dkdmZVJuZnlkZlRnZ1R4aDJDeW1IaDVHS2xWTlFhdE9Oam1jaGMxb1c4ZVFmbjJBTnNBRWpiQm5kamRfOHpvU3FmeG9lcVpEQVF5VXZkMkx4eW54N081SVFSZXo1aG84b3fSAeABQVVfeXFMTzNuVlVHV2drMTdSQWpEelV5bVJtb2t5S3VSNHNwTzdyT05LYUFwelhlQlZWaEtZeHJ4bWp5MWVTeHZac0dXeFRRanhlMWtYSFZDUndKdzdTbVI1b2FHc0VPRTJ0aFR1VklpX3NnXzlQTEpnd0ViSm1FR3gzTExaS0NwNjR2dExvXzVXcmVTSFFlcGF4MFN2bnV0QXpJUnc5ZDg0LWM4eGZyLTR3dzRubTZFUFNReWZfZW52eUJtZFF1TGJhZEtJcVFsUVRIaGJROFAxdnBrbHJZcmVQYjl4VEI?oc=5",
-   "publicado": "2026-11-04T05:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Petróleo da Margem Equatorial deve fortalecer ex-garimpo de Eike Batista na Amazônia",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/petroleo-da-margem-equatorial-deve-fortalecer-ex-garimpo-de-eike-batista-na-amazonia/",
-   "publicado": "2026-11-04T05:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "EQTL3"
-   ]
-  },
-  {
-   "titulo": "Decisão do Copom, Caged e emprego nos EUA: o que move os mercados após 6ª queda da Bolsa",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYzdlbEN2OFJRLXd0aVFUdURrbmk0cl9vMjRNcXVXWnVoNFQyNU10S2VUNFJ0VkVydzIyMnV2ZTF4cjdzTDlCaWpDY3hxemRyX3g4QXJDVVRRVVpxdGlMMlAyNmoyUkx0MEtDTEVHSE9HdkNtVmZPdW9Tb2hNd1pFN01zQTBQeEU5V2JCVE0wRFZBcW4tRXVLRy1jNGRjMEJ6eVBPb3RXd0N0bThWcmN2SDdUS3NKMjVDU1ZTcjdB?oc=5",
-   "publicado": "2026-11-04T05:31-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Selic: mercado muda projeções e vê decisão do Copom como teste de credibilidade do BC",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVVNPbF8yalpHZUtXZ3gtSVhQNUItR3RfUzZGSzBIb21yT1paTHZ1djBuendQZm9qVHFFZEx4eGljY2gzX1lTSE5rYkRSTDdocVlsdmdXYWZCRjdGTFlyZXdHdjNoOXRFM2V6aUsyQUFCMWhhRU1HSDJKV1pCeWtEUm85c2EtWmxVaW5veFF4VkZhbzNCU050WXVkbnd4TERQeGhzMElIOHFRRW00bGpFT3dUOE1iU0Z2emZxOUpweS00Nkd5enRPSVhhMDFmU3FhT3UxYnM1TFZ5RUZyM0xMZHRENEFIUQ?oc=5",
-   "publicado": "2026-11-04T05:31-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dow Jones Futuro sobe após vitória dos democratas nas eleições de meio de mandato",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORkhud2xjMGZaZTJEUXN1dEFrZ0lvMmloSTFlUlBaa3o0MnBCMzlDYndHU3p4c0gwLWVnZDAxUl8tanBiVTVzcS02M0ZCQ3BBRnlRbk5takxoNXJOSmI0bmJha3pVbFdjY3pXZF9ndHUwVVREaTcyVmgyR2dXdlVxX1RQUV9pQ21qMWw0Mnh4Mi1iandRem8xcXB5RkxBM0JfUzc2T01nVTV6REtpQVNTVV94TTV6ZjRUanh0d9IBwgFBVV95cUxOenZGQV8zOW1xUVdUNHVNT3FIUFVkd09CTmVKTFhsZzZtMUNxbXMtb3Y5aW9pcVVoQWFnQlU0UzYzYU9lQ0o2T3h6Z1hORVFaQXhFd2tQR2dhWlh2SV90ZEJSZ1ljM3UxWUJRNVRDWlZqWnl2bmcwaWwzSVE4dXJBS0lBMjJfN3ZPQjY1RGZhQVB3ckU5X2dNaE5PYjNidmpiWFdOcS1sbl9ucmEwQk56LURrM3Z5WVpyanFZUk1QT1JYdw?oc=5",
-   "publicado": "2026-11-04T05:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Tempo real: Ibovespa acompanha Copom; expectativa é de manutenção da Selic a 13,75% ao ano",
    "fonte": "Money Times",
@@ -2573,6 +2513,82 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa acompanha ‘onda azul’ de Wall Street e sobe 1%; dólar cai",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE44UFF2MmRzdGZKRm1lS0dZS1BqRkU0RlhHZkdPdTZ3c3pJeElMZTBBNXZndWJsNTJxUHJOOVBGQmtxZnc5YW5aUlpmSnNLUzcxcno1YmE3R29rZEdENnVqY0dUN2pPQQ?oc=5",
+   "publicado": "2026-11-04T18:25-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
+  },
+  {
+   "titulo": "BC puxa freio e encerra ciclo após 5 cortes de juros; Selic fica em 13,75%",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNG9RUGJLRTJtcUROSGd5d3FnZm5QdG5WY2JzOFZfLWtpcmVGMjB6Y1JNSWUzT3RDTHhkQ0Q4UzlfbmdoQXphcFdHSFJRUU0wajEtX21tSDNYbFdMbTdNVW4wSEwtek5EM2loNmtoYnBUYU5lTkxKbmVVNnVmNm0xb25JZWg?oc=5",
+   "publicado": "2026-11-04T18:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Selic em 13,75% mantém atratividade da renda fixa pós-fixada; veja como ficam os investimentos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/selic-em-1375-mantem-atratividade-da-renda-fixa-pos-fixada-veja-como-ficam-os-investimentos.shtml",
+   "publicado": "2026-11-04T18:32-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Brasil mantém maior taxa de juros reais do mundo após manutenção da Selic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNN0RncnpWRXVDeDJfNXRSLUxOZWdNQ2xsWm8xdU5uNW5wYnIwcEtNOHprZmdLY0dzVS1HeG9qSElOM0J4NGNLcW1kTkMyb1pvbUZyUlJiaHh0czVxTVBBUXNHMWdwZ3d5OGZkVm8zTF91TFNZUms1NVlLYTJiQVVxQkdFelZZMXVGYzYtNDFWQ2hWOWVNVS1tQnNON2ZNUlBtajZHMXczTjhBeUxqSUYweGI1NmpwSmZlT1RocEszam9oVVhmOEpkcmJqc3o?oc=5",
+   "publicado": "2026-11-04T18:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco Central surpreende e mantém juros básicos em 13,75% ao ano",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bc-surpreende-e-mantem-juros-basicos-em-1375-ao-ano",
+   "publicado": "2026-11-04T18:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Onda azul nos EUA anima mercados: Ibovespa retoma 167 mil pontos e dólar cai a R$ 5,45",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNlNqZThpd1QzV19ISl9Jd0I3MkFMNHBmajRLN2NQU0tZc3NvM0h2N0dQb0tfM29yd2k0MHY1LTE0M3FmcTlNR0l4OGpLVWpPeFo5OHZEXzU4VFlWbHJwRUFPajc4a0k2SFpyNm12dkcyRXliTjYxTjB6NGFWQjlHWkNWQzlsT0xPQk5hWTYzVGNNMDl6LXJTMnpuZ0tZX1VDSG1KWUNxYUlRWURZYlZYMm1LWWhTTi12Qnc?oc=5",
+   "publicado": "2026-11-04T18:35-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
   }
  ],
  "enviadas": [
@@ -2602,7 +2618,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T18:08-03:00",
+ "atualizado_em": "2026-11-04T18:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2610,23 +2626,87 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
-  "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
   {
-   "titulo": "Petróleo brent cai 8% com possível impacto da eleição dos EUA no conflito com Irã",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQa0xuZjd2UExyMU5LMnFtZ0NJTE9BLWpQWktSNXpoT09oUHlBZDdvUHMwdE9NMEtXS2dSYlpSZlpYdldHNnNWcmZSNVFlRTRSN05La081Y3JJQ1dmdWhnQUNfdzlBN2VuVzE5UWRhdUtYYWJGcEZ0V0g5YXlLUkNUb2d2dWNOdVNLVEdzN9IBkgFBVV95cUxPOC00OVJEOXlqMEg4aDhZNVdod3QxN0tNTTBwS2k1QlVsUm5LRVhVR2VaVFdReTJoby1LaVBXNXprRWZNZ1VQS3NrdGs2dUozOHNKbngtX3cxZ3ZwQkpRanRyUm5RTlZFQU9leDBUb3NtcnRVQ01iRXIwSVBBN1RLcnRSUkJVbnFlamtlSUE5Rms3QQ?oc=5",
-   "publicado": "2026-11-04T17:31-03:00",
-   "impacto": "medio",
+   "titulo": "Onda azul nos EUA anima mercados: Ibovespa retoma 167 mil pontos e dólar cai a R$ 5,45",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNlNqZThpd1QzV19ISl9Jd0I3MkFMNHBmajRLN2NQU0tZc3NvM0h2N0dQb0tfM29yd2k0MHY1LTE0M3FmcTlNR0l4OGpLVWpPeFo5OHZEXzU4VFlWbHJwRUFPajc4a0k2SFpyNm12dkcyRXliTjYxTjB6NGFWQjlHWkNWQzlsT0xPQk5hWTYzVGNNMDl6LXJTMnpuZ0tZX1VDSG1KWUNxYUlRWURZYlZYMm1LWWhTTi12Qnc?oc=5",
+   "publicado": "2026-11-04T18:35-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
    ],
+   "tickers": [
+    "AZUL4"
+   ]
+  },
+  {
+   "titulo": "Brasil mantém maior taxa de juros reais do mundo após manutenção da Selic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNN0RncnpWRXVDeDJfNXRSLUxOZWdNQ2xsWm8xdU5uNW5wYnIwcEtNOHprZmdLY0dzVS1HeG9qSElOM0J4NGNLcW1kTkMyb1pvbUZyUlJiaHh0czVxTVBBUXNHMWdwZ3d5OGZkVm8zTF91TFNZUms1NVlLYTJiQVVxQkdFelZZMXVGYzYtNDFWQ2hWOWVNVS1tQnNON2ZNUlBtajZHMXczTjhBeUxqSUYweGI1NmpwSmZlT1RocEszam9oVVhmOEpkcmJqc3o?oc=5",
+   "publicado": "2026-11-04T18:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
    "tickers": []
+  },
+  {
+   "titulo": "Banco Central surpreende e mantém juros básicos em 13,75% ao ano",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bc-surpreende-e-mantem-juros-basicos-em-1375-ao-ano",
+   "publicado": "2026-11-04T18:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Selic em 13,75% mantém atratividade da renda fixa pós-fixada; veja como ficam os investimentos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/selic-em-1375-mantem-atratividade-da-renda-fixa-pos-fixada-veja-como-ficam-os-investimentos.shtml",
+   "publicado": "2026-11-04T18:32-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "BC puxa freio e encerra ciclo após 5 cortes de juros; Selic fica em 13,75%",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNG9RUGJLRTJtcUROSGd5d3FnZm5QdG5WY2JzOFZfLWtpcmVGMjB6Y1JNSWUzT3RDTHhkQ0Q4UzlfbmdoQXphcFdHSFJRUU0wajEtX21tSDNYbFdMbTdNVW4wSEwtek5EM2loNmtoYnBUYU5lTkxKbmVVNnVmNm0xb25JZWg?oc=5",
+   "publicado": "2026-11-04T18:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa acompanha ‘onda azul’ de Wall Street e sobe 1%; dólar cai",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE44UFF2MmRzdGZKRm1lS0dZS1BqRkU0RlhHZkdPdTZ3c3pJeElMZTBBNXZndWJsNTJxUHJOOVBGQmtxZnc5YW5aUlpmSnNLUzcxcno1YmE3R29rZEdENnVqY0dUN2pPQQ?oc=5",
+   "publicado": "2026-11-04T18:25-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
   },
   {
    "titulo": "Juros futuros despencam com apoio externo e expectativa por anúncio fiscal",
@@ -2698,45 +2778,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "Petrobras despenca mais de 6% com tombo do petróleo",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmZjVUMzbW0teGxQYXJpNVV3R1RXNEpWcWtBVDAzRURsMG5OUFZNNXpNWHlRYkJvYnNqaTFGcEZMRzZKdm5Hci1MZWxEamZSMzdPTnZYb0dnQU96dnVPR1JiN2RmdzVROWxpOUtySlV3c05EN05EcElyLUJZVWV0MW1acnB5S0s4X3B0QTZqSU5uZnZuZnRfdnBfYkY5WmM4T0hBR1NMT2QxdkFPMEHSAbMBQVVfeXFMTXJkOUY4OEcxSk5RTXdXM001MGF3WDl0Y0ozcGZUT2hpSGZ5dktFSGNKZGV0d3d3QmxMUzctaE5Bc1BwUTdkYjctMEtkRVFzaHRIdE5xMVJzWnNtVTFFeFY0aXVLX1kxeV9hdXJKdzc2d0c1NkdzTFRGNkpRTFdhN1VpNzZscjB6bV9IUVJqOUZEbDRkT1lWZ2VaNHdzSWlhUEtRUTViV3JPTlZ0eXNMWVRHNkk?oc=5",
-   "publicado": "2026-11-04T16:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Tesouro Direto volta do apagão com tombo de até 38 pontos-base pouco antes do Copom",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQmJnMXBlNWJCX3czX3B1eFlzQ2xMbjB6YU1CT1VKTjRRMDltLWxlVFhWSGFxRG4yeWRHcFpJRzRmcXJhd3B2RmIzWW5od185enVoU0kzWVk1YVZESE9mckR4RS1sUmpHSmtmU3lRcTFONGkyNTV5S2dUSEh6RVdpNF96NFNvbVNMN3Q5UGJlbFHSAZYBQVVfeXFMUHZ1azgwQzZfYTdQOFo0T2hNVGZhR0Z1b0hmT3FBMElyWFNTcUcxM3pzVnZYWmdDQzdBRWo5M1pDYzBkTzNVUnN5NWJmZW1mM2JoaFdiWVNuXy1JN09CWUpRbWZpVUtCaDFkTTVOaFEtSWx5LWNuV3JSLW1OQ21hMWFuaW1rZU9KY3BObGk1NzRFdEJ3UmtR?oc=5",
-   "publicado": "2026-11-04T16:19-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
-   "publicado": "2026-11-04T16:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Ações do Ibovespa: mediana do P/L cai abaixo do nível da pandemia após eleições",
