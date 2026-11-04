@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T17:10-03:00",
+  "atualizado_em": "2026-11-04T17:12-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -336,6 +336,10 @@
     [
      "16:50",
      167284.0
+    ],
+    [
+     "16:55",
+     167201.0
     ]
    ]
   },
@@ -737,6 +741,10 @@
     [
      "17:10",
      5.4546
+    ],
+    [
+     "17:13",
+     5.4547
     ]
    ]
   },
@@ -1448,7 +1456,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": -0.06,
     "dolar30": -0.1
    },
    {
@@ -1505,22 +1513,24 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:09",
+    "titulo": "Juros futuros recuam após vitória democrata nos EUA e expectativa por Copom",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObkExWG5ZeG5fQlUxOXlCdXBBcXF5OFRuR2x4WkNWbGUxS2xaSDNpLWRzLTdtMDNPSFNhSFZkclJtU21nU2wwWUdsMGt4LXB2WkJ6YTRxMWgxMVFkWVd5OTcxWTBEdHcyZ2xuSDM3YW5yb2VyRmphUjdIRmU1dVlncm5WdkNqeTExbkZQem93NmFfbDNZNGdDeXdieC03MzJjUUFRdGZrVDl5ME9hQXJkeldEWTNXM3RkNnp4VjFGa1hYZFo1eTJz?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Em meio a incertezas, Copom pode redefinir humor dos ativos brasileiros?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTk5mTEhIVEFvWjhLb2J2ZnNnSHkyT3NET0dNaE1OMzJYNzBoUzl2dWktc1FEWTNOLXBBLWI2QkV3NjFJd2NYdlBhYVlCOFhUSGczNU9Sa1VCRFB2bUg1aXN5cG1TR1lQdzgxYVVPT0NEYi1OTG1OQVp3X0E5eGJJR0t3dFpuVHRFcHc3VHE0M2J0V1l0bWNzWHNKVXczM1IwWGpaNU5CTTNRN1NaN3fSAbMBQVVfeXFMTzM2c1FQU0R6TWlvRkduTjByaHdWUUVVbzhmdjlGUVA5YW1NSkJqWXRSTWdteElaa3BCd0NjcFlYbnB2aW5DQUY5bDB1RzQ0WV9zTExSeUk2dzkzWmFWN1Nob1RNaFptdVEzN3o4T29TQ0N0NTN0WENlRUtNb29GSTgzVDh1SjA1cDBiSnNjS3JKbzh4cFZwSWRhcC12OURQVlJmSXhoUTM5bnE2LUNFNXYyMzA?oc=5",
-   "publicado": "2026-11-04T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Bolsa cai 1,4%, juro sobe e dólar ronda os R$ 5,50",
    "fonte": "Valor",
@@ -2476,6 +2486,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Juros futuros recuam após vitória democrata nos EUA e expectativa por Copom",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObkExWG5ZeG5fQlUxOXlCdXBBcXF5OFRuR2x4WkNWbGUxS2xaSDNpLWRzLTdtMDNPSFNhSFZkclJtU21nU2wwWUdsMGt4LXB2WkJ6YTRxMWgxMVFkWVd5OTcxWTBEdHcyZ2xuSDM3YW5yb2VyRmphUjdIRmU1dVlncm5WdkNqeTExbkZQem93NmFfbDNZNGdDeXdieC03MzJjUUFRdGZrVDl5ME9hQXJkeldEWTNXM3RkNnp4VjFGa1hYZFo1eTJz?oc=5",
+   "publicado": "2026-11-04T17:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2505,7 +2527,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T17:10-03:00",
+ "atualizado_em": "2026-11-04T17:12-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2518,6 +2540,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Juros futuros recuam após vitória democrata nos EUA e expectativa por Copom",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObkExWG5ZeG5fQlUxOXlCdXBBcXF5OFRuR2x4WkNWbGUxS2xaSDNpLWRzLTdtMDNPSFNhSFZkclJtU21nU2wwWUdsMGt4LXB2WkJ6YTRxMWgxMVFkWVd5OTcxWTBEdHcyZ2xuSDM3YW5yb2VyRmphUjdIRmU1dVlncm5WdkNqeTExbkZQem93NmFfbDNZNGdDeXdieC03MzJjUUFRdGZrVDl5ME9hQXJkeldEWTNXM3RkNnp4VjFGa1hYZFo1eTJz?oc=5",
+   "publicado": "2026-11-04T17:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar fecha em queda de 0,65%, a R$ 5,45, em reação às eleições nos EUA e expectativa por Copom",
    "fonte": "Money Times",
