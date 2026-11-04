@@ -53,13 +53,14 @@
    "tipo": "ipca",
    "evento": "IPCA (out)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,56%",
+   "consenso": "0,54%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -0.008,
    "win_abertura": true,
-   "wdo": 0.255
+   "wdo": 0.255,
+   "fonte_consenso": "Nord Research"
   },
   {
    "id": "2024-11-13|10h30|cpi-eua",
@@ -98,13 +99,14 @@
    "tipo": "ipca",
    "evento": "IPCA (nov)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,39%",
+   "consenso": "0,38%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 0.038,
    "win_abertura": true,
-   "wdo": -0.536
+   "wdo": -0.536,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2024-12-11|10h30|cpi-eua",
@@ -157,13 +159,14 @@
    "tipo": "ipca",
    "evento": "IPCA (dez)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,52%",
+   "consenso": "0,57%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.036,
    "win_abertura": true,
-   "wdo": -0.043
+   "wdo": -0.043,
+   "fonte_consenso": "Reuters"
   },
   {
    "id": "2025-01-10|10h30|payroll",
@@ -246,13 +249,14 @@
    "tipo": "ipca",
    "evento": "IPCA (jan)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,16%",
+   "consenso": "0,17%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.085,
    "win_abertura": true,
-   "wdo": -0.143
+   "wdo": -0.143,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2025-02-12|10h30|cpi-eua",
@@ -307,13 +311,14 @@
    "tipo": "ipca",
    "evento": "IPCA (fev)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "1,31%",
+   "consenso": "1,31%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.084,
    "win_abertura": true,
-   "wdo": 0.535
+   "wdo": 0.535,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2025-03-19|15h|fomc",
@@ -383,13 +388,14 @@
    "tipo": "ipca",
    "evento": "IPCA (mar)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,56%",
+   "consenso": "0,56%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 0.308,
    "win_abertura": true,
-   "wdo": -0.735
+   "wdo": -0.735,
+   "fonte_consenso": "VT Markets"
   },
   {
    "id": "2025-05-02|09h30|payroll",
@@ -443,13 +449,14 @@
    "tipo": "ipca",
    "evento": "IPCA (abr)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,43%",
+   "consenso": "0,42%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.267,
    "win_abertura": true,
-   "wdo": -0.382
+   "wdo": -0.382,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2025-05-13|09h30|cpi-eua",
@@ -490,13 +497,14 @@
    "tipo": "ipca",
    "evento": "IPCA (mai)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,26%",
+   "consenso": "0,32%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.045,
    "win_abertura": true,
-   "wdo": -0.103
+   "wdo": -0.103,
+   "fonte_consenso": "Investing.com"
   },
   {
    "id": "2025-06-11|09h30|cpi-eua",
@@ -566,13 +574,14 @@
    "tipo": "ipca",
    "evento": "IPCA (jun)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,24%",
+   "consenso": "0,20%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 0.017,
    "win_abertura": true,
-   "wdo": -0.746
+   "wdo": -0.746,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2025-07-15|09h30|cpi-eua",
@@ -658,13 +667,14 @@
    "tipo": "ipca",
    "evento": "IPCA (jul)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,26%",
+   "consenso": "0,37%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.067,
    "win_abertura": true,
-   "wdo": -0.669
+   "wdo": -0.669,
+   "fonte_consenso": "Invezz"
   },
   {
    "id": "2025-09-05|09h30|payroll",
@@ -689,13 +699,14 @@
    "tipo": "ipca",
    "evento": "IPCA (ago)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "−0,11%",
+   "consenso": "−0,15%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -0.075,
    "win_abertura": true,
-   "wdo": -0.052
+   "wdo": -0.052,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2025-09-11|09h30|cpi-eua",
@@ -749,13 +760,14 @@
    "tipo": "ipca",
    "evento": "IPCA (set)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,48%",
+   "consenso": "0,52%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.094,
    "win_abertura": true,
-   "wdo": -0.109
+   "wdo": -0.109,
+   "fonte_consenso": "VT Markets"
   },
   {
    "id": "2025-10-24|09h30|cpi-eua",
@@ -809,13 +821,14 @@
    "tipo": "ipca",
    "evento": "IPCA (out)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,09%",
+   "consenso": "0,16%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.15,
    "win_abertura": true,
-   "wdo": 0.008
+   "wdo": 0.008,
+   "fonte_consenso": "VT Markets"
   },
   {
    "id": "2025-11-20|10h30|payroll",
@@ -840,13 +853,14 @@
    "tipo": "ipca",
    "evento": "IPCA (nov)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,18%",
+   "consenso": "0,19%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.398,
    "win_abertura": true,
-   "wdo": 0.07
+   "wdo": 0.07,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2025-12-10|16h|fomc",
@@ -914,13 +928,14 @@
    "tipo": "ipca",
    "evento": "IPCA (dez)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,33%",
+   "consenso": "0,32%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 0.237,
    "win_abertura": true,
-   "wdo": -0.165
+   "wdo": -0.165,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2026-01-09|10h30|payroll",
@@ -988,13 +1003,14 @@
    "tipo": "ipca",
    "evento": "IPCA (jan)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,33%",
+   "consenso": "0,32%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 0.104,
    "win_abertura": true,
-   "wdo": 0.167
+   "wdo": 0.167,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2026-02-11|10h30|payroll",
@@ -1064,13 +1080,14 @@
    "tipo": "ipca",
    "evento": "IPCA (fev)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,70%",
+   "consenso": "0,65%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 0.107,
    "win_abertura": true,
-   "wdo": 0.089
+   "wdo": 0.089,
+   "fonte_consenso": "FXStreet"
   },
   {
    "id": "2026-03-18|15h|fomc",
@@ -1141,13 +1158,14 @@
    "tipo": "ipca",
    "evento": "IPCA (mar)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,88%",
+   "consenso": "0,77%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -0.123,
    "win_abertura": true,
-   "wdo": -0.737
+   "wdo": -0.737,
+   "fonte_consenso": "FXStreet"
   },
   {
    "id": "2026-04-29|15h|fomc",
@@ -1217,13 +1235,14 @@
    "tipo": "ipca",
    "evento": "IPCA (abr)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,67%",
+   "consenso": "0,70%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.021,
    "win_abertura": true,
-   "wdo": -0.153
+   "wdo": -0.153,
+   "fonte_consenso": "SBT News"
   },
   {
    "id": "2026-06-05|09h30|payroll",
@@ -1264,13 +1283,14 @@
    "tipo": "ipca",
    "evento": "IPCA (mai)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,58%",
+   "consenso": "0,53%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 0.0,
    "win_abertura": true,
-   "wdo": -0.174
+   "wdo": -0.174,
+   "fonte_consenso": "Itaú Macro"
   },
   {
    "id": "2026-06-17|15h|fomc",
@@ -1324,13 +1344,14 @@
    "tipo": "ipca",
    "evento": "IPCA (jun)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,16%",
+   "consenso": "0,31%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.039,
    "win_abertura": true,
-   "wdo": -0.209
+   "wdo": -0.209,
+   "fonte_consenso": "FXStreet"
   },
   {
    "id": "2026-07-14|09h30|cpi-eua",
@@ -1400,13 +1421,14 @@
    "tipo": "ipca",
    "evento": "IPCA (jul)",
    "pais": "BR",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,07%",
+   "consenso": "0,03%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -0.05,
    "win_abertura": true,
-   "wdo": -0.047
+   "wdo": -0.047,
+   "fonte_consenso": "The Rio Times"
   },
   {
    "id": "2026-08-12|09h30|cpi-eua",
