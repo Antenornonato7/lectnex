@@ -215,8 +215,54 @@ class Reel:
         return im
 
 
+PERGUNTAS = [
+    'Antes de ver o gráfico: você leria a manchete {n} como notícia de alta ou de baixa? Comente.',
+    'Qual dessas 3 manchetes você acha que mais mexeu no preço? Responda com o número.',
+    'A manchete {n} saiu às {h}. O que você teria feito no minuto seguinte: nada, esperar ou reduzir risco?',
+    'Você acompanha as notícias durante o pregão ou só olha o gráfico? Conta aqui.',
+    'Qual manchete de hoje você não tinha visto? 1, 2 ou 3?',
+]
+
+
+def legenda_reel(r):
+    """Legenda curta para o reel, com uma pergunta que puxa comentários (muda a cada dia)."""
+    top = max(r.mks, key=lambda x: abs(x[r.campo])) if r.mks else None
+    n = r.mks.index(top) + 1 if top else 1
+    q = PERGUNTAS[r.dia.toordinal() % len(PERGUNTAS)] if r.mks else PERGUNTAS[3]
+    q = q.format(n=n, h=top['hora'] if top else '')
+    linhas = [f'O que mexeu no {r.nome} hoje ({pct(r.vdia)}) 📈' if r.vdia >= 0 else f'O que mexeu no {r.nome} hoje ({pct(r.vdia)}) 📉', '']
+    if top:
+        linhas.append(f'A maior reação veio às {top["hora"]}: {pct(top[r.campo])} em 30 minutos.')
+    linhas += [q, '', 'Conteúdo educacional, não é recomendação. Todo pregão no link da bio.',
+               '#ibovespa #dolar #daytrade #miniindice #minidolar #b3 #mercadofinanceiro']
+    return '\n'.join(linhas)
+
+
+def capa(r, saida):
+    """Capa 1080×1920; o essencial fica no centro (a grade do perfil mostra só o meio da imagem)."""
+    im, d = r.fundo()
+    d.rectangle([0, 0, W, 10], fill=ORANGE)
+    r.centro(d, 470, f'NOTÍCIA × PREÇO · {DIAS[r.dia.weekday()]} {r.dia:%d/%m}', r.F['mono'], TEAL_L)
+    r.centro(d, 560, 'O que mexeu no', fonte('InterDisplay-Bold.otf', 100), WHITE)
+    r.centro(d, 680, f'{r.nome} hoje', fonte('InterDisplay-Bold.otf', 130), ORANGE)
+    r.centro(d, 860, pct(r.vdia), fonte('InterDisplay-Bold.otf', 230), r.cor)
+    # mini gráfico do dia
+    gx0, gx1, gy0, gy1 = 160, W - 160, 1160, 1400
+    ys = [p[1] for p in r.pts] + [r.base]
+    lo, hi = min(ys), max(ys)
+    pad = (hi - lo) * 0.1 or 1
+    X = lambda t: gx0 + (t - r.xs[0]) / max(1, r.xs[-1] - r.xs[0]) * (gx1 - gx0)
+    Y = lambda v: gy0 + (1 - (v - lo + pad) / (hi - lo + 2 * pad)) * (gy1 - gy0)
+    pts = [(X(minutos(p[0])), Y(p[1])) for p in r.pts]
+    d.polygon(pts + [(pts[-1][0], gy1), (pts[0][0], gy1)], fill=mix(r.cor, 0.15))
+    d.line(pts, fill=r.cor, width=7, joint='curve')
+    r.centro(d, 1450, f'{len(r.mks)} manchetes em 15 segundos' if r.mks else 'o pregão em 15 segundos', r.F['med'], MUTED)
+    im.save(saida, 'PNG', optimize=True)
+
+
 def main():
-    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    opc = {sys.argv[i + 1] for i, a in enumerate(sys.argv[:-1]) if a in ('--capa', '--legenda', '--quadros')}
+    args = [a for a in sys.argv[1:] if not a.startswith('--') and a not in opc]
     m = json.load(open(args[0], encoding='utf-8'))
     if not (m.get('ibov') or m.get('dolar')):
         print('Sem série do dia: reel não gerado.')
@@ -228,6 +274,10 @@ def main():
             r.quadro(t).save(os.path.join(pasta, f'reel_{t:05.2f}.png'))
         return
     saida = args[1] if len(args) > 1 else 'reel-dia.mp4'
+    if '--capa' in sys.argv:
+        capa(r, sys.argv[sys.argv.index('--capa') + 1])
+    if '--legenda' in sys.argv:
+        open(sys.argv[sys.argv.index('--legenda') + 1], 'w', encoding='utf-8').write(legenda_reel(r))
     p = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                           '-c:v', 'libx264', '-crf', '20', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', saida + '.tmp.mp4'],
                          stdin=subprocess.PIPE)

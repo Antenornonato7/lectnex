@@ -72,9 +72,9 @@ jobs:
         run: |
           [ -f "$RUNNER_TEMP/mercado.json" ] || exit 0
           command -v ffmpeg >/dev/null || { sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || { echo "::warning::Sem ffmpeg: reel não gerado."; exit 0; }; }
-          python3 scripts/reel_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/reel-dia.mp4" || { echo "::warning::Falha ao gerar o reel do dia."; exit 0; }
-          LEG=""; [ -f "$RUNNER_TEMP/grafico-legenda.txt" ] && LEG="$(cat "$RUNNER_TEMP/grafico-legenda.txt")"
-          python3 -c "import sys; sys.path.insert(0, 'scripts'); from kit import registrar_video; registrar_video(sys.argv[1], sys.argv[2])" "$RUNNER_TEMP/reel-dia.mp4" "$LEG"
+          python3 scripts/reel_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/reel-dia.mp4" --capa "$RUNNER_TEMP/reel-capa.png" --legenda "$RUNNER_TEMP/reel-legenda.txt" || { echo "::warning::Falha ao gerar o reel do dia."; exit 0; }
+          LEG=""; [ -f "$RUNNER_TEMP/reel-legenda.txt" ] && LEG="$(cat "$RUNNER_TEMP/reel-legenda.txt")"
+          python3 -c "import sys; sys.path.insert(0, 'scripts'); from kit import registrar_video; registrar_video(sys.argv[1], sys.argv[2], sys.argv[3])" "$RUNNER_TEMP/reel-dia.mp4" "$LEG" "$RUNNER_TEMP/reel-capa.png"
       - name: Story do placar da semana (sextas) no Telegram privado
         if: ${{ !inputs.previa_story }}
         env:
