@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T17:08-03:00",
+  "atualizado_em": "2026-11-04T17:38-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     167279.0
+     167284.0
+    ],
+    [
+     "16:55",
+     167331.0
+    ],
+    [
+     "17:00",
+     167269.0
     ]
    ]
   },
@@ -732,11 +740,35 @@
     ],
     [
      "17:05",
-     5.4526
+     5.4546
     ],
     [
-     "17:08",
-     5.4526
+     "17:10",
+     5.4557
+    ],
+    [
+     "17:15",
+     5.4557
+    ],
+    [
+     "17:20",
+     5.4576
+    ],
+    [
+     "17:25",
+     5.4557
+    ],
+    [
+     "17:30",
+     5.4538
+    ],
+    [
+     "17:35",
+     5.4548
+    ],
+    [
+     "17:38",
+     5.4546
     ]
    ]
   },
@@ -1448,7 +1480,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.02,
     "dolar30": -0.1
    },
    {
@@ -1463,7 +1495,20 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": null,
+    "ibov30": -0.09,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "16:35",
+    "titulo": "Ouro sobe mais de 3% com queda do dólar após vitória democrata nos EUA",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTENnV1pyTlg5bU1LNUZOZUZ2d2N2Wi1xTEY4cE5ETHM4cmJUM1BwSThWWm1ULUhWZDd2bm9kZThmSU1KZ0lXeXZwSGg3d0VQVWpVMFluV2JmUUw4WGN1cVpqNk1mY1NpaV9ER19DQmlxMUZqVFczd1liVFlWTnE4Qmh5VTdVcjhTd1F4WFhwLS03NFlBVDVwSGkzWW42d3ZHbkhuRXEzZ0xqbUZsQWlfTmN6UlVibmJqZm9jY2xNOA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.09,
     "dolar30": -0.03
    },
    {
@@ -1477,7 +1522,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.12
    },
    {
     "hora": "17:06",
@@ -1491,58 +1536,52 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": 0.0
+   },
+   {
+    "hora": "17:09",
+    "titulo": "Juros futuros recuam após vitória democrata nos EUA e expectativa por Copom",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObkExWG5ZeG5fQlUxOXlCdXBBcXF5OFRuR2x4WkNWbGUxS2xaSDNpLWRzLTdtMDNPSFNhSFZkclJtU21nU2wwWUdsMGt4LXB2WkJ6YTRxMWgxMVFkWVd5OTcxWTBEdHcyZ2xuSDM3YW5yb2VyRmphUjdIRmU1dVlncm5WdkNqeTExbkZQem93NmFfbDNZNGdDeXdieC03MzJjUUFRdGZrVDl5ME9hQXJkeldEWTNXM3RkNnp4VjFGa1hYZFo1eTJz?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.0
+   },
+   {
+    "hora": "17:26",
+    "titulo": "Dólar cai com alívio externo e tombo do petróleo",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQmlTb1p6VjBBZUpDZ2N5bW90WWdVRWRCaTVTRnVVMzZhRUdldlhIRGR1ZGp5aVNCQ3FSWmw5Y09qcDVWS0hqeHhsWFFxdV9kSVdqcEJYWEVKN3dnX1o4UTRLVmw5d0gtc1RCdTRuM3JzbHNUeFBnN0hGM3BNcXB3V1owRE5sa3BxRUI1XzVzelMxYl8zbENEbmZhRW5YRzJuMHFYbFJVNmRRd9IBuAFBVV95cUxPeVlSSW9RQzgzSGpPTzdONTgxOU4xT2JWQ2xLUDhORHRsMXJid1JfUUhpX21iU0JDeTNJQ3hYVXNnS0VnS2d6a2VGUTZyYWtDTDV1bGppRVFhS2NpckU1QWw4VTFRdGhPRGNrTjl4TUhrZEthU2NHWDV0cHBQa2g0Vzc0MkNrRlpMYjRkQm9KVnAyYUx4TXdsVldzZUFkQXpZYnhkOGVSalM1ZW43ZzN0bzVpTXhEYURK?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:27",
+    "titulo": "Juros futuros despencam com apoio externo e expectativa por anúncio fiscal",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQU2pjRExMNUpWM0lRN1paM1ZDX25xWmNRVGJhWS1tRXA2RVRvSW45ZVBNQWlFSDlCVVNld0lvZXF6WWNiTGRIbGJFa3RfWnZkTjd2UXpPUkRYdnF3NzJWdHBPM1pBMjNiYWl2cy1aUnF2b0hLRWZuTTVvMmtGbXFxUXN4dFVHb0pVMTFXVmIyajNCWm1vVVBfeFN3dW5xNlpwUzFuUUc5UTVvSkRQckxMUDRpVlZmNndpRG50d0FVaDBQaDJtdVVkTWh1RGfSAdsBQVVfeXFMUEMzWEdTZ1VJdWpEMkctLWREVUdqSVZ3dUpTZDBWNmY4VDZLUXAyU2plckNQVlhUXzgyVjZoWDJsYm45cFp6SEpnUlVGNVRYTGhWT1Jrb09TS2dFMmh1LXZiNC0yLXVsZk9vemNTalJVSGhBTG9IY2MyU040SXdRNDhmSXRJeFdjd2ttV191QlgwUkJMcWRyNWJidDVtMklqbFZUSy1aZ19wOFNHelEwM0pvUXVhNGg2amgxNE1JaWdoaHlBR2lackhMWlZmb2RFbDlrczZ6SXU4X2lN?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Copom decide taxa de juros sob pressão inflacionária e desconfiança do mercado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWlp1Z2xscnVCaDI1ZC1yS2tlTm8tQXBPUWFiTmJiRmp5c0xMWk1jUS1pcTFneEF6bVN3VTlGdlFDQlpVWnE4dWhhbEZ4SGZCUnlfT0RTWW1KdmQ2a2NSSTZOTnNMaFJXWkZWVW44VVFtNGd4R0JOUFh2Ynl4RzBiR3lSY3VVdnNtTmlFSHMzV19FdnfSAZgBQVVfeXFMTTJZSTlYazRRbFVCM19zaFU3MlZSb0NZeWRUU19LU2lJSXVzMngxdE1PVDF2VjJ1Z1hqUEtMemVTUl8tWGxCZ2F3SUgzczhpRFdQTURpMTNBcUVXdG13X19lazZsS1VSWDlUdS01SFRCdlp4bHhpeGxFU2FiWmg3Q0hzZlpxQVNVQ3lXSmlGVTBXSmZpZ2N3enQ?oc=5",
-   "publicado": "2026-11-04T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Em meio a incertezas, Copom pode redefinir humor dos ativos brasileiros?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTk5mTEhIVEFvWjhLb2J2ZnNnSHkyT3NET0dNaE1OMzJYNzBoUzl2dWktc1FEWTNOLXBBLWI2QkV3NjFJd2NYdlBhYVlCOFhUSGczNU9Sa1VCRFB2bUg1aXN5cG1TR1lQdzgxYVVPT0NEYi1OTG1OQVp3X0E5eGJJR0t3dFpuVHRFcHc3VHE0M2J0V1l0bWNzWHNKVXczM1IwWGpaNU5CTTNRN1NaN3fSAbMBQVVfeXFMTzM2c1FQU0R6TWlvRkduTjByaHdWUUVVbzhmdjlGUVA5YW1NSkJqWXRSTWdteElaa3BCd0NjcFlYbnB2aW5DQUY5bDB1RzQ0WV9zTExSeUk2dzkzWmFWN1Nob1RNaFptdVEzN3o4T29TQ0N0NTN0WENlRUtNb29GSTgzVDh1SjA1cDBiSnNjS3JKbzh4cFZwSWRhcC12OURQVlJmSXhoUTM5bnE2LUNFNXYyMzA?oc=5",
-   "publicado": "2026-11-04T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsa cai 1,4%, juro sobe e dólar ronda os R$ 5,50",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNLS0tczRCeVY5TExkbjlKaDgxUzhjWlZlenFZNFBUTVI5d0hMc3ZTaHl6Mml1djdxX3oxOVl5NXVBVHRyVnQ3dFdUTWNQTkVFVldIYjFjRFZ0cU03ZC0xRU5BbXF2SzFNREYwZ3VvMnNxbFZEdlN1bUNVTFByM2RKX1NXNjV0dlJtc1lsbFY3bTZkMWp2TlpEd05nZm1EN2tzUTRCWThR0gG0AUFVX3lxTE9vdHRPV1JxNG45aGswUi1mNUNudEhTazNENWJpaTNOdkFuMGVveFhKN3NvclM5LVAwMnVFLU41UjVHeWYzZGZGTngzUzFJUFQ0bEtEb1pXd04xdmpha0lmWkNwZE9mNngzRUFMUWFoMUs0bEpSUW02TElZVEowaXVYd19XX2xlRlViLWh0RERySTVkN3M0VmcxVnNMNUg1VGkyR043RHplMkhVMHJ4dWpySkJ3aw?oc=5",
-   "publicado": "2026-11-04T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Copom pode encerrar ciclo de cortes na Selic hoje: como ficam os seus investimentos?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORUhZZDl4LU1ESHROWXZKRWhhTWJ2c0hmam42MnNLalplU1NmQkR1c3NqdFZsTFIzcjNvdGpnRU90SjRYeXZXYUlpWW9EVDdsdUFaSmk5SmVIejQtNlBKYngtbHc4SHB2d0hSeE1mdmxxUFgzN0tCVlpQbE9DOURWNDRZb3VVellMNGwyLW9lMUpKQnQwalhsV2habXhxaWdVY0I0ZFR2cnkwT0VmbEp6X1E0M1ltcmZN?oc=5",
-   "publicado": "2026-11-04T05:03-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Bolsa cai 1,4%, juro sobe e dólar ronda os R$ 5,50",
    "fonte": "Valor",
@@ -2443,6 +2482,17 @@
    ]
   },
   {
+   "titulo": "Ouro sobe mais de 3% com queda do dólar após vitória democrata nos EUA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTENnV1pyTlg5bU1LNUZOZUZ2d2N2Wi1xTEY4cE5ETHM4cmJUM1BwSThWWm1ULUhWZDd2bm9kZThmSU1KZ0lXeXZwSGg3d0VQVWpVMFluV2JmUUw4WGN1cVpqNk1mY1NpaV9ER19DQmlxMUZqVFczd1liVFlWTnE4Qmh5VTdVcjhTd1F4WFhwLS03NFlBVDVwSGkzWW42d3ZHbkhuRXEzZ0xqbUZsQWlfTmN6UlVibmJqZm9jY2xNOA?oc=5",
+   "publicado": "2026-11-04T16:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Vitória democrata deve ampliar pressão sobre tarifas de Trump",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeDBlRHRrTEl5dmdhYWVtS1pMYXVrVG96UW1fYlBwcHdyd0QzZWtoLUxrdXhRY3ZIUmtHcUpHUnZtN0NPMXEzZUJ3Y01RXzdjNFNHWWZ4ZlU1UTFMWm45V1N4a1F3bWVQb0hnMjNwdmVUWHBvR1Z2aEVwdVlBTUVySEx4dVROaXRiS3RaeVdBVHQ4b0FZUW1TVjF3QmxBUUFJV1FqR1I1dVE4QUJQWmQ5TTRYVnp3UUZPbTZjNzFHbkk1U0pJZDN2YWRMWmhmUy16blJKY2pQdUY?oc=5",
@@ -2461,6 +2511,41 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros futuros recuam após vitória democrata nos EUA e expectativa por Copom",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObkExWG5ZeG5fQlUxOXlCdXBBcXF5OFRuR2x4WkNWbGUxS2xaSDNpLWRzLTdtMDNPSFNhSFZkclJtU21nU2wwWUdsMGt4LXB2WkJ6YTRxMWgxMVFkWVd5OTcxWTBEdHcyZ2xuSDM3YW5yb2VyRmphUjdIRmU1dVlncm5WdkNqeTExbkZQem93NmFfbDNZNGdDeXdieC03MzJjUUFRdGZrVDl5ME9hQXJkeldEWTNXM3RkNnp4VjFGa1hYZFo1eTJz?oc=5",
+   "publicado": "2026-11-04T17:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai com alívio externo e tombo do petróleo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQmlTb1p6VjBBZUpDZ2N5bW90WWdVRWRCaTVTRnVVMzZhRUdldlhIRGR1ZGp5aVNCQ3FSWmw5Y09qcDVWS0hqeHhsWFFxdV9kSVdqcEJYWEVKN3dnX1o4UTRLVmw5d0gtc1RCdTRuM3JzbHNUeFBnN0hGM3BNcXB3V1owRE5sa3BxRUI1XzVzelMxYl8zbENEbmZhRW5YRzJuMHFYbFJVNmRRd9IBuAFBVV95cUxPeVlSSW9RQzgzSGpPTzdONTgxOU4xT2JWQ2xLUDhORHRsMXJid1JfUUhpX21iU0JDeTNJQ3hYVXNnS0VnS2d6a2VGUTZyYWtDTDV1bGppRVFhS2NpckU1QWw4VTFRdGhPRGNrTjl4TUhrZEthU2NHWDV0cHBQa2g0Vzc0MkNrRlpMYjRkQm9KVnAyYUx4TXdsVldzZUFkQXpZYnhkOGVSalM1ZW43ZzN0bzVpTXhEYURK?oc=5",
+   "publicado": "2026-11-04T17:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros futuros despencam com apoio externo e expectativa por anúncio fiscal",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQU2pjRExMNUpWM0lRN1paM1ZDX25xWmNRVGJhWS1tRXA2RVRvSW45ZVBNQWlFSDlCVVNld0lvZXF6WWNiTGRIbGJFa3RfWnZkTjd2UXpPUkRYdnF3NzJWdHBPM1pBMjNiYWl2cy1aUnF2b0hLRWZuTTVvMmtGbXFxUXN4dFVHb0pVMTFXVmIyajNCWm1vVVBfeFN3dW5xNlpwUzFuUUc5UTVvSkRQckxMUDRpVlZmNndpRG50d0FVaDBQaDJtdVVkTWh1RGfSAdsBQVVfeXFMUEMzWEdTZ1VJdWpEMkctLWREVUdqSVZ3dUpTZDBWNmY4VDZLUXAyU2plckNQVlhUXzgyVjZoWDJsYm45cFp6SEpnUlVGNVRYTGhWT1Jrb09TS2dFMmh1LXZiNC0yLXVsZk9vemNTalJVSGhBTG9IY2MyU040SXdRNDhmSXRJeFdjd2ttV191QlgwUkJMcWRyNWJidDVtMklqbFZUSy1aZ19wOFNHelEwM0pvUXVhNGg2amgxNE1JaWdoaHlBR2lackhMWlZmb2RFbDlrczZ6SXU4X2lN?oc=5",
+   "publicado": "2026-11-04T17:27-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2493,7 +2578,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T17:08-03:00",
+ "atualizado_em": "2026-11-04T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2503,14 +2588,50 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Juros futuros despencam com apoio externo e expectativa por anúncio fiscal",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQU2pjRExMNUpWM0lRN1paM1ZDX25xWmNRVGJhWS1tRXA2RVRvSW45ZVBNQWlFSDlCVVNld0lvZXF6WWNiTGRIbGJFa3RfWnZkTjd2UXpPUkRYdnF3NzJWdHBPM1pBMjNiYWl2cy1aUnF2b0hLRWZuTTVvMmtGbXFxUXN4dFVHb0pVMTFXVmIyajNCWm1vVVBfeFN3dW5xNlpwUzFuUUc5UTVvSkRQckxMUDRpVlZmNndpRG50d0FVaDBQaDJtdVVkTWh1RGfSAdsBQVVfeXFMUEMzWEdTZ1VJdWpEMkctLWREVUdqSVZ3dUpTZDBWNmY4VDZLUXAyU2plckNQVlhUXzgyVjZoWDJsYm45cFp6SEpnUlVGNVRYTGhWT1Jrb09TS2dFMmh1LXZiNC0yLXVsZk9vemNTalJVSGhBTG9IY2MyU040SXdRNDhmSXRJeFdjd2ttV191QlgwUkJMcWRyNWJidDVtMklqbFZUSy1aZ19wOFNHelEwM0pvUXVhNGg2amgxNE1JaWdoaHlBR2lackhMWlZmb2RFbDlrczZ6SXU4X2lN?oc=5",
+   "publicado": "2026-11-04T17:27-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai com alívio externo e tombo do petróleo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQmlTb1p6VjBBZUpDZ2N5bW90WWdVRWRCaTVTRnVVMzZhRUdldlhIRGR1ZGp5aVNCQ3FSWmw5Y09qcDVWS0hqeHhsWFFxdV9kSVdqcEJYWEVKN3dnX1o4UTRLVmw5d0gtc1RCdTRuM3JzbHNUeFBnN0hGM3BNcXB3V1owRE5sa3BxRUI1XzVzelMxYl8zbENEbmZhRW5YRzJuMHFYbFJVNmRRd9IBuAFBVV95cUxPeVlSSW9RQzgzSGpPTzdONTgxOU4xT2JWQ2xLUDhORHRsMXJid1JfUUhpX21iU0JDeTNJQ3hYVXNnS0VnS2d6a2VGUTZyYWtDTDV1bGppRVFhS2NpckU1QWw4VTFRdGhPRGNrTjl4TUhrZEthU2NHWDV0cHBQa2g0Vzc0MkNrRlpMYjRkQm9KVnAyYUx4TXdsVldzZUFkQXpZYnhkOGVSalM1ZW43ZzN0bzVpTXhEYURK?oc=5",
+   "publicado": "2026-11-04T17:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros futuros recuam após vitória democrata nos EUA e expectativa por Copom",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObkExWG5ZeG5fQlUxOXlCdXBBcXF5OFRuR2x4WkNWbGUxS2xaSDNpLWRzLTdtMDNPSFNhSFZkclJtU21nU2wwWUdsMGt4LXB2WkJ6YTRxMWgxMVFkWVd5OTcxWTBEdHcyZ2xuSDM3YW5yb2VyRmphUjdIRmU1dVlncm5WdkNqeTExbkZQem93NmFfbDNZNGdDeXdieC03MzJjUUFRdGZrVDl5ME9hQXJkeldEWTNXM3RkNnp4VjFGa1hYZFo1eTJz?oc=5",
+   "publicado": "2026-11-04T17:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar fecha em queda de 0,65%, a R$ 5,45, em reação às eleições nos EUA e expectativa por Copom",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1keGI2NmtQNVhWN3pLTUtWVnFWS0ttak1xM3paUmtfVFhXY0lFNlRITmpUUFlCd1pOMDFiYUtBTE5kX3gwZmM1Y2haWlc1MHRZNTAwWmFXWnV1RkNVU2ZQLU5B?oc=5",
-   "publicado": "2026-11-04T17:06-03:00",
+   "publicado": "2026-11-04T17:07-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2523,6 +2644,17 @@
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeDBlRHRrTEl5dmdhYWVtS1pMYXVrVG96UW1fYlBwcHdyd0QzZWtoLUxrdXhRY3ZIUmtHcUpHUnZtN0NPMXEzZUJ3Y01RXzdjNFNHWWZ4ZlU1UTFMWm45V1N4a1F3bWVQb0hnMjNwdmVUWHBvR1Z2aEVwdVlBTUVySEx4dVROaXRiS3RaeVdBVHQ4b0FZUW1TVjF3QmxBUUFJV1FqR1I1dVE4QUJQWmQ5TTRYVnp3UUZPbTZjNzFHbkk1U0pJZDN2YWRMWmhmUy16blJKY2pQdUY?oc=5",
    "publicado": "2026-11-04T16:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ouro sobe mais de 3% com queda do dólar após vitória democrata nos EUA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTENnV1pyTlg5bU1LNUZOZUZ2d2N2Wi1xTEY4cE5ETHM4cmJUM1BwSThWWm1ULUhWZDd2bm9kZThmSU1KZ0lXeXZwSGg3d0VQVWpVMFluV2JmUUw4WGN1cVpqNk1mY1NpaV9ER19DQmlxMUZqVFczd1liVFlWTnE4Qmh5VTdVcjhTd1F4WFhwLS03NFlBVDVwSGkzWW42d3ZHbkhuRXEzZ0xqbUZsQWlfTmN6UlVibmJqZm9jY2xNOA?oc=5",
+   "publicado": "2026-11-04T16:35-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -2569,19 +2701,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
-   "publicado": "2026-11-04T16:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ações do Ibovespa: mediana do P/L cai abaixo do nível da pandemia após eleições",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTHpRb045cEVnTHJBT2VpZFFZODRtTmlQc1NaeXFZM3dkUHBRcU14aEdXdTdROFgza2lyRm05aVkwUDZXWXlQX2x0ZnczNXlJNXpzZFJOQkFXZ3p0TGRndjFBZXJTNDQ3RlMzSVB3bXd0Sng1b2tzNGdaN0VZdFFpUXVKdWtZZEpXSUxyam5wRmRUSWE2NVk5LVBJYTh1ZkFHZ1gzWkxPUVFraHJKQ2J4ZkVOaTVsRVJSeHZtd2RDSmVoTmtjX2ZYV3hn0gHPAUFVX3lxTE9pRW9XTEUwVEFUYVFRdDV3ckgxZjlxeDdRYVFMdlBZUWZIdGRXcUUwRzdNS0g4LWJpdGxZNHVMUXM1V09nRHJLU05SYzBreF9FSVZPNm80RXdlLUdlcjN2QVFHbXozNmY4XzZNOGowV1lIRzZqMlVBbU1FVk9neDlxcG1kelM3alY5X0FCSjY0NVlyRGZpNE1lYVhZV2padjA3eUpxenRwWm9uV0dWeVZlNnJMOXhfMGdvc0k3bnlmbmJqRDdfRWh1UWRSQTJSMA?oc=5",
@@ -2589,18 +2708,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Economia perde força, emprego resiste: os dados que vão pesar na decisão do Copom",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVUdXcHlpT2RwTGI1RVc3SGJ4YUtITUhQZVlncHhCeTdpLUhlQXNJNVBNbWY0azRfdDNITzRkam1QNDdaNjVLaGNBRkh0NWktWjVZemtKblhWeXJDb3A3WVd5Mk92c2k4eThJRmNoN1RUQkVDTk81U3JlQnFYMXBrckxGX3lqTkZBTzBhaE9maGtqcWhIa0M5dTJic3BfelJsZVZtMXhnYzNhVEZpSWRyZkswWHRuNVBXVmFaSkNUTWF5TDFYMzR1T05SandnWVBXcUE?oc=5",
-   "publicado": "2026-11-04T15:24-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
