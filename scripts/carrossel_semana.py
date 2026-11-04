@@ -319,6 +319,9 @@ def main():
                f'Como foi a semana no mercado ({br(dd["ini"])} a {br(dd["fim"])}): {resumo}. '
                'Arraste para ver o dia a dia, o placar do nosso termômetro (com acertos e erros)' + (', os eventos fortes da semana' if dd.get('eventos') else '') + ' e a agenda da próxima semana. '
                'Placar completo em lectnex.com.br/placar. Leitura do Dia grátis no link da bio. Conteúdo educacional, não é recomendação. #ibovespa #dolar #daytrade #miniindice #minidolar #b3')
+    if os.environ.get('IG_LEGENDA') and not previa:
+        cap = legenda.split('<b>Sugestão de legenda para o post:</b>\n', 1)[-1]
+        open(os.environ['IG_LEGENDA'], 'w', encoding='utf-8').write(cap.replace('. Arraste', '.\n\nArraste').replace(' Placar completo', '\n\nPlacar completo').replace(' #ibovespa', '\n#ibovespa'))
     enviar(arqs, legenda)
 
 

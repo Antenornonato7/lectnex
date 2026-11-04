@@ -395,6 +395,11 @@ if __name__ == '__main__':
                 publicar_ao_vivo()
         except Exception as e:
             print(f'::warning::Rodada falhou: {e.__class__.__name__}: {e}')
+        try:  # aprovações de posts do Instagram (botões no Telegram do dono)
+            import instagram
+            instagram.processar()
+        except Exception as e:
+            print(f'::warning::Instagram: {e.__class__.__name__}: {e}')
         if not laco or time.time() + 150 > fim:
             break
         time.sleep(150)

@@ -28,6 +28,10 @@ jobs:
           ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID || secrets.ONESIGNAL_APP_ID || 'c0be7d93-6afb-4bb0-bf56-6f9171302071' }}
           ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY || secrets.LECTNEX2 || secrets.ONESIGNAL_KEY || secrets.ONESIGNAL_REST_API_KEY || secrets.ONESIGNAL || secrets.LECTNEX3 || secrets.LECTNEX || secrets.APP_API_KEY || secrets.API_KEY }}
           LOOP_MIN: ${{ inputs.minutos || '9' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
         run: python3 coletor/noticias.py
       - name: Atualizar a cópia de reserva na main (a cada ~30 min)
         run: |

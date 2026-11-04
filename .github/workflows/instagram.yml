@@ -1,0 +1,33 @@
+# Instagram: conferir a conexão (teste), renovar o token (toda segunda pelo Relógio) ou processar aprovações à mão.
+# A publicação em si acontece quando o dono toca em "Publicar" no Telegram (processada no laço de notícias).
+name: Instagram
+run-name: Instagram ${{ inputs.acao }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      acao:
+        description: 'teste (confere token e conta), renovar ou processar'
+        type: choice
+        options: [teste, renovar, processar]
+        default: teste
+
+permissions:
+  contents: write
+
+jobs:
+  instagram:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instagram ${{ inputs.acao }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$INSTAGRAM_TOKEN" ] && [ "${{ inputs.acao }}" = "teste" ]; then echo "::error::Falta o segredo INSTAGRAM_TOKEN."; exit 1; fi
+          python3 coletor/instagram.py ${{ inputs.acao }}

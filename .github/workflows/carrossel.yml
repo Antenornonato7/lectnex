@@ -11,7 +11,7 @@ on:
         default: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   carrossel:
@@ -23,6 +23,13 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           pip install -q pillow==12.0.0 || pip install -q pillow
+          export IG_LEGENDA="$RUNNER_TEMP/carrossel-legenda.txt"
           python3 scripts/carrossel_semana.py ${{ inputs.previa && '--previa' || '' }} "$RUNNER_TEMP/carrossel"
+          if [ -f "$IG_LEGENDA" ]; then
+            python3 coletor/instagram.py propor carrossel "$IG_LEGENDA" $(ls "$RUNNER_TEMP"/carrossel/[0-9]-*.png | sort) || echo "::warning::Falha ao propor o carrossel no Instagram."
+          fi

@@ -56,9 +56,14 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           [ -f "$RUNNER_TEMP/mercado.json" ] || { echo "Sem gráfico do dia."; exit 0; }
-          python3 scripts/grafico_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/grafico-dia.png" || echo "::warning::Falha no post do gráfico do dia."
+          export IG_LEGENDA="$RUNNER_TEMP/grafico-legenda.txt"
+          python3 scripts/grafico_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/grafico-dia.png" || { echo "::warning::Falha no post do gráfico do dia."; exit 0; }
+          [ -f "$IG_LEGENDA" ] && { python3 coletor/instagram.py propor grafico "$IG_LEGENDA" "$RUNNER_TEMP/grafico-dia.png" || echo "::warning::Falha ao propor o post no Instagram."; }
       - name: Story do placar da semana (sextas) no Telegram privado
         if: ${{ !inputs.previa_story }}
         env:

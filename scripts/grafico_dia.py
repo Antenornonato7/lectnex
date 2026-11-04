@@ -146,6 +146,11 @@ def main():
                f'{lst}\n'
                'O movimento seguinte não prova causa, mas mostra como o mercado reage à notícia. Veja o dia completo no link da bio. '
                'Conteúdo educacional. #ibovespa #dolar #daytrade #miniindice #minidolar #b3')
+    if os.environ.get('IG_LEGENDA'):  # legenda limpa para o post no Instagram (coletor/instagram.py)
+        open(os.environ['IG_LEGENDA'], 'w', encoding='utf-8').write(
+            f'O que mexeu no {nome} hoje ({pct(vdia)}): marcamos no gráfico as manchetes seguidas dos maiores movimentos em 30 minutos.\n\n'
+            f'{lst}\n\nO movimento seguinte não prova causa, mas mostra como o mercado reage à notícia. Veja o dia completo no link da bio.\n\n'
+            'Conteúdo educacional, não é recomendação.\n#ibovespa #dolar #daytrade #miniindice #minidolar #b3')
     enviar(saida, legenda)
 
 
