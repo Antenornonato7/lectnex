@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-04T12:50:00-03:00",
+  "atualizado_em": "2026-11-04T16:45:00-03:00",
   "eventos": [
     {
       "data": "2026-11-04",
@@ -58,13 +58,16 @@
       "importancia": 2,
       "anterior": "165,8 mil",
       "consenso": "150 mil",
-      "resultado": null,
+      "resultado": "121,3 mil",
       "impacto": {
         "di": "volatil"
       },
       "nota": "Mercado de trabalho forte reduz espaço para cortes da Selic.",
       "tipo": "caged",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "abaixo",
+        "reacao": "Emprego formal mais fraco que o esperado costuma pesar nas taxas de DI, com o mercado vendo mais espaço para cortes da Selic; efeito em WIN e WDO tende a ser secundário."
+      }
     },
     {
       "data": "2026-11-04",
