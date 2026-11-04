@@ -1,4 +1,4 @@
-# Carrossel semanal (4 imagens 1080×1350) no Telegram privado do dono. Horário: sábado 9h47 (coletor/relogio.py).
+# Carrossel semanal (4 ou 5 imagens 1080×1350; a 5ª nas semanas com evento forte) no Telegram privado do dono. Horário: sábado 9h47 (coletor/relogio.py).
 name: Carrossel da semana
 run-name: "${{ inputs.previa && 'Prévia do carrossel' || 'Carrossel da semana' }}"
 

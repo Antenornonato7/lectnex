@@ -207,6 +207,35 @@ def registrar_placar_historico(ad):
         json.dump(pl, open(PLACAR_HIST, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
 
+def semana_em_eventos():
+    """Sexta: os eventos fortes da semana (Antes × Depois) e o placar acumulado, para o canal."""
+    if hoje.weekday() != 4:
+        return []
+    pl = (ler(PLACAR_HIST) or {}).get('eventos', [])
+    ini = (hoje - dt.timedelta(days=4)).isoformat()
+    evs = [e for e in pl if ini <= e['data'] <= hoje.isoformat()]
+    if not evs:
+        return []
+    nomes = {'win': 'WIN', 'wdo': 'WDO'}
+    l = ['📊 <b>A semana em eventos: o histórico acertou?</b>']
+    for e in evs:
+        d = dt.date.fromisoformat(e['data'])
+        partes = []
+        for k in ('win', 'wdo'):
+            sb, v, a = e['sobe'].get(k), e['reacao'].get(k), e['acerto'].get(k)
+            ind = '—' if sb is None else f'▲{sb}%' if sb >= 60 else f'▼{100 - sb}%' if sb <= 40 else 'dividido'
+            res = 'pendente' if v is None else (f'{"+" if v > 0 else ""}{v:.2f}%'.replace('.', ',') + ('' if a is None else ' ✅' if a else ' ❌'))
+            partes.append(f'{nomes[k]} {ind} → {res}')
+        l.append(f'{["seg", "ter", "qua", "qui", "sex"][d.weekday()]} {d:%d/%m} <b>{tg.e(e["evento"])}</b>: ' + ' · '.join(partes))
+    cont = lambda lst: (sum(1 for e in lst for k in ('win', 'wdo') if e['acerto'].get(k) is not None), sum(1 for e in lst for k in ('win', 'wdo') if e['acerto'].get(k)))
+    n, ok = cont(evs)
+    nt, okt = cont(pl)
+    if n:
+        l.append(f'Na semana: <b>{ok}/{n}</b>' + (f' · desde o início: <b>{okt}/{nt}</b> ({okt / nt * 100:.0f}%)' if nt > n else ''))
+    l.append('<i>▲/▼ = lado para onde o ativo foi na maioria das vezes anteriores (60% ou mais). Dividido não conta.</i>')
+    return l
+
+
 def texto_antes_depois(ad):
     """Linhas do Telegram (HTML)."""
     sp = {'acima': 'acima do consenso', 'abaixo': 'abaixo do consenso', 'em linha': 'em linha com o consenso'}.get(ad['surpresa'])
@@ -294,6 +323,12 @@ def main():
         registrar_placar_historico(ad)
     except Exception as e:
         tg.note('warning', f'Placar do histórico não atualizado: {e.__class__.__name__}')
+    try:
+        sem = semana_em_eventos()
+        if sem:
+            linhas += [''] + sem
+    except Exception as e:
+        tg.note('warning', f'Semana em eventos indisponível: {e.__class__.__name__}')
 
     mex = manchetes_que_mexeram()
     if mex:

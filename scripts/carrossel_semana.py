@@ -81,11 +81,14 @@ def coletar():
     prox_ini, prox_fim = ini + dt.timedelta(days=7), ini + dt.timedelta(days=11)
     evs = [e for e in cal.get('eventos', []) if prox_ini.isoformat() <= e.get('data', '') <= prox_fim.isoformat() and (e.get('importancia') or 1) >= 3]
     evs.sort(key=lambda e: (e['data'], e.get('hora') is None, e.get('hora') or ''))
+    ph = (ler('data/placar-historico.json') or {}).get('eventos', [])
+    eventos = [e for e in ph if ini.isoformat() <= e['data'] <= fim.isoformat()]
     return {'ini': ini.isoformat(), 'fim': fim.isoformat(), 'ibov': ib, 'dolar': us, 'placar': placar, 'placar20': todos,
+            'eventos': eventos, 'eventos_total': ph,
             'agenda': [{'data': e['data'], 'hora': e.get('hora'), 'pais': e.get('pais'), 'evento': e['evento']} for e in evs[:6]]}
 
 
-def base(titulo, n, previa):
+def base(titulo, n, previa, total=4):
     im = Image.new('RGB', (W, H), BG)
     dr = ImageDraw.Draw(im)
     for x in range(0, W, 48):
@@ -102,7 +105,7 @@ def base(titulo, n, previa):
     dr.text((M + 72, 66), 'Lect', font=fb, fill=WHITE)
     dr.text((M + 72 + dr.textlength('Lect', font=fb), 66), 'nex', font=fb, fill=TEAL_L)
     fm = fonte('JetBrainsMono-Bold.ttf', 24)
-    s = f'{n}/4'
+    s = f'{n}/{total}'
     dr.text((W - M - dr.textlength(s, font=fm), 76), s, font=fm, fill=MUTED)
     if previa:
         p = 'PRÉVIA · SEMANA EM ANDAMENTO'
@@ -124,11 +127,13 @@ def br(iso):
 def slides(dd, pasta, previa=False):
     os.makedirs(pasta, exist_ok=True)
     out = []
+    evs = dd.get('eventos') or []
+    T = 5 if evs else 4
     ib, us = dd.get('ibov'), dd.get('dolar')
     periodo = f'{br(dd["ini"])} a {br(dd["fim"])}'
 
     # 1. capa
-    im, dr = base('A SEMANA NO MERCADO', 1, previa)
+    im, dr = base('A SEMANA NO MERCADO', 1, previa, T)
     ft = fonte('InterDisplay-Bold.otf', 92)
     y = 230
     for linha in ['Como foi', 'a semana'] + ([] if not periodo else []):
@@ -151,7 +156,7 @@ def slides(dd, pasta, previa=False):
     out.append(os.path.join(pasta, '1-capa.png')); im.save(out[-1])
 
     # 2. dia a dia
-    im, dr = base('DIA A DIA', 2, previa)
+    im, dr = base('DIA A DIA', 2, previa, T)
     dr.text((M, 220), 'Fechamentos da semana', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
     y = 340
     fl, fv = fonte('JetBrainsMono-Bold.ttf', 30), fonte('JetBrainsMono-Bold.ttf', 30)
@@ -175,7 +180,7 @@ def slides(dd, pasta, previa=False):
     out.append(os.path.join(pasta, '2-dia-a-dia.png')); im.save(out[-1])
 
     # 3. placar
-    im, dr = base('PLACAR DO TERMÔMETRO', 3, previa)
+    im, dr = base('PLACAR DO TERMÔMETRO', 3, previa, T)
     dr.text((M, 220), 'O termômetro', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
     dr.text((M, 296), 'acertou?', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
     y = 420
@@ -208,8 +213,51 @@ def slides(dd, pasta, previa=False):
         dr.text((M, H - 220 + i * 36), l, font=fn, fill=MUTED)
     out.append(os.path.join(pasta, '3-placar.png')); im.save(out[-1])
 
-    # 4. agenda + chamada
-    im, dr = base('PRÓXIMA SEMANA', 4, previa)
+    # 4. a semana em eventos (antes × depois), se houve evento forte
+    if evs:
+        im, dr = base('A SEMANA EM EVENTOS', 4, previa, T)
+        dr.text((M, 220), 'O histórico', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
+        dr.text((M, 296), 'acertou?', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
+        y = 410
+        fe, fs, fj = fonte('InterDisplay-Bold.otf', 38), fonte('Inter-Medium.otf', 26), fonte('JetBrainsMono-Bold.ttf', 26)
+        SP = {'acima': 'acima do consenso', 'abaixo': 'abaixo do consenso', 'em linha': 'em linha'}
+        for e in evs[:4]:
+            d = dt.date.fromisoformat(e['data'])
+            dr.rectangle([M, y, W - M, y + 150], fill=CARD, outline=LINE, width=1)
+            dr.text((M + 24, y + 18), e['evento'], font=fe, fill=WHITE)
+            sub = f'{DIA[d.weekday()]} {d:%d/%m}' + (f' · {SP.get(e.get("surpresa"), e.get("surpresa"))}' if e.get('surpresa') else '')
+            dr.text((W - M - 24 - dr.textlength(sub, font=fs), y + 30), sub, font=fs, fill=MUTED)
+            for i, (k, nome) in enumerate((('win', 'WIN'), ('wdo', 'WDO'))):
+                sb, v, a = (e.get('sobe') or {}).get(k), (e.get('reacao') or {}).get(k), (e.get('acerto') or {}).get(k)
+                ind = '—' if sb is None else f'▲ {sb}%' if sb >= 60 else f'▼ {100 - sb}%' if sb <= 40 else 'dividido'
+                x = M + 24 + i * ((W - 2 * M) // 2)
+                dr.text((x, y + 82), f'{nome} {ind} →', font=fj, fill=MUTED)
+                xx = x + dr.textlength(f'{nome} {ind} → ', font=fj)
+                if v is None:
+                    dr.text((xx, y + 82), 'pendente', font=fj, fill=MUTED)
+                else:
+                    dr.text((xx, y + 82), pct(v), font=fj, fill=cor(v))
+                    if a is not None:
+                        dr.text((xx + dr.textlength(pct(v) + ' ', font=fj), y + 82), 'acertou' if a else 'errou', font=fj, fill=VERDE if a else VERMELHO)
+            y += 166
+        tot = dd.get('eventos_total') or evs
+        cont = lambda lst: (sum(1 for e in lst for k in ('win', 'wdo') if (e.get('acerto') or {}).get(k) is not None),
+                            sum(1 for e in lst for k in ('win', 'wdo') if (e.get('acerto') or {}).get(k)))
+        n, ok = cont(evs)
+        nt, okt = cont(tot)
+        y += 10
+        if n:
+            dr.text((M, y), f'Na semana: {ok} de {n} ({ok / n * 100:.0f}%)', font=fonte('InterDisplay-Bold.otf', 48), fill=TEAL_L)
+            y += 66
+        if nt and nt > n:
+            dr.text((M, y), f'Desde o início: {okt} de {nt} ({okt / nt * 100:.0f}%)', font=fonte('Inter-Medium.otf', 32), fill=MUTED)
+        fn = fonte('Inter-Medium.otf', 24)
+        for i, l in enumerate(quebrar(dr, 'O histórico aponta alta quando o ativo subiu em 60% ou mais das vezes anteriores com a mesma surpresa, e queda com 40% ou menos. Dividido não conta. Reação de 30 min.', fn, W - 2 * M, 3)):
+            dr.text((M, H - 210 + i * 34), l, font=fn, fill=MUTED)
+        out.append(os.path.join(pasta, '4-eventos.png')); im.save(out[-1])
+
+    # agenda + chamada (último slide)
+    im, dr = base('PRÓXIMA SEMANA', T, previa, T)
     dr.text((M, 220), 'O que vem por aí', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
     y = 340
     ag = dd.get('agenda') or []
@@ -229,7 +277,7 @@ def slides(dd, pasta, previa=False):
     dr.text((M + 36, yb + 30), 'Receba a Leitura do Dia grátis', font=fonte('InterDisplay-Bold.otf', 44), fill=WHITE)
     dr.text((M + 36, yb + 96), 'Termômetro, agenda e notícias antes da abertura.', font=fonte('Inter-Medium.otf', 28), fill='#CBD5E1')
     dr.text((M + 36, yb + 138), 'lectnex.com.br/comece', font=fonte('JetBrainsMono-Bold.ttf', 30), fill=ORANGE)
-    out.append(os.path.join(pasta, '4-agenda.png')); im.save(out[-1])
+    out.append(os.path.join(pasta, f'{T}-agenda.png')); im.save(out[-1])
     return out
 
 
@@ -242,7 +290,7 @@ def enviar(arquivos, legenda):
     for tipo in ('photo', 'document'):
         b = uuid.uuid4().hex
         media = [{'type': tipo, 'media': f'attach://f{i}'} for i in range(len(arquivos))]
-        media[-1 if tipo == 'document' else 0]['caption'] = legenda if tipo == 'photo' else 'As mesmas 4 imagens em qualidade original (sem compressão).'
+        media[-1 if tipo == 'document' else 0]['caption'] = legenda if tipo == 'photo' else f'As mesmas {len(arquivos)} imagens em qualidade original (sem compressão).'
         media[-1 if tipo == 'document' else 0]['parse_mode'] = 'HTML'
         corpo = f'--{b}\r\nContent-Disposition: form-data; name="chat_id"\r\n\r\n{chat}\r\n'.encode()
         corpo += f'--{b}\r\nContent-Disposition: form-data; name="media"\r\n\r\n{json.dumps(media, ensure_ascii=False)}\r\n'.encode()
@@ -269,7 +317,7 @@ def main():
     legenda = ('🗓️ <b>Carrossel da semana pronto</b>' + (' <i>(prévia, semana em andamento)</i>' if previa else '') + f'\n{resumo}\n\n'
                '<b>Sugestão de legenda para o post:</b>\n'
                f'Como foi a semana no mercado ({br(dd["ini"])} a {br(dd["fim"])}): {resumo}. '
-               'Arraste para ver o dia a dia, o placar do nosso termômetro (com acertos e erros) e a agenda da próxima semana. '
+               'Arraste para ver o dia a dia, o placar do nosso termômetro (com acertos e erros)' + (', os eventos fortes da semana' if dd.get('eventos') else '') + ' e a agenda da próxima semana. '
                'Leitura do Dia grátis no link da bio. Conteúdo educacional, não é recomendação. #ibovespa #dolar #daytrade #miniindice #minidolar #b3')
     enviar(arqs, legenda)
 
