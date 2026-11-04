@@ -32,14 +32,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261104e">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261104f">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261104e">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261104e">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261104f">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261104f">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -257,7 +257,7 @@
                     el.innerHTML='<div class="px-5 py-4 border-b border-slate-200 dark:border-lect-borderDark flex flex-wrap items-baseline justify-between gap-2"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-target text-lect-orange"></i>O HISTÓRICO ACERTOU?</span><span class="font-mono text-[11px] text-slate-500">Antes × depois nos dias de evento forte</span></div>'
                         +'<div class="grid grid-cols-2 gap-3 px-5 py-4">'+card('IBOVESPA · WIN',w)+card('DÓLAR · WDO',d)+'</div>'
                         +'<div class="overflow-x-auto"><table class="w-full font-mono text-xs"><thead><tr class="text-[10px] text-slate-500 text-left"><th class="px-2 py-1 font-normal">DIA</th><th class="px-2 font-normal">EVENTO</th><th class="px-2 font-normal">WIN: HISTÓRICO → HOJE</th><th class="px-2 font-normal">WDO: HISTÓRICO → HOJE</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
-                        +'<p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">O histórico indica alta quando o ativo subiu em 60% ou mais das divulgações anteriores com a mesma surpresa, e queda quando subiu em 40% ou menos. Entre os dois, fica dividido e não conta. Reação de 30 min (ou da abertura seguinte). <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p>';
+                        +'<p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">O histórico indica alta quando o ativo subiu em 60% ou mais das divulgações anteriores com a mesma surpresa, e queda quando subiu em 40% ou menos. Entre os dois, fica dividido e não conta. Reação de 30 min (ou da abertura seguinte). <a href="placar.html" class="text-lect-teal hover:underline">Placar completo →</a> <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p>';
                     el.classList.remove('hidden');
                 }).catch(function(){});
             })();</script>
@@ -348,7 +348,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261104e"></script>
+    <script src="assets/lectnex-core.js?v=20261104f"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -425,7 +425,7 @@
                     <div class="lg:col-span-7 space-y-2"><span class="term-label block">Últimos ${ult.length} pregões <span class="normal-case">(passe o mouse para ver o dia)</span></span>${row('win', 'WIN', 'IBOV')}${row('wdo', 'WDO', 'dólar')}
                         <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] text-slate-500 pt-1"><span><span class="inline-block w-2.5 h-2.5 bg-emerald-500 align-middle"></span> acertou</span><span><span class="inline-block w-2.5 h-2.5 bg-rose-500 align-middle"></span> errou</span><span><span class="inline-block w-2.5 h-2.5 bg-slate-200 dark:bg-lect-borderDark align-middle"></span> sem termômetro</span></div></div>
                 </div>
-                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">Como medimos: o termômetro sai às 7h40 e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou entre −0,5% e +0,5%. WIN pelo Ibovespa à vista, WDO pelo dólar à vista. <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
+                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">Como medimos: o termômetro sai às 7h40 e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou entre −0,5% e +0,5%. WIN pelo Ibovespa à vista, WDO pelo dólar à vista. <a href="placar.html" class="text-lect-teal hover:underline">Placar completo, com todos os erros →</a> <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
             el.classList.remove('hidden');
         }).catch(() => { });
 

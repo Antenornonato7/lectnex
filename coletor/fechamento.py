@@ -233,6 +233,7 @@ def semana_em_eventos():
     if n:
         l.append(f'Na semana: <b>{ok}/{n}</b>' + (f' · desde o início: <b>{okt}/{nt}</b> ({okt / nt * 100:.0f}%)' if nt > n else ''))
     l.append('<i>▲/▼ = lado para onde o ativo foi na maioria das vezes anteriores (60% ou mais). Dividido não conta.</i>')
+    l.append('Placar completo, com todos os erros: lectnex.com.br/placar')
     return l
 
 

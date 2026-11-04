@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar do Lectnex: acertos e erros do termômetro e do histórico · Lectnex</title>
+    <meta name="description" content="Todos os acertos e erros do termômetro da manhã (WIN e WDO) e do histórico de reação nos dias de Copom, payroll e IPCA, com o critério de cada um. Sem esconder os erros.">
+    <link rel="canonical" href="https://lectnex.com.br/placar.html">
+    <meta name="theme-color" content="#060D17">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lectnex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lectnex Terminal">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Placar do Lectnex: acertos e erros do termômetro e do histórico · Lectnex">
+    <meta property="og:description" content="Todos os acertos e erros do termômetro da manhã (WIN e WDO) e do histórico de reação nos dias de Copom, payroll e IPCA, com o critério de cada um. Sem esconder os erros.">
+    <meta property="og:url" content="https://lectnex.com.br/placar.html">
+    <meta property="og:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Placar do Lectnex: acertos e erros do termômetro e do histórico · Lectnex">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Placar do Lectnex: acertos e erros do termômetro e do histórico · Lectnex">
+    <meta name="twitter:description" content="Todos os acertos e erros do termômetro da manhã (WIN e WDO) e do histórico de reação nos dias de Copom, payroll e IPCA, com o critério de cada um. Sem esconder os erros.">
+    <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261104f">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261104f">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261104f">
+</head>
+<body data-page="placar" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+        <span class="term-label text-lect-teal font-bold">PLACAR PÚBLICO · ACERTOS E ERROS</span>
+        <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2 leading-tight">O Lectnex acertou?</h1>
+        <p class="text-slate-600 dark:text-slate-300 mt-2 max-w-3xl leading-relaxed">Toda manhã o termômetro lê o viés de <strong>WIN</strong> e <strong>WDO</strong>, e nos dias de evento forte mostramos para que lado o mercado costuma ir. Aqui ficam todos os resultados, inclusive os erros, com o critério de cada placar. Nada é apagado.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <section class="term-panel p-5"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-thermometer-simple text-lect-teal"></i>TERMÔMETRO DA MANHÃ</span><div id="pl-term" class="mt-3 text-sm text-slate-500">Carregando…</div></section>
+            <section class="term-panel p-5"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-target text-lect-orange"></i>HISTÓRICO NOS DIAS DE EVENTO</span><div id="pl-hist" class="mt-3 text-sm text-slate-500">Carregando…</div></section>
+        </div>
+
+        <section class="term-panel mt-6 p-5">
+            <div class="flex flex-wrap items-baseline justify-between gap-2"><h2 class="font-display text-xl font-bold">Acerto acumulado, semana a semana</h2><span class="font-mono text-[11px] text-slate-500">linha tracejada: 50%</span></div>
+            <div id="pl-graf" class="mt-4"></div>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="font-display text-xl font-bold">Termômetro: dia a dia</h2>
+            <p class="text-xs text-slate-500 mt-1" id="pl-term-crit"></p>
+            <div class="term-panel mt-3 overflow-x-auto"><table class="w-full font-mono text-xs"><thead><tr class="text-[10px] text-slate-500 text-left"><th class="px-3 py-2 font-normal">PREGÃO</th><th class="px-3 font-normal">WIN: LEITURA → FECHAMENTO</th><th class="px-3 font-normal">WDO: LEITURA → FECHAMENTO</th></tr></thead><tbody id="pl-term-lista"></tbody></table></div>
+            <button id="pl-mais" type="button" class="hidden mt-3 w-full term-panel py-2.5 font-mono text-xs font-bold text-lect-teal hover:border-lect-teal">MOSTRAR TODOS</button>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="font-display text-xl font-bold">Dias de evento forte: antes × depois</h2>
+            <p class="text-xs text-slate-500 mt-1">O histórico aponta alta quando o ativo subiu em 60% ou mais das divulgações anteriores com a mesma surpresa, e queda quando subiu em 40% ou menos. Entre os dois fica dividido e não conta. Reação de 30 minutos (ou da abertura seguinte, se o dado saiu com a bolsa fechada).</p>
+            <div class="term-panel mt-3 overflow-x-auto"><table class="w-full font-mono text-xs"><thead><tr class="text-[10px] text-slate-500 text-left"><th class="px-3 py-2 font-normal">DIA</th><th class="px-3 font-normal">EVENTO</th><th class="px-3 font-normal">WIN: HISTÓRICO → REAÇÃO</th><th class="px-3 font-normal">WDO: HISTÓRICO → REAÇÃO</th></tr></thead><tbody id="pl-hist-lista"></tbody></table></div>
+        </section>
+
+        <p class="mt-8 text-[11px] text-slate-600 dark:text-slate-400">WIN medido pelo Ibovespa à vista e WDO pelo dólar à vista (Yahoo Finance). O placar mede leituras de viés, não operações: não inclui custos, stops nem tamanho de posição, e acerto passado não garante acerto futuro. Conteúdo educacional, não é recomendação. Veja também o <a href="manchetes.html" class="text-lect-teal hover:underline">arquivo de manchetes</a> e o <a href="hoje.html" class="text-lect-teal hover:underline">gráfico de hoje</a>.</p>
+    </main>
+
+    <div id="lx-footer"></div>
+    <script src="assets/lectnex-core.js?v=20261104f"></script>
+    <script>
+    (function () {
+        const $ = id => document.getElementById(id), esc = LX.esc, K = ['win', 'wdo'];
+        const T = Math.floor(Date.now() / 6e5);
+        const pegar = u => fetch(u + '?t=' + T, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
+        const corV = v => v > 0 ? 'text-emerald-600 dark:text-emerald-400' : v < 0 ? 'text-rose-600 dark:text-rose-400' : '';
+        const marca = a => a == null ? '' : `<span class="${a ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'} font-bold">${a ? 'acertou' : 'errou'}</span>`;
+        const dataBR = d => `${LX.weekday(new Date(d + 'T12:00:00')).slice(0, 3).toLowerCase()} ${d.slice(8, 10)}/${d.slice(5, 7)}`;
+        const LEIT = { bullish: '▲ alta', bearish: '▼ baixa', neutro: '◆ neutro', alta: '▲ alta', baixa: '▼ baixa' };
+        const contar = (lst, f) => { let n = 0, ok = 0; lst.forEach(x => K.forEach(k => { const a = f(x, k); if (a != null) { n++; if (a) ok++; } })); return { n, ok }; };
+        const resumo = (t, extra) => t.n ? `<div class="flex items-end gap-3"><strong class="font-display text-4xl font-bold">${LX.num(t.ok / t.n * 100, 0)}%</strong><span class="font-mono text-xs text-slate-500 pb-1.5">${t.ok} de ${t.n} leituras</span></div>${extra || ''}` : '';
+        const semana = d => { const x = new Date(d + 'T12:00:00'); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return x.toISOString().slice(0, 10); };
+
+        Promise.all([pegar('data/placar-termometro.json'), pegar('data/placar-historico.json')]).then(([pt, ph]) => {
+            const dias = (pt && pt.dias || []).slice().sort((a, b) => a.data.localeCompare(b.data));
+            const evs = (ph && ph.eventos || []).slice().sort((a, b) => a.data.localeCompare(b.data));
+            const aT = (x, k) => x[k] ? !!x[k].acerto : null, aH = (e, k) => (e.acerto || {})[k] ?? null;
+
+            // cartões
+            const tt = contar(dias, aT), t20 = contar(dias.slice(-20), aT);
+            const porK = k => contar(dias, (x, kk) => kk === k ? aT(x, kk) : null);
+            $('pl-term').innerHTML = tt.n ? resumo(tt, `<div class="grid grid-cols-3 gap-2 mt-4 text-center font-mono text-[11px]">${['win', 'wdo'].map(k => { const c = porK(k); return `<div class="bg-slate-50 dark:bg-white/[0.03] py-2"><span class="block text-slate-500">${k.toUpperCase()}</span><b class="text-base">${c.n ? c.ok + '/' + c.n : '—'}</b></div>`; }).join('')}<div class="bg-slate-50 dark:bg-white/[0.03] py-2"><span class="block text-slate-500">ÚLT. 20 PREGÕES</span><b class="text-base">${t20.n ? LX.num(t20.ok / t20.n * 100, 0) + '%' : '—'}</b></div></div><p class="mt-3 text-[11px] text-slate-500">Desde ${dataBR(dias[0].data)} · ${dias.length} pregão${dias.length === 1 ? '' : 'ões'}${dias.length < 20 ? ' · amostra pequena' : ''}</p>`)
+                : 'O placar começa a contar no primeiro fechamento com termômetro.';
+            const th = contar(evs, aH);
+            const hk = k => contar(evs, (e, kk) => kk === k ? aH(e, kk) : null);
+            $('pl-hist').innerHTML = th.n ? resumo(th, `<div class="grid grid-cols-2 gap-2 mt-4 text-center font-mono text-[11px]">${K.map(k => { const c = hk(k); return `<div class="bg-slate-50 dark:bg-white/[0.03] py-2"><span class="block text-slate-500">${k.toUpperCase()}</span><b class="text-base">${c.n ? c.ok + '/' + c.n : '—'}</b></div>`; }).join('')}</div><p class="mt-3 text-[11px] text-slate-500">${evs.length} evento${evs.length === 1 ? '' : 's'} forte${evs.length === 1 ? '' : 's'} desde ${dataBR(evs[0].data)}${th.n < 20 ? ' · amostra pequena' : ''}</p>`)
+                : (evs.length ? `${evs.length} evento${evs.length === 1 ? '' : 's'} registrado${evs.length === 1 ? '' : 's'}, nenhum com direção definida ainda (histórico dividido ou reação pendente).` : 'O primeiro registro entra no fechamento do Copom de 04/11/2026.');
+
+            // gráfico acumulado por semana
+            const sem = {};
+            dias.forEach(x => K.forEach(k => { const a = aT(x, k); if (a == null) return; const s = (sem[semana(x.data)] = sem[semana(x.data)] || { t: [0, 0], h: [0, 0] }); s.t[0]++; if (a) s.t[1]++; }));
+            evs.forEach(e => K.forEach(k => { const a = aH(e, k); if (a == null) return; const s = (sem[semana(e.data)] = sem[semana(e.data)] || { t: [0, 0], h: [0, 0] }); s.h[0]++; if (a) s.h[1]++; }));
+            const ws = Object.keys(sem).sort();
+            if (ws.length < 2) {
+                $('pl-graf').innerHTML = `<p class="text-sm text-slate-500">O gráfico aparece a partir da segunda semana de placar${ws.length ? ` (primeira semana: ${dataBR(ws[0])} em diante)` : ''}.</p>`;
+            } else {
+                const acc = { t: [0, 0], h: [0, 0] }, pts = { t: [], h: [] };
+                ws.forEach(w => ['t', 'h'].forEach(c => { acc[c][0] += sem[w][c][0]; acc[c][1] += sem[w][c][1]; pts[c].push(acc[c][0] ? acc[c][1] / acc[c][0] * 100 : null); }));
+                const W = 800, H = 220, pl = 36, pr = 12, pt_ = 10, pb = 28;
+                const X = i => pl + i / (ws.length - 1) * (W - pl - pr), Y = v => pt_ + (1 - v / 100) * (H - pt_ - pb);
+                const linha = (arr, cor) => { const p = arr.map((v, i) => v == null ? null : [X(i), Y(v)]).filter(Boolean); return p.length ? `<path d="${p.map((q, i) => (i ? 'L' : 'M') + q[0].toFixed(1) + ',' + q[1].toFixed(1)).join('')}" fill="none" stroke="${cor}" stroke-width="2.5"/>` + p.map(q => `<circle cx="${q[0].toFixed(1)}" cy="${q[1].toFixed(1)}" r="3" fill="${cor}"/>`).join('') : ''; };
+                const eixo = [0, 25, 50, 75, 100].map(v => `<line x1="${pl}" x2="${W - pr}" y1="${Y(v)}" y2="${Y(v)}" stroke="currentColor" stroke-opacity="${v === 50 ? .4 : .08}" ${v === 50 ? 'stroke-dasharray="4 4"' : ''}/><text x="${pl - 6}" y="${Y(v) + 4}" font-size="10" text-anchor="end" fill="currentColor" fill-opacity=".5">${v}%</text>`).join('');
+                const rot = ws.map((w, i) => (ws.length <= 12 || i % Math.ceil(ws.length / 12) === 0) ? `<text x="${X(i)}" y="${H - 8}" font-size="10" text-anchor="middle" fill="currentColor" fill-opacity=".5">${w.slice(8, 10)}/${w.slice(5, 7)}</text>` : '').join('');
+                $('pl-graf').innerHTML = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="Acerto acumulado por semana">${eixo}${rot}${linha(pts.t, '#00B4A2')}${linha(pts.h, '#F39200')}</svg><div class="flex gap-4 mt-2 font-mono text-[11px]"><span class="flex items-center gap-1.5"><span class="w-3 h-0.5 bg-lect-tealLight"></span>Termômetro</span><span class="flex items-center gap-1.5"><span class="w-3 h-0.5 bg-lect-orange"></span>Histórico nos eventos</span></div>`;
+            }
+
+            // tabela do termômetro
+            $('pl-term-crit').textContent = pt && pt.criterio ? 'Critério: ' + pt.criterio + '.' : '';
+            const cel = x => x ? `<td class="px-3 whitespace-nowrap"><span class="text-slate-500">${esc(LEIT[x.leitura] || x.leitura || '—')}</span> → <b class="${corV(x.var_pct)}">${x.var_pct == null ? '—' : LX.pct(x.var_pct, 2, true)}</b> ${marca(x.acerto)}</td>` : '<td class="px-3 text-slate-400">—</td>';
+            let todos = false;
+            const pintarT = () => {
+                const lst = dias.slice().reverse(), vis = todos ? lst : lst.slice(0, 20);
+                $('pl-term-lista').innerHTML = vis.length ? vis.map(x => `<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="px-3 py-2 whitespace-nowrap">${dataBR(x.data)}</td>${cel(x.win)}${cel(x.wdo)}</tr>`).join('') : '<tr><td colspan="3" class="px-3 py-6 text-center text-slate-500">Sem pregões no placar ainda.</td></tr>';
+                $('pl-mais').classList.toggle('hidden', todos || lst.length <= 20);
+            };
+            $('pl-mais').onclick = () => { todos = true; pintarT(); };
+            pintarT();
+
+            // tabela de eventos
+            const SP = { acima: 'acima', abaixo: 'abaixo', 'em linha': 'em linha' };
+            const celH = (e, k) => { const s = (e.sobe || {})[k], v = (e.reacao || {})[k]; const ind = s == null ? '—' : s >= 60 ? '▲ ' + s + '%' : s <= 40 ? '▼ ' + (100 - s) + '%' : 'dividido';
+                return `<td class="px-3 whitespace-nowrap"><span class="text-slate-500">${ind}</span> → ${v == null ? '<span class="text-slate-400">pendente</span>' : `<b class="${corV(v)}">${LX.pct(v, 2, true)}</b>`} ${marca(aH(e, k))}</td>`; };
+            $('pl-hist-lista').innerHTML = evs.length ? evs.slice().reverse().map(e => `<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="px-3 py-2 whitespace-nowrap">${dataBR(e.data)}</td><td class="px-3 font-sans font-semibold whitespace-nowrap">${esc(e.evento)}${e.surpresa ? ` <span class="font-mono text-[10px] font-normal text-slate-500">${esc(SP[e.surpresa] || e.surpresa)}</span>` : ''}</td>${celH(e, 'win')}${celH(e, 'wdo')}</tr>`).join('') : '<tr><td colspan="4" class="px-3 py-6 text-center text-slate-500">O primeiro evento entra no fechamento do Copom de 04/11/2026.</td></tr>';
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -318,7 +318,7 @@ def main():
                '<b>Sugestão de legenda para o post:</b>\n'
                f'Como foi a semana no mercado ({br(dd["ini"])} a {br(dd["fim"])}): {resumo}. '
                'Arraste para ver o dia a dia, o placar do nosso termômetro (com acertos e erros)' + (', os eventos fortes da semana' if dd.get('eventos') else '') + ' e a agenda da próxima semana. '
-               'Leitura do Dia grátis no link da bio. Conteúdo educacional, não é recomendação. #ibovespa #dolar #daytrade #miniindice #minidolar #b3')
+               'Placar completo em lectnex.com.br/placar. Leitura do Dia grátis no link da bio. Conteúdo educacional, não é recomendação. #ibovespa #dolar #daytrade #miniindice #minidolar #b3')
     enviar(arqs, legenda)
 
 
