@@ -92,6 +92,8 @@ def manchetes_que_mexeram():
             aovivo = json.loads(r.read())
         hoje_n = aovivo.get('hoje', [])
         arquivar_dia(aovivo.get('mercado') or {})
+        if os.environ.get('MERCADO_JSON') and (aovivo.get('mercado') or {}).get('data') == hoje.isoformat():  # para o post do gráfico do dia
+            json.dump(aovivo['mercado'], open(os.environ['MERCADO_JSON'], 'w', encoding='utf-8'), ensure_ascii=False)
     except Exception as e:
         tg.note('warning', f'Manchetes do dia indisponíveis: {e.__class__.__name__}')
         return []

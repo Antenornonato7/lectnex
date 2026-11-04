@@ -36,6 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           SO_STORY: ${{ inputs.previa_story && '1' || '' }}
           FECH_JSON: ${{ runner.temp }}/fechamento.json
+          MERCADO_JSON: ${{ runner.temp }}/mercado.json
         run: python3 coletor/fechamento.py
       - name: Story do fechamento no Telegram privado do dono
         env:
@@ -50,6 +51,14 @@ jobs:
           else
             python3 scripts/story_fechamento.py "$RUNNER_TEMP/fechamento.json" "$RUNNER_TEMP/story.png"
           fi || echo "::warning::Falha ao gerar ou enviar o story (o fechamento não é afetado)."
+      - name: Post do gráfico do dia (notícia × preço) no Telegram privado
+        if: ${{ !inputs.previa_story }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: |
+          [ -f "$RUNNER_TEMP/mercado.json" ] || { echo "Sem gráfico do dia."; exit 0; }
+          python3 scripts/grafico_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/grafico-dia.png" || echo "::warning::Falha no post do gráfico do dia."
       - name: Salvar placar do termômetro
         if: ${{ !inputs.previa_story }}
         run: |
