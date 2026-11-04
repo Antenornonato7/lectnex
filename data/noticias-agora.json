@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T16:08-03:00",
+  "atualizado_em": "2026-11-04T16:38-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -287,11 +287,35 @@
     ],
     [
      "15:50",
-     167143.0
+     167173.0
     ],
     [
-     "15:53",
-     167091.0
+     "15:55",
+     167203.0
+    ],
+    [
+     "16:00",
+     167160.0
+    ],
+    [
+     "16:05",
+     167245.0
+    ],
+    [
+     "16:10",
+     167381.0
+    ],
+    [
+     "16:15",
+     167403.0
+    ],
+    [
+     "16:20",
+     167257.0
+    ],
+    [
+     "16:23",
+     167333.0
     ]
    ]
   },
@@ -640,11 +664,35 @@
     ],
     [
      "16:05",
-     5.4592
+     5.4582
     ],
     [
-     "16:08",
-     5.4592
+     "16:10",
+     5.4553
+    ],
+    [
+     "16:15",
+     5.4545
+    ],
+    [
+     "16:20",
+     5.453
+    ],
+    [
+     "16:25",
+     5.4532
+    ],
+    [
+     "16:30",
+     5.4539
+    ],
+    [
+     "16:35",
+     5.4536
+    ],
+    [
+     "16:38",
+     5.4532
     ]
    ]
   },
@@ -1299,7 +1347,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.3,
+    "ibov30": -0.28,
     "dolar30": -0.01
    },
    {
@@ -1312,8 +1360,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.05,
+    "dolar30": -0.16
    },
    {
     "hora": "16:01",
@@ -1326,23 +1374,26 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": -0.13
+   },
+   {
+    "hora": "16:35",
+    "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVEzYXNXU09LYVdHYk5WVGc2bVpTXzk2ZlJ3ZUdoR0NMaFAzWHNiX1c0OHZLcjhBMFBPSkVaZTQzRW9PM0ZkbHJwNjlpQWNub19QZ3ZsRlp5aHVaVWtmb1ViRUMyUHJETEFBTmZ1cGRzMVNValU0eGlHN3NqWkxrN2p6QlZPX3JUU0NBV2ZVQmFLU2FnWGtROWUtNWpvLXFNSFVpT3d0ME5fTTUtdTdHeU9ZNjZPVTlMczZwMU5XR2dETkpwNmYwRw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Copom deve manter Selic em 13,75% e interromper ciclo de cortes",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/copom-deve-manter-selic-em-1375-e-interromper-ciclo-de-cortes.shtml",
-   "publicado": "2026-11-04T04:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
    "fonte": "CNBC",
@@ -2297,6 +2348,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVEzYXNXU09LYVdHYk5WVGc2bVpTXzk2ZlJ3ZUdoR0NMaFAzWHNiX1c0OHZLcjhBMFBPSkVaZTQzRW9PM0ZkbHJwNjlpQWNub19QZ3ZsRlp5aHVaVWtmb1ViRUMyUHJETEFBTmZ1cGRzMVNValU0eGlHN3NqWkxrN2p6QlZPX3JUU0NBV2ZVQmFLU2FnWGtROWUtNWpvLXFNSFVpT3d0ME5fTTUtdTdHeU9ZNjZPVTlMczZwMU5XR2dETkpwNmYwRw?oc=5",
+   "publicado": "2026-11-04T16:35-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
   }
  ],
  "enviadas": [
@@ -2326,7 +2390,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T16:08-03:00",
+ "atualizado_em": "2026-11-04T16:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2340,10 +2404,35 @@
  ],
  "noticias": [
   {
+   "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVEzYXNXU09LYVdHYk5WVGc2bVpTXzk2ZlJ3ZUdoR0NMaFAzWHNiX1c0OHZLcjhBMFBPSkVaZTQzRW9PM0ZkbHJwNjlpQWNub19QZ3ZsRlp5aHVaVWtmb1ViRUMyUHJETEFBTmZ1cGRzMVNValU0eGlHN3NqWkxrN2p6QlZPX3JUU0NBV2ZVQmFLU2FnWGtROWUtNWpvLXFNSFVpT3d0ME5fTTUtdTdHeU9ZNjZPVTlMczZwMU5XR2dETkpwNmYwRw?oc=5",
+   "publicado": "2026-11-04T16:35-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Tesouro Direto volta do apagão com tombo de até 38 pontos-base pouco antes do Copom",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQmJnMXBlNWJCX3czX3B1eFlzQ2xMbjB6YU1CT1VKTjRRMDltLWxlVFhWSGFxRG4yeWRHcFpJRzRmcXJhd3B2RmIzWW5od185enVoU0kzWVk1YVZESE9mckR4RS1sUmpHSmtmU3lRcTFONGkyNTV5S2dUSEh6RVdpNF96NFNvbVNMN3Q5UGJlbFHSAZYBQVVfeXFMUHZ1azgwQzZfYTdQOFo0T2hNVGZhR0Z1b0hmT3FBMElyWFNTcUcxM3pzVnZYWmdDQzdBRWo5M1pDYzBkTzNVUnN5NWJmZW1mM2JoaFdiWVNuXy1JN09CWUpRbWZpVUtCaDFkTTVOaFEtSWx5LWNuV3JSLW1OQ21hMWFuaW1rZU9KY3BObGk1NzRFdEJ3UmtR?oc=5",
+   "publicado": "2026-11-04T16:19-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ações do Ibovespa: mediana do P/L cai abaixo do nível da pandemia após eleições",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNd3M5LXlUWi1EemRuMUFjWTdDTU9maE1IWWlGMHhBMmMtWmlGQTB6UmpyMGZMVlU4TEhMMnUzTmtnVUpzclVMSHVZLU1uWkpGOVVVcHlWLUkzNWUySWlESnVPaGxCLUF1OTlqazlHajd4Q3dVWXQ4NmRRSVFLZnV0OWhaTG55b05BeDZFNGZZYkcxRUg0WmFFZ29OLVdXd0JVcHMtLUltb042b0ZHS2tQZDc2NkZoR2pVRnF6dl92c0hBWlhuYkVwVzYzdXVCRlJGSng3VQ?oc=5",
-   "publicado": "2026-11-04T16:00-03:00",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTHpRb045cEVnTHJBT2VpZFFZODRtTmlQc1NaeXFZM3dkUHBRcU14aEdXdTdROFgza2lyRm05aVkwUDZXWXlQX2x0ZnczNXlJNXpzZFJOQkFXZ3p0TGRndjFBZXJTNDQ3RlMzSVB3bXd0Sng1b2tzNGdaN0VZdFFpUXVKdWtZZEpXSUxyam5wRmRUSWE2NVk5LVBJYTh1ZkFHZ1gzWkxPUVFraHJKQ2J4ZkVOaTVsRVJSeHZtd2RDSmVoTmtjX2ZYV3hn0gHPAUFVX3lxTE9pRW9XTEUwVEFUYVFRdDV3ckgxZjlxeDdRYVFMdlBZUWZIdGRXcUUwRzdNS0g4LWJpdGxZNHVMUXM1V09nRHJLU05SYzBreF9FSVZPNm80RXdlLUdlcjN2QVFHbXozNmY4XzZNOGowV1lIRzZqMlVBbU1FVk9neDlxcG1kelM3alY5X0FCSjY0NVlyRGZpNE1lYVhZV2padjA3eUpxenRwWm9uV0dWeVZlNnJMOXhfMGdvc0k3bnlmbmJqRDdfRWh1UWRSQTJSMA?oc=5",
+   "publicado": "2026-11-04T15:51-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
