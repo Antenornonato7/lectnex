@@ -1129,6 +1129,44 @@
         }).catch(() => { });
     }
 
+    /* ------------------------------------------------------------------ AVISO DE MANCHETE FORTE (todas as páginas) */
+    const AV = 'lectnex-avisos-noticias', VISTAS = 'lectnex-noticias-vistas';
+    LX.avisosNoticias = function (v) {
+        try { if (v === undefined) return localStorage.getItem(AV) !== '0'; localStorage.setItem(AV, v ? '1' : '0'); } catch (_) { return v === undefined ? true : v; }
+        return v;
+    };
+    function avisosNoticias() {
+        if (['links'].includes(document.body.dataset.page || '')) return;
+        let ultimo = 0, el = null;
+        const vistas = () => { try { return JSON.parse(localStorage.getItem(VISTAS) || '[]'); } catch (_) { return []; } };
+        const marcar = u => { try { const v = vistas().filter(x => x !== u); v.push(u); localStorage.setItem(VISTAS, JSON.stringify(v.slice(-60))); } catch (_) { } };
+        const visivel = () => { const p = document.getElementById('ultimas'); if (!p) return false; const r = p.getBoundingClientRect(); return r.top < innerHeight && r.bottom > 0; };
+        function mostrar(n) {
+            if (!el) { el = document.createElement('div'); el.className = 'lx-toast-news'; el.setAttribute('role', 'status'); document.body.appendChild(el); }
+            const min = Math.max(1, Math.round((Date.now() - new Date(n.publicado)) / 6e4));
+            el.innerHTML = `<b>⚡ AGORA NO MERCADO · ${LX.esc(n.fonte)} · há ${min} min</b><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow">${LX.esc(n.titulo)}</a><button type="button" aria-label="Fechar">×</button>`;
+            el.querySelector('button').onclick = () => el.classList.remove('on');
+            el.querySelector('a').onclick = () => LX.track('aviso_noticia', { fonte: n.fonte });
+            requestAnimationFrame(() => el.classList.add('on'));
+            clearTimeout(mostrar.t); mostrar.t = setTimeout(() => el && el.classList.remove('on'), 14000);
+        }
+        function checar() {
+            if (!LX.avisosNoticias() || document.hidden) return;
+            const t = Math.floor(Date.now() / 6e4);
+            fetch('https://raw.githubusercontent.com/Antenornonato7/lectnex/ao-vivo/noticias-agora.json?t=' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+                if (!d) return;
+                const v = new Set(vistas());
+                const n = (d.noticias || []).filter(x => x.impacto === 'alto' && (Date.now() - new Date(x.publicado)) / 6e4 <= 15 && !v.has(x.url))
+                    .sort((a, b) => new Date(b.publicado) - new Date(a.publicado))[0];
+                if (!n) return;
+                marcar(n.url);
+                if (visivel() || Date.now() - ultimo < 4 * 6e4) return;  // o painel já está na tela ou houve aviso há pouco
+                ultimo = Date.now(); mostrar(n);
+            }).catch(() => { });
+        }
+        setTimeout(checar, 15000); setInterval(checar, 2 * 6e4);
+    }
+
     /* ------------------------------------------------------------------ BOOT */
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
@@ -1140,6 +1178,7 @@
         newsForms();
         (window.requestIdleCallback || (f => setTimeout(f, 1500)))(footStatus); setInterval(footStatus, 5 * 6e4);
         setTimeout(() => (window.requestIdleCallback || (f => f()))(glossDicas), 1800);
+        avisosNoticias();
         if (LX.config.newsletter) fetch('data/newsletter.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.inscritos >= 25) { newsCount = j.inscritos; newsForms(); } }).catch(() => { });
         if (LX.config.telegram) fetch('data/telegram.json?t=' + Math.floor(Date.now() / 36e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { if (j && j.seguidores >= 25) { tgCount = j.seguidores; newsForms(); } }).catch(() => { });
         // Com cache, as páginas já desenham câmbio e indicadores antes da resposta das APIs

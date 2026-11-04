@@ -130,3 +130,13 @@ abbr.lx-gl:hover, abbr.lx-gl:focus-visible { text-decoration-color: #14B8A6; col
 .lx-gl-tip strong { display: block; color: #2DD4BF; font-size: .85rem; margin-bottom: .25rem; }
 .lx-gl-tip p { margin: 0; color: #CBD5E1; }
 .lx-gl-tip a { display: inline-block; margin-top: .5rem; color: #F59E0B; font-weight: 700; font-size: .75rem; }
+
+.lx-novo { animation: lx-novo 2.4s ease-out; }
+@keyframes lx-novo { 0% { background: rgba(245, 158, 11, .35); } 100% { background: transparent; } }
+@media (prefers-reduced-motion: reduce) { .lx-novo { animation: none; } }
+.lx-toast-news { position: fixed; z-index: 65; left: 16px; bottom: 16px; max-width: 380px; background: #0B1626; color: #E2E8F0; border: 1px solid #F59E0B; box-shadow: 0 16px 40px rgba(0,0,0,.5); padding: .8rem 2.2rem .8rem .9rem; font-size: .85rem; line-height: 1.4; transform: translateY(140%); transition: transform .35s ease; }
+.lx-toast-news.on { transform: none; }
+.lx-toast-news b { display: block; font: 700 10px/1.2 'JetBrains Mono', monospace; color: #F59E0B; letter-spacing: .06em; margin-bottom: .3rem; }
+.lx-toast-news a { color: #F1F5F9; font-weight: 600; }
+.lx-toast-news button { position: absolute; top: .4rem; right: .5rem; color: #94A3B8; font-size: 1rem; }
+@media (max-width: 640px) { .lx-toast-news { left: 12px; right: 12px; bottom: 12px; max-width: none; } }

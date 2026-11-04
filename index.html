@@ -32,14 +32,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261104a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261104b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261104a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261104a">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261104b">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261104b">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -166,10 +166,18 @@
                         <div id="lt-exterior" class="mt-4"></div>
                     </div>
                 </div>
-                <div id="ultimas" class="border-t border-slate-200 dark:border-lect-borderDark bg-lect-teal/[0.04] min-h-[200px]">
-                    <div class="px-5 pt-4 flex flex-wrap items-center justify-between gap-2"><span class="term-label font-bold flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-red-500 lx-pulse-red"></span>AGORA NO MERCADO <span class="hidden sm:inline font-normal text-slate-500 dark:text-slate-400 normal-case tracking-normal">· manchetes de maior impacto para WIN, WDO e DI</span></span><span id="agora-hora" class="font-mono text-[10px] font-bold text-lect-teal"></span></div>
+                <div id="ultimas" class="border-t border-slate-200 dark:border-lect-borderDark bg-lect-teal/[0.04] min-h-[260px]">
+                    <div class="px-5 pt-4 flex flex-wrap items-center justify-between gap-2">
+                        <span class="term-label font-bold flex items-center gap-2"><span class="px-1.5 py-0.5 bg-red-600 text-white text-[10px] tracking-wider flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white lx-pulse-red"></span>AO VIVO</span>AGORA NO MERCADO</span>
+                        <span class="flex items-center gap-3"><span id="agora-hora" class="font-mono text-[10px] font-bold text-lect-teal"></span><button id="agora-alertas" type="button" class="font-mono text-[10px] text-slate-500 hover:text-lect-teal" title="Avisos de manchete forte enquanto você navega"></button></span>
+                    </div>
+                    <div class="px-5 pt-3 flex items-center gap-2 font-mono text-[10px] font-bold"><span id="agora-titulo10" class="text-lect-orange">⚡ ÚLTIMOS 10 MINUTOS</span><span class="flex-1 h-px bg-slate-200 dark:bg-lect-borderDark"></span></div>
                     <ol id="agora-lista" class="p-5 pt-3 grid grid-cols-1 md:grid-cols-2 gap-3"></ol>
-                    <p class="px-5 pb-4 -mt-1 text-[11px] text-slate-500 dark:text-slate-400">Atualizado a cada ~10 min com manchetes de InfoMoney, Folha, Estadão, Agência Brasil, Bloomberg Línea e CNBC. Classificação automática por impacto; abra a fonte para ler a matéria.</p>
+                    <details id="agora-linha" class="mx-5 mb-3 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-bgDark group" open>
+                        <summary class="px-3 py-2 cursor-pointer font-mono text-[10px] font-bold flex items-center justify-between"><span>LINHA DO TEMPO · ÚLTIMAS 3 HORAS <span id="agora-qtd" class="text-slate-500 font-normal"></span></span><i class="ph-bold ph-caret-down group-open:rotate-180 transition-transform"></i></summary>
+                        <ol id="agora-tempo" class="max-h-[330px] overflow-y-auto thin-scroll divide-y divide-slate-100 dark:divide-lect-borderDark"></ol>
+                    </details>
+                    <p class="px-5 pb-4 text-[11px] text-slate-500 dark:text-slate-400">Coleta automática a cada ~2,5 min em Reuters, Valor, InfoMoney, Folha, Estadão, Bloomberg Línea, Agência Brasil e CNBC. Empresas citadas aparecem com a variação do dia (atraso de ~30 min). Classificação por impacto feita por regras; abra a fonte para ler a matéria.</p>
                 </div>
                 <div id="lt-news-wrap" class="hidden border-t border-slate-200 dark:border-lect-borderDark">
                     <div class="px-5 pt-4 flex items-center justify-between"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-newspaper text-lect-teal"></i>NOTÍCIAS QUE IMPORTAM</span><span class="font-mono text-[10px] text-slate-500">seleção da IA · com o impacto em cada ativo</span></div>
@@ -292,31 +300,58 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261104a"></script>
+    <script src="assets/lectnex-core.js?v=20261104b"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
 
         /* ---------- Widgets TradingView ---------- */
-        // Agora no mercado (data/noticias-agora.json, ~10 min)
-        function agora() {
-            fetch('data/noticias-agora.json?t=' + Math.floor(Date.now() / 12e4), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
-                const ol = document.getElementById('agora-lista'); if (!ol) return;
-                if (!d || !(d.noticias || []).length) { ol.innerHTML = '<li class="py-4 text-sm text-slate-500 md:col-span-2">Sem manchetes de alto impacto nas últimas 3 horas.</li>'; return; }
-                const agoraMs = Date.now();
-                const rel = iso => { const m = Math.round((agoraMs - new Date(iso)) / 6e4); return m < 1 ? 'agora' : m < 60 ? `há ${m} min` : `há ${Math.floor(m / 60)}h${String(m % 60).padStart(2, '0')}`; };
-                document.getElementById('agora-hora').textContent = 'atualizado ' + rel(d.atualizado_em);
-                ol.innerHTML = d.noticias.slice(0, 8).map((n, i) => {
-                    const min = (agoraMs - new Date(n.publicado)) / 6e4, novo = min <= 15;
-                    const tags = (n.ativos || []).map(a => `<span class="px-1.5 py-0.5 border border-slate-300 dark:border-lect-borderDark font-mono text-[9px] font-bold">${LX.esc(a)}</span>`).join('');
-                    return `<li><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="block h-full p-4 bg-white dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark hover:border-lect-teal transition-colors">
-                        <span class="flex flex-wrap items-center gap-2 font-mono text-[10px] text-slate-500 dark:text-slate-400">${novo ? '<span class="px-1.5 py-0.5 bg-red-500 text-white font-bold">NOVO</span>' : ''}${n.impacto === 'alto' ? '<span class="text-lect-orange font-bold">ALTO IMPACTO</span>' : ''}<span>${LX.esc(n.fonte)} · ${rel(n.publicado)}</span></span>
-                        <strong class="block mt-1.5 text-sm leading-snug">${LX.esc(n.titulo)}</strong>
-                        ${tags ? `<span class="flex gap-1 mt-2">${tags}</span>` : ''}</a></li>`;
+        // Agora no mercado: branch "ao-vivo" (coleta a cada ~2,5 min), reserva em data/noticias-agora.json
+        (function () {
+            const AOVIVO = 'https://raw.githubusercontent.com/Antenornonato7/lectnex/ao-vivo/noticias-agora.json';
+            let dados = null, cot = {}, vistos = null;
+            const $ = id => document.getElementById(id);
+            const rel = iso => { const m = Math.round((Date.now() - new Date(iso)) / 6e4); return m < 1 ? 'agora' : m < 60 ? `há ${m} min` : `há ${Math.floor(m / 60)}h${String(m % 60).padStart(2, '0')}`; };
+            const minutos = iso => (Date.now() - new Date(iso)) / 6e4;
+            const chipAtivo = a => `<span class="px-1.5 py-0.5 border border-slate-300 dark:border-lect-borderDark font-mono text-[9px] font-bold">${LX.esc(a)}</span>`;
+            const chipAcao = tk => { const c = cot[tk]; if (!c) return `<span class="px-1.5 py-0.5 bg-slate-100 dark:bg-white/5 font-mono text-[9px] font-bold">${tk}</span>`; const v = c.var_pct; return `<span class="px-1.5 py-0.5 font-mono text-[9px] font-bold ${v > 0 ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' : v < 0 ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400' : 'bg-slate-100 dark:bg-white/5'}" title="Variação do dia (atraso de ~30 min)">${tk} ${LX.pct(v, 2, true)}</span>`; };
+            function pintar() {
+                if (!dados) return;
+                const ns = dados.noticias || [];
+                $('agora-hora').textContent = 'atualizado ' + rel(dados.atualizado_em);
+                let top = ns.filter(n => minutos(n.publicado) <= 10);
+                let titulo = '⚡ ÚLTIMOS 10 MINUTOS';
+                if (!top.length) { top = ns.filter(n => minutos(n.publicado) <= 60); titulo = 'NA ÚLTIMA HORA · nada forte nos últimos 10 min'; }
+                if (!top.length) { top = ns.slice(); titulo = 'MAIS RECENTES'; }
+                top = top.slice().sort((a, b) => (b.impacto === 'alto') - (a.impacto === 'alto') || new Date(b.publicado) - new Date(a.publicado)).slice(0, 4);
+                $('agora-titulo10').textContent = titulo;
+                const ol = $('agora-lista');
+                if (!ns.length) { ol.innerHTML = '<li class="text-sm text-slate-500 md:col-span-2">Sem manchetes de impacto nas últimas 3 horas.</li>'; }
+                else ol.innerHTML = top.map(n => {
+                    const novo = vistos && !vistos.has(n.url);
+                    return `<li class="${novo ? 'lx-novo' : ''}"><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="block h-full p-4 bg-white dark:bg-lect-bgDark border ${n.impacto === 'alto' ? 'border-lect-orange/60' : 'border-slate-200 dark:border-lect-borderDark'} hover:border-lect-teal transition-colors">
+                        <span class="flex flex-wrap items-center gap-2 font-mono text-[10px] text-slate-500 dark:text-slate-400">${minutos(n.publicado) <= 15 ? '<span class="px-1.5 py-0.5 bg-red-500 text-white font-bold">NOVO</span>' : ''}${n.impacto === 'alto' ? '<span class="text-lect-orange font-bold">ALTO IMPACTO</span>' : ''}<span>${LX.esc(n.fonte)} · ${rel(n.publicado)}</span></span>
+                        <strong class="block mt-1.5 leading-snug">${LX.esc(n.titulo)}</strong>
+                        <span class="flex flex-wrap gap-1 mt-2">${(n.ativos || []).map(chipAtivo).join('')}${(n.tickers || []).map(chipAcao).join('')}</span></a></li>`;
                 }).join('');
-            }).catch(() => { });
-        }
-        agora(); setInterval(agora, 2 * 6e4);
+                $('agora-qtd').textContent = `· ${ns.length} manchetes`;
+                $('agora-tempo').innerHTML = ns.map(n => `<li class="${vistos && !vistos.has(n.url) ? 'lx-novo' : ''}"><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="flex gap-3 px-3 py-2 hover:bg-slate-50 dark:hover:bg-white/[0.03]">
+                    <span class="font-mono text-[11px] font-bold ${n.impacto === 'alto' ? 'text-lect-orange' : 'text-lect-teal'} w-11 shrink-0 pt-0.5">${new Date(n.publicado).toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' })}</span>
+                    <span class="flex-1 min-w-0"><span class="text-sm leading-snug">${LX.esc(n.titulo)}</span> <span class="font-mono text-[10px] text-slate-500 whitespace-nowrap">· ${LX.esc(n.fonte)}</span>${(n.tickers || []).length ? ' ' + n.tickers.map(chipAcao).join(' ') : ''}</span></a></li>`).join('');
+                vistos = new Set(ns.map(n => n.url));
+            }
+            function buscar() {
+                const t = Math.floor(Date.now() / 6e4);
+                fetch(AOVIVO + '?t=' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : Promise.reject())
+                    .catch(() => fetch('data/noticias-agora.json?t=' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : null))
+                    .then(d => { if (d && (!dados || d.atualizado_em >= dados.atualizado_em)) { dados = d; pintar(); } }).catch(() => { });
+            }
+            fetch('data/cotacoes.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => { if (c) [...(c.mapa || []), ...(c.itens || [])].forEach(x => { if (x.ticker) cot[x.ticker] = x; }); pintar(); }).catch(() => { });
+            buscar(); setInterval(buscar, 60000); setInterval(pintar, 30000);
+            const bt = $('agora-alertas');
+            const pintaBt = () => { bt.textContent = LX.avisosNoticias() ? '🔔 avisos ligados' : '🔕 avisos desligados'; };
+            bt.onclick = () => { LX.avisosNoticias(!LX.avisosNoticias()); pintaBt(); }; pintaBt();
+        })();
         /* ---------- Placar do termômetro: transparência sobre acertos e erros ---------- */
         fetch('data/placar-termometro.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(pl => {
             const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(d => d && d.data && (d.win || d.wdo));
