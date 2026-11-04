@@ -1,66 +1,555 @@
 {
- "categorias": {"juros": "Juros e macro", "futuros": "Futuros e day trade", "acoes": "Ações", "opcoes": "Opções", "risco": "Risco e gestão", "impostos": "Impostos"},
+ "categorias": {
+  "juros": "Juros e macro",
+  "futuros": "Futuros e day trade",
+  "acoes": "Ações",
+  "opcoes": "Opções",
+  "risco": "Risco e gestão",
+  "impostos": "Impostos"
+ },
  "termos": [
-  {"t": "Ajuste diário", "c": "futuros", "d": "Liquidação financeira diária das posições em contratos futuros que passam de um dia para o outro. A B3 calcula a diferença entre o preço de ajuste do dia e o do dia anterior (ou o preço de entrada) e credita ou debita esse valor na conta em D+1. Assim as perdas não se acumulam sem cobertura.", "f": ["Especificações dos contratos", "futuros.html#specs"]},
-  {"t": "Alavancagem", "c": "risco", "d": "Operar uma exposição maior que o próprio capital. No mercado futuro a margem exigida é só uma fração do valor do contrato, o que multiplica ganhos e perdas na mesma proporção. Um movimento pequeno no preço pode representar uma parte grande da conta.", "f": ["Calculadora de risco", "futuros.html#risco"]},
-  {"t": "Breakeven (inflação implícita)", "c": "juros", "d": "Inflação que o mercado está colocando no preço para um prazo, calculada comparando a taxa de um título prefixado com a de um título atrelado ao IPCA do mesmo vencimento: (1 + taxa prefixada) ÷ (1 + juro real) − 1. Quando sobe acima da meta, indica que o mercado duvida que o Banco Central traga a inflação para o alvo.", "f": ["Inflação implícita ao vivo", "macro.html#curva"]},
-  {"t": "Book de ofertas", "c": "futuros", "d": "Lista das ordens de compra e venda pendentes em cada nível de preço. Mostra onde há liquidez e quanto volume seria necessário para o preço andar.", "f": null},
-  {"t": "BTC (aluguel de ações)", "c": "acoes", "d": "Banco de Títulos da B3, onde ações são emprestadas. Quem doa recebe uma taxa; quem toma emprestado pode vender a descoberto e recomprar depois para devolver.", "f": null},
-  {"t": "Call", "c": "opcoes", "d": "Opção de compra: dá ao titular o direito, mas não a obrigação, de comprar o ativo pelo preço de exercício até o vencimento. Quem vende a call assume a obrigação de vender se for exercido.", "f": null},
-  {"t": "Carry trade", "c": "juros", "d": "Estratégia de tomar dinheiro emprestado em uma moeda de juros baixos e aplicar em outra de juros altos, ganhando a diferença. O juro alto do Brasil atrai esse fluxo e tende a sustentar o real; quando o diferencial diminui ou o risco aumenta, o fluxo sai e o dólar sobe.", "f": ["Mapa E se…?", "macro.html#educacao"]},
-  {"t": "CDI", "c": "juros", "d": "Certificado de Depósito Interbancário: taxa média dos empréstimos de um dia entre bancos. Fica praticamente colada na Selic e é a principal referência da renda fixa pós-fixada.", "f": ["Selic e CDI hoje", "index.html#hero"]},
-  {"t": "Circuit breaker", "c": "futuros", "d": "Interrupção automática dos negócios na B3 quando o Ibovespa cai além de limites definidos no mesmo dia. Serve para conter pânico e dar tempo para o mercado processar a informação.", "f": null},
-  {"t": "Consenso de mercado", "c": "juros", "d": "Mediana das projeções de economistas para um dado antes da divulgação (IPCA, payroll, PIB…). O preço já reflete o consenso; o que move o mercado é a diferença entre o resultado e o esperado.", "f": ["Calendário econômico", "index.html#cal-wrap"]},
-  {"t": "Contango", "c": "futuros", "d": "Situação em que o preço do contrato futuro está acima do preço à vista, normalmente pelo custo de carregar a posição até o vencimento (juros). O contrário se chama backwardation.", "f": ["Dólar justo", "futuros.html#paridade"]},
-  {"t": "Copom", "c": "juros", "d": "Comitê de Política Monetária do Banco Central, que define a meta da taxa Selic em reuniões a cada cerca de 45 dias. A decisão sai após o fechamento do mercado e mexe ao mesmo tempo com juros, dólar e bolsa.", "f": ["Ciclo do Copom", "macro.html#juros"]},
-  {"t": "CPI", "c": "juros", "d": "Índice de preços ao consumidor dos Estados Unidos, divulgado mensalmente. Inflação americana acima do esperado aumenta a chance de juros altos por mais tempo pelo Fed, o que costuma fortalecer o dólar no mundo e pesar em emergentes.", "f": ["Calendário econômico", "index.html#cal-wrap"]},
-  {"t": "Critério de Kelly", "c": "risco", "d": "Fórmula que calcula a fração do capital a arriscar por operação para maximizar o crescimento no longo prazo, a partir da taxa de acerto e da relação ganho/perda. Na prática, traders usam uma fração do Kelly (metade ou um quarto) porque a versão cheia gera oscilações grandes.", "f": ["Curva de Kelly", "futuros.html#risco"]},
-  {"t": "Curva de juros", "c": "juros", "d": "Gráfico das taxas de juros para diferentes prazos, do mais curto ao mais longo. A parte curta segue as expectativas para a Selic; a parte longa embute risco fiscal, inflação futura e prêmio de prazo. Dizer que a curva abriu significa que as taxas subiram.", "f": ["Curva do Tesouro hoje", "macro.html#curva"]},
-  {"t": "DARF", "c": "impostos", "d": "Documento de Arrecadação de Receitas Federais, usado para pagar o imposto sobre ganhos em bolsa. Para day trade e operações comuns de pessoa física o código é 6015, com vencimento no último dia útil do mês seguinte ao do lucro.", "f": ["Calculadora de IR", "futuros.html#risco"]},
-  {"t": "Data com", "c": "acoes", "d": "Último dia em que é preciso ter a ação na carteira para receber o provento anunciado (dividendos ou JCP).", "f": null},
-  {"t": "Data ex", "c": "acoes", "d": "Primeiro dia em que a ação é negociada sem direito ao provento. O preço costuma abrir descontado aproximadamente pelo valor pago.", "f": null},
-  {"t": "Day trade", "c": "futuros", "d": "Compra e venda do mesmo ativo no mesmo dia, zerando a posição antes do fechamento. Tem tributação própria (20% sobre o lucro) e margem menor nas corretoras, o que aumenta a alavancagem.", "f": ["Plano do Dia", "futuros.html#plano"]},
-  {"t": "DI1 (DI futuro)", "c": "futuros", "d": "Contrato futuro da B3 sobre a taxa média do CDI até o vencimento. Os vencimentos de janeiro são os mais negociados e formam a curva de juros que o mercado usa como referência.", "f": ["Vértices vigentes", "macro.html#curva"]},
-  {"t": "Dividend yield (DY)", "c": "acoes", "d": "Proventos pagos nos últimos 12 meses divididos pelo preço da ação. Mostra o retorno em dinheiro, mas um DY alto pode refletir uma queda forte no preço ou um pagamento que não vai se repetir.", "f": null},
-  {"t": "Drawdown", "c": "risco", "d": "Queda do capital desde o último pico até o fundo seguinte, em reais ou em percentual. Mede a dor de uma sequência ruim e é usado para dimensionar quanto arriscar por operação.", "f": ["Diário de Trades", "futuros.html#diario"]},
-  {"t": "DXY", "c": "juros", "d": "Índice que mede o dólar contra uma cesta de moedas fortes (euro, iene, libra e outras). DXY subindo indica dólar forte no mundo e costuma pressionar o real para cima, ou seja, WDO em alta.", "f": null},
-  {"t": "FGC", "c": "juros", "d": "Fundo Garantidor de Créditos: protege depósitos e títulos bancários como CDB, LCI e LCA até um limite por CPF e por instituição em caso de quebra do banco.", "f": null},
-  {"t": "Focus", "c": "juros", "d": "Pesquisa semanal do Banco Central com as projeções de mais de 100 instituições para inflação, Selic, PIB e câmbio. É publicada às segundas-feiras.", "f": ["Boletim Focus", "macro.html#juros"]},
-  {"t": "FOMC", "c": "juros", "d": "Comitê do Federal Reserve que decide os juros dos Estados Unidos, com oito reuniões por ano. A decisão e a entrevista do presidente do Fed mexem com o dólar no mundo todo.", "f": ["Calendário econômico", "index.html#cal-wrap"]},
-  {"t": "Gap", "c": "futuros", "d": "Salto de preço entre um fechamento e a abertura seguinte, sem negócios no meio. Acontece quando sai notícia relevante com o mercado fechado, e pode fazer um stop ser executado bem pior que o planejado.", "f": null},
-  {"t": "Ibovespa", "c": "acoes", "d": "Principal índice da bolsa brasileira, formado pelas ações mais negociadas e ponderado pelo valor de mercado em circulação. O mini índice (WIN) é um contrato futuro sobre ele.", "f": ["Mapa da bolsa", "index.html#mapa"]},
-  {"t": "Inclinação da curva", "c": "juros", "d": "Diferença entre a taxa de um vencimento longo e a de um curto. Inclinação aumentando costuma refletir mais risco fiscal ou inflação à frente; curva achatando pode indicar Selic alta por mais tempo ou alívio no prêmio de risco.", "f": ["Curva do Tesouro hoje", "macro.html#curva"]},
-  {"t": "IPCA", "c": "juros", "d": "Índice de Preços ao Consumidor Amplo, medido pelo IBGE: é a inflação oficial do Brasil e a referência da meta do Banco Central. A divulgação mensal mexe diretamente nos juros curtos.", "f": ["IPCA e juro real", "index.html#hero"]},
-  {"t": "IRRF (dedo-duro)", "c": "impostos", "d": "Imposto retido na fonte pela corretora sobre operações em bolsa, chamado de dedo-duro porque serve para a Receita acompanhar as operações. No day trade é 1% sobre o lucro do dia, e o valor pode ser abatido do DARF.", "f": ["Calculadora de IR", "futuros.html#risco"]},
-  {"t": "JCP (juros sobre capital próprio)", "c": "impostos", "d": "Forma de a empresa distribuir lucro ao acionista que é dedutível para ela. Para o investidor, o imposto já vem retido na fonte (17,5% pelas regras de 2026).", "f": null},
-  {"t": "Juro real", "c": "juros", "d": "Juro descontada a inflação: (1 + juro nominal) ÷ (1 + inflação) − 1. É o que de fato aumenta o poder de compra e indica o quanto a política monetária está apertada.", "f": ["Juro real hoje", "index.html#hero"]},
-  {"t": "Liquidez", "c": "futuros", "d": "Facilidade de comprar ou vender sem mexer muito no preço. Contratos líquidos, como o WIN e o WDO vigentes, têm muitos negócios e spread pequeno.", "f": null},
-  {"t": "Marcação a mercado", "c": "juros", "d": "Atualização diária do valor de um título ou posição pelo preço de mercado. Explica por que um título público pode render negativo em um mês em que os juros sobem.", "f": null},
-  {"t": "Margem de garantia", "c": "futuros", "d": "Valor que a B3 ou a corretora exige depositado para manter uma posição em derivativos. Se o prejuízo consumir a margem, a corretora pode zerar a posição.", "f": ["Especificações dos contratos", "futuros.html#specs"]},
-  {"t": "Mini dólar (WDO)", "c": "futuros", "d": "Contrato futuro de dólar comercial da B3 com tamanho de 10 mil dólares. Vence no primeiro dia útil de cada mês, e o último dia de negociação é o dia útil anterior.", "f": ["Contrato vigente e rolagem", "futuros.html#placar"]},
-  {"t": "Mini índice (WIN)", "c": "futuros", "d": "Contrato futuro do Ibovespa da B3, em que cada ponto vale R$ 0,20. Vence nos meses pares, na quarta-feira mais próxima do dia 15.", "f": ["Contrato vigente e rolagem", "futuros.html#placar"]},
-  {"t": "P/L (preço/lucro)", "c": "acoes", "d": "Preço da ação dividido pelo lucro por ação. Indica em quantos anos o lucro atual pagaria o preço; só faz sentido comparar empresas parecidas.", "f": null},
-  {"t": "P/VP (preço/valor patrimonial)", "c": "acoes", "d": "Preço da ação dividido pelo patrimônio líquido por ação. Abaixo de 1, a bolsa avalia a empresa por menos que o patrimônio contábil.", "f": null},
-  {"t": "Payoff", "c": "risco", "d": "Relação entre o ganho médio das operações vencedoras e a perda média das perdedoras. Com payoff 2, é possível lucrar acertando menos da metade das vezes.", "f": ["Diário de Trades", "futuros.html#diario"]},
-  {"t": "Payroll", "c": "juros", "d": "Relatório mensal de emprego dos Estados Unidos, divulgado normalmente na primeira sexta-feira do mês. Mostra quantas vagas foram criadas, a taxa de desemprego e os salários, e é um dos dados que mais mexem com o dólar.", "f": ["Calendário econômico", "index.html#cal-wrap"]},
-  {"t": "Preço de ajuste", "c": "futuros", "d": "Preço de referência calculado pela B3 no fim de cada pregão para liquidar o ajuste diário dos contratos futuros.", "f": null},
-  {"t": "Prêmio de risco", "c": "juros", "d": "Retorno extra que o investidor exige para aceitar incerteza. Nos juros longos aparece quando as taxas ficam acima do que a Selic e a inflação esperadas justificariam, geralmente por dúvidas fiscais.", "f": ["Inflação implícita", "macro.html#curva"]},
-  {"t": "PTAX", "c": "juros", "d": "Taxa de câmbio oficial calculada pelo Banco Central a partir de consultas ao mercado ao longo do dia. É usada na liquidação dos contratos de dólar futuro no vencimento.", "f": ["Dólar e PTAX hoje", "index.html#hero"]},
-  {"t": "Put", "c": "opcoes", "d": "Opção de venda: dá ao titular o direito de vender o ativo pelo preço de exercício até o vencimento. É usada como seguro contra quedas.", "f": null},
-  {"t": "Risk-on e risk-off", "c": "juros", "d": "Humores do mercado global. Em risk-on, investidores buscam ativos de risco como bolsas e moedas emergentes; em risk-off, correm para dólar, títulos americanos e ouro, e o real costuma se desvalorizar.", "f": ["Regimes de risco", "macro.html#regimes"]},
-  {"t": "ROE", "c": "acoes", "d": "Retorno sobre o patrimônio: lucro dividido pelo patrimônio líquido. Mede quanto a empresa gera de lucro com o capital dos acionistas.", "f": null},
-  {"t": "Rolagem", "c": "futuros", "d": "Troca de uma posição do contrato que está vencendo para o próximo vencimento. A liquidez migra para o novo contrato alguns dias antes do vencimento, e operar o contrato antigo nesses dias tem spread maior.", "f": ["Placar de vencimento", "futuros.html#placar"]},
-  {"t": "Selic", "c": "juros", "d": "Taxa básica de juros da economia, definida pelo Copom. Serve de piso para os demais juros e é o principal instrumento do Banco Central para controlar a inflação.", "f": ["Ciclo da Selic", "macro.html#juros"]},
-  {"t": "Slippage", "c": "risco", "d": "Diferença entre o preço esperado de uma ordem e o preço em que ela foi executada. Aumenta em momentos de volatilidade, como na divulgação de dados fortes, e em ativos pouco líquidos.", "f": null},
-  {"t": "Spread", "c": "futuros", "d": "Diferença entre o melhor preço de compra e o melhor preço de venda no book. Spread largo encarece entrar e sair da operação.", "f": null},
-  {"t": "Stop loss", "c": "risco", "d": "Ordem que encerra a posição automaticamente quando o preço atinge um nível de perda definido. Limita o prejuízo, mas em gaps ou notícias fortes pode ser executado pior que o planejado.", "f": ["Calculadora de risco", "futuros.html#risco"]},
-  {"t": "Surpresa (dado econômico)", "c": "juros", "d": "Quando um indicador sai claramente diferente do consenso de mercado. É a surpresa, e não o número em si, que provoca os movimentos rápidos no preço.", "f": ["Calendário com alertas", "index.html#cal-wrap"]},
-  {"t": "Tag along", "c": "acoes", "d": "Direito do acionista minoritário de vender suas ações pelo mesmo preço (ou por parte dele) pago ao controlador em caso de venda do controle da empresa.", "f": null},
-  {"t": "Taxa de acerto", "c": "risco", "d": "Percentual de operações que terminam com lucro. Sozinha não diz se a estratégia ganha dinheiro: precisa ser lida junto com o payoff.", "f": ["Diário de Trades", "futuros.html#diario"]},
-  {"t": "Tesouro IPCA+", "c": "juros", "d": "Título público que paga a inflação (IPCA) mais uma taxa de juro real definida na compra. A taxa desses títulos forma a curva de juro real do país.", "f": ["Curva IPCA+", "macro.html#curva"]},
-  {"t": "Tesouro Prefixado", "c": "juros", "d": "Título público com taxa definida no momento da compra, pago integralmente no vencimento. As taxas desses títulos formam uma curva parecida com a do DI futuro.", "f": ["Curva prefixada", "macro.html#curva"]},
-  {"t": "Tick", "c": "futuros", "d": "Menor variação de preço permitida em um contrato. No WIN o tick é de 5 pontos (R$ 1,00 por contrato); no WDO, de 0,5 ponto (R$ 5,00 por contrato).", "f": ["Especificações dos contratos", "futuros.html#specs"]},
-  {"t": "Treasury 10 anos", "c": "juros", "d": "Taxa do título de 10 anos do governo americano, a principal referência de juro longo do mundo. Quando sobe, encarece o dinheiro global e costuma pressionar bolsas e moedas emergentes.", "f": null},
-  {"t": "Volatilidade", "c": "risco", "d": "Intensidade das oscilações de preço. Mais volatilidade significa movimentos maiores para os dois lados, o que exige stops mais largos ou posições menores.", "f": null}
+  {
+   "t": "Agressão",
+   "c": "futuros",
+   "d": "Ordem a mercado que consome o book: compradora quando executa na oferta de venda, vendedora quando executa na de compra.",
+   "f": [
+    "Especificações dos contratos",
+    "futuros.html#specs"
+   ]
+  },
+  {
+   "t": "Ajuste diário",
+   "c": "futuros",
+   "d": "Liquidação financeira diária das posições em contratos futuros que passam de um dia para o outro. A B3 calcula a diferença entre o preço de ajuste do dia e o do dia anterior (ou o preço de entrada) e credita ou debita esse valor na conta em D+1. Assim as perdas não se acumulam sem cobertura.",
+   "f": [
+    "Especificações dos contratos",
+    "futuros.html#specs"
+   ]
+  },
+  {
+   "t": "Alavancagem",
+   "c": "risco",
+   "d": "Operar uma exposição maior que o próprio capital. No mercado futuro a margem exigida é só uma fração do valor do contrato, o que multiplica ganhos e perdas na mesma proporção. Um movimento pequeno no preço pode representar uma parte grande da conta.",
+   "f": [
+    "Calculadora de risco",
+    "futuros.html#risco"
+   ]
+  },
+  {
+   "t": "Book de ofertas",
+   "c": "futuros",
+   "d": "Lista das ordens de compra e venda pendentes em cada nível de preço. Mostra onde há liquidez e quanto volume seria necessário para o preço andar.",
+   "f": null
+  },
+  {
+   "t": "Breakeven (inflação implícita)",
+   "c": "juros",
+   "d": "Inflação que o mercado está colocando no preço para um prazo, calculada comparando a taxa de um título prefixado com a de um título atrelado ao IPCA do mesmo vencimento: (1 + taxa prefixada) ÷ (1 + juro real) − 1. Quando sobe acima da meta, indica que o mercado duvida que o Banco Central traga a inflação para o alvo.",
+   "f": [
+    "Inflação implícita ao vivo",
+    "macro.html#curva"
+   ]
+  },
+  {
+   "t": "BTC (aluguel de ações)",
+   "c": "acoes",
+   "d": "Banco de Títulos da B3, onde ações são emprestadas. Quem doa recebe uma taxa; quem toma emprestado pode vender a descoberto e recomprar depois para devolver.",
+   "f": null
+  },
+  {
+   "t": "Call",
+   "c": "opcoes",
+   "d": "Opção de compra: dá ao titular o direito, mas não a obrigação, de comprar o ativo pelo preço de exercício até o vencimento. Quem vende a call assume a obrigação de vender se for exercido.",
+   "f": null
+  },
+  {
+   "t": "Carry trade",
+   "c": "juros",
+   "d": "Estratégia de tomar dinheiro emprestado em uma moeda de juros baixos e aplicar em outra de juros altos, ganhando a diferença. O juro alto do Brasil atrai esse fluxo e tende a sustentar o real; quando o diferencial diminui ou o risco aumenta, o fluxo sai e o dólar sobe.",
+   "f": [
+    "Mapa E se…?",
+    "macro.html#educacao"
+   ]
+  },
+  {
+   "t": "CDI",
+   "c": "juros",
+   "d": "Certificado de Depósito Interbancário: taxa média dos empréstimos de um dia entre bancos. Fica praticamente colada na Selic e é a principal referência da renda fixa pós-fixada.",
+   "f": [
+    "Selic e CDI hoje",
+    "index.html#hero"
+   ]
+  },
+  {
+   "t": "Circuit breaker",
+   "c": "futuros",
+   "d": "Interrupção automática dos negócios na B3 quando o Ibovespa cai além de limites definidos no mesmo dia. Serve para conter pânico e dar tempo para o mercado processar a informação.",
+   "f": null
+  },
+  {
+   "t": "Consenso de mercado",
+   "c": "juros",
+   "d": "Mediana das projeções de economistas para um dado antes da divulgação (IPCA, payroll, PIB…). O preço já reflete o consenso; o que move o mercado é a diferença entre o resultado e o esperado.",
+   "f": [
+    "Calendário econômico",
+    "index.html#cal-wrap"
+   ]
+  },
+  {
+   "t": "Contango",
+   "c": "futuros",
+   "d": "Situação em que o preço do contrato futuro está acima do preço à vista, normalmente pelo custo de carregar a posição até o vencimento (juros). O contrário se chama backwardation.",
+   "f": [
+    "Dólar justo",
+    "futuros.html#paridade"
+   ]
+  },
+  {
+   "t": "Copom",
+   "c": "juros",
+   "d": "Comitê de Política Monetária do Banco Central, que define a meta da taxa Selic em reuniões a cada cerca de 45 dias. A decisão sai após o fechamento do mercado e mexe ao mesmo tempo com juros, dólar e bolsa.",
+   "f": [
+    "Ciclo do Copom",
+    "macro.html#juros"
+   ]
+  },
+  {
+   "t": "CPI",
+   "c": "juros",
+   "d": "Índice de preços ao consumidor dos Estados Unidos, divulgado mensalmente. Inflação americana acima do esperado aumenta a chance de juros altos por mais tempo pelo Fed, o que costuma fortalecer o dólar no mundo e pesar em emergentes.",
+   "f": [
+    "Calendário econômico",
+    "index.html#cal-wrap"
+   ]
+  },
+  {
+   "t": "Critério de Kelly",
+   "c": "risco",
+   "d": "Fórmula que calcula a fração do capital a arriscar por operação para maximizar o crescimento no longo prazo, a partir da taxa de acerto e da relação ganho/perda. Na prática, traders usam uma fração do Kelly (metade ou um quarto) porque a versão cheia gera oscilações grandes.",
+   "f": [
+    "Curva de Kelly",
+    "futuros.html#risco"
+   ]
+  },
+  {
+   "t": "Cupom cambial",
+   "c": "juros",
+   "d": "Juro em dólar no mercado brasileiro. Junto com o DI, determina o diferencial entre o dólar futuro e o à vista.",
+   "f": [
+    "Curva de juros",
+    "macro.html#juros"
+   ]
+  },
+  {
+   "t": "Curva de juros",
+   "c": "juros",
+   "d": "Gráfico das taxas de juros para diferentes prazos, do mais curto ao mais longo. A parte curta segue as expectativas para a Selic; a parte longa embute risco fiscal, inflação futura e prêmio de prazo. Dizer que a curva abriu significa que as taxas subiram.",
+   "f": [
+    "Curva do Tesouro hoje",
+    "macro.html#curva"
+   ]
+  },
+  {
+   "t": "DARF",
+   "c": "impostos",
+   "d": "Documento de Arrecadação de Receitas Federais, usado para pagar o imposto sobre ganhos em bolsa. Para day trade e operações comuns de pessoa física o código é 6015, com vencimento no último dia útil do mês seguinte ao do lucro.",
+   "f": [
+    "Calculadora de IR",
+    "futuros.html#risco"
+   ]
+  },
+  {
+   "t": "Data com",
+   "c": "acoes",
+   "d": "Último dia em que é preciso ter a ação na carteira para receber o provento anunciado (dividendos ou JCP).",
+   "f": null
+  },
+  {
+   "t": "Data ex",
+   "c": "acoes",
+   "d": "Primeiro dia em que a ação é negociada sem direito ao provento. O preço costuma abrir descontado aproximadamente pelo valor pago.",
+   "f": null
+  },
+  {
+   "t": "Day trade",
+   "c": "futuros",
+   "d": "Compra e venda do mesmo ativo no mesmo dia, zerando a posição antes do fechamento. Tem tributação própria (20% sobre o lucro) e margem menor nas corretoras, o que aumenta a alavancagem.",
+   "f": [
+    "Plano do Dia",
+    "futuros.html#plano"
+   ]
+  },
+  {
+   "t": "DI1 (DI futuro)",
+   "c": "futuros",
+   "d": "Contrato futuro da B3 sobre a taxa média do CDI até o vencimento. Os vencimentos de janeiro são os mais negociados e formam a curva de juros que o mercado usa como referência.",
+   "f": [
+    "Vértices vigentes",
+    "macro.html#curva"
+   ]
+  },
+  {
+   "t": "Dividend yield (DY)",
+   "c": "acoes",
+   "d": "Proventos pagos nos últimos 12 meses divididos pelo preço da ação. Mostra o retorno em dinheiro, mas um DY alto pode refletir uma queda forte no preço ou um pagamento que não vai se repetir.",
+   "f": null
+  },
+  {
+   "t": "Drawdown",
+   "c": "risco",
+   "d": "Queda do capital desde o último pico até o fundo seguinte, em reais ou em percentual. Mede a dor de uma sequência ruim e é usado para dimensionar quanto arriscar por operação.",
+   "f": [
+    "Diário de Trades",
+    "futuros.html#diario"
+   ]
+  },
+  {
+   "t": "DV01",
+   "c": "juros",
+   "d": "Variação de valor de uma posição para cada 0,01 p.p. de mudança na taxa. Medida de risco padrão em juros.",
+   "f": [
+    "Curva de juros",
+    "macro.html#juros"
+   ]
+  },
+  {
+   "t": "DXY",
+   "c": "juros",
+   "d": "Índice que mede o dólar contra uma cesta de moedas fortes (euro, iene, libra e outras). DXY subindo indica dólar forte no mundo e costuma pressionar o real para cima, ou seja, WDO em alta.",
+   "f": null
+  },
+  {
+   "t": "FGC",
+   "c": "juros",
+   "d": "Fundo Garantidor de Créditos: protege depósitos e títulos bancários como CDB, LCI e LCA até um limite por CPF e por instituição em caso de quebra do banco.",
+   "f": null
+  },
+  {
+   "t": "Focus",
+   "c": "juros",
+   "d": "Pesquisa semanal do Banco Central com as projeções de mais de 100 instituições para inflação, Selic, PIB e câmbio. É publicada às segundas-feiras.",
+   "f": [
+    "Boletim Focus",
+    "macro.html#juros"
+   ]
+  },
+  {
+   "t": "FOMC",
+   "c": "juros",
+   "d": "Comitê do Federal Reserve que decide os juros dos Estados Unidos, com oito reuniões por ano. A decisão e a entrevista do presidente do Fed mexem com o dólar no mundo todo.",
+   "f": [
+    "Calendário econômico",
+    "index.html#cal-wrap"
+   ]
+  },
+  {
+   "t": "Gap",
+   "c": "futuros",
+   "d": "Salto de preço entre um fechamento e a abertura seguinte, sem negócios no meio. Acontece quando sai notícia relevante com o mercado fechado, e pode fazer um stop ser executado bem pior que o planejado.",
+   "f": null
+  },
+  {
+   "t": "Ibovespa",
+   "c": "acoes",
+   "d": "Principal índice da bolsa brasileira, formado pelas ações mais negociadas e ponderado pelo valor de mercado em circulação. O mini índice (WIN) é um contrato futuro sobre ele.",
+   "f": [
+    "Mapa da bolsa",
+    "index.html#mapa"
+   ]
+  },
+  {
+   "t": "Inclinação da curva",
+   "c": "juros",
+   "d": "Diferença entre a taxa de um vencimento longo e a de um curto. Inclinação aumentando costuma refletir mais risco fiscal ou inflação à frente; curva achatando pode indicar Selic alta por mais tempo ou alívio no prêmio de risco.",
+   "f": [
+    "Curva do Tesouro hoje",
+    "macro.html#curva"
+   ]
+  },
+  {
+   "t": "IPCA",
+   "c": "juros",
+   "d": "Índice de Preços ao Consumidor Amplo, medido pelo IBGE: é a inflação oficial do Brasil e a referência da meta do Banco Central. A divulgação mensal mexe diretamente nos juros curtos.",
+   "f": [
+    "IPCA e juro real",
+    "index.html#hero"
+   ]
+  },
+  {
+   "t": "IRRF (dedo-duro)",
+   "c": "impostos",
+   "d": "Imposto retido na fonte pela corretora sobre operações em bolsa, chamado de dedo-duro porque serve para a Receita acompanhar as operações. No day trade é 1% sobre o lucro do dia, e o valor pode ser abatido do DARF.",
+   "f": [
+    "Calculadora de IR",
+    "futuros.html#risco"
+   ]
+  },
+  {
+   "t": "JCP (juros sobre capital próprio)",
+   "c": "impostos",
+   "d": "Forma de a empresa distribuir lucro ao acionista que é dedutível para ela. Para o investidor, o imposto já vem retido na fonte (17,5% pelas regras de 2026).",
+   "f": null
+  },
+  {
+   "t": "Juro real",
+   "c": "juros",
+   "d": "Juro descontada a inflação: (1 + juro nominal) ÷ (1 + inflação) − 1. É o que de fato aumenta o poder de compra e indica o quanto a política monetária está apertada.",
+   "f": [
+    "Juro real hoje",
+    "index.html#hero"
+   ]
+  },
+  {
+   "t": "Leilão",
+   "c": "futuros",
+   "d": "Período em que ordens são acumuladas sem negócios e executadas a um preço único (abertura, fechamento ou após oscilação brusca).",
+   "f": [
+    "Especificações dos contratos",
+    "futuros.html#specs"
+   ]
+  },
+  {
+   "t": "Liquidez",
+   "c": "futuros",
+   "d": "Facilidade de comprar ou vender sem mexer muito no preço. Contratos líquidos, como o WIN e o WDO vigentes, têm muitos negócios e spread pequeno.",
+   "f": null
+  },
+  {
+   "t": "Marcação a mercado",
+   "c": "juros",
+   "d": "Atualização diária do valor de um título ou posição pelo preço de mercado. Explica por que um título público pode render negativo em um mês em que os juros sobem.",
+   "f": null
+  },
+  {
+   "t": "Margem de garantia",
+   "c": "futuros",
+   "d": "Valor que a B3 ou a corretora exige depositado para manter uma posição em derivativos. Se o prejuízo consumir a margem, a corretora pode zerar a posição.",
+   "f": [
+    "Especificações dos contratos",
+    "futuros.html#specs"
+   ]
+  },
+  {
+   "t": "Mini dólar (WDO)",
+   "c": "futuros",
+   "d": "Contrato futuro de dólar comercial da B3 com tamanho de 10 mil dólares. Vence no primeiro dia útil de cada mês, e o último dia de negociação é o dia útil anterior.",
+   "f": [
+    "Contrato vigente e rolagem",
+    "futuros.html#placar"
+   ]
+  },
+  {
+   "t": "Mini índice (WIN)",
+   "c": "futuros",
+   "d": "Contrato futuro do Ibovespa da B3, em que cada ponto vale R$ 0,20. Vence nos meses pares, na quarta-feira mais próxima do dia 15.",
+   "f": [
+    "Contrato vigente e rolagem",
+    "futuros.html#placar"
+   ]
+  },
+  {
+   "t": "P/L (preço/lucro)",
+   "c": "acoes",
+   "d": "Preço da ação dividido pelo lucro por ação. Indica em quantos anos o lucro atual pagaria o preço; só faz sentido comparar empresas parecidas.",
+   "f": null
+  },
+  {
+   "t": "P/VP",
+   "c": "acoes",
+   "d": "Preço dividido pelo valor patrimonial por ação. Abaixo de 1, negocia abaixo do patrimônio contábil.",
+   "f": [
+    "Ações B3",
+    "acoes.html"
+   ]
+  },
+  {
+   "t": "P/VP (preço/valor patrimonial)",
+   "c": "acoes",
+   "d": "Preço da ação dividido pelo patrimônio líquido por ação. Abaixo de 1, a bolsa avalia a empresa por menos que o patrimônio contábil.",
+   "f": null
+  },
+  {
+   "t": "Payoff",
+   "c": "risco",
+   "d": "Relação entre o ganho médio das operações vencedoras e a perda média das perdedoras. Com payoff 2, é possível lucrar acertando menos da metade das vezes.",
+   "f": [
+    "Diário de Trades",
+    "futuros.html#diario"
+   ]
+  },
+  {
+   "t": "Payroll",
+   "c": "juros",
+   "d": "Relatório mensal de emprego dos Estados Unidos, divulgado normalmente na primeira sexta-feira do mês. Mostra quantas vagas foram criadas, a taxa de desemprego e os salários, e é um dos dados que mais mexem com o dólar.",
+   "f": [
+    "Calendário econômico",
+    "index.html#cal-wrap"
+   ]
+  },
+  {
+   "t": "Preço de ajuste",
+   "c": "futuros",
+   "d": "Preço de referência calculado pela B3 no fim de cada pregão para liquidar o ajuste diário dos contratos futuros.",
+   "f": null
+  },
+  {
+   "t": "Prêmio de risco",
+   "c": "juros",
+   "d": "Retorno extra que o investidor exige para aceitar incerteza. Nos juros longos aparece quando as taxas ficam acima do que a Selic e a inflação esperadas justificariam, geralmente por dúvidas fiscais.",
+   "f": [
+    "Inflação implícita",
+    "macro.html#curva"
+   ]
+  },
+  {
+   "t": "PTAX",
+   "c": "juros",
+   "d": "Taxa de câmbio oficial calculada pelo Banco Central a partir de consultas ao mercado ao longo do dia. É usada na liquidação dos contratos de dólar futuro no vencimento.",
+   "f": [
+    "Dólar e PTAX hoje",
+    "index.html#hero"
+   ]
+  },
+  {
+   "t": "Put",
+   "c": "opcoes",
+   "d": "Opção de venda: dá ao titular o direito de vender o ativo pelo preço de exercício até o vencimento. É usada como seguro contra quedas.",
+   "f": null
+  },
+  {
+   "t": "Risk-on e risk-off",
+   "c": "juros",
+   "d": "Humores do mercado global. Em risk-on, investidores buscam ativos de risco como bolsas e moedas emergentes; em risk-off, correm para dólar, títulos americanos e ouro, e o real costuma se desvalorizar.",
+   "f": [
+    "Regimes de risco",
+    "macro.html#regimes"
+   ]
+  },
+  {
+   "t": "ROE",
+   "c": "acoes",
+   "d": "Retorno sobre o patrimônio: lucro dividido pelo patrimônio líquido. Mede quanto a empresa gera de lucro com o capital dos acionistas.",
+   "f": null
+  },
+  {
+   "t": "Rolagem",
+   "c": "futuros",
+   "d": "Troca de uma posição do contrato que está vencendo para o próximo vencimento. A liquidez migra para o novo contrato alguns dias antes do vencimento, e operar o contrato antigo nesses dias tem spread maior.",
+   "f": [
+    "Placar de vencimento",
+    "futuros.html#placar"
+   ]
+  },
+  {
+   "t": "Selic",
+   "c": "juros",
+   "d": "Taxa básica de juros da economia, definida pelo Copom. Serve de piso para os demais juros e é o principal instrumento do Banco Central para controlar a inflação.",
+   "f": [
+    "Ciclo da Selic",
+    "macro.html#juros"
+   ]
+  },
+  {
+   "t": "Slippage",
+   "c": "risco",
+   "d": "Diferença entre o preço esperado de uma ordem e o preço em que ela foi executada. Aumenta em momentos de volatilidade, como na divulgação de dados fortes, e em ativos pouco líquidos.",
+   "f": null
+  },
+  {
+   "t": "Spread",
+   "c": "futuros",
+   "d": "Diferença entre o melhor preço de compra e o melhor preço de venda no book. Spread largo encarece entrar e sair da operação.",
+   "f": null
+  },
+  {
+   "t": "Stop loss",
+   "c": "risco",
+   "d": "Ordem que encerra a posição automaticamente quando o preço atinge um nível de perda definido. Limita o prejuízo, mas em gaps ou notícias fortes pode ser executado pior que o planejado.",
+   "f": [
+    "Calculadora de risco",
+    "futuros.html#risco"
+   ]
+  },
+  {
+   "t": "Surpresa (dado econômico)",
+   "c": "juros",
+   "d": "Quando um indicador sai claramente diferente do consenso de mercado. É a surpresa, e não o número em si, que provoca os movimentos rápidos no preço.",
+   "f": [
+    "Calendário com alertas",
+    "index.html#cal-wrap"
+   ]
+  },
+  {
+   "t": "Tag along",
+   "c": "acoes",
+   "d": "Direito do acionista minoritário de vender suas ações pelo mesmo preço (ou por parte dele) pago ao controlador em caso de venda do controle da empresa.",
+   "f": null
+  },
+  {
+   "t": "Taxa de acerto",
+   "c": "risco",
+   "d": "Percentual de operações que terminam com lucro. Sozinha não diz se a estratégia ganha dinheiro: precisa ser lida junto com o payoff.",
+   "f": [
+    "Diário de Trades",
+    "futuros.html#diario"
+   ]
+  },
+  {
+   "t": "Tesouro IPCA+",
+   "c": "juros",
+   "d": "Título público que paga a inflação (IPCA) mais uma taxa de juro real definida na compra. A taxa desses títulos forma a curva de juro real do país.",
+   "f": [
+    "Curva IPCA+",
+    "macro.html#curva"
+   ]
+  },
+  {
+   "t": "Tesouro Prefixado",
+   "c": "juros",
+   "d": "Título público com taxa definida no momento da compra, pago integralmente no vencimento. As taxas desses títulos formam uma curva parecida com a do DI futuro.",
+   "f": [
+    "Curva prefixada",
+    "macro.html#curva"
+   ]
+  },
+  {
+   "t": "Tick",
+   "c": "futuros",
+   "d": "Menor variação de preço permitida em um contrato. No WIN o tick é de 5 pontos (R$ 1,00 por contrato); no WDO, de 0,5 ponto (R$ 5,00 por contrato).",
+   "f": [
+    "Especificações dos contratos",
+    "futuros.html#specs"
+   ]
+  },
+  {
+   "t": "Times & Trades",
+   "c": "futuros",
+   "d": "Registro de cada negócio executado: hora, preço, quantidade e agressor. Base da leitura de fluxo.",
+   "f": [
+    "Especificações dos contratos",
+    "futuros.html#specs"
+   ]
+  },
+  {
+   "t": "Treasury 10 anos",
+   "c": "juros",
+   "d": "Taxa do título de 10 anos do governo americano, a principal referência de juro longo do mundo. Quando sobe, encarece o dinheiro global e costuma pressionar bolsas e moedas emergentes.",
+   "f": null
+  },
+  {
+   "t": "Volatilidade",
+   "c": "risco",
+   "d": "Intensidade das oscilações de preço. Mais volatilidade significa movimentos maiores para os dois lados, o que exige stops mais largos ou posições menores.",
+   "f": null
+  },
+  {
+   "t": "VWAP",
+   "c": "futuros",
+   "d": "Preço médio ponderado pelo volume. Muito usado por institucionais como referência de execução e por traders como \"preço justo\" intradiário.",
+   "f": [
+    "Especificações dos contratos",
+    "futuros.html#specs"
+   ]
+  }
  ]
 }

@@ -31,14 +31,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://lectnex.com.br/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261103d">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261103e">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261103d">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261103d">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261103e">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261103e">
 </head>
 <body data-page="futuros" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -140,6 +140,16 @@
                     <div class="lg:col-span-5 p-5">
                         <span class="term-label font-bold text-lect-orange flex items-center gap-1.5"><i class="ph-bold ph-receipt"></i>IMPOSTO DO MÊS (DAY TRADE)</span>
                         <div id="dv-ir" class="mt-2"></div>
+                        <details class="mt-2 border border-slate-200 dark:border-lect-borderDark text-xs group">
+                            <summary class="px-3 py-2 cursor-pointer font-semibold flex items-center justify-between"><span><i class="ph-bold ph-receipt text-lect-orange"></i> Como o IR de futuros é calculado</span><i class="ph-bold ph-caret-down group-open:rotate-180 transition-transform"></i></summary>
+                            <ul class="px-3 pb-3 space-y-1.5 text-slate-600 dark:text-slate-300 leading-relaxed">
+                                <li><strong>Day trade:</strong> 20% sobre o lucro líquido do mês. A corretora retém 1% na fonte ("dedo-duro") sobre o resultado positivo do dia, abatido do DARF.</li>
+                                <li><strong>Posição (swing):</strong> 15% sobre o lucro líquido do mês, com retenção de 0,005% sobre as vendas. Não há isenção de R$ 20 mil para futuros.</li>
+                                <li><strong>Prejuízos:</strong> compensam lucros futuros da mesma modalidade (day trade com day trade).</li>
+                                <li><strong>DARF:</strong> código 6015, vence no último dia útil do mês seguinte. Abaixo de R$ 10 não se paga: acumula para o mês seguinte.</li>
+                                <li>Registre suas operações acima e o DARF do mês é calculado sozinho, com prejuízo e IRRF levados de um mês para o outro.</li>
+                            </ul>
+                        </details>
                         <span class="term-label font-bold block mt-5">REGISTRAR OPERAÇÃO</span>
                         <div class="grid grid-cols-2 gap-2 mt-2 font-mono text-xs">
                             <label><span class="term-label block mb-1">Data</span><input id="dv-date" type="date" class="lx-input"></label>
@@ -269,29 +279,6 @@
                 </div>
             </section>
 
-            <!-- IR DAY TRADE -->
-            <section class="term-panel p-6">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                    <div class="lg:col-span-5">
-                        <span class="term-label text-lect-orange font-bold">TRIBUTAÇÃO</span>
-                        <h3 class="font-display text-lg font-bold">Imposto de renda em futuros (pessoa física)</h3>
-                        <ul class="mt-3 space-y-2 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                            <li><strong>Day trade:</strong> 20% sobre o lucro líquido do mês. A corretora retém 1% na fonte ("dedo-duro") sobre o resultado positivo do dia, que é abatido do DARF.</li>
-                            <li><strong>Posição (swing):</strong> 15% sobre o lucro líquido do mês, com retenção de 0,005% sobre o valor das vendas. Não há isenção de R$ 20 mil para futuros.</li>
-                            <li><strong>Prejuízos:</strong> compensáveis com lucros futuros da mesma modalidade (day trade com day trade).</li>
-                            <li><strong>DARF:</strong> código 6015, vencimento no último dia útil do mês seguinte.</li>
-                        </ul>
-                    </div>
-                    <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs content-start">
-                        <label><span class="term-label block mb-1">Lucro bruto day trade no mês (R$)</span><input id="ir-gross" type="number" step="100" value="3500" class="lx-input"></label>
-                        <label><span class="term-label block mb-1">Custos totais no mês (R$)</span><input id="ir-costs" type="number" step="10" value="120" class="lx-input"></label>
-                        <label><span class="term-label block mb-1">Prejuízo a compensar (R$)</span><input id="ir-loss" type="number" step="100" value="0" class="lx-input"></label>
-                        <label><span class="term-label block mb-1">IRRF 1% já retido (R$)</span><input id="ir-irrf" type="number" step="1" value="" placeholder="auto: 1% do lucro" class="lx-input"></label>
-                        <div class="sm:col-span-2 p-4 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark" id="ir-out"></div>
-                    </div>
-                </div>
-            </section>
-
             <!-- PARIDADE DO DÓLAR -->
             <section id="paridade" class="term-panel p-6 scroll-mt-28">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -314,18 +301,17 @@
                 </div>
             </section>
 
-            <!-- GLOSSÁRIO -->
-            <section class="term-panel p-6">
-                <span class="term-label text-lect-teal font-bold">GLOSSÁRIO DO TRADER DE FUTUROS</span>
-                <h3 class="font-display text-lg font-bold mb-4">Conceitos que aparecem todo dia na tela</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs" id="glossary"></div>
-            </section>
+            <!-- GLOSSÁRIO: conteúdo único em glossario.html -->
+            <a href="glossario.html" class="term-panel p-5 flex items-center justify-between gap-3 hover:border-lect-teal">
+                <span><span class="term-label text-lect-teal font-bold block">GLOSSÁRIO DO TRADER</span><strong class="font-display text-lg">Ajuste, rolagem, PTAX, cupom cambial, DV01 e mais 60 termos</strong><span class="block text-xs text-slate-500 mt-1">Definições curtas com links para as ferramentas ao vivo.</span></span>
+                <i class="ph-bold ph-arrow-right text-xl text-lect-teal shrink-0"></i>
+            </a>
         </div>
     </main>
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261103d"></script>
+    <script src="assets/lectnex-core.js?v=20261103e"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -843,27 +829,6 @@
         ['rk-cap', 'rk-riskpct', 'rk-stop', 'rk-target', 'rk-qty', 'rk-cost', 'rk-margin', 'rk-winrate'].forEach(id => $(id).addEventListener('input', calcRisk));
         setAsset('WIN');
 
-        /* ---------- IR day trade ---------- */
-        function calcIR() {
-            const gross = num('ir-gross'), costs = num('ir-costs'), prev = num('ir-loss');
-            const net = gross - costs;
-            const base = Math.max(0, net - prev);
-            const irrf = $('ir-irrf').value === '' ? Math.max(0, net) * 0.01 : num('ir-irrf');
-            const tax = base * 0.20;
-            const darf = Math.max(0, tax - irrf);
-            const carry = net < 0 ? prev - net : Math.max(0, prev - net);
-            $('ir-out').innerHTML = `
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 tabular-nums">
-                    <div><span class="term-label block">Lucro líquido</span><strong class="${LX.signClass(net)}">${LX.brl(net)}</strong></div>
-                    <div><span class="term-label block">Base tributável</span><strong>${LX.brl(base)}</strong></div>
-                    <div><span class="term-label block">IR 20% − IRRF</span><strong>${LX.brl(tax)} − ${LX.brl(irrf)}</strong></div>
-                    <div><span class="term-label block">DARF 6015</span><strong class="text-lect-orange">${darf < 10 && darf > 0 ? LX.brl(darf) + ' (acumula*)' : LX.brl(darf)}</strong></div>
-                </div>
-                <p class="text-[11px] text-slate-500 mt-2">${carry > 0 ? `Prejuízo a compensar no próximo mês: <strong>${LX.brl(carry)}</strong>. ` : ''}*DARF abaixo de R$ 10 não é pago: soma-se ao do mês seguinte. Estimativa didática — confira com seu contador.</p>`;
-        }
-        ['ir-gross', 'ir-costs', 'ir-loss', 'ir-irrf'].forEach(id => $(id).addEventListener('input', calcIR));
-        calcIR();
-
         /* ---------- Paridade ---------- */
         $('par-contract').innerHTML = wdo.slice(0, 6).map((c, i) => `<option value="${i}" ${c === wdoLive ? 'selected' : ''}>${c.code} · ${LX.brShort(c.expiry)}</option>`).join('');
         function syncParDI() { if (!$('par-di').dataset.touched) $('par-di').value = (LX.data.cdi.value).toFixed(2); }
@@ -889,22 +854,6 @@
         document.addEventListener('lx:macro', () => { syncParDI(); calcPar(); });
         syncParDI(); calcPar();
 
-        /* ---------- Glossário ---------- */
-        const G = [
-            ['Ajuste diário', 'Diferença entre o preço de ajuste do dia e o anterior (ou o preço de entrada), creditada/debitada em D+1. Garante que perdas não se acumulem sem cobertura.'],
-            ['Rolagem', 'Troca da posição do contrato que vai vencer pelo seguinte. No WDO acontece nos últimos dias de cada mês; no WIN, na semana anterior ao vencimento.'],
-            ['PTAX', 'Taxa de câmbio média calculada pelo BCB em 4 janelas de consulta (10h, 11h, 12h, 13h). Liquida o WDO e serve de referência para contratos.'],
-            ['Leilão', 'Período em que ordens são acumuladas sem negócios e executadas a um preço único (abertura, fechamento ou após oscilação brusca).'],
-            ['VWAP', 'Preço médio ponderado pelo volume. Muito usado por institucionais como referência de execução e por traders como "preço justo" intradiário.'],
-            ['Book de ofertas', 'Fila de ordens limitadas de compra e venda. Mostra liquidez disponível, mas ordens podem ser canceladas a qualquer momento.'],
-            ['Times & Trades', 'Registro de cada negócio executado: hora, preço, quantidade e agressor. Base da leitura de fluxo.'],
-            ['Agressão', 'Ordem a mercado que consome o book: compradora quando executa na oferta de venda, vendedora quando executa na de compra.'],
-            ['Cupom cambial', 'Juro em dólar no mercado brasileiro. Junto com o DI, determina o diferencial entre o dólar futuro e o à vista.'],
-            ['DV01', 'Variação de valor de uma posição para cada 0,01 p.p. de mudança na taxa. Medida de risco padrão em juros.'],
-            ['Margem de garantia', 'Valor exigido para manter posição. Day trade usa margem reduzida definida pela corretora; posição carregada usa a margem B3.'],
-            ['Circuit breaker', 'Interrupção do pregão quando o Ibovespa cai 10%, 15% ou 20% no dia, para conter pânico.']
-        ];
-        $('glossary').innerHTML = G.map(([t, d]) => `<div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><strong class="font-mono text-lect-teal block">${t}</strong><p class="text-slate-600 dark:text-slate-300 mt-1 leading-relaxed">${d}</p></div>`).join('');
     })();
     </script>
 </body>

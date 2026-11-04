@@ -551,7 +551,7 @@
         ['futuros', 'RISCO', 'Calculadora de risco', 'Tamanho de posição, stop, alvo, expectativa', 'futuros.html#risco', 'ph-shield-check', 'gestao stop alvo posicao contratos day trade'],
         ['futuros', 'KELLY', 'Quanto arriscar por trade', 'Critério de Kelly e zona de quebra', 'futuros.html#risco', 'ph-chart-line-up', 'kelly risco percentual capital drawdown'],
         ['futuros', 'DJ', 'Dólar futuro justo', 'Paridade: spot × diferencial de juros', 'futuros.html#paridade', 'ph-currency-dollar', 'dolar justo paridade wdo cupom cambial'],
-        ['futuros', 'IRDT', 'IR de day trade', '20% sobre o lucro, DARF e dedo-duro', 'futuros.html#risco', 'ph-receipt', 'imposto darf day trade irrf dedo duro'],
+        ['futuros', 'IRDT', 'IR de day trade', 'DARF automático no Diário: 20% sobre o lucro e dedo-duro', 'futuros.html#diario', 'ph-receipt', 'imposto darf day trade irrf dedo duro'],
         ['mercado', 'AGENDA', 'Agenda da semana', 'Copom, FOMC, IPCA, payroll, vencimentos', 'index.html#agenda', 'ph-calendar-dots', 'agenda eventos calendario copom fomc payroll'],
         ['mercado', 'COPOM', 'Copom: o que esperar', 'Expectativa, cenários e reação de juros, dólar e bolsa', 'copom.html', 'ph-bank', 'copom selic decisao juros reuniao banco central comunicado'],
         ['mercado', 'COMECE', 'Comece por aqui', 'O Lectnex em 1 minuto: as principais ferramentas', 'comece.html', 'ph-rocket-launch', 'comece inicio novo tour guia como usar'],

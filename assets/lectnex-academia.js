@@ -384,7 +384,7 @@
         const d = doneCount(), tot = LESSONS.length;
         $('ac-ring').innerHTML = ring(tot ? d / tot : 0);
         $('ac-progress-txt').textContent = `${d} de ${tot}`;
-        $('ac-n-lessons').textContent = tot; $('ac-n-terms').textContent = GLOSS.length;
+        $('ac-n-lessons').textContent = tot; if ($('ac-n-terms')) fetch('data/glossario.json').then(r => r.json()).then(g => { $('ac-n-terms').textContent = (g.termos || g).length; }).catch(() => { $('ac-n-terms').textContent = GLOSS.length; });
         $('ac-trail-bars').innerHTML = TRAILS.map(t => { const n = lessonsOf(t.id).length, k = doneCount(t.id); return `<div><div class="flex justify-between text-[11px]"><span class="text-slate-300">${t.title}</span><span class="font-mono text-slate-400">${k}/${n}</span></div><div class="h-1.5 bg-white/10 mt-1"><div class="h-full transition-all" style="width:${k / n * 100}%;background:${t.color}"></div></div></div>`; }).join('');
         const nx = nextLesson(), btn = $('ac-continue');
         btn.querySelector('span').textContent = d === 0 ? 'Começar a primeira lição' : nx ? `Continuar: ${nx.title}` : 'Revisar as lições';
@@ -494,8 +494,8 @@
         if (!$('ac-lesson')) return;
         const p = new URLSearchParams(location.search).get('licao');
         const start = (p && LESSONS.some(l => l.id === p.toUpperCase())) ? p.toUpperCase() : window.__acStart || state.last || LESSONS[0].id;
-        renderHero(); open(start); renderGloss();
-        $('ac-gq').addEventListener('input', () => { renderGloss.letter = ''; renderGloss(); });
+        renderHero(); open(start);
+        if ($('ac-gl')) { renderGloss(); $('ac-gq').addEventListener('input', () => { renderGloss.letter = ''; renderGloss(); }); }
         document.addEventListener('lx:macro', () => { if (current && (current.widget === 'cdi' || current.widget === 'mult')) renderLesson(); });
         if (p || window.__acStart) setTimeout(() => $('ac-player').scrollIntoView({ behavior: 'smooth' }), 300);
     }
