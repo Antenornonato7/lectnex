@@ -1,0 +1,42 @@
+# Antes do dado: nos dias de evento forte, histórico de reação do WIN/WDO (data/antes.json) para o card do Mercado Hoje
+# e a Leitura do Dia, e story no Telegram privado do dono. Horário: 7h20 nos dias úteis (coletor/relogio.py).
+name: Antes do dado
+run-name: Antes do dado
+
+on:
+  workflow_dispatch:
+    inputs:
+      enviar:
+        description: 'Mandar o story no Telegram privado'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: antes-do-dado
+  cancel-in-progress: false
+
+jobs:
+  antes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar histórico e story
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: |
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          if [ "${{ inputs.enviar }}" = "false" ]; then FLAG=--sem-envio; fi
+          python3 scripts/antes_dado.py "$RUNNER_TEMP/antes-do-dado.png" $FLAG
+      - name: Publicar data/antes.json
+        run: |
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com.br"
+          git add data/antes.json
+          git diff --cached --quiet && exit 0
+          git commit -m "antes do dado: $(TZ=America/Sao_Paulo date +%F)"
+          git pull --rebase -q origin main && git push -q origin HEAD:main

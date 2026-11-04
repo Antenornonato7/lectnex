@@ -19,6 +19,10 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
    - Agenda de hoje no Brasil e nos EUA, com horário de Brasília (Copom, IPCA, payroll, CPI, falas do Fed/BCB, leilões do Tesouro).
    - Notícias que mexem com o Brasil: fiscal, política monetária, commodities, China. Selecione as 5 mais relevantes para `noticias`.
    Também confira `LX.agendaFixed` e os vencimentos (WIN: quarta mais próxima do dia 15 dos meses pares; WDO: 1º dia útil do mês).
+   - **Antes do dado:** se `data/antes.json` tiver `"data"` igual a hoje e não tiver `"vazio": true`, é dia de evento forte
+     com histórico de reação. Use os números desse arquivo (nunca estime): em um item do `resumo` ou no `por_que` do destaque
+     da agenda, diga como o Ibovespa e o dólar reagiram nas últimas divulgações (`passadas`: data, surpresa, `win`/`wdo` em %
+     nos 30 min seguintes). Com menos de 3 divulgações, avise que a amostra é pequena. O card completo já aparece no Mercado Hoje.
 3. **Escreva `data/leitura.json`** no formato abaixo (UTF-8, JSON válido).
 4. **Valide** a leitura: `python3 -c "import json;d=json.load(open('data/leitura.json'));assert d['data'] and d['tipo'] in ('pregao','sem-pregao') and 3<=len(d['resumo'])<=5 and len(d.get('noticias',[]))>=3"`.
 5. **Atualize `data/calendario.json`** (formato na seção "Calendário" abaixo): eventos de hoje até os próximos 7 dias corridos que

@@ -60,6 +60,7 @@ TAREFAS = [
     ('resumo-dono.yml', 'Resumo do dia', {'teste': 'false'}, ('horarios', ['19:25'], 240), lambda: True),
     ('telegram.yml', 'Telegram contar', {'acao': 'contar'}, ('horarios', ['08:17'], 240), lambda: True),
     ('termo.yml', None, {}, ('horarios', ['08:05'], 240), lambda: True),
+    ('antes.yml', 'Antes do dado', {'enviar': 'true'}, ('horarios', ['07:20'], 180), lambda: UTIL),
     ('coletor-cvm.yml', None, {}, ('horarios', ['07:17'], 360), lambda: AGORA.weekday() in (1, 2, 3, 4, 5)),
     ('semanal.yml', 'Resumo semanal enviar', {'enviar': 'true'}, ('horarios', ['10:17'], 360), lambda: AGORA.weekday() == 6),
     ('carrossel.yml', 'Carrossel da semana', {'previa': 'false'}, ('horarios', ['09:47'], 360), lambda: AGORA.weekday() == 5),
