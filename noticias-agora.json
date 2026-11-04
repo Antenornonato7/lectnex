@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T16:45-03:00",
+  "atualizado_em": "2026-11-04T16:48-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -319,7 +319,11 @@
     ],
     [
      "16:30",
-     167418.0
+     167191.0
+    ],
+    [
+     "16:33",
+     167196.0
     ]
    ]
   },
@@ -700,7 +704,11 @@
     ],
     [
      "16:45",
-     5.4564
+     5.4557
+    ],
+    [
+     "16:48",
+     5.4549
     ]
    ]
   },
@@ -1381,8 +1389,24 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.15,
+    "ibov30": 0.02,
     "dolar30": -0.13
+   },
+   {
+    "hora": "16:30",
+    "titulo": "Petrobras despenca mais de 6% com tombo do petróleo",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmZjVUMzbW0teGxQYXJpNVV3R1RXNEpWcWtBVDAzRURsMG5OUFZNNXpNWHlRYkJvYnNqaTFGcEZMRzZKdm5Hci1MZWxEamZSMzdPTnZYb0dnQU96dnVPR1JiN2RmdzVROWxpOUtySlV3c05EN05EcElyLUJZVWV0MW1acnB5S0s4X3B0QTZqSU5uZnZuZnRfdnBfYkY5WmM4T0hBR1NMT2QxdkFPMEHSAbMBQVVfeXFMTXJkOUY4OEcxSk5RTXdXM001MGF3WDl0Y0ozcGZUT2hpSGZ5dktFSGNKZGV0d3d3QmxMUzctaE5Bc1BwUTdkYjctMEtkRVFzaHRIdE5xMVJzWnNtVTFFeFY0aXVLX1kxeV9hdXJKdzc2d0c1NkdzTFRGNkpRTFdhN1VpNzZscjB6bV9IUVJqOUZEbDRkT1lWZ2VaNHdzSWlhUEtRUTViV3JPTlZ0eXNMWVRHNkk?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    },
    {
     "hora": "16:35",
@@ -1402,17 +1426,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-   "publicado": "2026-11-04T04:27-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Após seis pregões de queda, Ibovespa espera Copom com mercado dividido sobre a Selic",
    "fonte": "Estadão",
@@ -2358,6 +2371,20 @@
    "tickers": []
   },
   {
+   "titulo": "Petrobras despenca mais de 6% com tombo do petróleo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmZjVUMzbW0teGxQYXJpNVV3R1RXNEpWcWtBVDAzRURsMG5OUFZNNXpNWHlRYkJvYnNqaTFGcEZMRzZKdm5Hci1MZWxEamZSMzdPTnZYb0dnQU96dnVPR1JiN2RmdzVROWxpOUtySlV3c05EN05EcElyLUJZVWV0MW1acnB5S0s4X3B0QTZqSU5uZnZuZnRfdnBfYkY5WmM4T0hBR1NMT2QxdkFPMEHSAbMBQVVfeXFMTXJkOUY4OEcxSk5RTXdXM001MGF3WDl0Y0ozcGZUT2hpSGZ5dktFSGNKZGV0d3d3QmxMUzctaE5Bc1BwUTdkYjctMEtkRVFzaHRIdE5xMVJzWnNtVTFFeFY0aXVLX1kxeV9hdXJKdzc2d0c1NkdzTFRGNkpRTFdhN1VpNzZscjB6bV9IUVJqOUZEbDRkT1lWZ2VaNHdzSWlhUEtRUTViV3JPTlZ0eXNMWVRHNkk?oc=5",
+   "publicado": "2026-11-04T16:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVEzYXNXU09LYVdHYk5WVGc2bVpTXzk2ZlJ3ZUdoR0NMaFAzWHNiX1c0OHZLcjhBMFBPSkVaZTQzRW9PM0ZkbHJwNjlpQWNub19QZ3ZsRlp5aHVaVWtmb1ViRUMyUHJETEFBTmZ1cGRzMVNValU0eGlHN3NqWkxrN2p6QlZPX3JUU0NBV2ZVQmFLU2FnWGtROWUtNWpvLXFNSFVpT3d0ME5fTTUtdTdHeU9ZNjZPVTlMczZwMU5XR2dETkpwNmYwRw?oc=5",
@@ -2398,7 +2425,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T16:45-03:00",
+ "atualizado_em": "2026-11-04T16:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2411,6 +2438,33 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVEzYXNXU09LYVdHYk5WVGc2bVpTXzk2ZlJ3ZUdoR0NMaFAzWHNiX1c0OHZLcjhBMFBPSkVaZTQzRW9PM0ZkbHJwNjlpQWNub19QZ3ZsRlp5aHVaVWtmb1ViRUMyUHJETEFBTmZ1cGRzMVNValU0eGlHN3NqWkxrN2p6QlZPX3JUU0NBV2ZVQmFLU2FnWGtROWUtNWpvLXFNSFVpT3d0ME5fTTUtdTdHeU9ZNjZPVTlMczZwMU5XR2dETkpwNmYwRw?oc=5",
+   "publicado": "2026-11-04T16:35-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Petrobras despenca mais de 6% com tombo do petróleo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmZjVUMzbW0teGxQYXJpNVV3R1RXNEpWcWtBVDAzRURsMG5OUFZNNXpNWHlRYkJvYnNqaTFGcEZMRzZKdm5Hci1MZWxEamZSMzdPTnZYb0dnQU96dnVPR1JiN2RmdzVROWxpOUtySlV3c05EN05EcElyLUJZVWV0MW1acnB5S0s4X3B0QTZqSU5uZnZuZnRfdnBfYkY5WmM4T0hBR1NMT2QxdkFPMEHSAbMBQVVfeXFMTXJkOUY4OEcxSk5RTXdXM001MGF3WDl0Y0ozcGZUT2hpSGZ5dktFSGNKZGV0d3d3QmxMUzctaE5Bc1BwUTdkYjctMEtkRVFzaHRIdE5xMVJzWnNtVTFFeFY0aXVLX1kxeV9hdXJKdzc2d0c1NkdzTFRGNkpRTFdhN1VpNzZscjB6bV9IUVJqOUZEbDRkT1lWZ2VaNHdzSWlhUEtRUTViV3JPTlZ0eXNMWVRHNkk?oc=5",
+   "publicado": "2026-11-04T16:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Tesouro Direto volta do apagão com tombo de até 38 pontos-base pouco antes do Copom",
    "fonte": "InfoMoney",
@@ -2457,35 +2511,6 @@
    ],
    "tickers": [
     "PETR4"
-   ]
-  },
-  {
-   "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468021",
-   "publicado": "2026-11-04T14:46-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Ações de Petrobras, PRIO e de mais petroleiras caem até 8% com derrocada do petróleo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYmxtM0hISTVablpRajVaVW43VEYzcFJJSUNEUThRZEpnYjBSSFlZeXlwWjFwcVdJQ0QxdGl0ejRPTm1LaHBoN1lQOVB2OHZ2ekpLS0NZRzFUaVhyVFpzUjRQZlJ4R0Qta0hnQmdMT0dyTlZmYS16Y0Q3czhBN1NEckRVa1ktNGR0UmdUR010Snd6Wk05NlNBQnM0a09sMTY1LWhZdV9najA5RmZtbUFF0gG0AUFVX3lxTE9yazFJOUlfN0U2SllOMUIwdTRoWkJnZEwzQklTTmdPQ1p4TEpVc0JON0ZxdGRuNXJCVWVHVEI1UUZoMGVQQVJwekg0ZHRwdVp3Rk9PMjhsQmZ0UC1QVWlFNDB2VlJxMWhVaTd6ZHZtN1FLNnJHb2hnMEEtOE9XX1lXVzBOcmVER2Z3ODNzbTdpczBIWFJBeWlIazdrZ2R6SkIzYzg1QkNEN0JHVDRPc1NTOUJGRw?oc=5",
-   "publicado": "2026-11-04T14:34-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4",
-    "PRIO3"
    ]
   },
   {
