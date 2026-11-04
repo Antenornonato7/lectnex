@@ -159,6 +159,56 @@ def tickers(titulo):
     return sorted(achados)[:3]
 
 
+ENVIADAS = []  # [{'url', 'titulo', 'em'}] — últimas 24 h; carregado do branch ao-vivo no início
+
+
+def alerta_celular(final):
+    """Push (OneSignal, tag 'surpresa') para manchete de ALTO impacto em WIN/WDO publicada há ≤ 12 min.
+    Limites: 7h–21h (Brasília), no máximo 1 a cada 20 min e 5 por dia, nada parecido com o que já foi enviado."""
+    global ENVIADAS
+    agora_brt = AGORA.astimezone(BRT)
+    ENVIADAS = [e for e in ENVIADAS if (AGORA - dt.datetime.fromisoformat(e['em'])).total_seconds() < 86400]
+    if not os.environ.get('ONESIGNAL_API_KEY') or not (7 <= agora_brt.hour < 21):
+        return ENVIADAS
+    hoje = [e for e in ENVIADAS if dt.datetime.fromisoformat(e['em']).astimezone(BRT).date() == agora_brt.date()]
+    if len(hoje) >= 5 or (ENVIADAS and (AGORA - dt.datetime.fromisoformat(ENVIADAS[-1]['em'])).total_seconds() < 1200):
+        return ENVIADAS
+    for n in sorted(final, key=lambda n: n['idade']):
+        if n['impacto'] < 5 or n['idade'] > 12 or not ({'WIN', 'WDO'} & set(n['ativos'])):
+            continue
+        if any(e['url'] == n['url'] or parecida(e['titulo'], n['titulo']) for e in ENVIADAS):
+            continue
+        try:
+            import push
+            ok = push.enviar('surpresa', f"⚡ {n['fonte']} · Agora no mercado", n['titulo'][:170],
+                             'https://lectnex.com.br/?utm_source=push&utm_medium=noticia#ultimas', 'noticia-' + n['url'])
+        except Exception as e:
+            print(f'::warning::Push da manchete falhou: {e.__class__.__name__}')
+            ok = False
+        if ok:
+            ENVIADAS.append({'url': n['url'], 'titulo': n['titulo'], 'em': AGORA.isoformat(timespec='seconds')})
+            print(f"::notice::Push enviado: {n['titulo'][:90]}")
+        break
+    return ENVIADAS
+
+
+def carregar_estado():
+    """Lê do branch ao-vivo a lista de manchetes já enviadas por push (para não repetir entre execuções)."""
+    global ENVIADAS
+    tok, repo = os.environ.get('GITHUB_TOKEN'), os.environ.get('GITHUB_REPOSITORY')
+    if not tok or not repo:
+        return
+    try:
+        req = urllib.request.Request(f'https://api.github.com/repos/{repo}/contents/noticias-agora.json?ref=ao-vivo',
+                                     headers={'Authorization': f'Bearer {tok}', 'Accept': 'application/vnd.github.raw', 'User-Agent': 'lectnex-bot'})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            d = json.loads(r.read())
+        ENVIADAS = d.get('enviadas', [])
+        json.dump(d, open(SAIDA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)  # base de comparação = o que está no ar
+    except Exception as e:
+        print(f'::warning::Não consegui ler o estado do ao-vivo: {e.__class__.__name__}')
+
+
 def parecida(a, b):
     sa, sb = set(re.findall(r'\w{4,}', norm(a))), set(re.findall(r'\w{4,}', norm(b)))
     return bool(sa and sb) and len(sa & sb) / min(len(sa), len(sb)) >= 0.6
@@ -204,7 +254,9 @@ def main():
         if len(final) == 16:
             break
     final.sort(key=lambda n: n['idade'])
+    enviadas = alerta_celular(final)
     novo = {
+        'enviadas': enviadas,
         'atualizado_em': AGORA.astimezone(BRT).isoformat(timespec='minutes'),
         'janela_horas': JANELA_H,
         'fontes_ok': sorted({n['fonte'] for n in todos}),
@@ -216,7 +268,7 @@ def main():
         antigo = json.load(open(SAIDA, encoding='utf-8'))
     except Exception:
         antigo = {}
-    if [x['url'] for x in antigo.get('noticias', [])] == [x['url'] for x in novo['noticias']]:
+    if [x['url'] for x in antigo.get('noticias', [])] == [x['url'] for x in novo['noticias']] and antigo.get('enviadas') == enviadas:
         print(f'Sem mudança ({len(final)} manchetes); não grava.')
         return False
     json.dump(novo, open(SAIDA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -262,6 +314,7 @@ def publicar_ao_vivo():
 if __name__ == '__main__':
     import urllib.error  # noqa: E402
     laco = float(os.environ.get('LOOP_MIN') or 0)
+    carregar_estado()
     fim = time.time() + laco * 60
     while True:
         try:

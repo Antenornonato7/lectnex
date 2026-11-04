@@ -940,7 +940,7 @@
 
     /* ------------------------------------------------------------------ ALERTAS NO CELULAR (OneSignal) */
     // Qualquer [data-lx-push] vira botão. As escolhas viram tags: surpresa, agenda (15 min antes), leitura.
-    const PUSH_OPTS = [['surpresa', 'Surpresas do calendário', 'Quando um dado sai fora do consenso'], ['agenda', 'Dado forte em 15 min', 'Payroll, IPCA, Copom, CPI…'], ['leitura', 'Leitura do Dia', 'Todo dia por volta das 7h45']];
+    const PUSH_OPTS = [['surpresa', 'Surpresas e manchetes fortes', 'Dado fora do consenso ou notícia de alto impacto (no máx. 5 por dia)'], ['agenda', 'Dado forte em 15 min', 'Payroll, IPCA, Copom, CPI…'], ['leitura', 'Leitura do Dia', 'Todo dia por volta das 7h45']];
     let osReady = null;
     function oneSignal() {
         if (osReady) return osReady;
