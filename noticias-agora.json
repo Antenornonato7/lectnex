@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T12:45-03:00",
+  "atualizado_em": "2026-11-04T12:48-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -127,7 +127,11 @@
     ],
     [
      "12:30",
-     167317.0
+     167280.0
+    ],
+    [
+     "12:33",
+     167342.0
     ]
    ]
   },
@@ -316,7 +320,11 @@
     ],
     [
      "12:45",
-     5.4917
+     5.4891
+    ],
+    [
+     "12:48",
+     5.4877
     ]
    ]
   },
@@ -769,7 +777,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.07,
+    "ibov30": 0.05,
     "dolar30": 0.07
    },
    {
@@ -784,7 +792,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": 0.07,
+    "ibov30": 0.05,
     "dolar30": 0.07
    },
    {
@@ -797,7 +805,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.08,
     "dolar30": 0.12
    },
    {
@@ -812,7 +820,7 @@
     "tickers": [
      "POMO4"
     ],
-    "ibov30": null,
+    "ibov30": 0.08,
     "dolar30": 0.12
    },
    {
@@ -828,7 +836,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": 0.27
+    "dolar30": 0.22
    },
    {
     "hora": "12:20",
@@ -843,7 +851,7 @@
      "BBSE3"
     ],
     "ibov30": null,
-    "dolar30": 0.22
+    "dolar30": 0.17
    },
    {
     "hora": "12:21",
@@ -857,7 +865,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.14
    },
    {
     "hora": "12:30",
@@ -867,6 +875,20 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:44",
+    "titulo": "Gestores desmontam 'kit Brasil' e apostam no dólar antes do Copom; maioria agora vê Selic estável",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNklrV3ZtLVQ5VTgtMXlEU09MSjU5bHZLV1hKWkpwVFJad3FZN2pTTDJ1XzFWbUQ3R3NIZkNMcWRHWWdRYXdlQk0tdHN1MFlOMGsyUmNzMm5jQWV6R29ESlIwUml3Ym50Y0xKNjhKek5ja1pQMVh5N1BqaW55dkpKRk0zLVpvdFVMa2wtVXMyQmo1WEdpekktZElvZ255UQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1731,6 +1753,18 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Gestores desmontam 'kit Brasil' e apostam no dólar antes do Copom; maioria agora vê Selic estável",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNklrV3ZtLVQ5VTgtMXlEU09MSjU5bHZLV1hKWkpwVFJad3FZN2pTTDJ1XzFWbUQ3R3NIZkNMcWRHWWdRYXdlQk0tdHN1MFlOMGsyUmNzMm5jQWV6R29ESlIwUml3Ym50Y0xKNjhKek5ja1pQMVh5N1BqaW55dkpKRk0zLVpvdFVMa2wtVXMyQmo1WEdpekktZElvZ255UQ?oc=5",
+   "publicado": "2026-11-04T12:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1760,7 +1794,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T12:45-03:00",
+ "atualizado_em": "2026-11-04T12:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1774,6 +1808,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Gestores desmontam 'kit Brasil' e apostam no dólar antes do Copom; maioria agora vê Selic estável",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNklrV3ZtLVQ5VTgtMXlEU09MSjU5bHZLV1hKWkpwVFJad3FZN2pTTDJ1XzFWbUQ3R3NIZkNMcWRHWWdRYXdlQk0tdHN1MFlOMGsyUmNzMm5jQWV6R29ESlIwUml3Ym50Y0xKNjhKek5ja1pQMVh5N1BqaW55dkpKRk0zLVpvdFVMa2wtVXMyQmo1WEdpekktZElvZ255UQ?oc=5",
+   "publicado": "2026-11-04T12:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Por que Ibovespa sobe forte após vitória dos democratas nos EUA?",
    "fonte": "InfoMoney",
@@ -1911,18 +1957,6 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbVFuVVdoMU9NZEVJUVJFbWUxMk5BMjFKMnRDcDRoOVg0bjhmbE9lUEVidTFDYnFLdGJtVDVqWDNKb0g1d29JbHhNN3pNZzZlckdaN0tnZUp1Rk41NVJRNWIzd2xUMjBJZUVxcnlmRlZ2a3VRamdqUzJ5WDYxRDNnOWFILUxFQk5fY2dPWVdMdzU0ZVpsQjVLVS1neDdlWm53bmt4c2lNNklkTW1vZUlFSC1tUzJfSzh4NUVmajBzQ3BOQkRROVd5ekxjYk56NjlyR1U1LTE1alU5Ym1XeWhIdWNMWmR5dlE?oc=5",
    "publicado": "2026-11-04T11:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
-   "publicado": "2026-11-04T11:08-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
