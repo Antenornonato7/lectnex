@@ -38,6 +38,11 @@ COPOM = [('2024-11-06', '11,25% (+0,50)'), ('2024-12-11', '12,25% (+1,00)'), ('2
          ('2025-09-17', '15,00% (manutenção)'), ('2025-11-05', '15,00% (manutenção)'), ('2025-12-10', '15,00% (manutenção)'),
          ('2026-01-28', '15,00% (manutenção)'), ('2026-03-18', '14,75% (−0,25)'), ('2026-04-29', '14,50% (−0,25)'),
          ('2026-06-17', '14,25% (−0,25)'), ('2026-08-05', '14,00% (−0,25)')]
+# Reserva quando a API do IBGE não responde (ela costuma recusar conexões de fora do Brasil). 2026: calendário oficial
+# do IBGE para 2026; 2025: 12/03 e 11/04 conferidos nos releases do IBGE, demais no calendário anual de divulgação.
+IPCA = ['2024-11-08', '2024-12-10', '2025-01-10', '2025-02-11', '2025-03-12', '2025-04-11', '2025-05-09', '2025-06-10', '2025-07-10',
+        '2025-08-12', '2025-09-10', '2025-10-09', '2025-11-11', '2025-12-10', '2026-01-09', '2026-02-10', '2026-03-12', '2026-04-10',
+        '2026-05-12', '2026-06-12', '2026-07-10', '2026-08-11']
 MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
 
 
@@ -67,7 +72,7 @@ def ibge(produto, nome, tipo):
     for pag in range(1, 6):
         url = f'https://servicodados.ibge.gov.br/api/v3/calendario/{produto}?de=10-01-2024&ate=08-31-2026&qtd=50&page={pag}'
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=12) as r:
                 j = json.load(r)
         except Exception as e:
             note('warning', f'IBGE {nome}: {type(e).__name__} {str(e)[:80]}')
@@ -138,7 +143,9 @@ def main():
     evs += [('cpi-eua', f'CPI — inflação ao consumidor ({ref(d)})', ny(d, 8, 30), None) for d in CPI]
     evs += [('fomc', 'Decisão do FOMC (Fed)', ny(d, 14, 0), r) for d, r in FOMC]
     evs += [('copom', 'Decisão do Copom', brt(d, 18, 30), r) for d, r in COPOM]
-    evs += ibge(9256, 'IPCA', 'ipca') + ibge(9260, 'IPCA-15', 'ipca-15')
+    ipca = ibge(9256, 'IPCA', 'ipca')
+    evs += ipca or [('ipca', f'IPCA ({ref(d)})', brt(d, 9, 0), None) for d in IPCA]
+    evs += ibge(9260, 'IPCA-15', 'ipca-15')
     try:
         bs = {'win': barras('%5EBVSP'), 'wdo': barras('BRL%3DX')}
     except Exception as e:
