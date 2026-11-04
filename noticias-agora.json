@@ -1,7 +1,20 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T10:15-03:00",
+  "atualizado_em": "2026-11-04T10:18-03:00",
+  "ibov": {
+   "anterior": 165528.92,
+   "pontos": [
+    [
+     "10:00",
+     165584.0
+    ],
+    [
+     "10:03",
+     165632.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.4883,
    "pontos": [
@@ -67,7 +80,11 @@
     ],
     [
      "10:15",
-     5.4641
+     5.462
+    ],
+    [
+     "10:18",
+     5.4581
     ]
    ]
   },
@@ -83,6 +100,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.17
    },
    {
@@ -95,6 +113,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.14
    },
    {
@@ -109,6 +128,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.06
    },
    {
@@ -121,6 +141,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.05
    },
    {
@@ -134,6 +155,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.05
    },
    {
@@ -146,6 +168,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.02
    },
    {
@@ -159,6 +182,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.03
    },
    {
@@ -175,6 +199,7 @@
      "KLBN11",
      "SMAL11"
     ],
+    "ibov30": null,
     "dolar30": -0.03
    },
    {
@@ -188,6 +213,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.2
    },
    {
@@ -201,7 +227,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.27
    },
    {
     "hora": "09:53",
@@ -214,7 +241,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.27
    },
    {
     "hora": "09:56",
@@ -227,6 +255,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -789,7 +818,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T10:15-03:00",
+ "atualizado_em": "2026-11-04T10:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
