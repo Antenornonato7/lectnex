@@ -1,4 +1,5 @@
-# Agora no mercado: manchetes recentes e de maior impacto (coletor/noticias.py). Horário: coletor/relogio.py (a cada ~10 min, 6h–23h).
+# Agora no mercado: coleta manchetes a cada 2,5 min durante ~9 min por execução (o Relógio dispara a cada ~10 min, 6h–23h59).
+# Publica no branch 'ao-vivo' (sem build do Pages); a cópia em data/ na main é atualizada a cada ~30 min, como reserva.
 name: Notícias agora
 
 on:
@@ -14,13 +15,17 @@ concurrency:
 jobs:
   noticias:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 14
     steps:
       - uses: actions/checkout@v4
-      - name: Coletar manchetes
+      - name: Coletar manchetes (laço de ~9 min)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LOOP_MIN: "9"
         run: python3 coletor/noticias.py
-      - name: Publicar
+      - name: Atualizar a cópia de reserva na main (a cada ~30 min)
         run: |
+          [ $(( $(date +%M | sed 's/^0//') % 30 )) -lt 10 ] || exit 0
           git config user.name "lectnex-bot"
           git config user.email "bot@lectnex.com.br"
           git add data/noticias-agora.json 2>/dev/null || exit 0
