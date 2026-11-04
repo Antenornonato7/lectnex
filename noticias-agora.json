@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T11:00-03:00",
+  "atualizado_em": "2026-11-04T11:03-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -43,7 +43,11 @@
     ],
     [
      "10:45",
-     167392.0
+     167282.0
+    ],
+    [
+     "10:48",
+     167282.0
     ]
    ]
   },
@@ -148,7 +152,11 @@
     ],
     [
      "11:00",
-     5.4685
+     5.4715
+    ],
+    [
+     "11:03",
+     5.4747
     ]
    ]
   },
@@ -309,6 +317,21 @@
     "dolar30": -0.2
    },
    {
+    "hora": "09:38",
+    "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.2
+   },
+   {
     "hora": "09:52",
     "titulo": "Taxas do Tesouro Direto recuam seguindo exterior após “midterms” e antes do Copom",
     "fonte": "InfoMoney",
@@ -362,7 +385,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": 0.15,
+    "ibov30": 0.08,
     "dolar30": 0.07
    },
    {
@@ -376,7 +399,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.1,
     "dolar30": 0.05
    },
    {
@@ -392,7 +415,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.2
    },
    {
     "hora": "10:40",
@@ -987,6 +1010,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
+   "publicado": "2026-11-04T09:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Taxas do Tesouro Direto recuam seguindo exterior após “midterms” e antes do Copom",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQmJnMXBlNWJCX3czX3B1eFlzQ2xMbjB6YU1CT1VKTjRRMDltLWxlVFhWSGFxRG4yeWRHcFpJRzRmcXJhd3B2RmIzWW5od185enVoU0kzWVk1YVZESE9mckR4RS1sUmpHSmtmU3lRcTFONGkyNTV5S2dUSEh6RVdpNF96NFNvbVNMN3Q5UGJlbFHSAZYBQVVfeXFMUHZ1azgwQzZfYTdQOFo0T2hNVGZhR0Z1b0hmT3FBMElyWFNTcUcxM3pzVnZYWmdDQzdBRWo5M1pDYzBkTzNVUnN5NWJmZW1mM2JoaFdiWVNuXy1JN09CWUpRbWZpVUtCaDFkTTVOaFEtSWx5LWNuV3JSLW1OQ21hMWFuaW1rZU9KY3BObGk1NzRFdEJ3UmtR?oc=5",
@@ -1150,7 +1186,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T11:00-03:00",
+ "atualizado_em": "2026-11-04T11:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1252,19 +1288,6 @@
    "tickers": []
   },
   {
-   "titulo": "Eve, da Embraer, fecha acordo com startup FlyBIS para venda de até 12 ‘carros voadores’",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/negocios/eve-air-mobility-acordo-flybis-venda-12-evtols-npr/",
-   "publicado": "2026-11-04T10:18-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
-  },
-  {
    "titulo": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
@@ -1294,6 +1317,19 @@
    "publicado": "2026-11-04T09:52-03:00",
    "impacto": "alto",
    "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
+   "publicado": "2026-11-04T09:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
