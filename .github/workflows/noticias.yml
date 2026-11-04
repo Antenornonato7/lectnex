@@ -3,7 +3,11 @@
 name: Notícias agora
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      minutos:
+        description: 'Duração do laço em minutos (0 = uma coleta só)'
+        default: '9'
 
 permissions:
   contents: write
@@ -21,7 +25,7 @@ jobs:
       - name: Coletar manchetes (laço de ~9 min)
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          LOOP_MIN: "9"
+          LOOP_MIN: ${{ inputs.minutos || '9' }}
         run: python3 coletor/noticias.py
       - name: Atualizar a cópia de reserva na main (a cada ~30 min)
         run: |

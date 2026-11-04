@@ -48,13 +48,13 @@ FONTES_OK = {'Reuters': 'Reuters', 'Valor Econômico': 'Valor', 'Valor': 'Valor'
              'Estadão': 'Estadão', 'Estadão E-Investidor': 'Estadão', 'O Globo': 'O Globo', 'CNN Brasil': 'CNN Brasil', 'Bloomberg Línea': 'Bloomberg Línea',
              'Bloomberg Línea Brasil': 'Bloomberg Línea', 'Agência Brasil': 'Agência Brasil', 'Exame': 'Exame', 'CNBC': 'CNBC', 'Money Times': 'Money Times'}
 # empresas → código (para ligar a manchete à cotação do dia)
-EMPRESAS = {'petrobras': 'PETR4', 'vale': 'VALE3', 'itau unibanco': 'ITUB4', 'itau': 'ITUB4', 'itausa': 'ITSA4', 'bradesco': 'BBDC4',
+EMPRESAS = {'petrobras': 'PETR4', 'itau unibanco': 'ITUB4', 'itau': 'ITUB4', 'itausa': 'ITSA4', 'bradesco': 'BBDC4',
             'banco do brasil': 'BBAS3', 'b3': 'B3SA3', 'eletrobras': 'ELET3', 'ambev': 'ABEV3', 'weg': 'WEGE3', 'suzano': 'SUZB3',
             'localiza': 'RENT3', 'magazine luiza': 'MGLU3', 'magalu': 'MGLU3', 'gerdau': 'GGBR4', 'prio': 'PRIO3', 'petrorio': 'PRIO3',
             'rede d\'or': 'RDOR3', 'btg pactual': 'BPAC11', 'btg': 'BPAC11', 'hapvida': 'HAPV3', 'sabesp': 'SBSP3', 'cemig': 'CMIG4',
             'csn mineracao': 'CMIN3', 'cosan': 'CSAN3', 'equatorial': 'EQTL3', 'eneva': 'ENEV3', 'klabin': 'KLBN11', 'renner': 'LREN3',
-            'raia drogasil': 'RADL3', 'raiadrogasil': 'RADL3', 'tim': 'TIMS3', 'totvs': 'TOTS3', 'ultrapar': 'UGPA3', 'vibra': 'VBBR3',
-            'vivo': 'VIVT3', 'telefonica brasil': 'VIVT3', 'assai': 'ASAI3', 'bb seguridade': 'BBSE3', 'caixa seguridade': 'CXSE3'}
+            'raia drogasil': 'RADL3', 'raiadrogasil': 'RADL3', 'tim brasil': 'TIMS3', 'totvs': 'TOTS3', 'ultrapar': 'UGPA3', 'vibra energia': 'VBBR3',
+            'telefonica brasil': 'VIVT3', 'embraer': 'EMBR3', 'braskem': 'BRKM5', 'azul': 'AZUL4', 'gol linhas': 'GOLL4', 'assai': 'ASAI3', 'bb seguridade': 'BBSE3', 'caixa seguridade': 'CXSE3'}
 
 
 def norm(s):
@@ -129,7 +129,12 @@ def ler_gn(url):
     with urllib.request.urlopen(req, timeout=20) as r:
         raiz = ET.fromstring(r.read())
     out = []
-    for it in raiz.findall('.//item')[:60]:
+    itens = raiz.findall('.//item')[:60]
+    if not getattr(ler_gn, 'avisou', False):
+        from collections import Counter
+        print('::notice::Google Notícias (1ª consulta): ' + str(len(itens)) + ' itens; fontes: ' + ', '.join(f'{k} ({v})' for k, v in Counter((i.findtext('source') or '?').strip() for i in itens).most_common(12)))
+        ler_gn.avisou = True
+    for it in itens:
         fonte = (it.findtext('source') or '').strip()
         nome = FONTES_OK.get(fonte)
         if not nome:
@@ -146,8 +151,11 @@ def tickers(titulo):
     t = ' ' + norm(titulo) + ' '
     achados = set(re.findall(r'\b([A-Z]{4}(?:3|4|5|6|11))\b', titulo))
     for nome, tk in EMPRESAS.items():
-        if re.search(r'(?<![a-z0-9])' + re.escape(nome) + r'(?![a-z0-9])', t):
+        if re.search(r'(?<![a-z0-9-])' + re.escape(nome) + r'(?![a-z0-9-])', t):
             achados.add(tk)
+    # "Vale" só com maiúscula e fora de expressões comuns ("vale a pena", "vale-refeição")
+    if re.search(r'(?<![\w-])Vale(?![\w-])(?!\s+a\s+pena)', titulo):
+        achados.add('VALE3')
     return sorted(achados)[:3]
 
 
