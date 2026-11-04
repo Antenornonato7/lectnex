@@ -32,14 +32,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261103c">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261103d">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261103c">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261103c">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261103d">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261103d">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -84,7 +84,7 @@
             <div id="pn-acoes" class="hidden -mt-2 mb-4 term-panel px-4 py-2 font-mono text-xs flex items-center gap-x-4 gap-y-1 flex-wrap"></div>
             <nav class="flex gap-1.5 overflow-x-auto thin-scroll pb-1 mb-4 font-mono text-[11px]" aria-label="Seções da página">
                 <a href="#leitura" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Leitura do Dia</a>
-                <a href="#noticias" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Calendário e notícias</a>
+                <a href="#noticias" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Calendário</a>
                 <a href="#mapa" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Mapa da bolsa</a>
                 <a href="#agenda" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Vencimentos e câmbio</a>
                 <button type="button" id="pn-open" class="shrink-0 order-first sm:order-none sm:ml-auto px-2.5 py-1 border border-lect-teal/60 text-lect-teal hover:bg-lect-teal/10 inline-flex items-center gap-1.5"><i class="ph-bold ph-sliders-horizontal"></i>Personalizar</button>
@@ -99,10 +99,10 @@
                     <span class="src-tag block mt-1" data-lx="selic-src"></span>
                 </div>
                 <div class="term-panel p-4 border-t-2 border-t-lect-teal">
-                    <span class="term-label">CDI / TAXA DI</span>
-                    <strong class="text-2xl font-bold text-lect-teal block mt-1" data-lx="cdi">—</strong>
-                    <span class="text-[11px] text-slate-500">Base 252 dias úteis</span>
-                    <span class="src-tag block mt-1" data-lx="cdi-src"></span>
+                    <span class="term-label">IBOVESPA</span>
+                    <strong id="kpi-ibov" class="text-2xl font-bold block mt-1">—</strong>
+                    <span id="kpi-ibov-pct" class="text-[11px]">—</span>
+                    <span id="kpi-ibov-src" class="src-tag block mt-1">BRAPI · ATRASO ~30 MIN</span>
                 </div>
                 <div class="term-panel p-4 border-t-2 border-t-emerald-500">
                     <span class="term-label">IPCA 12 MESES</span>
@@ -119,14 +119,14 @@
                 <div class="term-panel p-4 border-t-2 border-t-lect-orange">
                     <span class="term-label">DÓLAR COMERCIAL</span>
                     <strong class="text-2xl font-bold text-lect-orange block mt-1">R$ <span data-lx="usd">—</span></strong>
-                    <span class="text-[11px]"><span data-lx="usd-pct"></span> <span class="text-slate-500">· PTAX <span data-lx="ptax">—</span></span></span>
-                    <span class="src-tag block mt-1">AWESOMEAPI · BCB PTAX</span>
+                    <span class="text-[11px]"><span data-lx="usd-pct"></span> <span class="text-slate-500">· à vista, ao vivo</span></span>
+                    <span class="src-tag block mt-1">AWESOMEAPI</span>
                 </div>
                 <div class="term-panel p-4 border-t-2 border-t-amber-400">
-                    <span class="term-label">BITCOIN (R$)</span>
-                    <strong id="kpi-btc" data-lx-skel="fx" class="lx-skel text-2xl font-bold block mt-1">—</strong>
-                    <span id="kpi-btc-pct" data-lx-skel="fx" class="lx-skel text-[11px]">—</span>
-                    <span class="src-tag block mt-1">AWESOMEAPI · 24H</span>
+                    <span class="term-label">PTAX (VENDA)</span>
+                    <strong class="text-2xl font-bold block mt-1">R$ <span data-lx="ptax-v">—</span></strong>
+                    <span class="text-[11px] text-slate-500">Referência oficial do WDO · <span data-lx="ptax-d"></span></span>
+                    <span class="src-tag block mt-1">BANCO CENTRAL</span>
                 </div>
             </div>
         </div>
@@ -187,14 +187,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
                 <div>
-                    <span class="term-label text-lect-orange font-bold">FEED DE NOTÍCIAS &amp; INDICADORES</span>
-                    <h2 class="font-display text-2xl font-bold">Notícias e Calendário Econômico</h2>
+                    <span class="term-label text-lect-orange font-bold">CALENDÁRIO ECONÔMICO</span>
+                    <h2 class="font-display text-2xl font-bold">O que mexe no preço esta semana</h2>
                 </div>
-                <span class="text-xs text-slate-500 max-w-md">Feed de notícias em tempo real (TradingView) e calendário filtrado para quem opera WIN, WDO e DI, atualizado todo dia pela Leitura do Dia.</span>
+                <span class="text-xs text-slate-500 max-w-md">Só os dados que movem WIN, WDO e DI, em horário de Brasília, com anterior, consenso e resultado. Atualizado todo dia pela Leitura do Dia.</span>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                <div class="lg:col-span-6 term-panel h-[560px] overflow-hidden" id="tv-news"></div>
-                <div class="lg:col-span-6 term-panel h-[560px] overflow-hidden flex flex-col" id="cal-wrap">
+                <div class="lg:col-span-12 term-panel h-[560px] overflow-hidden flex flex-col" id="cal-wrap">
                     <div class="flex items-center justify-between gap-2 px-4 py-3 border-b border-slate-200 dark:border-lect-borderDark">
                         <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-calendar-check text-lect-orange"></i>Calendário que mexe no WIN e WDO</span>
                         <span id="cal-when" class="font-mono text-[10px] text-slate-500"></span>
@@ -267,7 +266,7 @@
             <!-- CÂMBIO & CRIPTO -->
             <div id="cambio" class="lg:col-span-5 term-panel overflow-hidden scroll-mt-28">
                 <div class="panel-head">
-                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-currency-circle-dollar text-lect-orange"></i>Câmbio &amp; Cripto</span>
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-currency-circle-dollar text-lect-orange"></i>Câmbio</span>
                     <span id="fx-time" class="font-mono text-[10px] text-emerald-400">—</span>
                 </div>
                 <div class="quote-row quote-head font-mono uppercase tracking-wider"><span>Par</span><span>Cotação</span><span>Var 24h</span><span>Mín / Máx</span></div>
@@ -293,7 +292,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261103c"></script>
+    <script src="assets/lectnex-core.js?v=20261103d"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -318,7 +317,6 @@
             }).catch(() => { });
         }
         agora(); setInterval(agora, 2 * 6e4);
-        LX.tv('tv-news', 'timeline', { feedMode: 'all_symbols', displayMode: 'regular', width: '100%', height: '100%' });
         /* ---------- Placar do termômetro: transparência sobre acertos e erros ---------- */
         fetch('data/placar-termometro.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(pl => {
             const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(d => d && d.data && (d.win || d.wdo));
@@ -684,7 +682,7 @@
         document.getElementById('next-copom').textContent = nextCopom ? `${LX.br(nextCopom)} (${LX.businessDaysBetween(today, nextCopom, true)} DU)` : 'calendário 2027 a publicar';
 
         /* ---------- Câmbio ---------- */
-        const FX_ROWS = [['USDBRL', 'Dólar comercial', 4], ['EURBRL', 'Euro', 4], ['GBPBRL', 'Libra', 4], ['CNYBRL', 'Yuan', 4], ['ARSBRL', 'Peso argentino', 5], ['EURUSD', 'EUR/USD', 4], ['USDJPY', 'USD/JPY', 2], ['BTCBRL', 'Bitcoin', 0], ['ETHBRL', 'Ethereum', 0]];
+        const FX_ROWS = [['USDBRL', 'Dólar comercial', 4], ['EURBRL', 'Euro', 4], ['GBPBRL', 'Libra', 4], ['CNYBRL', 'Yuan', 4], ['ARSBRL', 'Peso argentino', 5], ['EURUSD', 'EUR/USD', 4], ['USDJPY', 'USD/JPY', 2]];
         const lastFx = {};
         document.addEventListener('lx:fx', () => {
             const fx = LX.data.fx;
@@ -701,13 +699,19 @@
                 document.getElementById('fx-time').textContent = 'ATUALIZADO ' + u.time.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo' }) + ' BRT';
                 document.getElementById('fx-wdo-eq').textContent = LX.num(u.bid * 1000, 1);
             }
-            const b = fx.BTCBRL;
-            if (b) {
-                document.getElementById('kpi-btc').textContent = 'R$ ' + LX.num(b.bid / 1000, 1) + ' mil';
-                const el = document.getElementById('kpi-btc-pct'); el.textContent = LX.pct(b.pct, 2, true); el.className = 'text-[11px] font-semibold ' + LX.signClass(b.pct);
-            }
             renderSummary();
         });
+
+        /* ---------- Ibovespa (data/cotacoes.json, brapi, ~30 min de atraso) ---------- */
+        function kpiIbov() {
+            fetch('data/cotacoes.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => {
+                const i = c && (c.itens || []).find(x => x.ticker === 'IBOV'); if (!i) return;
+                document.getElementById('kpi-ibov').textContent = LX.num(i.preco, 0);
+                const el = document.getElementById('kpi-ibov-pct'); el.textContent = LX.pct(i.var_pct, 2, true); el.className = 'text-[11px] font-semibold ' + LX.signClass(i.var_pct);
+                if (i.hora) document.getElementById('kpi-ibov-src').textContent = 'BRAPI · ' + new Date(i.hora).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo', weekday: 'short', hour: '2-digit', minute: '2-digit' }).replace('.', '').toUpperCase();
+            }).catch(() => { });
+        }
+        kpiIbov(); setInterval(kpiIbov, 5 * 6e4);
 
         /* ---------- Resumo do dia gerado a partir dos dados ---------- */
         function renderSummary() {

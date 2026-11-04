@@ -346,9 +346,10 @@
             real: d.realRate != null ? LX.pct(d.realRate) : LX.pct(((1 + d.selic.value / 100) / (1 + d.ipca12m.value / 100) - 1) * 100),
             usd: usd ? LX.num(usd.bid, 4) : '—',
             'usd-pct': usd ? LX.pct(usd.pct, 2, true) : '',
-            ptax: d.ptax ? `${LX.num(d.ptax.sell, 4)} (${d.ptax.date})` : '—'
+            ptax: d.ptax ? `${LX.num(d.ptax.sell, 4)} (${d.ptax.date})` : '—',
+            'ptax-v': d.ptax ? LX.num(d.ptax.sell, 4) : '—', 'ptax-d': d.ptax ? d.ptax.date : ''
         };
-        const waiting = { usd: !usd && !d.fxTried, 'usd-pct': !usd && !d.fxTried, ptax: !d.ptax && !d.ptaxTried };
+        const waiting = { usd: !usd && !d.fxTried, 'usd-pct': !usd && !d.fxTried, ptax: !d.ptax && !d.ptaxTried, 'ptax-v': !d.ptax && !d.ptaxTried };
         Object.entries(map).forEach(([k, v]) => document.querySelectorAll(`[data-lx="${k}"]`).forEach(el => { el.textContent = v; el.classList.toggle('lx-skel', !!waiting[k]); }));
         if (d.fxTried || usd) document.querySelectorAll('[data-lx-skel="fx"]').forEach(el => el.classList.remove('lx-skel'));
         if (usd) document.querySelectorAll('[data-lx="usd-pct"]').forEach(el => el.className = LX.signClass(usd.pct));
@@ -560,7 +561,7 @@
         ['mercado', 'ESE', 'E se…? Mapa de reações', 'Como Copom, IPCA, Fed e fiscal chegam ao WIN e WDO', 'macro.html#educacao', 'ph-git-branch', 'cenario reacao noticia transmissao copom ipca fed payroll fiscal china e se'],
         ['mercado', 'REGIME', 'Regimes de risco', 'Risk-on, risk-off e como os ativos reagem', 'macro.html#regimes', 'ph-gauge', 'regime risco risk on off aversao apetite intermercado'],
         ['mercado', 'MAPA', 'Mapa de calor da B3', 'Ações do Ibovespa por setor, coloridas pela variação do dia', 'index.html#mapa', 'ph-squares-four', 'mapa calor heatmap setores acoes ibovespa fluxo variacao'],
-        ['mercado', 'NEWS', 'Notícias', 'Manchetes do mercado', 'index.html#noticias', 'ph-newspaper', 'noticias manchetes'],
+        ['mercado', 'NEWS', 'Agora no mercado', 'Manchetes de maior impacto, a cada ~10 min', 'index.html#ultimas', 'ph-newspaper', 'noticias manchetes'],
         ['acoes', 'DONOS', 'Quem é dono da ação', 'Fundos com a ação na carteira (CVM)', 'acoes.html#donos', 'ph-users-three', 'fundos donos carteira cvm'],
         ['acoes', 'OPC', 'Laboratório de opções', 'Strangle, venda de call e de put', 'acoes.html#opcoes', 'ph-flask', 'opcoes call put strangle'],
         ['acoes', 'FLUXO', 'Fluxo estrangeiro', 'Entrada de capital estrangeiro em ações', 'acoes.html#fluxo', 'ph-arrows-down-up', 'fluxo estrangeiro captacao gringo'],
