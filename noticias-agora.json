@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T12:18-03:00",
+  "atualizado_em": "2026-11-04T12:30-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -103,11 +103,19 @@
     ],
     [
      "12:00",
-     167386.0
+     167203.0
     ],
     [
-     "12:03",
-     167178.0
+     "12:05",
+     167209.0
+    ],
+    [
+     "12:10",
+     167356.0
+    ],
+    [
+     "12:15",
+     167438.0
     ]
    ]
   },
@@ -275,8 +283,16 @@
      5.4771
     ],
     [
-     "12:18",
-     5.4762
+     "12:20",
+     5.4798
+    ],
+    [
+     "12:25",
+     5.4806
+    ],
+    [
+     "12:30",
+     5.4781
     ]
    ]
   },
@@ -701,7 +717,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": -0.15
    },
    {
@@ -717,7 +733,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.1
    },
    {
     "hora": "12:01",
@@ -730,7 +746,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.02
    },
    {
     "hora": "12:02",
@@ -745,7 +761,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.02
    },
    {
     "hora": "12:06",
@@ -772,6 +788,50 @@
     "tickers": [
      "POMO4"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:17",
+    "titulo": "Cade aprova fusão bilionária questionada pela Petrobras no setor de óleo e gás, mas impõe restrição",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/cade-aprova-fusao-bilionaria-questionada-pela-petrobras-no-setor-de-oleo-e-gas-mas-impoe-restricao.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:20",
+    "titulo": "BB Seguridade: lucro do 3T26 supera expectativas, mas mercado vê risco à frente e ação tomba",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSnpSVGVaV1pmNnpvTGxUSjVLYUdPUDh4TW13S004d2wtTGdnYVdqY200endKbEZ2Tm41YXhFUXpQVnFTT3I0bVpFMkNUSHh2c3ZXNWFJQmJTWVc1MklzbElaa1lNbVE3U24xNlRpeUJvOTB5QWRPcE1uQW9xLXJKdTNzRjNrWU9PNXFjT3dLb25jTG5UVFE2UlpfcXoxQWJQakpUVmU3c0hYQmN3Qk1sZktIQnBaYVNKMDNWU0sxS2NvMXkwRXJNSGRhVVY4djhpX2dlVzRPUkI1SnpHTWN0SjhXb9IB6AFBVV95cUxPblVPdlpRRlNkR1R0ZFkzLTczRGVWS3pnVHR1dGVpSEdfWTc5cW1qZ3VHOTBOcERqRVplR2NZcXR0dXZYZ3hTaWlldWhiT0k2aHRZXzVLMEJnalhrTk9MTHNSNmpmZGNpUUh6ckZZM0JkeU5mdWR3RXhubWs4N0ZsOHI5eVg5MGU1dnVpS3BJem4tcXk1Y0Vsa1FHcUhJX0ZCRjc3SEQ2Y3BpWWRJRHpCTTNYblV1ZVJvdzZ1MVpodDdPd0NEdWs4dnNIOTBZMWVELUpTQUNJeWhIX2pEaFFIZWxCRzNJU2dB?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBSE3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:21",
+    "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1585,6 +1645,44 @@
    "tickers": [
     "POMO4"
    ]
+  },
+  {
+   "titulo": "Cade aprova fusão bilionária questionada pela Petrobras no setor de óleo e gás, mas impõe restrição",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/cade-aprova-fusao-bilionaria-questionada-pela-petrobras-no-setor-de-oleo-e-gas-mas-impoe-restricao.shtml",
+   "publicado": "2026-11-04T12:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "BB Seguridade: lucro do 3T26 supera expectativas, mas mercado vê risco à frente e ação tomba",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSnpSVGVaV1pmNnpvTGxUSjVLYUdPUDh4TW13S004d2wtTGdnYVdqY200endKbEZ2Tm41YXhFUXpQVnFTT3I0bVpFMkNUSHh2c3ZXNWFJQmJTWVc1MklzbElaa1lNbVE3U24xNlRpeUJvOTB5QWRPcE1uQW9xLXJKdTNzRjNrWU9PNXFjT3dLb25jTG5UVFE2UlpfcXoxQWJQakpUVmU3c0hYQmN3Qk1sZktIQnBaYVNKMDNWU0sxS2NvMXkwRXJNSGRhVVY4djhpX2dlVzRPUkI1SnpHTWN0SjhXb9IB6AFBVV95cUxPblVPdlpRRlNkR1R0ZFkzLTczRGVWS3pnVHR1dGVpSEdfWTc5cW1qZ3VHOTBOcERqRVplR2NZcXR0dXZYZ3hTaWlldWhiT0k2aHRZXzVLMEJnalhrTk9MTHNSNmpmZGNpUUh6ckZZM0JkeU5mdWR3RXhubWs4N0ZsOHI5eVg5MGU1dnVpS3BJem4tcXk1Y0Vsa1FHcUhJX0ZCRjc3SEQ2Y3BpWWRJRHpCTTNYblV1ZVJvdzZ1MVpodDdPd0NEdWs4dnNIOTBZMWVELUpTQUNJeWhIX2pEaFFIZWxCRzNJU2dB?oc=5",
+   "publicado": "2026-11-04T12:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBSE3"
+   ]
+  },
+  {
+   "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
+   "publicado": "2026-11-04T12:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1614,7 +1712,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T12:18-03:00",
+ "atualizado_em": "2026-11-04T12:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1630,6 +1728,67 @@
  ],
  "noticias": [
   {
+   "titulo": "10-year Treasury yield is little changed as traders mull over Democrats' midterm victories",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
+   "publicado": "2026-11-04T12:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Prologis CEO says warehouse demands are shifting fast. Here's how he's keeping up",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/prologis-ceo-says-warehouse-demands-are-shifting-how-hes-keeping-up.html",
+   "publicado": "2026-11-04T12:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
+   "publicado": "2026-11-04T12:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "BB Seguridade: lucro do 3T26 supera expectativas, mas mercado vê risco à frente e ação tomba",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSnpSVGVaV1pmNnpvTGxUSjVLYUdPUDh4TW13S004d2wtTGdnYVdqY200endKbEZ2Tm41YXhFUXpQVnFTT3I0bVpFMkNUSHh2c3ZXNWFJQmJTWVc1MklzbElaa1lNbVE3U24xNlRpeUJvOTB5QWRPcE1uQW9xLXJKdTNzRjNrWU9PNXFjT3dLb25jTG5UVFE2UlpfcXoxQWJQakpUVmU3c0hYQmN3Qk1sZktIQnBaYVNKMDNWU0sxS2NvMXkwRXJNSGRhVVY4djhpX2dlVzRPUkI1SnpHTWN0SjhXb9IB6AFBVV95cUxPblVPdlpRRlNkR1R0ZFkzLTczRGVWS3pnVHR1dGVpSEdfWTc5cW1qZ3VHOTBOcERqRVplR2NZcXR0dXZYZ3hTaWlldWhiT0k2aHRZXzVLMEJnalhrTk9MTHNSNmpmZGNpUUh6ckZZM0JkeU5mdWR3RXhubWs4N0ZsOHI5eVg5MGU1dnVpS3BJem4tcXk1Y0Vsa1FHcUhJX0ZCRjc3SEQ2Y3BpWWRJRHpCTTNYblV1ZVJvdzZ1MVpodDdPd0NEdWs4dnNIOTBZMWVELUpTQUNJeWhIX2pEaFFIZWxCRzNJU2dB?oc=5",
+   "publicado": "2026-11-04T12:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBSE3"
+   ]
+  },
+  {
+   "titulo": "Cade aprova fusão bilionária questionada pela Petrobras no setor de óleo e gás, mas impõe restrição",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/cade-aprova-fusao-bilionaria-questionada-pela-petrobras-no-setor-de-oleo-e-gas-mas-impoe-restricao.shtml",
+   "publicado": "2026-11-04T12:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Marcopolo (POMO4) cai após frustração com balanço do 3T26",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSFN5MmtwdmduMnhOWUxBbnJ0QVdxRGVxSVRFNXBBZ19XbUtESXNhZkt2a2pYd3puTExxLWVPZENyN0hxY3lmVjctMU91MUxlekFuWklXVWtmV1FYNVVFMzVocnVGdEE1YmNfSmJkU0t5YXBfb0NZU0ZYWHBJRGtuWWI4Q1BZWDRzUlV6dlYwTjdJbUpFUGJ3YTZ4ay1qRDZa0gGmAUFVX3lxTE8zd2x4ajBxSWlxeGF2a0k4RTdnY2llTjVJSWZqeG9MREl6REg3UkpLOURsYU9uMlUyX3lFZ1p2QnRiVHdpbHg0a29hWHExM3J0bFNTb0ZPTWRMT2ctTlRoMUxQYnhUZDFPZmdpU2tjUmdabFo3NmFZWTRrTkVSYnVobC1sUEpkVTgybHNTSnYtUlhCYlYxc2x6SWNqN01LQXoteGhZTUE?oc=5",
@@ -1643,14 +1802,13 @@
    ]
   },
   {
-   "titulo": "Property Play: Prologis CEO says warehouse demands are shifting fast. Here's how he's keeping up",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/04/prologis-ceo-says-warehouse-demands-are-shifting-how-hes-keeping-up.html",
-   "publicado": "2026-11-04T12:05-03:00",
+   "titulo": "Vamos salta mais de 7% e lidera ganhos do Ibovespa hoje; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQem1tamdfR3htTDMzSmw3UlRrbnNIWWJNVmFQR0Mwa015VHdvS3AtbHdNNG4tVWtnUnViaWNwaG5mX2pkVWl6SkVVQTVWSHNRZFI0ZkJEYk1LS1RKQW1Zd1h1NVNZZ0wyd05sWU5Kd3dwbWstMnp1aW5IY3EzT0k4MWRVbkNrTVpGLWRSYW9VajhVejM0cTlWaFgtN2VlRHhSNnZtTm5CSTRoM2RhZzhnbHJ3V09rWk9mMUdYa3J0bnRJS1lnbXh0X2ZtTmV3d3RYRmVrZUg5N1hYS001MFNMWEtZWQ?oc=5",
+   "publicado": "2026-11-04T12:06-03:00",
    "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO"
+    "WIN"
    ],
    "tickers": []
   },
@@ -1668,29 +1826,6 @@
    ]
   },
   {
-   "titulo": "Vamos salta mais de 7% e lidera ganhos do Ibovespa hoje; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOS1hzdi1oVFRLeVg0STNTaUF5N2ljM2FLMmRudDN3ZURUZ29XaDNER01EU0pqQzdHUG9sbHRFTzRvSkY3a1V3ZW4zZTlJWUNGLWNWa0NINEgzY2dlUkc4eDV5a0ZFUmFBQ2QybHlINTRUdm5aWVVnLXB2S1RVdE5aWUFvbjJYMFhnOWhVQmtuT25uVUhydV95U0xEakMzVWVMZVhHaW1vWEQ4dFN1OTRFWk5fTENsWUdpR25PNnNpa0M0OU9oakk0UDFNUzdzUmFkemdZUFAtX1XSAd4BQVVfeXFMTXoxaDNBYnJrMW1UMjhSLTRtekxEVU16SThoY01wNllLbVdlRUJwdzdKcFpjempmVGF1aG1GWUtIdlktOVVkZzlOQ24zcjB3WUE3UVlRRHY4aWtPaUJjdFNFQWg4ck1tR0ZxNWtCTkltTUJ4WU4wcExNSVRHWWt1UHpIX2lSYmRqRDNPc1hRc3JfNVZQenFkUHFXOGxlS1dzSGsxcEUxMzd6WXVHTWJObk51SFpCaHVzNkUydDNDQm8tMGZyZS12UmlqUkYwdWw4TGlVc3BGX3dQVjF0SzVR?oc=5",
-   "publicado": "2026-11-04T12:01-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Petróleo recua mais de 3% após eleições para Congresso dos EUA",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQa0xuZjd2UExyMU5LMnFtZ0NJTE9BLWpQWktSNXpoT09oUHlBZDdvUHMwdE9NMEtXS2dSYlpSZlpYdldHNnNWcmZSNVFlRTRSN05La081Y3JJQ1dmdWhnQUNfdzlBN2VuVzE5UWRhdUtYYWJGcEZ0V0g5YXlLUkNUb2d2dWNOdVNLVEdzN9IBkgFBVV95cUxPOC00OVJEOXlqMEg4aDhZNVdod3QxN0tNTTBwS2k1QlVsUm5LRVhVR2VaVFdReTJoby1LaVBXNXprRWZNZ1VQS3NrdGs2dUozOHNKbngtX3cxZ3ZwQkpRanRyUm5RTlZFQU9leDBUb3NtcnRVQ01iRXIwSVBBN1RLcnRSUkJVbnFlamtlSUE5Rms3QQ?oc=5",
-   "publicado": "2026-11-04T11:54-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa ensaia recuperação após seis quedas com bom humor global em dia de Copom",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnVudWxxdmc3bTNQQnMxV3JwRVJwdlZfQ3dDdjZtNk9US3RvSHhKRlA1UlJXMDdNejA3V0lCYUZ3MkZob0NraThFTlN2b19sbEF1VkcyNndzbEFfYjZPbmtTNVRSN1NaZkNwSDFiTVVSUDcwOERvbDhmNjB2OFRWeTNUczB3ZVdlQlRucUJXTkNXZER4MUs3WXM3M2pncWI0c0dkMWNEXzNUT1Q0RV80T3JsV0psMlk?oc=5",
@@ -1699,17 +1834,6 @@
    "ativos": [
     "WIN",
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "10-year Treasury yield slips after Democrats win House and Senate majorities",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-   "publicado": "2026-11-04T11:53-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -1749,18 +1873,6 @@
    "tickers": []
   },
   {
-   "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
-   "publicado": "2026-11-04T11:08-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa sobe 1% com Copom no radar; 5 coisas para saber antes de investir hoje (4)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQb0tTc3lIT1hKdF83UUk4UldzS282N3ljV1llYjctSXJmczQ0bm0yTXVIaHRpMEpUc3ItWENCRmhuNVRWQ29QYnBfVndqSzNLbWdlYzh1SEw5OFJpam5XYkd3R3k4YkdzV0VnTjZxNi1Hc1lLRUFvMXN6bGlKekNWaEtiblYxQTlwUXVLNkdEUnY4RjlOU2pnOHlsWUJocjdCc3dUX1RINHN6SjhDb3ROQ29qRHZmYmM4dGQw?oc=5",
@@ -1786,18 +1898,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "Mercado espera que Copom interrompa cortes na Selic e reconheça piora do cenário econômico",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOd1dURTM1RC1VVUppdnVNeGdfRXFnY0pGbEtVRnRBUFJiXzJHQ0R3S0wwRDRta0JJbS1URHlmX3hJS3B2aGgxd0dENTlZVklBSlRGM0dvd201YnpBZ2hEbnRzcmlrWDBsR1dMWU45eEh4Z1hWNlZ1TnBOc3VDMExWTmtqZ2FZMm93cVFBckwtdDRqbzlWellYMldjOHNKbE5MVHcwYXd5MXRVQnN1b2c0Szhvd0Vyd0p5SFRDd2xCS0NXOU9Nd1QtZnZlM1BGZWZwLS1td3JtUC0wUTU2THfSAewBQVVfeXFMUFJLQ1NDbk11VDRYUDJ0eFJvYldUV2JJWjJVcjltNWR6c01RU3dGYTI2VHc2cndnRm9oM1FMYTJ1b2dmdVVNel9Nc0dWTUFmOFRwVjNYVE1RM1hYRHZHdzF6d0FvT1RDVWJoRVVFdzZVclpob3ZRMXBsbjdfRU9hbXliQjBsWGZFWlBoUHQwamg4SzJhSUFjU1JCZk96VUR2YWVkWllEUDFxYlVUVGR6VV96ekpvV045NkRPRkxaSXhZM0FsQzRWdFhnWkVrVGFBclQtVEdCeE9NdE8zMkdpNWl5LU1pSjBVZGxVVlc?oc=5",
-   "publicado": "2026-11-04T10:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Ibovespa avança em meio à queda dos juros futuros e à espera do Copom",
