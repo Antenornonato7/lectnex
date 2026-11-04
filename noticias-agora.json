@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T16:48-03:00",
+  "atualizado_em": "2026-11-04T16:50-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -319,11 +319,11 @@
     ],
     [
      "16:30",
-     167191.0
+     167295.0
     ],
     [
-     "16:33",
-     167196.0
+     "16:35",
+     167356.0
     ]
    ]
   },
@@ -704,11 +704,11 @@
     ],
     [
      "16:45",
-     5.4557
+     5.4542
     ],
     [
-     "16:48",
-     5.4549
+     "16:50",
+     5.4522
     ]
    ]
   },
@@ -1322,6 +1322,21 @@
     "dolar30": -0.03
    },
    {
+    "hora": "14:11",
+    "titulo": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.02,
+    "dolar30": -0.04
+   },
+   {
     "hora": "14:46",
     "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
     "fonte": "Folha",
@@ -1389,7 +1404,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.02,
+    "ibov30": 0.08,
     "dolar30": -0.13
    },
    {
@@ -1426,19 +1441,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Após seis pregões de queda, Ibovespa espera Copom com mercado dividido sobre a Selic",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWXNNR2MtNE52Ny16dUVjNWUtUllBZW1mSlBmQ3lJbml3NUNyemRhaWwxTDdnUFBrV0VSYjdvSFR2TXJPamEyMDlkdDNmaFowRXdUckVPSzJpaUY5V1lKa3YzX0RkZnZIZ2JhR2RxX2dfdDY4QlYtcXhtTWF0cV9VbU92X2VkWHI1WUM1WFhrbnVpT0ZhM2oxWmo2UG5pVHc0SlYtMFRiZE9QMUFlalpDMEVwUTZ5TXM0cEFmcTRLSmlsZDIxNG15dnpwa04wSDVUWXQwOTJUTnZtUdIB3wFBVV95cUxPV1FZbktjOGVIVFF4UlVkeWk0TTJkblJjN1FuckZtVnJQcUs3QkVMVF9CM0dPYXVSRkx1YjlkMmdrLWNhdFliUV9iNFZOelY2S1hqTHdwVHYwNGZSUGtXTHJuOURrSzRiUWJORFpWbzllTWtGNTVoZVpmSG9RcVROSWNZWHZodXJrWGVJYU43WUdVRzRDUXdBREI5YXJOTGRNTERJR25BS3VFVWZ6UHNkdXphdVNxOWlhdlVfaHlSVTdvZFQzZEc0Tjd1eHdXQUFvZlpwRE5VQmpDeTFkVDJv?oc=5",
-   "publicado": "2026-11-04T04:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Após seis pregões de queda, Ibovespa espera Copom com mercado dividido sobre a Selic",
    "fonte": "Estadão",
@@ -2310,6 +2312,19 @@
    "tickers": []
   },
   {
+   "titulo": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
+   "publicado": "2026-11-04T14:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468021",
@@ -2425,7 +2440,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T16:48-03:00",
+ "atualizado_em": "2026-11-04T16:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2499,19 +2514,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Petrobras mantém estável preço do gás vendido a distribuidoras",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVVdKMVlyd1llcjhXRFNpbkVoblhCbU5rclhENmJRVjZhN1NoeVdqNHg5VTBCQVF3RF9zMmdMQ2pMSFZyc19MeUQxNlNXQzA3RzNTUENpWkpwa09XemEyZW9CbHdOemM5cVNRS3VJemx3VVIyZ3RqTklWMDVkbVBnZ1VuanF5ODQwa0tKQXRFUFc1QjRVd2dzRw?oc=5",
-   "publicado": "2026-11-04T14:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   },
   {
    "titulo": "Petróleo brent desaba até 9% com mercado de olho em conflito no Irã após midterms",
