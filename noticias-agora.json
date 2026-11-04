@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T11:30-03:00",
+  "atualizado_em": "2026-11-04T11:33-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -67,7 +67,11 @@
     ],
     [
      "11:15",
-     166954.0
+     166902.0
+    ],
+    [
+     "11:18",
+     166948.0
     ]
    ]
   },
@@ -196,7 +200,11 @@
     ],
     [
      "11:30",
-     5.4775
+     5.4791
+    ],
+    [
+     "11:33",
+     5.4798
     ]
    ]
   },
@@ -523,7 +531,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.26,
+    "ibov30": -0.29,
     "dolar30": 0.2
    },
    {
@@ -539,7 +547,7 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": null,
+    "ibov30": -0.15,
     "dolar30": 0.2
    },
    {
@@ -568,7 +576,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.03
+    "dolar30": 0.05
    },
    {
     "hora": "11:28",
@@ -1328,7 +1336,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T11:30-03:00",
+ "atualizado_em": "2026-11-04T11:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1346,7 +1354,7 @@
    "titulo": "Tesouro Direto hoje recua dos 8% reais antes do Copom; veja as taxas desta quarta-feira",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbVFuVVdoMU9NZEVJUVJFbWUxMk5BMjFKMnRDcDRoOVg0bjhmbE9lUEVidTFDYnFLdGJtVDVqWDNKb0g1d29JbHhNN3pNZzZlckdaN0tnZUp1Rk41NVJRNWIzd2xUMjBJZUVxcnlmRlZ2a3VRamdqUzJ5WDYxRDNnOWFILUxFQk5fY2dPWVdMdzU0ZVpsQjVLVS1neDdlWm53bmt4c2lNNklkTW1vZUlFSC1tUzJfSzh4NUVmajBzQ3BOQkRROVd5ekxjYk56NjlyR1U1LTE1alU5Ym1XeWhIdWNMWmR5dlE?oc=5",
-   "publicado": "2026-11-04T11:28-03:00",
+   "publicado": "2026-11-04T11:26-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1427,6 +1435,19 @@
    "tickers": []
   },
   {
+   "titulo": "Gerdau encerra produção de aço em unidade de Divinópolis, em Minas Gerais",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/negocios/gerdau-encerra-producao-aco-unidade-divinopolis-minas-gerais/",
+   "publicado": "2026-11-04T10:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GGBR4"
+   ]
+  },
+  {
    "titulo": "Mercado espera que Copom interrompa cortes na Selic e reconheça piora do cenário econômico",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOd1dURTM1RC1VVUppdnVNeGdfRXFnY0pGbEtVRnRBUFJiXzJHQ0R3S0wwRDRta0JJbS1URHlmX3hJS3B2aGgxd0dENTlZVklBSlRGM0dvd201YnpBZ2hEbnRzcmlrWDBsR1dMWU45eEh4Z1hWNlZ1TnBOc3VDMExWTmtqZ2FZMm93cVFBckwtdDRqbzlWellYMldjOHNKbE5MVHcwYXd5MXRVQnN1b2c0Szhvd0Vyd0p5SFRDd2xCS0NXOU9Nd1QtZnZlM1BGZWZwLS1td3JtUC0wUTU2THfSAewBQVVfeXFMUFJLQ1NDbk11VDRYUDJ0eFJvYldUV2JJWjJVcjltNWR6c01RU3dGYTI2VHc2cndnRm9oM1FMYTJ1b2dmdVVNel9Nc0dWTUFmOFRwVjNYVE1RM1hYRHZHdzF6d0FvT1RDVWJoRVVFdzZVclpob3ZRMXBsbjdfRU9hbXliQjBsWGZFWlBoUHQwamg4SzJhSUFjU1JCZk96VUR2YWVkWllEUDFxYlVUVGR6VV96ekpvV045NkRPRkxaSXhZM0FsQzRWdFhnWkVrVGFBclQtVEdCeE9NdE8zMkdpNWl5LU1pSjBVZGxVVlc?oc=5",
@@ -1505,18 +1526,6 @@
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSTB5TWZuS3hSZnRxTHZveHQtMTN5WWVPTUhXNmZzdHZRVy1lcGx1bnVmbTRXOVpKdU5JXzlrOUFncVV2ZWNqZTFqX1Jmc3UtSkk3Sm1EM2owQzh5MXBadDA2ME1zb0luSC1IdGRmNlczNEUzWUo2SmpyRUJuVzVXV25GRkFSb0swSHFzVkt4cktPZzh0dEtJZno2cmtuaUJ4czFVOU45VHpxaGlBeEhCb3Y2QnVyX0N6anpNajJaMWNYdU53OTlvQm5pN0FrRk1SS2ZSTdIB4wFBVV95cUxOSHhwUlZxSWllSGs3aFFVR1E5eUNwaU90TDRHRjdxSW9hZWx6dGdwem5RMVJIWU9xUGpXcWJFZkhZd0RDdmJnQ3BPN3QwZ3J3V01JMXNUQkVDMjhocWNKM0cwd0kwUldYdUVwaDdseTI2V0Q5VDJiZ1pQYkNPT3V2OVhVamtoejI4WkxteVgxS0t0MUhkUTU5QTFaN055ZjRjZkxfd0Qtb3JpMXczRnpFcWExdnROc3hraC1STnkxV3g0ZW5tSDZTdGRsbk9aY3JlblJsRk5xYTc2akgxb05mM3psdw?oc=5",
    "publicado": "2026-11-04T09:36-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje cai com resultado eleitoral nos EUA e expectativa por Copom",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZmt5UVRWNmNJdWk4M3UxWjdNMzJ0c0dYM1dhUVJKaEVfaWt2UDJYWGYxQWxkQ1pMbjExRlRaeGZ2dlI0RmxXZk1rQ1pFY1dNbDVUVjU0OFoxNjBzVjB5OXc5cDUzcDVpM3Yxd3ByZnhNak9DU1JweUJVVzFRRXY0TzJ4WTJEM3pSX2hLcUc2YkZNX2dzUmVKOTVITVnSAaIBQVVfeXFMT0VYU0hGN19tNGdBZlB4LURKREJjSTRTZTFDNzFUS0EzVjhSMjdlS1JzdXprZWc4c3puUzFmbkFveUlRczBKTGMtLVpTbWk1YURrZzlvX1NPdFBfSk81NmVGYlRCNVduc2RlZmQ0aUczVEhfVFJMdkk3enV3VTlBUzdqeDUySHN0QWpaZ0hpRDUwUVNDMGN0NF94dUVYTFQ4Q0Jn?oc=5",
-   "publicado": "2026-11-04T09:30-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
