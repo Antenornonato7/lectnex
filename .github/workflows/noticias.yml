@@ -1,0 +1,30 @@
+# Agora no mercado: manchetes recentes e de maior impacto (coletor/noticias.py). Horário: coletor/relogio.py (a cada ~10 min, 6h–23h).
+name: Notícias agora
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: noticias
+  cancel-in-progress: false
+
+jobs:
+  noticias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Coletar manchetes
+        run: python3 coletor/noticias.py
+      - name: Publicar
+        run: |
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com.br"
+          git add data/noticias-agora.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -q -m "noticias: $(TZ=America/Sao_Paulo date +'%d/%m %H:%M')"
+          for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep $((i*5)); done
+          exit 1

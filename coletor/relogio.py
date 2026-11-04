@@ -53,6 +53,7 @@ UTIL = AGORA.weekday() < 5
 TAREFAS = [
     ('cotacoes.yml', None, {'forcar_mapa': 'false'}, ('intervalo', 25), lambda: PREGAO and hm('10:05') <= AGORA <= hm('18:50')),
     ('monitor.yml', 'Monitor do site', {'teste': 'false'}, ('intervalo', 55), lambda: True),
+    ('noticias.yml', None, {}, ('intervalo', 9), lambda: 6 <= AGORA.hour <= 23),
     ('curva.yml', None, {}, ('horarios', ['10:23', '13:23', '16:23', '18:23'], 120), lambda: UTIL),
     ('reacao.yml', None, {'teste': 'false'}, ('horarios', ['12:41', '19:41'], 150), lambda: UTIL),
     ('fechamento.yml', None, {'forcar': 'false'}, ('horarios', ['19:05'], 180), lambda: PREGAO),
