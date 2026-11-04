@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T18:33-03:00",
+  "atualizado_em": "2026-11-04T18:35-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -1619,18 +1619,6 @@
  },
  "hoje": [
   {
-   "titulo": "Selic: mercado muda projeções e vê decisão do Copom como teste de credibilidade do BC",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQU9yeTZCVUs1Wjd2S3ZaZXZUN3RoVmZOMm1Jd0FnVFhLUVBkNHplM0RpblRsWWMyS0I1VTVTX09BT0JoOFVUY3dqWG5pVm1mYXoyMU8wVzZYbTd1MG1jUzdrX1VSMThTQjR5TFJ5amdIU0ttUlNFRWQ3dkdmZVJuZnlkZlRnZ1R4aDJDeW1IaDVHS2xWTlFhdE9Oam1jaGMxb1c4ZVFmbjJBTnNBRWpiQm5kamRfOHpvU3FmeG9lcVpEQVF5VXZkMkx4eW54N081SVFSZXo1aG84b3fSAeABQVVfeXFMTzNuVlVHV2drMTdSQWpEelV5bVJtb2t5S3VSNHNwTzdyT05LYUFwelhlQlZWaEtZeHJ4bWp5MWVTeHZac0dXeFRRanhlMWtYSFZDUndKdzdTbVI1b2FHc0VPRTJ0aFR1VklpX3NnXzlQTEpnd0ViSm1FR3gzTExaS0NwNjR2dExvXzVXcmVTSFFlcGF4MFN2bnV0QXpJUnc5ZDg0LWM4eGZyLTR3dzRubTZFUFNReWZfZW52eUJtZFF1TGJhZEtJcVFsUVRIaGJROFAxdnBrbHJZcmVQYjl4VEI?oc=5",
-   "publicado": "2026-11-04T05:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Petróleo da Margem Equatorial deve fortalecer ex-garimpo de Eike Batista na Amazônia",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/petroleo-da-margem-equatorial-deve-fortalecer-ex-garimpo-de-eike-batista-na-amazonia/",
@@ -2588,6 +2576,18 @@
    "tickers": [
     "AZUL4"
    ]
+  },
+  {
+   "titulo": "BC puxa freio e encerra ciclo após 5 cortes de juros; Selic fica em 13,75%",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNG9RUGJLRTJtcUROSGd5d3FnZm5QdG5WY2JzOFZfLWtpcmVGMjB6Y1JNSWUzT3RDTHhkQ0Q4UzlfbmdoQXphcFdHSFJRUU0wajEtX21tSDNYbFdMbTdNVW4wSEwtek5EM2loNmtoYnBUYU5lTkxKbmVVNnVmNm0xb25JZWg?oc=5",
+   "publicado": "2026-11-04T18:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2617,7 +2617,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T18:33-03:00",
+ "atualizado_em": "2026-11-04T18:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2626,10 +2626,23 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
+  "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "BC puxa freio e encerra ciclo após 5 cortes de juros; Selic fica em 13,75%",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNG9RUGJLRTJtcUROSGd5d3FnZm5QdG5WY2JzOFZfLWtpcmVGMjB6Y1JNSWUzT3RDTHhkQ0Q4UzlfbmdoQXphcFdHSFJRUU0wajEtX21tSDNYbFdMbTdNVW4wSEwtek5EM2loNmtoYnBUYU5lTkxKbmVVNnVmNm0xb25JZWg?oc=5",
+   "publicado": "2026-11-04T18:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa acompanha ‘onda azul’ de Wall Street e sobe 1%; dólar cai",
    "fonte": "Money Times",
@@ -2643,6 +2656,18 @@
    "tickers": [
     "AZUL4"
    ]
+  },
+  {
+   "titulo": "Petróleo brent cai 8% com possível impacto da eleição dos EUA no conflito com Irã",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQa0xuZjd2UExyMU5LMnFtZ0NJTE9BLWpQWktSNXpoT09oUHlBZDdvUHMwdE9NMEtXS2dSYlpSZlpYdldHNnNWcmZSNVFlRTRSN05La081Y3JJQ1dmdWhnQUNfdzlBN2VuVzE5UWRhdUtYYWJGcEZ0V0g5YXlLUkNUb2d2dWNOdVNLVEdzN9IBkgFBVV95cUxPOC00OVJEOXlqMEg4aDhZNVdod3QxN0tNTTBwS2k1QlVsUm5LRVhVR2VaVFdReTJoby1LaVBXNXprRWZNZ1VQS3NrdGs2dUozOHNKbngtX3cxZ3ZwQkpRanRyUm5RTlZFQU9leDBUb3NtcnRVQ01iRXIwSVBBN1RLcnRSUkJVbnFlamtlSUE5Rms3QQ?oc=5",
+   "publicado": "2026-11-04T17:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Juros futuros despencam com apoio externo e expectativa por anúncio fiscal",
