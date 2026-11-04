@@ -366,12 +366,13 @@
    "em": "2026-11-04T10:50:58+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T08:33-03:00",
+ "atualizado_em": "2026-11-04T08:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
@@ -379,6 +380,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "SpaceX, Tesla fall over 4% on Democrats' big win; AI stocks mixed",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
+   "publicado": "2026-11-04T08:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar se desvaloriza e Bolsas e títulos dos EUA sobem após derrota de Trump nas eleições",
    "fonte": "Folha",
@@ -423,17 +435,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "SpaceX, Tesla fall around 4% on Democrats' big win; AI stocks mixed",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-   "publicado": "2026-11-04T07:31-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
