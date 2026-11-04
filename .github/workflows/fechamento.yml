@@ -59,6 +59,12 @@ jobs:
         run: |
           [ -f "$RUNNER_TEMP/mercado.json" ] || { echo "Sem gráfico do dia."; exit 0; }
           python3 scripts/grafico_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/grafico-dia.png" || echo "::warning::Falha no post do gráfico do dia."
+      - name: Story do placar da semana (sextas) no Telegram privado
+        if: ${{ !inputs.previa_story }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: python3 scripts/story_placar.py "$RUNNER_TEMP/placar-semana.png" || echo "::warning::Falha no story do placar da semana."
       - name: Salvar placar do termômetro
         id: salvar
         if: ${{ !inputs.previa_story }}
