@@ -8,13 +8,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (out)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "12 mil",
+   "consenso": "113 mil",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.256,
    "win_abertura": true,
-   "wdo": 0.337
+   "wdo": 0.337,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2024-11-06|18h30|copom",
@@ -67,12 +68,13 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (out)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,2%",
+   "consenso": "0,2%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.472,
-   "wdo": 0.698
+   "wdo": 0.698,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2024-12-06|10h30|payroll",
@@ -81,12 +83,13 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (nov)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "227 mil",
+   "consenso": "200 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -1.029,
-   "wdo": 0.758
+   "wdo": 0.758,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2024-12-10|09h|ipca",
@@ -110,12 +113,13 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (nov)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,3%",
+   "consenso": "0,3%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.423,
-   "wdo": -0.589
+   "wdo": -0.589,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2024-12-11|18h30|copom",
@@ -168,12 +172,13 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (dez)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "256 mil",
+   "consenso": "160 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -0.602,
-   "wdo": 0.791
+   "wdo": 0.791,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-01-15|10h30|cpi-eua",
@@ -182,12 +187,13 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (dez)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,4%",
+   "consenso": "0,3%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 1.205,
-   "wdo": -0.292
+   "wdo": -0.292,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-01-29|16h|fomc",
@@ -225,12 +231,13 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (jan)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "143 mil",
+   "consenso": "170 mil",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.363,
-   "wdo": -0.409
+   "wdo": -0.409,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-02-11|09h|ipca",
@@ -254,12 +261,13 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (jan)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,5%",
+   "consenso": "0,3%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -1.385,
-   "wdo": -0.045
+   "wdo": -0.045,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-03-07|10h30|payroll",
@@ -268,12 +276,13 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (fev)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "151 mil",
+   "consenso": "160 mil",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 0.661,
-   "wdo": 0.087
+   "wdo": 0.087,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-03-12|09h30|cpi-eua",
@@ -282,13 +291,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (fev)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,2%",
+   "consenso": "0,3%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.159,
    "win_abertura": true,
-   "wdo": -0.031
+   "wdo": -0.031,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-03-12|09h|ipca",
@@ -341,13 +351,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (mar)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "228 mil",
+   "consenso": "135 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -2.686,
    "win_abertura": true,
-   "wdo": 1.117
+   "wdo": 1.117,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-04-10|09h30|cpi-eua",
@@ -356,13 +367,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (mar)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "−0,1%",
+   "consenso": "0,1%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.968,
    "win_abertura": true,
-   "wdo": 0.696
+   "wdo": 0.696,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-04-11|09h|ipca",
@@ -386,13 +398,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (abr)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "177 mil",
+   "consenso": "130 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -0.163,
    "win_abertura": true,
-   "wdo": -0.419
+   "wdo": -0.419,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-05-07|15h|fomc",
@@ -445,13 +458,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (abr)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,2%",
+   "consenso": "0,3%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.749,
    "win_abertura": true,
-   "wdo": -0.712
+   "wdo": -0.712,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-06-06|09h30|payroll",
@@ -460,13 +474,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (mai)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "139 mil",
+   "consenso": "130 mil",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 0.372,
    "win_abertura": true,
-   "wdo": -0.011
+   "wdo": -0.011,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-06-10|09h|ipca",
@@ -490,13 +505,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (mai)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,1%",
+   "consenso": "0,2%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.019,
    "win_abertura": true,
-   "wdo": -0.662
+   "wdo": -0.662,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-06-18|15h|fomc",
@@ -534,13 +550,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (jun)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "147 mil",
+   "consenso": "110 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 1.273,
    "win_abertura": true,
-   "wdo": -0.221
+   "wdo": -0.221,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-07-10|09h|ipca",
@@ -564,13 +581,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (jun)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,3%",
+   "consenso": "0,3%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.293,
    "win_abertura": true,
-   "wdo": -0.61
+   "wdo": -0.61,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-07-30|15h|fomc",
@@ -608,13 +626,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (jul)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "73 mil",
+   "consenso": "110 mil",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.091,
    "win_abertura": true,
-   "wdo": -1.336
+   "wdo": -1.336,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-08-12|09h30|cpi-eua",
@@ -623,13 +642,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (jul)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,2%",
+   "consenso": "0,2%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 1.366,
    "win_abertura": true,
-   "wdo": -0.491
+   "wdo": -0.491,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-08-12|09h|ipca",
@@ -653,13 +673,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (ago)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "22 mil",
+   "consenso": "75 mil",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 1.562,
    "win_abertura": true,
-   "wdo": -1.182
+   "wdo": -1.182,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-09-10|09h|ipca",
@@ -683,13 +704,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (ago)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,4%",
+   "consenso": "0,3%",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 0.579,
    "win_abertura": true,
-   "wdo": -0.368
+   "wdo": -0.368,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-09-17|15h|fomc",
@@ -742,13 +764,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (set)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,3%",
+   "consenso": "0,4%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.59,
    "win_abertura": true,
-   "wdo": -0.382
+   "wdo": -0.382,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-10-29|15h|fomc",
@@ -801,13 +824,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (out)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "119 mil",
+   "consenso": "50 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 0.003,
    "win_abertura": true,
-   "wdo": -0.145
+   "wdo": -0.145,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-12-10|09h|ipca",
@@ -860,12 +884,13 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (nov)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "64 mil",
+   "consenso": "50 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -1.45,
-   "wdo": 0.278
+   "wdo": 0.278,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2025-12-18|10h30|cpi-eua",
@@ -874,12 +899,13 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (nov)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "2,7% a/a",
+   "consenso": "3,1% a/a",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.131,
-   "wdo": -0.47
+   "wdo": -0.47,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-01-09|09h|ipca",
@@ -903,12 +929,13 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (dez)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "50 mil",
+   "consenso": "60 mil",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 0.635,
-   "wdo": -0.431
+   "wdo": -0.431,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-01-13|10h30|cpi-eua",
@@ -917,12 +944,13 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (dez)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,3%",
+   "consenso": "0,3%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.501,
-   "wdo": -0.091
+   "wdo": -0.091,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-01-28|16h|fomc",
@@ -975,12 +1003,13 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (jan)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "130 mil",
+   "consenso": "66 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 1.549,
-   "wdo": 0.012
+   "wdo": 0.012,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-02-13|10h30|cpi-eua",
@@ -989,12 +1018,13 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (jan)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,2%",
+   "consenso": "0,3%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -2.036,
-   "wdo": 0.51
+   "wdo": 0.51,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-03-06|10h30|payroll",
@@ -1003,12 +1033,13 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (fev)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "-92 mil",
+   "consenso": "58 mil",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.986,
-   "wdo": 0.038
+   "wdo": 0.038,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-03-11|09h30|cpi-eua",
@@ -1017,13 +1048,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (fev)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,3%",
+   "consenso": "0,3%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": 1.026,
    "win_abertura": true,
-   "wdo": -0.259
+   "wdo": -0.259,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-03-12|09h|ipca",
@@ -1077,13 +1109,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (mar)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "178 mil",
+   "consenso": "65 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 0.11,
    "win_abertura": true,
-   "wdo": 0.0
+   "wdo": 0.0,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-04-10|09h30|cpi-eua",
@@ -1092,13 +1125,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (mar)",
    "pais": "US",
-   "resultado": null,
+   "resultado": "0,9%",
    "consenso": null,
    "surpresa": null,
    "janela": "1h",
    "win": 1.077,
    "win_abertura": true,
-   "wdo": -0.881
+   "wdo": -0.881,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-04-10|09h|ipca",
@@ -1151,13 +1185,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (abr)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "115 mil",
+   "consenso": "65 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": 1.096,
    "win_abertura": true,
-   "wdo": -0.654
+   "wdo": -0.654,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-05-12|09h30|cpi-eua",
@@ -1166,13 +1201,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (abr)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,6%",
+   "consenso": "0,6%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.402,
    "win_abertura": true,
-   "wdo": 0.074
+   "wdo": 0.074,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-05-12|09h|ipca",
@@ -1196,13 +1232,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (mai)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "172 mil",
+   "consenso": "85 mil",
+   "surpresa": "acima",
    "janela": "1h",
    "win": -0.26,
    "win_abertura": true,
-   "wdo": 0.833
+   "wdo": 0.833,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-06-10|09h30|cpi-eua",
@@ -1211,13 +1248,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (mai)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,5%",
+   "consenso": "0,5%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.342,
    "win_abertura": true,
-   "wdo": -0.443
+   "wdo": -0.443,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-06-12|09h|ipca",
@@ -1270,13 +1308,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (jun)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "57 mil",
+   "consenso": "114 mil",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 1.008,
    "win_abertura": true,
-   "wdo": -0.493
+   "wdo": -0.493,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-07-10|09h|ipca",
@@ -1300,13 +1339,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (jun)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "−0,4%",
+   "consenso": "−0,1%",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": 0.649,
    "win_abertura": true,
-   "wdo": -1.167
+   "wdo": -1.167,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-07-29|15h|fomc",
@@ -1344,13 +1384,14 @@
    "tipo": "payroll",
    "evento": "Payroll — criação de vagas (jul)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "-23 mil",
+   "consenso": "85 mil",
+   "surpresa": "abaixo",
    "janela": "1h",
    "win": -0.609,
    "win_abertura": true,
-   "wdo": -0.305
+   "wdo": -0.305,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-08-11|09h|ipca",
@@ -1374,13 +1415,14 @@
    "tipo": "cpi-eua",
    "evento": "CPI — inflação ao consumidor (jul)",
    "pais": "US",
-   "resultado": null,
-   "consenso": null,
-   "surpresa": null,
+   "resultado": "0,1%",
+   "consenso": "0,1%",
+   "surpresa": "em linha",
    "janela": "1h",
    "win": -0.151,
    "win_abertura": true,
-   "wdo": -0.073
+   "wdo": -0.073,
+   "fonte_consenso": "FXBlue e EnergyExch"
   },
   {
    "id": "2026-09-04|09h30|payroll",

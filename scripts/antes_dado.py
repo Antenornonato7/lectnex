@@ -71,6 +71,8 @@ def montar(hoje):
     out = {'data': hoje.isoformat(), 'tipo': ev['tipo'], 'curto': curto, 'evento': ev['evento'], 'hora': ev.get('hora'), 'pais': ev.get('pais'),
            'consenso': ev.get('consenso'), 'anterior': ev.get('anterior'), 'passadas': passadas,
            'divulgacoes': {'win': estat([p['win'] for p in todas]), 'wdo': estat([p['wdo'] for p in todas]), 'desde': todas[-1]['data'] if todas else None},
+           'por_surpresa': {sp: {'win': estat([p['win'] for p in todas if p['surpresa'] == sp]), 'wdo': estat([p['wdo'] for p in todas if p['surpresa'] == sp])}
+                            for sp in ('acima', 'abaixo') if sum(1 for p in todas if p['surpresa'] == sp) >= 3},
            'manchetes': {'tema': tema, 'nome': temas.get(tema, tema), 'win': estat([x.get('ib') for x in mc]), 'wdo': estat([x.get('dl') for x in mc])},
            'gerado_em': dt.datetime.now(BRT).isoformat(timespec='minutes')}
     if not passadas and not (out['manchetes']['win'] or out['manchetes']['wdo']):
@@ -121,7 +123,7 @@ def gerar_story(a, saida):
     dr.text((M, y), 'Variação após a divulgação: 30 min (1 h nas mais antigas)' if any(p.get('janela') == '1h' for p in a['passadas']) else 'Variação em 30 min após a divulgação', font=fonte('Inter-Medium.otf', 30), fill=MUTED)
     y += 64
 
-    ps = list(reversed(a['passadas'][:4]))
+    ps = list(reversed(a['passadas'][:2 if len(a.get('por_surpresa') or {}) == 2 else 4]))
     fm, fs = fonte('JetBrainsMono-Bold.ttf', 30), fonte('JetBrainsMono-Bold.ttf', 24)
     if ps:
         escala = max([abs(p[k]) for p in ps for k in ('win', 'wdo') if isinstance(p.get(k), (int, float))] + [0.3])
@@ -181,6 +183,22 @@ def gerar_story(a, saida):
             for c, t, cor in zip(cols, (f'{e["sobe"]}%', pct(e['mediana']), mov),
                                  (WHITE, VERDE if e['mediana'] > 0 else VERMELHO if e['mediana'] < 0 else WHITE, WHITE)):
                 dr.text((c, y), t, font=fv, fill=cor)
+            y += 56
+    psu = a.get('por_surpresa') or {}
+    if len(psu) == 2 and y < 1300:
+        y += 24
+        dr.text((M, y), 'SE VIER ACIMA OU ABAIXO DO CONSENSO', font=fonte('JetBrainsMono-Bold.ttf', 26), fill=ORANGE)
+        y += 46
+        for c, rot in zip(cols, ('VEZES', 'IBOVESPA SUBIU', 'DÓLAR SUBIU')):
+            dr.text((c, y), rot, font=fl, fill=MUTED)
+        y += 30
+        for sp, nome in (('acima', 'Acima'), ('abaixo', 'Abaixo')):
+            e = psu[sp]
+            dr.text((M, y + 6), nome, font=fr, fill='#CBD5E1')
+            n_ = max((e['win'] or {}).get('n', 0), (e['wdo'] or {}).get('n', 0))
+            vals = (str(n_), f'{e["win"]["sobe"]}%' if e['win'] else '—', f'{e["wdo"]["sobe"]}%' if e['wdo'] else '—')
+            for c, t in zip(cols, vals):
+                dr.text((c, y), t, font=fv, fill=WHITE)
             y += 56
     if any(p.get('abertura') for p in ps) and y < 1560:
         dr.text((M, y + 14), '* WIN medido na abertura seguinte (saiu com a bolsa fechada)', font=fonte('Inter-Medium.otf', 24), fill=MUTED)
