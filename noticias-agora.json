@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T09:58-03:00",
+  "atualizado_em": "2026-11-04T10:00-03:00",
   "dolar": {
    "anterior": 5.4883,
    "pontos": [
@@ -51,11 +51,11 @@
     ],
     [
      "09:55",
-     5.473
+     5.4691
     ],
     [
-     "09:58",
-     5.4725
+     "10:00",
+     5.4676
     ]
    ]
   },
@@ -134,7 +134,7 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": 0.1
+    "dolar30": 0.02
    },
    {
     "hora": "09:30",
@@ -147,7 +147,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.04
+    "dolar30": -0.03
    },
    {
     "hora": "09:30",
@@ -163,7 +163,7 @@
      "KLBN11",
      "SMAL11"
     ],
-    "dolar30": 0.04
+    "dolar30": -0.03
    },
    {
     "hora": "09:38",
@@ -183,6 +183,19 @@
     "titulo": "Aumento de juros pelo Banco Central Europeu parece quase certo após inflação atingir maior nível em três anos",
     "fonte": "Money Times",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX3hBNjFEQzUyVHBDYUxpbUNCMDc5MkxTVHpZajQyVzBxOGNPMFpVMlZucUtGc0c5NmtNZllJYVdBLW1MWklzUzdwOWM1b0hNd05mdEtfd01yVjF1QmZKWUNtbGg5TE5SNFFFZm1uV3g2eFNJMmdFVXFtdnZhYmMwNXFJQTFYZjUtck1qbmJBX2J1czlWSl9Lc3MyNTZreldnWHNIWDJhOHRoY3lqZzVmSUtBT3hobHQxQ1o4bEJSeFJfSzdGeUE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "09:56",
+    "titulo": "Dólar abre em queda com vitória democrata nos EUA; juros futuros ficam de lado à espera do Copom",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-com-vitoria-democrata-nos-eua-juros-futuros-ficam-de-lado-a-espera-do-copom.shtml",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -698,6 +711,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar abre em queda com vitória democrata nos EUA; juros futuros ficam de lado à espera do Copom",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-com-vitoria-democrata-nos-eua-juros-futuros-ficam-de-lado-a-espera-do-copom.shtml",
+   "publicado": "2026-11-04T09:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -727,7 +752,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T09:58-03:00",
+ "atualizado_em": "2026-11-04T10:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -741,6 +766,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar abre em queda com vitória democrata nos EUA; juros futuros ficam de lado à espera do Copom",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-com-vitoria-democrata-nos-eua-juros-futuros-ficam-de-lado-a-espera-do-copom.shtml",
+   "publicado": "2026-11-04T09:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
    "fonte": "CNBC",
@@ -880,18 +917,6 @@
    "publicado": "2026-11-04T09:05-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Selic vai parar de cair? Maioria dos bancos espera pausa do Copom amanhã; veja projeções",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOTk2ajRJQ2JqM0Y3MnFUQkk2MVZCU3VfdURwdjVzNXZ4blVqc1FYNXg0ZVFvcVBuaXJlSHhQVzl0MEZ6VmhoZEtGRFpULXh4OVRUTlhDOENaano3bmhMaTh4VkEwaWNIMWM3N3AwdW9xLXNacXhGVjRobks2YVhveEJkT3ROc0VBYzlIci10bmVJbWtZb252RjZBQ19LWDVhM3ZEUU9wQzhsOE1xQi1HUzdJRHdhemdxVG5RRkJNQQ?oc=5",
-   "publicado": "2026-11-04T09:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
