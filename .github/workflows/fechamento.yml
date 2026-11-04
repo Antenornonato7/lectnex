@@ -63,14 +63,14 @@ jobs:
         id: salvar
         if: ${{ !inputs.previa_story }}
         run: |
-          [ -f data/placar-termometro.json ] || [ -d data/dias ] || exit 0
+          [ -f data/placar-termometro.json ] || [ -d data/dias ] || [ -f data/placar-historico.json ] || exit 0
           git config user.name "lectnex-bot"
           git config user.email "bot@lectnex.com.br"
           if [ -d data/dias ]; then
             python3 scripts/manchetes.py | tee "$RUNNER_TEMP/manchetes.txt" || echo "::warning::Falha ao gerar o arquivo de manchetes."
             echo "paginas=$(grep '^PAGINAS=' "$RUNNER_TEMP/manchetes.txt" 2>/dev/null | cut -d= -f2-)" >> "$GITHUB_OUTPUT"
           fi
-          git add data/placar-termometro.json data/dias data/manchetes.json manchetes sitemap.xml 2>/dev/null || git add data/placar-termometro.json
+          for f in data/placar-termometro.json data/placar-historico.json data/dias data/manchetes.json manchetes sitemap.xml; do [ -e "$f" ] && git add "$f"; done
           git diff --cached --quiet && exit 0
           git commit -m "placar, dia e arquivo de manchetes: $(TZ=America/Sao_Paulo date +%F)"
           git pull --rebase -q origin main && git push -q origin HEAD:main

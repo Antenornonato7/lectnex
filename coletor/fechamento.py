@@ -148,7 +148,7 @@ def antes_depois():
     hist = (a.get('por_surpresa') or {}).get(sp) if sp in ('acima', 'abaixo') else None
     base = 'surpresa' if hist else 'geral'
     hist = hist or a.get('divulgacoes') or {}
-    out = {'evento': a.get('curto') or a.get('evento'), 'hora': a.get('hora'), 'resultado': ev.get('resultado'), 'consenso': ev.get('consenso'),
+    out = {'tipo': a.get('tipo'), 'evento': a.get('curto') or a.get('evento'), 'hora': a.get('hora'), 'resultado': ev.get('resultado'), 'consenso': ev.get('consenso'),
            'surpresa': sp, 'base': base, 'hist': {k: hist.get(k) for k in ('win', 'wdo')}, 'hoje': None}
     try:
         import reacao  # mesma medida do histórico: último preço antes até 30 min depois (barras de 5 min)
@@ -162,6 +162,49 @@ def antes_depois():
     except Exception as e:
         tg.note('warning', f'Antes × depois: reação de hoje indisponível ({e.__class__.__name__})')
     return out
+
+
+PLACAR_HIST = 'data/placar-historico.json'
+
+
+def acerto(sobe, v):
+    """O histórico 'indica' uma direção quando subiu em ≥60% ou ≤40% das vezes; senão está dividido (não conta)."""
+    if sobe is None or v is None or 40 < sobe < 60:
+        return None
+    return (v > 0) == (sobe >= 60) if v != 0 else False
+
+
+def registrar_placar_historico(ad):
+    """Guarda o Antes × Depois do dia e completa reações pendentes (ex.: WIN do Copom, medido na abertura seguinte)."""
+    pl = ler(PLACAR_HIST) or {'criterio': 'O histórico indica uma direção quando o ativo subiu em 60% ou mais (alta) ou em 40% ou menos (queda) '
+                                          'das divulgações anteriores com a mesma surpresa (ou de todas, sem surpresa definida). Acerta quando a reação '
+                                          'de 30 min (ou da abertura seguinte) vai para esse lado. Entre 40% e 60%: dividido, não conta.', 'eventos': []}
+    evs = {e['data'] + '|' + e['tipo']: e for e in pl['eventos']}
+    if ad:
+        k = hoje.isoformat() + '|' + ad['tipo']
+        velho = evs.get(k, {})
+        evs[k] = {'data': hoje.isoformat(), 'tipo': ad['tipo'], 'evento': ad['evento'], 'hora': ad.get('hora'), 'surpresa': ad.get('surpresa'),
+                  'base': ad['base'], 'sobe': {x: (ad['hist'].get(x) or {}).get('sobe') for x in ('win', 'wdo')},
+                  'n': {x: (ad['hist'].get(x) or {}).get('n') for x in ('win', 'wdo')},
+                  'reacao': {x: ((ad.get('hoje') or {}).get(x) if (ad.get('hoje') or {}).get(x) is not None else (velho.get('reacao') or {}).get(x)) for x in ('win', 'wdo')}}
+    pend = [e for e in evs.values() if None in e['reacao'].values() and (hoje - dt.date.fromisoformat(e['data'])).days <= 50]
+    if pend:
+        try:
+            import reacao
+            bs = {x: reacao.barras(sym) for x, sym in reacao.ATIVOS.items()}
+            for e in pend:
+                t0 = reacao.hora_ev({'data': e['data'], 'hora': e.get('hora')})
+                for x in ('win', 'wdo'):
+                    if t0 and e['reacao'][x] is None:
+                        e['reacao'][x] = reacao.var(bs[x], t0)[0]
+        except Exception as ex:
+            tg.note('warning', f'Placar do histórico: reação pendente não medida ({ex.__class__.__name__})')
+    for e in evs.values():
+        e['acerto'] = {x: acerto(e['sobe'].get(x), e['reacao'].get(x)) for x in ('win', 'wdo')}
+    pl['eventos'] = sorted(evs.values(), key=lambda e: e['data'])[-300:]
+    pl['atualizado_em'] = dt.datetime.now(BRT).isoformat(timespec='seconds')
+    if not SO_STORY:
+        json.dump(pl, open(PLACAR_HIST, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
 
 def texto_antes_depois(ad):
@@ -247,6 +290,10 @@ def main():
     if ad:
         resumo['antes_depois'] = ad
         linhas += [''] + texto_antes_depois(ad)
+    try:
+        registrar_placar_historico(ad)
+    except Exception as e:
+        tg.note('warning', f'Placar do histórico não atualizado: {e.__class__.__name__}')
 
     mex = manchetes_que_mexeram()
     if mex:

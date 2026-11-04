@@ -240,6 +240,27 @@
                 <div class="hidden lg:col-span-6 term-panel h-[560px] overflow-hidden" id="tv-calendar"></div>
             </div>
             <div id="rx-wrap" class="hidden mt-6"></div>
+            <div id="ph-wrap" class="hidden mt-4 term-panel"></div>
+            <script>(function(){
+                fetch('data/placar-historico.json?t='+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(p){
+                    var ev=(p&&p.eventos||[]).filter(function(e){return e.acerto&&(e.acerto.win!=null||e.acerto.wdo!=null)});
+                    if(!ev.length)return;
+                    var tot=function(k){var c=ev.filter(function(e){return e.acerto[k]!=null});return{n:c.length,ok:c.filter(function(e){return e.acerto[k]}).length}};
+                    var w=tot('win'),d=tot('wdo'),esc=LX.esc;
+                    var card=function(l,t){return '<div class="text-center"><span class="term-label block">'+l+'</span><strong class="block font-display text-2xl mt-1">'+(t.n?t.ok+'/'+t.n:'—')+'</strong><span class="block font-mono text-[11px] text-slate-500">'+(t.n?LX.num(t.ok/t.n*100,0)+'% de acerto':'sem eventos')+'</span></div>'};
+                    var cel=function(e,k){var s=e.sobe[k],v=e.reacao[k],a=e.acerto[k];if(v==null)return '<td class="px-2 text-slate-400">pendente</td>';
+                        var ind=s==null?'—':s>=60?'▲ '+s+'%':s<=40?'▼ '+(100-s)+'%':'dividido';
+                        return '<td class="px-2 whitespace-nowrap"><span class="text-slate-500">'+ind+'</span> → <b class="'+(v>0?'text-emerald-600 dark:text-emerald-400':v<0?'text-rose-600 dark:text-rose-400':'')+'">'+LX.pct(v,2,true)+'</b>'+(a==null?'':' <span class="'+(a?'text-emerald-600 dark:text-emerald-400':'text-rose-600 dark:text-rose-400')+'">'+(a?'acertou':'errou')+'</span>')+'</td>'};
+                    var SP={'acima':'acima','abaixo':'abaixo','em linha':'em linha'};
+                    var rows=(p.eventos||[]).slice(-8).reverse().map(function(e){return '<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="px-2 py-2 whitespace-nowrap">'+e.data.slice(8,10)+'/'+e.data.slice(5,7)+'</td><td class="px-2 font-sans font-semibold">'+esc(e.evento)+(e.surpresa?' <span class="font-mono text-[10px] text-slate-500">'+esc(SP[e.surpresa]||e.surpresa)+'</span>':'')+'</td>'+cel(e,'win')+cel(e,'wdo')+'</tr>'}).join('');
+                    var el=document.getElementById('ph-wrap');
+                    el.innerHTML='<div class="px-5 py-4 border-b border-slate-200 dark:border-lect-borderDark flex flex-wrap items-baseline justify-between gap-2"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-target text-lect-orange"></i>O HISTÓRICO ACERTOU?</span><span class="font-mono text-[11px] text-slate-500">Antes × depois nos dias de evento forte</span></div>'
+                        +'<div class="grid grid-cols-2 gap-3 px-5 py-4">'+card('IBOVESPA · WIN',w)+card('DÓLAR · WDO',d)+'</div>'
+                        +'<div class="overflow-x-auto"><table class="w-full font-mono text-xs"><thead><tr class="text-[10px] text-slate-500 text-left"><th class="px-2 py-1 font-normal">DIA</th><th class="px-2 font-normal">EVENTO</th><th class="px-2 font-normal">WIN: HISTÓRICO → HOJE</th><th class="px-2 font-normal">WDO: HISTÓRICO → HOJE</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
+                        +'<p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">O histórico indica alta quando o ativo subiu em 60% ou mais das divulgações anteriores com a mesma surpresa, e queda quando subiu em 40% ou menos. Entre os dois, fica dividido e não conta. Reação de 30 min (ou da abertura seguinte). <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p>';
+                    el.classList.remove('hidden');
+                }).catch(function(){});
+            })();</script>
         </div>
     </section>
 
