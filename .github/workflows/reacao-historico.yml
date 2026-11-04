@@ -1,0 +1,29 @@
+# Histórico longo de reação (barras de 1 hora, ~2 anos) → data/reacoes.json. Roda só quando disparado à mão.
+name: Reação histórica (1 hora)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reacao
+  cancel-in-progress: false
+
+jobs:
+  historico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Medir divulgações antigas
+        run: python3 coletor/reacao_historico.py
+      - name: Publicar
+        run: |
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com.br"
+          git add data/reacoes.json
+          git diff --cached --quiet && exit 0
+          git commit -m "reação: histórico de 2 anos (barras de 1 hora)"
+          git pull --rebase -q origin main && git push -q origin HEAD:main

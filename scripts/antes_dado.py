@@ -63,8 +63,9 @@ def montar(hoje):
             continue
         vistos.add(r['data'])
         passadas.append({'data': r['data'], 'evento': r.get('evento'), 'resultado': r.get('resultado'), 'consenso': r.get('consenso'),
-                         'surpresa': r.get('surpresa'), 'win': r.get('win'), 'wdo': r.get('wdo'), 'abertura': bool(r.get('win_abertura'))})
-    passadas = passadas[:6]
+                         'surpresa': r.get('surpresa'), 'win': r.get('win'), 'wdo': r.get('wdo'), 'abertura': bool(r.get('win_abertura')),
+                         'janela': r.get('janela', '30min')})
+    passadas = passadas[:12]
     mc = [x for x in ler('data/manchetes.json', {}).get('itens', []) if tema in (x.get('tm') or []) and x.get('d', '') < hoje.isoformat()]
     temas = ler('data/manchetes.json', {}).get('temas', {})
     out = {'data': hoje.isoformat(), 'tipo': ev['tipo'], 'curto': curto, 'evento': ev['evento'], 'hora': ev.get('hora'), 'pais': ev.get('pais'),
@@ -117,10 +118,10 @@ def gerar_story(a, saida):
     y += 96
     dr.text((M, y), 'Como o mercado reagiu nas últimas vezes', font=fonte('InterDisplay-Bold.otf', 44), fill=WHITE)
     y += 64
-    dr.text((M, y), 'Variação em 30 min após a divulgação', font=fonte('Inter-Medium.otf', 30), fill=MUTED)
+    dr.text((M, y), 'Variação após a divulgação: 30 min (1 h nas mais antigas)' if any(p.get('janela') == '1h' for p in a['passadas']) else 'Variação em 30 min após a divulgação', font=fonte('Inter-Medium.otf', 30), fill=MUTED)
     y += 64
 
-    ps = list(reversed(a['passadas']))[-5:]
+    ps = list(reversed(a['passadas'][:5]))
     fm, fs = fonte('JetBrainsMono-Bold.ttf', 30), fonte('JetBrainsMono-Bold.ttf', 24)
     if ps:
         escala = max([abs(p[k]) for p in ps for k in ('win', 'wdo') if isinstance(p.get(k), (int, float))] + [0.3])
@@ -133,7 +134,7 @@ def gerar_story(a, saida):
             dr.rectangle([M, y, W - M, y + 112], fill=CARD, outline=LINE, width=2)
             dr.text((M + 24, y + 18), f'{pd:%d/%m/%y}', font=fm, fill=WHITE)
             sp = {'acima': 'acima do esperado', 'abaixo': 'abaixo do esperado', 'em linha': 'em linha'}.get(p.get('surpresa'), (p.get('resultado') or '')[:16])
-            dr.text((M + 24, y + 62), sp + (' · WIN na abertura' if p.get('abertura') else ''), font=fonte('Inter-Medium.otf', 22), fill=MUTED)
+            dr.text((M + 24, y + 62), sp + (' · WIN na abertura' if p.get('abertura') else '') + (' · 1 h' if p.get('janela') == '1h' else ''), font=fonte('Inter-Medium.otf', 22), fill=MUTED)
             for j, k in enumerate(('win', 'wdo')):
                 v = p.get(k)
                 x0 = M + 230 + j * (larg + 20)
