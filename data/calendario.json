@@ -1,106 +1,6 @@
 {
-  "atualizado_em": "2026-11-03T12:55:00-03:00",
+  "atualizado_em": "2026-11-04T08:20:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-03",
-      "hora": "08h25",
-      "pais": "BR",
-      "evento": "Boletim Focus (BCB)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Selic 2026: 13,50%; IPCA 2026: 5,22%",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Sai na terça por causa de Finados; olhar Selic, IPCA e câmbio às vésperas do Copom.",
-      "tipo": "focus",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-03",
-      "hora": "10h",
-      "pais": "BR",
-      "evento": "PMI industrial S&P Global (out)",
-      "importancia": 1,
-      "anterior": "44,8",
-      "consenso": null,
-      "resultado": "46,1",
-      "impacto": {
-        "win": "volatil"
-      },
-      "nota": "Indústria em contração profunda.",
-      "tipo": "pmi-brasil",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-03",
-      "hora": "12h",
-      "pais": "US",
-      "evento": "JOLTS — vagas em aberto (set)",
-      "importancia": 2,
-      "anterior": "7,08 milhões",
-      "consenso": "7,1 milhões",
-      "resultado": "7,52 milhões",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Termômetro do mercado de trabalho na semana do payroll.",
-      "tipo": "jolts",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "Vagas acima do esperado costumam fortalecer o dólar global e pressionar os Treasuries, o que tende a puxar WDO e DI para cima."
-      }
-    },
-    {
-      "data": "2026-11-03",
-      "hora": "22h45",
-      "pais": "CN",
-      "evento": "PMI de serviços RatingDog/S&P (out)",
-      "importancia": 1,
-      "anterior": "51,6",
-      "consenso": "51,5",
-      "resultado": null,
-      "impacto": {
-        "win": "volatil"
-      },
-      "tipo": "pmi-china-servicos",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-03",
-      "hora": null,
-      "pais": "BR",
-      "evento": "Vencimento do WDO e do DI1 de novembro",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "1º dia útil do mês; rolagem e Ptax podem ampliar a volatilidade.",
-      "tipo": "vencimento-wdo",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-03",
-      "hora": null,
-      "pais": "US",
-      "evento": "Eleições de meio de mandato",
-      "importancia": 3,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "win": "volatil",
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Câmara, 35 cadeiras do Senado e 36 governos estaduais; resultados entram pela noite.",
-      "tipo": "eleicoes-eua",
-      "surpresa": null
-    },
     {
       "data": "2026-11-04",
       "hora": "07h",
@@ -124,7 +24,7 @@
       "evento": "ADP — emprego privado (out)",
       "importancia": 2,
       "anterior": "90 mil",
-      "consenso": "67 mil",
+      "consenso": "69 mil",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -140,7 +40,7 @@
       "evento": "ISM de serviços (out)",
       "importancia": 3,
       "anterior": "54,9",
-      "consenso": "54,7",
+      "consenso": "54,8",
       "resultado": null,
       "impacto": {
         "wdo": "volatil",
@@ -180,7 +80,7 @@
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Comunicado após o fechamento; reação aparece na quinta. Em pesquisa da Reuters, 33 de 48 economistas esperam manutenção e 15, corte para 13,50%; tom sobre o fiscal é chave.",
+      "nota": "Comunicado após o fechamento; reação aparece na quinta. Em pesquisa da Reuters, 33 de 48 economistas esperavam manutenção e 15, corte para 13,50%; o Itaú projeta manutenção unânime.",
       "tipo": "copom",
       "surpresa": null
     },
