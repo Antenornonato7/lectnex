@@ -9,7 +9,7 @@ const BASE = (process.argv[2] || 'http://localhost:8766').replace(/\/$/, '');
 const raiz = readdirSync('.').filter(f => f.endsWith('.html'));
 const sub = d => existsSync(d) ? readdirSync(d).filter(f => f.endsWith('.html')).map(f => `${d}/${f}`) : [];
 const PAGINAS = [...raiz, ...sub('semana'), ...sub('leitura')];
-const MOBILE = ['index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'status.html', 'glossario.html', 'comece.html', 'copom.html', 'links.html'];
+const MOBILE = ['index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'status.html', 'glossario.html', 'comece.html', 'copom.html', 'links.html', 'hoje.html'];
 // Terceiros fora do nosso controle: bloqueados para o teste ser estável e rápido.
 const BLOQUEAR = /(tradingview|googleapis|gstatic|onesignal|googletagmanager|google-analytics|t\.me|instagram|tiktok|x\.com)/;
 const LIXO = /\b(undefined|NaN)\b|\[object Object\]/;

@@ -508,6 +508,7 @@
                 <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
                 <a href="comece.html" class="block hover:text-lect-tealLight">Comece por aqui</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
+                <a href="hoje.html" class="block hover:text-lect-tealLight">O que mexeu hoje</a>
                 <a href="status.html" class="block hover:text-lect-tealLight">Status do site</a>
                 <a href="privacidade.html" class="block hover:text-lect-tealLight">Privacidade e cookies</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
@@ -522,8 +523,8 @@
               <div class="lg:col-span-5 space-y-1.5 font-mono text-[11px]">
                 <span class="text-white font-bold uppercase tracking-wider block mb-2">Fontes de dados</span>
                 <span class="block">• Selic, CDI, IPCA, PTAX e Focus: Banco Central do Brasil (SGS / Olinda) — oficiais</span>
-                <span class="block">• Câmbio e cripto: AwesomeAPI — cotações com atraso de alguns segundos</span>
-                <span class="block">• Gráficos, notícias e agenda global: widgets TradingView</span>
+                <span class="block">• Câmbio: AwesomeAPI — cotações com atraso de alguns segundos · Intraday: Yahoo Finance (5 min)</span>
+                <span class="block">• Gráficos: widgets TradingView · Manchetes: Reuters, Valor, InfoMoney, Folha, Estadão e outros da nossa lista</span>
                 <span class="block">• Ações: brapi.dev (atraso de ~30 min) · Calendário de vencimentos: regras B3</span>
                 <span class="block text-amber-400/90">• Itens marcados <span class="lx-demo">SIMULAÇÃO</span> são dados fictícios para fins didáticos</span>
               </div>
@@ -561,6 +562,7 @@
         ['mercado', 'ESE', 'E se…? Mapa de reações', 'Como Copom, IPCA, Fed e fiscal chegam ao WIN e WDO', 'macro.html#educacao', 'ph-git-branch', 'cenario reacao noticia transmissao copom ipca fed payroll fiscal china e se'],
         ['mercado', 'REGIME', 'Regimes de risco', 'Risk-on, risk-off e como os ativos reagem', 'macro.html#regimes', 'ph-gauge', 'regime risco risk on off aversao apetite intermercado'],
         ['mercado', 'MAPA', 'Mapa de calor da B3', 'Ações do Ibovespa por setor, coloridas pela variação do dia', 'index.html#mapa', 'ph-squares-four', 'mapa calor heatmap setores acoes ibovespa fluxo variacao'],
+        ['mercado', 'HOJE', 'O que mexeu no mercado hoje', 'Gráfico do Ibovespa e do dólar com as manchetes marcadas', 'hoje.html', 'ph-chart-line', 'hoje grafico noticia preco reacao manchete intraday'],
         ['mercado', 'NEWS', 'Agora no mercado', 'Manchetes de maior impacto, a cada ~10 min', 'index.html#ultimas', 'ph-newspaper', 'noticias manchetes'],
         ['acoes', 'DONOS', 'Quem é dono da ação', 'Fundos com a ação na carteira (CVM)', 'acoes.html#donos', 'ph-users-three', 'fundos donos carteira cvm'],
         ['acoes', 'OPC', 'Laboratório de opções', 'Strangle, venda de call e de put', 'acoes.html#opcoes', 'ph-flask', 'opcoes call put strangle'],

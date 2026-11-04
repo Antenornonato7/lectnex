@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que mexeu no mercado hoje · Lectnex</title>
+    <meta name="description" content="Gráfico do Ibovespa e do dólar no dia com cada manchete marcada no horário em que saiu e a variação nos 30 minutos seguintes. Veja como notícia vira preço.">
+    <link rel="canonical" href="https://lectnex.com.br/hoje.html">
+    <meta name="theme-color" content="#060D17">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lectnex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lectnex Terminal">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="O que mexeu no mercado hoje · Lectnex">
+    <meta property="og:description" content="Gráfico do Ibovespa e do dólar no dia com cada manchete marcada no horário em que saiu e a variação nos 30 minutos seguintes. Veja como notícia vira preço.">
+    <meta property="og:url" content="https://lectnex.com.br/hoje.html">
+    <meta property="og:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="O que mexeu no mercado hoje · Lectnex">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="O que mexeu no mercado hoje · Lectnex">
+    <meta name="twitter:description" content="Gráfico do Ibovespa e do dólar no dia com cada manchete marcada no horário em que saiu e a variação nos 30 minutos seguintes. Veja como notícia vira preço.">
+    <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261104d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261104d">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261104d">
+</head>
+<body data-page="hoje" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+                <span class="term-label text-lect-teal font-bold flex items-center gap-2"><span id="hj-vivo" class="hidden px-1.5 py-0.5 bg-red-600 text-white text-[10px] tracking-wider items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white lx-pulse-red"></span>AO VIVO</span>NOTÍCIA × PREÇO</span>
+                <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2 leading-tight">O que mexeu no mercado <span id="hj-quando">hoje</span></h1>
+                <p class="text-slate-600 dark:text-slate-300 mt-2 max-w-3xl leading-relaxed">Ibovespa e dólar do dia em barras de 5 minutos, com cada manchete marcada no horário em que saiu e a variação nos <strong>30 minutos seguintes</strong>. Passe o mouse ou toque nos pontos.</p>
+            </div>
+            <label class="font-mono text-xs"><span class="term-label block mb-1">DIA</span><select id="hj-dia" class="lx-input !py-2 min-w-[180px]"></select></label>
+        </div>
+
+        <section id="hj-resumo" class="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-3 min-h-[96px]"></section>
+
+        <section class="mt-6 space-y-4">
+            <div class="term-panel p-4 sm:p-5"><div class="flex items-baseline justify-between"><span class="term-label font-bold">IBOVESPA · WIN</span><span id="hj-ibov-v" class="font-mono text-sm font-bold"></span></div><div id="hj-ibov" class="relative mt-2 min-h-[220px]"></div></div>
+            <div class="term-panel p-4 sm:p-5"><div class="flex items-baseline justify-between"><span class="term-label font-bold">DÓLAR À VISTA · WDO</span><span id="hj-dolar-v" class="font-mono text-sm font-bold"></span></div><div id="hj-dolar" class="relative mt-2 min-h-[220px]"></div></div>
+        </section>
+        <div id="hj-tip" class="lx-gl-tip" hidden></div>
+
+        <section class="mt-8">
+            <h2 class="font-display text-xl font-bold">Manchetes do dia, na ordem</h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Variação do Ibovespa e do dólar do último preço antes da manchete até 30 minutos depois. O movimento seguinte não prova que a notícia foi a causa: o mercado reage a muitas coisas ao mesmo tempo.</p>
+            <ol id="hj-lista" class="term-panel mt-3 divide-y divide-slate-200 dark:divide-lect-borderDark"></ol>
+        </section>
+
+        <p class="mt-6 text-[11px] text-slate-600 dark:text-slate-400">Cotações de 5 min do Yahoo Finance (Ibovespa à vista e dólar à vista), com atraso. Manchetes de veículos da nossa lista, coletadas automaticamente. Conteúdo educacional, não é recomendação.</p>
+    </main>
+
+    <div id="lx-footer"></div>
+    <script src="assets/lectnex-core.js?v=20261104d"></script>
+    <script>
+    (function () {
+        const $ = id => document.getElementById(id), esc = LX.esc;
+        const AOVIVO = 'https://raw.githubusercontent.com/Antenornonato7/lectnex/ao-vivo/noticias-agora.json';
+        const hojeISO = LX.iso(new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' })));
+        let atual = null, dias = [], escolhido = '';
+        const minDia = hm => { const [h, m] = hm.split(':').map(Number); return h * 60 + m; };
+        const fmtP = (v, k) => k === 'dolar' ? 'R$ ' + LX.num(v, 4) : LX.num(v, 0);
+        const chip = (lbl, v) => v == null ? '' : `<span class="px-1.5 py-0.5 font-mono text-[10px] font-bold ${v > 0 ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' : v < 0 ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400' : 'bg-slate-100 dark:bg-white/5'}">${lbl} ${LX.pct(v, 2, true)}</span>`;
+
+        function grafico(k, m) {
+            const el = $('hj-' + k), s = m[k];
+            if (!s || !(s.pontos || []).length) { el.innerHTML = '<p class="text-sm text-slate-500 py-16 text-center">Sem cotações para este dia.</p>'; $('hj-' + k + '-v').textContent = ''; return; }
+            const pts = s.pontos, base = s.anterior || pts[0][1];
+            const W = 1000, H = 240, pl = 8, pr = 64, pt = 12, pb = 26;
+            const xs = pts.map(p => minDia(p[0])), x0 = Math.min(600, xs[0]), x1 = Math.max(1080, xs[xs.length - 1]);
+            const ys = pts.map(p => p[1]), lo = Math.min(...ys, base), hi = Math.max(...ys, base), pad = (hi - lo) * 0.08 || base * 0.002;
+            const X = x => pl + (x - x0) / (x1 - x0) * (W - pl - pr), Y = v => pt + (1 - (v - (lo - pad)) / ((hi + pad) - (lo - pad))) * (H - pt - pb);
+            const ult = ys[ys.length - 1], varDia = (ult / base - 1) * 100, cor = varDia >= 0 ? '#10B981' : '#F43F5E';
+            $('hj-' + k + '-v').innerHTML = `${fmtP(ult, k)} <span style="color:${cor}">${LX.pct(varDia, 2, true)}</span>`;
+            let svg = `<svg viewBox="0 0 ${W} ${H}" class="w-full h-auto font-mono" role="img" aria-label="${k === 'ibov' ? 'Ibovespa' : 'Dólar'} ao longo do dia com manchetes marcadas">`;
+            for (let hh = 10; hh <= 18; hh++) { const x = X(hh * 60); svg += `<line x1="${x}" y1="${pt}" x2="${x}" y2="${H - pb}" stroke="currentColor" stroke-opacity=".08"/><text x="${x}" y="${H - 8}" font-size="11" text-anchor="middle" fill="currentColor" fill-opacity=".5">${hh}h</text>`; }
+            svg += `<line x1="${pl}" y1="${Y(base)}" x2="${W - pr}" y2="${Y(base)}" stroke="currentColor" stroke-opacity=".35" stroke-dasharray="4 4"/><text x="${W - pr + 6}" y="${Y(base) + 4}" font-size="11" fill="currentColor" fill-opacity=".55">ant.</text>`;
+            const d = pts.map((p, i) => `${i ? 'L' : 'M'}${X(minDia(p[0])).toFixed(1)},${Y(p[1]).toFixed(1)}`).join('');
+            svg += `<path d="${d} L${X(xs[xs.length - 1]).toFixed(1)},${H - pb} L${X(xs[0]).toFixed(1)},${H - pb} Z" fill="${cor}" fill-opacity=".08"/><path d="${d}" fill="none" stroke="${cor}" stroke-width="2"/>`;
+            svg += `<text x="${W - pr + 6}" y="${Y(ult) + 4}" font-size="11" font-weight="700" fill="${cor}">${k === 'dolar' ? LX.num(ult, 3) : LX.num(ult / 1000, 1) + 'k'}</text>`;
+            (m.marcadores || []).forEach((mk, i) => {
+                const t = minDia(mk.hora); if (t < xs[0] - 5 || t > xs[xs.length - 1] + 5) return;
+                const antes = pts.filter(p => minDia(p[0]) <= t).pop() || pts[0];
+                const x = X(t), y = Y(antes[1]), forte = mk.impacto === 'alto', c = forte ? '#F59E0B' : '#14B8A6';
+                svg += `<g class="hj-mk" data-i="${i}" tabindex="0" style="cursor:pointer"><line x1="${x}" y1="${pt}" x2="${x}" y2="${H - pb}" stroke="${c}" stroke-opacity=".45" stroke-dasharray="2 3"/><circle cx="${x}" cy="${y}" r="${forte ? 7 : 5.5}" fill="${c}" stroke="#05101C" stroke-width="2"/><circle cx="${x}" cy="${y}" r="14" fill="transparent"/></g>`;
+            });
+            el.innerHTML = svg + '</svg>';
+        }
+
+        function dica(e, mk) {
+            const tip = $('hj-tip');
+            tip.innerHTML = `<strong>${esc(mk.hora)} · ${esc(mk.fonte)}</strong><p>${esc(mk.titulo)}</p><span class="flex flex-wrap gap-1 mt-2">${chip('Ibov 30 min', mk.ibov30)}${chip('Dólar 30 min', mk.dolar30)}</span><a href="${esc(mk.url)}" target="_blank" rel="noopener nofollow">Abrir a matéria →</a>`;
+            tip.hidden = false;
+            const r = e.getBoundingClientRect(), tw = Math.min(320, innerWidth - 24); tip.style.width = tw + 'px';
+            tip.style.left = Math.max(12, Math.min(innerWidth - tw - 12, r.left + r.width / 2 - tw / 2)) + 'px';
+            const th = tip.offsetHeight; tip.style.top = ((r.top > th + 16 ? r.top - th - 10 : r.bottom + 10) + scrollY) + 'px';
+        }
+
+        function pintar(m) {
+            atual = m;
+            const ehHoje = m && m.data === hojeISO;
+            $('hj-quando').textContent = !m ? 'hoje' : ehHoje ? 'hoje' : 'em ' + LX.weekday(new Date(m.data + 'T12:00:00')) + ' ' + m.data.slice(8, 10) + '/' + m.data.slice(5, 7);
+            $('hj-vivo').classList.toggle('hidden', !ehHoje); $('hj-vivo').classList.toggle('inline-flex', ehHoje);
+            if (!m) { $('hj-resumo').innerHTML = ''; ['ibov', 'dolar'].forEach(k => $('hj-' + k).innerHTML = '<p class="text-sm text-slate-500 py-16 text-center">O primeiro dia aparece a partir do pregão de hoje, às 10h.</p>'); $('hj-lista').innerHTML = ''; return; }
+            ['ibov', 'dolar'].forEach(k => grafico(k, m));
+            const mks = m.marcadores || [];
+            const v = k => { const s = m[k]; if (!s || !s.pontos.length) return null; return (s.pontos[s.pontos.length - 1][1] / (s.anterior || s.pontos[0][1]) - 1) * 100; };
+            const maior = mks.map(x => ({ x, a: Math.max(Math.abs(x.ibov30 || 0), Math.abs(x.dolar30 || 0)) })).sort((a, b) => b.a - a.a)[0];
+            const card = (l, val, sub) => `<div class="term-panel p-4"><span class="term-label">${l}</span><strong class="block font-display text-xl mt-1">${val}</strong><span class="block text-[11px] text-slate-500 mt-1">${sub}</span></div>`;
+            $('hj-resumo').innerHTML = card('IBOVESPA NO DIA', v('ibov') == null ? '—' : `<span class="${LX.signClass(v('ibov'))}">${LX.pct(v('ibov'), 2, true)}</span>`, 'contra o fechamento anterior')
+                + card('DÓLAR NO DIA', v('dolar') == null ? '—' : `<span class="${LX.signClass(v('dolar'))}">${LX.pct(v('dolar'), 2, true)}</span>`, 'contra o fechamento anterior')
+                + card('MANCHETES MARCADAS', mks.length, `${mks.filter(x => x.impacto === 'alto').length} de alto impacto`)
+                + card('MAIOR MOVIMENTO APÓS MANCHETE', maior && maior.a ? `${maior.x.hora}` : '—', maior && maior.a ? esc(maior.x.titulo.slice(0, 60)) + '…' : 'aguardando 30 min após as manchetes');
+            $('hj-lista').innerHTML = mks.length ? mks.slice().reverse().map((x, i) => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener nofollow" class="flex gap-3 px-4 py-3 hover:bg-slate-50 dark:hover:bg-white/[0.03]"><span class="font-mono text-xs font-bold w-12 shrink-0 ${x.impacto === 'alto' ? 'text-lect-orange' : 'text-lect-teal'}">${esc(x.hora)}</span><span class="flex-1 min-w-0"><span class="block text-sm font-semibold leading-snug">${esc(x.titulo)}</span><span class="flex flex-wrap items-center gap-1 mt-1.5 font-mono text-[10px] text-slate-500">${esc(x.fonte)} ${chip('Ibov 30 min', x.ibov30)} ${chip('Dólar 30 min', x.dolar30)}${x.ibov30 == null && x.dolar30 == null ? ' · reação em até 30 min' : ''}</span></span></a></li>`).join('') : '<li class="px-4 py-6 text-sm text-slate-500">Nenhuma manchete marcada neste dia ainda.</li>';
+            document.querySelectorAll('.hj-mk').forEach(g => { const mk = mks[+g.dataset.i]; g.addEventListener('mouseenter', () => dica(g, mk)); g.addEventListener('focus', () => dica(g, mk)); g.addEventListener('click', ev => { ev.stopPropagation(); dica(g, mk); }); });
+        }
+        document.addEventListener('click', e => { if (!e.target.closest('#hj-tip') && !e.target.closest('.hj-mk')) $('hj-tip').hidden = true; });
+        document.addEventListener('mouseover', e => { if (!e.target.closest('.hj-mk') && !e.target.closest('#hj-tip')) $('hj-tip').hidden = true; });
+
+        const t = () => Math.floor(Date.now() / 6e4);
+        function carregarDia(d) {
+            escolhido = d;
+            if (d === 'aovivo') return fetch(AOVIVO + '?t=' + t(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => pintar(j && j.mercado && j.mercado.data ? j.mercado : null)).catch(() => pintar(null));
+            return fetch(`data/dias/${d}.json`, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(pintar).catch(() => pintar(null));
+        }
+        Promise.all([
+            fetch(AOVIVO + '?t=' + t(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null),
+            fetch('data/dias/indice.json?t=' + t(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null)
+        ]).then(([av, ind]) => {
+            const temHoje = av && av.mercado && av.mercado.data === hojeISO;
+            dias = ((ind && ind.dias) || []).filter(d => d !== hojeISO).slice().reverse();
+            const opts = (temHoje ? [['aovivo', 'Hoje (ao vivo)']] : []).concat(dias.map(d => [d, `${LX.weekday(new Date(d + 'T12:00:00'))} ${d.slice(8, 10)}/${d.slice(5, 7)}`]));
+            $('hj-dia').innerHTML = opts.length ? opts.map(([v, l]) => `<option value="${v}">${l}</option>`).join('') : '<option>—</option>';
+            $('hj-dia').onchange = () => carregarDia($('hj-dia').value);
+            if (temHoje) pintar(av.mercado); else if (dias.length) carregarDia(dias[0]); else pintar(null);
+            setInterval(() => { if (escolhido === '' && temHoje || escolhido === 'aovivo') carregarDia('aovivo'); }, 60000);
+        });
+    })();
+    </script>
+</body>
+</html>

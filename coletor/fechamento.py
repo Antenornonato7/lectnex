@@ -65,6 +65,20 @@ def dolar():
     return None, None
 
 
+def arquivar_dia(m):
+    """Guarda o gráfico do dia com as manchetes em data/dias/AAAA-MM-DD.json (página "O que mexeu hoje")."""
+    if SO_STORY or m.get('data') != hoje.isoformat() or not (m.get('ibov') or m.get('dolar')):
+        return
+    os.makedirs('data/dias', exist_ok=True)
+    json.dump(m, open(f'data/dias/{hoje.isoformat()}.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+    try:
+        ind = json.load(open('data/dias/indice.json', encoding='utf-8'))
+    except Exception:
+        ind = {'dias': []}
+    ind['dias'] = sorted(set(ind['dias']) | {hoje.isoformat()})[-120:]
+    json.dump(ind, open('data/dias/indice.json', 'w', encoding='utf-8'), ensure_ascii=False)
+
+
 def manchetes_que_mexeram():
     """As 3 manchetes do dia seguidas dos maiores movimentos em 30 min (Ibovespa para WIN, dólar para WDO).
     Manchetes: branch ao-vivo (noticias-agora.json → 'hoje'). Preços: Yahoo Finance, barras de 5 min."""
@@ -75,7 +89,9 @@ def manchetes_que_mexeram():
         req = urllib.request.Request(f'https://api.github.com/repos/{repo}/contents/noticias-agora.json?ref=ao-vivo',
                                      headers={'Authorization': f'Bearer {tok}', 'Accept': 'application/vnd.github.raw', 'User-Agent': 'lectnex-bot'})
         with urllib.request.urlopen(req, timeout=20) as r:
-            hoje_n = json.loads(r.read()).get('hoje', [])
+            aovivo = json.loads(r.read())
+        hoje_n = aovivo.get('hoje', [])
+        arquivar_dia(aovivo.get('mercado') or {})
     except Exception as e:
         tg.note('warning', f'Manchetes do dia indisponíveis: {e.__class__.__name__}')
         return []

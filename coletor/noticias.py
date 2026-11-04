@@ -193,6 +193,61 @@ def alerta_celular(final):
     return ENVIADAS
 
 
+MERCADO = {}  # série de 5 min do dia (Ibovespa e dólar) + reação 30 min depois de cada manchete
+
+
+def serie_yahoo(sym):
+    ua = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36', 'Accept': 'application/json'}
+    for host in ('query2', 'query1'):
+        try:
+            req = urllib.request.Request(f'https://{host}.finance.yahoo.com/v8/finance/chart/{sym}?interval=5m&range=1d', headers=ua)
+            with urllib.request.urlopen(req, timeout=20) as r:
+                res = json.loads(r.read())['chart']['result'][0]
+            pts = [(dt.datetime.fromtimestamp(t, BRT), c) for t, c in zip(res['timestamp'], res['indicators']['quote'][0]['close']) if c]
+            return pts, res['meta'].get('chartPreviousClose') or res['meta'].get('previousClose')
+        except Exception as e:
+            err = e
+    print(f'::warning::Série de 5 min indisponível ({sym}): {err.__class__.__name__}')
+    return [], None
+
+
+def atualizar_mercado():
+    """Durante o pregão (dias úteis, 9h55–18h40), guarda o dia em barras de 5 min e mede a reação de cada manchete."""
+    global MERCADO
+    agora = AGORA.astimezone(BRT)
+    if agora.weekday() >= 5 or not (dt.time(9, 55) <= agora.time() <= dt.time(18, 40)):
+        return
+    dia = agora.date().isoformat()
+    out = {'data': dia, 'atualizado_em': agora.isoformat(timespec='minutes')}
+    series = {}
+    for nome, sym in (('ibov', '%5EBVSP'), ('dolar', 'BRL%3DX')):
+        pts, ant = serie_yahoo(sym)
+        pts = [(t, c) for t, c in pts if t.date().isoformat() == dia and dt.time(9, 0) <= t.time() <= dt.time(18, 30)]
+        if pts:
+            series[nome] = pts
+            out[nome] = {'anterior': ant, 'pontos': [[t.strftime('%H:%M'), round(c, 4 if nome == 'dolar' else 0)] for t, c in pts]}
+    if not series:
+        return
+
+    def reacao(pts, t0):
+        antes = [c for t, c in pts if t <= t0]
+        depois = [c for t, c in pts if t0 + dt.timedelta(minutes=25) <= t <= t0 + dt.timedelta(minutes=35)]
+        return round((depois[0] / antes[-1] - 1) * 100, 2) if antes and depois else None
+
+    marcas = []
+    for h in HOJE:
+        t0 = dt.datetime.fromisoformat(h['publicado'])
+        if t0.date().isoformat() != dia or not (dt.time(9, 0) <= t0.time() <= dt.time(18, 0)):
+            continue
+        m = {'hora': t0.strftime('%H:%M'), 'titulo': h['titulo'], 'fonte': h['fonte'], 'url': h['url'], 'impacto': h.get('impacto'),
+             'ativos': h.get('ativos', []), 'tickers': h.get('tickers', [])}
+        if 'ibov' in series: m['ibov30'] = reacao(series['ibov'], t0)
+        if 'dolar' in series: m['dolar30'] = reacao(series['dolar'], t0)
+        marcas.append(m)
+    out['marcadores'] = marcas
+    MERCADO = out
+
+
 def carregar_estado():
     """Lê do branch ao-vivo a lista de manchetes já enviadas por push (para não repetir entre execuções)."""
     global ENVIADAS
@@ -207,6 +262,8 @@ def carregar_estado():
         ENVIADAS = d.get('enviadas', [])
         global HOJE
         HOJE = d.get('hoje', [])
+        global MERCADO
+        MERCADO = d.get('mercado', {})
         json.dump(d, open(SAIDA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)  # base de comparação = o que está no ar
     except Exception as e:
         print(f'::warning::Não consegui ler o estado do ao-vivo: {e.__class__.__name__}')
@@ -268,7 +325,9 @@ def main():
             HOJE.append({'titulo': n['titulo'], 'fonte': n['fonte'], 'url': n['url'], 'publicado': pub.isoformat(timespec='minutes'),
                          'impacto': 'alto' if n['impacto'] >= 5 else 'medio', 'ativos': n['ativos'], 'tickers': n.get('tickers', [])})
     HOJE = sorted(HOJE, key=lambda h: h['publicado'])[-80:]
+    atualizar_mercado()
     novo = {
+        'mercado': MERCADO,
         'hoje': HOJE,
         'enviadas': enviadas,
         'atualizado_em': AGORA.astimezone(BRT).isoformat(timespec='minutes'),
@@ -282,7 +341,7 @@ def main():
         antigo = json.load(open(SAIDA, encoding='utf-8'))
     except Exception:
         antigo = {}
-    if [x['url'] for x in antigo.get('noticias', [])] == [x['url'] for x in novo['noticias']] and antigo.get('enviadas') == enviadas and len(antigo.get('hoje', [])) == len(HOJE):
+    if [x['url'] for x in antigo.get('noticias', [])] == [x['url'] for x in novo['noticias']] and antigo.get('enviadas') == enviadas and len(antigo.get('hoje', [])) == len(HOJE) and antigo.get('mercado', {}).get('atualizado_em') == MERCADO.get('atualizado_em'):
         print(f'Sem mudança ({len(final)} manchetes); não grava.')
         return False
     json.dump(novo, open(SAIDA, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
