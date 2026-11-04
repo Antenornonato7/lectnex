@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T11:08-03:00",
+  "atualizado_em": "2026-11-04T11:38-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -47,11 +47,35 @@
     ],
     [
      "10:50",
-     167248.0
+     167191.0
     ],
     [
-     "10:53",
-     167291.0
+     "10:55",
+     167079.0
+    ],
+    [
+     "11:00",
+     166866.0
+    ],
+    [
+     "11:05",
+     167016.0
+    ],
+    [
+     "11:10",
+     166961.0
+    ],
+    [
+     "11:15",
+     166939.0
+    ],
+    [
+     "11:20",
+     167391.0
+    ],
+    [
+     "11:23",
+     167384.0
     ]
    ]
   },
@@ -160,11 +184,35 @@
     ],
     [
      "11:05",
-     5.4752
+     5.4756
     ],
     [
-     "11:08",
-     5.4742
+     "11:10",
+     5.4797
+    ],
+    [
+     "11:15",
+     5.4797
+    ],
+    [
+     "11:20",
+     5.4802
+    ],
+    [
+     "11:25",
+     5.478
+    ],
+    [
+     "11:30",
+     5.477
+    ],
+    [
+     "11:35",
+     5.4827
+    ],
+    [
+     "11:38",
+     5.479
     ]
    ]
   },
@@ -407,7 +455,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.12,
+    "ibov30": -0.16,
     "dolar30": 0.05
    },
    {
@@ -422,8 +470,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.21
+    "ibov30": -0.07,
+    "dolar30": 0.22
    },
    {
     "hora": "10:40",
@@ -436,8 +484,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.21
+    "ibov30": -0.26,
+    "dolar30": 0.22
    },
    {
     "hora": "10:40",
@@ -450,8 +498,23 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.21
+    "ibov30": -0.26,
+    "dolar30": 0.22
+   },
+   {
+    "hora": "10:41",
+    "titulo": "Gerdau encerra produção de aço em unidade de Divinópolis, em Minas Gerais",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/negocios/gerdau-encerra-producao-aco-unidade-divinopolis-minas-gerais/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "GGBR4"
+    ],
+    "ibov30": -0.29,
+    "dolar30": 0.3
    },
    {
     "hora": "10:43",
@@ -463,8 +526,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.2
+    "ibov30": -0.29,
+    "dolar30": 0.3
    },
    {
     "hora": "10:49",
@@ -476,8 +539,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.26,
+    "dolar30": 0.2
    },
    {
     "hora": "10:53",
@@ -492,8 +555,8 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.12,
+    "dolar30": 0.2
    },
    {
     "hora": "10:54",
@@ -507,8 +570,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.12,
+    "dolar30": 0.2
    },
    {
     "hora": "11:02",
@@ -518,6 +581,20 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.02
+   },
+   {
+    "hora": "11:28",
+    "titulo": "Tesouro Direto hoje recua dos 8% reais antes do Copom; veja as taxas desta quarta-feira",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbVFuVVdoMU9NZEVJUVJFbWUxMk5BMjFKMnRDcDRoOVg0bjhmbE9lUEVidTFDYnFLdGJtVDVqWDNKb0g1d29JbHhNN3pNZzZlckdaN0tnZUp1Rk41NVJRNWIzd2xUMjBJZUVxcnlmRlZ2a3VRamdqUzJ5WDYxRDNnOWFILUxFQk5fY2dPWVdMdzU0ZVpsQjVLVS1neDdlWm53bmt4c2lNNklkTW1vZUlFSC1tUzJfSzh4NUVmajBzQ3BOQkRROVd5ekxjYk56NjlyR1U1LTE1alU5Ym1XeWhIdWNMWmR5dlE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1155,6 +1232,19 @@
    "tickers": []
   },
   {
+   "titulo": "Gerdau encerra produção de aço em unidade de Divinópolis, em Minas Gerais",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/negocios/gerdau-encerra-producao-aco-unidade-divinopolis-minas-gerais/",
+   "publicado": "2026-11-04T10:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GGBR4"
+   ]
+  },
+  {
    "titulo": "Inflação anual na zona do euro atinge maior nível em três anos",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ1RUUjFTSmpXbE5oMXV2SVhuSW50M0dBbVpna0dtYmU4UHVDWFhRdF9uX2VCMUp3eG1xZXd3dmJmRU9xdk8taHFreGRNMVY4X0pDN3B0SDY1Vk54MlRMdXlkQW1seGJkSkRrN2ppZjhZRW1JTGxlOHk0VTNMeEF1MWN3Q1hvRUhKNUZDWjNOM05RdFBvQjJEMElybWIyLVRyV1M3NHIxME85ejQ5dFJXLW56VklxYUdETnJLZnNR?oc=5",
@@ -1211,6 +1301,18 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro Direto hoje recua dos 8% reais antes do Copom; veja as taxas desta quarta-feira",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbVFuVVdoMU9NZEVJUVJFbWUxMk5BMjFKMnRDcDRoOVg0bjhmbE9lUEVidTFDYnFLdGJtVDVqWDNKb0g1d29JbHhNN3pNZzZlckdaN0tnZUp1Rk41NVJRNWIzd2xUMjBJZUVxcnlmRlZ2a3VRamdqUzJ5WDYxRDNnOWFILUxFQk5fY2dPWVdMdzU0ZVpsQjVLVS1neDdlWm53bmt4c2lNNklkTW1vZUlFSC1tUzJfSzh4NUVmajBzQ3BOQkRROVd5ekxjYk56NjlyR1U1LTE1alU5Ym1XeWhIdWNMWmR5dlE?oc=5",
+   "publicado": "2026-11-04T11:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   }
@@ -1242,7 +1344,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T11:08-03:00",
+ "atualizado_em": "2026-11-04T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1256,6 +1358,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Tesouro Direto hoje recua dos 8% reais antes do Copom; veja as taxas desta quarta-feira",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbVFuVVdoMU9NZEVJUVJFbWUxMk5BMjFKMnRDcDRoOVg0bjhmbE9lUEVidTFDYnFLdGJtVDVqWDNKb0g1d29JbHhNN3pNZzZlckdaN0tnZUp1Rk41NVJRNWIzd2xUMjBJZUVxcnlmRlZ2a3VRamdqUzJ5WDYxRDNnOWFILUxFQk5fY2dPWVdMdzU0ZVpsQjVLVS1neDdlWm53bmt4c2lNNklkTW1vZUlFSC1tUzJfSzh4NUVmajBzQ3BOQkRROVd5ekxjYk56NjlyR1U1LTE1alU5Ym1XeWhIdWNMWmR5dlE?oc=5",
+   "publicado": "2026-11-04T11:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Alta do dólar começa a impactar açúcar, trigo e café, que podem ficar mais caros para o consumidor",
    "fonte": "Folha",
@@ -1306,6 +1420,18 @@
    "tickers": []
   },
   {
+   "titulo": "Americans have said 'NO TO WAR,' Iran speaker says as Democrats take Congress",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/us-midterm-elections-iran-war-speaker.html",
+   "publicado": "2026-11-04T10:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Inflação anual na zona do euro atinge maior nível em três anos",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ1RUUjFTSmpXbE5oMXV2SVhuSW50M0dBbVpna0dtYmU4UHVDWFhRdF9uX2VCMUp3eG1xZXd3dmJmRU9xdk8taHFreGRNMVY4X0pDN3B0SDY1Vk54MlRMdXlkQW1seGJkSkRrN2ppZjhZRW1JTGxlOHk0VTNMeEF1MWN3Q1hvRUhKNUZDWjNOM05RdFBvQjJEMElybWIyLVRyV1M3NHIxME85ejQ5dFJXLW56VklxYUdETnJLZnNR?oc=5",
@@ -1315,6 +1441,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Gerdau encerra produção de aço em unidade de Divinópolis, em Minas Gerais",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/negocios/gerdau-encerra-producao-aco-unidade-divinopolis-minas-gerais/",
+   "publicado": "2026-11-04T10:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GGBR4"
+   ]
   },
   {
    "titulo": "Mercado espera que Copom interrompa cortes na Selic e reconheça piora do cenário econômico",
@@ -1354,6 +1493,18 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar cai e Bolsa sobe após vitória democrata nos EUA; mercado aguarda decisão do Copom",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-com-vitoria-democrata-nos-eua-juros-futuros-ficam-de-lado-a-espera-do-copom.shtml",
+   "publicado": "2026-11-04T09:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Aumento de juros pelo Banco Central Europeu parece quase certo após inflação atingir maior nível em três anos",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX3hBNjFEQzUyVHBDYUxpbUNCMDc5MkxTVHpZajQyVzBxOGNPMFpVMlZucUtGc0c5NmtNZllJYVdBLW1MWklzUzdwOWM1b0hNd05mdEtfd01yVjF1QmZKWUNtbGg5TE5SNFFFZm1uV3g2eFNJMmdFVXFtdnZhYmMwNXFJQTFYZjUtck1qbmJBX2J1czlWSl9Lc3MyNTZreldnWHNIWDJhOHRoY3lqZzVmSUtBT3hobHQxQ1o4bEJSeFJfSzdGeUE?oc=5",
@@ -1378,62 +1529,12 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
-   "publicado": "2026-11-04T09:38-03:00",
+   "titulo": "BC da Suécia sobe taxa de juros a 2%, primeira alta em três anos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468020",
+   "publicado": "2026-11-04T09:24-03:00",
    "impacto": "alto",
    "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar cai com resultado das eleições dos EUA e decisão do Copom no radar",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcEZZYVhwM3M3OXZfeGlOVXdWcF91S2wxRVhtd0tRWDVKTjlDRERma3JuR3ExTlgwNHd6QWVCLXZPelZUOHJrSDJiUFh5bUJVRVF2ZHNmSGFrbFlwUF9xbm4yc0xzQ1hGQ1p5dlhIQ19Ub0RCVFIxUGtoUTZac3RvdlhacGVpM0lPZTlkUElKb0MwMTFyZnkxcWF2Ym1wakR2QURiUHFUd09sZjd3d3lhS1Y1NDZueTF1QTZ3bG14OVUxM1U?oc=5",
-   "publicado": "2026-11-04T09:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros acompanham Treasuries e têm alívio; mercado segue à espera do Copom",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSTB5TWZuS3hSZnRxTHZveHQtMTN5WWVPTUhXNmZzdHZRVy1lcGx1bnVmbTRXOVpKdU5JXzlrOUFncVV2ZWNqZTFqX1Jmc3UtSkk3Sm1EM2owQzh5MXBadDA2ME1zb0luSC1IdGRmNlczNEUzWUo2SmpyRUJuVzVXV25GRkFSb0swSHFzVkt4cktPZzh0dEtJZno2cmtuaUJ4czFVOU45VHpxaGlBeEhCb3Y2QnVyX0N6anpNajJaMWNYdU53OTlvQm5pN0FrRk1SS2ZSTdIB4wFBVV95cUxOSHhwUlZxSWllSGs3aFFVR1E5eUNwaU90TDRHRjdxSW9hZWx6dGdwem5RMVJIWU9xUGpXcWJFZkhZd0RDdmJnQ3BPN3QwZ3J3V01JMXNUQkVDMjhocWNKM0cwd0kwUldYdUVwaDdseTI2V0Q5VDJiZ1pQYkNPT3V2OVhVamtoejI4WkxteVgxS0t0MUhkUTU5QTFaN055ZjRjZkxfd0Qtb3JpMXczRnpFcWExdnROc3hraC1STnkxV3g0ZW5tSDZTdGRsbk9aY3JlblJsRk5xYTc2akgxb05mM3psdw?oc=5",
-   "publicado": "2026-11-04T09:36-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje cai com resultado eleitoral nos EUA e expectativa por Copom",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZmt5UVRWNmNJdWk4M3UxWjdNMzJ0c0dYM1dhUVJKaEVfaWt2UDJYWGYxQWxkQ1pMbjExRlRaeGZ2dlI0RmxXZk1rQ1pFY1dNbDVUVjU0OFoxNjBzVjB5OXc5cDUzcDVpM3Yxd3ByZnhNak9DU1JweUJVVzFRRXY0TzJ4WTJEM3pSX2hLcUc2YkZNX2dzUmVKOTVITVnSAaIBQVVfeXFMT0VYU0hGN19tNGdBZlB4LURKREJjSTRTZTFDNzFUS0EzVjhSMjdlS1JzdXprZWc4c3puUzFmbkFveUlRczBKTGMtLVpTbWk1YURrZzlvX1NPdFBfSk81NmVGYlRCNVduc2RlZmQ0aUczVEhfVFJMdkk3enV3VTlBUzdqeDUySHN0QWpaZ0hpRDUwUVNDMGN0NF94dUVYTFQ4Q0Jn?oc=5",
-   "publicado": "2026-11-04T09:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa Futuro avança com vitória democrata nos EUA e expectativa por Copom",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcHlIcUFHLTJuQUV1ZUJEV09QQ1p4QzViZHh4WjNZN24tZTVoYUhBNEVycVBZTXYxbHcwNGlfcW5CS1Z4X05FVGtQbXBxWFpySGxCN2xPLTd5c2s0b2pQOXYxMC1oNTI3Q2lTMGNPMUpKUmpqZ29taHg2ME55SjZXRlJ2LWlkWW1oTXJVNXpCZ0NWQlpIQWMyZXNiUlR1S1o3UTVfWjc3Q2J4X3NpVFBVNUpsa3lQd9IBuwFBVV95cUxQVk1BMnNvOHVPaGtldzhxLXNieVhjRUhXZ1NldDlZZXU3bzBoVGF6LWFGNGp1T1JuVjVlVGtZUThhaUdfeHpHcjFMcWJPUmNlREYxMVVxWS1udTNhRkM4V0JDeHE4U3hqRVdJVEkwaGRnTTNkc1RwVGN5UjA3aGJsYmstNUJwZXFQa3dPMlRsamNMN1NKbjdBMG5wb3J1ODZUNzV0RDdLVlBveS1aNTM0LVhPNDN3Ujk4Vm9r?oc=5",
-   "publicado": "2026-11-04T09:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
