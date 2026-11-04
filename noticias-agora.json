@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T17:23-03:00",
+  "atualizado_em": "2026-11-04T17:25-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     167249.0
+     167217.0
     ]
    ]
   },
@@ -752,11 +752,11 @@
     ],
     [
      "17:20",
-     5.4556
+     5.4576
     ],
     [
-     "17:23",
-     5.4564
+     "17:25",
+     5.4576
     ]
    ]
   },
@@ -1483,7 +1483,7 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": -0.1,
+    "ibov30": -0.12,
     "dolar30": -0.03
    },
    {
@@ -1496,7 +1496,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.1,
+    "ibov30": -0.12,
     "dolar30": -0.03
    },
    {
@@ -1510,7 +1510,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.08
+    "dolar30": 0.12
    },
    {
     "hora": "17:06",
@@ -2539,7 +2539,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T17:23-03:00",
+ "atualizado_em": "2026-11-04T17:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2588,6 +2588,17 @@
    "tickers": []
   },
   {
+   "titulo": "Ouro sobe mais de 3% com queda do dólar após vitória democrata nos EUA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTENnV1pyTlg5bU1LNUZOZUZ2d2N2Wi1xTEY4cE5ETHM4cmJUM1BwSThWWm1ULUhWZDd2bm9kZThmSU1KZ0lXeXZwSGg3d0VQVWpVMFluV2JmUUw4WGN1cVpqNk1mY1NpaV9ER19DQmlxMUZqVFczd1liVFlWTnE4Qmh5VTdVcjhTd1F4WFhwLS03NFlBVDVwSGkzWW42d3ZHbkhuRXEzZ0xqbUZsQWlfTmN6UlVibmJqZm9jY2xNOA?oc=5",
+   "publicado": "2026-11-04T16:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVEzYXNXU09LYVdHYk5WVGc2bVpTXzk2ZlJ3ZUdoR0NMaFAzWHNiX1c0OHZLcjhBMFBPSkVaZTQzRW9PM0ZkbHJwNjlpQWNub19QZ3ZsRlp5aHVaVWtmb1ViRUMyUHJETEFBTmZ1cGRzMVNValU0eGlHN3NqWkxrN2p6QlZPX3JUU0NBV2ZVQmFLU2FnWGtROWUtNWpvLXFNSFVpT3d0ME5fTTUtdTdHeU9ZNjZPVTlMczZwMU5XR2dETkpwNmYwRw?oc=5",
@@ -2627,19 +2638,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
-   "publicado": "2026-11-04T16:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ações do Ibovespa: mediana do P/L cai abaixo do nível da pandemia após eleições",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTHpRb045cEVnTHJBT2VpZFFZODRtTmlQc1NaeXFZM3dkUHBRcU14aEdXdTdROFgza2lyRm05aVkwUDZXWXlQX2x0ZnczNXlJNXpzZFJOQkFXZ3p0TGRndjFBZXJTNDQ3RlMzSVB3bXd0Sng1b2tzNGdaN0VZdFFpUXVKdWtZZEpXSUxyam5wRmRUSWE2NVk5LVBJYTh1ZkFHZ1gzWkxPUVFraHJKQ2J4ZkVOaTVsRVJSeHZtd2RDSmVoTmtjX2ZYV3hn0gHPAUFVX3lxTE9pRW9XTEUwVEFUYVFRdDV3ckgxZjlxeDdRYVFMdlBZUWZIdGRXcUUwRzdNS0g4LWJpdGxZNHVMUXM1V09nRHJLU05SYzBreF9FSVZPNm80RXdlLUdlcjN2QVFHbXozNmY4XzZNOGowV1lIRzZqMlVBbU1FVk9neDlxcG1kelM3alY5X0FCSjY0NVlyRGZpNE1lYVhZV2padjA3eUpxenRwWm9uV0dWeVZlNnJMOXhfMGdvc0k3bnlmbmJqRDdfRWh1UWRSQTJSMA?oc=5",
@@ -2647,18 +2645,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Economia perde força, emprego resiste: os dados que vão pesar na decisão do Copom",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVUdXcHlpT2RwTGI1RVc3SGJ4YUtITUhQZVlncHhCeTdpLUhlQXNJNVBNbWY0azRfdDNITzRkam1QNDdaNjVLaGNBRkh0NWktWjVZemtKblhWeXJDb3A3WVd5Mk92c2k4eThJRmNoN1RUQkVDTk81U3JlQnFYMXBrckxGX3lqTkZBTzBhaE9maGtqcWhIa0M5dTJic3BfelJsZVZtMXhnYzNhVEZpSWRyZkswWHRuNVBXVmFaSkNUTWF5TDFYMzR1T05SandnWVBXcUE?oc=5",
-   "publicado": "2026-11-04T15:24-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
