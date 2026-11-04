@@ -1,17 +1,17 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T10:18-03:00",
+  "atualizado_em": "2026-11-04T10:20-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
     [
      "10:00",
-     165584.0
+     165877.0
     ],
     [
-     "10:03",
-     165632.0
+     "10:05",
+     165843.0
     ]
    ]
   },
@@ -80,11 +80,11 @@
     ],
     [
      "10:15",
-     5.462
+     5.465
     ],
     [
-     "10:18",
-     5.4581
+     "10:20",
+     5.463
     ]
    ]
   },
@@ -228,7 +228,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.27
+    "dolar30": -0.18
    },
    {
     "hora": "09:53",
@@ -242,7 +242,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.27
+    "dolar30": -0.18
    },
    {
     "hora": "09:56",
@@ -818,7 +818,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T10:18-03:00",
+ "atualizado_em": "2026-11-04T10:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -977,23 +977,25 @@
    "tickers": []
   },
   {
-   "titulo": "Inflação na zona do euro sobe a 4% em outubro e atinge maior nível em três anos",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468017",
-   "publicado": "2026-11-04T09:05-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Selic vai parar de cair? Maioria dos bancos espera pausa do Copom amanhã; veja projeções",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOTk2ajRJQ2JqM0Y3MnFUQkk2MVZCU3VfdURwdjVzNXZ4blVqc1FYNXg0ZVFvcVBuaXJlSHhQVzl0MEZ6VmhoZEtGRFpULXh4OVRUTlhDOENaano3bmhMaTh4VkEwaWNIMWM3N3AwdW9xLXNacXhGVjRobks2YVhveEJkT3ROc0VBYzlIci10bmVJbWtZb252RjZBQ19LWDVhM3ZEUU9wQzhsOE1xQi1HUzdJRHdhemdxVG5RRkJNQQ?oc=5",
    "publicado": "2026-11-04T09:00-03:00",
    "impacto": "alto",
    "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tempo real: Ibovespa sobe 1% à espera de Copom",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPM0lJdlBLNklMRm0zemlscUdWSU1SbTlHTGJsbVUzWURKVEsweTJCTWpJN3VVMW9hdTVDcHYydzJleGZQeF9IZUhzdTh3dHh5T2FNQ3B4MXVnQmc5cEVkMVhYTVJ4NmpDNXF6bzNiMUxiOXJUd2MxUmg0NWh5UU9lcWRR?oc=5",
+   "publicado": "2026-11-04T08:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
