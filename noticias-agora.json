@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T18:28-03:00",
+  "atualizado_em": "2026-11-04T18:30-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -804,11 +804,7 @@
     ],
     [
      "18:25",
-     5.4578
-    ],
-    [
-     "18:28",
-     5.4581
+     5.4591
     ]
    ]
   },
@@ -1622,17 +1618,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Bolsa cai 1,4%, juro sobe e dólar ronda os R$ 5,50",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb3R0T1dScTRuOWhrMFItZjVDbnRIU2szRDViaWkzTnZBbjBlb3hYSjdzb3JTOS1QMDJ1RS1ONVI1R3lmM2RmRk54M1MxSVBUNGxLRG9aV3dOMXZqYWtJZlpDcGRPZjZ4M0VBTFFhaDFLNGxKUlFtNkxJWVRKMGl1WHdfV19sZUZVYi1odEREckk1ZDdzNFZnMVZzTDVINVRpMkdON0R6ZTJIVTByeHVqckpCd2s?oc=5",
-   "publicado": "2026-11-04T05:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Selic: mercado muda projeções e vê decisão do Copom como teste de credibilidade do BC",
    "fonte": "Estadão",
@@ -2589,6 +2574,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa acompanha ‘onda azul’ de Wall Street e sobe 1%; dólar cai",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE44UFF2MmRzdGZKRm1lS0dZS1BqRkU0RlhHZkdPdTZ3c3pJeElMZTBBNXZndWJsNTJxUHJOOVBGQmtxZnc5YW5aUlpmSnNLUzcxcno1YmE3R29rZEdENnVqY0dUN2pPQQ?oc=5",
+   "publicado": "2026-11-04T18:25-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
   }
  ],
  "enviadas": [
@@ -2618,7 +2617,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T18:28-03:00",
+ "atualizado_em": "2026-11-04T18:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2627,22 +2626,23 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
   {
-   "titulo": "Petróleo brent cai 8% com possível impacto da eleição dos EUA no conflito com Irã",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQa0xuZjd2UExyMU5LMnFtZ0NJTE9BLWpQWktSNXpoT09oUHlBZDdvUHMwdE9NMEtXS2dSYlpSZlpYdldHNnNWcmZSNVFlRTRSN05La081Y3JJQ1dmdWhnQUNfdzlBN2VuVzE5UWRhdUtYYWJGcEZ0V0g5YXlLUkNUb2d2dWNOdVNLVEdzN9IBkgFBVV95cUxPOC00OVJEOXlqMEg4aDhZNVdod3QxN0tNTTBwS2k1QlVsUm5LRVhVR2VaVFdReTJoby1LaVBXNXprRWZNZ1VQS3NrdGs2dUozOHNKbngtX3cxZ3ZwQkpRanRyUm5RTlZFQU9leDBUb3NtcnRVQ01iRXIwSVBBN1RLcnRSUkJVbnFlamtlSUE5Rms3QQ?oc=5",
-   "publicado": "2026-11-04T17:31-03:00",
-   "impacto": "medio",
+   "titulo": "Ibovespa acompanha ‘onda azul’ de Wall Street e sobe 1%; dólar cai",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE44UFF2MmRzdGZKRm1lS0dZS1BqRkU0RlhHZkdPdTZ3c3pJeElMZTBBNXZndWJsNTJxUHJOOVBGQmtxZnc5YW5aUlpmSnNLUzcxcno1YmE3R29rZEdENnVqY0dUN2pPQQ?oc=5",
+   "publicado": "2026-11-04T18:25-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
    ],
-   "tickers": []
+   "tickers": [
+    "AZUL4"
+   ]
   },
   {
    "titulo": "Juros futuros despencam com apoio externo e expectativa por anúncio fiscal",
@@ -2703,17 +2703,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ouro sobe mais de 3% com queda do dólar após vitória democrata nos EUA",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTENnV1pyTlg5bU1LNUZOZUZ2d2N2Wi1xTEY4cE5ETHM4cmJUM1BwSThWWm1ULUhWZDd2bm9kZThmSU1KZ0lXeXZwSGg3d0VQVWpVMFluV2JmUUw4WGN1cVpqNk1mY1NpaV9ER19DQmlxMUZqVFczd1liVFlWTnE4Qmh5VTdVcjhTd1F4WFhwLS03NFlBVDVwSGkzWW42d3ZHbkhuRXEzZ0xqbUZsQWlfTmN6UlVibmJqZm9jY2xNOA?oc=5",
-   "publicado": "2026-11-04T16:35-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Itaú (ITUB4) sobe 3% na Bolsa após balanço do 3T26; analistas revelam se é hora de comprar a ação",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZVEzYXNXU09LYVdHYk5WVGc2bVpTXzk2ZlJ3ZUdoR0NMaFAzWHNiX1c0OHZLcjhBMFBPSkVaZTQzRW9PM0ZkbHJwNjlpQWNub19QZ3ZsRlp5aHVaVWtmb1ViRUMyUHJETEFBTmZ1cGRzMVNValU0eGlHN3NqWkxrN2p6QlZPX3JUU0NBV2ZVQmFLU2FnWGtROWUtNWpvLXFNSFVpT3d0ME5fTTUtdTdHeU9ZNjZPVTlMczZwMU5XR2dETkpwNmYwRw?oc=5",
@@ -2739,6 +2728,19 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
+   "publicado": "2026-11-04T16:01-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Ações do Ibovespa: mediana do P/L cai abaixo do nível da pandemia após eleições",
