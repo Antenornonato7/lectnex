@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T13:08-03:00",
+  "atualizado_em": "2026-11-04T13:38-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -143,11 +143,35 @@
     ],
     [
      "12:50",
-     167157.0
+     167202.0
     ],
     [
-     "12:53",
-     167102.0
+     "12:55",
+     167309.0
+    ],
+    [
+     "13:00",
+     167240.0
+    ],
+    [
+     "13:05",
+     166894.0
+    ],
+    [
+     "13:10",
+     166944.0
+    ],
+    [
+     "13:15",
+     167030.0
+    ],
+    [
+     "13:20",
+     166544.0
+    ],
+    [
+     "13:23",
+     166609.0
     ]
    ]
   },
@@ -352,11 +376,35 @@
     ],
     [
      "13:05",
-     5.4896
+     5.4906
     ],
     [
-     "13:08",
-     5.4893
+     "13:10",
+     5.4889
+    ],
+    [
+     "13:15",
+     5.4882
+    ],
+    [
+     "13:20",
+     5.4937
+    ],
+    [
+     "13:25",
+     5.4951
+    ],
+    [
+     "13:30",
+     5.4927
+    ],
+    [
+     "13:35",
+     5.4873
+    ],
+    [
+     "13:38",
+     5.4871
     ]
    ]
   },
@@ -896,7 +944,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.22,
+    "ibov30": -0.19,
     "dolar30": 0.15
    },
    {
@@ -909,7 +957,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.05,
     "dolar30": 0.19
    },
    {
@@ -922,7 +970,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.05,
     "dolar30": 0.19
    },
    {
@@ -936,8 +984,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.19,
+    "dolar30": -0.1
    },
    {
     "hora": "12:46",
@@ -952,8 +1000,8 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.05,
+    "dolar30": -0.02
    }
   ]
  },
@@ -1880,7 +1928,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T13:08-03:00",
+ "atualizado_em": "2026-11-04T13:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1898,9 +1946,35 @@
    "titulo": "10-year Treasury yield is little changed as traders mull over Democrats' midterm victories",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-   "publicado": "2026-11-04T13:07-03:00",
+   "publicado": "2026-11-04T13:23-03:00",
    "impacto": "medio",
    "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa ensaia recuperação após seis quedas com bom humor global em dia de Copom",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnVudWxxdmc3bTNQQnMxV3JwRVJwdlZfQ3dDdjZtNk9US3RvSHhKRlA1UlJXMDdNejA3V0lCYUZ3MkZob0NraThFTlN2b19sbEF1VkcyNndzbEFfYjZPbmtTNVRSN1NaZkNwSDFiTVVSUDcwOERvbDhmNjB2OFRWeTNUczB3ZVdlQlRucUJXTkNXZER4MUs3WXM3M2pncWI0c0dkMWNEXzNUT1Q0RV80T3JsV0psMlk?oc=5",
+   "publicado": "2026-11-04T13:16-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
+   "publicado": "2026-11-04T13:01-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
     "DI"
    ],
    "tickers": []
@@ -1914,6 +1988,18 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
+   "publicado": "2026-11-04T12:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1956,13 +2042,15 @@
    "tickers": []
   },
   {
-   "titulo": "Por que Ibovespa sobe forte após vitória dos democratas nos EUA?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORTRFMTVYcExJYXlaY1l1N2Z0V3NncktIbnBBS21NdnVzT2tnRmJRaE5Kc1lZb3BBOXF0YWZrM0hNLW95S3BINXF2NlFQWWJ0Z3BqTEswVjBVUEFROHg1NldCeTBlN3AzbkZ3ZkxsRkZ4b1BQelMzc3VtbWxjTXFfYWo3ajdLQnJBazgtam5WWXdaT3NRTUQ2Z204eHlnU0pwQ2U4eFVobVBDbFVWYTViUQ?oc=5",
-   "publicado": "2026-11-04T12:30-03:00",
-   "impacto": "medio",
+   "titulo": "Tempo real: Ibovespa avança na esteira de NY e à Copom; dólar passa a subir com cautela fiscal",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPM0lJdlBLNklMRm0zemlscUdWSU1SbTlHTGJsbVUzWURKVEsweTJCTWpJN3VVMW9hdTVDcHYydzJleGZQeF9IZUhzdTh3dHh5T2FNQ3B4MXVnQmc5cEVkMVhYTVJ4NmpDNXF6bzNiMUxiOXJUd2MxUmg0NWh5UU9lcWRR?oc=5",
+   "publicado": "2026-11-04T12:43-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1975,18 +2063,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
-   "publicado": "2026-11-04T12:21-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -2015,19 +2091,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa ensaia recuperação após seis quedas com bom humor global em dia de Copom",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnVudWxxdmc3bTNQQnMxV3JwRVJwdlZfQ3dDdjZtNk9US3RvSHhKRlA1UlJXMDdNejA3V0lCYUZ3MkZob0NraThFTlN2b19sbEF1VkcyNndzbEFfYjZPbmtTNVRSN1NaZkNwSDFiTVVSUDcwOERvbDhmNjB2OFRWeTNUczB3ZVdlQlRucUJXTkNXZER4MUs3WXM3M2pncWI0c0dkMWNEXzNUT1Q0RV80T3JsV0psMlk?oc=5",
-   "publicado": "2026-11-04T11:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Juro baixo não se cria por decreto: os problemas da proposta de Lara Resende para a questão fiscal",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/juro-baixo-nao-se-cria-por-decreto/",
@@ -2046,18 +2109,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tesouro Direto hoje recua dos 8% reais antes do Copom; veja as taxas desta quarta-feira",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbVFuVVdoMU9NZEVJUVJFbWUxMk5BMjFKMnRDcDRoOVg0bjhmbE9lUEVidTFDYnFLdGJtVDVqWDNKb0g1d29JbHhNN3pNZzZlckdaN0tnZUp1Rk41NVJRNWIzd2xUMjBJZUVxcnlmRlZ2a3VRamdqUzJ5WDYxRDNnOWFILUxFQk5fY2dPWVdMdzU0ZVpsQjVLVS1neDdlWm53bmt4c2lNNklkTW1vZUlFSC1tUzJfSzh4NUVmajBzQ3BOQkRROVd5ekxjYk56NjlyR1U1LTE1alU5Ym1XeWhIdWNMWmR5dlE?oc=5",
-   "publicado": "2026-11-04T11:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
