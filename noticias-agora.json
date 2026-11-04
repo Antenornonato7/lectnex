@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T15:25-03:00",
+  "atualizado_em": "2026-11-04T15:28-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -255,7 +255,11 @@
     ],
     [
      "15:10",
-     167627.0
+     167771.0
+    ],
+    [
+     "15:13",
+     167767.0
     ]
    ]
   },
@@ -572,7 +576,11 @@
     ],
     [
      "15:25",
-     5.4632
+     5.4636
+    ],
+    [
+     "15:28",
+     5.4635
     ]
    ]
   },
@@ -1198,7 +1206,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": -0.01,
     "dolar30": -0.06
    },
    {
@@ -1215,6 +1223,20 @@
     ],
     "ibov30": null,
     "dolar30": -0.09
+   },
+   {
+    "hora": "15:24",
+    "titulo": "Economia perde força, emprego resiste: os dados que vão pesar na decisão do Copom",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVUdXcHlpT2RwTGI1RVc3SGJ4YUtITUhQZVlncHhCeTdpLUhlQXNJNVBNbWY0azRfdDNITzRkam1QNDdaNjVLaGNBRkh0NWktWjVZemtKblhWeXJDb3A3WVd5Mk92c2k4eThJRmNoN1RUQkVDTk81U3JlQnFYMXBrckxGX3lqTkZBTzBhaE9maGtqcWhIa0M5dTJic3BfelJsZVZtMXhnYzNhVEZpSWRyZkswWHRuNVBXVmFaSkNUTWF5TDFYMzR1T05SandnWVBXcUE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -2151,6 +2173,18 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Economia perde força, emprego resiste: os dados que vão pesar na decisão do Copom",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVUdXcHlpT2RwTGI1RVc3SGJ4YUtITUhQZVlncHhCeTdpLUhlQXNJNVBNbWY0azRfdDNITzRkam1QNDdaNjVLaGNBRkh0NWktWjVZemtKblhWeXJDb3A3WVd5Mk92c2k4eThJRmNoN1RUQkVDTk81U3JlQnFYMXBrckxGX3lqTkZBTzBhaE9maGtqcWhIa0M5dTJic3BfelJsZVZtMXhnYzNhVEZpSWRyZkswWHRuNVBXVmFaSkNUTWF5TDFYMzR1T05SandnWVBXcUE?oc=5",
+   "publicado": "2026-11-04T15:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2180,7 +2214,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T15:25-03:00",
+ "atualizado_em": "2026-11-04T15:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2194,6 +2228,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Economia perde força, emprego resiste: os dados que vão pesar na decisão do Copom",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVUdXcHlpT2RwTGI1RVc3SGJ4YUtITUhQZVlncHhCeTdpLUhlQXNJNVBNbWY0azRfdDNITzRkam1QNDdaNjVLaGNBRkh0NWktWjVZemtKblhWeXJDb3A3WVd5Mk92c2k4eThJRmNoN1RUQkVDTk81U3JlQnFYMXBrckxGX3lqTkZBTzBhaE9maGtqcWhIa0M5dTJic3BfelJsZVZtMXhnYzNhVEZpSWRyZkswWHRuNVBXVmFaSkNUTWF5TDFYMzR1T05SandnWVBXcUE?oc=5",
+   "publicado": "2026-11-04T15:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Petrobras mantém estável preço do gás vendido a distribuidoras",
    "fonte": "Money Times",
