@@ -569,7 +569,7 @@
         ['lab', 'JCP', 'Dividendos & JCP', 'Simulador com as regras de 2026', 'laboratorio.html?tab=proventos', 'ph-coins', 'dividendos jcp proventos renda passiva'],
         ['lab', 'BAZIN', 'Preço teto Bazin & Graham', 'Valuation simples por dividendos e lucro', 'laboratorio.html?tab=valuation', 'ph-scales', 'bazin graham preco teto valuation'],
         ['lab', 'RF', 'Comparador renda fixa', 'CDB × LCI/LCA × IPCA+', 'laboratorio.html?tab=rf', 'ph-bank', 'renda fixa cdb lci lca tesouro ipca'],
-        ['lab', 'GLOSS', 'Glossário do Trader', '68 termos de juros, futuros, ações e risco explicados', 'glossario.html', 'ph-book-open-text', 'glossario termos dicionario significado o que e breakeven rolagem ajuste payroll kelly spread tick'],
+        ['lab', 'GLOSS', 'Glossário do Trader', '67 termos de juros, futuros, ações e risco explicados', 'glossario.html', 'ph-book-open-text', 'glossario termos dicionario significado o que e breakeven rolagem ajuste payroll kelly spread tick'],
         ['lab', 'SFN', 'Enciclopédia: Selic e CDI', 'Como funciona o sistema financeiro', 'laboratorio.html?tab=academia&licao=A1', 'ph-book-open', 'aprender selic cdi copom sistema financeiro enciclopedia'],
         ['lab', 'GUIA', 'Guia de ações', 'Ações, dividendos e JCP para iniciantes', 'laboratorio.html?tab=academia&licao=B1', 'ph-graduation-cap', 'aprender guia acoes iniciante enciclopedia']
     ];
