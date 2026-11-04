@@ -65,6 +65,16 @@ jobs:
           export IG_LEGENDA="$RUNNER_TEMP/grafico-legenda.txt"
           python3 scripts/grafico_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/grafico-dia.png" || { echo "::warning::Falha no post do gráfico do dia."; exit 0; }
           [ -f "$IG_LEGENDA" ] && { python3 coletor/instagram.py propor grafico "$IG_LEGENDA" "$RUNNER_TEMP/grafico-dia.png" || echo "::warning::Falha ao propor o post no Instagram."; }
+      - name: Reel do dia (15 s) para o Kit do dia
+        if: ${{ !inputs.previa_story }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          [ -f "$RUNNER_TEMP/mercado.json" ] || exit 0
+          command -v ffmpeg >/dev/null || { sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || { echo "::warning::Sem ffmpeg: reel não gerado."; exit 0; }; }
+          python3 scripts/reel_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/reel-dia.mp4" || { echo "::warning::Falha ao gerar o reel do dia."; exit 0; }
+          LEG=""; [ -f "$RUNNER_TEMP/grafico-legenda.txt" ] && LEG="$(cat "$RUNNER_TEMP/grafico-legenda.txt")"
+          python3 -c "import sys; sys.path.insert(0, 'scripts'); from kit import registrar_video; registrar_video(sys.argv[1], sys.argv[2])" "$RUNNER_TEMP/reel-dia.mp4" "$LEG"
       - name: Story do placar da semana (sextas) no Telegram privado
         if: ${{ !inputs.previa_story }}
         env:

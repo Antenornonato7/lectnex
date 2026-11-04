@@ -90,6 +90,39 @@ def registrar(caminho, legenda):
         print(f'::warning::Kit do dia: não registrei a peça ({e.__class__.__name__}: {str(e)[:80]})')
 
 
+def registrar_video(caminho, legenda=''):
+    """Reel do dia: guarda o MP4 para ir no kit das 19h30."""
+    if not os.environ.get('GITHUB_TOKEN'):
+        return
+    try:
+        hoje = dt.datetime.now(BRT).date().isoformat()
+        gravar(f'kit/{hoje}/reel.mp4', open(caminho, 'rb').read(), ler(f'kit/{hoje}/reel.mp4')[1])
+        for _ in range(3):
+            bruto, sha = ler(f'kit/{hoje}/kit.json')
+            kit = json.loads(bruto) if bruto else {'data': hoje, 'pecas': []}
+            kit['reel'] = {'legenda': legenda, 'hora': dt.datetime.now(BRT).strftime('%H:%M')}
+            try:
+                gravar(f'kit/{hoje}/kit.json', json.dumps(kit, ensure_ascii=False, indent=1).encode(), sha)
+                break
+            except urllib.error.HTTPError as e:
+                if e.code not in (409, 422):
+                    raise
+        print('Kit do dia: reel registrado.')
+    except Exception as e:
+        print(f'::warning::Kit do dia: não registrei o reel ({e.__class__.__name__}: {str(e)[:80]})')
+
+
+def tg_video(video, legenda):
+    tok, chat = os.environ['TELEGRAM_BOT_TOKEN'].strip(), os.environ['TELEGRAM_ADMIN_CHAT_ID'].strip()
+    b = uuid.uuid4().hex
+    corpo = b''.join(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode()
+                     for k, v in (('chat_id', chat), ('caption', legenda), ('parse_mode', 'HTML'), ('supports_streaming', 'true'),
+                                  ('width', '1080'), ('height', '1920')))
+    corpo += f'--{b}\r\nContent-Disposition: form-data; name="video"; filename="lectnex-reel.mp4"\r\nContent-Type: video/mp4\r\n\r\n'.encode() + video + f'\r\n--{b}--\r\n'.encode()
+    req = urllib.request.Request(f'https://api.telegram.org/bot{tok}/sendVideo', data=corpo, headers={'Content-Type': f'multipart/form-data; boundary={b}'})
+    urllib.request.urlopen(req, timeout=120).read()
+
+
 def tg_album(fotos, legenda):
     tok, chat = os.environ['TELEGRAM_BOT_TOKEN'].strip(), os.environ['TELEGRAM_ADMIN_CHAT_ID'].strip()
     b = uuid.uuid4().hex
@@ -130,7 +163,8 @@ def enviar(dia=None):
         if img:
             fotos.append(img)
             ok.append(p)
-    if not ok:
+    reel = kit.get('reel')
+    if not ok and not reel:
         return
     d = dt.date.fromisoformat(dia)
     dias = ['segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo']
@@ -141,7 +175,14 @@ def enviar(dia=None):
         extra = f' · sticker de link: <code>{p["link"]}</code>' if p.get('link') and onde == 'stories' else (' · legenda logo abaixo' if p.get('legenda') else '')
         linhas.append(f'{i}. <b>{p["nome"]}</b> ({onde}){extra}')
     linhas += ['', 'Ordem sugerida: o post de feed primeiro, depois os stories na ordem da lista. As imagens estão no álbum, na mesma ordem.']
-    tg_album(fotos, '\n'.join(linhas)[:1020])
+    if reel:
+        linhas.insert(len(linhas) - 2, f'{len(ok) + 1}. <b>Reel do dia</b> (reels, 15 s, sem áudio: escolha uma música da biblioteca do Instagram) · vídeo logo abaixo')
+    if ok:
+        tg_album(fotos, '\n'.join(linhas)[:1020])
+    if reel:
+        vid, _ = ler(f'kit/{dia}/reel.mp4')
+        if vid:
+            tg_video(vid, '🎬 <b>Reel do dia</b>' + (f'\n\n{reel["legenda"].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")}' if reel.get('legenda') else ''))
     for p in feed:
         if p.get('legenda'):
             tg_texto(f'📋 Legenda do feed ({p["nome"]}):', html=False)
