@@ -1,0 +1,22 @@
+# Termo do dia (card 1080×1920) no Telegram privado do dono. Horário: 8h05 todo dia (coletor/relogio.py).
+name: Termo do dia
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  termo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar e enviar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: |
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          python3 scripts/termo_dia.py "$RUNNER_TEMP/termo-do-dia.png"
