@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T11:05-03:00",
+  "atualizado_em": "2026-11-04T11:08-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -47,7 +47,11 @@
     ],
     [
      "10:50",
-     167280.0
+     167248.0
+    ],
+    [
+     "10:53",
+     167291.0
     ]
    ]
   },
@@ -156,7 +160,11 @@
     ],
     [
      "11:05",
-     5.4777
+     5.4752
+    ],
+    [
+     "11:08",
+     5.4742
     ]
    ]
   },
@@ -399,7 +407,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.1,
+    "ibov30": -0.12,
     "dolar30": 0.05
    },
    {
@@ -415,7 +423,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": 0.21
    },
    {
     "hora": "10:40",
@@ -429,7 +437,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": 0.21
    },
    {
     "hora": "10:40",
@@ -443,7 +451,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": 0.21
    },
    {
     "hora": "10:43",
@@ -456,7 +464,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.2
    },
    {
     "hora": "10:49",
@@ -497,6 +505,19 @@
      "WIN",
      "WDO",
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:02",
+    "titulo": "Alta do dólar começa a impactar açúcar, trigo e café, que podem ficar mais caros para o consumidor",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/alta-do-dolar-comeca-a-impactar-acucar-trigo-e-cafe-que-podem-ficar-mais-caros-para-o-consumidor.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1181,6 +1202,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Alta do dólar começa a impactar açúcar, trigo e café, que podem ficar mais caros para o consumidor",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/alta-do-dolar-comeca-a-impactar-acucar-trigo-e-cafe-que-podem-ficar-mais-caros-para-o-consumidor.shtml",
+   "publicado": "2026-11-04T11:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1210,7 +1242,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T11:05-03:00",
+ "atualizado_em": "2026-11-04T11:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1224,6 +1256,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Alta do dólar começa a impactar açúcar, trigo e café, que podem ficar mais caros para o consumidor",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/alta-do-dolar-comeca-a-impactar-acucar-trigo-e-cafe-que-podem-ficar-mais-caros-para-o-consumidor.shtml",
+   "publicado": "2026-11-04T11:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa sobe 1% com Copom no radar; 5 coisas para saber antes de investir hoje (4)",
    "fonte": "Money Times",
@@ -1258,18 +1301,6 @@
    "publicado": "2026-11-04T10:49-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Americans have said 'NO TO WAR,' Iran speaker says as Democrats take Congress",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/04/us-midterm-elections-iran-war-speaker.html",
-   "publicado": "2026-11-04T10:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
