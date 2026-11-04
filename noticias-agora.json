@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T11:35-03:00",
+  "atualizado_em": "2026-11-04T11:38-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -71,7 +71,11 @@
     ],
     [
      "11:20",
-     166891.0
+     167391.0
+    ],
+    [
+     "11:23",
+     167384.0
     ]
    ]
   },
@@ -204,7 +208,11 @@
     ],
     [
      "11:35",
-     5.4787
+     5.4827
+    ],
+    [
+     "11:38",
+     5.479
     ]
    ]
   },
@@ -547,7 +555,7 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": -0.18,
+    "ibov30": 0.12,
     "dolar30": 0.2
    },
    {
@@ -562,7 +570,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.18,
+    "ibov30": 0.12,
     "dolar30": 0.2
    },
    {
@@ -1336,7 +1344,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T11:35-03:00",
+ "atualizado_em": "2026-11-04T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1473,6 +1481,30 @@
    "tickers": []
   },
   {
+   "titulo": "Queda das ações faz 8 papéis ultrapassarem a Selic de 13,75% em dividend yield teórico",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTjl5dHRZTUtSYWJXbU5iUU1aVU91QlBKSmxxRE84SXI0cUhxLTVSTnJKa0hacXdRU25nbktiVWF0N0ZlNnR6cDZJZnNhYmUyTnF4blBRNlo3M0xfX2FBYk41bHRicmRIclFNc0FITFhzSzd4SXJJVm5pVzNGTENjM3FCTEtNY2hJcjYyYUQwZUMwNHBVNmJEM0s1MkNUU3M4b284blNaWmlmTGxSaDM3QVZaYUh1Zw?oc=5",
+   "publicado": "2026-11-04T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai e Bolsa sobe após vitória democrata nos EUA; mercado aguarda decisão do Copom",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-com-vitoria-democrata-nos-eua-juros-futuros-ficam-de-lado-a-espera-do-copom.shtml",
+   "publicado": "2026-11-04T09:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Aumento de juros pelo Banco Central Europeu parece quase certo após inflação atingir maior nível em três anos",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX3hBNjFEQzUyVHBDYUxpbUNCMDc5MkxTVHpZajQyVzBxOGNPMFpVMlZucUtGc0c5NmtNZllJYVdBLW1MWklzUzdwOWM1b0hNd05mdEtfd01yVjF1QmZKWUNtbGg5TE5SNFFFZm1uV3g2eFNJMmdFVXFtdnZhYmMwNXFJQTFYZjUtck1qbmJBX2J1czlWSl9Lc3MyNTZreldnWHNIWDJhOHRoY3lqZzVmSUtBT3hobHQxQ1o4bEJSeFJfSzdGeUE?oc=5",
@@ -1497,35 +1529,10 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
-   "publicado": "2026-11-04T09:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar cai com resultado das eleições dos EUA e decisão do Copom no radar",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcEZZYVhwM3M3OXZfeGlOVXdWcF91S2wxRVhtd0tRWDVKTjlDRERma3JuR3ExTlgwNHd6QWVCLXZPelZUOHJrSDJiUFh5bUJVRVF2ZHNmSGFrbFlwUF9xbm4yc0xzQ1hGQ1p5dlhIQ19Ub0RCVFIxUGtoUTZac3RvdlhacGVpM0lPZTlkUElKb0MwMTFyZnkxcWF2Ym1wakR2QURiUHFUd09sZjd3d3lhS1Y1NDZueTF1QTZ3bG14OVUxM1U?oc=5",
-   "publicado": "2026-11-04T09:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros acompanham Treasuries e têm alívio; mercado segue à espera do Copom",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSTB5TWZuS3hSZnRxTHZveHQtMTN5WWVPTUhXNmZzdHZRVy1lcGx1bnVmbTRXOVpKdU5JXzlrOUFncVV2ZWNqZTFqX1Jmc3UtSkk3Sm1EM2owQzh5MXBadDA2ME1zb0luSC1IdGRmNlczNEUzWUo2SmpyRUJuVzVXV25GRkFSb0swSHFzVkt4cktPZzh0dEtJZno2cmtuaUJ4czFVOU45VHpxaGlBeEhCb3Y2QnVyX0N6anpNajJaMWNYdU53OTlvQm5pN0FrRk1SS2ZSTdIB4wFBVV95cUxOSHhwUlZxSWllSGs3aFFVR1E5eUNwaU90TDRHRjdxSW9hZWx6dGdwem5RMVJIWU9xUGpXcWJFZkhZd0RDdmJnQ3BPN3QwZ3J3V01JMXNUQkVDMjhocWNKM0cwd0kwUldYdUVwaDdseTI2V0Q5VDJiZ1pQYkNPT3V2OVhVamtoejI4WkxteVgxS0t0MUhkUTU5QTFaN055ZjRjZkxfd0Qtb3JpMXczRnpFcWExdnROc3hraC1STnkxV3g0ZW5tSDZTdGRsbk9aY3JlblJsRk5xYTc2akgxb05mM3psdw?oc=5",
-   "publicado": "2026-11-04T09:36-03:00",
+   "titulo": "BC da Suécia sobe taxa de juros a 2%, primeira alta em três anos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468020",
+   "publicado": "2026-11-04T09:24-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
