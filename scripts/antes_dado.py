@@ -65,12 +65,12 @@ def montar(hoje):
         passadas.append({'data': r['data'], 'evento': r.get('evento'), 'resultado': r.get('resultado'), 'consenso': r.get('consenso'),
                          'surpresa': r.get('surpresa'), 'win': r.get('win'), 'wdo': r.get('wdo'), 'abertura': bool(r.get('win_abertura')),
                          'janela': r.get('janela', '30min')})
-    passadas = passadas[:12]
+    todas, passadas = passadas, passadas[:12]
     mc = [x for x in ler('data/manchetes.json', {}).get('itens', []) if tema in (x.get('tm') or []) and x.get('d', '') < hoje.isoformat()]
     temas = ler('data/manchetes.json', {}).get('temas', {})
     out = {'data': hoje.isoformat(), 'tipo': ev['tipo'], 'curto': curto, 'evento': ev['evento'], 'hora': ev.get('hora'), 'pais': ev.get('pais'),
            'consenso': ev.get('consenso'), 'anterior': ev.get('anterior'), 'passadas': passadas,
-           'divulgacoes': {'win': estat([p['win'] for p in passadas]), 'wdo': estat([p['wdo'] for p in passadas])},
+           'divulgacoes': {'win': estat([p['win'] for p in todas]), 'wdo': estat([p['wdo'] for p in todas]), 'desde': todas[-1]['data'] if todas else None},
            'manchetes': {'tema': tema, 'nome': temas.get(tema, tema), 'win': estat([x.get('ib') for x in mc]), 'wdo': estat([x.get('dl') for x in mc])},
            'gerado_em': dt.datetime.now(BRT).isoformat(timespec='minutes')}
     if not passadas and not (out['manchetes']['win'] or out['manchetes']['wdo']):
@@ -121,23 +121,25 @@ def gerar_story(a, saida):
     dr.text((M, y), 'Variação após a divulgação: 30 min (1 h nas mais antigas)' if any(p.get('janela') == '1h' for p in a['passadas']) else 'Variação em 30 min após a divulgação', font=fonte('Inter-Medium.otf', 30), fill=MUTED)
     y += 64
 
-    ps = list(reversed(a['passadas'][:5]))
+    ps = list(reversed(a['passadas'][:4]))
     fm, fs = fonte('JetBrainsMono-Bold.ttf', 30), fonte('JetBrainsMono-Bold.ttf', 24)
     if ps:
         escala = max([abs(p[k]) for p in ps for k in ('win', 'wdo') if isinstance(p.get(k), (int, float))] + [0.3])
-        larg = (W - 2 * M - 230) / 2
-        dr.text((M + 230, y), 'IBOVESPA · WIN', font=fs, fill=MUTED)
-        dr.text((M + 230 + larg + 20, y), 'DÓLAR · WDO', font=fs, fill=MUTED)
+        larg = (W - 2 * M - 330) / 2
+        dr.text((M + 330, y), 'IBOVESPA · WIN', font=fs, fill=MUTED)
+        dr.text((M + 330 + larg + 20, y), 'DÓLAR · WDO', font=fs, fill=MUTED)
         y += 44
         for p in ps:
             pd = dt.date.fromisoformat(p['data'])
-            dr.rectangle([M, y, W - M, y + 112], fill=CARD, outline=LINE, width=2)
+            dr.rectangle([M, y, W - M, y + 104], fill=CARD, outline=LINE, width=2)
             dr.text((M + 24, y + 18), f'{pd:%d/%m/%y}', font=fm, fill=WHITE)
             sp = {'acima': 'acima do esperado', 'abaixo': 'abaixo do esperado', 'em linha': 'em linha'}.get(p.get('surpresa'), (p.get('resultado') or '')[:16])
-            dr.text((M + 24, y + 62), sp + (' · WIN na abertura' if p.get('abertura') else '') + (' · 1 h' if p.get('janela') == '1h' else ''), font=fonte('Inter-Medium.otf', 22), fill=MUTED)
+            dr.text((M + 24, y + 62), (sp or 'WIN na abertura' if p.get('abertura') else sp) + ('*' if p.get('abertura') and sp else ''), font=fonte('Inter-Medium.otf', 24), fill=MUTED)
+            if p.get('janela') == '1h':
+                dr.text((M + 24 + dr.textlength(f'{pd:%d/%m/%y}', font=fm) + 14, y + 24), '1 h', font=fs, fill=MUTED)
             for j, k in enumerate(('win', 'wdo')):
                 v = p.get(k)
-                x0 = M + 230 + j * (larg + 20)
+                x0 = M + 330 + j * (larg + 20)
                 meio = x0 + larg / 2
                 dr.line([(meio, y + 22), (meio, y + 64)], fill='#334155', width=2)
                 if isinstance(v, (int, float)):
@@ -146,7 +148,7 @@ def gerar_story(a, saida):
                     dr.rectangle([meio, y + 30, meio + w, y + 58] if v > 0 else [meio - w, y + 30, meio, y + 58], fill=cor)
                     t = pct(v)
                     dr.text((meio - dr.textlength(t, font=fm) / 2, y + 66), t, font=fm, fill=cor)
-            y += 128
+            y += 116
     else:
         dr.text((M, y), 'Primeira divulgação no nosso histórico.', font=fonte('Inter-Medium.otf', 34), fill=MUTED)
         y += 70
@@ -162,7 +164,7 @@ def gerar_story(a, saida):
     fr, fv, fl = fonte('Inter-Medium.otf', 30), fonte('InterDisplay-Bold.otf', 40), fonte('JetBrainsMono-Bold.ttf', 20)
     cols = [M + 250, M + 500, M + 740]
     for tit, st in linhas:
-        if y > 1440:
+        if y > 1470:
             break
         y += 24
         dr.text((M, y), tit, font=fonte('JetBrainsMono-Bold.ttf', 26), fill=TEAL_L)
@@ -180,6 +182,9 @@ def gerar_story(a, saida):
                                  (WHITE, VERDE if e['mediana'] > 0 else VERMELHO if e['mediana'] < 0 else WHITE, WHITE)):
                 dr.text((c, y), t, font=fv, fill=cor)
             y += 56
+    if any(p.get('abertura') for p in ps) and y < 1560:
+        dr.text((M, y + 14), '* WIN medido na abertura seguinte (saiu com a bolsa fechada)', font=fonte('Inter-Medium.otf', 24), fill=MUTED)
+        y += 40
     n_total = max((dv['win'] or {}).get('n', 0), 0)
     if n_total < 5 and y < 1560:
         dr.text((M, y + 16), 'Amostra pequena: o histórico cresce a cada divulgação.', font=fonte('Inter-Medium.otf', 26), fill=ORANGE)
@@ -187,7 +192,7 @@ def gerar_story(a, saida):
     tracejado(dr, (M, 1600, W - M, 1730), '#334155')
     s = 'COLOQUE AQUI O STICKER DE LINK'
     dr.text(((W - dr.textlength(s, font=fs)) / 2, 1650), s, font=fs, fill='#475569')
-    for i, l in enumerate(('O passado não garante o próximo movimento.', 'Dados: Yahoo Finance (5 min) · lectnex.com.br · conteúdo educacional')):
+    for i, l in enumerate(('O passado não garante o próximo movimento.', 'Dados: Yahoo Finance (barras de 5 min e 1 h) · lectnex.com.br')):
         f2 = fonte('Inter-Medium.otf', 26)
         dr.text(((W - dr.textlength(l, font=f2)) / 2, 1770 + i * 38), l, font=f2, fill=MUTED)
     im.save(saida, 'PNG', optimize=True)
