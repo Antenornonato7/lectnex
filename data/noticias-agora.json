@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T14:38-03:00",
+  "atualizado_em": "2026-11-04T15:08-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -215,11 +215,35 @@
     ],
     [
      "14:20",
-     167689.0
+     167670.0
     ],
     [
-     "14:23",
-     167706.0
+     "14:25",
+     167738.0
+    ],
+    [
+     "14:30",
+     167925.0
+    ],
+    [
+     "14:35",
+     167757.0
+    ],
+    [
+     "14:40",
+     167843.0
+    ],
+    [
+     "14:45",
+     167781.0
+    ],
+    [
+     "14:50",
+     167786.0
+    ],
+    [
+     "14:53",
+     167829.0
     ]
    ]
   },
@@ -496,11 +520,35 @@
     ],
     [
      "14:35",
-     5.4666
+     5.4671
     ],
     [
-     "14:38",
-     5.4676
+     "14:40",
+     5.4667
+    ],
+    [
+     "14:45",
+     5.4647
+    ],
+    [
+     "14:50",
+     5.4664
+    ],
+    [
+     "14:55",
+     5.4598
+    ],
+    [
+     "15:00",
+     5.4606
+    ],
+    [
+     "15:05",
+     5.4601
+    ],
+    [
+     "15:08",
+     5.4614
     ]
    ]
   },
@@ -1110,8 +1158,24 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.16,
     "dolar30": -0.03
+   },
+   {
+    "hora": "14:46",
+    "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468021",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -2021,6 +2085,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468021",
+   "publicado": "2026-11-04T14:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -2050,7 +2128,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T14:38-03:00",
+ "atualizado_em": "2026-11-04T15:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2064,6 +2142,20 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Petróleo cai mais de 9% com derrota de Trump nas midterms; Petrobras recua 6%",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468021",
+   "publicado": "2026-11-04T14:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
    "fonte": "CNBC",
@@ -2090,6 +2182,44 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa ensaia recuperação após seis quedas com bom humor global em dia de Copom",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnVudWxxdmc3bTNQQnMxV3JwRVJwdlZfQ3dDdjZtNk9US3RvSHhKRlA1UlJXMDdNejA3V0lCYUZ3MkZob0NraThFTlN2b19sbEF1VkcyNndzbEFfYjZPbmtTNVRSN1NaZkNwSDFiTVVSUDcwOERvbDhmNjB2OFRWeTNUczB3ZVdlQlRucUJXTkNXZER4MUs3WXM3M2pncWI0c0dkMWNEXzNUT1Q0RV80T3JsV0psMlk?oc=5",
+   "publicado": "2026-11-04T13:16-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dow Jones hoje dispara após vitória dos democratas nas eleições dos EUA; dólar e petróleo caem",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNT0tiWWdsTDVBZDQzVWxsQVFaaTRhSkM1VXdtNFVXcmJzZkx2RTZBblVVeUFBcGZnYU4xUmxPXzBUQlpXVDRsam91d0tEcUZQa2RIclFITjkxbUdPdTMwTk0tckdrekZLS1gxd3VBUFpodFdNWi11UmRGaTBhWUNXUDZ3U2RGYXNlV1Itczc0V2JQMDRTVzNkZ3ZoQktDOVpxRDYtbGdkUm9zNDVGZmVzNUsycGt3eXhHLXZ4cXZlSU1YWTVET040ZGdjT2ozclVQejVrUlZ4SGQ0bnNBcHowQ2FzUTVBRknSAewBQVVfeXFMTnM4ZTBKTVd0bDNpdUEybDFsbWdSVlZBZWZpQ3BBT0FxXzJINDFrTnpTU0Rpc2pXbnBrcU0zUGtScmVDTW9CaHdIdlFvVjN0WHYyaHRSbkc2djBaWXZkY3FkSkxNLUpxbGJJSzF0X3BaMTc5UEZtVE1CWldtU3o5dV9LbTRxQi1DN1pCWEk2UFJOejFidkRvbEp0aVJLbjFoN0RVSGJySXlSUXBqSldpT1ladUtsaHI0blZEVUs5QmVHT3hWSVNyVFJvd3B6VVhUZEdzajgweHVaMi1JTWxtOXlsZjhVblMwY0s4OTI?oc=5",
+   "publicado": "2026-11-04T13:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata e à espera da Selic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcU5YNjNCck41Y2ZzTW9UM19BeERLWUc4TEhtcDJwLTI5RF85OVV4U0U0cnVnYVRUa2FuOTI4bXB6MTI3ek0zN0NCeUFFM2VpYWt2QVEzU2dzUXV1ZEtRSGpOcmtpSzhhdDdMaTlYQ2xYLUlzaXcwVE5LdGJSVmFhRXlLSmUtR2l4QVNTMXFOUUpMR1dVNW8wemgxM2NBSng0S0p0cg?oc=5",
+   "publicado": "2026-11-04T13:01-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Rivalidade entre EUA e China impulsiona investimentos em mineração no Brasil",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/rivalidade-entre-eua-e-china-impulsiona-investimentos-em-mineracao-no-brasil.shtml",
@@ -2098,18 +2228,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
-   "publicado": "2026-11-04T12:53-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -2140,19 +2258,7 @@
    ]
   },
   {
-   "titulo": "Gestores desmontam 'kit Brasil' e apostam no dólar antes do Copom; maioria agora vê Selic estável",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNklrV3ZtLVQ5VTgtMXlEU09MSjU5bHZLV1hKWkpwVFJad3FZN2pTTDJ1XzFWbUQ3R3NIZkNMcWRHWWdRYXdlQk0tdHN1MFlOMGsyUmNzMm5jQWV6R29ESlIwUml3Ym50Y0xKNjhKek5ja1pQMVh5N1BqaW55dkpKRk0zLVpvdFVMa2wtVXMyQmo1WEdpekktZElvZ255UQ?oc=5",
-   "publicado": "2026-11-04T12:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa avança na esteira de NY e à Copom; dólar passa a subir com cautela fiscal",
+   "titulo": "Tempo real: Ibovespa avança na esteira de NY e à espera do Copom; dólar passa a subir com cautela fiscal",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPM0lJdlBLNklMRm0zemlscUdWSU1SbTlHTGJsbVUzWURKVEsweTJCTWpJN3VVMW9hdTVDcHYydzJleGZQeF9IZUhzdTh3dHh5T2FNQ3B4MXVnQmc5cEVkMVhYTVJ4NmpDNXF6bzNiMUxiOXJUd2MxUmg0NWh5UU9lcWRR?oc=5",
    "publicado": "2026-11-04T12:43-03:00",
@@ -2161,17 +2267,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Por que Ibovespa sobe forte após vitória dos democratas nos EUA?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORTRFMTVYcExJYXlaY1l1N2Z0V3NncktIbnBBS21NdnVzT2tnRmJRaE5Kc1lZb3BBOXF0YWZrM0hNLW95S3BINXF2NlFQWWJ0Z3BqTEswVjBVUEFROHg1NldCeTBlN3AzbkZ3ZkxsRkZ4b1BQelMzc3VtbWxjTXFfYWo3ajdLQnJBazgtam5WWXdaT3NRTUQ2Z204eHlnU0pwQ2U4eFVobVBDbFVWYTViUQ?oc=5",
-   "publicado": "2026-11-04T12:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
@@ -2199,65 +2294,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Marcopolo (POMO4) cai após frustração com balanço do 3T26",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSFN5MmtwdmduMnhOWUxBbnJ0QVdxRGVxSVRFNXBBZ19XbUtESXNhZkt2a2pYd3puTExxLWVPZENyN0hxY3lmVjctMU91MUxlekFuWklXVWtmV1FYNVVFMzVocnVGdEE1YmNfSmJkU0t5YXBfb0NZU0ZYWHBJRGtuWWI4Q1BZWDRzUlV6dlYwTjdJbUpFUGJ3YTZ4ay1qRDZa0gGmAUFVX3lxTE8zd2x4ajBxSWlxeGF2a0k4RTdnY2llTjVJSWZqeG9MREl6REg3UkpLOURsYU9uMlUyX3lFZ1p2QnRiVHdpbHg0a29hWHExM3J0bFNTb0ZPTWRMT2ctTlRoMUxQYnhUZDFPZmdpU2tjUmdabFo3NmFZWTRrTkVSYnVobC1sUEpkVTgybHNTSnYtUlhCYlYxc2x6SWNqN01LQXoteGhZTUE?oc=5",
-   "publicado": "2026-11-04T12:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "POMO4"
-   ]
-  },
-  {
-   "titulo": "Vamos salta mais de 7% e lidera ganhos do Ibovespa hoje; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQem1tamdfR3htTDMzSmw3UlRrbnNIWWJNVmFQR0Mwa015VHdvS3AtbHdNNG4tVWtnUnViaWNwaG5mX2pkVWl6SkVVQTVWSHNRZFI0ZkJEYk1LS1RKQW1Zd1h1NVNZZ0wyd05sWU5Kd3dwbWstMnp1aW5IY3EzT0k4MWRVbkNrTVpGLWRSYW9VajhVejM0cTlWaFgtN2VlRHhSNnZtTm5CSTRoM2RhZzhnbHJ3V09rWk9mMUdYa3J0bnRJS1lnbXh0X2ZtTmV3d3RYRmVrZUg5N1hYS001MFNMWEtZWQ?oc=5",
-   "publicado": "2026-11-04T12:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa ensaia recuperação após seis quedas com bom humor global em dia de Copom",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnVudWxxdmc3bTNQQnMxV3JwRVJwdlZfQ3dDdjZtNk9US3RvSHhKRlA1UlJXMDdNejA3V0lCYUZ3MkZob0NraThFTlN2b19sbEF1VkcyNndzbEFfYjZPbmtTNVRSN1NaZkNwSDFiTVVSUDcwOERvbDhmNjB2OFRWeTNUczB3ZVdlQlRucUJXTkNXZER4MUs3WXM3M2pncWI0c0dkMWNEXzNUT1Q0RV80T3JsV0psMlk?oc=5",
-   "publicado": "2026-11-04T11:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juro baixo não se cria por decreto: os problemas da proposta de Lara Resende para a questão fiscal",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/juro-baixo-nao-se-cria-por-decreto/",
-   "publicado": "2026-11-04T11:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-   "publicado": "2026-11-04T11:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
   }
  ]
 }
