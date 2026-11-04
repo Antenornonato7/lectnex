@@ -46,6 +46,21 @@
    "wdo": -0.083
   },
   {
+   "id": "2024-11-08|09h|ipca",
+   "data": "2024-11-08",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (out)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.008,
+   "win_abertura": true,
+   "wdo": 0.255
+  },
+  {
    "id": "2024-11-13|10h30|cpi-eua",
    "data": "2024-11-13",
    "hora": "10h30",
@@ -72,6 +87,21 @@
    "janela": "1h",
    "win": -1.029,
    "wdo": 0.758
+  },
+  {
+   "id": "2024-12-10|09h|ipca",
+   "data": "2024-12-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (nov)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.038,
+   "win_abertura": true,
+   "wdo": -0.536
   },
   {
    "id": "2024-12-11|10h30|cpi-eua",
@@ -115,6 +145,21 @@
    "janela": "1h",
    "win": -0.909,
    "wdo": 0.8
+  },
+  {
+   "id": "2025-01-10|09h|ipca",
+   "data": "2025-01-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (dez)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.036,
+   "win_abertura": true,
+   "wdo": -0.043
   },
   {
    "id": "2025-01-10|10h30|payroll",
@@ -188,6 +233,21 @@
    "wdo": -0.409
   },
   {
+   "id": "2025-02-11|09h|ipca",
+   "data": "2025-02-11",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (jan)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.085,
+   "win_abertura": true,
+   "wdo": -0.143
+  },
+  {
    "id": "2025-02-12|10h30|cpi-eua",
    "data": "2025-02-12",
    "hora": "10h30",
@@ -229,6 +289,21 @@
    "win": 0.159,
    "win_abertura": true,
    "wdo": -0.031
+  },
+  {
+   "id": "2025-03-12|09h|ipca",
+   "data": "2025-03-12",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (fev)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.084,
+   "win_abertura": true,
+   "wdo": 0.535
   },
   {
    "id": "2025-03-19|15h|fomc",
@@ -290,6 +365,21 @@
    "wdo": 0.696
   },
   {
+   "id": "2025-04-11|09h|ipca",
+   "data": "2025-04-11",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (mar)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.308,
+   "win_abertura": true,
+   "wdo": -0.735
+  },
+  {
    "id": "2025-05-02|09h30|payroll",
    "data": "2025-05-02",
    "hora": "09h30",
@@ -334,6 +424,21 @@
    "wdo": -0.038
   },
   {
+   "id": "2025-05-09|09h|ipca",
+   "data": "2025-05-09",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (abr)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.267,
+   "win_abertura": true,
+   "wdo": -0.382
+  },
+  {
    "id": "2025-05-13|09h30|cpi-eua",
    "data": "2025-05-13",
    "hora": "09h30",
@@ -362,6 +467,21 @@
    "win": 0.372,
    "win_abertura": true,
    "wdo": -0.011
+  },
+  {
+   "id": "2025-06-10|09h|ipca",
+   "data": "2025-06-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (mai)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.045,
+   "win_abertura": true,
+   "wdo": -0.103
   },
   {
    "id": "2025-06-11|09h30|cpi-eua",
@@ -421,6 +541,21 @@
    "win": 1.273,
    "win_abertura": true,
    "wdo": -0.221
+  },
+  {
+   "id": "2025-07-10|09h|ipca",
+   "data": "2025-07-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (jun)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.017,
+   "win_abertura": true,
+   "wdo": -0.746
   },
   {
    "id": "2025-07-15|09h30|cpi-eua",
@@ -497,6 +632,21 @@
    "wdo": -0.491
   },
   {
+   "id": "2025-08-12|09h|ipca",
+   "data": "2025-08-12",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (jul)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.067,
+   "win_abertura": true,
+   "wdo": -0.669
+  },
+  {
    "id": "2025-09-05|09h30|payroll",
    "data": "2025-09-05",
    "hora": "09h30",
@@ -510,6 +660,21 @@
    "win": 1.562,
    "win_abertura": true,
    "wdo": -1.182
+  },
+  {
+   "id": "2025-09-10|09h|ipca",
+   "data": "2025-09-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (ago)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.075,
+   "win_abertura": true,
+   "wdo": -0.052
   },
   {
    "id": "2025-09-11|09h30|cpi-eua",
@@ -556,6 +721,21 @@
    "wdo": 0.094
   },
   {
+   "id": "2025-10-09|09h|ipca",
+   "data": "2025-10-09",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (set)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.094,
+   "win_abertura": true,
+   "wdo": -0.109
+  },
+  {
    "id": "2025-10-24|09h30|cpi-eua",
    "data": "2025-10-24",
    "hora": "09h30",
@@ -600,6 +780,21 @@
    "wdo": 0.058
   },
   {
+   "id": "2025-11-11|09h|ipca",
+   "data": "2025-11-11",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (out)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.15,
+   "win_abertura": true,
+   "wdo": 0.008
+  },
+  {
    "id": "2025-11-20|10h30|payroll",
    "data": "2025-11-20",
    "hora": "10h30",
@@ -613,6 +808,21 @@
    "win": 0.003,
    "win_abertura": true,
    "wdo": -0.145
+  },
+  {
+   "id": "2025-12-10|09h|ipca",
+   "data": "2025-12-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (nov)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.398,
+   "win_abertura": true,
+   "wdo": 0.07
   },
   {
    "id": "2025-12-10|16h|fomc",
@@ -672,6 +882,21 @@
    "wdo": -0.47
   },
   {
+   "id": "2026-01-09|09h|ipca",
+   "data": "2026-01-09",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (dez)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.237,
+   "win_abertura": true,
+   "wdo": -0.165
+  },
+  {
    "id": "2026-01-09|10h30|payroll",
    "data": "2026-01-09",
    "hora": "10h30",
@@ -729,6 +954,21 @@
    "wdo": 0.004
   },
   {
+   "id": "2026-02-10|09h|ipca",
+   "data": "2026-02-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (jan)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.104,
+   "win_abertura": true,
+   "wdo": 0.167
+  },
+  {
    "id": "2026-02-11|10h30|payroll",
    "data": "2026-02-11",
    "hora": "10h30",
@@ -784,6 +1024,21 @@
    "win": 1.026,
    "win_abertura": true,
    "wdo": -0.259
+  },
+  {
+   "id": "2026-03-12|09h|ipca",
+   "data": "2026-03-12",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (fev)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.107,
+   "win_abertura": true,
+   "wdo": 0.089
   },
   {
    "id": "2026-03-18|15h|fomc",
@@ -846,6 +1101,21 @@
    "wdo": -0.881
   },
   {
+   "id": "2026-04-10|09h|ipca",
+   "data": "2026-04-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (mar)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.123,
+   "win_abertura": true,
+   "wdo": -0.737
+  },
+  {
    "id": "2026-04-29|15h|fomc",
    "data": "2026-04-29",
    "hora": "15h",
@@ -905,6 +1175,21 @@
    "wdo": 0.074
   },
   {
+   "id": "2026-05-12|09h|ipca",
+   "data": "2026-05-12",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (abr)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.021,
+   "win_abertura": true,
+   "wdo": -0.153
+  },
+  {
    "id": "2026-06-05|09h30|payroll",
    "data": "2026-06-05",
    "hora": "09h30",
@@ -933,6 +1218,21 @@
    "win": -0.342,
    "win_abertura": true,
    "wdo": -0.443
+  },
+  {
+   "id": "2026-06-12|09h|ipca",
+   "data": "2026-06-12",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (mai)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": 0.0,
+   "win_abertura": true,
+   "wdo": -0.174
   },
   {
    "id": "2026-06-17|15h|fomc",
@@ -977,6 +1277,21 @@
    "win": 1.008,
    "win_abertura": true,
    "wdo": -0.493
+  },
+  {
+   "id": "2026-07-10|09h|ipca",
+   "data": "2026-07-10",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (jun)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.039,
+   "win_abertura": true,
+   "wdo": -0.209
   },
   {
    "id": "2026-07-14|09h30|cpi-eua",
@@ -1036,6 +1351,21 @@
    "win": -0.609,
    "win_abertura": true,
    "wdo": -0.305
+  },
+  {
+   "id": "2026-08-11|09h|ipca",
+   "data": "2026-08-11",
+   "hora": "09h",
+   "tipo": "ipca",
+   "evento": "IPCA (jul)",
+   "pais": "BR",
+   "resultado": null,
+   "consenso": null,
+   "surpresa": null,
+   "janela": "1h",
+   "win": -0.05,
+   "win_abertura": true,
+   "wdo": -0.047
   },
   {
    "id": "2026-08-12|09h30|cpi-eua",
@@ -1217,5 +1547,5 @@
    "wdo": 0.056
   }
  ],
- "atualizado_em": "2026-11-04T02:58:58-03:00"
+ "atualizado_em": "2026-11-04T03:00:24-03:00"
 }
