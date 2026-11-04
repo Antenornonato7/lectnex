@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-04",
-  "atualizado_em": "2026-11-04T12:43-03:00",
+  "atualizado_em": "2026-11-04T12:45-03:00",
   "ibov": {
    "anterior": 165528.92,
    "pontos": [
@@ -123,11 +123,11 @@
     ],
     [
      "12:25",
-     167208.0
+     167319.0
     ],
     [
-     "12:28",
-     167182.0
+     "12:30",
+     167317.0
     ]
    ]
   },
@@ -312,11 +312,11 @@
     ],
     [
      "12:40",
-     5.4804
+     5.4942
     ],
     [
-     "12:43",
-     5.4837
+     "12:45",
+     5.4917
     ]
    ]
   },
@@ -769,7 +769,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.01,
+    "ibov30": 0.07,
     "dolar30": 0.07
    },
    {
@@ -784,7 +784,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": -0.01,
+    "ibov30": 0.07,
     "dolar30": 0.07
    },
    {
@@ -828,7 +828,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": 0.12
+    "dolar30": 0.27
    },
    {
     "hora": "12:20",
@@ -843,7 +843,7 @@
      "BBSE3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.22
    },
    {
     "hora": "12:21",
@@ -1760,7 +1760,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T12:43-03:00",
+ "atualizado_em": "2026-11-04T12:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1907,21 +1907,22 @@
    "tickers": []
   },
   {
-   "titulo": "AI data center stocks and Musk's SpaceX decline as Texas governor result raises risks of a slowdown",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html",
-   "publicado": "2026-11-04T11:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Tesouro Direto hoje recua dos 8% reais antes do Copom; veja as taxas desta quarta-feira",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbVFuVVdoMU9NZEVJUVJFbWUxMk5BMjFKMnRDcDRoOVg0bjhmbE9lUEVidTFDYnFLdGJtVDVqWDNKb0g1d29JbHhNN3pNZzZlckdaN0tnZUp1Rk41NVJRNWIzd2xUMjBJZUVxcnlmRlZ2a3VRamdqUzJ5WDYxRDNnOWFILUxFQk5fY2dPWVdMdzU0ZVpsQjVLVS1neDdlWm53bmt4c2lNNklkTW1vZUlFSC1tUzJfSzh4NUVmajBzQ3BOQkRROVd5ekxjYk56NjlyR1U1LTE1alU5Ym1XeWhIdWNMWmR5dlE?oc=5",
    "publicado": "2026-11-04T11:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
+   "publicado": "2026-11-04T11:08-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
