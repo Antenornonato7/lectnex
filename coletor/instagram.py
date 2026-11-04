@@ -163,6 +163,9 @@ def propor(tipo, legenda_arq, imagens):
     f['pedidos'] = f['pedidos'][-40:]
     fila_gravar(f, sha)
     tem_ig = bool(os.environ.get('INSTAGRAM_TOKEN', '').strip())
+    if not tem_ig and tipo == 'grafico':
+        print(f'Pedido {pid}: modo manual, a legenda vai no Kit do dia das 19h30.')
+        return
     if not tem_ig:
         # modo manual: as imagens já chegaram no Telegram; aqui vai só a legenda limpa, fácil de copiar no celular
         tg('sendMessage', chat_id=admin(), text=f'📋 Legenda pronta para copiar ({TIPOS.get(tipo, tipo)}):')

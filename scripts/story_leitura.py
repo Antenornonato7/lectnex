@@ -145,6 +145,11 @@ def enviar(caminho, legenda):
                                      headers={'Content-Type': f'multipart/form-data; boundary={b}'})
         urllib.request.urlopen(req, timeout=60).read()
     print('Story enviado no Telegram privado.')
+    try:  # guarda a peça para o Kit do dia (19h30)
+        from kit import registrar
+        registrar(caminho, legenda)
+    except Exception as e:
+        print(f'::warning::Kit do dia: {e.__class__.__name__}')
     return True
 
 

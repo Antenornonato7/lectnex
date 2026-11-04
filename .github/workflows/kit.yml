@@ -1,0 +1,23 @@
+# Kit do dia: às 19h30 (dias úteis, pelo Relógio) manda no Telegram privado um álbum com as peças do dia para o
+# Instagram e o roteiro (link de cada sticker e legenda do feed). As peças são registradas por scripts/kit.py.
+name: Kit do dia
+run-name: Kit do dia
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  kit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enviar o kit
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/kit.py enviar

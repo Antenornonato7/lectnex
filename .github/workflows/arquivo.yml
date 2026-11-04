@@ -47,6 +47,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
             dia() { git show "$1:data/leitura.json" 2>/dev/null | python3 -c "import json,sys;print(json.load(sys.stdin).get('data',''))" 2>/dev/null; }

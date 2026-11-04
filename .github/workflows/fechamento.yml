@@ -42,6 +42,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
           PREVIA: ${{ inputs.previa_story && '1' || '' }}
         run: |
           [ -f "$RUNNER_TEMP/fechamento.json" ] || { echo "Sem fechamento hoje: sem story."; exit 0; }
@@ -69,6 +70,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/story_placar.py "$RUNNER_TEMP/placar-semana.png" || echo "::warning::Falha no story do placar da semana."
       - name: Salvar placar do termômetro
         id: salvar
