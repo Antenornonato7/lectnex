@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T16:08-03:00",
+  "atualizado_em": "2026-11-05T16:38-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -287,11 +287,35 @@
     ],
     [
      "15:50",
-     166405.0
+     166491.0
     ],
     [
-     "15:53",
-     166470.0
+     "15:55",
+     166691.0
+    ],
+    [
+     "16:00",
+     166605.0
+    ],
+    [
+     "16:05",
+     166648.0
+    ],
+    [
+     "16:10",
+     166918.0
+    ],
+    [
+     "16:15",
+     166775.0
+    ],
+    [
+     "16:20",
+     166726.0
+    ],
+    [
+     "16:23",
+     166705.0
     ]
    ]
   },
@@ -640,11 +664,35 @@
     ],
     [
      "16:05",
-     5.4919
+     5.4894
     ],
     [
-     "16:08",
-     5.4909
+     "16:10",
+     5.4868
+    ],
+    [
+     "16:15",
+     5.4822
+    ],
+    [
+     "16:20",
+     5.4885
+    ],
+    [
+     "16:25",
+     5.4877
+    ],
+    [
+     "16:30",
+     5.4869
+    ],
+    [
+     "16:35",
+     5.4918
+    ],
+    [
+     "16:38",
+     5.4913
     ]
    ]
   },
@@ -1492,6 +1540,21 @@
     "dolar30": 0.03
    },
    {
+    "hora": "15:29",
+    "titulo": "Ibovespa Hoje Ao Vivo: Bolsa recua na esteira de Wall Street; VALE3 sobe",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONkNhMG92eG9qOVl5NzVWNWdGSl9vUWJRdHFTc3BkUXV1a25pT2ZPUEdZRHFQVDNzM0xqMnZVUlB2MkhvdXZxZUZ6S0hibGN3bHg5a3diYWJWYXhlRngtMl9pS1EzcFdNTkFuQ1JhVDVhYlFRT3luNjZpTmdJTi1MM3NyYURoaWhoYWZGbk9XVQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "VALE3"
+    ],
+    "ibov30": -0.11,
+    "dolar30": 0.11
+   },
+   {
     "hora": "15:49",
     "titulo": "Ouro alcança o maior nível em duas semanas com cautela em Wall Street",
     "fonte": "Money Times",
@@ -1501,8 +1564,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.13,
+    "dolar30": -0.12
    },
    {
     "hora": "16:04",
@@ -1515,48 +1578,41 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "16:20",
+    "titulo": "Estouro da bolha de IA pode tirar do dólar status de refúgio, diz TS Lombard",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdXdhN25qeDlFNmxRaEFpMi1sckFnWGdBandkQng5RmkzZ2V5NW9BZkZDckh1VUtjNERfZmxWM2RhRk52Y2c2cXhDb0ZOcUU1UHpCQUhyYXZXUTN2Z1pNaUpJSGsxaGdkRlFnYUZoRmtwbUhhMFJHMk5hSUlHVExXT1RHbktEMVFqbUpsM1FMSER6TFB4MXBEalBrZ3k2MXZxZVdZVnJjMjY4Vk9FdlVUTTZBT3BpS0pBNVVIdU9RNjZJQmVqV1h3eGNXSdIB2gFBVV95cUxOUDY2Wlk4ZVc1Nk9XQjFnbm9DYld0ZTNsdFJoeTA5cG9rSVZ0dTdwTng5Rjh2cFBqUERWRVpNU3M2RmlpR3lxVFFBV3RLUjZLVXRObjl2NHBSazZEQ3NiNW1OaDloWlJhR1VpRVBKRVBZZGxJbWU0Y2FsRnJ3WjIwMnBYWHVnSWZYVUN3RFE2NXAxUUxNVlZwamFOeGNkXzRjaS12WFNvSEw1bVRZQV9fRWtpNW5NRGJwNERnSy1QMWVPM2E0Q3RDblQ1Qkd0dVVXMnk4eVBHSVVXdw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:23",
+    "titulo": "Alerta para dividendos? Itaú BBA tira Vale (VALE3) e Copel (CPLE3) da carteira; veja quem entrou",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUVZmdU9hZEwwaTI4aFR5Qy1QaWVyOXdJcVc3bGE4VUk3Q0xya1hVQ2pvLVRtakZ3Rm1jT2lvRWNvLVM1UEgzTzJBR1Rsb1ZuUnJ1UFhfMldyN2RSdEhRbXhtd1ZLU1ozN1VTZU9LRFlrc2ZhcDhXMFVZZzZScHUycWx5SGZIaWFuUm44NmhSYXBjemxQYmIza2cwVmtIbEpQMVg5WFFPbzBCWjZtZ3dMeHRFQlhUYW5zS1VrZzdR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "CPLE3",
+     "ITUB4",
+     "VALE3"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Selic fica em 13,75%, mas não deve baratear o financiamento imobiliário; entenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZWNBZnVuRnFjS3Rpb01UVU5ySTExTVVjUnZXR204T3NUall3R2Vab1RDYlFDRUMtWUF2dG1Fa1V2VG5kQnIycExuNDdNdTA5MnZiemxlX0Rjd254TVJ5UHB6QkVBcGRyRE5BSlV5Mk1TVzZzRWxLdUF1bTNkbEgyaG1UQ3lCcU5aY3FzU1FydmFOUC1Wc3NBY1dWOVV4b19CbkxnR0dQckhhZzFYX0ZLWkVFR000YXVzY1Vua0dod9IBxAFBVV95cUxOXy1tN1hsRDhudjBfdlFQNDJwVEVNZ01aTlNfRmozWXNsRFVqd29MRXhfdFJISDRmUHdBeEpXTTh4dTZsYVloUV9Sc1ViS1hNV3pTSEhPXzB5QmpjNEtFNGRfa2FaSElmOFN0RGdNMTZYaFVQbEpLNDJSdkRNUTNRTUlqd2VhNzcyMVpKckZHdVFOOHBEZ0pXdGZLb0R2UTVEVVpPZUllYzhQVlJRTmNMZW5kRW52YkVLYVhTRlBLOWhFSDk0?oc=5",
-   "publicado": "2026-11-05T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Reação ao Copom, indústria, balanços, BoE e mais destaques desta quinta-feira",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQa1pocEVwcm9QYmJDLUJDTFZ6S0p2Z1g4VkVuS2hmdE50OXoxTnhaU1M5eHVod2VXWFFSTFp6VnQ1ZFhQOXl5b3ZRT0thdDNibjlqaDlLdUxNazNVc2FxMEsyWURvYmEtMVUzaWdWeUd2aUppVEtSRTFsMHVrS1lBcjg5ck1DVk15eFE00gGQAUFVX3lxTE5LYVdYVFJBY1cxNFNlLTJDRHRya1JmSVNfM1YzWGU1S0xLS2ZkTDRLc085MVo2Tk51d05CR0lhOExkTDFMUDB2TzBBNVlOS1lXV3I0dlJKQVh5cUJDN0h3Y0F6a3JaMkdlSEU2Q3RyM3E0a2dDT2MxUUw2LU1UTnFtUUpzX0d4RmVwbVBlZzI3aw?oc=5",
-   "publicado": "2026-11-05T06:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dilema do Copom escancara risco de estagflação",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcU12YzFzRmdYb2ZTMllqYUVCYmFqb0NYdXU2SlVSM3AxSWNzb3cyY2pOZFBkM3JpaTE3cEhoR1ZmMUhyT0pzTzlnR0pUa3ZwWVpSOFNVT0tyamtYLWREWE4waC0zSnNRVUgwM1F1eVpjdDM2ek1pWVBwUUJCeWhCRnBRbC1Sa1J1ZW1RTEpDVjJSRXAxNF9sNzhqQVFqUWhLMV8zX1EyamlFd2vSAboBQVVfeXFMTjZNTXdxd1NoLXBRWDZkR3V0amRKMnJHdlpzRktxZGVqWEs4U25YVHU1NktSWW5wckVJbUNsV0hKSTc1dm5tX05TaTFlb2dPeEFsOG9seFJ0dVA4SmxXQ3hBaXREQ1hUWkIzX1V1ZGxoQXB4SV9IT3k2ZEdocWFxbkNUOVNPc3pCS0o3SmgxdFlHTGpOU29fRThWTGM2MWVsMlp2OTc1WU1qQ3VsWXl3d0tOY3RubzFsWEt3?oc=5",
-   "publicado": "2026-11-05T06:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Caruso, do Santander: barra para novos cortes da Selic agora parece ser alta",
    "fonte": "Valor",
@@ -2475,6 +2531,19 @@
    ]
   },
   {
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa recua na esteira de Wall Street; VALE3 sobe",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONkNhMG92eG9qOVl5NzVWNWdGSl9vUWJRdHFTc3BkUXV1a25pT2ZPUEdZRHFQVDNzM0xqMnZVUlB2MkhvdXZxZUZ6S0hibGN3bHg5a3diYWJWYXhlRngtMl9pS1EzcFdNTkFuQ1JhVDVhYlFRT3luNjZpTmdJTi1MM3NyYURoaWhoYWZGbk9XVQ?oc=5",
+   "publicado": "2026-11-05T15:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Ouro alcança o maior nível em duas semanas com cautela em Wall Street",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOEFsS1RuekdtQTFHdnA5cVdjUnhnTkxPeU5zSTZORjFCbTJ3MTE2aGNXNGlEckhKSk9nRXVKQWdRbjNwaUZYa3VHWXVDSHNfcWFQcGJmWmhfclY2b05XUmVERHZhTGdxdVBLSWllRHJ4UmgtbVZTX0pvck1HRUg0Zno3NVowWVBQY0FTVkM1b0dBa0hQREdRTWFsZTRROWVnc04zZm9RTl8?oc=5",
@@ -2495,6 +2564,32 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Estouro da bolha de IA pode tirar do dólar status de refúgio, diz TS Lombard",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdXdhN25qeDlFNmxRaEFpMi1sckFnWGdBandkQng5RmkzZ2V5NW9BZkZDckh1VUtjNERfZmxWM2RhRk52Y2c2cXhDb0ZOcUU1UHpCQUhyYXZXUTN2Z1pNaUpJSGsxaGdkRlFnYUZoRmtwbUhhMFJHMk5hSUlHVExXT1RHbktEMVFqbUpsM1FMSER6TFB4MXBEalBrZ3k2MXZxZVdZVnJjMjY4Vk9FdlVUTTZBT3BpS0pBNVVIdU9RNjZJQmVqV1h3eGNXSdIB2gFBVV95cUxOUDY2Wlk4ZVc1Nk9XQjFnbm9DYld0ZTNsdFJoeTA5cG9rSVZ0dTdwTng5Rjh2cFBqUERWRVpNU3M2RmlpR3lxVFFBV3RLUjZLVXRObjl2NHBSazZEQ3NiNW1OaDloWlJhR1VpRVBKRVBZZGxJbWU0Y2FsRnJ3WjIwMnBYWHVnSWZYVUN3RFE2NXAxUUxNVlZwamFOeGNkXzRjaS12WFNvSEw1bVRZQV9fRWtpNW5NRGJwNERnSy1QMWVPM2E0Q3RDblQ1Qkd0dVVXMnk4eVBHSVVXdw?oc=5",
+   "publicado": "2026-11-05T16:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Alerta para dividendos? Itaú BBA tira Vale (VALE3) e Copel (CPLE3) da carteira; veja quem entrou",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUVZmdU9hZEwwaTI4aFR5Qy1QaWVyOXdJcVc3bGE4VUk3Q0xya1hVQ2pvLVRtakZ3Rm1jT2lvRWNvLVM1UEgzTzJBR1Rsb1ZuUnJ1UFhfMldyN2RSdEhRbXhtd1ZLU1ozN1VTZU9LRFlrc2ZhcDhXMFVZZzZScHUycWx5SGZIaWFuUm44NmhSYXBjemxQYmIza2cwVmtIbEpQMVg5WFFPbzBCWjZtZ3dMeHRFQlhUYW5zS1VrZzdR?oc=5",
+   "publicado": "2026-11-05T16:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "CPLE3",
+    "ITUB4",
+    "VALE3"
+   ]
   }
  ],
  "enviadas": [
@@ -2524,7 +2619,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T16:08-03:00",
+ "atualizado_em": "2026-11-05T16:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2532,14 +2627,62 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
-   "titulo": "Nasdaq cai em 6,4% com receio de que vitória democrata afete boom da IA",
+   "titulo": "Alerta para dividendos: Itaú BBA tira Vale (VALE3) e Copel (CPLE3) da carteira; veja quem entrou",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUVZmdU9hZEwwaTI4aFR5Qy1QaWVyOXdJcVc3bGE4VUk3Q0xya1hVQ2pvLVRtakZ3Rm1jT2lvRWNvLVM1UEgzTzJBR1Rsb1ZuUnJ1UFhfMldyN2RSdEhRbXhtd1ZLU1ozN1VTZU9LRFlrc2ZhcDhXMFVZZzZScHUycWx5SGZIaWFuUm44NmhSYXBjemxQYmIza2cwVmtIbEpQMVg5WFFPbzBCWjZtZ3dMeHRFQlhUYW5zS1VrZzdR?oc=5",
+   "publicado": "2026-11-05T16:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "CPLE3",
+    "ITUB4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Estouro da bolha de IA pode tirar do dólar status de refúgio, diz TS Lombard",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdXdhN25qeDlFNmxRaEFpMi1sckFnWGdBandkQng5RmkzZ2V5NW9BZkZDckh1VUtjNERfZmxWM2RhRk52Y2c2cXhDb0ZOcUU1UHpCQUhyYXZXUTN2Z1pNaUpJSGsxaGdkRlFnYUZoRmtwbUhhMFJHMk5hSUlHVExXT1RHbktEMVFqbUpsM1FMSER6TFB4MXBEalBrZ3k2MXZxZVdZVnJjMjY4Vk9FdlVUTTZBT3BpS0pBNVVIdU9RNjZJQmVqV1h3eGNXSdIB2gFBVV95cUxOUDY2Wlk4ZVc1Nk9XQjFnbm9DYld0ZTNsdFJoeTA5cG9rSVZ0dTdwTng5Rjh2cFBqUERWRVpNU3M2RmlpR3lxVFFBV3RLUjZLVXRObjl2NHBSazZEQ3NiNW1OaDloWlJhR1VpRVBKRVBZZGxJbWU0Y2FsRnJ3WjIwMnBYWHVnSWZYVUN3RFE2NXAxUUxNVlZwamFOeGNkXzRjaS12WFNvSEw1bVRZQV9fRWtpNW5NRGJwNERnSy1QMWVPM2E0Q3RDblQ1Qkd0dVVXMnk4eVBHSVVXdw?oc=5",
+   "publicado": "2026-11-05T16:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
+   "publicado": "2026-11-05T16:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nasdaq caminha para pior pregão desde 2025 com perdas em tecnologia",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzR4clJnLXlwRnEzLVNFT1FIZTRhTmVZZ1Zzdm5IX1M2cEcxZVlkYnE3bFVWZjN5dzBYN1JvZWE5UW5SWlBEUWNKZnNRZFFRUTZWNHlEVUpHRnRTS1Awam80MWU3QzU4bnBoMElEWkNSdXc2TTl4Qm5TcW9JSXhhRVcyODRhY2FpRnNETWdoWXNvbXNGX3J2VnhYWjNadw?oc=5",
+   "publicado": "2026-11-05T16:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nasdaq cai até 6,4% com receio de que vitória democrata afete boom da IA",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/nasdaq-cai-em-64-com-receio-de-que-vitoria-democrata-afete-boom-da-ia.shtml",
    "publicado": "2026-11-05T16:04-03:00",
@@ -2571,6 +2714,32 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cai e dólar sobe com Selic, balanços e reunião no radar",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRFhZUHpSVWpMemYyXzVoYXU1TlFCVHloTUQtOUhvWHRoLU9vaDd0c2lCOUtyTWp1YzBxdUZkVU84Q1NMRjdselFMbG9SS1l1Nm5xWURkYmljdERfSnV0N1ZXRWlRRTZvUXNQdlhkS0EyYTB5WFZOTUZsNnNDeEhQWlVJejdNa0R5VG9wVTFveFc5dmh4UkV4NVBDUEt6RC1icWlpcA?oc=5",
+   "publicado": "2026-11-05T15:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa recua na esteira de Wall Street; VALE3 sobe",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONkNhMG92eG9qOVl5NzVWNWdGSl9vUWJRdHFTc3BkUXV1a25pT2ZPUEdZRHFQVDNzM0xqMnZVUlB2MkhvdXZxZUZ6S0hibGN3bHg5a3diYWJWYXhlRngtMl9pS1EzcFdNTkFuQ1JhVDVhYlFRT3luNjZpTmdJTi1MM3NyYURoaWhoYWZGbk9XVQ?oc=5",
+   "publicado": "2026-11-05T15:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   },
   {
    "titulo": "Wheels Up assina acordo com Embraer para compra de seis jatos Phenom 300E",
@@ -2611,30 +2780,6 @@
    ]
   },
   {
-   "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
-   "publicado": "2026-11-05T14:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Base Exchange mira lançamento em 2027 em desafio à B3 no mercado de ações",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWlYzOXg0N21GeWo4VEJ5T01XTkZNdmRMM3VGekljSmxncmY2SW44NXlWRmN1RjdrYWZXOF90ek1LVEtydklrVFRUZEVWNjBvaFp6MEJBejYtNi03aXFKVnFXcWJCVjFNUTVQUWM3SE1tYVdDN2JCRHo4SDZOd04tWGMyOTBOSFNVTVQyWmQtd2pweXBQbER4XzdWWWozWWctODRjbjlrMGhIUWRkcGhMeFFR0gG3AUFVX3lxTE1KeERPeXJtRVZjMVJtODF3aGhOdDU4SXlBVVY3eGJPZVBQTFF0NUdjUU1xNU1Xb2xZdU9JX2t3a2xlMi1BdW1kaGs3SkROZHNhZ2YxeXA4U3NiXzExQlluS1I0NXBORm42TEJOckVvY0t6WXc0Zmg1dUw0N0s3NUtOX2dyMVRxTzNmVDlpTktqZ09WVjBBcVNlY1ZXMExuS1dMV1FPZmx5dDJYbFN3QmdmQV90dzVjaw?oc=5",
-   "publicado": "2026-11-05T14:31-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
-  },
-  {
    "titulo": "O que está por trás da queda da Porto (PSSA3)? Conta dos calotes chega, com provisões 48% maiores e mudança no guidance",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalpBbzh3RkxmaTFPdVlLWnh3MUoyTFJHMGhTLUxtYWFDbXVfckVKV1VHWUtGVEgzTzZFTEFoRjhUMXZVVGhmeHh0OHB5RFBYM3pVcVB1Zjk5bEs0ZlQ1UHUxS05ITXpjTnVOOVl1RXJJMkNUY0NIUkRjVzg2cElKNEFHZHBBd1BoMEdzQlNhTlBUYkJmekxPUnVwZUxTRnZnNHhIVTFYZi1TOHozRTF5RGNPRG8xUFRLcThtLW1JbmZtOWJfNHBkV045ZE9lUEdHd0FpZ0k3T1kyY0NkV3IyV3VLMjZzQWNmRTBsV2ZMdFU?oc=5",
@@ -2653,54 +2798,6 @@
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468028",
    "publicado": "2026-11-05T13:40-03:00",
    "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Barkin sees interest rate hikes ahead, but at a gradual pace",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
-   "publicado": "2026-11-05T13:34-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nasdaq despenca quase 4%, arrasta Ibovespa e dólar volta a subir",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOME96bFoyQ2tmbHBVNl94YXowLURxeTN1MHZrZnllQk1WTHJhZjVIMXdqblIxck1WN3JBN1VqT0VLNEx4NURjTGV1blhtazdxT3d1V0p1dzQ5VEdjdzV0dGpzWE5mRWdNNlU5QkE2ZHdHUHk4R0YtQ3lWeFA3aXhQX29kNERWNG1pWjRQa3dTZ2ZOUkdTMk1iZ2t6Yw?oc=5",
-   "publicado": "2026-11-05T13:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "BC da Noruega interrompe série de altas e mantém taxa de juros em 4,5%",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468027",
-   "publicado": "2026-11-05T13:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Emirates vê lucro despencar 66% com impacto da guerra no Irã",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468026",
-   "publicado": "2026-11-05T13:19-03:00",
-   "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
