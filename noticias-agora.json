@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T14:10-03:00",
+  "atualizado_em": "2026-11-05T14:13-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -195,7 +195,11 @@
     ],
     [
      "13:55",
-     166754.0
+     166666.0
+    ],
+    [
+     "13:58",
+     166656.0
     ]
    ]
   },
@@ -452,7 +456,11 @@
     ],
     [
      "14:10",
-     5.4783
+     5.479
+    ],
+    [
+     "14:13",
+     5.4788
     ]
    ]
   },
@@ -1180,7 +1188,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.04,
+    "ibov30": -0.1,
     "dolar30": 0.02
    },
    {
@@ -1195,7 +1203,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.04,
+    "ibov30": -0.1,
     "dolar30": 0.02
    }
   ]
@@ -2207,7 +2215,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T14:10-03:00",
+ "atualizado_em": "2026-11-05T14:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2330,16 +2338,17 @@
    "tickers": []
   },
   {
-   "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
-   "publicado": "2026-11-05T12:56-03:00",
-   "impacto": "alto",
+   "titulo": "Ações da C&A (CEAB3) disparam até 10% com balanço melhor do que o esperado; o que agradou no 3T26?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkpRUDhwUHptUzV2S2MwdEJDd00tV0R3V1A1S2dUU0hLV0pEYVpUdVVCWFVlR2gwRDY0TEZ2ZzRjZDJNZ3FqMzVCN3VaMmFxSWFuOWdJdzlNQ0ktRkQxQVpkSHdxNm1VX1YzTGViUUtZMVlTSHZzUTMtQUhDSmtPWFF1SHdUOTdZbDJ5OGZFZ1NEempmM3dQcVpOeDJoa2ZSTDk1RmR2a0R5VUZBSHRPY1gtWkNCVFU5c1NELVZLRzB4dVJfdVJJ?oc=5",
+   "publicado": "2026-11-05T12:32-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WDO",
-    "DI"
+    "WIN"
    ],
-   "tickers": []
+   "tickers": [
+    "CEAB3"
+   ]
   },
   {
    "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
@@ -2391,18 +2400,6 @@
    "tickers": []
   },
   {
-   "titulo": "'Brincadeira de mau gosto' e 'balão de ensaio': o que banqueiros acharam da Selic em 7,5% de Lara Resende",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
-   "publicado": "2026-11-05T12:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Governo Lula estuda mudar arcabouço para reduzir limite de gastos após frustração de receitas",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-estuda-mudar-arcabouco-para-reduzir-limite-de-gastos-apos-frustracao-de-receitas.shtml",
@@ -2412,6 +2409,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Tenda (TEND3) lidera quedas do Ibovespa após 3T26: bancos ligam alerta, mas veem potencial para a ação triplicar",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaFBrbFRnVFFRTnhCOUZPN1YxcU9VMWJfNDRhb0VfSVVmSEdjNng2SzdDRjVETXJwZ2pGbTZoa0RrN0JBUTB4SVZXNmp5ZDh4c0VHajREX241cE5MZEJTQUhMZGU3d184dmFaaTktYXhVam81RTBHMEUzdjI3TGMxWjI3d2t3bkNfZU5TeExaT29zMGhBd0ZRWUZSUFNqdjZ2LVdtREE3MHVWTnltNjI4TGhfVTJQa1I3SG1IX252bEh0Yl9OSjhYUkVEOGZ3NXYybzdFeFhBQ1pZNWtLM01rUUR0Xy1rM0J4QS1udVdxZGU?oc=5",
+   "publicado": "2026-11-05T11:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "TEND3"
+   ]
   }
  ]
 }
