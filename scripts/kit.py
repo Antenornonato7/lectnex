@@ -90,29 +90,29 @@ def registrar(caminho, legenda):
         print(f'::warning::Kit do dia: não registrei a peça ({e.__class__.__name__}: {str(e)[:80]})')
 
 
-def registrar_video(caminho, legenda='', capa=None):
-    """Reel do dia: guarda o MP4 para ir no kit das 19h30."""
+def registrar_video(caminho, legenda='', capa=None, chave='reel', nome='Reel do dia'):
+    """Reel (do dia ou da semana): guarda o MP4, a capa e a legenda para o kit das 19h30."""
     if not os.environ.get('GITHUB_TOKEN'):
         return
     try:
         hoje = dt.datetime.now(BRT).date().isoformat()
-        gravar(f'kit/{hoje}/reel.mp4', open(caminho, 'rb').read(), ler(f'kit/{hoje}/reel.mp4')[1])
+        gravar(f'kit/{hoje}/{chave}.mp4', open(caminho, 'rb').read(), ler(f'kit/{hoje}/{chave}.mp4')[1])
         if capa and os.path.exists(capa):
             from PIL import Image
             buf = io.BytesIO()
             Image.open(capa).convert('RGB').save(buf, 'JPEG', quality=90, optimize=True)
-            gravar(f'kit/{hoje}/reel-capa.jpg', buf.getvalue(), ler(f'kit/{hoje}/reel-capa.jpg')[1])
+            gravar(f'kit/{hoje}/{chave}-capa.jpg', buf.getvalue(), ler(f'kit/{hoje}/{chave}-capa.jpg')[1])
         for _ in range(3):
             bruto, sha = ler(f'kit/{hoje}/kit.json')
             kit = json.loads(bruto) if bruto else {'data': hoje, 'pecas': []}
-            kit['reel'] = {'legenda': legenda, 'hora': dt.datetime.now(BRT).strftime('%H:%M')}
+            kit.setdefault('reels', {})[chave] = {'nome': nome, 'legenda': legenda, 'hora': dt.datetime.now(BRT).strftime('%H:%M')}
             try:
                 gravar(f'kit/{hoje}/kit.json', json.dumps(kit, ensure_ascii=False, indent=1).encode(), sha)
                 break
             except urllib.error.HTTPError as e:
                 if e.code not in (409, 422):
                     raise
-        print('Kit do dia: reel registrado.')
+        print(f'Kit do dia: {nome} registrado.')
     except Exception as e:
         print(f'::warning::Kit do dia: não registrei o reel ({e.__class__.__name__}: {str(e)[:80]})')
 
@@ -168,8 +168,8 @@ def enviar(dia=None):
         if img:
             fotos.append(img)
             ok.append(p)
-    reel = kit.get('reel')
-    if not ok and not reel:
+    reels = kit.get('reels') or ({'reel': dict(kit['reel'], nome='Reel do dia')} if kit.get('reel') else {})
+    if not ok and not reels:
         return
     d = dt.date.fromisoformat(dia)
     dias = ['segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo']
@@ -180,20 +180,21 @@ def enviar(dia=None):
         extra = f' · sticker de link: <code>{p["link"]}</code>' if p.get('link') and onde == 'stories' else (' · legenda logo abaixo' if p.get('legenda') else '')
         linhas.append(f'{i}. <b>{p["nome"]}</b> ({onde}){extra}')
     linhas += ['', 'Ordem sugerida: o post de feed primeiro, depois os stories na ordem da lista. As imagens estão no álbum, na mesma ordem.']
-    if reel:
-        linhas.insert(len(linhas) - 2, f'{len(ok) + 1}. <b>Reel do dia</b> (reels, 15 s, sem áudio: escolha uma música da biblioteca do Instagram) · vídeo, capa e legenda logo abaixo')
+    for j, (ch, rl) in enumerate(reels.items()):
+        dur = '20 s' if ch == 'reel-semana' else '15 s'
+        linhas.insert(len(linhas) - 2, f'{len(ok) + j + 1}. <b>{rl.get("nome", "Reel")}</b> (reels, {dur}, sem áudio: escolha uma música da biblioteca do Instagram) · vídeo, capa e legenda logo abaixo')
     if ok:
         tg_album(fotos, '\n'.join(linhas)[:1020])
-    if reel:
-        vid, _ = ler(f'kit/{dia}/reel.mp4')
+    for ch, rl in reels.items():
+        vid, _ = ler(f'kit/{dia}/{ch}.mp4')
         if vid:
-            tg_video(vid, '🎬 <b>Reel do dia</b> · legenda e capa logo abaixo')
-        cap, _ = ler(f'kit/{dia}/reel-capa.jpg')
+            tg_video(vid, f'🎬 <b>{rl.get("nome", "Reel")}</b> · legenda e capa logo abaixo')
+        cap, _ = ler(f'kit/{dia}/{ch}-capa.jpg')
         if cap:
-            tg_album([cap], '🖼️ <b>Capa do reel</b>: no Instagram, em "Editar capa", toque em "Adicionar da galeria" e escolha esta imagem.')
-        if reel.get('legenda'):
-            tg_texto('📋 Legenda do reel:', html=False)
-            tg_texto(reel['legenda'], html=False)
+            tg_album([cap], f'🖼️ <b>Capa: {rl.get("nome", "reel")}</b>. No Instagram, em "Editar capa", toque em "Adicionar da galeria" e escolha esta imagem.')
+        if rl.get('legenda'):
+            tg_texto(f'📋 Legenda ({rl.get("nome", "reel")}):', html=False)
+            tg_texto(rl['legenda'], html=False)
     for p in feed:
         if p.get('legenda'):
             tg_texto(f'📋 Legenda do feed ({p["nome"]}):', html=False)
