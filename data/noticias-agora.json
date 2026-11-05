@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T15:08-03:00",
+  "atualizado_em": "2026-11-05T15:38-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -239,11 +239,35 @@
     ],
     [
      "14:50",
-     166680.0
+     166769.0
     ],
     [
-     "14:53",
-     166717.0
+     "14:55",
+     166634.0
+    ],
+    [
+     "15:00",
+     166546.0
+    ],
+    [
+     "15:05",
+     166829.0
+    ],
+    [
+     "15:10",
+     167050.0
+    ],
+    [
+     "15:15",
+     166828.0
+    ],
+    [
+     "15:20",
+     166797.0
+    ],
+    [
+     "15:23",
+     166863.0
     ]
    ]
   },
@@ -544,11 +568,35 @@
     ],
     [
      "15:05",
-     5.4883
+     5.4842
     ],
     [
-     "15:08",
-     5.4893
+     "15:10",
+     5.4837
+    ],
+    [
+     "15:15",
+     5.4873
+    ],
+    [
+     "15:20",
+     5.4849
+    ],
+    [
+     "15:25",
+     5.4841
+    ],
+    [
+     "15:30",
+     5.4863
+    ],
+    [
+     "15:35",
+     5.4853
+    ],
+    [
+     "15:38",
+     5.4836
     ]
    ]
   },
@@ -1212,6 +1260,19 @@
     "dolar30": -0.14
    },
    {
+    "hora": "12:53",
+    "titulo": "Tenda derrete mais de 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas hoje",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOaWV2QmxMR1hTUXFMYzUzemJTM0tyUlpZa2JQWXk4RTltMVRiRkhKU1ZrRDZfemJialBQSmxsUFRzdld4RVJkU0V5eHNMLW1lU2ljNDZFSzFQWlVlYnlWXzY3OF9DRE5UQWhOSEoteUhaajZVcmEzTFA3bWZGZ3g5OFB6eHNUNkNaeV9qbWQwNDJ6d2djMXFXeXMxWjBiVC1Pc0dFQ3V3MVIwWjdyX2hyVGU5VF9DaUJVTkxtamFoelhPVkZaUF9rY1BjMWw2YlVjOEphdm11bzUxbkFKZGQ1c0hCZjRNc1B4UHh2eFU5ZlRtclHSAfMBQVVfeXFMTmlldkJsTEdYU1FxTGM1M3piUzNLclJaWWtiUFl5OEU5bTFUYkZISlNWa0Q2X3piYmpQUEpsbFBUc3ZXeEVSZFNFeXhzTC1tZVNpYzQ2RUsxUFpVZWJ5Vl82NzhfQ0ROVEFoTkhKLXlIWmo2VXJhM0xQN21mRmd4OThQenhzVDZDWnlfam1kMDQyendnYzFxV3lzMVowYlQtT3NHRUN1dzFSMFo3cl9oclRlOVRfQ2lCVU5MbWphaHpYT1ZGWlBfa2NQYzFsNmJVYzhKYXZtdW81MW5BSmRkNXNIQmY0TXNQeFB4dnhVOWZUbXJR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": 0.08,
+    "dolar30": -0.14
+   },
+   {
     "hora": "12:56",
     "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
     "fonte": "Estadão",
@@ -1336,7 +1397,7 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": null,
+    "ibov30": 0.03,
     "dolar30": 0.14
    },
    {
@@ -1349,7 +1410,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.03,
     "dolar30": 0.14
    },
    {
@@ -1365,36 +1426,26 @@
      "PETR4"
     ],
     "ibov30": null,
+    "dolar30": -0.11
+   },
+   {
+    "hora": "15:19",
+    "titulo": "Wheels Up assina acordo com Embraer para compra de seis jatos Phenom 300E",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468032",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "EMBR3"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
-   "publicado": "2026-11-05T05:52-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa reage à pausa no ciclo de cortes na Selic",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8yc2xGT212TGJ0YXhyUTBrTEdrbFBCSEhIMHlBdXFfZzJ1cVB4dFZ1alJ5VVF0MHFPU2x5Q0xjX3BkaEh4MHhQUzc2N2owSHhsbEI1MEFlT0x6RUFzMXdDd0tic2RmLWJiekZF?oc=5",
-   "publicado": "2026-11-05T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ajuste fiscal com justiça social",
    "fonte": "Folha",
@@ -2215,6 +2266,17 @@
    "tickers": []
   },
   {
+   "titulo": "Tenda derrete mais de 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas hoje",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOaWV2QmxMR1hTUXFMYzUzemJTM0tyUlpZa2JQWXk4RTltMVRiRkhKU1ZrRDZfemJialBQSmxsUFRzdld4RVJkU0V5eHNMLW1lU2ljNDZFSzFQWlVlYnlWXzY3OF9DRE5UQWhOSEoteUhaajZVcmEzTFA3bWZGZ3g5OFB6eHNUNkNaeV9qbWQwNDJ6d2djMXFXeXMxWjBiVC1Pc0dFQ3V3MVIwWjdyX2hyVGU5VF9DaUJVTkxtamFoelhPVkZaUF9rY1BjMWw2YlVjOEphdm11bzUxbkFKZGQ1c0hCZjRNc1B4UHh2eFU5ZlRtclHSAfMBQVVfeXFMTmlldkJsTEdYU1FxTGM1M3piUzNLclJaWWtiUFl5OEU5bTFUYkZISlNWa0Q2X3piYmpQUEpsbFBUc3ZXeEVSZFNFeXhzTC1tZVNpYzQ2RUsxUFpVZWJ5Vl82NzhfQ0ROVEFoTkhKLXlIWmo2VXJhM0xQN21mRmd4OThQenhzVDZDWnlfam1kMDQyendnYzFxV3lzMVowYlQtT3NHRUN1dzFSMFo3cl9oclRlOVRfQ2lCVU5MbWphaHpYT1ZGWlBfa2NQYzFsNmJVYzhKYXZtdW81MW5BSmRkNXNIQmY0TXNQeFB4dnhVOWZUbXJR?oc=5",
+   "publicado": "2026-11-05T12:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
@@ -2347,6 +2409,19 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Wheels Up assina acordo com Embraer para compra de seis jatos Phenom 300E",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468032",
+   "publicado": "2026-11-05T15:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
   }
  ],
  "enviadas": [
@@ -2376,7 +2451,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T15:08-03:00",
+ "atualizado_em": "2026-11-05T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2386,10 +2461,34 @@
   "Estadão",
   "Exame",
   "Folha",
-  "InfoMoney",
-  "Money Times"
+  "InfoMoney"
  ],
  "noticias": [
+  {
+   "titulo": "Wheels Up assina acordo com Embraer para compra de seis jatos Phenom 300E",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468032",
+   "publicado": "2026-11-05T15:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
+   "titulo": "Vibra prevê margens acima de níveis pré-guerra nos próximos anos",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNN0Q5VGxPVXpfeXQ5ZlpBOWRPSm9tOXpaMVhnT0tHTno3elhhNHlndHdmM3Y0X2tOLVRRLVpYaXRLVTQ4WTR5U282ZnpOOEs0S0RyRi0yZlFwWjh0bE83SDdiNzVKUVB4WVBjNkpLNVp6QVZIdmg5eFh4VU1UMHdzaENtc1RNOFBHc1ZWeVJ3UlRoaFNkQ2VzWHNjTEJ3MnlfUGc?oc=5",
+   "publicado": "2026-11-05T15:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Petrobras prevê importar 125 mil barris de diesel por dia em novembro para repor estoques",
    "fonte": "Folha",
@@ -2464,32 +2563,6 @@
    "tickers": []
   },
   {
-   "titulo": "Antes do Copom, Ibovespa sobe 1,2% e tem 1ª alta desde as eleições com apoio do exterior e petróleo",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa0VpRnZTX2NtTTVCYjMyVUNLLWZpd0lvYnozZUF6RGpRZmlrQnJoVkJNRDB6VTVqaGt1Z0FJU2FNTnY3cVQxVGthU0ZrT2tIQkhHMmViYXA4YXhGaFNXN01WaGsxcnNDdHJQbWFvWkVLQUxydTJ2b2NrSE12LXZnMFIwOVhqTnlTOVVSZGNFWVZiWkgwM3R0eWJKTnF2TFNMLXd4ZU13a2hQRU5HT2RsckxuNmhtTzVrT0dqNFdVMFg1cDgwTXZDbHpuMEhRUmJWRmx6WHEyQnpMb04tRDFJNHAxRDE?oc=5",
-   "publicado": "2026-11-05T13:28-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Onda democrata 'engole' governo Trump e mercado aguarda decisão sobre Selic; Ibovespa em dólar sobe nesta quarta (4)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQTFYzRkpSaDJZNk9nUUM1aUROZklBT1pDYXptSjVCcTliN0Q1S01uTEVZQVh5cjVERXY1S0E2STZaUk9ZMVpvNk8zUGpxTGlzeElNaktsa0xFSmM5MG9SVHZtbHVadWhHcllpODczVW1WT3JqMFZGY2FZeHB6em04R2FDeFNjWTF1NnM3TEtMT2V3V3lpeVNIQTRuOTlKX1JCeE5fem8xamk1cjRQQUliVjJUZkk3TjIyd3lVZ0RvZVMwNXpuVWFXV1FlVFJuck5CbFdzNVFFaXlfWXdBN2ZrNkNxS0ZKZzZUYXJ2ME9RMA?oc=5",
-   "publicado": "2026-11-05T13:27-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "BC da Noruega interrompe série de altas e mantém taxa de juros em 4,5%",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468027",
@@ -2514,19 +2587,6 @@
    "tickers": []
   },
   {
-   "titulo": "Auxiliares atribuem ausência de Galípolo em reunião com Lula a silêncio do Copom",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNjN1UjZlTjZ0cE9wWDN0eDJtMEtzTVY3Z2NZV2dIblhaQ2UtUm8xd09wdi1IY0tGekVNTW04M2RSM3FRcktDSV9rWDlpVHNPT0FjUW1sYmEyWkxCa0pidHF2Nm9hbXZtTklrZXItQlNXeGNBb1pqYXRHdHNTQlVhTVJMc0ctdURjbE9ZTllwSjRHYjZFQktHbzQyU2ZqRFJ2WFEtaHE4QVlMVUZEMW1lVFpodUpnTVdUQ3FR0gHAAUFVX3lxTE5JLWlUc1VmZlJnZkh4d0cwR1lGZVFpNUJ1VmxkNTJlUlNJUG9TaFctYV92MVVaVm1ZYVl2QUFsanZxYTFEOTM5OV83NURlZ21Lc19xcWhZRk1xSThvS0wzMWRwUng2cVpiY0x1UkI3Q280OG9WcWRFOGktT0lHbzliaTJsNGFXT0xjSkxxU0tJcHJSejhFbWs2SENONjQyOGszaUp3Q1I4WTRqNTRaQXMtWXY1bU5DR1lQOXZ4S1ltZg?oc=5",
-   "publicado": "2026-11-05T13:14-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
@@ -2547,44 +2607,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ações da C&A (CEAB3) disparam até 10% com balanço melhor do que o esperado; o que agradou no 3T26?",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkpRUDhwUHptUzV2S2MwdEJDd00tV0R3V1A1S2dUU0hLV0pEYVpUdVVCWFVlR2gwRDY0TEZ2ZzRjZDJNZ3FqMzVCN3VaMmFxSWFuOWdJdzlNQ0ktRkQxQVpkSHdxNm1VX1YzTGViUUtZMVlTSHZzUTMtQUhDSmtPWFF1SHdUOTdZbDJ5OGZFZ1NEempmM3dQcVpOeDJoa2ZSTDk1RmR2a0R5VUZBSHRPY1gtWkNCVFU5c1NELVZLRzB4dVJfdVJJ?oc=5",
-   "publicado": "2026-11-05T12:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "CEAB3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa opera volátil, em meio à queda em NY e cautela fiscal, apesar de commodities",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQWpSUXRmQkhmd3p3bFZwaHJkdE9WX1Z3WVFlSkJfSDZzT243QkhLSGNnOGlWX3ZHd1c3RWNQTU1KXzVFazI5Vk9aMzZvRGY4SXJhZnA5dkg4TFJwRTlLYjE0RmlscUtfR1A5U0gwclhnX3VhV29GU1l3YTlwakE0dmhCc3YwNVB1NWRXLTNObk13N2dva1ZwZ3ppNTIzV0FYVzNJUnRmZGFHYWwtNTYwNURteTYwREV6ZFBnWUJKVdIBxAFBVV95cUxPLUctTFNVSHMxcVhtUVl1eUpKWlJ0MDdWT2I1VGRhYmpuZEVyOG00NEVBRzhwY21hRnJEUGJnUnU4NkNPYzNsRmw2RVh0RDlyNTFfdFFUUHJILWF4b010dWdXcm1xLWh0Sm5HUHNpZ0VIcERwNUZLM3ZjQUZCNE94MU1LeEZ4ZlVuZ1N1QVJaUTRJZF9hYktXLU5ZeW9SVkVmaGpWNVozVVBZTG90Y1I4bDQwSUJiSkw3M0pzWTBKQkNvRm13?oc=5",
-   "publicado": "2026-11-05T12:24-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa hoje oscila perto da estabilidade com decisão do Copom e balanços no radar",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FnUERhb21uZHN0Y0pxNDNlUEcyTWttU1pqZ1hHNTdLSGNSM2lDMGZOWHBYSFJvcGYyMTR0cEVxNkRsenNpeW9jalgtdkQxWUFGOTJXYXN6X29TM1k1dmo2ZS1NRW9uSFFCVFRhR3gwMUZXUnBoak9IVi1iWVBQZkRxYndaQmJzLWJuT2NEX0RWNXlPcDBiN0UwRVBWTklzaVFtYzZHOElVQmhVMjExdXNUanhybjlJWmlDMVpsU215ay1FS0ljTFRyR2lBLVRkUU9KNtIB2gFBVV95cUxNYTRPLUhjeHgxYzlseTQwNHNVYnY2V0tKWGQ3YXNsd1ZwSlg3WnduRzFyX0dwaDZjYjdpRzc3Vm1LdFdGcG1mZ0lWVUtfbGY2djVfTkdhMXFmNFVXT3RNVXExSFhDZmtSMnJTNktmU09JY1o4VzVuNVdlSU9peHZab0NrYi0tcUk4N1dIQzNKeV85dmsybG81azNLb2NqUzlmeU9JYUxWellzX0s3dXpfZno4YzQzaWRJYV9xRDZCM3luRUVSNGRVSHNBWWU4UFRpLXF0MUtGQzU5UQ?oc=5",
-   "publicado": "2026-11-05T12:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
