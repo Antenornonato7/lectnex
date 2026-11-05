@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T12:00-03:00",
+  "atualizado_em": "2026-11-05T12:03-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -87,11 +87,15 @@
     ],
     [
      "11:40",
-     167863.0
+     167720.0
     ],
     [
-     "11:44",
-     167848.0
+     "11:45",
+     167641.0
+    ],
+    [
+     "11:46",
+     167627.0
     ]
    ]
   },
@@ -240,11 +244,15 @@
     ],
     [
      "11:55",
-     5.4685
+     5.4697
     ],
     [
-     "11:59",
-     5.4697
+     "12:00",
+     5.4683
+    ],
+    [
+     "12:01",
+     5.4677
     ]
    ]
   },
@@ -675,7 +683,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.74,
     "dolar30": 0.39
    },
    {
@@ -691,7 +699,7 @@
      "TEND3"
     ],
     "ibov30": null,
-    "dolar30": 0.45
+    "dolar30": 0.47
    },
    {
     "hora": "11:29",
@@ -706,7 +714,7 @@
      "TOTS3"
     ],
     "ibov30": null,
-    "dolar30": 0.45
+    "dolar30": 0.47
    },
    {
     "hora": "11:38",
@@ -1655,7 +1663,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T12:00-03:00",
+ "atualizado_em": "2026-11-05T12:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1670,6 +1678,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Barkin sees interest rate hikes ahead, but at a gradual pace",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
+   "publicado": "2026-11-05T12:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Inflação acima de 6% e Selic em 13,75%: Itaú piora cenário para 2027 e descarta cortes nos juros",
    "fonte": "Money Times",
@@ -1697,25 +1717,14 @@
    "tickers": []
   },
   {
-   "titulo": "What the election means for high-end real estate: Watch Robert Frank live",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/cnbcs-robert-frank-talks-with-brown-harris-stevens-ceo-bess-freedman.html",
-   "publicado": "2026-11-05T11:41-03:00",
+   "titulo": "IBGE abre seleção com 27.279 vagas temporárias para o Censo Agropecuário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ibge-abre-selecao-com-27279-vagas-temporarias-para-o-censo-agropecuario.shtml",
+   "publicado": "2026-11-05T11:34-03:00",
    "impacto": "medio",
    "ativos": [
+    "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Barkin sees interest rate hikes ahead, but at a gradual pace",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
-   "publicado": "2026-11-05T11:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -1766,6 +1775,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Itaú (ITUB4), BB Seguridade (BBSE3) e mais 8 ações para ter na carteira em novembro, segundo o Daycoval",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS25QLVdjZk13SUVaT0c2RnMzZHJIbF91RDMzeGRXZU5CQzJiR1BwNTdnRVlnS0RXV21kWDRENzdCbWx6RGFLdU5PS0hVcjhVSTBaU3RKbC1TX0c2V0c1eVNTT2ZqSENTM2lRcU1WY1hWWDdDcHVjQnA5NXU4YVcyR0hjOVFzNXNfLWU1cThjM1I1eW1WMFFyVHhsRWxNRF9WOWc4U0dpVzdJY1ViYmtrZ2k5NkFDQUhfVm5mY2VqaFBHWDA0QW9mSTk5bWJZZw?oc=5",
+   "publicado": "2026-11-05T11:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBSE3",
+    "ITUB4"
+   ]
   },
   {
    "titulo": "Selic estacionou, mas taxas do Tesouro Direto sobem após Copom; Tesouro IPCA+ paga até 7,92% de juro real",
@@ -1836,18 +1859,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje entre leves perdas e ganhos com repercussão da manutenção da Selic",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMDc0NV9GLUp0QzVnbWJ5VjJWX25rcFhSMWVrMEc0eEdhbUJuVHR4bjRpYVdESGhCQkgzQUNHUmdobTlDSHJiZ05LRVFZYmtVRE9keUlTXzBOWk5wZmdoYXZ0WVR5dXBBYTVCcFVnbGFUU3ZrZmJOSzVoNWtBZ1NIb3dZWk9MVmd2ekI5cXZUbXNPQ2VReUFxel9zTHHSAaIBQVVfeXFMUEY4WnJwZW82U0lQVXNEaEswRjU2RDBHdW9udWZZbXFfdk5TZEloRVVId1ltdjdpbGJkWnpVS29SYkVMWTNkeDdKNGNWTWZjZThKdUxkWUhZeDh5S21hek9KY2N3Y2RiOTNOdUU5QW9PaTlERDVvb2wyTHBtT05EcW1QOFRpYVRMa094Q2lUUFVXRDRCdWpTb3FDS19uS0NGQWln?oc=5",
-   "publicado": "2026-11-05T09:27-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
