@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T13:30-03:00",
+  "atualizado_em": "2026-11-05T13:33-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -163,7 +163,11 @@
     ],
     [
      "13:15",
-     166854.0
+     166719.0
+    ],
+    [
+     "13:18",
+     166857.0
     ]
    ]
   },
@@ -388,7 +392,11 @@
     ],
     [
      "13:30",
-     5.474
+     5.4755
+    ],
+    [
+     "13:33",
+     5.4767
     ]
    ]
   },
@@ -953,6 +961,21 @@
     "dolar30": 0.22
    },
    {
+    "hora": "12:22",
+    "titulo": "Ibovespa hoje oscila perto da estabilidade com decisão do Copom e balanços no radar",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FnUERhb21uZHN0Y0pxNDNlUEcyTWttU1pqZ1hHNTdLSGNSM2lDMGZOWHBYSFJvcGYyMTR0cEVxNkRsenNpeW9jalgtdkQxWUFGOTJXYXN6X29TM1k1dmo2ZS1NRW9uSFFCVFRhR3gwMUZXUnBoak9IVi1iWVBQZkRxYndaQmJzLWJuT2NEX0RWNXlPcDBiN0UwRVBWTklzaVFtYzZHOElVQmhVMjExdXNUanhybjlJWmlDMVpsU215ay1FS0ljTFRyR2lBLVRkUU9KNtIB2gFBVV95cUxNYTRPLUhjeHgxYzlseTQwNHNVYnY2V0tKWGQ3YXNsd1ZwSlg3WnduRzFyX0dwaDZjYjdpRzc3Vm1LdFdGcG1mZ0lWVUtfbGY2djVfTkdhMXFmNFVXT3RNVXExSFhDZmtSMnJTNktmU09JY1o4VzVuNVdlSU9peHZab0NrYi0tcUk4N1dIQzNKeV85dmsybG81azNLb2NqUzlmeU9JYUxWellzX0s3dXpfZno4YzQzaWRJYV9xRDZCM3luRUVSNGRVSHNBWWU4UFRpLXF0MUtGQzU5UQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.22,
+    "dolar30": 0.22
+   },
+   {
     "hora": "12:24",
     "titulo": "Ibovespa opera volátil, em meio à queda em NY e cautela fiscal, apesar de commodities",
     "fonte": "InfoMoney",
@@ -1005,7 +1028,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": -0.14
    },
    {
@@ -1032,7 +1055,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.16
+    "dolar30": -0.13
    },
    {
     "hora": "13:19",
@@ -1065,18 +1088,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Aliados de Lula criticam decisão do Copom",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNM2NHYWxwMzdkTTBpNjhmcEtGY2w1SEI0WmpDcmhXSEZxYW1tRFlRRWxWZWJwbGhiZnozRUY2M05vdVZHaUJtdEYybE54dHR0RFVMdW5BS3VUZ3pibEJaWjEwOEJlY1l5RXJLY05CeFFXNFZCY05aU2tWckU4RkZHbjVKQ2tOUURacFNXUkRUczNGT1FSSU0zdE9iU3RzM0lB0gGvAUFVX3lxTE9uMHFPUTA2aFNycmotcFI1T2RSY3lEWUpzNXVBd1RmNTd0WXR3QTBGSW5vcTM1VGpiMzdlSFVvQW94dzVKdE5seXdGeG1IMi1pZ0Zzbm0yMkY0MzJkTUJJZkxkb0VfT1c5aWFxS1hlWkw3UG5NTlBGQUlURkkyYm1Ja0tJcnBDc2JOTjBzVWk5TnBpVHAxWVZRTTFHTDhRNXRCNUdmR1c0VmcxOEdCcUE?oc=5",
-   "publicado": "2026-11-05T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Dilema do Copom escancara risco de estagflação",
    "fonte": "Valor",
@@ -1948,6 +1959,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa hoje oscila perto da estabilidade com decisão do Copom e balanços no radar",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FnUERhb21uZHN0Y0pxNDNlUEcyTWttU1pqZ1hHNTdLSGNSM2lDMGZOWHBYSFJvcGYyMTR0cEVxNkRsenNpeW9jalgtdkQxWUFGOTJXYXN6X29TM1k1dmo2ZS1NRW9uSFFCVFRhR3gwMUZXUnBoak9IVi1iWVBQZkRxYndaQmJzLWJuT2NEX0RWNXlPcDBiN0UwRVBWTklzaVFtYzZHOElVQmhVMjExdXNUanhybjlJWmlDMVpsU215ay1FS0ljTFRyR2lBLVRkUU9KNtIB2gFBVV95cUxNYTRPLUhjeHgxYzlseTQwNHNVYnY2V0tKWGQ3YXNsd1ZwSlg3WnduRzFyX0dwaDZjYjdpRzc3Vm1LdFdGcG1mZ0lWVUtfbGY2djVfTkdhMXFmNFVXT3RNVXExSFhDZmtSMnJTNktmU09JY1o4VzVuNVdlSU9peHZab0NrYi0tcUk4N1dIQzNKeV85dmsybG81azNLb2NqUzlmeU9JYUxWellzX0s3dXpfZno4YzQzaWRJYV9xRDZCM3luRUVSNGRVSHNBWWU4UFRpLXF0MUtGQzU5UQ?oc=5",
+   "publicado": "2026-11-05T12:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa opera volátil, em meio à queda em NY e cautela fiscal, apesar de commodities",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQWpSUXRmQkhmd3p3bFZwaHJkdE9WX1Z3WVFlSkJfSDZzT243QkhLSGNnOGlWX3ZHd1c3RWNQTU1KXzVFazI5Vk9aMzZvRGY4SXJhZnA5dkg4TFJwRTlLYjE0RmlscUtfR1A5U0gwclhnX3VhV29GU1l3YTlwakE0dmhCc3YwNVB1NWRXLTNObk13N2dva1ZwZ3ppNTIzV0FYVzNJUnRmZGFHYWwtNTYwNURteTYwREV6ZFBnWUJKVdIBxAFBVV95cUxPLUctTFNVSHMxcVhtUVl1eUpKWlJ0MDdWT2I1VGRhYmpuZEVyOG00NEVBRzhwY21hRnJEUGJnUnU4NkNPYzNsRmw2RVh0RDlyNTFfdFFUUHJILWF4b010dWdXcm1xLWh0Sm5HUHNpZ0VIcERwNUZLM3ZjQUZCNE94MU1LeEZ4ZlVuZ1N1QVJaUTRJZF9hYktXLU5ZeW9SVkVmaGpWNVozVVBZTG90Y1I4bDQwSUJiSkw3M0pzWTBKQkNvRm13?oc=5",
@@ -2069,7 +2093,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T13:30-03:00",
+ "atualizado_em": "2026-11-05T13:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2146,8 +2170,8 @@
   {
    "titulo": "Tenda derrete mais de 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas hoje",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbVNhRlFLbHpkc0FQWFlxUnNtdU9mRk1QM09abTBNOVA1bkEyT3J5LTlIV0dpbjdnU1hlU3ptUGVRRmxlemZGbVJCcUc2ZU9VeGd2M3FaUThSOGZrdFg1c2hQM2VyQlk1eGVYSXJqWFRzc1Z1SFlaOVF0dmg1eXd2U2lOeVFiSzEtd2d0RHVFaGhIcHAzNWdPbzNLNldReWJIdTM2Q2ttcUZ6Vks0c0ZRTHhnREwzZE9RZ3d6WDJaRkxRRWtzZEhjeVk1VkNEOU1XalZxYWwzVDN0MWpIdTVkdkw1T0RHQlpnSlJVc3V30gHzAUFVX3lxTE5pZXZCbExHWFNRcUxjNTN6YlMzS3JSWllrYlBZeThFOW0xVGJGSEpTVmtENl96YmJqUFBKbGxQVHN2V3hFUmRTRXl4c0wtbWVTaWM0NkVLMVBaVWVieVZfNjc4X0NETlRBaE5ISi15SFpqNlVyYTNMUDdtZkZneDk4UHp4c1Q2Q1p5X2ptZDA0Mnp3Z2MxcVd5czFaMGJULU9zR0VDdXcxUjBaN3JfaHJUZTlUX0NpQlVOTG1qYWh6WE9WRlpQX2tjUGMxbDZiVWM4SmF2bXVvNTFuQUpkZDVzSEJmNE1zUHhQeHZ4VTlmVG1yUQ?oc=5",
-   "publicado": "2026-11-05T12:53-03:00",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNdWpyX19kb0pweGZwbl9ma3FReG1ZMVNfV1ZLejFEaThSZW1PZXV6QVJTVWo0cFcxT2VGeTdOZnUwZ1NYR0cyME91RkUzOEN1LWszQXNTc0ptR09pUDJqS0o3X2k2OG5XcVBoWldrZ3pyRnd1UVBPamkwT1huU1VRVVVBR3hLWDRGSmFMT2J2QWNwRVRSX2V1T1FHSjQta211bk5nWV9mYWdEc0wxUjlIMG9OTmxkWmoyaUgyaTN3WWM0S21vTjgxd01KX3BUY3pFVElTc2FQNVRreTZ4ZUdIcEtoYVM5ZkF4VUVoMmFHaWF3WlZrak00Yw?oc=5",
+   "publicado": "2026-11-05T12:59-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN"
@@ -2166,19 +2190,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ações da C&A (CEAB3) disparam até 10% com balanço melhor do que o esperado; o que agradou no 3T26?",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkpRUDhwUHptUzV2S2MwdEJDd00tV0R3V1A1S2dUU0hLV0pEYVpUdVVCWFVlR2gwRDY0TEZ2ZzRjZDJNZ3FqMzVCN3VaMmFxSWFuOWdJdzlNQ0ktRkQxQVpkSHdxNm1VX1YzTGViUUtZMVlTSHZzUTMtQUhDSmtPWFF1SHdUOTdZbDJ5OGZFZ1NEempmM3dQcVpOeDJoa2ZSTDk1RmR2a0R5VUZBSHRPY1gtWkNCVFU5c1NELVZLRzB4dVJfdVJJ?oc=5",
-   "publicado": "2026-11-05T12:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "CEAB3"
-   ]
   },
   {
    "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
@@ -2280,6 +2291,17 @@
    "tickers": [
     "ITUB4"
    ]
+  },
+  {
+   "titulo": "Governo Lula estuda mudar arcabouço para reduzir limite de gastos após frustração de receitas",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-estuda-mudar-arcabouco-para-reduzir-limite-de-gastos-apos-frustracao-de-receitas.shtml",
+   "publicado": "2026-11-05T11:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ]
 }
