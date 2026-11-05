@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T11:35-03:00",
+  "atualizado_em": "2026-11-05T11:38-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -71,7 +71,11 @@
     ],
     [
      "11:20",
-     168817.0
+     168837.0
+    ],
+    [
+     "11:23",
+     168915.0
     ]
    ]
   },
@@ -204,7 +208,11 @@
     ],
     [
      "11:35",
-     5.4463
+     5.4492
+    ],
+    [
+     "11:38",
+     5.4512
     ]
    ]
   },
@@ -534,7 +542,7 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": 0.13,
+    "ibov30": 0.14,
     "dolar30": 0.13
    },
    {
@@ -549,7 +557,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.07,
     "dolar30": 0.24
    },
    {
@@ -608,7 +616,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.31
+    "dolar30": 0.37
    },
    {
     "hora": "11:20",
@@ -1507,7 +1515,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T11:35-03:00",
+ "atualizado_em": "2026-11-05T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1556,17 +1564,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "OKX anuncia aplicativo de dólar para brasileiros e cartão internacional",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeURIOUUxZnlrVHB3ZW1UakFmSVk4VlRQS3kxcmxJREhQeVhRZXZ0dlpLdzlJQkl4cFFoVGlKcDd5SFR3Skx3Q0t2VnZCVlR5VVFNbVhoVnZNT1AyTWZ3S1pxejRWbUJIRXBiUUtsd1BGV0NKWUN0Tk5vMTVVMnBCaWtaZUpsS21FWGhUbmxUSUFqYldTTWw4dzl5LWp5ZkxnWkJYaVJyUF8tUQ?oc=5",
-   "publicado": "2026-11-05T11:20-03:00",
-   "impacto": "medio",
-   "ativos": [
     "WDO"
    ],
    "tickers": []
@@ -1629,6 +1626,18 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "China afirma que compras agrícolas nos EUA dependem de redução de tarifas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQzNYZjU4cENZb2NhUlRCMVdndFoxNDNWSkVjaXYtSnE2V2djTTRXdnA5bnA5SEs0VkNkdzVuV2FObzB0VUtzRjVnRGRzUlRSMWFUNDZwOTcxVHJXRWRlV1JwNkJjQXBFLUxGSF9HZUExeHNvQTV0V2NDd3ByREo1WTNoMFFLN0hwX1dxSEtCbTI5SDdTZGktRUxTUEthQ2FPX3R1TE96VHE0UzlFOTlLV0JENmVLdFHSAbcBQVVfeXFMTkMzWGY1OHBDWW9jYVJUQjFXZ3RaMTQzVkpFY2l2LUpxNldnY000V3ZwOW5wOUhLNFZDZHc1bldhTm8wdFVLc0Y1Z0Rkc1JUUjFhVDQ2cDk3MVRyV0VkZVdScDZCY0FwRS1MRkhfR2VBMXhzb0E1dFdjQ3dwckRKNVkzaDBRSzdIcF9XcUhLQm0yOUg3U2RpLUVMU1BLYUNhT190dUxPelRxNFM5RTk5S1dCRDZlS3RR?oc=5",
+   "publicado": "2026-11-05T10:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
