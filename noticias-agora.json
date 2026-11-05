@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T11:08-03:00",
+  "atualizado_em": "2026-11-05T11:10-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -47,11 +47,11 @@
     ],
     [
      "10:50",
-     168378.0
+     168596.0
     ],
     [
-     "10:53",
-     168444.0
+     "10:55",
+     168582.0
     ]
    ]
   },
@@ -160,11 +160,11 @@
     ],
     [
      "11:05",
-     5.427
+     5.4292
     ],
     [
-     "11:08",
-     5.43
+     "11:10",
+     5.429
     ]
    ]
   },
@@ -408,7 +408,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.3,
     "dolar30": -0.13
    },
    {
@@ -422,7 +422,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": -0.03
    },
    {
     "hora": "10:48",
@@ -517,6 +517,20 @@
     "titulo": "Selic para, prêmio não: Tesouro volta a subir após Copom e prefixado chega a 15,34%",
     "fonte": "Estadão",
     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWE9Qbko5VlRycnJTcVFGLVYzbkU0cElzX00yMGN6U2J2YVRiLWVtSXFfNGVIYjA4a2NZV0plNzhxQzZwSEM1VWNRSTNLUTk3RnpEQzhLMnJyYjFsS2ZwLTVyeXhvTEJENzBkV0FJMENibVUwUm94QUNsZENxeGJtRllpalNmdVRkbHlWTzByWUw3TnZFT3NrRGF2bWl4SExNRHFjMFpNTEhwVi16a2Z6OXB3dFp3Ri1WU0U1Vm9SY3lDaXVxd0Z1OENpRFRSXzhWREptVNIB2gFBVV95cUxPNnFoUzBCVzA0eFdSNTBfMDMzeXlldGxteVJZYmxIVi1FaE9iM3dHYnRKdldVSDAzRVRCdkdkUHoybG5tZlR3Y044R25sSXl4ZVJtaTYzcWpBQXR3NnhXNFl3NHdMQ1JXSkJ6amFlUTNXeFIwLVNBLTJPRU5LcGMwU1FBZi1iM0doZ3RhZW5JN3ZXSFJ2aThvdzZVMkdGWk9uOUhMZGQ5eUwwYlJqNHFFU1dHQVNmVXhKYlQ4YVNfLU1NblJvTWNWdDZUMXBoNUhHV21TbWs3YVZNQQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:08",
+    "titulo": "Selic para, prêmio não: Tesouro volta a subir após Copom e prefixado chega a 15,34%",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdy1kUWNacmgwTHlzeHR4VW9SeG44WVk3R2ZLaDJJWFdodks3YnBFOUticHdzZ1JWVVBvQ0RXMW1jMHFDOVBSV0MtZF8xNFZ2Q284Y3ZMNEs4T2F0eWtQZFFfV1h1aFJ5UWRLYlpSaGg2ZnNoUkFqNUtXazJpd19ZNURaMTZhNjhKNy03Vjc0VGFiWGtLUkxwM0w0MUJubFZud0RDWHNtTDhDeXRNQnkyaGdwbUlZdDJudm5ndDZRZ2FYbzRtdWpkNDNoQmIzWVhPZGlUS056RFYtMGNOOE5v?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -1274,6 +1288,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Selic para, prêmio não: Tesouro volta a subir após Copom e prefixado chega a 15,34%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdy1kUWNacmgwTHlzeHR4VW9SeG44WVk3R2ZLaDJJWFdodks3YnBFOUticHdzZ1JWVVBvQ0RXMW1jMHFDOVBSV0MtZF8xNFZ2Q284Y3ZMNEs4T2F0eWtQZFFfV1h1aFJ5UWRLYlpSaGg2ZnNoUkFqNUtXazJpd19ZNURaMTZhNjhKNy03Vjc0VGFiWGtLUkxwM0w0MUJubFZud0RDWHNtTDhDeXRNQnkyaGdwbUlZdDJudm5ndDZRZ2FYbzRtdWpkNDNoQmIzWVhPZGlUS056RFYtMGNOOE5v?oc=5",
+   "publicado": "2026-11-05T11:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1303,7 +1329,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T11:08-03:00",
+ "atualizado_em": "2026-11-05T11:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1321,8 +1347,8 @@
   {
    "titulo": "Selic para, prêmio não: Tesouro volta a subir após Copom e prefixado chega a 15,34%",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWE9Qbko5VlRycnJTcVFGLVYzbkU0cElzX00yMGN6U2J2YVRiLWVtSXFfNGVIYjA4a2NZV0plNzhxQzZwSEM1VWNRSTNLUTk3RnpEQzhLMnJyYjFsS2ZwLTVyeXhvTEJENzBkV0FJMENibVUwUm94QUNsZENxeGJtRllpalNmdVRkbHlWTzByWUw3TnZFT3NrRGF2bWl4SExNRHFjMFpNTEhwVi16a2Z6OXB3dFp3Ri1WU0U1Vm9SY3lDaXVxd0Z1OENpRFRSXzhWREptVNIB2gFBVV95cUxPNnFoUzBCVzA0eFdSNTBfMDMzeXlldGxteVJZYmxIVi1FaE9iM3dHYnRKdldVSDAzRVRCdkdkUHoybG5tZlR3Y044R25sSXl4ZVJtaTYzcWpBQXR3NnhXNFl3NHdMQ1JXSkJ6amFlUTNXeFIwLVNBLTJPRU5LcGMwU1FBZi1iM0doZ3RhZW5JN3ZXSFJ2aThvdzZVMkdGWk9uOUhMZGQ5eUwwYlJqNHFFU1dHQVNmVXhKYlQ4YVNfLU1NblJvTWNWdDZUMXBoNUhHV21TbWs3YVZNQQ?oc=5",
-   "publicado": "2026-11-05T11:01-03:00",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdy1kUWNacmgwTHlzeHR4VW9SeG44WVk3R2ZLaDJJWFdodks3YnBFOUticHdzZ1JWVVBvQ0RXMW1jMHFDOVBSV0MtZF8xNFZ2Q284Y3ZMNEs4T2F0eWtQZFFfV1h1aFJ5UWRLYlpSaGg2ZnNoUkFqNUtXazJpd19ZNURaMTZhNjhKNy03Vjc0VGFiWGtLUkxwM0w0MUJubFZud0RDWHNtTDhDeXRNQnkyaGdwbUlZdDJudm5ndDZRZ2FYbzRtdWpkNDNoQmIzWVhPZGlUS056RFYtMGNOOE5v?oc=5",
+   "publicado": "2026-11-05T11:08-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1394,6 +1420,17 @@
    "tickers": []
   },
   {
+   "titulo": "What Wall Street billionaires are saying about Democrats' midterm sweep",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/billionaires-musk-branson-democrats-midterms-ai-wall-street.html",
+   "publicado": "2026-11-05T10:44-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Durigan vê Selic de 13,75% como 'muito ruim' para a economia e defende condições para queda sustentável",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnR0cmdVZzlhM2lIaXQ2SDc2b2liNDQwcnM5SUFLanRFbFpuQTVrQjU3YTNOMzV1WklZTWh0MXV1Z2hlRHk4Ukl2clQwczZGVEVRZmp5Qnotd3BoSndGcGN2UklQZUdybHJ4dk5obU9jc2hldEUyNVVxbTc1a0x6SkZ0SS1FWmRuMHBOdU5fVWxTYjh3R3o4Nno4RDRCeVFQSmdmaEVCSUdvQncxVFZzLWlWd2JsdUM4N1p0NlhiT3BwUzJ0NU9KdF92bXRYeFA4?oc=5",
@@ -1402,18 +1439,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China afirma que compras agrícolas nos EUA dependem de redução de tarifas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQzNYZjU4cENZb2NhUlRCMVdndFoxNDNWSkVjaXYtSnE2V2djTTRXdnA5bnA5SEs0VkNkdzVuV2FObzB0VUtzRjVnRGRzUlRSMWFUNDZwOTcxVHJXRWRlV1JwNkJjQXBFLUxGSF9HZUExeHNvQTV0V2NDd3ByREo1WTNoMFFLN0hwX1dxSEtCbTI5SDdTZGktRUxTUEthQ2FPX3R1TE96VHE0UzlFOTlLV0JENmVLdFHSAbcBQVVfeXFMTkMzWGY1OHBDWW9jYVJUQjFXZ3RaMTQzVkpFY2l2LUpxNldnY000V3ZwOW5wOUhLNFZDZHc1bldhTm8wdFVLc0Y1Z0Rkc1JUUjFhVDQ2cDk3MVRyV0VkZVdScDZCY0FwRS1MRkhfR2VBMXhzb0E1dFdjQ3dwckRKNVkzaDBRSzdIcF9XcUhLQm0yOUg3U2RpLUVMU1BLYUNhT190dUxPelRxNFM5RTk5S1dCRDZlS3RR?oc=5",
-   "publicado": "2026-11-05T10:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
