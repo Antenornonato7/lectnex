@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T15:38-03:00",
+  "atualizado_em": "2026-11-05T16:08-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -263,11 +263,35 @@
     ],
     [
      "15:20",
-     166797.0
+     166875.0
     ],
     [
-     "15:23",
-     166863.0
+     "15:25",
+     166881.0
+    ],
+    [
+     "15:30",
+     166793.0
+    ],
+    [
+     "15:35",
+     166684.0
+    ],
+    [
+     "15:40",
+     166634.0
+    ],
+    [
+     "15:45",
+     166556.0
+    ],
+    [
+     "15:50",
+     166405.0
+    ],
+    [
+     "15:53",
+     166470.0
     ]
    ]
   },
@@ -592,11 +616,35 @@
     ],
     [
      "15:35",
-     5.4853
+     5.4843
     ],
     [
-     "15:38",
-     5.4836
+     "15:40",
+     5.4868
+    ],
+    [
+     "15:45",
+     5.4888
+    ],
+    [
+     "15:50",
+     5.4887
+    ],
+    [
+     "15:55",
+     5.4903
+    ],
+    [
+     "16:00",
+     5.491
+    ],
+    [
+     "16:05",
+     5.4919
+    ],
+    [
+     "16:08",
+     5.4909
     ]
    ]
   },
@@ -1425,7 +1473,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.2,
     "dolar30": -0.11
    },
    {
@@ -1440,35 +1488,38 @@
     "tickers": [
      "EMBR3"
     ],
+    "ibov30": -0.16,
+    "dolar30": 0.03
+   },
+   {
+    "hora": "15:49",
+    "titulo": "Ouro alcança o maior nível em duas semanas com cautela em Wall Street",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOEFsS1RuekdtQTFHdnA5cVdjUnhnTkxPeU5zSTZORjFCbTJ3MTE2aGNXNGlEckhKSk9nRXVKQWdRbjNwaUZYa3VHWXVDSHNfcWFQcGJmWmhfclY2b05XUmVERHZhTGdxdVBLSWllRHJ4UmgtbVZTX0pvck1HRUg0Zno3NVowWVBQY0FTVkM1b0dBa0hQREdRTWFsZTRROWVnc04zZm9RTl8?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:04",
+    "titulo": "Nasdaq cai em 6,4% com receio de que vitória democrata afete boom da IA",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/nasdaq-cai-em-64-com-receio-de-que-vitoria-democrata-afete-boom-da-ia.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ajuste fiscal com justiça social",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ajuste-fiscal-com-justica-social.shtml",
-   "publicado": "2026-11-05T06:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Selic fica em 13,75%, mas não deve baratear o financiamento imobiliário; entenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOXy1tN1hsRDhudjBfdlFQNDJwVEVNZ01aTlNfRmozWXNsRFVqd29MRXhfdFJISDRmUHdBeEpXTTh4dTZsYVloUV9Sc1ViS1hNV3pTSEhPXzB5QmpjNEtFNGRfa2FaSElmOFN0RGdNMTZYaFVQbEpLNDJSdkRNUTNRTUlqd2VhNzcyMVpKckZHdVFOOHBEZ0pXdGZLb0R2UTVEVVpPZUllYzhQVlJRTmNMZW5kRW52YkVLYVhTRlBLOWhFSDk00gHEAUFVX3lxTE5fLW03WGxEOG52MF92UVA0MnBURU1nTVpOU19GajNZc2xEVWp3b0xFeF90UkhINGZQd0F4SldNOHh1NmxhWWhRX1JzVWJLWE1XelNISE9fMHlCamM0S0U0ZF9rYVpISWY4U3REZ00xNlhoVVBsSks0MlJ2RE1RM1FNSWp3ZWE3NzIxWkpyRkd1UU44cERnSld0ZktvRHZRNURVWk9lSWVjOFBWUlFOY0xlbmRFbnZiRUthWFNGUEs5aEVIOTQ?oc=5",
-   "publicado": "2026-11-05T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Selic fica em 13,75%, mas não deve baratear o financiamento imobiliário; entenda",
    "fonte": "InfoMoney",
@@ -2422,6 +2473,28 @@
    "tickers": [
     "EMBR3"
    ]
+  },
+  {
+   "titulo": "Ouro alcança o maior nível em duas semanas com cautela em Wall Street",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOEFsS1RuekdtQTFHdnA5cVdjUnhnTkxPeU5zSTZORjFCbTJ3MTE2aGNXNGlEckhKSk9nRXVKQWdRbjNwaUZYa3VHWXVDSHNfcWFQcGJmWmhfclY2b05XUmVERHZhTGdxdVBLSWllRHJ4UmgtbVZTX0pvck1HRUg0Zno3NVowWVBQY0FTVkM1b0dBa0hQREdRTWFsZTRROWVnc04zZm9RTl8?oc=5",
+   "publicado": "2026-11-05T15:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nasdaq cai em 6,4% com receio de que vitória democrata afete boom da IA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/nasdaq-cai-em-64-com-receio-de-que-vitoria-democrata-afete-boom-da-ia.shtml",
+   "publicado": "2026-11-05T16:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2451,7 +2524,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T15:38-03:00",
+ "atualizado_em": "2026-11-05T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2461,9 +2534,44 @@
   "Estadão",
   "Exame",
   "Folha",
-  "InfoMoney"
+  "InfoMoney",
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Nasdaq cai em 6,4% com receio de que vitória democrata afete boom da IA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/nasdaq-cai-em-64-com-receio-de-que-vitoria-democrata-afete-boom-da-ia.shtml",
+   "publicado": "2026-11-05T16:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros longos oscilam após decisão do Copom e de olho em política fiscal",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZi1JU0pTb2ItQVdOdVBJQlVSRUdfaTFjUDRkX0tZT2ZUOXlBOGI0M2huNDRBV1F5UDVYX3N3SlNHdWZSbzZuZHF3R19rMUFBTUdQdVRTZ2t6UXI3NGwtQ21UMjNsYkxDMTdSV1NmbXZwc2ZMWkZYem42UUE3UThlVHVublFNVGxwek1QaTBrd2g?oc=5",
+   "publicado": "2026-11-05T15:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ouro alcança o maior nível em duas semanas com cautela em Wall Street",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOEFsS1RuekdtQTFHdnA5cVdjUnhnTkxPeU5zSTZORjFCbTJ3MTE2aGNXNGlEckhKSk9nRXVKQWdRbjNwaUZYa3VHWXVDSHNfcWFQcGJmWmhfclY2b05XUmVERHZhTGdxdVBLSWllRHJ4UmgtbVZTX0pvck1HRUg0Zno3NVowWVBQY0FTVkM1b0dBa0hQREdRTWFsZTRROWVnc04zZm9RTl8?oc=5",
+   "publicado": "2026-11-05T15:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Wheels Up assina acordo com Embraer para compra de seis jatos Phenom 300E",
    "fonte": "Folha",
@@ -2527,6 +2635,19 @@
    ]
   },
   {
+   "titulo": "O que está por trás da queda da Porto (PSSA3)? Conta dos calotes chega, com provisões 48% maiores e mudança no guidance",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalpBbzh3RkxmaTFPdVlLWnh3MUoyTFJHMGhTLUxtYWFDbXVfckVKV1VHWUtGVEgzTzZFTEFoRjhUMXZVVGhmeHh0OHB5RFBYM3pVcVB1Zjk5bEs0ZlQ1UHUxS05ITXpjTnVOOVl1RXJJMkNUY0NIUkRjVzg2cElKNEFHZHBBd1BoMEdzQlNhTlBUYkJmekxPUnVwZUxTRnZnNHhIVTFYZi1TOHozRTF5RGNPRG8xUFRLcThtLW1JbmZtOWJfNHBkV045ZE9lUEdHd0FpZ0k3T1kyY0NkV3IyV3VLMjZzQWNmRTBsV2ZMdFU?oc=5",
+   "publicado": "2026-11-05T14:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PSSA3"
+   ]
+  },
+  {
    "titulo": "China incentiva ETFs de bancos para atrair investidores na Bolsa",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468028",
@@ -2583,30 +2704,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
-   "publicado": "2026-11-05T13:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tenda derrete mais de 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas hoje",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNdWpyX19kb0pweGZwbl9ma3FReG1ZMVNfV1ZLejFEaThSZW1PZXV6QVJTVWo0cFcxT2VGeTdOZnUwZ1NYR0cyME91RkUzOEN1LWszQXNTc0ptR09pUDJqS0o3X2k2OG5XcVBoWldrZ3pyRnd1UVBPamkwT1huU1VRVVVBR3hLWDRGSmFMT2J2QWNwRVRSX2V1T1FHSjQta211bk5nWV9mYWdEc0wxUjlIMG9OTmxkWmoyaUgyaTN3WWM0S21vTjgxd01KX3BUY3pFVElTc2FQNVRreTZ4ZUdIcEtoYVM5ZkF4VUVoMmFHaWF3WlZrak00Yw?oc=5",
-   "publicado": "2026-11-05T12:59-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   }
