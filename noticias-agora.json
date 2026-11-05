@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T18:20-03:00",
+  "atualizado_em": "2026-11-05T18:23-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     166538.0
+     166190.0
     ]
    ]
   },
@@ -800,7 +800,11 @@
     ],
     [
      "18:20",
-     5.5035
+     5.503
+    ],
+    [
+     "18:23",
+     5.501
     ]
    ]
   },
@@ -1900,7 +1904,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.18
+    "dolar30": 0.17
    },
    {
     "hora": "17:58",
@@ -1914,23 +1918,11 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.13
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Copom: mercado vê interrupção no ciclo de corte da Selic, mas afasta chance de alta da taxa",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTEhPRXZXSld0NkJrWi1DaHNHWkxkaGtuYzdUSFpRYlRQZV9xR01qNlZmLXlNdmFYaC1iRWFvNkVUbXNRWkw2amlrN1I4WWg2cEZhR2FSa2hhSE9xWEVwdzdxd1JfczdzbFZTZTROaTlGRDN6YjdNT3Q4c1RtVGVjSFJ6b0tTWW44dDBSZ1prbmFVdEl1M2ZzekJISWxucjFtQ3NYWUM1QXRGUQ?oc=5",
-   "publicado": "2026-11-05T08:50-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Itaú BBA mira IA e data centers em carteira de novembro e encontra aposta em empresa brasileira",
    "fonte": "Estadão",
@@ -2898,6 +2890,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Retail traders dump the most stocks in a single day since Covid sell-off",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/retail-traders-dump-the-most-stocks-in-single-day-since-covid-sell-off.html",
+   "publicado": "2026-11-05T18:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2927,7 +2930,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T18:20-03:00",
+ "atualizado_em": "2026-11-05T18:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2941,6 +2944,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Retail traders dump the most stocks in a single day since Covid sell-off",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/retail-traders-dump-the-most-stocks-in-single-day-since-covid-sell-off.html",
+   "publicado": "2026-11-05T18:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "AI meltdown: Nvidia and Qualcomm drop more than 9%, pushing Nasdaq to worst day since April 2025",
    "fonte": "CNBC",
@@ -3028,17 +3042,6 @@
    "tickers": []
   },
   {
-   "titulo": "How Wall Street's postelection rally got obliterated — and what's next",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/investingclub/2026/11/05/how-wall-streets-postelection-rally-got-obliterated-and-whats-next.html",
-   "publicado": "2026-11-05T17:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "COPOM ACERTOU AO IGNORAR PRESSÕES E NÃO BAIXAR OS JUROS? GRIBEL AVALIA",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSTlTSDN5aVg4OTZieGdjM3pOQXp4UGJIdGVkTGttVWhmaU9Jb1c0bDFjQ0QzNGpwRDhmV1F5ZXFUa2pwT3dNR2hyWDZ3NVlDLWYtX1ZkSU9lV1ZTdS04QUwtU1lpUHhWMFJoX05uem8zeHdNSGNBeHJoM0lVVDdOaWdjV3ItR29FczM2bmxNV252TUNZOUloSEVXLUM3NFhrS1FTTy01djk2NlNCb3c?oc=5",
@@ -3090,17 +3093,6 @@
    ]
   },
   {
-   "titulo": "Estouro da bolha de IA pode tirar do dólar status de refúgio, diz TS Lombard",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdXdhN25qeDlFNmxRaEFpMi1sckFnWGdBandkQng5RmkzZ2V5NW9BZkZDckh1VUtjNERfZmxWM2RhRk52Y2c2cXhDb0ZOcUU1UHpCQUhyYXZXUTN2Z1pNaUpJSGsxaGdkRlFnYUZoRmtwbUhhMFJHMk5hSUlHVExXT1RHbktEMVFqbUpsM1FMSER6TFB4MXBEalBrZ3k2MXZxZVdZVnJjMjY4Vk9FdlVUTTZBT3BpS0pBNVVIdU9RNjZJQmVqV1h3eGNXSdIB2gFBVV95cUxOUDY2Wlk4ZVc1Nk9XQjFnbm9DYld0ZTNsdFJoeTA5cG9rSVZ0dTdwTng5Rjh2cFBqUERWRVpNU3M2RmlpR3lxVFFBV3RLUjZLVXRObjl2NHBSazZEQ3NiNW1OaDloWlJhR1VpRVBKRVBZZGxJbWU0Y2FsRnJ3WjIwMnBYWHVnSWZYVUN3RFE2NXAxUUxNVlZwamFOeGNkXzRjaS12WFNvSEw1bVRZQV9fRWtpNW5NRGJwNERnSy1QMWVPM2E0Q3RDblQ1Qkd0dVVXMnk4eVBHSVVXdw?oc=5",
-   "publicado": "2026-11-05T16:20-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
@@ -3134,6 +3126,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa recua na esteira de Wall Street; VALE3 sobe",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONkNhMG92eG9qOVl5NzVWNWdGSl9vUWJRdHFTc3BkUXV1a25pT2ZPUEdZRHFQVDNzM0xqMnZVUlB2MkhvdXZxZUZ6S0hibGN3bHg5a3diYWJWYXhlRngtMl9pS1EzcFdNTkFuQ1JhVDVhYlFRT3luNjZpTmdJTi1MM3NyYURoaWhoYWZGbk9XVQ?oc=5",
+   "publicado": "2026-11-05T15:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   }
  ]
 }
