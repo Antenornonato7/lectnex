@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=820cd79a") format("woff");
+  src: url("./Phosphor.woff?v=65df8df3") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -93,6 +93,9 @@
 }
 .ph.ph-calendar-dots:before {
   content: "\e7b4";
+}
+.ph.ph-calendar-star:before {
+  content: "\e8b2";
 }
 .ph.ph-calendar-x:before {
   content: "\e10c";
@@ -207,6 +210,9 @@
 }
 .ph.ph-git-branch:before {
   content: "\e278";
+}
+.ph.ph-globe-hemisphere-east:before {
+  content: "\e28a";
 }
 .ph.ph-globe-hemisphere-west:before {
   content: "\e28c";
@@ -384,7 +390,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=820cd79a") format("woff");
+  src: url("./Phosphor-Bold.woff?v=65df8df3") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -475,6 +481,9 @@
 }
 .ph-bold.ph-calendar-dots:before {
   content: "\e7b4";
+}
+.ph-bold.ph-calendar-star:before {
+  content: "\e8b2";
 }
 .ph-bold.ph-calendar-x:before {
   content: "\e10c";
@@ -589,6 +598,9 @@
 }
 .ph-bold.ph-git-branch:before {
   content: "\e278";
+}
+.ph-bold.ph-globe-hemisphere-east:before {
+  content: "\e28a";
 }
 .ph-bold.ph-globe-hemisphere-west:before {
   content: "\e28c";
@@ -766,7 +778,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=820cd79a") format("woff");
+  src: url("./Phosphor-Fill.woff?v=65df8df3") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -857,6 +869,9 @@
 }
 .ph-fill.ph-calendar-dots:before {
   content: "\e7b4";
+}
+.ph-fill.ph-calendar-star:before {
+  content: "\e8b2";
 }
 .ph-fill.ph-calendar-x:before {
   content: "\e10c";
@@ -971,6 +986,9 @@
 }
 .ph-fill.ph-git-branch:before {
   content: "\e278";
+}
+.ph-fill.ph-globe-hemisphere-east:before {
+  content: "\e28a";
 }
 .ph-fill.ph-globe-hemisphere-west:before {
   content: "\e28c";
@@ -1148,7 +1166,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=820cd79a") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=65df8df3") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1333,6 +1351,14 @@
 }
 .ph-duotone.ph-calendar-dots:after {
   content: "\e7b5";
+  margin-left: -1em;
+}
+.ph-duotone.ph-calendar-star:before {
+  content: "\e8b2";
+  opacity: 0.2;
+}
+.ph-duotone.ph-calendar-star:after {
+  content: "\e8b3";
   margin-left: -1em;
 }
 .ph-duotone.ph-calendar-x:before {
@@ -1637,6 +1663,14 @@
 }
 .ph-duotone.ph-git-branch:after {
   content: "\e279";
+  margin-left: -1em;
+}
+.ph-duotone.ph-globe-hemisphere-east:before {
+  content: "\e28a";
+  opacity: 0.2;
+}
+.ph-duotone.ph-globe-hemisphere-east:after {
+  content: "\e28b";
   margin-left: -1em;
 }
 .ph-duotone.ph-globe-hemisphere-west:before {
