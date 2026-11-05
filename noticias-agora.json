@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T12:03-03:00",
+  "atualizado_em": "2026-11-05T12:05-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -91,11 +91,11 @@
     ],
     [
      "11:45",
-     167641.0
+     167564.0
     ],
     [
-     "11:46",
-     167627.0
+     "11:49",
+     167553.0
     ]
    ]
   },
@@ -248,11 +248,11 @@
     ],
     [
      "12:00",
-     5.4683
+     5.468
     ],
     [
-     "12:01",
-     5.4677
+     "12:04",
+     5.468
     ]
    ]
   },
@@ -683,7 +683,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.74,
+    "ibov30": -0.78,
     "dolar30": 0.39
    },
    {
@@ -728,7 +728,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.28
    },
    {
     "hora": "11:53",
@@ -1663,7 +1663,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T12:03-03:00",
+ "atualizado_em": "2026-11-05T12:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1729,6 +1729,19 @@
    "tickers": []
   },
   {
+   "titulo": "Lucro da Totvs cede com custo financeiro da Linx, mas caixa sustenta apetite por M&As",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/tech/lucro-da-totvs-cede-com-custo-financeiro-da-linx-mas-caixa-sustenta-apetite-por-mas/",
+   "publicado": "2026-11-05T11:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "TOTS3"
+   ]
+  },
+  {
    "titulo": "Tenda (TEND3) lidera quedas do Ibovespa após 3T26: bancos ligam alerta, mas veem potencial para a ação triplicar",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaFBrbFRnVFFRTnhCOUZPN1YxcU9VMWJfNDRhb0VfSVVmSEdjNng2SzdDRjVETXJwZ2pGbTZoa0RrN0JBUTB4SVZXNmp5ZDh4c0VHajREX241cE5MZEJTQUhMZGU3d184dmFaaTktYXhVam81RTBHMEUzdjI3TGMxWjI3d2t3bkNfZU5TeExaT29zMGhBd0ZRWUZSUFNqdjZ2LVdtREE3MHVWTnltNjI4TGhfVTJQa1I3SG1IX252bEh0Yl9OSjhYUkVEOGZ3NXYybzdFeFhBQ1pZNWtLM01rUUR0Xy1rM0J4QS1udVdxZGU?oc=5",
@@ -1777,20 +1790,6 @@
    "tickers": []
   },
   {
-   "titulo": "Itaú (ITUB4), BB Seguridade (BBSE3) e mais 8 ações para ter na carteira em novembro, segundo o Daycoval",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS25QLVdjZk13SUVaT0c2RnMzZHJIbF91RDMzeGRXZU5CQzJiR1BwNTdnRVlnS0RXV21kWDRENzdCbWx6RGFLdU5PS0hVcjhVSTBaU3RKbC1TX0c2V0c1eVNTT2ZqSENTM2lRcU1WY1hWWDdDcHVjQnA5NXU4YVcyR0hjOVFzNXNfLWU1cThjM1I1eW1WMFFyVHhsRWxNRF9WOWc4U0dpVzdJY1ViYmtrZ2k5NkFDQUhfVm5mY2VqaFBHWDA0QW9mSTk5bWJZZw?oc=5",
-   "publicado": "2026-11-05T11:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBSE3",
-    "ITUB4"
-   ]
-  },
-  {
    "titulo": "Selic estacionou, mas taxas do Tesouro Direto sobem após Copom; Tesouro IPCA+ paga até 7,92% de juro real",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZEJueC1LVnhxWGw4OXY2emlWZE9rbXhjeEJPMDFoX1JYVmN2bXhjSU40cmJWQlo2eC1WMWVoOHJzSmYwRkphRm1XdTMtMXpBS01xcDZ2SFVUV1BobUxoX2JBVU9lclg4MWtTSlQwT1FOX1hTX002VG5FcVI4Z0xhTUwwbk5MQlBfd3B6Y2toWGhwRnpIbDRNWldQUUVDUQ?oc=5",
@@ -1828,18 +1827,6 @@
    "tickers": []
   },
   {
-   "titulo": "Juros longos sobem após decisão do Copom e de olho em política fiscal",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZi1JU0pTb2ItQVdOdVBJQlVSRUdfaTFjUDRkX0tZT2ZUOXlBOGI0M2huNDRBV1F5UDVYX3N3SlNHdWZSbzZuZHF3R19rMUFBTUdQdVRTZ2t6UXI3NGwtQ21UMjNsYkxDMTdSV1NmbXZwc2ZMWkZYem42UUE3UThlVHVublFNVGxwek1QaTBrd2g?oc=5",
-   "publicado": "2026-11-05T10:03-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar recua e Bolsa sobe com reunião de Lula com economistas e decisão do Copom no radar",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-apos-copom-manter-selic-em-1375.shtml",
@@ -1859,6 +1846,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar hoje entre leves perdas e ganhos com repercussão da manutenção da Selic",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMDc0NV9GLUp0QzVnbWJ5VjJWX25rcFhSMWVrMEc0eEdhbUJuVHR4bjRpYVdESGhCQkgzQUNHUmdobTlDSHJiZ05LRVFZYmtVRE9keUlTXzBOWk5wZmdoYXZ0WVR5dXBBYTVCcFVnbGFUU3ZrZmJOSzVoNWtBZ1NIb3dZWk9MVmd2ekI5cXZUbXNPQ2VReUFxel9zTHHSAaIBQVVfeXFMUEY4WnJwZW82U0lQVXNEaEswRjU2RDBHdW9udWZZbXFfdk5TZEloRVVId1ltdjdpbGJkWnpVS29SYkVMWTNkeDdKNGNWTWZjZThKdUxkWUhZeDh5S21hek9KY2N3Y2RiOTNOdUU5QW9PaTlERDVvb2wyTHBtT05EcW1QOFRpYVRMa094Q2lUUFVXRDRCdWpTb3FDS19uS0NGQWln?oc=5",
+   "publicado": "2026-11-05T09:27-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
