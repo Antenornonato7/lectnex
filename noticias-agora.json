@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T11:03-03:00",
+  "atualizado_em": "2026-11-05T11:05-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -43,11 +43,11 @@
     ],
     [
      "10:45",
-     168427.0
+     168516.0
     ],
     [
-     "10:48",
-     168487.0
+     "10:50",
+     168491.0
     ]
    ]
   },
@@ -152,11 +152,11 @@
     ],
     [
      "11:00",
-     5.4305
+     5.4307
     ],
     [
-     "11:03",
-     5.4304
+     "11:05",
+     5.4271
     ]
    ]
   },
@@ -373,7 +373,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.28,
+    "ibov30": 0.34,
     "dolar30": -0.36
    },
    {
@@ -469,6 +469,20 @@
     "impacto": "alto",
     "ativos": [
      "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:59",
+    "titulo": "Selic estacionou, mas taxas do Tesouro Direto sobem após Copom; Tesouro IPCA+ paga até 7,92% de juro real",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZEJueC1LVnhxWGw4OXY2emlWZE9rbXhjeEJPMDFoX1JYVmN2bXhjSU40cmJWQlo2eC1WMWVoOHJzSmYwRkphRm1XdTMtMXpBS01xcDZ2SFVUV1BobUxoX2JBVU9lclg4MWtTSlQwT1FOX1hTX002VG5FcVI4Z0xhTUwwbk5MQlBfd3B6Y2toWGhwRnpIbDRNWldQUUVDUQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
      "WDO",
      "DI"
     ],
@@ -1188,6 +1202,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Selic estacionou, mas taxas do Tesouro Direto sobem após Copom; Tesouro IPCA+ paga até 7,92% de juro real",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZEJueC1LVnhxWGw4OXY2emlWZE9rbXhjeEJPMDFoX1JYVmN2bXhjSU40cmJWQlo2eC1WMWVoOHJzSmYwRkphRm1XdTMtMXpBS01xcDZ2SFVUV1BobUxoX2JBVU9lclg4MWtTSlQwT1FOX1hTX002VG5FcVI4Z0xhTUwwbk5MQlBfd3B6Y2toWGhwRnpIbDRNWldQUUVDUQ?oc=5",
+   "publicado": "2026-11-05T10:59-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1217,7 +1243,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T11:03-03:00",
+ "atualizado_em": "2026-11-05T11:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1232,6 +1258,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Selic estacionou, mas taxas do Tesouro Direto sobem após Copom; Tesouro IPCA+ paga até 7,92% de juro real",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZEJueC1LVnhxWGw4OXY2emlWZE9rbXhjeEJPMDFoX1JYVmN2bXhjSU40cmJWQlo2eC1WMWVoOHJzSmYwRkphRm1XdTMtMXpBS01xcDZ2SFVUV1BobUxoX2JBVU9lclg4MWtTSlQwT1FOX1hTX002VG5FcVI4Z0xhTUwwbk5MQlBfd3B6Y2toWGhwRnpIbDRNWldQUUVDUQ?oc=5",
+   "publicado": "2026-11-05T10:59-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa sobe pelo 2º dia mesmo com pausa do Copom; dólar cai",
    "fonte": "Exame",
@@ -1280,18 +1318,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "World's largest olive oil company plummets 20% after rivals agree to takeover deal",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
-   "publicado": "2026-11-05T10:45-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
