@@ -1619,30 +1619,6 @@
  },
  "hoje": [
   {
-   "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
-   "publicado": "2026-11-04T11:08-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tesouro Direto hoje recua dos 8% reais antes do Copom; veja as taxas desta quarta-feira",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbVFuVVdoMU9NZEVJUVJFbWUxMk5BMjFKMnRDcDRoOVg0bjhmbE9lUEVidTFDYnFLdGJtVDVqWDNKb0g1d29JbHhNN3pNZzZlckdaN0tnZUp1Rk41NVJRNWIzd2xUMjBJZUVxcnlmRlZ2a3VRamdqUzJ5WDYxRDNnOWFILUxFQk5fY2dPWVdMdzU0ZVpsQjVLVS1neDdlWm53bmt4c2lNNklkTW1vZUlFSC1tUzJfSzh4NUVmajBzQ3BOQkRROVd5ekxjYk56NjlyR1U1LTE1alU5Ym1XeWhIdWNMWmR5dlE?oc=5",
-   "publicado": "2026-11-04T11:28-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Juro baixo não se cria por decreto: os problemas da proposta de Lara Resende para a questão fiscal",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/juro-baixo-nao-se-cria-por-decreto/",
@@ -2585,6 +2561,28 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "A reforma tributária aterrissa no mundo real",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/everardo-maciel/a-reforma-tributaria-aterrissa-no-mundo-real/",
+   "publicado": "2026-11-04T22:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "O amadurecimento da governança fiscal passa por fortalecer capacidades e mecanismos nos Estados",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/o-amadurecimento-da-governanca-fiscal-passa-por-fortalecer-capacidades-e-mecanismos-nos-estados/",
+   "publicado": "2026-11-04T22:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2614,7 +2612,7 @@
    "em": "2026-11-04T12:05:39+00:00"
   }
  ],
- "atualizado_em": "2026-11-04T21:35-03:00",
+ "atualizado_em": "2026-11-04T22:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2622,7 +2620,6 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -2630,13 +2627,23 @@
  ],
  "noticias": [
   {
-   "titulo": "Trump committee hearing on Fed Governor Lisa Cook rescheduled to Dec. 14",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/04/trump-federal-reserve-lisa-cook-hearing.html",
-   "publicado": "2026-11-04T21:28-03:00",
-   "impacto": "alto",
+   "titulo": "A reforma tributária aterrissa no mundo real",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/everardo-maciel/a-reforma-tributaria-aterrissa-no-mundo-real/",
+   "publicado": "2026-11-04T22:00-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WDO",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "O amadurecimento da governança fiscal passa por fortalecer capacidades e mecanismos nos Estados",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/o-amadurecimento-da-governanca-fiscal-passa-por-fortalecer-capacidades-e-mecanismos-nos-estados/",
+   "publicado": "2026-11-04T22:00-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2649,6 +2656,17 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "BC vê inflação mais elevada em todo horizonte até 2028",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZEFzZEV5enZOY1NpS0hIMW9hOWNKQWNyUGp5SjBvUHB3V0FwQ0RFZG5LaDM1SUhOUXZrZ3RTUWdhcGVSVDRUSHQ0a3J2Rm9oQmVqMFZjQWlJbDdSTTZGeXZnVndxTVZEaC1GVm1pdmhCVWFUZnR6NGs1TmhmTjBleEt6Wm5aTUdoejJ5XzQtSUJNWnlhcDhPSVRTejRwTkJFWGxzU0FpLXltYTdYN25TZnFZUQ?oc=5",
+   "publicado": "2026-11-04T20:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -2673,6 +2691,30 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Aumento do consumo de energia de Itaipu pelo Paraguai deve pressionar preços no Brasil, diz Itaú BBA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/aumento-do-consumo-de-energia-de-itaipu-pelo-paraguai-deve-pressionar-precos-no-brasil-diz-itau-bba.shtml",
+   "publicado": "2026-11-04T20:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "What Wall Street billionaires are saying about Democrats' midterm sweep",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/04/billionaires-musk-branson-democrats-midterms-ai-wall-street.html",
+   "publicado": "2026-11-04T20:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -2713,46 +2755,10 @@
    "tickers": []
   },
   {
-   "titulo": "Banco Central mantém Selic em 13,75% e interrompe ciclo de cortes na taxa de juros",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObHhZLWlIREUxSmZFWHlMRmNvc3hEY3dIT3ZDc20xdmN3eFFpZjBKdmhFbkRnVURNY2VuWXhTTWRicDdDMnJEaVQwSkZ0U2dMSEszWmVBM09LZHVlYW52ZUtoZERTakk5enhnX0dydWtIQ04xOUJXMl9HamxVOFFOZFZLZE1uYUN2aThCeEQzOUZDUnFYTFFldld1ejZHVXhUeXpWemRJV0R6YjFN?oc=5",
-   "publicado": "2026-11-04T20:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYVJsajR2QVc3dUVYTTE4MnU0Y3F0d1pOdEVRSmdESmEzZ2pseU14YVZHbkFTZXhzWVpkRkgzTXJhUUJpdHBsTE5DWWtDM1JYUE9nQW12dUZGa25HVm1yNDlfMkI5RU1jb0phVTdXOXE3N2plbTdSMW9IVHVwcldqTW11NFl2WlBuUE54WTBVRG56RzJqNUJ6SkFSWHNpbWpjU2tDcHFTcnh5UVpCZE9YUmhrR3pBRGNaTFJMQ0dHTnZjMWV1N3BtREgxUmQ?oc=5",
-   "publicado": "2026-11-04T20:03-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Banco Central não se dobra a pressões políticas e mantém juros com piora do cenário para a inflação",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/alvaro-gribel/banco-central-nao-se-dobra-a-pressoes-politicas-e-mantem-juros-com-piora-do-cenario-para-a-inflacao/",
    "publicado": "2026-11-04T20:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Copom alivia o tom, mas não mostra pressa para voltar a cortar juros, avalia EQI",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRHRNcTVmc0hXWjVwQmpLYi1Mam1abXY3X3lFZjc5c2Jid0dLMEJ3UnJ3VEhYcDM1WnNFa1F3Q1J2Rkl5Rkc0bXhXOVJwYkE3cElxR2tNN3RkWlBnSG5XYllvYVA4aUY2dU5feXgwNmVNeUx5RVRrbE9Mem0tbGdMUlVvLTZZZEU4bkRZOHQ5OHQ5VFZ1NDNtSmZMQ2pCYnhuN29tZE9qWjZoSG05NXc?oc=5",
-   "publicado": "2026-11-04T19:49-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2768,18 +2774,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Trava para investimentos: entidades empresariais criticam manutenção da Selic",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUVVqV3hreGMxUWlzdTIzbWRidUwxQV92bkxuaUNDRzhnN1NBS0ljeXdjTU5UaXVBaTJ6OFVpbUNqTUt2OHJjM2tjZzZ2V3paVWZ3TnBIazFzS3BwYURZYTF2cGVRWWhSZTUyOXNvUU1mOTI4aGd4MFNIcGloTU9PUmlKb3I5MjFIMXQ3aEZKMWVMVC1pVzBOeGR3UFBMMnUtU2Q1ZklFcDAyNng4X2c3eTV5Z1c3Z9IBuwFBVV95cUxQSGpFNmNqTjZHcUNtek1pZks1NHZJT21fcEVKRE5UYlFkZEc4Q0dCQ0ZUWEFDUWFzcVUwTTZHS04tOFpfaDhIek1tcEFfLVh1Z3hnR3JkRWFfVU5YRmFGODc0WmxtTDJyWmVIbHQtT1VkMHZzZ2phbUdVWUJZT3ZFVHRHWUhaSUZYSENvdGRoUk5EeTlFbEtyQzR1U2ZxUDVJcmhnR3hXdUJKaEQxanJsWmkyVXJlMUx4cDlV?oc=5",
-   "publicado": "2026-11-04T19:40-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
@@ -2808,20 +2802,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Onda azul nos EUA anima mercados: Ibovespa retoma 167 mil pontos e dólar cai a R$ 5,45",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNlNqZThpd1QzV19ISl9Jd0I3MkFMNHBmajRLN2NQU0tZc3NvM0h2N0dQb0tfM29yd2k0MHY1LTE0M3FmcTlNR0l4OGpLVWpPeFo5OHZEXzU4VFlWbHJwRUFPajc4a0k2SFpyNm12dkcyRXliTjYxTjB6NGFWQjlHWkNWQzlsT0xPQk5hWTYzVGNNMDl6LXJTMnpuZ0tZX1VDSG1KWUNxYUlRWURZYlZYMm1LWWhTTi12Qnc?oc=5",
-   "publicado": "2026-11-04T18:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "AZUL4"
-   ]
   }
  ]
 }
