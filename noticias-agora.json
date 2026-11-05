@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T16:20-03:00",
+  "atualizado_em": "2026-11-05T16:23-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -299,7 +299,11 @@
     ],
     [
      "16:05",
-     166602.0
+     166600.0
+    ],
+    [
+     "16:08",
+     166596.0
     ]
    ]
   },
@@ -660,7 +664,11 @@
     ],
     [
      "16:20",
-     5.4842
+     5.4853
+    ],
+    [
+     "16:23",
+     5.4837
     ]
    ]
   },
@@ -2540,7 +2548,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T16:20-03:00",
+ "atualizado_em": "2026-11-05T16:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2554,6 +2562,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
+   "publicado": "2026-11-05T16:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Nasdaq cai até 6,4% com receio de que vitória democrata afete boom da IA",
    "fonte": "Folha",
@@ -2625,17 +2644,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
-   "publicado": "2026-11-05T14:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Base Exchange mira lançamento em 2027 em desafio à B3 no mercado de ações",
