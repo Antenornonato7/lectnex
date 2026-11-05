@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T18:13-03:00",
+  "atualizado_em": "2026-11-05T18:15-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -792,11 +792,11 @@
     ],
     [
      "18:10",
-     5.498
+     5.5028
     ],
     [
-     "18:13",
-     5.4995
+     "18:15",
+     5.5033
     ]
    ]
   },
@@ -2923,7 +2923,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T18:13-03:00",
+ "atualizado_em": "2026-11-05T18:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2937,6 +2937,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "publicado": "2026-11-05T18:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Juros futuros têm queda firme após Copom e com possível ajuste fiscal no radar",
    "fonte": "Valor",
@@ -3009,17 +3020,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
-   "publicado": "2026-11-05T17:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
