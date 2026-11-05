@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T11:58-03:00",
+  "atualizado_em": "2026-11-05T12:00-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -87,11 +87,11 @@
     ],
     [
      "11:40",
-     167908.0
+     167863.0
     ],
     [
-     "11:42",
-     167964.0
+     "11:44",
+     167848.0
     ]
    ]
   },
@@ -240,11 +240,11 @@
     ],
     [
      "11:55",
-     5.4699
+     5.4685
     ],
     [
-     "11:56",
-     5.4694
+     "11:59",
+     5.4697
     ]
    ]
   },
@@ -691,7 +691,7 @@
      "TEND3"
     ],
     "ibov30": null,
-    "dolar30": 0.48
+    "dolar30": 0.45
    },
    {
     "hora": "11:29",
@@ -706,7 +706,7 @@
      "TOTS3"
     ],
     "ibov30": null,
-    "dolar30": 0.48
+    "dolar30": 0.45
    },
    {
     "hora": "11:38",
@@ -732,6 +732,23 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:55",
+    "titulo": "Inflação acima de 6% e Selic em 13,75%: Itaú piora cenário para 2027 e descarta cortes nos juros",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa0pCcmlFRTN3a3lBWHVGRXItdkhaQTVPNHQ2cTJ5UkVYVzFQMXBKWFkySUlsYlJteVpjT1JjYXE0UUpFajRDTFQ1ajlDSFVvaldWRXhTbXZnRF9UdkY1Ry02SDdEeTZvTWk2ckh4MEFaWU9TRWtUc3VTbGRBR2daN18xeVhEVlNHQlp1ZDFMZ0FJRERnSXJMUFFFa3phOFRmNWU3M3VEQW03S2lSc2ZMWFUzY3hLNVRRWWU1SEVEb202NnVBSnVn?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1594,6 +1611,21 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Inflação acima de 6% e Selic em 13,75%: Itaú piora cenário para 2027 e descarta cortes nos juros",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa0pCcmlFRTN3a3lBWHVGRXItdkhaQTVPNHQ2cTJ5UkVYVzFQMXBKWFkySUlsYlJteVpjT1JjYXE0UUpFajRDTFQ1ajlDSFVvaldWRXhTbXZnRF9UdkY1Ry02SDdEeTZvTWk2ckh4MEFaWU9TRWtUc3VTbGRBR2daN18xeVhEVlNHQlp1ZDFMZ0FJRERnSXJMUFFFa3phOFRmNWU3M3VEQW03S2lSc2ZMWFUzY3hLNVRRWWU1SEVEb202NnVBSnVn?oc=5",
+   "publicado": "2026-11-05T11:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
   }
  ],
  "enviadas": [
@@ -1623,7 +1655,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T11:58-03:00",
+ "atualizado_em": "2026-11-05T12:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1638,6 +1670,21 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Inflação acima de 6% e Selic em 13,75%: Itaú piora cenário para 2027 e descarta cortes nos juros",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa0pCcmlFRTN3a3lBWHVGRXItdkhaQTVPNHQ2cTJ5UkVYVzFQMXBKWFkySUlsYlJteVpjT1JjYXE0UUpFajRDTFQ1ajlDSFVvaldWRXhTbXZnRF9UdkY1Ry02SDdEeTZvTWk2ckh4MEFaWU9TRWtUc3VTbGRBR2daN18xeVhEVlNHQlp1ZDFMZ0FJRERnSXJMUFFFa3phOFRmNWU3M3VEQW03S2lSc2ZMWFUzY3hLNVRRWWU1SEVEb202NnVBSnVn?oc=5",
+   "publicado": "2026-11-05T11:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
   {
    "titulo": "Governo Lula estuda mudar arcabouço para reduzir limite de gastos após frustração de receitas",
    "fonte": "Folha",
@@ -1721,32 +1768,6 @@
    "tickers": []
   },
   {
-   "titulo": "Itaú (ITUB4), BB Seguridade (BBSE3) e mais 8 ações para ter na carteira em novembro, segundo o Daycoval",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS25QLVdjZk13SUVaT0c2RnMzZHJIbF91RDMzeGRXZU5CQzJiR1BwNTdnRVlnS0RXV21kWDRENzdCbWx6RGFLdU5PS0hVcjhVSTBaU3RKbC1TX0c2V0c1eVNTT2ZqSENTM2lRcU1WY1hWWDdDcHVjQnA5NXU4YVcyR0hjOVFzNXNfLWU1cThjM1I1eW1WMFFyVHhsRWxNRF9WOWc4U0dpVzdJY1ViYmtrZ2k5NkFDQUhfVm5mY2VqaFBHWDA0QW9mSTk5bWJZZw?oc=5",
-   "publicado": "2026-11-05T11:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBSE3",
-    "ITUB4"
-   ]
-  },
-  {
-   "titulo": "Selic ainda em 13,75%: a calculadora que mostra onde investir agora",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMWt6NVI2cGtCeVNWODFtM2FycEZvRGVna3pLNU1Ka1d3MWd6bnlCS1BkNV9lRFJxcGVpeFhsNWtHZlkyMWxVbGt3N0NLUFAwX2Etd2NzNDZPNVcwV0h0VUZFb1dYU3F5eUh6andMeDFBdDIzSEQxYm5FNkFQdmZiOE1oNnlZcnZ1TEMyakZjVXJVMHhRSUwyVGxyOEt3QWpENXVYOW5VT3R5eTVL0gGyAUFVX3lxTE15UWZJbEUxYmVESmdLTXRRWXNUYXhRYndfNUpTbkFXNk1mak1XMzBzaHFreGxkMFl0Y1ppSUdweHFMZnMxVDRma0hGMmtzWmVRXzJtU3ZrSE85X2NXVlNPcHRfTUtlTFlaaUVHR216MFA0bkhGbGdfbXBpSUx6Zm02VEMtTnNyRnVGQUtpV25NZ3I1RjhqT0R0dVBmZkI5bnVBbGxEWlZmUF90dVptei1tRmc?oc=5",
-   "publicado": "2026-11-05T11:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Selic estacionou, mas taxas do Tesouro Direto sobem após Copom; Tesouro IPCA+ paga até 7,92% de juro real",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZEJueC1LVnhxWGw4OXY2emlWZE9rbXhjeEJPMDFoX1JYVmN2bXhjSU40cmJWQlo2eC1WMWVoOHJzSmYwRkphRm1XdTMtMXpBS01xcDZ2SFVUV1BobUxoX2JBVU9lclg4MWtTSlQwT1FOX1hTX002VG5FcVI4Z0xhTUwwbk5MQlBfd3B6Y2toWGhwRnpIbDRNWldQUUVDUQ?oc=5",
@@ -1815,6 +1836,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar hoje entre leves perdas e ganhos com repercussão da manutenção da Selic",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMDc0NV9GLUp0QzVnbWJ5VjJWX25rcFhSMWVrMEc0eEdhbUJuVHR4bjRpYVdESGhCQkgzQUNHUmdobTlDSHJiZ05LRVFZYmtVRE9keUlTXzBOWk5wZmdoYXZ0WVR5dXBBYTVCcFVnbGFUU3ZrZmJOSzVoNWtBZ1NIb3dZWk9MVmd2ekI5cXZUbXNPQ2VReUFxel9zTHHSAaIBQVVfeXFMUEY4WnJwZW82U0lQVXNEaEswRjU2RDBHdW9udWZZbXFfdk5TZEloRVVId1ltdjdpbGJkWnpVS29SYkVMWTNkeDdKNGNWTWZjZThKdUxkWUhZeDh5S21hek9KY2N3Y2RiOTNOdUU5QW9PaTlERDVvb2wyTHBtT05EcW1QOFRpYVRMa094Q2lUUFVXRDRCdWpTb3FDS19uS0NGQWln?oc=5",
+   "publicado": "2026-11-05T09:27-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
