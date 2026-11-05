@@ -1,0 +1,156 @@
+{
+ "tipo": "pregao",
+ "data": "2026-11-05",
+ "gerado_em": "2026-11-05T08:10:00-03:00",
+ "titulo": "Copom pausa em 13,75% com tom duro; fiscal segue no centro do pregão",
+ "resumo": [
+  "O Copom manteve a Selic em 13,75% por unanimidade, interrompendo os cortes iniciados em março; elevou a projeção de IPCA de 2026 de 5,2% para 5,6% e a do horizonte relevante (2º tri de 2028) de 3,2% para 3,5% — leitura mais dura que mexe principalmente nos vértices do DI.",
+  "Segundo o InfoMoney, o comunicado deixou de citar a magnitude total do ciclo, o que analistas leem como fim dos cortes por ora; para eles, bolsa e dólar devem reagir mais ao risco fiscal do que à decisão em si.",
+  "O Ibovespa subiu 1,23% na quarta, a 167.563,47 pontos, e interrompeu seis quedas; o dólar à vista caiu 0,64%, a R$ 5,4511, com o DXY em 101,53 (−0,19%) após a vitória democrata no Congresso dos EUA.",
+  "No fiscal, segundo o Estadão/Broadcast, Lula fará pronunciamento em rede nacional no domingo (8) para reafirmar as metas — expectativa que pode segurar parte do prêmio de risco até lá, sem medidas confirmadas por enquanto.",
+  "Lá fora, os futuros de Nova York operam mistos (Nasdaq em queda) e o Brent sobe 0,8%, a US$ 95,40, depois de tombar mais de 8% na quarta; às 9h saem a produção industrial (consenso −0,1%) e a decisão do Banco da Inglaterra, com balanços de Magalu, Assaí e Sabesp no radar."
+ ],
+ "termometro": {
+  "win": {
+   "leitura": "neutro",
+   "motivo": "Repique após seis quedas e alívio externo convivem com Copom mais duro, juros longos elevados e fiscal à espera do pronunciamento de domingo."
+  },
+  "wdo": {
+   "leitura": "neutro",
+   "motivo": "Selic alta por mais tempo e DXY fraco aliviam, mas o prêmio fiscal segue alto e o dólar ainda é sensível a qualquer sinal do governo."
+  }
+ },
+ "destaques": [
+  {
+   "hora": "9h",
+   "evento": "Produção industrial de setembro (IBGE)",
+   "por_que": "Consenso de −0,1% no mês; atividade mais fraca reforça a leitura de moderação citada pelo Copom e mexe no DI."
+  },
+  {
+   "hora": "9h",
+   "evento": "Decisão do Banco da Inglaterra",
+   "por_que": "Pesquisa da Reuters prevê alta de 3,75% para 4%, a primeira em três anos; juros globais mais altos pesam em moedas emergentes."
+  },
+  {
+   "hora": "10h30",
+   "evento": "Pedidos de seguro-desemprego (EUA)",
+   "por_que": "Termômetro semanal do emprego na véspera do payroll; mexe em Treasuries e no dólar global."
+  },
+  {
+   "hora": "11h10",
+   "evento": "Fala de Tom Barkin (Fed)",
+   "por_que": "Sinais sobre o rumo dos juros americanos mexem no DXY e, por tabela, no WDO."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 fut.",
+   "variacao": "−0,1%"
+  },
+  {
+   "ativo": "Nasdaq-100 fut.",
+   "variacao": "−0,7%"
+  },
+  {
+   "ativo": "Dow Jones fut.",
+   "variacao": "+0,4%"
+  },
+  {
+   "ativo": "DXY (fech. qua)",
+   "variacao": "−0,19% (101,53)"
+  },
+  {
+   "ativo": "Petróleo Brent",
+   "variacao": "+0,8% (US$ 95,40)"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Copom mantém Selic em 13,75% por unanimidade e eleva projeções de inflação",
+   "fonte": "InfoMoney",
+   "hora": "qua 18h31",
+   "url": "https://www.infomoney.com.br/economia/banco-central-copom-decisao-selic-04112026/",
+   "por_que": "A pausa encerra a sequência de cortes; projeções de IPCA mais altas sustentam juros elevados por mais tempo, o que pesa nas taxas curtas do DI e ajuda o real pelo carrego.",
+   "impacto": {
+    "win": "neutro",
+    "wdo": "baixa",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Comunicado do Copom deve ditar bolsa e dólar nesta quinta, dizem analistas",
+   "fonte": "InfoMoney",
+   "hora": "05h00",
+   "url": "https://www.infomoney.com.br/mercados/selic-em-1375-pausa-era-esperada-mas-comunicado-deve-ditar-bolsa-e-dolar-nesta-5a/",
+   "por_que": "O BC retirou a menção à magnitude do ciclo e usa dólar a R$ 5,20 nas projeções, abaixo do câmbio atual; analistas veem o risco fiscal como o principal motor de WIN e WDO.",
+   "impacto": {
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Lula fará pronunciamento no domingo para reafirmar metas fiscais, diz Estadão",
+   "fonte": "InfoMoney (citando Estadão/Broadcast)",
+   "hora": "06h06",
+   "url": "https://www.infomoney.com.br/mercados/copom-industria-balancos-boe-agenda-05112026/",
+   "por_que": "Segundo o Estadão, o governo discute corte de gastos e aumento de receitas, sem medidas confirmadas; a expectativa pelo discurso pode reduzir o prêmio de risco no câmbio e na curva.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa",
+    "di": "baixa"
+   }
+  },
+  {
+   "titulo": "Ibovespa sobe 1,23% e interrompe seis quedas; dólar cai a R$ 5,45",
+   "fonte": "InfoMoney",
+   "hora": "07h08",
+   "url": "https://www.infomoney.com.br/mercados/mini-indice-hoje-futuro-ibovespa-winz26-05112026/",
+   "por_que": "O WINZ26 fechou a 169.530 pontos (+0,91%); o repique veio com a vitória democrata nos EUA, mas a tendência diária ainda é de baixa e o Copom define o tom da continuidade.",
+   "impacto": {
+    "win": "alta"
+   }
+  },
+  {
+   "titulo": "Petróleo sobe 0,8% após tombo de mais de 8% com chance maior de fim da guerra com o Irã",
+   "fonte": "Reuters (via Investing.com)",
+   "hora": "06h",
+   "url": "https://www.investing.com/news/commodities-news/oil-falls-for-a-fourth-day-on-expectations-for-lower-risk-of-iran-war-escalation-5002042",
+   "por_que": "Brent a US$ 95,40, perto da mínima desde agosto: alivia a inflação e os juros, mas tira força de Petrobras, peso relevante no Ibovespa.",
+   "impacto": {
+    "win": "neutro",
+    "di": "baixa"
+   }
+  },
+  {
+   "titulo": "Banco da Inglaterra deve subir juros pela primeira vez em três anos",
+   "fonte": "Reuters (via RTÉ)",
+   "hora": "05h59",
+   "url": "https://www.rte.ie/news/business/2026/1105/1598072-bank-of-england-rates-meeting/",
+   "por_que": "Economistas consultados pela Reuters esperam alta para 4% (placar 7–2) por causa da inflação de energia; aperto nos países ricos reduz o apelo de moedas emergentes.",
+   "impacto": {
+    "wdo": "alta"
+   }
+  }
+ ],
+ "fontes": [
+  {
+   "titulo": "InfoMoney — BC mantém Selic em 13,75% e destaca aumento significativo das incertezas",
+   "url": "https://www.infomoney.com.br/economia/banco-central-copom-decisao-selic-04112026/"
+  },
+  {
+   "titulo": "InfoMoney — Reação ao Copom, indústria, balanços, BoE e mais destaques desta quinta",
+   "url": "https://www.infomoney.com.br/mercados/copom-industria-balancos-boe-agenda-05112026/"
+  },
+  {
+   "titulo": "InfoMoney — Minidólar (WDOZ26): mercado avalia fôlego da correção e efeito do Copom",
+   "url": "https://www.infomoney.com.br/mercados/minidolar-hoje-futuro-do-dolar-wdoz26-05112026/"
+  },
+  {
+   "titulo": "Yahoo Finance (Reuters) — Brazil's central bank ends run of rate cuts after Lula election win",
+   "url": "https://finance.yahoo.com/economy/policy/articles/brazils-central-bank-ends-run-213917769.html"
+  },
+  {
+   "titulo": "Yahoo Finance — Stock market today: Dow, S&P 500, Nasdaq trade mixed as post-election relief rally cools",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-falls-090519607.html"
+  }
+ ]
+}
