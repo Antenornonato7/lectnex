@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T11:08-03:00",
+  "atualizado_em": "2026-11-05T11:38-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -47,11 +47,35 @@
     ],
     [
      "10:50",
-     168378.0
+     168596.0
     ],
     [
-     "10:53",
-     168444.0
+     "10:55",
+     168794.0
+    ],
+    [
+     "11:00",
+     168801.0
+    ],
+    [
+     "11:05",
+     168962.0
+    ],
+    [
+     "11:10",
+     168676.0
+    ],
+    [
+     "11:15",
+     168820.0
+    ],
+    [
+     "11:20",
+     168837.0
+    ],
+    [
+     "11:23",
+     168915.0
     ]
    ]
   },
@@ -160,11 +184,35 @@
     ],
     [
      "11:05",
-     5.427
+     5.4292
     ],
     [
-     "11:08",
-     5.43
+     "11:10",
+     5.4365
+    ],
+    [
+     "11:15",
+     5.4355
+    ],
+    [
+     "11:20",
+     5.4385
+    ],
+    [
+     "11:25",
+     5.4439
+    ],
+    [
+     "11:30",
+     5.4443
+    ],
+    [
+     "11:35",
+     5.4492
+    ],
+    [
+     "11:38",
+     5.4512
     ]
    ]
   },
@@ -312,6 +360,20 @@
     "dolar30": -0.33
    },
    {
+    "hora": "09:48",
+    "titulo": "Dólar abre em alta após Copom manter Selic em 13,75%; juros futuros sobem",
+    "fonte": "Folha",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmROdUN3YW1ZWDBBR1ZNb2ZHV1JNdWsxZWFBYzVwODNSWGhZcm93V0NrZ3d1THc4SVdOZU5JSnJDMDBFeHIzeTRoTTdhQk1MU3ZOS0E3UmZpbGUyNUVVZnBnRTA4bUNXZnJ1ZUwtOGxtOTQ5LTRESjBxMEJkSko2dkZKWjd4MDBqcEdTaUM5WTMyMFpFRFp2dERBa2lIbzIwQUpVdA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.33
+   },
+   {
     "hora": "09:49",
     "titulo": "CYRE3, CPFE3 e ITUB4: após reação, analista aponta até onde podem subir",
     "fonte": "InfoMoney",
@@ -408,7 +470,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.43,
     "dolar30": -0.13
    },
    {
@@ -421,8 +483,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": -0.02
+    "ibov30": 0.27,
+    "dolar30": 0.1
    },
    {
     "hora": "10:48",
@@ -435,8 +497,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.18,
+    "dolar30": 0.14
    },
    {
     "hora": "10:50",
@@ -450,8 +512,8 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.13,
+    "dolar30": 0.07
    },
    {
     "hora": "10:50",
@@ -465,8 +527,8 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.13,
+    "dolar30": 0.07
    },
    {
     "hora": "10:53",
@@ -480,8 +542,8 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.14,
+    "dolar30": 0.13
    },
    {
     "hora": "10:58",
@@ -495,8 +557,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.07,
+    "dolar30": 0.24
    },
    {
     "hora": "10:59",
@@ -510,7 +572,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.24
    },
    {
     "hora": "11:01",
@@ -523,6 +585,80 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.25
+   },
+   {
+    "hora": "11:04",
+    "titulo": "Itaú (ITUB4), BB Seguridade (BBSE3) e mais 8 ações para ter na carteira em novembro, segundo o Daycoval",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS25QLVdjZk13SUVaT0c2RnMzZHJIbF91RDMzeGRXZU5CQzJiR1BwNTdnRVlnS0RXV21kWDRENzdCbWx6RGFLdU5PS0hVcjhVSTBaU3RKbC1TX0c2V0c1eVNTT2ZqSENTM2lRcU1WY1hWWDdDcHVjQnA5NXU4YVcyR0hjOVFzNXNfLWU1cThjM1I1eW1WMFFyVHhsRWxNRF9WOWc4U0dpVzdJY1ViYmtrZ2k5NkFDQUhfVm5mY2VqaFBHWDA0QW9mSTk5bWJZZw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBSE3",
+     "ITUB4"
+    ],
+    "ibov30": null,
+    "dolar30": 0.25
+   },
+   {
+    "hora": "11:08",
+    "titulo": "Selic para, prêmio não: Tesouro volta a subir após Copom e prefixado chega a 15,34%",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdy1kUWNacmgwTHlzeHR4VW9SeG44WVk3R2ZLaDJJWFdodks3YnBFOUticHdzZ1JWVVBvQ0RXMW1jMHFDOVBSV0MtZF8xNFZ2Q284Y3ZMNEs4T2F0eWtQZFFfV1h1aFJ5UWRLYlpSaGg2ZnNoUkFqNUtXazJpd19ZNURaMTZhNjhKNy03Vjc0VGFiWGtLUkxwM0w0MUJubFZud0RDWHNtTDhDeXRNQnkyaGdwbUlZdDJudm5ndDZRZ2FYbzRtdWpkNDNoQmIzWVhPZGlUS056RFYtMGNOOE5v?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.37
+   },
+   {
+    "hora": "11:20",
+    "titulo": "Economistas veem pausa prolongada no ciclo de cortes de juros após decisão do Copom",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1pMWHAtR3pyTUJ3QWhXR0J6T1JDSDMzcEViRlhlaEdoMEFReHNzU0xhb2JEZlRELWRDTzh2bHRJSlBDcjhLQnpFWE5wRWtCc1NKSENVdnNHSld0Q3VfZWlMb3FGTjM3cVk1LXc2UFJHTzc2MFhrc3NtaG1QekZxcFY1bmhIeEtkbVZMd2NyWlNJeW02Um9PMEU2QXBrR1g2azBpUVRIVHhkWkR4YUdKag?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:28",
+    "titulo": "Tenda (TEND3) lidera quedas do Ibovespa após 3T26: bancos ligam alerta, mas veem potencial para a ação triplicar",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaFBrbFRnVFFRTnhCOUZPN1YxcU9VMWJfNDRhb0VfSVVmSEdjNng2SzdDRjVETXJwZ2pGbTZoa0RrN0JBUTB4SVZXNmp5ZDh4c0VHajREX241cE5MZEJTQUhMZGU3d184dmFaaTktYXhVam81RTBHMEUzdjI3TGMxWjI3d2t3bkNfZU5TeExaT29zMGhBd0ZRWUZSUFNqdjZ2LVdtREE3MHVWTnltNjI4TGhfVTJQa1I3SG1IX252bEh0Yl9OSjhYUkVEOGZ3NXYybzdFeFhBQ1pZNWtLM01rUUR0Xy1rM0J4QS1udVdxZGU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "TEND3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:29",
+    "titulo": "Lucro da Totvs cede com custo financeiro da Linx, mas caixa sustenta apetite por M&As",
+    "fonte": "Bloomberg Línea",
+    "url": "https://www.bloomberglinea.com.br/tech/lucro-da-totvs-cede-com-custo-financeiro-da-linx-mas-caixa-sustenta-apetite-por-mas/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "TOTS3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1091,6 +1227,18 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar abre em alta após Copom manter Selic em 13,75%; juros futuros sobem",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmROdUN3YW1ZWDBBR1ZNb2ZHV1JNdWsxZWFBYzVwODNSWGhZcm93V0NrZ3d1THc4SVdOZU5JSnJDMDBFeHIzeTRoTTdhQk1MU3ZOS0E3UmZpbGUyNUVVZnBnRTA4bUNXZnJ1ZUwtOGxtOTQ5LTRESjBxMEJkSko2dkZKWjd4MDBqcEdTaUM5WTMyMFpFRFp2dERBa2lIbzIwQUpVdA?oc=5",
+   "publicado": "2026-11-05T09:48-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "CYRE3, CPFE3 e ITUB4: após reação, analista aponta até onde podem subir",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNkluQmo0Mm80ckJLYVpVdTNfOVNjZC1YWUpOUnRYUnVLaU5BR2JGSG9uU05Zc2RmZkFObUozdkc3OGlVaG1SQ2ZxWm5aTVZSS3BxLVlSOXVselk4NnY1SDllMmxraHc0QVBCajM1MWRISV8xWnBSOGtYQjRqMTZ6VtIBhgFBVV95cUxOSUFYNW1XMFpsUkVhMmtieHJwNzIwQktyeDlSTG5wVVdyUklyWVZjR1h4Vk9BamRFaWtnZm9DNHNoQWZzQjJpWDAtZktsLWVMbnd4RW8zVVpGRnVfdFJqNnBSbnZQNjRHaWVOZWo2a0tSU2lzamZBQXd1NVVpdG5sOGs0a3c2Zw?oc=5",
@@ -1274,6 +1422,70 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Itaú (ITUB4), BB Seguridade (BBSE3) e mais 8 ações para ter na carteira em novembro, segundo o Daycoval",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS25QLVdjZk13SUVaT0c2RnMzZHJIbF91RDMzeGRXZU5CQzJiR1BwNTdnRVlnS0RXV21kWDRENzdCbWx6RGFLdU5PS0hVcjhVSTBaU3RKbC1TX0c2V0c1eVNTT2ZqSENTM2lRcU1WY1hWWDdDcHVjQnA5NXU4YVcyR0hjOVFzNXNfLWU1cThjM1I1eW1WMFFyVHhsRWxNRF9WOWc4U0dpVzdJY1ViYmtrZ2k5NkFDQUhfVm5mY2VqaFBHWDA0QW9mSTk5bWJZZw?oc=5",
+   "publicado": "2026-11-05T11:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBSE3",
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Selic para, prêmio não: Tesouro volta a subir após Copom e prefixado chega a 15,34%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdy1kUWNacmgwTHlzeHR4VW9SeG44WVk3R2ZLaDJJWFdodks3YnBFOUticHdzZ1JWVVBvQ0RXMW1jMHFDOVBSV0MtZF8xNFZ2Q284Y3ZMNEs4T2F0eWtQZFFfV1h1aFJ5UWRLYlpSaGg2ZnNoUkFqNUtXazJpd19ZNURaMTZhNjhKNy03Vjc0VGFiWGtLUkxwM0w0MUJubFZud0RDWHNtTDhDeXRNQnkyaGdwbUlZdDJudm5ndDZRZ2FYbzRtdWpkNDNoQmIzWVhPZGlUS056RFYtMGNOOE5v?oc=5",
+   "publicado": "2026-11-05T11:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Economistas veem pausa prolongada no ciclo de cortes de juros após decisão do Copom",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1pMWHAtR3pyTUJ3QWhXR0J6T1JDSDMzcEViRlhlaEdoMEFReHNzU0xhb2JEZlRELWRDTzh2bHRJSlBDcjhLQnpFWE5wRWtCc1NKSENVdnNHSld0Q3VfZWlMb3FGTjM3cVk1LXc2UFJHTzc2MFhrc3NtaG1QekZxcFY1bmhIeEtkbVZMd2NyWlNJeW02Um9PMEU2QXBrR1g2azBpUVRIVHhkWkR4YUdKag?oc=5",
+   "publicado": "2026-11-05T11:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tenda (TEND3) lidera quedas do Ibovespa após 3T26: bancos ligam alerta, mas veem potencial para a ação triplicar",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaFBrbFRnVFFRTnhCOUZPN1YxcU9VMWJfNDRhb0VfSVVmSEdjNng2SzdDRjVETXJwZ2pGbTZoa0RrN0JBUTB4SVZXNmp5ZDh4c0VHajREX241cE5MZEJTQUhMZGU3d184dmFaaTktYXhVam81RTBHMEUzdjI3TGMxWjI3d2t3bkNfZU5TeExaT29zMGhBd0ZRWUZSUFNqdjZ2LVdtREE3MHVWTnltNjI4TGhfVTJQa1I3SG1IX252bEh0Yl9OSjhYUkVEOGZ3NXYybzdFeFhBQ1pZNWtLM01rUUR0Xy1rM0J4QS1udVdxZGU?oc=5",
+   "publicado": "2026-11-05T11:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "TEND3"
+   ]
+  },
+  {
+   "titulo": "Lucro da Totvs cede com custo financeiro da Linx, mas caixa sustenta apetite por M&As",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/tech/lucro-da-totvs-cede-com-custo-financeiro-da-linx-mas-caixa-sustenta-apetite-por-mas/",
+   "publicado": "2026-11-05T11:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "TOTS3"
+   ]
   }
  ],
  "enviadas": [
@@ -1303,7 +1515,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T11:08-03:00",
+ "atualizado_em": "2026-11-05T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1319,10 +1531,60 @@
  ],
  "noticias": [
   {
+   "titulo": "Lucro da Totvs cede com custo financeiro da Linx, mas caixa sustenta apetite por M&As",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/tech/lucro-da-totvs-cede-com-custo-financeiro-da-linx-mas-caixa-sustenta-apetite-por-mas/",
+   "publicado": "2026-11-05T11:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "TOTS3"
+   ]
+  },
+  {
+   "titulo": "Tenda (TEND3) lidera quedas do Ibovespa após 3T26: bancos ligam alerta, mas veem potencial para a ação triplicar",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaFBrbFRnVFFRTnhCOUZPN1YxcU9VMWJfNDRhb0VfSVVmSEdjNng2SzdDRjVETXJwZ2pGbTZoa0RrN0JBUTB4SVZXNmp5ZDh4c0VHajREX241cE5MZEJTQUhMZGU3d184dmFaaTktYXhVam81RTBHMEUzdjI3TGMxWjI3d2t3bkNfZU5TeExaT29zMGhBd0ZRWUZSUFNqdjZ2LVdtREE3MHVWTnltNjI4TGhfVTJQa1I3SG1IX252bEh0Yl9OSjhYUkVEOGZ3NXYybzdFeFhBQ1pZNWtLM01rUUR0Xy1rM0J4QS1udVdxZGU?oc=5",
+   "publicado": "2026-11-05T11:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "TEND3"
+   ]
+  },
+  {
+   "titulo": "World's largest olive oil company plummets 20% after rivals agree to takeover deal",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
+   "publicado": "2026-11-05T11:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Economistas veem pausa prolongada no ciclo de cortes de juros após decisão do Copom",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1pMWHAtR3pyTUJ3QWhXR0J6T1JDSDMzcEViRlhlaEdoMEFReHNzU0xhb2JEZlRELWRDTzh2bHRJSlBDcjhLQnpFWE5wRWtCc1NKSENVdnNHSld0Q3VfZWlMb3FGTjM3cVk1LXc2UFJHTzc2MFhrc3NtaG1QekZxcFY1bmhIeEtkbVZMd2NyWlNJeW02Um9PMEU2QXBrR1g2azBpUVRIVHhkWkR4YUdKag?oc=5",
+   "publicado": "2026-11-05T11:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Selic para, prêmio não: Tesouro volta a subir após Copom e prefixado chega a 15,34%",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWE9Qbko5VlRycnJTcVFGLVYzbkU0cElzX00yMGN6U2J2YVRiLWVtSXFfNGVIYjA4a2NZV0plNzhxQzZwSEM1VWNRSTNLUTk3RnpEQzhLMnJyYjFsS2ZwLTVyeXhvTEJENzBkV0FJMENibVUwUm94QUNsZENxeGJtRllpalNmdVRkbHlWTzByWUw3TnZFT3NrRGF2bWl4SExNRHFjMFpNTEhwVi16a2Z6OXB3dFp3Ri1WU0U1Vm9SY3lDaXVxd0Z1OENpRFRSXzhWREptVNIB2gFBVV95cUxPNnFoUzBCVzA0eFdSNTBfMDMzeXlldGxteVJZYmxIVi1FaE9iM3dHYnRKdldVSDAzRVRCdkdkUHoybG5tZlR3Y044R25sSXl4ZVJtaTYzcWpBQXR3NnhXNFl3NHdMQ1JXSkJ6amFlUTNXeFIwLVNBLTJPRU5LcGMwU1FBZi1iM0doZ3RhZW5JN3ZXSFJ2aThvdzZVMkdGWk9uOUhMZGQ5eUwwYlJqNHFFU1dHQVNmVXhKYlQ4YVNfLU1NblJvTWNWdDZUMXBoNUhHV21TbWs3YVZNQQ?oc=5",
-   "publicado": "2026-11-05T11:01-03:00",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdy1kUWNacmgwTHlzeHR4VW9SeG44WVk3R2ZLaDJJWFdodks3YnBFOUticHdzZ1JWVVBvQ0RXMW1jMHFDOVBSV0MtZF8xNFZ2Q284Y3ZMNEs4T2F0eWtQZFFfV1h1aFJ5UWRLYlpSaGg2ZnNoUkFqNUtXazJpd19ZNURaMTZhNjhKNy03Vjc0VGFiWGtLUkxwM0w0MUJubFZud0RDWHNtTDhDeXRNQnkyaGdwbUlZdDJudm5ndDZRZ2FYbzRtdWpkNDNoQmIzWVhPZGlUS056RFYtMGNOOE5v?oc=5",
+   "publicado": "2026-11-05T11:08-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1356,48 +1618,10 @@
    "tickers": []
   },
   {
-   "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/raizen-muda-ticker-na-b3-apos-reclassificar-acoes-preferenciais-em-meio-a-recuperacao-extrajudicial.shtml",
-   "publicado": "2026-11-05T10:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa sobe com Petrobras e alívio nos juros em meio à expectativa sobre política econômica",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUUJmLTAyeXNaU0ZuRV9OOUZ1c3NnaUFJX0Z0STRSQlNuSkRMeXhfTF9QeFpOZGtaVE9ZVmFVN0tGVTBSYTdXM1pSeVlMQk1sek1mS1hqR1I5VmdBRVM4bjdrRXJtaWh6RE9KZXdObkIwdnBEUmpvNXBILVY4ZHIzeGxhelRDaXB3MkdDT1o1TzlNS3ZoanFzY0FZNEJPd1FjU1JMbWhYSVVfaURfXy1HRDhpV3hhUmYyS0FlcTRxaC1IMEQwOFJfUmJBbzUxVUFaeW1jRlRzOVI1TVVya0xYX003M2F0dw?oc=5",
-   "publicado": "2026-11-05T10:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Selic a 13,75%: veja quatro fundos de renda fixa para investir já",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNb0FUbEh5WWl4UG1TNkRXYmNFZnl5Tncydk9lQWRUSkxrdEhPaEE0UE1saFhKcm4yTWZYOFRpSF9VNm9TYTRKaTFhWGdpaEVOalNLdS1Vb2FMem1mck44QXpJdnFfaDgzaFRaNDlWWVdXZHRKLU50LThCQW5obi1qYUx2dEpKUVROdmMyeHRHblBxXy1IOWZRUGVKMUxyUzRTbjBoOVZ5RHAxUdIBrwFBVV95cUxOSnV3UmM4NDJmQ3dxNFphbS0zQUo3ZmViRXRFQVFyLXBWQnhZUzlpSkJhd0tjWUdCTWFnMVVaMWJ6ZmJLckxJYlhQSnUzRUg3MXNTX0J6TmdweUotaTVEbnRYTGtMVnZtTmttejFSYWYwdmFSd2xSd2ZVM2otVFBabV9qQ2dwWnFMZG5Da0g2YzFvcnMyeFdER3JrTERGRldEXzNxbUdlbnZNdUQ5RGE0?oc=5",
    "publicado": "2026-11-05T10:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Durigan vê Selic de 13,75% como 'muito ruim' para a economia e defende condições para queda sustentável",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnR0cmdVZzlhM2lIaXQ2SDc2b2liNDQwcnM5SUFLanRFbFpuQTVrQjU3YTNOMzV1WklZTWh0MXV1Z2hlRHk4Ukl2clQwczZGVEVRZmp5Qnotd3BoSndGcGN2UklQZUdybHJ4dk5obU9jc2hldEUyNVVxbTc1a0x6SkZ0SS1FWmRuMHBOdU5fVWxTYjh3R3o4Nno4RDRCeVFQSmdmaEVCSUdvQncxVFZzLWlWd2JsdUM4N1p0NlhiT3BwUzJ0NU9KdF92bXRYeFA4?oc=5",
-   "publicado": "2026-11-05T10:14-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1432,7 +1656,19 @@
   {
    "titulo": "Dólar sobe no pós-Copom e devolve parte do alívio da véspera",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZm5XcEpKdUJOYlVLNVNsdndwOTlBaHBOTmgxZTJsek9yb3ZUUHJEazhoeDV2OFNlemlQd25IanQxdmxyaWN0TXIzc1NKRWR4eENkNXN4S1E0RmpFcGl6ZFBrMWpETTVWWFpDSGFId2E5LW5Bcl91STZZQmJTWnI4UlF2VFpmNUZTN1ZrV2d6aFFHdjZxakFhenFTNlUybHpPd3piSk1LMVFmYjl3N3o1bGxSOURvMHh5M0E?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZm5XcEpKdUJOYlVLNVNsdndwOTlBaHBOTmgxZTJsek9yb3ZUUHJEazhoeDV2OFNlemlQd25IanQxdmxyaWN0TXIzc1NKRWR4eENkNXN4S1E0RmpFcGl6ZFBrMWpETTVWWFpDSGFId2E5LW5Bcl91STZZQmJTWnI4UlF2VFpmNUZTN1ZrV2d6aFFHdjZxakFhenFTNlUybHpPd3piSk1LMVFmYjl3N3o1bGxSOURvMHh5M0HSAcgBQVVfeXFMTl9TQ0JuaUc5SGo3OTZDVUR3Y25qUDJsLW5xeWpNb3FLNlduSmJZczNhNER0OXM5YWFVazFCbmg5Wnc0MXk1cUx4WmpkbjJOcnRPMnJ0VlptbmRORW5RRi15SThWSXA4Q2ZLcVpxRi0za2FLc3p3OWpGaTUwVHFWS1hQd2twVGlZN1ZLS1MtZWx0Z29oaEo0ZVhCOFdUVUxMYzladEZhMVdpd1lUMHk1YkRoTmRJTTNWcjRRMHBGZF9peVQzMHVEWTg?oc=5",
+   "publicado": "2026-11-05T09:48-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar recua e Bolsa sobe com reunião de Lula com economistas e decisão do Copom no radar",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-apos-copom-manter-selic-em-1375.shtml",
    "publicado": "2026-11-05T09:48-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1444,7 +1680,7 @@
   {
    "titulo": "Dólar abre em alta após Copom manter Selic em 13,75%; juros futuros sobem",
    "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-apos-copom-manter-selic-em-1375.shtml",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmROdUN3YW1ZWDBBR1ZNb2ZHV1JNdWsxZWFBYzVwODNSWGhZcm93V0NrZ3d1THc4SVdOZU5JSnJDMDBFeHIzeTRoTTdhQk1MU3ZOS0E3UmZpbGUyNUVVZnBnRTA4bUNXZnJ1ZUwtOGxtOTQ5LTRESjBxMEJkSko2dkZKWjd4MDBqcEdTaUM5WTMyMFpFRFp2dERBa2lIbzIwQUpVdA?oc=5",
    "publicado": "2026-11-05T09:48-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1461,31 +1697,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar opera estável após Copom manter Selic em 13,75%; Ibovespa futuro sobe",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRFhZUHpSVWpMemYyXzVoYXU1TlFCVHloTUQtOUhvWHRoLU9vaDd0c2lCOUtyTWp1YzBxdUZkVU84Q1NMRjdselFMbG9SS1l1Nm5xWURkYmljdERfSnV0N1ZXRWlRRTZvUXNQdlhkS0EyYTB5WFZOTUZsNnNDeEhQWlVJejdNa0R5VG9wVTFveFc5dmh4UkV4NVBDUEt6RC1icWlpcA?oc=5",
-   "publicado": "2026-11-05T09:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje entre leves perdas e ganhos com repercussão da manutenção da Selic",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMDc0NV9GLUp0QzVnbWJ5VjJWX25rcFhSMWVrMEc0eEdhbUJuVHR4bjRpYVdESGhCQkgzQUNHUmdobTlDSHJiZ05LRVFZYmtVRE9keUlTXzBOWk5wZmdoYXZ0WVR5dXBBYTVCcFVnbGFUU3ZrZmJOSzVoNWtBZ1NIb3dZWk9MVmd2ekI5cXZUbXNPQ2VReUFxel9zTHHSAaIBQVVfeXFMUEY4WnJwZW82U0lQVXNEaEswRjU2RDBHdW9udWZZbXFfdk5TZEloRVVId1ltdjdpbGJkWnpVS29SYkVMWTNkeDdKNGNWTWZjZThKdUxkWUhZeDh5S21hek9KY2N3Y2RiOTNOdUU5QW9PaTlERDVvb2wyTHBtT05EcW1QOFRpYVRMa094Q2lUUFVXRDRCdWpTb3FDS19uS0NGQWln?oc=5",
-   "publicado": "2026-11-05T09:27-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
