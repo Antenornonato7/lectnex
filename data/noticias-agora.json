@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T12:08-03:00",
+  "atualizado_em": "2026-11-05T12:38-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -95,11 +95,35 @@
     ],
     [
      "11:50",
-     167353.0
+     167625.0
     ],
     [
-     "11:52",
-     167424.0
+     "11:55",
+     167767.0
+    ],
+    [
+     "12:00",
+     167908.0
+    ],
+    [
+     "12:05",
+     167640.0
+    ],
+    [
+     "12:10",
+     167488.0
+    ],
+    [
+     "12:15",
+     167277.0
+    ],
+    [
+     "12:20",
+     167071.0
+    ],
+    [
+     "12:23",
+     167101.0
     ]
    ]
   },
@@ -256,11 +280,35 @@
     ],
     [
      "12:05",
-     5.4692
+     5.4745
     ],
     [
-     "12:07",
-     5.4718
+     "12:10",
+     5.4742
+    ],
+    [
+     "12:15",
+     5.4757
+    ],
+    [
+     "12:20",
+     5.476
+    ],
+    [
+     "12:25",
+     5.472
+    ],
+    [
+     "12:30",
+     5.4755
+    ],
+    [
+     "12:35",
+     5.474
+    ],
+    [
+     "12:38",
+     5.4732
     ]
    ]
   },
@@ -706,7 +754,7 @@
     "tickers": [
      "TEND3"
     ],
-    "ibov30": null,
+    "ibov30": -0.5,
     "dolar30": 0.47
    },
    {
@@ -721,7 +769,7 @@
     "tickers": [
      "TOTS3"
     ],
-    "ibov30": null,
+    "ibov30": -0.5,
     "dolar30": 0.47
    },
    {
@@ -735,8 +783,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.3
+    "ibov30": -0.34,
+    "dolar30": 0.4
    },
    {
     "hora": "11:53",
@@ -748,8 +796,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.33,
+    "dolar30": 0.21
    },
    {
     "hora": "11:55",
@@ -764,6 +812,77 @@
     ],
     "tickers": [
      "ITUB4"
+    ],
+    "ibov30": -0.42,
+    "dolar30": 0.12
+   },
+   {
+    "hora": "12:09",
+    "titulo": "XP vê dólar a R$ 5,50 em 2027 e diz que rumo do real dependerá do cenário fiscal",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUnppWWI3OG9tZzdNZFA5TGwtVUY2WkpGa2toWHdPSFF3dmZaQU1Uc3ZnRk1ybmh4dTZiRjBPWUUwblNuTjQtUlUxWVk0ZUxHekNaVWpmQlFzZ1VZbjRmYlpadjN5RVFtU0cwTWVUOHFkdHBYVWFuTGpBeG9qUXJ4WE5UMTBVeDJTcVlfSXp3UzBmdkhYMjZVWkxXQ081S25MRC1yckd6YlBJQlk2cjJuUEo4bGdraTBZ0gG-AUFVX3lxTE0xNzJvMTUtU1J5TU1CdTNyREdOR1FuMzdRV3hfWm10eTFxNnhVMTktYnQzVlAxT3JQcXdsNHM2LU9qSlViMHRSd1B4WGt0NkJDMzJGS180WVdqd3BDT012NTEtQmhSdXc0eU9keDZPZXIyc2hnbmYtS09xMl9DTjJ5LWdzNkpSQmZXWWpsZVM3c0hjdFBFNGFDNXBlbVpsTDhSNnhMekFicnczR0JkTmlIOG9uS2txWnNCUVpzbFE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.01
+   },
+   {
+    "hora": "12:12",
+    "titulo": "'Brincadeira de mau gosto' e 'balão de ensaio': o que banqueiros acharam da Selic em 7,5% de Lara Resende",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.02
+   },
+   {
+    "hora": "12:22",
+    "titulo": "Durigan vê juros muito altos, mas evita criticar decisão do Copom",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOblYyYm1wTlZFSnpGQW9KZHF2VDJlVVNmYTM3NW0zQ2JGakI1Yk5xbDB5UDQ4VDhfaUY1UlI0QUtxVWlRZGtVQW9lQjl5UWJrOGZjS2hXRzhKaTByRGtoVjV1MWxrbHdKWGdTZDdJeWItZ3JxNjJDaDlyWmE0ay1fNWxBM3FTZ25mZ2xCNzZ0RTl5UVV4dWVVMmhPSjlub1FvdFl3dENR0gGrAUFVX3lxTE9qUWViMWtEWmhTQVdHeTd3MXNRRmZyVjVYbV9zQldDeXNucXFGVTRuYVlEM05RSjhkd0pFRlVkN244QmgxY291OVRpcDA0VUVzT0VsdzVtSlJjSS1PVS1abER0TnRGWTIyMWxsTlNNOE1VMkdVMVozaHU2XzB2eENJT3U5U3NmXzNOOTkwMG1tZFppS2hSNDhfdS1FYWpxN29tNm0xTkI3UEhvSQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:31",
+    "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMnltUlVhcGZHajJITDZRc0tZYnBhTzN6enlRZXYzUlhBTml3TTBGLTFBTFR0YU80Sm5nSWZIUm9PLXR0d2d0S0tkeEZ5Z1YwUG94OE9WdkhTUVFaMnlURDNKcVpRN3hNWE5LOWVMQmM0anJkbTRWV05MRnpmU2llWW43YXlZQWxsckFhYzRndXlscEkwTVM3TWQ5MWhsM0h2R05JSEpRa3VtaTQtQUdpb25DMER3YmxUb2pj?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:32",
+    "titulo": "Ações da C&A (CEAB3) disparam até 10% com balanço melhor do que o esperado; o que agradou no 3T26?",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkpRUDhwUHptUzV2S2MwdEJDd00tV0R3V1A1S2dUU0hLV0pEYVpUdVVCWFVlR2gwRDY0TEZ2ZzRjZDJNZ3FqMzVCN3VaMmFxSWFuOWdJdzlNQ0ktRkQxQVpkSHdxNm1VX1YzTGViUUtZMVlTSHZzUTMtQUhDSmtPWFF1SHdUOTdZbDJ5OGZFZ1NEempmM3dQcVpOeDJoa2ZSTDk1RmR2a0R5VUZBSHRPY1gtWkNCVFU5c1NELVZLRzB4dVJfdVJJ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "CEAB3"
     ],
     "ibov30": null,
     "dolar30": null
@@ -1642,6 +1761,67 @@
    "tickers": [
     "ITUB4"
    ]
+  },
+  {
+   "titulo": "XP vê dólar a R$ 5,50 em 2027 e diz que rumo do real dependerá do cenário fiscal",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUnppWWI3OG9tZzdNZFA5TGwtVUY2WkpGa2toWHdPSFF3dmZaQU1Uc3ZnRk1ybmh4dTZiRjBPWUUwblNuTjQtUlUxWVk0ZUxHekNaVWpmQlFzZ1VZbjRmYlpadjN5RVFtU0cwTWVUOHFkdHBYVWFuTGpBeG9qUXJ4WE5UMTBVeDJTcVlfSXp3UzBmdkhYMjZVWkxXQ081S25MRC1yckd6YlBJQlk2cjJuUEo4bGdraTBZ0gG-AUFVX3lxTE0xNzJvMTUtU1J5TU1CdTNyREdOR1FuMzdRV3hfWm10eTFxNnhVMTktYnQzVlAxT3JQcXdsNHM2LU9qSlViMHRSd1B4WGt0NkJDMzJGS180WVdqd3BDT012NTEtQmhSdXc0eU9keDZPZXIyc2hnbmYtS09xMl9DTjJ5LWdzNkpSQmZXWWpsZVM3c0hjdFBFNGFDNXBlbVpsTDhSNnhMekFicnczR0JkTmlIOG9uS2txWnNCUVpzbFE?oc=5",
+   "publicado": "2026-11-05T12:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "'Brincadeira de mau gosto' e 'balão de ensaio': o que banqueiros acharam da Selic em 7,5% de Lara Resende",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
+   "publicado": "2026-11-05T12:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Durigan vê juros muito altos, mas evita criticar decisão do Copom",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOblYyYm1wTlZFSnpGQW9KZHF2VDJlVVNmYTM3NW0zQ2JGakI1Yk5xbDB5UDQ4VDhfaUY1UlI0QUtxVWlRZGtVQW9lQjl5UWJrOGZjS2hXRzhKaTByRGtoVjV1MWxrbHdKWGdTZDdJeWItZ3JxNjJDaDlyWmE0ay1fNWxBM3FTZ25mZ2xCNzZ0RTl5UVV4dWVVMmhPSjlub1FvdFl3dENR0gGrAUFVX3lxTE9qUWViMWtEWmhTQVdHeTd3MXNRRmZyVjVYbV9zQldDeXNucXFGVTRuYVlEM05RSjhkd0pFRlVkN244QmgxY291OVRpcDA0VUVzT0VsdzVtSlJjSS1PVS1abER0TnRGWTIyMWxsTlNNOE1VMkdVMVozaHU2XzB2eENJT3U5U3NmXzNOOTkwMG1tZFppS2hSNDhfdS1FYWpxN29tNm0xTkI3UEhvSQ?oc=5",
+   "publicado": "2026-11-05T12:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMnltUlVhcGZHajJITDZRc0tZYnBhTzN6enlRZXYzUlhBTml3TTBGLTFBTFR0YU80Sm5nSWZIUm9PLXR0d2d0S0tkeEZ5Z1YwUG94OE9WdkhTUVFaMnlURDNKcVpRN3hNWE5LOWVMQmM0anJkbTRWV05MRnpmU2llWW43YXlZQWxsckFhYzRndXlscEkwTVM3TWQ5MWhsM0h2R05JSEpRa3VtaTQtQUdpb25DMER3YmxUb2pj?oc=5",
+   "publicado": "2026-11-05T12:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ações da C&A (CEAB3) disparam até 10% com balanço melhor do que o esperado; o que agradou no 3T26?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkpRUDhwUHptUzV2S2MwdEJDd00tV0R3V1A1S2dUU0hLV0pEYVpUdVVCWFVlR2gwRDY0TEZ2ZzRjZDJNZ3FqMzVCN3VaMmFxSWFuOWdJdzlNQ0ktRkQxQVpkSHdxNm1VX1YzTGViUUtZMVlTSHZzUTMtQUhDSmtPWFF1SHdUOTdZbDJ5OGZFZ1NEempmM3dQcVpOeDJoa2ZSTDk1RmR2a0R5VUZBSHRPY1gtWkNCVFU5c1NELVZLRzB4dVJfdVJJ?oc=5",
+   "publicado": "2026-11-05T12:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "CEAB3"
+   ]
   }
  ],
  "enviadas": [
@@ -1671,7 +1851,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T12:08-03:00",
+ "atualizado_em": "2026-11-05T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1687,10 +1867,71 @@
  ],
  "noticias": [
   {
+   "titulo": "Ações da C&A (CEAB3) disparam até 10% com balanço melhor do que o esperado; o que agradou no 3T26?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkpRUDhwUHptUzV2S2MwdEJDd00tV0R3V1A1S2dUU0hLV0pEYVpUdVVCWFVlR2gwRDY0TEZ2ZzRjZDJNZ3FqMzVCN3VaMmFxSWFuOWdJdzlNQ0ktRkQxQVpkSHdxNm1VX1YzTGViUUtZMVlTSHZzUTMtQUhDSmtPWFF1SHdUOTdZbDJ5OGZFZ1NEempmM3dQcVpOeDJoa2ZSTDk1RmR2a0R5VUZBSHRPY1gtWkNCVFU5c1NELVZLRzB4dVJfdVJJ?oc=5",
+   "publicado": "2026-11-05T12:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "CEAB3"
+   ]
+  },
+  {
+   "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMnltUlVhcGZHajJITDZRc0tZYnBhTzN6enlRZXYzUlhBTml3TTBGLTFBTFR0YU80Sm5nSWZIUm9PLXR0d2d0S0tkeEZ5Z1YwUG94OE9WdkhTUVFaMnlURDNKcVpRN3hNWE5LOWVMQmM0anJkbTRWV05MRnpmU2llWW43YXlZQWxsckFhYzRndXlscEkwTVM3TWQ5MWhsM0h2R05JSEpRa3VtaTQtQUdpb25DMER3YmxUb2pj?oc=5",
+   "publicado": "2026-11-05T12:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Barkin sees interest rate hikes ahead, but at a gradual pace",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
-   "publicado": "2026-11-05T12:08-03:00",
+   "publicado": "2026-11-05T12:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Durigan vê juros muito altos, mas evita criticar decisão do Copom",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOblYyYm1wTlZFSnpGQW9KZHF2VDJlVVNmYTM3NW0zQ2JGakI1Yk5xbDB5UDQ4VDhfaUY1UlI0QUtxVWlRZGtVQW9lQjl5UWJrOGZjS2hXRzhKaTByRGtoVjV1MWxrbHdKWGdTZDdJeWItZ3JxNjJDaDlyWmE0ay1fNWxBM3FTZ25mZ2xCNzZ0RTl5UVV4dWVVMmhPSjlub1FvdFl3dENR0gGrAUFVX3lxTE9qUWViMWtEWmhTQVdHeTd3MXNRRmZyVjVYbV9zQldDeXNucXFGVTRuYVlEM05RSjhkd0pFRlVkN244QmgxY291OVRpcDA0VUVzT0VsdzVtSlJjSS1PVS1abER0TnRGWTIyMWxsTlNNOE1VMkdVMVozaHU2XzB2eENJT3U5U3NmXzNOOTkwMG1tZFppS2hSNDhfdS1FYWpxN29tNm0xTkI3UEhvSQ?oc=5",
+   "publicado": "2026-11-05T12:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "'Brincadeira de mau gosto' e 'balão de ensaio': o que banqueiros acharam da Selic em 7,5% de Lara Resende",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
+   "publicado": "2026-11-05T12:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "XP vê dólar a R$ 5,50 em 2027 e diz que rumo do real dependerá do cenário fiscal",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUnppWWI3OG9tZzdNZFA5TGwtVUY2WkpGa2toWHdPSFF3dmZaQU1Uc3ZnRk1ybmh4dTZiRjBPWUUwblNuTjQtUlUxWVk0ZUxHekNaVWpmQlFzZ1VZbjRmYlpadjN5RVFtU0cwTWVUOHFkdHBYVWFuTGpBeG9qUXJ4WE5UMTBVeDJTcVlfSXp3UzBmdkhYMjZVWkxXQ081S25MRC1yckd6YlBJQlk2cjJuUEo4bGdraTBZ0gG-AUFVX3lxTE0xNzJvMTUtU1J5TU1CdTNyREdOR1FuMzdRV3hfWm10eTFxNnhVMTktYnQzVlAxT3JQcXdsNHM2LU9qSlViMHRSd1B4WGt0NkJDMzJGS180WVdqd3BDT012NTEtQmhSdXc0eU9keDZPZXIyc2hnbmYtS09xMl9DTjJ5LWdzNkpSQmZXWWpsZVM3c0hjdFBFNGFDNXBlbVpsTDhSNnhMekFicnczR0JkTmlIOG9uS2txWnNCUVpzbFE?oc=5",
+   "publicado": "2026-11-05T12:09-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1725,31 +1966,6 @@
    "tickers": []
   },
   {
-   "titulo": "IBGE abre seleção com 27.279 vagas temporárias para o Censo Agropecuário",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ibge-abre-selecao-com-27279-vagas-temporarias-para-o-censo-agropecuario.shtml",
-   "publicado": "2026-11-05T11:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Lucro da Totvs cede com custo financeiro da Linx, mas caixa sustenta apetite por M&As",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/tech/lucro-da-totvs-cede-com-custo-financeiro-da-linx-mas-caixa-sustenta-apetite-por-mas/",
-   "publicado": "2026-11-05T11:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "TOTS3"
-   ]
-  },
-  {
    "titulo": "Tenda (TEND3) lidera quedas do Ibovespa após 3T26: bancos ligam alerta, mas veem potencial para a ação triplicar",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaFBrbFRnVFFRTnhCOUZPN1YxcU9VMWJfNDRhb0VfSVVmSEdjNng2SzdDRjVETXJwZ2pGbTZoa0RrN0JBUTB4SVZXNmp5ZDh4c0VHajREX241cE5MZEJTQUhMZGU3d184dmFaaTktYXhVam81RTBHMEUzdjI3TGMxWjI3d2t3bkNfZU5TeExaT29zMGhBd0ZRWUZSUFNqdjZ2LVdtREE3MHVWTnltNjI4TGhfVTJQa1I3SG1IX252bEh0Yl9OSjhYUkVEOGZ3NXYybzdFeFhBQ1pZNWtLM01rUUR0Xy1rM0J4QS1udVdxZGU?oc=5",
@@ -1763,18 +1979,6 @@
    ]
   },
   {
-   "titulo": "World's largest olive oil company plummets 20% after rivals agree to takeover deal",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
-   "publicado": "2026-11-05T11:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Economistas veem pausa prolongada no ciclo de cortes de juros após decisão do Copom",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1pMWHAtR3pyTUJ3QWhXR0J6T1JDSDMzcEViRlhlaEdoMEFReHNzU0xhb2JEZlRELWRDTzh2bHRJSlBDcjhLQnpFWE5wRWtCc1NKSENVdnNHSld0Q3VfZWlMb3FGTjM3cVk1LXc2UFJHTzc2MFhrc3NtaG1QekZxcFY1bmhIeEtkbVZMd2NyWlNJeW02Um9PMEU2QXBrR1g2azBpUVRIVHhkWkR4YUdKag?oc=5",
@@ -1783,17 +1987,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "OKX anuncia aplicativo de dólar para brasileiros e cartão internacional",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeURIOUUxZnlrVHB3ZW1UakFmSVk4VlRQS3kxcmxJREhQeVhRZXZ0dlpLdzlJQkl4cFFoVGlKcDd5SFR3Skx3Q0t2VnZCVlR5VVFNbVhoVnZNT1AyTWZ3S1pxejRWbUJIRXBiUUtsd1BGV0NKWUN0Tk5vMTVVMnBCaWtaZUpsS21FWGhUbmxUSUFqYldTTWw4dzl5LWp5ZkxnWkJYaVJyUF8tUQ?oc=5",
-   "publicado": "2026-11-05T11:20-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
@@ -1847,35 +2040,22 @@
    "tickers": []
   },
   {
+   "titulo": "Selic a 13,75%: veja quatro fundos de renda fixa para investir já",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNb0FUbEh5WWl4UG1TNkRXYmNFZnl5Tncydk9lQWRUSkxrdEhPaEE0UE1saFhKcm4yTWZYOFRpSF9VNm9TYTRKaTFhWGdpaEVOalNLdS1Vb2FMem1mck44QXpJdnFfaDgzaFRaNDlWWVdXZHRKLU50LThCQW5obi1qYUx2dEpKUVROdmMyeHRHblBxXy1IOWZRUGVKMUxyUzRTbjBoOVZ5RHAxUdIBrwFBVV95cUxOSnV3UmM4NDJmQ3dxNFphbS0zQUo3ZmViRXRFQVFyLXBWQnhZUzlpSkJhd0tjWUdCTWFnMVVaMWJ6ZmJLckxJYlhQSnUzRUg3MXNTX0J6TmdweUotaTVEbnRYTGtMVnZtTmttejFSYWYwdmFSd2xSd2ZVM2otVFBabV9qQ2dwWnFMZG5Da0g2YzFvcnMyeFdER3JrTERGRldEXzNxbUdlbnZNdUQ5RGE0?oc=5",
+   "publicado": "2026-11-05T10:48-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar recua e Bolsa sobe com reunião de Lula com economistas e decisão do Copom no radar",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-apos-copom-manter-selic-em-1375.shtml",
    "publicado": "2026-11-05T09:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
-   "publicado": "2026-11-05T09:37-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje entre leves perdas e ganhos com repercussão da manutenção da Selic",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMDc0NV9GLUp0QzVnbWJ5VjJWX25rcFhSMWVrMEc0eEdhbUJuVHR4bjRpYVdESGhCQkgzQUNHUmdobTlDSHJiZ05LRVFZYmtVRE9keUlTXzBOWk5wZmdoYXZ0WVR5dXBBYTVCcFVnbGFUU3ZrZmJOSzVoNWtBZ1NIb3dZWk9MVmd2ekI5cXZUbXNPQ2VReUFxel9zTHHSAaIBQVVfeXFMUEY4WnJwZW82U0lQVXNEaEswRjU2RDBHdW9udWZZbXFfdk5TZEloRVVId1ltdjdpbGJkWnpVS29SYkVMWTNkeDdKNGNWTWZjZThKdUxkWUhZeDh5S21hek9KY2N3Y2RiOTNOdUU5QW9PaTlERDVvb2wyTHBtT05EcW1QOFRpYVRMa094Q2lUUFVXRDRCdWpTb3FDS19uS0NGQWln?oc=5",
-   "publicado": "2026-11-05T09:27-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
