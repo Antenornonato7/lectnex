@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T14:08-03:00",
+  "atualizado_em": "2026-11-05T14:10-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -191,11 +191,11 @@
     ],
     [
      "13:50",
-     166924.0
+     166852.0
     ],
     [
-     "13:53",
-     166812.0
+     "13:55",
+     166754.0
     ]
    ]
   },
@@ -448,11 +448,11 @@
     ],
     [
      "14:05",
-     5.4765
+     5.4772
     ],
     [
-     "14:08",
-     5.4757
+     "14:10",
+     5.4783
     ]
    ]
   },
@@ -1180,7 +1180,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.01,
+    "ibov30": -0.04,
     "dolar30": 0.02
    },
    {
@@ -1195,7 +1195,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.01,
+    "ibov30": -0.04,
     "dolar30": 0.02
    }
   ]
@@ -2207,7 +2207,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T14:08-03:00",
+ "atualizado_em": "2026-11-05T14:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2218,8 +2218,7 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
@@ -2331,6 +2330,18 @@
    "tickers": []
   },
   {
+   "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
+   "publicado": "2026-11-05T12:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMnltUlVhcGZHajJITDZRc0tZYnBhTzN6enlRZXYzUlhBTml3TTBGLTFBTFR0YU80Sm5nSWZIUm9PLXR0d2d0S0tkeEZ5Z1YwUG94OE9WdkhTUVFaMnlURDNKcVpRN3hNWE5LOWVMQmM0anJkbTRWV05MRnpmU2llWW43YXlZQWxsckFhYzRndXlscEkwTVM3TWQ5MWhsM0h2R05JSEpRa3VtaTQtQUdpb25DMER3YmxUb2pj?oc=5",
@@ -2384,18 +2395,6 @@
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
    "publicado": "2026-11-05T12:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "XP vê dólar a R$ 5,50 em 2027 e diz que rumo do real dependerá do cenário fiscal",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUnppWWI3OG9tZzdNZFA5TGwtVUY2WkpGa2toWHdPSFF3dmZaQU1Uc3ZnRk1ybmh4dTZiRjBPWUUwblNuTjQtUlUxWVk0ZUxHekNaVWpmQlFzZ1VZbjRmYlpadjN5RVFtU0cwTWVUOHFkdHBYVWFuTGpBeG9qUXJ4WE5UMTBVeDJTcVlfSXp3UzBmdkhYMjZVWkxXQ081S25MRC1yckd6YlBJQlk2cjJuUEo4bGdraTBZ0gG-AUFVX3lxTE0xNzJvMTUtU1J5TU1CdTNyREdOR1FuMzdRV3hfWm10eTFxNnhVMTktYnQzVlAxT3JQcXdsNHM2LU9qSlViMHRSd1B4WGt0NkJDMzJGS180WVdqd3BDT012NTEtQmhSdXc0eU9keDZPZXIyc2hnbmYtS09xMl9DTjJ5LWdzNkpSQmZXWWpsZVM3c0hjdFBFNGFDNXBlbVpsTDhSNnhMekFicnczR0JkTmlIOG9uS2txWnNCUVpzbFE?oc=5",
-   "publicado": "2026-11-05T12:09-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
