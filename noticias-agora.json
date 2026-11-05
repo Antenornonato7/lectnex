@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T13:43-03:00",
+  "atualizado_em": "2026-11-05T13:45-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -171,11 +171,15 @@
     ],
     [
      "13:25",
-     166823.0
+     166825.0
     ],
     [
-     "13:28",
-     166854.0
+     "13:30",
+     167033.0
+    ],
+    [
+     "13:31",
+     167044.0
     ]
    ]
   },
@@ -408,11 +412,15 @@
     ],
     [
      "13:40",
-     5.4747
+     5.4772
     ],
     [
-     "13:43",
-     5.4762
+     "13:45",
+     5.4787
+    ],
+    [
+     "13:46",
+     5.477
     ]
    ]
   },
@@ -1070,7 +1078,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.09,
+    "ibov30": 0.2,
     "dolar30": -0.15
    },
    {
@@ -1086,7 +1094,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.16
+    "dolar30": -0.11
    },
    {
     "hora": "13:19",
@@ -1100,7 +1108,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.06
    },
    {
     "hora": "13:26",
@@ -2141,7 +2149,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T13:43-03:00",
+ "atualizado_em": "2026-11-05T13:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2265,19 +2273,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa cai e dólar sobe com Selic, balanços e reunião no radar",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRFhZUHpSVWpMemYyXzVoYXU1TlFCVHloTUQtOUhvWHRoLU9vaDd0c2lCOUtyTWp1YzBxdUZkVU84Q1NMRjdselFMbG9SS1l1Nm5xWURkYmljdERfSnV0N1ZXRWlRRTZvUXNQdlhkS0EyYTB5WFZOTUZsNnNDeEhQWlVJejdNa0R5VG9wVTFveFc5dmh4UkV4NVBDUEt6RC1icWlpcA?oc=5",
-   "publicado": "2026-11-05T12:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMnltUlVhcGZHajJITDZRc0tZYnBhTzN6enlRZXYzUlhBTml3TTBGLTFBTFR0YU80Sm5nSWZIUm9PLXR0d2d0S0tkeEZ5Z1YwUG94OE9WdkhTUVFaMnlURDNKcVpRN3hNWE5LOWVMQmM0anJkbTRWV05MRnpmU2llWW43YXlZQWxsckFhYzRndXlscEkwTVM3TWQ5MWhsM0h2R05JSEpRa3VtaTQtQUdpb25DMER3YmxUb2pj?oc=5",
@@ -2322,6 +2317,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Durigan vê juros muito altos, mas evita criticar decisão do Copom",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOblYyYm1wTlZFSnpGQW9KZHF2VDJlVVNmYTM3NW0zQ2JGakI1Yk5xbDB5UDQ4VDhfaUY1UlI0QUtxVWlRZGtVQW9lQjl5UWJrOGZjS2hXRzhKaTByRGtoVjV1MWxrbHdKWGdTZDdJeWItZ3JxNjJDaDlyWmE0ay1fNWxBM3FTZ25mZ2xCNzZ0RTl5UVV4dWVVMmhPSjlub1FvdFl3dENR0gGrAUFVX3lxTE9qUWViMWtEWmhTQVdHeTd3MXNRRmZyVjVYbV9zQldDeXNucXFGVTRuYVlEM05RSjhkd0pFRlVkN244QmgxY291OVRpcDA0VUVzT0VsdzVtSlJjSS1PVS1abER0TnRGWTIyMWxsTlNNOE1VMkdVMVozaHU2XzB2eENJT3U5U3NmXzNOOTkwMG1tZFppS2hSNDhfdS1FYWpxN29tNm0xTkI3UEhvSQ?oc=5",
+   "publicado": "2026-11-05T12:22-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
