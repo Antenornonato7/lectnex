@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T11:23-03:00",
+  "atualizado_em": "2026-11-05T11:25-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -59,11 +59,11 @@
     ],
     [
      "11:05",
-     168883.0
+     168962.0
     ],
     [
-     "11:08",
-     168964.0
+     "11:10",
+     168760.0
     ]
    ]
   },
@@ -184,11 +184,11 @@
     ],
     [
      "11:20",
-     5.4395
+     5.4385
     ],
     [
-     "11:23",
-     5.4395
+     "11:25",
+     5.4389
     ]
    ]
   },
@@ -445,7 +445,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.44,
+    "ibov30": 0.32,
     "dolar30": 0.1
    },
    {
@@ -505,7 +505,7 @@
      "B3SA3"
     ],
     "ibov30": null,
-    "dolar30": 0.15
+    "dolar30": 0.13
    },
    {
     "hora": "10:58",
@@ -520,7 +520,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.16
+    "dolar30": 0.15
    },
    {
     "hora": "10:59",
@@ -534,7 +534,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.15
    },
    {
     "hora": "11:01",
@@ -1409,7 +1409,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T11:23-03:00",
+ "atualizado_em": "2026-11-05T11:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1424,6 +1424,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "World's largest olive oil company plummets 20% after rivals agree to takeover deal",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
+   "publicado": "2026-11-05T11:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Economistas veem pausa prolongada no ciclo de cortes de juros após decisão do Copom",
    "fonte": "Exame",
@@ -1486,19 +1498,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/raizen-muda-ticker-na-b3-apos-reclassificar-acoes-preferenciais-em-meio-a-recuperacao-extrajudicial.shtml",
-   "publicado": "2026-11-05T10:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
   },
   {
    "titulo": "Selic a 13,75%: veja quatro fundos de renda fixa para investir já",
