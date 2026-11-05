@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T17:08-03:00",
+  "atualizado_em": "2026-11-05T17:10-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -335,7 +335,7 @@
     ],
     [
      "16:50",
-     166701.0
+     166659.0
     ]
    ]
   },
@@ -732,11 +732,11 @@
     ],
     [
      "17:05",
-     5.4902
+     5.4938
     ],
     [
-     "17:08",
-     5.4915
+     "17:10",
+     5.4947
     ]
    ]
   },
@@ -1666,7 +1666,7 @@
      "ITUB4",
      "VALE3"
     ],
-    "ibov30": 0.05,
+    "ibov30": 0.02,
     "dolar30": -0.04
    },
    {
@@ -1682,21 +1682,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:08",
+    "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Agenda econômica: o que pode mexer com a Bolsa e o dólar nesta quinta-feira (5)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNWozQXBFSDZVaThKTUNMN2YyWVZoSkxnWDNfaDZvRVl0ZC1RQmtWVXo0RHFncTFJQXN5QXZhbXRIS2I3cnBlV0k4OUhBN2lrdUdLM0pYdzI2c0Q1eVAtY3Bxc2RTTVBKbjVUbGRJRzNtdlhUT3NGOXJqcTJxQ2FVWkFXa3FXWW5uWmZqQ0VCMEJmY2Z5d1NQQnEtX1QtWURWTktHVFJPR2FudmowSWM2OTl3?oc=5",
-   "publicado": "2026-11-05T06:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Itaú (ITUB4) reage ao tombo pós-eleição: ação pode voltar aos R$ 45?",
    "fonte": "InfoMoney",
@@ -2664,6 +2666,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "publicado": "2026-11-05T17:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2693,7 +2706,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T17:08-03:00",
+ "atualizado_em": "2026-11-05T17:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2707,6 +2720,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "publicado": "2026-11-05T17:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
    "fonte": "Folha",
