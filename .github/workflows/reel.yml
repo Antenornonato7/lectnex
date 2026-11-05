@@ -1,0 +1,33 @@
+# Manda agora no Telegram privado o reel do dia (ou da semana) com capa e legenda. Só à mão (o kit das 19h30 já inclui os reels).
+name: Reel agora
+run-name: Reel ${{ inputs.tipo }} ${{ inputs.data }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      tipo:
+        description: 'dia ou semana'
+        type: choice
+        options: [dia, semana]
+        default: dia
+      data:
+        description: 'Data AAAA-MM-DD (vazio = hoje)'
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar e enviar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: |
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg >/dev/null
+          python3 scripts/reel_enviar.py "${{ inputs.tipo }}" "${{ inputs.data }}"
