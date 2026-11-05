@@ -287,6 +287,15 @@ def main():
     p.wait()
     if p.returncode == 0:
         os.replace(saida + '.tmp.mp4', saida)
+        if '--mudo' not in sys.argv:
+            try:  # trilha original: pop quando cada manchete aparece, sinal no fechamento, sobe-som antes da chamada
+                from trilha import juntar, trilha
+                pops = sorted({r0[0] for r0 in r.roteiro if r0[2] == r0[3] and r0[4]})
+                wav = trilha(TOTAL, pops=pops, sinal=B, final=C, saida=saida + '.wav')
+                juntar(saida, wav)
+                os.remove(wav)
+            except Exception as e:
+                print(f'::warning::Reel sem áudio ({e.__class__.__name__}: {e})')
         print(f'Reel do dia: {saida} ({os.path.getsize(saida) // 1024} KB)')
 
 

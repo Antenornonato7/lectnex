@@ -46,7 +46,7 @@ jobs:
           PREVIA: ${{ inputs.previa_story && '1' || '' }}
         run: |
           [ -f "$RUNNER_TEMP/fechamento.json" ] || { echo "Sem fechamento hoje: sem story."; exit 0; }
-          pip install -q pillow==12.0.0 || pip install -q pillow
+          pip install -q pillow==12.0.0 numpy || pip install -q pillow numpy
           if [ -n "$PREVIA" ]; then
             python3 scripts/story_fechamento.py "$RUNNER_TEMP/fechamento.json" "$RUNNER_TEMP/story.png" --previa "PRÉVIA · PARCIAL $(TZ=America/Sao_Paulo date +%Hh%M)"
           else

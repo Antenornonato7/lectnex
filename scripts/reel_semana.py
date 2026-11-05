@@ -274,6 +274,15 @@ def main():
     p.wait()
     if p.returncode == 0:
         os.replace(saida + '.tmp.mp4', saida)
+        if '--mudo' not in sys.argv:
+            try:
+                from trilha import juntar, trilha
+                por = (B - A) / s.n
+                wav = trilha(TOTAL, pops=[A + j * por + 0.35 * por for j in range(s.n)], sinal=B, final=C, saida=saida + '.wav', bpm=104, semente=11)
+                juntar(saida, wav)
+                os.remove(wav)
+            except Exception as e:
+                print(f'::warning::Reel sem áudio ({e.__class__.__name__}: {e})')
         print(f'Reel da semana: {saida} ({os.path.getsize(saida) // 1024} KB, {len(s.dias)} pregões)')
 
 
