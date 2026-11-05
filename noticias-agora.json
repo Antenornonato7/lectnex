@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T16:58-03:00",
+  "atualizado_em": "2026-11-05T17:00-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -327,11 +327,7 @@
     ],
     [
      "16:40",
-     166691.0
-    ],
-    [
-     "16:43",
-     166706.0
+     166786.0
     ]
    ]
   },
@@ -720,11 +716,11 @@
     ],
     [
      "16:55",
-     5.4872
+     5.4862
     ],
     [
-     "16:58",
-     5.4854
+     "17:00",
+     5.4844
     ]
    ]
   },
@@ -1656,22 +1652,24 @@
     ],
     "ibov30": null,
     "dolar30": -0.04
+   },
+   {
+    "hora": "16:56",
+    "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468036",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Caruso, do Santander: barra para novos cortes da Selic agora parece ser alta",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNajFuS3JmOE1BRnJGYWFDQWxzXzdyZlUxdGtiZXpQOWpCemhnWmtnWFZyb3FEOWpxUURsWnJVbnpQZHR5R0E2d1hPb0JaTGc3Vmg2cDQzSkVWRC1VWXdFM2huZmpELXFTTlk3MkNzTVljRGtreTZJcjZBaFFaUDgyeDdqVmlWQWpHaGRkTGgwXzA5LUdZOVZWWGJtY0U3N1V3MmN6czV6dzBnbWlCcHBuWGFvT3JQd3ZQNkpDaXRVVTJDbUlYMEVKNjNwRFFYZzdpWDV0bUZobXQwTUdoR3FzeG40VUrSAeQBQVVfeXFMTWoxbktyZjhNQUZyRmFhQ0Fsc183cmZVMXRrYmV6UDlqQnpoZ1prZ1hWcm9xRDlqcVFEbFpyVW56UGR0eUdBNndYT29CWkxnN1ZoNnA0M0pFVkQtVVl3RTNobmZqRC1xU05ZNzJDc01ZY0Rra3k2SXI2QWhRWlA4Mng3alZpVkFqR2hkZExoMF8wOS1HWTlWVlhibWNFNzdVdzJjenM1encwZ21pQnBwblhhb09yUHd2UDZKQ2l0VVUyQ21JWDBFSjYzcERRWGc3aVg1dG1GaG10ME1HaEdxc3huNFVK?oc=5",
-   "publicado": "2026-11-05T06:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Agenda econômica: o que pode mexer com a Bolsa e o dólar nesta quinta-feira (5)",
    "fonte": "Money Times",
@@ -2638,6 +2636,18 @@
     "ITUB4",
     "VALE3"
    ]
+  },
+  {
+   "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468036",
+   "publicado": "2026-11-05T16:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2667,7 +2677,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T16:58-03:00",
+ "atualizado_em": "2026-11-05T17:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2681,6 +2691,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468036",
+   "publicado": "2026-11-05T16:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Alerta para dividendos: Itaú BBA tira Vale (VALE3) e Copel (CPLE3) da carteira; veja quem entrou",
    "fonte": "Money Times",
