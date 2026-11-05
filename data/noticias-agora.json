@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T14:08-03:00",
+  "atualizado_em": "2026-11-05T14:38-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -191,11 +191,31 @@
     ],
     [
      "13:50",
-     166924.0
+     166852.0
     ],
     [
-     "13:53",
-     166812.0
+     "13:55",
+     166577.0
+    ],
+    [
+     "14:00",
+     166333.0
+    ],
+    [
+     "14:05",
+     166408.0
+    ],
+    [
+     "14:10",
+     166508.0
+    ],
+    [
+     "14:15",
+     166561.0
+    ],
+    [
+     "14:20",
+     166605.0
     ]
    ]
   },
@@ -448,11 +468,31 @@
     ],
     [
      "14:05",
-     5.4765
+     5.4772
     ],
     [
-     "14:08",
-     5.4757
+     "14:10",
+     5.4772
+    ],
+    [
+     "14:15",
+     5.476
+    ],
+    [
+     "14:20",
+     5.4785
+    ],
+    [
+     "14:25",
+     5.4827
+    ],
+    [
+     "14:30",
+     5.4828
+    ],
+    [
+     "14:35",
+     5.4833
     ]
    ]
   },
@@ -1088,6 +1128,21 @@
     "dolar30": 0.13
    },
    {
+    "hora": "12:32",
+    "titulo": "O que está por trás da queda da Porto (PSSA3) hoje? Conta dos calotes chega, com provisões quase 50% maiores e mudanças no guidance",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalpBbzh3RkxmaTFPdVlLWnh3MUoyTFJHMGhTLUxtYWFDbXVfckVKV1VHWUtGVEgzTzZFTEFoRjhUMXZVVGhmeHh0OHB5RFBYM3pVcVB1Zjk5bEs0ZlQ1UHUxS05ITXpjTnVOOVl1RXJJMkNUY0NIUkRjVzg2cElKNEFHZHBBd1BoMEdzQlNhTlBUYkJmekxPUnVwZUxTRnZnNHhIVTFYZi1TOHozRTF5RGNPRG8xUFRLcThtLW1JbmZtOWJfNHBkV045ZE9lUEdHd0FpZ0k3T1kyY0NkV3IyV3VLMjZzQWNmRTBsV2ZMdFU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PSSA3"
+    ],
+    "ibov30": -0.22,
+    "dolar30": 0.13
+   },
+   {
     "hora": "12:53",
     "titulo": "Tenda derrete mais de 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas hoje",
     "fonte": "Estadão",
@@ -1180,7 +1235,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.01,
+    "ibov30": -0.15,
     "dolar30": 0.02
    },
    {
@@ -1195,62 +1250,55 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.01,
+    "ibov30": -0.15,
     "dolar30": 0.02
+   },
+   {
+    "hora": "13:28",
+    "titulo": "Antes do Copom, Ibovespa sobe 1,2% e tem 1ª alta desde as eleições com apoio do exterior e petróleo",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa0VpRnZTX2NtTTVCYjMyVUNLLWZpd0lvYnozZUF6RGpRZmlrQnJoVkJNRDB6VTVqaGt1Z0FJU2FNTnY3cVQxVGthU0ZrT2tIQkhHMmViYXA4YXhGaFNXN01WaGsxcnNDdHJQbWFvWkVLQUxydTJ2b2NrSE12LXZnMFIwOVhqTnlTOVVSZGNFWVZiWkgwM3R0eWJKTnF2TFNMLXd4ZU13a2hQRU5HT2RsckxuNmhtTzVrT0dqNFdVMFg1cDgwTXZDbHpuMEhRUmJWRmx6WHEyQnpMb04tRDFJNHAxRDE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.15,
+    "dolar30": 0.02
+   },
+   {
+    "hora": "14:31",
+    "titulo": "Base Exchange mira lançamento em 2027 em desafio à B3 no mercado de ações",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWlYzOXg0N21GeWo4VEJ5T01XTkZNdmRMM3VGekljSmxncmY2SW44NXlWRmN1RjdrYWZXOF90ek1LVEtydklrVFRUZEVWNjBvaFp6MEJBejYtNi03aXFKVnFXcWJCVjFNUTVQUWM3SE1tYVdDN2JCRHo4SDZOd04tWGMyOTBOSFNVTVQyWmQtd2pweXBQbER4XzdWWWozWWctODRjbjlrMGhIUWRkcGhMeFFR0gG3AUFVX3lxTE1KeERPeXJtRVZjMVJtODF3aGhOdDU4SXlBVVY3eGJPZVBQTFF0NUdjUU1xNU1Xb2xZdU9JX2t3a2xlMi1BdW1kaGs3SkROZHNhZ2YxeXA4U3NiXzExQlluS1I0NXBORm42TEJOckVvY0t6WXc0Zmg1dUw0N0s3NUtOX2dyMVRxTzNmVDlpTktqZ09WVjBBcVNlY1ZXMExuS1dMV1FPZmx5dDJYbFN3QmdmQV90dzVjaw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:34",
+    "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Como investir em renda fixa e ações agora que o Copom parou de cortar juros",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNR3lTS1RzUmRFdGFrUlpHZmR2Qm1KekhDZTdxenR3aWEzak5IeEhKNk5GanE4MXZwb1hienoyWVladlE4YUgzYlFSdHROc0h4T1VQSzQ1ZHhsYU1sczFUMzBDbElzN2JBdlFRaThLRTVVV3VrTlExZkxQaHZhM3RiVXRqWjUyRVJoWV82SV9mcUR6aHBEMU5UVFFqVFZSVUh6ZjBETUhOWnFVQ1F3TlNF?oc=5",
-   "publicado": "2026-11-05T05:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Selic estaciona em 13,75%, mas bancos já cobram até 15% na casa própria",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMFRzYWdmVWZ2OG1zdXZxYmxFelNyalNhdnhBTU5jM2ZKRURKSW1XNGk2eFRnNG5KTVJTSjVWYlduakk1ZlVkVzJjVTRpb3Nzc1RwaXhBN2o4RmxWVUQwOEFGUjdJZER4cVA0MlhQU001TkhoX0xaMjN2b1JvTnFNakNzUmZidEYwbkJwZUV4Y1g5RTFkVXFzYUMtOEFpQWpZNnhfLV9OWjRldw?oc=5",
-   "publicado": "2026-11-05T05:03-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Voos da Petrobras e invasões mudam rotina, mas euro e ouro valem mais que petróleo em Oiapoque",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/voos-da-petrobras-e-invasoes-mudam-rotina-mas-euro-e-ouro-valem-mais-que-petroleo-em-oiapoque/",
-   "publicado": "2026-11-05T05:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "BC deve manter Selic em 13,75% até pelo menos abril, diz Fernanda Guardado",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/bc-deve-manter-selic-em-1375-ate-pelo-menos-abril-diz-fernanda-guardado/",
-   "publicado": "2026-11-05T05:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Indústria no Brasil e balanços: o que move os mercados após reação da Bolsa e pausa do Copom",
    "fonte": "Exame",
@@ -2085,6 +2133,19 @@
    ]
   },
   {
+   "titulo": "O que está por trás da queda da Porto (PSSA3) hoje? Conta dos calotes chega, com provisões quase 50% maiores e mudanças no guidance",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalpBbzh3RkxmaTFPdVlLWnh3MUoyTFJHMGhTLUxtYWFDbXVfckVKV1VHWUtGVEgzTzZFTEFoRjhUMXZVVGhmeHh0OHB5RFBYM3pVcVB1Zjk5bEs0ZlQ1UHUxS05ITXpjTnVOOVl1RXJJMkNUY0NIUkRjVzg2cElKNEFHZHBBd1BoMEdzQlNhTlBUYkJmekxPUnVwZUxTRnZnNHhIVTFYZi1TOHozRTF5RGNPRG8xUFRLcThtLW1JbmZtOWJfNHBkV045ZE9lUEdHd0FpZ0k3T1kyY0NkV3IyV3VLMjZzQWNmRTBsV2ZMdFU?oc=5",
+   "publicado": "2026-11-05T12:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PSSA3"
+   ]
+  },
+  {
    "titulo": "Tenda derrete mais de 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas hoje",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbVNhRlFLbHpkc0FQWFlxUnNtdU9mRk1QM09abTBNOVA1bkEyT3J5LTlIV0dpbjdnU1hlU3ptUGVRRmxlemZGbVJCcUc2ZU9VeGd2M3FaUThSOGZrdFg1c2hQM2VyQlk1eGVYSXJqWFRzc1Z1SFlaOVF0dmg1eXd2U2lOeVFiSzEtd2d0RHVFaGhIcHAzNWdPbzNLNldReWJIdTM2Q2ttcUZ6Vks0c0ZRTHhnREwzZE9RZ3d6WDJaRkxRRWtzZEhjeVk1VkNEOU1XalZxYWwzVDN0MWpIdTVkdkw1T0RHQlpnSlJVc3V30gHzAUFVX3lxTE5pZXZCbExHWFNRcUxjNTN6YlMzS3JSWllrYlBZeThFOW0xVGJGSEpTVmtENl96YmJqUFBKbGxQVHN2V3hFUmRTRXl4c0wtbWVTaWM0NkVLMVBaVWVieVZfNjc4X0NETlRBaE5ISi15SFpqNlVyYTNMUDdtZkZneDk4UHp4c1Q2Q1p5X2ptZDA0Mnp3Z2MxcVd5czFaMGJULU9zR0VDdXcxUjBaN3JfaHJUZTlUX0NpQlVOTG1qYWh6WE9WRlpQX2tjUGMxbDZiVWM4SmF2bXVvNTFuQUpkZDVzSEJmNE1zUHhQeHZ4VTlmVG1yUQ?oc=5",
@@ -2178,6 +2239,43 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Antes do Copom, Ibovespa sobe 1,2% e tem 1ª alta desde as eleições com apoio do exterior e petróleo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa0VpRnZTX2NtTTVCYjMyVUNLLWZpd0lvYnozZUF6RGpRZmlrQnJoVkJNRDB6VTVqaGt1Z0FJU2FNTnY3cVQxVGthU0ZrT2tIQkhHMmViYXA4YXhGaFNXN01WaGsxcnNDdHJQbWFvWkVLQUxydTJ2b2NrSE12LXZnMFIwOVhqTnlTOVVSZGNFWVZiWkgwM3R0eWJKTnF2TFNMLXd4ZU13a2hQRU5HT2RsckxuNmhtTzVrT0dqNFdVMFg1cDgwTXZDbHpuMEhRUmJWRmx6WHEyQnpMb04tRDFJNHAxRDE?oc=5",
+   "publicado": "2026-11-05T13:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Base Exchange mira lançamento em 2027 em desafio à B3 no mercado de ações",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWlYzOXg0N21GeWo4VEJ5T01XTkZNdmRMM3VGekljSmxncmY2SW44NXlWRmN1RjdrYWZXOF90ek1LVEtydklrVFRUZEVWNjBvaFp6MEJBejYtNi03aXFKVnFXcWJCVjFNUTVQUWM3SE1tYVdDN2JCRHo4SDZOd04tWGMyOTBOSFNVTVQyWmQtd2pweXBQbER4XzdWWWozWWctODRjbjlrMGhIUWRkcGhMeFFR0gG3AUFVX3lxTE1KeERPeXJtRVZjMVJtODF3aGhOdDU4SXlBVVY3eGJPZVBQTFF0NUdjUU1xNU1Xb2xZdU9JX2t3a2xlMi1BdW1kaGs3SkROZHNhZ2YxeXA4U3NiXzExQlluS1I0NXBORm42TEJOckVvY0t6WXc0Zmg1dUw0N0s3NUtOX2dyMVRxTzNmVDlpTktqZ09WVjBBcVNlY1ZXMExuS1dMV1FPZmx5dDJYbFN3QmdmQV90dzVjaw?oc=5",
+   "publicado": "2026-11-05T14:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
+   "publicado": "2026-11-05T14:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2207,7 +2305,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T14:08-03:00",
+ "atualizado_em": "2026-11-05T14:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2222,6 +2320,30 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html",
+   "publicado": "2026-11-05T14:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Base Exchange mira lançamento em 2027 em desafio à B3 no mercado de ações",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWlYzOXg0N21GeWo4VEJ5T01XTkZNdmRMM3VGekljSmxncmY2SW44NXlWRmN1RjdrYWZXOF90ek1LVEtydklrVFRUZEVWNjBvaFp6MEJBejYtNi03aXFKVnFXcWJCVjFNUTVQUWM3SE1tYVdDN2JCRHo4SDZOd04tWGMyOTBOSFNVTVQyWmQtd2pweXBQbER4XzdWWWozWWctODRjbjlrMGhIUWRkcGhMeFFR0gG3AUFVX3lxTE1KeERPeXJtRVZjMVJtODF3aGhOdDU4SXlBVVY3eGJPZVBQTFF0NUdjUU1xNU1Xb2xZdU9JX2t3a2xlMi1BdW1kaGs3SkROZHNhZ2YxeXA4U3NiXzExQlluS1I0NXBORm42TEJOckVvY0t6WXc0Zmg1dUw0N0s3NUtOX2dyMVRxTzNmVDlpTktqZ09WVjBBcVNlY1ZXMExuS1dMV1FPZmx5dDJYbFN3QmdmQV90dzVjaw?oc=5",
+   "publicado": "2026-11-05T14:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
   {
    "titulo": "China incentiva ETFs de bancos para atrair investidores na Bolsa",
    "fonte": "Folha",
@@ -2255,6 +2377,19 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Antes do Copom, Ibovespa sobe 1,2% e tem 1ª alta desde as eleições com apoio do exterior e petróleo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa0VpRnZTX2NtTTVCYjMyVUNLLWZpd0lvYnozZUF6RGpRZmlrQnJoVkJNRDB6VTVqaGt1Z0FJU2FNTnY3cVQxVGthU0ZrT2tIQkhHMmViYXA4YXhGaFNXN01WaGsxcnNDdHJQbWFvWkVLQUxydTJ2b2NrSE12LXZnMFIwOVhqTnlTOVVSZGNFWVZiWkgwM3R0eWJKTnF2TFNMLXd4ZU13a2hQRU5HT2RsckxuNmhtTzVrT0dqNFdVMFg1cDgwTXZDbHpuMEhRUmJWRmx6WHEyQnpMb04tRDFJNHAxRDE?oc=5",
+   "publicado": "2026-11-05T13:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2296,6 +2431,19 @@
    "tickers": []
   },
   {
+   "titulo": "Auxiliares atribuem ausência de Galípolo em reunião com Lula a silêncio do Copom",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNjN1UjZlTjZ0cE9wWDN0eDJtMEtzTVY3Z2NZV2dIblhaQ2UtUm8xd09wdi1IY0tGekVNTW04M2RSM3FRcktDSV9rWDlpVHNPT0FjUW1sYmEyWkxCa0pidHF2Nm9hbXZtTklrZXItQlNXeGNBb1pqYXRHdHNTQlVhTVJMc0ctdURjbE9ZTllwSjRHYjZFQktHbzQyU2ZqRFJ2WFEtaHE4QVlMVUZEMW1lVFpodUpnTVdUQ3FR0gHAAUFVX3lxTE5JLWlUc1VmZlJnZkh4d0cwR1lGZVFpNUJ1VmxkNTJlUlNJUG9TaFctYV92MVVaVm1ZYVl2QUFsanZxYTFEOTM5OV83NURlZ21Lc19xcWhZRk1xSThvS0wzMWRwUng2cVpiY0x1UkI3Q280OG9WcWRFOGktT0lHbzliaTJsNGFXT0xjSkxxU0tJcHJSejhFbWs2SENONjQyOGszaUp3Q1I4WTRqNTRaQXMtWXY1bU5DR1lQOXZ4S1ltZg?oc=5",
+   "publicado": "2026-11-05T13:14-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Wall Street cai com Nasdaq em baixa expressiva por perdas em tecnologia",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzR4clJnLXlwRnEzLVNFT1FIZTRhTmVZZ1Zzdm5IX1M2cEcxZVlkYnE3bFVWZjN5dzBYN1JvZWE5UW5SWlBEUWNKZnNRZFFRUTZWNHlEVUpHRnRTS1Awam80MWU3QzU4bnBoMElEWkNSdXc2TTl4Qm5TcW9JSXhhRVcyODRhY2FpRnNETWdoWXNvbXNGX3J2VnhYWjNadw?oc=5",
@@ -2331,18 +2479,6 @@
    "tickers": []
   },
   {
-   "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMnltUlVhcGZHajJITDZRc0tZYnBhTzN6enlRZXYzUlhBTml3TTBGLTFBTFR0YU80Sm5nSWZIUm9PLXR0d2d0S0tkeEZ5Z1YwUG94OE9WdkhTUVFaMnlURDNKcVpRN3hNWE5LOWVMQmM0anJkbTRWV05MRnpmU2llWW43YXlZQWxsckFhYzRndXlscEkwTVM3TWQ5MWhsM0h2R05JSEpRa3VtaTQtQUdpb25DMER3YmxUb2pj?oc=5",
-   "publicado": "2026-11-05T12:31-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa opera volátil, em meio à queda em NY e cautela fiscal, apesar de commodities",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQWpSUXRmQkhmd3p3bFZwaHJkdE9WX1Z3WVFlSkJfSDZzT243QkhLSGNnOGlWX3ZHd1c3RWNQTU1KXzVFazI5Vk9aMzZvRGY4SXJhZnA5dkg4TFJwRTlLYjE0RmlscUtfR1A5U0gwclhnX3VhV29GU1l3YTlwakE0dmhCc3YwNVB1NWRXLTNObk13N2dva1ZwZ3ppNTIzV0FYVzNJUnRmZGFHYWwtNTYwNURteTYwREV6ZFBnWUJKVdIBxAFBVV95cUxPLUctTFNVSHMxcVhtUVl1eUpKWlJ0MDdWT2I1VGRhYmpuZEVyOG00NEVBRzhwY21hRnJEUGJnUnU4NkNPYzNsRmw2RVh0RDlyNTFfdFFUUHJILWF4b010dWdXcm1xLWh0Sm5HUHNpZ0VIcERwNUZLM3ZjQUZCNE94MU1LeEZ4ZlVuZ1N1QVJaUTRJZF9hYktXLU5ZeW9SVkVmaGpWNVozVVBZTG90Y1I4bDQwSUJiSkw3M0pzWTBKQkNvRm13?oc=5",
@@ -2362,42 +2498,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Durigan vê juros muito altos, mas evita criticar decisão do Copom",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOblYyYm1wTlZFSnpGQW9KZHF2VDJlVVNmYTM3NW0zQ2JGakI1Yk5xbDB5UDQ4VDhfaUY1UlI0QUtxVWlRZGtVQW9lQjl5UWJrOGZjS2hXRzhKaTByRGtoVjV1MWxrbHdKWGdTZDdJeWItZ3JxNjJDaDlyWmE0ay1fNWxBM3FTZ25mZ2xCNzZ0RTl5UVV4dWVVMmhPSjlub1FvdFl3dENR0gGrAUFVX3lxTE9qUWViMWtEWmhTQVdHeTd3MXNRRmZyVjVYbV9zQldDeXNucXFGVTRuYVlEM05RSjhkd0pFRlVkN244QmgxY291OVRpcDA0VUVzT0VsdzVtSlJjSS1PVS1abER0TnRGWTIyMWxsTlNNOE1VMkdVMVozaHU2XzB2eENJT3U5U3NmXzNOOTkwMG1tZFppS2hSNDhfdS1FYWpxN29tNm0xTkI3UEhvSQ?oc=5",
-   "publicado": "2026-11-05T12:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "'Brincadeira de mau gosto' e 'balão de ensaio': o que banqueiros acharam da Selic em 7,5% de Lara Resende",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
-   "publicado": "2026-11-05T12:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "XP vê dólar a R$ 5,50 em 2027 e diz que rumo do real dependerá do cenário fiscal",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUnppWWI3OG9tZzdNZFA5TGwtVUY2WkpGa2toWHdPSFF3dmZaQU1Uc3ZnRk1ybmh4dTZiRjBPWUUwblNuTjQtUlUxWVk0ZUxHekNaVWpmQlFzZ1VZbjRmYlpadjN5RVFtU0cwTWVUOHFkdHBYVWFuTGpBeG9qUXJ4WE5UMTBVeDJTcVlfSXp3UzBmdkhYMjZVWkxXQ081S25MRC1yckd6YlBJQlk2cjJuUEo4bGdraTBZ0gG-AUFVX3lxTE0xNzJvMTUtU1J5TU1CdTNyREdOR1FuMzdRV3hfWm10eTFxNnhVMTktYnQzVlAxT3JQcXdsNHM2LU9qSlViMHRSd1B4WGt0NkJDMzJGS180WVdqd3BDT012NTEtQmhSdXc0eU9keDZPZXIyc2hnbmYtS09xMl9DTjJ5LWdzNkpSQmZXWWpsZVM3c0hjdFBFNGFDNXBlbVpsTDhSNnhMekFicnczR0JkTmlIOG9uS2txWnNCUVpzbFE?oc=5",
-   "publicado": "2026-11-05T12:09-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
