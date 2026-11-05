@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T10:55-03:00",
+  "atualizado_em": "2026-11-05T10:58-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -39,7 +39,11 @@
     ],
     [
      "10:40",
-     168323.0
+     168145.0
+    ],
+    [
+     "10:43",
+     168290.0
     ]
    ]
   },
@@ -140,7 +144,11 @@
     ],
     [
      "10:55",
-     5.4339
+     5.4338
+    ],
+    [
+     "10:58",
+     5.4346
     ]
    ]
   },
@@ -342,7 +350,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.27,
+    "ibov30": 0.16,
     "dolar30": -0.44
    },
    {
@@ -397,6 +405,36 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:50",
+    "titulo": "Ibovespa sobe com Petrobras e alívio nos juros em meio à expectativa sobre política econômica",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUUJmLTAyeXNaU0ZuRV9OOUZ1c3NnaUFJX0Z0STRSQlNuSkRMeXhfTF9QeFpOZGtaVE9ZVmFVN0tGVTBSYTdXM1pSeVlMQk1sek1mS1hqR1I5VmdBRVM4bjdrRXJtaWh6RE9KZXdObkIwdnBEUmpvNXBILVY4ZHIzeGxhelRDaXB3MkdDT1o1TzlNS3ZoanFzY0FZNEJPd1FjU1JMbWhYSVVfaURfXy1HRDhpV3hhUmYyS0FlcTRxaC1IMEQwOFJfUmJBbzUxVUFaeW1jRlRzOVI1TVVya0xYX003M2F0d9IB9AFBVV95cUxONVZVNWFoaFV4NkhyYVNjazlMM01zTnRRWHM2XzNKQ2tjUE5TTGN3eVZhMS1nSTNmTWhnTHozNDVIdlZVaFUtWmRPNF9YVGRTTHA5Z3BKU2hzUzVUMms5UGJqNWdHTHFOTjdaNzN3eFB0YkphTHlnZUh5c09ieGU1ZG5JNWxPRWZnQTJfSjNINWZXdVUxRTBzbnR4Njl6U0stZG9ocVdpMFZTSmNWRXRVR05LTXY1V0dLd1JxRnpHTktETll1RmlTUURWQjVpZW55clVjeEdEdGh2UnhxVTVnY2Y0YjhzUll1YUlLU1NRaWlQR3hx?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:53",
+    "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/raizen-muda-ticker-na-b3-apos-reclassificar-acoes-preferenciais-em-meio-a-recuperacao-extrajudicial.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1060,6 +1098,32 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe com Petrobras e alívio nos juros em meio à expectativa sobre política econômica",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUUJmLTAyeXNaU0ZuRV9OOUZ1c3NnaUFJX0Z0STRSQlNuSkRMeXhfTF9QeFpOZGtaVE9ZVmFVN0tGVTBSYTdXM1pSeVlMQk1sek1mS1hqR1I5VmdBRVM4bjdrRXJtaWh6RE9KZXdObkIwdnBEUmpvNXBILVY4ZHIzeGxhelRDaXB3MkdDT1o1TzlNS3ZoanFzY0FZNEJPd1FjU1JMbWhYSVVfaURfXy1HRDhpV3hhUmYyS0FlcTRxaC1IMEQwOFJfUmJBbzUxVUFaeW1jRlRzOVI1TVVya0xYX003M2F0d9IB9AFBVV95cUxONVZVNWFoaFV4NkhyYVNjazlMM01zTnRRWHM2XzNKQ2tjUE5TTGN3eVZhMS1nSTNmTWhnTHozNDVIdlZVaFUtWmRPNF9YVGRTTHA5Z3BKU2hzUzVUMms5UGJqNWdHTHFOTjdaNzN3eFB0YkphTHlnZUh5c09ieGU1ZG5JNWxPRWZnQTJfSjNINWZXdVUxRTBzbnR4Njl6U0stZG9ocVdpMFZTSmNWRXRVR05LTXY1V0dLd1JxRnpHTktETll1RmlTUURWQjVpZW55clVjeEdEdGh2UnhxVTVnY2Y0YjhzUll1YUlLU1NRaWlQR3hx?oc=5",
+   "publicado": "2026-11-05T10:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/raizen-muda-ticker-na-b3-apos-reclassificar-acoes-preferenciais-em-meio-a-recuperacao-extrajudicial.shtml",
+   "publicado": "2026-11-05T10:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
   }
  ],
  "enviadas": [
@@ -1089,7 +1153,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T10:55-03:00",
+ "atualizado_em": "2026-11-05T10:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1104,6 +1168,32 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/raizen-muda-ticker-na-b3-apos-reclassificar-acoes-preferenciais-em-meio-a-recuperacao-extrajudicial.shtml",
+   "publicado": "2026-11-05T10:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa sobe com Petrobras e alívio nos juros em meio à expectativa sobre política econômica",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUUJmLTAyeXNaU0ZuRV9OOUZ1c3NnaUFJX0Z0STRSQlNuSkRMeXhfTF9QeFpOZGtaVE9ZVmFVN0tGVTBSYTdXM1pSeVlMQk1sek1mS1hqR1I5VmdBRVM4bjdrRXJtaWh6RE9KZXdObkIwdnBEUmpvNXBILVY4ZHIzeGxhelRDaXB3MkdDT1o1TzlNS3ZoanFzY0FZNEJPd1FjU1JMbWhYSVVfaURfXy1HRDhpV3hhUmYyS0FlcTRxaC1IMEQwOFJfUmJBbzUxVUFaeW1jRlRzOVI1TVVya0xYX003M2F0d9IB9AFBVV95cUxONVZVNWFoaFV4NkhyYVNjazlMM01zTnRRWHM2XzNKQ2tjUE5TTGN3eVZhMS1nSTNmTWhnTHozNDVIdlZVaFUtWmRPNF9YVGRTTHA5Z3BKU2hzUzVUMms5UGJqNWdHTHFOTjdaNzN3eFB0YkphTHlnZUh5c09ieGU1ZG5JNWxPRWZnQTJfSjNINWZXdVUxRTBzbnR4Njl6U0stZG9ocVdpMFZTSmNWRXRVR05LTXY1V0dLd1JxRnpHTktETll1RmlTUURWQjVpZW55clVjeEdEdGh2UnhxVTVnY2Y0YjhzUll1YUlLU1NRaWlQR3hx?oc=5",
+   "publicado": "2026-11-05T10:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Selic a 13,75%: veja quatro fundos de renda fixa para investir já",
    "fonte": "InfoMoney",
@@ -1187,18 +1277,6 @@
    "tickers": []
   },
   {
-   "titulo": "What the Democratic midterms sweep changes for U.S.-China relations",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/what-the-democrat-midterms-sweep-changes-for-us-china-tech-rivalry.html",
-   "publicado": "2026-11-05T09:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar sobe no pós-Copom e devolve parte do alívio da véspera",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZm5XcEpKdUJOYlVLNVNsdndwOTlBaHBOTmgxZTJsek9yb3ZUUHJEazhoeDV2OFNlemlQd25IanQxdmxyaWN0TXIzc1NKRWR4eENkNXN4S1E0RmpFcGl6ZFBrMWpETTVWWFpDSGFId2E5LW5Bcl91STZZQmJTWnI4UlF2VFpmNUZTN1ZrV2d6aFFHdjZxakFhenFTNlUybHpPd3piSk1LMVFmYjl3N3o1bGxSOURvMHh5M0E?oc=5",
@@ -1243,18 +1321,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Com Selic estacionada, incorporadora adia lançamentos de alto padrão para 2027",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU2pZOFNVeE55SVpRRDE3X0YtU3EyNkdtSWczaTgxMU1BczE0N2h0c3JNZkNPeDA5M3VvazRGcE40OVRmUmhWbmJ2d2huU0JCNkdveWhXczYtLXpGdktmenVUN2xzRk91ZzNpNUlGem1SWFItcGoySnpNWWhSVVE5MjZVV3dKcE5oVU00VFdxcjVEcmJBbGpGZmlKLXNMR0M2YzB6c00xZ05lX01oLXVETDhtLUhETUU?oc=5",
-   "publicado": "2026-11-05T09:32-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
