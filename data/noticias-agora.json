@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T16:38-03:00",
+  "atualizado_em": "2026-11-05T17:08-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -311,11 +311,31 @@
     ],
     [
      "16:20",
-     166726.0
+     166622.0
     ],
     [
-     "16:23",
-     166705.0
+     "16:25",
+     166614.0
+    ],
+    [
+     "16:30",
+     166525.0
+    ],
+    [
+     "16:35",
+     166540.0
+    ],
+    [
+     "16:40",
+     166786.0
+    ],
+    [
+     "16:45",
+     166822.0
+    ],
+    [
+     "16:50",
+     166701.0
     ]
    ]
   },
@@ -688,11 +708,35 @@
     ],
     [
      "16:35",
-     5.4918
+     5.4903
     ],
     [
-     "16:38",
-     5.4913
+     "16:40",
+     5.4873
+    ],
+    [
+     "16:45",
+     5.4872
+    ],
+    [
+     "16:50",
+     5.4862
+    ],
+    [
+     "16:55",
+     5.4862
+    ],
+    [
+     "17:00",
+     5.4908
+    ],
+    [
+     "17:05",
+     5.4902
+    ],
+    [
+     "17:08",
+     5.4915
     ]
    ]
   },
@@ -1555,6 +1599,21 @@
     "dolar30": 0.11
    },
    {
+    "hora": "15:47",
+    "titulo": "Petrobras deve importar 125 mil bpd de diesel no mês para recompor estoques",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS0hqT3ZEWS05TDRiazNvTUNDSlNGNXlPN3J0Rk1EYmJWZVlLcTlLRkJ0UDdVclRwRWp6STNsd1lfb3E5YkNvVHdhdDdwX0RNMjFvLUpMUkxOWE16WUdJM1dnX1l3WXN4cEpEd1ZWOFpCODc4d2hhaDFudFlxX1dTa2tuazVNcnBuall0X3hJQmpIenhxcDFfR2MtYnhTTlF1bFBWYzJka1U3TFhGNVVTZg?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": 0.13,
+    "dolar30": -0.12
+   },
+   {
     "hora": "15:49",
     "titulo": "Ouro alcança o maior nível em duas semanas com cautela em Wall Street",
     "fonte": "Money Times",
@@ -1577,7 +1636,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.05,
     "dolar30": -0.07
    },
    {
@@ -1590,8 +1649,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.12,
+    "dolar30": -0.02
    },
    {
     "hora": "16:23",
@@ -1607,36 +1666,26 @@
      "ITUB4",
      "VALE3"
     ],
+    "ibov30": 0.05,
+    "dolar30": -0.04
+   },
+   {
+    "hora": "16:56",
+    "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468036",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Caruso, do Santander: barra para novos cortes da Selic agora parece ser alta",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYlpvVDZraFNIQTYxbHc4ZENqQ2RjcVpnV3dscjluRVE1NnU3ZlR0eXZvc0I4eXhaeVNKQmZfY2VoSTAxLUgxbkJSV3pkQWVJTGtBWDZYOEdMYW9fclBRVFdBNGxoa0RBVi1STVR4dWdCcFdVUEdndnJSV093Tk4zWnZ2eERfbDZndzF3ODVRU0szTG5XNUNEM2R2VkdrV293d0VPUUY1bDhjOHpLeTdQNUplNExRTkhySF96UEtvSmo3V1ZDcmdfam5uN1lTV1UxR3dTbHJR0gHkAUFVX3lxTE1qMW5LcmY4TUFGckZhYUNBbHNfN3JmVTF0a2JlelA5akJ6aGdaa2dYVnJvcUQ5anFRRGxaclVuelBkdHlHQTZ3WE9vQlpMZzdWaDZwNDNKRVZELVVZd0UzaG5makQtcVNOWTcyQ3NNWWNEa2t5NklyNkFoUVpQODJ4N2pWaVZBakdoZGRMaDBfMDktR1k5VlZYYm1jRTc3VXcyY3pzNXp3MGdtaUJwcG5YYW9PclB3dlA2SkNpdFVVMkNtSVgwRUo2M3BEUVhnN2lYNXRtRmhtdDBNR2hHcXN4bjRVSg?oc=5",
-   "publicado": "2026-11-05T06:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Caruso, do Santander: barra para novos cortes da Selic agora parece ser alta",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNajFuS3JmOE1BRnJGYWFDQWxzXzdyZlUxdGtiZXpQOWpCemhnWmtnWFZyb3FEOWpxUURsWnJVbnpQZHR5R0E2d1hPb0JaTGc3Vmg2cDQzSkVWRC1VWXdFM2huZmpELXFTTlk3MkNzTVljRGtreTZJcjZBaFFaUDgyeDdqVmlWQWpHaGRkTGgwXzA5LUdZOVZWWGJtY0U3N1V3MmN6czV6dzBnbWlCcHBuWGFvT3JQd3ZQNkpDaXRVVTJDbUlYMEVKNjNwRFFYZzdpWDV0bUZobXQwTUdoR3FzeG40VUrSAeQBQVVfeXFMTWoxbktyZjhNQUZyRmFhQ0Fsc183cmZVMXRrYmV6UDlqQnpoZ1prZ1hWcm9xRDlqcVFEbFpyVW56UGR0eUdBNndYT29CWkxnN1ZoNnA0M0pFVkQtVVl3RTNobmZqRC1xU05ZNzJDc01ZY0Rra3k2SXI2QWhRWlA4Mng3alZpVkFqR2hkZExoMF8wOS1HWTlWVlhibWNFNzdVdzJjenM1encwZ21pQnBwblhhb09yUHd2UDZKQ2l0VVUyQ21JWDBFSjYzcERRWGc3aVg1dG1GaG10ME1HaEdxc3huNFVK?oc=5",
-   "publicado": "2026-11-05T06:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Agenda econômica: o que pode mexer com a Bolsa e o dólar nesta quinta-feira (5)",
    "fonte": "Money Times",
@@ -2544,6 +2593,19 @@
    ]
   },
   {
+   "titulo": "Petrobras deve importar 125 mil bpd de diesel no mês para recompor estoques",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS0hqT3ZEWS05TDRiazNvTUNDSlNGNXlPN3J0Rk1EYmJWZVlLcTlLRkJ0UDdVclRwRWp6STNsd1lfb3E5YkNvVHdhdDdwX0RNMjFvLUpMUkxOWE16WUdJM1dnX1l3WXN4cEpEd1ZWOFpCODc4d2hhaDFudFlxX1dTa2tuazVNcnBuall0X3hJQmpIenhxcDFfR2MtYnhTTlF1bFBWYzJka1U3TFhGNVVTZg?oc=5",
+   "publicado": "2026-11-05T15:47-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Ouro alcança o maior nível em duas semanas com cautela em Wall Street",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOEFsS1RuekdtQTFHdnA5cVdjUnhnTkxPeU5zSTZORjFCbTJ3MTE2aGNXNGlEckhKSk9nRXVKQWdRbjNwaUZYa3VHWXVDSHNfcWFQcGJmWmhfclY2b05XUmVERHZhTGdxdVBLSWllRHJ4UmgtbVZTX0pvck1HRUg0Zno3NVowWVBQY0FTVkM1b0dBa0hQREdRTWFsZTRROWVnc04zZm9RTl8?oc=5",
@@ -2590,6 +2652,18 @@
     "ITUB4",
     "VALE3"
    ]
+  },
+  {
+   "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468036",
+   "publicado": "2026-11-05T16:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2619,7 +2693,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T16:38-03:00",
+ "atualizado_em": "2026-11-05T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2633,6 +2707,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468036",
+   "publicado": "2026-11-05T16:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Alerta para dividendos: Itaú BBA tira Vale (VALE3) e Copel (CPLE3) da carteira; veja quem entrou",
    "fonte": "Money Times",
@@ -2693,18 +2779,6 @@
    "tickers": []
   },
   {
-   "titulo": "Juros longos oscilam após decisão do Copom e de olho em política fiscal",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZi1JU0pTb2ItQVdOdVBJQlVSRUdfaTFjUDRkX0tZT2ZUOXlBOGI0M2huNDRBV1F5UDVYX3N3SlNHdWZSbzZuZHF3R19rMUFBTUdQdVRTZ2t6UXI3NGwtQ21UMjNsYkxDMTdSV1NmbXZwc2ZMWkZYem42UUE3UThlVHVublFNVGxwek1QaTBrd2g?oc=5",
-   "publicado": "2026-11-05T15:58-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ouro alcança o maior nível em duas semanas com cautela em Wall Street",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOEFsS1RuekdtQTFHdnA5cVdjUnhnTkxPeU5zSTZORjFCbTJ3MTE2aGNXNGlEckhKSk9nRXVKQWdRbjNwaUZYa3VHWXVDSHNfcWFQcGJmWmhfclY2b05XUmVERHZhTGdxdVBLSWllRHJ4UmgtbVZTX0pvck1HRUg0Zno3NVowWVBQY0FTVkM1b0dBa0hQREdRTWFsZTRROWVnc04zZm9RTl8?oc=5",
@@ -2727,6 +2801,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras deve importar 125 mil bpd de diesel no mês para recompor estoques",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS0hqT3ZEWS05TDRiazNvTUNDSlNGNXlPN3J0Rk1EYmJWZVlLcTlLRkJ0UDdVclRwRWp6STNsd1lfb3E5YkNvVHdhdDdwX0RNMjFvLUpMUkxOWE16WUdJM1dnX1l3WXN4cEpEd1ZWOFpCODc4d2hhaDFudFlxX1dTa2tuazVNcnBuall0X3hJQmpIenhxcDFfR2MtYnhTTlF1bFBWYzJka1U3TFhGNVVTZg?oc=5",
+   "publicado": "2026-11-05T15:47-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Ibovespa Hoje Ao Vivo: Bolsa recua na esteira de Wall Street; VALE3 sobe",
@@ -2767,19 +2854,6 @@
    "tickers": []
   },
   {
-   "titulo": "Petrobras prevê importar 125 mil barris de diesel por dia em novembro para repor estoques",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petrobras-preve-importar-125-mil-barris-de-diesel-por-dia-em-novembro-para-repor-estoques.shtml",
-   "publicado": "2026-11-05T15:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "O que está por trás da queda da Porto (PSSA3)? Conta dos calotes chega, com provisões 48% maiores e mudança no guidance",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalpBbzh3RkxmaTFPdVlLWnh3MUoyTFJHMGhTLUxtYWFDbXVfckVKV1VHWUtGVEgzTzZFTEFoRjhUMXZVVGhmeHh0OHB5RFBYM3pVcVB1Zjk5bEs0ZlQ1UHUxS05ITXpjTnVOOVl1RXJJMkNUY0NIUkRjVzg2cElKNEFHZHBBd1BoMEdzQlNhTlBUYkJmekxPUnVwZUxTRnZnNHhIVTFYZi1TOHozRTF5RGNPRG8xUFRLcThtLW1JbmZtOWJfNHBkV045ZE9lUEdHd0FpZ0k3T1kyY0NkV3IyV3VLMjZzQWNmRTBsV2ZMdFU?oc=5",
@@ -2791,18 +2865,6 @@
    "tickers": [
     "PSSA3"
    ]
-  },
-  {
-   "titulo": "China incentiva ETFs de bancos para atrair investidores na Bolsa",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468028",
-   "publicado": "2026-11-05T13:40-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
