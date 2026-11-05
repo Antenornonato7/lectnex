@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T12:38-03:00",
+  "atualizado_em": "2026-11-05T12:40-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -119,11 +119,11 @@
     ],
     [
      "12:20",
-     167071.0
+     167040.0
     ],
     [
-     "12:23",
-     167101.0
+     "12:25",
+     166958.0
     ]
    ]
   },
@@ -304,11 +304,11 @@
     ],
     [
      "12:35",
-     5.474
+     5.4761
     ],
     [
-     "12:38",
-     5.4732
+     "12:40",
+     5.4755
     ]
    ]
   },
@@ -796,7 +796,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.33,
+    "ibov30": -0.35,
     "dolar30": 0.21
    },
    {
@@ -813,7 +813,7 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": -0.42,
+    "ibov30": -0.43,
     "dolar30": 0.12
    },
    {
@@ -828,7 +828,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.01
+    "dolar30": 0.03
    },
    {
     "hora": "12:12",
@@ -842,7 +842,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": 0.02
    },
    {
     "hora": "12:22",
@@ -852,6 +852,20 @@
     "impacto": "alto",
     "ativos": [
      "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:24",
+    "titulo": "Ibovespa opera volátil, em meio à queda em NY e cautela fiscal, apesar de commodities",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQWpSUXRmQkhmd3p3bFZwaHJkdE9WX1Z3WVFlSkJfSDZzT243QkhLSGNnOGlWX3ZHd1c3RWNQTU1KXzVFazI5Vk9aMzZvRGY4SXJhZnA5dkg4TFJwRTlLYjE0RmlscUtfR1A5U0gwclhnX3VhV29GU1l3YTlwakE0dmhCc3YwNVB1NWRXLTNObk13N2dva1ZwZ3ppNTIzV0FYVzNJUnRmZGFHYWwtNTYwNURteTYwREV6ZFBnWUJKVdIBxAFBVV95cUxPLUctTFNVSHMxcVhtUVl1eUpKWlJ0MDdWT2I1VGRhYmpuZEVyOG00NEVBRzhwY21hRnJEUGJnUnU4NkNPYzNsRmw2RVh0RDlyNTFfdFFUUHJILWF4b010dWdXcm1xLWh0Sm5HUHNpZ0VIcERwNUZLM3ZjQUZCNE94MU1LeEZ4ZlVuZ1N1QVJaUTRJZF9hYktXLU5ZeW9SVkVmaGpWNVozVVBZTG90Y1I4bDQwSUJiSkw3M0pzWTBKQkNvRm13?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
      "DI"
     ],
     "tickers": [],
@@ -1799,6 +1813,18 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa opera volátil, em meio à queda em NY e cautela fiscal, apesar de commodities",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQWpSUXRmQkhmd3p3bFZwaHJkdE9WX1Z3WVFlSkJfSDZzT243QkhLSGNnOGlWX3ZHd1c3RWNQTU1KXzVFazI5Vk9aMzZvRGY4SXJhZnA5dkg4TFJwRTlLYjE0RmlscUtfR1A5U0gwclhnX3VhV29GU1l3YTlwakE0dmhCc3YwNVB1NWRXLTNObk13N2dva1ZwZ3ppNTIzV0FYVzNJUnRmZGFHYWwtNTYwNURteTYwREV6ZFBnWUJKVdIBxAFBVV95cUxPLUctTFNVSHMxcVhtUVl1eUpKWlJ0MDdWT2I1VGRhYmpuZEVyOG00NEVBRzhwY21hRnJEUGJnUnU4NkNPYzNsRmw2RVh0RDlyNTFfdFFUUHJILWF4b010dWdXcm1xLWh0Sm5HUHNpZ0VIcERwNUZLM3ZjQUZCNE94MU1LeEZ4ZlVuZ1N1QVJaUTRJZF9hYktXLU5ZeW9SVkVmaGpWNVozVVBZTG90Y1I4bDQwSUJiSkw3M0pzWTBKQkNvRm13?oc=5",
+   "publicado": "2026-11-05T12:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Selic em 13,75% até meados de 2028? Goldman vê BC sem espaço para cortar juros em 2027",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMnltUlVhcGZHajJITDZRc0tZYnBhTzN6enlRZXYzUlhBTml3TTBGLTFBTFR0YU80Sm5nSWZIUm9PLXR0d2d0S0tkeEZ5Z1YwUG94OE9WdkhTUVFaMnlURDNKcVpRN3hNWE5LOWVMQmM0anJkbTRWV05MRnpmU2llWW43YXlZQWxsckFhYzRndXlscEkwTVM3TWQ5MWhsM0h2R05JSEpRa3VtaTQtQUdpb25DMER3YmxUb2pj?oc=5",
@@ -1851,7 +1877,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T12:38-03:00",
+ "atualizado_em": "2026-11-05T12:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1899,6 +1925,18 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa opera volátil, em meio à queda em NY e cautela fiscal, apesar de commodities",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQWpSUXRmQkhmd3p3bFZwaHJkdE9WX1Z3WVFlSkJfSDZzT243QkhLSGNnOGlWX3ZHd1c3RWNQTU1KXzVFazI5Vk9aMzZvRGY4SXJhZnA5dkg4TFJwRTlLYjE0RmlscUtfR1A5U0gwclhnX3VhV29GU1l3YTlwakE0dmhCc3YwNVB1NWRXLTNObk13N2dva1ZwZ3ppNTIzV0FYVzNJUnRmZGFHYWwtNTYwNURteTYwREV6ZFBnWUJKVdIBxAFBVV95cUxPLUctTFNVSHMxcVhtUVl1eUpKWlJ0MDdWT2I1VGRhYmpuZEVyOG00NEVBRzhwY21hRnJEUGJnUnU4NkNPYzNsRmw2RVh0RDlyNTFfdFFUUHJILWF4b010dWdXcm1xLWh0Sm5HUHNpZ0VIcERwNUZLM3ZjQUZCNE94MU1LeEZ4ZlVuZ1N1QVJaUTRJZF9hYktXLU5ZeW9SVkVmaGpWNVozVVBZTG90Y1I4bDQwSUJiSkw3M0pzWTBKQkNvRm13?oc=5",
+   "publicado": "2026-11-05T12:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "DI"
    ],
    "tickers": []
@@ -1964,19 +2002,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Tenda (TEND3) lidera quedas do Ibovespa após 3T26: bancos ligam alerta, mas veem potencial para a ação triplicar",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaFBrbFRnVFFRTnhCOUZPN1YxcU9VMWJfNDRhb0VfSVVmSEdjNng2SzdDRjVETXJwZ2pGbTZoa0RrN0JBUTB4SVZXNmp5ZDh4c0VHajREX241cE5MZEJTQUhMZGU3d184dmFaaTktYXhVam81RTBHMEUzdjI3TGMxWjI3d2t3bkNfZU5TeExaT29zMGhBd0ZRWUZSUFNqdjZ2LVdtREE3MHVWTnltNjI4TGhfVTJQa1I3SG1IX252bEh0Yl9OSjhYUkVEOGZ3NXYybzdFeFhBQ1pZNWtLM01rUUR0Xy1rM0J4QS1udVdxZGU?oc=5",
-   "publicado": "2026-11-05T11:28-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "TEND3"
-   ]
   },
   {
    "titulo": "Economistas veem pausa prolongada no ciclo de cortes de juros após decisão do Copom",
