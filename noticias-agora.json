@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T11:50-03:00",
+  "atualizado_em": "2026-11-05T11:53-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -83,7 +83,11 @@
     ],
     [
      "11:35",
-     168473.0
+     168310.0
+    ],
+    [
+     "11:37",
+     168200.0
     ]
    ]
   },
@@ -228,7 +232,11 @@
     ],
     [
      "11:50",
-     5.457
+     5.4663
+    ],
+    [
+     "11:52",
+     5.4651
     ]
    ]
   },
@@ -645,7 +653,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.29,
+    "ibov30": -0.39,
     "dolar30": 0.43
    },
    {
@@ -1583,7 +1591,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T11:50-03:00",
+ "atualizado_em": "2026-11-05T11:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1618,6 +1626,18 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "IBGE abre seleção com 27.279 vagas temporárias para o Censo Agropecuário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ibge-abre-selecao-com-27279-vagas-temporarias-para-o-censo-agropecuario.shtml",
+   "publicado": "2026-11-05T11:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1719,19 +1739,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/raizen-muda-ticker-na-b3-apos-reclassificar-acoes-preferenciais-em-meio-a-recuperacao-extrajudicial.shtml",
-   "publicado": "2026-11-05T10:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
   },
   {
    "titulo": "Juros longos sobem após decisão do Copom e de olho em política fiscal",
