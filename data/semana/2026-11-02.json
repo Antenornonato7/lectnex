@@ -216,7 +216,8 @@
    "nota": "Mercado espera início de ciclo de alta de juros.",
    "anterior": "3,75%",
    "consenso": "4,00% (alta)",
-   "tipo": "boe"
+   "tipo": "boe",
+   "resultado": "4,00% (alta)"
   },
   {
    "data": "2026-11-05",
@@ -230,7 +231,12 @@
     "win": "volatil",
     "di": "volatil"
    },
-   "tipo": "producao-industrial"
+   "tipo": "producao-industrial",
+   "resultado": "−0,8%",
+   "surpresa": {
+    "direcao": "abaixo",
+    "reacao": "Atividade mais fraca que o esperado costuma reforçar apostas de juros menores, pressionando as taxas do DI para baixo; o efeito no WIN e no WDO tende a ser pequeno e diluído pelo cenário externo."
+   }
   },
   {
    "data": "2026-11-05",
@@ -243,7 +249,8 @@
    },
    "anterior": "194 mil",
    "consenso": "195 mil",
-   "tipo": "seguro-desemprego"
+   "tipo": "seguro-desemprego",
+   "resultado": "189 mil"
   },
   {
    "data": "2026-11-05",
