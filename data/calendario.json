@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-05T08:10:00-03:00",
+  "atualizado_em": "2026-11-05T12:55:00-03:00",
   "eventos": [
     {
       "data": "2026-11-05",
@@ -9,13 +9,16 @@
       "importancia": 2,
       "anterior": "−0,6%",
       "consenso": "−0,1%",
-      "resultado": null,
+      "resultado": "−0,8%",
       "impacto": {
         "win": "volatil",
         "di": "volatil"
       },
       "tipo": "producao-industrial",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "abaixo",
+        "reacao": "Atividade mais fraca que o esperado costuma reforçar apostas de juros menores, pressionando as taxas do DI para baixo; o efeito no WIN e no WDO tende a ser pequeno e diluído pelo cenário externo."
+      }
     },
     {
       "data": "2026-11-05",
@@ -25,7 +28,7 @@
       "importancia": 2,
       "anterior": "3,75%",
       "consenso": "4,00% (alta)",
-      "resultado": null,
+      "resultado": "4,00% (alta)",
       "impacto": {
         "wdo": "volatil"
       },
@@ -41,7 +44,7 @@
       "importancia": 1,
       "anterior": "194 mil",
       "consenso": "195 mil",
-      "resultado": null,
+      "resultado": "189 mil",
       "impacto": {
         "wdo": "volatil"
       },
