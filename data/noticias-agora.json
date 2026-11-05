@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T17:08-03:00",
+  "atualizado_em": "2026-11-05T17:38-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     166701.0
+     166659.0
+    ],
+    [
+     "16:55",
+     166656.0
+    ],
+    [
+     "17:00",
+     166468.0
     ]
    ]
   },
@@ -732,11 +740,35 @@
     ],
     [
      "17:05",
-     5.4902
+     5.4938
     ],
     [
-     "17:08",
+     "17:10",
+     5.4962
+    ],
+    [
+     "17:15",
+     5.4937
+    ],
+    [
+     "17:20",
+     5.4953
+    ],
+    [
+     "17:25",
+     5.4948
+    ],
+    [
+     "17:30",
+     5.4908
+    ],
+    [
+     "17:35",
      5.4915
+    ],
+    [
+     "17:38",
+     5.4918
     ]
    ]
   },
@@ -1640,6 +1672,21 @@
     "dolar30": -0.07
    },
    {
+    "hora": "16:04",
+    "titulo": "Vibra Energia surpreende com queda da dívida e leva BB-BI a mudar recomendação para ações",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQLTR6V19ZNUlsbVkybmpVR3daNU02MW5zRTBUZGs1dzQ2c2M1b0xSRmVHLUdENTcwOC1yTkYtc1MzMDNtdDBOdE1tb1U2U3h5VkFqclF2LWlmcmtBdFYwWFVJTHJIWVlKUE1jWk9EY2liVlhUYk9zMGlhYnBnVk5XN21ucWJwWm5ESEZ4V3Ewa3ZiaTQyQjh6WTh4enhCZXJOQ1g5ZnpMM3FLeWQ2TktKRTQxSURNOVYyRWxodlV6SnRNWHJxWkFXbElWMGZsVEh6T3RJRU54QXdJVjjSAeABQVVfeXFMTm95Zy1rUlZWOW96ZXhjaWtYa1FqNHY5V0hGV1dkdURNLTNzbXU4STRXY3FNX0NBU0xuZFlzYUMyNU5VN08zV3YxdmZ1VFhpU2tYR2VIS0t6RVBkMjQ1Sy1rdEN0WW41bnNEUmZ4a1RUajVkeXdtaUIzRjlHakJjQVcyYmFlelJlX2VJSHZ4VHVYR0F0R0x2d3RHd3o5cTh3VUlOeUFjQXRxTFU3bWtUZ1lRNEE5a2xOVTVyY2I4QU4xXzlmU1NEQ3FfckdkS3Q1SkV0T0NKb0pRcnRFTThLQjU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "VBBR3"
+    ],
+    "ibov30": -0.05,
+    "dolar30": -0.07
+   },
+   {
     "hora": "16:20",
     "titulo": "Estouro da bolha de IA pode tirar do dólar status de refúgio, diz TS Lombard",
     "fonte": "Valor",
@@ -1666,8 +1713,22 @@
      "ITUB4",
      "VALE3"
     ],
-    "ibov30": 0.05,
+    "ibov30": 0.02,
     "dolar30": -0.04
+   },
+   {
+    "hora": "16:42",
+    "titulo": "Focus: expectativa para dólar dispara após eleição; mercado eleva projeções para inflação e Selic",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQNzctRmdVZlNDUjJCUXEyUk5BajB6SHdIMmJ6TjZwcjNfNTNvMnZ1ZEVhRzEwV0EzUFpQRUl1aWI4eTY5dkZDd2ZQTk9HM2x2NTc0Njk3Nzd0c3J6LWZwS0Vvay01WHpaQ202UHFoXzZYLUdNZ0JGQnlEczYybnV3X0lNbzZ2WFEtVjRkMlFKUl9FTTRtbFZCR2VZOWtwY0lNdGhNRnNZRXhmbVZCMnFlWjlNaWNkell6Y0U5Y2xrTDRPZlN4cXF0OHNrcEhZWTMwaE16VmZ2NE1nWG8tWEs0MFAxakJfRU0?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.16
    },
    {
     "hora": "16:56",
@@ -1681,95 +1742,78 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": 0.16
+   },
+   {
+    "hora": "17:06",
+    "titulo": "How Wall Street's postelection rally got obliterated — and what's next",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/investingclub/2026/11/05/how-wall-streets-postelection-rally-got-obliterated-and-whats-next.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.04
+   },
+   {
+    "hora": "17:08",
+    "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.04
+   },
+   {
+    "hora": "17:10",
+    "titulo": "O que é o Copom e como ele funciona?",
+    "fonte": "Folha",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSUI4aEhSMHk1UFlLMFhZamUzVnA5Zkh4VlczdTUzd3pUNFRnU0Z1TWRjWXVyWmpienRCMEpxLTdLbXRHQkpRTEQ2UUtTVVlWM1psallPblBvbkNMU0VUVHRERDhyWGhQWFJhenV5N0c2YnI2UHNyMEI2ZktaaEpaN1dZclItR19fTkc5WkdDaWVHU2RUUldMOGx3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.09
+   },
+   {
+    "hora": "17:19",
+    "titulo": "Dólar avança em dia de cautela global",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQkkwclVYSFBOMmR6Y2VxcFFNeC04NDlYMGRwVFhyYVBsQnV1b1RsakpUVHctRU42ZU1yTUtiYVR6dDBzUGpDc2lLQWFpNGs0LVZyc1Bpb0NBWEV5ZTU1LVVxemdpUHVhZXNGeC1ndXZjWjgwMy1aekphZ2lRMUU5bmdVSkFGdXVmRWlOOTNxOGM5cUczTTFCS0ZEY9IBqgFBVV95cUxOdFlpVURfNDJuRlJOdWE5UUlRbGlacDRMWDRCZ3VJekVXV19vMDBXZG94VllBQjNMbld6M2hUTU4teDdHYVZDLTJnTkI1ZFlwYmIxLTdqbTNKZW16aEJPd3RhTXlwMnVDd1U2SnBBbnlnemVuTFNiZjd1ZV9EVmJFQ0NSS2tKMGlQb2RRTlJMcEFGNkh6R1RFVGswd0ViQjFUVktCdTRMNUV4Zw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:35",
+    "titulo": "Dólar fecha em alta de 0,68%, a R$ 5,48, após decisão do Copom",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQS3Nzd0w2aGRZOEczeVE5MXZCREIzeTVPUGVPV0hBU1ptV0U2WjJKMVdtbFUtSlJndVlXRU1yZUNvcXY0amxpOXZ1ek51UFZhWmk5NGF6NDBkY0RZRnNOXzNLNkRGeTJpNlp1bTZ2X2hnYWZvenJtbGVTNUF0Y3NtVEZvSXdnR0FMcTNWVFhiUTRadWlaRFhB?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Agenda econômica: o que pode mexer com a Bolsa e o dólar nesta quinta-feira (5)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNWozQXBFSDZVaThKTUNMN2YyWVZoSkxnWDNfaDZvRVl0ZC1RQmtWVXo0RHFncTFJQXN5QXZhbXRIS2I3cnBlV0k4OUhBN2lrdUdLM0pYdzI2c0Q1eVAtY3Bxc2RTTVBKbjVUbGRJRzNtdlhUT3NGOXJqcTJxQ2FVWkFXa3FXWW5uWmZqQ0VCMEJmY2Z5d1NQQnEtX1QtWURWTktHVFJPR2FudmowSWM2OTl3?oc=5",
-   "publicado": "2026-11-05T06:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Itaú (ITUB4) reage ao tombo pós-eleição: ação pode voltar aos R$ 45?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbzB4Y2I2eGF4ZjVleDhWN25MWDdrQ0FwZ2FjYmh1MnN4Vlh0UVhqdHVlUlM3WWV0ZHRfTThBaXhYRWVmU3BuYzVEaWZFenMxZzdxWkQ5cnEwYzlSSXRDRW5DbUVqcWNHT044bXpuYUJXSXkyXzRGcHJyLVIxUmE3dE9wNHdKaDlyUThwX3R6ZmpEbFNXRTZOcNIBngFBVV95cUxPRmxMNHl1b3RXajFlU2d3allIbnkyQkxLRGZmRkM1TndBOW9fRGRkLVlxeTZiWmh3VmhNcXUzTHVpWWtsWS0tYklMNEpxVHNraWgtNkhUV243Y2RGajdTYzhMbXFVMmtmQV9JcEhvX29JZlExSGh3RkZGTmYyR1FReDJ1WVU1QmpCR2sxNmI3X203aGxQcmlNZjJBNlpTUQ?oc=5",
-   "publicado": "2026-11-05T07:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
-  {
-   "titulo": "Day Trade hoje (05): Ibovespa interrompe quedas; alta pode continuar?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNay1ONHNZaWMtLU9teG5rTkFaTnhTMWdBUkpRUXdQWFpIaC1VVHdCalN3UlFqTXA0M1NYaTQ4LUpxM2ZIdEFXbjhBV05BbFBKZGNUMFlqUmREOHdmd0FmSlhBZzVnemdyZ1pVX3hvanhqNGpoOV9mU2FUZTAyb0F6THJxYlVlOWNx0gGOAUFVX3lxTE0xbzlSOWtuaEJYVFM1elllbFJHM2huYkdhNERWLUtzZGxyM0Z4WmktOWFscmRpQ1lidGpKYlVxNnQ0NFhHaVA4empXbEF4RzRwcUVrdGVtQkk1WmhwY09jdU5QcWxGZTJBNWVFby1ibjZEWENZQ1ZVd2tmZEw4dndCWk5oWVlsMEI3ZC1rQ2c?oc=5",
-   "publicado": "2026-11-05T07:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mini-índice (WINZ26) busca confirmar reação após seis quedas do Ibovespa",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbTJ0SUNtakkyV3lCbGJjamZiQWxrMmVzVkZ4dGdaVUhMX3hDeHdYeVM3eF9kbHRkSUtMRDNhN2RReUhKTkdTc2NkLWJKdlMwRTZRbVBjV21LSThXZjZFeDlYTDRKMkVINnVONnBEeFVMbWxVUVRHZHM1bDVZTGJSYVVVbmU0OEN4Nm9NNVVZUnfSAZYBQVVfeXFMUHpNaUxySXZOODA0R1RwdlpPeGJPRk1maG45cTdCZjdBT0locmV0Rm5RUmd0N0xtTzV2MUpRV2tURDBuQWkzMFRTR1lPaWtwTUdKbmVrV0lpRnNFSUdOc2hVazhCSUhQYlMzeGtFQ3FlNjhaN1J4MmlOWkRyVWJQc25lNDdCV3hwUHcxc2cwWjdfLXgtZEx3?oc=5",
-   "publicado": "2026-11-05T07:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Copom pausa cortes e bolsa ainda surfa 'onda azul' nos EUA; Ibovespa em dólar sobe nesta quinta-feira (5)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNTN2LTVXSTVuSHRxdFF2Zks3Y01FdFd4T3g3aHRiMzhNMGhibTZhUkVsd0lxdXlTck1mQ1MzeFYtbC12VV9XN1NIcTFnLVFya0wxakVMUlg5dEF4d1QzNU0xeUN0MUNCWVE3YVJEZ3RFd0RLOFR6ZkNyZjBHeU5zTEdpUE52Q3FkNGljMnphT0JpdEhzLWE5MXFRYzNZdXZSSFAtSWlQc05PTU5jNlplT196aFNpUUMxVjlmRnA3T2xob0lVdUZIcjh4Y0Zqc1d2VGc?oc=5",
-   "publicado": "2026-11-05T07:09-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "AZUL4"
-   ]
-  },
-  {
-   "titulo": "Minidólar (WDOZ26): mercado avalia fôlego da correção e efeito do Copom",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRTUyV25sMXNaT25kcGRtelNsT29hcDVEdUtqUDlaT1h2d2Ftc1E3T0M1MWd5WFNjMElub0hJR09rWGczUkJ1RTJWNkpnS3VOLWlJX0kzSzczVVg4b3M0akFMZzNPMzB0Z1pzVkc1S0p3dFFUVHhnOUs0dy1UemM1Mm9JS0xWU1NLZGEtNmlR0gGTAUFVX3lxTFAxTkE1S2hiRTN4ZnBlUElTWFNoNmI2ZXpWT0U1bU5UdDl0T1hUSnN6QVhvRVVCMGoxMkV5dVV1Qk1RUFhXcUFvWFJ5VlF4R010NElfc0Y1Tl85UFB5TFdNTzBJTDlYX2pBOVROMVcwd29DZ2FmQVFsdzNJeXNMdzhEQkRCaUt4RTVlT2huZktsWG9LNA?oc=5",
-   "publicado": "2026-11-05T07:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "CNBC's Robert Frank chats live with Brown Harris Stevens CEO Bess Freedman about wealth, real estate, and the 'blue wave'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/cnbcs-robert-frank-talks-with-brown-harris-stevens-ceo-bess-freedman.html",
-   "publicado": "2026-11-05T07:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Vitória democrata nos EUA divide bolsas de NY e pressiona dólar; petróleo em alta após forte queda",
    "fonte": "Estadão",
@@ -2628,6 +2672,19 @@
    "tickers": []
   },
   {
+   "titulo": "Vibra Energia surpreende com queda da dívida e leva BB-BI a mudar recomendação para ações",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQLTR6V19ZNUlsbVkybmpVR3daNU02MW5zRTBUZGs1dzQ2c2M1b0xSRmVHLUdENTcwOC1yTkYtc1MzMDNtdDBOdE1tb1U2U3h5VkFqclF2LWlmcmtBdFYwWFVJTHJIWVlKUE1jWk9EY2liVlhUYk9zMGlhYnBnVk5XN21ucWJwWm5ESEZ4V3Ewa3ZiaTQyQjh6WTh4enhCZXJOQ1g5ZnpMM3FLeWQ2TktKRTQxSURNOVYyRWxodlV6SnRNWHJxWkFXbElWMGZsVEh6T3RJRU54QXdJVjjSAeABQVVfeXFMTm95Zy1rUlZWOW96ZXhjaWtYa1FqNHY5V0hGV1dkdURNLTNzbXU4STRXY3FNX0NBU0xuZFlzYUMyNU5VN08zV3YxdmZ1VFhpU2tYR2VIS0t6RVBkMjQ1Sy1rdEN0WW41bnNEUmZ4a1RUajVkeXdtaUIzRjlHakJjQVcyYmFlelJlX2VJSHZ4VHVYR0F0R0x2d3RHd3o5cTh3VUlOeUFjQXRxTFU3bWtUZ1lRNEE5a2xOVTVyY2I4QU4xXzlmU1NEQ3FfckdkS3Q1SkV0T0NKb0pRcnRFTThLQjU?oc=5",
+   "publicado": "2026-11-05T16:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VBBR3"
+   ]
+  },
+  {
    "titulo": "Estouro da bolha de IA pode tirar do dólar status de refúgio, diz TS Lombard",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdXdhN25qeDlFNmxRaEFpMi1sckFnWGdBandkQng5RmkzZ2V5NW9BZkZDckh1VUtjNERfZmxWM2RhRk52Y2c2cXhDb0ZOcUU1UHpCQUhyYXZXUTN2Z1pNaUpJSGsxaGdkRlFnYUZoRmtwbUhhMFJHMk5hSUlHVExXT1RHbktEMVFqbUpsM1FMSER6TFB4MXBEalBrZ3k2MXZxZVdZVnJjMjY4Vk9FdlVUTTZBT3BpS0pBNVVIdU9RNjZJQmVqV1h3eGNXSdIB2gFBVV95cUxOUDY2Wlk4ZVc1Nk9XQjFnbm9DYld0ZTNsdFJoeTA5cG9rSVZ0dTdwTng5Rjh2cFBqUERWRVpNU3M2RmlpR3lxVFFBV3RLUjZLVXRObjl2NHBSazZEQ3NiNW1OaDloWlJhR1VpRVBKRVBZZGxJbWU0Y2FsRnJ3WjIwMnBYWHVnSWZYVUN3RFE2NXAxUUxNVlZwamFOeGNkXzRjaS12WFNvSEw1bVRZQV9fRWtpNW5NRGJwNERnSy1QMWVPM2E0Q3RDblQ1Qkd0dVVXMnk4eVBHSVVXdw?oc=5",
@@ -2654,10 +2711,79 @@
    ]
   },
   {
+   "titulo": "Focus: expectativa para dólar dispara após eleição; mercado eleva projeções para inflação e Selic",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQNzctRmdVZlNDUjJCUXEyUk5BajB6SHdIMmJ6TjZwcjNfNTNvMnZ1ZEVhRzEwV0EzUFpQRUl1aWI4eTY5dkZDd2ZQTk9HM2x2NTc0Njk3Nzd0c3J6LWZwS0Vvay01WHpaQ202UHFoXzZYLUdNZ0JGQnlEczYybnV3X0lNbzZ2WFEtVjRkMlFKUl9FTTRtbFZCR2VZOWtwY0lNdGhNRnNZRXhmbVZCMnFlWjlNaWNkell6Y0U5Y2xrTDRPZlN4cXF0OHNrcEhZWTMwaE16VmZ2NE1nWG8tWEs0MFAxakJfRU0?oc=5",
+   "publicado": "2026-11-05T16:42-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468036",
    "publicado": "2026-11-05T16:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "How Wall Street's postelection rally got obliterated — and what's next",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/05/how-wall-streets-postelection-rally-got-obliterated-and-whats-next.html",
+   "publicado": "2026-11-05T17:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "publicado": "2026-11-05T17:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "O que é o Copom e como ele funciona?",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSUI4aEhSMHk1UFlLMFhZamUzVnA5Zkh4VlczdTUzd3pUNFRnU0Z1TWRjWXVyWmpienRCMEpxLTdLbXRHQkpRTEQ2UUtTVVlWM1psallPblBvbkNMU0VUVHRERDhyWGhQWFJhenV5N0c2YnI2UHNyMEI2ZktaaEpaN1dZclItR19fTkc5WkdDaWVHU2RUUldMOGx3?oc=5",
+   "publicado": "2026-11-05T17:10-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar avança em dia de cautela global",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQkkwclVYSFBOMmR6Y2VxcFFNeC04NDlYMGRwVFhyYVBsQnV1b1RsakpUVHctRU42ZU1yTUtiYVR6dDBzUGpDc2lLQWFpNGs0LVZyc1Bpb0NBWEV5ZTU1LVVxemdpUHVhZXNGeC1ndXZjWjgwMy1aekphZ2lRMUU5bmdVSkFGdXVmRWlOOTNxOGM5cUczTTFCS0ZEY9IBqgFBVV95cUxOdFlpVURfNDJuRlJOdWE5UUlRbGlacDRMWDRCZ3VJekVXV19vMDBXZG94VllBQjNMbld6M2hUTU4teDdHYVZDLTJnTkI1ZFlwYmIxLTdqbTNKZW16aEJPd3RhTXlwMnVDd1U2SnBBbnlnemVuTFNiZjd1ZV9EVmJFQ0NSS2tKMGlQb2RRTlJMcEFGNkh6R1RFVGswd0ViQjFUVktCdTRMNUV4Zw?oc=5",
+   "publicado": "2026-11-05T17:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em alta de 0,68%, a R$ 5,48, após decisão do Copom",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQS3Nzd0w2aGRZOEczeVE5MXZCREIzeTVPUGVPV0hBU1ptV0U2WjJKMVdtbFUtSlJndVlXRU1yZUNvcXY0amxpOXZ1ek51UFZhWmk5NGF6NDBkY0RZRnNOXzNLNkRGeTJpNlp1bTZ2X2hnYWZvenJtbGVTNUF0Y3NtVEZvSXdnR0FMcTNWVFhiUTRadWlaRFhB?oc=5",
+   "publicado": "2026-11-05T17:35-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2693,7 +2819,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T17:08-03:00",
+ "atualizado_em": "2026-11-05T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2707,6 +2833,52 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar fecha em alta de 0,68%, a R$ 5,48, após decisão do Copom",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQS3Nzd0w2aGRZOEczeVE5MXZCREIzeTVPUGVPV0hBU1ptV0U2WjJKMVdtbFUtSlJndVlXRU1yZUNvcXY0amxpOXZ1ek51UFZhWmk5NGF6NDBkY0RZRnNOXzNLNkRGeTJpNlp1bTZ2X2hnYWZvenJtbGVTNUF0Y3NtVEZvSXdnR0FMcTNWVFhiUTRadWlaRFhB?oc=5",
+   "publicado": "2026-11-05T17:35-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "O que é o Copom e como ele funciona?",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSUI4aEhSMHk1UFlLMFhZamUzVnA5Zkh4VlczdTUzd3pUNFRnU0Z1TWRjWXVyWmpienRCMEpxLTdLbXRHQkpRTEQ2UUtTVVlWM1psallPblBvbkNMU0VUVHRERDhyWGhQWFJhenV5N0c2YnI2UHNyMEI2ZktaaEpaN1dZclItR19fTkc5WkdDaWVHU2RUUldMOGx3?oc=5",
+   "publicado": "2026-11-05T17:10-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "AI meltdown: Chip stocks and neoclouds plunge, pushing Nasdaq to worst day since April 2025",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "publicado": "2026-11-05T17:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "How Wall Street's postelection rally got obliterated — and what's next",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/05/how-wall-streets-postelection-rally-got-obliterated-and-whats-next.html",
+   "publicado": "2026-11-05T17:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
    "fonte": "Folha",
@@ -2768,6 +2940,19 @@
    "tickers": []
   },
   {
+   "titulo": "Vibra Energia surpreende com queda da dívida e leva BB-BI a mudar recomendação para ações",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQLTR6V19ZNUlsbVkybmpVR3daNU02MW5zRTBUZGs1dzQ2c2M1b0xSRmVHLUdENTcwOC1yTkYtc1MzMDNtdDBOdE1tb1U2U3h5VkFqclF2LWlmcmtBdFYwWFVJTHJIWVlKUE1jWk9EY2liVlhUYk9zMGlhYnBnVk5XN21ucWJwWm5ESEZ4V3Ewa3ZiaTQyQjh6WTh4enhCZXJOQ1g5ZnpMM3FLeWQ2TktKRTQxSURNOVYyRWxodlV6SnRNWHJxWkFXbElWMGZsVEh6T3RJRU54QXdJVjjSAeABQVVfeXFMTm95Zy1rUlZWOW96ZXhjaWtYa1FqNHY5V0hGV1dkdURNLTNzbXU4STRXY3FNX0NBU0xuZFlzYUMyNU5VN08zV3YxdmZ1VFhpU2tYR2VIS0t6RVBkMjQ1Sy1rdEN0WW41bnNEUmZ4a1RUajVkeXdtaUIzRjlHakJjQVcyYmFlelJlX2VJSHZ4VHVYR0F0R0x2d3RHd3o5cTh3VUlOeUFjQXRxTFU3bWtUZ1lRNEE5a2xOVTVyY2I4QU4xXzlmU1NEQ3FfckdkS3Q1SkV0T0NKb0pRcnRFTThLQjU?oc=5",
+   "publicado": "2026-11-05T16:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VBBR3"
+   ]
+  },
+  {
    "titulo": "Nasdaq cai até 6,4% com receio de que vitória democrata afete boom da IA",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/nasdaq-cai-em-64-com-receio-de-que-vitoria-democrata-afete-boom-da-ia.shtml",
@@ -2775,6 +2960,18 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros longos oscilam após decisão do Copom e de olho em política fiscal",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZi1JU0pTb2ItQVdOdVBJQlVSRUdfaTFjUDRkX0tZT2ZUOXlBOGI0M2huNDRBV1F5UDVYX3N3SlNHdWZSbzZuZHF3R19rMUFBTUdQdVRTZ2t6UXI3NGwtQ21UMjNsYkxDMTdSV1NmbXZwc2ZMWkZYem42UUE3UThlVHVublFNVGxwek1QaTBrd2g?oc=5",
+   "publicado": "2026-11-05T15:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2826,44 +3023,6 @@
    ],
    "tickers": [
     "VALE3"
-   ]
-  },
-  {
-   "titulo": "Wheels Up assina acordo com Embraer para compra de seis jatos Phenom 300E",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468032",
-   "publicado": "2026-11-05T15:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
-  },
-  {
-   "titulo": "Vibra prevê margens acima de níveis pré-guerra nos próximos anos",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNN0Q5VGxPVXpfeXQ5ZlpBOWRPSm9tOXpaMVhnT0tHTno3elhhNHlndHdmM3Y0X2tOLVRRLVpYaXRLVTQ4WTR5U282ZnpOOEs0S0RyRi0yZlFwWjh0bE83SDdiNzVKUVB4WVBjNkpLNVp6QVZIdmg5eFh4VU1UMHdzaENtc1RNOFBHc1ZWeVJ3UlRoaFNkQ2VzWHNjTEJ3MnlfUGc?oc=5",
-   "publicado": "2026-11-05T15:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "O que está por trás da queda da Porto (PSSA3)? Conta dos calotes chega, com provisões 48% maiores e mudança no guidance",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalpBbzh3RkxmaTFPdVlLWnh3MUoyTFJHMGhTLUxtYWFDbXVfckVKV1VHWUtGVEgzTzZFTEFoRjhUMXZVVGhmeHh0OHB5RFBYM3pVcVB1Zjk5bEs0ZlQ1UHUxS05ITXpjTnVOOVl1RXJJMkNUY0NIUkRjVzg2cElKNEFHZHBBd1BoMEdzQlNhTlBUYkJmekxPUnVwZUxTRnZnNHhIVTFYZi1TOHozRTF5RGNPRG8xUFRLcThtLW1JbmZtOWJfNHBkV045ZE9lUEdHd0FpZ0k3T1kyY0NkV3IyV3VLMjZzQWNmRTBsV2ZMdFU?oc=5",
-   "publicado": "2026-11-05T14:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PSSA3"
    ]
   }
  ]
