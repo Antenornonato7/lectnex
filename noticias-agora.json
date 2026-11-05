@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T10:58-03:00",
+  "atualizado_em": "2026-11-05T11:00-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -39,11 +39,11 @@
     ],
     [
      "10:40",
-     168145.0
+     168228.0
     ],
     [
-     "10:43",
-     168290.0
+     "10:45",
+     168295.0
     ]
    ]
   },
@@ -144,11 +144,11 @@
     ],
     [
      "10:55",
-     5.4338
+     5.431
     ],
     [
-     "10:58",
-     5.4346
+     "11:00",
+     5.4314
     ]
    ]
   },
@@ -350,7 +350,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.16,
+    "ibov30": 0.21,
     "dolar30": -0.44
    },
    {
@@ -365,7 +365,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.21,
     "dolar30": -0.36
    },
    {
@@ -379,7 +379,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.08
+    "dolar30": -0.13
    },
    {
     "hora": "10:42",
@@ -424,6 +424,21 @@
     "dolar30": null
    },
    {
+    "hora": "10:50",
+    "titulo": "Ibovespa sobe com Petrobras e alívio nos juros em meio à expectativa sobre política econômica",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUUJmLTAyeXNaU0ZuRV9OOUZ1c3NnaUFJX0Z0STRSQlNuSkRMeXhfTF9QeFpOZGtaVE9ZVmFVN0tGVTBSYTdXM1pSeVlMQk1sek1mS1hqR1I5VmdBRVM4bjdrRXJtaWh6RE9KZXdObkIwdnBEUmpvNXBILVY4ZHIzeGxhelRDaXB3MkdDT1o1TzlNS3ZoanFzY0FZNEJPd1FjU1JMbWhYSVVfaURfXy1HRDhpV3hhUmYyS0FlcTRxaC1IMEQwOFJfUmJBbzUxVUFaeW1jRlRzOVI1TVVya0xYX003M2F0dw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
     "hora": "10:53",
     "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
     "fonte": "Folha",
@@ -435,6 +450,21 @@
     "tickers": [
      "B3SA3"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:58",
+    "titulo": "Ibovespa sobe pelo 2º dia mesmo com pausa do Copom; dólar cai",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOME96bFoyQ2tmbHBVNl94YXowLURxeTN1MHZrZnllQk1WTHJhZjVIMXdqblIxck1WN3JBN1VqT0VLNEx4NURjTGV1blhtazdxT3d1V0p1dzQ5VEdjdzV0dGpzWE5mRWdNNlU5QkE2ZHdHUHk4R0YtQ3lWeFA3aXhQX29kNERWNG1pWjRQa3dTZ2ZOUkdTMk1iZ2t6Yw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1113,6 +1143,19 @@
    ]
   },
   {
+   "titulo": "Ibovespa sobe com Petrobras e alívio nos juros em meio à expectativa sobre política econômica",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUUJmLTAyeXNaU0ZuRV9OOUZ1c3NnaUFJX0Z0STRSQlNuSkRMeXhfTF9QeFpOZGtaVE9ZVmFVN0tGVTBSYTdXM1pSeVlMQk1sek1mS1hqR1I5VmdBRVM4bjdrRXJtaWh6RE9KZXdObkIwdnBEUmpvNXBILVY4ZHIzeGxhelRDaXB3MkdDT1o1TzlNS3ZoanFzY0FZNEJPd1FjU1JMbWhYSVVfaURfXy1HRDhpV3hhUmYyS0FlcTRxaC1IMEQwOFJfUmJBbzUxVUFaeW1jRlRzOVI1TVVya0xYX003M2F0dw?oc=5",
+   "publicado": "2026-11-05T10:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/raizen-muda-ticker-na-b3-apos-reclassificar-acoes-preferenciais-em-meio-a-recuperacao-extrajudicial.shtml",
@@ -1124,6 +1167,19 @@
    "tickers": [
     "B3SA3"
    ]
+  },
+  {
+   "titulo": "Ibovespa sobe pelo 2º dia mesmo com pausa do Copom; dólar cai",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOME96bFoyQ2tmbHBVNl94YXowLURxeTN1MHZrZnllQk1WTHJhZjVIMXdqblIxck1WN3JBN1VqT0VLNEx4NURjTGV1blhtazdxT3d1V0p1dzQ5VEdjdzV0dGpzWE5mRWdNNlU5QkE2ZHdHUHk4R0YtQ3lWeFA3aXhQX29kNERWNG1pWjRQa3dTZ2ZOUkdTMk1iZ2t6Yw?oc=5",
+   "publicado": "2026-11-05T10:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1153,7 +1209,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T10:58-03:00",
+ "atualizado_em": "2026-11-05T11:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1168,6 +1224,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa sobe pelo 2º dia mesmo com pausa do Copom; dólar cai",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOME96bFoyQ2tmbHBVNl94YXowLURxeTN1MHZrZnllQk1WTHJhZjVIMXdqblIxck1WN3JBN1VqT0VLNEx4NURjTGV1blhtazdxT3d1V0p1dzQ5VEdjdzV0dGpzWE5mRWdNNlU5QkE2ZHdHUHk4R0YtQ3lWeFA3aXhQX29kNERWNG1pWjRQa3dTZ2ZOUkdTMk1iZ2t6Yw?oc=5",
+   "publicado": "2026-11-05T10:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Raízen muda ticker na B3 após reclassificar ações preferenciais em meio à recuperação extrajudicial",
    "fonte": "Folha",
@@ -1184,7 +1253,7 @@
   {
    "titulo": "Ibovespa sobe com Petrobras e alívio nos juros em meio à expectativa sobre política econômica",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUUJmLTAyeXNaU0ZuRV9OOUZ1c3NnaUFJX0Z0STRSQlNuSkRMeXhfTF9QeFpOZGtaVE9ZVmFVN0tGVTBSYTdXM1pSeVlMQk1sek1mS1hqR1I5VmdBRVM4bjdrRXJtaWh6RE9KZXdObkIwdnBEUmpvNXBILVY4ZHIzeGxhelRDaXB3MkdDT1o1TzlNS3ZoanFzY0FZNEJPd1FjU1JMbWhYSVVfaURfXy1HRDhpV3hhUmYyS0FlcTRxaC1IMEQwOFJfUmJBbzUxVUFaeW1jRlRzOVI1TVVya0xYX003M2F0d9IB9AFBVV95cUxONVZVNWFoaFV4NkhyYVNjazlMM01zTnRRWHM2XzNKQ2tjUE5TTGN3eVZhMS1nSTNmTWhnTHozNDVIdlZVaFUtWmRPNF9YVGRTTHA5Z3BKU2hzUzVUMms5UGJqNWdHTHFOTjdaNzN3eFB0YkphTHlnZUh5c09ieGU1ZG5JNWxPRWZnQTJfSjNINWZXdVUxRTBzbnR4Njl6U0stZG9ocVdpMFZTSmNWRXRVR05LTXY1V0dLd1JxRnpHTktETll1RmlTUURWQjVpZW55clVjeEdEdGh2UnhxVTVnY2Y0YjhzUll1YUlLU1NRaWlQR3hx?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUUJmLTAyeXNaU0ZuRV9OOUZ1c3NnaUFJX0Z0STRSQlNuSkRMeXhfTF9QeFpOZGtaVE9ZVmFVN0tGVTBSYTdXM1pSeVlMQk1sek1mS1hqR1I5VmdBRVM4bjdrRXJtaWh6RE9KZXdObkIwdnBEUmpvNXBILVY4ZHIzeGxhelRDaXB3MkdDT1o1TzlNS3ZoanFzY0FZNEJPd1FjU1JMbWhYSVVfaURfXy1HRDhpV3hhUmYyS0FlcTRxaC1IMEQwOFJfUmJBbzUxVUFaeW1jRlRzOVI1TVVya0xYX003M2F0dw?oc=5",
    "publicado": "2026-11-05T10:50-03:00",
    "impacto": "medio",
    "ativos": [
@@ -1226,18 +1295,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Chinese AI lab Moonshot turned to Europe for Nvidia Blackwell access amid U.S. China curbs, sources tell CNBC",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html",
-   "publicado": "2026-11-05T10:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
