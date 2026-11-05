@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T12:13-03:00",
+  "atualizado_em": "2026-11-05T12:15-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -99,11 +99,11 @@
     ],
     [
      "11:55",
-     167593.0
+     167613.0
     ],
     [
-     "11:56",
-     167522.0
+     "11:59",
+     167767.0
     ]
    ]
   },
@@ -264,11 +264,11 @@
     ],
     [
      "12:10",
-     5.4737
+     5.4733
     ],
     [
-     "12:11",
-     5.4732
+     "12:14",
+     5.473
     ]
    ]
   },
@@ -714,7 +714,7 @@
     "tickers": [
      "TEND3"
     ],
-    "ibov30": -0.6,
+    "ibov30": -0.59,
     "dolar30": 0.47
    },
    {
@@ -729,7 +729,7 @@
     "tickers": [
      "TOTS3"
     ],
-    "ibov30": -0.6,
+    "ibov30": -0.59,
     "dolar30": 0.47
    },
    {
@@ -773,6 +773,20 @@
     "tickers": [
      "ITUB4"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:12",
+    "titulo": "'Brincadeira de mau gosto' e 'balão de ensaio': o que banqueiros acharam da Selic em 7,5% de Lara Resende",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1650,6 +1664,18 @@
    "tickers": [
     "ITUB4"
    ]
+  },
+  {
+   "titulo": "'Brincadeira de mau gosto' e 'balão de ensaio': o que banqueiros acharam da Selic em 7,5% de Lara Resende",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
+   "publicado": "2026-11-05T12:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1679,7 +1705,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T12:13-03:00",
+ "atualizado_em": "2026-11-05T12:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1694,6 +1720,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "'Brincadeira de mau gosto' e 'balão de ensaio': o que banqueiros acharam da Selic em 7,5% de Lara Resende",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTDNXNG1hZzNrVXY4eWlBQlJtYVBzQS03a080cldPc0VBVlBaTGpLOEdwakFBR1FfNl94ZDZlOFd0TWNzWjBZMVdFZi1YVHBpS1pzUzdPMWtydUcyTzlfRjZ3aU9GSFRobzFHNGttRHBzLVJ3bmUteEhLQ0M4bTRzYXNWVVJ1dTd1bWFLZTU3aUY1akJ6MjZ0MDl0NnlrWE9iR0t0bVJwVG42dzk5UjQ2SFdhNWItamc3UkNISE1zZWFUV25FUGcxYg?oc=5",
+   "publicado": "2026-11-05T12:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Barkin sees interest rate hikes ahead, but at a gradual pace",
    "fonte": "CNBC",
@@ -1810,18 +1848,6 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOdy1kUWNacmgwTHlzeHR4VW9SeG44WVk3R2ZLaDJJWFdodks3YnBFOUticHdzZ1JWVVBvQ0RXMW1jMHFDOVBSV0MtZF8xNFZ2Q284Y3ZMNEs4T2F0eWtQZFFfV1h1aFJ5UWRLYlpSaGg2ZnNoUkFqNUtXazJpd19ZNURaMTZhNjhKNy03Vjc0VGFiWGtLUkxwM0w0MUJubFZud0RDWHNtTDhDeXRNQnkyaGdwbUlZdDJudm5ndDZRZ2FYbzRtdWpkNDNoQmIzWVhPZGlUS056RFYtMGNOOE5v?oc=5",
    "publicado": "2026-11-05T11:08-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Selic ainda em 13,75%: a calculadora que mostra onde investir agora",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMWt6NVI2cGtCeVNWODFtM2FycEZvRGVna3pLNU1Ka1d3MWd6bnlCS1BkNV9lRFJxcGVpeFhsNWtHZlkyMWxVbGt3N0NLUFAwX2Etd2NzNDZPNVcwV0h0VUZFb1dYU3F5eUh6andMeDFBdDIzSEQxYm5FNkFQdmZiOE1oNnlZcnZ1TEMyakZjVXJVMHhRSUwyVGxyOEt3QWpENXVYOW5VT3R5eTVL0gGyAUFVX3lxTE15UWZJbEUxYmVESmdLTXRRWXNUYXhRYndfNUpTbkFXNk1mak1XMzBzaHFreGxkMFl0Y1ppSUdweHFMZnMxVDRma0hGMmtzWmVRXzJtU3ZrSE85X2NXVlNPcHRfTUtlTFlaaUVHR216MFA0bkhGbGdfbXBpSUx6Zm02VEMtTnNyRnVGQUtpV25NZ3I1RjhqT0R0dVBmZkI5bnVBbGxEWlZmUF90dVptei1tRmc?oc=5",
-   "publicado": "2026-11-05T11:00-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
