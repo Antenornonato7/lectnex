@@ -215,7 +215,7 @@
    },
    "nota": "Mercado espera início de ciclo de alta de juros.",
    "anterior": "3,75%",
-   "consenso": "4,00%",
+   "consenso": "4,00% (alta)",
    "tipo": "boe"
   },
   {
@@ -244,6 +244,19 @@
    "anterior": "194 mil",
    "consenso": "195 mil",
    "tipo": "seguro-desemprego"
+  },
+  {
+   "data": "2026-11-05",
+   "hora": "11h10",
+   "pais": "US",
+   "evento": "Fala de Tom Barkin (Fed de Richmond)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Sinais sobre os juros americanos mexem no DXY.",
+   "tipo": "fala-fed"
   },
   {
    "data": "2026-11-06",
@@ -315,6 +328,19 @@
    },
    "nota": "Saldo positivo ajuda o fluxo de dólares para o país.",
    "tipo": "balanca-comercial"
+  },
+  {
+   "data": "2026-11-08",
+   "pais": "BR",
+   "evento": "Pronunciamento de Lula em rede nacional",
+   "importancia": 3,
+   "impacto": {
+    "win": "volatil",
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Segundo o Estadão/Broadcast, deve reafirmar as metas fiscais; reação aparece na abertura de segunda.",
+   "tipo": "pronunciamento-governo"
   },
   {
    "data": "2026-11-08",
