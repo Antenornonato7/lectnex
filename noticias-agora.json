@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T18:25-03:00",
+  "atualizado_em": "2026-11-05T18:28-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -804,7 +804,11 @@
     ],
     [
      "18:25",
-     5.5005
+     5.5027
+    ],
+    [
+     "18:28",
+     5.503
     ]
    ]
   },
@@ -1918,24 +1922,11 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.12
+    "dolar30": 0.16
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Itaú BBA mira IA e data centers em carteira de novembro e encontra aposta em empresa brasileira",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT3pwMHRnTXgwYUwyVUQ1VS1BYTdWZ0kwQ1UtT0U3ZFpia2VhQWV5ZEltWnl1R3JIa1lHS09JdDNCeWc4by0tMU1GaWtvZmM3MHowaXdDSmJVa3g1WklxTTdrSC1pLTE5R0Z1LW9jWlRjNkhVNFNpUk1yZUNsOFZEdzUxalBVclBJTWR3Q29yUHRNU2ZKTzFGYUxyU2hlc1puOE9BVHJEQ0R6eWlENkNnMXhoSW5UdnVfWHRMMTlIbS1Nd9IBxwFBVV95cUxPWl9ZVGxCczdjN0hCVGZGNmR5aFJPY0dDYXNQcjNsTDVvUkstUFlLTlY1TVRrTjdBY1J2RGlKZkt0a1hfQzl6X3Jnekdxb2dqR3htRC1BRlRhdmxOZ0lUb2ZGWFVITXY1T0tmMmRJMWprN0JBSEw3U0VZWXZ3c0JienlEaml1REtMQ1FiQmdjV1hNU1JDYWpUeXlsSmZRWUFPMVlEWEVKUmVGbTlBckJZbGFSc0pBa0Nld0oxWDd5ci04ZHNDbUxn?oc=5",
-   "publicado": "2026-11-05T08:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
   {
    "titulo": "Bank of England hikes for the first time since the Iran war, lifting interest rate to 4%",
    "fonte": "CNBC",
@@ -2901,6 +2892,18 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa recua com tombo de tecnologia em Wall Street e cautela fiscal no Brasil",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbTJHMmJpVTVTbElwMnhJdnd5bjRYdzlnclkxN3ZlVWJWazY1ajRjMkV5ZUswQktKSUdwSFByMTdLQmlVVlJMWU1KUV9nNTFlcjBFWmJJQ21jX2l6OUVLNWJ4dkJlRFN5LUw3WjMtanBEa2lEdUxvVHpIWVhQSHJMbFEzc1NOcGhzUEhWVnVsRzFCOW56VTFYMW1UWW5XclN5LXdJMzZyMXQ2Y2RKbVNLd3dTdXdWeE5TbnZFTHRyV1B4NEt5Z2YyLXhBbHRrVk5xVUJPTQ?oc=5",
+   "publicado": "2026-11-05T18:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2930,7 +2933,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T18:25-03:00",
+ "atualizado_em": "2026-11-05T18:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2944,6 +2947,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa recua com tombo de tecnologia em Wall Street e cautela fiscal no Brasil",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbTJHMmJpVTVTbElwMnhJdnd5bjRYdzlnclkxN3ZlVWJWazY1ajRjMkV5ZUswQktKSUdwSFByMTdLQmlVVlJMWU1KUV9nNTFlcjBFWmJJQ21jX2l6OUVLNWJ4dkJlRFN5LUw3WjMtanBEa2lEdUxvVHpIWVhQSHJMbFEzc1NOcGhzUEhWVnVsRzFCOW56VTFYMW1UWW5XclN5LXdJMzZyMXQ2Y2RKbVNLd3dTdXdWeE5TbnZFTHRyV1B4NEt5Z2YyLXhBbHRrVk5xVUJPTQ?oc=5",
+   "publicado": "2026-11-05T18:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Retail traders dump the most stocks in a single day since Covid sell-off",
    "fonte": "CNBC",
