@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T10:08-03:00",
+  "atualizado_em": "2026-11-05T10:38-03:00",
+  "ibov": {
+   "anterior": 167563.47,
+   "pontos": [
+    [
+     "10:00",
+     167458.0
+    ],
+    [
+     "10:05",
+     167252.0
+    ],
+    [
+     "10:10",
+     167871.0
+    ],
+    [
+     "10:15",
+     167951.0
+    ],
+    [
+     "10:20",
+     168109.0
+    ],
+    [
+     "10:23",
+     168148.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.4583,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.4645
+     5.4644
     ],
     [
-     "10:08",
-     5.4658
+     "10:10",
+     5.4548
+    ],
+    [
+     "10:15",
+     5.4475
+    ],
+    [
+     "10:20",
+     5.4411
+    ],
+    [
+     "10:25",
+     5.4395
+    ],
+    [
+     "10:30",
+     5.438
+    ],
+    [
+     "10:35",
+     5.4335
+    ],
+    [
+     "10:38",
+     5.4342
     ]
    ]
   },
@@ -80,6 +133,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.35
    },
    {
@@ -94,6 +148,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.32
    },
    {
@@ -106,6 +161,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.18
    },
    {
@@ -119,6 +175,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.06
    },
    {
@@ -132,6 +189,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.06
    },
    {
@@ -145,6 +203,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.12
    },
    {
@@ -159,6 +218,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.09
    },
    {
@@ -172,7 +232,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.33
    },
    {
     "hora": "09:48",
@@ -185,7 +246,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.33
    },
    {
     "hora": "09:48",
@@ -198,7 +260,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.33
    },
    {
     "hora": "10:02",
@@ -210,7 +273,8 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.42
    },
    {
     "hora": "10:03",
@@ -223,6 +287,49 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.42
+   },
+   {
+    "hora": "10:14",
+    "titulo": "Durigan vê Selic de 13,75% como 'muito ruim' para a economia e defende condições para queda sustentável",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnR0cmdVZzlhM2lIaXQ2SDc2b2liNDQwcnM5SUFLanRFbFpuQTVrQjU3YTNOMzV1WklZTWh0MXV1Z2hlRHk4Ukl2clQwczZGVEVRZmp5Qnotd3BoSndGcGN2UklQZUdybHJ4dk5obU9jc2hldEUyNVVxbTc1a0x6SkZ0SS1FWmRuMHBOdU5fVWxTYjh3R3o4Nno4RDRCeVFQSmdmaEVCSUdvQncxVFZzLWlWd2JsdUM4N1p0NlhiT3BwUzJ0NU9KdF92bXRYeFA4?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:19",
+    "titulo": "Ibovespa tem leve alta com pausa na Selic; 5 coisas para saber antes de investir hoje (5)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1GRlp1SlN6b2xiOGd4X2dyNW5EdnByYjBqN21tVlM2UGgwSHhnLWpuR0xfc2RsbHZ0V090MnFFTUpzbExhZy1UZ2xUZnNRWG11ellDSF9rc0JyTmFZdU93WGZOMElfcUg5TUNwZFR3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:30",
+    "titulo": "Governo Lula promete projeto para cumprir centro da meta fiscal; o que muda na prática?",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/governo-lula-projeto-centro-meta-fiscal-o-que-muda/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -811,6 +918,42 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Durigan vê Selic de 13,75% como 'muito ruim' para a economia e defende condições para queda sustentável",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnR0cmdVZzlhM2lIaXQ2SDc2b2liNDQwcnM5SUFLanRFbFpuQTVrQjU3YTNOMzV1WklZTWh0MXV1Z2hlRHk4Ukl2clQwczZGVEVRZmp5Qnotd3BoSndGcGN2UklQZUdybHJ4dk5obU9jc2hldEUyNVVxbTc1a0x6SkZ0SS1FWmRuMHBOdU5fVWxTYjh3R3o4Nno4RDRCeVFQSmdmaEVCSUdvQncxVFZzLWlWd2JsdUM4N1p0NlhiT3BwUzJ0NU9KdF92bXRYeFA4?oc=5",
+   "publicado": "2026-11-05T10:14-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa tem leve alta com pausa na Selic; 5 coisas para saber antes de investir hoje (5)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1GRlp1SlN6b2xiOGd4X2dyNW5EdnByYjBqN21tVlM2UGgwSHhnLWpuR0xfc2RsbHZ0V090MnFFTUpzbExhZy1UZ2xUZnNRWG11ellDSF9rc0JyTmFZdU93WGZOMElfcUg5TUNwZFR3?oc=5",
+   "publicado": "2026-11-05T10:19-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo Lula promete projeto para cumprir centro da meta fiscal; o que muda na prática?",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-lula-projeto-centro-meta-fiscal-o-que-muda/",
+   "publicado": "2026-11-05T10:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -840,7 +983,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T10:08-03:00",
+ "atualizado_em": "2026-11-05T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -856,10 +999,34 @@
  ],
  "noticias": [
   {
-   "titulo": "Juros longos sobem após decisão do Copom e de olho em política fiscal",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZi1JU0pTb2ItQVdOdVBJQlVSRUdfaTFjUDRkX0tZT2ZUOXlBOGI0M2huNDRBV1F5UDVYX3N3SlNHdWZSbzZuZHF3R19rMUFBTUdQdVRTZ2t6UXI3NGwtQ21UMjNsYkxDMTdSV1NmbXZwc2ZMWkZYem42UUE3UThlVHVublFNVGxwek1QaTBrd2g?oc=5",
-   "publicado": "2026-11-05T10:03-03:00",
+   "titulo": "Governo Lula promete projeto para cumprir centro da meta fiscal; o que muda na prática?",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-lula-projeto-centro-meta-fiscal-o-que-muda/",
+   "publicado": "2026-11-05T10:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa tem leve alta com pausa na Selic; 5 coisas para saber antes de investir hoje (5)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1GRlp1SlN6b2xiOGd4X2dyNW5EdnByYjBqN21tVlM2UGgwSHhnLWpuR0xfc2RsbHZ0V090MnFFTUpzbExhZy1UZ2xUZnNRWG11ellDSF9rc0JyTmFZdU93WGZOMElfcUg5TUNwZFR3?oc=5",
+   "publicado": "2026-11-05T10:19-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Durigan vê Selic de 13,75% como 'muito ruim' para a economia e defende condições para queda sustentável",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnR0cmdVZzlhM2lIaXQ2SDc2b2liNDQwcnM5SUFLanRFbFpuQTVrQjU3YTNOMzV1WklZTWh0MXV1Z2hlRHk4Ukl2clQwczZGVEVRZmp5Qnotd3BoSndGcGN2UklQZUdybHJ4dk5obU9jc2hldEUyNVVxbTc1a0x6SkZ0SS1FWmRuMHBOdU5fVWxTYjh3R3o4Nno4RDRCeVFQSmdmaEVCSUdvQncxVFZzLWlWd2JsdUM4N1p0NlhiT3BwUzJ0NU9KdF92bXRYeFA4?oc=5",
+   "publicado": "2026-11-05T10:14-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -868,13 +1035,14 @@
    "tickers": []
   },
   {
-   "titulo": "OKX anuncia aplicativo de dólar para brasileiros e cartão internacional",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeURIOUUxZnlrVHB3ZW1UakFmSVk4VlRQS3kxcmxJREhQeVhRZXZ0dlpLdzlJQkl4cFFoVGlKcDd5SFR3Skx3Q0t2VnZCVlR5VVFNbVhoVnZNT1AyTWZ3S1pxejRWbUJIRXBiUUtsd1BGV0NKWUN0Tk5vMTVVMnBCaWtaZUpsS21FWGhUbmxUSUFqYldTTWw4dzl5LWp5ZkxnWkJYaVJyUF8tUQ?oc=5",
-   "publicado": "2026-11-05T10:02-03:00",
-   "impacto": "medio",
+   "titulo": "Juros longos sobem após decisão do Copom e de olho em política fiscal",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZi1JU0pTb2ItQVdOdVBJQlVSRUdfaTFjUDRkX0tZT2ZUOXlBOGI0M2huNDRBV1F5UDVYX3N3SlNHdWZSbzZuZHF3R19rMUFBTUdQdVRTZ2t6UXI3NGwtQ21UMjNsYkxDMTdSV1NmbXZwc2ZMWkZYem42UUE3UThlVHVublFNVGxwek1QaTBrd2g?oc=5",
+   "publicado": "2026-11-05T10:03-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -989,6 +1157,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa tenta sustentar recuperação com Selic a 13,75% e novos balanços no radar",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FnUERhb21uZHN0Y0pxNDNlUEcyTWttU1pqZ1hHNTdLSGNSM2lDMGZOWHBYSFJvcGYyMTR0cEVxNkRsenNpeW9jalgtdkQxWUFGOTJXYXN6X29TM1k1dmo2ZS1NRW9uSFFCVFRhR3gwMUZXUnBoak9IVi1iWVBQZkRxYndaQmJzLWJuT2NEX0RWNXlPcDBiN0UwRVBWTklzaVFtYzZHOElVQmhVMjExdXNUanhybjlJWmlDMVpsU215ay1FS0ljTFRyR2lBLVRkUU9KNtIB2gFBVV95cUxNYTRPLUhjeHgxYzlseTQwNHNVYnY2V0tKWGQ3YXNsd1ZwSlg3WnduRzFyX0dwaDZjYjdpRzc3Vm1LdFdGcG1mZ0lWVUtfbGY2djVfTkdhMXFmNFVXT3RNVXExSFhDZmtSMnJTNktmU09JY1o4VzVuNVdlSU9peHZab0NrYi0tcUk4N1dIQzNKeV85dmsybG81azNLb2NqUzlmeU9JYUxWellzX0s3dXpfZno4YzQzaWRJYV9xRDZCM3luRUVSNGRVSHNBWWU4UFRpLXF0MUtGQzU5UQ?oc=5",
+   "publicado": "2026-11-05T08:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Copom: mercado vê interrupção no ciclo de corte da Selic, mas afasta chance de alta da taxa",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/copom-mercado-interrupcao-corte-selic-afasta-chance-alta-taxa/",
@@ -1005,30 +1186,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
    "publicado": "2026-11-05T08:42-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Manhã no mercado: Sinais fiscais e exterior dividem atenções após manutenção da Selic em 13,75%",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNaF9rSW5tMUQwczBTMS03bGJVOTRCTGNsbGpJeGs5TDc3bzBrNldzU0J0V0lkYTQzcWQ3RDVaYUtqV1ZvT2Y5MC1GaWVLWEtHNUNzcjNJUExuc3VEQl9jd0JaT2U1QV9qUUZ6U1pVSFhaYUJjNGhGREdrUEZlLU9GNFIwa0FfYTdiZThpalBpN05JVVhmelJQeFlFV19OYWZZYUhhYk1xamZBWTQ4ZnQyNHJ4Y2JmcVh5b044NWw3QnQ5MW5kQzBwNV9janhhVU1GVHRRSTdNcWcxXzhqdHlnNjJQOXFNdVhOendDenRR0gH8AUFVX3lxTE9LWGdvVGc2OHl1TmJFd01TR2E2TDdUeTFVd212NXF6OW1iNUZHSS1KSXZ4MXdlcEFyTHBvV0RPT0xqZV9ncmFsWjhZaUZmdVNqbHZHdmRWVkRvY1lHRUE2VmNGWll6Y2h1a09OSC1QeUx0OEJkUTF1eW5FaGpKM2x2VU1wWURUblZzY001ckFKTmJjdG5rN0NqWnRRX0U4eDY3ZWNqQzVxMHBMaDZneFBpT1N6azFOcTZCM0lEempTUWZFdDJkaTVFZ0dCS1NBem1Ja0diQkFfYXRybXE0NlRwRlBXVTZ4NGR6STdlZXRNd2dOTC04R2dlYzE1ZQ?oc=5",
-   "publicado": "2026-11-05T08:20-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ações de empresas de tecnologia desabam na Ásia; Bolsas da China sobem",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468022",
-   "publicado": "2026-11-05T07:42-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
