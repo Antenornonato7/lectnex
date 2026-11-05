@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T18:10-03:00",
+  "atualizado_em": "2026-11-05T18:13-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -792,7 +792,11 @@
     ],
     [
      "18:10",
-     5.5025
+     5.498
+    ],
+    [
+     "18:13",
+     5.4995
     ]
    ]
   },
@@ -1769,6 +1773,20 @@
     "dolar30": 0.16
    },
    {
+    "hora": "17:04",
+    "titulo": "COPOM ACERTOU AO IGNORAR PRESSÕES E NÃO BAIXAR OS JUROS? GRIBEL AVALIA",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSTlTSDN5aVg4OTZieGdjM3pOQXp4UGJIdGVkTGttVWhmaU9Jb1c0bDFjQ0QzNGpwRDhmV1F5ZXFUa2pwT3dNR2hyWDZ3NVlDLWYtX1ZkSU9lV1ZTdS04QUwtU1lpUHhWMFJoX05uem8zeHdNSGNBeHJoM0lVVDdOaWdjV3ItR29FczM2bmxNV252TUNZOUloSEVXLUM3NFhrS1FTTy01djk2NlNCb3c?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.0
+   },
+   {
     "hora": "17:06",
     "titulo": "How Wall Street's postelection rally got obliterated — and what's next",
     "fonte": "CNBC",
@@ -1897,18 +1915,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Copom: mercado vê interrupção no ciclo de corte da Selic, mas afasta chance de alta da taxa",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/copom-mercado-interrupcao-corte-selic-afasta-chance-alta-taxa/",
-   "publicado": "2026-11-05T08:45-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Copom: mercado vê interrupção no ciclo de corte da Selic, mas afasta chance de alta da taxa",
    "fonte": "Estadão",
@@ -2770,6 +2776,18 @@
    "tickers": []
   },
   {
+   "titulo": "COPOM ACERTOU AO IGNORAR PRESSÕES E NÃO BAIXAR OS JUROS? GRIBEL AVALIA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSTlTSDN5aVg4OTZieGdjM3pOQXp4UGJIdGVkTGttVWhmaU9Jb1c0bDFjQ0QzNGpwRDhmV1F5ZXFUa2pwT3dNR2hyWDZ3NVlDLWYtX1ZkSU9lV1ZTdS04QUwtU1lpUHhWMFJoX05uem8zeHdNSGNBeHJoM0lVVDdOaWdjV3ItR29FczM2bmxNV252TUNZOUloSEVXLUM3NFhrS1FTTy01djk2NlNCb3c?oc=5",
+   "publicado": "2026-11-05T17:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "How Wall Street's postelection rally got obliterated — and what's next",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/investingclub/2026/11/05/how-wall-streets-postelection-rally-got-obliterated-and-whats-next.html",
@@ -2905,7 +2923,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T18:10-03:00",
+ "atualizado_em": "2026-11-05T18:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -3017,6 +3035,18 @@
    "tickers": []
   },
   {
+   "titulo": "COPOM ACERTOU AO IGNORAR PRESSÕES E NÃO BAIXAR OS JUROS? GRIBEL AVALIA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSTlTSDN5aVg4OTZieGdjM3pOQXp4UGJIdGVkTGttVWhmaU9Jb1c0bDFjQ0QzNGpwRDhmV1F5ZXFUa2pwT3dNR2hyWDZ3NVlDLWYtX1ZkSU9lV1ZTdS04QUwtU1lpUHhWMFJoX05uem8zeHdNSGNBeHJoM0lVVDdOaWdjV3ItR29FczM2bmxNV252TUNZOUloSEVXLUM3NFhrS1FTTy01djk2NlNCb3c?oc=5",
+   "publicado": "2026-11-05T17:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Número de pedidos de auxílio-desemprego nos EUA atinge menor nível em 57 anos",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468036",
@@ -3087,19 +3117,6 @@
     "WIN"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Vibra Energia surpreende com queda da dívida e leva BB-BI a mudar recomendação para ações",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQLTR6V19ZNUlsbVkybmpVR3daNU02MW5zRTBUZGs1dzQ2c2M1b0xSRmVHLUdENTcwOC1yTkYtc1MzMDNtdDBOdE1tb1U2U3h5VkFqclF2LWlmcmtBdFYwWFVJTHJIWVlKUE1jWk9EY2liVlhUYk9zMGlhYnBnVk5XN21ucWJwWm5ESEZ4V3Ewa3ZiaTQyQjh6WTh4enhCZXJOQ1g5ZnpMM3FLeWQ2TktKRTQxSURNOVYyRWxodlV6SnRNWHJxWkFXbElWMGZsVEh6T3RJRU54QXdJVjjSAeABQVVfeXFMTm95Zy1rUlZWOW96ZXhjaWtYa1FqNHY5V0hGV1dkdURNLTNzbXU4STRXY3FNX0NBU0xuZFlzYUMyNU5VN08zV3YxdmZ1VFhpU2tYR2VIS0t6RVBkMjQ1Sy1rdEN0WW41bnNEUmZ4a1RUajVkeXdtaUIzRjlHakJjQVcyYmFlelJlX2VJSHZ4VHVYR0F0R0x2d3RHd3o5cTh3VUlOeUFjQXRxTFU3bWtUZ1lRNEE5a2xOVTVyY2I4QU4xXzlmU1NEQ3FfckdkS3Q1SkV0T0NKb0pRcnRFTThLQjU?oc=5",
-   "publicado": "2026-11-05T16:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "VBBR3"
-   ]
   },
   {
    "titulo": "Nasdaq cai até 6,4% com receio de que vitória democrata afete boom da IA",
