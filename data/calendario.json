@@ -1,109 +1,6 @@
 {
-  "atualizado_em": "2026-11-04T16:45:00-03:00",
+  "atualizado_em": "2026-11-05T08:10:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-04",
-      "hora": "07h",
-      "pais": "EU",
-      "evento": "Inflação ao consumidor — prévia (out)",
-      "importancia": 2,
-      "anterior": "3,8% a/a",
-      "consenso": null,
-      "resultado": "4,0% a/a",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Inflação alta na zona do euro mexe no euro e no DXY.",
-      "tipo": "inflacao-zona-euro",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-04",
-      "hora": "10h15",
-      "pais": "US",
-      "evento": "ADP — emprego privado (out)",
-      "importancia": 2,
-      "anterior": "90 mil",
-      "consenso": "69 mil",
-      "resultado": "86 mil",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Prévia informal do payroll.",
-      "tipo": "adp",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-04",
-      "hora": "12h",
-      "pais": "US",
-      "evento": "ISM de serviços (out)",
-      "importancia": 3,
-      "anterior": "54,9",
-      "consenso": "54,8",
-      "resultado": "54,5",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Serviços são a maior parte da economia americana.",
-      "tipo": "ism-servicos",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-04",
-      "hora": "14h30",
-      "pais": "BR",
-      "evento": "CAGED — saldo de empregos formais (set)",
-      "importancia": 2,
-      "anterior": "165,8 mil",
-      "consenso": "150 mil",
-      "resultado": "121,3 mil",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Mercado de trabalho forte reduz espaço para cortes da Selic.",
-      "tipo": "caged",
-      "surpresa": {
-        "direcao": "abaixo",
-        "reacao": "Emprego formal mais fraco que o esperado costuma pesar nas taxas de DI, com o mercado vendo mais espaço para cortes da Selic; efeito em WIN e WDO tende a ser secundário."
-      }
-    },
-    {
-      "data": "2026-11-04",
-      "hora": "18h30",
-      "pais": "BR",
-      "evento": "Decisão do Copom (282ª reunião)",
-      "importancia": 3,
-      "anterior": "13,75%",
-      "consenso": "13,75% (manutenção)",
-      "resultado": null,
-      "impacto": {
-        "win": "volatil",
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Comunicado após o fechamento; reação aparece na quinta. Em pesquisa da Reuters, 33 de 48 economistas esperavam manutenção e 15, corte para 13,50%; o Itaú projeta manutenção unânime.",
-      "tipo": "copom",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-04",
-      "hora": null,
-      "pais": "US",
-      "evento": "Refunding trimestral do Tesouro",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Leilões mantidos; tirou o \"at least\" da orientação",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Tamanho das emissões afeta Treasuries longas e, por tabela, o DI.",
-      "tipo": "refunding-eua",
-      "surpresa": null
-    },
     {
       "data": "2026-11-05",
       "hora": "09h",
@@ -127,7 +24,7 @@
       "evento": "Decisão do Banco da Inglaterra",
       "importancia": 2,
       "anterior": "3,75%",
-      "consenso": "4,00%",
+      "consenso": "4,00% (alta)",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -149,6 +46,23 @@
         "wdo": "volatil"
       },
       "tipo": "seguro-desemprego",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-05",
+      "hora": "11h10",
+      "pais": "US",
+      "evento": "Fala de Tom Barkin (Fed de Richmond)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Sinais sobre os juros americanos mexem no DXY.",
+      "tipo": "fala-fed",
       "surpresa": null
     },
     {
@@ -249,6 +163,24 @@
       "surpresa": null
     },
     {
+      "data": "2026-11-08",
+      "hora": null,
+      "pais": "BR",
+      "evento": "Pronunciamento de Lula em rede nacional",
+      "importancia": 3,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "win": "volatil",
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Segundo o Estadão/Broadcast, deve reafirmar as metas fiscais; reação aparece na abertura de segunda.",
+      "tipo": "pronunciamento-governo",
+      "surpresa": null
+    },
+    {
       "data": "2026-11-10",
       "hora": "08h",
       "pais": "BR",
@@ -280,6 +212,23 @@
       },
       "nota": "Inflação americana mexe nas apostas para o Fed, nos Treasuries e no dólar global.",
       "tipo": "cpi-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-12",
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "IPCA de outubro (IBGE)",
+      "importancia": 3,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI.",
+      "tipo": "ipca",
       "surpresa": null
     }
   ]

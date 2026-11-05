@@ -1,149 +1,109 @@
 {
   "tipo": "pregao",
-  "data": "2026-11-04",
-  "gerado_em": "2026-11-04T08:20:00-03:00",
-  "titulo": "Dia de Copom com democratas no Congresso dos EUA e Ibovespa em 6 quedas",
+  "data": "2026-11-05",
+  "gerado_em": "2026-11-05T08:10:00-03:00",
+  "titulo": "Copom pausa em 13,75% com tom duro; fiscal segue no centro do pregão",
   "resumo": [
-    "O Ibovespa fechou a terça em 165.528,92 pontos (−1,42%), sexta queda seguida, com Vale, Petrobras e bancos pesando; o dólar à vista subiu 0,79%, a R$ 5,487, maior cotação do ano, em meio às dúvidas fiscais e à indefinição da equipe econômica.",
-    "Nos EUA, os democratas conquistaram a Câmara e o Senado nas eleições de meio de mandato; os futuros de Nova York chegaram a cair forte durante a madrugada, mas viraram para alta, e o índice do dólar (DXY) recua 0,2%, à mínima de um mês — alívio externo para o WDO.",
-    "Commodities ajudam: o minério de ferro sobe 1,56% em Dalian e a bolsa de Xangai avança 2,16%, sinal favorável para Vale; o Brent recua para perto de US$ 103, o que alivia a inflação, mas tira força de Petrobras.",
-    "O Copom anuncia a Selic às 18h30, depois do fechamento: o Itaú projeta manutenção em 13,75% com decisão unânime, mas parte do mercado ainda vê corte. Nas últimas 12 decisões, o WIN variou entre −0,16% e +0,68% e o WDO entre −0,36% e +0,13% na abertura seguinte — a reação ao comunicado aparece na quinta.",
-    "Antes disso, o mini dólar e o DI passam por ADP (10h15) e ISM de serviços (12h) nos EUA e pelo CAGED de setembro (14h30), com consenso de 150 mil vagas."
+    "O Copom manteve a Selic em 13,75% por unanimidade, interrompendo os cortes iniciados em março; elevou a projeção de IPCA de 2026 de 5,2% para 5,6% e a do horizonte relevante (2º tri de 2028) de 3,2% para 3,5% — leitura mais dura que mexe principalmente nos vértices do DI.",
+    "Segundo o InfoMoney, o comunicado deixou de citar a magnitude total do ciclo, o que analistas leem como fim dos cortes por ora; para eles, bolsa e dólar devem reagir mais ao risco fiscal do que à decisão em si.",
+    "O Ibovespa subiu 1,23% na quarta, a 167.563,47 pontos, e interrompeu seis quedas; o dólar à vista caiu 0,64%, a R$ 5,4511, com o DXY em 101,53 (−0,19%) após a vitória democrata no Congresso dos EUA.",
+    "No fiscal, segundo o Estadão/Broadcast, Lula fará pronunciamento em rede nacional no domingo (8) para reafirmar as metas — expectativa que pode segurar parte do prêmio de risco até lá, sem medidas confirmadas por enquanto.",
+    "Lá fora, os futuros de Nova York operam mistos (Nasdaq em queda) e o Brent sobe 0,8%, a US$ 95,40, depois de tombar mais de 8% na quarta; às 9h saem a produção industrial (consenso −0,1%) e a decisão do Banco da Inglaterra, com balanços de Magalu, Assaí e Sabesp no radar."
   ],
   "termometro": {
     "win": {
       "leitura": "neutro",
-      "motivo": "Exterior positivo e minério em alta favorecem um respiro após seis quedas, mas fiscal sem âncora e Copom no fim do dia deixam sinais mistos."
+      "motivo": "Repique após seis quedas e alívio externo convivem com Copom mais duro, juros longos elevados e fiscal à espera do pronunciamento de domingo."
     },
     "wdo": {
       "leitura": "neutro",
-      "motivo": "DXY na mínima de um mês alivia, contra prêmio fiscal elevado que levou o dólar à maior cotação do ano ontem."
+      "motivo": "Selic alta por mais tempo e DXY fraco aliviam, mas o prêmio fiscal segue alto e o dólar ainda é sensível a qualquer sinal do governo."
     }
   },
   "destaques": [
     {
-      "hora": "10h15",
-      "evento": "ADP — emprego privado (out, EUA)",
-      "por_que": "Prévia informal do payroll de sexta; previsão de 69 mil vagas. Mexe em Treasuries e no dólar global."
+      "hora": "9h",
+      "evento": "Produção industrial de setembro (IBGE)",
+      "por_que": "Consenso de −0,1% no mês; atividade mais fraca reforça a leitura de moderação citada pelo Copom e mexe no DI."
     },
     {
-      "hora": "12h",
-      "evento": "ISM de serviços (out, EUA)",
-      "por_que": "Previsão de 54,8 pontos; serviços fortes reduzem espaço para alívio do Fed e pesam no DI e no WDO."
+      "hora": "9h",
+      "evento": "Decisão do Banco da Inglaterra",
+      "por_que": "Pesquisa da Reuters prevê alta de 3,75% para 4%, a primeira em três anos; juros globais mais altos pesam em moedas emergentes."
     },
     {
-      "hora": "14h30",
-      "evento": "CAGED de setembro (MTE)",
-      "por_que": "Consenso de 150 mil vagas; emprego forte reforça a pausa nos cortes da Selic e mexe nos vértices curtos do DI."
+      "hora": "10h30",
+      "evento": "Pedidos de seguro-desemprego (EUA)",
+      "por_que": "Termômetro semanal do emprego na véspera do payroll; mexe em Treasuries e no dólar global."
     },
     {
-      "hora": "18h30",
-      "evento": "Decisão do Copom (282ª reunião)",
-      "por_que": "Selic em 13,75%; tom sobre fiscal e próximos passos define a abertura de quinta no WIN, WDO e DI."
+      "hora": "11h10",
+      "evento": "Fala de Tom Barkin (Fed)",
+      "por_que": "Sinais sobre o rumo dos juros americanos mexem no DXY e, por tabela, no WDO."
     }
   ],
   "exterior": [
-    {
-      "ativo": "S&P 500 fut.",
-      "variacao": "+0,7%"
-    },
-    {
-      "ativo": "Nasdaq-100 fut.",
-      "variacao": "+0,6%"
-    },
-    {
-      "ativo": "Treasury 10 anos",
-      "variacao": "−0,01 p.p. (4,93%)"
-    },
-    {
-      "ativo": "DXY",
-      "variacao": "−0,2%"
-    },
-    {
-      "ativo": "Petróleo Brent",
-      "variacao": "−0,7%"
-    },
-    {
-      "ativo": "Minério (Dalian)",
-      "variacao": "+1,6%"
-    }
+    { "ativo": "S&P 500 fut.", "variacao": "−0,1%" },
+    { "ativo": "Nasdaq-100 fut.", "variacao": "−0,7%" },
+    { "ativo": "Dow Jones fut.", "variacao": "+0,4%" },
+    { "ativo": "DXY (fech. qua)", "variacao": "−0,19% (101,53)" },
+    { "ativo": "Petróleo Brent", "variacao": "+0,8% (US$ 95,40)" }
   ],
   "noticias": [
     {
-      "titulo": "Democratas conquistam Câmara e Senado nos EUA; mercados se preparam para impasse com Trump",
-      "fonte": "Reuters (via InfoMoney)",
-      "hora": "07h28",
-      "url": "https://www.infomoney.com.br/mercados/mercados-se-preparam-para-impasse-com-trump-enquanto-democratas-conquistam-congresso/",
-      "por_que": "O DXY recua 0,2%, a 101,51, mínima de um mês, e o Treasury de 10 anos cai para 4,933%; dólar global mais fraco e juros americanos menores tendem a aliviar WDO e DI.",
-      "impacto": {
-        "wdo": "baixa",
-        "di": "baixa"
-      }
-    },
-    {
-      "titulo": "Futuros de Nova York sobem após vitória democrata; minério avança em Dalian",
+      "titulo": "Copom mantém Selic em 13,75% por unanimidade e eleva projeções de inflação",
       "fonte": "InfoMoney",
-      "hora": "05h52",
-      "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-sobe-apos-vitoria-dos-democratas-nas-eleicoes-de-meio-de-mandato/",
-      "por_que": "Segundo a Reuters, os futuros do Nasdaq chegaram a cair 2,4% de madrugada antes de virar; o minério sobe 1,56% e Xangai 2,16%, sinal positivo para Vale e para o humor do WIN.",
-      "impacto": {
-        "win": "alta"
-      }
+      "hora": "qua 18h31",
+      "url": "https://www.infomoney.com.br/economia/banco-central-copom-decisao-selic-04112026/",
+      "por_que": "A pausa encerra a sequência de cortes; projeções de IPCA mais altas sustentam juros elevados por mais tempo, o que pesa nas taxas curtas do DI e ajuda o real pelo carrego.",
+      "impacto": { "win": "neutro", "wdo": "baixa", "di": "alta" }
     },
     {
-      "titulo": "Ibovespa tem 6ª queda seguida com novo temor fiscal; dólar vai a R$ 5,48",
+      "titulo": "Comunicado do Copom deve ditar bolsa e dólar nesta quinta, dizem analistas",
       "fonte": "InfoMoney",
-      "hora": "ter 18h",
-      "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-03112026/",
-      "por_que": "Temor fiscal, debate sobre corte acelerado da Selic e indefinição da equipe econômica seguem pressionando bolsa, câmbio e curva de juros — é o pano de fundo do Copom.",
-      "impacto": {
-        "win": "baixa",
-        "wdo": "alta",
-        "di": "alta"
-      }
+      "hora": "05h00",
+      "url": "https://www.infomoney.com.br/mercados/selic-em-1375-pausa-era-esperada-mas-comunicado-deve-ditar-bolsa-e-dolar-nesta-5a/",
+      "por_que": "O BC retirou a menção à magnitude do ciclo e usa dólar a R$ 5,20 nas projeções, abaixo do câmbio atual; analistas veem o risco fiscal como o principal motor de WIN e WDO.",
+      "impacto": { "di": "alta" }
     },
     {
-      "titulo": "Durigan diz que Lula não avalia proposta de corte forte de juros para reduzir a dívida",
-      "fonte": "Reuters (via TradingView)",
-      "hora": "ter",
-      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46K0OI:0-brazil-s-lula-not-weighing-proposal-to-slash-interest-rates-minister-says/",
-      "por_que": "A fala do ministro da Fazenda tenta afastar a ideia de pressão política sobre o BC, que vinha elevando o prêmio de risco no DI e no dólar.",
-      "impacto": {
-        "wdo": "baixa",
-        "di": "baixa"
-      }
+      "titulo": "Lula fará pronunciamento no domingo para reafirmar metas fiscais, diz Estadão",
+      "fonte": "InfoMoney (citando Estadão/Broadcast)",
+      "hora": "06h06",
+      "url": "https://www.infomoney.com.br/mercados/copom-industria-balancos-boe-agenda-05112026/",
+      "por_que": "Segundo o Estadão, o governo discute corte de gastos e aumento de receitas, sem medidas confirmadas; a expectativa pelo discurso pode reduzir o prêmio de risco no câmbio e na curva.",
+      "impacto": { "win": "alta", "wdo": "baixa", "di": "baixa" }
     },
     {
-      "titulo": "Itaú lucra R$ 12,6 bilhões no 3º trimestre, levemente abaixo do consenso",
-      "fonte": "Money Times",
-      "hora": "ter 18h32",
-      "url": "https://www.moneytimes.com.br/itau-itub4-lucro-roe-rentabilidade-banco-balanco-do-3t26-miql/",
-      "por_que": "Lucro recorrente subiu 6,7% em um ano, mas ficou abaixo dos R$ 12,714 bilhões esperados (Bloomberg), com ROE de 23,6% contra 23,8% projetado; Itaú é o maior peso financeiro do Ibovespa.",
-      "impacto": {
-        "win": "neutro"
-      }
+      "titulo": "Ibovespa sobe 1,23% e interrompe seis quedas; dólar cai a R$ 5,45",
+      "fonte": "InfoMoney",
+      "hora": "07h08",
+      "url": "https://www.infomoney.com.br/mercados/mini-indice-hoje-futuro-ibovespa-winz26-05112026/",
+      "por_que": "O WINZ26 fechou a 169.530 pontos (+0,91%); o repique veio com a vitória democrata nos EUA, mas a tendência diária ainda é de baixa e o Copom define o tom da continuidade.",
+      "impacto": { "win": "alta" }
+    },
+    {
+      "titulo": "Petróleo sobe 0,8% após tombo de mais de 8% com chance maior de fim da guerra com o Irã",
+      "fonte": "Reuters (via Investing.com)",
+      "hora": "06h",
+      "url": "https://www.investing.com/news/commodities-news/oil-falls-for-a-fourth-day-on-expectations-for-lower-risk-of-iran-war-escalation-5002042",
+      "por_que": "Brent a US$ 95,40, perto da mínima desde agosto: alivia a inflação e os juros, mas tira força de Petrobras, peso relevante no Ibovespa.",
+      "impacto": { "win": "neutro", "di": "baixa" }
+    },
+    {
+      "titulo": "Banco da Inglaterra deve subir juros pela primeira vez em três anos",
+      "fonte": "Reuters (via RTÉ)",
+      "hora": "05h59",
+      "url": "https://www.rte.ie/news/business/2026/1105/1598072-bank-of-england-rates-meeting/",
+      "por_que": "Economistas consultados pela Reuters esperam alta para 4% (placar 7–2) por causa da inflação de energia; aperto nos países ricos reduz o apelo de moedas emergentes.",
+      "impacto": { "wdo": "alta" }
     }
   ],
   "fontes": [
-    {
-      "titulo": "InfoMoney — Day Trade hoje (04): Ibovespa cai pelo 6º dia",
-      "url": "https://www.infomoney.com.br/mercados/mercados-day-trade-hoje-analistas-04112026/"
-    },
-    {
-      "titulo": "Money Times — Onda democrata 'engole' governo Trump e mercado aguarda decisão sobre Selic hoje",
-      "url": "https://www.moneytimes.com.br/onda-democrata-engole-governo-trump-e-mercado-aguarda-decisao-sobre-selic-hoje-ibovespa-em-dolar-sobe-nesta-quarta-feira-4-rens/"
-    },
-    {
-      "titulo": "InfoMoney — Copom, Caged e emprego nos EUA: agenda de 04/11",
-      "url": "https://www.infomoney.com.br/mercados/copom-caged-emprego-eua-agenda-04112026/"
-    },
-    {
-      "titulo": "InfoMoney — Dow Jones Futuro sobe após vitória dos democratas",
-      "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-sobe-apos-vitoria-dos-democratas-nas-eleicoes-de-meio-de-mandato/"
-    },
-    {
-      "titulo": "Yahoo Finance (Reuters) — US stock index futures steady as Democrats seize Congress",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-index-futures-steady-083456013.html"
-    }
+    { "titulo": "InfoMoney — BC mantém Selic em 13,75% e destaca aumento significativo das incertezas", "url": "https://www.infomoney.com.br/economia/banco-central-copom-decisao-selic-04112026/" },
+    { "titulo": "InfoMoney — Reação ao Copom, indústria, balanços, BoE e mais destaques desta quinta", "url": "https://www.infomoney.com.br/mercados/copom-industria-balancos-boe-agenda-05112026/" },
+    { "titulo": "InfoMoney — Minidólar (WDOZ26): mercado avalia fôlego da correção e efeito do Copom", "url": "https://www.infomoney.com.br/mercados/minidolar-hoje-futuro-do-dolar-wdoz26-05112026/" },
+    { "titulo": "Yahoo Finance (Reuters) — Brazil's central bank ends run of rate cuts after Lula election win", "url": "https://finance.yahoo.com/economy/policy/articles/brazils-central-bank-ends-run-213917769.html" },
+    { "titulo": "Yahoo Finance — Stock market today: Dow, S&P 500, Nasdaq trade mixed as post-election relief rally cools", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-falls-090519607.html" }
   ]
 }
