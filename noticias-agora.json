@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T12:05-03:00",
+  "atualizado_em": "2026-11-05T12:08-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -91,11 +91,15 @@
     ],
     [
      "11:45",
-     167564.0
+     167488.0
     ],
     [
-     "11:49",
-     167553.0
+     "11:50",
+     167353.0
+    ],
+    [
+     "11:52",
+     167424.0
     ]
    ]
   },
@@ -248,11 +252,15 @@
     ],
     [
      "12:00",
-     5.468
+     5.4705
     ],
     [
-     "12:04",
-     5.468
+     "12:05",
+     5.4692
+    ],
+    [
+     "12:07",
+     5.4718
     ]
    ]
   },
@@ -683,7 +691,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.78,
+    "ibov30": -0.83,
     "dolar30": 0.39
    },
    {
@@ -728,7 +736,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.28
+    "dolar30": 0.3
    },
    {
     "hora": "11:53",
@@ -1663,7 +1671,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T12:05-03:00",
+ "atualizado_em": "2026-11-05T12:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1682,7 +1690,7 @@
    "titulo": "Barkin sees interest rate hikes ahead, but at a gradual pace",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
-   "publicado": "2026-11-05T12:00-03:00",
+   "publicado": "2026-11-05T12:08-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1755,6 +1763,18 @@
    ]
   },
   {
+   "titulo": "World's largest olive oil company plummets 20% after rivals agree to takeover deal",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
+   "publicado": "2026-11-05T11:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Economistas veem pausa prolongada no ciclo de cortes de juros após decisão do Copom",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1pMWHAtR3pyTUJ3QWhXR0J6T1JDSDMzcEViRlhlaEdoMEFReHNzU0xhb2JEZlRELWRDTzh2bHRJSlBDcjhLQnpFWE5wRWtCc1NKSENVdnNHSld0Q3VfZWlMb3FGTjM3cVk1LXc2UFJHTzc2MFhrc3NtaG1QekZxcFY1bmhIeEtkbVZMd2NyWlNJeW02Um9PMEU2QXBrR1g2azBpUVRIVHhkWkR4YUdKag?oc=5",
@@ -1790,6 +1810,18 @@
    "tickers": []
   },
   {
+   "titulo": "Selic ainda em 13,75%: a calculadora que mostra onde investir agora",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMWt6NVI2cGtCeVNWODFtM2FycEZvRGVna3pLNU1Ka1d3MWd6bnlCS1BkNV9lRFJxcGVpeFhsNWtHZlkyMWxVbGt3N0NLUFAwX2Etd2NzNDZPNVcwV0h0VUZFb1dYU3F5eUh6andMeDFBdDIzSEQxYm5FNkFQdmZiOE1oNnlZcnZ1TEMyakZjVXJVMHhRSUwyVGxyOEt3QWpENXVYOW5VT3R5eTVL0gGyAUFVX3lxTE15UWZJbEUxYmVESmdLTXRRWXNUYXhRYndfNUpTbkFXNk1mak1XMzBzaHFreGxkMFl0Y1ppSUdweHFMZnMxVDRma0hGMmtzWmVRXzJtU3ZrSE85X2NXVlNPcHRfTUtlTFlaaUVHR216MFA0bkhGbGdfbXBpSUx6Zm02VEMtTnNyRnVGQUtpV25NZ3I1RjhqT0R0dVBmZkI5bnVBbGxEWlZmUF90dVptei1tRmc?oc=5",
+   "publicado": "2026-11-05T11:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Selic estacionou, mas taxas do Tesouro Direto sobem após Copom; Tesouro IPCA+ paga até 7,92% de juro real",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZEJueC1LVnhxWGw4OXY2emlWZE9rbXhjeEJPMDFoX1JYVmN2bXhjSU40cmJWQlo2eC1WMWVoOHJzSmYwRkphRm1XdTMtMXpBS01xcDZ2SFVUV1BobUxoX2JBVU9lclg4MWtTSlQwT1FOX1hTX002VG5FcVI4Z0xhTUwwbk5MQlBfd3B6Y2toWGhwRnpIbDRNWldQUUVDUQ?oc=5",
@@ -1811,18 +1843,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China afirma que compras agrícolas nos EUA dependem de redução de tarifas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQzNYZjU4cENZb2NhUlRCMVdndFoxNDNWSkVjaXYtSnE2V2djTTRXdnA5bnA5SEs0VkNkdzVuV2FObzB0VUtzRjVnRGRzUlRSMWFUNDZwOTcxVHJXRWRlV1JwNkJjQXBFLUxGSF9HZUExeHNvQTV0V2NDd3ByREo1WTNoMFFLN0hwX1dxSEtCbTI5SDdTZGktRUxTUEthQ2FPX3R1TE96VHE0UzlFOTlLV0JENmVLdFHSAbcBQVVfeXFMTkMzWGY1OHBDWW9jYVJUQjFXZ3RaMTQzVkpFY2l2LUpxNldnY000V3ZwOW5wOUhLNFZDZHc1bldhTm8wdFVLc0Y1Z0Rkc1JUUjFhVDQ2cDk3MVRyV0VkZVdScDZCY0FwRS1MRkhfR2VBMXhzb0E1dFdjQ3dwckRKNVkzaDBRSzdIcF9XcUhLQm0yOUg3U2RpLUVMU1BLYUNhT190dUxPelRxNFM5RTk5S1dCRDZlS3RR?oc=5",
-   "publicado": "2026-11-05T10:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -1858,19 +1878,6 @@
    "publicado": "2026-11-05T09:27-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa Futuro sobe com Selic mantida e expectativa de fim da guerra no Irã",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN2hZVGRQTTNuZ1JiZnhTRTRiZDVESExCcC1QMUUxMVQ2T1BOazNlTWZrOGpjUUdzSkVKWWp4NzFLUUJISU1FTUh4Z2xuQW9JTUhzc0tOT3BDaVd1OFV4OHNJa2NIMm5GVGF4Z2d1OEhMWG54dGhNcmQ1SHJGajhnUUU4TXM0RWl5d2pXYjFzdmtRclROcm1TMm1JbFEybjRHdUdMSGZuYzJUWk00RWtiZThTdmZHQdIBuwFBVV95cUxQb04xc2tHcE5jUEpuUkViWFN4Tlo0SGFSaEZDaXI3eDNOOVZISWdzR2l1b3dyai01Y25ndldjUmFuci1nUVhyQ25Gdk9yYncwWERIZHJNQTJqZGx6bjBldmZVNmdvMXI1cjN4cnpHanh3cFVJMkJBLUxMT0N4V29aanYyZlo2TG5Nb3JYaHV5elRMSU1ULWNHSFdEREFDZXRZNm0tZ0E3Wk14VkVqbFhZQ1E5d0N5ZTNqdWV3?oc=5",
-   "publicado": "2026-11-05T09:07-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
