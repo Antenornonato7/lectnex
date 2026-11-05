@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-05",
-  "atualizado_em": "2026-11-05T15:03-03:00",
+  "atualizado_em": "2026-11-05T15:05-03:00",
   "ibov": {
    "anterior": 167563.47,
    "pontos": [
@@ -235,11 +235,11 @@
     ],
     [
      "14:45",
-     166567.0
+     166673.0
     ],
     [
-     "14:48",
-     166596.0
+     "14:50",
+     166643.0
     ]
    ]
   },
@@ -536,11 +536,11 @@
     ],
     [
      "15:00",
-     5.49
+     5.4903
     ],
     [
-     "15:03",
-     5.4901
+     "15:05",
+     5.4898
     ]
    ]
   },
@@ -1329,7 +1329,7 @@
      "B3SA3"
     ],
     "ibov30": null,
-    "dolar30": 0.13
+    "dolar30": 0.14
    },
    {
     "hora": "14:34",
@@ -1342,24 +1342,26 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.13
+    "dolar30": 0.14
+   },
+   {
+    "hora": "15:00",
+    "titulo": "Petrobras prevê importar 125 mil barris de diesel por dia em novembro para repor estoques",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petrobras-preve-importar-125-mil-barris-de-diesel-por-dia-em-novembro-para-repor-estoques.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Indústria no Brasil e balanços: o que move os mercados após reação da Bolsa e pausa do Copom",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOclFZODJYbXdwV0ZMNUZkYlF1WFVFb1FWX1oydlo1ZVFPckpYaC1KWm8xYzRYSFVyWGFXenJVcFFnMzQ1WjZYLWhvckZySkVFa2VpdkQ5RmFxTTlZdGJndjRoYldjXzJxV2w0TG50UVhleE1NUE1sMEloRVYtSzVCdWJVMktFQWJwZDNYV203bmF4UFN2UEtKSVVpOHRaRnlwR096dzV6TDZhVzFvU1ZVNldmMlNYWGdEQ1VSS1FfWC0zLXpq?oc=5",
-   "publicado": "2026-11-05T05:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Mercado chega à semana do Copom com expectativa por fim do corte de juros",
    "fonte": "CNN Brasil",
@@ -2324,6 +2326,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras prevê importar 125 mil barris de diesel por dia em novembro para repor estoques",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petrobras-preve-importar-125-mil-barris-de-diesel-por-dia-em-novembro-para-repor-estoques.shtml",
+   "publicado": "2026-11-05T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -2353,7 +2368,7 @@
    "em": "2026-11-05T12:12:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-05T15:03-03:00",
+ "atualizado_em": "2026-11-05T15:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2367,6 +2382,19 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Petrobras prevê importar 125 mil barris de diesel por dia em novembro para repor estoques",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petrobras-preve-importar-125-mil-barris-de-diesel-por-dia-em-novembro-para-repor-estoques.shtml",
+   "publicado": "2026-11-05T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
    "fonte": "CNBC",
@@ -2424,6 +2452,19 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Antes do Copom, Ibovespa sobe 1,2% e tem 1ª alta desde as eleições com apoio do exterior e petróleo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa0VpRnZTX2NtTTVCYjMyVUNLLWZpd0lvYnozZUF6RGpRZmlrQnJoVkJNRDB6VTVqaGt1Z0FJU2FNTnY3cVQxVGthU0ZrT2tIQkhHMmViYXA4YXhGaFNXN01WaGsxcnNDdHJQbWFvWkVLQUxydTJ2b2NrSE12LXZnMFIwOVhqTnlTOVVSZGNFWVZiWkgwM3R0eWJKTnF2TFNMLXd4ZU13a2hQRU5HT2RsckxuNmhtTzVrT0dqNFdVMFg1cDgwTXZDbHpuMEhRUmJWRmx6WHEyQnpMb04tRDFJNHAxRDE?oc=5",
+   "publicado": "2026-11-05T13:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2512,19 +2553,6 @@
    ],
    "tickers": [
     "CEAB3"
-   ]
-  },
-  {
-   "titulo": "O que está por trás da queda da Porto (PSSA3) hoje? Conta dos calotes chega, com provisões quase 50% maiores e mudanças no guidance",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPalpBbzh3RkxmaTFPdVlLWnh3MUoyTFJHMGhTLUxtYWFDbXVfckVKV1VHWUtGVEgzTzZFTEFoRjhUMXZVVGhmeHh0OHB5RFBYM3pVcVB1Zjk5bEs0ZlQ1UHUxS05ITXpjTnVOOVl1RXJJMkNUY0NIUkRjVzg2cElKNEFHZHBBd1BoMEdzQlNhTlBUYkJmekxPUnVwZUxTRnZnNHhIVTFYZi1TOHozRTF5RGNPRG8xUFRLcThtLW1JbmZtOWJfNHBkV045ZE9lUEdHd0FpZ0k3T1kyY0NkV3IyV3VLMjZzQWNmRTBsV2ZMdFU?oc=5",
-   "publicado": "2026-11-05T12:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PSSA3"
    ]
   },
   {
