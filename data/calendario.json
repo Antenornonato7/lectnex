@@ -1,73 +1,6 @@
 {
-  "atualizado_em": "2026-11-05T12:55:00-03:00",
+  "atualizado_em": "2026-11-06T08:20:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-05",
-      "hora": "09h",
-      "pais": "BR",
-      "evento": "Produção industrial (set, m/m)",
-      "importancia": 2,
-      "anterior": "−0,6%",
-      "consenso": "−0,1%",
-      "resultado": "−0,8%",
-      "impacto": {
-        "win": "volatil",
-        "di": "volatil"
-      },
-      "tipo": "producao-industrial",
-      "surpresa": {
-        "direcao": "abaixo",
-        "reacao": "Atividade mais fraca que o esperado costuma reforçar apostas de juros menores, pressionando as taxas do DI para baixo; o efeito no WIN e no WDO tende a ser pequeno e diluído pelo cenário externo."
-      }
-    },
-    {
-      "data": "2026-11-05",
-      "hora": "09h",
-      "pais": "UK",
-      "evento": "Decisão do Banco da Inglaterra",
-      "importancia": 2,
-      "anterior": "3,75%",
-      "consenso": "4,00% (alta)",
-      "resultado": "4,00% (alta)",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Mercado espera início de ciclo de alta de juros.",
-      "tipo": "boe",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-05",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Pedidos de seguro-desemprego (semanal)",
-      "importancia": 1,
-      "anterior": "194 mil",
-      "consenso": "195 mil",
-      "resultado": "189 mil",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "tipo": "seguro-desemprego",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-05",
-      "hora": "11h10",
-      "pais": "US",
-      "evento": "Fala de Tom Barkin (Fed de Richmond)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Sinais sobre os juros americanos mexem no DXY.",
-      "tipo": "fala-fed",
-      "surpresa": null
-    },
     {
       "data": "2026-11-06",
       "hora": "10h30",
@@ -75,7 +8,7 @@
       "evento": "Payroll — criação de vagas (out)",
       "importancia": 3,
       "anterior": "29 mil",
-      "consenso": "55 mil",
+      "consenso": "65 mil",
       "resultado": null,
       "impacto": {
         "wdo": "volatil",
@@ -125,7 +58,7 @@
       "evento": "Confiança do consumidor Michigan — preliminar (nov)",
       "importancia": 1,
       "anterior": "48,0",
-      "consenso": "48,2",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -135,12 +68,29 @@
     },
     {
       "data": "2026-11-06",
+      "hora": "14h15",
+      "pais": "US",
+      "evento": "Fala de Michelle Bowman (Fed)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Primeira leitura do Fed depois do payroll; mexe no DXY.",
+      "tipo": "fala-fed",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-06",
       "hora": "15h",
       "pais": "BR",
       "evento": "Balança comercial (out)",
       "importancia": 1,
       "anterior": "US$ 7,74 bi",
-      "consenso": null,
+      "consenso": "US$ 9,4 bi",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
