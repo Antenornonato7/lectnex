@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T11:03-03:00",
+  "atualizado_em": "2026-11-06T11:05-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -43,11 +43,11 @@
     ],
     [
      "10:45",
-     166644.0
+     166687.0
     ],
     [
-     "10:48",
-     166586.0
+     "10:50",
+     166530.0
     ]
    ]
   },
@@ -152,11 +152,11 @@
     ],
     [
      "11:00",
-     5.5137
+     5.5149
     ],
     [
-     "11:03",
-     5.5157
+     "11:05",
+     5.5175
     ]
    ]
   },
@@ -400,7 +400,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.1,
+    "ibov30": 0.06,
     "dolar30": 0.17
    },
    {
@@ -408,6 +408,19 @@
     "titulo": "Nasdaq drops into correction territory — here’s what typically happens next",
     "fonte": "CNBC",
     "url": "https://www.cnbc.com/2026/11/05/nasdaq-drops-into-correction-territory-heres-what-typically-happens-next.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:02",
+    "titulo": "Wall Street's fear gauge may be flashing a buy sign",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
     "impacto": "medio",
     "ativos": [
      "WIN"
@@ -862,6 +875,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Wall Street's fear gauge may be flashing a buy sign",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
+   "publicado": "2026-11-06T11:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -891,7 +915,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T11:03-03:00",
+ "atualizado_em": "2026-11-06T11:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -906,6 +930,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Wall Street's fear gauge may be flashing a buy sign",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
+   "publicado": "2026-11-06T11:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Nasdaq drops into correction territory — here’s what typically happens next",
    "fonte": "CNBC",
@@ -1037,17 +1072,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe em linha com movimento externo e à espera do ‘payroll’",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMGFIRV9wcFdkUlhxVEd6SGZYcmM3NGstRXJKT3RnREUxZGRYMjlsd3k2UEFvLVc1TnRkWXdvUVJzcF9LTVVHQjlaMTM2SFR6bGI1ckFpa1ZTQ1hMNVV2MndSOGRLTzhMMHNoaVpqSTkxYm9yVGEwSTgxQ3k5QlQtZUZaVER2U25qaDhOVU15Zm9ELUZaZkhtMWgxZUpuYkwza0E5VlA2ZFUwQ3ZQaEhhNXdZbEk5VmNMeVBMOE5B0gHMAUFVX3lxTE1ZSnFXaTF3WUFqNjd6V0J1Q2kzZ0pIVmx1QWVuWDREaWN2blhvVzBVLU9MY1NCQ3ByVDZUTWRwWDA2NzRLbjhHbzdDbnZZcDRLVWFxbm85QWdab3A2bGdCSTFTaUN2MFBtbjl3X05HQ3JTaFdYSWZCU1FIMWpyOTV1ekxVZHRyQkJiX1pwcHp5T2hHTWxQckVWb3dIOW4wQWJVMjRwSWhSaHhoaUI0aHdaRWFqOVl6QzFDVUd1bWwwUTVabjljS2RnbS1LSQ?oc=5",
-   "publicado": "2026-11-06T09:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
