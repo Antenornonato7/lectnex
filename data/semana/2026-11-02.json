@@ -278,7 +278,12 @@
     "di": "volatil"
    },
    "nota": "Emprego forte tende a fortalecer o dólar global.",
-   "tipo": "payroll"
+   "tipo": "payroll",
+   "resultado": "165 mil",
+   "surpresa": {
+    "direcao": "acima",
+    "reacao": "Emprego muito acima do esperado costuma fortalecer o dólar global e elevar os juros longos, pressionando WDO e DI para cima e pesando no WIN."
+   }
   },
   {
    "data": "2026-11-06",
@@ -292,7 +297,12 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "tipo": "desemprego-eua"
+   "tipo": "desemprego-eua",
+   "resultado": "4,1%",
+   "surpresa": {
+    "direcao": "abaixo",
+    "reacao": "Desemprego menor que o previsto reforça a leitura de mercado de trabalho firme, o que tende a sustentar dólar e taxas do DI."
+   }
   },
   {
    "data": "2026-11-06",
@@ -307,7 +317,12 @@
     "di": "volatil"
    },
    "nota": "Pressão salarial pesa nas apostas para o Fed.",
-   "tipo": "salario-eua"
+   "tipo": "salario-eua",
+   "resultado": "0,4%",
+   "surpresa": {
+    "direcao": "acima",
+    "reacao": "Salário acima do esperado alimenta o receio de inflação nos EUA, o que costuma pressionar Treasuries, dólar e DI e pesar na bolsa."
+   }
   },
   {
    "data": "2026-11-06",
@@ -320,7 +335,8 @@
    },
    "anterior": "48,0",
    "consenso": "48,2",
-   "tipo": "michigan"
+   "tipo": "michigan",
+   "resultado": "51,0"
   },
   {
    "data": "2026-11-06",
