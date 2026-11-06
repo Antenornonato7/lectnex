@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T15:03-03:00",
+  "atualizado_em": "2026-11-06T15:05-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -235,11 +235,11 @@
     ],
     [
      "14:45",
-     168694.0
+     168537.0
     ],
     [
-     "14:48",
-     168691.0
+     "14:50",
+     168538.0
     ]
    ]
   },
@@ -536,11 +536,11 @@
     ],
     [
      "15:00",
-     5.4975
+     5.4972
     ],
     [
-     "15:03",
-     5.4953
+     "15:05",
+     5.4955
     ]
    ]
   },
@@ -1211,7 +1211,7 @@
     "tickers": [
      "CSAN3"
     ],
-    "ibov30": 0.02,
+    "ibov30": -0.07,
     "dolar30": 0.07
    },
    {
@@ -2093,7 +2093,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T15:03-03:00",
+ "atualizado_em": "2026-11-06T15:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2106,6 +2106,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Mississippi Senate: Longshot Ty Pinkins says he aimed to spoil Hyde-Smith, boost Colom vote",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/mississippi-senate-ty-pinkins-colom-hyde-smith.html",
+   "publicado": "2026-11-06T15:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Watch the Annual Meeting: Cramer on the fate of the AI buildout and stocks to buy now",
    "fonte": "CNBC",
@@ -2202,6 +2214,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ação da Vivara (VIVA3) despenca após balanço do 3º trimestre; do que o mercado não gostou?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQR1I5NHRkTVZZN25rcnNNUEZ1WkJST19OR3ZGOEY2bTVGUnhYS2dCSkFRSVBzMjFWOWpkSmtMS093S1FlVGF4UzVBWWhGaTVMUDdhTmFUOGFBNG0wcGZWX3hZcHZFNTQ3MzBGb1hELW96MnZ4dWhsRG9RLVl5VW1sVXlpUQ?oc=5",
+   "publicado": "2026-11-06T13:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VIVA3"
+   ]
+  },
+  {
    "titulo": "Assaí relata alta nas vendas após veto às bets e mira expansão",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/assai-relata-alta-nas-vendas-apos-veto-as-bets-e-mira-expansao.shtml",
@@ -2242,24 +2267,12 @@
   {
    "titulo": "Emprego forte nos EUA deve pressionar Fed a elevar juros e ameaça cortes na Selic",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0xdFdpRHpFcFNLOVpEVDU2c1JtSnZnRWZNeWdKSHlqNnNpR0d0Z2lscm1YeGpEUF94ejd4cHF2T0hfVzcxeGZtTFpQbkpFSU5acGVpejN4UkdsLW9sRWE1N28xUTNsdlp5WVY4RS0wQXRQY1N5ZkdRVkZEWmdGVW_SAYQBQVVfeXFMTWFmQmNsSlBta1p1NkNUVGFacC1sRU5TOG1ub3ZIdElSaXBlODMyMnBlU1ZoR1E5UVpJSTFqRGowY1YxZ2JTMFJTOXVVbWFTZVRrdlV2VHFQRVpzREhlN1dnNnlyS3cxQW1iSnVZLTRKMVA1UVBnTWVsWDBCS2hRdngtaGRN?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYWZCY2xKUG1rWnU2Q1RUYVpwLWxFTlM4bW5vdkh0SVJpcGU4MzIycGVTVmhHUTlRWklJMWpEajBjVjFnYlMwUlM5dVVtYVNlVGt2VXZUcVBFWnNESGU3V2c2eXJLdzFBbWJKdVktNEoxUDVRUGdNZWxYMEJLaFF2eC1oZE3SAYQBQVVfeXFMTWFmQmNsSlBta1p1NkNUVGFacC1sRU5TOG1ub3ZIdElSaXBlODMyMnBlU1ZoR1E5UVpJSTFqRGowY1YxZ2JTMFJTOXVVbWFTZVRrdlV2VHFQRVpzREhlN1dnNnlyS3cxQW1iSnVZLTRKMVA1UVBnTWVsWDBCS2hRdngtaGRN?oc=5",
    "publicado": "2026-11-06T13:06-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe mais de 1% com Payroll acima do esperado nos EUA e expectativa por discurso de Lula",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZlczVHdZeUxCNWc4WmNFR0ZhTW8yaFpIa1hEbXpvQVMyei02bDB0NVFSajNGQ3lnRlRTNGxPZkE3MktPaFMwOTl1NHNkSGlVRnJqU19zaG4yOF9oOGhMZ0IxQjNsazA1ZEJfY1R4YkJ4blAzLTBRMERNVmJIam1KTG9jQ0lvSW9PdnVHSFNTMGlhSDE4LU4ySDREZkhjVjJIYjg4OUtaQW9WXzg3UUJ1VEJyOTFvTG1iSmN6cEk2S1RkOU9sLTVGbXZGUlRKcnFfSXQyM09kMXTSAd4BQVVfeXFMTTJZYjdJX0stWEM0Wl9YZDJJVzNMaWpXTjZELVMwU1hGdnRsb3puUHFldUhWRWdiRm1Ecm00LXZ5dGdVSllkMkJrV2k1VzJzVnFGZUlWS0M1czM2VkVrb0Q0OHhpTmhfbzZYNkUyUmI5OWN4blRrMVNyNExfWU5mOVdsU28wVlZFYVlGR2Y0RzlYczJwV0plVEhDMDVucWZqVW9VN3I4NG12eW1QWkRUTUtlRGFfU3VkOUNhcXdsbU9pN3VaUUJyTXNCT3dqNEd2ekxrMFMybEljUFZBT0N3?oc=5",
-   "publicado": "2026-11-06T13:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -2285,19 +2298,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ação da Vivara (VIVA3) lidera perdas do Ibovespa após balanço do 3º tri",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUHZvS3h4ek9HNExNTEYxMVZiRThPbEdhZmE0blBnRVZWTjFsUUxGZGpsZ2Q0b2xRMXVKWDNqUVJFOU5vYVRJUjl4aXp1MDhNaXVPRC1Hd0dHVTh1LWZZWDZyTXFBVGc3SWhYeUF0OW1qX0FBTV9nNnJGV2pxX2RlWk85aG9aMGR1WlJCWnFyWjFXSENuTzUzUi0tU1VRY3JxOEFVV2dQWHVmcmUy0gGyAUFVX3lxTE9nOGhHVmdIZ3dSX2V0ZGx4WUNGUkpBU3dvRzdMRFMxT1hBZ0labUh4N2lRSXBsQzRlMG9GQllXNmpsZzdITlAwWUNYaXotTFFWNDREbU9QTGZxNzBrRGcxb2JWdk1JRHpzb3MxRXdxelZnVko3dEtmdU1XcHY5U016NnlOYWJXWkpEajlqcXZCQjJZaWJCMDRiUFdfMWdhWkFoUHJBRkdqelJtcWk4OFMzVUE?oc=5",
-   "publicado": "2026-11-06T12:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "VIVA3"
-   ]
   }
  ]
 }
