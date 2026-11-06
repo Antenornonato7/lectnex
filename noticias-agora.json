@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T10:08-03:00",
+  "atualizado_em": "2026-11-06T10:10-03:00",
   "dolar": {
    "anterior": 5.5037,
    "pontos": [
@@ -59,11 +59,11 @@
     ],
     [
      "10:05",
-     5.5014
+     5.5013
     ],
     [
-     "10:08",
-     5.501
+     "10:10",
+     5.4974
     ]
    ]
   },
@@ -133,7 +133,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "dolar30": 0.08
+    "dolar30": 0.01
    },
    {
     "hora": "09:42",
@@ -146,7 +146,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.08
+    "dolar30": 0.01
    },
    {
     "hora": "09:44",
@@ -158,7 +158,7 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": null
+    "dolar30": 0.01
    },
    {
     "hora": "09:48",
@@ -598,7 +598,7 @@
    "em": "2026-11-06T13:05:42+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T10:08-03:00",
+ "atualizado_em": "2026-11-06T10:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -772,6 +772,19 @@
    "tickers": []
   },
   {
+   "titulo": "Nasdaq perde trilhões à medida que \"tsunami azul\" desperta temores sobre IA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcUgtTHZBaW1GUXdVM19GTnhUT1BtSnVEMWlUbVQyWXZoOVIxQmpwRVRYQ0lDS0cxbEZwcXVINXVWNHpvNTE1TVJoUWpSU0JVTlhYNl9GdjhraUxhdGxKbUpKZ0dtZGVrelVRRWYxV2pSQ3BUcERmUUJvMDJIWDV1V05HbEszS25tNG0xV2xFMGxpZkRCQVJTSlN0ZTVIRW93Z0x3dEFMZWxjME5zbUQ0R1RWcDI2VHc1Rzl3UGI4TC1VdnZ0?oc=5",
+   "publicado": "2026-11-06T08:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
+  },
+  {
    "titulo": "Bradesco reduz PIB de 2027 a 0,4%, eleva inflação e adia cortes na Selic para 2027",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNF9xUnQ3cGc1aXlJV29LeDByZzgtOFlFb2RVZmdOVXo3U0QzTDctSFVmSjBFS2pkWUk1ZHAtM1JXM3ZhaEt5ZWRuNnZaSDhHOUtueHVUNjE3MVBqTUJDTDAxblkzNnZMS0NLOEVsQ0VqVEZxSVBLdGRXQy01NGZJZ0VoVGxBU3JuejlrZUhGT2ZXT29lWlZCdXFzZXp4TXVRS0FVNWZ0Nmk1T1ItdkFmQ2lwUHcwQUhSQXN1eGhBWE9mTjJ4c0pfY0ZlVERwcWF3QjdKWUpTNElLTjJUVzBjc1Z5aWV6UnN1R1HSAfgBQVVfeXFMTjdFRml1RnlZbU9YMnhPQ2RoUXhjMDFMeV9MczVfY2FaNXdSTjMtbjZtZGtBRlhwdGFZSW5ncUM4bU9fald4dG1MaVJremw1X1BCd1BncUtfelFiZWs1cXUtZG5jdVVlczludVlLYmVqSU9XV0YwaUtGcXBQeHRnSi1KRjRGN1duUXU2VGdCbkxmVVBxR0NfUzJEX1hvMGljbGtLYm5fbEQ5blJ2Q3VxQTBZTEcxc09DdVBoSXlYX2steGFQU1dTc0FLRF9wa2JhX3dsWWd4aUk4QXR1cWJZSkxBbW01NlNWemRCQ3VZcEV3UG83OGh3WUI?oc=5",
@@ -785,18 +798,6 @@
    "tickers": [
     "BBDC4"
    ]
-  },
-  {
-   "titulo": "Ibovespa acompanha payroll nos EUA em meio à expectativa por discurso de Lula sobre contas públicas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZlczVHdZeUxCNWc4WmNFR0ZhTW8yaFpIa1hEbXpvQVMyei02bDB0NVFSajNGQ3lnRlRTNGxPZkE3MktPaFMwOTl1NHNkSGlVRnJqU19zaG4yOF9oOGhMZ0IxQjNsazA1ZEJfY1R4YkJ4blAzLTBRMERNVmJIam1KTG9jQ0lvSW9PdnVHSFNTMGlhSDE4LU4ySDREZkhjVjJIYjg4OUtaQW9WXzg3UUJ1VEJyOTFvTG1iSmN6cEk2S1RkOU9sLTVGbXZGUlRKcnFfSXQyM09kMXTSAd4BQVVfeXFMTTJZYjdJX0stWEM0Wl9YZDJJVzNMaWpXTjZELVMwU1hGdnRsb3puUHFldUhWRWdiRm1Ecm00LXZ5dGdVSllkMkJrV2k1VzJzVnFGZUlWS0M1czM2VkVrb0Q0OHhpTmhfbzZYNkUyUmI5OWN4blRrMVNyNExfWU5mOVdsU28wVlZFYVlGR2Y0RzlYczJwV0plVEhDMDVucWZqVW9VN3I4NG12eW1QWkRUTUtlRGFfU3VkOUNhcXdsbU9pN3VaUUJyTXNCT3dqNEd2ekxrMFMybEljUFZBT0N3?oc=5",
-   "publicado": "2026-11-06T08:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC tumble",
