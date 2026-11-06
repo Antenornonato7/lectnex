@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T09:58-03:00",
+  "atualizado_em": "2026-11-06T10:00-03:00",
   "dolar": {
    "anterior": 5.5037,
    "pontos": [
@@ -51,11 +51,11 @@
     ],
     [
      "09:55",
-     5.5046
+     5.5019
     ],
     [
-     "09:58",
-     5.5024
+     "10:00",
+     5.5026
     ]
    ]
   },
@@ -109,7 +109,7 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": 0.13
+    "dolar30": 0.08
    },
    {
     "hora": "09:42",
@@ -171,6 +171,19 @@
     "titulo": "Dólar oscila com emprego nos EUA e política econômica no radar",
     "fonte": "CNN Brasil",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPLTFPLU0tb0VBc2hHRU91YWZzeV83MDloMThZdmk4TTBRM0dOeWpVcWJSSFNzQ0dGYjZCaWEtOUNpT1FraWlubE9wYVltWjhYSUtmM2ttS21jMnc2YkRVRUxYSkFTeXB4VzczZjN6UTl0T2xOa0NjdkREMmxiY0h3dWxXYWtjYVlCQzM0ZnBGR21pV2VLQTVuMGdBQWhBSTFGbGdNLQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "09:56",
+    "titulo": "Dólar abre em alta à espera de novos dados de emprego nos EUA",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-a-espera-de-novos-dados-de-emprego-nos-eua.shtml",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -504,6 +517,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar abre em alta à espera de novos dados de emprego nos EUA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-a-espera-de-novos-dados-de-emprego-nos-eua.shtml",
+   "publicado": "2026-11-06T09:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -523,7 +548,7 @@
    "em": "2026-11-06T12:45:38+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T09:58-03:00",
+ "atualizado_em": "2026-11-06T10:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -538,6 +563,30 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar abre em alta à espera de novos dados de emprego nos EUA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-a-espera-de-novos-dados-de-emprego-nos-eua.shtml",
+   "publicado": "2026-11-06T09:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo prorroga imposto sobre exportação de petróleo até 31 de dezembro",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-prorroga-imposto-exportacao-petroleo-31-dezembro/",
+   "publicado": "2026-11-06T09:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar oscila com emprego nos EUA e política econômica no radar",
    "fonte": "CNN Brasil",
@@ -598,18 +647,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Governo Lula prorroga até dezembro imposto de 12% sobre exportação de petróleo",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-lula-prorroga-ate-dezembro-imposto-de-12-sobre-exportacao-de-petroleo.shtml",
-   "publicado": "2026-11-06T09:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -718,18 +755,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Oil prices set for sharp weekly fall after midterm elections as investors weigh Iran conflict risk",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
-   "publicado": "2026-11-06T07:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
