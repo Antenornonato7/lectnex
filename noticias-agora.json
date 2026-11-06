@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T10:35-03:00",
+  "atualizado_em": "2026-11-06T10:38-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -23,7 +23,11 @@
     ],
     [
      "10:20",
-     166383.0
+     166403.0
+    ],
+    [
+     "10:23",
+     166497.0
     ]
    ]
   },
@@ -108,7 +112,11 @@
     ],
     [
      "10:35",
-     5.498
+     5.491
+    ],
+    [
+     "10:38",
+     5.4925
     ]
    ]
   },
@@ -298,7 +306,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": -0.19
    },
    {
     "hora": "10:15",
@@ -769,7 +777,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T10:35-03:00",
+ "atualizado_em": "2026-11-06T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -908,19 +916,6 @@
    "tickers": []
   },
   {
-   "titulo": "Renner vê 2027 mais difícil e deve segurar o ritmo de abertura de lojas, segundo CEO",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/negocios/renner-ve-2027-mais-dificil-e-deve-segurar-o-ritmo-de-abertura-de-lojas-segundo-ceo/",
-   "publicado": "2026-11-06T09:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "LREN3"
-   ]
-  },
-  {
    "titulo": "Dólar sobe em linha com movimento externo e à espera do ‘payroll’",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMGFIRV9wcFdkUlhxVEd6SGZYcmM3NGstRXJKT3RnREUxZGRYMjlsd3k2UEFvLVc1TnRkWXdvUVJzcF9LTVVHQjlaMTM2SFR6bGI1ckFpa1ZTQ1hMNVV2MndSOGRLTzhMMHNoaVpqSTkxYm9yVGEwSTgxQ3k5QlQtZUZaVER2U25qaDhOVU15Zm9ELUZaZkhtMWgxZUpuYkwza0E5VlA2ZFUwQ3ZQaEhhNXdZbEk5VmNMeVBMOE5B0gHMAUFVX3lxTE1ZSnFXaTF3WUFqNjd6V0J1Q2kzZ0pIVmx1QWVuWDREaWN2blhvVzBVLU9MY1NCQ3ByVDZUTWRwWDA2NzRLbjhHbzdDbnZZcDRLVWFxbm85QWdab3A2bGdCSTFTaUN2MFBtbjl3X05HQ3JTaFdYSWZCU1FIMWpyOTV1ekxVZHRyQkJiX1pwcHp5T2hHTWxQckVWb3dIOW4wQWJVMjRwSWhSaHhoaUI0aHdaRWFqOVl6QzFDVUd1bWwwUTVabjljS2RnbS1LSQ?oc=5",
@@ -984,6 +979,18 @@
    "tickers": [
     "BBDC4"
    ]
+  },
+  {
+   "titulo": "Ibovespa acompanha payroll nos EUA em meio à expectativa por discurso de Lula sobre contas públicas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZlczVHdZeUxCNWc4WmNFR0ZhTW8yaFpIa1hEbXpvQVMyei02bDB0NVFSajNGQ3lnRlRTNGxPZkE3MktPaFMwOTl1NHNkSGlVRnJqU19zaG4yOF9oOGhMZ0IxQjNsazA1ZEJfY1R4YkJ4blAzLTBRMERNVmJIam1KTG9jQ0lvSW9PdnVHSFNTMGlhSDE4LU4ySDREZkhjVjJIYjg4OUtaQW9WXzg3UUJ1VEJyOTFvTG1iSmN6cEk2S1RkOU9sLTVGbXZGUlRKcnFfSXQyM09kMXTSAd4BQVVfeXFMTTJZYjdJX0stWEM0Wl9YZDJJVzNMaWpXTjZELVMwU1hGdnRsb3puUHFldUhWRWdiRm1Ecm00LXZ5dGdVSllkMkJrV2k1VzJzVnFGZUlWS0M1czM2VkVrb0Q0OHhpTmhfbzZYNkUyUmI5OWN4blRrMVNyNExfWU5mOVdsU28wVlZFYVlGR2Y0RzlYczJwV0plVEhDMDVucWZqVW9VN3I4NG12eW1QWkRUTUtlRGFfU3VkOUNhcXdsbU9pN3VaUUJyTXNCT3dqNEd2ekxrMFMybEljUFZBT0N3?oc=5",
+   "publicado": "2026-11-06T08:42-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ]
 }
