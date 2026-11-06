@@ -1,17 +1,17 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T10:18-03:00",
+  "atualizado_em": "2026-11-06T10:20-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
     [
      "10:00",
-     166218.0
+     165980.0
     ],
     [
-     "10:03",
-     166215.0
+     "10:05",
+     166005.0
     ]
    ]
   },
@@ -80,11 +80,11 @@
     ],
     [
      "10:15",
-     5.5027
+     5.4969
     ],
     [
-     "10:18",
-     5.5033
+     "10:20",
+     5.4987
     ]
    ]
   },
@@ -201,7 +201,7 @@
      "LREN3"
     ],
     "ibov30": null,
-    "dolar30": 0.09
+    "dolar30": -0.01
    },
    {
     "hora": "09:48",
@@ -215,7 +215,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.09
+    "dolar30": -0.01
    },
    {
     "hora": "09:54",
@@ -229,7 +229,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.11
    },
    {
     "hora": "09:56",
@@ -688,7 +688,7 @@
    "em": "2026-11-06T13:05:42+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T10:18-03:00",
+ "atualizado_em": "2026-11-06T10:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -865,19 +865,6 @@
    "tickers": []
   },
   {
-   "titulo": "Méliuz vende 78 bitcoins para financiar recompra de ações na B3",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTHotUGUtVUlVYU5vVnhXUmNrMGhBVGpsbmtoZkJhZjBQV2VsNUk0MDJzOVFkbzFnb2NILUItNTc5TzU1eExRMkZsY3JhdTRfcTZ2eXJETHBnTnpQSEVkU3UtOE5SQUNZaUVFeE9XM0xWR2RWU2dwMl9aRnFub2pNUFJxc2cyTUJPbEdMbUgtUmNWbEEwdzlzaXhaalhDM0E?oc=5",
-   "publicado": "2026-11-06T09:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
-  },
-  {
    "titulo": "Ibovespa Futuro sobe à espera do payroll nos EUA em dia de cautela global",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWERDMmUtR01KS052bmNSX0xacVpXbldnQmFkU1ZYTnc1bEdtdVdVNjZYaEpocjBWbU5PZkQtYlpMc2JhcFFBQVVDNzRuWHc5aUZQQjVrX2lvTkpyYkNCZzI1dHFvTTNPdXNabzdTSVRHbXJWeWhUVWZjSVY0UEo4LUN2cHB6NnBsSHU2Tk9oc0NtZW1RWFRhQ3d5dDEyOW9JY1Jv0gGoAUFVX3lxTE5qMWM1eHlUdF9pYjFYVTR0UnIyWV96MUNkYlhyTUZ5Y09nQkwyaE5vTzk1eExGYW5hel9wdVhEemM1X3dKbGFQMFc2Q1pxMEhYSXVlY3lDem5hQWEtX3lIT3NDZklqSFNoSTB1RUd1Z3dIMzNVWWNycjQzdUktY0FqVUVYaklLNm81dVAyYUNOU0RENzNiaXE2a1YyRVBiOGJ4RUVzWUt5TQ?oc=5",
@@ -903,6 +890,18 @@
    "tickers": [
     "BBDC4"
    ]
+  },
+  {
+   "titulo": "Ibovespa acompanha payroll nos EUA em meio à expectativa por discurso de Lula sobre contas públicas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZlczVHdZeUxCNWc4WmNFR0ZhTW8yaFpIa1hEbXpvQVMyei02bDB0NVFSajNGQ3lnRlRTNGxPZkE3MktPaFMwOTl1NHNkSGlVRnJqU19zaG4yOF9oOGhMZ0IxQjNsazA1ZEJfY1R4YkJ4blAzLTBRMERNVmJIam1KTG9jQ0lvSW9PdnVHSFNTMGlhSDE4LU4ySDREZkhjVjJIYjg4OUtaQW9WXzg3UUJ1VEJyOTFvTG1iSmN6cEk2S1RkOU9sLTVGbXZGUlRKcnFfSXQyM09kMXTSAd4BQVVfeXFMTTJZYjdJX0stWEM0Wl9YZDJJVzNMaWpXTjZELVMwU1hGdnRsb3puUHFldUhWRWdiRm1Ecm00LXZ5dGdVSllkMkJrV2k1VzJzVnFGZUlWS0M1czM2VkVrb0Q0OHhpTmhfbzZYNkUyUmI5OWN4blRrMVNyNExfWU5mOVdsU28wVlZFYVlGR2Y0RzlYczJwV0plVEhDMDVucWZqVW9VN3I4NG12eW1QWkRUTUtlRGFfU3VkOUNhcXdsbU9pN3VaUUJyTXNCT3dqNEd2ekxrMFMybEljUFZBT0N3?oc=5",
+   "publicado": "2026-11-06T08:42-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ]
 }
