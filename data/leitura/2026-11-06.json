@@ -1,0 +1,154 @@
+{
+ "tipo": "pregao",
+ "data": "2026-11-06",
+ "gerado_em": "2026-11-06T08:20:00-03:00",
+ "titulo": "Payroll às 10h30 num dia de aversão a risco e fiscal ainda em aberto",
+ "resumo": [
+  "O Ibovespa caiu 0,82% na quinta, a 166.191,45 pontos, depois de tocar 169 mil pela manhã; o dólar à vista subiu 0,68%, a R$ 5,4886, com Wall Street em forte queda puxada por chips e data centers (S&P 500 −4,36%, Nasdaq −5,52%).",
+  "A onda vendedora chegou à Ásia: o Nikkei despencou cerca de 6% e o Kospi chegou a cair 8,8%, com parada automática; as bolsas europeias recuam perto de 1,4%, mas os futuros da Nasdaq sobem cerca de 1% e os do Dow caem 0,8%, um quadro misto antes da abertura.",
+  "Às 10h30 sai o payroll de outubro: consenso Reuters de 65 mil vagas (anterior 29 mil), desemprego em 4,2% e salário/hora +0,3% no mês. Nas últimas três divulgações a reação em 30 minutos não teve direção fixa: WIN +0,23% e WDO −0,04% em outubro (abaixo do esperado), WIN −0,38% e WDO +0,14% em setembro (acima), WIN −0,61% e WDO −0,31% em agosto (abaixo).",
+  "No DI, segundo a Reuters, a curva já embute altas de 0,25 p.p. em cada uma das três primeiras reuniões do Copom de 2027, depois da pausa em 13,75%; a produção industrial de setembro (−0,8%, abaixo do esperado) é o contrapeso pelo lado da atividade.",
+  "No fiscal, o pronunciamento de Lula no domingo (8) segue no radar, mas segundo a Reuters o ministro Dario Durigan disse que as decisões sobre medidas devem ficar para depois da viagem do presidente ao exterior, no fim do mês — o que mantém o prêmio de risco no câmbio e na curva."
+ ],
+ "termometro": {
+  "win": {
+   "leitura": "bearish",
+   "motivo": "Aversão global a risco (Ásia e Europa em queda forte), curva de juros pressionada e fiscal sem medidas concretas pesam mais que o repique dos futuros da Nasdaq."
+  },
+  "wdo": {
+   "leitura": "bullish",
+   "motivo": "Busca por proteção fortalece o dólar global e o prêmio fiscal segue alto; o payroll às 10h30 pode ampliar ou inverter o movimento."
+  }
+ },
+ "destaques": [
+  {
+   "hora": "10h30",
+   "evento": "Payroll e desemprego de outubro (EUA)",
+   "por_que": "Consenso de 65 mil vagas e desemprego em 4,2%; mexe em Treasuries, no DXY e, por tabela, no WDO e no DI."
+  },
+  {
+   "hora": "12h",
+   "evento": "Confiança do consumidor Michigan (EUA, nov)",
+   "por_que": "Traz expectativas de inflação do consumidor americano (anterior 48,0); pode mexer nos juros dos EUA."
+  },
+  {
+   "hora": "14h15",
+   "evento": "Fala de Michelle Bowman (Fed)",
+   "por_que": "Leitura do Fed depois do payroll pode mexer no dólar global."
+  },
+  {
+   "hora": "15h",
+   "evento": "Balança comercial de outubro (Secex)",
+   "por_que": "Previsão de superávit de US$ 9,4 bilhões; saldo forte ajuda o fluxo de dólares para o país."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 fut.",
+   "variacao": "+0,19%"
+  },
+  {
+   "ativo": "Nasdaq-100 fut.",
+   "variacao": "+1,08%"
+  },
+  {
+   "ativo": "Dow Jones fut.",
+   "variacao": "−0,77%"
+  },
+  {
+   "ativo": "STOXX 600",
+   "variacao": "−1,39%"
+  },
+  {
+   "ativo": "Nikkei (fech.)",
+   "variacao": "−5,96%"
+  },
+  {
+   "ativo": "Petróleo Brent",
+   "variacao": "−0,54% (US$ 97,76)"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Nikkei despenca 6% e Kospi aciona parada automática; futuros dos EUA mistos à espera do payroll",
+   "fonte": "InfoMoney",
+   "hora": "05h38",
+   "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-cai-a-espera-do-payroll-nikkei-despenca-6-no-japao/",
+   "por_que": "A venda em ações de tecnologia e IA se espalhou pela Ásia e pela Europa; aversão a risco costuma pesar em emergentes, no Ibovespa e no real.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Ibovespa cai 0,82% e dólar sobe 0,68%, a R$ 5,49, com tombo de Wall Street",
+   "fonte": "DGABC (fechamento do mercado)",
+   "hora": "qui 18h36",
+   "url": "https://www.dgabc.com.br/Noticia/4367137/fechamento-do-mercado-financeiro",
+   "por_que": "O índice devolveu a alta da quarta e fechou na mínima do dia, a 166.191 pontos; fechar na mínima indica pressão vendedora que pode continuar na abertura.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Curva de juros já embute altas da Selic no início de 2027, diz Reuters",
+   "fonte": "Reuters (via AOL)",
+   "hora": "qui 15h20",
+   "url": "https://www.aol.com/articles/rate-cut-hopes-fade-brazil-181646000.html",
+   "por_que": "Após a pausa do Copom, a curva aponta altas de 0,25 p.p. nas três primeiras reuniões de 2027; Goldman, XP e Itaú veem Selic parada por muito tempo — juros altos por mais tempo pesam na bolsa e sustentam as taxas do DI.",
+   "impacto": {
+    "win": "baixa",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Lula deve decidir sobre medidas fiscais só depois de viagens ao exterior, diz Durigan",
+   "fonte": "Reuters (via TradingView)",
+   "hora": "qui",
+   "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46M0RP:0-brazil-s-lula-to-decide-on-fiscal-measures-after-foreign-trips-finance-minister-says/",
+   "por_que": "Segundo a Reuters, as medidas ficam para depois do retorno do presidente no fim do mês; o pronunciamento de domingo tende a não trazer detalhes, o que mantém o prêmio de risco.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Produção industrial cai 0,8% em setembro, quinta queda seguida, e acende alerta para o PIB",
+   "fonte": "InfoMoney",
+   "hora": "qui 12h00",
+   "url": "https://www.infomoney.com.br/economia/producao-industrial-setembro-queda-pib-investimentos/",
+   "por_que": "Recuo de 2,2% no trimestre reforça a desaceleração; atividade fraca é argumento contra novas altas de juros e alivia parte da pressão nos vértices do DI.",
+   "impacto": {
+    "di": "baixa"
+   }
+  }
+ ],
+ "fontes": [
+  {
+   "titulo": "InfoMoney — Emprego nos EUA, balança comercial no Brasil, varejo na Europa e mais destaques",
+   "url": "https://www.infomoney.com.br/mercados/payroll-balanca-comercial-brasil-agenda-06112026/"
+  },
+  {
+   "titulo": "InfoMoney — Dow Jones Futuro cai à espera do payroll; Nikkei despenca 6% no Japão",
+   "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-cai-a-espera-do-payroll-nikkei-despenca-6-no-japao/"
+  },
+  {
+   "titulo": "DGABC — Fechamento do mercado financeiro (05/11/2026)",
+   "url": "https://www.dgabc.com.br/Noticia/4367137/fechamento-do-mercado-financeiro"
+  },
+  {
+   "titulo": "Reuters (via AOL) — Rate-cut hopes fade in Brazil as Lula's reelection fans inflation fears",
+   "url": "https://www.aol.com/articles/rate-cut-hopes-fade-brazil-181646000.html"
+  },
+  {
+   "titulo": "Yahoo Finance — Stock market today: futures wobble after brutal sell-off, with key jobs report on deck",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-091927729.html"
+  },
+  {
+   "titulo": "InfoMoney — Queda além do esperado na produção industrial acende alerta para PIB e investimentos",
+   "url": "https://www.infomoney.com.br/economia/producao-industrial-setembro-queda-pib-investimentos/"
+  }
+ ]
+}
