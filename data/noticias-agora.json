@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T14:38-03:00",
+  "atualizado_em": "2026-11-06T15:08-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -215,11 +215,35 @@
     ],
     [
      "14:20",
-     168779.0
+     168780.0
     ],
     [
-     "14:23",
-     168841.0
+     "14:25",
+     168747.0
+    ],
+    [
+     "14:30",
+     168791.0
+    ],
+    [
+     "14:35",
+     168554.0
+    ],
+    [
+     "14:40",
+     168574.0
+    ],
+    [
+     "14:45",
+     168537.0
+    ],
+    [
+     "14:50",
+     168457.0
+    ],
+    [
+     "14:53",
+     168396.0
     ]
    ]
   },
@@ -496,11 +520,35 @@
     ],
     [
      "14:35",
-     5.498
+     5.4985
     ],
     [
-     "14:38",
-     5.4987
+     "14:40",
+     5.4977
+    ],
+    [
+     "14:45",
+     5.5002
+    ],
+    [
+     "14:50",
+     5.5031
+    ],
+    [
+     "14:55",
+     5.4965
+    ],
+    [
+     "15:00",
+     5.4972
+    ],
+    [
+     "15:05",
+     5.4965
+    ],
+    [
+     "15:08",
+     5.4976
     ]
    ]
   },
@@ -1044,6 +1092,20 @@
     "dolar30": -0.05
    },
    {
+    "hora": "13:06",
+    "titulo": "Emprego forte nos EUA deve pressionar Fed a elevar juros e ameaça cortes na Selic",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYWZCY2xKUG1rWnU2Q1RUYVpwLWxFTlM4bW5vdkh0SVJpcGU4MzIycGVTVmhHUTlRWklJMWpEajBjVjFnYlMwUlM5dVVtYVNlVGt2VXZUcVBFWnNESGU3V2c2eXJLdzFBbWJKdVktNEoxUDVRUGdNZWxYMEJLaFF2eC1oZE3SAYQBQVVfeXFMTWFmQmNsSlBta1p1NkNUVGFacC1sRU5TOG1ub3ZIdElSaXBlODMyMnBlU1ZoR1E5UVpJSTFqRGowY1YxZ2JTMFJTOXVVbWFTZVRrdlV2VHFQRVpzREhlN1dnNnlyS3cxQW1iSnVZLTRKMVA1UVBnTWVsWDBCS2hRdngtaGRN?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.04,
+    "dolar30": -0.05
+   },
+   {
     "hora": "13:20",
     "titulo": "Assaí relata alta nas vendas após veto às bets e mira expansão",
     "fonte": "Folha",
@@ -1104,6 +1166,33 @@
     "dolar30": 0.07
    },
    {
+    "hora": "14:00",
+    "titulo": "XP reduz projeção do PIB a 0,3% em 2027; dólar vai a R$ 5,50 e Selic fica em 13,75%",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZSWY1VUp6ZG85ajBSU2pSbUFhQ3ZSRGpLZnJjNFJkbXRRWXZoQklad01RaE1qZFh3bDhaeEFSRjF0Sl91UUJaNXlSeDVGZmVEVlRXSnR1VHhyZHBIYTM5QWxHVGJQWFQ1bmZxa0hXb2tVWVlQSS1IM0ZhVdIBgAFBVV95cUxQd1pVRldkVC1XQjZ0cWZnOS1lMjhIR3h3eVY1LUVDZy1nYkdoMXA4UW9UeEhRNUQ5UnJrX3FPdmQzd29DM3UxTzZHMlVIc09XalRJa3JCZ0xNUmdMRldNdmxfc0FSOVVlbk1CVVBmLUZGWG5TeUN1cjNGLUltOVYzYg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.01,
+    "dolar30": 0.01
+   },
+   {
+    "hora": "14:07",
+    "titulo": "Lula rebate críticas sobre falta de responsabilidade fiscal e diz que pobres não pagarão conta",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/lula-rebate-criticas-responsabilidade-fiscal-pobres-nao-pagarao-conta/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.17,
+    "dolar30": 0.15
+   },
+   {
     "hora": "14:11",
     "titulo": "Cosan dispara mais de 8% e lidera ganhos do Ibovespa hoje; veja maiores altas e baixas",
     "fonte": "Estadão",
@@ -1115,8 +1204,8 @@
     "tickers": [
      "CSAN3"
     ],
-    "ibov30": null,
-    "dolar30": 0.13
+    "ibov30": -0.15,
+    "dolar30": 0.12
    },
    {
     "hora": "14:18",
@@ -1130,6 +1219,60 @@
     "tickers": [
      "CSAN3"
     ],
+    "ibov30": -0.07,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "14:43",
+    "titulo": "Lula volta a defender responsabilidade nas contas e diz que será 'fiscal' de entregas do governo",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-volta-a-defender-responsabilidade-nas-contas-e-diz-que-sera-fiscal-de-entregas-do-governo.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.0
+   },
+   {
+    "hora": "14:46",
+    "titulo": "Watch the Annual Meeting: Cramer on the fate of the AI buildout and stocks to buy now",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/investingclub/2026/11/06/watch-jim-cramer-live.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:56",
+    "titulo": "Ações da Sabesp (SBSP3) sobem após balanço: o que agradou no 3º tri?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY1k2c2R0enp5YXBjTDFGZWIwWGhBTkZfdWNVeERVcHlfbk5UclFhemhVeGpITm9CVDJIcmUtTUNvdnpDZy10bE9Gbi1XeVZHbGlqTDJ4bWNHeWRzSW9ETnVITWdZbndpSlJqMkJCUm5NdTRnSjVtMVZ1aXB0MHJaUGRjVWViMHNBZnlIbENLQ3NST0NkTGVyNTdCemI1MVNUdkMxRlR30gGrAUFVX3lxTE4zWDBjbHhUOWtVWVJLQkM5TUhXRGRYRU1QV2dRS0kzSXc5YzZqWGd2a2pJcDBlU2h1UGJDRkdBSU4ycGh3WkdVRU9wWkpDazdUUTFncGJFYUJWc0NDUWxzc1QtYnVEWFc5OEhoMUlEcEdBR0I0bEE0ZjNnLXhiQjNJakt2c1Q4TC1NQmRFdm5uYTdLb3QwLXprWVhIY1NNSFptVVlPWl85MXBLVQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "SBSP3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:57",
+    "titulo": "Carne, frango e açúcar mais caros? Alta do dólar pode pressionar preços dos alimentos",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX05IYjg5MEVXQm9kemU5SGdSVEVJRjgtUXdMR2J1azhmemozc1RiU2ExbUdBa2s0MjRrMGVxNVZSem4yRkJlUjdRcGVjWk9wa1lpX3VPYjFHcUdNOE5KV3dHVWRoOVJpcks0YUY4YzlGMXdMdWQxeXVwQUFNUUdSQzBYTzQ2aDlxRWJ3Sm9DNGhiek1ZSGZWSFRWWkVueDBLaDg4Zkc4akxFZUhybWN1TWkxd2dQNjZJdW1rWtIBwgFBVV95cUxPWkVOREhxUjZkNmlGX0xhd1pXM2VWVDdpanRsZV9Fdm5LTWxQNUozeV96MFcyVmtabzhmWExkTFo1bUdzYUlqdDlXZkV6WklxUUhORS1mN1RJR3B0cWVtVW9YLUVRbE5FcVhOREF5aTF3S0VjSjhZU2Q0RnNIOG8tNEFmalJWLWdpaG9pVjZkLWdCdlI1MDhJMmUxcmNQSGVkZUZZeGZzSmZ0NEd4M09jUmhSRkJ4b2ZROFp5NFJiWUI3UQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1824,6 +1967,18 @@
    "tickers": []
   },
   {
+   "titulo": "Emprego forte nos EUA deve pressionar Fed a elevar juros e ameaça cortes na Selic",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYWZCY2xKUG1rWnU2Q1RUYVpwLWxFTlM4bW5vdkh0SVJpcGU4MzIycGVTVmhHUTlRWklJMWpEajBjVjFnYlMwUlM5dVVtYVNlVGt2VXZUcVBFWnNESGU3V2c2eXJLdzFBbWJKdVktNEoxUDVRUGdNZWxYMEJLaFF2eC1oZE3SAYQBQVVfeXFMTWFmQmNsSlBta1p1NkNUVGFacC1sRU5TOG1ub3ZIdElSaXBlODMyMnBlU1ZoR1E5UVpJSTFqRGowY1YxZ2JTMFJTOXVVbWFTZVRrdlV2VHFQRVpzREhlN1dnNnlyS3cxQW1iSnVZLTRKMVA1UVBnTWVsWDBCS2hRdngtaGRN?oc=5",
+   "publicado": "2026-11-06T13:06-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Assaí relata alta nas vendas após veto às bets e mira expansão",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/assai-relata-alta-nas-vendas-apos-veto-as-bets-e-mira-expansao.shtml",
@@ -1876,6 +2031,29 @@
    ]
   },
   {
+   "titulo": "XP reduz projeção do PIB a 0,3% em 2027; dólar vai a R$ 5,50 e Selic fica em 13,75%",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZSWY1VUp6ZG85ajBSU2pSbUFhQ3ZSRGpLZnJjNFJkbXRRWXZoQklad01RaE1qZFh3bDhaeEFSRjF0Sl91UUJaNXlSeDVGZmVEVlRXSnR1VHhyZHBIYTM5QWxHVGJQWFQ1bmZxa0hXb2tVWVlQSS1IM0ZhVdIBgAFBVV95cUxQd1pVRldkVC1XQjZ0cWZnOS1lMjhIR3h3eVY1LUVDZy1nYkdoMXA4UW9UeEhRNUQ5UnJrX3FPdmQzd29DM3UxTzZHMlVIc09XalRJa3JCZ0xNUmdMRldNdmxfc0FSOVVlbk1CVVBmLUZGWG5TeUN1cjNGLUltOVYzYg?oc=5",
+   "publicado": "2026-11-06T14:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Lula rebate críticas sobre falta de responsabilidade fiscal e diz que pobres não pagarão conta",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lula-rebate-criticas-responsabilidade-fiscal-pobres-nao-pagarao-conta/",
+   "publicado": "2026-11-06T14:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Cosan dispara mais de 8% e lidera ganhos do Ibovespa hoje; veja maiores altas e baixas",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbXFiSWlDT1NDRTB5RDBmM3lZYXpneExXZnA3blI5c1J4ZnE5dFZpVmtmbXBYQmZRNEtCX1lYUWt3VnNzb0M0OG9OOHNWVWlITXVQVWlrTG5kc3ZkTjBTSVlRYmg3V1NIeDJzNzNYY3BMRXNEa1Fwdk5YZDhsMzZnSXFFVk5PQ2pBYUZtNF9DbFJCQzVBLVBwaUNPLXBQUXJEUWhNM0tTYk8yc1BPaDF4dUVjS0ZwZjhqYUtJYzZvRlUxWUtXOTFjdkdHMkpaMnk3VkRTNXFsbEN5MlXSAeABQVVfeXFMT2I4cE1lY2dTbER4Smd0YnVDaGZPamtweURNSmNNVS1wa3puS212U2lrcWNQT3BwUUpwNGdoMjEtY2VaU0R1LWdTRlVRbTI0UzZwY05rcElncjcySFlhWWhvR2RjdklsTzlwMkl3cWMzZzdOQ0xpbUxza1NIM3RqMk9aSFBUcWZoLTR4amx1VS1aUDNJTXpJWE1CVUZlaTJmYVd0TnNkUi10bmtOVlFuVFZlejFUTFp6Zl96M1lsaUdhMWV4eWNJV0tGczhLekoyd01hdUlYRWhKb2t3NWhYbFc?oc=5",
@@ -1900,6 +2078,52 @@
    "tickers": [
     "CSAN3"
    ]
+  },
+  {
+   "titulo": "Lula volta a defender responsabilidade nas contas e diz que será 'fiscal' de entregas do governo",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-volta-a-defender-responsabilidade-nas-contas-e-diz-que-sera-fiscal-de-entregas-do-governo.shtml",
+   "publicado": "2026-11-06T14:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Watch the Annual Meeting: Cramer on the fate of the AI buildout and stocks to buy now",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/06/watch-jim-cramer-live.html",
+   "publicado": "2026-11-06T14:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ações da Sabesp (SBSP3) sobem após balanço: o que agradou no 3º tri?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY1k2c2R0enp5YXBjTDFGZWIwWGhBTkZfdWNVeERVcHlfbk5UclFhemhVeGpITm9CVDJIcmUtTUNvdnpDZy10bE9Gbi1XeVZHbGlqTDJ4bWNHeWRzSW9ETnVITWdZbndpSlJqMkJCUm5NdTRnSjVtMVZ1aXB0MHJaUGRjVWViMHNBZnlIbENLQ3NST0NkTGVyNTdCemI1MVNUdkMxRlR30gGrAUFVX3lxTE4zWDBjbHhUOWtVWVJLQkM5TUhXRGRYRU1QV2dRS0kzSXc5YzZqWGd2a2pJcDBlU2h1UGJDRkdBSU4ycGh3WkdVRU9wWkpDazdUUTFncGJFYUJWc0NDUWxzc1QtYnVEWFc5OEhoMUlEcEdBR0I0bEE0ZjNnLXhiQjNJakt2c1Q4TC1NQmRFdm5uYTdLb3QwLXprWVhIY1NNSFptVVlPWl85MXBLVQ?oc=5",
+   "publicado": "2026-11-06T14:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "SBSP3"
+   ]
+  },
+  {
+   "titulo": "Carne, frango e açúcar mais caros? Alta do dólar pode pressionar preços dos alimentos",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX05IYjg5MEVXQm9kemU5SGdSVEVJRjgtUXdMR2J1azhmemozc1RiU2ExbUdBa2s0MjRrMGVxNVZSem4yRkJlUjdRcGVjWk9wa1lpX3VPYjFHcUdNOE5KV3dHVWRoOVJpcks0YUY4YzlGMXdMdWQxeXVwQUFNUUdSQzBYTzQ2aDlxRWJ3Sm9DNGhiek1ZSGZWSFRWWkVueDBLaDg4Zkc4akxFZUhybWN1TWkxd2dQNjZJdW1rWtIBwgFBVV95cUxPWkVOREhxUjZkNmlGX0xhd1pXM2VWVDdpanRsZV9Fdm5LTWxQNUozeV96MFcyVmtabzhmWExkTFo1bUdzYUlqdDlXZkV6WklxUUhORS1mN1RJR3B0cWVtVW9YLUVRbE5FcVhOREF5aTF3S0VjSjhZU2Q0RnNIOG8tNEFmalJWLWdpaG9pVjZkLWdCdlI1MDhJMmUxcmNQSGVkZUZZeGZzSmZ0NEd4M09jUmhSRkJ4b2ZROFp5NFJiWUI3UQ?oc=5",
+   "publicado": "2026-11-06T14:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1929,7 +2153,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T14:38-03:00",
+ "atualizado_em": "2026-11-06T15:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1943,6 +2167,64 @@
  ],
  "noticias": [
   {
+   "titulo": "Mississippi Senate: Longshot Ty Pinkins says he aimed to spoil Hyde-Smith, boost Colom vote",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/mississippi-senate-ty-pinkins-colom-hyde-smith.html",
+   "publicado": "2026-11-06T15:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Carne, frango e açúcar mais caros? Alta do dólar pode pressionar preços dos alimentos",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX05IYjg5MEVXQm9kemU5SGdSVEVJRjgtUXdMR2J1azhmemozc1RiU2ExbUdBa2s0MjRrMGVxNVZSem4yRkJlUjdRcGVjWk9wa1lpX3VPYjFHcUdNOE5KV3dHVWRoOVJpcks0YUY4YzlGMXdMdWQxeXVwQUFNUUdSQzBYTzQ2aDlxRWJ3Sm9DNGhiek1ZSGZWSFRWWkVueDBLaDg4Zkc4akxFZUhybWN1TWkxd2dQNjZJdW1rWtIBwgFBVV95cUxPWkVOREhxUjZkNmlGX0xhd1pXM2VWVDdpanRsZV9Fdm5LTWxQNUozeV96MFcyVmtabzhmWExkTFo1bUdzYUlqdDlXZkV6WklxUUhORS1mN1RJR3B0cWVtVW9YLUVRbE5FcVhOREF5aTF3S0VjSjhZU2Q0RnNIOG8tNEFmalJWLWdpaG9pVjZkLWdCdlI1MDhJMmUxcmNQSGVkZUZZeGZzSmZ0NEd4M09jUmhSRkJ4b2ZROFp5NFJiWUI3UQ?oc=5",
+   "publicado": "2026-11-06T14:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ações da Sabesp (SBSP3) sobem após balanço: o que agradou no 3º tri?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY1k2c2R0enp5YXBjTDFGZWIwWGhBTkZfdWNVeERVcHlfbk5UclFhemhVeGpITm9CVDJIcmUtTUNvdnpDZy10bE9Gbi1XeVZHbGlqTDJ4bWNHeWRzSW9ETnVITWdZbndpSlJqMkJCUm5NdTRnSjVtMVZ1aXB0MHJaUGRjVWViMHNBZnlIbENLQ3NST0NkTGVyNTdCemI1MVNUdkMxRlR30gGrAUFVX3lxTE4zWDBjbHhUOWtVWVJLQkM5TUhXRGRYRU1QV2dRS0kzSXc5YzZqWGd2a2pJcDBlU2h1UGJDRkdBSU4ycGh3WkdVRU9wWkpDazdUUTFncGJFYUJWc0NDUWxzc1QtYnVEWFc5OEhoMUlEcEdBR0I0bEE0ZjNnLXhiQjNJakt2c1Q4TC1NQmRFdm5uYTdLb3QwLXprWVhIY1NNSFptVVlPWl85MXBLVQ?oc=5",
+   "publicado": "2026-11-06T14:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "SBSP3"
+   ]
+  },
+  {
+   "titulo": "Watch the Annual Meeting: Cramer on the fate of the AI buildout and stocks to buy now",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/06/watch-jim-cramer-live.html",
+   "publicado": "2026-11-06T14:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Lula volta a defender responsabilidade nas contas e diz que será 'fiscal' de entregas do governo",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/lula-volta-a-defender-responsabilidade-nas-contas-e-diz-que-sera-fiscal-de-entregas-do-governo.shtml",
+   "publicado": "2026-11-06T14:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Cosan dispara mais de 8% e lidera ganhos do Ibovespa hoje; veja maiores altas e baixas",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdENwaXQ1TjJmOFBVX2E1N201dWJZWHRlQy1MLUx1bnBSM3VPS2NlR0NXLVVBSE5FZnA3TXdqdXV1T1MzRklCaVFybWdmZ2ZyVUpiSE9oeDFWbHVaSzBuc0JaYWdlclY4SThkOGx4OERFR2FlOF9pQkJ4TGFkem9ETFlaMXBMZnlQRlJpaWotMXRmRTNLbDZ2cVF5N3hkbmRqZ1FfVmthNE9FR2loZDk2VGhEaHBKMy1xemZFZDBIRFR6TU5YVjlMRlVoQUl0Tng3N2pwODJ4anJMSjh2WUdEeXZUZlJ0dw?oc=5",
@@ -1954,6 +2236,29 @@
    "tickers": [
     "CSAN3"
    ]
+  },
+  {
+   "titulo": "Lula rebate críticas sobre falta de responsabilidade fiscal e diz que pobres não pagarão conta",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lula-rebate-criticas-responsabilidade-fiscal-pobres-nao-pagarao-conta/",
+   "publicado": "2026-11-06T14:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "XP reduz projeção do PIB a 0,3% em 2027; dólar vai a R$ 5,50 e Selic fica em 13,75%",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZSWY1VUp6ZG85ajBSU2pSbUFhQ3ZSRGpLZnJjNFJkbXRRWXZoQklad01RaE1qZFh3bDhaeEFSRjF0Sl91UUJaNXlSeDVGZmVEVlRXSnR1VHhyZHBIYTM5QWxHVGJQWFQ1bmZxa0hXb2tVWVlQSS1IM0ZhVdIBgAFBVV95cUxQd1pVRldkVC1XQjZ0cWZnOS1lMjhIR3h3eVY1LUVDZy1nYkdoMXA4UW9UeEhRNUQ5UnJrX3FPdmQzd29DM3UxTzZHMlVIc09XalRJa3JCZ0xNUmdMRldNdmxfc0FSOVVlbk1CVVBmLUZGWG5TeUN1cjNGLUltOVYzYg?oc=5",
+   "publicado": "2026-11-06T14:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Small caps: BB Investimentos escolhe C&A (CEAB3), Marcopolo (POMO3) e mais 8 ações para novembro",
@@ -1993,6 +2298,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ação da Vivara (VIVA3) despenca após balanço do 3º trimestre; do que o mercado não gostou?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQR1I5NHRkTVZZN25rcnNNUEZ1WkJST19OR3ZGOEY2bTVGUnhYS2dCSkFRSVBzMjFWOWpkSmtMS093S1FlVGF4UzVBWWhGaTVMUDdhTmFUOGFBNG0wcGZWX3hZcHZFNTQ3MzBGb1hELW96MnZ4dWhsRG9RLVl5VW1sVXlpUQ?oc=5",
+   "publicado": "2026-11-06T13:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VIVA3"
+   ]
+  },
+  {
    "titulo": "Assaí relata alta nas vendas após veto às bets e mira expansão",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/assai-relata-alta-nas-vendas-apos-veto-as-bets-e-mira-expansao.shtml",
@@ -2006,18 +2324,6 @@
    ]
   },
   {
-   "titulo": "Oil prices set for sharp weekly fall after midterm elections as investors weigh Iran conflict risk",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
-   "publicado": "2026-11-06T13:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa sobe e dólar cai com emprego nos EUA, política econômica e balanço",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPLTFPLU0tb0VBc2hHRU91YWZzeV83MDloMThZdmk4TTBRM0dOeWpVcWJSSFNzQ0dGYjZCaWEtOUNpT1FraWlubE9wYVltWjhYSUtmM2ttS21jMnc2YkRVRUxYSkFTeXB4VzczZjN6UTl0T2xOa0NjdkREMmxiY0h3dWxXYWtjYVlCQzM0ZnBGR21pV2VLQTVuMGdBQWhBSTFGbGdNLQ?oc=5",
@@ -2025,56 +2331,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe mais de 1% com Payroll acima do esperado nos EUA e expectativa por discurso de Lula",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZlczVHdZeUxCNWc4WmNFR0ZhTW8yaFpIa1hEbXpvQVMyei02bDB0NVFSajNGQ3lnRlRTNGxPZkE3MktPaFMwOTl1NHNkSGlVRnJqU19zaG4yOF9oOGhMZ0IxQjNsazA1ZEJfY1R4YkJ4blAzLTBRMERNVmJIam1KTG9jQ0lvSW9PdnVHSFNTMGlhSDE4LU4ySDREZkhjVjJIYjg4OUtaQW9WXzg3UUJ1VEJyOTFvTG1iSmN6cEk2S1RkOU9sLTVGbXZGUlRKcnFfSXQyM09kMXTSAd4BQVVfeXFMTTJZYjdJX0stWEM0Wl9YZDJJVzNMaWpXTjZELVMwU1hGdnRsb3puUHFldUhWRWdiRm1Ecm00LXZ5dGdVSllkMkJrV2k1VzJzVnFGZUlWS0M1czM2VkVrb0Q0OHhpTmhfbzZYNkUyUmI5OWN4blRrMVNyNExfWU5mOVdsU28wVlZFYVlGR2Y0RzlYczJwV0plVEhDMDVucWZqVW9VN3I4NG12eW1QWkRUTUtlRGFfU3VkOUNhcXdsbU9pN3VaUUJyTXNCT3dqNEd2ekxrMFMybEljUFZBT0N3?oc=5",
-   "publicado": "2026-11-06T13:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dasa (DASA3) dispara 20% após balanço com geração de caixa acima das expectativas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb2p3bi1tWXgtVDY1ejMtVXFiWTl6VlJ5U1ZYR2hWd09UR1FZbF9HaFd4cGRhb1g1eHJOVFJlTnhIeDFucklPdnVOb1lONzhqRlhVMllUY29rSEJ3R3B5TFNMVklmZFNfZjJfMC00dG9Tb2Yxd25KX2JiZ21hd3FKeDNDcURHd3IwYWxxVFZ3bjdBV0FuMWRoQmxxMnQ1bjM3UHA2WjRPdHg2enFKOVpoUVFBOTN2TlRB0gG-AUFVX3lxTE5GV2RLdGs1ZEdRQXZncU1qR1FnQ1VmRWd1Qm9OTmZmODl6UjZFaEZwNmlHUjFadVhPeTJVOWVNSXFPWWZldnNDRmJMNml6SWF5NTNQb29zZ1BlS3Z0OE8yQUJoQ0U2Z3loSUdXcFFuVV9YTGpWSndLRUw4N1FxbnMxdnFLYklLaGpMWEFYZlMtSm5Ld0sycWQyRk5UWk9KRXNCQzNwYXp0R1hqNGJacldHWTVwNXlDQUN5ZVpfV1E?oc=5",
-   "publicado": "2026-11-06T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "DASA3"
-   ]
-  },
-  {
-   "titulo": "Ânima (ANIM3) salta cerca de 10% após balanço do 3T26; veja o que agradou o mercado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVHVXZXhJaXNDU3N2MFBkTklUaVpfRVhUaUJieUtjS2h0aENZeDlFakpEU1k1eWtJN3B5blZSMFNjWUs3bVNlQUp5Z0dMTWFuR2RzYTh5cFZQU3BnRVJBVjBoRzBscnNHaE5majBiMGdEYndXUE9TWHBKaTRnWjlHS2xVOWtEa1ltU25wM0l3bjVENC1XSlRXONIBngFBVV95cUxQQVdiSjlUeXNGaWVNRzJmcWdUUHVDWDE0RGVvQVliS3BuM2tOZS1SYWNUYm9wQ3FybHgyYm42X2hSU1U5RE5iWTZyRFpyRFNDZEhya0JQZnZINEpDVDBxUFRqTHFuNHVMLVQ2aHdRR19oajl4SldYbzVHTXE0U3VFZzBVNTVxRDV1M2RqNXQ4a2k1MXZROHpIZkM1WEo0UQ?oc=5",
-   "publicado": "2026-11-06T12:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ANIM3"
-   ]
-  },
-  {
-   "titulo": "Tesouro Selic, CDB, LCI/LCA ou Poupança? Quanto rendem R$ 10 mil com juros a 13,75%",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSnYySVlsRE5lbDhvVG9iRW1yRGUxUXQ2ajdxY0s5Q1NDendoRFFBYzFWN2pMd1oxNk94aUlfZGtRcnFCM2NFY0ItT21EOXFOdXlNek5BQmVabHdfZ2dBX3A5ZXoxalQzVWV4NWUxeU5ZcXppblFpMXZNUFc5Vi13N19sTXFSMFN4MFpKY1F0azBYeFdlU1lta2N1bDZ4U2ZlOVUxQXo0MlhQbGN1cFdnWExScw?oc=5",
-   "publicado": "2026-11-06T12:43-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
@@ -2102,19 +2358,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ação da Vivara (VIVA3) lidera perdas do Ibovespa após balanço do 3º tri",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUHZvS3h4ek9HNExNTEYxMVZiRThPbEdhZmE0blBnRVZWTjFsUUxGZGpsZ2Q0b2xRMXVKWDNqUVJFOU5vYVRJUjl4aXp1MDhNaXVPRC1Hd0dHVTh1LWZZWDZyTXFBVGc3SWhYeUF0OW1qX0FBTV9nNnJGV2pxX2RlWk85aG9aMGR1WlJCWnFyWjFXSENuTzUzUi0tU1VRY3JxOEFVV2dQWHVmcmUy0gGyAUFVX3lxTE9nOGhHVmdIZ3dSX2V0ZGx4WUNGUkpBU3dvRzdMRFMxT1hBZ0labUh4N2lRSXBsQzRlMG9GQllXNmpsZzdITlAwWUNYaXotTFFWNDREbU9QTGZxNzBrRGcxb2JWdk1JRHpzb3MxRXdxelZnVko3dEtmdU1XcHY5U016NnlOYWJXWkpEajlqcXZCQjJZaWJCMDRiUFdfMWdhWkFoUHJBRkdqelJtcWk4OFMzVUE?oc=5",
-   "publicado": "2026-11-06T12:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "VIVA3"
-   ]
   }
  ]
 }
