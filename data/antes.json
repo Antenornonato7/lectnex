@@ -1,1 +1,206 @@
-{}
+{
+ "data": "2026-11-06",
+ "tipo": "payroll",
+ "curto": "Payroll",
+ "evento": "Payroll — criação de vagas (out)",
+ "hora": "10h30",
+ "pais": "US",
+ "consenso": "55 mil",
+ "anterior": "29 mil",
+ "passadas": [
+  {
+   "data": "2026-10-02",
+   "evento": "Payroll — criação de vagas (set)",
+   "resultado": "29 mil",
+   "consenso": "90 mil",
+   "surpresa": "abaixo",
+   "win": 0.234,
+   "wdo": -0.035,
+   "abertura": true,
+   "janela": "30min"
+  },
+  {
+   "data": "2026-09-04",
+   "evento": "Payroll — criação de vagas (ago)",
+   "resultado": "162 mil",
+   "consenso": "55 mil",
+   "surpresa": "acima",
+   "win": -0.378,
+   "wdo": 0.137,
+   "abertura": true,
+   "janela": "30min"
+  },
+  {
+   "data": "2026-08-07",
+   "evento": "Payroll — criação de vagas (jul)",
+   "resultado": "-23 mil",
+   "consenso": "85 mil",
+   "surpresa": "abaixo",
+   "win": -0.609,
+   "wdo": -0.305,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-07-02",
+   "evento": "Payroll — criação de vagas (jun)",
+   "resultado": "57 mil",
+   "consenso": "114 mil",
+   "surpresa": "abaixo",
+   "win": 1.008,
+   "wdo": -0.493,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-06-05",
+   "evento": "Payroll — criação de vagas (mai)",
+   "resultado": "172 mil",
+   "consenso": "85 mil",
+   "surpresa": "acima",
+   "win": -0.26,
+   "wdo": 0.833,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-05-08",
+   "evento": "Payroll — criação de vagas (abr)",
+   "resultado": "115 mil",
+   "consenso": "65 mil",
+   "surpresa": "acima",
+   "win": 1.096,
+   "wdo": -0.654,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-04-03",
+   "evento": "Payroll — criação de vagas (mar)",
+   "resultado": "178 mil",
+   "consenso": "65 mil",
+   "surpresa": "acima",
+   "win": 0.11,
+   "wdo": 0.0,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-03-06",
+   "evento": "Payroll — criação de vagas (fev)",
+   "resultado": "-92 mil",
+   "consenso": "58 mil",
+   "surpresa": "abaixo",
+   "win": -0.986,
+   "wdo": 0.038,
+   "abertura": false,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-02-11",
+   "evento": "Payroll — criação de vagas (jan)",
+   "resultado": "130 mil",
+   "consenso": "66 mil",
+   "surpresa": "acima",
+   "win": 1.549,
+   "wdo": 0.012,
+   "abertura": false,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-01-09",
+   "evento": "Payroll — criação de vagas (dez)",
+   "resultado": "50 mil",
+   "consenso": "60 mil",
+   "surpresa": "em linha",
+   "win": 0.635,
+   "wdo": -0.431,
+   "abertura": false,
+   "janela": "1h"
+  },
+  {
+   "data": "2025-12-16",
+   "evento": "Payroll — criação de vagas (nov)",
+   "resultado": "64 mil",
+   "consenso": "50 mil",
+   "surpresa": "acima",
+   "win": -1.45,
+   "wdo": 0.278,
+   "abertura": false,
+   "janela": "1h"
+  },
+  {
+   "data": "2025-11-20",
+   "evento": "Payroll — criação de vagas (out)",
+   "resultado": "119 mil",
+   "consenso": "50 mil",
+   "surpresa": "acima",
+   "win": 0.003,
+   "wdo": -0.145,
+   "abertura": true,
+   "janela": "1h"
+  }
+ ],
+ "divulgacoes": {
+  "win": {
+   "n": 23,
+   "sobe": 52,
+   "mediana": 0.0,
+   "movimento": 0.76
+  },
+  "wdo": {
+   "n": 23,
+   "sobe": 43,
+   "mediana": -0.01,
+   "movimento": 0.44
+  },
+  "desde": "2024-11-01"
+ },
+ "por_surpresa": {
+  "acima": {
+   "win": {
+    "n": 12,
+    "sobe": 42,
+    "mediana": -0.21,
+    "movimento": 0.88
+   },
+   "wdo": {
+    "n": 12,
+    "sobe": 58,
+    "mediana": 0.07,
+    "movimento": 0.45
+   }
+  },
+  "abaixo": {
+   "win": {
+    "n": 8,
+    "sobe": 50,
+    "mediana": -0.08,
+    "movimento": 0.64
+   },
+   "wdo": {
+    "n": 8,
+    "sobe": 25,
+    "mediana": -0.36,
+    "movimento": 0.52
+   }
+  }
+ },
+ "manchetes": {
+  "tema": "emprego",
+  "nome": "Emprego e payroll",
+  "win": {
+   "n": 1,
+   "sobe": 0,
+   "mediana": -0.75,
+   "movimento": 0.75
+  },
+  "wdo": {
+   "n": 2,
+   "sobe": 100,
+   "mediana": 0.32,
+   "movimento": 0.32
+  }
+ },
+ "gerado_em": "2026-11-06T07:20-03:00"
+}
