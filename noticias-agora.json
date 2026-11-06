@@ -1,7 +1,20 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T10:15-03:00",
+  "atualizado_em": "2026-11-06T10:18-03:00",
+  "ibov": {
+   "anterior": 166191.45,
+   "pontos": [
+    [
+     "10:00",
+     166218.0
+    ],
+    [
+     "10:03",
+     166215.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.5037,
    "pontos": [
@@ -67,7 +80,11 @@
     ],
     [
      "10:15",
-     5.5031
+     5.5027
+    ],
+    [
+     "10:18",
+     5.5033
     ]
    ]
   },
@@ -82,6 +99,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.13
    },
    {
@@ -95,6 +113,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.16
    },
    {
@@ -109,6 +128,7 @@
     "tickers": [
      "B3SA3"
     ],
+    "ibov30": null,
     "dolar30": 0.09
    },
    {
@@ -121,6 +141,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.08
    },
    {
@@ -137,6 +158,7 @@
     "tickers": [
      "BBDC4"
     ],
+    "ibov30": null,
     "dolar30": 0.04
    },
    {
@@ -150,6 +172,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.04
    },
    {
@@ -162,6 +185,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.04
    },
    {
@@ -176,7 +200,8 @@
     "tickers": [
      "LREN3"
     ],
-    "dolar30": 0.1
+    "ibov30": null,
+    "dolar30": 0.09
    },
    {
     "hora": "09:48",
@@ -189,7 +214,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.1
+    "ibov30": null,
+    "dolar30": 0.09
    },
    {
     "hora": "09:54",
@@ -202,6 +228,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": null
    },
    {
@@ -215,6 +242,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": null
    },
    {
@@ -231,6 +259,7 @@
      "BBDC4",
      "BPAC11"
     ],
+    "ibov30": null,
     "dolar30": null
    },
    {
@@ -244,6 +273,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -658,7 +688,7 @@
    "em": "2026-11-06T13:05:42+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T10:15-03:00",
+ "atualizado_em": "2026-11-06T10:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -673,6 +703,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Nvidia aguarda liberação da China para enviar 600 mil chips ao país",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/nvidia-aguarda-liberacao-da-china-para-enviar-600-mil-chips-ao-pais.shtml",
+   "publicado": "2026-11-06T10:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar hoje opera perto da estabilidade antes de dados de emprego nos EUA",
    "fonte": "InfoMoney",
@@ -844,17 +886,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
-   "publicado": "2026-11-06T09:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
