@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T10:48-03:00",
+  "atualizado_em": "2026-11-06T10:50-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -31,11 +31,11 @@
     ],
     [
      "10:30",
-     166443.0
+     166428.0
     ],
     [
-     "10:33",
-     166371.0
+     "10:35",
+     166510.0
     ]
    ]
   },
@@ -128,11 +128,11 @@
     ],
     [
      "10:45",
-     5.5031
+     5.5048
     ],
     [
-     "10:48",
-     5.5055
+     "10:50",
+     5.5081
     ]
    ]
   },
@@ -321,7 +321,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.31,
     "dolar30": -0.16
    },
    {
@@ -350,7 +350,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.11
    },
    {
     "hora": "10:47",
@@ -817,7 +817,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T10:48-03:00",
+ "atualizado_em": "2026-11-06T10:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -875,6 +875,18 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tempo real: Ibovespa sobe após dados de emprego dos EUA virem acima do esperado",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TaDN1TWlwQzF1YmxPR0JjaFNNcW5LV2FDN2RWRWIyQ3ZXZWcyUUhzT0NBLUZXTGwtVmVUZEdkSi05RVdaVnZBQ05vd1pPLTRHcG5zV251ZDZhOUo2cjZ3bWxvczk?oc=5",
+   "publicado": "2026-11-06T10:14-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "DI"
    ],
    "tickers": []
@@ -965,19 +977,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Renner vê 2027 mais difícil e deve segurar o ritmo de abertura de lojas, segundo CEO",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/negocios/renner-ve-2027-mais-dificil-e-deve-segurar-o-ritmo-de-abertura-de-lojas-segundo-ceo/",
-   "publicado": "2026-11-06T09:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "LREN3"
-   ]
   },
   {
    "titulo": "Menos crescimento, mais inflação, Selic meio parada: o que o Bradesco espera para 2027",
