@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T13:45-03:00",
+  "atualizado_em": "2026-11-06T13:48-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -175,7 +175,11 @@
     ],
     [
      "13:30",
-     168772.0
+     168693.0
+    ],
+    [
+     "13:33",
+     168719.0
     ]
    ]
   },
@@ -412,7 +416,11 @@
     ],
     [
      "13:45",
-     5.491
+     5.4901
+    ],
+    [
+     "13:48",
+     5.493
     ]
    ]
   },
@@ -941,7 +949,7 @@
      "ASAI3"
     ],
     "ibov30": null,
-    "dolar30": -0.16
+    "dolar30": -0.17
    },
    {
     "hora": "13:22",
@@ -956,7 +964,7 @@
      "VIVA3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.12
    },
    {
     "hora": "13:38",
@@ -1705,7 +1713,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T13:45-03:00",
+ "atualizado_em": "2026-11-06T13:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1789,19 +1797,6 @@
    ],
    "tickers": [
     "DASA3"
-   ]
-  },
-  {
-   "titulo": "Ânima (ANIM3) salta cerca de 10% após balanço do 3T26; veja o que agradou o mercado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVHVXZXhJaXNDU3N2MFBkTklUaVpfRVhUaUJieUtjS2h0aENZeDlFakpEU1k1eWtJN3B5blZSMFNjWUs3bVNlQUp5Z0dMTWFuR2RzYTh5cFZQU3BnRVJBVjBoRzBscnNHaE5majBiMGdEYndXUE9TWHBKaTRnWjlHS2xVOWtEa1ltU25wM0l3bjVENC1XSlRXONIBngFBVV95cUxQQVdiSjlUeXNGaWVNRzJmcWdUUHVDWDE0RGVvQVliS3BuM2tOZS1SYWNUYm9wQ3FybHgyYm42X2hSU1U5RE5iWTZyRFpyRFNDZEhya0JQZnZINEpDVDBxUFRqTHFuNHVMLVQ2aHdRR19oajl4SldYbzVHTXE0U3VFZzBVNTVxRDV1M2RqNXQ4a2k1MXZROHpIZkM1WEo0UQ?oc=5",
-   "publicado": "2026-11-06T12:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ANIM3"
    ]
   },
   {
@@ -1900,14 +1895,26 @@
    "tickers": []
   },
   {
-   "titulo": "Tempo real: Ibovespa sobe após dados de emprego dos EUA virem acima do esperado",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TaDN1TWlwQzF1YmxPR0JjaFNNcW5LV2FDN2RWRWIyQ3ZXZWcyUUhzT0NBLUZXTGwtVmVUZEdkSi05RVdaVnZBQ05vd1pPLTRHcG5zV251ZDZhOUo2cjZ3bWxvczk?oc=5",
-   "publicado": "2026-11-06T10:48-03:00",
-   "impacto": "alto",
+   "titulo": "Big techs perdem mais que uma B3 inteira em um único dia",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/big-techs-perdem-mais-que-uma-b3-inteira-em-um-unico-dia.shtml",
+   "publicado": "2026-11-06T11:26-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
-    "DI"
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "O campo está punindo quem o trata como instrumento: da política em Brasília às tarifas em Washington",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/marcello-brito/o-campo-esta-punindo-quem-o-trata-como-instrumento-da-politica-em-brasilia-as-tarifas-em-washington/",
+   "publicado": "2026-11-06T11:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   }
