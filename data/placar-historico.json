@@ -24,7 +24,31 @@
     "win": true,
     "wdo": null
    }
+  },
+  {
+   "data": "2026-11-06",
+   "tipo": "payroll",
+   "evento": "Payroll",
+   "hora": "10h30",
+   "surpresa": "acima",
+   "base": "surpresa",
+   "sobe": {
+    "win": 42,
+    "wdo": 58
+   },
+   "n": {
+    "win": 12,
+    "wdo": 12
+   },
+   "reacao": {
+    "win": 0.097,
+    "wdo": 0.255
+   },
+   "acerto": {
+    "win": null,
+    "wdo": null
+   }
   }
  ],
- "atualizado_em": "2026-11-05T19:10:29-03:00"
+ "atualizado_em": "2026-11-06T19:10:27-03:00"
 }
