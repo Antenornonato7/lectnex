@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T10:08-03:00",
+  "atualizado_em": "2026-11-06T10:38-03:00",
+  "ibov": {
+   "anterior": 166191.45,
+   "pontos": [
+    [
+     "10:00",
+     165980.0
+    ],
+    [
+     "10:05",
+     165997.0
+    ],
+    [
+     "10:10",
+     166362.0
+    ],
+    [
+     "10:15",
+     166252.0
+    ],
+    [
+     "10:20",
+     166403.0
+    ],
+    [
+     "10:23",
+     166497.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.5037,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.5014
+     5.5013
     ],
     [
-     "10:08",
-     5.501
+     "10:10",
+     5.4989
+    ],
+    [
+     "10:15",
+     5.4969
+    ],
+    [
+     "10:20",
+     5.5021
+    ],
+    [
+     "10:25",
+     5.4966
+    ],
+    [
+     "10:30",
+     5.5009
+    ],
+    [
+     "10:35",
+     5.491
+    ],
+    [
+     "10:38",
+     5.4925
     ]
    ]
   },
@@ -78,6 +131,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.13
    },
    {
@@ -91,6 +145,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.16
    },
    {
@@ -105,6 +160,7 @@
     "tickers": [
      "B3SA3"
     ],
+    "ibov30": null,
     "dolar30": 0.09
    },
    {
@@ -117,6 +173,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.08
    },
    {
@@ -133,7 +190,8 @@
     "tickers": [
      "BBDC4"
     ],
-    "dolar30": 0.08
+    "ibov30": null,
+    "dolar30": 0.04
    },
    {
     "hora": "09:42",
@@ -146,7 +204,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.08
+    "ibov30": null,
+    "dolar30": 0.04
    },
    {
     "hora": "09:44",
@@ -158,7 +217,8 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": 0.04
    },
    {
     "hora": "09:48",
@@ -172,7 +232,8 @@
     "tickers": [
      "LREN3"
     ],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.01
    },
    {
     "hora": "09:48",
@@ -185,7 +246,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.01
    },
    {
     "hora": "09:54",
@@ -198,7 +260,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.05
    },
    {
     "hora": "09:56",
@@ -211,6 +274,66 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.1
+   },
+   {
+    "hora": "09:58",
+    "titulo": "Bradesco BBI rebaixa B3 em cenário de juro alto; XP e BTG têm recomendação de compra",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWxvSC1SWTVhOTVlamo0bGpkRklKVGFuN1VvRklMMVA1RFM3R0hMS0tkY09MUzhwaXJjVHNoV0NhbC1kbGVLTmZVUkM1eEh2d3VnQnpZSkVSX29uSXF0UG4xMHFJMXI1R015MmVjcFktV24xQlp6T29BOGlxbkRnS3daTzVjWEpUV0VKYTd4TjNOblVRWm1hMTBqN19GQ2tvYnJHN3YxMktyQU5jWnRzQnhvaHhSZEZKVmE3bUtsY9IBxAFBVV95cUxOWHdEbUY1ZkZld2RrQk9IVzF0aVVGNGt3dUdtM3dvcl9ON0xYNTE2MUFfUmVtaW80T3NEYTRMdVhmanBnZHNZTWE4YVkwVjZVejRrYU1lTWpOaERlR1NLZkNlSXN0ZXBVbFY4QlZvSXB6OXc5TWt0T3BfMkQyTl9ZVHhrcW54VklsTEZjVV9WeVZfUVpHcjJ4UW52d3lVS1VMczB0N2JrZU40SnFxSGY3YlIxNVFkZ2diUm9Sd2FJMHdHQ0FR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3",
+     "BBDC4",
+     "BPAC11"
+    ],
+    "ibov30": null,
+    "dolar30": -0.1
+   },
+   {
+    "hora": "10:09",
+    "titulo": "Dólar hoje opera perto da estabilidade antes de dados de emprego nos EUA",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd01vakpZTEFhWURtYUVkOENaYy1BRnlFUUVuVVFtTERGQ0VfQlJiVWhtTWFVbVU1ekM0cW1HelhPZGQweGstcDc3SWdNRlU2ekZuU0NRd01FOFRDUmRVSGtXYVF5QXFiWDdwLW90Wkc1N0p6c3lPbnoyNlFJSUQ1aXZXeFJNcVllZ0pnMzJFX1dvdWplMmNoNFkxN3LSAaIBQVVfeXFMT3ZodGhLNnpQc3RqSVFjT0hZaUwxNlB4dTBPY0tDTENRaWVhN0FRcndMcUFsZWVjMDZsNkVvd0xHQWFyc1VyY3Q3VF9DajhWWWtsSUZwSkRZZkN0WEtMaGtGTnRDTG41dGNxNW9qWXEyemNGbWp2LVpOVzRrSVVyYXJ0WHpyNEo5QVJ4QU9QcWhzOXBNbzUyVnBmYXVCYlRkS19R?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.19
+   },
+   {
+    "hora": "10:15",
+    "titulo": "Tesouro segura prêmio alto antes do payroll; Prefixado 2032 fica em 15,17%",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaXdNU25jRk1xOWtsTklUSGJtMDlyeHpDZUtzM0hUMFZtU1JZZnpkczgyS082V2lKc282N3ctMkx0ZlFYeVdvUlppUnZkWGFZdXZ1Vkg5T3NVcHVFWWFkSkZ0cWxSMlZ6VG40WFJOb3BCMEZJNnhrd0lnUTBYcHMxUjZSdnBNS0ttd2h0OEhfaEx5QU4zN015R3Q3U0VMS0F1Zy15YXo0MGNDLXlOcExZWEtpMW9rVTFoNmp1LTdvam52WEpESEJGZlpn0gHPAUFVX3lxTE13ZjBNX1pVRUNHNU9ZbVVpUmRUbXBfdTZlbmNUUloxOFUwVG4ybnJPMUExN2NnQzVLN0NpZUwtTnZWTXc0NmRiYTdueEYyNUZFZjlXd1hMbXFncDhOdFRZaC1jVzZuUU1kYmJ1aEtrY0VoN2FfMmxUOXZmYllLVDFibnhPdkNwVmpLSXNFVzdXc0NablM3cnFmcGc2VTkxeFp6cEw4ZmZMTlFpMmZpZWFFNkpMaW9nQzM3bllTWDJHUTU5VnU3RUNkOHBYVVZjTQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:23",
+    "titulo": "Ibovespa opera próximo da estabilidade com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (6)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQ1VQeHZyT2ZPeDR4c2IxZ2dhYkcxSGVPb0tnWG9PeVFwR2ZYVV8walNra0cxUVNBcHFvY1RDckZLUm5zZW5mMTJZaFRNY2U4MmRWOUxYc1QzU0JxMlByM0JYQ19qR1VzbmpvbVVwSTEwVFE1WjYtRDZyTlB3MHdUa1FMYlJWZ2pfdGRCTjBRSG5qUHNFVnhubmpCanBaOTdTLWJ4VmFZckhQVG1CTXl1WEtTOUNkekktOW84UG5zV1NmVlRYalFWdHE5c3lQZkNGbmZvYm5fVnFfNXNjOG04TUNKYWZpM1V6SGc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -574,6 +697,57 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Bradesco BBI rebaixa B3 em cenário de juro alto; XP e BTG têm recomendação de compra",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWxvSC1SWTVhOTVlamo0bGpkRklKVGFuN1VvRklMMVA1RFM3R0hMS0tkY09MUzhwaXJjVHNoV0NhbC1kbGVLTmZVUkM1eEh2d3VnQnpZSkVSX29uSXF0UG4xMHFJMXI1R015MmVjcFktV24xQlp6T29BOGlxbkRnS3daTzVjWEpUV0VKYTd4TjNOblVRWm1hMTBqN19GQ2tvYnJHN3YxMktyQU5jWnRzQnhvaHhSZEZKVmE3bUtsY9IBxAFBVV95cUxOWHdEbUY1ZkZld2RrQk9IVzF0aVVGNGt3dUdtM3dvcl9ON0xYNTE2MUFfUmVtaW80T3NEYTRMdVhmanBnZHNZTWE4YVkwVjZVejRrYU1lTWpOaERlR1NLZkNlSXN0ZXBVbFY4QlZvSXB6OXc5TWt0T3BfMkQyTl9ZVHhrcW54VklsTEZjVV9WeVZfUVpHcjJ4UW52d3lVS1VMczB0N2JrZU40SnFxSGY3YlIxNVFkZ2diUm9Sd2FJMHdHQ0FR?oc=5",
+   "publicado": "2026-11-06T09:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3",
+    "BBDC4",
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Dólar hoje opera perto da estabilidade antes de dados de emprego nos EUA",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd01vakpZTEFhWURtYUVkOENaYy1BRnlFUUVuVVFtTERGQ0VfQlJiVWhtTWFVbVU1ekM0cW1HelhPZGQweGstcDc3SWdNRlU2ekZuU0NRd01FOFRDUmRVSGtXYVF5QXFiWDdwLW90Wkc1N0p6c3lPbnoyNlFJSUQ1aXZXeFJNcVllZ0pnMzJFX1dvdWplMmNoNFkxN3LSAaIBQVVfeXFMT3ZodGhLNnpQc3RqSVFjT0hZaUwxNlB4dTBPY0tDTENRaWVhN0FRcndMcUFsZWVjMDZsNkVvd0xHQWFyc1VyY3Q3VF9DajhWWWtsSUZwSkRZZkN0WEtMaGtGTnRDTG41dGNxNW9qWXEyemNGbWp2LVpOVzRrSVVyYXJ0WHpyNEo5QVJ4QU9QcWhzOXBNbzUyVnBmYXVCYlRkS19R?oc=5",
+   "publicado": "2026-11-06T10:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro segura prêmio alto antes do payroll; Prefixado 2032 fica em 15,17%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaXdNU25jRk1xOWtsTklUSGJtMDlyeHpDZUtzM0hUMFZtU1JZZnpkczgyS082V2lKc282N3ctMkx0ZlFYeVdvUlppUnZkWGFZdXZ1Vkg5T3NVcHVFWWFkSkZ0cWxSMlZ6VG40WFJOb3BCMEZJNnhrd0lnUTBYcHMxUjZSdnBNS0ttd2h0OEhfaEx5QU4zN015R3Q3U0VMS0F1Zy15YXo0MGNDLXlOcExZWEtpMW9rVTFoNmp1LTdvam52WEpESEJGZlpn0gHPAUFVX3lxTE13ZjBNX1pVRUNHNU9ZbVVpUmRUbXBfdTZlbmNUUloxOFUwVG4ybnJPMUExN2NnQzVLN0NpZUwtTnZWTXc0NmRiYTdueEYyNUZFZjlXd1hMbXFncDhOdFRZaC1jVzZuUU1kYmJ1aEtrY0VoN2FfMmxUOXZmYllLVDFibnhPdkNwVmpLSXNFVzdXc0NablM3cnFmcGc2VTkxeFp6cEw4ZmZMTlFpMmZpZWFFNkpMaW9nQzM3bllTWDJHUTU5VnU3RUNkOHBYVVZjTQ?oc=5",
+   "publicado": "2026-11-06T10:15-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa opera próximo da estabilidade com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (6)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQ1VQeHZyT2ZPeDR4c2IxZ2dhYkcxSGVPb0tnWG9PeVFwR2ZYVV8walNra0cxUVNBcHFvY1RDckZLUm5zZW5mMTJZaFRNY2U4MmRWOUxYc1QzU0JxMlByM0JYQ19qR1VzbmpvbVVwSTEwVFE1WjYtRDZyTlB3MHdUa1FMYlJWZ2pfdGRCTjBRSG5qUHNFVnhubmpCanBaOTdTLWJ4VmFZckhQVG1CTXl1WEtTOUNkekktOW84UG5zV1NmVlRYalFWdHE5c3lQZkNGbmZvYm5fVnFfNXNjOG04TUNKYWZpM1V6SGc?oc=5",
+   "publicado": "2026-11-06T10:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -596,9 +770,14 @@
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-a-espera-de-novos-dados-de-emprego-nos-eua.shtml",
    "titulo": "Dólar abre em alta à espera de novos dados de emprego nos EUA",
    "em": "2026-11-06T13:05:42+00:00"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQ1VQeHZyT2ZPeDR4c2IxZ2dhYkcxSGVPb0tnWG9PeVFwR2ZYVV8walNra0cxUVNBcHFvY1RDckZLUm5zZW5mMTJZaFRNY2U4MmRWOUxYc1QzU0JxMlByM0JYQ19qR1VzbmpvbVVwSTEwVFE1WjYtRDZyTlB3MHdUa1FMYlJWZ2pfdGRCTjBRSG5qUHNFVnhubmpCanBaOTdTLWJ4VmFZckhQVG1CTXl1WEtTOUNkekktOW84UG5zV1NmVlRYalFWdHE5c3lQZkNGbmZvYm5fVnFfNXNjOG04TUNKYWZpM1V6SGc?oc=5",
+   "titulo": "Ibovespa opera próximo da estabilidade com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (6)",
+   "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T10:08-03:00",
+ "atualizado_em": "2026-11-06T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -613,6 +792,81 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Petróleo chega a ultrapassar US$ 100, mas depois cai quase 2%",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468042",
+   "publicado": "2026-11-06T10:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa opera próximo da estabilidade com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (6)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQ1VQeHZyT2ZPeDR4c2IxZ2dhYkcxSGVPb0tnWG9PeVFwR2ZYVV8walNra0cxUVNBcHFvY1RDckZLUm5zZW5mMTJZaFRNY2U4MmRWOUxYc1QzU0JxMlByM0JYQ19qR1VzbmpvbVVwSTEwVFE1WjYtRDZyTlB3MHdUa1FMYlJWZ2pfdGRCTjBRSG5qUHNFVnhubmpCanBaOTdTLWJ4VmFZckhQVG1CTXl1WEtTOUNkekktOW84UG5zV1NmVlRYalFWdHE5c3lQZkNGbmZvYm5fVnFfNXNjOG04TUNKYWZpM1V6SGc?oc=5",
+   "publicado": "2026-11-06T10:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro segura prêmio alto antes do payroll; Prefixado 2032 fica em 15,17%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaXdNU25jRk1xOWtsTklUSGJtMDlyeHpDZUtzM0hUMFZtU1JZZnpkczgyS082V2lKc282N3ctMkx0ZlFYeVdvUlppUnZkWGFZdXZ1Vkg5T3NVcHVFWWFkSkZ0cWxSMlZ6VG40WFJOb3BCMEZJNnhrd0lnUTBYcHMxUjZSdnBNS0ttd2h0OEhfaEx5QU4zN015R3Q3U0VMS0F1Zy15YXo0MGNDLXlOcExZWEtpMW9rVTFoNmp1LTdvam52WEpESEJGZlpn0gHPAUFVX3lxTE13ZjBNX1pVRUNHNU9ZbVVpUmRUbXBfdTZlbmNUUloxOFUwVG4ybnJPMUExN2NnQzVLN0NpZUwtTnZWTXc0NmRiYTdueEYyNUZFZjlXd1hMbXFncDhOdFRZaC1jVzZuUU1kYmJ1aEtrY0VoN2FfMmxUOXZmYllLVDFibnhPdkNwVmpLSXNFVzdXc0NablM3cnFmcGc2VTkxeFp6cEw4ZmZMTlFpMmZpZWFFNkpMaW9nQzM3bllTWDJHUTU5VnU3RUNkOHBYVVZjTQ?oc=5",
+   "publicado": "2026-11-06T10:15-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nvidia aguarda liberação da China para enviar 600 mil chips ao país",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/nvidia-aguarda-liberacao-da-china-para-enviar-600-mil-chips-ao-pais.shtml",
+   "publicado": "2026-11-06T10:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar hoje opera perto da estabilidade antes de dados de emprego nos EUA",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd01vakpZTEFhWURtYUVkOENaYy1BRnlFUUVuVVFtTERGQ0VfQlJiVWhtTWFVbVU1ekM0cW1HelhPZGQweGstcDc3SWdNRlU2ekZuU0NRd01FOFRDUmRVSGtXYVF5QXFiWDdwLW90Wkc1N0p6c3lPbnoyNlFJSUQ1aXZXeFJNcVllZ0pnMzJFX1dvdWplMmNoNFkxN3LSAaIBQVVfeXFMT3ZodGhLNnpQc3RqSVFjT0hZaUwxNlB4dTBPY0tDTENRaWVhN0FRcndMcUFsZWVjMDZsNkVvd0xHQWFyc1VyY3Q3VF9DajhWWWtsSUZwSkRZZkN0WEtMaGtGTnRDTG41dGNxNW9qWXEyemNGbWp2LVpOVzRrSVVyYXJ0WHpyNEo5QVJ4QU9QcWhzOXBNbzUyVnBmYXVCYlRkS19R?oc=5",
+   "publicado": "2026-11-06T10:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bradesco BBI rebaixa B3 em cenário de juro alto; XP e BTG têm recomendação de compra",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWxvSC1SWTVhOTVlamo0bGpkRklKVGFuN1VvRklMMVA1RFM3R0hMS0tkY09MUzhwaXJjVHNoV0NhbC1kbGVLTmZVUkM1eEh2d3VnQnpZSkVSX29uSXF0UG4xMHFJMXI1R015MmVjcFktV24xQlp6T29BOGlxbkRnS3daTzVjWEpUV0VKYTd4TjNOblVRWm1hMTBqN19GQ2tvYnJHN3YxMktyQU5jWnRzQnhvaHhSZEZKVmE3bUtsY9IBxAFBVV95cUxOWHdEbUY1ZkZld2RrQk9IVzF0aVVGNGt3dUdtM3dvcl9ON0xYNTE2MUFfUmVtaW80T3NEYTRMdVhmanBnZHNZTWE4YVkwVjZVejRrYU1lTWpOaERlR1NLZkNlSXN0ZXBVbFY4QlZvSXB6OXc5TWt0T3BfMkQyTl9ZVHhrcW54VklsTEZjVV9WeVZfUVpHcjJ4UW52d3lVS1VMczB0N2JrZU40SnFxSGY3YlIxNVFkZ2diUm9Sd2FJMHdHQ0FR?oc=5",
+   "publicado": "2026-11-06T09:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3",
+    "BBDC4",
+    "BPAC11"
+   ]
+  },
   {
    "titulo": "Dólar abre em alta à espera de novos dados de emprego nos EUA",
    "fonte": "Folha",
@@ -662,19 +916,6 @@
    "tickers": []
   },
   {
-   "titulo": "Renner vê 2027 mais difícil e deve segurar o ritmo de abertura de lojas, segundo CEO",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/negocios/renner-ve-2027-mais-dificil-e-deve-segurar-o-ritmo-de-abertura-de-lojas-segundo-ceo/",
-   "publicado": "2026-11-06T09:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "LREN3"
-   ]
-  },
-  {
    "titulo": "Dólar sobe em linha com movimento externo e à espera do ‘payroll’",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMGFIRV9wcFdkUlhxVEd6SGZYcmM3NGstRXJKT3RnREUxZGRYMjlsd3k2UEFvLVc1TnRkWXdvUVJzcF9LTVVHQjlaMTM2SFR6bGI1ckFpa1ZTQ1hMNVV2MndSOGRLTzhMMHNoaVpqSTkxYm9yVGEwSTgxQ3k5QlQtZUZaVER2U25qaDhOVU15Zm9ELUZaZkhtMWgxZUpuYkwza0E5VlA2ZFUwQ3ZQaEhhNXdZbEk5VmNMeVBMOE5B0gHMAUFVX3lxTE1ZSnFXaTF3WUFqNjd6V0J1Q2kzZ0pIVmx1QWVuWDREaWN2blhvVzBVLU9MY1NCQ3ByVDZUTWRwWDA2NzRLbjhHbzdDbnZZcDRLVWFxbm85QWdab3A2bGdCSTFTaUN2MFBtbjl3X05HQ3JTaFdYSWZCU1FIMWpyOTV1ekxVZHRyQkJiX1pwcHp5T2hHTWxQckVWb3dIOW4wQWJVMjRwSWhSaHhoaUI0aHdaRWFqOVl6QzFDVUd1bWwwUTVabjljS2RnbS1LSQ?oc=5",
@@ -713,42 +954,6 @@
    "tickers": []
   },
   {
-   "titulo": "Democratic sweep gives markets a reason to rethink path of interest rates",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/oil-prices-interest-rates-midterms.html",
-   "publicado": "2026-11-06T09:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros têm leve queda de olho em sinais fiscais do governo e à espera de ‘payroll’",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOYjMzVnVMNnRLM1NicjAybG4wV1Y2WDd5bExEN1Y4a3hFS2xzUEx4aFFnVC1fMTdUT05VNnJjV096SkZ6RktISGhFaFNOSjhoQV9qdTNTVC1kWUF4LXlEWHhLVXZxMjZuMXluaWM3cU1sSFBuUXRGRHpGZC10emJTX2hMWUVPNWZGNklMMUlFeUpZZEpLRGU0NXNTN1pueTI4LTZHbHB3LUlPOUtmV3BxRVdyS1VKUEw0blVFdTdMd3FvLThRSE5RcGNHZDJ4d0Fsb3lxUWFkZi1jU05QNEHSAewBQVVfeXFMTnBrampwY3ctOVBOempPbXNOMENHSVdTemlEdTNtZHFyX3VkckxSb2w4WU14N0NHdVBhREtCRUt5YldKMlI3dGR2TDBVQW1yTURuSUtnTERDTXNKODVhNjN0LXpvREJsdlhHd1RaSkFRWk5ZbDNnNElUXzc3akEtTjVpbjIzTmVwQnZZekRIQWNQeHY0OGxaM0hOT29qSlctd2ZZSHBWME9DSXNrZEpMNmVZWUhUZzVIeHVQZHVXU3JFMnZqR1Z2Q1dqZEhGOF9Hd0l1Q012LXZnaVY4ZjV6ZWtQbU8wb0hPZGtxeEY?oc=5",
-   "publicado": "2026-11-06T09:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Méliuz vende 78 bitcoins para financiar recompra de ações na B3",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTHotUGUtVUlVYU5vVnhXUmNrMGhBVGpsbmtoZkJhZjBQV2VsNUk0MDJzOVFkbzFnb2NILUItNTc5TzU1eExRMkZsY3JhdTRfcTZ2eXJETHBnTnpQSEVkU3UtOE5SQUNZaUVFeE9XM0xWR2RWU2dwMl9aRnFub2pNUFJxc2cyTUJPbEdMbUgtUmNWbEEwdzlzaXhaalhDM0E?oc=5",
-   "publicado": "2026-11-06T09:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
-  },
-  {
    "titulo": "Ibovespa Futuro sobe à espera do payroll nos EUA em dia de cautela global",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWERDMmUtR01KS052bmNSX0xacVpXbldnQmFkU1ZYTnc1bEdtdVdVNjZYaEpocjBWbU5PZkQtYlpMc2JhcFFBQVVDNzRuWHc5aUZQQjVrX2lvTkpyYkNCZzI1dHFvTTNPdXNabzdTSVRHbXJWeWhUVWZjSVY0UEo4LUN2cHB6NnBsSHU2Tk9oc0NtZW1RWFRhQ3d5dDEyOW9JY1Jv0gGoAUFVX3lxTE5qMWM1eHlUdF9pYjFYVTR0UnIyWV96MUNkYlhyTUZ5Y09nQkwyaE5vTzk1eExGYW5hel9wdVhEemM1X3dKbGFQMFc2Q1pxMEhYSXVlY3lDem5hQWEtX3lIT3NDZklqSFNoSTB1RUd1Z3dIMzNVWWNycjQzdUktY0FqVUVYaklLNm81dVAyYUNOU0RENzNiaXE2a1YyRVBiOGJ4RUVzWUt5TQ?oc=5",
@@ -757,17 +962,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html",
-   "publicado": "2026-11-06T09:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
@@ -795,17 +989,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC tumble",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/tech-stocks-sk-hynix-samsung-softbank.html",
-   "publicado": "2026-11-06T08:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   }
