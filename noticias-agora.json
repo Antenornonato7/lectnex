@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T17:43-03:00",
+  "atualizado_em": "2026-11-06T17:45-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     168360.0
+     168348.0
     ]
    ]
   },
@@ -768,11 +768,11 @@
     ],
     [
      "17:40",
-     5.5142
+     5.5128
     ],
     [
-     "17:43",
-     5.5135
+     "17:45",
+     5.5127
     ]
    ]
   },
@@ -1669,7 +1669,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.01
    },
    {
     "hora": "17:32",
@@ -1683,21 +1683,24 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:40",
+    "titulo": "Copom precisará observar o impacto de diversos choques para voltar a reduzir a taxa Selic",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZE05UlJiYWZzZ1FhZEtWRU5DLV9IRkFaQXFBU0VNR1ZlZFh1VDNfVEwya0w0MFlUc2xaMDNXZy00VUgwNVRPei1tbzBhNWhGcnYzdHlRdUctdmRMSFU1bm5OekFLOXhNcWlXREs4c194dE5DWHhmMURYSXRLb2R5TmNabWNwV0FGLUxhUjZCckVTdkhCb01GN0ZhX3NkVWdXLUowMGZDbTdsUTFHYjRORjBGYlZOLWhtcXgxb19vVzRhVnk3WDJ5VUpYMlpES2hSdkNkdUJGbzc5UlhSUXBLVHVPdVNUTDg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Bolsa cai e dólar sobe à espera de medidas fiscais",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSmwxTTlGakNWaUJxVUd0VHJjdDhhMndiTW1kcHk1MDRlSDRseV9UUndDQ1FlbjZsb19JNDFYaVZscmNmT0U4MVNvNElWeGlJNjNLLXdqWGktanl4WEhiaFVYMEtLZjd1RTM0cjJDbGtJeVNSclUxSm44QndYWUUydTdNcENNLXpwbURQR1dpZE9DWDhmSlBGa0FnOGlZZnI5LVo3cWVobmtLNUJV0gG7AUFVX3lxTE42c2x5SkpGWV9JOFlWenJNOFBaY1VxWGVZU0JxcmJTdW8wTmxYY0hCRDZSSDBOUGJhdkl3ZEVJU3piVlhpWlhRaGxFZUlYTjFqeVIzTFB0UEs1aVhuUDJCVTA2UV9BOG96dkRVNDF3UzVlR29GcjlnNmh0OGhPM2FlQTdhWWdKNHpfUVlzTldyNjdyN0Q3c0RJX1pNd1J5ZzdGd2ZMNWh0bkZoMU5MZlBDckVDaXZJdVFnME0?oc=5",
-   "publicado": "2026-11-06T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Desafios à dominância global do dólar",
    "fonte": "Valor",
@@ -2657,6 +2660,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Copom precisará observar o impacto de diversos choques para voltar a reduzir a taxa Selic",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZE05UlJiYWZzZ1FhZEtWRU5DLV9IRkFaQXFBU0VNR1ZlZFh1VDNfVEwya0w0MFlUc2xaMDNXZy00VUgwNVRPei1tbzBhNWhGcnYzdHlRdUctdmRMSFU1bm5OekFLOXhNcWlXREs4c194dE5DWHhmMURYSXRLb2R5TmNabWNwV0FGLUxhUjZCckVTdkhCb01GN0ZhX3NkVWdXLUowMGZDbTdsUTFHYjRORjBGYlZOLWhtcXgxb19vVzRhVnk3WDJ5VUpYMlpES2hSdkNkdUJGbzc5UlhSUXBLVHVPdVNUTDg?oc=5",
+   "publicado": "2026-11-06T17:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2686,7 +2701,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T17:43-03:00",
+ "atualizado_em": "2026-11-06T17:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2708,6 +2723,18 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Copom precisará observar o impacto de diversos choques para voltar a reduzir a taxa Selic",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZE05UlJiYWZzZ1FhZEtWRU5DLV9IRkFaQXFBU0VNR1ZlZFh1VDNfVEwya0w0MFlUc2xaMDNXZy00VUgwNVRPei1tbzBhNWhGcnYzdHlRdUctdmRMSFU1bm5OekFLOXhNcWlXREs4c194dE5DWHhmMURYSXRLb2R5TmNabWNwV0FGLUxhUjZCckVTdkhCb01GN0ZhX3NkVWdXLUowMGZDbTdsUTFHYjRORjBGYlZOLWhtcXgxb19vVzRhVnk3WDJ5VUpYMlpES2hSdkNkdUJGbzc5UlhSUXBLVHVPdVNUTDg?oc=5",
+   "publicado": "2026-11-06T17:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2862,20 +2889,6 @@
    ],
    "tickers": [
     "SUZB3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa avança com bancos, varejo e VALE3; PETR4 cai",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd1FIcEw4RTIxbDZ3VUU0eUFTMmpPOUhyakhDZXNvcFlKYWdhYmxpZnVySm9nMU1BYm53d3h0cGRVdFdwWVdiU3Z0TC1qZ09SZjFRdUg1OWZzdWE4ZktnTTJ0ZUNFMlFIRWthRUN2S1hmcXctS0FEOU8xLV9ZVm5jeXJFN1dRb290clVOSk4yVQ?oc=5",
-   "publicado": "2026-11-06T15:20-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4",
-    "VALE3"
    ]
   },
   {
