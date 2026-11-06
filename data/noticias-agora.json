@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T15:08-03:00",
+  "atualizado_em": "2026-11-06T15:38-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -239,11 +239,35 @@
     ],
     [
      "14:50",
-     168457.0
+     168494.0
     ],
     [
-     "14:53",
-     168396.0
+     "14:55",
+     168653.0
+    ],
+    [
+     "15:00",
+     168681.0
+    ],
+    [
+     "15:05",
+     168644.0
+    ],
+    [
+     "15:10",
+     168706.0
+    ],
+    [
+     "15:15",
+     168672.0
+    ],
+    [
+     "15:20",
+     168515.0
+    ],
+    [
+     "15:23",
+     168512.0
     ]
    ]
   },
@@ -544,11 +568,35 @@
     ],
     [
      "15:05",
-     5.4965
+     5.4986
     ],
     [
-     "15:08",
-     5.4976
+     "15:10",
+     5.4975
+    ],
+    [
+     "15:15",
+     5.5001
+    ],
+    [
+     "15:20",
+     5.5005
+    ],
+    [
+     "15:25",
+     5.5002
+    ],
+    [
+     "15:30",
+     5.4986
+    ],
+    [
+     "15:35",
+     5.5001
+    ],
+    [
+     "15:38",
+     5.5001
     ]
    ]
   },
@@ -1180,6 +1228,20 @@
     "dolar30": 0.01
    },
    {
+    "hora": "14:02",
+    "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.03,
+    "dolar30": -0.02
+   },
+   {
     "hora": "14:07",
     "titulo": "Lula rebate críticas sobre falta de responsabilidade fiscal e diz que pobres não pagarão conta",
     "fonte": "Estadão",
@@ -1232,7 +1294,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.08,
     "dolar30": -0.0
    },
    {
@@ -1245,8 +1307,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.08,
+    "dolar30": -0.0
    },
    {
     "hora": "14:56",
@@ -1260,8 +1322,8 @@
     "tickers": [
      "SBSP3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.08,
+    "dolar30": 0.07
    },
    {
     "hora": "14:57",
@@ -1273,8 +1335,23 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": -0.08,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "15:00",
+    "titulo": "Petrobras cai mais de 20% em 2 semanas após eleições no Brasil e nos EUA: tese mudou?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNczhRMXloNXY5U0tMZXZUamhISHEzLXNockJoczEzVWZsU2hlZ0JlVWhZQjB5U2R3SUhiSUNrVVNHUGtFM0JEbGN5eG81T0hrcDk0a2twTFFUeVJXLUl5TnlKZW93RHE3Ykw2UVB3dlVHTnAtbHdLOGNqRm5TclpKbElxc0Vkb1hjSGdYaEw3YzdsMnFrWFViZVYzMzBRMnlqbDdsQzVJRU5TdnNZeGhiSzlKdXR4TTNXd1JQc0dKQUZsel9Dd1dRcTc0ejF3UdIB0wFBVV95cUxPZ25fN2FJNWtvalZnajRPUlNCNmd3Y0Z3NG82ZkRaM2ctWnBULWZCZWpDZ0J4WV9BSkRmZjh0dmdxeG9hbm1LVjFUOVRYMjhaUVExcnl5UHhUbExsaFEwLWMzRzI1MFltS1Ywai0tX19IT185TXhDT2hoNzR5RFZORV90RlhsZGpqM1RPa083aGswQnljdTU1amRWTG9pNDRMUURSVzI2ZTEtVVNlMzZYOU9MRFRsbGxvWjl5cHpaekh4cmxwVXNuT1AxNVJSNENJdmJR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    }
   ]
  },
@@ -2043,6 +2120,18 @@
    "tickers": []
   },
   {
+   "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
+   "publicado": "2026-11-06T14:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Lula rebate críticas sobre falta de responsabilidade fiscal e diz que pobres não pagarão conta",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/lula-rebate-criticas-responsabilidade-fiscal-pobres-nao-pagarao-conta/",
@@ -2124,6 +2213,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras cai mais de 20% em 2 semanas após eleições no Brasil e nos EUA: tese mudou?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNczhRMXloNXY5U0tMZXZUamhISHEzLXNockJoczEzVWZsU2hlZ0JlVWhZQjB5U2R3SUhiSUNrVVNHUGtFM0JEbGN5eG81T0hrcDk0a2twTFFUeVJXLUl5TnlKZW93RHE3Ykw2UVB3dlVHTnAtbHdLOGNqRm5TclpKbElxc0Vkb1hjSGdYaEw3YzdsMnFrWFViZVYzMzBRMnlqbDdsQzVJRU5TdnNZeGhiSzlKdXR4TTNXd1JQc0dKQUZsel9Dd1dRcTc0ejF3UdIB0wFBVV95cUxPZ25fN2FJNWtvalZnajRPUlNCNmd3Y0Z3NG82ZkRaM2ctWnBULWZCZWpDZ0J4WV9BSkRmZjh0dmdxeG9hbm1LVjFUOVRYMjhaUVExcnl5UHhUbExsaFEwLWMzRzI1MFltS1Ywai0tX19IT185TXhDT2hoNzR5RFZORV90RlhsZGpqM1RPa083aGswQnljdTU1amRWTG9pNDRMUURSVzI2ZTEtVVNlMzZYOU9MRFRsbGxvWjl5cHpaekh4cmxwVXNuT1AxNVJSNENJdmJR?oc=5",
+   "publicado": "2026-11-06T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -2153,7 +2255,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T15:08-03:00",
+ "atualizado_em": "2026-11-06T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2177,6 +2279,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras cai mais de 20% em 2 semanas após eleições no Brasil e nos EUA: tese mudou?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNczhRMXloNXY5U0tMZXZUamhISHEzLXNockJoczEzVWZsU2hlZ0JlVWhZQjB5U2R3SUhiSUNrVVNHUGtFM0JEbGN5eG81T0hrcDk0a2twTFFUeVJXLUl5TnlKZW93RHE3Ykw2UVB3dlVHTnAtbHdLOGNqRm5TclpKbElxc0Vkb1hjSGdYaEw3YzdsMnFrWFViZVYzMzBRMnlqbDdsQzVJRU5TdnNZeGhiSzlKdXR4TTNXd1JQc0dKQUZsel9Dd1dRcTc0ejF3UdIB0wFBVV95cUxPZ25fN2FJNWtvalZnajRPUlNCNmd3Y0Z3NG82ZkRaM2ctWnBULWZCZWpDZ0J4WV9BSkRmZjh0dmdxeG9hbm1LVjFUOVRYMjhaUVExcnl5UHhUbExsaFEwLWMzRzI1MFltS1Ywai0tX19IT185TXhDT2hoNzR5RFZORV90RlhsZGpqM1RPa083aGswQnljdTU1amRWTG9pNDRMUURSVzI2ZTEtVVNlMzZYOU9MRFRsbGxvWjl5cHpaekh4cmxwVXNuT1AxNVJSNENJdmJR?oc=5",
+   "publicado": "2026-11-06T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Carne, frango e açúcar mais caros? Alta do dólar pode pressionar preços dos alimentos",
@@ -2249,6 +2364,18 @@
    "tickers": []
   },
   {
+   "titulo": "Parlamentares governistas aumentam críticas a mercado e juros altos antes de reunião do Copom",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZi1FSlRnY1JZZjBWVDJ3dmphTERrdEhuNVQ2TDZGY3JWeTBKQlY5UEtQRWFmVlhTTy0ybER5VWVLMGdyR1Bud1RhSnRfLWQ5bk5fVlJMdXlVangxR0tKdEw4ZHloVURnZGc5Q2pmSlh6S3dPbHNlQjAzX0NrYTRCYlpNcUxOZF82WFBfdnAxcjhnQ2NINVRHeFA1VUN4U3g4cjVQWEF3aWxhTEVfMEc4SWYyZ0l0bXhEQkFhREJuWVpGVjFNRERJRlFwcHVhcHRtY2tBcQ?oc=5",
+   "publicado": "2026-11-06T14:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "XP reduz projeção do PIB a 0,3% em 2027; dólar vai a R$ 5,50 e Selic fica em 13,75%",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZSWY1VUp6ZG85ajBSU2pSbUFhQ3ZSRGpLZnJjNFJkbXRRWXZoQklad01RaE1qZFh3bDhaeEFSRjF0Sl91UUJaNXlSeDVGZmVEVlRXSnR1VHhyZHBIYTM5QWxHVGJQWFQ1bmZxa0hXb2tVWVlQSS1IM0ZhVdIBgAFBVV95cUxQd1pVRldkVC1XQjZ0cWZnOS1lMjhIR3h3eVY1LUVDZy1nYkdoMXA4UW9UeEhRNUQ5UnJrX3FPdmQzd29DM3UxTzZHMlVIc09XalRJa3JCZ0xNUmdMRldNdmxfc0FSOVVlbk1CVVBmLUZGWG5TeUN1cjNGLUltOVYzYg?oc=5",
@@ -2273,18 +2400,6 @@
     "CEAB3",
     "POMO3"
    ]
-  },
-  {
-   "titulo": "Sem cortes: XP abandona previsão de queda da Selic até o fim de 2027 – e não descarta altas",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSnBEMHJLWjNaSlN0SmpYTzRkeV9fRVFlNDNuZUI4UXpnVDA1c3UzanlPWkh4a2hIQ1ZZQWhuZFNxak1PQ1NmLUw5M3V4ZGFGZ0dEYnhsODhxMElqbTJILUlNV0djUVkzd1pJZC1fSTZFdTk3WktMZ3Rnb082WGRvZXpVc2MzMTlOLVoxWGV6ZmxueWIzUzhwSDRxUWZ3d204YjBEZ21BNTNRNXpZa0k0Nm15bzc2NWl4TmZr?oc=5",
-   "publicado": "2026-11-06T13:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Wall Street's fear gauge may be flashing a buy sign",
@@ -2344,17 +2459,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsas do Japão têm maior queda desde tarifas de Trump; Coreia do Sul aciona circuit breaker",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bolsas-do-japao-tem-maior-queda-desde-tarifas-de-trump-coreia-do-sul-aciona-circuit-breaker.shtml",
-   "publicado": "2026-11-06T12:28-03:00",
-   "impacto": "medio",
-   "ativos": [
     "WDO"
    ],
    "tickers": []
