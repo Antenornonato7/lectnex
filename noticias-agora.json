@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T10:13-03:00",
+  "atualizado_em": "2026-11-06T10:15-03:00",
   "dolar": {
    "anterior": 5.5037,
    "pontos": [
@@ -63,11 +63,11 @@
     ],
     [
      "10:10",
-     5.4987
+     5.4989
     ],
     [
-     "10:13",
-     5.4982
+     "10:15",
+     5.5031
     ]
    ]
   },
@@ -176,7 +176,7 @@
     "tickers": [
      "LREN3"
     ],
-    "dolar30": 0.01
+    "dolar30": 0.1
    },
    {
     "hora": "09:48",
@@ -189,7 +189,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.01
+    "dolar30": 0.1
    },
    {
     "hora": "09:54",
@@ -209,6 +209,35 @@
     "titulo": "Dólar abre em alta à espera de novos dados de emprego nos EUA",
     "fonte": "Folha",
     "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-a-espera-de-novos-dados-de-emprego-nos-eua.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "09:58",
+    "titulo": "Bradesco BBI rebaixa B3 em cenário de juro alto; XP e BTG têm recomendação de compra",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWxvSC1SWTVhOTVlamo0bGpkRklKVGFuN1VvRklMMVA1RFM3R0hMS0tkY09MUzhwaXJjVHNoV0NhbC1kbGVLTmZVUkM1eEh2d3VnQnpZSkVSX29uSXF0UG4xMHFJMXI1R015MmVjcFktV24xQlp6T29BOGlxbkRnS3daTzVjWEpUV0VKYTd4TjNOblVRWm1hMTBqN19GQ2tvYnJHN3YxMktyQU5jWnRzQnhvaHhSZEZKVmE3bUtsY9IBxAFBVV95cUxOWHdEbUY1ZkZld2RrQk9IVzF0aVVGNGt3dUdtM3dvcl9ON0xYNTE2MUFfUmVtaW80T3NEYTRMdVhmanBnZHNZTWE4YVkwVjZVejRrYU1lTWpOaERlR1NLZkNlSXN0ZXBVbFY4QlZvSXB6OXc5TWt0T3BfMkQyTl9ZVHhrcW54VklsTEZjVV9WeVZfUVpHcjJ4UW52d3lVS1VMczB0N2JrZU40SnFxSGY3YlIxNVFkZ2diUm9Sd2FJMHdHQ0FR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3",
+     "BBDC4",
+     "BPAC11"
+    ],
+    "dolar30": null
+   },
+   {
+    "hora": "10:09",
+    "titulo": "Dólar hoje opera perto da estabilidade antes de dados de emprego nos EUA",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd01vakpZTEFhWURtYUVkOENaYy1BRnlFUUVuVVFtTERGQ0VfQlJiVWhtTWFVbVU1ekM0cW1HelhPZGQweGstcDc3SWdNRlU2ekZuU0NRd01FOFRDUmRVSGtXYVF5QXFiWDdwLW90Wkc1N0p6c3lPbnoyNlFJSUQ1aXZXeFJNcVllZ0pnMzJFX1dvdWplMmNoNFkxN3LSAaIBQVVfeXFMT3ZodGhLNnpQc3RqSVFjT0hZaUwxNlB4dTBPY0tDTENRaWVhN0FRcndMcUFsZWVjMDZsNkVvd0xHQWFyc1VyY3Q3VF9DajhWWWtsSUZwSkRZZkN0WEtMaGtGTnRDTG41dGNxNW9qWXEyemNGbWp2LVpOVzRrSVVyYXJ0WHpyNEo5QVJ4QU9QcWhzOXBNbzUyVnBmYXVCYlRkS19R?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -578,6 +607,33 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Bradesco BBI rebaixa B3 em cenário de juro alto; XP e BTG têm recomendação de compra",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWxvSC1SWTVhOTVlamo0bGpkRklKVGFuN1VvRklMMVA1RFM3R0hMS0tkY09MUzhwaXJjVHNoV0NhbC1kbGVLTmZVUkM1eEh2d3VnQnpZSkVSX29uSXF0UG4xMHFJMXI1R015MmVjcFktV24xQlp6T29BOGlxbkRnS3daTzVjWEpUV0VKYTd4TjNOblVRWm1hMTBqN19GQ2tvYnJHN3YxMktyQU5jWnRzQnhvaHhSZEZKVmE3bUtsY9IBxAFBVV95cUxOWHdEbUY1ZkZld2RrQk9IVzF0aVVGNGt3dUdtM3dvcl9ON0xYNTE2MUFfUmVtaW80T3NEYTRMdVhmanBnZHNZTWE4YVkwVjZVejRrYU1lTWpOaERlR1NLZkNlSXN0ZXBVbFY4QlZvSXB6OXc5TWt0T3BfMkQyTl9ZVHhrcW54VklsTEZjVV9WeVZfUVpHcjJ4UW52d3lVS1VMczB0N2JrZU40SnFxSGY3YlIxNVFkZ2diUm9Sd2FJMHdHQ0FR?oc=5",
+   "publicado": "2026-11-06T09:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3",
+    "BBDC4",
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Dólar hoje opera perto da estabilidade antes de dados de emprego nos EUA",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd01vakpZTEFhWURtYUVkOENaYy1BRnlFUUVuVVFtTERGQ0VfQlJiVWhtTWFVbVU1ekM0cW1HelhPZGQweGstcDc3SWdNRlU2ekZuU0NRd01FOFRDUmRVSGtXYVF5QXFiWDdwLW90Wkc1N0p6c3lPbnoyNlFJSUQ1aXZXeFJNcVllZ0pnMzJFX1dvdWplMmNoNFkxN3LSAaIBQVVfeXFMT3ZodGhLNnpQc3RqSVFjT0hZaUwxNlB4dTBPY0tDTENRaWVhN0FRcndMcUFsZWVjMDZsNkVvd0xHQWFyc1VyY3Q3VF9DajhWWWtsSUZwSkRZZkN0WEtMaGtGTnRDTG41dGNxNW9qWXEyemNGbWp2LVpOVzRrSVVyYXJ0WHpyNEo5QVJ4QU9QcWhzOXBNbzUyVnBmYXVCYlRkS19R?oc=5",
+   "publicado": "2026-11-06T10:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -602,7 +658,7 @@
    "em": "2026-11-06T13:05:42+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T10:13-03:00",
+ "atualizado_em": "2026-11-06T10:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -617,6 +673,33 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar hoje opera perto da estabilidade antes de dados de emprego nos EUA",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd01vakpZTEFhWURtYUVkOENaYy1BRnlFUUVuVVFtTERGQ0VfQlJiVWhtTWFVbVU1ekM0cW1HelhPZGQweGstcDc3SWdNRlU2ekZuU0NRd01FOFRDUmRVSGtXYVF5QXFiWDdwLW90Wkc1N0p6c3lPbnoyNlFJSUQ1aXZXeFJNcVllZ0pnMzJFX1dvdWplMmNoNFkxN3LSAaIBQVVfeXFMT3ZodGhLNnpQc3RqSVFjT0hZaUwxNlB4dTBPY0tDTENRaWVhN0FRcndMcUFsZWVjMDZsNkVvd0xHQWFyc1VyY3Q3VF9DajhWWWtsSUZwSkRZZkN0WEtMaGtGTnRDTG41dGNxNW9qWXEyemNGbWp2LVpOVzRrSVVyYXJ0WHpyNEo5QVJ4QU9QcWhzOXBNbzUyVnBmYXVCYlRkS19R?oc=5",
+   "publicado": "2026-11-06T10:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bradesco BBI rebaixa B3 em cenário de juro alto; XP e BTG têm recomendação de compra",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWxvSC1SWTVhOTVlamo0bGpkRklKVGFuN1VvRklMMVA1RFM3R0hMS0tkY09MUzhwaXJjVHNoV0NhbC1kbGVLTmZVUkM1eEh2d3VnQnpZSkVSX29uSXF0UG4xMHFJMXI1R015MmVjcFktV24xQlp6T29BOGlxbkRnS3daTzVjWEpUV0VKYTd4TjNOblVRWm1hMTBqN19GQ2tvYnJHN3YxMktyQU5jWnRzQnhvaHhSZEZKVmE3bUtsY9IBxAFBVV95cUxOWHdEbUY1ZkZld2RrQk9IVzF0aVVGNGt3dUdtM3dvcl9ON0xYNTE2MUFfUmVtaW80T3NEYTRMdVhmanBnZHNZTWE4YVkwVjZVejRrYU1lTWpOaERlR1NLZkNlSXN0ZXBVbFY4QlZvSXB6OXc5TWt0T3BfMkQyTl9ZVHhrcW54VklsTEZjVV9WeVZfUVpHcjJ4UW52d3lVS1VMczB0N2JrZU40SnFxSGY3YlIxNVFkZ2diUm9Sd2FJMHdHQ0FR?oc=5",
+   "publicado": "2026-11-06T09:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3",
+    "BBDC4",
+    "BPAC11"
+   ]
+  },
   {
    "titulo": "Dólar abre em alta à espera de novos dados de emprego nos EUA",
    "fonte": "Folha",
@@ -789,29 +872,6 @@
    "tickers": [
     "BBDC4"
    ]
-  },
-  {
-   "titulo": "Nasdaq sell-off batters Asian chip stocks as SK Hynix, Samsung, Softbank, TSMC tumble",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/tech-stocks-sk-hynix-samsung-softbank.html",
-   "publicado": "2026-11-06T08:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Drones are changing warfare. But defense giants are still making billions from old-school weapons",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/defense-military-tech-earnings.html",
-   "publicado": "2026-11-06T07:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
