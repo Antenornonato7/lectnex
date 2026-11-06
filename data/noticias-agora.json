@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T16:38-03:00",
+  "atualizado_em": "2026-11-06T17:08-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -311,11 +311,31 @@
     ],
     [
      "16:20",
-     168305.0
+     168318.0
     ],
     [
-     "16:23",
-     168252.0
+     "16:25",
+     168241.0
+    ],
+    [
+     "16:30",
+     168338.0
+    ],
+    [
+     "16:35",
+     168357.0
+    ],
+    [
+     "16:40",
+     168327.0
+    ],
+    [
+     "16:45",
+     168335.0
+    ],
+    [
+     "16:50",
+     168293.0
     ]
    ]
   },
@@ -688,11 +708,35 @@
     ],
     [
      "16:35",
-     5.5047
+     5.5048
     ],
     [
-     "16:38",
-     5.5052
+     "16:40",
+     5.5048
+    ],
+    [
+     "16:45",
+     5.5087
+    ],
+    [
+     "16:50",
+     5.51
+    ],
+    [
+     "16:55",
+     5.509
+    ],
+    [
+     "17:00",
+     5.5065
+    ],
+    [
+     "17:05",
+     5.5061
+    ],
+    [
+     "17:08",
+     5.507
     ]
    ]
   },
@@ -1490,7 +1534,7 @@
     "tickers": [
      "SUZB3"
     ],
-    "ibov30": null,
+    "ibov30": -0.05,
     "dolar30": 0.04
    },
    {
@@ -1503,8 +1547,49 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": -0.05,
+    "dolar30": 0.04
+   },
+   {
+    "hora": "16:28",
+    "titulo": "Petrobras perde quase R$ 200 bilhões em valor de mercado e caminha para pior semana desde 2021",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPc0RDMHdMRlJsYWtNa3hNS2JTQzNxZE50WlYzWlZlTU9KaHpIU2k3NTBQTkxCVFJqaWZJVk83WFJfemFCa2Z2azdsUTkzYUZ5c0gzamR1dGJYS2phUDllWDU2YzFDZXlBOEk3ZFg2cGJQYkpOLUU4bTBWdmdiemtnTmtlQndmLWtUN3Z3S3k2NHhuRWk0RFA2TVR4cnZWTVhOdUoxMXFZejM3YXA1T2pIZHNiazFTb1pwYjFfd3ZLQTVIaU5xY2JjV2NOTGtWZ3YwUDU3ekJTMjE2bHc3dUk5cVY2NElsNW_SAewBQVVfeXFMUHpQdHpFZjJ5VVZzRXpXeU5DVXpScnNDLTVhTGlzY2h0S0VLRTZ1X1VZRllOR0xnOU5BQS1KTTJ3Umg0VlZXbjZCUFVwbGZ6OWFDWWtSeXNXVkpUNVhKV21JZTZyUGN1UTJncTJPdS0wczRzMXBXZkJEcDZqdFd2OVV2bzBZbmRLeFEzclBrYkktY0lTQkt1OW5LWVZtUlhmeWNuZ1ozUVRJQ20wU2VBaU1IMlM2YTB5blg3MmdFQVBxUXQ1MFRyeXRHTjNkbVpueVpqMjNMUllOSjg3MjFBYU05UGJoaHNub1pvdkE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": 0.06
+   },
+   {
+    "hora": "16:43",
+    "titulo": "Bolsa brasileira já perdeu metade dos aportes estrangeiros pré-eleição; veja o que preocupa o BofA",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZ2FSaUE2dWR0SlEyVHlVWHJlendfOHVNdzFCTGhBT3hwMUJjd3Jra0lQTklueXhaTjF1ZjJNbUJhOU1BdW1RTFk1Xzc5N2J0bzh1LUJqWXFPMlIxRHd5dW10N0tQeVBha2tFM2UwSFpjTGFrWm9GbDlHZk0xU2ZibzRUd2phRUNWeUtqdEtIVHJzanoyM0hSNkdLR1hTTlVEQUl4UUw1WnVpSEt5QlBXU0Z1REZ1Y0VXT09CWTFQZnB3OUhwU0Z6M3VQZ3BKc0IzblJOaGtkOER6TGlJMGtsRDNZdUU1cjBTQngtRtIB8gFBVV95cUxNc3gtMlVRZzNCVFc3UVBvdlhIb1BaVVlSQXZ6eW9MMHZKTklmUlZGX1JYdEFveFdVS3Y2dGpnVC1FN044cVBSV3JXT2FGdDV3SjJtYnRiREVnQXJPWmdod1dUZmdNWnJNWkNPV3FlUndMajFIWXE1ZmR3ektjUmlsbHNwbkRSTGNPVGNSUERYLXh2VVhCRXFpTGFBc3dhV0o2SG9lR01LaDgxT3dTQ29pZDMwN0p0VklQVkZZNWhuc3hGaXdVYnJ0Vnc3OEl5c25vSV9LN1I5cS1hS0g3TkJlczR5bkR1ZFhjb2VxcklYbW5QQQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": 0.04
+   },
+   {
+    "hora": "16:51",
+    "titulo": "Brasil tem maior juro real do mundo, seguido por Turquia e Argentina",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/brasil-tem-maior-juro-real-do-mundo-seguido-por-turquia-e-argentina",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -2428,6 +2513,41 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras perde quase R$ 200 bilhões em valor de mercado e caminha para pior semana desde 2021",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPc0RDMHdMRlJsYWtNa3hNS2JTQzNxZE50WlYzWlZlTU9KaHpIU2k3NTBQTkxCVFJqaWZJVk83WFJfemFCa2Z2azdsUTkzYUZ5c0gzamR1dGJYS2phUDllWDU2YzFDZXlBOEk3ZFg2cGJQYkpOLUU4bTBWdmdiemtnTmtlQndmLWtUN3Z3S3k2NHhuRWk0RFA2TVR4cnZWTVhOdUoxMXFZejM3YXA1T2pIZHNiazFTb1pwYjFfd3ZLQTVIaU5xY2JjV2NOTGtWZ3YwUDU3ekJTMjE2bHc3dUk5cVY2NElsNW_SAewBQVVfeXFMUHpQdHpFZjJ5VVZzRXpXeU5DVXpScnNDLTVhTGlzY2h0S0VLRTZ1X1VZRllOR0xnOU5BQS1KTTJ3Umg0VlZXbjZCUFVwbGZ6OWFDWWtSeXNXVkpUNVhKV21JZTZyUGN1UTJncTJPdS0wczRzMXBXZkJEcDZqdFd2OVV2bzBZbmRLeFEzclBrYkktY0lTQkt1OW5LWVZtUlhmeWNuZ1ozUVRJQ20wU2VBaU1IMlM2YTB5blg3MmdFQVBxUXQ1MFRyeXRHTjNkbVpueVpqMjNMUllOSjg3MjFBYU05UGJoaHNub1pvdkE?oc=5",
+   "publicado": "2026-11-06T16:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Bolsa brasileira já perdeu metade dos aportes estrangeiros pré-eleição; veja o que preocupa o BofA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZ2FSaUE2dWR0SlEyVHlVWHJlendfOHVNdzFCTGhBT3hwMUJjd3Jra0lQTklueXhaTjF1ZjJNbUJhOU1BdW1RTFk1Xzc5N2J0bzh1LUJqWXFPMlIxRHd5dW10N0tQeVBha2tFM2UwSFpjTGFrWm9GbDlHZk0xU2ZibzRUd2phRUNWeUtqdEtIVHJzanoyM0hSNkdLR1hTTlVEQUl4UUw1WnVpSEt5QlBXU0Z1REZ1Y0VXT09CWTFQZnB3OUhwU0Z6M3VQZ3BKc0IzblJOaGtkOER6TGlJMGtsRDNZdUU1cjBTQngtRtIB8gFBVV95cUxNc3gtMlVRZzNCVFc3UVBvdlhIb1BaVVlSQXZ6eW9MMHZKTklmUlZGX1JYdEFveFdVS3Y2dGpnVC1FN044cVBSV3JXT2FGdDV3SjJtYnRiREVnQXJPWmdod1dUZmdNWnJNWkNPV3FlUndMajFIWXE1ZmR3ektjUmlsbHNwbkRSTGNPVGNSUERYLXh2VVhCRXFpTGFBc3dhV0o2SG9lR01LaDgxT3dTQ29pZDMwN0p0VklQVkZZNWhuc3hGaXdVYnJ0Vnc3OEl5c25vSV9LN1I5cS1hS0g3TkJlczR5bkR1ZFhjb2VxcklYbW5QQQ?oc=5",
+   "publicado": "2026-11-06T16:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Brasil tem maior juro real do mundo, seguido por Turquia e Argentina",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/brasil-tem-maior-juro-real-do-mundo-seguido-por-turquia-e-argentina",
+   "publicado": "2026-11-06T16:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2457,7 +2577,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T16:38-03:00",
+ "atualizado_em": "2026-11-06T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2471,6 +2591,52 @@
  ],
  "noticias": [
   {
+   "titulo": "Brasil tem maior juro real do mundo, seguido por Turquia e Argentina",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/brasil-tem-maior-juro-real-do-mundo-seguido-por-turquia-e-argentina",
+   "publicado": "2026-11-06T16:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mississippi Senate: Longshot Ty Pinkins says he aimed to spoil Hyde-Smith, boost Colom vote",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/mississippi-senate-ty-pinkins-colom-hyde-smith.html",
+   "publicado": "2026-11-06T16:44-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bolsa brasileira já perdeu metade dos aportes estrangeiros pré-eleição; veja o que preocupa o BofA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZ2FSaUE2dWR0SlEyVHlVWHJlendfOHVNdzFCTGhBT3hwMUJjd3Jra0lQTklueXhaTjF1ZjJNbUJhOU1BdW1RTFk1Xzc5N2J0bzh1LUJqWXFPMlIxRHd5dW10N0tQeVBha2tFM2UwSFpjTGFrWm9GbDlHZk0xU2ZibzRUd2phRUNWeUtqdEtIVHJzanoyM0hSNkdLR1hTTlVEQUl4UUw1WnVpSEt5QlBXU0Z1REZ1Y0VXT09CWTFQZnB3OUhwU0Z6M3VQZ3BKc0IzblJOaGtkOER6TGlJMGtsRDNZdUU1cjBTQngtRtIB8gFBVV95cUxNc3gtMlVRZzNCVFc3UVBvdlhIb1BaVVlSQXZ6eW9MMHZKTklmUlZGX1JYdEFveFdVS3Y2dGpnVC1FN044cVBSV3JXT2FGdDV3SjJtYnRiREVnQXJPWmdod1dUZmdNWnJNWkNPV3FlUndMajFIWXE1ZmR3ektjUmlsbHNwbkRSTGNPVGNSUERYLXh2VVhCRXFpTGFBc3dhV0o2SG9lR01LaDgxT3dTQ29pZDMwN0p0VklQVkZZNWhuc3hGaXdVYnJ0Vnc3OEl5c25vSV9LN1I5cS1hS0g3TkJlczR5bkR1ZFhjb2VxcklYbW5QQQ?oc=5",
+   "publicado": "2026-11-06T16:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Top House Oversight Democrat warns Trump family to 'lawyer up'",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/robert-garcia-trump-congress-oversight-investigations.html",
+   "publicado": "2026-11-06T16:42-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Watch the Annual Meeting: Cramer on the fate of the AI buildout and stocks to buy now",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/investingclub/2026/11/06/watch-jim-cramer-live.html",
@@ -2480,6 +2646,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras perde quase R$ 200 bilhões em valor de mercado e caminha para pior semana desde 2021",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPc0RDMHdMRlJsYWtNa3hNS2JTQzNxZE50WlYzWlZlTU9KaHpIU2k3NTBQTkxCVFJqaWZJVk83WFJfemFCa2Z2azdsUTkzYUZ5c0gzamR1dGJYS2phUDllWDU2YzFDZXlBOEk3ZFg2cGJQYkpOLUU4bTBWdmdiemtnTmtlQndmLWtUN3Z3S3k2NHhuRWk0RFA2TVR4cnZWTVhOdUoxMXFZejM3YXA1T2pIZHNiazFTb1pwYjFfd3ZLQTVIaU5xY2JjV2NOTGtWZ3YwUDU3ekJTMjE2bHc3dUk5cVY2NElsNW_SAewBQVVfeXFMUHpQdHpFZjJ5VVZzRXpXeU5DVXpScnNDLTVhTGlzY2h0S0VLRTZ1X1VZRllOR0xnOU5BQS1KTTJ3Umg0VlZXbjZCUFVwbGZ6OWFDWWtSeXNXVkpUNVhKV21JZTZyUGN1UTJncTJPdS0wczRzMXBXZkJEcDZqdFd2OVV2bzBZbmRLeFEzclBrYkktY0lTQkt1OW5LWVZtUlhmeWNuZ1ozUVRJQ20wU2VBaU1IMlM2YTB5blg3MmdFQVBxUXQ1MFRyeXRHTjNkbVpueVpqMjNMUllOSjg3MjFBYU05UGJoaHNub1pvdkE?oc=5",
+   "publicado": "2026-11-06T16:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Ibovespa sobe e dólar estabiliza com emprego nos EUA e política econômica",
@@ -2531,18 +2710,6 @@
    ]
   },
   {
-   "titulo": "Mississippi Senate: Longshot Ty Pinkins says he aimed to spoil Hyde-Smith, boost Colom vote",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/mississippi-senate-ty-pinkins-colom-hyde-smith.html",
-   "publicado": "2026-11-06T15:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Petrobras cai mais de 20% em 2 semanas após eleições no Brasil e nos EUA: tese mudou?",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNczhRMXloNXY5U0tMZXZUamhISHEzLXNockJoczEzVWZsU2hlZ0JlVWhZQjB5U2R3SUhiSUNrVVNHUGtFM0JEbGN5eG81T0hrcDk0a2twTFFUeVJXLUl5TnlKZW93RHE3Ykw2UVB3dlVHTnAtbHdLOGNqRm5TclpKbElxc0Vkb1hjSGdYaEw3YzdsMnFrWFViZVYzMzBRMnlqbDdsQzVJRU5TdnNZeGhiSzlKdXR4TTNXd1JQc0dKQUZsel9Dd1dRcTc0ejF3UQ?oc=5",
@@ -2554,17 +2721,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Carne, frango e açúcar mais caros? Alta do dólar pode pressionar preços dos alimentos",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX05IYjg5MEVXQm9kemU5SGdSVEVJRjgtUXdMR2J1azhmemozc1RiU2ExbUdBa2s0MjRrMGVxNVZSem4yRkJlUjdRcGVjWk9wa1lpX3VPYjFHcUdNOE5KV3dHVWRoOVJpcks0YUY4YzlGMXdMdWQxeXVwQUFNUUdSQzBYTzQ2aDlxRWJ3Sm9DNGhiek1ZSGZWSFRWWkVueDBLaDg4Zkc4akxFZUhybWN1TWkxd2dQNjZJdW1rWtIBwgFBVV95cUxPWkVOREhxUjZkNmlGX0xhd1pXM2VWVDdpanRsZV9Fdm5LTWxQNUozeV96MFcyVmtabzhmWExkTFo1bUdzYUlqdDlXZkV6WklxUUhORS1mN1RJR3B0cWVtVW9YLUVRbE5FcVhOREF5aTF3S0VjSjhZU2Q0RnNIOG8tNEFmalJWLWdpaG9pVjZkLWdCdlI1MDhJMmUxcmNQSGVkZUZZeGZzSmZ0NEd4M09jUmhSRkJ4b2ZROFp5NFJiWUI3UQ?oc=5",
-   "publicado": "2026-11-06T14:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Ações da Sabesp (SBSP3) sobem após balanço: o que agradou no 3º tri?",
@@ -2602,17 +2758,6 @@
    "tickers": [
     "CSAN3"
    ]
-  },
-  {
-   "titulo": "Lula rebate críticas sobre falta de responsabilidade fiscal e diz que pobres não pagarão conta",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/lula-rebate-criticas-responsabilidade-fiscal-pobres-nao-pagarao-conta/",
-   "publicado": "2026-11-06T14:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
