@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T17:08-03:00",
+  "atualizado_em": "2026-11-06T17:38-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     168293.0
+     168356.0
+    ],
+    [
+     "16:55",
+     168329.0
+    ],
+    [
+     "17:00",
+     168341.0
     ]
    ]
   },
@@ -732,11 +740,35 @@
     ],
     [
      "17:05",
-     5.5061
+     5.506
     ],
     [
-     "17:08",
-     5.507
+     "17:10",
+     5.508
+    ],
+    [
+     "17:15",
+     5.5112
+    ],
+    [
+     "17:20",
+     5.5122
+    ],
+    [
+     "17:25",
+     5.5125
+    ],
+    [
+     "17:30",
+     5.5142
+    ],
+    [
+     "17:35",
+     5.5152
+    ],
+    [
+     "17:38",
+     5.5157
     ]
    ]
   },
@@ -1466,6 +1498,21 @@
     "dolar30": 0.07
    },
    {
+    "hora": "14:56",
+    "titulo": "Ações da Sabesp (SBSP3) sobem após balanço: o que agradou no 3º tri?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY1k2c2R0enp5YXBjTDFGZWIwWGhBTkZfdWNVeERVcHlfbk5UclFhemhVeGpITm9CVDJIcmUtTUNvdnpDZy10bE9Gbi1XeVZHbGlqTDJ4bWNHeWRzSW9ETnVITWdZbndpSlJqMkJCUm5NdTRnSjVtMVZ1aXB0MHJaUGRjVWViMHNBZnlIbENLQ3NST0NkTGVyNTdCemI1MVNUdkMxRlR3?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "SBSP3"
+    ],
+    "ibov30": -0.03,
+    "dolar30": 0.07
+   },
+   {
     "hora": "14:57",
     "titulo": "Carne, frango e açúcar mais caros? Alta do dólar pode pressionar preços dos alimentos",
     "fonte": "InfoMoney",
@@ -1507,6 +1554,22 @@
     ],
     "ibov30": -0.05,
     "dolar30": 0.05
+   },
+   {
+    "hora": "15:20",
+    "titulo": "Ibovespa Hoje Ao Vivo: Bolsa avança com bancos, varejo e VALE3; PETR4 cai",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd1FIcEw4RTIxbDZ3VUU0eUFTMmpPOUhyakhDZXNvcFlKYWdhYmxpZnVySm9nMU1BYm53d3h0cGRVdFdwWVdiU3Z0TC1qZ09SZjFRdUg1OWZzdWE4ZktnTTJ0ZUNFMlFIRWthRUN2S1hmcXctS0FEOU8xLV9ZVm5jeXJFN1dRb290clVOSk4yVQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4",
+     "VALE3"
+    ],
+    "ibov30": 0.04,
+    "dolar30": -0.01
    },
    {
     "hora": "15:42",
@@ -1562,7 +1625,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.05,
     "dolar30": 0.06
    },
    {
@@ -1576,7 +1639,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.06
    },
    {
     "hora": "16:51",
@@ -1589,44 +1652,37 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": 0.04
+   },
+   {
+    "hora": "17:20",
+    "titulo": "Dólar fecha em alta com ‘payroll’ acima do previsto nos EUA e incerteza local",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWWthbTBpRm1hX2ZzWDRDbkNuYzZPUHJZOXFHcm1hVVh0SnV2Z1VmRjFZQzhNb24xRW1lTDF4MlZPOVZ5d0Y1dnRMN01WeE1HMk90Vm5QZkVwbFFuSURWZUdPTEc5M1lnLXAwVGQ4c1VLMUtTUlBidC1DWHUydThNTWwyTXowRFBjN3FwM0RweUtaWk1MZFNIUXhIRnp4VWR4dVV4ZUNMX1p2eUVnZXltNkQycGZCXzMtSU8tampMUDVmLWFW0gHTAUFVX3lxTE5tT2NHVGlWTEc3eTQzQVJyLTRaSFgwMWVYdWQzcndpNzh3MlA0RWlwc0Vsay1QWnZsOHYzMHNpb19CUDFtaTM3cWVyZWgwa0R6WDRkaUxLTjhIRjJYVjBKckZ4Mzc4aTZtZE9WaUdYRHlTYjBHOC1tNmNqLWFKVFlsRFdRLS1mQ2ZydDlGREdidV9PUThzaWVsMUU1TWNPSmN3S1dXWWZfRWR4X1d1YTF2eWt4MXVCNmxUTzJXWHFmVXdFb0RPU1J5QmlXM1ktOFJmejg?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:32",
+    "titulo": "Dólar fecha no maior nível de 2026 com ajuda do payroll; na semana, alta foi de 1,18%",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CT1ljQllkYlIzUjhIZjFFTlZNNUdvRHJVV0VMZEFEUmIzN3lGM1BmLUI4Tk9ya2ZjcFljaUxEM01vYkxKcmZSN3NWaWJ4Q3NCa2dXYmJ0WnB0a1FWY2lCMWhR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "India as an AI hedge? The country's stocks could see robust inflows as markets globally tank",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/india-ai-tech-hedge-nifty50.html",
-   "publicado": "2026-11-06T03:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sob tensão: tombo em Nova York eleva cautela antes de dado crucial dos EUA",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWW95cnk4ZnA0N1lPLUxSNnl0eEdLSEg3RlowSUZRTVJhVW12S0NMQXd4LUJzM1pweUdJRnVPVXpxb2lqMTh5NVR4UmYyYmlsMjJpbkZONDBUN0Eyb1Bwcl9taTlVZkNFcUFleHhRT1lsczZDdG02a0E3UmkwYUVSQVpHWEd1d1FGdENBY2lFdkF4QVdwRFdnSmdneDJwR3d3TFNQQ0M2TF9jZHNzSUxXcVFiVjlCT0Y4QVNndnpyZ2xTaW12VjB1cGZ3Y2dTa0FaX1prdFZUaXFPOTN3MVA1Z3RCcw?oc=5",
-   "publicado": "2026-11-06T04:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Desafios à dominância global do dólar",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZkRVc2VBVm9WdUd4ZTFjUWx4OXAxckNaRzlJZEJqalZBajd2cE43ZWdYdkxxMGNhZnhnXzZRTVBVRFlIT0xKVFNxSEQtaDhyZ2l0M2ZuNlA0c0FKa0FvaHJhRXAtN2NVMHJwN3N4TG9nMmpRLTdsS3haTzd2MUtFRk1sc1Y3VTA4Z0ZuV1Etckw2dHBQb0NPYUpGRGVQUTJMMF9Hclp1RmhlcHlv0gG7AUFVX3lxTE96WVI2bUNjWFl0dTk1Y0p3alllYnl1OWVpWFUxZkQxTXFEbkRMZC1GRjg5eFRYLVFaLVJuSk9lazZtWXd3WG9UaTVyZ0FGV0ZEQk9LY0VHMEZyMzdqRFpUX0tSLVV5cXJ3T2VmVXBEWTNzUjFoVGVrNk5JQndkVUdBenNoNmlEbW9sY1Z1eTJGQzdBU1lGeS1ESnJCcjNYNFlNUFM3S0JtNmxaVFJUak12SlhwM01DdmNXRmM?oc=5",
-   "publicado": "2026-11-06T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Bolsa cai e dólar sobe à espera de medidas fiscais",
    "fonte": "Valor",
@@ -2442,6 +2498,19 @@
    ]
   },
   {
+   "titulo": "Ações da Sabesp (SBSP3) sobem após balanço: o que agradou no 3º tri?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY1k2c2R0enp5YXBjTDFGZWIwWGhBTkZfdWNVeERVcHlfbk5UclFhemhVeGpITm9CVDJIcmUtTUNvdnpDZy10bE9Gbi1XeVZHbGlqTDJ4bWNHeWRzSW9ETnVITWdZbndpSlJqMkJCUm5NdTRnSjVtMVZ1aXB0MHJaUGRjVWViMHNBZnlIbENLQ3NST0NkTGVyNTdCemI1MVNUdkMxRlR3?oc=5",
+   "publicado": "2026-11-06T14:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "SBSP3"
+   ]
+  },
+  {
    "titulo": "Carne, frango e açúcar mais caros? Alta do dólar pode pressionar preços dos alimentos",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX05IYjg5MEVXQm9kemU5SGdSVEVJRjgtUXdMR2J1azhmemozc1RiU2ExbUdBa2s0MjRrMGVxNVZSem4yRkJlUjdRcGVjWk9wa1lpX3VPYjFHcUdNOE5KV3dHVWRoOVJpcks0YUY4YzlGMXdMdWQxeXVwQUFNUUdSQzBYTzQ2aDlxRWJ3Sm9DNGhiek1ZSGZWSFRWWkVueDBLaDg4Zkc4akxFZUhybWN1TWkxd2dQNjZJdW1rWtIBwgFBVV95cUxPWkVOREhxUjZkNmlGX0xhd1pXM2VWVDdpanRsZV9Fdm5LTWxQNUozeV96MFcyVmtabzhmWExkTFo1bUdzYUlqdDlXZkV6WklxUUhORS1mN1RJR3B0cWVtVW9YLUVRbE5FcVhOREF5aTF3S0VjSjhZU2Q0RnNIOG8tNEFmalJWLWdpaG9pVjZkLWdCdlI1MDhJMmUxcmNQSGVkZUZZeGZzSmZ0NEd4M09jUmhSRkJ4b2ZROFp5NFJiWUI3UQ?oc=5",
@@ -2476,6 +2545,20 @@
    ],
    "tickers": [
     "PETR4"
+   ]
+  },
+  {
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa avança com bancos, varejo e VALE3; PETR4 cai",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd1FIcEw4RTIxbDZ3VUU0eUFTMmpPOUhyakhDZXNvcFlKYWdhYmxpZnVySm9nMU1BYm53d3h0cGRVdFdwWVdiU3Z0TC1qZ09SZjFRdUg1OWZzdWE4ZktnTTJ0ZUNFMlFIRWthRUN2S1hmcXctS0FEOU8xLV9ZVm5jeXJFN1dRb290clVOSk4yVQ?oc=5",
+   "publicado": "2026-11-06T15:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
    ]
   },
   {
@@ -2548,6 +2631,28 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em alta com ‘payroll’ acima do previsto nos EUA e incerteza local",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWWthbTBpRm1hX2ZzWDRDbkNuYzZPUHJZOXFHcm1hVVh0SnV2Z1VmRjFZQzhNb24xRW1lTDF4MlZPOVZ5d0Y1dnRMN01WeE1HMk90Vm5QZkVwbFFuSURWZUdPTEc5M1lnLXAwVGQ4c1VLMUtTUlBidC1DWHUydThNTWwyTXowRFBjN3FwM0RweUtaWk1MZFNIUXhIRnp4VWR4dVV4ZUNMX1p2eUVnZXltNkQycGZCXzMtSU8tampMUDVmLWFW0gHTAUFVX3lxTE5tT2NHVGlWTEc3eTQzQVJyLTRaSFgwMWVYdWQzcndpNzh3MlA0RWlwc0Vsay1QWnZsOHYzMHNpb19CUDFtaTM3cWVyZWgwa0R6WDRkaUxLTjhIRjJYVjBKckZ4Mzc4aTZtZE9WaUdYRHlTYjBHOC1tNmNqLWFKVFlsRFdRLS1mQ2ZydDlGREdidV9PUThzaWVsMUU1TWNPSmN3S1dXWWZfRWR4X1d1YTF2eWt4MXVCNmxUTzJXWHFmVXdFb0RPU1J5QmlXM1ktOFJmejg?oc=5",
+   "publicado": "2026-11-06T17:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha no maior nível de 2026 com ajuda do payroll; na semana, alta foi de 1,18%",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CT1ljQllkYlIzUjhIZjFFTlZNNUdvRHJVV0VMZEFEUmIzN3lGM1BmLUI4Tk9ya2ZjcFljaUxEM01vYkxKcmZSN3NWaWJ4Q3NCa2dXYmJ0WnB0a1FWY2lCMWhR?oc=5",
+   "publicado": "2026-11-06T17:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2577,7 +2682,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T17:08-03:00",
+ "atualizado_em": "2026-11-06T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2585,11 +2690,35 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar fecha no maior nível de 2026 com ajuda do payroll; na semana, alta foi de 1,18%",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CT1ljQllkYlIzUjhIZjFFTlZNNUdvRHJVV0VMZEFEUmIzN3lGM1BmLUI4Tk9ya2ZjcFljaUxEM01vYkxKcmZSN3NWaWJ4Q3NCa2dXYmJ0WnB0a1FWY2lCMWhR?oc=5",
+   "publicado": "2026-11-06T17:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em alta com ‘payroll’ acima do previsto nos EUA e incerteza local",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWWthbTBpRm1hX2ZzWDRDbkNuYzZPUHJZOXFHcm1hVVh0SnV2Z1VmRjFZQzhNb24xRW1lTDF4MlZPOVZ5d0Y1dnRMN01WeE1HMk90Vm5QZkVwbFFuSURWZUdPTEc5M1lnLXAwVGQ4c1VLMUtTUlBidC1DWHUydThNTWwyTXowRFBjN3FwM0RweUtaWk1MZFNIUXhIRnp4VWR4dVV4ZUNMX1p2eUVnZXltNkQycGZCXzMtSU8tampMUDVmLWFW0gHTAUFVX3lxTE5tT2NHVGlWTEc3eTQzQVJyLTRaSFgwMWVYdWQzcndpNzh3MlA0RWlwc0Vsay1QWnZsOHYzMHNpb19CUDFtaTM3cWVyZWgwa0R6WDRkaUxLTjhIRjJYVjBKckZ4Mzc4aTZtZE9WaUdYRHlTYjBHOC1tNmNqLWFKVFlsRFdRLS1mQ2ZydDlGREdidV9PUThzaWVsMUU1TWNPSmN3S1dXWWZfRWR4X1d1YTF2eWt4MXVCNmxUTzJXWHFmVXdFb0RPU1J5QmlXM1ktOFJmejg?oc=5",
+   "publicado": "2026-11-06T17:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Brasil tem maior juro real do mundo, seguido por Turquia e Argentina",
    "fonte": "Agência Brasil",
@@ -2710,9 +2839,23 @@
    ]
   },
   {
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa avança com bancos, varejo e VALE3; PETR4 cai",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd1FIcEw4RTIxbDZ3VUU0eUFTMmpPOUhyakhDZXNvcFlKYWdhYmxpZnVySm9nMU1BYm53d3h0cGRVdFdwWVdiU3Z0TC1qZ09SZjFRdUg1OWZzdWE4ZktnTTJ0ZUNFMlFIRWthRUN2S1hmcXctS0FEOU8xLV9ZVm5jeXJFN1dRb290clVOSk4yVQ?oc=5",
+   "publicado": "2026-11-06T15:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Petrobras cai mais de 20% em 2 semanas após eleições no Brasil e nos EUA: tese mudou?",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNczhRMXloNXY5U0tMZXZUamhISHEzLXNockJoczEzVWZsU2hlZ0JlVWhZQjB5U2R3SUhiSUNrVVNHUGtFM0JEbGN5eG81T0hrcDk0a2twTFFUeVJXLUl5TnlKZW93RHE3Ykw2UVB3dlVHTnAtbHdLOGNqRm5TclpKbElxc0Vkb1hjSGdYaEw3YzdsMnFrWFViZVYzMzBRMnlqbDdsQzVJRU5TdnNZeGhiSzlKdXR4TTNXd1JQc0dKQUZsel9Dd1dRcTc0ejF3UQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNczhRMXloNXY5U0tMZXZUamhISHEzLXNockJoczEzVWZsU2hlZ0JlVWhZQjB5U2R3SUhiSUNrVVNHUGtFM0JEbGN5eG81T0hrcDk0a2twTFFUeVJXLUl5TnlKZW93RHE3Ykw2UVB3dlVHTnAtbHdLOGNqRm5TclpKbElxc0Vkb1hjSGdYaEw3YzdsMnFrWFViZVYzMzBRMnlqbDdsQzVJRU5TdnNZeGhiSzlKdXR4TTNXd1JQc0dKQUZsel9Dd1dRcTc0ejF3UdIB0wFBVV95cUxPZ25fN2FJNWtvalZnajRPUlNCNmd3Y0Z3NG82ZkRaM2ctWnBULWZCZWpDZ0J4WV9BSkRmZjh0dmdxeG9hbm1LVjFUOVRYMjhaUVExcnl5UHhUbExsaFEwLWMzRzI1MFltS1Ywai0tX19IT185TXhDT2hoNzR5RFZORV90RlhsZGpqM1RPa083aGswQnljdTU1amRWTG9pNDRMUURSVzI2ZTEtVVNlMzZYOU9MRFRsbGxvWjl5cHpaekh4cmxwVXNuT1AxNVJSNENJdmJR?oc=5",
    "publicado": "2026-11-06T15:00-03:00",
    "impacto": "medio",
    "ativos": [
@@ -2725,7 +2868,7 @@
   {
    "titulo": "Ações da Sabesp (SBSP3) sobem após balanço: o que agradou no 3º tri?",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY1k2c2R0enp5YXBjTDFGZWIwWGhBTkZfdWNVeERVcHlfbk5UclFhemhVeGpITm9CVDJIcmUtTUNvdnpDZy10bE9Gbi1XeVZHbGlqTDJ4bWNHeWRzSW9ETnVITWdZbndpSlJqMkJCUm5NdTRnSjVtMVZ1aXB0MHJaUGRjVWViMHNBZnlIbENLQ3NST0NkTGVyNTdCemI1MVNUdkMxRlR30gGrAUFVX3lxTE4zWDBjbHhUOWtVWVJLQkM5TUhXRGRYRU1QV2dRS0kzSXc5YzZqWGd2a2pJcDBlU2h1UGJDRkdBSU4ycGh3WkdVRU9wWkpDazdUUTFncGJFYUJWc0NDUWxzc1QtYnVEWFc5OEhoMUlEcEdBR0I0bEE0ZjNnLXhiQjNJakt2c1Q4TC1NQmRFdm5uYTdLb3QwLXprWVhIY1NNSFptVVlPWl85MXBLVQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY1k2c2R0enp5YXBjTDFGZWIwWGhBTkZfdWNVeERVcHlfbk5UclFhemhVeGpITm9CVDJIcmUtTUNvdnpDZy10bE9Gbi1XeVZHbGlqTDJ4bWNHeWRzSW9ETnVITWdZbndpSlJqMkJCUm5NdTRnSjVtMVZ1aXB0MHJaUGRjVWViMHNBZnlIbENLQ3NST0NkTGVyNTdCemI1MVNUdkMxRlR3?oc=5",
    "publicado": "2026-11-06T14:56-03:00",
    "impacto": "medio",
    "ativos": [
@@ -2745,19 +2888,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Cosan dispara mais de 8% e lidera ganhos do Ibovespa hoje; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdENwaXQ1TjJmOFBVX2E1N201dWJZWHRlQy1MLUx1bnBSM3VPS2NlR0NXLVVBSE5FZnA3TXdqdXV1T1MzRklCaVFybWdmZ2ZyVUpiSE9oeDFWbHVaSzBuc0JaYWdlclY4SThkOGx4OERFR2FlOF9pQkJ4TGFkem9ETFlaMXBMZnlQRlJpaWotMXRmRTNLbDZ2cVF5N3hkbmRqZ1FfVmthNE9FR2loZDk2VGhEaHBKMy1xemZFZDBIRFR6TU5YVjlMRlVoQUl0Tng3N2pwODJ4anJMSjh2WUdEeXZUZlJ0dw?oc=5",
-   "publicado": "2026-11-06T14:18-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "CSAN3"
-   ]
   }
  ]
 }
