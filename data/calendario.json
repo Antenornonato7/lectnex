@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-06T08:20:00-03:00",
+  "atualizado_em": "2026-11-06T12:50:00-03:00",
   "eventos": [
     {
       "data": "2026-11-06",
@@ -9,14 +9,17 @@
       "importancia": 3,
       "anterior": "29 mil",
       "consenso": "65 mil",
-      "resultado": null,
+      "resultado": "165 mil",
       "impacto": {
         "wdo": "volatil",
         "di": "volatil"
       },
       "nota": "Emprego forte tende a fortalecer o dólar global.",
       "tipo": "payroll",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "Emprego muito acima do esperado costuma fortalecer o dólar global e elevar os juros longos, pressionando WDO e DI para cima e pesando no WIN."
+      }
     },
     {
       "data": "2026-11-06",
@@ -26,13 +29,16 @@
       "importancia": 3,
       "anterior": "4,2%",
       "consenso": "4,2%",
-      "resultado": null,
+      "resultado": "4,1%",
       "impacto": {
         "wdo": "volatil",
         "di": "volatil"
       },
       "tipo": "desemprego-eua",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "abaixo",
+        "reacao": "Desemprego menor que o previsto reforça a leitura de mercado de trabalho firme, o que tende a sustentar dólar e taxas do DI."
+      }
     },
     {
       "data": "2026-11-06",
@@ -42,14 +48,17 @@
       "importancia": 2,
       "anterior": "0,1%",
       "consenso": "0,3%",
-      "resultado": null,
+      "resultado": "0,4%",
       "impacto": {
         "wdo": "volatil",
         "di": "volatil"
       },
       "nota": "Pressão salarial pesa nas apostas para o Fed.",
       "tipo": "salario-eua",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "Salário acima do esperado alimenta o receio de inflação nos EUA, o que costuma pressionar Treasuries, dólar e DI e pesar na bolsa."
+      }
     },
     {
       "data": "2026-11-06",
@@ -59,7 +68,7 @@
       "importancia": 1,
       "anterior": "48,0",
       "consenso": null,
-      "resultado": null,
+      "resultado": "51,0",
       "impacto": {
         "wdo": "volatil"
       },
