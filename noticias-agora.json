@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T11:05-03:00",
+  "atualizado_em": "2026-11-06T11:08-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -47,7 +47,11 @@
     ],
     [
      "10:50",
-     166530.0
+     166392.0
+    ],
+    [
+     "10:53",
+     166451.0
     ]
    ]
   },
@@ -156,7 +160,11 @@
     ],
     [
      "11:05",
-     5.5175
+     5.5196
+    ],
+    [
+     "11:08",
+     5.517
     ]
    ]
   },
@@ -400,7 +408,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": -0.02,
     "dolar30": 0.17
    },
    {
@@ -426,6 +434,22 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:04",
+    "titulo": "Renner retira projeções de crescimento de receita até 2030 citando desafios no varejo",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/renner-retira-projecoes-de-crescimento-de-receita-ate-2030-citando-desafios-no-varejo.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "LREN3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -886,6 +910,20 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Renner retira projeções de crescimento de receita até 2030 citando desafios no varejo",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/renner-retira-projecoes-de-crescimento-de-receita-ate-2030-citando-desafios-no-varejo.shtml",
+   "publicado": "2026-11-06T11:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "LREN3"
+   ]
   }
  ],
  "enviadas": [
@@ -915,7 +953,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T11:05-03:00",
+ "atualizado_em": "2026-11-06T11:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -930,6 +968,20 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Renner retira projeções de crescimento de receita até 2030 citando desafios no varejo",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/renner-retira-projecoes-de-crescimento-de-receita-ate-2030-citando-desafios-no-varejo.shtml",
+   "publicado": "2026-11-06T11:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "LREN3"
+   ]
+  },
   {
    "titulo": "Wall Street's fear gauge may be flashing a buy sign",
    "fonte": "CNBC",
@@ -1023,21 +1075,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Bradesco BBI rebaixa B3 em cenário de juro alto; XP e BTG têm recomendação de compra",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNWxvSC1SWTVhOTVlamo0bGpkRklKVGFuN1VvRklMMVA1RFM3R0hMS0tkY09MUzhwaXJjVHNoV0NhbC1kbGVLTmZVUkM1eEh2d3VnQnpZSkVSX29uSXF0UG4xMHFJMXI1R015MmVjcFktV24xQlp6T29BOGlxbkRnS3daTzVjWEpUV0VKYTd4TjNOblVRWm1hMTBqN19GQ2tvYnJHN3YxMktyQU5jWnRzQnhvaHhSZEZKVmE3bUtsY9IBxAFBVV95cUxOWHdEbUY1ZkZld2RrQk9IVzF0aVVGNGt3dUdtM3dvcl9ON0xYNTE2MUFfUmVtaW80T3NEYTRMdVhmanBnZHNZTWE4YVkwVjZVejRrYU1lTWpOaERlR1NLZkNlSXN0ZXBVbFY4QlZvSXB6OXc5TWt0T3BfMkQyTl9ZVHhrcW54VklsTEZjVV9WeVZfUVpHcjJ4UW52d3lVS1VMczB0N2JrZU40SnFxSGY3YlIxNVFkZ2diUm9Sd2FJMHdHQ0FR?oc=5",
-   "publicado": "2026-11-06T09:58-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3",
-    "BBDC4",
-    "BPAC11"
-   ]
   },
   {
    "titulo": "Dólar abre em alta à espera de novos dados de emprego nos EUA",
