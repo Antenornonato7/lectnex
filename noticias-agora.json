@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T13:28-03:00",
+  "atualizado_em": "2026-11-06T13:30-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -159,11 +159,11 @@
     ],
     [
      "13:10",
-     168570.0
+     168555.0
     ],
     [
-     "13:13",
-     168580.0
+     "13:15",
+     168519.0
     ]
    ]
   },
@@ -384,11 +384,11 @@
     ],
     [
      "13:25",
-     5.4995
+     5.4971
     ],
     [
-     "13:28",
-     5.4995
+     "13:30",
+     5.4955
     ]
    ]
   },
@@ -871,7 +871,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.02,
+    "ibov30": 0.01,
     "dolar30": 0.04
    },
    {
@@ -886,7 +886,7 @@
     "tickers": [
      "ANIM3"
     ],
-    "ibov30": -0.11,
+    "ibov30": -0.15,
     "dolar30": 0.14
    },
    {
@@ -902,7 +902,22 @@
      "DASA3"
     ],
     "ibov30": null,
-    "dolar30": 0.13
+    "dolar30": 0.09
+   },
+   {
+    "hora": "13:20",
+    "titulo": "Assaí relata alta nas vendas após veto às bets e mira expansão",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/assai-relata-alta-nas-vendas-apos-veto-as-bets-e-mira-expansao.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ASAI3"
+    ],
+    "ibov30": null,
+    "dolar30": null
    },
    {
     "hora": "13:22",
@@ -1587,6 +1602,19 @@
    ]
   },
   {
+   "titulo": "Assaí relata alta nas vendas após veto às bets e mira expansão",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/assai-relata-alta-nas-vendas-apos-veto-as-bets-e-mira-expansao.shtml",
+   "publicado": "2026-11-06T13:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ASAI3"
+   ]
+  },
+  {
    "titulo": "Ação da Vivara (VIVA3) despenca após balanço do 3º trimestre; do que o mercado não gostou?",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQR1I5NHRkTVZZN25rcnNNUEZ1WkJST19OR3ZGOEY2bTVGUnhYS2dCSkFRSVBzMjFWOWpkSmtMS093S1FlVGF4UzVBWWhGaTVMUDdhTmFUOGFBNG0wcGZWX3hZcHZFNTQ3MzBGb1hELW96MnZ4dWhsRG9RLVl5VW1sVXlpUQ?oc=5",
@@ -1627,7 +1655,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T13:28-03:00",
+ "atualizado_em": "2026-11-06T13:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1641,6 +1669,17 @@
  ],
  "noticias": [
   {
+   "titulo": "Wall Street's fear gauge may be flashing a buy sign",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
+   "publicado": "2026-11-06T13:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ação da Vivara (VIVA3) despenca após balanço do 3º trimestre; do que o mercado não gostou?",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQR1I5NHRkTVZZN25rcnNNUEZ1WkJST19OR3ZGOEY2bTVGUnhYS2dCSkFRSVBzMjFWOWpkSmtMS093S1FlVGF4UzVBWWhGaTVMUDdhTmFUOGFBNG0wcGZWX3hZcHZFNTQ3MzBGb1hELW96MnZ4dWhsRG9RLVl5VW1sVXlpUQ?oc=5",
@@ -1651,6 +1690,19 @@
    ],
    "tickers": [
     "VIVA3"
+   ]
+  },
+  {
+   "titulo": "Assaí relata alta nas vendas após veto às bets e mira expansão",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/assai-relata-alta-nas-vendas-apos-veto-as-bets-e-mira-expansao.shtml",
+   "publicado": "2026-11-06T13:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ASAI3"
    ]
   },
   {
@@ -1773,31 +1825,6 @@
    "tickers": [
     "B3SA3"
    ]
-  },
-  {
-   "titulo": "Renner retira projeções de crescimento de receita até 2030 citando desafios no varejo",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/renner-retira-projecoes-de-crescimento-de-receita-ate-2030-citando-desafios-no-varejo.shtml",
-   "publicado": "2026-11-06T11:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "LREN3"
-   ]
-  },
-  {
-   "titulo": "Wall Street's fear gauge may be flashing a buy sign",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
-   "publicado": "2026-11-06T11:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
   },
   {
    "titulo": "O campo está punindo quem o trata como instrumento: da política em Brasília às tarifas em Washington",
