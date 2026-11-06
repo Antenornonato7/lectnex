@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T10:23-03:00",
+  "atualizado_em": "2026-11-06T10:25-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -11,11 +11,11 @@
     ],
     [
      "10:05",
-     165910.0
+     165997.0
     ],
     [
-     "10:08",
-     165937.0
+     "10:10",
+     166121.0
     ]
    ]
   },
@@ -88,11 +88,11 @@
     ],
     [
      "10:20",
-     5.4967
+     5.5021
     ],
     [
-     "10:23",
-     5.4994
+     "10:25",
+     5.5012
     ]
    ]
   },
@@ -237,7 +237,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.15
+    "dolar30": -0.05
    },
    {
     "hora": "09:56",
@@ -251,7 +251,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.05
+    "dolar30": -0.01
    },
    {
     "hora": "09:58",
@@ -268,13 +268,27 @@
      "BPAC11"
     ],
     "ibov30": null,
-    "dolar30": -0.05
+    "dolar30": -0.01
    },
    {
     "hora": "10:09",
     "titulo": "Dólar hoje opera perto da estabilidade antes de dados de emprego nos EUA",
     "fonte": "InfoMoney",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd01vakpZTEFhWURtYUVkOENaYy1BRnlFUUVuVVFtTERGQ0VfQlJiVWhtTWFVbVU1ekM0cW1HelhPZGQweGstcDc3SWdNRlU2ekZuU0NRd01FOFRDUmRVSGtXYVF5QXFiWDdwLW90Wkc1N0p6c3lPbnoyNlFJSUQ1aXZXeFJNcVllZ0pnMzJFX1dvdWplMmNoNFkxN3LSAaIBQVVfeXFMT3ZodGhLNnpQc3RqSVFjT0hZaUwxNlB4dTBPY0tDTENRaWVhN0FRcndMcUFsZWVjMDZsNkVvd0xHQWFyc1VyY3Q3VF9DajhWWWtsSUZwSkRZZkN0WEtMaGtGTnRDTG41dGNxNW9qWXEyemNGbWp2LVpOVzRrSVVyYXJ0WHpyNEo5QVJ4QU9QcWhzOXBNbzUyVnBmYXVCYlRkS19R?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:15",
+    "titulo": "Tesouro segura prêmio alto antes do payroll; Prefixado 2032 fica em 15,17%",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaXdNU25jRk1xOWtsTklUSGJtMDlyeHpDZUtzM0hUMFZtU1JZZnpkczgyS082V2lKc282N3ctMkx0ZlFYeVdvUlppUnZkWGFZdXZ1Vkg5T3NVcHVFWWFkSkZ0cWxSMlZ6VG40WFJOb3BCMEZJNnhrd0lnUTBYcHMxUjZSdnBNS0ttd2h0OEhfaEx5QU4zN015R3Q3U0VMS0F1Zy15YXo0MGNDLXlOcExZWEtpMW9rVTFoNmp1LTdvam52WEpESEJGZlpn0gHPAUFVX3lxTE13ZjBNX1pVRUNHNU9ZbVVpUmRUbXBfdTZlbmNUUloxOFUwVG4ybnJPMUExN2NnQzVLN0NpZUwtTnZWTXc0NmRiYTdueEYyNUZFZjlXd1hMbXFncDhOdFRZaC1jVzZuUU1kYmJ1aEtrY0VoN2FfMmxUOXZmYllLVDFibnhPdkNwVmpLSXNFVzdXc0NablM3cnFmcGc2VTkxeFp6cEw4ZmZMTlFpMmZpZWFFNkpMaW9nQzM3bllTWDJHUTU5VnU3RUNkOHBYVVZjTQ?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -672,6 +686,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Tesouro segura prêmio alto antes do payroll; Prefixado 2032 fica em 15,17%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaXdNU25jRk1xOWtsTklUSGJtMDlyeHpDZUtzM0hUMFZtU1JZZnpkczgyS082V2lKc282N3ctMkx0ZlFYeVdvUlppUnZkWGFZdXZ1Vkg5T3NVcHVFWWFkSkZ0cWxSMlZ6VG40WFJOb3BCMEZJNnhrd0lnUTBYcHMxUjZSdnBNS0ttd2h0OEhfaEx5QU4zN015R3Q3U0VMS0F1Zy15YXo0MGNDLXlOcExZWEtpMW9rVTFoNmp1LTdvam52WEpESEJGZlpn0gHPAUFVX3lxTE13ZjBNX1pVRUNHNU9ZbVVpUmRUbXBfdTZlbmNUUloxOFUwVG4ybnJPMUExN2NnQzVLN0NpZUwtTnZWTXc0NmRiYTdueEYyNUZFZjlXd1hMbXFncDhOdFRZaC1jVzZuUU1kYmJ1aEtrY0VoN2FfMmxUOXZmYllLVDFibnhPdkNwVmpLSXNFVzdXc0NablM3cnFmcGc2VTkxeFp6cEw4ZmZMTlFpMmZpZWFFNkpMaW9nQzM3bllTWDJHUTU5VnU3RUNkOHBYVVZjTQ?oc=5",
+   "publicado": "2026-11-06T10:15-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -696,7 +722,7 @@
    "em": "2026-11-06T13:05:42+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T10:23-03:00",
+ "atualizado_em": "2026-11-06T10:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -711,6 +737,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Tesouro segura prêmio alto antes do payroll; Prefixado 2032 fica em 15,17%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaXdNU25jRk1xOWtsTklUSGJtMDlyeHpDZUtzM0hUMFZtU1JZZnpkczgyS082V2lKc282N3ctMkx0ZlFYeVdvUlppUnZkWGFZdXZ1Vkg5T3NVcHVFWWFkSkZ0cWxSMlZ6VG40WFJOb3BCMEZJNnhrd0lnUTBYcHMxUjZSdnBNS0ttd2h0OEhfaEx5QU4zN015R3Q3U0VMS0F1Zy15YXo0MGNDLXlOcExZWEtpMW9rVTFoNmp1LTdvam52WEpESEJGZlpn0gHPAUFVX3lxTE13ZjBNX1pVRUNHNU9ZbVVpUmRUbXBfdTZlbmNUUloxOFUwVG4ybnJPMUExN2NnQzVLN0NpZUwtTnZWTXc0NmRiYTdueEYyNUZFZjlXd1hMbXFncDhOdFRZaC1jVzZuUU1kYmJ1aEtrY0VoN2FfMmxUOXZmYllLVDFibnhPdkNwVmpLSXNFVzdXc0NablM3cnFmcGc2VTkxeFp6cEw4ZmZMTlFpMmZpZWFFNkpMaW9nQzM3bllTWDJHUTU5VnU3RUNkOHBYVVZjTQ?oc=5",
+   "publicado": "2026-11-06T10:15-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Nvidia aguarda liberação da China para enviar 600 mil chips ao país",
    "fonte": "Folha",
@@ -898,18 +936,6 @@
    "tickers": [
     "BBDC4"
    ]
-  },
-  {
-   "titulo": "Ibovespa acompanha payroll nos EUA em meio à expectativa por discurso de Lula sobre contas públicas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZlczVHdZeUxCNWc4WmNFR0ZhTW8yaFpIa1hEbXpvQVMyei02bDB0NVFSajNGQ3lnRlRTNGxPZkE3MktPaFMwOTl1NHNkSGlVRnJqU19zaG4yOF9oOGhMZ0IxQjNsazA1ZEJfY1R4YkJ4blAzLTBRMERNVmJIam1KTG9jQ0lvSW9PdnVHSFNTMGlhSDE4LU4ySDREZkhjVjJIYjg4OUtaQW9WXzg3UUJ1VEJyOTFvTG1iSmN6cEk2S1RkOU9sLTVGbXZGUlRKcnFfSXQyM09kMXTSAd4BQVVfeXFMTTJZYjdJX0stWEM0Wl9YZDJJVzNMaWpXTjZELVMwU1hGdnRsb3puUHFldUhWRWdiRm1Ecm00LXZ5dGdVSllkMkJrV2k1VzJzVnFGZUlWS0M1czM2VkVrb0Q0OHhpTmhfbzZYNkUyUmI5OWN4blRrMVNyNExfWU5mOVdsU28wVlZFYVlGR2Y0RzlYczJwV0plVEhDMDVucWZqVW9VN3I4NG12eW1QWkRUTUtlRGFfU3VkOUNhcXdsbU9pN3VaUUJyTXNCT3dqNEd2ekxrMFMybEljUFZBT0N3?oc=5",
-   "publicado": "2026-11-06T08:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
