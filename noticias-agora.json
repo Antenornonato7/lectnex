@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T12:18-03:00",
+  "atualizado_em": "2026-11-06T12:20-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -103,11 +103,11 @@
     ],
     [
      "12:00",
-     168279.0
+     168437.0
     ],
     [
-     "12:03",
-     168350.0
+     "12:05",
+     168421.0
     ]
    ]
   },
@@ -272,11 +272,11 @@
     ],
     [
      "12:15",
-     5.4855
+     5.4835
     ],
     [
-     "12:18",
-     5.4901
+     "12:20",
+     5.484
     ]
    ]
   },
@@ -662,7 +662,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.04
    },
    {
     "hora": "12:02",
@@ -690,6 +690,20 @@
     "tickers": [
      "VIVA3"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:19",
+    "titulo": "Copom interrompe ciclo de corte de juros e mantém Selic em 13,75% ao ano",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1sQl83QnpGeW1iN0R2T3BtTzY4cm5TZk9OazdCczJhcy1ELWdQS2MyemtDMVp6dnV1V19sV0hfTmEzVFlYZUNrQXpBc2hBVTFPMXczWG4wVzNQd2c1SXpqTHFjeXF6bmpuREZxYVdCazJ0R2hNMXpXa2d3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1274,6 +1288,18 @@
    "tickers": [
     "VIVA3"
    ]
+  },
+  {
+   "titulo": "Copom interrompe ciclo de corte de juros e mantém Selic em 13,75% ao ano",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1sQl83QnpGeW1iN0R2T3BtTzY4cm5TZk9OazdCczJhcy1ELWdQS2MyemtDMVp6dnV1V19sV0hfTmEzVFlYZUNrQXpBc2hBVTFPMXczWG4wVzNQd2c1SXpqTHFjeXF6bmpuREZxYVdCazJ0R2hNMXpXa2d3?oc=5",
+   "publicado": "2026-11-06T12:19-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1303,7 +1329,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T12:18-03:00",
+ "atualizado_em": "2026-11-06T12:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1317,6 +1343,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Copom interrompe ciclo de corte de juros e mantém Selic em 13,75% ao ano",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1sQl83QnpGeW1iN0R2T3BtTzY4cm5TZk9OazdCczJhcy1ELWdQS2MyemtDMVp6dnV1V19sV0hfTmEzVFlYZUNrQXpBc2hBVTFPMXczWG4wVzNQd2c1SXpqTHFjeXF6bmpuREZxYVdCazJ0R2hNMXpXa2d3?oc=5",
+   "publicado": "2026-11-06T12:19-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ação da Vivara (VIVA3) lidera perdas do Ibovespa após balanço do 3º tri",
    "fonte": "InfoMoney",
@@ -1494,19 +1532,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Méliuz vende 78 bitcoins para financiar recompra de ações na B3",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTHotUGUtVUlVYU5vVnhXUmNrMGhBVGpsbmtoZkJhZjBQV2VsNUk0MDJzOVFkbzFnb2NILUItNTc5TzU1eExRMkZsY3JhdTRfcTZ2eXJETHBnTnpQSEVkU3UtOE5SQUNZaUVFeE9XM0xWR2RWU2dwMl9aRnFub2pNUFJxc2cyTUJPbEdMbUgtUmNWbEEwdzlzaXhaalhDM0E?oc=5",
-   "publicado": "2026-11-06T09:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
   }
  ]
 }
