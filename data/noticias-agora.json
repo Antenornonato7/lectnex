@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-06",
-  "atualizado_em": "2026-11-06T12:38-03:00",
+  "atualizado_em": "2026-11-06T13:08-03:00",
   "ibov": {
    "anterior": 166191.45,
    "pontos": [
@@ -119,11 +119,35 @@
     ],
     [
      "12:20",
-     168547.0
+     168542.0
     ],
     [
-     "12:23",
-     168527.0
+     "12:25",
+     168638.0
+    ],
+    [
+     "12:30",
+     168531.0
+    ],
+    [
+     "12:35",
+     168717.0
+    ],
+    [
+     "12:40",
+     168534.0
+    ],
+    [
+     "12:45",
+     168773.0
+    ],
+    [
+     "12:50",
+     169036.0
+    ],
+    [
+     "12:53",
+     168985.0
     ]
    ]
   },
@@ -307,8 +331,32 @@
      5.4894
     ],
     [
-     "12:38",
-     5.4931
+     "12:40",
+     5.4956
+    ],
+    [
+     "12:45",
+     5.4936
+    ],
+    [
+     "12:50",
+     5.4905
+    ],
+    [
+     "12:55",
+     5.4924
+    ],
+    [
+     "13:00",
+     5.4911
+    ],
+    [
+     "13:05",
+     5.4915
+    ],
+    [
+     "13:08",
+     5.4941
     ]
    ]
   },
@@ -707,7 +755,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.06,
     "dolar30": 0.04
    },
    {
@@ -722,7 +770,7 @@
     "tickers": [
      "VIVA3"
     ],
-    "ibov30": null,
+    "ibov30": 0.06,
     "dolar30": 0.04
    },
    {
@@ -736,8 +784,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.07,
+    "dolar30": 0.18
    },
    {
     "hora": "12:28",
@@ -749,6 +797,49 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": 0.21,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "12:39",
+    "titulo": "Por que o Ibovespa sobe mais de 1% mesmo com dados fortes do payroll nos EUA?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNem1YcXEzVEkzeTBXUDJJTXlNeWh2WGJEd1ItcjVUN09aUHE4N3BEdzlVU3M3TDV5bXBwU211RDFqMXRBN3JrTmJTSURjWW1RWThQX25OamRfY1hWNTU0eGE3NUs4NUwwNHZOTXcxaks2bVhKOVBfdWEwTjIzaFROMWE4YjBvN1o5eEQta1hOX2dGTzhFbVM4dy1ZMVVJVjJlYnEweFMwOTM5UDdUTnFaZ3dtTmzSAboBQVVfeXFMT1dLTmhLVTctUzZvZThHYkMwX1REM3ZNYlFzcFVyMXdzMkdSWGdMemFqVGhneDZLUUJXSHlwN0t1OXZaNXBkVk9qVWRITVJlVl9NNWFCWTdOeVFaNlUtakVpY185UllJTi1GNGtvQU54SnlPWThhVUVGRENPWW5WTUlISDFOYjZJbUl0WnBuSU1Jbkw5Z0JXWDgwTVNBdnNmZm95T0g5OG5ZNG4wOW5zTjRLMWthWkkwRUtB?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.04
+   },
+   {
+    "hora": "12:43",
+    "titulo": "Tesouro Selic, CDB, LCI/LCA ou Poupança? Quanto rendem R$ 10 mil com juros a 13,75%",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSnYySVlsRE5lbDhvVG9iRW1yRGUxUXQ2ajdxY0s5Q1NDendoRFFBYzFWN2pMd1oxNk94aUlfZGtRcnFCM2NFY0ItT21EOXFOdXlNek5BQmVabHdfZ2dBX3A5ZXoxalQzVWV4NWUxeU5ZcXppblFpMXZNUFc5Vi13N19sTXFSMFN4MFpKY1F0azBYeFdlU1lta2N1bDZ4U2ZlOVUxQXo0MlhQbGN1cFdnWExScw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "12:48",
+    "titulo": "Ânima (ANIM3) salta cerca de 10% após balanço do 3T26; veja o que agradou o mercado",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVHVXZXhJaXNDU3N2MFBkTklUaVpfRVhUaUJieUtjS2h0aENZeDlFakpEU1k1eWtJN3B5blZSMFNjWUs3bVNlQUp5Z0dMTWFuR2RzYTh5cFZQU3BnRVJBVjBoRzBscnNHaE5majBiMGdEYndXUE9TWHBKaTRnWjlHS2xVOWtEa1ltU25wM0l3bjVENC1XSlRXONIBngFBVV95cUxQQVdiSjlUeXNGaWVNRzJmcWdUUHVDWDE0RGVvQVliS3BuM2tOZS1SYWNUYm9wQ3FybHgyYm42X2hSU1U5RE5iWTZyRFpyRFNDZEhya0JQZnZINEpDVDBxUFRqTHFuNHVMLVQ2aHdRR19oajl4SldYbzVHTXE0U3VFZzBVNTVxRDV1M2RqNXQ4a2k1MXZROHpIZkM1WEo0UQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ANIM3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1356,6 +1447,43 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Por que o Ibovespa sobe mais de 1% mesmo com dados fortes do payroll nos EUA?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNem1YcXEzVEkzeTBXUDJJTXlNeWh2WGJEd1ItcjVUN09aUHE4N3BEdzlVU3M3TDV5bXBwU211RDFqMXRBN3JrTmJTSURjWW1RWThQX25OamRfY1hWNTU0eGE3NUs4NUwwNHZOTXcxaks2bVhKOVBfdWEwTjIzaFROMWE4YjBvN1o5eEQta1hOX2dGTzhFbVM4dy1ZMVVJVjJlYnEweFMwOTM5UDdUTnFaZ3dtTmzSAboBQVVfeXFMT1dLTmhLVTctUzZvZThHYkMwX1REM3ZNYlFzcFVyMXdzMkdSWGdMemFqVGhneDZLUUJXSHlwN0t1OXZaNXBkVk9qVWRITVJlVl9NNWFCWTdOeVFaNlUtakVpY185UllJTi1GNGtvQU54SnlPWThhVUVGRENPWW5WTUlISDFOYjZJbUl0WnBuSU1Jbkw5Z0JXWDgwTVNBdnNmZm95T0g5OG5ZNG4wOW5zTjRLMWthWkkwRUtB?oc=5",
+   "publicado": "2026-11-06T12:39-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro Selic, CDB, LCI/LCA ou Poupança? Quanto rendem R$ 10 mil com juros a 13,75%",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSnYySVlsRE5lbDhvVG9iRW1yRGUxUXQ2ajdxY0s5Q1NDendoRFFBYzFWN2pMd1oxNk94aUlfZGtRcnFCM2NFY0ItT21EOXFOdXlNek5BQmVabHdfZ2dBX3A5ZXoxalQzVWV4NWUxeU5ZcXppblFpMXZNUFc5Vi13N19sTXFSMFN4MFpKY1F0azBYeFdlU1lta2N1bDZ4U2ZlOVUxQXo0MlhQbGN1cFdnWExScw?oc=5",
+   "publicado": "2026-11-06T12:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ânima (ANIM3) salta cerca de 10% após balanço do 3T26; veja o que agradou o mercado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVHVXZXhJaXNDU3N2MFBkTklUaVpfRVhUaUJieUtjS2h0aENZeDlFakpEU1k1eWtJN3B5blZSMFNjWUs3bVNlQUp5Z0dMTWFuR2RzYTh5cFZQU3BnRVJBVjBoRzBscnNHaE5majBiMGdEYndXUE9TWHBKaTRnWjlHS2xVOWtEa1ltU25wM0l3bjVENC1XSlRXONIBngFBVV95cUxQQVdiSjlUeXNGaWVNRzJmcWdUUHVDWDE0RGVvQVliS3BuM2tOZS1SYWNUYm9wQ3FybHgyYm42X2hSU1U5RE5iWTZyRFpyRFNDZEhya0JQZnZINEpDVDBxUFRqTHFuNHVMLVQ2aHdRR19oajl4SldYbzVHTXE0U3VFZzBVNTVxRDV1M2RqNXQ4a2k1MXZROHpIZkM1WEo0UQ?oc=5",
+   "publicado": "2026-11-06T12:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ANIM3"
+   ]
   }
  ],
  "enviadas": [
@@ -1385,7 +1513,7 @@
    "em": "2026-11-06T13:30:28+00:00"
   }
  ],
- "atualizado_em": "2026-11-06T12:38-03:00",
+ "atualizado_em": "2026-11-06T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1399,6 +1527,55 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Oil prices set for sharp weekly fall after midterm elections as investors weigh Iran conflict risk",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
+   "publicado": "2026-11-06T13:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ânima (ANIM3) salta cerca de 10% após balanço do 3T26; veja o que agradou o mercado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVHVXZXhJaXNDU3N2MFBkTklUaVpfRVhUaUJieUtjS2h0aENZeDlFakpEU1k1eWtJN3B5blZSMFNjWUs3bVNlQUp5Z0dMTWFuR2RzYTh5cFZQU3BnRVJBVjBoRzBscnNHaE5majBiMGdEYndXUE9TWHBKaTRnWjlHS2xVOWtEa1ltU25wM0l3bjVENC1XSlRXONIBngFBVV95cUxQQVdiSjlUeXNGaWVNRzJmcWdUUHVDWDE0RGVvQVliS3BuM2tOZS1SYWNUYm9wQ3FybHgyYm42X2hSU1U5RE5iWTZyRFpyRFNDZEhya0JQZnZINEpDVDBxUFRqTHFuNHVMLVQ2aHdRR19oajl4SldYbzVHTXE0U3VFZzBVNTVxRDV1M2RqNXQ4a2k1MXZROHpIZkM1WEo0UQ?oc=5",
+   "publicado": "2026-11-06T12:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ANIM3"
+   ]
+  },
+  {
+   "titulo": "Tesouro Selic, CDB, LCI/LCA ou Poupança? Quanto rendem R$ 10 mil com juros a 13,75%",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSnYySVlsRE5lbDhvVG9iRW1yRGUxUXQ2ajdxY0s5Q1NDendoRFFBYzFWN2pMd1oxNk94aUlfZGtRcnFCM2NFY0ItT21EOXFOdXlNek5BQmVabHdfZ2dBX3A5ZXoxalQzVWV4NWUxeU5ZcXppblFpMXZNUFc5Vi13N19sTXFSMFN4MFpKY1F0azBYeFdlU1lta2N1bDZ4U2ZlOVUxQXo0MlhQbGN1cFdnWExScw?oc=5",
+   "publicado": "2026-11-06T12:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Por que o Ibovespa sobe mais de 1% mesmo com dados fortes do payroll nos EUA?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNem1YcXEzVEkzeTBXUDJJTXlNeWh2WGJEd1ItcjVUN09aUHE4N3BEdzlVU3M3TDV5bXBwU211RDFqMXRBN3JrTmJTSURjWW1RWThQX25OamRfY1hWNTU0eGE3NUs4NUwwNHZOTXcxaks2bVhKOVBfdWEwTjIzaFROMWE4YjBvN1o5eEQta1hOX2dGTzhFbVM4dy1ZMVVJVjJlYnEweFMwOTM5UDdUTnFaZ3dtTmzSAboBQVVfeXFMT1dLTmhLVTctUzZvZThHYkMwX1REM3ZNYlFzcFVyMXdzMkdSWGdMemFqVGhneDZLUUJXSHlwN0t1OXZaNXBkVk9qVWRITVJlVl9NNWFCWTdOeVFaNlUtakVpY185UllJTi1GNGtvQU54SnlPWThhVUVGRENPWW5WTUlISDFOYjZJbUl0WnBuSU1Jbkw5Z0JXWDgwTVNBdnNmZm95T0g5OG5ZNG4wOW5zTjRLMWthWkkwRUtB?oc=5",
+   "publicado": "2026-11-06T12:39-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Bolsas do Japão têm maior queda desde tarifas de Trump; Coreia do Sul aciona circuit breaker",
    "fonte": "Folha",
@@ -1472,19 +1649,6 @@
    ]
   },
   {
-   "titulo": "Ibovespa e dólar sobem com emprego nos EUA, política econômica e balanços",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPLTFPLU0tb0VBc2hHRU91YWZzeV83MDloMThZdmk4TTBRM0dOeWpVcWJSSFNzQ0dGYjZCaWEtOUNpT1FraWlubE9wYVltWjhYSUtmM2ttS21jMnc2YkRVRUxYSkFTeXB4VzczZjN6UTl0T2xOa0NjdkREMmxiY0h3dWxXYWtjYVlCQzM0ZnBGR21pV2VLQTVuMGdBQWhBSTFGbGdNLQ?oc=5",
-   "publicado": "2026-11-06T11:10-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Payroll e reação de Wall Street dão fôlego ao Ibovespa; dólar sobe",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcm5fVTZ1RHVHbWZlRFFYYm1nVXJSc0llTUlrRlBLX3BUZFpxbXFlN0lac2pYSnQ4c3hSTm9MbV9WUTUybm5Vb3lVUkVpX3dUVUIwcHNOM3czRGVhbV9kMi10OXpkdjQwNl9KektsUTZqUEpxbzU3cy1BeWRtQmhucFhHRlR5Q3lZQnhCNWhGaVBRWFRDZkNwWExNTkxrQ0pZaWc?oc=5",
@@ -1533,18 +1697,6 @@
    "tickers": []
   },
   {
-   "titulo": "Tempo real: Ibovespa sobe após dados de emprego dos EUA virem acima do esperado",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5TaDN1TWlwQzF1YmxPR0JjaFNNcW5LV2FDN2RWRWIyQ3ZXZWcyUUhzT0NBLUZXTGwtVmVUZEdkSi05RVdaVnZBQ05vd1pPLTRHcG5zV251ZDZhOUo2cjZ3bWxvczk?oc=5",
-   "publicado": "2026-11-06T10:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Nasdaq drops into correction territory — here’s what typically happens next",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/05/nasdaq-drops-into-correction-territory-heres-what-typically-happens-next.html",
@@ -1556,39 +1708,14 @@
    "tickers": []
   },
   {
-   "titulo": "CSN Mineração salta mais de 13% e lidera ganhos do Ibovespa hoje; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQem1tamdfR3htTDMzSmw3UlRrbnNIWWJNVmFQR0Mwa015VHdvS3AtbHdNNG4tVWtnUnViaWNwaG5mX2pkVWl6SkVVQTVWSHNRZFI0ZkJEYk1LS1RKQW1Zd1h1NVNZZ0wyd05sWU5Kd3dwbWstMnp1aW5IY3EzT0k4MWRVbkNrTVpGLWRSYW9VajhVejM0cTlWaFgtN2VlRHhSNnZtTm5CSTRoM2RhZzhnbHJ3V09rWk9mMUdYa3J0bnRJS1lnbXh0X2ZtTmV3d3RYRmVrZUg5N1hYS001MFNMWEtZWQ?oc=5",
-   "publicado": "2026-11-06T10:00-03:00",
+   "titulo": "Petróleo chega a ultrapassar US$ 100, mas depois cai quase 2%",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468042",
+   "publicado": "2026-11-06T10:29-03:00",
    "impacto": "medio",
    "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "CMIN3"
-   ]
-  },
-  {
-   "titulo": "Dólar e Bolsa avançam após dados de emprego dos EUA e em meio a dúvidas sobre política fiscal",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-a-espera-de-novos-dados-de-emprego-nos-eua.shtml",
-   "publicado": "2026-11-06T09:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Banco Central do Paraguai anuncia regras para devolver dinheiro a clientes do Ueno Bank",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-central-do-paraguai-anuncia-regras-para-devolver-dinheiro-a-clientes-do-ueno-bank.shtml",
-   "publicado": "2026-11-06T09:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   }
