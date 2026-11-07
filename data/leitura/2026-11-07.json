@@ -1,0 +1,145 @@
+{
+ "tipo": "sem-pregao",
+ "data": "2026-11-07",
+ "gerado_em": "2026-11-07T08:20:00-03:00",
+ "titulo": "Fim de semana de pronunciamento de Lula, com ata e CPI na terça",
+ "resumo": [
+  "No último pregão (sexta, 6), o Ibovespa subiu 1,39%, a 168.498,45 pontos, puxado pelos bancos, e encerrou três semanas de queda (+0,34% na semana); o dólar à vista subiu 0,37%, a R$ 5,5087, maior fechamento de 2026, e acumulou alta de 1,18% na semana.",
+  "O payroll de outubro veio bem acima do esperado: 165 mil vagas, contra consenso Reuters de 64 mil, desemprego em 4,1% e ganhos salariais de 0,4% no mês; analistas passaram a ver mais chance de alta de juros pelo Fed em dezembro, o que fortalece o dólar global e pressiona a curva do DI.",
+  "Em Wall Street, a tecnologia se recuperou na sexta (Nasdaq +1,09%, S&P 500 +0,31%, Dow −0,46%), mas o S&P 500 fechou a pior semana desde junho (−2,7%); o Treasury de 10 anos foi a 4,86% e o DXY subiu 0,72%.",
+  "O principal evento do fim de semana é o pronunciamento de Lula em rede nacional no domingo (8): segundo Estadão, O Globo e Reuters, ele deve reafirmar a responsabilidade fiscal, mas sem detalhar medidas — o ministro Dario Durigan indicou que elas ficam para a segunda quinzena de novembro.",
+  "Na semana, o foco vai para a ata do Copom e o CPI americano na terça (10) e o IPCA de outubro na quinta (12); o CPI dos EUA sairá sem a variação anual do índice cheio, por causa da falta de dados de outubro de 2025."
+ ],
+ "destaques": [
+  {
+   "hora": "seg 8h25",
+   "evento": "Boletim Focus (BCB)",
+   "por_que": "Primeira leitura das expectativas de Selic, IPCA e câmbio depois do pronunciamento de domingo."
+  },
+  {
+   "hora": "ter 8h",
+   "evento": "Ata do Copom",
+   "por_que": "Detalha a pausa da Selic em 13,75% e o balanço de riscos; mexe direto nos vértices curtos do DI."
+  },
+  {
+   "hora": "ter 10h30",
+   "evento": "CPI de outubro (EUA)",
+   "por_que": "Anterior de 0,6% no mês; depois do payroll forte, inflação alta reforçaria a aposta de alta do Fed e pressionaria o WDO."
+  },
+  {
+   "hora": "qui 9h",
+   "evento": "IPCA de outubro (IBGE)",
+   "por_que": "Inflação oficial com câmbio em alta; impacto direto nas taxas do DI."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 (fech. sex)",
+   "variacao": "+0,31%"
+  },
+  {
+   "ativo": "Nasdaq (fech. sex)",
+   "variacao": "+1,09%"
+  },
+  {
+   "ativo": "Dow Jones (fech. sex)",
+   "variacao": "−0,46%"
+  },
+  {
+   "ativo": "Treasury 10 anos",
+   "variacao": "+2 bp (4,86%)"
+  },
+  {
+   "ativo": "DXY",
+   "variacao": "+0,72% (102,28)"
+  },
+  {
+   "ativo": "Petróleo WTI",
+   "variacao": "−0,20% (US$ 90,34)"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "EUA criam 165 mil vagas em outubro, bem acima das 64 mil esperadas; desemprego vai a 4,1%",
+   "fonte": "InfoMoney",
+   "hora": "sex 10h32",
+   "url": "https://www.infomoney.com.br/mercados/payroll-eua-outubro-2026/",
+   "por_que": "Mercado de trabalho forte reduz a chance de alívio do Fed e tende a sustentar o dólar global, pesando sobre o real e a curva de juros na abertura de segunda.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Emprego forte nos EUA aumenta apostas de alta do Fed em dezembro e reduz espaço para cortes da Selic",
+   "fonte": "InfoMoney",
+   "hora": "sex 13h06",
+   "url": "https://www.infomoney.com.br/economia/payroll-eua-outubro-juros-fed-selic/",
+   "por_que": "Analistas citados esperam curva de juros mais inclinada e câmbio pressionado; com dólar mais alto, a inflação local fica mais difícil de baixar, o que sustenta as taxas do DI.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Dólar fecha a R$ 5,5087, maior nível de 2026, com payroll forte e cautela fiscal",
+   "fonte": "Jornal do Comércio (agências)",
+   "hora": "sex 18h45",
+   "url": "https://www.jornaldocomercio.com/economia/2026/11/1269637-dolar-atinge-rs-550-com-emprego-forte-nos-eua-e-cautela-fiscal.html",
+   "por_que": "O dólar sobe 10,33% desde a véspera do segundo turno; segundo a matéria, Lula prometeu superávit primário em 2027 e disse que ajustes não recairão sobre os mais pobres, mas medidas concretas só devem vir após 16/11 — o prêmio de risco segue no câmbio.",
+   "impacto": {
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Mercado reage com ceticismo a aceno de Lula sobre ajuste fiscal",
+   "fonte": "O Tempo",
+   "hora": "sex 15h20",
+   "url": "https://www.otempo.com.br/economia/2026/11/6/mercado-reage-com-ceticismo-a-aceno-de-lula-sobre-ajuste-fiscal",
+   "por_que": "Segundo a matéria, Durigan disse que as medidas serão debatidas na segunda quinzena de novembro, após a COP31; sem detalhes sobre corte de gastos, investidores seguem cobrando prêmio na curva e no câmbio.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Lula faz pronunciamento em rede nacional no domingo (8) com aceno ao eleitor e ao mercado",
+   "fonte": "CNN Brasil",
+   "hora": "qua 15h19",
+   "url": "https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/pronunciamento-de-lula-deve-acenar-ao-eleitor-e-ao-mercado/",
+   "por_que": "Segundo um interlocutor de Lula ouvido pela CNN, a fala deve reforçar a responsabilidade fiscal sem detalhar medidas; um discurso vago ou com mais gastos tende a pesar na abertura de segunda, e um compromisso claro pode aliviar câmbio e DI.",
+   "impacto": {}
+  }
+ ],
+ "proximo_pregao": {
+  "data": "2026-11-09",
+  "o_que_esperar": "A abertura de segunda deve refletir o tom do pronunciamento de Lula no domingo e a inflação da China (domingo, 22h30), além do Focus às 8h25; o payroll forte da sexta mantém o dólar global firme antes da ata do Copom e do CPI americano na terça."
+ },
+ "fontes": [
+  {
+   "titulo": "Diário do Sudoeste — Ibovespa sobe 1,39% e tem semana de alta; dólar a R$ 5,51",
+   "url": "https://diariodosudoeste.com.br/ibovespa-sobe-139-e-tem-semana-de-alta-dolar-a-r-551/"
+  },
+  {
+   "titulo": "InfoMoney — Payroll: EUA criam 165 mil vagas de trabalho em outubro, acima do esperado",
+   "url": "https://www.infomoney.com.br/mercados/payroll-eua-outubro-2026/"
+  },
+  {
+   "titulo": "AP (via myMotherLode) — How major US stock indexes fared Friday 11/6/2026",
+   "url": "https://mymotherlode.com/news/national/11287401/how-major-us-stock-indexes-fared-friday-11-6-2026.html"
+  },
+  {
+   "titulo": "The Closing Print — Post-Market & Weekly Summary – Nov 6, 2026",
+   "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-06/"
+  },
+  {
+   "titulo": "O Tempo — Lula fará pronunciamento no domingo (8/11) para tentar acalmar mercado e defender ajuste fiscal",
+   "url": "https://www.otempo.com.br/politica/congresso/2026/11/4/lula-fara-pronunciamento-no-domingo-8-11-para-tentar-acalmar-mercado-e-defender-ajuste-fiscal"
+  },
+  {
+   "titulo": "StockTitan — Next CPI Report on November 10 Will Have No Yearly Inflation Rate for Overall Prices",
+   "url": "https://www.stocktitan.net/articles/october-2026-cpi-preview-no-yearly-rate"
+  }
+ ]
+}
