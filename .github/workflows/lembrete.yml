@@ -1,0 +1,27 @@
+# Lembrete de postagem no Telegram privado do dono (pelo Relógio): 8h30 e 20h nos pregões; 10h05 e 18h no fim de semana e feriados.
+name: Lembrete de postagem
+run-name: Lembrete ${{ inputs.momento }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      momento:
+        description: 'manha, noite, fds ou domingo'
+        type: choice
+        options: [manha, noite, fds, domingo]
+        default: manha
+
+permissions:
+  contents: read
+
+jobs:
+  lembrete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enviar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: python3 scripts/lembrete.py "${{ inputs.momento }}"
