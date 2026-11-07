@@ -248,8 +248,9 @@ def main():
     hoje = dt.datetime.now(BRT).date()
     if '--data' in sys.argv:
         hoje = dt.date.fromisoformat(sys.argv[sys.argv.index('--data') + 1])
-    if hoje.weekday() != 4 and '--forcar' not in sys.argv:
-        print('Reel da semana só às sextas.')
+    from ultimo_pregao import ultimo_da_semana
+    if not ultimo_da_semana(hoje) and '--forcar' not in sys.argv:
+        print('Reel da semana só no último pregão da semana.')
         return
     s = Semana(hoje)
     if len(s.dias) < 2:

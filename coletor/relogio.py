@@ -34,6 +34,13 @@ def api(url, dados=None):
 def pregao_hoje():
     if AGORA.weekday() >= 5:
         return False
+    try:  # feriados da B3 pela mesma regra do site (independe de o calendário já trazer o feriado)
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'scripts'))
+        from ultimo_pregao import feriados
+        if AGORA.date().isoformat() in feriados():
+            return False
+    except Exception:
+        pass
     try:
         cal = json.load(open('data/calendario.json', encoding='utf-8'))
         return not any(e.get('data') == AGORA.date().isoformat() and 'B3 fechada' in (e.get('evento') or '') for e in cal.get('eventos', []))

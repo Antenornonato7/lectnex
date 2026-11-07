@@ -132,8 +132,9 @@ def main():
     if '--data' in sys.argv:
         hoje = dt.date.fromisoformat(sys.argv[sys.argv.index('--data') + 1])
         args = [a for a in args if a != hoje.isoformat()]
-    if hoje.weekday() != 4 and '--forcar' not in sys.argv:
-        print('Story do placar só às sextas.')
+    from ultimo_pregao import ultimo_da_semana
+    if not ultimo_da_semana(hoje) and '--forcar' not in sys.argv:
+        print('Story do placar só no último pregão da semana.')
         return
     d = dados(hoje)
     if not d['dias_sem'] and not d['evs_sem']:

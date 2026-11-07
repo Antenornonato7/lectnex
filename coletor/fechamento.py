@@ -220,10 +220,12 @@ def registrar_placar_historico(ad):
 
 def semana_em_eventos():
     """Sexta: os eventos fortes da semana (Antes × Depois) e o placar acumulado, para o canal."""
-    if hoje.weekday() != 4:
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'scripts'))
+    from ultimo_pregao import ultimo_da_semana
+    if not ultimo_da_semana(hoje):
         return []
     pl = (ler(PLACAR_HIST) or {}).get('eventos', [])
-    ini = (hoje - dt.timedelta(days=4)).isoformat()
+    ini = (hoje - dt.timedelta(days=hoje.weekday())).isoformat()
     evs = [e for e in pl if ini <= e['data'] <= hoje.isoformat()]
     if not evs:
         return []

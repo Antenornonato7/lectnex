@@ -199,7 +199,8 @@ def enviar(dia=None):
         if p.get('legenda'):
             tg_texto(f'📋 Legenda do feed ({p["nome"]}):', html=False)
             tg_texto(p['legenda'], html=False)
-    if d.weekday() == 4:  # sexta: lembrete para anotar o desempenho da semana
+    from ultimo_pregao import ultimo_da_semana
+    if ultimo_da_semana(d):  # último pregão da semana: lembrete para anotar o desempenho
         tg_texto('📊 <b>Anote os números da semana</b> (2 dias depois de cada post): visualizações, curtidas, comentários, salvos e '
                  'compartilhamentos.\nhttps://claude.ai/artifact/4hS34kNEt73oUn6z999hyW')
     print(f'Kit do dia enviado: {len(ok)} peça(s).')
