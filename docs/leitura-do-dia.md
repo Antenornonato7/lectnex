@@ -145,6 +145,8 @@ FOMC e falas do Fed, ISM, PIB; China: PMIs e dados de atividade; Europa: BCE e i
 ## Rodadas de resultado (dias úteis)
 
 Além da edição das 7h40, a tarefa "Resultados do calendário" roda às 12h40 e às 16h40 (Brasília) nos dias úteis.
+A tarefa "Resultados da noite" roda às 19h20 e às 21h20 só para o item 1 (eventos depois das 17h, como Copom e FOMC), e às 21h45
+um robô confere se ficou algum evento forte sem resultado e avisa o dono.
 Ela faz duas coisas, nesta ordem:
 
 1. **Calendário** — em `data/calendario.json`, preenche `resultado` e `surpresa` dos eventos de hoje que já saíram (número oficial

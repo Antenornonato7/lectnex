@@ -59,6 +59,7 @@ TAREFAS = [
     ('fechamento.yml', None, {'forcar': 'false'}, ('horarios', ['19:05'], 180), lambda: PREGAO),
     ('resumo-dono.yml', 'Resumo do dia', {'teste': 'false'}, ('horarios', ['19:25'], 240), lambda: True),
     ('kit.yml', 'Kit do dia', {}, ('horarios', ['19:32'], 150), lambda: UTIL),
+    ('checar-resultados.yml', 'Conferir resultados', {}, ('horarios', ['21:45'], 120), lambda: UTIL),
     ('telegram.yml', 'Telegram contar', {'acao': 'contar'}, ('horarios', ['08:17'], 240), lambda: True),
     ('termo.yml', None, {}, ('horarios', ['08:05'], 240), lambda: True),
     ('sinais.yml', 'Sinais da manhã', {}, ('horarios', ['07:22'], 25), lambda: PREGAO),
