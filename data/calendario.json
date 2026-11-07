@@ -1,113 +1,6 @@
 {
-  "atualizado_em": "2026-11-06T16:50:00-03:00",
+  "atualizado_em": "2026-11-07T08:20:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-06",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Payroll — criação de vagas (out)",
-      "importancia": 3,
-      "anterior": "29 mil",
-      "consenso": "65 mil",
-      "resultado": "165 mil",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Emprego forte tende a fortalecer o dólar global.",
-      "tipo": "payroll",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "Emprego muito acima do esperado costuma fortalecer o dólar global e elevar os juros longos, pressionando WDO e DI para cima e pesando no WIN."
-      }
-    },
-    {
-      "data": "2026-11-06",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Taxa de desemprego (out)",
-      "importancia": 3,
-      "anterior": "4,2%",
-      "consenso": "4,2%",
-      "resultado": "4,1%",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "tipo": "desemprego-eua",
-      "surpresa": {
-        "direcao": "abaixo",
-        "reacao": "Desemprego menor que o previsto reforça a leitura de mercado de trabalho firme, o que tende a sustentar dólar e taxas do DI."
-      }
-    },
-    {
-      "data": "2026-11-06",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Salário médio por hora (out, m/m)",
-      "importancia": 2,
-      "anterior": "0,1%",
-      "consenso": "0,3%",
-      "resultado": "0,4%",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Pressão salarial pesa nas apostas para o Fed.",
-      "tipo": "salario-eua",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "Salário acima do esperado alimenta o receio de inflação nos EUA, o que costuma pressionar Treasuries, dólar e DI e pesar na bolsa."
-      }
-    },
-    {
-      "data": "2026-11-06",
-      "hora": "12h",
-      "pais": "US",
-      "evento": "Confiança do consumidor Michigan — preliminar (nov)",
-      "importancia": 1,
-      "anterior": "48,0",
-      "consenso": null,
-      "resultado": "51,0",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "tipo": "michigan",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-06",
-      "hora": "14h15",
-      "pais": "US",
-      "evento": "Fala de Michelle Bowman (Fed)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Primeira leitura do Fed depois do payroll; mexe no DXY.",
-      "tipo": "fala-fed",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-06",
-      "hora": "15h",
-      "pais": "BR",
-      "evento": "Balança comercial (out)",
-      "importancia": 1,
-      "anterior": "US$ 7,74 bi",
-      "consenso": "US$ 9,4 bi",
-      "resultado": "US$ 9,3 bi",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Saldo positivo ajuda o fluxo de dólares para o país.",
-      "tipo": "balanca-comercial",
-      "surpresa": null
-    },
     {
       "data": "2026-11-08",
       "hora": "22h30",
@@ -138,8 +31,24 @@
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Segundo o Estadão/Broadcast, deve reafirmar as metas fiscais; reação aparece na abertura de segunda.",
+      "nota": "Deve reafirmar a responsabilidade fiscal, sem detalhar medidas (Estadão, O Globo, Reuters); reação aparece na abertura de segunda.",
       "tipo": "pronunciamento-governo",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-09",
+      "hora": "08h25",
+      "pais": "BR",
+      "evento": "Boletim Focus (BCB)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil"
+      },
+      "nota": "Expectativas de Selic, IPCA e câmbio do mercado.",
+      "tipo": "focus",
       "surpresa": null
     },
     {
@@ -155,7 +64,7 @@
         "di": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Detalha o balanço de riscos e os sinais para as próximas reuniões.",
+      "nota": "Detalha a pausa da Selic em 13,75% e o balanço de riscos.",
       "tipo": "ata-copom",
       "surpresa": null
     },
@@ -163,17 +72,34 @@
       "data": "2026-11-10",
       "hora": "10h30",
       "pais": "US",
-      "evento": "CPI — inflação ao consumidor (out)",
+      "evento": "CPI — inflação ao consumidor (out, m/m)",
       "importancia": 3,
-      "anterior": null,
+      "anterior": "0,6%",
       "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Inflação americana mexe nas apostas para o Fed, nos Treasuries e no dólar global.",
+      "nota": "BLS não publicará a variação anual do índice cheio e do núcleo em outubro (falta de dados de out/2025).",
       "tipo": "cpi-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-10",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "CPI — núcleo (out, m/m)",
+      "importancia": 2,
+      "anterior": "0,3%",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Núcleo sem alimentos e energia; referência para o Fed.",
+      "tipo": "cpi-nucleo-eua",
       "surpresa": null
     },
     {
@@ -191,6 +117,56 @@
       },
       "nota": "Inflação oficial — impacto direto nos vértices curtos do DI.",
       "tipo": "ipca",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-12",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Pedidos de seguro-desemprego (semanal)",
+      "importancia": 1,
+      "anterior": "189 mil",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Termômetro semanal do mercado de trabalho americano.",
+      "tipo": "seguro-desemprego",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-13",
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "Vendas no varejo (set, PMC/IBGE)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Atividade do consumo; dado fraco reforça a desaceleração.",
+      "tipo": "varejo-brasil",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-13",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "PPI — inflação ao produtor (out)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Pressão de custos que pode chegar ao consumidor.",
+      "tipo": "ppi-eua",
       "surpresa": null
     }
   ]
