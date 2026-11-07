@@ -61,6 +61,7 @@ TAREFAS = [
     ('kit.yml', 'Kit do dia', {}, ('horarios', ['19:32'], 150), lambda: UTIL),
     ('telegram.yml', 'Telegram contar', {'acao': 'contar'}, ('horarios', ['08:17'], 240), lambda: True),
     ('termo.yml', None, {}, ('horarios', ['08:05'], 240), lambda: True),
+    ('sinais.yml', 'Sinais da manhã', {}, ('horarios', ['07:22'], 25), lambda: PREGAO),
     ('instagram.yml', 'Instagram renovar', {'acao': 'renovar'}, ('horarios', ['06:47'], 240), lambda: AGORA.weekday() == 0),
     ('antes.yml', 'Antes do dado', {'enviar': 'true'}, ('horarios', ['07:20'], 180), lambda: UTIL),
     ('coletor-cvm.yml', None, {}, ('horarios', ['07:17'], 360), lambda: AGORA.weekday() in (1, 2, 3, 4, 5)),

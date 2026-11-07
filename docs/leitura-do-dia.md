@@ -96,7 +96,15 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
 - Português do Brasil, direto, para quem opera mini índice e mini dólar.
 - **Educacional**: descreva cenário e riscos; nunca diga "compre", "venda", preço-alvo ou ponto de entrada.
 - Só fatos verificados nas fontes do dia; se não encontrou um dado, deixe de fora em vez de estimar.
-- Quando os sinais forem mistos, o termômetro é `neutro`.
+- **Termômetro (dia de pregão).** Antes de escrever, leia `data/sinais.json` (gerado às 7h25: S&P 500 futuro, EWZ, DXY, Brent,
+  VIX e um sinal quantitativo para WIN e WDO). Use esses números (só se `"data"` for hoje) junto com a agenda e as notícias:
+  - **Escolha um lado** (`bullish` ou `bearish`) sempre que houver um vetor dominante. O `motivo` cita os números que sustentam a
+    leitura, por exemplo: "S&P futuro +0,6% e DXY −0,3% antes da abertura; agenda local fraca".
+  - **`neutro` só em dois casos:** (1) o sinal quantitativo é neutro E não há evento forte antes das 12h; ou (2) há um conflito
+    claro e explicado no `motivo` (ex.: "futuros em alta, mas payroll às 10h30 pode inverter"). Neutro acerta só se o ativo fechar
+    dentro da faixa: ±0,7% no WIN e ±0,4% no WDO. Em dia de Copom, payroll, CPI ou IPCA o mercado costuma sair dessa faixa.
+  - Se a sua leitura **discordar** do sinal quantitativo, diga por quê no `motivo` (ex.: "apesar do exterior positivo, o fiscal pesa").
+  - O placar público (lectnex.com.br/placar) confere cada leitura no fechamento, com acertos e erros.
 
 ## Calendário (`data/calendario.json`)
 

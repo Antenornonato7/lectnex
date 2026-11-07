@@ -123,8 +123,9 @@
             }
 
             // tabela do termômetro
-            $('pl-term-crit').textContent = pt && pt.criterio ? 'Critério: ' + pt.criterio + '.' : '';
-            const cel = x => x ? `<td class="px-3 whitespace-nowrap"><span class="text-slate-500">${esc(LEIT[x.leitura] || x.leitura || '—')}</span> → <b class="${corV(x.var_pct)}">${x.var_pct == null ? '—' : LX.pct(x.var_pct, 2, true)}</b> ${marca(x.acerto)}</td>` : '<td class="px-3 text-slate-400">—</td>';
+            const sq = contar(dias, (x, k) => x[k] && x[k].sinal ? x[k].sinal.acerto : null);
+            $('pl-term-crit').textContent = (pt && pt.criterio ? 'Critério: ' + pt.criterio + '.' : '') + (sq.n ? ` Sinal quantitativo da manhã (experimental, desde 09/11): ${sq.ok} de ${sq.n} (${LX.num(sq.ok / sq.n * 100, 0)}%).` : '');
+            const cel = x => x ? `<td class="px-3 whitespace-nowrap"><span class="text-slate-500">${esc(LEIT[x.leitura] || x.leitura || '—')}</span> → <b class="${corV(x.var_pct)}">${x.var_pct == null ? '—' : LX.pct(x.var_pct, 2, true)}</b> ${marca(x.acerto)}${x.sinal ? `<span class="block text-[10px] text-slate-500">sinal quant.: ${esc(LEIT[x.sinal.leitura] || x.sinal.leitura)} ${marca(x.sinal.acerto)}</span>` : ''}</td>` : '<td class="px-3 text-slate-400">—</td>';
             let todos = false;
             const pintarT = () => {
                 const lst = dias.slice().reverse(), vis = todos ? lst : lst.slice(0, 20);

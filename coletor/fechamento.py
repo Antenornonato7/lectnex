@@ -30,10 +30,21 @@ def pct(v):
     return ('+' if v > 0 else '−' if v < 0 else '') + f'{abs(v):.2f}%'.replace('.', ',')
 
 
-def acertou(leitura, var):
+# faixa do "neutro" por ativo (em %), com a data a partir da qual vale. A regra antiga nunca é reaplicada ao passado.
+FAIXAS = [('2026-11-03', {'win': 0.5, 'wdo': 0.5}), ('2026-11-09', {'win': 0.7, 'wdo': 0.4})]
+CRITERIO = ('WIN pelo Ibovespa à vista, WDO pelo dólar à vista. Alta acerta se o ativo subiu; baixa, se caiu; neutro, se ficou dentro da faixa: '
+            'desde 09/11/2026, ±0,7% no WIN e ±0,4% no WDO (até 06/11/2026 era ±0,5% nos dois)')
+
+
+def faixa(k, data=None):
+    d = (data or hoje).isoformat() if not isinstance(data, str) else data
+    return [f for desde, f in FAIXAS if desde <= d][-1][k]
+
+
+def acertou(leitura, var, k='win', data=None):
     if var is None or leitura not in SETA:
         return None
-    return var > 0 if leitura == 'bullish' else var < 0 if leitura == 'bearish' else abs(var) <= 0.5
+    return var > 0 if leitura == 'bullish' else var < 0 if leitura == 'bearish' else abs(var) <= faixa(k, data)
 
 
 def dolar():
@@ -288,16 +299,23 @@ def main():
     # termômetro da manhã × fechamento
     lt = ler('data/leitura.json') or {}
     term = lt.get('termometro') if lt.get('data') == hoje.isoformat() else None
-    placar = ler('data/placar-termometro.json') or {'criterio': 'WIN pelo Ibovespa à vista, WDO pelo dólar à vista; neutro = variação entre −0,5% e +0,5%', 'dias': []}
+    placar = ler('data/placar-termometro.json') or {'dias': []}
+    placar['criterio'] = CRITERIO
+    placar['faixas'] = [{'desde': d, **f} for d, f in FAIXAS]
+    sinais = ler('data/sinais.json') or {}
+    sinais = sinais if sinais.get('data') == hoje.isoformat() else {}
     if term:
         reg = {'data': hoje.isoformat()}
         partes = []
         for k, var in (('win', iv), ('wdo', uv)):
             t = (term.get(k) or {}).get('leitura')
-            a = acertou(t, var)
+            a = acertou(t, var, k)
             if a is None:
                 continue
-            reg[k] = {'leitura': t, 'var_pct': round(var, 2), 'acerto': a}
+            reg[k] = {'leitura': t, 'var_pct': round(var, 2), 'acerto': a, 'faixa': faixa(k)}
+            sq = (sinais.get(k) or {}).get('leitura')  # sinal quantitativo da manhã, medido à parte para comparar
+            if sq in SETA:
+                reg[k]['sinal'] = {'leitura': sq, 'acerto': acertou(sq, var, k)}
             resumo['termometro'][k] = reg[k]
             partes.append(f'{k.upper()} {SETA[t]} → {"✅ acertou" if a else "❌ errou"} ({"IBOV" if k == "win" else "dólar"} {pct(var)})')
         if partes:

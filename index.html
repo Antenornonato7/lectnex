@@ -447,7 +447,7 @@
                     <div class="lg:col-span-7 space-y-2"><span class="term-label block">Últimos ${ult.length} pregões <span class="normal-case">(passe o mouse para ver o dia)</span></span>${row('win', 'WIN', 'IBOV')}${row('wdo', 'WDO', 'dólar')}
                         <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] text-slate-500 pt-1"><span><span class="inline-block w-2.5 h-2.5 bg-emerald-500 align-middle"></span> acertou</span><span><span class="inline-block w-2.5 h-2.5 bg-rose-500 align-middle"></span> errou</span><span><span class="inline-block w-2.5 h-2.5 bg-slate-200 dark:bg-lect-borderDark align-middle"></span> sem termômetro</span></div></div>
                 </div>
-                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">Como medimos: o termômetro sai às 7h40 e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou entre −0,5% e +0,5%. WIN pelo Ibovespa à vista, WDO pelo dólar à vista. <a href="placar.html" class="text-lect-teal hover:underline">Placar completo, com todos os erros →</a> <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
+                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">Como medimos: o termômetro sai às 7h40 e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou dentro da faixa (desde 09/11: ±0,7% no WIN e ±0,4% no WDO; antes, ±0,5% nos dois). WIN pelo Ibovespa à vista, WDO pelo dólar à vista. <a href="placar.html" class="text-lect-teal hover:underline">Placar completo, com todos os erros →</a> <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
             el.classList.remove('hidden');
         }).catch(() => { });
 
@@ -709,7 +709,19 @@
                         <div class="p-3 bg-lect-navy text-white border-l-4 border-lect-orange"><span class="block font-mono text-[10px] text-slate-400">PRÓXIMO PREGÃO</span><strong class="font-display text-lg">${LX.weekday(ppd)} ${LX.br(ppd)}</strong>
                         ${pp.o_que_esperar ? `<p class="text-xs text-slate-300 mt-1.5 leading-snug">${esc(pp.o_que_esperar)}</p>` : ''}</div>
                         <p class="text-[11px] text-slate-500 leading-snug">Sem termômetro: a bolsa está fechada. O viés de WIN e WDO volta na edição do próximo pregão.</p>`;
-                } else el('lt-thermo').innerHTML = `<span class="term-label font-bold">TERMÔMETRO</span>` + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar');
+                } else {
+                    el('lt-thermo').innerHTML = `<span class="term-label font-bold">TERMÔMETRO</span>` + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar') + '<div id="lt-sinais"></div>';
+                    fetch('data/sinais.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null).then(sg => {
+                        if (!sg || sg.data !== d.data || !(sg.ativos || []).length || !el('lt-sinais')) return;
+                        const SG = { bullish: ['▲ alta', 'text-emerald-600 dark:text-emerald-400'], bearish: ['▼ baixa', 'text-rose-600 dark:text-rose-400'], neutro: ['● neutro', 'text-slate-500'] };
+                        const sl = k => { const x = SG[(sg[k] || {}).leitura]; return x ? `<span class="${x[1]} font-bold">${x[0]}</span>` : '—'; };
+                        el('lt-sinais').innerHTML = `<div class="p-3 border border-dashed border-slate-300 dark:border-lect-borderDark">
+                            <div class="flex items-center justify-between gap-2"><span class="font-mono text-[10px] font-bold text-slate-500">SINAIS MEDIDOS ÀS ${esc(sg.hora)}</span><span class="lx-demo">EXPERIMENTAL</span></div>
+                            <div class="flex flex-wrap gap-x-3 gap-y-1 mt-1.5 font-mono text-[11px]">${sg.ativos.filter(a => a.id !== 'brl').map(a => `<span><span class="text-slate-500">${esc(a.nome)}</span> <b class="${a.var > 0 ? 'text-emerald-600 dark:text-emerald-400' : a.var < 0 ? 'text-rose-600 dark:text-rose-400' : ''}">${LX.pct(a.var, 2, true)}</b></span>`).join('')}</div>
+                            <p class="mt-1.5 font-mono text-[11px]">Sinal quantitativo: WIN ${sl('win')} · WDO ${sl('wdo')}</p>
+                            <p class="mt-1 text-[10px] text-slate-500 leading-snug" title="${esc(sg.regra || '')}">Conta simples com o exterior antes da abertura, conferida à parte no <a href="placar.html" class="text-lect-teal hover:underline">placar</a>.</p></div>`;
+                    });
+                }
                 if (semPregao) el('lt-resumo-lbl').textContent = 'O QUE ACONTECEU E O QUE ESPERAR';
                 el('lt-resumo').innerHTML = d.resumo.slice(0, 5).map(x => `<li class="flex gap-2.5 text-sm leading-relaxed"><span class="mt-2 w-1.5 h-1.5 bg-lect-orange shrink-0"></span><span class="text-slate-700 dark:text-slate-300">${esc(x)}</span></li>`).join('');
                 el('lt-destaques').innerHTML = (d.destaques || []).slice(0, 4).map(x => `<div class="flex gap-2"><span class="shrink-0 w-12 font-mono text-[11px] font-bold text-lect-teal pt-0.5">${esc(x.hora || '')}</span><div><strong class="block text-xs">${esc(x.evento || '')}</strong>${x.por_que ? `<span class="block text-[11px] text-slate-500 leading-snug">${esc(x.por_que)}</span>` : ''}</div></div>`).join('') || '<p class="text-xs text-slate-500">Sem evento relevante marcado.</p>';

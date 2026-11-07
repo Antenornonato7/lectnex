@@ -1,0 +1,31 @@
+# Sinais da manhã (7h25 de Brasília, dias de pregão, pelo Relógio): S&P fut, EWZ, DXY, Brent, VIX → data/sinais.json,
+# lido pela Leitura do Dia (7h40) para apoiar o termômetro. O fechamento confere o sinal à parte.
+name: Sinais da manhã
+run-name: Sinais da manhã
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sinais
+  cancel-in-progress: false
+
+jobs:
+  sinais:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Medir
+        run: python3 coletor/sinais.py
+      - name: Publicar
+        run: |
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com.br"
+          git add data/sinais.json
+          git diff --cached --quiet && exit 0
+          git commit -m "sinais: $(TZ=America/Sao_Paulo date '+%F %H:%M')"
+          git pull --rebase -q origin main && git push -q origin HEAD:main
