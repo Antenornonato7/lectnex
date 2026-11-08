@@ -1,0 +1,143 @@
+{
+ "tipo": "sem-pregao",
+ "data": "2026-11-08",
+ "gerado_em": "2026-11-08T08:15:00-03:00",
+ "titulo": "Lula fala à nação hoje; semana tem ata do Copom, CPI e IPCA",
+ "resumo": [
+  "Fim de semana sem fatos novos de peso até a manhã de domingo: o principal evento é o pronunciamento de Lula em rede nacional hoje (8), ainda sem horário divulgado pelo Planalto; segundo o Estadão/Broadcast, ele deve reafirmar as metas fiscais sem detalhar medidas.",
+  "No último pregão (sexta, 6), o Ibovespa subiu 1,39%, a 168.498,45 pontos, e o dólar à vista subiu 0,37%, a R$ 5,5087, maior fechamento de 2026 — o prêmio fiscal segue no câmbio e na curva do DI.",
+  "A cobrança por ajuste continua: segundo a Reuters, Durigan disse que Lula decide sobre medidas fiscais só depois de voltar das viagens à Turquia e às Filipinas (até 15/11), e bancos como Bradesco, XP, Itaú e BTG cortaram a projeção de PIB de 2027 para 0,3%–0,6%.",
+  "Lá fora, o payroll forte de sexta (165 mil vagas) manteve a aposta de alta de juros pelo Fed em dezembro (81% no CME FedWatch, segundo a Kiplinger), o que sustenta o dólar global antes do CPI americano na terça (consenso de +0,3% no mês).",
+  "Agenda da semana: Focus na segunda (8h25), ata do Copom e CPI dos EUA na terça, IPCA de outubro na quinta (9h); a inflação da China sai hoje às 22h30 (consenso 0,8% a/a)."
+ ],
+ "destaques": [
+  {
+   "hora": "seg 8h25",
+   "evento": "Boletim Focus (BCB)",
+   "por_que": "Primeira leitura das expectativas de Selic, IPCA e câmbio depois do pronunciamento de domingo."
+  },
+  {
+   "hora": "ter 8h",
+   "evento": "Ata do Copom",
+   "por_que": "Detalha a pausa da Selic em 13,75% e o balanço de riscos; mexe direto nos vértices curtos do DI."
+  },
+  {
+   "hora": "ter 10h30",
+   "evento": "CPI de outubro (EUA)",
+   "por_que": "Consenso de +0,3% no mês (anterior +0,6%); inflação acima do esperado reforçaria a aposta de alta do Fed e pressionaria o WDO."
+  },
+  {
+   "hora": "qui 9h",
+   "evento": "IPCA de outubro (IBGE)",
+   "por_que": "Inflação oficial com câmbio em alta; impacto direto nas taxas do DI."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 (fech. sex)",
+   "variacao": "+0,31%"
+  },
+  {
+   "ativo": "Nasdaq (fech. sex)",
+   "variacao": "+1,09%"
+  },
+  {
+   "ativo": "Dow Jones (fech. sex)",
+   "variacao": "−0,46%"
+  },
+  {
+   "ativo": "Treasury 10 anos",
+   "variacao": "+2 bp (4,86%)"
+  },
+  {
+   "ativo": "DXY",
+   "variacao": "+0,72% (102,28)"
+  },
+  {
+   "ativo": "Petróleo WTI",
+   "variacao": "−0,20% (US$ 90,34)"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Mercado pressiona por anúncio de ajuste fiscal; Durigan chama ideia de Lara Resende de \"incipiente\"",
+   "fonte": "Correio Braziliense",
+   "hora": "sáb 03h42",
+   "url": "https://www.correiobraziliense.com.br/economia/2026/11/7534727-mercado-financeiro-pressiona-por-anuncio-de-ajuste-fiscal.html",
+   "por_que": "Com a dívida bruta em 82,9% do PIB, investidores cobram medidas concretas; sem elas, o prêmio de risco tende a seguir no câmbio e nos vértices longos do DI na abertura de segunda.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Lula fará pronunciamento em rede nacional neste domingo sobre contas públicas",
+   "fonte": "Correio Braziliense (Agência Estado)",
+   "hora": "qua 17h51",
+   "url": "https://www.correiobraziliense.com.br/economia/2026/11/7533249-lula-fara-pronunciamento-na-tv-sobre-ajuste-fiscal-e-contas-publicas.html",
+   "por_que": "Segundo o Estadão/Broadcast, Lula deve dizer que seguirá as metas fiscais sem romper promessas de campanha (que exigem ao menos R$ 39,8 bilhões em ajustes em 2027); o tom da fala tende a pesar na abertura de segunda.",
+   "impacto": {}
+  },
+  {
+   "titulo": "Bancos cortam previsão de PIB de 2027 para até 0,3%, elevando a pressão fiscal sobre Lula",
+   "fonte": "Reuters",
+   "hora": "sex",
+   "url": "https://www.investing.com/news/economy-news/brazilian-banks-cut-growth-forecasts-raising-fiscal-stakes-for-lula-5009003",
+   "por_que": "Bradesco (0,4%), XP (0,3%), Itaú (0,5%) e BTG (0,6%) cortaram projeções que estavam perto de 1%; crescimento menor dificulta a meta fiscal e pesa sobre o Ibovespa.",
+   "impacto": {
+    "win": "baixa",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Lula reitera compromisso com responsabilidade fiscal e social e minimiza dívida pública",
+   "fonte": "Reuters",
+   "hora": "sex 15h50",
+   "url": "https://br.investing.com/news/economy-news/lula-reitera-compromisso-com-responsabilidade-fiscal-e-social-minimiza-divida-publica-2119539",
+   "por_que": "A fala de que a dívida \"nem é tudo o que aparece\" reforçou o ceticismo do mercado antes do pronunciamento; segundo a Reuters, a dívida bruta subiu mais de 11 pontos do PIB no atual mandato.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "CPI de outubro na terça é o grande teste da semana para a aposta de alta do Fed",
+   "fonte": "Kiplinger",
+   "hora": "sex",
+   "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+   "por_que": "Segundo a Kiplinger, o CME FedWatch mostra 81% de chance de alta de juros em dezembro; um CPI acima do esperado tende a fortalecer o dólar global e pressionar WDO e DI, e um número fraco pode aliviar.",
+   "impacto": {}
+  }
+ ],
+ "proximo_pregao": {
+  "data": "2026-11-09",
+  "o_que_esperar": "A abertura de segunda deve refletir o tom do pronunciamento de Lula hoje e a inflação da China (22h30), além do Focus às 8h25; sem medidas fiscais concretas, o mercado tende a manter o prêmio no câmbio e no DI antes da ata do Copom e do CPI americano na terça."
+ },
+ "fontes": [
+  {
+   "titulo": "Diário do Sudoeste — Ibovespa sobe 1,39% e tem semana de alta; dólar a R$ 5,51",
+   "url": "https://diariodosudoeste.com.br/ibovespa-sobe-139-e-tem-semana-de-alta-dolar-a-r-551/"
+  },
+  {
+   "titulo": "Correio Braziliense — Mercado financeiro pressiona por anúncio de ajuste fiscal",
+   "url": "https://www.correiobraziliense.com.br/economia/2026/11/7534727-mercado-financeiro-pressiona-por-anuncio-de-ajuste-fiscal.html"
+  },
+  {
+   "titulo": "Reuters — Brazil's Lula to decide on fiscal measures after foreign trips, finance minister says",
+   "url": "https://www.investing.com/news/economy-news/brazils-lula-to-decide-on-fiscal-measures-after-foreign-trips-finance-minister-says-5004218"
+  },
+  {
+   "titulo": "Reuters — Brazilian banks cut growth forecasts, raising fiscal stakes for Lula",
+   "url": "https://www.investing.com/news/economy-news/brazilian-banks-cut-growth-forecasts-raising-fiscal-stakes-for-lula-5009003"
+  },
+  {
+   "titulo": "Kiplinger — What to Look Out for in Economic Data This Week (Nov. 9-13)",
+   "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
+  },
+  {
+   "titulo": "BigGo Finance — US October CPI Expected Up 0.3% Month-on-Month",
+   "url": "https://finance.biggo.com/news/9e1d0a9b-b32c-4bf1-b265-11480691d264"
+  }
+ ]
+}
