@@ -1,19 +1,19 @@
 {
   "tipo": "sem-pregao",
-  "data": "2026-11-07",
-  "gerado_em": "2026-11-07T08:20:00-03:00",
-  "titulo": "Fim de semana de pronunciamento de Lula, com ata e CPI na terça",
+  "data": "2026-11-08",
+  "gerado_em": "2026-11-08T08:15:00-03:00",
+  "titulo": "Lula fala à nação hoje; semana tem ata do Copom, CPI e IPCA",
   "resumo": [
-    "No último pregão (sexta, 6), o Ibovespa subiu 1,39%, a 168.498,45 pontos, puxado pelos bancos, e encerrou três semanas de queda (+0,34% na semana); o dólar à vista subiu 0,37%, a R$ 5,5087, maior fechamento de 2026, e acumulou alta de 1,18% na semana.",
-    "O payroll de outubro veio bem acima do esperado: 165 mil vagas, contra consenso Reuters de 64 mil, desemprego em 4,1% e ganhos salariais de 0,4% no mês; analistas passaram a ver mais chance de alta de juros pelo Fed em dezembro, o que fortalece o dólar global e pressiona a curva do DI.",
-    "Em Wall Street, a tecnologia se recuperou na sexta (Nasdaq +1,09%, S&P 500 +0,31%, Dow −0,46%), mas o S&P 500 fechou a pior semana desde junho (−2,7%); o Treasury de 10 anos foi a 4,86% e o DXY subiu 0,72%.",
-    "O principal evento do fim de semana é o pronunciamento de Lula em rede nacional no domingo (8): segundo Estadão, O Globo e Reuters, ele deve reafirmar a responsabilidade fiscal, mas sem detalhar medidas — o ministro Dario Durigan indicou que elas ficam para a segunda quinzena de novembro.",
-    "Na semana, o foco vai para a ata do Copom e o CPI americano na terça (10) e o IPCA de outubro na quinta (12); o CPI dos EUA sairá sem a variação anual do índice cheio, por causa da falta de dados de outubro de 2025."
+    "Fim de semana sem fatos novos de peso até a manhã de domingo: o principal evento é o pronunciamento de Lula em rede nacional hoje (8), ainda sem horário divulgado pelo Planalto; segundo o Estadão/Broadcast, ele deve reafirmar as metas fiscais sem detalhar medidas.",
+    "No último pregão (sexta, 6), o Ibovespa subiu 1,39%, a 168.498,45 pontos, e o dólar à vista subiu 0,37%, a R$ 5,5087, maior fechamento de 2026 — o prêmio fiscal segue no câmbio e na curva do DI.",
+    "A cobrança por ajuste continua: segundo a Reuters, Durigan disse que Lula decide sobre medidas fiscais só depois de voltar das viagens à Turquia e às Filipinas (até 15/11), e bancos como Bradesco, XP, Itaú e BTG cortaram a projeção de PIB de 2027 para 0,3%–0,6%.",
+    "Lá fora, o payroll forte de sexta (165 mil vagas) manteve a aposta de alta de juros pelo Fed em dezembro (81% no CME FedWatch, segundo a Kiplinger), o que sustenta o dólar global antes do CPI americano na terça (consenso de +0,3% no mês).",
+    "Agenda da semana: Focus na segunda (8h25), ata do Copom e CPI dos EUA na terça, IPCA de outubro na quinta (9h); a inflação da China sai hoje às 22h30 (consenso 0,8% a/a)."
   ],
   "destaques": [
     { "hora": "seg 8h25", "evento": "Boletim Focus (BCB)", "por_que": "Primeira leitura das expectativas de Selic, IPCA e câmbio depois do pronunciamento de domingo." },
     { "hora": "ter 8h", "evento": "Ata do Copom", "por_que": "Detalha a pausa da Selic em 13,75% e o balanço de riscos; mexe direto nos vértices curtos do DI." },
-    { "hora": "ter 10h30", "evento": "CPI de outubro (EUA)", "por_que": "Anterior de 0,6% no mês; depois do payroll forte, inflação alta reforçaria a aposta de alta do Fed e pressionaria o WDO." },
+    { "hora": "ter 10h30", "evento": "CPI de outubro (EUA)", "por_que": "Consenso de +0,3% no mês (anterior +0,6%); inflação acima do esperado reforçaria a aposta de alta do Fed e pressionaria o WDO." },
     { "hora": "qui 9h", "evento": "IPCA de outubro (IBGE)", "por_que": "Inflação oficial com câmbio em alta; impacto direto nas taxas do DI." }
   ],
   "exterior": [
@@ -26,56 +26,56 @@
   ],
   "noticias": [
     {
-      "titulo": "EUA criam 165 mil vagas em outubro, bem acima das 64 mil esperadas; desemprego vai a 4,1%",
-      "fonte": "InfoMoney",
-      "hora": "sex 10h32",
-      "url": "https://www.infomoney.com.br/mercados/payroll-eua-outubro-2026/",
-      "por_que": "Mercado de trabalho forte reduz a chance de alívio do Fed e tende a sustentar o dólar global, pesando sobre o real e a curva de juros na abertura de segunda.",
-      "impacto": { "wdo": "alta", "di": "alta" }
-    },
-    {
-      "titulo": "Emprego forte nos EUA aumenta apostas de alta do Fed em dezembro e reduz espaço para cortes da Selic",
-      "fonte": "InfoMoney",
-      "hora": "sex 13h06",
-      "url": "https://www.infomoney.com.br/economia/payroll-eua-outubro-juros-fed-selic/",
-      "por_que": "Analistas citados esperam curva de juros mais inclinada e câmbio pressionado; com dólar mais alto, a inflação local fica mais difícil de baixar, o que sustenta as taxas do DI.",
-      "impacto": { "wdo": "alta", "di": "alta" }
-    },
-    {
-      "titulo": "Dólar fecha a R$ 5,5087, maior nível de 2026, com payroll forte e cautela fiscal",
-      "fonte": "Jornal do Comércio (agências)",
-      "hora": "sex 18h45",
-      "url": "https://www.jornaldocomercio.com/economia/2026/11/1269637-dolar-atinge-rs-550-com-emprego-forte-nos-eua-e-cautela-fiscal.html",
-      "por_que": "O dólar sobe 10,33% desde a véspera do segundo turno; segundo a matéria, Lula prometeu superávit primário em 2027 e disse que ajustes não recairão sobre os mais pobres, mas medidas concretas só devem vir após 16/11 — o prêmio de risco segue no câmbio.",
-      "impacto": { "wdo": "alta" }
-    },
-    {
-      "titulo": "Mercado reage com ceticismo a aceno de Lula sobre ajuste fiscal",
-      "fonte": "O Tempo",
-      "hora": "sex 15h20",
-      "url": "https://www.otempo.com.br/economia/2026/11/6/mercado-reage-com-ceticismo-a-aceno-de-lula-sobre-ajuste-fiscal",
-      "por_que": "Segundo a matéria, Durigan disse que as medidas serão debatidas na segunda quinzena de novembro, após a COP31; sem detalhes sobre corte de gastos, investidores seguem cobrando prêmio na curva e no câmbio.",
+      "titulo": "Mercado pressiona por anúncio de ajuste fiscal; Durigan chama ideia de Lara Resende de \"incipiente\"",
+      "fonte": "Correio Braziliense",
+      "hora": "sáb 03h42",
+      "url": "https://www.correiobraziliense.com.br/economia/2026/11/7534727-mercado-financeiro-pressiona-por-anuncio-de-ajuste-fiscal.html",
+      "por_que": "Com a dívida bruta em 82,9% do PIB, investidores cobram medidas concretas; sem elas, o prêmio de risco tende a seguir no câmbio e nos vértices longos do DI na abertura de segunda.",
       "impacto": { "win": "baixa", "wdo": "alta", "di": "alta" }
     },
     {
-      "titulo": "Lula faz pronunciamento em rede nacional no domingo (8) com aceno ao eleitor e ao mercado",
-      "fonte": "CNN Brasil",
-      "hora": "qua 15h19",
-      "url": "https://www.cnnbrasil.com.br/blogs/caio-junqueira/politica/pronunciamento-de-lula-deve-acenar-ao-eleitor-e-ao-mercado/",
-      "por_que": "Segundo um interlocutor de Lula ouvido pela CNN, a fala deve reforçar a responsabilidade fiscal sem detalhar medidas; um discurso vago ou com mais gastos tende a pesar na abertura de segunda, e um compromisso claro pode aliviar câmbio e DI.",
+      "titulo": "Lula fará pronunciamento em rede nacional neste domingo sobre contas públicas",
+      "fonte": "Correio Braziliense (Agência Estado)",
+      "hora": "qua 17h51",
+      "url": "https://www.correiobraziliense.com.br/economia/2026/11/7533249-lula-fara-pronunciamento-na-tv-sobre-ajuste-fiscal-e-contas-publicas.html",
+      "por_que": "Segundo o Estadão/Broadcast, Lula deve dizer que seguirá as metas fiscais sem romper promessas de campanha (que exigem ao menos R$ 39,8 bilhões em ajustes em 2027); o tom da fala tende a pesar na abertura de segunda.",
+      "impacto": {}
+    },
+    {
+      "titulo": "Bancos cortam previsão de PIB de 2027 para até 0,3%, elevando a pressão fiscal sobre Lula",
+      "fonte": "Reuters",
+      "hora": "sex",
+      "url": "https://www.investing.com/news/economy-news/brazilian-banks-cut-growth-forecasts-raising-fiscal-stakes-for-lula-5009003",
+      "por_que": "Bradesco (0,4%), XP (0,3%), Itaú (0,5%) e BTG (0,6%) cortaram projeções que estavam perto de 1%; crescimento menor dificulta a meta fiscal e pesa sobre o Ibovespa.",
+      "impacto": { "win": "baixa", "di": "alta" }
+    },
+    {
+      "titulo": "Lula reitera compromisso com responsabilidade fiscal e social e minimiza dívida pública",
+      "fonte": "Reuters",
+      "hora": "sex 15h50",
+      "url": "https://br.investing.com/news/economy-news/lula-reitera-compromisso-com-responsabilidade-fiscal-e-social-minimiza-divida-publica-2119539",
+      "por_que": "A fala de que a dívida \"nem é tudo o que aparece\" reforçou o ceticismo do mercado antes do pronunciamento; segundo a Reuters, a dívida bruta subiu mais de 11 pontos do PIB no atual mandato.",
+      "impacto": { "wdo": "alta", "di": "alta" }
+    },
+    {
+      "titulo": "CPI de outubro na terça é o grande teste da semana para a aposta de alta do Fed",
+      "fonte": "Kiplinger",
+      "hora": "sex",
+      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+      "por_que": "Segundo a Kiplinger, o CME FedWatch mostra 81% de chance de alta de juros em dezembro; um CPI acima do esperado tende a fortalecer o dólar global e pressionar WDO e DI, e um número fraco pode aliviar.",
       "impacto": {}
     }
   ],
   "proximo_pregao": {
     "data": "2026-11-09",
-    "o_que_esperar": "A abertura de segunda deve refletir o tom do pronunciamento de Lula no domingo e a inflação da China (domingo, 22h30), além do Focus às 8h25; o payroll forte da sexta mantém o dólar global firme antes da ata do Copom e do CPI americano na terça."
+    "o_que_esperar": "A abertura de segunda deve refletir o tom do pronunciamento de Lula hoje e a inflação da China (22h30), além do Focus às 8h25; sem medidas fiscais concretas, o mercado tende a manter o prêmio no câmbio e no DI antes da ata do Copom e do CPI americano na terça."
   },
   "fontes": [
     { "titulo": "Diário do Sudoeste — Ibovespa sobe 1,39% e tem semana de alta; dólar a R$ 5,51", "url": "https://diariodosudoeste.com.br/ibovespa-sobe-139-e-tem-semana-de-alta-dolar-a-r-551/" },
-    { "titulo": "InfoMoney — Payroll: EUA criam 165 mil vagas de trabalho em outubro, acima do esperado", "url": "https://www.infomoney.com.br/mercados/payroll-eua-outubro-2026/" },
-    { "titulo": "AP (via myMotherLode) — How major US stock indexes fared Friday 11/6/2026", "url": "https://mymotherlode.com/news/national/11287401/how-major-us-stock-indexes-fared-friday-11-6-2026.html" },
-    { "titulo": "The Closing Print — Post-Market & Weekly Summary – Nov 6, 2026", "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-06/" },
-    { "titulo": "O Tempo — Lula fará pronunciamento no domingo (8/11) para tentar acalmar mercado e defender ajuste fiscal", "url": "https://www.otempo.com.br/politica/congresso/2026/11/4/lula-fara-pronunciamento-no-domingo-8-11-para-tentar-acalmar-mercado-e-defender-ajuste-fiscal" },
-    { "titulo": "StockTitan — Next CPI Report on November 10 Will Have No Yearly Inflation Rate for Overall Prices", "url": "https://www.stocktitan.net/articles/october-2026-cpi-preview-no-yearly-rate" }
+    { "titulo": "Correio Braziliense — Mercado financeiro pressiona por anúncio de ajuste fiscal", "url": "https://www.correiobraziliense.com.br/economia/2026/11/7534727-mercado-financeiro-pressiona-por-anuncio-de-ajuste-fiscal.html" },
+    { "titulo": "Reuters — Brazil's Lula to decide on fiscal measures after foreign trips, finance minister says", "url": "https://www.investing.com/news/economy-news/brazils-lula-to-decide-on-fiscal-measures-after-foreign-trips-finance-minister-says-5004218" },
+    { "titulo": "Reuters — Brazilian banks cut growth forecasts, raising fiscal stakes for Lula", "url": "https://www.investing.com/news/economy-news/brazilian-banks-cut-growth-forecasts-raising-fiscal-stakes-for-lula-5009003" },
+    { "titulo": "Kiplinger — What to Look Out for in Economic Data This Week (Nov. 9-13)", "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar" },
+    { "titulo": "BigGo Finance — US October CPI Expected Up 0.3% Month-on-Month", "url": "https://finance.biggo.com/news/9e1d0a9b-b32c-4bf1-b265-11480691d264" }
   ]
 }
