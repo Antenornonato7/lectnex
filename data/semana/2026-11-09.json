@@ -2,6 +2,31 @@
  "semana": "2026-11-09",
  "eventos": [
   {
+   "data": "2026-11-09",
+   "hora": "08h25",
+   "pais": "BR",
+   "evento": "Boletim Focus (BCB)",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Expectativas de Selic, IPCA e câmbio do mercado.",
+   "tipo": "focus"
+  },
+  {
+   "data": "2026-11-10",
+   "hora": "00h",
+   "pais": "CN",
+   "evento": "Balança comercial — exportações (out, a/a)",
+   "importancia": 2,
+   "anterior": "36,3%",
+   "impacto": {
+    "win": "volatil"
+   },
+   "nota": "Exportações chinesas fortes sustentam a demanda por commodities; data prevista no calendário da Trading Economics.",
+   "tipo": "balanca-china"
+  },
+  {
    "data": "2026-11-10",
    "hora": "08h",
    "pais": "BR",
@@ -11,21 +36,50 @@
     "di": "volatil",
     "wdo": "volatil"
    },
-   "nota": "Detalha o balanço de riscos e os sinais para as próximas reuniões.",
+   "nota": "Detalha a pausa da Selic em 13,75% e o balanço de riscos.",
    "tipo": "ata-copom"
   },
   {
    "data": "2026-11-10",
    "hora": "10h30",
    "pais": "US",
-   "evento": "CPI — inflação ao consumidor (out)",
+   "evento": "CPI — inflação ao consumidor (out, m/m)",
    "importancia": 3,
+   "anterior": "0,6%",
+   "consenso": "0,3%",
    "impacto": {
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Inflação americana mexe nas apostas para o Fed, nos Treasuries e no dólar global.",
+   "nota": "BLS não publicará a variação anual do índice cheio e do núcleo em outubro (falta de dados de out/2025).",
    "tipo": "cpi-eua"
+  },
+  {
+   "data": "2026-11-10",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "CPI — núcleo (out, m/m)",
+   "importancia": 2,
+   "anterior": "0,3%",
+   "consenso": "0,2%",
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Núcleo sem alimentos e energia; referência para o Fed.",
+   "tipo": "cpi-nucleo-eua"
+  },
+  {
+   "data": "2026-11-11",
+   "pais": "US",
+   "evento": "Veterans Day — mercado de Treasuries fechado",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "neutro",
+    "di": "neutro"
+   },
+   "nota": "Bolsas americanas abrem, mas sem negociação de Treasuries; liquidez menor no câmbio.",
+   "tipo": "feriado-eua"
   },
   {
    "data": "2026-11-12",
@@ -39,6 +93,60 @@
    },
    "nota": "Inflação oficial — impacto direto nos vértices curtos do DI.",
    "tipo": "ipca"
+  },
+  {
+   "data": "2026-11-12",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Pedidos de seguro-desemprego (semanal)",
+   "importancia": 1,
+   "anterior": "189 mil",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Termômetro semanal do mercado de trabalho americano.",
+   "tipo": "seguro-desemprego"
+  },
+  {
+   "data": "2026-11-12",
+   "hora": "20h30",
+   "pais": "US",
+   "evento": "Fala de John Williams (Fed de Nova York)",
+   "importancia": 2,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Sinais sobre a reunião de dezembro, com o mercado apostando em alta de juros.",
+   "tipo": "fala-fed"
+  },
+  {
+   "data": "2026-11-13",
+   "hora": "09h",
+   "pais": "BR",
+   "evento": "Vendas no varejo (set, PMC/IBGE)",
+   "importancia": 2,
+   "impacto": {
+    "di": "volatil",
+    "win": "volatil"
+   },
+   "nota": "Atividade do consumo; dado fraco reforça a desaceleração.",
+   "tipo": "varejo-brasil"
+  },
+  {
+   "data": "2026-11-13",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "PPI — inflação ao produtor (out, m/m)",
+   "importancia": 2,
+   "anterior": "1,3%",
+   "consenso": "0,4%",
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Pressão de custos que pode chegar ao consumidor.",
+   "tipo": "ppi-eua"
   }
  ]
 }
