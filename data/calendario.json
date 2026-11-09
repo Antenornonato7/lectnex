@@ -1,38 +1,20 @@
 {
-  "atualizado_em": "2026-11-08T08:15:00-03:00",
+  "atualizado_em": "2026-11-09T08:05:00-03:00",
   "eventos": [
     {
-      "data": "2026-11-08",
-      "hora": "22h30",
-      "pais": "CN",
-      "evento": "Inflação ao consumidor e ao produtor (out)",
-      "importancia": 2,
-      "anterior": "0,9% a/a",
-      "consenso": "0,8% a/a",
-      "resultado": null,
-      "impacto": {
-        "win": "volatil"
-      },
-      "nota": "Consenso do PPI: 5,4% a/a (anterior 5,0%). Preços na China mexem com a leitura de demanda por commodities (minério, Vale).",
-      "tipo": "cpi-china",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-08",
-      "hora": null,
+      "data": "2026-11-09",
+      "hora": "08h",
       "pais": "BR",
-      "evento": "Pronunciamento de Lula em rede nacional",
-      "importancia": 3,
+      "evento": "IGP-DI (out) e IPC-S (1ª quadrissemana de nov)",
+      "importancia": 1,
       "anterior": null,
       "consenso": null,
       "resultado": null,
       "impacto": {
-        "win": "volatil",
-        "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Horário não divulgado pelo Planalto até a última atualização. Segundo o Estadão/Broadcast, deve reafirmar as metas fiscais sem detalhar medidas; reação aparece na abertura de segunda.",
-      "tipo": "pronunciamento-governo",
+      "nota": "Inflação de atacado e varejo medida pela FGV.",
+      "tipo": "igp-di",
       "surpresa": null
     },
     {
@@ -47,8 +29,24 @@
       "impacto": {
         "di": "volatil"
       },
-      "nota": "Expectativas de Selic, IPCA e câmbio do mercado.",
+      "nota": "Primeiro Focus após a pausa da Selic; na edição anterior, IPCA 2026 em 5,22% e Selic de 13,50% no fim de 2026.",
       "tipo": "focus",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-09",
+      "hora": "14h25",
+      "pais": "UK",
+      "evento": "Discurso de Andrew Bailey (BoE)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Primeira fala depois da alta de juros a 4,0% no Reino Unido.",
+      "tipo": "fala-boe",
       "surpresa": null
     },
     {
@@ -58,12 +56,12 @@
       "evento": "Balança comercial — exportações (out, a/a)",
       "importancia": 2,
       "anterior": "36,3%",
-      "consenso": null,
+      "consenso": "38,0%",
       "resultado": null,
       "impacto": {
         "win": "volatil"
       },
-      "nota": "Exportações chinesas fortes sustentam a demanda por commodities; data prevista no calendário da Trading Economics.",
+      "nota": "Consenso de exportações segundo a ADMISI; importações: consenso 35,0% (anterior 31,0%). Exportações fortes sustentam a demanda por commodities.",
       "tipo": "balanca-china",
       "surpresa": null
     },
@@ -97,7 +95,7 @@
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "BLS não publicará a variação anual do índice cheio e do núcleo em outubro (falta de dados de out/2025).",
+      "nota": "Segundo a ADMISI, o BLS não publicará a variação anual em outubro (falta de dados de out/2025).",
       "tipo": "cpi-eua",
       "surpresa": null
     },
@@ -137,6 +135,22 @@
     },
     {
       "data": "2026-11-12",
+      "hora": "04h",
+      "pais": "UK",
+      "evento": "PIB do Reino Unido (3º tri, preliminar, t/t)",
+      "importancia": 1,
+      "anterior": "0,5%",
+      "consenso": "0,7%",
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Atividade britânica; mexe com a libra e o dólar global.",
+      "tipo": "pib-reino-unido",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-12",
       "hora": "09h",
       "pais": "BR",
       "evento": "IPCA de outubro (IBGE)",
@@ -159,7 +173,7 @@
       "evento": "Pedidos de seguro-desemprego (semanal)",
       "importancia": 1,
       "anterior": "189 mil",
-      "consenso": null,
+      "consenso": "195 mil",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -217,6 +231,22 @@
       },
       "nota": "Pressão de custos que pode chegar ao consumidor.",
       "tipo": "ppi-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-16",
+      "hora": "08h25",
+      "pais": "BR",
+      "evento": "Boletim Focus (BCB)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil"
+      },
+      "nota": "Expectativas de Selic, IPCA e câmbio depois do IPCA de outubro.",
+      "tipo": "focus",
       "surpresa": null
     }
   ]

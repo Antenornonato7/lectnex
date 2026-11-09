@@ -1,81 +1,81 @@
 {
-  "tipo": "sem-pregao",
-  "data": "2026-11-08",
-  "gerado_em": "2026-11-08T08:15:00-03:00",
-  "titulo": "Lula fala à nação hoje; semana tem ata do Copom, CPI e IPCA",
+  "tipo": "pregao",
+  "data": "2026-11-09",
+  "gerado_em": "2026-11-09T08:05:00-03:00",
+  "titulo": "Lula fala sem medidas fiscais; NY sobe e mercado mira ata e CPI",
   "resumo": [
-    "Fim de semana sem fatos novos de peso até a manhã de domingo: o principal evento é o pronunciamento de Lula em rede nacional hoje (8), ainda sem horário divulgado pelo Planalto; segundo o Estadão/Broadcast, ele deve reafirmar as metas fiscais sem detalhar medidas.",
-    "No último pregão (sexta, 6), o Ibovespa subiu 1,39%, a 168.498,45 pontos, e o dólar à vista subiu 0,37%, a R$ 5,5087, maior fechamento de 2026 — o prêmio fiscal segue no câmbio e na curva do DI.",
-    "A cobrança por ajuste continua: segundo a Reuters, Durigan disse que Lula decide sobre medidas fiscais só depois de voltar das viagens à Turquia e às Filipinas (até 15/11), e bancos como Bradesco, XP, Itaú e BTG cortaram a projeção de PIB de 2027 para 0,3%–0,6%.",
-    "Lá fora, o payroll forte de sexta (165 mil vagas) manteve a aposta de alta de juros pelo Fed em dezembro (81% no CME FedWatch, segundo a Kiplinger), o que sustenta o dólar global antes do CPI americano na terça (consenso de +0,3% no mês).",
-    "Agenda da semana: Focus na segunda (8h25), ata do Copom e CPI dos EUA na terça, IPCA de outubro na quinta (9h); a inflação da China sai hoje às 22h30 (consenso 0,8% a/a)."
+    "No pronunciamento de domingo, Lula disse que a dívida pública e os juros altos o preocupam e reafirmou a responsabilidade fiscal, mas não anunciou medidas de ajuste — o prêmio fiscal tende a seguir no câmbio e nos vértices longos do DI.",
+    "No último pregão (sexta, 6), o Ibovespa subiu 1,39%, a 168.498,45 pontos, e o dólar à vista subiu 0,37%, a R$ 5,5087, maior fechamento de 2026; segundo a InfoMoney, o dólar futuro está com IFR(14) em 70 (sobrecompra) e o Ibovespa perto de 30.",
+    "O exterior abre a semana positivo: S&P 500 futuro +0,29%, Dow futuro +0,61% e o EWZ (Brasil em NY) +0,85% no pré-mercado; a Ásia teve Nikkei +2,51%, o que ajuda o WIN na abertura.",
+    "Na China, a inflação ao consumidor desacelerou para 0,7% a/a em outubro (consenso 0,8%), enquanto a inflação ao produtor subiu a 5,7%, maior desde 2022 — sinal misto para a demanda por commodities e para Vale.",
+    "Agenda local leve hoje (IGP-DI às 8h e Focus às 8h25); o peso da semana está na ata do Copom e no CPI americano amanhã e no IPCA de outubro na quinta (12)."
   ],
+  "termometro": {
+    "win": { "leitura": "bullish", "motivo": "EWZ +0,85% e S&P futuro +0,29% no pré-mercado, com Ibovespa perto de sobrevenda (IFR 30); o risco é o discurso de Lula sem medidas fiscais limitar a alta. Sinal quantitativo do dia indisponível." },
+    "wdo": { "leitura": "bearish", "motivo": "EWZ +0,85% e futuros de NY em alta favorecem alívio depois de o dólar fechar no maior nível do ano com IFR em sobrecompra (70); petróleo em queda (Brent −1,4%) e a falta de medidas fiscais são o contrapeso." }
+  },
   "destaques": [
-    { "hora": "seg 8h25", "evento": "Boletim Focus (BCB)", "por_que": "Primeira leitura das expectativas de Selic, IPCA e câmbio depois do pronunciamento de domingo." },
-    { "hora": "ter 8h", "evento": "Ata do Copom", "por_que": "Detalha a pausa da Selic em 13,75% e o balanço de riscos; mexe direto nos vértices curtos do DI." },
-    { "hora": "ter 10h30", "evento": "CPI de outubro (EUA)", "por_que": "Consenso de +0,3% no mês (anterior +0,6%); inflação acima do esperado reforçaria a aposta de alta do Fed e pressionaria o WDO." },
-    { "hora": "qui 9h", "evento": "IPCA de outubro (IBGE)", "por_que": "Inflação oficial com câmbio em alta; impacto direto nas taxas do DI." }
+    { "hora": "8h", "evento": "IGP-DI de outubro e IPC-S (FGV)", "por_que": "Inflação de atacado e de varejo; pressão de preços com o câmbio em alta mexe nos vértices curtos do DI." },
+    { "hora": "8h25", "evento": "Boletim Focus (BCB)", "por_que": "Primeiro Focus depois da pausa da Selic em 13,75%; a semana passada mostrou IPCA de 2026 em 5,22% e Selic de 13,50% no fim do ano." },
+    { "hora": "14h25", "evento": "Discurso de Andrew Bailey (BoE)", "por_que": "Primeira fala depois da alta de juros no Reino Unido; mexe com o dólar global." },
+    { "hora": "ao longo do dia", "evento": "Falas do Fed (Bowman, Goolsbee, Barkin)", "por_que": "Com o payroll forte, o mercado aposta em alta de juros em dezembro; tom duro tende a fortalecer o dólar e pressionar o WDO." }
   ],
   "exterior": [
-    { "ativo": "S&P 500 (fech. sex)", "variacao": "+0,31%" },
-    { "ativo": "Nasdaq (fech. sex)", "variacao": "+1,09%" },
-    { "ativo": "Dow Jones (fech. sex)", "variacao": "−0,46%" },
+    { "ativo": "S&P 500 fut.", "variacao": "+0,29%" },
+    { "ativo": "Dow Jones fut.", "variacao": "+0,61%" },
+    { "ativo": "Nasdaq fut.", "variacao": "+0,01%" },
+    { "ativo": "EWZ (pré-mercado)", "variacao": "+0,85%" },
     { "ativo": "Treasury 10 anos", "variacao": "+2 bp (4,86%)" },
-    { "ativo": "DXY", "variacao": "+0,72% (102,28)" },
-    { "ativo": "Petróleo WTI", "variacao": "−0,20% (US$ 90,34)" }
+    { "ativo": "Petróleo Brent", "variacao": "−1,36% (US$ 96,98)" }
   ],
   "noticias": [
     {
-      "titulo": "Mercado pressiona por anúncio de ajuste fiscal; Durigan chama ideia de Lara Resende de \"incipiente\"",
-      "fonte": "Correio Braziliense",
-      "hora": "sáb 03h42",
-      "url": "https://www.correiobraziliense.com.br/economia/2026/11/7534727-mercado-financeiro-pressiona-por-anuncio-de-ajuste-fiscal.html",
-      "por_que": "Com a dívida bruta em 82,9% do PIB, investidores cobram medidas concretas; sem elas, o prêmio de risco tende a seguir no câmbio e nos vértices longos do DI na abertura de segunda.",
-      "impacto": { "win": "baixa", "wdo": "alta", "di": "alta" }
-    },
-    {
-      "titulo": "Lula fará pronunciamento em rede nacional neste domingo sobre contas públicas",
-      "fonte": "Correio Braziliense (Agência Estado)",
-      "hora": "qua 17h51",
-      "url": "https://www.correiobraziliense.com.br/economia/2026/11/7533249-lula-fara-pronunciamento-na-tv-sobre-ajuste-fiscal-e-contas-publicas.html",
-      "por_que": "Segundo o Estadão/Broadcast, Lula deve dizer que seguirá as metas fiscais sem romper promessas de campanha (que exigem ao menos R$ 39,8 bilhões em ajustes em 2027); o tom da fala tende a pesar na abertura de segunda.",
-      "impacto": {}
-    },
-    {
-      "titulo": "Bancos cortam previsão de PIB de 2027 para até 0,3%, elevando a pressão fiscal sobre Lula",
-      "fonte": "Reuters",
-      "hora": "sex",
-      "url": "https://www.investing.com/news/economy-news/brazilian-banks-cut-growth-forecasts-raising-fiscal-stakes-for-lula-5009003",
-      "por_que": "Bradesco (0,4%), XP (0,3%), Itaú (0,5%) e BTG (0,6%) cortaram projeções que estavam perto de 1%; crescimento menor dificulta a meta fiscal e pesa sobre o Ibovespa.",
-      "impacto": { "win": "baixa", "di": "alta" }
-    },
-    {
-      "titulo": "Lula reitera compromisso com responsabilidade fiscal e social e minimiza dívida pública",
-      "fonte": "Reuters",
-      "hora": "sex 15h50",
-      "url": "https://br.investing.com/news/economy-news/lula-reitera-compromisso-com-responsabilidade-fiscal-e-social-minimiza-divida-publica-2119539",
-      "por_que": "A fala de que a dívida \"nem é tudo o que aparece\" reforçou o ceticismo do mercado antes do pronunciamento; segundo a Reuters, a dívida bruta subiu mais de 11 pontos do PIB no atual mandato.",
+      "titulo": "Na TV, Lula diz que se preocupa com dívida pública e juros, mas não anuncia medidas",
+      "fonte": "CNN Brasil",
+      "hora": "dom 20h42",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/na-tv-lula-diz-que-se-preocupa-com-divida-publica-e-taxa-de-juros/",
+      "por_que": "O mercado esperava sinal concreto de ajuste fiscal; sem medidas, a cobrança continua e o prêmio de risco tende a seguir no dólar e no DI, com Lula viajando à Turquia e às Filipinas até 15/11.",
       "impacto": { "wdo": "alta", "di": "alta" }
     },
     {
-      "titulo": "CPI de outubro na terça é o grande teste da semana para a aposta de alta do Fed",
-      "fonte": "Kiplinger",
-      "hora": "sex",
-      "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
-      "por_que": "Segundo a Kiplinger, o CME FedWatch mostra 81% de chance de alta de juros em dezembro; um CPI acima do esperado tende a fortalecer o dólar global e pressionar WDO e DI, e um número fraco pode aliviar.",
+      "titulo": "Inflação ao consumidor da China desacelera a 0,7% e a do produtor sobe a 5,7%",
+      "fonte": "Investing.com (via Yahoo Finance)",
+      "hora": "dom 23h15",
+      "url": "https://finance.yahoo.com/economy/articles/china-cpi-inflation-misses-forecasts-021515043.html",
+      "por_que": "CPI abaixo do consenso (0,8%) indica consumo fraco, mas o PPI no maior nível desde 2022 mostra preços industriais em alta; leitura mista para minério e Vale, peso relevante no WIN.",
       "impacto": {}
+    },
+    {
+      "titulo": "Futuros de NY sobem no início da semana, com Ásia em alta; Nvidia recua no pré-mercado",
+      "fonte": "Yahoo Finance",
+      "hora": "06h05",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html",
+      "por_que": "Apetite por risco lá fora ajuda o WIN na abertura; segundo o Yahoo Finance, a Nvidia cai 4% no pré-mercado depois de o conselho abrir investigação sobre o CEO, o que segura o Nasdaq.",
+      "impacto": { "win": "alta", "wdo": "baixa" }
+    },
+    {
+      "titulo": "Petróleo cai mais de 1% na manhã de segunda; Brent perto de US$ 97",
+      "fonte": "Money Times",
+      "hora": "04h41",
+      "url": "https://www.moneytimes.com.br/tempo-real-9-11-26-davs/",
+      "por_que": "Segundo o Money Times, a queda reflete sinais de moderação de Trump em relação ao Irã; petróleo mais barato pesa em Petrobras e PRIO no Ibovespa e tira um pouco de suporte do real.",
+      "impacto": { "win": "baixa", "wdo": "alta" }
+    },
+    {
+      "titulo": "Balança comercial tem superávit de US$ 9,318 bilhões em outubro, acima do esperado",
+      "fonte": "Jornal do Comércio (agências)",
+      "hora": "sex 18h18",
+      "url": "https://www.jornaldocomercio.com/economia/2026/11/1269601-balanca-comercial-brasileira-tem-superavit-de-uss-9318-bilhoes-em-outubro.html",
+      "por_que": "Saldo acima da mediana de US$ 9,14 bilhões (Projeções Broadcast), com exportações +20% no ano; fluxo comercial forte é um contrapeso à pressão fiscal sobre o câmbio.",
+      "impacto": { "wdo": "baixa" }
     }
   ],
-  "proximo_pregao": {
-    "data": "2026-11-09",
-    "o_que_esperar": "A abertura de segunda deve refletir o tom do pronunciamento de Lula hoje e a inflação da China (22h30), além do Focus às 8h25; sem medidas fiscais concretas, o mercado tende a manter o prêmio no câmbio e no DI antes da ata do Copom e do CPI americano na terça."
-  },
   "fontes": [
-    { "titulo": "Diário do Sudoeste — Ibovespa sobe 1,39% e tem semana de alta; dólar a R$ 5,51", "url": "https://diariodosudoeste.com.br/ibovespa-sobe-139-e-tem-semana-de-alta-dolar-a-r-551/" },
-    { "titulo": "Correio Braziliense — Mercado financeiro pressiona por anúncio de ajuste fiscal", "url": "https://www.correiobraziliense.com.br/economia/2026/11/7534727-mercado-financeiro-pressiona-por-anuncio-de-ajuste-fiscal.html" },
-    { "titulo": "Reuters — Brazil's Lula to decide on fiscal measures after foreign trips, finance minister says", "url": "https://www.investing.com/news/economy-news/brazils-lula-to-decide-on-fiscal-measures-after-foreign-trips-finance-minister-says-5004218" },
-    { "titulo": "Reuters — Brazilian banks cut growth forecasts, raising fiscal stakes for Lula", "url": "https://www.investing.com/news/economy-news/brazilian-banks-cut-growth-forecasts-raising-fiscal-stakes-for-lula-5009003" },
-    { "titulo": "Kiplinger — What to Look Out for in Economic Data This Week (Nov. 9-13)", "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar" },
-    { "titulo": "BigGo Finance — US October CPI Expected Up 0.3% Month-on-Month", "url": "https://finance.biggo.com/news/9e1d0a9b-b32c-4bf1-b265-11480691d264" }
+    { "titulo": "CNN Brasil — Na TV, Lula diz que se preocupa com dívida pública e taxa de juros", "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/na-tv-lula-diz-que-se-preocupa-com-divida-publica-e-taxa-de-juros/" },
+    { "titulo": "InfoMoney — Ibovespa tenta firmar fundo e dólar encosta em sobrecompra: o que vigiar na segunda?", "url": "https://www.infomoney.com.br/mercados/ibovespa-tenta-firmar-fundo-e-dolar-encosta-em-sobrecompra-o-que-vigiar-na-segunda/" },
+    { "titulo": "Money Times — Mercado digere discurso de Lula enquanto espera inflação; Ibovespa em dólar sobe", "url": "https://www.moneytimes.com.br/mercado-digere-discurso-de-lula-enquanto-espera-inflacao-ibovespa-em-dolar-sobe-nesta-segunda-feira-9-rens/" },
+    { "titulo": "Yahoo Finance — China CPI inflation misses forecasts in Oct; factory-gate prices accelerate", "url": "https://finance.yahoo.com/economy/articles/china-cpi-inflation-misses-forecasts-021515043.html" },
+    { "titulo": "Tickmill — Daily Market Outlook, November 9, 2026", "url": "https://www.tickmill.com/blog/daily-market-outlook-november-9-2026" },
+    { "titulo": "Money Times — Agenda desta segunda-feira (9)", "url": "https://www.moneytimes.com.br/agenda-segunda-feira-mercado-acompanha-focus-inflacao-discurso-presidente-boe-banco-da-inglaterra-mlem/" }
   ]
 }
