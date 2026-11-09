@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T10:08-03:00",
+  "atualizado_em": "2026-11-09T10:38-03:00",
+  "ibov": {
+   "anterior": 168498.45,
+   "pontos": [
+    [
+     "10:00",
+     169662.0
+    ],
+    [
+     "10:05",
+     169477.0
+    ],
+    [
+     "10:10",
+     169341.0
+    ],
+    [
+     "10:15",
+     169826.0
+    ],
+    [
+     "10:20",
+     169820.0
+    ],
+    [
+     "10:23",
+     169820.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.4959,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.5114
+     5.5149
     ],
     [
-     "10:08",
-     5.5134
+     "10:10",
+     5.5137
+    ],
+    [
+     "10:15",
+     5.5069
+    ],
+    [
+     "10:20",
+     5.5093
+    ],
+    [
+     "10:25",
+     5.5104
+    ],
+    [
+     "10:30",
+     5.5109
+    ],
+    [
+     "10:35",
+     5.5149
+    ],
+    [
+     "10:38",
+     5.5173
     ]
    ]
   },
@@ -78,6 +131,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.25
    },
    {
@@ -91,6 +145,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.29
    },
    {
@@ -103,6 +158,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.03
    },
    {
@@ -115,6 +171,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.03
    },
    {
@@ -127,6 +184,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.05
    },
    {
@@ -139,7 +197,8 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": 0.07
+    "ibov30": null,
+    "dolar30": 0.14
    },
    {
     "hora": "09:41",
@@ -151,7 +210,35 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": 0.11
+    "ibov30": null,
+    "dolar30": 0.12
+   },
+   {
+    "hora": "10:21",
+    "titulo": "Ibovespa sobe na abertura com aval externo e CSN em destaque; dólar estável",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNWdTd3cxV3FJSXBUUndPRktRSHlWdV80MHB1bkYyd2ljUlE1UG9TZXFIZzJfbzZtTjdLTG91ek1mSHNDR1plYnFvYkVJQUd4QzVUX0w3Nll3YldhdUZaN2JfazBzRjNOZlQ0dkN5aUkzVHNiSWxfaWZhLUVPWko2U2NIMVFCOEhickt5bzRYbUlWd2FnaVFsWjFSNE4tb1JsWlJJeA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:27",
+    "titulo": "Tesouro abre a semana em queda apesar de piora na expectativa de inflação; IPCA+ 2032 cai a 7,75%",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSlJXRDdQbzNray1nTjNTcHRpYTZBbWktbzhCVWZvaTZNVVhYZVhwckloUlB2Ym9lY3lXNjVhcFNmTnpOd1Z4ZVQ4SmpYdTF5elpLTkJBSE5VTUdXOTVWeFNmdkhHeG5JcmpSbmw3YnhvcHFpMEYyRTR3TjJHSWMtcXhzMjdXX2g0cUxXMzYxZmVfcjJYR1lrMlFpWU1maURieV9FaXlFbDQ2LVdURVQ2LVRXaUE2R0cwa21mSU1tTGpwdHFaMUlrSTJTMUpqaE8yaTd3SnZ0SHE3ZEpxOUktWnp1dy1VZVHSAewBQVVfeXFMTXBwa3BVUlZmbnk2S25icldETU40UHFoMGVlQ0FxZG10angzWHYwdXdOVnRaRXRoYndRby1YenYzektjVzdXQzgwLWJDMkxMa1RBdkYxUTZVM1RMdGtBUzk5ZkREU0RhWkRkTnZaRndCMFJIcS1Td1ZKY3lsTUc1M2lkOGMwNlhyUTVnY2RnWlRMU2lIN052eDFYRnZCdFFPSVFMLVhVc3JpMW1PMkRPN3gtSy1kaEY5UVItdGRIeGpCSEtNbV93MUVMdjdRQXF1SkxBNUpXcW1uenV2YTlmb2NUb283eURBd25ZLUY?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -592,6 +679,29 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe na abertura com aval externo e CSN em destaque; dólar estável",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNWdTd3cxV3FJSXBUUndPRktRSHlWdV80MHB1bkYyd2ljUlE1UG9TZXFIZzJfbzZtTjdLTG91ek1mSHNDR1plYnFvYkVJQUd4QzVUX0w3Nll3YldhdUZaN2JfazBzRjNOZlQ0dkN5aUkzVHNiSWxfaWZhLUVPWko2U2NIMVFCOEhickt5bzRYbUlWd2FnaVFsWjFSNE4tb1JsWlJJeA?oc=5",
+   "publicado": "2026-11-09T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro abre a semana em queda apesar de piora na expectativa de inflação; IPCA+ 2032 cai a 7,75%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSlJXRDdQbzNray1nTjNTcHRpYTZBbWktbzhCVWZvaTZNVVhYZVhwckloUlB2Ym9lY3lXNjVhcFNmTnpOd1Z4ZVQ4SmpYdTF5elpLTkJBSE5VTUdXOTVWeFNmdkhHeG5JcmpSbmw3YnhvcHFpMEYyRTR3TjJHSWMtcXhzMjdXX2g0cUxXMzYxZmVfcjJYR1lrMlFpWU1maURieV9FaXlFbDQ2LVdURVQ2LVRXaUE2R0cwa21mSU1tTGpwdHFaMUlrSTJTMUpqaE8yaTd3SnZ0SHE3ZEpxOUktWnp1dy1VZVHSAewBQVVfeXFMTXBwa3BVUlZmbnk2S25icldETU40UHFoMGVlQ0FxZG10angzWHYwdXdOVnRaRXRoYndRby1YenYzektjVzdXQzgwLWJDMkxMa1RBdkYxUTZVM1RMdGtBUzk5ZkREU0RhWkRkTnZaRndCMFJIcS1Td1ZKY3lsTUc1M2lkOGMwNlhyUTVnY2RnWlRMU2lIN052eDFYRnZCdFFPSVFMLVhVc3JpMW1PMkRPN3gtSy1kaEY5UVItdGRIeGpCSEtNbV93MUVMdjdRQXF1SkxBNUpXcW1uenV2YTlmb2NUb283eURBd25ZLUY?oc=5",
+   "publicado": "2026-11-09T10:27-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -629,9 +739,14 @@
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUl3LUoweGNlMXZkcERkakU5cHFNQjRLa3ctOVB0YUwtVDRMa1hEbGg0enpKd2x2S0pQaTFLdE9DY1B6U3FJUWFTaXBjU2VYRzJBRnRyc29jUnpOQy1obG5BaFhYTUFLaTR1Y2FxZmxTSG1iNU0xRHpPa2dLQUJ6djlwVHdscHprR1N4cXFYR0d5SktWaFlhVTJHU1JaQTh2YkctSHNoVGEwdFZ10gGyAUFVX3lxTFBIY0ZIcDk1ZjJub0Y2SXB2dXdZMnFzenlIWmRNdUc5aWpURzRnaFJpYWlldDRVVHZ1NXJjMG11S2ZuSGNrZ1M4bmRoSmNGMXVnWm1XSEx0MnhLcHlycWJCV1cya19CLUNpNHppSHdraXkyUjlmY2NRd3J2Szl0Rnp2QWY1elo3Q3JSeEhmdUxIWTVJY2dFYmFKYXpnVkNjMXhaTlpRNVBlWF9Pa1g5TjcySUE?oc=5",
    "titulo": "Ibovespa Futuro acompanha exterior e sobe com Lula e balanços em foco",
    "em": "2026-11-09T12:33:02+00:00"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNWdTd3cxV3FJSXBUUndPRktRSHlWdV80MHB1bkYyd2ljUlE1UG9TZXFIZzJfbzZtTjdLTG91ek1mSHNDR1plYnFvYkVJQUd4QzVUX0w3Nll3YldhdUZaN2JfazBzRjNOZlQ0dkN5aUkzVHNiSWxfaWZhLUVPWko2U2NIMVFCOEhickt5bzRYbUlWd2FnaVFsWjFSNE4tb1JsWlJJeA?oc=5",
+   "titulo": "Ibovespa sobe na abertura com aval externo e CSN em destaque; dólar estável",
+   "em": "2026-11-09T13:25:38+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T10:08-03:00",
+ "atualizado_em": "2026-11-09T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -647,10 +762,33 @@
  ],
  "noticias": [
   {
+   "titulo": "Tesouro abre a semana em queda apesar de piora na expectativa de inflação; IPCA+ 2032 cai a 7,75%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSlJXRDdQbzNray1nTjNTcHRpYTZBbWktbzhCVWZvaTZNVVhYZVhwckloUlB2Ym9lY3lXNjVhcFNmTnpOd1Z4ZVQ4SmpYdTF5elpLTkJBSE5VTUdXOTVWeFNmdkhHeG5JcmpSbmw3YnhvcHFpMEYyRTR3TjJHSWMtcXhzMjdXX2g0cUxXMzYxZmVfcjJYR1lrMlFpWU1maURieV9FaXlFbDQ2LVdURVQ2LVRXaUE2R0cwa21mSU1tTGpwdHFaMUlrSTJTMUpqaE8yaTd3SnZ0SHE3ZEpxOUktWnp1dy1VZVHSAewBQVVfeXFMTXBwa3BVUlZmbnk2S25icldETU40UHFoMGVlQ0FxZG10angzWHYwdXdOVnRaRXRoYndRby1YenYzektjVzdXQzgwLWJDMkxMa1RBdkYxUTZVM1RMdGtBUzk5ZkREU0RhWkRkTnZaRndCMFJIcS1Td1ZKY3lsTUc1M2lkOGMwNlhyUTVnY2RnWlRMU2lIN052eDFYRnZCdFFPSVFMLVhVc3JpMW1PMkRPN3gtSy1kaEY5UVItdGRIeGpCSEtNbV93MUVMdjdRQXF1SkxBNUpXcW1uenV2YTlmb2NUb283eURBd25ZLUY?oc=5",
+   "publicado": "2026-11-09T10:27-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe na abertura com aval externo e CSN em destaque; dólar estável",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNWdTd3cxV3FJSXBUUndPRktRSHlWdV80MHB1bkYyd2ljUlE1UG9TZXFIZzJfbzZtTjdLTG91ek1mSHNDR1plYnFvYkVJQUd4QzVUX0w3Nll3YldhdUZaN2JfazBzRjNOZlQ0dkN5aUkzVHNiSWxfaWZhLUVPWko2U2NIMVFCOEhickt5bzRYbUlWd2FnaVFsWjFSNE4tb1JsWlJJeA?oc=5",
+   "publicado": "2026-11-09T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html",
-   "publicado": "2026-11-09T09:47-03:00",
+   "publicado": "2026-11-09T10:13-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -772,20 +910,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa se prepara para avalanche de balanços, com Petrobras, BB e Boletim Focus no radar",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQd0g4T1RwZTl5aS0xR0FDQXRUTTZfZjZ3R2daQzUwRHR5cW5sTFRkYlZkZ3BFNWJUZjREV3lhN0psZmRqdVlsN3B6a190anpfdzR1WUM2ZDJOMEZjbVYwVG56VThxcXl0WDF4OGVjYmdHR2xOc090ZVAtLTJDeWp5cEJPMHc4MEFfUXN1TUxIcFVGMHZoZFFITlZtakZtdVdYcVB2SGlvdFVLUzhFckM2Z2YwQU5BSVVyblB2c1FNX1JFTmctOWVpZTQ3RVZUbm5jeURfZE5FN1lhd1ltSFZ6YdIB5gFBVV95cUxNd215WkhoYTZ5NW54NFpTR3NzYTJKTElQWUpwNkZ1QkRjM3FucVA2NDBkdnNBLVBrYWZrdUI0SFIzcHZQTW9oUW1vUlpXR29hV29vWVRxYjY1Y1Y5VjQ1aENWYkxnQnNpcnNDNlBUdHJ2b3QzS3l0aUpQVDQxUmRwc3JNTFZWdHNyLVBDZFdFdVg0V2wzQnpiWGlodUpZRXRkd09mTXk3bHhXQzROUU1tb3piZ2JxY3lPeHliR0t2dEZielJOTnlCXzJ4dXMyYUZHS2gwaExGZGxBYl9MaE4tVE9kN3RYZw?oc=5",
-   "publicado": "2026-11-09T08:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   },
   {
    "titulo": "China nega acusação de espionagem envolvendo CEO da Nvidia; analistas sugerem afastamento do cargo",
