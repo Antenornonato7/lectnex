@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T11:38-03:00",
+  "atualizado_em": "2026-11-09T12:08-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -71,11 +71,35 @@
     ],
     [
      "11:20",
-     169462.0
+     169489.0
     ],
     [
-     "11:23",
-     169470.0
+     "11:25",
+     169482.0
+    ],
+    [
+     "11:30",
+     169437.0
+    ],
+    [
+     "11:35",
+     169225.0
+    ],
+    [
+     "11:40",
+     169492.0
+    ],
+    [
+     "11:45",
+     169729.0
+    ],
+    [
+     "11:50",
+     169850.0
+    ],
+    [
+     "11:53",
+     169839.0
     ]
    ]
   },
@@ -208,10 +232,34 @@
     ],
     [
      "11:35",
+     5.5168
+    ],
+    [
+     "11:40",
+     5.5179
+    ],
+    [
+     "11:45",
+     5.5164
+    ],
+    [
+     "11:50",
+     5.5143
+    ],
+    [
+     "11:55",
+     5.5159
+    ],
+    [
+     "12:00",
      5.5133
     ],
     [
-     "11:38",
+     "12:05",
+     5.5146
+    ],
+    [
+     "12:08",
      5.515
     ]
    ]
@@ -364,6 +412,19 @@
     "dolar30": 0.12
    },
    {
+    "hora": "10:27",
+    "titulo": "Tesouro abre a semana em queda apesar de piora na expectativa de inflação; IPCA+ 2032 cai a 7,75%",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNcHBrcFVSVmZueTZLbmJyV0RNTjRQcWgwZWVDQXFkbXRqeDNYdjB1d05WdFpFdGhid1FvLVh6djN6S2NXN1dDODAtYkMyTExrVEF2RjFRNlUzVEx0a0FTOTlmRERTRGFaRGROdlpGd0IwUkhxLVN3VkpjeWxNRzUzaWQ4YzA2WHJRNWdjZGdaVExTaUg3TnZ4MVhGdkJ0UU9JUUwtWFVzcmkxbU8yRE83eC1LLWRoRjlRUi10ZEh4akJIS01tX3cxRUx2N1FBcXVKTEE1SldxbW56dXZhOWZvY1Rvbzd5REF3blktRtIB7AFBVV95cUxNcHBrcFVSVmZueTZLbmJyV0RNTjRQcWgwZWVDQXFkbXRqeDNYdjB1d05WdFpFdGhid1FvLVh6djN6S2NXN1dDODAtYkMyTExrVEF2RjFRNlUzVEx0a0FTOTlmRERTRGFaRGROdlpGd0IwUkhxLVN3VkpjeWxNRzUzaWQ4YzA2WHJRNWdjZGdaVExTaUg3TnZ4MVhGdkJ0UU9JUUwtWFVzcmkxbU8yRE83eC1LLWRoRjlRUi10ZEh4akJIS01tX3cxRUx2N1FBcXVKTEE1SldxbW56dXZhOWZvY1Rvbzd5REF3blktRg?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.25,
+    "dolar30": 0.12
+   },
+   {
     "hora": "10:32",
     "titulo": "Taxas do Tesouro recuam no primeiro pregão após pronunciamento de Lula",
     "fonte": "InfoMoney",
@@ -431,7 +492,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.0,
+    "ibov30": 0.01,
     "dolar30": -0.11
    },
    {
@@ -445,7 +506,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.05,
     "dolar30": -0.04
    },
    {
@@ -462,6 +523,20 @@
     "tickers": [
      "VALE3"
     ],
+    "ibov30": 0.14,
+    "dolar30": 0.15
+   },
+   {
+    "hora": "12:00",
+    "titulo": "Morgan vê espaço para alta do real se petróleo cair e dólar perder força global",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRGhBUTJpUnoycVpzNGtvUHlsZHVRWmZ0RE15OHNrY3RyRHpLbm84VkszVkRXeC1YbU91MWRfME1qZnl0T0p2US0wWFNyR3pQS2xLQ0duVllaMVg0UGhIQTJQUzdhXzBJM3dpSno0SndQZWhmMXBNbUNhWHhSMmt2R0RiYmJpZ3I4QWFuajU5Z0RYRnhuMFhjRl9MdFU5eXRvbHFBY3IzNXNpaEZiMjJ1R2FCWExwU0J2U2fSAb8BQVVfeXFMTnNHd2hfMV9LTFU0UkZ1ZWpCSzFNUTZjSnVEVWZUWFIyOVRvZnB4NXN6bllodFhTM0lVdHlpcW1Fa1hURVM4SUFNNnZlVXMxMjByWl9kRXZ4enh5V0s4V2p0ZGdER0JFN3JFWjlucURiZTl2Y2ZsV2NKcFJRVkZ6Y1NaLU9US1NBOFZQc3ZDM0RfS25nd1lSdFRMS3JxSTNTU1ROLTJSamoxeFdSUEktVHNYaG9Lazl3TVRodGxHMG8?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -952,6 +1027,17 @@
    "tickers": []
   },
   {
+   "titulo": "Tesouro abre a semana em queda apesar de piora na expectativa de inflação; IPCA+ 2032 cai a 7,75%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNcHBrcFVSVmZueTZLbmJyV0RNTjRQcWgwZWVDQXFkbXRqeDNYdjB1d05WdFpFdGhid1FvLVh6djN6S2NXN1dDODAtYkMyTExrVEF2RjFRNlUzVEx0a0FTOTlmRERTRGFaRGROdlpGd0IwUkhxLVN3VkpjeWxNRzUzaWQ4YzA2WHJRNWdjZGdaVExTaUg3TnZ4MVhGdkJ0UU9JUUwtWFVzcmkxbU8yRE83eC1LLWRoRjlRUi10ZEh4akJIS01tX3cxRUx2N1FBcXVKTEE1SldxbW56dXZhOWZvY1Rvbzd5REF3blktRtIB7AFBVV95cUxNcHBrcFVSVmZueTZLbmJyV0RNTjRQcWgwZWVDQXFkbXRqeDNYdjB1d05WdFpFdGhid1FvLVh6djN6S2NXN1dDODAtYkMyTExrVEF2RjFRNlUzVEx0a0FTOTlmRERTRGFaRGROdlpGd0IwUkhxLVN3VkpjeWxNRzUzaWQ4YzA2WHJRNWdjZGdaVExTaUg3TnZ4MVhGdkJ0UU9JUUwtWFVzcmkxbU8yRE83eC1LLWRoRjlRUi10ZEh4akJIS01tX3cxRUx2N1FBcXVKTEE1SldxbW56dXZhOWZvY1Rvbzd5REF3blktRg?oc=5",
+   "publicado": "2026-11-09T10:27-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Taxas do Tesouro recuam no primeiro pregão após pronunciamento de Lula",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaVZ4ejZpcVFPT0lWWUg5WkgxSl9EdERUUjlWTHhubG50cS1tSFBJeVNWSXhsUnp3ZmJ6bTlRUG0xekt2THZONTBTV0h1MlM1cjRrOTg2dUVCdDVJalFyeTdlT3QtSDA5NEFURDUzT2VIUzBhRGJwdUFrU1lRMV9sNnVYbjJsYTE3S241cTVhLWHSAZYBQVVfeXFMTzlBdE5GX1VXTTNaWTF6WmlyQ3NhRFF0MUVzZXJEbTM5MWJsMS1IZk0xMWNKdlRYcFIwZVFSTC1LdTV0QWxIMDEtX0tmTnE1ajNsMVVjb0t3bzN0NWpxcHUwaGpLdTdBQ0MyNkdSbnRKUTc5akdtRHRKV0ZocVRvY3dTQW5rSlVPSEZiSTExZmlZamdhdUVR?oc=5",
@@ -1038,14 +1124,21 @@
    "tickers": [
     "VALE3"
    ]
+  },
+  {
+   "titulo": "Morgan vê espaço para alta do real se petróleo cair e dólar perder força global",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRGhBUTJpUnoycVpzNGtvUHlsZHVRWmZ0RE15OHNrY3RyRHpLbm84VkszVkRXeC1YbU91MWRfME1qZnl0T0p2US0wWFNyR3pQS2xLQ0duVllaMVg0UGhIQTJQUzdhXzBJM3dpSno0SndQZWhmMXBNbUNhWHhSMmt2R0RiYmJpZ3I4QWFuajU5Z0RYRnhuMFhjRl9MdFU5eXRvbHFBY3IzNXNpaEZiMjJ1R2FCWExwU0J2U2fSAb8BQVVfeXFMTnNHd2hfMV9LTFU0UkZ1ZWpCSzFNUTZjSnVEVWZUWFIyOVRvZnB4NXN6bllodFhTM0lVdHlpcW1Fa1hURVM4SUFNNnZlVXMxMjByWl9kRXZ4enh5V0s4V2p0ZGdER0JFN3JFWjlucURiZTl2Y2ZsV2NKcFJRVkZ6Y1NaLU9US1NBOFZQc3ZDM0RfS25nd1lSdFRMS3JxSTNTU1ROLTJSamoxeFdSUEktVHNYaG9Lazl3TVRodGxHMG8?oc=5",
+   "publicado": "2026-11-09T12:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
-  {
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRnJXZjZza3Q0bjBXLVo4d2VhSkdZYlYwN21GY1RaNU5wZmgtNW9IdXdfYlVVdDY2S2kxc3NGUFNRTzNQS1ZfVFloSTRfS3NqS2JSb05QRVZpcHRUVFo5dmNMbzRvbXBkVlZxOUNmdngyWTlSblJIUEZlQnAtbDBtY1d5eU9xbjdzYTc3bllWaG9wSUpYR2pIY3A4MWF4SXVXUVB0UDRaU3Y3cnF1a1hGaTFB?oc=5",
-   "titulo": "Inflação, ata do Copom: os indicadores que movimentam os mercados na próxima semana",
-   "em": "2026-11-08T14:55:31+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQd3hGMGpTVkFhbTZabHkzaDBfSERNa0R4UWdUcGJ1c2JMZkp1REdpUUJueGlULV9oaXppTG45czVPb2owSm50S0pJeGVwd3hwRVYtTVY3YmNLTVZuMkVJMW1UeHJoeVFrQmkyTklEUEFYWG1LMnZfdTZ5SWN0VExoQl9HSFI2NWJJdmFTUkRSS0tNdmlhUlhnUFRDQWZUWS1PMS1QSWR5cXVMWDFpb0t0TnIwZU9iQ0JvVFc2NmFBcDZJMEF3?oc=5",
    "titulo": "Loyola: Postura do Banco Central sobre Selic foi correta e cautelosa",
@@ -1087,7 +1180,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T11:38-03:00",
+ "atualizado_em": "2026-11-09T12:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1103,10 +1196,34 @@
  ],
  "noticias": [
   {
+   "titulo": "Morgan vê espaço para alta do real se petróleo cair e dólar perder força global",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRGhBUTJpUnoycVpzNGtvUHlsZHVRWmZ0RE15OHNrY3RyRHpLbm84VkszVkRXeC1YbU91MWRfME1qZnl0T0p2US0wWFNyR3pQS2xLQ0duVllaMVg0UGhIQTJQUzdhXzBJM3dpSno0SndQZWhmMXBNbUNhWHhSMmt2R0RiYmJpZ3I4QWFuajU5Z0RYRnhuMFhjRl9MdFU5eXRvbHFBY3IzNXNpaEZiMjJ1R2FCWExwU0J2U2fSAb8BQVVfeXFMTnNHd2hfMV9LTFU0UkZ1ZWpCSzFNUTZjSnVEVWZUWFIyOVRvZnB4NXN6bllodFhTM0lVdHlpcW1Fa1hURVM4SUFNNnZlVXMxMjByWl9kRXZ4enh5V0s4V2p0ZGdER0JFN3JFWjlucURiZTl2Y2ZsV2NKcFJRVkZ6Y1NaLU9US1NBOFZQc3ZDM0RfS25nd1lSdFRMS3JxSTNTU1ROLTJSamoxeFdSUEktVHNYaG9Lazl3TVRodGxHMG8?oc=5",
+   "publicado": "2026-11-09T12:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "China prorroga trégua comercial com os EUA por mais dois meses",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/china-prorroga-tregua-comercial-com-os-eua-por-mais-dois-meses.shtml",
    "publicado": "2026-11-09T11:26-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petroleiras são maiores quedas do Ibov nesta 2º acompanhando movimento do petróleo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMUJReGJvMGF3NFE1WFAtZWZkWkpZMVpKamNzX2c5VlJVOVpWaDlrSmNOWEpDa3VMT0hjN0VPT1ZFaTNnYlRtUFdLa0EweVM4cFBhNllXTlA0X2RMd3luZkRFOGZ2Ul9ScUx0YlNfSkNUdmR2VzNpaTdteG5CMDNud3RETHNkS3VVSmR5cGNZR1R2akpFbk51cWpITG52ZUJIOUdIQlVYZldXREJXSFJvakk2OXRRRTJlTmRaaFB30gHDAUFVX3lxTE51V1dGd3oxVGdUc1RxaUItb1F3SEoxejFNT084SXZzVEdnWWRhSktCSWlWbWhDTElKeUNneGVTNUs0RHlsbWs3ajZkNDFqSlNad3pOU1B1cWFFdlpSMjBtMjM2WTZjVjJQS1BKM2xjLVJ0YS1QSWFDRUUwQ0NoMTlaeUFrWVkyd2prZ19Zd093VFMxajV4VnVMcWIyM2phbFZoampMQnFDVTBhT09rdWZtZVROMDBvR2dlcU5kVnI4TUlaNA?oc=5",
+   "publicado": "2026-11-09T11:23-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1165,6 +1282,17 @@
     "PETR4",
     "VALE3"
    ]
+  },
+  {
+   "titulo": "Tempo real: Ibovespa acompanha tom positivo de Wall Street",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wZnMtUTh4SEYtUGlReC0xcWVKbWhlWmw1VkpwYkRwdVhmUkRBLTNJZHEwV21rMlI0VnRrV2NGQXMxQVlQekZIVkhxQzhNSmI5TjdHZ0FMYXlpZDZPRTIwc3lBMHE?oc=5",
+   "publicado": "2026-11-09T10:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Presidente do Paraguai nomeia novo presidente do Banco Central",
@@ -1240,17 +1368,6 @@
    ]
   },
   {
-   "titulo": "Dólar ronda a estabilidade e não segue tendência global de olho em riscos locais",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPX1h6YU5zLTVaU1RrVGxZcVJrYVF3SU9sVVRyNFpJdVBGTTdGVlRLRVhyZFdDdXhYbzVMRE5FbmhCVktlVzEyZ2hrZTdDZ0ZjbnBtcWNkeThlNk9HOW5rOVd1YlJJbGE2a25rWHBWLVV3dzI0SEI0M2tzd0hfMk5nbDhnekh5RmFtQktuNDhhX09tNlFxRjNyQ2Z3a2g2dGRzX2FTbGkzMVdWN245dTJLbVZyUjhvUTNGdFhqWlRpSnNmT1pWQUUwaXhaZEstcUd5MDZwVtIB4wFBVV95cUxOakFSQnFEZEdGajNZcGYxTl84Z0NWNlpxUDBLQ2NEYlFjSXcxYlIxN3pyRmMwTUlWUE9jbW9UTDRGd2s3ajZaWEpGV2NnMnM4RlhDNzBRRVlmSWxURERfeVUzcm1KcUVFRXZpa1FrcTVTZlY0bThIYlE1dGNZRTJkMmJOWTRLd0RYOVQ2ZHNpUk9YZEMzREpNcFZ3LWI3XzhZMzZidGI4R3Jzd1pxWklkcXZHTTZNRlU1ZDRNU0dMek53SFEzWS1Yem5yUEc4QzljRDYyQnoyQXJkTWFvUUdDdWEwdw?oc=5",
-   "publicado": "2026-11-09T09:41-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Bolsa sobe com cenário externo positivo; dólar oscila com incertezas sobre governo Lula",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-com-exterior-positivo-e-politica-economica-de-lula-no-radar.shtml",
@@ -1258,41 +1375,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Restaurant chains refocus on food quality to bring back diners",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/09/restaurant-chains-better-food-diners.html",
-   "publicado": "2026-11-09T09:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Economistas creem que juros serão mantidos em 13,75% neste ano, aponta Focus",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-creem-que-juros-serao-mantidos-em-1375-neste-ano-aponta-focus.shtml",
-   "publicado": "2026-11-09T08:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Alguém tem de dizer a Lula que, sem ajuste fiscal, o pobre pagará a conta com inflação e recessão",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/alguem-tem-de-dizer-a-lula-que-sem-ajuste-fiscal-o-pobre-pagara-a-conta-com-inflacao-e-recessao/",
-   "publicado": "2026-11-09T08:39-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
