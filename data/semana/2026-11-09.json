@@ -3,6 +3,18 @@
  "eventos": [
   {
    "data": "2026-11-09",
+   "hora": "08h",
+   "pais": "BR",
+   "evento": "IGP-DI (out) e IPC-S (1ª quadrissemana de nov)",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Inflação de atacado e varejo medida pela FGV.",
+   "tipo": "igp-di"
+  },
+  {
+   "data": "2026-11-09",
    "hora": "08h25",
    "pais": "BR",
    "evento": "Boletim Focus (BCB)",
@@ -10,8 +22,20 @@
    "impacto": {
     "di": "volatil"
    },
-   "nota": "Expectativas de Selic, IPCA e câmbio do mercado.",
+   "nota": "Primeiro Focus após a pausa da Selic; na edição anterior, IPCA 2026 em 5,22% e Selic de 13,50% no fim de 2026.",
    "tipo": "focus"
+  },
+  {
+   "data": "2026-11-09",
+   "hora": "14h25",
+   "pais": "UK",
+   "evento": "Discurso de Andrew Bailey (BoE)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Primeira fala depois da alta de juros a 4,0% no Reino Unido.",
+   "tipo": "fala-boe"
   },
   {
    "data": "2026-11-10",
@@ -23,8 +47,9 @@
    "impacto": {
     "win": "volatil"
    },
-   "nota": "Exportações chinesas fortes sustentam a demanda por commodities; data prevista no calendário da Trading Economics.",
-   "tipo": "balanca-china"
+   "nota": "Consenso de exportações segundo a ADMISI; importações: consenso 35,0% (anterior 31,0%). Exportações fortes sustentam a demanda por commodities.",
+   "tipo": "balanca-china",
+   "consenso": "38,0%"
   },
   {
    "data": "2026-11-10",
@@ -51,7 +76,7 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "BLS não publicará a variação anual do índice cheio e do núcleo em outubro (falta de dados de out/2025).",
+   "nota": "Segundo a ADMISI, o BLS não publicará a variação anual em outubro (falta de dados de out/2025).",
    "tipo": "cpi-eua"
   },
   {
@@ -83,6 +108,20 @@
   },
   {
    "data": "2026-11-12",
+   "hora": "04h",
+   "pais": "UK",
+   "evento": "PIB do Reino Unido (3º tri, preliminar, t/t)",
+   "importancia": 1,
+   "anterior": "0,5%",
+   "consenso": "0,7%",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Atividade britânica; mexe com a libra e o dólar global.",
+   "tipo": "pib-reino-unido"
+  },
+  {
+   "data": "2026-11-12",
    "hora": "09h",
    "pais": "BR",
    "evento": "IPCA de outubro (IBGE)",
@@ -105,7 +144,8 @@
     "wdo": "volatil"
    },
    "nota": "Termômetro semanal do mercado de trabalho americano.",
-   "tipo": "seguro-desemprego"
+   "tipo": "seguro-desemprego",
+   "consenso": "195 mil"
   },
   {
    "data": "2026-11-12",
