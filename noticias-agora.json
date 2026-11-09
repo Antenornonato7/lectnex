@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T12:50-03:00",
+  "atualizado_em": "2026-11-09T12:53-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -131,7 +131,11 @@
     ],
     [
      "12:35",
-     170378.0
+     170436.0
+    ],
+    [
+     "12:38",
+     170454.0
     ]
    ]
   },
@@ -324,7 +328,11 @@
     ],
     [
      "12:50",
-     5.5243
+     5.5226
+    ],
+    [
+     "12:53",
+     5.5229
     ]
    ]
   },
@@ -646,7 +654,7 @@
     "tickers": [
      "PRIO3"
     ],
-    "ibov30": 0.17,
+    "ibov30": 0.21,
     "dolar30": 0.15
    },
    {
@@ -660,7 +668,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.2,
     "dolar30": 0.17
    },
    {
@@ -676,7 +684,7 @@
      "ALPA4"
     ],
     "ibov30": null,
-    "dolar30": 0.17
+    "dolar30": 0.14
    }
   ]
  },
@@ -1382,7 +1390,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T12:50-03:00",
+ "atualizado_em": "2026-11-09T12:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1407,6 +1415,21 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Vale e bancos puxam Ibovespa; dólar fica estável enquanto mercado cobra Lula no fiscal",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONHBkRjUtX1ZoUDVNRVVubmNOTmd2TWJOOF9aUGtoeVg1RnlILVViUzJuaDI4cFhxbG5Bd2ZBTjVNLUtJTWx3WGJNWFlraFVsckFrdXhaOHdqT29xWENzcGN2Yk5DeTFqM2NEb1d5OUZSTWx4STBjZHppdU5XSHo3NFRtcDJ4OFpLZGVpTnB2b0lzWWJIVnVDWW9XV2xIUk01N0lsSGlrVzRZMDRWS0ttVzJlTnNEU0xiLUU4Sg?oc=5",
+   "publicado": "2026-11-09T12:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   },
   {
    "titulo": "Alpargatas (ALPA4) sobe mais de 6% após balanço acima do esperado e anima analistas",
@@ -1522,21 +1545,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Vale e bancos puxam Ibovespa; dólar fica estável enquanto mercado cobra Lula no fiscal",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONHBkRjUtX1ZoUDVNRVVubmNOTmd2TWJOOF9aUGtoeVg1RnlILVViUzJuaDI4cFhxbG5Bd2ZBTjVNLUtJTWx3WGJNWFlraFVsckFrdXhaOHdqT29xWENzcGN2Yk5DeTFqM2NEb1d5OUZSTWx4STBjZHppdU5XSHo3NFRtcDJ4OFpLZGVpTnB2b0lzWWJIVnVDWW9XV2xIUk01N0lsSGlrVzRZMDRWS0ttVzJlTnNEU0xiLUU4Sg?oc=5",
-   "publicado": "2026-11-09T11:20-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
   },
   {
    "titulo": "Boletim Focus prevê taxa Selic de 13,75% em 2026",
