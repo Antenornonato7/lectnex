@@ -1,7 +1,20 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T10:15-03:00",
+  "atualizado_em": "2026-11-09T10:18-03:00",
+  "ibov": {
+   "anterior": 168498.45,
+   "pontos": [
+    [
+     "10:00",
+     168507.0
+    ],
+    [
+     "10:03",
+     168510.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.4959,
    "pontos": [
@@ -67,7 +80,11 @@
     ],
     [
      "10:15",
-     5.5092
+     5.508
+    ],
+    [
+     "10:18",
+     5.5079
     ]
    ]
   },
@@ -82,6 +99,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.25
    },
    {
@@ -95,6 +113,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.29
    },
    {
@@ -107,6 +126,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.03
    },
    {
@@ -119,6 +139,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.03
    },
    {
@@ -131,6 +152,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.05
    },
    {
@@ -143,6 +165,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.14
    },
    {
@@ -155,6 +178,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.12
    }
   ]
@@ -635,7 +659,7 @@
    "em": "2026-11-09T12:33:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T10:15-03:00",
+ "atualizado_em": "2026-11-09T10:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
