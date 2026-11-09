@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T10:38-03:00",
+  "atualizado_em": "2026-11-09T11:08-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -23,11 +23,35 @@
     ],
     [
      "10:20",
-     169820.0
+     170002.0
     ],
     [
-     "10:23",
-     169820.0
+     "10:25",
+     169890.0
+    ],
+    [
+     "10:30",
+     169708.0
+    ],
+    [
+     "10:35",
+     169950.0
+    ],
+    [
+     "10:40",
+     169789.0
+    ],
+    [
+     "10:45",
+     169603.0
+    ],
+    [
+     "10:50",
+     169590.0
+    ],
+    [
+     "10:53",
+     169490.0
     ]
    ]
   },
@@ -112,11 +136,35 @@
     ],
     [
      "10:35",
-     5.5149
+     5.5159
     ],
     [
-     "10:38",
-     5.5173
+     "10:40",
+     5.5214
+    ],
+    [
+     "10:45",
+     5.519
+    ],
+    [
+     "10:50",
+     5.5163
+    ],
+    [
+     "10:55",
+     5.5169
+    ],
+    [
+     "11:00",
+     5.5104
+    ],
+    [
+     "11:05",
+     5.5074
+    ],
+    [
+     "11:08",
+     5.5099
     ]
    ]
   },
@@ -224,8 +272,22 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.24,
+    "dolar30": 0.13
+   },
+   {
+    "hora": "10:26",
+    "titulo": "Mercado eleva projeção da Selic para 13,75% em 2026",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mercado-eleva-projecao-da-selic-para-1375-em-2026",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.24,
+    "dolar30": 0.12
    },
    {
     "hora": "10:27",
@@ -235,6 +297,63 @@
     "impacto": "medio",
     "ativos": [
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.24,
+    "dolar30": 0.12
+   },
+   {
+    "hora": "10:32",
+    "titulo": "Taxas do Tesouro recuam no primeiro pregão após pronunciamento de Lula",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaVZ4ejZpcVFPT0lWWUg5WkgxSl9EdERUUjlWTHhubG50cS1tSFBJeVNWSXhsUnp3ZmJ6bTlRUG0xekt2THZONTBTV0h1MlM1cjRrOTg2dUVCdDVJalFyeTdlT3QtSDA5NEFURDUzT2VIUzBhRGJwdUFrU1lRMV9sNnVYbjJsYTE3S241cTVhLWHSAZYBQVVfeXFMTzlBdE5GX1VXTTNaWTF6WmlyQ3NhRFF0MUVzZXJEbTM5MWJsMS1IZk0xMWNKdlRYcFIwZVFSTC1LdTV0QWxIMDEtX0tmTnE1ajNsMVVjb0t3bzN0NWpxcHUwaGpLdTdBQ0MyNkdSbnRKUTc5akdtRHRKV0ZocVRvY3dTQW5rSlVPSEZiSTExZmlZamdhdUVR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.01
+   },
+   {
+    "hora": "10:34",
+    "titulo": "GENB11: Uma opção para investir pensando em longo prazo em meio a correção das ações de tecnologia",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbVZKOFZYN1pJRUJwWWdSZkJDa292NE53VThFLU5QMFpaY3dTWnBvOVVsM2dhT2paYU5DU2dVcGMwZEV0em1heXpPZDV5T1ZXbWlWYTMtVGI4RzFxTC1oSlRfOWs0SFVhWEVRd3dReS1GNlRkTXFiTUh6NmJ5a2VDVU9YQnNvRUp5RFNkQktHN3BLbUhEQU00R1k1Nmw5U0htSnBTY0ZqVWVXT0ZpNE5GajF5RQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "GENB11"
+    ],
+    "ibov30": null,
+    "dolar30": -0.01
+   },
+   {
+    "hora": "10:40",
+    "titulo": "Ibovespa estende recuperação com Vale e bancos, apesar de queda da Petrobras",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdXpNeVF6dHl5R0JwSUVPdHVsNHhFMzV5WEJuMV9TcGFlZWh3VGJ4UXJXZ2RpTXVEQnduT0hxb2k0TThycE1Td2YwWFBucEgyY2VxaEJEY1pMOFR4SmxvaXVTcUdDSUNMcGZRckpKb0VoRHRPcVFLWV91Z1BYaHFXUWd3NXROYlE3UDMzdmNmeFhxX3h4U1FNaUliRlZmUE1oMDRQY2dQYXNLdEdpaVdoQ3dtMzZuVVpQeXpQeGhqYzRVWDVyWHJOTGJEY0dBUdIB3AFBVV95cUxPOGhHWjRCTjROZlRFNXphV0d3Y0JCeFdCTTdyd3AwU2JkejBrWE1fZUpTSGNoam9CZnhwZ192aW4tZzNQVlpTb3hVelJlQ3gyWHh5REkzb2h5eHNIc195a2ctT1AtRTFWUVVRZ2JmczVXWEk5Q3ZvQWJfdkxtWGpTTEdYcGZwVHQ0ZlpQWXBhWHB2dGpTc2hXay1wVFkyUWpxcWFTTldLSzVQNWRzUmwzUk1yRzZuZFlRVFBvd2Z2dDZtZnNEbEc3MHdzckpvaU9uVnNTUXhFNVZZb0px?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4",
+     "VALE3"
+    ],
+    "ibov30": null,
+    "dolar30": -0.25
+   },
+   {
+    "hora": "10:58",
+    "titulo": "Ibovespa ganha fôlego com Wall Street e mira os 170 mil pontos; 5 coisas para saber antes de investir hoje (9)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPR3VsbmtNRnJvUDY4cllyd0tIT0NNOE5zUjdHNkg5YWN3ZERTSV9qWm55a3RNanJVYk8taERLbGc2d2dkZ2NjNXpTTUIxNzdqWE1Ibll2eWtrWUoyU0RaVW43ZEpHQ2poXzhUcWRkNjhoU0V2cGlzR29YZzZ4WHZhYk9BYS1INlYtZFFXeUlzb3l1TFBNWHRPTE94R3VreDRESEh4cW9nTFljcGhSVmM1QmV0VG5MMVpzejJVVlg3WFRJcGt3ZEhKYUNOcFhXZEp3UnFXSjlvM2M4TkU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
     ],
     "tickers": [],
     "ibov30": null,
@@ -693,6 +812,18 @@
    "tickers": []
   },
   {
+   "titulo": "Mercado eleva projeção da Selic para 13,75% em 2026",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mercado-eleva-projecao-da-selic-para-1375-em-2026",
+   "publicado": "2026-11-09T10:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Tesouro abre a semana em queda apesar de piora na expectativa de inflação; IPCA+ 2032 cai a 7,75%",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSlJXRDdQbzNray1nTjNTcHRpYTZBbWktbzhCVWZvaTZNVVhYZVhwckloUlB2Ym9lY3lXNjVhcFNmTnpOd1Z4ZVQ4SmpYdTF5elpLTkJBSE5VTUdXOTVWeFNmdkhHeG5JcmpSbmw3YnhvcHFpMEYyRTR3TjJHSWMtcXhzMjdXX2g0cUxXMzYxZmVfcjJYR1lrMlFpWU1maURieV9FaXlFbDQ2LVdURVQ2LVRXaUE2R0cwa21mSU1tTGpwdHFaMUlrSTJTMUpqaE8yaTd3SnZ0SHE3ZEpxOUktWnp1dy1VZVHSAewBQVVfeXFMTXBwa3BVUlZmbnk2S25icldETU40UHFoMGVlQ0FxZG10angzWHYwdXdOVnRaRXRoYndRby1YenYzektjVzdXQzgwLWJDMkxMa1RBdkYxUTZVM1RMdGtBUzk5ZkREU0RhWkRkTnZaRndCMFJIcS1Td1ZKY3lsTUc1M2lkOGMwNlhyUTVnY2RnWlRMU2lIN052eDFYRnZCdFFPSVFMLVhVc3JpMW1PMkRPN3gtSy1kaEY5UVItdGRIeGpCSEtNbV93MUVMdjdRQXF1SkxBNUpXcW1uenV2YTlmb2NUb283eURBd25ZLUY?oc=5",
@@ -700,6 +831,55 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas do Tesouro recuam no primeiro pregão após pronunciamento de Lula",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaVZ4ejZpcVFPT0lWWUg5WkgxSl9EdERUUjlWTHhubG50cS1tSFBJeVNWSXhsUnp3ZmJ6bTlRUG0xekt2THZONTBTV0h1MlM1cjRrOTg2dUVCdDVJalFyeTdlT3QtSDA5NEFURDUzT2VIUzBhRGJwdUFrU1lRMV9sNnVYbjJsYTE3S241cTVhLWHSAZYBQVVfeXFMTzlBdE5GX1VXTTNaWTF6WmlyQ3NhRFF0MUVzZXJEbTM5MWJsMS1IZk0xMWNKdlRYcFIwZVFSTC1LdTV0QWxIMDEtX0tmTnE1ajNsMVVjb0t3bzN0NWpxcHUwaGpLdTdBQ0MyNkdSbnRKUTc5akdtRHRKV0ZocVRvY3dTQW5rSlVPSEZiSTExZmlZamdhdUVR?oc=5",
+   "publicado": "2026-11-09T10:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "GENB11: Uma opção para investir pensando em longo prazo em meio a correção das ações de tecnologia",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbVZKOFZYN1pJRUJwWWdSZkJDa292NE53VThFLU5QMFpaY3dTWnBvOVVsM2dhT2paYU5DU2dVcGMwZEV0em1heXpPZDV5T1ZXbWlWYTMtVGI4RzFxTC1oSlRfOWs0SFVhWEVRd3dReS1GNlRkTXFiTUh6NmJ5a2VDVU9YQnNvRUp5RFNkQktHN3BLbUhEQU00R1k1Nmw5U0htSnBTY0ZqVWVXT0ZpNE5GajF5RQ?oc=5",
+   "publicado": "2026-11-09T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GENB11"
+   ]
+  },
+  {
+   "titulo": "Ibovespa estende recuperação com Vale e bancos, apesar de queda da Petrobras",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdXpNeVF6dHl5R0JwSUVPdHVsNHhFMzV5WEJuMV9TcGFlZWh3VGJ4UXJXZ2RpTXVEQnduT0hxb2k0TThycE1Td2YwWFBucEgyY2VxaEJEY1pMOFR4SmxvaXVTcUdDSUNMcGZRckpKb0VoRHRPcVFLWV91Z1BYaHFXUWd3NXROYlE3UDMzdmNmeFhxX3h4U1FNaUliRlZmUE1oMDRQY2dQYXNLdEdpaVdoQ3dtMzZuVVpQeXpQeGhqYzRVWDVyWHJOTGJEY0dBUdIB3AFBVV95cUxPOGhHWjRCTjROZlRFNXphV0d3Y0JCeFdCTTdyd3AwU2JkejBrWE1fZUpTSGNoam9CZnhwZ192aW4tZzNQVlpTb3hVelJlQ3gyWHh5REkzb2h5eHNIc195a2ctT1AtRTFWUVVRZ2JmczVXWEk5Q3ZvQWJfdkxtWGpTTEdYcGZwVHQ0ZlpQWXBhWHB2dGpTc2hXay1wVFkyUWpxcWFTTldLSzVQNWRzUmwzUk1yRzZuZFlRVFBvd2Z2dDZtZnNEbEc3MHdzckpvaU9uVnNTUXhFNVZZb0px?oc=5",
+   "publicado": "2026-11-09T10:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa ganha fôlego com Wall Street e mira os 170 mil pontos; 5 coisas para saber antes de investir hoje (9)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPR3VsbmtNRnJvUDY4cllyd0tIT0NNOE5zUjdHNkg5YWN3ZERTSV9qWm55a3RNanJVYk8taERLbGc2d2dkZ2NjNXpTTUIxNzdqWE1Ibll2eWtrWUoyU0RaVW43ZEpHQ2poXzhUcWRkNjhoU0V2cGlzR29YZzZ4WHZhYk9BYS1INlYtZFFXeUlzb3l1TFBNWHRPTE94R3VreDRESEh4cW9nTFljcGhSVmM1QmV0VG5MMVpzejJVVlg3WFRJcGt3ZEhKYUNOcFhXZEp3UnFXSjlvM2M4TkU?oc=5",
+   "publicado": "2026-11-09T10:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   }
@@ -746,7 +926,7 @@
    "em": "2026-11-09T13:25:38+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T10:38-03:00",
+ "atualizado_em": "2026-11-09T11:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -754,7 +934,6 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -762,12 +941,73 @@
  ],
  "noticias": [
   {
+   "titulo": "Ibovespa ganha fôlego com Wall Street e mira os 170 mil pontos; 5 coisas para saber antes de investir hoje (9)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPR3VsbmtNRnJvUDY4cllyd0tIT0NNOE5zUjdHNkg5YWN3ZERTSV9qWm55a3RNanJVYk8taERLbGc2d2dkZ2NjNXpTTUIxNzdqWE1Ibll2eWtrWUoyU0RaVW43ZEpHQ2poXzhUcWRkNjhoU0V2cGlzR29YZzZ4WHZhYk9BYS1INlYtZFFXeUlzb3l1TFBNWHRPTE94R3VreDRESEh4cW9nTFljcGhSVmM1QmV0VG5MMVpzejJVVlg3WFRJcGt3ZEhKYUNOcFhXZEp3UnFXSjlvM2M4TkU?oc=5",
+   "publicado": "2026-11-09T10:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa estende recuperação com Vale e bancos, apesar de queda da Petrobras",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdXpNeVF6dHl5R0JwSUVPdHVsNHhFMzV5WEJuMV9TcGFlZWh3VGJ4UXJXZ2RpTXVEQnduT0hxb2k0TThycE1Td2YwWFBucEgyY2VxaEJEY1pMOFR4SmxvaXVTcUdDSUNMcGZRckpKb0VoRHRPcVFLWV91Z1BYaHFXUWd3NXROYlE3UDMzdmNmeFhxX3h4U1FNaUliRlZmUE1oMDRQY2dQYXNLdEdpaVdoQ3dtMzZuVVpQeXpQeGhqYzRVWDVyWHJOTGJEY0dBUdIB3AFBVV95cUxPOGhHWjRCTjROZlRFNXphV0d3Y0JCeFdCTTdyd3AwU2JkejBrWE1fZUpTSGNoam9CZnhwZ192aW4tZzNQVlpTb3hVelJlQ3gyWHh5REkzb2h5eHNIc195a2ctT1AtRTFWUVVRZ2JmczVXWEk5Q3ZvQWJfdkxtWGpTTEdYcGZwVHQ0ZlpQWXBhWHB2dGpTc2hXay1wVFkyUWpxcWFTTldLSzVQNWRzUmwzUk1yRzZuZFlRVFBvd2Z2dDZtZnNEbEc3MHdzckpvaU9uVnNTUXhFNVZZb0px?oc=5",
+   "publicado": "2026-11-09T10:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "GENB11: Uma opção para investir pensando em longo prazo em meio a correção das ações de tecnologia",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbVZKOFZYN1pJRUJwWWdSZkJDa292NE53VThFLU5QMFpaY3dTWnBvOVVsM2dhT2paYU5DU2dVcGMwZEV0em1heXpPZDV5T1ZXbWlWYTMtVGI4RzFxTC1oSlRfOWs0SFVhWEVRd3dReS1GNlRkTXFiTUh6NmJ5a2VDVU9YQnNvRUp5RFNkQktHN3BLbUhEQU00R1k1Nmw5U0htSnBTY0ZqVWVXT0ZpNE5GajF5RQ?oc=5",
+   "publicado": "2026-11-09T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GENB11"
+   ]
+  },
+  {
+   "titulo": "Taxas do Tesouro recuam no primeiro pregão após pronunciamento de Lula",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaVZ4ejZpcVFPT0lWWUg5WkgxSl9EdERUUjlWTHhubG50cS1tSFBJeVNWSXhsUnp3ZmJ6bTlRUG0xekt2THZONTBTV0h1MlM1cjRrOTg2dUVCdDVJalFyeTdlT3QtSDA5NEFURDUzT2VIUzBhRGJwdUFrU1lRMV9sNnVYbjJsYTE3S241cTVhLWHSAZYBQVVfeXFMTzlBdE5GX1VXTTNaWTF6WmlyQ3NhRFF0MUVzZXJEbTM5MWJsMS1IZk0xMWNKdlRYcFIwZVFSTC1LdTV0QWxIMDEtX0tmTnE1ajNsMVVjb0t3bzN0NWpxcHUwaGpLdTdBQ0MyNkdSbnRKUTc5akdtRHRKV0ZocVRvY3dTQW5rSlVPSEZiSTExZmlZamdhdUVR?oc=5",
+   "publicado": "2026-11-09T10:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Tesouro abre a semana em queda apesar de piora na expectativa de inflação; IPCA+ 2032 cai a 7,75%",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOSlJXRDdQbzNray1nTjNTcHRpYTZBbWktbzhCVWZvaTZNVVhYZVhwckloUlB2Ym9lY3lXNjVhcFNmTnpOd1Z4ZVQ4SmpYdTF5elpLTkJBSE5VTUdXOTVWeFNmdkhHeG5JcmpSbmw3YnhvcHFpMEYyRTR3TjJHSWMtcXhzMjdXX2g0cUxXMzYxZmVfcjJYR1lrMlFpWU1maURieV9FaXlFbDQ2LVdURVQ2LVRXaUE2R0cwa21mSU1tTGpwdHFaMUlrSTJTMUpqaE8yaTd3SnZ0SHE3ZEpxOUktWnp1dy1VZVHSAewBQVVfeXFMTXBwa3BVUlZmbnk2S25icldETU40UHFoMGVlQ0FxZG10angzWHYwdXdOVnRaRXRoYndRby1YenYzektjVzdXQzgwLWJDMkxMa1RBdkYxUTZVM1RMdGtBUzk5ZkREU0RhWkRkTnZaRndCMFJIcS1Td1ZKY3lsTUc1M2lkOGMwNlhyUTVnY2RnWlRMU2lIN052eDFYRnZCdFFPSVFMLVhVc3JpMW1PMkRPN3gtSy1kaEY5UVItdGRIeGpCSEtNbV93MUVMdjdRQXF1SkxBNUpXcW1uenV2YTlmb2NUb283eURBd25ZLUY?oc=5",
    "publicado": "2026-11-09T10:27-03:00",
    "impacto": "medio",
    "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado eleva projeção da Selic para 13,75% em 2026",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mercado-eleva-projecao-da-selic-para-1375-em-2026",
+   "publicado": "2026-11-09T10:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
     "DI"
    ],
    "tickers": []
@@ -783,6 +1023,21 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe de olho em Boletim Focus e balanços; tombo do petróleo pressiona Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQd0g4T1RwZTl5aS0xR0FDQXRUTTZfZjZ3R2daQzUwRHR5cW5sTFRkYlZkZ3BFNWJUZjREV3lhN0psZmRqdVlsN3B6a190anpfdzR1WUM2ZDJOMEZjbVYwVG56VThxcXl0WDF4OGVjYmdHR2xOc090ZVAtLTJDeWp5cEJPMHc4MEFfUXN1TUxIcFVGMHZoZFFITlZtakZtdVdYcVB2SGlvdFVLUzhFckM2Z2YwQU5BSVVyblB2c1FNX1JFTmctOWVpZTQ3RVZUbm5jeURfZE5FN1lhd1ltSFZ6YdIB5gFBVV95cUxNd215WkhoYTZ5NW54NFpTR3NzYTJKTElQWUpwNkZ1QkRjM3FucVA2NDBkdnNBLVBrYWZrdUI0SFIzcHZQTW9oUW1vUlpXR29hV29vWVRxYjY1Y1Y5VjQ1aENWYkxnQnNpcnNDNlBUdHJ2b3QzS3l0aUpQVDQxUmRwc3JNTFZWdHNyLVBDZFdFdVg0V2wzQnpiWGlodUpZRXRkd09mTXk3bHhXQzROUU1tb3piZ2JxY3lPeHliR0t2dEZielJOTnlCXzJ4dXMyYUZHS2gwaExGZGxBYl9MaE4tVE9kN3RYZw?oc=5",
+   "publicado": "2026-11-09T10:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
@@ -841,18 +1096,6 @@
    "tickers": []
   },
   {
-   "titulo": "Focus: Após decisão do Copom, mercado descarta cortes da Selic em 2026",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUFJ1UEVwa0JjR3J0cnJCNkhEbTNxcHp1VWZIUjdUbFRSSS1lMVVaaVVxM1JQZjkwRC1VMWV4THZhOHV0YXQyZXhONWRlVDhqTmJHcWZKRmVGN3kxN0RiSzkxY0Z2em8yYXdvZlg2MW9rWG9sTzhxalRiRDdESEk1cVBiX1R0T3ZvV0IxMlRuRDJmaFdYNXFfeEpTZGV0enE5V0V0U2pwc05wY3JSLXpkMHp4MnBkRl9xVDBCdkJldC14enJsYWc?oc=5",
-   "publicado": "2026-11-09T09:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Restaurant chains refocus on food quality to bring back diners",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/09/restaurant-chains-better-food-diners.html",
@@ -875,30 +1118,6 @@
    "tickers": []
   },
   {
-   "titulo": "Focus: mercado eleva projeção da Selic e reduz estimativa para o PIB em 2026",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWGdHeVJXUnNscFcxSjZKMElTWjdZbHAwRUlZaW5WU2JJLWpfLXNUbUdxZDlLVDcyZGlFVXlsbXUyTmJWYlRRcXoza09tVHFBTmJyN3BZOEg2Vk9JWmVpd2dLMjFweW9IYkRCZUhfT21kUF94N19kdHhqRGI2WDhNSlJ6RGN5SFhBYngzaXpnN3pMSFdveTl6TFExcTFRczVia0FXRU1R?oc=5",
-   "publicado": "2026-11-09T08:50-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Após Copom, economistas veem Selic estacionada em 13,75% em 2026; veja o Focus desta segunda-feira (9)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSE81OHcyVXlMb3I5Z0NiUk9PTVNkUlJzaFY0U2duUFVKWVZ0dHpzVjRDZ2kzcGt0NGpWZVVHdFRHYWJTSWlFeEFQLVFsOUNPS3d6eVM5TG1zc0lHRzRudjE4RWljUm1EcEJpVkdmS0RFX3VkbVJOclFZaTQ4QnR0SXQ4b2FBeTFHSlBjVGtmanRTUlo4ZmxHU21ya0pteUlsZnoyak53RktJQURlWS0wRHFSQzAxNnR3OXJ5RQ?oc=5",
-   "publicado": "2026-11-09T08:46-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Alguém tem de dizer a Lula que, sem ajuste fiscal, o pobre pagará a conta com inflação e recessão",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/alguem-tem-de-dizer-a-lula-que-sem-ajuste-fiscal-o-pobre-pagara-a-conta-com-inflacao-e-recessao/",
@@ -908,18 +1127,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China nega acusação de espionagem envolvendo CEO da Nvidia; analistas sugerem afastamento do cargo",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/china-nega-acusacao-espionagem-ceo-nvidia/",
-   "publicado": "2026-11-09T08:17-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
