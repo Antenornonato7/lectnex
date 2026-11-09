@@ -15,7 +15,8 @@
    "f": [
     "Especificações dos contratos",
     "futuros.html#specs"
-   ]
+   ],
+   "x": "Book do WIN com compra a 131.995 e venda a 132.000. Quem envia uma ordem de compra a mercado de 50 contratos executa a 132.000: foi uma agressão compradora de 50. Quando as agressões de compra superam as de venda e o preço sobe junto, o fluxo comprador está no controle."
   },
   {
    "t": "Ajuste diário",
@@ -24,7 +25,8 @@
    "f": [
     "Especificações dos contratos",
     "futuros.html#specs"
-   ]
+   ],
+   "x": "Você carrega 1 WIN comprado a 132.000 e o preço de ajuste do dia sai a 132.400: recebe 400 pontos × R$ 0,20 = R$ 80 no dia seguinte. Se o ajuste de amanhã for 131.900, paga 500 × R$ 0,20 = R$ 100."
   },
   {
    "t": "Alavancagem",
@@ -33,13 +35,15 @@
    "f": [
     "Calculadora de risco",
     "futuros.html#risco"
-   ]
+   ],
+   "x": "Com o índice futuro a 132.000 pontos, 1 mini índice representa R$ 26.400 (132.000 × R$ 0,20). Se a corretora pede R$ 150 de margem por contrato no day trade, 5 contratos movimentam R$ 132.000 com R$ 750 depositados. Uma queda de 1% (1.320 pontos) custa R$ 1.320, mais que toda a margem."
   },
   {
    "t": "Book de ofertas",
    "c": "futuros",
    "d": "Lista das ordens de compra e venda pendentes em cada nível de preço. Mostra onde há liquidez e quanto volume seria necessário para o preço andar.",
-   "f": null
+   "f": null,
+   "x": "WDO com melhor compra a 5.400,0 (120 contratos) e melhor venda a 5.400,5 (35 contratos). Uma compra a mercado de 50 contratos consome os 35 de 5.400,5 e busca os 15 restantes no nível de cima: o preço anda um tick."
   },
   {
    "t": "Breakeven (inflação implícita)",
@@ -48,19 +52,22 @@
    "f": [
     "Inflação implícita ao vivo",
     "macro.html#curva"
-   ]
+   ],
+   "x": "Prefixado de 5 anos a 13,5% e IPCA+ do mesmo prazo pagando 7,5% de juro real: 1,135 ÷ 1,075 − 1 = 5,6% ao ano de inflação implícita."
   },
   {
    "t": "BTC (aluguel de ações)",
    "c": "acoes",
    "d": "Banco de Títulos da B3, onde ações são emprestadas. Quem doa recebe uma taxa; quem toma emprestado pode vender a descoberto e recomprar depois para devolver.",
-   "f": null
+   "f": null,
+   "x": "Você aluga 1.000 ações a uma taxa de 3% ao ano e vende a R$ 20 (R$ 20.000). Um mês depois recompra a R$ 18 e devolve: ganho bruto de R$ 2.000, menos cerca de R$ 50 de aluguel (3% ao ano sobre R$ 20.000, por um mês)."
   },
   {
    "t": "Call",
    "c": "opcoes",
    "d": "Opção de compra: dá ao titular o direito, mas não a obrigação, de comprar o ativo pelo preço de exercício até o vencimento. Quem vende a call assume a obrigação de vender se for exercido.",
-   "f": null
+   "f": null,
+   "x": "Ação a R$ 30. Você paga R$ 1,00 por uma call de strike R$ 32. No vencimento, com a ação a R$ 35, o ganho é 35 − 32 − 1 = R$ 2,00 por ação. Abaixo de R$ 32, perde só o R$ 1,00 pago."
   },
   {
    "t": "Carry trade",
@@ -69,7 +76,8 @@
    "f": [
     "Mapa E se…?",
     "macro.html#educacao"
-   ]
+   ],
+   "x": "Um investidor toma dólares a 4% ao ano e aplica em reais a 14%. Com o câmbio parado, ganha perto de 10 pontos percentuais no ano. Se o real cair mais que isso no período, o ganho de juros vira prejuízo."
   },
   {
    "t": "CDI",
@@ -78,13 +86,15 @@
    "f": [
     "Selic e CDI hoje",
     "index.html#hero"
-   ]
+   ],
+   "x": "Um CDB que paga 100% do CDI, com o CDI a 13,65% ao ano, rende 13,65% brutos em 12 meses: R$ 10.000 viram R$ 11.365 antes do imposto."
   },
   {
    "t": "Circuit breaker",
    "c": "futuros",
    "d": "Interrupção automática dos negócios na B3 quando o Ibovespa cai além de limites definidos no mesmo dia. Serve para conter pânico e dar tempo para o mercado processar a informação.",
-   "f": null
+   "f": null,
+   "x": "Se o Ibovespa cai 10% em relação ao fechamento anterior, os negócios param por 30 minutos. Depois da reabertura, se a queda chegar a 15%, param por mais 1 hora; a 20%, a B3 pode suspender os negócios por prazo que ela define."
   },
   {
    "t": "Consenso de mercado",
@@ -93,7 +103,8 @@
    "f": [
     "Calendário econômico",
     "index.html#cal-wrap"
-   ]
+   ],
+   "x": "O mercado espera IPCA de 0,40% no mês. Sai 0,40%: quase nada acontece, porque já estava no preço. Sai 0,55%: os juros curtos sobem na hora."
   },
   {
    "t": "Contango",
@@ -102,7 +113,8 @@
    "f": [
     "Dólar justo",
     "futuros.html#paridade"
-   ]
+   ],
+   "x": "Dólar à vista a R$ 5,400 e WDO do mês seguinte a 5.425 pontos: o futuro está 25 pontos acima, diferença que vem do juro em reais ser maior que o juro em dólar. Essa diferença vai a zero no vencimento."
   },
   {
    "t": "Copom",
@@ -111,7 +123,8 @@
    "f": [
     "Ciclo do Copom",
     "macro.html#juros"
-   ]
+   ],
+   "x": "A reunião termina na quarta-feira e o comunicado sai depois das 18h30. Se o mercado esperava corte de 0,25 ponto e o Copom mantém a Selic, no dia seguinte os juros curtos abrem em alta e o dólar tende a cair, porque o diferencial de juros ficou maior do que se esperava."
   },
   {
    "t": "CPI",
@@ -120,7 +133,8 @@
    "f": [
     "Calendário econômico",
     "index.html#cal-wrap"
-   ]
+   ],
+   "x": "Consenso de 0,3% no mês e o CPI sai 0,5%: os juros americanos sobem, o DXY sobe e o WDO costuma subir nos minutos seguintes. O dado sai às 8h30 de Nova York (9h30 ou 10h30 de Brasília, conforme o horário de verão americano)."
   },
   {
    "t": "Critério de Kelly",
@@ -129,7 +143,8 @@
    "f": [
     "Curva de Kelly",
     "futuros.html#risco"
-   ]
+   ],
+   "x": "Taxa de acerto de 50% e payoff 2: Kelly = 0,50 − (0,50 ÷ 2) = 25% do capital por operação. É agressivo demais para a vida real; meio Kelly daria 12,5%, e muitos traders ficam entre 1% e 2%."
   },
   {
    "t": "Cupom cambial",
@@ -138,7 +153,8 @@
    "f": [
     "Curva de juros",
     "macro.html#juros"
-   ]
+   ],
+   "x": "DI de um ano a 13,5% e cupom cambial a 5,5%: o dólar futuro de um ano fica perto de 1,135 ÷ 1,055 − 1 = 7,6% acima do dólar à vista."
   },
   {
    "t": "Curva de juros",
@@ -147,7 +163,8 @@
    "f": [
     "Curva do Tesouro hoje",
     "macro.html#curva"
-   ]
+   ],
+   "x": "DI de janeiro do ano que vem a 13,2%, o de três anos a 13,0% e o de oito anos a 13,6%: o mercado vê cortes de Selic no curto prazo e cobra prêmio para emprestar por muito tempo."
   },
   {
    "t": "DARF",
@@ -156,19 +173,22 @@
    "f": [
     "Calculadora de IR",
     "futuros.html#risco"
-   ]
+   ],
+   "x": "Lucro líquido de R$ 2.000 em day trade em março: imposto de 20% = R$ 400. A corretora já reteve R$ 20 (1%). Você paga um DARF 6015 de R$ 380 até o último dia útil de abril."
   },
   {
    "t": "Data com",
    "c": "acoes",
    "d": "Último dia em que é preciso ter a ação na carteira para receber o provento anunciado (dividendos ou JCP).",
-   "f": null
+   "f": null,
+   "x": "Empresa anuncia R$ 1,00 por ação com data com em 15/05. Quem tiver a ação no fechamento do dia 15 recebe, mesmo que venda no dia 16."
   },
   {
    "t": "Data ex",
    "c": "acoes",
    "d": "Primeiro dia em que a ação é negociada sem direito ao provento. O preço costuma abrir descontado aproximadamente pelo valor pago.",
-   "f": null
+   "f": null,
+   "x": "Ação fecha a R$ 50,00 na data com de um dividendo de R$ 1,00. No dia seguinte (data ex), o preço de referência para a abertura é R$ 49,00."
   },
   {
    "t": "Day trade",
@@ -177,7 +197,8 @@
    "f": [
     "Plano do Dia",
     "futuros.html#plano"
-   ]
+   ],
+   "x": "Compra de 2 WIN a 132.000 às 10h15 e venda a 132.300 às 11h: 300 pontos × R$ 0,20 × 2 = R$ 120 de lucro bruto. O imposto é de 20% sobre o lucro líquido do mês."
   },
   {
    "t": "DI1 (DI futuro)",
@@ -186,13 +207,15 @@
    "f": [
     "Vértices vigentes",
     "macro.html#curva"
-   ]
+   ],
+   "x": "Um DI1 de janeiro negociado a 13,20% indica que o mercado espera um CDI médio de 13,20% ao ano até aquele vencimento. Com a Selic em 13,75%, há cortes embutidos no preço."
   },
   {
    "t": "Dividend yield (DY)",
    "c": "acoes",
    "d": "Proventos pagos nos últimos 12 meses divididos pelo preço da ação. Mostra o retorno em dinheiro, mas um DY alto pode refletir uma queda forte no preço ou um pagamento que não vai se repetir.",
-   "f": null
+   "f": null,
+   "x": "Ação a R$ 40 que pagou R$ 3,20 em proventos nos últimos 12 meses: DY de 8%. Se o preço cair para R$ 32, o DY passa a 10% sem a empresa ter pago um centavo a mais."
   },
   {
    "t": "Drawdown",
@@ -201,7 +224,8 @@
    "f": [
     "Diário de Trades",
     "futuros.html#diario"
-   ]
+   ],
+   "x": "A conta sai de R$ 10.000, chega a R$ 12.000 e recua para R$ 9.600: drawdown de R$ 2.400, ou 20% desde o pico. Para voltar ao topo é preciso ganhar 25%."
   },
   {
    "t": "DV01",
@@ -210,19 +234,22 @@
    "f": [
     "Curva de juros",
     "macro.html#juros"
-   ]
+   ],
+   "x": "Uma posição com DV01 de R$ 30 ganha ou perde R$ 30 a cada 0,01 ponto de variação na taxa. Se o DI sobe 0,20 ponto num dia de estresse, o resultado muda em R$ 600."
   },
   {
    "t": "DXY",
    "c": "juros",
    "d": "Índice que mede o dólar contra uma cesta de moedas fortes (euro, iene, libra e outras). DXY subindo indica dólar forte no mundo e costuma pressionar o real para cima, ou seja, WDO em alta.",
-   "f": null
+   "f": null,
+   "x": "O DXY sobe de 100 para 101 (alta de 1%) depois de um payroll forte. Se o real acompanhar o movimento global, o dólar aqui também sobe perto de 1%: de R$ 5,40 para R$ 5,45, cerca de 54 pontos no WDO."
   },
   {
    "t": "FGC",
    "c": "juros",
    "d": "Fundo Garantidor de Créditos: protege depósitos e títulos bancários como CDB, LCI e LCA até um limite por CPF e por instituição em caso de quebra do banco.",
-   "f": null
+   "f": null,
+   "x": "Você tem um CDB em um banco médio que quebra. O FGC devolve o valor aplicado mais os juros até a data da quebra, respeitando o limite por CPF e por instituição. Ações e fundos de investimento não têm essa cobertura."
   },
   {
    "t": "Focus",
@@ -231,7 +258,8 @@
    "f": [
     "Boletim Focus",
     "macro.html#juros"
-   ]
+   ],
+   "x": "O Focus de segunda-feira mostra a mediana do IPCA do ano subindo de 4,50% para 4,60%. Uma revisão assim, repetida por semanas seguidas, costuma empurrar os juros curtos para cima."
   },
   {
    "t": "FOMC",
@@ -240,13 +268,15 @@
    "f": [
     "Calendário econômico",
     "index.html#cal-wrap"
-   ]
+   ],
+   "x": "O Fed mantém os juros, mas o comunicado sinaliza cortes à frente: os juros americanos caem, o DXY recua e o WDO tende a cair. A decisão sai às 14h de Washington."
   },
   {
    "t": "Gap",
    "c": "futuros",
    "d": "Salto de preço entre um fechamento e a abertura seguinte, sem negócios no meio. Acontece quando sai notícia relevante com o mercado fechado, e pode fazer um stop ser executado bem pior que o planejado.",
-   "f": null
+   "f": null,
+   "x": "O WIN fecha a 132.000 com stop de venda em 131.700. Sai uma notícia ruim à noite e o mercado abre a 131.200: o stop é executado perto de 131.200, 500 pontos pior que o planejado (R$ 100 a mais de perda por contrato)."
   },
   {
    "t": "Ibovespa",
@@ -255,7 +285,8 @@
    "f": [
     "Mapa da bolsa",
     "index.html#mapa"
-   ]
+   ],
+   "x": "O Ibovespa a 130.000 pontos sobe 1% e vai a 131.300. Para quem tem 1 WIN comprado, esses 1.300 pontos valem R$ 260."
   },
   {
    "t": "Inclinação da curva",
@@ -264,7 +295,8 @@
    "f": [
     "Curva do Tesouro hoje",
     "macro.html#curva"
-   ]
+   ],
+   "x": "DI de dois anos a 13,0% e de dez anos a 13,8%: inclinação de 0,80 ponto. Se o longo sobe para 14,2% com o curto parado, a inclinação vai a 1,20 ponto, sinal de mais prêmio de risco."
   },
   {
    "t": "IPCA",
@@ -273,7 +305,8 @@
    "f": [
     "IPCA e juro real",
     "index.html#hero"
-   ]
+   ],
+   "x": "IPCA de 0,50% no mês com consenso de 0,35%: os DIs curtos sobem, porque diminui a chance de corte da Selic. Em 12 meses, um IPCA de 4,6% está acima do teto de 4,5% da meta de 3%."
   },
   {
    "t": "IRRF (dedo-duro)",
@@ -282,13 +315,15 @@
    "f": [
     "Calculadora de IR",
     "futuros.html#risco"
-   ]
+   ],
+   "x": "Lucro de R$ 500 em day trade num dia: a corretora retém R$ 5 (1%). No fim do mês, esse valor é descontado do DARF."
   },
   {
    "t": "JCP (juros sobre capital próprio)",
    "c": "impostos",
    "d": "Forma de a empresa distribuir lucro ao acionista que é dedutível para ela. Para o investidor, o imposto já vem retido na fonte (17,5% pelas regras de 2026).",
-   "f": null
+   "f": null,
+   "x": "A empresa anuncia JCP de R$ 1,00 por ação. Caem R$ 0,825 na conta: os R$ 0,175 de imposto (17,5%) ficam retidos na fonte."
   },
   {
    "t": "Juro real",
@@ -297,7 +332,8 @@
    "f": [
     "Juro real hoje",
     "index.html#hero"
-   ]
+   ],
+   "x": "Selic de 13,75% e inflação de 4,6% em 12 meses: 1,1375 ÷ 1,046 − 1 = 8,7% de juro real ao ano."
   },
   {
    "t": "Leilão",
@@ -306,19 +342,22 @@
    "f": [
     "Especificações dos contratos",
     "futuros.html#specs"
-   ]
+   ],
+   "x": "Antes da abertura, compradores e vendedores enviam ordens sem que haja negócios. No horário de abertura, o sistema calcula o preço que casa o maior volume, e todos os negócios do leilão saem a esse preço único."
   },
   {
    "t": "Liquidez",
    "c": "futuros",
    "d": "Facilidade de comprar ou vender sem mexer muito no preço. Contratos líquidos, como o WIN e o WDO vigentes, têm muitos negócios e spread pequeno.",
-   "f": null
+   "f": null,
+   "x": "No WIN vigente o spread costuma ser de 1 tick (5 pontos). Num contrato de vencimento distante, com poucos negócios, pode haver dezenas de pontos entre a compra e a venda: entrar e sair custa mais."
   },
   {
    "t": "Marcação a mercado",
    "c": "juros",
    "d": "Atualização diária do valor de um título ou posição pelo preço de mercado. Explica por que um título público pode render negativo em um mês em que os juros sobem.",
-   "f": null
+   "f": null,
+   "x": "Você compra um prefixado a 13% ao ano. Um mês depois o mesmo título é negociado a 14%: o preço dele caiu, e o extrato mostra rentabilidade negativa no mês. Levando até o vencimento, você recebe os 13% contratados."
   },
   {
    "t": "Margem de garantia",
@@ -327,7 +366,8 @@
    "f": [
     "Especificações dos contratos",
     "futuros.html#specs"
-   ]
+   ],
+   "x": "Se a corretora exige R$ 150 por mini índice no day trade, 3 contratos bloqueiam R$ 450. Quando a perda aberta se aproxima desse valor, a corretora pode encerrar a posição por conta própria."
   },
   {
    "t": "Mini dólar (WDO)",
@@ -336,7 +376,8 @@
    "f": [
     "Contrato vigente e rolagem",
     "futuros.html#placar"
-   ]
+   ],
+   "x": "Cada ponto do WDO vale R$ 10 por contrato. Compra a 5.400,0 e venda a 5.412,0 com 2 contratos: 12 pontos × R$ 10 × 2 = R$ 240."
   },
   {
    "t": "Mini índice (WIN)",
@@ -345,19 +386,22 @@
    "f": [
     "Contrato vigente e rolagem",
     "futuros.html#placar"
-   ]
+   ],
+   "x": "Compra de 3 contratos a 132.000 e venda a 132.250: 250 pontos × R$ 0,20 × 3 = R$ 150."
   },
   {
    "t": "P/L (preço/lucro)",
    "c": "acoes",
    "d": "Preço da ação dividido pelo lucro por ação. Indica em quantos anos o lucro atual pagaria o preço; só faz sentido comparar empresas parecidas.",
-   "f": null
+   "f": null,
+   "x": "Ação a R$ 40 com lucro por ação de R$ 5 nos últimos 12 meses: P/L de 8. Um banco com P/L 8 e uma empresa de tecnologia com P/L 30 não se comparam diretamente."
   },
   {
    "t": "P/VP (preço/valor patrimonial)",
    "c": "acoes",
    "d": "Preço da ação dividido pelo patrimônio líquido por ação. Abaixo de 1, a bolsa avalia a empresa por menos que o patrimônio contábil.",
-   "f": null
+   "f": null,
+   "x": "Ação a R$ 18 com patrimônio de R$ 20 por ação: P/VP de 0,9."
   },
   {
    "t": "Payoff",
@@ -366,7 +410,8 @@
    "f": [
     "Diário de Trades",
     "futuros.html#diario"
-   ]
+   ],
+   "x": "Ganho médio de R$ 300 e perda média de R$ 150: payoff 2. Com 40% de acerto, a cada 10 operações são 4 × R$ 300 − 6 × R$ 150 = R$ 300 de lucro."
   },
   {
    "t": "Payroll",
@@ -375,13 +420,15 @@
    "f": [
     "Calendário econômico",
     "index.html#cal-wrap"
-   ]
+   ],
+   "x": "Consenso de 150 mil vagas e o payroll mostra 250 mil: economia forte, menos chance de corte de juros nos EUA, dólar mais forte no mundo. O dado sai às 8h30 de Nova York, e os primeiros minutos costumam ter spread largo no WDO."
   },
   {
    "t": "Preço de ajuste",
    "c": "futuros",
    "d": "Preço de referência calculado pela B3 no fim de cada pregão para liquidar o ajuste diário dos contratos futuros.",
-   "f": null
+   "f": null,
+   "x": "O WIN oscila o dia todo e o preço de ajuste é definido em 132.150. Quem está comprado desde 131.900 recebe 250 pontos × R$ 0,20 = R$ 50 de ajuste por contrato."
   },
   {
    "t": "Prêmio de risco",
@@ -390,7 +437,8 @@
    "f": [
     "Inflação implícita",
     "macro.html#curva"
-   ]
+   ],
+   "x": "Se a Selic esperada para os próximos dez anos é de 11% em média e o DI de dez anos negocia a 13,5%, os 2,5 pontos de diferença são o prêmio pelo risco de emprestar por tanto tempo."
   },
   {
    "t": "PTAX",
@@ -399,13 +447,15 @@
    "f": [
     "Dólar e PTAX hoje",
     "index.html#hero"
-   ]
+   ],
+   "x": "O WDO de dezembro é liquidado pela PTAX do último dia útil de novembro. Se você carrega 1 contrato comprado a 5.400 e a PTAX sai a 5,4250, a liquidação é a 5.425 pontos: ganho de 25 pontos, R$ 250."
   },
   {
    "t": "Put",
    "c": "opcoes",
    "d": "Opção de venda: dá ao titular o direito de vender o ativo pelo preço de exercício até o vencimento. É usada como seguro contra quedas.",
-   "f": null
+   "f": null,
+   "x": "Ação a R$ 30. Você paga R$ 0,80 por uma put de strike R$ 28. Se a ação cair para R$ 24, a put vale R$ 4,00: ganho líquido de R$ 3,20 por ação, que compensa parte da queda da carteira."
   },
   {
    "t": "Risk-on e risk-off",
@@ -414,13 +464,15 @@
    "f": [
     "Regimes de risco",
     "macro.html#regimes"
-   ]
+   ],
+   "x": "Dia de risk-off: as bolsas americanas caem 2%, o DXY e o ouro sobem. No Brasil, o padrão típico é WIN em queda, WDO em alta e juros longos subindo."
   },
   {
    "t": "ROE",
    "c": "acoes",
    "d": "Retorno sobre o patrimônio: lucro dividido pelo patrimônio líquido. Mede quanto a empresa gera de lucro com o capital dos acionistas.",
-   "f": null
+   "f": null,
+   "x": "Lucro de R$ 2 bilhões sobre patrimônio de R$ 10 bilhões: ROE de 20%."
   },
   {
    "t": "Rolagem",
@@ -429,7 +481,8 @@
    "f": [
     "Placar de vencimento",
     "futuros.html#placar"
-   ]
+   ],
+   "x": "O WDO vence no primeiro dia útil do mês. Quem quer manter a posição vende o contrato que vai vencer e compra o do mês seguinte alguns dias antes, quando a liquidez já migrou."
   },
   {
    "t": "Selic",
@@ -438,19 +491,22 @@
    "f": [
     "Ciclo da Selic",
     "macro.html#juros"
-   ]
+   ],
+   "x": "Com a Selic a 13,75%, um título pós-fixado rende perto disso ao ano e o crédito fica caro. Se o Copom corta para 13,50%, a renda fixa pós-fixada rende menos e a bolsa tende a ganhar atratividade."
   },
   {
    "t": "Slippage",
    "c": "risco",
    "d": "Diferença entre o preço esperado de uma ordem e o preço em que ela foi executada. Aumenta em momentos de volatilidade, como na divulgação de dados fortes, e em ativos pouco líquidos.",
-   "f": null
+   "f": null,
+   "x": "Stop de venda no WDO em 5.400,0 durante o payroll. O preço salta e a ordem é executada a 5.397,5: 2,5 pontos de slippage, R$ 25 por contrato além da perda planejada."
   },
   {
    "t": "Spread",
    "c": "futuros",
    "d": "Diferença entre o melhor preço de compra e o melhor preço de venda no book. Spread largo encarece entrar e sair da operação.",
-   "f": null
+   "f": null,
+   "x": "WIN com compra a 132.000 e venda a 132.005: spread de 5 pontos (R$ 1,00 por contrato). Quem compra a mercado e vende a mercado em seguida perde esse valor, além dos custos."
   },
   {
    "t": "Stop loss",
@@ -459,7 +515,8 @@
    "f": [
     "Calculadora de risco",
     "futuros.html#risco"
-   ]
+   ],
+   "x": "Compra de 2 WIN a 132.000 com stop em 131.850: perda máxima planejada de 150 pontos × R$ 0,20 × 2 = R$ 60."
   },
   {
    "t": "Surpresa (dado econômico)",
@@ -468,13 +525,15 @@
    "f": [
     "Calendário com alertas",
     "index.html#cal-wrap"
-   ]
+   ],
+   "x": "Payroll com consenso de 150 mil vagas: 155 mil não é surpresa; 250 mil é. No segundo caso, o WDO pode andar dezenas de pontos em um minuto."
   },
   {
    "t": "Tag along",
    "c": "acoes",
    "d": "Direito do acionista minoritário de vender suas ações pelo mesmo preço (ou por parte dele) pago ao controlador em caso de venda do controle da empresa.",
-   "f": null
+   "f": null,
+   "x": "O controlador vende suas ações a R$ 50. Com tag along de 100%, o minoritário pode vender pelo mesmo preço; com tag along de 80%, por R$ 40."
   },
   {
    "t": "Taxa de acerto",
@@ -483,7 +542,8 @@
    "f": [
     "Diário de Trades",
     "futuros.html#diario"
-   ]
+   ],
+   "x": "60% de acerto com ganho médio de R$ 100 e perda média de R$ 200: em 10 operações, 6 × R$ 100 − 4 × R$ 200 = prejuízo de R$ 200. Acertar mais da metade não bastou."
   },
   {
    "t": "Tesouro IPCA+",
@@ -492,7 +552,8 @@
    "f": [
     "Curva IPCA+",
     "macro.html#curva"
-   ]
+   ],
+   "x": "Título comprado a IPCA + 7% ao ano. Se a inflação do ano for 4,5%, o rendimento bruto é 1,045 × 1,07 − 1 = 11,8%."
   },
   {
    "t": "Tesouro Prefixado",
@@ -501,7 +562,8 @@
    "f": [
     "Curva prefixada",
     "macro.html#curva"
-   ]
+   ],
+   "x": "Título comprado a 13% ao ano: ele rende 13% ao ano até o vencimento, não importa o que aconteça com a Selic no caminho. Quem vende antes recebe o preço de mercado do dia, que pode ser maior ou menor."
   },
   {
    "t": "Tick",
@@ -510,7 +572,8 @@
    "f": [
     "Especificações dos contratos",
     "futuros.html#specs"
-   ]
+   ],
+   "x": "WIN de 132.000 para 132.005 é 1 tick: R$ 1,00 por contrato. WDO de 5.400,0 para 5.400,5 é 1 tick: R$ 5,00 por contrato."
   },
   {
    "t": "Times & Trades",
@@ -519,19 +582,22 @@
    "f": [
     "Especificações dos contratos",
     "futuros.html#specs"
-   ]
+   ],
+   "x": "Uma linha do registro: 10:31:07 · 132.005 · 40 contratos · agressor comprador. Várias linhas grandes do mesmo lado em sequência mostram quem está com pressa."
   },
   {
    "t": "Treasury 10 anos",
    "c": "juros",
    "d": "Taxa do título de 10 anos do governo americano, a principal referência de juro longo do mundo. Quando sobe, encarece o dinheiro global e costuma pressionar bolsas e moedas emergentes.",
-   "f": null
+   "f": null,
+   "x": "A taxa sobe de 4,2% para 4,5% em poucos dias. Investidores globais passam a exigir mais retorno de mercados emergentes: o padrão típico é dólar mais forte aqui e juros longos brasileiros em alta."
   },
   {
    "t": "Volatilidade",
    "c": "risco",
    "d": "Intensidade das oscilações de preço. Mais volatilidade significa movimentos maiores para os dois lados, o que exige stops mais largos ou posições menores.",
-   "f": null
+   "f": null,
+   "x": "Se o WIN oscila em média 1.500 pontos por dia, um stop de 100 pontos é atingido por ruído. Num dia de 3.000 pontos, manter o mesmo risco em reais pede metade dos contratos com um stop duas vezes maior."
   },
   {
    "t": "VWAP",
@@ -540,7 +606,8 @@
    "f": [
     "Especificações dos contratos",
     "futuros.html#specs"
-   ]
+   ],
+   "x": "Negócios do dia: 100 contratos a 132.000 e 300 a 132.200. VWAP = (100 × 132.000 + 300 × 132.200) ÷ 400 = 132.150."
   }
  ]
 }

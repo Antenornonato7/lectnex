@@ -1,4 +1,5 @@
-"""Gera glossario.html (estático, indexável) a partir de data/glossario.json.
+"""Gera glossario.html e uma página por termo (glossario/<termo>.html), estáticas e indexáveis, a partir de data/glossario.json.
+Cada termo tem: t (termo), c (categoria), d (definição), x (exemplo com números), f ([rótulo, link] da ferramenta).
 Rode: python3 scripts/glossario.py   (o HTML sai pronto para o Google: conteúdo no próprio arquivo, JSON-LD DefinedTermSet)."""
 import html, json, re, unicodedata
 
@@ -24,7 +25,7 @@ desc = f'{len(termos)} termos do mercado financeiro explicados em português sim
 ld = {'@context': 'https://schema.org', '@graph': [
     {'@type': 'Organization', '@id': BASE + '#org', 'name': 'Lectnex', 'url': BASE, 'logo': BASE + 'assets/brand/icon-512.png'},
     {'@type': 'DefinedTermSet', '@id': BASE + 'glossario.html#set', 'name': 'Glossário do Trader Lectnex', 'url': BASE + 'glossario.html', 'inLanguage': 'pt-BR',
-     'hasDefinedTerm': [{'@type': 'DefinedTerm', 'name': x['t'], 'description': x['d'], 'url': BASE + 'glossario.html#' + slug(x['t']), 'inDefinedTermSet': BASE + 'glossario.html#set'} for x in termos]}]}
+     'hasDefinedTerm': [{'@type': 'DefinedTerm', 'name': x['t'], 'description': x['d'], 'url': BASE + 'glossario/' + slug(x['t']) + '.html', 'inDefinedTermSet': BASE + 'glossario.html#set'} for x in termos]}]}
 
 letras = sorted({letra(x['t']) for x in termos})
 artigos = []
@@ -32,8 +33,8 @@ for x in termos:
     s = slug(x['t'])
     tool = f'<a href="{e(x["f"][1])}" class="inline-flex items-center gap-1.5 mt-3 font-mono text-[11px] font-bold text-lect-teal hover:underline"><i class="ph-bold ph-arrow-square-out"></i>Ver na prática: {e(x["f"][0])}</a>' if x.get('f') else ''
     artigos.append(f'''        <article id="{s}" data-cat="{x['c']}" data-q="{e(unicodedata.normalize('NFD', (x['t'] + ' ' + x['d']).lower()).encode('ascii', 'ignore').decode())}" class="gl-item term-panel p-5 scroll-mt-28">
-            <div class="flex items-start justify-between gap-3"><h2 class="font-display text-lg font-bold leading-snug"><a href="#{s}" class="hover:text-lect-teal">{e(x['t'])}</a></h2><span class="shrink-0 px-2 py-0.5 font-mono text-[10px] bg-slate-100 dark:bg-lect-bgDark text-slate-500">{e(CAT[x['c']])}</span></div>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">{e(x['d'])}</p>{tool}
+            <div class="flex items-start justify-between gap-3"><h2 class="font-display text-lg font-bold leading-snug"><a href="glossario/{s}.html" class="hover:text-lect-teal">{e(x['t'])}</a></h2><span class="shrink-0 px-2 py-0.5 font-mono text-[10px] bg-slate-100 dark:bg-lect-bgDark text-slate-500">{e(CAT[x['c']])}</span></div>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">{e(x['d'])}</p>{tool}{f'<a href="glossario/{s}.html" class="block mt-2 font-mono text-[11px] text-slate-500 hover:text-lect-teal">Exemplo com números →</a>' if x.get('x') else ''}
         </article>''')
 
 pagina = f'''<!DOCTYPE html>
@@ -131,3 +132,79 @@ pagina = f'''<!DOCTYPE html>
 '''
 open('glossario.html', 'w', encoding='utf-8').write(pagina)
 print(f'glossario.html: {len(termos)} termos')
+
+
+# ----------------------------------------------------------------------------- uma página por termo
+import datetime as dt, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from semana import foot, head
+
+IMG = BASE + 'assets/brand/og-academia.jpg'
+os.makedirs('glossario', exist_ok=True)
+mudou = []
+
+
+def curto(t):
+    """'Mini índice (WIN)' → 'mini índice (WIN)' no meio de frase; siglas ficam como estão."""
+    return t if t[:2].isupper() or t.split()[0].isupper() else t[0].lower() + t[1:]
+
+
+for i, x in enumerate(termos):
+    s = slug(x['t'])
+    canon = f'{BASE}glossario/{s}.html'
+    tit = f"{x['t']}: o que é, com exemplo prático | Lectnex"
+    dsc = (x['d'] if len(x['d']) <= 155 else x['d'][:152].rsplit(' ', 1)[0] + '…')
+    mesma = [y for y in termos if y['c'] == x['c'] and y is not x]
+    k = next((j for j, y in enumerate(mesma) if unicodedata.normalize('NFD', y['t'].lower()) > unicodedata.normalize('NFD', x['t'].lower())), 0)
+    rel = (mesma[k:] + mesma[:k])[:8]
+    ant, prox = termos[i - 1], termos[(i + 1) % len(termos)]
+    ld = [{'@type': 'DefinedTerm', 'name': x['t'], 'description': x['d'], 'url': canon, 'inLanguage': 'pt-BR',
+           'inDefinedTermSet': {'@type': 'DefinedTermSet', '@id': BASE + 'glossario.html#set', 'name': 'Glossário do Trader Lectnex', 'url': BASE + 'glossario.html'}},
+          {'@type': 'BreadcrumbList', 'itemListElement': [
+              {'@type': 'ListItem', 'position': 1, 'name': 'Glossário do Trader', 'item': BASE + 'glossario.html'},
+              {'@type': 'ListItem', 'position': 2, 'name': x['t'], 'item': canon}]}]
+    exemplo = f'''<section class="term-panel p-5">
+                <h2 class="font-mono text-[10px] font-bold uppercase tracking-wider text-lect-orange">NA PRÁTICA · EXEMPLO COM NÚMEROS</h2>
+                <p class="mt-2 text-sm leading-relaxed">{e(x['x'])}</p>
+                <p class="mt-2 text-[11px] text-slate-500">Números ilustrativos, escolhidos para facilitar a conta.</p>
+            </section>''' if x.get('x') else ''
+    tool = f'''<a href="{e(x['f'][1])}" class="flex items-center justify-between gap-3 term-panel p-4 hover:border-lect-teal"><span><span class="term-label block">VEJA FUNCIONANDO COM DADOS DE HOJE</span><strong class="font-display">{e(x['f'][0])}</strong></span><i class="ph-bold ph-arrow-right text-lect-teal text-lg"></i></a>''' if x.get('f') else ''
+    html_pg = (head(tit, dsc, canon, ld, IMG).replace('data-page="semana"', 'data-page="glossario"').replace('scripts/semana.py', 'scripts/glossario.py (data/glossario.json)') + f'''
+        <section class="border-b border-slate-300 dark:border-lect-borderDark grid-bg"><div class="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+            <nav class="font-mono text-[11px] text-slate-500"><a href="glossario.html" class="hover:text-lect-teal">Glossário do Trader</a> / {e(CAT[x['c']])}</nav>
+            <span class="term-label text-lect-teal font-bold block mt-3">O QUE É</span>
+            <h1 class="font-display text-3xl sm:text-4xl font-bold tracking-tight mt-1">{e(x['t'])}</h1>
+            <p class="mt-4 text-base text-slate-700 dark:text-slate-200 leading-relaxed">{e(x['d'])}</p>
+        </div></section>
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 space-y-5">
+            {exemplo}
+            {tool}
+            <section><h2 class="term-label font-bold mb-2">TERMOS RELACIONADOS · {e(CAT[x['c']]).upper()}</h2>
+                <div class="flex flex-wrap gap-1.5">{''.join(f'<a href="glossario/{slug(y["t"])}.html" class="px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal text-xs">{e(y["t"])}</a>' for y in rel)}</div></section>
+            <nav class="flex justify-between gap-3 font-mono text-xs pt-2"><a href="glossario/{slug(ant['t'])}.html" class="hover:text-lect-teal">← {e(ant['t'])}</a><a href="glossario.html" class="hover:text-lect-teal">todos os termos</a><a href="glossario/{slug(prox['t'])}.html" class="hover:text-lect-teal text-right">{e(prox['t'])} →</a></nav>
+            <div class="hidden" data-lx-news="chamada" data-titulo="Veja {e(curto(x['t']))} no mercado de verdade, todo dia de manhã."></div>
+            <p class="text-[11px] text-slate-500">Conteúdo educacional. Não é recomendação de investimento. Regras de tributação de 2026; confirme sempre com a Receita Federal ou seu contador.</p>
+        </div>
+''' + foot())
+    arq = f'glossario/{s}.html'
+    velho = open(arq, encoding='utf-8').read() if os.path.exists(arq) else ''
+    limpa = lambda t: re.sub(r'\?v=[0-9a-z]+', '', t)
+    if limpa(html_pg) != limpa(velho):
+        mudou.append(arq)
+    if html_pg != velho:
+        open(arq, 'w', encoding='utf-8').write(html_pg)
+
+validas = {slug(x['t']) + '.html' for x in termos}
+for arq in os.listdir('glossario'):
+    if arq.endswith('.html') and arq not in validas:
+        os.remove('glossario/' + arq)
+
+# sitemap: mantém a data das páginas que não mudaram
+sm = open('sitemap.xml', encoding='utf-8').read()
+datas = dict(re.findall(r'<loc>' + re.escape(BASE) + r'(glossario/[^<]*)</loc><lastmod>([^<]+)</lastmod>', sm))
+sm = re.sub(r'\s*<url><loc>[^<]*/glossario/[^<]*</loc>.*?</url>', '', sm)
+hoje = dt.date.today().isoformat()
+novas = '\n' + ''.join(f'\n  <url><loc>{BASE}glossario/{slug(x["t"])}.html</loc><lastmod>{hoje if f"glossario/{slug(x["t"])}.html" in mudou else datas.get(f"glossario/{slug(x["t"])}.html", hoje)}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>' for x in termos)
+open('sitemap.xml', 'w', encoding='utf-8').write(sm.replace('</urlset>', novas + '\n</urlset>'))
+print(f'glossario/: {len(termos)} páginas; alteradas: {len(mudou)}')
+print('PAGINAS=' + ' '.join(mudou))

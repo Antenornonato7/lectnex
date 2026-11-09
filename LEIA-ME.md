@@ -102,7 +102,7 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 
 ## Glossário do Trader (glossario.html)
 
-- Página estática gerada por `python3 scripts/glossario.py` a partir de `data/glossario.json` (termo, categoria, definição, link para ferramenta). Para incluir ou corrigir termos, edite o JSON e rode o script. JSON-LD DefinedTermSet para o Google.
+- Página estática gerada por `python3 scripts/glossario.py` a partir de `data/glossario.json` (termo, categoria, definição, exemplo com números no campo `x`, link para ferramenta). O mesmo script gera uma página por termo em `glossario/<termo>.html` e atualiza o sitemap. Para incluir ou corrigir termos, edite o JSON e rode o script. JSON-LD DefinedTermSet para o Google.
 
 ## Agenda da semana (semana/)
 
