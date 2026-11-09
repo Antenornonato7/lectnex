@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T12:48-03:00",
+  "atualizado_em": "2026-11-09T12:50-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -127,11 +127,11 @@
     ],
     [
      "12:30",
-     170457.0
+     170390.0
     ],
     [
-     "12:33",
-     170361.0
+     "12:35",
+     170378.0
     ]
    ]
   },
@@ -320,11 +320,11 @@
     ],
     [
      "12:45",
-     5.5263
+     5.5243
     ],
     [
-     "12:48",
-     5.5256
+     "12:50",
+     5.5243
     ]
    ]
   },
@@ -630,7 +630,7 @@
     "tickers": [
      "CSNA3"
     ],
-    "ibov30": 0.22,
+    "ibov30": 0.18,
     "dolar30": 0.08
    },
    {
@@ -646,7 +646,7 @@
     "tickers": [
      "PRIO3"
     ],
-    "ibov30": 0.16,
+    "ibov30": 0.17,
     "dolar30": 0.15
    },
    {
@@ -676,7 +676,7 @@
      "ALPA4"
     ],
     "ibov30": null,
-    "dolar30": 0.19
+    "dolar30": 0.17
    }
   ]
  },
@@ -1382,7 +1382,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T12:48-03:00",
+ "atualizado_em": "2026-11-09T12:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1396,6 +1396,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html",
+   "publicado": "2026-11-09T12:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Alpargatas (ALPA4) sobe mais de 6% após balanço acima do esperado e anima analistas",
    "fonte": "InfoMoney",
@@ -1558,18 +1570,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html",
-   "publicado": "2026-11-09T10:13-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
