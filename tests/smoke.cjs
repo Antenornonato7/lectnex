@@ -11,7 +11,7 @@ const sub = d => existsSync(d) ? readdirSync(d).filter(f => f.endsWith('.html'))
 // acoes/: 217 páginas do mesmo molde; testa o índice e uma amostra
 const PAGINAS = [...raiz, ...sub('semana'), ...sub('leitura'), ...sub('acoes').filter(f => /\/(index|petr4|vale3|taee11)\.html$/.test(f)),
     ...sub('glossario').filter(f => /\/(rolagem|dv01|mini-indice-win|risk-on-e-risk-off)\.html$/.test(f))];
-const MOBILE = ['index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'status.html', 'glossario.html', 'comece.html', 'copom.html', 'links.html', 'hoje.html', 'manchetes.html', 'placar.html'];
+const MOBILE = ['vencimento-mini-indice-mini-dolar.html', 'calculadora-ir-day-trade.html', 'valor-do-ponto-mini-indice-mini-dolar.html', 'index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'status.html', 'glossario.html', 'comece.html', 'copom.html', 'links.html', 'hoje.html', 'manchetes.html', 'placar.html'];
 // Terceiros fora do nosso controle: bloqueados para o teste ser estável e rápido.
 const BLOQUEAR = /(tradingview|googleapis|gstatic|onesignal|googletagmanager|google-analytics|t\.me|instagram|tiktok|x\.com)/;
 const LIXO = /\b(undefined|NaN)\b|\[object Object\]/;
