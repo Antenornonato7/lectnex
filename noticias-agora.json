@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T18:00-03:00",
+  "atualizado_em": "2026-11-09T18:03-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171947.0
+     171990.0
     ]
    ]
   },
@@ -784,6 +784,10 @@
     ],
     [
      "18:00",
+     5.5137
+    ],
+    [
+     "18:03",
      5.5142
     ]
    ]
@@ -1381,7 +1385,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    }
   ]
  },
@@ -2283,7 +2287,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T18:00-03:00",
+ "atualizado_em": "2026-11-09T18:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2402,18 +2406,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Presidente do Paraguai nomeia novo presidente do Banco Central",
-   "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeEt4WFBtNXRwRjRpSmd5WS1hWWRodDNOMXZDR3hFNld1LURCSDZJN0dFM05OOUFabUk0TW9nMkJQNTdWNnFUeDlBUGstLTdzWFl6OTBielhPa0s2V25XbmdaWkRkTVMtaUdZc0FMbURmNmJKOElPWUtWMGZDNnoxTDRhREx3RVhRQjh0eW5kSFRaNFFXX2tlU1RJWFVXSHlkTlZhOC14OWJmOFJKVTJzZGFJRGc4M05BYlFIVWhlYjlWaW8?oc=5",
-   "publicado": "2026-11-09T16:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
