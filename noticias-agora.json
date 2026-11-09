@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T11:53-03:00",
+  "atualizado_em": "2026-11-09T11:55-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -83,11 +83,11 @@
     ],
     [
      "11:35",
-     169266.0
+     169225.0
     ],
     [
-     "11:38",
-     169273.0
+     "11:40",
+     169061.0
     ]
    ]
   },
@@ -232,11 +232,11 @@
     ],
     [
      "11:50",
-     5.5165
+     5.5143
     ],
     [
-     "11:53",
-     5.517
+     "11:55",
+     5.5161
     ]
    ]
   },
@@ -1066,11 +1066,6 @@
  ],
  "enviadas": [
   {
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRnJXZjZza3Q0bjBXLVo4d2VhSkdZYlYwN21GY1RaNU5wZmgtNW9IdXdfYlVVdDY2S2kxc3NGUFNRTzNQS1ZfVFloSTRfS3NqS2JSb05QRVZpcHRUVFo5dmNMbzRvbXBkVlZxOUNmdngyWTlSblJIUEZlQnAtbDBtY1d5eU9xbjdzYTc3bllWaG9wSUpYR2pIY3A4MWF4SXVXUVB0UDRaU3Y3cnF1a1hGaTFB?oc=5",
-   "titulo": "Inflação, ata do Copom: os indicadores que movimentam os mercados na próxima semana",
-   "em": "2026-11-08T14:55:31+00:00"
-  },
-  {
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQd3hGMGpTVkFhbTZabHkzaDBfSERNa0R4UWdUcGJ1c2JMZkp1REdpUUJueGlULV9oaXppTG45czVPb2owSm50S0pJeGVwd3hwRVYtTVY3YmNLTVZuMkVJMW1UeHJoeVFrQmkyTklEUEFYWG1LMnZfdTZ5SWN0VExoQl9HSFI2NWJJdmFTUkRSS0tNdmlhUlhnUFRDQWZUWS1PMS1QSWR5cXVMWDFpb0t0TnIwZU9iQ0JvVFc2NmFBcDZJMEF3?oc=5",
    "titulo": "Loyola: Postura do Banco Central sobre Selic foi correta e cautelosa",
    "em": "2026-11-08T17:08:13+00:00"
@@ -1111,7 +1106,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T11:53-03:00",
+ "atualizado_em": "2026-11-09T11:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1131,6 +1126,18 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/china-prorroga-tregua-comercial-com-os-eua-por-mais-dois-meses.shtml",
    "publicado": "2026-11-09T11:26-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petroleiras são maiores quedas do Ibov nesta 2º acompanhando movimento do petróleo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMUJReGJvMGF3NFE1WFAtZWZkWkpZMVpKamNzX2c5VlJVOVpWaDlrSmNOWEpDa3VMT0hjN0VPT1ZFaTNnYlRtUFdLa0EweVM4cFBhNllXTlA0X2RMd3luZkRFOGZ2Ul9ScUx0YlNfSkNUdmR2VzNpaTdteG5CMDNud3RETHNkS3VVSmR5cGNZR1R2akpFbk51cWpITG52ZUJIOUdIQlVYZldXREJXSFJvakk2OXRRRTJlTmRaaFB30gHDAUFVX3lxTE51V1dGd3oxVGdUc1RxaUItb1F3SEoxejFNT084SXZzVEdnWWRhSktCSWlWbWhDTElKeUNneGVTNUs0RHlsbWs3ajZkNDFqSlNad3pOU1B1cWFFdlpSMjBtMjM2WTZjVjJQS1BKM2xjLVJ0YS1QSWFDRUUwQ0NoMTlaeUFrWVkyd2prZ19Zd093VFMxajV4VnVMcWIyM2phbFZoampMQnFDVTBhT09rdWZtZVROMDBvR2dlcU5kVnI4TUlaNA?oc=5",
+   "publicado": "2026-11-09T11:23-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1290,17 +1297,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/09/restaurant-chains-better-food-diners.html",
    "publicado": "2026-11-09T09:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Economistas creem que juros serão mantidos em 13,75% neste ano, aponta Focus",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-creem-que-juros-serao-mantidos-em-1375-neste-ano-aponta-focus.shtml",
-   "publicado": "2026-11-09T08:55-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
