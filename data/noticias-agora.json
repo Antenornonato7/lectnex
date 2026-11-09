@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T17:08-03:00",
+  "atualizado_em": "2026-11-09T17:38-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     171666.0
+     171586.0
+    ],
+    [
+     "16:55",
+     171641.0
+    ],
+    [
+     "17:00",
+     171819.0
     ]
    ]
   },
@@ -732,11 +740,35 @@
     ],
     [
      "17:05",
-     5.5037
+     5.5025
     ],
     [
-     "17:07",
-     5.5042
+     "17:10",
+     5.5045
+    ],
+    [
+     "17:15",
+     5.506
+    ],
+    [
+     "17:20",
+     5.5093
+    ],
+    [
+     "17:25",
+     5.511
+    ],
+    [
+     "17:30",
+     5.5109
+    ],
+    [
+     "17:35",
+     5.5122
+    ],
+    [
+     "17:38",
+     5.5122
     ]
    ]
   },
@@ -1288,6 +1320,35 @@
     "ativos": [
      "WDO",
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.01
+   },
+   {
+    "hora": "17:13",
+    "titulo": "Ex-vice presidente da Vale irá para a CSN",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-vice-presidente-da-vale-ira-para-a-csn.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "VALE3"
+    ],
+    "ibov30": null,
+    "dolar30": 0.14
+   },
+   {
+    "hora": "17:22",
+    "titulo": "Dólar termina perto de estabilidade com preços do petróleo e políticas econômicas no radar",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWXEtdlhoUDlfbnpjZ09uMHduQXRBSGl1WHF0OGo1WVZzMUZrZUdpdmg4VXEzQno2dm5NaC16amZYUEhYYVhUNDl4V2RpMnZoUjlUVVJlWGN5bFhYWXBQN1Y5cmZPUE9rcWtRR2FCSHd3bGlwcVMzMXNpWUNSbTRxREZQTlVUdGVnWjg2eVpLZzdQTjBmR05SSWJsOFRCV3pvRDVRU2l6WHItMU80eGJab0V5UVRDOXdOeWZjN3dhUld1OGhVUmVramdBZGc5dEhMbXBmSDMtSE1uQm1nZEZtWFZB0gHwAUFVX3lxTE8zRFBpdzlTNlBWZXBtaEhGNmpCSFBfTm51UjNBOTZEeFltWG1qR2xpRzRoMkFOT0UyZTBqSGI1QmhEM1dPV25zZEpTOW9SOEg4Y0ZPV3ZMbUNXeXlnUWtTRGduUkc3dDJjOXlIUEZaSzA2MTc3cFVEelN0MlhXbHhCX19mYWFhLWxmNjJDMlZnZ3ZtWHc3eDVVYjlwQzVLdXFxUmlPeDJYaWl6WVRvN01Xc2wxenpRd05neTZxaFVBb0VpclNYem9FQS15Z1kxUW9Vc3FESHktOGc1ZHNuQ2tPbkp4QUMwYlJNbTBDM1hoWA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -2128,6 +2189,31 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ex-vice presidente da Vale irá para a CSN",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-vice-presidente-da-vale-ira-para-a-csn.shtml",
+   "publicado": "2026-11-09T17:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Dólar termina perto de estabilidade com preços do petróleo e políticas econômicas no radar",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWXEtdlhoUDlfbnpjZ09uMHduQXRBSGl1WHF0OGo1WVZzMUZrZUdpdmg4VXEzQno2dm5NaC16amZYUEhYYVhUNDl4V2RpMnZoUjlUVVJlWGN5bFhYWXBQN1Y5cmZPUE9rcWtRR2FCSHd3bGlwcVMzMXNpWUNSbTRxREZQTlVUdGVnWjg2eVpLZzdQTjBmR05SSWJsOFRCV3pvRDVRU2l6WHItMU80eGJab0V5UVRDOXdOeWZjN3dhUld1OGhVUmVramdBZGc5dEhMbXBmSDMtSE1uQm1nZEZtWFZB0gHwAUFVX3lxTE8zRFBpdzlTNlBWZXBtaEhGNmpCSFBfTm51UjNBOTZEeFltWG1qR2xpRzRoMkFOT0UyZTBqSGI1QmhEM1dPV25zZEpTOW9SOEg4Y0ZPV3ZMbUNXeXlnUWtTRGduUkc3dDJjOXlIUEZaSzA2MTc3cFVEelN0MlhXbHhCX19mYWFhLWxmNjJDMlZnZ3ZtWHc3eDVVYjlwQzVLdXFxUmlPeDJYaWl6WVRvN01Xc2wxenpRd05neTZxaFVBb0VpclNYem9FQS15Z1kxUW9Vc3FESHktOGc1ZHNuQ2tPbkp4QUMwYlJNbTBDM1hoWA?oc=5",
+   "publicado": "2026-11-09T17:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2157,7 +2243,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T17:08-03:00",
+ "atualizado_em": "2026-11-09T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2167,9 +2253,59 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html",
+   "publicado": "2026-11-09T17:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar termina perto de estabilidade com preços do petróleo e políticas econômicas no radar",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWXEtdlhoUDlfbnpjZ09uMHduQXRBSGl1WHF0OGo1WVZzMUZrZUdpdmg4VXEzQno2dm5NaC16amZYUEhYYVhUNDl4V2RpMnZoUjlUVVJlWGN5bFhYWXBQN1Y5cmZPUE9rcWtRR2FCSHd3bGlwcVMzMXNpWUNSbTRxREZQTlVUdGVnWjg2eVpLZzdQTjBmR05SSWJsOFRCV3pvRDVRU2l6WHItMU80eGJab0V5UVRDOXdOeWZjN3dhUld1OGhVUmVramdBZGc5dEhMbXBmSDMtSE1uQm1nZEZtWFZB0gHwAUFVX3lxTE8zRFBpdzlTNlBWZXBtaEhGNmpCSFBfTm51UjNBOTZEeFltWG1qR2xpRzRoMkFOT0UyZTBqSGI1QmhEM1dPV25zZEpTOW9SOEg4Y0ZPV3ZMbUNXeXlnUWtTRGduUkc3dDJjOXlIUEZaSzA2MTc3cFVEelN0MlhXbHhCX19mYWFhLWxmNjJDMlZnZ3ZtWHc3eDVVYjlwQzVLdXFxUmlPeDJYaWl6WVRvN01Xc2wxenpRd05neTZxaFVBb0VpclNYem9FQS15Z1kxUW9Vc3FESHktOGc1ZHNuQ2tPbkp4QUMwYlJNbTBDM1hoWA?oc=5",
+   "publicado": "2026-11-09T17:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petróleo fecha em queda de 5% com falas de Trump e acordo de enriquecimento de urânio",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOa0xZOTFpRVpHTVZQYmlWendMTVNHM2RlY21scUU3MXc5T2Fia0x1ZXhfM1k3amVHX3Y0TEhlVVBxam51WG1PbUV5OVlDVEFrZUk2dVUwd0k1bTRNMVFhOTR6MkI1YnpNLURnaURreWctVVcyTF9vNjFJa1l4UEdJcjhKSURWckRxRWV2V9IBkgFBVV95cUxNT2wwRDkwdGNJSHdOOW1xZUlfWHR3M0YyU0tLTWEyZkRWbGJUM1prU2dQNG54cTdYUjBGM0tfVzBqY09DUnU0ZDF1R3NmQnhmMHdXOHViaVNYREFVa3JCMlZkRlJMb0ZhWXpVZ2xUd3B3cmpXeFFhSlI4MGh6WGx4TUVQSjFqVUtsVVROLU1lOG5hUQ?oc=5",
+   "publicado": "2026-11-09T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ex-vice presidente da Vale irá para a CSN",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-vice-presidente-da-vale-ira-para-a-csn.shtml",
+   "publicado": "2026-11-09T17:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
   {
    "titulo": "Ouro sobe com queda do dólar reduzindo temores de inflação",
    "fonte": "CNN Brasil",
@@ -2233,19 +2369,6 @@
    ]
   },
   {
-   "titulo": "Petrobras (PETR4) se preocupa sobre transição na reforma tributária, diz CEO",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUU11c2FjY0w0bVhpaDlzRHJYVnpBd1VYTGR3clNDRDdYTERxQkViTXdkMmcxUW5CYzBmVFR5OHdORGRBMGlzOTJwLVVVZnp5dkZsdHdramNhY1ptVXJ1N2g5cE43ZjRfOFdHOVBKSDFKVndEMEtGb0VvaEVMazJMeTNXRTFOZWxGZXFaY19KV3pmbldRaTZMaWl2R1ZqelNhaEJfU3ln?oc=5",
-   "publicado": "2026-11-09T15:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Com tombo do petróleo, Brava cai quase 4% e lidera perdas do Ibovespa; veja maiores altas e baixas",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYWg1c1FUNFIyTWtSVi16aWxIYnBRYmxQN0pTaUlkV0pOdnVKYkNMa1ZVS0ZfWGNXNnRrTnIwVm1CU0V4S25GSDFFb3hoeHhCUVR6bGE4dzgwdmpkeTZTbWxNUGEyOXpucXhCWDVDcFdNei0zZExuclc5NkNBRy01dWRickpaNTlnRkJiNVRqeDd0aDJtbnZHUmxXQUd4RDlrdXBvU3RpNW4yLTdPZ0xIdXNOc1A0ZFk5WUZiSHBTNlNPMklpMVFuR29NSjZtenM4VnfSAdcBQVVfeXFMT2JzRVR5QzNtbk5CNHpybXhQY3Vsa2tZWk95VFVOMHF5RldnTElyNkY2X3pycVN1VWhHRjE4V000bzJRRi1RVTF5ZHA3Rkx5VXI1X2JkbVhmU185X2ZyeFdwdXVnSDhtQlZRcHVVVlFNRU84OXc4VUFqZnZRX1VnTnNUZURKbzNELVFMUXFpbl9HSWVmaENzTFg4VF80X1UzdHU3aVEyS3NfZm5hYmNsVjhZUmJTdTJYT1pXVlZtNWVIdzFaSU9VYzd2U3BnSXQ5a3lxS2x2cWs?oc=5",
@@ -2256,19 +2379,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Petrobras pede ao governo período sem multas na reforma tributária",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-pede-ao-governo-periodo-sem-multas-na-reforma-tributaria.shtml",
-   "publicado": "2026-11-09T14:10-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   }
  ]
 }
