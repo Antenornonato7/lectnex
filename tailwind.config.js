@@ -2,7 +2,7 @@
 // O GitHub Actions recompila sozinho a cada mudança em .html ou assets/*.js (workflow "Compilar CSS").
 module.exports = {
     darkMode: 'class',
-    content: ['./*.html', './assets/*.js'],
+    content: ['./*.html', './assets/*.js', './scripts/*.py'],
     theme: {
         extend: {
             colors: {

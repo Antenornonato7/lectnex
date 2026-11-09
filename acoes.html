@@ -31,7 +31,7 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-acoes.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Ações B3: Cotação, Fundos Donos e Opções | Lectnex", "url": "https://lectnex.com.br/acoes.html", "description": "Cotação e gráfico de ações da B3, quais fundos são donos de cada ação (dados abertos da CVM), laboratório de opções com gregas e fluxo do investidor estrangeiro.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261105a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261109a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
@@ -134,7 +134,7 @@
                     </div>
                     <div id="own-body" class="divide-y divide-slate-100 dark:divide-lect-borderDark font-mono tabular-nums text-xs min-h-[200px]"></div>
                     <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500 leading-relaxed">
-                        Carteiras declaradas pelos fundos de investimento à CVM (CDA). Fundos podem pedir sigilo temporário de posições, por isso o mês de referência fica alguns meses atrás. Mostra o posicionamento de médio prazo das gestoras, não o fluxo do dia. Fonte: <a class="text-lect-teal underline" href="https://dados.cvm.gov.br/dataset/fi-doc-cda" target="_blank" rel="noopener">dados.cvm.gov.br</a> (licença ODbL).
+                        Carteiras declaradas pelos fundos de investimento à CVM (CDA). Fundos podem pedir sigilo temporário de posições, por isso o mês de referência fica alguns meses atrás. Mostra o posicionamento de médio prazo das gestoras, não o fluxo do dia. <a id="own-page" href="acoes/" class="text-lect-teal underline font-semibold">Ver os fundos donos de todas as ações →</a> Fonte: <a class="text-lect-teal underline" href="https://dados.cvm.gov.br/dataset/fi-doc-cda" target="_blank" rel="noopener">dados.cvm.gov.br</a> (licença ODbL).
                     </div>
                 </section>
 
@@ -364,6 +364,7 @@
                 return;
             }
             $('cvm-ref').textContent = `CVM · REF. ${cvm.ref.split('-').reverse().join('/')}`;
+            { const lk = $('own-page'), fx = cvm.tickers[current.ticker]; if (lk) { const tem = fx && fx.funds >= 10; lk.href = tem ? `acoes/${current.ticker.toLowerCase()}.html` : 'acoes/'; lk.textContent = tem ? `Página completa dos fundos donos de ${current.ticker} →` : 'Ver os fundos donos de todas as ações →'; } }
             const f = cvm.tickers[current.ticker];
             if (!f) { body.innerHTML = `<p class="p-5 text-xs text-slate-500">Nenhuma posição de fundos em ${current.ticker} no mês de referência.</p>`; return; }
             if (ownTab !== 'holders' && cvmParcial()) { body.innerHTML = `<p class="p-5 text-xs text-slate-500 font-sans leading-relaxed">O mês de referência ainda está incompleto na CVM: parte dos fundos não entregou a carteira e parte das posições fica em sigilo por até 90 dias. Para não mostrar como venda o que só não foi publicado, a comparação com o mês anterior volta quando o mês estiver completo.</p>`; return; }

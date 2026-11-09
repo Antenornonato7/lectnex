@@ -5,7 +5,7 @@ name: Compilar CSS
 on:
   push:
     branches: [main]
-    paths: ['*.html', 'assets/*.js', 'assets/tailwind.src.css', 'tailwind.config.js', 'scripts/icones.py']
+    paths: ['*.html', 'assets/*.js', 'assets/tailwind.src.css', 'tailwind.config.js', 'scripts/*.py']
   workflow_dispatch: {}
 
 permissions:
