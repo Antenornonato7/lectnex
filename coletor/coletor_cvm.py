@@ -41,6 +41,9 @@ TOP_HOLDERS = 10
 TOP_MOVES = 5
 MAX_TICKERS = 250
 DIAS_CAPTACAO = 90
+MESES_BUSCA = 9        # quantos meses para trás procurar carteiras
+MAX_CANDIDATOS = 5     # meses com dados carregados para medir qual já está completo
+COBERTURA_MIN = 0.7    # mês só vale se tiver 70% das posições do mês mais cheio
 
 csv.field_size_limit(10_000_000)
 
@@ -142,23 +145,36 @@ def posicoes_acoes(zbytes: bytes):
 
 
 def montar_fundos_acoes(fonte_zip):
-    """Pega o mês mais recente com volume relevante e compara com o mês anterior."""
-    meses = []
-    for ym in meses_para_tras(8):
+    """Compara os dois meses mais recentes que já estão COMPLETOS na CVM.
+
+    Os meses mais novos chegam pela metade: parte dos fundos ainda não entregou a carteira e parte das posições
+    fica em sigilo por até 90 dias. Comparar um mês pela metade com um mês cheio faz parecer que os fundos
+    "zeraram" posições que só não foram publicadas ainda. Por isso um mês só entra na comparação quando tem pelo
+    menos COBERTURA_MIN das posições do mês mais cheio entre os candidatos, e a lista de quem aumentou/reduziu
+    só considera fundos que declararam carteira de ações nos dois meses."""
+    candidatos = []
+    for ym in meses_para_tras(MESES_BUSCA):
         z = fonte_zip("cda", ym)
         if not z:
             continue
         pos = posicoes_acoes(z)
         n = sum(len(v) for v in pos.values())
         log(f"CDA {ym}: {len(pos)} ações, {n} posições")
-        if n > 2000:  # meses recentes vêm quase vazios por causa do sigilo
-            meses.append((ym, pos))
-        if len(meses) == 2:
+        if n > 2000:  # descarta meses praticamente vazios
+            candidatos.append((ym, pos, n))
+        if len(candidatos) == MAX_CANDIDATOS:
             break
-    if not meses:
+    if not candidatos:
         return None
-    ref, atual = meses[0]
-    prev_ref, anterior = meses[1] if len(meses) > 1 else (None, {})
+    maior = max(n for _, _, n in candidatos)
+    completos = [c for c in candidatos if c[2] >= COBERTURA_MIN * maior]
+    for ym, _, n in candidatos:
+        log(f"  {ym}: {n / maior:.0%} do mês mais cheio" + ("" if n >= COBERTURA_MIN * maior else " — incompleto, ignorado"))
+    ref, atual, n_ref = completos[0]
+    prev_ref, anterior, _ = completos[1] if len(completos) > 1 else (None, {}, 0)
+    declarou_atual = {c for fundos in atual.values() for c in fundos}
+    declarou_antes = {c for fundos in anterior.values() for c in fundos}
+    nos_dois = declarou_atual & declarou_antes
 
     ranking = sorted(atual.items(), key=lambda kv: -sum(p["value"] for p in kv[1].values()))[:MAX_TICKERS]
     out = {}
@@ -166,7 +182,7 @@ def montar_fundos_acoes(fonte_zip):
         prev = anterior.get(tk, {})
         holders = sorted(fundos.items(), key=lambda kv: -kv[1]["value"])
         moves = []
-        for cnpj in set(fundos) | set(prev):
+        for cnpj in (set(fundos) | set(prev)) & nos_dois:
             q1 = fundos.get(cnpj, {}).get("qty", 0.0)
             q0 = prev.get(cnpj, {}).get("qty", 0.0)
             if q1 != q0:
@@ -192,7 +208,8 @@ def montar_fundos_acoes(fonte_zip):
         "generated": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
         "ref": f"{ref[:4]}-{ref[4:]}",
         "prevRef": f"{prev_ref[:4]}-{prev_ref[4:]}" if prev_ref else None,
-        "note": "Posições não confidenciais. Fundos podem pedir sigilo temporário; por isso o mês de referência fica alguns meses para trás.",
+        "coverage": round(n_ref / maior, 3),
+        "note": "Só entram meses já completos na CVM: os mais recentes chegam pela metade (entrega atrasada e sigilo de até 90 dias). Aumentos e reduções consideram apenas fundos que declararam carteira de ações nos dois meses.",
         "tickers": out,
     }
 
