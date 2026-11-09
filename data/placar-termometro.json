@@ -1,5 +1,5 @@
 {
- "criterio": "WIN pelo Ibovespa à vista, WDO pelo dólar à vista; neutro = variação entre −0,5% e +0,5%",
+ "criterio": "WIN pelo Ibovespa à vista, WDO pelo dólar à vista. Alta acerta se o ativo subiu; baixa, se caiu; neutro, se ficou dentro da faixa: desde 09/11/2026, ±0,7% no WIN e ±0,4% no WDO (até 06/11/2026 era ±0,5% nos dois)",
  "dias": [
   {
    "data": "2026-11-03",
@@ -52,7 +52,34 @@
     "var_pct": -0.14,
     "acerto": false
    }
+  },
+  {
+   "data": "2026-11-09",
+   "win": {
+    "leitura": "bullish",
+    "var_pct": 2.02,
+    "acerto": true,
+    "faixa": 0.7
+   },
+   "wdo": {
+    "leitura": "bearish",
+    "var_pct": 0.22,
+    "acerto": false,
+    "faixa": 0.4
+   }
   }
  ],
- "atualizado_em": "2026-11-06T19:10:26-03:00"
+ "atualizado_em": "2026-11-09T19:10:28-03:00",
+ "faixas": [
+  {
+   "desde": "2026-11-03",
+   "win": 0.5,
+   "wdo": 0.5
+  },
+  {
+   "desde": "2026-11-09",
+   "win": 0.7,
+   "wdo": 0.4
+  }
+ ]
 }
