@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T12:23-03:00",
+  "atualizado_em": "2026-11-09T12:25-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -107,11 +107,11 @@
     ],
     [
      "12:05",
-     170207.0
+     170082.0
     ],
     [
-     "12:08",
-     170143.0
+     "12:10",
+     170097.0
     ]
    ]
   },
@@ -280,11 +280,11 @@
     ],
     [
      "12:20",
-     5.5144
+     5.5151
     ],
     [
-     "12:23",
-     5.5158
+     "12:25",
+     5.5167
     ]
    ]
   },
@@ -562,7 +562,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.06
    },
    {
     "hora": "12:05",
@@ -1288,7 +1288,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T12:23-03:00",
+ "atualizado_em": "2026-11-09T12:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1367,16 +1367,19 @@
    "tickers": []
   },
   {
-   "titulo": "Petroleiras são maiores quedas do Ibov nesta 2º acompanhando movimento do petróleo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMUJReGJvMGF3NFE1WFAtZWZkWkpZMVpKamNzX2c5VlJVOVpWaDlrSmNOWEpDa3VMT0hjN0VPT1ZFaTNnYlRtUFdLa0EweVM4cFBhNllXTlA0X2RMd3luZkRFOGZ2Ul9ScUx0YlNfSkNUdmR2VzNpaTdteG5CMDNud3RETHNkS3VVSmR5cGNZR1R2akpFbk51cWpITG52ZUJIOUdIQlVYZldXREJXSFJvakk2OXRRRTJlTmRaaFB30gHDAUFVX3lxTE51V1dGd3oxVGdUc1RxaUItb1F3SEoxejFNT084SXZzVEdnWWRhSktCSWlWbWhDTElKeUNneGVTNUs0RHlsbWs3ajZkNDFqSlNad3pOU1B1cWFFdlpSMjBtMjM2WTZjVjJQS1BKM2xjLVJ0YS1QSWFDRUUwQ0NoMTlaeUFrWVkyd2prZ19Zd093VFMxajV4VnVMcWIyM2phbFZoampMQnFDVTBhT09rdWZtZVROMDBvR2dlcU5kVnI4TUlaNA?oc=5",
-   "publicado": "2026-11-09T11:23-03:00",
-   "impacto": "medio",
+   "titulo": "Ibovespa sobe de olho em Boletim Focus e balanços; tombo do petróleo pressiona Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQd0g4T1RwZTl5aS0xR0FDQXRUTTZfZjZ3R2daQzUwRHR5cW5sTFRkYlZkZ3BFNWJUZjREV3lhN0psZmRqdVlsN3B6a190anpfdzR1WUM2ZDJOMEZjbVYwVG56VThxcXl0WDF4OGVjYmdHR2xOc090ZVAtLTJDeWp5cEJPMHc4MEFfUXN1TUxIcFVGMHZoZFFITlZtakZtdVdYcVB2SGlvdFVLUzhFckM2Z2YwQU5BSVVyblB2c1FNX1JFTmctOWVpZTQ3RVZUbm5jeURfZE5FN1lhd1ltSFZ6YdIB5gFBVV95cUxNd215WkhoYTZ5NW54NFpTR3NzYTJKTElQWUpwNkZ1QkRjM3FucVA2NDBkdnNBLVBrYWZrdUI0SFIzcHZQTW9oUW1vUlpXR29hV29vWVRxYjY1Y1Y5VjQ1aENWYkxnQnNpcnNDNlBUdHJ2b3QzS3l0aUpQVDQxUmRwc3JNTFZWdHNyLVBDZFdFdVg0V2wzQnpiWGlodUpZRXRkd09mTXk3bHhXQzROUU1tb3piZ2JxY3lPeHliR0t2dEZielJOTnlCXzJ4dXMyYUZHS2gwaExGZGxBYl9MaE4tVE9kN3RYZw?oc=5",
+   "publicado": "2026-11-09T11:24-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
+    "WDO",
+    "DI"
    ],
-   "tickers": []
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Vale e bancos puxam Ibovespa; dólar fica estável enquanto mercado cobra Lula no fiscal",
