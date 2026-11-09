@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T14:10-03:00",
+  "atualizado_em": "2026-11-09T14:13-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -195,7 +195,11 @@
     ],
     [
      "13:55",
-     171064.0
+     171106.0
+    ],
+    [
+     "13:58",
+     171107.0
     ]
    ]
   },
@@ -452,7 +456,11 @@
     ],
     [
      "14:10",
-     5.5149
+     5.5138
+    ],
+    [
+     "14:13",
+     5.5127
     ]
    ]
   },
@@ -848,6 +856,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:10",
+    "titulo": "Petrobras pede ao governo período sem multas na reforma tributária",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-pede-ao-governo-periodo-sem-multas-na-reforma-tributaria.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1550,6 +1573,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras pede ao governo período sem multas na reforma tributária",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-pede-ao-governo-periodo-sem-multas-na-reforma-tributaria.shtml",
+   "publicado": "2026-11-09T14:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1589,7 +1625,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T14:10-03:00",
+ "atualizado_em": "2026-11-09T14:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1603,6 +1639,19 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Petrobras pede ao governo período sem multas na reforma tributária",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-pede-ao-governo-periodo-sem-multas-na-reforma-tributaria.shtml",
+   "publicado": "2026-11-09T14:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
    "fonte": "CNBC",
