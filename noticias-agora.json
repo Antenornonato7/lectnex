@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T16:25-03:00",
+  "atualizado_em": "2026-11-09T16:28-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -303,7 +303,11 @@
     ],
     [
      "16:10",
-     171196.0
+     171183.0
+    ],
+    [
+     "16:13",
+     171165.0
     ]
    ]
   },
@@ -668,7 +672,11 @@
     ],
     [
      "16:25",
-     5.5122
+     5.511
+    ],
+    [
+     "16:28",
+     5.511
     ]
    ]
   },
@@ -1194,7 +1202,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.02
    }
   ]
  },
@@ -2035,12 +2043,13 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T16:25-03:00",
+ "atualizado_em": "2026-11-09T16:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
@@ -2093,6 +2102,17 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "CPI: Inflação ao consumidor nos EUA sobe 0,4% em agosto",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcDRyV1hKLXM3LTVseTRlTXhyWE9CX2lYbW9rSWpoZGlMa1hCOTJuR1VkYXZQdmZlUWZCVWE0MWNyclk1Z2ZvLTNKWW85d2ctbHRyUnI5UEUwd3FzWU8yQzctUVpQQkIyUDgxSTREalc1aTNyd2RwT2RlaEJTUlhqQ0ROeDNQNHlWWGpXSldKMFZVcy1LR2NkXzlTNkNOSUYzM2c4VVFIOWZtck1ub1l1eg?oc=5",
+   "publicado": "2026-11-09T14:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
