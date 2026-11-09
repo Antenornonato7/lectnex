@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T16:08-03:00",
+  "atualizado_em": "2026-11-09T16:38-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -287,11 +287,35 @@
     ],
     [
      "15:50",
-     171156.0
+     171162.0
     ],
     [
-     "15:53",
-     171168.0
+     "15:55",
+     171209.0
+    ],
+    [
+     "16:00",
+     171147.0
+    ],
+    [
+     "16:05",
+     171195.0
+    ],
+    [
+     "16:10",
+     171175.0
+    ],
+    [
+     "16:15",
+     171022.0
+    ],
+    [
+     "16:20",
+     171093.0
+    ],
+    [
+     "16:23",
+     171153.0
     ]
    ]
   },
@@ -643,8 +667,32 @@
      5.5124
     ],
     [
-     "16:08",
-     5.5123
+     "16:10",
+     5.5138
+    ],
+    [
+     "16:15",
+     5.5162
+    ],
+    [
+     "16:20",
+     5.5117
+    ],
+    [
+     "16:25",
+     5.5127
+    ],
+    [
+     "16:30",
+     5.5097
+    ],
+    [
+     "16:35",
+     5.5093
+    ],
+    [
+     "16:38",
+     5.5033
     ]
    ]
   },
@@ -1140,7 +1188,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": 0.16,
+    "ibov30": 0.17,
     "dolar30": -0.04
    },
    {
@@ -1155,8 +1203,8 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.04,
+    "dolar30": -0.02
    },
    {
     "hora": "16:01",
@@ -1170,7 +1218,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.05
    }
   ]
  },
@@ -1986,11 +2034,6 @@
  ],
  "enviadas": [
   {
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSlVCXy1aWmZkaHVzVE90LVVhS3paZ2dadzViclh5S21fOXYyaEd3VWNVenkzWWdFSmlpUXI2d1ZFMmkwXzV6VVlOYVJSbDlTZWZRc0c0c2xXbGtRNWxmZy0wWnlNeXBRR0RmNXozQ2pUYmNRZG1qZ3lpN0h6akxzbWFPekkxTXR5bEF3bWpNejNrX0ZRaWUzLWpsZ0F1dzIxVTVCWE5QbWd5MXF2bllVeXM3NTY2TDNMNkxnVkhyc0czRUoz?oc=5",
-   "titulo": "Selic: Eleição estressou a curva de juros, diz economista do Daycoval",
-   "em": "2026-11-08T19:12:57+00:00"
-  },
-  {
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPd3BSMGg2X2R1LTN0X0xQcVhieEZKTktsR2QyZWNJN1hGeUFSZzdMSk12a1ZvNExMNzdvdi1vRWlzVjN6WW0zVDJQcHRNbU5BQThxZjB5MWYtb2U1RVlISjZOTEZacmdPelgzM3ZFNmNzNUFCSG9sdUpvMWdnc0ZVLWpwUU5oVkhBR09DVEFpSHFhaUY3Y1JQN2ViT2k1NkhJQjFCVjVocThFcFYzSTVCc1YtZXZuWHpRU3hISk9rdzBIRVlCaWNtWGhSdld2YmgyX2hV?oc=5",
    "titulo": "Mercado digere discurso de Lula enquanto espera inflação; Ibovespa em dólar sobe nesta segunda-feira (9)",
    "em": "2026-11-09T10:20:24+00:00"
@@ -2016,12 +2059,13 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T16:08-03:00",
+ "atualizado_em": "2026-11-09T16:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
@@ -2078,6 +2122,17 @@
    "tickers": []
   },
   {
+   "titulo": "CPI: Inflação ao consumidor nos EUA sobe 0,4% em agosto",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcDRyV1hKLXM3LTVseTRlTXhyWE9CX2lYbW9rSWpoZGlMa1hCOTJuR1VkYXZQdmZlUWZCVWE0MWNyclk1Z2ZvLTNKWW85d2ctbHRyUnI5UEUwd3FzWU8yQzctUVpQQkIyUDgxSTREalc1aTNyd2RwT2RlaEJTUlhqQ0ROeDNQNHlWWGpXSldKMFZVcy1LR2NkXzlTNkNOSUYzM2c4VVFIOWZtck1ub1l1eg?oc=5",
+   "publicado": "2026-11-09T14:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Cartão, cheque especial e empréstimo: por que a taxa cobrada do brasileiro não acompanha a Selic",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxORWE3WktFRjV0ckY2V3g2MHhTa2FlZkc0OTJjRnlpb3VFUW9EUktLSlVBZmpJSURyVHQ2RC1pVTlWZ1pvRGxoaUlxQzZpcENvdTdCYk1FaGk5TnlPUDA1Z1YydGpudXBLMVRZRzh4UEtYVkdFWWEzd1NnOEM3Zm54V3N1cmV4M0czWGs5aXVmSXBuOXRLQ25pOFZocWEwSVJwQktXQ3dPOEtrZ2hUdjl6YzlXR2lhel9fbHBnSVlIOEpnUkNJZXhWSVFiREZvaTFFS0Zzc21kUEs2TjA3RW5CVnVXY1Q5MHpOdk1pWkRUeGk?oc=5",
@@ -2086,6 +2141,18 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Com tombo do petróleo, Brava cai mais de 3% e lidera perdas do Ibovespa; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYWg1c1FUNFIyTWtSVi16aWxIYnBRYmxQN0pTaUlkV0pOdnVKYkNMa1ZVS0ZfWGNXNnRrTnIwVm1CU0V4S25GSDFFb3hoeHhCUVR6bGE4dzgwdmpkeTZTbWxNUGEyOXpucXhCWDVDcFdNei0zZExuclc5NkNBRy01dWRickpaNTlnRkJiNVRqeDd0aDJtbnZHUmxXQUd4RDlrdXBvU3RpNW4yLTdPZ0xIdXNOc1A0ZFk5WUZiSHBTNlNPMklpMVFuR29NSjZtenM4VnfSAdcBQVVfeXFMT2JzRVR5QzNtbk5CNHpybXhQY3Vsa2tZWk95VFVOMHF5RldnTElyNkY2X3pycVN1VWhHRjE4V000bzJRRi1RVTF5ZHA3Rkx5VXI1X2JkbVhmU185X2ZyeFdwdXVnSDhtQlZRcHVVVlFNRU84OXc4VUFqZnZRX1VnTnNUZURKbzNELVFMUXFpbl9HSWVmaENzTFg4VF80X1UzdHU3aVEyS3NfZm5hYmNsVjhZUmJTdTJYT1pXVlZtNWVIdzFaSU9VYzd2U3BnSXQ5a3lxS2x2cWs?oc=5",
+   "publicado": "2026-11-09T14:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
