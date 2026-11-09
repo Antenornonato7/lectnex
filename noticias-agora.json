@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T12:38-03:00",
+  "atualizado_em": "2026-11-09T12:40-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -119,11 +119,11 @@
     ],
     [
      "12:20",
-     170185.0
+     170313.0
     ],
     [
-     "12:23",
-     170270.0
+     "12:25",
+     170332.0
     ]
    ]
   },
@@ -304,11 +304,11 @@
     ],
     [
      "12:35",
-     5.5183
+     5.5223
     ],
     [
-     "12:38",
-     5.5199
+     "12:40",
+     5.5213
     ]
    ]
   },
@@ -599,7 +599,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": 0.15
    },
    {
@@ -631,7 +631,7 @@
      "PRIO3"
     ],
     "ibov30": null,
-    "dolar30": 0.07
+    "dolar30": 0.15
    },
    {
     "hora": "12:11",
@@ -645,7 +645,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.1
+    "dolar30": 0.13
    },
    {
     "hora": "12:22",
@@ -1366,7 +1366,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T12:38-03:00",
+ "atualizado_em": "2026-11-09T12:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1377,8 +1377,7 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
@@ -1535,31 +1534,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa estende recuperação com Vale e bancos, apesar de queda da Petrobras",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdXpNeVF6dHl5R0JwSUVPdHVsNHhFMzV5WEJuMV9TcGFlZWh3VGJ4UXJXZ2RpTXVEQnduT0hxb2k0TThycE1Td2YwWFBucEgyY2VxaEJEY1pMOFR4SmxvaXVTcUdDSUNMcGZRckpKb0VoRHRPcVFLWV91Z1BYaHFXUWd3NXROYlE3UDMzdmNmeFhxX3h4U1FNaUliRlZmUE1oMDRQY2dQYXNLdEdpaVdoQ3dtMzZuVVpQeXpQeGhqYzRVWDVyWHJOTGJEY0dBUdIB3AFBVV95cUxPOGhHWjRCTjROZlRFNXphV0d3Y0JCeFdCTTdyd3AwU2JkejBrWE1fZUpTSGNoam9CZnhwZ192aW4tZzNQVlpTb3hVelJlQ3gyWHh5REkzb2h5eHNIc195a2ctT1AtRTFWUVVRZ2JmczVXWEk5Q3ZvQWJfdkxtWGpTTEdYcGZwVHQ0ZlpQWXBhWHB2dGpTc2hXay1wVFkyUWpxcWFTTldLSzVQNWRzUmwzUk1yRzZuZFlRVFBvd2Z2dDZtZnNEbEc3MHdzckpvaU9uVnNTUXhFNVZZb0px?oc=5",
-   "publicado": "2026-11-09T10:40-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4",
-    "VALE3"
-   ]
-  },
-  {
-   "titulo": "Tempo real: Ibovespa acompanha tom positivo de Wall Street",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wZnMtUTh4SEYtUGlReC0xcWVKbWhlWmw1VkpwYkRwdVhmUkRBLTNJZHEwV21rMlI0VnRrV2NGQXMxQVlQekZIVkhxQzhNSmI5TjdHZ0FMYXlpZDZPRTIwc3lBMHE?oc=5",
-   "publicado": "2026-11-09T10:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Mercado eleva projeção da Selic para 13,75% em 2026",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mercado-eleva-projecao-da-selic-para-1375-em-2026",
@@ -1572,12 +1546,13 @@
    "tickers": []
   },
   {
-   "titulo": "Bolsa sobe com cenário externo positivo; dólar oscila com incertezas sobre governo Lula",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-com-exterior-positivo-e-politica-economica-de-lula-no-radar.shtml",
-   "publicado": "2026-11-09T09:40-03:00",
+   "titulo": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html",
+   "publicado": "2026-11-09T10:13-03:00",
    "impacto": "medio",
    "ativos": [
+    "WIN",
     "WDO"
    ],
    "tickers": []
