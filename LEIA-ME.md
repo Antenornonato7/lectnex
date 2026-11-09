@@ -129,3 +129,8 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 - O coletor só usa meses já completos na CVM (os mais recentes chegam pela metade por causa do sigilo de até 90 dias).
 - Nome da empresa no título: dicionário `NOMES` no script (por prefixo do código). Ação fora da lista aparece só pelo código.
 - O Tailwind também lê as classes de `scripts/*.py`, para as páginas geradas nunca ficarem sem estilo.
+
+## Páginas de resposta rápida (uma busca, uma página)
+
+- `scripts/ferramentas.py` gera `vencimento-mini-indice-mini-dolar.html`, `calculadora-ir-day-trade.html` e `valor-do-ponto-mini-indice-mini-dolar.html`. O texto de resposta e as perguntas frequentes (JSON-LD FAQPage) ficam no HTML; a ferramenta usa o núcleo `LX`. Edite os textos no script e rode-o de novo.
+- Ao mudar regra de imposto ou especificação de contrato, atualize também estas páginas e o glossário.
