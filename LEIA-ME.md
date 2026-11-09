@@ -121,3 +121,11 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 
 - `assets/lectnex-painel.js`: preferências do visitante no Mercado Hoje (foco WIN/WDO, até 8 ações favoritas, seções escondidas), salvas em `localStorage` (`lectnex-painel-v1`).
 - Alerta no celular das 3 primeiras favoritas (etiquetas OneSignal `a1`, `a2`, `a3`; o plano grátis permite 6 etiquetas por pessoa, 3 já usadas por surpresa/agenda/leitura): `coletor/alerta_acoes.py` roda no workflow **Cotações B3** e avisa a ±3% e ±6% no dia, só com cotação do próprio dia.
+
+## Páginas por ação (acoes/)
+
+- `scripts/acoes_paginas.py` gera uma página estática e indexável por ação (`acoes/petr4.html` …) e o índice `acoes/`, a partir de `data/fundos-acoes.json`: 10 maiores fundos donos, quem aumentou e quem reduziu. Roda dentro do workflow **Coletor CVM**, atualiza o sitemap e avisa o IndexNow.
+- Só entram ações com pelo menos 10 fundos. As páginas mudam quando o mês de referência da CVM muda (cerca de uma vez por mês).
+- O coletor só usa meses já completos na CVM (os mais recentes chegam pela metade por causa do sigilo de até 90 dias).
+- Nome da empresa no título: dicionário `NOMES` no script (por prefixo do código). Ação fora da lista aparece só pelo código.
+- O Tailwind também lê as classes de `scripts/*.py`, para as páginas geradas nunca ficarem sem estilo.

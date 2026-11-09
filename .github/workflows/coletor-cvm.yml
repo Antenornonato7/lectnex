@@ -27,14 +27,30 @@ jobs:
       - name: Baixar e processar dados da CVM
         run: python coletor/coletor_cvm.py --saida data
 
+      - name: Gerar páginas por ação (acoes/)
+        id: paginas
+        run: |
+          python3 scripts/acoes_paginas.py | tee saida.txt
+          echo "paginas=$(grep '^PAGINAS=' saida.txt | cut -d= -f2-)" >> "$GITHUB_OUTPUT"
+          rm -f saida.txt
+
       - name: Publicar dados atualizados
+        id: pub
         run: |
           git config user.name "lectnex-bot"
           git config user.email "lectnex-bot@users.noreply.github.com"
-          git add data/*.json
+          git add data/*.json acoes sitemap.xml
           if git diff --cached --quiet; then
             echo "Sem mudanças nos dados."
+            echo "ok=0" >> "$GITHUB_OUTPUT"
           else
             git commit -m "dados: atualização CVM $(date -u +%Y-%m-%d)"
-            git push
+            git pull --rebase -q origin main && git push -q origin HEAD:main
+            echo "ok=1" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Avisar buscadores das páginas que mudaram (IndexNow)
+        if: steps.pub.outputs.ok == '1' && steps.paginas.outputs.paginas != ''
+        env:
+          PAGINAS: ${{ steps.paginas.outputs.paginas }}
+        run: sleep 90 && python3 coletor/indexnow.py

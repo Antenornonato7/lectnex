@@ -4,7 +4,7 @@ name: IndexNow
 on:
   push:
     branches: [main]
-    paths: ['*.html', 'semana/*.html', 'leitura/*.html', 'sitemap.xml']
+    paths: ['*.html', 'semana/*.html', 'leitura/*.html', 'acoes/*.html', 'sitemap.xml']
   workflow_dispatch: {}
 
 permissions:
