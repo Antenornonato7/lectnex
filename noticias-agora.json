@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T15:08-03:00",
+  "atualizado_em": "2026-11-09T15:30-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -239,11 +239,27 @@
     ],
     [
      "14:50",
-     170978.0
+     170962.0
     ],
     [
-     "14:53",
-     170961.0
+     "14:55",
+     170985.0
+    ],
+    [
+     "15:00",
+     171075.0
+    ],
+    [
+     "15:05",
+     171085.0
+    ],
+    [
+     "15:10",
+     171102.0
+    ],
+    [
+     "15:15",
+     171087.0
     ]
    ]
   },
@@ -544,11 +560,27 @@
     ],
     [
      "15:05",
-     5.5114
+     5.5115
     ],
     [
-     "15:08",
-     5.5113
+     "15:10",
+     5.5108
+    ],
+    [
+     "15:15",
+     5.5094
+    ],
+    [
+     "15:20",
+     5.5148
+    ],
+    [
+     "15:25",
+     5.5119
+    ],
+    [
+     "15:30",
+     5.5118
     ]
    ]
   },
@@ -1002,6 +1034,21 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": 0.06,
+    "dolar30": -0.04
+   },
+   {
+    "hora": "15:22",
+    "titulo": "Petrobras (PETR4) se preocupa sobre transição na reforma tributária, diz CEO",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUU11c2FjY0w0bVhpaDlzRHJYVnpBd1VYTGR3clNDRDdYTERxQkViTXdkMmcxUW5CYzBmVFR5OHdORGRBMGlzOTJwLVVVZnp5dkZsdHdramNhY1ptVXJ1N2g5cE43ZjRfOFdHOVBKSDFKVndEMEtGb0VvaEVMazJMeTNXRTFOZWxGZXFaY19KV3pmbldRaTZMaWl2R1ZqelNhaEJfU3ln?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1754,6 +1801,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras (PETR4) se preocupa sobre transição na reforma tributária, diz CEO",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUU11c2FjY0w0bVhpaDlzRHJYVnpBd1VYTGR3clNDRDdYTERxQkViTXdkMmcxUW5CYzBmVFR5OHdORGRBMGlzOTJwLVVVZnp5dkZsdHdramNhY1ptVXJ1N2g5cE43ZjRfOFdHOVBKSDFKVndEMEtGb0VvaEVMazJMeTNXRTFOZWxGZXFaY19KV3pmbldRaTZMaWl2R1ZqelNhaEJfU3ln?oc=5",
+   "publicado": "2026-11-09T15:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1788,7 +1848,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T15:08-03:00",
+ "atualizado_em": "2026-11-09T15:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1797,10 +1857,22 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Petrobras (PETR4) se preocupa sobre transição na reforma tributária, diz CEO",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUU11c2FjY0w0bVhpaDlzRHJYVnpBd1VYTGR3clNDRDdYTERxQkViTXdkMmcxUW5CYzBmVFR5OHdORGRBMGlzOTJwLVVVZnp5dkZsdHdramNhY1ptVXJ1N2g5cE43ZjRfOFdHOVBKSDFKVndEMEtGb0VvaEVMazJMeTNXRTFOZWxGZXFaY19KV3pmbldRaTZMaWl2R1ZqelNhaEJfU3ln?oc=5",
+   "publicado": "2026-11-09T15:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Frigoríficos lideram ganhos do Ibovespa com expectativa de negociação entre Brasil e Filipinas",
    "fonte": "Money Times",
@@ -1809,18 +1881,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Com tombo do petróleo, Brava cai mais de 3% e lidera perdas do Ibovespa; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYWg1c1FUNFIyTWtSVi16aWxIYnBRYmxQN0pTaUlkV0pOdnVKYkNMa1ZVS0ZfWGNXNnRrTnIwVm1CU0V4S25GSDFFb3hoeHhCUVR6bGE4dzgwdmpkeTZTbWxNUGEyOXpucXhCWDVDcFdNei0zZExuclc5NkNBRy01dWRickpaNTlnRkJiNVRqeDd0aDJtbnZHUmxXQUd4RDlrdXBvU3RpNW4yLTdPZ0xIdXNOc1A0ZFk5WUZiSHBTNlNPMklpMVFuR29NSjZtenM4VnfSAdcBQVVfeXFMT2JzRVR5QzNtbk5CNHpybXhQY3Vsa2tZWk95VFVOMHF5RldnTElyNkY2X3pycVN1VWhHRjE4V000bzJRRi1RVTF5ZHA3Rkx5VXI1X2JkbVhmU185X2ZyeFdwdXVnSDhtQlZRcHVVVlFNRU84OXc4VUFqZnZRX1VnTnNUZURKbzNELVFMUXFpbl9HSWVmaENzTFg4VF80X1UzdHU3aVEyS3NfZm5hYmNsVjhZUmJTdTJYT1pXVlZtNWVIdzFaSU9VYzd2U3BnSXQ5a3lxS2x2cWs?oc=5",
-   "publicado": "2026-11-09T14:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -1875,26 +1935,13 @@
    ]
   },
   {
-   "titulo": "Alpargatas (ALPA4) sobe mais de 6% após balanço acima do esperado e anima analistas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONEVNaVBnLWJOYWlFMXppV3NRaXRPVy1DbkloUlBzX3Axd2JxQWVhdE5GSkVBWlJKUkxmRGRkc3J0SzM1LXpwaEdmRWt0NlViOW0zcEJYMHZPb3ZIMkQ2YWxjM0ZZckxEUVRTY25TeUtGbWFkWTlxa25Ob3NZMHdKTlQwOGxaRFAzdEJONW9CRTB5YnU3MGlaZ1NFVUVSSFd4ZzJ2QlVpS09rYlZTdHpGZWFGUnowWDdBTFlz0gHAAUFVX3lxTE1qVWpRNjd4enpvelVObWlHSGRqOFBKRHJiYkM0ZmFfcF91dUZ4SWdqT3c3ZHZfeGdzLXh4T0NsQzFXQmFYYWhPRUN3VXloX2RSdTVwVXoxQXJqa3RfMDYxSGxZNi1rUmoxME5NZDNPMDVtNGJTYUZ1QVFqNjlQUTU1WUR2Yy05cWlxUHAtY09JdTJOalkxVjlVZWJuR2V5alNTN05KbkZGVzg2MGdST25KSi1WT2tyVEt6VmUzM3FlXw?oc=5",
-   "publicado": "2026-11-09T12:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ALPA4"
-   ]
-  },
-  {
-   "titulo": "Por que o Ibovespa sobe 1% nesta 2ª mesmo com queda de commodities e cautela fiscal",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMFR6S0FJYWR1ZEtvSzgxWnM1RFFlSmthcDIzdXBtZDJYbkVEbHVMYUl4cE5FTGhqa2N4dmlTSHJkYnIyaDAwVjZGMVNDVGRlMGRzZHlIS3BhQ3cwMHBEQlFCTkxkYmdhaFEzRjIxUWVoR3lJYmc1WGxmejQtZ192YUNHV1daTXBZd0xxc0pHT3J1U2lTYXJmM01kUWVVcGRZcHQ4OWFwUENIRVk0MGVvZGM3U1c2Y2puc19iR2V30gHDAUFVX3lxTE5POVh3Mi05Zi1BMUp5VWE4cGZjQWh6ckd2d2FWOHdtMGRBakJVeHRDS2FsY29GRlF0dTZKYjFYZkNGX2wzYXFhWkNNZVNEb1gtdzF1d2JWcktYVkYtanI1LXhTWEY4MmN2RlJJSEVHQ21CMG9sODl1MEpTWVJqbW53ZHBYQzdNMDdlaEhCeVVkeE5QYlNacF8wdmdKWmRBQXZPb19Hd21QT2RtUldXbEVvRXVrVjVMUkgxRVp0NWxoaXVlcw?oc=5",
-   "publicado": "2026-11-09T12:11-03:00",
+   "titulo": "Copom precisará observar o impacto de diversos choques para voltar a reduzir a taxa Selic",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZE05UlJiYWZzZ1FhZEtWRU5DLV9IRkFaQXFBU0VNR1ZlZFh1VDNfVEwya0w0MFlUc2xaMDNXZy00VUgwNVRPei1tbzBhNWhGcnYzdHlRdUctdmRMSFU1bm5OekFLOXhNcWlXREs4c194dE5DWHhmMURYSXRLb2R5TmNabWNwV0FGLUxhUjZCckVTdkhCb01GN0ZhX3NkVWdXLUowMGZDbTdsUTFHYjRORjBGYlZOLWhtcXgxb19vVzRhVnk3WDJ5VUpYMlpES2hSdkNkdUJGbzc5UlhSUXBLVHVPdVNUTDg?oc=5",
+   "publicado": "2026-11-09T13:48-03:00",
    "impacto": "alto",
    "ativos": [
-    "WIN",
+    "WDO",
     "DI"
    ],
    "tickers": []
