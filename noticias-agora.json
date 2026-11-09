@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-09",
-  "atualizado_em": "2026-11-09T17:55-03:00",
+  "atualizado_em": "2026-11-09T17:58-03:00",
   "ibov": {
    "anterior": 168498.45,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171934.0
+     171941.0
     ]
    ]
   },
@@ -780,7 +780,11 @@
     ],
     [
      "17:55",
-     5.5157
+     5.5163
+    ],
+    [
+     "17:56",
+     5.5162
     ]
    ]
   },
@@ -2279,7 +2283,7 @@
    "em": "2026-11-09T14:22:59+00:00"
   }
  ],
- "atualizado_em": "2026-11-09T17:55-03:00",
+ "atualizado_em": "2026-11-09T17:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2293,6 +2297,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Petróleo cai mais de 5% após Trump dizer que novos ataques ao Irã são improváveis",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petroleo-cai-mais-de-5-apos-trump-dizer-que-novos-ataques-ao-ira-sao-improvaveis.shtml",
+   "publicado": "2026-11-09T17:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Juros futuros têm forte queda com alívio do petróleo e apetite global por risco",
    "fonte": "Valor",
