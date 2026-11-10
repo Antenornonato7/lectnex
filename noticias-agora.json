@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T16:05-03:00",
+  "atualizado_em": "2026-11-10T16:08-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -287,7 +287,11 @@
     ],
     [
      "15:50",
-     170862.0
+     170926.0
+    ],
+    [
+     "15:53",
+     170929.0
     ]
    ]
   },
@@ -636,7 +640,11 @@
     ],
     [
      "16:05",
-     5.5858
+     5.5848
+    ],
+    [
+     "16:08",
+     5.5853
     ]
    ]
   },
@@ -1456,6 +1464,20 @@
     "dolar30": 0.07
    },
    {
+    "hora": "15:18",
+    "titulo": "Copom, IPCA e pronunciamento de Lula dividem agenda da semana com nova rodada de inflação nos EUA",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPQXRFZXYzZ3dsZVZMYkgxbmhia0JIbEZsc2plakhyMmtxdzFmY1dtZjB4dzhXWjhsbko5aHN1QlVTcjRUVmwzemJvLUpWZ2tkSXdpc2szd25TMGNvczlSUWNxQlNocXpHMlNtN0ZvXzMtSE1JcmJjODJ2d245ZmlIV1ZlTzVfZ3FXbUkyc3BXT0tqYmJWRXg5ejJnVEtUWnJSZUQwS2lGMWptWndSZkRKdjY4TDREcG9maFg5bWw2YU5tUEprZmtzWF8zODI5NUotOTl5QVdqWVlILV9kdzdLQlBjOVZ3ZWo1bk8tNy0wem5qaDYzblE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.2,
+    "dolar30": -0.09
+   },
+   {
     "hora": "15:57",
     "titulo": "Piora das expectativas econômicas explica alta do dólar, diz especialista",
     "fonte": "CNN Brasil",
@@ -1471,17 +1493,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Day Trade hoje (10): Ibovespa emenda 2ª alta; pode subir mais?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLU5NbUN5TXd1TWtzMlpuU2xNSW1DdWI4NG5vWTBuYnpFX1ZweXlFamFuZnpIdDFna1duLVdabU53a3FKazEzMEI3TFJNRGswUVBZcUowUVhqYUNMdDVnVVJVZ1g1ZmxBTmVsZVhNT2N4MHVVdWppQk03eW5OOGo4NzZLMlFBUDhM0gGOAUFVX3lxTE50em9IVDhvSFJkTlZPSlRBUG1vSS13aXk4d0tXQmVhRGYxSmhjVkFsT0k2NzRxR2tDd2JmRzlDZlF4cVM4UGx1S0xtTF9rUGIwc0dJaGhjdURBU2s1V3RuMEJfdzNLdFVtWFZLSmxWQkJxZWZORHhmdWJUYmQ2VU1XaG85bFE1Q09BQTRiWVE?oc=5",
-   "publicado": "2026-11-10T07:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Mini-índice (WINZ26): inflação dos EUA pode mexer com juros e Bolsa",
    "fonte": "InfoMoney",
@@ -2458,6 +2469,18 @@
    "tickers": []
   },
   {
+   "titulo": "Copom, IPCA e pronunciamento de Lula dividem agenda da semana com nova rodada de inflação nos EUA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPQXRFZXYzZ3dsZVZMYkgxbmhia0JIbEZsc2plakhyMmtxdzFmY1dtZjB4dzhXWjhsbko5aHN1QlVTcjRUVmwzemJvLUpWZ2tkSXdpc2szd25TMGNvczlSUWNxQlNocXpHMlNtN0ZvXzMtSE1JcmJjODJ2d245ZmlIV1ZlTzVfZ3FXbUkyc3BXT0tqYmJWRXg5ejJnVEtUWnJSZUQwS2lGMWptWndSZkRKdjY4TDREcG9maFg5bWw2YU5tUEprZmtzWF8zODI5NUotOTl5QVdqWVlILV9kdzdLQlBjOVZ3ZWo1bk8tNy0wem5qaDYzblE?oc=5",
+   "publicado": "2026-11-10T15:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Piora das expectativas econômicas explica alta do dólar, diz especialista",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMTktVEcxZktyazJaMU1POWIxTU56Y3RyZWt0SW11UHFCYjAzUUxWQ3dWMFFvR0RZMUczRkFMXzVtRHNXSmY5aFpYWmxMRzhnZGxUMHowMzhHUmJuczlFUUZWd2ZWSWdpTklCWlNkak15YkRkZXRyZnRZOXJuUUxPeUVrYzFqXzhydnhkN2cxa2JnaW1uLV9nQTVlMC1PTGR6WnBwSWxFQmZfaTUtcElZa3lQSTZ4SVRHRjdKQ1RKd01PSVBEUGVNYy1RRQ?oc=5",
@@ -2496,7 +2519,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T16:05-03:00",
+ "atualizado_em": "2026-11-10T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2541,6 +2564,18 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Copom, IPCA e pronunciamento de Lula dividem agenda da semana com nova rodada de inflação nos EUA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPQXRFZXYzZ3dsZVZMYkgxbmhia0JIbEZsc2plakhyMmtxdzFmY1dtZjB4dzhXWjhsbko5aHN1QlVTcjRUVmwzemJvLUpWZ2tkSXdpc2szd25TMGNvczlSUWNxQlNocXpHMlNtN0ZvXzMtSE1JcmJjODJ2d245ZmlIV1ZlTzVfZ3FXbUkyc3BXT0tqYmJWRXg5ejJnVEtUWnJSZUQwS2lGMWptWndSZkRKdjY4TDREcG9maFg5bWw2YU5tUEprZmtzWF8zODI5NUotOTl5QVdqWVlILV9kdzdLQlBjOVZ3ZWo1bk8tNy0wem5qaDYzblE?oc=5",
+   "publicado": "2026-11-10T15:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2599,17 +2634,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe pouco, mas ação dispara quase 24% na semana; o que explica o salto?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQmpsYXJ5S0diZ21FREE1bktvWXhKY0F0N0pCWm9yajNjWUZiYXFzWkF3dXlDTE1HMXhyLVBob0Y0bDNIYVp1T1p5ME1MSHdvYm9uZFVicU5vVlh1VENfY2pvRkNNaEpCd241VG91TVJjVDQ5aFpacTVMUlg2OXNIMXA1WWRRRlFWWFhiTWp6WjZKZktDX2UzeFBzZU9nZ2lLNjNsSW9pWkM1NU1hS293V1FWZUNRZzcxdzBTYkNSWnMya2xyYU1iTWlfN3JrMXNMclh3RFRvdC00aWhi?oc=5",
-   "publicado": "2026-11-10T14:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
@@ -2687,18 +2711,6 @@
    "tickers": [
     "VALE3"
    ]
-  },
-  {
-   "titulo": "Dirigente do Fed defende considerar alta de 0,5 ponto nos juros em dezembro",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dirigente-do-fed-defende-considerar-alta-de-05-ponto-nos-juros-em-dezembro.shtml",
-   "publicado": "2026-11-10T13:08-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
