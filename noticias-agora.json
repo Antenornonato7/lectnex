@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T16:50-03:00",
+  "atualizado_em": "2026-11-10T16:53-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -323,7 +323,11 @@
     ],
     [
      "16:35",
-     171212.0
+     171215.0
+    ],
+    [
+     "16:38",
+     171251.0
     ]
    ]
   },
@@ -708,7 +712,11 @@
     ],
     [
      "16:50",
-     5.5838
+     5.5833
+    ],
+    [
+     "16:52",
+     5.5828
     ]
    ]
   },
@@ -1583,7 +1591,7 @@
      "WEGE3"
     ],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": 0.0
    },
    {
     "hora": "16:25",
@@ -1597,7 +1605,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": -0.01
    },
    {
     "hora": "16:29",
@@ -2662,7 +2670,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T16:50-03:00",
+ "atualizado_em": "2026-11-10T16:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2670,15 +2678,14 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Folha",
-  "Money Times"
+  "Folha"
  ],
  "noticias": [
   {
    "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "publicado": "2026-11-10T16:49-03:00",
+   "publicado": "2026-11-10T16:51-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2773,6 +2780,18 @@
    "tickers": []
   },
   {
+   "titulo": "Copom, IPCA e pronunciamento de Lula dividem agenda da semana com nova rodada de inflação nos EUA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPQXRFZXYzZ3dsZVZMYkgxbmhia0JIbEZsc2plakhyMmtxdzFmY1dtZjB4dzhXWjhsbko5aHN1QlVTcjRUVmwzemJvLUpWZ2tkSXdpc2szd25TMGNvczlSUWNxQlNocXpHMlNtN0ZvXzMtSE1JcmJjODJ2d245ZmlIV1ZlTzVfZ3FXbUkyc3BXT0tqYmJWRXg5ejJnVEtUWnJSZUQwS2lGMWptWndSZkRKdjY4TDREcG9maFg5bWw2YU5tUEprZmtzWF8zODI5NUotOTl5QVdqWVlILV9kdzdLQlBjOVZ3ZWo1bk8tNy0wem5qaDYzblE?oc=5",
+   "publicado": "2026-11-10T15:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Credit card debt climbs to a record $1.29 trillion, New York Fed research finds",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/credit-card-debt-record.html",
@@ -2819,20 +2838,6 @@
    ],
    "tickers": [
     "BBDC4"
-   ]
-  },
-  {
-   "titulo": "Embraer (EMBJ3) surpreende no balanço e mira novos voos; ainda há espaço para as ações subirem?",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUWRVZ2Z5LVJXSVBUaFhuNnh5N3RMeVNyS3g1TTJxbjVZaFE2V1diWG1QbFZoMWhTQjg2Z1U4MjlCZzI3ekp5X2dfZG1uem0za0ZwNkVaQUloN3FWTUMtWkVjaXc5U3lvWWJmSzNrS3BWWmpCcGNKbTRGWlQtZ3hzeUNsSjJSU1hQR05OVEp4RGlxU19sRkFUMDdTQ0hEbGNTd2tfTlB3RWNjMEE?oc=5",
-   "publicado": "2026-11-10T13:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBJ3",
-    "EMBR3"
    ]
   }
  ]
