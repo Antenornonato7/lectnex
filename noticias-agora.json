@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:03-03:00",
+  "atualizado_em": "2026-11-10T12:05-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -91,11 +91,11 @@
     ],
     [
      "11:45",
-     171235.0
+     171111.0
     ],
     [
-     "11:48",
-     171195.0
+     "11:50",
+     171423.0
     ]
    ]
   },
@@ -248,11 +248,11 @@
     ],
     [
      "12:00",
-     5.5899
+     5.5949
     ],
     [
-     "12:03",
-     5.5924
+     "12:05",
+     5.5959
     ]
    ]
   },
@@ -633,7 +633,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.88,
+    "ibov30": -0.95,
     "dolar30": 0.35
    },
    {
@@ -647,7 +647,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.76,
+    "ibov30": -0.83,
     "dolar30": 0.3
    },
    {
@@ -664,7 +664,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": -0.76,
+    "ibov30": -0.83,
     "dolar30": 0.3
    },
    {
@@ -696,7 +696,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.2
+    "dolar30": 0.29
    },
    {
     "hora": "11:50",
@@ -1711,7 +1711,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:03-03:00",
+ "atualizado_em": "2026-11-10T12:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1726,6 +1726,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
+   "publicado": "2026-11-10T12:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
    "fonte": "Agência Brasil",
@@ -1751,25 +1763,14 @@
    "tickers": []
   },
   {
-   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T11:50-03:00",
-   "impacto": "medio",
+   "titulo": "Taxas longas dos juros futuros sobem após ata do Copom",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWTYxRGNUVHdUbVRDd2JZM2o5Qi1yeTh5c1puSXdIXzNHajgtb0x2T1p4UWIwcE5kY2tDRWZ5ak5Zc3BTTDFuYlRxX1d1WDlwbk12Nm1fenZTcHZYZUhGU3BzTzlZdm9Bb2licXBDLUtRZkRWZHlvSUNILURqdzBXQWlTYTB2VE45R3NvZ3NHbDRVWERVaVlobdIBngFBVV95cUxNeXhMRnFHZUkzZGpVNzdzTjVUMkpvM0dPTS1lUUFXSzMtWU10Wlg3U3VLQXNhX3dBcmEtM0pINWdJdGowdmRlVlhrVjNIQ1NjNmhPcW9sN3pJdFpnWF9pZU0xaE55VS1XYk80TmpYMmRhcWx6ejY5UzVVNGppVDhoamlIeXhLcmlrazdDXzk0a2JKYUZzVktHazd0SWdkZw?oc=5",
+   "publicado": "2026-11-10T11:31-03:00",
+   "impacto": "alto",
    "ativos": [
+    "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Relação de chefe da Nvidia com chinesa facilitou envio de chips à China, diz site",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/relacao-de-chefe-da-nvidia-com-chinesa-facilitou-envio-de-chips-a-china-diz-site.shtml",
-   "publicado": "2026-11-10T11:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
