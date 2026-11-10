@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:30-03:00",
+  "atualizado_em": "2026-11-10T11:33-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -67,7 +67,11 @@
     ],
     [
      "11:15",
-     172837.0
+     172910.0
+    ],
+    [
+     "11:18",
+     172891.0
     ]
    ]
   },
@@ -196,6 +200,10 @@
     ],
     [
      "11:30",
+     5.5795
+    ],
+    [
+     "11:33",
      5.5784
     ]
    ]
@@ -473,7 +481,7 @@
      "PETR4",
      "VALE3"
     ],
-    "ibov30": 0.11,
+    "ibov30": 0.16,
     "dolar30": 0.18
    },
    {
@@ -506,7 +514,7 @@
      "MGLU3"
     ],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": 0.03
    },
    {
     "hora": "11:06",
@@ -519,7 +527,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    },
    {
     "hora": "11:09",
@@ -1519,7 +1527,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:30-03:00",
+ "atualizado_em": "2026-11-10T11:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1534,6 +1542,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
+   "publicado": "2026-11-10T11:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
    "fonte": "Estadão",
@@ -1696,18 +1716,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar tem forte alta com sinalizações de Fed e Copom em dia de dados de inflação nos EUA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxON24tLUdtaVdCbWEzeFJ4WXVSWERzN0dVY3ZINlN4VG9aZE0wTHRBcWl6SC1NSm9FQnotLWhGZDlNSVoweVFJWWZTaTJxWTJoR0JJVkNKVUgxLWw0SGZtdzVWbXh4VzktV3dLb3VjQ2EwZ2lDNVhkanVyb295TGVLX21JclhVSUp4VzFkdUItMEw4Ym1ONl9ycExIT1N6N2EtVk1KUW5uR0tNdkQyeV9iN1diMTlBUWFEbmw0RC01N21mZHkxWEptcExZQ1VsQ3dZcXZ3OWU2b3pnSDVvVVNr0gHuAUFVX3lxTE1DSVU4OGhvTFV6bG5uZUYtOFFlbDhqWWRkcFNJS3BwNk9LaE1zYnVEeWRsLUtjcF9NYm44WDdNSk0xWGltM0dFNGJDZjRSNkpHX2FGODJlUVpIUkFpUWt3TjlXb0pHS2VzSWhmNDdSTGQ1RUZwMUFRVk41OHdEZTdvcWlBSEt1Y29ETEhyQmpZeXktOEZhVVFha2ZyMFAwNngzSTBtcUdxLU5LQ3JOUFVtVWRMSWljcWNvcFh6WUU4eXZtVWhndFVjcUw5V3EzdTFObGVDLUQtSlZ0clpDZGVNRGU3OFVuaFNnUk5ubVE?oc=5",
-   "publicado": "2026-11-10T09:30-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
