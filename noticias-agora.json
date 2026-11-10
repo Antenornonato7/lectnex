@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T15:38-03:00",
+  "atualizado_em": "2026-11-10T15:40-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -263,11 +263,11 @@
     ],
     [
      "15:20",
-     170716.0
+     170773.0
     ],
     [
-     "15:23",
-     170777.0
+     "15:25",
+     170758.0
     ]
    ]
   },
@@ -592,11 +592,11 @@
     ],
     [
      "15:35",
-     5.5847
+     5.5842
     ],
     [
-     "15:38",
-     5.5885
+     "15:40",
+     5.5852
     ]
    ]
   },
@@ -1363,6 +1363,19 @@
     "dolar30": -0.03
    },
    {
+    "hora": "14:36",
+    "titulo": "Ibovespa sobe pouco, mas ação dispara quase 24% na semana; o que explica o salto?",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQmpsYXJ5S0diZ21FREE1bktvWXhKY0F0N0pCWm9yajNjWUZiYXFzWkF3dXlDTE1HMXhyLVBob0Y0bDNIYVp1T1p5ME1MSHdvYm9uZFVicU5vVlh1VENfY2pvRkNNaEpCd241VG91TVJjVDQ5aFpacTVMUlg2OXNIMXA1WWRRRlFWWFhiTWp6WjZKZktDX2UzeFBzZU9nZ2lLNjNsSW9pWkM1NU1hS293V1FWZUNRZzcxdzBTYkNSWnMya2xyYU1iTWlfN3JrMXNMclh3RFRvdC00aWhi?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": -0.23,
+    "dolar30": -0.08
+   },
+   {
     "hora": "14:42",
     "titulo": "Fed sinaliza possível alta de 0,5 ponto após inflação acima do esperado",
     "fonte": "CNN Brasil",
@@ -1399,25 +1412,12 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.09,
+    "ibov30": -0.05,
     "dolar30": 0.07
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Brava (BRAV3) tem prejuízo de R$ 156 milhões no 3º trimestre, ante lucro de R$ 121 mi reportado um ano antes",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObVZNMUI4QmwzOG1OWGVDZFR2U3FKa1BhWFdDeXIwZXgyU3ZHZ2ZXdkpvc0FzMHBJWVJTQWxlejB3bmNFVFRXdm0wVkN3SFRlRzVOZW5RWnN0MHIyRTlwWnQ0cWxNYTdhbzMxZGZLTUZ0VnRmYmg3U2E3bGhqSlEtYXl4RllCTjF1c05YUlNmM1RxaGRaenhEUmpiSE9ObEM5OWk3OWhKal8zbHpPWEVibHJYbG92UVhYckt2b3MweE1FVEFBYUxYa2JuT0dfU1JmTWhVX2pR?oc=5",
-   "publicado": "2026-11-10T06:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BRAV3"
-   ]
-  },
   {
    "titulo": "Investidores aguardam ata do Copom em dia de inflação nos EUA; Ibovespa em dólar sobe nesta terça-feira (10)",
    "fonte": "Money Times",
@@ -2373,6 +2373,17 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa sobe pouco, mas ação dispara quase 24% na semana; o que explica o salto?",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQmpsYXJ5S0diZ21FREE1bktvWXhKY0F0N0pCWm9yajNjWUZiYXFzWkF3dXlDTE1HMXhyLVBob0Y0bDNIYVp1T1p5ME1MSHdvYm9uZFVicU5vVlh1VENfY2pvRkNNaEpCd241VG91TVJjVDQ5aFpacTVMUlg2OXNIMXA1WWRRRlFWWFhiTWp6WjZKZktDX2UzeFBzZU9nZ2lLNjNsSW9pWkM1NU1hS293V1FWZUNRZzcxdzBTYkNSWnMya2xyYU1iTWlfN3JrMXNMclh3RFRvdC00aWhi?oc=5",
+   "publicado": "2026-11-10T14:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Fed sinaliza possível alta de 0,5 ponto após inflação acima do esperado",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd0UxbWRacjhPSk9vTndEX1h3b3I1Q3YtV1BMUTJfc1R5clh4NDNGRWFhZ1h4YXJwdnY1LXUtZ1VheFBTZnphRWVHbTBaRDBRZkhuM1hQNXZQRmhMTTc2ajZpNllSa3hvZHJnTkZYdEJhWVg2MWl6VVNSWDltZ2tXdGVPaTIzMXdOREl5MVZ3XzA4NzdfYy1pbGM5ZE04ZFVpZGJGaXJPWEpvU0t4Tmt4UGI5Ynd2RExLTmVXbXNhY250VWZva1VENg?oc=5",
@@ -2434,7 +2445,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T15:38-03:00",
+ "atualizado_em": "2026-11-10T15:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2452,7 +2463,7 @@
    "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "publicado": "2026-11-10T15:36-03:00",
+   "publicado": "2026-11-10T15:40-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2527,6 +2538,17 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe pouco, mas ação dispara quase 24% na semana; o que explica o salto?",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQmpsYXJ5S0diZ21FREE1bktvWXhKY0F0N0pCWm9yajNjWUZiYXFzWkF3dXlDTE1HMXhyLVBob0Y0bDNIYVp1T1p5ME1MSHdvYm9uZFVicU5vVlh1VENfY2pvRkNNaEpCd241VG91TVJjVDQ5aFpacTVMUlg2OXNIMXA1WWRRRlFWWFhiTWp6WjZKZktDX2UzeFBzZU9nZ2lLNjNsSW9pWkM1NU1hS293V1FWZUNRZzcxdzBTYkNSWnMya2xyYU1iTWlfN3JrMXNMclh3RFRvdC00aWhi?oc=5",
+   "publicado": "2026-11-10T14:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -2629,18 +2651,6 @@
    "tickers": [
     "ASAI3"
    ]
-  },
-  {
-   "titulo": "Superávit comercial da China ultrapassa US$ 1 trilhão com salto nas exportações de alta tecnologia",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/china-superavit-comercial-ultrapassa-1-trilhao-salto-exportacoes-alta-tecnologia/",
-   "publicado": "2026-11-10T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
