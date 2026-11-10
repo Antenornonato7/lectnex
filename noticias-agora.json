@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:05-03:00",
+  "atualizado_em": "2026-11-10T13:08-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -143,7 +143,11 @@
     ],
     [
      "12:50",
-     171677.0
+     171739.0
+    ],
+    [
+     "12:53",
+     171665.0
     ]
    ]
   },
@@ -348,7 +352,11 @@
     ],
     [
      "13:05",
-     5.6029
+     5.6043
+    ],
+    [
+     "13:08",
+     5.6035
     ]
    ]
   },
@@ -933,7 +941,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.21,
     "dolar30": 0.18
    },
    {
@@ -1985,7 +1993,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:05-03:00",
+ "atualizado_em": "2026-11-10T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2034,18 +2042,6 @@
    "tickers": []
   },
   {
-   "titulo": "Taxas longas do DI sobem após ata do Copom",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM084X19QMm1KbDZ6ejFDbUJ1a2dqajVrektxM0g5NGVicl83RGh5NW94SDJRSnJqUmlObVJQVG1tSnI4WlBaZEdoZGdFQzRrb0FVdEZFWU1mTTRaRktTLUo5QlhwS01kNm83SkZHc1RIQ2NuX0NreWJHaTVtM1ptRk81cUhHRW52NEt4LVM3eFpzWF9WVmlEb256WQ?oc=5",
-   "publicado": "2026-11-10T12:57-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Banco Central do Paraguai afirma que devolveu o dinheiro de 93% dos clientes do Ueno Bank",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/banco-central-do-paraguai-afirma-que-devolveu-o-dinheiro-de-93-dos-clientes-do-ueno-bank-npr/",
@@ -2068,6 +2064,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Magazine Luiza salta 7% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
+   "publicado": "2026-11-10T12:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
   },
   {
    "titulo": "Bolsas de NY caem com inflação nos EUA reforçando apostas de alta de juro pelo Fed",
@@ -2123,7 +2132,7 @@
   {
    "titulo": "Tesouro Direto hoje cai mesmo com ata mais dura do Copom; IPCA+ 2032 vai a 7,71%",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMm5zemYxVW5rTE15LV9LWENGVjNINXpLaFVvNkt2d2ZyYW52NHFHbFI3cEMxZnBZOHYweHdKemVkM0xqMkhDb3FPTmczdllzVDBkRk15U09rNzFqc3d5WHRyMFNEVGtZOUtHMHhVWDNyMFludVhCU2dYY0hZdFJaWU5IY05wLVZ4YzF1X2ZTQl85Z1FSbEpFYzFoTjRmNTRVUU9IN3pwZVpTeXQ4X1ZjOHNiWEt5NGVxdGpwSzVjWEw4Y3F0ek04VDRyaTVoUmJZcjFDWjFR0gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
    "publicado": "2026-11-10T11:16-03:00",
    "impacto": "alto",
    "ativos": [
