@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:30-03:00",
+  "atualizado_em": "2026-11-10T12:33-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -115,7 +115,11 @@
     ],
     [
      "12:15",
-     171601.0
+     171555.0
+    ],
+    [
+     "12:18",
+     171546.0
     ]
    ]
   },
@@ -292,7 +296,11 @@
     ],
     [
      "12:30",
-     5.594
+     5.5946
+    ],
+    [
+     "12:33",
+     5.595
     ]
    ]
   },
@@ -763,7 +771,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.04,
+    "ibov30": 0.01,
     "dolar30": 0.06
    },
    {
@@ -1886,7 +1894,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:30-03:00",
+ "atualizado_em": "2026-11-10T12:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1926,19 +1934,6 @@
    "tickers": []
   },
   {
-   "titulo": "Magazine Luiza salta 7% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
-   "publicado": "2026-11-10T12:17-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
-   ]
-  },
-  {
    "titulo": "Bolsas de NY caem com inflação nos EUA reforçando apostas de alta de juro pelo Fed",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY2tWX21seDF3b2tCSm9sLW9hZVpsRXFKWDhsRU5HQ09lZTh5VUxzdW5EQm5vLWgxNXBzZ2JWZHEyc1A4Z2pLdWxxWVpvX0RqMzNENzhkQ1BXREE1c0x1RV9QcXFsUHdIcDZjcGViRjBQQW5YRnY0NnRfeWd1bXlHUFlBSW1pTU1aRG40T1RiaWJiWWtSc2NpV3dhMGZfS1lXMDFwTmctS200NmY3cXRKNEJwaUFIWG1Ya2dLOExB0gHDAUFVX3lxTE4wVkJPQWhEdUVtaUlRUTV6cHRvQldvT3ZURUJYMVJaVnN5d0s4cF82bGRSQTBwT1dLci1ndVp2ZHYwd09RQmo5Z2RiTTByZFcxX1M0NFZSTmd0UDJiQmVJUHlaVThWcE8xLTNHY0JTd3Bldm11S1dyNHAyQ0FHMmNXSHpDbXVsa2RRNHhpWW1sVjg2eHpYR044Sm9WbG9JckJVVDJzendHSmJrY3NEN2hFZkJ1MURkVl9NLVctN3hyaTRDaw?oc=5",
@@ -1963,25 +1958,22 @@
    "tickers": []
   },
   {
+   "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
+   "publicado": "2026-11-10T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
    "publicado": "2026-11-10T11:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
-   "titulo": "Selic 2027: Bradesco prevê juros em 13,75% até junho",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB?oc=5",
-   "publicado": "2026-11-10T11:20-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -2078,6 +2070,19 @@
    "publicado": "2026-11-10T10:37-03:00",
    "impacto": "alto",
    "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Título pré do Tesouro renova mínima pós-eleição em meio a queda do petróleo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSWtrcFBFV3VvcG9CNjRKMGdCaTJuNmhXUVRaV3ZXV001OE52bmNiZTRFRjl4b2hLNEVHYmdFWU1PY3J4Z0lmU1Z0OEZBOFphUUdKcll1ZklKTk4xMTh4M053QVVxTU9tUnlJQ3hzME1KOTN4LU9jRHRmNDMwcVd5YnVkVUtZMi1Xcy13eHRTcXjSAZYBQVVfeXFMTmRGYTc4dzMwd0JwR2ptTWhFZDE4cGptUnRoenNwY1V4SE5qSjVnZmdTbzV4OFZpbjh6RFAwNUNlQ0xCZzdPUzg0eGdGQ0Jkb3c2MlZiY1VfbXhseWpJLXM3V0VNVFJkcDctZmJzbzEtSkI0dnIxVUxJdEwyMDlYenpIeFBrWDlyaUtQU3ZFRWFWdG9iWkJ3?oc=5",
+   "publicado": "2026-11-10T10:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
