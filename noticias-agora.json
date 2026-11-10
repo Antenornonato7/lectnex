@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T10:43-03:00",
+  "atualizado_em": "2026-11-10T10:45-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -27,11 +27,11 @@
     ],
     [
      "10:25",
-     172878.0
+     173050.0
     ],
     [
-     "10:28",
-     172947.0
+     "10:30",
+     172649.0
     ]
    ]
   },
@@ -120,11 +120,11 @@
     ],
     [
      "10:40",
-     5.5677
+     5.5693
     ],
     [
-     "10:43",
-     5.5673
+     "10:45",
+     5.5736
     ]
    ]
   },
@@ -302,7 +302,7 @@
      "MGLU3"
     ],
     "ibov30": null,
-    "dolar30": 0.28
+    "dolar30": 0.39
    },
    {
     "hora": "10:19",
@@ -315,7 +315,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.39
    },
    {
     "hora": "10:27",
@@ -356,6 +356,19 @@
     "ativos": [
      "WIN",
      "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:45",
+    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "impacto": "medio",
+    "ativos": [
      "DI"
     ],
     "tickers": [],
@@ -1114,6 +1127,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T10:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1148,7 +1172,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T10:43-03:00",
+ "atualizado_em": "2026-11-10T10:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1164,10 +1188,33 @@
  ],
  "noticias": [
   {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T10:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T10:42-03:00",
+   "publicado": "2026-11-10T10:44-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "France blames Iran for supermarket refrigerator cyberattacks, weighs sanctions",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html",
+   "publicado": "2026-11-10T10:43-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1261,31 +1308,6 @@
    "tickers": [
     "MGLU3"
    ]
-  },
-  {
-   "titulo": "Magalu surfa crise da Casas Bahia e fala em 'oportunidade histórica' de ganho de mercado",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/magalu-surfa-crise-da-casas-bahia-e-fala-em-oportunidade-historica-de-ganho-de-mercado.shtml",
-   "publicado": "2026-11-10T09:54-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
-   ]
-  },
-  {
-   "titulo": "BC defende juros altos por mais tempo e não sinaliza retomada dos cortes, diz ata do Copom",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdGJiWDB6cDd0RU54WENEcFV0eGpKUWxndUlGMEJNTDB0THAzOUVuMVRhLUtnVk15N3ktTkdkQjIwM0RxTDE4cFVZTDlRWVlpc0FFWjdfSFJLbXVxTFM2QUF6djJQYkRuQ0N3M3pTYVBYN202NnpRNXpOQUE1VlNJN3NJVVN2bS1ETTQtVkhPcnVOYVltdXAyeWgwUzFub19vV2tRNDZPQmZEWjdhbWZGVmE3VjlQZVcw?oc=5",
-   "publicado": "2026-11-10T09:34-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Dólar tem forte alta com sinalizações de Fed e Copom em dia de dados de inflação nos EUA",
