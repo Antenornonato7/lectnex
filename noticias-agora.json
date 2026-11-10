@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T17:40-03:00",
+  "atualizado_em": "2026-11-10T17:43-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171388.0
+     171366.0
     ]
    ]
   },
@@ -768,7 +768,11 @@
     ],
     [
      "17:40",
-     5.5812
+     5.5803
+    ],
+    [
+     "17:43",
+     5.5808
     ]
    ]
   },
@@ -1791,7 +1795,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.05
    },
    {
     "hora": "17:20",
@@ -1800,6 +1804,21 @@
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdVRQQVVBVjRweW1NaVpxUEFodDV2aDFydlItZnBqdGlJcndGemIxRUszY3ZwRVk5eGlhTWp0bE9fMy1OdXJ2cnZQVGhYYV9iZTYxMjBRYkJacEZyaXNlOUZwOGN6M3NWRTN5cC1aeWwxNmZ0b1hqaDNuWWtfQTVOYnlFaVdsR0FMaG9ib2lZMW9lU3gtS2g3cWsxX0vSAaIBQVVfeXFMTmFBbTVwcTR1dEdUb2tldkRWZl9LclFtSkI0ZkVNVnFSeGxZYlp1UU4tZDdTczlZMXR5VG1PTjVZUFpZdDlTN0RnTE0zM3J4WUFNMXhEdXR5NlhIYWZ6bWZ1U3ZSZVVKU0Z0SDZCM0szREdqWTdNQTdEQTZzNGVNSHoyZGRtcHhNQllZRkRwOTE2WHJ0N0prM3NJalFXaUZycXhR?oc=5",
     "impacto": "alto",
     "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:21",
+    "titulo": "Galípolo: Sempre desconfie se alguém oferecer solução simples a problemas complexos",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/galipolo-sempre-desconfie-se-alguem-oferecer-solucao-simples-a-problemas-complexos/",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
      "WDO",
      "DI"
     ],
@@ -1838,18 +1857,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ambiente de expectativas desancoradas requer juros altos por mais tempo, diz ata do Copom",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPTzBBUDJKTzQxR0lLVnBMQWtmTWVUcUE1Zk9zS1NVd0s1TFJpLXZkNVUzSHBudlpsbjBEbW8xRFFjbzZneTF0MjRCWlZiTXhCSTNMN3Ftdl9DZlVOcnlMNF9NVFA3RUFLUEk5dHNVSGFsbDhlNFpmTWdCeTRmazRSRHc2R1M4cy1RbklWVWs2MGItUlZRc0JqV1FmMnYxUVgyeFF2UlN4TU8wYzV3ZHJSUmM4X0puSHVFUGo0UVJxLWk3WUZLbG5VckltQnloUWdfRTJzSk1TdWJTVGQ1T3dj0gHuAUFVX3lxTE9OanoyV3N3TmhMNUVqTUY5YjV1aTQ2MnhQeXM3YlUwV0s3ZHFIMlQ5bnhnd0h5TGVtUWVfOXE2ODhWc1kwQTdMTEpfbzRSMjVHSHI0a011VDBORTZVWUlWd3VnaUNndVBMNVBsQVF0d1pLWFNFRjZQMzM3bkw2UG1xa2xtbHJheXdGSW1pUS02czNqTmFwcWtLcVVzTDVxanJFei0zZUtDWENBcGJ3UWJHeDd3eWR0VUVGUzJkandoTmdXcy1lUkEyMFRZMjVZa054ZkkwY1hocG1YUGV5UVBMem1JVGhWR2ZRSFhubFE?oc=5",
-   "publicado": "2026-11-10T08:41-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ambiente de expectativas desancoradas requer juros altos por mais tempo, diz ata do Copom",
    "fonte": "Valor",
@@ -2819,6 +2826,19 @@
    "tickers": []
   },
   {
+   "titulo": "Galípolo: Sempre desconfie se alguém oferecer solução simples a problemas complexos",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/galipolo-sempre-desconfie-se-alguem-oferecer-solucao-simples-a-problemas-complexos/",
+   "publicado": "2026-11-10T17:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar à vista vai ao maior patamar desde julho de 2025 com misto de risco local e externo",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQUVqTkxOMTdpNEhzYXQ3Tnc2ZkktdjVIVEx5VnNEX3NLa1BBVF9URG84bmxFalJyMEFNTkdpNzg5NFV5Y0RtUDJXbTc0NlpNX3NiYk5Ib2s2QzhkUTk5MnhYd09WVU5HWHlxR0ZlcFk3TlRRdm9jRXd3TS1kOXRtVElfVDdZYmlTNG11V0FDVzcwWTRKZk5GWU80cDFObGFMU2ZCUHN3ZExuUVRWS1NmbURvMmMyVVZhdzYwN2hXR0lDYjVOajVNcDFMajZTVTFpODVDWDk0SkdnbjlPRkZ1YtIB7wFBVV95cUxONWFCci1ISDQ5VlMzQ1FacTJfT3JYdHZIR3lZem8xTzNXWFJGV0RtaDhjVjhrN0xVOHczRV93eWIzSXRzMVg2d2JzYkV3UzhDbEtzRnNiX3FIYjFFbG1wQzR2dmlsZU00VFFjZkhVVGVFc3FiczdoVlBtUkgxUHozc0oyVFUyTHEwVnJnM0ZvUU9JVmlQYkJ1Zk8wanU3SFhQb0FSRnBxYTlFd3JCMnUyUjIzNmwxcWVueHJxTUZHbWlzUFYxMF93WXlnUk16R18tMzBfY2xNLTlMUnowdy16NzIta2doYXFBQS1xV3JDRQ?oc=5",
@@ -2870,7 +2890,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T17:40-03:00",
+ "atualizado_em": "2026-11-10T17:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2917,6 +2937,19 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Galípolo: Sempre desconfie se alguém oferecer solução simples a problemas complexos",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/galipolo-sempre-desconfie-se-alguem-oferecer-solucao-simples-a-problemas-complexos/",
+   "publicado": "2026-11-10T17:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -3031,18 +3064,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Op-ed: In Nvidia CEO Jensen Huang's alleged China spy scandal, there's plenty of blame to go around",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/nvidia-ceo-jensen-huang-china-spy-scandal.html",
-   "publicado": "2026-11-10T16:40-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
