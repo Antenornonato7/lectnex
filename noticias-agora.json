@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:35-03:00",
+  "atualizado_em": "2026-11-10T12:38-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -119,7 +119,11 @@
     ],
     [
      "12:20",
-     171493.0
+     171641.0
+    ],
+    [
+     "12:23",
+     171649.0
     ]
    ]
   },
@@ -300,7 +304,11 @@
     ],
     [
      "12:35",
-     5.5969
+     5.5968
+    ],
+    [
+     "12:38",
+     5.5973
     ]
    ]
   },
@@ -785,7 +793,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.02,
+    "ibov30": 0.06,
     "dolar30": 0.04
    },
    {
@@ -799,7 +807,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.02,
+    "ibov30": 0.06,
     "dolar30": 0.04
    },
    {
@@ -829,7 +837,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.03
    },
    {
     "hora": "12:18",
@@ -1894,7 +1902,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:35-03:00",
+ "atualizado_em": "2026-11-10T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1978,6 +1986,17 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T11:50-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2071,18 +2090,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar salta 1% e se aproxima de R$ 5,60 após inflação nos EUA superar expectativas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNXJVeEVBcGxzTTlGWmhpU2FTcXluWWlEZ3o4OE9CX3JnZkczVVFfMmRFZjBOWGt5RTFUc3hVQkxnUUVpbzR4ZGhzc3BGc1l3UklkQTExd0xoeTdibW1LWGtZaDl0Z2JOWGQ3SXNjaHI0bnVYemtSMnBBdHRUV05NTmx5TThoMW5yaFZJSElqQmYzNV9LMEhuM19DenPSAaIBQVVfeXFMT0lxSE50RHZWLUFIV2hjUmI2SUhhY3JOLXlabF9kY2ZaakZPU010MVhheUdlMjlvTmFsWXdVZURCZ0Q3c25WcEU4NTNLeXpuV043ZldFckdFNE5mQWJWV2JyRzAyTEVjVEppZkJDUk1IWU53S3M4V0Rzek9PY2hBeFNpUmJNWWFpS2IxLWR6WGRRUmxKeW9YbWpyUWZYZy1YZUh3?oc=5",
-   "publicado": "2026-11-10T10:37-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
