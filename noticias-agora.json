@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T14:48-03:00",
+  "atualizado_em": "2026-11-10T14:50-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -223,11 +223,11 @@
     ],
     [
      "14:30",
-     171335.0
+     171312.0
     ],
     [
-     "14:33",
-     171309.0
+     "14:35",
+     171282.0
     ]
    ]
   },
@@ -515,8 +515,8 @@
      5.5892
     ],
     [
-     "14:48",
-     5.5876
+     "14:50",
+     5.5881
     ]
    ]
   },
@@ -2331,7 +2331,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T14:48-03:00",
+ "atualizado_em": "2026-11-10T14:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2346,10 +2346,22 @@
  ],
  "noticias": [
   {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T14:49-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T14:46-03:00",
+   "publicado": "2026-11-10T14:48-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -2407,18 +2419,6 @@
    "tickers": []
   },
   {
-   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "publicado": "2026-11-10T13:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Here's the inflation breakdown for October 2026 — in one chart",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html",
@@ -2428,20 +2428,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Vale supera Petrobras em novembro; o jogo virou para as gigantes da Bolsa brasileira?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeDNyZlhOejhKdElTdG13dlZDeXZHa1MzTXQ0cG1lbWlhUk5LUFROaFZaOXUtVmMzUWlYT0hxTEtyQXVqSllKWHR4dHY2MXZZSzhWSHAyMFFOQ2lqdkNfT3EyNmpmZ0U4Ml9NU2NYRDRSZVV6Vm84cmhQNXhhbkFhZXJyLTZTbDcwWXB1UlI4NDJZam1LeHlpVEVhbi1sUl9sRDNRcmZKZHFjOHZ4Y2lwWXE3Ny1LcWdZOFFZREJYWlZtUnFn0gHKAUFVX3lxTE90WDJQa2Rmb2dWZEtoejg5ZWJIeEs0eXowTFNscjgtTzBsQXlEQzhjZmlHa19FUTQxR3VTNEUybTR1VU9OVmtvMzQ3WVYzZzd4UGdpelJDMTFUR1ZFX1NRR0xYQjVoRXU3bERlNDlXd1Nkd2ZEeVhLWkl0bFdTMnN1bnVUbFNTY2hlTnM4cVFwU1FPOXJmei0tOTZVMkk2dHg0a2FJQjBXb0RrcnQ4Qm9kSnd6bkhKck9YWE43TE90MTl6T1B0WERrS3c?oc=5",
-   "publicado": "2026-11-10T13:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4",
-    "VALE3"
-   ]
   },
   {
    "titulo": "Ibovespa vira para queda com pressão de Vale e exterior; dólar sobe e chega a R$ 5,60",
@@ -2500,10 +2486,22 @@
    "titulo": "Ibovespa hoje cai e dólar sobe quase 2% após dado de inflação dos EUA",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
-   "publicado": "2026-11-10T12:56-03:00",
+   "publicado": "2026-11-10T12:57-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros: combinação de fatores compõe cenário em que dificilmente Copom evitará novas altas na Selic",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOc1JlUHl2aFhxMVJEaHRvcXRWeUxwWTRkSHFfMTdIakN4X1ZCV3I4cE05aGR3dUgwZXNwOURsb0dqTDhPWjZwc3FLU21Gc0lqX0JaS2gxcTNOOThSN1lCZWZnemJsUndpX1o3eFp4NDgybnZndUlsT2Y1Rzh6S2x3VUtXVDRuZm45UkV0Z19sY1dUanpod3ZSU1o5NGR6VWJTdldTX2hOeFFqemtsYmliUjYwSW9Bb05VYlNnYTBnbXZhNkxpemFvcVFaSnFyU1A4d0tnRFBzSXc2cnU4OWQzVHZIR01CNGg0QlYzbktwQlpxYmxx?oc=5",
+   "publicado": "2026-11-10T12:52-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
