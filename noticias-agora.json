@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:25-03:00",
+  "atualizado_em": "2026-11-10T12:28-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -111,7 +111,11 @@
     ],
     [
      "12:10",
-     171613.0
+     171625.0
+    ],
+    [
+     "12:13",
+     171600.0
     ]
    ]
   },
@@ -284,7 +288,11 @@
     ],
     [
      "12:25",
-     5.5915
+     5.5955
+    ],
+    [
+     "12:28",
+     5.5925
     ]
    ]
   },
@@ -799,7 +807,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": 0.01
    },
    {
     "hora": "12:11",
@@ -1878,7 +1886,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:25-03:00",
+ "atualizado_em": "2026-11-10T12:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1893,6 +1901,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Petróleo Brent cai abaixo de US$ 90 pela primeira vez desde agosto",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petroleo-brent-cai-abaixo-de-us-90-pela-primeira-vez-desde-agosto.shtml",
+   "publicado": "2026-11-10T12:24-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa reduz fôlego com inflação dos EUA e cai após superar 173 mil pontos",
    "fonte": "InfoMoney",
@@ -1943,25 +1963,22 @@
    "tickers": []
   },
   {
+   "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
+   "publicado": "2026-11-10T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
    "publicado": "2026-11-10T11:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
-   "titulo": "Selic 2027: Bradesco prevê juros em 13,75% até junho",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB?oc=5",
-   "publicado": "2026-11-10T11:20-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -1987,7 +2004,7 @@
   {
    "titulo": "Tesouro Direto hoje cai mesmo com ata mais dura do Copom; IPCA+ 2032 vai a 7,71%",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMm5zemYxVW5rTE15LV9LWENGVjNINXpLaFVvNkt2d2ZyYW52NHFHbFI3cEMxZnBZOHYweHdKemVkM0xqMkhDb3FPTmczdllzVDBkRk15U09rNzFqc3d5WHRyMFNEVGtZOUtHMHhVWDNyMFludVhCU2dYY0hZdFJaWU5IY05wLVZ4YzF1X2ZTQl85Z1FSbEpFYzFoTjRmNTRVUU9IN3pwZVpTeXQ4X1ZjOHNiWEt5NGVxdGpwSzVjWEw4Y3F0ek04VDRyaTVoUmJZcjFDWjFR0gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
    "publicado": "2026-11-10T11:16-03:00",
    "impacto": "alto",
    "ativos": [
@@ -2068,19 +2085,6 @@
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSlpiZ2RMZnQycnVIWTJSUnBRVTMyZUViNXBDbWEwckhJRkZBUlpyc2oyZ1VOYmhCWVJ6YzhFU3ZFemxManVnUW1BcHBoc1VWZ2wtYkItNkZyU3pBVlAzZjV5cEpDRTM0bkxsakRTWUkxbUdJTWdFM0RtNGtUaDJyYWdfV0NEcnU2V1AzNzV0MUVfREg3eUUwN2JjVUctS1VjZThUY3RORzN4VHZBSWZKVWZzYi1BT1VqQnVZMFUyRQ?oc=5",
    "publicado": "2026-11-10T10:28-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa avança com ata do Copom e inflação dos EUA no radar; dólar sobe",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV0Z0cFExdVljSnNFejFqQllTRHF1ODVLMURCOHlpcXpnUzFQZ3Z3QS1qNUpIMU4xdExRNWk1ZGJSdEJJb3ZvQm51WVlrM0lWUl9ZTkRHZzRWS2d1MWVtSlFzSFFXNGY2Sk1jcDJMSFJWb2ppeHdWalFXRVhyMF84R2hoOHk4akVDWG9VNUpCM05ieUwyNXNfVy1jeDNvVzhSZGpXSlRn?oc=5",
-   "publicado": "2026-11-10T10:27-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
