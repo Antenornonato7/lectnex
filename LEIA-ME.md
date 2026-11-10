@@ -134,3 +134,9 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 
 - `scripts/ferramentas.py` gera `vencimento-mini-indice-mini-dolar.html`, `calculadora-ir-day-trade.html` e `valor-do-ponto-mini-indice-mini-dolar.html`. O texto de resposta e as perguntas frequentes (JSON-LD FAQPage) ficam no HTML; a ferramenta usa o núcleo `LX`. Edite os textos no script e rode-o de novo.
 - Ao mudar regra de imposto ou especificação de contrato, atualize também estas páginas e o glossário.
+
+## Falhas das automações
+
+- O **Relógio** (`coletor/relogio.py`) tenta de novo, uma vez, toda tarefa que falhar (3 min depois, dentro da janela do horário).
+- Se falhar duas vezes seguidas, o workflow **Alerta de falha** avisa no chat privado do Telegram, uma única vez por falha. Tarefas de intervalo (cotações, notícias, monitor) continuam no ritmo normal e avisam uma vez por sequência de falhas.
+- As automações que gravam dados no repositório repetem `pull` + `push` até 4 vezes, para não falhar quando dois robôs publicam no mesmo segundo.

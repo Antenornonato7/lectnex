@@ -1,5 +1,8 @@
 """Relógio do Lectnex: o único agendador do site.
 
+Se uma tarefa falha, tenta de novo uma vez (3 min depois, dentro da janela). Se falhar duas vezes seguidas, avisa no
+chat privado do Telegram pelo workflow "Alerta de falha" (um aviso por falha) e não insiste até o próximo horário.
+
 Roda a cada ~10-30 min (agendamento do próprio GitHub e/ou um "pinger" externo que dispara este workflow)
 e decide, pelo horário de Brasília, quais tarefas estão devidas. Dispara cada uma por workflow_dispatch.
 É idempotente: se a tarefa já rodou no horário (ou está na fila), não dispara de novo — então pode ser
@@ -82,7 +85,18 @@ TAREFAS = [
 ]
 
 
+FALHA = ('failure', 'timed_out', 'startup_failure')
+ESPERA_RETENTAR = 3   # minutos depois de uma falha antes de tentar de novo
+
+
+def quando(iso):
+    return dt.datetime.fromisoformat(iso.replace('Z', '+00:00')).astimezone(BRT)
+
+
 def ultimas(arq, titulo):
+    """Execuções recentes da tarefa, da mais nova para a mais antiga: {t, fim, estado}.
+    estado: 'ok' (sucesso), 'falha', 'andando' (na fila ou rodando). Canceladas são ignoradas: o cancelamento
+    acontece quando uma execução mais nova da mesma tarefa toma o lugar dela."""
     runs = api(f'{API}/{arq}/runs?per_page=15').get('workflow_runs', [])
     out = []
     for r in runs:
@@ -90,30 +104,91 @@ def ultimas(arq, titulo):
             continue
         if titulo and not (r.get('display_title') or '').startswith(titulo):
             continue
-        out.append(dt.datetime.fromisoformat(r['created_at'].replace('Z', '+00:00')).astimezone(BRT))
-    return out
+        if r.get('status') != 'completed':
+            estado = 'andando'
+        elif r.get('conclusion') in FALHA:
+            estado = 'falha'
+        elif r.get('conclusion') == 'cancelled':
+            continue
+        else:
+            estado = 'ok'
+        out.append({'t': quando(r['created_at']), 'fim': quando(r.get('updated_at') or r['created_at']), 'estado': estado, 'url': r.get('html_url', '')})
+    return sorted(out, key=lambda x: x['t'], reverse=True)
 
 
 def devida(regra, runs):
+    """(disparar?, motivo, alerta). Depois de UMA falha, tenta de novo (passados ESPERA_RETENTAR min).
+    Depois de DUAS falhas seguidas, não insiste e devolve um alerta para o chat privado."""
+    recente = lambda x: (AGORA - x['fim']).total_seconds() / 60 >= ESPERA_RETENTAR
     if regra[0] == 'intervalo':
-        return not runs or (AGORA - max(runs)).total_seconds() / 60 >= regra[1], f'a cada {regra[1]} min'
+        if not runs:
+            return True, f'a cada {regra[1]} min', None
+        seq = []
+        for x in runs:   # falhas seguidas mais recentes
+            if x['estado'] != 'falha':
+                break
+            seq.append(x)
+        if runs[0]['estado'] == 'andando':
+            return False, 'rodando agora', None
+        if len(seq) >= 2:
+            # continua no ritmo normal (fontes de dados voltam sozinhas), mas avisa uma vez por sequência de falhas
+            alerta = {'chave': seq[-1]['t'].strftime('%Y-%m-%d %H:%M'), 'falhas': len(seq), 'url': seq[0]['url'], 'segue': True}
+            return (AGORA - runs[0]['t']).total_seconds() / 60 >= regra[1], f'{len(seq)} falhas seguidas', alerta
+        if len(seq) == 1 and recente(seq[0]):
+            return True, 'tentando de novo após falha', None
+        return (AGORA - runs[0]['t']).total_seconds() / 60 >= regra[1], f'a cada {regra[1]} min', None
     horarios, janela = regra[1], regra[2]
     passados = [hm(h) for h in horarios if hm(h) <= AGORA <= hm(h) + dt.timedelta(minutes=janela)]
     if not passados:
-        return False, 'fora do horário'
+        return False, 'fora do horário', None
     slot = max(passados)
-    return not any(t >= slot - dt.timedelta(minutes=3) for t in runs), f'horário {slot:%H:%M}'
+    deste = [x for x in runs if x['t'] >= slot - dt.timedelta(minutes=3)]
+    if not deste:
+        return True, f'horário {slot:%H:%M}', None
+    if any(x['estado'] in ('ok', 'andando') for x in deste):
+        return False, f'horário {slot:%H:%M}', None
+    falhas = [x for x in deste if x['estado'] == 'falha']
+    if len(falhas) >= 2:
+        return False, f'horário {slot:%H:%M}: {len(falhas)} falhas, sem nova tentativa', {'chave': slot.strftime('%Y-%m-%d %H:%M'), 'falhas': len(falhas), 'url': falhas[0]['url']}
+    if recente(falhas[0]):
+        return True, f'horário {slot:%H:%M}: tentando de novo após falha', None
+    return False, f'horário {slot:%H:%M}: falhou, nova tentativa em instantes', None
+
+
+NOMES = {'cotacoes.yml': 'Cotações das ações', 'monitor.yml': 'Monitor do site', 'noticias.yml': 'Notícias', 'curva.yml': 'Curva de juros',
+         'reacao.yml': 'Reação do mercado', 'fechamento.yml': 'Fechamento do dia', 'resumo-dono.yml': 'Resumo do dono', 'kit.yml': 'Kit do dia',
+         'lembrete.yml': 'Lembrete', 'checar-resultados.yml': 'Conferir resultados', 'telegram.yml': 'Contagem do Telegram', 'termo.yml': 'Termômetro',
+         'sinais.yml': 'Sinais da manhã', 'instagram.yml': 'Instagram', 'antes.yml': 'Antes do dado', 'coletor-cvm.yml': 'Coletor CVM',
+         'semanal.yml': 'Resumo semanal', 'carrossel.yml': 'Carrossel da semana'}
+
+
+def alertar(arq, titulo, al):
+    """Dispara o workflow "Alerta de falha" uma única vez por falha (o título da execução é a chave)."""
+    chave = f"{arq.replace('.yml', '')}{' · ' + titulo if titulo else ''} · {al['chave']}"
+    ja = api(f'{API}/alerta.yml/runs?per_page=30').get('workflow_runs', [])
+    if any((r.get('display_title') or '') == f'Alerta {chave}' for r in ja):
+        return False
+    nome = NOMES.get(arq, arq) + (f' ({titulo})' if titulo and NOMES.get(arq) == 'Lembrete' else '')
+    texto = (f"⚠️ Lectnex: {nome} falhou {al['falhas']} vezes seguidas (desde {al['chave'][-5:]}).\n"
+             + ('Ela continua rodando no ritmo normal; aviso só uma vez até voltar a funcionar.' if al.get('segue') else 'O Relógio parou de insistir nesta tarefa até o próximo horário.')
+             + f" Log da última falha: {al['url']}")
+    if not DRY:
+        api(f'{API}/alerta.yml/dispatches', {'ref': 'main', 'inputs': {'chave': chave, 'texto': texto}})
+    return True
 
 
 def main():
     print(f'Relógio {AGORA:%a %d/%m %H:%M} (Brasília) · pregão hoje: {"sim" if PREGAO else "não"}')
-    disparadas = []
+    disparadas, alertas = [], []
     for arq, titulo, inputs, regra, janela in TAREFAS:
         if not janela():
             continue
         try:
             runs = ultimas(arq, titulo)
-            ok, motivo = devida(regra, runs)
+            ok, motivo, alerta = devida(regra, runs)
+            if alerta and alertar(arq, titulo, alerta):
+                print(f'::warning::{arq}: {alerta["falhas"]} falhas seguidas, alerta enviado')
+                alertas.append(arq)
         except urllib.error.HTTPError as ex:
             print(f'::warning::{arq}: não consegui ler as execuções (HTTP {ex.code})')
             continue
@@ -129,7 +204,7 @@ def main():
                 print(f'::error::{arq}: falhou ao disparar (HTTP {ex.code}: {ex.read().decode()[:160]})')
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
-            f.write(f"### Relógio {AGORA:%d/%m %H:%M}\n\n" + ('Disparadas: ' + ', '.join(disparadas) if disparadas else 'Nada devido agora.') + '\n')
+            f.write(f"### Relógio {AGORA:%d/%m %H:%M}\n\n" + ('Disparadas: ' + ', '.join(disparadas) if disparadas else 'Nada devido agora.') + ('\n\nAlertas de falha: ' + ', '.join(alertas) if alertas else '') + '\n')
 
 
 if __name__ == '__main__':
