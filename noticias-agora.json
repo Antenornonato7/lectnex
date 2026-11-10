@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:50-03:00",
+  "atualizado_em": "2026-11-10T11:53-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -83,7 +83,11 @@
     ],
     [
      "11:35",
-     172233.0
+     171877.0
+    ],
+    [
+     "11:38",
+     171786.0
     ]
    ]
   },
@@ -228,7 +232,11 @@
     ],
     [
      "11:50",
-     5.5936
+     5.594
+    ],
+    [
+     "11:53",
+     5.594
     ]
    ]
   },
@@ -564,7 +572,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.19,
+    "ibov30": -0.4,
     "dolar30": 0.14
    },
    {
@@ -581,7 +589,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": -0.19,
+    "ibov30": -0.4,
     "dolar30": 0.14
    },
    {
@@ -595,7 +603,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.59,
     "dolar30": 0.33
    },
    {
@@ -658,13 +666,27 @@
      "BBDC4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.27
    },
    {
     "hora": "11:31",
     "titulo": "Taxas longas dos juros futuros sobem após ata do Copom",
     "fonte": "InfoMoney",
     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWTYxRGNUVHdUbVRDd2JZM2o5Qi1yeTh5c1puSXdIXzNHajgtb0x2T1p4UWIwcE5kY2tDRWZ5ak5Zc3BTTDFuYlRxX1d1WDlwbk12Nm1fenZTcHZYZUhGU3BzTzlZdm9Bb2licXBDLUtRZkRWZHlvSUNILURqdzBXQWlTYTB2VE45R3NvZ3NHbDRVWERVaVlobdIBngFBVV95cUxNeXhMRnFHZUkzZGpVNzdzTjVUMkpvM0dPTS1lUUFXSzMtWU10Wlg3U3VLQXNhX3dBcmEtM0pINWdJdGowdmRlVlhrVjNIQ1NjNmhPcW9sN3pJdFpnWF9pZU0xaE55VS1XYk80TmpYMmRhcWx6ejY5UzVVNGppVDhoamlIeXhLcmlrazdDXzk0a2JKYUZzVktHazd0SWdkZw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:50",
+    "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -1606,6 +1628,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
+   "publicado": "2026-11-10T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1635,7 +1669,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:50-03:00",
+ "atualizado_em": "2026-11-10T11:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1650,6 +1684,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
+   "publicado": "2026-11-10T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
    "fonte": "CNBC",
@@ -1678,18 +1724,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/fda-warning-vision-loss-glp1-wegovy-zepbound.html",
    "publicado": "2026-11-10T11:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
-   "publicado": "2026-11-10T11:42-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
