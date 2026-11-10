@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:38-03:00",
+  "atualizado_em": "2026-11-10T12:08-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -71,11 +71,35 @@
     ],
     [
      "11:20",
-     172827.0
+     172549.0
     ],
     [
-     "11:23",
-     172786.0
+     "11:25",
+     172389.0
+    ],
+    [
+     "11:30",
+     172260.0
+    ],
+    [
+     "11:35",
+     171706.0
+    ],
+    [
+     "11:40",
+     171493.0
+    ],
+    [
+     "11:45",
+     171111.0
+    ],
+    [
+     "11:50",
+     171665.0
+    ],
+    [
+     "11:53",
+     171504.0
     ]
    ]
   },
@@ -208,11 +232,35 @@
     ],
     [
      "11:35",
-     5.5828
+     5.5833
     ],
     [
-     "11:38",
-     5.5849
+     "11:40",
+     5.5883
+    ],
+    [
+     "11:45",
+     5.5974
+    ],
+    [
+     "11:50",
+     5.5934
+    ],
+    [
+     "11:55",
+     5.589
+    ],
+    [
+     "12:00",
+     5.5949
+    ],
+    [
+     "12:05",
+     5.5943
+    ],
+    [
+     "12:08",
+     5.593
     ]
    ]
   },
@@ -520,7 +568,7 @@
      "PETR4",
      "VALE3"
     ],
-    "ibov30": null,
+    "ibov30": -0.04,
     "dolar30": 0.02
    },
    {
@@ -535,7 +583,7 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": null,
+    "ibov30": -0.11,
     "dolar30": 0.01
    },
    {
@@ -548,8 +596,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.13
+    "ibov30": -0.5,
+    "dolar30": 0.14
    },
    {
     "hora": "11:09",
@@ -565,8 +613,8 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
-    "dolar30": 0.13
+    "ibov30": -0.5,
+    "dolar30": 0.14
    },
    {
     "hora": "11:12",
@@ -579,8 +627,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.27
+    "ibov30": -0.76,
+    "dolar30": 0.33
    },
    {
     "hora": "11:16",
@@ -593,8 +641,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.95,
+    "dolar30": 0.35
    },
    {
     "hora": "11:20",
@@ -607,8 +655,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.83,
+    "dolar30": 0.3
    },
    {
     "hora": "11:20",
@@ -624,8 +672,8 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.83,
+    "dolar30": 0.3
    },
    {
     "hora": "11:27",
@@ -641,14 +689,42 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.51,
+    "dolar30": 0.18
    },
    {
     "hora": "11:31",
     "titulo": "Taxas longas dos juros futuros sobem após ata do Copom",
     "fonte": "InfoMoney",
     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWTYxRGNUVHdUbVRDd2JZM2o5Qi1yeTh5c1puSXdIXzNHajgtb0x2T1p4UWIwcE5kY2tDRWZ5ak5Zc3BTTDFuYlRxX1d1WDlwbk12Nm1fenZTcHZYZUhGU3BzTzlZdm9Bb2licXBDLUtRZkRWZHlvSUNILURqdzBXQWlTYTB2VE45R3NvZ3NHbDRVWERVaVlobdIBngFBVV95cUxNeXhMRnFHZUkzZGpVNzdzTjVUMkpvM0dPTS1lUUFXSzMtWU10Wlg3U3VLQXNhX3dBcmEtM0pINWdJdGowdmRlVlhrVjNIQ1NjNmhPcW9sN3pJdFpnWF9pZU0xaE55VS1XYk80TmpYMmRhcWx6ejY5UzVVNGppVDhoamlIeXhLcmlrazdDXzk0a2JKYUZzVktHazd0SWdkZw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.29
+   },
+   {
+    "hora": "11:50",
+    "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:54",
+    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+    "fonte": "Agência Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9USkVKbGFieVVOLTVCNmVaNThCd3JFYzZvcDJ5UlkyVldZUFNoZ2U3RVJnRDRqR3hvMVJiN3MzQUVLTWRaS0dJMDl4WDVqMmJDellzWEhyTHRrQmhT?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -1590,6 +1666,30 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
+   "publicado": "2026-11-10T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+   "fonte": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9USkVKbGFieVVOLTVCNmVaNThCd3JFYzZvcDJ5UlkyVldZUFNoZ2U3RVJnRDRqR3hvMVJiN3MzQUVLTWRaS0dJMDl4WDVqMmJDellzWEhyTHRrQmhT?oc=5",
+   "publicado": "2026-11-10T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1619,7 +1719,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:38-03:00",
+ "atualizado_em": "2026-11-10T12:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1635,14 +1735,38 @@
  ],
  "noticias": [
   {
-   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
+   "titulo": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
    "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T11:32-03:00",
+   "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
+   "publicado": "2026-11-10T12:04-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+   "fonte": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9USkVKbGFieVVOLTVCNmVaNThCd3JFYzZvcDJ5UlkyVldZUFNoZ2U3RVJnRDRqR3hvMVJiN3MzQUVLTWRaS0dJMDl4WDVqMmJDellzWEhyTHRrQmhT?oc=5",
+   "publicado": "2026-11-10T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
+   "publicado": "2026-11-10T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1768,13 +1892,12 @@
    "tickers": []
   },
   {
-   "titulo": "Título pré do Tesouro renova mínima pós-eleição em meio a queda do petróleo",
+   "titulo": "Dólar salta 1% e se aproxima de R$ 5,60 após inflação nos EUA superar expectativas",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSWtrcFBFV3VvcG9CNjRKMGdCaTJuNmhXUVRaV3ZXV001OE52bmNiZTRFRjl4b2hLNEVHYmdFWU1PY3J4Z0lmU1Z0OEZBOFphUUdKcll1ZklKTk4xMTh4M053QVVxTU9tUnlJQ3hzME1KOTN4LU9jRHRmNDMwcVd5YnVkVUtZMi1Xcy13eHRTcXjSAZYBQVVfeXFMTmRGYTc4dzMwd0JwR2ptTWhFZDE4cGptUnRoenNwY1V4SE5qSjVnZmdTbzV4OFZpbjh6RFAwNUNlQ0xCZzdPUzg0eGdGQ0Jkb3c2MlZiY1VfbXhseWpJLXM3V0VNVFJkcDctZmJzbzEtSkI0dnIxVUxJdEwyMDlYenpIeFBrWDlyaUtQU3ZFRWFWdG9iWkJ3?oc=5",
-   "publicado": "2026-11-10T10:34-03:00",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNXJVeEVBcGxzTTlGWmhpU2FTcXluWWlEZ3o4OE9CX3JnZkczVVFfMmRFZjBOWGt5RTFUc3hVQkxnUUVpbzR4ZGhzc3BGc1l3UklkQTExd0xoeTdibW1LWGtZaDl0Z2JOWGQ3SXNjaHI0bnVYemtSMnBBdHRUV05NTmx5TThoMW5yaFZJSElqQmYzNV9LMEhuM19DenPSAaIBQVVfeXFMT0lxSE50RHZWLUFIV2hjUmI2SUhhY3JOLXlabF9kY2ZaakZPU010MVhheUdlMjlvTmFsWXdVZURCZ0Q3c25WcEU4NTNLeXpuV043ZldFckdFNE5mQWJWV2JyRzAyTEVjVEppZkJDUk1IWU53S3M4V0Rzek9PY2hBeFNpUmJNWWFpS2IxLWR6WGRRUmxKeW9YbWpyUWZYZy1YZUh3?oc=5",
+   "publicado": "2026-11-10T10:37-03:00",
    "impacto": "alto",
    "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
@@ -1811,30 +1934,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-ata-do-copom-e-expectativa-por-dados-de-inflacao-nos-eua.shtml",
    "publicado": "2026-11-10T09:55-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar abre em alta com ata do Copom e expectativa por dados de inflação nos EUA",
-   "fonte": "Folha",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQkhDcjFUNDNtbkt0UTJzYkRKczhhbEFOd1RtYWpuQmd1d24tSlpfNGhkUExianp5OXZwcU5HOW5FRkJLcTJ0ZURXN1RzanlQdnQzM1J3Z3hRVGczbVNjQUhITDJDZVBOUGFEbkJINlFCN3ZwZGpLdU5HWHptVHY1MmdadVdiQkNJanFpcnJIMzFFa3oySlBBTHlFLUM5bXdDa05UanVFU2JFUzhMd3h2WmRGV3RCNWsyVmV0WEJrM1g0Ukh3SkthbVlKQQ?oc=5",
-   "publicado": "2026-11-10T09:55-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Copom alerta em ata para expectativa de inflação subir diante de risco fiscal e fim da 6x1",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/copom-alerta-ata-expectativa-inflacao-subir-risco-fiscal/",
-   "publicado": "2026-11-10T08:48-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
