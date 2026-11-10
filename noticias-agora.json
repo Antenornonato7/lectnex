@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T15:28-03:00",
+  "atualizado_em": "2026-11-10T15:30-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -255,11 +255,11 @@
     ],
     [
      "15:10",
-     170606.0
+     170675.0
     ],
     [
-     "15:13",
-     170629.0
+     "15:15",
+     170696.0
     ]
    ]
   },
@@ -576,11 +576,11 @@
     ],
     [
      "15:25",
-     5.5903
+     5.584
     ],
     [
-     "15:28",
-     5.5898
+     "15:30",
+     5.587
     ]
    ]
   },
@@ -1357,7 +1357,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.33,
+    "ibov30": -0.29,
     "dolar30": -0.01
    },
    {
@@ -2407,7 +2407,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T15:28-03:00",
+ "atualizado_em": "2026-11-10T15:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2421,6 +2421,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T15:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
    "fonte": "CNBC",
@@ -2453,18 +2465,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "publicado": "2026-11-10T14:49-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
