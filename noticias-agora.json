@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:38-03:00",
+  "atualizado_em": "2026-11-10T13:40-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -167,11 +167,11 @@
     ],
     [
      "13:20",
-     171310.0
+     171214.0
     ],
     [
-     "13:23",
-     171276.0
+     "13:25",
+     171278.0
     ]
    ]
   },
@@ -400,11 +400,11 @@
     ],
     [
      "13:35",
-     5.6088
+     5.6083
     ],
     [
-     "13:38",
-     5.6077
+     "13:40",
+     5.6088
     ]
    ]
   },
@@ -1036,7 +1036,7 @@
      "ASAI3"
     ],
     "ibov30": null,
-    "dolar30": 0.09
+    "dolar30": 0.08
    },
    {
     "hora": "13:08",
@@ -1050,7 +1050,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.09
+    "dolar30": 0.08
    },
    {
     "hora": "13:18",
@@ -1080,23 +1080,24 @@
     ],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "13:37",
+    "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Seleção Tech de Black Friday do Magalu tem notebooks, tablets, consoles e mais com desconto e cupons",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOdzgtdmQ3WV9lclY3YnVVU1VnZS1hemx6UWg5bS1JUnpuWHFtdWIySUJIUV8zM2FNRGdsak9NT3ZxeFBnaFVvamRSTEx0bHJfX2F6bTBNU19qT0lKU2taazRGVE54N0FjQWdlS3Q5emF4ZUxKSTZSX1VUTmxFMWdnQUN1NEU2WFN2NUZPSUVELWxBVm1GNVRRSjdZcm9DaGJwQ0w1U2JIbHVwNU03MVFQSHhsNEwzLVRpSFpDemdXbF9LY1FkUWZOUlFVQm5KcWlQRUM4R0gyWUozMlBRU0hSNDZiYTVzcDdZa05SakUwMWQ?oc=5",
-   "publicado": "2026-11-10T05:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
-   ]
-  },
   {
    "titulo": "Ações do Ibovespa: mediana do P/L cai abaixo do nível da pandemia após eleições",
    "fonte": "Estadão",
@@ -2088,6 +2089,18 @@
     "PETR4",
     "VALE3"
    ]
+  },
+  {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T13:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2117,7 +2130,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:38-03:00",
+ "atualizado_em": "2026-11-10T13:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2130,6 +2143,29 @@
   "InfoMoney"
  ],
  "noticias": [
+  {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T13:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T13:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Here's the inflation breakdown for October 2026 — in one chart",
    "fonte": "CNBC",
@@ -2192,17 +2228,6 @@
    ]
   },
   {
-   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T13:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB0gHbAUFVX3lxTE1OaTdVN2hhQmhFNGJvUnRPbzkxaF8xRU5zdjNNckkxTjZQTDBrVlpwM2QwM0JoNHlPalkyVFBZZVp2YzN2el9HNnAyc1BoME1FZ29TWENYR0JvbjBNMS13TnhzQVl3N200WHRqbTl1QVU2bFRqVnM2Rk01a2hReHV2M0w1QmRyMWJ1QzZiSkRqX2hlSzFBMGhVQ0ctU1pqcUxWaHRGNk90S1hMOGVtZ1pDMktISlk4LUZrUHE5VlVYUDZwNlh0eGdVVUFERXlYdERpSDVQUTg4UnJfdw?oc=5",
@@ -2229,18 +2254,6 @@
    "tickers": [
     "EMBR3"
    ]
-  },
-  {
-   "titulo": "Superávit comercial da China ultrapassa US$ 1 trilhão com salto nas exportações de alta tecnologia",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/china-superavit-comercial-ultrapassa-1-trilhao-salto-exportacoes-alta-tecnologia/",
-   "publicado": "2026-11-10T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Taxas longas do DI sobem após ata do Copom",
