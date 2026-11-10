@@ -140,3 +140,19 @@ Fluxo estrangeiro em ações vem direto do Banco Central (série SGS 22927), sem
 - O **Relógio** (`coletor/relogio.py`) tenta de novo, uma vez, toda tarefa que falhar (3 min depois, dentro da janela do horário).
 - Se falhar duas vezes seguidas, o workflow **Alerta de falha** avisa no chat privado do Telegram, uma única vez por falha. Tarefas de intervalo (cotações, notícias, monitor) continuam no ritmo normal e avisam uma vez por sequência de falhas.
 - As automações que gravam dados no repositório repetem `pull` + `push` até 4 vezes, para não falhar quando dois robôs publicam no mesmo segundo.
+
+## Relatório do Search Console (Telegram privado, toda segunda às 09h12)
+
+`coletor/search_console.py` (workflow **Search Console**) manda cliques, impressões, páginas e buscas da semana, oportunidades (posição 5–20) e uma amostra de indexação das páginas novas. Os dados vão só para o Telegram privado, nunca para o repositório.
+
+Configuração (uma vez):
+
+1. Em https://console.cloud.google.com crie um projeto (ex.: "lectnex").
+2. Em **APIs e serviços → Biblioteca**, ative a **Google Search Console API**.
+3. Em **IAM e administrador → Contas de serviço**, crie uma conta (ex.: "relatorio-gsc"). Não precisa de papel no projeto.
+4. Abra a conta → **Chaves → Adicionar chave → Criar nova chave → JSON**. Um arquivo .json é baixado. Guarde em local seguro.
+5. No Search Console, em **Configurações → Usuários e permissões → Adicionar usuário**, cole o e-mail da conta de serviço (termina em `iam.gserviceaccount.com`) com permissão **Restrita**.
+6. No GitHub: **Settings → Secrets and variables → Actions → New repository secret**, nome `GSC_SERVICE_ACCOUNT`, valor = todo o conteúdo do .json.
+7. Em **Actions → Search Console → Run workflow** (com "teste" marcado) para receber o primeiro relatório.
+
+Opcional: segredo `GSC_SITE` com `sc-domain:lectnex.com.br` ou `https://lectnex.com.br/` se houver mais de uma propriedade.
