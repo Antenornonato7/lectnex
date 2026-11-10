@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:03-03:00",
+  "atualizado_em": "2026-11-10T13:05-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -139,11 +139,11 @@
     ],
     [
      "12:45",
-     171674.0
+     171787.0
     ],
     [
-     "12:48",
-     171717.0
+     "12:50",
+     171677.0
     ]
    ]
   },
@@ -344,11 +344,11 @@
     ],
     [
      "13:00",
-     5.6033
+     5.6015
     ],
     [
-     "13:03",
-     5.6053
+     "13:05",
+     5.6029
     ]
    ]
   },
@@ -905,7 +905,7 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": 0.09,
+    "ibov30": 0.16,
     "dolar30": 0.04
    },
    {
@@ -919,7 +919,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.07,
+    "ibov30": -0.01,
     "dolar30": 0.07
    },
    {
@@ -1985,7 +1985,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:03-03:00",
+ "atualizado_em": "2026-11-10T13:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2000,6 +2000,28 @@
  ],
  "noticias": [
   {
+   "titulo": "Inside Alts: Bridgepoint sees opportunity in 're-rated' real estate",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
+   "publicado": "2026-11-10T13:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T13:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Superávit comercial da China ultrapassa US$ 1 trilhão com salto nas exportações de alta tecnologia",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/china-superavit-comercial-ultrapassa-1-trilhao-salto-exportacoes-alta-tecnologia/",
@@ -2012,17 +2034,6 @@
    "tickers": []
   },
   {
-   "titulo": "Inside Alts: Bridgepoint sees opportunity in 're-rated' real estate",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
-   "publicado": "2026-11-10T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Taxas longas do DI sobem após ata do Copom",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM084X19QMm1KbDZ6ejFDbUJ1a2dqajVrektxM0g5NGVicl83RGh5NW94SDJRSnJqUmlObVJQVG1tSnI4WlBaZEdoZGdFQzRrb0FVdEZFWU1mTTRaRktTLUo5QlhwS01kNm83SkZHc1RIQ2NuX0NreWJHaTVtM1ptRk81cUhHRW52NEt4LVM3eFpzWF9WVmlEb256WQ?oc=5",
@@ -2030,17 +2041,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T12:56-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2084,7 +2084,7 @@
   {
    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
    "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMkM1UFdyYmlCQ0Y1Q3BwZlBvS1FTTHczalFqMElRRmtHWjZTcmZtTjlLbUVscUUydjVTYkJnZVEzUTdySXJ2U0lpSS1NenE5b1RBblk0QzRsRHhKZWNLRmR5X3BuZzlDM2YtM0lUU1RLRkFPcTdlWW10ckRPem9VYm5DSmNGX005X1RaeHYzSmtqOHpQVVMtd3h6aHFxSGx6RWtJR3NuaThZMlV4azJHc2x0RHdRTFBndEtOR0lZN1ZEbU1lRzBEV3NYTlowMXJpZHF2R2stSUJtTFU?oc=5",
    "publicado": "2026-11-10T11:54-03:00",
    "impacto": "alto",
    "ativos": [
@@ -2123,7 +2123,7 @@
   {
    "titulo": "Tesouro Direto hoje cai mesmo com ata mais dura do Copom; IPCA+ 2032 vai a 7,71%",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMm5zemYxVW5rTE15LV9LWENGVjNINXpLaFVvNkt2d2ZyYW52NHFHbFI3cEMxZnBZOHYweHdKemVkM0xqMkhDb3FPTmczdllzVDBkRk15U09rNzFqc3d5WHRyMFNEVGtZOUtHMHhVWDNyMFludVhCU2dYY0hZdFJaWU5IY05wLVZ4YzF1X2ZTQl85Z1FSbEpFYzFoTjRmNTRVUU9IN3pwZVpTeXQ4X1ZjOHNiWEt5NGVxdGpwSzVjWEw4Y3F0ek04VDRyaTVoUmJZcjFDWjFR0gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
    "publicado": "2026-11-10T11:16-03:00",
    "impacto": "alto",
    "ativos": [
