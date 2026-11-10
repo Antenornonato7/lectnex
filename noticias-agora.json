@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T15:30-03:00",
+  "atualizado_em": "2026-11-10T15:33-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -259,7 +259,11 @@
     ],
     [
      "15:15",
-     170696.0
+     170654.0
+    ],
+    [
+     "15:18",
+     170654.0
     ]
    ]
   },
@@ -580,7 +584,11 @@
     ],
     [
      "15:30",
-     5.587
+     5.5837
+    ],
+    [
+     "15:33",
+     5.586
     ]
    ]
   },
@@ -1361,6 +1369,19 @@
     "dolar30": -0.01
    },
    {
+    "hora": "14:50",
+    "titulo": "Dólar, juros e falta de acesso espantam investidor brasileiro do exterior, diz executivo da Nu Asset",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQlMtY3dvaC1DSGV2dmhtemltckhiaG9jUm8yNEpjR01MRHpHdnhhejlua1JQbzVqeDVfOXdoZ3ZIc3VXM2x0cTU4U1JLQlR4czI0c3QwSFVvVWU4NFZUNWxMMlBmdGNuQ3QzU2FsYXROeWZsYWJHZHBTVzlwRG43VnFja016ZnM5czRVUDhPdHlteUNPbnhuQjl3Y2wtajNEZVZrQTlUdGx0d3JUMjFRSzl0RW53VTJoQmc4TFd6Zk9DV1Jwei1lRDhvSEliaTZFeVJCVmZn0gHbAUFVX3lxTE1fYkZObE1zOFJ4VWZheVJJTS1Nc0JhZTdSRUl4VEFjV1U0NjVHQnpkVXFhMjVyd1ZwdGhyS29TRF9JQXFlMFpaRHhKb1VyaEZDTk9VR1FRZnFrSE9qdEJCVTVfX1pNdWVFVFFvMHBCdTFFWkZKbmVldHBYME1yVWQ4UFY1TlpqcTVtSDYyakdOMmZNRmxpU1R0SHVUSl9EODdjWlJnNjRXMjVlUUYzTnVKMmFUOExCMGx4Q3pkV1BDa1dXNTBld3RWbllpNHE0X3NRNVB2ZTNpRzBGNA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.15,
+    "dolar30": 0.09
+   },
+   {
     "hora": "14:55",
     "titulo": "Dólar é vilão de quem investe no exterior? Nu Asset revela estratégia de proteção",
     "fonte": "Estadão",
@@ -1376,19 +1397,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Grupo SBF (SBFG3), dono da Centauro, tem recuo de 45% no lucro do 3º trimestre",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYm9mYmVCUXRTUnhGNTBvYW1fOVd4M3hORDJCMHVJcUNYTndDeTctSmo1T0w0T0xIS2VwYlNHLUpXaUNoR05KODBkOTJnRjZxNHRzTF9EUFQ1QS1tbnhjRG5nN1laR0dmRnF6MGtaN0RMeXZuRVNER3RvdmVyYlcxODFjUlRIdHhBaFZpYUJNUTdDLVFuOUY4ZThZeTZhN0UwRXBaWHpmc25kTDd3b1E?oc=5",
-   "publicado": "2026-11-10T06:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "SBFG3"
-   ]
-  },
   {
    "titulo": "Brava (BRAV3) tem prejuízo de R$ 156 milhões no 3º trimestre, ante lucro de R$ 121 mi reportado um ano antes",
    "fonte": "Money Times",
@@ -2369,6 +2377,17 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar, juros e falta de acesso espantam investidor brasileiro do exterior, diz executivo da Nu Asset",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQlMtY3dvaC1DSGV2dmhtemltckhiaG9jUm8yNEpjR01MRHpHdnhhejlua1JQbzVqeDVfOXdoZ3ZIc3VXM2x0cTU4U1JLQlR4czI0c3QwSFVvVWU4NFZUNWxMMlBmdGNuQ3QzU2FsYXROeWZsYWJHZHBTVzlwRG43VnFja016ZnM5czRVUDhPdHlteUNPbnhuQjl3Y2wtajNEZVZrQTlUdGx0d3JUMjFRSzl0RW53VTJoQmc4TFd6Zk9DV1Jwei1lRDhvSEliaTZFeVJCVmZn0gHbAUFVX3lxTE1fYkZObE1zOFJ4VWZheVJJTS1Nc0JhZTdSRUl4VEFjV1U0NjVHQnpkVXFhMjVyd1ZwdGhyS29TRF9JQXFlMFpaRHhKb1VyaEZDTk9VR1FRZnFrSE9qdEJCVTVfX1pNdWVFVFFvMHBCdTFFWkZKbmVldHBYME1yVWQ4UFY1TlpqcTVtSDYyakdOMmZNRmxpU1R0SHVUSl9EODdjWlJnNjRXMjVlUUYzTnVKMmFUOExCMGx4Q3pkV1BDa1dXNTBld3RWbllpNHE0X3NRNVB2ZTNpRzBGNA?oc=5",
+   "publicado": "2026-11-10T14:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar é vilão de quem investe no exterior? Nu Asset revela estratégia de proteção",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSF8wNzBlOGFjN1ZMUktocHJ1WTluNFFadkw1eHRUdHpPcmM0alZaWUhGVWVaSE1wc0V3WW04Sms5bXpQWGYxQkhzSUZjcmpYNUF5OHRNeTFNaHVkWTRZMy0tZ3IyV245RWx5cmFWbHZrSDJMZ01nMFhUQnBtSVE3bHVpRnRVLWZIbTFYUmYxdk1oOFNOSnBLV2RERVVTQ1hnZlhLb3BkdFJJV3pVMl9xbnlnZUdQLXRjYVF5NDQ0RXFPRzRka3lKQXVRMWx2X1BIcVdFdmVxS0oyUi1BQVZwMw?oc=5",
@@ -2407,7 +2426,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T15:30-03:00",
+ "atualizado_em": "2026-11-10T15:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2462,6 +2481,17 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSF8wNzBlOGFjN1ZMUktocHJ1WTluNFFadkw1eHRUdHpPcmM0alZaWUhGVWVaSE1wc0V3WW04Sms5bXpQWGYxQkhzSUZjcmpYNUF5OHRNeTFNaHVkWTRZMy0tZ3IyV245RWx5cmFWbHZrSDJMZ01nMFhUQnBtSVE3bHVpRnRVLWZIbTFYUmYxdk1oOFNOSnBLV2RERVVTQ1hnZlhLb3BkdFJJV3pVMl9xbnlnZUdQLXRjYVF5NDQ0RXFPRzRka3lKQXVRMWx2X1BIcVdFdmVxS0oyUi1BQVZwMw?oc=5",
    "publicado": "2026-11-10T14:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar, juros e falta de acesso espantam investidor brasileiro do exterior, diz executivo da Nu Asset",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQlMtY3dvaC1DSGV2dmhtemltckhiaG9jUm8yNEpjR01MRHpHdnhhejlua1JQbzVqeDVfOXdoZ3ZIc3VXM2x0cTU4U1JLQlR4czI0c3QwSFVvVWU4NFZUNWxMMlBmdGNuQ3QzU2FsYXROeWZsYWJHZHBTVzlwRG43VnFja016ZnM5czRVUDhPdHlteUNPbnhuQjl3Y2wtajNEZVZrQTlUdGx0d3JUMjFRSzl0RW53VTJoQmc4TFd6Zk9DV1Jwei1lRDhvSEliaTZFeVJCVmZn0gHbAUFVX3lxTE1fYkZObE1zOFJ4VWZheVJJTS1Nc0JhZTdSRUl4VEFjV1U0NjVHQnpkVXFhMjVyd1ZwdGhyS29TRF9JQXFlMFpaRHhKb1VyaEZDTk9VR1FRZnFrSE9qdEJCVTVfX1pNdWVFVFFvMHBCdTFFWkZKbmVldHBYME1yVWQ4UFY1TlpqcTVtSDYyakdOMmZNRmxpU1R0SHVUSl9EODdjWlJnNjRXMjVlUUYzTnVKMmFUOExCMGx4Q3pkV1BDa1dXNTBld3RWbllpNHE0X3NRNVB2ZTNpRzBGNA?oc=5",
+   "publicado": "2026-11-10T14:50-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -2590,19 +2620,6 @@
    ],
    "tickers": [
     "ASAI3"
-   ]
-  },
-  {
-   "titulo": "Ação da Embraer dispara mesmo com lucro 15% menor no 3º trimestre; três bancos reiteram compra",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNU3ZEOXAyak9XZkpZeC02R200dVJVUEJSR0FSQV83b0s3ZF9KRjByMkxqNUlRQjJyVU51Wk5PczM4Y0YyTkdGblY0ZzhaVFBZdGNZUFFHOFI1ZUdCR0pOZDk5RDdmR1hpVjR1VnBwd1ZWcWN0NzJaRkFCS2lUeFhvNTRxT1hDMmNMeEJyTUhhR2lPNnRSWU9QNEZrZHo2UG9NeGFQRThtMy10eDgxVUJMbHQxMldjOXJpZFZzZUI4blVNb2NoMnl0dDFsdVZ6WFpvd0phRnRzR0NlalZoQ1l3c2V5c2XSAeoBQVVfeXFMT1hodWJ6NHhldHNRQlhWaThUUGR6cE9kRUtyUExhWkNGQ0J3RmVNTk9kdkdaYWhBTDdVajg3SkRTNUNOOUVEMUppdVlPS2p0bjZKUHh4NllscXc1RklBOGI3WlBpbElTbDRfQXZqR1RHOU9wUk5ldUhMQXExQUd1VjZ2a1NURlZxdHFyYk8yNzJ5N3dRLUVHSXMyeXVsaWs2SlRLNkFtU2F4TE1kOWwtWFNxV3J6VDAxS25RNzRHbDVlTW1vRGZWNnZXYWtZT1dONGFWekpwZ19NVXl1TmN5R2VmM05FLW5kUnln?oc=5",
-   "publicado": "2026-11-10T13:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBR3"
    ]
   },
   {
