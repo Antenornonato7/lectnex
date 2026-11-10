@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T10:08-03:00",
+  "atualizado_em": "2026-11-10T10:10-03:00",
   "dolar": {
    "anterior": 5.5069,
    "pontos": [
@@ -59,11 +59,11 @@
     ],
     [
      "10:05",
-     5.5496
+     5.5493
     ],
     [
-     "10:08",
-     5.5512
+     "10:10",
+     5.5494
     ]
    ]
   },
@@ -920,7 +920,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T10:08-03:00",
+ "atualizado_em": "2026-11-10T10:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -935,18 +935,6 @@
   "Valor"
  ],
  "noticias": [
-  {
-   "titulo": "Dólar abre em alta com ata do Copom e expectativa por dados de inflação nos EUA",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-ata-do-copom-e-expectativa-por-dados-de-inflacao-nos-eua.shtml",
-   "publicado": "2026-11-10T09:55-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Magalu surfa crise da Casas Bahia e fala em 'oportunidade histórica' de ganho de mercado",
    "fonte": "Folha",
@@ -973,23 +961,22 @@
    "tickers": []
   },
   {
-   "titulo": "Embraer melhora projeções para 2026 após recordes no 3º trimestre",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTzd2WUEtWGR6OFdTbkhJVFN6WExnRTVtbUpKMElOdnJZelRDVDhpekpJYlc5WnJ3MUxzUTNLaEFneEFfRjN3a09heU9mT1ZsV19NVHRCZ3VBc2dPSDMxWGppaUF6ZXliOHlZLXBhRkNVbVpNUWNLOUxOdElCXzQ2ekd3UU5ZWXl5T3NpbUNkZ1VMaXJKZTJEaTd1SnB4aEFad3ZKeGN0emkzb3NOR0ViMDh5SGcwbFNEV2hB?oc=5",
-   "publicado": "2026-11-10T09:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
-  },
-  {
-   "titulo": "BC defende juros altos por mais tempo e não sinaliza retomada dos cortes, diz ata do Copom",
+   "titulo": "BC aponta juros altos por mais tempo e não sinaliza retomada dos cortes, sinaliza ata do Copom",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdGJiWDB6cDd0RU54WENEcFV0eGpKUWxndUlGMEJNTDB0THAzOUVuMVRhLUtnVk15N3ktTkdkQjIwM0RxTDE4cFVZTDlRWVlpc0FFWjdfSFJLbXVxTFM2QUF6djJQYkRuQ0N3M3pTYVBYN202NnpRNXpOQUE1VlNJN3NJVVN2bS1ETTQtVkhPcnVOYVltdXAyeWgwUzFub19vV2tRNDZPQmZEWjdhbWZGVmE3VjlQZVcw?oc=5",
    "publicado": "2026-11-10T09:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar tem forte alta com sinalizações de Fed e Copom em dia de dados de inflação nos EUA",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxON24tLUdtaVdCbWEzeFJ4WXVSWERzN0dVY3ZINlN4VG9aZE0wTHRBcWl6SC1NSm9FQnotLWhGZDlNSVoweVFJWWZTaTJxWTJoR0JJVkNKVUgxLWw0SGZtdzVWbXh4VzktV3dLb3VjQ2EwZ2lDNVhkanVyb295TGVLX21JclhVSUp4VzFkdUItMEw4Ym1ONl9ycExIT1N6N2EtVk1KUW5uR0tNdkQyeV9iN1diMTlBUWFEbmw0RC01N21mZHkxWEptcExZQ1VsQ3dZcXZ3OWU2b3pnSDVvVVNr0gHuAUFVX3lxTE1DSVU4OGhvTFV6bG5uZUYtOFFlbDhqWWRkcFNJS3BwNk9LaE1zYnVEeWRsLUtjcF9NYm44WDdNSk0xWGltM0dFNGJDZjRSNkpHX2FGODJlUVpIUkFpUWt3TjlXb0pHS2VzSWhmNDdSTGQ1RUZwMUFRVk41OHdEZTdvcWlBSEt1Y29ETEhyQmpZeXktOEZhVVFha2ZyMFAwNngzSTBtcUdxLU5LQ3JOUFVtVWRMSWljcWNvcFh6WUU4eXZtVWhndFVjcUw5V3EzdTFObGVDLUQtSlZ0clpDZGVNRGU3OFVuaFNnUk5ubVE?oc=5",
+   "publicado": "2026-11-10T09:30-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1080,6 +1067,19 @@
    "publicado": "2026-11-10T08:50-03:00",
    "impacto": "alto",
    "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ata do Copom mostra expectativa de inflação mais alta com guerra, El Niño, fim da 6x1 e disparada do dólar",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-copom-mostra-expectativa-de-inflacao-mais-alta-com-guerra-el-nino-fim-da-6x1-e-disparada-do-dolar.shtml",
+   "publicado": "2026-11-10T08:35-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
