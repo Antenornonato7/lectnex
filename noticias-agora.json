@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:48-03:00",
+  "atualizado_em": "2026-11-10T11:50-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -79,11 +79,11 @@
     ],
     [
      "11:30",
-     172221.0
+     172260.0
     ],
     [
-     "11:33",
-     172223.0
+     "11:35",
+     172233.0
     ]
    ]
   },
@@ -224,11 +224,11 @@
     ],
     [
      "11:45",
-     5.5963
+     5.5974
     ],
     [
-     "11:48",
-     5.5945
+     "11:50",
+     5.5936
     ]
    ]
   },
@@ -551,7 +551,7 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": -0.14,
+    "ibov30": -0.11,
     "dolar30": 0.01
    },
    {
@@ -564,7 +564,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.2,
+    "ibov30": -0.19,
     "dolar30": 0.14
    },
    {
@@ -581,7 +581,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": -0.19,
     "dolar30": 0.14
    },
    {
@@ -610,7 +610,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.33
+    "dolar30": 0.35
    },
    {
     "hora": "11:20",
@@ -624,7 +624,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.28
+    "dolar30": 0.3
    },
    {
     "hora": "11:20",
@@ -641,7 +641,7 @@
      "BBDC4"
     ],
     "ibov30": null,
-    "dolar30": 0.28
+    "dolar30": 0.3
    },
    {
     "hora": "11:27",
@@ -1635,7 +1635,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:48-03:00",
+ "atualizado_em": "2026-11-10T11:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1651,10 +1651,21 @@
  ],
  "noticias": [
   {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T11:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T11:44-03:00",
+   "publicado": "2026-11-10T11:48-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1675,13 +1686,14 @@
    "tickers": []
   },
   {
-   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "titulo": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
    "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T11:40-03:00",
+   "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
+   "publicado": "2026-11-10T11:42-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1837,18 +1849,6 @@
    "fonte": "Folha",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQkhDcjFUNDNtbkt0UTJzYkRKczhhbEFOd1RtYWpuQmd1d24tSlpfNGhkUExianp5OXZwcU5HOW5FRkJLcTJ0ZURXN1RzanlQdnQzM1J3Z3hRVGczbVNjQUhITDJDZVBOUGFEbkJINlFCN3ZwZGpLdU5HWHptVHY1MmdadVdiQkNJanFpcnJIMzFFa3oySlBBTHlFLUM5bXdDa05UanVFU2JFUzhMd3h2WmRGV3RCNWsyVmV0WEJrM1g0Ukh3SkthbVlKQQ?oc=5",
    "publicado": "2026-11-10T09:55-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Copom alerta em ata para expectativa de inflação subir diante de risco fiscal e fim da 6x1",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/copom-alerta-ata-expectativa-inflacao-subir-risco-fiscal/",
-   "publicado": "2026-11-10T08:48-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
