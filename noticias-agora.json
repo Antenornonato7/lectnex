@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T18:20-03:00",
+  "atualizado_em": "2026-11-10T18:23-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171454.0
+     171337.0
     ]
    ]
   },
@@ -800,25 +800,15 @@
     ],
     [
      "18:20",
+     5.5855
+    ],
+    [
+     "18:23",
      5.5843
     ]
    ]
   },
   "marcadores": [
-   {
-    "hora": "09:06",
-    "titulo": "El Niño e dólar ampliam desafio do agro, aponta Banco Central",
-    "fonte": "CNN Brasil",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ0VTdE5ySDlMamtqa2tpZ0hWbGhZZjFQRUpDMXFERUZxZjBtQjlpeGF4cTI1NzVmeUNrY0l6VzkxdWdnV1BjMlVaaXpHYXY4aXFXWlp5dVUtb2Z6VVI4anBvWl9IZlk2d0NyVm9Gc0tBVFptUnpmVnY3YXVuQ081QVBRaTRIcjlpeHN4TFZEVTVjbUN1NTY1ZTBNaElkczQ4Z1ZzV1lsOUxPZw?oc=5",
-    "impacto": "alto",
-    "ativos": [
-     "WDO",
-     "DI"
-    ],
-    "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.27
-   },
    {
     "hora": "09:12",
     "titulo": "Ibovespa Futuro ronda estabilidade com ata do Copom e dados de inflação em foco",
@@ -1936,23 +1926,11 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": 0.0
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "El Niño e dólar ampliam desafio do agro, aponta Banco Central",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ0VTdE5ySDlMamtqa2tpZ0hWbGhZZjFQRUpDMXFERUZxZjBtQjlpeGF4cTI1NzVmeUNrY0l6VzkxdWdnV1BjMlVaaXpHYXY4aXFXWlp5dVUtb2Z6VVI4anBvWl9IZlk2d0NyVm9Gc0tBVFptUnpmVnY3YXVuQ081QVBRaTRIcjlpeHN4TFZEVTVjbUN1NTY1ZTBNaElkczQ4Z1ZzV1lsOUxPZw?oc=5",
-   "publicado": "2026-11-10T09:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ibovespa Futuro ronda estabilidade com ata do Copom e dados de inflação em foco",
    "fonte": "InfoMoney",
@@ -2940,6 +2918,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Senado aprova projeto que amplia fiscalização da ANP após Carbono Oculto",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/senado-aprova-projeto-que-amplia-fiscalizacao-da-anp-apos-carbono-oculto.shtml",
+   "publicado": "2026-11-10T18:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2969,7 +2958,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T18:20-03:00",
+ "atualizado_em": "2026-11-10T18:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2984,6 +2973,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Senado aprova projeto que amplia fiscalização da ANP após Carbono Oculto",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/senado-aprova-projeto-que-amplia-fiscalizacao-da-anp-apos-carbono-oculto.shtml",
+   "publicado": "2026-11-10T18:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar atinge maior cotação em 15 meses e se aproxima de R$ 6: até onde a moeda pode ir?",
    "fonte": "Exame",
@@ -3099,18 +3099,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Taxas dos DIs sobem após ata do Copom e exterior negativo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdVRQQVVBVjRweW1NaVpxUEFodDV2aDFydlItZnBqdGlJcndGemIxRUszY3ZwRVk5eGlhTWp0bE9fMy1OdXJ2cnZQVGhYYV9iZTYxMjBRYkJacEZyaXNlOUZwOGN6M3NWRTN5cC1aeWwxNmZ0b1hqaDNuWWtfQTVOYnlFaVdsR0FMaG9ib2lZMW9lU3gtS2g3cWsxX0vSAaIBQVVfeXFMTmFBbTVwcTR1dEdUb2tldkRWZl9LclFtSkI0ZkVNVnFSeGxZYlp1UU4tZDdTczlZMXR5VG1PTjVZUFpZdDlTN0RnTE0zM3J4WUFNMXhEdXR5NlhIYWZ6bWZ1U3ZSZVVKU0Z0SDZCM0szREdqWTdNQTdEQTZzNGVNSHoyZGRtcHhNQllZRkRwOTE2WHJ0N0prM3NJalFXaUZycXhR?oc=5",
-   "publicado": "2026-11-10T17:20-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
