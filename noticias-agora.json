@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T10:40-03:00",
+  "atualizado_em": "2026-11-10T10:43-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -27,7 +27,11 @@
     ],
     [
      "10:25",
-     172992.0
+     172878.0
+    ],
+    [
+     "10:28",
+     172947.0
     ]
    ]
   },
@@ -116,7 +120,11 @@
     ],
     [
      "10:40",
-     5.5678
+     5.5677
+    ],
+    [
+     "10:43",
+     5.5673
     ]
    ]
   },
@@ -294,7 +302,7 @@
      "MGLU3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.28
    },
    {
     "hora": "10:19",
@@ -1140,7 +1148,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T10:40-03:00",
+ "atualizado_em": "2026-11-10T10:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1156,10 +1164,22 @@
  ],
  "noticias": [
   {
+   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
+   "publicado": "2026-11-10T10:42-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
-   "publicado": "2026-11-10T10:36-03:00",
+   "publicado": "2026-11-10T10:41-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1177,18 +1197,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T10:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
