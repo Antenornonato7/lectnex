@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:28-03:00",
+  "atualizado_em": "2026-11-10T11:30-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -63,11 +63,11 @@
     ],
     [
      "11:10",
-     172595.0
+     172805.0
     ],
     [
-     "11:13",
-     172651.0
+     "11:15",
+     172837.0
     ]
    ]
   },
@@ -192,11 +192,11 @@
     ],
     [
      "11:25",
-     5.58
+     5.5788
     ],
     [
-     "11:28",
-     5.578
+     "11:30",
+     5.5784
     ]
    ]
   },
@@ -457,7 +457,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.03,
+    "ibov30": 0.09,
     "dolar30": 0.04
    },
    {
@@ -473,7 +473,7 @@
      "PETR4",
      "VALE3"
     ],
-    "ibov30": 0.01,
+    "ibov30": 0.11,
     "dolar30": 0.18
    },
    {
@@ -491,7 +491,7 @@
      "VALE3"
     ],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.02
    },
    {
     "hora": "11:03",
@@ -506,7 +506,7 @@
      "MGLU3"
     ],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": 0.01
    },
    {
     "hora": "11:06",
@@ -1519,7 +1519,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:28-03:00",
+ "atualizado_em": "2026-11-10T11:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1538,7 +1538,7 @@
    "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
-   "publicado": "2026-11-10T11:27-03:00",
+   "publicado": "2026-11-10T11:26-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -1639,6 +1639,17 @@
    ]
   },
   {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T10:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa hoje tem leve alta e dólar sobe mais de 1% após dado de inflação dos EUA",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
@@ -1694,18 +1705,6 @@
    "titulo": "Dólar tem forte alta com sinalizações de Fed e Copom em dia de dados de inflação nos EUA",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxON24tLUdtaVdCbWEzeFJ4WXVSWERzN0dVY3ZINlN4VG9aZE0wTHRBcWl6SC1NSm9FQnotLWhGZDlNSVoweVFJWWZTaTJxWTJoR0JJVkNKVUgxLWw0SGZtdzVWbXh4VzktV3dLb3VjQ2EwZ2lDNVhkanVyb295TGVLX21JclhVSUp4VzFkdUItMEw4Ym1ONl9ycExIT1N6N2EtVk1KUW5uR0tNdkQyeV9iN1diMTlBUWFEbmw0RC01N21mZHkxWEptcExZQ1VsQ3dZcXZ3OWU2b3pnSDVvVVNr0gHuAUFVX3lxTE1DSVU4OGhvTFV6bG5uZUYtOFFlbDhqWWRkcFNJS3BwNk9LaE1zYnVEeWRsLUtjcF9NYm44WDdNSk0xWGltM0dFNGJDZjRSNkpHX2FGODJlUVpIUkFpUWt3TjlXb0pHS2VzSWhmNDdSTGQ1RUZwMUFRVk41OHdEZTdvcWlBSEt1Y29ETEhyQmpZeXktOEZhVVFha2ZyMFAwNngzSTBtcUdxLU5LQ3JOUFVtVWRMSWljcWNvcFh6WUU4eXZtVWhndFVjcUw5V3EzdTFObGVDLUQtSlZ0clpDZGVNRGU3OFVuaFNnUk5ubVE?oc=5",
-   "publicado": "2026-11-10T09:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "BC cita fim da escala 6x1 e depreciação do câmbio entre fatores que pioraram expectativas de inflação",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQVkE3OHVNS0EyY2lQQUNsYUFmY3lvVnhaMWd6SzVnZFNZUTJFdEJpTkNPbDUydlE0SlhzMnh5M1p5bkpEamtPUkZKZDdTdF9wOWhBenNEaVN5aENtY0k1VUY0N3hia21mVFZiWW8wbEt6eV9wRmppZXFJcFJJZ3c3LXM5ZUpDazl2V19jdlVoMjJkd3dhQlBqblA2dWFjZElTX0tJQ2hOXzJORnBsTGROMG9KZm9IaVBLVFNZQW5RTFE3R2NvdUZRa2dwRHZDYVJQNzRsRnVVald2UHBvS2ZiT3VvTHRrX3BnMTVGTDc2cXlXVzd5X01YRdIB-AFBVV95cUxQVkE3OHVNS0EyY2lQQUNsYUFmY3lvVnhaMWd6SzVnZFNZUTJFdEJpTkNPbDUydlE0SlhzMnh5M1p5bkpEamtPUkZKZDdTdF9wOWhBenNEaVN5aENtY0k1VUY0N3hia21mVFZiWW8wbEt6eV9wRmppZXFJcFJJZ3c3LXM5ZUpDazl2V19jdlVoMjJkd3dhQlBqblA2dWFjZElTX0tJQ2hOXzJORnBsTGROMG9KZm9IaVBLVFNZQW5RTFE3R2NvdUZRa2dwRHZDYVJQNzRsRnVVald2UHBvS2ZiT3VvTHRrX3BnMTVGTDc2cXlXVzd5X01YRQ?oc=5",
    "publicado": "2026-11-10T09:30-03:00",
    "impacto": "alto",
    "ativos": [
