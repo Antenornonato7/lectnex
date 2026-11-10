@@ -1,0 +1,32 @@
+# Aviso no chat PRIVADO do Telegram quando uma tarefa do Relógio falha duas vezes seguidas.
+# Disparado por coletor/relogio.py. O título da execução ("Alerta <chave>") garante um aviso só por falha.
+name: Alerta de falha
+run-name: "Alerta ${{ inputs.chave }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      chave:
+        description: "Identificador único da falha (tarefa + horário)"
+        required: true
+      texto:
+        description: "Mensagem"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: coletor
+      - name: Avisar no chat privado
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          TEXTO: ${{ inputs.texto }}
+        run: python3 coletor/alerta.py
