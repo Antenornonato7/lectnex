@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T17:52-03:00",
+  "atualizado_em": "2026-11-10T17:55-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171407.0
+     171344.0
     ]
    ]
   },
@@ -776,11 +776,11 @@
     ],
     [
      "17:50",
-     5.585
+     5.5855
     ],
     [
-     "17:53",
-     5.5851
+     "17:55",
+     5.586
     ]
    ]
   },
@@ -1832,7 +1832,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.09
+    "dolar30": 0.1
    },
    {
     "hora": "17:24",
@@ -1847,7 +1847,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.09
+    "dolar30": 0.1
    },
    {
     "hora": "17:28",
@@ -1860,7 +1860,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.02
+    "dolar30": 0.04
    },
    {
     "hora": "17:29",
@@ -1873,7 +1873,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.04
    },
    {
     "hora": "17:30",
@@ -1888,7 +1888,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.07
    },
    {
     "hora": "17:41",
@@ -1903,22 +1903,24 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:52",
+    "titulo": "Dólar sobe a R$ 5,5860 com inflação dos EUA acima do esperado",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE93VE0tN2tWbm9DQjhzdll6NjdIQnRUN2JPNFpNY3NzTW5JVEFKYmZUaEJxOGRDRGRSc3k5MjhGTTJRVllTVW9YeDA0eDN4WFJUX1phaFVqQXMzYW1PRXhRaXBn?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Copom alerta em ata para expectativa de inflação subir diante de risco fiscal e fim da 6x1",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/copom-alerta-ata-expectativa-inflacao-subir-risco-fiscal/",
-   "publicado": "2026-11-10T08:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Waller planeja defender alta de juros pelo Fed de pelo menos 0,25 p.p. em dezembro",
    "fonte": "InfoMoney",
@@ -2907,6 +2909,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe a R$ 5,5860 com inflação dos EUA acima do esperado",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE93VE0tN2tWbm9DQjhzdll6NjdIQnRUN2JPNFpNY3NzTW5JVEFKYmZUaEJxOGRDRGRSc3k5MjhGTTJRVllTVW9YeDA0eDN4WFJUX1phaFVqQXMzYW1PRXhRaXBn?oc=5",
+   "publicado": "2026-11-10T17:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2936,7 +2950,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T17:52-03:00",
+ "atualizado_em": "2026-11-10T17:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2950,6 +2964,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar sobe a R$ 5,5860 com inflação dos EUA acima do esperado",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE93VE0tN2tWbm9DQjhzdll6NjdIQnRUN2JPNFpNY3NzTW5JVEFKYmZUaEJxOGRDRGRSc3k5MjhGTTJRVllTVW9YeDA0eDN4WFJUX1phaFVqQXMzYW1PRXhRaXBn?oc=5",
+   "publicado": "2026-11-10T17:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Juros curtos fecham em queda e longos sobem com ata do Copom e pressão externa",
    "fonte": "Valor",
@@ -3119,18 +3145,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "publicado": "2026-11-10T16:51-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
