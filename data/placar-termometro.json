@@ -67,9 +67,32 @@
     "acerto": false,
     "faixa": 0.4
    }
+  },
+  {
+   "data": "2026-11-10",
+   "win": {
+    "leitura": "bearish",
+    "var_pct": -0.52,
+    "acerto": true,
+    "faixa": 0.7,
+    "sinal": {
+     "leitura": "bearish",
+     "acerto": true
+    }
+   },
+   "wdo": {
+    "leitura": "bullish",
+    "var_pct": 1.33,
+    "acerto": true,
+    "faixa": 0.4,
+    "sinal": {
+     "leitura": "neutro",
+     "acerto": false
+    }
+   }
   }
  ],
- "atualizado_em": "2026-11-09T19:10:28-03:00",
+ "atualizado_em": "2026-11-10T19:10:28-03:00",
  "faixas": [
   {
    "desde": "2026-11-03",
