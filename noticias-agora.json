@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:00-03:00",
+  "atualizado_em": "2026-11-10T12:03-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -91,7 +91,11 @@
     ],
     [
      "11:45",
-     171467.0
+     171235.0
+    ],
+    [
+     "11:48",
+     171195.0
     ]
    ]
   },
@@ -244,7 +248,11 @@
     ],
     [
      "12:00",
-     5.5878
+     5.5899
+    ],
+    [
+     "12:03",
+     5.5924
     ]
    ]
   },
@@ -625,7 +633,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.74,
+    "ibov30": -0.88,
     "dolar30": 0.35
    },
    {
@@ -639,7 +647,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.63,
+    "ibov30": -0.76,
     "dolar30": 0.3
    },
    {
@@ -656,7 +664,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": -0.63,
+    "ibov30": -0.76,
     "dolar30": 0.3
    },
    {
@@ -688,7 +696,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.17
+    "dolar30": 0.2
    },
    {
     "hora": "11:50",
@@ -1703,7 +1711,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:00-03:00",
+ "atualizado_em": "2026-11-10T12:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1758,18 +1766,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/relacao-de-chefe-da-nvidia-com-chinesa-facilitou-envio-de-chips-a-china-diz-site.shtml",
    "publicado": "2026-11-10T11:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T11:48-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1881,6 +1877,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar salta 1% e se aproxima de R$ 5,60 após inflação nos EUA superar expectativas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNXJVeEVBcGxzTTlGWmhpU2FTcXluWWlEZ3o4OE9CX3JnZkczVVFfMmRFZjBOWGt5RTFUc3hVQkxnUUVpbzR4ZGhzc3BGc1l3UklkQTExd0xoeTdibW1LWGtZaDl0Z2JOWGQ3SXNjaHI0bnVYemtSMnBBdHRUV05NTmx5TThoMW5yaFZJSElqQmYzNV9LMEhuM19DenPSAaIBQVVfeXFMT0lxSE50RHZWLUFIV2hjUmI2SUhhY3JOLXlabF9kY2ZaakZPU010MVhheUdlMjlvTmFsWXdVZURCZ0Q3c25WcEU4NTNLeXpuV043ZldFckdFNE5mQWJWV2JyRzAyTEVjVEppZkJDUk1IWU53S3M4V0Rzek9PY2hBeFNpUmJNWWFpS2IxLWR6WGRRUmxKeW9YbWpyUWZYZy1YZUh3?oc=5",
+   "publicado": "2026-11-10T10:37-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
