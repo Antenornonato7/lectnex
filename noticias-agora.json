@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T17:33-03:00",
+  "atualizado_em": "2026-11-10T17:35-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171323.0
+     171340.0
     ]
    ]
   },
@@ -763,8 +763,8 @@
      5.5823
     ],
     [
-     "17:33",
-     5.5813
+     "17:35",
+     5.5824
     ]
    ]
   },
@@ -1773,7 +1773,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.07
+    "dolar30": -0.05
    },
    {
     "hora": "17:16",
@@ -1802,23 +1802,25 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:30",
+    "titulo": "Embraer avança no resultado operacional e revisa projeção de receita para o ano",
+    "fonte": "Bloomberg Línea",
+    "url": "https://www.bloomberglinea.com.br/negocios/embraer-avanca-no-resultado-operacional-e-revisa-projecao-de-receita-para-o-ano/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "EMBR3"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ata do Copom mostra expectativa de inflação mais alta com guerra, El Niño, fim da 6x1 e disparada do dólar",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-copom-mostra-expectativa-de-inflacao-mais-alta-com-guerra-el-nino-fim-da-6x1-e-disparada-do-dolar.shtml",
-   "publicado": "2026-11-10T08:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Anthropic sets price range of $70 to $78 in upcoming IPO as AI lab marches towards Nasdaq",
    "fonte": "CNBC",
@@ -2809,6 +2811,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Embraer avança no resultado operacional e revisa projeção de receita para o ano",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/embraer-avanca-no-resultado-operacional-e-revisa-projecao-de-receita-para-o-ano/",
+   "publicado": "2026-11-10T17:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
   }
  ],
  "enviadas": [
@@ -2838,7 +2853,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T17:33-03:00",
+ "atualizado_em": "2026-11-10T17:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2851,6 +2866,31 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "GE Vernova sellers have it all wrong — plus, why Fed rate hike odds are soaring",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/10/ge-vernova-sellers-have-it-all-wrong-plus-why-fed-rate-hike-odds-are-soaring.html",
+   "publicado": "2026-11-10T17:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Embraer avança no resultado operacional e revisa projeção de receita para o ano",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/embraer-avanca-no-resultado-operacional-e-revisa-projecao-de-receita-para-o-ano/",
+   "publicado": "2026-11-10T17:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
   {
    "titulo": "Taxas dos DIs sobem após ata do Copom e exterior negativo",
    "fonte": "InfoMoney",
@@ -2905,18 +2945,6 @@
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZklsVHJYaG9FR1lPMUZrYkJDNHZaYVJfdnN4cm1YUU45NHVRdWJsYmY4VkJ3M0JCaGN6Yzd6bGwtUEdGOURUQUliNXl1a0YxLTZFUF9YajZKVjhCeEo3emJDbU9IRW5mSktVVVUwbzdnS3hzSlhTcXdSUTQ1UVIyZC1GNmZpc3N4c1NsR1V5WkRacU94TExnNlNkcDZLcjgtbVlKeTk4S2hhdw?oc=5",
    "publicado": "2026-11-10T17:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "GE Vernova sellers have it all wrong — plus, why Fed rate hike odds are soaring",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/investingclub/2026/11/10/ge-vernova-sellers-have-it-all-wrong-plus-why-fed-rate-hike-odds-are-soaring.html",
-   "publicado": "2026-11-10T17:02-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -3024,17 +3052,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Piora das expectativas econômicas explica alta do dólar, diz especialista",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMTktVEcxZktyazJaMU1POWIxTU56Y3RyZWt0SW11UHFCYjAzUUxWQ3dWMFFvR0RZMUczRkFMXzVtRHNXSmY5aFpYWmxMRzhnZGxUMHowMzhHUmJuczlFUUZWd2ZWSWdpTklCWlNkak15YkRkZXRyZnRZOXJuUUxPeUVrYzFqXzhydnhkN2cxa2JnaW1uLV9nQTVlMC1PTGR6WnBwSWxFQmZfaTUtcElZa3lQSTZ4SVRHRjdKQ1RKd01PSVBEUGVNYy1RRQ?oc=5",
-   "publicado": "2026-11-10T15:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
