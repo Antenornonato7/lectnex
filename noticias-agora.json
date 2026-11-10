@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:05-03:00",
+  "atualizado_em": "2026-11-10T11:08-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -47,7 +47,11 @@
     ],
     [
      "10:50",
-     172591.0
+     172589.0
+    ],
+    [
+     "10:53",
+     172558.0
     ]
    ]
   },
@@ -156,7 +160,11 @@
     ],
     [
      "11:05",
-     5.5753
+     5.5764
+    ],
+    [
+     "11:08",
+     5.5768
     ]
    ]
   },
@@ -361,7 +369,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.28,
     "dolar30": 0.38
    },
    {
@@ -376,7 +384,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.28,
     "dolar30": 0.38
    },
    {
@@ -1318,7 +1326,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:05-03:00",
+ "atualizado_em": "2026-11-10T11:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1334,6 +1342,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
+   "publicado": "2026-11-10T11:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Magazine Luiza sobe até 17% na bolsa: o que o mercado viu de bom no balanço?",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORG5rdWFCNDlOaUQ0WndPOWpZb0JPQk10VE1zcy0xYTVtc0s3WGZRM2RHRTRtOFhuTnRjSHhnVzFIc3g3VjJkUUJ6Z1ppTmVIQXYxcm40N21rTzhOaE10ZUlFeGRjenJON1RlbGtPc0kwSFFqcEp1REtvWnRxVzFvSnQtY3dHcUE5VVRsTi04MnlHSzBfSGVkSFAxbDg1dFdqeWNQekdmTW4tVWR0?oc=5",
@@ -1345,18 +1365,6 @@
    "tickers": [
     "MGLU3"
    ]
-  },
-  {
-   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T11:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Ibovespa tenta emplacar nova alta, mas Vale e Petrobras pesam; dólar sobe mais de 1%",
@@ -1389,6 +1397,18 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html",
    "publicado": "2026-11-10T10:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
+   "publicado": "2026-11-10T10:41-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1490,18 +1510,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "El Niño e dólar ampliam desafio do agro, aponta Banco Central",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ0VTdE5ySDlMamtqa2tpZ0hWbGhZZjFQRUpDMXFERUZxZjBtQjlpeGF4cTI1NzVmeUNrY0l6VzkxdWdnV1BjMlVaaXpHYXY4aXFXWlp5dVUtb2Z6VVI4anBvWl9IZlk2d0NyVm9Gc0tBVFptUnpmVnY3YXVuQ081QVBRaTRIcjlpeHN4TFZEVTVjbUN1NTY1ZTBNaElkczQ4Z1ZzV1lsOUxPZw?oc=5",
-   "publicado": "2026-11-10T09:06-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
