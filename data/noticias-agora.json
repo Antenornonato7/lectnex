@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:38-03:00",
+  "atualizado_em": "2026-11-10T14:08-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -167,11 +167,35 @@
     ],
     [
      "13:20",
-     171310.0
+     171214.0
     ],
     [
-     "13:23",
-     171276.0
+     "13:25",
+     171413.0
+    ],
+    [
+     "13:30",
+     171378.0
+    ],
+    [
+     "13:35",
+     171336.0
+    ],
+    [
+     "13:40",
+     171210.0
+    ],
+    [
+     "13:45",
+     171321.0
+    ],
+    [
+     "13:50",
+     171409.0
+    ],
+    [
+     "13:53",
+     171421.0
     ]
    ]
   },
@@ -400,11 +424,35 @@
     ],
     [
      "13:35",
-     5.6088
+     5.6083
     ],
     [
-     "13:38",
-     5.6077
+     "13:40",
+     5.6003
+    ],
+    [
+     "13:45",
+     5.5977
+    ],
+    [
+     "13:50",
+     5.5945
+    ],
+    [
+     "13:55",
+     5.5963
+    ],
+    [
+     "14:00",
+     5.5944
+    ],
+    [
+     "14:05",
+     5.5949
+    ],
+    [
+     "14:08",
+     5.5955
     ]
    ]
   },
@@ -993,6 +1041,20 @@
     "dolar30": 0.18
    },
    {
+    "hora": "12:52",
+    "titulo": "Juros: combinação de fatores compõe cenário em que dificilmente Copom evitará novas altas na Selic",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOc1JlUHl2aFhxMVJEaHRvcXRWeUxwWTRkSHFfMTdIakN4X1ZCV3I4cE05aGR3dUgwZXNwOURsb0dqTDhPWjZwc3FLU21Gc0lqX0JaS2gxcTNOOThSN1lCZWZnemJsUndpX1o3eFp4NDgybnZndUlsT2Y1Rzh6S2x3VUtXVDRuZm45UkV0Z19sY1dUanpod3ZSU1o5NGR6VWJTdldTX2hOeFFqemtsYmliUjYwSW9Bb05VYlNnYTBnbXZhNkxpemFvcVFaSnFyU1A4d0tnRFBzSXc2cnU4OWQzVHZIR01CNGg0QlYzbktwQlpxYmxx?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.26,
+    "dolar30": 0.08
+   },
+   {
     "hora": "12:57",
     "titulo": "Taxas longas do DI sobem após ata do Copom",
     "fonte": "CNN Brasil",
@@ -1003,7 +1065,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.15,
+    "ibov30": -0.07,
     "dolar30": 0.02
    },
    {
@@ -1020,7 +1082,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": null,
+    "ibov30": -0.1,
     "dolar30": 0.13
    },
    {
@@ -1035,8 +1097,8 @@
     "tickers": [
      "ASAI3"
     ],
-    "ibov30": null,
-    "dolar30": 0.09
+    "ibov30": -0.08,
+    "dolar30": 0.08
    },
    {
     "hora": "13:08",
@@ -1049,8 +1111,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.09
+    "ibov30": -0.08,
+    "dolar30": 0.08
    },
    {
     "hora": "13:18",
@@ -1062,8 +1124,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.03,
+    "dolar30": -0.2
    },
    {
     "hora": "13:30",
@@ -1079,60 +1141,57 @@
      "VALE3"
     ],
     "ibov30": null,
+    "dolar30": -0.22
+   },
+   {
+    "hora": "13:37",
+    "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.24
+   },
+   {
+    "hora": "13:58",
+    "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:58",
+    "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Seleção Tech de Black Friday do Magalu tem notebooks, tablets, consoles e mais com desconto e cupons",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOdzgtdmQ3WV9lclY3YnVVU1VnZS1hemx6UWg5bS1JUnpuWHFtdWIySUJIUV8zM2FNRGdsak9NT3ZxeFBnaFVvamRSTEx0bHJfX2F6bTBNU19qT0lKU2taazRGVE54N0FjQWdlS3Q5emF4ZUxKSTZSX1VUTmxFMWdnQUN1NEU2WFN2NUZPSUVELWxBVm1GNVRRSjdZcm9DaGJwQ0w1U2JIbHVwNU03MVFQSHhsNEwzLVRpSFpDemdXbF9LY1FkUWZOUlFVQm5KcWlQRUM4R0gyWUozMlBRU0hSNDZiYTVzcDdZa05SakUwMWQ?oc=5",
-   "publicado": "2026-11-10T05:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
-   ]
-  },
-  {
-   "titulo": "Ações do Ibovespa: mediana do P/L cai abaixo do nível da pandemia após eleições",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNd3M5LXlUWi1EemRuMUFjWTdDTU9maE1IWWlGMHhBMmMtWmlGQTB6UmpyMGZMVlU4TEhMMnUzTmtnVUpzclVMSHVZLU1uWkpGOVVVcHlWLUkzNWUySWlESnVPaGxCLUF1OTlqazlHajd4Q3dVWXQ4NmRRSVFLZnV0OWhaTG55b05BeDZFNGZZYkcxRUg0WmFFZ29OLVdXd0JVcHMtLUltb042b0ZHS2tQZDc2NkZoR2pVRnF6dl92c0hBWlhuYkVwVzYzdXVCRlJGSng3VQ?oc=5",
-   "publicado": "2026-11-10T05:45-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa reage à ata do Copom",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBkTXlYRXh0dmppVlZOOWpLWEp2cWN4eGNsemlEaWxyYmdIUUNqZDFHVkNUcWJ5ZGVGWjVrVTFwMkczSE1kcl9KeGZjTkNxdW51Q2ctTFlaZ1RoTEJZX1JGRGtkTG8wdw?oc=5",
-   "publicado": "2026-11-10T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html",
-   "publicado": "2026-11-10T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ata do Copom, inflação nos EUA, balanço da Petrobras e mais destaques desta sexta",
    "fonte": "InfoMoney",
@@ -2013,6 +2072,18 @@
    "tickers": []
   },
   {
+   "titulo": "Juros: combinação de fatores compõe cenário em que dificilmente Copom evitará novas altas na Selic",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOc1JlUHl2aFhxMVJEaHRvcXRWeUxwWTRkSHFfMTdIakN4X1ZCV3I4cE05aGR3dUgwZXNwOURsb0dqTDhPWjZwc3FLU21Gc0lqX0JaS2gxcTNOOThSN1lCZWZnemJsUndpX1o3eFp4NDgybnZndUlsT2Y1Rzh6S2x3VUtXVDRuZm45UkV0Z19sY1dUanpod3ZSU1o5NGR6VWJTdldTX2hOeFFqemtsYmliUjYwSW9Bb05VYlNnYTBnbXZhNkxpemFvcVFaSnFyU1A4d0tnRFBzSXc2cnU4OWQzVHZIR01CNGg0QlYzbktwQlpxYmxx?oc=5",
+   "publicado": "2026-11-10T12:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Taxas longas do DI sobem após ata do Copom",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM084X19QMm1KbDZ6ejFDbUJ1a2dqajVrektxM0g5NGVicl83RGh5NW94SDJRSnJqUmlObVJQVG1tSnI4WlBaZEdoZGdFQzRrb0FVdEZFWU1mTTRaRktTLUo5QlhwS01kNm83SkZHc1RIQ2NuX0NreWJHaTVtM1ptRk81cUhHRW52NEt4LVM3eFpzWF9WVmlEb256WQ?oc=5",
@@ -2088,6 +2159,46 @@
     "PETR4",
     "VALE3"
    ]
+  },
+  {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T13:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
+   "publicado": "2026-11-10T13:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
+   "publicado": "2026-11-10T13:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   }
  ],
  "enviadas": [
@@ -2117,7 +2228,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:38-03:00",
+ "atualizado_em": "2026-11-10T14:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2127,9 +2238,47 @@
   "Estadão",
   "Exame",
   "Folha",
-  "InfoMoney"
+  "InfoMoney",
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
+   "publicado": "2026-11-10T13:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T13:47-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T13:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Here's the inflation breakdown for October 2026 — in one chart",
    "fonte": "CNBC",
@@ -2167,6 +2316,20 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa vira para queda com pressão de Vale e exterior; dólar sobe e chega a R$ 5,60",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQURoQkhqY1FxaTlTRWhINkh3OW5fLWZSRC1BelRSSkNmUmxLcF9UNXJmbnp6NWFDTFV6Uk8zMC1tcG11NlBMT1I4ZXRqVE5jR1h3cEZWdkJMMVZaam43X1FKdHV3bWxSSnlFY1NZZl9SZzBOcG1KRWM0MjMwRWdBcXJqT2RPLWJPRU5NOUR1RTdfQm51MFhZMUVhT09yVC1TcTl0T3ZZNHdhYzNVcVRCU3VobXZfUm8?oc=5",
+   "publicado": "2026-11-10T13:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Dirigente do Fed defende considerar alta de 0,5 ponto nos juros em dezembro",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dirigente-do-fed-defende-considerar-alta-de-05-ponto-nos-juros-em-dezembro.shtml",
@@ -2174,30 +2337,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Assaí é condenado por restringir ida ao banheiro e assediar funcionários",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/assai-e-condenado-por-restringir-ida-ao-banheiro-e-assediar-funcionarios.shtml",
-   "publicado": "2026-11-10T13:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ASAI3"
-   ]
-  },
-  {
-   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T13:04-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2218,35 +2357,35 @@
    ]
   },
   {
-   "titulo": "Ação da Embraer dispara mesmo com lucro 15% menor no 3º trimestre; três bancos reiteram compra",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNU3ZEOXAyak9XZkpZeC02R200dVJVUEJSR0FSQV83b0s3ZF9KRjByMkxqNUlRQjJyVU51Wk5PczM4Y0YyTkdGblY0ZzhaVFBZdGNZUFFHOFI1ZUdCR0pOZDk5RDdmR1hpVjR1VnBwd1ZWcWN0NzJaRkFCS2lUeFhvNTRxT1hDMmNMeEJyTUhhR2lPNnRSWU9QNEZrZHo2UG9NeGFQRThtMy10eDgxVUJMbHQxMldjOXJpZFZzZUI4blVNb2NoMnl0dDFsdVZ6WFpvd0phRnRzR0NlalZoQ1l3c2V5c2XSAeoBQVVfeXFMT1hodWJ6NHhldHNRQlhWaThUUGR6cE9kRUtyUExhWkNGQ0J3RmVNTk9kdkdaYWhBTDdVajg3SkRTNUNOOUVEMUppdVlPS2p0bjZKUHh4NllscXc1RklBOGI3WlBpbElTbDRfQXZqR1RHOU9wUk5ldUhMQXExQUd1VjZ2a1NURlZxdHFyYk8yNzJ5N3dRLUVHSXMyeXVsaWs2SlRLNkFtU2F4TE1kOWwtWFNxV3J6VDAxS25RNzRHbDVlTW1vRGZWNnZXYWtZT1dONGFWekpwZ19NVXl1TmN5R2VmM05FLW5kUnln?oc=5",
-   "publicado": "2026-11-10T13:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
-  },
-  {
-   "titulo": "Superávit comercial da China ultrapassa US$ 1 trilhão com salto nas exportações de alta tecnologia",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/china-superavit-comercial-ultrapassa-1-trilhao-salto-exportacoes-alta-tecnologia/",
-   "publicado": "2026-11-10T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Taxas longas do DI sobem após ata do Copom",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM084X19QMm1KbDZ6ejFDbUJ1a2dqajVrektxM0g5NGVicl83RGh5NW94SDJRSnJqUmlObVJQVG1tSnI4WlBaZEdoZGdFQzRrb0FVdEZFWU1mTTRaRktTLUo5QlhwS01kNm83SkZHc1RIQ2NuX0NreWJHaTVtM1ptRk81cUhHRW52NEt4LVM3eFpzWF9WVmlEb256WQ?oc=5",
    "publicado": "2026-11-10T12:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa hoje cai e dólar sobe quase 2% após dado de inflação dos EUA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
+   "publicado": "2026-11-10T12:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco Central do Paraguai afirma que devolveu o dinheiro de 93% dos clientes do Ueno Bank",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/banco-central-do-paraguai-afirma-que-devolveu-o-dinheiro-de-93-dos-clientes-do-ueno-bank-npr/",
+   "publicado": "2026-11-10T12:27-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2267,22 +2406,23 @@
    "tickers": []
   },
   {
+   "titulo": "Magazine Luiza salta 7% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
+   "publicado": "2026-11-10T12:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
+  },
+  {
    "titulo": "Bolsas de NY caem com inflação nos EUA reforçando apostas de alta de juro pelo Fed",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY2tWX21seDF3b2tCSm9sLW9hZVpsRXFKWDhsRU5HQ09lZTh5VUxzdW5EQm5vLWgxNXBzZ2JWZHEyc1A4Z2pLdWxxWVpvX0RqMzNENzhkQ1BXREE1c0x1RV9QcXFsUHdIcDZjcGViRjBQQW5YRnY0NnRfeWd1bXlHUFlBSW1pTU1aRG40T1RiaWJiWWtSc2NpV3dhMGZfS1lXMDFwTmctS200NmY3cXRKNEJwaUFIWG1Ya2dLOExB0gHDAUFVX3lxTE4wVkJPQWhEdUVtaUlRUTV6cHRvQldvT3ZURUJYMVJaVnN5d0s4cF82bGRSQTBwT1dLci1ndVp2ZHYwd09RQmo5Z2RiTTByZFcxX1M0NFZSTmd0UDJiQmVJUHlaVThWcE8xLTNHY0JTd3Bldm11S1dyNHAyQ0FHMmNXSHpDbXVsa2RRNHhpWW1sVjg2eHpYR044Sm9WbG9JckJVVDJzendHSmJrY3NEN2hFZkJ1MURkVl9NLVctN3hyaTRDaw?oc=5",
    "publicado": "2026-11-10T12:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
-   "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
-   "publicado": "2026-11-10T11:54-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2297,34 +2437,6 @@
    "publicado": "2026-11-10T11:20-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa tenta emplacar nova alta, mas Vale e Petrobras pesam; dólar sobe mais de 1%",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQURoQkhqY1FxaTlTRWhINkh3OW5fLWZSRC1BelRSSkNmUmxLcF9UNXJmbnp6NWFDTFV6Uk8zMC1tcG11NlBMT1I4ZXRqVE5jR1h3cEZWdkJMMVZaam43X1FKdHV3bWxSSnlFY1NZZl9SZzBOcG1KRWM0MjMwRWdBcXJqT2RPLWJPRU5NOUR1RTdfQm51MFhZMUVhT09yVC1TcTl0T3ZZNHdhYzNVcVRCU3VobXZfUm8?oc=5",
-   "publicado": "2026-11-10T11:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4",
-    "VALE3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa hoje tem leve alta e dólar sobe mais de 1% após dado de inflação dos EUA",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
-   "publicado": "2026-11-10T10:46-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
