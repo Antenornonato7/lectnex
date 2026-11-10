@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:10-03:00",
+  "atualizado_em": "2026-11-10T11:13-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -51,7 +51,11 @@
     ],
     [
      "10:55",
-     172560.0
+     172525.0
+    ],
+    [
+     "10:58",
+     172528.0
     ]
    ]
   },
@@ -164,7 +168,11 @@
     ],
     [
      "11:10",
-     5.5738
+     5.5733
+    ],
+    [
+     "11:13",
+     5.5715
     ]
    ]
   },
@@ -369,7 +377,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.28,
+    "ibov30": -0.3,
     "dolar30": 0.38
    },
    {
@@ -384,7 +392,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.28,
+    "ibov30": -0.3,
     "dolar30": 0.38
    },
    {
@@ -397,7 +405,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.19,
+    "ibov30": -0.22,
     "dolar30": 0.09
    },
    {
@@ -426,7 +434,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.11
+    "dolar30": 0.1
    },
    {
     "hora": "10:47",
@@ -442,7 +450,7 @@
      "VALE3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.07
    },
    {
     "hora": "11:00",
@@ -1350,7 +1358,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:10-03:00",
+ "atualizado_em": "2026-11-10T11:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1428,6 +1436,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa hoje tem leve alta e dólar sobe mais de 1% após dado de inflação dos EUA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
+   "publicado": "2026-11-10T10:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "France blames Iran for supermarket refrigerator cyberattacks, weighs sanctions",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html",
@@ -1440,15 +1461,14 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa hoje: após salto de 2,2%, índice enfrenta dado de inflação nos EUA e ata do Copom",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
+   "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
    "publicado": "2026-11-10T10:41-03:00",
-   "impacto": "alto",
+   "impacto": "medio",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
+    "WDO"
    ],
    "tickers": []
   },
@@ -1520,19 +1540,6 @@
    "publicado": "2026-11-10T09:30-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa Futuro ronda estabilidade com ata do Copom e dados de inflação em foco",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONDFUWWVucXkxRWhrNmRjTG9vOEhjNUpMRlctS1E3RHhxaGdhcjBEaTUtdWRsbGd2cTRid1Z1b1FkdE1sNEpwTjYwLTRCcWdLRXRpMjJIcDRzUng0UWJBRndDU0FoeHRkOWRHeElXVkIzUE5EUV9KbTNib0JJRFhhSHFDR296TTRsRmxfbTBFOU1kV0ZFSy1VTVJWYUxjVnBwRnM1U3dGcVZJMkhEMmU2TWF1QUNtRXpySHfSAb8BQVVfeXFMTlJaUWhUTEliemQwRU01Qi1uRkNwT1VPN0lmc2dlTDZLX3NkMmlBNWxtTUVGS2ZRRmxvUnJmbnFUaGRyd3hhUmNtb3RWMWZ1RmZPZWpjOENuRzRySzd5Nnc0eVFhMXVqNWRZTGtLZlJHaEJfWUZLZ2t0Um01NUpUc3JsdHZkeVRzMnRqYkxETENnNVhGRWtudEZBYWo1Q0xzVEhtM09KbnpEWmJfY21IOUdOZkpaLTh5ZUVwRDFuTE0?oc=5",
-   "publicado": "2026-11-10T09:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
