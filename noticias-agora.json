@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T16:00-03:00",
+  "atualizado_em": "2026-11-10T16:03-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -283,7 +283,11 @@
     ],
     [
      "15:45",
-     171109.0
+     171012.0
+    ],
+    [
+     "15:48",
+     170995.0
     ]
    ]
   },
@@ -628,7 +632,11 @@
     ],
     [
      "16:00",
-     5.5877
+     5.5893
+    ],
+    [
+     "16:03",
+     5.5888
     ]
    ]
   },
@@ -2488,7 +2496,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T16:00-03:00",
+ "atualizado_em": "2026-11-10T16:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2595,6 +2603,17 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa sobe pouco, mas ação dispara quase 24% na semana; o que explica o salto?",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQmpsYXJ5S0diZ21FREE1bktvWXhKY0F0N0pCWm9yajNjWUZiYXFzWkF3dXlDTE1HMXhyLVBob0Y0bDNIYVp1T1p5ME1MSHdvYm9uZFVicU5vVlh1VENfY2pvRkNNaEpCd241VG91TVJjVDQ5aFpacTVMUlg2OXNIMXA1WWRRRlFWWFhiTWp6WjZKZktDX2UzeFBzZU9nZ2lLNjNsSW9pWkM1NU1hS293V1FWZUNRZzcxdzBTYkNSWnMya2xyYU1iTWlfN3JrMXNMclh3RFRvdC00aWhi?oc=5",
+   "publicado": "2026-11-10T14:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
@@ -2680,19 +2699,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Assaí é condenado por restringir ida ao banheiro e assediar funcionários",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/assai-e-condenado-por-restringir-ida-ao-banheiro-e-assediar-funcionarios.shtml",
-   "publicado": "2026-11-10T13:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ASAI3"
-   ]
   }
  ]
 }
