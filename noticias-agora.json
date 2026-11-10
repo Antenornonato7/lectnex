@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T17:28-03:00",
+  "atualizado_em": "2026-11-10T17:30-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171333.0
+     171305.0
     ]
    ]
   },
@@ -756,11 +756,11 @@
     ],
     [
      "17:25",
-     5.5813
+     5.5838
     ],
     [
-     "17:28",
-     5.583
+     "17:30",
+     5.5828
     ]
    ]
   },
@@ -1710,7 +1710,7 @@
      "KLBN11"
     ],
     "ibov30": null,
-    "dolar30": -0.04
+    "dolar30": 0.01
    },
    {
     "hora": "17:01",
@@ -1726,7 +1726,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": -0.03
    },
    {
     "hora": "17:02",
@@ -1740,7 +1740,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": -0.03
    },
    {
     "hora": "17:04",
@@ -1754,7 +1754,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.03
    },
    {
     "hora": "17:07",
@@ -1784,23 +1784,24 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:20",
+    "titulo": "Taxas dos DIs sobem após ata do Copom e exterior negativo",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdVRQQVVBVjRweW1NaVpxUEFodDV2aDFydlItZnBqdGlJcndGemIxRUszY3ZwRVk5eGlhTWp0bE9fMy1OdXJ2cnZQVGhYYV9iZTYxMjBRYkJacEZyaXNlOUZwOGN6M3NWRTN5cC1aeWwxNmZ0b1hqaDNuWWtfQTVOYnlFaVdsR0FMaG9ib2lZMW9lU3gtS2g3cWsxX0vSAaIBQVVfeXFMTmFBbTVwcTR1dEdUb2tldkRWZl9LclFtSkI0ZkVNVnFSeGxZYlp1UU4tZDdTczlZMXR5VG1PTjVZUFpZdDlTN0RnTE0zM3J4WUFNMXhEdXR5NlhIYWZ6bWZ1U3ZSZVVKU0Z0SDZCM0szREdqWTdNQTdEQTZzNGVNSHoyZGRtcHhNQllZRkRwOTE2WHJ0N0prM3NJalFXaUZycXhR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Fim da 6x1, El Niño e petróleo: Copom alerta para pressões inflacionárias",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORkN1dnJlWjkzb090LXM4UU9hazdLQW9mVXVPTHpEOUQtWUlMRGtPQWlFRUs3Qjh5WWdHYkdMU0JpUlFaMDN2SGtza1M2T3RjSHFmVWdEN2VaTHFOSkJHOG5HOHdndlJHYlhuZC1scFFjU3YwVDRqYzNtNXRwbTFseFNRTXpHSjU5UTQ5MDhHYVAyVFV0NEcwb3VHTDZ2cEZzV0FtLVotUFFWQWFXekduUC1jOWJFUS1NYVZHUDV2LVcxdGY5X29WbnVR?oc=5",
-   "publicado": "2026-11-10T08:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ata do Copom mostra expectativa de inflação mais alta com guerra, El Niño, fim da 6x1 e disparada do dólar",
    "fonte": "Folha",
@@ -2792,6 +2793,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Taxas dos DIs sobem após ata do Copom e exterior negativo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdVRQQVVBVjRweW1NaVpxUEFodDV2aDFydlItZnBqdGlJcndGemIxRUszY3ZwRVk5eGlhTWp0bE9fMy1OdXJ2cnZQVGhYYV9iZTYxMjBRYkJacEZyaXNlOUZwOGN6M3NWRTN5cC1aeWwxNmZ0b1hqaDNuWWtfQTVOYnlFaVdsR0FMaG9ib2lZMW9lU3gtS2g3cWsxX0vSAaIBQVVfeXFMTmFBbTVwcTR1dEdUb2tldkRWZl9LclFtSkI0ZkVNVnFSeGxZYlp1UU4tZDdTczlZMXR5VG1PTjVZUFpZdDlTN0RnTE0zM3J4WUFNMXhEdXR5NlhIYWZ6bWZ1U3ZSZVVKU0Z0SDZCM0szREdqWTdNQTdEQTZzNGVNSHoyZGRtcHhNQllZRkRwOTE2WHJ0N0prM3NJalFXaUZycXhR?oc=5",
+   "publicado": "2026-11-10T17:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2821,7 +2834,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T17:28-03:00",
+ "atualizado_em": "2026-11-10T17:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2834,6 +2847,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Taxas dos DIs sobem após ata do Copom e exterior negativo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdVRQQVVBVjRweW1NaVpxUEFodDV2aDFydlItZnBqdGlJcndGemIxRUszY3ZwRVk5eGlhTWp0bE9fMy1OdXJ2cnZQVGhYYV9iZTYxMjBRYkJacEZyaXNlOUZwOGN6M3NWRTN5cC1aeWwxNmZ0b1hqaDNuWWtfQTVOYnlFaVdsR0FMaG9ib2lZMW9lU3gtS2g3cWsxX0vSAaIBQVVfeXFMTmFBbTVwcTR1dEdUb2tldkRWZl9LclFtSkI0ZkVNVnFSeGxZYlp1UU4tZDdTczlZMXR5VG1PTjVZUFpZdDlTN0RnTE0zM3J4WUFNMXhEdXR5NlhIYWZ6bWZ1U3ZSZVVKU0Z0SDZCM0szREdqWTdNQTdEQTZzNGVNSHoyZGRtcHhNQllZRkRwOTE2WHJ0N0prM3NJalFXaUZycXhR?oc=5",
+   "publicado": "2026-11-10T17:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Membro do Fed pede mais duas altas de juros de 0,25",
    "fonte": "CNN Brasil",
@@ -2997,19 +3022,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "WEG e FPT fazem parceria para motor elétrico com gerador a bordo de caminhão e ônibus",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/weg-e-fpt-fazem-parceria-para-motor-eletrico-com-gerador-a-bordo-de-caminhao-e-onibus.shtml",
-   "publicado": "2026-11-10T16:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "WEGE3"
-   ]
   },
   {
    "titulo": "Piora das expectativas econômicas explica alta do dólar, diz especialista",
