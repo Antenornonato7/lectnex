@@ -51,13 +51,39 @@ GRUPOS = [  # (rótulo, regra sobre o caminho da URL)
 
 
 # ----------------------------------------------------------------------------- acesso ao Google
+def ler_chave(bruto):
+    """Aceita o JSON da chave mesmo colado com sobras (```json, aspas, espaços) ou em base64. Nunca imprime o conteúdo."""
+    t = bruto.strip().lstrip('\ufeff')
+    if not t.startswith('{'):
+        try:
+            import base64
+            dec = base64.b64decode(t, validate=True).decode('utf-8')
+            if dec.strip().startswith('{'):
+                t = dec.strip()
+        except Exception:
+            pass
+    i, j = t.find('{'), t.rfind('}')
+    if i < 0 or j < i:
+        raise RuntimeError(f'o segredo GSC_SERVICE_ACCOUNT não contém o JSON da chave ({len(t)} caracteres, sem "{{" … "}}"). '
+                           'Cole de novo todo o conteúdo do arquivo .json.')
+    try:
+        info = json.loads(t[i:j + 1])
+    except json.JSONDecodeError as ex:
+        raise RuntimeError(f'o segredo GSC_SERVICE_ACCOUNT não é um JSON válido (erro na posição {ex.pos} de {j + 1 - i}). '
+                           'Provavelmente o texto foi cortado ao colar: cole de novo todo o conteúdo do arquivo .json.')
+    faltam = [k for k in ('type', 'client_email', 'private_key', 'token_uri') if k not in info]
+    if faltam:
+        raise RuntimeError(f'a chave colada está incompleta (faltam: {", ".join(faltam)}). Cole de novo todo o conteúdo do arquivo .json.')
+    return info
+
+
 def sessao():
     bruto = os.environ.get('GSC_SERVICE_ACCOUNT', '').strip()
     if not bruto:
         return None
     from google.oauth2 import service_account
     from google.auth.transport.requests import AuthorizedSession
-    info = json.loads(bruto)
+    info = ler_chave(bruto)
     cred = service_account.Credentials.from_service_account_info(info, scopes=['https://www.googleapis.com/auth/webmasters.readonly'])
     s = AuthorizedSession(cred)
     s.email = info.get('client_email', '')
@@ -227,7 +253,13 @@ def enviar(texto):
 
 
 def main():
-    s = sessao()
+    try:
+        s = sessao()
+    except Exception as ex:
+        msg = f'🔎 Relatório do Google: a chave salva no GitHub não funcionou.\n{e(str(ex)[:400])}'
+        print('::error::' + str(ex)[:400])
+        enviar(msg)
+        sys.exit(1)
     if s is None:
         msg = ('🔎 Relatório do Google ainda não configurado: falta o segredo GSC_SERVICE_ACCOUNT no GitHub. '
                'O passo a passo está no LEIA-ME, seção "Relatório do Search Console".')
