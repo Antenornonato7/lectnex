@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:45-03:00",
+  "atualizado_em": "2026-11-10T12:48-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -127,7 +127,11 @@
     ],
     [
      "12:30",
-     171953.0
+     171980.0
+    ],
+    [
+     "12:33",
+     171902.0
     ]
    ]
   },
@@ -316,7 +320,11 @@
     ],
     [
      "12:45",
-     5.599
+     5.5983
+    ],
+    [
+     "12:48",
+     5.6008
     ]
    ]
   },
@@ -819,6 +827,20 @@
     "dolar30": 0.04
    },
    {
+    "hora": "11:54",
+    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+    "fonte": "Agência Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.16,
+    "dolar30": 0.04
+   },
+   {
     "hora": "12:00",
     "titulo": "Ação da Embraer dispara mesmo com lucro 15% menor no 3º trimestre; três bancos reiteram compra",
     "fonte": "Estadão",
@@ -860,7 +882,7 @@
      "MGLU3"
     ],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.03
    },
    {
     "hora": "12:20",
@@ -874,22 +896,11 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.05
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ibovespa tem mais um dia de recuperação e avança 2%",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcUVYUzVlQmRISnU5VVE2R1IzcDAzYUs5Uk5MQW1kR2JFTUlqQnJ5N2Uybzh0QWh2UjU4REc3YmQtbThKV2JKSEJZYzJhWnNJU1JOcDhHVE5SQXo3dkxuaU9RVGJyenBCMmt2eGVMaGEwQVFwbUpkZlgtcDdOMnZlRFN1RE56YWZidXRQLVQ0Q3hhUFRCajYxRnFydUp1LVljcWNRcE8zcnFyTDVM0gG7AUFVX3lxTE1sVEdKUWgwNFQ1Uzh1d2s2dUJzYmhQMzBLZG5mX2gzUFAxVDlTVnBZYUxYVmpGdEtQN19LLTlhSldJLU41djl3VERQVi13cFluQkhMamdIYy1NZWdpOUVBaEFORmhzYnhqV1lnajBOYkhJYkxmcVo4WmkzcnZDRVh5QWxrLVRPNWtlSEVmRXJ4MURXOWhzSE1YWDJTU0tOTlFyNjhoMXRRUVpSNjJCcXQ4MV9NYVlGZkpRLWc?oc=5",
-   "publicado": "2026-11-10T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "“Império do CDI” deve se prolongar 2027 adentro, vê Bradesco Asset",
    "fonte": "InfoMoney",
@@ -1833,6 +1844,18 @@
    "tickers": []
   },
   {
+   "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+   "fonte": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
+   "publicado": "2026-11-10T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ação da Embraer dispara mesmo com lucro 15% menor no 3º trimestre; três bancos reiteram compra",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNU3ZEOXAyak9XZkpZeC02R200dVJVUEJSR0FSQV83b0s3ZF9KRjByMkxqNUlRQjJyVU51Wk5PczM4Y0YyTkdGblY0ZzhaVFBZdGNZUFFHOFI1ZUdCR0pOZDk5RDdmR1hpVjR1VnBwd1ZWcWN0NzJaRkFCS2lUeFhvNTRxT1hDMmNMeEJyTUhhR2lPNnRSWU9QNEZrZHo2UG9NeGFQRThtMy10eDgxVUJMbHQxMldjOXJpZFZzZUI4blVNb2NoMnl0dDFsdVZ6WFpvd0phRnRzR0NlalZoQ1l3c2V5c2XSAeoBQVVfeXFMT1hodWJ6NHhldHNRQlhWaThUUGR6cE9kRUtyUExhWkNGQ0J3RmVNTk9kdkdaYWhBTDdVajg3SkRTNUNOOUVEMUppdVlPS2p0bjZKUHh4NllscXc1RklBOGI3WlBpbElTbDRfQXZqR1RHOU9wUk5ldUhMQXExQUd1VjZ2a1NURlZxdHFyYk8yNzJ5N3dRLUVHSXMyeXVsaWs2SlRLNkFtU2F4TE1kOWwtWFNxV3J6VDAxS25RNzRHbDVlTW1vRGZWNnZXYWtZT1dONGFWekpwZ19NVXl1TmN5R2VmM05FLW5kUnln?oc=5",
@@ -1910,7 +1933,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:45-03:00",
+ "atualizado_em": "2026-11-10T12:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1921,8 +1944,7 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
@@ -1977,7 +1999,7 @@
   {
    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
    "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMkM1UFdyYmlCQ0Y1Q3BwZlBvS1FTTHczalFqMElRRmtHWjZTcmZtTjlLbUVscUUydjVTYkJnZVEzUTdySXJ2U0lpSS1NenE5b1RBblk0QzRsRHhKZWNLRmR5X3BuZzlDM2YtM0lUU1RLRkFPcTdlWW10ckRPem9VYm5DSmNGX005X1RaeHYzSmtqOHpQVVMtd3h6aHFxSGx6RWtJR3NuaThZMlV4azJHc2x0RHdRTFBndEtOR0lZN1ZEbU1lRzBEV3NYTlowMXJpZHF2R2stSUJtTFU?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
    "publicado": "2026-11-10T11:54-03:00",
    "impacto": "alto",
    "ativos": [
