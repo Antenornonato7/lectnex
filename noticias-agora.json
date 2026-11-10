@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T15:10-03:00",
+  "atualizado_em": "2026-11-10T15:13-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -243,7 +243,11 @@
     ],
     [
      "14:55",
-     170901.0
+     170868.0
+    ],
+    [
+     "14:58",
+     170854.0
     ]
    ]
   },
@@ -548,7 +552,11 @@
     ],
     [
      "15:10",
-     5.5884
+     5.5908
+    ],
+    [
+     "15:13",
+     5.5915
     ]
    ]
   },
@@ -1326,7 +1334,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.04
+    "dolar30": 0.01
    },
    {
     "hora": "14:55",
@@ -2375,7 +2383,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T15:10-03:00",
+ "atualizado_em": "2026-11-10T15:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2536,6 +2544,19 @@
    "tickers": []
   },
   {
+   "titulo": "Assaí é condenado por restringir ida ao banheiro e assediar funcionários",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/assai-e-condenado-por-restringir-ida-ao-banheiro-e-assediar-funcionarios.shtml",
+   "publicado": "2026-11-10T13:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ASAI3"
+   ]
+  },
+  {
    "titulo": "Ibovespa hoje cai e dólar sobe quase 2% após dado de inflação dos EUA",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
@@ -2568,18 +2589,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsas de NY caem com inflação nos EUA reforçando apostas de alta de juro pelo Fed",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY2tWX21seDF3b2tCSm9sLW9hZVpsRXFKWDhsRU5HQ09lZTh5VUxzdW5EQm5vLWgxNXBzZ2JWZHEyc1A4Z2pLdWxxWVpvX0RqMzNENzhkQ1BXREE1c0x1RV9QcXFsUHdIcDZjcGViRjBQQW5YRnY0NnRfeWd1bXlHUFlBSW1pTU1aRG40T1RiaWJiWWtSc2NpV3dhMGZfS1lXMDFwTmctS200NmY3cXRKNEJwaUFIWG1Ya2dLOExB0gHDAUFVX3lxTE4wVkJPQWhEdUVtaUlRUTV6cHRvQldvT3ZURUJYMVJaVnN5d0s4cF82bGRSQTBwT1dLci1ndVp2ZHYwd09RQmo5Z2RiTTByZFcxX1M0NFZSTmd0UDJiQmVJUHlaVThWcE8xLTNHY0JTd3Bldm11S1dyNHAyQ0FHMmNXSHpDbXVsa2RRNHhpWW1sVjg2eHpYR044Sm9WbG9JckJVVDJzendHSmJrY3NEN2hFZkJ1MURkVl9NLVctN3hyaTRDaw?oc=5",
-   "publicado": "2026-11-10T12:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
