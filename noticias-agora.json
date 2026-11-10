@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:55-03:00",
+  "atualizado_em": "2026-11-10T11:58-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -87,7 +87,11 @@
     ],
     [
      "11:40",
-     171779.0
+     171536.0
+    ],
+    [
+     "11:43",
+     171584.0
     ]
    ]
   },
@@ -236,7 +240,11 @@
     ],
     [
      "11:55",
-     5.5909
+     5.5865
+    ],
+    [
+     "11:58",
+     5.589
     ]
    ]
   },
@@ -603,7 +611,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.59,
+    "ibov30": -0.73,
     "dolar30": 0.33
    },
    {
@@ -617,7 +625,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.68,
     "dolar30": 0.35
    },
    {
@@ -666,7 +674,7 @@
      "BBDC4"
     ],
     "ibov30": null,
-    "dolar30": 0.22
+    "dolar30": 0.14
    },
    {
     "hora": "11:31",
@@ -680,13 +688,27 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.19
    },
    {
     "hora": "11:50",
     "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
     "fonte": "CNN Brasil",
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:54",
+    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+    "fonte": "Agência Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9USkVKbGFieVVOLTVCNmVaNThCd3JFYzZvcDJ5UlkyVldZUFNoZ2U3RVJnRDRqR3hvMVJiN3MzQUVLTWRaS0dJMDl4WDVqMmJDellzWEhyTHRrQmhT?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -1640,6 +1662,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+   "fonte": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9USkVKbGFieVVOLTVCNmVaNThCd3JFYzZvcDJ5UlkyVldZUFNoZ2U3RVJnRDRqR3hvMVJiN3MzQUVLTWRaS0dJMDl4WDVqMmJDellzWEhyTHRrQmhT?oc=5",
+   "publicado": "2026-11-10T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1669,7 +1703,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:55-03:00",
+ "atualizado_em": "2026-11-10T11:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1684,6 +1718,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+   "fonte": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9USkVKbGFieVVOLTVCNmVaNThCd3JFYzZvcDJ5UlkyVldZUFNoZ2U3RVJnRDRqR3hvMVJiN3MzQUVLTWRaS0dJMDl4WDVqMmJDellzWEhyTHRrQmhT?oc=5",
+   "publicado": "2026-11-10T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
    "fonte": "CNN Brasil",
@@ -1724,18 +1770,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
    "publicado": "2026-11-10T11:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "FDA warns of vision loss risk linked to popular GLP-1 drugs like Wegovy, Zepbound",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/fda-warning-vision-loss-glp1-wegovy-zepbound.html",
-   "publicado": "2026-11-10T11:43-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
