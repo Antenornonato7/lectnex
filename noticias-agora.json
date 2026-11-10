@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:10-03:00",
+  "atualizado_em": "2026-11-10T12:13-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -99,7 +99,11 @@
     ],
     [
      "11:55",
-     171699.0
+     171914.0
+    ],
+    [
+     "11:58",
+     171871.0
     ]
    ]
   },
@@ -260,7 +264,11 @@
     ],
     [
      "12:10",
-     5.5946
+     5.5954
+    ],
+    [
+     "12:13",
+     5.5956
     ]
    ]
   },
@@ -689,7 +697,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": -0.4,
+    "ibov30": -0.28,
     "dolar30": 0.18
    },
    {
@@ -703,7 +711,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.23,
     "dolar30": 0.29
    },
    {
@@ -1747,7 +1755,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:10-03:00",
+ "atualizado_em": "2026-11-10T12:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1762,6 +1770,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "China supera US$ 1 trilhão em superávit comercial em dez meses",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/china-supera-us-1-trilhao-em-superavit-comercial-em-dez-meses.shtml",
+   "publicado": "2026-11-10T12:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
    "fonte": "CNBC",
@@ -1792,18 +1812,6 @@
    "fonte": "Agência Brasil",
    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9USkVKbGFieVVOLTVCNmVaNThCd3JFYzZvcDJ5UlkyVldZUFNoZ2U3RVJnRDRqR3hvMVJiN3MzQUVLTWRaS0dJMDl4WDVqMmJDellzWEhyTHRrQmhT?oc=5",
    "publicado": "2026-11-10T11:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
-   "publicado": "2026-11-10T11:50-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
