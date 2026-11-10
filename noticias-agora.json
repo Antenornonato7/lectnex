@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:08-03:00",
+  "atualizado_em": "2026-11-10T11:10-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -47,11 +47,11 @@
     ],
     [
      "10:50",
-     172589.0
+     172636.0
     ],
     [
-     "10:53",
-     172558.0
+     "10:55",
+     172560.0
     ]
    ]
   },
@@ -160,11 +160,11 @@
     ],
     [
      "11:05",
-     5.5764
+     5.5754
     ],
     [
-     "11:08",
-     5.5768
+     "11:10",
+     5.5738
     ]
    ]
   },
@@ -397,7 +397,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.19,
     "dolar30": 0.09
    },
    {
@@ -426,7 +426,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.11
    },
    {
     "hora": "10:47",
@@ -473,6 +473,19 @@
     "tickers": [
      "MGLU3"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:06",
+    "titulo": "Inflação ao consumidor nos EUA sobe 0,4% em outubro, acima do esperado",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-ao-consumidor-nos-eua-sobe-04-em-outubro-acima-do-esperado.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1292,6 +1305,17 @@
    "tickers": [
     "MGLU3"
    ]
+  },
+  {
+   "titulo": "Inflação ao consumidor nos EUA sobe 0,4% em outubro, acima do esperado",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-ao-consumidor-nos-eua-sobe-04-em-outubro-acima-do-esperado.shtml",
+   "publicado": "2026-11-10T11:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1326,7 +1350,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:08-03:00",
+ "atualizado_em": "2026-11-10T11:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1350,6 +1374,17 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Inflação ao consumidor nos EUA sobe 0,4% em outubro, acima do esperado",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-ao-consumidor-nos-eua-sobe-04-em-outubro-acima-do-esperado.shtml",
+   "publicado": "2026-11-10T11:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -1397,18 +1432,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html",
    "publicado": "2026-11-10T10:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
-   "publicado": "2026-11-10T10:41-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
