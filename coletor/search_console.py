@@ -147,7 +147,7 @@ def montar(s, site):
     L = [f'🔎 <b>Google · semana de {INI:%d/%m} a {FIM:%d/%m}</b>{" (TESTE)" if TESTE else ""}',
          f'Cliques: <b>{n(t["cliques"])}</b>{var(t["cliques"], t0["cliques"])}',
          f'Impressões: <b>{n(t["impressoes"])}</b>{var(t["impressoes"], t0["impressoes"])}',
-         f'CTR: {dec(t["ctr"])}% · posição média: {dec(t["posicao"])}{var(t["posicao"], t0["posicao"], pct=False) if t0["impressoes"] else ""}']
+         f'CTR: {dec(t["ctr"])}% · posição média: {dec(t["posicao"])}' + (f' ({"melhorou" if t["posicao"] < t0["posicao"] else "piorou"} {dec(abs(t["posicao"] - t0["posicao"]))})' if t0["impressoes"] and t["impressoes"] and abs(t["posicao"] - t0["posicao"]) >= 0.05 else '')]
     if not pags:
         L.append('\nAinda sem impressões nesta semana. Em domínio novo é normal levar algumas semanas.')
     # por grupo
@@ -194,6 +194,11 @@ def indexacao(s, site):
         else:
             nao.append((caminho(u), estado or veredito or '?'))
     L = [f'\n🗂️ <b>Indexação (amostra de {len(urls)} páginas novas)</b>', f'No Google: <b>{sim}</b> · fora: <b>{len(nao)}</b>' + (f' · não verificadas: {erros}' if erros else '')]
+    PT = {'Submitted and indexed': 'enviada e indexada', 'Discovered - currently not indexed': 'descoberta, ainda não indexada',
+          'Crawled - currently not indexed': 'rastreada, ainda não indexada', 'URL is unknown to Google': 'o Google ainda não conhece',
+          'Duplicate without user-selected canonical': 'duplicada (sem canônica)', 'Excluded by ‘noindex’ tag': 'bloqueada por noindex',
+          'Page with redirect': 'página com redirecionamento', 'Not found (404)': 'não encontrada (404)', 'Blocked by robots.txt': 'bloqueada no robots.txt'}
+    nao = [(p, PT.get(est, est)) for p, est in nao]
     estados = {}
     for _, est in nao:
         estados[est] = estados.get(est, 0) + 1
