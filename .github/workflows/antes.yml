@@ -40,4 +40,4 @@ jobs:
           git add data/antes.json
           git diff --cached --quiet && exit 0
           git commit -m "antes do dado: $(TZ=America/Sao_Paulo date +%F)"
-          git pull --rebase -q origin main && git push -q origin HEAD:main
+          ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]
