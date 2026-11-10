@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:10-03:00",
+  "atualizado_em": "2026-11-10T13:13-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -147,7 +147,11 @@
     ],
     [
      "12:55",
-     171688.0
+     171495.0
+    ],
+    [
+     "12:58",
+     171565.0
     ]
    ]
   },
@@ -356,7 +360,11 @@
     ],
     [
      "13:10",
-     5.6036
+     5.6065
+    ],
+    [
+     "13:13",
+     5.6073
     ]
    ]
   },
@@ -941,7 +949,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.2,
+    "ibov30": -0.31,
     "dolar30": 0.18
    },
    {
@@ -989,21 +997,24 @@
     ],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "13:08",
+    "titulo": "Dirigente do Fed defende considerar alta de 0,5 ponto nos juros em dezembro",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dirigente-do-fed-defende-considerar-alta-de-05-ponto-nos-juros-em-dezembro.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Governo Lula promete projeto para cumprir centro da meta fiscal; o que muda na prática?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWkhjTGpRZ0FGYmlpTWlSREtwbkE4Z2czUG9nQUxUejhESUJXZmdXZnV2RFBPdUlKMFdoaENBRjVBb2d5b0U1NjgxR0xDLTRWNk81ZmpYcnJUSHpvTFdxcXB3S1owV0IwTTd4LXhfNXVRWGVCbzVWS3pBRVcxOVRCeTlkRTJDcnJ1eklLc0lNNDJfWHdzOVNDZ3JlTQ?oc=5",
-   "publicado": "2026-11-10T05:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Voos da Petrobras e invasões mudam rotina, mas euro e ouro valem mais que petróleo em Oiapoque",
    "fonte": "Estadão",
@@ -2001,6 +2012,18 @@
    "tickers": [
     "ASAI3"
    ]
+  },
+  {
+   "titulo": "Dirigente do Fed defende considerar alta de 0,5 ponto nos juros em dezembro",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dirigente-do-fed-defende-considerar-alta-de-05-ponto-nos-juros-em-dezembro.shtml",
+   "publicado": "2026-11-10T13:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2030,7 +2053,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:10-03:00",
+ "atualizado_em": "2026-11-10T13:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2044,6 +2067,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Dirigente do Fed defende considerar alta de 0,5 ponto nos juros em dezembro",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dirigente-do-fed-defende-considerar-alta-de-05-ponto-nos-juros-em-dezembro.shtml",
+   "publicado": "2026-11-10T13:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Assaí é condenado por restringir ida ao banheiro e assediar funcionários",
    "fonte": "Folha",
@@ -2078,21 +2113,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB0gHbAUFVX3lxTE1OaTdVN2hhQmhFNGJvUnRPbzkxaF8xRU5zdjNNckkxTjZQTDBrVlpwM2QwM0JoNHlPalkyVFBZZVp2YzN2el9HNnAyc1BoME1FZ29TWENYR0JvbjBNMS13TnhzQVl3N200WHRqbTl1QVU2bFRqVnM2Rk01a2hReHV2M0w1QmRyMWJ1QzZiSkRqX2hlSzFBMGhVQ0ctU1pqcUxWaHRGNk90S1hMOGVtZ1pDMktISlk4LUZrUHE5VlVYUDZwNlh0eGdVVUFERXlYdERpSDVQUTg4UnJfdw?oc=5",
-   "publicado": "2026-11-10T13:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
   },
   {
    "titulo": "Superávit comercial da China ultrapassa US$ 1 trilhão com salto nas exportações de alta tecnologia",
@@ -2157,7 +2177,7 @@
   {
    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
    "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMkM1UFdyYmlCQ0Y1Q3BwZlBvS1FTTHczalFqMElRRmtHWjZTcmZtTjlLbUVscUUydjVTYkJnZVEzUTdySXJ2U0lpSS1NenE5b1RBblk0QzRsRHhKZWNLRmR5X3BuZzlDM2YtM0lUU1RLRkFPcTdlWW10ckRPem9VYm5DSmNGX005X1RaeHYzSmtqOHpQVVMtd3h6aHFxSGx6RWtJR3NuaThZMlV4azJHc2x0RHdRTFBndEtOR0lZN1ZEbU1lRzBEV3NYTlowMXJpZHF2R2stSUJtTFU?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
    "publicado": "2026-11-10T11:54-03:00",
    "impacto": "alto",
    "ativos": [
@@ -2165,6 +2185,21 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
+   "publicado": "2026-11-10T11:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   },
   {
    "titulo": "Ata do Copom indica que desaceleração da economia não conteve inflação",
@@ -2183,18 +2218,6 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMm5zemYxVW5rTE15LV9LWENGVjNINXpLaFVvNkt2d2ZyYW52NHFHbFI3cEMxZnBZOHYweHdKemVkM0xqMkhDb3FPTmczdllzVDBkRk15U09rNzFqc3d5WHRyMFNEVGtZOUtHMHhVWDNyMFludVhCU2dYY0hZdFJaWU5IY05wLVZ4YzF1X2ZTQl85Z1FSbEpFYzFoTjRmNTRVUU9IN3pwZVpTeXQ4X1ZjOHNiWEt5NGVxdGpwSzVjWEw4Y3F0ek04VDRyaTVoUmJZcjFDWjFR0gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
    "publicado": "2026-11-10T11:16-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ata do Copom aponta 4 riscos à inflação e joga pressão sobre gastos do governo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVWN6OFFOaWJidHZaVWR3SnZjeGQxZnhwVlhvS19fb3B0WlVFUUxqSl9RbHpvdUgxZlFQMzE3WmRXUWhoOGhpOTlzLUZmSWlTZ21PTGFSUUV3emVmaHNfazBLMUQ3b2RnQzdQSjNZUXUtSlAxRG1fZHBjUGtrOUt3azREVGtBaTFZQTI5STIxdEg1LU42UXNDWTFhWG9jTE9WNS1mNzB3NzlOdThWWV9KOHdwWThXZnM50gG-AUFVX3lxTE9aTFQyNTQ1OVIwdm9zNElZcVhPcTdFNWlvRkJNczN3LWFIVk5BUnk4b0c2Z04wNFlWNzVhSnpwRXd1bGkwXzl4SWQ2d09XTHRFX2hVclVYbDVkYlk4SlIxWS0wWUZMTU83V3NQSG5nZ0RuUkJ2Q3V5VXlxWVZhbmpoeUllWXE0dVliVDl0aWM1Z3d6U2hKNjFYYWNwTzRNdWFPR3lud1BEUEpobTMxWWl2cGJWOFh1a2c4bTRIaGc?oc=5",
-   "publicado": "2026-11-10T11:12-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
