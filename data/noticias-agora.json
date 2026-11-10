@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:08-03:00",
+  "atualizado_em": "2026-11-10T11:38-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -47,11 +47,35 @@
     ],
     [
      "10:50",
-     172589.0
+     172636.0
     ],
     [
-     "10:53",
-     172558.0
+     "10:55",
+     172442.0
+    ],
+    [
+     "11:00",
+     172456.0
+    ],
+    [
+     "11:05",
+     172566.0
+    ],
+    [
+     "11:10",
+     172805.0
+    ],
+    [
+     "11:15",
+     172753.0
+    ],
+    [
+     "11:20",
+     172827.0
+    ],
+    [
+     "11:23",
+     172786.0
     ]
    ]
   },
@@ -160,11 +184,35 @@
     ],
     [
      "11:05",
-     5.5764
+     5.5754
     ],
     [
-     "11:08",
-     5.5768
+     "11:10",
+     5.5698
+    ],
+    [
+     "11:15",
+     5.5779
+    ],
+    [
+     "11:20",
+     5.5804
+    ],
+    [
+     "11:25",
+     5.5788
+    ],
+    [
+     "11:30",
+     5.5785
+    ],
+    [
+     "11:35",
+     5.5828
+    ],
+    [
+     "11:38",
+     5.5849
     ]
    ]
   },
@@ -330,6 +378,20 @@
     "dolar30": 0.01
    },
    {
+    "hora": "09:55",
+    "titulo": "Dólar abre em alta com ata do Copom e expectativa por dados de inflação nos EUA",
+    "fonte": "Folha",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQkhDcjFUNDNtbkt0UTJzYkRKczhhbEFOd1RtYWpuQmd1d24tSlpfNGhkUExianp5OXZwcU5HOW5FRkJLcTJ0ZURXN1RzanlQdnQzM1J3Z3hRVGczbVNjQUhITDJDZVBOUGFEbkJINlFCN3ZwZGpLdU5HWHptVHY1MmdadVdiQkNJanFpcnJIMzFFa3oySlBBTHlFLUM5bXdDa05UanVFU2JFUzhMd3h2WmRGV3RCNWsyVmV0WEJrM1g0Ukh3SkthbVlKQQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.01
+   },
+   {
     "hora": "10:17",
     "titulo": "Magalu: “ponto de inflexão” em outubro faz ação saltar 15%, mas movimento continua?",
     "fonte": "InfoMoney",
@@ -369,7 +431,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.28,
+    "ibov30": -0.35,
     "dolar30": 0.38
    },
    {
@@ -384,7 +446,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.28,
+    "ibov30": -0.35,
     "dolar30": 0.38
    },
    {
@@ -397,7 +459,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.26,
     "dolar30": 0.09
    },
    {
@@ -412,7 +474,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.26,
     "dolar30": 0.18
    },
    {
@@ -425,8 +487,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.09,
+    "dolar30": 0.04
    },
    {
     "hora": "10:47",
@@ -441,8 +503,8 @@
      "PETR4",
      "VALE3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.06,
+    "dolar30": 0.18
    },
    {
     "hora": "11:00",
@@ -459,7 +521,7 @@
      "VALE3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.02
    },
    {
     "hora": "11:03",
@@ -473,6 +535,126 @@
     "tickers": [
      "MGLU3"
     ],
+    "ibov30": null,
+    "dolar30": 0.01
+   },
+   {
+    "hora": "11:06",
+    "titulo": "Inflação ao consumidor nos EUA sobe 0,4% em outubro, acima do esperado",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-ao-consumidor-nos-eua-sobe-04-em-outubro-acima-do-esperado.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.13
+   },
+   {
+    "hora": "11:09",
+    "titulo": "Mesmo com Selic elevada, Petrobras (PETR4) deve entregar mais um trimestre sólido",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcUp3cmVDMmpNV1JKcHdGNmx1TnNKNVI2bDZOTTU2Z28wX21kZXUzS3VZRXJZVlQ4TUJqZWtiN3BudHRqRDMzOGdGYU9uaF9nVm5jUE16VGZzOVpnY21CdXNyYkNDN24zYWlENVEwcVlTSUhqRUEwX3lGMEZIZ05QZk1Vd2xkVGgwcVBkS0VMbGpPMlp2amhiVGRmaEp2YTJKMUxqeGdmMXU0YmFKM05oTEFqdXo?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": 0.13
+   },
+   {
+    "hora": "11:12",
+    "titulo": "Ata do Copom aponta 4 riscos à inflação e joga pressão sobre gastos do governo",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVWN6OFFOaWJidHZaVWR3SnZjeGQxZnhwVlhvS19fb3B0WlVFUUxqSl9RbHpvdUgxZlFQMzE3WmRXUWhoOGhpOTlzLUZmSWlTZ21PTGFSUUV3emVmaHNfazBLMUQ3b2RnQzdQSjNZUXUtSlAxRG1fZHBjUGtrOUt3azREVGtBaTFZQTI5STIxdEg1LU42UXNDWTFhWG9jTE9WNS1mNzB3NzlOdThWWV9KOHdwWThXZnM50gG-AUFVX3lxTE9aTFQyNTQ1OVIwdm9zNElZcVhPcTdFNWlvRkJNczN3LWFIVk5BUnk4b0c2Z04wNFlWNzVhSnpwRXd1bGkwXzl4SWQ2d09XTHRFX2hVclVYbDVkYlk4SlIxWS0wWUZMTU83V3NQSG5nZ0RuUkJ2Q3V5VXlxWVZhbmpoeUllWXE0dVliVDl0aWM1Z3d6U2hKNjFYYWNwTzRNdWFPR3lud1BEUEpobTMxWWl2cGJWOFh1a2c4bTRIaGc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.27
+   },
+   {
+    "hora": "11:16",
+    "titulo": "Tesouro Direto hoje cai mesmo com ata mais dura do Copom; IPCA+ 2032 vai a 7,71%",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:20",
+    "titulo": "Ata do Copom indica que desaceleração da economia não conteve inflação",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/ata-do-copom-indica-que-desaceleracao-da-economia-nao-conteve-inflacao",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:20",
+    "titulo": "Selic 2027: Bradesco prevê juros em 13,75% até junho",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:27",
+    "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:31",
+    "titulo": "Taxas longas dos juros futuros sobem após ata do Copom",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWTYxRGNUVHdUbVRDd2JZM2o5Qi1yeTh5c1puSXdIXzNHajgtb0x2T1p4UWIwcE5kY2tDRWZ5ak5Zc3BTTDFuYlRxX1d1WDlwbk12Nm1fenZTcHZYZUhGU3BzTzlZdm9Bb2licXBDLUtRZkRWZHlvSUNILURqdzBXQWlTYTB2VE45R3NvZ3NHbDRVWERVaVlobdIBngFBVV95cUxNeXhMRnFHZUkzZGpVNzdzTjVUMkpvM0dPTS1lUUFXSzMtWU10Wlg3U3VLQXNhX3dBcmEtM0pINWdJdGowdmRlVlhrVjNIQ1NjNmhPcW9sN3pJdFpnWF9pZU0xaE55VS1XYk80TmpYMmRhcWx6ejY5UzVVNGppVDhoamlIeXhLcmlrazdDXzk0a2JKYUZzVktHazd0SWdkZw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1167,6 +1349,18 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar abre em alta com ata do Copom e expectativa por dados de inflação nos EUA",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQkhDcjFUNDNtbkt0UTJzYkRKczhhbEFOd1RtYWpuQmd1d24tSlpfNGhkUExianp5OXZwcU5HOW5FRkJLcTJ0ZURXN1RzanlQdnQzM1J3Z3hRVGczbVNjQUhITDJDZVBOUGFEbkJINlFCN3ZwZGpLdU5HWHptVHY1MmdadVdiQkNJanFpcnJIMzFFa3oySlBBTHlFLUM5bXdDa05UanVFU2JFUzhMd3h2WmRGV3RCNWsyVmV0WEJrM1g0Ukh3SkthbVlKQQ?oc=5",
+   "publicado": "2026-11-10T09:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Magalu: “ponto de inflexão” em outubro faz ação saltar 15%, mas movimento continua?",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOalNpRWZUbmJFSVhGWEhFUVhwdHFCQ2R0STdveXFVNDVOa2ZURUpMV3U0MmRVX09pdEJmV2dFa25lT1dCMFpBOVhZeVhHX2lCcE1HQnh5TTcwQjUyMkxkaVZ4ZWtLeXlrMTNPdUJ2RjNuSDh2aTlGRGxTN2E3a1JPWXhJdWlNdnJOQklCdkM2Y0FGRkptZjFFOGZZNXcyOV9JVnVSaHhmX1VubVR5WVp2d1Y0clV4Ym9tbjZSQllrZUNPMmpmTzVPbnlZT2ZRbU0t0gHWAUFVX3lxTE0zcDBWRXp5cW1iSlp2LWJoTmRBX09IOGhzMVV1SFFkOUN5ZkdBVHhqUlFDMkM1NnF4QnYzTUJJajJHNlI3YnA3OTRhenRQYjFpdm5hMzVwUU0wUEstTlpQNnZxcU12N09uUEVIMjlVajhqbDlrcVk1T2t4a0tHQXNFQm56M0xGZWUydzhiTkltZWtMb0RMcnBWZ25kdUR5bFVCMnBIZzhQTl9KajZ5Y19BUkpLN2QxVHNqVFpzSmhiUFdjZ1pCdHZlaXBkak5qQWJ1RkZkQmc?oc=5",
@@ -1292,14 +1486,113 @@
    "tickers": [
     "MGLU3"
    ]
+  },
+  {
+   "titulo": "Inflação ao consumidor nos EUA sobe 0,4% em outubro, acima do esperado",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-ao-consumidor-nos-eua-sobe-04-em-outubro-acima-do-esperado.shtml",
+   "publicado": "2026-11-10T11:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mesmo com Selic elevada, Petrobras (PETR4) deve entregar mais um trimestre sólido",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcUp3cmVDMmpNV1JKcHdGNmx1TnNKNVI2bDZOTTU2Z28wX21kZXUzS3VZRXJZVlQ4TUJqZWtiN3BudHRqRDMzOGdGYU9uaF9nVm5jUE16VGZzOVpnY21CdXNyYkNDN24zYWlENVEwcVlTSUhqRUEwX3lGMEZIZ05QZk1Vd2xkVGgwcVBkS0VMbGpPMlp2amhiVGRmaEp2YTJKMUxqeGdmMXU0YmFKM05oTEFqdXo?oc=5",
+   "publicado": "2026-11-10T11:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Ata do Copom aponta 4 riscos à inflação e joga pressão sobre gastos do governo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVWN6OFFOaWJidHZaVWR3SnZjeGQxZnhwVlhvS19fb3B0WlVFUUxqSl9RbHpvdUgxZlFQMzE3WmRXUWhoOGhpOTlzLUZmSWlTZ21PTGFSUUV3emVmaHNfazBLMUQ3b2RnQzdQSjNZUXUtSlAxRG1fZHBjUGtrOUt3azREVGtBaTFZQTI5STIxdEg1LU42UXNDWTFhWG9jTE9WNS1mNzB3NzlOdThWWV9KOHdwWThXZnM50gG-AUFVX3lxTE9aTFQyNTQ1OVIwdm9zNElZcVhPcTdFNWlvRkJNczN3LWFIVk5BUnk4b0c2Z04wNFlWNzVhSnpwRXd1bGkwXzl4SWQ2d09XTHRFX2hVclVYbDVkYlk4SlIxWS0wWUZMTU83V3NQSG5nZ0RuUkJ2Q3V5VXlxWVZhbmpoeUllWXE0dVliVDl0aWM1Z3d6U2hKNjFYYWNwTzRNdWFPR3lud1BEUEpobTMxWWl2cGJWOFh1a2c4bTRIaGc?oc=5",
+   "publicado": "2026-11-10T11:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro Direto hoje cai mesmo com ata mais dura do Copom; IPCA+ 2032 vai a 7,71%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
+   "publicado": "2026-11-10T11:16-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ata do Copom indica que desaceleração da economia não conteve inflação",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/ata-do-copom-indica-que-desaceleracao-da-economia-nao-conteve-inflacao",
+   "publicado": "2026-11-10T11:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Selic 2027: Bradesco prevê juros em 13,75% até junho",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB?oc=5",
+   "publicado": "2026-11-10T11:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
+   "publicado": "2026-11-10T11:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Taxas longas dos juros futuros sobem após ata do Copom",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWTYxRGNUVHdUbVRDd2JZM2o5Qi1yeTh5c1puSXdIXzNHajgtb0x2T1p4UWIwcE5kY2tDRWZ5ak5Zc3BTTDFuYlRxX1d1WDlwbk12Nm1fenZTcHZYZUhGU3BzTzlZdm9Bb2licXBDLUtRZkRWZHlvSUNILURqdzBXQWlTYTB2VE45R3NvZ3NHbDRVWERVaVlobdIBngFBVV95cUxNeXhMRnFHZUkzZGpVNzdzTjVUMkpvM0dPTS1lUUFXSzMtWU10Wlg3U3VLQXNhX3dBcmEtM0pINWdJdGowdmRlVlhrVjNIQ1NjNmhPcW9sN3pJdFpnWF9pZU0xaE55VS1XYk80TmpYMmRhcWx6ejY5UzVVNGppVDhoamlIeXhLcmlrazdDXzk0a2JKYUZzVktHazd0SWdkZw?oc=5",
+   "publicado": "2026-11-10T11:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
-  {
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONHBkRjUtX1ZoUDVNRVVubmNOTmd2TWJOOF9aUGtoeVg1RnlILVViUzJuaDI4cFhxbG5Bd2ZBTjVNLUtJTWx3WGJNWFlraFVsckFrdXhaOHdqT29xWENzcGN2Yk5DeTFqM2NEb1d5OUZSTWx4STBjZHppdU5XSHo3NFRtcDJ4OFpLZGVpTnB2b0lzWWJIVnVDWW9XV2xIUk01N0lsSGlrVzRZMDRWS0ttVzJlTnNEU0xiLUU4Sg?oc=5",
-   "titulo": "Vale e bancos puxam Ibovespa; dólar fica estável enquanto mercado cobra Lula no fiscal",
-   "em": "2026-11-09T14:22:59+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMHZzTGdXMTllcFdpUjVfV3RFZ25URUxjVld0aEhfRTVXWDd3Q2ZCRWYyWk5mY1c3YUlIUzEzekY1LW5lNndOQkVCVUNFb25QYW9WdWxRbFNxVEQzUWs5bUVYamQ1MENpVFVPTWdpWmxLMkpPa2VfUmpWSDVtOVozNUlmV3FpUUNKRk5UQnZrR1dLNGMwak4xcGNBZzZkNGRPTkR2RDlXbXNid9IBrwFBVV95cUxOM0czaENtUjFWZW95cnN3VkpTLXh5LUZYTE1nWnZkWVZIcHpKTkU0WnVhd0t2TkRjWmdGM1BmR3VlZTI5MldJWXhUVzZCdlNtNXJxU2xnWnN2cDdUX0lyMGVROEp3TU83T3BnOGE0SHdfU0E5dEs0b0l4di1oWVdTV2FhT0c4VXh4UGZYaXd1NHpiR2RaalVmZkR6UXZvSVRXSVZoNS1NR2tOQUVpSEF3?oc=5",
    "titulo": "Petrobras (PETR4) divulga balanço nesta terça: o que esperar do 3º tri?",
@@ -1326,7 +1619,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:08-03:00",
+ "atualizado_em": "2026-11-10T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1345,7 +1638,7 @@
    "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T11:06-03:00",
+   "publicado": "2026-11-10T11:32-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1354,16 +1647,96 @@
    "tickers": []
   },
   {
-   "titulo": "Magazine Luiza sobe até 17% na bolsa: o que o mercado viu de bom no balanço?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORG5rdWFCNDlOaUQ0WndPOWpZb0JPQk10VE1zcy0xYTVtc0s3WGZRM2RHRTRtOFhuTnRjSHhnVzFIc3g3VjJkUUJ6Z1ppTmVIQXYxcm40N21rTzhOaE10ZUlFeGRjenJON1RlbGtPc0kwSFFqcEp1REtvWnRxVzFvSnQtY3dHcUE5VVRsTi04MnlHSzBfSGVkSFAxbDg1dFdqeWNQekdmTW4tVWR0?oc=5",
-   "publicado": "2026-11-10T11:03-03:00",
-   "impacto": "medio",
+   "titulo": "Taxas longas dos juros futuros sobem após ata do Copom",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWTYxRGNUVHdUbVRDd2JZM2o5Qi1yeTh5c1puSXdIXzNHajgtb0x2T1p4UWIwcE5kY2tDRWZ5ak5Zc3BTTDFuYlRxX1d1WDlwbk12Nm1fenZTcHZYZUhGU3BzTzlZdm9Bb2licXBDLUtRZkRWZHlvSUNILURqdzBXQWlTYTB2VE45R3NvZ3NHbDRVWERVaVlobdIBngFBVV95cUxNeXhMRnFHZUkzZGpVNzdzTjVUMkpvM0dPTS1lUUFXSzMtWU10Wlg3U3VLQXNhX3dBcmEtM0pINWdJdGowdmRlVlhrVjNIQ1NjNmhPcW9sN3pJdFpnWF9pZU0xaE55VS1XYk80TmpYMmRhcWx6ejY5UzVVNGppVDhoamlIeXhLcmlrazdDXzk0a2JKYUZzVktHazd0SWdkZw?oc=5",
+   "publicado": "2026-11-10T11:31-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
+   "publicado": "2026-11-10T11:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": [
-    "MGLU3"
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Selic 2027: Bradesco prevê juros em 13,75% até junho",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB?oc=5",
+   "publicado": "2026-11-10T11:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Ata do Copom indica que desaceleração da economia não conteve inflação",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/ata-do-copom-indica-que-desaceleracao-da-economia-nao-conteve-inflacao",
+   "publicado": "2026-11-10T11:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro Direto hoje cai mesmo com ata mais dura do Copom; IPCA+ 2032 vai a 7,71%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
+   "publicado": "2026-11-10T11:16-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ata do Copom aponta 4 riscos à inflação e joga pressão sobre gastos do governo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVWN6OFFOaWJidHZaVWR3SnZjeGQxZnhwVlhvS19fb3B0WlVFUUxqSl9RbHpvdUgxZlFQMzE3WmRXUWhoOGhpOTlzLUZmSWlTZ21PTGFSUUV3emVmaHNfazBLMUQ3b2RnQzdQSjNZUXUtSlAxRG1fZHBjUGtrOUt3azREVGtBaTFZQTI5STIxdEg1LU42UXNDWTFhWG9jTE9WNS1mNzB3NzlOdThWWV9KOHdwWThXZnM50gG-AUFVX3lxTE9aTFQyNTQ1OVIwdm9zNElZcVhPcTdFNWlvRkJNczN3LWFIVk5BUnk4b0c2Z04wNFlWNzVhSnpwRXd1bGkwXzl4SWQ2d09XTHRFX2hVclVYbDVkYlk4SlIxWS0wWUZMTU83V3NQSG5nZ0RuUkJ2Q3V5VXlxWVZhbmpoeUllWXE0dVliVDl0aWM1Z3d6U2hKNjFYYWNwTzRNdWFPR3lud1BEUEpobTMxWWl2cGJWOFh1a2c4bTRIaGc?oc=5",
+   "publicado": "2026-11-10T11:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mesmo com Selic elevada, Petrobras (PETR4) deve entregar mais um trimestre sólido",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcUp3cmVDMmpNV1JKcHdGNmx1TnNKNVI2bDZOTTU2Z28wX21kZXUzS3VZRXJZVlQ4TUJqZWtiN3BudHRqRDMzOGdGYU9uaF9nVm5jUE16VGZzOVpnY21CdXNyYkNDN24zYWlENVEwcVlTSUhqRUEwX3lGMEZIZ05QZk1Vd2xkVGgwcVBkS0VMbGpPMlp2amhiVGRmaEp2YTJKMUxqeGdmMXU0YmFKM05oTEFqdXo?oc=5",
+   "publicado": "2026-11-10T11:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
    ]
   },
   {
@@ -1382,45 +1755,10 @@
    ]
   },
   {
-   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T10:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "France blames Iran for supermarket refrigerator cyberattacks, weighs sanctions",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html",
-   "publicado": "2026-11-10T10:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
-   "publicado": "2026-11-10T10:41-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa hoje: após salto de 2,2%, índice enfrenta dado de inflação nos EUA e ata do Copom",
+   "titulo": "Ibovespa hoje tem leve alta e dólar sobe mais de 1% após dado de inflação dos EUA",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
-   "publicado": "2026-11-10T10:41-03:00",
+   "publicado": "2026-11-10T10:46-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -1439,17 +1777,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bridgepoint sees opportunity in 're-rated' real estate",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
-   "publicado": "2026-11-10T10:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
@@ -1480,21 +1807,10 @@
    "tickers": []
   },
   {
-   "titulo": "'Markets bottom on bad news' maxim rings true as chip stocks rally amid Nvidia scandal",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/chip-stocks-rally-nvidia-scandal.html",
-   "publicado": "2026-11-10T10:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar tem forte alta com sinalizações de Fed e Copom em dia de dados de inflação nos EUA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxON24tLUdtaVdCbWEzeFJ4WXVSWERzN0dVY3ZINlN4VG9aZE0wTHRBcWl6SC1NSm9FQnotLWhGZDlNSVoweVFJWWZTaTJxWTJoR0JJVkNKVUgxLWw0SGZtdzVWbXh4VzktV3dLb3VjQ2EwZ2lDNVhkanVyb295TGVLX21JclhVSUp4VzFkdUItMEw4Ym1ONl9ycExIT1N6N2EtVk1KUW5uR0tNdkQyeV9iN1diMTlBUWFEbmw0RC01N21mZHkxWEptcExZQ1VsQ3dZcXZ3OWU2b3pnSDVvVVNr0gHuAUFVX3lxTE1DSVU4OGhvTFV6bG5uZUYtOFFlbDhqWWRkcFNJS3BwNk9LaE1zYnVEeWRsLUtjcF9NYm44WDdNSk0xWGltM0dFNGJDZjRSNkpHX2FGODJlUVpIUkFpUWt3TjlXb0pHS2VzSWhmNDdSTGQ1RUZwMUFRVk41OHdEZTdvcWlBSEt1Y29ETEhyQmpZeXktOEZhVVFha2ZyMFAwNngzSTBtcUdxLU5LQ3JOUFVtVWRMSWljcWNvcFh6WUU4eXZtVWhndFVjcUw5V3EzdTFObGVDLUQtSlZ0clpDZGVNRGU3OFVuaFNnUk5ubVE?oc=5",
-   "publicado": "2026-11-10T09:30-03:00",
+   "titulo": "Dólar e Bolsa sobem após ata do Copom e inflação acima do esperado nos EUA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-ata-do-copom-e-expectativa-por-dados-de-inflacao-nos-eua.shtml",
+   "publicado": "2026-11-10T09:55-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1503,13 +1819,12 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa Futuro ronda estabilidade com ata do Copom e dados de inflação em foco",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONDFUWWVucXkxRWhrNmRjTG9vOEhjNUpMRlctS1E3RHhxaGdhcjBEaTUtdWRsbGd2cTRid1Z1b1FkdE1sNEpwTjYwLTRCcWdLRXRpMjJIcDRzUng0UWJBRndDU0FoeHRkOWRHeElXVkIzUE5EUV9KbTNib0JJRFhhSHFDR296TTRsRmxfbTBFOU1kV0ZFSy1VTVJWYUxjVnBwRnM1U3dGcVZJMkhEMmU2TWF1QUNtRXpySHfSAb8BQVVfeXFMTlJaUWhUTEliemQwRU01Qi1uRkNwT1VPN0lmc2dlTDZLX3NkMmlBNWxtTUVGS2ZRRmxvUnJmbnFUaGRyd3hhUmNtb3RWMWZ1RmZPZWpjOENuRzRySzd5Nnc0eVFhMXVqNWRZTGtLZlJHaEJfWUZLZ2t0Um01NUpUc3JsdHZkeVRzMnRqYkxETENnNVhGRWtudEZBYWo1Q0xzVEhtM09KbnpEWmJfY21IOUdOZkpaLTh5ZUVwRDFuTE0?oc=5",
-   "publicado": "2026-11-10T09:12-03:00",
+   "titulo": "Dólar abre em alta com ata do Copom e expectativa por dados de inflação nos EUA",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQkhDcjFUNDNtbkt0UTJzYkRKczhhbEFOd1RtYWpuQmd1d24tSlpfNGhkUExianp5OXZwcU5HOW5FRkJLcTJ0ZURXN1RzanlQdnQzM1J3Z3hRVGczbVNjQUhITDJDZVBOUGFEbkJINlFCN3ZwZGpLdU5HWHptVHY1MmdadVdiQkNJanFpcnJIMzFFa3oySlBBTHlFLUM5bXdDa05UanVFU2JFUzhMd3h2WmRGV3RCNWsyVmV0WEJrM1g0Ukh3SkthbVlKQQ?oc=5",
+   "publicado": "2026-11-10T09:55-03:00",
    "impacto": "alto",
    "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
@@ -1522,19 +1837,6 @@
    "publicado": "2026-11-10T08:48-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ata do Copom mostra expectativa de inflação mais alta com guerra, El Niño, fim da 6x1 e disparada do dólar",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-copom-mostra-expectativa-de-inflacao-mais-alta-com-guerra-el-nino-fim-da-6x1-e-disparada-do-dolar.shtml",
-   "publicado": "2026-11-10T08:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
