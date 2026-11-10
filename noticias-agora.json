@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T14:00-03:00",
+  "atualizado_em": "2026-11-10T14:03-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -187,7 +187,11 @@
     ],
     [
      "13:45",
-     171391.0
+     171482.0
+    ],
+    [
+     "13:48",
+     171316.0
     ]
    ]
   },
@@ -436,7 +440,11 @@
     ],
     [
      "14:00",
-     5.5952
+     5.5944
+    ],
+    [
+     "14:03",
+     5.5954
     ]
    ]
   },
@@ -1108,7 +1116,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.01,
+    "ibov30": 0.06,
     "dolar30": -0.2
    },
    {
@@ -1139,24 +1147,27 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": -0.23
+   },
+   {
+    "hora": "13:58",
+    "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Tempo real: Ibovespa reage à ata do Copom",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBkTXlYRXh0dmppVlZOOWpLWEp2cWN4eGNsemlEaWxyYmdIUUNqZDFHVkNUcWJ5ZGVGWjVrVTFwMkczSE1kcl9KeGZjTkNxdW51Q2ctTFlaZ1RoTEJZX1JGRGtkTG8wdw?oc=5",
-   "publicado": "2026-11-10T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
    "fonte": "CNBC",
@@ -2148,6 +2159,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
+   "publicado": "2026-11-10T13:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   }
  ],
  "enviadas": [
@@ -2177,7 +2202,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T14:00-03:00",
+ "atualizado_em": "2026-11-10T14:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2190,6 +2215,20 @@
   "InfoMoney"
  ],
  "noticias": [
+  {
+   "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
+   "publicado": "2026-11-10T13:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
   {
    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
    "fonte": "CNBC",
@@ -2248,6 +2287,20 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa vira para queda com pressão de Vale e exterior; dólar sobe e chega a R$ 5,60",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQURoQkhqY1FxaTlTRWhINkh3OW5fLWZSRC1BelRSSkNmUmxLcF9UNXJmbnp6NWFDTFV6Uk8zMC1tcG11NlBMT1I4ZXRqVE5jR1h3cEZWdkJMMVZaam43X1FKdHV3bWxSSnlFY1NZZl9SZzBOcG1KRWM0MjMwRWdBcXJqT2RPLWJPRU5NOUR1RTdfQm51MFhZMUVhT09yVC1TcTl0T3ZZNHdhYzNVcVRCU3VobXZfUm8?oc=5",
+   "publicado": "2026-11-10T13:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   },
   {
    "titulo": "Dirigente do Fed defende considerar alta de 0,5 ponto nos juros em dezembro",
@@ -2322,30 +2375,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros: combinação de fatores compõe cenário em que dificilmente Copom evitará novas altas na Selic",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOc1JlUHl2aFhxMVJEaHRvcXRWeUxwWTRkSHFfMTdIakN4X1ZCV3I4cE05aGR3dUgwZXNwOURsb0dqTDhPWjZwc3FLU21Gc0lqX0JaS2gxcTNOOThSN1lCZWZnemJsUndpX1o3eFp4NDgybnZndUlsT2Y1Rzh6S2x3VUtXVDRuZm45UkV0Z19sY1dUanpod3ZSU1o5NGR6VWJTdldTX2hOeFFqemtsYmliUjYwSW9Bb05VYlNnYTBnbXZhNkxpemFvcVFaSnFyU1A4d0tnRFBzSXc2cnU4OWQzVHZIR01CNGg0QlYzbktwQlpxYmxx?oc=5",
-   "publicado": "2026-11-10T12:52-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Banco Central do Paraguai afirma que devolveu o dinheiro de 93% dos clientes do Ueno Bank",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/banco-central-do-paraguai-afirma-que-devolveu-o-dinheiro-de-93-dos-clientes-do-ueno-bank-npr/",
-   "publicado": "2026-11-10T12:27-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
