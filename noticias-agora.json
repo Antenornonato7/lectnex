@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:45-03:00",
+  "atualizado_em": "2026-11-10T11:48-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -79,7 +79,11 @@
     ],
     [
      "11:30",
-     172534.0
+     172221.0
+    ],
+    [
+     "11:33",
+     172223.0
     ]
    ]
   },
@@ -220,7 +224,11 @@
     ],
     [
      "11:45",
-     5.5895
+     5.5963
+    ],
+    [
+     "11:48",
+     5.5945
     ]
    ]
   },
@@ -543,7 +551,7 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": 0.05,
+    "ibov30": -0.14,
     "dolar30": 0.01
    },
    {
@@ -556,7 +564,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.2,
     "dolar30": 0.14
    },
    {
@@ -602,7 +610,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.21
+    "dolar30": 0.33
    },
    {
     "hora": "11:20",
@@ -616,7 +624,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.16
+    "dolar30": 0.28
    },
    {
     "hora": "11:20",
@@ -633,7 +641,7 @@
      "BBDC4"
     ],
     "ibov30": null,
-    "dolar30": 0.16
+    "dolar30": 0.28
    },
    {
     "hora": "11:27",
@@ -1627,7 +1635,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:45-03:00",
+ "atualizado_em": "2026-11-10T11:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1655,24 +1663,24 @@
    "tickers": []
   },
   {
+   "titulo": "FDA warns of vision loss risk linked to popular GLP-1 drugs like Wegovy, Zepbound",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/fda-warning-vision-loss-glp1-wegovy-zepbound.html",
+   "publicado": "2026-11-10T11:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
    "publicado": "2026-11-10T11:40-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Taxas longas dos juros futuros sobem após ata do Copom",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWTYxRGNUVHdUbVRDd2JZM2o5Qi1yeTh5c1puSXdIXzNHajgtb0x2T1p4UWIwcE5kY2tDRWZ5ak5Zc3BTTDFuYlRxX1d1WDlwbk12Nm1fenZTcHZYZUhGU3BzTzlZdm9Bb2licXBDLUtRZkRWZHlvSUNILURqdzBXQWlTYTB2VE45R3NvZ3NHbDRVWERVaVlobdIBngFBVV95cUxNeXhMRnFHZUkzZGpVNzdzTjVUMkpvM0dPTS1lUUFXSzMtWU10Wlg3U3VLQXNhX3dBcmEtM0pINWdJdGowdmRlVlhrVjNIQ1NjNmhPcW9sN3pJdFpnWF9pZU0xaE55VS1XYk80TmpYMmRhcWx6ejY5UzVVNGppVDhoamlIeXhLcmlrazdDXzk0a2JKYUZzVktHazd0SWdkZw?oc=5",
-   "publicado": "2026-11-10T11:31-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
