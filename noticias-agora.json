@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:40-03:00",
+  "atualizado_em": "2026-11-10T12:43-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -123,7 +123,11 @@
     ],
     [
      "12:25",
-     171798.0
+     171943.0
+    ],
+    [
+     "12:28",
+     171902.0
     ]
    ]
   },
@@ -308,7 +312,11 @@
     ],
     [
      "12:40",
-     5.598
+     5.5992
+    ],
+    [
+     "12:43",
+     5.6
     ]
    ]
   },
@@ -822,7 +830,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": -0.03,
+    "ibov30": 0.05,
     "dolar30": -0.01
    },
    {
@@ -837,7 +845,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.06
    },
    {
     "hora": "12:18",
@@ -852,7 +860,7 @@
      "MGLU3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.06
    },
    {
     "hora": "12:20",
@@ -1902,7 +1910,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:40-03:00",
+ "atualizado_em": "2026-11-10T12:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1917,18 +1925,6 @@
   "Valor"
  ],
  "noticias": [
-  {
-   "titulo": "Petróleo Brent cai abaixo de US$ 90 pela primeira vez desde agosto",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petroleo-brent-cai-abaixo-de-us-90-pela-primeira-vez-desde-agosto.shtml",
-   "publicado": "2026-11-10T12:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ibovespa reduz fôlego com inflação dos EUA e cai após superar 173 mil pontos",
    "fonte": "InfoMoney",
@@ -2006,6 +2002,21 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
    "publicado": "2026-11-10T11:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Selic 2027: Bradesco prevê juros em 13,75% até junho",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB?oc=5",
+   "publicado": "2026-11-10T11:20-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
