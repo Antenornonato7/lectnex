@@ -31,7 +31,7 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://lectnex.com.br/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261110a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261110b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
@@ -119,6 +119,7 @@
                         <div id="pd-ready" class="mt-3"></div>
                     </div>
                 </div>
+                <div id="pd-close" class="border-t border-slate-200 dark:border-lect-borderDark"></div>
                 <p class="px-5 py-2 border-t border-slate-200 dark:border-lect-borderDark text-[10px] text-slate-500 font-mono">Salvo só neste navegador. O plano zera sozinho a cada novo dia; os limites ficam lembrados.</p>
             </section>
 
@@ -136,6 +137,7 @@
                     </div>
                 </div>
                 <div id="dv-kpis" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-slate-200 dark:bg-lect-borderDark border-b border-slate-200 dark:border-lect-borderDark"></div>
+                <div id="dv-disc" class="hidden border-b border-slate-200 dark:border-lect-borderDark"></div>
                 <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
                     <div class="lg:col-span-7 p-5">
                         <span class="term-label font-bold">CURVA DE CAPITAL DO MÊS</span>
@@ -449,6 +451,62 @@
 
             // Limites e placar
             const L = st.limits;
+
+            /* ----- Fechamento do dia: o plano foi seguido? ----- */
+            // Regras (com os limites atuais): checklist completo, não operou depois de bater o limite de perda, não passou do máximo de operações.
+            function planCheck(d) {
+                const ts = (d && d.trades) || [], cap = +L.cap || 0, lim = cap * (+L.maxloss || 0) / 100, maxtr = +L.maxtr || 0;
+                let cum = 0, after = false;
+                ts.forEach((t, i) => { if (i > 0 && lim > 0 && cum <= -lim) after = true; cum += tv(t); });
+                const r = { n: ts.length, pnl: cum, checklist: ((d && d.checks) || []).length === CHECKS.length, limitOk: !after, maxOk: !maxtr || ts.length <= maxtr, lim, maxtr };
+                r.ok = r.checklist && r.limitOk && r.maxOk;
+                return r;
+            }
+            const pdDraft = { nota: 0, licao: '' };
+            function renderClose() {
+                const box = $('pd-close'); if (!box) return;
+                const nowM = (() => { const t = LX.nowBRT(); return t.getHours() * 60 + t.getMinutes(); })();
+                if (!bday) { box.innerHTML = ''; return; }
+                const c = planCheck(day), cl = day.close;
+                const nets = day.trades.map(tv), wins = nets.filter(x => x > 0).length;
+                const item = (ok, txt) => `<li class="flex items-start gap-2"><i class="ph-fill ${ok ? 'ph-check-circle text-emerald-500' : 'ph-x-circle text-rose-500'} text-base shrink-0"></i><span>${txt}</span></li>`;
+                const regras = `<ul class="space-y-1.5 text-xs">${item(c.checklist, 'Checklist pré-mercado completo')}${item(c.limitOk, c.lim > 0 ? `Respeitou o limite de perda (${LX.brl(c.lim, 0)})` : 'Limite de perda (defina acima)')}${item(c.maxOk, c.maxtr ? `No máximo ${c.maxtr} operações (fez ${c.n})` : 'Máximo de operações (defina acima)')}</ul>`;
+                const resumo = `<div class="grid grid-cols-3 gap-2 font-mono tabular-nums">
+                    <div class="p-2.5 bg-slate-50 dark:bg-lect-bgDark"><span class="term-label block">Resultado</span><strong class="text-base ${LX.signClass(c.pnl)}">${c.pnl >= 0 ? '+' : '−'}${LX.brl(Math.abs(c.pnl), 0)}</strong></div>
+                    <div class="p-2.5 bg-slate-50 dark:bg-lect-bgDark"><span class="term-label block">Operações</span><strong class="text-base">${c.n}</strong></div>
+                    <div class="p-2.5 bg-slate-50 dark:bg-lect-bgDark"><span class="term-label block">Acerto</span><strong class="text-base">${c.n ? LX.pct(wins / c.n * 100, 0) : '—'}</strong></div></div>`;
+                const head = (sub) => `<div class="flex items-center justify-between gap-2"><span class="term-label font-bold text-lect-teal flex items-center gap-1.5"><i class="ph-bold ph-flag-checkered"></i>FECHAMENTO DO DIA</span>${sub || ''}</div>`;
+                if (cl) {
+                    box.innerHTML = `<div class="p-5 space-y-3">${head(`<button type="button" id="pd-reopen" class="font-mono text-[10px] text-slate-500 hover:text-lect-teal"><i class="ph-bold ph-arrow-counter-clockwise"></i> reabrir</button>`)}
+                        <div class="p-3 ${cl.ok ? 'bg-emerald-600' : 'bg-lect-orange'} text-white text-sm font-bold flex items-center gap-2"><i class="ph-fill ${cl.ok ? 'ph-seal-check' : 'ph-warning'} text-xl"></i>Dia encerrado às ${LX.esc(cl.at)} · ${cl.ok ? 'plano seguido' : 'plano não seguido'} · disciplina ${cl.nota}/5</div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">${resumo}${regras}</div>
+                        ${cl.licao ? `<p class="text-sm border-l-4 border-lect-teal pl-3 text-slate-600 dark:text-slate-300"><span class="term-label block">LIÇÃO DO DIA</span>${LX.esc(cl.licao)}</p>` : ''}
+                        <a href="#diario" class="inline-flex items-center gap-1.5 font-mono text-[11px] text-lect-teal hover:underline">Ver no Diário de Trades e no IR do mês <i class="ph-bold ph-arrow-down"></i></a></div>`;
+                    $('pd-reopen').onclick = () => { delete day.close; pdSave(st); renderClose(); dvRender(); };
+                    return;
+                }
+                if (!c.n && nowM < 18 * 60 + 25) {
+                    box.innerHTML = `<div class="px-5 py-3 flex items-center gap-2 text-xs text-slate-500"><i class="ph-bold ph-flag-checkered text-lect-teal"></i>Ao fim do pregão, encerre o dia aqui: resultado, regras seguidas e a lição do dia. As operações do placar já vão sozinhas para o Diário e o IR.</div>`;
+                    return;
+                }
+                const notas = [1, 2, 3, 4, 5].map(n => `<button type="button" data-nota="${n}" aria-pressed="${pdDraft.nota === n}" class="w-9 h-9 font-mono font-bold border ${pdDraft.nota === n ? 'bg-lect-teal text-white border-lect-teal' : 'border-slate-300 dark:border-lect-borderDark hover:border-lect-teal'}">${n}</button>`).join('');
+                box.innerHTML = `<div class="p-5 space-y-4">${head(nowM >= 18 * 60 + 25 ? '<span class="font-mono text-[10px] text-lect-orange font-bold">PREGÃO ENCERRADO</span>' : '')}
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">${resumo}${regras}</div>
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-end">
+                        <div class="md:col-span-3"><span class="term-label block mb-1">Sua nota de disciplina</span><div class="flex gap-1">${notas}</div></div>
+                        <label class="md:col-span-6"><span class="term-label block mb-1">Lição do dia (opcional)</span><input id="pd-licao" type="text" maxlength="140" placeholder="ex.: entrei antes do CPI sem stop; amanhã espero o dado" class="lx-input" value="${LX.esc(pdDraft.licao)}"></label>
+                        <button type="button" id="pd-fechar" class="md:col-span-3 py-2.5 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold disabled:opacity-40 disabled:cursor-not-allowed" ${pdDraft.nota ? '' : 'disabled'}><i class="ph-bold ph-flag-checkered"></i> ENCERRAR O DIA</button>
+                    </div>
+                    <p id="pd-close-hint" class="text-[11px] text-slate-500">${pdDraft.nota ? '' : 'Escolha uma nota de 1 a 5 para encerrar.'} ${c.ok ? 'Pelas regras, o plano foi seguido hoje.' : 'Pelas regras acima, algo saiu do plano hoje. Vale anotar o que aconteceu.'}</p></div>`;
+                box.querySelectorAll('[data-nota]').forEach(b => b.onclick = () => { pdDraft.nota = +b.dataset.nota; renderClose(); });
+                $('pd-licao').oninput = e => { pdDraft.licao = e.target.value; };
+                $('pd-fechar').onclick = () => {
+                    if (!pdDraft.nota) return;
+                    const t = LX.nowBRT();
+                    day.close = { nota: pdDraft.nota, licao: pdDraft.licao.trim().slice(0, 140), at: String(t.getHours()).padStart(2, '0') + ':' + String(t.getMinutes()).padStart(2, '0'), ok: planCheck(day).ok };
+                    pdSave(st); LX.track('plano_encerrado', { ok: day.close.ok, nota: day.close.nota }); renderClose(); dvRender();
+                };
+            }
             $('pd-cap').value = L.cap; $('pd-maxloss').value = L.maxloss; $('pd-goal').value = L.goal || ''; $('pd-maxtr').value = L.maxtr;
             function renderScore() {
                 const cap = +L.cap || 0, lim = cap * (+L.maxloss || 0) / 100, goal = +L.goal || 0, maxtr = +L.maxtr || 0;
@@ -463,6 +521,7 @@
                     : hitGoal ? `<div class="p-2.5 bg-emerald-600 text-white text-xs font-bold"><i class="ph-fill ph-trophy"></i> Meta batida! Proteja o resultado: pare ou reduza a mão.</div>` : '';
                 $('pd-score').innerHTML = `<div class="flex items-baseline justify-between font-mono"><span class="text-[11px] text-slate-500">${n} operaç${n === 1 ? 'ão' : 'ões'}${n ? ` · ${day.trades.filter(x => tv(x) > 0).length} ganhos` : ''}</span><strong class="text-xl ${LX.signClass(pnl)}">${pnl >= 0 ? '+' : '−'}${LX.brl(Math.abs(pnl))}</strong></div>` + (msg ? `<div class="mt-2">${msg}</div>` : '');
                 $('pd-undo').classList.toggle('invisible', !n);
+                renderClose();
             }
             ['pd-cap', 'pd-maxloss', 'pd-goal', 'pd-maxtr'].forEach(id => $(id).addEventListener('input', () => {
                 L.cap = +$('pd-cap').value || 0; L.maxloss = +$('pd-maxloss').value || 0; L.goal = +$('pd-goal').value || 0; L.maxtr = +$('pd-maxtr').value || 0;
@@ -479,6 +538,7 @@
                 $('pd-ckcount').textContent = `${k}/${CHECKS.length}`; $('pd-ckcount').className = 'font-mono text-[11px] font-bold ' + (all ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-500');
                 $('pd-ready').innerHTML = all ? `<div class="p-3 bg-emerald-600 text-white text-sm font-bold flex items-center gap-2"><i class="ph-fill ph-seal-check text-xl"></i> Pronto para operar. Siga o plano.</div>`
                     : `<div class="h-1.5 bg-slate-100 dark:bg-lect-bgDark"><div class="h-full bg-lect-teal transition-all" style="width:${k / CHECKS.length * 100}%"></div></div><p class="text-[11px] text-slate-500 mt-1.5">Complete o checklist antes da primeira operação.</p>`;
+                renderClose();
                 const s = streak();
                 $('pd-streak').innerHTML = `<i class="ph-fill ph-fire"></i> ${s} dia${s === 1 ? '' : 's'} seguido${s === 1 ? '' : 's'}`;
                 document.querySelectorAll('[data-pd]').forEach(c => c.onchange = () => {
@@ -530,6 +590,29 @@
                     kpi('Payoff', avgL ? LX.num(avgW / avgL, 2) : '—', `ganho médio ${LX.brl(avgW, 0)} · perda média ${LX.brl(avgL, 0)}`) +
                     kpi('Pior sequência', worst + ' perda' + (worst === 1 ? '' : 's'), 'perdas seguidas', worst >= 4 ? 'text-rose-600 dark:text-rose-400' : '') +
                     kpi('Melhor / pior dia', best ? LX.brl(best[1], 0) : '—', worstD ? `pior: ${LX.brl(worstD[1], 0)} (${worstD[0].slice(8)}/${worstD[0].slice(5, 7)})` : '—');
+                // disciplina do mês (fechamento do dia)
+                {
+                    const disc = $('dv-disc'), ds = keys.map(k => [k, planCheck(st.days[k]), st.days[k].close]);
+                    if (!ds.length) { disc.classList.add('hidden'); disc.innerHTML = ''; }
+                    else {
+                        const on = ds.filter(([, c]) => c.ok), off = ds.filter(([, c]) => !c.ok);
+                        const avg = a => a.length ? a.reduce((x, [, c]) => x + c.pnl, 0) / a.length : null;
+                        const aOn = avg(on), aOff = avg(off), notas = ds.filter(([, , cl]) => cl).map(([, , cl]) => cl.nota);
+                        const licoes = ds.filter(([, , cl]) => cl && cl.licao).slice(-3).reverse();
+                        const money = v => v == null ? '—' : (v >= 0 ? '+' : '−') + LX.brl(Math.abs(v), 0);
+                        disc.classList.remove('hidden');
+                        disc.innerHTML = `<div class="px-5 py-3 grid grid-cols-1 lg:grid-cols-12 gap-3 items-start text-xs">
+                            <div class="lg:col-span-4"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-flag-checkered text-lect-teal"></i>DISCIPLINA DO MÊS</span>
+                                <strong class="block font-mono text-lg mt-1">${on.length} de ${ds.length} dias no plano</strong>
+                                <div class="h-1.5 mt-1 bg-slate-100 dark:bg-lect-bgDark"><div class="h-full bg-lect-teal" style="width:${on.length / ds.length * 100}%"></div></div>
+                                <span class="text-[10px] text-slate-500">${notas.length ? `nota média ${LX.num(notas.reduce((a, b) => a + b, 0) / notas.length, 1)}/5 em ${notas.length} dia${notas.length === 1 ? '' : 's'} encerrado${notas.length === 1 ? '' : 's'}` : 'encerre o dia no Plano para registrar a nota'}</span></div>
+                            <div class="lg:col-span-3 font-mono"><span class="term-label block">Média por dia</span>
+                                <span class="block mt-1">No plano: <strong class="${aOn == null ? '' : LX.signClass(aOn)}">${money(aOn)}</strong></span>
+                                <span class="block">Fora do plano: <strong class="${aOff == null ? '' : LX.signClass(aOff)}">${money(aOff)}</strong></span></div>
+                            <div class="lg:col-span-5"><span class="term-label block">Últimas lições</span>${licoes.length ? licoes.map(([k, , cl]) => `<p class="mt-1 text-slate-600 dark:text-slate-300"><span class="font-mono text-slate-400">${k.slice(8)}/${k.slice(5, 7)}</span> ${LX.esc(cl.licao)}</p>`).join('') : '<p class="mt-1 text-slate-500">Nenhuma ainda.</p>'}</div>
+                        </div><p class="px-5 pb-2 text-[10px] text-slate-500">"No plano" = checklist completo, parou no limite de perda e respeitou o máximo de operações (com os limites atuais do Plano do Dia).</p>`;
+                    }
+                }
                 // curva
                 if (!rows.length) $('dv-curve').innerHTML = '<div class="h-40 grid place-items-center border border-dashed border-slate-300 dark:border-lect-borderDark text-xs text-slate-500 text-center px-4">Nenhuma operação neste mês. Use o placar do Plano do Dia ou o formulário ao lado.</div>';
                 else {
@@ -556,7 +639,7 @@
                     const k = dvYM + '-' + String(d).padStart(2, '0'), v = map[k], biz = LX.isBusinessDay(new Date(y, m - 1, d));
                     const a = v == null ? 0 : 0.2 + 0.8 * Math.abs(v) / maxAbs;
                     const bg = v == null ? '' : `background:${v >= 0 ? `rgba(16,185,129,${a})` : `rgba(225,29,72,${a})`}`;
-                    cal += `<div class="h-11 p-1 border ${v == null ? (biz ? 'border-slate-200 dark:border-lect-borderDark' : 'border-transparent opacity-40') : 'border-transparent text-white'} ${k === LX.iso(pdToday) ? 'ring-2 ring-lect-orange' : ''}" style="${bg}" title="${v == null ? '' : LX.brl(v)}"><span class="block ${v == null ? 'text-slate-400' : 'font-bold'}">${d}</span>${v == null ? '' : `<span class="block text-[9px] leading-tight truncate">${v >= 0 ? '+' : '−'}${LX.num(Math.abs(v), 0)}</span>`}</div>`;
+                    cal += `<div class="h-11 p-1 border ${v == null ? (biz ? 'border-slate-200 dark:border-lect-borderDark' : 'border-transparent opacity-40') : 'border-transparent text-white'} ${k === LX.iso(pdToday) ? 'ring-2 ring-lect-orange' : ''}" style="${bg}" title="${v == null ? '' : LX.brl(v) + (st.days[k].close ? ` · disciplina ${st.days[k].close.nota}/5` + (st.days[k].close.licao ? ' · ' + LX.esc(st.days[k].close.licao) : '') : '')}"><span class="block ${v == null ? 'text-slate-400' : 'font-bold'}">${d}</span>${v == null ? '' : `<span class="block text-[9px] leading-tight truncate">${v >= 0 ? '+' : '−'}${LX.num(Math.abs(v), 0)}</span>`}</div>`;
                 }
                 $('dv-cal').innerHTML = cal + '</div>';
                 // IR
