@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T16:38-03:00",
+  "atualizado_em": "2026-11-10T17:08-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -311,11 +311,31 @@
     ],
     [
      "16:20",
+     171232.0
+    ],
+    [
+     "16:25",
      171152.0
     ],
     [
-     "16:23",
-     171260.0
+     "16:30",
+     171233.0
+    ],
+    [
+     "16:35",
+     171352.0
+    ],
+    [
+     "16:40",
+     171349.0
+    ],
+    [
+     "16:45",
+     171291.0
+    ],
+    [
+     "16:50",
+     171330.0
     ]
    ]
   },
@@ -688,11 +708,35 @@
     ],
     [
      "16:35",
+     5.5843
+    ],
+    [
+     "16:40",
      5.5838
     ],
     [
-     "16:38",
+     "16:45",
+     5.5847
+    ],
+    [
+     "16:50",
+     5.5833
+    ],
+    [
+     "16:55",
+     5.5833
+    ],
+    [
+     "17:00",
      5.5843
+    ],
+    [
+     "17:05",
+     5.5831
+    ],
+    [
+     "17:07",
+     5.5853
     ]
    ]
   },
@@ -1551,7 +1595,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.18,
+    "ibov30": 0.11,
     "dolar30": -0.06
    },
    {
@@ -1566,8 +1610,22 @@
     "tickers": [
      "WEGE3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.06,
+    "dolar30": 0.0
+   },
+   {
+    "hora": "16:25",
+    "titulo": "BC puxa freio e encerra ciclo após 5 cortes de juros; Selic fica em 13,75%",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNG9RUGJLRTJtcUROSGd5d3FnZm5QdG5WY2JzOFZfLWtpcmVGMjB6Y1JNSWUzT3RDTHhkQ0Q4UzlfbmdoQXphcFdHSFJRUU0wajEtX21tSDNYbFdMbTdNVW4wSEwtek5EM2loNmtoYnBUYU5lTkxKbmVVNnVmNm0xb25JZWg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.1,
+    "dolar30": -0.01
    },
    {
     "hora": "16:29",
@@ -1583,60 +1641,56 @@
      "BBDC4"
     ],
     "ibov30": null,
+    "dolar30": -0.01
+   },
+   {
+    "hora": "16:30",
+    "titulo": "Homeowners tap equity as HELOC balances post biggest jump since 2005: New York Fed report",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/heloc-balances-new-york-fed.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.02
+   },
+   {
+    "hora": "16:55",
+    "titulo": "Dívida pública em reais não garante juros menores para o Brasil, diz Galípolo",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/divida-publica-em-reais-nao-garante-juros-menores-para-o-brasil-diz-galipolo.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:57",
+    "titulo": "Itaú investe R$ 1,2 bilhão e vira sócio da Klabin em mais um empreendimento florestal",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/itau-investe-r-12-bilhao-e-vira-socio-da-klabin-em-mais-um-empreendimento-florestal.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ITUB4",
+     "KLBN11"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ibovespa salta 2,2% com Vale em alta acima de 3%; Bolsas de Nova York avançam apesar da Nvidia",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTGthM25JejJXV0ZCVEh4UzZybjJyM0NUVUdaeVRGZjZxVDB6RklDVExVQWtJZG16bEthTWVzUGNweGhTSURpUXJYZ1R4MXhfenBpZUdITHU4N2xSb2xHeXMwaXN6eXNjMWdDMnUwR0RjYUg4dEVFODdQS1B3bVROZWw3M0VjYzVQU0hWdzlpbmU2SmRhbTFnT3F2bnIyMnA4ZHpfVDhaRlJ1X2lUdHVLVXJ3anZ1ZjgyX1FubThGcnp4bDRScmZrb1JuaGR3Zm84ZFBSZTc1T1FlRTV5NnRUc0lOWm5OZGFzWUU4?oc=5",
-   "publicado": "2026-11-10T07:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
-  },
-  {
-   "titulo": "Agenda do dia: Ata do Copom e inflação nos EUA são destaque",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcVpBN21uRTQtYXY0QXZTaHBSRlRpM1JRaXF1NXctQ1BwWjJ4UHBpSUk2eURDbGJjVUpURFcwYlhxR3lRSVYtempXeHA4MmEzcDRiLUlBWkNaaE5xa2l5MHFHbV9mNzJ4bHpXYWVwT2FUVFFZdzZBMU9UTHN5OGRyYUc5Q0FZMm45Q0pGV2VRMy1ib0lNNTJCanhzLXg1dzQ4QVdGQndYc0RRRDdYeUlBN3cyaHpzdHPSAcYBQVVfeXFMTWpiNHpKMWNGUVF5RUxTTFRIWDdkeEQzYzlwNnNpR1NmNjVWLVoyUkJGY1ExMVI0OXUtN29aaVNsYUx4c3gzTkF6WUtvd1F2LVg3eXlwYVA3SG5VX0tnSGJPYTJGM2R0M0tZZkNZLW1XaFprVGd0R1FuSl9qR2lTVlhDWWhrXzdZZVdseVhlVC1adl9QNFNmRmdacXJsTE4tdDdYblNFdVU2ckdUSFVFT0dkZXUtdF9IcjlncUVOUlZ0QzlVVTdB?oc=5",
-   "publicado": "2026-11-10T07:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Manhã no mercado: Ata do Copom e Waller, do Fed, concentram as atenções em dia de inflação nos EUA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbWVzb1hUdTAtQkRWUUI3OUgyR1ZwMXViLTAzMjU0VmxnVkt1Nl81QmRDdXp2ZDlMejY1WHJrZVY3cU12Tnl2Z09acHBIOGp5TU0zdFNSOFB5TUZUSFdYU3k0aVVuQkp0Z1ZKN0h1TzBxckVnN2VvUmJ0RDNlNTk3TWFGT2EzVTIwTTVGUzRNTGZjbWx1X0ZIaWM3cHNnRU1EZElhRGpmOEVqOHJ2Tm1BaUdpTHFtMVJZNnNQU3QwaEFMd1RheUlqMzZXNVJEYkU1SUVzb3M0MjIzRTlkam1TVWktS1YzWUls0gH3AUFVX3lxTE82QmdnWDFmT2N2OHUzSWV2M0Q2bTNzTk9pWVkxb1Uxb3Y5T0xrbjZGUG5lOFljNUxYQk5tYlZ6RDFoYW4wWm5scWNCb0lUQ0xRb1dQMEpsUXpDbTRFUWdBSGp2YTh1X21IcDM4amlNZUNMeDdHenNiMkVJREJhTlN3aXpKX0RQcm9rd3RELVd3NHM1N3M2MlJXT3dTdktNR3Y2Q2tmdmpEb2libUtwWGs1TnpvOXFvRHNiZzE2Q3B2UVZtWnlKcnNrSjdLY0w0UnJld0pRSzUwYXNSalJzY0YwQ012ZEtvRFkyS0RkMXNjd2pyM3lsRmc?oc=5",
-   "publicado": "2026-11-10T07:59-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Na ata do Copom, BC diz que cenário exige Selic alta por mais tempo",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVkZjbmEtNjZtdlhrS1hSRmZfRjdYWGNyTTdBay04c3dZdlN4WlBxOFc2bXpHWGhlMU1lTmFYc1ZpVkxOMFNBODc5MERaTi1vXzFVTDMzZHpMYTlmeVh4WTA4U2ltOGYxZzBoX0ppdUtCU3VnWWxYWnh3RGQ3RVBvS0RtRUZnUDJPZ3lyeTFzM05tUTZOckZObXZ0UVRhODg0bXZ6aGMybm12blZFNTc0TU9PeUhHclZLYVFjTWJqcHJqZVU?oc=5",
-   "publicado": "2026-11-10T08:09-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ata do Copom reforça “cenário desafiador” para política monetária",
    "fonte": "InfoMoney",
@@ -2578,6 +2632,18 @@
    ]
   },
   {
+   "titulo": "BC puxa freio e encerra ciclo após 5 cortes de juros; Selic fica em 13,75%",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNG9RUGJLRTJtcUROSGd5d3FnZm5QdG5WY2JzOFZfLWtpcmVGMjB6Y1JNSWUzT3RDTHhkQ0Q4UzlfbmdoQXphcFdHSFJRUU0wajEtX21tSDNYbFdMbTdNVW4wSEwtek5EM2loNmtoYnBUYU5lTkxKbmVVNnVmNm0xb25JZWg?oc=5",
+   "publicado": "2026-11-10T16:25-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Plano fiscal crível pode melhorar cenário macro rapidamente, diz Honorato, do Bradesco",
    "fonte": "Bloomberg Línea",
    "url": "https://www.bloomberglinea.com.br/brasil/plano-fiscal-crivel-pode-melhorar-cenario-macro-rapidamente-diz-honorato-do-bradesco/",
@@ -2589,6 +2655,45 @@
    ],
    "tickers": [
     "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Homeowners tap equity as HELOC balances post biggest jump since 2005: New York Fed report",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/heloc-balances-new-york-fed.html",
+   "publicado": "2026-11-10T16:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dívida pública em reais não garante juros menores para o Brasil, diz Galípolo",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/divida-publica-em-reais-nao-garante-juros-menores-para-o-brasil-diz-galipolo.shtml",
+   "publicado": "2026-11-10T16:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Itaú investe R$ 1,2 bilhão e vira sócio da Klabin em mais um empreendimento florestal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/itau-investe-r-12-bilhao-e-vira-socio-da-klabin-em-mais-um-empreendimento-florestal.shtml",
+   "publicado": "2026-11-10T16:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4",
+    "KLBN11"
    ]
   }
  ],
@@ -2619,7 +2724,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T16:38-03:00",
+ "atualizado_em": "2026-11-10T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2627,10 +2732,72 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Folha",
-  "Money Times"
+  "Folha"
  ],
  "noticias": [
+  {
+   "titulo": "Itaú investe R$ 1,2 bilhão e vira sócio da Klabin em mais um empreendimento florestal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/itau-investe-r-12-bilhao-e-vira-socio-da-klabin-em-mais-um-empreendimento-florestal.shtml",
+   "publicado": "2026-11-10T16:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4",
+    "KLBN11"
+   ]
+  },
+  {
+   "titulo": "Dívida pública em reais não garante juros menores para o Brasil, diz Galípolo",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/divida-publica-em-reais-nao-garante-juros-menores-para-o-brasil-diz-galipolo.shtml",
+   "publicado": "2026-11-10T16:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T16:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Op-ed: In Nvidia CEO Jensen Huang's alleged China spy scandal, there's plenty of blame to go around",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/nvidia-ceo-jensen-huang-china-spy-scandal.html",
+   "publicado": "2026-11-10T16:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Homeowners tap equity as HELOC balances post biggest jump since 2005: New York Fed report",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/heloc-balances-new-york-fed.html",
+   "publicado": "2026-11-10T16:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Plano fiscal crível pode melhorar cenário macro rapidamente, diz Honorato, do Bradesco",
    "fonte": "Bloomberg Línea",
@@ -2644,6 +2811,18 @@
    "tickers": [
     "BBDC4"
    ]
+  },
+  {
+   "titulo": "BC puxa freio e encerra ciclo após 5 cortes de juros; Selic fica em 13,75%",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNG9RUGJLRTJtcUROSGd5d3FnZm5QdG5WY2JzOFZfLWtpcmVGMjB6Y1JNSWUzT3RDTHhkQ0Q4UzlfbmdoQXphcFdHSFJRUU0wajEtX21tSDNYbFdMbTdNVW4wSEwtek5EM2loNmtoYnBUYU5lTkxKbmVVNnVmNm0xb25JZWg?oc=5",
+   "publicado": "2026-11-10T16:25-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "WEG e FPT fazem parceria para motor elétrico com gerador a bordo de caminhão e ônibus",
@@ -2666,18 +2845,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "publicado": "2026-11-10T15:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -2718,28 +2885,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar é vilão de quem investe no exterior? Nu Asset revela estratégia de proteção",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSF8wNzBlOGFjN1ZMUktocHJ1WTluNFFadkw1eHRUdHpPcmM0alZaWUhGVWVaSE1wc0V3WW04Sms5bXpQWGYxQkhzSUZjcmpYNUF5OHRNeTFNaHVkWTRZMy0tZ3IyV245RWx5cmFWbHZrSDJMZ01nMFhUQnBtSVE3bHVpRnRVLWZIbTFYUmYxdk1oOFNOSnBLV2RERVVTQ1hnZlhLb3BkdFJJV3pVMl9xbnlnZUdQLXRjYVF5NDQ0RXFPRzRka3lKQXVRMWx2X1BIcVdFdmVxS0oyUi1BQVZwMw?oc=5",
-   "publicado": "2026-11-10T14:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar, juros e falta de acesso espantam investidor brasileiro do exterior, diz executivo da Nu Asset",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQlMtY3dvaC1DSGV2dmhtemltckhiaG9jUm8yNEpjR01MRHpHdnhhejlua1JQbzVqeDVfOXdoZ3ZIc3VXM2x0cTU4U1JLQlR4czI0c3QwSFVvVWU4NFZUNWxMMlBmdGNuQ3QzU2FsYXROeWZsYWJHZHBTVzlwRG43VnFja016ZnM5czRVUDhPdHlteUNPbnhuQjl3Y2wtajNEZVZrQTlUdGx0d3JUMjFRSzl0RW53VTJoQmc4TFd6Zk9DV1Jwei1lRDhvSEliaTZFeVJCVmZn0gHbAUFVX3lxTE1fYkZObE1zOFJ4VWZheVJJTS1Nc0JhZTdSRUl4VEFjV1U0NjVHQnpkVXFhMjVyd1ZwdGhyS29TRF9JQXFlMFpaRHhKb1VyaEZDTk9VR1FRZnFrSE9qdEJCVTVfX1pNdWVFVFFvMHBCdTFFWkZKbmVldHBYME1yVWQ4UFY1TlpqcTVtSDYyakdOMmZNRmxpU1R0SHVUSl9EODdjWlJnNjRXMjVlUUYzTnVKMmFUOExCMGx4Q3pkV1BDa1dXNTBld3RWbllpNHE0X3NRNVB2ZTNpRzBGNA?oc=5",
-   "publicado": "2026-11-10T14:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
@@ -2748,57 +2893,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Fed sinaliza possível alta de 0,5 ponto após inflação acima do esperado",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd0UxbWRacjhPSk9vTndEX1h3b3I1Q3YtV1BMUTJfc1R5clh4NDNGRWFhZ1h4YXJwdnY1LXUtZ1VheFBTZnphRWVHbTBaRDBRZkhuM1hQNXZQRmhMTTc2ajZpNllSa3hvZHJnTkZYdEJhWVg2MWl6VVNSWDltZ2tXdGVPaTIzMXdOREl5MVZ3XzA4NzdfYy1pbGM5ZE04ZFVpZGJGaXJPWEpvU0t4Tmt4UGI5Ynd2RExLTmVXbXNhY250VWZva1VENg?oc=5",
-   "publicado": "2026-11-10T14:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bradesco vê juros em queda e inflação mais alta em 2027, mas destaca incerteza do cenário",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bradesco-ve-juros-em-queda-e-inflacao-mais-alta-em-2027-mas-destaca-incerteza-do-cenario.shtml",
-   "publicado": "2026-11-10T13:58-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
-   "titulo": "Embraer (EMBJ3) surpreende no balanço e mira novos voos; ainda há espaço para as ações subirem?",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUWRVZ2Z5LVJXSVBUaFhuNnh5N3RMeVNyS3g1TTJxbjVZaFE2V1diWG1QbFZoMWhTQjg2Z1U4MjlCZzI3ekp5X2dfZG1uem0za0ZwNkVaQUloN3FWTUMtWkVjaXc5U3lvWWJmSzNrS3BWWmpCcGNKbTRGWlQtZ3hzeUNsSjJSU1hQR05OVEp4RGlxU19sRkFUMDdTQ0hEbGNTd2tfTlB3RWNjMEE?oc=5",
-   "publicado": "2026-11-10T13:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBJ3",
-    "EMBR3"
-   ]
-  },
-  {
-   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T13:47-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   }
