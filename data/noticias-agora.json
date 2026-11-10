@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:38-03:00",
+  "atualizado_em": "2026-11-10T13:08-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -119,11 +119,35 @@
     ],
     [
      "12:20",
-     171641.0
+     171798.0
     ],
     [
-     "12:23",
-     171649.0
+     "12:25",
+     172027.0
+    ],
+    [
+     "12:30",
+     171826.0
+    ],
+    [
+     "12:35",
+     171653.0
+    ],
+    [
+     "12:40",
+     171735.0
+    ],
+    [
+     "12:45",
+     171787.0
+    ],
+    [
+     "12:50",
+     171739.0
+    ],
+    [
+     "12:53",
+     171665.0
     ]
    ]
   },
@@ -304,11 +328,35 @@
     ],
     [
      "12:35",
-     5.5968
+     5.5982
     ],
     [
-     "12:38",
-     5.5973
+     "12:40",
+     5.5994
+    ],
+    [
+     "12:45",
+     5.5992
+    ],
+    [
+     "12:50",
+     5.602
+    ],
+    [
+     "12:55",
+     5.6045
+    ],
+    [
+     "13:00",
+     5.6015
+    ],
+    [
+     "13:05",
+     5.6043
+    ],
+    [
+     "13:08",
+     5.6035
     ]
    ]
   },
@@ -793,7 +841,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.16,
     "dolar30": 0.04
    },
    {
@@ -807,7 +855,21 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.16,
+    "dolar30": 0.04
+   },
+   {
+    "hora": "11:54",
+    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+    "fonte": "Agência Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.16,
     "dolar30": 0.04
    },
    {
@@ -822,7 +884,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": null,
+    "ibov30": 0.1,
     "dolar30": -0.01
    },
    {
@@ -836,8 +898,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.03
+    "ibov30": 0.1,
+    "dolar30": 0.06
    },
    {
     "hora": "12:18",
@@ -851,8 +913,8 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.16,
+    "dolar30": 0.04
    },
    {
     "hora": "12:20",
@@ -865,47 +927,40 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": -0.01,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "12:27",
+    "titulo": "Banco Central do Paraguai afirma que devolveu o dinheiro de 93% dos clientes do Ueno Bank",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/banco-central-do-paraguai-afirma-que-devolveu-o-dinheiro-de-93-dos-clientes-do-ueno-bank-npr/",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.21,
+    "dolar30": 0.18
+   },
+   {
+    "hora": "12:57",
+    "titulo": "Taxas longas do DI sobem após ata do Copom",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM084X19QMm1KbDZ6ejFDbUJ1a2dqajVrektxM0g5NGVicl83RGh5NW94SDJRSnJqUmlObVJQVG1tSnI4WlBaZEdoZGdFQzRrb0FVdEZFWU1mTTRaRktTLUo5QlhwS01kNm83SkZHc1RIQ2NuX0NreWJHaTVtM1ptRk81cUhHRW52NEt4LVM3eFpzWF9WVmlEb256WQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ibovespa tem mais um dia de recuperação e avança 2%",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcUVYUzVlQmRISnU5VVE2R1IzcDAzYUs5Uk5MQW1kR2JFTUlqQnJ5N2Uybzh0QWh2UjU4REc3YmQtbThKV2JKSEJZYzJhWnNJU1JOcDhHVE5SQXo3dkxuaU9RVGJyenBCMmt2eGVMaGEwQVFwbUpkZlgtcDdOMnZlRFN1RE56YWZidXRQLVQ0Q3hhUFRCajYxRnFydUp1LVljcWNRcE8zcnFyTDVM0gG7AUFVX3lxTE1sVEdKUWgwNFQ1Uzh1d2s2dUJzYmhQMzBLZG5mX2gzUFAxVDlTVnBZYUxYVmpGdEtQN19LLTlhSldJLU41djl3VERQVi13cFluQkhMamdIYy1NZWdpOUVBaEFORmhzYnhqV1lnajBOYkhJYkxmcVo4WmkzcnZDRVh5QWxrLVRPNWtlSEVmRXJ4MURXOWhzSE1YWDJTU0tOTlFyNjhoMXRRUVpSNjJCcXQ4MV9NYVlGZkpRLWc?oc=5",
-   "publicado": "2026-11-10T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "“Império do CDI” deve se prolongar 2027 adentro, vê Bradesco Asset",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaTY0NXF4Y21zT3Q4bXNteno2MFNIbTRMM3VXQWJYdVVNeXlWemU0OTVGZzVjNzBhQl9mUHFsYTlPLU1kOGRGekJxak1Fb05OQWowZW5ZWnBKd25TbnQxc3ZCYkJTR2xJbnBGRklCTTgwbmRrNXdrbVBVdlE4U0RrTV9OdlBOQmFiWTM5Rzh6WnJsU0V0SEhuN2xwQU96SGtkRDF3SDduMmlLYlXSAbABQVVfeXFMTl9KZzJrSHJQR21GZmdqX0FsNk9Qb0Myb1A2TzluQ2Q3Z3ZoN0lELTJmcF9YWm4xc3h4MUpjRnNRZmhlcDFGVUg1b3F2dXVwQTdYdldDek9CN2VDZGliOGQ3RVA3Ym1Kejk3MmJUUzBkeVZGQVMzMGw4c1Q3R2VTYjhMWENxUlN5b25rbHcwdDNzS19kcVl3ODlwSXBnc2Y1dXFpQ1VUZXFSYVhwc3ZUQms?oc=5",
-   "publicado": "2026-11-10T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
-   "titulo": "Nem imprudência nem choque fiscal recessivo",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVWFmWG1DazlyWUQ2SFJIUi12VTM0czNfWTNqdUtFNDExZGt4Q0l0Yk5xSENhNTVsQURFVlFMRXk3NFpsVktQM2FTTl95Sm9HYlVnMF9xcFdGUEl1aUkwR0doX0cxYmUxblFwUDdfcmRaSkdoeG13Y0o5bUtydkxZazRBYnVlYW95MzI3aE5iV0PSAZ8BQVVfeXFMTU9pT3k3LXF5VUM4OVp2Sk9scndPWV9XZTQtME9Eb1lScnJFdXh3ZGkzUjh1cGlpMVBxUGZ5QkFpUDNJeWNwUUdCV3RxbWRRaDV2WE96bVBOYXJhUE9Uc2pEdlJBQm9GejF0RjJ5QnVyU2U1TWVMVGlNUmY4VzA5d1YtdmllV1djLVZ6N1NsWWttUE5BaFJGUEpkLXR1MDFR?oc=5",
-   "publicado": "2026-11-10T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Banco Central do Paraguai diz já ter devolvido o dinheiro de 1,2 milhão de correntistas do Ueno Bank",
    "fonte": "Estadão",
@@ -1825,6 +1880,18 @@
    "tickers": []
   },
   {
+   "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
+   "fonte": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
+   "publicado": "2026-11-10T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ação da Embraer dispara mesmo com lucro 15% menor no 3º trimestre; três bancos reiteram compra",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNU3ZEOXAyak9XZkpZeC02R200dVJVUEJSR0FSQV83b0s3ZF9KRjByMkxqNUlRQjJyVU51Wk5PczM4Y0YyTkdGblY0ZzhaVFBZdGNZUFFHOFI1ZUdCR0pOZDk5RDdmR1hpVjR1VnBwd1ZWcWN0NzJaRkFCS2lUeFhvNTRxT1hDMmNMeEJyTUhhR2lPNnRSWU9QNEZrZHo2UG9NeGFQRThtMy10eDgxVUJMbHQxMldjOXJpZFZzZUI4blVNb2NoMnl0dDFsdVZ6WFpvd0phRnRzR0NlalZoQ1l3c2V5c2XSAeoBQVVfeXFMT1hodWJ6NHhldHNRQlhWaThUUGR6cE9kRUtyUExhWkNGQ0J3RmVNTk9kdkdaYWhBTDdVajg3SkRTNUNOOUVEMUppdVlPS2p0bjZKUHh4NllscXc1RklBOGI3WlBpbElTbDRfQXZqR1RHOU9wUk5ldUhMQXExQUd1VjZ2a1NURlZxdHFyYk8yNzJ5N3dRLUVHSXMyeXVsaWs2SlRLNkFtU2F4TE1kOWwtWFNxV3J6VDAxS25RNzRHbDVlTW1vRGZWNnZXYWtZT1dONGFWekpwZ19NVXl1TmN5R2VmM05FLW5kUnln?oc=5",
@@ -1873,6 +1940,30 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Banco Central do Paraguai afirma que devolveu o dinheiro de 93% dos clientes do Ueno Bank",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/banco-central-do-paraguai-afirma-que-devolveu-o-dinheiro-de-93-dos-clientes-do-ueno-bank-npr/",
+   "publicado": "2026-11-10T12:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas longas do DI sobem após ata do Copom",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM084X19QMm1KbDZ6ejFDbUJ1a2dqajVrektxM0g5NGVicl83RGh5NW94SDJRSnJqUmlObVJQVG1tSnI4WlBaZEdoZGdFQzRrb0FVdEZFWU1mTTRaRktTLUo5QlhwS01kNm83SkZHc1RIQ2NuX0NreWJHaTVtM1ptRk81cUhHRW52NEt4LVM3eFpzWF9WVmlEb256WQ?oc=5",
+   "publicado": "2026-11-10T12:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1902,7 +1993,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:38-03:00",
+ "atualizado_em": "2026-11-10T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1913,19 +2004,52 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
-   "titulo": "Petróleo Brent cai abaixo de US$ 90 pela primeira vez desde agosto",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petroleo-brent-cai-abaixo-de-us-90-pela-primeira-vez-desde-agosto.shtml",
-   "publicado": "2026-11-10T12:24-03:00",
+   "titulo": "Inside Alts: Bridgepoint sees opportunity in 're-rated' real estate",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
+   "publicado": "2026-11-10T13:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T13:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Superávit comercial da China ultrapassa US$ 1 trilhão com salto nas exportações de alta tecnologia",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/china-superavit-comercial-ultrapassa-1-trilhao-salto-exportacoes-alta-tecnologia/",
+   "publicado": "2026-11-10T12:59-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco Central do Paraguai afirma que devolveu o dinheiro de 93% dos clientes do Ueno Bank",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/banco-central-do-paraguai-afirma-que-devolveu-o-dinheiro-de-93-dos-clientes-do-ueno-bank-npr/",
+   "publicado": "2026-11-10T12:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1974,29 +2098,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Análise: BC detalha pausa no corte da taxa de juros",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOXzRyWkJOcjl3Qm5WRGZ0WmxzdkFHaUZyOGM4TkN3Q0hrOWdfZldWbTUxRVFOM3dfdDZ1OXpnQlRNNHdxb0tqd0d1bzFYMFJCTGY1ZDNFVGZzM3NZd3F3elJyMEQtRDRvWUdobms5MS1ma1Q0MlJmMXMwZ2NMdjNuNlVjaDJtN1BDQ2Rzc0o4OFVaSDg?oc=5",
-   "publicado": "2026-11-10T11:50-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T11:50-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2103,18 +2204,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar e Bolsa sobem após ata do Copom e inflação acima do esperado nos EUA",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-ata-do-copom-e-expectativa-por-dados-de-inflacao-nos-eua.shtml",
-   "publicado": "2026-11-10T09:55-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
