@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:52-03:00",
+  "atualizado_em": "2026-11-10T13:55-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -179,11 +179,11 @@
     ],
     [
      "13:35",
-     171240.0
+     171336.0
     ],
     [
-     "13:38",
-     171281.0
+     "13:40",
+     171301.0
     ]
    ]
   },
@@ -424,11 +424,11 @@
     ],
     [
      "13:50",
-     5.5953
+     5.5945
     ],
     [
-     "13:53",
-     5.5949
+     "13:55",
+     5.597
     ]
    ]
   },
@@ -1059,7 +1059,7 @@
     "tickers": [
      "ASAI3"
     ],
-    "ibov30": -0.13,
+    "ibov30": -0.08,
     "dolar30": 0.08
    },
    {
@@ -1073,7 +1073,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.13,
+    "ibov30": -0.08,
     "dolar30": 0.08
    },
    {
@@ -1103,7 +1103,7 @@
      "VALE3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.21
    },
    {
     "hora": "13:37",
@@ -2154,7 +2154,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:52-03:00",
+ "atualizado_em": "2026-11-10T13:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2305,6 +2305,18 @@
    "tickers": []
   },
   {
+   "titulo": "Banco Central do Paraguai afirma que devolveu o dinheiro de 93% dos clientes do Ueno Bank",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/banco-central-do-paraguai-afirma-que-devolveu-o-dinheiro-de-93-dos-clientes-do-ueno-bank-npr/",
+   "publicado": "2026-11-10T12:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa reduz fôlego com inflação dos EUA e cai após superar 173 mil pontos",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbTJFS3FGamlQdWxlLWJFRzdhb2FtTjNSRXVpNEtKVjJXdnM4NzhJcVpxZmxmYzk2TkJIanpBdTRPaFZkRzh6N204aGdrMlp6TEw4RGY0dUNNNE9YS05HX1VnalMyYjB5Z2dTcVNqQWhKSkVYd0dtU0NOSlFQallkblF6SnR0aUJkOWtxUVNNTXhFVXlJNzJfWTdHZEVQak00RkxpSEdwTEhfeFJZZnE0R2Z0UU5qZ9IBuwFBVV95cUxQRDBKZUlCbmdNOTBCYXNVaHlEME1YMXhBbFlQdzJRTzRkNi1SUnlXWFZKdmZEWGFiUzJQT3ppdU12amdhNU9LdU4ybmNFT0UyekFKU2JFb2MwWWtCZGlmSnpkWXp5MlBXZmZvb0tab19rWWUyWjYzZjAwQ0VMelltNjZGSlRQVjE5RDZtV3pkcnlkYnYySW16cVNhUzZydzdzS1pVamJxaDB1NTVqNERqWXBqdHRacVl2WGI0?oc=5",
@@ -2321,18 +2333,6 @@
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY2tWX21seDF3b2tCSm9sLW9hZVpsRXFKWDhsRU5HQ09lZTh5VUxzdW5EQm5vLWgxNXBzZ2JWZHEyc1A4Z2pLdWxxWVpvX0RqMzNENzhkQ1BXREE1c0x1RV9QcXFsUHdIcDZjcGViRjBQQW5YRnY0NnRfeWd1bXlHUFlBSW1pTU1aRG40T1RiaWJiWWtSc2NpV3dhMGZfS1lXMDFwTmctS200NmY3cXRKNEJwaUFIWG1Ya2dLOExB0gHDAUFVX3lxTE4wVkJPQWhEdUVtaUlRUTV6cHRvQldvT3ZURUJYMVJaVnN5d0s4cF82bGRSQTBwT1dLci1ndVp2ZHYwd09RQmo5Z2RiTTByZFcxX1M0NFZSTmd0UDJiQmVJUHlaVThWcE8xLTNHY0JTd3Bldm11S1dyNHAyQ0FHMmNXSHpDbXVsa2RRNHhpWW1sVjg2eHpYR044Sm9WbG9JckJVVDJzendHSmJrY3NEN2hFZkJ1MURkVl9NLVctN3hyaTRDaw?oc=5",
    "publicado": "2026-11-10T12:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
-   "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
-   "publicado": "2026-11-10T11:54-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
