@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T15:20-03:00",
+  "atualizado_em": "2026-11-10T15:23-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -251,7 +251,11 @@
     ],
     [
      "15:05",
-     170708.0
+     170666.0
+    ],
+    [
+     "15:08",
+     170696.0
     ]
    ]
   },
@@ -564,7 +568,11 @@
     ],
     [
      "15:20",
-     5.5932
+     5.5908
+    ],
+    [
+     "15:23",
+     5.5887
     ]
    ]
   },
@@ -1341,7 +1349,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.27,
     "dolar30": -0.01
    },
    {
@@ -1355,7 +1363,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.1
+    "dolar30": 0.05
    }
   ]
  },
@@ -2391,7 +2399,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T15:20-03:00",
+ "atualizado_em": "2026-11-10T15:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2405,6 +2413,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
+   "publicado": "2026-11-10T15:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Credit card debt climbs to a record $1.29 trillion, New York Fed research finds",
    "fonte": "CNBC",
@@ -2576,19 +2596,6 @@
    "tickers": [
     "EMBR3"
    ]
-  },
-  {
-   "titulo": "Ibovespa hoje cai e dólar sobe quase 2% após dado de inflação dos EUA",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
-   "publicado": "2026-11-10T12:57-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Banco Central do Paraguai afirma que devolveu o dinheiro de 93% dos clientes do Ueno Bank",
