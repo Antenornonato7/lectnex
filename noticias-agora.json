@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T16:48-03:00",
+  "atualizado_em": "2026-11-10T16:50-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -319,11 +319,11 @@
     ],
     [
      "16:30",
-     171196.0
+     171233.0
     ],
     [
-     "16:33",
-     171215.0
+     "16:35",
+     171212.0
     ]
    ]
   },
@@ -704,10 +704,10 @@
     ],
     [
      "16:45",
-     5.5833
+     5.5847
     ],
     [
-     "16:48",
+     "16:50",
      5.5838
     ]
    ]
@@ -1597,7 +1597,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.0
    },
    {
     "hora": "16:29",
@@ -1614,22 +1614,24 @@
     ],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "16:30",
+    "titulo": "Homeowners tap equity as HELOC balances post biggest jump since 2005: New York Fed report",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/heloc-balances-new-york-fed.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Agenda do dia: Ata do Copom e inflação nos EUA são destaque",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcVpBN21uRTQtYXY0QXZTaHBSRlRpM1JRaXF1NXctQ1BwWjJ4UHBpSUk2eURDbGJjVUpURFcwYlhxR3lRSVYtempXeHA4MmEzcDRiLUlBWkNaaE5xa2l5MHFHbV9mNzJ4bHpXYWVwT2FUVFFZdzZBMU9UTHN5OGRyYUc5Q0FZMm45Q0pGV2VRMy1ib0lNNTJCanhzLXg1dzQ4QVdGQndYc0RRRDdYeUlBN3cyaHpzdHPSAcYBQVVfeXFMTWpiNHpKMWNGUVF5RUxTTFRIWDdkeEQzYzlwNnNpR1NmNjVWLVoyUkJGY1ExMVI0OXUtN29aaVNsYUx4c3gzTkF6WUtvd1F2LVg3eXlwYVA3SG5VX0tnSGJPYTJGM2R0M0tZZkNZLW1XaFprVGd0R1FuSl9qR2lTVlhDWWhrXzdZZVdseVhlVC1adl9QNFNmRmdacXJsTE4tdDdYblNFdVU2ckdUSFVFT0dkZXUtdF9IcjlncUVOUlZ0QzlVVTdB?oc=5",
-   "publicado": "2026-11-10T07:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Manhã no mercado: Ata do Copom e Waller, do Fed, concentram as atenções em dia de inflação nos EUA",
    "fonte": "Valor",
@@ -2619,6 +2621,18 @@
    "tickers": [
     "BBDC4"
    ]
+  },
+  {
+   "titulo": "Homeowners tap equity as HELOC balances post biggest jump since 2005: New York Fed report",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/heloc-balances-new-york-fed.html",
+   "publicado": "2026-11-10T16:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2648,7 +2662,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T16:48-03:00",
+ "atualizado_em": "2026-11-10T16:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2660,6 +2674,42 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T16:49-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Op-ed: In Nvidia CEO Jensen Huang's alleged China spy scandal, there's plenty of blame to go around",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/nvidia-ceo-jensen-huang-china-spy-scandal.html",
+   "publicado": "2026-11-10T16:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Homeowners tap equity as HELOC balances post biggest jump since 2005: New York Fed report",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/heloc-balances-new-york-fed.html",
+   "publicado": "2026-11-10T16:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Plano fiscal crível pode melhorar cenário macro rapidamente, diz Honorato, do Bradesco",
    "fonte": "Bloomberg Línea",
@@ -2711,18 +2761,6 @@
    "tickers": []
   },
   {
-   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "publicado": "2026-11-10T15:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
@@ -2731,18 +2769,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Copom, IPCA e pronunciamento de Lula dividem agenda da semana com nova rodada de inflação nos EUA",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPQXRFZXYzZ3dsZVZMYkgxbmhia0JIbEZsc2plakhyMmtxdzFmY1dtZjB4dzhXWjhsbko5aHN1QlVTcjRUVmwzemJvLUpWZ2tkSXdpc2szd25TMGNvczlSUWNxQlNocXpHMlNtN0ZvXzMtSE1JcmJjODJ2d245ZmlIV1ZlTzVfZ3FXbUkyc3BXT0tqYmJWRXg5ejJnVEtUWnJSZUQwS2lGMWptWndSZkRKdjY4TDREcG9maFg5bWw2YU5tUEprZmtzWF8zODI5NUotOTl5QVdqWVlILV9kdzdLQlBjOVZ3ZWo1bk8tNy0wem5qaDYzblE?oc=5",
-   "publicado": "2026-11-10T15:18-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -2763,17 +2789,6 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSF8wNzBlOGFjN1ZMUktocHJ1WTluNFFadkw1eHRUdHpPcmM0alZaWUhGVWVaSE1wc0V3WW04Sms5bXpQWGYxQkhzSUZjcmpYNUF5OHRNeTFNaHVkWTRZMy0tZ3IyV245RWx5cmFWbHZrSDJMZ01nMFhUQnBtSVE3bHVpRnRVLWZIbTFYUmYxdk1oOFNOSnBLV2RERVVTQ1hnZlhLb3BkdFJJV3pVMl9xbnlnZUdQLXRjYVF5NDQ0RXFPRzRka3lKQXVRMWx2X1BIcVdFdmVxS0oyUi1BQVZwMw?oc=5",
    "publicado": "2026-11-10T14:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar, juros e falta de acesso espantam investidor brasileiro do exterior, diz executivo da Nu Asset",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQlMtY3dvaC1DSGV2dmhtemltckhiaG9jUm8yNEpjR01MRHpHdnhhejlua1JQbzVqeDVfOXdoZ3ZIc3VXM2x0cTU4U1JLQlR4czI0c3QwSFVvVWU4NFZUNWxMMlBmdGNuQ3QzU2FsYXROeWZsYWJHZHBTVzlwRG43VnFja016ZnM5czRVUDhPdHlteUNPbnhuQjl3Y2wtajNEZVZrQTlUdGx0d3JUMjFRSzl0RW53VTJoQmc4TFd6Zk9DV1Jwei1lRDhvSEliaTZFeVJCVmZn0gHbAUFVX3lxTE1fYkZObE1zOFJ4VWZheVJJTS1Nc0JhZTdSRUl4VEFjV1U0NjVHQnpkVXFhMjVyd1ZwdGhyS29TRF9JQXFlMFpaRHhKb1VyaEZDTk9VR1FRZnFrSE9qdEJCVTVfX1pNdWVFVFFvMHBCdTFFWkZKbmVldHBYME1yVWQ4UFY1TlpqcTVtSDYyakdOMmZNRmxpU1R0SHVUSl9EODdjWlJnNjRXMjVlUUYzTnVKMmFUOExCMGx4Q3pkV1BDa1dXNTBld3RWbllpNHE0X3NRNVB2ZTNpRzBGNA?oc=5",
-   "publicado": "2026-11-10T14:50-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
