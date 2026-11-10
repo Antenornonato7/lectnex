@@ -948,8 +948,8 @@
     }
 
     /* ------------------------------------------------------------------ ALERTAS NO CELULAR (OneSignal) */
-    // Qualquer [data-lx-push] vira botão. As escolhas viram tags: surpresa, agenda (15 min antes), leitura.
-    const PUSH_OPTS = [['surpresa', 'Surpresas e manchetes fortes', 'Dado fora do consenso ou notícia de alto impacto (no máx. 5 por dia)'], ['agenda', 'Dado forte em 15 min', 'Payroll, IPCA, Copom, CPI…'], ['leitura', 'Leitura do Dia', 'Todo dia por volta das 7h45']];
+    // Qualquer [data-lx-push] vira botão. As escolhas viram tags: surpresa, agenda (15 min antes), leitura (Leitura do Dia e Plano do Dia 8h45, ver scripts/plano_push.py).
+    const PUSH_OPTS = [['surpresa', 'Surpresas e manchetes fortes', 'Dado fora do consenso ou notícia de alto impacto (no máx. 5 por dia)'], ['agenda', 'Dado forte em 15 min', 'Payroll, IPCA, Copom, CPI…'], ['leitura', 'Leitura do Dia', 'Todo dia por volta das 7h45'], ['plano', 'Plano do Dia às 8h45', 'Nos dias de pregão: contrato vigente e dados fortes do dia']];
     let osReady = null;
     function oneSignal() {
         if (osReady) return osReady;
@@ -983,6 +983,8 @@
             const msg = el.querySelector('[data-msg]'), tags = {};
             el.querySelectorAll('[data-k]').forEach(c => { tags[c.dataset.k] = c.checked ? '1' : '0'; });
             try { localStorage.setItem('lectnex-push-v1', JSON.stringify(Object.fromEntries(Object.entries(tags).map(([k, v]) => [k, v === '1'])))); } catch (_) { }
+            // O plano grátis do OneSignal limita etiquetas por pessoa: "plano" vai junto na tag leitura (0 nada, 1 Leitura, 2 Leitura + Plano, 3 só Plano)
+            tags.leitura = tags.leitura === '1' ? (tags.plano === '1' ? '2' : '1') : (tags.plano === '1' ? '3' : '0'); delete tags.plano;
             msg.textContent = 'Conectando…';
             try {
                 const OS = await oneSignal();

@@ -156,3 +156,9 @@ Configuração (uma vez):
 7. Em **Actions → Search Console → Run workflow** (com "teste" marcado) para receber o primeiro relatório.
 
 Opcional: segredo `GSC_SITE` com `sc-domain:lectnex.com.br` ou `https://lectnex.com.br/` se houver mais de uma propriedade.
+
+## Lembrete do Plano do Dia (celular, 8h45)
+
+- `scripts/plano_push.py` (workflow **Plano do Dia (lembrete)**, horário no Relógio, só em dias de pregão) manda pelo OneSignal o contrato vigente de WIN e WDO, aviso de último pregão e os dados fortes do dia, abrindo `futuros.html#plano`.
+- Para não criar mais uma etiqueta no OneSignal, a escolha vai na tag `leitura`: 0 nada, 1 só Leitura do Dia, 2 Leitura + Plano, 3 só Plano. O push da Leitura usa os valores 1 e 2.
+- Quem ativou alertas antes desta mudança precisa abrir o painel de alertas e salvar de novo para receber o Plano.
