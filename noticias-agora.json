@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T12:50-03:00",
+  "atualizado_em": "2026-11-10T12:53-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -131,7 +131,11 @@
     ],
     [
      "12:35",
-     171747.0
+     171673.0
+    ],
+    [
+     "12:38",
+     171652.0
     ]
    ]
   },
@@ -324,7 +328,11 @@
     ],
     [
      "12:50",
-     5.6028
+     5.6014
+    ],
+    [
+     "12:53",
+     5.6014
     ]
    ]
   },
@@ -866,7 +874,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.05,
     "dolar30": 0.06
    },
    {
@@ -1933,7 +1941,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T12:50-03:00",
+ "atualizado_em": "2026-11-10T12:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2009,9 +2017,21 @@
    "tickers": []
   },
   {
+   "titulo": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
+   "publicado": "2026-11-10T12:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Juros devem seguir altos por causa da inflação prevista, diz Copom",
    "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMkM1UFdyYmlCQ0Y1Q3BwZlBvS1FTTHczalFqMElRRmtHWjZTcmZtTjlLbUVscUUydjVTYkJnZVEzUTdySXJ2U0lpSS1NenE5b1RBblk0QzRsRHhKZWNLRmR5X3BuZzlDM2YtM0lUU1RLRkFPcTdlWW10ckRPem9VYm5DSmNGX005X1RaeHYzSmtqOHpQVVMtd3h6aHFxSGx6RWtJR3NuaThZMlV4azJHc2x0RHdRTFBndEtOR0lZN1ZEbU1lRzBEV3NYTlowMXJpZHF2R2stSUJtTFU?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFenNNb0MzNGdFeFVhRUF5U1RyOTFyYjNvSWlxRW5uczlneVM5TVhOVVZmRHRfZTUwLVEzVzVPX0QyemkzN09MZkxPRWswU3BjVmtLRHM1SUNhWE9C?oc=5",
    "publicado": "2026-11-10T11:54-03:00",
    "impacto": "alto",
    "ativos": [
@@ -2025,21 +2045,6 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
    "publicado": "2026-11-10T11:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
-   "titulo": "Selic 2027: Bradesco prevê juros em 13,75% até junho",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB?oc=5",
-   "publicado": "2026-11-10T11:20-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
