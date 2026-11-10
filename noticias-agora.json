@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T10:55-03:00",
+  "atualizado_em": "2026-11-10T10:58-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -39,7 +39,11 @@
     ],
     [
      "10:40",
-     172652.0
+     172261.0
+    ],
+    [
+     "10:43",
+     172350.0
     ]
    ]
   },
@@ -140,7 +144,11 @@
     ],
     [
      "10:55",
-     5.5691
+     5.5736
+    ],
+    [
+     "10:58",
+     5.5736
     ]
    ]
   },
@@ -317,7 +325,7 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": null,
+    "ibov30": -0.49,
     "dolar30": 0.29
    },
    {
@@ -346,7 +354,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.32
+    "dolar30": 0.4
    },
    {
     "hora": "10:28",
@@ -361,7 +369,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.32
+    "dolar30": 0.4
    },
    {
     "hora": "10:30",
@@ -374,7 +382,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.02
+    "dolar30": 0.1
    },
    {
     "hora": "10:34",
@@ -401,6 +409,22 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:47",
+    "titulo": "Ibovespa sobe repercutindo balanços; Vale e Petrobras limitam alta",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVm94bkhPbHREdWhFS1ByTWVQR2pXR3l2SmJ0dnd3XzNpeVJzakd4M1I2TGZNNlBQVFA3bGF1QUFqbmt3bXVZNG9iWExBV1RvVzkwU1lhWldNd3NEVHNXb2JmRmhtQ0FPSVd2QXlXa1NlVl91NXRlRjVhMWF2U1BzT0V6X0oyTERmNWUwaDBxTjdPT1hIZkdXWkY2ajBnbS0yOFRpMVQ2bjNrVmhJWHgwQlA4X3NTS2V1Z3VoUnJ3OVXSAc8BQVVfeXFMTzBrTFlsYzhtRi10NkhNRUV4MHVqNnV1M0tPOUpVRG5Jb0h6bHhNMFl4bVJERDNwX2Z3czFoWXlzbHk0Wmo4MTR5eUpFNG8xZENaUjRSRnA4UE9JTUFPX0tTUVhKNzBsQ0VGS0ZVblA5VkN5TnAwSEFKRE5DbDgwekdxN2E4dUtBbEJFYUhRVUQ3Rm9iaTJmQ2pNQ2VmeHpqTy15Ny1TNEtrNVBxa2J4TEYwdjlYdWlkTWMwYWRWbC1lV1RGYTVZbllXR2FOeE9J?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4",
+     "VALE3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1178,6 +1202,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe repercutindo balanços; Vale e Petrobras limitam alta",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVm94bkhPbHREdWhFS1ByTWVQR2pXR3l2SmJ0dnd3XzNpeVJzakd4M1I2TGZNNlBQVFA3bGF1QUFqbmt3bXVZNG9iWExBV1RvVzkwU1lhWldNd3NEVHNXb2JmRmhtQ0FPSVd2QXlXa1NlVl91NXRlRjVhMWF2U1BzT0V6X0oyTERmNWUwaDBxTjdPT1hIZkdXWkY2ajBnbS0yOFRpMVQ2bjNrVmhJWHgwQlA4X3NTS2V1Z3VoUnJ3OVXSAc8BQVVfeXFMTzBrTFlsYzhtRi10NkhNRUV4MHVqNnV1M0tPOUpVRG5Jb0h6bHhNMFl4bVJERDNwX2Z3czFoWXlzbHk0Wmo4MTR5eUpFNG8xZENaUjRSRnA4UE9JTUFPX0tTUVhKNzBsQ0VGS0ZVblA5VkN5TnAwSEFKRE5DbDgwekdxN2E4dUtBbEJFYUhRVUQ3Rm9iaTJmQ2pNQ2VmeHpqTy15Ny1TNEtrNVBxa2J4TEYwdjlYdWlkTWMwYWRWbC1lV1RGYTVZbllXR2FOeE9J?oc=5",
+   "publicado": "2026-11-10T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
   }
  ],
  "enviadas": [
@@ -1212,7 +1250,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T10:55-03:00",
+ "atualizado_em": "2026-11-10T10:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1231,12 +1269,26 @@
    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-   "publicado": "2026-11-10T10:45-03:00",
+   "publicado": "2026-11-10T10:56-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe repercutindo balanços; Vale e Petrobras limitam alta",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVm94bkhPbHREdWhFS1ByTWVQR2pXR3l2SmJ0dnd3XzNpeVJzakd4M1I2TGZNNlBQVFA3bGF1QUFqbmt3bXVZNG9iWExBV1RvVzkwU1lhWldNd3NEVHNXb2JmRmhtQ0FPSVd2QXlXa1NlVl91NXRlRjVhMWF2U1BzT0V6X0oyTERmNWUwaDBxTjdPT1hIZkdXWkY2ajBnbS0yOFRpMVQ2bjNrVmhJWHgwQlA4X3NTS2V1Z3VoUnJ3OVXSAc8BQVVfeXFMTzBrTFlsYzhtRi10NkhNRUV4MHVqNnV1M0tPOUpVRG5Jb0h6bHhNMFl4bVJERDNwX2Z3czFoWXlzbHk0Wmo4MTR5eUpFNG8xZENaUjRSRnA4UE9JTUFPX0tTUVhKNzBsQ0VGS0ZVblA5VkN5TnAwSEFKRE5DbDgwekdxN2E4dUtBbEJFYUhRVUQ3Rm9iaTJmQ2pNQ2VmeHpqTy15Ny1TNEtrNVBxa2J4TEYwdjlYdWlkTWMwYWRWbC1lV1RGYTVZbllXR2FOeE9J?oc=5",
+   "publicado": "2026-11-10T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
   },
   {
    "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
@@ -1334,18 +1386,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia’s China problem",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html",
-   "publicado": "2026-11-10T10:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
