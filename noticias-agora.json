@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T10:58-03:00",
+  "atualizado_em": "2026-11-10T11:00-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -39,11 +39,11 @@
     ],
     [
      "10:40",
-     172261.0
+     172453.0
     ],
     [
-     "10:43",
-     172350.0
+     "10:45",
+     172415.0
     ]
    ]
   },
@@ -144,11 +144,11 @@
     ],
     [
      "10:55",
-     5.5736
+     5.5728
     ],
     [
-     "10:58",
-     5.5736
+     "11:00",
+     5.5725
     ]
    ]
   },
@@ -325,7 +325,7 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": -0.49,
+    "ibov30": -0.45,
     "dolar30": 0.29
    },
    {
@@ -338,7 +338,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.45,
     "dolar30": 0.29
    },
    {
@@ -354,7 +354,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.4
+    "dolar30": 0.38
    },
    {
     "hora": "10:28",
@@ -369,7 +369,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.4
+    "dolar30": 0.38
    },
    {
     "hora": "10:30",
@@ -382,7 +382,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.1
+    "dolar30": 0.09
    },
    {
     "hora": "10:34",
@@ -397,7 +397,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.08
    },
    {
     "hora": "10:45",
@@ -1250,7 +1250,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T10:58-03:00",
+ "atualizado_em": "2026-11-10T11:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1265,6 +1265,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
+   "publicado": "2026-11-10T11:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
    "fonte": "CNBC",
@@ -1289,18 +1301,6 @@
     "PETR4",
     "VALE3"
    ]
-  },
-  {
-   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T10:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "France blames Iran for supermarket refrigerator cyberattacks, weighs sanctions",
@@ -1440,8 +1440,8 @@
   {
    "titulo": "Copom alerta em ata para expectativa de inflação subir diante de risco fiscal e fim da 6x1",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNkdWQkFjYXZVZFZZeUJPWDFYZm9jc1NURTAtNGJnZ3Fydm9SZllraVNVWFl6SnpOTUl3aW9mLXJ1TVJoSmFqdmJMdUtUb05tNGpXdEdQaV8tOFR0MmdPVW9tWXlpdzg5QjJaOXlReDZrY2pIUkFIUU9kUkJ1WFFUNVIzdElBOHd6ZXdDaWs2ckxVQjZlRWZySTJ0TmhLMlAzalpV?oc=5",
-   "publicado": "2026-11-10T08:59-03:00",
+   "url": "https://www.estadao.com.br/economia/copom-alerta-ata-expectativa-inflacao-subir-risco-fiscal/",
+   "publicado": "2026-11-10T08:48-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
