@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T15:18-03:00",
+  "atualizado_em": "2026-11-10T15:20-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -247,11 +247,11 @@
     ],
     [
      "15:00",
-     170658.0
+     170703.0
     ],
     [
-     "15:03",
-     170661.0
+     "15:05",
+     170708.0
     ]
    ]
   },
@@ -560,11 +560,11 @@
     ],
     [
      "15:15",
-     5.5901
+     5.5932
     ],
     [
-     "15:18",
-     5.5912
+     "15:20",
+     5.5932
     ]
    ]
   },
@@ -1355,7 +1355,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.1
    }
   ]
  },
@@ -2391,7 +2391,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T15:18-03:00",
+ "atualizado_em": "2026-11-10T15:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2565,6 +2565,19 @@
    ]
   },
   {
+   "titulo": "Ação da Embraer dispara mesmo com lucro 15% menor no 3º trimestre; três bancos reiteram compra",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNU3ZEOXAyak9XZkpZeC02R200dVJVUEJSR0FSQV83b0s3ZF9KRjByMkxqNUlRQjJyVU51Wk5PczM4Y0YyTkdGblY0ZzhaVFBZdGNZUFFHOFI1ZUdCR0pOZDk5RDdmR1hpVjR1VnBwd1ZWcWN0NzJaRkFCS2lUeFhvNTRxT1hDMmNMeEJyTUhhR2lPNnRSWU9QNEZrZHo2UG9NeGFQRThtMy10eDgxVUJMbHQxMldjOXJpZFZzZUI4blVNb2NoMnl0dDFsdVZ6WFpvd0phRnRzR0NlalZoQ1l3c2V5c2XSAeoBQVVfeXFMT1hodWJ6NHhldHNRQlhWaThUUGR6cE9kRUtyUExhWkNGQ0J3RmVNTk9kdkdaYWhBTDdVajg3SkRTNUNOOUVEMUppdVlPS2p0bjZKUHh4NllscXc1RklBOGI3WlBpbElTbDRfQXZqR1RHOU9wUk5ldUhMQXExQUd1VjZ2a1NURlZxdHFyYk8yNzJ5N3dRLUVHSXMyeXVsaWs2SlRLNkFtU2F4TE1kOWwtWFNxV3J6VDAxS25RNzRHbDVlTW1vRGZWNnZXYWtZT1dONGFWekpwZ19NVXl1TmN5R2VmM05FLW5kUnln?oc=5",
+   "publicado": "2026-11-10T13:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
    "titulo": "Ibovespa hoje cai e dólar sobe quase 2% após dado de inflação dos EUA",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
@@ -2585,18 +2598,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa reduz fôlego com inflação dos EUA e cai após superar 173 mil pontos",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbTJFS3FGamlQdWxlLWJFRzdhb2FtTjNSRXVpNEtKVjJXdnM4NzhJcVpxZmxmYzk2TkJIanpBdTRPaFZkRzh6N204aGdrMlp6TEw4RGY0dUNNNE9YS05HX1VnalMyYjB5Z2dTcVNqQWhKSkVYd0dtU0NOSlFQallkblF6SnR0aUJkOWtxUVNNTXhFVXlJNzJfWTdHZEVQak00RkxpSEdwTEhfeFJZZnE0R2Z0UU5qZ9IBuwFBVV95cUxQRDBKZUlCbmdNOTBCYXNVaHlEME1YMXhBbFlQdzJRTzRkNi1SUnlXWFZKdmZEWGFiUzJQT3ppdU12amdhNU9LdU4ybmNFT0UyekFKU2JFb2MwWWtCZGlmSnpkWXp5MlBXZmZvb0tab19rWWUyWjYzZjAwQ0VMelltNjZGSlRQVjE5RDZtV3pkcnlkYnYySW16cVNhUzZydzdzS1pVamJxaDB1NTVqNERqWXBqdHRacVl2WGI0?oc=5",
-   "publicado": "2026-11-10T12:20-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "DI"
    ],
    "tickers": []
