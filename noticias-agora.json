@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T16:33-03:00",
+  "atualizado_em": "2026-11-10T16:35-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -307,11 +307,11 @@
     ],
     [
      "16:15",
-     171138.0
+     171151.0
     ],
     [
-     "16:18",
-     171138.0
+     "16:20",
+     171169.0
     ]
    ]
   },
@@ -680,10 +680,10 @@
     ],
     [
      "16:30",
-     5.5838
+     5.5823
     ],
     [
-     "16:33",
+     "16:35",
      5.5843
     ]
    ]
@@ -1560,22 +1560,26 @@
     ],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "16:29",
+    "titulo": "Plano fiscal crível pode melhorar cenário macro rapidamente, diz Honorato, do Bradesco",
+    "fonte": "Bloomberg Línea",
+    "url": "https://www.bloomberglinea.com.br/brasil/plano-fiscal-crivel-pode-melhorar-cenario-macro-rapidamente-diz-honorato-do-bradesco/",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Minidólar (WDOZ26): CPI dos EUA e ata do Copom ditam o rumo do dia",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQX0Vka1FpbU1RWXUya0FlVTBaaWZ3VEdyRGRCUnZ2Q3pfN2ZVLW45cXlBUlk4bURUNlNTc3Y2c0V6VjFYUVdjMm5tRGdQOE9Ia2c5eWlybFZlTVJEMlRFWW9yNEtWNm5KTFJMc0JKZlVNUTFfZWNaQUtsWmRYeXRyT1RWcGNZUHpGdHB0cjJR0gGTAUFVX3lxTFBsdGpwejZ0RjJDMmQ1OWpKY0VMVWhtSzdHVmNMVXlfcUNjdEt1bnFjT19LRFMwT3JEYTU0V08ydWdpWjdVSzZFcy1EeEpNRlV0TFdhd21Cb1pPZzQ5M2FhTjEyZWpUVWJxanUxWXJTcE9IR2FGUmx4RlhQYW81WVR6RTgxbWlVVTVlbTJpUFEwSzktVQ?oc=5",
-   "publicado": "2026-11-10T07:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ibovespa salta 2,2% com Vale em alta acima de 3%; Bolsas de Nova York avançam apesar da Nvidia",
    "fonte": "Estadão",
@@ -2564,6 +2568,20 @@
    "tickers": [
     "WEGE3"
    ]
+  },
+  {
+   "titulo": "Plano fiscal crível pode melhorar cenário macro rapidamente, diz Honorato, do Bradesco",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/brasil/plano-fiscal-crivel-pode-melhorar-cenario-macro-rapidamente-diz-honorato-do-bradesco/",
+   "publicado": "2026-11-10T16:29-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   }
  ],
  "enviadas": [
@@ -2593,7 +2611,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T16:33-03:00",
+ "atualizado_em": "2026-11-10T16:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2605,6 +2623,20 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Plano fiscal crível pode melhorar cenário macro rapidamente, diz Honorato, do Bradesco",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/brasil/plano-fiscal-crivel-pode-melhorar-cenario-macro-rapidamente-diz-honorato-do-bradesco/",
+   "publicado": "2026-11-10T16:29-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
   {
    "titulo": "WEG e FPT fazem parceria para motor elétrico com gerador a bordo de caminhão e ônibus",
    "fonte": "Folha",
@@ -2720,17 +2752,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe pouco, mas ação dispara quase 24% na semana; o que explica o salto?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQmpsYXJ5S0diZ21FREE1bktvWXhKY0F0N0pCWm9yajNjWUZiYXFzWkF3dXlDTE1HMXhyLVBob0Y0bDNIYVp1T1p5ME1MSHdvYm9uZFVicU5vVlh1VENfY2pvRkNNaEpCd241VG91TVJjVDQ5aFpacTVMUlg2OXNIMXA1WWRRRlFWWFhiTWp6WjZKZktDX2UzeFBzZU9nZ2lLNjNsSW9pWkM1NU1hS293V1FWZUNRZzcxdzBTYkNSWnMya2xyYU1iTWlfN3JrMXNMclh3RFRvdC00aWhi?oc=5",
-   "publicado": "2026-11-10T14:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
