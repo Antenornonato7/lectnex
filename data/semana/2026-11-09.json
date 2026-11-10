@@ -81,7 +81,12 @@
     "di": "volatil"
    },
    "nota": "Segundo a ADMISI, o BLS não publicará a variação anual em outubro (falta de dados de out/2025).",
-   "tipo": "cpi-eua"
+   "tipo": "cpi-eua",
+   "resultado": "0,4%",
+   "surpresa": {
+    "direcao": "acima",
+    "reacao": "CPI acima do consenso costuma fortalecer o dólar global e elevar os juros dos Treasuries, o que tende a pressionar o WDO para cima, abrir a curva de DI e pesar sobre o WIN."
+   }
   },
   {
    "data": "2026-11-10",
@@ -96,7 +101,12 @@
     "di": "volatil"
    },
    "nota": "Núcleo sem alimentos e energia; referência para o Fed.",
-   "tipo": "cpi-nucleo-eua"
+   "tipo": "cpi-nucleo-eua",
+   "resultado": "0,3%",
+   "surpresa": {
+    "direcao": "acima",
+    "reacao": "Núcleo acima do esperado reduz a chance de cortes do Fed; o padrão típico é dólar mais forte (WDO em alta), DI pressionado e WIN mais fraco."
+   }
   },
   {
    "data": "2026-11-10",
