@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:13-03:00",
+  "atualizado_em": "2026-11-10T13:15-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -147,11 +147,11 @@
     ],
     [
      "12:55",
-     171495.0
+     171533.0
     ],
     [
-     "12:58",
-     171565.0
+     "13:00",
+     171624.0
     ]
    ]
   },
@@ -360,11 +360,11 @@
     ],
     [
      "13:10",
-     5.6065
+     5.6094
     ],
     [
-     "13:13",
-     5.6073
+     "13:15",
+     5.6084
     ]
    ]
   },
@@ -949,7 +949,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.31,
+    "ibov30": -0.29,
     "dolar30": 0.18
    },
    {
@@ -2053,7 +2053,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:13-03:00",
+ "atualizado_em": "2026-11-10T13:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2067,6 +2067,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Bridgepoint sees opportunity in 're-rated' real estate",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
+   "publicado": "2026-11-10T13:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dirigente do Fed defende considerar alta de 0,5 ponto nos juros em dezembro",
    "fonte": "Folha",
@@ -2093,17 +2104,6 @@
    ]
   },
   {
-   "titulo": "Inside Alts: Bridgepoint sees opportunity in 're-rated' real estate",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
-   "publicado": "2026-11-10T13:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
@@ -2111,18 +2111,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Superávit comercial da China ultrapassa US$ 1 trilhão com salto nas exportações de alta tecnologia",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/china-superavit-comercial-ultrapassa-1-trilhao-salto-exportacoes-alta-tecnologia/",
-   "publicado": "2026-11-10T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -2161,6 +2149,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Magazine Luiza salta 7% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
+   "publicado": "2026-11-10T12:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
   },
   {
    "titulo": "Bolsas de NY caem com inflação nos EUA reforçando apostas de alta de juro pelo Fed",
