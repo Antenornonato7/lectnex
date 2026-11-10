@@ -2934,7 +2934,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T20:33-03:00",
+ "atualizado_em": "2026-11-10T20:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2942,13 +2942,24 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Lucro da Petrobras cresce 21,5% no terceiro trimestre, para R$ 39,7 bilhões",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/lucro-da-petrobras-cresce-215-no-terceiro-trimestre-para-r-397-bilhoes.shtml",
+   "publicado": "2026-11-10T20:32-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Dólar sobe 1,46% e fecha no maior valor em 15 meses",
    "fonte": "Agência Brasil",
@@ -2979,19 +2990,6 @@
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcTNXZzlBTmQzbkhOOGowcG5fcFY3RmZsOHVwT3JicUlXVVkweHN3OTRtZm5taUUtLXVNM01tUmcwcFpVWUJ5RDJ3bmppY05wX0JiNmJmUkY2a3A2a0JfQ3FyVmxzbW9yN194VUVkb3ZBVzFycGU3V2hQRVVhZkxXU2pYTHF4cDZ3N1JaaHZQYXRvYlBVaUF0TVRSLURHcVNtdFRRdmtMU2JyN05nZFpscVkwZDJOdkdpak9KSjVTeG0zcUN6YUp6bjFOSjc4Y2c3dGfSAdcBQVVfeXFMUC1CWGdqZEcxMUxNaFA3X01BTTlZeUhHZERUaE9BblY4N0JGbnlUSzVGUnpWNUs5VUF4UjFWQlp4TG83SVhkek5pX2F6UXdHaXhPMlgtVUltTDRSUHNYR2xOV0VjOVk0SE5fUEpHbEZ6WkdjX2FXU09mVW0xckNneS1BTl9ScXo3SDZFa1dMakU5Y2R4R3p4MnRhLXQ2M19PR05uWjYzRVZmZkg2V0lkck14XzNnd3BMV0M2dkJPMFdVRk1nbmdlR1ZBT2tMc1JFNEhCZVpHMHc?oc=5",
    "publicado": "2026-11-10T20:19-03:00",
    "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Lucro da Petrobras cresce 21,5% no terceiro trimestre, para R$ 39,7 bilhões",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/lucro-da-petrobras-cresce-215-no-terceiro-trimestre-para-r-397-bilhoes.shtml",
-   "publicado": "2026-11-10T20:18-03:00",
-   "impacto": "alto",
    "ativos": [
     "WIN"
    ],
@@ -3058,6 +3056,17 @@
    "tickers": []
   },
   {
+   "titulo": "Estudo indica que atuação do BNDES compensa custo fiscal",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/fernando-dantas/estudo-indica-que-atuacao-do-bndes-compensa-custo-fiscal/",
+   "publicado": "2026-11-10T19:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa fecha em queda após inflação dos EUA reforçar expectativa de alta dos juros",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tYzlzTVBWZ29DM3ZJdDU3NVlhZFVmRUktRTNZdU01TXVUekgzeU1qbTdzSmlKR2RLU080YzEzUlluRVZna3BLTGVTMXlZdm5jX3JLZFUtTFo3aUE5aEZwSVNzUk9BQQ?oc=5",
@@ -3101,18 +3110,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa recua com incertezas sobre política fiscal no Brasil e aversão a risco no exterior",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQjhpTGlYU1ZQYWdvRDRsZ08zMHJzRFVYWFZ5Z1NVZGxDT2dIYVNJSkhIajAyOUpMLUFYdHR4eEhqVWlNOV9oZUhFOVNXWVQ2VGlMbi1PYmRBT3M3VnlZWl8tdWQtYW9Qc3hTdmdJcU55NUpGejlCT0FTSVJYNFJ3dVgwSXB4NlhIMmMzNTRidWNrc2ZfaWhlMExsbEpYSHd1RWIzamxxSUVPMmpjSFlsaFZaUkhQRlAwNm00aEVWdGtYdWpKRWc3d2VlRk1FZS13bkVpclBYRHEwemZHdXZobTYwWdIB8gFBVV95cUxOb2Z5MExzcndpX29PRXNQTXZjVE96OWxNRVhUemZERFFFdEJmSW9RYlJrenFpQUJ4bkFfdWFiSF81VVRPZFBXWFgxSXkwYjNYbXhIOWR4dVNYbkU4elpjUE1hSk5yc3RNZnhvM2QyTFJFemhNQ3RLTU9YRmJRNFdKelFXN3F1aUpKbC1JSXVla2FfR00xdlEza0dmMnRydzI1NzVTVnphRFB3aFVNNEZTUXQ5bFVHa3ZHU0N2RzlXZk5nX2xFdklLQlZyY0lvRks2cnhvTkkwZjg5czVjWklJSmswSXpWcGxZbURBRkdxbkhWUQ?oc=5",
-   "publicado": "2026-11-10T18:34-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "DI"
    ],
    "tickers": []
