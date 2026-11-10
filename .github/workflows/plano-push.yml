@@ -1,0 +1,35 @@
+# Lembrete do Plano do Dia no celular (OneSignal), 8h45 de Brasília nos dias de pregão.
+# Horário definido em coletor/relogio.py (workflow "Relógio").
+name: Plano do Dia (lembrete)
+run-name: "${{ inputs.teste && 'Teste do Plano do Dia' || 'Plano do Dia' }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Enviar agora como teste"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  lembrete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            coletor
+            data/calendario.json
+            assets/lectnex-core.js
+          sparse-checkout-cone-mode: false
+      - name: Enviar
+        env:
+          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID || secrets.ONESIGNAL_APP_ID || 'c0be7d93-6afb-4bb0-bf56-6f9171302071' }}
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY || secrets.LECTNEX2 || secrets.ONESIGNAL_KEY || secrets.ONESIGNAL_REST_API_KEY || secrets.ONESIGNAL || secrets.LECTNEX3 || secrets.LECTNEX || secrets.APP_API_KEY || secrets.API_KEY }}
+          TESTE: ${{ inputs.teste && '1' || '' }}
+        run: python3 scripts/plano_push.py

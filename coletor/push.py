@@ -18,6 +18,11 @@ BRT = dt.timezone(dt.timedelta(hours=-3))
 NS = uuid.UUID('6f1c6f0e-3c1a-4c55-9a51-6c6563746e78')  # namespace Lectnex para as chaves
 
 
+# tag leitura: 1 = Leitura do Dia, 2 = Leitura + Plano do Dia, 3 = só Plano (ver scripts/plano_push.py)
+LEITURA = [{'field': 'tag', 'key': 'leitura', 'relation': '=', 'value': '1'}, {'operator': 'OR'},
+           {'field': 'tag', 'key': 'leitura', 'relation': '=', 'value': '2'}]
+
+
 def enviar_filtro(filtros, titulo, texto, url, chave):
     return enviar('acoes', titulo, texto, url, chave, filtros=filtros)
 
@@ -77,11 +82,11 @@ def main():
     site = tg.SITE
     if os.environ.get('TESTE'):
         for tag in ('surpresa', 'agenda', 'leitura'):
-            enviar(tag, '✅ Alertas do Lectnex ativos', 'Teste: é assim que os alertas vão chegar.', site, f'teste-{tag}-{dt.datetime.now().isoformat()}')
+            enviar(tag, '✅ Alertas do Lectnex ativos', 'Teste: é assim que os alertas vão chegar.', site, f'teste-{tag}-{dt.datetime.now().isoformat()}', filtros=LEITURA if tag == 'leitura' else None)
         return
     l, la = tg.atual('data/leitura.json'), tg.anterior('data/leitura.json')
     if l and l.get('data') and (not la or la.get('data') != l['data']):
-        enviar('leitura', '📊 Leitura do Dia', l.get('titulo') or 'A leitura de hoje está no ar', site + '#leitura', 'leitura-' + l['data'])
+        enviar('leitura', '📊 Leitura do Dia', l.get('titulo') or 'A leitura de hoje está no ar', site + '#leitura', 'leitura-' + l['data'], filtros=LEITURA)
     c, ca = tg.atual('data/calendario.json'), tg.anterior('data/calendario.json')
     if not c:
         return

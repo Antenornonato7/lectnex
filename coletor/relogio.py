@@ -69,6 +69,7 @@ TAREFAS = [
     ('fechamento.yml', None, {'forcar': 'false'}, ('horarios', ['19:05'], 180), lambda: PREGAO),
     ('resumo-dono.yml', 'Resumo do dia', {'teste': 'false'}, ('horarios', ['19:25'], 240), lambda: True),
     ('kit.yml', 'Kit do dia', {}, ('horarios', ['19:32'], 150), lambda: UTIL),
+    ('plano-push.yml', 'Plano do Dia', {'teste': 'false'}, ('horarios', ['08:45'], 25), lambda: PREGAO),
     ('lembrete.yml', 'Lembrete manha', {'momento': 'manha'}, ('horarios', ['08:30'], 50), lambda: PREGAO),
     ('lembrete.yml', 'Lembrete noite', {'momento': 'noite'}, ('horarios', ['20:00'], 50), lambda: PREGAO),
     ('lembrete.yml', 'Lembrete fds', {'momento': 'fds'}, ('horarios', ['10:05'], 50), lambda: not PREGAO),
@@ -160,7 +161,7 @@ NOMES = {'cotacoes.yml': 'Cotações das ações', 'monitor.yml': 'Monitor do si
          'reacao.yml': 'Reação do mercado', 'fechamento.yml': 'Fechamento do dia', 'resumo-dono.yml': 'Resumo do dono', 'kit.yml': 'Kit do dia',
          'lembrete.yml': 'Lembrete', 'checar-resultados.yml': 'Conferir resultados', 'telegram.yml': 'Contagem do Telegram', 'termo.yml': 'Termômetro',
          'sinais.yml': 'Sinais da manhã', 'instagram.yml': 'Instagram', 'antes.yml': 'Antes do dado', 'coletor-cvm.yml': 'Coletor CVM',
-         'semanal.yml': 'Resumo semanal', 'carrossel.yml': 'Carrossel da semana', 'search-console.yml': 'Relatório do Google'}
+         'semanal.yml': 'Resumo semanal', 'carrossel.yml': 'Carrossel da semana', 'search-console.yml': 'Relatório do Google', 'plano-push.yml': 'Lembrete do Plano do Dia (8h45)'}
 
 
 def alertar(arq, titulo, al):
