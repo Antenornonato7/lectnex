@@ -1,54 +1,6 @@
 {
-  "atualizado_em": "2026-11-09T19:30:00-03:00",
+  "atualizado_em": "2026-11-10T07:50:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-09",
-      "hora": "08h",
-      "pais": "BR",
-      "evento": "IGP-DI (out) e IPC-S (1ª quadrissemana de nov)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "IGP-DI: 1,15% (set: 1,50%)",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Inflação de atacado e varejo medida pela FGV.",
-      "tipo": "igp-di",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-09",
-      "hora": "08h25",
-      "pais": "BR",
-      "evento": "Boletim Focus (BCB)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Selic 2026: 13,75% (ant. 13,50%); IPCA 2026: 5,22%",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Primeiro Focus após a pausa da Selic; na edição anterior, IPCA 2026 em 5,22% e Selic de 13,50% no fim de 2026.",
-      "tipo": "focus",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-09",
-      "hora": "14h25",
-      "pais": "UK",
-      "evento": "Discurso de Andrew Bailey (BoE)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Sem sinal sobre juros: falou de independência do BC e alertou para risco de bolha em ativos de IA",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Primeira fala depois da alta de juros a 4,0% no Reino Unido.",
-      "tipo": "fala-boe",
-      "surpresa": null
-    },
     {
       "data": "2026-11-10",
       "hora": "00h",
@@ -56,12 +8,12 @@
       "evento": "Balança comercial — exportações (out, a/a)",
       "importancia": 2,
       "anterior": "36,3%",
-      "consenso": "38,0%",
-      "resultado": null,
+      "consenso": "33,5%",
+      "resultado": "35,2%",
       "impacto": {
         "win": "volatil"
       },
-      "nota": "Consenso de exportações segundo a ADMISI; importações: consenso 35,0% (anterior 31,0%). Exportações fortes sustentam a demanda por commodities.",
+      "nota": "Consenso Reuters (a ADMISI indicava 38,0%). Importações: +41,6% (consenso Reuters 32%; set: 31%). Exportações fortes sustentam a demanda por commodities.",
       "tipo": "balanca-china",
       "surpresa": null
     },
@@ -117,6 +69,39 @@
       "surpresa": null
     },
     {
+      "data": "2026-11-10",
+      "hora": "14h30",
+      "pais": "BR",
+      "evento": "Galípolo (BC) em evento da Abracam",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Primeira fala do presidente do BC depois da ata do Copom.",
+      "tipo": "fala-bcb",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-11",
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "Pesquisa Mensal de Serviços — PMS (set, IBGE)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil"
+      },
+      "nota": "Serviços pesam na inflação subjacente; a agenda do InfoMoney indica −0,2% m/m.",
+      "tipo": "pms-brasil",
+      "surpresa": null
+    },
+    {
       "data": "2026-11-11",
       "hora": null,
       "pais": "US",
@@ -162,7 +147,7 @@
         "di": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI.",
+      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Projeções citadas pelo InfoMoney: Bradesco 0,29% e Itaú 0,21% m/m; ASA (BPMoney): 0,23%.",
       "tipo": "ipca",
       "surpresa": null
     },
@@ -201,6 +186,22 @@
     },
     {
       "data": "2026-11-13",
+      "hora": "07h",
+      "pais": "EU",
+      "evento": "PIB da zona do euro (3º tri, 2ª estimativa, t/t)",
+      "importancia": 1,
+      "anterior": "0,4%",
+      "consenso": "0,4%",
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Anterior = estimativa preliminar (flash) de 30/10; mexe com o euro e o dólar global.",
+      "tipo": "pib-zona-euro",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-13",
       "hora": "09h",
       "pais": "BR",
       "evento": "Vendas no varejo (set, PMC/IBGE)",
@@ -212,7 +213,7 @@
         "di": "volatil",
         "win": "volatil"
       },
-      "nota": "Atividade do consumo; dado fraco reforça a desaceleração.",
+      "nota": "Atividade do consumo; dado fraco reforça a desaceleração. A agenda do InfoMoney indica −0,3% m/m.",
       "tipo": "varejo-brasil",
       "surpresa": null
     },
@@ -231,6 +232,22 @@
       },
       "nota": "Pressão de custos que pode chegar ao consumidor.",
       "tipo": "ppi-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-15",
+      "hora": "23h",
+      "pais": "CN",
+      "evento": "Produção industrial e varejo (out, a/a)",
+      "importancia": 2,
+      "anterior": "5,5%",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "win": "volatil"
+      },
+      "nota": "Anterior = produção industrial de setembro; varejo subiu 1,1% em setembro. Atividade chinesa mexe com minério e Vale.",
+      "tipo": "producao-industrial-china",
       "surpresa": null
     },
     {
