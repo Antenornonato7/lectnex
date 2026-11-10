@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T17:08-03:00",
+  "atualizado_em": "2026-11-10T17:38-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     171330.0
+     171264.0
+    ],
+    [
+     "16:55",
+     171345.0
+    ],
+    [
+     "17:00",
+     171405.0
     ]
    ]
   },
@@ -732,11 +740,35 @@
     ],
     [
      "17:05",
-     5.5831
+     5.5853
     ],
     [
-     "17:07",
+     "17:10",
      5.5853
+    ],
+    [
+     "17:15",
+     5.5838
+    ],
+    [
+     "17:20",
+     5.5799
+    ],
+    [
+     "17:25",
+     5.5838
+    ],
+    [
+     "17:30",
+     5.5823
+    ],
+    [
+     "17:35",
+     5.5808
+    ],
+    [
+     "17:38",
+     5.5823
     ]
    ]
   },
@@ -1610,7 +1642,7 @@
     "tickers": [
      "WEGE3"
     ],
-    "ibov30": 0.06,
+    "ibov30": 0.02,
     "dolar30": 0.0
    },
    {
@@ -1624,7 +1656,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.1,
+    "ibov30": 0.07,
     "dolar30": -0.01
    },
    {
@@ -1640,7 +1672,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": -0.01
    },
    {
@@ -1654,7 +1686,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.07,
     "dolar30": 0.02
    },
    {
@@ -1670,7 +1702,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.06
    },
    {
     "hora": "16:57",
@@ -1686,111 +1718,126 @@
      "KLBN11"
     ],
     "ibov30": null,
+    "dolar30": 0.01
+   },
+   {
+    "hora": "17:01",
+    "titulo": "Petrobras nega pedido para ANP adiar revisão tarifária do gás",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbHVnSnlub1lHVmFXRHdONkxPQXNDWE5yUjg2X2VuSFI3b1AwMC1ISnpjVG5kN1JpZXprTjZqUFRXYWluZ1AzYUNwU09TRDlQSVM0NFNQMlhFbmhxZjhSazhYU1pQV1FwWWh5YXVITV9JWVVIWkxMYmRxUlliNmxYTWJ6Q2F1WFhyLUY2cGltREVoUU92emRUb3lMaGE2c2sxdUHSAacBQVVfeXFMT2lBNXlBdV85QUFfcWd6cVc5UnZfdXR2QVBsVTR5SVBXYzU3Y2FCRzBxYllsZUlPNmpqTDc3WlV2cFRZV3JSRlljUGhYUUQ1cFk5ckxKV2VtcU82UDdZNEFGaC1FSlcxT0Y4NWZPa0V0MTVPNEVsZl9FUFFaVXR1OFN5dGhmVW1WcmV3cDRVdGc1WGhxWjNzcWN0Vy1YVF9lZnNqT25VbjA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": -0.04
+   },
+   {
+    "hora": "17:02",
+    "titulo": "GE Vernova sellers have it all wrong — plus, why Fed rate hike odds are soaring",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/investingclub/2026/11/10/ge-vernova-sellers-have-it-all-wrong-plus-why-fed-rate-hike-odds-are-soaring.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.04
+   },
+   {
+    "hora": "17:04",
+    "titulo": "Ouro fecha em queda após CPI nos EUA reforçar posição mais dura do Fed",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZklsVHJYaG9FR1lPMUZrYkJDNHZaYVJfdnN4cm1YUU45NHVRdWJsYmY4VkJ3M0JCaGN6Yzd6bGwtUEdGOURUQUliNXl1a0YxLTZFUF9YajZKVjhCeEo3emJDbU9IRW5mSktVVVUwbzdnS3hzSlhTcXdSUTQ1UVIyZC1GNmZpc3N4c1NsR1V5WkRacU94TExnNlNkcDZLcjgtbVlKeTk4S2hhdw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.04
+   },
+   {
+    "hora": "17:07",
+    "titulo": "Galípolo diz que nível dos juros de longo prazo também reflete credibilidade",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2dmMUp0RTBCSWVZQUt6N1MxY2cyeElway1KNkpYS3BhYUtMbm1SekVpSDc5UmJzVGl6X0Y5Vi1sTVBQa0ZZWlFpb29qZGhFLWFKaUZweTNzOVdBdWlGbTFJU21nUDlKVjVFTkxhay0yWXY5ZzB2RkVtTk1YS2Y3UElmQmRtN3duZktRb3dXQ3dlVFp3bk1vUjJabm16YjVVUjFFVm95cWJKYVVfcWt6T0hZdmF2UdIBuwFBVV95cUxQelJFbFppNU15Q1ZHNVo1TWM0cjRWcVJlTExzcHpjWnNCa3lVSjloZVZvelNEMTZkQ0RZN3NHS1N5Rm9uVHpsZENNTVczTlJlSUdnRzZoUy1xbU9hVHhfT2pSQXFCbTBnZU82SkoxVUQwWk5NekppXzFxYUNNT1BDM1h4XzlyLXZwVUZtcldCbWpjR3lFQTNvQk5CSjJpcHRJX1VhS3JkcjMyajA3Z18xcmVaVjlxNURJYU5Z?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.08
+   },
+   {
+    "hora": "17:16",
+    "titulo": "Membro do Fed pede mais duas altas de juros de 0,25",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOT285RFBGc0llQzhZSkJQUkg4ZUIwRWJvcFlZOWNLUFVqcWhsa001TFNJbXVkOUk2a1FKM3Y1Q0xZSml5ejBwakVxUF9FU0Zod0NFeWYyX1ZJN1hNT3poY0JhNC10VDRCeTdqRUtMNFBsYWpMeThYZ1NBZUJEMnF6bmVhLWE1MzFaRXJMWHJ0WW41TVhxTFlMc0hBOGM3UDJVc1JOTXN5bHJkTjZ3LUE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:20",
+    "titulo": "Taxas dos DIs sobem após ata do Copom e exterior negativo",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdVRQQVVBVjRweW1NaVpxUEFodDV2aDFydlItZnBqdGlJcndGemIxRUszY3ZwRVk5eGlhTWp0bE9fMy1OdXJ2cnZQVGhYYV9iZTYxMjBRYkJacEZyaXNlOUZwOGN6M3NWRTN5cC1aeWwxNmZ0b1hqaDNuWWtfQTVOYnlFaVdsR0FMaG9ib2lZMW9lU3gtS2g3cWsxX0vSAaIBQVVfeXFMTmFBbTVwcTR1dEdUb2tldkRWZl9LclFtSkI0ZkVNVnFSeGxZYlp1UU4tZDdTczlZMXR5VG1PTjVZUFpZdDlTN0RnTE0zM3J4WUFNMXhEdXR5NlhIYWZ6bWZ1U3ZSZVVKU0Z0SDZCM0szREdqWTdNQTdEQTZzNGVNSHoyZGRtcHhNQllZRkRwOTE2WHJ0N0prM3NJalFXaUZycXhR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:29",
+    "titulo": "Dólar à vista vai ao maior patamar desde julho de 2025 com misto de risco local e externo",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQUVqTkxOMTdpNEhzYXQ3Tnc2ZkktdjVIVEx5VnNEX3NLa1BBVF9URG84bmxFalJyMEFNTkdpNzg5NFV5Y0RtUDJXbTc0NlpNX3NiYk5Ib2s2QzhkUTk5MnhYd09WVU5HWHlxR0ZlcFk3TlRRdm9jRXd3TS1kOXRtVElfVDdZYmlTNG11V0FDVzcwWTRKZk5GWU80cDFObGFMU2ZCUHN3ZExuUVRWS1NmbURvMmMyVVZhdzYwN2hXR0lDYjVOajVNcDFMajZTVTFpODVDWDk0SkdnbjlPRkZ1YtIB7wFBVV95cUxONWFCci1ISDQ5VlMzQ1FacTJfT3JYdHZIR3lZem8xTzNXWFJGV0RtaDhjVjhrN0xVOHczRV93eWIzSXRzMVg2d2JzYkV3UzhDbEtzRnNiX3FIYjFFbG1wQzR2dmlsZU00VFFjZkhVVGVFc3FiczdoVlBtUkgxUHozc0oyVFUyTHEwVnJnM0ZvUU9JVmlQYkJ1Zk8wanU3SFhQb0FSRnBxYTlFd3JCMnUyUjIzNmwxcWVueHJxTUZHbWlzUFYxMF93WXlnUk16R18tMzBfY2xNLTlMUnowdy16NzIta2doYXFBQS1xV3JDRQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:30",
+    "titulo": "Embraer avança no resultado operacional e revisa projeção de receita para o ano",
+    "fonte": "Bloomberg Línea",
+    "url": "https://www.bloomberglinea.com.br/negocios/embraer-avanca-no-resultado-operacional-e-revisa-projecao-de-receita-para-o-ano/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "EMBR3"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ata do Copom reforça “cenário desafiador” para política monetária",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPM3BQRnBlSGtPYm5fTFhNb0c1aW5yaGI4M0xKQkVVT2VlT01wbE5ITGRRWldBNjVqLUFjTXFiV1c4RkJFOW1maVB6TFhuZUZWaHZmT29nRUM0SURPWGFwd1BoTkEzeDNYTnR4dFBDaTg4djNwa2hSQmRFUTUzLWRZMmZNRHY0ZVRPZ1pXYWhKUDBxRmltLUVWa2pNNDJRaF9hNzFkb9IBqgFBVV95cUxNRTllb0ZXZWNRSlQ4Ni1vUG9uc2J0eVhTU1JsOF8xS01IQmJucW8xVWhOVXZuMmdzQWRhZHpHNzNLZXh2bElXTEZlVUF2a0hibkhqeS16MHB3TVJIeUdEbEI2dEFZbUdlbHRDSnRvMXliZmhzSFJtX2V1djRHdTAzeDQyWDhDSVBSU2ZnWC1wNElKNjh5Q0dia0FnenJNaGdXMHZjUm9adUdRdw?oc=5",
-   "publicado": "2026-11-10T08:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ata do Copom: BC vê economia perder força, mas diz que inflação exige juros altos por mais tempo",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNN2Z0cDQtNm1yZ0I1QVpnUDRzdnlKQVlheC14LXpFTnBSZmdZR2RIRi1qa1BQNkRZZlRNc0ZmU0NoZDFmbzRzaUZmRURTZWFEWU5CRzdZM1RkQlhMNEhPeFV1OE5GY183eG9OYi1zQjVGaElhRS1GVTVmVkxoUXdLMVNlRWdVU0VOZUJCd2lZOXYtRE02U2pWSEYxRmlUWWZ1V0lnaE8zanhFYlB4UV82bmJFZ0FHTE1WUlhzaXNYc2JyOVJBbkE2eWR3?oc=5",
-   "publicado": "2026-11-10T08:20-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa hoje: após salto de 2,2%, índice enfrenta dado de inflação nos EUA e ata do Copom",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
-   "publicado": "2026-11-10T08:23-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Banco Central passa a divulgar lista de empresas aptas a operar com criptomoedas",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbkRmYThpZkp2TWdaN1V4Z1FTYnZiRzFyeFlvRUs0MzkwN3EtOXhQRi1mWW93Q3dVa05feFItV0ZFUTFqVzJTTlhqUTFhUE1JQ2RRWFZpVl9mRDRnU21KUFVVN3UyWkk2R0JpazZxemgweFBtQVljNWVQcXhqaUFMcmliRzRicUVLek5mdzRkMWpaQjJ4eUpMSWJSOURuQnh0UUxkRXllTkc4VnowSjdFWXFVUDNmVTQ?oc=5",
-   "publicado": "2026-11-10T08:27-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Vale: Itaú BBA rebaixa VALE3 vendo menor potencial com pressão de fretes e margens",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM2FZWm5KeDNNUThQNlhXMkFadHF3VlF3am91cVFic1hfSkc5b3RjMkdYYkhvN0ZTZmY2bHZVeGZpWkpLdDV3emwwRGRTNlU4dk81U3ZvSFBucDJDdFcxLWpPWUNFaUMwQUo2OEllTTVnWE13bW0ydFppYnhOOHlGa0tqNXZIS1ZPclpES09EcjZoTWttU2duTl9MZmtzSTVHaXRWTDdxUmxuODRZMHI4VHhzcVRjUDVxZFNqTtIBwgFBVV95cUxNcGJPOGtHYWZvbk9CLWM0ZGxNQVU5MlJ4UUZCaWFfWW9oMjA4S3VrTHJKTDMtSmRLMVhWZldGYTdLSWlmbDRCYmpua3h6LVlycVpheEJ0MEZuV3hMUWplc0xhT2VJVTc4SDhDUEJwaXVTbXgySzVod01xaUMxRXFiZElYVTB1MEM2QTZiaGtod0dHUV9iRzR3MHdvWW80Mm9YSC14M1dEUzBGZzlKOXAyVXFERGwxdzVhZEJzRXJ5RmQ5Zw?oc=5",
-   "publicado": "2026-11-10T08:28-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4",
-    "VALE3"
-   ]
-  },
-  {
-   "titulo": "Fim da 6x1, El Niño e petróleo: Copom alerta para pressões inflacionárias",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORkN1dnJlWjkzb090LXM4UU9hazdLQW9mVXVPTHpEOUQtWUlMRGtPQWlFRUs3Qjh5WWdHYkdMU0JpUlFaMDN2SGtza1M2T3RjSHFmVWdEN2VaTHFOSkJHOG5HOHdndlJHYlhuZC1scFFjU3YwVDRqYzNtNXRwbTFseFNRTXpHSjU5UTQ5MDhHYVAyVFV0NEcwb3VHTDZ2cEZzV0FtLVotUFFWQWFXekduUC1jOWJFUS1NYVZHUDV2LVcxdGY5X29WbnVR?oc=5",
-   "publicado": "2026-11-10T08:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ata do Copom mostra expectativa de inflação mais alta com guerra, El Niño, fim da 6x1 e disparada do dólar",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-copom-mostra-expectativa-de-inflacao-mais-alta-com-guerra-el-nino-fim-da-6x1-e-disparada-do-dolar.shtml",
-   "publicado": "2026-11-10T08:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Anthropic sets price range of $70 to $78 in upcoming IPO as AI lab marches towards Nasdaq",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
-   "publicado": "2026-11-10T08:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ambiente de expectativas desancoradas requer juros altos por mais tempo, diz ata do Copom",
    "fonte": "Valor",
@@ -2695,6 +2742,105 @@
     "ITUB4",
     "KLBN11"
    ]
+  },
+  {
+   "titulo": "Petrobras nega pedido para ANP adiar revisão tarifária do gás",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbHVnSnlub1lHVmFXRHdONkxPQXNDWE5yUjg2X2VuSFI3b1AwMC1ISnpjVG5kN1JpZXprTjZqUFRXYWluZ1AzYUNwU09TRDlQSVM0NFNQMlhFbmhxZjhSazhYU1pQV1FwWWh5YXVITV9JWVVIWkxMYmRxUlliNmxYTWJ6Q2F1WFhyLUY2cGltREVoUU92emRUb3lMaGE2c2sxdUHSAacBQVVfeXFMT2lBNXlBdV85QUFfcWd6cVc5UnZfdXR2QVBsVTR5SVBXYzU3Y2FCRzBxYllsZUlPNmpqTDc3WlV2cFRZV3JSRlljUGhYUUQ1cFk5ckxKV2VtcU82UDdZNEFGaC1FSlcxT0Y4NWZPa0V0MTVPNEVsZl9FUFFaVXR1OFN5dGhmVW1WcmV3cDRVdGc1WGhxWjNzcWN0Vy1YVF9lZnNqT25VbjA?oc=5",
+   "publicado": "2026-11-10T17:01-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "GE Vernova sellers have it all wrong — plus, why Fed rate hike odds are soaring",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/10/ge-vernova-sellers-have-it-all-wrong-plus-why-fed-rate-hike-odds-are-soaring.html",
+   "publicado": "2026-11-10T17:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ouro fecha em queda após CPI nos EUA reforçar posição mais dura do Fed",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZklsVHJYaG9FR1lPMUZrYkJDNHZaYVJfdnN4cm1YUU45NHVRdWJsYmY4VkJ3M0JCaGN6Yzd6bGwtUEdGOURUQUliNXl1a0YxLTZFUF9YajZKVjhCeEo3emJDbU9IRW5mSktVVVUwbzdnS3hzSlhTcXdSUTQ1UVIyZC1GNmZpc3N4c1NsR1V5WkRacU94TExnNlNkcDZLcjgtbVlKeTk4S2hhdw?oc=5",
+   "publicado": "2026-11-10T17:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Galípolo diz que nível dos juros de longo prazo também reflete credibilidade",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2dmMUp0RTBCSWVZQUt6N1MxY2cyeElway1KNkpYS3BhYUtMbm1SekVpSDc5UmJzVGl6X0Y5Vi1sTVBQa0ZZWlFpb29qZGhFLWFKaUZweTNzOVdBdWlGbTFJU21nUDlKVjVFTkxhay0yWXY5ZzB2RkVtTk1YS2Y3UElmQmRtN3duZktRb3dXQ3dlVFp3bk1vUjJabm16YjVVUjFFVm95cWJKYVVfcWt6T0hZdmF2UdIBuwFBVV95cUxQelJFbFppNU15Q1ZHNVo1TWM0cjRWcVJlTExzcHpjWnNCa3lVSjloZVZvelNEMTZkQ0RZN3NHS1N5Rm9uVHpsZENNTVczTlJlSUdnRzZoUy1xbU9hVHhfT2pSQXFCbTBnZU82SkoxVUQwWk5NekppXzFxYUNNT1BDM1h4XzlyLXZwVUZtcldCbWpjR3lFQTNvQk5CSjJpcHRJX1VhS3JkcjMyajA3Z18xcmVaVjlxNURJYU5Z?oc=5",
+   "publicado": "2026-11-10T17:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Membro do Fed pede mais duas altas de juros de 0,25",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOT285RFBGc0llQzhZSkJQUkg4ZUIwRWJvcFlZOWNLUFVqcWhsa001TFNJbXVkOUk2a1FKM3Y1Q0xZSml5ejBwakVxUF9FU0Zod0NFeWYyX1ZJN1hNT3poY0JhNC10VDRCeTdqRUtMNFBsYWpMeThYZ1NBZUJEMnF6bmVhLWE1MzFaRXJMWHJ0WW41TVhxTFlMc0hBOGM3UDJVc1JOTXN5bHJkTjZ3LUE?oc=5",
+   "publicado": "2026-11-10T17:16-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas dos DIs sobem após ata do Copom e exterior negativo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdVRQQVVBVjRweW1NaVpxUEFodDV2aDFydlItZnBqdGlJcndGemIxRUszY3ZwRVk5eGlhTWp0bE9fMy1OdXJ2cnZQVGhYYV9iZTYxMjBRYkJacEZyaXNlOUZwOGN6M3NWRTN5cC1aeWwxNmZ0b1hqaDNuWWtfQTVOYnlFaVdsR0FMaG9ib2lZMW9lU3gtS2g3cWsxX0vSAaIBQVVfeXFMTmFBbTVwcTR1dEdUb2tldkRWZl9LclFtSkI0ZkVNVnFSeGxZYlp1UU4tZDdTczlZMXR5VG1PTjVZUFpZdDlTN0RnTE0zM3J4WUFNMXhEdXR5NlhIYWZ6bWZ1U3ZSZVVKU0Z0SDZCM0szREdqWTdNQTdEQTZzNGVNSHoyZGRtcHhNQllZRkRwOTE2WHJ0N0prM3NJalFXaUZycXhR?oc=5",
+   "publicado": "2026-11-10T17:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar à vista vai ao maior patamar desde julho de 2025 com misto de risco local e externo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQUVqTkxOMTdpNEhzYXQ3Tnc2ZkktdjVIVEx5VnNEX3NLa1BBVF9URG84bmxFalJyMEFNTkdpNzg5NFV5Y0RtUDJXbTc0NlpNX3NiYk5Ib2s2QzhkUTk5MnhYd09WVU5HWHlxR0ZlcFk3TlRRdm9jRXd3TS1kOXRtVElfVDdZYmlTNG11V0FDVzcwWTRKZk5GWU80cDFObGFMU2ZCUHN3ZExuUVRWS1NmbURvMmMyVVZhdzYwN2hXR0lDYjVOajVNcDFMajZTVTFpODVDWDk0SkdnbjlPRkZ1YtIB7wFBVV95cUxONWFCci1ISDQ5VlMzQ1FacTJfT3JYdHZIR3lZem8xTzNXWFJGV0RtaDhjVjhrN0xVOHczRV93eWIzSXRzMVg2d2JzYkV3UzhDbEtzRnNiX3FIYjFFbG1wQzR2dmlsZU00VFFjZkhVVGVFc3FiczdoVlBtUkgxUHozc0oyVFUyTHEwVnJnM0ZvUU9JVmlQYkJ1Zk8wanU3SFhQb0FSRnBxYTlFd3JCMnUyUjIzNmwxcWVueHJxTUZHbWlzUFYxMF93WXlnUk16R18tMzBfY2xNLTlMUnowdy16NzIta2doYXFBQS1xV3JDRQ?oc=5",
+   "publicado": "2026-11-10T17:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Embraer avança no resultado operacional e revisa projeção de receita para o ano",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/embraer-avanca-no-resultado-operacional-e-revisa-projecao-de-receita-para-o-ano/",
+   "publicado": "2026-11-10T17:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
   }
  ],
  "enviadas": [
@@ -2724,7 +2870,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T17:08-03:00",
+ "atualizado_em": "2026-11-10T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2732,11 +2878,125 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Folha"
+  "Folha",
+  "InfoMoney",
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
-   "titulo": "Itaú investe R$ 1,2 bilhão e vira sócio da Klabin em mais um empreendimento florestal",
+   "titulo": "GE Vernova sellers have it all wrong — plus, why Fed rate hike odds are soaring",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/10/ge-vernova-sellers-have-it-all-wrong-plus-why-fed-rate-hike-odds-are-soaring.html",
+   "publicado": "2026-11-10T17:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Embraer avança no resultado operacional e revisa projeção de receita para o ano",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/embraer-avanca-no-resultado-operacional-e-revisa-projecao-de-receita-para-o-ano/",
+   "publicado": "2026-11-10T17:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
+   "titulo": "Dólar à vista vai ao maior patamar desde julho de 2025 com misto de risco local e externo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQUVqTkxOMTdpNEhzYXQ3Tnc2ZkktdjVIVEx5VnNEX3NLa1BBVF9URG84bmxFalJyMEFNTkdpNzg5NFV5Y0RtUDJXbTc0NlpNX3NiYk5Ib2s2QzhkUTk5MnhYd09WVU5HWHlxR0ZlcFk3TlRRdm9jRXd3TS1kOXRtVElfVDdZYmlTNG11V0FDVzcwWTRKZk5GWU80cDFObGFMU2ZCUHN3ZExuUVRWS1NmbURvMmMyVVZhdzYwN2hXR0lDYjVOajVNcDFMajZTVTFpODVDWDk0SkdnbjlPRkZ1YtIB7wFBVV95cUxONWFCci1ISDQ5VlMzQ1FacTJfT3JYdHZIR3lZem8xTzNXWFJGV0RtaDhjVjhrN0xVOHczRV93eWIzSXRzMVg2d2JzYkV3UzhDbEtzRnNiX3FIYjFFbG1wQzR2dmlsZU00VFFjZkhVVGVFc3FiczdoVlBtUkgxUHozc0oyVFUyTHEwVnJnM0ZvUU9JVmlQYkJ1Zk8wanU3SFhQb0FSRnBxYTlFd3JCMnUyUjIzNmwxcWVueHJxTUZHbWlzUFYxMF93WXlnUk16R18tMzBfY2xNLTlMUnowdy16NzIta2doYXFBQS1xV3JDRQ?oc=5",
+   "publicado": "2026-11-10T17:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas dos DIs sobem após ata do Copom e exterior negativo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdVRQQVVBVjRweW1NaVpxUEFodDV2aDFydlItZnBqdGlJcndGemIxRUszY3ZwRVk5eGlhTWp0bE9fMy1OdXJ2cnZQVGhYYV9iZTYxMjBRYkJacEZyaXNlOUZwOGN6M3NWRTN5cC1aeWwxNmZ0b1hqaDNuWWtfQTVOYnlFaVdsR0FMaG9ib2lZMW9lU3gtS2g3cWsxX0vSAaIBQVVfeXFMTmFBbTVwcTR1dEdUb2tldkRWZl9LclFtSkI0ZkVNVnFSeGxZYlp1UU4tZDdTczlZMXR5VG1PTjVZUFpZdDlTN0RnTE0zM3J4WUFNMXhEdXR5NlhIYWZ6bWZ1U3ZSZVVKU0Z0SDZCM0szREdqWTdNQTdEQTZzNGVNSHoyZGRtcHhNQllZRkRwOTE2WHJ0N0prM3NJalFXaUZycXhR?oc=5",
+   "publicado": "2026-11-10T17:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Membro do Fed pede mais duas altas de juros de 0,25",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOT285RFBGc0llQzhZSkJQUkg4ZUIwRWJvcFlZOWNLUFVqcWhsa001TFNJbXVkOUk2a1FKM3Y1Q0xZSml5ejBwakVxUF9FU0Zod0NFeWYyX1ZJN1hNT3poY0JhNC10VDRCeTdqRUtMNFBsYWpMeThYZ1NBZUJEMnF6bmVhLWE1MzFaRXJMWHJ0WW41TVhxTFlMc0hBOGM3UDJVc1JOTXN5bHJkTjZ3LUE?oc=5",
+   "publicado": "2026-11-10T17:16-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas do Tesouro Direto hoje sobem com ata mais dura do Copom; Prefixado 2032 vai a 15,15%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
+   "publicado": "2026-11-10T17:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Galípolo diz que nível dos juros de longo prazo também reflete credibilidade",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2dmMUp0RTBCSWVZQUt6N1MxY2cyeElway1KNkpYS3BhYUtMbm1SekVpSDc5UmJzVGl6X0Y5Vi1sTVBQa0ZZWlFpb29qZGhFLWFKaUZweTNzOVdBdWlGbTFJU21nUDlKVjVFTkxhay0yWXY5ZzB2RkVtTk1YS2Y3UElmQmRtN3duZktRb3dXQ3dlVFp3bk1vUjJabm16YjVVUjFFVm95cWJKYVVfcWt6T0hZdmF2UdIBuwFBVV95cUxQelJFbFppNU15Q1ZHNVo1TWM0cjRWcVJlTExzcHpjWnNCa3lVSjloZVZvelNEMTZkQ0RZN3NHS1N5Rm9uVHpsZENNTVczTlJlSUdnRzZoUy1xbU9hVHhfT2pSQXFCbTBnZU82SkoxVUQwWk5NekppXzFxYUNNT1BDM1h4XzlyLXZwVUZtcldCbWpjR3lFQTNvQk5CSjJpcHRJX1VhS3JkcjMyajA3Z18xcmVaVjlxNURJYU5Z?oc=5",
+   "publicado": "2026-11-10T17:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ouro fecha em queda após CPI nos EUA reforçar posição mais dura do Fed",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZklsVHJYaG9FR1lPMUZrYkJDNHZaYVJfdnN4cm1YUU45NHVRdWJsYmY4VkJ3M0JCaGN6Yzd6bGwtUEdGOURUQUliNXl1a0YxLTZFUF9YajZKVjhCeEo3emJDbU9IRW5mSktVVVUwbzdnS3hzSlhTcXdSUTQ1UVIyZC1GNmZpc3N4c1NsR1V5WkRacU94TExnNlNkcDZLcjgtbVlKeTk4S2hhdw?oc=5",
+   "publicado": "2026-11-10T17:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras nega pedido para ANP adiar revisão tarifária do gás",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbHVnSnlub1lHVmFXRHdONkxPQXNDWE5yUjg2X2VuSFI3b1AwMC1ISnpjVG5kN1JpZXprTjZqUFRXYWluZ1AzYUNwU09TRDlQSVM0NFNQMlhFbmhxZjhSazhYU1pQV1FwWWh5YXVITV9JWVVIWkxMYmRxUlliNmxYTWJ6Q2F1WFhyLUY2cGltREVoUU92emRUb3lMaGE2c2sxdUHSAacBQVVfeXFMT2lBNXlBdV85QUFfcWd6cVc5UnZfdXR2QVBsVTR5SVBXYzU3Y2FCRzBxYllsZUlPNmpqTDc3WlV2cFRZV3JSRlljUGhYUUQ1cFk5ckxKV2VtcU82UDdZNEFGaC1FSlcxT0Y4NWZPa0V0MTVPNEVsZl9FUFFaVXR1OFN5dGhmVW1WcmV3cDRVdGc1WGhxWjNzcWN0Vy1YVF9lZnNqT25VbjA?oc=5",
+   "publicado": "2026-11-10T17:01-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Itaú investe R$ 1,2 bilhão e vira sócio da Klabin em empreendimento florestal",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/itau-investe-r-12-bilhao-e-vira-socio-da-klabin-em-mais-um-empreendimento-florestal.shtml",
    "publicado": "2026-11-10T16:57-03:00",
@@ -2821,78 +3081,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "WEG e FPT fazem parceria para motor elétrico com gerador a bordo de caminhão e ônibus",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/weg-e-fpt-fazem-parceria-para-motor-eletrico-com-gerador-a-bordo-de-caminhao-e-onibus.shtml",
-   "publicado": "2026-11-10T16:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "WEGE3"
-   ]
-  },
-  {
-   "titulo": "Piora das expectativas econômicas explica alta do dólar, diz especialista",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMTktVEcxZktyazJaMU1POWIxTU56Y3RyZWt0SW11UHFCYjAzUUxWQ3dWMFFvR0RZMUczRkFMXzVtRHNXSmY5aFpYWmxMRzhnZGxUMHowMzhHUmJuczlFUUZWd2ZWSWdpTklCWlNkak15YkRkZXRyZnRZOXJuUUxPeUVrYzFqXzhydnhkN2cxa2JnaW1uLV9nQTVlMC1PTGR6WnBwSWxFQmZfaTUtcElZa3lQSTZ4SVRHRjdKQ1RKd01PSVBEUGVNYy1RRQ?oc=5",
-   "publicado": "2026-11-10T15:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
-   "publicado": "2026-11-10T15:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Copom, IPCA e pronunciamento de Lula dividem agenda da semana com nova rodada de inflação nos EUA",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPQXRFZXYzZ3dsZVZMYkgxbmhia0JIbEZsc2plakhyMmtxdzFmY1dtZjB4dzhXWjhsbko5aHN1QlVTcjRUVmwzemJvLUpWZ2tkSXdpc2szd25TMGNvczlSUWNxQlNocXpHMlNtN0ZvXzMtSE1JcmJjODJ2d245ZmlIV1ZlTzVfZ3FXbUkyc3BXT0tqYmJWRXg5ejJnVEtUWnJSZUQwS2lGMWptWndSZkRKdjY4TDREcG9maFg5bWw2YU5tUEprZmtzWF8zODI5NUotOTl5QVdqWVlILV9kdzdLQlBjOVZ3ZWo1bk8tNy0wem5qaDYzblE?oc=5",
-   "publicado": "2026-11-10T15:18-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Credit card debt climbs to a record $1.29 trillion, New York Fed research finds",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/credit-card-debt-record.html",
-   "publicado": "2026-11-10T15:08-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T14:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
