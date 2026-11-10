@@ -1,0 +1,151 @@
+{
+ "tipo": "pregao",
+ "data": "2026-11-10",
+ "gerado_em": "2026-11-10T07:50:00-03:00",
+ "titulo": "Ata do Copom às 8h e CPI às 10h30; petróleo abaixo de US$ 91",
+ "resumo": [
+  "No último pregão (segunda, 9), o Ibovespa subiu 2,22%, a 172.236,05 pontos, puxado por Vale e bancos, e o dólar à vista caiu 0,06%, a R$ 5,506; os DIs longos recuaram cerca de 0,15 p.p., mas a falta de medidas fiscais concretas segue limitando o alívio.",
+  "A ata do Copom sai às 8h e detalha a pausa da Selic em 13,75%: o tom sobre expectativas desancoradas e o fiscal mexe direto nos vértices curtos do DI e no WDO logo antes da abertura.",
+  "O CPI de outubro nos EUA (10h30) tem consenso de +0,3% m/m (núcleo +0,2%), depois de +0,6% em setembro; nas últimas quatro divulgações, nos 30 a 60 minutos seguintes o WIN variou entre −0,33% e +0,65% e o dólar recuou em todas.",
+  "O Brent cai 2,3%, a US$ 90,44, depois de Trump sinalizar que deve segurar novos ataques ao Irã — pesa em Petrobras, que divulga o balanço do 3º trimestre à noite, e tira suporte do real.",
+  "Na China, as exportações subiram 35,2% a/a em outubro (consenso Reuters de 33,5%) e as importações 41,6%, sinal de demanda firme por commodities que ajuda Vale."
+ ],
+ "termometro": {
+  "win": {
+   "leitura": "bearish",
+   "motivo": "Brent −2,3% (Petrobras) e EWZ só +0,09% depois de alta de 2,22% ontem, com o sinal quantitativo bearish; o contrapeso é a China forte para Vale e o CPI às 10h30, que pode inverter o dia."
+  },
+  "wdo": {
+   "leitura": "bullish",
+   "motivo": "Apesar do sinal quantitativo neutro, petróleo −2,3% tira suporte do real, a chance de alta do Fed em dezembro subiu a 82% e o fiscal segue sem medidas; IFR do dólar perto de sobrecompra (68,75) e CPI às 10h30 são o risco."
+  }
+ },
+ "destaques": [
+  {
+   "hora": "8h",
+   "evento": "Ata do Copom (BCB)",
+   "por_que": "Detalha a pausa da Selic em 13,75% e o balanço de riscos; tom duro tende a pressionar os vértices curtos do DI."
+  },
+  {
+   "hora": "10h30",
+   "evento": "CPI de outubro (EUA)",
+   "por_que": "Consenso de +0,3% m/m e núcleo +0,2%; nas 4 últimas divulgações (3 em linha e 1 abaixo do consenso), o WIN variou de −0,33% a +0,65% e o WDO caiu de −0,06% a −1,17% logo após o dado."
+  },
+  {
+   "hora": "14h30",
+   "evento": "Galípolo (BC) em evento da Abracam",
+   "por_que": "Primeira fala do presidente do BC depois da ata; sinal sobre os próximos passos da Selic mexe no DI e no câmbio."
+  },
+  {
+   "hora": "noite",
+   "evento": "Balanço da Petrobras (3º tri)",
+   "por_que": "Maior peso do Ibovespa ao lado de Vale; resultado e dividendos repercutem no WIN amanhã."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 fut.",
+   "variacao": "+0,14%"
+  },
+  {
+   "ativo": "Dow Jones fut.",
+   "variacao": "+0,39%"
+  },
+  {
+   "ativo": "Nasdaq fut.",
+   "variacao": "−0,08%"
+  },
+  {
+   "ativo": "EWZ (pré-mercado)",
+   "variacao": "+0,09%"
+  },
+  {
+   "ativo": "Treasury 10 anos",
+   "variacao": "+0,5 bp (4,86%)"
+  },
+  {
+   "ativo": "Petróleo Brent",
+   "variacao": "−2,30% (US$ 90,44)"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Exportações da China sobem 35,2% em outubro, acima do esperado; importações saltam 41,6%",
+   "fonte": "Reuters (via Investing.com)",
+   "hora": "seg 23h46",
+   "url": "https://www.investing.com/news/economy-news/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-5013969",
+   "por_que": "Exportações acima do consenso de 33,5% e importações bem acima dos 32% esperados indicam demanda firme por matérias-primas, o que ajuda minério, Vale e o real.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa"
+   }
+  },
+  {
+   "titulo": "Petróleo despenca depois de Trump dizer que dificilmente ordenará novos ataques ao Irã",
+   "fonte": "InfoMoney",
+   "hora": "seg 10h34",
+   "url": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-09112026/",
+   "por_que": "O Brent já acumulava queda de 16% na semana anterior e hoje recua mais 2,3%, a US$ 90,44; petróleo mais barato pesa em Petrobras e PRIO e tira suporte do real, mas alivia a inflação.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta",
+    "di": "baixa"
+   }
+  },
+  {
+   "titulo": "Futuros de NY mistos antes do CPI; Waller diz se inclinar por alta de juros em dezembro",
+   "fonte": "Yahoo Finance",
+   "hora": "07h00",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
+   "por_que": "Segundo o Yahoo Finance, Waller (Fed) consideraria até 0,50 p.p. se a inflação de outubro vier forte; juros americanos mais altos fortalecem o dólar global e pressionam o DI.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Petrobras divulga balanço do 3º trimestre nesta terça à noite",
+   "fonte": "InfoMoney",
+   "hora": "07h10",
+   "url": "https://www.infomoney.com.br/mercados/petrobras-petr4-divulga-balanco-nesta-terca-o-que-esperar-do-3o-tri/",
+   "por_que": "Produção recorde de 3,097 milhões de boed no trimestre, mas há dúvida sobre o tamanho dos dividendos; segundo o BTG, a política de preços exigiria reajuste de cerca de 28% no diesel, risco para a inflação.",
+   "impacto": {}
+  },
+  {
+   "titulo": "Ibovespa sobe 2,22% e recupera 172 mil pontos com exterior; dólar fecha a R$ 5,50",
+   "fonte": "CNN Brasil",
+   "hora": "seg 18h20",
+   "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-9-novembro-2026/",
+   "por_que": "A alta veio de ajuste de posições em Vale e bancos e de Wall Street forte; analistas citam a indefinição fiscal e a piora das expectativas de inflação como limite para a recuperação.",
+   "impacto": {
+    "win": "alta"
+   }
+  }
+ ],
+ "fontes": [
+  {
+   "titulo": "InfoMoney — Ibovespa fecha em alta, com exterior e Vale; dólar tem leve queda a R$ 5,50",
+   "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-09112026/"
+  },
+  {
+   "titulo": "InfoMoney — Mini-índice (WINZ26): inflação dos EUA pode mexer com juros e Bolsa",
+   "url": "https://www.infomoney.com.br/mercados/mini-indice-hoje-futuro-ibovespa-winz26-10112026/"
+  },
+  {
+   "titulo": "InfoMoney — Minidólar (WDOZ26): CPI dos EUA e ata do Copom ditam o rumo do dia",
+   "url": "https://www.infomoney.com.br/mercados/minidolar-hoje-futuro-do-dolar-wdoz26-10112026/"
+  },
+  {
+   "titulo": "Money Times — Investidores aguardam ata do Copom em dia de inflação nos EUA",
+   "url": "https://www.moneytimes.com.br/investidores-aguardam-ata-do-copom-em-dia-de-inflacao-nos-eua-ibovespa-em-dolar-sobe-nesta-terca-feira-10-rens/"
+  },
+  {
+   "titulo": "InfoMoney — Ata do Copom, inflação nos EUA, balanço da Petrobras e mais destaques",
+   "url": "https://www.infomoney.com.br/mercados/ata-copom-inflacao-eua-balanco-petrobras-agenda-10112026/"
+  },
+  {
+   "titulo": "Reuters (via Investing.com) — China's trade surplus soars past $1 trillion, October exports jump 35.2%",
+   "url": "https://www.investing.com/news/economy-news/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-5013969"
+  }
+ ]
+}
