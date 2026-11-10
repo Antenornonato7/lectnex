@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T17:25-03:00",
+  "atualizado_em": "2026-11-10T17:28-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171281.0
+     171333.0
     ]
    ]
   },
@@ -756,7 +756,11 @@
     ],
     [
      "17:25",
-     5.5803
+     5.5813
+    ],
+    [
+     "17:28",
+     5.583
     ]
    ]
   },
@@ -1706,7 +1710,7 @@
      "KLBN11"
     ],
     "ibov30": null,
-    "dolar30": -0.05
+    "dolar30": -0.04
    },
    {
     "hora": "17:01",
@@ -1722,7 +1726,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.02
    },
    {
     "hora": "17:02",
@@ -1736,7 +1740,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.02
    },
    {
     "hora": "17:04",
@@ -2817,7 +2821,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T17:25-03:00",
+ "atualizado_em": "2026-11-10T17:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2843,6 +2847,18 @@
    "tickers": []
   },
   {
+   "titulo": "Taxas do Tesouro Direto hoje sobem com ata mais dura do Copom; Prefixado 2032 vai a 15,15%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
+   "publicado": "2026-11-10T17:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Galípolo diz que nível dos juros de longo prazo também reflete credibilidade",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2dmMUp0RTBCSWVZQUt6N1MxY2cyeElway1KNkpYS3BhYUtMbm1SekVpSDc5UmJzVGl6X0Y5Vi1sTVBQa0ZZWlFpb29qZGhFLWFKaUZweTNzOVdBdWlGbTFJU21nUDlKVjVFTkxhay0yWXY5ZzB2RkVtTk1YS2Y3UElmQmRtN3duZktRb3dXQ3dlVFp3bk1vUjJabm16YjVVUjFFVm95cWJKYVVfcWt6T0hZdmF2UdIBuwFBVV95cUxQelJFbFppNU15Q1ZHNVo1TWM0cjRWcVJlTExzcHpjWnNCa3lVSjloZVZvelNEMTZkQ0RZN3NHS1N5Rm9uVHpsZENNTVczTlJlSUdnRzZoUy1xbU9hVHhfT2pSQXFCbTBnZU82SkoxVUQwWk5NekppXzFxYUNNT1BDM1h4XzlyLXZwVUZtcldCbWpjR3lFQTNvQk5CSjJpcHRJX1VhS3JkcjMyajA3Z18xcmVaVjlxNURJYU5Z?oc=5",
@@ -2850,18 +2866,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Taxas do Tesouro Direto hoje sobem com ata mais dura do Copom; Prefixado 2032 vai a 15,15%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQ0tYMXhEeUlnYTdrM0poc2JDdU5rT2VOeTdObkRMby01TmJCNzF6VzhGQS04YXRDOEY5dDJMTHlDQTJ4S1RtS0xBOVdhdkZrdHRZVjVuNDQ5UHc4eHpoaWU3VTZRVHBNazhMQ3BaM0FNZVpwX2Y2bENjbHR0dzF5a1NMZHlmTXB3ZUJMbXoyd21Db25qOHlzbnpJVWlaS05wOE1OQTFqNmxwdktKRG1rVEI1M0J4bmV0Mkd3WlJwT2NIaHlpbXUxdmk4ZTVKbzZ00gHWAUFVX3lxTE8ybnN6ZjFVbmtMTXktX0tYQ0ZWM0g1ektoVW82S3Z3ZnJhbnY0cUdsUjdwQzFmcFk4djB4d0p6ZWQzTGoySENvcU9OZzN2WXNUMGRGTXlTT2s3MWpzd3lYdHIwU0RUa1k5S0cweFVYM3IwWW51WEJTZ1hjSFl0UlpZTkhjTnAtVnhjMXVfZlNCXzlnUVJsSkVjMWhONGY1NFVRT0g3enBlWlN5dDhfVmM4c2JYS3k0ZXF0anBLNWNYTDhjcXR6TThUNHJpNWhSYllyMUNaMVE?oc=5",
-   "publicado": "2026-11-10T17:05-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
