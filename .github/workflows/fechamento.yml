@@ -106,7 +106,7 @@ jobs:
           for f in data/placar-termometro.json data/placar-historico.json data/dias data/manchetes.json manchetes sitemap.xml; do [ -e "$f" ] && git add "$f"; done
           git diff --cached --quiet && exit 0
           git commit -m "placar, dia e arquivo de manchetes: $(TZ=America/Sao_Paulo date +%F)"
-          git pull --rebase -q origin main && git push -q origin HEAD:main
+          ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]
           echo "ok=1" >> "$GITHUB_OUTPUT"
       - name: Avisar buscadores (IndexNow)
         if: ${{ steps.salvar.outputs.ok == '1' && steps.salvar.outputs.paginas != '' }}

@@ -45,7 +45,7 @@ jobs:
             echo "ok=0" >> "$GITHUB_OUTPUT"
           else
             git commit -m "dados: atualização CVM $(date -u +%Y-%m-%d)"
-            git pull --rebase -q origin main && git push -q origin HEAD:main
+            ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]
             echo "ok=1" >> "$GITHUB_OUTPUT"
           fi
 
