@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:35-03:00",
+  "atualizado_em": "2026-11-10T13:38-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -167,7 +167,11 @@
     ],
     [
      "13:20",
-     171372.0
+     171310.0
+    ],
+    [
+     "13:23",
+     171276.0
     ]
    ]
   },
@@ -396,7 +400,11 @@
     ],
     [
      "13:35",
-     5.6078
+     5.6088
+    ],
+    [
+     "13:38",
+     5.6077
     ]
    ]
   },
@@ -995,7 +1003,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.15,
     "dolar30": 0.02
    },
    {
@@ -1028,7 +1036,7 @@
      "ASAI3"
     ],
     "ibov30": null,
-    "dolar30": 0.07
+    "dolar30": 0.09
    },
    {
     "hora": "13:08",
@@ -1042,7 +1050,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.07
+    "dolar30": 0.09
    },
    {
     "hora": "13:18",
@@ -2109,7 +2117,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:35-03:00",
+ "atualizado_em": "2026-11-10T13:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2123,6 +2131,17 @@
  ],
  "noticias": [
   {
+   "titulo": "Here's the inflation breakdown for October 2026 — in one chart",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html",
+   "publicado": "2026-11-10T13:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Vale supera Petrobras em novembro; o jogo virou para as gigantes da Bolsa brasileira?",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeDNyZlhOejhKdElTdG13dlZDeXZHa1MzTXQ0cG1lbWlhUk5LUFROaFZaOXUtVmMzUWlYT0hxTEtyQXVqSllKWHR4dHY2MXZZSzhWSHAyMFFOQ2lqdkNfT3EyNmpmZ0U4Ml9NU2NYRDRSZVV6Vm84cmhQNXhhbkFhZXJyLTZTbDcwWXB1UlI4NDJZam1LeHlpVEVhbi1sUl9sRDNRcmZKZHFjOHZ4Y2lwWXE3Ny1LcWdZOFFZREJYWlZtUnFn0gHKAUFVX3lxTE90WDJQa2Rmb2dWZEtoejg5ZWJIeEs0eXowTFNscjgtTzBsQXlEQzhjZmlHa19FUTQxR3VTNEUybTR1VU9OVmtvMzQ3WVYzZzd4UGdpelJDMTFUR1ZFX1NRR0xYQjVoRXU3bERlNDlXd1Nkd2ZEeVhLWkl0bFdTMnN1bnVUbFNTY2hlTnM4cVFwU1FPOXJmei0tOTZVMkk2dHg0a2FJQjBXb0RrcnQ4Qm9kSnd6bkhKck9YWE43TE90MTl6T1B0WERrS3c?oc=5",
@@ -2135,17 +2154,6 @@
     "PETR4",
     "VALE3"
    ]
-  },
-  {
-   "titulo": "Here's the inflation breakdown for October 2026 — in one chart",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html",
-   "publicado": "2026-11-10T13:18-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Bridgepoint sees opportunity in 're-rated' real estate",
