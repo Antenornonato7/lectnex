@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T14:38-03:00",
+  "atualizado_em": "2026-11-10T15:08-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -215,11 +215,35 @@
     ],
     [
      "14:20",
-     171470.0
+     171378.0
     ],
     [
-     "14:23",
-     171452.0
+     "14:25",
+     171420.0
+    ],
+    [
+     "14:30",
+     171312.0
+    ],
+    [
+     "14:35",
+     171070.0
+    ],
+    [
+     "14:40",
+     171165.0
+    ],
+    [
+     "14:45",
+     170896.0
+    ],
+    [
+     "14:50",
+     170842.0
+    ],
+    [
+     "14:53",
+     170871.0
     ]
    ]
   },
@@ -496,11 +520,35 @@
     ],
     [
      "14:35",
-     5.5952
+     5.5932
     ],
     [
-     "14:38",
-     5.5944
+     "14:40",
+     5.5904
+    ],
+    [
+     "14:45",
+     5.5892
+    ],
+    [
+     "14:50",
+     5.5882
+    ],
+    [
+     "14:55",
+     5.5878
+    ],
+    [
+     "15:00",
+     5.5885
+    ],
+    [
+     "15:05",
+     5.5863
+    ],
+    [
+     "15:08",
+     5.5868
     ]
    ]
   },
@@ -1233,7 +1281,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": -0.03,
+    "ibov30": -0.05,
     "dolar30": -0.06
    },
    {
@@ -1249,7 +1297,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": -0.03,
+    "ibov30": -0.05,
     "dolar30": -0.06
    },
    {
@@ -1263,37 +1311,39 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": -0.38,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "14:42",
+    "titulo": "Fed sinaliza possível alta de 0,5 ponto após inflação acima do esperado",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd0UxbWRacjhPSk9vTndEX1h3b3I1Q3YtV1BMUTJfc1R5clh4NDNGRWFhZ1h4YXJwdnY1LXUtZ1VheFBTZnphRWVHbTBaRDBRZkhuM1hQNXZQRmhMTTc2ajZpNllSa3hvZHJnTkZYdEJhWVg2MWl6VVNSWDltZ2tXdGVPaTIzMXdOREl5MVZ3XzA4NzdfYy1pbGM5ZE04ZFVpZGJGaXJPWEpvU0t4Tmt4UGI5Ynd2RExLTmVXbXNhY250VWZva1VENg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.06
+   },
+   {
+    "hora": "14:55",
+    "titulo": "Dólar é vilão de quem investe no exterior? Nu Asset revela estratégia de proteção",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSF8wNzBlOGFjN1ZMUktocHJ1WTluNFFadkw1eHRUdHpPcmM0alZaWUhGVWVaSE1wc0V3WW04Sms5bXpQWGYxQkhzSUZjcmpYNUF5OHRNeTFNaHVkWTRZMy0tZ3IyV245RWx5cmFWbHZrSDJMZ01nMFhUQnBtSVE3bHVpRnRVLWZIbTFYUmYxdk1oOFNOSnBLV2RERVVTQ1hnZlhLb3BkdFJJV3pVMl9xbnlnZUdQLXRjYVF5NDQ0RXFPRzRka3lKQXVRMWx2X1BIcVdFdmVxS0oyUi1BQVZwMw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ecorodovias (ECOR3) tem lucro de R$ 407 milhões no 3º trimestre, queda de 5,3%",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNXcxcUNaTFQxZXA5T0xvUGkzNGQwU2l1bU9VM0xna1ZyTDRSbUdfRzhQTWU4S2RTOGM2bHluMGh6dHhZNzZUV0RZd3JIWmdsdEp3dUVlSHM0RGFQcUJkTE8ybGtIR0xadmpSSEVWUWFFV3RDODRFN25XbHVMMDBuWGtnU0dyTkVzeXhfYnp5elp2WHpaeGh3ZEZsSmM3NlJxc1B3czF2Y1dCR0Et?oc=5",
-   "publicado": "2026-11-10T06:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ECOR3"
-   ]
-  },
-  {
-   "titulo": "Agenda econômica: ata do Copom e inflação dos EUA podem mexer com Bolsa e dólar nesta terça-feira (10)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNYXFfaVFIbU4xYzZjd3NsUXdNVE9IRGdpUF9Td0VFU2RrUnNBS1pXWHhnLWl6Tkc2ZDlkQUhYcDhjMVBsOXU4NUt2S081UzUwdkEzRW5tdzBha3dIVGZrbkk0VG52Ykw5RlQ5MVBjUXZYRWMxblkxdkl3bWtrdFRMQ0VsYVhSQmJOeDI4Mm9VdGtUTU5iTUs2ckxDSlFRNWNDWVdva3YyektBTHFuT1V4UEthemtyUWphclZic1hlUm01NGJFaHZRWElzbms?oc=5",
-   "publicado": "2026-11-10T06:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Grupo SBF (SBFG3), dono da Centauro, tem recuo de 45% no lucro do 3º trimestre",
    "fonte": "Money Times",
@@ -2273,6 +2323,29 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Fed sinaliza possível alta de 0,5 ponto após inflação acima do esperado",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd0UxbWRacjhPSk9vTndEX1h3b3I1Q3YtV1BMUTJfc1R5clh4NDNGRWFhZ1h4YXJwdnY1LXUtZ1VheFBTZnphRWVHbTBaRDBRZkhuM1hQNXZQRmhMTTc2ajZpNllSa3hvZHJnTkZYdEJhWVg2MWl6VVNSWDltZ2tXdGVPaTIzMXdOREl5MVZ3XzA4NzdfYy1pbGM5ZE04ZFVpZGJGaXJPWEpvU0t4Tmt4UGI5Ynd2RExLTmVXbXNhY250VWZva1VENg?oc=5",
+   "publicado": "2026-11-10T14:42-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar é vilão de quem investe no exterior? Nu Asset revela estratégia de proteção",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSF8wNzBlOGFjN1ZMUktocHJ1WTluNFFadkw1eHRUdHpPcmM0alZaWUhGVWVaSE1wc0V3WW04Sms5bXpQWGYxQkhzSUZjcmpYNUF5OHRNeTFNaHVkWTRZMy0tZ3IyV245RWx5cmFWbHZrSDJMZ01nMFhUQnBtSVE3bHVpRnRVLWZIbTFYUmYxdk1oOFNOSnBLV2RERVVTQ1hnZlhLb3BkdFJJV3pVMl9xbnlnZUdQLXRjYVF5NDQ0RXFPRzRka3lKQXVRMWx2X1BIcVdFdmVxS0oyUi1BQVZwMw?oc=5",
+   "publicado": "2026-11-10T14:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2302,7 +2375,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T14:38-03:00",
+ "atualizado_em": "2026-11-10T15:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2316,6 +2389,53 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar é vilão de quem investe no exterior? Nu Asset revela estratégia de proteção",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSF8wNzBlOGFjN1ZMUktocHJ1WTluNFFadkw1eHRUdHpPcmM0alZaWUhGVWVaSE1wc0V3WW04Sms5bXpQWGYxQkhzSUZjcmpYNUF5OHRNeTFNaHVkWTRZMy0tZ3IyV245RWx5cmFWbHZrSDJMZ01nMFhUQnBtSVE3bHVpRnRVLWZIbTFYUmYxdk1oOFNOSnBLV2RERVVTQ1hnZlhLb3BkdFJJV3pVMl9xbnlnZUdQLXRjYVF5NDQ0RXFPRzRka3lKQXVRMWx2X1BIcVdFdmVxS0oyUi1BQVZwMw?oc=5",
+   "publicado": "2026-11-10T14:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+   "publicado": "2026-11-10T14:49-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
+   "publicado": "2026-11-10T14:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Fed sinaliza possível alta de 0,5 ponto após inflação acima do esperado",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd0UxbWRacjhPSk9vTndEX1h3b3I1Q3YtV1BMUTJfc1R5clh4NDNGRWFhZ1h4YXJwdnY1LXUtZ1VheFBTZnphRWVHbTBaRDBRZkhuM1hQNXZQRmhMTTc2ajZpNllSa3hvZHJnTkZYdEJhWVg2MWl6VVNSWDltZ2tXdGVPaTIzMXdOREl5MVZ3XzA4NzdfYy1pbGM5ZE04ZFVpZGJGaXJPWEpvU0t4Tmt4UGI5Ynd2RExLTmVXbXNhY250VWZva1VENg?oc=5",
+   "publicado": "2026-11-10T14:42-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Credit card debt climbs to a record $1.29 trillion, New York Fed research finds",
    "fonte": "CNBC",
@@ -2349,18 +2469,6 @@
    "publicado": "2026-11-10T13:47-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
-   "publicado": "2026-11-10T13:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
@@ -2428,33 +2536,6 @@
    "tickers": []
   },
   {
-   "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUTZIRzAtOWxOYlZQamVZUlQyWXRZVUR1TjhvaTdVVHdYaXhlYi1aMVo3WEJEZTNmaHBnTmFnODJ1QlNINDBSa19XMURlanVyQ0VDSXMwMFRlVC04QUg4dkl5eFdGZ1E4Z1oyRkNTRUJIVDlTcHpER0RmcnAzc2NqVnAzMWJ6Mk1GWFNXU0lJbHJpTlFNVTlxUENfeW1iWUtyZXc3eHo5TW0yZVZkZjNWX0NqVlZiSnMtSVJhdHU2ME00UmZGZkRBUElCci1hb0VXS2V4OXNB0gHbAUFVX3lxTE1OaTdVN2hhQmhFNGJvUnRPbzkxaF8xRU5zdjNNckkxTjZQTDBrVlpwM2QwM0JoNHlPalkyVFBZZVp2YzN2el9HNnAyc1BoME1FZ29TWENYR0JvbjBNMS13TnhzQVl3N200WHRqbTl1QVU2bFRqVnM2Rk01a2hReHV2M0w1QmRyMWJ1QzZiSkRqX2hlSzFBMGhVQ0ctU1pqcUxWaHRGNk90S1hMOGVtZ1pDMktISlk4LUZrUHE5VlVYUDZwNlh0eGdVVUFERXlYdERpSDVQUTg4UnJfdw?oc=5",
-   "publicado": "2026-11-10T13:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
-   "titulo": "Taxas longas do DI sobem após ata do Copom",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOM084X19QMm1KbDZ6ejFDbUJ1a2dqajVrektxM0g5NGVicl83RGh5NW94SDJRSnJqUmlObVJQVG1tSnI4WlBaZEdoZGdFQzRrb0FVdEZFWU1mTTRaRktTLUo5QlhwS01kNm83SkZHc1RIQ2NuX0NreWJHaTVtM1ptRk81cUhHRW52NEt4LVM3eFpzWF9WVmlEb256WQ?oc=5",
-   "publicado": "2026-11-10T12:57-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa hoje cai e dólar sobe quase 2% após dado de inflação dos EUA",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
@@ -2462,18 +2543,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros: combinação de fatores compõe cenário em que dificilmente Copom evitará novas altas na Selic",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOc1JlUHl2aFhxMVJEaHRvcXRWeUxwWTRkSHFfMTdIakN4X1ZCV3I4cE05aGR3dUgwZXNwOURsb0dqTDhPWjZwc3FLU21Gc0lqX0JaS2gxcTNOOThSN1lCZWZnemJsUndpX1o3eFp4NDgybnZndUlsT2Y1Rzh6S2x3VUtXVDRuZm45UkV0Z19sY1dUanpod3ZSU1o5NGR6VWJTdldTX2hOeFFqemtsYmliUjYwSW9Bb05VYlNnYTBnbXZhNkxpemFvcVFaSnFyU1A4d0tnRFBzSXc2cnU4OWQzVHZIR01CNGg0QlYzbktwQlpxYmxx?oc=5",
-   "publicado": "2026-11-10T12:52-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
