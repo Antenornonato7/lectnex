@@ -1,7 +1,60 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T10:08-03:00",
+  "atualizado_em": "2026-11-10T11:08-03:00",
+  "ibov": {
+   "anterior": 172236.05,
+   "pontos": [
+    [
+     "10:00",
+     172475.0
+    ],
+    [
+     "10:05",
+     172888.0
+    ],
+    [
+     "10:10",
+     172968.0
+    ],
+    [
+     "10:15",
+     173192.0
+    ],
+    [
+     "10:20",
+     173033.0
+    ],
+    [
+     "10:25",
+     173050.0
+    ],
+    [
+     "10:30",
+     172897.0
+    ],
+    [
+     "10:35",
+     172678.0
+    ],
+    [
+     "10:40",
+     172453.0
+    ],
+    [
+     "10:45",
+     172642.0
+    ],
+    [
+     "10:50",
+     172589.0
+    ],
+    [
+     "10:53",
+     172558.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.5069,
    "pontos": [
@@ -59,11 +112,59 @@
     ],
     [
      "10:05",
-     5.5496
+     5.5493
     ],
     [
-     "10:08",
+     "10:10",
+     5.5484
+    ],
+    [
+     "10:15",
+     5.5517
+    ],
+    [
+     "10:20",
      5.5512
+    ],
+    [
+     "10:25",
+     5.5516
+    ],
+    [
+     "10:30",
+     5.5678
+    ],
+    [
+     "10:35",
+     5.5688
+    ],
+    [
+     "10:40",
+     5.5693
+    ],
+    [
+     "10:45",
+     5.5678
+    ],
+    [
+     "10:50",
+     5.5668
+    ],
+    [
+     "10:55",
+     5.5728
+    ],
+    [
+     "11:00",
+     5.5778
+    ],
+    [
+     "11:05",
+     5.5764
+    ],
+    [
+     "11:08",
+     5.5768
     ]
    ]
   },
@@ -79,6 +180,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.27
    },
    {
@@ -93,6 +195,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.28
    },
    {
@@ -106,6 +209,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.27
    },
    {
@@ -119,6 +223,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.15
    },
    {
@@ -135,6 +240,7 @@
      "EQTL3",
      "FLRY3"
     ],
+    "ibov30": null,
     "dolar30": 0.09
    },
    {
@@ -148,6 +254,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.1
+   },
+   {
+    "hora": "09:30",
+    "titulo": "BC cita fim da escala 6x1 e depreciação do câmbio entre fatores que pioraram expectativas de inflação",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQVkE3OHVNS0EyY2lQQUNsYUFmY3lvVnhaMWd6SzVnZFNZUTJFdEJpTkNPbDUydlE0SlhzMnh5M1p5bkpEamtPUkZKZDdTdF9wOWhBenNEaVN5aENtY0k1VUY0N3hia21mVFZiWW8wbEt6eV9wRmppZXFJcFJJZ3c3LXM5ZUpDazl2V19jdlVoMjJkd3dhQlBqblA2dWFjZElTX0tJQ2hOXzJORnBsTGROMG9KZm9IaVBLVFNZQW5RTFE3R2NvdUZRa2dwRHZDYVJQNzRsRnVVald2UHBvS2ZiT3VvTHRrX3BnMTVGTDc2cXlXVzd5X01YRdIB-AFBVV95cUxQVkE3OHVNS0EyY2lQQUNsYUFmY3lvVnhaMWd6SzVnZFNZUTJFdEJpTkNPbDUydlE0SlhzMnh5M1p5bkpEamtPUkZKZDdTdF9wOWhBenNEaVN5aENtY0k1VUY0N3hia21mVFZiWW8wbEt6eV9wRmppZXFJcFJJZ3c3LXM5ZUpDazl2V19jdlVoMjJkd3dhQlBqblA2dWFjZElTX0tJQ2hOXzJORnBsTGROMG9KZm9IaVBLVFNZQW5RTFE3R2NvdUZRa2dwRHZDYVJQNzRsRnVVald2UHBvS2ZiT3VvTHRrX3BnMTVGTDc2cXlXVzd5X01YRQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": 0.1
    },
    {
@@ -161,6 +282,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.16
    },
    {
@@ -175,6 +297,7 @@
     "tickers": [
      "EMBR3"
     ],
+    "ibov30": null,
     "dolar30": 0.16
    },
    {
@@ -189,7 +312,8 @@
     "tickers": [
      "MGLU3"
     ],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": 0.02
    },
    {
     "hora": "09:55",
@@ -202,6 +326,154 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.01
+   },
+   {
+    "hora": "10:17",
+    "titulo": "Magalu: “ponto de inflexão” em outubro faz ação saltar 15%, mas movimento continua?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOalNpRWZUbmJFSVhGWEhFUVhwdHFCQ2R0STdveXFVNDVOa2ZURUpMV3U0MmRVX09pdEJmV2dFa25lT1dCMFpBOVhZeVhHX2lCcE1HQnh5TTcwQjUyMkxkaVZ4ZWtLeXlrMTNPdUJ2RjNuSDh2aTlGRGxTN2E3a1JPWXhJdWlNdnJOQklCdkM2Y0FGRkptZjFFOGZZNXcyOV9JVnVSaHhmX1VubVR5WVp2d1Y0clV4Ym9tbjZSQllrZUNPMmpmTzVPbnlZT2ZRbU0t0gHWAUFVX3lxTE0zcDBWRXp5cW1iSlp2LWJoTmRBX09IOGhzMVV1SFFkOUN5ZkdBVHhqUlFDMkM1NnF4QnYzTUJJajJHNlI3YnA3OTRhenRQYjFpdm5hMzVwUU0wUEstTlpQNnZxcU12N09uUEVIMjlVajhqbDlrcVk1T2t4a0tHQXNFQm56M0xGZWUydzhiTkltZWtMb0RMcnBWZ25kdUR5bFVCMnBIZzhQTl9KajZ5Y19BUkpLN2QxVHNqVFpzSmhiUFdjZ1pCdHZlaXBkak5qQWJ1RkZkQmc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "MGLU3"
+    ],
+    "ibov30": -0.32,
+    "dolar30": 0.29
+   },
+   {
+    "hora": "10:19",
+    "titulo": "'Markets bottom on bad news' maxim rings true as chip stocks rally amid Nvidia scandal",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/chip-stocks-rally-nvidia-scandal.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": -0.32,
+    "dolar30": 0.29
+   },
+   {
+    "hora": "10:27",
+    "titulo": "Ibovespa avança com ata do Copom e inflação dos EUA no radar; dólar sobe",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV0Z0cFExdVljSnNFejFqQllTRHF1ODVLMURCOHlpcXpnUzFQZ3Z3QS1qNUpIMU4xdExRNWk1ZGJSdEJJb3ZvQm51WVlrM0lWUl9ZTkRHZzRWS2d1MWVtSlFzSFFXNGY2Sk1jcDJMSFJWb2ppeHdWalFXRVhyMF84R2hoOHk4akVDWG9VNUpCM05ieUwyNXNfVy1jeDNvVzhSZGpXSlRn?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.28,
+    "dolar30": 0.38
+   },
+   {
+    "hora": "10:28",
+    "titulo": "Ibovespa sustenta alta após ata do Copom; 5 coisas para saber antes de investir hoje (9)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSlpiZ2RMZnQycnVIWTJSUnBRVTMyZUViNXBDbWEwckhJRkZBUlpyc2oyZ1VOYmhCWVJ6YzhFU3ZFemxManVnUW1BcHBoc1VWZ2wtYkItNkZyU3pBVlAzZjV5cEpDRTM0bkxsakRTWUkxbUdJTWdFM0RtNGtUaDJyYWdfV0NEcnU2V1AzNzV0MUVfREg3eUUwN2JjVUctS1VjZThUY3RORzN4VHZBSWZKVWZzYi1BT1VqQnVZMFUyRQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.28,
+    "dolar30": 0.38
+   },
+   {
+    "hora": "10:30",
+    "titulo": "Bridgepoint sees opportunity in 're-rated' real estate",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.09
+   },
+   {
+    "hora": "10:34",
+    "titulo": "Título pré do Tesouro renova mínima pós-eleição em meio a queda do petróleo",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSWtrcFBFV3VvcG9CNjRKMGdCaTJuNmhXUVRaV3ZXV001OE52bmNiZTRFRjl4b2hLNEVHYmdFWU1PY3J4Z0lmU1Z0OEZBOFphUUdKcll1ZklKTk4xMTh4M053QVVxTU9tUnlJQ3hzME1KOTN4LU9jRHRmNDMwcVd5YnVkVUtZMi1Xcy13eHRTcXjSAZYBQVVfeXFMTmRGYTc4dzMwd0JwR2ptTWhFZDE4cGptUnRoenNwY1V4SE5qSjVnZmdTbzV4OFZpbjh6RFAwNUNlQ0xCZzdPUzg0eGdGQ0Jkb3c2MlZiY1VfbXhseWpJLXM3V0VNVFJkcDctZmJzbzEtSkI0dnIxVUxJdEwyMDlYenpIeFBrWDlyaUtQU3ZFRWFWdG9iWkJ3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.18
+   },
+   {
+    "hora": "10:45",
+    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:47",
+    "titulo": "Ibovespa sobe repercutindo balanços; Vale e Petrobras limitam alta",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVm94bkhPbHREdWhFS1ByTWVQR2pXR3l2SmJ0dnd3XzNpeVJzakd4M1I2TGZNNlBQVFA3bGF1QUFqbmt3bXVZNG9iWExBV1RvVzkwU1lhWldNd3NEVHNXb2JmRmhtQ0FPSVd2QXlXa1NlVl91NXRlRjVhMWF2U1BzT0V6X0oyTERmNWUwaDBxTjdPT1hIZkdXWkY2ajBnbS0yOFRpMVQ2bjNrVmhJWHgwQlA4X3NTS2V1Z3VoUnJ3OVXSAc8BQVVfeXFMTzBrTFlsYzhtRi10NkhNRUV4MHVqNnV1M0tPOUpVRG5Jb0h6bHhNMFl4bVJERDNwX2Z3czFoWXlzbHk0Wmo4MTR5eUpFNG8xZENaUjRSRnA4UE9JTUFPX0tTUVhKNzBsQ0VGS0ZVblA5VkN5TnAwSEFKRE5DbDgwekdxN2E4dUtBbEJFYUhRVUQ3Rm9iaTJmQ2pNQ2VmeHpqTy15Ny1TNEtrNVBxa2J4TEYwdjlYdWlkTWMwYWRWbC1lV1RGYTVZbllXR2FOeE9J?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4",
+     "VALE3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:00",
+    "titulo": "Ibovespa tenta emplacar nova alta, mas Vale e Petrobras pesam; dólar sobe mais de 1%",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQURoQkhqY1FxaTlTRWhINkh3OW5fLWZSRC1BelRSSkNmUmxLcF9UNXJmbnp6NWFDTFV6Uk8zMC1tcG11NlBMT1I4ZXRqVE5jR1h3cEZWdkJMMVZaam43X1FKdHV3bWxSSnlFY1NZZl9SZzBOcG1KRWM0MjMwRWdBcXJqT2RPLWJPRU5NOUR1RTdfQm51MFhZMUVhT09yVC1TcTl0T3ZZNHdhYzNVcVRCU3VobXZfUm8?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "PETR4",
+     "VALE3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:03",
+    "titulo": "Magazine Luiza sobe até 17% na bolsa: o que o mercado viu de bom no balanço?",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORG5rdWFCNDlOaUQ0WndPOWpZb0JPQk10VE1zcy0xYTVtc0s3WGZRM2RHRTRtOFhuTnRjSHhnVzFIc3g3VjJkUUJ6Z1ppTmVIQXYxcm40N21rTzhOaE10ZUlFeGRjenJON1RlbGtPc0kwSFFqcEp1REtvWnRxVzFvSnQtY3dHcUE5VVRsTi04MnlHSzBfSGVkSFAxbDg1dFdqeWNQekdmTW4tVWR0?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "MGLU3"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -833,6 +1105,18 @@
    "tickers": []
   },
   {
+   "titulo": "BC cita fim da escala 6x1 e depreciação do câmbio entre fatores que pioraram expectativas de inflação",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQVkE3OHVNS0EyY2lQQUNsYUFmY3lvVnhaMWd6SzVnZFNZUTJFdEJpTkNPbDUydlE0SlhzMnh5M1p5bkpEamtPUkZKZDdTdF9wOWhBenNEaVN5aENtY0k1VUY0N3hia21mVFZiWW8wbEt6eV9wRmppZXFJcFJJZ3c3LXM5ZUpDazl2V19jdlVoMjJkd3dhQlBqblA2dWFjZElTX0tJQ2hOXzJORnBsTGROMG9KZm9IaVBLVFNZQW5RTFE3R2NvdUZRa2dwRHZDYVJQNzRsRnVVald2UHBvS2ZiT3VvTHRrX3BnMTVGTDc2cXlXVzd5X01YRdIB-AFBVV95cUxQVkE3OHVNS0EyY2lQQUNsYUFmY3lvVnhaMWd6SzVnZFNZUTJFdEJpTkNPbDUydlE0SlhzMnh5M1p5bkpEamtPUkZKZDdTdF9wOWhBenNEaVN5aENtY0k1VUY0N3hia21mVFZiWW8wbEt6eV9wRmppZXFJcFJJZ3c3LXM5ZUpDazl2V19jdlVoMjJkd3dhQlBqblA2dWFjZElTX0tJQ2hOXzJORnBsTGROMG9KZm9IaVBLVFNZQW5RTFE3R2NvdUZRa2dwRHZDYVJQNzRsRnVVald2UHBvS2ZiT3VvTHRrX3BnMTVGTDc2cXlXVzd5X01YRQ?oc=5",
+   "publicado": "2026-11-10T09:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "BC defende juros altos por mais tempo e não sinaliza retomada dos cortes, diz ata do Copom",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdGJiWDB6cDd0RU54WENEcFV0eGpKUWxndUlGMEJNTDB0THAzOUVuMVRhLUtnVk15N3ktTkdkQjIwM0RxTDE4cFVZTDlRWVlpc0FFWjdfSFJLbXVxTFM2QUF6djJQYkRuQ0N3M3pTYVBYN202NnpRNXpOQUE1VlNJN3NJVVN2bS1ETTQtVkhPcnVOYVltdXAyeWgwUzFub19vV2tRNDZPQmZEWjdhbWZGVmE3VjlQZVcw?oc=5",
@@ -881,14 +1165,136 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Magalu: “ponto de inflexão” em outubro faz ação saltar 15%, mas movimento continua?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOalNpRWZUbmJFSVhGWEhFUVhwdHFCQ2R0STdveXFVNDVOa2ZURUpMV3U0MmRVX09pdEJmV2dFa25lT1dCMFpBOVhZeVhHX2lCcE1HQnh5TTcwQjUyMkxkaVZ4ZWtLeXlrMTNPdUJ2RjNuSDh2aTlGRGxTN2E3a1JPWXhJdWlNdnJOQklCdkM2Y0FGRkptZjFFOGZZNXcyOV9JVnVSaHhmX1VubVR5WVp2d1Y0clV4Ym9tbjZSQllrZUNPMmpmTzVPbnlZT2ZRbU0t0gHWAUFVX3lxTE0zcDBWRXp5cW1iSlp2LWJoTmRBX09IOGhzMVV1SFFkOUN5ZkdBVHhqUlFDMkM1NnF4QnYzTUJJajJHNlI3YnA3OTRhenRQYjFpdm5hMzVwUU0wUEstTlpQNnZxcU12N09uUEVIMjlVajhqbDlrcVk1T2t4a0tHQXNFQm56M0xGZWUydzhiTkltZWtMb0RMcnBWZ25kdUR5bFVCMnBIZzhQTl9KajZ5Y19BUkpLN2QxVHNqVFpzSmhiUFdjZ1pCdHZlaXBkak5qQWJ1RkZkQmc?oc=5",
+   "publicado": "2026-11-10T10:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
+  },
+  {
+   "titulo": "'Markets bottom on bad news' maxim rings true as chip stocks rally amid Nvidia scandal",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/chip-stocks-rally-nvidia-scandal.html",
+   "publicado": "2026-11-10T10:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa avança com ata do Copom e inflação dos EUA no radar; dólar sobe",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV0Z0cFExdVljSnNFejFqQllTRHF1ODVLMURCOHlpcXpnUzFQZ3Z3QS1qNUpIMU4xdExRNWk1ZGJSdEJJb3ZvQm51WVlrM0lWUl9ZTkRHZzRWS2d1MWVtSlFzSFFXNGY2Sk1jcDJMSFJWb2ppeHdWalFXRVhyMF84R2hoOHk4akVDWG9VNUpCM05ieUwyNXNfVy1jeDNvVzhSZGpXSlRn?oc=5",
+   "publicado": "2026-11-10T10:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sustenta alta após ata do Copom; 5 coisas para saber antes de investir hoje (9)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSlpiZ2RMZnQycnVIWTJSUnBRVTMyZUViNXBDbWEwckhJRkZBUlpyc2oyZ1VOYmhCWVJ6YzhFU3ZFemxManVnUW1BcHBoc1VWZ2wtYkItNkZyU3pBVlAzZjV5cEpDRTM0bkxsakRTWUkxbUdJTWdFM0RtNGtUaDJyYWdfV0NEcnU2V1AzNzV0MUVfREg3eUUwN2JjVUctS1VjZThUY3RORzN4VHZBSWZKVWZzYi1BT1VqQnVZMFUyRQ?oc=5",
+   "publicado": "2026-11-10T10:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bridgepoint sees opportunity in 're-rated' real estate",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
+   "publicado": "2026-11-10T10:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Título pré do Tesouro renova mínima pós-eleição em meio a queda do petróleo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSWtrcFBFV3VvcG9CNjRKMGdCaTJuNmhXUVRaV3ZXV001OE52bmNiZTRFRjl4b2hLNEVHYmdFWU1PY3J4Z0lmU1Z0OEZBOFphUUdKcll1ZklKTk4xMTh4M053QVVxTU9tUnlJQ3hzME1KOTN4LU9jRHRmNDMwcVd5YnVkVUtZMi1Xcy13eHRTcXjSAZYBQVVfeXFMTmRGYTc4dzMwd0JwR2ptTWhFZDE4cGptUnRoenNwY1V4SE5qSjVnZmdTbzV4OFZpbjh6RFAwNUNlQ0xCZzdPUzg0eGdGQ0Jkb3c2MlZiY1VfbXhseWpJLXM3V0VNVFJkcDctZmJzbzEtSkI0dnIxVUxJdEwyMDlYenpIeFBrWDlyaUtQU3ZFRWFWdG9iWkJ3?oc=5",
+   "publicado": "2026-11-10T10:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T10:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe repercutindo balanços; Vale e Petrobras limitam alta",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVm94bkhPbHREdWhFS1ByTWVQR2pXR3l2SmJ0dnd3XzNpeVJzakd4M1I2TGZNNlBQVFA3bGF1QUFqbmt3bXVZNG9iWExBV1RvVzkwU1lhWldNd3NEVHNXb2JmRmhtQ0FPSVd2QXlXa1NlVl91NXRlRjVhMWF2U1BzT0V6X0oyTERmNWUwaDBxTjdPT1hIZkdXWkY2ajBnbS0yOFRpMVQ2bjNrVmhJWHgwQlA4X3NTS2V1Z3VoUnJ3OVXSAc8BQVVfeXFMTzBrTFlsYzhtRi10NkhNRUV4MHVqNnV1M0tPOUpVRG5Jb0h6bHhNMFl4bVJERDNwX2Z3czFoWXlzbHk0Wmo4MTR5eUpFNG8xZENaUjRSRnA4UE9JTUFPX0tTUVhKNzBsQ0VGS0ZVblA5VkN5TnAwSEFKRE5DbDgwekdxN2E4dUtBbEJFYUhRVUQ3Rm9iaTJmQ2pNQ2VmeHpqTy15Ny1TNEtrNVBxa2J4TEYwdjlYdWlkTWMwYWRWbC1lV1RGYTVZbllXR2FOeE9J?oc=5",
+   "publicado": "2026-11-10T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa tenta emplacar nova alta, mas Vale e Petrobras pesam; dólar sobe mais de 1%",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQURoQkhqY1FxaTlTRWhINkh3OW5fLWZSRC1BelRSSkNmUmxLcF9UNXJmbnp6NWFDTFV6Uk8zMC1tcG11NlBMT1I4ZXRqVE5jR1h3cEZWdkJMMVZaam43X1FKdHV3bWxSSnlFY1NZZl9SZzBOcG1KRWM0MjMwRWdBcXJqT2RPLWJPRU5NOUR1RTdfQm51MFhZMUVhT09yVC1TcTl0T3ZZNHdhYzNVcVRCU3VobXZfUm8?oc=5",
+   "publicado": "2026-11-10T11:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Magazine Luiza sobe até 17% na bolsa: o que o mercado viu de bom no balanço?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORG5rdWFCNDlOaUQ0WndPOWpZb0JPQk10VE1zcy0xYTVtc0s3WGZRM2RHRTRtOFhuTnRjSHhnVzFIc3g3VjJkUUJ6Z1ppTmVIQXYxcm40N21rTzhOaE10ZUlFeGRjenJON1RlbGtPc0kwSFFqcEp1REtvWnRxVzFvSnQtY3dHcUE5VVRsTi04MnlHSzBfSGVkSFAxbDg1dFdqeWNQekdmTW4tVWR0?oc=5",
+   "publicado": "2026-11-10T11:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
   }
  ],
  "enviadas": [
-  {
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNWdTd3cxV3FJSXBUUndPRktRSHlWdV80MHB1bkYyd2ljUlE1UG9TZXFIZzJfbzZtTjdLTG91ek1mSHNDR1plYnFvYkVJQUd4QzVUX0w3Nll3YldhdUZaN2JfazBzRjNOZlQ0dkN5aUkzVHNiSWxfaWZhLUVPWko2U2NIMVFCOEhickt5bzRYbUlWd2FnaVFsWjFSNE4tb1JsWlJJeA?oc=5",
-   "titulo": "Ibovespa sobe na abertura com aval externo e CSN em destaque; dólar estável",
-   "em": "2026-11-09T13:25:38+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONHBkRjUtX1ZoUDVNRVVubmNOTmd2TWJOOF9aUGtoeVg1RnlILVViUzJuaDI4cFhxbG5Bd2ZBTjVNLUtJTWx3WGJNWFlraFVsckFrdXhaOHdqT29xWENzcGN2Yk5DeTFqM2NEb1d5OUZSTWx4STBjZHppdU5XSHo3NFRtcDJ4OFpLZGVpTnB2b0lzWWJIVnVDWW9XV2xIUk01N0lsSGlrVzRZMDRWS0ttVzJlTnNEU0xiLUU4Sg?oc=5",
    "titulo": "Vale e bancos puxam Ibovespa; dólar fica estável enquanto mercado cobra Lula no fiscal",
@@ -920,7 +1326,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T10:08-03:00",
+ "atualizado_em": "2026-11-10T11:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -936,22 +1342,22 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar abre em alta com ata do Copom e expectativa por dados de inflação nos EUA",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-ata-do-copom-e-expectativa-por-dados-de-inflacao-nos-eua.shtml",
-   "publicado": "2026-11-10T09:55-03:00",
-   "impacto": "alto",
+   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
+   "publicado": "2026-11-10T11:06-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WDO",
-    "DI"
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
   {
-   "titulo": "Magalu surfa crise da Casas Bahia e fala em 'oportunidade histórica' de ganho de mercado",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/magalu-surfa-crise-da-casas-bahia-e-fala-em-oportunidade-historica-de-ganho-de-mercado.shtml",
-   "publicado": "2026-11-10T09:54-03:00",
+   "titulo": "Magazine Luiza sobe até 17% na bolsa: o que o mercado viu de bom no balanço?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORG5rdWFCNDlOaUQ0WndPOWpZb0JPQk10VE1zcy0xYTVtc0s3WGZRM2RHRTRtOFhuTnRjSHhnVzFIc3g3VjJkUUJ6Z1ppTmVIQXYxcm40N21rTzhOaE10ZUlFeGRjenJON1RlbGtPc0kwSFFqcEp1REtvWnRxVzFvSnQtY3dHcUE5VVRsTi04MnlHSzBfSGVkSFAxbDg1dFdqeWNQekdmTW4tVWR0?oc=5",
+   "publicado": "2026-11-10T11:03-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -961,10 +1367,36 @@
    ]
   },
   {
-   "titulo": "Superávit comercial da China ultrapassa US$1 trilhão puxado por IA",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdlZxRm5pdGF1SFNrZno1VHpET0lYTkpYemhrU3NZTlFjci1tZnRxTVhmX2hFTnYtcmVONHBSMzk0QlZ0MXptRmt5RXNwZXlGTTRlMHlaOVBaQUh2ekZ2ZER4V3h4Tm5HVkFzcjRKSklRb2gzMEVYb05OMENYZFFna0FSTWRidHFWdXBMSVVvUHZvU3VsNXA2ejRJVHNPVG5MU0NYSS14RQ?oc=5",
-   "publicado": "2026-11-10T09:38-03:00",
+   "titulo": "Ibovespa tenta emplacar nova alta, mas Vale e Petrobras pesam; dólar sobe mais de 1%",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQURoQkhqY1FxaTlTRWhINkh3OW5fLWZSRC1BelRSSkNmUmxLcF9UNXJmbnp6NWFDTFV6Uk8zMC1tcG11NlBMT1I4ZXRqVE5jR1h3cEZWdkJMMVZaam43X1FKdHV3bWxSSnlFY1NZZl9SZzBOcG1KRWM0MjMwRWdBcXJqT2RPLWJPRU5NOUR1RTdfQm51MFhZMUVhT09yVC1TcTl0T3ZZNHdhYzNVcVRCU3VobXZfUm8?oc=5",
+   "publicado": "2026-11-10T11:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+   "publicado": "2026-11-10T10:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "France blames Iran for supermarket refrigerator cyberattacks, weighs sanctions",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/iran-fridge-cyberattacks-france.html",
+   "publicado": "2026-11-10T10:43-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -973,62 +1405,96 @@
    "tickers": []
   },
   {
-   "titulo": "Embraer melhora projeções para 2026 após recordes no 3º trimestre",
+   "titulo": "China panel chair Moolenaar demands answers on Nvidia CEO's alleged affair with a Chinese spy",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/moolenaar-nvidia-jensen-huang-affair-chinese-spy.html",
+   "publicado": "2026-11-10T10:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa hoje: após salto de 2,2%, índice enfrenta dado de inflação nos EUA e ata do Copom",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
+   "publicado": "2026-11-10T10:41-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Título pré do Tesouro renova mínima pós-eleição em meio a queda do petróleo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSWtrcFBFV3VvcG9CNjRKMGdCaTJuNmhXUVRaV3ZXV001OE52bmNiZTRFRjl4b2hLNEVHYmdFWU1PY3J4Z0lmU1Z0OEZBOFphUUdKcll1ZklKTk4xMTh4M053QVVxTU9tUnlJQ3hzME1KOTN4LU9jRHRmNDMwcVd5YnVkVUtZMi1Xcy13eHRTcXjSAZYBQVVfeXFMTmRGYTc4dzMwd0JwR2ptTWhFZDE4cGptUnRoenNwY1V4SE5qSjVnZmdTbzV4OFZpbjh6RFAwNUNlQ0xCZzdPUzg0eGdGQ0Jkb3c2MlZiY1VfbXhseWpJLXM3V0VNVFJkcDctZmJzbzEtSkI0dnIxVUxJdEwyMDlYenpIeFBrWDlyaUtQU3ZFRWFWdG9iWkJ3?oc=5",
+   "publicado": "2026-11-10T10:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bridgepoint sees opportunity in 're-rated' real estate",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/bridgepoint-sees-opportunity-in-re-rated-real-estate.html",
+   "publicado": "2026-11-10T10:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sustenta alta após ata do Copom; 5 coisas para saber antes de investir hoje (9)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSlpiZ2RMZnQycnVIWTJSUnBRVTMyZUViNXBDbWEwckhJRkZBUlpyc2oyZ1VOYmhCWVJ6YzhFU3ZFemxManVnUW1BcHBoc1VWZ2wtYkItNkZyU3pBVlAzZjV5cEpDRTM0bkxsakRTWUkxbUdJTWdFM0RtNGtUaDJyYWdfV0NEcnU2V1AzNzV0MUVfREg3eUUwN2JjVUctS1VjZThUY3RORzN4VHZBSWZKVWZzYi1BT1VqQnVZMFUyRQ?oc=5",
+   "publicado": "2026-11-10T10:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa avança com ata do Copom e inflação dos EUA no radar; dólar sobe",
    "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTzd2WUEtWGR6OFdTbkhJVFN6WExnRTVtbUpKMElOdnJZelRDVDhpekpJYlc5WnJ3MUxzUTNLaEFneEFfRjN3a09heU9mT1ZsV19NVHRCZ3VBc2dPSDMxWGppaUF6ZXliOHlZLXBhRkNVbVpNUWNLOUxOdElCXzQ2ekd3UU5ZWXl5T3NpbUNkZ1VMaXJKZTJEaTd1SnB4aEFad3ZKeGN0emkzb3NOR0ViMDh5SGcwbFNEV2hB?oc=5",
-   "publicado": "2026-11-10T09:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
-  },
-  {
-   "titulo": "BC defende juros altos por mais tempo e não sinaliza retomada dos cortes, diz ata do Copom",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdGJiWDB6cDd0RU54WENEcFV0eGpKUWxndUlGMEJNTDB0THAzOUVuMVRhLUtnVk15N3ktTkdkQjIwM0RxTDE4cFVZTDlRWVlpc0FFWjdfSFJLbXVxTFM2QUF6djJQYkRuQ0N3M3pTYVBYN202NnpRNXpOQUE1VlNJN3NJVVN2bS1ETTQtVkhPcnVOYVltdXAyeWgwUzFub19vV2tRNDZPQmZEWjdhbWZGVmE3VjlQZVcw?oc=5",
-   "publicado": "2026-11-10T09:34-03:00",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV0Z0cFExdVljSnNFejFqQllTRHF1ODVLMURCOHlpcXpnUzFQZ3Z3QS1qNUpIMU4xdExRNWk1ZGJSdEJJb3ZvQm51WVlrM0lWUl9ZTkRHZzRWS2d1MWVtSlFzSFFXNGY2Sk1jcDJMSFJWb2ppeHdWalFXRVhyMF84R2hoOHk4akVDWG9VNUpCM05ieUwyNXNfVy1jeDNvVzhSZGpXSlRn?oc=5",
+   "publicado": "2026-11-10T10:27-03:00",
    "impacto": "alto",
    "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
    "tickers": []
   },
   {
-   "titulo": "Viraram pechinchas? BBDC4, EQTL3 e FLRY3 entram no radar após repique do Ibovespa",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWWJGNlViV1d1dHpVaWdIVWxVWnRSOTRsUzNSUk16MDlzOGNPX1lFMWdKSGpvZ0NLUERGXy00RFk3azlGQWphdWJFRDh4eDRjZEs2dWxaWmkwSHRkYTdjZ2lKWWk0dkg3eEdSTmFMbWl5WFkxdEl2ZzdZWExYXzQwY3BFZlBwaEI0VkYwUXRZaTVqcnlZektnc1NoZUVEOWJqZ1JvbFhuSUNZUkh0bXBjZ0p3Z29CZWRqZmfSAb8BQVVfeXFMTmEtckU3VksxNGV1SEZzRzBXa1BUamVJOVhRZmVMMTBsOVpnR1dHMHhHUE9KYVRTSGdHTDBqTDdKRGE1NjctRU12RWdpeGk0eS1pWDNteExYS0VmdW82enI3RG1pSm9OekZMUlUzbi1pSHY5SWcwaWlMRHEzc0xwZXp0aV85TFVWMGZCVzFlLU9zMkNCcGJlZk9FTS1UcGY3b2lLMno2cWdEMjNmdHUzMGZ5VkRLMjNHTUpUSVNfdTg?oc=5",
-   "publicado": "2026-11-10T09:25-03:00",
+   "titulo": "'Markets bottom on bad news' maxim rings true as chip stocks rally amid Nvidia scandal",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/chip-stocks-rally-nvidia-scandal.html",
+   "publicado": "2026-11-10T10:19-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
    ],
-   "tickers": [
-    "BBDC4",
-    "EQTL3",
-    "FLRY3"
-   ]
-  },
-  {
-   "titulo": "Dólar sobe e permanece acima de R$ 5,50 com ata do Copom e inflação dos EUA no radar",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNXJVeEVBcGxzTTlGWmhpU2FTcXluWWlEZ3o4OE9CX3JnZkczVVFfMmRFZjBOWGt5RTFUc3hVQkxnUUVpbzR4ZGhzc3BGc1l3UklkQTExd0xoeTdibW1LWGtZaDl0Z2JOWGQ3SXNjaHI0bnVYemtSMnBBdHRUV05NTmx5TThoMW5yaFZJSElqQmYzNV9LMEhuM19DenPSAaIBQVVfeXFMT0lxSE50RHZWLUFIV2hjUmI2SUhhY3JOLXlabF9kY2ZaakZPU010MVhheUdlMjlvTmFsWXdVZURCZ0Q3c25WcEU4NTNLeXpuV043ZldFckdFNE5mQWJWV2JyRzAyTEVjVEppZkJDUk1IWU53S3M4V0Rzek9PY2hBeFNpUmJNWWFpS2IxLWR6WGRRUmxKeW9YbWpyUWZYZy1YZUh3?oc=5",
-   "publicado": "2026-11-10T09:20-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
    "tickers": []
   },
   {
-   "titulo": "Juros curtos caem e longos têm leve alta após ata do Copom",
+   "titulo": "Dólar tem forte alta com sinalizações de Fed e Copom em dia de dados de inflação nos EUA",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxON3RaSXB5akJxeDFvbjM2aC15YlgxSFVWdjlXTTNyTVVXcFRUT2VrV3lDdFI3MkVQUzZRcnVRNmRnXzA0b1NuV2dGZTJFWVJvekRPWklZVktZSWZtWktZQk5fTjFOOG9YX3dESHI5NHlaZ0J1MHZRa01vWVhoZ0ZLdGdSajhDQW91MW5BdFZfdjE3R2kzeVFoZWN1clEwSkZtT1A5ZE02N0hrcmRvMGp6T2JkNFgtSDDSAcYBQVVfeXFMTndCcDRoZTFjRHFzSWN1dDZzakU3ZXVDck81M2NTTU1DWGdPTGNyWWlueHlOUDJKWk9fUWpqWkdRcVJNY3BNQkJBT0N6Z195Z0QydEY4bzduNERESWo5d0R4MTlMZm9DR3ZyNVRTUVR0dks3MnBlRGFud0lGVUhTRF95ZUF2UHVXNFJZdnRreHhMekxlRWhwM2MwUG1QZVFUOTh2TF8zSzdQbldDellWcVY4bng5RnFHWkhlTUdZYUhQNFJaQ2RR?oc=5",
-   "publicado": "2026-11-10T09:17-03:00",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxON24tLUdtaVdCbWEzeFJ4WXVSWERzN0dVY3ZINlN4VG9aZE0wTHRBcWl6SC1NSm9FQnotLWhGZDlNSVoweVFJWWZTaTJxWTJoR0JJVkNKVUgxLWw0SGZtdzVWbXh4VzktV3dLb3VjQ2EwZ2lDNVhkanVyb295TGVLX21JclhVSUp4VzFkdUItMEw4Ym1ONl9ycExIT1N6N2EtVk1KUW5uR0tNdkQyeV9iN1diMTlBUWFEbmw0RC01N21mZHkxWEptcExZQ1VsQ3dZcXZ3OWU2b3pnSDVvVVNr0gHuAUFVX3lxTE1DSVU4OGhvTFV6bG5uZUYtOFFlbDhqWWRkcFNJS3BwNk9LaE1zYnVEeWRsLUtjcF9NYm44WDdNSk0xWGltM0dFNGJDZjRSNkpHX2FGODJlUVpIUkFpUWt3TjlXb0pHS2VzSWhmNDdSTGQ1RUZwMUFRVk41OHdEZTdvcWlBSEt1Y29ETEhyQmpZeXktOEZhVVFha2ZyMFAwNngzSTBtcUdxLU5LQ3JOUFVtVWRMSWljcWNvcFh6WUU4eXZtVWhndFVjcUw5V3EzdTFObGVDLUQtSlZ0clpDZGVNRGU3OFVuaFNnUk5ubVE?oc=5",
+   "publicado": "2026-11-10T09:30-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1050,22 +1516,10 @@
    "tickers": []
   },
   {
-   "titulo": "El Niño e dólar ampliam desafio do agro, aponta Banco Central",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ0VTdE5ySDlMamtqa2tpZ0hWbGhZZjFQRUpDMXFERUZxZjBtQjlpeGF4cTI1NzVmeUNrY0l6VzkxdWdnV1BjMlVaaXpHYXY4aXFXWlp5dVUtb2Z6VVI4anBvWl9IZlk2d0NyVm9Gc0tBVFptUnpmVnY3YXVuQ081QVBRaTRIcjlpeHN4TFZEVTVjbUN1NTY1ZTBNaElkczQ4Z1ZzV1lsOUxPZw?oc=5",
-   "publicado": "2026-11-10T09:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Copom alerta em ata para expectativa de inflação subir diante de risco fiscal e fim da 6x1",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNkdWQkFjYXZVZFZZeUJPWDFYZm9jc1NURTAtNGJnZ3Fydm9SZllraVNVWFl6SnpOTUl3aW9mLXJ1TVJoSmFqdmJMdUtUb05tNGpXdEdQaV8tOFR0MmdPVW9tWXlpdzg5QjJaOXlReDZrY2pIUkFIUU9kUkJ1WFFUNVIzdElBOHd6ZXdDaWs2ckxVQjZlRWZySTJ0TmhLMlAzalpV?oc=5",
-   "publicado": "2026-11-10T08:59-03:00",
+   "url": "https://www.estadao.com.br/economia/copom-alerta-ata-expectativa-inflacao-subir-risco-fiscal/",
+   "publicado": "2026-11-10T08:48-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1074,22 +1528,10 @@
    "tickers": []
   },
   {
-   "titulo": "Waller planeja defender alta de juros pelo Fed de pelo menos 0,25 p.p. em dezembro",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOalBZZ19teWE0Z0UwRzBZaFE2WldYY0xvcEFvVXJWQVNQUlpZdDlqOWJ1a0o0UXFIZkxKZ0wydndZVmN5RlY4a0xGaXZxc2ozWXdEMkNJR2ZYNFZyemxxb1dOYlFQSnRnVTZxcm9BNXNxSzRCUi1yWXlKRjF6XzcwT1lmSEpZTzVNNUxxLVE5T2tYOExVYzFjc0JPWEtKbm9DM2V2NHlLeWo0M3JqRWwwQm9uSFpzdnNHRlo00gHAAUFVX3lxTE9OWVdqS0RRcFppdW51RzFDa2VubEluUFVSQ3ltVzRfSjVfNXZ5bHpvamNhMmkwZURsQzJSR3ZEck5BcjZTQkctdGVaZk94ek9qM19aQWhJX1AtdVhQeV96Z21ueXFFZVFVZFJ2X0dlRElCTV90Ql8yYmpEdUxvSm1idFBhMmptSkNzbkJWcXRfbGJXY3JqdWtfd2tYN2xVMEtucGxyTnJKbWtqaHgzMWZQZWlaVGtmZzRXNzB3VTNqSQ?oc=5",
-   "publicado": "2026-11-10T08:50-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Fim da 6x1, El Niño e petróleo: Copom alerta para pressões inflacionárias",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxORkN1dnJlWjkzb090LXM4UU9hazdLQW9mVXVPTHpEOUQtWUlMRGtPQWlFRUs3Qjh5WWdHYkdMU0JpUlFaMDN2SGtza1M2T3RjSHFmVWdEN2VaTHFOSkJHOG5HOHdndlJHYlhuZC1scFFjU3YwVDRqYzNtNXRwbTFseFNRTXpHSjU5UTQ5MDhHYVAyVFV0NEcwb3VHTDZ2cEZzV0FtLVotUFFWQWFXekduUC1jOWJFUS1NYVZHUDV2LVcxdGY5X29WbnVR?oc=5",
-   "publicado": "2026-11-10T08:29-03:00",
+   "titulo": "Ata do Copom mostra expectativa de inflação mais alta com guerra, El Niño, fim da 6x1 e disparada do dólar",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-copom-mostra-expectativa-de-inflacao-mais-alta-com-guerra-el-nino-fim-da-6x1-e-disparada-do-dolar.shtml",
+   "publicado": "2026-11-10T08:35-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -1097,44 +1539,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa hoje: após salto de 2,2%, índice enfrenta dado de inflação nos EUA e ata do Copom",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUDVVNGVjS09yNDQ2cGFkYmpwM194TkVLM2x1WlpsRTg3TWp6UllkcUZ5bWpMUXQya2xxd1E5TXNLVDZpVDJOaDlRMVlxYTBXM3g4MHVVNlZ0dWlyMFZmaER6YkxTYzM2RExjTlFTdjFDeXEwaS1PaG9NSTdWc3phQVlZVTJpSEhOcDhfdk1TTXBnZjdMV29DQ2JhUHpINzR3Vk4wTmF2ZDRZenctOXpPb08yNnhJZThmNlNiUXA0YWR0d1pjYUtma2k1Y3k3eWJqMV9TVW5mSFXSAd4BQVVfeXFMUElsVW1xZ1pESW5kd2dpTTliVW1rZWRvLXhlZU1MdmdYSzRGZndUUGJqNmNrSG9QOFF5czFoWHVpUnZZMnNDU1JQVU5DMWdRZXpOSFRWUmpuZ0o4bUU2TU1vUGQ0SU1yMFpUQ3ZBTzFKaDBhVmdiUC1DczQydWtwS29oZUhRc0pzcUxjTk9wMVRwdlgzZWt3SlFyWXFPTkdIU0NpcXFPY05xcFMteGJnRXgtQjRvNmNkWXJIeVZ1MlNpYkFIUFVqTWI5VWF0TWxOSG1jdHBfeFZFNDJjVGJ3?oc=5",
-   "publicado": "2026-11-10T08:23-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ata do Copom: BC vê economia perder força, mas diz que inflação exige juros altos por mais tempo",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNN2Z0cDQtNm1yZ0I1QVpnUDRzdnlKQVlheC14LXpFTnBSZmdZR2RIRi1qa1BQNkRZZlRNc0ZmU0NoZDFmbzRzaUZmRURTZWFEWU5CRzdZM1RkQlhMNEhPeFV1OE5GY183eG9OYi1zQjVGaElhRS1GVTVmVkxoUXdLMVNlRWdVU0VOZUJCd2lZOXYtRE02U2pWSEYxRmlUWWZ1V0lnaE8zanhFYlB4UV82bmJFZ0FHTE1WUlhzaXNYc2JyOVJBbkE2eWR3?oc=5",
-   "publicado": "2026-11-10T08:20-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Petrobras (PETR4) divulga balanço nesta terça: o que esperar do 3º tri?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMHZzTGdXMTllcFdpUjVfV3RFZ25URUxjVld0aEhfRTVXWDd3Q2ZCRWYyWk5mY1c3YUlIUzEzekY1LW5lNndOQkVCVUNFb25QYW9WdWxRbFNxVEQzUWs5bUVYamQ1MENpVFVPTWdpWmxLMkpPa2VfUmpWSDVtOVozNUlmV3FpUUNKRk5UQnZrR1dLNGMwak4xcGNBZzZkNGRPTkR2RDlXbXNid9IBrwFBVV95cUxOM0czaENtUjFWZW95cnN3VkpTLXh5LUZYTE1nWnZkWVZIcHpKTkU0WnVhd0t2TkRjWmdGM1BmR3VlZTI5MldJWXhUVzZCdlNtNXJxU2xnWnN2cDdUX0lyMGVROEp3TU83T3BnOGE0SHdfU0E5dEs0b0l4di1oWVdTV2FhT0c4VXh4UGZYaXd1NHpiR2RaalVmZkR6UXZvSVRXSVZoNS1NR2tOQUVpSEF3?oc=5",
-   "publicado": "2026-11-10T07:10-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   }
  ]
 }
