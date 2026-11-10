@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T13:23-03:00",
+  "atualizado_em": "2026-11-10T13:25-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -155,11 +155,11 @@
     ],
     [
      "13:05",
-     171504.0
+     171469.0
     ],
     [
-     "13:08",
-     171515.0
+     "13:10",
+     171527.0
     ]
    ]
   },
@@ -376,10 +376,10 @@
     ],
     [
      "13:20",
-     5.6079
+     5.6064
     ],
     [
-     "13:23",
+     "13:25",
      5.6075
     ]
    ]
@@ -1027,24 +1027,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "13:18",
+    "titulo": "Here's the inflation breakdown for October 2026 — in one chart",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Voos da Petrobras e invasões mudam rotina, mas euro e ouro valem mais que petróleo em Oiapoque",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbFc5ZklXNGtLRGI2b3VreWtFVjdwLWJWYURJRFNtZHRzTnhyV0M4elV3Nmo3eldOQ2dZOTdtdFZlaUdlZmtLSlVTZjBEd1MtWWhWNzZtTWJqbkRNR1FZaEVrZnNZWlZKRUlQd20taGx5MlpZQjNVLVpFbDg2NHpZQzBlSXlYVHd3eWtGTTFOX0FPSl9iTHY3bU1wUHJlSUdVRFdUalFEd0tQRE5ZWmxmVDRWekVsY2I0aGRjMVR5azJ3TXBaYzRERG5sNUdicEk3TDZocw?oc=5",
-   "publicado": "2026-11-10T05:27-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
   {
    "titulo": "Balanços de Petrobras e Embraer, ata do Copom e inflação dos EUA: o que move os mercados",
    "fonte": "Exame",
@@ -2040,6 +2039,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Here's the inflation breakdown for October 2026 — in one chart",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html",
+   "publicado": "2026-11-10T13:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2069,7 +2079,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T13:23-03:00",
+ "atualizado_em": "2026-11-10T13:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2083,6 +2093,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Here's the inflation breakdown for October 2026 — in one chart",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html",
+   "publicado": "2026-11-10T13:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Bridgepoint sees opportunity in 're-rated' real estate",
    "fonte": "CNBC",
@@ -2166,18 +2187,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Petróleo Brent cai abaixo de US$ 90 pela primeira vez desde agosto",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/petroleo-brent-cai-abaixo-de-us-90-pela-primeira-vez-desde-agosto.shtml",
-   "publicado": "2026-11-10T12:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
