@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-10T07:50:00-03:00",
+  "atualizado_em": "2026-11-10T12:50:00-03:00",
   "eventos": [
     {
       "data": "2026-11-10",
@@ -42,14 +42,17 @@
       "importancia": 3,
       "anterior": "0,6%",
       "consenso": "0,3%",
-      "resultado": null,
+      "resultado": "0,4%",
       "impacto": {
         "wdo": "volatil",
         "di": "volatil"
       },
       "nota": "Segundo a ADMISI, o BLS não publicará a variação anual em outubro (falta de dados de out/2025).",
       "tipo": "cpi-eua",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "CPI acima do consenso costuma fortalecer o dólar global e elevar os juros dos Treasuries, o que tende a pressionar o WDO para cima, abrir a curva de DI e pesar sobre o WIN."
+      }
     },
     {
       "data": "2026-11-10",
@@ -59,14 +62,17 @@
       "importancia": 2,
       "anterior": "0,3%",
       "consenso": "0,2%",
-      "resultado": null,
+      "resultado": "0,3%",
       "impacto": {
         "wdo": "volatil",
         "di": "volatil"
       },
       "nota": "Núcleo sem alimentos e energia; referência para o Fed.",
       "tipo": "cpi-nucleo-eua",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "Núcleo acima do esperado reduz a chance de cortes do Fed; o padrão típico é dólar mais forte (WDO em alta), DI pressionado e WIN mais fraco."
+      }
     },
     {
       "data": "2026-11-10",
