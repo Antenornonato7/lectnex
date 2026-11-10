@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-10",
-  "atualizado_em": "2026-11-10T11:43-03:00",
+  "atualizado_em": "2026-11-10T11:45-03:00",
   "ibov": {
    "anterior": 172236.05,
    "pontos": [
@@ -75,11 +75,11 @@
     ],
     [
      "11:25",
-     172267.0
+     172389.0
     ],
     [
-     "11:28",
-     172285.0
+     "11:30",
+     172534.0
     ]
    ]
   },
@@ -216,11 +216,11 @@
     ],
     [
      "11:40",
-     5.5884
+     5.5883
     ],
     [
-     "11:43",
-     5.5863
+     "11:45",
+     5.5895
     ]
    ]
   },
@@ -528,7 +528,7 @@
      "PETR4",
      "VALE3"
     ],
-    "ibov30": -0.11,
+    "ibov30": -0.04,
     "dolar30": 0.02
    },
    {
@@ -543,7 +543,7 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": -0.1,
+    "ibov30": 0.05,
     "dolar30": 0.01
    },
    {
@@ -602,7 +602,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.15
+    "dolar30": 0.21
    },
    {
     "hora": "11:20",
@@ -616,7 +616,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.16
    },
    {
     "hora": "11:20",
@@ -633,7 +633,7 @@
      "BBDC4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.16
    },
    {
     "hora": "11:27",
@@ -1627,7 +1627,7 @@
    "em": "2026-11-10T11:53:00+00:00"
   }
  ],
- "atualizado_em": "2026-11-10T11:43-03:00",
+ "atualizado_em": "2026-11-10T11:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1643,6 +1643,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
+   "publicado": "2026-11-10T11:44-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
@@ -1650,18 +1662,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pete Hegseth decries impeachment push, defends Iran war handling",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/10/pete-hegseth-impeachment-massie-iran.html",
-   "publicado": "2026-11-10T11:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
