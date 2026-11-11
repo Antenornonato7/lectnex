@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T11:18-03:00",
+  "atualizado_em": "2026-11-11T11:20-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -55,11 +55,11 @@
     ],
     [
      "11:00",
-     172481.0
+     172497.0
     ],
     [
-     "11:03",
-     172379.0
+     "11:05",
+     172598.0
     ]
    ]
   },
@@ -176,11 +176,11 @@
     ],
     [
      "11:15",
-     5.5589
+     5.5595
     ],
     [
-     "11:18",
-     5.5557
+     "11:20",
+     5.5638
     ]
    ]
   },
@@ -416,7 +416,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": -0.07,
     "dolar30": -0.07
    },
    {
@@ -427,6 +427,22 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": 0.08
+   },
+   {
+    "hora": "11:17",
+    "titulo": "Ibovespa ganha força com promessa de ajuste fiscal de Lula, apesar da queda de Petrobras",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc21PaGVjTnBMdUFBSlJHWFFQeGFZV2UyS21HMFRwSjRUeGxzMDVFbDZ4VVo3TTNSOF96NjJzZmx3cEczcjNhbWZVQnIxYlRmS1N2UVMyNXlieVZ3R1VLZldGQXBrajY3VEJZdURlVGdUOEJlZGtIU2toelBiV0UyazNpSW0tb1VLbURWRS1PSlNyMDB1TTN5UTB2UlRJQXlMbHdMMC14MGFyUmo1RUhqcWFpOHhEdzdiQWFSMTBtQQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
     ],
     "tickers": [
      "PETR4"
@@ -948,6 +964,20 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Ibovespa ganha força com promessa de ajuste fiscal de Lula, apesar da queda de Petrobras",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc21PaGVjTnBMdUFBSlJHWFFQeGFZV2UyS21HMFRwSjRUeGxzMDVFbDZ4VVo3TTNSOF96NjJzZmx3cEczcjNhbWZVQnIxYlRmS1N2UVMyNXlieVZ3R1VLZldGQXBrajY3VEJZdURlVGdUOEJlZGtIU2toelBiV0UyazNpSW0tb1VLbURWRS1PSlNyMDB1TTN5UTB2UlRJQXlMbHdMMC14MGFyUmo1RUhqcWFpOHhEdzdiQWFSMTBtQQ?oc=5",
+   "publicado": "2026-11-11T11:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -977,7 +1007,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T11:18-03:00",
+ "atualizado_em": "2026-11-11T11:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -985,12 +1015,27 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa ganha força com promessa de ajuste fiscal de Lula, apesar da queda de Petrobras",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc21PaGVjTnBMdUFBSlJHWFFQeGFZV2UyS21HMFRwSjRUeGxzMDVFbDZ4VVo3TTNSOF96NjJzZmx3cEczcjNhbWZVQnIxYlRmS1N2UVMyNXlieVZ3R1VLZldGQXBrajY3VEJZdURlVGdUOEJlZGtIU2toelBiV0UyazNpSW0tb1VLbURWRS1PSlNyMDB1TTN5UTB2UlRJQXlMbHdMMC14MGFyUmo1RUhqcWFpOHhEdzdiQWFSMTBtQQ?oc=5",
+   "publicado": "2026-11-11T11:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
    "fonte": "CNBC",
@@ -1022,20 +1067,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Ibovespa avança de olho em ajuste fiscal e balanços, apesar de queda da Petrobras",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ1d6dy1zMkNNbHo0UXR5bXdhbzB6MV9qanNUUXNwTHFJWU9kX3dCcHFCLXRKVHdlV1RNNE9Yd0VkazYtVTJGOVNCRmxnYXZVbl9YeFZSU3VvZWlmTGN6aUlKakdDVjVyU2FNYmZ5M2xVMkxfdXhsWlpsRGxwVUtFbk1MLU5KVFJJWjdUelVBSTkybjA2MUdTa0QxS05HaHlJOVAtZHEtSWZQMjFFbm04cXo5SWtFSnU1ZGtMTmd4QllTbGRVQTZTT0JyVmRQbmdjZ25rMtIB4wFBVV95cUxOOFlTQ19vZDFhSTBEN1RzNzV3T3RvUTE2eG5OUlBkWDQ3Mmc1aEE4bEl3UGd2Q1hmaWgxeGFfWWNXdTR1MFcxQXkzZk14R1k1ZEdwQjJlNzZONDlVbGdqc084Vm5iUVF5WnhCUHd1WjQyQmNXWC10MUY3aUdNeXBaZUdVaXQ1N1lUNDY5bm80X0FLdGxyWXJjX3ZoRFBzMUFsSWNfS0dUUmptN3BSQlhyUFNaaE53V0taZ2djX3hILWFKWm9WZk5zQzRwTnRPNkxUWkRjNlphQUdNT0lQRHdMc21Lcw?oc=5",
-   "publicado": "2026-11-11T10:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
    ],
    "tickers": [
     "PETR4"
@@ -1105,7 +1136,7 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar abre em queda com plano de ajuste fiscal do governo Lula no radar",
+   "titulo": "Dólar recua com plano de ajuste fiscal do governo Lula no radar; Bolsa sobe",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-com-plano-de-ajuste-fiscal-do-governo-lula-no-radar.shtml",
    "publicado": "2026-11-11T09:44-03:00",
@@ -1129,19 +1160,6 @@
    "tickers": []
   },
   {
-   "titulo": "Casas Bahia (BHIA3) nega decisão sobre fechamento de lojas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSDVXM1NLeW40Z2d3N05ma2Rub2FVazBvSGlSN0VnOXUyNVNvQlJQckdCZ09kbHk5cElSTU1NaENJdy1COVVrajA5eGVkbzNyZFliRTdYTTVLUHFDQ2tqRmdvMVlfQW9hampVNHpRS3dlcUN6RHR0cXR3cHFEbkRSYnJZeXg5MlNTZGgzNnJzd2d2ZE0tWHRqOERtZ9IBoAFBVV95cUxNZ2RQTVhmWXN5blRhNXdkcVQ0VU05MU1TN0hSVHVhSkZfYWlrMEp0T0FFN2ltc1dWd0Vlb3Y2N3dfcHpqM3J2dzB0aUhHLUpCcHM3eGlHR0tRUkFLbnVFZ2FGUzNqZmZIazNEa1VCLVRhbDdvb0ZaN0FIVDV3Z1lNeXQyVi1jOVgwLU5GVTF3TDloNWRKVkROYVl5cFBxRlp6?oc=5",
-   "publicado": "2026-11-11T09:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BHIA3"
-   ]
-  },
-  {
    "titulo": "Banco Central da China promete intensificar o apoio político à economia",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcnJJMkhBbnJmVGxzR3VZbnlIZHlHRHo5aUZvUWRHUFRnVERpcGRZYlBhM0t5V2tmMWFpT3NlZ2tRRnNDZkpmbEFqUTVsV1UzMWJUUUxXZ2V4d2FiTTZXblU3UUFNQ1VFOU9jVjNpanJOQXlkQ0xVXy1ER09QR1VDMXdTNVVPNTVkNk51ZkRwdGN2RkZ5LXJsT3dPNXNXN1lHajNnZ3Z4UjhnbGp2SkpUc3BOMnpNVzVYaFZRSmtHWkpzUHloUkk4NDBn?oc=5",
@@ -1149,6 +1167,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar abre em queda com pauta fiscal no radar do mercado",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSnE4d1A3WktXWi0yNW9HUkN5NjNBNmE4QUFOZVJDT2xHdFZZb3RzQ0VKSGdYSG1vMzZGTWFqRkttVk80eEkxeV9jU1M1aHdhaFpDYUVVR1l1cWlkR25QbTRJc2hnUS1zd09FNk1ORmxwQWxBd3AzSUxfVUNrVVJmdS1IN2wtVERVLVJUYm1nRDVpZkRBaThkaHR2dDZNcTdLQUJTYkFn?oc=5",
+   "publicado": "2026-11-11T09:33-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
