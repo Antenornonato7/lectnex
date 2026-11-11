@@ -1,0 +1,42 @@
+# Resumo semanal do site (visitas, páginas, atalhos, inscritos, falhas) no chat PRIVADO do Telegram.
+# Horário: domingo, definido em coletor/relogio.py (workflow "Relógio").
+name: Resumo semanal do site
+run-name: "${{ inputs.enviar && 'Resumo semanal do site' || 'Resumo do site (só conferir, sem enviar)' }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      enviar:
+        description: "Enviar no Telegram (desmarcado: só mostra no log)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  resumo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            coletor
+            data/newsletter.json
+            data/telegram.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar biblioteca do Google
+        run: pip install -q google-auth==2.38.0 requests==2.32.3
+      - name: Montar e enviar
+        env:
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+          GITHUB_TOKEN: ${{ github.token }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          SO_LOG: ${{ inputs.enviar && '' || '1' }}
+        run: python3 coletor/resumo_site.py

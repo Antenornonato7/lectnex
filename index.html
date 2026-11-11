@@ -503,7 +503,7 @@
             const pct = v => `<span class="${LX.signClass(v)}">${v > 0 ? '+' : v < 0 ? '−' : ''}${LX.num(Math.abs(v), 2)}%</span>`;
             const hhmm = iso => new Date(iso).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
             const diaDe = iso => new Date(iso).toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
-            document.querySelectorAll('[data-atalho]').forEach(a => a.addEventListener('click', () => LX.track && LX.track('atalho_inicio', { id: a.dataset.atalho })));
+            document.querySelectorAll('[data-atalho]').forEach(a => a.addEventListener('click', () => LX.track && LX.track('atalho_' + a.dataset.atalho, { id: a.dataset.atalho })));
 
             /* 1. AGORA: cotações com fonte, atraso e horário */
             let ibov = null, cotEm = null;
