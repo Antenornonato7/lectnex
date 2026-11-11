@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T11:53-03:00",
+  "atualizado_em": "2026-11-11T11:55-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -83,11 +83,11 @@
     ],
     [
      "11:35",
-     172284.0
+     172442.0
     ],
     [
-     "11:38",
-     172385.0
+     "11:40",
+     172660.0
     ]
    ]
   },
@@ -232,11 +232,11 @@
     ],
     [
      "11:50",
-     5.5626
+     5.5577
     ],
     [
-     "11:53",
-     5.5627
+     "11:55",
+     5.5601
     ]
    ]
   },
@@ -517,7 +517,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.2,
+    "ibov30": -0.11,
     "dolar30": 0.04
    },
    {
@@ -548,7 +548,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": -0.11
    },
    {
     "hora": "11:30",
@@ -561,7 +561,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.07
    },
    {
     "hora": "11:46",
@@ -573,6 +573,35 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:51",
+    "titulo": "Amazon e Google podem ganhar bilhões de dólares com IPO da Anthropic",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/amazon-e-google-podem-ganhar-bilhoes-de-dolares-com-ipo-da-anthropic.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:52",
+    "titulo": "Petrobras (PETR4) pagará menos dividendos? Ações lideram quedas do Ibovespa após aumento do capex no 3T26",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbHByRmtsaVlNNlpRazBLV2pFWjBSSkFBdGVHd1RDcEt2ZWlnZnRPMHZyMlV2YmxJbE84MDB2UlQ5eVVRYUYyWG15R3JWd0RQT0FUWWZ1SGhYUEZkUmhkbVFmcHRrWEFMOExoVkwtZkdoUmluajlSTHBHMFVNSGZOQXlCanB6QnkwYmJpZHpBRXdibkNaRWoyV3hXRE8zektURExqRUVjN092NTktQ1RVTXJWZC0wbnlaTExSUHBPazZoamhaS0Q1UFl6Skh3N3hXM2JpSk5LTDg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1164,6 +1193,31 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Amazon e Google podem ganhar bilhões de dólares com IPO da Anthropic",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/amazon-e-google-podem-ganhar-bilhoes-de-dolares-com-ipo-da-anthropic.shtml",
+   "publicado": "2026-11-11T11:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras (PETR4) pagará menos dividendos? Ações lideram quedas do Ibovespa após aumento do capex no 3T26",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbHByRmtsaVlNNlpRazBLV2pFWjBSSkFBdGVHd1RDcEt2ZWlnZnRPMHZyMlV2YmxJbE84MDB2UlQ5eVVRYUYyWG15R3JWd0RQT0FUWWZ1SGhYUEZkUmhkbVFmcHRrWEFMOExoVkwtZkdoUmluajlSTHBHMFVNSGZOQXlCanB6QnkwYmJpZHpBRXdibkNaRWoyV3hXRE8zektURExqRUVjN092NTktQ1RVTXJWZC0wbnlaTExSUHBPazZoamhaS0Q1UFl6Skh3N3hXM2JpSk5LTDg?oc=5",
+   "publicado": "2026-11-11T11:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1193,7 +1247,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T11:53-03:00",
+ "atualizado_em": "2026-11-11T11:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1208,6 +1262,31 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Petrobras (PETR4) pagará menos dividendos? Ações lideram quedas do Ibovespa após aumento do capex no 3T26",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbHByRmtsaVlNNlpRazBLV2pFWjBSSkFBdGVHd1RDcEt2ZWlnZnRPMHZyMlV2YmxJbE84MDB2UlQ5eVVRYUYyWG15R3JWd0RQT0FUWWZ1SGhYUEZkUmhkbVFmcHRrWEFMOExoVkwtZkdoUmluajlSTHBHMFVNSGZOQXlCanB6QnkwYmJpZHpBRXdibkNaRWoyV3hXRE8zektURExqRUVjN092NTktQ1RVTXJWZC0wbnlaTExSUHBPazZoamhaS0Q1UFl6Skh3N3hXM2JpSk5LTDg?oc=5",
+   "publicado": "2026-11-11T11:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Amazon e Google podem ganhar bilhões de dólares com IPO da Anthropic",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/amazon-e-google-podem-ganhar-bilhoes-de-dolares-com-ipo-da-anthropic.shtml",
+   "publicado": "2026-11-11T11:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Taxas dos DIs recuam com mercado avaliando plano fiscal do governo",
    "fonte": "InfoMoney",
@@ -1343,30 +1422,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nissan cuts sales forecast again on China woes as CEO outlines plan to fight back",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/11/nissan-sales-forecast-earnings-china.html",
-   "publicado": "2026-11-11T10:18-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Escândalo com CEO da Nvidia expõe influência de Singapura para enviar chips à China",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/escandalo-com-ceo-da-nvidia-expoe-influencia-de-singapura-para-enviar-chips-a-china.shtml",
-   "publicado": "2026-11-11T09:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
