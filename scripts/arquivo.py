@@ -5,7 +5,7 @@ import datetime as dt, glob, json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from semana import head, foot, e, BASE, br  # mesmo cabeçalho/rodapé das páginas semanais
 
-TERM = {'bullish': ('▲ Comprador', 'text-emerald-600 dark:text-emerald-400'), 'bearish': ('▼ Vendedor', 'text-rose-600 dark:text-rose-400'), 'neutro': ('● Neutro', 'text-slate-500')}
+TERM = {'bullish': ('▲ Viés de alta', 'text-emerald-600 dark:text-emerald-400'), 'bearish': ('▼ Viés de baixa', 'text-rose-600 dark:text-rose-400'), 'neutro': ('● Neutro', 'text-slate-500')}
 SETA = {'alta': '▲', 'baixa': '▼', 'neutro': '●', 'volatil': '↕'}
 DIAS = ['segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo']
 

@@ -33,7 +33,7 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261110b">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261111a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
@@ -59,38 +59,165 @@
     <section id="hero" class="py-6 border-b border-slate-300 dark:border-lect-borderDark grid-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-4">
+            <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
                 <div>
-                    <span class="term-label text-lect-teal font-bold">PAINEL MACRO · DADOS OFICIAIS DO BANCO CENTRAL</span>
+                    <span class="term-label text-lect-teal font-bold">PAINEL DO PREGÃO · WIN E WDO</span>
                     <h1 class="font-display text-3xl sm:text-4xl font-bold tracking-tight mt-1">Mercado Hoje</h1>
-                    <p id="hero-summary" class="hidden sm:block sm:min-h-[4.5rem] text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl leading-relaxed">Carregando leitura do dia…</p>
                 </div>
-                <div class="font-mono text-[11px] text-slate-500 flex flex-wrap gap-2">
-                    <button type="button" id="pg-open" class="px-2.5 py-1 bg-lect-orange text-lect-navy font-bold inline-flex items-center gap-1.5 hover:brightness-110"><i class="ph-bold ph-device-mobile"></i>MODO PREGÃO</button>
-                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Próximo Copom: <strong id="next-copom" class="text-lect-navy dark:text-white">—</strong></span>
-                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">WDO vigente: <strong id="hero-wdo" class="text-lect-orange">—</strong></span>
-                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">WIN vigente: <strong id="hero-win" class="text-lect-teal">—</strong></span>
+                <button type="button" id="pg-open" class="px-2.5 py-1.5 bg-lect-orange text-lect-navy font-mono text-[11px] font-bold inline-flex items-center gap-1.5 hover:brightness-110"><i class="ph-bold ph-device-mobile"></i>MODO PREGÃO</button>
+            </div>
+
+            <!-- PRIMEIRA TELA: três blocos. "Agora" é ao vivo; "O que importa hoje" é o cenário escrito antes da abertura. -->
+            <div id="agora" class="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-4">
+                <div class="term-panel !border-t-4 !border-t-lect-teal p-4 sm:p-5 flex flex-col min-w-0">
+                    <div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
+                        <h2 class="font-display text-base font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-pulse text-lect-teal"></i>Agora</h2>
+                        <span class="font-mono text-[10px] font-bold text-lect-teal">ÚLTIMA ATUALIZAÇÃO DO MERCADO</span>
+                    </div>
+                    <div id="ag-mkt" class="mt-3 grid grid-cols-2 gap-3 font-mono tabular-nums min-h-[5.5rem]"><span class="col-span-2 text-sm text-slate-500">Carregando cotações…</span></div>
+                    <div class="mt-3 pt-3 border-t border-slate-200 dark:border-lect-borderDark">
+                        <span class="term-label">Surpresas nos dados de hoje</span>
+                        <div id="ag-sp" class="mt-1 text-sm text-slate-500 min-h-[1.5rem]">—</div>
+                    </div>
+                    <a href="#ultimas" class="mt-auto pt-3 font-mono text-[11px] font-bold text-lect-teal hover:underline">Notícias ao vivo ↓</a>
+                </div>
+                <div class="term-panel !border-t-4 !border-t-lect-orange p-4 sm:p-5 flex flex-col min-w-0">
+                    <div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
+                        <h2 class="font-display text-base font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-sparkle text-lect-orange"></i>O que importa hoje</h2>
+                        <span id="ag-imp-when" class="font-mono text-[10px] font-bold text-lect-orange">CENÁRIO DE ABERTURA</span>
+                    </div>
+                    <ol id="ag-imp" class="mt-3 space-y-3 min-h-[9rem]"></ol>
+                    <p class="mt-auto pt-3 font-mono text-[11px] text-slate-500"><span id="ag-imp-nota">Escrito antes da abertura. Não é atualizado durante o dia.</span> <a href="#leitura" class="font-bold text-lect-teal hover:underline whitespace-nowrap">Leitura completa ↓</a></p>
+                </div>
+                <div class="term-panel !border-t-4 !border-t-lect-navy dark:!border-t-slate-400 p-4 sm:p-5 flex flex-col min-w-0">
+                    <div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
+                        <h2 class="font-display text-base font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-calendar-star text-lect-teal"></i>Próximo evento</h2>
+                        <span id="ag-ev-cd" class="font-mono text-[10px] font-bold text-slate-500"></span>
+                    </div>
+                    <div id="ag-ev" class="mt-3 min-h-[9rem] text-sm text-slate-500">—</div>
+                    <a id="ag-ev-link" href="#cal-wrap" class="mt-auto pt-3 font-mono text-[11px] font-bold text-lect-teal hover:underline">Calendário da semana ↓</a>
                 </div>
             </div>
 
-            <!-- AGORA: o dia em 5 segundos -->
-            <div id="agora" class="term-panel border-l-4 border-l-lect-orange mb-4" aria-label="Resumo do momento">
-                <div class="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-slate-200 dark:divide-lect-borderDark">
-                    <a href="#cal-wrap" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-timer text-lect-orange"></i>Próximo dado forte</span><div id="ag-ev" class="mt-1.5 text-sm text-slate-500 min-h-[2.75rem]">—</div></a>
-                    <a href="#leitura" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-thermometer-simple text-lect-teal"></i>Termômetro do dia</span><div id="ag-term" class="min-h-[2.75rem] mt-1.5 text-sm text-slate-500">—</div></a>
-                    <a href="#mapa" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-chart-line text-lect-teal"></i>Ibovespa · Dólar</span><div id="ag-mkt" class="min-h-[2.75rem] mt-1.5 font-mono text-sm">—</div></a>
-                    <a href="#cal-wrap" class="p-4 hover:bg-slate-50 dark:hover:bg-lect-bgDark min-w-0"><span class="term-label flex items-center gap-1.5"><i class="ph-bold ph-lightning text-lect-orange"></i>Surpresas hoje</span><div id="ag-sp" class="min-h-[2.75rem] mt-1.5 text-sm text-slate-500">—</div></a>
-                </div>
+            <!-- Atalhos: o que fazer agora -->
+            <div class="grid grid-cols-3 gap-2 sm:gap-3 mb-4" aria-label="Atalhos">
+                <a href="futuros.html#plano" data-atalho="plano" class="term-panel px-2 py-3 sm:px-4 flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 text-center sm:text-left hover:border-lect-teal transition-colors"><i class="ph-bold ph-list-checks text-2xl text-lect-teal"></i><span class="min-w-0"><strong class="block font-display text-xs sm:text-sm leading-tight">Preparar meu dia</strong><span class="hidden sm:block text-xs text-slate-500">Plano do Dia: limite de perda e eventos</span></span></a>
+                <a href="futuros.html#diario" data-atalho="diario" class="term-panel px-2 py-3 sm:px-4 flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 text-center sm:text-left hover:border-lect-teal transition-colors"><i class="ph-bold ph-notebook text-2xl text-lect-teal"></i><span class="min-w-0"><strong class="block font-display text-xs sm:text-sm leading-tight">Registrar operação</strong><span class="hidden sm:block text-xs text-slate-500">Diário de trades, salvo no seu navegador</span></span></a>
+                <a href="laboratorio.html" data-atalho="estudo" class="term-panel px-2 py-3 sm:px-4 flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 text-center sm:text-left hover:border-lect-teal transition-colors"><i class="ph-bold ph-graduation-cap text-2xl text-lect-teal"></i><span class="min-w-0"><strong class="block font-display text-xs sm:text-sm leading-tight">Continuar estudando</strong><span class="hidden sm:block text-xs text-slate-500">Lições e simuladores do Laboratório</span></span></a>
             </div>
-            <div id="pn-acoes" class="hidden -mt-2 mb-4 term-panel px-4 py-2 font-mono text-xs flex items-center gap-x-4 gap-y-1 flex-wrap"></div>
-            <nav class="flex gap-1.5 overflow-x-auto thin-scroll pb-1 mb-4 font-mono text-[11px]" aria-label="Seções da página">
+
+            <div class="hidden mb-4" data-lx-news="chamada" data-titulo="Quer este resumo pronto antes da abertura?"></div>
+
+            <div id="pn-acoes" class="hidden mb-4 term-panel px-4 py-2 font-mono text-xs flex items-center gap-x-4 gap-y-1 flex-wrap"></div>
+            <nav class="flex gap-1.5 overflow-x-auto thin-scroll pb-1 font-mono text-[11px]" aria-label="Seções da página">
                 <a href="#leitura" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Leitura do Dia</a>
+                <a href="#indicadores" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Juros e inflação</a>
                 <a href="#noticias" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Calendário</a>
                 <a href="#mapa" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Mapa da bolsa</a>
                 <a href="#agenda" class="shrink-0 px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:text-lect-teal">Vencimentos e câmbio</a>
                 <button type="button" id="pn-open" class="shrink-0 order-first sm:order-none sm:ml-auto px-2.5 py-1 border border-lect-teal/60 text-lect-teal hover:bg-lect-teal/10 inline-flex items-center gap-1.5"><i class="ph-bold ph-sliders-horizontal"></i>Personalizar</button>
             </nav>
+        </div>
+    </section>
 
+    <!-- ================================================================================= -->
+    <!-- LEITURA DO DIA (IA) — conteúdo em data/leitura.json, gerado por tarefa agendada nos dias úteis -->
+    <!-- ================================================================================= -->
+    <section id="surpresas" class="hidden pt-6 scroll-mt-28" aria-live="polite">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div id="sp-list" class="grid gap-3"></div></div>
+    </section>
+
+    <section id="leitura" class="py-8 min-h-[640px] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Antes do dado: data/antes.json (scripts/antes_dado.py, 7h20 nos dias de evento forte) -->
+            <div id="antes" class="hidden mb-4 term-panel border-l-4 border-l-lect-orange"></div>
+            <script>(function(){
+                var el=document.getElementById('antes');
+                fetch('data/antes.json?t='+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(a){
+                    if(!a||!a.data||a.vazio||a.data!==LX.iso(LX.todayBRT()))return;
+                    var esc=LX.esc,p=function(v){return v==null?'—':LX.pct(v,2,true)},cor=function(v){return v>0?'text-emerald-600 dark:text-emerald-400':v<0?'text-rose-600 dark:text-rose-400':'text-slate-500'};
+                    var chip=function(l,v){return v==null?'':'<span class="px-1.5 py-0.5 font-mono text-[10px] font-bold '+(v>0?'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400':v<0?'bg-rose-500/15 text-rose-700 dark:text-rose-400':'bg-slate-500/10')+'">'+l+' '+p(v)+'</span>'};
+                    var SP={'acima':'acima do esperado','abaixo':'abaixo do esperado','em linha':'em linha'};
+                    var rows=(a.passadas||[]).slice(0,5).map(function(x){return '<li class="flex flex-wrap items-center gap-x-3 gap-y-1 py-1.5"><span class="font-mono text-xs font-bold w-16">'+x.data.slice(8,10)+'/'+x.data.slice(5,7)+'/'+x.data.slice(2,4)+'</span><span class="text-xs text-slate-500 w-32">'+esc(SP[x.surpresa]||x.resultado||'')+'</span>'+chip('WIN',x.win)+chip('WDO',x.wdo)+(x.abertura?'<span class="font-mono text-[10px] text-slate-400" title="dado saiu com a bolsa fechada: inclui o gap da abertura">*abertura</span>':'')+(x.janela==='1h'?'<span class="font-mono text-[10px] text-slate-400" title="divulgação antiga: medida com barras de 1 hora">1 h</span>':'')+'</li>'}).join('');
+                    var st=function(nome,e){return e?'<div class="text-center"><span class="term-label block">'+nome+'</span><strong class="block font-display text-lg">'+e.sobe+'% <span class="text-[11px] font-mono text-slate-500 font-normal">subiu</span></strong><span class="block font-mono text-[11px]"><span class="'+cor(e.mediana)+'">mediana '+p(e.mediana)+'</span> · ±'+LX.num(e.movimento,2)+'%</span></div>':''};
+                    var dv=a.divulgacoes||{},mm=a.manchetes||{},n=Math.max((dv.win||{}).n||0,(dv.wdo||{}).n||0),nm=(mm.win||{}).n||0;
+                    el.innerHTML='<div class="p-4 sm:p-5 grid gap-4 lg:grid-cols-[1.1fr_1fr] items-start">'
+                        +'<div><span class="term-label text-lect-orange font-bold flex items-center gap-1.5"><i class="ph-bold ph-clock-counter-clockwise"></i>ANTES DO DADO · HOJE'+(a.hora?' ÀS '+esc(a.hora).toUpperCase():'')+'</span>'
+                        +'<h2 class="font-display text-xl sm:text-2xl font-bold mt-1 leading-tight">'+esc(a.evento)+'</h2>'
+                        +(a.consenso?'<p class="font-mono text-xs text-slate-500 mt-1">consenso '+esc(String(a.consenso))+(a.anterior?' · anterior '+esc(String(a.anterior)):'')+'</p>':'')
+                        +(rows?'<p class="text-sm mt-3 text-slate-600 dark:text-slate-300">Como o mercado reagiu nas últimas vezes (30 min depois; 1 h nas mais antigas):</p><ul class="mt-1 divide-y divide-slate-200 dark:divide-lect-borderDark">'+rows+'</ul>':'<p class="text-sm mt-3 text-slate-500">Primeira divulgação no nosso histórico de reações.</p>')+'</div>'
+                        +'<div class="space-y-3">'
+                        +(n>=3?'<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold">NAS ÚLTIMAS '+n+' DIVULGAÇÕES</span><div class="grid grid-cols-2 gap-2 mt-2">'+st('IBOVESPA · WIN',dv.win)+st('DÓLAR · WDO',dv.wdo)+'</div></div>':'')
+                        +(a.por_surpresa&&a.por_surpresa.acima&&a.por_surpresa.abaixo?(function(ps){var c=function(e){return e?'<b>'+e.sobe+'%</b>':'—'};var n=function(x){return Math.max((x.win||{}).n||0,(x.wdo||{}).n||0)};return '<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold text-lect-orange">SE VIER ACIMA OU ABAIXO DO CONSENSO</span><table class="w-full mt-2 font-mono text-xs text-center"><thead><tr class="text-[10px] text-slate-500"><th class="text-left font-normal py-1">SURPRESA</th><th class="font-normal">VEZES</th><th class="font-normal">WIN SUBIU</th><th class="font-normal">WDO SUBIU</th></tr></thead><tbody><tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="text-left py-1.5">▲ Acima</td><td>'+n(ps.acima)+'</td><td>'+c(ps.acima.win)+'</td><td>'+c(ps.acima.wdo)+'</td></tr><tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="text-left py-1.5">▼ Abaixo</td><td>'+n(ps.abaixo)+'</td><td>'+c(ps.abaixo.win)+'</td><td>'+c(ps.abaixo.wdo)+'</td></tr></tbody></table></div>'})(a.por_surpresa):'')
+                        +(nm>=3?'<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold">'+nm+' MANCHETES DE '+esc((mm.nome||'').toUpperCase())+'</span><div class="grid grid-cols-2 gap-2 mt-2">'+st('IBOVESPA · WIN',mm.win)+st('DÓLAR · WDO',mm.wdo)+'</div></div>':'')
+                        +(n<5?'<p class="text-[11px] text-lect-orange">Amostra pequena: o histórico cresce a cada divulgação. O passado não garante o próximo movimento.</p>':'<p class="text-[11px] text-slate-500">O passado não garante o próximo movimento.</p>')
+                        +'<a href="manchetes.html#'+esc(mm.tema||'')+'" class="inline-flex items-center gap-1 font-mono text-xs font-bold text-lect-teal hover:underline">Histórico completo no arquivo de manchetes <i class="ph-bold ph-arrow-right"></i></a> <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></div></div>';
+                    el.classList.remove('hidden');
+                    LX.track&&LX.track('antes_do_dado_visto',{evento:a.tipo});
+                }).catch(function(){});
+            })();</script>
+            <div class="term-panel overflow-hidden !border-t-4 !border-t-lect-orange">
+                <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
+                    <div class="flex items-center gap-3">
+                        <span class="w-9 h-9 grid place-items-center bg-lect-orange/15"><i class="ph-duotone ph-sparkle text-xl text-lect-orange"></i></span>
+                        <div><span class="term-label font-bold text-lect-orange block">LEITURA DO DIA · IA · CENÁRIO DE ABERTURA</span><strong id="lt-title" class="font-display text-lg leading-tight">—</strong></div>
+                    </div>
+                    <div class="flex items-center gap-2 font-mono text-[10px]">
+                        <span id="lt-when" class="px-2 py-1 bg-slate-100 dark:bg-lect-bgDark text-slate-500"></span>
+                        <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
+                    <div class="lg:col-span-5 p-5">
+                        <span id="lt-resumo-lbl" class="term-label font-bold">O QUE IMPORTA HOJE</span>
+                        <ul id="lt-resumo" class="mt-2 space-y-2"></ul>
+                    </div>
+                    <div class="lg:col-span-3 p-5">
+                        <span class="term-label font-bold">NA AGENDA</span>
+                        <div id="lt-destaques" class="mt-2 space-y-2"></div>
+                        <div id="lt-exterior" class="mt-4"></div>
+                    </div>
+                    <div class="lg:col-span-4 p-5 space-y-3" id="lt-thermo"></div>
+                </div>
+                <div id="ultimas" class="border-t border-slate-200 dark:border-lect-borderDark bg-lect-teal/[0.04] min-h-[260px]">
+                    <div class="px-5 pt-4 flex flex-wrap items-center justify-between gap-2">
+                        <span class="term-label font-bold flex items-center gap-2"><span class="px-1.5 py-0.5 bg-red-600 text-white text-[10px] tracking-wider flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white lx-pulse-red"></span>AO VIVO</span>AGORA NO MERCADO <span class="hidden sm:inline font-normal text-slate-500 normal-case">· atualiza sozinho durante o dia</span></span>
+                        <span class="flex items-center gap-3"><a href="hoje.html" class="font-mono text-[10px] font-bold text-lect-orange hover:underline">gráfico do dia →</a><span id="agora-hora" class="font-mono text-[10px] font-bold text-lect-teal"></span><button id="agora-alertas" type="button" class="font-mono text-[10px] text-slate-500 hover:text-lect-teal" title="Avisos de manchete forte enquanto você navega"></button></span>
+                    </div>
+                    <div class="px-5 pt-3 flex items-center gap-2 font-mono text-[10px] font-bold"><span id="agora-titulo10" class="text-lect-orange">⚡ ÚLTIMOS 10 MINUTOS</span><span class="flex-1 h-px bg-slate-200 dark:bg-lect-borderDark"></span></div>
+                    <ol id="agora-lista" class="p-5 pt-3 grid grid-cols-1 md:grid-cols-2 gap-3"></ol>
+                    <details id="agora-linha" class="mx-5 mb-3 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-bgDark group" open>
+                        <summary class="px-3 py-2 cursor-pointer font-mono text-[10px] font-bold flex items-center justify-between"><span>LINHA DO TEMPO · ÚLTIMAS 3 HORAS <span id="agora-qtd" class="text-slate-500 font-normal"></span></span><i class="ph-bold ph-caret-down group-open:rotate-180 transition-transform"></i></summary>
+                        <ol id="agora-tempo" class="max-h-[330px] overflow-y-auto thin-scroll divide-y divide-slate-100 dark:divide-lect-borderDark"></ol>
+                    </details>
+                    <p class="px-5 pb-4 text-[11px] text-slate-500 dark:text-slate-400">Coleta automática a cada ~2,5 min em Reuters, Valor, InfoMoney, Folha, Estadão, Bloomberg Línea, Agência Brasil e CNBC. Empresas citadas aparecem com a variação do dia (atraso de ~30 min). Classificação por impacto feita por regras; abra a fonte para ler a matéria.</p>
+                </div>
+                <div id="lt-news-wrap" class="hidden border-t border-slate-200 dark:border-lect-borderDark">
+                    <div class="px-5 pt-4 flex items-center justify-between"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-newspaper text-lect-teal"></i>NOTÍCIAS QUE IMPORTAM</span><span class="font-mono text-[10px] text-slate-500">seleção da IA · com o impacto em cada ativo</span></div>
+                    <div id="lt-news" class="p-5 pt-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3"></div>
+                </div>
+                <div id="lt-fontes" class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[10px] font-mono text-slate-500 flex flex-wrap gap-x-3 gap-y-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================================= -->
+    <!-- INDICADORES OFICIAIS — juros, inflação e câmbio (saíram da primeira tela)          -->
+    <!-- ================================================================================= -->
+    <section id="indicadores" class="py-8 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-4 flex flex-col lg:flex-row lg:items-end justify-between gap-3">
+                <div>
+                    <span class="term-label text-lect-teal font-bold">INDICADORES OFICIAIS · BANCO CENTRAL</span>
+                    <h2 class="font-display text-2xl font-bold">Juros, inflação e câmbio</h2>
+                    <p id="hero-summary" class="hidden sm:block text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl leading-relaxed">Carregando indicadores…</p>
+                </div>
+                <div class="font-mono text-[11px] text-slate-500 flex flex-wrap gap-2">
+                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Próximo Copom: <strong id="next-copom" class="text-lect-navy dark:text-white">—</strong></span>
+                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">WDO vigente: <strong id="hero-wdo" class="text-lect-orange">—</strong></span>
+                    <span class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">WIN vigente: <strong id="hero-win" class="text-lect-teal">—</strong></span>
+                </div>
+            </div>
             <!-- 6 KPIs (compactos) -->
             <div class="lx-kpis grid grid-cols-3 lg:grid-cols-6 gap-2 font-mono tabular-nums">
                 <div class="term-panel p-4 border-t-2 border-t-lect-navy dark:border-t-lect-teal">
@@ -129,111 +256,6 @@
                     <span class="text-[11px] text-slate-500">Referência oficial do WDO · <span data-lx="ptax-d"></span></span>
                     <span class="src-tag block mt-1">BANCO CENTRAL</span>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ================================================================================= -->
-    <!-- LEITURA DO DIA (IA) — conteúdo em data/leitura.json, gerado por tarefa agendada nos dias úteis -->
-    <!-- ================================================================================= -->
-    <section id="surpresas" class="hidden pt-6 scroll-mt-28" aria-live="polite">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div id="sp-list" class="grid gap-3"></div></div>
-    </section>
-
-    <section id="leitura" class="py-8 min-h-[640px] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Próximo evento forte: automático, pelo calendário (data/calendario.json) -->
-            <a id="prox-evento" href="manchetes.html" class="hidden mb-4 flex flex-wrap items-center justify-between gap-2 px-4 py-2.5 bg-lect-navy text-white border-l-4 border-lect-orange hover:brightness-110"></a>
-            <script>(function(){
-                var el=document.getElementById('prox-evento');
-                var ICONE={BR:'ph-bank',US:'ph-flag',CN:'ph-globe-hemisphere-east',EU:'ph-globe-hemisphere-west'};
-                var DIAS=['domingo','segunda','terça','quarta','quinta','sexta','sábado'];
-                fetch('data/calendario.json?t='+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(c){
-                    if(!c)return;
-                    var agora=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'}));
-                    var quando=function(e){var m=/^(\d{1,2})h(\d{2})?$/.exec(e.hora||'');var d=new Date(e.data+'T12:00:00');d.setHours(m?+m[1]:9,m&&m[2]?+m[2]:0,0,0);return d};
-                    var evs=(c.eventos||[]).filter(function(e){if((e.importancia||1)<3)return false;var q=quando(e);return q>=new Date(agora-30*60000)&&q<=new Date(+agora+4*86400000)}).sort(function(a,b){return quando(a)-quando(b)});
-                    if(!evs.length)return;
-                    var e=evs[0],juntos=evs.filter(function(x){return x.data===e.data&&x.hora===e.hora}),q=quando(e),hoje=e.data===LX.iso(LX.todayBRT());
-                    var nome=e.evento.replace(/\s*\(.*?\)\s*$/,'').replace(/\s+—.*$/,'');
-                    var dia=hoje?'hoje':DIAS[q.getDay()]+', '+e.data.slice(8,10)+'/'+e.data.slice(5,7);
-                    var extra=juntos.length>1?' + '+juntos.slice(1).map(function(x){return x.evento.replace(/\s*\(.*?\)\s*$/,'')}).join(', '):'';
-                    el.href=e.tipo==='copom'?'copom.html':'#rx-wrap';
-                    el.innerHTML='<span class="flex items-center gap-2 text-sm min-w-0"><i class="ph-bold '+(ICONE[e.pais]||'ph-calendar-star')+' text-lect-orange"></i><strong>'+LX.esc(nome)+' '+dia+(e.hora?', às '+LX.esc(e.hora):'')+'</strong>'
-                        +'<span class="hidden sm:inline text-slate-300">'+LX.esc(extra)+(e.consenso?' · consenso '+LX.esc(String(e.consenso)):'')+'</span></span>'
-                        +'<span class="font-mono text-xs font-bold text-lect-orange">'+(e.tipo==='copom'?'ver página especial →':'como o mercado costuma reagir →')+'</span>';
-                    el.classList.remove('hidden');
-                    if(hoje)setTimeout(function(){var a=document.getElementById('antes');if(a&&!a.classList.contains('hidden'))el.classList.add('hidden')},2500);
-                }).catch(function(){});
-            })();</script>
-            <!-- Antes do dado: data/antes.json (scripts/antes_dado.py, 7h20 nos dias de evento forte) -->
-            <div id="antes" class="hidden mb-4 term-panel border-l-4 border-l-lect-orange"></div>
-            <script>(function(){
-                var el=document.getElementById('antes');
-                fetch('data/antes.json?t='+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(a){
-                    if(!a||!a.data||a.vazio||a.data!==LX.iso(LX.todayBRT()))return;
-                    var esc=LX.esc,p=function(v){return v==null?'—':LX.pct(v,2,true)},cor=function(v){return v>0?'text-emerald-600 dark:text-emerald-400':v<0?'text-rose-600 dark:text-rose-400':'text-slate-500'};
-                    var chip=function(l,v){return v==null?'':'<span class="px-1.5 py-0.5 font-mono text-[10px] font-bold '+(v>0?'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400':v<0?'bg-rose-500/15 text-rose-700 dark:text-rose-400':'bg-slate-500/10')+'">'+l+' '+p(v)+'</span>'};
-                    var SP={'acima':'acima do esperado','abaixo':'abaixo do esperado','em linha':'em linha'};
-                    var rows=(a.passadas||[]).slice(0,5).map(function(x){return '<li class="flex flex-wrap items-center gap-x-3 gap-y-1 py-1.5"><span class="font-mono text-xs font-bold w-16">'+x.data.slice(8,10)+'/'+x.data.slice(5,7)+'/'+x.data.slice(2,4)+'</span><span class="text-xs text-slate-500 w-32">'+esc(SP[x.surpresa]||x.resultado||'')+'</span>'+chip('WIN',x.win)+chip('WDO',x.wdo)+(x.abertura?'<span class="font-mono text-[10px] text-slate-400" title="dado saiu com a bolsa fechada: inclui o gap da abertura">*abertura</span>':'')+(x.janela==='1h'?'<span class="font-mono text-[10px] text-slate-400" title="divulgação antiga: medida com barras de 1 hora">1 h</span>':'')+'</li>'}).join('');
-                    var st=function(nome,e){return e?'<div class="text-center"><span class="term-label block">'+nome+'</span><strong class="block font-display text-lg">'+e.sobe+'% <span class="text-[11px] font-mono text-slate-500 font-normal">subiu</span></strong><span class="block font-mono text-[11px]"><span class="'+cor(e.mediana)+'">mediana '+p(e.mediana)+'</span> · ±'+LX.num(e.movimento,2)+'%</span></div>':''};
-                    var dv=a.divulgacoes||{},mm=a.manchetes||{},n=Math.max((dv.win||{}).n||0,(dv.wdo||{}).n||0),nm=(mm.win||{}).n||0;
-                    el.innerHTML='<div class="p-4 sm:p-5 grid gap-4 lg:grid-cols-[1.1fr_1fr] items-start">'
-                        +'<div><span class="term-label text-lect-orange font-bold flex items-center gap-1.5"><i class="ph-bold ph-clock-counter-clockwise"></i>ANTES DO DADO · HOJE'+(a.hora?' ÀS '+esc(a.hora).toUpperCase():'')+'</span>'
-                        +'<h2 class="font-display text-xl sm:text-2xl font-bold mt-1 leading-tight">'+esc(a.evento)+'</h2>'
-                        +(a.consenso?'<p class="font-mono text-xs text-slate-500 mt-1">consenso '+esc(String(a.consenso))+(a.anterior?' · anterior '+esc(String(a.anterior)):'')+'</p>':'')
-                        +(rows?'<p class="text-sm mt-3 text-slate-600 dark:text-slate-300">Como o mercado reagiu nas últimas vezes (30 min depois; 1 h nas mais antigas):</p><ul class="mt-1 divide-y divide-slate-200 dark:divide-lect-borderDark">'+rows+'</ul>':'<p class="text-sm mt-3 text-slate-500">Primeira divulgação no nosso histórico de reações.</p>')+'</div>'
-                        +'<div class="space-y-3">'
-                        +(n>=3?'<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold">NAS ÚLTIMAS '+n+' DIVULGAÇÕES</span><div class="grid grid-cols-2 gap-2 mt-2">'+st('IBOVESPA · WIN',dv.win)+st('DÓLAR · WDO',dv.wdo)+'</div></div>':'')
-                        +(a.por_surpresa&&a.por_surpresa.acima&&a.por_surpresa.abaixo?(function(ps){var c=function(e){return e?'<b>'+e.sobe+'%</b>':'—'};var n=function(x){return Math.max((x.win||{}).n||0,(x.wdo||{}).n||0)};return '<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold text-lect-orange">SE VIER ACIMA OU ABAIXO DO CONSENSO</span><table class="w-full mt-2 font-mono text-xs text-center"><thead><tr class="text-[10px] text-slate-500"><th class="text-left font-normal py-1">SURPRESA</th><th class="font-normal">VEZES</th><th class="font-normal">WIN SUBIU</th><th class="font-normal">WDO SUBIU</th></tr></thead><tbody><tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="text-left py-1.5">▲ Acima</td><td>'+n(ps.acima)+'</td><td>'+c(ps.acima.win)+'</td><td>'+c(ps.acima.wdo)+'</td></tr><tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="text-left py-1.5">▼ Abaixo</td><td>'+n(ps.abaixo)+'</td><td>'+c(ps.abaixo.win)+'</td><td>'+c(ps.abaixo.wdo)+'</td></tr></tbody></table></div>'})(a.por_surpresa):'')
-                        +(nm>=3?'<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold">'+nm+' MANCHETES DE '+esc((mm.nome||'').toUpperCase())+'</span><div class="grid grid-cols-2 gap-2 mt-2">'+st('IBOVESPA · WIN',mm.win)+st('DÓLAR · WDO',mm.wdo)+'</div></div>':'')
-                        +(n<5?'<p class="text-[11px] text-lect-orange">Amostra pequena: o histórico cresce a cada divulgação. O passado não garante o próximo movimento.</p>':'<p class="text-[11px] text-slate-500">O passado não garante o próximo movimento.</p>')
-                        +'<a href="manchetes.html#'+esc(mm.tema||'')+'" class="inline-flex items-center gap-1 font-mono text-xs font-bold text-lect-teal hover:underline">Histórico completo no arquivo de manchetes <i class="ph-bold ph-arrow-right"></i></a> <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></div></div>';
-                    el.classList.remove('hidden');
-                    LX.track&&LX.track('antes_do_dado_visto',{evento:a.tipo});
-                }).catch(function(){});
-            })();</script>
-            <div class="term-panel overflow-hidden !border-t-4 !border-t-lect-orange">
-                <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
-                    <div class="flex items-center gap-3">
-                        <span class="w-9 h-9 grid place-items-center bg-lect-orange/15"><i class="ph-duotone ph-sparkle text-xl text-lect-orange"></i></span>
-                        <div><span class="term-label font-bold text-lect-orange block">LEITURA DO DIA · IA</span><strong id="lt-title" class="font-display text-lg leading-tight">—</strong></div>
-                    </div>
-                    <div class="flex items-center gap-2 font-mono text-[10px]">
-                        <span id="lt-when" class="px-2 py-1 bg-slate-100 dark:bg-lect-bgDark text-slate-500"></span>
-                        <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
-                    <div class="lg:col-span-4 p-5 space-y-3" id="lt-thermo"></div>
-                    <div class="lg:col-span-5 p-5">
-                        <span id="lt-resumo-lbl" class="term-label font-bold">O QUE IMPORTA HOJE</span>
-                        <ul id="lt-resumo" class="mt-2 space-y-2"></ul>
-                    </div>
-                    <div class="lg:col-span-3 p-5">
-                        <span class="term-label font-bold">NA AGENDA</span>
-                        <div id="lt-destaques" class="mt-2 space-y-2"></div>
-                        <div id="lt-exterior" class="mt-4"></div>
-                    </div>
-                </div>
-                <div id="ultimas" class="border-t border-slate-200 dark:border-lect-borderDark bg-lect-teal/[0.04] min-h-[260px]">
-                    <div class="px-5 pt-4 flex flex-wrap items-center justify-between gap-2">
-                        <span class="term-label font-bold flex items-center gap-2"><span class="px-1.5 py-0.5 bg-red-600 text-white text-[10px] tracking-wider flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white lx-pulse-red"></span>AO VIVO</span>AGORA NO MERCADO</span>
-                        <span class="flex items-center gap-3"><a href="hoje.html" class="font-mono text-[10px] font-bold text-lect-orange hover:underline">gráfico do dia →</a><span id="agora-hora" class="font-mono text-[10px] font-bold text-lect-teal"></span><button id="agora-alertas" type="button" class="font-mono text-[10px] text-slate-500 hover:text-lect-teal" title="Avisos de manchete forte enquanto você navega"></button></span>
-                    </div>
-                    <div class="px-5 pt-3 flex items-center gap-2 font-mono text-[10px] font-bold"><span id="agora-titulo10" class="text-lect-orange">⚡ ÚLTIMOS 10 MINUTOS</span><span class="flex-1 h-px bg-slate-200 dark:bg-lect-borderDark"></span></div>
-                    <ol id="agora-lista" class="p-5 pt-3 grid grid-cols-1 md:grid-cols-2 gap-3"></ol>
-                    <details id="agora-linha" class="mx-5 mb-3 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-bgDark group" open>
-                        <summary class="px-3 py-2 cursor-pointer font-mono text-[10px] font-bold flex items-center justify-between"><span>LINHA DO TEMPO · ÚLTIMAS 3 HORAS <span id="agora-qtd" class="text-slate-500 font-normal"></span></span><i class="ph-bold ph-caret-down group-open:rotate-180 transition-transform"></i></summary>
-                        <ol id="agora-tempo" class="max-h-[330px] overflow-y-auto thin-scroll divide-y divide-slate-100 dark:divide-lect-borderDark"></ol>
-                    </details>
-                    <p class="px-5 pb-4 text-[11px] text-slate-500 dark:text-slate-400">Coleta automática a cada ~2,5 min em Reuters, Valor, InfoMoney, Folha, Estadão, Bloomberg Línea, Agência Brasil e CNBC. Empresas citadas aparecem com a variação do dia (atraso de ~30 min). Classificação por impacto feita por regras; abra a fonte para ler a matéria.</p>
-                </div>
-                <div id="lt-news-wrap" class="hidden border-t border-slate-200 dark:border-lect-borderDark">
-                    <div class="px-5 pt-4 flex items-center justify-between"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-newspaper text-lect-teal"></i>NOTÍCIAS QUE IMPORTAM</span><span class="font-mono text-[10px] text-slate-500">seleção da IA · com o impacto em cada ativo</span></div>
-                    <div id="lt-news" class="p-5 pt-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3"></div>
-                </div>
-                <div id="lt-fontes" class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[10px] font-mono text-slate-500 flex flex-wrap gap-x-3 gap-y-1"></div>
             </div>
         </div>
     </section>
@@ -371,7 +393,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261110a"></script>
+    <script src="assets/lectnex-core.js?v=20261111a"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -441,55 +463,91 @@
             const el = document.getElementById('placar-term');
             el.innerHTML = `<div class="term-panel">
                 <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
-                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-target text-lect-orange"></i>Placar do termômetro</span>
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-target text-lect-orange"></i>Placar do viés do modelo <span class="lx-demo">EXPERIMENTAL</span></span>
                     <span class="font-mono text-[10px] text-slate-500">mostramos os acertos e os erros · ${dias.length} pregões registrados</span></div>
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 p-5">
                     <div class="lg:col-span-5 grid grid-cols-2 gap-3">${kpi('win', 'WIN', 'Ibovespa')}${kpi('wdo', 'WDO', 'dólar à vista')}</div>
                     <div class="lg:col-span-7 space-y-2"><span class="term-label block">Últimos ${ult.length} pregões <span class="normal-case">(passe o mouse para ver o dia)</span></span>${row('win', 'WIN', 'IBOV')}${row('wdo', 'WDO', 'dólar')}
                         <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] text-slate-500 pt-1"><span><span class="inline-block w-2.5 h-2.5 bg-emerald-500 align-middle"></span> acertou</span><span><span class="inline-block w-2.5 h-2.5 bg-rose-500 align-middle"></span> errou</span><span><span class="inline-block w-2.5 h-2.5 bg-slate-200 dark:bg-lect-borderDark align-middle"></span> sem termômetro</span></div></div>
                 </div>
-                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">Como medimos: o termômetro sai às 7h40 e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou dentro da faixa (desde 09/11: ±0,7% no WIN e ±0,4% no WDO; antes, ±0,5% nos dois). WIN pelo Ibovespa à vista, WDO pelo dólar à vista. <a href="placar.html" class="text-lect-teal hover:underline">Placar completo, com todos os erros →</a> <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
+                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">${dias.length < 30 ? `<strong class="text-lect-orange">Amostra pequena (${dias.length} pregões): os percentuais acima ainda não dizem se o modelo é bom ou ruim.</strong> ` : ''}Como medimos: o viés do modelo sai às 7h40, antes da abertura, e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou dentro da faixa (desde 09/11: ±0,7% no WIN e ±0,4% no WDO; antes, ±0,5% nos dois). A conferência usa o <strong>Ibovespa à vista</strong> (para o WIN) e o <strong>dólar à vista</strong> (para o WDO), não os contratos futuros. <a href="placar.html" class="text-lect-teal hover:underline">Placar completo, com todos os erros →</a> <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
             el.classList.remove('hidden');
         }).catch(() => { });
 
         /* ---------- Meu painel: preferências salvas no navegador (assets/lectnex-painel.js edita) ---------- */
         window.lxPainel = () => { try { return Object.assign({ foco: 'ambos', acoes: [], ocultas: [] }, JSON.parse(localStorage.getItem('lectnex-painel-v1') || '{}')); } catch (_) { return { foco: 'ambos', acoes: [], ocultas: [] }; } };
 
-        /* ---------- AGORA: próximo dado, termômetro, Ibovespa/dólar e surpresas ---------- */
+        /* ---------- PRIMEIRA TELA: Agora (ao vivo) · O que importa hoje (cenário de abertura) · Próximo evento ---------- */
         (function () {
-            const $ = id => document.getElementById(id), hojeISO = LX.iso(LX.todayBRT());
+            const $ = id => document.getElementById(id), esc = LX.esc, hojeISO = LX.iso(LX.todayBRT());
             const pct = v => `<span class="${LX.signClass(v)}">${v > 0 ? '+' : v < 0 ? '−' : ''}${LX.num(Math.abs(v), 2)}%</span>`;
-            function ev() {
-                const nx = LX.calNext && LX.calNext();
-                if (!nx) { $('ag-ev').innerHTML = '<span class="text-slate-500">Nenhum dado de alto impacto nas próximas 36 h.</span>'; return; }
-                const left = nx.t - Date.now(), min = Math.max(0, Math.round(left / 6e4)), hot = left <= 15 * 6e4;
-                const quando = left <= 0 ? 'AGORA' : min < 60 ? `em ${min} min` : min < 1440 ? `em ${Math.floor(min / 60)}h${String(min % 60).padStart(2, '0')}` : `amanhã ${LX.esc(nx.e.hora)}`;
-                $('ag-ev').innerHTML = `<strong class="block truncate text-slate-900 dark:text-white">${(LX.calFlag || {})[nx.e.pais] || ''} ${LX.esc(nx.e.evento)}</strong><span class="font-mono text-xs ${hot ? 'text-lect-orange font-bold animate-pulse' : 'text-lect-teal'}">${quando}</span>${min < 1440 && left > 0 ? `<span class="font-mono text-[11px] text-slate-500"> · ${LX.esc(nx.e.hora)}</span>` : ''}`;
-            }
-            ev(); setInterval(ev, 30000); setTimeout(ev, 1500);
-            const T = { bullish: ['▲ alta', 'text-emerald-600 dark:text-emerald-400'], bearish: ['▼ baixa', 'text-rose-600 dark:text-rose-400'], neutro: ['● neutro', 'text-slate-500'] };
-            fetch('data/leitura.json?t=' + Math.floor(Date.now() / 6e4), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(l => {
-                if (!l) return;
-                if (l.termometro && l.data === hojeISO) $('ag-term').innerHTML = ['win', 'wdo'].filter(k => l.termometro[k] && (lxPainel().foco === 'ambos' || lxPainel().foco === k)).map(k => { const t = T[l.termometro[k].leitura] || T.neutro; return `<span class="inline-flex items-baseline gap-1 mr-3 font-mono"><span class="text-[11px] text-slate-500">${k.toUpperCase()}</span><strong class="${t[1]}">${t[0]}</strong></span>`; }).join('');
-                else if (l.tipo === 'sem-pregao' && l.proximo_pregao) $('ag-term').innerHTML = `<span class="text-slate-600 dark:text-slate-300">Sem pregão hoje.</span> <span class="block font-mono text-[11px] text-slate-500">próximo: ${LX.weekday(LX.parseISO(l.proximo_pregao.data))} ${LX.brShort(LX.parseISO(l.proximo_pregao.data))}</span>`;
-                else $('ag-term').innerHTML = '<span class="text-slate-500">Sai às 7h40.</span>';
-            }).catch(() => { });
-            let ibov = null;
+            const hhmm = iso => new Date(iso).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+            const diaDe = iso => new Date(iso).toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' });
+            document.querySelectorAll('[data-atalho]').forEach(a => a.addEventListener('click', () => LX.track && LX.track('atalho_inicio', { id: a.dataset.atalho })));
+
+            /* 1. AGORA: cotações com fonte, atraso e horário */
+            let ibov = null, cotEm = null;
+            const caixa = (nome, valor, v, nota) => `<div class="min-w-0"><span class="term-label">${nome}</span><strong class="block text-2xl font-bold leading-tight mt-0.5">${valor}</strong><span class="block text-sm font-bold">${pct(v)}</span><span class="block text-[10px] text-slate-500 mt-1 leading-snug">${nota}</span></div>`;
             function mkt() {
                 const usd = LX.data && LX.data.fx && LX.data.fx.USDBRL;
-                const u = usd ? `<span class="block">US$ <strong>${LX.num(usd.bid, 3)}</strong> ${pct(usd.pct)}</span>` : '';
-                const i = ibov ? `<span class="block">IBOV <strong>${LX.num(ibov.preco, 0)}</strong> ${pct(ibov.var_pct)}</span>` : '';
-                $('ag-mkt').innerHTML = (i + u) || '—';
+                const quando = cotEm ? (diaDe(cotEm) === hojeISO ? 'às ' + hhmm(cotEm) : 'em ' + LX.brShort(LX.parseISO(diaDe(cotEm))) + ', ' + hhmm(cotEm)) : '';
+                const i = ibov ? caixa('IBOVESPA', LX.num(ibov.preco, 0), ibov.var_pct, `brapi · atraso ~30 min${quando ? ' · lido ' + quando : ''}`) : '';
+                const u = usd ? caixa('DÓLAR À VISTA', 'R$ ' + LX.num(usd.bid, 3), usd.pct, 'AwesomeAPI · ao vivo, a cada 30 s') : '';
+                $('ag-mkt').innerHTML = (i + u) || '<span class="col-span-2 text-sm text-slate-500">Carregando cotações…</span>';
             }
-            fetch('data/cotacoes.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => { ibov = c && (c.itens || []).find(x => x.ticker === 'IBOV'); mkt(); }).catch(() => { });
+            fetch('data/cotacoes.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => { ibov = c && (c.itens || []).find(x => x.ticker === 'IBOV'); cotEm = c && c.atualizado_em; mkt(); }).catch(() => { });
             document.addEventListener('lx:fx', mkt); mkt();
+
+            /* 2. O QUE IMPORTA HOJE: três pontos do cenário escrito antes da abertura (data/leitura.json) */
+            fetch('data/leitura.json?t=' + Math.floor(Date.now() / 6e4), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(l => {
+                if (!l || !Array.isArray(l.resumo) || !l.resumo.length) { $('ag-imp').innerHTML = '<li class="text-sm text-slate-500">A Leitura do Dia sai às 7h40 nos dias de pregão.</li>'; return; }
+                const hora = l.gerado_em ? hhmm(l.gerado_em) : '', dia = LX.parseISO(l.data);
+                if (l.tipo === 'sem-pregao') { $('ag-imp-when').textContent = 'EDIÇÃO SEM PREGÃO'; $('ag-imp-nota').textContent = 'Bolsa fechada: resumo do que aconteceu e do que esperar.'; }
+                else if (l.data === hojeISO) $('ag-imp-when').textContent = 'CENÁRIO DE ABERTURA' + (hora ? ' · ' + hora : '');
+                else { $('ag-imp-when').textContent = 'CENÁRIO DE ' + LX.brShort(dia); $('ag-imp-nota').textContent = `Cenário de ${LX.weekday(dia)}, ${LX.brShort(dia)}. A edição de hoje sai às 7h40.`; }
+                let pts;
+                if (Array.isArray(l.pontos) && l.pontos.length) pts = l.pontos.slice(0, 3).map(p => [p.titulo || '', p.texto || '']);
+                else { // edições antigas, sem "pontos": usa o resumo, pulando a frase que só recapitula o pregão anterior
+                    const r = l.resumo.length > 3 && /^(No último pregão|Ontem|Na (segunda|terça|quarta|quinta|sexta))/i.test(l.resumo[0]) ? l.resumo.slice(1) : l.resumo;
+                    pts = r.slice(0, 3).map(x => ['', x]);
+                }
+                $('ag-imp').innerHTML = pts.map(([t, x], i) => `<li class="flex gap-3"><span class="shrink-0 w-6 h-6 grid place-items-center bg-lect-orange/15 text-lect-orange font-mono text-xs font-bold">${i + 1}</span><div class="min-w-0">${t ? `<strong class="block text-sm leading-snug text-slate-900 dark:text-white">${esc(t)}</strong>` : ''}<p class="text-[13px] leading-snug text-slate-700 dark:text-slate-300 ${t ? '' : 'line-clamp-3'}">${esc(x)}</p></div></li>`).join('');
+            }).catch(() => { });
+
+            /* 3. PRÓXIMO EVENTO: horário, expectativa e ativos relacionados (data/calendario.json) + surpresas de hoje */
+            const DIAS = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'], ATIVO = { win: 'WIN', wdo: 'WDO', di: 'DI' };
+            const EFEITO = { volatil: ['↕', 'pode oscilar forte'], alta: ['▲', 'costuma subir'], baixa: ['▼', 'costuma cair'], neutro: ['●', 'efeito pequeno'] };
+            const quandoEv = e => { const m = /^(\d{1,2})h(\d{2})?$/.exec(e.hora || ''); return new Date(`${e.data}T${m ? String(m[1]).padStart(2, '0') : '09'}:${m && m[2] ? m[2] : '00'}:00-03:00`).getTime(); };
+            let eventos = null;
+            function ev() {
+                if (!eventos) return;
+                const agora = Date.now();
+                const nx = eventos.map(e => ({ e, t: quandoEv(e) })).filter(x => (x.e.importancia || 1) >= 3 && !(x.e.resultado != null && x.e.resultado !== '') && x.t > agora - 5 * 6e4 && x.t - agora < 7 * 864e5).sort((a, b) => a.t - b.t)[0];
+                if (!nx) { $('ag-ev').innerHTML = 'Nenhum dado de alto impacto marcado para os próximos 7 dias.'; $('ag-ev-cd').textContent = ''; return; }
+                const e = nx.e, falta = nx.t - agora, min = Math.max(0, Math.round(falta / 6e4)), quente = falta <= 15 * 6e4, d = LX.parseISO(e.data);
+                const amanha = LX.iso(LX.addDays(LX.todayBRT(), 1));
+                const dia = e.data === hojeISO ? 'hoje' : e.data === amanha ? `amanhã, ${DIAS[d.getDay()]}` : `${DIAS[d.getDay()]}, ${LX.brShort(d)}`;
+                $('ag-ev-cd').textContent = falta <= 0 ? 'SAINDO AGORA' : min < 60 ? `FALTAM ${min} MIN` : min < 2880 ? `FALTAM ${Math.floor(min / 60)}H${String(min % 60).padStart(2, '0')}` : `EM ${Math.round(min / 1440)} DIAS`;
+                $('ag-ev-cd').className = 'font-mono text-[10px] font-bold ' + (quente ? 'text-lect-orange animate-pulse' : 'text-slate-500');
+                const num = (rot, v, vazio) => `<div class="p-2 bg-slate-50 dark:bg-lect-bgDark"><span class="term-label">${rot}</span><strong class="block font-mono text-sm ${v ? 'text-slate-900 dark:text-white' : 'text-slate-500 font-normal'}">${v ? esc(String(v)) : vazio}</strong></div>`;
+                const ativos = Object.entries(e.impacto || {}).filter(([k, v]) => ATIVO[k] && EFEITO[v]).map(([k, v]) => `<span class="px-1.5 py-0.5 border border-slate-300 dark:border-lect-borderDark font-mono text-[11px] font-bold" title="${EFEITO[v][1]}">${ATIVO[k]} ${EFEITO[v][0]}</span>`).join('');
+                $('ag-ev').innerHTML = `<strong class="block font-display text-lg leading-snug text-slate-900 dark:text-white">${(LX.calFlag || {})[e.pais] || ''} ${esc(e.evento)}</strong>
+                    <span class="block font-mono text-sm font-bold text-lect-teal mt-0.5">${dia}${e.hora ? ' · ' + esc(e.hora) : ''} <span class="font-normal text-slate-500">(Brasília)</span></span>
+                    <div class="grid grid-cols-2 gap-2 mt-3">${num('Consenso', e.consenso, 'ainda sem número')}${num('Anterior', e.anterior, '—')}</div>
+                    ${e.nota ? `<p class="text-[13px] leading-snug text-slate-700 dark:text-slate-300 mt-2 line-clamp-3">${esc(e.nota)}</p>` : ''}
+                    ${ativos ? `<div class="flex flex-wrap items-center gap-1.5 mt-2"><span class="font-mono text-[10px] text-slate-500">MEXE COM</span>${ativos}</div>` : ''}`;
+                const lk = $('ag-ev-link');
+                lk.href = e.tipo === 'copom' ? 'copom.html' : '#rx-wrap';
+                lk.textContent = e.tipo === 'copom' ? 'Página especial do Copom →' : 'Como o mercado costuma reagir ↓';
+            }
             fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => {
-                const hoje = (c && c.eventos || []).filter(e => e.data === hojeISO);
+                eventos = (c && c.eventos) || []; ev(); setInterval(ev, 30000);
+                const hoje = eventos.filter(e => e.data === hojeISO);
                 const sp = hoje.filter(e => e.surpresa && /^(acima|abaixo)$/.test(e.surpresa.direcao) && e.resultado);
                 const pend = hoje.filter(e => (e.importancia || 1) >= 2 && !e.resultado && e.hora).length;
-                $('ag-sp').innerHTML = sp.length ? sp.slice(0, 2).map(e => `<span class="block truncate"><strong class="text-lect-orange">${e.surpresa.direcao === 'acima' ? '▲' : '▼'}</strong> ${LX.esc(e.evento)} <span class="font-mono text-[11px]">${LX.esc(e.resultado)}</span></span>`).join('')
-                    : `<span class="text-slate-500">${hoje.length ? 'Nenhuma até agora.' : 'Sem dados hoje.'}</span>${pend ? `<span class="block font-mono text-[11px] text-slate-500">${pend} dado(s) ainda por sair</span>` : ''}`;
-            }).catch(() => { });
+                $('ag-sp').innerHTML = sp.length ? sp.slice(0, 2).map(e => `<span class="block truncate text-slate-700 dark:text-slate-300"><strong class="text-lect-orange">${e.surpresa.direcao === 'acima' ? '▲ acima' : '▼ abaixo'}</strong> ${esc(e.evento)} <span class="font-mono text-xs">${esc(e.resultado)}</span></span>`).join('')
+                    : `${hoje.length ? 'Nenhuma até agora.' : 'Sem dados marcados para hoje.'}${pend ? ` <span class="font-mono text-[11px]">${pend} dado(s) ainda por sair.</span>` : ''}`;
+            }).catch(() => { $('ag-ev').textContent = 'Calendário indisponível no momento.'; });
         })();
 
         /* ---------- Reação histórica: como WIN e WDO reagiram a cada tipo de dado ---------- */
@@ -682,9 +740,9 @@
         (function () {
             const esc = LX.esc, el = id => document.getElementById(id);
             const TH = {
-                bullish: ['Comprador', 'ph-trend-up', 'text-emerald-600 dark:text-emerald-400', 'bg-emerald-500', 85],
+                bullish: ['Viés de alta', 'ph-trend-up', 'text-emerald-600 dark:text-emerald-400', 'bg-emerald-500', 85],
                 neutro: ['Neutro', 'ph-arrows-left-right', 'text-slate-500', 'bg-slate-400', 50],
-                bearish: ['Vendedor', 'ph-trend-down', 'text-rose-600 dark:text-rose-400', 'bg-rose-500', 15]
+                bearish: ['Viés de baixa', 'ph-trend-down', 'text-rose-600 dark:text-rose-400', 'bg-rose-500', 15]
             };
             fetch('data/leitura.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
                 const ltHide = () => el('leitura').classList.add('hidden');
@@ -694,7 +752,7 @@
                 el('leitura').classList.remove('hidden', 'min-h-[640px]');
                 el('lt-title').textContent = d.titulo || 'Leitura do dia';
                 const hora = d.gerado_em ? new Date(d.gerado_em).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' }) : '';
-                el('lt-when').innerHTML = +day === +today ? `<i class="ph-bold ph-clock"></i> hoje${hora ? ' às ' + hora : ''}` : `<i class="ph-bold ph-clock-counter-clockwise"></i> leitura de ${LX.weekday(day)} ${LX.brShort(day)}`;
+                el('lt-when').innerHTML = +day === +today ? `<i class="ph-bold ph-clock"></i> escrito hoje${hora ? ' às ' + hora : ''} · não atualiza durante o dia` : `<i class="ph-bold ph-clock-counter-clockwise"></i> leitura de ${LX.weekday(day)} ${LX.brShort(day)}`;
                 const gauge = (k, label) => {
                     const t = (d.termometro || {})[k]; if (!t) return '';
                     const c = TH[t.leitura] || TH.neutro;
@@ -709,9 +767,18 @@
                     el('lt-thermo').innerHTML = `<span class="term-label font-bold">EDIÇÃO SEM PREGÃO</span>
                         <div class="p-3 bg-lect-navy text-white border-l-4 border-lect-orange"><span class="block font-mono text-[10px] text-slate-400">PRÓXIMO PREGÃO</span><strong class="font-display text-lg">${LX.weekday(ppd)} ${LX.br(ppd)}</strong>
                         ${pp.o_que_esperar ? `<p class="text-xs text-slate-300 mt-1.5 leading-snug">${esc(pp.o_que_esperar)}</p>` : ''}</div>
-                        <p class="text-[11px] text-slate-500 leading-snug">Sem termômetro: a bolsa está fechada. O viés de WIN e WDO volta na edição do próximo pregão.</p>`;
+                        <p class="text-[11px] text-slate-500 leading-snug">Sem viés do modelo: a bolsa está fechada. Ele volta na edição do próximo pregão.</p>`;
                 } else {
-                    el('lt-thermo').innerHTML = `<span class="term-label font-bold">TERMÔMETRO</span>` + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar') + '<div id="lt-sinais"></div>';
+                    el('lt-thermo').innerHTML = `<div class="flex items-center justify-between gap-2"><span class="term-label font-bold !mb-0">VIÉS DO MODELO NA ABERTURA</span><span class="lx-demo">EXPERIMENTAL</span></div>
+                        <p class="text-xs text-slate-500 leading-snug">Leitura automática feita antes da abertura${hora ? ' (' + hora + ')' : ''}. Não muda ao longo do dia e não é recomendação de compra ou venda.</p>`
+                        + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar') + '<div id="lt-sinais"></div>'
+                        + `<div id="lt-placar" class="p-3 bg-lect-orange/5 border border-lect-orange/40 text-xs leading-snug text-slate-600 dark:text-slate-300"><strong class="block text-slate-900 dark:text-white">Quanto dá para confiar?</strong><span id="lt-placar-n">O modelo é novo e ainda tem poucos pregões medidos.</span> A conferência é feita pelo Ibovespa e pelo dólar à vista, não pelos contratos futuros. <a href="#placar-term" class="font-bold text-lect-teal hover:underline whitespace-nowrap">Método e histórico ↓</a></div>`;
+                    fetch('data/placar-termometro.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null).then(pl => {
+                        const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(x => x && (x.win || x.wdo)), alvo = el('lt-placar-n');
+                        if (!dias.length || !alvo) return;
+                        const conta = k => { const v = dias.filter(x => x[k]); return `${v.filter(x => x[k].acerto).length} de ${v.length}`; };
+                        alvo.innerHTML = `Até aqui o modelo acertou <strong>${conta('win')}</strong> pregões no WIN e <strong>${conta('wdo')}</strong> no WDO.${dias.length < 30 ? ' É uma amostra pequena: ainda não dá para tirar conclusão.' : ''}`;
+                    });
                     fetch('data/sinais.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null).then(sg => {
                         if (!sg || sg.data !== d.data || !(sg.ativos || []).length || !el('lt-sinais')) return;
                         const SG = { bullish: ['▲ alta', 'text-emerald-600 dark:text-emerald-400'], bearish: ['▼ baixa', 'text-rose-600 dark:text-rose-400'], neutro: ['● neutro', 'text-slate-500'] };
@@ -848,7 +915,7 @@
 
     })();
     </script>
-    <script src="assets/lectnex-pregao.js?v=20261031b" defer></script>
-    <script src="assets/lectnex-painel.js?v=20261101c" defer></script>
+    <script src="assets/lectnex-pregao.js?v=20261111a" defer></script>
+    <script src="assets/lectnex-painel.js?v=20261111a" defer></script>
 </body>
 </html>

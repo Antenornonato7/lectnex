@@ -41,6 +41,9 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
     "3 a 5 frases curtas, cada uma com um fato e o porquê dele importar para WIN/WDO/DI.",
     "..."
   ],
+  "pontos": [
+    { "titulo": "Petrobras lucra R$ 39,7 bi", "texto": "Maior peso do Ibovespa; teleconferência às 11h30 pode mexer no WIN." }
+  ],
   "termometro": {
     "win": { "leitura": "bullish | neutro | bearish", "motivo": "Uma frase com o principal motivo." },
     "wdo": { "leitura": "bullish | neutro | bearish", "motivo": "Uma frase com o principal motivo." }
@@ -70,6 +73,7 @@ Se o arquivo faltar, estiver inválido ou tiver mais de 4 dias, a seção simple
 ```
 
 - `tipo`: `pregao` ou `sem-pregao`.
+- `pontos`: **exatamente 3**, os três fatos que mais importam para o pregão de hoje (não recapitule o pregão anterior). Aparecem na primeira tela do site, no bloco "O que importa hoje". `titulo` com até 45 caracteres, só o fato; `texto` com até 110 caracteres, dizendo por que mexe em WIN, WDO ou DI. Sem viés de compra ou venda. Na edição sem pregão, use os três pontos do que esperar no próximo pregão.
 - `termometro.*.leitura` é o **viés do dia para o preço** do ativo: no WDO, `bullish` = dólar tende a subir. Não use na edição sem pregão.
 - `proximo_pregao`: obrigatório na edição sem pregão; omita em dia de pregão.
 - `destaques`: na edição sem pregão, use a agenda do próximo pregão (com o dia na `hora`, ex.: `ter 9h`).

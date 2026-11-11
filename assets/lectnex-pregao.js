@@ -83,7 +83,7 @@
                 <button type="button" id="pg-close" class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark hover:text-lect-teal" aria-label="Fechar modo pregão"><i class="ph-bold ph-x"></i></button></header>
             <div class="flex-1 min-h-0 overflow-y-auto p-3 sm:p-5 grid gap-3 content-start lg:grid-cols-2 max-w-5xl w-full mx-auto">
                 ${card('Próximo dado forte', 'ph-timer', '<div id="pg-ev"></div>', 'lg:col-span-2')}
-                ${card('Termômetro do dia', 'ph-thermometer-simple', '<div id="pg-term" class="flex gap-3"></div>')}
+                ${card('Viés do modelo na abertura', 'ph-thermometer-simple', '<div id="pg-term" class="flex gap-3"></div>')}
                 ${card('Seu Plano do Dia', 'ph-target', '<div id="pg-plano"></div>')}
                 ${card('Maiores altas · maiores baixas', 'ph-chart-bar', '<div id="pg-movers"></div>', 'lg:col-span-2')}
             </div>
