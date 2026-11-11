@@ -175,3 +175,11 @@ Desde 11/11/2026 metade dos visitantes vê "Aprender" no lugar de "Laboratório"
 `LX.abMenu` em `assets/lectnex-core.js`). O workflow "Teste do menu" lê o Google Analytics às segundas (até 01/12) e manda
 o placar para o Telegram privado. Configuração (uma vez): passo a passo no topo de `coletor/teste_menu.py`.
 Para encerrar o teste: fixe o nome vencedor em `NAV` e apague o bloco `LX.abMenu`.
+
+## Resumo semanal do site (Telegram privado, domingo 11h07)
+
+`coletor/resumo_site.py` (workflow "Resumo semanal do site"): visitantes, visitas e páginas mais vistas no Google Analytics,
+cliques nos atalhos da página inicial (eventos `atalho_plano`, `atalho_diario`, `atalho_estudo`), inscritos e automações que
+falharam na semana. Rodar à mão sem marcar "Enviar" só mostra o resumo no log.
+Fora os posts e reels do Instagram, o Telegram privado recebe só: este resumo, o relatório do Google e o do teste do menu
+(segundas), o resumo do dono e os alertas de falha. Avisos de entrega não vão para o Telegram.
