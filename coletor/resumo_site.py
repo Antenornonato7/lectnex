@@ -74,15 +74,21 @@ def bloco_analytics(s):
           f'Visitantes: <b>{n(a[0])}</b>{var(a[0], b[0])}',
           f'Visitas: {n(a[1])}{var(a[1], b[1])} · páginas vistas: {n(a[2])}{var(a[2], b[2])}', '']
     pags = ga(s, {'dateRanges': periodos()[:1], 'dimensions': [{'name': 'pagePath'}], 'metrics': [{'name': 'screenPageViews'}],
-                  'orderBys': [{'metric': {'metricName': 'screenPageViews'}, 'desc': True}], 'limit': 7})
-    if pags:
-        L += ['<b>Páginas mais vistas</b>'] + [f'{i}. {e(d[0] if d[0] != "/" else "/ (Mercado Hoje)")} · {n(m[0])}' for i, (d, m) in enumerate(pags, 1)] + ['']
+                  'orderBys': [{'metric': {'metricName': 'screenPageViews'}, 'desc': True}], 'limit': 25})
+    soma = {}
+    for d, m in pags:  # "/" e "/index.html" são a mesma página (Mercado Hoje)
+        k = 'Mercado Hoje' if d[0] in ('/', '/index.html') else d[0].lstrip('/').removesuffix('.html') or d[0]
+        soma[k] = soma.get(k, 0) + m[0]
+    top = sorted(soma.items(), key=lambda x: -x[1])[:7]
+    if top:
+        L += ['<b>Páginas mais vistas</b>'] + [f'{i}. {e(k)} · {n(v)}' for i, (k, v) in enumerate(top, 1)] + ['']
     nomes = [x for x, _ in ATALHOS + OUTROS]
     ev = ga(s, {'dateRanges': periodos()[:1], 'dimensions': [{'name': 'eventName'}], 'metrics': [{'name': 'eventCount'}, {'name': 'totalUsers'}],
                 'dimensionFilter': {'filter': {'fieldName': 'eventName', 'inListFilter': {'values': nomes}}}})
     cont = {d[0]: m for d, m in ev}
     L += ['<b>Atalhos da página inicial</b>'] + [f'{rot}: {n(cont.get(k, [0, 0])[0])} cliques · {n(cont.get(k, [0, 0])[1])} pessoas' for k, rot in ATALHOS]
-    L += [''] + [f'{rot}: {n(cont.get(k, [0])[0])}' for k, rot in OUTROS if cont.get(k)]
+    extra = [f'{rot}: {n(cont.get(k, [0])[0])}' for k, rot in OUTROS if cont.get(k)]
+    L += ([''] + extra if extra else []) + ['']
     return L
 
 
