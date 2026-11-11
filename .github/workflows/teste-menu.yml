@@ -1,0 +1,37 @@
+# Resultado do teste A/B do menu de estudo ("Laboratório" × "Aprender") no chat PRIVADO do Telegram.
+# Horário: segundas-feiras durante o teste, definido em coletor/relogio.py (workflow "Relógio").
+name: Teste do menu
+run-name: "${{ inputs.teste && 'Teste do menu (conferir configuração)' || 'Teste do menu semanal' }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      teste:
+        description: "Enviar agora para conferir a configuração"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  relatorio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: coletor
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar biblioteca do Google
+        run: pip install -q google-auth==2.38.0 requests==2.32.3
+      - name: Ler o Analytics e enviar
+        env:
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID || vars.GA_PROPERTY_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          TESTE: ${{ inputs.teste && '1' || '' }}
+        run: python3 coletor/teste_menu.py
