@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T15:08-03:00",
+  "atualizado_em": "2026-11-11T15:38-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -239,11 +239,35 @@
     ],
     [
      "14:50",
-     172294.0
+     172308.0
     ],
     [
-     "14:53",
-     172296.0
+     "14:55",
+     172431.0
+    ],
+    [
+     "15:00",
+     172376.0
+    ],
+    [
+     "15:05",
+     172410.0
+    ],
+    [
+     "15:10",
+     172416.0
+    ],
+    [
+     "15:15",
+     172546.0
+    ],
+    [
+     "15:20",
+     172512.0
+    ],
+    [
+     "15:23",
+     172511.0
     ]
    ]
   },
@@ -544,11 +568,35 @@
     ],
     [
      "15:05",
-     5.559
+     5.558
     ],
     [
-     "15:08",
-     5.5586
+     "15:10",
+     5.5575
+    ],
+    [
+     "15:15",
+     5.5591
+    ],
+    [
+     "15:20",
+     5.5602
+    ],
+    [
+     "15:25",
+     5.5607
+    ],
+    [
+     "15:30",
+     5.5616
+    ],
+    [
+     "15:35",
+     5.5606
+    ],
+    [
+     "15:38",
+     5.5626
     ]
    ]
   },
@@ -1116,7 +1164,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.0,
     "dolar30": -0.01
    },
    {
@@ -1131,7 +1179,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.0,
     "dolar30": -0.01
    },
    {
@@ -1148,8 +1196,21 @@
      "CEAB3",
      "VBBR3"
     ],
+    "ibov30": 0.12,
+    "dolar30": -0.04
+   },
+   {
+    "hora": "15:09",
+    "titulo": "Governo vai enviar nesta quarta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/governo-projeto-medidas-ajuste-fiscal-lula-4/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    }
   ]
  },
@@ -1966,6 +2027,17 @@
     "CEAB3",
     "VBBR3"
    ]
+  },
+  {
+   "titulo": "Governo vai enviar nesta quarta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-projeto-medidas-ajuste-fiscal-lula-4/",
+   "publicado": "2026-11-11T15:09-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1995,7 +2067,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T15:08-03:00",
+ "atualizado_em": "2026-11-11T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2009,6 +2081,30 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Governo vai enviar nesta quarta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-projeto-medidas-ajuste-fiscal-lula-4/",
+   "publicado": "2026-11-11T15:09-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras: ações caem após proventos abaixo e capex acima ofuscarem balanço",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVDZIRjVZRG90TEpUaWdKNWp4a2tVOHN3bDFvcDZXY3VrbWlTSTRGUnAwR1ZBbTFyNk01S01GWHVjdlp2T0xmenVDYWVDc3Ruc1R1STNHcl9ISUdkaWJxX0RzY0ZfSGNUemJiZWVoRVl2RmlpWEdZT2VxNzJWTGl3Sm9KRFJ0bEZjUjc1Sm1zbjJKNkZQLVA2MENWS3BCcFJPSkVsS3F0S0tIVjlBRzBMbXp2OGxleHhrakI00gHAAUFVX3lxTE54RjVzSEY0emlVZFppc1hBd3NPREVHeEdzY3EyWjhnTnFBUXotcmJ5ZlhWUlAweXc0dmxyRTNtYlJ3el9GTmJWOVNmelBUS215RHNBVFU0SHpoVjNtcFZ6al90NjJUX3ZkNVZxWkNMd2xzdG95QVc5dlZSbWwxQUQtRjh6bHgxY0FUR1cyYzlITjE3UzdrRVk3X2owZWF1RkFaQ0N6ZmNGNlJDb0xpS25nc1BxQ2tITXVrT0tZTVcydA?oc=5",
+   "publicado": "2026-11-11T14:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "C&A (CEAB3), Axia (AXIA3), Vibra (VBBR3) e mais sete ações que estão na 'Black Friday' da Bolsa",
    "fonte": "Money Times",
@@ -2096,21 +2192,10 @@
    ]
   },
   {
-   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-   "publicado": "2026-11-11T13:49-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras perde força",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbUkxQmpaVFhqeFNXQ1l1Z1RicnJEaDU0czZRQlZjdWZ0Z2IyR0w2TTBpTGVPRHZDdE5vWk03dTlBZG1nSGN0N1hYX1RCZExRZHN3Y2FFZlY1UGVsSTZwT2x6Mi1WdS1SeHBucjlZTHVKZXE5Y3Y3TGZhel81Y1YtblctUm5fNnMyNURFWGNkdFdSd2ZHamd3NUFtNDhLWUoySDhyZFFlcFZBeUZBenhBZ2lKc2o1endkbHRtLTJ3OF8yVk82dEc0Q19ROUx1N1JadGVxOTEyOXZiNy0wUE1GQnVn0gHnAUFVX3lxTE05SmVpZzc1VlpkYk50T2JaS0NlTkFRWXMwT3FUTlJTXzc1Q21vQTB1b2EweDdXeVdSQVp0T3N6OWdrdVJ1V1FKQUxuazBGMnhZaHlDSUJuQzhVamtrMUU3em1reUFNSTNQbkJ0VmJiMks4WkN3bUxZUzJlTjdwTFJubW00cUVEZjExMnpuNzlUZGdHVzR3LUdiYjRNUFd0MFRsbFFlS3pwRDhsdHJpZlk3VWtnVzZ0NGJCNXl5UDU4elpOVkM1SFlRSVRvYVBlUHdJTGk2b0VacDNQaURWVzZqTTNqY0VObw?oc=5",
-   "publicado": "2026-11-11T13:37-03:00",
+   "publicado": "2026-11-11T13:55-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -2120,6 +2205,17 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+   "publicado": "2026-11-11T13:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Taesa (TAEE11): vendidos entram fortes antes de resultados, mas tiro pode sair pela culatra; entenda",
@@ -2132,31 +2228,6 @@
    ],
    "tickers": [
     "TAEE11"
-   ]
-  },
-  {
-   "titulo": "Nasdaq dispara mais de 2% com ações de tech; petróleo sobe com tensão entre EUA e Irã",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc1BuTGxKNHJESkN0WjRPWnZNUjV6S1pRaXZsZEtYZXB1Y1JLQ25DcHJ0QlJ3b1dkQTlzbngtcUoyS3FGQ0J4eWFQTTJxS0s1U0w1SlJGMEd0ZFNKem5uVktSTEZmSUFCdTEwMldxdUJzWjhGXzF3aVU4TWtBc01LUXNqS2FYSWhkTFZWeUtrbFFvaHE3aGpGNGp2T2lUaV9zazNLMlAzSGxZWG85VklHOFE1ekJ1N3VQUmRtMXkwSdIBxAFBVV95cUxOZ1lmemo4X1pkT0kxbmUzd3ZvQWhsZW1BSFNmM3dWUVhjMVI2RWxGQUZzZHVuNV9fYVhhU1NoYXR2c1dEV0pyckxRRDhHb1QtdVBWVk5HdURRUnU3OHNWS0pMM0ZuU0o2blFtWjJWN09KTW9FLVhLMnZkRFQ2U3l3anU5b1J1ZnVfbEF5Njk3bzAtRW81WlJxcE1ZMWZFalFIZGwwSmhhZ00zMDJOejEyNHF5cUhob29PVGxRaGdSNTJvendr?oc=5",
-   "publicado": "2026-11-11T13:23-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ações da Petrobras tentam reagir após queda de mais de 3%; o que pesa sobre a estatal?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVkc4VU1oZGVGcFdGWHYySDNUdWVEdmJ6b2RXRzZIVnVGX2JheG1uWFZmcENGM05BN2loX0psMzExZGdBZGk1ZmlvbjlVMHQ2R2FxOXY4WTVwT09ZS19HT1pCWkRNUjU2VUVGckF2M2QyQTU2RWxtNUQxN2JuYjA2Mlg0OEVGeTJyRWcxb2d6LWFRc1BrWkN6a28wMjZNNWU3dXNaTTNKLWg3VDRpNDE5dWk4bXV3WFNWelZHTVZsVHE3NXcyUGYtREpoOG83VUpxN0ZN0gHYAUFVX3lxTE9vUXN1ekhWY25mZ1Y1V3JnbVpLcmJrTkp3NHNKZWZRVEdheXA5RUE5UkdlQmNhRDZJakdjOFZOenR2UFhIcF8zS0NGNkprVXM1a1ZpR3VHRFlkRjdULVZZOURXRmV4dmY2OTM0dkNqOFd2c0JjXzVrNXM1b0pKM1dtdHdzUUZGNFB2X2ZlRWdBSFdpWlc5NjhVaTFINlkxUWlqd1hYaDYyWGl1Sm5YWHFqZ2VRZGVIVVQtbVBIWnlaZzJwUFJ4QzEtdVN6aVRQTGxfUTNFUVI0Yg?oc=5",
-   "publicado": "2026-11-11T13:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
    ]
   },
   {
@@ -2196,19 +2267,6 @@
    ],
    "tickers": [
     "PETR4"
-   ]
-  },
-  {
-   "titulo": "Credores da Braskem apresentam novas propostas para reestruturação da dívida",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/credores-da-braskem-apresentam-novas-propostas-para-reestruturacao-da-divida.shtml",
-   "publicado": "2026-11-11T12:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BRKM5"
    ]
   }
  ]
