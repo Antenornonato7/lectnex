@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T11:25-03:00",
+  "atualizado_em": "2026-11-11T11:28-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -63,11 +63,11 @@
     ],
     [
      "11:10",
-     172757.0
+     172609.0
     ],
     [
-     "11:11",
-     172726.0
+     "11:13",
+     172623.0
     ]
    ]
   },
@@ -192,11 +192,11 @@
     ],
     [
      "11:25",
-     5.566
+     5.5647
     ],
     [
-     "11:26",
-     5.5691
+     "11:28",
+     5.564
     ]
    ]
   },
@@ -463,6 +463,20 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:27",
+    "titulo": "'Se a Selic fosse tão boa, o mundo investiria nela', diz diretor da Avenue",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcnhHMUtLZTA1TEpwU1VGVUhXX1hfNmxsZFNvRFp3UHRJdEdZNkFSZUVLeHpoX1RBT1lrRlZndXdmbHdpdUdpYjFRRUFwRllJWUpwNkhJb0NwcjI0Q041bkdiZVk0dVF6eHFSTm1jSUNab1hvTVE1X2xmOG5Kc2s2TFcxUjNjUU5PVzVkaWIwLS1zVEEwa2VlT0hZNXV6eHlENS1HNC1RSFg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -994,6 +1008,18 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "'Se a Selic fosse tão boa, o mundo investiria nela', diz diretor da Avenue",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcnhHMUtLZTA1TEpwU1VGVUhXX1hfNmxsZFNvRFp3UHRJdEdZNkFSZUVLeHpoX1RBT1lrRlZndXdmbHdpdUdpYjFRRUFwRllJWUpwNkhJb0NwcjI0Q041bkdiZVk0dVF6eHFSTm1jSUNab1hvTVE1X2xmOG5Kc2s2TFcxUjNjUU5PVzVkaWIwLS1zVEEwa2VlT0hZNXV6eHlENS1HNC1RSFg?oc=5",
+   "publicado": "2026-11-11T11:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1023,7 +1049,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T11:25-03:00",
+ "atualizado_em": "2026-11-11T11:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1031,12 +1057,25 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "'Se a Selic fosse tão boa, o mundo investiria nela', diz diretor da Avenue",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcnhHMUtLZTA1TEpwU1VGVUhXX1hfNmxsZFNvRFp3UHRJdEdZNkFSZUVLeHpoX1RBT1lrRlZndXdmbHdpdUdpYjFRRUFwRllJWUpwNkhJb0NwcjI0Q041bkdiZVk0dVF6eHFSTm1jSUNab1hvTVE1X2xmOG5Kc2s2TFcxUjNjUU5PVzVkaWIwLS1zVEEwa2VlT0hZNXV6eHlENS1HNC1RSFg?oc=5",
+   "publicado": "2026-11-11T11:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
    "fonte": "CNBC",
@@ -1173,19 +1212,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Casas Bahia (BHIA3) nega decisão sobre fechamento de lojas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSDVXM1NLeW40Z2d3N05ma2Rub2FVazBvSGlSN0VnOXUyNVNvQlJQckdCZ09kbHk5cElSTU1NaENJdy1COVVrajA5eGVkbzNyZFliRTdYTTVLUHFDQ2tqRmdvMVlfQW9hampVNHpRS3dlcUN6RHR0cXR3cHFEbkRSYnJZeXg5MlNTZGgzNnJzd2d2ZE0tWHRqOERtZ9IBoAFBVV95cUxNZ2RQTVhmWXN5blRhNXdkcVQ0VU05MU1TN0hSVHVhSkZfYWlrMEp0T0FFN2ltc1dWd0Vlb3Y2N3dfcHpqM3J2dzB0aUhHLUpCcHM3eGlHR0tRUkFLbnVFZ2FGUzNqZmZIazNEa1VCLVRhbDdvb0ZaN0FIVDV3Z1lNeXQyVi1jOVgwLU5GVTF3TDloNWRKVkROYVl5cFBxRlp6?oc=5",
-   "publicado": "2026-11-11T09:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BHIA3"
-   ]
   },
   {
    "titulo": "Banco Central da China promete intensificar o apoio político à economia",
