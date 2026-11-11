@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T15:35-03:00",
+  "atualizado_em": "2026-11-11T15:38-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -263,7 +263,11 @@
     ],
     [
      "15:20",
-     172501.0
+     172512.0
+    ],
+    [
+     "15:23",
+     172511.0
     ]
    ]
   },
@@ -588,6 +592,10 @@
     ],
     [
      "15:35",
+     5.5606
+    ],
+    [
+     "15:38",
      5.5626
     ]
    ]
@@ -1188,7 +1196,7 @@
      "CEAB3",
      "VBBR3"
     ],
-    "ibov30": 0.11,
+    "ibov30": 0.12,
     "dolar30": -0.04
    },
    {
@@ -1202,7 +1210,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.08
+    "dolar30": 0.05
    }
   ]
  },
@@ -2059,7 +2067,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T15:35-03:00",
+ "atualizado_em": "2026-11-11T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2259,19 +2267,6 @@
    ],
    "tickers": [
     "PETR4"
-   ]
-  },
-  {
-   "titulo": "Credores da Braskem apresentam novas propostas para reestruturação da dívida",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/credores-da-braskem-apresentam-novas-propostas-para-reestruturacao-da-divida.shtml",
-   "publicado": "2026-11-11T12:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BRKM5"
    ]
   }
  ]
