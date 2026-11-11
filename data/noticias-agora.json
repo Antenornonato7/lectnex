@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T15:38-03:00",
+  "atualizado_em": "2026-11-11T16:08-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -263,11 +263,35 @@
     ],
     [
      "15:20",
-     172512.0
+     172464.0
     ],
     [
-     "15:23",
-     172511.0
+     "15:25",
+     172443.0
+    ],
+    [
+     "15:30",
+     172307.0
+    ],
+    [
+     "15:35",
+     172356.0
+    ],
+    [
+     "15:40",
+     172328.0
+    ],
+    [
+     "15:45",
+     172305.0
+    ],
+    [
+     "15:50",
+     172321.0
+    ],
+    [
+     "15:53",
+     172345.0
     ]
    ]
   },
@@ -592,11 +616,35 @@
     ],
     [
      "15:35",
-     5.5606
+     5.5607
     ],
     [
-     "15:38",
-     5.5626
+     "15:40",
+     5.5637
+    ],
+    [
+     "15:45",
+     5.563
+    ],
+    [
+     "15:50",
+     5.5602
+    ],
+    [
+     "15:55",
+     5.5611
+    ],
+    [
+     "16:00",
+     5.5613
+    ],
+    [
+     "16:05",
+     5.5611
+    ],
+    [
+     "16:08",
+     5.561
     ]
    ]
   },
@@ -1196,7 +1244,7 @@
      "CEAB3",
      "VBBR3"
     ],
-    "ibov30": 0.12,
+    "ibov30": 0.09,
     "dolar30": -0.04
    },
    {
@@ -1209,8 +1257,66 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.03,
     "dolar30": 0.05
+   },
+   {
+    "hora": "15:34",
+    "titulo": "Petrobras afirma discutir eventual mudança em estratégia comercial",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVEo4SU5mRVQyZXZFc3BLV3BpM0Y3Rk4xWGU1VFBsVHdFVVZpUUhobGRUejQwenBpNUVuLWhpdW1PdzdZNlpfamUtbmlEV0NPTlhnSEFOejhhQ2tJTGswbENwTzlsWUFBbHFUMzRBRVVOc0Z1SVlfa0MwdllPZ3RhNHktb3czYmxmTDExV2tVd2ViV2E2VkRkd3g0eEhOM2V4c3B3Sg?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": -0.01
+   },
+   {
+    "hora": "15:44",
+    "titulo": "Mercado estima que fim da escala 6x1 vai adicionar 0,3 ponto ao IPCA em 2027, mostra Questionário Pré-Copom",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOSmhNal9QVV9TaVdXZE5KSUxXNkFDY2hfa01DQ2NoUnNFV2MyUWJnQXAzSDV1TnhxUmhzU0dQci00S0NMUkhySVpCSnpNSzJDMG41Mk5yQjFNVHAxWmRnaGdxdWRBOUZ5cVh2aHFURU9hb3g0WWI2bFBEazl2NUZTZTk1ZWdJTER6Rmh1RFRMRTdxbmU1aGNQTGc1b1piYV9DamNfLTZYaTlVbFE2OHZzR1dlcElWM2Q1WFJ2aHY4Zm1KYVdhVThGX3hPdWtmclhCeGNKX25mWG9kNF9OT3Y0bnZSNkVXTi1PMmhyZkx2TEFVcWVKeFHSAYQCQVVfeXFMTnlTVlhEUGtrSzcwRnFiSmN3MkI5Wmpia05md0NaTHJYWS1tMHFaaE9Rd0FiNnptZGhiVjN5WXh4cVRjN2FsTmRXNUJPZ01vX1NVSEQ5SEFPMVlIVk5XZTlNN29ya2hhWDloU0RPZ0t3UzdhanBkN1drcmo2VmVqc3BTOGlmU203eUk1X21UOXhtcjVWOW92ZldGTUw0enVOSVJyRTVqUWlzb01CRDl4V3gtbkRLZTAzTGN5VkRRQmtXWmVrUS1CNmRHLXBWaWZRNE90dEVNN2JwQnlSX3Z0TlJGTW9paE1VbnkzWEg5VGZ6SVhpQ0Zubm5lSGRTN1B2MkRDcnA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:56",
+    "titulo": "Gestores dizem que CDI vale pouco em dólar e defendem alocação no exterior",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRHlINFJLWGxsU3dKaEpSTDROd0xLTDJfSGJiaTZpNWU1VENEam5TUlRucWptQktJSGVLWWx2TWE1LUN5eWlVZC0yUlV3N0Y3OE4xajJnZEx2RlNmeW53NzRadlNYel9kdHJrZDRyZVFQOERud1JVQ0doeXZQQVBuS1RSdTl1bkFnZ1FZZzh4aEg4akc1emZVd0xRSEtHcnBpME9FUmNDQk1kOW1nSEE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:59",
+    "titulo": "Hapvida: ação sobe forte em sessão antes da divulgação do balanço; veja o que esperar",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRk9lTXlwaFJDMHV3d3ZVZm9IaXNOVDlsN3pYTm5sejJoXzE0TTV4SFlWWEZDR3dnbjVHeWdsVXlSRzhJcmRnQ0Q5b3pzWEc3RXBEX1NKTmlmRnZEOUZGSnlZQ2ljVWllRVloMk1kUDVScEg3MjJFZEMzQzcyWHlrZkJvOXBJQkdGb2VIeWlQSnVOT05zeks5U3B1UWVlQXJvWGx1ek9hUFNZeGFiZzZUV2xOMkVsR1dCcllBNHFBN0VCcmc3SVHSAcwBQVVfeXFMTTdYbDRXUmQ3YmRxaWQ0RFlQZ0VYdThiQ0VRcFZiMm9VWEcwd1hQVFNOQTBBTHEwMEloNjAzSXBVZEdaVWNkRU9RN3hCaGpyZC1LVHcxVlRsOFRRNW8wUVhYTURsa2tvT2FJbjYybmlsb0tLa0N1Y0s4emNYVmI1TTZ1RG5xV1lNZG4yWTBQb0NUVVlLVEFGcjQ1dGd4NFJGNHhfeXFVTDBDZHUtU2stcFZoM0RlQXFsa3dIRExEYWZGd3U0MENjMlBPRWpF?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "HAPV3"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -2038,6 +2144,56 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras afirma discutir eventual mudança em estratégia comercial",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVEo4SU5mRVQyZXZFc3BLV3BpM0Y3Rk4xWGU1VFBsVHdFVVZpUUhobGRUejQwenBpNUVuLWhpdW1PdzdZNlpfamUtbmlEV0NPTlhnSEFOejhhQ2tJTGswbENwTzlsWUFBbHFUMzRBRVVOc0Z1SVlfa0MwdllPZ3RhNHktb3czYmxmTDExV2tVd2ViV2E2VkRkd3g0eEhOM2V4c3B3Sg?oc=5",
+   "publicado": "2026-11-11T15:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Mercado estima que fim da escala 6x1 vai adicionar 0,3 ponto ao IPCA em 2027, mostra Questionário Pré-Copom",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOSmhNal9QVV9TaVdXZE5KSUxXNkFDY2hfa01DQ2NoUnNFV2MyUWJnQXAzSDV1TnhxUmhzU0dQci00S0NMUkhySVpCSnpNSzJDMG41Mk5yQjFNVHAxWmRnaGdxdWRBOUZ5cVh2aHFURU9hb3g0WWI2bFBEazl2NUZTZTk1ZWdJTER6Rmh1RFRMRTdxbmU1aGNQTGc1b1piYV9DamNfLTZYaTlVbFE2OHZzR1dlcElWM2Q1WFJ2aHY4Zm1KYVdhVThGX3hPdWtmclhCeGNKX25mWG9kNF9OT3Y0bnZSNkVXTi1PMmhyZkx2TEFVcWVKeFHSAYQCQVVfeXFMTnlTVlhEUGtrSzcwRnFiSmN3MkI5Wmpia05md0NaTHJYWS1tMHFaaE9Rd0FiNnptZGhiVjN5WXh4cVRjN2FsTmRXNUJPZ01vX1NVSEQ5SEFPMVlIVk5XZTlNN29ya2hhWDloU0RPZ0t3UzdhanBkN1drcmo2VmVqc3BTOGlmU203eUk1X21UOXhtcjVWOW92ZldGTUw0enVOSVJyRTVqUWlzb01CRDl4V3gtbkRLZTAzTGN5VkRRQmtXWmVrUS1CNmRHLXBWaWZRNE90dEVNN2JwQnlSX3Z0TlJGTW9paE1VbnkzWEg5VGZ6SVhpQ0Zubm5lSGRTN1B2MkRDcnA?oc=5",
+   "publicado": "2026-11-11T15:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Gestores dizem que CDI vale pouco em dólar e defendem alocação no exterior",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRHlINFJLWGxsU3dKaEpSTDROd0xLTDJfSGJiaTZpNWU1VENEam5TUlRucWptQktJSGVLWWx2TWE1LUN5eWlVZC0yUlV3N0Y3OE4xajJnZEx2RlNmeW53NzRadlNYel9kdHJrZDRyZVFQOERud1JVQ0doeXZQQVBuS1RSdTl1bkFnZ1FZZzh4aEg4akc1emZVd0xRSEtHcnBpME9FUmNDQk1kOW1nSEE?oc=5",
+   "publicado": "2026-11-11T15:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Hapvida: ação sobe forte em sessão antes da divulgação do balanço; veja o que esperar",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRk9lTXlwaFJDMHV3d3ZVZm9IaXNOVDlsN3pYTm5sejJoXzE0TTV4SFlWWEZDR3dnbjVHeWdsVXlSRzhJcmRnQ0Q5b3pzWEc3RXBEX1NKTmlmRnZEOUZGSnlZQ2ljVWllRVloMk1kUDVScEg3MjJFZEMzQzcyWHlrZkJvOXBJQkdGb2VIeWlQSnVOT05zeks5U3B1UWVlQXJvWGx1ek9hUFNZeGFiZzZUV2xOMkVsR1dCcllBNHFBN0VCcmc3SVHSAcwBQVVfeXFMTTdYbDRXUmQ3YmRxaWQ0RFlQZ0VYdThiQ0VRcFZiMm9VWEcwd1hQVFNOQTBBTHEwMEloNjAzSXBVZEdaVWNkRU9RN3hCaGpyZC1LVHcxVlRsOFRRNW8wUVhYTURsa2tvT2FJbjYybmlsb0tLa0N1Y0s4emNYVmI1TTZ1RG5xV1lNZG4yWTBQb0NUVVlLVEFGcjQ1dGd4NFJGNHhfeXFVTDBDZHUtU2stcFZoM0RlQXFsa3dIRExEYWZGd3U0MENjMlBPRWpF?oc=5",
+   "publicado": "2026-11-11T15:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
   }
  ],
  "enviadas": [
@@ -2067,7 +2223,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T15:38-03:00",
+ "atualizado_em": "2026-11-11T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2075,12 +2231,78 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Hapvida: ação sobe forte em sessão antes da divulgação do balanço; veja o que esperar",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRk9lTXlwaFJDMHV3d3ZVZm9IaXNOVDlsN3pYTm5sejJoXzE0TTV4SFlWWEZDR3dnbjVHeWdsVXlSRzhJcmRnQ0Q5b3pzWEc3RXBEX1NKTmlmRnZEOUZGSnlZQ2ljVWllRVloMk1kUDVScEg3MjJFZEMzQzcyWHlrZkJvOXBJQkdGb2VIeWlQSnVOT05zeks5U3B1UWVlQXJvWGx1ek9hUFNZeGFiZzZUV2xOMkVsR1dCcllBNHFBN0VCcmc3SVHSAcwBQVVfeXFMTTdYbDRXUmQ3YmRxaWQ0RFlQZ0VYdThiQ0VRcFZiMm9VWEcwd1hQVFNOQTBBTHEwMEloNjAzSXBVZEdaVWNkRU9RN3hCaGpyZC1LVHcxVlRsOFRRNW8wUVhYTURsa2tvT2FJbjYybmlsb0tLa0N1Y0s4emNYVmI1TTZ1RG5xV1lNZG4yWTBQb0NUVVlLVEFGcjQ1dGd4NFJGNHhfeXFVTDBDZHUtU2stcFZoM0RlQXFsa3dIRExEYWZGd3U0MENjMlBPRWpF?oc=5",
+   "publicado": "2026-11-11T15:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
+  },
+  {
+   "titulo": "Gestores dizem que CDI vale pouco em dólar e defendem alocação no exterior",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRHlINFJLWGxsU3dKaEpSTDROd0xLTDJfSGJiaTZpNWU1VENEam5TUlRucWptQktJSGVLWWx2TWE1LUN5eWlVZC0yUlV3N0Y3OE4xajJnZEx2RlNmeW53NzRadlNYel9kdHJrZDRyZVFQOERud1JVQ0doeXZQQVBuS1RSdTl1bkFnZ1FZZzh4aEg4akc1emZVd0xRSEtHcnBpME9FUmNDQk1kOW1nSEE?oc=5",
+   "publicado": "2026-11-11T15:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado estima que fim da escala 6x1 vai adicionar 0,3 ponto ao IPCA em 2027, mostra Questionário Pré-Copom",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOSmhNal9QVV9TaVdXZE5KSUxXNkFDY2hfa01DQ2NoUnNFV2MyUWJnQXAzSDV1TnhxUmhzU0dQci00S0NMUkhySVpCSnpNSzJDMG41Mk5yQjFNVHAxWmRnaGdxdWRBOUZ5cVh2aHFURU9hb3g0WWI2bFBEazl2NUZTZTk1ZWdJTER6Rmh1RFRMRTdxbmU1aGNQTGc1b1piYV9DamNfLTZYaTlVbFE2OHZzR1dlcElWM2Q1WFJ2aHY4Zm1KYVdhVThGX3hPdWtmclhCeGNKX25mWG9kNF9OT3Y0bnZSNkVXTi1PMmhyZkx2TEFVcWVKeFHSAYQCQVVfeXFMTnlTVlhEUGtrSzcwRnFiSmN3MkI5Wmpia05md0NaTHJYWS1tMHFaaE9Rd0FiNnptZGhiVjN5WXh4cVRjN2FsTmRXNUJPZ01vX1NVSEQ5SEFPMVlIVk5XZTlNN29ya2hhWDloU0RPZ0t3UzdhanBkN1drcmo2VmVqc3BTOGlmU203eUk1X21UOXhtcjVWOW92ZldGTUw0enVOSVJyRTVqUWlzb01CRDl4V3gtbkRLZTAzTGN5VkRRQmtXWmVrUS1CNmRHLXBWaWZRNE90dEVNN2JwQnlSX3Z0TlJGTW9paE1VbnkzWEg5VGZ6SVhpQ0Zubm5lSGRTN1B2MkRDcnA?oc=5",
+   "publicado": "2026-11-11T15:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras afirma discutir eventual mudança em estratégia comercial",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVEo4SU5mRVQyZXZFc3BLV3BpM0Y3Rk4xWGU1VFBsVHdFVVZpUUhobGRUejQwenBpNUVuLWhpdW1PdzdZNlpfamUtbmlEV0NPTlhnSEFOejhhQ2tJTGswbENwTzlsWUFBbHFUMzRBRVVOc0Z1SVlfa0MwdllPZ3RhNHktb3czYmxmTDExV2tVd2ViV2E2VkRkd3g0eEhOM2V4c3B3Sg?oc=5",
+   "publicado": "2026-11-11T15:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras perde força",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbUkxQmpaVFhqeFNXQ1l1Z1RicnJEaDU0czZRQlZjdWZ0Z2IyR0w2TTBpTGVPRHZDdE5vWk03dTlBZG1nSGN0N1hYX1RCZExRZHN3Y2FFZlY1UGVsSTZwT2x6Mi1WdS1SeHBucjlZTHVKZXE5Y3Y3TGZhel81Y1YtblctUm5fNnMyNURFWGNkdFdSd2ZHamd3NUFtNDhLWUoySDhyZFFlcFZBeUZBenhBZ2lKc2o1endkbHRtLTJ3OF8yVk82dEc0Q19ROUx1N1JadGVxOTEyOXZiNy0wUE1GQnVn0gHnAUFVX3lxTE05SmVpZzc1VlpkYk50T2JaS0NlTkFRWXMwT3FUTlJTXzc1Q21vQTB1b2EweDdXeVdSQVp0T3N6OWdrdVJ1V1FKQUxuazBGMnhZaHlDSUJuQzhVamtrMUU3em1reUFNSTNQbkJ0VmJiMks4WkN3bUxZUzJlTjdwTFJubW00cUVEZjExMnpuNzlUZGdHVzR3LUdiYjRNUFd0MFRsbFFlS3pwRDhsdHJpZlk3VWtnVzZ0NGJCNXl5UDU4elpOVkM1SFlRSVRvYVBlUHdJTGk2b0VacDNQaURWVzZqTTNqY0VObw?oc=5",
+   "publicado": "2026-11-11T15:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Governo vai enviar nesta quarta projeto com medidas de ajuste fiscal de até R$ 60 bi em 2027",
    "fonte": "Estadão",
@@ -2192,21 +2414,6 @@
    ]
   },
   {
-   "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras perde força",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbUkxQmpaVFhqeFNXQ1l1Z1RicnJEaDU0czZRQlZjdWZ0Z2IyR0w2TTBpTGVPRHZDdE5vWk03dTlBZG1nSGN0N1hYX1RCZExRZHN3Y2FFZlY1UGVsSTZwT2x6Mi1WdS1SeHBucjlZTHVKZXE5Y3Y3TGZhel81Y1YtblctUm5fNnMyNURFWGNkdFdSd2ZHamd3NUFtNDhLWUoySDhyZFFlcFZBeUZBenhBZ2lKc2o1endkbHRtLTJ3OF8yVk82dEc0Q19ROUx1N1JadGVxOTEyOXZiNy0wUE1GQnVn0gHnAUFVX3lxTE05SmVpZzc1VlpkYk50T2JaS0NlTkFRWXMwT3FUTlJTXzc1Q21vQTB1b2EweDdXeVdSQVp0T3N6OWdrdVJ1V1FKQUxuazBGMnhZaHlDSUJuQzhVamtrMUU3em1reUFNSTNQbkJ0VmJiMks4WkN3bUxZUzJlTjdwTFJubW00cUVEZjExMnpuNzlUZGdHVzR3LUdiYjRNUFd0MFRsbFFlS3pwRDhsdHJpZlk3VWtnVzZ0NGJCNXl5UDU4elpOVkM1SFlRSVRvYVBlUHdJTGk2b0VacDNQaURWVzZqTTNqY0VObw?oc=5",
-   "publicado": "2026-11-11T13:55-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
@@ -2218,49 +2425,10 @@
    "tickers": []
   },
   {
-   "titulo": "Taesa (TAEE11): vendidos entram fortes antes de resultados, mas tiro pode sair pela culatra; entenda",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeVVRVzdmcGJFcFgtNG9XMTlUMEhJNUNESFk5NlkxcVIybFNrN2xKN1drQkF2NzI0ZlpIcDFsX2dNWjR3ZnhTTjRHaTR4c0tiNnNTSUY4UFkxTHpfeF94YjJLb0hpb0dqOFJvMmR1RkJDU3Y4bTFuYjNZdWJ0YjZSMlNOWGJMSGg3akFCTUl6WUVSTllMamNRRHQ1SFVQeV9mZzE5VU5tNVQwbTJ1S3c2ek5vdmtlbGhDWl9yMEYwVVlQNXNi?oc=5",
-   "publicado": "2026-11-11T13:26-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "TAEE11"
-   ]
-  },
-  {
-   "titulo": "Ações do Magalu sobem mais de 20% em dois dias com crise da Casas Bahia no radar",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/acoes-do-magalu-sobem-mais-de-20-em-dois-dias-com-crise-da-casas-bahia-no-radar.shtml",
-   "publicado": "2026-11-11T13:15-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
-   ]
-  },
-  {
-   "titulo": "Alta de investimentos da Petrobras preocupa mercado, e ações caem",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alta-de-investimentos-da-petrobras-preocupa-mercado-e-acoes-caem.shtml",
-   "publicado": "2026-11-11T13:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal, balanços e exterior; PETR4 cai",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcmZXZEdGdEZTNVZJQ2tEeWljMmhoUFhMOEVOSGt5VldZTXZhVVVfREttOWttdjRfZ1I4TUl4NWJ0LWdTSTZwVnJqTDE0R1hDV2ZlWGtOT0xMMDU3Sk5idXZLNktacUlIallZWWdRMVZsUFhHOTdZNkNSME84SzhGQzVrVnJOaXRwZE81VGwyZw?oc=5",
-   "publicado": "2026-11-11T12:50-03:00",
+   "titulo": "Ações da Petrobras tentam reagir após queda de mais de 3%; o que pesa sobre a estatal?",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVkc4VU1oZGVGcFdGWHYySDNUdWVEdmJ6b2RXRzZIVnVGX2JheG1uWFZmcENGM05BN2loX0psMzExZGdBZGk1ZmlvbjlVMHQ2R2FxOXY4WTVwT09ZS19HT1pCWkRNUjU2VUVGckF2M2QyQTU2RWxtNUQxN2JuYjA2Mlg0OEVGeTJyRWcxb2d6LWFRc1BrWkN6a28wMjZNNWU3dXNaTTNKLWg3VDRpNDE5dWk4bXV3WFNWelZHTVZsVHE3NXcyUGYtREpoOG83VUpxN0ZN0gHYAUFVX3lxTE9vUXN1ekhWY25mZ1Y1V3JnbVpLcmJrTkp3NHNKZWZRVEdheXA5RUE5UkdlQmNhRDZJakdjOFZOenR2UFhIcF8zS0NGNkprVXM1a1ZpR3VHRFlkRjdULVZZOURXRmV4dmY2OTM0dkNqOFd2c0JjXzVrNXM1b0pKM1dtdHdzUUZGNFB2X2ZlRWdBSFdpWlc5NjhVaTFINlkxUWlqd1hYaDYyWGl1Sm5YWHFqZ2VRZGVIVVQtbVBIWnlaZzJwUFJ4QzEtdVN6aVRQTGxfUTNFUVI0Yg?oc=5",
+   "publicado": "2026-11-11T13:16-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
