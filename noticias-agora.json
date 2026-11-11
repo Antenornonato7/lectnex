@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T13:48-03:00",
+  "atualizado_em": "2026-11-11T13:50-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -175,11 +175,11 @@
     ],
     [
      "13:30",
-     172464.0
+     172522.0
     ],
     [
-     "13:33",
-     172529.0
+     "13:35",
+     172566.0
     ]
    ]
   },
@@ -416,11 +416,11 @@
     ],
     [
      "13:45",
-     5.5606
+     5.559
     ],
     [
-     "13:48",
-     5.559
+     "13:50",
+     5.5581
     ]
    ]
   },
@@ -889,7 +889,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": -0.01,
+    "ibov30": 0.01,
     "dolar30": -0.01
    },
    {
@@ -1679,7 +1679,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T13:48-03:00",
+ "atualizado_em": "2026-11-11T13:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1692,6 +1692,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+   "publicado": "2026-11-11T13:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Taesa (TAEE11): vendidos entram fortes antes de resultados, mas tiro pode sair pela culatra; entenda",
    "fonte": "Money Times",
@@ -1821,17 +1832,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-   "publicado": "2026-11-11T11:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Zelenskyy warns Ukraine is 'not real estate' as experts say a Russia peace deal remains elusive",
