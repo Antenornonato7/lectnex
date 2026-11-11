@@ -186,7 +186,7 @@ class Semana:
         a = ease(k / 0.35)
         self.centro(d, 520, 'O nosso placar da semana', fonte('InterDisplay-Bold.otf', 70), mix(WHITE, a))
         y = 660
-        for rot, (n, ok) in (('Termômetro da manhã', self.pterm), ('Histórico nos eventos', self.phist)):
+        for rot, (n, ok) in (('Viés do modelo', self.pterm), ('Histórico nos eventos', self.phist)):
             if not n:
                 continue
             d.rectangle([M + 40, y, W - M - 40, y + 150], fill=mix(CARD, a), outline=mix(LINE, a), width=2)
@@ -221,7 +221,7 @@ class Semana:
             l.append(f'A manchete que mais mexeu: {SIG[top["d"].weekday()].lower()} às {top["top"]["hora"]}, {pct(top["top"]["ibov30"])} em 30 min.')
         n, ok = self.pterm
         if n:
-            l.append(f'Nosso termômetro acertou {ok} de {n} nesta semana. Placar completo, com os erros, no link da bio.')
+            l.append(f'O viés do nosso modelo (experimental) acertou {ok} de {n} nesta semana. Placar completo, com os erros, no link da bio.')
         l += ['Qual dia da semana você operou melhor? Comente.', '', 'Conteúdo educacional, não é recomendação.',
               '#ibovespa #dolar #daytrade #miniindice #minidolar #b3 #mercadofinanceiro']
         return '\n'.join(l)

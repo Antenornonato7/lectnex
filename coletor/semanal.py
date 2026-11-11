@@ -83,7 +83,7 @@ def main():
     if ib: t.append(f'Ibovespa <b>{br(ib, 0)}</b> ({pct(ibv)} na semana)')
     if us: t.append(f'Dólar <b>R$ {br(us, 3)}</b> ({pct(usv)} na semana)')
     if juros: t.append(f'Juro prefixado {juros[0]}: <b>{br(juros[1])}%</b> ({"+" if juros[2] >= 0 else "−"}{abs(round(juros[2]))} bps)')
-    if tot: t += ['', f'🎯 Termômetro: <b>{ok}/{tot}</b> acertos na semana']
+    if tot: t += ['', f'🎯 Viés do modelo: <b>{ok}/{tot}</b> acertos na semana']
     if surp: t += ['', '⚡ <b>Surpresas</b>'] + [f'{FLAG.get(x.get("pais"), "")} {e(x["evento"])}: {e(x["resultado"])} (cons. {e(x.get("consenso") or "—")})' for x in surp[:5]]
     if altos: t += ['', '📅 <b>Próxima semana</b>'] + [f'{DIAS[dt.date.fromisoformat(x["data"]).weekday()]} {e(x.get("hora") or "")} {FLAG.get(x.get("pais"), "")} {e(x["evento"])}' for x in altos]
     t += ['', f'<a href="{SITE}semana/{prox.isoformat()}.html">Agenda completa da semana →</a>', '<i>Educacional. Não é recomendação.</i>']
@@ -94,7 +94,7 @@ def main():
     if ib: m.append(f'- **Ibovespa:** {br(ib, 0)} pontos ({pct(ibv)} na semana)')
     if us: m.append(f'- **Dólar à vista:** R$ {br(us, 3)} ({pct(usv)} na semana)')
     if juros: m.append(f'- **Juro prefixado {juros[0]} (Tesouro):** {br(juros[1])}% ao ano ({"+" if juros[2] >= 0 else "−"}{abs(round(juros[2]))} bps)')
-    if tot: m += ['', f'**Placar do termômetro:** {ok} de {tot} acertos na semana. [Ver o histórico]({SITE}#placar-term)']
+    if tot: m += ['', f'**Placar do viés do modelo (experimental):** {ok} de {tot} acertos na semana. [Ver o histórico]({SITE}#placar-term)']
     if surp: m += ['', '## Surpresas da semana'] + [f'- {x["evento"]}: **{x["resultado"]}** (consenso {x.get("consenso") or "—"}){" — " + x["surpresa"]["reacao"] if x["surpresa"].get("reacao") else ""}' for x in surp[:6]]
     if altos: m += ['', '## O que move WIN, WDO e DI na próxima semana'] + [f'- **{DIAS[dt.date.fromisoformat(x["data"]).weekday()]} {x.get("hora") or ""}** · {x["evento"]}' for x in altos]
     m += ['', f'[Agenda completa da semana]({SITE}semana/{prox.isoformat()}.html) · [Mercado Hoje]({SITE})', '', '_Conteúdo educacional. Não é recomendação de investimento._']

@@ -115,7 +115,7 @@ def gerar(r, saida, previa=None):
     term = r.get('termometro') or {}
     if term and y + 150 < 1440:
         y += 6
-        dr.text((M, y), 'TERMÔMETRO DA MANHÃ', font=fl, fill=ORANGE)
+        dr.text((M, y), 'VIÉS DO MODELO NA ABERTURA', font=fl, fill=ORANGE)
         y += 48
         ft = fonte('Inter-Medium.otf', 34)
         for k in ('win', 'wdo'):
@@ -155,7 +155,7 @@ def gerar(r, saida, previa=None):
     s = 'COLOQUE AQUI O STICKER DE LINK'
     dr.text(((W - dr.textlength(s, font=fs)) / 2, 1540), s, font=fs, fill='#475569')
     fr = fonte('Inter-Medium.otf', 26)
-    for i, txt in enumerate(('Cotações com atraso de ~30 min · conteúdo educacional', 'Termômetro: WIN medido pelo Ibovespa e WDO pelo dólar à vista')):
+    for i, txt in enumerate(('Cotações com atraso de ~30 min · conteúdo educacional', 'Viés do modelo (experimental): conferido pelo Ibovespa e pelo dólar à vista')):
         dr.text(((W - dr.textlength(txt, font=fr)) / 2, 1660 + i * 38), txt, font=fr, fill=MUTED)
     im.save(saida, 'PNG', optimize=True)
     return saida

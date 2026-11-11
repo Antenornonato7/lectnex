@@ -28,7 +28,7 @@
             <p class="text-[11px] text-slate-500 mt-1">Salvo só neste navegador. Muda a ordem do que você vê, não os dados.</p>
             <span class="term-label block mt-4 mb-1.5">O que você opera</span>
             <div class="flex gap-1.5">${chip(p.foco === 'ambos', 'data-foco="ambos"', 'WIN e WDO')}${chip(p.foco === 'win', 'data-foco="win"', 'Só WIN')}${chip(p.foco === 'wdo', 'data-foco="wdo"', 'Só WDO')}</div>
-            <p class="text-[10px] text-slate-500 mt-1">Filtra o calendário e o termômetro do bloco Agora.</p>
+            <p class="text-[10px] text-slate-500 mt-1">Filtra o calendário e o viés do modelo da Leitura do Dia.</p>
             <span class="term-label block mt-4 mb-1.5">Minhas ações (até 8)</span>
             <div class="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto thin-scroll">${(mapa.length ? mapa.map(x => x.ticker) : p.acoes).sort().map(t => chip(p.acoes.includes(t), `data-acao="${t}"`, t)).join('') || '<span class="text-xs text-slate-500">carregando…</span>'}</div>
             ${LX.config && LX.config.onesignal ? `<label class="mt-3 flex items-start gap-2 text-sm cursor-pointer"><input type="checkbox" data-alerta class="mt-0.5 accent-[#009988]" ${p.alertaAcoes ? 'checked' : ''}><span><strong class="inline-flex items-center gap-1"><i class="ph-bold ph-bell-ringing text-lect-orange"></i>Avisar no celular</strong> quando ${p.acoes.length ? p.acoes.slice(0, 3).join(', ') : 'minhas ações'} subir ou cair mais de 3% no dia (e de novo a 6%).<span class="block text-[10px] text-slate-500">Vale para as 3 primeiras da lista. Cotações com atraso de ~30 min.</span><span data-alerta-msg class="block text-[11px] font-mono"></span></span></label>` : ''}

@@ -5,7 +5,7 @@ data/leitura.json (termômetro da manhã) e data/calendario.json (agenda do pró
 Também registra o acerto do termômetro em data/placar-termometro.json.
 
 Critério do placar (aproximação educacional): WIN medido pelo Ibovespa à vista e WDO pelo dólar à vista.
-alta → acerta se subiu; baixa → acerta se caiu; neutro → acerta se a variação ficou entre −0,5% e +0,5%.
+alta → acerta se subiu; baixa → acerta se caiu; neutro → acerta se a variação ficou dentro da faixa (ver FAIXAS abaixo).
 """
 import datetime as dt, json, os, sys, urllib.request
 
@@ -330,7 +330,7 @@ def main():
             if not SO_STORY:
                 json.dump(placar, open('data/placar-termometro.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
             if tot: resumo['placar'] = {'ok': ok, 'tot': tot, 'n': len(ult)}
-            linhas += ['', '🎯 <b>Termômetro da manhã</b>'] + partes + [(f'Placar dos últimos {len(ult)} pregões:' if len(ult) > 1 else 'Placar (1º pregão):') + f' <b>{ok}/{tot}</b> ({ok / tot * 100:.0f}%)' if tot else '']
+            linhas += ['', '🎯 <b>Viés do modelo na abertura</b>'] + partes + [(f'Placar dos últimos {len(ult)} pregões:' if len(ult) > 1 else 'Placar (1º pregão):') + f' <b>{ok}/{tot}</b> ({ok / tot * 100:.0f}%)' if tot else '']
 
     try:
         ad = antes_depois()

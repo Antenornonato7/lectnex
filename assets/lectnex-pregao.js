@@ -48,7 +48,7 @@
         const today = LX.iso(LX.todayBRT());
         $('pg-term').innerHTML = leitura && leitura.termometro && leitura.data === today
             ? ['win', 'wdo'].filter(k => leitura.termometro[k]).map(k => { const t = leitura.termometro[k], c = T[t.leitura] || T.neutro; return `<div class="flex-1 min-w-0"><span class="font-mono text-[11px] text-slate-500">${k.toUpperCase()}</span><strong class="block font-mono text-lg ${c[1]}">${c[0]}</strong><span class="block text-[11px] text-slate-500 leading-snug line-clamp-2">${LX.esc(t.motivo)}</span></div>`; }).join('<div class="w-px bg-slate-200 dark:bg-lect-borderDark"></div>')
-            : `<p class="text-xs text-slate-500">${leitura && leitura.tipo === 'sem-pregao' ? 'Sem pregão hoje: o termômetro volta no próximo pregão.' : 'Termômetro de hoje ainda não publicado (sai às 7h40).'}</p>`;
+            : `<p class="text-xs text-slate-500">${leitura && leitura.tipo === 'sem-pregao' ? 'Sem pregão hoje: o viés do modelo volta no próximo pregão.' : 'Viés do modelo de hoje ainda não publicado (sai às 7h40).'}</p>`;
 
         // 3. maiores altas e baixas
         const m = (cot && cot.mapa || []).filter(x => typeof x.var_pct === 'number').sort((a, b) => b.var_pct - a.var_pct);
