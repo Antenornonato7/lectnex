@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T15:58-03:00",
+  "atualizado_em": "2026-11-11T16:00-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -279,11 +279,11 @@
     ],
     [
      "15:40",
-     172348.0
+     172328.0
     ],
     [
-     "15:43",
-     172315.0
+     "15:45",
+     172255.0
     ]
    ]
   },
@@ -624,11 +624,11 @@
     ],
     [
      "15:55",
-     5.5581
+     5.5611
     ],
     [
-     "15:58",
-     5.5587
+     "16:00",
+     5.5615
     ]
    ]
   },
@@ -1257,7 +1257,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.0
    },
    {
     "hora": "15:44",
@@ -1268,6 +1268,20 @@
     "ativos": [
      "WDO",
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:56",
+    "titulo": "Gestores dizem que CDI vale pouco em dólar e defendem alocação no exterior",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRHlINFJLWGxsU3dKaEpSTDROd0xLTDJfSGJiaTZpNWU1VENEam5TUlRucWptQktJSGVLWWx2TWE1LUN5eWlVZC0yUlV3N0Y3OE4xajJnZEx2RlNmeW53NzRadlNYel9kdHJrZDRyZVFQOERud1JVQ0doeXZQQVBuS1RSdTl1bkFnZ1FZZzh4aEg4akc1emZVd0xRSEtHcnBpME9FUmNDQk1kOW1nSEE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -2124,6 +2138,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Gestores dizem que CDI vale pouco em dólar e defendem alocação no exterior",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRHlINFJLWGxsU3dKaEpSTDROd0xLTDJfSGJiaTZpNWU1VENEam5TUlRucWptQktJSGVLWWx2TWE1LUN5eWlVZC0yUlV3N0Y3OE4xajJnZEx2RlNmeW53NzRadlNYel9kdHJrZDRyZVFQOERud1JVQ0doeXZQQVBuS1RSdTl1bkFnZ1FZZzh4aEg4akc1emZVd0xRSEtHcnBpME9FUmNDQk1kOW1nSEE?oc=5",
+   "publicado": "2026-11-11T15:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2153,7 +2179,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T15:58-03:00",
+ "atualizado_em": "2026-11-11T16:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2161,12 +2187,25 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Gestores dizem que CDI vale pouco em dólar e defendem alocação no exterior",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRHlINFJLWGxsU3dKaEpSTDROd0xLTDJfSGJiaTZpNWU1VENEam5TUlRucWptQktJSGVLWWx2TWE1LUN5eWlVZC0yUlV3N0Y3OE4xajJnZEx2RlNmeW53NzRadlNYel9kdHJrZDRyZVFQOERud1JVQ0doeXZQQVBuS1RSdTl1bkFnZ1FZZzh4aEg4akc1emZVd0xRSEtHcnBpME9FUmNDQk1kOW1nSEE?oc=5",
+   "publicado": "2026-11-11T15:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Mercado estima que fim da escala 6x1 vai adicionar 0,3 ponto ao IPCA em 2027, mostra Questionário Pré-Copom",
    "fonte": "Valor",
@@ -2339,19 +2378,6 @@
    ],
    "tickers": [
     "TAEE11"
-   ]
-  },
-  {
-   "titulo": "Ações do Magalu sobem mais de 20% em dois dias com crise da Casas Bahia no radar",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/acoes-do-magalu-sobem-mais-de-20-em-dois-dias-com-crise-da-casas-bahia-no-radar.shtml",
-   "publicado": "2026-11-11T13:15-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
    ]
   },
   {
