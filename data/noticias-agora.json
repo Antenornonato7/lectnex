@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T10:08-03:00",
+  "atualizado_em": "2026-11-11T10:38-03:00",
+  "ibov": {
+   "anterior": 171336.98,
+   "pontos": [
+    [
+     "10:00",
+     172169.0
+    ],
+    [
+     "10:05",
+     172104.0
+    ],
+    [
+     "10:10",
+     172299.0
+    ],
+    [
+     "10:15",
+     172286.0
+    ],
+    [
+     "10:20",
+     172620.0
+    ],
+    [
+     "10:23",
+     172583.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.5803,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.5564
+     5.5559
     ],
     [
-     "10:08",
-     5.5541
+     "10:10",
+     5.5557
+    ],
+    [
+     "10:15",
+     5.5557
+    ],
+    [
+     "10:20",
+     5.5534
+    ],
+    [
+     "10:25",
+     5.5583
+    ],
+    [
+     "10:30",
+     5.5627
+    ],
+    [
+     "10:35",
+     5.5593
+    ],
+    [
+     "10:38",
+     5.5583
     ]
    ]
   },
@@ -79,6 +132,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.23
    },
    {
@@ -94,6 +148,7 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
     "dolar30": -0.23
    },
    {
@@ -106,6 +161,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.3
    },
    {
@@ -121,6 +177,7 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
     "dolar30": -0.21
    },
    {
@@ -135,6 +192,7 @@
     "tickers": [
      "MGLU3"
     ],
+    "ibov30": null,
     "dolar30": -0.27
    },
    {
@@ -148,6 +206,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.27
    },
    {
@@ -161,6 +220,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.31
    },
    {
@@ -175,7 +235,23 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": -0.14
+    "ibov30": null,
+    "dolar30": -0.15
+   },
+   {
+    "hora": "09:38",
+    "titulo": "Casas Bahia (BHIA3) nega decisão sobre fechamento de lojas",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSDVXM1NLeW40Z2d3N05ma2Rub2FVazBvSGlSN0VnOXUyNVNvQlJQckdCZ09kbHk5cElSTU1NaENJdy1COVVrajA5eGVkbzNyZFliRTdYTTVLUHFDQ2tqRmdvMVlfQW9hampVNHpRS3dlcUN6RHR0cXR3cHFEbkRSYnJZeXg5MlNTZGgzNnJzd2d2ZE0tWHRqOERtZ9IBoAFBVV95cUxNZ2RQTVhmWXN5blRhNXdkcVQ0VU05MU1TN0hSVHVhSkZfYWlrMEp0T0FFN2ltc1dWd0Vlb3Y2N3dfcHpqM3J2dzB0aUhHLUpCcHM3eGlHR0tRUkFLbnVFZ2FGUzNqZmZIazNEa1VCLVRhbDdvb0ZaN0FIVDV3Z1lNeXQyVi1jOVgwLU5GVTF3TDloNWRKVkROYVl5cFBxRlp6?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BHIA3"
+    ],
+    "ibov30": null,
+    "dolar30": -0.15
    },
    {
     "hora": "09:39",
@@ -188,7 +264,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": -0.14
+    "ibov30": null,
+    "dolar30": -0.15
    },
    {
     "hora": "09:44",
@@ -201,7 +278,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.17
    },
    {
     "hora": "09:48",
@@ -213,6 +291,35 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.08
+   },
+   {
+    "hora": "10:16",
+    "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:21",
+    "titulo": "Ibovespa sobe com alta do petróleo e ajuste fiscal; 5 coisas para saber antes de investir hoje (11)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeVBPN2h6bEQzQ2Nac3JSdGxqY3BsZkxvWWJhZ21aQXBXZzRWWlREWjFaX3RXOFZGMVhsdTFaRnZqQmtodmxTeVA2T3VJSHVVZFJEZ216NXZqSHpsOHNDR0Y1WmJZRVZSWm5fd0VMQ3VZMUxKbk8wTkVCOUZiVWJMeG9Jc3NobHY4LW0zVVU3Q1JRYklFV2VVaU41QWNLR0FJb2ZjdllCMUFTTXpteF9nZG1HeFRNcDNvb2dqdWo0MzdCMUdWSE4xZ0xseE8?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -604,6 +711,19 @@
    "tickers": []
   },
   {
+   "titulo": "Casas Bahia (BHIA3) nega decisão sobre fechamento de lojas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSDVXM1NLeW40Z2d3N05ma2Rub2FVazBvSGlSN0VnOXUyNVNvQlJQckdCZ09kbHk5cElSTU1NaENJdy1COVVrajA5eGVkbzNyZFliRTdYTTVLUHFDQ2tqRmdvMVlfQW9hampVNHpRS3dlcUN6RHR0cXR3cHFEbkRSYnJZeXg5MlNTZGgzNnJzd2d2ZE0tWHRqOERtZ9IBoAFBVV95cUxNZ2RQTVhmWXN5blRhNXdkcVQ0VU05MU1TN0hSVHVhSkZfYWlrMEp0T0FFN2ltc1dWd0Vlb3Y2N3dfcHpqM3J2dzB0aUhHLUpCcHM3eGlHR0tRUkFLbnVFZ2FGUzNqZmZIazNEa1VCLVRhbDdvb0ZaN0FIVDV3Z1lNeXQyVi1jOVgwLU5GVTF3TDloNWRKVkROYVl5cFBxRlp6?oc=5",
+   "publicado": "2026-11-11T09:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BHIA3"
+   ]
+  },
+  {
    "titulo": "Dólar recua após salto da véspera, de olho em possível ajuste fiscal",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOb0FCNkFCQVViRERyRHYxZVhaWUprcmtFWFp1NG9tU3M3Mm1kNF9tRkZGWVZob3Z0akkzZmxLTmlJcTMteHN3WXdmUDdnX0Y2QnljNm42SGxOTWJwb2hNVUU0UjJreGlldmJTQ3BWNWxSTXI3VXVoV3dhS19VRDVyNER2QXVtd3QyalhZRGFva0ozTWV3OHVRMDVLemM2TTRHWlV6N1NyT3ZsWjM4bjJYalNfaXlYdGxObUhUWkJmSDMzWFHSAdIBQVVfeXFMT1VLRE54Q25lOGdtYzZVQmJabFY4bmsxMU4wcU14SWwwMG5kaVpSN1NJdGl0MUg3TzZlUDZEVHc5WHItNnpjdEJfNlY4OGk5WkJ5U3dxenVQNENMaFI3cVFvcUVUdjF4QjhmMTNNRFVLRmpkRUlQZGJ0OTJraERIa3BXbnVBRGx5SVd5RzJkQTZKS21EcGZMakdTcFlEUjdEcC1VLUcxT2p2R0dLaHlaWm9sOGxLdmx6U3JzZThkbzlXRm5QckMtSVd3NGxKdUV2eW53?oc=5",
@@ -637,6 +757,30 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+   "publicado": "2026-11-11T10:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe com alta do petróleo e ajuste fiscal; 5 coisas para saber antes de investir hoje (11)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeVBPN2h6bEQzQ2Nac3JSdGxqY3BsZkxvWWJhZ21aQXBXZzRWWlREWjFaX3RXOFZGMVhsdTFaRnZqQmtodmxTeVA2T3VJSHVVZFJEZ216NXZqSHpsOHNDR0Y1WmJZRVZSWm5fd0VMQ3VZMUxKbk8wTkVCOUZiVWJMeG9Jc3NobHY4LW0zVVU3Q1JRYklFV2VVaU41QWNLR0FJb2ZjdllCMUFTTXpteF9nZG1HeFRNcDNvb2dqdWo0MzdCMUdWSE4xZ0xseE8?oc=5",
+   "publicado": "2026-11-11T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -654,9 +798,14 @@
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOGxsTVc2eGQ4VHU4VkRrTDBwdUM4aVhRVVRoMG8xdE5rcjY4MEpQNF83MUgxa2k2VzJnTzREYjJzMHBqZ2hNRnRlTGFwZDdqT09kaVdnOW9KSmhMVFNkQXZXNUlsNHpSVHhuVTdsbGJjTHBfR1RwVElCS00yT1BEUUxiaEVRR2JtSHE1djQ0NU41aExWNTVJTV9VVmLSAaIBQVVfeXFMTlpvZGlkZVVkQkRqVXh0UEcyem5mWEtOMWhfY3ZfMk9tdTdUU3lsSlVYU1BhU2lzSjZRVUFQVjNiejhfV0N3QzROcEViM09fVHEwdUh1dVg2aUotN0N0c2VuNTZNTG1PZG1MMDhfM1dhcXpBeHpSeTRQVmhHLWdLLWotRlJrQ0lGUzg2bWlzV2dxTmczbHM0U0oxb2ttWjlVQnNn?oc=5",
    "titulo": "Dólar hoje tem leve baixa de olho em plano fiscal",
    "em": "2026-11-11T12:35:35+00:00"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeVBPN2h6bEQzQ2Nac3JSdGxqY3BsZkxvWWJhZ21aQXBXZzRWWlREWjFaX3RXOFZGMVhsdTFaRnZqQmtodmxTeVA2T3VJSHVVZFJEZ216NXZqSHpsOHNDR0Y1WmJZRVZSWm5fd0VMQ3VZMUxKbk8wTkVCOUZiVWJMeG9Jc3NobHY4LW0zVVU3Q1JRYklFV2VVaU41QWNLR0FJb2ZjdllCMUFTTXpteF9nZG1HeFRNcDNvb2dqdWo0MzdCMUdWSE4xZ0xseE8?oc=5",
+   "titulo": "Ibovespa sobe com alta do petróleo e ajuste fiscal; 5 coisas para saber antes de investir hoje (11)",
+   "em": "2026-11-11T13:25:34+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T10:08-03:00",
+ "atualizado_em": "2026-11-11T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -670,6 +819,42 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+   "publicado": "2026-11-11T10:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe com alta do petróleo e ajuste fiscal; 5 coisas para saber antes de investir hoje (11)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeVBPN2h6bEQzQ2Nac3JSdGxqY3BsZkxvWWJhZ21aQXBXZzRWWlREWjFaX3RXOFZGMVhsdTFaRnZqQmtodmxTeVA2T3VJSHVVZFJEZ216NXZqSHpsOHNDR0Y1WmJZRVZSWm5fd0VMQ3VZMUxKbk8wTkVCOUZiVWJMeG9Jc3NobHY4LW0zVVU3Q1JRYklFV2VVaU41QWNLR0FJb2ZjdllCMUFTTXpteF9nZG1HeFRNcDNvb2dqdWo0MzdCMUdWSE4xZ0xseE8?oc=5",
+   "publicado": "2026-11-11T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nissan cuts sales forecast again on China woes as CEO outlines plan to fight back",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/nissan-sales-forecast-earnings-china.html",
+   "publicado": "2026-11-11T10:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Escândalo com CEO da Nvidia expõe influência de Singapura para enviar chips à China",
    "fonte": "Folha",
@@ -716,6 +901,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Casas Bahia (BHIA3) nega decisão sobre fechamento de lojas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSDVXM1NLeW40Z2d3N05ma2Rub2FVazBvSGlSN0VnOXUyNVNvQlJQckdCZ09kbHk5cElSTU1NaENJdy1COVVrajA5eGVkbzNyZFliRTdYTTVLUHFDQ2tqRmdvMVlfQW9hampVNHpRS3dlcUN6RHR0cXR3cHFEbkRSYnJZeXg5MlNTZGgzNnJzd2d2ZE0tWHRqOERtZ9IBoAFBVV95cUxNZ2RQTVhmWXN5blRhNXdkcVQ0VU05MU1TN0hSVHVhSkZfYWlrMEp0T0FFN2ltc1dWd0Vlb3Y2N3dfcHpqM3J2dzB0aUhHLUpCcHM3eGlHR0tRUkFLbnVFZ2FGUzNqZmZIazNEa1VCLVRhbDdvb0ZaN0FIVDV3Z1lNeXQyVi1jOVgwLU5GVTF3TDloNWRKVkROYVl5cFBxRlp6?oc=5",
+   "publicado": "2026-11-11T09:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BHIA3"
+   ]
   },
   {
    "titulo": "Banco Central da China promete intensificar o apoio político à economia",
@@ -811,33 +1009,6 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbUkxQmpaVFhqeFNXQ1l1Z1RicnJEaDU0czZRQlZjdWZ0Z2IyR0w2TTBpTGVPRHZDdE5vWk03dTlBZG1nSGN0N1hYX1RCZExRZHN3Y2FFZlY1UGVsSTZwT2x6Mi1WdS1SeHBucjlZTHVKZXE5Y3Y3TGZhel81Y1YtblctUm5fNnMyNURFWGNkdFdSd2ZHamd3NUFtNDhLWUoySDhyZFFlcFZBeUZBenhBZ2lKc2o1endkbHRtLTJ3OF8yVk82dEc0Q19ROUx1N1JadGVxOTEyOXZiNy0wUE1GQnVn0gHnAUFVX3lxTE05SmVpZzc1VlpkYk50T2JaS0NlTkFRWXMwT3FUTlJTXzc1Q21vQTB1b2EweDdXeVdSQVp0T3N6OWdrdVJ1V1FKQUxuazBGMnhZaHlDSUJuQzhVamtrMUU3em1reUFNSTNQbkJ0VmJiMks4WkN3bUxZUzJlTjdwTFJubW00cUVEZjExMnpuNzlUZGdHVzR3LUdiYjRNUFd0MFRsbFFlS3pwRDhsdHJpZlk3VWtnVzZ0NGJCNXl5UDU4elpOVkM1SFlRSVRvYVBlUHdJTGk2b0VacDNQaURWVzZqTTNqY0VObw?oc=5",
    "publicado": "2026-11-11T08:46-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Balanço da Petrobras (PETR4) mexe com dia de liquidez reduzida com feriado nos EUA; Ibovespa em dólar cai nesta quarta-feira (11)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWXJOUzFzVjVpOTBpMW9HX0tXVjJPbzRuWUdXd05DR25QcEREV2MzbXJGVnU2RkZhS3lxdEU4d2p3WXhDLW5NZXd0V09iQklIY0t6WnNhZVBGQUo1WGcwaVJBSy1SRk5zd0xtRXBaemtDY2txNGdmWDhoR1pzNk9iaHk4Yy1kRERCV3Rodk9TaFdPTWtkWUN6dXhscjN5c05mQTc2UFBpSFk3bzlYZGE1aHdYaEpsd0hJOXQxSDdMV2lyWmhveGRSVTBzN1dVWHoxTlBnUEVFUHF6WWtyYjJCLTBXWEVPOTh1S004MTdSZUlMQQ?oc=5",
-   "publicado": "2026-11-11T07:18-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Mini-índice (WINZ26): resultado da Petrobras pode mexer com o Ibovespa",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUTMxenRaSjFVeGpQWGtnNjBmQWcxNVVfZkJfYmNJVk41aVJlU2hjUmtGVlV5cmN0TlphT1dwalFuWG9sMDNsS0Jkb2JDcDdvVzdmMTBRcTZTN04wQzlma19NdURtQVF0QVcteDV1MEpBZDJ0SFhFSXBqLTZnTnlGcmJXMklwV3BVdXhDTkFFMULSAZYBQVVfeXFMT3laQ2xvQ1d1TTlHbXFISDlsOTByZkVXdHpvMDJXOE1ER0tGTm01R0RiX1dpdTZ1SlZDNzIxTEZUaFZUVmk4S2VubFhGc1haNXEwUzd5Z3VBTms4cnk1TFdaSkFhOGxGaDVSV3FZbTVWRUNFOTdyMVlJa2lycTZjVEZJZEgtVDl3UTlHOUZXMXdsVElaZWtn?oc=5",
-   "publicado": "2026-11-11T07:09-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
