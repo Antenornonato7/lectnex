@@ -168,3 +168,10 @@ Opcional: segredo `GSC_SITE` com `sc-domain:lectnex.com.br` ou `https://lectnex.
 - As operações registradas no placar do Plano do Dia já são as do Diário de Trades e entram no IR do mês automaticamente (mesmo armazenamento, `lectnex-plano-v1`).
 - O bloco **Fechamento do dia** (depois do pregão, ou quando há operações) mostra resultado, acerto e três regras: checklist completo, não operou depois de bater o limite de perda, não passou do máximo de operações. O trader dá uma nota de disciplina (1–5) e escreve a lição do dia; fica salvo em `days[data].close`.
 - No Diário, **Disciplina do mês** mostra dias no plano, média de resultado nos dias no plano e fora dele, nota média e as últimas lições.
+
+## Teste do menu ("Laboratório" × "Aprender")
+
+Desde 11/11/2026 metade dos visitantes vê "Aprender" no lugar de "Laboratório" no menu (sorteio salvo no navegador,
+`LX.abMenu` em `assets/lectnex-core.js`). O workflow "Teste do menu" lê o Google Analytics às segundas (até 01/12) e manda
+o placar para o Telegram privado. Configuração (uma vez): passo a passo no topo de `coletor/teste_menu.py`.
+Para encerrar o teste: fixe o nome vencedor em `NAV` e apague o bloco `LX.abMenu`.

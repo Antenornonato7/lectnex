@@ -444,6 +444,11 @@
         { key: 'acoes', href: 'acoes.html', label: 'Ações B3', icon: 'ph-chart-bar' },
         { key: 'lab', href: 'laboratorio.html', label: 'Laboratório', icon: 'ph-student' }
     ];
+    /* Teste A/B do nome do menu de estudo (desde 11/11/2026, ~2 semanas): metade dos visitantes vê "Laboratório" (A),
+       metade vê "Aprender" (B). O sorteio fica salvo no navegador para a pessoa ver sempre o mesmo nome.
+       Medida: evento "menu_clique" (destino, teste_menu) e propriedade de usuário "teste_menu" no Google Analytics. */
+    LX.abMenu = (() => { try { let v = localStorage.getItem('lectnex-ab-menu'); if (v !== 'A' && v !== 'B') { v = Math.random() < .5 ? 'A' : 'B'; localStorage.setItem('lectnex-ab-menu', v); } return v; } catch (_) { return 'A'; } })();
+    if (LX.abMenu === 'B') NAV[4].label = 'Aprender';
     LX.renderChrome = function (active) {
         const top = document.getElementById('lx-topbar');
         if (top) top.innerHTML = `
@@ -472,8 +477,8 @@
             const link = (n, mobile) => {
                 const on = n.key === active;
                 const badge = n.badge ? `<span class="ml-1 px-1 text-[8px] font-bold bg-lect-orange text-lect-navy">${n.badge}</span>` : '';
-                if (mobile) return `<a href="${n.href}" class="px-2.5 py-1 ${on ? 'bg-lect-navy text-white font-bold' : 'border border-slate-300 dark:border-lect-borderDark'}">${n.label}${badge}</a>`;
-                return `<a href="${n.href}" class="flex items-center gap-1.5 px-2 xl:px-2.5 py-2 whitespace-nowrap transition-colors ${on ? 'text-lect-navy dark:text-white font-bold border-b-2 border-lect-teal' : 'hover:text-lect-teal'}"><i class="ph-bold ${n.icon} hidden xl:inline-block ${on ? 'text-lect-teal' : 'text-slate-400'}"></i>${n.label}${badge}</a>`;
+                if (mobile) return `<a href="${n.href}" data-nav="${n.key}" class="px-2.5 py-1 ${on ? 'bg-lect-navy text-white font-bold' : 'border border-slate-300 dark:border-lect-borderDark'}">${n.label}${badge}</a>`;
+                return `<a href="${n.href}" data-nav="${n.key}" class="flex items-center gap-1.5 px-2 xl:px-2.5 py-2 whitespace-nowrap transition-colors ${on ? 'text-lect-navy dark:text-white font-bold border-b-2 border-lect-teal' : 'hover:text-lect-teal'}"><i class="ph-bold ${n.icon} hidden xl:inline-block ${on ? 'text-lect-teal' : 'text-slate-400'}"></i>${n.label}${badge}</a>`;
             };
             head.innerHTML = `
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between gap-4">
@@ -502,7 +507,7 @@
               </div>
               <div class="lg:col-span-3 space-y-1.5 font-mono text-xs">
                 <span class="text-white font-bold uppercase tracking-wider block mb-2">Módulos</span>
-                ${NAV.map(n => `<a href="${n.href}" class="block hover:text-lect-tealLight">${n.label}</a>`).join('')}
+                ${NAV.map(n => `<a href="${n.href}" data-nav="${n.key}" class="block hover:text-lect-tealLight">${n.label}</a>`).join('')}
                 <a href="glossario.html" class="block hover:text-lect-tealLight">Glossário do Trader</a>
                 <a href="semana/" class="block hover:text-lect-tealLight">Agenda da semana</a>
                 <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
@@ -929,7 +934,9 @@
         window.gtag = function () { dataLayer.push(arguments); };
         gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: esc === 'sim' ? 'granted' : 'denied', wait_for_update: 500 });
         gtag('js', new Date());
+        gtag('set', 'user_properties', { teste_menu: LX.abMenu });
         gtag('config', id, { page_title: document.title });
+        document.addEventListener('click', ev => { const a = ev.target.closest && ev.target.closest('a[data-nav]'); if (a) LX.track('menu_clique', { destino: a.dataset.nav, teste_menu: LX.abMenu, lugar: a.closest('footer') ? 'rodape' : a.closest('nav') ? 'menu' : 'menu_celular' }); });
         const load = () => { const sc = document.createElement('script'); sc.async = true; sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + id; document.head.appendChild(sc); };
         (window.requestIdleCallback || (f => setTimeout(f, 1200)))(load);
         rastrear();

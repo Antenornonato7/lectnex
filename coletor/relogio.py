@@ -83,6 +83,7 @@ TAREFAS = [
     ('coletor-cvm.yml', None, {}, ('horarios', ['07:17'], 360), lambda: AGORA.weekday() in (1, 2, 3, 4, 5)),
     ('semanal.yml', 'Resumo semanal enviar', {'enviar': 'true'}, ('horarios', ['10:17'], 360), lambda: AGORA.weekday() == 6),
     ('search-console.yml', 'Search Console semanal', {'teste': 'false'}, ('horarios', ['09:12'], 360), lambda: AGORA.weekday() == 0),
+    ('teste-menu.yml', 'Teste do menu semanal', {'teste': 'false'}, ('horarios', ['09:27'], 360), lambda: AGORA.weekday() == 0 and AGORA.date() <= dt.date(2026, 12, 1)),
     ('carrossel.yml', 'Carrossel da semana', {'previa': 'false'}, ('horarios', ['09:47'], 360), lambda: AGORA.weekday() == 5),
 ]
 
@@ -161,7 +162,7 @@ NOMES = {'cotacoes.yml': 'Cotações das ações', 'monitor.yml': 'Monitor do si
          'reacao.yml': 'Reação do mercado', 'fechamento.yml': 'Fechamento do dia', 'resumo-dono.yml': 'Resumo do dono', 'kit.yml': 'Kit do dia',
          'lembrete.yml': 'Lembrete', 'checar-resultados.yml': 'Conferir resultados', 'telegram.yml': 'Contagem do Telegram', 'termo.yml': 'Termômetro',
          'sinais.yml': 'Sinais da manhã', 'instagram.yml': 'Instagram', 'antes.yml': 'Antes do dado', 'coletor-cvm.yml': 'Coletor CVM',
-         'semanal.yml': 'Resumo semanal', 'carrossel.yml': 'Carrossel da semana', 'search-console.yml': 'Relatório do Google', 'plano-push.yml': 'Lembrete do Plano do Dia (8h45)'}
+         'semanal.yml': 'Resumo semanal', 'carrossel.yml': 'Carrossel da semana', 'search-console.yml': 'Relatório do Google', 'teste-menu.yml': 'Teste do menu', 'plano-push.yml': 'Lembrete do Plano do Dia (8h45)'}
 
 
 def alertar(arq, titulo, al):
