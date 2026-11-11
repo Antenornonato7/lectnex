@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T18:13-03:00",
+  "atualizado_em": "2026-11-11T18:15-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -792,11 +792,11 @@
     ],
     [
      "18:10",
-     5.5714
+     5.5732
     ],
     [
-     "18:13",
-     5.5709
+     "18:15",
+     5.5749
     ]
    ]
   },
@@ -1743,7 +1743,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.18
+    "dolar30": 0.25
    },
    {
     "hora": "17:46",
@@ -1756,7 +1756,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.18
+    "dolar30": 0.25
    },
    {
     "hora": "17:48",
@@ -1769,7 +1769,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.18
+    "dolar30": 0.25
    },
    {
     "hora": "17:48",
@@ -1782,7 +1782,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.18
+    "dolar30": 0.25
    },
    {
     "hora": "17:49",
@@ -1796,7 +1796,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.25
    },
    {
     "hora": "17:55",
@@ -1829,17 +1829,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Agenda econômica: veja os indicadores que podem movimentar bolsa e dólar nesta quarta-feira (11)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQM005WElxU0dKamc5YTJndW5vREw0aHFJdDRnRkx2RktWaElnajFpMm1zTk1lY0Z5OG1ud0o1N1NZVmtBVzBqUG5BZWV0aVI4TDRNYlRncVU1QUY4Vkc3Z29QRFU0QzVwUWV0NFA4YWhjUktRN2FKbURtQUdtczJvTTR6NnVOU1FsbzZwUjRyREdfaDJzbXlDMnNQVVV5Znk5NmtZc3VVdVhBbWN0eWdRREJCdGsyOU1mNUFiUGhBcW92VUNF?oc=5",
-   "publicado": "2026-11-11T06:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Dólar em alta estreita margem de manobra do BC",
    "fonte": "Valor",
@@ -2819,6 +2808,20 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Brent pode impactar positivamente o 4º trimestre, afirma CFO da Petrobras",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRmMwQlpNa053NWlxeV9QTjRlUGppT1ZOMnlqMmVPNG03X1hNRTVFRWYwMWVSQlhDb3FtWXFOcXJtTmlPOTFLbXVfY2pVeTI1NXBtUlV3Rlh2blRkcU5YYzcyQWlLMGpqa2NkMmwySzE5emIxVS1jdjZoV1hPc0lQN0E2S0tEOUZNUW4xaFJwT0NlMFVDTVZXVENoWVlHbmNRVGZMUEkxTEx6d3Nm?oc=5",
+   "publicado": "2026-11-11T18:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -2848,7 +2851,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T18:13-03:00",
+ "atualizado_em": "2026-11-11T18:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2862,6 +2865,20 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Brent pode impactar positivamente o 4º trimestre, afirma CFO da Petrobras",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRmMwQlpNa053NWlxeV9QTjRlUGppT1ZOMnlqMmVPNG03X1hNRTVFRWYwMWVSQlhDb3FtWXFOcXJtTmlPOTFLbXVfY2pVeTI1NXBtUlV3Rlh2blRkcU5YYzcyQWlLMGpqa2NkMmwySzE5emIxVS1jdjZoV1hPc0lQN0E2S0tEOUZNUW4xaFJwT0NlMFVDTVZXVENoWVlHbmNRVGZMUEkxTEx6d3Nm?oc=5",
+   "publicado": "2026-11-11T18:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Vale a pena investir em empresas que estão fora da Bolsa?",
    "fonte": "Folha",
@@ -3028,19 +3045,6 @@
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxORFREMDc4U0lNeEJGb21ZNkVwS1pXNm52NG9tbGhDdmtLRTJLWHRTNjVaMlN4OFRMbEZvMWxxUFRZREp5a3RXb1UtT05vN0xoa2UwVWpTWWlnMHJMVlB0cnZpT25tRnFpSm85Nm0zN04zSWxubjdwcjBkZFpLcHItZk9xVlBOTkw4RS1peFB5SGNabEJxSVFWMHdRSEgzZGRNWjhDbWRrVHRkakJkNk1qUnJtMWpCSVQ2akJLM3hsdWpZWnBwY1RwYjRzU0ZrcGFtZW9tS3VCWlJIYi1jT1FLSjBhVndvRVFOTHRiZXVVbDdBeG52QjJvdjNB0gGIAkFVX3lxTFB5ODdJTzRycFBhNGhSSV9JREhpREdHSHBuQ3RmZWozYUNHaEVURllHTjhLRjhySGpRRVVOTTBGVlJNNzhWZE1OUG5mMG1JUUJuTkxzM2JTZTVkXzlEdWxmVnQzVXE2UVFrVUFtUWRXQWptRnUxZ1JrTXZiLVp6Wk1qQ20yOW5IUm1ZY0Z0RlVna2ZIdHNxZzRTSllHVkdTYUlvZmNJdnFERVVDQmk1WC1LWlFoQXg0MS1BenRnYWJMRElIYzZDQ2VWNnJRR1JNVVpTam5QSktXMjdiVHE5TzFtOWNlQ0FsQ1hYNmhHVktoYVo1dk1aRkNZZE53ZEJWV3lNc29VeDJadw?oc=5",
    "publicado": "2026-11-11T16:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Galípolo diz que BC não sinalizou Selic, mas defendeu juros restritivos",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaVVvem40VHJUWk0tRV9WbU82UmlXR0JFSDVlYzJyRmt2Vy1jdnBHMHEtWTZadmVGUFBjdzlPMmxha0lOVU1waUdLSXBCRjcySnQzYVpiU2g2OVpCZjNPNENORVlPcncwRmJBNFBlWkUyRjZreVZEU09YNmZQVHBtQU9jcTBVWjZhMk5aN2R1dk1Cb2FJSDlDT1lkQVBYdE5aNUJfeUl2amxfU2lVSDNBRjBtVdIBswFBVV95cUxQaVVvem40VHJUWk0tRV9WbU82UmlXR0JFSDVlYzJyRmt2Vy1jdnBHMHEtWTZadmVGUFBjdzlPMmxha0lOVU1waUdLSXBCRjcySnQzYVpiU2g2OVpCZjNPNENORVlPcncwRmJBNFBlWkUyRjZreVZEU09YNmZQVHBtQU9jcTBVWjZhMk5aN2R1dk1Cb2FJSDlDT1lkQVBYdE5aNUJfeUl2amxfU2lVSDNBRjBtVQ?oc=5",
-   "publicado": "2026-11-11T16:27-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
