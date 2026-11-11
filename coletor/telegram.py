@@ -56,7 +56,7 @@ def msg_leitura(d, link=None):
     linhas += [f'• {e(x)}' for x in d.get('resumo', [])]
     t = d.get('termometro')
     if t:
-        linhas += ['', '<b>Termômetro</b>'] + [f'{k.upper()}: {TERM.get(t[k].get("leitura"), e(t[k].get("leitura")))} — {e(t[k].get("motivo"))}' for k in ('win', 'wdo') if k in t]
+        linhas += ['', '<b>Viés do modelo na abertura</b> <i>(experimental, não é recomendação)</i>'] + [f'{k.upper()}: {TERM.get(t[k].get("leitura"), e(t[k].get("leitura")))} — {e(t[k].get("motivo"))}' for k in ('win', 'wdo') if k in t]
     if d.get('proximo_pregao'):
         p = d['proximo_pregao']
         linhas += ['', f'<b>Próximo pregão ({e("/".join(reversed(p.get("data", "").split("-")[1:])))})</b>: {e(p.get("o_que_esperar"))}']
@@ -95,7 +95,7 @@ def boas_vindas():
         'Educação conectada ao mercado, para quem opera <b>mini índice (WIN)</b>, <b>mini dólar (WDO)</b> e <b>juros (DI)</b>.',
         '',
         '<b>O que chega aqui</b>',
-        '📊 <b>Leitura do Dia</b> · todo dia por volta das 7h45: resumo, termômetro de WIN e WDO e o que esperar do pregão.',
+        '📊 <b>Leitura do Dia</b> · todo dia por volta das 7h45: resumo, cenário de abertura para WIN e WDO e o que esperar do pregão.',
         '⚡ <b>Alertas de surpresa</b> · quando um dado (IPCA, payroll, Copom…) sai fora do consenso, com a reação típica dos ativos.',
         '',
         '<b>No site</b>',

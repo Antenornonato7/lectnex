@@ -93,7 +93,7 @@ def gerar(d, saida):
         dr.text((M + 44, y + 240), linha, font=fonte('Inter-Medium.otf', 28), fill=MUTED)
         return y + 330
 
-    y = bloco(y, 'TERMÔMETRO DA MANHÃ (WIN E WDO)', d['term_sem'], d['term_tot'], f'{len(d["dias_sem"])} pregões', TEAL_L)
+    y = bloco(y, 'VIÉS DO MODELO NA ABERTURA (WIN E WDO)', d['term_sem'], d['term_tot'], f'{len(d["dias_sem"])} pregões', TEAL_L)
     if d['evs_sem'] or d['hist_tot'][0]:
         nomes = ', '.join(e['evento'] for e in d['evs_sem'][:3]) or 'nenhum evento forte'
         y = bloco(y, 'HISTÓRICO NOS EVENTOS FORTES', d['hist_sem'], d['hist_tot'], nomes, ORANGE)
@@ -143,12 +143,12 @@ def main():
     saida = args[0] if args else 'placar-semana.png'
     gerar(d, saida)
     n, ok = d['term_sem']
-    print(f'Story do placar: termômetro {ok}/{n}')
+    print(f'Story do placar: viés do modelo {ok}/{n}')
     if '--sem-envio' in sys.argv:
         return
     hn, hok = d['hist_sem']
     legenda = (f'🎯 <b>Placar da semana</b> · {d["ini"]:%d/%m} a {d["fim"]:%d/%m}\n'
-               f'Termômetro: {ok}/{n}' + (f' · Eventos: {hok}/{hn}' if hn else '') +
+               f'Viés do modelo: {ok}/{n}' + (f' · Eventos: {hok}/{hn}' if hn else '') +
                '\n\nNo Instagram: poste nos stories e coloque o <b>sticker de link</b> na área tracejada com '
                '<code>lectnex.com.br/placar</code> (texto do sticker: "Placar completo").')
     enviar(saida, legenda)

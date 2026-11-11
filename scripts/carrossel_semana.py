@@ -180,8 +180,8 @@ def slides(dd, pasta, previa=False):
     out.append(os.path.join(pasta, '2-dia-a-dia.png')); im.save(out[-1])
 
     # 3. placar
-    im, dr = base('PLACAR DO TERMÔMETRO', 3, previa, T)
-    dr.text((M, 220), 'O termômetro', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
+    im, dr = base('PLACAR DO VIÉS DO MODELO', 3, previa, T)
+    dr.text((M, 220), 'O viés do modelo', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
     dr.text((M, 296), 'acertou?', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
     y = 420
     pl = dd.get('placar') or []
@@ -209,7 +209,7 @@ def slides(dd, pasta, previa=False):
     else:
         dr.text((M, y), 'Ainda sem placar nesta semana.', font=fonte('Inter-Medium.otf', 36), fill=MUTED)
     fn = fonte('Inter-Medium.otf', 26)
-    for i, l in enumerate(quebrar(dr, 'Critério: WIN medido pelo Ibovespa e WDO pelo dólar à vista. Neutro acerta se a variação ficou entre −0,5% e +0,5%. Mostramos os erros também.', fn, W - 2 * M, 3)):
+    for i, l in enumerate(quebrar(dr, 'Critério: conferido pelo Ibovespa (WIN) e pelo dólar à vista (WDO). Neutro acerta se a variação ficou dentro de ±0,7% no WIN e ±0,4% no WDO. Modelo experimental; mostramos os erros também.', fn, W - 2 * M, 3)):
         dr.text((M, H - 220 + i * 36), l, font=fn, fill=MUTED)
     out.append(os.path.join(pasta, '3-placar.png')); im.save(out[-1])
 
@@ -275,7 +275,7 @@ def slides(dd, pasta, previa=False):
     yb = max(y + 20, H - 330)
     dr.rectangle([M, yb, W - M, yb + 190], fill='#1A1206', outline=ORANGE, width=2)
     dr.text((M + 36, yb + 30), 'Receba a Leitura do Dia grátis', font=fonte('InterDisplay-Bold.otf', 44), fill=WHITE)
-    dr.text((M + 36, yb + 96), 'Termômetro, agenda e notícias antes da abertura.', font=fonte('Inter-Medium.otf', 28), fill='#CBD5E1')
+    dr.text((M + 36, yb + 96), 'Cenário, agenda e notícias antes da abertura.', font=fonte('Inter-Medium.otf', 28), fill='#CBD5E1')
     dr.text((M + 36, yb + 138), 'lectnex.com.br/comece', font=fonte('JetBrainsMono-Bold.ttf', 30), fill=ORANGE)
     out.append(os.path.join(pasta, f'{T}-agenda.png')); im.save(out[-1])
     return out
@@ -317,7 +317,7 @@ def main():
     legenda = ('🗓️ <b>Carrossel da semana pronto</b>' + (' <i>(prévia, semana em andamento)</i>' if previa else '') + f'\n{resumo}\n\n'
                '<b>Sugestão de legenda para o post:</b>\n'
                f'Como foi a semana no mercado ({br(dd["ini"])} a {br(dd["fim"])}): {resumo}. '
-               'Arraste para ver o dia a dia, o placar do nosso termômetro (com acertos e erros)' + (', os eventos fortes da semana' if dd.get('eventos') else '') + ' e a agenda da próxima semana. '
+               'Arraste para ver o dia a dia, o placar do viés do nosso modelo (com acertos e erros)' + (', os eventos fortes da semana' if dd.get('eventos') else '') + ' e a agenda da próxima semana. '
                'Placar completo em lectnex.com.br/placar. Leitura do Dia grátis no link da bio. Conteúdo educacional, não é recomendação. #ibovespa #dolar #daytrade #miniindice #minidolar #b3')
     if os.environ.get('IG_LEGENDA') and not previa:
         cap = legenda.split('<b>Sugestão de legenda para o post:</b>\n', 1)[-1]

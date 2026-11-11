@@ -93,7 +93,7 @@ def pagina(d, datas):
 def indice(edicoes, datas):
     url = BASE + 'leitura/'
     titulo = 'Arquivo da Leitura do Dia: o que moveu WIN, WDO e DI | Lectnex'
-    desc = 'Todas as edições da Leitura do Dia do Lectnex: resumo do mercado, termômetro de mini índice e mini dólar, agenda e notícias de cada pregão.'
+    desc = 'Todas as edições da Leitura do Dia do Lectnex: resumo do mercado, viés do modelo para mini índice e mini dólar, agenda e notícias de cada pregão.'
     itens = ''.join(f'''<li><a href="leitura/{dd}.html" class="flex items-center justify-between gap-3 term-panel p-4 hover:border-lect-teal"><span><span class="font-mono text-[11px] text-slate-500">{DIAS[dt.date.fromisoformat(dd).weekday()]} {br(dt.date.fromisoformat(dd), True)}</span><strong class="block font-display">{e(edicoes[dd].get("titulo"))}</strong></span><i class="ph-bold ph-arrow-right text-lect-teal"></i></a></li>''' for dd in reversed(datas))
     return head(titulo, desc, url, [{'@type': 'CollectionPage', 'name': titulo, 'url': url, 'inLanguage': 'pt-BR'}]) + f'''
         <section class="border-b border-slate-300 dark:border-lect-borderDark grid-bg"><div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">

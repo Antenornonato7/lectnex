@@ -1,18 +1,36 @@
 /* ============ LECTNEX — estilos compartilhados ============ */
 .term-panel { background: #fff; border: 1px solid #CBD5E1; box-shadow: 0 1px 2px rgba(12, 26, 42, .03); }
 .dark .term-panel { background: #0B1626; border-color: #1E293B; box-shadow: none; }
-.term-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: #64748B; }
+.term-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #64748B; }
 .quote-head { font-size: 10px; color: #55657A; background: #F1F5F9; font-weight: 700; }
 .dark .quote-head { background: #060D17; }
 .grid-bg { background-image: radial-gradient(rgba(100, 116, 139, .12) 1px, transparent 1px); background-size: 16px 16px; }
 
 /* Selo de fonte do dado */
-.src-tag { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .04em; text-transform: uppercase; color: #94A3B8; }
+.src-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .04em; text-transform: uppercase; color: #94A3B8; }
 
-/* Selo para conteúdo simulado/didático — obrigatório em tudo que não for dado real */
-.lx-demo { display: inline-flex; align-items: center; gap: 4px; font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 700;
-    letter-spacing: .06em; text-transform: uppercase; padding: 2px 6px; color: #B45309; background: rgba(245, 158, 11, .12); border: 1px dashed rgba(245, 158, 11, .55); }
-.dark .lx-demo { color: #FBBF24; }
+/* Selo para conteúdo simulado/didático — obrigatório em tudo que não for dado real.
+   Neutro de propósito: amarelo/laranja fica reservado para alerta (evento saindo, amostra pequena, surpresa). */
+.lx-demo { display: inline-flex; align-items: center; gap: 4px; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    letter-spacing: .06em; text-transform: uppercase; padding: 2px 6px; color: #475569; background: rgba(100, 116, 139, .08); border: 1px dashed rgba(100, 116, 139, .55); }
+.dark .lx-demo { color: #A9B7C9; border-color: rgba(148, 163, 184, .45); background: rgba(148, 163, 184, .06); }
+
+/* Selo de fonte de cada bloco: de onde vem, quando foi lido e com que atraso */
+.lx-fonte { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #55657A; }
+.dark .lx-fonte { color: #8A9BB1; }
+.lx-fonte > b { font-weight: 700; color: #334155; }
+.dark .lx-fonte > b { color: #CBD5E1; }
+
+/* Explicação que abre ao clicar (fórmulas e critérios) */
+.lx-explica > summary { cursor: pointer; list-style: none; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; color: #00756C; display: inline-flex; align-items: center; gap: 4px; }
+.dark .lx-explica > summary { color: #00B4A2; }
+.lx-explica > summary::-webkit-details-marker { display: none; }
+.lx-explica > summary::before { content: '+'; display: inline-grid; place-items: center; width: 14px; height: 14px; border: 1px solid currentColor; font-size: 11px; line-height: 1; }
+.lx-explica[open] > summary::before { content: '−'; }
+
+/* Leitura: tamanho mínimo de texto (rótulos de 9–10 px ficavam pequenos demais, sobretudo no celular) */
+.text-\[9px\] { font-size: 10px; }
+.text-\[10px\] { font-size: 11px; }
 
 /* Painéis de cabeçalho escuro */
 .panel-head { background: #0C1A2A; color: #fff; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: 1px solid #1E293B; }
@@ -58,9 +76,9 @@
 /* KPIs compactos do Mercado Hoje (o bloco "Agora" é o destaque) */
 .lx-kpis > .term-panel { padding: .55rem .75rem; border-top-width: 2px; }
 .lx-kpis strong.text-2xl { font-size: 1.05rem; line-height: 1.4rem; margin-top: .1rem; }
-.lx-kpis .src-tag { display: none; }
-.lx-kpis .term-label { font-size: 9px; }
-.lx-kpis > .term-panel > span.text-\[11px\] { font-size: 10px; }
+.lx-kpis .src-tag { font-size: 10px; margin-top: .3rem; }
+.lx-kpis .term-label { font-size: 10px; }
+.lx-kpis > .term-panel > span.text-\[11px\] { font-size: 11px; }
 .lx-kpis > .term-panel > span:not(.term-label):not(.src-tag) { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 /* Espaço reservado para o cabeçalho montado por JS: evita que a página "pule" ao carregar (CLS) */
@@ -69,7 +87,6 @@
 @media (min-width: 1024px) { #lx-header:empty { min-height: 73px; } }
 
 /* ===== Contraste mínimo (WCAG AA, 4,5:1) — textos secundários e cores de variação nos dois temas ===== */
-.lx-demo { color: #92400E; }
 .dark .text-slate-500, .dark .text-\[\#64748B\] { color: #8A9BB1; }
 .dark ::placeholder { color: #8A9BB1; }
 html:not(.dark) .text-slate-500:not(footer, footer *, #lx-topbar *) { color: #55657A; }

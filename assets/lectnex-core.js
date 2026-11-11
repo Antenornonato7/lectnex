@@ -477,10 +477,10 @@
             };
             head.innerHTML = `
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between gap-4">
-              <a href="index.html" class="flex items-center gap-3 shrink-0 group">${LOGO}
-                <div><div class="flex items-center gap-2"><div class="text-2xl font-display font-bold tracking-tight leading-none"><span class="text-[#0C1A2A] dark:text-white">Lect</span><span class="text-[#009988] dark:text-[#00B4A2]">nex</span></div>
+              <a href="index.html" class="flex items-center gap-3 min-w-0 lg:shrink-0 group">${LOGO}
+                <div class="min-w-0"><div class="flex items-center gap-2"><div class="text-2xl font-display font-bold tracking-tight leading-none"><span class="text-[#0C1A2A] dark:text-white">Lect</span><span class="text-[#009988] dark:text-[#00B4A2]">nex</span></div>
                 <span class="px-1.5 py-0.5 bg-lect-navy text-white dark:bg-lect-teal/20 dark:text-lect-tealLight font-mono text-[9px] font-bold uppercase tracking-widest">TERMINAL</span></div>
-                <span class="text-[11px] text-[#64748B] block mt-1">Inteligência de Mercado &amp; Educação Financeira</span></div></a>
+                <span class="text-[11px] text-[#64748B] block mt-1 truncate">Inteligência de Mercado &amp; Educação Financeira</span></div></a>
               <nav class="hidden lg:flex items-center gap-0.5 xl:gap-1 text-[13px] font-medium text-slate-600 dark:text-slate-300">${NAV.map(n => link(n)).join('')}</nav>
               <div class="flex items-center gap-2">
                 <button onclick="LX.openPalette()" class="hidden sm:flex shrink-0 whitespace-nowrap items-center justify-between gap-3 px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-slate-50 dark:bg-lect-cardDark text-xs font-mono text-slate-500 hover:border-lect-teal"><span class="inline-flex items-center gap-1.5"><i class="ph ph-magnifying-glass text-lect-teal"></i><span class="hidden xl:inline">Buscar ativo ou ferramenta</span></span></button>
@@ -568,7 +568,7 @@
         ['mercado', 'REGIME', 'Regimes de risco', 'Risk-on, risk-off e como os ativos reagem', 'macro.html#regimes', 'ph-gauge', 'regime risco risk on off aversao apetite intermercado'],
         ['mercado', 'MAPA', 'Mapa de calor da B3', 'Ações do Ibovespa por setor, coloridas pela variação do dia', 'index.html#mapa', 'ph-squares-four', 'mapa calor heatmap setores acoes ibovespa fluxo variacao'],
         ['mercado', 'HOJE', 'O que mexeu no mercado hoje', 'Gráfico do Ibovespa e do dólar com as manchetes marcadas', 'hoje.html', 'ph-chart-line', 'hoje grafico noticia preco reacao manchete intraday'],
-        ['mercado', 'PLACAR', 'Placar do Lectnex', 'Acertos e erros do termômetro e do histórico nos dias de evento', 'placar.html', 'ph-target', 'placar acerto erro termometro historico resultado transparencia'],
+        ['mercado', 'PLACAR', 'Placar do Lectnex', 'Acertos e erros do viés do modelo e do histórico nos dias de evento', 'placar.html', 'ph-target', 'placar acerto erro termometro historico resultado transparencia'],
         ['mercado', 'ARQUIVO', 'Arquivo de manchetes', 'Como o Ibovespa e o dólar reagiram a cada notícia (busca por tema)', 'manchetes.html', 'ph-archive', 'arquivo manchetes historico noticia reacao copom payroll inflacao petrobras padrao'],
         ['mercado', 'NEWS', 'Agora no mercado', 'Manchetes de maior impacto, a cada ~10 min', 'index.html#ultimas', 'ph-newspaper', 'noticias manchetes'],
         ['acoes', 'DONOS', 'Quem é dono da ação', 'Fundos com a ação na carteira (CVM)', 'acoes.html#donos', 'ph-users-three', 'fundos donos carteira cvm'],

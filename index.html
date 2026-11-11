@@ -33,14 +33,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261111a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261111b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261105a">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261111b">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -79,7 +79,7 @@
                         <span class="term-label">Surpresas nos dados de hoje</span>
                         <div id="ag-sp" class="mt-1 text-sm text-slate-500 min-h-[1.5rem]">—</div>
                     </div>
-                    <a href="#ultimas" class="mt-auto pt-3 font-mono text-[11px] font-bold text-lect-teal hover:underline">Notícias ao vivo ↓</a>
+                    <div class="mt-auto pt-3 border-t border-slate-200 dark:border-lect-borderDark space-y-1"><p class="lx-fonte"><b>Fonte</b><span>brapi (Ibovespa) · AwesomeAPI (dólar) · calendário Lectnex</span></p><a href="#ultimas" class="font-mono text-[11px] font-bold text-lect-teal hover:underline">Notícias ao vivo ↓</a></div>
                 </div>
                 <div class="term-panel !border-t-4 !border-t-lect-orange p-4 sm:p-5 flex flex-col min-w-0">
                     <div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
@@ -87,7 +87,7 @@
                         <span id="ag-imp-when" class="font-mono text-[10px] font-bold text-lect-orange">CENÁRIO DE ABERTURA</span>
                     </div>
                     <ol id="ag-imp" class="mt-3 space-y-3 min-h-[9rem]"></ol>
-                    <p class="mt-auto pt-3 font-mono text-[11px] text-slate-500"><span id="ag-imp-nota">Escrito antes da abertura. Não é atualizado durante o dia.</span> <a href="#leitura" class="font-bold text-lect-teal hover:underline whitespace-nowrap">Leitura completa ↓</a></p>
+                    <div class="mt-auto pt-3 border-t border-slate-200 dark:border-lect-borderDark space-y-1"><p class="lx-fonte"><b>Fonte</b><span>Leitura do Dia (IA, com notícias e dados públicos)</span></p><p class="lx-fonte"><span id="ag-imp-nota">Escrito antes da abertura. Não é atualizado durante o dia.</span><a href="#leitura" class="font-bold text-lect-teal hover:underline whitespace-nowrap">Leitura completa ↓</a></p></div>
                 </div>
                 <div class="term-panel !border-t-4 !border-t-lect-navy dark:!border-t-slate-400 p-4 sm:p-5 flex flex-col min-w-0">
                     <div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
@@ -95,7 +95,7 @@
                         <span id="ag-ev-cd" class="font-mono text-[10px] font-bold text-slate-500"></span>
                     </div>
                     <div id="ag-ev" class="mt-3 min-h-[9rem] text-sm text-slate-500">—</div>
-                    <a id="ag-ev-link" href="#cal-wrap" class="mt-auto pt-3 font-mono text-[11px] font-bold text-lect-teal hover:underline">Calendário da semana ↓</a>
+                    <div class="mt-auto pt-3 border-t border-slate-200 dark:border-lect-borderDark space-y-1"><p class="lx-fonte"><b>Fonte</b><span>calendário Lectnex (agendas públicas e imprensa, montado pela Leitura do Dia) · horário de Brasília</span></p><a id="ag-ev-link" href="#cal-wrap" class="font-mono text-[11px] font-bold text-lect-teal hover:underline">Calendário da semana ↓</a></div>
                 </div>
             </div>
 
@@ -190,7 +190,24 @@
                         <summary class="px-3 py-2 cursor-pointer font-mono text-[10px] font-bold flex items-center justify-between"><span>LINHA DO TEMPO · ÚLTIMAS 3 HORAS <span id="agora-qtd" class="text-slate-500 font-normal"></span></span><i class="ph-bold ph-caret-down group-open:rotate-180 transition-transform"></i></summary>
                         <ol id="agora-tempo" class="max-h-[330px] overflow-y-auto thin-scroll divide-y divide-slate-100 dark:divide-lect-borderDark"></ol>
                     </details>
-                    <p class="px-5 pb-4 text-[11px] text-slate-500 dark:text-slate-400">Coleta automática a cada ~2,5 min em Reuters, Valor, InfoMoney, Folha, Estadão, Bloomberg Línea, Agência Brasil e CNBC. Empresas citadas aparecem com a variação do dia (atraso de ~30 min). Classificação por impacto feita por regras; abra a fonte para ler a matéria.</p>
+                    <div class="px-5 pb-4 space-y-2">
+                        <p class="lx-fonte"><b>Fonte</b><span>Reuters, Valor, InfoMoney, Folha, Estadão, Bloomberg Línea, Agência Brasil e CNBC</span><span>· coleta a cada ~2,5 min</span><span>· variação das empresas com atraso de ~30 min</span></p>
+                        <details class="lx-explica"><summary>como classificamos o impacto</summary>
+                            <div class="mt-2 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300 max-w-3xl">
+                                <p>A classificação é automática e lê <strong>só o título</strong> da manchete, não a matéria. Cada tema encontrado soma pontos e marca os ativos que costuma mexer:</p>
+                                <ul class="mt-2 grid sm:grid-cols-2 gap-x-6 gap-y-1 font-mono text-xs">
+                                    <li><b>5 pts</b> · juros e bancos centrais (Copom, Selic, Fed) → DI, WDO</li>
+                                    <li><b>4 pts</b> · inflação e fiscal (IPCA, CPI, arcabouço) → DI</li>
+                                    <li><b>4 pts</b> · câmbio, payroll e tarifas → WDO</li>
+                                    <li><b>4 pts</b> · Ibovespa, grandes empresas e Wall Street → WIN</li>
+                                    <li><b>3 pts</b> · petróleo, minério, China e guerras → WIN, WDO</li>
+                                    <li><b>2 pts</b> · balanços e atividade (PIB, varejo, PMI) → WIN ou DI</li>
+                                </ul>
+                                <p class="mt-2"><strong class="text-lect-orange">Alto impacto</strong> = 5 pontos ou mais. <strong>Médio</strong> = 3 ou 4. Abaixo de 3 a manchete não aparece. Empresa do Ibovespa citada no título vale no mínimo 3. Manchetes muito parecidas aparecem uma vez só, e as mais novas sobem na lista.</p>
+                                <p class="mt-1 text-slate-500">Como é por palavra, a regra erra: uma manchete pode citar "Selic" sem mudar nada. Abra a fonte antes de tirar conclusão.</p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
                 <div id="lt-news-wrap" class="hidden border-t border-slate-200 dark:border-lect-borderDark">
                     <div class="px-5 pt-4 flex items-center justify-between"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-newspaper text-lect-teal"></i>NOTÍCIAS QUE IMPORTAM</span><span class="font-mono text-[10px] text-slate-500">seleção da IA · com o impacto em cada ativo</span></div>
@@ -241,7 +258,7 @@
                 <div class="term-panel p-4 border-t-2 border-t-purple-500">
                     <span class="term-label">JURO REAL EX-POST</span>
                     <strong class="text-2xl font-bold block mt-1" data-lx="real">—</strong>
-                    <span class="text-[11px] text-slate-500">(1+Selic)/(1+IPCA 12m) − 1</span>
+                    <details class="lx-explica mt-0.5"><summary>como é calculado</summary><p class="mt-1 text-[11px] text-slate-600 dark:text-slate-300 whitespace-normal leading-snug">(1 + Selic) ÷ (1 + IPCA de 12 meses) − 1. É quanto a Selic rende acima da inflação.</p></details>
                     <span class="src-tag block mt-1">CÁLCULO LECTNEX</span>
                 </div>
                 <div class="term-panel p-4 border-t-2 border-t-lect-orange">
@@ -270,7 +287,7 @@
                     <span class="term-label text-lect-orange font-bold">CALENDÁRIO ECONÔMICO</span>
                     <h2 class="font-display text-2xl font-bold">O que mexe no preço esta semana</h2>
                 </div>
-                <span class="text-xs text-slate-500 max-w-md">Só os dados que movem WIN, WDO e DI, em horário de Brasília, com anterior, consenso e resultado. Atualizado todo dia pela Leitura do Dia.</span>
+                <span class="text-xs text-slate-500 max-w-md">Só os dados que movem WIN, WDO e DI, em horário de Brasília, com anterior, consenso e resultado.<span class="lx-fonte mt-1"><b>Fonte</b><span>agendas públicas e imprensa, montado pela Leitura do Dia (IA)</span><span>· resultados conferidos às 12h40 e 16h40</span></span></span>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
                 <div class="lg:col-span-12 term-panel h-[560px] overflow-hidden flex flex-col" id="cal-wrap">
@@ -393,7 +410,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261111a"></script>
+    <script src="assets/lectnex-core.js?v=20261111b"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -458,7 +475,7 @@
                 <span class="block font-mono text-[10px] text-slate-500 mt-1">medido pelo ${ref}</span></div>`; };
             const ult = dias.slice(-60);
             const row = (k, nome, ref) => `<div class="flex items-center gap-2"><span class="w-9 shrink-0 font-mono text-[10px] text-slate-500">${nome}</span><div class="flex flex-wrap gap-[3px]">${ult.map(d => { const x = d[k], dt = LX.brShort(LX.parseISO(d.data));
-                if (!x) return `<span class="w-3 h-3 bg-slate-200 dark:bg-lect-borderDark" title="${dt} · sem termômetro"></span>`;
+                if (!x) return `<span class="w-3 h-3 bg-slate-200 dark:bg-lect-borderDark" title="${dt} · sem viés do modelo"></span>`;
                 return `<span class="w-3 h-3 ${x.acerto ? 'bg-emerald-500' : 'bg-rose-500'}" title="${dt} · ${nome} ${SET[x.leitura] || x.leitura} · ${ref} ${x.var_pct > 0 ? '+' : ''}${LX.num(x.var_pct, 2)}% · ${x.acerto ? 'acertou' : 'errou'}"></span>`; }).join('')}</div></div>`;
             const el = document.getElementById('placar-term');
             el.innerHTML = `<div class="term-panel">
@@ -915,7 +932,7 @@
 
     })();
     </script>
-    <script src="assets/lectnex-pregao.js?v=20261111a" defer></script>
-    <script src="assets/lectnex-painel.js?v=20261111a" defer></script>
+    <script src="assets/lectnex-pregao.js?v=20261111b" defer></script>
+    <script src="assets/lectnex-painel.js?v=20261111b" defer></script>
 </body>
 </html>

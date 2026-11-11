@@ -84,7 +84,7 @@ def main():
         dia = next((d for d in (ler('data/placar-termometro.json') or {}).get('dias', []) if d.get('data') == HOJE.isoformat()), None)
         if dia:
             partes = [f"{k.upper()} {'✅' if dia[k].get('acerto') else '❌'} ({dia[k].get('var_pct'):+.2f}%)".replace('.', ',') for k in ('win', 'wdo') if k in dia]
-            L.append('🎯 Fechamento publicado · termômetro: ' + ' · '.join(partes))
+            L.append('🎯 Fechamento publicado · viés do modelo: ' + ' · '.join(partes))
         else:
             L.append('🎯 ⚠️ Sem registro do fechamento/placar de hoje (sai às 19h05)')
         n = sum(1 for t in git('log', '--since=1 day ago', '--format=%cI', '--', 'data/cotacoes.json').splitlines() if brt(t).date() == HOJE)
