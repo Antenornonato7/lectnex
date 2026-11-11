@@ -60,6 +60,6 @@
     const st = document.createElement('style'); st.textContent = '.lx-oculta{display:none!important}'; document.head.appendChild(st);
     const btn = $('pn-open'); if (btn) btn.addEventListener('click', abrir);
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('pn-modal')) $('pn-modal').remove(); });
-    fetch('data/cotacoes.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => { mapa = (c && c.mapa || []).filter(x => typeof x.var_pct === 'number'); aplicar(); }).catch(() => { });
+    LX.dados('cotacoes').then(c => { mapa = (c && c.mapa || []).filter(x => typeof x.var_pct === 'number'); aplicar(); }).catch(() => { });
     aplicar();
 })();

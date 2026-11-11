@@ -33,14 +33,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261111c">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261111d">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261111c">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261111d">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -410,7 +410,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261111c"></script>
+    <script src="assets/lectnex-core.js?v=20261111d"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -456,14 +456,14 @@
                     .catch(() => fetch('data/noticias-agora.json?t=' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : null))
                     .then(d => { if (d && (!dados || d.atualizado_em >= dados.atualizado_em)) { dados = d; pintar(); } }).catch(() => { });
             }
-            fetch('data/cotacoes.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => { if (c) [...(c.mapa || []), ...(c.itens || [])].forEach(x => { if (x.ticker) cot[x.ticker] = x; }); pintar(); }).catch(() => { });
+            LX.dados('cotacoes').then(c => { if (c) [...(c.mapa || []), ...(c.itens || [])].forEach(x => { if (x.ticker) cot[x.ticker] = x; }); pintar(); }).catch(() => { });
             buscar(); setInterval(buscar, 60000); setInterval(pintar, 30000);
             const bt = $('agora-alertas');
             const pintaBt = () => { bt.textContent = LX.avisosNoticias() ? '🔔 avisos ligados' : '🔕 avisos desligados'; };
             bt.onclick = () => { LX.avisosNoticias(!LX.avisosNoticias()); pintaBt(); }; pintaBt();
         })();
         /* ---------- Placar do termômetro: transparência sobre acertos e erros ---------- */
-        fetch('data/placar-termometro.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(pl => {
+        LX.dados('placar-termometro').then(pl => {
             const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(d => d && d.data && (d.win || d.wdo));
             if (dias.length < 5) return;
             const SET = { bullish: 'alta', bearish: 'baixa', neutro: 'neutro' };
@@ -512,11 +512,11 @@
                 const u = usd ? caixa('DÓLAR À VISTA', 'R$ ' + LX.num(usd.bid, 3), usd.pct, 'AwesomeAPI · ao vivo, a cada 30 s') : '';
                 $('ag-mkt').innerHTML = (i + u) || '<span class="col-span-2 text-sm text-slate-500">Carregando cotações…</span>';
             }
-            fetch('data/cotacoes.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => { ibov = c && (c.itens || []).find(x => x.ticker === 'IBOV'); cotEm = c && c.atualizado_em; mkt(); }).catch(() => { });
+            LX.dados('cotacoes').then(c => { ibov = c && (c.itens || []).find(x => x.ticker === 'IBOV'); cotEm = c && c.atualizado_em; mkt(); }).catch(() => { });
             document.addEventListener('lx:fx', mkt); mkt();
 
             /* 2. O QUE IMPORTA HOJE: três pontos do cenário escrito antes da abertura (data/leitura.json) */
-            fetch('data/leitura.json?t=' + Math.floor(Date.now() / 6e4), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(l => {
+            LX.dados('leitura').then(l => {
                 if (!l || !Array.isArray(l.resumo) || !l.resumo.length) { $('ag-imp').innerHTML = '<li class="text-sm text-slate-500">A Leitura do Dia sai às 7h40 nos dias de pregão.</li>'; return; }
                 const hora = l.gerado_em ? hhmm(l.gerado_em) : '', dia = LX.parseISO(l.data);
                 if (l.tipo === 'sem-pregao') { $('ag-imp-when').textContent = 'EDIÇÃO SEM PREGÃO'; $('ag-imp-nota').textContent = 'Bolsa fechada: resumo do que aconteceu e do que esperar.'; }
@@ -557,7 +557,7 @@
                 lk.href = e.tipo === 'copom' ? 'copom.html' : '#rx-wrap';
                 lk.textContent = e.tipo === 'copom' ? 'Página especial do Copom →' : 'Como o mercado costuma reagir ↓';
             }
-            fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => {
+            LX.dados('calendario').then(c => {
                 eventos = (c && c.eventos) || []; ev(); setInterval(ev, 30000);
                 const hoje = eventos.filter(e => e.data === hojeISO);
                 const sp = hoje.filter(e => e.surpresa && /^(acima|abaixo)$/.test(e.surpresa.direcao) && e.resultado);
@@ -591,7 +591,7 @@
         /* ---------- Calendário próprio (data/calendario.json); reserva: widget do TradingView ---------- */
         (function () {
             const fallback = () => { document.getElementById('cal-wrap').classList.add('hidden'); const tv = document.getElementById('tv-calendar'); tv.classList.remove('hidden'); LX.tv('tv-calendar', 'events', { width: '100%', height: '100%', importanceFilter: '0,1', countryFilter: 'br,us,cn,eu' }); };
-            fetch('data/calendario.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+            LX.dados('calendario').then(d => {
                 const today = LX.iso(LX.todayBRT());
                 const evs = (d && Array.isArray(d.eventos) ? d.eventos : []).filter(e => e && e.data && e.evento && e.data >= today).sort((a, b) => (a.data + (a.hora || '')).localeCompare(b.data + (b.hora || '')));
                 if (!evs.length) return fallback();
@@ -648,7 +648,7 @@
         })();
 
         /* ---------- Faixa B3 ---------- */
-        fetch('data/cotacoes.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+        LX.dados('cotacoes').then(d => {
             if (!d || !Array.isArray(d.itens) || !d.itens.length) { document.getElementById('b3-tape').classList.add('hidden'); return; }
             const chip = x => {
                 const p = x.var_pct, cls = p == null ? 'text-slate-500' : p > 0 ? 'text-emerald-600 dark:text-emerald-400' : p < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500';
@@ -732,7 +732,7 @@
                     a.addEventListener('mouseleave', () => tip.classList.add('hidden'));
                 });
             }
-            fetch('data/cotacoes.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+            LX.dados('cotacoes').then(d => {
                 if (!d || !Array.isArray(d.mapa) || d.mapa.length < 6) return;
                 data = d.mapa;
                 document.getElementById('mapa').classList.remove('hidden');
@@ -761,7 +761,7 @@
                 neutro: ['Neutro', 'ph-arrows-left-right', 'text-slate-500', 'bg-slate-400', 50],
                 bearish: ['Viés de baixa', 'ph-trend-down', 'text-rose-600 dark:text-rose-400', 'bg-rose-500', 15]
             };
-            fetch('data/leitura.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(d => {
+            LX.dados('leitura').then(d => {
                 const ltHide = () => el('leitura').classList.add('hidden');
                 if (!d || !d.data || !Array.isArray(d.resumo) || !d.resumo.length) return ltHide();
                 const day = LX.parseISO(d.data), today = LX.todayBRT(), old = (today - day) / 864e5;
@@ -790,7 +790,7 @@
                         <p class="text-xs text-slate-500 leading-snug">Leitura automática feita antes da abertura${hora ? ' (' + hora + ')' : ''}. Não muda ao longo do dia e não é recomendação de compra ou venda.</p>`
                         + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar') + '<div id="lt-sinais"></div>'
                         + `<div id="lt-placar" class="p-3 bg-lect-orange/5 border border-lect-orange/40 text-xs leading-snug text-slate-600 dark:text-slate-300"><strong class="block text-slate-900 dark:text-white">Quanto dá para confiar?</strong><span id="lt-placar-n">O modelo é novo e ainda tem poucos pregões medidos.</span> A conferência é feita pelo Ibovespa e pelo dólar à vista, não pelos contratos futuros. <a href="#placar-term" class="font-bold text-lect-teal hover:underline whitespace-nowrap">Método e histórico ↓</a></div>`;
-                    fetch('data/placar-termometro.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null).then(pl => {
+                    LX.dados('placar-termometro').catch(() => null).then(pl => {
                         const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(x => x && (x.win || x.wdo)), alvo = el('lt-placar-n');
                         if (!dias.length || !alvo) return;
                         const conta = k => { const v = dias.filter(x => x[k]); return `${v.filter(x => x[k].acerto).length} de ${v.length}`; };
@@ -905,8 +905,9 @@
         });
 
         /* ---------- Ibovespa (data/cotacoes.json, brapi, ~30 min de atraso) ---------- */
+        let kpiVez = 0;
         function kpiIbov() {
-            fetch('data/cotacoes.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => {
+            LX.dados('cotacoes', kpiVez++ > 0).then(c => {
                 const i = c && (c.itens || []).find(x => x.ticker === 'IBOV'); if (!i) return;
                 document.getElementById('kpi-ibov').textContent = LX.num(i.preco, 0);
                 const el = document.getElementById('kpi-ibov-pct'); el.textContent = LX.pct(i.var_pct, 2, true); el.className = 'text-[11px] font-semibold ' + LX.signClass(i.var_pct);
@@ -933,6 +934,6 @@
     })();
     </script>
     <script src="assets/lectnex-pregao.js?v=20261111b" defer></script>
-    <script src="assets/lectnex-painel.js?v=20261111b" defer></script>
+    <script src="assets/lectnex-painel.js?v=20261111d" defer></script>
 </body>
 </html>
