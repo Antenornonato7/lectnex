@@ -73,11 +73,25 @@ def main():
         msg = f'🧪 Teste do menu ainda não configurado: falta {falta} no GitHub. Passo a passo no topo de coletor/teste_menu.py.'
         print('::warning::' + msg); enviar(msg); return
 
+    # nomes exatos das definições personalizadas (o Analytics diferencia maiúsculas: Teste_menu ≠ teste_menu)
+    try:
+        r = s.get(f'https://analyticsdata.googleapis.com/v1beta/properties/{prop}/metadata', timeout=60)
+        r.raise_for_status()
+        custom = [d['apiName'] for d in r.json().get('dimensions', []) if d.get('customDefinition')]
+    except Exception as ex:
+        custom = []
+        print(f'::warning::metadata: {ex}')
+    print('Definições personalizadas:', custom)
+    dim_user = next((c for c in custom if c.lower() == 'customuser:teste_menu'), 'customUser:teste_menu')
+    dim_dest = next((c for c in custom if c.lower() == 'customevent:destino'), 'customEvent:destino')
+    if os.environ.get('TESTE') == '1':
+        enviar('🧪 Teste do menu · configuração\nDefinições personalizadas encontradas no Analytics: ' + (', '.join(custom) or 'nenhuma'))
+
     ontem = dt.datetime.now(BRT).date() - dt.timedelta(days=1)
     periodo = [{'startDate': INICIO.isoformat(), 'endDate': max(ontem, INICIO).isoformat()}]
     try:
-        vistos = relatorio(s, prop, {'dateRanges': periodo, 'dimensions': [{'name': 'customUser:teste_menu'}], 'metrics': [{'name': 'totalUsers'}]})
-        cliques = relatorio(s, prop, {'dateRanges': periodo, 'dimensions': [{'name': 'customUser:teste_menu'}, {'name': 'customEvent:destino'}],
+        vistos = relatorio(s, prop, {'dateRanges': periodo, 'dimensions': [{'name': dim_user}], 'metrics': [{'name': 'totalUsers'}]})
+        cliques = relatorio(s, prop, {'dateRanges': periodo, 'dimensions': [{'name': dim_user}, {'name': dim_dest}],
                                       'metrics': [{'name': 'totalUsers'}, {'name': 'eventCount'}],
                                       'dimensionFilter': {'filter': {'fieldName': 'eventName', 'stringFilter': {'value': 'menu_clique'}}}})
     except Exception as ex:
