@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T14:00-03:00",
+  "atualizado_em": "2026-11-11T14:03-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -187,7 +187,11 @@
     ],
     [
      "13:45",
-     172522.0
+     172562.0
+    ],
+    [
+     "13:48",
+     172565.0
     ]
    ]
   },
@@ -436,7 +440,11 @@
     ],
     [
      "14:00",
-     5.5595
+     5.559
+    ],
+    [
+     "14:03",
+     5.559
     ]
    ]
   },
@@ -935,7 +943,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": 0.01,
+    "ibov30": 0.03,
     "dolar30": -0.1
    },
    {
@@ -952,6 +960,21 @@
     ],
     "ibov30": null,
     "dolar30": -0.04
+   },
+   {
+    "hora": "14:00",
+    "titulo": "Sabesp muda conta de água para se adequar à reforma tributária; veja o que muda",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/sabesp-muda-conta-de-agua-para-se-adequar-a-reforma-tributaria-veja-o-que-muda.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "SBSP3"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1694,6 +1717,19 @@
    "tickers": [
     "TAEE11"
    ]
+  },
+  {
+   "titulo": "Sabesp muda conta de água para se adequar à reforma tributária; veja o que muda",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/sabesp-muda-conta-de-agua-para-se-adequar-a-reforma-tributaria-veja-o-que-muda.shtml",
+   "publicado": "2026-11-11T14:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "SBSP3"
+   ]
   }
  ],
  "enviadas": [
@@ -1723,7 +1759,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T14:00-03:00",
+ "atualizado_em": "2026-11-11T14:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1736,6 +1772,19 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Sabesp muda conta de água para se adequar à reforma tributária; veja o que muda",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/sabesp-muda-conta-de-agua-para-se-adequar-a-reforma-tributaria-veja-o-que-muda.shtml",
+   "publicado": "2026-11-11T14:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "SBSP3"
+   ]
+  },
   {
    "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
    "fonte": "CNBC",
