@@ -12,7 +12,7 @@ Precisa (uma vez só):
 1. No Google Analytics: Admin → Acesso à propriedade → adicionar relatorio-gsc@lectnex.iam.gserviceaccount.com como Leitor.
 2. No Google Cloud (projeto lectnex): ativar a "Google Analytics Data API".
 3. No Analytics: Admin → Definições personalizadas → criar teste_menu (escopo usuário) e destino (escopo evento).
-4. No GitHub: segredo GA_PROPERTY_ID com o número da propriedade (Admin → Detalhes da propriedade).
+4. Propriedade: 561843941 (Lectnex Terminal), já no código; o segredo GA_PROPERTY_ID só é preciso se trocar de propriedade.
 Nunca grava nada no repositório: o resultado vai só para o Telegram privado.
 TESTE=1 envia mesmo fora do horário (para conferir a configuração).
 """
@@ -63,7 +63,7 @@ def z_duas_proporcoes(x1, n1, x2, n2):
 
 
 def main():
-    prop = os.environ.get('GA_PROPERTY_ID', '').strip()
+    prop = os.environ.get('GA_PROPERTY_ID', '').strip() or '561843941'  # propriedade "Lectnex Terminal" (o número não é senha)
     try:
         s = sessao()
     except Exception as ex:
