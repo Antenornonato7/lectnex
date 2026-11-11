@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T16:28-03:00",
+  "atualizado_em": "2026-11-11T16:32-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -303,11 +303,15 @@
     ],
     [
      "16:10",
-     172286.0
+     172265.0
     ],
     [
-     "16:13",
-     172269.0
+     "16:15",
+     172318.0
+    ],
+    [
+     "16:17",
+     172323.0
     ]
    ]
   },
@@ -672,11 +676,15 @@
     ],
     [
      "16:25",
-     5.5611
+     5.5616
     ],
     [
-     "16:28",
-     5.5608
+     "16:30",
+     5.561
+    ],
+    [
+     "16:32",
+     5.5611
     ]
    ]
   },
@@ -1318,7 +1326,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.02,
+    "ibov30": -0.04,
     "dolar30": -0.08
    },
    {
@@ -1333,7 +1341,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": 0.01
    },
    {
     "hora": "15:59",
@@ -1348,7 +1356,7 @@
      "HAPV3"
     ],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": 0.01
    },
    {
     "hora": "16:21",
@@ -1358,6 +1366,21 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:27",
+    "titulo": "Galípolo quer ampliar atuação do BC sobre distorções do crédito no Brasil",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcUxHVW9XNHNKVXZhTnhYX2lwWmVwRk51b3NLZ3daaXJpTng1NzhVeGFiaDZJaWFCSmVnSEpmV3VGbW0tYjlYdmRrTkdKbjFscHA2TVljUk5WbmFEYndFTUhBVUVqd0pwUHNQNlhyY0kzRmhUZ3lqUmZIQUtCcV8yMFQtUmN1bUV3elpoVDBQaVBNTjJ2Uk9RdE5MWlFYYXdiZUZXY3hjYw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -2250,6 +2273,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Galípolo quer ampliar atuação do BC sobre distorções do crédito no Brasil",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcUxHVW9XNHNKVXZhTnhYX2lwWmVwRk51b3NLZ3daaXJpTng1NzhVeGFiaDZJaWFCSmVnSEpmV3VGbW0tYjlYdmRrTkdKbjFscHA2TVljUk5WbmFEYndFTUhBVUVqd0pwUHNQNlhyY0kzRmhUZ3lqUmZIQUtCcV8yMFQtUmN1bUV3elpoVDBQaVBNTjJ2Uk9RdE5MWlFYYXdiZUZXY3hjYw?oc=5",
+   "publicado": "2026-11-11T16:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2279,7 +2315,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T16:28-03:00",
+ "atualizado_em": "2026-11-11T16:32-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2294,6 +2330,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Galípolo quer ampliar atuação do BC sobre distorções do crédito no Brasil",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcUxHVW9XNHNKVXZhTnhYX2lwWmVwRk51b3NLZ3daaXJpTng1NzhVeGFiaDZJaWFCSmVnSEpmV3VGbW0tYjlYdmRrTkdKbjFscHA2TVljUk5WbmFEYndFTUhBVUVqd0pwUHNQNlhyY0kzRmhUZ3lqUmZIQUtCcV8yMFQtUmN1bUV3elpoVDBQaVBNTjJ2Uk9RdE5MWlFYYXdiZUZXY3hjYw?oc=5",
+   "publicado": "2026-11-11T16:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ouro fecha em queda com valorização do dólar e expectativa de juros mais altos nos EUA",
    "fonte": "Money Times",
