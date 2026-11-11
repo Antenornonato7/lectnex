@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T17:06-03:00",
+  "atualizado_em": "2026-11-11T17:09-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -335,7 +335,7 @@
     ],
     [
      "16:50",
-     172415.0
+     172393.0
     ]
    ]
   },
@@ -732,11 +732,11 @@
     ],
     [
      "17:05",
-     5.5618
+     5.5619
     ],
     [
-     "17:06",
-     5.5617
+     "17:09",
+     5.5616
     ]
    ]
   },
@@ -1435,7 +1435,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.04,
     "dolar30": -0.04
    },
    {
@@ -1540,7 +1540,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.03
    },
    {
     "hora": "16:54",
@@ -1555,21 +1555,24 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:02",
+    "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Split payment: eficiência fiscal pode beneficiar empresas",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/blogs/que-imposto-e-esse/2026/11/split-payment-eficiencia-fiscal-pode-beneficiar-empresas.shtml",
-   "publicado": "2026-11-11T04:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "BC puxa freio e encerra ciclo após 5 cortes de juros; Selic fica em 13,75%",
    "fonte": "CNN Brasil",
@@ -2558,6 +2561,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+   "publicado": "2026-11-11T17:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2587,7 +2602,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T17:06-03:00",
+ "atualizado_em": "2026-11-11T17:09-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2602,6 +2617,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+   "publicado": "2026-11-11T17:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Social Security could pay full benefits until 2059 if taxable payroll kept pace with GDP: AARP report",
    "fonte": "CNBC",
@@ -2786,19 +2813,6 @@
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVDZIRjVZRG90TEpUaWdKNWp4a2tVOHN3bDFvcDZXY3VrbWlTSTRGUnAwR1ZBbTFyNk01S01GWHVjdlp2T0xmenVDYWVDc3Ruc1R1STNHcl9ISUdkaWJxX0RzY0ZfSGNUemJiZWVoRVl2RmlpWEdZT2VxNzJWTGl3Sm9KRFJ0bEZjUjc1Sm1zbjJKNkZQLVA2MENWS3BCcFJPSkVsS3F0S0tIVjlBRzBMbXp2OGxleHhrakI00gHAAUFVX3lxTE54RjVzSEY0emlVZFppc1hBd3NPREVHeEdzY3EyWjhnTnFBUXotcmJ5ZlhWUlAweXc0dmxyRTNtYlJ3el9GTmJWOVNmelBUS215RHNBVFU0SHpoVjNtcFZ6al90NjJUX3ZkNVZxWkNMd2xzdG95QVc5dlZSbWwxQUQtRjh6bHgxY0FUR1cyYzlITjE3UzdrRVk3X2owZWF1RkFaQ0N6ZmNGNlJDb0xpS25nc1BxQ2tITXVrT0tZTVcydA?oc=5",
    "publicado": "2026-11-11T14:57-03:00",
    "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Petrobras: ‘Recorde de produção já foi superado três vezes ao longo deste ano’, diz Magda",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/negocios/petrobras-recorde-de-producao-ja-foi-superado-tres-vezes-ao-longo-deste-ano-diz-magda/",
-   "publicado": "2026-11-11T14:30-03:00",
-   "impacto": "medio",
    "ativos": [
     "WIN"
    ],
