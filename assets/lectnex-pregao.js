@@ -2,7 +2,7 @@
 (function () {
     const $ = id => document.getElementById(id);
     const btn = $('pg-open'); if (!btn || !window.LX) return;
-    let ov = null, timer = null, lock = null, leitura = null, cot = null;
+    let ov = null, timer = null, lock = null, leitura = null, cot = null, placar = null;
 
     const fetchJSON = u => fetch(u + '?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
     async function wake() {
@@ -43,12 +43,24 @@
 
     function renderSlow() {
         if (!ov) return;
-        // 2. termômetro
-        const T = { bullish: ['▲ ALTA', 'text-emerald-500'], bearish: ['▼ BAIXA', 'text-rose-500'], neutro: ['● NEUTRO', 'text-slate-400'] };
-        const today = LX.iso(LX.todayBRT());
-        $('pg-term').innerHTML = leitura && leitura.termometro && leitura.data === today
-            ? ['win', 'wdo'].filter(k => leitura.termometro[k]).map(k => { const t = leitura.termometro[k], c = T[t.leitura] || T.neutro; return `<div class="flex-1 min-w-0"><span class="font-mono text-[11px] text-slate-500">${k.toUpperCase()}</span><strong class="block font-mono text-lg ${c[1]}">${c[0]}</strong><span class="block text-[11px] text-slate-500 leading-snug line-clamp-2">${LX.esc(t.motivo)}</span></div>`; }).join('<div class="w-px bg-slate-200 dark:bg-lect-borderDark"></div>')
-            : `<p class="text-xs text-slate-500">${leitura && leitura.tipo === 'sem-pregao' ? 'Sem pregão hoje: o viés do modelo volta no próximo pregão.' : 'Viés do modelo de hoje ainda não publicado (sai às 7h40).'}</p>`;
+        // 2. viés do modelo (manhã/pregão) ou fechamento (noite, madrugada e fim de semana) — mesma regra da página inicial
+        const T = { bullish: ['▲ VIÉS DE ALTA', 'text-emerald-500'], bearish: ['▼ VIÉS DE BAIXA', 'text-rose-500'], neutro: ['● NEUTRO', 'text-slate-400'] };
+        const today = LX.iso(LX.todayBRT()), agora = LX.nowBRT();
+        let ref = LX.todayBRT();
+        if (!LX.isBusinessDay(ref) || agora.getHours() < 9) { ref = LX.addDays(ref, -1); while (!LX.isBusinessDay(ref)) ref = LX.addDays(ref, -1); }
+        const fech = placar && (placar.dias || []).find(x => x.data === LX.iso(ref));
+        const pc = v => v == null ? '—' : `<span class="${LX.signClass(v)}">${v > 0 ? '+' : v < 0 ? '−' : ''}${LX.num(Math.abs(v), 2)}%</span>`;
+        const SET = { bullish: '▲ alta', bearish: '▼ baixa', neutro: '● neutro' };
+        if (fech && (fech.win || fech.wdo)) {
+            $('pg-term-t').textContent = LX.iso(ref) === today ? 'Fechamento de hoje' : `Fechamento de ${LX.weekday(ref)} ${LX.brShort(ref)}`;
+            $('pg-term').innerHTML = [['win', 'IBOVESPA · WIN'], ['wdo', 'DÓLAR · WDO']].filter(([k]) => fech[k]).map(([k, nome]) => { const x = fech[k]; return `<div class="flex-1 min-w-0"><span class="font-mono text-[11px] text-slate-500">${nome}</span><strong class="block font-mono text-lg">${pc(x.var_pct)}</strong><span class="block font-mono text-[11px] text-slate-500">viés ${SET[x.leitura] || ''} · <b class="${x.acerto ? 'text-emerald-500' : 'text-rose-500'}">${x.acerto ? '✓ acertou' : '✗ errou'}</b></span></div>`; }).join('');
+        } else {
+            $('pg-term-t').textContent = 'Viés do modelo na abertura';
+            $('pg-term').innerHTML = leitura && leitura.termometro && leitura.data === today
+                ? ['win', 'wdo'].filter(k => leitura.termometro[k]).map(k => { const t = leitura.termometro[k], c = T[t.leitura] || T.neutro; return `<div class="flex-1 min-w-0"><span class="font-mono text-[11px] text-slate-500">${k.toUpperCase()}</span><strong class="block font-mono text-base ${c[1]}">${c[0]}</strong><span class="block text-[11px] text-slate-500 leading-snug line-clamp-2">${LX.esc(t.motivo)}</span></div>`; }).join('')
+                  + '<p class="basis-full text-[11px] text-slate-500">Medido antes da abertura · não muda durante o dia · não é recomendação.</p>'
+                : `<p class="text-xs text-slate-500">${leitura && leitura.tipo === 'sem-pregao' ? 'Sem pregão hoje: o viés do modelo volta no próximo pregão.' : 'Viés do modelo de hoje ainda não publicado (sai às 7h40).'}</p>`;
+        }
 
         // 3. maiores altas e baixas
         const m = (cot && cot.mapa || []).filter(x => typeof x.var_pct === 'number').sort((a, b) => b.var_pct - a.var_pct);
@@ -83,7 +95,7 @@
                 <button type="button" id="pg-close" class="px-2 py-1 border border-slate-300 dark:border-lect-borderDark hover:text-lect-teal" aria-label="Fechar modo pregão"><i class="ph-bold ph-x"></i></button></header>
             <div class="flex-1 min-h-0 overflow-y-auto p-3 sm:p-5 grid gap-3 content-start lg:grid-cols-2 max-w-5xl w-full mx-auto">
                 ${card('Próximo dado forte', 'ph-timer', '<div id="pg-ev"></div>', 'lg:col-span-2')}
-                ${card('Viés do modelo na abertura', 'ph-thermometer-simple', '<div id="pg-term" class="flex gap-3"></div>')}
+                ${card('<span id="pg-term-t">Viés do modelo na abertura</span> <span class="lx-demo">EXPERIMENTAL</span>', 'ph-thermometer-simple', '<div id="pg-term" class="flex flex-wrap gap-3"></div>')}
                 ${card('Seu Plano do Dia', 'ph-target', '<div id="pg-plano"></div>')}
                 ${card('Maiores altas · maiores baixas', 'ph-chart-bar', '<div id="pg-movers"></div>', 'lg:col-span-2')}
             </div>
@@ -92,7 +104,7 @@
         $('pg-close').onclick = closePg; $('pg-lock').onclick = wake; if (LX.pushButtons) LX.pushButtons();
         if (location.hash !== '#pregao') history.replaceState(null, '', '#pregao');
         render(); renderSlow(); wake();
-        [leitura, cot] = await Promise.all([fetchJSON('data/leitura.json'), fetchJSON('data/cotacoes.json')]); renderSlow();
+        [leitura, cot, placar] = await Promise.all(LX.dados ? [LX.dados('leitura'), LX.dados('cotacoes'), LX.dados('placar-termometro')] : [fetchJSON('data/leitura.json'), fetchJSON('data/cotacoes.json'), fetchJSON('data/placar-termometro.json')]); renderSlow();
         timer = [setInterval(render, 1000), setInterval(renderSlow, 15000), setInterval(async () => { cot = await fetchJSON('data/cotacoes.json') || cot; renderSlow(); }, 5 * 60e3)];
         $('pg-close').focus();
     }

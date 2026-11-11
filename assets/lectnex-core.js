@@ -906,6 +906,24 @@
     };
     LX.cookiesEscolha = ckGet;
     // Eventos no Analytics (só se o GA estiver ligado). Nomes curtos e estáveis: aparecem assim nos relatórios.
+    /* Dados do site (data/*.json): um download por arquivo a cada carregamento da página, dividido entre os blocos que usam o
+       mesmo arquivo. fresco = true busca de novo (para atualizações periódicas). Cada bloco recebe a própria cópia. */
+    const lxDadosCache = {};
+    LX.dados = function (nome, fresco) {
+        if (fresco || !lxDadosCache[nome]) lxDadosCache[nome] = fetch(`data/${nome}.json?t=${Math.floor(Date.now() / 6e4)}`, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
+        return lxDadosCache[nome].then(d => d == null ? null : typeof structuredClone === 'function' ? structuredClone(d) : JSON.parse(JSON.stringify(d)));
+    };
+    /* Primeira tela instantânea para quem volta: mostra na hora a última cópia guardada no aparelho (cache do service worker)
+       e redesenha quando o dado novo chega, só se ele mudou. Cada dado já traz o próprio horário, então a cópia antiga
+       nunca se passa por atual. render(dados, doCache) precisa poder ser chamado duas vezes. */
+    LX.dadosVivos = function (nome, render) {
+        let mostrado = null;
+        const pinta = (d, velho) => { const s = JSON.stringify(d); if (s === mostrado) return; mostrado = s; try { render(d, velho); } catch (err) { console.error(err); } };
+        const rede = LX.dados(nome);
+        if ('caches' in window) caches.match(new URL(`data/${nome}.json`, location.href).href).then(r => r ? r.json() : null)
+            .then(c => { if (c && mostrado === null) pinta(c, true); }).catch(() => { });
+        return rede.then(d => { if (d) pinta(d, false); else if (mostrado === null) render(null, false); });
+    };
     LX.track = function (nome, p) { try { if (LX.config.ga && window.gtag) gtag('event', nome, Object.assign({ pagina: document.body.dataset.page || '' }, p || {})); } catch (_) { } };
     function rastrear() {
         const usadas = new Set();
@@ -1035,7 +1053,7 @@
         const now = new Date(), nb = brt(now), hojeISO = LX.iso(nb);
         const hm = d => d.toLocaleTimeString('pt-BR', { ...tz, hour: '2-digit', minute: '2-digit' }).replace(':', 'h');
         const quando = d => { const min = Math.round((now - d) / 6e4); if (min < 60) return `há ${Math.max(1, min)} min`; return LX.iso(brt(d)) === hojeISO ? `às ${hm(d)}` : `${d.toLocaleDateString('pt-BR', { ...tz, weekday: 'short' }).replace('.', '')} ${hm(d)}`; };
-        const pega = f => fetch(`data/${f}.json?t=${Math.floor(Date.now() / 3e5)}`, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
+        const vez = footStatus.vez = (footStatus.vez || 0) + 1, pega = f => LX.dados(f, vez > 1); // 1ª vez: aproveita o download da página
         Promise.all([pega('cotacoes'), pega('leitura'), pega('calendario')]).then(([cot, lei, cal]) => {
             if (!cot && !lei && !cal) { pinta('bg-slate-500', 'Status indisponível', ''); return; }
             const mins = nb.getHours() * 60 + nb.getMinutes();
@@ -1192,7 +1210,7 @@
         nextSlot(); rollBanner(); setInterval(rollBanner, 60000);
         pwa(); pushButtons(); analytics();
         const hc = document.getElementById('lx-hc'); if (hc) hc.onclick = () => { const on = document.documentElement.classList.toggle('lx-hc'); try { localStorage.setItem('lectnex-hc', on ? '1' : '0'); } catch (_) { } };
-        fetch('data/calendario.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
+        LX.dados('calendario').then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
         newsForms();
         (window.requestIdleCallback || (f => setTimeout(f, 1500)))(footStatus); setInterval(footStatus, 5 * 6e4);
         setTimeout(() => (window.requestIdleCallback || (f => f()))(glossDicas), 1800);
