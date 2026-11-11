@@ -111,7 +111,8 @@ def main():
     taxa = {v: (x[v] / n[v] * 100 if n[v] else None) for v in 'AB'}
     dias = (ontem - INICIO).days + 1
 
-    L = [f'🧪 <b>Teste do menu: "Laboratório" × "Aprender"</b>', f'{INICIO.strftime("%d/%m")} a {ontem.strftime("%d/%m")} · {dias} dia(s)', '']
+    periodo_txt = f'{INICIO.strftime("%d/%m")} a {ontem.strftime("%d/%m")} · {dias} dia(s)' if dias > 0 else 'teste começou hoje: os números entram a partir de amanhã'
+    L = [f'🧪 <b>Teste do menu: "Laboratório" × "Aprender"</b>', periodo_txt, '']
     for v in 'AB':
         t = '—' if taxa[v] is None else f'{taxa[v]:.1f}%'.replace('.', ',')
         L.append(f'<b>{NOME[v]}</b>: {n[v]} visitantes · {x[v]} clicaram no menu de estudo ({cl[v]} cliques) · <b>{t}</b>')

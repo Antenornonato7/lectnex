@@ -952,9 +952,9 @@
         window.gtag = function () { dataLayer.push(arguments); };
         gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: esc === 'sim' ? 'granted' : 'denied', wait_for_update: 500 });
         gtag('js', new Date());
-        gtag('set', 'user_properties', { teste_menu: LX.abMenu });
+        gtag('set', 'user_properties', { teste_menu: LX.abMenu, Teste_menu: LX.abMenu }); // as definições no Analytics foram criadas como Teste_menu e Destino
         gtag('config', id, { page_title: document.title });
-        document.addEventListener('click', ev => { const a = ev.target.closest && ev.target.closest('a[data-nav]'); if (a) LX.track('menu_clique', { destino: a.dataset.nav, teste_menu: LX.abMenu, lugar: a.closest('footer') ? 'rodape' : a.closest('nav') ? 'menu' : 'menu_celular' }); });
+        document.addEventListener('click', ev => { const a = ev.target.closest && ev.target.closest('a[data-nav]'); if (a) LX.track('menu_clique', { destino: a.dataset.nav, Destino: a.dataset.nav, teste_menu: LX.abMenu, lugar: a.closest('footer') ? 'rodape' : a.closest('nav') ? 'menu' : 'menu_celular' }); });
         const load = () => { const sc = document.createElement('script'); sc.async = true; sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + id; document.head.appendChild(sc); };
         (window.requestIdleCallback || (f => setTimeout(f, 1200)))(load);
         rastrear();
