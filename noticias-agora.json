@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T14:35-03:00",
+  "atualizado_em": "2026-11-11T14:38-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -215,7 +215,11 @@
     ],
     [
      "14:20",
-     172530.0
+     172485.0
+    ],
+    [
+     "14:23",
+     172491.0
     ]
    ]
   },
@@ -492,7 +496,11 @@
     ],
     [
      "14:35",
-     5.562
+     5.5582
+    ],
+    [
+     "14:38",
+     5.56
     ]
    ]
   },
@@ -1035,7 +1043,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.02
+    "dolar30": -0.05
    },
    {
     "hora": "14:10",
@@ -1048,7 +1056,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.02
+    "dolar30": -0.05
    },
    {
     "hora": "14:30",
@@ -1879,7 +1887,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T14:35-03:00",
+ "atualizado_em": "2026-11-11T14:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2016,6 +2024,19 @@
    ]
   },
   {
+   "titulo": "Ações do Magalu sobem mais de 20% em dois dias com crise da Casas Bahia no radar",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/acoes-do-magalu-sobem-mais-de-20-em-dois-dias-com-crise-da-casas-bahia-no-radar.shtml",
+   "publicado": "2026-11-11T13:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
+  },
+  {
    "titulo": "Alta de investimentos da Petrobras preocupa mercado, e ações caem",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alta-de-investimentos-da-petrobras-preocupa-mercado-e-acoes-caem.shtml",
@@ -2038,19 +2059,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa salta 2,2% com Vale em alta acima de 3%; Bolsas de Nova York avançam apesar da Nvidia",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTGthM25JejJXV0ZCVEh4UzZybjJyM0NUVUdaeVRGZjZxVDB6RklDVExVQWtJZG16bEthTWVzUGNweGhTSURpUXJYZ1R4MXhfenBpZUdITHU4N2xSb2xHeXMwaXN6eXNjMWdDMnUwR0RjYUg4dEVFODdQS1B3bVROZWw3M0VjYzVQU0hWdzlpbmU2SmRhbTFnT3F2bnIyMnA4ZHpfVDhaRlJ1X2lUdHVLVXJ3anZ1ZjgyX1FubThGcnp4bDRScmZrb1JuaGR3Zm84ZFBSZTc1T1FlRTV5NnRUc0lOWm5OZGFzWUU4?oc=5",
-   "publicado": "2026-11-11T12:45-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
   },
   {
    "titulo": "Petrobras (PETR4) pagará menos dividendos? Ações lideram quedas do Ibovespa após aumento do capex no 3T26",
