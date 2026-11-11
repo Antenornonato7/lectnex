@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T14:20-03:00",
+  "atualizado_em": "2026-11-11T14:22-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -203,7 +203,11 @@
     ],
     [
      "14:05",
-     172429.0
+     172403.0
+    ],
+    [
+     "14:08",
+     172437.0
     ]
    ]
   },
@@ -468,7 +472,11 @@
     ],
     [
      "14:20",
-     5.5605
+     5.5611
+    ],
+    [
+     "14:23",
+     5.5591
     ]
    ]
   },
@@ -1008,6 +1016,19 @@
     "impacto": "medio",
     "ativos": [
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:10",
+    "titulo": "Brasileiro vive na ‘bolha do CDI’ e acorda todo dia ‘short’ em dólar, dizem gestores",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxObjlZeFc3RzUwQU5tYWpGTTRPMlBrYjdYV0hEdHlYay1yVUJEcTVremFZbUtqOEV0YmdjMlF1VEhLZXlyZHh6cERqRTdPd1hFcnRkSHRxNEFvUC1fVEpUT2c1ZnhxMU44NkF1UGo0MHBNSTI2bmEzRnVkZ1ZXdXAzZmdWQm1LZF9hS1BjOTRNMGFoMl9Gd3ljTWNjZ3BNS0dsQWNDd1daZ0Z1MDdCMHU1S3ppOG9IV1RfYWQwdXdBNUxOeU83VzZ4TEU2THZTdlZzeVRv0gHiAUFVX3lxTE9UYl9TbmpxX0VGSTU5VENCQ0NtMjhZd2VPMWxLaGlGNWNTd0ZwOFNVMXY5UXJTV1ZhaElDdVlqTE0zX0FocVBhcmpqcnptZHRNamNTRkNUSzdHREQ4eHhxcjRHODAtZVgxRk5wblRLc0xHNUN0WjNnemFYWGFIMG10QmtDS1Y0Ry1yMzRNS09MWFhqaEdzUkRVal81c3FPZGtsS3paWk9WczNNUURLdTltblhwOHljN1Q2MmczM25nbXRTZXhhQzZwWXh4ekRlMy1OOHE3TXhGRHpWdU9Sa01iaXc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1778,6 +1799,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Brasileiro vive na ‘bolha do CDI’ e acorda todo dia ‘short’ em dólar, dizem gestores",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxObjlZeFc3RzUwQU5tYWpGTTRPMlBrYjdYV0hEdHlYay1yVUJEcTVremFZbUtqOEV0YmdjMlF1VEhLZXlyZHh6cERqRTdPd1hFcnRkSHRxNEFvUC1fVEpUT2c1ZnhxMU44NkF1UGo0MHBNSTI2bmEzRnVkZ1ZXdXAzZmdWQm1LZF9hS1BjOTRNMGFoMl9Gd3ljTWNjZ3BNS0dsQWNDd1daZ0Z1MDdCMHU1S3ppOG9IV1RfYWQwdXdBNUxOeU83VzZ4TEU2THZTdlZzeVRv0gHiAUFVX3lxTE9UYl9TbmpxX0VGSTU5VENCQ0NtMjhZd2VPMWxLaGlGNWNTd0ZwOFNVMXY5UXJTV1ZhaElDdVlqTE0zX0FocVBhcmpqcnptZHRNamNTRkNUSzdHREQ4eHhxcjRHODAtZVgxRk5wblRLc0xHNUN0WjNnemFYWGFIMG10QmtDS1Y0Ry1yMzRNS09MWFhqaEdzUkRVal81c3FPZGtsS3paWk9WczNNUURLdTltblhwOHljN1Q2MmczM25nbXRTZXhhQzZwWXh4ekRlMy1OOHE3TXhGRHpWdU9Sa01iaXc?oc=5",
+   "publicado": "2026-11-11T14:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1807,7 +1839,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T14:20-03:00",
+ "atualizado_em": "2026-11-11T14:22-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1817,7 +1849,8 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
@@ -1828,6 +1861,17 @@
    "impacto": "medio",
    "ativos": [
     "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Brasileiro vive na ‘bolha do CDI’ e acorda todo dia ‘short’ em dólar, dizem gestores",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxObjlZeFc3RzUwQU5tYWpGTTRPMlBrYjdYV0hEdHlYay1yVUJEcTVremFZbUtqOEV0YmdjMlF1VEhLZXlyZHh6cERqRTdPd1hFcnRkSHRxNEFvUC1fVEpUT2c1ZnhxMU44NkF1UGo0MHBNSTI2bmEzRnVkZ1ZXdXAzZmdWQm1LZF9hS1BjOTRNMGFoMl9Gd3ljTWNjZ3BNS0dsQWNDd1daZ0Z1MDdCMHU1S3ppOG9IV1RfYWQwdXdBNUxOeU83VzZ4TEU2THZTdlZzeVRv0gHiAUFVX3lxTE9UYl9TbmpxX0VGSTU5VENCQ0NtMjhZd2VPMWxLaGlGNWNTd0ZwOFNVMXY5UXJTV1ZhaElDdVlqTE0zX0FocVBhcmpqcnptZHRNamNTRkNUSzdHREQ4eHhxcjRHODAtZVgxRk5wblRLc0xHNUN0WjNnemFYWGFIMG10QmtDS1Y0Ry1yMzRNS09MWFhqaEdzUkRVal81c3FPZGtsS3paWk9WczNNUURLdTltblhwOHljN1Q2MmczM25nbXRTZXhhQzZwWXh4ekRlMy1OOHE3TXhGRHpWdU9Sa01iaXc?oc=5",
+   "publicado": "2026-11-11T14:10-03:00",
+   "impacto": "medio",
+   "ativos": [
     "WDO"
    ],
    "tickers": []
@@ -1923,19 +1967,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alta-de-investimentos-da-petrobras-preocupa-mercado-e-acoes-caem.shtml",
    "publicado": "2026-11-11T13:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal, balanços e exterior; PETR4 cai",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcmZXZEdGdEZTNVZJQ2tEeWljMmhoUFhMOEVOSGt5VldZTXZhVVVfREttOWttdjRfZ1I4TUl4NWJ0LWdTSTZwVnJqTDE0R1hDV2ZlWGtOT0xMMDU3Sk5idXZLNktacUlIallZWWdRMVZsUFhHOTdZNkNSME84SzhGQzVrVnJOaXRwZE81VGwyZw?oc=5",
-   "publicado": "2026-11-11T12:50-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
