@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T14:30-03:00",
+  "atualizado_em": "2026-11-11T14:33-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -211,7 +211,11 @@
     ],
     [
      "14:15",
-     172477.0
+     172549.0
+    ],
+    [
+     "14:18",
+     172543.0
     ]
    ]
   },
@@ -484,7 +488,11 @@
     ],
     [
      "14:30",
-     5.5623
+     5.5617
+    ],
+    [
+     "14:33",
+     5.5621
     ]
    ]
   },
@@ -1037,6 +1045,19 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:30",
+    "titulo": "A conta da demora fiscal",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/solange-srour/2026/11/a-conta-da-demora-fiscal.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1818,6 +1839,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "A conta da demora fiscal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/solange-srour/2026/11/a-conta-da-demora-fiscal.shtml",
+   "publicado": "2026-11-11T14:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1847,7 +1879,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T14:30-03:00",
+ "atualizado_em": "2026-11-11T14:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1861,6 +1893,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "A conta da demora fiscal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/solange-srour/2026/11/a-conta-da-demora-fiscal.shtml",
+   "publicado": "2026-11-11T14:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Festival de compras na China testa potencial da IA para impulsionar vendas",
    "fonte": "Folha",
@@ -1955,19 +1998,6 @@
    ],
    "tickers": [
     "PETR4"
-   ]
-  },
-  {
-   "titulo": "Ações do Magalu sobem mais de 20% em dois dias com crise da Casas Bahia no radar",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/acoes-do-magalu-sobem-mais-de-20-em-dois-dias-com-crise-da-casas-bahia-no-radar.shtml",
-   "publicado": "2026-11-11T13:15-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
    ]
   },
   {
