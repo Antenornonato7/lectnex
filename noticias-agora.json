@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T16:22-03:00",
+  "atualizado_em": "2026-11-11T16:25-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -299,11 +299,11 @@
     ],
     [
      "16:05",
-     172369.0
+     172356.0
     ],
     [
-     "16:08",
-     172335.0
+     "16:10",
+     172383.0
     ]
    ]
   },
@@ -664,11 +664,11 @@
     ],
     [
      "16:20",
-     5.5626
+     5.562
     ],
     [
-     "16:23",
-     5.5613
+     "16:25",
+     5.5611
     ]
    ]
   },
@@ -1310,7 +1310,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.03,
     "dolar30": -0.08
    },
    {
@@ -1339,6 +1339,19 @@
     "tickers": [
      "HAPV3"
     ],
+    "ibov30": null,
+    "dolar30": 0.0
+   },
+   {
+    "hora": "16:21",
+    "titulo": "Ouro fecha em queda com valorização do dólar e expectativa de juros mais altos nos EUA",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQakM4R1BrdkR0MEc2TEE1VmR6c0xxVFN6Y3ZXX1ZqOGFid0NCcVVsYU1WRF9ISHU2M0pPaUsxV2RuZE5tUUI5T2REWVJNNDBXTDNKMzF6TFBJTkZDRmZCaWt3Mmc2Szhsa1ZSN21fbTBzRlU0MG9KcXpsSWdwcmI4MWRQYmhseHRlQlhaN1E2WVA4WFVIcFNHR3VsY2Ffb1czUndBUlh2Mk1JeDExdzVUMnpnY0U4RVZzYU45M0s2TQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -2218,6 +2231,17 @@
    "tickers": [
     "HAPV3"
    ]
+  },
+  {
+   "titulo": "Ouro fecha em queda com valorização do dólar e expectativa de juros mais altos nos EUA",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQakM4R1BrdkR0MEc2TEE1VmR6c0xxVFN6Y3ZXX1ZqOGFid0NCcVVsYU1WRF9ISHU2M0pPaUsxV2RuZE5tUUI5T2REWVJNNDBXTDNKMzF6TFBJTkZDRmZCaWt3Mmc2Szhsa1ZSN21fbTBzRlU0MG9KcXpsSWdwcmI4MWRQYmhseHRlQlhaN1E2WVA4WFVIcFNHR3VsY2Ffb1czUndBUlh2Mk1JeDExdzVUMnpnY0U4RVZzYU45M0s2TQ?oc=5",
+   "publicado": "2026-11-11T16:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2247,7 +2271,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T16:22-03:00",
+ "atualizado_em": "2026-11-11T16:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2262,6 +2286,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ouro fecha em queda com valorização do dólar e expectativa de juros mais altos nos EUA",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQakM4R1BrdkR0MEc2TEE1VmR6c0xxVFN6Y3ZXX1ZqOGFid0NCcVVsYU1WRF9ISHU2M0pPaUsxV2RuZE5tUUI5T2REWVJNNDBXTDNKMzF6TFBJTkZDRmZCaWt3Mmc2Szhsa1ZSN21fbTBzRlU0MG9KcXpsSWdwcmI4MWRQYmhseHRlQlhaN1E2WVA4WFVIcFNHR3VsY2Ffb1czUndBUlh2Mk1JeDExdzVUMnpnY0U4RVZzYU45M0s2TQ?oc=5",
+   "publicado": "2026-11-11T16:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras perde força",
    "fonte": "Estadão",
