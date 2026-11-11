@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T11:23-03:00",
+  "atualizado_em": "2026-11-11T11:25-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -59,11 +59,15 @@
     ],
     [
      "11:05",
-     172569.0
+     172636.0
     ],
     [
-     "11:08",
-     172590.0
+     "11:10",
+     172757.0
+    ],
+    [
+     "11:11",
+     172726.0
     ]
    ]
   },
@@ -184,11 +188,15 @@
     ],
     [
      "11:20",
-     5.5669
+     5.566
     ],
     [
-     "11:23",
-     5.5654
+     "11:25",
+     5.566
+    ],
+    [
+     "11:26",
+     5.5691
     ]
    ]
   },
@@ -424,7 +432,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": -0.09,
+    "ibov30": -0.05,
     "dolar30": -0.07
    },
    {
@@ -440,7 +448,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": 0.14
+    "dolar30": 0.12
    },
    {
     "hora": "11:17",
@@ -1015,7 +1023,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T11:23-03:00",
+ "atualizado_em": "2026-11-11T11:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1023,7 +1031,6 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -1031,24 +1038,10 @@
  ],
  "noticias": [
   {
-   "titulo": "Ibovespa ganha força com promessa de ajuste fiscal de Lula, apesar da queda de Petrobras",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc21PaGVjTnBMdUFBSlJHWFFQeGFZV2UyS21HMFRwSjRUeGxzMDVFbDZ4VVo3TTNSOF96NjJzZmx3cEczcjNhbWZVQnIxYlRmS1N2UVMyNXlieVZ3R1VLZldGQXBrajY3VEJZdURlVGdUOEJlZGtIU2toelBiV0UyazNpSW0tb1VLbURWRS1PSlNyMDB1TTN5UTB2UlRJQXlMbHdMMC14MGFyUmo1RUhqcWFpOHhEdzdiQWFSMTBtQQ?oc=5",
-   "publicado": "2026-11-11T11:17-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-   "publicado": "2026-11-11T11:16-03:00",
+   "publicado": "2026-11-11T11:24-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
@@ -1090,6 +1083,20 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Ibovespa avança de olho em ajuste fiscal e balanços, apesar de queda da Petrobras",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ1d6dy1zMkNNbHo0UXR5bXdhbzB6MV9qanNUUXNwTHFJWU9kX3dCcHFCLXRKVHdlV1RNNE9Yd0VkazYtVTJGOVNCRmxnYXZVbl9YeFZSU3VvZWlmTGN6aUlKakdDVjVyU2FNYmZ5M2xVMkxfdXhsWlpsRGxwVUtFbk1MLU5KVFJJWjdUelVBSTkybjA2MUdTa0QxS05HaHlJOVAtZHEtSWZQMjFFbm04cXo5SWtFSnU1ZGtMTmd4QllTbGRVQTZTT0JyVmRQbmdjZ25rMtIB4wFBVV95cUxOOFlTQ19vZDFhSTBEN1RzNzV3T3RvUTE2eG5OUlBkWDQ3Mmc1aEE4bEl3UGd2Q1hmaWgxeGFfWWNXdTR1MFcxQXkzZk14R1k1ZEdwQjJlNzZONDlVbGdqc084Vm5iUVF5WnhCUHd1WjQyQmNXWC10MUY3aUdNeXBaZUdVaXQ1N1lUNDY5bm80X0FLdGxyWXJjX3ZoRFBzMUFsSWNfS0dUUmptN3BSQlhyUFNaaE53V0taZ2djX3hILWFKWm9WZk5zQzRwTnRPNkxUWkRjNlphQUdNT0lQRHdMc21Lcw?oc=5",
+   "publicado": "2026-11-11T10:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
    ],
    "tickers": [
     "PETR4"
