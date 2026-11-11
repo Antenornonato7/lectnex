@@ -1,109 +1,19 @@
 {
-  "atualizado_em": "2026-11-10T19:30:00-03:00",
+  "atualizado_em": "2026-11-11T08:03:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-10",
-      "hora": "00h",
-      "pais": "CN",
-      "evento": "Balança comercial — exportações (out, a/a)",
-      "importancia": 2,
-      "anterior": "36,3%",
-      "consenso": "33,5%",
-      "resultado": "35,2%",
-      "impacto": {
-        "win": "volatil"
-      },
-      "nota": "Consenso Reuters (a ADMISI indicava 38,0%). Importações: +41,6% (consenso Reuters 32%; set: 31%). Exportações fortes sustentam a demanda por commodities.",
-      "tipo": "balanca-china",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-10",
-      "hora": "08h",
-      "pais": "BR",
-      "evento": "Ata do Copom",
-      "importancia": 3,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Publicada",
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Ata da reunião que manteve a Selic em 13,75%: indica moderação mais acentuada da atividade, inflação acima do teto da meta e mercado de trabalho resiliente, com sinais de desaquecimento (segundo a Agência Estado).",
-      "tipo": "ata-copom",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-10",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "CPI — inflação ao consumidor (out, m/m)",
-      "importancia": 3,
-      "anterior": "0,6%",
-      "consenso": "0,3%",
-      "resultado": "0,4%",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Segundo a ADMISI, o BLS não publicará a variação anual em outubro (falta de dados de out/2025).",
-      "tipo": "cpi-eua",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "CPI acima do consenso costuma fortalecer o dólar global e elevar os juros dos Treasuries, o que tende a pressionar o WDO para cima, abrir a curva de DI e pesar sobre o WIN."
-      }
-    },
-    {
-      "data": "2026-11-10",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "CPI — núcleo (out, m/m)",
-      "importancia": 2,
-      "anterior": "0,3%",
-      "consenso": "0,2%",
-      "resultado": "0,3%",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Núcleo sem alimentos e energia; referência para o Fed.",
-      "tipo": "cpi-nucleo-eua",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "Núcleo acima do esperado reduz a chance de cortes do Fed; o padrão típico é dólar mais forte (WDO em alta), DI pressionado e WIN mais fraco."
-      }
-    },
-    {
-      "data": "2026-11-10",
-      "hora": "14h30",
-      "pais": "BR",
-      "evento": "Galípolo (BC) em evento da Abracam",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Realizada",
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Na Abracam, Galípolo disse que o nível dos juros longos também reflete percepção de risco e credibilidade, que \"é construída com o tempo, não vai ter um atalho\", e que essa percepção pode durar muitos anos (segundo Reuters/InfoMoney e Metrópoles).",
-      "tipo": "fala-bcb",
-      "surpresa": null
-    },
     {
       "data": "2026-11-11",
       "hora": "09h",
       "pais": "BR",
-      "evento": "Pesquisa Mensal de Serviços — PMS (set, IBGE)",
+      "evento": "Pesquisa Mensal de Serviços — PMS (set, m/m, IBGE)",
       "importancia": 2,
-      "anterior": null,
+      "anterior": "−0,1%",
       "consenso": null,
       "resultado": null,
       "impacto": {
         "di": "volatil"
       },
-      "nota": "Serviços pesam na inflação subjacente; a agenda do InfoMoney indica −0,2% m/m.",
+      "nota": "Serviços pesam na inflação subjacente; a agenda do InfoMoney indica −0,2% m/m (sem fonte de consenso).",
       "tipo": "pms-brasil",
       "surpresa": null
     },
@@ -125,18 +35,35 @@
       "surpresa": null
     },
     {
+      "data": "2026-11-11",
+      "hora": "14h15",
+      "pais": "BR",
+      "evento": "Galípolo (BC) no Fórum de Investimentos da Bradesco Asset",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Primeira fala depois da ata que indicou Selic restritiva por mais tempo.",
+      "tipo": "fala-bcb",
+      "surpresa": null
+    },
+    {
       "data": "2026-11-12",
       "hora": "04h",
       "pais": "UK",
       "evento": "PIB do Reino Unido (3º tri, preliminar, t/t)",
       "importancia": 1,
       "anterior": "0,5%",
-      "consenso": "0,7%",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
       },
-      "nota": "Atividade britânica; mexe com a libra e o dólar global.",
+      "nota": "Atividade britânica; mexe com a libra e o dólar global. Projeções divergem entre fontes.",
       "tipo": "pib-reino-unido",
       "surpresa": null
     },
@@ -146,14 +73,14 @@
       "pais": "BR",
       "evento": "IPCA de outubro (IBGE)",
       "importancia": 3,
-      "anterior": null,
+      "anterior": "0,82%",
       "consenso": null,
       "resultado": null,
       "impacto": {
         "di": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Projeções citadas pelo InfoMoney: Bradesco 0,29% e Itaú 0,21% m/m; ASA (BPMoney): 0,23%.",
+      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Setembro: 0,82% m/m e 4,58% em 12 meses. Projeções de casas citadas pelo InfoMoney vão de 0,21% (Daycoval) a 0,27% (Warren).",
       "tipo": "ipca",
       "surpresa": null
     },
@@ -210,9 +137,9 @@
       "data": "2026-11-13",
       "hora": "09h",
       "pais": "BR",
-      "evento": "Vendas no varejo (set, PMC/IBGE)",
+      "evento": "Vendas no varejo restrito (set, m/m, PMC/IBGE)",
       "importancia": 2,
-      "anterior": null,
+      "anterior": "0,1%",
       "consenso": null,
       "resultado": null,
       "impacto": {
@@ -238,6 +165,22 @@
       },
       "nota": "Pressão de custos que pode chegar ao consumidor.",
       "tipo": "ppi-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-15",
+      "hora": "20h50",
+      "pais": "JP",
+      "evento": "PIB do Japão (3º tri, preliminar, anualizado)",
+      "importancia": 1,
+      "anterior": "1,4%",
+      "consenso": "0,3%",
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Consenso da pesquisa Reuters; mexe com o iene e o dólar global.",
+      "tipo": "pib-japao",
       "surpresa": null
     },
     {
@@ -270,6 +213,106 @@
       },
       "nota": "Expectativas de Selic, IPCA e câmbio depois do IPCA de outubro.",
       "tipo": "focus",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-16",
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "IBC-Br (set, m/m, BCB)",
+      "importancia": 2,
+      "anterior": "0,3%",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Prévia do PIB calculada pelo BC; atividade fraca reforça a desaceleração.",
+      "tipo": "ibc-br",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-17",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Vendas no varejo (out, m/m)",
+      "importancia": 2,
+      "anterior": "0,8%",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Consumo americano forte reforça a aposta de alta de juros do Fed em dezembro.",
+      "tipo": "varejo-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-17",
+      "hora": "11h15",
+      "pais": "US",
+      "evento": "Produção industrial (out, m/m)",
+      "importancia": 1,
+      "anterior": "0,7%",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Atividade da indústria americana (Fed).",
+      "tipo": "producao-industrial-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-18",
+      "hora": "04h",
+      "pais": "UK",
+      "evento": "CPI do Reino Unido (out, a/a)",
+      "importancia": 1,
+      "anterior": "3,5%",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Inflação britânica; mexe com a libra e o dólar global.",
+      "tipo": "cpi-reino-unido",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-18",
+      "hora": "07h",
+      "pais": "EU",
+      "evento": "Inflação da zona do euro — HICP final (out, a/a)",
+      "importancia": 1,
+      "anterior": "4,0%",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Anterior = estimativa preliminar (flash) de outubro.",
+      "tipo": "inflacao-zona-euro",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-18",
+      "hora": "16h",
+      "pais": "US",
+      "evento": "Ata do FOMC (reunião de 27–28/out)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Sinais sobre a reunião de dezembro, com o mercado precificando alta de juros.",
+      "tipo": "ata-fomc",
       "surpresa": null
     }
   ]

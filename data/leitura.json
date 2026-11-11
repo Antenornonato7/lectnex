@@ -1,81 +1,146 @@
 {
   "tipo": "pregao",
-  "data": "2026-11-10",
-  "gerado_em": "2026-11-10T07:50:00-03:00",
-  "titulo": "Ata do Copom às 8h e CPI às 10h30; petróleo abaixo de US$ 91",
+  "data": "2026-11-11",
+  "gerado_em": "2026-11-11T08:03:00-03:00",
+  "titulo": "Petrobras lucra R$ 39,7 bi; pacote fiscal e Galípolo no radar",
   "resumo": [
-    "No último pregão (segunda, 9), o Ibovespa subiu 2,22%, a 172.236,05 pontos, puxado por Vale e bancos, e o dólar à vista caiu 0,06%, a R$ 5,506; os DIs longos recuaram cerca de 0,15 p.p., mas a falta de medidas fiscais concretas segue limitando o alívio.",
-    "A ata do Copom sai às 8h e detalha a pausa da Selic em 13,75%: o tom sobre expectativas desancoradas e o fiscal mexe direto nos vértices curtos do DI e no WDO logo antes da abertura.",
-    "O CPI de outubro nos EUA (10h30) tem consenso de +0,3% m/m (núcleo +0,2%), depois de +0,6% em setembro; nas últimas quatro divulgações, nos 30 a 60 minutos seguintes o WIN variou entre −0,33% e +0,65% e o dólar recuou em todas.",
-    "O Brent cai 2,3%, a US$ 90,44, depois de Trump sinalizar que deve segurar novos ataques ao Irã — pesa em Petrobras, que divulga o balanço do 3º trimestre à noite, e tira suporte do real.",
-    "Na China, as exportações subiram 35,2% a/a em outubro (consenso Reuters de 33,5%) e as importações 41,6%, sinal de demanda firme por commodities que ajuda Vale."
+    "No último pregão (terça, 10), o Ibovespa caiu 0,52%, a 171.337 pontos, e o dólar à vista subiu 1,47%, a R$ 5,586, maior nível desde julho de 2025, depois de o CPI de outubro nos EUA vir em +0,4% m/m, acima do consenso de +0,3%.",
+    "A Petrobras lucrou R$ 39,7 bilhões no 3º trimestre (+21,5% em um ano), anunciou R$ 15,3 bilhões em dividendos e elevou a previsão de produção; a teleconferência é às 11h30 e o papel tem grande peso no WIN.",
+    "Segundo fonte do governo citada pelo InfoMoney, o Planalto negociou um projeto de ajuste fiscal de 0,5% do PIB em 2027 (R$ 70 bi a R$ 80 bi), a ser apresentado por um senador aliado nos próximos dias; o mercado vai cobrar detalhes, o que mexe no DI longo e no real.",
+    "Antes da abertura, o S&P 500 futuro sobe 0,69%, o Nasdaq futuro 1,61% e o Brent 2,01%, mas o DXY avança 0,24%; nos EUA é Veterans Day, com bolsas abertas e Treasuries sem negociação, o que reduz a liquidez no câmbio.",
+    "Na agenda local, a PMS de setembro sai às 9h e Galípolo fala às 14h15 no fórum da Bradesco Asset, um dia depois de a ata do Copom indicar Selic restritiva por mais tempo; Banco do Brasil divulga balanço após o fechamento."
   ],
   "termometro": {
-    "win": { "leitura": "bearish", "motivo": "Brent −2,3% (Petrobras) e EWZ só +0,09% depois de alta de 2,22% ontem, com o sinal quantitativo bearish; o contrapeso é a China forte para Vale e o CPI às 10h30, que pode inverter o dia." },
-    "wdo": { "leitura": "bullish", "motivo": "Apesar do sinal quantitativo neutro, petróleo −2,3% tira suporte do real, a chance de alta do Fed em dezembro subiu a 82% e o fiscal segue sem medidas; IFR do dólar perto de sobrecompra (68,75) e CPI às 10h30 são o risco." }
+    "win": {
+      "leitura": "bullish",
+      "motivo": "S&P futuro +0,69%, Nasdaq futuro +1,61%, EWZ +0,25% e Brent +2,01% ajudam Petrobras, que vem de lucro de R$ 39,7 bi e R$ 15,3 bi em dividendos; sinal quantitativo bullish, com Galípolo às 14h15 como risco."
+    },
+    "wdo": {
+      "leitura": "bearish",
+      "motivo": "Sinal quantitativo bearish (S&P futuro +0,69%, VIX −3,96%) depois de o dólar subir 1,47% ontem, com petróleo em alta e notícia de ajuste fiscal favorecendo o real; o DXY +0,24% e a liquidez menor no Veterans Day podem limitar a queda."
+    }
   },
   "destaques": [
-    { "hora": "8h", "evento": "Ata do Copom (BCB)", "por_que": "Detalha a pausa da Selic em 13,75% e o balanço de riscos; tom duro tende a pressionar os vértices curtos do DI." },
-    { "hora": "10h30", "evento": "CPI de outubro (EUA)", "por_que": "Consenso de +0,3% m/m e núcleo +0,2%; nas 4 últimas divulgações (3 em linha e 1 abaixo do consenso), o WIN variou de −0,33% a +0,65% e o WDO caiu de −0,06% a −1,17% logo após o dado." },
-    { "hora": "14h30", "evento": "Galípolo (BC) em evento da Abracam", "por_que": "Primeira fala do presidente do BC depois da ata; sinal sobre os próximos passos da Selic mexe no DI e no câmbio." },
-    { "hora": "noite", "evento": "Balanço da Petrobras (3º tri)", "por_que": "Maior peso do Ibovespa ao lado de Vale; resultado e dividendos repercutem no WIN amanhã." }
+    {
+      "hora": "9h",
+      "evento": "Pesquisa Mensal de Serviços — set (IBGE)",
+      "por_que": "Agosto teve −0,1% m/m e a agenda do InfoMoney indica −0,2%; serviços pesam na inflação subjacente e nos vértices curtos do DI."
+    },
+    {
+      "hora": "11h30",
+      "evento": "Teleconferência da Petrobras (3º tri)",
+      "por_que": "Detalhes sobre dividendos, capex de até US$ 25,5 bi e política de preços mexem com o maior peso do Ibovespa."
+    },
+    {
+      "hora": "14h15",
+      "evento": "Galípolo (BC) no fórum da Bradesco Asset",
+      "por_que": "Primeira fala depois da ata que defendeu Selic restritiva por mais tempo; tom sobre juros e fiscal mexe no DI e no WDO."
+    },
+    {
+      "hora": "após 18h",
+      "evento": "Balanço do Banco do Brasil (3º tri)",
+      "por_que": "Bancos têm peso relevante no índice; resultado repercute no WIN amanhã, dia de IPCA."
+    }
   ],
   "exterior": [
-    { "ativo": "S&P 500 fut.", "variacao": "+0,14%" },
-    { "ativo": "Dow Jones fut.", "variacao": "+0,39%" },
-    { "ativo": "Nasdaq fut.", "variacao": "−0,08%" },
-    { "ativo": "EWZ (pré-mercado)", "variacao": "+0,09%" },
-    { "ativo": "Treasury 10 anos", "variacao": "+0,5 bp (4,86%)" },
-    { "ativo": "Petróleo Brent", "variacao": "−2,30% (US$ 90,44)" }
+    {
+      "ativo": "S&P 500 fut.",
+      "variacao": "+0,69%"
+    },
+    {
+      "ativo": "Nasdaq fut.",
+      "variacao": "+1,61%"
+    },
+    {
+      "ativo": "EWZ (pré-mercado)",
+      "variacao": "+0,25%"
+    },
+    {
+      "ativo": "DXY",
+      "variacao": "+0,24%"
+    },
+    {
+      "ativo": "Petróleo Brent",
+      "variacao": "+2,01%"
+    },
+    {
+      "ativo": "VIX",
+      "variacao": "−3,96%"
+    }
   ],
   "noticias": [
     {
-      "titulo": "Exportações da China sobem 35,2% em outubro, acima do esperado; importações saltam 41,6%",
-      "fonte": "Reuters (via Investing.com)",
-      "hora": "seg 23h46",
-      "url": "https://www.investing.com/news/economy-news/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-5013969",
-      "por_que": "Exportações acima do consenso de 33,5% e importações bem acima dos 32% esperados indicam demanda firme por matérias-primas, o que ajuda minério, Vale e o real.",
-      "impacto": { "win": "alta", "wdo": "baixa" }
+      "titulo": "Petrobras lucra R$ 39,7 bilhões no 3º trimestre, alta de 21,5%, e anuncia R$ 15,3 bi em dividendos",
+      "fonte": "Folhapress (via O Tempo)",
+      "hora": "ter 20h57",
+      "url": "https://www.otempo.com.br/economia/2026/11/10/lucro-da-petrobras-cresce-21-5-no-terceiro-trimestre-para-r-39-7-bilhoes",
+      "por_que": "Produção de 3,51 milhões de boe/d (+11,7% em um ano), previsão de produção elevada para 3,3–3,4 milhões e dividendos de R$ 15,3 bi sustentam a ação de maior peso do WIN; o lucro, porém, ficou abaixo dos R$ 52,4 bi do 2º trimestre.",
+      "impacto": {
+        "win": "alta"
+      }
     },
     {
-      "titulo": "Petróleo despenca depois de Trump dizer que dificilmente ordenará novos ataques ao Irã",
+      "titulo": "Pacote fiscal, balanço do Banco do Brasil e fala de Galípolo estão no radar desta quarta",
       "fonte": "InfoMoney",
-      "hora": "seg 10h34",
-      "url": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-09112026/",
-      "por_que": "O Brent já acumulava queda de 16% na semana anterior e hoje recua mais 2,3%, a US$ 90,44; petróleo mais barato pesa em Petrobras e PRIO e tira suporte do real, mas alivia a inflação.",
-      "impacto": { "win": "baixa", "wdo": "alta", "di": "baixa" }
+      "hora": "06h02",
+      "url": "https://www.infomoney.com.br/mercados/pacote-fiscal-lula-banco-brasil-galipolo-agenda-11112026/",
+      "por_que": "Segundo fonte do governo, o ajuste negociado seria de 0,5% do PIB em 2027 (R$ 70 bi a R$ 80 bi) e de 1,75% do PIB em quatro anos; sinal de esforço fiscal tende a aliviar o prêmio no DI longo e favorecer o real, mas faltam detalhes oficiais.",
+      "impacto": {
+        "win": "alta",
+        "wdo": "baixa",
+        "di": "baixa"
+      }
     },
     {
-      "titulo": "Futuros de NY mistos antes do CPI; Waller diz se inclinar por alta de juros em dezembro",
-      "fonte": "Yahoo Finance",
-      "hora": "07h00",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
-      "por_que": "Segundo o Yahoo Finance, Waller (Fed) consideraria até 0,50 p.p. se a inflação de outubro vier forte; juros americanos mais altos fortalecem o dólar global e pressionam o DI.",
-      "impacto": { "wdo": "alta", "di": "alta" }
+      "titulo": "Ibovespa cai 0,52% e dólar sobe 1,47%, a R$ 5,586, com apostas de alta de juros nos EUA",
+      "fonte": "InvestNews",
+      "hora": "ter 19h18",
+      "url": "https://investnews.com.br/investimentos/ibovespa-fecha-queda-10-11-2026/",
+      "por_que": "O CPI de +0,4% m/m e a fala de Waller (Fed) sobre alta de até 0,5 p.p. levaram o DXY a +0,59%; o dólar no maior nível desde julho de 2025 é o ponto de partida do WDO hoje.",
+      "impacto": {
+        "wdo": "alta",
+        "di": "alta"
+      }
     },
     {
-      "titulo": "Petrobras divulga balanço do 3º trimestre nesta terça à noite",
-      "fonte": "InfoMoney",
-      "hora": "07h10",
-      "url": "https://www.infomoney.com.br/mercados/petrobras-petr4-divulga-balanco-nesta-terca-o-que-esperar-do-3o-tri/",
-      "por_que": "Produção recorde de 3,097 milhões de boed no trimestre, mas há dúvida sobre o tamanho dos dividendos; segundo o BTG, a política de preços exigiria reajuste de cerca de 28% no diesel, risco para a inflação.",
+      "titulo": "Ata do Copom indica Selic restritiva por mais tempo, com inflação projetada acima da meta",
+      "fonte": "TradeMap",
+      "hora": "ter 18h28",
+      "url": "https://trademap.com.br/noticias/news-8582148",
+      "por_que": "Com a Selic mantida em 13,75% e projeções do BC de 5,6% para 2026 e 4,7% para 2027, acima da meta de 3%, a ata reduz o espaço para cortes e sustenta os vértices curtos do DI.",
+      "impacto": {
+        "di": "alta"
+      }
+    },
+    {
+      "titulo": "Veterans Day: bolsas americanas abrem, mas sem Treasuries; PMS e produção regional saem às 9h",
+      "fonte": "Money Times",
+      "hora": "06h30",
+      "url": "https://www.moneytimes.com.br/agenda-economica-veja-os-indicadores-que-podem-movimentar-bolsa-e-dolar-nesta-quarta-feira-mlem/",
+      "por_que": "Sem negociação de Treasuries, falta uma referência de juros americanos e a liquidez global fica menor, o que pode ampliar movimentos do WDO.",
       "impacto": {}
-    },
-    {
-      "titulo": "Ibovespa sobe 2,22% e recupera 172 mil pontos com exterior; dólar fecha a R$ 5,50",
-      "fonte": "CNN Brasil",
-      "hora": "seg 18h20",
-      "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-9-novembro-2026/",
-      "por_que": "A alta veio de ajuste de posições em Vale e bancos e de Wall Street forte; analistas citam a indefinição fiscal e a piora das expectativas de inflação como limite para a recuperação.",
-      "impacto": { "win": "alta" }
     }
   ],
   "fontes": [
-    { "titulo": "InfoMoney — Ibovespa fecha em alta, com exterior e Vale; dólar tem leve queda a R$ 5,50", "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-09112026/" },
-    { "titulo": "InfoMoney — Mini-índice (WINZ26): inflação dos EUA pode mexer com juros e Bolsa", "url": "https://www.infomoney.com.br/mercados/mini-indice-hoje-futuro-ibovespa-winz26-10112026/" },
-    { "titulo": "InfoMoney — Minidólar (WDOZ26): CPI dos EUA e ata do Copom ditam o rumo do dia", "url": "https://www.infomoney.com.br/mercados/minidolar-hoje-futuro-do-dolar-wdoz26-10112026/" },
-    { "titulo": "Money Times — Investidores aguardam ata do Copom em dia de inflação nos EUA", "url": "https://www.moneytimes.com.br/investidores-aguardam-ata-do-copom-em-dia-de-inflacao-nos-eua-ibovespa-em-dolar-sobe-nesta-terca-feira-10-rens/" },
-    { "titulo": "InfoMoney — Ata do Copom, inflação nos EUA, balanço da Petrobras e mais destaques", "url": "https://www.infomoney.com.br/mercados/ata-copom-inflacao-eua-balanco-petrobras-agenda-10112026/" },
-    { "titulo": "Reuters (via Investing.com) — China's trade surplus soars past $1 trillion, October exports jump 35.2%", "url": "https://www.investing.com/news/economy-news/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-5013969" }
+    {
+      "titulo": "InfoMoney — Pacote fiscal de Lula, Banco do Brasil, Galípolo e mais destaques desta quarta-feira",
+      "url": "https://www.infomoney.com.br/mercados/pacote-fiscal-lula-banco-brasil-galipolo-agenda-11112026/"
+    },
+    {
+      "titulo": "Folhapress (via O Tempo) — Lucro da Petrobras cresce 21,5% no terceiro trimestre, para R$ 39,7 bilhões",
+      "url": "https://www.otempo.com.br/economia/2026/11/10/lucro-da-petrobras-cresce-21-5-no-terceiro-trimestre-para-r-39-7-bilhoes"
+    },
+    {
+      "titulo": "InvestNews — Ibovespa fecha em queda com apostas de alta de juros nos EUA; Magazine Luiza sobe 10%",
+      "url": "https://investnews.com.br/investimentos/ibovespa-fecha-queda-10-11-2026/"
+    },
+    {
+      "titulo": "TradeMap — Ibovespa fecha em queda com ata do Copom e inflação dos EUA no radar",
+      "url": "https://trademap.com.br/noticias/news-8582148"
+    },
+    {
+      "titulo": "Money Times — Agenda econômica: indicadores que podem movimentar bolsa e dólar nesta quarta-feira (11)",
+      "url": "https://www.moneytimes.com.br/agenda-economica-veja-os-indicadores-que-podem-movimentar-bolsa-e-dolar-nesta-quarta-feira-mlem/"
+    }
   ]
 }
