@@ -913,6 +913,17 @@
         if (fresco || !lxDadosCache[nome]) lxDadosCache[nome] = fetch(`data/${nome}.json?t=${Math.floor(Date.now() / 6e4)}`, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
         return lxDadosCache[nome].then(d => d == null ? null : typeof structuredClone === 'function' ? structuredClone(d) : JSON.parse(JSON.stringify(d)));
     };
+    /* Primeira tela instantânea para quem volta: mostra na hora a última cópia guardada no aparelho (cache do service worker)
+       e redesenha quando o dado novo chega, só se ele mudou. Cada dado já traz o próprio horário, então a cópia antiga
+       nunca se passa por atual. render(dados, doCache) precisa poder ser chamado duas vezes. */
+    LX.dadosVivos = function (nome, render) {
+        let mostrado = null;
+        const pinta = (d, velho) => { const s = JSON.stringify(d); if (s === mostrado) return; mostrado = s; try { render(d, velho); } catch (err) { console.error(err); } };
+        const rede = LX.dados(nome);
+        if ('caches' in window) caches.match(new URL(`data/${nome}.json`, location.href).href).then(r => r ? r.json() : null)
+            .then(c => { if (c && mostrado === null) pinta(c, true); }).catch(() => { });
+        return rede.then(d => { if (d) pinta(d, false); else if (mostrado === null) render(null, false); });
+    };
     LX.track = function (nome, p) { try { if (LX.config.ga && window.gtag) gtag('event', nome, Object.assign({ pagina: document.body.dataset.page || '' }, p || {})); } catch (_) { } };
     function rastrear() {
         const usadas = new Set();

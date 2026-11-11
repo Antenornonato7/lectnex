@@ -33,14 +33,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261111d">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261111e">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261111d">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261111e">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -410,7 +410,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261111d"></script>
+    <script src="assets/lectnex-core.js?v=20261111e"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -512,15 +512,15 @@
                 const u = usd ? caixa('DÓLAR À VISTA', 'R$ ' + LX.num(usd.bid, 3), usd.pct, 'AwesomeAPI · ao vivo, a cada 30 s') : '';
                 $('ag-mkt').innerHTML = (i + u) || '<span class="col-span-2 text-sm text-slate-500">Carregando cotações…</span>';
             }
-            LX.dados('cotacoes').then(c => { ibov = c && (c.itens || []).find(x => x.ticker === 'IBOV'); cotEm = c && c.atualizado_em; mkt(); }).catch(() => { });
+            LX.dadosVivos('cotacoes', c => { ibov = c && (c.itens || []).find(x => x.ticker === 'IBOV'); cotEm = c && c.atualizado_em; mkt(); }).catch(() => { });
             document.addEventListener('lx:fx', mkt); mkt();
 
             /* 2. O QUE IMPORTA HOJE: três pontos do cenário escrito antes da abertura (data/leitura.json) */
-            LX.dados('leitura').then(l => {
+            LX.dadosVivos('leitura', l => {
                 if (!l || !Array.isArray(l.resumo) || !l.resumo.length) { $('ag-imp').innerHTML = '<li class="text-sm text-slate-500">A Leitura do Dia sai às 7h40 nos dias de pregão.</li>'; return; }
                 const hora = l.gerado_em ? hhmm(l.gerado_em) : '', dia = LX.parseISO(l.data);
                 if (l.tipo === 'sem-pregao') { $('ag-imp-when').textContent = 'EDIÇÃO SEM PREGÃO'; $('ag-imp-nota').textContent = 'Bolsa fechada: resumo do que aconteceu e do que esperar.'; }
-                else if (l.data === hojeISO) $('ag-imp-when').textContent = 'CENÁRIO DE ABERTURA' + (hora ? ' · ' + hora : '');
+                else if (l.data === hojeISO) { $('ag-imp-when').textContent = 'CENÁRIO DE ABERTURA' + (hora ? ' · ' + hora : ''); $('ag-imp-nota').textContent = 'Escrito antes da abertura. Não é atualizado durante o dia.'; }
                 else { $('ag-imp-when').textContent = 'CENÁRIO DE ' + LX.brShort(dia); $('ag-imp-nota').textContent = `Cenário de ${LX.weekday(dia)}, ${LX.brShort(dia)}. A edição de hoje sai às 7h40.`; }
                 let pts;
                 if (Array.isArray(l.pontos) && l.pontos.length) pts = l.pontos.slice(0, 3).map(p => [p.titulo || '', p.texto || '']);
@@ -557,8 +557,9 @@
                 lk.href = e.tipo === 'copom' ? 'copom.html' : '#rx-wrap';
                 lk.textContent = e.tipo === 'copom' ? 'Página especial do Copom →' : 'Como o mercado costuma reagir ↓';
             }
-            LX.dados('calendario').then(c => {
-                eventos = (c && c.eventos) || []; ev(); setInterval(ev, 30000);
+            let evTimer = null;
+            LX.dadosVivos('calendario', c => {
+                eventos = (c && c.eventos) || []; ev(); if (!evTimer) evTimer = setInterval(ev, 30000);
                 const hoje = eventos.filter(e => e.data === hojeISO);
                 const sp = hoje.filter(e => e.surpresa && /^(acima|abaixo)$/.test(e.surpresa.direcao) && e.resultado);
                 const pend = hoje.filter(e => (e.importancia || 1) >= 2 && !e.resultado && e.hora).length;
@@ -648,7 +649,7 @@
         })();
 
         /* ---------- Faixa B3 ---------- */
-        LX.dados('cotacoes').then(d => {
+        LX.dadosVivos('cotacoes', d => {
             if (!d || !Array.isArray(d.itens) || !d.itens.length) { document.getElementById('b3-tape').classList.add('hidden'); return; }
             const chip = x => {
                 const p = x.var_pct, cls = p == null ? 'text-slate-500' : p > 0 ? 'text-emerald-600 dark:text-emerald-400' : p < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500';
@@ -934,6 +935,6 @@
     })();
     </script>
     <script src="assets/lectnex-pregao.js?v=20261111b" defer></script>
-    <script src="assets/lectnex-painel.js?v=20261111d" defer></script>
+    <script src="assets/lectnex-painel.js?v=20261111e" defer></script>
 </body>
 </html>
