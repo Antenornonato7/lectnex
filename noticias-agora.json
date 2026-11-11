@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T15:08-03:00",
+  "atualizado_em": "2026-11-11T15:11-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -239,11 +239,15 @@
     ],
     [
      "14:50",
-     172294.0
+     172308.0
     ],
     [
-     "14:53",
-     172296.0
+     "14:55",
+     172440.0
+    ],
+    [
+     "14:56",
+     172425.0
     ]
    ]
   },
@@ -544,11 +548,15 @@
     ],
     [
      "15:05",
-     5.559
+     5.558
     ],
     [
-     "15:08",
-     5.5586
+     "15:10",
+     5.5581
+    ],
+    [
+     "15:11",
+     5.5565
     ]
    ]
   },
@@ -1116,7 +1124,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.01,
     "dolar30": -0.01
    },
    {
@@ -1131,7 +1139,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.01,
     "dolar30": -0.01
    },
    {
@@ -1995,7 +2003,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T15:08-03:00",
+ "atualizado_em": "2026-11-11T15:11-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2096,21 +2104,10 @@
    ]
   },
   {
-   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-   "publicado": "2026-11-11T13:49-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras perde força",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbUkxQmpaVFhqeFNXQ1l1Z1RicnJEaDU0czZRQlZjdWZ0Z2IyR0w2TTBpTGVPRHZDdE5vWk03dTlBZG1nSGN0N1hYX1RCZExRZHN3Y2FFZlY1UGVsSTZwT2x6Mi1WdS1SeHBucjlZTHVKZXE5Y3Y3TGZhel81Y1YtblctUm5fNnMyNURFWGNkdFdSd2ZHamd3NUFtNDhLWUoySDhyZFFlcFZBeUZBenhBZ2lKc2o1endkbHRtLTJ3OF8yVk82dEc0Q19ROUx1N1JadGVxOTEyOXZiNy0wUE1GQnVn0gHnAUFVX3lxTE05SmVpZzc1VlpkYk50T2JaS0NlTkFRWXMwT3FUTlJTXzc1Q21vQTB1b2EweDdXeVdSQVp0T3N6OWdrdVJ1V1FKQUxuazBGMnhZaHlDSUJuQzhVamtrMUU3em1reUFNSTNQbkJ0VmJiMks4WkN3bUxZUzJlTjdwTFJubW00cUVEZjExMnpuNzlUZGdHVzR3LUdiYjRNUFd0MFRsbFFlS3pwRDhsdHJpZlk3VWtnVzZ0NGJCNXl5UDU4elpOVkM1SFlRSVRvYVBlUHdJTGk2b0VacDNQaURWVzZqTTNqY0VObw?oc=5",
-   "publicado": "2026-11-11T13:37-03:00",
+   "publicado": "2026-11-11T13:55-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -2120,6 +2117,17 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+   "publicado": "2026-11-11T13:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Taesa (TAEE11): vendidos entram fortes antes de resultados, mas tiro pode sair pela culatra; entenda",
