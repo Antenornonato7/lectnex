@@ -19,7 +19,7 @@ def anterior():
 
 
 def corpo(d):
-    TH = {'bullish': '🟢 comprador', 'neutro': '⚪ neutro', 'bearish': '🔴 vendedor'}
+    TH = {'bullish': '🟢 viés de alta', 'neutro': '⚪ neutro', 'bearish': '🔴 viés de baixa'}
     imp = {'alta': '▲', 'baixa': '▼', 'neutro': '●'}
     L = []
     if d.get('tipo') == 'sem-pregao':
@@ -30,7 +30,7 @@ def corpo(d):
         L += ['**Edição sem pregão** · próximo pregão: ' + dt, '', pp.get('o_que_esperar', ''), '']
     else:
         t = d.get('termometro') or {}
-        L += ['**Termômetro do dia**', '']
+        L += ['**Viés do modelo na abertura** (experimental, não é recomendação)', '']
         for k, nome in (('win', 'WIN (mini índice)'), ('wdo', 'WDO (mini dólar)')):
             if t.get(k):
                 L.append(f"- **{nome}:** {TH.get(t[k].get('leitura'), t[k].get('leitura', ''))} — {t[k].get('motivo', '')}")

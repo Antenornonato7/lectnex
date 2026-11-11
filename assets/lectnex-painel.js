@@ -2,7 +2,7 @@
    Tudo salvo só neste navegador (localStorage), sem login. */
 (function () {
     const KEY = 'lectnex-painel-v1', $ = id => document.getElementById(id);
-    const SECOES = [['leitura', 'Leitura do Dia'], ['noticias', 'Calendário e notícias'], ['placar-term', 'Placar do termômetro'], ['mapa', 'Mapa da bolsa'], ['agenda', 'Vencimentos e câmbio']];
+    const SECOES = [['leitura', 'Leitura do Dia'], ['indicadores', 'Juros, inflação e câmbio'], ['noticias', 'Calendário e notícias'], ['placar-term', 'Placar do viés do modelo'], ['mapa', 'Mapa da bolsa'], ['agenda', 'Vencimentos e câmbio']];
     const ler = () => Object.assign({ alertaAcoes: false }, window.lxPainel ? window.lxPainel() : { foco: 'ambos', acoes: [], ocultas: [] });
     const salvar = p => { try { localStorage.setItem(KEY, JSON.stringify(p)); } catch (_) { } document.dispatchEvent(new CustomEvent('lx:painel', { detail: p })); aplicar(); };
     let mapa = [];
