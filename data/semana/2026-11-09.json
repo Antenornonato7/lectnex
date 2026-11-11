@@ -139,13 +139,27 @@
    "data": "2026-11-11",
    "hora": "09h",
    "pais": "BR",
-   "evento": "Pesquisa Mensal de Serviços — PMS (set, IBGE)",
+   "evento": "Pesquisa Mensal de Serviços — PMS (set, m/m, IBGE)",
    "importancia": 2,
+   "anterior": "−0,1%",
    "impacto": {
     "di": "volatil"
    },
-   "nota": "Serviços pesam na inflação subjacente; a agenda do InfoMoney indica −0,2% m/m.",
+   "nota": "Serviços pesam na inflação subjacente; a agenda do InfoMoney indica −0,2% m/m (sem fonte de consenso).",
    "tipo": "pms-brasil"
+  },
+  {
+   "data": "2026-11-11",
+   "hora": "14h15",
+   "pais": "BR",
+   "evento": "Galípolo (BC) no Fórum de Investimentos da Bradesco Asset",
+   "importancia": 2,
+   "impacto": {
+    "di": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Primeira fala depois da ata que indicou Selic restritiva por mais tempo.",
+   "tipo": "fala-bcb"
   },
   {
    "data": "2026-11-12",
@@ -158,7 +172,7 @@
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "Atividade britânica; mexe com a libra e o dólar global.",
+   "nota": "Atividade britânica; mexe com a libra e o dólar global. Projeções divergem entre fontes.",
    "tipo": "pib-reino-unido"
   },
   {
@@ -171,8 +185,9 @@
     "di": "volatil",
     "wdo": "volatil"
    },
-   "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Projeções citadas pelo InfoMoney: Bradesco 0,29% e Itaú 0,21% m/m; ASA (BPMoney): 0,23%.",
-   "tipo": "ipca"
+   "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Setembro: 0,82% m/m e 4,58% em 12 meses. Projeções de casas citadas pelo InfoMoney vão de 0,21% (Daycoval) a 0,27% (Warren).",
+   "tipo": "ipca",
+   "anterior": "0,82%"
   },
   {
    "data": "2026-11-12",
@@ -219,8 +234,9 @@
    "data": "2026-11-13",
    "hora": "09h",
    "pais": "BR",
-   "evento": "Vendas no varejo (set, PMC/IBGE)",
+   "evento": "Vendas no varejo restrito (set, m/m, PMC/IBGE)",
    "importancia": 2,
+   "anterior": "0,1%",
    "impacto": {
     "di": "volatil",
     "win": "volatil"
@@ -242,6 +258,20 @@
    },
    "nota": "Pressão de custos que pode chegar ao consumidor.",
    "tipo": "ppi-eua"
+  },
+  {
+   "data": "2026-11-15",
+   "hora": "20h50",
+   "pais": "JP",
+   "evento": "PIB do Japão (3º tri, preliminar, anualizado)",
+   "importancia": 1,
+   "anterior": "1,4%",
+   "consenso": "0,3%",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Consenso da pesquisa Reuters; mexe com o iene e o dólar global.",
+   "tipo": "pib-japao"
   },
   {
    "data": "2026-11-15",

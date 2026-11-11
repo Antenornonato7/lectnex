@@ -12,6 +12,87 @@
    },
    "nota": "Expectativas de Selic, IPCA e câmbio depois do IPCA de outubro.",
    "tipo": "focus"
+  },
+  {
+   "data": "2026-11-16",
+   "hora": "09h",
+   "pais": "BR",
+   "evento": "IBC-Br (set, m/m, BCB)",
+   "importancia": 2,
+   "anterior": "0,3%",
+   "impacto": {
+    "di": "volatil",
+    "win": "volatil"
+   },
+   "nota": "Prévia do PIB calculada pelo BC; atividade fraca reforça a desaceleração.",
+   "tipo": "ibc-br"
+  },
+  {
+   "data": "2026-11-17",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Vendas no varejo (out, m/m)",
+   "importancia": 2,
+   "anterior": "0,8%",
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Consumo americano forte reforça a aposta de alta de juros do Fed em dezembro.",
+   "tipo": "varejo-eua"
+  },
+  {
+   "data": "2026-11-17",
+   "hora": "11h15",
+   "pais": "US",
+   "evento": "Produção industrial (out, m/m)",
+   "importancia": 1,
+   "anterior": "0,7%",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Atividade da indústria americana (Fed).",
+   "tipo": "producao-industrial-eua"
+  },
+  {
+   "data": "2026-11-18",
+   "hora": "04h",
+   "pais": "UK",
+   "evento": "CPI do Reino Unido (out, a/a)",
+   "importancia": 1,
+   "anterior": "3,5%",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Inflação britânica; mexe com a libra e o dólar global.",
+   "tipo": "cpi-reino-unido"
+  },
+  {
+   "data": "2026-11-18",
+   "hora": "07h",
+   "pais": "EU",
+   "evento": "Inflação da zona do euro — HICP final (out, a/a)",
+   "importancia": 1,
+   "anterior": "4,0%",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Anterior = estimativa preliminar (flash) de outubro.",
+   "tipo": "inflacao-zona-euro"
+  },
+  {
+   "data": "2026-11-18",
+   "hora": "16h",
+   "pais": "US",
+   "evento": "Ata do FOMC (reunião de 27–28/out)",
+   "importancia": 2,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil",
+    "win": "volatil"
+   },
+   "nota": "Sinais sobre a reunião de dezembro, com o mercado precificando alta de juros.",
+   "tipo": "ata-fomc"
   }
  ]
 }
