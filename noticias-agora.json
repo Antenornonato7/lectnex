@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T13:29-03:00",
+  "atualizado_em": "2026-11-11T13:31-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -159,11 +159,15 @@
     ],
     [
      "13:10",
-     172473.0
+     172417.0
     ],
     [
-     "13:14",
-     172444.0
+     "13:15",
+     172405.0
+    ],
+    [
+     "13:16",
+     172463.0
     ]
    ]
   },
@@ -384,10 +388,14 @@
     ],
     [
      "13:25",
-     5.5631
+     5.5636
     ],
     [
-     "13:29",
+     "13:30",
+     5.5629
+    ],
+    [
+     "13:31",
      5.563
     ]
    ]
@@ -827,7 +835,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.07,
     "dolar30": -0.07
    },
    {
@@ -1619,7 +1627,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T13:29-03:00",
+ "atualizado_em": "2026-11-11T13:31-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1629,8 +1637,7 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
@@ -1664,6 +1671,19 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alta-de-investimentos-da-petrobras-preocupa-mercado-e-acoes-caem.shtml",
    "publicado": "2026-11-11T13:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal, balanços e exterior; PETR4 cai",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcmZXZEdGdEZTNVZJQ2tEeWljMmhoUFhMOEVOSGt5VldZTXZhVVVfREttOWttdjRfZ1I4TUl4NWJ0LWdTSTZwVnJqTDE0R1hDV2ZlWGtOT0xMMDU3Sk5idXZLNktacUlIallZWWdRMVZsUFhHOTdZNkNSME84SzhGQzVrVnJOaXRwZE81VGwyZw?oc=5",
+   "publicado": "2026-11-11T12:50-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -1762,17 +1782,6 @@
    ]
   },
   {
-   "titulo": "Dólar no exterior sobe ao maior nível desde março de 2025 com apostas em alta de juros nos EUA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNa1BMNl9NRWF4T2cwZ1ducUhuc0hEbERMSFpQb1NyRjBpVDhQRm5DOEsyYWpuUUtHY1Y1NFNQLS0wZnc4R2wtT0FWNXR0TGdRbEJaOWo0WHlDNjhBTWx0MG1LZHBDLUJtcXc4ZG1qanhmMDdOTDV0XzdiRVBQZHBvdmV1TVdKU1dEUlc0cWlHdG96U0ozS0RGaGg0WlF0dk5pOGVTR1JGRldEaUZfNUdqWThhdFRfRzNHVlVNMld3bmhTSUpoUW15OUtOMm1zNUp0V19qUDR1R2VEdHNkM3hNNkRSd9IB8gFBVV95cUxOdkNiTVlzYzJrc29kRUxfQmUtWEFSWENYT1lTZlJBZDZZNUY4dngyU0ZuT1BSMm1IM01POFRLY1E3aWtEN0pIc2hzY09Mdl9IUjIyR2RaeDJSb2pkczJWMVhTVmJBS0IwbmtfdXdVdWxucDJYc1hKOFRaZ1lPWUZ3WTBUWWZ5TkRxOE9SY1FveFZwOTF0ZFZjSjR2RTNEUGtoTU9YQ3EwRjZHdVVaTXRtUTJjdXZHZFl4Z3UtRGUtNW84c0VPSlBfQThRNm5NZ1BmbTZyQ1U2NmpGOUdSSnFvMUxLbnV5ZjNWc0JqaHp2aG1qdw?oc=5",
-   "publicado": "2026-11-11T11:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
@@ -1801,19 +1810,6 @@
    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVDZIRjVZRG90TEpUaWdKNWp4a2tVOHN3bDFvcDZXY3VrbWlTSTRGUnAwR1ZBbTFyNk01S01GWHVjdlp2T0xmenVDYWVDc3Ruc1R1STNHcl9ISUdkaWJxX0RzY0ZfSGNUemJiZWVoRVl2RmlpWEdZT2VxNzJWTGl3Sm9KRFJ0bEZjUjc1Sm1zbjJKNkZQLVA2MENWS3BCcFJPSkVsS3F0S0tIVjlBRzBMbXp2OGxleHhrakI00gHAAUFVX3lxTE54RjVzSEY0emlVZFppc1hBd3NPREVHeEdzY3EyWjhnTnFBUXotcmJ5ZlhWUlAweXc0dmxyRTNtYlJ3el9GTmJWOVNmelBUS215RHNBVFU0SHpoVjNtcFZ6al90NjJUX3ZkNVZxWkNMd2xzdG95QVc5dlZSbWwxQUQtRjh6bHgxY0FUR1cyYzlITjE3UzdrRVk3X2owZWF1RkFaQ0N6ZmNGNlJDb0xpS25nc1BxQ2tITXVrT0tZTVcydA?oc=5",
    "publicado": "2026-11-11T10:56-03:00",
    "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal, balanços e exterior; PETR4 cai 3%",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcmZXZEdGdEZTNVZJQ2tEeWljMmhoUFhMOEVOSGt5VldZTXZhVVVfREttOWttdjRfZ1I4TUl4NWJ0LWdTSTZwVnJqTDE0R1hDV2ZlWGtOT0xMMDU3Sk5idXZLNktacUlIallZWWdRMVZsUFhHOTdZNkNSME84SzhGQzVrVnJOaXRwZE81VGwyZw?oc=5",
-   "publicado": "2026-11-11T10:55-03:00",
-   "impacto": "medio",
    "ativos": [
     "WIN"
    ],
