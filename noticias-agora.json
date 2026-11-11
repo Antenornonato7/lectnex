@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T14:13-03:00",
+  "atualizado_em": "2026-11-11T14:15-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -195,11 +195,11 @@
     ],
     [
      "13:55",
-     172502.0
+     172500.0
     ],
     [
-     "13:58",
-     172551.0
+     "14:00",
+     172470.0
     ]
    ]
   },
@@ -456,10 +456,10 @@
     ],
     [
      "14:10",
-     5.5615
+     5.561
     ],
     [
-     "14:13",
+     "14:15",
      5.5615
     ]
    ]
@@ -989,6 +989,19 @@
     "tickers": [
      "SBSP3"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:10",
+    "titulo": "Quem é Ricardo Magro, alvo de mandado de prisão por suspeita de fraude fiscal",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/quem-e-ricardo-magro-alvo-de-mandado-de-prisao-por-suspeita-de-fraude-fiscal.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1746,6 +1759,17 @@
    "tickers": [
     "SBSP3"
    ]
+  },
+  {
+   "titulo": "Quem é Ricardo Magro, alvo de mandado de prisão por suspeita de fraude fiscal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/quem-e-ricardo-magro-alvo-de-mandado-de-prisao-por-suspeita-de-fraude-fiscal.shtml",
+   "publicado": "2026-11-11T14:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1775,7 +1799,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T14:13-03:00",
+ "atualizado_em": "2026-11-11T14:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1788,6 +1812,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Quem é Ricardo Magro, alvo de mandado de prisão por suspeita de fraude fiscal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/quem-e-ricardo-magro-alvo-de-mandado-de-prisao-por-suspeita-de-fraude-fiscal.shtml",
+   "publicado": "2026-11-11T14:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Sabesp muda conta de água para se adequar à reforma tributária; veja o que muda",
    "fonte": "Folha",
@@ -1979,18 +2014,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Zelenskyy warns Ukraine is 'not real estate' as experts say a Russia peace deal remains elusive",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/11/ukraine-russia-peace-talks-zelenskyy-putin.html",
-   "publicado": "2026-11-11T11:13-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
