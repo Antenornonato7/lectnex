@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T11:39-03:00",
+  "atualizado_em": "2026-11-11T12:09-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -71,11 +71,35 @@
     ],
     [
      "11:20",
-     172562.0
+     172689.0
     ],
     [
-     "11:24",
-     172689.0
+     "11:25",
+     172615.0
+    ],
+    [
+     "11:30",
+     172362.0
+    ],
+    [
+     "11:35",
+     172442.0
+    ],
+    [
+     "11:40",
+     172598.0
+    ],
+    [
+     "11:45",
+     172678.0
+    ],
+    [
+     "11:50",
+     172650.0
+    ],
+    [
+     "11:54",
+     172631.0
     ]
    ]
   },
@@ -211,8 +235,32 @@
      5.5616
     ],
     [
-     "11:39",
-     5.5606
+     "11:40",
+     5.5616
+    ],
+    [
+     "11:45",
+     5.5631
+    ],
+    [
+     "11:50",
+     5.5577
+    ],
+    [
+     "11:55",
+     5.5591
+    ],
+    [
+     "12:00",
+     5.5595
+    ],
+    [
+     "12:05",
+     5.5532
+    ],
+    [
+     "12:09",
+     5.5544
     ]
    ]
   },
@@ -463,7 +511,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": -0.06,
+    "ibov30": 0.01,
     "dolar30": 0.12
    },
    {
@@ -478,7 +526,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": 0.01,
+    "ibov30": -0.03,
     "dolar30": 0.12
    },
    {
@@ -493,7 +541,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.11,
     "dolar30": 0.04
    },
    {
@@ -509,8 +557,8 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.02,
+    "dolar30": 0.06
    },
    {
     "hora": "11:27",
@@ -523,8 +571,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.01,
+    "dolar30": -0.12
    },
    {
     "hora": "11:30",
@@ -536,6 +584,48 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.09
+   },
+   {
+    "hora": "11:46",
+    "titulo": "Taxas dos DIs recuam com mercado avaliando plano fiscal do governo",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNXJSRWZ3Z2JJZWpucXlKZXhYLTVIQ3NlUVBRWHRSM2E1X0xGY0dwcU8xU0RrRkh0cWhiY2E2OWcxTDN2MFNtc3p6bUhaTXRZQlVkS3hKVjhsOWtFZ3BlWlNSOU5aQ3NsMVZtYV9yOS1qSEVjZHVGNEQ0bzRzbGpmNlFSTU45bGJXSVQ2NFVKRUxVR0VjVDk2TnRzZmdpaExYLWYwNGdaZTnSAa4BQVVfeXFMT3BiNzFxY2pxY3BvZFd5NTFNaFVoTTUzYzBEdHNPdFlfQmFUcFdnUGhEeWFQZXpoS0Y0NlJORjdlTUxIeGFyTE5VRDJ3TjRvYjhwdXhDUGpkQlhveDZlbHYxVUllWk0yc2IwdjdpZk5SQVJnbDJKLXZXRWFXRlBiUS11b2ZSbE9xeUlqNWZZdDZKYkJzRzBhdnJKcHoxN1VYZDhwVGZyNksxNHlSRWxR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:51",
+    "titulo": "Amazon e Google podem ganhar bilhões de dólares com IPO da Anthropic",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/amazon-e-google-podem-ganhar-bilhoes-de-dolares-com-ipo-da-anthropic.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:52",
+    "titulo": "Petrobras (PETR4) pagará menos dividendos? Ações lideram quedas do Ibovespa após aumento do capex no 3T26",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbHByRmtsaVlNNlpRazBLV2pFWjBSSkFBdGVHd1RDcEt2ZWlnZnRPMHZyMlV2YmxJbE84MDB2UlQ5eVVRYUYyWG15R3JWd0RQT0FUWWZ1SGhYUEZkUmhkbVFmcHRrWEFMOExoVkwtZkdoUmluajlSTHBHMFVNSGZOQXlCanB6QnkwYmJpZHpBRXdibkNaRWoyV3hXRE8zektURExqRUVjN092NTktQ1RVTXJWZC0wbnlaTExSUHBPazZoamhaS0Q1UFl6Skh3N3hXM2JpSk5LTDg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1116,6 +1206,42 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Taxas dos DIs recuam com mercado avaliando plano fiscal do governo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNXJSRWZ3Z2JJZWpucXlKZXhYLTVIQ3NlUVBRWHRSM2E1X0xGY0dwcU8xU0RrRkh0cWhiY2E2OWcxTDN2MFNtc3p6bUhaTXRZQlVkS3hKVjhsOWtFZ3BlWlNSOU5aQ3NsMVZtYV9yOS1qSEVjZHVGNEQ0bzRzbGpmNlFSTU45bGJXSVQ2NFVKRUxVR0VjVDk2TnRzZmdpaExYLWYwNGdaZTnSAa4BQVVfeXFMT3BiNzFxY2pxY3BvZFd5NTFNaFVoTTUzYzBEdHNPdFlfQmFUcFdnUGhEeWFQZXpoS0Y0NlJORjdlTUxIeGFyTE5VRDJ3TjRvYjhwdXhDUGpkQlhveDZlbHYxVUllWk0yc2IwdjdpZk5SQVJnbDJKLXZXRWFXRlBiUS11b2ZSbE9xeUlqNWZZdDZKYkJzRzBhdnJKcHoxN1VYZDhwVGZyNksxNHlSRWxR?oc=5",
+   "publicado": "2026-11-11T11:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Amazon e Google podem ganhar bilhões de dólares com IPO da Anthropic",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/amazon-e-google-podem-ganhar-bilhoes-de-dolares-com-ipo-da-anthropic.shtml",
+   "publicado": "2026-11-11T11:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras (PETR4) pagará menos dividendos? Ações lideram quedas do Ibovespa após aumento do capex no 3T26",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbHByRmtsaVlNNlpRazBLV2pFWjBSSkFBdGVHd1RDcEt2ZWlnZnRPMHZyMlV2YmxJbE84MDB2UlQ5eVVRYUYyWG15R3JWd0RQT0FUWWZ1SGhYUEZkUmhkbVFmcHRrWEFMOExoVkwtZkdoUmluajlSTHBHMFVNSGZOQXlCanB6QnkwYmJpZHpBRXdibkNaRWoyV3hXRE8zektURExqRUVjN092NTktQ1RVTXJWZC0wbnlaTExSUHBPazZoamhaS0Q1UFl6Skh3N3hXM2JpSk5LTDg?oc=5",
+   "publicado": "2026-11-11T11:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1145,7 +1271,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T11:39-03:00",
+ "atualizado_em": "2026-11-11T12:09-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1160,6 +1286,42 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Petrobras (PETR4) pagará menos dividendos? Ações lideram quedas do Ibovespa após aumento do capex no 3T26",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbHByRmtsaVlNNlpRazBLV2pFWjBSSkFBdGVHd1RDcEt2ZWlnZnRPMHZyMlV2YmxJbE84MDB2UlQ5eVVRYUYyWG15R3JWd0RQT0FUWWZ1SGhYUEZkUmhkbVFmcHRrWEFMOExoVkwtZkdoUmluajlSTHBHMFVNSGZOQXlCanB6QnkwYmJpZHpBRXdibkNaRWoyV3hXRE8zektURExqRUVjN092NTktQ1RVTXJWZC0wbnlaTExSUHBPazZoamhaS0Q1UFl6Skh3N3hXM2JpSk5LTDg?oc=5",
+   "publicado": "2026-11-11T11:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Amazon e Google podem ganhar bilhões de dólares com IPO da Anthropic",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/amazon-e-google-podem-ganhar-bilhoes-de-dolares-com-ipo-da-anthropic.shtml",
+   "publicado": "2026-11-11T11:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas dos DIs recuam com mercado avaliando plano fiscal do governo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNXJSRWZ3Z2JJZWpucXlKZXhYLTVIQ3NlUVBRWHRSM2E1X0xGY0dwcU8xU0RrRkh0cWhiY2E2OWcxTDN2MFNtc3p6bUhaTXRZQlVkS3hKVjhsOWtFZ3BlWlNSOU5aQ3NsMVZtYV9yOS1qSEVjZHVGNEQ0bzRzbGpmNlFSTU45bGJXSVQ2NFVKRUxVR0VjVDk2TnRzZmdpaExYLWYwNGdaZTnSAa4BQVVfeXFMT3BiNzFxY2pxY3BvZFd5NTFNaFVoTTUzYzBEdHNPdFlfQmFUcFdnUGhEeWFQZXpoS0Y0NlJORjdlTUxIeGFyTE5VRDJ3TjRvYjhwdXhDUGpkQlhveDZlbHYxVUllWk0yc2IwdjdpZk5SQVJnbDJKLXZXRWFXRlBiUS11b2ZSbE9xeUlqNWZZdDZKYkJzRzBhdnJKcHoxN1VYZDhwVGZyNksxNHlSRWxR?oc=5",
+   "publicado": "2026-11-11T11:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar no exterior sobe ao maior nível desde março de 2025 com apostas em alta de juros nos EUA",
    "fonte": "Valor",
@@ -1193,6 +1355,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa ganha força com promessa de ajuste fiscal de Lula, apesar da queda de Petrobras",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc21PaGVjTnBMdUFBSlJHWFFQeGFZV2UyS21HMFRwSjRUeGxzMDVFbDZ4VVo3TTNSOF96NjJzZmx3cEczcjNhbWZVQnIxYlRmS1N2UVMyNXlieVZ3R1VLZldGQXBrajY3VEJZdURlVGdUOEJlZGtIU2toelBiV0UyazNpSW0tb1VLbURWRS1PSlNyMDB1TTN5UTB2UlRJQXlMbHdMMC14MGFyUmo1RUhqcWFpOHhEdzdiQWFSMTBtQQ?oc=5",
+   "publicado": "2026-11-11T11:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Zelenskyy warns Ukraine is 'not real estate' as experts say a Russia peace deal remains elusive",
@@ -1261,20 +1437,6 @@
    ]
   },
   {
-   "titulo": "Ibovespa avança de olho em ajuste fiscal e balanços, apesar de queda da Petrobras",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ1d6dy1zMkNNbHo0UXR5bXdhbzB6MV9qanNUUXNwTHFJWU9kX3dCcHFCLXRKVHdlV1RNNE9Yd0VkazYtVTJGOVNCRmxnYXZVbl9YeFZSU3VvZWlmTGN6aUlKakdDVjVyU2FNYmZ5M2xVMkxfdXhsWlpsRGxwVUtFbk1MLU5KVFJJWjdUelVBSTkybjA2MUdTa0QxS05HaHlJOVAtZHEtSWZQMjFFbm04cXo5SWtFSnU1ZGtMTmd4QllTbGRVQTZTT0JyVmRQbmdjZ25rMtIB4wFBVV95cUxOOFlTQ19vZDFhSTBEN1RzNzV3T3RvUTE2eG5OUlBkWDQ3Mmc1aEE4bEl3UGd2Q1hmaWgxeGFfWWNXdTR1MFcxQXkzZk14R1k1ZEdwQjJlNzZONDlVbGdqc084Vm5iUVF5WnhCUHd1WjQyQmNXWC10MUY3aUdNeXBaZUdVaXQ1N1lUNDY5bm80X0FLdGxyWXJjX3ZoRFBzMUFsSWNfS0dUUmptN3BSQlhyUFNaaE53V0taZ2djX3hILWFKWm9WZk5zQzRwTnRPNkxUWkRjNlphQUdNT0lQRHdMc21Lcw?oc=5",
-   "publicado": "2026-11-11T10:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Ibovespa sobe com alta do petróleo e ajuste fiscal; 5 coisas para saber antes de investir hoje (11)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeVBPN2h6bEQzQ2Nac3JSdGxqY3BsZkxvWWJhZ21aQXBXZzRWWlREWjFaX3RXOFZGMVhsdTFaRnZqQmtodmxTeVA2T3VJSHVVZFJEZ216NXZqSHpsOHNDR0Y1WmJZRVZSWm5fd0VMQ3VZMUxKbk8wTkVCOUZiVWJMeG9Jc3NobHY4LW0zVVU3Q1JRYklFV2VVaU41QWNLR0FJb2ZjdllCMUFTTXpteF9nZG1HeFRNcDNvb2dqdWo0MzdCMUdWSE4xZ0xseE8?oc=5",
@@ -1284,30 +1446,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nissan cuts sales forecast again on China woes as CEO outlines plan to fight back",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/11/nissan-sales-forecast-earnings-china.html",
-   "publicado": "2026-11-11T10:18-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Escândalo com CEO da Nvidia expõe influência de Singapura para enviar chips à China",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/escandalo-com-ceo-da-nvidia-expoe-influencia-de-singapura-para-enviar-chips-a-china.shtml",
-   "publicado": "2026-11-11T09:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -1333,19 +1471,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Casas Bahia (BHIA3) nega decisão sobre fechamento de lojas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSDVXM1NLeW40Z2d3N05ma2Rub2FVazBvSGlSN0VnOXUyNVNvQlJQckdCZ09kbHk5cElSTU1NaENJdy1COVVrajA5eGVkbzNyZFliRTdYTTVLUHFDQ2tqRmdvMVlfQW9hampVNHpRS3dlcUN6RHR0cXR3cHFEbkRSYnJZeXg5MlNTZGgzNnJzd2d2ZE0tWHRqOERtZ9IBoAFBVV95cUxNZ2RQTVhmWXN5blRhNXdkcVQ0VU05MU1TN0hSVHVhSkZfYWlrMEp0T0FFN2ltc1dWd0Vlb3Y2N3dfcHpqM3J2dzB0aUhHLUpCcHM3eGlHR0tRUkFLbnVFZ2FGUzNqZmZIazNEa1VCLVRhbDdvb0ZaN0FIVDV3Z1lNeXQyVi1jOVgwLU5GVTF3TDloNWRKVkROYVl5cFBxRlp6?oc=5",
-   "publicado": "2026-11-11T09:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BHIA3"
-   ]
   },
   {
    "titulo": "Petrobras nega ter pedido para ANP adiar revisão tarifária do gás",
