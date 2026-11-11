@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T11:15-03:00",
+  "atualizado_em": "2026-11-11T11:18-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -55,7 +55,11 @@
     ],
     [
      "11:00",
-     172647.0
+     172481.0
+    ],
+    [
+     "11:03",
+     172379.0
     ]
    ]
   },
@@ -172,7 +176,11 @@
     ],
     [
      "11:15",
-     5.5593
+     5.5589
+    ],
+    [
+     "11:18",
+     5.5557
     ]
    ]
   },
@@ -969,7 +977,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T11:15-03:00",
+ "atualizado_em": "2026-11-11T11:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -983,6 +991,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+   "publicado": "2026-11-11T11:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Zelenskyy warns Ukraine is 'not real estate' as experts say a Russia peace deal remains elusive",
    "fonte": "CNBC",
@@ -1007,17 +1026,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-   "publicado": "2026-11-11T10:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Ibovespa avança de olho em ajuste fiscal e balanços, apesar de queda da Petrobras",
@@ -1121,6 +1129,19 @@
    "tickers": []
   },
   {
+   "titulo": "Casas Bahia (BHIA3) nega decisão sobre fechamento de lojas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSDVXM1NLeW40Z2d3N05ma2Rub2FVazBvSGlSN0VnOXUyNVNvQlJQckdCZ09kbHk5cElSTU1NaENJdy1COVVrajA5eGVkbzNyZFliRTdYTTVLUHFDQ2tqRmdvMVlfQW9hampVNHpRS3dlcUN6RHR0cXR3cHFEbkRSYnJZeXg5MlNTZGgzNnJzd2d2ZE0tWHRqOERtZ9IBoAFBVV95cUxNZ2RQTVhmWXN5blRhNXdkcVQ0VU05MU1TN0hSVHVhSkZfYWlrMEp0T0FFN2ltc1dWd0Vlb3Y2N3dfcHpqM3J2dzB0aUhHLUpCcHM3eGlHR0tRUkFLbnVFZ2FGUzNqZmZIazNEa1VCLVRhbDdvb0ZaN0FIVDV3Z1lNeXQyVi1jOVgwLU5GVTF3TDloNWRKVkROYVl5cFBxRlp6?oc=5",
+   "publicado": "2026-11-11T09:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BHIA3"
+   ]
+  },
+  {
    "titulo": "Banco Central da China promete intensificar o apoio político à economia",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcnJJMkhBbnJmVGxzR3VZbnlIZHlHRHo5aUZvUWRHUFRnVERpcGRZYlBhM0t5V2tmMWFpT3NlZ2tRRnNDZkpmbEFqUTVsV1UzMWJUUUxXZ2V4d2FiTTZXblU3UUFNQ1VFOU9jVjNpanJOQXlkQ0xVXy1ER09QR1VDMXdTNVVPNTVkNk51ZkRwdGN2RkZ5LXJsT3dPNXNXN1lHajNnZ3Z4UjhnbGp2SkpUc3BOMnpNVzVYaFZRSmtHWkpzUHloUkk4NDBn?oc=5",
@@ -1158,17 +1179,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Juros futuros recuam com plano de ajuste fiscal em dia de feriado nos EUA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeVAtUDJpRHA3SkZJZW9lN1VCSkM2WHlybVhhS0lxUFBHd2hmSzFhV3Y5cGFsUy1jMXlXNkxnMUJyNE1qYkRUQjUwSWh6MExoUmRwN3R5Z25nZWtVWDVTeXRxNGJYNnpXUmVKXzVBQktxTkFXdHBkeld3VFV0bG53RDZaeHJ0Rkw2RVFSbmtjSzJKZ1dVZWtYQU1HbGNGZHhzMFpYUk40cXU5Z1hOdmlyRHVXdUpqMFdXQVdkRU81Z1p5MmJmUHVJdkI3d9IB2gFBVV95cUxQSlZpWm5WRTV6YjR5TjBLVnV3MWU4ZWc2M3MweERaV01ubjc1cTMwZWFKNHphbHh5dTNRZ0dpUVBnUlpaUW5pUTAwdjA0ekRYTmZrSkpZaXBTSWQ5ZDRfYVhkVTIxWmxCUWRUeFBPYWxWTXZtdjhjam5ZUnJZOE5FbnFOMms2ekd0ZFpLOG5jOGN6TjdCWmZ6S256LURBdmI1NWRmbEtqM3U4cnp3R3k0Q084X3MxbC1zMzlKTWNDR1Q2bWZsc09wMndkcnVFYW5wM09pMEJ0N01XQQ?oc=5",
-   "publicado": "2026-11-11T09:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "EWZ sobe mais de 1% após sinalizações fiscais do governo; ações da Petrobras recuam 2% em NY",
