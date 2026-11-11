@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T11:55-03:00",
+  "atualizado_em": "2026-11-11T11:58-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -87,7 +87,11 @@
     ],
     [
      "11:40",
-     172660.0
+     172667.0
+    ],
+    [
+     "11:43",
+     172696.0
     ]
    ]
   },
@@ -236,7 +240,11 @@
     ],
     [
      "11:55",
-     5.5601
+     5.5582
+    ],
+    [
+     "11:58",
+     5.5583
     ]
    ]
   },
@@ -533,7 +541,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.03,
     "dolar30": 0.06
    },
    {
@@ -548,7 +556,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.11
+    "dolar30": -0.14
    },
    {
     "hora": "11:30",
@@ -561,7 +569,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.07
+    "dolar30": -0.11
    },
    {
     "hora": "11:46",
@@ -1247,7 +1255,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T11:55-03:00",
+ "atualizado_em": "2026-11-11T11:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1387,19 +1395,6 @@
    "tickers": []
   },
   {
-   "titulo": "Petrobras: ações caem 3% após proventos abaixo e capex acima ofuscarem balanço",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVDZIRjVZRG90TEpUaWdKNWp4a2tVOHN3bDFvcDZXY3VrbWlTSTRGUnAwR1ZBbTFyNk01S01GWHVjdlp2T0xmenVDYWVDc3Ruc1R1STNHcl9ISUdkaWJxX0RzY0ZfSGNUemJiZWVoRVl2RmlpWEdZT2VxNzJWTGl3Sm9KRFJ0bEZjUjc1Sm1zbjJKNkZQLVA2MENWS3BCcFJPSkVsS3F0S0tIVjlBRzBMbXp2OGxleHhrakI00gHAAUFVX3lxTE54RjVzSEY0emlVZFppc1hBd3NPREVHeEdzY3EyWjhnTnFBUXotcmJ5ZlhWUlAweXc0dmxyRTNtYlJ3el9GTmJWOVNmelBUS215RHNBVFU0SHpoVjNtcFZ6al90NjJUX3ZkNVZxWkNMd2xzdG95QVc5dlZSbWwxQUQtRjh6bHgxY0FUR1cyYzlITjE3UzdrRVk3X2owZWF1RkFaQ0N6ZmNGNlJDb0xpS25nc1BxQ2tITXVrT0tZTVcydA?oc=5",
-   "publicado": "2026-11-11T10:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal, balanços e exterior; PETR4 cai 3%",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcmZXZEdGdEZTNVZJQ2tEeWljMmhoUFhMOEVOSGt5VldZTXZhVVVfREttOWttdjRfZ1I4TUl4NWJ0LWdTSTZwVnJqTDE0R1hDV2ZlWGtOT0xMMDU3Sk5idXZLNktacUlIallZWWdRMVZsUFhHOTdZNkNSME84SzhGQzVrVnJOaXRwZE81VGwyZw?oc=5",
@@ -1422,6 +1417,18 @@
     "WIN",
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nissan cuts sales forecast again on China woes as CEO outlines plan to fight back",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/nissan-sales-forecast-earnings-china.html",
+   "publicado": "2026-11-11T10:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
