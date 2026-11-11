@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-11",
-  "atualizado_em": "2026-11-11T13:08-03:00",
+  "atualizado_em": "2026-11-11T13:10-03:00",
   "ibov": {
    "anterior": 171336.98,
    "pontos": [
@@ -143,11 +143,11 @@
     ],
     [
      "12:50",
-     172549.0
+     172519.0
     ],
     [
-     "12:53",
-     172494.0
+     "12:55",
+     172466.0
     ]
    ]
   },
@@ -352,11 +352,11 @@
     ],
     [
      "13:05",
-     5.5648
+     5.5643
     ],
     [
-     "13:08",
-     5.566
+     "13:10",
+     5.5651
     ]
    ]
   },
@@ -783,7 +783,7 @@
      "BRKM5"
     ],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": -0.01
    },
    {
     "hora": "12:50",
@@ -795,6 +795,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:07",
+    "titulo": "Alta de investimentos da Petrobras preocupa mercado, e ações caem",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alta-de-investimentos-da-petrobras-preocupa-mercado-e-acoes-caem.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1474,6 +1489,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Alta de investimentos da Petrobras preocupa mercado, e ações caem",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alta-de-investimentos-da-petrobras-preocupa-mercado-e-acoes-caem.shtml",
+   "publicado": "2026-11-11T13:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1503,7 +1531,7 @@
    "em": "2026-11-11T13:48:16+00:00"
   }
  ],
- "atualizado_em": "2026-11-11T13:08-03:00",
+ "atualizado_em": "2026-11-11T13:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1518,6 +1546,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Alta de investimentos da Petrobras preocupa mercado, e ações caem",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alta-de-investimentos-da-petrobras-preocupa-mercado-e-acoes-caem.shtml",
+   "publicado": "2026-11-11T13:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Taxas dos DIs recuam com mercado avaliando plano fiscal do governo",
    "fonte": "CNN Brasil",
