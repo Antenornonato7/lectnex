@@ -1,1 +1,206 @@
-{}
+{
+ "data": "2026-11-12",
+ "tipo": "ipca",
+ "curto": "IPCA",
+ "evento": "IPCA de outubro (IBGE)",
+ "hora": "09h",
+ "pais": "BR",
+ "consenso": null,
+ "anterior": "0,82%",
+ "passadas": [
+  {
+   "data": "2026-10-09",
+   "evento": "IPCA (set)",
+   "resultado": "0,82%",
+   "consenso": "0,76%",
+   "surpresa": "acima",
+   "win": 0.472,
+   "wdo": 0.102,
+   "abertura": true,
+   "janela": "30min"
+  },
+  {
+   "data": "2026-09-11",
+   "evento": "IPCA (ago)",
+   "resultado": "−0,32%",
+   "consenso": "−0,29%",
+   "surpresa": "abaixo",
+   "win": 0.154,
+   "wdo": 0.027,
+   "abertura": true,
+   "janela": "30min"
+  },
+  {
+   "data": "2026-08-11",
+   "evento": "IPCA (jul)",
+   "resultado": "0,07%",
+   "consenso": "0,03%",
+   "surpresa": "acima",
+   "win": -0.05,
+   "wdo": -0.047,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-07-10",
+   "evento": "IPCA (jun)",
+   "resultado": "0,16%",
+   "consenso": "0,31%",
+   "surpresa": "abaixo",
+   "win": -0.039,
+   "wdo": -0.209,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-06-12",
+   "evento": "IPCA (mai)",
+   "resultado": "0,58%",
+   "consenso": "0,53%",
+   "surpresa": "acima",
+   "win": 0.0,
+   "wdo": -0.174,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-05-12",
+   "evento": "IPCA (abr)",
+   "resultado": "0,67%",
+   "consenso": "0,70%",
+   "surpresa": "abaixo",
+   "win": -0.021,
+   "wdo": -0.153,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-04-10",
+   "evento": "IPCA (mar)",
+   "resultado": "0,88%",
+   "consenso": "0,77%",
+   "surpresa": "acima",
+   "win": -0.123,
+   "wdo": -0.737,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-03-12",
+   "evento": "IPCA (fev)",
+   "resultado": "0,70%",
+   "consenso": "0,65%",
+   "surpresa": "acima",
+   "win": 0.107,
+   "wdo": 0.089,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-02-10",
+   "evento": "IPCA (jan)",
+   "resultado": "0,33%",
+   "consenso": "0,32%",
+   "surpresa": "em linha",
+   "win": 0.104,
+   "wdo": 0.167,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2026-01-09",
+   "evento": "IPCA (dez)",
+   "resultado": "0,33%",
+   "consenso": "0,32%",
+   "surpresa": "em linha",
+   "win": 0.237,
+   "wdo": -0.165,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2025-12-10",
+   "evento": "IPCA (nov)",
+   "resultado": "0,18%",
+   "consenso": "0,19%",
+   "surpresa": "em linha",
+   "win": -0.398,
+   "wdo": 0.07,
+   "abertura": true,
+   "janela": "1h"
+  },
+  {
+   "data": "2025-11-11",
+   "evento": "IPCA (out)",
+   "resultado": "0,09%",
+   "consenso": "0,16%",
+   "surpresa": "abaixo",
+   "win": 0.15,
+   "wdo": 0.008,
+   "abertura": true,
+   "janela": "1h"
+  }
+ ],
+ "divulgacoes": {
+  "win": {
+   "n": 24,
+   "sobe": 46,
+   "mediana": -0.0,
+   "movimento": 0.12
+  },
+  "wdo": {
+   "n": 24,
+   "sobe": 33,
+   "mediana": -0.11,
+   "movimento": 0.26
+  },
+  "desde": "2024-11-08"
+ },
+ "por_surpresa": {
+  "acima": {
+   "win": {
+    "n": 8,
+    "sobe": 38,
+    "mediana": -0.0,
+    "movimento": 0.11
+   },
+   "wdo": {
+    "n": 8,
+    "sobe": 38,
+    "mediana": -0.05,
+    "movimento": 0.28
+   }
+  },
+  "abaixo": {
+   "win": {
+    "n": 8,
+    "sobe": 50,
+    "mediana": 0.01,
+    "movimento": 0.08
+   },
+   "wdo": {
+    "n": 8,
+    "sobe": 25,
+    "mediana": -0.11,
+    "movimento": 0.17
+   }
+  }
+ },
+ "manchetes": {
+  "tema": "inflacao",
+  "nome": "Inflação",
+  "win": {
+   "n": 29,
+   "sobe": 34,
+   "mediana": -0.05,
+   "movimento": 0.27
+  },
+  "wdo": {
+   "n": 43,
+   "sobe": 70,
+   "mediana": 0.06,
+   "movimento": 0.12
+  }
+ },
+ "gerado_em": "2026-11-12T07:20-03:00"
+}
