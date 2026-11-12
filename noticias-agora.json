@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T12:53-03:00",
+  "atualizado_em": "2026-11-12T12:55-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -131,11 +131,11 @@
     ],
     [
      "12:35",
-     170894.0
+     170963.0
     ],
     [
-     "12:38",
-     170941.0
+     "12:40",
+     171014.0
     ]
    ]
   },
@@ -328,11 +328,11 @@
     ],
     [
      "12:50",
-     5.6279
+     5.6301
     ],
     [
-     "12:53",
-     5.6274
+     "12:55",
+     5.6303
     ]
    ]
   },
@@ -811,7 +811,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.1,
+    "ibov30": 0.15,
     "dolar30": 0.12
    },
    {
@@ -826,7 +826,7 @@
     "tickers": [
      "HAPV3"
     ],
-    "ibov30": null,
+    "ibov30": 0.09,
     "dolar30": 0.13
    },
    {
@@ -858,7 +858,7 @@
      "BPAC11"
     ],
     "ibov30": null,
-    "dolar30": 0.12
+    "dolar30": 0.16
    },
    {
     "hora": "12:29",
@@ -872,7 +872,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.2
    }
   ]
  },
@@ -1659,7 +1659,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T12:53-03:00",
+ "atualizado_em": "2026-11-12T12:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1711,10 +1711,10 @@
    "tickers": []
   },
   {
-   "titulo": "O que explica a disparada de Azzas 2154 (AZZA3) após o balanço do 3T25? Citi e BTG respondem",
+   "titulo": "O que explica a disparada de Azzas 2154 (AZZA3) após o balanço do 3T26? Citi e BTG respondem",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNzF3dk9YOTRGV0wxV0xEZzk1S2JCeE9wN19qYmJNeEtqakp2WTB2WWVnZzc5V3V4b0U0X3ZCMFFEVWhqVkgycWlwSWlTSjdTME5wOUVkTFhldlZxcTJ6RnVPZGlBSmxybnBHelpoeFVaQ0RkaUFEZEhDeURGdVVSTHFJelFFc1Zoa0ZrYldxR1NfTHFyQmRCclN1VG55TVgxN3FhSVZTVEdOVDh3UEpSMlhkV285VGhEMDhjOEpiNVVMY0E?oc=5",
-   "publicado": "2026-11-12T12:24-03:00",
+   "publicado": "2026-11-12T12:25-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -1751,17 +1751,6 @@
    ]
   },
   {
-   "titulo": "Wall Street opera sem direção única após renúncia do CEO da Nvidia e tensões entre EUA e Irã",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41LV9UY2hDcmIweTFRaXhQRkJNdWlLb0dsNk5iN2RMUWRzZTlvVkhkdE1FZHRwd1FqNkRRcXpRTWJZanVSZmp5MFVRek1GSXZPb3hsZkRNUFVJTkZJWkhNTENzcw?oc=5",
-   "publicado": "2026-11-12T12:12-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
@@ -1792,6 +1781,17 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Inflação de alimentos é a maior em quatro anos, com destaque para alta de tomate e cebola",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-de-alimentos-e-a-maior-em-quatro-anos-com-destaque-para-alta-de-tomate-e-cebola.shtml",
+   "publicado": "2026-11-12T11:40-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
