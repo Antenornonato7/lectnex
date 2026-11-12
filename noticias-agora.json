@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T12:03-03:00",
+  "atualizado_em": "2026-11-12T12:05-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -91,11 +91,11 @@
     ],
     [
      "11:45",
-     170387.0
+     170209.0
     ],
     [
-     "11:48",
-     170337.0
+     "11:50",
+     170358.0
     ]
    ]
   },
@@ -248,11 +248,11 @@
     ],
     [
      "12:00",
-     5.6159
+     5.6203
     ],
     [
-     "12:03",
-     5.6163
+     "12:05",
+     5.6189
     ]
    ]
   },
@@ -620,7 +620,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.25,
+    "ibov30": -0.35,
     "dolar30": 0.2
    },
    {
@@ -633,7 +633,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.32,
     "dolar30": 0.23
    },
    {
@@ -648,7 +648,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.32,
     "dolar30": 0.23
    },
    {
@@ -663,7 +663,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.32,
     "dolar30": 0.23
    },
    {
@@ -692,7 +692,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.18
    },
    {
     "hora": "11:44",
@@ -1419,7 +1419,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T12:03-03:00",
+ "atualizado_em": "2026-11-12T12:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1543,6 +1543,18 @@
    "tickers": []
   },
   {
+   "titulo": "Tempo real: Ibovespa cai após IPCA de outubro e com ajuste fiscal no radar",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KS0JSVjdFaWdXNk1fRml1amlFd3Jhd2V1bHFfR3pHaElQaUpCYnVvSGRuY0U3RU1nVW9VWmlMZnB1UHFSLVBNS1lNZ1VEOERVd1NrcWZQTDdTUkc2NC1TOGJ3b3VMdw?oc=5",
+   "publicado": "2026-11-12T11:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "BBAS3 afunda quase 8% e acende outro alerta: por que os analistas ainda veem risco nas ações do Banco do Brasil",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUk1DVlVVZENfR3g3WUdyd1U0cVpTamRjRXZqb2ZwT3FJM29OT3BhTDkwNjQyUUF3UWF6TVRVZ29uRUdqU1JiNlExUzJUTWhqN0RhVHd2X2l1UTRKZlFlbVhkMFJrOTRUMEhMek1oOF9oa0hHY1FwaERvMFgzZGVvVFpHUXhWaEZtWXE2R2syS0p1QmNJUndZVllPMzZZN01rNDRPVGFwM29adDRJWlpvU3dEbV9RcmRfOXRwM2NfbnpkYjlUVFlYdFJhQTRwRGFuV0lJVkhtdjlpam5rUWc?oc=5",
@@ -1600,18 +1612,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa cai após IPCA de outubro e com ajuste fiscal no radar",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KS0JSVjdFaWdXNk1fRml1amlFd3Jhd2V1bHFfR3pHaElQaUpCYnVvSGRuY0U3RU1nVW9VWmlMZnB1UHFSLVBNS1lNZ1VEOERVd1NrcWZQTDdTUkc2NC1TOGJ3b3VMdw?oc=5",
-   "publicado": "2026-11-12T10:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
    ],
    "tickers": []
   },
