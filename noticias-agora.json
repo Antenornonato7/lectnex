@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T10:03-03:00",
+  "atualizado_em": "2026-11-12T10:05-03:00",
   "dolar": {
    "anterior": 5.5829,
    "pontos": [
@@ -55,11 +55,11 @@
     ],
     [
      "10:00",
-     5.5987
+     5.6042
     ],
     [
-     "10:03",
-     5.5967
+     "10:05",
+     5.6002
     ]
    ]
   },
@@ -650,7 +650,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T10:03-03:00",
+ "atualizado_em": "2026-11-12T10:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -787,18 +787,6 @@
    "tickers": []
   },
   {
-   "titulo": "Jensen Huang affair in DC: Resignation calls and moves to tighten Nvidia China exports",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-congress-resign-ai-chips.html",
-   "publicado": "2026-11-12T09:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Verde teme “exotismos”, corta bolsa e aposta em dólar: “Não há boas notícias”",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObHpGckdPMGhXa2hwQldWeUdfeXpaaWl5MnZRT3h6SXdHLWtVX3JUZUstRUpKeXN4X0I2Zlp0c2QzWlNkSzZiR2drWm9hV0tjVkRpUEUyT0ExaEMzNVlGalBXaklPNkF4QlR5S2xTVlZjdVpvTmstY3ZwTFBZLTFaZkU5R3ZJMUR1ZUprOEc1dlpBNjhYdllLMDgtSGpBZEZhTDJEMHEyelNVOXlHSEVpOTR6bXV6QdIBuwFBVV95cUxOeW5YR2h1MWxSVHQ4cWNHa2NlZl9xekpGeGhDMjFzTkxlOWpJWlViLXNGZnNmVDYtUnFNVlI3Tk9GdldDckxuWjJXZ0lwVHdwa1NLRjlPU0xZSXRaaTFWaTlxZzhsUXJyM1VfV3Fvbm5TTEVaX1hZMlJGWXBtRHZmQ0dBaE5DbC1jc2pzZGZwZTVaZWNhT0lvdGhIdVVNRGI0c0swMHRnZWU4OTk3ZV9ZODJMaHNzaWpobmxZ?oc=5",
@@ -808,6 +796,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras compra os 70% restantes da Logum Logística, incluindo fatia da Raízen, por R$ 620 milhões",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/negocios/petrobras-compra-restantes-logum-logistica-parte-raizen-npr/",
+   "publicado": "2026-11-12T08:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Banco Central decreta liquidação da Cooperagre por 'violações graves' às regras do sistema financeiro",
