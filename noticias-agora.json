@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:33-03:00",
+  "atualizado_em": "2026-11-12T15:35-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -259,11 +259,11 @@
     ],
     [
      "15:15",
-     170840.0
+     170928.0
     ],
     [
-     "15:18",
-     170803.0
+     "15:20",
+     170974.0
     ]
    ]
   },
@@ -584,11 +584,11 @@
     ],
     [
      "15:30",
-     5.6492
+     5.6477
     ],
     [
-     "15:33",
-     5.6471
+     "15:35",
+     5.6462
     ]
    ]
   },
@@ -1322,7 +1322,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.1,
+    "ibov30": -0.05,
     "dolar30": 0.03
    },
    {
@@ -1336,7 +1336,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.11,
+    "ibov30": -0.06,
     "dolar30": 0.01
    },
    {
@@ -1351,7 +1351,7 @@
     "tickers": [
      "AZUL4"
     ],
-    "ibov30": -0.13,
+    "ibov30": -0.03,
     "dolar30": 0.03
    },
    {
@@ -1380,7 +1380,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.03
    },
    {
     "hora": "15:12",
@@ -2432,7 +2432,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:33-03:00",
+ "atualizado_em": "2026-11-12T15:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2445,6 +2445,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+   "publicado": "2026-11-12T15:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
    "fonte": "CNBC",
@@ -2482,18 +2494,6 @@
    "tickers": [
     "BBSE3"
    ]
-  },
-  {
-   "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T14:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "IA pode provocar forte turbulência no mercado de trabalho dos EUA, diz Fed",
