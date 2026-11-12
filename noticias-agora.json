@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T13:08-03:00",
+  "atualizado_em": "2026-11-12T13:10-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -143,11 +143,11 @@
     ],
     [
      "12:50",
-     171081.0
+     171248.0
     ],
     [
-     "12:53",
-     171122.0
+     "12:55",
+     171195.0
     ]
    ]
   },
@@ -352,11 +352,11 @@
     ],
     [
      "13:05",
-     5.6211
+     5.6218
     ],
     [
-     "13:08",
-     5.6234
+     "13:10",
+     5.6249
     ]
    ]
   },
@@ -894,7 +894,7 @@
      "AZZA3",
      "BPAC11"
     ],
-    "ibov30": 0.12,
+    "ibov30": 0.22,
     "dolar30": 0.16
    },
    {
@@ -908,7 +908,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": 0.2
    }
   ]
@@ -1707,7 +1707,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T13:08-03:00",
+ "atualizado_em": "2026-11-12T13:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1799,18 +1799,6 @@
    ]
   },
   {
-   "titulo": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T12:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Bain Capital’s Head of Real Estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
@@ -1867,6 +1855,17 @@
    "tickers": [
     "BBAS3"
    ]
+  },
+  {
+   "titulo": "Ibovespa perde força com pressão da queda do BB, incertezas fiscais e cautela com techs",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRUFCcG9hbGhDN0lFQUNfcFZIdW43dGxoS052RUZVbHlSRnlSS3BCZmpNN1dwQ2JJSDlJZkRJZFBIQWhydGpxdkRVZHRUekVKQmh0Q3Z5MjQybC1rT3daanl1VHBFMngzM0Y2djlQWnpFNjZsYnhCaTMtTjN5ZjFPbjBJSlZPeVBjY2VQb2lrckllYlpvb25COTV6MTc0UkZhNzFOXzVfb1BWVWhoS241eHM0U2NtaGZyVEtwbld3?oc=5",
+   "publicado": "2026-11-12T11:24-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Dólar sobe e Ibovespa cai em meio à insatisfação do mercado com pacote fiscal",
