@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:30-03:00",
+  "atualizado_em": "2026-11-12T15:33-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -259,7 +259,11 @@
     ],
     [
      "15:15",
-     170841.0
+     170840.0
+    ],
+    [
+     "15:18",
+     170803.0
     ]
    ]
   },
@@ -580,7 +584,11 @@
     ],
     [
      "15:30",
-     5.6485
+     5.6492
+    ],
+    [
+     "15:33",
+     5.6471
     ]
    ]
   },
@@ -1343,6 +1351,20 @@
     "tickers": [
      "AZUL4"
     ],
+    "ibov30": -0.13,
+    "dolar30": 0.03
+   },
+   {
+    "hora": "14:57",
+    "titulo": "IA pode provocar forte turbulência no mercado de trabalho dos EUA, diz Fed",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWFRMUldSeEQzRW82aHV4eWVPalQ0MzhCQURkMjk5dE5tT28zbVM3bzZMY3MzeTB0ZEd1ZFhyNW5yT3pTeWtKekZGRmNGSG9halhkOW9KbG9RRURwRVZvbXpEVTZBVF8zRzZFTGl4bjBHSjFXMUgweWJVMVdaLW16U2FLNA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": 0.03
    },
@@ -1358,7 +1380,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.06
    },
    {
     "hora": "15:12",
@@ -1408,18 +1430,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Perspectiva de Fed mais restritivo fortalece dólar em âmbito global",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVVpaNVA4WUlHMl9BMzFUMExLMTBvYi1teFd2eDRwc0RabkFpUTNzb3k0VDRoa1h4SmJna2xHclFlYVQxNFpwU3B5TUI2N285QW9NbzRyZHhkMHY0NllDeTdKYkRib0JyTnk0OHZ0YU8wV0d5a0FMcU9HMXNscTh2b3lHNXU3NEQyZ29FOTExZjFveHRjU1F5dm5Ma0R6RU83QlhPSXJvdk5fRk42UlE4dDZ2bjlIZTV3U0NoZlExLWEwd0xIVWhhTVF2QnZESGpjUEHSAdIBQVVfeXFMT1VaWjVQOFlJRzJfQTMxVDBMSzEwb2ItbXhXdng0cHNEWm5BaVEzc295NFQ0aGtYeEpiZ2tsR3JRZWFUMTRacFNweU1CNjdvOUFvTW80cmR4ZDB2NDZZQ3k3SmJEYm9Cck55NDh2dGFPMFdHeWtBTHFPRzFzbHE4dm95RzV1NzREMmdvRTkxMWYxb3h0Y1NReXZuTGtEekVPN0JYT0lyb3ZOX0ZONlJROHQ2dm45SGU1d1NDaGZRMS1hMHdMSFVoYU1RdkJ2REhqY1BB?oc=5",
-   "publicado": "2026-11-12T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Maior alta do Ibovespa em 2025, Cogna cai 52% em 2026; CEO explica o que mudou",
    "fonte": "Exame",
@@ -2332,6 +2342,18 @@
    ]
   },
   {
+   "titulo": "IA pode provocar forte turbulência no mercado de trabalho dos EUA, diz Fed",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWFRMUldSeEQzRW82aHV4eWVPalQ0MzhCQURkMjk5dE5tT28zbVM3bzZMY3MzeTB0ZEd1ZFhyNW5yT3pTeWtKekZGRmNGSG9halhkOW9KbG9RRURwRVZvbXpEVTZBVF8zRzZFTGl4bjBHSjFXMUgweWJVMVdaLW16U2FLNA?oc=5",
+   "publicado": "2026-11-12T14:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
@@ -2410,7 +2432,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:30-03:00",
+ "atualizado_em": "2026-11-12T15:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2470,6 +2492,18 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "IA pode provocar forte turbulência no mercado de trabalho dos EUA, diz Fed",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWFRMUldSeEQzRW82aHV4eWVPalQ0MzhCQURkMjk5dE5tT28zbVM3bzZMY3MzeTB0ZEd1ZFhyNW5yT3pTeWtKekZGRmNGSG9halhkOW9KbG9RRURwRVZvbXpEVTZBVF8zRzZFTGl4bjBHSjFXMUgweWJVMVdaLW16U2FLNA?oc=5",
+   "publicado": "2026-11-12T14:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2576,18 +2610,6 @@
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNGw2Yk03aTZpamtKdHN3LWFzblZTVDFqQjkwbVNhZFByRnNrTnQycS1BblNkUUVnekNaaVFtZ0I2U3paVFRwdWVrY2Q4RTdtYjRGa3FDTlAxY2RDTDdkTDJmTFZlZzZRb25mQzZvMHF1Y0h5NFFMV054WVVjMWphRHh4NENUNlpmX1JvOEJVMFNqMzVkWEVFUHBFMDNYTTR0VkdYYkphLTl6S3hSeGowYjd30gG3AUFVX3lxTE1WejhSMWFfVXlIRzRyU1dISm15d3J3OEplYmNIZTNFR29malBrV0ZCUmtLNkNEVDJybTYwaTdQclZ0UFVraFQzQThzejZwUXdCTU1ocHhrb3FFaGxoZHFtYmJJSHdWZGl6alA2QmdNOHptQW1IVzVNQlBOR0FPMzZtLUtNQ1FEb1JVWVVWVVVnOHBBOG12ZjR1aldZUTlQaGZNWlRCem1pUHoxMlMwdHRXWThPcWJaMA?oc=5",
    "publicado": "2026-11-12T13:36-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "EUA devem se preparar para “grave” perturbação no mercado de trabalho causada pela IA, diz diretor do Fed",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZmVickN1YVQ3NjhZWGVuMmdtc1FUVlpRQW03SXU0QmdGazB1UGdtbGsxVkRRNjJKdU1fWDJnbENJWEdIQW02bEJGV3lNc0tmSU5tdjdfQXVHYmluaHlMbEdqbFJuWWN5RFVGMUJ3Qy1fYnk3OEdpZkNEY2hVQkdqTnN4Qjl6OUVVMzJiZTRIMHI2djk0eDRNby12ZVlJdW44UXpkdFNNYnJhM1ZsYjZxd0pUU1NqS1ItZk01TU5NY3MtVUh6bWtGZUFCRW9qMUJiMVFIMQ?oc=5",
-   "publicado": "2026-11-12T13:33-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
