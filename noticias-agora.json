@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T10:58-03:00",
+  "atualizado_em": "2026-11-12T11:00-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -39,11 +39,11 @@
     ],
     [
      "10:40",
-     171179.0
+     171117.0
     ],
     [
-     "10:43",
-     171154.0
+     "10:45",
+     170988.0
     ]
    ]
   },
@@ -144,11 +144,11 @@
     ],
     [
      "10:55",
-     5.6028
+     5.6018
     ],
     [
-     "10:58",
-     5.5997
+     "11:00",
+     5.5996
     ]
    ]
   },
@@ -317,7 +317,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.64,
+    "ibov30": 0.6,
     "dolar30": -0.21
    },
    {
@@ -332,7 +332,7 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": 0.64,
+    "ibov30": 0.6,
     "dolar30": -0.21
    },
    {
@@ -345,7 +345,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.3,
+    "ibov30": 0.21,
     "dolar30": -0.11
    },
    {
@@ -361,7 +361,7 @@
      "CXSE3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.18
    },
    {
     "hora": "10:34",
@@ -374,7 +374,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.18
    },
    {
     "hora": "10:34",
@@ -387,7 +387,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.18
    },
    {
     "hora": "10:38",
@@ -413,6 +413,35 @@
     "ativos": [
      "WIN",
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:56",
+    "titulo": "Ultrapar, dona da Ipiranga, tem alta anual de 349% no lucro do 3º trimestre",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468045",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "UGPA3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:59",
+    "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -940,6 +969,31 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ultrapar, dona da Ipiranga, tem alta anual de 349% no lucro do 3º trimestre",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468045",
+   "publicado": "2026-11-12T10:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "UGPA3"
+   ]
+  },
+  {
+   "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+   "publicado": "2026-11-12T10:59-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -969,7 +1023,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T10:58-03:00",
+ "atualizado_em": "2026-11-12T11:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -983,6 +1037,31 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/11/canada-ambassador-trump-tariffs-investments.html",
+   "publicado": "2026-11-12T10:59-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ultrapar, dona da Ipiranga, tem alta anual de 349% no lucro do 3º trimestre",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468045",
+   "publicado": "2026-11-12T10:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "UGPA3"
+   ]
+  },
   {
    "titulo": "Oil prices jump after Trump says no Iran deal needed: 'We've got their Strait'",
    "fonte": "CNBC",
@@ -1115,19 +1194,6 @@
    "tickers": []
   },
   {
-   "titulo": "Petrobras assina aquisição de 100% da Logum por R$620 mi de olho na logística de etanol",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-assina-aquisicao-de-100-da-logum-por-r620-mi-de-olho-na-logistica-de-etanol.shtml",
-   "publicado": "2026-11-12T09:17-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Dólar hoje sobe e se aproxima novamente de R$ 5,60 com pacote fiscal e IPCA no radar",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPemVLNkFlOHhid29adEc1NDlsaHFNUy1WbVBERC1TSHkzQUl6X1VYRlhqa1p1VzQySEZKVWFoSDJpMlhhQW4zN0xUNVhyVGdjUUtIS1NMRl9qVVhCck5PUkJXVGI1cnNWVnZ5bDBlalZBLVdhVHg5am1nalVFR1duYi1pSVFWLXpma0hEVnBEZ19hM2R2enhiWGFzZTHSAaIBQVVfeXFMT3loMTFuN3B6YTc3a1hMR0UwX3pMVjJ4UTc2SXRyZ1ZOZy1PWnZfQkQ2Qm9tT1ZqMjV3d2hlakZDdm1jdVFRSHBtVzc1aUZqUHZXSGVIMEVDdmF2OTRsc0tucmdKNm00SnE1U04xTWJxNEJWWW92dlJOSUpyWUFDVHlJMFMxYW5uMXNLS0N6RGw3UWdMUWhLS1V2bjJhTFljMy1R?oc=5",
@@ -1163,17 +1229,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "IPCA em outubro desacelera e fica em 0,14%, aponta IBGE",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/inflacao-ipca-ibge-outubro-2026/",
-   "publicado": "2026-11-12T09:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
