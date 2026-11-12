@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T13:08-03:00",
+  "atualizado_em": "2026-11-12T13:38-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -143,11 +143,35 @@
     ],
     [
      "12:50",
-     171081.0
+     171248.0
     ],
     [
-     "12:53",
-     171122.0
+     "12:55",
+     171188.0
+    ],
+    [
+     "13:00",
+     171420.0
+    ],
+    [
+     "13:05",
+     171532.0
+    ],
+    [
+     "13:10",
+     171638.0
+    ],
+    [
+     "13:15",
+     171430.0
+    ],
+    [
+     "13:20",
+     171354.0
+    ],
+    [
+     "13:23",
+     171354.0
     ]
    ]
   },
@@ -352,11 +376,35 @@
     ],
     [
      "13:05",
-     5.6211
+     5.6218
     ],
     [
-     "13:08",
+     "13:10",
+     5.6164
+    ],
+    [
+     "13:15",
+     5.6219
+    ],
+    [
+     "13:20",
+     5.6253
+    ],
+    [
+     "13:25",
+     5.6209
+    ],
+    [
+     "13:30",
      5.6234
+    ],
+    [
+     "13:35",
+     5.6238
+    ],
+    [
+     "13:38",
+     5.6254
     ]
    ]
   },
@@ -894,7 +942,7 @@
      "AZZA3",
      "BPAC11"
     ],
-    "ibov30": 0.12,
+    "ibov30": 0.22,
     "dolar30": 0.16
    },
    {
@@ -908,8 +956,36 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": 0.2
+   },
+   {
+    "hora": "13:04",
+    "titulo": "Governo quer tirar subvenção ao diesel da meta fiscal para evitar contenção extra de gastos neste ano",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-quer-tirar-subvencao-ao-diesel-da-meta-fiscal-para-evitar-contencao-extra-de-gastos-neste-ano.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.02
+   },
+   {
+    "hora": "13:25",
+    "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-faz-acordo-para-deter-100-da-transportadora-de-etanol-logum",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1678,6 +1754,30 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Governo quer tirar subvenção ao diesel da meta fiscal para evitar contenção extra de gastos neste ano",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-quer-tirar-subvencao-ao-diesel-da-meta-fiscal-para-evitar-contencao-extra-de-gastos-neste-ano.shtml",
+   "publicado": "2026-11-12T13:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-faz-acordo-para-deter-100-da-transportadora-de-etanol-logum",
+   "publicado": "2026-11-12T13:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1707,7 +1807,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T13:08-03:00",
+ "atualizado_em": "2026-11-12T13:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1715,12 +1815,47 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
+   "publicado": "2026-11-12T13:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-faz-acordo-para-deter-100-da-transportadora-de-etanol-logum",
+   "publicado": "2026-11-12T13:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
+   "publicado": "2026-11-12T13:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "10-year Treasury yield jumps back above 5% as oil gains and more Fed rate hikes expected",
    "fonte": "CNBC",
@@ -1730,6 +1865,17 @@
    "ativos": [
     "WIN",
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo quer tirar subvenção ao diesel da meta fiscal para evitar contenção extra de gastos neste ano",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-quer-tirar-subvencao-ao-diesel-da-meta-fiscal-para-evitar-contencao-extra-de-gastos-neste-ano.shtml",
+   "publicado": "2026-11-12T13:04-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -1771,55 +1917,6 @@
     "AZZA3",
     "BPAC11"
    ]
-  },
-  {
-   "titulo": "Azul reduz prejuízo no 3º trimestre, mas custos mantêm pressão sobre as operações",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/negocios/azul-reduz-prejuizo-no-3-trimestre-mas-custos-mantem-pressao-sobre-as-operacoes/",
-   "publicado": "2026-11-12T12:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AZUL4"
-   ]
-  },
-  {
-   "titulo": "Hapvida (HAPV3): ações disparam 15% mesmo com queda de 68% no lucro do 3º trimestre; o que dizem analistas?",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZkpmMXl0alB6dzMwd1g4MGI0RkRKQ1g4cF9oX1BKcFpTSkVWeHlpWllPQXQ5ZzNwcm1Ea3k3ZHAxU3o4VlVwTDBkQ21BSnRVX3Budjh4RXRhNHliWWhOY21GSFhWWEdLcHVBb0lTSFJsMmVlNW9YYkdoaTJjYlVjMXp1aTFSSGRwV0VIM0dENWVnenQxQndja3hvRnBsYk8teWtFWUFwaG1qMW5wM1lJeVE4TDlvTFNxVmE5emFpRHhFYTk3QjllcC1fcGU2VkwxQXc?oc=5",
-   "publicado": "2026-11-12T12:15-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "HAPV3"
-   ]
-  },
-  {
-   "titulo": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T12:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bain Capital’s Head of Real Estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
-   "publicado": "2026-11-12T12:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Lula não parece convencido a conciliar ajuste fiscal moderado e promessas de campanha, diz Giambiagi",
@@ -1882,18 +1979,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar hoje sobe e bate R$ 5,60 com pacote fiscal e IPCA no radar",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPemVLNkFlOHhid29adEc1NDlsaHFNUy1WbVBERC1TSHkzQUl6X1VYRlhqa1p1VzQySEZKVWFoSDJpMlhhQW4zN0xUNVhyVGdjUUtIS1NMRl9qVVhCck5PUkJXVGI1cnNWVnZ5bDBlalZBLVdhVHg5am1nalVFR1duYi1pSVFWLXpma0hEVnBEZ19hM2R2enhiWGFzZTHSAaIBQVVfeXFMT3loMTFuN3B6YTc3a1hMR0UwX3pMVjJ4UTc2SXRyZ1ZOZy1PWnZfQkQ2Qm9tT1ZqMjV3d2hlakZDdm1jdVFRSHBtVzc1aUZqUHZXSGVIMEVDdmF2OTRsc0tucmdKNm00SnE1U04xTWJxNEJWWW92dlJOSUpyWUFDVHlJMFMxYW5uMXNLS0N6RGw3UWdMUWhLS1V2bjJhTFljMy1R?oc=5",
-   "publicado": "2026-11-12T11:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Tempo real: Ibovespa cai após IPCA de outubro e com ajuste fiscal no radar",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KS0JSVjdFaWdXNk1fRml1amlFd3Jhd2V1bHFfR3pHaElQaUpCYnVvSGRuY0U3RU1nVW9VWmlMZnB1UHFSLVBNS1lNZ1VEOERVd1NrcWZQTDdTUkc2NC1TOGJ3b3VMdw?oc=5",
@@ -1904,6 +1989,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "BBAS3 afunda quase 8% e acende outro alerta: por que os analistas ainda veem risco nas ações do Banco do Brasil",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUk1DVlVVZENfR3g3WUdyd1U0cVpTamRjRXZqb2ZwT3FJM29OT3BhTDkwNjQyUUF3UWF6TVRVZ29uRUdqU1JiNlExUzJUTWhqN0RhVHd2X2l1UTRKZlFlbVhkMFJrOTRUMEhMek1oOF9oa0hHY1FwaERvMFgzZGVvVFpHUXhWaEZtWXE2R2syS0p1QmNJUndZVllPMzZZN01rNDRPVGFwM29adDRJWlpvU3dEbV9RcmRfOXRwM2NfbnpkYjlUVFlYdFJhQTRwRGFuV0lJVkhtdjlpam5rUWc?oc=5",
+   "publicado": "2026-11-12T11:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
   },
   {
    "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
