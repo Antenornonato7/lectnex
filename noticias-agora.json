@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T12:08-03:00",
+  "atualizado_em": "2026-11-12T12:10-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -95,11 +95,11 @@
     ],
     [
      "11:50",
-     170339.0
+     170256.0
     ],
     [
-     "11:53",
-     170337.0
+     "11:55",
+     170220.0
     ]
    ]
   },
@@ -256,11 +256,11 @@
     ],
     [
      "12:05",
-     5.6188
+     5.6233
     ],
     [
-     "12:08",
-     5.6198
+     "12:10",
+     5.6239
     ]
    ]
   },
@@ -641,7 +641,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.34,
+    "ibov30": -0.38,
     "dolar30": 0.23
    },
    {
@@ -656,7 +656,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.34,
+    "ibov30": -0.38,
     "dolar30": 0.23
    },
    {
@@ -671,7 +671,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.34,
+    "ibov30": -0.38,
     "dolar30": 0.23
    },
    {
@@ -686,7 +686,7 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": -0.23,
+    "ibov30": -0.3,
     "dolar30": 0.2
    },
    {
@@ -700,7 +700,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.17
+    "dolar30": 0.25
    },
    {
     "hora": "11:44",
@@ -714,7 +714,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.27
    }
   ]
  },
@@ -1427,7 +1427,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T12:08-03:00",
+ "atualizado_em": "2026-11-12T12:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1442,6 +1442,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+   "publicado": "2026-11-12T12:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "IPCA tem alívio em serviços e núcleos, mas alimentos devem manter Copom em cautela",
    "fonte": "InfoMoney",
@@ -1516,18 +1528,6 @@
    "tickers": []
   },
   {
-   "titulo": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T11:21-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Wall Street deve abrir em queda após saída de CEO da Nvidia",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUVhVdURSUUhSWjNaZVlpdDNrYzhTcTRoZDROdUd3eWxnYWVSenhwUmM5dWlFS2d0N09zY1ZZbzktUG1YdWtPanVKd25iWWgwSUN4eXUyZHBDNHFMOWZfOE9SUHVyNHpEeGp6SjJDeUJ6RUh2Vmh2ZFBRMHFSaWd3ZEZEYkc3bXRp?oc=5",
@@ -1561,19 +1561,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "BBAS3 afunda quase 8% e acende outro alerta: por que os analistas ainda veem risco nas ações do Banco do Brasil",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUk1DVlVVZENfR3g3WUdyd1U0cVpTamRjRXZqb2ZwT3FJM29OT3BhTDkwNjQyUUF3UWF6TVRVZ29uRUdqU1JiNlExUzJUTWhqN0RhVHd2X2l1UTRKZlFlbVhkMFJrOTRUMEhMek1oOF9oa0hHY1FwaERvMFgzZGVvVFpHUXhWaEZtWXE2R2syS0p1QmNJUndZVllPMzZZN01rNDRPVGFwM29adDRJWlpvU3dEbV9RcmRfOXRwM2NfbnpkYjlUVFlYdFJhQTRwRGFuV0lJVkhtdjlpam5rUWc?oc=5",
-   "publicado": "2026-11-12T11:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
   },
   {
    "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
@@ -1624,17 +1611,27 @@
    "tickers": []
   },
   {
-   "titulo": "Petrobras (PETR4) despenca após balanço: até onde pode cair a ação?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTmdmX2VsRkZIRUxIVkQzbUlxQW5xXzBGNlVWbWgtMzdmNXVvTUd5V3J6ZVhITkdxVnE1TDBnWDNkelJqQ2p4YUNueFh6V0Z2ZHVIaVVKNjMzNVgxSFpIY1ZXMGpYd3Y5U3R2Tk9NVmx3SUltR1VLQnhvbTBJS2lmWmtVRUZPUWhZcmtyVnBWaklwSWk2ZHB1ZWVWMjE0eDJaWWFhX9IBqgFBVV95cUxOTVNfTElxaTk5T3h2LUN4X0tTa1czNmZFQ1MxNE5jZ3pZWDFsWVBOenUzOG5CelRxdThhTlBpM0VodU93RDhFaWJqLXNIYmlVRkVEVmZ3WGxsX0ZwSl85ZVZzZk96REUyWTk4U2ttcmJJcm9MLWRIb0ZJaWJQNVgwTG5VSVpiY000M1ZpVGw2VGpwT0hPOXZacVA2dG96T0prVDY3Z3pNX2tPQQ?oc=5",
-   "publicado": "2026-11-12T09:09-03:00",
+   "titulo": "Taxas do Tesouro Direto hoje sobem com ata mais dura do Copom; Prefixado 2032 vai a 15,15%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVXhIaUpCanNVLVI3LTJCR2JMa3VUVWFRbW9hX1RCZVpIWl9FRVN5NHJ6YW5jVkJOdXFZbFBEY1kzeHJqS2RlZlc1Z1JLY0pNTmZreFhFMVJmVF81eWpqZTN1OENMckN3cUNNRVJCeThYaldMVXl4VmowUm10YU5fdDJPQnNpSVRlU2w2TEYxcExhem1Eb3ZUTExOamxsaXJDTy1uM3BmR0paaUU3ZGRjOEZuRmtaSXZlOHJLd3JLcXJpWUNsY0ZZT3A5X3BUNUppLTdadkdZTXByS0k?oc=5",
+   "publicado": "2026-11-12T10:25-03:00",
    "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WDO",
+    "DI"
    ],
-   "tickers": [
-    "PETR4"
-   ]
+   "tickers": []
+  },
+  {
+   "titulo": "Inflação perde força e fica em 0,14% em outubro; conta de luz cai",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inflacao-perde-forca-e-fica-em-014-em-outubro-conta-de-luz-cai",
+   "publicado": "2026-11-12T10:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ]
 }
