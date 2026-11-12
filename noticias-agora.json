@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T11:28-03:00",
+  "atualizado_em": "2026-11-12T11:30-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -63,11 +63,11 @@
     ],
     [
      "11:10",
-     170664.0
+     170762.0
     ],
     [
-     "11:13",
-     170679.0
+     "11:15",
+     170725.0
     ]
    ]
   },
@@ -192,11 +192,11 @@
     ],
     [
      "11:25",
-     5.6019
+     5.6062
     ],
     [
-     "11:28",
-     5.6019
+     "11:30",
+     5.6051
     ]
    ]
   },
@@ -507,7 +507,7 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": -0.26,
+    "ibov30": -0.21,
     "dolar30": -0.04
    },
    {
@@ -523,7 +523,7 @@
      "UGPA3"
     ],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": 0.08
    },
    {
     "hora": "10:59",
@@ -537,7 +537,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": 0.08
    },
    {
     "hora": "11:00",
@@ -552,7 +552,7 @@
      "BBAS3"
     ],
     "ibov30": null,
-    "dolar30": -0.05
+    "dolar30": 0.02
    },
    {
     "hora": "11:19",
@@ -575,6 +575,21 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:24",
+    "titulo": "Dólar sobe e Ibovespa cai com foco no fiscal; ações do BB têm queda forte",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-sobe-e-ibovespa-cai-com-foco-no-fiscal-acoes-do-bb-tem-queda-forte.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1200,6 +1215,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe e Ibovespa cai com foco no fiscal; ações do BB têm queda forte",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-sobe-e-ibovespa-cai-com-foco-no-fiscal-acoes-do-bb-tem-queda-forte.shtml",
+   "publicado": "2026-11-12T11:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1229,7 +1257,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T11:28-03:00",
+ "atualizado_em": "2026-11-12T11:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1252,6 +1280,19 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe e Ibovespa cai com foco no fiscal; ações do BB têm queda forte",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-sobe-e-ibovespa-cai-com-foco-no-fiscal-acoes-do-bb-tem-queda-forte.shtml",
+   "publicado": "2026-11-12T11:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1401,18 +1442,6 @@
    "tickers": [
     "BBAS3"
    ]
-  },
-  {
-   "titulo": "Dólar avança com mau humor externo e má recepção a pacote fiscal",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM0lydlRjanowcVNmczMtSlFSOGpKcXE5Qm9JV1pXeFMyOGNuOFNNRmhxcU9qaTVGMUJpUGxYVTNraUpNcUZwaGVGZDhoUWNFNzlSVmU2aFBPb1F5RTFfYVg5ekhseTg4cnE3VDFNc1lIM09ySjhua3puQ0JULUNxNGFlQ0s0WFNyak5NbDdqcENiOWNuUkI2dzFUUTNnamZUVmp5ekhJakpRcHFBY0xvNmw4OGpEamhsTTFFajIxZ9IBzgFBVV95cUxQMG9Kajh2NEp3TXhrdlR0dG5iUGowdnlOYWt0OUJENjJIZTg2ckJ5bGxOQlI5YVdhYVk1TTloWVJxUG5oMm93UXpnMUJVZHJPTURIMnQ5WWxNY2dUbkFnaF9LQUEzT0w4XzZodldVSTdIOGRfYzZWN3ZBLWRRNW00VkRZQmNhZnRJZnM1am9sZlRfYjJQbzFtclZaNkJoOTBxLURJaGpOQ1NlaUhPUkFqQzgxcEllaHVTRWwxeVRoMl9XUVBpM2JjN0tIUnZ3QQ?oc=5",
-   "publicado": "2026-11-12T09:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Dólar hoje sobe e se aproxima novamente de R$ 5,60 com pacote fiscal e IPCA no radar",
