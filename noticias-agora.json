@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T18:22-03:00",
+  "atualizado_em": "2026-11-12T18:25-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171314.0
+     171324.0
     ]
    ]
   },
@@ -800,28 +800,15 @@
     ],
     [
      "18:20",
-     5.6416
+     5.6436
     ],
     [
-     "18:22",
-     5.6421
+     "18:25",
+     5.6426
     ]
    ]
   },
   "marcadores": [
-   {
-    "hora": "09:04",
-    "titulo": "Inflação medida pelo IPCA fica em 0,14% em outubro, abaixo das expectativas",
-    "fonte": "Folha",
-    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-medida-pelo-ipca-fica-em-014-em-outubro-abaixo-das-expectativas.shtml",
-    "impacto": "medio",
-    "ativos": [
-     "DI"
-    ],
-    "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.22
-   },
    {
     "hora": "09:08",
     "titulo": "IPCA em outubro desacelera e fica em 0,14%, aponta IBGE",
@@ -1788,7 +1775,7 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": 0.31,
+    "ibov30": 0.32,
     "dolar30": -0.08
    },
    {
@@ -1933,17 +1920,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Inflação medida pelo IPCA fica em 0,14% em outubro, abaixo das expectativas",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-medida-pelo-ipca-fica-em-014-em-outubro-abaixo-das-expectativas.shtml",
-   "publicado": "2026-11-12T09:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "IPCA em outubro desacelera e fica em 0,14%, aponta IBGE",
    "fonte": "Estadão",
@@ -2907,6 +2883,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Primeiro pacote de ajuste fiscal de Lula 4 gera resistências à esquerda e à direita",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/primeiro-pacote-de-ajuste-fiscal-de-lula-4-gera-resistencias-a-esquerda-e-a-direita.shtml",
+   "publicado": "2026-11-12T18:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2936,7 +2923,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T18:22-03:00",
+ "atualizado_em": "2026-11-12T18:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2959,6 +2946,17 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Primeiro pacote de ajuste fiscal de Lula 4 gera resistências à esquerda e à direita",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/primeiro-pacote-de-ajuste-fiscal-de-lula-4-gera-resistencias-a-esquerda-e-a-direita.shtml",
+   "publicado": "2026-11-12T18:20-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2996,17 +2994,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Taxas dos DIs fecham em alta firme em meio a insatisfação com pacote fiscal",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZk13SnI4YmluWi04cFI1eEEzd29RQnRkdTN3U2E3LUJ0QUpON1ZxSWpiTE40QXQ1NW9lZS01bWh1cUVzYTE3S1pyT3NpeGJVLWRCVVp6WWxOYm9MY1pNc04yVENNZWRNekU4VXJtX1ZUejBTN2ZHTGpjZ0R4NU1IQS1vMVd2SjI2M2ppVjhwM2VRWEh6empYbTlkb25HMVZNSHZVNDhDR1VIU0NMeHVUaml4dDNrWDU0bWfSAboBQVVfeXFMTWZNd0pyOGJpblotOHBSNXhBM3dvUUJ0ZHUzd1NhNy1CdEFKTjdWcUlqYkxONEF0NTVvZWUtNW1odXFFc2ExN0tack9zaXhiVS1kQlVaellsTmJvTGNaTXNOMlRDTWVkTXpFOFVybV9WVHowUzdmR0xqY2dEeDVNSEEtbzFXdkoyNjNqaVY4cDNlUVhIenpqWG05ZG9uRzFWTUh2VTQ4Q0dVSFNDTHh1VGppeHQza1g1NG1n?oc=5",
-   "publicado": "2026-11-12T17:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   },
