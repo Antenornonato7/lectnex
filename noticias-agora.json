@@ -1,7 +1,16 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T10:13-03:00",
+  "atualizado_em": "2026-11-12T10:15-03:00",
+  "ibov": {
+   "anterior": 172060.44,
+   "pontos": [
+    [
+     "10:00",
+     172057.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.5829,
    "pontos": [
@@ -63,11 +72,11 @@
     ],
     [
      "10:10",
-     5.6217
+     5.6163
     ],
     [
-     "10:13",
-     5.6181
+     "10:15",
+     5.6177
     ]
    ]
   },
@@ -82,6 +91,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.22
    },
    {
@@ -94,6 +104,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.12
    },
    {
@@ -108,6 +119,7 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
     "dolar30": 0.12
    },
    {
@@ -123,6 +135,7 @@
      "EMBJ3",
      "EMBR3"
     ],
+    "ibov30": null,
     "dolar30": -0.04
    },
    {
@@ -136,6 +149,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.03
    },
    {
@@ -149,6 +163,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.16
    },
    {
@@ -163,6 +178,7 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
     "dolar30": 0.15
    },
    {
@@ -176,6 +192,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.01
    },
    {
@@ -189,6 +206,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.04
    },
    {
@@ -201,6 +219,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": null
    },
    {
@@ -213,6 +232,20 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:11",
+    "titulo": "INPC, inflação que corrige salários, acumula 4,49% em 12 meses",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inpc-inflacao-que-corrige-salarios-acumula-449-em-12-meses",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -642,6 +675,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "INPC, inflação que corrige salários, acumula 4,49% em 12 meses",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inpc-inflacao-que-corrige-salarios-acumula-449-em-12-meses",
+   "publicado": "2026-11-12T10:11-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -681,7 +725,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T10:13-03:00",
+ "atualizado_em": "2026-11-12T10:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -695,6 +739,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "INPC, inflação que corrige salários, acumula 4,49% em 12 meses",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inpc-inflacao-que-corrige-salarios-acumula-449-em-12-meses",
+   "publicado": "2026-11-12T10:11-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Juros futuros de longo prazo têm forte alta com má recepção à pacote fiscal",
    "fonte": "Valor",
@@ -853,19 +908,6 @@
    ]
   },
   {
-   "titulo": "Boa Safra (SOJA3) tem lucro de R$ 26,2 milhões no 3º trimestre, queda de 44%",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSlFsX1ZfaEJhN1MzUXZCZnJLcVhObFYyOWFXSlg5V0dLaEloSHpjUUdzclJEQXFVWnMxdzR4MS11a3Q1NWpvWC1OSzhNZDNSUW92ZzlUV2doRER0ajBHa0x3ZUltZHRJTmhlb00ydS1yZDV4YlVJdE9jMjVVckxOUjdnVUhmUlIzVnZsZE5yenlDVHhEZmlReGtUemFVS3VHb3Nv?oc=5",
-   "publicado": "2026-11-12T08:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "SOJA3"
-   ]
-  },
-  {
    "titulo": "Banco Central decreta liquidação da Cooperagre por 'violações graves' às regras do sistema financeiro",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOck02QjBicnU1RHNzSmRvQTUtZ3ZFbHhHdk45aFNKUm0wNUdyLWJZMjZBNzBZeUtWNEtYT1ZOWHgyMUFRby04YVhKd2w5eGM3SU91TnBST0x0elc1ZzQwS19LYTEzcXU5aDlVM2ljQlZacmZhYzdiSmVQQ1hFdnNXLTd1OENTVUtiLXJLQjExd3VvcHd5Y25Hd1oxeXg3VGFmT0U0WFhNRWpFN1d3TkJyWHpXc25RaVRzVUdjVHNsZTdyLUs4N19lUDRLdnNwYzlu?oc=5",
@@ -878,16 +920,18 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa hoje: IPCA de outubro e balanços de bancos movimentam a Bolsa",
+   "titulo": "Ibovespa hoje: balanços de BB e BTG e inflação de outubro movimentam a Bolsa",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZFlMTExWa0FMQ21JZXhFSTE2ektCZ2hmWmNIblZyT3pjc1ctM25mcV9jUTFLMHhNQk5aMldBRHlELWpJVXZ2WnNUSVlfRDh0M0laS19OUUVuWWh3X1AwRjM3ZFVUdU00UDdITzR6RDJaNWRYcEhlMlJWcTkzTnFsLWI3Z3pUWDB4SWNuOTA5YzluYU1DdUpBdDdObFN2QTZYV1FTcGtsUGlkNGVpdUtkRUYzSXlLa2NDLVd2Q3ZrQUFGSWRscTE4X3N6ME85TzlfczVQSXNJRDAxMEZGbWZhbWpvMnRlcE1NUVE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZFlMTExWa0FMQ21JZXhFSTE2ektCZ2hmWmNIblZyT3pjc1ctM25mcV9jUTFLMHhNQk5aMldBRHlELWpJVXZ2WnNUSVlfRDh0M0laS19OUUVuWWh3X1AwRjM3ZFVUdU00UDdITzR6RDJaNWRYcEhlMlJWcTkzTnFsLWI3Z3pUWDB4SWNuOTA5YzluYU1DdUpBdDdObFN2QTZYV1FTcGtsUGlkNGVpdUtkRUYzSXlLa2NDLVd2Q3ZrQUFGSWRscTE4X3N6ME85TzlfczVQSXNJRDAxMEZGbWZhbWpvMnRlcE1NUVHSAe8BQVVfeXFMT0VDczM1ejdsVk9sZTZnWnRldUJwM3Q4WVpyNU5ScnBwMGJlY0pLNkpzdjR6RWdBWUI1M1Rrd3piLXkxMzNuZHJmRVR3bWFzbUcyeVpBd3ZXT3RQSU5OdUgxMEc5czVSRVMxQ2E2ODhzUXBmeno3SVZsOElpNkRkLXY3bE5JMlJzZ3lnLUpBUnFiazAwak13ZGZFMHpJWkFGS1RxcE91RTlUb3EyQnZ5S3Fod2k4cEtvWWR5NTVFcnJJNENMZk16aVprN0dWa25kZ2YwQWRBNE5uNlhkSnM1bmc1anUwWFFxMHpwTWJGWVE?oc=5",
    "publicado": "2026-11-12T07:48-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
     "DI"
    ],
-   "tickers": []
+   "tickers": [
+    "BPAC11"
+   ]
   }
  ]
 }
