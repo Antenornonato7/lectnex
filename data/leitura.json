@@ -1,146 +1,159 @@
 {
   "tipo": "pregao",
-  "data": "2026-11-11",
-  "gerado_em": "2026-11-11T08:03:00-03:00",
-  "titulo": "Petrobras lucra R$ 39,7 bi; pacote fiscal e Galípolo no radar",
+  "data": "2026-11-12",
+  "gerado_em": "2026-11-12T08:05:00-03:00",
+  "titulo": "IPCA às 9h, Nvidia pesa no exterior e Senado decide pauta fiscal",
   "resumo": [
-    "No último pregão (terça, 10), o Ibovespa caiu 0,52%, a 171.337 pontos, e o dólar à vista subiu 1,47%, a R$ 5,586, maior nível desde julho de 2025, depois de o CPI de outubro nos EUA vir em +0,4% m/m, acima do consenso de +0,3%.",
-    "A Petrobras lucrou R$ 39,7 bilhões no 3º trimestre (+21,5% em um ano), anunciou R$ 15,3 bilhões em dividendos e elevou a previsão de produção; a teleconferência é às 11h30 e o papel tem grande peso no WIN.",
-    "Segundo fonte do governo citada pelo InfoMoney, o Planalto negociou um projeto de ajuste fiscal de 0,5% do PIB em 2027 (R$ 70 bi a R$ 80 bi), a ser apresentado por um senador aliado nos próximos dias; o mercado vai cobrar detalhes, o que mexe no DI longo e no real.",
-    "Antes da abertura, o S&P 500 futuro sobe 0,69%, o Nasdaq futuro 1,61% e o Brent 2,01%, mas o DXY avança 0,24%; nos EUA é Veterans Day, com bolsas abertas e Treasuries sem negociação, o que reduz a liquidez no câmbio.",
-    "Na agenda local, a PMS de setembro sai às 9h e Galípolo fala às 14h15 no fórum da Bradesco Asset, um dia depois de a ata do Copom indicar Selic restritiva por mais tempo; Banco do Brasil divulga balanço após o fechamento."
+    "No último pregão (quarta, 11), o Ibovespa subiu 0,42%, a 172.060 pontos, e o dólar à vista caiu 0,43%, a R$ 5,562, com o governo acenando com ajuste fiscal e Wall Street em alta; a Petrobras caiu 3,11% depois do balanço.",
+    "O IPCA de outubro sai às 9h: as casas citadas pelo InfoMoney projetam de 0,21% a 0,27% no mês, depois de 0,82% em setembro; nas últimas 3 divulgações, o WIN oscilou entre −0,05% e +0,47% e o WDO entre −0,05% e +0,10% nos 30 a 60 minutos seguintes.",
+    "Antes da abertura, o S&P 500 futuro cai 0,30%, o Nasdaq futuro 0,65% e o EWZ 0,80%, com o VIX em alta de 4,52%: segundo o Wall Street Journal, citado pela CBS, o conselho da Nvidia se prepara para afastar o CEO Jensen Huang, e a ação caiu mais de 8% no after market.",
+    "No fiscal, o ministro Bruno Moretti disse que as medidas apresentadas pelo senador Jaques Wagner terão impacto de R$ 50 bi a R$ 60 bi em 2027; Alcolumbre decide hoje com líderes se abre ou adia a votação, o que mexe no DI longo e no real.",
+    "O Banco do Brasil divulgou balanço do 3º trimestre bem abaixo das expectativas, cortou pela metade a projeção de lucro do ano e reduziu dividendos, segundo o InfoMoney; bancos têm peso relevante no WIN."
+  ],
+  "pontos": [
+    {
+      "titulo": "IPCA de outubro às 9h",
+      "texto": "Projeções de 0,21% a 0,27% após 0,82% em setembro; surpresa mexe nos vértices curtos do DI e no WDO."
+    },
+    {
+      "titulo": "Nvidia derruba Nasdaq futuro",
+      "texto": "Relato de afastamento do CEO leva o Nasdaq futuro a −0,65% e o VIX a +4,52%; risco global pesa no WIN."
+    },
+    {
+      "titulo": "Senado decide votação do ajuste",
+      "texto": "Impacto de R$ 50–60 bi em 2027 segundo Moretti; adiamento ou aprovação mexe no DI longo e no real."
+    }
   ],
   "termometro": {
     "win": {
-      "leitura": "bullish",
-      "motivo": "S&P futuro +0,69%, Nasdaq futuro +1,61%, EWZ +0,25% e Brent +2,01% ajudam Petrobras, que vem de lucro de R$ 39,7 bi e R$ 15,3 bi em dividendos; sinal quantitativo bullish, com Galípolo às 14h15 como risco."
+      "leitura": "bearish",
+      "motivo": "Sinal quantitativo bearish: EWZ −0,80%, S&P futuro −0,30% e Nasdaq futuro −0,65% com a crise na Nvidia, além do balanço fraco do Banco do Brasil; o IPCA às 9h pode mudar o rumo."
     },
     "wdo": {
-      "leitura": "bearish",
-      "motivo": "Sinal quantitativo bearish (S&P futuro +0,69%, VIX −3,96%) depois de o dólar subir 1,47% ontem, com petróleo em alta e notícia de ajuste fiscal favorecendo o real; o DXY +0,24% e a liquidez menor no Veterans Day podem limitar a queda."
+      "leitura": "bullish",
+      "motivo": "Sinal quantitativo bullish: VIX +4,52%, EWZ −0,80% e S&P futuro −0,30% indicam aversão a risco; o DXY −0,07% e a pauta fiscal no Senado podem limitar a alta."
     }
   },
   "destaques": [
     {
       "hora": "9h",
-      "evento": "Pesquisa Mensal de Serviços — set (IBGE)",
-      "por_que": "Agosto teve −0,1% m/m e a agenda do InfoMoney indica −0,2%; serviços pesam na inflação subjacente e nos vértices curtos do DI."
+      "evento": "IPCA de outubro (IBGE)",
+      "por_que": "Projeções de 0,21% a 0,27% (sem mediana divulgada) após 0,82% em setembro; em 12 meses, faixa de 4,58% a 4,76%, acima do teto de 4,5%."
     },
     {
-      "hora": "11h30",
-      "evento": "Teleconferência da Petrobras (3º tri)",
-      "por_que": "Detalhes sobre dividendos, capex de até US$ 25,5 bi e política de preços mexem com o maior peso do Ibovespa."
+      "hora": "10h30",
+      "evento": "Seguro-desemprego nos EUA e fala de Hammack (Fed)",
+      "por_que": "Mercado de trabalho e tom do Fed antes da reunião de dezembro mexem no DXY e no WDO."
     },
     {
-      "hora": "14h15",
-      "evento": "Galípolo (BC) no fórum da Bradesco Asset",
-      "por_que": "Primeira fala depois da ata que defendeu Selic restritiva por mais tempo; tom sobre juros e fiscal mexe no DI e no WDO."
+      "hora": "12h–15h30",
+      "evento": "Falas do Fed: Barr, Goolsbee, Daly e Schmid",
+      "por_que": "Sequência de dirigentes do Fed pode reforçar ou aliviar as apostas de alta de juros nos EUA."
     },
     {
-      "hora": "após 18h",
-      "evento": "Balanço do Banco do Brasil (3º tri)",
-      "por_que": "Bancos têm peso relevante no índice; resultado repercute no WIN amanhã, dia de IPCA."
+      "hora": "20h30",
+      "evento": "John Williams (Fed de Nova York)",
+      "por_que": "Fala depois do fechamento; repercute nos juros americanos e no WDO de amanhã."
     }
   ],
   "exterior": [
     {
       "ativo": "S&P 500 fut.",
-      "variacao": "+0,69%"
+      "variacao": "−0,30%"
     },
     {
       "ativo": "Nasdaq fut.",
-      "variacao": "+1,61%"
+      "variacao": "−0,65%"
     },
     {
       "ativo": "EWZ (pré-mercado)",
-      "variacao": "+0,25%"
+      "variacao": "−0,80%"
     },
     {
       "ativo": "DXY",
-      "variacao": "+0,24%"
-    },
-    {
-      "ativo": "Petróleo Brent",
-      "variacao": "+2,01%"
+      "variacao": "−0,07%"
     },
     {
       "ativo": "VIX",
-      "variacao": "−3,96%"
+      "variacao": "+4,52%"
+    },
+    {
+      "ativo": "Minério (Dalian)",
+      "variacao": "+2,33%"
     }
   ],
   "noticias": [
     {
-      "titulo": "Petrobras lucra R$ 39,7 bilhões no 3º trimestre, alta de 21,5%, e anuncia R$ 15,3 bi em dividendos",
-      "fonte": "Folhapress (via O Tempo)",
-      "hora": "ter 20h57",
-      "url": "https://www.otempo.com.br/economia/2026/11/10/lucro-da-petrobras-cresce-21-5-no-terceiro-trimestre-para-r-39-7-bilhoes",
-      "por_que": "Produção de 3,51 milhões de boe/d (+11,7% em um ano), previsão de produção elevada para 3,3–3,4 milhões e dividendos de R$ 15,3 bi sustentam a ação de maior peso do WIN; o lucro, porém, ficou abaixo dos R$ 52,4 bi do 2º trimestre.",
+      "titulo": "Nvidia cai mais de 8% no after market com relato de que conselho prepara saída do CEO",
+      "fonte": "CBS News",
+      "hora": "qua 20h20",
+      "url": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/",
+      "por_que": "Segundo o Wall Street Journal, o conselho se prepara para afastar Jensen Huang; a Nvidia não comentou na matéria. A queda leva o Nasdaq futuro e o EWZ para o negativo, o que pesa no WIN e favorece o dólar.",
       "impacto": {
-        "win": "alta"
+        "win": "baixa",
+        "wdo": "alta"
       }
     },
     {
-      "titulo": "Pacote fiscal, balanço do Banco do Brasil e fala de Galípolo estão no radar desta quarta",
+      "titulo": "Moretti estima ajuste de R$ 50 bi a R$ 60 bi em 2027; Senado decide se vota hoje",
       "fonte": "InfoMoney",
-      "hora": "06h02",
-      "url": "https://www.infomoney.com.br/mercados/pacote-fiscal-lula-banco-brasil-galipolo-agenda-11112026/",
-      "por_que": "Segundo fonte do governo, o ajuste negociado seria de 0,5% do PIB em 2027 (R$ 70 bi a R$ 80 bi) e de 1,75% do PIB em quatro anos; sinal de esforço fiscal tende a aliviar o prêmio no DI longo e favorecer o real, mas faltam detalhes oficiais.",
+      "hora": "06h14",
+      "url": "https://www.infomoney.com.br/mercados/pacote-fiscal-balanco-bb-ipca-agenda-12112026/",
+      "por_que": "O projeto, apresentado por Jaques Wagner, não altera as metas de superávit; segundo O Globo, a oposição aposta que não haverá tempo para votar hoje. Avanço tende a aliviar o DI longo e o real; adiamento, o contrário.",
       "impacto": {
-        "win": "alta",
         "wdo": "baixa",
         "di": "baixa"
       }
     },
     {
-      "titulo": "Ibovespa cai 0,52% e dólar sobe 1,47%, a R$ 5,586, com apostas de alta de juros nos EUA",
-      "fonte": "InvestNews",
-      "hora": "ter 19h18",
-      "url": "https://investnews.com.br/investimentos/ibovespa-fecha-queda-10-11-2026/",
-      "por_que": "O CPI de +0,4% m/m e a fala de Waller (Fed) sobre alta de até 0,5 p.p. levaram o DXY a +0,59%; o dólar no maior nível desde julho de 2025 é o ponto de partida do WDO hoje.",
+      "titulo": "Banco do Brasil decepciona no 3º trimestre e corta pela metade a projeção de lucro",
+      "fonte": "InfoMoney",
+      "hora": "06h14",
+      "url": "https://www.infomoney.com.br/mercados/pacote-fiscal-balanco-bb-ipca-agenda-12112026/",
+      "por_que": "Resultado bem abaixo do esperado e dividendos menores pressionam BBAS3 e o setor bancário, com peso relevante no Ibovespa.",
       "impacto": {
-        "wdo": "alta",
-        "di": "alta"
+        "win": "baixa"
       }
     },
     {
-      "titulo": "Ata do Copom indica Selic restritiva por mais tempo, com inflação projetada acima da meta",
-      "fonte": "TradeMap",
-      "hora": "ter 18h28",
-      "url": "https://trademap.com.br/noticias/news-8582148",
-      "por_que": "Com a Selic mantida em 13,75% e projeções do BC de 5,6% para 2026 e 4,7% para 2027, acima da meta de 3%, a ata reduz o espaço para cortes e sustenta os vértices curtos do DI.",
-      "impacto": {
-        "di": "alta"
-      }
-    },
-    {
-      "titulo": "Veterans Day: bolsas americanas abrem, mas sem Treasuries; PMS e produção regional saem às 9h",
-      "fonte": "Money Times",
-      "hora": "06h30",
-      "url": "https://www.moneytimes.com.br/agenda-economica-veja-os-indicadores-que-podem-movimentar-bolsa-e-dolar-nesta-quarta-feira-mlem/",
-      "por_que": "Sem negociação de Treasuries, falta uma referência de juros americanos e a liquidez global fica menor, o que pode ampliar movimentos do WDO.",
+      "titulo": "Ibovespa sobe 0,42% e dólar cai 0,43%, a R$ 5,562, com aceno fiscal; Petrobras recua 3,11%",
+      "fonte": "InfoMoney",
+      "hora": "qua 18h24",
+      "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-11112026/",
+      "por_que": "Proventos abaixo do esperado e capex acima pesaram na Petrobras; o fechamento a R$ 5,562 é o ponto de partida do WDO, e os DIs fecharam mistos.",
       "impacto": {}
+    },
+    {
+      "titulo": "Minério sobe 2,33% em Dalian; bolsas da Ásia caem e Europa sobe",
+      "fonte": "InfoMoney",
+      "hora": "05h49",
+      "url": "https://www.infomoney.com.br/mercados/nasdaq-futuro-recua-pressionado-pela-forte-queda-das-acoes-da-nvidia/",
+      "por_que": "Minério a 811,50 iuanes ajuda Vale, segundo maior peso do índice, e compensa em parte o exterior negativo para o WIN.",
+      "impacto": {
+        "win": "alta"
+      }
     }
   ],
   "fontes": [
     {
-      "titulo": "InfoMoney — Pacote fiscal de Lula, Banco do Brasil, Galípolo e mais destaques desta quarta-feira",
-      "url": "https://www.infomoney.com.br/mercados/pacote-fiscal-lula-banco-brasil-galipolo-agenda-11112026/"
+      "titulo": "InfoMoney — Pacote fiscal, reação ao balanço do BB, IPCA e mais destaques desta quinta-feira",
+      "url": "https://www.infomoney.com.br/mercados/pacote-fiscal-balanco-bb-ipca-agenda-12112026/"
     },
     {
-      "titulo": "Folhapress (via O Tempo) — Lucro da Petrobras cresce 21,5% no terceiro trimestre, para R$ 39,7 bilhões",
-      "url": "https://www.otempo.com.br/economia/2026/11/10/lucro-da-petrobras-cresce-21-5-no-terceiro-trimestre-para-r-39-7-bilhoes"
+      "titulo": "InfoMoney — Ibovespa fecha em alta, com fiscal e exterior; Petrobras cai mais de 3% com balanço",
+      "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-11112026/"
     },
     {
-      "titulo": "InvestNews — Ibovespa fecha em queda com apostas de alta de juros nos EUA; Magazine Luiza sobe 10%",
-      "url": "https://investnews.com.br/investimentos/ibovespa-fecha-queda-10-11-2026/"
+      "titulo": "InfoMoney — Nasdaq Futuro recua pressionado pela forte queda das ações da Nvidia",
+      "url": "https://www.infomoney.com.br/mercados/nasdaq-futuro-recua-pressionado-pela-forte-queda-das-acoes-da-nvidia/"
     },
     {
-      "titulo": "TradeMap — Ibovespa fecha em queda com ata do Copom e inflação dos EUA no radar",
-      "url": "https://trademap.com.br/noticias/news-8582148"
+      "titulo": "CBS News — Nvidia's stock dives after report that chipmaker's board is preparing to oust CEO Jensen Huang",
+      "url": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/"
     },
     {
-      "titulo": "Money Times — Agenda econômica: indicadores que podem movimentar bolsa e dólar nesta quarta-feira (11)",
-      "url": "https://www.moneytimes.com.br/agenda-economica-veja-os-indicadores-que-podem-movimentar-bolsa-e-dolar-nesta-quarta-feira-mlem/"
+      "titulo": "InfoMoney — Projeção para o IPCA: alívio de energia e passagens e pressão de alimentos e serviços",
+      "url": "https://www.infomoney.com.br/mercados/ipca-outubro-projecao-inflacao-desaceleracao/"
     }
   ]
 }

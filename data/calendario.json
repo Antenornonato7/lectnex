@@ -1,56 +1,6 @@
 {
-  "atualizado_em": "2026-11-11T19:30:00-03:00",
+  "atualizado_em": "2026-11-12T08:05:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-11",
-      "hora": "09h",
-      "pais": "BR",
-      "evento": "Pesquisa Mensal de Serviços — PMS (set, m/m, IBGE)",
-      "importancia": 2,
-      "anterior": "−0,1%",
-      "consenso": "−0,4%",
-      "resultado": "−0,1%",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Serviços pesam na inflação subjacente. Saiu −0,1% m/m, queda menor que a mediana de −0,4% do Projeções Broadcast (intervalo de −0,8% a +0,2%); −0,1% na comparação anual.",
-      "tipo": "pms-brasil",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-11",
-      "hora": null,
-      "pais": "US",
-      "evento": "Veterans Day — mercado de Treasuries fechado",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "neutro",
-        "di": "neutro"
-      },
-      "nota": "Bolsas americanas abrem, mas sem negociação de Treasuries; liquidez menor no câmbio.",
-      "tipo": "feriado-eua",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-11",
-      "hora": "14h15",
-      "pais": "BR",
-      "evento": "Galípolo (BC) no Fórum de Investimentos da Bradesco Asset",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Sem sinal de corte: disse que hoje o guidance tem valor “negativo” e que o efeito vem do tempo com juros altos",
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Primeira fala depois da ata que indicou Selic restritiva por mais tempo. Galípolo reforçou juros em nível contracionista por mais tempo, citou choques de oferta na inflação e descartou mudar o regime de metas (Estadão Conteúdo, NeoFeed).",
-      "tipo": "fala-bcb",
-      "surpresa": null
-    },
     {
       "data": "2026-11-12",
       "hora": "04h",
@@ -59,11 +9,11 @@
       "importancia": 1,
       "anterior": "0,5%",
       "consenso": null,
-      "resultado": null,
+      "resultado": "0,7%",
       "impacto": {
         "wdo": "volatil"
       },
-      "nota": "Atividade britânica; mexe com a libra e o dólar global. Projeções divergem entre fontes.",
+      "nota": "Atividade britânica; mexe com a libra e o dólar global. Saiu 0,7% t/t, segundo o InfoMoney; sem consenso confirmado.",
       "tipo": "pib-reino-unido",
       "surpresa": null
     },
@@ -80,7 +30,7 @@
         "di": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Setembro: 0,82% m/m e 4,58% em 12 meses. Projeções de casas citadas pelo InfoMoney vão de 0,21% (Daycoval) a 0,27% (Warren).",
+      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Setembro: 0,82% m/m. Projeções de casas citadas pelo InfoMoney vão de 0,21% (Daycoval) a 0,27% (Warren); sem mediana divulgada.",
       "tipo": "ipca",
       "surpresa": null
     },
@@ -98,6 +48,23 @@
       },
       "nota": "Termômetro semanal do mercado de trabalho americano.",
       "tipo": "seguro-desemprego",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-12",
+      "hora": "12h–15h30",
+      "pais": "US",
+      "evento": "Falas do Fed: Barr, Goolsbee, Daly e Schmid",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Barr às 12h, Goolsbee às 13h15, Daly às 15h10 e Schmid às 15h30; mercado aposta em alta de juros em dezembro.",
+      "tipo": "fala-fed",
       "surpresa": null
     },
     {
@@ -313,6 +280,22 @@
       },
       "nota": "Sinais sobre a reunião de dezembro, com o mercado precificando alta de juros.",
       "tipo": "ata-fomc",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-19",
+      "hora": null,
+      "pais": "BR",
+      "evento": "Vencimento de opções de novembro (antecipado)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "win": "volatil"
+      },
+      "nota": "Antecipado por causa do feriado da Consciência Negra (sexta, 20/11, B3 fechada).",
+      "tipo": "vencimento-opcoes",
       "surpresa": null
     }
   ]
