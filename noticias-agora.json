@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:00-03:00",
+  "atualizado_em": "2026-11-12T15:03-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -235,6 +235,10 @@
     ],
     [
      "14:45",
+     171066.0
+    ],
+    [
+     "14:48",
      171065.0
     ]
    ]
@@ -533,6 +537,10 @@
     [
      "15:00",
      5.6467
+    ],
+    [
+     "15:03",
+     5.6457
     ]
    ]
   },
@@ -1224,7 +1232,7 @@
      "BRKM5"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.08
    },
    {
     "hora": "14:47",
@@ -1245,6 +1253,20 @@
     "titulo": "In a policy switch, the Fed says its October 2028 meeting will not see a vote on interest rates",
     "fonte": "CNBC",
     "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2028-meeting-will-not-see-a-vote-on-interest-rates.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:02",
+    "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -2164,6 +2186,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+   "publicado": "2026-11-12T15:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2193,7 +2227,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:00-03:00",
+ "atualizado_em": "2026-11-12T15:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2206,6 +2240,18 @@
  ],
  "noticias": [
   {
+   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+   "publicado": "2026-11-12T15:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
@@ -2214,18 +2260,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2028-meeting-will-not-see-a-vote-on-interest-rates.html",
-   "publicado": "2026-11-12T14:58-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
