@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T17:38-03:00",
+  "atualizado_em": "2026-11-12T18:08-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     170738.0
+     171054.0
     ]
    ]
   },
@@ -680,7 +680,7 @@
     ],
     [
      "15:50",
-     5.6493
+     5.6502
     ],
     [
      "15:55",
@@ -764,11 +764,35 @@
     ],
     [
      "17:35",
-     5.6401
+     5.64
     ],
     [
-     "17:38",
-     5.6392
+     "17:40",
+     5.6383
+    ],
+    [
+     "17:45",
+     5.6365
+    ],
+    [
+     "17:50",
+     5.6378
+    ],
+    [
+     "17:55",
+     5.6383
+    ],
+    [
+     "18:00",
+     5.6422
+    ],
+    [
+     "18:05",
+     5.6403
+    ],
+    [
+     "18:08",
+     5.6401
     ]
    ]
   },
@@ -1680,7 +1704,7 @@
      "ITUB4"
     ],
     "ibov30": 0.01,
-    "dolar30": -0.03
+    "dolar30": -0.04
    },
    {
     "hora": "15:51",
@@ -1695,7 +1719,7 @@
      "ITUB4"
     ],
     "ibov30": 0.01,
-    "dolar30": -0.03
+    "dolar30": -0.04
    },
    {
     "hora": "16:03",
@@ -1752,8 +1776,21 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": -0.03,
+    "ibov30": 0.16,
     "dolar30": -0.08
+   },
+   {
+    "hora": "16:59",
+    "titulo": "Ouro cai abaixo de US$ 4 mil com alta do dólar e juros elevados",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONXVDTU1VeExWSjlXMVZyN1lKSFRjUG9qOFFxdGNNUl83dUJ0Vm5Hb3hlNXdUV1ZVZ0hzS2lqQXNIeWN5WTVPWkxMOE0tczNJd2ZxQ0tUMjRMWjdjZ0ZzWklVbG1UVU5RVThNT2g2b3c4R2FRMWNiUTlsc1J1NHdlOVE5Yzg0cGxWTVR4NnZXa3llemFQNjRLTWwyaTBsU2ViakFtVWZaNF9MaGJDanMwTG5RZy1LZw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.0
    },
    {
     "hora": "17:21",
@@ -1767,7 +1804,21 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.21
+   },
+   {
+    "hora": "17:21",
+    "titulo": "Dólar tem forte alta com exterior e plano fiscal e vai a R$ 5,65, maior patamar em 17 meses",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPR2N2T3lienJLYW1hOGN4bUFxb21UYnJFQVRBOHY4T3FEdmZrQkhvTE1WWmllQnk2Tm9kbGh1YnBpUXpKUEUwRGJxQmJib1F0US1DZ3J2TVFWZ1d0cFVhMzVFa2U2eVZfSVpqNDhLaXNvRlNaVnpsanotamhNRUlVNHlPa0NUSjVHQmRrVklCalF4ZHRPQmVjaVQ2Q0p5ZzZLWXloQjBrUWM1VFFXRlNqQXFTOUFFdkZGT0szOFhQWkxlSkJiWmU5QW1yVUJ1WWVoWXF0VEt3TDRnQTlKVVZj?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.21
    },
    {
     "hora": "17:30",
@@ -1781,64 +1832,38 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.1
+   },
+   {
+    "hora": "17:33",
+    "titulo": "Fim de ano se aproxima com inflação alta e PIB travado",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/fim-de-ano-se-aproxima-com-inflacao-alta-e-pib-travado/",
+    "impacto": "alto",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "17:40",
+    "titulo": "Bolsas de Nova York caem com pressão de crise da Nvidia; dólar e petróleo avançam",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaWFHR3hFYkl3UDZYTkJMYUtPSE1Xc2ZKVlg4MTZUSlVOekYwYXJkNDNMNnNPMmZYcFdsMUdMUTRGdUYyUEQ0RGFSc2xkNXRzb0Vjd3FGb2FXUi1ObFA5RW03UFg2aFFwc0pFODR4UEtPcDhGU1FlMDd3RDdoSVBrNzVTalBKdVhGeTlySFNUZWlfQURKcy01cllzeUtHNjJKYTA3MjI3WXJ3bG1NcFJQMFpmallLNS14Q0FpNDVtTGVaQ1VEWWotN014d0JkWnhHeDZJS2FhNmY4aXljNC1kbEMwN0tkUdIB6wFBVV95cUxQVzkyWWlfalN5anZBdGNZY0RLX3Y2dzdESTFfX3VCUUhjRXFXVnlmQXNVZldENTJCeVctd1VQemZZUjQyNE1UT3RTZXVvZWxYRTNrUlhpY2FxaUlnSzF4ZnU4ZjhXWTlWWElqRmdvdXpHZVBFS2lfT1JxbzdpcHNXVi1MblhzUGJBbFh0ejFtRXZiWmJhSUIyTmp6QzNldktoa2RfVjRsWFZoWl9jWTRPejBPMVB0cF9Hbk9QV2VGbElaZnJUTTdCNVJSWWw0OEJrRjZuSnFwdHZ1MDZsWDNkN1BfWUoxSzFyUGc0?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.04
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ibovespa hoje: tombo de 66,5% no lucro do Banco do Brasil e IPCA de outubro deixam Bolsa em alerta",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZFlMTExWa0FMQ21JZXhFSTE2ektCZ2hmWmNIblZyT3pjc1ctM25mcV9jUTFLMHhNQk5aMldBRHlELWpJVXZ2WnNUSVlfRDh0M0laS19OUUVuWWh3X1AwRjM3ZFVUdU00UDdITzR6RDJaNWRYcEhlMlJWcTkzTnFsLWI3Z3pUWDB4SWNuOTA5YzluYU1DdUpBdDdObFN2QTZYV1FTcGtsUGlkNGVpdUtkRUYzSXlLa2NDLVd2Q3ZrQUFGSWRscTE4X3N6ME85TzlfczVQSXNJRDAxMEZGbWZhbWpvMnRlcE1NUVHSAe8BQVVfeXFMT0VDczM1ejdsVk9sZTZnWnRldUJwM3Q4WVpyNU5ScnBwMGJlY0pLNkpzdjR6RWdBWUI1M1Rrd3piLXkxMzNuZHJmRVR3bWFzbUcyeVpBd3ZXT3RQSU5OdUgxMEc5czVSRVMxQ2E2ODhzUXBmeno3SVZsOElpNkRkLXY3bE5JMlJzZ3lnLUpBUnFiazAwak13ZGZFMHpJWkFGS1RxcE91RTlUb3EyQnZ5S3Fod2k4cEtvWWR5NTVFcnJJNENMZk16aVprN0dWa25kZ2YwQWRBNE5uNlhkSnM1bmc1anUwWFFxMHpwTWJGWVE?oc=5",
-   "publicado": "2026-11-12T07:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa hoje: IPCA de outubro e balanços de bancos movimentam a Bolsa",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZFlMTExWa0FMQ21JZXhFSTE2ektCZ2hmWmNIblZyT3pjc1ctM25mcV9jUTFLMHhNQk5aMldBRHlELWpJVXZ2WnNUSVlfRDh0M0laS19OUUVuWWh3X1AwRjM3ZFVUdU00UDdITzR6RDJaNWRYcEhlMlJWcTkzTnFsLWI3Z3pUWDB4SWNuOTA5YzluYU1DdUpBdDdObFN2QTZYV1FTcGtsUGlkNGVpdUtkRUYzSXlLa2NDLVd2Q3ZrQUFGSWRscTE4X3N6ME85TzlfczVQSXNJRDAxMEZGbWZhbWpvMnRlcE1NUVE?oc=5",
-   "publicado": "2026-11-12T07:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "BTG Pactual tem lucro recorde de R$ 5,33 bilhões no 3º trimestre e anuncia recompra de ações",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/btg-pactual-tem-lucro-recorde-de-r-533-bilhoes-no-3o-trimestre-e-anuncia-recompra-de-acoes.shtml",
-   "publicado": "2026-11-12T07:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BPAC11"
-   ]
-  },
-  {
-   "titulo": "Ibovespa hoje: tombo de 66,5% no lucro do Banco do Brasil e IPCA de outubro deixam Bolsa em alerta",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQNnRib3puU0NsZEs4YUt5YW9XWWFxd01iTkhwWkVJWXctY3IyalhVOWJKZjFnUUZOdFNkSmlSNEZtV1NVcG4zYmJjTnZrMzdJVU5aYkVkcEVPVy1OSlozdVd3STlfc1d6OHFuNGhySFl6d3VWNXNiaXd5SjZjUDNfSGZzQ2dnZHVsUGEtT1RqdUFNdVBJTUNrazY1SnB4Z0NUZHp6c01nSGNTZFhyZW9TazlQUjBoU2xyUkd3ekxBVEQxNHNXUjlUdmRhRXdUZVRsR21WWDF5OFdDeklkLVhhc0tnSWdFNjBPM1ctb1dSYi14WlZQ?oc=5",
-   "publicado": "2026-11-12T07:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
-  },
   {
    "titulo": "Santander melhora em 5% oferta para comprar ações de minoritários do Santander Brasil (SANB11); veja o que muda",
    "fonte": "Money Times",
@@ -2746,9 +2771,32 @@
    ]
   },
   {
+   "titulo": "Ouro cai abaixo de US$ 4 mil com alta do dólar e juros elevados",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONXVDTU1VeExWSjlXMVZyN1lKSFRjUG9qOFFxdGNNUl83dUJ0Vm5Hb3hlNXdUV1ZVZ0hzS2lqQXNIeWN5WTVPWkxMOE0tczNJd2ZxQ0tUMjRMWjdjZ0ZzWklVbG1UVU5RVThNT2g2b3c4R2FRMWNiUTlsc1J1NHdlOVE5Yzg0cGxWTVR4NnZXa3llemFQNjRLTWwyaTBsU2ViakFtVWZaNF9MaGJDanMwTG5RZy1LZw?oc=5",
+   "publicado": "2026-11-12T16:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar tem forte alta com exterior e plano fiscal e vai a R$ 5,65, maior patamar em 17 meses",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPR2N2T3lienJLYW1hOGN4bUFxb21UYnJFQVRBOHY4T3FEdmZrQkhvTE1WWmllQnk2Tm9kbGh1YnBpUXpKUEUwRGJxQmJib1F0US1DZ3J2TVFWZ1d0cFVhMzVFa2U2eVZfSVpqNDhLaXNvRlNaVnpsanotamhNRUlVNHlPa0NUSjVHQmRrVklCalF4ZHRPQmVjaVQ2Q0p5ZzZLWXloQjBrUWM1VFFXRlNqQXFTOUFFdkZGT0szOFhQWkxlSkJiWmU5QW1yVUJ1WWVoWXF0VEt3TDRnQTlKVVZj0gHuAUFVX3lxTE02Q2FERzU1QTZUY05aV2Jhd0ZXZWlyeUpLMVpBbnhocWNYeFZQa2RUMDB5OS1OMjg1S1ZJV3hFbG90ZHhld3IyOGNrTUduclMyVlM2R0V6endGSEQwRGsyeTBScnVETzVNNFphQ01xa1c1VktRTUJQVEZONWlIeXZsc3JFTkQ2dDVseDdhSS1malVURVB5OGEwX214UElFUXFPbmpCSWhwTDNidElCVHpXODMtV0FGOVA4eWJIZjBnZFVxb01teHAzYmVjSGhZM1VkS2RzSVBldTZCSjY1aWJGSm1WM2JGaGlyX2Z0b2c?oc=5",
+   "publicado": "2026-11-12T17:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar tem forte alta com exterior e plano fiscal e vai a R$ 5,65, maior patamar em 17 meses",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPR2N2T3lienJLYW1hOGN4bUFxb21UYnJFQVRBOHY4T3FEdmZrQkhvTE1WWmllQnk2Tm9kbGh1YnBpUXpKUEUwRGJxQmJib1F0US1DZ3J2TVFWZ1d0cFVhMzVFa2U2eVZfSVpqNDhLaXNvRlNaVnpsanotamhNRUlVNHlPa0NUSjVHQmRrVklCalF4ZHRPQmVjaVQ2Q0p5ZzZLWXloQjBrUWM1VFFXRlNqQXFTOUFFdkZGT0szOFhQWkxlSkJiWmU5QW1yVUJ1WWVoWXF0VEt3TDRnQTlKVVZj?oc=5",
    "publicado": "2026-11-12T17:21-03:00",
    "impacto": "alto",
    "ativos": [
@@ -2766,6 +2814,29 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Fim de ano se aproxima com inflação alta e PIB travado",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/fim-de-ano-se-aproxima-com-inflacao-alta-e-pib-travado/",
+   "publicado": "2026-11-12T17:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bolsas de Nova York caem com pressão de crise da Nvidia; dólar e petróleo avançam",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaWFHR3hFYkl3UDZYTkJMYUtPSE1Xc2ZKVlg4MTZUSlVOekYwYXJkNDNMNnNPMmZYcFdsMUdMUTRGdUYyUEQ0RGFSc2xkNXRzb0Vjd3FGb2FXUi1ObFA5RW03UFg2aFFwc0pFODR4UEtPcDhGU1FlMDd3RDdoSVBrNzVTalBKdVhGeTlySFNUZWlfQURKcy01cllzeUtHNjJKYTA3MjI3WXJ3bG1NcFJQMFpmallLNS14Q0FpNDVtTGVaQ1VEWWotN014d0JkWnhHeDZJS2FhNmY4aXljNC1kbEMwN0tkUdIB6wFBVV95cUxQVzkyWWlfalN5anZBdGNZY0RLX3Y2dzdESTFfX3VCUUhjRXFXVnlmQXNVZldENTJCeVctd1VQemZZUjQyNE1UT3RTZXVvZWxYRTNrUlhpY2FxaUlnSzF4ZnU4ZjhXWTlWWElqRmdvdXpHZVBFS2lfT1JxbzdpcHNXVi1MblhzUGJBbFh0ejFtRXZiWmJhSUIyTmp6QzNldktoa2RfVjRsWFZoWl9jWTRPejBPMVB0cF9Hbk9QV2VGbElaZnJUTTdCNVJSWWw0OEJrRjZuSnFwdHZ1MDZsWDNkN1BfWUoxSzFyUGc0?oc=5",
+   "publicado": "2026-11-12T17:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   }
@@ -2797,7 +2868,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T17:38-03:00",
+ "atualizado_em": "2026-11-12T18:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2812,6 +2883,41 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Bolsas de Nova York caem com pressão de crise da Nvidia; dólar e petróleo avançam",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaWFHR3hFYkl3UDZYTkJMYUtPSE1Xc2ZKVlg4MTZUSlVOekYwYXJkNDNMNnNPMmZYcFdsMUdMUTRGdUYyUEQ0RGFSc2xkNXRzb0Vjd3FGb2FXUi1ObFA5RW03UFg2aFFwc0pFODR4UEtPcDhGU1FlMDd3RDdoSVBrNzVTalBKdVhGeTlySFNUZWlfQURKcy01cllzeUtHNjJKYTA3MjI3WXJ3bG1NcFJQMFpmallLNS14Q0FpNDVtTGVaQ1VEWWotN014d0JkWnhHeDZJS2FhNmY4aXljNC1kbEMwN0tkUdIB6wFBVV95cUxQVzkyWWlfalN5anZBdGNZY0RLX3Y2dzdESTFfX3VCUUhjRXFXVnlmQXNVZldENTJCeVctd1VQemZZUjQyNE1UT3RTZXVvZWxYRTNrUlhpY2FxaUlnSzF4ZnU4ZjhXWTlWWElqRmdvdXpHZVBFS2lfT1JxbzdpcHNXVi1MblhzUGJBbFh0ejFtRXZiWmJhSUIyTmp6QzNldktoa2RfVjRsWFZoWl9jWTRPejBPMVB0cF9Hbk9QV2VGbElaZnJUTTdCNVJSWWw0OEJrRjZuSnFwdHZ1MDZsWDNkN1BfWUoxSzFyUGc0?oc=5",
+   "publicado": "2026-11-12T17:41-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petróleo sobe 3% após fala de Trump sobre Irã e relatos de tensões no Oriente Médio",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVkc3T0UybkwtZFNmLVFkRGcwSG16b3Y3dElNNGIwbUxiYmJiWHBjTTcydEZjLXhfbTVNempSd0RGcFp6cThLZk5YUHJZMVZJeW9LcHJOZWptSFF2aWRkeFBGV1BoaHNXY251dVEzb21PZ2RGd0c0LURJX01MT2lSeTVJdHRKNzNZcFYxatIBkgFBVV95cUxQVXdQUVBCYy1zcTZhTTB0Mk5zZ2JIZ2tZR3pOSFBZUXJfMENwV0hlZWhoZFp5Tkstc25EcnkyTDN3c0c2TWtwaUpMTWI4bXd6QjFDMFdGX245OG1VMUNyVUh4WlZzNVlJRGNqV2dub1pEdk9yYkFpZEVvdGRTUUFyZXBZVG1lNVUwRWQ3LUlCd3QyZw?oc=5",
+   "publicado": "2026-11-12T17:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Fim de ano se aproxima com inflação alta e PIB travado",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/fim-de-ano-se-aproxima-com-inflacao-alta-e-pib-travado/",
+   "publicado": "2026-11-12T17:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar sobe forte e fecha a R$ 5,6519 com incertezas sobre o ajuste fiscal",
    "fonte": "Money Times",
@@ -2837,6 +2943,30 @@
    "tickers": []
   },
   {
+   "titulo": "BTG: fator eleitoral pressiona áreas de negócios e ação tomba 4% após balanço; veja as análises",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaElyVWtZT2ZSU3pwU3F2dVhTY3lnZmdMbVN3cVZKQUNxTGZDd19sM3Q5V3lGa3RZQ21GNDlOMXhVZzRRUTVmcXBCczFhNl9YQmFPU05SZGQ0dWRhcjR0R1d3TVlIdjNkcXE1MmV3bnVjOGhneHlzdlJWM1NEMGwweDJ0MG1sbkF0Ui1pLTFPM0RUcTk4bmI4QjZ3VGN3dDN4dnZQNGxvNkEwQXphdzlwZS15dVZaNkFZMkhhNEFPOFhJSFBVZU85VGwyMlpEQ1hpQXQ5aTh2UDBNbW1zRXNFVTVzbnJRQdIB6wFBVV95cUxPbWwtczN5elNHWTR2b1hqbDBRamJOVUVReXVMQjNpbndDOE9tWFVzV2pjR0lkWTE5YXVjeWs5dGJCdExyMHh6aHhPN2FYeFRJajFwSkRLcTZuMURaZlNDVkY1ZFhOcXhNaEtBU1pDQkZuZlFZa05fd1dzUHpMMHlKLUZCQXcwNVhjeUQxbk1ISmRXa25TVklVVVFma0g2WHpSVnl2U08yTXVvdXFVMFAzdlM0VnRaLWRKaE5Td2FrdktqanIwYkJSOVZlR2NRZUlGS1pHSHY4OVNlbVQwOWNCdG9aX0FBa3dUekkw?oc=5",
+   "publicado": "2026-11-12T17:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Ouro cai abaixo de US$ 4 mil com alta do dólar e juros elevados",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONXVDTU1VeExWSjlXMVZyN1lKSFRjUG9qOFFxdGNNUl83dUJ0Vm5Hb3hlNXdUV1ZVZ0hzS2lqQXNIeWN5WTVPWkxMOE0tczNJd2ZxQ0tUMjRMWjdjZ0ZzWklVbG1UVU5RVThNT2g2b3c4R2FRMWNiUTlsc1J1NHdlOVE5Yzg0cGxWTVR4NnZXa3llemFQNjRLTWwyaTBsU2ViakFtVWZaNF9MaGJDanMwTG5RZy1LZw?oc=5",
+   "publicado": "2026-11-12T16:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Jensen Huang's Nvidia exit casts shadow over Wall Street’s $500 billion AI financing bet",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html",
@@ -2844,17 +2974,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ouro fecha abaixo dos US$ 4 mil com alta do dólar e tensões entre EUA e Irã",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONFk5djMzajd6Y2VBeFNCUHN3S3RuN1RsX3hwb0ZfdXhWZ1dXOEtxT3pBQkVaSDhiQkM2Z0Fjd1VCWGxaT0hreFRiMG9nWlBMUzhlbk9GZjhjTkFYUHItM2lQNXQ5bG1SeWtNT3FTU3Y4WW9IUnBGLWc1aXpka1BINi1fUlBrS0F5WVVzTVpzUVNLaXA2eC1EYTQtOW9zakI1UGMwS3d0M1RoWllrMVM0?oc=5",
-   "publicado": "2026-11-12T16:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
@@ -2883,19 +3002,6 @@
    "tickers": []
   },
   {
-   "titulo": "BTG: fator eleitoral pressiona áreas de negócios e ação tomba 4% após balanço; veja as análises",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaElyVWtZT2ZSU3pwU3F2dVhTY3lnZmdMbVN3cVZKQUNxTGZDd19sM3Q5V3lGa3RZQ21GNDlOMXhVZzRRUTVmcXBCczFhNl9YQmFPU05SZGQ0dWRhcjR0R1d3TVlIdjNkcXE1MmV3bnVjOGhneHlzdlJWM1NEMGwweDJ0MG1sbkF0Ui1pLTFPM0RUcTk4bmI4QjZ3VGN3dDN4dnZQNGxvNkEwQXphdzlwZS15dVZaNkFZMkhhNEFPOFhJSFBVZU85VGwyMlpEQ1hpQXQ5aTh2UDBNbW1zRXNFVTVzbnJRQdIB6wFBVV95cUxPbWwtczN5elNHWTR2b1hqbDBRamJOVUVReXVMQjNpbndDOE9tWFVzV2pjR0lkWTE5YXVjeWs5dGJCdExyMHh6aHhPN2FYeFRJajFwSkRLcTZuMURaZlNDVkY1ZFhOcXhNaEtBU1pDQkZuZlFZa05fd1dzUHpMMHlKLUZCQXcwNVhjeUQxbk1ISmRXa25TVklVVVFma0g2WHpSVnl2U08yTXVvdXFVMFAzdlM0VnRaLWRKaE5Td2FrdktqanIwYkJSOVZlR2NRZUlGS1pHSHY4OVNlbVQwOWNCdG9aX0FBa3dUekkw?oc=5",
-   "publicado": "2026-11-12T16:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BPAC11"
-   ]
-  },
-  {
    "titulo": "MRV surpreende no balanço, mas endividamento elevado afasta Itaú BBA das ações",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTNpWWJxcmdJRlk3N0ZqY0M5S2NPVXNDZnQtUjZPbnZDdkxrWWp0cHYwZHVTdy1xVElUTGxpSGl6VFVUYjNaazZ1VlJZSG9qMTNWVTBWNmVKT1hTaWJJTElfSWI1RElIaDlTakNmRktGWFFfZ0xhRWZNVklLQ2tINnZwdXZTX3lXaFVXTW1adkVySzNET2RVckZDRnB6ZXcxNjQtM0x4Y1dVQ04xUllkYXBuZk9mMVdwaVE2bzVKUkpWd195MENpdDBiQ0ZHaGhxcHfSAdcBQVVfeXFMTWdQUkduc1U0MWRGOGh6dU1FZ192TFNNLTNIaHRXc2lnVk5BZWRmQ0Y5SlV6NzhlSmJPd3RsR0VpeXNNMEJXRHJQWURnelZuYU5tQ0pIVnh1U3k1OUVyY1ZmOUtGbVBEdmZtdUpaZTFMSVZtSTdPeHdPanRySTNwTkJfWnFsUk1mbFMtT3ZiYjh2OHM3NlQ1M2xTOEotdF9BVFZrZk5aREgtQmpIWENkaVRrUm0ydC1idHJYeklxQi1GNjJOYzBjZGRTdlNiUW1TUnFvYm45emc?oc=5",
@@ -2906,21 +3012,6 @@
    ],
    "tickers": [
     "ITUB4"
-   ]
-  },
-  {
-   "titulo": "Selic pode ficar em 13,75% por mais tempo? Bradesco vê obstáculos para novos cortes",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPYk5uSHVXT0lQbGRfemhZdzFyQjQzaldTR3pKc010TFBBUmJYeGRwczR5bXVlcUxpM2o0UUJGMDhSVkp0MlRzQ3pyTGU4Wk5WY2Vxd1JwWEJTbkJyTU9hWW9iVEc5ZU41bTZPUnNnVGFOTjNXcDJ2eEFaYUlVOHlyeHc5WTA3YzNCQW9zTndpMFI5ck5mb0M0NTktTkxsaHkxazAxXzRPYkdySTVKdXBKR1d5MmZPVkRXenozazBUajFjVUFfNzF5QWZibk4tZUl2QkVDT3BHVTVYWlpUdzJYRA?oc=5",
-   "publicado": "2026-11-12T15:45-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "BBDC4"
    ]
   },
   {
@@ -2959,17 +3050,6 @@
    "tickers": [
     "BBSE3"
    ]
-  },
-  {
-   "titulo": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
-   "publicado": "2026-11-12T14:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
