@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:55-03:00",
+  "atualizado_em": "2026-11-12T15:58-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -620,7 +620,7 @@
     ],
     [
      "15:55",
-     5.6502
+     5.6497
     ]
    ]
   },
@@ -1470,22 +1470,26 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.03
+    "dolar30": 0.02
+   },
+   {
+    "hora": "15:51",
+    "titulo": "MRV surpreende no balanço, mas endividamento elevado afasta Itaú BBA das ações",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTNpWWJxcmdJRlk3N0ZqY0M5S2NPVXNDZnQtUjZPbnZDdkxrWWp0cHYwZHVTdy1xVElUTGxpSGl6VFVUYjNaazZ1VlJZSG9qMTNWVTBWNmVKT1hTaWJJTElfSWI1RElIaDlTakNmRktGWFFfZ0xhRWZNVklLQ2tINnZwdXZTX3lXaFVXTW1adkVySzNET2RVckZDRnB6ZXcxNjQtM0x4Y1dVQ04xUllkYXBuZk9mMVdwaVE2bzVKUkpWd195MENpdDBiQ0ZHaGhxcHfSAdcBQVVfeXFMTWdQUkduc1U0MWRGOGh6dU1FZ192TFNNLTNIaHRXc2lnVk5BZWRmQ0Y5SlV6NzhlSmJPd3RsR0VpeXNNMEJXRHJQWURnelZuYU5tQ0pIVnh1U3k1OUVyY1ZmOUtGbVBEdmZtdUpaZTFMSVZtSTdPeHdPanRySTNwTkJfWnFsUk1mbFMtT3ZiYjh2OHM3NlQ1M2xTOEotdF9BVFZrZk5aREgtQmpIWENkaVRrUm0ydC1idHJYeklxQi1GNjJOYzBjZGRTdlNiUW1TUnFvYm45emc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Chance de ajuste fiscal reduz prêmio de risco nos ativos",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPLXRWQXpwbURMSmkxM0hjMTVuUmFMazNBN0c4aGhTMmZsQnZ6bFFQTm5DOXBZczhBNkw4RE5IbElvVG1POEVfUnIyUVRMQVNzNjFEMkRaUnYwMmZoQkN3TzZ0OVVzWmQxQ2xIWWgya2RLSlBSZ1NvQ0IzYUFsdVRQVC02OGhSeVMyajhZLU1Fa004RkNlaGJ5VlhZR19Da1F3c0tSUjBubzBlWjJUdG5RbHZZNWw?oc=5",
-   "publicado": "2026-11-12T05:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Governo ganha tempo com pacote fiscal, mas nem de longe supera a crise de confiança",
    "fonte": "Estadão",
@@ -2448,6 +2452,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "MRV surpreende no balanço, mas endividamento elevado afasta Itaú BBA das ações",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTNpWWJxcmdJRlk3N0ZqY0M5S2NPVXNDZnQtUjZPbnZDdkxrWWp0cHYwZHVTdy1xVElUTGxpSGl6VFVUYjNaazZ1VlJZSG9qMTNWVTBWNmVKT1hTaWJJTElfSWI1RElIaDlTakNmRktGWFFfZ0xhRWZNVklLQ2tINnZwdXZTX3lXaFVXTW1adkVySzNET2RVckZDRnB6ZXcxNjQtM0x4Y1dVQ04xUllkYXBuZk9mMVdwaVE2bzVKUkpWd195MENpdDBiQ0ZHaGhxcHfSAdcBQVVfeXFMTWdQUkduc1U0MWRGOGh6dU1FZ192TFNNLTNIaHRXc2lnVk5BZWRmQ0Y5SlV6NzhlSmJPd3RsR0VpeXNNMEJXRHJQWURnelZuYU5tQ0pIVnh1U3k1OUVyY1ZmOUtGbVBEdmZtdUpaZTFMSVZtSTdPeHdPanRySTNwTkJfWnFsUk1mbFMtT3ZiYjh2OHM3NlQ1M2xTOEotdF9BVFZrZk5aREgtQmpIWENkaVRrUm0ydC1idHJYeklxQi1GNjJOYzBjZGRTdlNiUW1TUnFvYm45emc?oc=5",
+   "publicado": "2026-11-12T15:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
   }
  ],
  "enviadas": [
@@ -2477,7 +2494,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:55-03:00",
+ "atualizado_em": "2026-11-12T15:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2490,6 +2507,19 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "MRV surpreende no balanço, mas endividamento elevado afasta Itaú BBA das ações",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTNpWWJxcmdJRlk3N0ZqY0M5S2NPVXNDZnQtUjZPbnZDdkxrWWp0cHYwZHVTdy1xVElUTGxpSGl6VFVUYjNaazZ1VlJZSG9qMTNWVTBWNmVKT1hTaWJJTElfSWI1RElIaDlTakNmRktGWFFfZ0xhRWZNVklLQ2tINnZwdXZTX3lXaFVXTW1adkVySzNET2RVckZDRnB6ZXcxNjQtM0x4Y1dVQ04xUllkYXBuZk9mMVdwaVE2bzVKUkpWd195MENpdDBiQ0ZHaGhxcHfSAdcBQVVfeXFMTWdQUkduc1U0MWRGOGh6dU1FZ192TFNNLTNIaHRXc2lnVk5BZWRmQ0Y5SlV6NzhlSmJPd3RsR0VpeXNNMEJXRHJQWURnelZuYU5tQ0pIVnh1U3k1OUVyY1ZmOUtGbVBEdmZtdUpaZTFMSVZtSTdPeHdPanRySTNwTkJfWnFsUk1mbFMtT3ZiYjh2OHM3NlQ1M2xTOEotdF9BVFZrZk5aREgtQmpIWENkaVRrUm0ydC1idHJYeklxQi1GNjJOYzBjZGRTdlNiUW1TUnFvYm45emc?oc=5",
+   "publicado": "2026-11-12T15:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
   {
    "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
    "fonte": "CNBC",
@@ -2647,18 +2677,6 @@
    "tickers": [
     "AZUL4"
    ]
-  },
-  {
-   "titulo": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
-   "publicado": "2026-11-12T13:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
