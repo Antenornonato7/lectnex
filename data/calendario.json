@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-12T08:05:00-03:00",
+  "atualizado_em": "2026-11-12T12:45:00-03:00",
   "eventos": [
     {
       "data": "2026-11-12",
@@ -24,15 +24,18 @@
       "evento": "IPCA de outubro (IBGE)",
       "importancia": 3,
       "anterior": "0,82%",
-      "consenso": null,
-      "resultado": null,
+      "consenso": "0,25%",
+      "resultado": "0,14%",
       "impacto": {
         "di": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Setembro: 0,82% m/m. Projeções de casas citadas pelo InfoMoney vão de 0,21% (Daycoval) a 0,27% (Warren); sem mediana divulgada.",
+      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Saiu 0,14% m/m (4,63% em 12 meses), abaixo dos 0,25% esperados em pesquisa da Reuters, segundo o InfoMoney. Setembro: 0,82%.",
       "tipo": "ipca",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "abaixo",
+        "reacao": "IPCA abaixo do esperado costuma derrubar as taxas dos DIs curtos, aliviar o real e dar suporte ao WIN."
+      }
     },
     {
       "data": "2026-11-12",
@@ -42,7 +45,7 @@
       "importancia": 1,
       "anterior": "189 mil",
       "consenso": "195 mil",
-      "resultado": null,
+      "resultado": "200 mil",
       "impacto": {
         "wdo": "volatil"
       },
