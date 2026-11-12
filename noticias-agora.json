@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:35-03:00",
+  "atualizado_em": "2026-11-12T15:38-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -263,7 +263,11 @@
     ],
     [
      "15:20",
-     170974.0
+     170890.0
+    ],
+    [
+     "15:23",
+     170916.0
     ]
    ]
   },
@@ -588,7 +592,11 @@
     ],
     [
      "15:35",
-     5.6462
+     5.6487
+    ],
+    [
+     "15:38",
+     5.6491
     ]
    ]
   },
@@ -1351,7 +1359,7 @@
     "tickers": [
      "AZUL4"
     ],
-    "ibov30": -0.03,
+    "ibov30": -0.08,
     "dolar30": 0.03
    },
    {
@@ -1365,7 +1373,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.01,
     "dolar30": 0.03
    },
    {
@@ -1395,7 +1403,7 @@
      "HAPV3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.13
    },
    {
     "hora": "15:15",
@@ -2432,7 +2440,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:35-03:00",
+ "atualizado_em": "2026-11-12T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2449,7 +2457,7 @@
    "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T15:34-03:00",
+   "publicado": "2026-11-12T15:36-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -2593,6 +2601,19 @@
    "tickers": []
   },
   {
+   "titulo": "Azul tem queda de 1,8% na receita líquida no terceiro trimestre",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/azul-tem-queda-de-18-na-receita-liquida-no-terceiro-trimestre.shtml",
+   "publicado": "2026-11-12T14:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
+  },
+  {
    "titulo": "Petrobras avalia alterar regras para atender política de preços de combustíveis",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQlBVVU9rMjBxRzJTZW1JWmR5WTVHWEk1UXJPNWwwY3ZtWFd3WU9CQTVjRDVZelFiS21xVjZETHRVLTQ5OFlUdm9lNXpkR3VITFd2OWlZbk56X25HMGRjT2NCNklEbExGY1V1cUE4cWhMR3ZjUWYxMUU3UC1GSFAzSnl5bF9oaXZHY0w1a1pHT0FnU3RBZGZoVzJ0MU4wUDBTckRtSm5aM29uWFkzWjhr?oc=5",
@@ -2604,18 +2625,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Além da Bolsa: como dólar e juros altos podem ameaçar investimentos e empregos",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNGw2Yk03aTZpamtKdHN3LWFzblZTVDFqQjkwbVNhZFByRnNrTnQycS1BblNkUUVnekNaaVFtZ0I2U3paVFRwdWVrY2Q4RTdtYjRGa3FDTlAxY2RDTDdkTDJmTFZlZzZRb25mQzZvMHF1Y0h5NFFMV054WVVjMWphRHh4NENUNlpmX1JvOEJVMFNqMzVkWEVFUHBFMDNYTTR0VkdYYkphLTl6S3hSeGowYjd30gG3AUFVX3lxTE1WejhSMWFfVXlIRzRyU1dISm15d3J3OEplYmNIZTNFR29malBrV0ZCUmtLNkNEVDJybTYwaTdQclZ0UFVraFQzQThzejZwUXdCTU1ocHhrb3FFaGxoZHFtYmJJSHdWZGl6alA2QmdNOHptQW1IVzVNQlBOR0FPMzZtLUtNQ1FEb1JVWVVWVVVnOHBBOG12ZjR1aldZUTlQaGZNWlRCem1pUHoxMlMwdHRXWThPcWJaMA?oc=5",
-   "publicado": "2026-11-12T13:36-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
