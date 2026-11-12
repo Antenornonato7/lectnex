@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T14:03-03:00",
+  "atualizado_em": "2026-11-12T14:05-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -187,11 +187,11 @@
     ],
     [
      "13:45",
-     171423.0
+     171398.0
     ],
     [
-     "13:48",
-     171397.0
+     "13:50",
+     171409.0
     ]
    ]
   },
@@ -440,11 +440,11 @@
     ],
     [
      "14:00",
-     5.6327
+     5.6303
     ],
     [
-     "14:03",
-     5.6339
+     "14:05",
+     5.6298
     ]
    ]
   },
@@ -1024,7 +1024,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": -0.18,
     "dolar30": 0.19
    },
    {
@@ -1039,7 +1039,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.15
+    "dolar30": 0.08
    },
    {
     "hora": "13:44",
@@ -1053,6 +1053,32 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:55",
+    "titulo": "Jim Cramer on why Nvidia shares are not down more — plus, 3 stocks to buy",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/investingclub/2026/11/12/jim-cramer-on-why-nvidia-shares-are-not-down-more-plus-3-stocks-to-buy.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:03",
+    "titulo": "Jensen Huang's Nvidia exit casts shadow over Wall Street’s $500 billion AI financing bet",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1872,6 +1898,28 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Jim Cramer on why Nvidia shares are not down more — plus, 3 stocks to buy",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/12/jim-cramer-on-why-nvidia-shares-are-not-down-more-plus-3-stocks-to-buy.html",
+   "publicado": "2026-11-12T13:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Jensen Huang's Nvidia exit casts shadow over Wall Street’s $500 billion AI financing bet",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html",
+   "publicado": "2026-11-12T14:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1901,7 +1949,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T14:03-03:00",
+ "atualizado_em": "2026-11-12T14:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1914,6 +1962,28 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Jensen Huang's Nvidia exit casts shadow over Wall Street’s $500 billion AI financing bet",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html",
+   "publicado": "2026-11-12T14:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Jim Cramer on why Nvidia shares are not down more — plus, 3 stocks to buy",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/12/jim-cramer-on-why-nvidia-shares-are-not-down-more-plus-3-stocks-to-buy.html",
+   "publicado": "2026-11-12T13:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Petrobras avalia alterar regras para atender política de preços de combustíveis",
    "fonte": "Money Times",
@@ -1976,17 +2046,17 @@
    "tickers": []
   },
   {
-   "titulo": "10-year Treasury yield jumps back above 5% as oil gains and more Fed rate hikes expected",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html",
-   "publicado": "2026-11-12T13:04-03:00",
-   "impacto": "alto",
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa cai com pressão de BBAS3 e IPCA; fiscal segue no radar",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNTY4RS10S0VHVVVielFWNmJEMFdPcUhFS19NRDVNbElFYlRSYzVuS2Jra1BoSEJsUUlua0dWZWV6WGNDNU5KMDVjUnRBcktMaFRuakxoVGp5eHZlcGlpNjVBVm51YXdraXJaUVIyYUY2QWNFZ1BYRE1SZmlkYzB0d0dLUVFYUFNUU2J2ckM2dw?oc=5",
+   "publicado": "2026-11-12T13:09-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
+    "WIN"
    ],
-   "tickers": []
+   "tickers": [
+    "BBAS3"
+   ]
   },
   {
    "titulo": "Governo quer tirar subvenção ao diesel da meta fiscal para evitar contenção extra de gastos neste ano",
@@ -2022,33 +2092,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "O que explica a disparada de Azzas 2154 (AZZA3) após o balanço do 3T26? Citi e BTG respondem",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNzF3dk9YOTRGV0wxV0xEZzk1S2JCeE9wN19qYmJNeEtqakp2WTB2WWVnZzc5V3V4b0U0X3ZCMFFEVWhqVkgycWlwSWlTSjdTME5wOUVkTFhldlZxcTJ6RnVPZGlBSmxybnBHelpoeFVaQ0RkaUFEZEhDeURGdVVSTHFJelFFc1Zoa0ZrYldxR1NfTHFyQmRCclN1VG55TVgxN3FhSVZTVEdOVDh3UEpSMlhkV285VGhEMDhjOEpiNVVMY0E?oc=5",
-   "publicado": "2026-11-12T12:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AZZA3",
-    "BPAC11"
-   ]
-  },
-  {
-   "titulo": "Azul reduz prejuízo no 3º trimestre, mas custos mantêm pressão sobre as operações",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/negocios/azul-reduz-prejuizo-no-3-trimestre-mas-custos-mantem-pressao-sobre-as-operacoes/",
-   "publicado": "2026-11-12T12:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AZUL4"
-   ]
   },
   {
    "titulo": "Lula não parece convencido a conciliar ajuste fiscal moderado e promessas de campanha, diz Giambiagi",
