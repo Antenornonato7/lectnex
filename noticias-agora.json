@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:48-03:00",
+  "atualizado_em": "2026-11-12T15:50-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -271,11 +271,11 @@
     ],
     [
      "15:30",
-     170981.0
+     170955.0
     ],
     [
-     "15:33",
-     170938.0
+     "15:35",
+     170977.0
     ]
    ]
   },
@@ -608,11 +608,11 @@
     ],
     [
      "15:45",
-     5.6524
+     5.6507
     ],
     [
-     "15:48",
-     5.6514
+     "15:50",
+     5.6503
     ]
    ]
   },
@@ -1403,7 +1403,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.12,
+    "ibov30": 0.11,
     "dolar30": 0.03
    },
    {
@@ -1449,22 +1449,24 @@
      "HAPV3"
     ],
     "ibov30": null,
-    "dolar30": 0.14
+    "dolar30": 0.11
+   },
+   {
+    "hora": "15:26",
+    "titulo": "Lula pode fazer um ajuste fiscal sem quebrar promessas de campanha, diz Samuel Pessôa",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/lula-pode-fazer-um-ajuste-fiscal-sem-quebrar-promessas-de-campanha-diz-samuel-pessoa/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Maior alta do Ibovespa em 2025, Cogna cai 52% em 2026; CEO explica o que mudou",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZFR4ekh0V21kNk85MDdzRjNMUjc1Q0wxZzBGdmZ6bTZqdTJPWUJvTzZ5ZTIxRXMwZDRqZldETzNyOXRLZ3paQXlxRzhDTVUtQnNoTWc0bXNOSkptU2VNWTVHVGtYV2lab1Z3SHkyVlBtYUt0SURJMkswYmFvSFFWVU85UHpXRjUta1dmTV9oWUNyZlBBUW1qOWJJUzFsRnRlNWJXX2dFdmFOSmI3V3Qw?oc=5",
-   "publicado": "2026-11-12T05:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Chance de ajuste fiscal reduz prêmio de risco nos ativos",
    "fonte": "Valor",
@@ -2427,6 +2429,17 @@
    "tickers": [
     "HAPV3"
    ]
+  },
+  {
+   "titulo": "Lula pode fazer um ajuste fiscal sem quebrar promessas de campanha, diz Samuel Pessôa",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lula-pode-fazer-um-ajuste-fiscal-sem-quebrar-promessas-de-campanha-diz-samuel-pessoa/",
+   "publicado": "2026-11-12T15:26-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2456,7 +2469,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:48-03:00",
+ "atualizado_em": "2026-11-12T15:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2489,6 +2502,17 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Lula pode fazer um ajuste fiscal sem quebrar promessas de campanha, diz Samuel Pessôa",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lula-pode-fazer-um-ajuste-fiscal-sem-quebrar-promessas-de-campanha-diz-samuel-pessoa/",
+   "publicado": "2026-11-12T15:26-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2628,18 +2652,6 @@
    "tickers": [
     "AZUL4"
    ]
-  },
-  {
-   "titulo": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
-   "publicado": "2026-11-12T13:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
