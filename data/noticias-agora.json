@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T11:38-03:00",
+  "atualizado_em": "2026-11-12T12:08-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -71,11 +71,35 @@
     ],
     [
      "11:20",
-     170920.0
+     170913.0
     ],
     [
-     "11:23",
-     170873.0
+     "11:25",
+     170735.0
+    ],
+    [
+     "11:30",
+     170820.0
+    ],
+    [
+     "11:35",
+     170877.0
+    ],
+    [
+     "11:40",
+     170626.0
+    ],
+    [
+     "11:45",
+     170209.0
+    ],
+    [
+     "11:50",
+     170339.0
+    ],
+    [
+     "11:53",
+     170337.0
     ]
    ]
   },
@@ -208,11 +232,35 @@
     ],
     [
      "11:35",
-     5.6018
+     5.6044
     ],
     [
-     "11:38",
-     5.604
+     "11:40",
+     5.609
+    ],
+    [
+     "11:45",
+     5.6148
+    ],
+    [
+     "11:50",
+     5.6153
+    ],
+    [
+     "11:55",
+     5.6174
+    ],
+    [
+     "12:00",
+     5.6203
+    ],
+    [
+     "12:05",
+     5.6188
+    ],
+    [
+     "12:08",
+     5.6198
     ]
    ]
   },
@@ -538,7 +586,7 @@
     "tickers": [
      "UGPA3"
     ],
-    "ibov30": -0.0,
+    "ibov30": -0.08,
     "dolar30": 0.08
    },
    {
@@ -552,7 +600,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.08,
     "dolar30": 0.08
    },
    {
@@ -567,7 +615,7 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": null,
+    "ibov30": -0.01,
     "dolar30": 0.02
    },
    {
@@ -580,8 +628,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.35,
+    "dolar30": 0.2
    },
    {
     "hora": "11:24",
@@ -593,8 +641,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.34,
+    "dolar30": 0.23
    },
    {
     "hora": "11:24",
@@ -604,6 +652,63 @@
     "impacto": "alto",
     "ativos": [
      "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.34,
+    "dolar30": 0.23
+   },
+   {
+    "hora": "11:24",
+    "titulo": "Dólar sobe e Ibovespa cai com foco no fiscal; ações do BB têm queda forte",
+    "fonte": "Folha",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeVlLOWN4QkVwaW1XOFEycmIxVkI1VVJ0YUY1aklxb2ZuMmVtenZmeTRjaXBYcXYydk1JT2xnSnN6c0ZIdEZsS2NnRENwX3lBc0E2Yk43LWNlOVlsQ1pyX1FKY0xFaFVPdk13cG80Yms0dXhDOVY0Y2RzXzUzT0JQM0R1UkI3Tk1OUGhzQXZlVlZXUjdxdmNaVDRRNjFVVU5xVUI2NEsweFZ4Njh4UTBuWmpjT09NOXExaGV0QWVqZjQ3UQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.34,
+    "dolar30": 0.23
+   },
+   {
+    "hora": "11:27",
+    "titulo": "Banco do Brasil: veja como 5 casas avaliam BBAS3 após o balanço do 3T26 que assustou o mercado",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLV9IZnUzQTk4UGg5VHBKaHp0aHM1eFA2OHpad0FmRVRWYmJxSnNDQ3NnOWwxeDNYaC1od1ZSY2Y3VF9uRzl1Ykx4cjNxdTNiVGY3d2JFMXdhQXlOXzBwTjRQZ3V6dG5LdVB5SkpvOEtzNkJGelpZeTUxYk43bXBaVjZxSGlja3E0OFkxbmlScVlnU09yREZpNkhENHJyTGV6OHR4aFBmOXpmaGM5c2phUVVmZG1pZ19rNlRjM191bHBza0pVMTlhNmlHWDItSlZZY3A3Y3N5SnUwUkwtdjZIRmMzSzJaTnPSAewBQVVfeXFMUGdlOWFrMXBESDhGbTBSOHVRY2ZFdkFxYVRTaE40dGxSMDcyRXZWSnFJdmZGQk54MEpFdXFuaU1jYTlqQk44TXBqOW5CWWIyWWRmbGJ2Nm5Wbkx1X0dHeFJyR3lXOUZRQmp5SFUzLWswQnNHb3ExWnhBTWppYm41eVNYNFc4eEg0RTRMcVJlUzEzZmFiLWE1MkJqLWcybmtERnhtYl8tX0UteURrQ0ZkN011VFRuX2g1bmswa0F2V2ZTdS1ZS29ZZDN0QURoazVmVjVDYkFzcnN1ZzRRSHF3MzlTMzBhbngybFdnV0Y?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBAS3"
+    ],
+    "ibov30": -0.23,
+    "dolar30": 0.2
+   },
+   {
+    "hora": "11:40",
+    "titulo": "Inflação de alimentos é a maior em quatro anos, com destaque para alta de tomate e cebola",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-de-alimentos-e-a-maior-em-quatro-anos-com-destaque-para-alta-de-tomate-e-cebola.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.17
+   },
+   {
+    "hora": "11:44",
+    "titulo": "IPCA tem alívio em serviços e núcleos, mas alimentos devem manter Copom em cautela",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV0h1RUVEdGpWSm10VXllVHpBMWV0bWN5RFFicHVaRUttRjAzbG44MzBDUU9XOGtfSVFscm9TM2RQMGZZODg1azBIdTYtUm5aa1g4RVpCandoQUx6Nm9vNjI2MVNFV2hsYjl3aFJ5ZUE3OUxVSk5mT1FORkZadVhMOC1fU3ZHbTE3dFhMM3U2X21NZ9IBlwFBVV95cUxNendYbWQwYmZfYWFBNWdGNEtmNldybjl4V25Sb0tiX1AtSktVMG54ZTQ4eEZ1ZWZmaEdPdEF6UFdUa1dKWHRBTng2eExiZXZ5NFdaUEdTTy16aXdLMldIYVlWQ3FZVWRJRDJtanB1Z2VOaDRXeWhaalZJODVKSmJYclhnNkYyUmZTOU5mNUFZcG55ZWhXVEJF?oc=5",
+    "impacto": "alto",
+    "ativos": [
      "WDO",
      "DI"
     ],
@@ -1244,6 +1349,55 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe e Ibovespa cai com foco no fiscal; ações do BB têm queda forte",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeVlLOWN4QkVwaW1XOFEycmIxVkI1VVJ0YUY1aklxb2ZuMmVtenZmeTRjaXBYcXYydk1JT2xnSnN6c0ZIdEZsS2NnRENwX3lBc0E2Yk43LWNlOVlsQ1pyX1FKY0xFaFVPdk13cG80Yms0dXhDOVY0Y2RzXzUzT0JQM0R1UkI3Tk1OUGhzQXZlVlZXUjdxdmNaVDRRNjFVVU5xVUI2NEsweFZ4Njh4UTBuWmpjT09NOXExaGV0QWVqZjQ3UQ?oc=5",
+   "publicado": "2026-11-12T11:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil: veja como 5 casas avaliam BBAS3 após o balanço do 3T26 que assustou o mercado",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLV9IZnUzQTk4UGg5VHBKaHp0aHM1eFA2OHpad0FmRVRWYmJxSnNDQ3NnOWwxeDNYaC1od1ZSY2Y3VF9uRzl1Ykx4cjNxdTNiVGY3d2JFMXdhQXlOXzBwTjRQZ3V6dG5LdVB5SkpvOEtzNkJGelpZeTUxYk43bXBaVjZxSGlja3E0OFkxbmlScVlnU09yREZpNkhENHJyTGV6OHR4aFBmOXpmaGM5c2phUVVmZG1pZ19rNlRjM191bHBza0pVMTlhNmlHWDItSlZZY3A3Y3N5SnUwUkwtdjZIRmMzSzJaTnPSAewBQVVfeXFMUGdlOWFrMXBESDhGbTBSOHVRY2ZFdkFxYVRTaE40dGxSMDcyRXZWSnFJdmZGQk54MEpFdXFuaU1jYTlqQk44TXBqOW5CWWIyWWRmbGJ2Nm5Wbkx1X0dHeFJyR3lXOUZRQmp5SFUzLWswQnNHb3ExWnhBTWppYm41eVNYNFc4eEg0RTRMcVJlUzEzZmFiLWE1MkJqLWcybmtERnhtYl8tX0UteURrQ0ZkN011VFRuX2g1bmswa0F2V2ZTdS1ZS29ZZDN0QURoazVmVjVDYkFzcnN1ZzRRSHF3MzlTMzBhbngybFdnV0Y?oc=5",
+   "publicado": "2026-11-12T11:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
+  },
+  {
+   "titulo": "Inflação de alimentos é a maior em quatro anos, com destaque para alta de tomate e cebola",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-de-alimentos-e-a-maior-em-quatro-anos-com-destaque-para-alta-de-tomate-e-cebola.shtml",
+   "publicado": "2026-11-12T11:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "IPCA tem alívio em serviços e núcleos, mas alimentos devem manter Copom em cautela",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV0h1RUVEdGpWSm10VXllVHpBMWV0bWN5RFFicHVaRUttRjAzbG44MzBDUU9XOGtfSVFscm9TM2RQMGZZODg1azBIdTYtUm5aa1g4RVpCandoQUx6Nm9vNjI2MVNFV2hsYjl3aFJ5ZUE3OUxVSk5mT1FORkZadVhMOC1fU3ZHbTE3dFhMM3U2X21NZ9IBlwFBVV95cUxNendYbWQwYmZfYWFBNWdGNEtmNldybjl4V25Sb0tiX1AtSktVMG54ZTQ4eEZ1ZWZmaEdPdEF6UFdUa1dKWHRBTng2eExiZXZ5NFdaUEdTTy16aXdLMldIYVlWQ3FZVWRJRDJtanB1Z2VOaDRXeWhaalZJODVKSmJYclhnNkYyUmZTOU5mNUFZcG55ZWhXVEJF?oc=5",
+   "publicado": "2026-11-12T11:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1273,7 +1427,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T11:38-03:00",
+ "atualizado_em": "2026-11-12T12:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1289,6 +1443,29 @@
  ],
  "noticias": [
   {
+   "titulo": "IPCA tem alívio em serviços e núcleos, mas alimentos devem manter Copom em cautela",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV0h1RUVEdGpWSm10VXllVHpBMWV0bWN5RFFicHVaRUttRjAzbG44MzBDUU9XOGtfSVFscm9TM2RQMGZZODg1azBIdTYtUm5aa1g4RVpCandoQUx6Nm9vNjI2MVNFV2hsYjl3aFJ5ZUE3OUxVSk5mT1FORkZadVhMOC1fU3ZHbTE3dFhMM3U2X21NZ9IBlwFBVV95cUxNendYbWQwYmZfYWFBNWdGNEtmNldybjl4V25Sb0tiX1AtSktVMG54ZTQ4eEZ1ZWZmaEdPdEF6UFdUa1dKWHRBTng2eExiZXZ5NFdaUEdTTy16aXdLMldIYVlWQ3FZVWRJRDJtanB1Z2VOaDRXeWhaalZJODVKSmJYclhnNkYyUmZTOU5mNUFZcG55ZWhXVEJF?oc=5",
+   "publicado": "2026-11-12T11:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Inflação de alimentos é a maior em quatro anos, com destaque para alta de tomate e cebola",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-de-alimentos-e-a-maior-em-quatro-anos-com-destaque-para-alta-de-tomate-e-cebola.shtml",
+   "publicado": "2026-11-12T11:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa perde força com pressão da queda do BB, incertezas fiscais e cautela com techs",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRUFCcG9hbGhDN0lFQUNfcFZIdW43dGxoS052RUZVbHlSRnlSS3BCZmpNN1dwQ2JJSDlJZkRJZFBIQWhydGpxdkRVZHRUekVKQmh0Q3Z5MjQybC1rT3daanl1VHBFMngzM0Y2djlQWnpFNjZsYnhCaTMtTjN5ZjFPbjBJSlZPeVBjY2VQb2lrckllYlpvb25COTV6MTc0UkZhNzFOXzVfb1BWVWhoS241eHM0U2NtaGZyVEtwbld3?oc=5",
@@ -1300,9 +1477,22 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar sobe e Ibovespa cai com foco no fiscal; ações do BB têm queda forte",
+   "titulo": "Dólar sobe e Ibovespa cai em meio à insatisfação do mercado com pacote fiscal",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-sobe-e-ibovespa-cai-com-foco-no-fiscal-acoes-do-bb-tem-queda-forte.shtml",
+   "publicado": "2026-11-12T11:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe e Ibovespa cai com foco no fiscal; ações do BB têm queda forte",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeVlLOWN4QkVwaW1XOFEycmIxVkI1VVJ0YUY1aklxb2ZuMmVtenZmeTRjaXBYcXYydk1JT2xnSnN6c0ZIdEZsS2NnRENwX3lBc0E2Yk43LWNlOVlsQ1pyX1FKY0xFaFVPdk13cG80Yms0dXhDOVY0Y2RzXzUzT0JQM0R1UkI3Tk1OUGhzQXZlVlZXUjdxdmNaVDRRNjFVVU5xVUI2NEsweFZ4Njh4UTBuWmpjT09NOXExaGV0QWVqZjQ3UQ?oc=5",
    "publicado": "2026-11-12T11:24-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1338,19 +1528,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ações do Banco do Brasil tombam quase 9% após corte de dividendos e balanço pior que o esperado",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZjFVNjNIVkptRjlnZE9kVVd1dkJXdFRGU0NxNGdoWjFvaU5NckpwVS1zMzZqM0hNczJsLTUtTkZHNUh5bndISG1jZXB5NHNVSHRJVXZjemxaOURuQnBiYzVzWVM4RktlVWRIVW9kN2k0Sk5kWDR3WUllZnlvc0tGRWttSjBQQ2YyMUtVdFNwUlRtYm9aZGxRaEllbEFrWVFzNm5YdlhyYnJDQ3BCLWVJVkMwZVdhRTdicDNiWGN6dHRMME9MNlRNemkxZUI2STBoUU9weVdSZlJ6NUFQLWRacGN30gHnAUFVX3lxTE5tSHVjT1pHMFIzeE1fQlMzc3NoY0poVmRFTDAtUXpqM21UTlZoYWdkQ1FHMTI4NVNjT3hZSG9ERll0M196VkxTSGRSaEhtZkNRcHpLOWZTQjJLRGFHcUliamtZS3lpaTBGWkdKaWZtbW0tTk9VbEZCU0tVVlN6QVBrX3VBUnZzRGRmSTkyd0Q5QTVxbzZSQ0NtLUF5aS1rdWM3d3NXR18yVU8zdTZMRzg2V2RlVHd3Y0xkeHh5dTE2TF9RSk41cGMwQmZZM1BmeW1pOXNzRV9yUXpTYW1RalpPaFVyb1RxTQ?oc=5",
-   "publicado": "2026-11-12T11:21-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
-  },
-  {
    "titulo": "Wall Street deve abrir em queda após saída de CEO da Nvidia",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUVhVdURSUUhSWjNaZVlpdDNrYzhTcTRoZDROdUd3eWxnYWVSenhwUmM5dWlFS2d0N09zY1ZZbzktUG1YdWtPanVKd25iWWgwSUN4eXUyZHBDNHFMOWZfOE9SUHVyNHpEeGp6SjJDeUJ6RUh2Vmh2ZFBRMHFSaWd3ZEZEYkc3bXRp?oc=5",
@@ -1362,14 +1539,26 @@
    "tickers": []
   },
   {
-   "titulo": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
-   "publicado": "2026-11-12T11:00-03:00",
-   "impacto": "medio",
+   "titulo": "Dólar hoje sobe e bate R$ 5,60 com pacote fiscal e IPCA no radar",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPemVLNkFlOHhid29adEc1NDlsaHFNUy1WbVBERC1TSHkzQUl6X1VYRlhqa1p1VzQySEZKVWFoSDJpMlhhQW4zN0xUNVhyVGdjUUtIS1NMRl9qVVhCck5PUkJXVGI1cnNWVnZ5bDBlalZBLVdhVHg5am1nalVFR1duYi1pSVFWLXpma0hEVnBEZ19hM2R2enhiWGFzZTHSAaIBQVVfeXFMT3loMTFuN3B6YTc3a1hMR0UwX3pMVjJ4UTc2SXRyZ1ZOZy1PWnZfQkQ2Qm9tT1ZqMjV3d2hlakZDdm1jdVFRSHBtVzc1aUZqUHZXSGVIMEVDdmF2OTRsc0tucmdKNm00SnE1U04xTWJxNEJWWW92dlJOSUpyWUFDVHlJMFMxYW5uMXNLS0N6RGw3UWdMUWhLS1V2bjJhTFljMy1R?oc=5",
+   "publicado": "2026-11-12T11:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tempo real: Ibovespa cai após IPCA de outubro e com ajuste fiscal no radar",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KS0JSVjdFaWdXNk1fRml1amlFd3Jhd2V1bHFfR3pHaElQaUpCYnVvSGRuY0U3RU1nVW9VWmlMZnB1UHFSLVBNS1lNZ1VEOERVd1NrcWZQTDdTUkc2NC1TOGJ3b3VMdw?oc=5",
+   "publicado": "2026-11-12T11:08-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
+    "DI"
    ],
    "tickers": []
   },
@@ -1399,32 +1588,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ultrapar, dona da Ipiranga, tem alta anual de 349% no lucro do 3º trimestre",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468045",
-   "publicado": "2026-11-12T10:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "UGPA3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa cai com pressão de BBAS3 e IPCA; fiscal segue no radar",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNTY4RS10S0VHVVVielFWNmJEMFdPcUhFS19NRDVNbElFYlRSYzVuS2Jra1BoSEJsUUlua0dWZWV6WGNDNU5KMDVjUnRBcktMaFRuakxoVGp5eHZlcGlpNjVBVm51YXdraXJaUVIyYUY2QWNFZ1BYRE1SZmlkYzB0d0dLUVFYUFNUU2J2ckM2dw?oc=5",
-   "publicado": "2026-11-12T10:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
-  },
-  {
    "titulo": "Ibovespa cai após IPCA e de olho no ajuste fiscal do governo Lula; 5 coisas para saber antes de investir hoje (12)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZDZiZGJ3b0dmNW93RmZSRUFVa0FrR09nTDBnbEh1WjNPelE2dW9jdU9BalJTbmdqeUhtdnhQZmNZaU4wbERIalBxbUVMT0ZFTUZMUFJtc0xkVTc5ZFBtbjdVQW9kUXVZNWlxbkpmZXd5N2pmQ09tSXhSOUtHSldHamFmdVJVcXpYdTN4Q0RfNVFsXzU4N0JhMnV0WFdKSG0wc2x6YzJYVFdrUTNpSXRSaDZTNElWME8td2NYemQ5QnFrY0J6QlRzSkpUNzVyT0VtY2dHV2l5Z2RBTVE2dzgzUA?oc=5",
@@ -1450,26 +1613,13 @@
    ]
   },
   {
-   "titulo": "Tempo real: Ibovespa cai após IPCA de outubro e com ajuste fiscal no radar",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KS0JSVjdFaWdXNk1fRml1amlFd3Jhd2V1bHFfR3pHaElQaUpCYnVvSGRuY0U3RU1nVW9VWmlMZnB1UHFSLVBNS1lNZ1VEOERVd1NrcWZQTDdTUkc2NC1TOGJ3b3VMdw?oc=5",
-   "publicado": "2026-11-12T10:29-03:00",
-   "impacto": "alto",
+   "titulo": "Ibovespa cai com mau humor local; ações do BB despencam",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQamV0b3l4S2ZnR0xvcXd3dDlNVTNoZ08yd0lqb1NWTGlIdlozQXlqUERDT0tIMFcyYnMxZXJBSWp0dzVwdTdJMWQtM3prOG1GRVQ4RUNOUHFkZGhDVC1tMVFUaGR0SE1TU0ZKSm80VEpBYXlCemZVekJfY2tXVUhmcW12SkQtVk8tUHlYa2EtOXhDSkgyakhxY2VwT0ZvS0psd3RxVktveG1jXzJQX1dVX1hR0gHAAUFVX3lxTE9fN2dFWVBjcU9oQVhQQ1BqaTJoQnFlVjNibGNIS19ybjdneGVmcXRHY3g4emluQmZRNEl2OWtudU9nV1R6Uzlncy1yRnpPQ3BEVUo2cHRrR2I2SEprUWt4LURCeVpycWZaV0I3OXdFQldjTFZtZ3ZEbHZCUE15bThsN2xkUlR3ME1JNTFNaGJsNlVRdUsweTBsbnFuNmJEdFAtaWNzNm5waUlhRUlGdExlOURLQ1ZrR29wbDg3T0pBTg?oc=5",
+   "publicado": "2026-11-12T10:34-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje sobe e se aproxima novamente de R$ 5,60 com pacote fiscal e IPCA no radar",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPemVLNkFlOHhid29adEc1NDlsaHFNUy1WbVBERC1TSHkzQUl6X1VYRlhqa1p1VzQySEZKVWFoSDJpMlhhQW4zN0xUNVhyVGdjUUtIS1NMRl9qVVhCck5PUkJXVGI1cnNWVnZ5bDBlalZBLVdhVHg5am1nalVFR1duYi1pSVFWLXpma0hEVnBEZ19hM2R2enhiWGFzZTHSAaIBQVVfeXFMT3loMTFuN3B6YTc3a1hMR0UwX3pMVjJ4UTc2SXRyZ1ZOZy1PWnZfQkQ2Qm9tT1ZqMjV3d2hlakZDdm1jdVFRSHBtVzc1aUZqUHZXSGVIMEVDdmF2OTRsc0tucmdKNm00SnE1U04xTWJxNEJWWW92dlJOSUpyWUFDVHlJMFMxYW5uMXNLS0N6RGw3UWdMUWhLS1V2bjJhTFljMy1R?oc=5",
-   "publicado": "2026-11-12T09:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
+    "WIN"
    ],
    "tickers": []
   },
