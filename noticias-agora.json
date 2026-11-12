@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T16:03-03:00",
+  "atualizado_em": "2026-11-12T16:05-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -283,11 +283,11 @@
     ],
     [
      "15:45",
-     170900.0
+     170877.0
     ],
     [
-     "15:48",
-     170862.0
+     "15:50",
+     170896.0
     ]
    ]
   },
@@ -632,11 +632,11 @@
     ],
     [
      "16:00",
-     5.653
+     5.65
     ],
     [
-     "16:03",
-     5.651
+     "16:05",
+     5.6485
     ]
    ]
   },
@@ -1488,7 +1488,7 @@
     "tickers": [
      "HAPV3"
     ],
-    "ibov30": -0.02,
+    "ibov30": -0.03,
     "dolar30": 0.11
    },
    {
@@ -2529,7 +2529,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T16:03-03:00",
+ "atualizado_em": "2026-11-12T16:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2543,10 +2543,22 @@
  ],
  "noticias": [
   {
+   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+   "publicado": "2026-11-12T16:05-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T15:58-03:00",
+   "publicado": "2026-11-12T16:04-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -2566,18 +2578,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
-   "publicado": "2026-11-12T15:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Lula pode fazer um ajuste fiscal sem quebrar promessas de campanha, diz Samuel Pessôa",
@@ -2690,6 +2690,19 @@
    ]
   },
   {
+   "titulo": "Banco do Brasil: veja como 5 casas avaliam BBAS3 após o balanço do 3T26 que assustou o mercado",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLV9IZnUzQTk4UGg5VHBKaHp0aHM1eFA2OHpad0FmRVRWYmJxSnNDQ3NnOWwxeDNYaC1od1ZSY2Y3VF9uRzl1Ykx4cjNxdTNiVGY3d2JFMXdhQXlOXzBwTjRQZ3V6dG5LdVB5SkpvOEtzNkJGelpZeTUxYk43bXBaVjZxSGlja3E0OFkxbmlScVlnU09yREZpNkhENHJyTGV6OHR4aFBmOXpmaGM5c2phUVVmZG1pZ19rNlRjM191bHBza0pVMTlhNmlHWDItSlZZY3A3Y3N5SnUwUkwtdjZIRmMzSzJaTnPSAewBQVVfeXFMUGdlOWFrMXBESDhGbTBSOHVRY2ZFdkFxYVRTaE40dGxSMDcyRXZWSnFJdmZGQk54MEpFdXFuaU1jYTlqQk44TXBqOW5CWWIyWWRmbGJ2Nm5Wbkx1X0dHeFJyR3lXOUZRQmp5SFUzLWswQnNHb3ExWnhBTWppYm41eVNYNFc4eEg0RTRMcVJlUzEzZmFiLWE1MkJqLWcybmtERnhtYl8tX0UteURrQ0ZkN011VFRuX2g1bmswa0F2V2ZTdS1ZS29ZZDN0QURoazVmVjVDYkFzcnN1ZzRRSHF3MzlTMzBhbngybFdnV0Y?oc=5",
+   "publicado": "2026-11-12T14:25-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
+  },
+  {
    "titulo": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
@@ -2702,16 +2715,16 @@
    "tickers": []
   },
   {
-   "titulo": "Azul tem queda de 1,8% na receita líquida no terceiro trimestre",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/azul-tem-queda-de-18-na-receita-liquida-no-terceiro-trimestre.shtml",
-   "publicado": "2026-11-12T14:05-03:00",
+   "titulo": "Magalu salta mais de 11% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
+   "publicado": "2026-11-12T14:22-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
    ],
    "tickers": [
-    "AZUL4"
+    "MGLU3"
    ]
   },
   {
@@ -2726,17 +2739,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Governo quer tirar subvenção ao diesel da meta fiscal para evitar contenção extra de gastos neste ano",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-quer-tirar-subvencao-ao-diesel-da-meta-fiscal-para-evitar-contencao-extra-de-gastos-neste-ano.shtml",
-   "publicado": "2026-11-12T13:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
