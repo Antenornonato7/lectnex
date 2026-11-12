@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T10:08-03:00",
+  "atualizado_em": "2026-11-12T10:38-03:00",
+  "ibov": {
+   "anterior": 172060.44,
+   "pontos": [
+    [
+     "10:00",
+     171173.0
+    ],
+    [
+     "10:05",
+     170673.0
+    ],
+    [
+     "10:10",
+     170098.0
+    ],
+    [
+     "10:15",
+     170635.0
+    ],
+    [
+     "10:20",
+     170803.0
+    ],
+    [
+     "10:23",
+     170907.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.5829,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.6077
+     5.6166
     ],
     [
-     "10:08",
-     5.6098
+     "10:10",
+     5.6163
+    ],
+    [
+     "10:15",
+     5.6107
+    ],
+    [
+     "10:20",
+     5.6049
+    ],
+    [
+     "10:25",
+     5.607
+    ],
+    [
+     "10:30",
+     5.6096
+    ],
+    [
+     "10:35",
+     5.6121
+    ],
+    [
+     "10:38",
+     5.6121
     ]
    ]
   },
@@ -78,6 +131,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.22
    },
    {
@@ -90,6 +144,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.12
    },
    {
@@ -104,6 +159,7 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
     "dolar30": 0.12
    },
    {
@@ -119,6 +175,7 @@
      "EMBJ3",
      "EMBR3"
     ],
+    "ibov30": null,
     "dolar30": -0.04
    },
    {
@@ -132,6 +189,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.03
    },
    {
@@ -145,6 +203,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.16
    },
    {
@@ -159,6 +218,7 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
     "dolar30": 0.15
    },
    {
@@ -172,6 +232,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.01
    },
    {
@@ -185,6 +246,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.04
    },
    {
@@ -197,7 +259,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": 0.12
    },
    {
     "hora": "09:54",
@@ -209,6 +272,33 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.12
+   },
+   {
+    "hora": "10:11",
+    "titulo": "INPC, inflação que corrige salários, acumula 4,49% em 12 meses",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inpc-inflacao-que-corrige-salarios-acumula-449-em-12-meses",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "10:18",
+    "titulo": "Inflação perde força e fica em 0,14% em outubro; conta de luz cai",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inflacao-perde-forca-e-fica-em-014-em-outubro-conta-de-luz-cai",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -638,14 +728,31 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "INPC, inflação que corrige salários, acumula 4,49% em 12 meses",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inpc-inflacao-que-corrige-salarios-acumula-449-em-12-meses",
+   "publicado": "2026-11-12T10:11-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Inflação perde força e fica em 0,14% em outubro; conta de luz cai",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inflacao-perde-forca-e-fica-em-014-em-outubro-conta-de-luz-cai",
+   "publicado": "2026-11-12T10:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
-  {
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeVBPN2h6bEQzQ2Nac3JSdGxqY3BsZkxvWWJhZ21aQXBXZzRWWlREWjFaX3RXOFZGMVhsdTFaRnZqQmtodmxTeVA2T3VJSHVVZFJEZ216NXZqSHpsOHNDR0Y1WmJZRVZSWm5fd0VMQ3VZMUxKbk8wTkVCOUZiVWJMeG9Jc3NobHY4LW0zVVU3Q1JRYklFV2VVaU41QWNLR0FJb2ZjdllCMUFTTXpteF9nZG1HeFRNcDNvb2dqdWo0MzdCMUdWSE4xZ0xseE8?oc=5",
-   "titulo": "Ibovespa sobe com alta do petróleo e ajuste fiscal; 5 coisas para saber antes de investir hoje (11)",
-   "em": "2026-11-11T13:25:34+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZ1d6dy1zMkNNbHo0UXR5bXdhbzB6MV9qanNUUXNwTHFJWU9kX3dCcHFCLXRKVHdlV1RNNE9Yd0VkazYtVTJGOVNCRmxnYXZVbl9YeFZSU3VvZWlmTGN6aUlKakdDVjVyU2FNYmZ5M2xVMkxfdXhsWlpsRGxwVUtFbk1MLU5KVFJJWjdUelVBSTkybjA2MUdTa0QxS05HaHlJOVAtZHEtSWZQMjFFbm04cXo5SWtFSnU1ZGtMTmd4QllTbGRVQTZTT0JyVmRQbmdjZ25rMtIB4wFBVV95cUxOOFlTQ19vZDFhSTBEN1RzNzV3T3RvUTE2eG5OUlBkWDQ3Mmc1aEE4bEl3UGd2Q1hmaWgxeGFfWWNXdTR1MFcxQXkzZk14R1k1ZEdwQjJlNzZONDlVbGdqc084Vm5iUVF5WnhCUHd1WjQyQmNXWC10MUY3aUdNeXBaZUdVaXQ1N1lUNDY5bm80X0FLdGxyWXJjX3ZoRFBzMUFsSWNfS0dUUmptN3BSQlhyUFNaaE53V0taZ2djX3hILWFKWm9WZk5zQzRwTnRPNkxUWkRjNlphQUdNT0lQRHdMc21Lcw?oc=5",
    "titulo": "Ibovespa avança de olho em ajuste fiscal e balanços, apesar de queda da Petrobras",
@@ -677,7 +784,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T10:08-03:00",
+ "atualizado_em": "2026-11-12T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -692,9 +799,31 @@
  ],
  "noticias": [
   {
+   "titulo": "Inflação perde força e fica em 0,14% em outubro; conta de luz cai",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inflacao-perde-forca-e-fica-em-014-em-outubro-conta-de-luz-cai",
+   "publicado": "2026-11-12T10:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "INPC, inflação que corrige salários, acumula 4,49% em 12 meses",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inpc-inflacao-que-corrige-salarios-acumula-449-em-12-meses",
+   "publicado": "2026-11-12T10:11-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Juros futuros de longo prazo têm forte alta com má recepção à pacote fiscal",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRFcyMzBYNVF2RVAtVGRLN0ZrdnFuemJnQjhNTXlFb2wzdTBSSlJ3NWNucURJZzVzdXBIUVl5TjZLLU9ZTjRoT05lQU1CeW1Bem9LSDlRUC1XRFJxU0pSemN0SmNoMklzSHBhaXAwcC1kZ0ZrN1VLTzhZZG1oV2lvNTNzSE1DSHgtejVwc2lBOXU0cEp5T3pidk5ROWxycjF2dmIzQURpNXlFNDBaeENBXzNQYkQ0LUpiaXYtSnY2QWdodFFlcnVuUUcyUWNMQQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRFcyMzBYNVF2RVAtVGRLN0ZrdnFuemJnQjhNTXlFb2wzdTBSSlJ3NWNucURJZzVzdXBIUVl5TjZLLU9ZTjRoT05lQU1CeW1Bem9LSDlRUC1XRFJxU0pSemN0SmNoMklzSHBhaXAwcC1kZ0ZrN1VLTzhZZG1oV2lvNTNzSE1DSHgtejVwc2lBOXU0cEp5T3pidk5ROWxycjF2dmIzQURpNXlFNDBaeENBXzNQYkQ0LUpiaXYtSnY2QWdodFFlcnVuUUcyUWNMQdIB3AFBVV95cUxOOVM5bFlMUXdjR3FuUEpXNFhWQXBlZDVRWXZQaTFSREdkZWFuS0xuSS0wdnJXTXJMakFtbDNadFFEZlNEUlZ6T3JKVVdXVm1VT2tqenItUDViOEpTWG44VnJROTNBY2V6aEMtdWxZbFQwb2tnbTVlbHJEcF8tNFY1Smc5SUR5RmI3eTFmQWhVNEpKdjVEUUZEWHlTYWJzWEFUOHdiY0x2dGJKMG8wMEpVak51UUZ6Z0lJcktlYWxxOEZuSGF0eEtPemU0Y3FqNTdBZm5mMEVrMWNJMUpP?oc=5",
    "publicado": "2026-11-12T09:54-03:00",
    "impacto": "medio",
    "ativos": [
@@ -849,40 +978,18 @@
    ]
   },
   {
-   "titulo": "Banco Central decreta liquidação da Cooperagre por 'violações graves' às regras do sistema financeiro",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOck02QjBicnU1RHNzSmRvQTUtZ3ZFbHhHdk45aFNKUm0wNUdyLWJZMjZBNzBZeUtWNEtYT1ZOWHgyMUFRby04YVhKd2w5eGM3SU91TnBST0x0elc1ZzQwS19LYTEzcXU5aDlVM2ljQlZacmZhYzdiSmVQQ1hFdnNXLTd1OENTVUtiLXJLQjExd3VvcHd5Y25Hd1oxeXg3VGFmT0U0WFhNRWpFN1d3TkJyWHpXc25RaVRzVUdjVHNsZTdyLUs4N19lUDRLdnNwYzlu?oc=5",
-   "publicado": "2026-11-12T08:36-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa hoje: IPCA de outubro e balanços de bancos movimentam a Bolsa",
+   "titulo": "Ibovespa hoje: balanços de BB e BTG e inflação de outubro movimentam a Bolsa",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZFlMTExWa0FMQ21JZXhFSTE2ektCZ2hmWmNIblZyT3pjc1ctM25mcV9jUTFLMHhNQk5aMldBRHlELWpJVXZ2WnNUSVlfRDh0M0laS19OUUVuWWh3X1AwRjM3ZFVUdU00UDdITzR6RDJaNWRYcEhlMlJWcTkzTnFsLWI3Z3pUWDB4SWNuOTA5YzluYU1DdUpBdDdObFN2QTZYV1FTcGtsUGlkNGVpdUtkRUYzSXlLa2NDLVd2Q3ZrQUFGSWRscTE4X3N6ME85TzlfczVQSXNJRDAxMEZGbWZhbWpvMnRlcE1NUVE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZFlMTExWa0FMQ21JZXhFSTE2ektCZ2hmWmNIblZyT3pjc1ctM25mcV9jUTFLMHhNQk5aMldBRHlELWpJVXZ2WnNUSVlfRDh0M0laS19OUUVuWWh3X1AwRjM3ZFVUdU00UDdITzR6RDJaNWRYcEhlMlJWcTkzTnFsLWI3Z3pUWDB4SWNuOTA5YzluYU1DdUpBdDdObFN2QTZYV1FTcGtsUGlkNGVpdUtkRUYzSXlLa2NDLVd2Q3ZrQUFGSWRscTE4X3N6ME85TzlfczVQSXNJRDAxMEZGbWZhbWpvMnRlcE1NUVHSAe8BQVVfeXFMT0VDczM1ejdsVk9sZTZnWnRldUJwM3Q4WVpyNU5ScnBwMGJlY0pLNkpzdjR6RWdBWUI1M1Rrd3piLXkxMzNuZHJmRVR3bWFzbUcyeVpBd3ZXT3RQSU5OdUgxMEc5czVSRVMxQ2E2ODhzUXBmeno3SVZsOElpNkRkLXY3bE5JMlJzZ3lnLUpBUnFiazAwak13ZGZFMHpJWkFGS1RxcE91RTlUb3EyQnZ5S3Fod2k4cEtvWWR5NTVFcnJJNENMZk16aVprN0dWa25kZ2YwQWRBNE5uNlhkSnM1bmc1anUwWFFxMHpwTWJGWVE?oc=5",
    "publicado": "2026-11-12T07:48-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
     "DI"
    ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mini-índice (WINZ26): IPCA e balanços definem teste dos 175 mil pontos",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSktyUFJZRk5fS0xud0M1MDF3RmhyQjlfSHpZNFVyaEgzeDk2MmR6YzRDODFvWm11OGNYSEhmY0hWRnZTSGFvbWlJRlJfWngydDJCUVRyckhDb1Q0NW5MS2NOT2tfOS0yUFFiZWdGQ0g3TEgwZnNjeVExWFdkMjk1Z3duVGtWZGE5cWZiWjM5RmjSAZYBQVVfeXFMUFlkU3RhQ2dxeDhLRFdKLVpLTW9uWTY5STQ0Vk9YbDZKZmdHdGxIUFFCYW13b0pRWnU3RndNZ3NTaUNJSTVMY0JmQmg0Z1NXRXREQVhiRXN6N2VVYkxxc05nM25DQkZuVmZUOVpyd1NyUXYyWnpvOC01V0lxT3dyd0JBQUhMY1BTcjJfb2RfTllFdVUweDVR?oc=5",
-   "publicado": "2026-11-12T07:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
+   "tickers": [
+    "BPAC11"
+   ]
   }
  ]
 }
