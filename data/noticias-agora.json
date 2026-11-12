@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:08-03:00",
+  "atualizado_em": "2026-11-12T15:38-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -239,11 +239,35 @@
     ],
     [
      "14:50",
-     171001.0
+     171028.0
     ],
     [
-     "14:53",
-     170970.0
+     "14:55",
+     170941.0
+    ],
+    [
+     "15:00",
+     170768.0
+    ],
+    [
+     "15:05",
+     170773.0
+    ],
+    [
+     "15:10",
+     170891.0
+    ],
+    [
+     "15:15",
+     170928.0
+    ],
+    [
+     "15:20",
+     170890.0
+    ],
+    [
+     "15:23",
+     170916.0
     ]
    ]
   },
@@ -544,11 +568,35 @@
     ],
     [
      "15:05",
-     5.6442
+     5.6427
     ],
     [
-     "15:08",
+     "15:10",
+     5.6415
+    ],
+    [
+     "15:15",
      5.6447
+    ],
+    [
+     "15:20",
+     5.6457
+    ],
+    [
+     "15:25",
+     5.6485
+    ],
+    [
+     "15:30",
+     5.6477
+    ],
+    [
+     "15:35",
+     5.6487
+    ],
+    [
+     "15:38",
+     5.6491
     ]
    ]
   },
@@ -1242,6 +1290,21 @@
     "dolar30": 0.13
    },
    {
+    "hora": "14:22",
+    "titulo": "Magalu salta mais de 11% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "MGLU3"
+    ],
+    "ibov30": -0.08,
+    "dolar30": 0.1
+   },
+   {
     "hora": "14:37",
     "titulo": "Conselho da Braskem discute novas propostas de credores nesta quinta (12)",
     "fonte": "Folha",
@@ -1253,8 +1316,8 @@
     "tickers": [
      "BRKM5"
     ],
-    "ibov30": null,
-    "dolar30": 0.05
+    "ibov30": -0.16,
+    "dolar30": 0.02
    },
    {
     "hora": "14:47",
@@ -1267,8 +1330,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.05,
+    "dolar30": 0.03
    },
    {
     "hora": "14:50",
@@ -1281,8 +1344,37 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.06,
+    "dolar30": 0.01
+   },
+   {
+    "hora": "14:51",
+    "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmdGTTU3VGNxMWU0dGZqTEFBTlktSzdaNnJrUkUtRkt4NU96U1BjbWw1RzBJZGRHek1FQkpJOTJSMHM3XzRmYV9aMUFiNTlSQUhpalY5c2cxMHdrT3BDM2o3amlfVlVqb2puYXczRDNzWEN0enYzUkxPN3Bkc1hPYmFneVFVT1U3SnB5YWtGdmxlQkRNSGdKejctZUVLem9PSElFUURoLUUtYmIy?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [
+     "AZUL4"
+    ],
+    "ibov30": -0.08,
+    "dolar30": 0.03
+   },
+   {
+    "hora": "14:57",
+    "titulo": "IA pode provocar forte turbulência no mercado de trabalho dos EUA, diz Fed",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWFRMUldSeEQzRW82aHV4eWVPalQ0MzhCQURkMjk5dE5tT28zbVM3bzZMY3MzeTB0ZEd1ZFhyNW5yT3pTeWtKekZGRmNGSG9halhkOW9KbG9RRURwRVZvbXpEVTZBVF8zRzZFTGl4bjBHSjFXMUgweWJVMVdaLW16U2FLNA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.01,
+    "dolar30": 0.03
    },
    {
     "hora": "15:02",
@@ -1296,46 +1388,56 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": 0.03
+   },
+   {
+    "hora": "15:12",
+    "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNzBlcGZLV2F1NXphYnB3Yml1LWtBR09BTkl1V0N1TzNRcVQwZjBfNjhGX3NtR3pSb0hXSV9HM2pxZUQzNTQ0dkc3eFdTYXNlMDBHQjMtREtNLTlFRW5adXBKZ3d3NTJwNnRuY0FOUXpfZVdXRTNDR2lIbmV1dFdrVUh5dlB1dy1GS0tiei0xU01jWVVDaWVBRGhabHFJeXdld3NydzEzSks2SFVaM3ZGQU43NTB1UG1VUUZwZTdiWjJqVDJ6OTNqcGpfc9IB0AFBVV95cUxPOGpIcmVxTkRXX1NTdmtIU0EzMHJ2V01WemRDMEp0YkI5MkVSMWdpZUwtem0wVDBLNDFfcUhHMlN1bGM3U08xMVkyQW1uejZocXNkclJIZlFDVjdqMERLTEl3TzN4b29EMzItSUZSell2ZVpxU3lRNkUzWlpGYjFKUHBxLU5oTFFfeml0Y1VFRW9MUkVidU1Zbmc5TTFhV1BIdThUZURPTjhUaEZ3ejB0WUtVa3g4NlcxbGVHS2lxUVhxMGxpd0x0WWhuNmx1S3pZ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "HAPV3"
+    ],
+    "ibov30": null,
+    "dolar30": 0.13
+   },
+   {
+    "hora": "15:15",
+    "titulo": "BB Seguridade não está à venda, por sua rentabilidade e importância, diz CEO do BB",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObHBwUnVhTVY0WU15cEZ5TVpCSkVod0x6bG5iV2hjeVV4OUVYMzFfWEtRaHMzMUdkV2hEaENBTUd1OTFzU0htV3RMTDlzQUp4cllaanFYTUx6WDdGdzFwWkdSOHBpMDdWT2Fob2ZfWEJMOWpYWlZQeEIwbDhQdUdodmhyYVRwVlktbUJqRWtxNUJIU0tpeTdCekd0UDFuQm1UNF9GLVQ3WTVGSUZyNHpEdjlLcFh2WlRfOFVR0gHAAUFVX3lxTE0zcFlaN0w3TUtENUxMOERWX0dPcEtTbktIbmdqNVhCbloxZGZISHU0UFFmdDNWdkNaZEhsSHdhYkl1cU1vVHN0UjVXeVFRZVo1UXhkeDVGTTROOHJUck9YT2ZDckV5Umg2MWVDRjJxcnBYcjFYQWg3SEhvd3gzRXJpZFUzRFBySld5Y2lDN3VnLTIzU0dhcW1uMDE1RGFDRE5BSGlWaTh0c0NJSWc1TWVleU9QUEFrYVhLaW9TN3BfRA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBSE3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:17",
+    "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcXpOUndpdndRTjRHWWhlZDdaOEcxbkZOcmx2M3pSU1dyS0FNaE1uYUpWOXFLbHZqQWtGODVzMDAwQWQtVVRjOUdhLTNMUUprbEFxZFMwZXBCS2RBakFKdzlxdVlWVVo4Nms2MmtRNERLbW8zS2ZBay1SOG9DeWt0VUtGbVpWcGVWQUhWM0VPaGRfaGVvUWpncmtfaTAxTGZ2eFFUWDN4d3h2Nmktc0prdXlEU25wS1ExQzNON3pnVUo4RU9EUmlqaXJtbm94YlFfS3N6Q2VR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "HAPV3"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Treasury yields edge higher as investors await fresh inflation and housing data",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html",
-   "publicado": "2026-11-12T04:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Perspectiva de Fed mais restritivo fortalece dólar em âmbito global",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVjZwMUZqV3JzNU9vX05IazVhd05nbmZSX2Y2XzlQQWVRZHpQZHJvVEpsSUZUWVA5eHc3YWtVMW9jUUlzbEJ2MDc4cUdjR1Y2SjZrSHM3bjU0NE1CY29KUlZIMUpjRlBPd2JRYWJkSXRPZzAyTVJMM1dtdDVqejhwRGU3c3EwWl81Ml9kdndBY3BPRUVKbWlDQlFIZ3pyVGFHNC1uSkpWNGxZODIxNDB3VTR4SXZUZWw5X0dJdURtTkY5VW_SAdIBQVVfeXFMT1VaWjVQOFlJRzJfQTMxVDBMSzEwb2ItbXhXdng0cHNEWm5BaVEzc295NFQ0aGtYeEpiZ2tsR3JRZWFUMTRacFNweU1CNjdvOUFvTW80cmR4ZDB2NDZZQ3k3SmJEYm9Cck55NDh2dGFPMFdHeWtBTHFPRzFzbHE4dm95RzV1NzREMmdvRTkxMWYxb3h0Y1NReXZuTGtEekVPN0JYT0lyb3ZOX0ZONlJROHQ2dm45SGU1d1NDaGZRMS1hMHdMSFVoYU1RdkJ2REhqY1BB?oc=5",
-   "publicado": "2026-11-12T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Perspectiva de Fed mais restritivo fortalece dólar em âmbito global",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPVVpaNVA4WUlHMl9BMzFUMExLMTBvYi1teFd2eDRwc0RabkFpUTNzb3k0VDRoa1h4SmJna2xHclFlYVQxNFpwU3B5TUI2N285QW9NbzRyZHhkMHY0NllDeTdKYkRib0JyTnk0OHZ0YU8wV0d5a0FMcU9HMXNscTh2b3lHNXU3NEQyZ29FOTExZjFveHRjU1F5dm5Ma0R6RU83QlhPSXJvdk5fRk42UlE4dDZ2bjlIZTV3U0NoZlExLWEwd0xIVWhhTVF2QnZESGpjUEHSAdIBQVVfeXFMT1VaWjVQOFlJRzJfQTMxVDBMSzEwb2ItbXhXdng0cHNEWm5BaVEzc295NFQ0aGtYeEpiZ2tsR3JRZWFUMTRacFNweU1CNjdvOUFvTW80cmR4ZDB2NDZZQ3k3SmJEYm9Cck55NDh2dGFPMFdHeWtBTHFPRzFzbHE4dm95RzV1NzREMmdvRTkxMWYxb3h0Y1NReXZuTGtEekVPN0JYT0lyb3ZOX0ZONlJROHQ2dm45SGU1d1NDaGZRMS1hMHdMSFVoYU1RdkJ2REhqY1BB?oc=5",
-   "publicado": "2026-11-12T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Maior alta do Ibovespa em 2025, Cogna cai 52% em 2026; CEO explica o que mudou",
    "fonte": "Exame",
@@ -2185,6 +2287,19 @@
    ]
   },
   {
+   "titulo": "Magalu salta mais de 11% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
+   "publicado": "2026-11-12T14:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
+  },
+  {
    "titulo": "Conselho da Braskem discute novas propostas de credores nesta quinta (12)",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/conselho-da-braskem-discute-novas-propostas-de-credores-nesta-quinta-12.shtml",
@@ -2222,6 +2337,31 @@
    "tickers": []
   },
   {
+   "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmdGTTU3VGNxMWU0dGZqTEFBTlktSzdaNnJrUkUtRkt4NU96U1BjbWw1RzBJZGRHek1FQkpJOTJSMHM3XzRmYV9aMUFiNTlSQUhpalY5c2cxMHdrT3BDM2o3amlfVlVqb2puYXczRDNzWEN0enYzUkxPN3Bkc1hPYmFneVFVT1U3SnB5YWtGdmxlQkRNSGdKejctZUVLem9PSElFUURoLUUtYmIy?oc=5",
+   "publicado": "2026-11-12T14:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
+  },
+  {
+   "titulo": "IA pode provocar forte turbulência no mercado de trabalho dos EUA, diz Fed",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWFRMUldSeEQzRW82aHV4eWVPalQ0MzhCQURkMjk5dE5tT28zbVM3bzZMY3MzeTB0ZEd1ZFhyNW5yT3pTeWtKekZGRmNGSG9halhkOW9KbG9RRURwRVZvbXpEVTZBVF8zRzZFTGl4bjBHSjFXMUgweWJVMVdaLW16U2FLNA?oc=5",
+   "publicado": "2026-11-12T14:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
@@ -2232,6 +2372,45 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNzBlcGZLV2F1NXphYnB3Yml1LWtBR09BTkl1V0N1TzNRcVQwZjBfNjhGX3NtR3pSb0hXSV9HM2pxZUQzNTQ0dkc3eFdTYXNlMDBHQjMtREtNLTlFRW5adXBKZ3d3NTJwNnRuY0FOUXpfZVdXRTNDR2lIbmV1dFdrVUh5dlB1dy1GS0tiei0xU01jWVVDaWVBRGhabHFJeXdld3NydzEzSks2SFVaM3ZGQU43NTB1UG1VUUZwZTdiWjJqVDJ6OTNqcGpfc9IB0AFBVV95cUxPOGpIcmVxTkRXX1NTdmtIU0EzMHJ2V01WemRDMEp0YkI5MkVSMWdpZUwtem0wVDBLNDFfcUhHMlN1bGM3U08xMVkyQW1uejZocXNkclJIZlFDVjdqMERLTEl3TzN4b29EMzItSUZSell2ZVpxU3lRNkUzWlpGYjFKUHBxLU5oTFFfeml0Y1VFRW9MUkVidU1Zbmc5TTFhV1BIdThUZURPTjhUaEZ3ejB0WUtVa3g4NlcxbGVHS2lxUVhxMGxpd0x0WWhuNmx1S3pZ?oc=5",
+   "publicado": "2026-11-12T15:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
+  },
+  {
+   "titulo": "BB Seguridade não está à venda, por sua rentabilidade e importância, diz CEO do BB",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObHBwUnVhTVY0WU15cEZ5TVpCSkVod0x6bG5iV2hjeVV4OUVYMzFfWEtRaHMzMUdkV2hEaENBTUd1OTFzU0htV3RMTDlzQUp4cllaanFYTUx6WDdGdzFwWkdSOHBpMDdWT2Fob2ZfWEJMOWpYWlZQeEIwbDhQdUdodmhyYVRwVlktbUJqRWtxNUJIU0tpeTdCekd0UDFuQm1UNF9GLVQ3WTVGSUZyNHpEdjlLcFh2WlRfOFVR0gHAAUFVX3lxTE0zcFlaN0w3TUtENUxMOERWX0dPcEtTbktIbmdqNVhCbloxZGZISHU0UFFmdDNWdkNaZEhsSHdhYkl1cU1vVHN0UjVXeVFRZVo1UXhkeDVGTTROOHJUck9YT2ZDckV5Umg2MWVDRjJxcnBYcjFYQWg3SEhvd3gzRXJpZFUzRFBySld5Y2lDN3VnLTIzU0dhcW1uMDE1RGFDRE5BSGlWaTh0c0NJSWc1TWVleU9QUEFrYVhLaW9TN3BfRA?oc=5",
+   "publicado": "2026-11-12T15:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBSE3"
+   ]
+  },
+  {
+   "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcXpOUndpdndRTjRHWWhlZDdaOEcxbkZOcmx2M3pSU1dyS0FNaE1uYUpWOXFLbHZqQWtGODVzMDAwQWQtVVRjOUdhLTNMUUprbEFxZFMwZXBCS2RBakFKdzlxdVlWVVo4Nms2MmtRNERLbW8zS2ZBay1SOG9DeWt0VUtGbVpWcGVWQUhWM0VPaGRfaGVvUWpncmtfaTAxTGZ2eFFUWDN4d3h2Nmktc0prdXlEU25wS1ExQzNON3pnVUo4RU9EUmlqaXJtbm94YlFfS3N6Q2VR?oc=5",
+   "publicado": "2026-11-12T15:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
   }
  ],
  "enviadas": [
@@ -2261,12 +2440,13 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:08-03:00",
+ "atualizado_em": "2026-11-12T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
@@ -2274,10 +2454,22 @@
  ],
  "noticias": [
   {
+   "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+   "publicado": "2026-11-12T15:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
-   "publicado": "2026-11-12T15:02-03:00",
+   "publicado": "2026-11-12T15:26-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2286,16 +2478,55 @@
    "tickers": []
   },
   {
-   "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T14:59-03:00",
+   "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcXpOUndpdndRTjRHWWhlZDdaOEcxbkZOcmx2M3pSU1dyS0FNaE1uYUpWOXFLbHZqQWtGODVzMDAwQWQtVVRjOUdhLTNMUUprbEFxZFMwZXBCS2RBakFKdzlxdVlWVVo4Nms2MmtRNERLbW8zS2ZBay1SOG9DeWt0VUtGbVpWcGVWQUhWM0VPaGRfaGVvUWpncmtfaTAxTGZ2eFFUWDN4d3h2Nmktc0prdXlEU25wS1ExQzNON3pnVUo4RU9EUmlqaXJtbm94YlFfS3N6Q2VR?oc=5",
+   "publicado": "2026-11-12T15:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
+  },
+  {
+   "titulo": "BB Seguridade não está à venda, por sua rentabilidade e importância, diz CEO do BB",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObHBwUnVhTVY0WU15cEZ5TVpCSkVod0x6bG5iV2hjeVV4OUVYMzFfWEtRaHMzMUdkV2hEaENBTUd1OTFzU0htV3RMTDlzQUp4cllaanFYTUx6WDdGdzFwWkdSOHBpMDdWT2Fob2ZfWEJMOWpYWlZQeEIwbDhQdUdodmhyYVRwVlktbUJqRWtxNUJIU0tpeTdCekd0UDFuQm1UNF9GLVQ3WTVGSUZyNHpEdjlLcFh2WlRfOFVR0gHAAUFVX3lxTE0zcFlaN0w3TUtENUxMOERWX0dPcEtTbktIbmdqNVhCbloxZGZISHU0UFFmdDNWdkNaZEhsSHdhYkl1cU1vVHN0UjVXeVFRZVo1UXhkeDVGTTROOHJUck9YT2ZDckV5Umg2MWVDRjJxcnBYcjFYQWg3SEhvd3gzRXJpZFUzRFBySld5Y2lDN3VnLTIzU0dhcW1uMDE1RGFDRE5BSGlWaTh0c0NJSWc1TWVleU9QUEFrYVhLaW9TN3BfRA?oc=5",
+   "publicado": "2026-11-12T15:15-03:00",
    "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO"
+    "WIN"
+   ],
+   "tickers": [
+    "BBSE3"
+   ]
+  },
+  {
+   "titulo": "IA pode provocar forte turbulência no mercado de trabalho dos EUA, diz Fed",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWFRMUldSeEQzRW82aHV4eWVPalQ0MzhCQURkMjk5dE5tT28zbVM3bzZMY3MzeTB0ZEd1ZFhyNW5yT3pTeWtKekZGRmNGSG9halhkOW9KbG9RRURwRVZvbXpEVTZBVF8zRzZFTGl4bjBHSjFXMUgweWJVMVdaLW16U2FLNA?oc=5",
+   "publicado": "2026-11-12T14:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmdGTTU3VGNxMWU0dGZqTEFBTlktSzdaNnJrUkUtRkt4NU96U1BjbWw1RzBJZGRHek1FQkpJOTJSMHM3XzRmYV9aMUFiNTlSQUhpalY5c2cxMHdrT3BDM2o3amlfVlVqb2puYXczRDNzWEN0enYzUkxPN3Bkc1hPYmFneVFVT1U3SnB5YWtGdmxlQkRNSGdKejctZUVLem9PSElFUURoLUUtYmIy?oc=5",
+   "publicado": "2026-11-12T14:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
   },
   {
    "titulo": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
@@ -2396,42 +2627,6 @@
    ]
   },
   {
-   "titulo": "Além da Bolsa: como dólar e juros altos podem ameaçar investimentos e empregos",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNGw2Yk03aTZpamtKdHN3LWFzblZTVDFqQjkwbVNhZFByRnNrTnQycS1BblNkUUVnekNaaVFtZ0I2U3paVFRwdWVrY2Q4RTdtYjRGa3FDTlAxY2RDTDdkTDJmTFZlZzZRb25mQzZvMHF1Y0h5NFFMV054WVVjMWphRHh4NENUNlpmX1JvOEJVMFNqMzVkWEVFUHBFMDNYTTR0VkdYYkphLTl6S3hSeGowYjd30gG3AUFVX3lxTE1WejhSMWFfVXlIRzRyU1dISm15d3J3OEplYmNIZTNFR29malBrV0ZCUmtLNkNEVDJybTYwaTdQclZ0UFVraFQzQThzejZwUXdCTU1ocHhrb3FFaGxoZHFtYmJJSHdWZGl6alA2QmdNOHptQW1IVzVNQlBOR0FPMzZtLUtNQ1FEb1JVWVVWVVVnOHBBOG12ZjR1aldZUTlQaGZNWlRCem1pUHoxMlMwdHRXWThPcWJaMA?oc=5",
-   "publicado": "2026-11-12T13:36-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
-   "publicado": "2026-11-12T13:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "EUA devem se preparar para “grave” perturbação no mercado de trabalho causada pela IA, diz diretor do Fed",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZmVickN1YVQ3NjhZWGVuMmdtc1FUVlpRQW03SXU0QmdGazB1UGdtbGsxVkRRNjJKdU1fWDJnbENJWEdIQW02bEJGV3lNc0tmSU5tdjdfQXVHYmluaHlMbEdqbFJuWWN5RFVGMUJ3Qy1fYnk3OEdpZkNEY2hVQkdqTnN4Qjl6OUVVMzJiZTRIMHI2djk0eDRNby12ZVlJdW44UXpkdFNNYnJhM1ZsYjZxd0pUU1NqS1ItZk01TU5NY3MtVUh6bWtGZUFCRW9qMUJiMVFIMQ?oc=5",
-   "publicado": "2026-11-12T13:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-faz-acordo-para-deter-100-da-transportadora-de-etanol-logum",
@@ -2451,18 +2646,6 @@
    "publicado": "2026-11-12T13:04-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa cai: fiscal, cautela com juros nos EUA e balanço do BB pesam no índice",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVGRHWkJ1d05FYXBOeGdoOXJfWEFVczJWRjY3MGxEeUowd2pkdGI0a0VSbEx6UFhVU2FVRk9GbmdWMDYzUWlzTHI3UkpaRS1iMTIxLUo1LVExVGNRVE9YYkJEZkxSbW92WmdjcUxFUlgyWUFiWWVQa1RNbkpkcGNmMkRqUGFzRlJOakZ0SjhzR1FwQWZoYzZwb3RCRlY2MGdzNFRHeTBlZVJ0bXNrcHRLSGdObEtBZ1nSAbwBQVVfeXFMTzV1LVZIa3g4ZDNWd2dweC1qbmxraGI5ZFlMNldncEtRejJ0Z0UwZElqQXJ6R1E0MzdfbVBXTnIzS0xMRC0taFpVRTdGX3Zkem84TEJ0RFRaSHVCckg0Uk9ObmJRSXNPVUFkTDEta1RkUUNLTnBVSF9RYnZiVjlobThlTlZnTzl5Q1Rid0pZcjFZbXFxZmZ1R2lLdE9ZLXp4RFloSnlocDZIQjZ1UTc2QmtrQy1SRFU3bXgxR2s?oc=5",
-   "publicado": "2026-11-12T12:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "DI"
    ],
    "tickers": []
