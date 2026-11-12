@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T12:18-03:00",
+  "atualizado_em": "2026-11-12T12:20-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -103,11 +103,11 @@
     ],
     [
      "12:00",
-     170786.0
+     170755.0
     ],
     [
-     "12:03",
-     170766.0
+     "12:05",
+     170792.0
     ]
    ]
   },
@@ -272,11 +272,11 @@
     ],
     [
      "12:15",
-     5.6243
+     5.6223
     ],
     [
-     "12:18",
-     5.6234
+     "12:20",
+     5.6183
     ]
    ]
   },
@@ -715,7 +715,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.1,
     "dolar30": 0.25
    },
    {
@@ -756,6 +756,21 @@
     ],
     "tickers": [
      "HAPV3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:16",
+    "titulo": "Azul reduz prejuízo no 3º trimestre, mas custos mantêm pressão sobre as operações",
+    "fonte": "Bloomberg Línea",
+    "url": "https://www.bloomberglinea.com.br/negocios/azul-reduz-prejuizo-no-3-trimestre-mas-custos-mantem-pressao-sobre-as-operacoes/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "AZUL4"
     ],
     "ibov30": null,
     "dolar30": null
@@ -1466,6 +1481,19 @@
    "tickers": [
     "HAPV3"
    ]
+  },
+  {
+   "titulo": "Azul reduz prejuízo no 3º trimestre, mas custos mantêm pressão sobre as operações",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/azul-reduz-prejuizo-no-3-trimestre-mas-custos-mantem-pressao-sobre-as-operacoes/",
+   "publicado": "2026-11-12T12:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
   }
  ],
  "enviadas": [
@@ -1495,7 +1523,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T12:18-03:00",
+ "atualizado_em": "2026-11-12T12:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1510,6 +1538,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Azul reduz prejuízo no 3º trimestre, mas custos mantêm pressão sobre as operações",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/azul-reduz-prejuizo-no-3-trimestre-mas-custos-mantem-pressao-sobre-as-operacoes/",
+   "publicado": "2026-11-12T12:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
+  },
   {
    "titulo": "Hapvida (HAPV3): ações disparam 15% mesmo com queda de 68% no lucro do 3º trimestre; o que dizem analistas?",
    "fonte": "Money Times",
@@ -1653,19 +1694,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "BBAS3 afunda quase 8% e acende outro alerta: por que os analistas ainda veem risco nas ações do Banco do Brasil",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUk1DVlVVZENfR3g3WUdyd1U0cVpTamRjRXZqb2ZwT3FJM29OT3BhTDkwNjQyUUF3UWF6TVRVZ29uRUdqU1JiNlExUzJUTWhqN0RhVHd2X2l1UTRKZlFlbVhkMFJrOTRUMEhMek1oOF9oa0hHY1FwaERvMFgzZGVvVFpHUXhWaEZtWXE2R2syS0p1QmNJUndZVllPMzZZN01rNDRPVGFwM29adDRJWlpvU3dEbV9RcmRfOXRwM2NfbnpkYjlUVFlYdFJhQTRwRGFuV0lJVkhtdjlpam5rUWc?oc=5",
-   "publicado": "2026-11-12T11:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
   },
   {
    "titulo": "Canada’s ambassador warns Trump tariffs are driving up costs, threatening U.S. investment",
