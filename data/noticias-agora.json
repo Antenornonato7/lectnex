@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:38-03:00",
+  "atualizado_em": "2026-11-12T16:08-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -263,11 +263,35 @@
     ],
     [
      "15:20",
-     170890.0
+     170906.0
     ],
     [
-     "15:23",
-     170916.0
+     "15:25",
+     170902.0
+    ],
+    [
+     "15:30",
+     170955.0
+    ],
+    [
+     "15:35",
+     170949.0
+    ],
+    [
+     "15:40",
+     170849.0
+    ],
+    [
+     "15:45",
+     170877.0
+    ],
+    [
+     "15:50",
+     170873.0
+    ],
+    [
+     "15:53",
+     170850.0
     ]
    ]
   },
@@ -592,11 +616,35 @@
     ],
     [
      "15:35",
-     5.6487
+     5.6478
     ],
     [
-     "15:38",
-     5.6491
+     "15:40",
+     5.6512
+    ],
+    [
+     "15:45",
+     5.6507
+    ],
+    [
+     "15:50",
+     5.6493
+    ],
+    [
+     "15:55",
+     5.6497
+    ],
+    [
+     "16:00",
+     5.65
+    ],
+    [
+     "16:05",
+     5.6479
+    ],
+    [
+     "16:08",
+     5.6479
     ]
    ]
   },
@@ -1348,6 +1396,22 @@
     "dolar30": 0.01
    },
    {
+    "hora": "14:50",
+    "titulo": "Petrobras e PRIO podem ter dividend yield de até 20% em 2027, estima Goldman",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV3ZSYmZwMU1PZUg4ZXRUSmplSzByaTJFSGo3QlR6OWU1bUtDNXlydFhxaUltSHhDOGFveDF4TXJ4dGY5VDdBSGFOb3FnUGp4cDd1anBlZ1RBbUszRVQzLU1PcFVJTWxHdUNpeFV5T2RkVHVhVGFpWnQwLWJPa2FSUnNnWHVJRElGMkRHT0s5dldtRm9POEtHcnR4YnhSckFFdjJXV0ZtNWRlSTBTR3NvZ3FqY9IBuAFBVV95cUxQeHp0dkZGdzdtdjlPQ1ZOcV9yLUR4QmEzeDNSYklNem1BcWVtR1g3T3VOZkNoUGJzbDdkc3pMUFJ4VnoxcFZaYjFkSlFybkoyYk5BNExodDlSUER2LXJpWkszYTlGX0tvbzhMWDBSbHAxR3k5Mmp4TE9NMXdCWnJfN21kOHFpQlFGX0ZFeFJwc2pya0Q1TktpM3lPNjZwWXhHSldGQnRzWnBwalV0ZWMzSXk4dDdOdWcz?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4",
+     "PRIO3"
+    ],
+    "ibov30": -0.06,
+    "dolar30": 0.01
+   },
+   {
     "hora": "14:51",
     "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
     "fonte": "CNN Brasil",
@@ -1359,7 +1423,7 @@
     "tickers": [
      "AZUL4"
     ],
-    "ibov30": -0.08,
+    "ibov30": -0.07,
     "dolar30": 0.03
    },
    {
@@ -1373,7 +1437,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.01,
+    "ibov30": -0.02,
     "dolar30": 0.03
    },
    {
@@ -1387,7 +1451,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": 0.03
    },
    {
@@ -1402,8 +1466,8 @@
     "tickers": [
      "HAPV3"
     ],
-    "ibov30": null,
-    "dolar30": 0.13
+    "ibov30": -0.02,
+    "dolar30": 0.17
    },
    {
     "hora": "15:15",
@@ -1417,8 +1481,8 @@
     "tickers": [
      "BBSE3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.05,
+    "dolar30": 0.12
    },
    {
     "hora": "15:17",
@@ -1432,45 +1496,40 @@
     "tickers": [
      "HAPV3"
     ],
+    "ibov30": -0.03,
+    "dolar30": 0.11
+   },
+   {
+    "hora": "15:26",
+    "titulo": "Lula pode fazer um ajuste fiscal sem quebrar promessas de campanha, diz Samuel Pessôa",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/lula-pode-fazer-um-ajuste-fiscal-sem-quebrar-promessas-de-campanha-diz-samuel-pessoa/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.03,
+    "dolar30": 0.02
+   },
+   {
+    "hora": "15:51",
+    "titulo": "MRV surpreende no balanço, mas endividamento elevado afasta Itaú BBA das ações",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTNpWWJxcmdJRlk3N0ZqY0M5S2NPVXNDZnQtUjZPbnZDdkxrWWp0cHYwZHVTdy1xVElUTGxpSGl6VFVUYjNaazZ1VlJZSG9qMTNWVTBWNmVKT1hTaWJJTElfSWI1RElIaDlTakNmRktGWFFfZ0xhRWZNVklLQ2tINnZwdXZTX3lXaFVXTW1adkVySzNET2RVckZDRnB6ZXcxNjQtM0x4Y1dVQ04xUllkYXBuZk9mMVdwaVE2bzVKUkpWd195MENpdDBiQ0ZHaGhxcHfSAdcBQVVfeXFMTWdQUkduc1U0MWRGOGh6dU1FZ192TFNNLTNIaHRXc2lnVk5BZWRmQ0Y5SlV6NzhlSmJPd3RsR0VpeXNNMEJXRHJQWURnelZuYU5tQ0pIVnh1U3k1OUVyY1ZmOUtGbVBEdmZtdUpaZTFMSVZtSTdPeHdPanRySTNwTkJfWnFsUk1mbFMtT3ZiYjh2OHM3NlQ1M2xTOEotdF9BVFZrZk5aREgtQmpIWENkaVRrUm0ydC1idHJYeklxQi1GNjJOYzBjZGRTdlNiUW1TUnFvYm45emc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Maior alta do Ibovespa em 2025, Cogna cai 52% em 2026; CEO explica o que mudou",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZFR4ekh0V21kNk85MDdzRjNMUjc1Q0wxZzBGdmZ6bTZqdTJPWUJvTzZ5ZTIxRXMwZDRqZldETzNyOXRLZ3paQXlxRzhDTVUtQnNoTWc0bXNOSkptU2VNWTVHVGtYV2lab1Z3SHkyVlBtYUt0SURJMkswYmFvSFFWVU85UHpXRjUta1dmTV9oWUNyZlBBUW1qOWJJUzFsRnRlNWJXX2dFdmFOSmI3V3Qw?oc=5",
-   "publicado": "2026-11-12T05:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Chance de ajuste fiscal reduz prêmio de risco nos ativos",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPLXRWQXpwbURMSmkxM0hjMTVuUmFMazNBN0c4aGhTMmZsQnZ6bFFQTm5DOXBZczhBNkw4RE5IbElvVG1POEVfUnIyUVRMQVNzNjFEMkRaUnYwMmZoQkN3TzZ0OVVzWmQxQ2xIWWgya2RLSlBSZ1NvQ0IzYUFsdVRQVC02OGhSeVMyajhZLU1Fa004RkNlaGJ5VlhZR19Da1F3c0tSUjBubzBlWjJUdG5RbHZZNWw?oc=5",
-   "publicado": "2026-11-12T05:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Governo ganha tempo com pacote fiscal, mas nem de longe supera a crise de confiança",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/alvaro-gribel/governo-ganha-tempo-com-pacote-fiscal-mas-nem-de-longe-supera-a-crise-de-confianca/",
-   "publicado": "2026-11-12T05:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Tempo real: Ibovespa reage ao IPCA de outubro",
    "fonte": "Money Times",
@@ -2337,6 +2396,20 @@
    "tickers": []
   },
   {
+   "titulo": "Petrobras e PRIO podem ter dividend yield de até 20% em 2027, estima Goldman",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV3ZSYmZwMU1PZUg4ZXRUSmplSzByaTJFSGo3QlR6OWU1bUtDNXlydFhxaUltSHhDOGFveDF4TXJ4dGY5VDdBSGFOb3FnUGp4cDd1anBlZ1RBbUszRVQzLU1PcFVJTWxHdUNpeFV5T2RkVHVhVGFpWnQwLWJPa2FSUnNnWHVJRElGMkRHT0s5dldtRm9POEtHcnR4YnhSckFFdjJXV0ZtNWRlSTBTR3NvZ3FqY9IBuAFBVV95cUxQeHp0dkZGdzdtdjlPQ1ZOcV9yLUR4QmEzeDNSYklNem1BcWVtR1g3T3VOZkNoUGJzbDdkc3pMUFJ4VnoxcFZaYjFkSlFybkoyYk5BNExodDlSUER2LXJpWkszYTlGX0tvbzhMWDBSbHAxR3k5Mmp4TE9NMXdCWnJfN21kOHFpQlFGX0ZFeFJwc2pya0Q1TktpM3lPNjZwWXhHSldGQnRzWnBwalV0ZWMzSXk4dDdOdWcz?oc=5",
+   "publicado": "2026-11-12T14:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "PRIO3"
+   ]
+  },
+  {
    "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmdGTTU3VGNxMWU0dGZqTEFBTlktSzdaNnJrUkUtRkt4NU96U1BjbWw1RzBJZGRHek1FQkpJOTJSMHM3XzRmYV9aMUFiNTlSQUhpalY5c2cxMHdrT3BDM2o3amlfVlVqb2puYXczRDNzWEN0enYzUkxPN3Bkc1hPYmFneVFVT1U3SnB5YWtGdmxlQkRNSGdKejctZUVLem9PSElFUURoLUUtYmIy?oc=5",
@@ -2411,6 +2484,30 @@
    "tickers": [
     "HAPV3"
    ]
+  },
+  {
+   "titulo": "Lula pode fazer um ajuste fiscal sem quebrar promessas de campanha, diz Samuel Pessôa",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lula-pode-fazer-um-ajuste-fiscal-sem-quebrar-promessas-de-campanha-diz-samuel-pessoa/",
+   "publicado": "2026-11-12T15:26-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "MRV surpreende no balanço, mas endividamento elevado afasta Itaú BBA das ações",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTNpWWJxcmdJRlk3N0ZqY0M5S2NPVXNDZnQtUjZPbnZDdkxrWWp0cHYwZHVTdy1xVElUTGxpSGl6VFVUYjNaazZ1VlJZSG9qMTNWVTBWNmVKT1hTaWJJTElfSWI1RElIaDlTakNmRktGWFFfZ0xhRWZNVklLQ2tINnZwdXZTX3lXaFVXTW1adkVySzNET2RVckZDRnB6ZXcxNjQtM0x4Y1dVQ04xUllkYXBuZk9mMVdwaVE2bzVKUkpWd195MENpdDBiQ0ZHaGhxcHfSAdcBQVVfeXFMTWdQUkduc1U0MWRGOGh6dU1FZ192TFNNLTNIaHRXc2lnVk5BZWRmQ0Y5SlV6NzhlSmJPd3RsR0VpeXNNMEJXRHJQWURnelZuYU5tQ0pIVnh1U3k1OUVyY1ZmOUtGbVBEdmZtdUpaZTFMSVZtSTdPeHdPanRySTNwTkJfWnFsUk1mbFMtT3ZiYjh2OHM3NlQ1M2xTOEotdF9BVFZrZk5aREgtQmpIWENkaVRrUm0ydC1idHJYeklxQi1GNjJOYzBjZGRTdlNiUW1TUnFvYm45emc?oc=5",
+   "publicado": "2026-11-12T15:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
   }
  ],
  "enviadas": [
@@ -2440,7 +2537,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:38-03:00",
+ "atualizado_em": "2026-11-12T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2454,10 +2551,22 @@
  ],
  "noticias": [
   {
+   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+   "publicado": "2026-11-12T16:05-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T15:36-03:00",
+   "publicado": "2026-11-12T16:04-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -2466,13 +2575,25 @@
    "tickers": []
   },
   {
-   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
-   "publicado": "2026-11-12T15:26-03:00",
+   "titulo": "MRV surpreende no balanço, mas endividamento elevado afasta Itaú BBA das ações",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTNpWWJxcmdJRlk3N0ZqY0M5S2NPVXNDZnQtUjZPbnZDdkxrWWp0cHYwZHVTdy1xVElUTGxpSGl6VFVUYjNaazZ1VlJZSG9qMTNWVTBWNmVKT1hTaWJJTElfSWI1RElIaDlTakNmRktGWFFfZ0xhRWZNVklLQ2tINnZwdXZTX3lXaFVXTW1adkVySzNET2RVckZDRnB6ZXcxNjQtM0x4Y1dVQ04xUllkYXBuZk9mMVdwaVE2bzVKUkpWd195MENpdDBiQ0ZHaGhxcHfSAdcBQVVfeXFMTWdQUkduc1U0MWRGOGh6dU1FZ192TFNNLTNIaHRXc2lnVk5BZWRmQ0Y5SlV6NzhlSmJPd3RsR0VpeXNNMEJXRHJQWURnelZuYU5tQ0pIVnh1U3k1OUVyY1ZmOUtGbVBEdmZtdUpaZTFMSVZtSTdPeHdPanRySTNwTkJfWnFsUk1mbFMtT3ZiYjh2OHM3NlQ1M2xTOEotdF9BVFZrZk5aREgtQmpIWENkaVRrUm0ydC1idHJYeklxQi1GNjJOYzBjZGRTdlNiUW1TUnFvYm45emc?oc=5",
+   "publicado": "2026-11-12T15:51-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Lula pode fazer um ajuste fiscal sem quebrar promessas de campanha, diz Samuel Pessôa",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lula-pode-fazer-um-ajuste-fiscal-sem-quebrar-promessas-de-campanha-diz-samuel-pessoa/",
+   "publicado": "2026-11-12T15:26-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2514,19 +2635,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmdGTTU3VGNxMWU0dGZqTEFBTlktSzdaNnJrUkUtRkt4NU96U1BjbWw1RzBJZGRHek1FQkpJOTJSMHM3XzRmYV9aMUFiNTlSQUhpalY5c2cxMHdrT3BDM2o3amlfVlVqb2puYXczRDNzWEN0enYzUkxPN3Bkc1hPYmFneVFVT1U3SnB5YWtGdmxlQkRNSGdKejctZUVLem9PSElFUURoLUUtYmIy?oc=5",
-   "publicado": "2026-11-12T14:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": [
-    "AZUL4"
-   ]
   },
   {
    "titulo": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
@@ -2601,6 +2709,19 @@
    "tickers": []
   },
   {
+   "titulo": "Magalu salta mais de 11% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
+   "publicado": "2026-11-12T14:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
+  },
+  {
    "titulo": "Azul tem queda de 1,8% na receita líquida no terceiro trimestre",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/azul-tem-queda-de-18-na-receita-liquida-no-terceiro-trimestre.shtml",
@@ -2611,19 +2732,6 @@
    ],
    "tickers": [
     "AZUL4"
-   ]
-  },
-  {
-   "titulo": "Petrobras avalia alterar regras para atender política de preços de combustíveis",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQlBVVU9rMjBxRzJTZW1JWmR5WTVHWEk1UXJPNWwwY3ZtWFd3WU9CQTVjRDVZelFiS21xVjZETHRVLTQ5OFlUdm9lNXpkR3VITFd2OWlZbk56X25HMGRjT2NCNklEbExGY1V1cUE4cWhMR3ZjUWYxMUU3UC1GSFAzSnl5bF9oaXZHY0w1a1pHT0FnU3RBZGZoVzJ0MU4wUDBTckRtSm5aM29uWFkzWjhr?oc=5",
-   "publicado": "2026-11-12T13:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
    ]
   },
   {
@@ -2638,17 +2746,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Governo quer tirar subvenção ao diesel da meta fiscal para evitar contenção extra de gastos neste ano",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-quer-tirar-subvencao-ao-diesel-da-meta-fiscal-para-evitar-contencao-extra-de-gastos-neste-ano.shtml",
-   "publicado": "2026-11-12T13:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
