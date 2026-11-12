@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:10-03:00",
+  "atualizado_em": "2026-11-12T15:13-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -243,7 +243,11 @@
     ],
     [
      "14:55",
-     171027.0
+     170982.0
+    ],
+    [
+     "14:58",
+     170948.0
     ]
    ]
   },
@@ -548,6 +552,10 @@
     ],
     [
      "15:10",
+     5.6441
+    ],
+    [
+     "15:13",
      5.6422
     ]
    ]
@@ -1268,7 +1276,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.01
    },
    {
     "hora": "14:50",
@@ -2261,7 +2269,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:10-03:00",
+ "atualizado_em": "2026-11-12T15:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2277,7 +2285,7 @@
    "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
-   "publicado": "2026-11-12T15:02-03:00",
+   "publicado": "2026-11-12T15:11-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
