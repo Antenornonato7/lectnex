@@ -72,7 +72,31 @@
     "win": false,
     "wdo": false
    }
+  },
+  {
+   "data": "2026-11-12",
+   "tipo": "ipca",
+   "evento": "IPCA",
+   "hora": "09h",
+   "surpresa": "abaixo",
+   "base": "surpresa",
+   "sobe": {
+    "win": 50,
+    "wdo": 25
+   },
+   "n": {
+    "win": 8,
+    "wdo": 8
+   },
+   "reacao": {
+    "win": -0.654,
+    "wdo": 0.217
+   },
+   "acerto": {
+    "win": null,
+    "wdo": false
+   }
   }
  ],
- "atualizado_em": "2026-11-11T19:11:00-03:00"
+ "atualizado_em": "2026-11-12T19:10:27-03:00"
 }
