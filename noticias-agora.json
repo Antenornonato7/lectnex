@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:25-03:00",
+  "atualizado_em": "2026-11-12T15:28-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -255,7 +255,11 @@
     ],
     [
      "15:10",
-     170839.0
+     170890.0
+    ],
+    [
+     "15:13",
+     170840.0
     ]
    ]
   },
@@ -572,7 +576,11 @@
     ],
     [
      "15:25",
-     5.6462
+     5.6487
+    ],
+    [
+     "15:28",
+     5.6487
     ]
    ]
   },
@@ -1306,7 +1314,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.1,
     "dolar30": 0.03
    },
    {
@@ -1350,7 +1358,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    },
    {
     "hora": "15:12",
@@ -2402,7 +2410,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:25-03:00",
+ "atualizado_em": "2026-11-12T15:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2415,6 +2423,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+   "publicado": "2026-11-12T15:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
    "fonte": "Estadão",
@@ -2440,18 +2460,6 @@
    "tickers": [
     "BBSE3"
    ]
-  },
-  {
-   "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
-   "publicado": "2026-11-12T15:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
@@ -2526,16 +2534,17 @@
    ]
   },
   {
-   "titulo": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
-   "publicado": "2026-11-12T14:23-03:00",
-   "impacto": "medio",
+   "titulo": "Banco do Brasil: veja como 5 casas avaliam BBAS3 após o balanço do 3T26 que assustou o mercado",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLV9IZnUzQTk4UGg5VHBKaHp0aHM1eFA2OHpad0FmRVRWYmJxSnNDQ3NnOWwxeDNYaC1od1ZSY2Y3VF9uRzl1Ykx4cjNxdTNiVGY3d2JFMXdhQXlOXzBwTjRQZ3V6dG5LdVB5SkpvOEtzNkJGelpZeTUxYk43bXBaVjZxSGlja3E0OFkxbmlScVlnU09yREZpNkhENHJyTGV6OHR4aFBmOXpmaGM5c2phUVVmZG1pZ19rNlRjM191bHBza0pVMTlhNmlHWDItSlZZY3A3Y3N5SnUwUkwtdjZIRmMzSzJaTnPSAewBQVVfeXFMUGdlOWFrMXBESDhGbTBSOHVRY2ZFdkFxYVRTaE40dGxSMDcyRXZWSnFJdmZGQk54MEpFdXFuaU1jYTlqQk44TXBqOW5CWWIyWWRmbGJ2Nm5Wbkx1X0dHeFJyR3lXOUZRQmp5SFUzLWswQnNHb3ExWnhBTWppYm41eVNYNFc4eEg0RTRMcVJlUzEzZmFiLWE1MkJqLWcybmtERnhtYl8tX0UteURrQ0ZkN011VFRuX2g1bmswa0F2V2ZTdS1ZS29ZZDN0QURoazVmVjVDYkFzcnN1ZzRRSHF3MzlTMzBhbngybFdnV0Y?oc=5",
+   "publicado": "2026-11-12T14:25-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN",
-    "WDO"
+    "WIN"
    ],
-   "tickers": []
+   "tickers": [
+    "BBAS3"
+   ]
   },
   {
    "titulo": "Petrobras avalia alterar regras para atender política de preços de combustíveis",
