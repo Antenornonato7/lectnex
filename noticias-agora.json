@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T12:35-03:00",
+  "atualizado_em": "2026-11-12T12:38-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -119,7 +119,11 @@
     ],
     [
      "12:20",
-     170878.0
+     170780.0
+    ],
+    [
+     "12:23",
+     170873.0
     ]
    ]
   },
@@ -300,7 +304,11 @@
     ],
     [
      "12:35",
-     5.6319
+     5.6306
+    ],
+    [
+     "12:38",
+     5.6324
     ]
    ]
   },
@@ -1577,7 +1585,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T12:35-03:00",
+ "atualizado_em": "2026-11-12T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1591,6 +1599,31 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
+   "publicado": "2026-11-12T12:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield jumps back above 5% as oil gains and more Fed rate hikes expected",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html",
+   "publicado": "2026-11-12T12:36-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "O que explica a disparada de Azzas 2154 (AZZA3) após o balanço do 3T25? Citi e BTG respondem",
    "fonte": "Money Times",
@@ -1711,30 +1744,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "10-year Treasury yield jumps back above 5% as oil gains and more Fed rate hikes expected",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html",
-   "publicado": "2026-11-12T11:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Wall Street deve abrir em queda após saída de CEO da Nvidia",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUVhVdURSUUhSWjNaZVlpdDNrYzhTcTRoZDROdUd3eWxnYWVSenhwUmM5dWlFS2d0N09zY1ZZbzktUG1YdWtPanVKd25iWWgwSUN4eXUyZHBDNHFMOWZfOE9SUHVyNHpEeGp6SjJDeUJ6RUh2Vmh2ZFBRMHFSaWd3ZEZEYkc3bXRp?oc=5",
-   "publicado": "2026-11-12T11:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
