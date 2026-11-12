@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T14:50-03:00",
+  "atualizado_em": "2026-11-12T14:53-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -227,7 +227,11 @@
     ],
     [
      "14:35",
-     171182.0
+     171115.0
+    ],
+    [
+     "14:38",
+     171124.0
     ]
    ]
   },
@@ -516,7 +520,11 @@
     ],
     [
      "14:50",
-     5.6437
+     5.6448
+    ],
+    [
+     "14:53",
+     5.6453
     ]
    ]
   },
@@ -1207,6 +1215,20 @@
     "tickers": [
      "BRKM5"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:47",
+    "titulo": "Selic sem novas altas e PIB estagnado: o que o UBS BB espera para 2027",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRnk2MVRUWjB1aU83SlQxYTNURF9aYXNnMHhGbkdaTnhTeVVVSFVqNC1PRHczaWZFTXA2elN2TDM0VnJVVUR5VTlUOUEyN2pKVUZlZFM4c2U3MHZ3OGNjeGRxeGNRM2FLb1FSLWZoemxCNnBySk1FRzVNZ0lDMS1FS1Y3RmNkQzJ1ekpTY3RZaWxZSzlFYzZiT0lYU2tocnpJQ0EzZHBObmc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    },
@@ -2112,6 +2134,18 @@
    ]
   },
   {
+   "titulo": "Selic sem novas altas e PIB estagnado: o que o UBS BB espera para 2027",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRnk2MVRUWjB1aU83SlQxYTNURF9aYXNnMHhGbkdaTnhTeVVVSFVqNC1PRHczaWZFTXA2elN2TDM0VnJVVUR5VTlUOUEyN2pKVUZlZFM4c2U3MHZ3OGNjeGRxeGNRM2FLb1FSLWZoemxCNnBySk1FRzVNZ0lDMS1FS1Y3RmNkQzJ1ekpTY3RZaWxZSzlFYzZiT0lYU2tocnpJQ0EzZHBObmc?oc=5",
+   "publicado": "2026-11-12T14:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "In a policy switch, the Fed says its October 2028 meeting will not see a vote on interest rates",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2028-meeting-will-not-see-a-vote-on-interest-rates.html",
@@ -2151,7 +2185,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T14:50-03:00",
+ "atualizado_em": "2026-11-12T14:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2163,6 +2197,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
+   "publicado": "2026-11-12T14:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "In a policy switch, the Fed says its October 2028 meeting will not see a vote on interest rates",
    "fonte": "CNBC",
@@ -2176,13 +2221,14 @@
    "tickers": []
   },
   {
-   "titulo": "Property Play: Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
-   "publicado": "2026-11-12T14:44-03:00",
-   "impacto": "medio",
+   "titulo": "Selic sem novas altas e PIB estagnado: o que o UBS BB espera para 2027",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRnk2MVRUWjB1aU83SlQxYTNURF9aYXNnMHhGbkdaTnhTeVVVSFVqNC1PRHczaWZFTXA2elN2TDM0VnJVVUR5VTlUOUEyN2pKVUZlZFM4c2U3MHZ3OGNjeGRxeGNRM2FLb1FSLWZoemxCNnBySk1FRzVNZ0lDMS1FS1Y3RmNkQzJ1ekpTY3RZaWxZSzlFYzZiT0lYU2tocnpJQ0EzZHBObmc?oc=5",
+   "publicado": "2026-11-12T14:47-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2333,20 +2379,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "O que explica a disparada de Azzas 2154 (AZZA3) após o balanço do 3T26? Citi e BTG respondem",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNzF3dk9YOTRGV0wxV0xEZzk1S2JCeE9wN19qYmJNeEtqakp2WTB2WWVnZzc5V3V4b0U0X3ZCMFFEVWhqVkgycWlwSWlTSjdTME5wOUVkTFhldlZxcTJ6RnVPZGlBSmxybnBHelpoeFVaQ0RkaUFEZEhDeURGdVVSTHFJelFFc1Zoa0ZrYldxR1NfTHFyQmRCclN1VG55TVgxN3FhSVZTVEdOVDh3UEpSMlhkV285VGhEMDhjOEpiNVVMY0E?oc=5",
-   "publicado": "2026-11-12T12:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AZZA3",
-    "BPAC11"
-   ]
   },
   {
    "titulo": "Lula não parece convencido a conciliar ajuste fiscal moderado e promessas de campanha, diz Giambiagi",
