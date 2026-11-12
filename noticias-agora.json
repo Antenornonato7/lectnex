@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T14:23-03:00",
+  "atualizado_em": "2026-11-12T14:25-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -203,11 +203,11 @@
     ],
     [
      "14:05",
-     171374.0
+     171370.0
     ],
     [
-     "14:08",
-     171332.0
+     "14:10",
+     171371.0
     ]
    ]
   },
@@ -472,11 +472,11 @@
     ],
     [
      "14:20",
-     5.6413
+     5.6388
     ],
     [
-     "14:23",
-     5.6378
+     "14:25",
+     5.6391
     ]
    ]
   },
@@ -1096,7 +1096,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.04,
+    "ibov30": -0.05,
     "dolar30": 0.12
    },
    {
@@ -1111,7 +1111,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": -0.0,
     "dolar30": 0.11
    },
    {
@@ -1125,7 +1125,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.19
+    "dolar30": 0.15
    },
    {
     "hora": "14:03",
@@ -2057,19 +2057,30 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T14:23-03:00",
+ "atualizado_em": "2026-11-12T14:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
+   "publicado": "2026-11-12T14:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Jensen Huang's Nvidia exit casts shadow over Wall Street’s $500 billion AI financing bet",
    "fonte": "CNBC",
@@ -2180,14 +2191,13 @@
    "tickers": []
   },
   {
-   "titulo": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
-   "publicado": "2026-11-12T12:36-03:00",
+   "titulo": "Mercado financeiro avalia os primeiros sinais do pacote fiscal em discussão no governo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNaVVJXzMtSlgxOC1mTjM1X092UlRYSE5RQkFBNFVfM0haNzVoRFBQZU9XSGJqS1prQTZlVEdJNkZzeE1CeU9Yb1c4Q1NhczVYdmlWLVc5UkZmVW9zcURkR0t3VjJ2S0RTV3VwdVpPbUtGMndFZEtrZjBHWExwN1Fjb3pLYm1LUGh4cUFIYUVjb0l1UEk2aDM4bDhxcEhQNFdSYWJUcHlOZGVNMGpMVVlDaWdsMUNPR1ZTRXpqT1piMzRrVVlXRHZLd0hmNkJhU0Uzekx6MVg0a2IxT0ZmT1HSAeMBQVVfeXFMTmx0TjZrSWUwWDBZY3laSnE2QjZ4S3FZZnV1aEVjekZ3a2F3YjZSanplbVRkTTYzdmJCS195MzRzU29zQVBNQzRfS0tvMEtuMlVVdjRDbVJ0ZHEybVNwN3p2N1MyMENPTVl2TXVob05aRWxDaVRoQ1VVeGtWVjFZSHdabEJ2QVQyUnhlQmxhS1JRd09sQjhKdE9aVk1MbkJVT01uZGJ5VVJaYUhhV1NXQUxzNTdZZ3BzMUpQdXY4d1hnVkpfQkk2WmVFcWtMUDBlWE03dzZhUU85TzJwYnN0MFJpcVU?oc=5",
+   "publicado": "2026-11-12T12:58-03:00",
    "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO"
+    "DI"
    ],
    "tickers": []
   },
@@ -2251,19 +2261,6 @@
    "tickers": [
     "BBAS3"
    ]
-  },
-  {
-   "titulo": "Dólar sobe e Ibovespa cai em meio à insatisfação do mercado com pacote fiscal",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-sobe-e-ibovespa-cai-com-foco-no-fiscal-acoes-do-bb-tem-queda-forte.shtml",
-   "publicado": "2026-11-12T11:24-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
