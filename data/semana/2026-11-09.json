@@ -189,9 +189,15 @@
     "di": "volatil",
     "wdo": "volatil"
    },
-   "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Setembro: 0,82% m/m. Projeções de casas citadas pelo InfoMoney vão de 0,21% (Daycoval) a 0,27% (Warren); sem mediana divulgada.",
+   "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Saiu 0,14% m/m (4,63% em 12 meses), abaixo dos 0,25% esperados em pesquisa da Reuters, segundo o InfoMoney. Setembro: 0,82%.",
    "tipo": "ipca",
-   "anterior": "0,82%"
+   "anterior": "0,82%",
+   "consenso": "0,25%",
+   "resultado": "0,14%",
+   "surpresa": {
+    "direcao": "abaixo",
+    "reacao": "IPCA abaixo do esperado costuma derrubar as taxas dos DIs curtos, aliviar o real e dar suporte ao WIN."
+   }
   },
   {
    "data": "2026-11-12",
@@ -205,7 +211,8 @@
    },
    "nota": "Termômetro semanal do mercado de trabalho americano.",
    "tipo": "seguro-desemprego",
-   "consenso": "195 mil"
+   "consenso": "195 mil",
+   "resultado": "200 mil"
   },
   {
    "data": "2026-11-12",
