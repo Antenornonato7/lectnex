@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T13:33-03:00",
+  "atualizado_em": "2026-11-12T13:35-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -163,11 +163,11 @@
     ],
     [
      "13:15",
-     171499.0
+     171430.0
     ],
     [
-     "13:18",
-     171506.0
+     "13:20",
+     171430.0
     ]
    ]
   },
@@ -392,11 +392,11 @@
     ],
     [
      "13:30",
-     5.6244
+     5.6234
     ],
     [
-     "13:33",
-     5.6244
+     "13:35",
+     5.6234
     ]
    ]
   },
@@ -962,7 +962,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.01
+    "dolar30": -0.02
    },
    {
     "hora": "13:25",
@@ -1799,7 +1799,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T13:33-03:00",
+ "atualizado_em": "2026-11-12T13:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1812,6 +1812,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
+   "publicado": "2026-11-12T13:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
    "fonte": "Agência Brasil",
@@ -1896,19 +1908,6 @@
    "tickers": [
     "AZZA3",
     "BPAC11"
-   ]
-  },
-  {
-   "titulo": "Azul reduz prejuízo no 3º trimestre, mas custos mantêm pressão sobre as operações",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/negocios/azul-reduz-prejuizo-no-3-trimestre-mas-custos-mantem-pressao-sobre-as-operacoes/",
-   "publicado": "2026-11-12T12:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AZUL4"
    ]
   },
   {
