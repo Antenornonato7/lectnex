@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:45-03:00",
+  "atualizado_em": "2026-11-12T15:48-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -271,7 +271,11 @@
     ],
     [
      "15:30",
-     170890.0
+     170981.0
+    ],
+    [
+     "15:33",
+     170938.0
     ]
    ]
   },
@@ -604,7 +608,11 @@
     ],
     [
      "15:45",
-     5.6517
+     5.6524
+    ],
+    [
+     "15:48",
+     5.6514
     ]
    ]
   },
@@ -1395,7 +1403,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.07,
+    "ibov30": 0.12,
     "dolar30": 0.03
    },
    {
@@ -1441,7 +1449,7 @@
      "HAPV3"
     ],
     "ibov30": null,
-    "dolar30": 0.12
+    "dolar30": 0.14
    }
   ]
  },
@@ -2448,7 +2456,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:45-03:00",
+ "atualizado_em": "2026-11-12T15:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2609,19 +2617,6 @@
    "tickers": []
   },
   {
-   "titulo": "Magalu salta mais de 11% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
-   "publicado": "2026-11-12T14:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
-   ]
-  },
-  {
    "titulo": "Azul tem queda de 1,8% na receita líquida no terceiro trimestre",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/azul-tem-queda-de-18-na-receita-liquida-no-terceiro-trimestre.shtml",
@@ -2633,6 +2628,18 @@
    "tickers": [
     "AZUL4"
    ]
+  },
+  {
+   "titulo": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
+   "publicado": "2026-11-12T13:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Petrobras faz acordo para deter 100% da transportadora de etanol Logum",
