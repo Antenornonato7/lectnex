@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T11:20-03:00",
+  "atualizado_em": "2026-11-12T11:23-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -59,7 +59,11 @@
     ],
     [
      "11:05",
-     170835.0
+     170918.0
+    ],
+    [
+     "11:08",
+     170912.0
     ]
    ]
   },
@@ -180,7 +184,11 @@
     ],
     [
      "11:20",
-     5.6034
+     5.6025
+    ],
+    [
+     "11:23",
+     5.6009
     ]
    ]
   },
@@ -381,6 +389,21 @@
     "dolar30": -0.11
    },
    {
+    "hora": "10:19",
+    "titulo": "Ações do Banco do Brasil tombam 11% após corte de dividendos e balanço pior que o esperado",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZjFVNjNIVkptRjlnZE9kVVd1dkJXdFRGU0NxNGdoWjFvaU5NckpwVS1zMzZqM0hNczJsLTUtTkZHNUh5bndISG1jZXB5NHNVSHRJVXZjemxaOURuQnBiYzVzWVM4RktlVWRIVW9kN2k0Sk5kWDR3WUllZnlvc0tGRWttSjBQQ2YyMUtVdFNwUlRtYm9aZGxRaEllbEFrWVFzNm5YdlhyYnJDQ3BCLWVJVkMwZVdhRTdicDNiWGN6dHRMME9MNlRNemkxZUI2STBoUU9weVdSZlJ6NUFQLWRacGN30gHnAUFVX3lxTE5tSHVjT1pHMFIzeE1fQlMzc3NoY0poVmRFTDAtUXpqM21UTlZoYWdkQ1FHMTI4NVNjT3hZSG9ERll0M196VkxTSGRSaEhtZkNRcHpLOWZTQjJLRGFHcUliamtZS3lpaTBGWkdKaWZtbW0tTk9VbEZCU0tVVlN6QVBrX3VBUnZzRGRmSTkyd0Q5QTVxbzZSQ0NtLUF5aS1rdWM3d3NXR18yVU8zdTZMRzg2V2RlVHd3Y0xkeHh5dTE2TF9RSk41cGMwQmZZM1BmeW1pOXNzRV9yUXpTYW1RalpPaFVyb1RxTQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBAS3"
+    ],
+    "ibov30": 0.29,
+    "dolar30": -0.11
+   },
+   {
     "hora": "10:25",
     "titulo": "Taxas do Tesouro Direto hoje sobem com ata mais dura do Copom; Prefixado 2032 vai a 15,15%",
     "fonte": "Estadão",
@@ -447,7 +470,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": -0.25,
+    "ibov30": -0.2,
     "dolar30": -0.06
    },
    {
@@ -461,7 +484,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.17,
+    "ibov30": -0.12,
     "dolar30": -0.02
    },
    {
@@ -477,7 +500,7 @@
      "UGPA3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.02
    },
    {
     "hora": "10:59",
@@ -972,6 +995,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ações do Banco do Brasil tombam 11% após corte de dividendos e balanço pior que o esperado",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZjFVNjNIVkptRjlnZE9kVVd1dkJXdFRGU0NxNGdoWjFvaU5NckpwVS1zMzZqM0hNczJsLTUtTkZHNUh5bndISG1jZXB5NHNVSHRJVXZjemxaOURuQnBiYzVzWVM4RktlVWRIVW9kN2k0Sk5kWDR3WUllZnlvc0tGRWttSjBQQ2YyMUtVdFNwUlRtYm9aZGxRaEllbEFrWVFzNm5YdlhyYnJDQ3BCLWVJVkMwZVdhRTdicDNiWGN6dHRMME9MNlRNemkxZUI2STBoUU9weVdSZlJ6NUFQLWRacGN30gHnAUFVX3lxTE5tSHVjT1pHMFIzeE1fQlMzc3NoY0poVmRFTDAtUXpqM21UTlZoYWdkQ1FHMTI4NVNjT3hZSG9ERll0M196VkxTSGRSaEhtZkNRcHpLOWZTQjJLRGFHcUliamtZS3lpaTBGWkdKaWZtbW0tTk9VbEZCU0tVVlN6QVBrX3VBUnZzRGRmSTkyd0Q5QTVxbzZSQ0NtLUF5aS1rdWM3d3NXR18yVU8zdTZMRzg2V2RlVHd3Y0xkeHh5dTE2TF9RSk41cGMwQmZZM1BmeW1pOXNzRV9yUXpTYW1RalpPaFVyb1RxTQ?oc=5",
+   "publicado": "2026-11-12T10:19-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
+  },
+  {
    "titulo": "Taxas do Tesouro Direto hoje sobem com ata mais dura do Copom; Prefixado 2032 vai a 15,15%",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVXhIaUpCanNVLVI3LTJCR2JMa3VUVWFRbW9hX1RCZVpIWl9FRVN5NHJ6YW5jVkJOdXFZbFBEY1kzeHJqS2RlZlc1Z1JLY0pNTmZreFhFMVJmVF81eWpqZTN1OENMckN3cUNNRVJCeThYaldMVXl4VmowUm10YU5fdDJPQnNpSVRlU2w2TEYxcExhem1Eb3ZUTExOamxsaXJDTy1uM3BmR0paaUU3ZGRjOEZuRmtaSXZlOHJLd3JLcXJpWUNsY0ZZT3A5X3BUNUppLTdadkdZTXByS0k?oc=5",
@@ -1109,7 +1145,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T11:20-03:00",
+ "atualizado_em": "2026-11-12T11:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1124,15 +1160,27 @@
  ],
  "noticias": [
   {
-   "titulo": "10-year Treasury yield jumps back above 5% as oil gains, more Fed hikes expected",
+   "titulo": "10-year Treasury yield jumps back above 5% as oil gains and more Fed rate hikes expected",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html",
-   "publicado": "2026-11-12T11:08-03:00",
+   "publicado": "2026-11-12T11:22-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+   "publicado": "2026-11-12T11:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1185,18 +1233,6 @@
    "tickers": [
     "UGPA3"
    ]
-  },
-  {
-   "titulo": "Oil prices jump after Trump says no Iran deal needed: 'We've got their Strait'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T10:49-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Ibovespa cai após IPCA e de olho no ajuste fiscal do governo Lula; 5 coisas para saber antes de investir hoje (12)",
@@ -1260,21 +1296,23 @@
    "tickers": []
   },
   {
+   "titulo": "Ações do Banco do Brasil tombam 11% após corte de dividendos e balanço pior que o esperado",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOZjFVNjNIVkptRjlnZE9kVVd1dkJXdFRGU0NxNGdoWjFvaU5NckpwVS1zMzZqM0hNczJsLTUtTkZHNUh5bndISG1jZXB5NHNVSHRJVXZjemxaOURuQnBiYzVzWVM4RktlVWRIVW9kN2k0Sk5kWDR3WUllZnlvc0tGRWttSjBQQ2YyMUtVdFNwUlRtYm9aZGxRaEllbEFrWVFzNm5YdlhyYnJDQ3BCLWVJVkMwZVdhRTdicDNiWGN6dHRMME9MNlRNemkxZUI2STBoUU9weVdSZlJ6NUFQLWRacGN30gHnAUFVX3lxTE5tSHVjT1pHMFIzeE1fQlMzc3NoY0poVmRFTDAtUXpqM21UTlZoYWdkQ1FHMTI4NVNjT3hZSG9ERll0M196VkxTSGRSaEhtZkNRcHpLOWZTQjJLRGFHcUliamtZS3lpaTBGWkdKaWZtbW0tTk9VbEZCU0tVVlN6QVBrX3VBUnZzRGRmSTkyd0Q5QTVxbzZSQ0NtLUF5aS1rdWM3d3NXR18yVU8zdTZMRzg2V2RlVHd3Y0xkeHh5dTE2TF9RSk41cGMwQmZZM1BmeW1pOXNzRV9yUXpTYW1RalpPaFVyb1RxTQ?oc=5",
+   "publicado": "2026-11-12T10:19-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
+  },
+  {
    "titulo": "Inflação perde força e fica em 0,14% em outubro; conta de luz cai",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inflacao-perde-forca-e-fica-em-014-em-outubro-conta-de-luz-cai",
    "publicado": "2026-11-12T10:18-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "INPC, inflação que corrige salários, acumula 4,49% em 12 meses",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inpc-inflacao-que-corrige-salarios-acumula-449-em-12-meses",
-   "publicado": "2026-11-12T10:11-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
