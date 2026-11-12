@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:15-03:00",
+  "atualizado_em": "2026-11-12T15:18-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -247,7 +247,11 @@
     ],
     [
      "15:00",
-     170913.0
+     170881.0
+    ],
+    [
+     "15:03",
+     170917.0
     ]
    ]
   },
@@ -556,6 +560,10 @@
     ],
     [
      "15:15",
+     5.6427
+    ],
+    [
+     "15:18",
      5.6442
     ]
    ]
@@ -1261,7 +1269,7 @@
     "tickers": [
      "BRKM5"
     ],
-    "ibov30": null,
+    "ibov30": -0.08,
     "dolar30": 0.02
    },
    {
@@ -1276,7 +1284,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.02
+    "dolar30": -0.0
    },
    {
     "hora": "14:50",
@@ -1290,7 +1298,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": -0.03
    },
    {
     "hora": "15:02",
@@ -1303,6 +1311,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:12",
+    "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNzBlcGZLV2F1NXphYnB3Yml1LWtBR09BTkl1V0N1TzNRcVQwZjBfNjhGX3NtR3pSb0hXSV9HM2pxZUQzNTQ0dkc3eFdTYXNlMDBHQjMtREtNLTlFRW5adXBKZ3d3NTJwNnRuY0FOUXpfZVdXRTNDR2lIbmV1dFdrVUh5dlB1dy1GS0tiei0xU01jWVVDaWVBRGhabHFJeXdld3NydzEzSks2SFVaM3ZGQU43NTB1UG1VUUZwZTdiWjJqVDJ6OTNqcGpfc9IB0AFBVV95cUxPOGpIcmVxTkRXX1NTdmtIU0EzMHJ2V01WemRDMEp0YkI5MkVSMWdpZUwtem0wVDBLNDFfcUhHMlN1bGM3U08xMVkyQW1uejZocXNkclJIZlFDVjdqMERLTEl3TzN4b29EMzItSUZSell2ZVpxU3lRNkUzWlpGYjFKUHBxLU5oTFFfeml0Y1VFRW9MUkVidU1Zbmc5TTFhV1BIdThUZURPTjhUaEZ3ejB0WUtVa3g4NlcxbGVHS2lxUVhxMGxpd0x0WWhuNmx1S3pZ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "HAPV3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -2240,6 +2263,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNzBlcGZLV2F1NXphYnB3Yml1LWtBR09BTkl1V0N1TzNRcVQwZjBfNjhGX3NtR3pSb0hXSV9HM2pxZUQzNTQ0dkc3eFdTYXNlMDBHQjMtREtNLTlFRW5adXBKZ3d3NTJwNnRuY0FOUXpfZVdXRTNDR2lIbmV1dFdrVUh5dlB1dy1GS0tiei0xU01jWVVDaWVBRGhabHFJeXdld3NydzEzSks2SFVaM3ZGQU43NTB1UG1VUUZwZTdiWjJqVDJ6OTNqcGpfc9IB0AFBVV95cUxPOGpIcmVxTkRXX1NTdmtIU0EzMHJ2V01WemRDMEp0YkI5MkVSMWdpZUwtem0wVDBLNDFfcUhHMlN1bGM3U08xMVkyQW1uejZocXNkclJIZlFDVjdqMERLTEl3TzN4b29EMzItSUZSell2ZVpxU3lRNkUzWlpGYjFKUHBxLU5oTFFfeml0Y1VFRW9MUkVidU1Zbmc5TTFhV1BIdThUZURPTjhUaEZ3ejB0WUtVa3g4NlcxbGVHS2lxUVhxMGxpd0x0WWhuNmx1S3pZ?oc=5",
+   "publicado": "2026-11-12T15:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
   }
  ],
  "enviadas": [
@@ -2269,7 +2305,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:15-03:00",
+ "atualizado_em": "2026-11-12T15:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2281,6 +2317,19 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Hapvida salta quase 14% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNzBlcGZLV2F1NXphYnB3Yml1LWtBR09BTkl1V0N1TzNRcVQwZjBfNjhGX3NtR3pSb0hXSV9HM2pxZUQzNTQ0dkc3eFdTYXNlMDBHQjMtREtNLTlFRW5adXBKZ3d3NTJwNnRuY0FOUXpfZVdXRTNDR2lIbmV1dFdrVUh5dlB1dy1GS0tiei0xU01jWVVDaWVBRGhabHFJeXdld3NydzEzSks2SFVaM3ZGQU43NTB1UG1VUUZwZTdiWjJqVDJ6OTNqcGpfc9IB0AFBVV95cUxPOGpIcmVxTkRXX1NTdmtIU0EzMHJ2V01WemRDMEp0YkI5MkVSMWdpZUwtem0wVDBLNDFfcUhHMlN1bGM3U08xMVkyQW1uejZocXNkclJIZlFDVjdqMERLTEl3TzN4b29EMzItSUZSell2ZVpxU3lRNkUzWlpGYjFKUHBxLU5oTFFfeml0Y1VFRW9MUkVidU1Zbmc5TTFhV1BIdThUZURPTjhUaEZ3ejB0WUtVa3g4NlcxbGVHS2lxUVhxMGxpd0x0WWhuNmx1S3pZ?oc=5",
+   "publicado": "2026-11-12T15:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
+  },
   {
    "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
    "fonte": "CNBC",
@@ -2412,18 +2461,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "EUA receberam US$ 12 bilhões em receitas do petróleo venezuelano, indica relatório secreto",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-receberam-us-12-bilhoes-em-receitas-do-petroleo-venezuelano-indica-relatorio-secreto.shtml",
-   "publicado": "2026-11-12T13:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
