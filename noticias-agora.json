@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T18:05-03:00",
+  "atualizado_em": "2026-11-12T18:08-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     171084.0
+     171054.0
     ]
    ]
   },
@@ -788,7 +788,11 @@
     ],
     [
      "18:05",
-     5.6416
+     5.6403
+    ],
+    [
+     "18:08",
+     5.6401
     ]
    ]
   },
@@ -1772,8 +1776,21 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": 0.18,
+    "ibov30": 0.16,
     "dolar30": -0.08
+   },
+   {
+    "hora": "16:59",
+    "titulo": "Ouro cai abaixo de US$ 4 mil com alta do dólar e juros elevados",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONXVDTU1VeExWSjlXMVZyN1lKSFRjUG9qOFFxdGNNUl83dUJ0Vm5Hb3hlNXdUV1ZVZ0hzS2lqQXNIeWN5WTVPWkxMOE0tczNJd2ZxQ0tUMjRMWjdjZ0ZzWklVbG1UVU5RVThNT2g2b3c4R2FRMWNiUTlsc1J1NHdlOVE5Yzg0cGxWTVR4NnZXa3llemFQNjRLTWwyaTBsU2ViakFtVWZaNF9MaGJDanMwTG5RZy1LZw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.0
    },
    {
     "hora": "17:21",
@@ -1842,25 +1859,11 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.04
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ibovespa hoje: tombo de 66,5% no lucro do Banco do Brasil e IPCA de outubro deixam Bolsa em alerta",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQNnRib3puU0NsZEs4YUt5YW9XWWFxd01iTkhwWkVJWXctY3IyalhVOWJKZjFnUUZOdFNkSmlSNEZtV1NVcG4zYmJjTnZrMzdJVU5aYkVkcEVPVy1OSlozdVd3STlfc1d6OHFuNGhySFl6d3VWNXNiaXd5SjZjUDNfSGZzQ2dnZHVsUGEtT1RqdUFNdVBJTUNrazY1SnB4Z0NUZHp6c01nSGNTZFhyZW9TazlQUjBoU2xyUkd3ekxBVEQxNHNXUjlUdmRhRXdUZVRsR21WWDF5OFdDeklkLVhhc0tnSWdFNjBPM1ctb1dSYi14WlZQ?oc=5",
-   "publicado": "2026-11-12T07:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
-  },
   {
    "titulo": "Santander melhora em 5% oferta para comprar ações de minoritários do Santander Brasil (SANB11); veja o que muda",
    "fonte": "Money Times",
@@ -2768,6 +2771,17 @@
    ]
   },
   {
+   "titulo": "Ouro cai abaixo de US$ 4 mil com alta do dólar e juros elevados",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONXVDTU1VeExWSjlXMVZyN1lKSFRjUG9qOFFxdGNNUl83dUJ0Vm5Hb3hlNXdUV1ZVZ0hzS2lqQXNIeWN5WTVPWkxMOE0tczNJd2ZxQ0tUMjRMWjdjZ0ZzWklVbG1UVU5RVThNT2g2b3c4R2FRMWNiUTlsc1J1NHdlOVE5Yzg0cGxWTVR4NnZXa3llemFQNjRLTWwyaTBsU2ViakFtVWZaNF9MaGJDanMwTG5RZy1LZw?oc=5",
+   "publicado": "2026-11-12T16:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar tem forte alta com exterior e plano fiscal e vai a R$ 5,65, maior patamar em 17 meses",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPR2N2T3lienJLYW1hOGN4bUFxb21UYnJFQVRBOHY4T3FEdmZrQkhvTE1WWmllQnk2Tm9kbGh1YnBpUXpKUEUwRGJxQmJib1F0US1DZ3J2TVFWZ1d0cFVhMzVFa2U2eVZfSVpqNDhLaXNvRlNaVnpsanotamhNRUlVNHlPa0NUSjVHQmRrVklCalF4ZHRPQmVjaVQ2Q0p5ZzZLWXloQjBrUWM1VFFXRlNqQXFTOUFFdkZGT0szOFhQWkxlSkJiWmU5QW1yVUJ1WWVoWXF0VEt3TDRnQTlKVVZj0gHuAUFVX3lxTE02Q2FERzU1QTZUY05aV2Jhd0ZXZWlyeUpLMVpBbnhocWNYeFZQa2RUMDB5OS1OMjg1S1ZJV3hFbG90ZHhld3IyOGNrTUduclMyVlM2R0V6endGSEQwRGsyeTBScnVETzVNNFphQ01xa1c1VktRTUJQVEZONWlIeXZsc3JFTkQ2dDVseDdhSS1malVURVB5OGEwX214UElFUXFPbmpCSWhwTDNidElCVHpXODMtV0FGOVA4eWJIZjBnZFVxb01teHAzYmVjSGhZM1VkS2RzSVBldTZCSjY1aWJGSm1WM2JGaGlyX2Z0b2c?oc=5",
@@ -2854,12 +2868,13 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T18:05-03:00",
+ "atualizado_em": "2026-11-12T18:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
@@ -2941,6 +2956,17 @@
    ]
   },
   {
+   "titulo": "Ouro cai abaixo de US$ 4 mil com alta do dólar e juros elevados",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONXVDTU1VeExWSjlXMVZyN1lKSFRjUG9qOFFxdGNNUl83dUJ0Vm5Hb3hlNXdUV1ZVZ0hzS2lqQXNIeWN5WTVPWkxMOE0tczNJd2ZxQ0tUMjRMWjdjZ0ZzWklVbG1UVU5RVThNT2g2b3c4R2FRMWNiUTlsc1J1NHdlOVE5Yzg0cGxWTVR4NnZXa3llemFQNjRLTWwyaTBsU2ViakFtVWZaNF9MaGJDanMwTG5RZy1LZw?oc=5",
+   "publicado": "2026-11-12T16:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Jensen Huang's Nvidia exit casts shadow over Wall Street’s $500 billion AI financing bet",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html",
@@ -2948,17 +2974,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ouro fecha abaixo dos US$ 4 mil com alta do dólar e tensões entre EUA e Irã",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONFk5djMzajd6Y2VBeFNCUHN3S3RuN1RsX3hwb0ZfdXhWZ1dXOEtxT3pBQkVaSDhiQkM2Z0Fjd1VCWGxaT0hreFRiMG9nWlBMUzhlbk9GZjhjTkFYUHItM2lQNXQ5bG1SeWtNT3FTU3Y4WW9IUnBGLWc1aXpka1BINi1fUlBrS0F5WVVzTVpzUVNLaXA2eC1EYTQtOW9zakI1UGMwS3d0M1RoWllrMVM0?oc=5",
-   "publicado": "2026-11-12T16:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
