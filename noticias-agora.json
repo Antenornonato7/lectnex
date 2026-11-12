@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T14:25-03:00",
+  "atualizado_em": "2026-11-12T14:28-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -207,7 +207,11 @@
     ],
     [
      "14:10",
-     171371.0
+     171321.0
+    ],
+    [
+     "14:13",
+     171316.0
     ]
    ]
   },
@@ -476,7 +480,11 @@
     ],
     [
      "14:25",
-     5.6391
+     5.6383
+    ],
+    [
+     "14:28",
+     5.6437
     ]
    ]
   },
@@ -1111,7 +1119,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": -0.0,
+    "ibov30": -0.03,
     "dolar30": 0.11
    },
    {
@@ -1138,7 +1146,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.24
    },
    {
     "hora": "14:05",
@@ -2057,7 +2065,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T14:25-03:00",
+ "atualizado_em": "2026-11-12T14:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2191,17 +2199,6 @@
    "tickers": []
   },
   {
-   "titulo": "Mercado financeiro avalia os primeiros sinais do pacote fiscal em discussão no governo",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNaVVJXzMtSlgxOC1mTjM1X092UlRYSE5RQkFBNFVfM0haNzVoRFBQZU9XSGJqS1prQTZlVEdJNkZzeE1CeU9Yb1c4Q1NhczVYdmlWLVc5UkZmVW9zcURkR0t3VjJ2S0RTV3VwdVpPbUtGMndFZEtrZjBHWExwN1Fjb3pLYm1LUGh4cUFIYUVjb0l1UEk2aDM4bDhxcEhQNFdSYWJUcHlOZGVNMGpMVVlDaWdsMUNPR1ZTRXpqT1piMzRrVVlXRHZLd0hmNkJhU0Uzekx6MVg0a2IxT0ZmT1HSAeMBQVVfeXFMTmx0TjZrSWUwWDBZY3laSnE2QjZ4S3FZZnV1aEVjekZ3a2F3YjZSanplbVRkTTYzdmJCS195MzRzU29zQVBNQzRfS0tvMEtuMlVVdjRDbVJ0ZHEybVNwN3p2N1MyMENPTVl2TXVob05aRWxDaVRoQ1VVeGtWVjFZSHdabEJ2QVQyUnhlQmxhS1JRd09sQjhKdE9aVk1MbkJVT01uZGJ5VVJaYUhhV1NXQUxzNTdZZ3BzMUpQdXY4d1hnVkpfQkk2WmVFcWtMUDBlWE03dzZhUU85TzJwYnN0MFJpcVU?oc=5",
-   "publicado": "2026-11-12T12:58-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa cai: fiscal, cautela com juros nos EUA e balanço do BB pesam no índice",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVGRHWkJ1d05FYXBOeGdoOXJfWEFVczJWRjY3MGxEeUowd2pkdGI0a0VSbEx6UFhVU2FVRk9GbmdWMDYzUWlzTHI3UkpaRS1iMTIxLUo1LVExVGNRVE9YYkJEZkxSbW92WmdjcUxFUlgyWUFiWWVQa1RNbkpkcGNmMkRqUGFzRlJOakZ0SjhzR1FwQWZoYzZwb3RCRlY2MGdzNFRHeTBlZVJ0bXNrcHRLSGdObEtBZ1nSAbwBQVVfeXFMTzV1LVZIa3g4ZDNWd2dweC1qbmxraGI5ZFlMNldncEtRejJ0Z0UwZElqQXJ6R1E0MzdfbVBXTnIzS0xMRC0taFpVRTdGX3Zkem84TEJ0RFRaSHVCckg0Uk9ObmJRSXNPVUFkTDEta1RkUUNLTnBVSF9RYnZiVjlobThlTlZnTzl5Q1Rid0pZcjFZbXFxZmZ1R2lLdE9ZLXp4RFloSnlocDZIQjZ1UTc2QmtrQy1SRFU3bXgxR2s?oc=5",
@@ -2228,6 +2225,32 @@
    ]
   },
   {
+   "titulo": "Azul reduz prejuízo no 3º trimestre, mas custos mantêm pressão sobre as operações",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/azul-reduz-prejuizo-no-3-trimestre-mas-custos-mantem-pressao-sobre-as-operacoes/",
+   "publicado": "2026-11-12T12:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
+  },
+  {
+   "titulo": "Hapvida (HAPV3): ações disparam 15% mesmo com queda de 68% no lucro do 3º trimestre; o que dizem analistas?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZkpmMXl0alB6dzMwd1g4MGI0RkRKQ1g4cF9oX1BKcFpTSkVWeHlpWllPQXQ5ZzNwcm1Ea3k3ZHAxU3o4VlVwTDBkQ21BSnRVX3Budjh4RXRhNHliWWhOY21GSFhWWEdLcHVBb0lTSFJsMmVlNW9YYkdoaTJjYlVjMXp1aTFSSGRwV0VIM0dENWVnenQxQndja3hvRnBsYk8teWtFWUFwaG1qMW5wM1lJeVE4TDlvTFNxVmE5emFpRHhFYTk3QjllcC1fcGU2VkwxQXc?oc=5",
+   "publicado": "2026-11-12T12:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
+  },
+  {
    "titulo": "Lula não parece convencido a conciliar ajuste fiscal moderado e promessas de campanha, diz Giambiagi",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/entrevista-fabio-giambiagi-lula-ajuste-fiscal-promessas-de-campanha/",
@@ -2248,19 +2271,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Banco do Brasil: veja como 5 casas avaliam BBAS3 após o balanço do 3T26 que assustou o mercado",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLV9IZnUzQTk4UGg5VHBKaHp0aHM1eFA2OHpad0FmRVRWYmJxSnNDQ3NnOWwxeDNYaC1od1ZSY2Y3VF9uRzl1Ykx4cjNxdTNiVGY3d2JFMXdhQXlOXzBwTjRQZ3V6dG5LdVB5SkpvOEtzNkJGelpZeTUxYk43bXBaVjZxSGlja3E0OFkxbmlScVlnU09yREZpNkhENHJyTGV6OHR4aFBmOXpmaGM5c2phUVVmZG1pZ19rNlRjM191bHBza0pVMTlhNmlHWDItSlZZY3A3Y3N5SnUwUkwtdjZIRmMzSzJaTnPSAewBQVVfeXFMUGdlOWFrMXBESDhGbTBSOHVRY2ZFdkFxYVRTaE40dGxSMDcyRXZWSnFJdmZGQk54MEpFdXFuaU1jYTlqQk44TXBqOW5CWWIyWWRmbGJ2Nm5Wbkx1X0dHeFJyR3lXOUZRQmp5SFUzLWswQnNHb3ExWnhBTWppYm41eVNYNFc4eEg0RTRMcVJlUzEzZmFiLWE1MkJqLWcybmtERnhtYl8tX0UteURrQ0ZkN011VFRuX2g1bmswa0F2V2ZTdS1ZS29ZZDN0QURoazVmVjVDYkFzcnN1ZzRRSHF3MzlTMzBhbngybFdnV0Y?oc=5",
-   "publicado": "2026-11-12T11:27-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
   }
  ]
 }
