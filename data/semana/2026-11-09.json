@@ -175,8 +175,9 @@
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "Atividade britânica; mexe com a libra e o dólar global. Projeções divergem entre fontes.",
-   "tipo": "pib-reino-unido"
+   "nota": "Atividade britânica; mexe com a libra e o dólar global. Saiu 0,7% t/t, segundo o InfoMoney; sem consenso confirmado.",
+   "tipo": "pib-reino-unido",
+   "resultado": "0,7%"
   },
   {
    "data": "2026-11-12",
@@ -188,7 +189,7 @@
     "di": "volatil",
     "wdo": "volatil"
    },
-   "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Setembro: 0,82% m/m e 4,58% em 12 meses. Projeções de casas citadas pelo InfoMoney vão de 0,21% (Daycoval) a 0,27% (Warren).",
+   "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Setembro: 0,82% m/m. Projeções de casas citadas pelo InfoMoney vão de 0,21% (Daycoval) a 0,27% (Warren); sem mediana divulgada.",
    "tipo": "ipca",
    "anterior": "0,82%"
   },
@@ -205,6 +206,19 @@
    "nota": "Termômetro semanal do mercado de trabalho americano.",
    "tipo": "seguro-desemprego",
    "consenso": "195 mil"
+  },
+  {
+   "data": "2026-11-12",
+   "hora": "12h–15h30",
+   "pais": "US",
+   "evento": "Falas do Fed: Barr, Goolsbee, Daly e Schmid",
+   "importancia": 2,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Barr às 12h, Goolsbee às 13h15, Daly às 15h10 e Schmid às 15h30; mercado aposta em alta de juros em dezembro.",
+   "tipo": "fala-fed"
   },
   {
    "data": "2026-11-12",
