@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T11:25-03:00",
+  "atualizado_em": "2026-11-12T11:28-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -63,7 +63,11 @@
     ],
     [
      "11:10",
-     170698.0
+     170664.0
+    ],
+    [
+     "11:13",
+     170679.0
     ]
    ]
   },
@@ -188,7 +192,11 @@
     ],
     [
      "11:25",
-     5.6054
+     5.6019
+    ],
+    [
+     "11:28",
+     5.6019
     ]
    ]
   },
@@ -499,7 +507,7 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": -0.25,
+    "ibov30": -0.26,
     "dolar30": -0.04
    },
    {
@@ -515,7 +523,7 @@
      "UGPA3"
     ],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.0
    },
    {
     "hora": "10:59",
@@ -529,7 +537,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.0
    },
    {
     "hora": "11:00",
@@ -544,13 +552,26 @@
      "BBAS3"
     ],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": -0.05
    },
    {
     "hora": "11:19",
     "titulo": "Wall Street deve abrir em queda após saída de CEO da Nvidia",
     "fonte": "CNN Brasil",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUVhVdURSUUhSWjNaZVlpdDNrYzhTcTRoZDROdUd3eWxnYWVSenhwUmM5dWlFS2d0N09zY1ZZbzktUG1YdWtPanVKd25iWWgwSUN4eXUyZHBDNHFMOWZfOE9SUHVyNHpEeGp6SjJDeUJ6RUh2Vmh2ZFBRMHFSaWd3ZEZEYkc3bXRp?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:24",
+    "titulo": "Ibovespa perde força com pressão da queda do BB, incertezas fiscais e cautela com techs",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRUFCcG9hbGhDN0lFQUNfcFZIdW43dGxoS052RUZVbHlSRnlSS3BCZmpNN1dwQ2JJSDlJZkRJZFBIQWhydGpxdkRVZHRUekVKQmh0Q3Z5MjQybC1rT3daanl1VHBFMngzM0Y2djlQWnpFNjZsYnhCaTMtTjN5ZjFPbjBJSlZPeVBjY2VQb2lrckllYlpvb25COTV6MTc0UkZhNzFOXzVfb1BWVWhoS241eHM0U2NtaGZyVEtwbld3?oc=5",
     "impacto": "medio",
     "ativos": [
      "WIN"
@@ -1168,6 +1189,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa perde força com pressão da queda do BB, incertezas fiscais e cautela com techs",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRUFCcG9hbGhDN0lFQUNfcFZIdW43dGxoS052RUZVbHlSRnlSS3BCZmpNN1dwQ2JJSDlJZkRJZFBIQWhydGpxdkRVZHRUekVKQmh0Q3Z5MjQybC1rT3daanl1VHBFMngzM0Y2djlQWnpFNjZsYnhCaTMtTjN5ZjFPbjBJSlZPeVBjY2VQb2lrckllYlpvb25COTV6MTc0UkZhNzFOXzVfb1BWVWhoS241eHM0U2NtaGZyVEtwbld3?oc=5",
+   "publicado": "2026-11-12T11:24-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1197,7 +1229,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T11:25-03:00",
+ "atualizado_em": "2026-11-12T11:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1205,12 +1237,24 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa perde força com pressão da queda do BB, incertezas fiscais e cautela com techs",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRUFCcG9hbGhDN0lFQUNfcFZIdW43dGxoS052RUZVbHlSRnlSS3BCZmpNN1dwQ2JJSDlJZkRJZFBIQWhydGpxdkRVZHRUekVKQmh0Q3Z5MjQybC1rT3daanl1VHBFMngzM0Y2djlQWnpFNjZsYnhCaTMtTjN5ZjFPbjBJSlZPeVBjY2VQb2lrckllYlpvb25COTV6MTc0UkZhNzFOXzVfb1BWVWhoS241eHM0U2NtaGZyVEtwbld3?oc=5",
+   "publicado": "2026-11-12T11:24-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "10-year Treasury yield jumps back above 5% as oil gains and more Fed rate hikes expected",
    "fonte": "CNBC",
@@ -1295,19 +1339,6 @@
    ],
    "tickers": [
     "UGPA3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa cai com pressão de BBAS3 e IPCA; fiscal segue no radar",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNTY4RS10S0VHVVVielFWNmJEMFdPcUhFS19NRDVNbElFYlRSYzVuS2Jra1BoSEJsUUlua0dWZWV6WGNDNU5KMDVjUnRBcktMaFRuakxoVGp5eHZlcGlpNjVBVm51YXdraXJaUVIyYUY2QWNFZ1BYRE1SZmlkYzB0d0dLUVFYUFNUU2J2ckM2dw?oc=5",
-   "publicado": "2026-11-12T10:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
    ]
   },
   {
