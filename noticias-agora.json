@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-12",
-  "atualizado_em": "2026-11-12T15:58-03:00",
+  "atualizado_em": "2026-11-12T16:00-03:00",
   "ibov": {
    "anterior": 172060.44,
    "pontos": [
@@ -279,7 +279,11 @@
     ],
     [
      "15:40",
-     170953.0
+     170931.0
+    ],
+    [
+     "15:43",
+     170895.0
     ]
    ]
   },
@@ -620,7 +624,11 @@
     ],
     [
      "15:55",
-     5.6497
+     5.6487
+    ],
+    [
+     "15:58",
+     5.6487
     ]
    ]
   },
@@ -1372,6 +1380,22 @@
     "dolar30": 0.01
    },
    {
+    "hora": "14:50",
+    "titulo": "Petrobras e PRIO podem ter dividend yield de até 20% em 2027, estima Goldman",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV3ZSYmZwMU1PZUg4ZXRUSmplSzByaTJFSGo3QlR6OWU1bUtDNXlydFhxaUltSHhDOGFveDF4TXJ4dGY5VDdBSGFOb3FnUGp4cDd1anBlZ1RBbUszRVQzLU1PcFVJTWxHdUNpeFV5T2RkVHVhVGFpWnQwLWJPa2FSUnNnWHVJRElGMkRHT0s5dldtRm9POEtHcnR4YnhSckFFdjJXV0ZtNWRlSTBTR3NvZ3FqY9IBuAFBVV95cUxQeHp0dkZGdzdtdjlPQ1ZOcV9yLUR4QmEzeDNSYklNem1BcWVtR1g3T3VOZkNoUGJzbDdkc3pMUFJ4VnoxcFZaYjFkSlFybkoyYk5BNExodDlSUER2LXJpWkszYTlGX0tvbzhMWDBSbHAxR3k5Mmp4TE9NMXdCWnJfN21kOHFpQlFGX0ZFeFJwc2pya0Q1TktpM3lPNjZwWXhHSldGQnRzWnBwalV0ZWMzSXk4dDdOdWcz?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4",
+     "PRIO3"
+    ],
+    "ibov30": -0.06,
+    "dolar30": 0.01
+   },
+   {
     "hora": "14:51",
     "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
     "fonte": "CNN Brasil",
@@ -1426,7 +1450,7 @@
     "tickers": [
      "HAPV3"
     ],
-    "ibov30": 0.04,
+    "ibov30": 0.02,
     "dolar30": 0.17
    },
    {
@@ -1441,7 +1465,7 @@
     "tickers": [
      "BBSE3"
     ],
-    "ibov30": 0.02,
+    "ibov30": 0.0,
     "dolar30": 0.12
    },
    {
@@ -1456,7 +1480,7 @@
     "tickers": [
      "HAPV3"
     ],
-    "ibov30": null,
+    "ibov30": -0.02,
     "dolar30": 0.11
    },
    {
@@ -1470,7 +1494,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.02
+    "dolar30": 0.0
    },
    {
     "hora": "15:51",
@@ -1490,17 +1514,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Governo ganha tempo com pacote fiscal, mas nem de longe supera a crise de confiança",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/alvaro-gribel/governo-ganha-tempo-com-pacote-fiscal-mas-nem-de-longe-supera-a-crise-de-confianca/",
-   "publicado": "2026-11-12T05:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Tempo real: Ibovespa reage ao IPCA de outubro",
    "fonte": "Money Times",
@@ -2367,6 +2380,20 @@
    "tickers": []
   },
   {
+   "titulo": "Petrobras e PRIO podem ter dividend yield de até 20% em 2027, estima Goldman",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV3ZSYmZwMU1PZUg4ZXRUSmplSzByaTJFSGo3QlR6OWU1bUtDNXlydFhxaUltSHhDOGFveDF4TXJ4dGY5VDdBSGFOb3FnUGp4cDd1anBlZ1RBbUszRVQzLU1PcFVJTWxHdUNpeFV5T2RkVHVhVGFpWnQwLWJPa2FSUnNnWHVJRElGMkRHT0s5dldtRm9POEtHcnR4YnhSckFFdjJXV0ZtNWRlSTBTR3NvZ3FqY9IBuAFBVV95cUxQeHp0dkZGdzdtdjlPQ1ZOcV9yLUR4QmEzeDNSYklNem1BcWVtR1g3T3VOZkNoUGJzbDdkc3pMUFJ4VnoxcFZaYjFkSlFybkoyYk5BNExodDlSUER2LXJpWkszYTlGX0tvbzhMWDBSbHAxR3k5Mmp4TE9NMXdCWnJfN21kOHFpQlFGX0ZFeFJwc2pya0Q1TktpM3lPNjZwWXhHSldGQnRzWnBwalV0ZWMzSXk4dDdOdWcz?oc=5",
+   "publicado": "2026-11-12T14:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "PRIO3"
+   ]
+  },
+  {
    "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmdGTTU3VGNxMWU0dGZqTEFBTlktSzdaNnJrUkUtRkt4NU96U1BjbWw1RzBJZGRHek1FQkpJOTJSMHM3XzRmYV9aMUFiNTlSQUhpalY5c2cxMHdrT3BDM2o3amlfVlVqb2puYXczRDNzWEN0enYzUkxPN3Bkc1hPYmFneVFVT1U3SnB5YWtGdmxlQkRNSGdKejctZUVLem9PSElFUURoLUUtYmIy?oc=5",
@@ -2494,7 +2521,7 @@
    "em": "2026-11-12T12:35:41+00:00"
   }
  ],
- "atualizado_em": "2026-11-12T15:58-03:00",
+ "atualizado_em": "2026-11-12T16:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2508,6 +2535,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+   "publicado": "2026-11-12T15:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "MRV surpreende no balanço, mas endividamento elevado afasta Itaú BBA das ações",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTNpWWJxcmdJRlk3N0ZqY0M5S2NPVXNDZnQtUjZPbnZDdkxrWWp0cHYwZHVTdy1xVElUTGxpSGl6VFVUYjNaazZ1VlJZSG9qMTNWVTBWNmVKT1hTaWJJTElfSWI1RElIaDlTakNmRktGWFFfZ0xhRWZNVklLQ2tINnZwdXZTX3lXaFVXTW1adkVySzNET2RVckZDRnB6ZXcxNjQtM0x4Y1dVQ04xUllkYXBuZk9mMVdwaVE2bzVKUkpWd195MENpdDBiQ0ZHaGhxcHfSAdcBQVVfeXFMTWdQUkduc1U0MWRGOGh6dU1FZ192TFNNLTNIaHRXc2lnVk5BZWRmQ0Y5SlV6NzhlSmJPd3RsR0VpeXNNMEJXRHJQWURnelZuYU5tQ0pIVnh1U3k1OUVyY1ZmOUtGbVBEdmZtdUpaZTFMSVZtSTdPeHdPanRySTNwTkJfWnFsUk1mbFMtT3ZiYjh2OHM3NlQ1M2xTOEotdF9BVFZrZk5aREgtQmpIWENkaVRrUm0ydC1idHJYeklxQi1GNjJOYzBjZGRTdlNiUW1TUnFvYm45emc?oc=5",
@@ -2519,18 +2558,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "publicado": "2026-11-12T15:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
@@ -2594,19 +2621,6 @@
    "tickers": []
   },
   {
-   "titulo": "Azul quer converter dívida em dólar para reais, diz CFO",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmdGTTU3VGNxMWU0dGZqTEFBTlktSzdaNnJrUkUtRkt4NU96U1BjbWw1RzBJZGRHek1FQkpJOTJSMHM3XzRmYV9aMUFiNTlSQUhpalY5c2cxMHdrT3BDM2o3amlfVlVqb2puYXczRDNzWEN0enYzUkxPN3Bkc1hPYmFneVFVT1U3SnB5YWtGdmxlQkRNSGdKejctZUVLem9PSElFUURoLUUtYmIy?oc=5",
-   "publicado": "2026-11-12T14:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": [
-    "AZUL4"
-   ]
-  },
-  {
    "titulo": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
@@ -2616,6 +2630,20 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Petrobras e PRIO podem ter dividend yield de até 20% em 2027, estima Goldman",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV3ZSYmZwMU1PZUg4ZXRUSmplSzByaTJFSGo3QlR6OWU1bUtDNXlydFhxaUltSHhDOGFveDF4TXJ4dGY5VDdBSGFOb3FnUGp4cDd1anBlZ1RBbUszRVQzLU1PcFVJTWxHdUNpeFV5T2RkVHVhVGFpWnQwLWJPa2FSUnNnWHVJRElGMkRHT0s5dldtRm9POEtHcnR4YnhSckFFdjJXV0ZtNWRlSTBTR3NvZ3FqY9IBuAFBVV95cUxQeHp0dkZGdzdtdjlPQ1ZOcV9yLUR4QmEzeDNSYklNem1BcWVtR1g3T3VOZkNoUGJzbDdkc3pMUFJ4VnoxcFZaYjFkSlFybkoyYk5BNExodDlSUER2LXJpWkszYTlGX0tvbzhMWDBSbHAxR3k5Mmp4TE9NMXdCWnJfN21kOHFpQlFGX0ZFeFJwc2pya0Q1TktpM3lPNjZwWXhHSldGQnRzWnBwalV0ZWMzSXk4dDdOdWcz?oc=5",
+   "publicado": "2026-11-12T14:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4",
+    "PRIO3"
+   ]
   },
   {
    "titulo": "Selic sem novas altas e PIB estagnado: o que o UBS BB espera para 2027",
@@ -2654,28 +2682,29 @@
    ]
   },
   {
-   "titulo": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
-   "publicado": "2026-11-12T14:23-03:00",
-   "impacto": "medio",
+   "titulo": "Banco do Brasil: veja como 5 casas avaliam BBAS3 após o balanço do 3T26 que assustou o mercado",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPLV9IZnUzQTk4UGg5VHBKaHp0aHM1eFA2OHpad0FmRVRWYmJxSnNDQ3NnOWwxeDNYaC1od1ZSY2Y3VF9uRzl1Ykx4cjNxdTNiVGY3d2JFMXdhQXlOXzBwTjRQZ3V6dG5LdVB5SkpvOEtzNkJGelpZeTUxYk43bXBaVjZxSGlja3E0OFkxbmlScVlnU09yREZpNkhENHJyTGV6OHR4aFBmOXpmaGM5c2phUVVmZG1pZ19rNlRjM191bHBza0pVMTlhNmlHWDItSlZZY3A3Y3N5SnUwUkwtdjZIRmMzSzJaTnPSAewBQVVfeXFMUGdlOWFrMXBESDhGbTBSOHVRY2ZFdkFxYVRTaE40dGxSMDcyRXZWSnFJdmZGQk54MEpFdXFuaU1jYTlqQk44TXBqOW5CWWIyWWRmbGJ2Nm5Wbkx1X0dHeFJyR3lXOUZRQmp5SFUzLWswQnNHb3ExWnhBTWppYm41eVNYNFc4eEg0RTRMcVJlUzEzZmFiLWE1MkJqLWcybmtERnhtYl8tX0UteURrQ0ZkN011VFRuX2g1bmswa0F2V2ZTdS1ZS29ZZDN0QURoazVmVjVDYkFzcnN1ZzRRSHF3MzlTMzBhbngybFdnV0Y?oc=5",
+   "publicado": "2026-11-12T14:25-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN",
-    "WDO"
+    "WIN"
    ],
-   "tickers": []
+   "tickers": [
+    "BBAS3"
+   ]
   },
   {
-   "titulo": "Azul tem queda de 1,8% na receita líquida no terceiro trimestre",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/azul-tem-queda-de-18-na-receita-liquida-no-terceiro-trimestre.shtml",
-   "publicado": "2026-11-12T14:05-03:00",
+   "titulo": "Magalu salta mais de 11% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
+   "publicado": "2026-11-12T14:22-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
    ],
    "tickers": [
-    "AZUL4"
+    "MGLU3"
    ]
   },
   {
