@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T14:10-03:00",
+  "atualizado_em": "2026-11-13T14:13-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -195,7 +195,11 @@
     ],
     [
      "13:55",
-     172176.0
+     172118.0
+    ],
+    [
+     "13:58",
+     172121.0
     ]
    ]
   },
@@ -452,7 +456,11 @@
     ],
     [
      "14:10",
-     5.6399
+     5.6394
+    ],
+    [
+     "14:13",
+     5.6398
     ]
    ]
   },
@@ -984,7 +992,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.24,
+    "ibov30": -0.27,
     "dolar30": 0.11
    },
    {
@@ -998,7 +1006,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.24,
+    "ibov30": -0.27,
     "dolar30": 0.11
    },
    {
@@ -1014,7 +1022,7 @@
      "BRKM5"
     ],
     "ibov30": null,
-    "dolar30": -0.04
+    "dolar30": -0.05
    },
    {
     "hora": "13:54",
@@ -1854,7 +1862,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T14:10-03:00",
+ "atualizado_em": "2026-11-13T14:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1989,6 +1997,17 @@
    ]
   },
   {
+   "titulo": "Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZ9IBwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZw?oc=5",
+   "publicado": "2026-11-13T12:54-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Juros futuros têm leve alta após pacote fiscal e varejo acima do esperado",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVnlvQ2RyZDVBQVNibVUzMUFDeHc1cDQxeGxrc0c3R3d2OWFzdnhESVdGMlhfREhaRW1ucDlSaHd2UU5wM05fbUlNY3NmSmZqREJiaGZpRDhfNzlfM0w1WU5UODVKLVI1c003YW5FR3NJNlhpRkNhajRtYkd5VUdRQkxCM2NiNE44aGhLVGJoOVIzaFl4akJnRHFtUDh3TVc3X0o1VXJSUUsyNnk4MElHSWNmaVIzTjFmTlV1SHgwSm05SlVtSmo2aF9IZkc?oc=5",
@@ -2015,17 +2034,6 @@
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/governo-medidas-acrescimo-cenario-fiscal-benigno-moretti/",
    "publicado": "2026-11-13T12:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ajuste fiscal avança, mas Tesouro ainda cobra prêmio; Prefixado 2032 sobe a 15,32%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQY1h3RnlRUGhHcS1DN24wdGgyWG1XUzg2RFEzQlRpVV9sQWxRMHVpOXMweXFSNUx2eWRRWjBTUUhfaHk0a01RalZEb3Jud1FlN2pRU0wyTE9wWHFjRnFfOGRLVzZPUjJHNV9qTGdrY0lFLTNERjdDRHV3eHdnS0d2Qk04VVNwQ0JlWW5MYnlnM0p3OVZ1OWZVU0NZYTFhTE5KUXMwckdlODFmNzJjRlJ5bEQ0VkloX0tRcnNrWDBjU3pWNmRqRTdlMmJ1bWF5ZnA0NTFv0gHYAUFVX3lxTE5kWWJWWV9KRE9XUF8wZm9uemVPay1CQ2RfbS1qRDIteWZHTENBU3QybnIyYWpjdmNpdnRHR01LWnFXdVo3Z3BIMFhPOWMyWjZmaUV4TzJjTmtob043MUlTVHU5eXJ3aVMxYXpxTEZlM2pGYVBxTnBaRDRrR2ctMkNnN1daNm9jYzY4WU1teFQxQUp4SVdCQ2lmMHlfVVBSNFhUQmdLUENRVDFFTHVUcWRBZGlMWVZ0ZG43cTN0UjNJcnlfcnlFVmk1VU00U0NQajZUek1NOHBUYg?oc=5",
-   "publicado": "2026-11-13T12:33-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
