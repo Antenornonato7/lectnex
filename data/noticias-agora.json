@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T15:08-03:00",
+  "atualizado_em": "2026-11-13T15:38-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -239,11 +239,35 @@
     ],
     [
      "14:50",
-     172234.0
+     172275.0
     ],
     [
-     "14:53",
-     172239.0
+     "14:55",
+     172289.0
+    ],
+    [
+     "15:00",
+     172307.0
+    ],
+    [
+     "15:05",
+     172366.0
+    ],
+    [
+     "15:10",
+     172404.0
+    ],
+    [
+     "15:15",
+     172275.0
+    ],
+    [
+     "15:20",
+     172389.0
+    ],
+    [
+     "15:23",
+     172392.0
     ]
    ]
   },
@@ -544,11 +568,35 @@
     ],
     [
      "15:05",
+     5.6421
+    ],
+    [
+     "15:10",
+     5.6445
+    ],
+    [
+     "15:15",
      5.6448
     ],
     [
-     "15:08",
-     5.6456
+     "15:20",
+     5.6428
+    ],
+    [
+     "15:25",
+     5.6436
+    ],
+    [
+     "15:30",
+     5.6414
+    ],
+    [
+     "15:35",
+     5.6448
+    ],
+    [
+     "15:38",
+     5.6429
     ]
    ]
   },
@@ -1178,7 +1226,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.02,
+    "ibov30": -0.0,
     "dolar30": -0.02
    },
    {
@@ -1191,8 +1239,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.07,
+    "dolar30": 0.03
    },
    {
     "hora": "14:57",
@@ -1204,6 +1252,36 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": 0.06,
+    "dolar30": 0.06
+   },
+   {
+    "hora": "15:13",
+    "titulo": "Pacote fiscal quer gasto crescendo abaixo de 2%, mas sem afetar política do salário mínimo; entenda",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/pacote-fiscal-quer-gasto-crescendo-abaixo-de-2-mas-sem-afetar-politica-do-salario-minimo-entenda/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "15:28",
+    "titulo": "Jalles (JALL3) dispara após balanço e vai na contramão de Raízen (RAIZ4) e São Martinho (SMTO3); o que agradou o mercado?",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNnZwdEFia2ZiekFSSDBvS3l1S291eXZsdjVvRjNhR2kwbTRKTFA5QV8xSUpMd245VVd4T1J3bkVTaGpWZlExdWUtcjBaMlVibEtZYVlFN3dja0l4UHlCQ1VIMGV0QW9FWHdNRHBsV3J6TDlzS2p1Q3FFUEJ2T2F3NnZhOGRwVVZCVnpQY2gtMEJCOGs2NzMzYlhuQmx1V3Ayei12TjZ1bG40WWV0b0Ytc2ZHMldWSndWc3dUODBDcWo1T1ktVUVkdmtxbG4tYTgtV2tLZkExUTN6bnJ1XzFnV1Yxbw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "JALL3",
+     "RAIZ4",
+     "SMTO3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -2045,6 +2123,32 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Pacote fiscal quer gasto crescendo abaixo de 2%, mas sem afetar política do salário mínimo; entenda",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/pacote-fiscal-quer-gasto-crescendo-abaixo-de-2-mas-sem-afetar-politica-do-salario-minimo-entenda/",
+   "publicado": "2026-11-13T15:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Jalles (JALL3) dispara após balanço e vai na contramão de Raízen (RAIZ4) e São Martinho (SMTO3); o que agradou o mercado?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNnZwdEFia2ZiekFSSDBvS3l1S291eXZsdjVvRjNhR2kwbTRKTFA5QV8xSUpMd245VVd4T1J3bkVTaGpWZlExdWUtcjBaMlVibEtZYVlFN3dja0l4UHlCQ1VIMGV0QW9FWHdNRHBsV3J6TDlzS2p1Q3FFUEJ2T2F3NnZhOGRwVVZCVnpQY2gtMEJCOGs2NzMzYlhuQmx1V3Ayei12TjZ1bG40WWV0b0Ytc2ZHMldWSndWc3dUODBDcWo1T1ktVUVkdmtxbG4tYTgtV2tLZkExUTN6bnJ1XzFnV1Yxbw?oc=5",
+   "publicado": "2026-11-13T15:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "JALL3",
+    "RAIZ4",
+    "SMTO3"
+   ]
   }
  ],
  "enviadas": [
@@ -2074,7 +2178,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T15:08-03:00",
+ "atualizado_em": "2026-11-13T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2088,10 +2192,36 @@
  ],
  "noticias": [
   {
+   "titulo": "Jalles (JALL3) dispara após balanço e vai na contramão de Raízen (RAIZ4) e São Martinho (SMTO3); o que agradou o mercado?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNnZwdEFia2ZiekFSSDBvS3l1S291eXZsdjVvRjNhR2kwbTRKTFA5QV8xSUpMd245VVd4T1J3bkVTaGpWZlExdWUtcjBaMlVibEtZYVlFN3dja0l4UHlCQ1VIMGV0QW9FWHdNRHBsV3J6TDlzS2p1Q3FFUEJ2T2F3NnZhOGRwVVZCVnpQY2gtMEJCOGs2NzMzYlhuQmx1V3Ayei12TjZ1bG40WWV0b0Ytc2ZHMldWSndWc3dUODBDcWo1T1ktVUVkdmtxbG4tYTgtV2tLZkExUTN6bnJ1XzFnV1Yxbw?oc=5",
+   "publicado": "2026-11-13T15:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "JALL3",
+    "RAIZ4",
+    "SMTO3"
+   ]
+  },
+  {
+   "titulo": "Pacote fiscal quer gasto crescendo abaixo de 2%, mas sem afetar política do salário mínimo; entenda",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/pacote-fiscal-quer-gasto-crescendo-abaixo-de-2-mas-sem-afetar-politica-do-salario-minimo-entenda/",
+   "publicado": "2026-11-13T15:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "The common theme driving stocks lower — plus, 3 trades and another we want to make",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/investingclub/2026/11/13/the-common-theme-driving-stocks-lower-plus-3-trades-and-another-we-want-to-make.html",
-   "publicado": "2026-11-13T14:57-03:00",
+   "publicado": "2026-11-13T15:11-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -2106,6 +2236,18 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa ensaia recuperação, enquanto dólar renova máxima",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMEI3S3Q2OVQxTzV5NjhURjg3UWVXVkhRT19CSF9haF9ocVlwaGNWZldHQ05VWFE2T1E0OE4xdGdtdEdmcjVHUk1oVmRQTk83Rk1fZkk4YXc1RklDTTdjYlNLTzIwdTBWSktUUHRuM3lsWG1YdEgxX1hjNERrMjlYQXlfRGw4TFFTM29yWTZDZmhVUXNZeFE?oc=5",
+   "publicado": "2026-11-13T14:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -2128,6 +2270,18 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "publicado": "2026-11-13T14:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -2156,51 +2310,17 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa ensaia recuperação, enquanto dólar renova máxima",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMEI3S3Q2OVQxTzV5NjhURjg3UWVXVkhRT19CSF9haF9ocVlwaGNWZldHQ05VWFE2T1E0OE4xdGdtdEdmcjVHUk1oVmRQTk83Rk1fZkk4YXc1RklDTTdjYlNLTzIwdTBWSktUUHRuM3lsWG1YdEgxX1hjNERrMjlYQXlfRGw4TFFTM29yWTZDZmhVUXNZeFE?oc=5",
-   "publicado": "2026-11-13T13:52-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Santander vê PIB mais fraco e inflação mais teimosa no Brasil até 2027, mas mantém projeção para a Selic",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS2RzSTJEU3hnUGQ1eDRQc3lCVnZ6bzlWS1BpNU9VYXlWR2djY0szcm9JR3pXME9DM1pxMlFmeGVmVTFzTnNNUG5YVE1MUnRTaWEtOE1ydEZnTWJwdjdFbWdyQnNjZ1hDWWcyQ09XVWd1MV9kMU5xMDdRYS1vdE1RckFZUlo0TDV1UFlDNnM2WHM3bUZUbzZ1cnVOYWVYV1dmc2RhVm9nOWNNbVdLbVI2V2pwQVltQTNzNmNFSzR5Ny0?oc=5",
-   "publicado": "2026-11-13T13:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWktbTd4NEdtU3c3ZFUtMHRPYU5uc1laQWxZWlFnQnRZM0NfYWQ4U0ZxVjV1LW5OV0pIWWJMSGhTaWZmZFJWQUNmZ3o4aXhIYmdKUWplSzZ5Z1IwMWhqeVNQcWZxa29ZbE9NekxPWWh5U2xKd3BPVFVJZ203bWZVbUxDX1ZpOG0wU1pUcGlGbGE4VklESW5CbkJzbjRXSlRmLTdWaWRhZ3pCeGEwcWRsetIBtgFBVV95cUxQRXJhM2VRV3hvM2hxUXliWXhONUQzMW1uTE1RQUQxZ25zN0g5bG03bjkwbWVqODU4WTljdUFqamtsNk51TlJ0UFZBaFJVTTdzQ1Utc19iNGpMRzNmTVhMWFFmOERQNFRDSnRSOW5DRzFhR0hERjBHWGpVM01yLTE5MjVxTVpwUUpYTUtnbVM3Y3d2b0w2M0U4MDFSU21pQW94SUdHVE1iZEpZdFlSclE2b1QyV1hKQQ?oc=5",
-   "publicado": "2026-11-13T13:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa contraria índices dos EUA e sobe quase 1%; Nubank salta em NY",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNU2lTMHljclVvY3FWQTVCTkJrbFpQUHNEVmZwNm9VVDdPZ1dCWGJDRWFmcEltemtYRXFHcUlFREQ0QUhOc09SYjlTZHJ5UDVzRzFJYTExMjJoNWRadjBLNm5lU0NwMDdfdEFhQ3lPTi1tdmc2NkMtai1ZN00wTVNOYlBxZmowQUF3bW1XTTBWR3BaeVI5aVp0QmRWVkV5WXBobDdGWG9sRXlkb0M2NG9nZjl1UWVsMFhGZEZfQlpCMnM0dzBlQTlOdy1naW11b0M0bUNwbDFWampwREgxajNGZ09NLUdpczBN0gHuAUFVX3lxTE5TQzBUbmFpdk8tNFR0NnozNDJSOU51MWx2MWpQVzRDTzhSbjZCOVhmWHR2bHN1S250R0d1a25mZUx2RnViLWNOQkNBNll5M3E5Vi0zOE5iemtSd24xMTl4TEN4QW9kZWZCbXBab0VyNU5EOEtieWJpM0psdXdCS3JJMUdEQUg3dzFLaEt2U3RmZnpMY0M0VmxaMEJYQ3hKSUhMWVI1V3ZBeGpZaFFWbklZMFB2Q3lXSGthREJTV21kVTdFbG9YZUtvSktiT3RtNWNZV3h1ZWtOVW1wS280bkNMS29ENkpvU3g5dThDSkE?oc=5",
-   "publicado": "2026-11-13T13:12-03:00",
+   "titulo": "Braskem vê margens menores em 2027 e 'segue engajada' em acordo com credores, diz diretoria",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-ve-margens-menores-em-2027-e-segue-engajada-em-acordo-com-credores-diz-diretoria.shtml",
+   "publicado": "2026-11-13T13:45-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
    ],
-   "tickers": []
+   "tickers": [
+    "BRKM5"
+   ]
   },
   {
    "titulo": "Após bancos privados, Caixa faz as contas para subir taxa de juros do crédito imobiliário",
@@ -2217,7 +2337,7 @@
   {
    "titulo": "Banco do Brasil volta a cair; BTG e Ativa cortam preço-alvo para ação",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOR3QwYnpfcVZkUVcwSjNyY3ZQOG0ySTItdE00UEMxOWE0SUlOZHljMHB6TFI1clRNY1Zla2gtMThEMm5hRGlfNnY3V09oTm1pUVh0elE4VGVCWU5obkJhcm9RNjJXa2h4a0pyX0hsN1d6QmFobkFYRFpyOTV2WTVsTzhtaW1kdjlWckt6dFdFeVNHSzc5bk9jRms5M005eEQ3SjZnUkxhcFhTS04zeThtaGtWMGNoMVFwXzZDVG5Ddm9lMG03cHfSAcsBQVVfeXFMUDN3VzBUUTZ3NFF0Y0ItNjhtaGNiNjhtdlR5MG1kSko0aWNwUFJUTDV3YmxfbUxPRDNUdEVCdk9jUVJQYk41S0wtZzJ0QnE0d2cteFFPUVcxdG0tTXZnOVBCUnBMUUJIOUxsb0gxaUdYbWlNNnVnV2RockNFWnNiTDliSnpUVEM3X1RIQmNMUm1ZUTRxZFZnZEhpNGlsNjR2MnhXR2xHTkpORVRjZTdGOFJ1MUtIVVg1aEd4d2xJSzVfdWIyUk5rcFowZ1E?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM3dXMFRRNnc0UXRjQi02OG1oY2I2OG12VHkwbWRKSjRpY3BQUlRMNXdibF9tTE9EM1R0RUJ2T2NRUlBiTjVLTC1nMnRCcTR3Zy14UU9RVzF0bS1Ndmc5UEJScExRQkg5TGxvSDFpR1htaU02dWdXZGhyQ0Vac2JMOWJKelRUQzdfVEhCY0xSbVlRNHFkVmdkSGk0aWw2NHYyeFdHbEdOSk5FVGNlN0Y4UnUxS0hVWDVoR3h3bElLNV91YjJSTmtwWjBnUdIBywFBVV95cUxQM3dXMFRRNnc0UXRjQi02OG1oY2I2OG12VHkwbWRKSjRpY3BQUlRMNXdibF9tTE9EM1R0RUJ2T2NRUlBiTjVLTC1nMnRCcTR3Zy14UU9RVzF0bS1Ndmc5UEJScExRQkg5TGxvSDFpR1htaU02dWdXZGhyQ0Vac2JMOWJKelRUQzdfVEhCY0xSbVlRNHFkVmdkSGk0aWw2NHYyeFdHbEdOSk5FVGNlN0Y4UnUxS0hVWDVoR3h3bElLNV91YjJSTmtwWjBnUQ?oc=5",
    "publicado": "2026-11-13T13:07-03:00",
    "impacto": "medio",
    "ativos": [
@@ -2262,19 +2382,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe com apoio de Petrobras em meio a incertezas fiscais elevadas no Brasil",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZERwSHZxWkV1MWpyUzVrYWRRMFEwWV93Y3cyLUNPaEhqMnhWLXgxUDJiZFFWR3RJVm9VUkc3Z21EZFNNY3I0WExlQ0p4cDZ4Z0lHb3JGNHZabHB3QWpUYnZrMUdUXzNkdi1XNGZyNnRKNlkwWFBLQWJiMHdiMENTODNUZmI4dDRyWF9DRUVJRGxZRFRfWk5LUXZjbmwzejlQeXR5R3JUaEd6bHpzODNocHhaSkR4SnFIcDJtTHZSSUjSAcYBQVVfeXFMT2VTRkRscEZZYlUxZXdpdS1pUjFTQlpNUFNmN0RPdkZSbVFrU0lXYXpWQWppM0Vna1NzWm03NTQ5Y0pnV1Vac29rbE9QOG1nTE9qT1JQLXBCdjU3QV9sRkhPM2syNUFpNXJUUldUQXRBWTNSMFJCc3pQc2kzenVvSHZVSWIwOW8xV09fajJrRTJBUUhTSDRrcXBsUXVQalQ1amFfa3NXMGhKa3ZTM3FDdTQzQjR3bXJQSl9IQnVuWDdHUzR0ZHZn?oc=5",
-   "publicado": "2026-11-13T12:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   }
  ]
 }
