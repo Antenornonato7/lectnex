@@ -157,3 +157,4 @@ abbr.lx-gl:hover, abbr.lx-gl:focus-visible { text-decoration-color: #14B8A6; col
 .lx-toast-news a { color: #F1F5F9; font-weight: 600; }
 .lx-toast-news button { position: absolute; top: .4rem; right: .5rem; color: #94A3B8; font-size: 1rem; }
 @media (max-width: 640px) { .lx-toast-news { left: 12px; right: 12px; bottom: 12px; max-width: none; } }
+@media (prefers-reduced-motion: reduce) { .animate-pulse, .lx-pulse-red, .animate-spin { animation: none !important; } html { scroll-behavior: auto !important; } }
