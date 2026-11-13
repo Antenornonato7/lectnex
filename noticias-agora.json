@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:00-03:00",
+  "atualizado_em": "2026-11-13T13:03-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -139,7 +139,11 @@
     ],
     [
      "12:45",
-     172319.0
+     172419.0
+    ],
+    [
+     "12:48",
+     172408.0
     ]
    ]
   },
@@ -340,7 +344,11 @@
     ],
     [
      "13:00",
-     5.6351
+     5.6346
+    ],
+    [
+     "13:03",
+     5.6359
     ]
    ]
   },
@@ -720,7 +728,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.03
    },
    {
     "hora": "12:33",
@@ -733,7 +741,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.03
    },
    {
     "hora": "12:38",
@@ -746,7 +754,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.02
    },
    {
     "hora": "12:43",
@@ -1424,7 +1432,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:00-03:00",
+ "atualizado_em": "2026-11-13T13:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1583,6 +1591,19 @@
    "tickers": []
   },
   {
+   "titulo": "Galípolo diz que prêmio da curva de juros depende da credibilidade do país",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOFMtWG9XVVNOajNuX1JQak5feXlWZlBzLTRMbTE0Ni10MWRCNnQ5eDVLRWpWZlp1NUJIczVmQThJbHhqLWNRYlhuSWhMWFBqVWpERU5XYjJSdGF1SDdFT2dsTGVTcmxzUmdORGhVZUNKVU1aRVJ1MXpXX3VSeG9hUjZtSjVZVzF5bVltNkhLajZuVllMTVYtYXJYbUFSSkV3Sm94X2tGb1l3cExGaExvQ2V0RXJTWUFS0gG4AUFVX3lxTE84Uy1Yb1dVU05qM25fUlBqTl95eVZmUHMtNExtMTQ2LXQxZEI2dDl4NUtFalZmWnU1QkhzNWZBOElseGotY1FiWG5JaExYUGpVakRFTldiMlJ0YXVIN0VPZ2xMZVNybHNSZ05EaFVlQ0pVTVpFUnUxeldfdVJ4b2FSNm1KNVlXMXltWW02SEtqNm5WWUxNVi1hclhtQVJKRXdKb3hfa0ZvWXdwTEZoTG9DZXRFclNZQVI?oc=5",
+   "publicado": "2026-11-13T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
@@ -1618,18 +1639,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa avança em meio a balanços, apesar de preocupações com política fiscal",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRjRub1BKay1KZDR0ZS0tTmNkU1p3WEwtM1BUZ0dkNVpwWVRfSVVGcWhpd1RFZW5kdnlTcFVYVjVaZG5lSTVVTGNRT3Bfbm1ZNDdaWWRqVWMwbGw0dzV0OU4tS25LME4xOElDRG94YXFNWWQ3ZXZid2haa3Uyem1ad1ZGZE5pTmZhbjdBYkxfNUNUVzZ2bGQ4NnlJamNDR0dXM3c1T28zUnlEOWxXaG4xV2l3dkxHNzMtUkZHMjN1TXNFSnhXZnZxbnhXU042LTFa0gHfAUFVX3lxTE5TdXZUU2ItVEZQeWxwVnktaGR0cDliVFRfeTFvSHVtSEpLNl9xb2RBOXB5SFZDZXl6NEZGSVhsQWtYSTRFVUZhRXpzQ1lKZi1zQkxENWRtVDdUbll0djQxMU5qNG5pNlM4QWxEV3c2VFlLaEVVVjFlaU85R1pIZnRFaVNTcGdHSEtHYWhhT2hTTEJ0Y01FNExkX1NPVzBHbW9EWUJna0s0TUJVcGFNN3dNTW5abDRCSlFfbUFOTVVPcjZQVHBGdmJ3dlZXYnBndWlLT3o4a2FRNV91NS1vU1E?oc=5",
-   "publicado": "2026-11-13T11:02-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
    ],
    "tickers": []
   }
