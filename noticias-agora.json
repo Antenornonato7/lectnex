@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T17:30-03:00",
+  "atualizado_em": "2026-11-13T17:33-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     172450.0
+     172443.0
     ]
    ]
   },
@@ -760,7 +760,11 @@
     ],
     [
      "17:30",
-     5.6564
+     5.6589
+    ],
+    [
+     "17:33",
+     5.6598
     ]
    ]
   },
@@ -1601,7 +1605,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.08
    },
    {
     "hora": "17:03",
@@ -1616,7 +1620,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.08
    },
    {
     "hora": "17:19",
@@ -1630,23 +1634,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:29",
+    "titulo": "Dólar fecha em alta, a R$ 5,6550, com incertezas fiscais no Brasil e política monetária dos EUA",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GNDdBNlNGQmpiUUg3d2hiX1hKQ1ZQeDMwN25lQURtVEs2VXAteHhGYjlkUmlsR0Q3ZUZqRld6cGRsdTdhLUFzelJqMXp4a3hkajNJbGRJRUFibVU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Dúvidas sobre plano fiscal e exterior pesam sobre real e Ibovespa | Finanças",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTjM5dXZ6R1JuTkkzbFE5RDVVZW00a2hpOFU4ekdFdUN6aHNTaDU2R0p6THZsT2JIU0ZTNXNFMUlTOGVyd0d5aWJNNXo2VC1rUXVoVDI1Sk43X2QyRXBMTnlhRUhCT0JpbjBjNlBMYkRZRVlLc3c0UUtiY0x6NW1YbHY5WkE0MVAzQU5rS2xIM1JhbU1BWTJyZ2FUZ0wyS3hFbEQ3aXk5OFRGOG5CSFZwX2pJQUNIZEhqMjNBaDZXdWs?oc=5",
-   "publicado": "2026-11-13T05:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Nvidia’s turmoil is prompting a rotation across chip stocks. Here's what we know",
    "fonte": "CNBC",
@@ -2603,6 +2607,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em alta, a R$ 5,6550, com incertezas fiscais no Brasil e política monetária dos EUA",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GNDdBNlNGQmpiUUg3d2hiX1hKQ1ZQeDMwN25lQURtVEs2VXAteHhGYjlkUmlsR0Q3ZUZqRld6cGRsdTdhLUFzelJqMXp4a3hkajNJbGRJRUFibVU?oc=5",
+   "publicado": "2026-11-13T17:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2632,7 +2647,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T17:30-03:00",
+ "atualizado_em": "2026-11-13T17:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2640,11 +2655,23 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar fecha em alta, a R$ 5,6550, com incertezas fiscais no Brasil e política monetária dos EUA",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GNDdBNlNGQmpiUUg3d2hiX1hKQ1ZQeDMwN25lQURtVEs2VXAteHhGYjlkUmlsR0Q3ZUZqRld6cGRsdTdhLUFzelJqMXp4a3hkajNJbGRJRUFibVU?oc=5",
+   "publicado": "2026-11-13T17:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar à vista termina sessão estável, mas avança 2,66% na semana",
    "fonte": "Valor",
@@ -2715,6 +2742,18 @@
    "tickers": []
   },
   {
+   "titulo": "Copom, IPCA e pronunciamento de Lula dividem agenda da semana com nova rodada de inflação nos EUA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPQXRFZXYzZ3dsZVZMYkgxbmhia0JIbEZsc2plakhyMmtxdzFmY1dtZjB4dzhXWjhsbko5aHN1QlVTcjRUVmwzemJvLUpWZ2tkSXdpc2szd25TMGNvczlSUWNxQlNocXpHMlNtN0ZvXzMtSE1JcmJjODJ2d245ZmlIV1ZlTzVfZ3FXbUkyc3BXT0tqYmJWRXg5ejJnVEtUWnJSZUQwS2lGMWptWndSZkRKdjY4TDREcG9maFg5bWw2YU5tUEprZmtzWF8zODI5NUotOTl5QVdqWVlILV9kdzdLQlBjOVZ3ZWo1bk8tNy0wem5qaDYzblE?oc=5",
+   "publicado": "2026-11-13T16:05-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Nubank salta 10% em NY após entregar lucro recorde; BDR também dispara na B3",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcGNKd1RadWtnYnI2NHJVX0hrRTJjMjVkalJRU29ZT0k1T1hYZm1DQmdIc3FadWRRTVoyS3hwQktRY29vUzQtSkRPR1AycU84OTlFLWFVZ1JxNF9acWJXdUE0cWdZNjZ6Wk96VnJVdW5Qam1CNWRnbFNiVDRSMHFjeVN2RDc1MjIyLUJoU0lKdmh2WDBJMWd2dGwtUnFxZlpzZElYNWFrVFQ1UVZWam50Ykl1QkliSTJKQ0gzYUtsVzR2Z3NqSXJZ0gHMAUFVX3lxTE55amlpVzhTRUk4LXpTQmxlemIwOGxzUmFZTU5pRm5HZndHV2FsVTBfMlc3QlBldnVMRmhCcy1pSEhHY1RlT09SSmdTbmhEREJPdDB5QkNobnFKcFg1eXNHLUxLT2xXMS1oMGV0c1RjWTlMZVZqSk5nVzR2VDlWcjEyWnlnTG1FSG8tRzd4UHIwRXllTFRHVV9OUTBrU203OWxZRjllZEM5SnJMaHJwWDJHSU5zcDRfQ2pVWnQ0azRscjcyVnBjdVYtZmRXOA?oc=5",
@@ -2739,18 +2778,6 @@
    "tickers": [
     "B3SA3"
    ]
-  },
-  {
-   "titulo": "Dólar fecha no maior nível em mais de um ano após dado de inflação dos EUA; bolsa cai",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNTmNwTE0zT3Izb3ZlWFhfNWV3VFRSMElodGc0ZmZYUHpabG1VLUd0elZmUXN2MktURzF4UGJnVWlKZ1N1RHFDcTRNeFhTSW9aaDVuY3NwLWdyd2I0TGxhVklGQU5fU1ctaHdFWG1DSUpzUE5ycWk3am5LOV9UcnJaRDdvVlZBOHhYZ01fNHJjdVhHQU9IVER5QThEZkZTN295TE56Y2s0Sk0xaHMzdUdqVklaWUg4QVlUTWNGRTFOangydW1JSlhIRTktcktsVFJQS29DM1FFMzBzNTBGMHprd2JXOA?oc=5",
-   "publicado": "2026-11-13T15:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Jalles (JALL3) dispara após balanço e vai na contramão de Raízen (RAIZ4) e São Martinho (SMTO3); o que agradou o mercado?",
@@ -2797,6 +2824,18 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa ensaia recuperação, enquanto dólar renova máxima",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMEI3S3Q2OVQxTzV5NjhURjg3UWVXVkhRT19CSF9haF9ocVlwaGNWZldHQ05VWFE2T1E0OE4xdGdtdEdmcjVHUk1oVmRQTk83Rk1fZkk4YXc1RklDTTdjYlNLTzIwdTBWSktUUHRuM3lsWG1YdEgxX1hjNERrMjlYQXlfRGw4TFFTM29yWTZDZmhVUXNZeFE?oc=5",
+   "publicado": "2026-11-13T14:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
