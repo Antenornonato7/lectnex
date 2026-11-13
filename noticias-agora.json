@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T15:38-03:00",
+  "atualizado_em": "2026-11-13T15:40-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -263,11 +263,11 @@
     ],
     [
      "15:20",
-     172389.0
+     172442.0
     ],
     [
-     "15:23",
-     172392.0
+     "15:25",
+     172434.0
     ]
    ]
   },
@@ -592,11 +592,11 @@
     ],
     [
      "15:35",
-     5.6448
+     5.6453
     ],
     [
-     "15:38",
-     5.6429
+     "15:40",
+     5.6451
     ]
    ]
   },
@@ -1239,7 +1239,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.07,
+    "ibov30": 0.1,
     "dolar30": 0.03
    },
    {
@@ -1252,7 +1252,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.08,
     "dolar30": 0.06
    },
    {
@@ -1266,7 +1266,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.03
+    "dolar30": 0.01
    },
    {
     "hora": "15:28",
@@ -2178,7 +2178,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T15:38-03:00",
+ "atualizado_em": "2026-11-13T15:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2187,7 +2187,6 @@
   "Estadão",
   "Exame",
   "Folha",
-  "InfoMoney",
   "Money Times"
  ],
  "noticias": [
@@ -2373,13 +2372,14 @@
    "tickers": []
   },
   {
-   "titulo": "Governo tomará medidas em acréscimo para garantir cenário fiscal benigno, diz Moretti",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/governo-medidas-acrescimo-cenario-fiscal-benigno-moretti/",
-   "publicado": "2026-11-13T12:38-03:00",
+   "titulo": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
+   "publicado": "2026-11-13T12:49-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   }
