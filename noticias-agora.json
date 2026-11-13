@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:20-03:00",
+  "atualizado_em": "2026-11-13T13:23-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -155,7 +155,11 @@
     ],
     [
      "13:05",
-     172461.0
+     172457.0
+    ],
+    [
+     "13:08",
+     172468.0
     ]
    ]
   },
@@ -372,7 +376,11 @@
     ],
     [
      "13:20",
-     5.6346
+     5.6378
+    ],
+    [
+     "13:23",
+     5.6378
     ]
    ]
   },
@@ -790,7 +798,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.16,
     "dolar30": -0.06
    },
    {
@@ -1560,7 +1568,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:20-03:00",
+ "atualizado_em": "2026-11-13T13:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1571,7 +1579,6 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
   "Valor"
  ],
  "noticias": [
@@ -1584,6 +1591,17 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeHBUR2dPbkhsdktwWjJqdkM4eXBYdmE4NWJjVVI3bzBYTFNIeWNiR0NYWXZ2OFFhMVRiYXpTeVctcU9Yc2NTSERwdkl2YVpRX3ZSUHVfbE9zd1c0WFd1Q0QtcGRleG9kVkI0ekp1NGhrNVNYRHJRUDhFdVBwLUs1ZWFMSHh1R2lZQ1BOaXV4M2VFQnZOY2VuSXdVZWtzMlBMZm5EVFI1TjRXN1ZtMzlFMVU2WFBoSW1rMERrczUzZld0NXluSDY5aVBreHIyZFV3X205akZEMW9VMmZtQ0R6dkxBdw?oc=5",
+   "publicado": "2026-11-13T13:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -1602,13 +1620,14 @@
    ]
   },
   {
-   "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMnJaM3hKR3dIQVI1TmFhQWxiNDktME1HSjZBdmkwMHhYb3BBWlVrZGhpdzZLSkJ2b2QxaVN5SWxuZDJhOGs5bk9oVkNhMnphd1B3VWFqLWJEcDl6bXpkRVlvMkc1STcybDZqOE1LVGlDMjI5VEFmLWZSWnhOZXRhbjNWTl9neGpNbldmbkpyY0lTVmtqRVlKTE5nRE45V19Zd2ZoeHdtbHh1dDlxd09UZC1CNDBVTkVkQkRyMlB2ZXBkS09INDU3UVJWaGt0aF9RTE1UQ3J1WFHSAd4BQVVfeXFMTTJ4b2phN2hDRzFILXNNLU96NWNhTjFmVUhobUNCWkFUZ3hjOE5MWmM1TzRLcUJfQnlHUjZKdU9RLXFmVU5YZ3lVdXdnc1RvaUt3QlVLb3kwSFE4R1V4eXJWRjBVSW5BMW02dmd3cFZJaUdiWUIwUFRNQ29CNlUyd2FSa1VmSXFvZGFOemIyZENhc2RNQjl0V1JwSUpQN0xyd1lVV2g1bVpmZkhtbnk4RTZmMnRldTZhWnhVWFdJWjlDZXFTLUhMQnR0T0d4am9JVk9PRkVBQW1XMEhCQ3ln?oc=5",
-   "publicado": "2026-11-13T13:05-03:00",
-   "impacto": "alto",
+   "titulo": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "publicado": "2026-11-13T13:03-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN"
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1711,19 +1730,6 @@
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVndDMzlIbWVDWE9DOFRmYXJGTDNMNHRWbGJYSXRFcXY2VXhsc1QtXzhtM3Z3QnBQWlJVTDVRVFl3TGNmcHVvNzR2ZHFYbng0bmZTYmpFOXgtbjhFU3pjUWVfUmFDNEsycFA1UUpvbnlTZ3g2ZXNNcmNFcmlhOGFXNXc4ejZTMnJNNm55MDFxcWFwYVV6MlNYMFR6Yl9yTzI4d2t1M3Zn?oc=5",
    "publicado": "2026-11-13T11:58-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Galípolo diz que prêmio da curva de juros depende da credibilidade do país",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOFMtWG9XVVNOajNuX1JQak5feXlWZlBzLTRMbTE0Ni10MWRCNnQ5eDVLRWpWZlp1NUJIczVmQThJbHhqLWNRYlhuSWhMWFBqVWpERU5XYjJSdGF1SDdFT2dsTGVTcmxzUmdORGhVZUNKVU1aRVJ1MXpXX3VSeG9hUjZtSjVZVzF5bVltNkhLajZuVllMTVYtYXJYbUFSSkV3Sm94X2tGb1l3cExGaExvQ2V0RXJTWUFS0gG4AUFVX3lxTE84Uy1Yb1dVU05qM25fUlBqTl95eVZmUHMtNExtMTQ2LXQxZEI2dDl4NUtFalZmWnU1QkhzNWZBOElseGotY1FiWG5JaExYUGpVakRFTldiMlJ0YXVIN0VPZ2xMZVNybHNSZ05EaFVlQ0pVTVpFUnUxeldfdVJ4b2FSNm1KNVlXMXltWW02SEtqNm5WWUxNVi1hclhtQVJKRXdKb3hfa0ZvWXdwTEZoTG9DZXRFclNZQVI?oc=5",
-   "publicado": "2026-11-13T11:54-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
