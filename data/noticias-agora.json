@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T15:38-03:00",
+  "atualizado_em": "2026-11-13T16:08-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -263,11 +263,35 @@
     ],
     [
      "15:20",
-     172389.0
+     172442.0
     ],
     [
-     "15:23",
-     172392.0
+     "15:25",
+     172425.0
+    ],
+    [
+     "15:30",
+     172446.0
+    ],
+    [
+     "15:35",
+     172362.0
+    ],
+    [
+     "15:40",
+     172344.0
+    ],
+    [
+     "15:45",
+     172136.0
+    ],
+    [
+     "15:50",
+     172106.0
+    ],
+    [
+     "15:53",
+     172089.0
     ]
    ]
   },
@@ -592,11 +616,35 @@
     ],
     [
      "15:35",
-     5.6448
+     5.6453
     ],
     [
-     "15:38",
-     5.6429
+     "15:40",
+     5.6471
+    ],
+    [
+     "15:45",
+     5.6484
+    ],
+    [
+     "15:50",
+     5.6458
+    ],
+    [
+     "15:55",
+     5.6476
+    ],
+    [
+     "16:00",
+     5.6463
+    ],
+    [
+     "16:05",
+     5.6476
+    ],
+    [
+     "16:08",
+     5.6488
     ]
    ]
   },
@@ -1239,7 +1287,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.07,
+    "ibov30": 0.1,
     "dolar30": 0.03
    },
    {
@@ -1252,7 +1300,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.08,
     "dolar30": 0.06
    },
    {
@@ -1265,8 +1313,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": -0.03
+    "ibov30": -0.03,
+    "dolar30": 0.05
    },
    {
     "hora": "15:28",
@@ -1281,6 +1329,21 @@
      "JALL3",
      "RAIZ4",
      "SMTO3"
+    ],
+    "ibov30": -0.19,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "15:46",
+    "titulo": "B3 espera quarto trimestre forte após recordes em volumes em outubro",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-espera-quarto-trimestre-forte-apos-recordes-em-volumes-em-outubro.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
     ],
     "ibov30": null,
     "dolar30": null
@@ -2149,6 +2212,19 @@
     "RAIZ4",
     "SMTO3"
    ]
+  },
+  {
+   "titulo": "B3 espera quarto trimestre forte após recordes em volumes em outubro",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-espera-quarto-trimestre-forte-apos-recordes-em-volumes-em-outubro.shtml",
+   "publicado": "2026-11-13T15:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
   }
  ],
  "enviadas": [
@@ -2178,7 +2254,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T15:38-03:00",
+ "atualizado_em": "2026-11-13T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2191,6 +2267,19 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "B3 espera quarto trimestre forte após recordes em volumes em outubro",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-espera-quarto-trimestre-forte-apos-recordes-em-volumes-em-outubro.shtml",
+   "publicado": "2026-11-13T15:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
   {
    "titulo": "Jalles (JALL3) dispara após balanço e vai na contramão de Raízen (RAIZ4) e São Martinho (SMTO3); o que agradou o mercado?",
    "fonte": "Money Times",
@@ -2214,17 +2303,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "The common theme driving stocks lower — plus, 3 trades and another we want to make",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/investingclub/2026/11/13/the-common-theme-driving-stocks-lower-plus-3-trades-and-another-we-want-to-make.html",
-   "publicado": "2026-11-13T15:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
@@ -2330,55 +2408,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Banco do Brasil volta a cair; BTG e Ativa cortam preço-alvo para ação",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM3dXMFRRNnc0UXRjQi02OG1oY2I2OG12VHkwbWRKSjRpY3BQUlRMNXdibF9tTE9EM1R0RUJ2T2NRUlBiTjVLTC1nMnRCcTR3Zy14UU9RVzF0bS1Ndmc5UEJScExRQkg5TGxvSDFpR1htaU02dWdXZGhyQ0Vac2JMOWJKelRUQzdfVEhCY0xSbVlRNHFkVmdkSGk0aWw2NHYyeFdHbEdOSk5FVGNlN0Y4UnUxS0hVWDVoR3h3bElLNV91YjJSTmtwWjBnUdIBywFBVV95cUxQM3dXMFRRNnc0UXRjQi02OG1oY2I2OG12VHkwbWRKSjRpY3BQUlRMNXdibF9tTE9EM1R0RUJ2T2NRUlBiTjVLTC1nMnRCcTR3Zy14UU9RVzF0bS1Ndmc5UEJScExRQkg5TGxvSDFpR1htaU02dWdXZGhyQ0Vac2JMOWJKelRUQzdfVEhCY0xSbVlRNHFkVmdkSGk0aWw2NHYyeFdHbEdOSk5FVGNlN0Y4UnUxS0hVWDVoR3h3bElLNV91YjJSTmtwWjBnUQ?oc=5",
-   "publicado": "2026-11-13T13:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3",
-    "BPAC11"
-   ]
-  },
-  {
-   "titulo": "Nubank salta 8% em NY após entregar lucro recorde; BDR também dispara na B3",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcGNKd1RadWtnYnI2NHJVX0hrRTJjMjVkalJRU29ZT0k1T1hYZm1DQmdIc3FadWRRTVoyS3hwQktRY29vUzQtSkRPR1AycU84OTlFLWFVZ1JxNF9acWJXdUE0cWdZNjZ6Wk96VnJVdW5Qam1CNWRnbFNiVDRSMHFjeVN2RDc1MjIyLUJoU0lKdmh2WDBJMWd2dGwtUnFxZlpzZElYNWFrVFQ1UVZWam50Ykl1QkliSTJKQ0gzYUtsVzR2Z3NqSXJZ0gHMAUFVX3lxTE55amlpVzhTRUk4LXpTQmxlemIwOGxzUmFZTU5pRm5HZndHV2FsVTBfMlc3QlBldnVMRmhCcy1pSEhHY1RlT09SSmdTbmhEREJPdDB5QkNobnFKcFg1eXNHLUxLT2xXMS1oMGV0c1RjWTlMZVZqSk5nVzR2VDlWcjEyWnlnTG1FSG8tRzd4UHIwRXllTFRHVV9OUTBrU203OWxZRjllZEM5SnJMaHJwWDJHSU5zcDRfQ2pVWnQ0azRscjcyVnBjdVYtZmRXOA?oc=5",
-   "publicado": "2026-11-13T13:05-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
-  },
-  {
-   "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMnhvamE3aENHMUgtc00tT3o1Y2FOMWZVSGhtQ0JaQVRneGM4TkxaYzVPNEtxQl9CeUdSNkp1T1EtcWZVTlhneVV1d2dzVG9pS3dCVUtveTBIUThHVXh5clZGMFVJbkExbTZ2Z3dwVklpR2JZQjBQVE1Db0I2VTJ3YVJrVWZJcW9kYU56YjJkQ2FzZE1COXRXUnBJSlA3THJ3WVVXaDVtWmZmSG1ueThFNmYydGV1NmFaeFVYV0laOUNlcVMtSExCdHRPR3hqb0lWT09GRUFBbVcwSEJDeWfSAd4BQVVfeXFMTTJ4b2phN2hDRzFILXNNLU96NWNhTjFmVUhobUNCWkFUZ3hjOE5MWmM1TzRLcUJfQnlHUjZKdU9RLXFmVU5YZ3lVdXdnc1RvaUt3QlVLb3kwSFE4R1V4eXJWRjBVSW5BMW02dmd3cFZJaUdiWUIwUFRNQ29CNlUyd2FSa1VmSXFvZGFOemIyZENhc2RNQjl0V1JwSUpQN0xyd1lVV2g1bVpmZkhtbnk4RTZmMnRldTZhWnhVWFdJWjlDZXFTLUhMQnR0T0d4am9JVk9PRkVBQW1XMEhCQ3ln?oc=5",
-   "publicado": "2026-11-13T13:05-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Governo tomará medidas em acréscimo para garantir cenário fiscal benigno, diz Moretti",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/governo-medidas-acrescimo-cenario-fiscal-benigno-moretti/",
-   "publicado": "2026-11-13T12:38-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
