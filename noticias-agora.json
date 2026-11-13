@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T12:33-03:00",
+  "atualizado_em": "2026-11-13T12:35-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -115,11 +115,11 @@
     ],
     [
      "12:15",
-     172204.0
+     172203.0
     ],
     [
-     "12:18",
-     172155.0
+     "12:20",
+     172217.0
     ]
    ]
   },
@@ -296,11 +296,11 @@
     ],
     [
      "12:30",
-     5.6316
+     5.6329
     ],
     [
-     "12:33",
-     5.6341
+     "12:35",
+     5.6361
     ]
    ]
   },
@@ -620,7 +620,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.1
+    "dolar30": -0.07
    },
    {
     "hora": "12:02",
@@ -635,7 +635,7 @@
      "BPAC11"
     ],
     "ibov30": null,
-    "dolar30": -0.1
+    "dolar30": -0.07
    },
    {
     "hora": "12:04",
@@ -650,7 +650,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.1
+    "dolar30": -0.07
    }
   ]
  },
@@ -1256,7 +1256,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T12:33-03:00",
+ "atualizado_em": "2026-11-13T12:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1271,6 +1271,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Bessent points to Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "publicado": "2026-11-13T12:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Galípolo mantém mensagem do Copom e diz entender frustração do mercado",
    "fonte": "Valor",
@@ -1334,16 +1346,19 @@
    "tickers": []
   },
   {
-   "titulo": "Bessent points to Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "publicado": "2026-11-13T11:53-03:00",
-   "impacto": "medio",
+   "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
+   "publicado": "2026-11-13T11:33-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
+    "WDO",
+    "DI"
    ],
-   "tickers": []
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
@@ -1354,6 +1369,18 @@
    "ativos": [
     "WIN",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "‘We will sue them’: Canada threatens Stellantis as Trump trade war reshapes Jeep production plans",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html",
+   "publicado": "2026-11-13T11:24-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1410,31 +1437,6 @@
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRjRub1BKay1KZDR0ZS0tTmNkU1p3WEwtM1BUZ0dkNVpwWVRfSVVGcWhpd1RFZW5kdnlTcFVYVjVaZG5lSTVVTGNRT3Bfbm1ZNDdaWWRqVWMwbGw0dzV0OU4tS25LME4xOElDRG94YXFNWWQ3ZXZid2haa3Uyem1ad1ZGZE5pTmZhbjdBYkxfNUNUVzZ2bGQ4NnlJamNDR0dXM3c1T28zUnlEOWxXaG4xV2l3dkxHNzMtUkZHMjN1TXNFSnhXZnZxbnhXU042LTFa0gHfAUFVX3lxTE5TdXZUU2ItVEZQeWxwVnktaGR0cDliVFRfeTFvSHVtSEpLNl9xb2RBOXB5SFZDZXl6NEZGSVhsQWtYSTRFVUZhRXpzQ1lKZi1zQkxENWRtVDdUbll0djQxMU5qNG5pNlM4QWxEV3c2VFlLaEVVVjFlaU85R1pIZnRFaVNTcGdHSEtHYWhhT2hTTEJ0Y01FNExkX1NPVzBHbW9EWUJna0s0TUJVcGFNN3dNTW5abDRCSlFfbUFOTVVPcjZQVHBGdmJ3dlZXYnBndWlLT3o4a2FRNV91NS1vU1E?oc=5",
    "publicado": "2026-11-13T11:02-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Magalu dispara mais de 17% com crise da Casas Bahia; veja maiores altas e baixas do Ibovespa",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQYnJMR3lZOWZRTU43RFBENklfb2tZak5IcWxiNGE0d0xCU0FSeTZOdXljR3hoRXByYlJNUVVmWUVqVTJrRFl5c19uaEpoVFFzVE00OEFDMVQ5ZzJPdkZuQjVxck1DNVk2TW1VVmF1UlMzbFJWcW16VUVGNFJqUGJ4VFhRcEpIemhkaHNnNkpYS3NUOHV4cDdKTHNkWWswSGZLNmlMRU5hZFllWmEzUEpQSEtja1pZUGZjLVdZUGZYVmhMQ0ZueXcyMmpwZ1VvLVAtREdPYWExM3F4MndaMW8yUF8zSm14bnd0dGNOc1FB?oc=5",
-   "publicado": "2026-11-13T10:49-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa sobe com dados do varejo, balanços e ajuste fiscal; 5 coisas para saber antes de investir hoje (13)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV2phMVFjMGo0eUdFS1o4aVdMelN1Zm0zcWlwTjg3RGtyQ3h5aldYdTdLTlpHTnNac3gzekgzZ0p4OHNNQXh0bDF4RGtHSC1aa1ZiVGVlX3ZXSE8yamhnLV9IZHNPVGZQRldEdndSZ0FTZzVEUlVuLWIzTHZ4ZldudEo3NFNTU3VPYTdKREV3ZmFYVGhHaTZMMFFDTU9OeE9lM0NhYlcyOTdhcU8tM0pFWl95SzNBWjhITFhKYW53MU9BUWwzOVRjaG9mLXd0UEhkdnVzQUFZNA?oc=5",
-   "publicado": "2026-11-13T10:35-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
