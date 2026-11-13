@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:06-03:00",
+  "atualizado_em": "2026-11-13T13:08-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -143,11 +143,11 @@
     ],
     [
      "12:50",
-     172394.0
+     172435.0
     ],
     [
-     "12:51",
-     172381.0
+     "12:53",
+     172454.0
     ]
    ]
   },
@@ -352,11 +352,11 @@
     ],
     [
      "13:05",
-     5.6376
+     5.6365
     ],
     [
-     "13:06",
-     5.6369
+     "13:08",
+     5.6365
     ]
    ]
   },
@@ -762,7 +762,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": -0.01
    },
    {
     "hora": "12:43",
@@ -775,7 +775,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.01
    }
   ]
  },
@@ -1440,7 +1440,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:06-03:00",
+ "atualizado_em": "2026-11-13T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1599,19 +1599,6 @@
    "tickers": []
   },
   {
-   "titulo": "Galípolo diz que prêmio da curva de juros depende da credibilidade do país",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOFMtWG9XVVNOajNuX1JQak5feXlWZlBzLTRMbTE0Ni10MWRCNnQ5eDVLRWpWZlp1NUJIczVmQThJbHhqLWNRYlhuSWhMWFBqVWpERU5XYjJSdGF1SDdFT2dsTGVTcmxzUmdORGhVZUNKVU1aRVJ1MXpXX3VSeG9hUjZtSjVZVzF5bVltNkhLajZuVllMTVYtYXJYbUFSSkV3Sm94X2tGb1l3cExGaExvQ2V0RXJTWUFS0gG4AUFVX3lxTE84Uy1Yb1dVU05qM25fUlBqTl95eVZmUHMtNExtMTQ2LXQxZEI2dDl4NUtFalZmWnU1QkhzNWZBOElseGotY1FiWG5JaExYUGpVakRFTldiMlJ0YXVIN0VPZ2xMZVNybHNSZ05EaFVlQ0pVTVpFUnUxeldfdVJ4b2FSNm1KNVlXMXltWW02SEtqNm5WWUxNVi1hclhtQVJKRXdKb3hfa0ZvWXdwTEZoTG9DZXRFclNZQVI?oc=5",
-   "publicado": "2026-11-13T11:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
@@ -1634,6 +1621,17 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
+   "publicado": "2026-11-13T11:22-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
