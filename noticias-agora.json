@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T16:05-03:00",
+  "atualizado_em": "2026-11-13T16:08-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -287,7 +287,11 @@
     ],
     [
      "15:50",
-     172140.0
+     172106.0
+    ],
+    [
+     "15:53",
+     172089.0
     ]
    ]
   },
@@ -636,7 +640,11 @@
     ],
     [
      "16:05",
-     5.6471
+     5.6476
+    ],
+    [
+     "16:08",
+     5.6488
     ]
    ]
   },
@@ -1322,7 +1330,7 @@
      "RAIZ4",
      "SMTO3"
     ],
-    "ibov30": null,
+    "ibov30": -0.19,
     "dolar30": 0.07
    },
    {
@@ -2246,7 +2254,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T16:05-03:00",
+ "atualizado_em": "2026-11-13T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2255,6 +2263,7 @@
   "Estadão",
   "Exame",
   "Folha",
+  "InfoMoney",
   "Money Times"
  ],
  "noticias": [
@@ -2402,20 +2411,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Banco do Brasil volta a cair; BTG e Ativa cortam preço-alvo para ação",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQM3dXMFRRNnc0UXRjQi02OG1oY2I2OG12VHkwbWRKSjRpY3BQUlRMNXdibF9tTE9EM1R0RUJ2T2NRUlBiTjVLTC1nMnRCcTR3Zy14UU9RVzF0bS1Ndmc5UEJScExRQkg5TGxvSDFpR1htaU02dWdXZGhyQ0Vac2JMOWJKelRUQzdfVEhCY0xSbVlRNHFkVmdkSGk0aWw2NHYyeFdHbEdOSk5FVGNlN0Y4UnUxS0hVWDVoR3h3bElLNV91YjJSTmtwWjBnUdIBywFBVV95cUxQM3dXMFRRNnc0UXRjQi02OG1oY2I2OG12VHkwbWRKSjRpY3BQUlRMNXdibF9tTE9EM1R0RUJ2T2NRUlBiTjVLTC1nMnRCcTR3Zy14UU9RVzF0bS1Ndmc5UEJScExRQkg5TGxvSDFpR1htaU02dWdXZGhyQ0Vac2JMOWJKelRUQzdfVEhCY0xSbVlRNHFkVmdkSGk0aWw2NHYyeFdHbEdOSk5FVGNlN0Y4UnUxS0hVWDVoR3h3bElLNV91YjJSTmtwWjBnUQ?oc=5",
-   "publicado": "2026-11-13T13:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3",
-    "BPAC11"
-   ]
   }
  ]
 }
