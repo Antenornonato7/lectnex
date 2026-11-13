@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T12:28-03:00",
+  "atualizado_em": "2026-11-13T12:30-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -111,11 +111,11 @@
     ],
     [
      "12:10",
-     172518.0
+     172439.0
     ],
     [
-     "12:13",
-     172539.0
+     "12:15",
+     172375.0
     ]
    ]
   },
@@ -288,11 +288,11 @@
     ],
     [
      "12:25",
-     5.6368
+     5.6366
     ],
     [
-     "12:28",
-     5.6374
+     "12:30",
+     5.6364
     ]
    ]
   },
@@ -585,7 +585,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.04
+    "dolar30": -0.05
    },
    {
     "hora": "11:59",
@@ -599,7 +599,35 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.04
+    "dolar30": -0.05
+   },
+   {
+    "hora": "12:01",
+    "titulo": "Gastos elevados e ineficiência da política fiscal",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/gastos-elevados-e-ineficiencia-da-politica-fiscal/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.01
+   },
+   {
+    "hora": "12:02",
+    "titulo": "Pacote fiscal vai na direção correta, mas é muito pequeno, diz Mansueto Almeida, do BTG",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/pacote-fiscal-avaliacao-mansueto-almeida-btg/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [
+     "BPAC11"
+    ],
+    "ibov30": null,
+    "dolar30": -0.01
    },
    {
     "hora": "12:04",
@@ -614,7 +642,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.01
    }
   ]
  },
@@ -1156,6 +1184,30 @@
    "tickers": []
   },
   {
+   "titulo": "Gastos elevados e ineficiência da política fiscal",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/gastos-elevados-e-ineficiencia-da-politica-fiscal/",
+   "publicado": "2026-11-13T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Pacote fiscal vai na direção correta, mas é muito pequeno, diz Mansueto Almeida, do BTG",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/pacote-fiscal-avaliacao-mansueto-almeida-btg/",
+   "publicado": "2026-11-13T12:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": [
+    "BPAC11"
+   ]
+  },
+  {
    "titulo": "Galípolo mantém mensagem do Copom e diz entender frustração do mercado",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNmRaU1o4U0h2cXRxWVZvbDl2UzNoQ0MydU5IVDdqdGZPNVFQUUVaMjhZYUMwZkdVdmtWbnFrQkx2cjd2S29reFNTcnpjOV9VSW1RTGljNFZXeW9VeGRoY19jZEN2dUJVMms4Tl9Ua2NSRHZCQWI0XzlQLTRtZklPaTl1WHd3clVFTmxmbE5jZmZManF4bDhvclpRamR4dWtwU3pXa3Z6ZzVEeGpYUHc5bU82ekVYdV9PTlgyNHpWa0ZaZ9IB0AFBVV95cUxNWlBhZHJyRmRYN1poeGJ5VkJuRGVCWkM3VkJNV2pqSnFlNFNvQUhMaERLZkE3OUFadzZoclpSRWFQcHlJX1gyT0UxRWd4RTlUQWVUdDJJbVJaOEJWWXhaNDdNNUltN05xZmhMeUU5TE95azFLTUlpdUREVmhJcVZuN3R5Q1dhLXVON3NkeXhxbjMxNHJSNk1EZDlLakdkYjNlX2dtdUxFVF9ONEpGQWNXUEd1X0tfYzk5X1BJbVZzdUIxbjgzWnFBMExhbXo1NDNl?oc=5",
@@ -1196,7 +1248,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T12:28-03:00",
+ "atualizado_em": "2026-11-13T12:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1220,6 +1272,30 @@
    "ativos": [
     "WIN",
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Pacote fiscal vai na direção correta, mas é muito pequeno, diz Mansueto Almeida, do BTG",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/pacote-fiscal-avaliacao-mansueto-almeida-btg/",
+   "publicado": "2026-11-13T12:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": [
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Gastos elevados e ineficiência da política fiscal",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/gastos-elevados-e-ineficiencia-da-politica-fiscal/",
+   "publicado": "2026-11-13T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -1262,6 +1338,21 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
+   "publicado": "2026-11-13T11:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
@@ -1270,18 +1361,6 @@
    "ativos": [
     "WIN",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "‘We will sue them’: Canada threatens Stellantis as Trump trade war reshapes Jeep production plans",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html",
-   "publicado": "2026-11-13T11:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -1346,19 +1425,6 @@
    "tickers": []
   },
   {
-   "titulo": "Magalu salta mais de 11% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
-   "publicado": "2026-11-13T10:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "MGLU3"
-   ]
-  },
-  {
    "titulo": "Ibovespa sobe com dados do varejo, balanços e ajuste fiscal; 5 coisas para saber antes de investir hoje (13)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV2phMVFjMGo0eUdFS1o4aVdMelN1Zm0zcWlwTjg3RGtyQ3h5aldYdTdLTlpHTnNac3gzekgzZ0p4OHNNQXh0bDF4RGtHSC1aa1ZiVGVlX3ZXSE8yamhnLV9IZHNPVGZQRldEdndSZ0FTZzVEUlVuLWIzTHZ4ZldudEo3NFNTU3VPYTdKREV3ZmFYVGhHaTZMMFFDTU9OeE9lM0NhYlcyOTdhcU8tM0pFWl95SzNBWjhITFhKYW53MU9BUWwzOVRjaG9mLXd0UEhkdnVzQUFZNA?oc=5",
@@ -1395,19 +1461,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Lucro da Cemig salta para R$ 1,7 bi no 3º tri",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468049",
-   "publicado": "2026-11-13T09:31-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "CMIG4"
-   ]
   }
  ]
 }
