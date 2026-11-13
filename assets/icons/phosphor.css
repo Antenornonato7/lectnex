@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=7b5bd92a") format("woff");
+  src: url("./Phosphor.woff?v=b6ee550b") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -238,6 +238,12 @@
 .ph.ph-list-checks:before {
   content: "\eadc";
 }
+.ph.ph-lock-key:before {
+  content: "\e2fe";
+}
+.ph.ph-lock-simple:before {
+  content: "\e308";
+}
 .ph.ph-magnifying-glass:before {
   content: "\e30c";
 }
@@ -387,7 +393,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=7b5bd92a") format("woff");
+  src: url("./Phosphor-Bold.woff?v=b6ee550b") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -623,6 +629,12 @@
 .ph-bold.ph-list-checks:before {
   content: "\eadc";
 }
+.ph-bold.ph-lock-key:before {
+  content: "\e2fe";
+}
+.ph-bold.ph-lock-simple:before {
+  content: "\e308";
+}
 .ph-bold.ph-magnifying-glass:before {
   content: "\e30c";
 }
@@ -772,7 +784,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=7b5bd92a") format("woff");
+  src: url("./Phosphor-Fill.woff?v=b6ee550b") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1008,6 +1020,12 @@
 .ph-fill.ph-list-checks:before {
   content: "\eadc";
 }
+.ph-fill.ph-lock-key:before {
+  content: "\e2fe";
+}
+.ph-fill.ph-lock-simple:before {
+  content: "\e308";
+}
 .ph-fill.ph-magnifying-glass:before {
   content: "\e30c";
 }
@@ -1157,7 +1175,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=7b5bd92a") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=b6ee550b") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1726,6 +1744,22 @@
 }
 .ph-duotone.ph-list-checks:after {
   content: "\eadd";
+  margin-left: -1em;
+}
+.ph-duotone.ph-lock-key:before {
+  content: "\e2fe";
+  opacity: 0.2;
+}
+.ph-duotone.ph-lock-key:after {
+  content: "\e2ff";
+  margin-left: -1em;
+}
+.ph-duotone.ph-lock-simple:before {
+  content: "\e308";
+  opacity: 0.2;
+}
+.ph-duotone.ph-lock-simple:after {
+  content: "\e309";
   margin-left: -1em;
 }
 .ph-duotone.ph-magnifying-glass:before {
