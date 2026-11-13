@@ -1,36 +1,36 @@
 {
- "data": "2026-11-12",
+ "data": "2026-11-13",
  "hora": "07:30",
  "ativos": [
   {
    "id": "sp",
    "nome": "S&P 500 fut.",
-   "var": -0.3
+   "var": 0.15
   },
   {
    "id": "nq",
    "nome": "Nasdaq fut.",
-   "var": -0.65
+   "var": -0.05
   },
   {
    "id": "ewz",
    "nome": "EWZ (Brasil em NY)",
-   "var": -0.8
+   "var": 0.19
   },
   {
    "id": "dxy",
    "nome": "DXY",
-   "var": -0.07
+   "var": 0.03
   },
   {
    "id": "brent",
    "nome": "Brent",
-   "var": -0.97
+   "var": -0.33
   },
   {
    "id": "vix",
    "nome": "VIX",
-   "var": 4.52
+   "var": -1.66
   },
   {
    "id": "brl",
@@ -39,21 +39,21 @@
   }
  ],
  "win": {
-  "leitura": "bearish",
-  "score": -0.459,
+  "leitura": "neutro",
+  "score": 0.087,
   "motivos": [
-   "EWZ (Brasil em NY) −0,80%",
-   "S&P 500 fut. −0,30%",
-   "Brent −0,97%"
+   "S&P 500 fut. +0,15%",
+   "EWZ (Brasil em NY) +0,19%",
+   "Brent −0,33%"
   ]
  },
  "wdo": {
-  "leitura": "bullish",
-  "score": 0.378,
+  "leitura": "neutro",
+  "score": -0.117,
   "motivos": [
-   "EWZ (Brasil em NY) −0,80%",
-   "VIX +4,52%",
-   "S&P 500 fut. −0,30%"
+   "EWZ (Brasil em NY) +0,19%",
+   "S&P 500 fut. +0,15%",
+   "VIX −1,66%"
   ]
  },
  "regra": "WIN = 0,5·S&P fut + 0,3·EWZ − 0,4·DXY + 0,1·Brent (alta ≥ +0,15; baixa ≤ −0,15). WDO = 0,6·DXY − 0,3·S&P fut − 0,3·EWZ + 0,02·VIX (alta ≥ +0,12; baixa ≤ −0,12). Variações contra o fechamento anterior, Yahoo Finance.",
