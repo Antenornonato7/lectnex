@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:53-03:00",
+  "atualizado_em": "2026-11-13T13:55-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -179,11 +179,11 @@
     ],
     [
      "13:35",
-     172493.0
+     172415.0
     ],
     [
-     "13:38",
-     172440.0
+     "13:40",
+     172430.0
     ]
    ]
   },
@@ -424,11 +424,11 @@
     ],
     [
      "13:50",
-     5.6418
+     5.6406
     ],
     [
-     "13:53",
-     5.6424
+     "13:55",
+     5.6408
     ]
    ]
   },
@@ -887,7 +887,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.05,
+    "ibov30": -0.1,
     "dolar30": 0.09
    },
    {
@@ -903,7 +903,7 @@
      "BBAS3",
      "BPAC11"
     ],
-    "ibov30": -0.05,
+    "ibov30": -0.1,
     "dolar30": 0.09
    },
    {
@@ -917,7 +917,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.05,
+    "ibov30": -0.1,
     "dolar30": 0.09
    },
    {
@@ -932,7 +932,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.06
    },
    {
     "hora": "13:30",
@@ -946,7 +946,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.06
    },
    {
     "hora": "13:45",
@@ -1724,7 +1724,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:53-03:00",
+ "atualizado_em": "2026-11-13T13:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1848,6 +1848,17 @@
    "tickers": []
   },
   {
+   "titulo": "Governo tomará medidas em acréscimo para garantir cenário fiscal benigno, diz Moretti",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-medidas-acrescimo-cenario-fiscal-benigno-moretti/",
+   "publicado": "2026-11-13T12:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar hoje vira para baixa de olho no fiscal e dados econômicos",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOakIwN1ZneWFjMTlUOWx6VjItUERCWEN5RjM4eWI3WVNJeVEycmQ4ekxtaEpJMWZUMThCQjltcXdUNFY5THBqNTQzVkl0Y0puNDNQVU5JSExWaVNRdURlU3BzQTFMaUtmOEY5VFAwR3k5bFpOa3JDX1FCcUIwWFBVWXdiMkp0aUNRcVRGQmpEM1I5X3c2SHZZcjVGQkjSAaIBQVVfeXFMT2ZISV9Ic0pkbFJueDZKSXhad1p3MGdySWplR0llTVJ5TGdyOXBRdzBrVU1mNWd5SmVJWndNbkRaZncxaEdualY0ME54a3JZSGZoalV1U1hrbjFiVi13MW9vRnp0UmZjY01fLVlEUHAtb19IUHdxcVFOM0RNa3NsX2NIV05GczZSdUg0RGlaSGlLLXZOQm1xVUZiVnYxRE1ieFhn?oc=5",
@@ -1889,19 +1900,6 @@
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVndDMzlIbWVDWE9DOFRmYXJGTDNMNHRWbGJYSXRFcXY2VXhsc1QtXzhtM3Z3QnBQWlJVTDVRVFl3TGNmcHVvNzR2ZHFYbng0bmZTYmpFOXgtbjhFU3pjUWVfUmFDNEsycFA1UUpvbnlTZ3g2ZXNNcmNFcmlhOGFXNXc4ejZTMnJNNm55MDFxcWFwYVV6MlNYMFR6Yl9yTzI4d2t1M3Zn?oc=5",
    "publicado": "2026-11-13T11:58-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Galípolo diz que prêmio da curva de juros depende da credibilidade do país",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOR3R6UDBLT2JrT3IxWjFDZERnLUFuTWRHdTFDc1pEcnViWUtnZXNLWU9TUWxkckxPcUc3Mno3WnhnNmdaYV9FZVJCTGt6Q2dNbGwtdzYyTXlGeEhBR2cyODQzMEswMzFQMFFDMWJPSTg5MjdMd2FnUTUycmF6cDBDN1VUdjF1VEpGdWxROEFfYjA1X29oRFE1LWczLWRxYWpnS0ZSajlCcWJabjVzUGRIcmp3d9IBuAFBVV95cUxPOFMtWG9XVVNOajNuX1JQak5feXlWZlBzLTRMbTE0Ni10MWRCNnQ5eDVLRWpWZlp1NUJIczVmQThJbHhqLWNRYlhuSWhMWFBqVWpERU5XYjJSdGF1SDdFT2dsTGVTcmxzUmdORGhVZUNKVU1aRVJ1MXpXX3VSeG9hUjZtSjVZVzF5bVltNkhLajZuVllMTVYtYXJYbUFSSkV3Sm94X2tGb1l3cExGaExvQ2V0RXJTWUFS?oc=5",
-   "publicado": "2026-11-13T11:54-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
