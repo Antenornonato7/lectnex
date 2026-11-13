@@ -84,6 +84,24 @@ def de_csv():
     return datas
 
 
+def valida(d, foto):
+    """Descarta só dado quebrado (taxa impossível, vencimento repetido, curva incompleta).
+    Movimento forte de mercado NÃO é descartado: em 05/10 e 26/10/2026 (1º e 2º turno) a curva andou mais de 1 p.p. num dia, de verdade."""
+    limpa = {}
+    for k in ('pre', 'ipca'):
+        por_venc = {}
+        for p in foto.get(k, []):
+            if isinstance(p.get('taxa'), (int, float)) and 0 < p['taxa'] < 40 and p.get('anos', 0) > 0:
+                por_venc[p['venc']] = p
+            else:
+                note('warning', f'Curva {d}: ponto descartado {k} {p.get("venc")} taxa={p.get("taxa")}')
+        limpa[k] = list(por_venc.values())
+    if len(limpa['pre']) < 3:
+        note('warning', f'Curva {d}: só {len(limpa["pre"])} prefixados; dia ignorado.')
+        return None
+    return limpa
+
+
 def main():
     try:
         atual = json.load(open(SAIDA, encoding='utf-8'))
@@ -93,13 +111,17 @@ def main():
     fontes = []
     try:  # histórico oficial (fechamentos)
         for d, foto in de_csv().items():
-            if d not in hist or hist[d].get('fonte') == 'csv':
+            foto = valida(d, foto)
+            if foto and (d not in hist or hist[d].get('fonte') == 'csv'):
                 hist[d] = {**foto, 'fonte': 'csv'}
         fontes.append('Tesouro Transparente')
     except Exception as e:
         note('warning', f'CSV do Tesouro Transparente indisponível: {type(e).__name__}: {str(e)[:120]}')
     try:  # taxa do momento
         d, foto = de_td()
+        foto = valida(d, foto)
+        if not foto:
+            raise ValueError('curva do momento incompleta')
         hist[d] = {**foto, 'fonte': 'td', 'hora': dt.datetime.now(BRT).strftime('%H:%M')}
         fontes.append('Tesouro Direto')
     except Exception as e:
@@ -111,6 +133,13 @@ def main():
         for k in ('pre', 'ipca'):
             foto[k] = sorted(foto.get(k, []), key=lambda p: p['anos'])
     hist = dict(sorted(hist.items())[-30:])
+    # movimento forte: só registra no log (o site explica o salto ao comparar períodos)
+    ds = list(hist)
+    for a, b in zip(ds, ds[1:]):
+        ant = {p['venc']: p['taxa'] for p in hist[a]['pre']}
+        difs = [p['taxa'] - ant[p['venc']] for p in hist[b]['pre'] if p['venc'] in ant]
+        if difs and abs(sum(difs) / len(difs)) >= 1:
+            note('notice', f'Curva: movimento forte em {b} ({sum(difs) / len(difs):+.2f} p.p. em média), mantido.')
     json.dump({'atualizado_em': dt.datetime.now(BRT).isoformat(timespec='seconds'), 'fontes': fontes, 'historico': hist},
               open(SAIDA, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     ult = list(hist)[-2:]

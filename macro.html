@@ -31,14 +31,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-macro.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Macro & Juros: Copom, Focus e Curva DI | Lectnex", "url": "https://lectnex.com.br/macro.html", "description": "Entenda o porquê do preço: ciclo da Selic, Boletim Focus ao vivo, leitura da curva DI, regimes de risco e o mapa “E se…?” de como cada notícia chega ao WIN e ao WDO.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261113d">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261113e">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261113d">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261113e">
 </head>
 <body data-page="macro" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -241,7 +241,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261113d"></script>
+    <script src="assets/lectnex-core.js?v=20261113e"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -458,6 +458,18 @@
             $('ct-top-l').innerHTML = semComp ? `<li class="px-3 py-3 font-sans text-xs text-slate-500">Comparação ${PER[back] || ''} indisponível: ainda não há histórico suficiente desta curva.</li>`
                 : top3.length ? top3.map((p, i) => `<li class="px-3 py-2 flex items-center gap-3"><span class="text-[10px] text-slate-400 w-3">${i + 1}</span><strong class="font-bold">${nomeV(p.venc)}</strong><span class="text-slate-400">·</span><span class="font-bold ${cls(p.d)}">${bp(p.d)}</span><span class="ml-auto text-[10px] text-slate-500">${p.d > 0.005 ? 'abriu' : p.d < -0.005 ? 'fechou' : 'estável'}</span></li>`).join('')
                 : '<li class="px-3 py-3 font-sans text-xs text-slate-500">Sem vencimentos com taxa nas duas datas para comparar.</li>'
+            // salto de um dia dentro do período (ex.: eleição): explica de onde vem um número grande
+            if (!semComp) {
+                const EV = { '2026-10-05': 'após o 1º turno da eleição', '2026-10-26': 'após o 2º turno da eleição' };
+                const janela = datas.slice(datas.indexOf(dA), datas.indexOf(dH) + 1), saltos = [];
+                for (let i = 1; i < janela.length; i++) {
+                    const a = Object.fromEntries((D.historico[janela[i - 1]][k] || []).map(p => [p.venc, p.taxa]));
+                    const ds = (D.historico[janela[i]][k] || []).filter(p => a[p.venc] != null).map(p => p.taxa - a[p.venc]);
+                    const m = ds.length ? ds.reduce((x, y) => x + y, 0) / ds.length : 0;
+                    if (Math.abs(m) >= 0.75) saltos.push([janela[i], m]);
+                }
+                if (saltos.length) $('ct-top-l').insertAdjacentHTML('beforeend', `<li class="px-3 py-2 font-sans text-[11px] text-slate-600 dark:text-slate-300 bg-amber-50 dark:bg-amber-500/10"><i class="ph-bold ph-lightning text-lect-orange"></i> Inclui ${saltos.map(([d, m]) => `o salto de ${lbl(d)} (${bp(m)} em média num só dia${EV[d] ? ', ' + EV[d] : ''})`).join(' e ')}.</li>`);
+            }
             const indisp = [1, 5, 21].filter(n => datas.length <= n).map(n => ({ 1: 'ontem', 5: '1 semana', 21: '1 mês' })[n]);
             if (indisp.length && !semComp) $('ct-top-l').insertAdjacentHTML('beforeend', `<li class="px-3 py-2 font-sans text-[11px] text-slate-500">Comparação com ${indisp.join(' e ')} indisponível: histórico ainda curto.</li>`);
             document.querySelectorAll('[data-ct-c]').forEach(b => b.title = b.disabled ? 'Comparação indisponível: histórico ainda curto' : '');
