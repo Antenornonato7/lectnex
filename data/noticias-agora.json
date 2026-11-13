@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T12:08-03:00",
+  "atualizado_em": "2026-11-13T12:38-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -95,11 +95,35 @@
     ],
     [
      "11:50",
-     172435.0
+     172451.0
     ],
     [
-     "11:53",
-     172384.0
+     "11:55",
+     172677.0
+    ],
+    [
+     "12:00",
+     172359.0
+    ],
+    [
+     "12:05",
+     172473.0
+    ],
+    [
+     "12:10",
+     172439.0
+    ],
+    [
+     "12:15",
+     172203.0
+    ],
+    [
+     "12:20",
+     172086.0
+    ],
+    [
+     "12:23",
+     172057.0
     ]
    ]
   },
@@ -256,11 +280,35 @@
     ],
     [
      "12:05",
-     5.6406
+     5.6403
     ],
     [
-     "12:08",
-     5.6426
+     "12:10",
+     5.6349
+    ],
+    [
+     "12:15",
+     5.6333
+    ],
+    [
+     "12:20",
+     5.6379
+    ],
+    [
+     "12:25",
+     5.6366
+    ],
+    [
+     "12:30",
+     5.6329
+    ],
+    [
+     "12:35",
+     5.6369
+    ],
+    [
+     "12:38",
+     5.6373
     ]
    ]
   },
@@ -511,6 +559,19 @@
     "dolar30": -0.19
    },
    {
+    "hora": "11:22",
+    "titulo": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.58,
+    "dolar30": -0.27
+   },
+   {
     "hora": "11:33",
     "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
     "fonte": "Estadão",
@@ -524,7 +585,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.23,
     "dolar30": -0.35
    },
    {
@@ -539,8 +600,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.36,
+    "dolar30": -0.05
    },
    {
     "hora": "11:59",
@@ -554,7 +615,50 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.05
+   },
+   {
+    "hora": "12:01",
+    "titulo": "Gastos elevados e ineficiência da política fiscal",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/gastos-elevados-e-ineficiencia-da-politica-fiscal/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "12:02",
+    "titulo": "Pacote fiscal vai na direção correta, mas é muito pequeno, diz Mansueto Almeida, do BTG",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/pacote-fiscal-avaliacao-mansueto-almeida-btg/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [
+     "BPAC11"
+    ],
+    "ibov30": null,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "12:04",
+    "titulo": "Galípolo mantém mensagem do Copom e diz entender frustração do mercado",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNmRaU1o4U0h2cXRxWVZvbDl2UzNoQ0MydU5IVDdqdGZPNVFQUUVaMjhZYUMwZkdVdmtWbnFrQkx2cjd2S29reFNTcnpjOV9VSW1RTGljNFZXeW9VeGRoY19jZEN2dUJVMms4Tl9Ua2NSRHZCQWI0XzlQLTRtZklPaTl1WHd3clVFTmxmbE5jZmZManF4bDhvclpRamR4dWtwU3pXa3Z6ZzVEeGpYUHc5bU82ekVYdV9PTlgyNHpWa0ZaZ9IB0AFBVV95cUxNWlBhZHJyRmRYN1poeGJ5VkJuRGVCWkM3VkJNV2pqSnFlNFNvQUhMaERLZkE3OUFadzZoclpSRWFQcHlJX1gyT0UxRWd4RTlUQWVUdDJJbVJaOEJWWXhaNDdNNUltN05xZmhMeUU5TE95azFLTUlpdUREVmhJcVZuN3R5Q1dhLXVON3NkeXhxbjMxNHJSNk1EZDlLakdkYjNlX2dtdUxFVF9ONEpGQWNXUEd1X0tfYzk5X1BJbVZzdUIxbjgzWnFBMExhbXo1NDNl?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.07
    }
   ]
  },
@@ -1045,6 +1149,17 @@
    "tickers": []
   },
   {
+   "titulo": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
+   "publicado": "2026-11-13T11:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
@@ -1083,6 +1198,43 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Gastos elevados e ineficiência da política fiscal",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/gastos-elevados-e-ineficiencia-da-politica-fiscal/",
+   "publicado": "2026-11-13T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Pacote fiscal vai na direção correta, mas é muito pequeno, diz Mansueto Almeida, do BTG",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/pacote-fiscal-avaliacao-mansueto-almeida-btg/",
+   "publicado": "2026-11-13T12:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": [
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Galípolo mantém mensagem do Copom e diz entender frustração do mercado",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNmRaU1o4U0h2cXRxWVZvbDl2UzNoQ0MydU5IVDdqdGZPNVFQUUVaMjhZYUMwZkdVdmtWbnFrQkx2cjd2S29reFNTcnpjOV9VSW1RTGljNFZXeW9VeGRoY19jZEN2dUJVMms4Tl9Ua2NSRHZCQWI0XzlQLTRtZklPaTl1WHd3clVFTmxmbE5jZmZManF4bDhvclpRamR4dWtwU3pXa3Z6ZzVEeGpYUHc5bU82ekVYdV9PTlgyNHpWa0ZaZ9IB0AFBVV95cUxNWlBhZHJyRmRYN1poeGJ5VkJuRGVCWkM3VkJNV2pqSnFlNFNvQUhMaERLZkE3OUFadzZoclpSRWFQcHlJX1gyT0UxRWd4RTlUQWVUdDJJbVJaOEJWWXhaNDdNNUltN05xZmhMeUU5TE95azFLTUlpdUREVmhJcVZuN3R5Q1dhLXVON3NkeXhxbjMxNHJSNk1EZDlLakdkYjNlX2dtdUxFVF9ONEpGQWNXUEd1X0tfYzk5X1BJbVZzdUIxbjgzWnFBMExhbXo1NDNl?oc=5",
+   "publicado": "2026-11-13T12:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1112,7 +1264,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T12:08-03:00",
+ "atualizado_em": "2026-11-13T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1127,6 +1279,55 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Bessent points to Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "publicado": "2026-11-13T12:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Galípolo mantém mensagem do Copom e diz entender frustração do mercado",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNmRaU1o4U0h2cXRxWVZvbDl2UzNoQ0MydU5IVDdqdGZPNVFQUUVaMjhZYUMwZkdVdmtWbnFrQkx2cjd2S29reFNTcnpjOV9VSW1RTGljNFZXeW9VeGRoY19jZEN2dUJVMms4Tl9Ua2NSRHZCQWI0XzlQLTRtZklPaTl1WHd3clVFTmxmbE5jZmZManF4bDhvclpRamR4dWtwU3pXa3Z6ZzVEeGpYUHc5bU82ekVYdV9PTlgyNHpWa0ZaZ9IB0AFBVV95cUxNWlBhZHJyRmRYN1poeGJ5VkJuRGVCWkM3VkJNV2pqSnFlNFNvQUhMaERLZkE3OUFadzZoclpSRWFQcHlJX1gyT0UxRWd4RTlUQWVUdDJJbVJaOEJWWXhaNDdNNUltN05xZmhMeUU5TE95azFLTUlpdUREVmhJcVZuN3R5Q1dhLXVON3NkeXhxbjMxNHJSNk1EZDlLakdkYjNlX2dtdUxFVF9ONEpGQWNXUEd1X0tfYzk5X1BJbVZzdUIxbjgzWnFBMExhbXo1NDNl?oc=5",
+   "publicado": "2026-11-13T12:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Pacote fiscal vai na direção correta, mas é muito pequeno, diz Mansueto Almeida, do BTG",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/pacote-fiscal-avaliacao-mansueto-almeida-btg/",
+   "publicado": "2026-11-13T12:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": [
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Gastos elevados e ineficiência da política fiscal",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/gastos-elevados-e-ineficiencia-da-politica-fiscal/",
+   "publicado": "2026-11-13T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Wall Street abre em alta após alívio com inflação ao produtor nos EUA",
    "fonte": "CNN Brasil",
@@ -1153,18 +1354,6 @@
    "tickers": []
   },
   {
-   "titulo": "Bessent points to Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "publicado": "2026-11-13T11:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
@@ -1185,6 +1374,28 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
+   "publicado": "2026-11-13T11:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield moves to 5.15% as traders weigh producer price report",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
+   "publicado": "2026-11-13T11:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -1227,10 +1438,10 @@
    "tickers": []
   },
   {
-   "titulo": "Magalu salta mais de 11% com recomendação elevada pelo BofA; veja maiores altas e baixas do Ibovespa",
+   "titulo": "Magalu dispara mais de 17% com crise da Casas Bahia; veja maiores altas e baixas do Ibovespa",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcEhsdm12UktPNzdhTGd3M1RCRFp0aF9VQVZWejVRdThqMGRjUHpVVldLcS00Y3NNVEJ3TWNlbnU2R3U5TEVmT3I2ZGd3YXpaMFRuQVNWYWI3ekpxMnFPdVVNQlpQV1NJZG5TakhBVWZUR01SZnRxTUg5Y1ZUZU10RGRYUVJ1VUlnWjVyOVJFQWlsX3JpcV9GRng3c0dldnFwSkVMU3BLOGc2UHJXZFNVbEhtejJHUFZyTUhyYXctdmFNQWNKQnBKVzdocVlTWHJOei16Z3hfOU9icGljajVaZHFVdWUyUFN1blp0dWdzZ3llaGtsaUQw?oc=5",
-   "publicado": "2026-11-13T10:44-03:00",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQYnJMR3lZOWZRTU43RFBENklfb2tZak5IcWxiNGE0d0xCU0FSeTZOdXljR3hoRXByYlJNUVVmWUVqVTJrRFl5c19uaEpoVFFzVE00OEFDMVQ5ZzJPdkZuQjVxck1DNVk2TW1VVmF1UlMzbFJWcW16VUVGNFJqUGJ4VFhRcEpIemhkaHNnNkpYS3NUOHV4cDdKTHNkWWswSGZLNmlMRU5hZFllWmEzUEpQSEtja1pZUGZjLVdZUGZYVmhMQ0ZueXcyMmpwZ1VvLVAtREdPYWExM3F4MndaMW8yUF8zSm14bnd0dGNOc1FB?oc=5",
+   "publicado": "2026-11-13T10:49-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -1238,18 +1449,6 @@
    "tickers": [
     "MGLU3"
    ]
-  },
-  {
-   "titulo": "Ibovespa sobe com dados do varejo, balanços e ajuste fiscal; 5 coisas para saber antes de investir hoje (13)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV2phMVFjMGo0eUdFS1o4aVdMelN1Zm0zcWlwTjg3RGtyQ3h5aldYdTdLTlpHTnNac3gzekgzZ0p4OHNNQXh0bDF4RGtHSC1aa1ZiVGVlX3ZXSE8yamhnLV9IZHNPVGZQRldEdndSZ0FTZzVEUlVuLWIzTHZ4ZldudEo3NFNTU3VPYTdKREV3ZmFYVGhHaTZMMFFDTU9OeE9lM0NhYlcyOTdhcU8tM0pFWl95SzNBWjhITFhKYW53MU9BUWwzOVRjaG9mLXd0UEhkdnVzQUFZNA?oc=5",
-   "publicado": "2026-11-13T10:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Tombo do Banco do Brasil no 3º trimestre aumenta pressão sobre Tarciana Medeiros; leia bastidor",
@@ -1276,32 +1475,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Lucro da Cemig salta para R$ 1,7 bi no 3º tri",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468049",
-   "publicado": "2026-11-13T09:31-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "CMIG4"
-   ]
-  },
-  {
-   "titulo": "Banco do Brasil (BBAS3) afunda após balanço: ação pode cair ainda mais?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQc1lmV1dNU0NUVGN5N3JTeklQcDJUcTV5aHFnWWx6NldqdXlHdWlxZjlLM1htZWlZY1h4VWRnZFh0NUJTQ0lUd0RxVF9DeV9OVTBiQXUxMnFXclhENjhKZU9IM1RGczlINkFabmJnbWV6LU1nRnQ2MVlzbjY5QV9vcUtGaTFsdGIyM29Fc0t5Tjh6YWIxZXg3QjNOSTlBX2c5a3dhTnlldmZ4QdIBrwFBVV95cUxNUnVDaXlVYVdZaU96ZVoxU2JUYnJPdmpvMm1FNTVORW13Y0NCdTVuRnBNSWZNWEdqTHVtQURGaHo4VGpYdXppRnV1UUR6QjZCUXNOUVBRNUthTlZmQkVSMm9ZQ2VuVExSZVpfak5LMW9WN0FabzRkcV9CNnBQZjNrSEpJRTZyN3loNmpYX2NvczJGYzZGb1FpQmI0bXBDUXpJNmQ1U05UT0xWWVBCSFJz?oc=5",
-   "publicado": "2026-11-13T09:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
   }
  ]
 }
