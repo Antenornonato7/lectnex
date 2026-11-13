@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T15:28-03:00",
+  "atualizado_em": "2026-11-13T15:30-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -255,11 +255,11 @@
     ],
     [
      "15:10",
-     172401.0
+     172404.0
     ],
     [
-     "15:13",
-     172433.0
+     "15:15",
+     172376.0
     ]
    ]
   },
@@ -576,10 +576,10 @@
     ],
     [
      "15:25",
-     5.6421
+     5.6436
     ],
     [
-     "15:28",
+     "15:30",
      5.6438
     ]
    ]
@@ -1237,7 +1237,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.06
    }
   ]
  },
@@ -2106,7 +2106,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T15:28-03:00",
+ "atualizado_em": "2026-11-13T15:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2212,28 +2212,17 @@
    "tickers": []
   },
   {
-   "titulo": "Santander vê PIB mais fraco e inflação mais teimosa no Brasil até 2027, mas mantém projeção para a Selic",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS2RzSTJEU3hnUGQ1eDRQc3lCVnZ6bzlWS1BpNU9VYXlWR2djY0szcm9JR3pXME9DM1pxMlFmeGVmVTFzTnNNUG5YVE1MUnRTaWEtOE1ydEZnTWJwdjdFbWdyQnNjZ1hDWWcyQ09XVWd1MV9kMU5xMDdRYS1vdE1RckFZUlo0TDV1UFlDNnM2WHM3bUZUbzZ1cnVOYWVYV1dmc2RhVm9nOWNNbVdLbVI2V2pwQVltQTNzNmNFSzR5Ny0?oc=5",
-   "publicado": "2026-11-13T13:30-03:00",
-   "impacto": "alto",
+   "titulo": "Braskem vê margens menores em 2027 e 'segue engajada' em acordo com credores, diz diretoria",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-ve-margens-menores-em-2027-e-segue-engajada-em-acordo-com-credores-diz-diretoria.shtml",
+   "publicado": "2026-11-13T13:45-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WDO",
-    "DI"
+    "WIN"
    ],
-   "tickers": []
-  },
-  {
-   "titulo": "Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWktbTd4NEdtU3c3ZFUtMHRPYU5uc1laQWxZWlFnQnRZM0NfYWQ4U0ZxVjV1LW5OV0pIWWJMSGhTaWZmZFJWQUNmZ3o4aXhIYmdKUWplSzZ5Z1IwMWhqeVNQcWZxa29ZbE9NekxPWWh5U2xKd3BPVFVJZ203bWZVbUxDX1ZpOG0wU1pUcGlGbGE4VklESW5CbkJzbjRXSlRmLTdWaWRhZ3pCeGEwcWRsetIBtgFBVV95cUxQRXJhM2VRV3hvM2hxUXliWXhONUQzMW1uTE1RQUQxZ25zN0g5bG03bjkwbWVqODU4WTljdUFqamtsNk51TlJ0UFZBaFJVTTdzQ1Utc19iNGpMRzNmTVhMWFFmOERQNFRDSnRSOW5DRzFhR0hERjBHWGpVM01yLTE5MjVxTVpwUUpYTUtnbVM3Y3d2b0w2M0U4MDFSU21pQW94SUdHVE1iZEpZdFlSclE2b1QyV1hKQQ?oc=5",
-   "publicado": "2026-11-13T13:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
+   "tickers": [
+    "BRKM5"
+   ]
   },
   {
    "titulo": "Após bancos privados, Caixa faz as contas para subir taxa de juros do crédito imobiliário",
@@ -2282,6 +2271,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
+   "publicado": "2026-11-13T12:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
