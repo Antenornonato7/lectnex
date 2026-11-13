@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:38-03:00",
+  "atualizado_em": "2026-11-13T14:08-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -167,11 +167,35 @@
     ],
     [
      "13:20",
-     172372.0
+     172420.0
     ],
     [
-     "13:23",
-     172433.0
+     "13:25",
+     172481.0
+    ],
+    [
+     "13:30",
+     172584.0
+    ],
+    [
+     "13:35",
+     172415.0
+    ],
+    [
+     "13:40",
+     172338.0
+    ],
+    [
+     "13:45",
+     172244.0
+    ],
+    [
+     "13:50",
+     172176.0
+    ],
+    [
+     "13:53",
+     172185.0
     ]
    ]
   },
@@ -400,11 +424,35 @@
     ],
     [
      "13:35",
-     5.6386
+     5.6403
     ],
     [
-     "13:38",
+     "13:40",
+     5.6401
+    ],
+    [
+     "13:45",
      5.6421
+    ],
+    [
+     "13:50",
+     5.6406
+    ],
+    [
+     "13:55",
+     5.6438
+    ],
+    [
+     "14:00",
+     5.6436
+    ],
+    [
+     "14:05",
+     5.6391
+    ],
+    [
+     "14:08",
+     5.6399
     ]
    ]
   },
@@ -841,6 +889,19 @@
     "dolar30": -0.06
    },
    {
+    "hora": "12:54",
+    "titulo": "Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZ9IBwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": -0.01,
+    "dolar30": -0.01
+   },
+   {
     "hora": "13:05",
     "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
     "fonte": "Estadão",
@@ -850,7 +911,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.0,
     "dolar30": 0.04
    },
    {
@@ -863,8 +924,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.06
+    "ibov30": -0.1,
+    "dolar30": 0.09
    },
    {
     "hora": "13:07",
@@ -879,8 +940,8 @@
      "BBAS3",
      "BPAC11"
     ],
-    "ibov30": null,
-    "dolar30": 0.06
+    "ibov30": -0.1,
+    "dolar30": 0.09
    },
    {
     "hora": "13:09",
@@ -893,8 +954,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.06
+    "ibov30": -0.1,
+    "dolar30": 0.09
    },
    {
     "hora": "13:30",
@@ -908,7 +969,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.11
    },
    {
     "hora": "13:30",
@@ -921,6 +982,49 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.11
+   },
+   {
+    "hora": "13:45",
+    "titulo": "Braskem vê margens menores em 2027 e 'segue engajada' em acordo com credores, diz diretoria",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-ve-margens-menores-em-2027-e-segue-engajada-em-acordo-com-credores-diz-diretoria.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BRKM5"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:54",
+    "titulo": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:05",
+    "titulo": "Banco do Brasil tem 31 mil produtores rurais inadimplentes, diz CEO",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-tem-31-mil-produtores-rurais-inadimplentes-diz-ceo.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBAS3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1573,6 +1677,17 @@
    "tickers": []
   },
   {
+   "titulo": "Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZ9IBwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZw?oc=5",
+   "publicado": "2026-11-13T12:54-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMnJaM3hKR3dIQVI1TmFhQWxiNDktME1HSjZBdmkwMHhYb3BBWlVrZGhpdzZLSkJ2b2QxaVN5SWxuZDJhOGs5bk9oVkNhMnphd1B3VWFqLWJEcDl6bXpkRVlvMkc1STcybDZqOE1LVGlDMjI5VEFmLWZSWnhOZXRhbjNWTl9neGpNbldmbkpyY0lTVmtqRVlKTE5nRE45V19Zd2ZoeHdtbHh1dDlxd09UZC1CNDBVTkVkQkRyMlB2ZXBkS09INDU3UVJWaGt0aF9RTE1UQ3J1WFHSAd4BQVVfeXFMTTJ4b2phN2hDRzFILXNNLU96NWNhTjFmVUhobUNCWkFUZ3hjOE5MWmM1TzRLcUJfQnlHUjZKdU9RLXFmVU5YZ3lVdXdnc1RvaUt3QlVLb3kwSFE4R1V4eXJWRjBVSW5BMW02dmd3cFZJaUdiWUIwUFRNQ29CNlUyd2FSa1VmSXFvZGFOemIyZENhc2RNQjl0V1JwSUpQN0xyd1lVV2g1bVpmZkhtbnk4RTZmMnRldTZhWnhVWFdJWjlDZXFTLUhMQnR0T0d4am9JVk9PRkVBQW1XMEhCQ3ln?oc=5",
@@ -1643,6 +1758,43 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Braskem vê margens menores em 2027 e 'segue engajada' em acordo com credores, diz diretoria",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-ve-margens-menores-em-2027-e-segue-engajada-em-acordo-com-credores-diz-diretoria.shtml",
+   "publicado": "2026-11-13T13:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
+  },
+  {
+   "titulo": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
+   "publicado": "2026-11-13T13:54-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil tem 31 mil produtores rurais inadimplentes, diz CEO",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-tem-31-mil-produtores-rurais-inadimplentes-diz-ceo.shtml",
+   "publicado": "2026-11-13T14:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
   }
  ],
  "enviadas": [
@@ -1672,7 +1824,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:38-03:00",
+ "atualizado_em": "2026-11-13T14:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1680,13 +1832,60 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "publicado": "2026-11-13T14:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil tem 31 mil produtores rurais inadimplentes, diz CEO",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-tem-31-mil-produtores-rurais-inadimplentes-diz-ceo.shtml",
+   "publicado": "2026-11-13T14:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
+  },
+  {
+   "titulo": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
+   "publicado": "2026-11-13T13:54-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Braskem vê margens menores em 2027 e 'segue engajada' em acordo com credores, diz diretoria",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-ve-margens-menores-em-2027-e-segue-engajada-em-acordo-com-credores-diz-diretoria.shtml",
+   "publicado": "2026-11-13T13:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
+  },
   {
    "titulo": "Santander vê PIB mais fraco e inflação mais teimosa no Brasil até 2027, mas mantém projeção para a Selic",
    "fonte": "Money Times",
@@ -1708,6 +1907,17 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa contraria índices dos EUA e sobe quase 1%; Nubank salta em NY",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNU2lTMHljclVvY3FWQTVCTkJrbFpQUHNEVmZwNm9VVDdPZ1dCWGJDRWFmcEltemtYRXFHcUlFREQ0QUhOc09SYjlTZHJ5UDVzRzFJYTExMjJoNWRadjBLNm5lU0NwMDdfdEFhQ3lPTi1tdmc2NkMtai1ZN00wTVNOYlBxZmowQUF3bW1XTTBWR3BaeVI5aVp0QmRWVkV5WXBobDdGWG9sRXlkb0M2NG9nZjl1UWVsMFhGZEZfQlpCMnM0dzBlQTlOdy1naW11b0M0bUNwbDFWampwREgxajNGZ09NLUdpczBN0gHuAUFVX3lxTE5TQzBUbmFpdk8tNFR0NnozNDJSOU51MWx2MWpQVzRDTzhSbjZCOVhmWHR2bHN1S250R0d1a25mZUx2RnViLWNOQkNBNll5M3E5Vi0zOE5iemtSd24xMTl4TEN4QW9kZWZCbXBab0VyNU5EOEtieWJpM0psdXdCS3JJMUdEQUg3dzFLaEt2U3RmZnpMY0M0VmxaMEJYQ3hKSUhMWVI1V3ZBeGpZaFFWbklZMFB2Q3lXSGthREJTV21kVTdFbG9YZUtvSktiT3RtNWNZV3h1ZWtOVW1wS280bkNMS29ENkpvU3g5dThDSkE?oc=5",
+   "publicado": "2026-11-13T13:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -1749,14 +1959,13 @@
    ]
   },
   {
-   "titulo": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "publicado": "2026-11-13T13:03-03:00",
+   "titulo": "Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZ9IBwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZw?oc=5",
+   "publicado": "2026-11-13T12:54-03:00",
    "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO"
+    "WIN"
    ],
    "tickers": []
   },
@@ -1806,57 +2015,6 @@
    "tickers": []
   },
   {
-   "titulo": "Galípolo mantém mensagem do Copom e diz entender frustração do mercado",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNmRaU1o4U0h2cXRxWVZvbDl2UzNoQ0MydU5IVDdqdGZPNVFQUUVaMjhZYUMwZkdVdmtWbnFrQkx2cjd2S29reFNTcnpjOV9VSW1RTGljNFZXeW9VeGRoY19jZEN2dUJVMms4Tl9Ua2NSRHZCQWI0XzlQLTRtZklPaTl1WHd3clVFTmxmbE5jZmZManF4bDhvclpRamR4dWtwU3pXa3Z6ZzVEeGpYUHc5bU82ekVYdV9PTlgyNHpWa0ZaZ9IB0AFBVV95cUxNWlBhZHJyRmRYN1poeGJ5VkJuRGVCWkM3VkJNV2pqSnFlNFNvQUhMaERLZkE3OUFadzZoclpSRWFQcHlJX1gyT0UxRWd4RTlUQWVUdDJJbVJaOEJWWXhaNDdNNUltN05xZmhMeUU5TE95azFLTUlpdUREVmhJcVZuN3R5Q1dhLXVON3NkeXhxbjMxNHJSNk1EZDlLakdkYjNlX2dtdUxFVF9ONEpGQWNXUEd1X0tfYzk5X1BJbVZzdUIxbjgzWnFBMExhbXo1NDNl?oc=5",
-   "publicado": "2026-11-13T12:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Wall Street abre em alta após alívio com inflação ao produtor nos EUA",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVDBfUGlIWmF5WkZuWVB5OXlHeXpKS0dTYXRmbGJBSDJITFhiTmxULUFPTlZWNktSRE8yTlpnLVZYZUcwUE1GZWVKS05NamF2cUJFMU9pQ2pMbm1tYUhMZUNLOG9VTm8yczlNckpJdnNQbmVXS0JBTThObHBwXzVSNjljZGRraERN?oc=5",
-   "publicado": "2026-11-13T11:59-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa e dólar sobem com pacote fiscal e dados do Brasil e EUA no radar",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVndDMzlIbWVDWE9DOFRmYXJGTDNMNHRWbGJYSXRFcXY2VXhsc1QtXzhtM3Z3QnBQWlJVTDVRVFl3TGNmcHVvNzR2ZHFYbng0bmZTYmpFOXgtbjhFU3pjUWVfUmFDNEsycFA1UUpvbnlTZ3g2ZXNNcmNFcmlhOGFXNXc4ejZTMnJNNm55MDFxcWFwYVV6MlNYMFR6Yl9yTzI4d2t1M3Zn?oc=5",
-   "publicado": "2026-11-13T11:58-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Galípolo diz que prêmio da curva de juros depende da credibilidade do país",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOR3R6UDBLT2JrT3IxWjFDZERnLUFuTWRHdTFDc1pEcnViWUtnZXNLWU9TUWxkckxPcUc3Mno3WnhnNmdaYV9FZVJCTGt6Q2dNbGwtdzYyTXlGeEhBR2cyODQzMEswMzFQMFFDMWJPSTg5MjdMd2FnUTUycmF6cDBDN1VUdjF1VEpGdWxROEFfYjA1X29oRFE1LWczLWRxYWpnS0ZSajlCcWJabjVzUGRIcmp3d9IBuAFBVV95cUxPOFMtWG9XVVNOajNuX1JQak5feXlWZlBzLTRMbTE0Ni10MWRCNnQ5eDVLRWpWZlp1NUJIczVmQThJbHhqLWNRYlhuSWhMWFBqVWpERU5XYjJSdGF1SDdFT2dsTGVTcmxzUmdORGhVZUNKVU1aRVJ1MXpXX3VSeG9hUjZtSjVZVzF5bVltNkhLajZuVllMTVYtYXJYbUFSSkV3Sm94X2tGb1l3cExGaExvQ2V0RXJTWUFS?oc=5",
-   "publicado": "2026-11-13T11:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
@@ -1865,18 +2023,6 @@
    "ativos": [
     "WIN",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa ensaia recuperação, enquanto dólar renova máxima",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMEI3S3Q2OVQxTzV5NjhURjg3UWVXVkhRT19CSF9haF9ocVlwaGNWZldHQ05VWFE2T1E0OE4xdGdtdEdmcjVHUk1oVmRQTk83Rk1fZkk4YXc1RklDTTdjYlNLTzIwdTBWSktUUHRuM3lsWG1YdEgxX1hjNERrMjlYQXlfRGw4TFFTM29yWTZDZmhVUXNZeFE?oc=5",
-   "publicado": "2026-11-13T11:05-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
