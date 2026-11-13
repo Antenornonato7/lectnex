@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T18:15-03:00",
+  "atualizado_em": "2026-11-13T18:18-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -796,7 +796,11 @@
     ],
     [
      "18:15",
-     5.6704
+     5.6713
+    ],
+    [
+     "18:18",
+     5.6718
     ]
    ]
   },
@@ -1708,7 +1712,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.26
    },
    {
     "hora": "18:00",
@@ -1726,17 +1730,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Varejo brasileiro, inflação ao produtor nos EUA e PIB europeu movimentam a sexta",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYTV1UG9NSkhmcVJoSnhJVTlsaVJ1TmRWcWdGZl9WcWxoTk9GTzNObENPWnp1WXVtem5uODVubTk3SmJxdkZ0Q0ZSRG5kazI1OTZBWHlxbUtmbWZ6MXdDLVZBem94aTBZSzlHMGw3NjUwTDlFMnJHRzh5V3ZMcGhLQlAybjJPYVQwcVBjNS1mX3lxamNRalE3TjJkZ27SAaIBQVVfeXFMUGNrQUNaUEk1SzdRT2gzSllxVlpXSGljY2Zfb01Bdjk5ajdhVnBOTk1GMjktcm1sOHFDSkJKNjROeWx2OUYyNkFZZmtXWGlyNzl6VFY3aVBmMS14a0NjZHpEM2pqM1E3Y1BId1V6ejZtVDBYX1VsRkZvbnRUNE9ob0d5aUJ2RzRkMFBVX0xpalYxQ2podGQ2U196eTlJTEFWYmh3?oc=5",
-   "publicado": "2026-11-13T06:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Bolsas europeias recuam na abertura antes de novo dado de inflação dos EUA",
    "fonte": "Estadão",
@@ -2695,6 +2688,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "B3 vai além da Bolsa, vê renda fixa ganhar força e atrai aposta de alta do BB-BI",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOV3ZJejhRSnEwWHdvaVQxY00wT3BoeXJNWnV2ajRFR1ZmcFNubjN3UlAta2ZQSVNtemk0MjRtQ3hpS01rc2pxMlVDVC12TkJ5ZjdVM0VrZG55X2RNOGZUZ3ZMVGxJRVU0a0JBSU5BNTRmM2NMZ2F3c01SaGdyNFhadUsxQkotcXJmSmFnVHgxWlh5cHVjSXVmZHF0T2wwZDl5MFp2QXQzTDdEdU9adXR1SDFjQllSSzRwckJmeVR2dXQyQ0x4ZFNPZ2pIQnp6d9IB0wFBVV95cUxNUnhtd296a0FsLWJaUllXNjNtbW1IOTJTakJEenA1V2lIUGllM3BKc2hyZHU2OTVQSmduajROMHVyOGw2Z3BPYU9rSkltME5laDdxZzJuZWNyVmlzRFpPS0tDWDVFTzEwNGxyalJrcjJvLU1UZV9leC1WaUZQVjFUWFB5Z29ReGNlOW92QWlRNk9aUHdrcFEwa3NEWThCR0pOamkxUkRjS1NnMk44a3IwQkRRU2Y4VTBJUThJdW9xaWU2dTJyV0o0UzdrY1pkVV81ZGxz?oc=5",
+   "publicado": "2026-11-13T18:09-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
   }
  ],
  "enviadas": [
@@ -2724,7 +2730,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T18:15-03:00",
+ "atualizado_em": "2026-11-13T18:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2738,6 +2744,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "B3 vai além da Bolsa, vê renda fixa ganhar força e atrai aposta de alta do BB-BI",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOV3ZJejhRSnEwWHdvaVQxY00wT3BoeXJNWnV2ajRFR1ZmcFNubjN3UlAta2ZQSVNtemk0MjRtQ3hpS01rc2pxMlVDVC12TkJ5ZjdVM0VrZG55X2RNOGZUZ3ZMVGxJRVU0a0JBSU5BNTRmM2NMZ2F3c01SaGdyNFhadUsxQkotcXJmSmFnVHgxWlh5cHVjSXVmZHF0T2wwZDl5MFp2QXQzTDdEdU9adXR1SDFjQllSSzRwckJmeVR2dXQyQ0x4ZFNPZ2pIQnp6d9IB0wFBVV95cUxNUnhtd296a0FsLWJaUllXNjNtbW1IOTJTakJEenA1V2lIUGllM3BKc2hyZHU2OTVQSmduajROMHVyOGw2Z3BPYU9rSkltME5laDdxZzJuZWNyVmlzRFpPS0tDWDVFTzEwNGxyalJrcjJvLU1UZV9leC1WaUZQVjFUWFB5Z29ReGNlOW92QWlRNk9aUHdrcFEwa3NEWThCR0pOamkxUkRjS1NnMk44a3IwQkRRU2Y4VTBJUThJdW9xaWU2dTJyV0o0UzdrY1pkVV81ZGxz?oc=5",
+   "publicado": "2026-11-13T18:09-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
   {
    "titulo": "10-year Treasury yield moves to 5.17% as traders weigh producer price report",
    "fonte": "CNBC",
@@ -2880,6 +2899,20 @@
    "tickers": []
   },
   {
+   "titulo": "“Não pretendo fazer novos aportes”, diz Louise Barsi sobre Banco do Brasil e BB Seguridade",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMXdwRTBCTjZ2SUxDdl92dUViT21DU1lDbU0wZWtkSW9OUHUyaHFQeGlYUjE3RkVaNXhTTVlBcnEwZkUxNUlJMzV0WTVWTGMzd052N2ZLVUpZN3l2ZE51eXpzRkZIXzEwQWRTd3ZheFVMNkFUSnVMRUVDLXRJQW50ZnY5dzBxczZSZGRvenlhYkxYT0p3ZHNIS1REVWdieFJVZlRUdWlIMllGckJyZnlxNTlCMmgzNWFSOFoxQzdsNHpZUWx6d2FCN0ZReWtfLU9POWlVMmFSUWR0TUgzSmZR0gHkAUFVX3lxTFAzemFKOXl4N25SdGQ5dnotMGZpTDQ0dXd1bTVnUEdERVZqaUdnWUZrZTJ5MnJlNFktNWpCdGZ3elhNUWdVVkZBRHdTWTJXS252TG5IX3lrTHhON1dWSVFtTVJ1cXBzRk9mVERvbC01YW5EWGl3NEFxamZtQlRWRHQ3VXN5T1UxdkNTakRnWTVzT21vZXlpYVhoRWQtWDN6SkFZTHpMRVhUc1pmcVRuVGVEcU1YWm9oN19FbzR4UkVtZTN4T1RqZjFucllrc2VTZW5LZmZsenNzaHBfb29oR01oRlhZRA?oc=5",
+   "publicado": "2026-11-13T16:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3",
+    "BBSE3"
+   ]
+  },
+  {
    "titulo": "Dólar deve registrar novas altas no mercado, segundo economista",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbm83UkE0ZERBZjJWZVlhQUpJdXFZNFJrM1VOOGpUbzVEWVNDQldvODlEUjYyOGxxSXBFcUdYemd4YW4xSnMybXZZUlhWb3lybFBzVVVNNWVmZWQtUWtOMFJ6NmJPajFjb1lJQnNJRkdRSERfeXA2TzBXdjc1ODluejZKY1JIMC1BZ2FzZlY2cDVfRUlwM2YzZVAtZDA4UXJOZmdqWk5abmpZaU1ONFlJbGtYWlQxdw?oc=5",
@@ -2896,33 +2929,6 @@
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcGNKd1RadWtnYnI2NHJVX0hrRTJjMjVkalJRU29ZT0k1T1hYZm1DQmdIc3FadWRRTVoyS3hwQktRY29vUzQtSkRPR1AycU84OTlFLWFVZ1JxNF9acWJXdUE0cWdZNjZ6Wk96VnJVdW5Qam1CNWRnbFNiVDRSMHFjeVN2RDc1MjIyLUJoU0lKdmh2WDBJMWd2dGwtUnFxZlpzZElYNWFrVFQ1UVZWam50Ykl1QkliSTJKQ0gzYUtsVzR2Z3NqSXJZ0gHMAUFVX3lxTE55amlpVzhTRUk4LXpTQmxlemIwOGxzUmFZTU5pRm5HZndHV2FsVTBfMlc3QlBldnVMRmhCcy1pSEhHY1RlT09SSmdTbmhEREJPdDB5QkNobnFKcFg1eXNHLUxLT2xXMS1oMGV0c1RjWTlMZVZqSk5nVzR2VDlWcjEyWnlnTG1FSG8tRzd4UHIwRXllTFRHVV9OUTBrU203OWxZRjllZEM5SnJMaHJwWDJHSU5zcDRfQ2pVWnQ0azRscjcyVnBjdVYtZmRXOA?oc=5",
    "publicado": "2026-11-13T15:59-03:00",
    "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
-  },
-  {
-   "titulo": "Banco do Brasil volta a cair; BTG e Ativa cortam preço-alvo para ação",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOR3QwYnpfcVZkUVcwSjNyY3ZQOG0ySTItdE00UEMxOWE0SUlOZHljMHB6TFI1clRNY1Zla2gtMThEMm5hRGlfNnY3V09oTm1pUVh0elE4VGVCWU5obkJhcm9RNjJXa2h4a0pyX0hsN1d6QmFobkFYRFpyOTV2WTVsTzhtaW1kdjlWckt6dFdFeVNHSzc5bk9jRms5M005eEQ3SjZnUkxhcFhTS04zeThtaGtWMGNoMVFwXzZDVG5Ddm9lMG03cHfSAcsBQVVfeXFMUDN3VzBUUTZ3NFF0Y0ItNjhtaGNiNjhtdlR5MG1kSko0aWNwUFJUTDV3YmxfbUxPRDNUdEVCdk9jUVJQYk41S0wtZzJ0QnE0d2cteFFPUVcxdG0tTXZnOVBCUnBMUUJIOUxsb0gxaUdYbWlNNnVnV2RockNFWnNiTDliSnpUVEM3X1RIQmNMUm1ZUTRxZFZnZEhpNGlsNjR2MnhXR2xHTkpORVRjZTdGOFJ1MUtIVVg1aEd4d2xJSzVfdWIyUk5rcFowZ1E?oc=5",
-   "publicado": "2026-11-13T15:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3",
-    "BPAC11"
-   ]
-  },
-  {
-   "titulo": "B3 espera quarto trimestre forte após recordes em volumes em outubro",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-espera-quarto-trimestre-forte-apos-recordes-em-volumes-em-outubro.shtml",
-   "publicado": "2026-11-13T15:46-03:00",
-   "impacto": "medio",
    "ativos": [
     "WIN"
    ],
