@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:48-03:00",
+  "atualizado_em": "2026-11-13T13:50-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -175,11 +175,11 @@
     ],
     [
      "13:30",
-     172585.0
+     172584.0
     ],
     [
-     "13:33",
-     172551.0
+     "13:35",
+     172557.0
     ]
    ]
   },
@@ -416,11 +416,11 @@
     ],
     [
      "13:45",
-     5.6423
+     5.6421
     ],
     [
-     "13:48",
-     5.6406
+     "13:50",
+     5.6431
     ]
    ]
   },
@@ -879,7 +879,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.02,
+    "ibov30": -0.01,
     "dolar30": 0.09
    },
    {
@@ -895,7 +895,7 @@
      "BBAS3",
      "BPAC11"
     ],
-    "ibov30": -0.02,
+    "ibov30": -0.01,
     "dolar30": 0.09
    },
    {
@@ -909,7 +909,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.01,
     "dolar30": 0.09
    },
    {
@@ -1716,7 +1716,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:48-03:00",
+ "atualizado_em": "2026-11-13T13:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1818,23 +1818,22 @@
    "tickers": []
   },
   {
-   "titulo": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
-   "publicado": "2026-11-13T12:49-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Juros futuros têm leve alta após pacote fiscal e varejo acima do esperado",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVnlvQ2RyZDVBQVNibVUzMUFDeHc1cDQxeGxrc0c3R3d2OWFzdnhESVdGMlhfREhaRW1ucDlSaHd2UU5wM05fbUlNY3NmSmZqREJiaGZpRDhfNzlfM0w1WU5UODVKLVI1c003YW5FR3NJNlhpRkNhajRtYkd5VUdRQkxCM2NiNE44aGhLVGJoOVIzaFl4akJnRHFtUDh3TVc3X0o1VXJSUUsyNnk4MElHSWNmaVIzTjFmTlV1SHgwSm05SlVtSmo2aF9IZkc?oc=5",
    "publicado": "2026-11-13T12:43-03:00",
    "impacto": "alto",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield moves to 5.15% as traders weigh producer price report",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
+   "publicado": "2026-11-13T12:40-03:00",
+   "impacto": "medio",
    "ativos": [
     "DI"
    ],
