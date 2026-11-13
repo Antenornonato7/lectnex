@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:33-03:00",
+  "atualizado_em": "2026-11-13T13:35-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -163,11 +163,11 @@
     ],
     [
      "13:15",
-     172590.0
+     172551.0
     ],
     [
-     "13:18",
-     172554.0
+     "13:20",
+     172515.0
     ]
    ]
   },
@@ -392,11 +392,11 @@
     ],
     [
      "13:30",
-     5.6378
+     5.6376
     ],
     [
-     "13:33",
-     5.6376
+     "13:35",
+     5.638
     ]
    ]
   },
@@ -856,7 +856,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.05
    },
    {
     "hora": "13:07",
@@ -872,7 +872,7 @@
      "BPAC11"
     ],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.05
    },
    {
     "hora": "13:09",
@@ -886,13 +886,27 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    },
    {
     "hora": "13:30",
     "titulo": "Santander vê PIB mais fraco e inflação mais teimosa no Brasil até 2027, mas mantém projeção para a Selic",
     "fonte": "Money Times",
     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS2RzSTJEU3hnUGQ1eDRQc3lCVnZ6bzlWS1BpNU9VYXlWR2djY0szcm9JR3pXME9DM1pxMlFmeGVmVTFzTnNNUG5YVE1MUnRTaWEtOE1ydEZnTWJwdjdFbWdyQnNjZ1hDWWcyQ09XVWd1MV9kMU5xMDdRYS1vdE1RckFZUlo0TDV1UFlDNnM2WHM3bUZUbzZ1cnVOYWVYV1dmc2RhVm9nOWNNbVdLbVI2V2pwQVltQTNzNmNFSzR5Ny0?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:30",
+    "titulo": "Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWktbTd4NEdtU3c3ZFUtMHRPYU5uc1laQWxZWlFnQnRZM0NfYWQ4U0ZxVjV1LW5OV0pIWWJMSGhTaWZmZFJWQUNmZ3o4aXhIYmdKUWplSzZ5Z1IwMWhqeVNQcWZxa29ZbE9NekxPWWh5U2xKd3BPVFVJZ203bWZVbUxDX1ZpOG0wU1pUcGlGbGE4VklESW5CbkJzbjRXSlRmLTdWaWRhZ3pCeGEwcWRsetIBtgFBVV95cUxQRXJhM2VRV3hvM2hxUXliWXhONUQzMW1uTE1RQUQxZ25zN0g5bG03bjkwbWVqODU4WTljdUFqamtsNk51TlJ0UFZBaFJVTTdzQ1Utc19iNGpMRzNmTVhMWFFmOERQNFRDSnRSOW5DRzFhR0hERjBHWGpVM01yLTE5MjVxTVpwUUpYTUtnbVM3Y3d2b0w2M0U4MDFSU21pQW94SUdHVE1iZEpZdFlSclE2b1QyV1hKQQ?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -1609,6 +1623,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWktbTd4NEdtU3c3ZFUtMHRPYU5uc1laQWxZWlFnQnRZM0NfYWQ4U0ZxVjV1LW5OV0pIWWJMSGhTaWZmZFJWQUNmZ3o4aXhIYmdKUWplSzZ5Z1IwMWhqeVNQcWZxa29ZbE9NekxPWWh5U2xKd3BPVFVJZ203bWZVbUxDX1ZpOG0wU1pUcGlGbGE4VklESW5CbkJzbjRXSlRmLTdWaWRhZ3pCeGEwcWRsetIBtgFBVV95cUxQRXJhM2VRV3hvM2hxUXliWXhONUQzMW1uTE1RQUQxZ25zN0g5bG03bjkwbWVqODU4WTljdUFqamtsNk51TlJ0UFZBaFJVTTdzQ1Utc19iNGpMRzNmTVhMWFFmOERQNFRDSnRSOW5DRzFhR0hERjBHWGpVM01yLTE5MjVxTVpwUUpYTUtnbVM3Y3d2b0w2M0U4MDFSU21pQW94SUdHVE1iZEpZdFlSclE2b1QyV1hKQQ?oc=5",
+   "publicado": "2026-11-13T13:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1638,7 +1664,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:33-03:00",
+ "atualizado_em": "2026-11-13T13:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1657,6 +1683,18 @@
    "titulo": "Santander vê PIB mais fraco e inflação mais teimosa no Brasil até 2027, mas mantém projeção para a Selic",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS2RzSTJEU3hnUGQ1eDRQc3lCVnZ6bzlWS1BpNU9VYXlWR2djY0szcm9JR3pXME9DM1pxMlFmeGVmVTFzTnNNUG5YVE1MUnRTaWEtOE1ydEZnTWJwdjdFbWdyQnNjZ1hDWWcyQ09XVWd1MV9kMU5xMDdRYS1vdE1RckFZUlo0TDV1UFlDNnM2WHM3bUZUbzZ1cnVOYWVYV1dmc2RhVm9nOWNNbVdLbVI2V2pwQVltQTNzNmNFSzR5Ny0?oc=5",
+   "publicado": "2026-11-13T13:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Risco fiscal: como as contas públicas podem influenciar dólar, juros e Bolsa?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWWktbTd4NEdtU3c3ZFUtMHRPYU5uc1laQWxZWlFnQnRZM0NfYWQ4U0ZxVjV1LW5OV0pIWWJMSGhTaWZmZFJWQUNmZ3o4aXhIYmdKUWplSzZ5Z1IwMWhqeVNQcWZxa29ZbE9NekxPWWh5U2xKd3BPVFVJZ203bWZVbUxDX1ZpOG0wU1pUcGlGbGE4VklESW5CbkJzbjRXSlRmLTdWaWRhZ3pCeGEwcWRsetIBtgFBVV95cUxQRXJhM2VRV3hvM2hxUXliWXhONUQzMW1uTE1RQUQxZ25zN0g5bG03bjkwbWVqODU4WTljdUFqamtsNk51TlJ0UFZBaFJVTTdzQ1Utc19iNGpMRzNmTVhMWFFmOERQNFRDSnRSOW5DRzFhR0hERjBHWGpVM01yLTE5MjVxTVpwUUpYTUtnbVM3Y3d2b0w2M0U4MDFSU21pQW94SUdHVE1iZEpZdFlSclE2b1QyV1hKQQ?oc=5",
    "publicado": "2026-11-13T13:30-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1703,6 +1741,18 @@
    ]
   },
   {
+   "titulo": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "publicado": "2026-11-13T13:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Juros futuros têm leve alta após pacote fiscal e varejo acima do esperado",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVnlvQ2RyZDVBQVNibVUzMUFDeHc1cDQxeGxrc0c3R3d2OWFzdnhESVdGMlhfREhaRW1ucDlSaHd2UU5wM05fbUlNY3NmSmZqREJiaGZpRDhfNzlfM0w1WU5UODVKLVI1c003YW5FR3NJNlhpRkNhajRtYkd5VUdRQkxCM2NiNE44aGhLVGJoOVIzaFl4akJnRHFtUDh3TVc3X0o1VXJSUUsyNnk4MElHSWNmaVIzTjFmTlV1SHgwSm05SlVtSmo2aF9IZkc?oc=5",
@@ -1729,17 +1779,6 @@
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/governo-medidas-acrescimo-cenario-fiscal-benigno-moretti/",
    "publicado": "2026-11-13T12:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ajuste fiscal avança, mas Tesouro ainda cobra prêmio; Prefixado 2032 sobe a 15,32%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQY1h3RnlRUGhHcS1DN24wdGgyWG1XUzg2RFEzQlRpVV9sQWxRMHVpOXMweXFSNUx2eWRRWjBTUUhfaHk0a01RalZEb3Jud1FlN2pRU0wyTE9wWHFjRnFfOGRLVzZPUjJHNV9qTGdrY0lFLTNERjdDRHV3eHdnS0d2Qk04VVNwQ0JlWW5MYnlnM0p3OVZ1OWZVU0NZYTFhTE5KUXMwckdlODFmNzJjRlJ5bEQ0VkloX0tRcnNrWDBjU3pWNmRqRTdlMmJ1bWF5ZnA0NTFv0gHYAUFVX3lxTE5kWWJWWV9KRE9XUF8wZm9uemVPay1CQ2RfbS1qRDIteWZHTENBU3QybnIyYWpjdmNpdnRHR01LWnFXdVo3Z3BIMFhPOWMyWjZmaUV4TzJjTmtob043MUlTVHU5eXJ3aVMxYXpxTEZlM2pGYVBxTnBaRDRrR2ctMkNnN1daNm9jYzY4WU1teFQxQUp4SVdCQ2lmMHlfVVBSNFhUQmdLUENRVDFFTHVUcWRBZGlMWVZ0ZG43cTN0UjNJcnlfcnlFVmk1VU00U0NQajZUek1NOHBUYg?oc=5",
-   "publicado": "2026-11-13T12:33-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
@@ -1808,21 +1847,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
-   "publicado": "2026-11-13T11:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   },
   {
    "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
