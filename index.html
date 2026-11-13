@@ -33,14 +33,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261113a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261113d">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261113a">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261113d">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -80,6 +80,12 @@
                             <a href="#leitura" class="font-bold text-lect-teal hover:underline">Leitura completa ↓</a>
                             <span class="text-slate-500">Texto escrito por IA antes da abertura, com notícias e dados públicos. Não é recomendação.</span>
                         </div>
+                        <!-- Atalhos: abrem direto a ferramenta -->
+                        <nav class="mt-4 flex flex-wrap gap-2" aria-label="Atalhos">
+                            <a href="#agenda-economica" data-atalho="agenda" class="flex-1 basis-[10.5rem] min-h-[44px] inline-flex items-center gap-2.5 px-3 py-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><i class="ph-bold ph-calendar-dots text-lg text-lect-teal shrink-0"></i><span class="min-w-0 leading-tight"><strong class="block text-sm">Agenda econômica</strong><span id="at-agenda-sub" class="block text-[11px] text-slate-500 truncate">próximo evento da semana</span></span></a>
+                            <a href="futuros.html#risco" data-atalho="risco" class="flex-1 basis-[10.5rem] min-h-[44px] inline-flex items-center gap-2.5 px-3 py-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><i class="ph-bold ph-calculator text-lg text-lect-teal shrink-0"></i><span class="min-w-0 leading-tight"><strong class="block text-sm">Calculadora de risco</strong><span class="block text-[11px] text-slate-500 truncate">tamanho da posição</span></span></a>
+                            <a href="futuros.html#registrar" data-atalho="diario" class="flex-1 basis-[10.5rem] min-h-[44px] inline-flex items-center gap-2.5 px-3 py-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><i class="ph-bold ph-notebook text-lg text-lect-teal shrink-0"></i><span class="min-w-0 leading-tight"><strong class="block text-sm">Diário de operações</strong><span class="block text-[11px] text-slate-500 truncate">registrar operação</span></span></a>
+                        </nav>
                     </article>
 
                     <!-- Ativo selecionado: cabeçalho + gráfico -->
@@ -158,7 +164,6 @@
             <a href="#agenda" class="hover:text-lect-teal">Vencimentos</a>
             <span class="hidden sm:inline text-slate-300 dark:text-slate-600">|</span>
             <a href="futuros.html#plano" data-atalho="plano" class="text-lect-teal hover:underline">Preparar meu dia</a>
-            <a href="futuros.html#diario" data-atalho="diario" class="text-lect-teal hover:underline">Registrar operação</a>
             <a href="laboratorio.html" data-atalho="estudo" class="text-lect-teal hover:underline">Continuar estudando</a>
             <button type="button" id="pn-open" class="ml-auto inline-flex items-center gap-1.5 text-slate-500 hover:text-lect-teal"><i class="ph-bold ph-sliders-horizontal"></i>Personalizar</button>
         </nav>
@@ -186,8 +191,8 @@
             <h2 class="font-display text-xl font-bold mb-3">Notícias relevantes</h2>
                 <div id="ultimas" class="border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark min-h-[260px]">
                     <div class="px-5 pt-4 flex flex-wrap items-center justify-between gap-2">
-                        <span class="term-label font-bold flex items-center gap-2"><span class="px-1.5 py-0.5 bg-lect-teal text-white text-[10px] tracking-wider flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>AO VIVO</span>AGORA NO MERCADO <span class="hidden sm:inline font-normal text-slate-500 normal-case">· atualiza sozinho durante o dia</span></span>
-                        <span class="flex items-center gap-3"><a href="hoje.html" class="font-mono text-[10px] font-bold text-lect-teal hover:underline">gráfico do dia →</a><span id="agora-hora" class="font-mono text-[10px] font-bold text-lect-teal"></span><button id="agora-alertas" type="button" class="font-mono text-[10px] text-slate-500 hover:text-lect-teal" title="Avisos de manchete forte enquanto você navega"></button></span>
+                        <span class="term-label font-bold flex items-center gap-2"><span id="agora-badge" class="px-1.5 py-0.5 bg-slate-500 text-white text-[10px] tracking-wider flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>NOTICIÁRIO</span>AGORA NO MERCADO <span class="hidden sm:inline font-normal text-slate-500 normal-case">· atualiza sozinho durante o dia</span></span>
+                        <span class="flex items-center gap-3"><a href="hoje.html" class="font-mono text-[10px] font-bold text-lect-teal hover:underline">gráfico do dia →</a><span id="agora-hora" class="font-mono text-[10px] font-bold text-slate-500"></span><button id="agora-alertas" type="button" class="font-mono text-[10px] text-slate-500 hover:text-lect-teal" title="Avisos de manchete forte enquanto você navega"></button></span>
                     </div>
                     <div class="px-5 pt-3 flex items-center gap-2 font-mono text-[10px] font-bold"><span id="agora-titulo10" class="text-slate-500">⚡ ÚLTIMOS 10 MINUTOS</span><span class="flex-1 h-px bg-slate-200 dark:bg-lect-borderDark"></span></div>
                     <ol id="agora-lista" class="px-5 pt-1 pb-3 divide-y divide-slate-200 dark:divide-lect-borderDark"></ol>
@@ -472,12 +477,83 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261113a"></script>
+    <script src="assets/lectnex-core.js?v=20261113d"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
 
         /* ---------- Widgets TradingView ---------- */
+        /* ---------- Agrupar manchetes do mesmo acontecimento (veículos diferentes) ----------
+           Regra conservadora: na dúvida, as duas ficam visíveis.
+           Junta quando (a) citam a mesma empresa E o mesmo tipo de fato (ex.: resultado do trimestre) E o mesmo trimestre, se houver;
+           ou (b) os títulos são quase iguais. Fatos diferentes sobre a mesma empresa continuam separados. */
+        (function () {
+            const PARADAS = new Set('a o as os de da do das dos e em no na nos nas um uma uns umas por para com sem sobre ao aos à às que se sua seu suas seus mais menos após apos ate até entre como diz dizem the of to in on for and is are at by from with after its as sao são foi ser tem têm ter vai'.split(' '));
+            const TIPOS = {
+                resultado: /\b(lucro|lucros|prejuizo|prejuizos|balanco|balancos|resultado|resultados|receita|ebitda|earnings|profit|loss|lucrou|lucra)\b/,
+                proventos: /\b(dividendo|dividendos|jcp|proventos|juros sobre capital)\b/,
+                recompra: /\b(recompra|buyback)\b/,
+                aquisicao: /\b(aquisicao|adquire|compra da|compra de|fusao|incorporacao|merger|acquisition)\b/,
+                comando: /\b(ceo|presidente|diretor|renuncia|deixa o cargo|novo comando|nomeia)\b/,
+                rating: /\b(rebaixa|eleva|recomendacao|preco-alvo|rating|upgrade|downgrade)\b/,
+                oferta: /\b(follow-on|ipo|oferta de acoes|emissao)\b/,
+                producao: /\b(producao|vendas|entregas|operacional)\b/
+            };
+            const tri = t => { const m = t.match(/\b([1-4])\s?t\s?(\d{2})?\b|\b([1-4])o?\s?tri(mestre)?\b|\b(primeiro|segundo|terceiro|quarto) trimestre\b|\bq([1-4])\b/); if (!m) return null; const ord = { primeiro: 1, segundo: 2, terceiro: 3, quarto: 4 }; return String(m[1] || m[3] || ord[m[5]] || m[6]); };
+            const norm = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/º|ª/g, 'o').replace(/[^a-z0-9%$\- ]/g, ' ').replace(/\s+/g, ' ').trim();
+            let NOMES = {}; // nome da empresa (minúsculo) → ticker, a partir das cotações do site
+            LX.dados('cotacoes').then(c => { (c && [...(c.itens || []), ...(c.mapa || [])] || []).forEach(x => { if (x.ticker && x.nome) { const n = norm(x.nome).split(' ')[0]; if (n.length > 2) NOMES[n] = x.ticker; } NOMES[norm(x.ticker || '').replace(/\d+$/, '')] = x.ticker; }); });
+            const perfil = n => {
+                if (n.__p) return n.__p;
+                const t = norm(n.titulo), toks = t.split(' ').filter(w => w.length > 2 && !PARADAS.has(w));
+                const ents = new Set(n.tickers || []); toks.forEach(w => { if (NOMES[w]) ents.add(NOMES[w]); }); if (/\bb3\b/.test(t)) ents.add('B3SA3');
+                const tipos = new Set(Object.entries(TIPOS).filter(([, re]) => re.test(t)).map(([k]) => k));
+                return (n.__p = { toks: new Set(toks), ents, tipos, tri: tri(t), quando: new Date(n.publicado || 0).getTime() });
+            };
+            const jac = (a, b) => { let i = 0; a.forEach(x => { if (b.has(x)) i++; }); return i / (a.size + b.size - i || 1); };
+            function mesmoFato(x, y) {
+                const a = perfil(x), b = perfil(y);
+                if (x.fonte && x.fonte === y.fonte && x.titulo === y.titulo) return true;
+                if (Math.abs(a.quando - b.quando) > 30 * 3600e3) return false;
+                const ent = [...a.ents].some(e => b.ents.has(e)), tipo = [...a.tipos].filter(k => b.tipos.has(k));
+                if (a.tri && b.tri && a.tri !== b.tri) return false;            // trimestres diferentes: fatos diferentes
+                if (a.tipos.size && b.tipos.size && !tipo.length) return false;  // tipos de fato diferentes
+                const j = jac(a.toks, b.toks);
+                if (ent && tipo.includes('resultado') && (a.tri || b.tri || j >= 0.15)) return true;
+                if (ent && tipo.length && j >= 0.3) return true;
+                return j >= 0.6 && Math.abs(a.quando - b.quando) <= 12 * 3600e3;
+            }
+            // lista (já filtrada) → [{ principal, outras: [...] }], na ordem da mais recente cobertura
+            LX.agruparNoticias = function (lista) {
+                const grupos = [];
+                (lista || []).filter(n => n && n.titulo).slice().sort((a, b) => new Date(b.publicado) - new Date(a.publicado)).forEach(n => {
+                    const g = grupos.find(g => g.itens.every(m => mesmoFato(m, n))); // precisa bater com todas do grupo
+                    if (g) g.itens.push(n); else grupos.push({ itens: [n] });
+                });
+                return grupos.map(g => {
+                    const ord = g.itens.slice().sort((a, b) => (b.impacto === 'alto') - (a.impacto === 'alto') || new Date(a.publicado) - new Date(b.publicado));
+                    return { principal: ord[0], outras: ord.slice(1).sort((a, b) => new Date(a.publicado) - new Date(b.publicado)), recente: Math.max(...g.itens.map(x => new Date(x.publicado).getTime())), alto: g.itens.some(x => x.impacto === 'alto') };
+                });
+            };
+            const abertos = new Set(); let seq = 0;
+            const hm = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' }); };
+            const diaHm = iso => { const d = new Date(iso); if (isNaN(d)) return ''; const hoje = d.toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' }) === LX.iso(LX.todayBRT()); return (hoje ? '' : d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' }) + ' ') + hm(iso); };
+            // controle "Ver outras N coberturas" + links escondidos (veículo e horário de cada um)
+            LX.coberturas = function (g, classe) {
+                if (!g.outras.length) return '';
+                const k = g.principal.url || g.principal.titulo, on = abertos.has(k), id = 'cob-' + (++seq);
+                return `<button type="button" data-cob="${LX.esc(k)}" aria-expanded="${on}" aria-controls="${id}" class="mt-1 inline-flex items-center gap-1 min-h-[32px] font-mono text-[11px] font-bold text-lect-teal hover:underline ${classe || ''}"><i class="ph-bold ${on ? 'ph-caret-up' : 'ph-caret-down'}"></i>${on ? 'Ocultar' : 'Ver'} outra${g.outras.length > 1 ? 's' : ''} ${g.outras.length} cobertura${g.outras.length > 1 ? 's' : ''}</button>
+                    <ul id="${id}" class="${on ? '' : 'hidden'} mt-1 space-y-1 border-l-2 border-slate-200 dark:border-lect-borderDark pl-3">${g.outras.map(o => `<li class="text-[13px] leading-snug"><a href="${LX.esc(o.url)}" target="_blank" rel="noopener nofollow" class="hover:text-lect-teal hover:underline">${LX.esc(o.titulo)}</a> <span class="font-mono text-[11px] text-slate-500 whitespace-nowrap">· ${LX.esc(o.fonte || '')} · ${diaHm(o.publicado)}</span></li>`).join('')}</ul>`;
+            };
+            document.addEventListener('click', ev => {
+                const b = ev.target.closest('[data-cob]'); if (!b) return;
+                const k = b.dataset.cob, ul = b.nextElementSibling, on = b.getAttribute('aria-expanded') !== 'true';
+                on ? abertos.add(k) : abertos.delete(k);
+                b.setAttribute('aria-expanded', on); ul && ul.classList.toggle('hidden', !on);
+                const n = (b.textContent.match(/\d+/) || [''])[0]; b.innerHTML = `<i class="ph-bold ${on ? 'ph-caret-up' : 'ph-caret-down'}"></i>${on ? 'Ocultar' : 'Ver'} outra${n > 1 ? 's' : ''} ${n} cobertura${n > 1 ? 's' : ''}`;
+            });
+        })();
+
         // Agora no mercado: branch "ao-vivo" (coleta a cada ~2,5 min), reserva em data/noticias-agora.json
         (function () {
             const AOVIVO = 'https://raw.githubusercontent.com/Antenornonato7/lectnex/ao-vivo/noticias-agora.json';
@@ -487,36 +563,48 @@
             const minutos = iso => (Date.now() - new Date(iso)) / 6e4;
             const chipAtivo = a => `<span class="px-1.5 py-0.5 border border-slate-300 dark:border-lect-borderDark font-mono text-[9px] font-bold">${LX.esc(a)}</span>`;
             const chipAcao = tk => { const c = cot[tk]; if (!c) return `<span class="px-1.5 py-0.5 bg-slate-100 dark:bg-white/5 font-mono text-[9px] font-bold">${tk}</span>`; const v = c.var_pct; return `<span class="px-1.5 py-0.5 font-mono text-[9px] font-bold ${v > 0 ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' : v < 0 ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400' : 'bg-slate-100 dark:bg-white/5'}" title="Variação do dia (atraso de ~30 min)">${tk} ${LX.pct(v, 2, true)}</span>`; };
+            // selo e rótulo do noticiário: "Ao vivo" só com a coleta ativa e dentro do intervalo esperado
+            const SELO = { 'ao-vivo': ['AO VIVO', 'bg-lect-teal', 'text-lect-teal'], atrasado: ['ATRASADO', 'bg-amber-600', 'text-amber-600 dark:text-amber-400'], pausa: ['EM PAUSA', 'bg-slate-500', 'text-slate-500'], sem: ['SEM DADOS', 'bg-amber-600', 'text-amber-600 dark:text-amber-400'] };
+            function selo() {
+                const st = LX.statusNoticias(dados && dados.atualizado_em), c = SELO[st.estado];
+                $('agora-badge').className = `px-1.5 py-0.5 ${c[1]} text-white text-[10px] tracking-wider flex items-center gap-1`;
+                $('agora-badge').innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-white${st.estado === 'ao-vivo' ? ' animate-pulse' : ''}"></span>${c[0]}`;
+                $('agora-hora').className = `font-mono text-[10px] font-bold ${c[2]}`;
+                $('agora-hora').textContent = st.rotulo;
+            }
             function pintar() {
+                selo();
                 if (!dados) return;
                 const ns = dados.noticias || [];
-                $('agora-hora').textContent = 'atualizado ' + rel(dados.atualizado_em);
-                let top = ns.filter(n => minutos(n.publicado) <= 10);
+                selo();
+                const gs = LX.agruparNoticias(ns), minG = g => (Date.now() - g.recente) / 6e4;
+                let top = gs.filter(g => minG(g) <= 10);
                 let titulo = '⚡ ÚLTIMOS 10 MINUTOS';
-                if (!top.length) { top = ns.filter(n => minutos(n.publicado) <= 60); titulo = 'NA ÚLTIMA HORA · nada forte nos últimos 10 min'; }
-                if (!top.length) { top = ns.slice(); titulo = 'MAIS RECENTES'; }
-                top = top.slice().sort((a, b) => (b.impacto === 'alto') - (a.impacto === 'alto') || new Date(b.publicado) - new Date(a.publicado)).slice(0, 4);
+                if (!top.length) { top = gs.filter(g => minG(g) <= 60); titulo = 'NA ÚLTIMA HORA · nada forte nos últimos 10 min'; }
+                if (!top.length) { top = gs.slice(); titulo = 'MAIS RECENTES'; }
+                top = top.slice().sort((a, b) => b.alto - a.alto || b.recente - a.recente).slice(0, 4);
                 $('agora-titulo10').textContent = titulo;
-                const ol = $('agora-lista');
+                const ol = $('agora-lista'), hm = iso => new Date(iso).toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' });
                 if (!ns.length) { ol.innerHTML = '<li class="py-3 text-sm text-slate-500">Sem manchetes de impacto nas últimas 3 horas.</li>'; }
-                else ol.innerHTML = top.map(n => {
-                    const novo = vistos && !vistos.has(n.url), rec = minutos(n.publicado) <= 15;
-                    return `<li class="${novo ? 'lx-novo' : ''}"><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="flex gap-3 py-3 hover:bg-slate-50 dark:hover:bg-white/[0.03]">
-                        <span class="w-14 shrink-0 font-mono text-[11px] text-slate-500 pt-0.5">${new Date(n.publicado).toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' })}</span>
-                        <span class="flex-1 min-w-0"><span class="block font-semibold leading-snug">${LX.esc(n.titulo)}</span>
-                        <span class="flex flex-wrap items-center gap-x-2 gap-y-1 mt-1 font-mono text-[11px] text-slate-500">${rec ? '<span class="font-bold text-amber-600 dark:text-amber-400">novo</span>' : ''}${n.impacto === 'alto' ? '<span class="font-bold text-amber-600 dark:text-amber-400">alto impacto</span>' : ''}<span>${LX.esc(n.fonte)} · ${rel(n.publicado)}</span>${(n.ativos || []).map(chipAtivo).join('')}${(n.tickers || []).map(chipAcao).join('')}</span></span></a></li>`;
+                else ol.innerHTML = top.map(g => {
+                    const n = g.principal, novo = vistos && !vistos.has(n.url), rec = minG(g) <= 15;
+                    return `<li class="${novo ? 'lx-novo' : ''} flex gap-3 py-3"><span class="w-14 shrink-0 font-mono text-[11px] text-slate-500 pt-0.5">${hm(n.publicado)}</span>
+                        <div class="flex-1 min-w-0"><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="block font-semibold leading-snug hover:text-lect-teal">${LX.esc(n.titulo)}</a>
+                        <span class="flex flex-wrap items-center gap-x-2 gap-y-1 mt-1 font-mono text-[11px] text-slate-500">${rec ? '<span class="font-bold text-amber-600 dark:text-amber-400">novo</span>' : ''}${g.alto ? '<span class="font-bold text-amber-600 dark:text-amber-400">alto impacto</span>' : ''}<span>${LX.esc(n.fonte)} · ${rel(n.publicado)}</span>${(n.ativos || []).map(chipAtivo).join('')}${(n.tickers || []).map(chipAcao).join('')}</span>
+                        ${LX.coberturas(g)}</div></li>`;
                 }).join('');
-                $('agora-qtd').textContent = `· ${ns.length} manchetes`;
-                $('agora-tempo').innerHTML = ns.map(n => `<li class="${vistos && !vistos.has(n.url) ? 'lx-novo' : ''}"><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="flex gap-3 px-3 py-2 hover:bg-slate-50 dark:hover:bg-white/[0.03]">
-                    <span class="font-mono text-[11px] font-bold ${n.impacto === 'alto' ? 'text-lect-orange' : 'text-lect-teal'} w-11 shrink-0 pt-0.5">${new Date(n.publicado).toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' })}</span>
-                    <span class="flex-1 min-w-0"><span class="text-sm leading-snug">${LX.esc(n.titulo)}</span> <span class="font-mono text-[10px] text-slate-500 whitespace-nowrap">· ${LX.esc(n.fonte)}</span>${(n.tickers || []).length ? ' ' + n.tickers.map(chipAcao).join(' ') : ''}</span></a></li>`).join('');
+                $('agora-qtd').textContent = `· ${gs.length} acontecimento${gs.length === 1 ? '' : 's'}${gs.length !== ns.length ? `, ${ns.length} manchetes` : ''}`;
+                $('agora-tempo').innerHTML = gs.map(g => { const n = g.principal; return `<li class="${vistos && !vistos.has(n.url) ? 'lx-novo' : ''} flex gap-3 px-3 py-2">
+                    <span class="font-mono text-[11px] font-bold ${g.alto ? 'text-amber-600 dark:text-amber-400' : 'text-lect-teal'} w-11 shrink-0 pt-0.5">${hm(n.publicado)}</span>
+                    <div class="flex-1 min-w-0"><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="text-sm leading-snug hover:text-lect-teal hover:underline">${LX.esc(n.titulo)}</a> <span class="font-mono text-[10px] text-slate-500 whitespace-nowrap">· ${LX.esc(n.fonte)}</span>${(n.tickers || []).length ? ' ' + n.tickers.map(chipAcao).join(' ') : ''}
+                    ${LX.coberturas(g)}</div></li>`; }).join('');
                 vistos = new Set(ns.map(n => n.url));
             }
             function buscar() {
                 const t = Math.floor(Date.now() / 6e4);
                 fetch(AOVIVO + '?t=' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : Promise.reject())
                     .catch(() => fetch('data/noticias-agora.json?t=' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : null))
-                    .then(d => { if (d && (!dados || d.atualizado_em >= dados.atualizado_em)) { dados = d; pintar(); } }).catch(() => { });
+                    .then(d => { if (d && (!dados || d.atualizado_em >= dados.atualizado_em)) dados = d; pintar(); }).catch(() => selo());
             }
             LX.dados('cotacoes').then(c => { if (c) [...(c.mapa || []), ...(c.itens || [])].forEach(x => { if (x.ticker) cot[x.ticker] = x; }); pintar(); }).catch(() => { });
             buscar(); setInterval(buscar, 60000); setInterval(pintar, 30000);
@@ -574,21 +662,24 @@
             const MKT = { serie: null, serieLida: null, cot: null, fx: null, cal: null, leitura: null, placar: null, noticias: [] };
 
             // Índice e câmbio: série de 5 min (Yahoo, coletada pelo site) quando houver; senão, a última cotação disponível
+            // status único da cotação (mesmo rótulo na faixa, no gráfico, na lista e no Modo Pregão)
+            const comStatus = (d, mercado, atraso, intervalo) => Object.assign(d, { st: LX.statusCotacao({ quando: d.quando, lido: d.lido, mercado, atraso, intervalo }) });
             function ativoIndice(tipo) {
                 const s = MKT.serie && MKT.serie[tipo];
                 const pts = s && Array.isArray(s.pontos) ? s.pontos.filter(p => p && isFinite(p[1])) : [];
                 if (pts.length) {
                     const ult = pts[pts.length - 1], ant = +s.anterior || null;
-                    return { preco: ult[1], var: ant ? (ult[1] / ant - 1) * 100 : null, varAbs: ant ? ult[1] - ant : null, anterior: ant, pontos: pts,
-                        data: MKT.serie.data, hora: ult[0], lido: MKT.serie.atualizado_em, fonte: 'Yahoo Finance · barras de 5 min', base: 'desde o fechamento anterior' };
+                    const quando = new Date(`${MKT.serie.data}T${ult[0]}:00-03:00`);
+                    return comStatus({ preco: ult[1], var: ant ? (ult[1] / ant - 1) * 100 : null, varAbs: ant ? ult[1] - ant : null, anterior: ant, pontos: pts,
+                        data: MKT.serie.data, hora: ult[0], quando, lido: MKT.serie.atualizado_em, fonte: 'Yahoo Finance · barras de 5 min', base: 'desde o fechamento anterior' }, tipo === 'ibov' ? 'b3' : 'b3f', null, 20);
                 }
                 if (tipo === 'ibov') {
                     const i = MKT.cot && (MKT.cot.itens || []).find(x => x.ticker === 'IBOV');
-                    if (i) return { preco: i.preco, var: i.var_pct, data: i.hora ? diaDe(new Date(i.hora)) : null, hora: i.hora ? hm(new Date(i.hora)) : null, fonte: 'brapi · atraso ~30 min', base: 'no dia' };
+                    if (i) return comStatus({ preco: i.preco, var: i.var_pct, data: i.hora ? diaDe(new Date(i.hora)) : null, hora: i.hora ? hm(new Date(i.hora)) : null, quando: i.hora || null, lido: MKT.cot.atualizado_em, fonte: 'brapi', base: 'no dia' }, 'b3', 30, 25);
                 }
                 if (tipo === 'dolar' && MKT.fx) {
                     const t = MKT.fx.time ? new Date(MKT.fx.time) : null;
-                    return { preco: +MKT.fx.bid, var: +MKT.fx.pct, data: t ? diaDe(t) : null, hora: t ? hm(t) : null, fonte: 'AwesomeAPI', base: 'variação informada pela fonte' };
+                    return comStatus({ preco: +MKT.fx.bid, var: +MKT.fx.pct, data: t ? diaDe(t) : null, hora: t ? hm(t) : null, quando: t, lido: null, fonte: 'AwesomeAPI', base: 'variação informada pela fonte' }, 'b3f', null, 5);
                 }
                 return null;
             }
@@ -605,19 +696,11 @@
                                { id: 'USDBRL', nome: 'Dólar comercial', sub: 'USD/BRL à vista (não é o contrato WDO)', d: ativoIndice('dolar'), dec: 4, pre: 'R$ ' }];
                 const itens = new Set(((MKT.cot && MKT.cot.itens) || []).map(x => x.ticker));
                 acoes().filter(a => itens.has(a.ticker)).forEach(a => lista.push({ id: a.ticker, nome: a.ticker, sub: (a.nome || '') + (a.setor ? ' · ' + a.setor : ''), acao: a, dec: 2, pre: 'R$ ',
-                    d: { preco: a.preco, var: a.var_pct, data: a.t ? diaDe(new Date(a.t)) : null, hora: a.t ? hm(new Date(a.t)) : null, fonte: 'brapi · atraso ~30 min', base: 'no dia' } }));
+                    d: comStatus({ preco: a.preco, var: a.var_pct, data: a.t ? diaDe(new Date(a.t)) : null, hora: a.t ? hm(new Date(a.t)) : null, quando: a.t || null, lido: MKT.cot.atualizado_em, fonte: 'brapi', base: 'no dia' }, 'b3', 30, 25) }));
                 return lista;
             }
-            // dado de outro dia = desatualizado; durante o pregão, mais de 30 min sem atualizar também
-            function frescor(d) {
-                if (!d || !d.data) return { txt: '', velho: false };
-                const ref = LX.iso(ultimoPregao());
-                if (d.data !== ref) return { txt: `dado de ${LX.brShort(LX.parseISO(d.data))} · desatualizado`, velho: true };
-                const st = LX.sessionStatus('b3f');
-                if (st.state === 'open' && d.lido) { const min = (Date.now() - new Date(d.lido)) / 6e4; if (min > 30) return { txt: `sem atualização há ${Math.round(min)} min`, velho: true }; }
-                return { txt: d.data === hojeISO() ? 'hoje' : `último pregão (${LX.brShort(LX.parseISO(d.data))})`, velho: false };
-            }
-
+            const stCurto = d => !d ? 'indisponível' : `<span class="${d.st.alerta ? 'text-amber-600 dark:text-amber-400' : ''}">${d.st.curto}</span>`;
+            const stCompleto = d => !d ? '<span>Cotação indisponível</span>' : `<span class="${d.st.alerta ? 'font-bold text-amber-600 dark:text-amber-400' : 'text-slate-700 dark:text-slate-300 font-semibold'}">${d.st.rotulo}</span>${d.st.atraso ? `<span>${d.st.atraso}</span>` : ''}`;
             /* ---------- faixa de indicadores ---------- */
             function faixa() {
                 const ib = ativoIndice('ibov'), us = ativoIndice('dolar'), D = LX.data || {}, v = x => x && typeof x === 'object' ? x.value : x;
@@ -628,8 +711,8 @@
                 const est = s => s.state === 'open' ? 'aberto' : s.state === 'pre' ? 'pré-abertura' : s.text === 'FERIADO' ? 'feriado' : 'fechado';
                 const item = (rot, val, varv, nota, href) => `<li class="shrink-0 py-2 px-4 first:pl-0"><${href ? `a href="${href}" class="block hover:text-lect-teal"` : 'div'}><span class="block font-mono text-[10px] uppercase tracking-wider text-slate-500">${rot}</span><span class="block text-[15px] font-semibold tabular-nums leading-tight">${val}${varv != null ? ` <span class="text-xs ${cor(varv)}">${pctTxt(varv)}</span>` : ''}</span><span class="block font-mono text-[10px] text-slate-500">${nota}</span></${href ? 'a' : 'div'}></li>`;
                 $('fx-lista').innerHTML =
-                    item('Ibovespa', ib ? LX.num(ib.preco, 0) : '—', ib ? ib.var : null, ib ? `${ib.hora || ''} · ${frescor(ib).velho ? 'desatualizado' : ib.fonte.split(' ·')[0]}` : 'indisponível') +
-                    item('Dólar (USD/BRL)', us ? 'R$ ' + LX.num(us.preco, 4) : '—', us ? us.var : null, us ? `${us.hora || ''} · ${frescor(us).velho ? 'desatualizado' : us.fonte.split(' ·')[0]}` : 'indisponível') +
+                    item('Ibovespa', ib ? LX.num(ib.preco, 0) : '—', ib ? ib.var : null, stCurto(ib)) +
+                    item('Dólar (USD/BRL)', us ? 'R$ ' + LX.num(us.preco, 4) : '—', us ? us.var : null, stCurto(us)) +
                     item('Selic', selic != null ? LX.num(selic, 2) + '%' : '—', null, refNota(D.selic, 'meta · Banco Central'), '#indicadores') +
                     item('IPCA 12 meses', ipca != null ? LX.num(ipca, 2) + '%' : '—', null, refNota(D.ipca12m, 'IBGE via Banco Central'), '#indicadores') +
                     item('Juro real', real != null ? LX.num(real, 2) + '%' : '—', null, 'Selic − IPCA 12m', '#indicadores') +
@@ -665,10 +748,10 @@
                 $('ms-lista').innerHTML = cat.map((a, i) => { const on = a.id === SEL, d = a.d;
                     return `${i === 2 ? '<li class="px-4 pt-3 pb-1 font-mono text-[10px] uppercase tracking-wider text-slate-500" role="presentation">Ações</li>' : ''}<li role="presentation"><button type="button" role="option" aria-selected="${on}" data-ativo="${a.id}" class="w-full flex items-center gap-3 px-4 py-2 text-left border-l-2 ${on ? 'border-lect-teal bg-lect-teal/10' : 'border-transparent hover:bg-slate-50 dark:hover:bg-white/[0.03]'} focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal focus-visible:-outline-offset-2">
                         <span class="flex-1 min-w-0"><span class="block text-sm font-semibold ${on ? 'text-lect-teal' : ''}">${esc(a.nome)}</span><span class="block text-[11px] text-slate-500 truncate">${esc(a.sub)}</span></span>
-                        <span class="text-right"><span class="block text-sm">${d && d.preco != null ? a.pre + LX.num(d.preco, a.dec) : '—'}</span><span class="block text-xs font-semibold ${cor(d && d.var)}">${d ? pctTxt(d.var) : 'indisponível'}</span></span></button></li>`; }).join('');
+                        <span class="text-right"><span class="block text-sm">${d && d.preco != null ? a.pre + LX.num(d.preco, a.dec) : '—'}</span><span class="block text-xs font-semibold ${cor(d && d.var)}">${d ? pctTxt(d.var) : 'indisponível'}</span><span class="block font-mono text-[10px] text-slate-500 whitespace-nowrap">${stCurto(d)}</span></span></button></li>`; }).join('');
                 $('ms-chips').innerHTML = cat.map(a => `<button type="button" data-ativo="${a.id}" aria-pressed="${a.id === SEL}" class="shrink-0 px-3 py-1.5 text-xs font-semibold border ${a.id === SEL ? 'border-lect-teal bg-lect-teal text-white' : 'border-slate-300 dark:border-lect-borderDark'}">${esc(a.id === 'USDBRL' ? 'Dólar' : a.nome)} <span class="${a.id === SEL ? '' : cor(a.d && a.d.var)}">${a.d ? pctTxt(a.d.var) : ''}</span></button>`).join('');
                 const c = MKT.cot, ib = ativoIndice('ibov'), us = ativoIndice('dolar');
-                $('ms-lista-fonte').textContent = [ib && `Ibovespa: ${ib.fonte}${ib.hora ? ', ' + ib.hora : ''}`, us && `Dólar: ${us.fonte}${us.hora ? ', ' + us.hora : ''}`, c && `Ações: brapi, atraso ~30 min, lido ${hm(new Date(c.atualizado_em))}`].filter(Boolean).join(' · ');
+                $('ms-lista-fonte').textContent = [ib && `Ibovespa: ${ib.fonte}`, us && `Dólar: ${us.fonte}`, c && `Ações: brapi (atraso de ~30 min), consultado às ${LX.hBRT(new Date(c.atualizado_em))}`].filter(Boolean).join(' · ');
             }
             function selecionar(id, foco) {
                 SEL = id; try { localStorage.setItem('lectnex-ativo', id); } catch (_) { }
@@ -686,14 +769,13 @@
             /* ---------- ativo selecionado: cabeçalho e gráfico ---------- */
             function ativo() {
                 const a = catalogo().find(x => x.id === SEL); if (!a) return;
-                const d = a.d, fr = frescor(d);
+                const d = a.d;
                 $('ms-nome').textContent = a.id === 'USDBRL' ? 'Dólar comercial (USD/BRL)' : a.acao ? `${a.acao.nome || a.id} (${a.id})` : a.nome;
                 $('ms-sub').textContent = a.acao ? `Ação · ${a.acao.setor || 'B3'}` : a.sub;
                 $('ms-preco').textContent = d && d.preco != null ? a.pre + LX.num(d.preco, a.dec) : '—';
                 $('ms-var').className = 'block text-sm font-semibold mt-1 ' + cor(d && d.var);
                 $('ms-var').innerHTML = d && d.var != null ? `${pctTxt(d.var)}${d.varAbs != null ? ` (${sinal(d.varAbs)}${a.pre}${LX.num(Math.abs(d.varAbs), a.dec)})` : ''} <span class="font-normal text-slate-500">${d.base}</span>` : '<span class="text-slate-500 font-normal">variação indisponível</span>';
-                $('ms-meta').innerHTML = d ? [d.pontos ? `Período: ${d.data === hojeISO() ? 'hoje' : LX.brShort(LX.parseISO(d.data))}, ${d.pontos[0][0]}–${d.hora}` : `Período: ${d.data === hojeISO() ? 'hoje' : d.data ? LX.brShort(LX.parseISO(d.data)) : '—'}`,
-                    `Cotação ${d.hora ? 'das ' + d.hora : ''}`, d.lido ? `lido às ${hm(new Date(d.lido))}` : '', `Fonte: ${d.fonte}`, fr.velho ? `<b class="text-amber-600 dark:text-amber-400">${fr.txt}</b>` : ''].filter(Boolean).map(x => `<span>${x}</span>`).join('') : '<span>Sem dados deste ativo agora.</span>';
+                $('ms-meta').innerHTML = d ? stCompleto(d) + [d.pontos ? `Período: ${d.data === hojeISO() ? 'hoje' : LX.brShort(LX.parseISO(d.data))}, ${d.pontos[0][0]}–${d.hora}` : '', `Fonte: ${d.fonte}`, d.st.secundario || ''].filter(Boolean).map(x => `<span>${x}</span>`).join('') : '<span>Cotação indisponível</span>';
                 grafico(a);
             }
             function grafico(a) {
@@ -747,8 +829,9 @@
                 if (a.acao) { sel = ns.filter(n => (n.tickers || []).includes(a.id)); crit = `Manchetes que citam ${a.id} no título.`; }
                 else { const k = a.id === 'IBOV' ? 'WIN' : 'WDO'; sel = ns.filter(n => (n.ativos || []).includes(k) && n.impacto === 'alto'); crit = `Manchetes de alto impacto que a regra automática do site liga ${a.id === 'IBOV' ? 'à bolsa' : 'ao câmbio'} (classificação por palavras do título).`; }
                 $('ms-rel-crit').textContent = crit;
-                $('ms-rel-lista').innerHTML = sel.length ? sel.slice(0, 5).map(n => { const t = n.publicado ? new Date(n.publicado) : null;
-                    return `<li class="py-2 flex gap-3 text-sm"><span class="shrink-0 w-12 font-mono text-xs text-slate-500 pt-0.5">${t ? (diaDe(t) === hojeISO() ? hm(t) : LX.brShort(t)) : ''}</span><span class="min-w-0"><a href="${esc(n.url)}" target="_blank" rel="noopener" class="hover:text-lect-teal hover:underline">${esc(n.titulo)}</a> <span class="font-mono text-[11px] text-slate-500 whitespace-nowrap">· ${esc(n.fonte)}</span></span></li>`; }).join('')
+                const gsel = LX.agruparNoticias ? LX.agruparNoticias(sel) : sel.map(n => ({ principal: n, outras: [] }));
+                $('ms-rel-lista').innerHTML = gsel.length ? gsel.slice(0, 5).map(g => { const n = g.principal, t = n.publicado ? new Date(n.publicado) : null;
+                    return `<li class="py-2 flex gap-3 text-sm"><span class="shrink-0 w-12 font-mono text-xs text-slate-500 pt-0.5">${t ? (diaDe(t) === hojeISO() ? hm(t) : LX.brShort(t)) : ''}</span><div class="min-w-0"><a href="${esc(n.url)}" target="_blank" rel="noopener" class="hover:text-lect-teal hover:underline">${esc(n.titulo)}</a> <span class="font-mono text-[11px] text-slate-500 whitespace-nowrap">· ${esc(n.fonte)}</span>${LX.coberturas ? LX.coberturas(g) : ''}</div></li>`; }).join('')
                     : `<li class="py-2 text-sm text-slate-500">Nenhuma manchete recente com essa ligação.</li>`;
             }
 
@@ -768,11 +851,14 @@
 
             /* ---------- próximo evento (destaca quando a agenda liga o evento ao ativo) ---------- */
             const EF = { volatil: '↕ pode oscilar forte', alta: '▲ costuma subir', baixa: '▼ costuma cair', neutro: '● efeito pequeno' };
-            const quando = e => { const m = /^(\d{1,2})h(\d{2})?$/.exec(e.hora || ''); return new Date(`${e.data}T${m ? String(m[1]).padStart(2, '0') : '09'}:${m && m[2] ? m[2] : '00'}:00-03:00`).getTime(); };
+            const quando = e => { const m = /^(\d{1,2})h(\d{2})?/.exec(e.hora || ''); return new Date(`${e.data}T${m ? String(m[1]).padStart(2, '0') : '23'}:${m ? (m[2] || '00') : '59'}:00-03:00`).getTime(); }; // "12h–15h30" vale o início; sem hora = o dia todo
             function evento() {
                 const evs = (MKT.cal && MKT.cal.eventos) || [], agora = Date.now(), chave = SEL === 'IBOV' ? 'win' : SEL === 'USDBRL' ? 'wdo' : null;
                 const fut = evs.map(e => ({ e, t: quando(e) })).filter(x => (x.e.importancia || 1) >= 3 && !(x.e.resultado != null && x.e.resultado !== '') && x.t > agora - 5 * 6e4).sort((a, b) => a.t - b.t);
                 const nx = fut[0];
+                const sub = $('at-agenda-sub');
+                const nxa = nx || evs.map(e => ({ e, t: quando(e) })).filter(x => (x.e.importancia || 1) >= 2 && !(x.e.resultado != null && x.e.resultado !== '') && x.t > agora - 5 * 6e4).sort((a, b) => a.t - b.t)[0];
+                if (sub) sub.textContent = nxa ? `próximo: ${nxa.e.evento}${nxa.e.hora ? ' · ' + (nxa.e.data === hojeISO() ? 'hoje ' : LX.brShort(LX.parseISO(nxa.e.data)) + ' ') + nxa.e.hora : ''}` : 'eventos da semana';
                 if (!MKT.cal) { $('ms-ev').textContent = 'Agenda indisponível no momento.'; $('ms-ev-cd').textContent = ''; }
                 else if (!nx) { $('ms-ev').innerHTML = '<span class="text-sm">Nenhum dado de alto impacto marcado.</span> <a href="#noticias" class="font-mono text-[11px] text-lect-teal hover:underline">agenda ↓</a>'; $('ms-ev-cd').textContent = ''; }
                 else {
@@ -806,6 +892,10 @@
 
             /* ---------- carregar e atualizar sem mexer na seleção ---------- */
             function tudo() { faixa(); resumo(); lista(); ativo(); relacionadas(); info(); evento(); setores(); }
+            // o Modo Pregão lê daqui o mesmo valor e o mesmo status de cada ativo
+            LX.mesaAtivo = id => { const a = catalogo().find(x => x.id === id); return a ? a.d : null; };
+            // o status depende do relógio (ex.: dado que fica velho, pregão que fecha): recalcula a cada minuto
+            setInterval(() => { faixa(); lista(); ativo(); }, 6e4);
             function aplicarAoVivo(n) {
                 if (!n) return;
                 if (n.mercado && (n.mercado.ibov || n.mercado.dolar)) MKT.serie = n.mercado;
@@ -835,6 +925,9 @@
             setInterval(evento, 30000);
             let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { const a = catalogo().find(x => x.id === SEL); if (a) grafico(a); }, 150); });
             document.querySelectorAll('[data-atalho]').forEach(a => a.addEventListener('click', () => LX.track && LX.track('atalho_' + a.dataset.atalho, { id: a.dataset.atalho })));
+            const abrirAgenda = ev => { if (ev) ev.preventDefault(); if (window.lxAgendaProximo) window.lxAgendaProximo(); else { const n = document.getElementById('noticias'); n && n.scrollIntoView(); } try { history.replaceState(null, '', '#agenda-economica'); } catch (_) { } };
+            document.querySelector('[data-atalho="agenda"]').addEventListener('click', abrirAgenda);
+            if (location.hash === '#agenda-economica') { const t0 = Date.now(), tenta = () => window.lxAgendaProximo ? abrirAgenda() : Date.now() - t0 < 5000 && setTimeout(tenta, 200); setTimeout(tenta, 300); }
         })();
 
         /* ---------- Reação histórica: como WIN e WDO reagiram a cada tipo de dado ---------- */
@@ -892,13 +985,24 @@
                 function render() {
                     document.getElementById('cal-days').innerHTML = days.map(x => { const n = evs.filter(e => e.data === x && (e.importancia || 1) >= 3).length; return `<button type="button" data-cd="${x}" class="px-2.5 py-1 whitespace-nowrap ${x === sel ? 'bg-lect-navy text-white dark:bg-lect-teal font-bold' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300 hover:text-lect-teal'}">${lbl(x)}${n ? ` <span class="${x === sel ? 'text-lect-orange' : 'text-lect-orange'}">●${n}</span>` : ''}</button>`; }).join('');
                     document.querySelectorAll('[data-cd]').forEach(b => b.onclick = () => { sel = b.dataset.cd; render(); });
+                    // atalho "Agenda econômica": abre no dia do próximo evento forte ainda por sair e destaca a linha
+                    window.lxAgendaProximo = () => {
+                        const quando = e => { const m = /^(\d{1,2})h(\d{2})?/.exec(e.hora || ''); return new Date(`${e.data}T${m ? String(m[1]).padStart(2, '0') : '23'}:${m ? (m[2] || '00') : '59'}:00-03:00`).getTime(); }; // "12h–15h30" vale o início; sem hora = o dia todo
+                        const pend = imp => evs.filter(e => (e.importancia || 1) >= imp && !(e.resultado != null && e.resultado !== '') && quando(e) > Date.now() - 5 * 6e4 && days.includes(e.data)).sort((a, b) => quando(a) - quando(b))[0];
+                        const nx = pend(3) || pend(2); // o próximo forte; sem nenhum, o próximo de média importância
+                        const box = document.getElementById('cal-wrap'); box.scrollIntoView({ block: 'start' });
+                        if (!nx) return;
+                        if (sel !== nx.data) { sel = nx.data; render(); }
+                        const row = [...document.querySelectorAll('#cal-list [data-evk]')].find(x => x.dataset.evk === nx.data + ' ' + (nx.hora || '') + ' ' + nx.evento);
+                        if (row) { const lst = document.getElementById('cal-list'); lst.scrollTop = row.offsetTop - lst.offsetTop - 8; row.classList.add('ring-2', 'ring-inset', 'ring-lect-teal'); setTimeout(() => row.classList.remove('ring-2', 'ring-inset', 'ring-lect-teal'), 4000); row.setAttribute('tabindex', '-1'); row.focus({ preventScroll: true }); }
+                    };
                     const foco = lxPainel().foco; document.getElementById('cal-list').innerHTML = evs.filter(e => e.data === sel && (foco === 'ambos' || !e.impacto || !Object.keys(e.impacto).length || e.impacto[foco])).map(e => {
                         const imp = Math.max(1, Math.min(3, e.importancia || 1)), dots = `<span class="text-lect-orange">${'●'.repeat(imp)}</span><span class="text-slate-300 dark:text-slate-600">${'●'.repeat(3 - imp)}</span>`;
                         const num = (l, v, cls = '') => v == null || v === '' ? '' : `<span class="${cls}"><span class="text-slate-400">${l}</span> ${LX.esc(String(v))}</span>`;
                         const tags = Object.entries(e.impacto || {}).filter(([, v]) => IMP[v]).map(([k, v]) => `<span class="px-1 border text-[9px] font-bold ${IMP[v][1]}">${LX.esc(k.toUpperCase())} ${IMP[v][0]}</span>`).join('');
                         const done = e.resultado != null && e.resultado !== '';
                         const sp = spOf(e);
-                        return `<div class="px-4 py-2.5 ${imp >= 3 ? 'bg-lect-orange/5' : ''}">
+                        return `<div data-evk="${LX.esc(e.data + ' ' + (e.hora || '') + ' ' + e.evento)}" class="px-4 py-2.5 scroll-mt-2 ${imp >= 3 ? 'bg-lect-orange/5' : ''}">
                             <div class="flex items-start gap-3"><span class="w-11 shrink-0 font-mono text-xs font-bold ${done ? 'text-slate-400' : 'text-lect-teal'}">${e.hora ? LX.esc(e.hora) : '<span class="text-[10px] text-slate-400">O DIA</span>'}</span>
                             <div class="flex-1 min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><span title="${LX.esc(e.pais || '')}">${FLAG[e.pais] || LX.esc(e.pais || '')}</span><strong class="text-sm leading-snug">${LX.esc(e.evento)}</strong><span class="font-mono text-[10px]">${dots}</span></div>
                             ${e.nota ? `<p class="text-[11px] text-slate-500 leading-snug mt-0.5">${LX.esc(e.nota)}</p>` : ''}
@@ -1168,7 +1272,7 @@
 
     })();
     </script>
-    <script src="assets/lectnex-pregao.js?v=20261111f" defer></script>
+    <script src="assets/lectnex-pregao.js?v=20261113d" defer></script>
     <script src="assets/lectnex-painel.js?v=20261111f" defer></script>
 </body>
 </html>

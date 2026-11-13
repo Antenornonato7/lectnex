@@ -31,14 +31,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-macro.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Macro & Juros: Copom, Focus e Curva DI | Lectnex", "url": "https://lectnex.com.br/macro.html", "description": "Entenda o porquê do preço: ciclo da Selic, Boletim Focus ao vivo, leitura da curva DI, regimes de risco e o mapa “E se…?” de como cada notícia chega ao WIN e ao WDO.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261113a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261113d">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261113a">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261113d">
 </head>
 <body data-page="macro" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -149,6 +149,10 @@
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 p-5">
                     <div class="lg:col-span-8"><div id="ct-chart" class="w-full"></div></div>
                     <div class="lg:col-span-4 space-y-3">
+                        <section id="ct-top" aria-labelledby="ct-top-t" class="border border-slate-200 dark:border-lect-borderDark">
+                            <div class="px-3 py-2 border-b border-slate-200 dark:border-lect-borderDark flex items-baseline justify-between gap-2"><h4 id="ct-top-t" class="term-label font-bold !mb-0">Vencimentos que mais se mexeram</h4><span id="ct-top-p" class="font-mono text-[10px] text-slate-500"></span></div>
+                            <ol id="ct-top-l" class="divide-y divide-slate-100 dark:divide-lect-borderDark font-mono text-sm tabular-nums"></ol>
+                        </section>
                         <div id="ct-kpis" class="grid grid-cols-2 gap-2 font-mono"></div>
                         <div><span class="term-label block mb-1.5">Variação por vencimento</span><div id="ct-bars" class="space-y-1.5 font-mono text-[11px]"></div></div>
                         <p id="ct-read" class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed"></p>
@@ -237,7 +241,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261113a"></script>
+    <script src="assets/lectnex-core.js?v=20261113d"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -444,6 +448,19 @@
             const forma = Math.abs(dl - dc) < 0.05 ? (media > 0.02 ? 'a curva subiu por igual' : media < -0.02 ? 'a curva caiu por igual' : 'a curva ficou praticamente parada') : dl > dc ? (media > 0 ? 'os juros longos subiram mais que os curtos (inclinação aumentou: costuma refletir risco fiscal ou inflação à frente)' : 'os curtos caíram mais que os longos (inclinação aumentou: mercado vê mais cortes de Selic à frente)') : (media > 0 ? 'os juros curtos subiram mais que os longos (curva achatou: mercado precificando Selic mais alta por mais tempo)' : 'os longos caíram mais que os curtos (curva achatou: alívio no prêmio de risco)');
             $('ct-read').innerHTML = `<strong>Leitura:</strong> desde ${lbl(dA)}, ${forma}. ${k === 'pre' ? (media > 0.02 ? 'Juros subindo tendem a pesar no <strong>WIN</strong> (varejo, construção, small caps) e a apoiar o <strong>WDO</strong>.' : media < -0.02 ? 'Juros caindo costumam aliviar o <strong>WIN</strong>, principalmente setores ligados à economia doméstica.' : '') : 'A curva IPCA+ mostra o juro real: quanto o título paga acima da inflação.'} <span class="lx-demo">LEITURA TÍPICA</span>`;
             $('ct-title').textContent = Math.abs(media) < 0.02 ? 'Curva estável' : media > 0 ? `Curva abriu ${bp(media)} em média` : `Curva fechou ${bp(Math.abs(media)).replace('+', '')} em média`;
+            // os 3 vencimentos que mais se mexeram na comparação escolhida (só os que têm taxa nas duas datas)
+            const MES3 = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+            const nomeV = v => MES3[+v.slice(5, 7) - 1] + '/' + v.slice(2, 4);
+            const PER = { 1: 'vs ontem', 5: 'em 1 semana', 21: 'em 1 mês' };
+            const semComp = datas.length <= back;
+            $('ct-top-p').textContent = semComp ? '' : `${PER[back] || ''} · ${lbl(dA)} → ${lbl(dH)}`;
+            const top3 = semComp ? [] : pares.map(p => ({ venc: p.venc, d: p.taxa - p.ant })).filter(p => isFinite(p.d)).sort((a, b) => Math.abs(b.d) - Math.abs(a.d)).slice(0, 3);
+            $('ct-top-l').innerHTML = semComp ? `<li class="px-3 py-3 font-sans text-xs text-slate-500">Comparação ${PER[back] || ''} indisponível: ainda não há histórico suficiente desta curva.</li>`
+                : top3.length ? top3.map((p, i) => `<li class="px-3 py-2 flex items-center gap-3"><span class="text-[10px] text-slate-400 w-3">${i + 1}</span><strong class="font-bold">${nomeV(p.venc)}</strong><span class="text-slate-400">·</span><span class="font-bold ${cls(p.d)}">${bp(p.d)}</span><span class="ml-auto text-[10px] text-slate-500">${p.d > 0.005 ? 'abriu' : p.d < -0.005 ? 'fechou' : 'estável'}</span></li>`).join('')
+                : '<li class="px-3 py-3 font-sans text-xs text-slate-500">Sem vencimentos com taxa nas duas datas para comparar.</li>'
+            const indisp = [1, 5, 21].filter(n => datas.length <= n).map(n => ({ 1: 'ontem', 5: '1 semana', 21: '1 mês' })[n]);
+            if (indisp.length && !semComp) $('ct-top-l').insertAdjacentHTML('beforeend', `<li class="px-3 py-2 font-sans text-[11px] text-slate-500">Comparação com ${indisp.join(' e ')} indisponível: histórico ainda curto.</li>`);
+            document.querySelectorAll('[data-ct-c]').forEach(b => b.title = b.disabled ? 'Comparação indisponível: histórico ainda curto' : '');
             renderBE(datas, dH, dA);
             const fH = D.historico[dH];
             $('ct-src').textContent = `Fonte: Tesouro Nacional (taxas de compra do Tesouro Direto${fH.fonte === 'td' ? ', ' + (fH.hora || '') : ', abertura do dia'}) · ${lbl(dH)} vs ${lbl(dA)} · títulos sem cupom (Prefixado e IPCA+). A curva DI da B3 é parecida, mas não idêntica.`;

@@ -65,10 +65,15 @@
         // 3. maiores altas e baixas
         const m = (cot && cot.mapa || []).filter(x => typeof x.var_pct === 'number').sort((a, b) => b.var_pct - a.var_pct);
         const row = x => `<li class="flex justify-between gap-2"><span class="font-bold">${LX.esc(x.ticker)}</span><span class="${LX.signClass(x.var_pct)}">${x.var_pct > 0 ? '+' : ''}${LX.num(x.var_pct, 2)}%</span></li>`;
-        const ibov = (cot && cot.itens || []).find(x => x.ticker === 'IBOV');
-        $('pg-movers').innerHTML = m.length ? `${ibov ? `<div class="flex justify-between font-mono text-xs mb-2 pb-2 border-b border-slate-200 dark:border-lect-borderDark"><span>IBOV ${LX.num(ibov.preco, 0)}</span><span class="${LX.signClass(ibov.var_pct)} font-bold">${ibov.var_pct > 0 ? '+' : ''}${LX.num(ibov.var_pct, 2)}%</span></div>` : ''}
+        // Ibovespa: mesmo valor e mesmo status da mesa de acompanhamento (Mercado Hoje); fora dela, brapi
+        let ibov = LX.mesaAtivo && LX.mesaAtivo('IBOV');
+        if (ibov) ibov = { preco: ibov.preco, var_pct: ibov.var, st: ibov.st };
+        else { const i = (cot && cot.itens || []).find(x => x.ticker === 'IBOV'); ibov = i && { preco: i.preco, var_pct: i.var_pct, st: LX.statusCotacao({ quando: i.hora, lido: cot.atualizado_em, mercado: 'b3', atraso: 30, intervalo: 25 }) }; }
+        const stMapa = cot && LX.statusCotacao({ quando: cot.mapa_em, lido: cot.atualizado_em, mercado: 'b3', atraso: 30, intervalo: 25 });
+        const stTxt = st => `<span class="${st.alerta ? 'text-amber-600 dark:text-amber-400 font-bold' : ''}">${st.curto}</span>`;
+        $('pg-movers').innerHTML = m.length ? `${ibov ? `<div class="flex justify-between font-mono text-xs mb-2 pb-2 border-b border-slate-200 dark:border-lect-borderDark"><span>IBOV ${LX.num(ibov.preco, 0)} <span class="text-[10px] font-normal text-slate-500">${stTxt(ibov.st)}</span></span><span class="${LX.signClass(ibov.var_pct)} font-bold">${ibov.var_pct > 0 ? '+' : ''}${LX.num(ibov.var_pct, 2)}%</span></div>` : ''}
             <div class="grid grid-cols-2 gap-4 font-mono text-xs"><ul class="space-y-1">${m.slice(0, 5).map(row).join('')}</ul><ul class="space-y-1">${m.slice(-5).reverse().map(row).join('')}</ul></div>
-            <span class="block mt-2 font-mono text-[10px] text-slate-500">${cot.mapa_em ? 'atualizado ' + new Date(cot.mapa_em).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' }) + ' · ' : ''}atraso ~30 min</span>`
+            <span class="block mt-2 font-mono text-[10px] text-slate-500">Ações: <span class="${stMapa.alerta ? 'text-amber-600 dark:text-amber-400 font-bold' : ''}">${stMapa.rotulo}</span>${stMapa.atraso ? ' · ' + stMapa.atraso : ''}</span>`
             : '<p class="text-xs text-slate-500">Cotações indisponíveis.</p>';
 
         // 4. plano do dia

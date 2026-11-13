@@ -31,14 +31,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-acoes.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Ações B3: Cotação, Fundos Donos e Opções | Lectnex", "url": "https://lectnex.com.br/acoes.html", "description": "Cotação e gráfico de ações da B3, quais fundos são donos de cada ação (dados abertos da CVM), laboratório de opções com gregas e fluxo do investidor estrangeiro.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261113a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261113d">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261113a">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261113d">
 </head>
 <body data-page="acoes" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -55,26 +55,19 @@
                     <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Raio-X da Ação</h1>
                     <p class="text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-3xl">Cotação, gráfico, quais fundos são donos da ação e o que mudou no mês, laboratório de opções e para onde está indo o dinheiro.</p>
                 </div>
-                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shrink-0">
-                    <div class="relative sm:min-w-[260px]">
-                        <i class="ph-bold ph-magnifying-glass text-lect-orange absolute left-3 top-1/2 -translate-y-1/2"></i>
-                        <input id="ticker-input" type="text" placeholder="Ticker B3 (ex.: PETR4, TAEE11)" class="lx-input pl-9 uppercase border-2 border-lect-navy dark:border-lect-teal">
-                    </div>
-                    <button id="ticker-go" class="bg-lect-navy dark:bg-lect-teal text-white font-mono text-xs font-bold px-5 py-2.5 border-l-2 border-lect-orange uppercase">Carregar</button>
-                </div>
-            </div>
-
-            <!-- SELETOR POR SETOR -->
-            <div class="term-panel p-4">
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-slate-200 dark:border-lect-borderDark">
-                    <span class="term-label font-bold">AÇÕES DE ALTA LIQUIDEZ · CLIQUE PARA ABRIR</span>
-                    <div id="sector-btns" class="flex flex-wrap gap-1 font-mono text-[10px]"></div>
-                </div>
-                <div id="pills" class="flex flex-wrap gap-1.5 font-mono text-xs"></div>
             </div>
 
             <!-- FICHA -->
             <div class="term-panel p-5 border-l-4 border-l-lect-teal">
+                <form id="ticker-form" role="search" class="flex items-stretch gap-2 mb-4" onsubmit="return false">
+                    <label class="relative flex-1 min-w-0 sm:max-w-sm"><span class="sr-only">Buscar ação pelo ticker</span>
+                        <i class="ph-bold ph-magnifying-glass text-lect-orange absolute left-3 top-1/2 -translate-y-1/2"></i>
+                        <input id="ticker-input" type="text" inputmode="text" autocomplete="off" list="ticker-lista" placeholder="Outra ação: PETR4, TAEE11…" class="lx-input !pl-9 uppercase min-h-[44px]">
+                    </label>
+                    <datalist id="ticker-lista"></datalist>
+                    <button id="ticker-go" type="submit" class="shrink-0 min-h-[44px] bg-lect-navy dark:bg-lect-teal text-white font-mono text-xs font-bold px-4 border-l-2 border-lect-orange uppercase">Analisar</button>
+                    <a href="#explorar" class="hidden sm:inline-flex items-center shrink-0 font-mono text-[11px] text-lect-teal hover:underline">ou explorar por setor ↓</a>
+                </form>
                 <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 mb-4 border-b border-slate-200 dark:border-lect-borderDark">
                     <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
                         <div>
@@ -99,6 +92,15 @@
                 <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 font-mono tabular-nums text-xs" id="st-cards"></div>
             </div>
 
+            <!-- GRÁFICO -->
+            <div class="term-panel overflow-hidden">
+                <div class="panel-head">
+                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-chart-line text-lect-orange"></i>Gráfico <span id="chart-ticker"></span></span>
+                    <span class="font-mono text-[10px] text-slate-300">TRADINGVIEW · B3 COM ATRASO</span>
+                </div>
+                <div id="tv-chart" class="h-[440px]"></div>
+            </div>
+
             <!-- SETOR HOJE (dados coletados pelo Lectnex: data/cotacoes.json) -->
             <div id="peers" class="hidden term-panel p-4">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
@@ -110,14 +112,17 @@
 
             <div data-lx-news="chamada" data-titulo="Acompanhe o setor e o mercado todo dia antes da abertura." class="hidden"></div>
 
-            <!-- GRÁFICO -->
-            <div class="term-panel overflow-hidden">
-                <div class="panel-head">
-                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-chart-line text-lect-orange"></i>Gráfico <span id="chart-ticker"></span></span>
-                    <span class="font-mono text-[10px] text-slate-300">TRADINGVIEW · B3 COM ATRASO</span>
+            <!-- EXPLORAR POR SETOR: lista completa (fica depois da análise) -->
+            <details id="explorar" class="term-panel scroll-mt-28 group">
+                <summary class="px-4 py-3 cursor-pointer flex items-center justify-between gap-2 min-h-[44px]"><span class="term-label font-bold !mb-0 flex items-center gap-2"><i class="ph-bold ph-squares-four text-lect-teal"></i>Explorar por setor <span id="explorar-qtd" class="font-normal text-slate-500 normal-case"></span></span><i class="ph-bold ph-caret-down text-slate-400 group-open:rotate-180 transition-transform"></i></summary>
+                <div class="px-4 pb-4">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3 pb-2 border-b border-slate-200 dark:border-lect-borderDark">
+                    <span class="font-mono text-[11px] text-slate-500">Ações de alta liquidez · toque para analisar</span>
+                    <div id="sector-btns" class="flex flex-wrap gap-1 font-mono text-[10px]"></div>
                 </div>
-                <div id="tv-chart" class="h-[440px]"></div>
+                <div id="pills" class="flex flex-wrap gap-1.5 font-mono text-xs"></div>
             </div>
+            </details>
 
             <!-- FUNDOS DONOS + LABORATÓRIO DE OPÇÕES -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
@@ -201,7 +206,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261113a"></script>
+    <script src="assets/lectnex-core.js?v=20261113d"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -229,13 +234,14 @@
             $('sector-btns').innerHTML = SECTORS.map(([k, l]) => `<button data-s="${k}" class="px-2.5 py-1 ${sector === k ? 'bg-lect-navy text-white font-bold' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300'}">${l}</button>`).join('');
             document.querySelectorAll('#sector-btns button').forEach(b => b.onclick = () => { sector = b.dataset.s; renderSectors(); renderPills(); });
         }
+        const escolherPill = t => { load(t, { push: true }); document.getElementById('st-ticker').scrollIntoView({ block: 'center', behavior: 'smooth' }); };
         function renderPills() {
             $('pills').innerHTML = CATALOG.filter(c => sector === 'all' || c.sector === sector).map(c => {
                 const q = quotes[c.ticker], on = current && current.ticker === c.ticker;
                 const chg = q && q.ok ? `<span class="${q.change >= 0 ? 'text-emerald-500' : 'text-rose-500'} text-[10px] font-semibold">${LX.pct(q.change, 2, true)}</span>` : '';
                 return `<button data-t="${c.ticker}" class="px-3 py-1.5 flex items-center gap-1.5 ${on ? 'bg-lect-navy text-white border-l-2 border-lect-orange font-bold' : 'bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark hover:border-lect-teal'}">${c.ticker}${chg}</button>`;
             }).join('');
-            document.querySelectorAll('#pills button').forEach(b => b.onclick = () => load(b.dataset.t));
+            document.querySelectorAll('#pills button').forEach(b => b.onclick = () => escolherPill(b.dataset.t));
         }
 
         /* ================= COTAÇÃO ================= */
@@ -318,7 +324,7 @@
             } else $('peers-rel').textContent = '';
             const col = p => p > 0 ? `rgba(16,185,129,${0.18 + Math.min(1, p / 3) * 0.6})` : p < 0 ? `rgba(225,29,72,${0.18 + Math.min(1, -p / 3) * 0.6})` : 'rgba(100,116,139,.25)';
             $('peers-grid').innerHTML = peers.map(m => `<button type="button" data-peer="${m.ticker}" class="p-2 text-left font-mono ${m.ticker === current.ticker ? 'ring-2 ring-lect-orange' : 'hover:ring-1 hover:ring-lect-teal'}" style="background:${col(m.var_pct)}"><strong class="block text-xs">${m.ticker}${Math.abs(m.var_pct) >= 5 ? ' <i class="ph-fill ph-lightning text-lect-orange"></i>' : ''}</strong><span class="text-[11px] font-bold tabular-nums">${m.var_pct > 0 ? '+' : ''}${LX.num(m.var_pct, 2)}%</span><span class="block text-[10px] opacity-75 tabular-nums">R$ ${LX.num(m.preco, 2)}</span></button>`).join('');
-            document.querySelectorAll('[data-peer]').forEach(b => b.onclick = () => { load(b.dataset.peer); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+            document.querySelectorAll('[data-peer]').forEach(b => b.onclick = () => { escolherPill(b.dataset.peer); });
             box.classList.remove('hidden');
         }
 
@@ -528,7 +534,7 @@
         });
 
         /* ================= CARREGAR AÇÃO ================= */
-        function load(raw) {
+        function load(raw, opts) {
             const tk = (raw || '').toUpperCase().trim();
             if (!/^[A-Z][A-Z0-9]{3}\d{1,2}$/.test(tk)) return;
             current = CATALOG.find(c => c.ticker === tk) || { ticker: tk, name: 'Ação listada na B3', sector: 'B3' };
@@ -538,15 +544,19 @@
             $('chart-ticker').textContent = tk;
             $('lnk-div').href = `laboratorio.html?tab=proventos&ticker=${tk}`;
             $('lnk-trade').href = `laboratorio.html?tab=trade&ticker=${tk}`;
-            try { history.replaceState(null, '', '?ticker=' + tk + location.hash); } catch (_) { }
+            try { const u = '?ticker=' + tk + location.hash; if (opts && opts.push && new URLSearchParams(location.search).get('ticker') !== tk) history.pushState({ tk }, '', u); else history.replaceState({ tk }, '', u); } catch (_) { }
+            document.title = `${tk} · Raio-X da Ação | Lectnex`;
             renderQuote(); renderCards(); renderOwners(); renderPills(); renderPeers();
             LX.tv('tv-chart', 'advanced-chart', { symbol: 'BMFBOVESPA:' + tk, interval: 'D', timezone: 'America/Sao_Paulo', style: '1', allow_symbol_change: false, hide_side_toolbar: true, autosize: true, studies: ['STD;Volume'] });
             // a cotação do arquivo do site não traz 52 semanas, P/L e volume: busca os extras na brapi (cache de 30 min)
             if (quotes[tk]) syncSpot(); else buildLegs();
             if (!quotes[tk] || quotes[tk].lo52 == null) fetchQuote(tk);
         }
-        $('ticker-go').onclick = () => load($('ticker-input').value);
-        $('ticker-input').addEventListener('keydown', e => { if (e.key === 'Enter') load(e.target.value); });
+        const escolher = v => { const tk = (v || '').toUpperCase().trim(); if (!/^[A-Z][A-Z0-9]{3}\d{1,2}$/.test(tk)) { $('ticker-input').focus(); return; } load(tk, { push: true }); $('ticker-input').value = ''; $('ticker-input').blur(); document.getElementById('st-ticker').scrollIntoView({ block: 'center', behavior: 'smooth' }); };
+        $('ticker-form').addEventListener('submit', e => { e.preventDefault(); escolher($('ticker-input').value); });
+        window.addEventListener('popstate', () => load(new URLSearchParams(location.search).get('ticker') || 'PETR4'));
+        $('ticker-lista').innerHTML = CATALOG.map(c => `<option value="${c.ticker}">${LX.esc(c.name)}</option>`).join('');
+        $('explorar-qtd').textContent = `· ${CATALOG.length} ações`;
         // Atualiza pelo snapshot a cada 5 min no pregão (sem consultar a brapi a cada minuto por visitante)
         loadSnap();
         setInterval(() => { if (LX.sessionStatus('b3').state === 'open') loadSnap(); }, 5 * 60e3);

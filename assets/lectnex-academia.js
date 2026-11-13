@@ -374,6 +374,21 @@
     const lessonsOf = tid => LESSONS.filter(l => l.trail === tid);
     const doneCount = tid => (tid ? lessonsOf(tid) : LESSONS).filter(l => state.done[l.id]).length;
     const nextLesson = () => LESSONS.find(l => !state.done[l.id]);
+    // trilha em andamento: a da última lição aberta (se ainda tem pendências) ou a que tem progresso e pendências
+    const pendente = tid => lessonsOf(tid).find(l => !state.done[l.id]);
+    function trilhaEmAndamento() {
+        const ult = state.last && LESSONS.find(l => l.id === state.last);
+        if (ult && doneCount(ult.trail) > 0 && pendente(ult.trail)) return ult.trail;
+        const t = TRAILS.find(x => doneCount(x.id) > 0 && pendente(x.id));
+        return t ? t.id : null;
+    }
+    // simulador ligado a cada lição (abre dentro do Laboratório ou na ferramenta do site)
+    const SIM = {
+        cdi: { tab: 'rf', nome: 'Simulador de renda fixa' }, juros: { tab: 'rf', nome: 'Simulador de renda fixa' }, lci: { tab: 'rf', nome: 'Simulador de renda fixa (CDB × LCI/LCA)' },
+        ticker: { tab: 'trade', nome: 'Simulador compra & venda × CDI' }, dataex: { tab: 'proventos', nome: 'Simulador de dividendos & JCP' }, mult: { tab: 'valuation', nome: 'Calculadora de preço teto' },
+        ponto: { href: 'futuros.html#risco', nome: 'Calculadora de risco (WIN/WDO)' }, alav: { href: 'futuros.html#risco', nome: 'Calculadora de risco e margem' },
+        expect: { href: 'futuros.html#risco', nome: 'Curva de capital e Kelly' }, irdt: { href: 'calculadora-ir-day-trade.html', nome: 'Calculadora de IR day trade' }
+    };
 
     function ring(pct, size = 86) {
         const r = (size - 10) / 2, c = 2 * Math.PI * r;
@@ -386,9 +401,13 @@
         $('ac-progress-txt').textContent = `${d} de ${tot}`;
         $('ac-n-lessons').textContent = tot; if ($('ac-n-terms')) fetch('data/glossario.json').then(r => r.json()).then(g => { $('ac-n-terms').textContent = (g.termos || g).length; }).catch(() => { $('ac-n-terms').textContent = GLOSS.length; });
         $('ac-trail-bars').innerHTML = TRAILS.map(t => { const n = lessonsOf(t.id).length, k = doneCount(t.id); return `<div><div class="flex justify-between text-[11px]"><span class="text-slate-300">${t.title}</span><span class="font-mono text-slate-400">${k}/${n}</span></div><div class="h-1.5 bg-white/10 mt-1"><div class="h-full transition-all" style="width:${k / n * 100}%;background:${t.color}"></div></div></div>`; }).join('');
-        const nx = nextLesson(), btn = $('ac-continue');
-        btn.querySelector('span').textContent = d === 0 ? 'Começar a primeira lição' : nx ? `Continuar: ${nx.title}` : 'Revisar as lições';
-        btn.onclick = () => { open((nx || LESSONS[0]).id); $('ac-player').scrollIntoView({ behavior: 'smooth' }); };
+        const tA = trilhaEmAndamento(), btn = $('ac-continue');
+        let alvo, rot;
+        if (tA) { alvo = pendente(tA); rot = `Continuar de onde parei · ${alvo.title}`; }
+        else if (nextLesson()) { const t = TRAILS.find(x => pendente(x.id)); alvo = pendente(t.id); rot = `Começar trilha · ${t.title}`; }
+        else { alvo = LESSONS[0]; rot = 'Revisar as lições'; }
+        btn.querySelector('span').textContent = rot;
+        btn.onclick = () => { open(alvo.id); $('ac-player').scrollIntoView({ behavior: 'smooth' }); };
     }
 
     function renderTrails() {
@@ -399,7 +418,8 @@
                 <strong class="block font-display text-lg mt-3">${t.title}</strong>
                 <span class="block text-xs text-slate-500 mt-1 min-h-[32px]">${t.desc}</span>
                 <div class="flex items-center gap-3 mt-4 font-mono text-[10px] text-slate-500"><span><i class="ph ph-book-open"></i> ${ls.length} lições</span><span><i class="ph ph-clock"></i> ${mins} min</span><span class="ml-auto font-bold" style="color:${t.color}">${k === ls.length ? '✓ CONCLUÍDA' : k + '/' + ls.length}</span></div>
-                <div class="h-1 bg-slate-100 dark:bg-lect-bgDark mt-2"><div class="h-full transition-all" style="width:${k / ls.length * 100}%;background:${t.color}"></div></div></button>`;
+                <div class="h-1 bg-slate-100 dark:bg-lect-bgDark mt-2"><div class="h-full transition-all" style="width:${k / ls.length * 100}%;background:${t.color}"></div></div>
+                <span class="mt-3 inline-flex items-center gap-1.5 font-mono text-[11px] font-bold" style="color:${t.color}">${k === 0 ? 'Começar trilha' : k < ls.length ? 'Continuar de onde parei' : 'Revisar trilha'} <i class="ph-bold ph-arrow-right"></i></span></button>`;
         }).join('');
         document.querySelectorAll('[data-trail]').forEach(b => b.onclick = () => {
             const ls = lessonsOf(b.dataset.trail), first = ls.find(l => !state.done[l.id]) || ls[0];
@@ -435,6 +455,7 @@
                 <section class="bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
                     <div class="flex items-center justify-between px-4 py-2.5 border-b border-slate-200 dark:border-lect-borderDark"><span class="inline-flex items-center gap-2 font-mono text-[11px] font-bold"><i class="ph-fill ph-hand-pointing text-lect-orange"></i>EXPERIMENTE · ${w.title.toUpperCase()}</span><span class="lx-demo">INTERATIVO</span></div>
                     <div class="p-4">${w.html()}</div></section>
+                ${SIM[l.widget] ? `<a ${SIM[l.widget].tab ? `href="laboratorio.html?tab=${SIM[l.widget].tab}" data-sim="${SIM[l.widget].tab}"` : `href="${SIM[l.widget].href}"`} class="flex items-center gap-3 p-3 border border-slate-200 dark:border-lect-borderDark hover:border-lect-teal group"><i class="ph-duotone ph-sliders-horizontal text-2xl text-lect-teal shrink-0"></i><span class="min-w-0"><span class="term-label block">Simulador desta lição</span><span class="block text-sm font-semibold group-hover:text-lect-teal">${SIM[l.widget].nome}</span><span class="block text-[11px] text-slate-500">Teste com os seus números</span></span><i class="ph-bold ph-arrow-right ml-auto text-slate-400 group-hover:text-lect-teal"></i></a>` : ''}
                 <section class="flex gap-3 p-4 border-l-4 border-lect-orange bg-orange-50 dark:bg-lect-orange/10"><i class="ph-duotone ph-lightbulb text-2xl text-lect-orange shrink-0"></i><div><span class="term-label font-bold text-lect-orange">NA PRÁTICA</span><p class="text-sm text-slate-700 dark:text-slate-300 mt-1 leading-relaxed">${l.practice}</p>${l.link ? `<a href="${l.link[1]}" class="inline-flex items-center gap-1 mt-2 text-xs font-bold text-lect-teal hover:underline">${l.link[0]} <i class="ph-bold ph-arrow-right"></i></a>` : ''}</div></section>
                 <section id="ac-quiz" class="border border-slate-200 dark:border-lect-borderDark">
                     <div class="px-4 py-2.5 bg-lect-navy text-white flex items-center gap-2 font-mono text-[11px] font-bold"><i class="ph-fill ph-question text-lect-orange"></i>TESTE RÁPIDO</div>
@@ -450,6 +471,12 @@
         try { w.bind(); } catch (e) { console.warn('widget', l.widget, e); }
         document.querySelectorAll('[data-go]').forEach(b => b.onclick = () => { open(b.dataset.go); $('ac-player').scrollIntoView({ behavior: 'smooth' }); });
         document.querySelectorAll('[data-opt]').forEach(b => b.onclick = () => answer(+b.dataset.opt));
+        document.querySelectorAll('[data-sim]').forEach(a => a.onclick = e => {
+            if (typeof window.switchLabTab !== 'function') return;
+            e.preventDefault(); window.switchLabTab(a.dataset.sim);
+            try { const u = new URL(location.href); u.searchParams.set('tab', a.dataset.sim); u.searchParams.delete('licao'); history.pushState(null, '', u); } catch (_) { }
+            const p = document.getElementById('lab-panel-' + a.dataset.sim); p && p.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
     }
 
     function answer(i) {
