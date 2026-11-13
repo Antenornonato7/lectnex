@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T12:35-03:00",
+  "atualizado_em": "2026-11-13T12:38-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -119,7 +119,11 @@
     ],
     [
      "12:20",
-     172217.0
+     172086.0
+    ],
+    [
+     "12:23",
+     172057.0
     ]
    ]
   },
@@ -300,7 +304,11 @@
     ],
     [
      "12:35",
-     5.6361
+     5.6369
+    ],
+    [
+     "12:38",
+     5.6373
     ]
    ]
   },
@@ -592,7 +600,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.36,
     "dolar30": -0.05
    },
    {
@@ -1256,7 +1264,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T12:35-03:00",
+ "atualizado_em": "2026-11-13T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1346,21 +1354,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
-   "publicado": "2026-11-13T11:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
@@ -1443,6 +1436,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Magalu dispara mais de 17% com crise da Casas Bahia; veja maiores altas e baixas do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQYnJMR3lZOWZRTU43RFBENklfb2tZak5IcWxiNGE0d0xCU0FSeTZOdXljR3hoRXByYlJNUVVmWUVqVTJrRFl5c19uaEpoVFFzVE00OEFDMVQ5ZzJPdkZuQjVxck1DNVk2TW1VVmF1UlMzbFJWcW16VUVGNFJqUGJ4VFhRcEpIemhkaHNnNkpYS3NUOHV4cDdKTHNkWWswSGZLNmlMRU5hZFllWmEzUEpQSEtja1pZUGZjLVdZUGZYVmhMQ0ZueXcyMmpwZ1VvLVAtREdPYWExM3F4MndaMW8yUF8zSm14bnd0dGNOc1FB?oc=5",
+   "publicado": "2026-11-13T10:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
   },
   {
    "titulo": "Tombo do Banco do Brasil no 3º trimestre aumenta pressão sobre Tarciana Medeiros; leia bastidor",
