@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T14:47-03:00",
+  "atualizado_em": "2026-11-13T14:49-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -223,11 +223,11 @@
     ],
     [
      "14:30",
-     172251.0
+     172250.0
     ],
     [
-     "14:32",
-     172228.0
+     "14:34",
+     172243.0
     ]
    ]
   },
@@ -512,11 +512,11 @@
     ],
     [
      "14:45",
-     5.6403
+     5.6398
     ],
     [
-     "14:47",
-     5.639
+     "14:49",
+     5.6396
     ]
    ]
   },
@@ -1134,7 +1134,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": -0.05
    }
   ]
  },
@@ -1970,13 +1970,14 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T14:47-03:00",
+ "atualizado_em": "2026-11-13T14:49-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times"
@@ -2037,6 +2038,18 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa ensaia recuperação, enquanto dólar renova máxima",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMEI3S3Q2OVQxTzV5NjhURjg3UWVXVkhRT19CSF9haF9ocVlwaGNWZldHQ05VWFE2T1E0OE4xdGdtdEdmcjVHUk1oVmRQTk83Rk1fZkk4YXc1RklDTTdjYlNLTzIwdTBWSktUUHRuM3lsWG1YdEgxX1hjNERrMjlYQXlfRGw4TFFTM29yWTZDZmhVUXNZeFE?oc=5",
+   "publicado": "2026-11-13T13:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -2111,17 +2124,6 @@
     "BBAS3",
     "BPAC11"
    ]
-  },
-  {
-   "titulo": "Wall Street devolve ganhos iniciais com queda de techs por turbulência com Nvidia",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZ9IBwgFBVV95cUxNT0lLcGpzcVhnQjYtTzFDblNEYVN6bU5idFRPaW1DSXZQV3Nnb182Ri1ESlkyaEZZTlJJb05HbHhXM05ucU52NjNDN2JXRWxhUjJZdFlfMWdiUkNRRnd1WDZGOXZqZldrY0JVdEtuVExpUzRGVnZHUUpLSjYwOWhRM3JMN25TTzU5Z0ZndFZ0d1ZIQS1HR3FhNHpTcnRMaXJJZWVQZGhpaGthRG9GV1U4MW5paTBxUnlkUDF5R29YRDlCZw?oc=5",
-   "publicado": "2026-11-13T12:54-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Governo tomará medidas em acréscimo para garantir cenário fiscal benigno, diz Moretti",
