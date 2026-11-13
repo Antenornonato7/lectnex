@@ -190,6 +190,48 @@
         if (min >= s.pre && min < s.open) return { state: 'pre', text: 'PRÉ-ABERTURA' };
         return { state: 'closed', text: 'FECHADO' };
     };
+    /* ------------------------------------------------------------------ STATUS DE UMA COTAÇÃO (rótulo único em todo o site)
+       quando: horário da cotação NA FONTE · lido: quando o site consultou · mercado: 'b3' (ações e Ibovespa) ou 'b3f' (câmbio/futuros)
+       atraso: atraso conhecido da fonte em minutos (só aparece no rótulo se for conhecido) · intervalo: de quanto em quanto tempo o site atualiza
+       Estados: aberto (cotação dentro do prazo) · fechado (último fechamento) · atrasado (atualização esperada não chegou)
+                pendente (pregão fechou e o fechamento ainda não chegou) · sem (sem cotação) */
+    const brtParts = d => { const f = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(d), g = t => f.find(x => x.type === t).value; return { iso: `${g('year')}-${g('month')}-${g('day')}`, min: +g('hour') * 60 + +g('minute'), hh: g('hour'), mm: g('minute'), dm: `${g('day')}/${g('month')}` }; };
+    LX.hBRT = d => { const p = brtParts(d); return `${p.hh}h${p.mm} BRT`; };
+    LX.statusCotacao = function (o) {
+        const q = o && o.quando ? new Date(o.quando) : null, s = LX.sessions[(o && o.mercado) || 'b3'];
+        if (!q || isNaN(q)) return { estado: 'sem', rotulo: 'Cotação indisponível', curto: 'indisponível', alerta: true };
+        const lido = o.lido ? new Date(o.lido) : null, agora = new Date(), A = brtParts(agora), Q = brtParts(q), hojeISO = A.iso;
+        const hoje = LX.parseISO(hojeISO), util = LX.isBusinessDay(hoje), atraso = o.atraso || 0, intervalo = o.intervalo || 15;
+        const hQ = `${Q.hh}h${Q.mm}`, dQ = Q.iso === hojeISO ? '' : Q.dm;
+        const sec = lido && !isNaN(lido) ? `consultado às ${LX.hBRT(lido)}${brtParts(lido).iso !== hojeISO ? ' de ' + brtParts(lido).dm : ''}` : '';
+        const atrasoTxt = o.atraso ? `Atraso de ~${o.atraso} min` : '';
+        const aberto = util && A.min >= s.open && A.min < s.close;
+        // último pregão já encerrado
+        let ult = new Date(hoje); if (!(util && A.min >= s.close)) { ult = LX.addDays(ult, -1); while (!LX.isBusinessDay(ult)) ult = LX.addDays(ult, -1); }
+        const ultISO = LX.iso(ult), ultDM = ultISO.slice(8, 10) + '/' + ultISO.slice(5, 7);
+        const ehFechamento = (Q.iso === ultISO && (Q.min >= s.close - 60 || (lido && brtParts(lido).iso === ultISO && brtParts(lido).min >= s.close + atraso) || (lido && brtParts(lido).iso > ultISO)));
+        const fech = () => ({ estado: 'fechado', rotulo: `Último fechamento · ${Q.iso === hojeISO ? '' : Q.dm + ' às '}${hQ} BRT`, curto: `fech. ${Q.iso === hojeISO ? '' : Q.dm + ' '}${hQ}`, secundario: sec });
+        if (aberto) {
+            const idade = (agora - q) / 6e4, limite = atraso + intervalo + 15;
+            if (Q.iso === hojeISO && idade <= limite) return { estado: 'aberto', rotulo: `Cotação das ${hQ} BRT`, curto: `${hQ}${o.atraso ? ' · ~' + o.atraso + ' min' : ''}`, atraso: atrasoTxt, secundario: sec };
+            // primeiros minutos do pregão: ainda vale o fechamento anterior
+            if (A.min - s.open <= limite && ehFechamento) return Object.assign(fech(), { secundario: ['pregão aberto, aguardando a primeira cotação', sec].filter(Boolean).join(' · ') });
+            return { estado: 'atrasado', rotulo: `Dados desatualizados · última cotação ${dQ ? 'em ' + dQ + ' ' : ''}às ${hQ} BRT`, curto: `desatualizado · ${dQ ? dQ + ' ' : ''}${hQ}`, alerta: true, secundario: sec };
+        }
+        if (ehFechamento) return fech();
+        return { estado: 'pendente', rotulo: `Fechamento ainda indisponível · última cotação ${dQ ? 'em ' + dQ + ' ' : ''}às ${hQ} BRT`, curto: 'fech. pendente', alerta: true, secundario: sec };
+    };
+    /* Noticiário: "ao vivo" enquanto a coleta (6h às 23h59, a cada poucos minutos) está em dia */
+    LX.statusNoticias = function (atualizado) {
+        const t = atualizado ? new Date(atualizado) : null;
+        if (!t || isNaN(t)) return { estado: 'sem', rotulo: 'Noticiário indisponível no momento', alerta: true };
+        const A = brtParts(new Date()), T = brtParts(t), idade = (Date.now() - t) / 6e4, janela = A.min >= 6 * 60;
+        const quando = `${T.iso === A.iso ? '' : T.dm + ' às '}${T.hh}h${T.mm} BRT`;
+        if (janela && idade <= 25) return { estado: 'ao-vivo', rotulo: `Última atualização do noticiário · ${quando}` };
+        if (janela) { const h = idade >= 120 ? `há ${Math.floor(idade / 60)} h` : `há ${Math.round(idade)} min`; return { estado: 'atrasado', rotulo: `Noticiário atrasado · última atualização ${h} (${quando})`, alerta: true }; }
+        if (idade > A.min + 60) { const h = `há ${Math.floor(idade / 60)} h`; return { estado: 'atrasado', rotulo: `Noticiário atrasado · última atualização ${h} (${quando})`, alerta: true }; }
+        return { estado: 'pausa', rotulo: `Última atualização do noticiário · ${quando} · a coleta volta às 6h` };
+    };
     function paintSessions() {
         document.querySelectorAll('[data-lx-session]').forEach(el => {
             const st = LX.sessionStatus(el.dataset.lxSession);
