@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T11:25-03:00",
+  "atualizado_em": "2026-11-13T11:28-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -63,7 +63,11 @@
     ],
     [
      "11:10",
-     171926.0
+     171744.0
+    ],
+    [
+     "11:13",
+     171787.0
     ]
    ]
   },
@@ -188,7 +192,11 @@
     ],
     [
      "11:25",
-     5.6579
+     5.6576
+    ],
+    [
+     "11:28",
+     5.6563
     ]
    ]
   },
@@ -362,7 +370,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.11
    },
    {
     "hora": "11:02",
@@ -376,7 +384,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.11
    },
    {
     "hora": "11:04",
@@ -898,7 +906,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T11:25-03:00",
+ "atualizado_em": "2026-11-13T11:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -914,6 +922,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
+   "publicado": "2026-11-13T11:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "‘We will sue them’: Canada threatens Stellantis as Trump trade war reshapes Jeep production plans",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html",
@@ -922,18 +942,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
-   "publicado": "2026-11-13T11:13-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
    ],
    "tickers": []
   },
@@ -1072,17 +1080,6 @@
    "tickers": [
     "CMIG4"
    ]
-  },
-  {
-   "titulo": "Dólar hoje sobe e amplia ganhos após fechar no maior nível desde junho de 2025",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOakIwN1ZneWFjMTlUOWx6VjItUERCWEN5RjM4eWI3WVNJeVEycmQ4ekxtaEpJMWZUMThCQjltcXdUNFY5THBqNTQzVkl0Y0puNDNQVU5JSExWaVNRdURlU3BzQTFMaUtmOEY5VFAwR3k5bFpOa3JDX1FCcUIwWFBVWXdiMkp0aUNRcVRGQmpEM1I5X3c2SHZZcjVGQkjSAaIBQVVfeXFMT2ZISV9Ic0pkbFJueDZKSXhad1p3MGdySWplR0llTVJ5TGdyOXBRdzBrVU1mNWd5SmVJWndNbkRaZncxaEdualY0ME54a3JZSGZoalV1U1hrbjFiVi13MW9vRnp0UmZjY01fLVlEUHAtb19IUHdxcVFOM0RNa3NsX2NIV05GczZSdUg0RGlaSGlLLXZOQm1xVUZiVnYxRE1ieFhn?oc=5",
-   "publicado": "2026-11-13T09:26-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Banco do Brasil (BBAS3) afunda após balanço: ação pode cair ainda mais?",
