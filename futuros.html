@@ -31,14 +31,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://lectnex.com.br/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261113b">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261113d">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261113b">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261113d">
 </head>
 <body data-page="futuros" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -55,14 +55,34 @@
                     <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2">Futuros B3: Mini Índice, Mini Dólar &amp; DI</h1>
                     <p class="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-3xl">Tudo o que o trader de WIN e WDO precisa ter à mão: contrato vigente e rolagem, especificações, vencimentos calculados pelas regras da B3, gestão de risco por operação, IR de day trade e preço justo do dólar futuro.</p>
                 </div>
-                <div class="font-mono text-[11px] flex flex-wrap gap-2">
-                    <a href="#placar" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark font-semibold"><i class="ph-bold ph-timer"></i> Vencimentos</a>
-                    <a href="#plano" class="px-3 py-2 bg-lect-orange text-white font-semibold"><i class="ph-bold ph-clipboard-text"></i> Plano do dia</a>
-                    <a href="#diario" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark font-semibold"><i class="ph-bold ph-notebook"></i> Diário</a>
-                    <a href="#risco" class="px-3 py-2 bg-lect-navy text-white border-l-2 border-lect-orange font-semibold">Calculadora de risco</a>
-                    <a href="#paridade" class="px-3 py-2 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">Dólar justo</a>
-                </div>
             </div>
+
+            <!-- ATALHOS: o fluxo do dia (plano → posição → registro); referências como links secundários -->
+            <nav aria-label="Atalhos do trader" class="mt-5">
+                <div class="flex flex-wrap gap-2">
+                <a href="#plano" data-atalho="fu-plano" class="flex-1 basis-[13rem] min-h-[56px] flex items-center gap-3 px-4 py-3 border border-lect-orange bg-lect-orange/10 hover:border-lect-teal group">
+                    <i class="ph-duotone ph-clipboard-text text-2xl text-lect-orange shrink-0"></i>
+                    <span class="min-w-0"><span class="block font-semibold leading-tight group-hover:text-lect-teal">Preparar meu dia</span><span class="block font-mono text-[11px] text-slate-500 truncate">limites, checklist e agenda</span></span>
+                    <i class="ph-bold ph-arrow-right ml-auto text-slate-400 group-hover:text-lect-teal shrink-0"></i>
+                </a>
+                <a href="#risco" data-atalho="fu-calc" class="flex-1 basis-[13rem] min-h-[56px] flex items-center gap-3 px-4 py-3 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal group">
+                    <i class="ph-duotone ph-calculator text-2xl text-lect-teal shrink-0"></i>
+                    <span class="min-w-0"><span class="block font-semibold leading-tight group-hover:text-lect-teal">Calcular posição</span><span class="block font-mono text-[11px] text-slate-500 truncate">contratos pelo seu risco</span></span>
+                    <i class="ph-bold ph-arrow-right ml-auto text-slate-400 group-hover:text-lect-teal shrink-0"></i>
+                </a>
+                <a href="#registrar" data-atalho="fu-registrar" class="flex-1 basis-[13rem] min-h-[56px] flex items-center gap-3 px-4 py-3 border border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal group">
+                    <i class="ph-duotone ph-notebook text-2xl text-lect-teal shrink-0"></i>
+                    <span class="min-w-0"><span class="block font-semibold leading-tight group-hover:text-lect-teal">Registrar operação</span><span class="block font-mono text-[11px] text-slate-500 truncate">vai para o Diário de Trades</span></span>
+                    <i class="ph-bold ph-arrow-right ml-auto text-slate-400 group-hover:text-lect-teal shrink-0"></i>
+                </a>
+                </div>
+                <div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11px] text-slate-500">
+                    <span>Consultar:</span>
+                    <a href="#specs" class="text-lect-teal hover:underline">Especificações</a>
+                    <a href="#vencimentos" class="text-lect-teal hover:underline">Vencimentos e rolagem</a>
+                    <a href="#paridade" class="text-lect-teal hover:underline">Dólar justo</a>
+                </div>
+            </nav>
 
             <!-- PLACAR DE VENCIMENTO (contagem até o último pregão de cada contrato) -->
             <nav aria-label="Respostas rápidas" class="flex flex-wrap items-center gap-2 font-mono text-[11px]">
@@ -103,10 +123,8 @@
                         <div id="pd-stopline" class="mt-3 p-3 bg-rose-50 dark:bg-rose-500/10 border-l-4 border-rose-500 text-sm"></div>
                         <div class="mt-4">
                             <div class="flex items-center justify-between"><span class="term-label font-bold">PLACAR DO DIA</span><button id="pd-undo" type="button" class="text-[10px] font-mono text-slate-500 hover:text-lect-teal"><i class="ph-bold ph-arrow-counter-clockwise"></i> desfazer</button></div>
-                            <div class="flex gap-2 mt-2">
-                                <input id="pd-res" type="number" step="10" placeholder="Resultado da operação (R$)" class="lx-input flex-1">
-                                <button id="pd-add" type="button" class="px-3 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold">REGISTRAR</button>
-                            </div>
+                            <a href="#registrar" id="pd-add" class="mt-2 w-full min-h-[44px] flex items-center justify-center gap-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold"><i class="ph-bold ph-notebook"></i> REGISTRAR OPERAÇÃO</a>
+                            <p class="mt-1 text-[10px] text-slate-500">Abre o formulário do Diário com a data de hoje. O placar soma as operações do Diário registradas com a data de hoje.</p>
                             <div class="mt-3 relative h-3 bg-slate-100 dark:bg-lect-bgDark overflow-hidden"><div id="pd-bar-loss" class="absolute inset-y-0 right-1/2 bg-rose-500 transition-all"></div><div id="pd-bar-gain" class="absolute inset-y-0 left-1/2 bg-emerald-500 transition-all"></div><div class="absolute inset-y-0 left-1/2 w-px bg-slate-400"></div></div>
                             <div class="flex justify-between font-mono text-[10px] text-slate-500 mt-1"><span id="pd-lbl-loss"></span><span id="pd-lbl-gain"></span></div>
                             <div id="pd-score" class="mt-2"></div>
@@ -167,6 +185,7 @@
                             <label class="col-span-2"><span class="term-label block mb-1">Setup / anotação</span><input id="dv-s" type="text" maxlength="80" placeholder="ex.: rompimento da máxima, entrei atrasado" class="lx-input"></label>
                         </div>
                         <button id="dv-add" type="button" class="w-full mt-2 py-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold"><i class="ph-bold ph-plus"></i> ADICIONAR AO DIÁRIO</button>
+                        <button id="dv-cancel" type="button" class="hidden w-full mt-1 py-1.5 font-mono text-[11px] text-slate-500 hover:text-lect-teal">cancelar edição</button>
                     </div>
                 </div>
                 <div class="border-t border-slate-200 dark:border-lect-borderDark">
@@ -241,7 +260,7 @@
                         <button data-a="WDO" class="py-2 font-bold">WDO · R$ 10/pt</button>
                     </div>
                     <div class="grid grid-cols-2 gap-3 font-mono text-xs">
-                        <label><span class="term-label block mb-1">Capital da conta (R$)</span><input id="rk-cap" type="number" step="500" value="10000" class="lx-input"></label>
+                        <label><span class="term-label block mb-1">Capital da conta (R$)</span><input id="rk-cap" type="number" step="500" value="10000" class="lx-input"><span id="rk-cap-hint" class="hidden block mt-1 text-[10px] text-slate-500 leading-snug"></span></label>
                         <label><span class="term-label block mb-1">Risco máx. por trade (%)</span><input id="rk-riskpct" type="number" step="0.25" min="0.1" value="1" class="lx-input"></label>
                         <label><span class="term-label block mb-1">Stop (pontos)</span><input id="rk-stop" type="number" step="5" min="0.5" value="150" class="lx-input text-rose-600"></label>
                         <label><span class="term-label block mb-1">Alvo (pontos)</span><input id="rk-target" type="number" step="5" min="0.5" value="300" class="lx-input text-emerald-600"></label>
@@ -259,6 +278,10 @@
                         <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Perda no stop</span><strong id="rk-o-loss" class="text-xl text-rose-600 block mt-1">—</strong><span id="rk-o-losspct" class="text-[10px] text-slate-500"></span></div>
                         <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Ganho no alvo</span><strong id="rk-o-gain" class="text-xl text-emerald-600 block mt-1">—</strong><span id="rk-o-gainnet" class="text-[10px] text-slate-500"></span></div>
                         <div class="p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Risco : Retorno</span><strong id="rk-o-rr" class="text-xl block mt-1">—</strong><span id="rk-o-be" class="text-[10px] text-slate-500"></span></div>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+                        <button type="button" id="rk-registrar" class="min-h-[44px] px-4 inline-flex items-center gap-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold"><i class="ph-bold ph-notebook"></i> REGISTRAR OPERAÇÃO</button>
+                        <span class="text-[11px] text-slate-500 flex-1 min-w-[12rem]">Leva o ativo (<span id="rk-reg-ativo">WIN</span>) para o Diário. Lá você informa o resultado bruto e os custos reais e confirma.</span>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
                         <div class="p-3 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Margem utilizada</span><strong id="rk-o-margin" class="block mt-1">—</strong></div>
@@ -321,7 +344,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261113b"></script>
+    <script src="assets/lectnex-core.js?v=20261113d"></script>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -401,6 +424,12 @@
             // dias sem operações somem depois de 90 dias; dias com operações ficam (são o diário)
             Object.keys(st.days).sort().slice(0, -90).forEach(k => { if (!(st.days[k].trades || []).length) delete st.days[k]; });
             const tv = t => typeof t === 'number' ? t : (+t.r || 0) - (+t.c || 0); // resultado líquido de uma operação
+            // Placar do dia = operações do Diário com a data de hoje (um único registro: o que entra pelo placar ou pelo Diário é contado uma vez só)
+            const hojeKey = LX.iso(pdToday), diaHoje = () => st.days[hojeKey] || { trades: [] };
+            const LIM_PADRAO = { cap: 10000, maxloss: 2, goal: 0, maxtr: 5 };
+            // capital "definido" = o trader mexeu nos limites (ou já tinha limites diferentes do padrão)
+            const planoDefinido = () => !!st.limitsEditados || ['cap', 'maxloss', 'goal', 'maxtr'].some(k => (+st.limits[k] || 0) !== LIM_PADRAO[k]);
+            window.lxPlano = () => ({ cap: planoDefinido() ? +st.limits.cap || 0 : 0, limDia: planoDefinido() ? (+st.limits.cap || 0) * (+st.limits.maxloss || 0) / 100 : 0 });
             const CHECKS = [
                 ['agenda', 'Li a agenda de hoje e sei os horários que mexem no preço'],
                 ['contrato', 'Conferi o contrato vigente (e se há rolagem)'],
@@ -512,26 +541,25 @@
             $('pd-cap').value = L.cap; $('pd-maxloss').value = L.maxloss; $('pd-goal').value = L.goal || ''; $('pd-maxtr').value = L.maxtr;
             function renderScore() {
                 const cap = +L.cap || 0, lim = cap * (+L.maxloss || 0) / 100, goal = +L.goal || 0, maxtr = +L.maxtr || 0;
-                const pnl = day.trades.reduce((a, b) => a + tv(b), 0), n = day.trades.length;
+                const hoje = diaHoje(), pnl = hoje.trades.reduce((a, b) => a + tv(b), 0), n = hoje.trades.length;
                 $('pd-stopline').innerHTML = lim > 0 ? `Pare o dia se perder <strong class="text-rose-600 dark:text-rose-400">${LX.brl(lim)}</strong>${maxtr ? ` ou após <strong>${maxtr}</strong> operações` : ''}.${goal ? ` Meta: <strong class="text-emerald-600 dark:text-emerald-400">${LX.brl(goal)}</strong>.` : ''}` : 'Defina capital e perda máxima para ver seu limite.';
                 const lw = lim > 0 && pnl < 0 ? Math.min(50, -pnl / lim * 50) : 0, gw = pnl > 0 ? Math.min(50, pnl / (goal || lim || pnl) * 50) : 0;
                 $('pd-bar-loss').style.width = lw + '%'; $('pd-bar-gain').style.width = gw + '%';
                 $('pd-lbl-loss').textContent = lim ? '−' + LX.brl(lim, 0) : ''; $('pd-lbl-gain').textContent = goal ? '+' + LX.brl(goal, 0) : '';
                 const hitLoss = lim > 0 && pnl <= -lim, hitTr = maxtr && n >= maxtr, hitGoal = goal && pnl >= goal;
-                const msg = hitLoss ? `<div class="p-2.5 bg-rose-600 text-white text-xs font-bold"><i class="ph-fill ph-hand-palm"></i> LIMITE DE PERDA ATINGIDO. Encerre o dia — amanhã tem pregão.</div>`
+                const msg = hitLoss ? `<div class="p-2.5 bg-rose-600 text-white text-xs font-bold"><i class="ph-fill ph-hand-palm"></i> Limite diário atingido. Pare de operar hoje; o registro continua liberado para anotar tudo.</div>`
                     : hitTr ? `<div class="p-2.5 bg-lect-orange text-white text-xs font-bold"><i class="ph-fill ph-hand-palm"></i> Você chegou ao máximo de ${maxtr} operações. Pare por hoje.</div>`
                     : hitGoal ? `<div class="p-2.5 bg-emerald-600 text-white text-xs font-bold"><i class="ph-fill ph-trophy"></i> Meta batida! Proteja o resultado: pare ou reduza a mão.</div>` : '';
-                $('pd-score').innerHTML = `<div class="flex items-baseline justify-between font-mono"><span class="text-[11px] text-slate-500">${n} operaç${n === 1 ? 'ão' : 'ões'}${n ? ` · ${day.trades.filter(x => tv(x) > 0).length} ganhos` : ''}</span><strong class="text-xl ${LX.signClass(pnl)}">${pnl >= 0 ? '+' : '−'}${LX.brl(Math.abs(pnl))}</strong></div>` + (msg ? `<div class="mt-2">${msg}</div>` : '');
+                $('pd-score').innerHTML = `<div class="flex items-baseline justify-between font-mono"><span class="text-[11px] text-slate-500">${n} operaç${n === 1 ? 'ão' : 'ões'}${n ? ` · ${hoje.trades.filter(x => tv(x) > 0).length} ganhos` : ''}</span><strong class="text-xl ${LX.signClass(pnl)}">${pnl >= 0 ? '+' : '−'}${LX.brl(Math.abs(pnl))}</strong></div>` + (lim > 0 ? `<div class="mt-1 font-mono text-[11px] ${hitLoss ? 'text-rose-600 dark:text-rose-400 font-bold' : 'text-slate-500'}">${hitLoss ? `Limite diário atingido (${LX.brl(lim, 0)})` : `Faltam ${LX.brl(lim + Math.min(0, pnl), 0)} até o limite de perda do dia`}</div>` : '') + (msg ? `<div class="mt-2">${msg}</div>` : '');
                 $('pd-undo').classList.toggle('invisible', !n);
                 renderClose();
             }
             ['pd-cap', 'pd-maxloss', 'pd-goal', 'pd-maxtr'].forEach(id => $(id).addEventListener('input', () => {
                 L.cap = +$('pd-cap').value || 0; L.maxloss = +$('pd-maxloss').value || 0; L.goal = +$('pd-goal').value || 0; L.maxtr = +$('pd-maxtr').value || 0;
-                pdSave(st); renderScore();
+                st.limitsEditados = true; pdSave(st); renderScore(); document.dispatchEvent(new CustomEvent('lx:plano-cap'));
             }));
-            const add = () => { const v = parseFloat($('pd-res').value); if (!isFinite(v) || v === 0) return; const h = LX.nowBRT(); day.trades.push({ r: v, c: 0, a: 'WIN', t: String(h.getHours()).padStart(2, '0') + ':' + String(h.getMinutes()).padStart(2, '0') }); $('pd-res').value = ''; pdSave(st); renderScore(); dvRender(); };
-            $('pd-add').onclick = add; $('pd-res').addEventListener('keydown', e => { if (e.key === 'Enter') add(); });
-            $('pd-undo').onclick = () => { day.trades.pop(); pdSave(st); renderScore(); dvRender(); };
+            $('pd-add').onclick = e => { e.preventDefault(); abrirRegistro({ data: hojeKey }); };
+            $('pd-undo').onclick = () => { const h = st.days[hojeKey]; if (h && h.trades.length) { h.trades.pop(); pdSave(st); renderScore(); dvRender(); } };
 
             // Checklist
             function renderChecks() {
@@ -655,24 +683,61 @@
                     `<div class="flex justify-between items-baseline px-3 py-2.5 bg-lect-navy text-white"><span>DARF · código 6015</span><strong class="text-base text-lect-orange">${LX.brl(ir.darf)}</strong></div>` +
                     `<div class="px-3 py-2 text-[10px] text-slate-500 leading-relaxed">${ir.darf > 0 ? `Vence em <strong>${LX.weekday(due)} ${LX.br(due)}</strong> (último dia útil do mês seguinte).` : ir.darfCarry ? `Valor abaixo de R$ 10 (${LX.brl(ir.darfCarry)}): acumula para o próximo mês.` : 'Nada a pagar neste mês.'}${ir.lossOut > 0 ? ` Prejuízo a compensar daqui para frente: <strong>${LX.brl(ir.lossOut)}</strong>.` : ''}${ir.irrfCarry > 0 ? ` IRRF a compensar: ${LX.brl(ir.irrfCarry)}.` : ''}</div></div>` : '';
                 // lista
-                $('dv-list').innerHTML = rows.length ? rows.slice().reverse().map(r => { const n = (+r.r || 0) - (+r.c || 0); return `<tr><td class="px-5 py-1.5">${r.d.slice(8)}/${r.d.slice(5, 7)}</td><td class="px-2 text-slate-500">${LX.esc(r.t || '')}</td><td class="px-2">${LX.esc(r.a || '')}</td><td class="px-2 text-right">${LX.num(+r.r || 0, 2)}</td><td class="px-2 text-right text-slate-500">${LX.num(+r.c || 0, 2)}</td><td class="px-2 text-right font-bold ${LX.signClass(n)}">${LX.num(n, 2)}</td><td class="px-3 font-sans text-slate-600 dark:text-slate-300 max-w-[220px] truncate">${LX.esc(r.s || '')}</td><td class="px-2 text-right"><button type="button" data-dvdel="${r.d}|${r.i}" class="text-slate-400 hover:text-rose-500" aria-label="Apagar operação"><i class="ph-bold ph-trash"></i></button></td></tr>`; }).join('')
+                $('dv-list').innerHTML = rows.length ? rows.slice().reverse().map(r => { const n = (+r.r || 0) - (+r.c || 0); return `<tr><td class="px-5 py-1.5">${r.d.slice(8)}/${r.d.slice(5, 7)}</td><td class="px-2 text-slate-500">${LX.esc(r.t || '')}</td><td class="px-2">${LX.esc(r.a || '')}</td><td class="px-2 text-right">${LX.num(+r.r || 0, 2)}</td><td class="px-2 text-right text-slate-500">${LX.num(+r.c || 0, 2)}</td><td class="px-2 text-right font-bold ${LX.signClass(n)}">${LX.num(n, 2)}</td><td class="px-3 font-sans text-slate-600 dark:text-slate-300 max-w-[220px] truncate">${LX.esc(r.s || '')}</td><td class="px-2 text-right whitespace-nowrap"><button type="button" data-dvedit="${r.d}|${r.i}" class="p-1 text-slate-400 hover:text-lect-teal" aria-label="Editar operação"><i class="ph-bold ph-pencil-simple"></i></button><button type="button" data-dvdel="${r.d}|${r.i}" class="p-1 text-slate-400 hover:text-rose-500" aria-label="Apagar operação"><i class="ph-bold ph-trash"></i></button></td></tr>`; }).join('')
                     : '<tr><td colspan="8" class="px-5 py-4 text-slate-500 font-sans">Sem operações registradas neste mês.</td></tr>';
                 document.querySelectorAll('[data-dvdel]').forEach(b => b.onclick = () => {
-                    const [k, i] = b.dataset.dvdel.split('|'); st.days[k].trades.splice(+i, 1); pdSave(st); dvRender(); renderScore();
+                    const [k, i] = b.dataset.dvdel.split('|'); st.days[k].trades.splice(+i, 1); if (dvEdit && dvEdit.k === k) dvCancel(); pdSave(st); dvRender(); renderScore();
+                });
+                document.querySelectorAll('[data-dvedit]').forEach(b => b.onclick = () => {
+                    const [k, i] = b.dataset.dvedit.split('|'), t = norm(st.days[k].trades[+i]);
+                    dvEdit = { k, i: +i, t: t.t || '' };
+                    $('dv-date').value = k; $('dv-asset').value = ['WIN', 'WDO'].includes(t.a) ? t.a : 'Outro';
+                    $('dv-r').value = +t.r || ''; $('dv-c').value = +t.c || ''; $('dv-s').value = t.s || '';
+                    $('dv-add').innerHTML = '<i class="ph-bold ph-check"></i> SALVAR ALTERAÇÃO'; $('dv-cancel').classList.remove('hidden');
+                    irPara();
                 });
             }
             $('dv-date').value = LX.iso((() => { let d = new Date(pdToday); while (!LX.isBusinessDay(d)) d = LX.addDays(d, -1); return d; })()); // último pregão
             $('dv-prev').onclick = () => { dvYM = ymAdd(dvYM, -1); dvRender(); };
             $('dv-next').onclick = () => { dvYM = ymAdd(dvYM, 1); dvRender(); };
-            // atalho da página inicial: futuros.html#registrar abre o Diário já no formulário, com o cursor no resultado
-            if (location.hash === '#registrar') setTimeout(() => { const t = document.getElementById('registrar'); t && t.scrollIntoView({ block: 'start' }); try { $('dv-r').focus({ preventScroll: true }); } catch (_) { } }, 300);
+            /* ----- Formulário do Diário: rascunho, edição e atalhos (#registrar, placar, calculadora) ----- */
+            const DR_KEY = 'lectnex-diario-rascunho';
+            let dvEdit = null;
+            const campos = ['dv-date', 'dv-asset', 'dv-r', 'dv-c', 'dv-s'];
+            const salvarRascunho = () => { if (dvEdit) return; try { localStorage.setItem(DR_KEY, JSON.stringify(Object.fromEntries(campos.map(id => [id, $(id).value])))); } catch (_) { } };
+            const temRascunho = () => ['dv-r', 'dv-c', 'dv-s'].some(id => $(id).value !== '');
+            try { const d = JSON.parse(localStorage.getItem(DR_KEY) || 'null'); if (d && ['dv-r', 'dv-c', 'dv-s'].some(id => d[id])) campos.forEach(id => { if (d[id] != null && d[id] !== '') $(id).value = d[id]; }); } catch (_) { }
+            campos.forEach(id => $(id).addEventListener('input', salvarRascunho));
+            function dvCancel() {
+                dvEdit = null; $('dv-r').value = ''; $('dv-c').value = ''; $('dv-s').value = '';
+                $('dv-add').innerHTML = '<i class="ph-bold ph-plus"></i> ADICIONAR AO DIÁRIO'; $('dv-cancel').classList.add('hidden');
+                try { localStorage.removeItem(DR_KEY); } catch (_) { }
+            }
+            $('dv-cancel').onclick = dvCancel;
+            function irPara() {
+                const t = document.getElementById('registrar'); t && t.scrollIntoView({ block: 'start', behavior: 'smooth' });
+                setTimeout(() => { try { $('dv-r').focus({ preventScroll: true }); } catch (_) { } }, 350);
+            }
+            // abre o formulário sem apagar o que já foi digitado; ativo e data só entram quando não há rascunho
+            function abrirRegistro(o = {}) {
+                if (dvEdit) dvCancel();
+                if (o.asset) $('dv-asset').value = o.asset;
+                if (o.data && !temRascunho()) $('dv-date').value = o.data;
+                salvarRascunho(); irPara();
+            }
+            window.lxRegistrar = abrirRegistro;
+            document.addEventListener('click', e => { const a = e.target.closest('a[href="#registrar"]'); if (!a || a.id === 'pd-add') return; e.preventDefault(); history.replaceState(null, '', '#registrar'); abrirRegistro(); });
+            if (location.hash === '#registrar') setTimeout(() => abrirRegistro(), 300);
+            window.addEventListener('hashchange', () => { if (location.hash === '#registrar') abrirRegistro(); });
             $('dv-add').onclick = () => {
                 const r = parseFloat($('dv-r').value), k = $('dv-date').value;
                 if (!isFinite(r) || r === 0 || !/^\d{4}-\d{2}-\d{2}$/.test(k)) { $('dv-r').focus(); return; }
+                const t = { r, c: Math.max(0, parseFloat($('dv-c').value) || 0), a: $('dv-asset').value, t: dvEdit ? dvEdit.t : '', s: $('dv-s').value.trim().slice(0, 80) };
+                if (dvEdit && st.days[dvEdit.k]) st.days[dvEdit.k].trades.splice(dvEdit.i, 1); // edição: sai da posição antiga (a data pode ter mudado)
                 const d = st.days[k] = Object.assign({ checks: [], trades: [] }, st.days[k] || {});
-                d.trades.push({ r, c: Math.max(0, parseFloat($('dv-c').value) || 0), a: $('dv-asset').value, t: '', s: $('dv-s').value.trim().slice(0, 80) });
-                $('dv-r').value = ''; $('dv-c').value = ''; $('dv-s').value = '';
-                dvYM = k.slice(0, 7); pdSave(st); dvRender(); renderScore();
+                if (dvEdit && dvEdit.k === k) d.trades.splice(dvEdit.i, 0, t); else d.trades.push(t);
+                LX.track('diario_registro', { origem: dvEdit ? 'edicao' : 'form', ativo: t.a });
+                dvCancel(); dvYM = k.slice(0, 7); pdSave(st); dvRender(); renderScore();
             };
             const download = (name, text, type) => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); };
             $('dv-csv').onclick = () => {
@@ -694,7 +759,7 @@
         const PV = { WIN: { pv: 0.2, tick: 5, stop: 150, target: 300, margin: 150, cost: 0.5 }, WDO: { pv: 10, tick: 0.5, stop: 5, target: 10, margin: 200, cost: 1.2 } };
         let asset = 'WIN';
         function setAsset(a) {
-            asset = a;
+            asset = a; const ra = document.getElementById('rk-reg-ativo'); if (ra) ra.textContent = a;
             document.querySelectorAll('#rk-asset button').forEach(b => b.className = 'py-2 font-bold ' + (b.dataset.a === a ? 'bg-lect-navy text-white border-l-2 border-lect-orange' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300'));
             const p = PV[a];
             $('rk-stop').value = p.stop; $('rk-target').value = p.target; $('rk-margin').value = p.margin; $('rk-cost').value = p.cost;
@@ -921,6 +986,22 @@
 
         ['rk-cap', 'rk-riskpct', 'rk-stop', 'rk-target', 'rk-qty', 'rk-cost', 'rk-margin', 'rk-winrate'].forEach(id => $(id).addEventListener('input', calcRisk));
         setAsset('WIN');
+        // capital do Plano do Dia entra na calculadora (editável); risco por trade continua separado do limite diário
+        (function () {
+            let manual = false;
+            function aplicar() {
+                const p = window.lxPlano ? window.lxPlano() : { cap: 0 }, h = $('rk-cap-hint');
+                if (p.cap > 0) {
+                    if (!manual) { $('rk-cap').value = p.cap; calcRisk(); }
+                    h.innerHTML = `${manual ? 'Plano do Dia: ' + LX.brl(p.cap, 0) + ' · ' : 'Do seu Plano do Dia · '}limite de perda do dia ${LX.brl(p.limDia, 0)} (separado do risco por trade)`;
+                    h.classList.remove('hidden');
+                } else h.classList.add('hidden');
+            }
+            $('rk-cap').addEventListener('input', () => { manual = true; aplicar(); });
+            document.addEventListener('lx:plano-cap', aplicar);
+            aplicar();
+            $('rk-registrar').onclick = () => { LX.track('diario_registro', { origem: 'calculadora', ativo: asset }); window.lxRegistrar && window.lxRegistrar({ asset, data: LX.iso(LX.todayBRT()) }); };
+        })();
 
         /* ---------- Paridade ---------- */
         $('par-contract').innerHTML = wdo.slice(0, 6).map((c, i) => `<option value="${i}" ${c === wdoLive ? 'selected' : ''}>${c.code} · ${LX.brShort(c.expiry)}</option>`).join('');
