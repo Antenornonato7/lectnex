@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=820cd79a") format("woff");
+  src: url("./Phosphor.woff?v=25151e1b") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -105,6 +105,9 @@
 }
 .ph.ph-caret-right:before {
   content: "\e13a";
+}
+.ph.ph-caret-up:before {
+  content: "\e13c";
 }
 .ph.ph-chart-bar:before {
   content: "\e150";
@@ -253,6 +256,9 @@
 .ph.ph-notebook:before {
   content: "\e34e";
 }
+.ph.ph-pencil-simple:before {
+  content: "\e3b4";
+}
 .ph.ph-percent:before {
   content: "\e3b6";
 }
@@ -384,7 +390,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=820cd79a") format("woff");
+  src: url("./Phosphor-Bold.woff?v=25151e1b") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -487,6 +493,9 @@
 }
 .ph-bold.ph-caret-right:before {
   content: "\e13a";
+}
+.ph-bold.ph-caret-up:before {
+  content: "\e13c";
 }
 .ph-bold.ph-chart-bar:before {
   content: "\e150";
@@ -635,6 +644,9 @@
 .ph-bold.ph-notebook:before {
   content: "\e34e";
 }
+.ph-bold.ph-pencil-simple:before {
+  content: "\e3b4";
+}
 .ph-bold.ph-percent:before {
   content: "\e3b6";
 }
@@ -766,7 +778,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=820cd79a") format("woff");
+  src: url("./Phosphor-Fill.woff?v=25151e1b") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -869,6 +881,9 @@
 }
 .ph-fill.ph-caret-right:before {
   content: "\e13a";
+}
+.ph-fill.ph-caret-up:before {
+  content: "\e13c";
 }
 .ph-fill.ph-chart-bar:before {
   content: "\e150";
@@ -1017,6 +1032,9 @@
 .ph-fill.ph-notebook:before {
   content: "\e34e";
 }
+.ph-fill.ph-pencil-simple:before {
+  content: "\e3b4";
+}
 .ph-fill.ph-percent:before {
   content: "\e3b6";
 }
@@ -1148,7 +1166,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=820cd79a") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=25151e1b") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1365,6 +1383,14 @@
 }
 .ph-duotone.ph-caret-right:after {
   content: "\e13b";
+  margin-left: -1em;
+}
+.ph-duotone.ph-caret-up:before {
+  content: "\e13c";
+  opacity: 0.2;
+}
+.ph-duotone.ph-caret-up:after {
+  content: "\e13d";
   margin-left: -1em;
 }
 .ph-duotone.ph-chart-bar:before {
@@ -1757,6 +1783,14 @@
 }
 .ph-duotone.ph-notebook:after {
   content: "\e34f";
+  margin-left: -1em;
+}
+.ph-duotone.ph-pencil-simple:before {
+  content: "\e3b4";
+  opacity: 0.2;
+}
+.ph-duotone.ph-pencil-simple:after {
+  content: "\e3b5";
   margin-left: -1em;
 }
 .ph-duotone.ph-percent:before {
