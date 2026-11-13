@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=7b5bd92a") format("woff");
+  src: url("./Phosphor.woff?v=820cd79a") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -93,9 +93,6 @@
 }
 .ph.ph-calendar-dots:before {
   content: "\e7b4";
-}
-.ph.ph-calendar-star:before {
-  content: "\e8b2";
 }
 .ph.ph-calendar-x:before {
   content: "\e10c";
@@ -387,7 +384,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=7b5bd92a") format("woff");
+  src: url("./Phosphor-Bold.woff?v=820cd79a") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -478,9 +475,6 @@
 }
 .ph-bold.ph-calendar-dots:before {
   content: "\e7b4";
-}
-.ph-bold.ph-calendar-star:before {
-  content: "\e8b2";
 }
 .ph-bold.ph-calendar-x:before {
   content: "\e10c";
@@ -772,7 +766,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=7b5bd92a") format("woff");
+  src: url("./Phosphor-Fill.woff?v=820cd79a") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -863,9 +857,6 @@
 }
 .ph-fill.ph-calendar-dots:before {
   content: "\e7b4";
-}
-.ph-fill.ph-calendar-star:before {
-  content: "\e8b2";
 }
 .ph-fill.ph-calendar-x:before {
   content: "\e10c";
@@ -1157,7 +1148,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=7b5bd92a") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=820cd79a") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1342,14 +1333,6 @@
 }
 .ph-duotone.ph-calendar-dots:after {
   content: "\e7b5";
-  margin-left: -1em;
-}
-.ph-duotone.ph-calendar-star:before {
-  content: "\e8b2";
-  opacity: 0.2;
-}
-.ph-duotone.ph-calendar-star:after {
-  content: "\e8b3";
   margin-left: -1em;
 }
 .ph-duotone.ph-calendar-x:before {
