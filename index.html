@@ -606,6 +606,14 @@
                 <p class="lx-fonte px-4 sm:px-5 py-2 border-t border-slate-200 dark:border-lect-borderDark"><b>Fonte</b><span>fechamento conferido após o pregão · Ibovespa à vista (brapi) e dólar à vista · calendário Lectnex</span></p>`;
                 el.classList.remove('hidden');
                 LX.track && LX.track('fechamento_visto', { dia: refISO });
+                // quem entra à noite é o público mais interessado: a chamada de inscrição vem para dentro do fechamento (sem duplicar)
+                const nl = document.querySelector('#hero [data-lx-news="chamada"]');
+                if (nl) {
+                    const tit = `Receba o cenário de ${amanha === 'hoje' ? 'hoje' : amanha === 'amanhã' ? 'amanhã' : amanha} às 7h40, antes da abertura`;
+                    nl.dataset.titulo = tit; const st = nl.querySelector('strong.font-display'); if (st) st.textContent = tit;
+                    nl.classList.remove('mb-4'); nl.classList.add('px-4', 'sm:px-5', 'pb-4');
+                    el.insertBefore(nl, el.querySelector('.lx-fonte'));
+                }
             });
         })();
 
