@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:10-03:00",
+  "atualizado_em": "2026-11-13T13:12-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -147,7 +147,11 @@
     ],
     [
      "12:55",
-     172461.0
+     172439.0
+    ],
+    [
+     "12:58",
+     172490.0
     ]
    ]
   },
@@ -356,7 +360,11 @@
     ],
     [
      "13:10",
-     5.6374
+     5.6316
+    ],
+    [
+     "13:13",
+     5.6306
     ]
    ]
   },
@@ -735,7 +743,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.07,
     "dolar30": 0.07
    },
    {
@@ -748,7 +756,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.07,
     "dolar30": 0.07
    },
    {
@@ -775,7 +783,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": -0.1
    },
    {
     "hora": "13:07",
@@ -785,6 +793,36 @@
     "impacto": "alto",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:07",
+    "titulo": "Banco do Brasil volta a cair; BTG e Ativa cortam preço-alvo para ação",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOR3QwYnpfcVZkUVcwSjNyY3ZQOG0ySTItdE00UEMxOWE0SUlOZHljMHB6TFI1clRNY1Zla2gtMThEMm5hRGlfNnY3V09oTm1pUVh0elE4VGVCWU5obkJhcm9RNjJXa2h4a0pyX0hsN1d6QmFobkFYRFpyOTV2WTVsTzhtaW1kdjlWckt6dFdFeVNHSzc5bk9jRms5M005eEQ3SjZnUkxhcFhTS04zeThtaGtWMGNoMVFwXzZDVG5Ddm9lMG03cHfSAcsBQVVfeXFMUDN3VzBUUTZ3NFF0Y0ItNjhtaGNiNjhtdlR5MG1kSko0aWNwUFJUTDV3YmxfbUxPRDNUdEVCdk9jUVJQYk41S0wtZzJ0QnE0d2cteFFPUVcxdG0tTXZnOVBCUnBMUUJIOUxsb0gxaUdYbWlNNnVnV2RockNFWnNiTDliSnpUVEM3X1RIQmNMUm1ZUTRxZFZnZEhpNGlsNjR2MnhXR2xHTkpORVRjZTdGOFJ1MUtIVVg1aEd4d2xJSzVfdWIyUk5rcFowZ1E?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBAS3",
+     "BPAC11"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:09",
+    "titulo": "Após bancos privados, Caixa faz as contas para subir taxa de juros do crédito imobiliário",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/apos-bancos-privados-caixa-faz-as-contas-para-subir-taxa-de-juros-do-credito-imobiliario.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1435,6 +1473,32 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil volta a cair; BTG e Ativa cortam preço-alvo para ação",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOR3QwYnpfcVZkUVcwSjNyY3ZQOG0ySTItdE00UEMxOWE0SUlOZHljMHB6TFI1clRNY1Zla2gtMThEMm5hRGlfNnY3V09oTm1pUVh0elE4VGVCWU5obkJhcm9RNjJXa2h4a0pyX0hsN1d6QmFobkFYRFpyOTV2WTVsTzhtaW1kdjlWckt6dFdFeVNHSzc5bk9jRms5M005eEQ3SjZnUkxhcFhTS04zeThtaGtWMGNoMVFwXzZDVG5Ddm9lMG03cHfSAcsBQVVfeXFMUDN3VzBUUTZ3NFF0Y0ItNjhtaGNiNjhtdlR5MG1kSko0aWNwUFJUTDV3YmxfbUxPRDNUdEVCdk9jUVJQYk41S0wtZzJ0QnE0d2cteFFPUVcxdG0tTXZnOVBCUnBMUUJIOUxsb0gxaUdYbWlNNnVnV2RockNFWnNiTDliSnpUVEM3X1RIQmNMUm1ZUTRxZFZnZEhpNGlsNjR2MnhXR2xHTkpORVRjZTdGOFJ1MUtIVVg1aEd4d2xJSzVfdWIyUk5rcFowZ1E?oc=5",
+   "publicado": "2026-11-13T13:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3",
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Após bancos privados, Caixa faz as contas para subir taxa de juros do crédito imobiliário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/apos-bancos-privados-caixa-faz-as-contas-para-subir-taxa-de-juros-do-credito-imobiliario.shtml",
+   "publicado": "2026-11-13T13:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1464,7 +1528,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:10-03:00",
+ "atualizado_em": "2026-11-13T13:12-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1480,6 +1544,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Após bancos privados, Caixa faz as contas para subir taxa de juros do crédito imobiliário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/apos-bancos-privados-caixa-faz-as-contas-para-subir-taxa-de-juros-do-credito-imobiliario.shtml",
+   "publicado": "2026-11-13T13:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeHBUR2dPbkhsdktwWjJqdkM4eXBYdmE4NWJjVVI3bzBYTFNIeWNiR0NYWXZ2OFFhMVRiYXpTeVctcU9Yc2NTSERwdkl2YVpRX3ZSUHVfbE9zd1c0WFd1Q0QtcGRleG9kVkI0ekp1NGhrNVNYRHJRUDhFdVBwLUs1ZWFMSHh1R2lZQ1BOaXV4M2VFQnZOY2VuSXdVZWtzMlBMZm5EVFI1TjRXN1ZtMzlFMVU2WFBoSW1rMERrczUzZld0NXluSDY5aVBreHIyZFV3X205akZEMW9VMmZtQ0R6dkxBdw?oc=5",
@@ -1491,22 +1567,24 @@
    "tickers": []
   },
   {
+   "titulo": "Banco do Brasil volta a cair; BTG e Ativa cortam preço-alvo para ação",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOR3QwYnpfcVZkUVcwSjNyY3ZQOG0ySTItdE00UEMxOWE0SUlOZHljMHB6TFI1clRNY1Zla2gtMThEMm5hRGlfNnY3V09oTm1pUVh0elE4VGVCWU5obkJhcm9RNjJXa2h4a0pyX0hsN1d6QmFobkFYRFpyOTV2WTVsTzhtaW1kdjlWckt6dFdFeVNHSzc5bk9jRms5M005eEQ3SjZnUkxhcFhTS04zeThtaGtWMGNoMVFwXzZDVG5Ddm9lMG03cHfSAcsBQVVfeXFMUDN3VzBUUTZ3NFF0Y0ItNjhtaGNiNjhtdlR5MG1kSko0aWNwUFJUTDV3YmxfbUxPRDNUdEVCdk9jUVJQYk41S0wtZzJ0QnE0d2cteFFPUVcxdG0tTXZnOVBCUnBMUUJIOUxsb0gxaUdYbWlNNnVnV2RockNFWnNiTDliSnpUVEM3X1RIQmNMUm1ZUTRxZFZnZEhpNGlsNjR2MnhXR2xHTkpORVRjZTdGOFJ1MUtIVVg1aEd4d2xJSzVfdWIyUk5rcFowZ1E?oc=5",
+   "publicado": "2026-11-13T13:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3",
+    "BPAC11"
+   ]
+  },
+  {
    "titulo": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
    "publicado": "2026-11-13T13:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
-   "publicado": "2026-11-13T12:49-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1572,6 +1650,18 @@
    ]
   },
   {
+   "titulo": "Dólar hoje vira para baixa de olho no fiscal e dados econômicos",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOakIwN1ZneWFjMTlUOWx6VjItUERCWEN5RjM4eWI3WVNJeVEycmQ4ekxtaEpJMWZUMThCQjltcXdUNFY5THBqNTQzVkl0Y0puNDNQVU5JSExWaVNRdURlU3BzQTFMaUtmOEY5VFAwR3k5bFpOa3JDX1FCcUIwWFBVWXdiMkp0aUNRcVRGQmpEM1I5X3c2SHZZcjVGQkjSAaIBQVVfeXFMT2ZISV9Ic0pkbFJueDZKSXhad1p3MGdySWplR0llTVJ5TGdyOXBRdzBrVU1mNWd5SmVJWndNbkRaZncxaEdualY0ME54a3JZSGZoalV1U1hrbjFiVi13MW9vRnp0UmZjY01fLVlEUHAtb19IUHdxcVFOM0RNa3NsX2NIV05GczZSdUg0RGlaSGlLLXZOQm1xVUZiVnYxRE1ieFhn?oc=5",
+   "publicado": "2026-11-13T12:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Galípolo mantém mensagem do Copom e diz entender frustração do mercado",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNmRaU1o4U0h2cXRxWVZvbDl2UzNoQ0MydU5IVDdqdGZPNVFQUUVaMjhZYUMwZkdVdmtWbnFrQkx2cjd2S29reFNTcnpjOV9VSW1RTGljNFZXeW9VeGRoY19jZEN2dUJVMms4Tl9Ua2NSRHZCQWI0XzlQLTRtZklPaTl1WHd3clVFTmxmbE5jZmZManF4bDhvclpRamR4dWtwU3pXa3Z6ZzVEeGpYUHc5bU82ekVYdV9PTlgyNHpWa0ZaZ9IB0AFBVV95cUxNWlBhZHJyRmRYN1poeGJ5VkJuRGVCWkM3VkJNV2pqSnFlNFNvQUhMaERLZkE3OUFadzZoclpSRWFQcHlJX1gyT0UxRWd4RTlUQWVUdDJJbVJaOEJWWXhaNDdNNUltN05xZmhMeUU5TE95azFLTUlpdUREVmhJcVZuN3R5Q1dhLXVON3NkeXhxbjMxNHJSNk1EZDlLakdkYjNlX2dtdUxFVF9ONEpGQWNXUEd1X0tfYzk5X1BJbVZzdUIxbjgzWnFBMExhbXo1NDNl?oc=5",
@@ -1580,30 +1670,6 @@
    "ativos": [
     "WIN",
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pacote fiscal vai na direção correta, mas é muito pequeno, diz Mansueto Almeida, do BTG",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/pacote-fiscal-avaliacao-mansueto-almeida-btg/",
-   "publicado": "2026-11-13T12:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": [
-    "BPAC11"
-   ]
-  },
-  {
-   "titulo": "Gastos elevados e ineficiência da política fiscal",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/gastos-elevados-e-ineficiencia-da-politica-fiscal/",
-   "publicado": "2026-11-13T12:01-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -1634,6 +1700,21 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
+   "publicado": "2026-11-13T11:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
@@ -1641,17 +1722,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
-   "publicado": "2026-11-13T11:22-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
