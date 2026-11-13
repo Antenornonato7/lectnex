@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:08-03:00",
+  "atualizado_em": "2026-11-13T13:10-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -143,11 +143,11 @@
     ],
     [
      "12:50",
-     172435.0
+     172439.0
     ],
     [
-     "12:53",
-     172454.0
+     "12:55",
+     172461.0
     ]
    ]
   },
@@ -352,11 +352,11 @@
     ],
     [
      "13:05",
-     5.6365
+     5.6354
     ],
     [
-     "13:08",
-     5.6365
+     "13:10",
+     5.6374
     ]
    ]
   },
@@ -762,7 +762,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.01
+    "dolar30": -0.03
    },
    {
     "hora": "12:43",
@@ -775,7 +775,20 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.01
+    "dolar30": 0.01
+   },
+   {
+    "hora": "13:07",
+    "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeHBUR2dPbkhsdktwWjJqdkM4eXBYdmE4NWJjVVI3bzBYTFNIeWNiR0NYWXZ2OFFhMVRiYXpTeVctcU9Yc2NTSERwdkl2YVpRX3ZSUHVfbE9zd1c0WFd1Q0QtcGRleG9kVkI0ekp1NGhrNVNYRHJRUDhFdVBwLUs1ZWFMSHh1R2lZQ1BOaXV4M2VFQnZOY2VuSXdVZWtzMlBMZm5EVFI1TjRXN1ZtMzlFMVU2WFBoSW1rMERrczUzZld0NXluSDY5aVBreHIyZFV3X205akZEMW9VMmZtQ0R6dkxBdw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1411,6 +1424,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeHBUR2dPbkhsdktwWjJqdkM4eXBYdmE4NWJjVVI3bzBYTFNIeWNiR0NYWXZ2OFFhMVRiYXpTeVctcU9Yc2NTSERwdkl2YVpRX3ZSUHVfbE9zd1c0WFd1Q0QtcGRleG9kVkI0ekp1NGhrNVNYRHJRUDhFdVBwLUs1ZWFMSHh1R2lZQ1BOaXV4M2VFQnZOY2VuSXdVZWtzMlBMZm5EVFI1TjRXN1ZtMzlFMVU2WFBoSW1rMERrczUzZld0NXluSDY5aVBreHIyZFV3X205akZEMW9VMmZtQ0R6dkxBdw?oc=5",
+   "publicado": "2026-11-13T13:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1440,7 +1464,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:08-03:00",
+ "atualizado_em": "2026-11-13T13:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1455,6 +1479,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "CSN desaba 10% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeHBUR2dPbkhsdktwWjJqdkM4eXBYdmE4NWJjVVI3bzBYTFNIeWNiR0NYWXZ2OFFhMVRiYXpTeVctcU9Yc2NTSERwdkl2YVpRX3ZSUHVfbE9zd1c0WFd1Q0QtcGRleG9kVkI0ekp1NGhrNVNYRHJRUDhFdVBwLUs1ZWFMSHh1R2lZQ1BOaXV4M2VFQnZOY2VuSXdVZWtzMlBMZm5EVFI1TjRXN1ZtMzlFMVU2WFBoSW1rMERrczUzZld0NXluSDY5aVBreHIyZFV3X205akZEMW9VMmZtQ0R6dkxBdw?oc=5",
+   "publicado": "2026-11-13T13:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
    "fonte": "CNBC",
@@ -1597,21 +1632,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa avança e dólar recua com expectativa de ajuste fiscal; Petrobras desaba 3%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTW8yWV94VDJhdmFXdlRDUkdLM0x3WHZtZXNGb19IdDVXQ01KZDQ5TTV3TzB1R0JjcWIyRmk3dFZMQ1VvSlk1QUVKcW1aUE5XVlVCVktwdGYzZXROalE0MjdadEFleUowbmFRSXBvNFd3MnBhM2JudXdqY0tQRkg4dkNFQ0dFc0NLUmJyWW9fbWwtRTYtMWU2RmQtYWgyVlNDSHZ5cVBaV3BjS0U3b1ZQamtmR25hNHdLMUxvXzVfaEtjamVCUHZtRUt3b1BobGQxT29DOTBHXzNFaGtNbkktM3hJNjViS1VsRVlIbjV3N1RURTQwRDBz?oc=5",
-   "publicado": "2026-11-13T11:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   },
   {
    "titulo": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
