@@ -538,7 +538,7 @@
             </div>
             <div class="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[11px] text-slate-500">
               <p class="max-w-4xl"><strong class="text-slate-300">Aviso legal:</strong> conteúdo exclusivamente educacional e informativo. Nada aqui constitui recomendação de compra, venda ou manutenção de valores mobiliários, nem relatório de análise nos termos da Resolução CVM nº 20. Operar derivativos envolve alavancagem e risco de perdas superiores ao capital. Rentabilidade passada ou simulada não garante resultado futuro. Confirme sempre dados e horários nas fontes oficiais.</p>
-              <div class="shrink-0 flex flex-col items-start sm:items-end gap-1.5 font-mono">
+              <div class="min-w-0 sm:max-w-[45%] flex flex-col items-start sm:items-end gap-1.5 font-mono">
                 <a href="status.html" id="lx-status" class="inline-flex items-start gap-1.5 text-slate-400 hover:text-lect-tealLight" title="Horário da última atualização de cada dado (Brasília) · ver página de status"><span class="lx-dot mt-1 shrink-0 w-2 h-2 rounded-full bg-slate-500"></span><span>Verificando dados…</span></a>
                 <span>&copy; ${new Date().getFullYear()} Lectnex</span>
               </div>
@@ -909,8 +909,17 @@
     /* Dados do site (data/*.json): um download por arquivo a cada carregamento da página, dividido entre os blocos que usam o
        mesmo arquivo. fresco = true busca de novo (para atualizações periódicas). Cada bloco recebe a própria cópia. */
     const lxDadosCache = {};
+    /* Cotações: a lista (itens) e o mapa saem em horários diferentes. Para o mesmo papel nunca aparecer com dois preços,
+       o mapa recebe o preço e a variação mais recentes da lista. */
+    LX.normCotacoes = function (c) {
+        if (!c || !Array.isArray(c.mapa) || !Array.isArray(c.itens)) return c;
+        const novo = {}; c.itens.forEach(x => { if (x && x.ticker) novo[x.ticker] = x; });
+        c.mapa.forEach(m => { const n = novo[m.ticker]; if (n && n.preco != null) { m.preco = n.preco; m.var_pct = n.var_pct; m.hora = n.hora; } });
+        return c;
+    };
     LX.dados = function (nome, fresco) {
         if (fresco || !lxDadosCache[nome]) lxDadosCache[nome] = fetch(`data/${nome}.json?t=${Math.floor(Date.now() / 6e4)}`, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
+        if (nome === 'cotacoes' && !lxDadosCache[nome].norm) { lxDadosCache[nome] = lxDadosCache[nome].then(LX.normCotacoes); lxDadosCache[nome].norm = true; }
         return lxDadosCache[nome].then(d => d == null ? null : typeof structuredClone === 'function' ? structuredClone(d) : JSON.parse(JSON.stringify(d)));
     };
     /* Primeira tela instantânea para quem volta: mostra na hora a última cópia guardada no aparelho (cache do service worker)
