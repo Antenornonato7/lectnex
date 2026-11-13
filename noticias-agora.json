@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T10:03-03:00",
+  "atualizado_em": "2026-11-13T10:05-03:00",
   "dolar": {
    "anterior": 5.6453,
    "pontos": [
@@ -55,11 +55,11 @@
     ],
     [
      "10:00",
-     5.6566
+     5.6584
     ],
     [
-     "10:03",
-     5.6576
+     "10:05",
+     5.6624
     ]
    ]
   },
@@ -128,7 +128,7 @@
     "tickers": [
      "CMIG4"
     ],
-    "dolar30": -0.02
+    "dolar30": 0.01
    },
    {
     "hora": "09:35",
@@ -141,7 +141,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.13
+    "dolar30": 0.16
    },
    {
     "hora": "09:48",
@@ -566,7 +566,7 @@
    "em": "2026-11-13T12:55:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T10:03-03:00",
+ "atualizado_em": "2026-11-13T10:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -580,6 +580,18 @@
  ],
  "noticias": [
   {
+   "titulo": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "publicado": "2026-11-13T10:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dos 150 mil aos 200 mil pontos: As projeções da Empiricus para o Ibovespa a depender dos rumos do cenário fiscal brasileiro",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONEx1UnJRQXdpTEtlNGZPbXdidVVtTHRGNHBEOTRuaHJQb1k1eEkwMnNrejNGSHlsR0tnMkp6Q3ljUE1Zd0FCbUFFYkRNV0hiM0owVVVvLUp1ZGRWMU5sakV4YWdGcXFyWUFYNk9NeWl2eVlNUnRyTV9YTUxQME1uRVRiVU5rMkUxUkRCOHplQ0FaNzFaMFpRN2owMlk1TG1YS0RJcEFzLVEzTTNBN3g2TEJRWl9KU2pxWmV2SWZXMVNYbHJ1VmM4Q0h5QUdUZWNNQ19nZ3RvRWlwT1JiQUxFclV0VGVVVkV3NEVVdThzS2JMSkp4eWc?oc=5",
@@ -587,18 +599,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "publicado": "2026-11-13T09:59-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
@@ -697,6 +697,18 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas do Tesouro Direto hoje sobem com ata mais dura do Copom; Prefixado 2032 vai a 15,15%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVXhIaUpCanNVLVI3LTJCR2JMa3VUVWFRbW9hX1RCZVpIWl9FRVN5NHJ6YW5jVkJOdXFZbFBEY1kzeHJqS2RlZlc1Z1JLY0pNTmZreFhFMVJmVF81eWpqZTN1OENMckN3cUNNRVJCeThYaldMVXl4VmowUm10YU5fdDJPQnNpSVRlU2w2TEYxcExhem1Eb3ZUTExOamxsaXJDTy1uM3BmR0paaUU3ZGRjOEZuRmtaSXZlOHJLd3JLcXJpWUNsY0ZZT3A5X3BUNUppLTdadkdZTXByS0k?oc=5",
+   "publicado": "2026-11-13T08:48-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
