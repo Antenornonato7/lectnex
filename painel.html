@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Painel · Lectnex (teste)</title>
+    <meta name="description" content="Painel pessoal: contas, mesas proprietárias e investimentos. Dados guardados só neste aparelho, protegidos por senha.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#060D17">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lectnex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261112a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261111f">
+</head>
+<body data-page="painel" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
+            <div>
+                <span class="term-label text-lect-teal font-bold">PAINEL PESSOAL · <span class="lx-demo">MODO DE TESTE</span></span>
+                <h1 class="font-display text-3xl font-bold tracking-tight mt-1">Meu Painel</h1>
+                <p class="text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-2xl">Contas reais, mesas proprietárias e investimentos num lugar só. Tudo fica <strong>só neste aparelho</strong>, embaralhado com a sua senha: nada vai para a internet.</p>
+            </div>
+            <div id="mp-barra" class="hidden flex flex-wrap gap-2 font-mono text-[11px]">
+                <button type="button" id="mp-exportar" class="px-2.5 py-1.5 border border-slate-300 dark:border-lect-borderDark hover:text-lect-teal inline-flex items-center gap-1.5"><i class="ph-bold ph-download-simple"></i>Cópia de segurança</button>
+                <label class="px-2.5 py-1.5 border border-slate-300 dark:border-lect-borderDark hover:text-lect-teal inline-flex items-center gap-1.5 cursor-pointer"><i class="ph-bold ph-upload-simple"></i>Restaurar<input type="file" id="mp-importar" accept=".json,application/json" class="hidden"></label>
+                <button type="button" id="mp-trancar" class="px-2.5 py-1.5 bg-lect-navy text-white dark:bg-white dark:text-lect-navy font-bold inline-flex items-center gap-1.5"><i class="ph-bold ph-lock-simple"></i>Trancar</button>
+            </div>
+        </div>
+
+        <!-- ENTRADA: criar senha / desbloquear -->
+        <section id="mp-entrada" class="term-panel max-w-md mx-auto p-6 mt-6">
+            <i class="ph-duotone ph-lock-key text-4xl text-lect-teal"></i>
+            <h2 id="mp-ent-titulo" class="font-display text-xl font-bold mt-2">Entrar</h2>
+            <p id="mp-ent-texto" class="text-sm text-slate-600 dark:text-slate-300 mt-1"></p>
+            <form id="mp-ent-form" class="mt-4 space-y-3" autocomplete="off">
+                <input type="text" name="usuario" id="mp-usuario" class="lx-input w-full" placeholder="Usuário" autocomplete="username" required>
+                <input type="password" id="mp-senha" class="lx-input w-full" placeholder="Senha" autocomplete="current-password" required minlength="6">
+                <input type="password" id="mp-senha2" class="lx-input w-full hidden" placeholder="Repita a senha" autocomplete="new-password" minlength="6">
+                <p id="mp-ent-erro" class="hidden text-sm font-bold text-rose-600 dark:text-rose-400"></p>
+                <button type="submit" id="mp-ent-btn" class="w-full px-4 py-2.5 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-sm font-bold">ENTRAR</button>
+            </form>
+            <p class="text-[11px] text-slate-500 mt-4 leading-snug"><i class="ph-bold ph-warning"></i> Não existe "esqueci a senha": sem ela os dados não podem ser abertos. Faça a <strong>cópia de segurança</strong> de vez em quando (ela também sai protegida pela senha).</p>
+        </section>
+
+        <!-- PAINEL -->
+        <div id="mp-app" class="hidden">
+            <nav class="flex gap-1.5 overflow-x-auto thin-scroll pb-1 mb-4 font-mono text-xs" role="tablist">
+                <button type="button" data-aba="resumo" class="mp-aba shrink-0 px-3 py-2 border border-slate-300 dark:border-lect-borderDark">Resumo</button>
+                <button type="button" data-aba="contas" class="mp-aba shrink-0 px-3 py-2 border border-slate-300 dark:border-lect-borderDark">Contas e mesas</button>
+                <button type="button" data-aba="invest" class="mp-aba shrink-0 px-3 py-2 border border-slate-300 dark:border-lect-borderDark">Investimentos</button>
+            </nav>
+
+            <section id="aba-resumo" class="mp-painel"></section>
+
+            <section id="aba-contas" class="mp-painel hidden">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                    <p class="text-sm text-slate-600 dark:text-slate-300">Cada conta tem as próprias regras. Lance o resultado do dia e o painel mostra meta, perdas e consistência.</p>
+                    <button type="button" id="ct-nova" class="px-3 py-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold inline-flex items-center gap-1.5"><i class="ph-bold ph-plus"></i>NOVA CONTA</button>
+                </div>
+                <div id="ct-lista" class="space-y-4"></div>
+            </section>
+
+            <section id="aba-invest" class="mp-painel hidden">
+                <div class="grid lg:grid-cols-12 gap-4">
+                    <form id="iv-form" class="lg:col-span-4 term-panel p-4 space-y-2 self-start" autocomplete="off">
+                        <strong class="font-display">Novo lançamento</strong>
+                        <select id="iv-classe" class="lx-input w-full"></select>
+                        <div id="iv-campos-rv" class="space-y-2">
+                            <div class="grid grid-cols-2 gap-2"><input id="iv-ativo" class="lx-input uppercase" placeholder="Código (ex.: PETR4)"><select id="iv-op" class="lx-input"><option value="c">Compra</option><option value="v">Venda</option></select></div>
+                            <div class="grid grid-cols-3 gap-2"><input id="iv-qtd" type="number" step="any" min="0" class="lx-input" placeholder="Qtd."><input id="iv-preco" type="number" step="any" min="0" class="lx-input" placeholder="Preço R$"><input id="iv-taxas" type="number" step="any" min="0" class="lx-input" placeholder="Taxas R$"></div>
+                        </div>
+                        <div id="iv-campos-rf" class="space-y-2 hidden">
+                            <input id="iv-nome" class="lx-input w-full" placeholder="Nome (ex.: CDB Banco X 2028)">
+                            <div class="grid grid-cols-2 gap-2"><input id="iv-valor" type="number" step="any" min="0" class="lx-input" placeholder="Valor aplicado R$"><input id="iv-venc" type="date" class="lx-input" title="Vencimento"></div>
+                            <div class="grid grid-cols-2 gap-2"><select id="iv-idx" class="lx-input"><option value="cdi">% do CDI</option><option value="pre">Pré (% ao ano)</option><option value="ipca">IPCA + % ao ano</option></select><input id="iv-taxa" type="number" step="any" min="0" class="lx-input" placeholder="Taxa (ex.: 110)"></div>
+                        </div>
+                        <input id="iv-data" type="date" class="lx-input w-full" title="Data da operação">
+                        <p id="iv-erro" class="hidden text-xs font-bold text-rose-600 dark:text-rose-400"></p>
+                        <button type="submit" class="w-full px-3 py-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold">LANÇAR</button>
+                    </form>
+                    <div class="lg:col-span-8 space-y-4">
+                        <div id="iv-alocacao" class="term-panel p-4"></div>
+                        <div id="iv-posicoes" class="term-panel p-4 overflow-x-auto"></div>
+                        <div id="iv-rf" class="term-panel p-4 overflow-x-auto"></div>
+                        <details class="term-panel p-4"><summary class="cursor-pointer font-mono text-xs font-bold">Todos os lançamentos</summary><div id="iv-hist" class="mt-3 overflow-x-auto"></div></details>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal: conta -->
+    <dialog id="ct-modal" class="term-panel p-0 w-[min(640px,94vw)] backdrop:bg-black/60 text-inherit bg-white dark:bg-lect-cardDark">
+        <form id="ct-form" method="dialog" class="p-5 space-y-3" autocomplete="off">
+            <div class="flex items-center justify-between"><strong class="font-display text-lg" id="ct-modal-titulo">Nova conta</strong><button type="button" data-fechar class="text-xl" aria-label="Fechar"><i class="ph-bold ph-x"></i></button></div>
+            <div class="grid sm:grid-cols-2 gap-2">
+                <label class="text-xs">Nome<input id="cf-nome" class="lx-input w-full mt-1" required placeholder="Ex.: Euroinvest Pleno #1"></label>
+                <label class="text-xs">Tipo<select id="cf-tipo" class="lx-input w-full mt-1"><option value="aval">Mesa · avaliação</option><option value="aprov">Mesa · conta aprovada</option><option value="real">Conta real (própria)</option></select></label>
+                <label class="text-xs">Mesa<select id="cf-mesa" class="lx-input w-full mt-1"></select></label>
+                <label class="text-xs">Plano<input id="cf-plano" class="lx-input w-full mt-1" list="cf-planos" placeholder="Ex.: Pleno"><datalist id="cf-planos"></datalist></label>
+                <label class="text-xs">Início<input id="cf-inicio" type="date" class="lx-input w-full mt-1"></label>
+                <label class="text-xs">Ativos<input id="cf-ativos" class="lx-input w-full mt-1" placeholder="WIN, WDO"></label>
+            </div>
+            <fieldset class="border border-slate-200 dark:border-lect-borderDark p-3">
+                <legend class="px-1 font-mono text-[11px] font-bold">REGRAS DO PLANO (copie do regulamento da mesa)</legend>
+                <div class="grid sm:grid-cols-3 gap-2">
+                    <label class="text-xs">Meta de lucro R$<input id="cf-meta" type="number" step="any" min="0" class="lx-input w-full mt-1"></label>
+                    <label class="text-xs">Perda máx. no dia R$<input id="cf-pdia" type="number" step="any" min="0" class="lx-input w-full mt-1"></label>
+                    <label class="text-xs">Perda máx. total R$<input id="cf-ptot" type="number" step="any" min="0" class="lx-input w-full mt-1"></label>
+                    <label class="text-xs">Tipo da perda total<select id="cf-ptipo" class="lx-input w-full mt-1"><option value="fixa">Fixa (a partir do início)</option><option value="trail">Móvel (a partir do maior saldo)</option></select></label>
+                    <label class="text-xs">Dias mínimos<input id="cf-dias" type="number" min="0" class="lx-input w-full mt-1"></label>
+                    <label class="text-xs">Maior dia ≤ % do lucro<input id="cf-cons" type="number" step="any" min="0" max="100" class="lx-input w-full mt-1" placeholder="Ex.: 40"></label>
+                    <label class="text-xs">Contratos máx. WIN<input id="cf-cwin" type="number" min="0" class="lx-input w-full mt-1"></label>
+                    <label class="text-xs">Contratos máx. WDO<input id="cf-cwdo" type="number" min="0" class="lx-input w-full mt-1"></label>
+                    <label class="text-xs">Repasse ao trader %<input id="cf-split" type="number" step="any" min="0" max="100" class="lx-input w-full mt-1"></label>
+                </div>
+                <label class="text-xs block mt-2">Outras regras (horário para zerar, notícias, etc.)<textarea id="cf-obs" rows="2" class="lx-input w-full mt-1"></textarea></label>
+                <p id="cf-dica" class="text-[11px] text-slate-500 mt-2"></p>
+            </fieldset>
+            <div class="flex flex-wrap justify-between gap-2"><button type="button" id="cf-apagar" class="hidden px-3 py-2 border border-rose-500/60 text-rose-600 dark:text-rose-400 font-mono text-xs font-bold">APAGAR CONTA</button><button type="submit" class="ml-auto px-4 py-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold">SALVAR</button></div>
+        </form>
+    </dialog>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js?v=20261111f"></script>
+    <script>
+    (function () {
+        'use strict';
+        const $ = id => document.getElementById(id), esc = s => LX.esc(String(s == null ? '' : s));
+        const CHAVE = 'lectnex-meu-painel-v1', TRAVA_MIN = 15;
+        const brl = v => (v < 0 ? '−' : '') + 'R$ ' + LX.num(Math.abs(v), 2), sc = v => LX.signClass(v);
+        const hojeISO = () => LX.iso(LX.todayBRT());
+        const uid = () => Math.random().toString(36).slice(2, 10);
+
+        /* ---------------- MESAS: nomes e planos conhecidos. As regras NÃO vêm preenchidas de propósito: mudam por plano e com o tempo,
+           e o regulamento oficial de cada mesa é a fonte. O trader copia os números do contrato do plano dele. ---------------- */
+        const MESAS = {
+            'Euroinvest': { planos: ['Lite', 'Junior', 'Pleno', 'Senior', 'Master', 'Platinum', 'Expert', 'Premium', 'Europass'], split: 85 },
+            'Grupo Mide': { planos: [] }, 'Zero7': { planos: [] }, 'StarDesk': { planos: [] }, 'Axia': { planos: [] },
+            'Outra': { planos: [] }, 'Corretora (conta própria)': { planos: [] }
+        };
+
+        /* ---------------- COFRE: PBKDF2 (310 mil voltas) + AES-GCM, tudo no navegador (Web Crypto) ---------------- */
+        const te = new TextEncoder(), td = new TextDecoder();
+        const b64 = u => btoa(String.fromCharCode(...new Uint8Array(u))), unb64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+        async function derivar(usuario, senha, sal) {
+            const base = await crypto.subtle.importKey('raw', te.encode(usuario.trim().toLowerCase() + '\u0000' + senha), 'PBKDF2', false, ['deriveKey']);
+            return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: sal, iterations: 310000, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
+        }
+        async function fechar(obj, chave, sal) {
+            const iv = crypto.getRandomValues(new Uint8Array(12));
+            const ct = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, chave, te.encode(JSON.stringify(obj)));
+            return { v: 1, app: 'lectnex-meu-painel', sal: b64(sal), iv: b64(iv), dados: b64(ct), salvo_em: new Date().toISOString() };
+        }
+        async function abrir(pacote, chave) { return JSON.parse(td.decode(await crypto.subtle.decrypt({ name: 'AES-GCM', iv: unb64(pacote.iv) }, chave, unb64(pacote.dados)))); }
+        const ler = () => { try { return JSON.parse(localStorage.getItem(CHAVE) || 'null'); } catch (_) { return null; } };
+
+        let CH = null, SAL = null, D = null, ultimoUso = Date.now();
+        const VAZIO = () => ({ contas: [], invest: [], criado_em: new Date().toISOString() });
+        async function salvar() {
+            if (!CH) return;
+            try { localStorage.setItem(CHAVE, JSON.stringify(await fechar(D, CH, SAL))); }
+            catch (e) { alert('Não consegui salvar neste aparelho: ' + e.message); }
+        }
+
+        /* ---------------- ENTRADA ---------------- */
+        const novo = !ler();
+        $('mp-ent-titulo').textContent = novo ? 'Criar acesso' : 'Entrar';
+        $('mp-ent-texto').textContent = novo ? 'Primeira vez neste aparelho: escolha um usuário e uma senha (mínimo 6 caracteres). Eles servem para embaralhar os seus dados.' : 'Digite o usuário e a senha que você criou neste aparelho.';
+        $('mp-ent-btn').textContent = novo ? 'CRIAR E ENTRAR' : 'ENTRAR';
+        if (novo) { $('mp-senha2').classList.remove('hidden'); $('mp-senha2').required = true; $('mp-senha').autocomplete = 'new-password'; }
+        $('mp-ent-form').addEventListener('submit', async ev => {
+            ev.preventDefault();
+            const u = $('mp-usuario').value, s = $('mp-senha').value, erro = $('mp-ent-erro'); erro.classList.add('hidden');
+            if (!window.crypto || !crypto.subtle) { erro.textContent = 'Este navegador não tem a criptografia necessária (abra pelo endereço https do site).'; erro.classList.remove('hidden'); return; }
+            if (novo && s !== $('mp-senha2').value) { erro.textContent = 'As senhas não são iguais.'; erro.classList.remove('hidden'); return; }
+            $('mp-ent-btn').disabled = true;
+            try {
+                if (novo) { SAL = crypto.getRandomValues(new Uint8Array(16)); CH = await derivar(u, s, SAL); D = VAZIO(); await salvar(); }
+                else { const p = ler(); SAL = unb64(p.sal); CH = await derivar(u, s, SAL); D = await abrir(p, CH); }
+                entrar();
+            } catch (_) { CH = null; erro.textContent = 'Usuário ou senha não conferem.'; erro.classList.remove('hidden'); }
+            $('mp-ent-btn').disabled = false; $('mp-senha').value = ''; $('mp-senha2').value = '';
+        });
+        function entrar() {
+            $('mp-entrada').classList.add('hidden'); $('mp-app').classList.remove('hidden'); $('mp-barra').classList.remove('hidden');
+            D.contas = D.contas || []; D.invest = D.invest || [];
+            aba(sessionStorage.getItem('mp-aba') || 'resumo');
+        }
+        function trancar() { CH = null; D = null; location.reload(); }
+        $('mp-trancar').addEventListener('click', trancar);
+        ['click', 'keydown', 'touchstart'].forEach(t => document.addEventListener(t, () => { ultimoUso = Date.now(); }, { passive: true }));
+        setInterval(() => { if (CH && Date.now() - ultimoUso > TRAVA_MIN * 6e4) trancar(); }, 30000);
+
+        /* ---------------- CÓPIA DE SEGURANÇA ---------------- */
+        $('mp-exportar').addEventListener('click', async () => {
+            await salvar(); const blob = new Blob([localStorage.getItem(CHAVE)], { type: 'application/json' });
+            const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `meu-painel-${hojeISO()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+        });
+        $('mp-importar').addEventListener('change', async ev => {
+            const f = ev.target.files[0]; if (!f) return;
+            try {
+                const p = JSON.parse(await f.text()); if (p.app !== 'lectnex-meu-painel') throw new Error('arquivo');
+                const ch = await derivar($('mp-usuario').value, prompt('Senha da cópia de segurança:') || '', unb64(p.sal));
+                const dados = await abrir(p, ch);
+                if (!confirm(`Substituir os dados atuais pela cópia de ${new Date(p.salvo_em).toLocaleString('pt-BR')}?`)) return;
+                D = dados; SAL = unb64(p.sal); CH = ch; await salvar(); aba('resumo');
+            } catch (_) { alert('Não consegui abrir essa cópia (arquivo diferente, ou usuário/senha não conferem).'); }
+            ev.target.value = '';
+        });
+
+        /* ---------------- ABAS ---------------- */
+        function aba(nome) {
+            try { sessionStorage.setItem('mp-aba', nome); } catch (_) { }
+            document.querySelectorAll('.mp-aba').forEach(b => { const on = b.dataset.aba === nome; b.className = 'mp-aba shrink-0 px-3 py-2 border ' + (on ? 'border-lect-teal bg-lect-teal text-white font-bold' : 'border-slate-300 dark:border-lect-borderDark hover:text-lect-teal'); });
+            document.querySelectorAll('.mp-painel').forEach(p => p.classList.toggle('hidden', p.id !== 'aba-' + nome));
+            ({ resumo: rResumo, contas: rContas, invest: rInvest })[nome]();
+        }
+        document.querySelectorAll('.mp-aba').forEach(b => b.addEventListener('click', () => aba(b.dataset.aba)));
+
+        /* ================= CONTAS E MESAS ================= */
+        function calcConta(c) {
+            const dias = [...(c.dias || [])].sort((a, b) => a.data.localeCompare(b.data)), R = c.regras || {};
+            let saldo = 0, pico = 0, piorDD = 0, maiorDia = 0, violDia = null, violTot = null;
+            const curva = [0];
+            for (const d of dias) {
+                const v = +d.res || 0; saldo += v; curva.push(saldo); pico = Math.max(pico, saldo); piorDD = Math.min(piorDD, saldo - pico); maiorDia = Math.max(maiorDia, v);
+                if (R.pdia && v <= -R.pdia && !violDia) violDia = d.data;
+                const piso = R.ptipo === 'trail' ? pico - R.ptot : -R.ptot;
+                if (R.ptot && saldo <= piso && !violTot) violTot = d.data;
+            }
+            const piso = R.ptot ? (R.ptipo === 'trail' ? pico - R.ptot : -R.ptot) : null;
+            const folga = piso == null ? null : saldo - piso;
+            const consOk = !R.cons || saldo <= 0 ? true : maiorDia <= saldo * R.cons / 100;
+            const metaOk = R.meta ? saldo >= R.meta : false, diasOk = !R.dias || dias.length >= R.dias;
+            const hojeRes = dias.filter(d => d.data === hojeISO()).reduce((a, d) => a + (+d.res || 0), 0);
+            let status = ['Em andamento', 'text-slate-500'];
+            if (violDia || violTot) status = ['Regra de perda quebrada', 'text-rose-600 dark:text-rose-400'];
+            else if (c.tipo === 'aval' && metaOk && diasOk && consOk) status = ['Meta cumprida', 'text-emerald-600 dark:text-emerald-400'];
+            else if (folga != null && R.ptot && folga < R.ptot * 0.25) status = ['Perto do limite de perda', 'text-lect-orange'];
+            return { dias, saldo, pico, piorDD, maiorDia, violDia, violTot, piso, folga, consOk, metaOk, diasOk, hojeRes, curva, status };
+        }
+        function curvaSVG(pts) {
+            if (pts.length < 2) return '<div class="h-16 grid place-items-center text-xs text-slate-500">Sem lançamentos ainda</div>';
+            const W = 300, H = 64, mn = Math.min(...pts), mx = Math.max(...pts), k = mx - mn || 1;
+            const xy = pts.map((v, i) => `${(i / (pts.length - 1) * W).toFixed(1)},${(H - 4 - (v - mn) / k * (H - 8)).toFixed(1)}`).join(' ');
+            const zero = (H - 4 - (0 - mn) / k * (H - 8)).toFixed(1), ult = pts[pts.length - 1];
+            return `<svg viewBox="0 0 ${W} ${H}" class="w-full h-16" preserveAspectRatio="none"><line x1="0" x2="${W}" y1="${zero}" y2="${zero}" class="stroke-slate-300 dark:stroke-slate-600" stroke-dasharray="3 3"/><polyline points="${xy}" fill="none" stroke-width="2" class="${ult >= 0 ? 'stroke-emerald-500' : 'stroke-rose-500'}" vector-effect="non-scaling-stroke"/></svg>`;
+        }
+        const barra = (v, max, cor) => `<div class="h-1.5 bg-slate-200 dark:bg-lect-borderDark mt-1"><div class="h-full ${cor}" style="width:${Math.max(0, Math.min(100, max ? v / max * 100 : 0)).toFixed(0)}%"></div></div>`;
+        const TIPO = { aval: 'Mesa · avaliação', aprov: 'Mesa · aprovada', real: 'Conta real' };
+
+        function rContas() {
+            const L = $('ct-lista');
+            if (!D.contas.length) { L.innerHTML = '<div class="term-panel p-6 text-center text-sm text-slate-500">Nenhuma conta ainda. Toque em <strong>Nova conta</strong> e copie as regras do seu plano.</div>'; return; }
+            L.innerHTML = D.contas.map(c => {
+                const k = calcConta(c), R = c.regras || {};
+                const ult = k.dias.slice(-8).reverse().map(d => `<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="py-1 pr-3">${LX.brShort(LX.parseISO(d.data))}</td><td class="pr-3 font-bold ${sc(+d.res)}">${brl(+d.res)}</td><td class="pr-3 text-slate-500">${d.ops ? d.ops + ' op.' : ''}</td><td class="text-slate-500 truncate max-w-[180px]">${esc(d.nota)}</td><td class="text-right"><button type="button" data-apagar-dia="${c.id}|${d.id}" class="text-slate-400 hover:text-rose-500" aria-label="Apagar"><i class="ph-bold ph-trash"></i></button></td></tr>`).join('');
+                const linha = (rot, val, extra = '') => `<div class="flex justify-between gap-2"><span class="text-slate-500">${rot}</span><span class="font-bold">${val}</span></div>${extra}`;
+                return `<article class="term-panel">
+                    <div class="flex flex-wrap items-center justify-between gap-2 px-4 py-3 border-b border-slate-200 dark:border-lect-borderDark">
+                        <div class="min-w-0"><strong class="font-display text-lg">${esc(c.nome)}</strong><span class="block font-mono text-[11px] text-slate-500">${esc(c.mesa)}${c.plano ? ' · ' + esc(c.plano) : ''} · ${TIPO[c.tipo]}${c.ativos ? ' · ' + esc(c.ativos) : ''}</span></div>
+                        <div class="flex items-center gap-3"><span class="font-mono text-xs font-bold ${k.status[1]}">● ${k.status[0]}</span><button type="button" data-editar="${c.id}" class="font-mono text-[11px] text-lect-teal hover:underline">editar regras</button></div>
+                    </div>
+                    <div class="grid md:grid-cols-12 gap-4 p-4">
+                        <div class="md:col-span-4 font-mono text-sm space-y-2">
+                            <div><span class="term-label">Resultado acumulado</span><strong class="block text-2xl ${sc(k.saldo)}">${brl(k.saldo)}</strong><span class="text-[11px] text-slate-500">hoje: <b class="${sc(k.hojeRes)}">${brl(k.hojeRes)}</b> · ${k.dias.length} dia(s)${R.dias ? ' de ' + R.dias + ' mín.' : ''}</span></div>
+                            ${curvaSVG(k.curva)}
+                        </div>
+                        <div class="md:col-span-4 font-mono text-xs space-y-2.5">
+                            ${R.meta ? linha('Meta', `${brl(k.saldo)} / ${brl(R.meta)}`, barra(k.saldo, R.meta, 'bg-emerald-500')) : ''}
+                            ${R.ptot ? linha(R.ptipo === 'trail' ? 'Folga até a perda máx. (móvel)' : 'Folga até a perda máx.', brl(k.folga), barra(k.folga, R.ptot, k.folga < R.ptot * .25 ? 'bg-rose-500' : 'bg-lect-teal')) : ''}
+                            ${R.pdia ? linha('Perda máx. no dia', brl(R.pdia), `<span class="block text-[11px] ${k.hojeRes <= -R.pdia ? 'text-rose-500 font-bold' : 'text-slate-500'}">${k.hojeRes < 0 ? `hoje já usou ${LX.num(-k.hojeRes / R.pdia * 100, 0)}% do limite` : 'hoje: dentro do limite'}</span>`) : ''}
+                            ${R.cons ? linha(`Consistência (maior dia ≤ ${R.cons}%)`, k.saldo > 0 ? `${LX.num(k.maiorDia / k.saldo * 100, 0)}% ${k.consOk ? '✓' : '✗'}` : '—') : ''}
+                            ${linha('Pior queda (do topo)', brl(k.piorDD))}
+                            ${R.split && k.saldo > 0 ? linha(`Repasse estimado (${R.split}%)`, brl(k.saldo * R.split / 100)) : ''}
+                            ${k.violDia || k.violTot ? `<p class="text-rose-600 dark:text-rose-400 font-bold">${k.violDia ? 'Perda do dia passou do limite em ' + LX.brShort(LX.parseISO(k.violDia)) + '. ' : ''}${k.violTot ? 'Perda total passou do limite em ' + LX.brShort(LX.parseISO(k.violTot)) + '.' : ''}</p>` : ''}
+                            ${!R.meta && !R.ptot && !R.pdia ? '<p class="text-slate-500">Sem regras cadastradas: toque em "editar regras".</p>' : ''}
+                        </div>
+                        <div class="md:col-span-4">
+                            <form data-lancar="${c.id}" class="grid grid-cols-6 gap-1.5 font-mono text-xs" autocomplete="off">
+                                <input name="data" type="date" value="${hojeISO()}" class="lx-input col-span-3 !text-xs">
+                                <input name="res" type="number" step="any" required placeholder="Resultado R$" class="lx-input col-span-3 !text-xs">
+                                <input name="ops" type="number" min="0" placeholder="Nº op." class="lx-input col-span-2 !text-xs">
+                                <input name="nota" placeholder="Observação" class="lx-input col-span-4 !text-xs">
+                                <button class="col-span-6 py-1.5 bg-lect-teal hover:bg-lect-tealDark text-white font-bold">LANÇAR FECHAMENTO DO DIA</button>
+                            </form>
+                            <table class="w-full mt-2 font-mono text-[11px]">${ult}</table>
+                        </div>
+                    </div>
+                    ${R.obs ? `<p class="px-4 pb-3 text-xs text-slate-500"><b>Outras regras:</b> ${esc(R.obs)}</p>` : ''}
+                </article>`;
+            }).join('');
+        }
+        $('ct-lista').addEventListener('submit', async ev => {
+            const f = ev.target.closest('[data-lancar]'); if (!f) return; ev.preventDefault();
+            const c = D.contas.find(x => x.id === f.dataset.lancar), fd = new FormData(f);
+            (c.dias = c.dias || []).push({ id: uid(), data: fd.get('data') || hojeISO(), res: +fd.get('res'), ops: +fd.get('ops') || 0, nota: (fd.get('nota') || '').slice(0, 200) });
+            await salvar(); rContas();
+        });
+        $('ct-lista').addEventListener('click', async ev => {
+            const ed = ev.target.closest('[data-editar]'); if (ed) return abrirConta(ed.dataset.editar);
+            const ap = ev.target.closest('[data-apagar-dia]'); if (ap && confirm('Apagar este lançamento?')) { const [cid, did] = ap.dataset.apagarDia.split('|'); const c = D.contas.find(x => x.id === cid); c.dias = c.dias.filter(d => d.id !== did); await salvar(); rContas(); }
+        });
+
+        // modal da conta
+        $('cf-mesa').innerHTML = Object.keys(MESAS).map(m => `<option>${m}</option>`).join('');
+        const dicaMesa = () => { const m = MESAS[$('cf-mesa').value]; $('cf-planos').innerHTML = (m.planos || []).map(p => `<option value="${p}">`).join(''); $('cf-dica').innerHTML = $('cf-mesa').value === 'Corretora (conta própria)' ? 'Conta própria: use só a perda máxima no dia e a total como o seu próprio limite de risco.' : 'As regras mudam por plano e com o tempo: copie os números do regulamento do seu plano no site da mesa.' + (m.split ? ` Repasse informado pela ${$('cf-mesa').value}: ${m.split}% (Rankia, out/2026).` : ''); };
+        $('cf-mesa').addEventListener('change', () => { dicaMesa(); const m = MESAS[$('cf-mesa').value]; if (m.split && !$('cf-split').value) $('cf-split').value = m.split; if ($('cf-mesa').value === 'Corretora (conta própria)') $('cf-tipo').value = 'real'; });
+        let editando = null;
+        const CAMPOS = { meta: 'cf-meta', pdia: 'cf-pdia', ptot: 'cf-ptot', dias: 'cf-dias', cons: 'cf-cons', cwin: 'cf-cwin', cwdo: 'cf-cwdo', split: 'cf-split' };
+        function abrirConta(id) {
+            editando = id ? D.contas.find(c => c.id === id) : null; const c = editando || { tipo: 'aval', mesa: 'Euroinvest', regras: { ptipo: 'fixa' }, inicio: hojeISO(), ativos: 'WIN, WDO' };
+            $('ct-modal-titulo').textContent = editando ? 'Editar conta' : 'Nova conta';
+            $('cf-nome').value = c.nome || ''; $('cf-tipo').value = c.tipo; $('cf-mesa').value = c.mesa; $('cf-plano').value = c.plano || ''; $('cf-inicio').value = c.inicio || ''; $('cf-ativos').value = c.ativos || '';
+            for (const [k, idc] of Object.entries(CAMPOS)) $(idc).value = c.regras[k] ?? '';
+            $('cf-ptipo').value = c.regras.ptipo || 'fixa'; $('cf-obs').value = c.regras.obs || '';
+            $('cf-apagar').classList.toggle('hidden', !editando); dicaMesa(); $('ct-modal').showModal();
+        }
+        $('ct-nova').addEventListener('click', () => abrirConta(null));
+        $('ct-modal').querySelector('[data-fechar]').addEventListener('click', () => $('ct-modal').close());
+        $('ct-form').addEventListener('submit', async ev => {
+            ev.preventDefault();
+            const regras = { ptipo: $('cf-ptipo').value, obs: $('cf-obs').value.slice(0, 500) };
+            for (const [k, idc] of Object.entries(CAMPOS)) { const v = parseFloat($(idc).value); if (!isNaN(v)) regras[k] = v; }
+            const base = { nome: $('cf-nome').value.slice(0, 60), tipo: $('cf-tipo').value, mesa: $('cf-mesa').value, plano: $('cf-plano').value.slice(0, 40), inicio: $('cf-inicio').value, ativos: $('cf-ativos').value.slice(0, 40), regras };
+            if (editando) Object.assign(editando, base); else D.contas.push(Object.assign({ id: uid(), dias: [] }, base));
+            await salvar(); $('ct-modal').close(); rContas();
+        });
+        $('cf-apagar').addEventListener('click', async () => { if (!editando || !confirm(`Apagar a conta "${editando.nome}" e todos os lançamentos dela?`)) return; D.contas = D.contas.filter(c => c !== editando); await salvar(); $('ct-modal').close(); rContas(); });
+
+        /* ================= INVESTIMENTOS ================= */
+        const CLASSES = { acao: ['Ações', 'rv'], fii: ['Fundos imobiliários (FII)', 'rv'], etf: ['ETF', 'rv'], bdr: ['BDR', 'rv'], cripto: ['Cripto', 'rv'], fundo: ['Fundo de investimento', 'rv'],
+            cdb: ['CDB', 'rf'], lca: ['LCA', 'rf'], lci: ['LCI', 'rf'], tesouro: ['Tesouro Direto', 'rf'], deb: ['Debênture', 'rf'], outro_rf: ['Outra renda fixa', 'rf'] };
+        const ISENTO = { lca: 1, lci: 1, deb: 1 };
+        $('iv-classe').innerHTML = Object.entries(CLASSES).map(([k, [n]]) => `<option value="${k}">${n}</option>`).join('');
+        const tipoClasse = () => CLASSES[$('iv-classe').value][1];
+        $('iv-classe').addEventListener('change', () => { const rf = tipoClasse() === 'rf'; $('iv-campos-rv').classList.toggle('hidden', rf); $('iv-campos-rf').classList.toggle('hidden', !rf); });
+        $('iv-data').value = hojeISO();
+        $('iv-form').addEventListener('submit', async ev => {
+            ev.preventDefault(); const erro = $('iv-erro'); erro.classList.add('hidden');
+            const cl = $('iv-classe').value, l = { id: uid(), classe: cl, data: $('iv-data').value || hojeISO() };
+            if (tipoClasse() === 'rv') {
+                Object.assign(l, { ativo: $('iv-ativo').value.trim().toUpperCase().slice(0, 20), op: $('iv-op').value, qtd: +$('iv-qtd').value, preco: +$('iv-preco').value, taxas: +$('iv-taxas').value || 0 });
+                if (!l.ativo || !(l.qtd > 0) || !(l.preco > 0)) { erro.textContent = 'Preencha código, quantidade e preço.'; erro.classList.remove('hidden'); return; }
+            } else {
+                Object.assign(l, { nome: $('iv-nome').value.trim().slice(0, 60) || CLASSES[cl][0], valor: +$('iv-valor').value, venc: $('iv-venc').value, idx: $('iv-idx').value, taxa: +$('iv-taxa').value });
+                if (!(l.valor > 0) || !(l.taxa > 0)) { erro.textContent = 'Preencha valor aplicado e taxa.'; erro.classList.remove('hidden'); return; }
+            }
+            D.invest.push(l); await salvar(); ev.target.reset(); $('iv-data').value = hojeISO(); $('iv-classe').value = cl; $('iv-classe').dispatchEvent(new Event('change')); rInvest();
+        });
+
+        let PRECOS = {};
+        LX.dados('cotacoes').then(c => { if (!c) return; for (const x of [...(c.itens || []), ...(c.mapa || [])]) if (x.ticker && x.preco) PRECOS[x.ticker] = x.preco; if (D) { const a = sessionStorage.getItem('mp-aba'); if (a === 'invest' || a === 'resumo') aba(a); } });
+
+        function posicoes() {
+            const pos = {};
+            for (const l of D.invest.filter(x => CLASSES[x.classe][1] === 'rv').sort((a, b) => a.data.localeCompare(b.data))) {
+                const p = pos[l.ativo] = pos[l.ativo] || { ativo: l.ativo, classe: l.classe, qtd: 0, custo: 0, realizado: 0 };
+                if (l.op === 'c') { p.custo += l.qtd * l.preco + l.taxas; p.qtd += l.qtd; }
+                else { const pm = p.qtd ? p.custo / p.qtd : 0, q = Math.min(l.qtd, p.qtd); p.realizado += q * (l.preco - pm) - l.taxas; p.custo -= pm * q; p.qtd -= q; }
+            }
+            return Object.values(pos).filter(p => p.qtd > 1e-9 || Math.abs(p.realizado) > 0.005).map(p => {
+                const atual = PRECOS[p.ativo] || (D.precos || {})[p.ativo] || null;
+                return Object.assign(p, { pm: p.qtd ? p.custo / p.qtd : 0, atual, valor: atual ? atual * p.qtd : p.custo });
+            });
+        }
+        function rendaFixa() {
+            const val = (x, f) => (x && typeof x === 'object' ? x.value : x) || f;
+            const cdi = val(LX.data && LX.data.cdi, LX.config.fallback.cdi), ipca = val(LX.data && LX.data.ipca12m, LX.config.fallback.ipca12m || 4.5);
+            const hoje = LX.todayBRT();
+            return D.invest.filter(x => CLASSES[x.classe][1] === 'rf').map(l => {
+                const ano = l.idx === 'cdi' ? cdi * l.taxa / 100 : l.idx === 'pre' ? l.taxa : ((1 + ipca / 100) * (1 + l.taxa / 100) - 1) * 100;
+                const du = Math.max(0, LX.businessDaysBetween(LX.parseISO(l.data), hoje)), dc = Math.max(0, Math.round((hoje - LX.parseISO(l.data)) / 864e5));
+                const bruto = l.valor * Math.pow(1 + ano / 100, du / 252), ganho = bruto - l.valor;
+                const ir = ISENTO[l.classe] ? 0 : dc <= 180 ? 22.5 : dc <= 360 ? 20 : dc <= 720 ? 17.5 : 15;
+                return Object.assign({}, l, { ano, du, bruto, liquido: l.valor + ganho * (1 - ir / 100), ir });
+            });
+        }
+        function rInvest() {
+            const pos = posicoes(), rf = rendaFixa();
+            const porClasse = {};
+            pos.forEach(p => { if (p.qtd > 1e-9) porClasse[p.classe] = (porClasse[p.classe] || 0) + p.valor; });
+            rf.forEach(r => { porClasse[r.classe] = (porClasse[r.classe] || 0) + r.liquido; });
+            const total = Object.values(porClasse).reduce((a, b) => a + b, 0);
+            $('iv-alocacao').innerHTML = `<div class="flex flex-wrap items-baseline justify-between gap-2"><span class="term-label">Patrimônio estimado</span><strong class="font-mono text-2xl">${brl(total)}</strong></div>` +
+                (total ? `<div class="mt-3 space-y-1.5">${Object.entries(porClasse).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<div class="font-mono text-xs"><div class="flex justify-between"><span>${CLASSES[k][0]}</span><span>${brl(v)} · ${LX.num(v / total * 100, 1)}%</span></div>${barra(v, total, 'bg-lect-teal')}</div>`).join('')}</div>` : '<p class="text-sm text-slate-500 mt-2">Lance a primeira compra ou aplicação ao lado.</p>');
+            $('iv-posicoes').innerHTML = `<strong class="font-display">Ações, FIIs, ETFs e outros</strong>` + (pos.length ? `<table class="w-full mt-2 font-mono text-xs tabular-nums"><thead class="text-slate-500 text-left"><tr><th class="py-1 pr-2">Ativo</th><th class="pr-2">Qtd.</th><th class="pr-2">Preço médio</th><th class="pr-2">Atual</th><th class="pr-2">Valor</th><th class="pr-2">Resultado</th></tr></thead><tbody>${pos.map(p => { const res = p.atual ? (p.atual - p.pm) * p.qtd : null; return `<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="py-1.5 pr-2 font-bold">${esc(p.ativo)}</td><td class="pr-2">${LX.num(p.qtd, p.qtd % 1 ? 4 : 0)}</td><td class="pr-2">${brl(p.pm)}</td><td class="pr-2"><button type="button" data-preco="${esc(p.ativo)}" class="underline decoration-dotted" title="${PRECOS[p.ativo] ? 'Cotação do site (atraso ~30 min)' : 'Toque para informar o preço atual'}">${p.atual ? brl(p.atual) : 'informar'}</button></td><td class="pr-2">${brl(p.valor)}</td><td class="pr-2 ${res == null ? '' : sc(res)}">${res == null ? '—' : brl(res) + ' (' + LX.num(res / p.custo * 100, 1) + '%)'}${p.realizado ? `<span class="block text-[10px] text-slate-500">realizado ${brl(p.realizado)}</span>` : ''}</td></tr>`; }).join('')}</tbody></table><p class="text-[11px] text-slate-500 mt-2">Preço atual: cotação do site quando o ativo está entre os acompanhados (atraso ~30 min); nos outros, toque em "informar".</p>` : '<p class="text-sm text-slate-500 mt-2">Nenhuma posição.</p>');
+            $('iv-rf').innerHTML = `<strong class="font-display">Renda fixa (CDB, LCA, LCI, Tesouro…)</strong>` + (rf.length ? `<table class="w-full mt-2 font-mono text-xs tabular-nums"><thead class="text-slate-500 text-left"><tr><th class="py-1 pr-2">Título</th><th class="pr-2">Aplicado</th><th class="pr-2">Taxa</th><th class="pr-2">Vence</th><th class="pr-2">Hoje (bruto)</th><th class="pr-2">Líquido est.</th></tr></thead><tbody>${rf.map(r => `<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="py-1.5 pr-2 font-bold">${esc(r.nome)}<span class="block text-[10px] font-normal text-slate-500">${CLASSES[r.classe][0]}${ISENTO[r.classe] ? ' · isento de IR' : ' · IR ' + LX.num(r.ir, 1) + '%'}</span></td><td class="pr-2">${brl(r.valor)}</td><td class="pr-2">${r.idx === 'cdi' ? LX.num(r.taxa, 0) + '% CDI' : r.idx === 'pre' ? LX.num(r.taxa, 2) + '% a.a.' : 'IPCA+' + LX.num(r.taxa, 2) + '%'}</td><td class="pr-2">${r.venc ? LX.brShort(LX.parseISO(r.venc)) + '/' + r.venc.slice(2, 4) : '—'}</td><td class="pr-2">${brl(r.bruto)}</td><td class="pr-2 text-emerald-600 dark:text-emerald-400">${brl(r.liquido)}</td></tr>`).join('')}</tbody></table><p class="text-[11px] text-slate-500 mt-2">Estimativa com CDI e IPCA atuais (Banco Central) e IR regressivo pelo prazo desde a aplicação. Não inclui IOF nem marcação a mercado: o extrato da corretora é a referência.</p>` : '<p class="text-sm text-slate-500 mt-2">Nenhuma aplicação.</p>');
+            $('iv-hist').innerHTML = D.invest.length ? `<table class="w-full font-mono text-[11px]">${[...D.invest].sort((a, b) => b.data.localeCompare(a.data)).map(l => `<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="py-1 pr-2">${LX.brShort(LX.parseISO(l.data))}/${l.data.slice(2, 4)}</td><td class="pr-2">${CLASSES[l.classe][0]}</td><td class="pr-2 font-bold">${esc(l.ativo || l.nome)}</td><td class="pr-2">${l.ativo ? (l.op === 'c' ? 'compra ' : 'venda ') + LX.num(l.qtd, l.qtd % 1 ? 4 : 0) + ' × ' + brl(l.preco) : brl(l.valor)}</td><td class="text-right"><button type="button" data-apagar-inv="${l.id}" class="text-slate-400 hover:text-rose-500" aria-label="Apagar"><i class="ph-bold ph-trash"></i></button></td></tr>`).join('')}</table>` : '<p class="text-sm text-slate-500">Nada lançado.</p>';
+        }
+        $('aba-invest').addEventListener('click', async ev => {
+            const ap = ev.target.closest('[data-apagar-inv]'); if (ap && confirm('Apagar este lançamento?')) { D.invest = D.invest.filter(l => l.id !== ap.dataset.apagarInv); await salvar(); rInvest(); return; }
+            const pr = ev.target.closest('[data-preco]'); if (pr) { const v = parseFloat(String(prompt(`Preço atual de ${pr.dataset.preco} (R$):`) || '').replace(',', '.')); if (v > 0) { D.precos = D.precos || {}; D.precos[pr.dataset.preco] = v; await salvar(); rInvest(); } }
+        });
+
+        /* ================= RESUMO ================= */
+        function rResumo() {
+            const ks = D.contas.map(c => [c, calcConta(c)]), mes = hojeISO().slice(0, 7);
+            const doMes = ks.reduce((a, [c]) => a + (c.dias || []).filter(d => d.data.startsWith(mes)).reduce((s, d) => s + (+d.res || 0), 0), 0);
+            const hoje = ks.reduce((a, [, k]) => a + k.hojeRes, 0);
+            const pos = posicoes(), rf = rendaFixa(), pat = pos.reduce((a, p) => a + (p.qtd > 1e-9 ? p.valor : 0), 0) + rf.reduce((a, r) => a + r.liquido, 0);
+            const card = (rot, val, sub = '') => `<div class="term-panel p-4"><span class="term-label">${rot}</span><strong class="block font-mono text-2xl mt-1">${val}</strong><span class="text-[11px] text-slate-500">${sub}</span></div>`;
+            $('aba-resumo').innerHTML = `<div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                ${card('Trading hoje', `<span class="${sc(hoje)}">${brl(hoje)}</span>`, 'soma de todas as contas')}
+                ${card('Trading no mês', `<span class="${sc(doMes)}">${brl(doMes)}</span>`, D.contas.length + ' conta(s)')}
+                ${card('Investimentos', brl(pat), 'estimativa')}
+                ${card('Contas em risco', String(ks.filter(([, k]) => /perto|quebrada/i.test(k.status[0])).length), 'perto ou além do limite de perda')}
+            </div>
+            <div class="term-panel mt-4"><div class="px-4 py-3 border-b border-slate-200 dark:border-lect-borderDark font-display font-bold">Contas e mesas</div>
+            ${ks.length ? `<div class="divide-y divide-slate-200 dark:divide-lect-borderDark">${ks.map(([c, k]) => `<div class="px-4 py-2.5 flex flex-wrap items-center justify-between gap-2 font-mono text-xs"><span><b class="font-sans text-sm">${esc(c.nome)}</b> <span class="text-slate-500">· ${esc(c.mesa)}</span></span><span class="${sc(k.saldo)} font-bold">${brl(k.saldo)}</span><span class="${k.status[1]} font-bold">● ${k.status[0]}</span></div>`).join('')}</div>` : '<p class="p-4 text-sm text-slate-500">Nenhuma conta. Vá em <b>Contas e mesas</b>.</p>'}</div>
+            <p class="text-[11px] text-slate-500 mt-3">Ferramenta de organização pessoal, em teste. Não é recomendação de investimento. Os limites das mesas são os que você cadastrou: o regulamento da mesa é que vale.</p>`;
+        }
+    })();
+    </script>
+</body>
+</html>
