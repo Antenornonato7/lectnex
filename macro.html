@@ -31,14 +31,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-macro.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Macro & Juros: Copom, Focus e Curva DI | Lectnex", "url": "https://lectnex.com.br/macro.html", "description": "Entenda o porquê do preço: ciclo da Selic, Boletim Focus ao vivo, leitura da curva DI, regimes de risco e o mapa “E se…?” de como cada notícia chega ao WIN e ao WDO.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261113e">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261113f">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261113e">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261113f">
 </head>
 <body data-page="macro" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -158,6 +158,12 @@
                         <p id="ct-read" class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed"></p>
                     </div>
                 </div>
+                <!-- Linha do tempo: taxa do vencimento mais longo nos últimos 30 dias, com os eventos que mexeram nos juros -->
+                <div id="ct-tl-wrap" class="border-t border-slate-200 dark:border-lect-borderDark px-5 py-4">
+                    <div class="flex flex-wrap items-baseline justify-between gap-2"><span class="term-label font-bold !mb-0">Por que os juros andaram · <span id="ct-tl-t"></span></span><span class="font-mono text-[10px] text-slate-500">taxas da manhã do Tesouro · faixa sombreada = período comparado</span></div>
+                    <div id="ct-tl" class="mt-2"></div>
+                    <ol id="ct-tl-ev" class="mt-2 flex flex-wrap gap-x-4 gap-y-1.5 font-mono text-[11px] text-slate-600 dark:text-slate-300"></ol>
+                </div>
                 <div id="be-wrap" class="hidden border-t border-slate-200 dark:border-lect-borderDark p-5">
                     <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
                         <div><span class="term-label text-lect-orange font-bold">INFLAÇÃO IMPLÍCITA (BREAKEVEN)</span><h4 class="font-display font-bold leading-tight" id="be-title">Quanta inflação o mercado está precificando?</h4></div>
@@ -241,7 +247,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261113e"></script>
+    <script src="assets/lectnex-core.js?v=20261113f"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -473,10 +479,54 @@
             const indisp = [1, 5, 21].filter(n => datas.length <= n).map(n => ({ 1: 'ontem', 5: '1 semana', 21: '1 mês' })[n]);
             if (indisp.length && !semComp) $('ct-top-l').insertAdjacentHTML('beforeend', `<li class="px-3 py-2 font-sans text-[11px] text-slate-500">Comparação com ${indisp.join(' e ')} indisponível: histórico ainda curto.</li>`);
             document.querySelectorAll('[data-ct-c]').forEach(b => b.title = b.disabled ? 'Comparação indisponível: histórico ainda curto' : '');
+            renderTL(datas, dH, dA);
             renderBE(datas, dH, dA);
             const fH = D.historico[dH];
             $('ct-src').textContent = `Fonte: Tesouro Nacional (taxas de compra do Tesouro Direto${fH.fonte === 'td' ? ', ' + (fH.hora || '') : ', abertura do dia'}) · ${lbl(dH)} vs ${lbl(dA)} · títulos sem cupom (Prefixado e IPCA+). A curva DI da B3 é parecida, mas não idêntica.`;
         }
+        // Eventos que mexem nos juros. Copom e IPCA vêm da agenda do site; eleições e IPCA passados ficam aqui (com fonte).
+        const EVENTOS_FIXOS = [
+            ['2026-10-05', 'eleicao', '1º turno', 'Juros caem mais de 1 p.p. com o resultado do 1º turno (DGABC, 05/10/2026)'],
+            ['2026-10-09', 'ipca', 'IPCA set.', 'IPCA de setembro: +0,82%, puxado pela conta de luz (IBGE, 09/10/2026)'],
+            ['2026-10-26', 'eleicao', '2º turno', 'Juros disparam após a reeleição no 2º turno: Prefixado 2032 +2,61 p.p. (InvestNews, 26/10/2026)']
+        ];
+        function eventos() {
+            const ev = EVENTOS_FIXOS.slice(), uteis = d => { let x = LX.addDays(LX.parseISO(d), 1); while (!LX.isBusinessDay(x)) x = LX.addDays(x, 1); return LX.iso(x); };
+            // decisão do Copom sai depois das 18h30: o efeito aparece no pregão seguinte
+            (LX.copom2026 || []).filter(c => c[1]).forEach(c => ev.push([uteis(c[0]), 'copom', 'Copom', `Copom de ${LX.brShort(LX.parseISO(c[0]))}: Selic ${c[1]}`]));
+            (LX.agendaFixed || []).filter(e => e[1] === 'inflacao' && /^IPCA de /.test(e[2]) && !ev.some(x => x[0] === e[0])).forEach(e => ev.push([e[0], 'ipca', 'IPCA', e[2]]));
+            return ev.sort((a, b) => a[0] < b[0] ? -1 : 1);
+        }
+        function renderTL(datas, dH, dA) {
+            const H = D.historico[dH][k], alvo = H[H.length - 1]; if (!alvo) return;
+            const serie = datas.map(d => { const p = (D.historico[d][k] || []).find(x => x.venc === alvo.venc); return p ? [d, p.taxa] : null; }).filter(Boolean);
+            if (serie.length < 3) { $('ct-tl-wrap').classList.add('hidden'); return; }
+            $('ct-tl-wrap').classList.remove('hidden');
+            const MES3 = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+            $('ct-tl-t').textContent = `${k === 'pre' ? 'Prefixado' : 'IPCA+'} ${MES3[+alvo.venc.slice(5, 7) - 1]}/${alvo.venc.slice(0, 4)}, últimos ${serie.length} pregões`;
+            const narrow = ($('ct-tl').clientWidth || 640) < 520, W = narrow ? 360 : 900, Hh = narrow ? 150 : 140, L = 38, R = 10, T = 22, B = 20;
+            const vs = serie.map(x => x[1]), y0 = Math.floor(Math.min(...vs) * 2) / 2, y1 = Math.ceil(Math.max(...vs) * 2) / 2 || y0 + 0.5;
+            const n = serie.length, X = i => L + i / (n - 1) * (W - L - R), Y = v => T + (y1 - v) / ((y1 - y0) || 1) * (Hh - T - B);
+            const idx = d => { let i = serie.findIndex(x => x[0] >= d); return i < 0 ? -1 : i; };
+            const iA = idx(dA), iH = idx(dH);
+            let svg = `<svg viewBox="0 0 ${W} ${Hh}" class="w-full h-auto font-mono" role="img" aria-label="Taxa do vencimento mais longo nos últimos pregões, com eventos marcados">`;
+            if (iA >= 0 && iH > iA) svg += `<rect x="${X(iA)}" y="${T - 4}" width="${X(iH) - X(iA)}" height="${Hh - T - B + 4}" class="fill-lect-teal/10"/>`;
+            for (let v = y0; v <= y1 + 1e-9; v += (y1 - y0) > 2 ? 1 : 0.5) svg += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" class="stroke-slate-200 dark:stroke-slate-700"/><text x="${L - 5}" y="${Y(v) + 3}" text-anchor="end" font-size="10" class="fill-slate-400">${LX.num(v, 1)}</text>`;
+            [0, Math.floor((n - 1) / 2), n - 1].forEach(i => svg += `<text x="${X(i)}" y="${Hh - 5}" text-anchor="${i === 0 ? 'start' : i === n - 1 ? 'end' : 'middle'}" font-size="10" class="fill-slate-400">${lbl(serie[i][0])}</text>`);
+            const COR = { eleicao: '#F39200', copom: '#6366F1', ipca: '#E11D48' };
+            const evs = eventos().filter(e => e[0] >= serie[0][0] && e[0] <= serie[n - 1][0]).map((e, j) => ({ e, i: idx(e[0]), num: j + 1 }));
+            evs.forEach(({ e, i, num }) => {
+                const ant = i > 0 ? serie[i - 1][1] : null, mv = ant != null ? serie[i][1] - ant : null;
+                svg += `<g><title>${LX.esc(e[3])}${mv != null ? ` · ${bp(mv)} no dia` : ''}</title><line x1="${X(i)}" x2="${X(i)}" y1="${T - 4}" y2="${Hh - B}" stroke="${COR[e[1]]}" stroke-dasharray="3 3" stroke-width="1.5"/><circle cx="${X(i)}" cy="${T - 11}" r="8" fill="${COR[e[1]]}"/><text x="${X(i)}" y="${T - 7.5}" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">${num}</text></g>`;
+            });
+            svg += `<polyline fill="none" class="stroke-[#009988] dark:stroke-[#00B4A2]" stroke-width="2.2" stroke-linejoin="round" points="${serie.map((x, i) => X(i).toFixed(1) + ',' + Y(x[1]).toFixed(1)).join(' ')}"/>`;
+            svg += `<circle cx="${X(n - 1)}" cy="${Y(vs[n - 1])}" r="3.5" class="fill-[#009988] dark:fill-[#00B4A2]"/></svg>`;
+            $('ct-tl').innerHTML = svg;
+            $('ct-tl-ev').innerHTML = evs.length ? evs.map(({ e, i, num }) => { const ant = i > 0 ? serie[i - 1][1] : null, mv = ant != null ? serie[i][1] - ant : null;
+                return `<li class="flex items-center gap-1.5" title="${LX.esc(e[3])}"><span class="w-4 h-4 rounded-full grid place-items-center text-[9px] font-bold text-white" style="background:${COR[e[1]]}">${num}</span>${lbl(e[0])} ${e[2]}${mv != null ? ` <strong class="${cls(mv)}">${bp(mv)}</strong>` : ''}</li>`; }).join('')
+                : '<li class="text-slate-500">Nenhum evento marcado neste período.</li>';
+        }
+        const cls = v => v > 0.005 ? 'text-rose-600 dark:text-rose-400' : v < -0.005 ? 'text-emerald-600 dark:text-emerald-400' : '';
         // Inflação implícita: interpola a curva real (IPCA+) nos prazos dos prefixados
         function interp(pts, a) {
             if (!pts.length) return null;
