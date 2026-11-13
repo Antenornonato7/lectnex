@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T16:08-03:00",
+  "atualizado_em": "2026-11-13T16:10-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -287,11 +287,11 @@
     ],
     [
      "15:50",
-     172106.0
+     172111.0
     ],
     [
-     "15:53",
-     172089.0
+     "15:55",
+     172107.0
     ]
    ]
   },
@@ -640,11 +640,11 @@
     ],
     [
      "16:05",
-     5.6476
+     5.6471
     ],
     [
-     "16:08",
-     5.6488
+     "16:10",
+     5.6478
     ]
    ]
   },
@@ -1304,6 +1304,19 @@
     "dolar30": 0.06
    },
    {
+    "hora": "15:00",
+    "titulo": "Is a bottom in for the Nasdaq-100? Charts to watch",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/13/is-a-bottom-in-for-the-nasdaq-100-charts-to-watch.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": 0.07,
+    "dolar30": -0.0
+   },
+   {
     "hora": "15:13",
     "titulo": "Pacote fiscal quer gasto crescendo abaixo de 2%, mas sem afetar política do salário mínimo; entenda",
     "fonte": "Estadão",
@@ -1330,7 +1343,7 @@
      "RAIZ4",
      "SMTO3"
     ],
-    "ibov30": -0.19,
+    "ibov30": -0.18,
     "dolar30": 0.07
    },
    {
@@ -2188,6 +2201,17 @@
    "tickers": []
   },
   {
+   "titulo": "Is a bottom in for the Nasdaq-100? Charts to watch",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/is-a-bottom-in-for-the-nasdaq-100-charts-to-watch.html",
+   "publicado": "2026-11-13T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Pacote fiscal quer gasto crescendo abaixo de 2%, mas sem afetar política do salário mínimo; entenda",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/pacote-fiscal-quer-gasto-crescendo-abaixo-de-2-mas-sem-afetar-politica-do-salario-minimo-entenda/",
@@ -2254,7 +2278,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T16:08-03:00",
+ "atualizado_em": "2026-11-13T16:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2303,6 +2327,17 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Is a bottom in for the Nasdaq-100? Charts to watch",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/is-a-bottom-in-for-the-nasdaq-100-charts-to-watch.html",
+   "publicado": "2026-11-13T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -2399,18 +2434,6 @@
    "tickers": [
     "BRKM5"
    ]
-  },
-  {
-   "titulo": "Após bancos privados, Caixa faz as contas para subir taxa de juros do crédito imobiliário",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/apos-bancos-privados-caixa-faz-as-contas-para-subir-taxa-de-juros-do-credito-imobiliario.shtml",
-   "publicado": "2026-11-13T13:09-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
