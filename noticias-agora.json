@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T13:55-03:00",
+  "atualizado_em": "2026-11-13T13:58-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -183,7 +183,11 @@
     ],
     [
      "13:40",
-     172430.0
+     172386.0
+    ],
+    [
+     "13:43",
+     172373.0
     ]
    ]
   },
@@ -428,7 +432,11 @@
     ],
     [
      "13:55",
-     5.6408
+     5.6413
+    ],
+    [
+     "13:58",
+     5.6418
     ]
    ]
   },
@@ -932,7 +940,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.07
    },
    {
     "hora": "13:30",
@@ -946,7 +954,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.07
    },
    {
     "hora": "13:45",
@@ -960,6 +968,19 @@
     "tickers": [
      "BRKM5"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:54",
+    "titulo": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1695,6 +1716,17 @@
    "tickers": [
     "BRKM5"
    ]
+  },
+  {
+   "titulo": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
+   "publicado": "2026-11-13T13:54-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1724,7 +1756,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T13:55-03:00",
+ "atualizado_em": "2026-11-13T13:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1739,6 +1771,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
+   "publicado": "2026-11-13T13:54-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Braskem vê margens menores em 2027 e 'segue engajada' em acordo com credores, diz diretoria",
    "fonte": "Folha",
@@ -1891,19 +1934,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa e dólar sobem com pacote fiscal e dados do Brasil e EUA no radar",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVndDMzlIbWVDWE9DOFRmYXJGTDNMNHRWbGJYSXRFcXY2VXhsc1QtXzhtM3Z3QnBQWlJVTDVRVFl3TGNmcHVvNzR2ZHFYbng0bmZTYmpFOXgtbjhFU3pjUWVfUmFDNEsycFA1UUpvbnlTZ3g2ZXNNcmNFcmlhOGFXNXc4ejZTMnJNNm55MDFxcWFwYVV6MlNYMFR6Yl9yTzI4d2t1M3Zn?oc=5",
-   "publicado": "2026-11-13T11:58-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
     "DI"
    ],
    "tickers": []
