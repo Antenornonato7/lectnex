@@ -102,6 +102,53 @@ def valida(d, foto):
     return limpa
 
 
+# Palavras que ligam uma manchete aos juros (peso) e o rótulo curto que vai no gráfico
+CHAVES = [(r'elei|turno|urna|apura', 4, 'Eleição'), (r'copom|selic|banco central|galípolo', 4, 'Copom'),
+          (r'\bipca|inflaç', 3, 'IPCA'), (r'fiscal|arcabouço|gastos|dívida|orçament|tesouro', 3, 'Fiscal'),
+          (r'juros|\bdi\b|taxas futuras|curva|treasur', 2, None), (r'payroll|fed\b|fomc|powell', 2, 'Exterior'),
+          (r'dólar|câmbio', 1, None)]
+
+
+def explicar_saltos(hist, minimo=0.75):
+    """Para cada dia em que a curva prefixada andou >= 0,75 p.p. em média, procura nas manchetes guardadas daquele dia
+    (data/dias/AAAA-MM-DD.json, as mesmas do "O que mexeu hoje") a que melhor explica o salto. Sem IA paga: pontua
+    palavras ligadas a juros, impacto da manchete e horário (a taxa do Tesouro é a da manhã)."""
+    import re
+    eventos, ds = [], list(hist)
+    for a, b in zip(ds, ds[1:]):
+        ant = {p['venc']: p['taxa'] for p in hist[a].get('pre', [])}
+        difs = [p['taxa'] - ant[p['venc']] for p in hist[b].get('pre', []) if p['venc'] in ant]
+        if not difs or abs(sum(difs) / len(difs)) < minimo:
+            continue
+        media = sum(difs) / len(difs)
+        melhor, nota_melhor = None, 0
+        try:
+            dia = json.load(open(f'data/dias/{b}.json', encoding='utf-8'))
+        except Exception:
+            dia = {}
+        for m in dia.get('marcadores', []) or []:
+            t = (m.get('titulo') or '').lower()
+            nota, rot = 0, None
+            for rx, peso, r in CHAVES:
+                if re.search(rx, t):
+                    nota += peso
+                    rot = rot or r
+            if not nota:
+                continue
+            nota += {'alto': 3, 'medio': 1}.get(m.get('impacto'), 0) + (2 if 'DI' in (m.get('ativos') or []) else 0)
+            nota += 1 if (m.get('hora') or '99') <= '10:30' else 0
+            if nota > nota_melhor:
+                melhor, nota_melhor = {**m, 'rotulo': rot}, nota
+        ev = {'data': b, 'media_pp': round(media, 2), 'tipo': 'auto'}
+        if melhor and nota_melhor >= 4:
+            ev.update(rotulo=melhor['rotulo'] or 'Juros', motivo=melhor['titulo'], fonte=melhor.get('fonte'), url=melhor.get('url'), hora=melhor.get('hora'))
+        else:
+            ev.update(rotulo='Salto', motivo=None)
+        eventos.append(ev)
+        note('notice', f'Curva: salto em {b} ({media:+.2f} p.p.) · motivo: {ev.get("motivo") or "sem manchete forte guardada"}')
+    return eventos
+
+
 def main():
     try:
         atual = json.load(open(SAIDA, encoding='utf-8'))
@@ -133,14 +180,9 @@ def main():
         for k in ('pre', 'ipca'):
             foto[k] = sorted(foto.get(k, []), key=lambda p: p['anos'])
     hist = dict(sorted(hist.items())[-30:])
-    # movimento forte: só registra no log (o site explica o salto ao comparar períodos)
-    ds = list(hist)
-    for a, b in zip(ds, ds[1:]):
-        ant = {p['venc']: p['taxa'] for p in hist[a]['pre']}
-        difs = [p['taxa'] - ant[p['venc']] for p in hist[b]['pre'] if p['venc'] in ant]
-        if difs and abs(sum(difs) / len(difs)) >= 1:
-            note('notice', f'Curva: movimento forte em {b} ({sum(difs) / len(difs):+.2f} p.p. em média), mantido.')
-    json.dump({'atualizado_em': dt.datetime.now(BRT).isoformat(timespec='seconds'), 'fontes': fontes, 'historico': hist},
+    # movimento forte é mantido; o motivo provável sai das manchetes guardadas do dia
+    eventos = explicar_saltos(hist)
+    json.dump({'atualizado_em': dt.datetime.now(BRT).isoformat(timespec='seconds'), 'fontes': fontes, 'historico': hist, 'eventos': eventos},
               open(SAIDA, 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     ult = list(hist)[-2:]
     note('notice', f'Curva: {len(hist)} dias · últimos {ult} · fontes {fontes} · {len(hist[ult[-1]]["pre"])} prefixados')
