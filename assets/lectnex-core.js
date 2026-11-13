@@ -610,6 +610,7 @@
         ['mercado', 'COMECE', 'Comece por aqui', 'O Lectnex em 1 minuto: as principais ferramentas', 'comece.html', 'ph-rocket-launch', 'comece inicio novo tour guia como usar'],
         ['mercado', 'FOCUS', 'Boletim Focus e Copom', 'Expectativas do mercado e decisões da Selic', 'macro.html#juros', 'ph-trend-up', 'focus expectativa juros curva selic copom'],
         ['mercado', 'FX', 'Câmbio e cripto ao vivo', 'Dólar, euro, bitcoin, PTAX', 'index.html#cambio', 'ph-arrows-left-right', 'cambio dolar euro bitcoin cripto ptax moeda'],
+        ['mercado', 'JUROS', 'Dias que mexeram nos juros', 'Cada salto forte da curva e o motivo do dia', 'juros/', 'ph-lightning', 'juros dispararam despencaram hoje salto curva di eleicao copom'],
         ['mercado', 'CURVA', 'Curva de juros (DI1)', 'Como ler a curva e os vértices vigentes', 'macro.html#curva', 'ph-chart-line', 'curva juros di di1 vertice estrutura termo'],
         ['mercado', 'ESE', 'E se…? Mapa de reações', 'Como Copom, IPCA, Fed e fiscal chegam ao WIN e WDO', 'macro.html#educacao', 'ph-git-branch', 'cenario reacao noticia transmissao copom ipca fed payroll fiscal china e se'],
         ['mercado', 'REGIME', 'Regimes de risco', 'Risk-on, risk-off e como os ativos reagem', 'macro.html#regimes', 'ph-gauge', 'regime risco risk on off aversao apetite intermercado'],
