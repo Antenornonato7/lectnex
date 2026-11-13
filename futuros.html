@@ -31,7 +31,7 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://lectnex.com.br/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261112a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261112b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
@@ -130,12 +130,17 @@
                         <i class="ph-duotone ph-notebook text-2xl text-lect-teal"></i>
                         <div><span class="term-label font-bold text-lect-teal block">DIÁRIO DE TRADES · IR AUTOMÁTICO</span><strong class="font-display text-lg">Seu histórico, sua curva e o DARF do mês</strong></div>
                     </div>
-                    <div class="flex items-center gap-1 font-mono text-xs">
+                    <div class="flex flex-wrap items-center gap-2 font-mono text-xs">
+                        <label class="sr-only" for="dv-filtro">Conta ou mesa</label>
+                        <select id="dv-filtro" class="lx-input !py-1.5 !text-xs !w-auto max-w-[190px]" title="Ver uma conta ou mesa"><option value="">Todas as contas</option></select>
+                        <div class="flex items-center gap-1">
                         <button id="dv-prev" type="button" class="px-2 py-1.5 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal" aria-label="Mês anterior"><i class="ph-bold ph-caret-left"></i></button>
                         <strong id="dv-month" class="px-3 py-1.5 min-w-[130px] text-center bg-slate-100 dark:bg-lect-bgDark capitalize">—</strong>
                         <button id="dv-next" type="button" class="px-2 py-1.5 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal" aria-label="Próximo mês"><i class="ph-bold ph-caret-right"></i></button>
+                        </div>
                     </div>
                 </div>
+                <div id="dv-conta-info" class="hidden px-5 py-2 border-b border-slate-200 dark:border-lect-borderDark font-mono text-xs"></div>
                 <div id="dv-kpis" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-slate-200 dark:bg-lect-borderDark border-b border-slate-200 dark:border-lect-borderDark"></div>
                 <div id="dv-disc" class="hidden border-b border-slate-200 dark:border-lect-borderDark"></div>
                 <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
@@ -164,6 +169,7 @@
                             <label><span class="term-label block mb-1">Ativo</span><select id="dv-asset" class="lx-input"><option>WIN</option><option>WDO</option><option>Outro</option></select></label>
                             <label><span class="term-label block mb-1">Resultado bruto (R$)</span><input id="dv-r" type="number" step="10" placeholder="ex.: 120 ou -80" class="lx-input"></label>
                             <label><span class="term-label block mb-1">Custos (R$)</span><input id="dv-c" type="number" step="0.5" min="0" placeholder="0" class="lx-input"></label>
+                            <label class="col-span-2"><span class="term-label block mb-1">Conta / mesa</span><input id="dv-m" type="text" maxlength="40" list="dv-contas" placeholder="ex.: Zero7, Euroinvest Pleno, conta própria" class="lx-input"><datalist id="dv-contas"></datalist></label>
                             <label class="col-span-2"><span class="term-label block mb-1">Setup / anotação</span><input id="dv-s" type="text" maxlength="80" placeholder="ex.: rompimento da máxima, entrei atrasado" class="lx-input"></label>
                         </div>
                         <button id="dv-add" type="button" class="w-full mt-2 py-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold"><i class="ph-bold ph-plus"></i> ADICIONAR AO DIÁRIO</button>
@@ -178,7 +184,7 @@
                             <label class="px-2.5 py-1 border border-slate-300 dark:border-lect-borderDark hover:border-lect-teal cursor-pointer"><i class="ph-bold ph-upload-simple"></i> Restaurar<input id="dv-restore" type="file" accept=".json,application/json" class="hidden"></label>
                         </div>
                     </div>
-                    <div class="overflow-x-auto max-h-80 thin-scroll"><table class="w-full min-w-[620px] font-mono text-xs"><thead class="quote-head uppercase sticky top-0"><tr><th class="text-left px-5 py-2">Data</th><th class="text-left px-2">Hora</th><th class="text-left px-2">Ativo</th><th class="text-right px-2">Bruto</th><th class="text-right px-2">Custos</th><th class="text-right px-2">Líquido</th><th class="text-left px-3">Setup</th><th class="px-2"></th></tr></thead><tbody id="dv-list" class="divide-y divide-slate-100 dark:divide-lect-borderDark"></tbody></table></div>
+                    <div class="overflow-x-auto max-h-80 thin-scroll"><table class="w-full min-w-[720px] font-mono text-xs"><thead class="quote-head uppercase sticky top-0"><tr><th class="text-left px-5 py-2">Data</th><th class="text-left px-2">Hora</th><th class="text-left px-2">Ativo</th><th class="text-left px-2">Conta</th><th class="text-right px-2">Bruto</th><th class="text-right px-2">Custos</th><th class="text-right px-2">Líquido</th><th class="text-left px-3">Setup</th><th class="px-2"></th></tr></thead><tbody id="dv-list" class="divide-y divide-slate-100 dark:divide-lect-borderDark"></tbody></table></div>
                 </div>
                 <p class="px-5 py-2 border-t border-slate-200 dark:border-lect-borderDark text-[10px] text-slate-500 font-mono">Salvo só neste navegador — faça backup de vez em quando. O cálculo do DARF é uma estimativa educacional; confira com a nota de corretagem e, se precisar, com um contador.</p>
             </section>
@@ -529,7 +535,7 @@
                 L.cap = +$('pd-cap').value || 0; L.maxloss = +$('pd-maxloss').value || 0; L.goal = +$('pd-goal').value || 0; L.maxtr = +$('pd-maxtr').value || 0;
                 pdSave(st); renderScore();
             }));
-            const add = () => { const v = parseFloat($('pd-res').value); if (!isFinite(v) || v === 0) return; const h = LX.nowBRT(); day.trades.push({ r: v, c: 0, a: 'WIN', t: String(h.getHours()).padStart(2, '0') + ':' + String(h.getMinutes()).padStart(2, '0') }); $('pd-res').value = ''; pdSave(st); renderScore(); dvRender(); };
+            const add = () => { const v = parseFloat($('pd-res').value); if (!isFinite(v) || v === 0) return; const h = LX.nowBRT(); day.trades.push(Object.assign({ r: v, c: 0, a: 'WIN', t: String(h.getHours()).padStart(2, '0') + ':' + String(h.getMinutes()).padStart(2, '0') }, (st.dvConta || st.ultConta) ? { m: st.dvConta || st.ultConta } : {})); $('pd-res').value = ''; pdSave(st); renderScore(); dvRender(); };
             $('pd-add').onclick = add; $('pd-res').addEventListener('keydown', e => { if (e.key === 'Enter') add(); });
             $('pd-undo').onclick = () => { day.trades.pop(); pdSave(st); renderScore(); dvRender(); };
 
@@ -573,16 +579,42 @@
                 }
                 return res;
             }
+            // contas/mesas: sugestões fixas + as que você já usou; o filtro vale para resultado, curva, calendário e lista
+            const MESAS_SUG = ['Conta própria', 'Euroinvest', 'Grupo Mide', 'Zero7', 'StarDesk', 'Axia'];
+            const contaDe = t => (typeof t === 'object' && t && t.m) || '';
+            const daConta = t => !st.dvConta || (st.dvConta === '__sem' ? !contaDe(t) : contaDe(t) === st.dvConta);
+            function dvContas() {
+                const usadas = [...new Set(Object.values(st.days).flatMap(d => (d.trades || []).map(contaDe)).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt'));
+                const temSem = Object.values(st.days).some(d => (d.trades || []).some(t => !contaDe(t)));
+                if (st.dvConta && st.dvConta !== '__sem' && !usadas.includes(st.dvConta)) st.dvConta = '';
+                $('dv-filtro').innerHTML = '<option value="">Todas as contas</option>' + usadas.map(c => `<option value="${LX.esc(c)}">${LX.esc(c)}</option>`).join('') + (usadas.length && temSem ? '<option value="__sem">(sem conta)</option>' : '');
+                $('dv-filtro').value = st.dvConta || '';
+                $('dv-filtro').classList.toggle('hidden', !usadas.length);
+                $('dv-contas').innerHTML = [...new Set([...usadas, ...MESAS_SUG])].map(c => `<option value="${LX.esc(c)}">`).join('');
+            }
             function dvRender() {
+                dvContas();
                 const [y, m] = dvYM.split('-').map(Number);
                 $('dv-month').textContent = MES[m - 1] + ' ' + y;
-                const keys = Object.keys(st.days).filter(k => k.startsWith(dvYM) && (st.days[k].trades || []).length).sort();
-                const rows = keys.flatMap(k => st.days[k].trades.map((t, i) => Object.assign({ d: k, i }, norm(t))));
+                const keys = Object.keys(st.days).filter(k => k.startsWith(dvYM) && (st.days[k].trades || []).some(daConta)).sort();
+                const rows = keys.flatMap(k => st.days[k].trades.map((t, i) => Object.assign({ d: k, i }, norm(t))).filter(daConta));
+                // faixa da conta escolhida: resultado de hoje contra o limite de perda do Plano do Dia
+                {
+                    const info = $('dv-conta-info');
+                    if (!st.dvConta) { info.classList.add('hidden'); info.innerHTML = ''; }
+                    else {
+                        const nome = st.dvConta === '__sem' ? 'operações sem conta' : st.dvConta, hoje = (st.days[LX.iso(pdToday)] || { trades: [] }).trades.filter(daConta).reduce((a, t) => a + tv(t), 0);
+                        const Lm = st.limits || {}, lim = (+Lm.cap || 0) * (+Lm.maxloss || 0) / 100, usado = hoje < 0 && lim ? -hoje / lim * 100 : 0;
+                        info.classList.remove('hidden');
+                        info.innerHTML = `<div class="flex flex-wrap items-center gap-x-4 gap-y-1"><span>Vendo: <strong class="text-lect-teal">${LX.esc(nome)}</strong></span><span>Hoje: <strong class="${LX.signClass(hoje)}">${(hoje >= 0 ? '+' : '−') + LX.brl(Math.abs(hoje))}</strong></span>${lim ? `<span>Limite de perda do Plano do Dia: <strong>${LX.brl(lim)}</strong>${usado ? ` · <strong class="${usado >= 100 ? 'text-rose-600 dark:text-rose-400' : usado >= 70 ? 'text-lect-orange' : ''}">${LX.num(usado, 0)}% usado</strong>` : ''}</span>` : ''}<button type="button" id="dv-filtro-x" class="ml-auto text-slate-500 hover:text-lect-teal">ver todas ×</button></div><p class="text-[10px] text-slate-500 mt-1">O imposto do mês (ao lado) continua somando todas as contas. Se uma mesa paga o seu repasse e cuida do imposto, confira com a mesa e com um contador como declarar.</p>`;
+                        $('dv-filtro-x').onclick = () => { st.dvConta = ''; pdSave(st); dvRender(); };
+                    }
+                }
                 const nets = rows.map(r => (+r.r || 0) - (+r.c || 0)), total = nets.reduce((a, b) => a + b, 0);
                 const wins = nets.filter(x => x > 0), losses = nets.filter(x => x < 0);
                 const avgW = wins.length ? wins.reduce((a, b) => a + b, 0) / wins.length : 0, avgL = losses.length ? -losses.reduce((a, b) => a + b, 0) / losses.length : 0;
                 let streak = 0, worst = 0; nets.forEach(x => { if (x < 0) { streak++; worst = Math.max(worst, streak); } else streak = 0; });
-                const dayNet = keys.map(k => [k, st.days[k].trades.reduce((a, t) => a + tv(t), 0)]);
+                const dayNet = keys.map(k => [k, st.days[k].trades.filter(daConta).reduce((a, t) => a + tv(t), 0)]);
                 const best = dayNet.reduce((a, b) => (!a || b[1] > a[1] ? b : a), null), worstD = dayNet.reduce((a, b) => (!a || b[1] < a[1] ? b : a), null);
                 const kpi = (l, v, n, c = '') => `<div class="bg-white dark:bg-lect-cardDark p-3"><span class="term-label block">${l}</span><strong class="block text-lg font-mono tabular-nums ${c}">${v}</strong><span class="text-[10px] text-slate-500">${n}</span></div>`;
                 $('dv-kpis').innerHTML =
@@ -655,27 +687,31 @@
                     `<div class="flex justify-between items-baseline px-3 py-2.5 bg-lect-navy text-white"><span>DARF · código 6015</span><strong class="text-base text-lect-orange">${LX.brl(ir.darf)}</strong></div>` +
                     `<div class="px-3 py-2 text-[10px] text-slate-500 leading-relaxed">${ir.darf > 0 ? `Vence em <strong>${LX.weekday(due)} ${LX.br(due)}</strong> (último dia útil do mês seguinte).` : ir.darfCarry ? `Valor abaixo de R$ 10 (${LX.brl(ir.darfCarry)}): acumula para o próximo mês.` : 'Nada a pagar neste mês.'}${ir.lossOut > 0 ? ` Prejuízo a compensar daqui para frente: <strong>${LX.brl(ir.lossOut)}</strong>.` : ''}${ir.irrfCarry > 0 ? ` IRRF a compensar: ${LX.brl(ir.irrfCarry)}.` : ''}</div></div>` : '';
                 // lista
-                $('dv-list').innerHTML = rows.length ? rows.slice().reverse().map(r => { const n = (+r.r || 0) - (+r.c || 0); return `<tr><td class="px-5 py-1.5">${r.d.slice(8)}/${r.d.slice(5, 7)}</td><td class="px-2 text-slate-500">${LX.esc(r.t || '')}</td><td class="px-2">${LX.esc(r.a || '')}</td><td class="px-2 text-right">${LX.num(+r.r || 0, 2)}</td><td class="px-2 text-right text-slate-500">${LX.num(+r.c || 0, 2)}</td><td class="px-2 text-right font-bold ${LX.signClass(n)}">${LX.num(n, 2)}</td><td class="px-3 font-sans text-slate-600 dark:text-slate-300 max-w-[220px] truncate">${LX.esc(r.s || '')}</td><td class="px-2 text-right"><button type="button" data-dvdel="${r.d}|${r.i}" class="text-slate-400 hover:text-rose-500" aria-label="Apagar operação"><i class="ph-bold ph-trash"></i></button></td></tr>`; }).join('')
-                    : '<tr><td colspan="8" class="px-5 py-4 text-slate-500 font-sans">Sem operações registradas neste mês.</td></tr>';
+                $('dv-list').innerHTML = rows.length ? rows.slice().reverse().map(r => { const n = (+r.r || 0) - (+r.c || 0); return `<tr><td class="px-5 py-1.5">${r.d.slice(8)}/${r.d.slice(5, 7)}</td><td class="px-2 text-slate-500">${LX.esc(r.t || '')}</td><td class="px-2">${LX.esc(r.a || '')}</td><td class="px-2 max-w-[120px] truncate text-slate-600 dark:text-slate-300">${LX.esc(r.m || '')}</td><td class="px-2 text-right">${LX.num(+r.r || 0, 2)}</td><td class="px-2 text-right text-slate-500">${LX.num(+r.c || 0, 2)}</td><td class="px-2 text-right font-bold ${LX.signClass(n)}">${LX.num(n, 2)}</td><td class="px-3 font-sans text-slate-600 dark:text-slate-300 max-w-[220px] truncate">${LX.esc(r.s || '')}</td><td class="px-2 text-right"><button type="button" data-dvdel="${r.d}|${r.i}" class="text-slate-400 hover:text-rose-500" aria-label="Apagar operação"><i class="ph-bold ph-trash"></i></button></td></tr>`; }).join('')
+                    : '<tr><td colspan="9" class="px-5 py-4 text-slate-500 font-sans">Sem operações registradas neste mês.</td></tr>';
                 document.querySelectorAll('[data-dvdel]').forEach(b => b.onclick = () => {
                     const [k, i] = b.dataset.dvdel.split('|'); st.days[k].trades.splice(+i, 1); pdSave(st); dvRender(); renderScore();
                 });
             }
             $('dv-date').value = LX.iso((() => { let d = new Date(pdToday); while (!LX.isBusinessDay(d)) d = LX.addDays(d, -1); return d; })()); // último pregão
+            $('dv-m').value = st.ultConta || '';
+            $('dv-filtro').onchange = () => { st.dvConta = $('dv-filtro').value; pdSave(st); dvRender(); };
             $('dv-prev').onclick = () => { dvYM = ymAdd(dvYM, -1); dvRender(); };
             $('dv-next').onclick = () => { dvYM = ymAdd(dvYM, 1); dvRender(); };
             $('dv-add').onclick = () => {
                 const r = parseFloat($('dv-r').value), k = $('dv-date').value;
                 if (!isFinite(r) || r === 0 || !/^\d{4}-\d{2}-\d{2}$/.test(k)) { $('dv-r').focus(); return; }
                 const d = st.days[k] = Object.assign({ checks: [], trades: [] }, st.days[k] || {});
-                d.trades.push({ r, c: Math.max(0, parseFloat($('dv-c').value) || 0), a: $('dv-asset').value, t: '', s: $('dv-s').value.trim().slice(0, 80) });
+                const conta = $('dv-m').value.trim().slice(0, 40);
+                d.trades.push(Object.assign({ r, c: Math.max(0, parseFloat($('dv-c').value) || 0), a: $('dv-asset').value, t: '', s: $('dv-s').value.trim().slice(0, 80) }, conta ? { m: conta } : {}));
+                if (conta) st.ultConta = conta;
                 $('dv-r').value = ''; $('dv-c').value = ''; $('dv-s').value = '';
                 dvYM = k.slice(0, 7); pdSave(st); dvRender(); renderScore();
             };
             const download = (name, text, type) => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); };
             $('dv-csv').onclick = () => {
-                const lines = ['data;hora;ativo;bruto;custos;liquido;setup'];
-                Object.keys(st.days).sort().forEach(k => (st.days[k].trades || []).map(norm).forEach(t => lines.push([k, t.t || '', t.a || '', (+t.r || 0).toFixed(2).replace('.', ','), (+t.c || 0).toFixed(2).replace('.', ','), ((+t.r || 0) - (+t.c || 0)).toFixed(2).replace('.', ','), '"' + String(t.s || '').replace(/"/g, '""') + '"'].join(';'))));
+                const lines = ['data;hora;ativo;conta;bruto;custos;liquido;setup'];
+                Object.keys(st.days).sort().forEach(k => (st.days[k].trades || []).map(norm).forEach(t => lines.push([k, t.t || '', t.a || '', '"' + String(t.m || '').replace(/"/g, '""') + '"', (+t.r || 0).toFixed(2).replace('.', ','), (+t.c || 0).toFixed(2).replace('.', ','), ((+t.r || 0) - (+t.c || 0)).toFixed(2).replace('.', ','), '"' + String(t.s || '').replace(/"/g, '""') + '"'].join(';'))));
                 download(`lectnex-diario-${LX.iso(pdToday)}.csv`, '﻿' + lines.join('\n'), 'text/csv;charset=utf-8');
             };
             $('dv-backup').onclick = () => download(`lectnex-backup-${LX.iso(pdToday)}.json`, JSON.stringify(st, null, 1), 'application/json');
