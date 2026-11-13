@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T17:43-03:00",
+  "atualizado_em": "2026-11-13T17:45-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     172443.0
+     172403.0
     ]
    ]
   },
@@ -768,11 +768,11 @@
     ],
     [
      "17:40",
-     5.6587
+     5.6579
     ],
     [
-     "17:42",
-     5.6587
+     "17:45",
+     5.6574
     ]
    ]
   },
@@ -1542,7 +1542,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.12,
+    "ibov30": 0.1,
     "dolar30": 0.05
    },
    {
@@ -1557,7 +1557,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": 0.12,
+    "ibov30": 0.1,
     "dolar30": 0.05
    },
    {
@@ -1572,7 +1572,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": 0.12,
+    "ibov30": 0.1,
     "dolar30": 0.05
    },
    {
@@ -1641,7 +1641,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.04
    },
    {
     "hora": "17:29",
@@ -2655,7 +2655,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T17:43-03:00",
+ "atualizado_em": "2026-11-13T17:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2670,6 +2670,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Petróleo fecha perto do zero com visão geopolítica e sinal de reequilíbrio pela AIE",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQd0pDUkdtQ0xXR0xKVVhCdF9VdHp4UlFwUm9DQU5obE4zSWdhUFdiTVFBRVQwVDlxSmV6N2FtNU4zeGRvVFRhMGFIdDY4TmJCUFZQaEZuZmtka0hicjA3UldQUFlnTVJTTVh5bFNnWEVCZk1xX3RMNHF6d2pWNldsU05tZnhQeFl3dXN0R9IBkgFBVV95cUxOaGlsdTZhN0hzN1pNOE1qbi1kN2lZSVBNa1VUN0MzNm5hSU1jWVZvdTZvUGdVa0xraTFWekY0dXNQTVZRUzdGU2U5Qm04UEduYjhCdXI0WUUyVkljZUtpeFk0SGMzdWxrU25aX1ZfZ3pqNHRmYW9sYkxaNHBDNWo0TkttTWF6VDBkUTNtS0t3dFdRdw?oc=5",
+   "publicado": "2026-11-13T17:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar fecha em alta, a R$ 5,6550, com incertezas fiscais no Brasil e política monetária dos EUA",
    "fonte": "Money Times",
