@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T10:20-03:00",
+  "atualizado_em": "2026-11-13T10:23-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -11,7 +11,11 @@
     ],
     [
      "10:05",
-     171155.0
+     171249.0
+    ],
+    [
+     "10:08",
+     171360.0
     ]
    ]
   },
@@ -84,7 +88,11 @@
     ],
     [
      "10:20",
-     5.6505
+     5.6506
+    ],
+    [
+     "10:23",
+     5.6516
     ]
    ]
   },
@@ -199,6 +207,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:05",
+    "titulo": "CSN Mineração reverte lucro e registra prejuízo de R$ 356 milhões no 3º tri",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVzFJM3RENmRJMnd2Y19hdTl0T0JOSEJXM3FqQVN6VFI3cVFvekJwdVprRS1Yclgwc3ZUQ3Q3NmxBUmwwM0FpQWpnZkVQOVF6YTlGakJocXFkVEJseHRLUndISHdPNmpXdEdkLTNCTnFudnU4MEtjdzVFa1RxcEMyY2pMVmVxa2FXVFkxbE9HRkFfNG9UNVFCM3BaRTFUeG1ndlJhY2Q3Y2FSdXFkazh4OGFNNA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "CMIN3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -575,6 +598,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "CSN Mineração reverte lucro e registra prejuízo de R$ 356 milhões no 3º tri",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVzFJM3RENmRJMnd2Y19hdTl0T0JOSEJXM3FqQVN6VFI3cVFvekJwdVprRS1Yclgwc3ZUQ3Q3NmxBUmwwM0FpQWpnZkVQOVF6YTlGakJocXFkVEJseHRLUndISHdPNmpXdEdkLTNCTnFudnU4MEtjdzVFa1RxcEMyY2pMVmVxa2FXVFkxbE9HRkFfNG9UNVFCM3BaRTFUeG1ndlJhY2Q3Y2FSdXFkazh4OGFNNA?oc=5",
+   "publicado": "2026-11-13T10:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "CMIN3"
+   ]
   }
  ],
  "enviadas": [
@@ -599,12 +635,13 @@
    "em": "2026-11-13T12:55:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T10:20-03:00",
+ "atualizado_em": "2026-11-13T10:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
@@ -613,16 +650,28 @@
  ],
  "noticias": [
   {
-   "titulo": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight",
+   "titulo": "Bessent: Treasury has wanted Megaspeed restrictions for months, but Commerce is in charge",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "publicado": "2026-11-13T10:04-03:00",
-   "impacto": "alto",
+   "publicado": "2026-11-13T10:21-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "CSN Mineração reverte lucro e registra prejuízo de R$ 356 milhões no 3º tri",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVzFJM3RENmRJMnd2Y19hdTl0T0JOSEJXM3FqQVN6VFI3cVFvekJwdVprRS1Yclgwc3ZUQ3Q3NmxBUmwwM0FpQWpnZkVQOVF6YTlGakJocXFkVEJseHRLUndISHdPNmpXdEdkLTNCTnFudnU4MEtjdzVFa1RxcEMyY2pMVmVxa2FXVFkxbE9HRkFfNG9UNVFCM3BaRTFUeG1ndlJhY2Q3Y2FSdXFkazh4OGFNNA?oc=5",
+   "publicado": "2026-11-13T10:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "CMIN3"
+   ]
   },
   {
    "titulo": "Dos 150 mil aos 200 mil pontos: As projeções da Empiricus para o Ibovespa a depender dos rumos do cenário fiscal brasileiro",
