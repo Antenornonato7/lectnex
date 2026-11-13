@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T12:49-03:00",
+  "atualizado_em": "2026-11-13T13:00-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -127,11 +127,19 @@
     ],
     [
      "12:30",
-     172239.0
+     172366.0
     ],
     [
-     "12:34",
-     172324.0
+     "12:35",
+     172241.0
+    ],
+    [
+     "12:40",
+     172194.0
+    ],
+    [
+     "12:45",
+     172319.0
     ]
    ]
   },
@@ -320,11 +328,19 @@
     ],
     [
      "12:45",
-     5.6346
+     5.6339
     ],
     [
-     "12:49",
-     5.6329
+     "12:50",
+     5.6373
+    ],
+    [
+     "12:55",
+     5.6361
+    ],
+    [
+     "13:00",
+     5.6351
     ]
    ]
   },
@@ -658,7 +674,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.07,
+    "ibov30": 0.0,
     "dolar30": -0.07
    },
    {
@@ -673,7 +689,7 @@
     "tickers": [
      "BPAC11"
     ],
-    "ibov30": -0.07,
+    "ibov30": 0.0,
     "dolar30": -0.07
    },
    {
@@ -688,7 +704,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.07,
+    "ibov30": 0.0,
     "dolar30": -0.07
    },
    {
@@ -704,13 +720,26 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.04
    },
    {
     "hora": "12:33",
     "titulo": "Ajuste fiscal avança, mas Tesouro ainda cobra prêmio; Prefixado 2032 sobe a 15,32%",
     "fonte": "Estadão",
     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQY1h3RnlRUGhHcS1DN24wdGgyWG1XUzg2RFEzQlRpVV9sQWxRMHVpOXMweXFSNUx2eWRRWjBTUUhfaHk0a01RalZEb3Jud1FlN2pRU0wyTE9wWHFjRnFfOGRLVzZPUjJHNV9qTGdrY0lFLTNERjdDRHV3eHdnS0d2Qk04VVNwQ0JlWW5MYnlnM0p3OVZ1OWZVU0NZYTFhTE5KUXMwckdlODFmNzJjRlJ5bEQ0VkloX0tRcnNrWDBjU3pWNmRqRTdlMmJ1bWF5ZnA0NTFv0gHYAUFVX3lxTE5kWWJWWV9KRE9XUF8wZm9uemVPay1CQ2RfbS1qRDIteWZHTENBU3QybnIyYWpjdmNpdnRHR01LWnFXdVo3Z3BIMFhPOWMyWjZmaUV4TzJjTmtob043MUlTVHU5eXJ3aVMxYXpxTEZlM2pGYVBxTnBaRDRrR2ctMkNnN1daNm9jYzY4WU1teFQxQUp4SVdCQ2lmMHlfVVBSNFhUQmdLUENRVDFFTHVUcWRBZGlMWVZ0ZG43cTN0UjNJcnlfcnlFVmk1VU00U0NQajZUek1NOHBUYg?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.04
+   },
+   {
+    "hora": "12:38",
+    "titulo": "Governo tomará medidas em acréscimo para garantir cenário fiscal benigno, diz Moretti",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/governo-medidas-acrescimo-cenario-fiscal-benigno-moretti/",
     "impacto": "medio",
     "ativos": [
      "DI"
@@ -1346,6 +1375,17 @@
    "tickers": []
   },
   {
+   "titulo": "Governo tomará medidas em acréscimo para garantir cenário fiscal benigno, diz Moretti",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-medidas-acrescimo-cenario-fiscal-benigno-moretti/",
+   "publicado": "2026-11-13T12:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Juros futuros têm leve alta após pacote fiscal e varejo acima do esperado",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVnlvQ2RyZDVBQVNibVUzMUFDeHc1cDQxeGxrc0c3R3d2OWFzdnhESVdGMlhfREhaRW1ucDlSaHd2UU5wM05fbUlNY3NmSmZqREJiaGZpRDhfNzlfM0w1WU5UODVKLVI1c003YW5FR3NJNlhpRkNhajRtYkd5VUdRQkxCM2NiNE44aGhLVGJoOVIzaFl4akJnRHFtUDh3TVc3X0o1VXJSUUsyNnk4MElHSWNmaVIzTjFmTlV1SHgwSm05SlVtSmo2aF9IZkc?oc=5",
@@ -1384,7 +1424,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T12:49-03:00",
+ "atualizado_em": "2026-11-13T13:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1399,6 +1439,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
+   "publicado": "2026-11-13T12:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Juros futuros têm leve alta após pacote fiscal e varejo acima do esperado",
    "fonte": "CNN Brasil",
@@ -1415,6 +1467,17 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
    "publicado": "2026-11-13T12:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo tomará medidas em acréscimo para garantir cenário fiscal benigno, diz Moretti",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-medidas-acrescimo-cenario-fiscal-benigno-moretti/",
+   "publicado": "2026-11-13T12:38-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
@@ -1547,17 +1610,6 @@
    "tickers": []
   },
   {
-   "titulo": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
-   "publicado": "2026-11-13T11:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa ensaia recuperação, enquanto dólar renova máxima",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMEI3S3Q2OVQxTzV5NjhURjg3UWVXVkhRT19CSF9haF9ocVlwaGNWZldHQ05VWFE2T1E0OE4xdGdtdEdmcjVHUk1oVmRQTk83Rk1fZkk4YXc1RklDTTdjYlNLTzIwdTBWSktUUHRuM3lsWG1YdEgxX1hjNERrMjlYQXlfRGw4TFFTM29yWTZDZmhVUXNZeFE?oc=5",
@@ -1568,20 +1620,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "“Não pretendo fazer novos aportes”, diz Louise Barsi sobre Banco do Brasil e BB Seguridade",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMXdwRTBCTjZ2SUxDdl92dUViT21DU1lDbU0wZWtkSW9OUHUyaHFQeGlYUjE3RkVaNXhTTVlBcnEwZkUxNUlJMzV0WTVWTGMzd052N2ZLVUpZN3l2ZE51eXpzRkZIXzEwQWRTd3ZheFVMNkFUSnVMRUVDLXRJQW50ZnY5dzBxczZSZGRvenlhYkxYT0p3ZHNIS1REVWdieFJVZlRUdWlIMllGckJyZnlxNTlCMmgzNWFSOFoxQzdsNHpZUWx6d2FCN0ZReWtfLU9POWlVMmFSUWR0TUgzSmZR0gHkAUFVX3lxTFAzemFKOXl4N25SdGQ5dnotMGZpTDQ0dXd1bTVnUEdERVZqaUdnWUZrZTJ5MnJlNFktNWpCdGZ3elhNUWdVVkZBRHdTWTJXS252TG5IX3lrTHhON1dWSVFtTVJ1cXBzRk9mVERvbC01YW5EWGl3NEFxamZtQlRWRHQ3VXN5T1UxdkNTakRnWTVzT21vZXlpYVhoRWQtWDN6SkFZTHpMRVhUc1pmcVRuVGVEcU1YWm9oN19FbzR4UkVtZTN4T1RqZjFucllrc2VTZW5LZmZsenNzaHBfb29oR01oRlhZRA?oc=5",
-   "publicado": "2026-11-13T11:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3",
-    "BBSE3"
-   ]
   },
   {
    "titulo": "Ibovespa avança em meio a balanços, apesar de preocupações com política fiscal",
