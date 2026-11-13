@@ -1,92 +1,6 @@
 {
-  "atualizado_em": "2026-11-12T12:45:00-03:00",
+  "atualizado_em": "2026-11-13T07:55:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-12",
-      "hora": "04h",
-      "pais": "UK",
-      "evento": "PIB do Reino Unido (3º tri, preliminar, t/t)",
-      "importancia": 1,
-      "anterior": "0,5%",
-      "consenso": null,
-      "resultado": "0,7%",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Atividade britânica; mexe com a libra e o dólar global. Saiu 0,7% t/t, segundo o InfoMoney; sem consenso confirmado.",
-      "tipo": "pib-reino-unido",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-12",
-      "hora": "09h",
-      "pais": "BR",
-      "evento": "IPCA de outubro (IBGE)",
-      "importancia": 3,
-      "anterior": "0,82%",
-      "consenso": "0,25%",
-      "resultado": "0,14%",
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Inflação oficial — impacto direto nos vértices curtos do DI. Saiu 0,14% m/m (4,63% em 12 meses), abaixo dos 0,25% esperados em pesquisa da Reuters, segundo o InfoMoney. Setembro: 0,82%.",
-      "tipo": "ipca",
-      "surpresa": {
-        "direcao": "abaixo",
-        "reacao": "IPCA abaixo do esperado costuma derrubar as taxas dos DIs curtos, aliviar o real e dar suporte ao WIN."
-      }
-    },
-    {
-      "data": "2026-11-12",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Pedidos de seguro-desemprego (semanal)",
-      "importancia": 1,
-      "anterior": "189 mil",
-      "consenso": "195 mil",
-      "resultado": "200 mil",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Termômetro semanal do mercado de trabalho americano.",
-      "tipo": "seguro-desemprego",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-12",
-      "hora": "12h–15h30",
-      "pais": "US",
-      "evento": "Falas do Fed: Barr, Goolsbee, Daly e Schmid",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Barr às 12h, Goolsbee às 13h15, Daly às 15h10 e Schmid às 15h30; mercado aposta em alta de juros em dezembro.",
-      "tipo": "fala-fed",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-12",
-      "hora": "20h30",
-      "pais": "US",
-      "evento": "Fala de John Williams (Fed de Nova York)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Sinais sobre a reunião de dezembro, com o mercado apostando em alta de juros.",
-      "tipo": "fala-fed",
-      "surpresa": null
-    },
     {
       "data": "2026-11-13",
       "hora": "07h",
@@ -116,9 +30,26 @@
         "di": "volatil",
         "win": "volatil"
       },
-      "nota": "Atividade do consumo; dado fraco reforça a desaceleração. A agenda do InfoMoney indica −0,3% m/m.",
+      "nota": "Atividade do consumo; dado fraco reforça a desaceleração. A agenda do InfoMoney indica −0,3% m/m (projeção, não consenso).",
       "tipo": "varejo-brasil",
       "surpresa": null
+    },
+    {
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "surpresa": null,
+      "data": "2026-11-13",
+      "hora": "10h20",
+      "pais": "BR",
+      "evento": "Fala de Galípolo (BC) no Barclays Day",
+      "importancia": 2,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Primeira fala do presidente do BC depois do IPCA de outubro (0,14%) e da alta do dólar.",
+      "tipo": "fala-bcb"
     },
     {
       "data": "2026-11-13",
@@ -133,9 +64,26 @@
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Pressão de custos que pode chegar ao consumidor.",
+      "nota": "Consenso Dow Jones: +0,4% m/m (núcleo +0,3%); em 12 meses, 6,6% esperado após 6,3%. Pressão de custos reforça a aposta de alta do Fed.",
       "tipo": "ppi-eua",
       "surpresa": null
+    },
+    {
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "surpresa": null,
+      "data": "2026-11-13",
+      "hora": "12h50–14h",
+      "pais": "US",
+      "evento": "Falas do Fed: Bowman (12h50) e Daly (14h)",
+      "importancia": 1,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Mercado precifica alta de juros em dezembro; Jefferson fala às 21h.",
+      "tipo": "fala-fed"
     },
     {
       "data": "2026-11-15",
@@ -165,7 +113,7 @@
       "impacto": {
         "win": "volatil"
       },
-      "nota": "Anterior = produção industrial de setembro; varejo subiu 1,1% em setembro. Atividade chinesa mexe com minério e Vale.",
+      "nota": "Anterior = produção industrial de setembro; varejo subiu 1,1% em setembro. Inclui investimento e preços de imóveis; mexe com minério e Vale.",
       "tipo": "producao-industrial-china",
       "surpresa": null
     },
@@ -236,6 +184,22 @@
       "surpresa": null
     },
     {
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "surpresa": null,
+      "data": "2026-11-17",
+      "hora": "18h20",
+      "pais": "US",
+      "evento": "Balanço da Nvidia (3º tri fiscal 2027)",
+      "importancia": 2,
+      "impacto": {
+        "win": "volatil"
+      },
+      "nota": "Primeiro resultado depois da renúncia de Jensen Huang; teleconferência às 19h. Mexe no Nasdaq e no apetite a risco global.",
+      "tipo": "balanco-nvidia"
+    },
+    {
       "data": "2026-11-18",
       "hora": "04h",
       "pais": "UK",
@@ -300,6 +264,20 @@
       "nota": "Antecipado por causa do feriado da Consciência Negra (sexta, 20/11, B3 fechada).",
       "tipo": "vencimento-opcoes",
       "surpresa": null
+    },
+    {
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "surpresa": null,
+      "data": "2026-11-20",
+      "hora": null,
+      "pais": "BR",
+      "evento": "Consciência Negra — B3 fechada",
+      "importancia": 2,
+      "impacto": {},
+      "nota": "Feriado nacional; sem pregão. Bolsas americanas funcionam normalmente.",
+      "tipo": "feriado-b3"
     }
   ]
 }
