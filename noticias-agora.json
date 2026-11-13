@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-13",
-  "atualizado_em": "2026-11-13T16:53-03:00",
+  "atualizado_em": "2026-11-13T16:55-03:00",
   "ibov": {
    "anterior": 171324.31,
    "pontos": [
@@ -323,11 +323,11 @@
     ],
     [
      "16:35",
-     172303.0
+     172332.0
     ],
     [
-     "16:38",
-     172274.0
+     "16:40",
+     172423.0
     ]
    ]
   },
@@ -712,11 +712,11 @@
     ],
     [
      "16:50",
-     5.6563
+     5.6551
     ],
     [
-     "16:52",
-     5.6544
+     "16:55",
+     5.6563
     ]
    ]
   },
@@ -1473,7 +1473,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.05,
+    "ibov30": 0.14,
     "dolar30": 0.05
    },
    {
@@ -1484,6 +1484,19 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:52",
+    "titulo": "Tesouro Nacional derruba sistemas após ataque que roubou dados de beneficiários do governo",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tesouro-nacional-derruba-sistemas-apos-ataque-que-roubou-dados-de-beneficiarios-do-governo.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -2425,6 +2438,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Tesouro Nacional derruba sistemas após ataque que roubou dados de beneficiários do governo",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tesouro-nacional-derruba-sistemas-apos-ataque-que-roubou-dados-de-beneficiarios-do-governo.shtml",
+   "publicado": "2026-11-13T16:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2454,7 +2478,7 @@
    "em": "2026-11-13T13:38:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-13T16:53-03:00",
+ "atualizado_em": "2026-11-13T16:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2468,6 +2492,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Tesouro Nacional derruba sistemas após ataque que roubou dados de beneficiários do governo",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tesouro-nacional-derruba-sistemas-apos-ataque-que-roubou-dados-de-beneficiarios-do-governo.shtml",
+   "publicado": "2026-11-13T16:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar deve registrar novas altas no mercado, segundo economista",
    "fonte": "CNN Brasil",
@@ -2624,17 +2659,6 @@
    "tickers": [
     "BBAS3"
    ]
-  },
-  {
-   "titulo": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
-   "publicado": "2026-11-13T13:54-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
   }
  ]
 }
