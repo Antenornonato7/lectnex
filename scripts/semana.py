@@ -159,7 +159,7 @@ def indice(semanas, dados):
         <section class="border-b border-slate-300 dark:border-lect-borderDark grid-bg"><div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
             <span class="term-label text-lect-teal font-bold">ARQUIVO</span><h1 class="font-display text-3xl font-bold tracking-tight mt-1">Agenda econômica da semana</h1>
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">O que movimenta o WIN, o WDO e o DI em cada semana: horários, consenso, resultados e surpresas.</p></div></section>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8"><ul class="space-y-3">{itens}</ul></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8"><div class="hidden mb-6" data-lx-news="chamada" data-titulo="Receba a agenda e os resultados todo dia de manhã."></div><ul class="space-y-3">{itens}</ul></div>
 ''' + foot()
 
 

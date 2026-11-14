@@ -83,7 +83,7 @@ def pagina(d, datas):
             {upd}
             {f'<section><h2 class="font-display font-bold text-lg mb-3">Notícias que importaram</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-3">{news}</div></section>' if news else ''}
             <p class="text-[11px] text-slate-500">Fontes: {fontes}</p>
-            <div class="hidden" data-lx-news="chamada" data-titulo="Receba a Leitura do Dia todo dia às 7h40."></div>
+            <div class="hidden" data-lx-news="chamada" data-titulo="Receba a Leitura do Dia todo dia, por volta das 7h50."></div>
             {nav}
             <p class="text-[11px] text-slate-500">Gerado com IA (Claude) a partir de fontes públicas, pode conter imprecisões. Conteúdo educacional, não é recomendação de investimento. <a href="index.html" class="text-lect-teal hover:underline">Leitura de hoje no Mercado Hoje →</a></p>
         </div>
@@ -99,7 +99,7 @@ def indice(edicoes, datas):
         <section class="border-b border-slate-300 dark:border-lect-borderDark grid-bg"><div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
             <span class="term-label text-lect-teal font-bold">ARQUIVO</span><h1 class="font-display text-3xl font-bold tracking-tight mt-1">Leitura do Dia: todas as edições</h1>
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">O resumo de cada dia para quem opera mini índice, mini dólar e juros.</p></div></section>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8"><ul class="space-y-3">{itens}</ul></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8"><div class="hidden mb-6" data-lx-news="chamada" data-titulo="Receba a próxima edição antes da abertura"></div><ul class="space-y-3">{itens}</ul></div>
 ''' + foot()
 
 

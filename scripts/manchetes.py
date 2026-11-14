@@ -165,6 +165,7 @@ def pagina(m, datas):
             {f'<section><h2 class="font-display font-bold text-lg mb-3">As 3 maiores reações em 30 minutos</h2><ol class="space-y-3">{destaque}</ol></section>' if destaque else ''}
             {f'<section><h2 class="font-display font-bold text-lg mb-3">Todas as manchetes do dia</h2><ol class="term-panel divide-y divide-slate-200 dark:divide-lect-borderDark">{lista}</ol></section>' if lista else ''}
             <p class="text-[11px] text-slate-500">Variação do último preço antes da manchete até 30 minutos depois (cotações de 5 min do Yahoo Finance, Ibovespa e dólar à vista). O movimento seguinte não prova que a notícia foi a causa: o mercado reage a muitas coisas ao mesmo tempo. Conteúdo educacional, não é recomendação de investimento.</p>
+            <div class="hidden" data-lx-news="chamada" data-titulo="Receba a Leitura do Dia antes da abertura"></div>
             {nav}
         </div>
 ''' + foot()

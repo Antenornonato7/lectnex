@@ -182,4 +182,6 @@ Para encerrar o teste: fixe o nome vencedor em `NAV` e apague o bloco `LX.abMenu
 cliques nos atalhos da página inicial (eventos `atalho_plano`, `atalho_diario`, `atalho_estudo`), inscritos e automações que
 falharam na semana. Rodar à mão sem marcar "Enviar" só mostra o resumo no log.
 Fora os posts e reels do Instagram, o Telegram privado recebe só: este resumo, o relatório do Google e o do teste do menu
-(segundas), o resumo do dono e os alertas de falha. Avisos de entrega não vão para o Telegram.
+(segundas), o resumo do dono, os alertas de falha e o workflow **Aviso ao dono** (`aviso.yml`, entrada `mensagem`, HTML
+simples), usado só pelo relatório semanal do Claude (sexta à noite) e pelo alerta "resultado não encontrado" da rodada das 21h20.
+Avisos de entrega não vão para o Telegram.

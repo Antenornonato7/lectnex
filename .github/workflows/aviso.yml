@@ -1,0 +1,36 @@
+# Aviso ao dono no chat PRIVADO do Telegram, com texto pronto (HTML simples: <b>, <i>).
+# Usado só por duas tarefas agendadas do Claude: o relatório semanal (sexta à noite) e o alerta
+# "resultado não encontrado" da rodada das 21h20. Avisos de entrega de mudanças no site NÃO passam por aqui.
+name: Aviso ao dono
+run-name: "Aviso ao dono"
+
+on:
+  workflow_dispatch:
+    inputs:
+      mensagem:
+        description: "Mensagem (HTML simples do Telegram: <b>, <i>)"
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aviso-dono
+  cancel-in-progress: false
+
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: coletor
+      - name: Enviar no chat privado
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          TEXTO: ${{ inputs.mensagem }}
+          HTML: '1'
+          EXIGIR: '1'   # sem chat privado configurado, a execução falha (para a tarefa perceber que o aviso não saiu)
+        run: python3 coletor/alerta.py

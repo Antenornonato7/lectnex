@@ -33,14 +33,14 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261113g">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261114a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261105a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261113g">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261114a">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -153,7 +153,7 @@
 
     <!-- Atalhos e navegação da página (depois da primeira entrega de valor) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="hidden mb-5" data-lx-news="chamada" data-titulo="Receba o resumo do dia às 7h40, antes da abertura"></div>
+        <div class="hidden mb-5" data-lx-news="chamada" data-titulo="Receba o resumo do dia antes da abertura"></div>
         <div id="pn-acoes" class="hidden mb-4 term-panel px-4 py-2 font-mono text-xs flex items-center gap-x-4 gap-y-1 flex-wrap"></div>
         <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 py-3 border-y border-slate-200 dark:border-lect-borderDark font-mono text-xs" aria-label="Seções e ferramentas">
             <a href="#setores" class="hover:text-lect-teal">Setores</a>
@@ -477,7 +477,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261113g"></script>
+    <script src="assets/lectnex-core.js?v=20261114a"></script>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -637,7 +637,7 @@
                     <div class="lg:col-span-7 space-y-2"><span class="term-label block">Últimos ${ult.length} pregões <span class="normal-case">(passe o mouse para ver o dia)</span></span>${row('win', 'WIN', 'IBOV')}${row('wdo', 'WDO', 'dólar')}
                         <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] text-slate-500 pt-1"><span><span class="inline-block w-2.5 h-2.5 bg-emerald-500 align-middle"></span> acertou</span><span><span class="inline-block w-2.5 h-2.5 bg-rose-500 align-middle"></span> errou</span><span><span class="inline-block w-2.5 h-2.5 bg-slate-200 dark:bg-lect-borderDark align-middle"></span> sem termômetro</span></div></div>
                 </div>
-                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">${dias.length < 30 ? `<strong class="text-lect-orange">Amostra pequena (${dias.length} pregões): os percentuais acima ainda não dizem se o modelo é bom ou ruim.</strong> ` : ''}Como medimos: o viés do modelo sai às 7h40, antes da abertura, e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou dentro da faixa (desde 09/11: ±0,7% no WIN e ±0,4% no WDO; antes, ±0,5% nos dois). A conferência usa o <strong>Ibovespa à vista</strong> (para o WIN) e o <strong>dólar à vista</strong> (para o WDO), não os contratos futuros. <a href="placar.html" class="text-lect-teal hover:underline">Placar completo, com todos os erros →</a> <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
+                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">${dias.length < 30 ? `<strong class="text-lect-orange">Amostra pequena (${dias.length} pregões): os percentuais acima ainda não dizem se o modelo é bom ou ruim.</strong> ` : ''}Como medimos: o viés do modelo sai por volta das 7h50, antes da abertura, e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou dentro da faixa (desde 09/11: ±0,7% no WIN e ±0,4% no WDO; antes, ±0,5% nos dois). A conferência usa o <strong>Ibovespa à vista</strong> (para o WIN) e o <strong>dólar à vista</strong> (para o WDO), não os contratos futuros. <a href="placar.html" class="text-lect-teal hover:underline">Placar completo, com todos os erros →</a> <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
             el.classList.remove('hidden');
         }).catch(() => { });
 
@@ -722,10 +722,10 @@
             /* ---------- resumo editorial ---------- */
             function resumo() {
                 const l = MKT.leitura, alvo = $('ms-pontos');
-                if (!l || !Array.isArray(l.resumo) || !l.resumo.length) { alvo.innerHTML = '<li class="text-sm text-slate-500">A Leitura do Dia sai às 7h40 nos dias de pregão.</li>'; $('ms-resumo-quando').textContent = ''; }
+                if (!l || !Array.isArray(l.resumo) || !l.resumo.length) { alvo.innerHTML = '<li class="text-sm text-slate-500">A Leitura do Dia sai por volta das 7h50 nos dias de pregão.</li>'; $('ms-resumo-quando').textContent = ''; }
                 else {
                     const dia = LX.parseISO(l.data), hora = l.gerado_em ? hm(new Date(l.gerado_em)) : '';
-                    $('ms-resumo-quando').textContent = `${l.tipo === 'sem-pregao' ? 'edição sem pregão' : 'cenário de abertura'} · ${LX.weekday(dia)} ${LX.brShort(dia)}${hora ? ' · escrito às ' + hora : ''}${l.data !== hojeISO() ? ' · a edição de hoje sai às 7h40' : ''}`;
+                    $('ms-resumo-quando').textContent = `${l.tipo === 'sem-pregao' ? 'edição sem pregão' : 'cenário de abertura'} · ${LX.weekday(dia)} ${LX.brShort(dia)}${hora ? ' · escrito às ' + hora : ''}${l.data !== hojeISO() ? ' · a edição de hoje sai por volta das 7h50' : ''}`;
                     let pts = Array.isArray(l.pontos) && l.pontos.length ? l.pontos.slice(0, 3).map(p => [p.titulo || '', p.texto || '']) : null;
                     if (!pts) { const r = l.resumo.length > 3 && /^(No último pregão|Ontem|Na (segunda|terça|quarta|quinta|sexta))/i.test(l.resumo[0]) ? l.resumo.slice(1) : l.resumo; pts = r.slice(0, 3).map(x => ['', x]); }
                     alvo.innerHTML = pts.map(([t, x]) => `<li class="min-w-0 text-[13px] leading-snug text-slate-700 dark:text-slate-300 pl-3 border-l-2 border-slate-300 dark:border-slate-600">${t ? `<strong class="block text-slate-900 dark:text-white">${esc(t)}</strong>` : ''}<span class="${t ? 'line-clamp-2 md:line-clamp-none' : 'line-clamp-3'}">${esc(x)}</span></li>`).join('');
@@ -1272,7 +1272,7 @@
 
     })();
     </script>
-    <script src="assets/lectnex-pregao.js?v=20261113g" defer></script>
+    <script src="assets/lectnex-pregao.js?v=20261114a" defer></script>
     <script src="assets/lectnex-painel.js?v=20261111f" defer></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
             $('pg-term').innerHTML = leitura && leitura.termometro && leitura.data === today
                 ? ['win', 'wdo'].filter(k => leitura.termometro[k]).map(k => { const t = leitura.termometro[k], c = T[t.leitura] || T.neutro; return `<div class="flex-1 min-w-0"><span class="font-mono text-[11px] text-slate-500">${k.toUpperCase()}</span><strong class="block font-mono text-base ${c[1]}">${c[0]}</strong><span class="block text-[11px] text-slate-500 leading-snug line-clamp-2">${LX.esc(t.motivo)}</span></div>`; }).join('')
                   + '<p class="basis-full text-[11px] text-slate-500">Medido antes da abertura · não muda durante o dia · não é recomendação.</p>'
-                : `<p class="text-xs text-slate-500">${leitura && leitura.tipo === 'sem-pregao' ? 'Sem pregão hoje: o viés do modelo volta no próximo pregão.' : 'Viés do modelo de hoje ainda não publicado (sai às 7h40).'}</p>`;
+                : `<p class="text-xs text-slate-500">${leitura && leitura.tipo === 'sem-pregao' ? 'Sem pregão hoje: o viés do modelo volta no próximo pregão.' : 'Viés do modelo de hoje ainda não publicado (sai por volta das 7h50).'}</p>`;
         }
 
         // 3. maiores altas e baixas
