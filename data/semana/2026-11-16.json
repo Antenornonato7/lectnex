@@ -29,6 +29,19 @@
   },
   {
    "data": "2026-11-17",
+   "pais": "BR",
+   "evento": "Senado vota destaques do ajuste fiscal (PLP 299/2026)",
+   "importancia": 2,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil",
+    "win": "volatil"
+   },
+   "nota": "Quatro destaques podem alterar o texto-base aprovado por 45 a 31; depois o projeto segue à Câmara.",
+   "tipo": "ajuste-fiscal"
+  },
+  {
+   "data": "2026-11-17",
    "hora": "10h30",
    "pais": "US",
    "evento": "Vendas no varejo (out, m/m)",
@@ -38,8 +51,9 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Consumo americano forte reforça a aposta de alta de juros do Fed em dezembro.",
-   "tipo": "varejo-eua"
+   "nota": "Consenso Newsquawk: +0,2% m/m (grupo de controle +0,4%, ant. 0,1%). Consumo forte reforça a aposta de alta do Fed em dezembro.",
+   "tipo": "varejo-eua",
+   "consenso": "0,2%"
   },
   {
    "data": "2026-11-17",
@@ -103,7 +117,7 @@
     "di": "volatil",
     "win": "volatil"
    },
-   "nota": "Sinais sobre a reunião de dezembro, com o mercado precificando alta de juros.",
+   "nota": "Reunião que manteve os juros em 3,75%–4,00% (votação 10–2); mercado precifica alta em dezembro.",
    "tipo": "ata-fomc"
   },
   {
@@ -125,6 +139,32 @@
    "impacto": {},
    "nota": "Feriado nacional; sem pregão. Bolsas americanas funcionam normalmente.",
    "tipo": "feriado-b3"
+  },
+  {
+   "data": "2026-11-20",
+   "pais": "CN",
+   "evento": "Taxa LPR de 1 e 5 anos (PBoC, nov)",
+   "importancia": 1,
+   "anterior": "3,00% / 3,50%",
+   "consenso": "3,00% / 3,50%",
+   "impacto": {
+    "win": "volatil"
+   },
+   "nota": "Consenso Newsquawk: manutenção pelo 18º mês seguido. Mexe com minério e Vale.",
+   "tipo": "lpr-china"
+  },
+  {
+   "data": "2026-11-20",
+   "hora": "12h",
+   "pais": "US",
+   "evento": "Sentimento do consumidor Michigan (nov, final)",
+   "importancia": 1,
+   "anterior": "51,0",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Anterior = leitura preliminar de novembro; expectativa de inflação em 1 ano caiu a 4,3%.",
+   "tipo": "michigan"
   }
  ]
 }
