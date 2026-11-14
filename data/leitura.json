@@ -1,135 +1,156 @@
 {
-  "tipo": "pregao",
-  "data": "2026-11-13",
-  "gerado_em": "2026-11-13T07:55:00-03:00",
-  "titulo": "Senado aprova texto-base fiscal; varejo, Galípolo e PPI na agenda",
+  "tipo": "sem-pregao",
+  "data": "2026-11-14",
+  "gerado_em": "2026-11-14T08:05:00-03:00",
+  "titulo": "Ibovespa fecha semana em alta; ajuste, IBC-Br e Nvidia no radar",
   "resumo": [
-    "No último pregão (quinta, 12), o Ibovespa caiu 0,43%, a 171.324 pontos, e o dólar à vista subiu 1,62%, a R$ 5,6519, maior fechamento desde junho de 2025, com dúvidas sobre o ajuste fiscal, o tombo do Banco do Brasil e o exterior negativo.",
-    "À noite, o Senado aprovou por 45 a 31 o texto-base do PLP 299/2026, o ajuste fiscal com impacto de R$ 50 bi a R$ 60 bi em 2027 segundo o governo; o projeto segue para a Câmara, e o resultado mexe no DI longo e no real depois da alta forte do dólar.",
-    "Antes da abertura, o S&P 500 futuro sobe 0,15%, o EWZ 0,19% e o VIX cai 1,66%, com o DXY estável (+0,03%); o mercado ainda digere a renúncia de Jensen Huang da Nvidia, que divulga balanço na terça (17).",
-    "Na agenda, o varejo de setembro (IBGE) sai às 9h, Galípolo fala às 10h20 e o PPI americano às 10h30, com consenso de +0,4% no mês após +1,3% em setembro; inflação ao produtor forte reforça a aposta de alta de juros do Fed e pesa no WDO e no DI.",
-    "No petróleo, o Brent opera perto de US$ 96 depois de Trump dizer que manterá o bloqueio ao Irã; o minério recua 0,52% em Dalian, o que tira apoio da Vale no WIN."
+    "No último pregão (sexta, 13), o Ibovespa subiu 0,66%, a 172.457,77 pontos (+2,35% na semana), e o dólar à vista subiu 0,11%, a R$ 5,657, com alta de 2,63% na semana, segundo a Agência Brasil; o prêmio fiscal segue no câmbio e na curva do DI.",
+    "O ajuste fiscal (PLP 299/2026) ainda não saiu do Senado: os quatro destaques, que podem mudar o texto, ficaram para terça (17); o ministro José Guimarães diz haver acordo para a Câmara votar logo depois, mas Hugo Motta não fixou data.",
+    "Lá fora, o S&P 500 caiu 0,4% e o Nasdaq 0,9% na sexta, com a crise na Nvidia (balanço na terça, 17), e o Treasury de 10 anos subiu a 5,15%, segundo a AP; juros americanos altos sustentam o dólar global e pressionam o WDO.",
+    "O PPI americano subiu 0,3% em outubro, abaixo do consenso de 0,4%, mas o mercado segue esperando alta de juros do Fed em dezembro; a ata do FOMC sai na quarta (18), às 16h.",
+    "Até a manhã de sábado, não encontramos fato novo de peso confirmado em veículo da lista; a semana é curta no Brasil (B3 fechada na sexta, 20, Consciência Negra) e começa com Focus (8h25) e IBC-Br (9h) na segunda."
   ],
   "pontos": [
     {
-      "titulo": "Senado aprova texto-base do ajuste",
-      "texto": "45 a 31 votos; impacto de R$ 50–60 bi em 2027. Segue à Câmara; mexe no DI longo e no real."
+      "titulo": "Destaques do ajuste no Senado na terça",
+      "texto": "Quatro destaques podem mudar o PLP 299; depois o texto vai à Câmara. Mexe no DI longo e no real."
     },
     {
-      "titulo": "PPI dos EUA às 10h30",
-      "texto": "Consenso de +0,4% no mês após +1,3%; número forte reforça alta de juros do Fed e mexe no WDO."
+      "titulo": "IBC-Br de setembro na segunda, às 9h",
+      "texto": "Prévia do PIB calculada pelo BC; atividade fraca reforça a desaceleração e mexe nos DIs curtos."
     },
     {
-      "titulo": "Varejo às 9h e Galípolo às 10h20",
-      "texto": "Atividade do consumo e tom do presidente do BC mexem nos vértices curtos do DI e no WIN."
+      "titulo": "Varejo dos EUA e Nvidia na terça",
+      "texto": "Varejo às 10h30 (consenso +0,2%) e balanço da Nvidia à noite mexem no dólar global e no risco."
     }
   ],
-  "termometro": {
-    "win": {
-      "leitura": "bullish",
-      "motivo": "Aprovação do texto-base fiscal no Senado, com S&P futuro +0,15%, EWZ +0,19% e VIX −1,66%; o sinal quantitativo é neutro (exterior fraco), e o PPI às 10h30 pode inverter."
-    },
-    "wdo": {
-      "leitura": "bearish",
-      "motivo": "Após alta de 1,62% na quinta, o avanço do ajuste no Senado tende a aliviar o real; S&P fut. +0,15%, EWZ +0,19% e DXY +0,03% deixam o sinal quantitativo no limite do neutro; PPI forte às 10h30 é o risco."
-    }
-  },
   "destaques": [
     {
-      "hora": "9h",
-      "evento": "Vendas no varejo de setembro (PMC/IBGE)",
-      "por_que": "A agenda do InfoMoney indica −0,3% no mês; consumo fraco reforça a desaceleração e mexe nos vértices curtos do DI."
+      "hora": "seg 8h25",
+      "evento": "Boletim Focus (BCB)",
+      "por_que": "Expectativas de Selic, IPCA e câmbio depois de uma semana de dólar em alta de 2,63%."
     },
     {
-      "hora": "10h20",
-      "evento": "Galípolo (BC) no Barclays Day",
-      "por_que": "Primeira fala do presidente do BC depois do IPCA de 0,14% e da alta do dólar; tom sobre juros mexe no DI e no WDO."
+      "hora": "seg 9h",
+      "evento": "IBC-Br de setembro (BCB)",
+      "por_que": "Prévia do PIB; dado fraco reforça a desaceleração e mexe nos vértices curtos do DI."
     },
     {
-      "hora": "10h30",
-      "evento": "PPI de outubro (EUA)",
-      "por_que": "Consenso de +0,4% no mês (núcleo +0,3%) após +1,3%; surpresa para cima reforça a aposta de alta do Fed em dezembro."
+      "hora": "ter 10h30",
+      "evento": "Vendas no varejo de outubro (EUA)",
+      "por_que": "Consenso de +0,2% no mês após +0,8%; consumo forte reforça a aposta de alta do Fed e pressiona o WDO."
     },
     {
-      "hora": "12h50–14h",
-      "evento": "Falas do Fed: Bowman e Daly",
-      "por_que": "Dirigentes do Fed antes da reunião de dezembro; tom duro tende a fortalecer o dólar global."
+      "hora": "ter 18h20",
+      "evento": "Balanço da Nvidia (3º tri fiscal)",
+      "por_que": "Primeiro resultado após a renúncia de Jensen Huang; mexe no Nasdaq e no apetite a risco que chega ao WIN na quarta."
     }
   ],
   "exterior": [
-    { "ativo": "S&P 500 fut.", "variacao": "+0,15%" },
-    { "ativo": "Nasdaq fut.", "variacao": "−0,05%" },
-    { "ativo": "EWZ (pré-mercado)", "variacao": "+0,19%" },
-    { "ativo": "DXY", "variacao": "+0,03%" },
-    { "ativo": "Brent", "variacao": "−0,33%" },
-    { "ativo": "Minério (Dalian)", "variacao": "−0,52%" }
+    {
+      "ativo": "S&P 500 (fech. sex)",
+      "variacao": "−0,4%"
+    },
+    {
+      "ativo": "Nasdaq (fech. sex)",
+      "variacao": "−0,9%"
+    },
+    {
+      "ativo": "Dow Jones (fech. sex)",
+      "variacao": "+0,1%"
+    },
+    {
+      "ativo": "Treasury 10 anos",
+      "variacao": "+5 bp (5,15%)"
+    },
+    {
+      "ativo": "DXY",
+      "variacao": "+0,19% (103,42)"
+    },
+    {
+      "ativo": "Brent",
+      "variacao": "+0,02% (US$ 95,84)"
+    }
   ],
   "noticias": [
     {
-      "titulo": "Senado aprova por 45 a 31 o texto-base do ajuste fiscal; projeto vai à Câmara",
-      "fonte": "Agência Senado (via O Povo)",
-      "hora": "qui 21h09",
-      "url": "https://www.opovo.com.br/noticias/economia/2026/11/12/senado-federal-aprova-texto-base-de-projeto-que-preve-ajuste-fiscal-de-ate-rs-60-bilhoes.html",
-      "por_que": "O PLP 299/2026 limita o crescimento real do gasto a 2% ao ano em anos de contenção e corta benefícios fiscais; avanço do ajuste tende a aliviar o DI longo e o real depois da alta forte do dólar.",
-      "impacto": { "win": "alta", "wdo": "baixa", "di": "baixa" }
-    },
-    {
-      "titulo": "Jensen Huang renuncia ao comando da Nvidia; CFO Colette Kress assume como interina",
-      "fonte": "Nvidia (comunicado)",
-      "hora": "qui",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
-      "por_que": "A empresa não deu motivo e divulga o balanço na terça (17); a incerteza pesa no Nasdaq e no apetite a risco global, que respinga no WIN e no dólar.",
-      "impacto": { "win": "baixa", "wdo": "alta" }
-    },
-    {
-      "titulo": "Dólar sobe 1,62%, a R$ 5,6519, maior fechamento desde junho de 2025",
-      "fonte": "Times Brasil (CNBC)",
-      "hora": "qui 19h10",
-      "url": "https://timesbrasil.com.br/investimentos/bolsa/ibovespa-cai-06-com-pressao-fiscal-e-banco-do-brasil/",
-      "por_que": "Dúvidas fiscais, juros altos nos EUA e petróleo pressionaram o real mesmo com o IPCA de 0,14%; o dólar acumula 3,81% em novembro, ponto de partida do WDO hoje.",
+      "titulo": "Ibovespa sobe 0,66% na sexta e fecha a semana com ganho de 2,35%; dólar sobe 2,63% na semana",
+      "fonte": "Agência Brasil (via O Povo)",
+      "hora": "sex 19h32",
+      "url": "https://www.opovo.com.br/noticias/economia/2026/11/13/dolar-fecha-estavel-a-rs-565-mas-sobe-263-na-semana.html",
+      "por_que": "Dólar a R$ 5,657 é o ponto de partida do WDO na segunda; bolsa e câmbio seguem descolados, com o fiscal pesando mais no real.",
       "impacto": {}
     },
     {
-      "titulo": "Banco do Brasil cai mais de 8% após 3º trimestre fraco e piora nas projeções",
-      "fonte": "InfoMoney",
-      "hora": "06h01",
-      "url": "https://www.infomoney.com.br/mercados/varejo-brasileiro-inflacao-eua-pib-europa-agenda-13112026/",
-      "por_que": "A queda de BBAS3 puxou o Ibovespa na quinta; bancos têm peso relevante no índice, e BTG Pactual e Hapvida também repercutem balanços hoje.",
-      "impacto": { "win": "baixa" }
+      "titulo": "Destaques do ajuste fiscal ficam para terça; governo diz que Câmara vota logo em seguida",
+      "fonte": "Correio Braziliense",
+      "hora": "sex",
+      "url": "https://www.correiobraziliense.com.br/politica/2026/11/7538158-ajuste-fiscal-guimaraes-diz-que-camara-votara-plp-imediatamente-apos-senado.html",
+      "por_que": "Os destaques podem alterar o pacote de cerca de R$ 60 bi em 2027; desidratação tende a pressionar o DI longo e o dólar, e aprovação rápida tende a aliviar.",
+      "impacto": {}
     },
     {
-      "titulo": "Petróleo caminha para 2ª semana de queda com EUA mantendo bloqueio ao Irã",
-      "fonte": "InfoMoney",
-      "hora": "05h45",
-      "url": "https://www.infomoney.com.br/mercados/futuros-de-ny-caem-com-incertezas-sobre-a-nvidia-e-inflacao-ao-produtor-no-radar/",
-      "por_que": "Brent perto de US$ 96 sustenta a Petrobras, mas reforça a inflação global e os juros americanos; minério cai 0,52% em Dalian e tira apoio da Vale.",
-      "impacto": { "wdo": "alta", "di": "alta" }
+      "titulo": "Motta diz que governo pediu celeridade na votação do ajuste na Câmara",
+      "fonte": "SBT News",
+      "hora": "sex",
+      "url": "https://sbtnews.sbt.com.br/noticia/politica/ajuste-fiscal-governo-quer-celeridade-na-camara-diz-motta",
+      "por_que": "Segundo a matéria, a articulação mira aprovar antes do recesso de dezembro; o ritmo na Câmara define o tamanho do prêmio fiscal no DI e no real.",
+      "impacto": {
+        "wdo": "baixa",
+        "di": "baixa"
+      }
+    },
+    {
+      "titulo": "Wall Street cai na sexta com tombo de chips, mas fecha semana no azul; Treasury de 10 anos vai a 5,15%",
+      "fonte": "AP (via WHDH)",
+      "hora": "sex 19h12",
+      "url": "https://whdh.com/news/stocks-fall-but-wall-street-notches-a-winning-week-after-several-turbulent-days/",
+      "por_que": "Nvidia −2%, AMD −8,8% e Broadcom −4,8%; juros americanos em alta e expectativa de alta do Fed em dezembro sustentam o dólar global.",
+      "impacto": {
+        "win": "baixa",
+        "wdo": "alta",
+        "di": "alta"
+      }
+    },
+    {
+      "titulo": "PPI dos EUA sobe 0,3% em outubro, abaixo do esperado; mercado vê pacote fiscal como insuficiente",
+      "fonte": "Forbes Brasil",
+      "hora": "sex 19h09",
+      "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-tem-leve-ganho-dolar-fecha-estavel-ante-ao-real/",
+      "por_que": "Inflação ao produtor abaixo do consenso alivia um pouco os juros americanos; no Brasil, JPMorgan e Akros avaliam que o ajuste depende mais de receita, o que mantém o prêmio no câmbio.",
+      "impacto": {
+        "wdo": "alta"
+      }
     }
   ],
+  "proximo_pregao": {
+    "data": "2026-11-16",
+    "o_que_esperar": "A abertura deve reagir ao Focus (8h25), ao IBC-Br (9h) e aos dados de atividade da China divulgados na noite de domingo (23h); o mercado chega à semana à espera dos destaques do ajuste no Senado (terça) e do balanço da Nvidia."
+  },
   "fontes": [
     {
-      "titulo": "Agência Senado (via O Povo) — Senado Federal aprova projeto que prevê ajuste fiscal de até R$ 60 bilhões",
-      "url": "https://www.opovo.com.br/noticias/economia/2026/11/12/senado-federal-aprova-texto-base-de-projeto-que-preve-ajuste-fiscal-de-ate-rs-60-bilhoes.html"
+      "titulo": "Agência Brasil (via O Povo) — Dólar fecha estável a R$ 5,65, mas sobe 2,63% na semana",
+      "url": "https://www.opovo.com.br/noticias/economia/2026/11/13/dolar-fecha-estavel-a-rs-565-mas-sobe-263-na-semana.html"
     },
     {
-      "titulo": "O Povo (Agência Estado) — Fechamento do mercado financeiro",
-      "url": "https://opovo.com.br/noticias/economia/2026/11/12/fechamento-do-mercado-financeiro.html"
+      "titulo": "Forbes Brasil — Ibovespa tem leve ganho; dólar fecha estável ante o real",
+      "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-tem-leve-ganho-dolar-fecha-estavel-ante-ao-real/"
     },
     {
-      "titulo": "InfoMoney — Varejo brasileiro, inflação ao produtor nos EUA e PIB europeu movimentam a sexta",
-      "url": "https://www.infomoney.com.br/mercados/varejo-brasileiro-inflacao-eua-pib-europa-agenda-13112026/"
+      "titulo": "AP (via WHDH) — Stocks fall but Wall Street notches a winning week",
+      "url": "https://whdh.com/news/stocks-fall-but-wall-street-notches-a-winning-week-after-several-turbulent-days/"
     },
     {
-      "titulo": "InfoMoney — Futuros de NY caem com incertezas sobre a Nvidia e inflação ao produtor no radar",
-      "url": "https://www.infomoney.com.br/mercados/futuros-de-ny-caem-com-incertezas-sobre-a-nvidia-e-inflacao-ao-produtor-no-radar/"
+      "titulo": "Correio Braziliense — Guimarães diz que Câmara votará PLP 'imediatamente' após Senado",
+      "url": "https://www.correiobraziliense.com.br/politica/2026/11/7538158-ajuste-fiscal-guimaraes-diz-que-camara-votara-plp-imediatamente-apos-senado.html"
     },
     {
-      "titulo": "Nvidia — NVIDIA Announces CEO Transition",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+      "titulo": "SBT News — Ajuste fiscal: governo quer celeridade na Câmara, diz Motta",
+      "url": "https://sbtnews.sbt.com.br/noticia/politica/ajuste-fiscal-governo-quer-celeridade-na-camara-diz-motta"
     },
     {
-      "titulo": "Stock Titan — The PPI Report Comes Friday, With Economists Expecting a 6.6% Yearly Rise",
-      "url": "https://www.stocktitan.net/articles/october-2026-ppi-preview-yearly-rate"
+      "titulo": "Newsquawk — Week in Focus 16-20th November 2026",
+      "url": "https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs"
     }
   ]
 }
