@@ -4,7 +4,7 @@ name: IndexNow
 on:
   push:
     branches: [main]
-    paths: ['*.html', 'semana/*.html', 'leitura/*.html', 'acoes/*.html', 'glossario/*.html', 'sitemap.xml']
+    paths: ['*.html', 'semana/*.html', 'leitura/*.html', 'acoes/*.html', 'glossario/*.html', 'dados/*.html', 'juros/*.html', 'sitemap.xml']
   workflow_dispatch: {}
 
 permissions:
@@ -20,3 +20,9 @@ jobs:
           fetch-depth: 2
       - run: sleep 60   # espera o GitHub Pages publicar
       - run: python3 coletor/indexnow.py
+      - name: Google (reenviar o sitemap ao Search Console)
+        env:
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+        run: |
+          pip install -q google-auth requests || true
+          python3 -c "import sys; sys.path.insert(0, 'coletor'); import avisar_buscadores as a; a.google_sitemap()"
