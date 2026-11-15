@@ -29,8 +29,8 @@ jobs:
         run: python3 coletor/reacao.py
       - name: Páginas da divulgação e do dado (dados/)
         run: |
-          python3 scripts/divulgacao_paginas.py || echo "::warning::Falha nas páginas de divulgação."
-          python3 scripts/dados_paginas.py || echo "::warning::Falha nas páginas de dados."
+          python3 scripts/divulgacao_paginas.py | tee -a "$RUNNER_TEMP/gerado.txt" || echo "::warning::Falha nas páginas de divulgação."
+          python3 scripts/dados_paginas.py | tee -a "$RUNNER_TEMP/gerado.txt" || echo "::warning::Falha nas páginas de dados."
       - name: Publicar
         run: |
           [ -f data/reacoes.json ] || exit 0
@@ -40,3 +40,13 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "reação: $(TZ=America/Sao_Paulo date '+%F %H:%M')"
           ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]
+      - name: Avisar buscadores (IndexNow e Google)
+        if: always()
+        env:
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+        run: |
+          P=$(grep -h '^PAGINAS=' "$RUNNER_TEMP/gerado.txt" 2>/dev/null | sed 's/^PAGINAS=//' | tr '\n' ' ' | xargs -n1 2>/dev/null | sort -u | xargs)
+          [ -n "$P" ] || { echo "Nenhuma página nova."; exit 0; }
+          pip install -q google-auth requests || true
+          sleep 60   # espera o GitHub Pages publicar
+          PAGINAS="$P" python3 coletor/avisar_buscadores.py
