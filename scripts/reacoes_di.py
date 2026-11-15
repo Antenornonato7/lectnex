@@ -57,6 +57,10 @@ def main():
     if not faltam:
         print('Reação do DI: nada a medir.')
         return
+    try:  # dias de salto da curva por outro motivo (ex.: eleição): a medida do dia não é do dado
+        saltos = set(json.load(open('data/juros-saltos.json', encoding='utf-8')).get('dias', {}))
+    except Exception:
+        saltos = set()
     por_dia = curvas_pre(curva.get(curva.CSV_URL, 180).decode('latin-1'))
     dias = sorted(por_dia)
     feitos = 0
@@ -70,7 +74,11 @@ def main():
         a, b = taxa_2a(por_dia[d]), taxa_2a(por_dia[depois])
         if a is None or b is None:
             continue
-        r['di_bps'] = round((b - a) * 100, 1)
+        if depois.isoformat() in saltos and depois != d:
+            r['di_bps'] = None
+            r['di_obs'] = f'não medido: a curva saltou em {depois:%d/%m} por outro motivo (ver lectnex.com.br/juros/)'
+        else:
+            r['di_bps'] = round((b - a) * 100, 1)
         r['di_janela'] = JANELA
         feitos += 1
     if feitos:
