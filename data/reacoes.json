@@ -15,7 +15,9 @@
    "win": -0.256,
    "win_abertura": true,
    "wdo": 0.337,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 18.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-11-06|18h30|copom",
@@ -30,7 +32,9 @@
    "janela": "1h",
    "win": -0.034,
    "win_abertura": true,
-   "wdo": 0.044
+   "wdo": 0.044,
+   "di_bps": -9.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-11-07|16h|fomc",
@@ -44,7 +48,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": 0.008,
-   "wdo": -0.083
+   "wdo": -0.083,
+   "di_bps": 11.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-11-08|09h|ipca",
@@ -60,7 +66,9 @@
    "win": -0.008,
    "win_abertura": true,
    "wdo": 0.255,
-   "fonte_consenso": "Nord Research"
+   "fonte_consenso": "Nord Research",
+   "di_bps": 4.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-11-13|10h30|cpi-eua",
@@ -75,7 +83,9 @@
    "janela": "1h",
    "win": -0.472,
    "wdo": 0.698,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 1.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-12-06|10h30|payroll",
@@ -90,7 +100,9 @@
    "janela": "1h",
    "win": -1.029,
    "wdo": 0.758,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 22.7,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-12-10|09h|ipca",
@@ -106,7 +118,9 @@
    "win": 0.038,
    "win_abertura": true,
    "wdo": -0.536,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": -15.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-12-11|10h30|cpi-eua",
@@ -121,7 +135,9 @@
    "janela": "1h",
    "win": -0.423,
    "wdo": -0.589,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -2.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-12-11|18h30|copom",
@@ -136,7 +152,9 @@
    "janela": "1h",
    "win": -0.292,
    "win_abertura": true,
-   "wdo": -0.131
+   "wdo": -0.131,
+   "di_bps": -2.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2024-12-18|16h|fomc",
@@ -150,7 +168,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": -0.909,
-   "wdo": 0.8
+   "wdo": 0.8,
+   "di_bps": 88.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-01-10|09h|ipca",
@@ -166,7 +186,9 @@
    "win": -0.036,
    "win_abertura": true,
    "wdo": -0.043,
-   "fonte_consenso": "Reuters"
+   "fonte_consenso": "Reuters",
+   "di_bps": 7.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-01-10|10h30|payroll",
@@ -181,7 +203,9 @@
    "janela": "1h",
    "win": -0.602,
    "wdo": 0.791,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 7.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-01-15|10h30|cpi-eua",
@@ -196,7 +220,9 @@
    "janela": "1h",
    "win": 1.205,
    "wdo": -0.292,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -5.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-01-29|16h|fomc",
@@ -210,7 +236,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": -0.118,
-   "wdo": -0.053
+   "wdo": -0.053,
+   "di_bps": -6.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-01-29|18h30|copom",
@@ -225,7 +253,9 @@
    "janela": "1h",
    "win": -0.284,
    "win_abertura": true,
-   "wdo": 0.099
+   "wdo": 0.099,
+   "di_bps": -6.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-02-07|10h30|payroll",
@@ -240,7 +270,9 @@
    "janela": "1h",
    "win": -0.363,
    "wdo": -0.409,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 21.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-02-11|09h|ipca",
@@ -256,7 +288,9 @@
    "win": -0.085,
    "win_abertura": true,
    "wdo": -0.143,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": -9.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-02-12|10h30|cpi-eua",
@@ -271,7 +305,9 @@
    "janela": "1h",
    "win": -1.385,
    "wdo": -0.045,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -1.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-03-07|10h30|payroll",
@@ -286,7 +322,9 @@
    "janela": "1h",
    "win": 0.661,
    "wdo": 0.087,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -11.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-03-12|09h30|cpi-eua",
@@ -302,7 +340,9 @@
    "win": 0.159,
    "win_abertura": true,
    "wdo": -0.031,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -2.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-03-12|09h|ipca",
@@ -318,7 +358,9 @@
    "win": -0.084,
    "win_abertura": true,
    "wdo": 0.535,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": -2.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-03-19|15h|fomc",
@@ -332,7 +374,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": 0.536,
-   "wdo": -0.459
+   "wdo": -0.459,
+   "di_bps": 9.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-03-19|18h30|copom",
@@ -347,7 +391,9 @@
    "janela": "1h",
    "win": -0.046,
    "win_abertura": true,
-   "wdo": -0.22
+   "wdo": -0.22,
+   "di_bps": 9.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-04-04|09h30|payroll",
@@ -363,7 +409,9 @@
    "win": -2.686,
    "win_abertura": true,
    "wdo": 1.117,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 2.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-04-10|09h30|cpi-eua",
@@ -379,7 +427,9 @@
    "win": -0.968,
    "win_abertura": true,
    "wdo": 0.696,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -4.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-04-11|09h|ipca",
@@ -395,7 +445,9 @@
    "win": 0.308,
    "win_abertura": true,
    "wdo": -0.735,
-   "fonte_consenso": "VT Markets"
+   "fonte_consenso": "VT Markets",
+   "di_bps": -17.7,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-05-02|09h30|payroll",
@@ -411,7 +463,9 @@
    "win": -0.163,
    "win_abertura": true,
    "wdo": -0.419,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 2.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-05-07|15h|fomc",
@@ -425,7 +479,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": 0.006,
-   "wdo": 0.057
+   "wdo": 0.057,
+   "di_bps": -11.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-05-07|18h30|copom",
@@ -440,7 +496,9 @@
    "janela": "1h",
    "win": 0.128,
    "win_abertura": true,
-   "wdo": -0.038
+   "wdo": -0.038,
+   "di_bps": -11.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-05-09|09h|ipca",
@@ -456,7 +514,9 @@
    "win": -0.267,
    "win_abertura": true,
    "wdo": -0.382,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": 5.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-05-13|09h30|cpi-eua",
@@ -472,7 +532,9 @@
    "win": 0.749,
    "win_abertura": true,
    "wdo": -0.712,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 7.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-06-06|09h30|payroll",
@@ -488,7 +550,9 @@
    "win": 0.372,
    "win_abertura": true,
    "wdo": -0.011,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -13.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-06-10|09h|ipca",
@@ -504,7 +568,9 @@
    "win": 0.045,
    "win_abertura": true,
    "wdo": -0.103,
-   "fonte_consenso": "Investing.com"
+   "fonte_consenso": "Investing.com",
+   "di_bps": -1.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-06-11|09h30|cpi-eua",
@@ -520,7 +586,9 @@
    "win": -0.019,
    "win_abertura": true,
    "wdo": -0.662,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 2.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-06-18|15h|fomc",
@@ -534,7 +602,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": -0.309,
-   "wdo": 0.144
+   "wdo": 0.144,
+   "di_bps": -1.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-06-18|18h30|copom",
@@ -549,7 +619,9 @@
    "janela": "1h",
    "win": 0.065,
    "win_abertura": true,
-   "wdo": -0.307
+   "wdo": -0.307,
+   "di_bps": -1.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-07-03|09h30|payroll",
@@ -565,7 +637,9 @@
    "win": 1.273,
    "win_abertura": true,
    "wdo": -0.221,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 7.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-07-10|09h|ipca",
@@ -581,7 +655,9 @@
    "win": 0.017,
    "win_abertura": true,
    "wdo": -0.746,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": -15.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-07-15|09h30|cpi-eua",
@@ -597,7 +673,9 @@
    "win": -0.293,
    "win_abertura": true,
    "wdo": -0.61,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 10.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-07-30|15h|fomc",
@@ -611,7 +689,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": 0.76,
-   "wdo": -0.486
+   "wdo": -0.486,
+   "di_bps": 7.5,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-07-30|18h30|copom",
@@ -626,7 +706,9 @@
    "janela": "1h",
    "win": 0.011,
    "win_abertura": true,
-   "wdo": 0.133
+   "wdo": 0.133,
+   "di_bps": 7.5,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-08-01|09h30|payroll",
@@ -642,7 +724,9 @@
    "win": 0.091,
    "win_abertura": true,
    "wdo": -1.336,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -17.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-08-12|09h30|cpi-eua",
@@ -658,7 +742,9 @@
    "win": 1.366,
    "win_abertura": true,
    "wdo": -0.491,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -12.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-08-12|09h|ipca",
@@ -674,7 +760,9 @@
    "win": -0.067,
    "win_abertura": true,
    "wdo": -0.669,
-   "fonte_consenso": "Invezz"
+   "fonte_consenso": "Invezz",
+   "di_bps": -12.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-09-05|09h30|payroll",
@@ -690,7 +778,9 @@
    "win": 1.562,
    "win_abertura": true,
    "wdo": -1.182,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -4.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-09-10|09h|ipca",
@@ -706,7 +796,9 @@
    "win": -0.075,
    "win_abertura": true,
    "wdo": -0.052,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": -1.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-09-11|09h30|cpi-eua",
@@ -722,7 +814,9 @@
    "win": 0.579,
    "win_abertura": true,
    "wdo": -0.368,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 1.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-09-17|15h|fomc",
@@ -736,7 +830,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": -0.163,
-   "wdo": 0.006
+   "wdo": 0.006,
+   "di_bps": 0.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-09-17|18h30|copom",
@@ -751,7 +847,9 @@
    "janela": "1h",
    "win": 0.13,
    "win_abertura": true,
-   "wdo": 0.094
+   "wdo": 0.094,
+   "di_bps": 0.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-10-09|09h|ipca",
@@ -767,7 +865,9 @@
    "win": 0.094,
    "win_abertura": true,
    "wdo": -0.109,
-   "fonte_consenso": "VT Markets"
+   "fonte_consenso": "VT Markets",
+   "di_bps": -2.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-10-24|09h30|cpi-eua",
@@ -783,7 +883,9 @@
    "win": 0.59,
    "win_abertura": true,
    "wdo": -0.382,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -9.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-10-29|15h|fomc",
@@ -797,7 +899,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": -0.218,
-   "wdo": 0.283
+   "wdo": 0.283,
+   "di_bps": 5.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-11-05|18h30|copom",
@@ -812,7 +916,9 @@
    "janela": "1h",
    "win": 0.095,
    "win_abertura": true,
-   "wdo": 0.058
+   "wdo": 0.058,
+   "di_bps": -1.7,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-11-11|09h|ipca",
@@ -828,7 +934,9 @@
    "win": 0.15,
    "win_abertura": true,
    "wdo": 0.008,
-   "fonte_consenso": "VT Markets"
+   "fonte_consenso": "VT Markets",
+   "di_bps": 1.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-11-20|10h30|payroll",
@@ -860,7 +968,9 @@
    "win": -0.398,
    "win_abertura": true,
    "wdo": 0.07,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": 10.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-12-10|16h|fomc",
@@ -874,7 +984,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": 0.114,
-   "wdo": -0.374
+   "wdo": -0.374,
+   "di_bps": 10.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-12-10|18h30|copom",
@@ -889,7 +1001,9 @@
    "janela": "1h",
    "win": 0.308,
    "win_abertura": true,
-   "wdo": -0.024
+   "wdo": -0.024,
+   "di_bps": 10.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-12-16|10h30|payroll",
@@ -904,7 +1018,9 @@
    "janela": "1h",
    "win": -1.45,
    "wdo": 0.278,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 15.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2025-12-18|10h30|cpi-eua",
@@ -919,7 +1035,9 @@
    "janela": "1h",
    "win": 0.131,
    "wdo": -0.47,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -3.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-01-09|09h|ipca",
@@ -935,7 +1053,9 @@
    "win": 0.237,
    "win_abertura": true,
    "wdo": -0.165,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": -1.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-01-09|10h30|payroll",
@@ -950,7 +1070,9 @@
    "janela": "1h",
    "win": 0.635,
    "wdo": -0.431,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -1.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-01-13|10h30|cpi-eua",
@@ -965,7 +1087,9 @@
    "janela": "1h",
    "win": -0.501,
    "wdo": -0.091,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -4.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-01-28|16h|fomc",
@@ -979,7 +1103,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": 0.194,
-   "wdo": -0.28
+   "wdo": -0.28,
+   "di_bps": -15.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-01-28|18h30|copom",
@@ -994,7 +1120,9 @@
    "janela": "1h",
    "win": 0.679,
    "win_abertura": true,
-   "wdo": 0.004
+   "wdo": 0.004,
+   "di_bps": -15.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-02-10|09h|ipca",
@@ -1010,7 +1138,9 @@
    "win": 0.104,
    "win_abertura": true,
    "wdo": 0.167,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": 3.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-02-11|10h30|payroll",
@@ -1025,7 +1155,9 @@
    "janela": "1h",
    "win": 1.549,
    "wdo": 0.012,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -4.7,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-02-13|10h30|cpi-eua",
@@ -1040,7 +1172,9 @@
    "janela": "1h",
    "win": -2.036,
    "wdo": 0.51,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -6.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-03-06|10h30|payroll",
@@ -1055,7 +1189,9 @@
    "janela": "1h",
    "win": -0.986,
    "wdo": 0.038,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 15.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-03-11|09h30|cpi-eua",
@@ -1071,7 +1207,9 @@
    "win": 1.026,
    "win_abertura": true,
    "wdo": -0.259,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 16.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-03-12|09h|ipca",
@@ -1087,7 +1225,9 @@
    "win": 0.107,
    "win_abertura": true,
    "wdo": 0.089,
-   "fonte_consenso": "FXStreet"
+   "fonte_consenso": "FXStreet",
+   "di_bps": 16.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-03-18|15h|fomc",
@@ -1101,7 +1241,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": -0.711,
-   "wdo": 0.377
+   "wdo": 0.377,
+   "di_bps": 18.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-03-18|18h30|copom",
@@ -1117,7 +1259,9 @@
    "win": -0.156,
    "win_abertura": true,
    "wdo": -0.361,
-   "wdo_abertura": true
+   "wdo_abertura": true,
+   "di_bps": 18.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-04-03|09h30|payroll",
@@ -1149,7 +1293,9 @@
    "win": 1.077,
    "win_abertura": true,
    "wdo": -0.881,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 12.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-04-10|09h|ipca",
@@ -1165,7 +1311,9 @@
    "win": -0.123,
    "win_abertura": true,
    "wdo": -0.737,
-   "fonte_consenso": "FXStreet"
+   "fonte_consenso": "FXStreet",
+   "di_bps": 12.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-04-29|15h|fomc",
@@ -1179,7 +1327,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": -0.3,
-   "wdo": 0.252
+   "wdo": 0.252,
+   "di_bps": 5.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-04-29|18h30|copom",
@@ -1194,7 +1344,9 @@
    "janela": "1h",
    "win": 0.069,
    "win_abertura": true,
-   "wdo": -0.034
+   "wdo": -0.034,
+   "di_bps": 5.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-05-08|09h30|payroll",
@@ -1210,7 +1362,9 @@
    "win": 1.096,
    "win_abertura": true,
    "wdo": -0.654,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 4.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-05-12|09h30|cpi-eua",
@@ -1226,7 +1380,9 @@
    "win": -0.402,
    "win_abertura": true,
    "wdo": 0.074,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 1.7,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-05-12|09h|ipca",
@@ -1242,7 +1398,9 @@
    "win": -0.021,
    "win_abertura": true,
    "wdo": -0.153,
-   "fonte_consenso": "SBT News"
+   "fonte_consenso": "SBT News",
+   "di_bps": 1.7,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-06-05|09h30|payroll",
@@ -1258,7 +1416,9 @@
    "win": -0.26,
    "win_abertura": true,
    "wdo": 0.833,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 37.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-06-10|09h30|cpi-eua",
@@ -1274,7 +1434,9 @@
    "win": -0.342,
    "win_abertura": true,
    "wdo": -0.443,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -17.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-06-12|09h|ipca",
@@ -1290,7 +1452,9 @@
    "win": 0.0,
    "win_abertura": true,
    "wdo": -0.174,
-   "fonte_consenso": "Itaú Macro"
+   "fonte_consenso": "Itaú Macro",
+   "di_bps": -18.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-06-17|15h|fomc",
@@ -1304,7 +1468,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": -0.83,
-   "wdo": 0.582
+   "wdo": 0.582,
+   "di_bps": 24.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-06-17|18h30|copom",
@@ -1319,7 +1485,9 @@
    "janela": "1h",
    "win": 0.227,
    "win_abertura": true,
-   "wdo": -0.113
+   "wdo": -0.113,
+   "di_bps": 24.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-07-02|09h30|payroll",
@@ -1335,7 +1503,9 @@
    "win": 1.008,
    "win_abertura": true,
    "wdo": -0.493,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 9.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-07-10|09h|ipca",
@@ -1351,7 +1521,9 @@
    "win": -0.039,
    "win_abertura": true,
    "wdo": -0.209,
-   "fonte_consenso": "FXStreet"
+   "fonte_consenso": "FXStreet",
+   "di_bps": 6.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-07-14|09h30|cpi-eua",
@@ -1367,7 +1539,9 @@
    "win": 0.649,
    "win_abertura": true,
    "wdo": -1.167,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -13.5,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-07-29|15h|fomc",
@@ -1381,7 +1555,9 @@
    "surpresa": null,
    "janela": "1h",
    "win": 0.475,
-   "wdo": -0.626
+   "wdo": -0.626,
+   "di_bps": -16.9,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-08-05|18h30|copom",
@@ -1396,7 +1572,9 @@
    "janela": "1h",
    "win": -0.049,
    "win_abertura": true,
-   "wdo": -0.035
+   "wdo": -0.035,
+   "di_bps": 11.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-08-07|09h30|payroll",
@@ -1412,7 +1590,9 @@
    "win": -0.609,
    "win_abertura": true,
    "wdo": -0.305,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": -0.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-08-11|09h|ipca",
@@ -1428,7 +1608,9 @@
    "win": -0.05,
    "win_abertura": true,
    "wdo": -0.047,
-   "fonte_consenso": "The Rio Times"
+   "fonte_consenso": "The Rio Times",
+   "di_bps": 3.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-08-12|09h30|cpi-eua",
@@ -1444,7 +1626,9 @@
    "win": -0.151,
    "win_abertura": true,
    "wdo": -0.073,
-   "fonte_consenso": "FXBlue e EnergyExch"
+   "fonte_consenso": "FXBlue e EnergyExch",
+   "di_bps": 7.7,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-09-04|09h30|payroll",
@@ -1458,7 +1642,9 @@
    "surpresa": "acima",
    "win": -0.378,
    "win_abertura": true,
-   "wdo": 0.137
+   "wdo": 0.137,
+   "di_bps": -8.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-09-11|09h00|ipca",
@@ -1472,7 +1658,9 @@
    "surpresa": "abaixo",
    "win": 0.154,
    "win_abertura": true,
-   "wdo": 0.027
+   "wdo": 0.027,
+   "di_bps": 18.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-09-11|09h30|cpi-eua",
@@ -1486,7 +1674,9 @@
    "surpresa": "em linha",
    "win": 0.154,
    "win_abertura": true,
-   "wdo": -0.596
+   "wdo": -0.596,
+   "di_bps": 18.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-09-16|15h00|fomc",
@@ -1499,7 +1689,9 @@
    "consenso": null,
    "surpresa": null,
    "win": -0.126,
-   "wdo": 0.309
+   "wdo": 0.309,
+   "di_bps": -6.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-09-16|18h30|copom",
@@ -1513,7 +1705,9 @@
    "surpresa": "em linha",
    "win": 0.274,
    "win_abertura": true,
-   "wdo": 0.085
+   "wdo": 0.085,
+   "di_bps": -6.8,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-09-25|09h00|ipca-15",
@@ -1527,7 +1721,9 @@
    "surpresa": "acima",
    "win": -0.352,
    "win_abertura": true,
-   "wdo": 0.021
+   "wdo": 0.021,
+   "di_bps": 1.7,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-10-02|09h30|payroll",
@@ -1541,7 +1737,9 @@
    "surpresa": "abaixo",
    "win": 0.234,
    "win_abertura": true,
-   "wdo": -0.035
+   "wdo": -0.035,
+   "di_bps": -102.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-10-09|09h00|ipca",
@@ -1555,7 +1753,9 @@
    "surpresa": "acima",
    "win": 0.472,
    "win_abertura": true,
-   "wdo": 0.102
+   "wdo": 0.102,
+   "di_bps": 10.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-10-14|09h30|cpi-eua",
@@ -1569,7 +1769,9 @@
    "surpresa": "em linha",
    "win": -0.327,
    "win_abertura": true,
-   "wdo": -0.056
+   "wdo": -0.056,
+   "di_bps": 9.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-10-28|15h00|fomc",
@@ -1582,7 +1784,9 @@
    "consenso": null,
    "surpresa": null,
    "win": 0.454,
-   "wdo": -0.167
+   "wdo": -0.167,
+   "di_bps": -8.2,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-02|12h|ism-industrial",
@@ -1608,7 +1812,9 @@
    "consenso": "7,1 milhões",
    "surpresa": "acima",
    "win": null,
-   "wdo": 0.056
+   "wdo": 0.056,
+   "di_bps": -5.5,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-04|07h|inflacao-zona-euro",
@@ -1623,7 +1829,9 @@
    "win": 0.135,
    "win_abertura": true,
    "wdo": 0.0,
-   "wdo_abertura": true
+   "wdo_abertura": true,
+   "di_bps": -18.5,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-04|10h15|adp",
@@ -1636,7 +1844,9 @@
    "consenso": "69 mil",
    "surpresa": null,
    "win": 0.142,
-   "wdo": 0.073
+   "wdo": 0.073,
+   "di_bps": -18.5,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-04|12h|ism-servicos",
@@ -1649,7 +1859,9 @@
    "consenso": "54,8",
    "surpresa": null,
    "win": 0.118,
-   "wdo": 0.069
+   "wdo": 0.069,
+   "di_bps": -18.5,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-04|14h30|caged",
@@ -1662,7 +1874,9 @@
    "consenso": "150 mil",
    "surpresa": "abaixo",
    "win": -0.142,
-   "wdo": -0.185
+   "wdo": -0.185,
+   "di_bps": -18.5,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-05|09h|boe",
@@ -1676,7 +1890,9 @@
    "surpresa": "em linha",
    "win": 0.076,
    "win_abertura": true,
-   "wdo": 0.351
+   "wdo": 0.351,
+   "di_bps": -14.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-05|09h|producao-industrial",
@@ -1690,7 +1906,9 @@
    "surpresa": "abaixo",
    "win": 0.076,
    "win_abertura": true,
-   "wdo": 0.351
+   "wdo": 0.351,
+   "di_bps": -14.6,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-06|10h30|desemprego-eua",
@@ -1703,7 +1921,9 @@
    "consenso": "4,2%",
    "surpresa": "abaixo",
    "win": 0.097,
-   "wdo": 0.255
+   "wdo": 0.255,
+   "di_bps": -6.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-06|10h30|payroll",
@@ -1716,7 +1936,9 @@
    "consenso": "65 mil",
    "surpresa": "acima",
    "win": 0.097,
-   "wdo": 0.255
+   "wdo": 0.255,
+   "di_bps": -6.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-06|10h30|salario-eua",
@@ -1729,7 +1951,9 @@
    "consenso": "0,3%",
    "surpresa": "acima",
    "win": 0.097,
-   "wdo": 0.255
+   "wdo": 0.255,
+   "di_bps": -6.4,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-10|00h|balanca-china",
@@ -1744,7 +1968,9 @@
    "win": 0.486,
    "win_abertura": true,
    "wdo": 0.0,
-   "wdo_abertura": true
+   "wdo_abertura": true,
+   "di_bps": 6.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-10|08h|ata-copom",
@@ -1759,7 +1985,9 @@
    "win": 0.486,
    "win_abertura": true,
    "wdo": -0.007,
-   "wdo_abertura": true
+   "wdo_abertura": true,
+   "di_bps": 6.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-10|10h30|cpi-eua",
@@ -1772,7 +2000,9 @@
    "consenso": "0,3%",
    "surpresa": "acima",
    "win": -0.255,
-   "wdo": 0.18
+   "wdo": 0.18,
+   "di_bps": 6.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-10|10h30|cpi-nucleo-eua",
@@ -1785,7 +2015,9 @@
    "consenso": "0,2%",
    "surpresa": "acima",
    "win": -0.255,
-   "wdo": 0.18
+   "wdo": 0.18,
+   "di_bps": 6.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-10|14h30|fala-bcb",
@@ -1798,7 +2030,9 @@
    "consenso": null,
    "surpresa": null,
    "win": -0.355,
-   "wdo": -0.107
+   "wdo": -0.107,
+   "di_bps": 6.0,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-11|09h|pms-brasil",
@@ -1812,7 +2046,9 @@
    "surpresa": null,
    "win": 0.481,
    "win_abertura": true,
-   "wdo": -0.02
+   "wdo": -0.02,
+   "di_bps": 0.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-11|14h15|fala-bcb",
@@ -1825,7 +2061,9 @@
    "consenso": null,
    "surpresa": null,
    "win": -0.133,
-   "wdo": 0.074
+   "wdo": 0.074,
+   "di_bps": 0.1,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-12|09h|ipca",
@@ -1839,7 +2077,9 @@
    "surpresa": "abaixo",
    "win": -0.654,
    "win_abertura": true,
-   "wdo": 0.217
+   "wdo": 0.217,
+   "di_bps": 19.3,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
   },
   {
    "id": "2026-11-13|09h|varejo-brasil",
@@ -1882,5 +2122,6 @@
    "wdo": 0.392
   }
  ],
- "atualizado_em": "2026-11-13T19:50:24-03:00"
+ "atualizado_em": "2026-11-13T19:50:24-03:00",
+ "metodo_di": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte. Fonte: Tesouro Transparente (preços e taxas do Tesouro Direto)."
 }
