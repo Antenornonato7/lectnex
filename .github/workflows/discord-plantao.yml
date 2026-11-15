@@ -30,4 +30,6 @@ jobs:
       - name: Eventos ao vivo (Copom, payroll, IPCA…)
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
-        run: python3 scripts/discord_eventos.py
+        run: |
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          python3 scripts/discord_eventos.py
