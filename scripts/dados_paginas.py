@@ -61,9 +61,10 @@ def pagina(tipo, rs, cal):
     au, nu = media(rs, 'wdo', absoluto=True)
     ad, nd = media(rs, 'di_bps', absoluto=True)
     linhas = ''
+    recentes = {r['data'] for r in sorted(rs, key=lambda r: r['data'], reverse=True)[:12]}  # têm página própria (divulgacao_paginas.py)
     for r in sorted(rs, key=lambda r: r['data'], reverse=True):
         sup = r.get('surpresa')
-        linhas += (f'<tr class="border-t border-slate-100 dark:border-lect-borderDark"><td class="px-3 py-2 whitespace-nowrap">{br(dt.date.fromisoformat(r["data"]), True)}</td>'
+        linhas += (f'<tr class="border-t border-slate-100 dark:border-lect-borderDark"><td class="px-3 py-2 whitespace-nowrap">{(f'<a href="dados/{slug}-{r["data"]}.html" class="text-lect-teal hover:underline">' + br(dt.date.fromisoformat(r["data"]), True) + '</a>') if r['data'] in recentes else br(dt.date.fromisoformat(r["data"]), True)}</td>'
                    f'<td class="px-3 py-2 font-sans">{e(r.get("resultado") or "—")}</td><td class="px-3 py-2 font-sans text-slate-500">{e(r.get("consenso") or "—")}</td>'
                    f'<td class="px-3 py-2 whitespace-nowrap {"text-lect-orange" if sup == "acima" else "text-sky-600 dark:text-sky-400" if sup == "abaixo" else "text-slate-500"}">{ {"acima": "▲ acima", "abaixo": "▼ abaixo"}.get(sup, "em linha / s.d.") }</td>'
                    f'<td class="px-3 py-2 text-right {cor(r.get("win"))}">{pct(r.get("win"))}{"*" if r.get("win_abertura") else ""}</td>'

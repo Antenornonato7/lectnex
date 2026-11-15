@@ -28,6 +28,8 @@ jobs:
         run: python3 scripts/reacoes_di.py || echo "::warning::Falha ao medir a reação do DI."
       - name: Páginas de cada dado (dados/)
         run: python3 scripts/dados_paginas.py || echo "::warning::Falha nas páginas de dados."
+      - name: Páginas de cada divulgação
+        run: python3 scripts/divulgacao_paginas.py || echo "::warning::Falha nas páginas de divulgação."
       - name: Publicar
         run: |
           [ -f data/curva.json ] || exit 0
