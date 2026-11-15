@@ -325,14 +325,13 @@ def montar(simular):
             ajustes['safety_alerts_channel_id'] = cid('log-moderacao')
         if g.get('public_updates_channel_id') != cid('log-moderacao'):
             ajustes['public_updates_channel_id'] = cid('log-moderacao')
-    if ajustes:
+    NOMES = {'description': 'descrição', 'default_message_notifications': 'notificar só menções', 'system_channel_id': 'entradas em #apresente-se',
+             'system_channel_flags': 'sem avisos automáticos', 'safety_alerts_channel_id': 'alertas de segurança no log', 'public_updates_channel_id': 'avisos do Discord no log'}
+    for k, v in ajustes.items():  # um por vez: o que o Discord recusar não trava o resto
         try:
-            faz('Ajustes do servidor: ' + ', '.join({'description': 'descrição', 'default_message_notifications': 'notificar só menções',
-                                                     'system_channel_id': 'entradas em #apresente-se', 'system_channel_flags': 'sem avisos automáticos',
-                                                     'safety_alerts_channel_id': 'alertas de segurança no log', 'public_updates_channel_id': 'avisos do Discord no log'}[k] for k in ajustes),
-                'PATCH', f'/guilds/{GUILD}', ajustes)
+            faz(f'Ajuste do servidor: {NOMES[k]}', 'PATCH', f'/guilds/{GUILD}', {k: v})
         except SystemExit as e:
-            print(f'::warning::Ajustes do servidor: {e}')
+            print(f'::warning::Ajuste "{NOMES[k]}" recusado: {e}')
 
     # 11. tela de boas-vindas (aparece para quem entra)
     tela = [('boas-vindas', 'Comece por aqui', '👋'), ('leitura-do-dia', 'Leitura do Dia às 7h40', '📊'), ('duvidas', 'Pergunte sem medo', '❓'),
