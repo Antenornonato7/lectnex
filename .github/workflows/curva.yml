@@ -23,13 +23,13 @@ jobs:
       - name: Página "Dias que mexeram nos juros"
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
-        run: python3 scripts/juros_saltos.py
+        run: python3 scripts/juros_saltos.py | tee -a "$RUNNER_TEMP/gerado.txt"
       - name: Reação do DI às divulgações
         run: python3 scripts/reacoes_di.py || echo "::warning::Falha ao medir a reação do DI."
       - name: Páginas de cada dado (dados/)
-        run: python3 scripts/dados_paginas.py || echo "::warning::Falha nas páginas de dados."
+        run: python3 scripts/dados_paginas.py | tee -a "$RUNNER_TEMP/gerado.txt" || echo "::warning::Falha nas páginas de dados."
       - name: Páginas de cada divulgação
-        run: python3 scripts/divulgacao_paginas.py || echo "::warning::Falha nas páginas de divulgação."
+        run: python3 scripts/divulgacao_paginas.py | tee -a "$RUNNER_TEMP/gerado.txt" || echo "::warning::Falha nas páginas de divulgação."
       - name: Publicar
         run: |
           [ -f data/curva.json ] || exit 0
@@ -39,3 +39,13 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "curva: $(TZ=America/Sao_Paulo date '+%F %H:%M')"
           ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]
+      - name: Avisar buscadores (IndexNow e Google)
+        if: always()
+        env:
+          GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
+        run: |
+          P=$(grep -h '^PAGINAS=' "$RUNNER_TEMP/gerado.txt" 2>/dev/null | sed 's/^PAGINAS=//' | tr '\n' ' ' | xargs -n1 2>/dev/null | sort -u | xargs)
+          [ -n "$P" ] || { echo "Nenhuma página nova."; exit 0; }
+          pip install -q google-auth requests || true
+          sleep 60   # espera o GitHub Pages publicar
+          PAGINAS="$P" python3 coletor/avisar_buscadores.py
