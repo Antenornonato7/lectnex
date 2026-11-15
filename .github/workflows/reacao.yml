@@ -27,12 +27,16 @@ jobs:
         env:
           TESTE: ${{ inputs.teste && '1' || '' }}
         run: python3 coletor/reacao.py
+      - name: Páginas da divulgação e do dado (dados/)
+        run: |
+          python3 scripts/divulgacao_paginas.py || echo "::warning::Falha nas páginas de divulgação."
+          python3 scripts/dados_paginas.py || echo "::warning::Falha nas páginas de dados."
       - name: Publicar
         run: |
           [ -f data/reacoes.json ] || exit 0
           git config user.name "lectnex-bot"
           git config user.email "bot@lectnex.com.br"
-          git add data/reacoes.json
+          git add data/reacoes.json dados/ sitemap.xml
           git diff --cached --quiet && exit 0
           git commit -m "reação: $(TZ=America/Sao_Paulo date '+%F %H:%M')"
           ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]
