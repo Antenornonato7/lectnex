@@ -1,23 +1,23 @@
 {
   "tipo": "sem-pregao",
-  "data": "2026-11-14",
-  "gerado_em": "2026-11-14T08:05:00-03:00",
-  "titulo": "Ibovespa fecha semana em alta; ajuste, IBC-Br e Nvidia no radar",
+  "data": "2026-11-15",
+  "gerado_em": "2026-11-15T08:20:00-03:00",
+  "titulo": "Fim de semana sem fato novo; IBC-Br, China e ajuste fiscal no radar",
   "resumo": [
-    "No último pregão (sexta, 13), o Ibovespa subiu 0,66%, a 172.457,77 pontos (+2,35% na semana), e o dólar à vista subiu 0,11%, a R$ 5,657, com alta de 2,63% na semana, segundo a Agência Brasil; o prêmio fiscal segue no câmbio e na curva do DI.",
-    "O ajuste fiscal (PLP 299/2026) ainda não saiu do Senado: os quatro destaques, que podem mudar o texto, ficaram para terça (17); o ministro José Guimarães diz haver acordo para a Câmara votar logo depois, mas Hugo Motta não fixou data.",
-    "Lá fora, o S&P 500 caiu 0,4% e o Nasdaq 0,9% na sexta, com a crise na Nvidia (balanço na terça, 17), e o Treasury de 10 anos subiu a 5,15%, segundo a AP; juros americanos altos sustentam o dólar global e pressionam o WDO.",
-    "O PPI americano subiu 0,3% em outubro, abaixo do consenso de 0,4%, mas o mercado segue esperando alta de juros do Fed em dezembro; a ata do FOMC sai na quarta (18), às 16h.",
-    "Até a manhã de sábado, não encontramos fato novo de peso confirmado em veículo da lista; a semana é curta no Brasil (B3 fechada na sexta, 20, Consciência Negra) e começa com Focus (8h25) e IBC-Br (9h) na segunda."
+    "No último pregão (sexta, 13), o Ibovespa subiu 0,66%, a 172.457,77 pontos (+2,35% na semana), e o dólar à vista subiu 0,11%, a R$ 5,657 (+2,63% na semana), segundo a Agência Brasil; o real segue carregando prêmio fiscal, que também aparece na curva do DI.",
+    "No sábado, o ministro do Planejamento, Bruno Moretti, defendeu em vídeo o ajuste fiscal (PLP 299/2026), cujo texto-base passou no Senado por 45 a 31; os quatro destaques ficam para terça (17), e o ganho estimado para 2027 é de R$ 45,1 bi a R$ 56,1 bi, abaixo dos R$ 50 bi a R$ 60 bi da proposta original.",
+    "No Fed, Christopher Waller disse que um aumento de 0,50 ponto em dezembro deveria ser considerado se o núcleo do CPI viesse em 0,3% ou mais, e o CPI de outubro subiu 0,3%; juros americanos mais altos sustentam o dólar global e pressionam o WDO e o DI.",
+    "Hoje à noite saem o PIB do Japão (20h50) e os dados de atividade da China de outubro (23h; consenso de +5,3% na produção industrial e +0,8% no varejo), que mexem com minério e Vale na abertura de segunda.",
+    "Fora isso, não encontramos fato novo de peso no fim de semana confirmado em veículo da lista; a semana é curta no Brasil (B3 fechada na sexta, 20, Consciência Negra)."
   ],
   "pontos": [
     {
-      "titulo": "Destaques do ajuste no Senado na terça",
-      "texto": "Quatro destaques podem mudar o PLP 299; depois o texto vai à Câmara. Mexe no DI longo e no real."
+      "titulo": "China e IBC-Br antes da abertura",
+      "texto": "Atividade chinesa (dom 23h) mexe com minério e Vale; IBC-Br (seg 9h) mexe nos DIs curtos."
     },
     {
-      "titulo": "IBC-Br de setembro na segunda, às 9h",
-      "texto": "Prévia do PIB calculada pelo BC; atividade fraca reforça a desaceleração e mexe nos DIs curtos."
+      "titulo": "Destaques do ajuste no Senado na terça",
+      "texto": "Quatro destaques podem mudar o PLP 299 antes da Câmara; o ritmo pesa no DI longo e no real."
     },
     {
       "titulo": "Varejo dos EUA e Nvidia na terça",
@@ -43,114 +43,69 @@
     {
       "hora": "ter 18h20",
       "evento": "Balanço da Nvidia (3º tri fiscal)",
-      "por_que": "Primeiro resultado após a renúncia de Jensen Huang; mexe no Nasdaq e no apetite a risco que chega ao WIN na quarta."
+      "por_que": "Primeiro resultado após a saída de Jensen Huang; mexe no Nasdaq e no apetite a risco que chega ao WIN na quarta."
     }
   ],
   "exterior": [
-    {
-      "ativo": "S&P 500 (fech. sex)",
-      "variacao": "−0,4%"
-    },
-    {
-      "ativo": "Nasdaq (fech. sex)",
-      "variacao": "−0,9%"
-    },
-    {
-      "ativo": "Dow Jones (fech. sex)",
-      "variacao": "+0,1%"
-    },
-    {
-      "ativo": "Treasury 10 anos",
-      "variacao": "+5 bp (5,15%)"
-    },
-    {
-      "ativo": "DXY",
-      "variacao": "+0,19% (103,42)"
-    },
-    {
-      "ativo": "Brent",
-      "variacao": "+0,02% (US$ 95,84)"
-    }
+    { "ativo": "S&P 500 (fech. sex)", "variacao": "−0,4%" },
+    { "ativo": "Nasdaq (fech. sex)", "variacao": "−0,9%" },
+    { "ativo": "Dow Jones (fech. sex)", "variacao": "+0,1%" },
+    { "ativo": "Treasury 10 anos", "variacao": "+5 bp (5,15%)" },
+    { "ativo": "DXY", "variacao": "+0,19% (103,42)" },
+    { "ativo": "Brent", "variacao": "+0,02% (US$ 95,84)" }
   ],
   "noticias": [
     {
-      "titulo": "Ibovespa sobe 0,66% na sexta e fecha a semana com ganho de 2,35%; dólar sobe 2,63% na semana",
-      "fonte": "Agência Brasil (via O Povo)",
-      "hora": "sex 19h32",
-      "url": "https://www.opovo.com.br/noticias/economia/2026/11/13/dolar-fecha-estavel-a-rs-565-mas-sobe-263-na-semana.html",
-      "por_que": "Dólar a R$ 5,657 é o ponto de partida do WDO na segunda; bolsa e câmbio seguem descolados, com o fiscal pesando mais no real.",
+      "titulo": "Ministro do Planejamento defende ajuste fiscal e diz que há desinformação sobre o pacote",
+      "fonte": "A Crítica",
+      "hora": "sáb 13h30",
+      "url": "https://acritica.net/economia/ministro-defende-ajuste-fiscal-do-governo-e-diz-que-ha-muita-desinformacao-sobre-pacote/",
+      "por_que": "Segundo a matéria, o projeto pode limitar o crescimento real do gasto a 2% ao ano; a defesa pública antecede a votação dos destaques na terça, que define o tamanho do prêmio fiscal no DI e no real.",
       "impacto": {}
     },
     {
-      "titulo": "Destaques do ajuste fiscal ficam para terça; governo diz que Câmara vota logo em seguida",
-      "fonte": "Correio Braziliense",
-      "hora": "sex",
-      "url": "https://www.correiobraziliense.com.br/politica/2026/11/7538158-ajuste-fiscal-guimaraes-diz-que-camara-votara-plp-imediatamente-apos-senado.html",
-      "por_que": "Os destaques podem alterar o pacote de cerca de R$ 60 bi em 2027; desidratação tende a pressionar o DI longo e o dólar, e aprovação rápida tende a aliviar.",
+      "titulo": "Texto do Senado eleva corte de incentivos fiscais a 20% e pode afetar benefícios do Nordeste",
+      "fonte": "Movimento Econômico",
+      "hora": "sáb 04h56",
+      "url": "https://movimentoeconomico.com.br/economia/lei-de-incentivos/2026/11/14/plp-299-corte-de-incentivos-fiscais-pode-chegar-a-20-e-afetar-o-nordeste/",
+      "por_que": "O substitutivo de Eduardo Braga acrescenta 10% de corte de benefícios; a pressão regional pode pesar nos destaques e, se desidratar o texto, tende a pressionar o DI longo e o dólar.",
       "impacto": {}
     },
     {
-      "titulo": "Motta diz que governo pediu celeridade na votação do ajuste na Câmara",
-      "fonte": "SBT News",
-      "hora": "sex",
-      "url": "https://sbtnews.sbt.com.br/noticia/politica/ajuste-fiscal-governo-quer-celeridade-na-camara-diz-motta",
-      "por_que": "Segundo a matéria, a articulação mira aprovar antes do recesso de dezembro; o ritmo na Câmara define o tamanho do prêmio fiscal no DI e no real.",
-      "impacto": {
-        "wdo": "baixa",
-        "di": "baixa"
-      }
+      "titulo": "Ibovespa sobe 0,66% na sexta e fecha a segunda semana seguida em alta; pacote fiscal é visto como insuficiente",
+      "fonte": "InfoMoney",
+      "hora": "sex 18h28",
+      "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-13112026/",
+      "por_que": "Ponto de partida do WIN na segunda; segundo a matéria, o JPMorgan estima o pacote em 0,35% a 0,45% do PIB, o que mantém o prêmio no câmbio.",
+      "impacto": {}
     },
     {
-      "titulo": "Wall Street cai na sexta com tombo de chips, mas fecha semana no azul; Treasury de 10 anos vai a 5,15%",
-      "fonte": "AP (via WHDH)",
-      "hora": "sex 19h12",
-      "url": "https://whdh.com/news/stocks-fall-but-wall-street-notches-a-winning-week-after-several-turbulent-days/",
-      "por_que": "Nvidia −2%, AMD −8,8% e Broadcom −4,8%; juros americanos em alta e expectativa de alta do Fed em dezembro sustentam o dólar global.",
-      "impacto": {
-        "win": "baixa",
-        "wdo": "alta",
-        "di": "alta"
-      }
+      "titulo": "Galípolo diz que incerteza elevada recomenda o BC não dar orientação sobre os próximos passos",
+      "fonte": "Diário do Grande ABC",
+      "hora": "sex 11h24",
+      "url": "https://dgabc.com.br/Noticia/4368607/galipolo-incertezas-recomendam-a-bc-nao-fornecer-orientacao-sobre-proximos-passos",
+      "por_que": "Com a Selic parada em 13,75% e sem sinalização do BC, cada dado de atividade e inflação (como o IBC-Br de segunda) ganha peso nos vértices curtos do DI.",
+      "impacto": { "di": "neutro" }
     },
     {
-      "titulo": "PPI dos EUA sobe 0,3% em outubro, abaixo do esperado; mercado vê pacote fiscal como insuficiente",
-      "fonte": "Forbes Brasil",
-      "hora": "sex 19h09",
-      "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-tem-leve-ganho-dolar-fecha-estavel-ante-ao-real/",
-      "por_que": "Inflação ao produtor abaixo do consenso alivia um pouco os juros americanos; no Brasil, JPMorgan e Akros avaliam que o ajuste depende mais de receita, o que mantém o prêmio no câmbio.",
-      "impacto": {
-        "wdo": "alta"
-      }
+      "titulo": "Waller põe na mesa alta de 0,50 ponto dos juros americanos em dezembro",
+      "fonte": "Forbes",
+      "hora": "sex 16h23",
+      "url": "https://www.forbes.com/sites/simonmoore/2026/11/13/waller-floats-prospect-of-larger-december-interest-rate-hike/",
+      "por_que": "O CPI de outubro (+0,3%) atingiu o gatilho citado por Waller para uma alta maior; Fed mais duro fortalece o dólar global e pressiona o WDO e o DI.",
+      "impacto": { "wdo": "alta", "di": "alta" }
     }
   ],
   "proximo_pregao": {
     "data": "2026-11-16",
-    "o_que_esperar": "A abertura deve reagir ao Focus (8h25), ao IBC-Br (9h) e aos dados de atividade da China divulgados na noite de domingo (23h); o mercado chega à semana à espera dos destaques do ajuste no Senado (terça) e do balanço da Nvidia."
+    "o_que_esperar": "A abertura de segunda deve reagir aos dados de atividade da China (domingo, 23h), ao Focus (8h25) e ao IBC-Br (9h); a semana curta tem os destaques do ajuste no Senado e o balanço da Nvidia na terça e a ata do FOMC na quarta."
   },
   "fontes": [
-    {
-      "titulo": "Agência Brasil (via O Povo) — Dólar fecha estável a R$ 5,65, mas sobe 2,63% na semana",
-      "url": "https://www.opovo.com.br/noticias/economia/2026/11/13/dolar-fecha-estavel-a-rs-565-mas-sobe-263-na-semana.html"
-    },
-    {
-      "titulo": "Forbes Brasil — Ibovespa tem leve ganho; dólar fecha estável ante o real",
-      "url": "https://forbes.com.br/forbes-money/2026/11/ibovespa-tem-leve-ganho-dolar-fecha-estavel-ante-ao-real/"
-    },
-    {
-      "titulo": "AP (via WHDH) — Stocks fall but Wall Street notches a winning week",
-      "url": "https://whdh.com/news/stocks-fall-but-wall-street-notches-a-winning-week-after-several-turbulent-days/"
-    },
-    {
-      "titulo": "Correio Braziliense — Guimarães diz que Câmara votará PLP 'imediatamente' após Senado",
-      "url": "https://www.correiobraziliense.com.br/politica/2026/11/7538158-ajuste-fiscal-guimaraes-diz-que-camara-votara-plp-imediatamente-apos-senado.html"
-    },
-    {
-      "titulo": "SBT News — Ajuste fiscal: governo quer celeridade na Câmara, diz Motta",
-      "url": "https://sbtnews.sbt.com.br/noticia/politica/ajuste-fiscal-governo-quer-celeridade-na-camara-diz-motta"
-    },
-    {
-      "titulo": "Newsquawk — Week in Focus 16-20th November 2026",
-      "url": "https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs"
-    }
+    { "titulo": "InfoMoney — Ibovespa retoma o caminho da vitória e tem segunda semana positiva; dólar sobe", "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-13112026/" },
+    { "titulo": "A Crítica — Ministro defende ajuste fiscal do governo e diz que há 'muita desinformação' sobre pacote", "url": "https://acritica.net/economia/ministro-defende-ajuste-fiscal-do-governo-e-diz-que-ha-muita-desinformacao-sobre-pacote/" },
+    { "titulo": "Movimento Econômico — PLP 299: corte de incentivos fiscais pode chegar a 20% e afetar o Nordeste", "url": "https://movimentoeconomico.com.br/economia/lei-de-incentivos/2026/11/14/plp-299-corte-de-incentivos-fiscais-pode-chegar-a-20-e-afetar-o-nordeste/" },
+    { "titulo": "Forbes — Could The Fed Raise Interest Rates By 50 Basis Points In December?", "url": "https://www.forbes.com/sites/simonmoore/2026/11/13/waller-floats-prospect-of-larger-december-interest-rate-hike/" },
+    { "titulo": "Newsquawk — Weekly Economic Release 16th–20th November 2026", "url": "https://www.newsquawk.com/headlines/newsquawk-weekly-economic-release-16th---20th-november-2026" },
+    { "titulo": "Agência Brasil (via O Povo) — Dólar fecha estável a R$ 5,65, mas sobe 2,63% na semana", "url": "https://www.opovo.com.br/noticias/economia/2026/11/13/dolar-fecha-estavel-a-rs-565-mas-sobe-263-na-semana.html" }
   ]
 }
