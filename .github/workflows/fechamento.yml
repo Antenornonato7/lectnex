@@ -32,6 +32,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           FORCAR: ${{ inputs.forcar && '1' || '' }}
           GITHUB_TOKEN: ${{ github.token }}
           SO_STORY: ${{ inputs.previa_story && '1' || '' }}
@@ -60,11 +61,13 @@ jobs:
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           GITHUB_TOKEN: ${{ github.token }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: |
           [ -f "$RUNNER_TEMP/mercado.json" ] || { echo "Sem gráfico do dia."; exit 0; }
           export IG_LEGENDA="$RUNNER_TEMP/grafico-legenda.txt"
           python3 scripts/grafico_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/grafico-dia.png" || { echo "::warning::Falha no post do gráfico do dia."; exit 0; }
           [ -f "$IG_LEGENDA" ] && { python3 coletor/instagram.py propor grafico "$IG_LEGENDA" "$RUNNER_TEMP/grafico-dia.png" || echo "::warning::Falha ao propor o post no Instagram."; }
+          python3 coletor/discord_post.py fechamento "📈 **Gráfico do dia:** o que as notícias fizeram com o preço. *Educacional, não é recomendação.*" "$RUNNER_TEMP/grafico-dia.png" || true
       - name: Reel do dia (15 s) para o Kit do dia
         if: ${{ !inputs.previa_story }}
         env:

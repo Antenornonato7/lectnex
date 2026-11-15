@@ -60,6 +60,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: |
           # só para Leitura de um dia novo (correções no mesmo dia não reenviam)
           dia() { git show "$1:data/leitura.json" 2>/dev/null | python3 -c "import json,sys;print(json.load(sys.stdin).get('data',''))" 2>/dev/null; }

@@ -44,6 +44,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN || secrets.TOKEN_TELEGRAM || secrets.TELEGRAM || vars.TELEGRAM_BOT_TOKEN }}
           TOKEN_EM_VARIABLES: ${{ vars.TELEGRAM_BOT_TOKEN && !secrets.TELEGRAM_BOT_TOKEN && !secrets.LECTNEX_ALERTAS_BOT && '1' || '' }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || '@lectnex' }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           TESTE: ${{ github.event_name == 'workflow_dispatch' && inputs.teste && '1' || '' }}
           MSG_ID: ${{ inputs.msg_id || '' }}
           ACAO: ${{ github.event_name == 'schedule' && 'contar' || inputs.acao || '' }}

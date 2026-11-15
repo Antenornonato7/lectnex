@@ -88,8 +88,11 @@ CATEGORIAS = [
                  ('fechamento', 0, EQUIPE, 'Fechamento e gráfico do dia (automático)'),
                  ('juros-e-dolar', 0, EQUIPE, 'Dias que mexeram nos juros e saltos fortes (automático)')]),
     ('PREGÃO', [('win-mini-indice', 0, 10, 'Mini índice durante o pregão. Conteúdo educacional, sem recomendação.'),
-                ('wdo-mini-dolar', 0, 10, 'Mini dólar durante o pregão. Conteúdo educacional, sem recomendação.'),
-                ('acoes-b3', 0, None, 'Ações, dividendos e resultados')]),
+                ('wdo-mini-dolar', 0, 10, 'Mini dólar durante o pregão. Conteúdo educacional, sem recomendação.')]),
+    ('INVESTIMENTOS', [('acoes-e-dividendos', 0, None, 'Ações para o longo prazo: resultados, dividendos e JCP. Educacional, sem recomendação.'),
+                       ('fundos-imobiliarios', 0, None, 'FIIs: rendimentos, vacância, tijolo × papel. Educacional, sem recomendação.'),
+                       ('renda-fixa', 0, None, 'CDB, LCI/LCA, Tesouro Direto, debêntures: taxas, prazos e IR. Educacional, sem recomendação.'),
+                       ('carteiras', 15, None, 'Cada membro mostra como monta a própria carteira e por quê. Ninguém recomenda ativo para ninguém.')]),
     ('ESTUDO', [('duvidas', 15, None, 'Cada dúvida vira um tópico. Use as etiquetas.'),
                 ('diario-de-trades', 15, None, 'Um tópico por membro para registrar o próprio dia'),
                 ('material', 0, EQUIPE, 'Lições da Academia, calculadoras e guias do site')]),
@@ -97,12 +100,14 @@ CATEGORIAS = [
                     ('sugestoes-pro-site', 0, None, 'Ideias e erros encontrados no site')]),
     ('AO VIVO', [('Sala do pregão', 2, None, None)]),
 ]
-ETIQUETAS = {'duvidas': ['Iniciante', 'Risco', 'IR', 'Plataforma', 'WIN', 'WDO'], 'diario-de-trades': ['WIN', 'WDO', 'Ações']}
-RENOMEAR = {'rules': ('regras', 'COMECE AQUI'), 'general': ('off-topic', 'COMUNIDADE')}   # canais que já existem
+ETIQUETAS = {'duvidas': ['Iniciante', 'Risco', 'IR', 'Plataforma', 'WIN', 'WDO', 'Investimentos'], 'diario-de-trades': ['WIN', 'WDO', 'Ações'],
+             'carteiras': ['Dividendos', 'FIIs', 'Renda fixa', 'Longo prazo', 'Aposentadoria']}
+RENOMEAR = {'rules': ('regras', 'COMECE AQUI'), 'general': ('off-topic', 'COMUNIDADE'), 'acoes-b3': ('acoes-e-dividendos', 'INVESTIMENTOS')}   # canais que já existem
 RENOMEAR_VOZ = {'general': ('Sala do pregão', 'AO VIVO')}
 RENOMEAR_CAT = {'text channels': 'COMUNIDADE', 'voice channels': 'AO VIVO'}
 CARGOS = [('Moderador', 0x00B4A2, True, B(VER, ENVIAR, GER_MSG, HIST, LINKS, ARQ, REAGIR, GER_TOPICOS, TOPICO, MSG_TOPICO)),
-          ('Trader WIN', 0xF39200, False, '0'), ('Trader WDO', 0x3B82F6, False, '0'), ('Ações', 0x8B5CF6, False, '0'), ('Fundador', 0x009988, True, '0')]
+          ('Trader WIN', 0xF39200, False, '0'), ('Trader WDO', 0x3B82F6, False, '0'), ('Investidor', 0x8B5CF6, False, '0'), ('Fundador', 0x009988, True, '0')]
+RENOMEAR_CARGO = {'Ações': 'Investidor'}
 GOLPE = ['sinal vip', 'sala de sinais', 'sala vip', 'lucro garantido', 'renda extra', 'chama no privado', 'chama no pv', 'me chama no pv',
          'me chama no whats', 'mentoria paga', 'robô que ganha', 'robo que ganha', 'dobra a banca', 'dobrar a banca', 'ganhe r$', 'investimento garantido']
 LINKS_BLOQ = ['*http*', '*discord.gg/*', '*t.me/*', '*wa.me/*', '*bit.ly/*']
@@ -153,6 +158,10 @@ def montar(simular):
     por_nome = lambda nome, tipo=None: next((c for c in canais if c['name'].lower() == nome.lower() and (tipo is None or c['type'] in tipo)), None)
 
     # 1. cargos (criados abaixo do cargo do robô; "Fundador" você arrasta para o topo depois)
+    for r0 in cargos:
+        if r0['name'] in RENOMEAR_CARGO and RENOMEAR_CARGO[r0['name']] not in [x['name'] for x in cargos]:
+            faz(f'Renomear cargo {r0["name"]} → {RENOMEAR_CARGO[r0["name"]]}', 'PATCH', f'/guilds/{GUILD}/roles/{r0["id"]}', {'name': RENOMEAR_CARGO[r0['name']]})
+            r0['name'] = RENOMEAR_CARGO[r0['name']]
     ids_cargo = {r['name']: r['id'] for r in cargos}
     for nome, cor, separado, perms in CARGOS:
         if nome not in ids_cargo:
@@ -288,6 +297,84 @@ def montar(simular):
                     print(f'::warning::Não consegui fixar em #{canal}: falta a permissão "Fixar mensagens" para o robô ({e})')
     if g.get('rules_channel_id') and por_nome('regras') and g['rules_channel_id'] != por_nome('regras')['id']:
         faz('Definir #regras como canal de regras da Comunidade', 'PATCH', f'/guilds/{GUILD}', {'rules_channel_id': por_nome('regras')['id']})
+
+    # 9. logo no servidor e no bot
+    import base64
+    logo = 'data:image/png;base64,' + base64.b64encode(open('assets/brand/icon-512.png', 'rb').read()).decode()
+    if not g.get('icon') or os.environ.get('TROCAR_LOGO'):
+        faz('Colocar a logo da Lectnex como foto do servidor', 'PATCH', f'/guilds/{GUILD}', {'icon': logo})
+    if not eu.get('avatar') or os.environ.get('TROCAR_LOGO'):
+        try:
+            faz('Colocar a logo da Lectnex como foto do bot', 'PATCH', '/users/@me', {'avatar': logo})
+        except SystemExit as e:
+            print(f'::warning::Foto do bot: {e}')
+
+    # 10. ajustes do servidor: descrição, notificações só com menção, mensagens de entrada, alertas de segurança
+    cid = lambda n: (por_nome(n) or {}).get('id')
+    ajustes = {}
+    desc = 'Comunidade de estudo do mercado brasileiro: mini índice, mini dólar, juros, ações e investimentos. Educacional, sem recomendação.'
+    if g.get('description') != desc:
+        ajustes['description'] = desc
+    if g.get('default_message_notifications') != 1:
+        ajustes['default_message_notifications'] = 1
+    if cid('apresente-se') and g.get('system_channel_id') != cid('apresente-se'):
+        ajustes['system_channel_id'] = cid('apresente-se')
+        ajustes['system_channel_flags'] = (1 << 1) | (1 << 2) | (1 << 3)  # sem avisos de impulso, dicas e figurinhas de resposta
+    if cid('log-moderacao'):
+        if g.get('safety_alerts_channel_id') != cid('log-moderacao'):
+            ajustes['safety_alerts_channel_id'] = cid('log-moderacao')
+        if g.get('public_updates_channel_id') != cid('log-moderacao'):
+            ajustes['public_updates_channel_id'] = cid('log-moderacao')
+    if ajustes:
+        try:
+            faz('Ajustes do servidor: ' + ', '.join({'description': 'descrição', 'default_message_notifications': 'notificar só menções',
+                                                     'system_channel_id': 'entradas em #apresente-se', 'system_channel_flags': 'sem avisos automáticos',
+                                                     'safety_alerts_channel_id': 'alertas de segurança no log', 'public_updates_channel_id': 'avisos do Discord no log'}[k] for k in ajustes),
+                'PATCH', f'/guilds/{GUILD}', ajustes)
+        except SystemExit as e:
+            print(f'::warning::Ajustes do servidor: {e}')
+
+    # 11. tela de boas-vindas (aparece para quem entra)
+    tela = [('boas-vindas', 'Comece por aqui', '👋'), ('leitura-do-dia', 'Leitura do Dia às 7h40', '📊'), ('duvidas', 'Pergunte sem medo', '❓'),
+            ('win-mini-indice', 'Mini índice no pregão', '📈'), ('renda-fixa', 'Investimentos: renda fixa, FIIs e ações', '💰')]
+    canais_tela = [{'channel_id': cid(n), 'description': d, 'emoji_name': em} for n, d, em in tela if cid(n) and not str(cid(n)).startswith('nov')]
+    try:
+        faz('Tela de boas-vindas do servidor', 'PATCH', f'/guilds/{GUILD}/welcome-screen',
+            {'enabled': True, 'description': 'Estudo do mercado brasileiro com dados públicos. Educacional, sem recomendação.', 'welcome_channels': canais_tela})
+    except SystemExit as e:
+        print(f'::warning::Tela de boas-vindas: {e}')
+
+    # 12. perguntas da entrada (Onboarding): escolhe o que acompanha → cargo e canais
+    r_ = lambda n: ids_cargo.get(n)
+    if not any(str(v).startswith('novo') for v in ids_cargo.values()):
+        prompts = [{'id': '0', 'type': 0, 'title': 'O que você acompanha?', 'single_select': False, 'required': False, 'in_onboarding': True,
+                    'options': [{'id': '0', 'title': 'Mini índice (WIN)', 'emoji': {'name': '📈'}, 'role_ids': [r_('Trader WIN')], 'channel_ids': [cid('win-mini-indice')]},
+                                {'id': '1', 'title': 'Mini dólar (WDO)', 'emoji': {'name': '💵'}, 'role_ids': [r_('Trader WDO')], 'channel_ids': [cid('wdo-mini-dolar')]},
+                                {'id': '2', 'title': 'Investimentos (ações, FIIs, renda fixa)', 'emoji': {'name': '💰'}, 'role_ids': [r_('Investidor')],
+                                 'channel_ids': [c for c in (cid('acoes-e-dividendos'), cid('fundos-imobiliarios'), cid('renda-fixa'), cid('carteiras')) if c]}]},
+                   {'id': '1', 'type': 0, 'title': 'Há quanto tempo você opera ou investe?', 'single_select': True, 'required': False, 'in_onboarding': True,
+                    'options': [{'id': '3', 'title': 'Estou começando', 'emoji': {'name': '🌱'}, 'role_ids': [], 'channel_ids': [c for c in (cid('duvidas'), cid('material')) if c]},
+                                {'id': '4', 'title': 'Menos de 1 ano', 'emoji': {'name': '📚'}, 'role_ids': [], 'channel_ids': [c for c in (cid('duvidas'),) if c]},
+                                {'id': '5', 'title': 'Mais de 1 ano', 'emoji': {'name': '🎯'}, 'role_ids': [], 'channel_ids': [c for c in (cid('diario-de-trades'),) if c]}]}]
+        padrao = [c for c in map(cid, ['boas-vindas', 'regras', 'avisos', 'apresente-se', 'leitura-do-dia', 'agenda-e-alertas', 'fechamento',
+                                       'juros-e-dolar', 'duvidas', 'material', 'off-topic', 'sugestoes-pro-site', 'Sala do pregão']) if c]
+        try:
+            faz('Perguntas da entrada (Onboarding)', 'PUT', f'/guilds/{GUILD}/onboarding', {'prompts': prompts, 'default_channel_ids': padrao, 'enabled': True, 'mode': 0})
+        except SystemExit as e:
+            print(f'::warning::Onboarding (configure pelo painel se falhar): {e}')
+
+    # 13. apresentação em cada canal automático (uma vez só): testa o envio e explica o que chega ali
+    intro = {'leitura-do-dia': '📊 **Aqui chega a Leitura do Dia**, todo dia de pregão às 7h40: resumo do que mexe com o mercado, viés e o que observar.',
+             'agenda-e-alertas': '📅 **Aqui chegam a agenda do dia** (às 7h40) **e os alertas** quando um dado sai acima ou abaixo do esperado.',
+             'fechamento': '🔔 **Aqui chega o fechamento** de cada pregão, com o gráfico do dia: o que as notícias fizeram com o preço.',
+             'juros-e-dolar': '⚡ **Aqui chegam os saltos fortes dos juros**: cada dia em que a curva andou 0,75 ponto ou mais, com o motivo. Histórico em <https://lectnex.com.br/juros/>'}
+    for canal, texto in intro.items():
+        c = por_nome(canal, [0])
+        if not c or str(c['id']).startswith('nov'):
+            continue
+        recentes = api('GET', f'/channels/{c["id"]}/messages?limit=20')
+        if not any(m['author']['id'] == eu['id'] and m['content'].startswith(texto[:20]) for m in recentes):
+            faz(f'Apresentação em #{canal}', 'POST', f'/channels/{c["id"]}/messages', {'content': texto + '\n*Conteúdo educacional. Não é recomendação de investimento.*', 'flags': 4})
 
     print(f'\n{len(feito)} ação(ões){" (nada foi alterado: simulação)" if simular else ""}. Nada foi apagado.')
 
