@@ -301,7 +301,7 @@ def montar(simular):
 
     # 9. logo no servidor e no bot
     import base64
-    logo = 'data:image/png;base64,' + base64.b64encode(open('assets/brand/icon-512.png', 'rb').read()).decode()
+    logo = 'data:image/png;base64,' + base64.b64encode(open('assets/brand/logo-transparente.png', 'rb').read()).decode()
     if not g.get('icon') or os.environ.get('TROCAR_LOGO'):
         faz('Colocar a logo da Lectnex como foto do servidor', 'PATCH', f'/guilds/{GUILD}', {'icon': logo})
     if not eu.get('avatar') or os.environ.get('TROCAR_LOGO'):
