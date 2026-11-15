@@ -29,7 +29,7 @@ def texto(n, rede):
     return t[:280]
 
 
-def telegram_para_x(t):
+def telegram_para_x(t, imagem=None):
     """Manda o post pronto no Telegram privado: é só copiar e colar no X."""
     import html
     tok, chat = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip(), os.environ.get('TELEGRAM_ADMIN_CHAT_ID', '').strip()
@@ -38,17 +38,21 @@ def telegram_para_x(t):
         return
     try:
         sys.path.insert(0, os.path.dirname(__file__))
-        from kit import tg_texto
-        tg_texto(f'𝕏 <b>Post pronto para o X</b> (toque no texto para copiar)\n\n<code>{html.escape(t)}</code>')
+        from kit import tg_texto, tg_album
+        msg = f'𝕏 <b>Post pronto para o X</b> (toque no texto para copiar; salve a imagem e anexe)\n\n<code>{html.escape(t)}</code>'
+        if imagem and os.path.exists(imagem):
+            tg_album([open(imagem, 'rb').read()], msg[:1020])
+        else:
+            tg_texto(msg)
         print('::notice::Post do X enviado ao Telegram privado.')
     except Exception as e:
         print(f'::warning::Telegram: {e}')
 
 
-def x_postar(t):
+def x_postar(t, imagem=None):
     chaves = [os.environ.get(k, '').strip() for k in ('X_API_KEY', 'X_API_SECRET', 'X_ACCESS_TOKEN', 'X_ACCESS_SECRET')]
     if not all(chaves):
-        telegram_para_x(t)
+        telegram_para_x(t, imagem)
         return
     try:
         from requests_oauthlib import OAuth1Session
@@ -66,5 +70,6 @@ if __name__ == '__main__':
         raise SystemExit
     import discord_post as dc
     for n in json.load(open(arq, encoding='utf-8')):
-        dc.postar('agenda-e-alertas', md=texto(n, 'discord'))
-        x_postar(texto(n, 'x'))
+        img = n.get('imagem') if n.get('imagem') and os.path.exists(n['imagem']) else None
+        dc.postar('agenda-e-alertas', md=texto(n, 'discord'), arquivo=img)
+        x_postar(texto(n, 'x'), img)

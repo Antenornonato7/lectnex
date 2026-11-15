@@ -119,7 +119,15 @@ def pagina(r, nome, tipo, outras):
             <p class="text-[11px] text-slate-500">WIN pelo Ibovespa à vista e WDO pelo dólar à vista, do último preço antes do dado até {janela} depois. DI: taxa prefixada de 2 anos do Tesouro Direto, da manhã do dia à manhã do pregão seguinte. Consenso de fontes públicas. Conteúdo educacional, não é recomendação de investimento. <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p>
         </div>
 '''
-    return slug, url, head(titulo, desc, url, ld) + corpo + foot()
+    img = None
+    try:  # imagem do resultado: prévia ao compartilhar e anexo dos posts
+        from divulgacao_imagem import gerar as gerar_img, PASTA
+        if not os.path.exists(os.path.join(PASTA, f'{slug}.jpg')) or os.environ.get('REFAZER_IMAGENS'):
+            gerar_img(r, evento, slug)
+        img = f'{BASE}assets/og/dados/{slug}.jpg'
+    except Exception as ex:
+        print(f'::warning::Imagem de {slug}: {ex}')
+    return slug, url, head(titulo, desc, url, ld, img) + corpo + foot()
 
 
 DIAS_SEMANA = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo']
@@ -139,7 +147,7 @@ def main():
             if nova and (dt.date.today() - dt.date.fromisoformat(r['data'])).days <= 3:
                 novas.append({'evento': nome_do_evento(r, nome), 'url': url, 'resultado': r.get('resultado'), 'consenso': r.get('consenso'),
                               'surpresa': r.get('surpresa'), 'win': r.get('win'), 'wdo': r.get('wdo'), 'janela': '1 h' if r.get('janela') == '1h' else '30 min',
-                              'win_abertura': r.get('win_abertura')})
+                              'win_abertura': r.get('win_abertura'), 'imagem': f'assets/og/dados/{SLUG.get(tipo, tipo)}-{r["data"]}.jpg'})
             if not os.path.exists(arq) or re.sub(r'"dateModified": "[^"]+"', '', open(arq, encoding='utf-8').read()) != re.sub(r'"dateModified": "[^"]+"', '', html):
                 open(arq, 'w', encoding='utf-8').write(html)
                 mudou.append(arq)
