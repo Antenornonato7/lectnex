@@ -2,8 +2,8 @@
 
 Lê $RUNNER_TEMP/novas-divulgacoes.json (escrito por scripts/divulgacao_paginas.py) e posta:
 - no Discord, em #agenda-e-alertas (segredo DISCORD_BOT_TOKEN);
-- no X, quando a conta estiver ligada (segredos X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET).
-  Cada post com link custa ~US$ 0,20 na API paga do X; sem os segredos, não posta e não gasta nada.
+- texto pronto para o X no Telegram PRIVADO do dono, para ele postar à mão (sem pagar a API do X).
+  Se um dia os segredos X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN e X_ACCESS_SECRET existirem, posta direto no X.
 Nunca derruba o workflow.
 """
 import json
@@ -29,10 +29,26 @@ def texto(n, rede):
     return t[:280]
 
 
+def telegram_para_x(t):
+    """Manda o post pronto no Telegram privado: é só copiar e colar no X."""
+    import html
+    tok, chat = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip(), os.environ.get('TELEGRAM_ADMIN_CHAT_ID', '').strip()
+    if not tok or not chat or chat.startswith('@'):
+        print('::warning::Telegram privado não configurado: post do X não enviado.')
+        return
+    try:
+        sys.path.insert(0, os.path.dirname(__file__))
+        from kit import tg_texto
+        tg_texto(f'𝕏 <b>Post pronto para o X</b> (toque no texto para copiar)\n\n<code>{html.escape(t)}</code>')
+        print('::notice::Post do X enviado ao Telegram privado.')
+    except Exception as e:
+        print(f'::warning::Telegram: {e}')
+
+
 def x_postar(t):
     chaves = [os.environ.get(k, '').strip() for k in ('X_API_KEY', 'X_API_SECRET', 'X_ACCESS_TOKEN', 'X_ACCESS_SECRET')]
     if not all(chaves):
-        print('::notice::X: conta não ligada (faltam os segredos X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET).')
+        telegram_para_x(t)
         return
     try:
         from requests_oauthlib import OAuth1Session

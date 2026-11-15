@@ -50,10 +50,12 @@ jobs:
           pip install -q google-auth requests || true
           sleep 60   # espera o GitHub Pages publicar
           PAGINAS="$P" python3 coletor/avisar_buscadores.py
-      - name: Post da divulgação (Discord e X)
+      - name: Post da divulgação (Discord + texto do X no Telegram privado)
         if: always()
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
