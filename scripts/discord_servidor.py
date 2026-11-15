@@ -379,6 +379,43 @@ def montar(simular):
     print(f'\n{len(feito)} ação(ões){" (nada foi alterado: simulação)" if simular else ""}. Nada foi apagado.')
 
 
+def visual():
+    """Pacote do nível 3: banner animado, fundo do convite, ícones e degradê nos cargos, áudio máximo e emojis (assets/discord/)."""
+    import base64
+    D = 'assets/discord/'
+    uri = lambda f, t: f'data:{t};base64,' + base64.b64encode(open(D + f, 'rb').read()).decode()
+
+    def tenta(desc, metodo, caminho, corpo):
+        try:
+            api(metodo, caminho, corpo)
+            print(desc)
+            return True
+        except SystemExit as e:
+            print(f'::warning::{desc}: {e}')
+            return False
+    tenta('Banner animado do servidor', 'PATCH', f'/guilds/{GUILD}', {'banner': uri('banner.gif', 'image/gif')})
+    tenta('Fundo da tela de convite', 'PATCH', f'/guilds/{GUILD}', {'splash': uri('convite-fundo.jpg', 'image/jpeg')})
+    cargos = {r['name']: r for r in api('GET', f'/guilds/{GUILD}/roles')}
+    for nome, arq in [('Fundador', 'cargo-fundador.png'), ('Moderador', 'cargo-moderador.png'), ('Trader WIN', 'cargo-win.png'),
+                      ('Trader WDO', 'cargo-wdo.png'), ('Investidor', 'cargo-investidor.png')]:
+        if nome in cargos:
+            tenta(f'Ícone do cargo {nome}', 'PATCH', f'/guilds/{GUILD}/roles/{cargos[nome]["id"]}', {'icon': uri(arq, 'image/png')})
+    for nome, (a, b) in {'Fundador': (0x009988, 0xF39200), 'Moderador': (0x00B4A2, 0x3B82F6)}.items():
+        if nome in cargos:
+            tenta(f'Degradê no cargo {nome}', 'PATCH', f'/guilds/{GUILD}/roles/{cargos[nome]["id"]}',
+                  {'colors': {'primary_color': a, 'secondary_color': b, 'tertiary_color': None}})
+    for c in api('GET', f'/guilds/{GUILD}/channels'):
+        if c['type'] == 2 and c.get('bitrate') != 384000:
+            tenta(f'Áudio máximo (384 kbps) em {c["name"]}', 'PATCH', f'/channels/{c["id"]}', {'bitrate': 384000})
+    ja = {e['name'] for e in api('GET', f'/guilds/{GUILD}/emojis')}
+    import glob
+    for f in sorted(glob.glob(D + 'emoji-*.png')):
+        nome = 'lx_' + os.path.basename(f)[6:-4]
+        if nome not in ja and not tenta(f'Emoji :{nome}:', 'POST', f'/guilds/{GUILD}/emojis', {'name': nome, 'image': uri(os.path.basename(f), 'image/png')}):
+            print('::warning::Sem permissão para emojis: ligue "Gerenciar expressões" (ou "Criar expressões") no cargo do bot.')
+            break
+
+
 def convite():
     """Convite permanente para #boas-vindas (reaproveita um do robô se já existir). O código é público: vai no site."""
     canais = api('GET', f'/guilds/{GUILD}/channels')
@@ -397,6 +434,8 @@ if __name__ == '__main__':
     modo = sys.argv[1] if len(sys.argv) > 1 else 'ler'
     if modo == 'ler':
         ler()
+    elif modo == 'visual':
+        visual()
     elif modo == 'convite':
         convite()
     elif modo in ('simular', 'montar'):
