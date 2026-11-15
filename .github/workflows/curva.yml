@@ -20,12 +20,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Coletar curva
         run: python3 coletor/curva.py
+      - name: Página "Dias que mexeram nos juros"
+        run: python3 scripts/juros_saltos.py
       - name: Publicar
         run: |
           [ -f data/curva.json ] || exit 0
           git config user.name "lectnex-bot"
           git config user.email "bot@lectnex.com.br"
-          git add data/curva.json
+          git add data/curva.json data/juros-saltos.json juros/index.html sitemap.xml
           git diff --cached --quiet && exit 0
           git commit -m "curva: $(TZ=America/Sao_Paulo date '+%F %H:%M')"
           ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]
