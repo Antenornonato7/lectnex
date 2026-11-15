@@ -21,6 +21,8 @@ jobs:
       - name: Coletar curva
         run: python3 coletor/curva.py
       - name: Página "Dias que mexeram nos juros"
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: python3 scripts/juros_saltos.py
       - name: Publicar
         run: |

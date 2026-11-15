@@ -8,6 +8,9 @@ Precisa dos segredos TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID (ex.: @lectnex). Sem 
 """
 import html, json, os, subprocess, sys, urllib.request, urllib.error
 
+sys.path.insert(0, os.path.dirname(__file__))
+import discord_post as dc  # noqa: E402  (mesmo conteúdo no servidor Discord)
+
 SITE = 'https://lectnex.com.br/'
 TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip()
 CHAT = os.environ.get('TELEGRAM_CHAT_ID', '').strip()
@@ -137,6 +140,10 @@ def main():
             link = f"{SITE}leitura/{d['data']}.html"
             ok = enviar(msg_leitura(d, link), previa=link)
             note('notice' if ok else 'warning', 'Leitura no Telegram com imagem' if ok else 'Leitura no Telegram falhou')
+            dc.postar('leitura-do-dia', html=msg_leitura(d, link), imagem_url=f"{SITE}assets/og/leitura-{d['data']}.jpg")
+            ag = dc.msg_agenda(atual('data/calendario.json'), d['data'], FLAG)
+            if ag:
+                dc.postar('agenda-e-alertas', md=ag)
         return
     if acao == 'boas-vindas':
         boas_vindas(); return
@@ -165,6 +172,7 @@ def main():
             s = ev.get('surpresa')
             if s and s.get('direcao') in ('acima', 'abaixo') and ev.get('resultado') and chave(ev) not in ja:
                 enviados += enviar(msg_surpresa(ev))
+                dc.postar('agenda-e-alertas', html=msg_surpresa(ev))
     note('notice', f'Telegram: {enviados} mensagem(ns) enviada(s)')
 
 

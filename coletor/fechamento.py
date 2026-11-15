@@ -384,6 +384,8 @@ def main():
         return
     ok = tg.enviar(texto)
     tg.note('notice' if ok else 'warning', 'Fechamento enviado ao Telegram' if ok else 'Fechamento não enviado')
+    import discord_post as dc
+    dc.postar('fechamento', html=texto)
 
 
 if __name__ == '__main__':

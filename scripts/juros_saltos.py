@@ -141,6 +141,19 @@ def main():
         pass
     if not velho or velho.get('dias') != dados['dias']:
         json.dump(dados, open(ARQ, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    # dia novo de salto → aviso no Discord (#juros-e-dolar)
+    novos = [d for d in dados['dias'] if velho and d not in velho.get('dias', {})]
+    if novos:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'coletor'))
+        import discord_post as dc
+        for d in novos:
+            sx = dados['dias'][d]
+            top = sorted(sx.get('vertices', {}).items(), key=lambda x: -abs(x[1]))[:3]
+            dc.postar('juros-e-dolar', md='\n'.join([
+                f'⚡ **Os juros {"dispararam" if sx["media_pp"] > 0 else "despencaram"} em {br(dt.date.fromisoformat(d), True)}: {bps(sx["media_pp"])} em média**',
+                (f'Motivo provável: {sx["motivo"]}' + (f' ([{sx.get("fonte") or "fonte"}](<{sx["url"]}>))' if sx.get('url') else '')) if sx.get('motivo') else 'Salto forte num só dia.',
+                'Vencimentos que mais andaram: ' + ' · '.join(f'{nome_venc(v)} {bps(x)}' for v, x in top),
+                f'[Todos os dias que mexeram nos juros](<{BASE}juros/#d-{d}>)', '*Educacional. Não é recomendação.*']))
     mudou = []
     novo = pagina(dados)
     if not os.path.exists(SAIDA) or open(SAIDA, encoding='utf-8').read() != novo:
