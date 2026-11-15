@@ -6,6 +6,7 @@ Fechamentos diários: Yahoo Finance (^BVSP e BRL=X). Placar: data/placar-termome
 Uso: python3 scripts/carrossel_semana.py [--previa] [--dados arquivo.json] [pasta_saida]
 """
 import datetime as dt
+import re
 import json
 import os
 import sys
@@ -83,7 +84,20 @@ def coletar():
     evs.sort(key=lambda e: (e['data'], e.get('hora') is None, e.get('hora') or ''))
     ph = (ler('data/placar-historico.json') or {}).get('eventos', [])
     eventos = [e for e in ph if ini.isoformat() <= e['data'] <= fim.isoformat()]
-    return {'ini': ini.isoformat(), 'fim': fim.isoformat(), 'ibov': ib, 'dolar': us, 'placar': placar, 'placar20': todos,
+    regs = [x for x in (ler('data/reacoes.json') or {}).get('registros', []) if ini.isoformat() <= x['data'] <= fim.isoformat()
+            and (x.get('win') is not None or x.get('wdo') is not None)]
+    try:
+        from dados_paginas import SOBRE
+    except Exception:
+        SOBRE = {}
+    def prio(x):  # 0: dados principais (IPCA, payroll, CPI, Fed, Copom) · 1: outro dado com consenso, saindo entre 8h e 18h30
+        h = re.match(r'(\d{1,2})', x.get('hora') or '')
+        no_dia = h and 8 <= int(h.group(1)) <= 18
+        return 0 if x.get('tipo') in SOBRE else 1 if (x.get('consenso') and no_dia) else 9
+    regs = [x for x in regs if prio(x) < 9]
+    regs.sort(key=lambda x: (prio(x), -(abs(x.get('win') or 0) + abs(x.get('wdo') or 0))))
+    dados = sorted(regs[:3], key=lambda x: (x['data'], x.get('hora') or ''))
+    return {'ini': ini.isoformat(), 'fim': fim.isoformat(), 'ibov': ib, 'dolar': us, 'placar': placar, 'placar20': todos, 'dados': dados,
             'eventos': eventos, 'eventos_total': ph,
             'agenda': [{'data': e['data'], 'hora': e.get('hora'), 'pais': e.get('pais'), 'evento': e['evento']} for e in evs[:6]]}
 
@@ -124,11 +138,84 @@ def br(iso):
     return f'{d:%d/%m}'
 
 
+def slide_dado(x, caminho, n, T, previa):
+    """Slide de uma divulgação da semana (mesmo conteúdo da imagem da página dados/<dado>-<data>.html, em retrato)."""
+    from divulgacao_imagem import _serie, _min
+    im, dr = base('A SEMANA EM DADOS', n, previa, T)
+    d = dt.date.fromisoformat(x['data'])
+    nome = re.sub(r'\s*\(.*?\)', '', x.get('evento', '')).strip()
+    fe = fonte('InterDisplay-Bold.otf', 60)
+    for i, l in enumerate(quebrar(dr, nome, fe, W - 2 * M, 2)):
+        dr.text((M, 220 + i * 70), l, font=fe, fill=WHITE)
+    y = 220 + 70 * len(quebrar(dr, nome, fe, W - 2 * M, 2)) + 10
+    dr.text((M, y), f'{DIA[d.weekday()]} {d:%d/%m}' + (f' · {x["hora"]}' if x.get('hora') else ''), font=fonte('JetBrainsMono-Bold.ttf', 28), fill=TEAL_L)
+    y += 70
+    fs = fonte('InterDisplay-Bold.otf', 120)
+    res = str(x.get('resultado') or '—')
+    if dr.textlength(res, font=fs) > W - 2 * M:
+        fs = fonte('InterDisplay-Bold.otf', 64)
+    dr.text((M, y), res, font=fs, fill=WHITE)
+    y += 150 if fs.size > 100 else 90
+    sup = x.get('surpresa')
+    if x.get('consenso'):
+        fc = fonte('JetBrainsMono-Bold.ttf', 32)
+        dr.text((M, y), f'consenso {x["consenso"]}', font=fc, fill=MUTED)
+        if sup in ('acima', 'abaixo', 'em linha'):
+            rot = {'acima': '▲ ACIMA', 'abaixo': '▼ ABAIXO', 'em linha': '= EM LINHA'}[sup]
+            xb = M + dr.textlength(f'consenso {x["consenso"]}', font=fc) + 28
+            fb = fonte('JetBrainsMono-Bold.ttf', 28)
+            dr.rectangle([xb, y - 4, xb + dr.textlength(rot, font=fb) + 28, y + 42], fill=ORANGE if sup == 'acima' else '#3B82F6' if sup == 'abaixo' else MUTED)
+            dr.text((xb + 14, y + 2), rot, font=fb, fill=BG)
+        y += 80
+    janela = '1 H' if x.get('janela') == '1h' else '30 MIN'
+    bw = (W - 2 * M - 30) // 2
+    for i, (rot, k) in enumerate((('WIN', 'win'), ('WDO', 'wdo'))):
+        bx, v = M + i * (bw + 30), x.get(k)
+        dr.rectangle([bx, y, bx + bw, y + 170], fill=CARD, outline=LINE, width=2)
+        dr.text((bx + 24, y + 22), f'{rot} EM {janela}', font=fonte('JetBrainsMono-Bold.ttf', 26), fill=MUTED)
+        dr.text((bx + 24, y + 70), pct(v) if v is not None else '—', font=fonte('JetBrainsMono-Bold.ttf', 64), fill=cor(v) if v is not None else MUTED)
+    if x.get('win_abertura'):
+        dr.text((M, y + 180), 'WIN: bolsa fechada na hora do dado, inclui o gap da abertura', font=fonte('Inter-Medium.otf', 22), fill=MUTED)
+        y += 34
+    y += 200
+    t0 = _min(x.get('hora'))
+    series = [(c, n_, _serie(x['data'], k, t0)) for c, n_, k in ((TEAL_L, 'Ibovespa', 'ibov'), (ORANGE, 'dólar', 'dolar'))] if t0 is not None else []
+    series = [z for z in series if z[2]]
+    if series and y + 260 < H - 120:
+        gx0, gx1, gy0, gy1 = M, W - M, y, y + 230
+        dr.rectangle([gx0, gy0, gx1, gy1], fill=CARD, outline=LINE, width=2)
+        xs = [m for _, _, z in series for m, _ in z]
+        ys = [v for _, _, z in series for _, v in z] + [0]
+        lo, hi = min(ys), max(ys)
+        pad = max(0.05, (hi - lo) * 0.15)
+        lo, hi = lo - pad, hi + pad
+        X = lambda m: gx0 + 20 + (m - min(xs)) / max(1, max(xs) - min(xs)) * (gx1 - gx0 - 40)
+        Y = lambda v: gy0 + 18 + (hi - v) / (hi - lo) * (gy1 - gy0 - 36)
+        if min(xs) <= t0 <= max(xs):
+            dr.line([(X(t0), gy0 + 10), (X(t0), gy1 - 10)], fill=MUTED, width=2)
+        fl, lx = fonte('JetBrainsMono-Bold.ttf', 22), gx0
+        for c, n_, z in series:
+            dr.line([(X(m), Y(v)) for m, v in z], fill=c, width=5, joint='curve')
+            dr.text((lx, gy1 + 12), n_, font=fl, fill=c)
+            lx += dr.textlength(n_, font=fl) + 26
+        dr.text((lx, gy1 + 12), 'até 1 h depois do dado', font=fl, fill=MUTED)
+    try:
+        from dados_paginas import SOBRE, SLUG
+        if x.get('tipo') in SOBRE:
+            dr.text((M, H - 140), f'Histórico e reação: lectnex.com.br/dados/{SLUG.get(x["tipo"], x["tipo"])}', font=fonte('JetBrainsMono-Bold.ttf', 26), fill=TEAL_L)
+    except Exception:
+        pass
+    im.save(caminho)
+    return caminho
+
+
 def slides(dd, pasta, previa=False):
     os.makedirs(pasta, exist_ok=True)
     out = []
     evs = dd.get('eventos') or []
-    T = 5 if evs else 4
+    dds = dd.get('dados') or []
+    ND = len(dds)
+    T = 4 + ND + (1 if evs else 0)  # capa, dia a dia, placar, [dados da semana], [eventos], agenda
     ib, us = dd.get('ibov'), dd.get('dolar')
     periodo = f'{br(dd["ini"])} a {br(dd["fim"])}'
 
@@ -213,9 +300,13 @@ def slides(dd, pasta, previa=False):
         dr.text((M, H - 220 + i * 36), l, font=fn, fill=MUTED)
     out.append(os.path.join(pasta, '3-placar.png')); im.save(out[-1])
 
-    # 4. a semana em eventos (antes × depois), se houve evento forte
+    # 4… a semana em dados: um slide por divulgação (as 3 que mais mexeram), com resultado, reação e mini gráfico
+    for i, x in enumerate(dds):
+        out.append(slide_dado(x, os.path.join(pasta, f'{4 + i}-dado.png'), 4 + i, T, previa))
+
+    # a semana em eventos (antes × depois), se houve evento forte
     if evs:
-        im, dr = base('A SEMANA EM EVENTOS', 4, previa, T)
+        im, dr = base('A SEMANA EM EVENTOS', 4 + ND, previa, T)
         dr.text((M, 220), 'O histórico', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
         dr.text((M, 296), 'acertou?', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
         y = 410
@@ -254,7 +345,7 @@ def slides(dd, pasta, previa=False):
         fn = fonte('Inter-Medium.otf', 24)
         for i, l in enumerate(quebrar(dr, 'O histórico aponta alta quando o ativo subiu em 60% ou mais das vezes anteriores com a mesma surpresa, e queda com 40% ou menos. Dividido não conta. Reação de 30 min.', fn, W - 2 * M, 3)):
             dr.text((M, H - 210 + i * 34), l, font=fn, fill=MUTED)
-        out.append(os.path.join(pasta, '4-eventos.png')); im.save(out[-1])
+        out.append(os.path.join(pasta, f'{4 + ND}-eventos.png')); im.save(out[-1])
 
     # agenda + chamada (último slide)
     im, dr = base('PRÓXIMA SEMANA', T, previa, T)
