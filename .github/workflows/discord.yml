@@ -1,0 +1,24 @@
+# Servidor Discord da Lectnex: ler o estado atual (e, depois de aprovado, montar o que falta). Nunca apaga nada.
+name: Discord
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: 'ler'
+        default: 'ler'
+
+permissions:
+  contents: read
+
+jobs:
+  discord:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Discord
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          MODO: ${{ inputs.modo }}
+        run: python3 scripts/discord_servidor.py "$MODO"
