@@ -37,6 +37,10 @@ def perms_txt(v):
 
 def ler():
     eu = api('GET', '/users/@me')
+    servidores = api('GET', '/users/@me/guilds')
+    print(f'Bot {eu["username"]} está em {len(servidores)} servidor(es): ' + ', '.join(f'{x["name"]} ({x["id"]})' for x in servidores))
+    if GUILD not in [x['id'] for x in servidores]:
+        sys.exit(f'::error::O bot não está no servidor {GUILD}. Abra o link de convite e autorize no servidor Lectnex.')
     g = api('GET', f'/guilds/{GUILD}?with_counts=true')
     canais = api('GET', f'/guilds/{GUILD}/channels')
     cargos = sorted(api('GET', f'/guilds/{GUILD}/roles'), key=lambda r: -r['position'])
