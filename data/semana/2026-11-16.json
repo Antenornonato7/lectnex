@@ -3,6 +3,18 @@
  "eventos": [
   {
    "data": "2026-11-16",
+   "pais": "US",
+   "evento": "Fala do presidente do Fed, Kevin Warsh",
+   "importancia": 2,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Primeira semana após o CPI de outubro (+0,3%); sinal sobre alta de juros em dezembro mexe no dólar global.",
+   "tipo": "fala-fed"
+  },
+  {
+   "data": "2026-11-16",
    "hora": "08h25",
    "pais": "BR",
    "evento": "Boletim Focus (BCB)",
@@ -130,6 +142,30 @@
    },
    "nota": "Antecipado por causa do feriado da Consciência Negra (sexta, 20/11, B3 fechada).",
    "tipo": "vencimento-opcoes"
+  },
+  {
+   "data": "2026-11-19",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Pedidos de seguro-desemprego (semana até 14/nov)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Termômetro semanal do mercado de trabalho americano.",
+   "tipo": "seguro-desemprego"
+  },
+  {
+   "data": "2026-11-19",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Índice de atividade do Fed da Filadélfia (nov)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Pesquisa regional da indústria americana.",
+   "tipo": "philly-fed"
   },
   {
    "data": "2026-11-20",
