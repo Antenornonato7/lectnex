@@ -7,6 +7,9 @@ on:
       modo:
         description: 'ler, simular ou montar'
         default: 'ler'
+      trocar_logo:
+        description: 'trocar a foto do servidor e do bot pela logo (1 = sim)'
+        default: ''
 
 permissions:
   contents: read
@@ -21,4 +24,5 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           MODO: ${{ inputs.modo }}
+          TROCAR_LOGO: ${{ inputs.trocar_logo }}
         run: python3 scripts/discord_servidor.py "$MODO"
