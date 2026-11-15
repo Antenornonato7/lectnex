@@ -63,6 +63,7 @@ def head(titulo, desc, url, extra_ld, img=None):
     <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
     <script>try{{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}}catch(e){{document.documentElement.classList.add('dark')}}</script>
     <link rel="stylesheet" href="assets/tailwind.css?v={v}">
+    <link rel="expect" href="#lx-pronto" blocking="render">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="assets/icons/phosphor.css?v={v}">
     <link rel="stylesheet" href="assets/lectnex.css?v={v}">
@@ -77,7 +78,7 @@ def head(titulo, desc, url, extra_ld, img=None):
 def foot():
     return f'''    </main>
     <div id="lx-footer"></div>
-    <script src="assets/lectnex-core.js?v={ver()}"></script>
+    <script src="assets/lectnex-core.js?v={ver()}"></script><span id="lx-pronto" hidden></span>
 </body>
 </html>
 '''

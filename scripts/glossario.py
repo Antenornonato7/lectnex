@@ -70,6 +70,7 @@ pagina = f'''<!DOCTYPE html>
     <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
     <script>try{{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}}catch(e){{document.documentElement.classList.add('dark')}}</script>
     <link rel="stylesheet" href="assets/tailwind.css?v={ver}">
+    <link rel="expect" href="#lx-pronto" blocking="render">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -107,7 +108,7 @@ pagina = f'''<!DOCTYPE html>
         </section>
     </main>
     <div id="lx-footer"></div>
-    <script src="assets/lectnex-core.js?v={ver}"></script>
+    <script src="assets/lectnex-core.js?v={ver}"></script><span id="lx-pronto" hidden></span>
     <script>
     (function () {{
         const q = document.getElementById('gl-q'), items = [...document.querySelectorAll('.gl-item')], none = document.getElementById('gl-none');

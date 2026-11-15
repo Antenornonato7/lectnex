@@ -158,3 +158,15 @@ abbr.lx-gl:hover, abbr.lx-gl:focus-visible { text-decoration-color: #14B8A6; col
 .lx-toast-news button { position: absolute; top: .4rem; right: .5rem; color: #94A3B8; font-size: 1rem; }
 @media (max-width: 640px) { .lx-toast-news { left: 12px; right: 12px; bottom: 12px; max-width: none; } }
 @media (prefers-reduced-motion: reduce) { .animate-pulse, .lx-pulse-red, .animate-spin { animation: none !important; } html { scroll-behavior: auto !important; } }
+
+/* ---------- Web moderna (guias Modern Web Guidance: Chrome, Edge, Firefox e MDN) ---------- */
+/* Transição suave entre páginas do site (MPA). Quem pediu menos movimento no aparelho não vê animação. */
+@view-transition { navigation: auto; }
+@media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 160ms; }
+#lx-header { view-transition-name: lx-cabecalho; }
+/* Títulos sem palavra sozinha na última linha; parágrafos com quebra mais equilibrada (ignorado onde não há suporte) */
+h1, h2, h3, .font-display { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+/* content-visibility foi testado no Mercado Hoje e desligado: o tamanho estimado das seções fazia os links internos
+   (#leitura, #indicadores…) pararem no lugar errado. Reavaliar quando as seções tiverem altura estável. */

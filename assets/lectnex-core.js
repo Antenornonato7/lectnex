@@ -984,7 +984,7 @@
             .then(c => { if (c && mostrado === null) pinta(c, true); }).catch(() => { });
         return rede.then(d => { if (d) pinta(d, false); else if (mostrado === null) render(null, false); });
     };
-    LX.track = function (nome, p) { try { if (LX.config.ga && window.gtag) gtag('event', nome, Object.assign({ pagina: document.body.dataset.page || '' }, p || {})); } catch (_) { } };
+    LX.track = function (nome, p) { if (document.prerendering) { document.addEventListener('prerenderingchange', () => LX.track(nome, p), { once: true }); return; } try { if (LX.config.ga && window.gtag) gtag('event', nome, Object.assign({ pagina: document.body.dataset.page || '' }, p || {})); } catch (_) { } };
     function rastrear() {
         const usadas = new Set();
         document.addEventListener('submit', ev => { if (ev.target.matches && ev.target.matches('form[action*="buttondown"]')) LX.track('sign_up', { method: 'newsletter' }); }, true);
@@ -1263,12 +1263,31 @@
         setTimeout(checar, 15000); setInterval(checar, 2 * 6e4);
     }
 
+    /* ------------------------------------------------------------------ PRÉ-CARREGAMENTO (Speculation Rules) */
+    // Página pré-carregada pelo navegador ainda não foi vista: analytics e eventos esperam ela virar a página da tela.
+    function depoisDeVisto(f) { if (document.prerendering) document.addEventListener('prerenderingchange', () => f(), { once: true }); else f(); }
+    LX.depoisDeVisto = depoisDeVisto;
+    // Transição entre páginas (CSS @view-transition): se a página nova demora para desenhar, o navegador desiste da animação
+    // e abre a página normal. Isso não é erro para quem usa; aqui só evitamos o aviso no console.
+    window.addEventListener('pagereveal', e => { const vt = e.viewTransition; if (vt) [vt.ready, vt.finished, vt.updateCallbackDone].forEach(pr => pr && pr.catch(() => {})); });
+    function especular() {
+        // Ao encostar o dedo/mouse num link do site, o navegador já prepara a próxima página (Chrome/Edge; os demais ignoram).
+        if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('speculationrules')) || document.querySelector('script[type=speculationrules]')) return;
+        const s = document.createElement('script'); s.type = 'speculationrules';
+        s.textContent = JSON.stringify({
+            prerender: [{ where: { and: [{ href_matches: '/*' }, { not: { href_matches: ['/*.json', '/*.xml', '/*.jpg', '/*.png', '/*.gif', '/*.pdf', '/*.csv', '/*.zip', '/data/*'] } },
+                { not: { selector_matches: '[target=_blank], [download], [rel~=nofollow], [data-sem-pre]' } }] }, eagerness: 'moderate' }]
+        });
+        document.head.appendChild(s);
+    }
+
     /* ------------------------------------------------------------------ BOOT */
     function boot() {
         LX.renderChrome(document.body.dataset.page || '');
         tickClock(); paintSessions(); LX.fill();
         nextSlot(); rollBanner(); setInterval(rollBanner, 60000);
-        pwa(); pushButtons(); analytics();
+        pwa(); pushButtons(); depoisDeVisto(analytics);
+        especular();
         const hc = document.getElementById('lx-hc'); if (hc) hc.onclick = () => { const on = document.documentElement.classList.toggle('lx-hc'); try { localStorage.setItem('lectnex-hc', on ? '1' : '0'); } catch (_) { } };
         LX.dados('calendario').then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
         newsForms();
