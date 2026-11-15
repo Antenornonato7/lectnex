@@ -2,7 +2,7 @@
 (function () {
     const $ = id => document.getElementById(id);
     const btn = $('pg-open'); if (!btn || !window.LX) return;
-    let ov = null, timer = null, lock = null, leitura = null, cot = null, placar = null;
+    let ov = null, timer = null, lock = null, leitura = null, cot = null, placar = null, cal = null, rx = null;
 
     const fetchJSON = u => fetch(u + '?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
     async function wake() {
@@ -18,6 +18,37 @@
         const tv = t => typeof t === 'number' ? t : (+t.r || 0) - (+t.c || 0);
         const pnl = (day.trades || []).reduce((a, b) => a + tv(b), 0), n = (day.trades || []).length;
         return { lim: (+L.cap || 0) * (+L.maxloss || 0) / 100, goal: +L.goal || 0, maxtr: +L.maxtr || 0, pnl, n, set: !!st.limits };
+    }
+
+    /* ----- Antes do dado: 15 min antes até 30 min depois de um dado forte, consenso + como WIN/WDO reagiram antes ----- */
+    const PAGINAS = ['ipca', 'payroll', 'cpi-eua', 'fomc', 'copom'];  // têm página em dados/
+    const quando = e => { const m = /^(\d{1,2})h(\d{2})?/.exec(e.hora || ''); return m ? new Date(`${e.data}T${String(m[1]).padStart(2, '0')}:${m[2] || '00'}:00-03:00`).getTime() : null; };
+    const pctS = v => v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + LX.num(Math.abs(v), 2) + '%';
+    const corS = v => v == null ? 'text-slate-500' : v > 0 ? 'text-emerald-600 dark:text-emerald-400' : v < 0 ? 'text-rose-600 dark:text-rose-400' : '';
+    function historico(tipo) {
+        const rs = ((rx && rx.registros) || []).filter(r => r.tipo === tipo);
+        const med = (k, f) => { const v = rs.filter(f).map(r => r[k]).filter(x => typeof x === 'number'); return v.length ? { m: v.reduce((a, b) => a + b, 0) / v.length, n: v.length } : null; };
+        return { n: rs.length, acima: { win: med('win', r => r.surpresa === 'acima'), wdo: med('wdo', r => r.surpresa === 'acima') },
+                 abaixo: { win: med('win', r => r.surpresa === 'abaixo'), wdo: med('wdo', r => r.surpresa === 'abaixo') } };
+    }
+    function antesDoDado(sozinho) {
+        if (!cal || !Array.isArray(cal.eventos)) return '';
+        const agora = Date.now();
+        const cand = cal.eventos.map(e => ({ e, t: quando(e) })).filter(x => x.t && (x.e.importancia || 1) >= 2 && Object.keys(x.e.impacto || {}).some(k => k === 'win' || k === 'wdo')
+            && x.t - 15 * 60e3 <= agora && agora <= x.t + 30 * 60e3).sort((a, b) => Math.abs(a.t - agora) - Math.abs(b.t - agora))[0];
+        if (!cand) return '';
+        const { e, t } = cand, h = historico(e.tipo), saiu = e.resultado != null && e.resultado !== '';
+        const linha = (rot, x) => x.win || x.wdo ? `<div class="flex flex-wrap justify-between gap-x-2"><span class="text-slate-500">${rot}${x.win ? ` (${x.win.n}×)` : ''}</span><span>WIN <b class="${corS(x.win && x.win.m)}">${pctS(x.win && x.win.m)}</b> · WDO <b class="${corS(x.wdo && x.wdo.m)}">${pctS(x.wdo && x.wdo.m)}</b></span></div>` : '';
+        const sup = e.surpresa && /^(acima|abaixo)$/.test(e.surpresa.direcao) ? e.surpresa.direcao : null;
+        const s = Math.max(0, Math.floor((t - agora) / 1000));
+        const topo = saiu
+            ? `<div class="flex flex-wrap items-baseline gap-x-3"><span class="font-mono text-[11px] font-bold text-lect-orange">SAIU</span><strong class="text-2xl text-slate-900 dark:text-white">${LX.esc(String(e.resultado))}</strong>${e.consenso ? `<span class="font-mono text-xs text-slate-500">consenso ${LX.esc(String(e.consenso))}</span>` : ''}${sup ? `<span class="px-1.5 font-mono text-[10px] font-bold ${sup === 'acima' ? 'bg-lect-orange text-lect-navy' : 'bg-sky-600 text-white'}">${sup === 'acima' ? '▲ ACIMA' : '▼ ABAIXO'}</span>` : ''}</div>`
+            : t > agora ? `<div class="flex flex-wrap items-baseline gap-x-3"><span class="font-mono text-[11px] font-bold text-lect-orange">FALTAM ${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}</span>${e.consenso ? `<span class="font-mono text-xs">consenso <b>${LX.esc(String(e.consenso))}</b></span>` : ''}${e.anterior ? `<span class="font-mono text-xs text-slate-500">anterior ${LX.esc(String(e.anterior))}</span>` : ''}</div>`
+            : `<div class="font-mono text-[11px] font-bold text-lect-orange">SAINDO AGORA · aguardando o número…</div>`;
+        const hist = h.n >= 2 ? `<div class="mt-2 font-mono text-[11px] space-y-0.5">${saiu && sup ? linha(`Antes, quando veio ${sup}`, h[sup]) : linha('Quando veio acima', h.acima) + linha('Quando veio abaixo', h.abaixo)}</div>
+            <p class="mt-1 text-[10px] text-slate-500">Média dos 30 min seguintes em ${h.n} divulgações. Histórico não garante a próxima reação.${PAGINAS.includes(e.tipo) ? ` <a href="dados/${e.tipo}.html" class="text-lect-teal underline">histórico</a>` : ''}</p>`
+            : '<p class="mt-1 text-[10px] text-slate-500">Ainda sem histórico suficiente deste dado.</p>';
+        return `<div class="${sozinho ? '' : 'mt-3 pt-3 border-t border-dashed border-lect-orange/50'}"><span class="term-label inline-flex items-center gap-1.5 !mb-1"><i class="ph-bold ph-lightning text-lect-orange"></i>${saiu ? 'O dado saiu' : 'Antes do dado'} · ${LX.esc(e.evento)}</span>${topo}${hist}</div>`;
     }
 
     function card(title, icon, body, extra = '') { return `<section class="term-panel p-3 sm:p-4 flex flex-col min-h-0 ${extra}"><span class="term-label inline-flex items-center gap-1.5 mb-2"><i class="ph-bold ${icon} text-lect-teal"></i>${title}</span>${body}</section>`; }
@@ -38,7 +69,8 @@
             const tags = Object.entries(nx.e.impacto || {}).filter(([, v]) => LX.calArrow[v]).map(([k, v]) => `<span class="px-1 border border-current text-[10px] font-bold">${LX.esc(k.toUpperCase())} ${LX.calArrow[v]}</span>`).join(' ');
             ev = `<div class="flex items-center justify-between gap-3 ${hot ? 'text-lect-orange' : ''}"><div class="min-w-0"><strong class="block text-sm leading-snug ${hot ? '' : 'text-slate-900 dark:text-white'}">${LX.calFlag[nx.e.pais] || ''} ${LX.esc(nx.e.evento)}</strong><span class="font-mono text-[11px] text-slate-500">${LX.esc(nx.e.hora)} · ${nx.e.consenso ? 'cons. ' + LX.esc(nx.e.consenso) : 'sem consenso'}</span><div class="mt-1 flex gap-1 font-mono">${tags}</div></div><span class="font-mono text-3xl sm:text-4xl font-bold tabular-nums ${hot ? 'animate-pulse' : 'text-lect-teal'}">${big}</span></div>`;
         } else ev = '<p class="text-xs text-slate-500">Nenhum dado de alto impacto nas próximas 36 horas.</p>';
-        $('pg-ev').innerHTML = ev;
+        const ad = antesDoDado(!nx);
+        $('pg-ev').innerHTML = (nx || !ad ? ev : '') + ad;  // com o dado acontecendo agora, o aviso "nenhum dado" sai
     }
 
     function renderSlow() {
@@ -109,8 +141,10 @@
         $('pg-close').onclick = closePg; $('pg-lock').onclick = wake; if (LX.pushButtons) LX.pushButtons();
         if (location.hash !== '#pregao') history.replaceState(null, '', '#pregao');
         render(); renderSlow(); wake();
+        Promise.all([fetchJSON('data/calendario.json'), fetchJSON('data/reacoes.json')]).then(([c, x]) => { cal = c || cal; rx = x || rx; render(); });
         [leitura, cot, placar] = await Promise.all(LX.dados ? [LX.dados('leitura'), LX.dados('cotacoes'), LX.dados('placar-termometro')] : [fetchJSON('data/leitura.json'), fetchJSON('data/cotacoes.json'), fetchJSON('data/placar-termometro.json')]); renderSlow();
-        timer = [setInterval(render, 1000), setInterval(renderSlow, 15000), setInterval(async () => { cot = await fetchJSON('data/cotacoes.json') || cot; renderSlow(); }, 5 * 60e3)];
+        timer = [setInterval(render, 1000), setInterval(renderSlow, 15000), setInterval(async () => { cot = await fetchJSON('data/cotacoes.json') || cot; renderSlow(); }, 5 * 60e3),
+            setInterval(async () => { cal = await fetchJSON('data/calendario.json') || cal; }, 60e3)];  // resultado do dado chega pela coleta do calendário
         $('pg-close').focus();
     }
     function closePg() {
