@@ -27,3 +27,7 @@ jobs:
           PLANTAO_HORAS: '4'
           SO_SE_HOUVER: ${{ github.event_name == 'schedule' && '1' || '' }}
         run: python3 scripts/discord_plantao.py
+      - name: Eventos ao vivo (Copom, payroll, IPCA…)
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: python3 scripts/discord_eventos.py
