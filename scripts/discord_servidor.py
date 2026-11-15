@@ -51,6 +51,7 @@ def ler():
     cargos = sorted(api('GET', f'/guilds/{GUILD}/roles'), key=lambda r: -r['position'])
     print(f'Bot: {eu["username"]} · Servidor: {g["name"]} · ~{g.get("approximate_member_count")} membros '
           f'({g.get("approximate_presence_count")} online)')
+    print(f'Impulsos: {g.get("premium_subscription_count", 0)} (nível {g.get("premium_tier", 0)}) · tag do servidor precisa de 3')
     print(f'Comunidade: {"sim" if "COMMUNITY" in g.get("features", []) else "NÃO"} · verificação nível {g.get("verification_level")} '
           f'· filtro de mídia {g.get("explicit_content_filter")} · canal de regras {g.get("rules_channel_id")} · avisos {g.get("public_updates_channel_id")}')
     print('\n## Cargos (do mais alto ao mais baixo)')
@@ -378,12 +379,26 @@ def montar(simular):
     print(f'\n{len(feito)} ação(ões){" (nada foi alterado: simulação)" if simular else ""}. Nada foi apagado.')
 
 
+def convite():
+    """Convite permanente para #boas-vindas (reaproveita um do robô se já existir). O código é público: vai no site."""
+    canais = api('GET', f'/guilds/{GUILD}/channels')
+    bv = next(c for c in canais if c['name'] == 'boas-vindas')
+    eu = api('GET', '/users/@me')
+    for i in api('GET', f'/channels/{bv["id"]}/invites'):
+        if (i.get('inviter') or {}).get('id') == eu['id'] and i.get('max_age') == 0 and i.get('max_uses') == 0:
+            print(f'CONVITE=https://discord.gg/{i["code"]}'); return
+    i = api('POST', f'/channels/{bv["id"]}/invites', {'max_age': 0, 'max_uses': 0, 'unique': False})
+    print(f'CONVITE=https://discord.gg/{i["code"]}')
+
+
 if __name__ == '__main__':
     if not TOKEN:
         sys.exit('::error::Falta o segredo DISCORD_BOT_TOKEN.')
     modo = sys.argv[1] if len(sys.argv) > 1 else 'ler'
     if modo == 'ler':
         ler()
+    elif modo == 'convite':
+        convite()
     elif modo in ('simular', 'montar'):
         montar(modo == 'simular')
     else:

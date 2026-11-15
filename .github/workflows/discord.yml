@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       modo:
-        description: 'ler, simular ou montar'
+        description: 'ler, simular, montar ou convite'
         default: 'ler'
       trocar_logo:
         description: 'trocar a foto do servidor e do bot pela logo (1 = sim)'
