@@ -2,7 +2,9 @@
 
 - leitura: Leitura do Dia de um NOVO dia → assinantes com a tag leitura=1
 - surpresa: evento que ganhou "surpresa" no calendário → tag surpresa=1
-- agenda: eventos de alto impacto com horário → agendados para 15 min antes (send_after) → tag agenda=1
+- agenda: dados fortes com horário → agendados para 5 min antes (send_after), com consenso e como WIN/WDO reagiram
+  antes quando veio acima/abaixo (data/reacoes.json) → tag agenda=1
+- resultado: dado forte saiu em linha com o consenso (os acima/abaixo já vão como "surpresa") → tag surpresa=1
   (chave de idempotência por evento: rodar várias vezes não duplica)
 
 Precisa de ONESIGNAL_APP_ID e ONESIGNAL_API_KEY; sem eles, não faz nada.
@@ -60,6 +62,32 @@ def enviar(tag, titulo, texto, url, chave, quando=None, filtros=None):
     return True
 
 
+def _pct(v):
+    return ('+' if v > 0 else '−' if v < 0 else '') + f'{abs(v):.2f}%'.replace('.', ',')
+
+
+def historico(tipo, direcao=None):
+    """'acima: WIN +0,04% · WDO −0,16% (8×)' a partir das divulgações anteriores do mesmo dado."""
+    try:
+        rs = [x for x in json.load(open('data/reacoes.json', encoding='utf-8'))['registros'] if x.get('tipo') == tipo]
+    except Exception:
+        return ''
+    partes = []
+    for d in ([direcao] if direcao else ['acima', 'abaixo']):
+        sel = [x for x in rs if x.get('surpresa') == d]
+        med = {k: [x[k] for x in sel if isinstance(x.get(k), (int, float))] for k in ('win', 'wdo')}
+        if med['win'] or med['wdo']:
+            partes.append(f'{d}: ' + ' · '.join(f'{k.upper()} {_pct(sum(v) / len(v))}' for k, v in med.items() if v) + f' ({len(sel)}×)')
+    return ' | '.join(partes)
+
+
+def forte(ev):
+    """Mesmo critério dos eventos ao vivo: importância 3, ou 2 que mexe em WIN/WDO/DI (2+) durante o pregão."""
+    imp, ativos = ev.get('importancia') or 1, [k for k in ('win', 'wdo', 'di') if (ev.get('impacto') or {}).get(k)]
+    t = hora_evento(ev)
+    return imp >= 3 or (imp >= 2 and len(ativos) >= 2 and t is not None and dt.time(9, 0) <= t.time() <= dt.time(18, 30))
+
+
 def hora_evento(ev):
     h = str(ev.get('hora') or '').strip()
     if 'h' not in h or not ev.get('data'):
@@ -91,20 +119,27 @@ def main():
     if not c:
         return
     ja = {tg.chave(ev) for ev in (ca or {}).get('eventos', []) if ev.get('surpresa')}
+    ja_res = {tg.chave(ev) for ev in (ca or {}).get('eventos', []) if ev.get('resultado')}
     agora = dt.datetime.now(BRT)
     for ev in c.get('eventos', []):
         s = ev.get('surpresa')
         if s and s.get('direcao') in ('acima', 'abaixo') and ev.get('resultado') and tg.chave(ev) not in ja:
             seta = '▲ acima' if s['direcao'] == 'acima' else '▼ abaixo'
             texto = f'Saiu {ev["resultado"]}' + (f' · consenso {ev["consenso"]}' if ev.get('consenso') else '') + (f'. {s["reacao"]}' if s.get('reacao') else '')
-            enviar('surpresa', f'⚡ {ev["evento"]}: {seta} do consenso', texto, site + '#cal-wrap', 'surpresa-' + tg.chave(ev))
+            h = historico(ev.get('tipo'), s['direcao'])
+            if h and not s.get('reacao'):
+                texto += f'. Antes, quando veio {h}'
+            enviar('surpresa', f'⚡ {ev["evento"]}: {seta} do consenso', texto, site + '#pregao', 'surpresa-' + tg.chave(ev))
+        elif ev.get('resultado') and forte(ev) and not s and ev.get('consenso') and tg.chave(ev) not in ja_res:
+            enviar('surpresa', f'📊 {ev["evento"]}: saiu {ev["resultado"]}', f'Em linha com o consenso ({ev["consenso"]}).', site + '#pregao', 'resultado-' + tg.chave(ev))
         t = hora_evento(ev)
-        if (ev.get('importancia') or 1) >= 3 and t and not ev.get('resultado'):
-            quando = t - dt.timedelta(minutes=15)
+        if forte(ev) and t and not ev.get('resultado'):
+            quando = t - dt.timedelta(minutes=5)
             if agora < quando < agora + dt.timedelta(days=7):
                 imp = ' · '.join(f'{k.upper()} {tg_seta}' for k, v in (ev.get('impacto') or {}).items() for tg_seta in [{'alta': '▲', 'baixa': '▼', 'volatil': '↕'}.get(v, '')] if tg_seta)
-                enviar('agenda', f'⏱ {ev["evento"]} em 15 min', f'{ev.get("hora")} de Brasília' + (f' · cons. {ev["consenso"]}' if ev.get('consenso') else '') + (f' · {imp}' if imp else ''),
-                       site + '#pregao', f'agenda2-{tg.chave(ev)}', quando=quando)
+                h = historico(ev.get('tipo'))
+                enviar('agenda', f'⏱ {ev["evento"]} em 5 min', f'{ev.get("hora")} de Brasília' + (f' · cons. {ev["consenso"]}' if ev.get('consenso') else '') +
+                       (f'. Antes, quando veio {h}' if h else (f' · {imp}' if imp else '')), site + '#pregao', f'agenda5-{tg.chave(ev)}', quando=quando)
 
 
 if __name__ == '__main__':
