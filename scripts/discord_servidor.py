@@ -270,14 +270,22 @@ def montar(simular):
         c = por_nome(canal, [0])
         if not c:
             continue
-        fixadas = [] if str(c['id']).startswith('nov') else api('GET', f'/channels/{c["id"]}/pins')
-        minha = next((m for m in fixadas if m['author']['id'] == eu['id']), None)
+        recentes = [] if str(c['id']).startswith('nov') else api('GET', f'/channels/{c["id"]}/messages?limit=50')
+        primeira = texto.split('\n', 1)[0]
+        minha = next((m for m in recentes if m['author']['id'] == eu['id'] and m['content'].split('\n', 1)[0] == primeira), None)
         if minha:
             if minha['content'] != texto:
-                faz(f'Atualizar a mensagem fixada em #{canal}', 'PATCH', f'/channels/{c["id"]}/messages/{minha["id"]}', {'content': texto})
+                faz(f'Atualizar a mensagem do robô em #{canal}', 'PATCH', f'/channels/{c["id"]}/messages/{minha["id"]}', {'content': texto})
         else:
-            m = faz(f'Postar e fixar a mensagem em #{canal}', 'POST', f'/channels/{c["id"]}/messages', {'content': texto, 'flags': 4}, {'id': 'nova-msg'})
-            faz(f'Fixar em #{canal}', 'PUT', f'/channels/{c["id"]}/pins/{m["id"]}')
+            minha = faz(f'Postar a mensagem em #{canal}', 'POST', f'/channels/{c["id"]}/messages', {'content': texto, 'flags': 4}, {'id': 'nova-msg', 'pinned': False})
+        if not minha.get('pinned'):
+            try:
+                faz(f'Fixar a mensagem em #{canal}', 'PUT', f'/channels/{c["id"]}/messages/pins/{minha["id"]}')
+            except SystemExit:
+                try:
+                    faz(f'Fixar a mensagem em #{canal} (rota antiga)', 'PUT', f'/channels/{c["id"]}/pins/{minha["id"]}')
+                except SystemExit as e:  # desde 2026 fixar exige a permissão própria "Fixar mensagens"
+                    print(f'::warning::Não consegui fixar em #{canal}: falta a permissão "Fixar mensagens" para o robô ({e})')
     if g.get('rules_channel_id') and por_nome('regras') and g['rules_channel_id'] != por_nome('regras')['id']:
         faz('Definir #regras como canal de regras da Comunidade', 'PATCH', f'/guilds/{GUILD}', {'rules_channel_id': por_nome('regras')['id']})
 
