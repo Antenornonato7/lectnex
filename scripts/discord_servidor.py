@@ -99,7 +99,7 @@ CATEGORIAS = [
                 ('material', 0, EQUIPE, 'Lições da Academia, calculadoras e guias do site')]),
     ('COMUNIDADE', [('off-topic', 0, None, 'Conversa livre'),
                     ('sugestoes-pro-site', 0, None, 'Ideias e erros encontrados no site')]),
-    ('AO VIVO', [('Sala do pregão', 2, None, None)]),
+    ('AO VIVO', [('Sala do pregão', 2, None, None), ('Sala de investimentos', 2, None, None)]),
 ]
 ETIQUETAS = {'duvidas': ['Iniciante', 'Risco', 'IR', 'Plataforma', 'WIN', 'WDO', 'Investimentos'], 'diario-de-trades': ['WIN', 'WDO', 'Ações'],
              'carteiras': ['Dividendos', 'FIIs', 'Renda fixa', 'Longo prazo', 'Aposentadoria']}
