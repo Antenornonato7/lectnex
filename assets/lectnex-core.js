@@ -29,6 +29,7 @@
     // Newsletter (Buttondown): usuário da conta. Vazio = formulários de inscrição ficam escondidos.
     LX.config.newsletter = 'lectnex';
     LX.config.telegram = 'lectnex';   // canal público t.me/lectnex
+    LX.config.discord = 'https://discord.gg/kM6YcQA82P';   // convite permanente do servidor (criado pelo bot, entra em #boas-vindas)
     LX.config.onesignal = 'c0be7d93-6afb-4bb0-bf56-6f9171302071';
     LX.config.ga = 'G-5D8GS46BN1';   // Google Analytics 4 (ID G-XXXXXXX). Vazio = desligado. Só grava cookies depois do "Aceitar" (LGPD).
     LX.config.onesignalSafari = 'web.onesignal.auto.201c9c11-2835-4563-82b9-55a6f9094e87';         // App ID do OneSignal (notificações no celular); vazio = desligado
@@ -820,6 +821,13 @@
         if (kind === 'link') return `<a href="${href}" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-[#1C7FB3] dark:text-[#4CB9F0] hover:underline font-mono text-[11px] font-bold"><i class="ph-fill ph-telegram-logo text-sm"></i>Seguir no Telegram${n}</a>`;
         return `<a href="${href}" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#1C7FB3] hover:bg-[#176B97] text-white font-mono text-xs font-bold whitespace-nowrap"><i class="ph-fill ph-telegram-logo text-base"></i>SEGUIR NO TELEGRAM${n}</a>`;
     }
+    function dcBtn(kind) { // botão "Entrar no Discord" (kind: escuro | link)
+        const href = LX.config.discord; if (!href) return '';
+        const ev = `onclick="window.LX&&LX.track&&LX.track('discord_clique',{local:'${kind}'})"`;
+        if (kind === 'link') return `<a href="${href}" target="_blank" rel="noopener" ${ev} class="inline-flex items-center gap-1.5 text-[#5865F2] dark:text-[#8A93F8] hover:underline font-mono text-[11px] font-bold"><i class="ph-fill ph-discord-logo text-sm"></i>Comunidade no Discord</a>`;
+        return `<a href="${href}" target="_blank" rel="noopener" ${ev} class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#5865F2] hover:bg-[#4752C4] text-white font-mono text-xs font-bold whitespace-nowrap"><i class="ph-fill ph-discord-logo text-base"></i>ENTRAR NO DISCORD</a>`;
+    }
+    LX.dcBtn = dcBtn;
     function newsForms() {
         const user = LX.config.newsletter;
         // prova social: só a partir de 25 inscritos
@@ -836,15 +844,15 @@
             if (kind === 'chamada') {
                 el.innerHTML = `<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 p-5 border border-dashed border-lect-orange/50 bg-lect-orange/5">
                     <div class="flex items-start gap-3"><i class="ph-duotone ph-envelope-simple-open text-3xl text-lect-orange shrink-0"></i><div><strong class="block font-display">${LX.esc(el.dataset.titulo || 'Gostou desta ferramenta?')}</strong><span class="text-sm text-slate-600 dark:text-slate-400">Receba a <strong>Leitura do Dia</strong> às 7h40: cenário de abertura para WIN e WDO, agenda e as notícias que mexem no preço. Grátis.${social ? ` <strong class="text-lect-orange">${social}</strong>` : ''}</span></div></div>
-                    <div class="md:w-[420px] shrink-0">${form}${LX.config.telegram ? `<div class="mt-2 text-right">${tgBtn('link')} <span class="text-[11px] text-slate-500 font-mono">· alertas de surpresa em tempo real</span></div>` : ''}</div></div>`;
+                    <div class="md:w-[420px] shrink-0">${form}${LX.config.telegram ? `<div class="mt-2 flex flex-wrap justify-end items-center gap-x-3 gap-y-1">${tgBtn('link')}${dcBtn('link')}<span class="text-[11px] text-slate-500 font-mono">alertas e comunidade</span></div>` : ''}</div></div>`;
                 return;
             }
             el.innerHTML = full
                 ? `<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center p-6 bg-lect-navy text-white border-l-4 border-lect-orange relative overflow-hidden"><div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
                     <div class="relative lg:col-span-7"><span class="term-label !text-lect-orange font-bold">LEITURA DO DIA NO SEU E-MAIL</span><h3 class="font-display text-2xl font-bold mt-1">Comece o pregão já sabendo o que importa.</h3>
                     <p class="text-sm text-slate-300 mt-2">Todo dia às 7h40: cenário de abertura para WIN e WDO, agenda com horários, as 5 notícias que mexem no preço e o que esperar. Grátis, sem spam, cancele quando quiser.</p></div>
-                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">${social ? `<strong class="text-lect-orange">${social}</strong> · ` : ''}Conteúdo educacional · você confirma a inscrição pelo e-mail.</p>${LX.config.telegram ? `<div class="mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center gap-3">${tgBtn('escuro')}<button type="button" data-lx-push class="hidden items-center justify-center gap-2 px-4 py-2 border border-lect-orange text-lect-orange hover:bg-lect-orange/10 font-mono text-xs font-bold"><i class="ph-bold ph-bell-ringing"></i>ALERTAS NO CELULAR</button><span class="text-[11px] text-slate-400">Prefere celular? A Leitura e os alertas de surpresa chegam no canal.</span></div>` : ''}</div></div>`
-                : `<div class="font-mono text-[11px]"><span class="block text-slate-300 font-bold mb-1.5"><i class="ph-bold ph-envelope-simple text-lect-orange"></i> Leitura do Dia por e-mail, todo dia às 7h40</span>${form}${LX.config.telegram ? `<div class="mt-2">${tgBtn('link')}</div>` : ''}</div>`;
+                    <div class="relative lg:col-span-5">${form}<p class="text-[10px] text-slate-400 mt-2 font-mono">${social ? `<strong class="text-lect-orange">${social}</strong> · ` : ''}Conteúdo educacional · você confirma a inscrição pelo e-mail.</p>${LX.config.telegram ? `<div class="mt-3 pt-3 border-t border-white/10 flex flex-wrap items-center gap-3">${tgBtn('escuro')}${dcBtn('escuro')}<button type="button" data-lx-push class="hidden items-center justify-center gap-2 px-4 py-2 border border-lect-orange text-lect-orange hover:bg-lect-orange/10 font-mono text-xs font-bold"><i class="ph-bold ph-bell-ringing"></i>ALERTAS NO CELULAR</button><span class="text-[11px] text-slate-400">Prefere celular? A Leitura e os alertas chegam no Telegram e no Discord, onde também tem a comunidade.</span></div>` : ''}</div></div>`
+                : `<div class="font-mono text-[11px]"><span class="block text-slate-300 font-bold mb-1.5"><i class="ph-bold ph-envelope-simple text-lect-orange"></i> Leitura do Dia por e-mail, todo dia às 7h40</span>${form}${LX.config.telegram ? `<div class="mt-2 flex flex-wrap gap-x-4 gap-y-1">${tgBtn('link')}${dcBtn('link')}</div>` : ''}</div>`;
         });
         pushButtons();
     }
