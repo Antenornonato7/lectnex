@@ -128,13 +128,18 @@ DIAS_SEMANA = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 
 def main():
     regs = json.load(open('data/reacoes.json', encoding='utf-8'))['registros']
     os.makedirs('dados', exist_ok=True)
-    mudou, locs = [], []
+    mudou, locs, novas = [], [], []
     for tipo, (nome, _, _) in SOBRE.items():
         rs = sorted([r for r in regs if r.get('tipo') == tipo], key=lambda r: r['data'], reverse=True)[:POR_TIPO]
         for r in rs:
             slug, url, html = pagina(r, nome, tipo, rs)
             arq = f'dados/{slug}.html'
             locs.append((url, r['data']))
+            nova = not os.path.exists(arq)
+            if nova and (dt.date.today() - dt.date.fromisoformat(r['data'])).days <= 3:
+                novas.append({'evento': nome_do_evento(r, nome), 'url': url, 'resultado': r.get('resultado'), 'consenso': r.get('consenso'),
+                              'surpresa': r.get('surpresa'), 'win': r.get('win'), 'wdo': r.get('wdo'), 'janela': '1 h' if r.get('janela') == '1h' else '30 min',
+                              'win_abertura': r.get('win_abertura')})
             if not os.path.exists(arq) or re.sub(r'"dateModified": "[^"]+"', '', open(arq, encoding='utf-8').read()) != re.sub(r'"dateModified": "[^"]+"', '', html):
                 open(arq, 'w', encoding='utf-8').write(html)
                 mudou.append(arq)
@@ -143,7 +148,9 @@ def main():
         if f'{loc}</loc>' not in sm:
             sm = sm.replace('</urlset>', f'  <url><loc>{loc}</loc><lastmod>{d}</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>\n</urlset>')
     open('sitemap.xml', 'w', encoding='utf-8').write(sm)
-    print(f'::notice::Páginas de divulgação: {len(locs)} no ar, {len(mudou)} atualizada(s)')
+    if novas:  # para o post automático (scripts/postar_divulgacao.py), depois que a página estiver no ar
+        json.dump(novas, open(os.path.join(os.environ.get('RUNNER_TEMP', '.'), 'novas-divulgacoes.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+    print(f'::notice::Páginas de divulgação: {len(locs)} no ar, {len(mudou)} atualizada(s), {len(novas)} nova(s) para postar')
     print('PAGINAS=' + ' '.join(mudou))
 
 

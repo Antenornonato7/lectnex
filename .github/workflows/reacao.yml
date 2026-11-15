@@ -50,3 +50,15 @@ jobs:
           pip install -q google-auth requests || true
           sleep 60   # espera o GitHub Pages publicar
           PAGINAS="$P" python3 coletor/avisar_buscadores.py
+      - name: Post da divulgação (Discord e X)
+        if: always()
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: |
+          [ -f "$RUNNER_TEMP/novas-divulgacoes.json" ] || { echo "Nenhuma divulgação nova."; exit 0; }
+          [ -n "$X_API_KEY" ] && pip install -q requests-oauthlib || true
+          python3 scripts/postar_divulgacao.py
