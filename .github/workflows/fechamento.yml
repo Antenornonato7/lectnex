@@ -53,6 +53,14 @@ jobs:
           else
             python3 scripts/story_fechamento.py "$RUNNER_TEMP/fechamento.json" "$RUNNER_TEMP/story.png"
           fi || echo "::warning::Falha ao gerar ou enviar o story (o fechamento não é afetado)."
+      - name: Banner do Discord com o fechamento do dia
+        if: ${{ !inputs.previa_story }}
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: |
+          [ -f "$RUNNER_TEMP/fechamento.json" ] || { echo "Sem fechamento hoje: banner mantido."; exit 0; }
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          python3 scripts/discord_banner.py "$RUNNER_TEMP/fechamento.json" || echo "::warning::Falha no banner do Discord (o fechamento não é afetado)."
       - name: Post do gráfico do dia (notícia × preço) no Telegram privado
         if: ${{ !inputs.previa_story }}
         env:
