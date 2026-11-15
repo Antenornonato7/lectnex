@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=25151e1b") format("woff");
+  src: url("./Phosphor.woff?v=466baf3a") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -165,6 +165,9 @@
 }
 .ph.ph-device-mobile:before {
   content: "\e1e0";
+}
+.ph.ph-discord-logo:before {
+  content: "\e61a";
 }
 .ph.ph-download-simple:before {
   content: "\e20c";
@@ -390,7 +393,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=25151e1b") format("woff");
+  src: url("./Phosphor-Bold.woff?v=466baf3a") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -553,6 +556,9 @@
 }
 .ph-bold.ph-device-mobile:before {
   content: "\e1e0";
+}
+.ph-bold.ph-discord-logo:before {
+  content: "\e61a";
 }
 .ph-bold.ph-download-simple:before {
   content: "\e20c";
@@ -778,7 +784,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=25151e1b") format("woff");
+  src: url("./Phosphor-Fill.woff?v=466baf3a") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -941,6 +947,9 @@
 }
 .ph-fill.ph-device-mobile:before {
   content: "\e1e0";
+}
+.ph-fill.ph-discord-logo:before {
+  content: "\e61a";
 }
 .ph-fill.ph-download-simple:before {
   content: "\e20c";
@@ -1166,7 +1175,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=25151e1b") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=466baf3a") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1543,6 +1552,14 @@
 }
 .ph-duotone.ph-device-mobile:after {
   content: "\e1e1";
+  margin-left: -1em;
+}
+.ph-duotone.ph-discord-logo:before {
+  content: "\e61a";
+  opacity: 0.2;
+}
+.ph-duotone.ph-discord-logo:after {
+  content: "\e61b";
   margin-left: -1em;
 }
 .ph-duotone.ph-download-simple:before {

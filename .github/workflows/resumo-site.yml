@@ -34,6 +34,7 @@ jobs:
         run: pip install -q google-auth==2.38.0 requests==2.32.3
       - name: Montar e enviar
         env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           GSC_SERVICE_ACCOUNT: ${{ secrets.GSC_SERVICE_ACCOUNT }}
           GITHUB_TOKEN: ${{ github.token }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}

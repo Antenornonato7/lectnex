@@ -101,6 +101,15 @@ def bloco_inscritos():
                 L.append(f'{rot}: <b>{n(v)}</b>')
         except Exception:
             pass
+    tok = os.environ.get('DISCORD_BOT_TOKEN', '').strip()
+    if tok:  # membros do servidor Discord (contagem aproximada do próprio Discord)
+        try:
+            req = urllib.request.Request('https://discord.com/api/v10/guilds/1565140434445934722?with_counts=true',
+                                         headers={'Authorization': f'Bot {tok}', 'User-Agent': 'DiscordBot (https://lectnex.com.br, 1.0)'})
+            g = json.load(urllib.request.urlopen(req, timeout=20))
+            L.append(f'Comunidade no Discord: <b>{n(g.get("approximate_member_count", 0))}</b> membros')
+        except Exception as ex:
+            print(f'::warning::Discord: {ex}')
     return (['<b>Inscritos</b>'] + L + ['']) if L else []
 
 
