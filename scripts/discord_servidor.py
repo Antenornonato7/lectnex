@@ -227,9 +227,12 @@ def montar(simular):
         for i, (nome, tipo, _, _) in enumerate(lista):
             c = por_nome(nome, [tipo])
             if c and not str(c['id']).startswith('nov'):
-                ordem.append({'id': c['id'], 'position': i, 'parent_id': ids_cat[cat]})
+                ordem.append({'id': c['id'], 'position': i})
     ordem = [o for o in ordem if not str(o['id']).startswith('nov')]
-    faz('Ordenar categorias e canais', 'PATCH', f'/guilds/{GUILD}/channels', ordem)
+    try:
+        faz('Ordenar categorias e canais', 'PATCH', f'/guilds/{GUILD}/channels', ordem)
+    except SystemExit as e:  # ordem é cosmética: não para a montagem
+        print(f'::warning::Ordem dos canais: {e}')
 
     # 6. segurança do servidor
     if g.get('verification_level', 0) < 2:
