@@ -41,7 +41,7 @@ def escolher(cal, agora):
 
 def ficha(tipo, nome, saida):
     """Imagem de capa do evento: as últimas 6 divulgações desse dado, surpresa contra o consenso e quanto WIN e WDO
-    andaram nos 30 min seguintes (data/reacoes.json). Sem pelo menos 3 registros do mesmo tipo, não gera."""
+    andaram nos 30 min seguintes, e o DI de 2 anos no dia (data/reacoes.json). Sem pelo menos 3 registros do mesmo tipo, não gera."""
     try:
         regs = [r for r in json.load(open('data/reacoes.json', encoding='utf-8'))['registros'] if r.get('tipo') == tipo]
     except Exception:
@@ -59,9 +59,9 @@ def ficha(tipo, nome, saida):
     ft, fc, fr, fs = fonte('InterDisplay-Bold.otf', 30), fonte('JetBrainsMono-Bold.ttf', 15), fonte('JetBrainsMono-Bold.ttf', 19), fonte('JetBrainsMono-Bold.ttf', 14)
     titulo = re.sub(r'\s*\(.*?\)', '', nome)[:44]
     d.text((32, 22), f'{titulo} · últimas {len(regs)} divulgações', font=ft, fill=(255, 255, 255))
-    d.text((32, 64), 'reação nos 30 min seguintes (janela de 1 h antes de set/2026) · histórico não garante o próximo', font=fs, fill=(148, 163, 184))
-    cols = [32, 160, 330, 500, 640, 830]
-    for x, t in zip(cols, ['DATA', 'SAIU', 'CONSENSO', 'SURPRESA', 'WIN', 'WDO']):
+    d.text((32, 64), 'WIN/WDO: 30 min seguintes (1 h antes de set/2026) · DI: taxa de 2 anos no dia · histórico não garante o próximo', font=fs, fill=(148, 163, 184))
+    cols = [32, 150, 290, 430, 570, 730, 880]
+    for x, t in zip(cols, ['DATA', 'SAIU', 'CONSENSO', 'SURPRESA', 'WIN', 'WDO', 'DI 2a/dia']):
         d.text((x, 100), t, font=fc, fill=(100, 116, 139))
     y = 128
     for r in reversed(regs):
@@ -76,9 +76,12 @@ def ficha(tipo, nome, saida):
             if v is None:
                 d.text((x, y), '—', font=fr, fill=(100, 116, 139)); continue
             cor = (0, 201, 181) if v >= 0 else (244, 63, 94)
-            larg = min(80, abs(v) * 80)
+            larg = min(60, abs(v) * 60)
             d.rectangle([x, y + 4, x + max(3, larg), y + 20], fill=cor)
             d.text((x + max(3, larg) + 8, y), ('+' if v > 0 else '−' if v < 0 else '') + f'{abs(v):.2f}%'.replace('.', ','), font=fr, fill=cor)
+        di = r.get('di_bps')
+        d.text((cols[6], y), '—' if di is None else ('+' if di > 0 else '−' if di < 0 else '') + f'{abs(di):.0f} bps', font=fr,
+               fill=(100, 116, 139) if di is None else (244, 63, 94) if di > 0 else (0, 201, 181))
         y += 42
     d.text((32, H - 26), 'lectnex.com.br · conteúdo educacional, não é recomendação', font=fs, fill=(100, 116, 139))
     im.save(saida)

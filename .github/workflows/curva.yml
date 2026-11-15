@@ -24,12 +24,14 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: python3 scripts/juros_saltos.py
+      - name: Reação do DI às divulgações
+        run: python3 scripts/reacoes_di.py || echo "::warning::Falha ao medir a reação do DI."
       - name: Publicar
         run: |
           [ -f data/curva.json ] || exit 0
           git config user.name "lectnex-bot"
           git config user.email "bot@lectnex.com.br"
-          git add data/curva.json data/juros-saltos.json juros/index.html sitemap.xml
+          git add data/curva.json data/juros-saltos.json juros/index.html sitemap.xml data/reacoes.json
           git diff --cached --quiet && exit 0
           git commit -m "curva: $(TZ=America/Sao_Paulo date '+%F %H:%M')"
           ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]
