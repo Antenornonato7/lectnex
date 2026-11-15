@@ -1738,8 +1738,9 @@
    "win": 0.234,
    "win_abertura": true,
    "wdo": -0.035,
-   "di_bps": -102.2,
-   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte"
+   "di_bps": null,
+   "di_janela": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte",
+   "di_obs": "não medido: a curva saltou em 05/10 por outro motivo (ver lectnex.com.br/juros/)"
   },
   {
    "id": "2026-10-09|09h00|ipca",
