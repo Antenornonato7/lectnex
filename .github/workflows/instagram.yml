@@ -9,7 +9,7 @@ on:
       acao:
         description: 'teste (confere token e conta), renovar, processar, reenviar (pedidos sem botão) ou kit (propõe post, Reels e story do Kit do dia)'
         type: choice
-        options: [teste, renovar, processar, reenviar, kit]
+        options: [teste, renovar, processar, reenviar, kit, facebook-teste, facebook-perfil]
         default: teste
       pecas:
         description: 'Só para kit: chaves do Kit do dia (ex.: "leitura termo"); vazio = gráfico, Reels e story do fechamento'
