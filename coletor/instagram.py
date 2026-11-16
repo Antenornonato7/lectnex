@@ -282,6 +282,30 @@ def facebook_perfil():
     note('notice', 'Página do Facebook: foto de perfil e capa atualizadas.')
 
 
+def facebook_pendentes(dias=2):
+    """Manda no Telegram, com botão "Publicar no Facebook", os posts dos últimos dias que saíram só no Instagram."""
+    f, sha = fila_ler()
+    limite = dt.datetime.now(BRT) - dt.timedelta(days=dias)
+    n = 0
+    for x in f['pedidos']:
+        if x.get('status') != 'publicado' or x.get('link_fb') or dt.datetime.fromisoformat(x['criado']) < limite:
+            continue
+        nome = x.get('nome') or TIPOS.get(x['tipo'], x['tipo'])
+        if x.get('video'):
+            tg('sendVideo', chat_id=admin(), video=x['video'], caption=f'Prévia: {nome}')
+        elif x.get('imagens'):
+            tg('sendPhoto', chat_id=admin(), photo=x['imagens'][0], caption=f'Prévia: {nome}')
+        r = tg('sendMessage', chat_id=admin(), parse_mode='HTML', disable_web_page_preview=True,
+               text=f'📘 <b>{esc(nome)}</b> já está no Instagram' + (f' ({x["link"]})' if x.get('link') else '') + '.\nToque para publicar também na Página do Facebook.',
+               reply_markup={'inline_keyboard': [[{'text': '✅ Publicar no Facebook', 'callback_data': f'ig:fb:{x["id"]}'}]]})
+        x['fb_pendente'] = True
+        x['msg_fb'] = r['result']['message_id']
+        n += 1
+    if n:
+        fila_gravar(f, sha)
+    note('notice', f'{n} post(s) do Instagram propostos para a Página do Facebook.')
+
+
 # ---------- comandos ----------
 def propor(tipo, legenda_arq, imagens):
     from PIL import Image
@@ -410,7 +434,7 @@ def processar():
         return
     f, sha = fila_ler()
     pend = [p for p in f['pedidos'] if p['status'] == 'aguardando']
-    if not pend:
+    if not pend and not any(p.get('fb_pendente') for p in f['pedidos']):
         return
     agora = dt.datetime.now(BRT)
     mudou = False
@@ -437,10 +461,29 @@ def processar():
         if len(partes) != 3 or partes[0] != 'ig':
             continue
         p = next((x for x in f['pedidos'] if x['id'] == partes[2]), None)
-        if not p or p['status'] != 'aguardando':
+        if p and partes[1] == 'fb' and p['status'] == 'publicado' and not p.get('link_fb'):
+            pass
+        elif not p or p['status'] != 'aguardando':
             responder(cq, 'Este post não está mais aguardando.')
             continue
         mid = (cq.get('message') or {}).get('message_id')
+        if partes[1] == 'fb':  # só na Página do Facebook (post que já saiu no Instagram)
+            responder(cq, 'Publicando no Facebook…')
+            try:
+                p['link_fb'] = publicar_facebook(p)
+                p.pop('erro_fb', None)
+                p.pop('fb_pendente', None)
+                txt = f'✅ Publicado na Página do Facebook.\n{p["link_fb"]}'
+            except Exception as e:
+                p['erro_fb'] = str(e)[:200]
+                txt = f'⚠️ Não consegui publicar no Facebook: {esc(str(e)[:200])}\nO botão continua valendo para tentar de novo.'
+            try:
+                if p.get('link_fb'):
+                    tg('editMessageReplyMarkup', chat_id=admin(), message_id=mid, reply_markup={'inline_keyboard': []})
+                tg('sendMessage', chat_id=admin(), text=txt, parse_mode='HTML', reply_to_message_id=mid, disable_web_page_preview=True)
+            except Exception:
+                pass
+            continue
         if partes[1] == 'del':
             p['status'] = 'descartado'
             responder(cq, 'Descartado.')
@@ -543,6 +586,8 @@ if __name__ == '__main__':
         teste()
     elif cmd == 'reenviar':
         reenviar()
+    elif cmd == 'facebook-hoje':
+        facebook_pendentes()
     elif cmd == 'facebook-perfil':
         facebook_perfil()
     elif cmd == 'facebook-teste':
