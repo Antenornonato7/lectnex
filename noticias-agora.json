@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T17:00-03:00",
+  "atualizado_em": "2026-11-16T17:03-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -288,6 +288,10 @@
     [
      "16:40",
      168796.0
+    ],
+    [
+     "16:45",
+     168781.0
     ]
    ]
   },
@@ -680,7 +684,11 @@
     ],
     [
      "17:00",
-     5.7767
+     5.778
+    ],
+    [
+     "17:03",
+     5.7781
     ]
    ]
   },
@@ -1377,6 +1385,20 @@
     "dolar30": -0.19
    },
    {
+    "hora": "15:54",
+    "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVnSAYICQVVfeXFMTTFmWHJMUzRfY085R1ZTVzZlbjNncUYxQmJsN0QxU2w4MkZwTU9ONDV6NzZJX1JSSWJ0MThiVFQtR1dmRGRoemZTckRtUG9HZWdnSDFJRVhsM3o5RDh6NjFBVDgzRjk4UXU3a2FWMlY4RHdEeFFjazY1eDc5NmRYUldEa0M4OUJNYU9CTTJtakxRV19qNWpMRnB4QVdSZmtfT2lpMkl5ekZ5TVUtUW5sdzBZZ0xoT1YwRjFnajBXSEwzdjBkLWxtYXQwNHNPc1VQV00xbl9qc19TZ0RNcDZ5ZUN6ZWgzc0pTZzJhZmRfcndWSEhNVkV6MW9uY2FRR1RCQnVR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.23,
+    "dolar30": -0.19
+   },
+   {
     "hora": "16:15",
     "titulo": "Aposta do estrangeiro contra o real sobe US$ 20 bi desde as eleições",
     "fonte": "Valor",
@@ -1420,19 +1442,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Banco do Brasil quer negociar com BC regra mais flexível para contabilizar perdas com agro",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-quer-negociar-com-bc-regra-mais-flexivel-para-contabilizar-perdas-com-agro.shtml",
-   "publicado": "2026-11-16T04:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
-  },
   {
    "titulo": "Ibovespa hoje: prévia do PIB, Focus e Fed testam Bolsa após encerrar semana em alta",
    "fonte": "Estadão",
@@ -2339,6 +2348,18 @@
    "tickers": []
   },
   {
+   "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVnSAYICQVVfeXFMTTFmWHJMUzRfY085R1ZTVzZlbjNncUYxQmJsN0QxU2w4MkZwTU9ONDV6NzZJX1JSSWJ0MThiVFQtR1dmRGRoemZTckRtUG9HZWdnSDFJRVhsM3o5RDh6NjFBVDgzRjk4UXU3a2FWMlY4RHdEeFFjazY1eDc5NmRYUldEa0M4OUJNYU9CTTJtakxRV19qNWpMRnB4QVdSZmtfT2lpMkl5ekZ5TVUtUW5sdzBZZ0xoT1YwRjFnajBXSEwzdjBkLWxtYXQwNHNPc1VQV00xbl9qc19TZ0RNcDZ5ZUN6ZWgzc0pTZzJhZmRfcndWSEhNVkV6MW9uY2FRR1RCQnVR?oc=5",
+   "publicado": "2026-11-16T15:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Aposta do estrangeiro contra o real sobe US$ 20 bi desde as eleições",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMjdIemtDbFEyYVY0SUdGN2NCa0xTYkR0T2h2UmpwY2pQVVM3aXBGbDlBY3NWc2ZvMEQwbDZGQWZDd1ZYTWQ5SkJkQThDTTZBdUVvWjNPdERDV2s5SG8wRjEzOUg1RU5wVXRJdE9ER09BamliSjRkUzRveEpyaEdHUWZJRE1Hc1J0aVVCYXdObDhTODJRdDhGU3Rjd3pnRng4MkUwRWZFZXBvc2FQS3RMTVhmbThxclJYUzJfYXFuNWNSWDYtU2tF0gHWAUFVX3lxTFB1c2l4MTQ5WWg2RWtVeEJlcGZObDFpWGcwMEstWk56Vm1IY1BKLTFNcnk1MFNldGRmaVBJTDNTZzcwMGNfMzYxZFNObF9ncDMySHhzYXJiUHloVW1aWUVNMW5MNjBJUDZnUVg3Q21UVGRObVJFU1dkWHZwNnhxLUFoejNtNUI0ODZZSGtzcVFDV0pUX2RPU00wbVp0Y3BEbVNLQ0NGWmxMY0dxMVNPbUZBbWYyQ2pvMDlxMEU2SGltLWxYdWpSSUNSZ3NJZ1JjOWI5eFV3ZkE?oc=5",
@@ -2401,7 +2422,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T17:00-03:00",
+ "atualizado_em": "2026-11-16T17:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2410,7 +2431,9 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney"
+  "InfoMoney",
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
@@ -2427,6 +2450,40 @@
    ]
   },
   {
+   "titulo": "Dólar supera R$ 5,77 e bate maior valor desde abril de 2025; Ibovespa cai mais de 2%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
+   "publicado": "2026-11-16T16:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nem o ouro escapa: dólar forte e temor de juros mais altos derrubam o metal a mínima de um ano",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUHBnb3NhdGlNaEhxeDlOdUNCeVRyOU11ZUhWM1RxdzRvS0xvOEZkS2lBbnF0MTJWRUpfTUxKS3VSdGhQT0lwX0lfYWIyMTZTTXBDOXh5NjJ4dUx2UngxUEdfYklrcG5NaFBFY3gwMkdCUllIcnRkT3VRR2M5Rm12YkdzSVpONXdVWlJrZDFFcE1ZTkpRdTRSMEhJYzRESmtic3ZOVmNEUHVWd1psTUU0bFVRbjFJdjRubkhZRjFTeFJCSFRkUGRST3g2OHJId2piaDAxMUFIb2w5dDBkQklyOG5NVTFvYlp3dWx2SVNaakpxQQ?oc=5",
+   "publicado": "2026-11-16T16:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Aposta do estrangeiro contra o real sobe US$ 20 bi desde as eleições",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMjdIemtDbFEyYVY0SUdGN2NCa0xTYkR0T2h2UmpwY2pQVVM3aXBGbDlBY3NWc2ZvMEQwbDZGQWZDd1ZYTWQ5SkJkQThDTTZBdUVvWjNPdERDV2s5SG8wRjEzOUg1RU5wVXRJdE9ER09BamliSjRkUzRveEpyaEdHUWZJRE1Hc1J0aVVCYXdObDhTODJRdDhGU3Rjd3pnRng4MkUwRWZFZXBvc2FQS3RMTVhmbThxclJYUzJfYXFuNWNSWDYtU2tF0gHWAUFVX3lxTFB1c2l4MTQ5WWg2RWtVeEJlcGZObDFpWGcwMEstWk56Vm1IY1BKLTFNcnk1MFNldGRmaVBJTDNTZzcwMGNfMzYxZFNObF9ncDMySHhzYXJiUHloVW1aWUVNMW5MNjBJUDZnUVg3Q21UVGRObVJFU1dkWHZwNnhxLUFoejNtNUI0ODZZSGtzcVFDV0pUX2RPU00wbVp0Y3BEbVNLQ0NGWmxMY0dxMVNPbUZBbWYyQ2pvMDlxMEU2SGltLWxYdWpSSUNSZ3NJZ1JjOWI5eFV3ZkE?oc=5",
+   "publicado": "2026-11-16T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
@@ -2435,6 +2492,18 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVnSAYICQVVfeXFMTTFmWHJMUzRfY085R1ZTVzZlbjNncUYxQmJsN0QxU2w4MkZwTU9ONDV6NzZJX1JSSWJ0MThiVFQtR1dmRGRoemZTckRtUG9HZWdnSDFJRVhsM3o5RDh6NjFBVDgzRjk4UXU3a2FWMlY4RHdEeFFjazY1eDc5NmRYUldEa0M4OUJNYU9CTTJtakxRV19qNWpMRnB4QVdSZmtfT2lpMkl5ekZ5TVUtUW5sdzBZZ0xoT1YwRjFnajBXSEwzdjBkLWxtYXQwNHNPc1VQV00xbl9qc19TZ0RNcDZ5ZUN6ZWgzc0pTZzJhZmRfcndWSEhNVkV6MW9uY2FRR1RCQnVR?oc=5",
+   "publicado": "2026-11-16T15:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2452,6 +2521,28 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar à vista ganha fôlego e ultrapassa os R$ 5,78 com pacote do governo; 'má qualidade', diz economista",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdk5TRV83TnVJTzVTcWJpNm41SmpfNUNvVndXWk1TVHo3T1dFcHZ0M0lVYnJYRGJld3MwRlM2UVU2Q29uc1oxZkJha2Z0VzdiN2E1XzFId0FKZDhXa3pCTi13dHpfenZwOGRIbDNuU1VLTUlLbFp5amwta2ltLUdaNFZtTXBJM283OWNCRw?oc=5",
+   "publicado": "2026-11-16T15:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cai cerca de 2% e fica abaixo dos 170 mil pontos: o que explica forte queda?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNURULUlrMVE5NFRab3llNzJJYkcxTkRWN2xLUlgzZDZndUp0OTZwd0Fmdmw1Y0lVRHBxbDBpZC1TeWpQMV8zVzFnSEVXdk5UMUZBczhnT21UOUZpNEdNZ3J6WVg1ekp1S1Q1YUJueWh2WVB6eGpJek1kVWVGcEVsdjFuSWtHSVZhTjY5ZmNtTEZha1ZOTURzOF9XYTl1ZlFRbktKQzVaTGhOWXBfa0Z5czZOVGxxb1nSAbwBQVVfeXFMTU5FTXpaS0drcjZKLWJfcTJMTlNFaHg1UUUwMXZaU0JYM2ExNU9oOGJPNlFraXdIbF9uV3ZxVldfTHM4VWJjRnBLWVoxaF9TT1ZKeDEtd09xQk44UmczN1RjU0Z0YkZFQ09wU3RwUDlGbXViY19mdTFjSGVDVG5URnNmTTRZMHl4b0hhWTlRZFFQUEZvTXZjZTJnMVk0ZzRLOGVySE1BUm5rcnNsdmV5bGhBaEdKS1piMjBQOXg?oc=5",
+   "publicado": "2026-11-16T15:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar hoje salta 2% e ultrapassa R$ 5,79 de olho em política fiscal e exterior",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzB6T2RBZmlEWW9KNzBla1NzRTJXZExKc3pzbGRjWXI2ai1pU0FOVXppOTIzMXA3bHRTZVN2WVZBZjR1NDJGVEs1TS1RZ2ZrWnp3Z3BTbWVmTE5CNm5GMzI3dkVjNl95OWtSeDJGYUdSc3d3dGN4Zy1mTnNaMWFQdmNrWV9ZamdpeHUtc3NNYUJUZDZOSVd4cTVVUk5zTEZ1dHhPbnp30gGrAUFVX3lxTE1sRFBjZ3RxbVkyanM0OTJBWWxEX3hydmp3b1RVczZ5RHpMUHRqbFFKVUJEQThYcVRVd2VzT0d4OU8zeXo5VnhUR3RQYUcyQlFLclRwVW9aNElHX0hhTDhfVnhSX2t1N2ctTS1KT0dCSXNVLURfT29BUWNia3dhZ2p3M1hubHp0NVd5aEpfTDc3Q1pqWTRmREhLTEY0NlpsTUU4eXNrNVBwbjFNcw?oc=5",
@@ -2460,6 +2551,17 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Por que o dólar ultrapassou os R$ 5,75 nesta segunda?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrY2VwenAtQjc0dXJVM0tZd0JiVnVqZ0ZULWMzMVVtOURIZko2alNiUDBMcGhNSU9ac19GVldGVXRLQW12TV9iUkpiZHYxNzlMMnk3Zld1dnA0a3I2S0d3a1d3NjBqd1RTV2JoWTVjWXh1MFhoSnl2ZGc0c9IBgAFBVV95cUxQLWFTQW5FNkZZdFNaUS1KWndmYm5ablg2dVBpbnBNZDBzTnZDQm40dkt2VU5ySEJ6czVyMXdJYWtXaFc1Ym9senVBelhIMS12V0tsZ1l4QjN3ZzNISW9naE5nQmw2cEJEQm5qcEw4U0pHTXFvb0pGb19aal9aaFp3aA?oc=5",
+   "publicado": "2026-11-16T15:04-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
