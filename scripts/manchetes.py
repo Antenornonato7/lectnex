@@ -119,6 +119,63 @@ def mexida(x):
     return max(abs(x['ib'] or 0), abs(x['dl'] or 0) * 1.5)  # dólar anda menos: peso 1,5
 
 
+def _ler(p):
+    try:
+        return json.load(open(p, encoding='utf-8'))
+    except Exception:
+        return {}
+
+
+REACOES = _ler('data/reacoes.json').get('registros', [])
+AGENDA = _ler('data/calendario.json').get('eventos', [])
+try:
+    from dados_paginas import SLUG  # noqa: E402
+except Exception:
+    SLUG = {}
+
+
+def imagem(m, vi, vd, top, ultimo):
+    """Imagem grande do dia (Discover/WhatsApp). Sem Pillow, a página usa a imagem padrão do site."""
+    arq = f'assets/og/manchetes/{m["data"]}.jpg'
+    if os.path.exists(arq) and not ultimo:
+        return BASE + arq
+    try:
+        import manchetes_imagem
+        manchetes_imagem.gerar(m, vi, vd, top)
+        return BASE + arq
+    except Exception as ex:
+        print(f'::warning::Imagem de {m["data"]}: {ex}')
+        return BASE + arq if os.path.exists(arq) else None
+
+
+def minuto(m, dia, vi, vd, top):
+    """Bloco "Em 1 minuto": fechamento, dado do dia (com reação de WIN/WDO e do DI), a notícia que mais mexeu e o que vem amanhã."""
+    L = []
+    pl = next((x for x in _ler('data/placar-termometro.json').get('dias', []) if x.get('data') == m['data']), None) or {}
+    fut = ' · '.join(f'{k.upper()} {pct(pl[k]["var_pct"])}' for k in ('win', 'wdo') if (pl.get(k) or {}).get('var_pct') is not None)
+    L.append(('FECHAMENTO', f'Ibovespa <strong class="{cls(vi)}">{pct(vi)}</strong> e dólar <strong class="{cls(vd)}">{pct(vd)}</strong> no dia' + (f' <span class="text-slate-500">({fut})</span>' if fut else '') + '.'))
+    dados = sorted([r for r in REACOES if r.get('data') == m['data']], key=lambda r: -(abs(r.get('win') or 0) + abs(r.get('wdo') or 0) * 1.5))[:2]
+    for r in dados:
+        reac = ' · '.join(x for x in (f'WIN {pct(r["win"])}' if r.get('win') is not None else '', f'WDO {pct(r["wdo"])}' if r.get('wdo') is not None else '',
+                                       (f'DI {r["di_bps"]:+.1f} bps'.replace('.', ',') if r.get('di_bps') is not None else '')) if x)
+        saiu = f'saiu {e(r["resultado"])}' if r.get('resultado') and len(r['resultado']) < 30 else ''
+        cons = f' (consenso {e(r["consenso"])})' if r.get('consenso') and saiu else ''
+        pag = f'dados/{SLUG.get(r.get("tipo"), r.get("tipo"))}-{r["data"]}.html'
+        nome = f'<a href="{pag}" class="font-semibold hover:text-lect-teal underline decoration-dotted">{e(r["evento"])}</a>' if os.path.exists(pag) else f'<span class="font-semibold">{e(r["evento"])}</span>'
+        L.append(('DADO DO DIA', f'{e(r.get("hora") or "")} · {nome}' + (f': {saiu}{cons}' if saiu else '') + (f'. Reação: {reac}.' if reac else '.')))
+    if top:
+        L.append(('NOTÍCIA QUE MAIS MEXEU', f'{e(top["h"])} · {e(top["t"])} <span class="text-slate-500">({" · ".join(x for x in (f"Ibov {pct(top["ib"])}" if top["ib"] is not None else "", f"dólar {pct(top["dl"])}" if top["dl"] is not None else "") if x)} em 30 min)</span>'))
+    prox = sorted({ev['data'] for ev in AGENDA if ev.get('data', '') > m['data']})
+    if prox:
+        dn = prox[0]
+        evs = sorted([ev for ev in AGENDA if ev.get('data') == dn and (ev.get('importancia') or 0) >= 2], key=lambda ev: (-(ev.get('importancia') or 0), ev.get('hora') or ''))[:3]
+        if evs and (dt.date.fromisoformat(dn) - dia).days <= 4:
+            quando = 'AMANHÃ' if (dt.date.fromisoformat(dn) - dia).days == 1 else f'PRÓXIMO PREGÃO ({DIAS[dt.date.fromisoformat(dn).weekday()]})'.upper()
+            L.append((quando, ' · '.join(f'{e(ev.get("hora") or "dia todo")} {e(ev["evento"])}' for ev in sorted(evs, key=lambda ev: ev.get('hora') or ''))))
+    linhas = ''.join(f'<li class="py-2.5 grid sm:grid-cols-[11rem_1fr] gap-1 sm:gap-3"><span class="term-label text-lect-teal font-bold">{r}</span><span class="text-sm leading-relaxed">{t}</span></li>' for r, t in L)
+    return f'<section class="term-panel p-5 border-l-4 border-lect-orange"><h2 class="font-display font-bold text-lg flex items-center gap-2"><i class="ph-bold ph-timer text-lect-orange"></i> Em 1 minuto</h2><ul class="mt-2 divide-y divide-slate-200 dark:divide-lect-borderDark">{linhas}</ul></section>'
+
+
 def pagina(m, datas):
     dia = dt.date.fromisoformat(m['data'])
     url = f'{BASE}manchetes/{m["data"]}.html'
@@ -148,10 +205,12 @@ def pagina(m, datas):
         <div class="flex flex-wrap items-center gap-1 mt-1.5 font-mono text-[10px] text-slate-500">{e(x["f"])} {chip("Ibov", x["ib"])} {chip("Dólar", x["dl"])} {rot(x["tm"])}</div></div></li>''' for x in reversed(its))
     graf = ''.join(f'<div class="term-panel p-4"><div class="flex justify-between"><span class="term-label font-bold">{n}</span><span class="font-mono text-sm font-bold {cls(var_dia(m.get(k)))}">{pct(var_dia(m.get(k)))}</span></div><div class="mt-2">{svg(m, k)}</div></div>'
                    for k, n in (('ibov', 'IBOVESPA · WIN'), ('dolar', 'DÓLAR À VISTA · WDO')) if svg(m, k))
-    ld = [{'@type': 'Article', 'headline': titulo[:110], 'description': desc, 'url': url, 'inLanguage': 'pt-BR', 'datePublished': m['data'],
-           'dateModified': (m.get('atualizado_em') or m['data']), 'author': {'@id': BASE + '#org'}, 'publisher': {'@id': BASE + '#org'},
-           'image': BASE + 'assets/brand/og-mercado.jpg'}]
-    return head(titulo + ' | Lectnex', desc, url, ld) + f'''
+    img = imagem(m, vi, vd, top[0] if top else None, m['data'] == datas[-1])
+    publicado = m.get('atualizado_em') or (m['data'] + 'T19:00-03:00')
+    ld = [{'@type': 'NewsArticle', 'headline': titulo[:110], 'description': desc, 'url': url, 'mainEntityOfPage': url, 'inLanguage': 'pt-BR',
+           'datePublished': publicado, 'dateModified': publicado, 'author': {'@id': BASE + '#org'}, 'publisher': {'@id': BASE + '#org'},
+           'image': [img or BASE + 'assets/brand/og-mercado.jpg'], 'isAccessibleForFree': True}]
+    return head(titulo + ' | Lectnex', desc, url, ld, img) + f'''
         <section class="border-b border-slate-300 dark:border-lect-borderDark grid-bg"><div class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
             <span class="term-label text-lect-teal font-bold">NOTÍCIA × PREÇO · {DIAS[dia.weekday()].upper()} {br(dia, True)}</span>
             <h1 class="font-display text-2xl sm:text-3xl font-bold tracking-tight mt-1">O que mexeu no mercado em {br(dia, True)}</h1>
@@ -159,6 +218,7 @@ def pagina(m, datas):
         </div></section>
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-6">
             {nav}
+            {minuto(m, dia, vi, vd, top[0] if top else None)}
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">{cards}</div>
             {graf}
             <a href="hoje.html?dia={m["data"]}" class="inline-flex items-center gap-1 font-mono text-xs text-lect-teal hover:underline">Ver o gráfico interativo deste dia <i class="ph-bold ph-arrow-right"></i></a>
