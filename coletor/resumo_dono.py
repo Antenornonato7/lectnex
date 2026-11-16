@@ -64,6 +64,54 @@ def seguidores():
     return atual, antes
 
 
+FALHA = ('failure', 'timed_out', 'startup_failure')
+NOMES = {'pages build and deployment': 'publicação do site'}
+
+
+def robos():
+    """Execuções de hoje (BRT) de todos os workflows: quantas, quantas falharam e quais AINDA estão falhando
+    (a última execução do dia falhou). Falha que a execução seguinte já resolveu aparece só como "resolvida"."""
+    tk, repo = os.environ.get('GITHUB_TOKEN', ''), os.environ.get('GITHUB_REPOSITORY', 'Antenornonato7/lectnex')
+    if not tk:
+        return None
+    ini = dt.datetime.combine(HOJE, dt.time(0), tzinfo=BRT).astimezone(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    runs = []
+    for pg in range(1, 6):
+        req = urllib.request.Request(f'https://api.github.com/repos/{repo}/actions/runs?per_page=100&page={pg}&created=%3E%3D{ini}',
+                                     headers={'Authorization': f'Bearer {tk}', 'Accept': 'application/vnd.github+json'})
+        lote = json.loads(urllib.request.urlopen(req, timeout=30).read()).get('workflow_runs', [])
+        runs += lote
+        if len(lote) < 100:
+            break
+    por = {}
+    for r in sorted(runs, key=lambda r: r['created_at']):
+        if r.get('status') != 'completed' or r.get('conclusion') in ('cancelled', 'skipped'):
+            continue
+        g = por.setdefault(r['name'], {'n': 0, 'f': 0, 'ultima': None})
+        g['n'] += 1; g['f'] += r['conclusion'] in FALHA; g['ultima'] = r['conclusion']
+    return por
+
+
+def linha_robos():
+    try:
+        por = robos()
+    except Exception as ex:
+        return f'🤖 Robôs: não consegui ler o GitHub ({e(str(ex)[:80])})'
+    if por is None:
+        return None
+    total, falhas = sum(g['n'] for g in por.values()), sum(g['f'] for g in por.values())
+    ainda = [NOMES.get(k, k) for k, g in por.items() if g['ultima'] in FALHA]
+    resolvidas = [NOMES.get(k, k) for k, g in por.items() if g['f'] and g['ultima'] not in FALHA]
+    if not falhas:
+        return f'🤖 Robôs: ✅ {total} execuções em {len(por)} robôs, nenhuma falha'
+    t = f'🤖 Robôs: {total} execuções em {len(por)} robôs · {falhas} falha(s)'
+    if resolvidas:
+        t += ' · já resolvida(s): ' + ', '.join(e(x) for x in resolvidas)
+    if ainda:
+        t += '\n⚠️ <b>Ainda falhando:</b> ' + ', '.join(e(x) for x in ainda)
+    return t
+
+
 def main():
     cal = ler('data/calendario.json') or {}
     eventos = cal.get('eventos', [])
@@ -102,6 +150,10 @@ def main():
         L.append(f'🩺 Site: {len(hoje_checks)} verificações, nenhuma falha')
     else:
         L.append(f'🩺 Site: falhas em {len(falhas)} item(ns) — ' + '; '.join(f'{e(k)} ({n}h)' for k, n in sorted(falhas.items(), key=lambda x: -x[1])))
+
+    lr = linha_robos()
+    if lr:
+        L.append(lr)
 
     atual, antes = seguidores()
     if atual is not None:
