@@ -85,6 +85,7 @@ TAREFAS = [
     ('search-console.yml', 'Search Console semanal', {'teste': 'false'}, ('horarios', ['09:12'], 360), lambda: AGORA.weekday() == 0),
     ('teste-menu.yml', 'Teste do menu semanal', {'teste': 'false'}, ('horarios', ['09:27'], 360), lambda: AGORA.weekday() == 0 and AGORA.date() <= dt.date(2026, 12, 1)),
     ('carrossel.yml', 'Carrossel da semana', {'previa': 'false'}, ('horarios', ['09:47'], 360), lambda: AGORA.weekday() == 5),
+    ('discord-plantao.yml', None, {'automatico': 'true'}, ('horarios', ['09:07', '13:07', '17:07', '21:07'], 120), lambda: True),
     ('resumo-site.yml', 'Resumo semanal do site', {'enviar': 'true'}, ('horarios', ['11:07'], 360), lambda: AGORA.weekday() == 6),
 ]
 
