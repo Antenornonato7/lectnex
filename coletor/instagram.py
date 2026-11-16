@@ -128,8 +128,11 @@ def ig_user():
         return _UID
     _UID = os.environ.get('INSTAGRAM_USER_ID', '').strip()
     if not _UID and pela_pagina():
-        eu = ig('GET', 'me', fields='instagram_business_account,name')       # token da Página
-        conta = (eu.get('instagram_business_account') or {}).get('id')
+        conta = None
+        try:                                                                 # token da Página: o "me" é a própria Página
+            conta = (ig('GET', 'me', fields='instagram_business_account').get('instagram_business_account') or {}).get('id')
+        except RuntimeError:
+            pass                                                             # token de usuário: o campo não existe no "me"
         if not conta:                                                        # token de usuário: procura nas Páginas dele
             for pg in ig('GET', 'me/accounts', fields='name,instagram_business_account').get('data', []):
                 conta = (pg.get('instagram_business_account') or {}).get('id')
@@ -279,10 +282,20 @@ def renovar():
         return
     tok = os.environ['INSTAGRAM_TOKEN'].strip()
     if pela_pagina():
-        # Token de Página gerado a partir de um token de usuário de longa duração não expira: nada a renovar.
+        # Token de Página gerado a partir de um token de usuário de longa duração não expira. Token de usuário estendido
+        # vale 60 dias: avisa no Telegram quando faltarem 14 dias ou menos.
         try:
             ig_user()
-            note('notice', 'Instagram pela Página do Facebook: token da Página válido (não expira).')
+            fim = 0
+            try:
+                fim = ig('GET', 'debug_token', input_token=tok).get('data', {}).get('expires_at') or 0
+            except Exception:
+                pass
+            dias = (fim - time.time()) / 86400 if fim else None
+            note('notice', 'Instagram pela Página do Facebook: token válido' + (f', expira em {dias:.0f} dias.' if dias is not None else ' (não expira).'))
+            if dias is not None and dias <= 14 and os.environ.get('TELEGRAM_BOT_TOKEN') and admin():
+                tg('sendMessage', chat_id=admin(), text=f'⚠️ A chave do Instagram (INSTAGRAM_TOKEN) expira em {dias:.0f} dia(s). Gere uma nova no Explorador da '
+                   'Graph API (app Lectnex Publicador → estender → escolher a Página Lectnex) e atualize o segredo no GitHub.')
         except Exception as e:
             note('warning', f'Token da Página não funcionou: {e}')
             if os.environ.get('TELEGRAM_BOT_TOKEN') and admin():
