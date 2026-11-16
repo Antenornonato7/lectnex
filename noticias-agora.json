@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T13:05-03:00",
+  "atualizado_em": "2026-11-16T13:08-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -103,7 +103,11 @@
     ],
     [
      "12:50",
-     169905.0
+     169887.0
+    ],
+    [
+     "12:53",
+     169880.0
     ]
    ]
   },
@@ -308,7 +312,11 @@
     ],
     [
      "13:05",
-     5.7669
+     5.7604
+    ],
+    [
+     "13:08",
+     5.7674
     ]
    ]
   },
@@ -778,7 +786,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.19
+    "dolar30": 0.08
    },
    {
     "hora": "13:00",
@@ -1566,7 +1574,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T13:05-03:00",
+ "atualizado_em": "2026-11-16T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1581,6 +1589,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "U.S. crude oil declines to $87 a barrel on recovering Middle East exports",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
+   "publicado": "2026-11-16T13:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar chega a R$ 6? Veja quais ações ganham com a disparada da moeda americana",
    "fonte": "Exame",
@@ -1751,17 +1771,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Governo quer preservar texto do projeto de ajuste fiscal, mas está aberto ao diálogo, diz Moretti",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/governo-preservar-texto-projeto-ajuste-fiscal-aberto-dialogo-moretti/",
-   "publicado": "2026-11-16T10:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   }
