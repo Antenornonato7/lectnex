@@ -122,9 +122,10 @@
 
     async function openPg() {
         if (ov) return;
-        ov = document.createElement('div'); ov.id = 'pg-ov';
-        ov.className = 'fixed inset-0 z-[80] bg-slate-100 dark:bg-lect-bgDark text-slate-800 dark:text-slate-200 flex flex-col h-[100dvh]';
-        ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Modo Pregão');
+        // <dialog> nativo em tela cheia: Esc e o gesto de voltar do celular fecham; o resto da página fica inerte por trás
+        ov = document.createElement('dialog'); ov.id = 'pg-ov';
+        ov.className = 'fixed inset-0 m-0 p-0 w-full max-w-none h-[100dvh] max-h-none border-0 bg-slate-100 dark:bg-lect-bgDark text-slate-800 dark:text-slate-200 flex flex-col';
+        ov.setAttribute('aria-label', 'Modo Pregão');
         ov.innerHTML = `<header class="flex items-center justify-between gap-3 px-3 sm:px-5 py-2 border-b border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark font-mono text-[11px]">
                 <span class="font-bold text-lect-orange inline-flex items-center gap-1.5"><i class="ph-bold ph-device-mobile"></i>MODO PREGÃO</span>
                 <span id="pg-status"></span>
@@ -138,6 +139,8 @@
             </div>
             <footer class="px-3 sm:px-5 py-1.5 border-t border-slate-200 dark:border-lect-borderDark font-mono text-[10px] text-slate-500 flex justify-between gap-2"><span class="flex gap-3"><button type="button" id="pg-lock" class="hover:text-lect-teal"></button><button type="button" data-lx-push class="hidden items-center gap-1 text-lect-orange hover:underline"><i class="ph-bold ph-bell-ringing"></i>alertas</button></span><span>Educacional · não é recomendação</span></footer>`;
         document.body.appendChild(ov); document.documentElement.style.overflow = 'hidden';
+        ov.addEventListener('close', closePg);
+        if (ov.showModal) ov.showModal(); else ov.setAttribute('open', '');
         $('pg-close').onclick = closePg; $('pg-lock').onclick = wake; if (LX.pushButtons) LX.pushButtons();
         if (location.hash !== '#pregao') history.replaceState(null, '', '#pregao');
         render(); renderSlow(); wake();
@@ -150,12 +153,11 @@
     function closePg() {
         if (!ov) return; (timer || []).forEach(clearInterval); timer = null;
         try { lock && lock.release(); } catch (_) { } lock = null;
-        ov.remove(); ov = null; document.documentElement.style.overflow = '';
+        const d = ov; ov = null; if (d.open && d.close) d.close(); d.remove(); document.documentElement.style.overflow = '';
         if (location.hash === '#pregao') history.replaceState(null, '', location.pathname + location.search);
         btn.focus();
     }
     btn.addEventListener('click', openPg);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closePg(); });
     document.addEventListener('visibilitychange', () => { if (ov && document.visibilityState === 'visible' && !lock) wake(); });
     window.addEventListener('storage', e => { if (e.key === 'lectnex-plano-v1') renderSlow(); });
     if (location.hash === '#pregao') openPg();
