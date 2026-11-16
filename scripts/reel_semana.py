@@ -221,7 +221,7 @@ class Semana:
             l.append(f'A manchete que mais mexeu: {SIG[top["d"].weekday()].lower()} às {top["top"]["hora"]}, {pct(top["top"]["ibov30"])} em 30 min.')
         n, ok = self.pterm
         if n:
-            l.append(f'O viés do nosso modelo (experimental) acertou {ok} de {n} nesta semana. Placar completo, com os erros, no link da bio.')
+            l.append(f'O viés do nosso modelo (experimental) acertou {ok} de {n} nesta semana. Placar completo, com os erros, em lectnex.com.br/placar.')
         l += ['Qual dia da semana você operou melhor? Comente.', '', 'Conteúdo educacional, não é recomendação.',
               '#ibovespa #dolar #daytrade #miniindice #minidolar #b3 #mercadofinanceiro']
         return '\n'.join(l)

@@ -146,7 +146,7 @@ def main():
     hn, hok = d['hist_sem']
     legenda = (f'🎯 <b>Placar da semana</b> · {d["ini"]:%d/%m} a {d["fim"]:%d/%m}\n'
                f'Viés do modelo: {ok}/{n}' + (f' · Eventos: {hok}/{hn}' if hn else '') +
-               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
+               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b>, no Instagram e no Facebook (o endereço do site já está na imagem).')
     enviar(saida, legenda)
 
 

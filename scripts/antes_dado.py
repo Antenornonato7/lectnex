@@ -238,7 +238,7 @@ def main():
     from story_leitura import enviar
     d = dt.date.fromisoformat(a['data'])
     legenda = (f'⏱️ <b>Antes do dado</b> · {DIAS[d.weekday()].lower()} {d:%d/%m}: <b>{a["evento"]}</b>' + (f' às {a["hora"]}' if a.get('hora') else '') +
-               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
+               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b>, no Instagram e no Facebook (o endereço do site já está na imagem).')
     enviar(saida, legenda)
 
 

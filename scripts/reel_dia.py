@@ -207,7 +207,7 @@ class Reel:
             self.centro(d, y0 + (bh - 80 * (0.85 + 0.15 * e)) / 2, 'lectnex.com.br', f, BG)
         if k > 1.0:
             c = ease((k - 1.0) / 0.3)
-            self.centro(d, 1150, 'Grátis · link na bio', self.F['med'], mix(MUTED, c))
+            self.centro(d, 1150, 'Grátis · lectnex.com.br', self.F['med'], mix(MUTED, c))
             for i, l in enumerate(('Variação do último preço antes da manchete até 30 min depois.',
                                    'O movimento seguinte não prova que a notícia foi a causa.',
                                    'Cotações de 5 min (Yahoo Finance) · conteúdo educacional')):
@@ -233,7 +233,7 @@ def legenda_reel(r):
     linhas = [f'O que mexeu no {r.nome} hoje ({pct(r.vdia)}) 📈' if r.vdia >= 0 else f'O que mexeu no {r.nome} hoje ({pct(r.vdia)}) 📉', '']
     if top:
         linhas.append(f'A maior reação veio às {top["hora"]}: {pct(top[r.campo])} em 30 minutos.')
-    linhas += [q, '', 'Conteúdo educacional, não é recomendação. Todo pregão no link da bio.',
+    linhas += [q, '', 'Conteúdo educacional, não é recomendação. Todo pregão em lectnex.com.br.',
                '#ibovespa #dolar #daytrade #miniindice #minidolar #b3 #mercadofinanceiro']
     return '\n'.join(linhas)
 

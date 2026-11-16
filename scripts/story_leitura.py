@@ -1,7 +1,7 @@
 """Story da Leitura do Dia (1080×1920) para Instagram, enviado no Telegram PRIVADO do dono.
 
 Título, termômetro WIN/WDO (ou próximo pregão) e 3 destaques da agenda, no visual da marca.
-Áreas de segurança do Instagram respeitadas (topo e base livres) e faixa "link na bio" (a API do Instagram não aceita sticker de link).
+Áreas de segurança do Instagram respeitadas (topo e base livres) e faixa com o endereço do site (a API do Instagram e do Facebook não aceita sticker de link).
 Uso: python3 scripts/story_leitura.py [data/leitura.json] [saida.png]
 Com TELEGRAM_BOT_TOKEN e TELEGRAM_ADMIN_CHAT_ID no ambiente, envia a imagem (como foto e como arquivo, sem compressão).
 """
@@ -31,11 +31,12 @@ def tracejado(dr, caixa, cor, traco=18, vao=12, w=3):
 
 
 def faixa_link(dr, caixa, texto='lectnex.com.br'):
-    """Faixa "link na bio" no lugar do sticker: os stories são publicados pela API do Instagram, que não aceita sticker de link."""
+    """Faixa com o endereço do site no lugar do sticker: os stories são publicados pela API (Instagram e Facebook),
+    que não aceita sticker de link. Texto neutro, que serve para as duas redes (no Facebook não existe "link na bio")."""
     x0, y0, x1, y1 = caixa
     dr.rectangle(caixa, fill=CARD, outline=TEAL_L, width=3)
     f1, f2 = fonte('JetBrainsMono-Bold.ttf', 26), fonte('InterDisplay-Bold.otf', 46)
-    t1 = 'LINK NA BIO'
+    t1 = 'ACESSE O SITE'
     dr.text(((x0 + x1 - dr.textlength(t1, font=f1)) / 2, y0 + 22), t1, font=f1, fill=TEAL_L)
     dr.text(((x0 + x1 - dr.textlength(texto, font=f2)) / 2, y0 + 62), texto, font=f2, fill=WHITE)
 
@@ -166,7 +167,7 @@ def main():
     dia = dt.date.fromisoformat(d['data'])
     legenda = (f'📲 <b>Story de hoje pronto</b> · {DIAS[dia.weekday()].lower()} {dia:%d/%m}\n'
                f'{d.get("titulo", "")}\n\n'
-               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
+               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b>, no Instagram e no Facebook (o endereço do site já está na imagem).')
     enviar(saida, legenda)
 
 

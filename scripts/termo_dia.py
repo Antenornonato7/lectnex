@@ -122,7 +122,7 @@ def main():
     print(f'Termo do dia: {t["t"]}' + (f' (ligado a: {ev["evento"]})' if ev else ' (rodízio)'))
     legenda = (f'📚 <b>Termo do dia</b> · {DIAS[hoje.weekday()].lower()} {hoje:%d/%m}: <b>{t["t"]}</b>\n'
                + (f'Ligado à agenda: {ev["evento"]}\n' if ev else '') +
-               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
+               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b>, no Instagram e no Facebook (o endereço do site já está na imagem).')
     enviar(saida, legenda)
 
 

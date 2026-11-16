@@ -169,7 +169,7 @@ def main():
     dia = dt.date.fromisoformat(r['data'])
     legenda = (f'🔔 <b>Story do fechamento pronto</b> · {DIAS[dia.weekday()].lower()} {dia:%d/%m}\n\n'
                + ('<i>Prévia do formato, com o fechamento do último pregão.</i>\n\n' if previa else '')
-               + 'No Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
+               + 'No Instagram: vai pelo botão <b>Publicar no Story</b>, no Instagram e no Facebook (o endereço do site já está na imagem).')
     enviar(saida, legenda)
 
 
