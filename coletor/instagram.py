@@ -201,6 +201,87 @@ def publicar(p):
         return None
 
 
+# ---------- Página do Facebook (mesma chave, permissões pages_manage_posts e pages_manage_metadata) ----------
+FB = 'https://graph.facebook.com/v25.0'
+_PG = None
+
+
+def fb(metodo, caminho, token, **params):
+    params['access_token'] = token
+    dados = urllib.parse.urlencode(params).encode()
+    url = f'{FB}/{caminho}' + ('' if metodo == 'POST' else '?' + dados.decode())
+    req = urllib.request.Request(url, data=dados if metodo == 'POST' else None, method=metodo)
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        corpo = e.read().decode()[:300]
+        try:
+            corpo = json.loads(corpo)['error'].get('message', corpo)
+        except Exception:
+            pass
+        raise RuntimeError(f'Facebook HTTP {e.code}: {corpo}') from None
+
+
+def fb_pagina():
+    """(id da Página, token da Página). Com token de usuário, o token da Página vem de me/accounts."""
+    global _PG
+    if _PG:
+        return _PG
+    tok = os.environ.get('INSTAGRAM_TOKEN', '').strip()
+    if not tok.startswith('EAA'):
+        raise RuntimeError('Página do Facebook: o INSTAGRAM_TOKEN não é uma chave do Facebook')
+    try:
+        eu = fb('GET', 'me', tok, fields='id,name,instagram_business_account')
+        if eu.get('instagram_business_account'):
+            _PG = (eu['id'], tok)
+            return _PG
+    except RuntimeError:
+        pass
+    for pg in fb('GET', 'me/accounts', tok, fields='id,name,access_token,instagram_business_account').get('data', []):
+        if pg.get('instagram_business_account') or pg.get('name', '').lower().startswith('lectnex'):
+            _PG = (pg['id'], pg['access_token'])
+            return _PG
+    raise RuntimeError('Página Lectnex não encontrada com essa chave')
+
+
+def publicar_facebook(p):
+    """Mesmo post na Página do Facebook. Devolve o link ou levanta erro."""
+    pid, ptok = fb_pagina()
+    tipo, leg = p.get('tipo', ''), p.get('legenda', '')
+    if p.get('video'):
+        ini = fb('POST', f'{pid}/video_reels', ptok, upload_phase='start')
+        corpo = urllib.request.urlopen(p['video'], timeout=120).read()
+        req = urllib.request.Request(ini['upload_url'], data=corpo, method='POST',
+                                     headers={'Authorization': 'OAuth ' + ptok, 'offset': '0', 'file_size': str(len(corpo))})
+        urllib.request.urlopen(req, timeout=300).read()
+        if tipo == 'story':
+            fb('POST', f'{pid}/video_stories', ptok, upload_phase='finish', video_id=ini['video_id'])
+            return f'https://www.facebook.com/{pid}'
+        fb('POST', f'{pid}/video_reels', ptok, upload_phase='finish', video_id=ini['video_id'], video_state='PUBLISHED', description=leg)
+        return f'https://www.facebook.com/reel/{ini["video_id"]}'
+    if tipo == 'story':
+        foto = fb('POST', f'{pid}/photos', ptok, url=p['imagens'][0], published='false')['id']
+        fb('POST', f'{pid}/photo_stories', ptok, photo_id=foto)
+        return f'https://www.facebook.com/{pid}'
+    if len(p['imagens']) == 1:
+        r = fb('POST', f'{pid}/photos', ptok, url=p['imagens'][0], message=leg)
+        return f'https://www.facebook.com/{r.get("post_id") or r["id"]}'
+    fotos = [fb('POST', f'{pid}/photos', ptok, url=u, published='false')['id'] for u in p['imagens'][:10]]
+    params = {f'attached_media[{i}]': json.dumps({'media_fbid': f}) for i, f in enumerate(fotos)}
+    r = fb('POST', f'{pid}/feed', ptok, message=leg, **params)
+    return f'https://www.facebook.com/{r["id"]}'
+
+
+def facebook_perfil():
+    """Coloca a logo como foto da Página e a capa (assets/brand/fb-capa.jpg) — imagens servidas pelo próprio site."""
+    pid, ptok = fb_pagina()
+    fb('POST', f'{pid}/picture', ptok, picture='https://lectnex.com.br/assets/brand/icon-512.png')
+    foto = fb('POST', f'{pid}/photos', ptok, url='https://lectnex.com.br/assets/brand/fb-capa.jpg', published='false')['id']
+    fb('POST', pid, ptok, cover=foto)
+    note('notice', 'Página do Facebook: foto de perfil e capa atualizadas.')
+
+
 # ---------- comandos ----------
 def propor(tipo, legenda_arq, imagens):
     from PIL import Image
@@ -374,9 +455,15 @@ def processar():
             link = publicar(p)
             p['status'], p['publicado'], p['link'] = 'publicado', agora.isoformat(timespec='minutes'), link
             note('notice', f'Instagram: {p["id"]} publicado')
+            try:  # mesmo post na Página do Facebook (não impede o Instagram se falhar)
+                p['link_fb'] = publicar_facebook(p)
+                fbmsg = f'\n✅ Facebook: {p["link_fb"]}'
+            except Exception as e:
+                p['erro_fb'] = str(e)[:200]
+                fbmsg = f'\n⚠️ Facebook: {str(e)[:150]}'
             try:
                 tg('editMessageReplyMarkup', chat_id=admin(), message_id=mid, reply_markup={'inline_keyboard': []})
-                tg('sendMessage', chat_id=admin(), text='✅ Publicado no Instagram.' + (f'\n{link}' if link else ''), reply_to_message_id=mid)
+                tg('sendMessage', chat_id=admin(), text='✅ Publicado no Instagram.' + (f'\n{link}' if link else '') + fbmsg, reply_to_message_id=mid, disable_web_page_preview=True)
             except Exception:
                 pass
         except Exception as e:
@@ -456,5 +543,10 @@ if __name__ == '__main__':
         teste()
     elif cmd == 'reenviar':
         reenviar()
+    elif cmd == 'facebook-perfil':
+        facebook_perfil()
+    elif cmd == 'facebook-teste':
+        pid, _ = fb_pagina()
+        note('notice', f'Página do Facebook encontrada: {pid}')
     elif cmd == 'kit':
         kit_instagram(os.environ.get('KIT_DIA') or None, [c for c in os.environ.get('KIT_PECAS', '').replace(',', ' ').split() if c] or None)
