@@ -292,7 +292,7 @@ def renovar():
             except Exception:
                 pass
             dias = (fim - time.time()) / 86400 if fim else None
-            note('notice', 'Instagram pela Página do Facebook: token válido' + (f', expira em {dias:.0f} dias.' if dias is not None else ' (não expira).'))
+            note('notice', 'Instagram pela Página do Facebook: token válido' + (f', expira em {dias:.0f} dias.' if dias is not None else ' (a Meta não informou data de expiração).'))
             if dias is not None and dias <= 14 and os.environ.get('TELEGRAM_BOT_TOKEN') and admin():
                 tg('sendMessage', chat_id=admin(), text=f'⚠️ A chave do Instagram (INSTAGRAM_TOKEN) expira em {dias:.0f} dia(s). Gere uma nova no Explorador da '
                    'Graph API (app Lectnex Publicador → estender → escolher a Página Lectnex) e atualize o segredo no GitHub.')
