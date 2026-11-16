@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T14:58-03:00",
+  "atualizado_em": "2026-11-16T15:00-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -191,11 +191,11 @@
     ],
     [
      "14:40",
-     169297.0
+     169282.0
     ],
     [
-     "14:43",
-     169308.0
+     "14:45",
+     169224.0
     ]
    ]
   },
@@ -488,11 +488,11 @@
     ],
     [
      "14:55",
-     5.7791
+     5.7831
     ],
     [
-     "14:58",
-     5.7783
+     "15:00",
+     5.7832
     ]
    ]
   },
@@ -1095,7 +1095,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.0,
+    "ibov30": -0.01,
     "dolar30": -0.08
    },
    {
@@ -1109,6 +1109,23 @@
     ],
     "tickers": [
      "BPAC11"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:56",
+    "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHo0XzhYWm5NalljNDgyajhhMnVFdUM1ODd4bFpYV2ZEQi01czRhT214U2dnQThwUElFUERZLUFqbk1aenhFcEVCdHNLcUM3cmU1RW1rUDZqbWZPTG9BZE9Ob0ZVSFhoTEFBSzYyZWIzazg3dzlaUkxScDJERjRpaXRyYVJ5aU5HbmR5S1ZhZ3FrYVBtNHE2a1FKWVBwbFhBcHJWdU13aElFX0hDcXhqV1dSOTY1dXIzLVJYMGw1LXZBeURLNlJ3Xzdtc281ZVE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBAS3",
+     "PETR4",
+     "VALE3"
     ],
     "ibov30": null,
     "dolar30": null
@@ -1968,6 +1985,21 @@
    "tickers": [
     "BPAC11"
    ]
+  },
+  {
+   "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHo0XzhYWm5NalljNDgyajhhMnVFdUM1ODd4bFpYV2ZEQi01czRhT214U2dnQThwUElFUERZLUFqbk1aenhFcEVCdHNLcUM3cmU1RW1rUDZqbWZPTG9BZE9Ob0ZVSFhoTEFBSzYyZWIzazg3dzlaUkxScDJERjRpaXRyYVJ5aU5HbmR5S1ZhZ3FrYVBtNHE2a1FKWVBwbFhBcHJWdU13aElFX0hDcXhqV1dSOTY1dXIzLVJYMGw1LXZBeURLNlJ3Xzdtc281ZVE?oc=5",
+   "publicado": "2026-11-16T14:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3",
+    "PETR4",
+    "VALE3"
+   ]
   }
  ],
  "enviadas": [
@@ -2002,7 +2034,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T14:58-03:00",
+ "atualizado_em": "2026-11-16T15:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2010,13 +2042,27 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHo0XzhYWm5NalljNDgyajhhMnVFdUM1ODd4bFpYV2ZEQi01czRhT214U2dnQThwUElFUERZLUFqbk1aenhFcEVCdHNLcUM3cmU1RW1rUDZqbWZPTG9BZE9Ob0ZVSFhoTEFBSzYyZWIzazg3dzlaUkxScDJERjRpaXRyYVJ5aU5HbmR5S1ZhZ3FrYVBtNHE2a1FKWVBwbFhBcHJWdU13aElFX0hDcXhqV1dSOTY1dXIzLVJYMGw1LXZBeURLNlJ3Xzdtc281ZVE?oc=5",
+   "publicado": "2026-11-16T14:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3",
+    "PETR4",
+    "VALE3"
+   ]
+  },
   {
    "titulo": "Justiça pede informações sobre negócio entre Genial e BTG",
    "fonte": "Folha",
@@ -2164,17 +2210,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
-   "publicado": "2026-11-16T13:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
