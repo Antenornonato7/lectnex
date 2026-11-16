@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T15:38-03:00",
+  "atualizado_em": "2026-11-16T17:08-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -223,11 +223,79 @@
     ],
     [
      "15:20",
-     168848.0
+     168838.0
     ],
     [
-     "15:23",
-     168845.0
+     "15:25",
+     168847.0
+    ],
+    [
+     "15:30",
+     168661.0
+    ],
+    [
+     "15:35",
+     168599.0
+    ],
+    [
+     "15:40",
+     168491.0
+    ],
+    [
+     "15:45",
+     168652.0
+    ],
+    [
+     "15:50",
+     168650.0
+    ],
+    [
+     "15:55",
+     168625.0
+    ],
+    [
+     "16:00",
+     168675.0
+    ],
+    [
+     "16:05",
+     168828.0
+    ],
+    [
+     "16:10",
+     168763.0
+    ],
+    [
+     "16:15",
+     168877.0
+    ],
+    [
+     "16:20",
+     169033.0
+    ],
+    [
+     "16:25",
+     169047.0
+    ],
+    [
+     "16:30",
+     168817.0
+    ],
+    [
+     "16:35",
+     168825.0
+    ],
+    [
+     "16:40",
+     168796.0
+    ],
+    [
+     "16:45",
+     168820.0
+    ],
+    [
+     "16:50",
+     168873.0
     ]
    ]
   },
@@ -552,11 +620,83 @@
     ],
     [
      "15:35",
-     5.7851
+     5.7838
     ],
     [
-     "15:38",
-     5.7863
+     "15:40",
+     5.7828
+    ],
+    [
+     "15:45",
+     5.7813
+    ],
+    [
+     "15:50",
+     5.7871
+    ],
+    [
+     "15:55",
+     5.7904
+    ],
+    [
+     "16:00",
+     5.784
+    ],
+    [
+     "16:05",
+     5.7786
+    ],
+    [
+     "16:10",
+     5.7788
+    ],
+    [
+     "16:15",
+     5.7791
+    ],
+    [
+     "16:20",
+     5.7759
+    ],
+    [
+     "16:25",
+     5.7773
+    ],
+    [
+     "16:30",
+     5.7806
+    ],
+    [
+     "16:35",
+     5.7752
+    ],
+    [
+     "16:40",
+     5.7753
+    ],
+    [
+     "16:45",
+     5.7764
+    ],
+    [
+     "16:50",
+     5.773
+    ],
+    [
+     "16:55",
+     5.776
+    ],
+    [
+     "17:00",
+     5.7775
+    ],
+    [
+     "17:05",
+     5.7782
+    ],
+    [
+     "17:08",
+     5.776
     ]
    ]
   },
@@ -1174,7 +1314,7 @@
     "tickers": [
      "BPAC11"
     ],
-    "ibov30": -0.19,
+    "ibov30": -0.2,
     "dolar30": 0.02
    },
    {
@@ -1210,6 +1350,22 @@
     "dolar30": -0.01
    },
    {
+    "hora": "15:21",
+    "titulo": "Ibovespa hoje cai com rebaixamento do Brasil pelo Morgan Stanley, dólar em alta e Vale (VALE3) em queda",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "VALE3"
+    ],
+    "ibov30": -0.11,
+    "dolar30": 0.05
+   },
+   {
     "hora": "15:29",
     "titulo": "Dólar à vista ganha fôlego e ultrapassa os R$ 5,78 com pacote do governo; 'má qualidade', diz economista",
     "fonte": "Money Times",
@@ -1219,38 +1375,94 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": -0.13,
+    "dolar30": 0.14
+   },
+   {
+    "hora": "15:54",
+    "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVk?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.23,
+    "dolar30": -0.19
+   },
+   {
+    "hora": "15:54",
+    "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVnSAYICQVVfeXFMTTFmWHJMUzRfY085R1ZTVzZlbjNncUYxQmJsN0QxU2w4MkZwTU9ONDV6NzZJX1JSSWJ0MThiVFQtR1dmRGRoemZTckRtUG9HZWdnSDFJRVhsM3o5RDh6NjFBVDgzRjk4UXU3a2FWMlY4RHdEeFFjazY1eDc5NmRYUldEa0M4OUJNYU9CTTJtakxRV19qNWpMRnB4QVdSZmtfT2lpMkl5ekZ5TVUtUW5sdzBZZ0xoT1YwRjFnajBXSEwzdjBkLWxtYXQwNHNPc1VQV00xbl9qc19TZ0RNcDZ5ZUN6ZWgzc0pTZzJhZmRfcndWSEhNVkV6MW9uY2FRR1RCQnVR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.23,
+    "dolar30": -0.19
+   },
+   {
+    "hora": "16:15",
+    "titulo": "Aposta do estrangeiro contra o real sobe US$ 20 bi desde as eleições",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMjdIemtDbFEyYVY0SUdGN2NCa0xTYkR0T2h2UmpwY2pQVVM3aXBGbDlBY3NWc2ZvMEQwbDZGQWZDd1ZYTWQ5SkJkQThDTTZBdUVvWjNPdERDV2s5SG8wRjEzOUg1RU5wVXRJdE9ER09BamliSjRkUzRveEpyaEdHUWZJRE1Hc1J0aVVCYXdObDhTODJRdDhGU3Rjd3pnRng4MkUwRWZFZXBvc2FQS3RMTVhmbThxclJYUzJfYXFuNWNSWDYtU2tF0gHWAUFVX3lxTFB1c2l4MTQ5WWg2RWtVeEJlcGZObDFpWGcwMEstWk56Vm1IY1BKLTFNcnk1MFNldGRmaVBJTDNTZzcwMGNfMzYxZFNObF9ncDMySHhzYXJiUHloVW1aWUVNMW5MNjBJUDZnUVg3Q21UVGRObVJFU1dkWHZwNnhxLUFoejNtNUI0ODZZSGtzcVFDV0pUX2RPU00wbVp0Y3BEbVNLQ0NGWmxMY0dxMVNPbUZBbWYyQ2pvMDlxMEU2SGltLWxYdWpSSUNSZ3NJZ1JjOWI5eFV3ZkE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.05,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "16:21",
+    "titulo": "Nem o ouro escapa: dólar forte e temor de juros mais altos derrubam o metal a mínima de um ano",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUHBnb3NhdGlNaEhxeDlOdUNCeVRyOU11ZUhWM1RxdzRvS0xvOEZkS2lBbnF0MTJWRUpfTUxKS3VSdGhQT0lwX0lfYWIyMTZTTXBDOXh5NjJ4dUx2UngxUEdfYklrcG5NaFBFY3gwMkdCUllIcnRkT3VRR2M5Rm12YkdzSVpONXdVWlJrZDFFcE1ZTkpRdTRSMEhJYzRESmtic3ZOVmNEUHVWd1psTUU0bFVRbjFJdjRubkhZRjFTeFJCSFRkUGRST3g2OHJId2piaDAxMUFIb2w5dDBkQklyOG5NVTFvYlp3dWx2SVNaakpxQQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.09,
+    "dolar30": -0.05
+   },
+   {
+    "hora": "16:52",
+    "titulo": "Ex- diretor de finanças do Itaú assume área de gestão de riscos da Avenue",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-diretor-de-financas-do-itau-assume-area-de-gestao-de-riscos-da-avenue.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:00",
+    "titulo": "O formato do ajuste fiscal importa",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/cecilia-machado/2026/11/o-formato-do-ajuste-fiscal-importa.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Banco do Brasil quer negociar com BC regra mais flexível para contabilizar perdas com agro",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-quer-negociar-com-bc-regra-mais-flexivel-para-contabilizar-perdas-com-agro.shtml",
-   "publicado": "2026-11-16T04:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa hoje: prévia do PIB, Focus e Fed testam Bolsa após encerrar semana em alta",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQ216aVc1UGR5QnVteWdJQ0E0bDBDbU5OU1QyT1A1bTk4SUdVUXdRcnp5eXhwYnJ1dkU4cG5BMmRnMnZRZjdxcGpJanhhbEI1aU1uVmZXVHZsZzBnZVpDbTBFV1JoTUVzcVkxd2l0M3dMY0xad0R0WFdwSDQwTnlGVVFxalVYN3lMODJLZXNZUVI0RW5weF96UjBRaWdYVnJmTkhhQV96TkRIdVp3bF9JcnFUcnFnODZqX1l0NWdZRjRlb3NXMkJ1N0JHUk9ZREMyTFVlLUhwaDNJaUowczBqUUF3?oc=5",
-   "publicado": "2026-11-16T04:32-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Nubank recebe aval do BC para comprar Banco Porto Real e, assim, obter licença bancária no Brasil",
    "fonte": "Estadão",
@@ -2107,6 +2319,20 @@
    ]
   },
   {
+   "titulo": "Ibovespa hoje cai com rebaixamento do Brasil pelo Morgan Stanley, dólar em alta e Vale (VALE3) em queda",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RQ?oc=5",
+   "publicado": "2026-11-16T15:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Dólar à vista ganha fôlego e ultrapassa os R$ 5,78 com pacote do governo; 'má qualidade', diz economista",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdk5TRV83TnVJTzVTcWJpNm41SmpfNUNvVndXWk1TVHo3T1dFcHZ0M0lVYnJYRGJld3MwRlM2UVU2Q29uc1oxZkJha2Z0VzdiN2E1XzFId0FKZDhXa3pCTi13dHpfenZwOGRIbDNuU1VLTUlLbFp5amwta2ltLUdaNFZtTXBJM283OWNCRw?oc=5",
@@ -2116,14 +2342,79 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVk?oc=5",
+   "publicado": "2026-11-16T15:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVnSAYICQVVfeXFMTTFmWHJMUzRfY085R1ZTVzZlbjNncUYxQmJsN0QxU2w4MkZwTU9ONDV6NzZJX1JSSWJ0MThiVFQtR1dmRGRoemZTckRtUG9HZWdnSDFJRVhsM3o5RDh6NjFBVDgzRjk4UXU3a2FWMlY4RHdEeFFjazY1eDc5NmRYUldEa0M4OUJNYU9CTTJtakxRV19qNWpMRnB4QVdSZmtfT2lpMkl5ekZ5TVUtUW5sdzBZZ0xoT1YwRjFnajBXSEwzdjBkLWxtYXQwNHNPc1VQV00xbl9qc19TZ0RNcDZ5ZUN6ZWgzc0pTZzJhZmRfcndWSEhNVkV6MW9uY2FRR1RCQnVR?oc=5",
+   "publicado": "2026-11-16T15:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Aposta do estrangeiro contra o real sobe US$ 20 bi desde as eleições",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMjdIemtDbFEyYVY0SUdGN2NCa0xTYkR0T2h2UmpwY2pQVVM3aXBGbDlBY3NWc2ZvMEQwbDZGQWZDd1ZYTWQ5SkJkQThDTTZBdUVvWjNPdERDV2s5SG8wRjEzOUg1RU5wVXRJdE9ER09BamliSjRkUzRveEpyaEdHUWZJRE1Hc1J0aVVCYXdObDhTODJRdDhGU3Rjd3pnRng4MkUwRWZFZXBvc2FQS3RMTVhmbThxclJYUzJfYXFuNWNSWDYtU2tF0gHWAUFVX3lxTFB1c2l4MTQ5WWg2RWtVeEJlcGZObDFpWGcwMEstWk56Vm1IY1BKLTFNcnk1MFNldGRmaVBJTDNTZzcwMGNfMzYxZFNObF9ncDMySHhzYXJiUHloVW1aWUVNMW5MNjBJUDZnUVg3Q21UVGRObVJFU1dkWHZwNnhxLUFoejNtNUI0ODZZSGtzcVFDV0pUX2RPU00wbVp0Y3BEbVNLQ0NGWmxMY0dxMVNPbUZBbWYyQ2pvMDlxMEU2SGltLWxYdWpSSUNSZ3NJZ1JjOWI5eFV3ZkE?oc=5",
+   "publicado": "2026-11-16T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nem o ouro escapa: dólar forte e temor de juros mais altos derrubam o metal a mínima de um ano",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUHBnb3NhdGlNaEhxeDlOdUNCeVRyOU11ZUhWM1RxdzRvS0xvOEZkS2lBbnF0MTJWRUpfTUxKS3VSdGhQT0lwX0lfYWIyMTZTTXBDOXh5NjJ4dUx2UngxUEdfYklrcG5NaFBFY3gwMkdCUllIcnRkT3VRR2M5Rm12YkdzSVpONXdVWlJrZDFFcE1ZTkpRdTRSMEhJYzRESmtic3ZOVmNEUHVWd1psTUU0bFVRbjFJdjRubkhZRjFTeFJCSFRkUGRST3g2OHJId2piaDAxMUFIb2w5dDBkQklyOG5NVTFvYlp3dWx2SVNaakpxQQ?oc=5",
+   "publicado": "2026-11-16T16:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ex- diretor de finanças do Itaú assume área de gestão de riscos da Avenue",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-diretor-de-financas-do-itau-assume-area-de-gestao-de-riscos-da-avenue.shtml",
+   "publicado": "2026-11-16T16:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "O formato do ajuste fiscal importa",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/cecilia-machado/2026/11/o-formato-do-ajuste-fiscal-importa.shtml",
+   "publicado": "2026-11-16T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
-  {
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSzF2LXA5MExSd0dYSUczVjJ6LWV4Q0p1bXlxb2Y3eks2b2psSlRRMm56TVBaTk5zQWQ1a1c3ZVI0Y0pXcDdXRDZCUG9taklqMlAwZ1dJY0tIdDZtZlcyOTI5c1ZONzl2N0JYWTJFcUxWdFczVUxHODZpdFlsdGdfWi1EQm9TTWFNQ29yTUNLRVpKZXowR2F4QXlXbE9KdGlBaDV4SzhzakxMczJNVGZ5QWhWdFhrWEpTc004Z053bEQ5ZjVheGc?oc=5",
-   "titulo": "Fed tem “trabalho a fazer” sobre inflação, diz dirigente de Kansas City",
-   "em": "2026-11-15T19:05:38+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVldOejJNYnhGVkQydVUydzJwaG56QzZDWnlPZHFKU2tQMExVNDNJYjZkaFN3NlNUVUM4SEZRc1hGZUp1MVhZcWkyYjBWNkF4NXBqb3kxbHAzR1d3VTJPSHFGRERRTXV0S0x2SXlobG5rTk0wbmFGU28wUTJBRGdnZmtUY0M4TW82cUZzR09sTEhNbG5HbU1FbHBZREgxUkRVUnlaRTV6YTZ4bmNoa25pZ2tseXFQOENiOWlhSXBFTlFrNVoxZDlvaW1YNWhzVURxanBjU09NVmF0RGx2am5mSUl0dzFqNVN0?oc=5",
    "titulo": "Investidores aguardam definição da equipe econômica em semana mais curta; Ibovespa em dólar cai nesta segunda-feira (16)",
@@ -2150,7 +2441,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T15:38-03:00",
+ "atualizado_em": "2026-11-16T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2160,9 +2451,105 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "O formato do ajuste fiscal importa",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/cecilia-machado/2026/11/o-formato-do-ajuste-fiscal-importa.shtml",
+   "publicado": "2026-11-16T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ex- diretor de finanças do Itaú assume área de gestão de riscos da Avenue",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-diretor-de-financas-do-itau-assume-area-de-gestao-de-riscos-da-avenue.shtml",
+   "publicado": "2026-11-16T16:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Dólar supera R$ 5,77 e bate maior valor desde abril de 2025; Ibovespa cai mais de 2%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
+   "publicado": "2026-11-16T16:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nem o ouro escapa: dólar forte e temor de juros mais altos derrubam o metal a mínima de um ano",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUHBnb3NhdGlNaEhxeDlOdUNCeVRyOU11ZUhWM1RxdzRvS0xvOEZkS2lBbnF0MTJWRUpfTUxKS3VSdGhQT0lwX0lfYWIyMTZTTXBDOXh5NjJ4dUx2UngxUEdfYklrcG5NaFBFY3gwMkdCUllIcnRkT3VRR2M5Rm12YkdzSVpONXdVWlJrZDFFcE1ZTkpRdTRSMEhJYzRESmtic3ZOVmNEUHVWd1psTUU0bFVRbjFJdjRubkhZRjFTeFJCSFRkUGRST3g2OHJId2piaDAxMUFIb2w5dDBkQklyOG5NVTFvYlp3dWx2SVNaakpxQQ?oc=5",
+   "publicado": "2026-11-16T16:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Aposta do estrangeiro contra o real sobe US$ 20 bi desde as eleições",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMjdIemtDbFEyYVY0SUdGN2NCa0xTYkR0T2h2UmpwY2pQVVM3aXBGbDlBY3NWc2ZvMEQwbDZGQWZDd1ZYTWQ5SkJkQThDTTZBdUVvWjNPdERDV2s5SG8wRjEzOUg1RU5wVXRJdE9ER09BamliSjRkUzRveEpyaEdHUWZJRE1Hc1J0aVVCYXdObDhTODJRdDhGU3Rjd3pnRng4MkUwRWZFZXBvc2FQS3RMTVhmbThxclJYUzJfYXFuNWNSWDYtU2tF0gHWAUFVX3lxTFB1c2l4MTQ5WWg2RWtVeEJlcGZObDFpWGcwMEstWk56Vm1IY1BKLTFNcnk1MFNldGRmaVBJTDNTZzcwMGNfMzYxZFNObF9ncDMySHhzYXJiUHloVW1aWUVNMW5MNjBJUDZnUVg3Q21UVGRObVJFU1dkWHZwNnhxLUFoejNtNUI0ODZZSGtzcVFDV0pUX2RPU00wbVp0Y3BEbVNLQ0NGWmxMY0dxMVNPbUZBbWYyQ2pvMDlxMEU2SGltLWxYdWpSSUNSZ3NJZ1JjOWI5eFV3ZkE?oc=5",
+   "publicado": "2026-11-16T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
+   "publicado": "2026-11-16T16:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVnSAYICQVVfeXFMTTFmWHJMUzRfY085R1ZTVzZlbjNncUYxQmJsN0QxU2w4MkZwTU9ONDV6NzZJX1JSSWJ0MThiVFQtR1dmRGRoemZTckRtUG9HZWdnSDFJRVhsM3o5RDh6NjFBVDgzRjk4UXU3a2FWMlY4RHdEeFFjazY1eDc5NmRYUldEa0M4OUJNYU9CTTJtakxRV19qNWpMRnB4QVdSZmtfT2lpMkl5ekZ5TVUtUW5sdzBZZ0xoT1YwRjFnajBXSEwzdjBkLWxtYXQwNHNPc1VQV00xbl9qc19TZ0RNcDZ5ZUN6ZWgzc0pTZzJhZmRfcndWSEhNVkV6MW9uY2FRR1RCQnVR?oc=5",
+   "publicado": "2026-11-16T15:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+   "publicado": "2026-11-16T15:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar à vista ganha fôlego e ultrapassa os R$ 5,78 com pacote do governo; 'má qualidade', diz economista",
    "fonte": "Money Times",
@@ -2175,55 +2562,27 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar supera R$ 5,79 e bate maior valor desde abril de 2025; Ibovespa cai mais de 2%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
-   "publicado": "2026-11-16T15:17-03:00",
+   "titulo": "Ibovespa cai cerca de 2% e fica abaixo dos 170 mil pontos: o que explica forte queda?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNURULUlrMVE5NFRab3llNzJJYkcxTkRWN2xLUlgzZDZndUp0OTZwd0Fmdmw1Y0lVRHBxbDBpZC1TeWpQMV8zVzFnSEVXdk5UMUZBczhnT21UOUZpNEdNZ3J6WVg1ekp1S1Q1YUJueWh2WVB6eGpJek1kVWVGcEVsdjFuSWtHSVZhTjY5ZmNtTEZha1ZOTURzOF9XYTl1ZlFRbktKQzVaTGhOWXBfa0Z5czZOVGxxb1nSAbwBQVVfeXFMTU5FTXpaS0drcjZKLWJfcTJMTlNFaHg1UUUwMXZaU0JYM2ExNU9oOGJPNlFraXdIbF9uV3ZxVldfTHM4VWJjRnBLWVoxaF9TT1ZKeDEtd09xQk44UmczN1RjU0Z0YkZFQ09wU3RwUDlGbXViY19mdTFjSGVDVG5URnNmTTRZMHl4b0hhWTlRZFFQUEZvTXZjZTJnMVk0ZzRLOGVySE1BUm5rcnNsdmV5bGhBaEdKS1piMjBQOXg?oc=5",
+   "publicado": "2026-11-16T15:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar hoje salta 2% e ultrapassa R$ 5,79 de olho em política fiscal e exterior",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzB6T2RBZmlEWW9KNzBla1NzRTJXZExKc3pzbGRjWXI2ai1pU0FOVXppOTIzMXA3bHRTZVN2WVZBZjR1NDJGVEs1TS1RZ2ZrWnp3Z3BTbWVmTE5CNm5GMzI3dkVjNl95OWtSeDJGYUdSc3d3dGN4Zy1mTnNaMWFQdmNrWV9ZamdpeHUtc3NNYUJUZDZOSVd4cTVVUk5zTEZ1dHhPbnp30gGrAUFVX3lxTE1sRFBjZ3RxbVkyanM0OTJBWWxEX3hydmp3b1RVczZ5RHpMUHRqbFFKVUJEQThYcVRVd2VzT0d4OU8zeXo5VnhUR3RQYUcyQlFLclRwVW9aNElHX0hhTDhfVnhSX2t1N2ctTS1KT0dCSXNVLURfT29BUWNia3dhZ2p3M1hubHp0NVd5aEpfTDc3Q1pqWTRmREhLTEY0NlpsTUU4eXNrNVBwbjFNcw?oc=5",
+   "publicado": "2026-11-16T15:15-03:00",
    "impacto": "alto",
    "ativos": [
-    "WIN",
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Por que o dólar ultrapassou os R$ 5,75 nesta segunda?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrY2VwenAtQjc0dXJVM0tZd0JiVnVqZ0ZULWMzMVVtOURIZko2alNiUDBMcGhNSU9ac19GVldGVXRLQW12TV9iUkpiZHYxNzlMMnk3Zld1dnA0a3I2S0d3a1d3NjBqd1RTV2JoWTVjWXh1MFhoSnl2ZGc0c9IBgAFBVV95cUxQLWFTQW5FNkZZdFNaUS1KWndmYm5ablg2dVBpbnBNZDBzTnZDQm40dkt2VU5ySEJ6czVyMXdJYWtXaFc1Ym9senVBelhIMS12V0tsZ1l4QjN3ZzNISW9naE5nQmw2cEJEQm5qcEw4U0pHTXFvb0pGb19aal9aaFp3aA?oc=5",
-   "publicado": "2026-11-16T15:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Líderes do Vale do Silício apoiam retorno de Jensen Huang à Nvidia",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdTlCVzFqcHA5eExUcEltMFVBRC1YV0VzYWtOSnUtU3lBUlo5eUJseHZZRzRqazctbkp4aDNkZ0ZDVGRIazdpNWxaNmJwYXhpaEZxblZFT2djVHFhLWl3SHJadDJueExFcmdBbTVCcWI2dTFPRUc5VXczajJFTUl4UTdUcFVfTGQ0MlZlbnppZk5feVZpcHB6WGhHcjMtejM4cDhCQmJpSFQtYjZyQXdiaTdMcVRwY2F6UlI5WWhaRQ?oc=5",
-   "publicado": "2026-11-16T14:58-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
-  },
-  {
-   "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHo0XzhYWm5NalljNDgyajhhMnVFdUM1ODd4bFpYV2ZEQi01czRhT214U2dnQThwUElFUERZLUFqbk1aenhFcEVCdHNLcUM3cmU1RW1rUDZqbWZPTG9BZE9Ob0ZVSFhoTEFBSzYyZWIzazg3dzlaUkxScDJERjRpaXRyYVJ5aU5HbmR5S1ZhZ3FrYVBtNHE2a1FKWVBwbFhBcHJWdU13aElFX0hDcXhqV1dSOTY1dXIzLVJYMGw1LXZBeURLNlJ3Xzdtc281ZVE?oc=5",
-   "publicado": "2026-11-16T14:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3",
-    "PETR4",
-    "VALE3"
-   ]
   },
   {
    "titulo": "Justiça determina que Genial e BTG prestem informações sobre negócio entre os bancos",
@@ -2251,19 +2610,6 @@
    "tickers": []
   },
   {
-   "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
-   "publicado": "2026-11-16T14:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
@@ -2272,86 +2618,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Morgan Stanley rebaixa ações brasileiras e projeta queda de 7% do Ibovespa em 2027",
-   "fonte": "Bloomberg Línea",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTXdfZ05qN2tsX1BQb1lxVWZYSGFjSTdoVWRfZEJGQkNXLU5mVV9LZVBxdTNnRTNyLXlhbEM5em9XN0ZJZ0VnOEdzZVFCeGtoWkpfT2U1TWdoUG1lT2dPWGQ4aG84dTZTd3ZZc1dyTWJtMDN1di1pYVo2ZmkzS2NjRFlETDd0clJmV3UzVmpOZUUtV1BkREdHYmU4LWxZTWZkTjZyMlo5d2pybEFFMU13V2Fib2x2LVBsY2pLTXg2NjBqN0XSAdcBQVVfeXFMUGswV0psbEMyc3pldVBkWmgwRWhKN1M2dWJJNk5BNEhhWWgwWDF1bHpNOENNanlERVdqLUxGQ200YV9IeEsxV2F1VFh4U19heGtUenkyZDBhUGo4R0E5enNXaU9JalJMcWlwYU9YbnlfcjZqRmZ1MUhhZzJFOGRUd1lUc1RvUDlKZUZneUlPbjZSazlDeWptN0pseHBEZzhfZ0duZGtXT0oxbi1icF9yOTR0MzNBSnVZODdGQmRpNUhOeXlvQjRMVDRKVjRBZ3VTOVhMb3E3ZHc?oc=5",
-   "publicado": "2026-11-16T14:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Cramer: Take some profits in these 2 stocks if you have big gains and do this with the cash",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/investingclub/2026/11/16/cramer-take-some-profits-in-these-2-stocks-and-do-this-with-the-cash.html",
-   "publicado": "2026-11-16T13:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tendência do dólar é ter valorização ainda maior, diz especialista",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeXVscUJxeUNmZ0ZZYklrNkp2SV9UNDhhTFJ4UDltUm5MZDFpRjN6clRHZG1fU2h0UVBWT0hFeEpyellzUW4xQmpEOS1jWlcwRTNiTE9qQzNhc3k2MHRaZ2pxUkhoZVVoU3Jpb3dwTndKXzAwbUY5ZHZUU1l2MUVjdEtoNWtVWlZPM3NDODRhazQzelF0TTljeVNqbDluRHA1YllJVWlxR3B3RV9pZWNHd2p5aU13Z01JelE?oc=5",
-   "publicado": "2026-11-16T13:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Warren Buffett doa quase US$ 5,5 bilhões em ações para quatro fundações",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/warren-buffett-doa-quase-us-55-bilhoes-em-acoes-para-quatro-fundacoes.shtml",
-   "publicado": "2026-11-16T13:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ajuste fiscal ‘pela metade’ é o principal risco para 2027, diz Zeina Latif",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/ajuste-fiscal-pela-metade-principal-risco-2027-zeina-latif/",
-   "publicado": "2026-11-16T13:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Transportadora ligada à Ambev terá de indenizar caminhoneiro por turno de até 19 horas",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/transportadora-ligada-a-ambev-tera-de-indenizar-caminhoneiro-por-turno-de-ate-19-horas.shtml",
-   "publicado": "2026-11-16T13:26-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ABEV3"
-   ]
-  },
-  {
-   "titulo": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
-   "publicado": "2026-11-16T13:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   }
