@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T14:25-03:00",
+  "atualizado_em": "2026-11-16T14:28-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -167,7 +167,11 @@
     ],
     [
      "14:10",
-     169344.0
+     169368.0
+    ],
+    [
+     "14:13",
+     169320.0
     ]
    ]
   },
@@ -436,7 +440,11 @@
     ],
     [
      "14:25",
-     5.7726
+     5.7776
+    ],
+    [
+     "14:28",
+     5.7753
     ]
    ]
   },
@@ -985,7 +993,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.06,
+    "ibov30": -0.04,
     "dolar30": 0.13
    },
    {
@@ -999,7 +1007,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.14
    },
    {
     "hora": "14:00",
@@ -1012,7 +1020,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": 0.09
    },
    {
     "hora": "14:11",
@@ -1894,7 +1902,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T14:25-03:00",
+ "atualizado_em": "2026-11-16T14:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1909,18 +1917,6 @@
   "Valor"
  ],
  "noticias": [
-  {
-   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-   "publicado": "2026-11-16T14:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
    "fonte": "CNBC",
@@ -2014,19 +2010,6 @@
    "tickers": []
   },
   {
-   "titulo": "Transportadora ligada à Ambev terá de indenizar caminhoneiro por turno de até 19 horas",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/transportadora-ligada-a-ambev-tera-de-indenizar-caminhoneiro-por-turno-de-ate-19-horas.shtml",
-   "publicado": "2026-11-16T13:26-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ABEV3"
-   ]
-  },
-  {
    "titulo": "‘Fantasma’ de 2024 faz mercado temer nova disparada do dólar, alerta HSBC",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdFg0TzN4VHNTb0gwZTVKQndheDZOMjAzdk4zODIzVWNXM0RZclNMTTZOblMwWUZLNFZIUGtXWmVkVzljVXhjQ0E1ekVjYk1HcHByRzMzcWpHZDZDQVk4WnE5R19nNnV0WDJDa0JCS1NtUWpvSlVBZnRVMS1OQ1RyUEJfVi1sbHVPeUlqYjg5TFVMREdxbjU3LXpnTlVJYk9kVTMwZXJZODFyZUFRTzI3V2pFb1RnS3p6VXdXLTlhMk9BVmVQM1JDNXo4d9IB2gFBVV95cUxOV2oxSkNVYWxFSUJ3RERQaWJfSTRfOGJQZXhUS0JpZjJyMEQtd0dqWFQ0VXFOVXhSMkdKaEtJbGMwc0R0QTVxSDNjTmZjUU9WdmFHM1hiNHZUNEVuTmI0WEptQ3VkZUpCMkZjNm02SFRjOWtnaWZnN1ZYQnViLWFYMmVNakI3SzlISnh3VmJYSlh2eURlS0tESnVuMng0MjAyUGt1eTJHVVNXa1VPN01JRTFrcWtJeEZIdExfV2JBWUdnQ0RhM21rSUFvRW9VOGpSM2Ryc19HLWs3QQ?oc=5",
@@ -2049,6 +2032,17 @@
    "tickers": []
   },
   {
+   "titulo": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
+   "publicado": "2026-11-16T13:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar supera atinge maior nível desde maio de 2025 com temores sobre política fiscal de Lula e pressão do exterior",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMVU5dFFZWHJIY1lsa3lnNk1PdEFPZEJwV2hGLWhmWjRId1ZyU0RyWEswcGJjeUlrQ2pSM3lYLUFwbGdZNU1HcnVreGZIZmdGVDk4a3lCRHh0Q2lta0RzVmVYQ1VPN2w2aHpBVVRZb3p0dXU1U1JPV19Yd25oa1pSM2pwME5LOW1oUDRwV0xtcHNFUW44bHRzempmU0k2MG1wRDB5cnRzMjRUNFpLN1FHbWlQVFVNcWo5N1BSZzJjR1BJM3Z0czhuTERuNmk0RmJ4Q0HSAeABQVVfeXFMTUlmUV9fQU1KRThZOGh1UGpJRFF5aEhYMk82Z1FXSWNGMjIyVWtYc0Z2NnNXSlI2YlpEOVJMR0R0TTc4Z01EbjJ1VE5UU3R3U2JKWXhNYzVlQUZ6YWhrWkI5V2x0aDc0YV96WlJ4ZFFwZW9hZkszMlM2dkp5bmFEcXJvcklya2tEdi14eWtSS3V2VDhJX3YxZ2RpNllaQkVmeDk2cmVwd1NTSWs3eG5ncHpBNEhhWkctWWtpS3pzd0dyckxxTXM2RW5BVHpCeDBaMlJEUHNxM3cxUXhRczV5RG0?oc=5",
@@ -2057,6 +2051,17 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar chega a R$ 6? Veja quais ações ganham com a disparada da moeda americana",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdW5FMDBLV3cwcEluYnE2ZnE4bXJZSU0wdnlMQU10cFF3NXJtYjRKRGVsdUZzTE15dXpXX1c2X1YteDM2dHFTSzBFeVRmbU5iSEZ3RDhLVng0QWczeTRPMnlmLVZuTEhjZVMwbnJCa1pqWDBYWXhRX2xZX3FFRWZEM3kzaDFiSjFaTl9qcUhJV01reDdfWENndmtsUk03NHJ4UVVtM0M2UV9kS3VidnV0Wg?oc=5",
+   "publicado": "2026-11-16T13:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
