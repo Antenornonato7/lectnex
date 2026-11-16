@@ -306,6 +306,24 @@ def facebook_pendentes(dias=2):
     note('notice', f'{n} post(s) do Instagram propostos para a Página do Facebook.')
 
 
+def facebook_propor(arq_texto, imagem_url, pid=None):
+    """Post só para a Página do Facebook (ex.: apresentação), com botão de aprovação no Telegram."""
+    texto = open(arq_texto, encoding='utf-8').read().strip()
+    pid = pid or dt.datetime.now(BRT).strftime('%Y%m%d-%H%M') + '-facebook'
+    x = {'id': pid, 'tipo': 'facebook', 'nome': 'Post na Página do Facebook', 'legenda': texto, 'imagens': [imagem_url],
+         'status': 'publicado', 'so_facebook': True, 'fb_pendente': True, 'criado': dt.datetime.now(BRT).isoformat(timespec='minutes')}
+    tg('sendPhoto', chat_id=admin(), photo=imagem_url, caption='Prévia: post na Página do Facebook')
+    r = tg('sendMessage', chat_id=admin(), parse_mode='HTML', disable_web_page_preview=True,
+           text=f'📘 <b>Post na Página do Facebook</b>\n\n{esc(texto[:900])}\n\nToque para publicar na Página Lectnex.',
+           reply_markup={'inline_keyboard': [[{'text': '✅ Publicar no Facebook', 'callback_data': f'ig:fb:{pid}'}]]})
+    x['msg_fb'] = r['result']['message_id']
+    f, sha = fila_ler()
+    f['pedidos'] = [y for y in f['pedidos'] if y['id'] != pid] + [x]
+    f['pedidos'] = f['pedidos'][-40:]
+    fila_gravar(f, sha)
+    note('notice', f'Post do Facebook proposto: {pid}')
+
+
 # ---------- comandos ----------
 def propor(tipo, legenda_arq, imagens):
     from PIL import Image
@@ -586,6 +604,8 @@ if __name__ == '__main__':
         teste()
     elif cmd == 'reenviar':
         reenviar()
+    elif cmd == 'facebook-apresentacao':
+        facebook_propor('ig/apresentacao-facebook.txt', 'https://lectnex.com.br/assets/discord/convite-fundo.jpg', 'facebook-apresentacao')
     elif cmd == 'facebook-hoje':
         facebook_pendentes()
     elif cmd == 'facebook-perfil':
