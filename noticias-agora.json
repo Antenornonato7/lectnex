@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T12:00-03:00",
+  "atualizado_em": "2026-11-16T12:03-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -51,7 +51,11 @@
     ],
     [
      "11:45",
-     169879.0
+     170047.0
+    ],
+    [
+     "11:48",
+     170138.0
     ]
    ]
   },
@@ -204,7 +208,11 @@
     ],
     [
      "12:00",
-     5.7492
+     5.7509
+    ],
+    [
+     "12:03",
+     5.7542
     ]
    ]
   },
@@ -527,7 +535,7 @@
      "SUZB3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.33
    },
    {
     "hora": "11:54",
@@ -535,6 +543,34 @@
     "fonte": "Exame",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSkxRdTJsVGloTFJrXzZpbHVIYzRybk51eXEyWU51ZWNGWlY0Wl9vVVh0bklQdjRMVHB2TENKR09rUFpFVk9kOXNrbmQzVHFraHFOZUFLN0M5R1ZyalNFUVZOU2dNRUl2MGNqd0hjbktEbHlIUlJoOC1mcEVXQkh2TkxkVFJhSVM0MVA4LUdtYXE4QVdYaHdmaWRGSWdfTFotd1Z6SlI4LUZHZkF5RW9HQQ?oc=5",
     "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:57",
+    "titulo": "Magazine Luiza tomba 6% e lidera perdas do Ibovespa hoje; veja maiores altas e baixas",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOS2NpbkVjNW1nTDZSUVlvR3hNWUhFOGNRRmVkOEVmb2VBT1FPYlFJc1I3a1FmY0JUUEduNW1ZRFY3YV8xVENycHB6aEFiSjFkOXRKdEJqRWNJZkFjOTlLSVV2allTMzloWW02QWM2TDk1Q1ljYUlGbGkyNzh3ZjlHV3BUTG1jUFNaY0JPVE5NLTBZRVJma3ExWHItSjN2TFF2YmEwUHRTZzlreTBmOWRRN3ZkSUZmd2xyTk5GY1o5aXlfcTVETUhiZ2VjMTVaSEdvejh4c2s5VU0tQdIB3wFBVV95cUxPXzlST2FLTmJkSl8yRjZCWU03ZVE4dW9wNng1SDFTNGRzRUhUdVlrLVhiaEFxSkp0dFRXLVpFVHZUc0c1T3lrTDd1V2UwTU1FLXYxQnhxNkVLXzZkREk4NFR0NURmYmtwYVF1QkQ5RUZGblZ4WXNZYkk1Nm9PUllWTmxMcEwzSmduelVXZzI5ZUctVkY5U2tidFRIRElhYmxDUlJHaTNhV3pzZllxMF9ISjdpSUZtOW1NeWZWa3dCQW9QUkM2SmJnQWJ4TDRfWkktcjZpMVdtRk80TWJ2bTBR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "MGLU3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:59",
+    "titulo": "Nasdaq cai 1% na abertura, pressionado pela Nvidia antes de balanços",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSUlFWjBQNDNTT1Q3YUlMdUdCRElXNTdROUlOWXd0S1labUd5N2FzUUQ0ZDNMOHgtWGkxd0pXRFhYRUF3MzIzMThLS0cyTm9YQTBXa0dfTWs3QktfakRuSjlrOFp6QVo2RjFURzcxaTYwQkc1dVRZNExzblZ0Y3lKckxkRW9DY0Q5SFRrMGxnSk5VRGJmLWx1QUJJU0dnc2lBOVJ3WXpvdV8wdEN6azV0MEZDVkhfbWFSNnFz?oc=5",
+    "impacto": "alto",
     "ativos": [
      "WIN"
     ],
@@ -1156,6 +1192,30 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Magazine Luiza tomba 6% e lidera perdas do Ibovespa hoje; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOS2NpbkVjNW1nTDZSUVlvR3hNWUhFOGNRRmVkOEVmb2VBT1FPYlFJc1I3a1FmY0JUUEduNW1ZRFY3YV8xVENycHB6aEFiSjFkOXRKdEJqRWNJZkFjOTlLSVV2allTMzloWW02QWM2TDk1Q1ljYUlGbGkyNzh3ZjlHV3BUTG1jUFNaY0JPVE5NLTBZRVJma3ExWHItSjN2TFF2YmEwUHRTZzlreTBmOWRRN3ZkSUZmd2xyTk5GY1o5aXlfcTVETUhiZ2VjMTVaSEdvejh4c2s5VU0tQdIB3wFBVV95cUxPXzlST2FLTmJkSl8yRjZCWU03ZVE4dW9wNng1SDFTNGRzRUhUdVlrLVhiaEFxSkp0dFRXLVpFVHZUc0c1T3lrTDd1V2UwTU1FLXYxQnhxNkVLXzZkREk4NFR0NURmYmtwYVF1QkQ5RUZGblZ4WXNZYkk1Nm9PUllWTmxMcEwzSmduelVXZzI5ZUctVkY5U2tidFRIRElhYmxDUlJHaTNhV3pzZllxMF9ISjdpSUZtOW1NeWZWa3dCQW9QUkM2SmJnQWJ4TDRfWkktcjZpMVdtRk80TWJ2bTBR?oc=5",
+   "publicado": "2026-11-16T11:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
+  },
+  {
+   "titulo": "Nasdaq cai 1% na abertura, pressionado pela Nvidia antes de balanços",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSUlFWjBQNDNTT1Q3YUlMdUdCRElXNTdROUlOWXd0S1labUd5N2FzUUQ0ZDNMOHgtWGkxd0pXRFhYRUF3MzIzMThLS0cyTm9YQTBXa0dfTWs3QktfakRuSjlrOFp6QVo2RjFURzcxaTYwQkc1dVRZNExzblZ0Y3lKckxkRW9DY0Q5SFRrMGxnSk5VRGJmLWx1QUJJU0dnc2lBOVJ3WXpvdV8wdEN6azV0MEZDVkhfbWFSNnFz?oc=5",
+   "publicado": "2026-11-16T11:59-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1190,7 +1250,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T12:00-03:00",
+ "atualizado_em": "2026-11-16T12:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1205,6 +1265,42 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Nvidia fallout: Commerce cracks down on third-country loophole that allowed China to use computing power",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+   "publicado": "2026-11-16T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nasdaq cai 1% na abertura, pressionado pela Nvidia antes de balanços",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSUlFWjBQNDNTT1Q3YUlMdUdCRElXNTdROUlOWXd0S1labUd5N2FzUUQ0ZDNMOHgtWGkxd0pXRFhYRUF3MzIzMThLS0cyTm9YQTBXa0dfTWs3QktfakRuSjlrOFp6QVo2RjFURzcxaTYwQkc1dVRZNExzblZ0Y3lKckxkRW9DY0Q5SFRrMGxnSk5VRGJmLWx1QUJJU0dnc2lBOVJ3WXpvdV8wdEN6azV0MEZDVkhfbWFSNnFz?oc=5",
+   "publicado": "2026-11-16T11:59-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Magazine Luiza tomba 6% e lidera perdas do Ibovespa hoje; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOS2NpbkVjNW1nTDZSUVlvR3hNWUhFOGNRRmVkOEVmb2VBT1FPYlFJc1I3a1FmY0JUUEduNW1ZRFY3YV8xVENycHB6aEFiSjFkOXRKdEJqRWNJZkFjOTlLSVV2allTMzloWW02QWM2TDk1Q1ljYUlGbGkyNzh3ZjlHV3BUTG1jUFNaY0JPVE5NLTBZRVJma3ExWHItSjN2TFF2YmEwUHRTZzlreTBmOWRRN3ZkSUZmd2xyTk5GY1o5aXlfcTVETUhiZ2VjMTVaSEdvejh4c2s5VU0tQdIB3wFBVV95cUxPXzlST2FLTmJkSl8yRjZCWU03ZVE4dW9wNng1SDFTNGRzRUhUdVlrLVhiaEFxSkp0dFRXLVpFVHZUc0c1T3lrTDd1V2UwTU1FLXYxQnhxNkVLXzZkREk4NFR0NURmYmtwYVF1QkQ5RUZGblZ4WXNZYkk1Nm9PUllWTmxMcEwzSmduelVXZzI5ZUctVkY5U2tidFRIRElhYmxDUlJHaTNhV3pzZllxMF9ISjdpSUZtOW1NeWZWa3dCQW9QUkM2SmJnQWJ4TDRfWkktcjZpMVdtRk80TWJ2bTBR?oc=5",
+   "publicado": "2026-11-16T11:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "MGLU3"
+   ]
+  },
   {
    "titulo": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
    "fonte": "CNBC",
@@ -1225,18 +1321,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nvidia fallout: Commerce cracks down on third-country loophole that allowed China to use computing power",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-   "publicado": "2026-11-16T11:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -1335,28 +1419,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tendência do dólar é ter valorização ainda maior, diz especialista",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeXVscUJxeUNmZ0ZZYklrNkp2SV9UNDhhTFJ4UDltUm5MZDFpRjN6clRHZG1fU2h0UVBWT0hFeEpyellzUW4xQmpEOS1jWlcwRTNiTE9qQzNhc3k2MHRaZ2pxUkhoZVVoU3Jpb3dwTndKXzAwbUY5ZHZUU1l2MUVjdEtoNWtVWlZPM3NDODRhazQzelF0TTljeVNqbDluRHA1YllJVWlxR3B3RV9pZWNHd2p5aU13Z01JelE?oc=5",
-   "publicado": "2026-11-16T10:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Governo quer preservar texto do projeto de ajuste fiscal, mas está aberto ao diálogo, diz Moretti",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/governo-preservar-texto-projeto-ajuste-fiscal-aberto-dialogo-moretti/",
-   "publicado": "2026-11-16T10:25-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
