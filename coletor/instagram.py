@@ -42,7 +42,8 @@ def pela_pagina():
     Esse caminho usa a mesma API de publicação, só que em graph.facebook.com."""
     return os.environ.get('INSTAGRAM_TOKEN', '').strip().startswith('EAA')
 FILA = 'ig/fila.json'
-TIPOS = {'grafico': 'Gráfico do dia (notícia × preço)', 'carrossel': 'Carrossel da semana'}
+TIPOS = {'grafico': 'Gráfico do dia (notícia × preço)', 'carrossel': 'Carrossel da semana', 'reel': 'Reels do dia',
+         'story': 'Story do fechamento', 'reel-semana': 'Reels da semana'}
 
 
 def note(k, m):
@@ -146,8 +147,8 @@ def ig_user():
     return _UID
 
 
-def esperar(cid):
-    for _ in range(30):
+def esperar(cid, tentativas=30):
+    for _ in range(tentativas):
         st = ig('GET', cid, fields='status_code').get('status_code')
         if st == 'FINISHED':
             return
@@ -157,9 +158,32 @@ def esperar(cid):
     raise RuntimeError('Contêiner não ficou pronto em 3 min')
 
 
+def subir_video(uid, video_url, **params):
+    """Reels e stories em vídeo: envio direto do arquivo para a Meta (upload resumível), sem depender de um link público
+    com o tipo de arquivo certo (o raw do GitHub entrega vídeo como application/octet-stream)."""
+    c = ig('POST', f'{uid}/media', upload_type='resumable', **params)
+    corpo = urllib.request.urlopen(video_url, timeout=120).read()
+    req = urllib.request.Request(c['uri'], data=corpo, method='POST', headers={
+        'Authorization': 'OAuth ' + os.environ['INSTAGRAM_TOKEN'].strip(), 'offset': '0', 'file_size': str(len(corpo))})
+    try:
+        urllib.request.urlopen(req, timeout=300).read()
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f'Envio do vídeo recusado (HTTP {e.code}): {e.read().decode()[:200]}') from None
+    esperar(c['id'], 60)
+    return c['id']
+
+
 def publicar(p):
     uid = ig_user()
-    if len(p['imagens']) == 1:
+    tipo = p.get('tipo', '')
+    if p.get('video'):
+        if tipo == 'story':
+            cid = subir_video(uid, p['video'], media_type='STORIES')
+        else:
+            cid = subir_video(uid, p['video'], media_type='REELS', caption=p.get('legenda', ''), share_to_feed='true')
+    elif tipo == 'story':
+        cid = ig('POST', f'{uid}/media', image_url=p['imagens'][0], media_type='STORIES')['id']
+    elif len(p['imagens']) == 1:
         cid = ig('POST', f'{uid}/media', image_url=p['imagens'][0], caption=p['legenda'])['id']
     else:
         filhos = [ig('POST', f'{uid}/media', image_url=u, is_carousel_item='true')['id'] for u in p['imagens'][:10]]
@@ -219,6 +243,50 @@ def propor(tipo, legenda_arq, imagens):
     print(f'Pedido {pid} proposto ({len(urls)} imagem/ns).')
 
 
+def enviar_previa(x):
+    rot = {'reel': 'Publicar como Reels', 'reel-semana': 'Publicar como Reels', 'story': 'Publicar no Story'}.get(x['tipo'], 'Publicar no Instagram')
+    texto = (f'📸 <b>{esc(TIPOS.get(x["tipo"], x["tipo"]))}</b>' + (f' ({len(x["imagens"])} imagens)' if len(x.get('imagens') or []) > 1 else '') +
+             (f'\n\n<b>Legenda:</b>\n{esc(x["legenda"][:700])}' + ('…' if len(x['legenda']) > 700 else '') if x.get('legenda') else '') +
+             f'\n\nToque em <b>{rot}</b> para postar agora (vale por 36 h).')
+    botoes = {'inline_keyboard': [[{'text': f'✅ {rot}', 'callback_data': f'ig:pub:{x["id"]}'}, {'text': '🗑️ Descartar', 'callback_data': f'ig:del:{x["id"]}'}]]}
+    if x.get('video'):
+        tg('sendVideo', chat_id=admin(), video=x['video'], caption=f'Prévia: {TIPOS.get(x["tipo"], x["tipo"])}')
+    elif x.get('imagens'):
+        tg('sendPhoto', chat_id=admin(), photo=x['imagens'][0], caption=f'Prévia: {TIPOS.get(x["tipo"], x["tipo"])}')
+    r = tg('sendMessage', chat_id=admin(), text=texto, parse_mode='HTML', disable_web_page_preview=True, reply_markup=botoes)
+    x['msg_id'] = r['result']['message_id']
+
+
+def kit_instagram(dia=None):
+    """Propõe no Telegram, com botão, as peças do Kit do dia (branch ao-vivo): post do gráfico, Reels do dia e story do fechamento."""
+    dia = dia or dt.datetime.now(BRT).date().isoformat()
+    kit, _ = gh_ler(f'kit/{dia}/kit.json')
+    if not kit:
+        note('warning', f'Sem kit em kit/{dia}/'); return
+    agora = dt.datetime.now(BRT)
+    novos = []
+    pecas = {pc['chave']: pc for pc in kit.get('pecas', [])}
+    if 'grafico' in pecas:
+        novos.append({'id': f'{dia.replace("-", "")}-kit-grafico', 'tipo': 'grafico', 'legenda': pecas['grafico'].get('legenda', ''), 'imagens': [RAW + f'kit/{dia}/grafico.jpg']})
+    for chave, rl in (kit.get('reels') or {}).items():
+        novos.append({'id': f'{dia.replace("-", "")}-kit-{chave}', 'tipo': 'reel' if chave == 'reel' else 'reel-semana', 'legenda': rl.get('legenda', ''), 'imagens': [], 'video': RAW + f'kit/{dia}/{chave}.mp4'})
+    if 'fechamento' in pecas:
+        novos.append({'id': f'{dia.replace("-", "")}-kit-story', 'tipo': 'story', 'legenda': '', 'imagens': [RAW + f'kit/{dia}/fechamento.jpg']})
+    f, sha = fila_ler()
+    ids = {n['id'] for n in novos}
+    f['pedidos'] = [x for x in f['pedidos'] if x['id'] not in ids]
+    for x in f['pedidos']:  # o gráfico proposto às 19h sem botão é a mesma peça: não deixa dois aguardando
+        if x.get('status') == 'aguardando' and x['id'].startswith(dia.replace('-', '')) and x.get('tipo') == 'grafico':
+            x['status'] = 'substituido'
+    for n in novos:
+        n.update(status='aguardando', criado=agora.isoformat(timespec='minutes'))
+        enviar_previa(n)
+        f['pedidos'].append(n)
+    f['pedidos'] = f['pedidos'][-40:]
+    fila_gravar(f, sha)
+    note('notice', f'{len(novos)} peça(s) do kit propostas no Telegram: ' + ', '.join(n['tipo'] for n in novos))
+
+
 def reenviar():
     """Manda de novo, com os botões, os pedidos ainda válidos (menos de 36 h) que foram propostos sem o INSTAGRAM_TOKEN."""
     f, sha = fila_ler()
@@ -227,14 +295,7 @@ def reenviar():
     for x in f['pedidos']:
         if x.get('status') != 'aguardando' or (agora - dt.datetime.fromisoformat(x['criado'])).total_seconds() > 36 * 3600:
             continue
-        texto = (f'📸 <b>Post para o feed: {esc(TIPOS.get(x["tipo"], x["tipo"]))}</b>' + (f' ({len(x["imagens"])} imagens)' if len(x['imagens']) > 1 else '') +
-                 f'\n\n<b>Legenda:</b>\n{esc(x["legenda"][:700])}' + ('…' if len(x['legenda']) > 700 else '') +
-                 '\n\nToque em <b>Publicar</b> para postar agora no Instagram (vale por 36 h).')
-        botoes = {'inline_keyboard': [[{'text': '✅ Publicar no Instagram', 'callback_data': f'ig:pub:{x["id"]}'},
-                                       {'text': '🗑️ Descartar', 'callback_data': f'ig:del:{x["id"]}'}]]}
-        tg('sendPhoto', chat_id=admin(), photo=x['imagens'][0], caption=f'Prévia: {TIPOS.get(x["tipo"], x["tipo"])}')
-        r = tg('sendMessage', chat_id=admin(), text=texto, parse_mode='HTML', disable_web_page_preview=True, reply_markup=botoes)
-        x['msg_id'] = r['result']['message_id']
+        enviar_previa(x)
         feitos += 1
     if feitos:
         fila_gravar(f, sha)
@@ -367,3 +428,5 @@ if __name__ == '__main__':
         teste()
     elif cmd == 'reenviar':
         reenviar()
+    elif cmd == 'kit':
+        kit_instagram(sys.argv[2] if len(sys.argv) > 2 else None)
