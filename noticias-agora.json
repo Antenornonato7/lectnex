@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T14:15-03:00",
+  "atualizado_em": "2026-11-16T14:18-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -159,7 +159,11 @@
     ],
     [
      "14:00",
-     169499.0
+     169429.0
+    ],
+    [
+     "14:03",
+     169424.0
     ]
    ]
   },
@@ -420,7 +424,11 @@
     ],
     [
      "14:15",
-     5.7778
+     5.7812
+    ],
+    [
+     "14:18",
+     5.781
     ]
    ]
   },
@@ -980,6 +988,21 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:11",
+    "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1792,6 +1815,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+   "publicado": "2026-11-16T14:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1826,7 +1862,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T14:15-03:00",
+ "atualizado_em": "2026-11-16T14:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1841,6 +1877,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+   "publicado": "2026-11-16T14:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Morgan Stanley rebaixa ações brasileiras e projeta queda de 7% do Ibovespa em 2027",
    "fonte": "Bloomberg Línea",
@@ -1933,18 +1982,6 @@
    "tickers": [
     "ABEV3"
    ]
-  },
-  {
-   "titulo": "U.S. crude oil declines to $87 a barrel on recovering Middle East exports",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-   "publicado": "2026-11-16T13:17-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "‘Fantasma’ de 2024 faz mercado temer nova disparada do dólar, alerta HSBC",
