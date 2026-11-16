@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T15:48-03:00",
+  "atualizado_em": "2026-11-16T16:45-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -231,11 +231,59 @@
     ],
     [
      "15:30",
-     168665.0
+     168661.0
     ],
     [
-     "15:33",
-     168723.0
+     "15:35",
+     168599.0
+    ],
+    [
+     "15:40",
+     168491.0
+    ],
+    [
+     "15:45",
+     168652.0
+    ],
+    [
+     "15:50",
+     168650.0
+    ],
+    [
+     "15:55",
+     168625.0
+    ],
+    [
+     "16:00",
+     168675.0
+    ],
+    [
+     "16:05",
+     168828.0
+    ],
+    [
+     "16:10",
+     168763.0
+    ],
+    [
+     "16:15",
+     168877.0
+    ],
+    [
+     "16:20",
+     169033.0
+    ],
+    [
+     "16:25",
+     169047.0
+    ],
+    [
+     "16:30",
+     168963.0
+    ],
+    [
+     "16:31",
+     168920.0
     ]
    ]
   },
@@ -568,11 +616,59 @@
     ],
     [
      "15:45",
-     5.7841
+     5.7813
     ],
     [
-     "15:48",
-     5.7831
+     "15:50",
+     5.7871
+    ],
+    [
+     "15:55",
+     5.7904
+    ],
+    [
+     "16:00",
+     5.784
+    ],
+    [
+     "16:05",
+     5.7786
+    ],
+    [
+     "16:10",
+     5.7788
+    ],
+    [
+     "16:15",
+     5.7791
+    ],
+    [
+     "16:20",
+     5.7759
+    ],
+    [
+     "16:25",
+     5.7773
+    ],
+    [
+     "16:30",
+     5.7806
+    ],
+    [
+     "16:35",
+     5.7752
+    ],
+    [
+     "16:40",
+     5.7753
+    ],
+    [
+     "16:45",
+     5.7775
+    ],
+    [
+     "16:45",
+     5.7775
     ]
    ]
   },
@@ -1235,8 +1331,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.13,
+    "dolar30": 0.14
    }
   ]
  },
@@ -2136,11 +2232,6 @@
  ],
  "enviadas": [
   {
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSzF2LXA5MExSd0dYSUczVjJ6LWV4Q0p1bXlxb2Y3eks2b2psSlRRMm56TVBaTk5zQWQ1a1c3ZVI0Y0pXcDdXRDZCUG9taklqMlAwZ1dJY0tIdDZtZlcyOTI5c1ZONzl2N0JYWTJFcUxWdFczVUxHODZpdFlsdGdfWi1EQm9TTWFNQ29yTUNLRVpKZXowR2F4QXlXbE9KdGlBaDV4SzhzakxMczJNVGZ5QWhWdFhrWEpTc004Z053bEQ5ZjVheGc?oc=5",
-   "titulo": "Fed tem “trabalho a fazer” sobre inflação, diz dirigente de Kansas City",
-   "em": "2026-11-15T19:05:38+00:00"
-  },
-  {
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVldOejJNYnhGVkQydVUydzJwaG56QzZDWnlPZHFKU2tQMExVNDNJYjZkaFN3NlNUVUM4SEZRc1hGZUp1MVhZcWkyYjBWNkF4NXBqb3kxbHAzR1d3VTJPSHFGRERRTXV0S0x2SXlobG5rTk0wbmFGU28wUTJBRGdnZmtUY0M4TW82cUZzR09sTEhNbG5HbU1FbHBZREgxUkRVUnlaRTV6YTZ4bmNoa25pZ2tseXFQOENiOWlhSXBFTlFrNVoxZDlvaW1YNWhzVURxanBjU09NVmF0RGx2am5mSUl0dzFqNVN0?oc=5",
    "titulo": "Investidores aguardam definição da equipe econômica em semana mais curta; Ibovespa em dólar cai nesta segunda-feira (16)",
    "em": "2026-11-16T10:05:49+00:00"
@@ -2166,7 +2257,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T15:48-03:00",
+ "atualizado_em": "2026-11-16T16:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2175,10 +2266,21 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
-  "Money Times"
+  "InfoMoney"
  ],
  "noticias": [
+  {
+   "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
+   "publicado": "2026-11-16T16:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
    "fonte": "CNBC",
@@ -2193,36 +2295,25 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar à vista ganha fôlego e ultrapassa os R$ 5,78 com pacote do governo; 'má qualidade', diz economista",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdk5TRV83TnVJTzVTcWJpNm41SmpfNUNvVndXWk1TVHo3T1dFcHZ0M0lVYnJYRGJld3MwRlM2UVU2Q29uc1oxZkJha2Z0VzdiN2E1XzFId0FKZDhXa3pCTi13dHpfenZwOGRIbDNuU1VLTUlLbFp5amwta2ltLUdaNFZtTXBJM283OWNCRw?oc=5",
-   "publicado": "2026-11-16T15:29-03:00",
+   "titulo": "Ibovespa cai cerca de 2% e fica abaixo dos 170 mil pontos: o que explica forte queda?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNURULUlrMVE5NFRab3llNzJJYkcxTkRWN2xLUlgzZDZndUp0OTZwd0Fmdmw1Y0lVRHBxbDBpZC1TeWpQMV8zVzFnSEVXdk5UMUZBczhnT21UOUZpNEdNZ3J6WVg1ekp1S1Q1YUJueWh2WVB6eGpJek1kVWVGcEVsdjFuSWtHSVZhTjY5ZmNtTEZha1ZOTURzOF9XYTl1ZlFRbktKQzVaTGhOWXBfa0Z5czZOVGxxb1nSAbwBQVVfeXFMTU5FTXpaS0drcjZKLWJfcTJMTlNFaHg1UUUwMXZaU0JYM2ExNU9oOGJPNlFraXdIbF9uV3ZxVldfTHM4VWJjRnBLWVoxaF9TT1ZKeDEtd09xQk44UmczN1RjU0Z0YkZFQ09wU3RwUDlGbXViY19mdTFjSGVDVG5URnNmTTRZMHl4b0hhWTlRZFFQUEZvTXZjZTJnMVk0ZzRLOGVySE1BUm5rcnNsdmV5bGhBaEdKS1piMjBQOXg?oc=5",
+   "publicado": "2026-11-16T15:18-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
+    "WIN"
    ],
    "tickers": []
   },
   {
-   "titulo": "Dólar supera R$ 5,79 e bate maior valor desde abril de 2025; Ibovespa cai mais de 2%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
-   "publicado": "2026-11-16T15:17-03:00",
+   "titulo": "Dólar hoje salta 2% e ultrapassa R$ 5,79 de olho em política fiscal e exterior",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzB6T2RBZmlEWW9KNzBla1NzRTJXZExKc3pzbGRjWXI2ai1pU0FOVXppOTIzMXA3bHRTZVN2WVZBZjR1NDJGVEs1TS1RZ2ZrWnp3Z3BTbWVmTE5CNm5GMzI3dkVjNl95OWtSeDJGYUdSc3d3dGN4Zy1mTnNaMWFQdmNrWV9ZamdpeHUtc3NNYUJUZDZOSVd4cTVVUk5zTEZ1dHhPbnp30gGrAUFVX3lxTE1sRFBjZ3RxbVkyanM0OTJBWWxEX3hydmp3b1RVczZ5RHpMUHRqbFFKVUJEQThYcVRVd2VzT0d4OU8zeXo5VnhUR3RQYUcyQlFLclRwVW9aNElHX0hhTDhfVnhSX2t1N2ctTS1KT0dCSXNVLURfT29BUWNia3dhZ2p3M1hubHp0NVd5aEpfTDc3Q1pqWTRmREhLTEY0NlpsTUU4eXNrNVBwbjFNcw?oc=5",
+   "publicado": "2026-11-16T15:15-03:00",
    "impacto": "alto",
    "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Por que o dólar ultrapassou os R$ 5,75 nesta segunda?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrY2VwenAtQjc0dXJVM0tZd0JiVnVqZ0ZULWMzMVVtOURIZko2alNiUDBMcGhNSU9ac19GVldGVXRLQW12TV9iUkpiZHYxNzlMMnk3Zld1dnA0a3I2S0d3a1d3NjBqd1RTV2JoWTVjWXh1MFhoSnl2ZGc0c9IBgAFBVV95cUxQLWFTQW5FNkZZdFNaUS1KWndmYm5ablg2dVBpbnBNZDBzTnZDQm40dkt2VU5ySEJ6czVyMXdJYWtXaFc1Ym9senVBelhIMS12V0tsZ1l4QjN3ZzNISW9naE5nQmw2cEJEQm5qcEw4U0pHTXFvb0pGb19aal9aaFp3aA?oc=5",
-   "publicado": "2026-11-16T15:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2236,21 +2327,6 @@
     "WIN"
    ],
    "tickers": [
-    "VALE3"
-   ]
-  },
-  {
-   "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHo0XzhYWm5NalljNDgyajhhMnVFdUM1ODd4bFpYV2ZEQi01czRhT214U2dnQThwUElFUERZLUFqbk1aenhFcEVCdHNLcUM3cmU1RW1rUDZqbWZPTG9BZE9Ob0ZVSFhoTEFBSzYyZWIzazg3dzlaUkxScDJERjRpaXRyYVJ5aU5HbmR5S1ZhZ3FrYVBtNHE2a1FKWVBwbFhBcHJWdU13aElFX0hDcXhqV1dSOTY1dXIzLVJYMGw1LXZBeURLNlJ3Xzdtc281ZVE?oc=5",
-   "publicado": "2026-11-16T14:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3",
-    "PETR4",
     "VALE3"
    ]
   },
@@ -2292,39 +2368,6 @@
    "tickers": []
   },
   {
-   "titulo": "Morgan Stanley rebaixa ações brasileiras e projeta queda de 7% do Ibovespa em 2027",
-   "fonte": "Bloomberg Línea",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTXdfZ05qN2tsX1BQb1lxVWZYSGFjSTdoVWRfZEJGQkNXLU5mVV9LZVBxdTNnRTNyLXlhbEM5em9XN0ZJZ0VnOEdzZVFCeGtoWkpfT2U1TWdoUG1lT2dPWGQ4aG84dTZTd3ZZc1dyTWJtMDN1di1pYVo2ZmkzS2NjRFlETDd0clJmV3UzVmpOZUUtV1BkREdHYmU4LWxZTWZkTjZyMlo5d2pybEFFMU13V2Fib2x2LVBsY2pLTXg2NjBqN0XSAdcBQVVfeXFMUGswV0psbEMyc3pldVBkWmgwRWhKN1M2dWJJNk5BNEhhWWgwWDF1bHpNOENNanlERVdqLUxGQ200YV9IeEsxV2F1VFh4U19heGtUenkyZDBhUGo4R0E5enNXaU9JalJMcWlwYU9YbnlfcjZqRmZ1MUhhZzJFOGRUd1lUc1RvUDlKZUZneUlPbjZSazlDeWptN0pseHBEZzhfZ0duZGtXT0oxbi1icF9yOTR0MzNBSnVZODdGQmRpNUhOeXlvQjRMVDRKVjRBZ3VTOVhMb3E3ZHc?oc=5",
-   "publicado": "2026-11-16T14:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Cramer: Take some profits in these 2 stocks if you have big gains and do this with the cash",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/investingclub/2026/11/16/cramer-take-some-profits-in-these-2-stocks-and-do-this-with-the-cash.html",
-   "publicado": "2026-11-16T13:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tendência do dólar é ter valorização ainda maior, diz especialista",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeXVscUJxeUNmZ0ZZYklrNkp2SV9UNDhhTFJ4UDltUm5MZDFpRjN6clRHZG1fU2h0UVBWT0hFeEpyellzUW4xQmpEOS1jWlcwRTNiTE9qQzNhc3k2MHRaZ2pxUkhoZVVoU3Jpb3dwTndKXzAwbUY5ZHZUU1l2MUVjdEtoNWtVWlZPM3NDODRhazQzelF0TTljeVNqbDluRHA1YllJVWlxR3B3RV9pZWNHd2p5aU13Z01JelE?oc=5",
-   "publicado": "2026-11-16T13:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Warren Buffett doa quase US$ 5,5 bilhões em ações para quatro fundações",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/warren-buffett-doa-quase-us-55-bilhoes-em-acoes-para-quatro-fundacoes.shtml",
@@ -2333,41 +2376,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ajuste fiscal ‘pela metade’ é o principal risco para 2027, diz Zeina Latif",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/ajuste-fiscal-pela-metade-principal-risco-2027-zeina-latif/",
-   "publicado": "2026-11-16T13:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Transportadora ligada à Ambev terá de indenizar caminhoneiro por turno de até 19 horas",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/transportadora-ligada-a-ambev-tera-de-indenizar-caminhoneiro-por-turno-de-ate-19-horas.shtml",
-   "publicado": "2026-11-16T13:26-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ABEV3"
-   ]
-  },
-  {
-   "titulo": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
-   "publicado": "2026-11-16T13:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   }
