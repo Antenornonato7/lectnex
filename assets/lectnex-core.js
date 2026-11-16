@@ -35,7 +35,8 @@
     LX.config.onesignalSafari = 'web.onesignal.auto.201c9c11-2835-4563-82b9-55a6f9094e87';         // App ID do OneSignal (notificações no celular); vazio = desligado
 
     /* ------------------------------------------------------------------ FORMATOS */
-    const nf = (min, max) => new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max });
+    const nfCache = {};  // formatadores reaproveitados: criar um por número era o que mais pesava na montagem das tabelas
+    const nf = (min, max) => nfCache[min + ':' + max] || (nfCache[min + ':' + max] = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max }));
     LX.num = (v, d = 2) => (v == null || isNaN(v)) ? '—' : nf(d, d).format(v);
     LX.brl = (v, d = 2) => (v == null || isNaN(v)) ? '—' : 'R$ ' + nf(d, d).format(v);
     LX.pct = (v, d = 2, sign = false) => (v == null || isNaN(v)) ? '—' : (sign && v > 0 ? '+' : '') + nf(d, d).format(v) + '%';
@@ -50,18 +51,25 @@
     LX.weekday = (d) => ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'][d.getDay()];
 
     // "Agora" em horário de Brasília, como objeto Date local com os campos de SP
+    // O formatador é criado uma vez só: montar um Intl.DateTimeFormat a cada chamada custava ~90 ms na abertura no celular
+    let fmtBRT, agoraSeg = -1, agoraBRT;
     LX.nowBRT = function () {
-        const parts = new Intl.DateTimeFormat('en-CA', {
+        const seg = Math.floor(Date.now() / 1000);  // mesma resposta dentro do mesmo segundo (é chamado dezenas de vezes na abertura)
+        if (seg === agoraSeg) return new Date(agoraBRT);
+        fmtBRT = fmtBRT || new Intl.DateTimeFormat('en-CA', {
             timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit',
             hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
-        }).formatToParts(new Date()).reduce((a, p) => (a[p.type] = p.value, a), {});
-        return new Date(+parts.year, +parts.month - 1, +parts.day, +parts.hour % 24, +parts.minute, +parts.second);
+        });
+        const parts = fmtBRT.formatToParts(new Date(seg * 1000)).reduce((a, p) => (a[p.type] = p.value, a), {});
+        agoraSeg = seg; agoraBRT = +new Date(+parts.year, +parts.month - 1, +parts.day, +parts.hour % 24, +parts.minute, +parts.second);
+        return new Date(agoraBRT);
     };
     LX.todayBRT = function () { const n = LX.nowBRT(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); };
 
     // Hora/minuto num fuso qualquer
+    const fmtFuso = {};
     function hmIn(tz) {
-        const p = new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: '2-digit', minute: '2-digit', weekday: 'short', hour12: false })
+        const p = (fmtFuso[tz] = fmtFuso[tz] || new Intl.DateTimeFormat('en-US', { timeZone: tz, hour: '2-digit', minute: '2-digit', weekday: 'short', hour12: false }))
             .formatToParts(new Date()).reduce((a, x) => (a[x.type] = x.value, a), {});
         return { min: (+p.hour % 24) * 60 + +p.minute, wd: p.weekday };
     }
@@ -111,7 +119,19 @@
     };
     LX.nextBusinessDay = function (d, b3 = true) { let x = new Date(d); while (!LX.isBusinessDay(x, b3)) x = addDays(x, 1); return x; };
     // Dias úteis entre "from" (exclusive) e "to" (inclusive) — convenção do DI1 (base ANBIMA)
+    // Contagem acumulada de dias úteis por ano (calculada uma vez por ano): a diferença entre duas datas sai na hora,
+    // em vez de testar dia a dia (eram ~15 mil testes na abertura de Futuros).
+    const duAno = {}, duBase = {};
+    const duDoAno = (y, b3) => { const k = (b3 ? 'b' : 'n') + y; if (duAno[k]) return duAno[k];
+        const arr = [], d = new Date(y, 0, 1); let c = 0;
+        while (d.getFullYear() === y) { if (LX.isBusinessDay(d, b3)) c++; arr.push(c); d.setDate(d.getDate() + 1); }
+        return (duAno[k] = arr); };
+    const duAte = (dt, b3) => { const y = dt.getFullYear(), k = (b3 ? 'b' : 'n') + y;
+        if (duBase[k] == null) { let s = 0; for (let a = 2000; a < y; a++) { const arr = duDoAno(a, b3); s += arr[arr.length - 1]; } duBase[k] = s; }
+        return duBase[k] + duDoAno(y, b3)[Math.round((Date.UTC(y, dt.getMonth(), dt.getDate()) - Date.UTC(y, 0, 1)) / 864e5)]; };
     LX.businessDaysBetween = function (from, to, b3 = false) {
+        if (!(to > from)) return 0;
+        if (from.getFullYear() >= 2000 && to.getFullYear() <= 2100) return duAte(to, b3) - duAte(from, b3);
         let n = 0, d = addDays(from, 1);
         while (d <= to) { if (LX.isBusinessDay(d, b3)) n++; d = addDays(d, 1); }
         return n;
@@ -196,7 +216,7 @@
        atraso: atraso conhecido da fonte em minutos (só aparece no rótulo se for conhecido) · intervalo: de quanto em quanto tempo o site atualiza
        Estados: aberto (cotação dentro do prazo) · fechado (último fechamento) · atrasado (atualização esperada não chegou)
                 pendente (pregão fechou e o fechamento ainda não chegou) · sem (sem cotação) */
-    const brtParts = d => { const f = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(d), g = t => f.find(x => x.type === t).value; return { iso: `${g('year')}-${g('month')}-${g('day')}`, min: +g('hour') * 60 + +g('minute'), hh: g('hour'), mm: g('minute'), dm: `${g('day')}/${g('month')}` }; };
+    let fmtParts; const brtParts = d => { const f = (fmtParts = fmtParts || new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })).formatToParts(d), g = t => f.find(x => x.type === t).value; return { iso: `${g('year')}-${g('month')}-${g('day')}`, min: +g('hour') * 60 + +g('minute'), hh: g('hour'), mm: g('minute'), dm: `${g('day')}/${g('month')}` }; };
     LX.hBRT = d => { const p = brtParts(d); return `${p.hh}h${p.mm} BRT`; };
     LX.statusCotacao = function (o) {
         const q = o && o.quando ? new Date(o.quando) : null, s = LX.sessions[(o && o.mercado) || 'b3'];
@@ -763,10 +783,11 @@
 
     function buildPalette() {
         if (document.getElementById('lx-palette')) return;
-        const el = document.createElement('div');
+        // <dialog> nativo: fica por cima de tudo, trava o fundo, fecha no Esc e no "voltar" do Android, devolve o foco ao fechar
+        const el = document.createElement('dialog');
         el.id = 'lx-palette';
-        el.setAttribute('data-lx-modal', '');
-        el.className = 'fixed inset-0 z-50 bg-lect-navy/70 backdrop-blur-sm hidden items-start justify-center pt-[8vh] p-3';
+        el.setAttribute('aria-label', 'Comando Lectnex: buscar ativo ou ferramenta');
+        el.className = 'fixed inset-0 m-0 w-full h-full max-w-none max-h-none border-0 bg-transparent hidden open:flex items-start justify-center pt-[8vh] p-3 backdrop:bg-lect-navy/70 backdrop:backdrop-blur-sm';
         el.innerHTML = `
           <div class="bg-white dark:bg-lect-cardDark border border-slate-300 dark:border-lect-borderDark border-t-4 border-t-lect-orange max-w-2xl w-full shadow-2xl flex flex-col max-h-[84vh]">
             <div class="flex items-center gap-3 px-4 py-3 border-b border-slate-200 dark:border-lect-borderDark">
@@ -797,15 +818,15 @@
                 const r = pal.rows[pal.sel]; if (r && r.href) openRow(r);
             }
         });
-        document.addEventListener('lx:fx', () => { if (!el.classList.contains('hidden')) renderPalette(); });
+        document.addEventListener('lx:fx', () => { if (el.open) renderPalette(); });
     }
     LX.openPalette = function () {
         const el = document.getElementById('lx-palette'); if (!el) return;
-        el.classList.remove('hidden'); el.classList.add('flex');
+        if (!el.open) { if (el.showModal) el.showModal(); else el.setAttribute('open', ''); }
         const inp = document.getElementById('lx-palette-input'); inp.value = ''; pal.cat = 'tudo'; pal.sel = 0; renderPalette();
         setTimeout(() => inp.focus(), 30);
     };
-    LX.closePalette = function () { const el = document.getElementById('lx-palette'); if (el) { el.classList.add('hidden'); el.classList.remove('flex'); } };
+    LX.closePalette = function () { const el = document.getElementById('lx-palette'); if (el && el.open) { if (el.close) el.close(); else el.removeAttribute('open'); } };
     document.addEventListener('keydown', e => {
         const typing = ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName);
         if ((!typing && e.key === '/') || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) { e.preventDefault(); LX.openPalette(); }
@@ -1161,13 +1182,18 @@
                     const k = n.toLowerCase(); if (vistos.has(k)) return; vistos.add(k);
                     const sigla = /^[A-Z0-9/+]{2,}$/.test(n);
                     const esc = n.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&').replace(/\s+/g, '\\s+');
-                    termos.push({ i, re: new RegExp(`(^|[^\\p{L}\\p{N}])(${esc})(?![\\p{L}\\p{N}])`, sigla ? 'u' : 'iu') });
+                    termos.push({ i, sigla, k: sigla ? n.split(/\s+/)[0] : n.toLowerCase().split(/\s+/)[0], len: esc.length, fonte: `(^|[^\\p{L}\\p{N}])(${esc})(?![\\p{L}\\p{N}])` }); // expressão compilada só se o filtro barato passar
                 });
             });
-            termos.sort((a, b) => b.re.source.length - a.re.source.length);
-            const feitos = new Set(); let total = 0;
-            const varrer = raiz => {
+            termos.sort((a, b) => b.len - a.len);
+            const feitos = new Set(); let total = 0, rodando = false, deNovo = false;
+            // Varre em fatias de ~8 ms e devolve a vez ao navegador entre elas: antes era uma tarefa única de ~300 ms
+            // no celular, que travava o primeiro toque na página (nota INP do Google).
+            const pausa = () => window.scheduler && scheduler.yield ? scheduler.yield() : new Promise(r => setTimeout(r, 0));
+            const varrer = async raiz => {
                 if (total >= 30) return;
+                if (rodando) { deNovo = true; return; }
+                rodando = true;
                 const w = document.createTreeWalker(raiz, NodeFilter.SHOW_TEXT, {
                     acceptNode: n => {
                         if (!n.nodeValue || n.nodeValue.trim().length < 3 || !/[a-zà-ú]/.test(n.nodeValue)) return NodeFilter.FILTER_REJECT; // rótulos em caixa alta ficam de fora
@@ -1177,11 +1203,15 @@
                     }
                 });
                 const nos = []; while (w.nextNode()) nos.push(w.currentNode);
+                let t0 = performance.now();
                 for (const no of nos) {
                     if (total >= 30) break;
+                    if (performance.now() - t0 > 8) { await pausa(); t0 = performance.now(); }
+                    if (!no.isConnected || !no.parentNode) continue;
+                    const txt = no.nodeValue, low = txt.toLowerCase();
                     for (const t of termos) {
-                        if (feitos.has(t.i)) continue;
-                        const m = no.nodeValue.match(t.re); if (!m) continue;
+                        if (feitos.has(t.i) || !(t.sigla ? txt : low).includes(t.k)) continue; // filtro barato antes da expressão regular
+                        const m = txt.match(t.re || (t.re = new RegExp(t.fonte, t.sigla ? 'u' : 'iu'))); if (!m) continue;
                         const ini = m.index + m[1].length, fim = ini + m[2].length;
                         const depois = no.splitText(ini); depois.nodeValue = depois.nodeValue.slice(m[2].length);
                         const ab = document.createElement('abbr');
@@ -1191,6 +1221,8 @@
                         break; // um termo por trecho de texto
                     }
                 }
+                rodando = false;
+                if (deNovo) { deNovo = false; varrer(raiz); }
             };
             const main = document.querySelector('main') || document.body;
             varrer(main);
