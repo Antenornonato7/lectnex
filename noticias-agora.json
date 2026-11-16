@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T12:30-03:00",
+  "atualizado_em": "2026-11-16T12:33-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -75,7 +75,11 @@
     ],
     [
      "12:15",
-     170037.0
+     170021.0
+    ],
+    [
+     "12:18",
+     170072.0
     ]
    ]
   },
@@ -252,7 +256,11 @@
     ],
     [
      "12:30",
-     5.746
+     5.7522
+    ],
+    [
+     "12:33",
+     5.7514
     ]
    ]
   },
@@ -642,7 +650,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    },
    {
     "hora": "12:16",
@@ -1414,7 +1422,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T12:30-03:00",
+ "atualizado_em": "2026-11-16T12:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1523,6 +1531,18 @@
    ]
   },
   {
+   "titulo": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
+   "publicado": "2026-11-16T11:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Morgan Stanley rebaixa Brasil e vê Ibovespa em 160 mil pontos no fim de 2027",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSkxRdTJsVGloTFJrXzZpbHVIYzRybk51eXEyWU51ZWNGWlY0Wl9vVVh0bklQdjRMVHB2TENKR09rUFpFVk9kOXNrbmQzVHFraHFOZUFLN0M5R1ZyalNFUVZOU2dNRUl2MGNqd0hjbktEbHlIUlJoOC1mcEVXQkh2TkxkVFJhSVM0MVA4LUdtYXE4QVdYaHdmaWRGSWdfTFotd1Z6SlI4LUZHZkF5RW9HQQ?oc=5",
@@ -1600,18 +1620,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-politica-fiscal-do-governo-lula-no-radar.shtml",
    "publicado": "2026-11-16T09:53-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado reduz projeção para inflação e PIB no ano e prevê Selic mais alta em 2027",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/mercado-reduz-projecao-inflacao-pib-preve-selic-mais-alta-2027/",
-   "publicado": "2026-11-16T09:31-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
