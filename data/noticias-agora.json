@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T14:08-03:00",
+  "atualizado_em": "2026-11-16T14:38-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -151,11 +151,35 @@
     ],
     [
      "13:50",
-     169595.0
+     169514.0
     ],
     [
-     "13:53",
-     169583.0
+     "13:55",
+     169458.0
+    ],
+    [
+     "14:00",
+     169424.0
+    ],
+    [
+     "14:05",
+     169322.0
+    ],
+    [
+     "14:10",
+     169297.0
+    ],
+    [
+     "14:15",
+     169338.0
+    ],
+    [
+     "14:20",
+     169357.0
+    ],
+    [
+     "14:23",
+     169423.0
     ]
    ]
   },
@@ -408,11 +432,35 @@
     ],
     [
      "14:05",
-     5.7808
+     5.7826
     ],
     [
-     "14:08",
-     5.7821
+     "14:10",
+     5.78
+    ],
+    [
+     "14:15",
+     5.7775
+    ],
+    [
+     "14:20",
+     5.7742
+    ],
+    [
+     "14:25",
+     5.7776
+    ],
+    [
+     "14:30",
+     5.7745
+    ],
+    [
+     "14:35",
+     5.7767
+    ],
+    [
+     "14:38",
+     5.775
     ]
    ]
   },
@@ -948,7 +996,7 @@
     "tickers": [
      "ABEV3"
     ],
-    "ibov30": -0.14,
+    "ibov30": -0.22,
     "dolar30": 0.03
    },
    {
@@ -961,8 +1009,49 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": -0.08,
+    "dolar30": 0.13
+   },
+   {
+    "hora": "13:59",
+    "titulo": "Cramer: Take some profits in these 2 stocks if you have big gains and do this with the cash",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/investingclub/2026/11/16/cramer-take-some-profits-in-these-2-stocks-and-do-this-with-the-cash.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.14
+   },
+   {
+    "hora": "14:00",
+    "titulo": "Morgan Stanley rebaixa ações brasileiras e projeta queda de 7% do Ibovespa em 2027",
+    "fonte": "Bloomberg Línea",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTXdfZ05qN2tsX1BQb1lxVWZYSGFjSTdoVWRfZEJGQkNXLU5mVV9LZVBxdTNnRTNyLXlhbEM5em9XN0ZJZ0VnOEdzZVFCeGtoWkpfT2U1TWdoUG1lT2dPWGQ4aG84dTZTd3ZZc1dyTWJtMDN1di1pYVo2ZmkzS2NjRFlETDd0clJmV3UzVmpOZUUtV1BkREdHYmU4LWxZTWZkTjZyMlo5d2pybEFFMU13V2Fib2x2LVBsY2pLTXg2NjBqN0XSAdcBQVVfeXFMUGswV0psbEMyc3pldVBkWmgwRWhKN1M2dWJJNk5BNEhhWWgwWDF1bHpNOENNanlERVdqLUxGQ200YV9IeEsxV2F1VFh4U19heGtUenkyZDBhUGo4R0E5enNXaU9JalJMcWlwYU9YbnlfcjZqRmZ1MUhhZzJFOGRUd1lUc1RvUDlKZUZneUlPbjZSazlDeWptN0pseHBEZzhfZ0duZGtXT0oxbi1icF9yOTR0MzNBSnVZODdGQmRpNUhOeXlvQjRMVDRKVjRBZ3VTOVhMb3E3ZHc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.09
+   },
+   {
+    "hora": "14:11",
+    "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.09
    }
   ]
  },
@@ -1760,6 +1849,41 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Cramer: Take some profits in these 2 stocks if you have big gains and do this with the cash",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/16/cramer-take-some-profits-in-these-2-stocks-and-do-this-with-the-cash.html",
+   "publicado": "2026-11-16T13:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley rebaixa ações brasileiras e projeta queda de 7% do Ibovespa em 2027",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTXdfZ05qN2tsX1BQb1lxVWZYSGFjSTdoVWRfZEJGQkNXLU5mVV9LZVBxdTNnRTNyLXlhbEM5em9XN0ZJZ0VnOEdzZVFCeGtoWkpfT2U1TWdoUG1lT2dPWGQ4aG84dTZTd3ZZc1dyTWJtMDN1di1pYVo2ZmkzS2NjRFlETDd0clJmV3UzVmpOZUUtV1BkREdHYmU4LWxZTWZkTjZyMlo5d2pybEFFMU13V2Fib2x2LVBsY2pLTXg2NjBqN0XSAdcBQVVfeXFMUGswV0psbEMyc3pldVBkWmgwRWhKN1M2dWJJNk5BNEhhWWgwWDF1bHpNOENNanlERVdqLUxGQ200YV9IeEsxV2F1VFh4U19heGtUenkyZDBhUGo4R0E5enNXaU9JalJMcWlwYU9YbnlfcjZqRmZ1MUhhZzJFOGRUd1lUc1RvUDlKZUZneUlPbjZSazlDeWptN0pseHBEZzhfZ0duZGtXT0oxbi1icF9yOTR0MzNBSnVZODdGQmRpNUhOeXlvQjRMVDRKVjRBZ3VTOVhMb3E3ZHc?oc=5",
+   "publicado": "2026-11-16T14:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+   "publicado": "2026-11-16T14:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1794,7 +1918,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T14:08-03:00",
+ "atualizado_em": "2026-11-16T14:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1809,6 +1933,41 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+   "publicado": "2026-11-16T14:29-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley rebaixa ações brasileiras e projeta queda de 7% do Ibovespa em 2027",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTXdfZ05qN2tsX1BQb1lxVWZYSGFjSTdoVWRfZEJGQkNXLU5mVV9LZVBxdTNnRTNyLXlhbEM5em9XN0ZJZ0VnOEdzZVFCeGtoWkpfT2U1TWdoUG1lT2dPWGQ4aG84dTZTd3ZZc1dyTWJtMDN1di1pYVo2ZmkzS2NjRFlETDd0clJmV3UzVmpOZUUtV1BkREdHYmU4LWxZTWZkTjZyMlo5d2pybEFFMU13V2Fib2x2LVBsY2pLTXg2NjBqN0XSAdcBQVVfeXFMUGswV0psbEMyc3pldVBkWmgwRWhKN1M2dWJJNk5BNEhhWWgwWDF1bHpNOENNanlERVdqLUxGQ200YV9IeEsxV2F1VFh4U19heGtUenkyZDBhUGo4R0E5enNXaU9JalJMcWlwYU9YbnlfcjZqRmZ1MUhhZzJFOGRUd1lUc1RvUDlKZUZneUlPbjZSazlDeWptN0pseHBEZzhfZ0duZGtXT0oxbi1icF9yOTR0MzNBSnVZODdGQmRpNUhOeXlvQjRMVDRKVjRBZ3VTOVhMb3E3ZHc?oc=5",
+   "publicado": "2026-11-16T14:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Cramer: Take some profits in these 2 stocks if you have big gains and do this with the cash",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/16/cramer-take-some-profits-in-these-2-stocks-and-do-this-with-the-cash.html",
+   "publicado": "2026-11-16T13:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Por que o dólar ultrapassou os R$ 5,75 nesta segunda?",
    "fonte": "InfoMoney",
@@ -1827,18 +1986,6 @@
    "publicado": "2026-11-16T13:53-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-   "publicado": "2026-11-16T13:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -1872,31 +2019,6 @@
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
    "publicado": "2026-11-16T13:33-03:00",
    "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Transportadora ligada à Ambev terá de indenizar caminhoneiro por turno de até 19 horas",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/transportadora-ligada-a-ambev-tera-de-indenizar-caminhoneiro-por-turno-de-ate-19-horas.shtml",
-   "publicado": "2026-11-16T13:26-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ABEV3"
-   ]
-  },
-  {
-   "titulo": "U.S. crude oil declines to $87 a barrel on recovering Middle East exports",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-   "publicado": "2026-11-16T13:17-03:00",
-   "impacto": "medio",
    "ativos": [
     "WIN",
     "WDO"
