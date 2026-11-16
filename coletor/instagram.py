@@ -8,8 +8,10 @@ Fluxo
                  Pedidos com mais de 36 h expiram.
   3. renovar  — renova o token de longa duração (60 dias). Roda toda segunda pelo Relógio.
 
-Segredos (GitHub → Settings → Secrets → Actions): INSTAGRAM_TOKEN (token de usuário do Instagram com
-instagram_business_basic + instagram_business_content_publish). Opcional: INSTAGRAM_USER_ID (senão é lido de /me).
+Segredos (GitHub → Settings → Secrets → Actions): INSTAGRAM_TOKEN. Dois tipos aceitos:
+  - token da Página do Facebook ligada ao Instagram (começa com EAA; permissões instagram_basic, instagram_content_publish,
+    pages_show_list, pages_read_engagement, business_management). É o caminho atual: a Página Lectnex está ligada à @lectnex.oficial.
+  - token do Instagram API with Instagram Login (instagram_business_basic + instagram_business_content_publish). Opcional: INSTAGRAM_USER_ID (senão é lido de /me).
 Sem INSTAGRAM_TOKEN, 'propor' ainda manda a prévia (sem botão) e nada é publicado.
 
 Uso: python3 coletor/instagram.py propor <tipo> <legenda.txt> <img1.png> [img2.png ...]
@@ -31,7 +33,14 @@ BRT = dt.timezone(dt.timedelta(hours=-3))
 REPO = os.environ.get('GITHUB_REPOSITORY', 'Antenornonato7/lectnex')
 GH = f'https://api.github.com/repos/{REPO}'
 RAW = f'https://raw.githubusercontent.com/{REPO}/ao-vivo/'
-IG = 'https://graph.instagram.com/v25.0'
+IG_IG = 'https://graph.instagram.com/v25.0'   # token do "Instagram API with Instagram Login" (começa com IG)
+IG_FB = 'https://graph.facebook.com/v25.0'    # token da Página do Facebook ligada ao Instagram (começa com EAA)
+
+
+def pela_pagina():
+    """True quando o segredo é um token do Facebook (Página Lectnex ligada à @lectnex.oficial).
+    Esse caminho usa a mesma API de publicação, só que em graph.facebook.com."""
+    return os.environ.get('INSTAGRAM_TOKEN', '').strip().startswith('EAA')
 FILA = 'ig/fila.json'
 TIPOS = {'grafico': 'Gráfico do dia (notícia × preço)', 'carrossel': 'Carrossel da semana'}
 
@@ -96,7 +105,7 @@ def esc(s):
 def ig(metodo, caminho, **params):
     params['access_token'] = os.environ['INSTAGRAM_TOKEN'].strip()
     dados = urllib.parse.urlencode(params).encode()
-    url = f'{IG}/{caminho}' + ('' if metodo == 'POST' else '?' + dados.decode())
+    url = f'{IG_FB if pela_pagina() else IG_IG}/{caminho}' + ('' if metodo == 'POST' else '?' + dados.decode())
     req = urllib.request.Request(url, data=dados if metodo == 'POST' else None, method=metodo)
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
@@ -110,8 +119,28 @@ def ig(metodo, caminho, **params):
         raise RuntimeError(f'Instagram HTTP {e.code}: {corpo}') from None
 
 
+_UID = None
+
+
 def ig_user():
-    return os.environ.get('INSTAGRAM_USER_ID', '').strip() or str(ig('GET', 'me', fields='user_id')['user_id'])
+    global _UID
+    if _UID:
+        return _UID
+    _UID = os.environ.get('INSTAGRAM_USER_ID', '').strip()
+    if not _UID and pela_pagina():
+        eu = ig('GET', 'me', fields='instagram_business_account,name')       # token da Página
+        conta = (eu.get('instagram_business_account') or {}).get('id')
+        if not conta:                                                        # token de usuário: procura nas Páginas dele
+            for pg in ig('GET', 'me/accounts', fields='name,instagram_business_account').get('data', []):
+                conta = (pg.get('instagram_business_account') or {}).get('id')
+                if conta:
+                    break
+        if not conta:
+            raise RuntimeError('Nenhuma conta do Instagram ligada à Página encontrada com esse token')
+        _UID = str(conta)
+    elif not _UID:
+        _UID = str(ig('GET', 'me', fields='user_id')['user_id'])
+    return _UID
 
 
 def esperar(cid):
@@ -249,6 +278,17 @@ def renovar():
         print('Sem INSTAGRAM_TOKEN: nada a renovar.')
         return
     tok = os.environ['INSTAGRAM_TOKEN'].strip()
+    if pela_pagina():
+        # Token de Página gerado a partir de um token de usuário de longa duração não expira: nada a renovar.
+        try:
+            ig_user()
+            note('notice', 'Instagram pela Página do Facebook: token da Página válido (não expira).')
+        except Exception as e:
+            note('warning', f'Token da Página não funcionou: {e}')
+            if os.environ.get('TELEGRAM_BOT_TOKEN') and admin():
+                tg('sendMessage', chat_id=admin(), text='⚠️ O token da Página do Facebook (Instagram) parou de funcionar. Gere um novo e atualize o segredo '
+                   'INSTAGRAM_TOKEN no GitHub. Detalhe: ' + esc(str(e)[:120]), parse_mode='HTML')
+        return
     url = 'https://graph.instagram.com/refresh_access_token?' + urllib.parse.urlencode({'grant_type': 'ig_refresh_token', 'access_token': tok})
     try:
         with urllib.request.urlopen(url, timeout=30) as r:
@@ -269,7 +309,12 @@ def renovar():
 
 def teste():
     """Confere o token e a conta, sem publicar nada."""
-    u = ig('GET', 'me', fields='user_id,username,account_type')
+    if pela_pagina():
+        uid = ig_user()
+        u = ig('GET', uid, fields='username,name')
+        u.update(user_id=uid, account_type='ligada à Página do Facebook')
+    else:
+        u = ig('GET', 'me', fields='user_id,username,account_type')
     lim = ig('GET', f'{u["user_id"]}/content_publishing_limit', fields='quota_usage,config')
     print(f'Conta @{u.get("username")} ({u.get("account_type")}) · uso de publicação nas últimas 24 h: {lim}')
     note('notice', f'Instagram conectado: @{u.get("username")}')
