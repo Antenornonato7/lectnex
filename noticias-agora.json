@@ -2650,7 +2650,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T19:10-03:00",
+ "atualizado_em": "2026-11-16T19:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2658,7 +2658,11 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Folha"
+  "Exame",
+  "Folha",
+  "InfoMoney",
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
@@ -2686,10 +2690,69 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa cai 1,8% com desconfiança sobre ajuste fiscal de Lula; NY recua com temor sobre IA",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObUFNSXF0MDEtQmJ0RU44UFhHLWFhMVVYZFlHajJOTDdfVlF6ZUZqRjVuZWh4dEduUzBnWkN4b2t1Ny1qRDF0YnpHb1ppTHprRWhmU3BxQVYtSU1KcjA3Yk1VVXlYWU1lMFl1UURwQWZfczR5SnQ1UmxfVEhyTUxLc2xQLV9vbXQ5NHNoQkhuWFFIeWFvTFA1QlZhdVpqMGFZWkVpYURQUUZuT2hjNGoybjl3WURTNExUWE4yRjliT0Q?oc=5",
+   "publicado": "2026-11-16T18:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar salta e fecha em R$ 5,77 com temor fiscal; bolsa cai e juros sobem",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdlZHNEo0SkR0cjZ2VzZxTF8yRnNOWEUwaGxLRUdWaHk5UTEwcnpzVW12cVNFcFNhUXBqd1JzSTl5elBLWHVUcGNQa0REOUcyemswcG1wS0pjdlJsZ0U2MDV5R2NDR296a29aaUVndVVFUTVJRjhqZ2xxd3lmQzRBM1o0ZjRzOXdVWlV6T0NTVURlemZCTVdmcEFwUkR3VE94Tlg4MXdR?oc=5",
    "publicado": "2026-11-16T18:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Moedas Globais: força do dólar segue e DXY sobe a maior nível desde Dia da Libertação",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNRlhVc09xeGZyYWd4X0hRT21sWDU4WFJ5RHVxM2VqVnV5SE44V2Itemh2ck5SVXRhbU9zUDlRTlRuUGRodHdzbzZKaGVhaEdLQXZ1cURBd0VtZDJVT21hTmJhTTR3WHJrNVd6TnFPb1Z4QVBhS2d4T0tEUWw5dE54bGtPWjZPNFhxMWpWVTZEZkk2RVNmMjhiSTh5Tm1KYXZYRFJpSlFCU2dSWUI3Ql9qbHROcWN3UlJZQlBEaDAxMDTSAcYBQVVfeXFMUHBNYkNXU1pHdWt4ZHdhS2NQSVNYZUI2M05QaXBXU1ZGdmJ1Nm1FRkowVW9sQlJ6QU13QzlBX00yQkk3cW90TTI1TlZQaVhQTG8tME51ZjlEbzJTdFFsY0ZxX2ZDZWZTNld1WlFWaTNqNWY4amNQQld1YjZraDEzT1VPdFpzd2hUWlhGcGx2QWZRS3Zqc1hkVGhHMXNSLXVEemRQMW90QTAyVXVXNk5Cem5oVHhFS1VmWWI4SHRLWVNfOUg2SExn?oc=5",
+   "publicado": "2026-11-16T18:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa fecha no vermelho com incertezas fiscais e queda do petróleo",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRS1PNFR5UjdBc0RZX3lCaUpEU2V1dlBRbVY0clpPTmduU2h5RXU5S3NSUzZxWm04OXl0YS1LeG0zbVljV0pmWVEyWXVtSjN0ZmdPYjlGeXV1Z1NTWTFYR0lqVl9wRlpiaFlQWW9SOGVYUVlXU1VwOV9PeGhXV3F4RVZ0TFpMdWdOaS1WdWM5X2FLUkwzUE5FZ2wtTjRNejcwcnFRMFBvWHI?oc=5",
+   "publicado": "2026-11-16T18:29-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cede 1,8% com incerteza fiscal e rebaixamento de ações brasileiras",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNV0dxOWNUNFItR1pJQkgxa3NCSlRXakNCZDBnQzkxT2NIdDZoU1lFVi1xM3hkRTdlb3FWZks1Mzg1LTNMQWgxTm5pSl95UWlRdU1taWs4ZlFPOTZTRlgxb2YxZlU4VWJDLUFiNGFCQmVDd3g5UW81RXBLc3BoN3Vfd18xYTl1MXhFdU0zM2t6UlVIWDA5WjNkVTV3OXhaa1o0dk53VlhLc2hEYmd3bDRzOTM2NGhBdTNtVUphRmxGQmNQQ2VfWmhtTVNZWVNNT0pUamd6bNIB4wFBVV95cUxOQlNwdERlZXJrOXBKcFg1aWpQSXgwZEs4Mkx6LXVybi0yOGFvclcyQnhlS0pOVjBMaFJySGtxSC1INUNBZWdaQ0RVbG9BWXlhRVBEUHd2bTZrR1pVSUxUZVUyWUlVNklBMWdTWkJYQ3ZsVWZsZ0tVVzR1QW12TG1OLUx0Y3pJWnF5THdXcjNqeU9HN01mbkk5bEpSU1lyNjdfa3VyZkJ4Z1NQOXlieE9CWl9hR3RjeDVNSG8zSW03d3c1LXdDTmViRGczdzY2bERtQVVGMDBjanIzM0M4TzBrNHFxYw?oc=5",
+   "publicado": "2026-11-16T18:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar atinge o maior valor em 19 meses e ativos caem com dúvidas sobre ajuste fiscal",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcEx0MDhRbXcwV3Z2Q2RsUTNsNE5TaE8yd3ExN0NsS2VodmpXZ3VNdk0yUEs4c2RielNJVkZ6Q3pZaTd6Wmt2Uk1FcXJQSkxFc0RkYzdmQms2MmRSS3N3Zi1yM2dlMElmbWpVako0SU4yN0RPRFVfeHpfZG4xZWU2MVk2QUI0Vk5IV2hRcTRXbGFIX0hmOHFrNWEzV0laVGVkZVY3UFNRendVNnZaYjVuaEVhV0czUXJENE44Zl9HeUJrZ25XTVhv0gHbAUFVX3lxTE9WTy1oVUpUV09UMnhsRV9jbDFsc0lRVXdZWVY3ZklqUTg1eWdYOVQwaUVhSTdPS2c2VHpZUFRnc3FVTE0ybWpsTjktQmRiZ2g2OUZZVzR3ZTgzZHVBWHVIWEZ1TkZyU29Qd0xHN2xHUElnQlJpdUM5NVZhWG1KRERIWVhXUTZHSWpFRUo3WTlKd1I0MmNabXZGTTdSQnBlY1NZUUVFSjhYWk4td1NVYVh0eTAzc1drbzFoRzBQQ0trcnJ0X2VLU1dRYUZTMWNub2NfYkRFWWNMVmdOTQ?oc=5",
+   "publicado": "2026-11-16T18:20-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2710,10 +2773,21 @@
    "tickers": []
   },
   {
-   "titulo": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
-   "publicado": "2026-11-16T17:44-03:00",
+   "titulo": "Análise: Dólar perto de R$ 6 pressiona Lula por medidas urgentes",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVh2b1dudXZWZ2c0QTVVV3hLaEFXcHFpV0s4UnNqbDc2SW15YzZ4Wk1tdGlOYnpZeWFmaUw0cUZONWtqNTJOQ3U3V2lZaWtuOWR2OUNzYlBTSVhsT0VRTWEtSUx2cXEtYkhUVnNaQm9MSUJCNDRqaV8wOG9Lb0VaRGRiem51elMwN1RJX3haSmpOUTJKaDlrczMtSmwzU3pQYmxraXlUTmhKSjhsaUZKdndhZ2pJOFFmQWtnazFnV2N5RFJqTUFRcUdzTC1jYjZXV1FnaWZEVEI?oc=5",
+   "publicado": "2026-11-16T17:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley acende alerta para Bolsa brasileira e prevê Ibovespa a 160 mil pontos no fim de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNU1pxbnAxcThsa3VWMXZBdUFqcWNGYXh2Yk5WSnhQZXpocjd5OWR1aFJBenlDX1lGWkZ5Q1VGcW9NbTdKMmNZWmY1UXFsS0N6cU5iX1g5b0k0U2NsOWNJX3Nyd2xCV3FKQVUwNlZnTkJ1V2QwcDlCZjRKbXUxVHlfOVoya3VLU2F0dkZ4eFlTVzlEb1VjT3hxOXEzLTVhdF9BWjhRaklFSWxmQlNqYjVlRW9lLXJXOVpPc3dwekh5REZIdGlWSUIzM01seV9fUWhDMi1Ib2FhZHlvQkFXZ3RKQVAyMnlJUEZjZ2dqS1k3cnVuZlVFRV82VjlR?oc=5",
+   "publicado": "2026-11-16T17:40-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -2721,13 +2795,36 @@
    "tickers": []
   },
   {
-   "titulo": "Morgan Stanley acende alerta para Bolsa brasileira e prevê Ibovespa a 160 mil pontos no fim de 2027",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOZG03WElsM2NNRlpWdEtQUFNac05rRFFuY3RUSW9Wc1JEaGE2eEFJZl9sNWtQNzVTbV9hRmc2Rm53WXpBZ0NmY1JJdGNBYWdkR1QyMURVZ084b3hvZmhwZ004YnZ2NmltS3NWeWt2cldIZ1BZTHVhUmZXXzNDVDI4cFBUa0I4d3FORTcySG1VamttNXVZU1FfZjNYMTl1WUZYQ0ZLM1pQa1NYUk9fMUw0YnRnVzlHQUFHeVV2cUVhbnZxOUNGc3FEZ3hsRTZBNm1pV0RKZzExamRTQ0RBQS1GYlY0NVEzanVDYjZuTm5JRdIB9AFBVV95cUxNdTBjd2hVZWE1Nk9NQ0pJRlJCQ2U5cHluMmQtRDc3Y2VYLWRnS3hTTXpCejBFMnc4VEQwYXhHT0ZBOGZsT19BdlhRVzhNYWpsU2UxZFJMS2VtdkZWQ3NKTXJ0MjVZa0loa3lHWUt5SGhERFRJMXF2SUxEZ2VvU3NOWFJNQ21VbEVKemFYLXd4am5Lbkh5ZGtMWEVFSHhJbnA0WUVIZ0dhc0w2cklsa0NpVTRVOG5USXd0bF9sSGNad1RBSHpaam5ISE9rSWV0YXdoWElNdTRWdUx4dm1rSmxGbmZuTzJmblVPXzBDV0NUUHhMemtX?oc=5",
-   "publicado": "2026-11-16T17:35-03:00",
+   "titulo": "Dólar tem maior alta desde reeleição de Lula e vai a R$ 5,77, pico em 19 meses",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmZTaXdyZFFmWjhEcGx4RlpfY3J2ZGdLcG9UQUIwb0ZHamRRMUN1RW03MkpzUVdzTUVmcjNaVGktVFNDOEJTazc4UTgzSXc1eWxDdDNtY3FfZnIyWnprel9JakRuSWMwbW1Bb3cxZjhyclhYOC1NX1c4WGtMVXR1YzA5YVZLZllQRWRnOU8tM0xkV1RVOGFfbmd4RDFuVmtQVGptd1Brdmh5MjFHQUIw?oc=5",
+   "publicado": "2026-11-16T17:36-03:00",
    "impacto": "medio",
    "ativos": [
-    "WIN"
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar dispara 2,15% com desconfiança sobre política fiscal e termina no maior nível desde abril de 2025",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPTWJFakh5MV9nY1RiUDFmaTZRZ3lDaDBvajhrRHU1MWUwMXE0ZWFOZHlueVM1YUtXQVA0aXgxbTBVSE55TlVHbVQ4cFR1WFg3aVZmU3gybTRjNmgxa0VpRm1UUlUtZVZfRi00bzl1b3d1OER3MGhnMi14ZGFrZ1FJU3ZCdWdIbXFOTFVkMmVKQkVyNk8zakNhQzJIMEhCMUNoUWo5NWQtQ3kwTVozZ3NuWTBzaWZSbENuZ3RlNkRUMjc3RVFSUjVvT0Nqc093WTVOMHJ6UEFWcjltSFRrV2V2cVhjRk5QbTY0QS00amFwUXU1b3pNT1RtZDZBMjhvQXRNRnJFbnJ6R1fSAYgCQVVfeXFMT01iRWpIeTFfZ2NUYlAxZmk2UWd5Q2gwb2o4a0R1NTFlMDFxNGVhTmR5bnlTNWFLV0FQNGl4MW0wVUhOeU5VR21UOHBUdVhYN2lWZlN4Mm00YzZoMWtFaUZtVFJVLWVWX0YtNG85dW93dThEdzBoZzIteGRha2dRSVN2QnVnSG1xTkxVZDJlSkJFcjZPM2pDYUMySDBIQjFDaFFqOTVkLUN5ME1aM2dzblkwc2lmUmxDbmd0ZTZEVDI3N0VRUlI1b09DanNPd1k1TjByelBBVnI5bUhUa1dldnFYY0ZOUG02NEEtNGphcFF1NW96TU9UbWQ2QTI4b0F0TUZyRW5yekdX?oc=5",
+   "publicado": "2026-11-16T17:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
+   "publicado": "2026-11-16T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -2752,19 +2849,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ex- diretor de finanças do Itaú assume área de gestão de riscos da Avenue",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/ex-diretor-de-financas-do-itau-assume-area-de-gestao-de-riscos-da-avenue.shtml",
-   "publicado": "2026-11-16T16:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
   }
  ]
 }
