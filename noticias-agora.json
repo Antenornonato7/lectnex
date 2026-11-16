@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T17:15-03:00",
+  "atualizado_em": "2026-11-16T17:18-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -303,7 +303,7 @@
     ],
     [
      "17:00",
-     168728.0
+     168712.0
     ]
    ]
   },
@@ -708,7 +708,11 @@
     ],
     [
      "17:15",
-     5.7776
+     5.7771
+    ],
+    [
+     "17:18",
+     5.7756
     ]
    ]
   },
@@ -1457,7 +1461,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    },
    {
     "hora": "16:56",
@@ -1484,22 +1488,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:14",
+    "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Tempo real: Ibovespa começa semana de olho no IBC-Br e no Boletim Focus",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1qNkMzOTBhU2gwbTd5M0ltRXQ3NUthQzZwSldZaXhnNDl4cGtaU3VYY2FUYVBoUFdYUzVNVUNpQXdjTXFKalFISGxEWExzZnZCY0p3RGU2YmhrUVBYMDRjbkY0M1BxbEd4?oc=5",
-   "publicado": "2026-11-16T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Suzano consegue financiamento de R$ 98 milhões junto ao BNDES",
    "fonte": "Folha",
@@ -2437,6 +2442,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
+   "publicado": "2026-11-16T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2466,13 +2482,12 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T17:15-03:00",
+ "atualizado_em": "2026-11-16T17:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
@@ -2480,6 +2495,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
+   "publicado": "2026-11-16T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "O formato do ajuste fiscal importa",
    "fonte": "Folha",
@@ -2605,18 +2631,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje salta 2% e ultrapassa R$ 5,79 de olho em política fiscal e exterior",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzB6T2RBZmlEWW9KNzBla1NzRTJXZExKc3pzbGRjWXI2ai1pU0FOVXppOTIzMXA3bHRTZVN2WVZBZjR1NDJGVEs1TS1RZ2ZrWnp3Z3BTbWVmTE5CNm5GMzI3dkVjNl95OWtSeDJGYUdSc3d3dGN4Zy1mTnNaMWFQdmNrWV9ZamdpeHUtc3NNYUJUZDZOSVd4cTVVUk5zTEZ1dHhPbnp30gGrAUFVX3lxTE1sRFBjZ3RxbVkyanM0OTJBWWxEX3hydmp3b1RVczZ5RHpMUHRqbFFKVUJEQThYcVRVd2VzT0d4OU8zeXo5VnhUR3RQYUcyQlFLclRwVW9aNElHX0hhTDhfVnhSX2t1N2ctTS1KT0dCSXNVLURfT29BUWNia3dhZ2p3M1hubHp0NVd5aEpfTDc3Q1pqWTRmREhLTEY0NlpsTUU4eXNrNVBwbjFNcw?oc=5",
-   "publicado": "2026-11-16T15:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
