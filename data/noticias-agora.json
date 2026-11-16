@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T12:38-03:00",
+  "atualizado_em": "2026-11-16T13:08-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -79,11 +79,35 @@
     ],
     [
      "12:20",
-     169972.0
+     170075.0
     ],
     [
-     "12:23",
-     169985.0
+     "12:25",
+     170090.0
+    ],
+    [
+     "12:30",
+     169857.0
+    ],
+    [
+     "12:35",
+     169796.0
+    ],
+    [
+     "12:40",
+     169833.0
+    ],
+    [
+     "12:45",
+     169854.0
+    ],
+    [
+     "12:50",
+     169887.0
+    ],
+    [
+     "12:53",
+     169880.0
     ]
    ]
   },
@@ -264,11 +288,35 @@
     ],
     [
      "12:35",
-     5.7514
+     5.7557
     ],
     [
-     "12:38",
-     5.7517
+     "12:40",
+     5.756
+    ],
+    [
+     "12:45",
+     5.755
+    ],
+    [
+     "12:50",
+     5.7648
+    ],
+    [
+     "12:55",
+     5.7599
+    ],
+    [
+     "13:00",
+     5.7677
+    ],
+    [
+     "13:05",
+     5.7604
+    ],
+    [
+     "13:08",
+     5.7674
     ]
    ]
   },
@@ -603,7 +651,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.19,
+    "ibov30": -0.13,
     "dolar30": 0.06
    },
    {
@@ -618,7 +666,7 @@
     "tickers": [
      "MGLU3"
     ],
-    "ibov30": -0.08,
+    "ibov30": -0.02,
     "dolar30": 0.01
    },
    {
@@ -631,7 +679,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.02,
     "dolar30": 0.01
    },
    {
@@ -644,7 +692,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.04,
     "dolar30": -0.12
    },
    {
@@ -657,8 +705,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.05
+    "ibov30": -0.11,
+    "dolar30": 0.12
    },
    {
     "hora": "12:16",
@@ -670,8 +718,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.13,
+    "dolar30": 0.14
    },
    {
     "hora": "12:16",
@@ -683,8 +731,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.13,
+    "dolar30": 0.14
    },
    {
     "hora": "12:18",
@@ -698,8 +746,8 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.13,
+    "dolar30": 0.14
    },
    {
     "hora": "12:20",
@@ -709,6 +757,45 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": -0.13,
+    "dolar30": 0.23
+   },
+   {
+    "hora": "12:31",
+    "titulo": "Morgan Stanley rebaixa recomendação para Bolsa brasileira e prevê queda de 7%",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/morgan-stanley-rebaixa-recomendacao-para-bolsa-brasileira-e-preve-queda-de-7.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.26
+   },
+   {
+    "hora": "12:39",
+    "titulo": "Por que o dólar ultrapassou os R$ 5,76 nesta segunda?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrY2VwenAtQjc0dXJVM0tZd0JiVnVqZ0ZULWMzMVVtOURIZko2alNiUDBMcGhNSU9ac19GVldGVXRLQW12TV9iUkpiZHYxNzlMMnk3Zld1dnA0a3I2S0d3a1d3NjBqd1RTV2JoWTVjWXh1MFhoSnl2ZGc0c9IBgAFBVV95cUxQLWFTQW5FNkZZdFNaUS1KWndmYm5ablg2dVBpbnBNZDBzTnZDQm40dkt2VU5ySEJ6czVyMXdJYWtXaFc1Ym9senVBelhIMS12V0tsZ1l4QjN3ZzNISW9naE5nQmw2cEJEQm5qcEw4U0pHTXFvb0pGb19aal9aaFp3aA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.08
+   },
+   {
+    "hora": "13:00",
+    "titulo": "Dólar chega a R$ 6? Veja quais ações ganham com a disparada da moeda americana",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdW5FMDBLV3cwcEluYnE2ZnE4bXJZSU0wdnlMQU10cFF3NXJtYjRKRGVsdUZzTE15dXpXX1c2X1YteDM2dHFTSzBFeVRmbU5iSEZ3RDhLVng0QWczeTRPMnlmLVZuTEhjZVMwbnJCa1pqWDBYWXhRX2xZX3FFRWZEM3kzaDFiSjFaTl9qcUhJV01reDdfWENndmtsUk03NHJ4UVVtM0M2UV9kS3VidnV0Wg?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1420,6 +1507,39 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley rebaixa recomendação para Bolsa brasileira e prevê queda de 7%",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/morgan-stanley-rebaixa-recomendacao-para-bolsa-brasileira-e-preve-queda-de-7.shtml",
+   "publicado": "2026-11-16T12:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Por que o dólar ultrapassou os R$ 5,76 nesta segunda?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrY2VwenAtQjc0dXJVM0tZd0JiVnVqZ0ZULWMzMVVtOURIZko2alNiUDBMcGhNSU9ac19GVldGVXRLQW12TV9iUkpiZHYxNzlMMnk3Zld1dnA0a3I2S0d3a1d3NjBqd1RTV2JoWTVjWXh1MFhoSnl2ZGc0c9IBgAFBVV95cUxQLWFTQW5FNkZZdFNaUS1KWndmYm5ablg2dVBpbnBNZDBzTnZDQm40dkt2VU5ySEJ6czVyMXdJYWtXaFc1Ym9senVBelhIMS12V0tsZ1l4QjN3ZzNISW9naE5nQmw2cEJEQm5qcEw4U0pHTXFvb0pGb19aal9aaFp3aA?oc=5",
+   "publicado": "2026-11-16T12:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar chega a R$ 6? Veja quais ações ganham com a disparada da moeda americana",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdW5FMDBLV3cwcEluYnE2ZnE4bXJZSU0wdnlMQU10cFF3NXJtYjRKRGVsdUZzTE15dXpXX1c2X1YteDM2dHFTSzBFeVRmbU5iSEZ3RDhLVng0QWczeTRPMnlmLVZuTEhjZVMwbnJCa1pqWDBYWXhRX2xZX3FFRWZEM3kzaDFiSjFaTl9qcUhJV01reDdfWENndmtsUk03NHJ4UVVtM0M2UV9kS3VidnV0Wg?oc=5",
+   "publicado": "2026-11-16T13:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1454,7 +1574,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T12:38-03:00",
+ "atualizado_em": "2026-11-16T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1470,6 +1590,64 @@
  ],
  "noticias": [
   {
+   "titulo": "U.S. crude oil declines to $87 a barrel on recovering Middle East exports",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
+   "publicado": "2026-11-16T13:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar chega a R$ 6? Veja quais ações ganham com a disparada da moeda americana",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdW5FMDBLV3cwcEluYnE2ZnE4bXJZSU0wdnlMQU10cFF3NXJtYjRKRGVsdUZzTE15dXpXX1c2X1YteDM2dHFTSzBFeVRmbU5iSEZ3RDhLVng0QWczeTRPMnlmLVZuTEhjZVMwbnJCa1pqWDBYWXhRX2xZX3FFRWZEM3kzaDFiSjFaTl9qcUhJV01reDdfWENndmtsUk03NHJ4UVVtM0M2UV9kS3VidnV0Wg?oc=5",
+   "publicado": "2026-11-16T13:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar hoje salta 1,8% e ultrapassa R$ 5,76 de olho em política fiscal e exterior",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzB6T2RBZmlEWW9KNzBla1NzRTJXZExKc3pzbGRjWXI2ai1pU0FOVXppOTIzMXA3bHRTZVN2WVZBZjR1NDJGVEs1TS1RZ2ZrWnp3Z3BTbWVmTE5CNm5GMzI3dkVjNl95OWtSeDJGYUdSc3d3dGN4Zy1mTnNaMWFQdmNrWV9ZamdpeHUtc3NNYUJUZDZOSVd4cTVVUk5zTEZ1dHhPbnp30gGrAUFVX3lxTE1sRFBjZ3RxbVkyanM0OTJBWWxEX3hydmp3b1RVczZ5RHpMUHRqbFFKVUJEQThYcVRVd2VzT0d4OU8zeXo5VnhUR3RQYUcyQlFLclRwVW9aNElHX0hhTDhfVnhSX2t1N2ctTS1KT0dCSXNVLURfT29BUWNia3dhZ2p3M1hubHp0NVd5aEpfTDc3Q1pqWTRmREhLTEY0NlpsTUU4eXNrNVBwbjFNcw?oc=5",
+   "publicado": "2026-11-16T12:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar supera R$ 5,75 e bate maior valor desde abril de 2025; Ibovespa cai mais de 1%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
+   "publicado": "2026-11-16T12:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Por que o dólar ultrapassou os R$ 5,76 nesta segunda?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrY2VwenAtQjc0dXJVM0tZd0JiVnVqZ0ZULWMzMVVtOURIZko2alNiUDBMcGhNSU9ac19GVldGVXRLQW12TV9iUkpiZHYxNzlMMnk3Zld1dnA0a3I2S0d3a1d3NjBqd1RTV2JoWTVjWXh1MFhoSnl2ZGc0c9IBgAFBVV95cUxQLWFTQW5FNkZZdFNaUS1KWndmYm5ablg2dVBpbnBNZDBzTnZDQm40dkt2VU5ySEJ6czVyMXdJYWtXaFc1Ym9senVBelhIMS12V0tsZ1l4QjN3ZzNISW9naE5nQmw2cEJEQm5qcEw4U0pHTXFvb0pGb19aal9aaFp3aA?oc=5",
+   "publicado": "2026-11-16T12:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
@@ -1478,6 +1656,17 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley rebaixa recomendação para Bolsa brasileira e prevê queda de 7%",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/morgan-stanley-rebaixa-recomendacao-para-bolsa-brasileira-e-preve-queda-de-7.shtml",
+   "publicado": "2026-11-16T12:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -1563,18 +1752,6 @@
    ]
   },
   {
-   "titulo": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-   "publicado": "2026-11-16T11:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Morgan Stanley rebaixa Brasil e vê Ibovespa em 160 mil pontos no fim de 2027",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSkxRdTJsVGloTFJrXzZpbHVIYzRybk51eXEyWU51ZWNGWlY0Wl9vVVh0bklQdjRMVHB2TENKR09rUFpFVk9kOXNrbmQzVHFraHFOZUFLN0M5R1ZyalNFUVZOU2dNRUl2MGNqd0hjbktEbHlIUlJoOC1mcEVXQkh2TkxkVFJhSVM0MVA4LUdtYXE4QVdYaHdmaWRGSWdfTFotd1Z6SlI4LUZHZkF5RW9HQQ?oc=5",
@@ -1582,18 +1759,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa hoje cai com rebaixamento do Brasil pelo Morgan Stanley e dólar supera R$ 5,75",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
-   "publicado": "2026-11-16T11:37-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -1606,55 +1771,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa cai com prévia do PIB e Boletim Focus; 5 coisas para saber antes de investir hoje (16)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeXdwRE8xbWdZbGZPUkpCZGowVXJ4Y3JKTEJXVmJJX2xlZEV6TDJqeEdRU243aGpxeEc1SzRYcXdwUXZGbWJLUzN5dF9pblhTM3lMR0VOazl3dWxDcU44ZnhiWUZqTmVOSF9ya290djl4UDhhYThmQzBYVjJqaGlYVHpQMGNKc0lmNnM0elVkSjZOWFBiOE4wVVpWbHNZdENJam16bEdFczliaHhRM2dDV0RvcVZ6cmNuV3pWVFo1Z09xRk85NHhR?oc=5",
-   "publicado": "2026-11-16T10:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa recua pressionado por Vale e alta dos juros futuros, de olho em política fiscal",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZVhNbWRvdmxESVRVVTlzY1d3WXhCa2pXMlRBSDAtdUhBcFktZEY3VGJKMnhMUzFPdk1oR3U1WXI2T3JxNElTSEY1MW0tTkp4LW92T2JpWTJ0Wm04enVfRG5mOHZTZW4yX2FLYjNWMVViM3BMT0pDdHpzNWNMOXB1Yks2TjQ5TG11Wmw5UmNYamEwRXF3bXlGRUoxUFNxcmJTaElJb29SdGZXeUhqZ211X3lQUXB0amZOdUo5emlUS0paRmszb3phajRtaHhnRk5BUVFJcUJEUWR4bzBRTEHSAewBQVVfeXFMT293VWxaVGFwWG1uRVJHSkZORVFYLUxkbnIwR2FTNWFFRzJsSEMwdkpyeVZOWmp3UnpOdl9IRGFpamxWOVIyOTBHYVFZeWtPN2RFb0ZtR3RFcjdKOXd4VjlpZXNXMWVtOHBWR0syZXVNbkhGSXVBbHJ4TkNjeFdQU1l6bWpoVlhubDYyakF5TVpINVhHUy14ZFc4YUNGeWd1SUU1VGpDdm50UkF4UjNBTmxlWTdKZ2VtUmJOQ1N6Q1EwTGhGNGRET1l5b01kcENhM0FFSTc5b2pPbTJrNnh2WmNoUWZDaVVMT1c1SWg?oc=5",
-   "publicado": "2026-11-16T10:39-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
-  },
-  {
-   "titulo": "Governo quer preservar texto do projeto de ajuste fiscal, mas está aberto ao diálogo, diz Moretti",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/governo-preservar-texto-projeto-ajuste-fiscal-aberto-dialogo-moretti/",
-   "publicado": "2026-11-16T10:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar atinge R$ 5,75 e Bolsa recua com política fiscal do governo Lula no radar",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-politica-fiscal-do-governo-lula-no-radar.shtml",
-   "publicado": "2026-11-16T09:53-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
