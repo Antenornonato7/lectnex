@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T17:08-03:00",
+  "atualizado_em": "2026-11-16T17:38-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -295,7 +295,15 @@
     ],
     [
      "16:50",
-     168873.0
+     168913.0
+    ],
+    [
+     "16:55",
+     168792.0
+    ],
+    [
+     "17:00",
+     169135.0
     ]
    ]
   },
@@ -692,11 +700,35 @@
     ],
     [
      "17:05",
-     5.7782
+     5.7778
     ],
     [
-     "17:08",
-     5.776
+     "17:10",
+     5.7786
+    ],
+    [
+     "17:15",
+     5.7741
+    ],
+    [
+     "17:20",
+     5.778
+    ],
+    [
+     "17:25",
+     5.7776
+    ],
+    [
+     "17:30",
+     5.7818
+    ],
+    [
+     "17:35",
+     5.782
+    ],
+    [
+     "17:38",
+     5.782
     ]
    ]
   },
@@ -1429,7 +1461,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.09,
+    "ibov30": -0.07,
     "dolar30": -0.05
    },
    {
@@ -1445,7 +1477,20 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.09
+   },
+   {
+    "hora": "16:56",
+    "titulo": "Esteves: Sinalização de ajuste fiscal evitaria dias como o de hoje, de ansiedade e boataria",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/esteves-sinalizacao-de-ajuste-fiscal-evitaria-dias-como-o-de-hoje-de-ansiedade-e-boataria/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.03
    },
    {
     "hora": "17:00",
@@ -1458,59 +1503,51 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": 0.0
+   },
+   {
+    "hora": "17:14",
+    "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:18",
+    "titulo": "Dólar dispara 2,15% com desconfiança sobre política fiscal e termina no maior nível desde abril de 2025",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTzdVNkFkSkN6NUFkbnNxU1J4M0dYNkplaXE2VW50WTNlaHR6cGJGTjgzbWs3V2d2Rnhpb1QtZk5MNE5KaU5pRlRMamcxOTVsaEs3dTd5aVZBYTVITWlZU3pINDdvbGJ4Mm5uazlNY2JjZDB0V3FwcU1wR0ZBbS0wSjlKNjBCZW9xbkM3eVo4eFI0SzBkcWRncV80cjRZU0REU3MzYTZsZ3FkNUt6aWNuZ2Nfc2x2SFF0T19SUzRNYmNpTlVRSTFyYXQ2cFF5NEdITVNhelhZMWZZTmkyTFNtN1BUc0I3VnpCWUJpRkhSTGpON3lKMnlYWGd30gGIAkFVX3lxTE9NYkVqSHkxX2djVGJQMWZpNlFneUNoMG9qOGtEdTUxZTAxcTRlYU5keW55UzVhS1dBUDRpeDFtMFVITnlOVUdtVDhwVHVYWDdpVmZTeDJtNGM2aDFrRWlGbVRSVS1lVl9GLTRvOXVvd3U4RHcwaGcyLXhkYWtnUUlTdkJ1Z0htcU5MVWQyZUpCRXI2TzNqQ2FDMkgwSEIxQ2hRajk1ZC1DeTBNWjNnc25ZMHNpZlJsQ25ndGU2RFQyNzdFUVJSNW9PQ2pzT3dZNU4wcnpQQVZyOW1IVGtXZXZxWGNGTlBtNjRBLTRqYXBRdTVvek1PVG1kNkEyOG9BdE1GckVucnpHVw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:35",
+    "titulo": "Dólar tem maior alta desde reeleição de Lula e vai a R$ 5,77, pico em 19 meses",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmZTaXdyZFFmWjhEcGx4RlpfY3J2ZGdLcG9UQUIwb0ZHamRRMUN1RW03MkpzUVdzTUVmcjNaVGktVFNDOEJTazc4UTgzSXc1eWxDdDNtY3FfZnIyWnprel9JakRuSWMwbW1Bb3cxZjhyclhYOC1NX1c4WGtMVXR1YzA5YVZLZllQRWRnOU8tM0xkV1RVOGFfbmd4RDFuVmtQVGptd1Brdmh5MjFHQUIw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Nubank recebe aval do BC para comprar Banco Porto Real e, assim, obter licença bancária no Brasil",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOQmctLUhjMnNqN002Yk0yTU8wQzZjazdRUk51Ylk2a2VWckxSWE1XenFpVVBzS1cyalNlX1htdjdvOEF3cTBwVmFHX3NDZDJodGhjcTMtNUg0V3B1bkZiVmxFQjZBUGx2Wm5aMlZEMmRkVGVYQWlMMzY3SnE5WnBKRlZPam1yaTBEOC1lSm9LRXFoOUthd2NHNVktVmJVY0ctU1RXQWwzZXRBTWEyUGtJRHBDR2Q2RjNfRkk0bXpSVG9HQmNoV1RZMGlWc01JTk5LcDNyU1ZBRWEwR3laM3BRczRXUQ?oc=5",
-   "publicado": "2026-11-16T04:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa começa semana de olho no IBC-Br e no Boletim Focus",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1qNkMzOTBhU2gwbTd5M0ltRXQ3NUthQzZwSldZaXhnNDl4cGtaU3VYY2FUYVBoUFdYUzVNVUNpQXdjTXFKalFISGxEWExzZnZCY0p3RGU2YmhrUVBYMDRjbkY0M1BxbEd4?oc=5",
-   "publicado": "2026-11-16T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Suzano consegue financiamento de R$ 98 milhões junto ao BNDES",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/suzano-consegue-financiamento-de-r-98-milhoes-junto-ao-bndes.shtml",
-   "publicado": "2026-11-16T06:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "SUZB3"
-   ]
-  },
-  {
-   "titulo": "Prévia do PIB, Boletim Focus, falas do Fed e mais destaques desta segunda-feira",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVDlvNkZRVE5pV1FVWWVQODB3NFJYcnFneUViNnJlVTByWW0tUnV1WlJVaFljcGlJNW1VbHBZYm85VGpabzNockVOc1pNLXRPeVkyMGdUYkpuNGMwMU1vcWc0c19XYUVMQmcxWng3cVN1SDFCX1NMc2x1dFpjSXd5ekVYckppQndTUXl2YTZpU2lXVXR0enR3cEM0Z9IBoAFBVV95cUxOcC1HOUJPQk9RM1MyRWJjTGh4eW9sVDg5TjdYRGNnUi1FTkFoRm5CYnphVnh6SnFoX0ZxcHdrOVlrZk4wNnBVMERCaW4zc2JJb0s3Mk9fNGpUd3NzWVpnTVB6WW9xU0Z3OHRoNjhTbUFhNmJHNlhnb1F6U2JXTEp3V3JNbDZwQnBybmtmSzBKQkk5ck56RXFQVmZ5ODFyMU1H?oc=5",
-   "publicado": "2026-11-16T06:05-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Prévia do PIB, Boletim Focus, falas do Fed e mais destaques desta segunda-feira",
    "fonte": "InfoMoney",
@@ -2403,6 +2440,17 @@
    ]
   },
   {
+   "titulo": "Esteves: Sinalização de ajuste fiscal evitaria dias como o de hoje, de ansiedade e boataria",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/esteves-sinalizacao-de-ajuste-fiscal-evitaria-dias-como-o-de-hoje-de-ansiedade-e-boataria/",
+   "publicado": "2026-11-16T16:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "O formato do ajuste fiscal importa",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/cecilia-machado/2026/11/o-formato-do-ajuste-fiscal-importa.shtml",
@@ -2410,6 +2458,40 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
+   "publicado": "2026-11-16T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar dispara 2,15% com desconfiança sobre política fiscal e termina no maior nível desde abril de 2025",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTzdVNkFkSkN6NUFkbnNxU1J4M0dYNkplaXE2VW50WTNlaHR6cGJGTjgzbWs3V2d2Rnhpb1QtZk5MNE5KaU5pRlRMamcxOTVsaEs3dTd5aVZBYTVITWlZU3pINDdvbGJ4Mm5uazlNY2JjZDB0V3FwcU1wR0ZBbS0wSjlKNjBCZW9xbkM3eVo4eFI0SzBkcWRncV80cjRZU0REU3MzYTZsZ3FkNUt6aWNuZ2Nfc2x2SFF0T19SUzRNYmNpTlVRSTFyYXQ2cFF5NEdITVNhelhZMWZZTmkyTFNtN1BUc0I3VnpCWUJpRkhSTGpON3lKMnlYWGd30gGIAkFVX3lxTE9NYkVqSHkxX2djVGJQMWZpNlFneUNoMG9qOGtEdTUxZTAxcTRlYU5keW55UzVhS1dBUDRpeDFtMFVITnlOVUdtVDhwVHVYWDdpVmZTeDJtNGM2aDFrRWlGbVRSVS1lVl9GLTRvOXVvd3U4RHcwaGcyLXhkYWtnUUlTdkJ1Z0htcU5MVWQyZUpCRXI2TzNqQ2FDMkgwSEIxQ2hRajk1ZC1DeTBNWjNnc25ZMHNpZlJsQ25ndGU2RFQyNzdFUVJSNW9PQ2pzT3dZNU4wcnpQQVZyOW1IVGtXZXZxWGNGTlBtNjRBLTRqYXBRdTVvek1PVG1kNkEyOG9BdE1GckVucnpHVw?oc=5",
+   "publicado": "2026-11-16T17:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar tem maior alta desde reeleição de Lula e vai a R$ 5,77, pico em 19 meses",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmZTaXdyZFFmWjhEcGx4RlpfY3J2ZGdLcG9UQUIwb0ZHamRRMUN1RW03MkpzUVdzTUVmcjNaVGktVFNDOEJTazc4UTgzSXc1eWxDdDNtY3FfZnIyWnprel9JakRuSWMwbW1Bb3cxZjhyclhYOC1NX1c4WGtMVXR1YzA5YVZLZllQRWRnOU8tM0xkV1RVOGFfbmd4RDFuVmtQVGptd1Brdmh5MjFHQUIw?oc=5",
+   "publicado": "2026-11-16T17:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   }
@@ -2441,14 +2523,14 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T17:08-03:00",
+ "atualizado_em": "2026-11-16T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -2456,10 +2538,67 @@
  ],
  "noticias": [
   {
+   "titulo": "Dólar tem maior alta desde reeleição de Lula e vai a R$ 5,77, pico em 19 meses",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmZTaXdyZFFmWjhEcGx4RlpfY3J2ZGdLcG9UQUIwb0ZHamRRMUN1RW03MkpzUVdzTUVmcjNaVGktVFNDOEJTazc4UTgzSXc1eWxDdDNtY3FfZnIyWnprel9JakRuSWMwbW1Bb3cxZjhyclhYOC1NX1c4WGtMVXR1YzA5YVZLZllQRWRnOU8tM0xkV1RVOGFfbmd4RDFuVmtQVGptd1Brdmh5MjFHQUIw?oc=5",
+   "publicado": "2026-11-16T17:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar dispara 2,15% com desconfiança sobre política fiscal e termina no maior nível desde abril de 2025",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTzdVNkFkSkN6NUFkbnNxU1J4M0dYNkplaXE2VW50WTNlaHR6cGJGTjgzbWs3V2d2Rnhpb1QtZk5MNE5KaU5pRlRMamcxOTVsaEs3dTd5aVZBYTVITWlZU3pINDdvbGJ4Mm5uazlNY2JjZDB0V3FwcU1wR0ZBbS0wSjlKNjBCZW9xbkM3eVo4eFI0SzBkcWRncV80cjRZU0REU3MzYTZsZ3FkNUt6aWNuZ2Nfc2x2SFF0T19SUzRNYmNpTlVRSTFyYXQ2cFF5NEdITVNhelhZMWZZTmkyTFNtN1BUc0I3VnpCWUJpRkhSTGpON3lKMnlYWGd30gGIAkFVX3lxTE9NYkVqSHkxX2djVGJQMWZpNlFneUNoMG9qOGtEdTUxZTAxcTRlYU5keW55UzVhS1dBUDRpeDFtMFVITnlOVUdtVDhwVHVYWDdpVmZTeDJtNGM2aDFrRWlGbVRSVS1lVl9GLTRvOXVvd3U4RHcwaGcyLXhkYWtnUUlTdkJ1Z0htcU5MVWQyZUpCRXI2TzNqQ2FDMkgwSEIxQ2hRajk1ZC1DeTBNWjNnc25ZMHNpZlJsQ25ndGU2RFQyNzdFUVJSNW9PQ2pzT3dZNU4wcnpQQVZyOW1IVGtXZXZxWGNGTlBtNjRBLTRqYXBRdTVvek1PVG1kNkEyOG9BdE1GckVucnpHVw?oc=5",
+   "publicado": "2026-11-16T17:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
+   "publicado": "2026-11-16T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar supera R$ 5,77 e bate maior valor desde abril de 2025; Ibovespa cai mais de 2%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
+   "publicado": "2026-11-16T17:06-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "O formato do ajuste fiscal importa",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/cecilia-machado/2026/11/o-formato-do-ajuste-fiscal-importa.shtml",
    "publicado": "2026-11-16T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Esteves: Sinalização de ajuste fiscal evitaria dias como o de hoje, de ansiedade e boataria",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/esteves-sinalizacao-de-ajuste-fiscal-evitaria-dias-como-o-de-hoje-de-ansiedade-e-boataria/",
+   "publicado": "2026-11-16T16:56-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
@@ -2478,18 +2617,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "Dólar supera R$ 5,77 e bate maior valor desde abril de 2025; Ibovespa cai mais de 2%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
-   "publicado": "2026-11-16T16:46-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Nem o ouro escapa: dólar forte e temor de juros mais altos derrubam o metal a mínima de um ano",
@@ -2551,17 +2678,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar à vista ganha fôlego e ultrapassa os R$ 5,78 com pacote do governo; 'má qualidade', diz economista",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdk5TRV83TnVJTzVTcWJpNm41SmpfNUNvVndXWk1TVHo3T1dFcHZ0M0lVYnJYRGJld3MwRlM2UVU2Q29uc1oxZkJha2Z0VzdiN2E1XzFId0FKZDhXa3pCTi13dHpfenZwOGRIbDNuU1VLTUlLbFp5amwta2ltLUdaNFZtTXBJM283OWNCRw?oc=5",
-   "publicado": "2026-11-16T15:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa cai cerca de 2% e fica abaixo dos 170 mil pontos: o que explica forte queda?",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNURULUlrMVE5NFRab3llNzJJYkcxTkRWN2xLUlgzZDZndUp0OTZwd0Fmdmw1Y0lVRHBxbDBpZC1TeWpQMV8zVzFnSEVXdk5UMUZBczhnT21UOUZpNEdNZ3J6WVg1ekp1S1Q1YUJueWh2WVB6eGpJek1kVWVGcEVsdjFuSWtHSVZhTjY5ZmNtTEZha1ZOTURzOF9XYTl1ZlFRbktKQzVaTGhOWXBfa0Z5czZOVGxxb1nSAbwBQVVfeXFMTU5FTXpaS0drcjZKLWJfcTJMTlNFaHg1UUUwMXZaU0JYM2ExNU9oOGJPNlFraXdIbF9uV3ZxVldfTHM4VWJjRnBLWVoxaF9TT1ZKeDEtd09xQk44UmczN1RjU0Z0YkZFQ09wU3RwUDlGbXViY19mdTFjSGVDVG5URnNmTTRZMHl4b0hhWTlRZFFQUEZvTXZjZTJnMVk0ZzRLOGVySE1BUm5rcnNsdmV5bGhBaEdKS1piMjBQOXg?oc=5",
@@ -2569,18 +2685,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje salta 2% e ultrapassa R$ 5,79 de olho em política fiscal e exterior",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzB6T2RBZmlEWW9KNzBla1NzRTJXZExKc3pzbGRjWXI2ai1pU0FOVXppOTIzMXA3bHRTZVN2WVZBZjR1NDJGVEs1TS1RZ2ZrWnp3Z3BTbWVmTE5CNm5GMzI3dkVjNl95OWtSeDJGYUdSc3d3dGN4Zy1mTnNaMWFQdmNrWV9ZamdpeHUtc3NNYUJUZDZOSVd4cTVVUk5zTEZ1dHhPbnp30gGrAUFVX3lxTE1sRFBjZ3RxbVkyanM0OTJBWWxEX3hydmp3b1RVczZ5RHpMUHRqbFFKVUJEQThYcVRVd2VzT0d4OU8zeXo5VnhUR3RQYUcyQlFLclRwVW9aNElHX0hhTDhfVnhSX2t1N2ctTS1KT0dCSXNVLURfT29BUWNia3dhZ2p3M1hubHp0NVd5aEpfTDc3Q1pqWTRmREhLTEY0NlpsTUU4eXNrNVBwbjFNcw?oc=5",
-   "publicado": "2026-11-16T15:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -2602,18 +2706,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
    "publicado": "2026-11-16T14:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-   "publicado": "2026-11-16T14:22-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
