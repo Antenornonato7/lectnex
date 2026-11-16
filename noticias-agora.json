@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T17:20-03:00",
+  "atualizado_em": "2026-11-16T17:23-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -303,7 +303,7 @@
     ],
     [
      "17:00",
-     168765.0
+     168991.0
     ]
    ]
   },
@@ -712,7 +712,11 @@
     ],
     [
      "17:20",
-     5.775
+     5.7786
+    ],
+    [
+     "17:23",
+     5.7785
     ]
    ]
   },
@@ -1461,7 +1465,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": 0.03
+    "dolar30": 0.1
    },
    {
     "hora": "16:56",
@@ -1474,7 +1478,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.04
    },
    {
     "hora": "17:00",
@@ -2482,7 +2486,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T17:20-03:00",
+ "atualizado_em": "2026-11-16T17:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2653,18 +2657,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
    "publicado": "2026-11-16T14:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-   "publicado": "2026-11-16T14:22-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
