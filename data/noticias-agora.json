@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T14:38-03:00",
+  "atualizado_em": "2026-11-16T15:08-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -175,11 +175,35 @@
     ],
     [
      "14:20",
-     169357.0
+     169401.0
     ],
     [
-     "14:23",
-     169423.0
+     "14:25",
+     169337.0
+    ],
+    [
+     "14:30",
+     169363.0
+    ],
+    [
+     "14:35",
+     169259.0
+    ],
+    [
+     "14:40",
+     169282.0
+    ],
+    [
+     "14:45",
+     169211.0
+    ],
+    [
+     "14:50",
+     169151.0
+    ],
+    [
+     "14:53",
+     169109.0
     ]
    ]
   },
@@ -456,11 +480,35 @@
     ],
     [
      "14:35",
-     5.7767
+     5.7756
     ],
     [
-     "14:38",
-     5.775
+     "14:40",
+     5.7753
+    ],
+    [
+     "14:45",
+     5.78
+    ],
+    [
+     "14:50",
+     5.7775
+    ],
+    [
+     "14:55",
+     5.7831
+    ],
+    [
+     "15:00",
+     5.7866
+    ],
+    [
+     "15:05",
+     5.784
+    ],
+    [
+     "15:08",
+     5.7856
     ]
    ]
   },
@@ -1000,6 +1048,19 @@
     "dolar30": 0.03
    },
    {
+    "hora": "13:38",
+    "titulo": "Morgan Stanley rebaixa recomendação para Bolsa brasileira",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTnQ3b0ZMaFFNLWI5OHljbDlFbElUTXhkcHl4ckNycmFuT3Yyem40SGsxRkpsQWYyU3RsUFFxOEZCb252S0xNdl9CWWNEcFJQUHZMWE9Ha2d0bUFTLUZtaVJEOE00UGdyVzlCeC0zc1M2Y0FOb2Z2ei15UWdyZHJXZVdDZG9XTVI5dG16LVFWT2UxdVBDTzhhbXJfTVRFLWl5ak9tOV9qZ3BfYTZ2SWdR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": -0.12,
+    "dolar30": 0.18
+   },
+   {
     "hora": "13:44",
     "titulo": "Ajuste fiscal ‘pela metade’ é o principal risco para 2027, diz Zeina Latif",
     "fonte": "Estadão",
@@ -1022,7 +1083,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.07,
     "dolar30": 0.14
    },
    {
@@ -1035,7 +1096,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.05,
     "dolar30": 0.09
    },
    {
@@ -1050,8 +1111,55 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": -0.01,
+    "dolar30": -0.08
+   },
+   {
+    "hora": "14:55",
+    "titulo": "Justiça pede informações sobre negócio entre Genial e BTG",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/justica-pede-informacoes-sobre-negocio-entre-genial-e-btg.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BPAC11"
+    ],
     "ibov30": null,
-    "dolar30": -0.09
+    "dolar30": null
+   },
+   {
+    "hora": "14:56",
+    "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHo0XzhYWm5NalljNDgyajhhMnVFdUM1ODd4bFpYV2ZEQi01czRhT214U2dnQThwUElFUERZLUFqbk1aenhFcEVCdHNLcUM3cmU1RW1rUDZqbWZPTG9BZE9Ob0ZVSFhoTEFBSzYyZWIzazg3dzlaUkxScDJERjRpaXRyYVJ5aU5HbmR5S1ZhZ3FrYVBtNHE2a1FKWVBwbFhBcHJWdU13aElFX0hDcXhqV1dSOTY1dXIzLVJYMGw1LXZBeURLNlJ3Xzdtc281ZVE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBAS3",
+     "PETR4",
+     "VALE3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:58",
+    "titulo": "Líderes do Vale do Silício apoiam retorno de Jensen Huang à Nvidia",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdTlCVzFqcHA5eExUcEltMFVBRC1YV0VzYWtOSnUtU3lBUlo5eUJseHZZRzRqazctbkp4aDNkZ0ZDVGRIazdpNWxaNmJwYXhpaEZxblZFT2djVHFhLWl3SHJadDJueExFcmdBbTVCcWI2dTFPRUc5VXczajJFTUl4UTdUcFVfTGQ0MlZlbnppZk5feVZpcHB6WGhHcjMtejM4cDhCQmJpSFQtYjZyQXdiaTdMcVRwY2F6UlI5WWhaRQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "VALE3"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1840,6 +1948,17 @@
    ]
   },
   {
+   "titulo": "Morgan Stanley rebaixa recomendação para Bolsa brasileira",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTnQ3b0ZMaFFNLWI5OHljbDlFbElUTXhkcHl4ckNycmFuT3Yyem40SGsxRkpsQWYyU3RsUFFxOEZCb252S0xNdl9CWWNEcFJQUHZMWE9Ha2d0bUFTLUZtaVJEOE00UGdyVzlCeC0zc1M2Y0FOb2Z2ei15UWdyZHJXZVdDZG9XTVI5dG16LVFWT2UxdVBDTzhhbXJfTVRFLWl5ak9tOV9qZ3BfYTZ2SWdR?oc=5",
+   "publicado": "2026-11-16T13:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ajuste fiscal ‘pela metade’ é o principal risco para 2027, diz Zeina Latif",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/ajuste-fiscal-pela-metade-principal-risco-2027-zeina-latif/",
@@ -1884,6 +2003,47 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Justiça pede informações sobre negócio entre Genial e BTG",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/justica-pede-informacoes-sobre-negocio-entre-genial-e-btg.shtml",
+   "publicado": "2026-11-16T14:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHo0XzhYWm5NalljNDgyajhhMnVFdUM1ODd4bFpYV2ZEQi01czRhT214U2dnQThwUElFUERZLUFqbk1aenhFcEVCdHNLcUM3cmU1RW1rUDZqbWZPTG9BZE9Ob0ZVSFhoTEFBSzYyZWIzazg3dzlaUkxScDJERjRpaXRyYVJ5aU5HbmR5S1ZhZ3FrYVBtNHE2a1FKWVBwbFhBcHJWdU13aElFX0hDcXhqV1dSOTY1dXIzLVJYMGw1LXZBeURLNlJ3Xzdtc281ZVE?oc=5",
+   "publicado": "2026-11-16T14:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3",
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Líderes do Vale do Silício apoiam retorno de Jensen Huang à Nvidia",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdTlCVzFqcHA5eExUcEltMFVBRC1YV0VzYWtOSnUtU3lBUlo5eUJseHZZRzRqazctbkp4aDNkZ0ZDVGRIazdpNWxaNmJwYXhpaEZxblZFT2djVHFhLWl3SHJadDJueExFcmdBbTVCcWI2dTFPRUc5VXczajJFTUl4UTdUcFVfTGQ0MlZlbnppZk5feVZpcHB6WGhHcjMtejM4cDhCQmJpSFQtYjZyQXdiaTdMcVRwY2F6UlI5WWhaRQ?oc=5",
+   "publicado": "2026-11-16T14:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   }
  ],
  "enviadas": [
@@ -1918,7 +2078,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T14:38-03:00",
+ "atualizado_em": "2026-11-16T15:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1926,13 +2086,65 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Líderes do Vale do Silício apoiam retorno de Jensen Huang à Nvidia",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdTlCVzFqcHA5eExUcEltMFVBRC1YV0VzYWtOSnUtU3lBUlo5eUJseHZZRzRqazctbkp4aDNkZ0ZDVGRIazdpNWxaNmJwYXhpaEZxblZFT2djVHFhLWl3SHJadDJueExFcmdBbTVCcWI2dTFPRUc5VXczajJFTUl4UTdUcFVfTGQ0MlZlbnppZk5feVZpcHB6WGhHcjMtejM4cDhCQmJpSFQtYjZyQXdiaTdMcVRwY2F6UlI5WWhaRQ?oc=5",
+   "publicado": "2026-11-16T14:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Banco do Brasil (BBAS3), Petrobras (PETR4) e Vale (VALE3): o que está por trás das quedas nesta segunda (16)?",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZHo0XzhYWm5NalljNDgyajhhMnVFdUM1ODd4bFpYV2ZEQi01czRhT214U2dnQThwUElFUERZLUFqbk1aenhFcEVCdHNLcUM3cmU1RW1rUDZqbWZPTG9BZE9Ob0ZVSFhoTEFBSzYyZWIzazg3dzlaUkxScDJERjRpaXRyYVJ5aU5HbmR5S1ZhZ3FrYVBtNHE2a1FKWVBwbFhBcHJWdU13aElFX0hDcXhqV1dSOTY1dXIzLVJYMGw1LXZBeURLNlJ3Xzdtc281ZVE?oc=5",
+   "publicado": "2026-11-16T14:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3",
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Justiça determina que Genial e BTG prestem informações sobre negócio entre os bancos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/justica-pede-informacoes-sobre-negocio-entre-genial-e-btg.shtml",
+   "publicado": "2026-11-16T14:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BPAC11"
+   ]
+  },
+  {
+   "titulo": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
+   "publicado": "2026-11-16T14:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
    "fonte": "CNBC",
@@ -1943,6 +2155,18 @@
     "WIN",
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+   "publicado": "2026-11-16T14:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1991,18 +2215,6 @@
    "tickers": []
   },
   {
-   "titulo": "Warren Buffett doa quase US$ 5,5 bilhões em ações para quatro fundações",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/warren-buffett-doa-quase-us-55-bilhoes-em-acoes-para-quatro-fundacoes.shtml",
-   "publicado": "2026-11-16T13:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ajuste fiscal ‘pela metade’ é o principal risco para 2027, diz Zeina Latif",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/ajuste-fiscal-pela-metade-principal-risco-2027-zeina-latif/",
@@ -2010,6 +2222,17 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley rebaixa recomendação para Bolsa brasileira",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTnQ3b0ZMaFFNLWI5OHljbDlFbElUTXhkcHl4ckNycmFuT3Yyem40SGsxRkpsQWYyU3RsUFFxOEZCb252S0xNdl9CWWNEcFJQUHZMWE9Ha2d0bUFTLUZtaVJEOE00UGdyVzlCeC0zc1M2Y0FOb2Z2ei15UWdyZHJXZVdDZG9XTVI5dG16LVFWT2UxdVBDTzhhbXJfTVRFLWl5ak9tOV9qZ3BfYTZ2SWdR?oc=5",
+   "publicado": "2026-11-16T13:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -2043,64 +2266,6 @@
    "publicado": "2026-11-16T13:15-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
-   "publicado": "2026-11-16T13:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar supera atinge maior nível desde maio de 2025 com temores sobre política fiscal de Lula e pressão do exterior",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMVU5dFFZWHJIY1lsa3lnNk1PdEFPZEJwV2hGLWhmWjRId1ZyU0RyWEswcGJjeUlrQ2pSM3lYLUFwbGdZNU1HcnVreGZIZmdGVDk4a3lCRHh0Q2lta0RzVmVYQ1VPN2w2aHpBVVRZb3p0dXU1U1JPV19Yd25oa1pSM2pwME5LOW1oUDRwV0xtcHNFUW44bHRzempmU0k2MG1wRDB5cnRzMjRUNFpLN1FHbWlQVFVNcWo5N1BSZzJjR1BJM3Z0czhuTERuNmk0RmJ4Q0HSAeABQVVfeXFMTUlmUV9fQU1KRThZOGh1UGpJRFF5aEhYMk82Z1FXSWNGMjIyVWtYc0Z2NnNXSlI2YlpEOVJMR0R0TTc4Z01EbjJ1VE5UU3R3U2JKWXhNYzVlQUZ6YWhrWkI5V2x0aDc0YV96WlJ4ZFFwZW9hZkszMlM2dkp5bmFEcXJvcklya2tEdi14eWtSS3V2VDhJX3YxZ2RpNllaQkVmeDk2cmVwd1NTSWs3eG5ncHpBNEhhWkctWWtpS3pzd0dyckxxTXM2RW5BVHpCeDBaMlJEUHNxM3cxUXhRczV5RG0?oc=5",
-   "publicado": "2026-11-16T13:07-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar chega a R$ 6? Veja quais ações ganham com a disparada da moeda americana",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdW5FMDBLV3cwcEluYnE2ZnE4bXJZSU0wdnlMQU10cFF3NXJtYjRKRGVsdUZzTE15dXpXX1c2X1YteDM2dHFTSzBFeVRmbU5iSEZ3RDhLVng0QWczeTRPMnlmLVZuTEhjZVMwbnJCa1pqWDBYWXhRX2xZX3FFRWZEM3kzaDFiSjFaTl9qcUhJV01reDdfWENndmtsUk03NHJ4UVVtM0M2UV9kS3VidnV0Wg?oc=5",
-   "publicado": "2026-11-16T13:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje salta 1,8% e ultrapassa R$ 5,76 de olho em política fiscal e exterior",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzB6T2RBZmlEWW9KNzBla1NzRTJXZExKc3pzbGRjWXI2ai1pU0FOVXppOTIzMXA3bHRTZVN2WVZBZjR1NDJGVEs1TS1RZ2ZrWnp3Z3BTbWVmTE5CNm5GMzI3dkVjNl95OWtSeDJGYUdSc3d3dGN4Zy1mTnNaMWFQdmNrWV9ZamdpeHUtc3NNYUJUZDZOSVd4cTVVUk5zTEZ1dHhPbnp30gGrAUFVX3lxTE1sRFBjZ3RxbVkyanM0OTJBWWxEX3hydmp3b1RVczZ5RHpMUHRqbFFKVUJEQThYcVRVd2VzT0d4OU8zeXo5VnhUR3RQYUcyQlFLclRwVW9aNElHX0hhTDhfVnhSX2t1N2ctTS1KT0dCSXNVLURfT29BUWNia3dhZ2p3M1hubHp0NVd5aEpfTDc3Q1pqWTRmREhLTEY0NlpsTUU4eXNrNVBwbjFNcw?oc=5",
-   "publicado": "2026-11-16T12:55-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar dispara e bate R$ 5,75; Bolsa cai 1% e juros saltam com temor fiscal",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdlZHNEo0SkR0cjZ2VzZxTF8yRnNOWEUwaGxLRUdWaHk5UTEwcnpzVW12cVNFcFNhUXBqd1JzSTl5elBLWHVUcGNQa0REOUcyemswcG1wS0pjdlJsZ0U2MDV5R2NDR296a29aaUVndVVFUTVJRjhqZ2xxd3lmQzRBM1o0ZjRzOXdVWlV6T0NTVURlemZCTVdmcEFwUkR3VE94Tlg4MXdR?oc=5",
-   "publicado": "2026-11-16T12:53-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
