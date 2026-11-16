@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T10:08-03:00",
+  "atualizado_em": "2026-11-16T10:38-03:00",
   "dolar": {
    "anterior": 5.6666,
    "pontos": [
@@ -59,11 +59,35 @@
     ],
     [
      "10:05",
-     5.699
+     5.7046
     ],
     [
-     "10:08",
-     5.6984
+     "10:10",
+     5.7086
+    ],
+    [
+     "10:15",
+     5.7128
+    ],
+    [
+     "10:20",
+     5.7231
+    ],
+    [
+     "10:25",
+     5.7288
+    ],
+    [
+     "10:30",
+     5.7219
+    ],
+    [
+     "10:35",
+     5.7309
+    ],
+    [
+     "10:38",
+     5.7309
     ]
    ]
   },
@@ -181,7 +205,7 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": 0.23
+    "dolar30": 0.32
    },
    {
     "hora": "09:43",
@@ -193,13 +217,51 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.22
+    "dolar30": 0.4
    },
    {
     "hora": "09:53",
     "titulo": "Dólar abre em alta com política fiscal do governo Lula no radar",
     "fonte": "Folha",
     "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-politica-fiscal-do-governo-lula-no-radar.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": 0.63
+   },
+   {
+    "hora": "10:15",
+    "titulo": "Mercado prevê Selic a 12,75% e inflação de 5% em 2027 com piora das expectativas",
+    "fonte": "Bloomberg Línea",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcUE1ZmRJVUdpSFo4YjdycFZwQmp1M3FQdmY1VnVERldaYXlIT3ZBOXU0czdRUXV3WTFjNDU3bkVmUFgyc2NCeDJtRVRRN0JUakU4Wm5kNkQ2LTlrVEs5eUZ0elN3VDFrcjY4NHFDNl84ZENZZ1h0bFp0d2w0Z1g4TVl0bFYxZ0h5cmprRkRMQXlpMkpTb3RTamlmRWhGMmZkVEx0VGVJaFZoQ3VhY0h2VnpiUzZWZkxKeXdB0gHPAUFVX3lxTE0ycnE3Q0JSN3FkNkNEQkFmNlV6Q2pFOGpzc29zN00wWGdrSnpyeF9QQl84MVVVRno2azRycHNGdGdoM2ItVkUwMHJTd21uNk5lR0Z2QnRvSnRUQmlUNVRXdm9nQlcyODJURWsyN2cwRkVnSDR3QkdZS0pTYUF4NGhHYUZsUHZPV1FBWmt5SHlrSkh1WmQwUHFEaGpVMWhJUVAyRkpOV3E5anNGVW1RdFhXWHFpemtUWTZnV1FLb3NUVGtrVFRIQ3c4bmFlS1hqcw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "10:25",
+    "titulo": "Governo quer preservar texto do projeto de ajuste fiscal, mas está aberto ao diálogo, diz Moretti",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/governo-preservar-texto-projeto-ajuste-fiscal-aberto-dialogo-moretti/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "10:32",
+    "titulo": "Banco Central projeta Pix por aproximação offline e integração internacional",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOHRGalJ1TTVYNXUzS0pCb0FYUU91dnhnczZfSFNheGcySEJCMW42Q2dUWFhUdjlEclczT0Foem01VEJlWkJ0OWxTVFFHT2NENTVFYmZVUndtZlo2NHlnUGRhQXZZemJKM3VyYXcxYmgyRkxISjVYVVZvWExZdE9xejFpdXJSRlA1dl9xR0U3SzdFZURWYm8td0MtanlDQlByRWV1bThvZnNUMElzajQzZk1B?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -515,6 +577,18 @@
    "tickers": []
   },
   {
+   "titulo": "Mercado reduz previsão de inflação para 2026, mas vê Selic e dólar mais altos em 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRmxWV3NONVhkbDJKUk0yb05mYWo1bVoybGJEejM2LUZpalhSWk05SmEyTjNRYlpyZzhwb2taS29MM0ZjQU9hY3hfanU3YlhnMjlhZ3hVVEpHaWlSZVhSNDdRYlNPcjRrZ1JpdVR0MUVpQzZ1aFQxRjh4NlZhNVJha3U2QnUza1BvMmdJSGVINFpfNWFMSGFRU0J1Q1VuNHF6MjBIejN2OGdLRzVmNW1rb0RZbWtINHo4UTdqNW1CUVlKRDZkSnJVMDQzWGxjQ29tQzhWT0hpaVlEd9IB3wFBVV95cUxNeHRZMEpnVVNBYnZHUVphZDJJRW5oWEhXTUZHWGVseWZSUmtULUlsNFlEcjVOWTRWT2EzQm1uYjVMcUJaRWlsM3BVUVloZlktRWhZTjdwTHN2RTdNQkFueVJzYTFxTlZFaHBtMzB1d3BpU201ZFQ0VVNWUHVXakpESVdVZUlMaUJIdW5ldUhZd3ZyQldNMno0SzRJeUx5MzFMck5GTkFxa2FIaHBjS1BDYVdhQVV1QzJTd1VyN2MwRHpnWGtmRWtfckwyeEVsdWk2aXlxbXktbHF4dkhyY0FR?oc=5",
+   "publicado": "2026-11-16T08:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Focus: mercado eleva previsão de inflação para 5% e da Selic para 12,75% em 2027",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM2NHNFo4aVBRRURSUmtOSzNhZ2l4X21RZVpJN3NkeWs5cXd1dlU0Z3l4ci1icVkxbHFkUk4wMEwwNGFHMmdVQ3NST3Jkc0Utd1IwUU8tdDNmZEJFaVd6NkY4ZkZPWFU0WVp4NHdsSGt4S281WVA1clRoOC1udGZlVUtzb0g1enJ1cHRYNlR4MHhCQWRsTERUTmZwN0EwcG9KVVBkajJEWQ?oc=5",
@@ -654,6 +728,41 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Mercado prevê Selic a 12,75% e inflação de 5% em 2027 com piora das expectativas",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcUE1ZmRJVUdpSFo4YjdycFZwQmp1M3FQdmY1VnVERldaYXlIT3ZBOXU0czdRUXV3WTFjNDU3bkVmUFgyc2NCeDJtRVRRN0JUakU4Wm5kNkQ2LTlrVEs5eUZ0elN3VDFrcjY4NHFDNl84ZENZZ1h0bFp0d2w0Z1g4TVl0bFYxZ0h5cmprRkRMQXlpMkpTb3RTamlmRWhGMmZkVEx0VGVJaFZoQ3VhY0h2VnpiUzZWZkxKeXdB0gHPAUFVX3lxTE0ycnE3Q0JSN3FkNkNEQkFmNlV6Q2pFOGpzc29zN00wWGdrSnpyeF9QQl84MVVVRno2azRycHNGdGdoM2ItVkUwMHJTd21uNk5lR0Z2QnRvSnRUQmlUNVRXdm9nQlcyODJURWsyN2cwRkVnSDR3QkdZS0pTYUF4NGhHYUZsUHZPV1FBWmt5SHlrSkh1WmQwUHFEaGpVMWhJUVAyRkpOV3E5anNGVW1RdFhXWHFpemtUWTZnV1FLb3NUVGtrVFRIQ3c4bmFlS1hqcw?oc=5",
+   "publicado": "2026-11-16T10:15-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo quer preservar texto do projeto de ajuste fiscal, mas está aberto ao diálogo, diz Moretti",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-preservar-texto-projeto-ajuste-fiscal-aberto-dialogo-moretti/",
+   "publicado": "2026-11-16T10:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco Central projeta Pix por aproximação offline e integração internacional",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOHRGalJ1TTVYNXUzS0pCb0FYUU91dnhnczZfSFNheGcySEJCMW42Q2dUWFhUdjlEclczT0Foem01VEJlWkJ0OWxTVFFHT2NENTVFYmZVUndtZlo2NHlnUGRhQXZZemJKM3VyYXcxYmgyRkxISjVYVVZvWExZdE9xejFpdXJSRlA1dl9xR0U3SzdFZURWYm8td0MtanlDQlByRWV1bThvZnNUMElzajQzZk1B?oc=5",
+   "publicado": "2026-11-16T10:32-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -688,7 +797,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T10:08-03:00",
+ "atualizado_em": "2026-11-16T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -703,6 +812,53 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Banco Central projeta Pix por aproximação offline e integração internacional",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOHRGalJ1TTVYNXUzS0pCb0FYUU91dnhnczZfSFNheGcySEJCMW42Q2dUWFhUdjlEclczT0Foem01VEJlWkJ0OWxTVFFHT2NENTVFYmZVUndtZlo2NHlnUGRhQXZZemJKM3VyYXcxYmgyRkxISjVYVVZvWExZdE9xejFpdXJSRlA1dl9xR0U3SzdFZURWYm8td0MtanlDQlByRWV1bThvZnNUMElzajQzZk1B?oc=5",
+   "publicado": "2026-11-16T10:32-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo quer preservar texto do projeto de ajuste fiscal, mas está aberto ao diálogo, diz Moretti",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-preservar-texto-projeto-ajuste-fiscal-aberto-dialogo-moretti/",
+   "publicado": "2026-11-16T10:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado prevê Selic a 12,75% e inflação de 5% em 2027 com piora das expectativas",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcUE1ZmRJVUdpSFo4YjdycFZwQmp1M3FQdmY1VnVERldaYXlIT3ZBOXU0czdRUXV3WTFjNDU3bkVmUFgyc2NCeDJtRVRRN0JUakU4Wm5kNkQ2LTlrVEs5eUZ0elN3VDFrcjY4NHFDNl84ZENZZ1h0bFp0d2w0Z1g4TVl0bFYxZ0h5cmprRkRMQXlpMkpTb3RTamlmRWhGMmZkVEx0VGVJaFZoQ3VhY0h2VnpiUzZWZkxKeXdB0gHPAUFVX3lxTE0ycnE3Q0JSN3FkNkNEQkFmNlV6Q2pFOGpzc29zN00wWGdrSnpyeF9QQl84MVVVRno2azRycHNGdGdoM2ItVkUwMHJTd21uNk5lR0Z2QnRvSnRUQmlUNVRXdm9nQlcyODJURWsyN2cwRkVnSDR3QkdZS0pTYUF4NGhHYUZsUHZPV1FBWmt5SHlrSkh1WmQwUHFEaGpVMWhJUVAyRkpOV3E5anNGVW1RdFhXWHFpemtUWTZnV1FLb3NUVGtrVFRIQ3c4bmFlS1hqcw?oc=5",
+   "publicado": "2026-11-16T10:15-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Minério de ferro atinge menor valor em 16 meses após dados fracos da China",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468056",
+   "publicado": "2026-11-16T10:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar abre em alta com política fiscal do governo Lula no radar",
    "fonte": "Folha",
@@ -764,30 +920,6 @@
    "tickers": []
   },
   {
-   "titulo": "Mercado reduz projeção para inflação e PIB no ano e prevê Selic mais alta em 2027",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/mercado-reduz-projecao-inflacao-pib-preve-selic-mais-alta-2027/",
-   "publicado": "2026-11-16T09:31-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "EUA e China devem discutir restrição de exportação de chips no encontro entre Trump e Xi",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/eua-e-china-devem-discutir-restricao-de-exportacao-de-chips-no-encontro-entre-trump-e-xi.shtml",
-   "publicado": "2026-11-16T09:31-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar hoje avança com dados domésticos e política fiscal em foco",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzB6T2RBZmlEWW9KNzBla1NzRTJXZExKc3pzbGRjWXI2ai1pU0FOVXppOTIzMXA3bHRTZVN2WVZBZjR1NDJGVEs1TS1RZ2ZrWnp3Z3BTbWVmTE5CNm5GMzI3dkVjNl95OWtSeDJGYUdSc3d3dGN4Zy1mTnNaMWFQdmNrWV9ZamdpeHUtc3NNYUJUZDZOSVd4cTVVUk5zTEZ1dHhPbnp30gGrAUFVX3lxTE1sRFBjZ3RxbVkyanM0OTJBWWxEX3hydmp3b1RVczZ5RHpMUHRqbFFKVUJEQThYcVRVd2VzT0d4OU8zeXo5VnhUR3RQYUcyQlFLclRwVW9aNElHX0hhTDhfVnhSX2t1N2ctTS1KT0dCSXNVLURfT29BUWNia3dhZ2p3M1hubHp0NVd5aEpfTDc3Q1pqWTRmREhLTEY0NlpsTUU4eXNrNVBwbjFNcw?oc=5",
@@ -800,38 +932,14 @@
    "tickers": []
   },
   {
-   "titulo": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-   "publicado": "2026-11-16T09:16-03:00",
-   "impacto": "medio",
+   "titulo": "Tempo real: Ibovespa começa semana de olho no IBC-Br e no Boletim Focus",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1qNkMzOTBhU2gwbTd5M0ltRXQ3NUthQzZwSldZaXhnNDl4cGtaU3VYY2FUYVBoUFdYUzVNVUNpQXdjTXFKalFISGxEWExzZnZCY0p3RGU2YmhrUVBYMDRjbkY0M1BxbEd4?oc=5",
+   "publicado": "2026-11-16T09:21-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Cantwell urges Lutnick to stop AI chip sales to China ahead of Xi meeting",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/cantwell-lutnick-ai-chip-china.html",
-   "publicado": "2026-11-16T09:13-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
-   "publicado": "2026-11-16T09:13-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
+    "DI"
    ],
    "tickers": []
   },
@@ -847,21 +955,22 @@
    "tickers": []
   },
   {
-   "titulo": "Mercado reduz projeções para inflação e crescimento da economia em 202",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/mercado-reduz-projecoes-para-inflacao-e-crescimento-da-economia-em-202",
-   "publicado": "2026-11-16T09:12-03:00",
-   "impacto": "medio",
+   "titulo": "Focus: Analistas elevam expectativas para IPCA e Selic em 2027",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNS2dQLVdNSEp1YkdrRmVlTi1GUDJnUzczQW13ZlROM2NaVmVPNVpXZHhZWS1OMFZhUjBSeGFqLWw1WkMtWWdiV0gzWC1UbkhiRElTaE5oWnduaUJwN2NMUEdYNDQxTUhfTWFVSUxONy0xdWJzcUsyMzd4aW8tSld4M2pGMlFYc2xpMmxhM0RUcEVyZlloRDJnTzJsdFNBLW9wZ253WWFlT0FSaGcxdTJnOUU4OGNyWWJNN2ZIVQ?oc=5",
+   "publicado": "2026-11-16T09:03-03:00",
+   "impacto": "alto",
    "ativos": [
+    "WDO",
     "DI"
    ],
    "tickers": []
   },
   {
-   "titulo": "Focus: Analistas elevam expectativas para IPCA e Selic em 2027",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNS2dQLVdNSEp1YkdrRmVlTi1GUDJnUzczQW13ZlROM2NaVmVPNVpXZHhZWS1OMFZhUjBSeGFqLWw1WkMtWWdiV0gzWC1UbkhiRElTaE5oWnduaUJwN2NMUEdYNDQxTUhfTWFVSUxONy0xdWJzcUsyMzd4aW8tSld4M2pGMlFYc2xpMmxhM0RUcEVyZlloRDJnTzJsdFNBLW9wZ253WWFlT0FSaGcxdTJnOUU4OGNyWWJNN2ZIVQ?oc=5",
-   "publicado": "2026-11-16T09:03-03:00",
+   "titulo": "Mercado reduz previsão de inflação para 2026, mas vê Selic e dólar mais altos em 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRmxWV3NONVhkbDJKUk0yb05mYWo1bVoybGJEejM2LUZpalhSWk05SmEyTjNRYlpyZzhwb2taS29MM0ZjQU9hY3hfanU3YlhnMjlhZ3hVVEpHaWlSZVhSNDdRYlNPcjRrZ1JpdVR0MUVpQzZ1aFQxRjh4NlZhNVJha3U2QnUza1BvMmdJSGVINFpfNWFMSGFRU0J1Q1VuNHF6MjBIejN2OGdLRzVmNW1rb0RZbWtINHo4UTdqNW1CUVlKRDZkSnJVMDQzWGxjQ29tQzhWT0hpaVlEd9IB3wFBVV95cUxNeHRZMEpnVVNBYnZHUVphZDJJRW5oWEhXTUZHWGVseWZSUmtULUlsNFlEcjVOWTRWT2EzQm1uYjVMcUJaRWlsM3BVUVloZlktRWhZTjdwTHN2RTdNQkFueVJzYTFxTlZFaHBtMzB1d3BpU201ZFQ0VVNWUHVXakpESVdVZUlMaUJIdW5ldUhZd3ZyQldNMno0SzRJeUx5MzFMck5GTkFxa2FIaHBjS1BDYVdhQVV1QzJTd1VyN2MwRHpnWGtmRWtfckwyeEVsdWk2aXlxbXktbHF4dkhyY0FR?oc=5",
+   "publicado": "2026-11-16T08:52-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -882,10 +991,10 @@
    "tickers": []
   },
   {
-   "titulo": "Economia da China vacila com produção industrial e vendas no varejo abaixo do esperado",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVUFHZVZBdmV5cm56OEM0TmhLWTZDRFZWUFJxVzl3VW44cUZ3NzBFZGpPcnQzcXJ4OTZmeUgteGNaSUR4MGxuRFdWWjlrZ1dsSVBtRmlfYmkxRm1GVmh5U1lvYnBvd1ZISXZIa19qYm5iZ1k2WENVQkRGVnRQOWpCUFgwLVBoYXVCMWpRWGxUUlc5bFZybVNtU0Z6NmNRSG9md183djJRZmVoZDNUQ2FpaDlTX1BpUWZM?oc=5",
-   "publicado": "2026-11-16T08:37-03:00",
+   "titulo": "Vendas no varejo, produção industrial e investimentos desaceleram na China",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468055",
+   "publicado": "2026-11-16T08:09-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
