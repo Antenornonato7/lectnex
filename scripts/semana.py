@@ -44,6 +44,7 @@ def head(titulo, desc, url, extra_ld, img=None):
     <base href="../">
     <title>{e(titulo)}</title>
     <meta name="description" content="{e(desc)}">
+    <meta name="robots" content="max-image-preview:large">
     <link rel="canonical" href="{url}">
     <meta name="theme-color" content="#060D17">
     <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
