@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T14:20-03:00",
+  "atualizado_em": "2026-11-16T14:23-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -163,7 +163,11 @@
     ],
     [
      "14:05",
-     169402.0
+     169375.0
+    ],
+    [
+     "14:08",
+     169253.0
     ]
    ]
   },
@@ -428,7 +432,11 @@
     ],
     [
      "14:20",
-     5.7778
+     5.778
+    ],
+    [
+     "14:23",
+     5.7765
     ]
    ]
   },
@@ -1886,7 +1894,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T14:20-03:00",
+ "atualizado_em": "2026-11-16T14:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1901,6 +1909,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+   "publicado": "2026-11-16T14:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
    "fonte": "CNBC",
@@ -1954,18 +1974,6 @@
    "publicado": "2026-11-16T13:53-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-   "publicado": "2026-11-16T13:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
