@@ -219,6 +219,28 @@ def propor(tipo, legenda_arq, imagens):
     print(f'Pedido {pid} proposto ({len(urls)} imagem/ns).')
 
 
+def reenviar():
+    """Manda de novo, com os botões, os pedidos ainda válidos (menos de 36 h) que foram propostos sem o INSTAGRAM_TOKEN."""
+    f, sha = fila_ler()
+    agora = dt.datetime.now(BRT)
+    feitos = 0
+    for x in f['pedidos']:
+        if x.get('status') != 'aguardando' or (agora - dt.datetime.fromisoformat(x['criado'])).total_seconds() > 36 * 3600:
+            continue
+        texto = (f'📸 <b>Post para o feed: {esc(TIPOS.get(x["tipo"], x["tipo"]))}</b>' + (f' ({len(x["imagens"])} imagens)' if len(x['imagens']) > 1 else '') +
+                 f'\n\n<b>Legenda:</b>\n{esc(x["legenda"][:700])}' + ('…' if len(x['legenda']) > 700 else '') +
+                 '\n\nToque em <b>Publicar</b> para postar agora no Instagram (vale por 36 h).')
+        botoes = {'inline_keyboard': [[{'text': '✅ Publicar no Instagram', 'callback_data': f'ig:pub:{x["id"]}'},
+                                       {'text': '🗑️ Descartar', 'callback_data': f'ig:del:{x["id"]}'}]]}
+        tg('sendPhoto', chat_id=admin(), photo=x['imagens'][0], caption=f'Prévia: {TIPOS.get(x["tipo"], x["tipo"])}')
+        r = tg('sendMessage', chat_id=admin(), text=texto, parse_mode='HTML', disable_web_page_preview=True, reply_markup=botoes)
+        x['msg_id'] = r['result']['message_id']
+        feitos += 1
+    if feitos:
+        fila_gravar(f, sha)
+    note('notice', f'{feitos} pedido(s) reenviado(s) com o botão de publicar.')
+
+
 def processar():
     if not (os.environ.get('TELEGRAM_BOT_TOKEN') and admin()):
         return
@@ -343,3 +365,5 @@ if __name__ == '__main__':
         renovar()
     elif cmd == 'teste':
         teste()
+    elif cmd == 'reenviar':
+        reenviar()

@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       acao:
-        description: 'teste (confere token e conta), renovar ou processar'
+        description: 'teste (confere token e conta), renovar, processar ou reenviar (pedidos sem botão)'
         type: choice
-        options: [teste, renovar, processar]
+        options: [teste, renovar, processar, reenviar]
         default: teste
 
 permissions:
