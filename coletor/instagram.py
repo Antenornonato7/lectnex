@@ -8,8 +8,10 @@ Fluxo
                  Pedidos com mais de 36 h expiram.
   3. renovar  — renova o token de longa duração (60 dias). Roda toda segunda pelo Relógio.
 
-Segredos (GitHub → Settings → Secrets → Actions): INSTAGRAM_TOKEN (token de usuário do Instagram com
-instagram_business_basic + instagram_business_content_publish). Opcional: INSTAGRAM_USER_ID (senão é lido de /me).
+Segredos (GitHub → Settings → Secrets → Actions): INSTAGRAM_TOKEN. Dois tipos aceitos:
+  - token da Página do Facebook ligada ao Instagram (começa com EAA; permissões instagram_basic, instagram_content_publish,
+    pages_show_list, pages_read_engagement, business_management). É o caminho atual: a Página Lectnex está ligada à @lectnex.oficial.
+  - token do Instagram API with Instagram Login (instagram_business_basic + instagram_business_content_publish). Opcional: INSTAGRAM_USER_ID (senão é lido de /me).
 Sem INSTAGRAM_TOKEN, 'propor' ainda manda a prévia (sem botão) e nada é publicado.
 
 Uso: python3 coletor/instagram.py propor <tipo> <legenda.txt> <img1.png> [img2.png ...]
@@ -31,9 +33,17 @@ BRT = dt.timezone(dt.timedelta(hours=-3))
 REPO = os.environ.get('GITHUB_REPOSITORY', 'Antenornonato7/lectnex')
 GH = f'https://api.github.com/repos/{REPO}'
 RAW = f'https://raw.githubusercontent.com/{REPO}/ao-vivo/'
-IG = 'https://graph.instagram.com/v25.0'
+IG_IG = 'https://graph.instagram.com/v25.0'   # token do "Instagram API with Instagram Login" (começa com IG)
+IG_FB = 'https://graph.facebook.com/v25.0'    # token da Página do Facebook ligada ao Instagram (começa com EAA)
+
+
+def pela_pagina():
+    """True quando o segredo é um token do Facebook (Página Lectnex ligada à @lectnex.oficial).
+    Esse caminho usa a mesma API de publicação, só que em graph.facebook.com."""
+    return os.environ.get('INSTAGRAM_TOKEN', '').strip().startswith('EAA')
 FILA = 'ig/fila.json'
-TIPOS = {'grafico': 'Gráfico do dia (notícia × preço)', 'carrossel': 'Carrossel da semana'}
+TIPOS = {'grafico': 'Gráfico do dia (notícia × preço)', 'carrossel': 'Carrossel da semana', 'reel': 'Reels do dia',
+         'story': 'Story do fechamento', 'reel-semana': 'Reels da semana'}
 
 
 def note(k, m):
@@ -96,7 +106,7 @@ def esc(s):
 def ig(metodo, caminho, **params):
     params['access_token'] = os.environ['INSTAGRAM_TOKEN'].strip()
     dados = urllib.parse.urlencode(params).encode()
-    url = f'{IG}/{caminho}' + ('' if metodo == 'POST' else '?' + dados.decode())
+    url = f'{IG_FB if pela_pagina() else IG_IG}/{caminho}' + ('' if metodo == 'POST' else '?' + dados.decode())
     req = urllib.request.Request(url, data=dados if metodo == 'POST' else None, method=metodo)
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
@@ -110,12 +120,35 @@ def ig(metodo, caminho, **params):
         raise RuntimeError(f'Instagram HTTP {e.code}: {corpo}') from None
 
 
+_UID = None
+
+
 def ig_user():
-    return os.environ.get('INSTAGRAM_USER_ID', '').strip() or str(ig('GET', 'me', fields='user_id')['user_id'])
+    global _UID
+    if _UID:
+        return _UID
+    _UID = os.environ.get('INSTAGRAM_USER_ID', '').strip()
+    if not _UID and pela_pagina():
+        conta = None
+        try:                                                                 # token da Página: o "me" é a própria Página
+            conta = (ig('GET', 'me', fields='instagram_business_account').get('instagram_business_account') or {}).get('id')
+        except RuntimeError:
+            pass                                                             # token de usuário: o campo não existe no "me"
+        if not conta:                                                        # token de usuário: procura nas Páginas dele
+            for pg in ig('GET', 'me/accounts', fields='name,instagram_business_account').get('data', []):
+                conta = (pg.get('instagram_business_account') or {}).get('id')
+                if conta:
+                    break
+        if not conta:
+            raise RuntimeError('Nenhuma conta do Instagram ligada à Página encontrada com esse token')
+        _UID = str(conta)
+    elif not _UID:
+        _UID = str(ig('GET', 'me', fields='user_id')['user_id'])
+    return _UID
 
 
-def esperar(cid):
-    for _ in range(30):
+def esperar(cid, tentativas=30):
+    for _ in range(tentativas):
         st = ig('GET', cid, fields='status_code').get('status_code')
         if st == 'FINISHED':
             return
@@ -125,9 +158,32 @@ def esperar(cid):
     raise RuntimeError('Contêiner não ficou pronto em 3 min')
 
 
+def subir_video(uid, video_url, **params):
+    """Reels e stories em vídeo: envio direto do arquivo para a Meta (upload resumível), sem depender de um link público
+    com o tipo de arquivo certo (o raw do GitHub entrega vídeo como application/octet-stream)."""
+    c = ig('POST', f'{uid}/media', upload_type='resumable', **params)
+    corpo = urllib.request.urlopen(video_url, timeout=120).read()
+    req = urllib.request.Request(c['uri'], data=corpo, method='POST', headers={
+        'Authorization': 'OAuth ' + os.environ['INSTAGRAM_TOKEN'].strip(), 'offset': '0', 'file_size': str(len(corpo))})
+    try:
+        urllib.request.urlopen(req, timeout=300).read()
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f'Envio do vídeo recusado (HTTP {e.code}): {e.read().decode()[:200]}') from None
+    esperar(c['id'], 60)
+    return c['id']
+
+
 def publicar(p):
     uid = ig_user()
-    if len(p['imagens']) == 1:
+    tipo = p.get('tipo', '')
+    if p.get('video'):
+        if tipo == 'story':
+            cid = subir_video(uid, p['video'], media_type='STORIES')
+        else:
+            cid = subir_video(uid, p['video'], media_type='REELS', caption=p.get('legenda', ''), share_to_feed='true')
+    elif tipo == 'story':
+        cid = ig('POST', f'{uid}/media', image_url=p['imagens'][0], media_type='STORIES')['id']
+    elif len(p['imagens']) == 1:
         cid = ig('POST', f'{uid}/media', image_url=p['imagens'][0], caption=p['legenda'])['id']
     else:
         filhos = [ig('POST', f'{uid}/media', image_url=u, is_carousel_item='true')['id'] for u in p['imagens'][:10]]
@@ -185,6 +241,65 @@ def propor(tipo, legenda_arq, imagens):
             x['msg_id'] = r['result']['message_id']
     fila_gravar(f, sha)
     print(f'Pedido {pid} proposto ({len(urls)} imagem/ns).')
+
+
+def enviar_previa(x):
+    rot = {'reel': 'Publicar como Reels', 'reel-semana': 'Publicar como Reels', 'story': 'Publicar no Story'}.get(x['tipo'], 'Publicar no Instagram')
+    texto = (f'📸 <b>{esc(TIPOS.get(x["tipo"], x["tipo"]))}</b>' + (f' ({len(x["imagens"])} imagens)' if len(x.get('imagens') or []) > 1 else '') +
+             (f'\n\n<b>Legenda:</b>\n{esc(x["legenda"][:700])}' + ('…' if len(x['legenda']) > 700 else '') if x.get('legenda') else '') +
+             f'\n\nToque em <b>{rot}</b> para postar agora (vale por 36 h).')
+    botoes = {'inline_keyboard': [[{'text': f'✅ {rot}', 'callback_data': f'ig:pub:{x["id"]}'}, {'text': '🗑️ Descartar', 'callback_data': f'ig:del:{x["id"]}'}]]}
+    if x.get('video'):
+        tg('sendVideo', chat_id=admin(), video=x['video'], caption=f'Prévia: {TIPOS.get(x["tipo"], x["tipo"])}')
+    elif x.get('imagens'):
+        tg('sendPhoto', chat_id=admin(), photo=x['imagens'][0], caption=f'Prévia: {TIPOS.get(x["tipo"], x["tipo"])}')
+    r = tg('sendMessage', chat_id=admin(), text=texto, parse_mode='HTML', disable_web_page_preview=True, reply_markup=botoes)
+    x['msg_id'] = r['result']['message_id']
+
+
+def kit_instagram(dia=None):
+    """Propõe no Telegram, com botão, as peças do Kit do dia (branch ao-vivo): post do gráfico, Reels do dia e story do fechamento."""
+    dia = dia or dt.datetime.now(BRT).date().isoformat()
+    kit, _ = gh_ler(f'kit/{dia}/kit.json')
+    if not kit:
+        note('warning', f'Sem kit em kit/{dia}/'); return
+    agora = dt.datetime.now(BRT)
+    novos = []
+    pecas = {pc['chave']: pc for pc in kit.get('pecas', [])}
+    if 'grafico' in pecas:
+        novos.append({'id': f'{dia.replace("-", "")}-kit-grafico', 'tipo': 'grafico', 'legenda': pecas['grafico'].get('legenda', ''), 'imagens': [RAW + f'kit/{dia}/grafico.jpg']})
+    for chave, rl in (kit.get('reels') or {}).items():
+        novos.append({'id': f'{dia.replace("-", "")}-kit-{chave}', 'tipo': 'reel' if chave == 'reel' else 'reel-semana', 'legenda': rl.get('legenda', ''), 'imagens': [], 'video': RAW + f'kit/{dia}/{chave}.mp4'})
+    if 'fechamento' in pecas:
+        novos.append({'id': f'{dia.replace("-", "")}-kit-story', 'tipo': 'story', 'legenda': '', 'imagens': [RAW + f'kit/{dia}/fechamento.jpg']})
+    f, sha = fila_ler()
+    ids = {n['id'] for n in novos}
+    f['pedidos'] = [x for x in f['pedidos'] if x['id'] not in ids]
+    for x in f['pedidos']:  # o gráfico proposto às 19h sem botão é a mesma peça: não deixa dois aguardando
+        if x.get('status') == 'aguardando' and x['id'].startswith(dia.replace('-', '')) and x.get('tipo') == 'grafico':
+            x['status'] = 'substituido'
+    for n in novos:
+        n.update(status='aguardando', criado=agora.isoformat(timespec='minutes'))
+        enviar_previa(n)
+        f['pedidos'].append(n)
+    f['pedidos'] = f['pedidos'][-40:]
+    fila_gravar(f, sha)
+    note('notice', f'{len(novos)} peça(s) do kit propostas no Telegram: ' + ', '.join(n['tipo'] for n in novos))
+
+
+def reenviar():
+    """Manda de novo, com os botões, os pedidos ainda válidos (menos de 36 h) que foram propostos sem o INSTAGRAM_TOKEN."""
+    f, sha = fila_ler()
+    agora = dt.datetime.now(BRT)
+    feitos = 0
+    for x in f['pedidos']:
+        if x.get('status') != 'aguardando' or (agora - dt.datetime.fromisoformat(x['criado'])).total_seconds() > 36 * 3600:
+            continue
+        enviar_previa(x)
+        feitos += 1
+    if feitos:
+        fila_gravar(f, sha)
+    note('notice', f'{feitos} pedido(s) reenviado(s) com o botão de publicar.')
 
 
 def processar():
@@ -249,6 +364,27 @@ def renovar():
         print('Sem INSTAGRAM_TOKEN: nada a renovar.')
         return
     tok = os.environ['INSTAGRAM_TOKEN'].strip()
+    if pela_pagina():
+        # Token de Página gerado a partir de um token de usuário de longa duração não expira. Token de usuário estendido
+        # vale 60 dias: avisa no Telegram quando faltarem 14 dias ou menos.
+        try:
+            ig_user()
+            fim = 0
+            try:
+                fim = ig('GET', 'debug_token', input_token=tok).get('data', {}).get('expires_at') or 0
+            except Exception:
+                pass
+            dias = (fim - time.time()) / 86400 if fim else None
+            note('notice', 'Instagram pela Página do Facebook: token válido' + (f', expira em {dias:.0f} dias.' if dias is not None else ' (a Meta não informou data de expiração).'))
+            if dias is not None and dias <= 14 and os.environ.get('TELEGRAM_BOT_TOKEN') and admin():
+                tg('sendMessage', chat_id=admin(), text=f'⚠️ A chave do Instagram (INSTAGRAM_TOKEN) expira em {dias:.0f} dia(s). Gere uma nova no Explorador da '
+                   'Graph API (app Lectnex Publicador → estender → escolher a Página Lectnex) e atualize o segredo no GitHub.')
+        except Exception as e:
+            note('warning', f'Token da Página não funcionou: {e}')
+            if os.environ.get('TELEGRAM_BOT_TOKEN') and admin():
+                tg('sendMessage', chat_id=admin(), text='⚠️ O token da Página do Facebook (Instagram) parou de funcionar. Gere um novo e atualize o segredo '
+                   'INSTAGRAM_TOKEN no GitHub. Detalhe: ' + esc(str(e)[:120]), parse_mode='HTML')
+        return
     url = 'https://graph.instagram.com/refresh_access_token?' + urllib.parse.urlencode({'grant_type': 'ig_refresh_token', 'access_token': tok})
     try:
         with urllib.request.urlopen(url, timeout=30) as r:
@@ -269,7 +405,12 @@ def renovar():
 
 def teste():
     """Confere o token e a conta, sem publicar nada."""
-    u = ig('GET', 'me', fields='user_id,username,account_type')
+    if pela_pagina():
+        uid = ig_user()
+        u = ig('GET', uid, fields='username,name')
+        u.update(user_id=uid, account_type='ligada à Página do Facebook')
+    else:
+        u = ig('GET', 'me', fields='user_id,username,account_type')
     lim = ig('GET', f'{u["user_id"]}/content_publishing_limit', fields='quota_usage,config')
     print(f'Conta @{u.get("username")} ({u.get("account_type")}) · uso de publicação nas últimas 24 h: {lim}')
     note('notice', f'Instagram conectado: @{u.get("username")}')
@@ -285,3 +426,7 @@ if __name__ == '__main__':
         renovar()
     elif cmd == 'teste':
         teste()
+    elif cmd == 'reenviar':
+        reenviar()
+    elif cmd == 'kit':
+        kit_instagram(sys.argv[2] if len(sys.argv) > 2 else None)
