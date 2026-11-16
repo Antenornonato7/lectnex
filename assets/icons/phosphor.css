@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=466baf3a") format("woff");
+  src: url("./Phosphor.woff?v=df21700c") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -238,6 +238,9 @@
 .ph.ph-lightning:before {
   content: "\e2de";
 }
+.ph.ph-link:before {
+  content: "\e2e2";
+}
 .ph.ph-list-checks:before {
   content: "\eadc";
 }
@@ -291,6 +294,9 @@
 }
 .ph.ph-seal-check:before {
   content: "\e606";
+}
+.ph.ph-share-network:before {
+  content: "\e408";
 }
 .ph.ph-shield-check:before {
   content: "\e40c";
@@ -393,7 +399,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=466baf3a") format("woff");
+  src: url("./Phosphor-Bold.woff?v=df21700c") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -629,6 +635,9 @@
 .ph-bold.ph-lightning:before {
   content: "\e2de";
 }
+.ph-bold.ph-link:before {
+  content: "\e2e2";
+}
 .ph-bold.ph-list-checks:before {
   content: "\eadc";
 }
@@ -682,6 +691,9 @@
 }
 .ph-bold.ph-seal-check:before {
   content: "\e606";
+}
+.ph-bold.ph-share-network:before {
+  content: "\e408";
 }
 .ph-bold.ph-shield-check:before {
   content: "\e40c";
@@ -784,7 +796,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=466baf3a") format("woff");
+  src: url("./Phosphor-Fill.woff?v=df21700c") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1020,6 +1032,9 @@
 .ph-fill.ph-lightning:before {
   content: "\e2de";
 }
+.ph-fill.ph-link:before {
+  content: "\e2e2";
+}
 .ph-fill.ph-list-checks:before {
   content: "\eadc";
 }
@@ -1073,6 +1088,9 @@
 }
 .ph-fill.ph-seal-check:before {
   content: "\e606";
+}
+.ph-fill.ph-share-network:before {
+  content: "\e408";
 }
 .ph-fill.ph-shield-check:before {
   content: "\e40c";
@@ -1175,7 +1193,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=466baf3a") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=df21700c") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1746,6 +1764,14 @@
   content: "\e2df";
   margin-left: -1em;
 }
+.ph-duotone.ph-link:before {
+  content: "\e2e2";
+  opacity: 0.2;
+}
+.ph-duotone.ph-link:after {
+  content: "\e2e3";
+  margin-left: -1em;
+}
 .ph-duotone.ph-list-checks:before {
   content: "\eadc";
   opacity: 0.2;
@@ -1888,6 +1914,14 @@
 }
 .ph-duotone.ph-seal-check:after {
   content: "\e607";
+  margin-left: -1em;
+}
+.ph-duotone.ph-share-network:before {
+  content: "\e408";
+  opacity: 0.2;
+}
+.ph-duotone.ph-share-network:after {
+  content: "\e40b";
   margin-left: -1em;
 }
 .ph-duotone.ph-shield-check:before {

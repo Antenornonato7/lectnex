@@ -31,15 +31,15 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://lectnex.com.br/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261115e">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261115f">
     <link rel="expect" href="#lx-pronto" blocking="render">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261115e">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261115e">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261115f">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261115f">
 </head>
 <body data-page="futuros" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -287,7 +287,12 @@
                     </div>
                     <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
                         <button type="button" id="rk-registrar" class="min-h-[44px] px-4 inline-flex items-center gap-2 bg-lect-teal hover:bg-lect-tealDark text-white font-mono text-xs font-bold"><i class="ph-bold ph-notebook"></i> REGISTRAR OPERAÇÃO</button>
-                        <span class="text-[11px] text-slate-500 flex-1 min-w-[12rem]">Leva o ativo (<span id="rk-reg-ativo">WIN</span>) para o Diário. Lá você informa o resultado bruto e os custos reais e confirma.</span>
+                        <button type="button" id="rk-link" class="min-h-[44px] px-4 inline-flex items-center gap-2 border border-slate-300 dark:border-lect-borderDark text-slate-700 dark:text-slate-200 hover:text-lect-teal hover:border-lect-teal font-mono text-xs font-bold"><i class="ph-bold ph-link"></i> <span id="rk-link-txt">COPIAR LINK DESTA CONTA</span></button>
+                        <span class="text-[11px] text-slate-500 flex-1 min-w-[12rem]">Registrar leva o ativo (<span id="rk-reg-ativo">WIN</span>) para o Diário. O link abre a calculadora já preenchida com estes números para quem você mandar.</span>
+                    </div>
+                    <div id="rk-compartilhada" class="hidden items-center justify-between gap-3 px-3 py-2 border-l-2 border-lect-orange bg-lect-orange/10 font-mono text-[11px] text-slate-700 dark:text-slate-200">
+                        <span><i class="ph-bold ph-share-network text-lect-orange"></i> Você abriu uma conta compartilhada. Ajuste para a sua realidade antes de operar.</span>
+                        <button type="button" id="rk-padrao" class="shrink-0 underline hover:text-lect-teal">voltar ao padrão</button>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
                         <div class="p-3 border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">Margem utilizada</span><strong id="rk-o-margin" class="block mt-1">—</strong></div>
@@ -350,7 +355,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261115e"></script><span id="lx-pronto" hidden></span>
+    <script src="assets/lectnex-core.js?v=20261115f"></script><span id="lx-pronto" hidden></span>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -1011,6 +1016,49 @@
             $('rk-cap').addEventListener('input', () => { manual = true; aplicar(); });
             document.addEventListener('lx:plano-cap', aplicar);
             aplicar();
+            // Link compartilhável: só os campos diferentes do padrão do ativo vão no endereço (?ativo=WIN&cap=…#risco).
+            // A página continua com o mesmo endereço oficial (canonical) para o Google; os números ficam só no link.
+            const CAMPOS = [['cap', 'rk-cap'], ['risco', 'rk-riskpct'], ['stop', 'rk-stop'], ['alvo', 'rk-target'], ['contratos', 'rk-qty'],
+                ['custo', 'rk-cost'], ['margem', 'rk-margin'], ['acerto', 'rk-winrate']];
+            const padrao = a => ({ cap: 10000, risco: 1, stop: PV[a].stop, alvo: PV[a].target, contratos: 0, custo: PV[a].cost, margem: PV[a].margin, acerto: 45 });
+            const montaLink = () => {
+                const q = new URLSearchParams({ ativo: asset }), d = padrao(asset);
+                CAMPOS.forEach(([k, id]) => { const v = num(id); if (v !== d[k]) q.set(k, String(v)); });
+                return `${location.origin}${location.pathname}?${q}#risco`;
+            };
+            (function lerLink() {
+                const q = new URLSearchParams(location.search);
+                if (!CAMPOS.some(([k]) => q.has(k)) && !q.has('ativo')) return;
+                const a = q.get('ativo') === 'WDO' ? 'WDO' : 'WIN';
+                if (a !== asset) setAsset(a);
+                CAMPOS.forEach(([k, id]) => { const v = parseFloat(q.get(k)); if (q.has(k) && isFinite(v) && v >= 0 && v < 1e9) $(id).value = v; });
+                if (q.has('cap')) { manual = true; aplicar(); }
+                calcRisk();
+                const av = $('rk-compartilhada'); av.classList.remove('hidden'); av.classList.add('flex');
+                LX.track('calculadora_link_aberto', { ativo: a });
+            })();
+            $('rk-padrao').onclick = () => {
+                history.replaceState(null, '', location.pathname + '#risco');
+                $('rk-compartilhada').classList.add('hidden'); $('rk-compartilhada').classList.remove('flex');
+                $('rk-riskpct').value = 1; $('rk-qty').value = 0; $('rk-winrate').value = 45; manual = false;
+                setAsset(asset); if (!(window.lxPlano && window.lxPlano().cap > 0)) $('rk-cap').value = 10000; aplicar(); calcRisk();
+            };
+            $('rk-link').onclick = async () => {
+                const url = montaLink(), txt = $('rk-link-txt');
+                const texto = `Minha conta de risco no ${asset}: ${$('rk-o-qty').textContent} contrato(s), perda no stop ${$('rk-o-loss').textContent}, ganho no alvo ${$('rk-o-gain').textContent}`;
+                let via = 'copiado';
+                try {
+                    if (navigator.share && matchMedia('(pointer: coarse)').matches) { await navigator.share({ title: 'Calculadora de risco · Lectnex', text: texto, url }); via = 'compartilhado'; }
+                    else { await navigator.clipboard.writeText(url); }
+                } catch (e) {
+                    if (e && e.name === 'AbortError') return; // a pessoa fechou a janela de compartilhar
+                    try { const t = document.createElement('textarea'); t.value = url; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); }
+                    catch (_) { txt.textContent = url; return; }
+                }
+                LX.track('calculadora_link', { ativo: asset, via });
+                txt.textContent = via === 'compartilhado' ? 'LINK ENVIADO ✓' : 'LINK COPIADO ✓';
+                setTimeout(() => { txt.textContent = 'COPIAR LINK DESTA CONTA'; }, 2200);
+            };
             $('rk-registrar').onclick = () => { LX.track('diario_registro', { origem: 'calculadora', ativo: asset }); window.lxRegistrar && window.lxRegistrar({ asset, data: LX.iso(LX.todayBRT()) }); };
         })();
 
