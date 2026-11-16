@@ -1680,18 +1680,6 @@
  },
  "hoje": [
   {
-   "titulo": "Mercado reduz previsão de inflação para 2026, mas vê Selic e dólar mais altos em 2027",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQRmxWV3NONVhkbDJKUk0yb05mYWo1bVoybGJEejM2LUZpalhSWk05SmEyTjNRYlpyZzhwb2taS29MM0ZjQU9hY3hfanU3YlhnMjlhZ3hVVEpHaWlSZVhSNDdRYlNPcjRrZ1JpdVR0MUVpQzZ1aFQxRjh4NlZhNVJha3U2QnUza1BvMmdJSGVINFpfNWFMSGFRU0J1Q1VuNHF6MjBIejN2OGdLRzVmNW1rb0RZbWtINHo4UTdqNW1CUVlKRDZkSnJVMDQzWGxjQ29tQzhWT0hpaVlEd9IB3wFBVV95cUxNeHRZMEpnVVNBYnZHUVphZDJJRW5oWEhXTUZHWGVseWZSUmtULUlsNFlEcjVOWTRWT2EzQm1uYjVMcUJaRWlsM3BVUVloZlktRWhZTjdwTHN2RTdNQkFueVJzYTFxTlZFaHBtMzB1d3BpU201ZFQ0VVNWUHVXakpESVdVZUlMaUJIdW5ldUhZd3ZyQldNMno0SzRJeUx5MzFMck5GTkFxa2FIaHBjS1BDYVdhQVV1QzJTd1VyN2MwRHpnWGtmRWtfckwyeEVsdWk2aXlxbXktbHF4dkhyY0FR?oc=5",
-   "publicado": "2026-11-16T08:52-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Focus: mercado eleva previsão de inflação para 5% e da Selic para 12,75% em 2027",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM2NHNFo4aVBRRURSUmtOSzNhZ2l4X21RZVpJN3NkeWs5cXd1dlU0Z3l4ci1icVkxbHFkUk4wMEwwNGFHMmdVQ3NST3Jkc0Utd1IwUU8tdDNmZEJFaVd6NkY4ZkZPWFU0WVp4NHdsSGt4S281WVA1clRoOC1udGZlVUtzb0g1enJ1cHRYNlR4MHhCQWRsTERUTmZwN0EwcG9KVVBkajJEWQ?oc=5",
@@ -2618,6 +2606,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "ExxonMobil e Prio arrematam cargas do campo de Búzios em leilão da PPSA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/exxonmobil-e-prio-arrematam-cargas-do-campo-de-buzios-em-leilao-da-ppsa.shtml",
+   "publicado": "2026-11-16T20:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PRIO3"
+   ]
   }
  ],
  "enviadas": [
@@ -2647,7 +2648,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T20:36-03:00",
+ "atualizado_em": "2026-11-16T20:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2655,22 +2656,23 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Valor"
  ],
  "noticias": [
   {
-   "titulo": "Dólar sobe para R$ 5,77 e fecha no maior valor desde abril de 2025",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-sobe-para-r-577-e-fecha-no-maior-valor-desde-abril-de-2025",
-   "publicado": "2026-11-16T20:06-03:00",
+   "titulo": "ExxonMobil e Prio arrematam cargas do campo de Búzios em leilão da PPSA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/exxonmobil-e-prio-arrematam-cargas-do-campo-de-buzios-em-leilao-da-ppsa.shtml",
+   "publicado": "2026-11-16T20:35-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
+    "WIN"
    ],
-   "tickers": []
+   "tickers": [
+    "PRIO3"
+   ]
   },
   {
    "titulo": "CNBC's The China Connection newsletter: As Nike and Lululemon struggle in China, Xiaohongshu is helping local brands take off",
@@ -2767,14 +2769,38 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa cai 1,8% com desconfiança sobre ajuste fiscal de Lula; NY recua com temor sobre IA",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObUFNSXF0MDEtQmJ0RU44UFhHLWFhMVVYZFlHajJOTDdfVlF6ZUZqRjVuZWh4dEduUzBnWkN4b2t1Ny1qRDF0YnpHb1ppTHprRWhmU3BxQVYtSU1KcjA3Yk1VVXlYWU1lMFl1UURwQWZfczR5SnQ1UmxfVEhyTUxLc2xQLV9vbXQ5NHNoQkhuWFFIeWFvTFA1QlZhdVpqMGFZWkVpYURQUUZuT2hjNGoybjl3WURTNExUWE4yRjliT0Q?oc=5",
-   "publicado": "2026-11-16T18:38-03:00",
+   "titulo": "Dólar salta e fecha em R$ 5,77 com temor fiscal; bolsa cai e juros sobem",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdlZHNEo0SkR0cjZ2VzZxTF8yRnNOWEUwaGxLRUdWaHk5UTEwcnpzVW12cVNFcFNhUXBqd1JzSTl5elBLWHVUcGNQa0REOUcyemswcG1wS0pjdlJsZ0U2MDV5R2NDR296a29aaUVndVVFUTVJRjhqZ2xxd3lmQzRBM1o0ZjRzOXdVWlV6T0NTVURlemZCTVdmcEFwUkR3VE94Tlg4MXdR?oc=5",
+   "publicado": "2026-11-16T18:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa desaba quase 2% e dólar sobe 2,15%, com preocupações fiscais",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNE5FVFI0eUlOSE1tc0NKQWdoYWNxRE85UFdzSGZ1WlFsVXdxVU5sVzFObVZlNWhaTzhIUHpXMG1TQllFeEIyNDBHYXNjcnpJU3RhamppOVU1Qk5uRWk1SzNWOTVIZ3RMUGlLYXh4bzNtMm1hUG9WUXU2cTNVLUJXT21uc3dTMk1KQmJEUHNsNA?oc=5",
+   "publicado": "2026-11-16T18:25-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "DI"
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar supera R$ 5,77 e bate maior valor desde abril de 2025; Ibovespa cai mais de 1,8%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
+   "publicado": "2026-11-16T18:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   }
