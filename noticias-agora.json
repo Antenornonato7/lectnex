@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T18:00-03:00",
+  "atualizado_em": "2026-11-16T18:03-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -303,7 +303,7 @@
     ],
     [
      "17:00",
-     169185.0
+     169206.0
     ]
    ]
   },
@@ -744,7 +744,11 @@
     ],
     [
      "18:00",
-     5.7898
+     5.7914
+    ],
+    [
+     "18:03",
+     5.7904
     ]
    ]
   },
@@ -1572,7 +1576,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.11
+    "dolar30": 0.13
    },
    {
     "hora": "17:35",
@@ -1585,7 +1589,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.11
+    "dolar30": 0.13
    },
    {
     "hora": "17:40",
@@ -1599,21 +1603,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:57",
+    "titulo": "Análise: Dólar perto de R$ 6 pressiona Lula por medidas urgentes",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVh2b1dudXZWZ2c0QTVVV3hLaEFXcHFpV0s4UnNqbDc2SW15YzZ4Wk1tdGlOYnpZeWFmaUw0cUZONWtqNTJOQ3U3V2lZaWtuOWR2OUNzYlBTSVhsT0VRTWEtSUx2cXEtYkhUVnNaQm9MSUJCNDRqaV8wOG9Lb0VaRGRiem51elMwN1RJX3haSmpOUTJKaDlrczMtSmwzU3pQYmxraXlUTmhKSjhsaUZKdndhZ2pJOFFmQWtnazFnV2N5RFJqTUFRcUdzTC1jYjZXV1FnaWZEVEI?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "CSN desaba 12% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeHBUR2dPbkhsdktwWjJqdkM4eXBYdmE4NWJjVVI3bzBYTFNIeWNiR0NYWXZ2OFFhMVRiYXpTeVctcU9Yc2NTSERwdkl2YVpRX3ZSUHVfbE9zd1c0WFd1Q0QtcGRleG9kVkI0ekp1NGhrNVNYRHJRUDhFdVBwLUs1ZWFMSHh1R2lZQ1BOaXV4M2VFQnZOY2VuSXdVZWtzMlBMZm5EVFI1TjRXN1ZtMzlFMVU2WFBoSW1rMERrczUzZld0NXluSDY5aVBreHIyZFV3X205akZEMW9VMmZtQ0R6dkxBdw?oc=5",
-   "publicado": "2026-11-16T06:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "3T26: XP (XPBR31), Pagbank (PAGS), Ambipar (AMBP3) e mais; veja quais empresas divulgam balanços nesta semana",
    "fonte": "Money Times",
@@ -2547,6 +2553,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Análise: Dólar perto de R$ 6 pressiona Lula por medidas urgentes",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVh2b1dudXZWZ2c0QTVVV3hLaEFXcHFpV0s4UnNqbDc2SW15YzZ4Wk1tdGlOYnpZeWFmaUw0cUZONWtqNTJOQ3U3V2lZaWtuOWR2OUNzYlBTSVhsT0VRTWEtSUx2cXEtYkhUVnNaQm9MSUJCNDRqaV8wOG9Lb0VaRGRiem51elMwN1RJX3haSmpOUTJKaDlrczMtSmwzU3pQYmxraXlUTmhKSjhsaUZKdndhZ2pJOFFmQWtnazFnV2N5RFJqTUFRcUdzTC1jYjZXV1FnaWZEVEI?oc=5",
+   "publicado": "2026-11-16T17:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2576,7 +2593,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T18:00-03:00",
+ "atualizado_em": "2026-11-16T18:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2586,10 +2603,22 @@
   "Estadão",
   "Exame",
   "Folha",
+  "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Análise: Dólar perto de R$ 6 pressiona Lula por medidas urgentes",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVh2b1dudXZWZ2c0QTVVV3hLaEFXcHFpV0s4UnNqbDc2SW15YzZ4Wk1tdGlOYnpZeWFmaUw0cUZONWtqNTJOQ3U3V2lZaWtuOWR2OUNzYlBTSVhsT0VRTWEtSUx2cXEtYkhUVnNaQm9MSUJCNDRqaV8wOG9Lb0VaRGRiem51elMwN1RJX3haSmpOUTJKaDlrczMtSmwzU3pQYmxraXlUTmhKSjhsaUZKdndhZ2pJOFFmQWtnazFnV2N5RFJqTUFRcUdzTC1jYjZXV1FnaWZEVEI?oc=5",
+   "publicado": "2026-11-16T17:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
    "fonte": "CNBC",
@@ -2748,6 +2777,17 @@
     "WIN",
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cai cerca de 2% e fica abaixo dos 170 mil pontos: o que explica forte queda?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNURULUlrMVE5NFRab3llNzJJYkcxTkRWN2xLUlgzZDZndUp0OTZwd0Fmdmw1Y0lVRHBxbDBpZC1TeWpQMV8zVzFnSEVXdk5UMUZBczhnT21UOUZpNEdNZ3J6WVg1ekp1S1Q1YUJueWh2WVB6eGpJek1kVWVGcEVsdjFuSWtHSVZhTjY5ZmNtTEZha1ZOTURzOF9XYTl1ZlFRbktKQzVaTGhOWXBfa0Z5czZOVGxxb1nSAbwBQVVfeXFMTU5FTXpaS0drcjZKLWJfcTJMTlNFaHg1UUUwMXZaU0JYM2ExNU9oOGJPNlFraXdIbF9uV3ZxVldfTHM4VWJjRnBLWVoxaF9TT1ZKeDEtd09xQk44UmczN1RjU0Z0YkZFQ09wU3RwUDlGbXViY19mdTFjSGVDVG5URnNmTTRZMHl4b0hhWTlRZFFQUEZvTXZjZTJnMVk0ZzRLOGVySE1BUm5rcnNsdmV5bGhBaEdKS1piMjBQOXg?oc=5",
+   "publicado": "2026-11-16T15:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   }
