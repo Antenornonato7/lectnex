@@ -3,18 +3,6 @@
  "eventos": [
   {
    "data": "2026-11-16",
-   "pais": "US",
-   "evento": "Fala do presidente do Fed, Kevin Warsh",
-   "importancia": 2,
-   "impacto": {
-    "wdo": "volatil",
-    "di": "volatil"
-   },
-   "nota": "Primeira semana após o CPI de outubro (+0,3%); sinal sobre alta de juros em dezembro mexe no dólar global.",
-   "tipo": "fala-fed"
-  },
-  {
-   "data": "2026-11-16",
    "hora": "08h25",
    "pais": "BR",
    "evento": "Boletim Focus (BCB)",
@@ -36,8 +24,59 @@
     "di": "volatil",
     "win": "volatil"
    },
-   "nota": "Prévia do PIB calculada pelo BC; atividade fraca reforça a desaceleração.",
-   "tipo": "ibc-br"
+   "nota": "Prévia do PIB calculada pelo BC; consenso do InfoMoney. Atividade fraca reforça a desaceleração.",
+   "tipo": "ibc-br",
+   "consenso": "0,0%"
+  },
+  {
+   "data": "2026-11-16",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Índice Empire State de manufatura (nov)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Primeira pesquisa regional da indústria americana no mês.",
+   "tipo": "empire-state"
+  },
+  {
+   "data": "2026-11-16",
+   "hora": "11h05",
+   "pais": "US",
+   "evento": "Fala de John Williams (Fed de Nova York)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Sinal sobre o ritmo de juros em dezembro.",
+   "tipo": "fala-fed"
+  },
+  {
+   "data": "2026-11-16",
+   "hora": "14h",
+   "pais": "US",
+   "evento": "Fala do presidente do Fed, Kevin Warsh (abertura de conferência)",
+   "importancia": 2,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Primeira semana após o CPI de outubro (+0,3%); sinal sobre alta de juros em dezembro mexe no dólar global.",
+   "tipo": "fala-fed"
+  },
+  {
+   "data": "2026-11-16",
+   "hora": "19h",
+   "pais": "BR",
+   "evento": "Galípolo (BC) em jantar da ABBC",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Evento fechado à imprensa; repercussão pode chegar ao DI na terça.",
+   "tipo": "fala-bcb"
   },
   {
    "data": "2026-11-17",
@@ -145,6 +184,18 @@
   },
   {
    "data": "2026-11-19",
+   "hora": "09h",
+   "pais": "BR",
+   "evento": "Reunião do Conselho Monetário Nacional (CMN)",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Reunião ordinária do mês.",
+   "tipo": "cmn"
+  },
+  {
+   "data": "2026-11-19",
    "hora": "10h30",
    "pais": "US",
    "evento": "Pedidos de seguro-desemprego (semana até 14/nov)",
@@ -168,16 +219,8 @@
    "tipo": "philly-fed"
   },
   {
-   "data": "2026-11-20",
-   "pais": "BR",
-   "evento": "Consciência Negra — B3 fechada",
-   "importancia": 2,
-   "impacto": {},
-   "nota": "Feriado nacional; sem pregão. Bolsas americanas funcionam normalmente.",
-   "tipo": "feriado-b3"
-  },
-  {
-   "data": "2026-11-20",
+   "data": "2026-11-19",
+   "hora": "22h",
    "pais": "CN",
    "evento": "Taxa LPR de 1 e 5 anos (PBoC, nov)",
    "importancia": 1,
@@ -188,6 +231,15 @@
    },
    "nota": "Consenso Newsquawk: manutenção pelo 18º mês seguido. Mexe com minério e Vale.",
    "tipo": "lpr-china"
+  },
+  {
+   "data": "2026-11-20",
+   "pais": "BR",
+   "evento": "Consciência Negra — B3 fechada",
+   "importancia": 2,
+   "impacto": {},
+   "nota": "Feriado nacional; sem pregão. Bolsas americanas funcionam normalmente.",
+   "tipo": "feriado-b3"
   },
   {
    "data": "2026-11-20",
