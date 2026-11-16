@@ -2648,7 +2648,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T20:40-03:00",
+ "atualizado_em": "2026-11-16T20:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2656,7 +2656,9 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Folha"
+  "Folha",
+  "InfoMoney",
+  "Valor"
  ],
  "noticias": [
   {
@@ -2671,17 +2673,6 @@
    "tickers": [
     "PRIO3"
    ]
-  },
-  {
-   "titulo": "Dólar sobe para R$ 5,77 e fecha no maior valor desde abril de 2025",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-sobe-para-r-577-e-fecha-no-maior-valor-desde-abril-de-2025",
-   "publicado": "2026-11-16T20:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "CNBC's The China Connection newsletter: As Nike and Lululemon struggle in China, Xiaohongshu is helping local brands take off",
@@ -2709,6 +2700,28 @@
    ]
   },
   {
+   "titulo": "‘Fantasma’ de 2024 faz mercado temer nova disparada do dólar, alerta HSBC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdFg0TzN4VHNTb0gwZTVKQndheDZOMjAzdk4zODIzVWNXM0RZclNMTTZOblMwWUZLNFZIUGtXWmVkVzljVXhjQ0E1ekVjYk1HcHByRzMzcWpHZDZDQVk4WnE5R19nNnV0WDJDa0JCS1NtUWpvSlVBZnRVMS1OQ1RyUEJfVi1sbHVPeUlqYjg5TFVMREdxbjU3LXpnTlVJYk9kVTMwZXJZODFyZUFRTzI3V2pFb1RnS3p6VXdXLTlhMk9BVmVQM1JDNXo4d9IB2gFBVV95cUxOV2oxSkNVYWxFSUJ3RERQaWJfSTRfOGJQZXhUS0JpZjJyMEQtd0dqWFQ0VXFOVXhSMkdKaEtJbGMwc0R0QTVxSDNjTmZjUU9WdmFHM1hiNHZUNEVuTmI0WEptQ3VkZUpCMkZjNm02SFRjOWtnaWZnN1ZYQnViLWFYMmVNakI3SzlISnh3VmJYSlh2eURlS0tESnVuMng0MjAyUGt1eTJHVVNXa1VPN01JRTFrcWtJeEZIdExfV2JBWUdnQ0RhM21rSUFvRW9VOGpSM2Ryc19HLWs3QQ?oc=5",
+   "publicado": "2026-11-16T19:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Alckmin diz não ver 'razão sólida' para oscilação do dólar se manter",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMm4zMHo3bDNfUTcwX3g0Wll3dU9taEZWcnhKUURVUmhsNjZWWG11T3lWelRCeWpNNmdDdEFTV2VITmkxRGFqS01CeFZuWjNxNXVvR3M3Wk5mWXo2NjNvQ3Z5TVZZbzhLRlFkckJFLVFzckI1YVdNbFBUTjhVUHNsbV9tZGFCRVhpdDFRYkt3Z0IwUkFkU3RjUG9HSGpybkdpWS1DVUtPbXpnd1g2aEZySm5yWl9xYnlVampfek02b9IBzgFBVV95cUxNMUNhaS1fOVlvNVpRaGJIX2pxc2puQlBkeFQwbl9nRWw4QTBobl9JXzR5ckJDc0FjMEZlUkptaFo0OFgyMTRTZFlZYktBc2x3aTU5MkZTYl9CSW9zM0hTdzNIUmJSd2ZFanRMOFZqcDNBcDVLNXkzN3Q2Q1QzOGkzSlI5a1JTYXliTEROM0hWTmNtdkw4dVdzVWp4X1ZaRllTWVNfOTVfNkRwVFNMaE5FelhjOFBic0J1aFJnaTM3NklqQ1k0WEEwMm1qblRnQQ?oc=5",
+   "publicado": "2026-11-16T19:27-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
@@ -2726,6 +2739,53 @@
    "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
    "publicado": "2026-11-16T18:51-03:00",
    "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cai cerca de 2% e fica abaixo dos 170 mil pontos: o que explica forte queda?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNURULUlrMVE5NFRab3llNzJJYkcxTkRWN2xLUlgzZDZndUp0OTZwd0Fmdmw1Y0lVRHBxbDBpZC1TeWpQMV8zVzFnSEVXdk5UMUZBczhnT21UOUZpNEdNZ3J6WVg1ekp1S1Q1YUJueWh2WVB6eGpJek1kVWVGcEVsdjFuSWtHSVZhTjY5ZmNtTEZha1ZOTURzOF9XYTl1ZlFRbktKQzVaTGhOWXBfa0Z5czZOVGxxb1nSAbwBQVVfeXFMTU5FTXpaS0drcjZKLWJfcTJMTlNFaHg1UUUwMXZaU0JYM2ExNU9oOGJPNlFraXdIbF9uV3ZxVldfTHM4VWJjRnBLWVoxaF9TT1ZKeDEtd09xQk44UmczN1RjU0Z0YkZFQ09wU3RwUDlGbXViY19mdTFjSGVDVG5URnNmTTRZMHl4b0hhWTlRZFFQUEZvTXZjZTJnMVk0ZzRLOGVySE1BUm5rcnNsdmV5bGhBaEdKS1piMjBQOXg?oc=5",
+   "publicado": "2026-11-16T18:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar salta e fecha em R$ 5,77 com temor fiscal; bolsa cai e juros sobem",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdlZHNEo0SkR0cjZ2VzZxTF8yRnNOWEUwaGxLRUdWaHk5UTEwcnpzVW12cVNFcFNhUXBqd1JzSTl5elBLWHVUcGNQa0REOUcyemswcG1wS0pjdlJsZ0U2MDV5R2NDR296a29aaUVndVVFUTVJRjhqZ2xxd3lmQzRBM1o0ZjRzOXdVWlV6T0NTVURlemZCTVdmcEFwUkR3VE94Tlg4MXdR?oc=5",
+   "publicado": "2026-11-16T18:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa desaba quase 2% e dólar sobe 2,15%, com preocupações fiscais",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNE5FVFI0eUlOSE1tc0NKQWdoYWNxRE85UFdzSGZ1WlFsVXdxVU5sVzFObVZlNWhaTzhIUHpXMG1TQllFeEIyNDBHYXNjcnpJU3RhamppOVU1Qk5uRWk1SzNWOTVIZ3RMUGlLYXh4bzNtMm1hUG9WUXU2cTNVLUJXT21uc3dTMk1KQmJEUHNsNA?oc=5",
+   "publicado": "2026-11-16T18:25-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar supera R$ 5,77 e bate maior valor desde abril de 2025; Ibovespa cai mais de 1,8%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkVKaW4zeWRUU1o1akppRkdEX3pBQ0l6TjZqMU83cjJZSDJhNkhsQ2ZMYTdvbUdmUEFCaG1Fa1ByWEVVdkVtM2VyamFBeERRVjRvNVdFLUtCMUNPc3NKTFU0WXpoc1BWZS1kMHpwS3l0WHFIcWNLT2pKOUZQU3dGYWhCaXlYYlc0OXVvMGdkeVAtYWxBT0o4SWIxcVZlcGFCZXpGSFpDTW00amNFM3BtT0o5Z3Z3Z0ttdGpOUkt2T29UWG1YRHhkLS1GczJiUjZVWnNhQzU4RdIB3AFBVV95cUxNTDlNUElxTlR3WEVhV2o0WDNOMTcteHJHeEFtMDZ3cXFKUTdaQV9oZkJ4QjFLYjVELWF1YUFoRGdIZE80cEQ3dGQ0TlF5MU5rT0ZZTGlMU1Q3UTY2LW9RaGtkOFh0elJJWWZacHQzV3hOZk9XRlZ0d1ltcVVPOVdoWVRVempHVHlKZlZRRVV0aU04TFVuLXQzUWdPNWo5dHJyMXdxRkxtU1RjeEFIQkpFTFAzT3hmU1o3X3RSMmdHNy1OUHpOLTdnOUhGeVFwaEdxWF9ENlU1Y0paWXRv?oc=5",
+   "publicado": "2026-11-16T18:22-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
