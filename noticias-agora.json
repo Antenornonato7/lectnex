@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T13:50-03:00",
+  "atualizado_em": "2026-11-16T13:53-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -139,7 +139,11 @@
     ],
     [
      "13:35",
-     169854.0
+     169661.0
+    ],
+    [
+     "13:38",
+     169500.0
     ]
    ]
   },
@@ -380,7 +384,11 @@
     ],
     [
      "13:50",
-     5.7729
+     5.7722
+    ],
+    [
+     "13:53",
+     5.7702
     ]
    ]
   },
@@ -875,7 +883,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.16,
+    "ibov30": -0.27,
     "dolar30": 0.18
    },
    {
@@ -917,7 +925,7 @@
      "ABEV3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    }
   ]
  },
@@ -1738,7 +1746,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T13:50-03:00",
+ "atualizado_em": "2026-11-16T13:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1753,6 +1761,30 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+   "publicado": "2026-11-16T13:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Warren Buffett doa quase US$ 5,5 bilhões em ações para quatro fundações",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/warren-buffett-doa-quase-us-55-bilhoes-em-acoes-para-quatro-fundacoes.shtml",
+   "publicado": "2026-11-16T13:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar supera R$ 5,77 e bate maior valor desde abril de 2025; Ibovespa cai mais de 1%",
    "fonte": "Estadão",
@@ -1777,18 +1809,6 @@
    "tickers": [
     "ABEV3"
    ]
-  },
-  {
-   "titulo": "Nvidia fallout: Commerce targets loophole for China's data center use",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-   "publicado": "2026-11-16T13:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "U.S. crude oil declines to $87 a barrel on recovering Middle East exports",
@@ -1890,17 +1910,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Morgan Stanley rebaixa recomendação para Bolsa brasileira e prevê queda de 7%",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/morgan-stanley-rebaixa-recomendacao-para-bolsa-brasileira-e-preve-queda-de-7.shtml",
-   "publicado": "2026-11-16T12:31-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
