@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T17:38-03:00",
+  "atualizado_em": "2026-11-16T18:08-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -724,11 +724,35 @@
     ],
     [
      "17:35",
-     5.782
+     5.7836
     ],
     [
-     "17:38",
-     5.782
+     "17:40",
+     5.786
+    ],
+    [
+     "17:45",
+     5.785
+    ],
+    [
+     "17:50",
+     5.7856
+    ],
+    [
+     "17:55",
+     5.7869
+    ],
+    [
+     "18:00",
+     5.7907
+    ],
+    [
+     "18:05",
+     5.7904
+    ],
+    [
+     "18:08",
+     5.7901
     ]
    ]
   },
@@ -1506,6 +1530,19 @@
     "dolar30": 0.0
    },
    {
+    "hora": "17:07",
+    "titulo": "Juros futuros sobem com preocupações sobre política fiscal",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOWFZNmhjczAtSG9PWUZURWF5THQ0YVNrRHJIY2doRWJtakdPQ0Z4bmFaZENrRHZWLXJ2VUVQZDR0MXJ4Mks5czZVb1Ywa2JkbzNhWGFac0pPcE1KSFhVMmJWX2hIaHBFTzkyTTZ6MmdUTV91WkZNWVNvMHRPSERNa3pWOXpnbnhoOGgxZkJFeTJnc2d6Z3VFRE03bzItb1VFQTljYWZ6YmR3RHJpeEFvdA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.1
+   },
+   {
     "hora": "17:14",
     "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
     "fonte": "Money Times",
@@ -1516,7 +1553,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.13
    },
    {
     "hora": "17:18",
@@ -1530,7 +1567,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.19
    },
    {
     "hora": "17:35",
@@ -1543,57 +1580,50 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": 0.12
+   },
+   {
+    "hora": "17:35",
+    "titulo": "Morgan Stanley acende alerta para Bolsa brasileira e prevê Ibovespa a 160 mil pontos no fim de 2027",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOZG03WElsM2NNRlpWdEtQUFNac05rRFFuY3RUSW9Wc1JEaGE2eEFJZl9sNWtQNzVTbV9hRmc2Rm53WXpBZ0NmY1JJdGNBYWdkR1QyMURVZ084b3hvZmhwZ004YnZ2NmltS3NWeWt2cldIZ1BZTHVhUmZXXzNDVDI4cFBUa0I4d3FORTcySG1VamttNXVZU1FfZjNYMTl1WUZYQ0ZLM1pQa1NYUk9fMUw0YnRnVzlHQUFHeVV2cUVhbnZxOUNGc3FEZ3hsRTZBNm1pV0RKZzExamRTQ0RBQS1GYlY0NVEzanVDYjZuTm5JRdIB9AFBVV95cUxNdTBjd2hVZWE1Nk9NQ0pJRlJCQ2U5cHluMmQtRDc3Y2VYLWRnS3hTTXpCejBFMnc4VEQwYXhHT0ZBOGZsT19BdlhRVzhNYWpsU2UxZFJMS2VtdkZWQ3NKTXJ0MjVZa0loa3lHWUt5SGhERFRJMXF2SUxEZ2VvU3NOWFJNQ21VbEVKemFYLXd4am5Lbkh5ZGtMWEVFSHhJbnA0WUVIZ0dhc0w2cklsa0NpVTRVOG5USXd0bF9sSGNad1RBSHpaam5ISE9rSWV0YXdoWElNdTRWdUx4dm1rSmxGbmZuTzJmblVPXzBDV0NUUHhMemtX?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.12
+   },
+   {
+    "hora": "17:40",
+    "titulo": "Morgan Stanley acende alerta para Bolsa brasileira e prevê Ibovespa a 160 mil pontos no fim de 2027",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNU1pxbnAxcThsa3VWMXZBdUFqcWNGYXh2Yk5WSnhQZXpocjd5OWR1aFJBenlDX1lGWkZ5Q1VGcW9NbTdKMmNZWmY1UXFsS0N6cU5iX1g5b0k0U2NsOWNJX3Nyd2xCV3FKQVUwNlZnTkJ1V2QwcDlCZjRKbXUxVHlfOVoya3VLU2F0dkZ4eFlTVzlEb1VjT3hxOXEzLTVhdF9BWjhRaklFSWxmQlNqYjVlRW9lLXJXOVpPc3dwekh5REZIdGlWSUIzM01seV9fUWhDMi1Ib2FhZHlvQkFXZ3RKQVAyMnlJUEZjZ2dqS1k3cnVuZlVFRV82VjlR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.08
+   },
+   {
+    "hora": "17:57",
+    "titulo": "Análise: Dólar perto de R$ 6 pressiona Lula por medidas urgentes",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVh2b1dudXZWZ2c0QTVVV3hLaEFXcHFpV0s4UnNqbDc2SW15YzZ4Wk1tdGlOYnpZeWFmaUw0cUZONWtqNTJOQ3U3V2lZaWtuOWR2OUNzYlBTSVhsT0VRTWEtSUx2cXEtYkhUVnNaQm9MSUJCNDRqaV8wOG9Lb0VaRGRiem51elMwN1RJX3haSmpOUTJKaDlrczMtSmwzU3pQYmxraXlUTmhKSjhsaUZKdndhZ2pJOFFmQWtnazFnV2N5RFJqTUFRcUdzTC1jYjZXV1FnaWZEVEI?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Prévia do PIB, Boletim Focus, falas do Fed e mais destaques desta segunda-feira",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcC1HOUJPQk9RM1MyRWJjTGh4eW9sVDg5TjdYRGNnUi1FTkFoRm5CYnphVnh6SnFoX0ZxcHdrOVlrZk4wNnBVMERCaW4zc2JJb0s3Mk9fNGpUd3NzWVpnTVB6WW9xU0Z3OHRoNjhTbUFhNmJHNlhnb1F6U2JXTEp3V3JNbDZwQnBybmtmSzBKQkk5ck56RXFQVmZ5ODFyMU1H0gGgAUFVX3lxTE5wLUc5Qk9CT1EzUzJFYmNMaHh5b2xUODlON1hEY2dSLUVOQWhGbkJiemFWeHpKcWhfRnFwd2s5WWtmTjA2cFUwREJpbjNzYklvSzcyT180alR3c3NZWmdNUHpZb3FTRnc4dGg2OFNtQWE2Ykc2WGdvUXpTYldMSndXck1sNnBCcHJua2ZLMEpCSTlyTnpFcVBWZnk4MXIxTUc?oc=5",
-   "publicado": "2026-11-16T06:05-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar impulsiona soja e milho, mas negócios e exportações limitam altas",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYXU2MVlDTjRkYV9vdWVQQTZBZTFNNUIxWTlYNXhBcnJPRnZBVDFRcVNYV0tTd1QtOU1VM3E5ellmaFB4TExXbUh5MllvMG15MkdZSXNsWnZmNzhiU1U3N082SzNHWGxhdkVLZDVHZHdqRWE0eUNUb3hDb1dJT0s3dDY2aVFwLTU2Y3JKbzFNWFdHZG50Znl6WmF4SnpjUGM3cnVnVVpNX2c?oc=5",
-   "publicado": "2026-11-16T06:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "O céu é o limite para o dólar se o ajuste fiscal decepcionar, diz economista do UBS",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUl8yT2xFMVAzQzFRWW5ZRVRlVFVOZ1JpckJUQkY5S0YtRWJmcWVjUmRVeUJQVXcwX281bTRzQ0phRjJ1ZzVUeTA4RElJV2p5aVgxd2Nrek40c2tSNkFfbno2QzExYzJia09Oa2NmYTNkb0gwcm1Ma0tRNnp4X1pyN2k4blYtOEFmX3o4NGRySzJ3NHRXNHdpek82UWtSVzZ5cDlYRDJkRDVPS2hqZXRYTWt0QnJ3a2pX?oc=5",
-   "publicado": "2026-11-16T06:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "CSN desaba 12% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeHBUR2dPbkhsdktwWjJqdkM4eXBYdmE4NWJjVVI3bzBYTFNIeWNiR0NYWXZ2OFFhMVRiYXpTeVctcU9Yc2NTSERwdkl2YVpRX3ZSUHVfbE9zd1c0WFd1Q0QtcGRleG9kVkI0ekp1NGhrNVNYRHJRUDhFdVBwLUs1ZWFMSHh1R2lZQ1BOaXV4M2VFQnZOY2VuSXdVZWtzMlBMZm5EVFI1TjRXN1ZtMzlFMVU2WFBoSW1rMERrczUzZld0NXluSDY5aVBreHIyZFV3X205akZEMW9VMmZtQ0R6dkxBdw?oc=5",
-   "publicado": "2026-11-16T06:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "3T26: XP (XPBR31), Pagbank (PAGS), Ambipar (AMBP3) e mais; veja quais empresas divulgam balanços nesta semana",
    "fonte": "Money Times",
@@ -2462,6 +2492,17 @@
    "tickers": []
   },
   {
+   "titulo": "Juros futuros sobem com preocupações sobre política fiscal",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOWFZNmhjczAtSG9PWUZURWF5THQ0YVNrRHJIY2doRWJtakdPQ0Z4bmFaZENrRHZWLXJ2VUVQZDR0MXJ4Mks5czZVb1Ywa2JkbzNhWGFac0pPcE1KSFhVMmJWX2hIaHBFTzkyTTZ6MmdUTV91WkZNWVNvMHRPSERNa3pWOXpnbnhoOGgxZkJFeTJnc2d6Z3VFRE03bzItb1VFQTljYWZ6YmR3RHJpeEFvdA?oc=5",
+   "publicado": "2026-11-16T17:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
@@ -2489,6 +2530,39 @@
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmZTaXdyZFFmWjhEcGx4RlpfY3J2ZGdLcG9UQUIwb0ZHamRRMUN1RW03MkpzUVdzTUVmcjNaVGktVFNDOEJTazc4UTgzSXc1eWxDdDNtY3FfZnIyWnprel9JakRuSWMwbW1Bb3cxZjhyclhYOC1NX1c4WGtMVXR1YzA5YVZLZllQRWRnOU8tM0xkV1RVOGFfbmd4RDFuVmtQVGptd1Brdmh5MjFHQUIw?oc=5",
    "publicado": "2026-11-16T17:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley acende alerta para Bolsa brasileira e prevê Ibovespa a 160 mil pontos no fim de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOZG03WElsM2NNRlpWdEtQUFNac05rRFFuY3RUSW9Wc1JEaGE2eEFJZl9sNWtQNzVTbV9hRmc2Rm53WXpBZ0NmY1JJdGNBYWdkR1QyMURVZ084b3hvZmhwZ004YnZ2NmltS3NWeWt2cldIZ1BZTHVhUmZXXzNDVDI4cFBUa0I4d3FORTcySG1VamttNXVZU1FfZjNYMTl1WUZYQ0ZLM1pQa1NYUk9fMUw0YnRnVzlHQUFHeVV2cUVhbnZxOUNGc3FEZ3hsRTZBNm1pV0RKZzExamRTQ0RBQS1GYlY0NVEzanVDYjZuTm5JRdIB9AFBVV95cUxNdTBjd2hVZWE1Nk9NQ0pJRlJCQ2U5cHluMmQtRDc3Y2VYLWRnS3hTTXpCejBFMnc4VEQwYXhHT0ZBOGZsT19BdlhRVzhNYWpsU2UxZFJMS2VtdkZWQ3NKTXJ0MjVZa0loa3lHWUt5SGhERFRJMXF2SUxEZ2VvU3NOWFJNQ21VbEVKemFYLXd4am5Lbkh5ZGtMWEVFSHhJbnA0WUVIZ0dhc0w2cklsa0NpVTRVOG5USXd0bF9sSGNad1RBSHpaam5ISE9rSWV0YXdoWElNdTRWdUx4dm1rSmxGbmZuTzJmblVPXzBDV0NUUHhMemtX?oc=5",
+   "publicado": "2026-11-16T17:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley acende alerta para Bolsa brasileira e prevê Ibovespa a 160 mil pontos no fim de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNU1pxbnAxcThsa3VWMXZBdUFqcWNGYXh2Yk5WSnhQZXpocjd5OWR1aFJBenlDX1lGWkZ5Q1VGcW9NbTdKMmNZWmY1UXFsS0N6cU5iX1g5b0k0U2NsOWNJX3Nyd2xCV3FKQVUwNlZnTkJ1V2QwcDlCZjRKbXUxVHlfOVoya3VLU2F0dkZ4eFlTVzlEb1VjT3hxOXEzLTVhdF9BWjhRaklFSWxmQlNqYjVlRW9lLXJXOVpPc3dwekh5REZIdGlWSUIzM01seV9fUWhDMi1Ib2FhZHlvQkFXZ3RKQVAyMnlJUEZjZ2dqS1k3cnVuZlVFRV82VjlR?oc=5",
+   "publicado": "2026-11-16T17:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Análise: Dólar perto de R$ 6 pressiona Lula por medidas urgentes",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVh2b1dudXZWZ2c0QTVVV3hLaEFXcHFpV0s4UnNqbDc2SW15YzZ4Wk1tdGlOYnpZeWFmaUw0cUZONWtqNTJOQ3U3V2lZaWtuOWR2OUNzYlBTSVhsT0VRTWEtSUx2cXEtYkhUVnNaQm9MSUJCNDRqaV8wOG9Lb0VaRGRiem51elMwN1RJX3haSmpOUTJKaDlrczMtSmwzU3pQYmxraXlUTmhKSjhsaUZKdndhZ2pJOFFmQWtnazFnV2N5RFJqTUFRcUdzTC1jYjZXV1FnaWZEVEI?oc=5",
+   "publicado": "2026-11-16T17:57-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -2523,12 +2597,13 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T17:38-03:00",
+ "atualizado_em": "2026-11-16T18:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
@@ -2537,6 +2612,51 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Análise: Dólar perto de R$ 6 pressiona Lula por medidas urgentes",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVh2b1dudXZWZ2c0QTVVV3hLaEFXcHFpV0s4UnNqbDc2SW15YzZ4Wk1tdGlOYnpZeWFmaUw0cUZONWtqNTJOQ3U3V2lZaWtuOWR2OUNzYlBTSVhsT0VRTWEtSUx2cXEtYkhUVnNaQm9MSUJCNDRqaV8wOG9Lb0VaRGRiem51elMwN1RJX3haSmpOUTJKaDlrczMtSmwzU3pQYmxraXlUTmhKSjhsaUZKdndhZ2pJOFFmQWtnazFnV2N5RFJqTUFRcUdzTC1jYjZXV1FnaWZEVEI?oc=5",
+   "publicado": "2026-11-16T17:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
+   "publicado": "2026-11-16T17:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
+   "publicado": "2026-11-16T17:44-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Morgan Stanley acende alerta para Bolsa brasileira e prevê Ibovespa a 160 mil pontos no fim de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNU1pxbnAxcThsa3VWMXZBdUFqcWNGYXh2Yk5WSnhQZXpocjd5OWR1aFJBenlDX1lGWkZ5Q1VGcW9NbTdKMmNZWmY1UXFsS0N6cU5iX1g5b0k0U2NsOWNJX3Nyd2xCV3FKQVUwNlZnTkJ1V2QwcDlCZjRKbXUxVHlfOVoya3VLU2F0dkZ4eFlTVzlEb1VjT3hxOXEzLTVhdF9BWjhRaklFSWxmQlNqYjVlRW9lLXJXOVpPc3dwekh5REZIdGlWSUIzM01seV9fUWhDMi1Ib2FhZHlvQkFXZ3RKQVAyMnlJUEZjZ2dqS1k3cnVuZlVFRV82VjlR?oc=5",
+   "publicado": "2026-11-16T17:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar tem maior alta desde reeleição de Lula e vai a R$ 5,77, pico em 19 meses",
    "fonte": "Exame",
@@ -2568,6 +2688,17 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros futuros sobem com preocupações sobre política fiscal",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOWFZNmhjczAtSG9PWUZURWF5THQ0YVNrRHJIY2doRWJtakdPQ0Z4bmFaZENrRHZWLXJ2VUVQZDR0MXJ4Mks5czZVb1Ywa2JkbzNhWGFac0pPcE1KSFhVMmJWX2hIaHBFTzkyTTZ6MmdUTV91WkZNWVNvMHRPSERNa3pWOXpnbnhoOGgxZkJFeTJnc2d6Z3VFRE03bzItb1VFQTljYWZ6YmR3RHJpeEFvdA?oc=5",
+   "publicado": "2026-11-16T17:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -2641,30 +2772,6 @@
    "tickers": []
   },
   {
-   "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-   "publicado": "2026-11-16T16:13-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado precifica possibilidade de alta de juros em dezembro e Selic de 15,50% em 2027",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdGdiTUtELU9DbURoQ2wzNEhFSnNGdjlYVUctSWxPQk0wRWlJeVM3WjAyMmI5TGNuWHNza3dWcVE3SlEyMzdKaWVzaXhBWEpxUEFiR2dlODNlMGRXbHg0UWNINTNxMTdwMmlFSE9CY2JEdlhnMFpmWG1fbmhkWHJIazJRVllqZWJiY2Iwalg3TjlCUG1hbjc2dlgzbDZ0UFQ1VHlBbF9uSVUzazlxX0NnSU9KdjQ1R05pOXU3Z3hCNU9PaVZBMGJ5Q3VmMlJqV0FlYTBYUVFFZDVpUTIxay1BRXY5ZWVRVmcwWVliMmx3UjFMZVnSAYICQVVfeXFMTTFmWHJMUzRfY085R1ZTVzZlbjNncUYxQmJsN0QxU2w4MkZwTU9ONDV6NzZJX1JSSWJ0MThiVFQtR1dmRGRoemZTckRtUG9HZWdnSDFJRVhsM3o5RDh6NjFBVDgzRjk4UXU3a2FWMlY4RHdEeFFjazY1eDc5NmRYUldEa0M4OUJNYU9CTTJtakxRV19qNWpMRnB4QVdSZmtfT2lpMkl5ekZ5TVUtUW5sdzBZZ0xoT1YwRjFnajBXSEwzdjBkLWxtYXQwNHNPc1VQV00xbl9qc19TZ0RNcDZ5ZUN6ZWgzc0pTZzJhZmRfcndWSEhNVkV6MW9uY2FRR1RCQnVR?oc=5",
-   "publicado": "2026-11-16T15:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
@@ -2685,31 +2792,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Justiça determina que Genial e BTG prestem informações sobre negócio entre os bancos",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/justica-pede-informacoes-sobre-negocio-entre-genial-e-btg.shtml",
-   "publicado": "2026-11-16T14:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BPAC11"
-   ]
-  },
-  {
-   "titulo": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-   "publicado": "2026-11-16T14:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
