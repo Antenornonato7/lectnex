@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T18:10-03:00",
+  "atualizado_em": "2026-11-16T18:13-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -752,7 +752,11 @@
     ],
     [
      "18:10",
-     5.7903
+     5.7889
+    ],
+    [
+     "18:13",
+     5.7893
     ]
    ]
   },
@@ -2597,7 +2601,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T18:10-03:00",
+ "atualizado_em": "2026-11-16T18:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2605,24 +2609,10 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
-  "InfoMoney",
-  "Money Times",
-  "Valor"
+  "InfoMoney"
  ],
  "noticias": [
-  {
-   "titulo": "Análise: Dólar perto de R$ 6 pressiona Lula por medidas urgentes",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVh2b1dudXZWZ2c0QTVVV3hLaEFXcHFpV0s4UnNqbDc2SW15YzZ4Wk1tdGlOYnpZeWFmaUw0cUZONWtqNTJOQ3U3V2lZaWtuOWR2OUNzYlBTSVhsT0VRTWEtSUx2cXEtYkhUVnNaQm9MSUJCNDRqaV8wOG9Lb0VaRGRiem51elMwN1RJX3haSmpOUTJKaDlrczMtSmwzU3pQYmxraXlUTmhKSjhsaUZKdndhZ2pJOFFmQWtnazFnV2N5RFJqTUFRcUdzTC1jYjZXV1FnaWZEVEI?oc=5",
-   "publicado": "2026-11-16T17:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
    "fonte": "CNBC",
@@ -2649,45 +2639,11 @@
   {
    "titulo": "Morgan Stanley acende alerta para Bolsa brasileira e prevê Ibovespa a 160 mil pontos no fim de 2027",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNU1pxbnAxcThsa3VWMXZBdUFqcWNGYXh2Yk5WSnhQZXpocjd5OWR1aFJBenlDX1lGWkZ5Q1VGcW9NbTdKMmNZWmY1UXFsS0N6cU5iX1g5b0k0U2NsOWNJX3Nyd2xCV3FKQVUwNlZnTkJ1V2QwcDlCZjRKbXUxVHlfOVoya3VLU2F0dkZ4eFlTVzlEb1VjT3hxOXEzLTVhdF9BWjhRaklFSWxmQlNqYjVlRW9lLXJXOVpPc3dwekh5REZIdGlWSUIzM01seV9fUWhDMi1Ib2FhZHlvQkFXZ3RKQVAyMnlJUEZjZ2dqS1k3cnVuZlVFRV82VjlR?oc=5",
-   "publicado": "2026-11-16T17:40-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar tem maior alta desde reeleição de Lula e vai a R$ 5,77, pico em 19 meses",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmZTaXdyZFFmWjhEcGx4RlpfY3J2ZGdLcG9UQUIwb0ZHamRRMUN1RW03MkpzUVdzTUVmcjNaVGktVFNDOEJTazc4UTgzSXc1eWxDdDNtY3FfZnIyWnprel9JakRuSWMwbW1Bb3cxZjhyclhYOC1NX1c4WGtMVXR1YzA5YVZLZllQRWRnOU8tM0xkV1RVOGFfbmd4RDFuVmtQVGptd1Brdmh5MjFHQUIw?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOZG03WElsM2NNRlpWdEtQUFNac05rRFFuY3RUSW9Wc1JEaGE2eEFJZl9sNWtQNzVTbV9hRmc2Rm53WXpBZ0NmY1JJdGNBYWdkR1QyMURVZ084b3hvZmhwZ004YnZ2NmltS3NWeWt2cldIZ1BZTHVhUmZXXzNDVDI4cFBUa0I4d3FORTcySG1VamttNXVZU1FfZjNYMTl1WUZYQ0ZLM1pQa1NYUk9fMUw0YnRnVzlHQUFHeVV2cUVhbnZxOUNGc3FEZ3hsRTZBNm1pV0RKZzExamRTQ0RBQS1GYlY0NVEzanVDYjZuTm5JRdIB9AFBVV95cUxNdTBjd2hVZWE1Nk9NQ0pJRlJCQ2U5cHluMmQtRDc3Y2VYLWRnS3hTTXpCejBFMnc4VEQwYXhHT0ZBOGZsT19BdlhRVzhNYWpsU2UxZFJMS2VtdkZWQ3NKTXJ0MjVZa0loa3lHWUt5SGhERFRJMXF2SUxEZ2VvU3NOWFJNQ21VbEVKemFYLXd4am5Lbkh5ZGtMWEVFSHhJbnA0WUVIZ0dhc0w2cklsa0NpVTRVOG5USXd0bF9sSGNad1RBSHpaam5ISE9rSWV0YXdoWElNdTRWdUx4dm1rSmxGbmZuTzJmblVPXzBDV0NUUHhMemtX?oc=5",
    "publicado": "2026-11-16T17:35-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar dispara 2,15% com desconfiança sobre política fiscal e termina no maior nível desde abril de 2025",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTzdVNkFkSkN6NUFkbnNxU1J4M0dYNkplaXE2VW50WTNlaHR6cGJGTjgzbWs3V2d2Rnhpb1QtZk5MNE5KaU5pRlRMamcxOTVsaEs3dTd5aVZBYTVITWlZU3pINDdvbGJ4Mm5uazlNY2JjZDB0V3FwcU1wR0ZBbS0wSjlKNjBCZW9xbkM3eVo4eFI0SzBkcWRncV80cjRZU0REU3MzYTZsZ3FkNUt6aWNuZ2Nfc2x2SFF0T19SUzRNYmNpTlVRSTFyYXQ2cFF5NEdITVNhelhZMWZZTmkyTFNtN1BUc0I3VnpCWUJpRkhSTGpON3lKMnlYWGd30gGIAkFVX3lxTE9NYkVqSHkxX2djVGJQMWZpNlFneUNoMG9qOGtEdTUxZTAxcTRlYU5keW55UzVhS1dBUDRpeDFtMFVITnlOVUdtVDhwVHVYWDdpVmZTeDJtNGM2aDFrRWlGbVRSVS1lVl9GLTRvOXVvd3U4RHcwaGcyLXhkYWtnUUlTdkJ1Z0htcU5MVWQyZUpCRXI2TzNqQ2FDMkgwSEIxQ2hRajk1ZC1DeTBNWjNnc25ZMHNpZlJsQ25ndGU2RFQyNzdFUVJSNW9PQ2pzT3dZNU4wcnpQQVZyOW1IVGtXZXZxWGNGTlBtNjRBLTRqYXBRdTVvek1PVG1kNkEyOG9BdE1GckVucnpHVw?oc=5",
-   "publicado": "2026-11-16T17:18-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar à vista fecha no maior valor em mais de 18 meses com incertezas fiscais no Brasil",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmk1YkRfMWZEMnZtZkVVbW1qVHdVbVZNSHoxWmFZY3l6c0RHOFRLNXdVeVVDbkxLYnZMRWJTaHdtY3IzTjNyTkF3Sno1T3RrZV9IcU5KZzNuWHNZSExWNlIzcE5hajI3OTJ0dzFlZ3NvN0lfRGNHWUc0RkhOa0FhZjBZUFNDcXZEY1lDU1A2Rnc1ZW5mVGx3ODE3d1Q3Wm9QWHZ6UkV6WQ?oc=5",
-   "publicado": "2026-11-16T17:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
+    "WIN"
    ],
    "tickers": []
   },
@@ -2748,28 +2704,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "Nem o ouro escapa: dólar forte e temor de juros mais altos derrubam o metal a mínima de um ano",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUHBnb3NhdGlNaEhxeDlOdUNCeVRyOU11ZUhWM1RxdzRvS0xvOEZkS2lBbnF0MTJWRUpfTUxKS3VSdGhQT0lwX0lfYWIyMTZTTXBDOXh5NjJ4dUx2UngxUEdfYklrcG5NaFBFY3gwMkdCUllIcnRkT3VRR2M5Rm12YkdzSVpONXdVWlJrZDFFcE1ZTkpRdTRSMEhJYzRESmtic3ZOVmNEUHVWd1psTUU0bFVRbjFJdjRubkhZRjFTeFJCSFRkUGRST3g2OHJId2piaDAxMUFIb2w5dDBkQklyOG5NVTFvYlp3dWx2SVNaakpxQQ?oc=5",
-   "publicado": "2026-11-16T16:21-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Aposta do estrangeiro contra o real sobe US$ 20 bi desde as eleições",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMjdIemtDbFEyYVY0SUdGN2NCa0xTYkR0T2h2UmpwY2pQVVM3aXBGbDlBY3NWc2ZvMEQwbDZGQWZDd1ZYTWQ5SkJkQThDTTZBdUVvWjNPdERDV2s5SG8wRjEzOUg1RU5wVXRJdE9ER09BamliSjRkUzRveEpyaEdHUWZJRE1Hc1J0aVVCYXdObDhTODJRdDhGU3Rjd3pnRng4MkUwRWZFZXBvc2FQS3RMTVhmbThxclJYUzJfYXFuNWNSWDYtU2tF0gHWAUFVX3lxTFB1c2l4MTQ5WWg2RWtVeEJlcGZObDFpWGcwMEstWk56Vm1IY1BKLTFNcnk1MFNldGRmaVBJTDNTZzcwMGNfMzYxZFNObF9ncDMySHhzYXJiUHloVW1aWUVNMW5MNjBJUDZnUVg3Q21UVGRObVJFU1dkWHZwNnhxLUFoejNtNUI0ODZZSGtzcVFDV0pUX2RPU00wbVp0Y3BEbVNLQ0NGWmxMY0dxMVNPbUZBbWYyQ2pvMDlxMEU2SGltLWxYdWpSSUNSZ3NJZ1JjOWI5eFV3ZkE?oc=5",
-   "publicado": "2026-11-16T16:15-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
