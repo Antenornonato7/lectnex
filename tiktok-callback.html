@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar TikTok · Lectnex</title>
+    <meta name="description" content="Página técnica de retorno da autorização do TikTok da Lectnex.">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://lectnex.com.br/tiktok-callback.html">
+    <meta name="theme-color" content="#060D17">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lectnex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lectnex Terminal">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Conectar TikTok · Lectnex">
+    <meta property="og:description" content="Termos de uso do Lectnex: conteúdo educacional, sem recomendação de investimento, fontes dos dados, ferramentas gratuitas, redes sociais e contato.">
+    <meta property="og:url" content="https://lectnex.com.br/tiktok-callback.html">
+    <meta property="og:image" content="https://lectnex.com.br/assets/brand/og-sobre.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Conectar TikTok · Lectnex">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Conectar TikTok · Lectnex">
+    <meta name="twitter:description" content="Termos de uso do Lectnex: conteúdo educacional, sem recomendação de investimento, fontes dos dados, ferramentas gratuitas, redes sociais e contato.">
+    <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-sobre.jpg">
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261116c">
+    <link rel="expect" href="#lx-pronto" blocking="render">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261116c">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261116c">
+</head>
+<body data-page="tiktok" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="max-w-2xl mx-auto px-4 sm:px-6 py-12">
+        <span class="term-label text-lect-teal font-bold">TIKTOK</span>
+        <h1 class="font-display text-3xl font-bold mt-2">Conectar o TikTok da Lectnex</h1>
+        <div id="tk-box" class="term-panel p-5 mt-6 space-y-4"></div>
+        <p class="text-xs text-slate-500 mt-6">Página técnica: recebe a autorização do TikTok para o aplicativo da Lectnex publicar os vídeos da própria Lectnex. Não coleta dados de visitantes.</p>
+    </main>
+    <script>
+    (function () {
+        const q = new URLSearchParams(location.search), box = document.getElementById('tk-box');
+        const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+        if (q.get('error')) { box.innerHTML = '<p class="text-rose-600 font-bold">O TikTok recusou a autorização.</p><p class="text-sm">' + esc(q.get('error_description') || q.get('error')) + '</p>'; return; }
+        const code = q.get('code');
+        if (!code) { box.innerHTML = '<p class="text-sm">Nenhum código recebido. Abra o link de autorização enviado no Telegram.</p>'; return; }
+        box.innerHTML = '<p class="font-bold text-emerald-600">Autorizado! Falta um passo.</p>' +
+            '<p class="text-sm">1. Copie o código abaixo (vale poucos minutos):</p>' +
+            '<textarea id="tk-code" readonly class="lx-input font-mono text-xs w-full h-24">' + esc(code) + '</textarea>' +
+            '<button id="tk-copy" class="min-h-[44px] px-4 bg-lect-teal text-white font-mono text-xs font-bold">COPIAR CÓDIGO</button>' +
+            '<p class="text-sm">2. No GitHub, abra <a class="text-lect-teal underline" href="https://github.com/Antenornonato7/lectnex/actions/workflows/tiktok.yml" target="_blank" rel="noopener">Actions → TikTok</a>, clique em <strong>Run workflow</strong>, escolha <strong>conectar</strong>, cole o código e rode.</p>';
+        document.getElementById('tk-copy').onclick = async () => { try { await navigator.clipboard.writeText(code); } catch (e) { document.getElementById('tk-code').select(); document.execCommand('copy'); } document.getElementById('tk-copy').textContent = 'COPIADO ✓'; };
+    })();
+    </script>
+    </main>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js?v=20261116c"></script><span id="lx-pronto" hidden></span>
+</body>
+</html>

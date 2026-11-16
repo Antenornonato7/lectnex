@@ -1,0 +1,37 @@
+# TikTok: conectar a conta da Lectnex (link → conectar) e conferir (teste). A publicação acontece junto com os Reels aprovados no Telegram.
+name: TikTok
+run-name: TikTok ${{ inputs.acao }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      acao:
+        description: 'link (manda o link de autorização no Telegram), conectar (cole o código da página do site) ou teste'
+        type: choice
+        options: [link, conectar, teste]
+        default: link
+      codigo:
+        description: 'Só para conectar: o código mostrado em lectnex.com.br/tiktok-callback.html'
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  tiktok:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: TikTok ${{ inputs.acao }}
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_CODE: ${{ inputs.codigo }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$TIKTOK_CLIENT_KEY" ] || [ -z "$TIKTOK_CLIENT_SECRET" ]; then echo "::error::Faltam os segredos TIKTOK_CLIENT_KEY e TIKTOK_CLIENT_SECRET."; exit 1; fi
+          pip install -q cryptography
+          python3 coletor/tiktok.py ${{ inputs.acao }}

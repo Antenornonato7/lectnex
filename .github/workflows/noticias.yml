@@ -32,7 +32,11 @@ jobs:
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
-        run: python3 coletor/noticias.py
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+        run: |
+          [ -n "$TIKTOK_CLIENT_KEY" ] && { pip install -q cryptography || true; }
+          python3 coletor/noticias.py
       - name: Atualizar a cópia de reserva na main (a cada ~30 min)
         run: |
           [ $(( $(date +%M | sed 's/^0//') % 30 )) -lt 10 ] || exit 0

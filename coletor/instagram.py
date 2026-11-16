@@ -522,6 +522,15 @@ def processar():
             except Exception as e:
                 p['erro_fb'] = str(e)[:200]
                 fbmsg = f'\n⚠️ Facebook: {str(e)[:150]}'
+            if p.get('video') and p.get('tipo') != 'story' and os.environ.get('TIKTOK_CLIENT_KEY'):
+                try:  # Reels também no TikTok (enquanto o app não for auditado, sai como "só eu")
+                    import tiktok
+                    tid, priv = tiktok.publicar(p['video'], p.get('legenda', ''))
+                    p['tiktok'] = tid
+                    fbmsg += '\n✅ TikTok: enviado' + (' (privado até a auditoria do app)' if priv == 'SELF_ONLY' else '')
+                except Exception as e:
+                    p['erro_tiktok'] = str(e)[:200]
+                    fbmsg += f'\n⚠️ TikTok: {str(e)[:150]}'
             try:
                 tg('editMessageReplyMarkup', chat_id=admin(), message_id=mid, reply_markup={'inline_keyboard': []})
                 tg('sendMessage', chat_id=admin(), text='✅ Publicado no Instagram.' + (f'\n{link}' if link else '') + fbmsg, reply_to_message_id=mid, disable_web_page_preview=True)
