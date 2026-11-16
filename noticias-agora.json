@@ -1,7 +1,20 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T11:08-03:00",
+  "atualizado_em": "2026-11-16T11:10-03:00",
+  "ibov": {
+   "anterior": 172457.77,
+   "pontos": [
+    [
+     "10:50",
+     170722.0
+    ],
+    [
+     "10:55",
+     170664.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.6666,
    "pontos": [
@@ -107,11 +120,11 @@
     ],
     [
      "11:05",
-     5.7184
+     5.7189
     ],
     [
-     "11:08",
-     5.7189
+     "11:10",
+     5.7204
     ]
    ]
   },
@@ -127,6 +140,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.08
    },
    {
@@ -140,6 +154,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.08
    },
    {
@@ -152,6 +167,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.07
    },
    {
@@ -164,6 +180,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.07
    },
    {
@@ -177,6 +194,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.02
    },
    {
@@ -190,6 +208,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.01
    },
    {
@@ -203,6 +222,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.01
    },
    {
@@ -217,6 +237,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.01
    },
    {
@@ -229,6 +250,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.32
    },
    {
@@ -241,6 +263,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.4
    },
    {
@@ -254,6 +277,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.63
    },
    {
@@ -267,6 +291,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.69
    },
    {
@@ -280,6 +305,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.13
    },
    {
@@ -292,6 +318,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.23
    },
    {
@@ -304,6 +331,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.21
    },
    {
@@ -317,6 +345,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -329,7 +358,8 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": -0.18
+    "ibov30": null,
+    "dolar30": -0.17
    },
    {
     "hora": "10:39",
@@ -344,7 +374,8 @@
     "tickers": [
      "VALE3"
     ],
-    "dolar30": -0.18
+    "ibov30": null,
+    "dolar30": -0.17
    },
    {
     "hora": "10:40",
@@ -357,6 +388,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.03
    },
    {
@@ -370,6 +402,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -971,7 +1004,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T11:08-03:00",
+ "atualizado_em": "2026-11-16T11:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1118,18 +1151,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa mira recuperação e dólar entra em sobrecompra: o que esperar nesta segunda?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZU1LQ3QxX1J2WXlUUHJxQUxrUS1vTVZkMVBOOVg3Qk5XVkJ6enNPWjZ1aThSOFgxMkUwb05wYThHOVR0eWhXTm9hNXYxVWl5UkNldVFncXp0RlpiMngyM3N0UDBWa29QRjlLQ3RXS0xLaG1UWFoxVkhLc0E5WjFvcGZBNldBclVhUEwtTVVtV2dzWTFHU0N1Qzdfd1pLUGNxOFBsUzRTZ3dfekNDWi1Wbmw3Y1YzWFV5emEwLVBn0gHDAUFVX3lxTE1QbUQtV0VnVkRkVWlSb1RkNU11QXBGTWh1d2hibjV4emVGWkNMaWF2NjQ3NGt5MUZ3NHFsNEg1SGR4UVVVZ3hJYWoyUGJQd2dXV09LSmtHQ0tYNHA2OVRGX2xOdEhEbXliQ1c4OUpsOVlwcm5Eb2F3MkhORXF6TTJmQnhoOW8tV0RkZlF5ZmpjaXdMZ2VfT29hWmtMQzRyQVFwT3BOMzlocEU2dU5SaUtPYUtxVUwwaTlVTXdqcHNmbk1OYw?oc=5",
-   "publicado": "2026-11-16T09:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar supera R$ 5,70 e Bolsa recua com política fiscal do governo Lula no radar",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-politica-fiscal-do-governo-lula-no-radar.shtml",
@@ -1175,6 +1196,17 @@
    "ativos": [
     "WIN",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa Futuro cai com IBC-Br e cautela externa antes de balanço da Nvidia",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOb0F1MDc0UVZDbG1NM0pHd1FreVZNZndoX1g3QmhrOGNmNjBvZmVkSlpCZmU1OE5kaHBoTm1JWXZDaWFzUnZMdElYNzQwanJraVZBTkY4YXZYamN5QVNEY0lpVW8wWHR3V2ZST1RManA1NmJRTFF6ZV9pb2pqZ3ZBUVZQRVhmc1kxeG5nZ1QxWkdhX0lGUmw2TGdOWDRPZHlRRWkzdHU2XzJsRVJNMWlSOXBDbjfSAboBQVVfeXFMTUhxa0Zhd3lpTDdJYnNWXzBKa3pFR1VEbHo0N3ZaY2oxdGZHSmRPdmFXM1ZLbElnWk55QjhIOXlJcFRtbUlqUm0tMjFCalpQVWVGa0FfNEZDOFFHZUdiZTRsS3I2RjdqaHpaeHBjZzNIdFQyNzYweU1NZmZPc2Y2ZFpvSnpyRnI1clVLa2RrNWpoVFJ2dUpDSWxPVlhma0VWbHlhSWo0SDItZWlhUC04RkV3NDAtT09oWlZn?oc=5",
+   "publicado": "2026-11-16T09:13-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   }
