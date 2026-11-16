@@ -402,4 +402,11 @@ if __name__ == '__main__':
             print(f'::warning::Instagram: {e.__class__.__name__}: {e}')
         if not laco or time.time() + 150 > fim:
             break
-        time.sleep(150)
+        # Notícias a cada 150 s; os botões do Instagram são conferidos a cada 50 s nesse intervalo
+        for _ in range(2):
+            time.sleep(50)
+            try:
+                instagram.processar()
+            except Exception as e:
+                print(f'::warning::Instagram: {e.__class__.__name__}: {e}')
+        time.sleep(50)
