@@ -90,8 +90,11 @@ def tg(metodo, **dados):
     tok = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip()
     req = urllib.request.Request(f'https://api.telegram.org/bot{tok}/{metodo}', data=json.dumps(dados).encode(),
                                  headers={'Content-Type': 'application/json'})
-    with urllib.request.urlopen(req, timeout=40) as r:
-        return json.loads(r.read())
+    try:
+        with urllib.request.urlopen(req, timeout=40) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f'Telegram {metodo} HTTP {e.code}: {e.read().decode()[:200]}') from None
 
 
 def admin():
