@@ -31,15 +31,15 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebPage", "name": "Futuros B3: WIN, WDO, Risco e Vencimentos | Lectnex", "url": "https://lectnex.com.br/futuros.html", "description": "Ferramentas para day trade de mini índice e mini dólar: contrato vigente, vencimentos B3, calculadora de risco, curva de Kelly, drawdown simulado, IR e dólar justo.", "inLanguage": "pt-BR", "isPartOf": {"@type": "WebSite", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261116a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261116b">
     <link rel="expect" href="#lx-pronto" blocking="render">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261116a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261116a">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261116b">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261116b">
 </head>
 <body data-page="futuros" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -304,6 +304,7 @@
                             <button type="button" data-t="put" class="py-2 font-bold">PUT · aposta na queda</button>
                         </div>
                         <div class="grid grid-cols-2 gap-3 font-mono text-xs">
+                            <label class="col-span-2"><span class="term-label block mb-1">Código da opção (opcional, ex.: PETRL460) · preenche tipo, ativo e vencimento</span><input id="ro-o-codigo" type="text" maxlength="10" autocomplete="off" spellcheck="false" placeholder="PETRL460" class="lx-input uppercase"><span id="ro-o-codigo-hint" class="block mt-1 text-[10px] text-slate-500 leading-snug"></span></label>
                             <label><span class="term-label block mb-1">Ativo-objeto (ex.: PETR4)</span><input id="ro-o-ticker" type="text" maxlength="7" autocomplete="off" spellcheck="false" value="PETR4" class="lx-input uppercase"></label>
                             <label><span class="term-label block mb-1">Preço do ativo hoje (R$)</span><input id="ro-o-spot" type="number" step="0.01" min="0.01" value="45.00" class="lx-input"></label>
                             <label><span class="term-label block mb-1">Strike / exercício (R$)</span><input id="ro-o-strike" type="number" step="0.01" min="0.01" value="46.00" class="lx-input"></label>
@@ -412,7 +413,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261116a"></script><span id="lx-pronto" hidden></span>
+    <script src="assets/lectnex-core.js?v=20261116b"></script><span id="lx-pronto" hidden></span>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -854,7 +855,7 @@
         });
 
         const roN = id => { const v = parseFloat($(id).value); return isFinite(v) ? v : 0; };
-        const roTk = id => ($(id).value || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 7);
+        const roTk = (id, n = 7) => ($(id).value || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, n);
         const r2 = v => Math.round(v * 100) / 100;
         const roCard = (rot, val, sub, cor = '', destaque = false) => destaque
             ? `<div class="p-3.5 bg-lect-navy text-white border-l-4 border-lect-teal"><span class="text-[10px] text-slate-300 uppercase block">${rot}</span><strong class="text-xl block mt-1">${val}</strong><span class="text-[10px] text-slate-300 block mt-0.5">${sub}</span></div>`
@@ -887,6 +888,42 @@
             }
             roCalc();
         }
+        // Leitor do código da opção pela regra da bolsa (não é dado da B3): RAIZ + letra do mês/tipo + número (+ W1…W5 nas semanais).
+        // A–L = CALL jan–dez · M–X = PUT jan–dez. Vencimento mensal: 3ª sexta-feira (dia útil anterior se for feriado).
+        // O número lembra o strike, mas não é garantido (muda com dividendos): só sugerimos, com aviso.
+        let roVenc = null;
+        async function roLerCodigo(silencioso) {
+            const cod = roTk('ro-o-codigo', 10), h = $('ro-o-codigo-hint');
+            const m = cod.match(/^([A-Z]{4})([A-X])(\d{1,4})(W([1-5]))?$/);
+            roVenc = null;
+            if (!cod) { h.textContent = ''; roCalc(); return; }
+            if (!m) { h.textContent = cod.length >= 6 ? 'Código não reconhecido. Formato: 4 letras + letra do mês + número (ex.: PETRL460).' : ''; roCalc(); return; }
+            const [, raiz, letra, numTxt, , sem] = m, idx = letra.charCodeAt(0) - 65, call = idx < 12, mes = idx % 12;
+            const hoje = LX.todayBRT();
+            const venc = y => {
+                if (!sem || sem === '3') return LX.optionExpiry(y, mes);
+                const f = new Date(y, mes, 1); let d = new Date(y, mes, 1 + (5 - f.getDay() + 7) % 7 + (+sem - 1) * 7);
+                if (d.getMonth() !== mes) return null;
+                while (!LX.isBusinessDay(d)) d.setDate(d.getDate() - 1);
+                return d;
+            };
+            let y = hoje.getFullYear(), d = venc(y);
+            if (!d || d < hoje) { y++; d = venc(y); }
+            roVenc = d ? { d, du: LX.businessDaysBetween(hoje, d, true), sem: !!sem } : null;
+            if ((roTipo === 'call') !== call) { roTipo = call ? 'call' : 'put'; roBotoes('ro-tipo', 't', roTipo); }
+            const c = await roCotacoes(), atual = roTk('ro-o-ticker');
+            if (!atual.startsWith(raiz)) $('ro-o-ticker').value = [raiz + '4', raiz + '3', raiz + '11'].find(t => c.m[t]) || raiz + '4';
+            const pAtivo = c.m[roTk('ro-o-ticker')];
+            if (!silencioso && pAtivo) $('ro-o-spot').value = r2(pAtivo).toFixed(2);
+            const n = +numTxt, spot = roN('ro-o-spot');
+            const sugestao = [n, n / 10, n / 100].filter(v => v > 0).sort((a, b) => Math.abs(a - spot) - Math.abs(b - spot))[0];
+            if (!silencioso && sugestao) $('ro-o-strike').value = sugestao.toFixed(2);
+            h.innerHTML = `<strong>${call ? 'CALL' : 'PUT'}</strong> de ${LX.monthName[mes]}/${y}${sem ? ` · semanal (W${sem})` : ''} · ativo ${roTk('ro-o-ticker')} · ` +
+                (d ? `vence ${LX.weekday(d)} ${LX.br(d)} (${roVenc.du} dia${roVenc.du === 1 ? '' : 's'} úteis)` : 'data não encontrada') +
+                ` · strike sugerido ${LX.brl(sugestao)}: <span class="text-lect-orange">confira na corretora</span> (muda com dividendos).`;
+            roCalc();
+        }
+        $('ro-o-codigo').addEventListener('input', () => { clearTimeout(roT); roT = setTimeout(() => roLerCodigo(), 300); });
         let roT = 0;
         ['ro-ticker', 'ro-o-ticker'].forEach(id => $(id).addEventListener('input', () => { clearTimeout(roT); if (roTk(id).length >= 5) roT = setTimeout(() => roBuscaPreco(id), 350); }));
         document.querySelectorAll('#ro-lado button').forEach(b => b.onclick = () => {
@@ -959,10 +996,14 @@
                 roCard('Perda máxima', '−' + LX.brl(custo), `${LX.pct(custo / cap * 100)} do capital · é o prêmio pago`, 'text-rose-600') +
                 roCard('Ponto de equilíbrio', LX.brl(be), `no vencimento · ${tk} precisa ${distBe >= 0 ? 'subir' : 'cair'} ${LX.pct(Math.abs(distBe), 1)}`) +
                 roCard('Situação', sit[0], sit[1]);
+            const dDu = roVenc && roVenc.du > 0 ? roVenc.du : 0;
             $('ro-extra').innerHTML = roMini('Valor intrínseco', `${LX.brl(intr)} por opção`) + roMini('Valor de tempo (some até o vencimento)', `${LX.brl(extr)} por opção`) +
-                roMini(`Cada R$ 1 ${call ? 'acima' : 'abaixo'} do equilíbrio`, `+${LX.brl(q)} no vencimento`);
+                roMini(`Cada R$ 1 ${call ? 'acima' : 'abaixo'} do equilíbrio`, `+${LX.brl(q)} no vencimento`) +
+                (roVenc ? roMini('Vencimento', `${LX.weekday(roVenc.d)} ${LX.br(roVenc.d)} · ${roVenc.du} dia${roVenc.du === 1 ? '' : 's'} úteis`) +
+                    roMini('Valor de tempo que derrete por dia', dDu ? `~${LX.brl(extr / dDu)} por opção · ~${LX.brl(q * extr / dDu)} na posição` : 'vence hoje') : '');
             const av = [];
             if (q === 0) av.push(`Com ${LX.brl(cap * rp)} de risco não dá o mínimo de 100 opções a ${LX.brl(P)} (custaria ${LX.brl(100 * P)}, ${LX.pct(100 * P / cap * 100, 1)} do capital).`);
+            if (P < intr - 0.005) av.push(`O prêmio digitado (${LX.brl(P)}) está abaixo do valor intrínseco (${LX.brl(intr)}): confira o prêmio na corretora.`);
             if (qIn > 0 && q !== qIn) av.push(`Opções são negociadas em múltiplos de 100: usei ${q}.`);
             if (q > 0 && custo / cap > rp * 1.001) av.push(`Atenção: a perda máxima (${LX.pct(custo / cap * 100, 1)} do capital) passa do seu risco por operação (${LX.pct(rp * 100, 1)}).`);
             roAviso(av.join('<br>'));
@@ -973,19 +1014,19 @@
             $('ro-payoff-tb').innerHTML = tb; $('ro-payoff').classList.toggle('hidden', q === 0);
             $('ro-edu').innerHTML = q > 0 ? `Comprando <strong>${q} ${nomeTipo}</strong> de ${tk} com strike ${LX.brl(K)} a ${LX.brl(P)}, você paga <strong>${LX.brl(custo)}</strong>, e isso é tudo o que pode perder. ` +
                 `No vencimento, só há lucro com ${tk} ${call ? 'acima' : 'abaixo'} de <strong>${LX.brl(be)}</strong> (${LX.pct(Math.abs(distBe), 1)} de ${distBe >= 0 ? 'alta' : 'queda'}). ` +
-                `Dos ${LX.brl(P)} de prêmio, ${LX.brl(extr)} são valor de tempo, que derrete a cada dia: por isso a maioria das opções fora do dinheiro vence valendo zero.` : 'Ajuste capital, risco ou prêmio para ver a quantidade.';
+                `Dos ${LX.brl(P)} de prêmio, ${LX.brl(extr)} são valor de tempo, que derrete a cada dia${dDu ? ` (em média ${LX.brl(extr / dDu)} por dia útil até ${LX.brShort(roVenc.d)}, e mais rápido perto do vencimento)` : ''}: por isso a maioria das opções fora do dinheiro vence valendo zero.` : 'Ajuste capital, risco ou prêmio para ver a quantidade.';
             roUltimo = { texto: `Compra de ${nomeTipo} de ${tk} (strike ${LX.brl(K)}, prêmio ${LX.brl(P)}): ${q} opções, perda máxima ${LX.brl(custo)}, equilíbrio ${LX.brl(be)}`, q };
         }
 
         // Link compartilhável das abas AÇÕES e OPÇÕES (?ativo=ACAO&tk=PETR4&...#risco)
         const RO_CAMPOS = {
             ACAO: [['tk', 'ro-ticker', 't'], ['cap', 'ro-cap'], ['risco', 'ro-risco'], ['entrada', 'ro-entrada'], ['stop', 'ro-stop'], ['alvo', 'ro-alvo'], ['lote', 'ro-lote'], ['custo', 'ro-custo']],
-            OPCAO: [['tk', 'ro-o-ticker', 't'], ['spot', 'ro-o-spot'], ['strike', 'ro-o-strike'], ['premio', 'ro-o-premio'], ['cap', 'ro-o-cap'], ['risco', 'ro-o-risco'], ['qtd', 'ro-o-qtd']]
+            OPCAO: [['cod', 'ro-o-codigo', 't'], ['tk', 'ro-o-ticker', 't'], ['spot', 'ro-o-spot'], ['strike', 'ro-o-strike'], ['premio', 'ro-o-premio'], ['cap', 'ro-o-cap'], ['risco', 'ro-o-risco'], ['qtd', 'ro-o-qtd']]
         };
         function roLink() {
             const q = new URLSearchParams({ ativo: roModo });
             if (roModo === 'ACAO') q.set('lado', roLado); else q.set('tipo', roTipo);
-            RO_CAMPOS[roModo].forEach(([k, id, t]) => q.set(k, t ? roTk(id) : String(roN(id))));
+            RO_CAMPOS[roModo].forEach(([k, id, t]) => { const v = t ? roTk(id, 10) : String(roN(id)); if (v) q.set(k, v); });
             return `${location.origin}${location.pathname}?${q}#risco`;
         }
         function roLer(q) {
@@ -994,12 +1035,13 @@
             if (m === 'OPCAO' && q.get('tipo') === 'put') { roTipo = 'put'; roBotoes('ro-tipo', 't', roTipo); }
             RO_CAMPOS[m].forEach(([k, id, t]) => {
                 if (!q.has(k)) return;
-                if (t) { const v = (q.get(k) || '').toUpperCase(); if (/^[A-Z0-9]{3,7}$/.test(v)) $(id).value = v; return; }
+                if (t) { const v = (q.get(k) || '').toUpperCase(); if (/^[A-Z0-9]{3,10}$/.test(v)) $(id).value = v; return; }
                 const v = parseFloat(q.get(k));
                 if (id === 'ro-lote') { if (v === 1 || v === 100) $(id).value = String(v); return; }
                 if (isFinite(v) && v >= 0 && v < 1e9) $(id).value = v;
             });
             roCotOk = true; abrirAba(m);
+            if (m === 'OPCAO' && $('ro-o-codigo').value) roCotacoes().then(() => roLerCodigo(true));
             const av = $('ro-compartilhada'); av.classList.remove('hidden'); av.classList.add('flex');
             LX.track('calculadora_link_aberto', { ativo: m });
         }
@@ -1007,6 +1049,7 @@
             history.replaceState(null, '', location.pathname + '#risco');
             $('ro-compartilhada').classList.add('hidden'); $('ro-compartilhada').classList.remove('flex');
             document.querySelectorAll('#ro-acao-in input, #ro-opc-in input').forEach(i => { i.value = i.defaultValue; });
+            roVenc = null; $('ro-o-codigo-hint').textContent = '';
             $('ro-lote').selectedIndex = 0; roLado = 'compra'; roTipo = 'call'; roBotoes('ro-lado', 'l', roLado); roBotoes('ro-tipo', 't', roTipo);
             roBuscaPreco(roModo === 'ACAO' ? 'ro-ticker' : 'ro-o-ticker', true); roCalc();
         };
