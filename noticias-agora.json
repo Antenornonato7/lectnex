@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T17:50-03:00",
+  "atualizado_em": "2026-11-16T17:52-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -303,7 +303,7 @@
     ],
     [
      "17:00",
-     169091.0
+     169143.0
     ]
    ]
   },
@@ -736,7 +736,11 @@
     ],
     [
      "17:50",
-     5.7853
+     5.786
+    ],
+    [
+     "17:52",
+     5.7847
     ]
    ]
   },
@@ -2556,7 +2560,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T17:50-03:00",
+ "atualizado_em": "2026-11-16T17:52-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2570,6 +2574,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
+   "publicado": "2026-11-16T17:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
    "fonte": "CNBC",
@@ -2691,18 +2707,6 @@
    "publicado": "2026-11-16T16:15-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-   "publicado": "2026-11-16T16:13-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
