@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T18:25-03:00",
+  "atualizado_em": "2026-11-16T18:28-03:00",
   "ibov": {
    "anterior": 172457.77,
    "pontos": [
@@ -764,7 +764,11 @@
     ],
     [
      "18:25",
-     5.786
+     5.7863
+    ],
+    [
+     "18:28",
+     5.7863
     ]
    ]
   },
@@ -1611,6 +1615,20 @@
     "dolar30": 0.19
    },
    {
+    "hora": "17:18",
+    "titulo": "Dólar dispara 2,15% com desconfiança sobre política fiscal e termina no maior nível desde abril de 2025",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPTWJFakh5MV9nY1RiUDFmaTZRZ3lDaDBvajhrRHU1MWUwMXE0ZWFOZHlueVM1YUtXQVA0aXgxbTBVSE55TlVHbVQ4cFR1WFg3aVZmU3gybTRjNmgxa0VpRm1UUlUtZVZfRi00bzl1b3d1OER3MGhnMi14ZGFrZ1FJU3ZCdWdIbXFOTFVkMmVKQkVyNk8zakNhQzJIMEhCMUNoUWo5NWQtQ3kwTVozZ3NuWTBzaWZSbENuZ3RlNkRUMjc3RVFSUjVvT0Nqc093WTVOMHJ6UEFWcjltSFRrV2V2cVhjRk5QbTY0QS00amFwUXU1b3pNT1RtZDZBMjhvQXRNRnJFbnJ6R1fSAYgCQVVfeXFMT01iRWpIeTFfZ2NUYlAxZmk2UWd5Q2gwb2o4a0R1NTFlMDFxNGVhTmR5bnlTNWFLV0FQNGl4MW0wVUhOeU5VR21UOHBUdVhYN2lWZlN4Mm00YzZoMWtFaUZtVFJVLWVWX0YtNG85dW93dThEdzBoZzIteGRha2dRSVN2QnVnSG1xTkxVZDJlSkJFcjZPM2pDYUMySDBIQjFDaFFqOTVkLUN5ME1aM2dzblkwc2lmUmxDbmd0ZTZEVDI3N0VRUlI1b09DanNPd1k1TjByelBBVnI5bUhUa1dldnFYY0ZOUG02NEEtNGphcFF1NW96TU9UbWQ2QTI4b0F0TUZyRW5yekdX?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.19
+   },
+   {
     "hora": "17:35",
     "titulo": "Dólar tem maior alta desde reeleição de Lula e vai a R$ 5,77, pico em 19 meses",
     "fonte": "Exame",
@@ -1660,33 +1678,11 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": -0.01
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Day Trade hoje (16): Ibovespa retoma alta; recuperação vai ganhar força?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdnh0MlZzWm1CZVpnSUFGRVVBVUxtb3hwbEZHem9sT2F6QzhRTFNoSTBGM3NuWkpEYk5veUt1aElXd0xBc09qa2hGbjdUREJuMXlGYnFvYjFMU2ZUVnFwS2U4WU1XZjRDdk10UGlmd1BLaV9kcktWakJxR053ZGRrRG1CQWZmOFV20gGOAUFVX3lxTE42SDN0eFdUMXV5Mk9aeUdSdzc5ZDBkR05BT2l0QjYtTF9nSzBfMmJWWnhvTXRNU1ZmR0YwVnRTcnhMZ2oyYUFudk9wN3JJOS00TXFNaEMwN0ExQ1FfcHY5eUhmenEybDVnWk9rS3hlUjZvYnc1ekJESThXU042bTZWTDhldHN3eXgxMmVDTFE?oc=5",
-   "publicado": "2026-11-16T07:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mini-índice (WINZ26): IBC-Br e fiscal testam recuperação nesta segunda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPeWpRMnRwb2dDamR2ZFhMa0hWTUN5ZlV4RVVtVXpVSnFZRHVXRUwzS3ZobVJyVXBQU0YwWGRBa1gyQXRwMFZfbnVzYzQweUtFeVU3Zl9zUU4wa0ItOTk4RWd1RFlNMUhtcUIwZHh5OFBtMXppV1Bja3NuaGd3R1QwTmRSTVhWU0hKbkJBZUplTHLSAZYBQVVfeXFMTmNGdmxnSkJndGx6YlBsZVdhQzZmbUFfTU9iMnRQd3FlR1piT1RVUmh3aGc2ZlJTeTBQd1kzeS1VcHJLbjNlWTBMVEVRMGhiVDVWRnBpa20tUDkzWXdMQTF0M0QwaWV0NzJBZjU2RDZWS2VIdllrMzVOeExKenNKUkxBODZrQ1VEMDFaclBoSVg0amw3T2V3?oc=5",
-   "publicado": "2026-11-16T07:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Minidólar (WDOZ26) mantém viés de alta; veja suportes e resistências",
    "fonte": "InfoMoney",
@@ -2567,6 +2563,18 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar dispara 2,15% com desconfiança sobre política fiscal e termina no maior nível desde abril de 2025",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPTWJFakh5MV9nY1RiUDFmaTZRZ3lDaDBvajhrRHU1MWUwMXE0ZWFOZHlueVM1YUtXQVA0aXgxbTBVSE55TlVHbVQ4cFR1WFg3aVZmU3gybTRjNmgxa0VpRm1UUlUtZVZfRi00bzl1b3d1OER3MGhnMi14ZGFrZ1FJU3ZCdWdIbXFOTFVkMmVKQkVyNk8zakNhQzJIMEhCMUNoUWo5NWQtQ3kwTVozZ3NuWTBzaWZSbENuZ3RlNkRUMjc3RVFSUjVvT0Nqc093WTVOMHJ6UEFWcjltSFRrV2V2cVhjRk5QbTY0QS00amFwUXU1b3pNT1RtZDZBMjhvQXRNRnJFbnJ6R1fSAYgCQVVfeXFMT01iRWpIeTFfZ2NUYlAxZmk2UWd5Q2gwb2o4a0R1NTFlMDFxNGVhTmR5bnlTNWFLV0FQNGl4MW0wVUhOeU5VR21UOHBUdVhYN2lWZlN4Mm00YzZoMWtFaUZtVFJVLWVWX0YtNG85dW93dThEdzBoZzIteGRha2dRSVN2QnVnSG1xTkxVZDJlSkJFcjZPM2pDYUMySDBIQjFDaFFqOTVkLUN5ME1aM2dzblkwc2lmUmxDbmd0ZTZEVDI3N0VRUlI1b09DanNPd1k1TjByelBBVnI5bUhUa1dldnFYY0ZOUG02NEEtNGphcFF1NW96TU9UbWQ2QTI4b0F0TUZyRW5yekdX?oc=5",
+   "publicado": "2026-11-16T17:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar tem maior alta desde reeleição de Lula e vai a R$ 5,77, pico em 19 meses",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmZTaXdyZFFmWjhEcGx4RlpfY3J2ZGdLcG9UQUIwb0ZHamRRMUN1RW03MkpzUVdzTUVmcjNaVGktVFNDOEJTazc4UTgzSXc1eWxDdDNtY3FfZnIyWnprel9JakRuSWMwbW1Bb3cxZjhyclhYOC1NX1c4WGtMVXR1YzA5YVZLZllQRWRnOU8tM0xkV1RVOGFfbmd4RDFuVmtQVGptd1Brdmh5MjFHQUIw?oc=5",
@@ -2609,6 +2617,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar atinge o maior valor em 19 meses e ativos caem com dúvidas sobre ajuste fiscal",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcEx0MDhRbXcwV3Z2Q2RsUTNsNE5TaE8yd3ExN0NsS2VodmpXZ3VNdk0yUEs4c2RielNJVkZ6Q3pZaTd6Wmt2Uk1FcXJQSkxFc0RkYzdmQms2MmRSS3N3Zi1yM2dlMElmbWpVako0SU4yN0RPRFVfeHpfZG4xZWU2MVk2QUI0Vk5IV2hRcTRXbGFIX0hmOHFrNWEzV0laVGVkZVY3UFNRendVNnZaYjVuaEVhV0czUXJENE44Zl9HeUJrZ25XTVhv0gHbAUFVX3lxTE9WTy1oVUpUV09UMnhsRV9jbDFsc0lRVXdZWVY3ZklqUTg1eWdYOVQwaUVhSTdPS2c2VHpZUFRnc3FVTE0ybWpsTjktQmRiZ2g2OUZZVzR3ZTgzZHVBWHVIWEZ1TkZyU29Qd0xHN2xHUElnQlJpdUM5NVZhWG1KRERIWVhXUTZHSWpFRUo3WTlKd1I0MmNabXZGTTdSQnBlY1NZUUVFSjhYWk4td1NVYVh0eTAzc1drbzFoRzBQQ0trcnJ0X2VLU1dRYUZTMWNub2NfYkRFWWNMVmdOTQ?oc=5",
+   "publicado": "2026-11-16T18:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2638,7 +2658,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T18:25-03:00",
+ "atualizado_em": "2026-11-16T18:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2653,6 +2673,30 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar atinge o maior valor em 19 meses e ativos caem com dúvidas sobre ajuste fiscal",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcEx0MDhRbXcwV3Z2Q2RsUTNsNE5TaE8yd3ExN0NsS2VodmpXZ3VNdk0yUEs4c2RielNJVkZ6Q3pZaTd6Wmt2Uk1FcXJQSkxFc0RkYzdmQms2MmRSS3N3Zi1yM2dlMElmbWpVako0SU4yN0RPRFVfeHpfZG4xZWU2MVk2QUI0Vk5IV2hRcTRXbGFIX0hmOHFrNWEzV0laVGVkZVY3UFNRendVNnZaYjVuaEVhV0czUXJENE44Zl9HeUJrZ25XTVhv0gHbAUFVX3lxTE9WTy1oVUpUV09UMnhsRV9jbDFsc0lRVXdZWVY3ZklqUTg1eWdYOVQwaUVhSTdPS2c2VHpZUFRnc3FVTE0ybWpsTjktQmRiZ2g2OUZZVzR3ZTgzZHVBWHVIWEZ1TkZyU29Qd0xHN2xHUElnQlJpdUM5NVZhWG1KRERIWVhXUTZHSWpFRUo3WTlKd1I0MmNabXZGTTdSQnBlY1NZUUVFSjhYWk4td1NVYVh0eTAzc1drbzFoRzBQQ0trcnJ0X2VLU1dRYUZTMWNub2NfYkRFWWNMVmdOTQ?oc=5",
+   "publicado": "2026-11-16T18:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petróleo fecha em queda de 3% com aumento da oferta no Oriente Médio",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVnRhWU9TQW1Pa2w4VHF5UXhuZkp6X0VxWEhNeDNjQzhFaElET25Dem83OW1WSGM0cUVlNVo1LUNXWmJ5eWNXZFJBam9GeFJPeGNEVmhBYkRxT2xWRHdTMjVfOTFSTEZzQl9sU1JDT2h2bjBwZG5fZ1V0b3d0bjZtOVJaTmprY3dERHRlRUJUUmpBTGpraXFRM05FSWFhdVpDNkUweWttM000d9IBrwFBVV95cUxOeDZ6T3ZzRlRHdzcxNm10Y0VsZ2JmYjNSVW1jcWNnMjBwSTFwMWFKMlFzZmtnNkNCNjVudzh6WlZSeTJvMmRPMXVUY05MRVdGbnpmQ242Q1lHRWl5OXh2NmFBWWdFSmhmNnU1eTRpTXlabnVXRmU1MktMNVdBX0lUTFhzcW84Mmx6RFRHaDlBMy1DaFIzTlk3ZmNQLVNMWEVua1FIQ2N2RzdWd3prN0Vv?oc=5",
+   "publicado": "2026-11-16T18:17-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar supera R$ 5,77 e bate maior valor desde abril de 2025; Ibovespa cai mais de 1,8%",
    "fonte": "Estadão",
@@ -2724,7 +2768,7 @@
   {
    "titulo": "Dólar dispara 2,15% com desconfiança sobre política fiscal e termina no maior nível desde abril de 2025",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTzdVNkFkSkN6NUFkbnNxU1J4M0dYNkplaXE2VW50WTNlaHR6cGJGTjgzbWs3V2d2Rnhpb1QtZk5MNE5KaU5pRlRMamcxOTVsaEs3dTd5aVZBYTVITWlZU3pINDdvbGJ4Mm5uazlNY2JjZDB0V3FwcU1wR0ZBbS0wSjlKNjBCZW9xbkM3eVo4eFI0SzBkcWRncV80cjRZU0REU3MzYTZsZ3FkNUt6aWNuZ2Nfc2x2SFF0T19SUzRNYmNpTlVRSTFyYXQ2cFF5NEdITVNhelhZMWZZTmkyTFNtN1BUc0I3VnpCWUJpRkhSTGpON3lKMnlYWGd30gGIAkFVX3lxTE9NYkVqSHkxX2djVGJQMWZpNlFneUNoMG9qOGtEdTUxZTAxcTRlYU5keW55UzVhS1dBUDRpeDFtMFVITnlOVUdtVDhwVHVYWDdpVmZTeDJtNGM2aDFrRWlGbVRSVS1lVl9GLTRvOXVvd3U4RHcwaGcyLXhkYWtnUUlTdkJ1Z0htcU5MVWQyZUpCRXI2TzNqQ2FDMkgwSEIxQ2hRajk1ZC1DeTBNWjNnc25ZMHNpZlJsQ25ndGU2RFQyNzdFUVJSNW9PQ2pzT3dZNU4wcnpQQVZyOW1IVGtXZXZxWGNGTlBtNjRBLTRqYXBRdTVvek1PVG1kNkEyOG9BdE1GckVucnpHVw?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPTWJFakh5MV9nY1RiUDFmaTZRZ3lDaDBvajhrRHU1MWUwMXE0ZWFOZHlueVM1YUtXQVA0aXgxbTBVSE55TlVHbVQ4cFR1WFg3aVZmU3gybTRjNmgxa0VpRm1UUlUtZVZfRi00bzl1b3d1OER3MGhnMi14ZGFrZ1FJU3ZCdWdIbXFOTFVkMmVKQkVyNk8zakNhQzJIMEhCMUNoUWo5NWQtQ3kwTVozZ3NuWTBzaWZSbENuZ3RlNkRUMjc3RVFSUjVvT0Nqc093WTVOMHJ6UEFWcjltSFRrV2V2cVhjRk5QbTY0QS00amFwUXU1b3pNT1RtZDZBMjhvQXRNRnJFbnJ6R1fSAYgCQVVfeXFMT01iRWpIeTFfZ2NUYlAxZmk2UWd5Q2gwb2o4a0R1NTFlMDFxNGVhTmR5bnlTNWFLV0FQNGl4MW0wVUhOeU5VR21UOHBUdVhYN2lWZlN4Mm00YzZoMWtFaUZtVFJVLWVWX0YtNG85dW93dThEdzBoZzIteGRha2dRSVN2QnVnSG1xTkxVZDJlSkJFcjZPM2pDYUMySDBIQjFDaFFqOTVkLUN5ME1aM2dzblkwc2lmUmxDbmd0ZTZEVDI3N0VRUlI1b09DanNPd1k1TjByelBBVnI5bUhUa1dldnFYY0ZOUG02NEEtNGphcFF1NW96TU9UbWQ2QTI4b0F0TUZyRW5yekdX?oc=5",
    "publicado": "2026-11-16T17:18-03:00",
    "impacto": "alto",
    "ativos": [
@@ -2788,19 +2832,6 @@
    ],
    "tickers": [
     "ITUB4"
-   ]
-  },
-  {
-   "titulo": "Esteves, do BTG, vê urgência no ajuste fiscal e espera ação de Lula",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeGFsUUU1NnI5R1gtOGh5SFhudk1OTXhaaFBSMmptNzlSZ1dLcWh5ODI3b0JXWDlBc1prd29IalMwZ3NKc2FNeHc4U0t1U0U4Z0p4UWRLaHZtb2tPN1RaMTRTNFNZSlZBZUFmNi1Ic0RnbGJkNkw3VENEUElCSlVKaXVZZWZXM1lUU1hBMEZ0cl9Pejd1cUd4cktaSkdRYlFSR0U0UUM4ZC1oZjhzVlluMEhmZjZtLXhEZFJpX1dJaF84Zw?oc=5",
-   "publicado": "2026-11-16T16:46-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": [
-    "BPAC11"
    ]
   },
   {
