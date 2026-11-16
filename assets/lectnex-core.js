@@ -581,6 +581,7 @@
                 <a href="placar.html" class="block hover:text-lect-tealLight">Placar de acertos</a>
                 <a href="status.html" class="block hover:text-lect-tealLight">Status do site</a>
                 <a href="privacidade.html" class="block hover:text-lect-tealLight">Privacidade e cookies</a>
+                <a href="termos.html" class="block hover:text-lect-tealLight">Termos de uso</a>
                 <button type="button" id="lx-install" class="hidden mt-2 items-center gap-1.5 px-2.5 py-1.5 border border-lect-tealLight/50 text-lect-tealLight hover:bg-lect-tealLight/10"><i class="ph-bold ph-download-simple"></i>Instalar app no celular</button>
                 <a href="https://www.instagram.com/lectnex.oficial/" target="_blank" rel="noopener" class="mt-2 flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-instagram-logo"></i>Instagram @lectnex.oficial</a>
                 <a href="https://www.tiktok.com/@lectnex" target="_blank" rel="noopener" class="flex items-center gap-1.5 hover:text-lect-tealLight"><i class="ph-bold ph-tiktok-logo"></i>TikTok @lectnex</a>
