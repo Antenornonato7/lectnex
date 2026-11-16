@@ -305,6 +305,15 @@ def reenviar():
     note('notice', f'{feitos} pedido(s) reenviado(s) com o botão de publicar.')
 
 
+def responder(cq, texto):
+    """Resposta ao toque no botão. Se o toque é antigo (o laço roda a cada poucos minutos), o Telegram recusa a resposta:
+    isso não pode impedir a publicação."""
+    try:
+        tg('answerCallbackQuery', callback_query_id=cq['id'], text=texto)
+    except Exception:
+        pass
+
+
 def processar():
     if not (os.environ.get('TELEGRAM_BOT_TOKEN') and admin()):
         return
@@ -331,29 +340,35 @@ def processar():
             continue
         de = str((cq.get('from') or {}).get('id', ''))
         if de != admin():
-            tg('answerCallbackQuery', callback_query_id=cq['id'], text='Só o dono pode aprovar.')
+            responder(cq, 'Só o dono pode aprovar.')
             continue
         partes = (cq.get('data') or '').split(':', 2)
         if len(partes) != 3 or partes[0] != 'ig':
             continue
         p = next((x for x in f['pedidos'] if x['id'] == partes[2]), None)
         if not p or p['status'] != 'aguardando':
-            tg('answerCallbackQuery', callback_query_id=cq['id'], text='Este post não está mais aguardando.')
+            responder(cq, 'Este post não está mais aguardando.')
             continue
         mid = (cq.get('message') or {}).get('message_id')
         if partes[1] == 'del':
             p['status'] = 'descartado'
-            tg('answerCallbackQuery', callback_query_id=cq['id'], text='Descartado.')
-            tg('editMessageReplyMarkup', chat_id=admin(), message_id=mid, reply_markup={'inline_keyboard': []})
-            tg('sendMessage', chat_id=admin(), text='🗑️ Post descartado.', reply_to_message_id=mid)
+            responder(cq, 'Descartado.')
+            try:
+                tg('editMessageReplyMarkup', chat_id=admin(), message_id=mid, reply_markup={'inline_keyboard': []})
+                tg('sendMessage', chat_id=admin(), text='🗑️ Post descartado.', reply_to_message_id=mid)
+            except Exception:
+                pass
             continue
-        tg('answerCallbackQuery', callback_query_id=cq['id'], text='Publicando no Instagram…')
+        responder(cq, 'Publicando no Instagram…')
         try:
             link = publicar(p)
             p['status'], p['publicado'], p['link'] = 'publicado', agora.isoformat(timespec='minutes'), link
-            tg('editMessageReplyMarkup', chat_id=admin(), message_id=mid, reply_markup={'inline_keyboard': []})
-            tg('sendMessage', chat_id=admin(), text='✅ Publicado no Instagram.' + (f'\n{link}' if link else ''), reply_to_message_id=mid)
             note('notice', f'Instagram: {p["id"]} publicado')
+            try:
+                tg('editMessageReplyMarkup', chat_id=admin(), message_id=mid, reply_markup={'inline_keyboard': []})
+                tg('sendMessage', chat_id=admin(), text='✅ Publicado no Instagram.' + (f'\n{link}' if link else ''), reply_to_message_id=mid)
+            except Exception:
+                pass
         except Exception as e:
             p['erro'] = str(e)[:200]
             tg('sendMessage', chat_id=admin(), text=f'⚠️ Não consegui publicar: {esc(str(e)[:200])}\nOs botões continuam valendo para tentar de novo.', parse_mode='HTML', reply_to_message_id=mid)
