@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-16",
-  "atualizado_em": "2026-11-16T09:55-03:00",
+  "atualizado_em": "2026-11-16T09:58-03:00",
   "dolar": {
    "anterior": 5.6666,
    "pontos": [
@@ -51,7 +51,11 @@
     ],
     [
      "09:55",
-     5.6849
+     5.6872
+    ],
+    [
+     "09:58",
+     5.6869
     ]
    ]
   },
@@ -117,7 +121,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": -0.1
+    "dolar30": -0.06
    },
    {
     "hora": "09:31",
@@ -130,7 +134,20 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "dolar30": -0.1
+   },
+   {
+    "hora": "09:31",
+    "titulo": "Mercado reduz projeção para inflação e PIB no ano e prevê Selic mais alta em 2027",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/mercado-reduz-projecao-inflacao-pib-preve-selic-mais-alta-2027/",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": -0.1
    },
    {
     "hora": "09:34",
@@ -165,6 +182,19 @@
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ2dOZExWejhKb2tpWFVJSUJvNGRkUzZqOWZxMWpoaXFWVF9FZVJvTWRLX0psNy1Nc3RxMDQxSGpjb3FqTjBfb3V4Wjl4aU44aktXc3dxcHR6cU13VmdmQ1VFR0VjTDRUWEJBZEMwYWdrdE96ZEt0dE01OFpIQW1WYXFqQXIxVk9BaXIxOXJaUzY1OWVzd2M5aXdKYzVCTzV4MEdHVXVySEVwRVVpRWxORXkySlZzbkp5dm1yT2VYUklnOVY0NFHSAdQBQVVfeXFMTlE0R1hkUFpCMmFkS3FXR1hHel83cWM2QkR5dDdkRUdNeldXVlcyMDMwcEtSRW5TWjIwU1hWU0haQmZuQzdqMWh4TDA5djNlR0hQYnA5RFRLcXhlZHBOZXZMV01iU1h5STVaUjV3YUZuOC1FY2FsQzNoU1RKTlRlUFdyV0JyNzdWTE5HeWJsQ0RzcVZpMUhLeUFCNk1OQVpnTXlKRHBYbHFkTExKa09rcWx3TGVVRmxKZVZqYXJNcmlEcjkwS1BndjZoQ21jTzdxNy12aFA?oc=5",
     "impacto": "medio",
     "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "09:53",
+    "titulo": "Dólar abre em alta com política fiscal do governo Lula no radar",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-politica-fiscal-do-governo-lula-no-radar.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
      "DI"
     ],
     "tickers": [],
@@ -559,6 +589,18 @@
    "tickers": []
   },
   {
+   "titulo": "Mercado reduz projeção para inflação e PIB no ano e prevê Selic mais alta em 2027",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/mercado-reduz-projecao-inflacao-pib-preve-selic-mais-alta-2027/",
+   "publicado": "2026-11-16T09:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar vai a R$ 5,69 com \"prévia do PIB\" no Brasil; Ibovespa futuro recua",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdlZHNEo0SkR0cjZ2VzZxTF8yRnNOWEUwaGxLRUdWaHk5UTEwcnpzVW12cVNFcFNhUXBqd1JzSTl5elBLWHVUcGNQa0REOUcyemswcG1wS0pjdlJsZ0U2MDV5R2NDR296a29aaUVndVVFUTVJRjhqZ2xxd3lmQzRBM1o0ZjRzOXdVWlV6T0NTVURlemZCTVdmcEFwUkR3VE94Tlg4MXdR?oc=5",
@@ -589,6 +631,18 @@
    "publicado": "2026-11-16T09:43-03:00",
    "impacto": "medio",
    "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar abre em alta com política fiscal do governo Lula no radar",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-politica-fiscal-do-governo-lula-no-radar.shtml",
+   "publicado": "2026-11-16T09:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
     "DI"
    ],
    "tickers": []
@@ -626,7 +680,7 @@
    "em": "2026-11-16T12:43:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-16T09:55-03:00",
+ "atualizado_em": "2026-11-16T09:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -641,6 +695,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar abre em alta com política fiscal do governo Lula no radar",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-com-politica-fiscal-do-governo-lula-no-radar.shtml",
+   "publicado": "2026-11-16T09:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Juros futuros têm alta com piora das expectativas de inflação no foco",
    "fonte": "Valor",
@@ -692,7 +758,7 @@
   {
    "titulo": "Mercado reduz projeção para inflação e PIB no ano e prevê Selic mais alta em 2027",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWDlPVjBxZDRib29xSHRrYklXTnZvbzVOYnhLbUxEUWlSbEF6VUVOTzUtdXRRSk5obV9QYlNoYm9iTDR1YXduNUVtLURva1FtWmhwd1R3dGtKNlNfWGppbjZpNlFLZEx2clFZOTFWRVN6b012QnhpUXZyLXh3Y2d1QjBJVjE0aW1Wdk4yY2hSQXU3eENwV1V0YVZoODBIQUxT0gGmAUFVX3lxTFB3bUlkWmlzX3duMEdBRGxxRFZGelhPVDFoWEMxX2NtODEwQkNVYXlSM1VpTGFjOWRJQ3gwalZuTnZUYkY3R2hpVThrZG43dEVzSnZpM2RJdHB2bmlnUmViUDlnNUQ0dUc4OTBaSDREekMxTktmcEtPOXZ4SE42U2hyWE9oaGxXX01xUUtfOWIxRXlSVEJ0NlZYT0d6aVlXNmlRbHdYZmc?oc=5",
+   "url": "https://www.estadao.com.br/economia/mercado-reduz-projecao-inflacao-pib-preve-selic-mais-alta-2027/",
    "publicado": "2026-11-16T09:31-03:00",
    "impacto": "alto",
    "ativos": [
@@ -817,17 +883,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Morgan rebaixa Brasil para “underweight” e vê Ibovespa a 160 mil pontos em 2027",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa01iaUQ4OVJiMWlld2FTNWxUMmJ4emZUY1NtZ1o4OTEyQ2lxVTFKeDUzb0NxTlpQZHRJUUREOEw5NXlEQnVJZHBNUXZObnVVSWZFNktqajBKVVFTb2FFaGxsUFNsZDVjc3FZN2FEaHBGbVhLajdsQUhiZEd6cnVIVURidzNhX01CZ0E4NzQtb1EyODN3Y3JPNzNrdWlXZjJSTW8zN1NfWnptZUxQVjlYem5NVTZ3ekdpNGZ6eGp6QS05UdIBxwFBVV95cUxOSFFPc0RCSlduWHRRR04yOS1GLXdaYzdNNWlXOVRuQ2d6cEJiX19ndEl2ZGdxMnN1RkFQaFpuOG5SbzkweTk0NFNmRTJfcGhrclJhVlU0bGZWMXowMjlKSTlLdXlrdnFDdXA1c2lkbTVRRkNKdTlGVEtqaFREMHZQaVRsaGgyQVNBQi1HQll3WnAyMGFBWWxhYmhVeDdYTlRORHE0dFBNV0ZZVDd4d2NWY2lfakxGWm1fR2lKVENRTl9VSGNobV9N?oc=5",
-   "publicado": "2026-11-16T08:05-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   }
