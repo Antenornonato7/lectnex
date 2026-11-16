@@ -5,6 +5,7 @@ Junta numa mensagem só:
   páginas vistas e páginas mais vistas nos últimos 7 dias, comparados com os 7 anteriores; cliques nos atalhos
   da página inicial (atalho_plano, atalho_diario, atalho_estudo), inscrições na newsletter (sign_up), ferramentas
   usadas, quem viu o fechamento do dia e alertas ativados.
+- Velocidade real dos visitantes (Core Web Vitals por celular/computador e as 3 páginas mais lentas).
 - Inscritos na newsletter e no canal do Telegram (data/newsletter.json, data/telegram.json).
 - Automações do GitHub que falharam na semana (API do Actions, com o GITHUB_TOKEN do próprio workflow).
 Nada é gravado no repositório. SO_LOG=1 só mostra no log, sem enviar.
@@ -92,6 +93,63 @@ def bloco_analytics(s):
     return L
 
 
+VITAIS = [('lcp', 'Abrir (LCP)', 'ms'), ('inp', 'Resposta ao toque (INP)', 'ms'), ('cls', 'Layout estável (CLS)', 'cls')]
+MIN_AMOSTRA = 20  # menos que isso por página é ruído
+
+
+def _pag(path):
+    return 'Mercado Hoje' if path in ('/', '/index.html') else path.lstrip('/').removesuffix('.html').removesuffix('/index') or path
+
+
+def _valor(m, v):
+    return f'{v / 1000:.2f}'.replace('.', ',') if m == 'cls' else (f'{v / 1000:.1f} s'.replace('.', ',') if v >= 1000 else f'{v:.0f} ms')
+
+
+def bloco_vitais(s):
+    """Velocidade real dos visitantes (eventos cwv_<métrica>_<bom|melhorar|ruim> que o site manda com a biblioteca web-vitals).
+    O Google considera a página boa quando 75% das visitas tiram "bom" em cada nota; aqui mostramos esse % e o valor médio."""
+    rows = ga(s, {'dateRanges': periodos()[:1], 'dimensions': [{'name': 'eventName'}, {'name': 'pagePath'}, {'name': 'deviceCategory'}],
+                  'metrics': [{'name': 'eventCount'}, {'name': 'eventValue'}],
+                  'dimensionFilter': {'filter': {'fieldName': 'eventName', 'stringFilter': {'matchType': 'BEGINS_WITH', 'value': 'cwv_'}}}, 'limit': 5000})
+    if not rows:
+        return ['<b>Velocidade real dos visitantes</b>', 'Ainda sem medições (começam a chegar depois da publicação).', '']
+    geral, pag = {}, {}
+    for (nome, path, apar), (qtd, soma) in rows:
+        partes = nome.split('_')
+        if len(partes) != 3:
+            continue
+        _, m, nota = partes
+        for chave, alvo in (((apar, m), geral), ((_pag(path), m), pag)):
+            g = alvo.setdefault(chave, {'n': 0, 'bom': 0, 'soma': 0.0})
+            g['n'] += qtd; g['soma'] += soma; g['bom'] += qtd if nota == 'bom' else 0
+    pct = lambda g: 100 * g['bom'] / g['n'] if g['n'] else 0
+    L = ['<b>Velocidade real dos visitantes</b>', '(% de visitas com nota boa · média; o Google quer 75% ou mais)']
+    for apar, rot in (('mobile', '📱 Celular'), ('desktop', '💻 Computador')):
+        itens = [f'{r.split(" (")[0]} {pct(geral[(apar, m)]):.0f}% · {_valor(u, geral[(apar, m)]["soma"] / geral[(apar, m)]["n"])}'
+                 for m, r, u in VITAIS if geral.get((apar, m), {}).get('n')]
+        if itens:
+            L.append(f'{rot}: ' + ' | '.join(itens))
+    piores = []
+    for (p, m), g in pag.items():
+        if g['n'] >= MIN_AMOSTRA and pct(g) < 75:
+            piores.append((pct(g), p, m, g))
+    piores.sort(key=lambda x: x[0])
+    vistos, top = set(), []
+    for x in piores:
+        if x[1] not in vistos:
+            vistos.add(x[1]); top.append(x)
+        if len(top) == 3:
+            break
+    rot = {m: r for m, r, _ in VITAIS}
+    uni = {m: u for m, _, u in VITAIS}
+    if top:
+        L += ['Páginas mais lentas (pior nota de cada uma):'] + [
+            f'{i}. {e(p)} · {rot[m]}: {pc:.0f}% bom · média {_valor(uni[m], g["soma"] / g["n"])} ({n(g["n"])} visitas)' for i, (pc, p, m, g) in enumerate(top, 1)]
+    else:
+        L.append(f'Nenhuma página abaixo de 75% (com pelo menos {MIN_AMOSTRA} medições). ✅')
+    return L + ['']
+
+
 def bloco_inscritos():
     L = []
     for arq, chave, rot in (('data/newsletter.json', 'inscritos', 'Newsletter'), ('data/telegram.json', 'seguidores', 'Canal do Telegram')):
@@ -143,6 +201,11 @@ def main():
     except Exception as ex:
         print(f'::warning::Analytics: {ex}')
         L += [f'Analytics: não consegui ler ({e(str(ex)[:200])}).', '']
+    try:
+        if s:
+            L += bloco_vitais(s)
+    except Exception as ex:
+        print(f'::warning::Velocidade real: {ex}')
     L += bloco_inscritos()
     try:
         L += bloco_falhas()

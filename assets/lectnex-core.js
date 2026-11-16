@@ -1026,6 +1026,26 @@
         document.addEventListener('change', usou, true);
         window.addEventListener('appinstalled', () => LX.track('app_instalado'));
     }
+    // Nota de velocidade dos visitantes reais (Core Web Vitals, biblioteca oficial web-vitals do Google, ~2 KB).
+    // Vai para o Analytics como evento cwv_<métrica>_<bom|melhorar|ruim>, com o valor (ms; CLS × 1000) em "value".
+    // O nome do evento carrega a nota para o relatório semanal ler sem precisar de dimensão personalizada no Analytics.
+    // Só o tempo é medido: nada de texto da página nem dado pessoal. Carrega depois de tudo, quando o navegador está livre.
+    let vitaisLigado = false;
+    function vitais() {
+        if (ckGet() !== 'sim') { document.addEventListener('lx:cookies', e => { if (e.detail) vitais(); }, { once: true }); return; } // só com o "Aceitar"
+        if (vitaisLigado) return; vitaisLigado = true;
+        const nota = { good: 'bom', 'needs-improvement': 'melhorar', poor: 'ruim' };
+        const envia = m => LX.track(`cwv_${m.name.toLowerCase()}_${nota[m.rating] || 'melhorar'}`,
+            { value: Math.round(m.name === 'CLS' ? m.value * 1000 : m.value), metric_id: m.id, non_interaction: true });
+        const carrega = () => {
+            const sc = document.createElement('script'); sc.async = true;
+            sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/web-vitals/4.2.4/web-vitals.iife.js';
+            sc.onload = () => { const w = window.webVitals; if (!w) return; try { w.onLCP(envia); w.onINP(envia); w.onCLS(envia); } catch (e) { } };
+            document.head.appendChild(sc);
+        };
+        const quandoLivre = () => (window.requestIdleCallback || (f => setTimeout(f, 2000)))(carrega, { timeout: 5000 });
+        if (document.readyState === 'complete') quandoLivre(); else window.addEventListener('load', quandoLivre, { once: true });
+    }
     function analytics() {
         const id = LX.config.ga; if (!id || !/^G-[A-Z0-9]+$/.test(id)) return;
         const esc = ckGet();
@@ -1039,6 +1059,7 @@
         const load = () => { const sc = document.createElement('script'); sc.async = true; sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + id; document.head.appendChild(sc); };
         (window.requestIdleCallback || (f => setTimeout(f, 1200)))(load);
         rastrear();
+        vitais();
         if (!esc) banner();
     }
     function banner() {
