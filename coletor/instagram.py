@@ -248,7 +248,7 @@ def propor(tipo, legenda_arq, imagens):
 
 def enviar_previa(x):
     rot = {'reel': 'Publicar como Reels', 'reel-semana': 'Publicar como Reels', 'story': 'Publicar no Story'}.get(x['tipo'], 'Publicar no Instagram')
-    texto = (f'📸 <b>{esc(TIPOS.get(x["tipo"], x["tipo"]))}</b>' + (f' ({len(x["imagens"])} imagens)' if len(x.get('imagens') or []) > 1 else '') +
+    texto = (f'📸 <b>{esc(x.get("nome") or TIPOS.get(x["tipo"], x["tipo"]))}</b>' + (f' ({len(x["imagens"])} imagens)' if len(x.get('imagens') or []) > 1 else '') +
              (f'\n\n<b>Legenda:</b>\n{esc(x["legenda"][:700])}' + ('…' if len(x['legenda']) > 700 else '') if x.get('legenda') else '') +
              f'\n\nToque em <b>{rot}</b> para postar agora (vale por 36 h).')
     botoes = {'inline_keyboard': [[{'text': f'✅ {rot}', 'callback_data': f'ig:pub:{x["id"]}'}, {'text': '🗑️ Descartar', 'callback_data': f'ig:del:{x["id"]}'}]]}
@@ -260,34 +260,44 @@ def enviar_previa(x):
     x['msg_id'] = r['result']['message_id']
 
 
-def kit_instagram(dia=None):
-    """Propõe no Telegram, com botão, as peças do Kit do dia (branch ao-vivo): post do gráfico, Reels do dia e story do fechamento."""
+STORIES_KIT = {'leitura': 'Story da Leitura do Dia', 'termo': 'Story do Termo do dia', 'fechamento': 'Story do fechamento',
+               'placar': 'Story do placar da semana', 'antes': 'Story Antes do dado'}
+
+
+def kit_instagram(dia=None, so=None):
+    """Propõe no Telegram, com botão, peças do Kit do dia (branch ao-vivo): post do gráfico, Reels e stories.
+    so: lista de chaves (ex.: ['leitura', 'termo']); sem ela, propõe gráfico, Reels e story do fechamento.
+    Peça já proposta ou publicada não é proposta de novo."""
     dia = dia or dt.datetime.now(BRT).date().isoformat()
     kit, _ = gh_ler(f'kit/{dia}/kit.json')
     if not kit:
         note('warning', f'Sem kit em kit/{dia}/'); return
-    agora = dt.datetime.now(BRT)
-    novos = []
+    agora, d8 = dt.datetime.now(BRT), dia.replace('-', '')
+    so = so or ['grafico', 'reel', 'reel-semana', 'fechamento']
     pecas = {pc['chave']: pc for pc in kit.get('pecas', [])}
-    if 'grafico' in pecas:
-        novos.append({'id': f'{dia.replace("-", "")}-kit-grafico', 'tipo': 'grafico', 'legenda': pecas['grafico'].get('legenda', ''), 'imagens': [RAW + f'kit/{dia}/grafico.jpg']})
-    for chave, rl in (kit.get('reels') or {}).items():
-        novos.append({'id': f'{dia.replace("-", "")}-kit-{chave}', 'tipo': 'reel' if chave == 'reel' else 'reel-semana', 'legenda': rl.get('legenda', ''), 'imagens': [], 'video': RAW + f'kit/{dia}/{chave}.mp4'})
-    if 'fechamento' in pecas:
-        novos.append({'id': f'{dia.replace("-", "")}-kit-story', 'tipo': 'story', 'legenda': '', 'imagens': [RAW + f'kit/{dia}/fechamento.jpg']})
+    novos = []
+    for chave in so:
+        if chave == 'grafico' and 'grafico' in pecas:
+            novos.append({'id': f'{d8}-kit-grafico', 'tipo': 'grafico', 'legenda': pecas['grafico'].get('legenda', ''), 'imagens': [RAW + f'kit/{dia}/grafico.jpg']})
+        elif chave in (kit.get('reels') or {}):
+            novos.append({'id': f'{d8}-kit-{chave}', 'tipo': 'reel' if chave == 'reel' else 'reel-semana', 'legenda': kit['reels'][chave].get('legenda', ''),
+                          'imagens': [], 'video': RAW + f'kit/{dia}/{chave}.mp4'})
+        elif chave in pecas and pecas[chave].get('formato') == 'story':
+            novos.append({'id': f'{d8}-kit-story-{chave}', 'tipo': 'story', 'nome': STORIES_KIT.get(chave, pecas[chave].get('nome')), 'legenda': '',
+                          'imagens': [RAW + f'kit/{dia}/{chave}.jpg']})
     f, sha = fila_ler()
-    ids = {n['id'] for n in novos}
-    f['pedidos'] = [x for x in f['pedidos'] if x['id'] not in ids]
-    for x in f['pedidos']:  # o gráfico proposto às 19h sem botão é a mesma peça: não deixa dois aguardando
-        if x.get('status') == 'aguardando' and x['id'].startswith(dia.replace('-', '')) and x.get('tipo') == 'grafico':
-            x['status'] = 'substituido'
+    ja = {x['id'] for x in f['pedidos'] if x.get('status') in ('aguardando', 'publicado')}
+    if any(x.get('tipo') == 'grafico' and x['id'].startswith(d8) for x in f['pedidos'] if x.get('status') in ('aguardando', 'publicado')):
+        ja.add(f'{d8}-kit-grafico')  # o gráfico proposto pelo fechamento (19h10) já está na fila
+    novos = [n for n in novos if n['id'] not in ja]
     for n in novos:
         n.update(status='aguardando', criado=agora.isoformat(timespec='minutes'))
         enviar_previa(n)
         f['pedidos'].append(n)
     f['pedidos'] = f['pedidos'][-40:]
-    fila_gravar(f, sha)
-    note('notice', f'{len(novos)} peça(s) do kit propostas no Telegram: ' + ', '.join(n['tipo'] for n in novos))
+    if novos:
+        fila_gravar(f, sha)
+    note('notice', f'{len(novos)} peça(s) do kit propostas no Telegram' + (': ' + ', '.join(n.get('nome') or n['tipo'] for n in novos) if novos else ''))
 
 
 def reenviar():
@@ -447,4 +457,4 @@ if __name__ == '__main__':
     elif cmd == 'reenviar':
         reenviar()
     elif cmd == 'kit':
-        kit_instagram(sys.argv[2] if len(sys.argv) > 2 else None)
+        kit_instagram(os.environ.get('KIT_DIA') or None, [c for c in os.environ.get('KIT_PECAS', '').replace(',', ' ').split() if c] or None)

@@ -88,7 +88,7 @@ def gerar_story(a, saida):
     from PIL import Image, ImageDraw
     sys.path.insert(0, os.path.dirname(__file__))
     from og_leitura import BG, CARD, DIAS, LINE, MUTED, ORANGE, TEAL_L, VERDE, VERMELHO, WHITE, fonte, quebrar
-    from story_leitura import H, M, W, tracejado
+    from story_leitura import H, M, W, faixa_link
     d = dt.date.fromisoformat(a['data'])
     im = Image.new('RGB', (W, H), BG)
     dr = ImageDraw.Draw(im)
@@ -207,9 +207,7 @@ def gerar_story(a, saida):
     if n_total < 5 and y < 1560:
         dr.text((M, y + 16), 'Amostra pequena: o histórico cresce a cada divulgação.', font=fonte('Inter-Medium.otf', 26), fill=ORANGE)
 
-    tracejado(dr, (M, 1600, W - M, 1730), '#334155')
-    s = 'COLOQUE AQUI O STICKER DE LINK'
-    dr.text(((W - dr.textlength(s, font=fs)) / 2, 1650), s, font=fs, fill='#475569')
+    faixa_link(dr, (M, 1600, W - M, 1730))
     for i, l in enumerate(('O passado não garante o próximo movimento.', 'Dados: Yahoo Finance (barras de 5 min e 1 h) · lectnex.com.br')):
         f2 = fonte('Inter-Medium.otf', 26)
         dr.text(((W - dr.textlength(l, font=f2)) / 2, 1770 + i * 38), l, font=f2, fill=MUTED)
@@ -240,8 +238,7 @@ def main():
     from story_leitura import enviar
     d = dt.date.fromisoformat(a['data'])
     legenda = (f'⏱️ <b>Antes do dado</b> · {DIAS[d.weekday()].lower()} {d:%d/%m}: <b>{a["evento"]}</b>' + (f' às {a["hora"]}' if a.get('hora') else '') +
-               '\n\nNo Instagram: poste nos stories e coloque o <b>sticker de link</b> na área tracejada com '
-               f'<code>lectnex.com.br/manchetes.html#{a["manchetes"]["tema"]}</code> (texto do sticker: "Histórico").')
+               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
     enviar(saida, legenda)
 
 

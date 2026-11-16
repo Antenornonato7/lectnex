@@ -11,6 +11,9 @@ on:
         type: choice
         options: [teste, renovar, processar, reenviar, kit]
         default: teste
+      pecas:
+        description: 'Só para kit: chaves do Kit do dia (ex.: "leitura termo"); vazio = gráfico, Reels e story do fechamento'
+        default: ''
 
 permissions:
   contents: write
@@ -28,6 +31,7 @@ jobs:
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           GITHUB_TOKEN: ${{ github.token }}
+          KIT_PECAS: ${{ inputs.pecas }}
         run: |
           if [ -z "$INSTAGRAM_TOKEN" ] && [ "${{ inputs.acao }}" = "teste" ]; then echo "::error::Falta o segredo INSTAGRAM_TOKEN."; exit 1; fi
           python3 coletor/instagram.py ${{ inputs.acao }}

@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw
 
 sys.path.insert(0, os.path.dirname(__file__))
 from og_leitura import BG, CARD, DIAS, LINE, MUTED, ORANGE, TEAL_L, VERDE, VERMELHO, WHITE, fonte, quebrar  # noqa: E402
-from story_leitura import H, M, W, enviar, tracejado  # noqa: E402
+from story_leitura import H, M, W, enviar, faixa_link  # noqa: E402
 
 SETA = {'bullish': '▲ alta', 'bearish': '▼ baixa', 'neutro': '● neutro'}
 
@@ -150,10 +150,7 @@ def gerar(r, saida, previa=None):
             dr.text((M + 170, y), linhas[0], font=fe, fill=ORANGE if forte else WHITE)
             y += 48
 
-    tracejado(dr, (M, 1480, W - M, 1630), '#334155')
-    fs = fonte('JetBrainsMono-Bold.ttf', 26)
-    s = 'COLOQUE AQUI O STICKER DE LINK'
-    dr.text(((W - dr.textlength(s, font=fs)) / 2, 1540), s, font=fs, fill='#475569')
+    faixa_link(dr, (M, 1480, W - M, 1630))
     fr = fonte('Inter-Medium.otf', 26)
     for i, txt in enumerate(('Cotações com atraso de ~30 min · conteúdo educacional', 'Viés do modelo (experimental): conferido pelo Ibovespa e pelo dólar à vista')):
         dr.text(((W - dr.textlength(txt, font=fr)) / 2, 1660 + i * 38), txt, font=fr, fill=MUTED)
@@ -172,8 +169,7 @@ def main():
     dia = dt.date.fromisoformat(r['data'])
     legenda = (f'🔔 <b>Story do fechamento pronto</b> · {DIAS[dia.weekday()].lower()} {dia:%d/%m}\n\n'
                + ('<i>Prévia do formato, com o fechamento do último pregão.</i>\n\n' if previa else '')
-               + 'No Instagram: poste a imagem e adicione o <b>sticker de link</b> na área tracejada com '
-               '<code>lectnex.com.br</code> (texto do sticker: "Mercado Hoje").')
+               + 'No Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
     enviar(saida, legenda)
 
 

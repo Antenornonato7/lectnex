@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw
 
 sys.path.insert(0, os.path.dirname(__file__))
 from og_leitura import BG, CARD, DIAS, LINE, MUTED, ORANGE, TEAL_L, WHITE, fonte, quebrar  # noqa: E402
-from story_leitura import H, M, W, enviar, tracejado  # noqa: E402
+from story_leitura import H, M, W, enviar, faixa_link  # noqa: E402
 
 BRT = dt.timezone(dt.timedelta(hours=-3))
 # tipo do evento no calendário → termo do glossário
@@ -101,10 +101,7 @@ def gerar(t, ev, hoje, saida):
             dr.text((M + 34, yy), l, font=fe, fill=WHITE)
             yy += 42
 
-    tracejado(dr, (M, 1480, W - M, 1630), '#334155')
-    fs = fonte('JetBrainsMono-Bold.ttf', 26)
-    s = 'COLOQUE AQUI O STICKER DE LINK'
-    dr.text(((W - dr.textlength(s, font=fs)) / 2, 1540), s, font=fs, fill='#475569')
+    faixa_link(dr, (M, 1480, W - M, 1630))
     fr = fonte('Inter-Medium.otf', 28)
     r = 'Glossário completo em lectnex.com.br · conteúdo educacional'
     dr.text(((W - dr.textlength(r, font=fr)) / 2, 1660), r, font=fr, fill=MUTED)
@@ -125,8 +122,7 @@ def main():
     print(f'Termo do dia: {t["t"]}' + (f' (ligado a: {ev["evento"]})' if ev else ' (rodízio)'))
     legenda = (f'📚 <b>Termo do dia</b> · {DIAS[hoje.weekday()].lower()} {hoje:%d/%m}: <b>{t["t"]}</b>\n'
                + (f'Ligado à agenda: {ev["evento"]}\n' if ev else '') +
-               f'\nNo Instagram: poste nos stories e coloque o <b>sticker de link</b> na área tracejada com '
-               f'<code>lectnex.com.br/glossario.html#{slug(t["t"])}</code> (texto do sticker: "Glossário").')
+               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
     enviar(saida, legenda)
 
 

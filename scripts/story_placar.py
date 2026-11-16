@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw
 
 sys.path.insert(0, os.path.dirname(__file__))
 from og_leitura import BG, CARD, DIAS, LINE, MUTED, ORANGE, TEAL_L, VERDE, VERMELHO, WHITE, fonte  # noqa: E402
-from story_leitura import H, M, W, enviar, tracejado  # noqa: E402
+from story_leitura import H, M, W, enviar, faixa_link  # noqa: E402
 
 BRT = dt.timezone(dt.timedelta(hours=-3))
 K = ('win', 'wdo')
@@ -115,10 +115,7 @@ def gerar(d, saida):
                 dr.text((cx + 18 + j * 74, y + 62), k.upper(), font=fonte('JetBrainsMono-Bold.ttf', 20), fill=BG)
         y += 140
 
-    tracejado(dr, (M, 1600, W - M, 1730), '#334155')
-    fs = fonte('JetBrainsMono-Bold.ttf', 24)
-    s = 'COLOQUE AQUI O STICKER DE LINK'
-    dr.text(((W - dr.textlength(s, font=fs)) / 2, 1650), s, font=fs, fill='#475569')
+    faixa_link(dr, (M, 1600, W - M, 1730))
     for i, l in enumerate(('Mede leituras de viés, não operações. Acerto passado não garante o futuro.',
                            'Placar completo em lectnex.com.br/placar · conteúdo educacional')):
         f2 = fonte('Inter-Medium.otf', 25)
@@ -149,8 +146,7 @@ def main():
     hn, hok = d['hist_sem']
     legenda = (f'🎯 <b>Placar da semana</b> · {d["ini"]:%d/%m} a {d["fim"]:%d/%m}\n'
                f'Viés do modelo: {ok}/{n}' + (f' · Eventos: {hok}/{hn}' if hn else '') +
-               '\n\nNo Instagram: poste nos stories e coloque o <b>sticker de link</b> na área tracejada com '
-               '<code>lectnex.com.br/placar</code> (texto do sticker: "Placar completo").')
+               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
     enviar(saida, legenda)
 
 

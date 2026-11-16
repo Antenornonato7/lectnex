@@ -1,7 +1,7 @@
 """Story da Leitura do Dia (1080×1920) para Instagram, enviado no Telegram PRIVADO do dono.
 
 Título, termômetro WIN/WDO (ou próximo pregão) e 3 destaques da agenda, no visual da marca.
-Áreas de segurança do Instagram respeitadas (topo e base livres) e espaço tracejado para o sticker de link.
+Áreas de segurança do Instagram respeitadas (topo e base livres) e faixa "link na bio" (a API do Instagram não aceita sticker de link).
 Uso: python3 scripts/story_leitura.py [data/leitura.json] [saida.png]
 Com TELEGRAM_BOT_TOKEN e TELEGRAM_ADMIN_CHAT_ID no ambiente, envia a imagem (como foto e como arquivo, sem compressão).
 """
@@ -28,6 +28,16 @@ def tracejado(dr, caixa, cor, traco=18, vao=12, w=3):
     for y in range(y0, y1, traco + vao):
         dr.line([(x0, y), (x0, min(y + traco, y1))], fill=cor, width=w)
         dr.line([(x1, y), (x1, min(y + traco, y1))], fill=cor, width=w)
+
+
+def faixa_link(dr, caixa, texto='lectnex.com.br'):
+    """Faixa "link na bio" no lugar do sticker: os stories são publicados pela API do Instagram, que não aceita sticker de link."""
+    x0, y0, x1, y1 = caixa
+    dr.rectangle(caixa, fill=CARD, outline=TEAL_L, width=3)
+    f1, f2 = fonte('JetBrainsMono-Bold.ttf', 26), fonte('InterDisplay-Bold.otf', 46)
+    t1 = 'LINK NA BIO'
+    dr.text(((x0 + x1 - dr.textlength(t1, font=f1)) / 2, y0 + 22), t1, font=f1, fill=TEAL_L)
+    dr.text(((x0 + x1 - dr.textlength(texto, font=f2)) / 2, y0 + 62), texto, font=f2, fill=WHITE)
 
 
 def gerar(d, saida):
@@ -95,7 +105,7 @@ def gerar(d, saida):
             yy += 38
         y += alt + 24
 
-    # agenda (até 3 itens, enquanto couber acima da área do sticker)
+    # agenda (até 3 itens, enquanto couber acima da faixa do link)
     limite = 1440
     dest = [x for x in d.get('destaques', []) if x.get('evento')][:3]
     if dest and y + 120 < limite:
@@ -113,12 +123,7 @@ def gerar(d, saida):
                 y += 46
             y += 18
 
-    # espaço para o sticker de link (o Instagram não deixa colocar link pela imagem)
-    caixa = (M, 1480, W - M, 1630)
-    tracejado(dr, caixa, '#334155')
-    fs = fonte('JetBrainsMono-Bold.ttf', 26)
-    s = 'COLOQUE AQUI O STICKER DE LINK'
-    dr.text(((W - dr.textlength(s, font=fs)) / 2, 1540), s, font=fs, fill='#475569')
+    faixa_link(dr, (M, 1480, W - M, 1630))
 
     fr = fonte('Inter-Medium.otf', 28)
     r = 'Leitura completa em lectnex.com.br · conteúdo educacional'
@@ -161,8 +166,7 @@ def main():
     dia = dt.date.fromisoformat(d['data'])
     legenda = (f'📲 <b>Story de hoje pronto</b> · {DIAS[dia.weekday()].lower()} {dia:%d/%m}\n'
                f'{d.get("titulo", "")}\n\n'
-               'No Instagram: poste a imagem, adicione o <b>sticker de link</b> na área tracejada com '
-               '<code>lectnex.com.br/comece.html</code> e escreva "Leitura do Dia" no sticker.')
+               '\n\nNo Instagram: vai pelo botão <b>Publicar no Story</b> (a faixa “link na bio” já está na imagem).')
     enviar(saida, legenda)
 
 
