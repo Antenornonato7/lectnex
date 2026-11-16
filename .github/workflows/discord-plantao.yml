@@ -2,10 +2,13 @@
 name: Discord · plantão
 
 on:
-  schedule:
-    # 9h, 13h, 17h e 21h de Brasília (UTC-3), todos os dias
-    - cron: '7 12,16,20,0 * * *'
-  workflow_dispatch: {}
+  # Disparado pelo Relógio (coletor/relogio.py) às 9h07, 13h07, 17h07 e 21h07 de Brasília.
+  # O agendamento do próprio GitHub atrasava horas ou pulava (em 16/11 pulou 3 dos 4 horários).
+  workflow_dispatch:
+    inputs:
+      automatico:
+        description: 'Execução automática (só posta o resumo se houver algo novo)'
+        default: 'false'
 
 permissions:
   contents: read
@@ -25,7 +28,7 @@ jobs:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PLANTAO_HORAS: '4'
-          SO_SE_HOUVER: ${{ github.event_name == 'schedule' && '1' || '' }}
+          SO_SE_HOUVER: ${{ inputs.automatico == 'true' && '1' || '' }}
         run: python3 scripts/discord_plantao.py
       - name: Eventos ao vivo (Copom, payroll, IPCA…)
         env:
