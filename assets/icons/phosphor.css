@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=5bc35e81") format("woff");
+  src: url("./Phosphor.woff?v=e2b68cc8") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -48,6 +48,9 @@
 }
 .ph.ph-arrow-square-out:before {
   content: "\e5de";
+}
+.ph.ph-arrow-up:before {
+  content: "\e08e";
 }
 .ph.ph-arrow-up-right:before {
   content: "\e092";
@@ -226,6 +229,9 @@
 .ph.ph-graduation-cap:before {
   content: "\e62c";
 }
+.ph.ph-hand:before {
+  content: "\e298";
+}
 .ph.ph-hand-palm:before {
   content: "\e57e";
 }
@@ -268,6 +274,9 @@
 .ph.ph-notebook:before {
   content: "\e34e";
 }
+.ph.ph-pause:before {
+  content: "\e39e";
+}
 .ph.ph-pencil-simple:before {
   content: "\e3b4";
 }
@@ -276,6 +285,9 @@
 }
 .ph.ph-play:before {
   content: "\e3d0";
+}
+.ph.ph-play-circle:before {
+  content: "\e3d2";
 }
 .ph.ph-plus:before {
   content: "\e3d4";
@@ -288,6 +300,9 @@
 }
 .ph.ph-receipt:before {
   content: "\e3ec";
+}
+.ph.ph-repeat:before {
+  content: "\e3f6";
 }
 .ph.ph-rocket-launch:before {
   content: "\e3fe";
@@ -306,6 +321,9 @@
 }
 .ph.ph-shield-check:before {
   content: "\e40c";
+}
+.ph.ph-shield-slash:before {
+  content: "\e410";
 }
 .ph.ph-shield-warning:before {
   content: "\e412";
@@ -408,7 +426,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=5bc35e81") format("woff");
+  src: url("./Phosphor-Bold.woff?v=e2b68cc8") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -454,6 +472,9 @@
 }
 .ph-bold.ph-arrow-square-out:before {
   content: "\e5de";
+}
+.ph-bold.ph-arrow-up:before {
+  content: "\e08e";
 }
 .ph-bold.ph-arrow-up-right:before {
   content: "\e092";
@@ -632,6 +653,9 @@
 .ph-bold.ph-graduation-cap:before {
   content: "\e62c";
 }
+.ph-bold.ph-hand:before {
+  content: "\e298";
+}
 .ph-bold.ph-hand-palm:before {
   content: "\e57e";
 }
@@ -674,6 +698,9 @@
 .ph-bold.ph-notebook:before {
   content: "\e34e";
 }
+.ph-bold.ph-pause:before {
+  content: "\e39e";
+}
 .ph-bold.ph-pencil-simple:before {
   content: "\e3b4";
 }
@@ -682,6 +709,9 @@
 }
 .ph-bold.ph-play:before {
   content: "\e3d0";
+}
+.ph-bold.ph-play-circle:before {
+  content: "\e3d2";
 }
 .ph-bold.ph-plus:before {
   content: "\e3d4";
@@ -694,6 +724,9 @@
 }
 .ph-bold.ph-receipt:before {
   content: "\e3ec";
+}
+.ph-bold.ph-repeat:before {
+  content: "\e3f6";
 }
 .ph-bold.ph-rocket-launch:before {
   content: "\e3fe";
@@ -712,6 +745,9 @@
 }
 .ph-bold.ph-shield-check:before {
   content: "\e40c";
+}
+.ph-bold.ph-shield-slash:before {
+  content: "\e410";
 }
 .ph-bold.ph-shield-warning:before {
   content: "\e412";
@@ -814,7 +850,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=5bc35e81") format("woff");
+  src: url("./Phosphor-Fill.woff?v=e2b68cc8") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -860,6 +896,9 @@
 }
 .ph-fill.ph-arrow-square-out:before {
   content: "\e5de";
+}
+.ph-fill.ph-arrow-up:before {
+  content: "\e08e";
 }
 .ph-fill.ph-arrow-up-right:before {
   content: "\e092";
@@ -1038,6 +1077,9 @@
 .ph-fill.ph-graduation-cap:before {
   content: "\e62c";
 }
+.ph-fill.ph-hand:before {
+  content: "\e298";
+}
 .ph-fill.ph-hand-palm:before {
   content: "\e57e";
 }
@@ -1080,6 +1122,9 @@
 .ph-fill.ph-notebook:before {
   content: "\e34e";
 }
+.ph-fill.ph-pause:before {
+  content: "\e39e";
+}
 .ph-fill.ph-pencil-simple:before {
   content: "\e3b4";
 }
@@ -1088,6 +1133,9 @@
 }
 .ph-fill.ph-play:before {
   content: "\e3d0";
+}
+.ph-fill.ph-play-circle:before {
+  content: "\e3d2";
 }
 .ph-fill.ph-plus:before {
   content: "\e3d4";
@@ -1100,6 +1148,9 @@
 }
 .ph-fill.ph-receipt:before {
   content: "\e3ec";
+}
+.ph-fill.ph-repeat:before {
+  content: "\e3f6";
 }
 .ph-fill.ph-rocket-launch:before {
   content: "\e3fe";
@@ -1118,6 +1169,9 @@
 }
 .ph-fill.ph-shield-check:before {
   content: "\e40c";
+}
+.ph-fill.ph-shield-slash:before {
+  content: "\e410";
 }
 .ph-fill.ph-shield-warning:before {
   content: "\e412";
@@ -1220,7 +1274,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=5bc35e81") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=e2b68cc8") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1285,6 +1339,14 @@
 }
 .ph-duotone.ph-arrow-square-out:after {
   content: "\e5df";
+  margin-left: -1em;
+}
+.ph-duotone.ph-arrow-up:before {
+  content: "\e08e";
+  opacity: 0.2;
+}
+.ph-duotone.ph-arrow-up:after {
+  content: "\e08f";
   margin-left: -1em;
 }
 .ph-duotone.ph-arrow-up-right:before {
@@ -1759,6 +1821,14 @@
   content: "\e62d";
   margin-left: -1em;
 }
+.ph-duotone.ph-hand:before {
+  content: "\e298";
+  opacity: 0.2;
+}
+.ph-duotone.ph-hand:after {
+  content: "\e299";
+  margin-left: -1em;
+}
 .ph-duotone.ph-hand-palm:before {
   content: "\e57e";
   opacity: 0.2;
@@ -1871,6 +1941,14 @@
   content: "\e34f";
   margin-left: -1em;
 }
+.ph-duotone.ph-pause:before {
+  content: "\e39e";
+  opacity: 0.2;
+}
+.ph-duotone.ph-pause:after {
+  content: "\e39f";
+  margin-left: -1em;
+}
 .ph-duotone.ph-pencil-simple:before {
   content: "\e3b4";
   opacity: 0.2;
@@ -1893,6 +1971,14 @@
 }
 .ph-duotone.ph-play:after {
   content: "\e3d1";
+  margin-left: -1em;
+}
+.ph-duotone.ph-play-circle:before {
+  content: "\e3d2";
+  opacity: 0.2;
+}
+.ph-duotone.ph-play-circle:after {
+  content: "\e3d3";
   margin-left: -1em;
 }
 .ph-duotone.ph-plus:before {
@@ -1925,6 +2011,14 @@
 }
 .ph-duotone.ph-receipt:after {
   content: "\e3f1";
+  margin-left: -1em;
+}
+.ph-duotone.ph-repeat:before {
+  content: "\e3f6";
+  opacity: 0.2;
+}
+.ph-duotone.ph-repeat:after {
+  content: "\e3f9";
   margin-left: -1em;
 }
 .ph-duotone.ph-rocket-launch:before {
@@ -1973,6 +2067,14 @@
 }
 .ph-duotone.ph-shield-check:after {
   content: "\e40f";
+  margin-left: -1em;
+}
+.ph-duotone.ph-shield-slash:before {
+  content: "\e410";
+  opacity: 0.2;
+}
+.ph-duotone.ph-shield-slash:after {
+  content: "\e413";
   margin-left: -1em;
 }
 .ph-duotone.ph-shield-warning:before {
