@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T12:23-03:00",
+  "atualizado_em": "2026-11-17T12:25-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -107,11 +107,11 @@
     ],
     [
      "12:05",
-     171302.0
+     171451.0
     ],
     [
-     "12:08",
-     171338.0
+     "12:10",
+     171514.0
     ]
    ]
   },
@@ -280,11 +280,11 @@
     ],
     [
      "12:20",
-     5.7906
+     5.7895
     ],
     [
-     "12:23",
-     5.7865
+     "12:25",
+     5.7899
     ]
    ]
   },
@@ -605,7 +605,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.1,
+    "ibov30": 0.18,
     "dolar30": 0.31
    },
    {
@@ -621,7 +621,7 @@
      "BPAC11",
      "ITUB4"
     ],
-    "ibov30": null,
+    "ibov30": 0.05,
     "dolar30": 0.25
    },
    {
@@ -636,7 +636,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.13
+    "dolar30": 0.11
    },
    {
     "hora": "12:00",
@@ -649,7 +649,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.01
    }
   ]
  },
@@ -1313,7 +1313,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T12:23-03:00",
+ "atualizado_em": "2026-11-17T12:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1446,17 +1446,6 @@
    "tickers": []
   },
   {
-   "titulo": "O que esperar para o dólar nos próximos dias após moeda passar os R$ 5,80?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSkozYkdLcE0xVjFZaVYydUZKZDZuZjNQRDJaWVp2ek9vem9yY2UxMUNna3hnb0V4WnZOWC1saFdKSm90ZDJOMkxwdjlaRGltdjVtZW5rXzI0Um01ajN4bElMUU1RNFhhMlp3WDZ3UzVVVXMzZnFRaFh5aTBwT2NKN19TWF9scno4bnRILU1PamNfNF9WdXIyaEV5TlV3NFkwSENsekljVUtna1IxYVpN0gG0AUFVX3lxTFA2X28zQkp1RzJkdzBkMVBBNmhJbl9fenpHR2tRTnU3VFhqX1lGdndFZlJ0c09YeER2Q1VseGw3NDRWVXBqWi1lc0VESlFJNXhDak5tSFZEMmlkVGN0N1Z5N3lzdl90QUtVdG1nNVoydXp4VW5DU1duTkkwV3ZYQVF0b25NaFg0dmMteWUxOGF2d2IteVlmODhLSTBlOHNjZjUxN0I3cklyZEdZQ2hCLWRhZEJ4eQ?oc=5",
-   "publicado": "2026-11-17T11:23-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa sobe e retoma os 170 mil pontos; dólar segue em alta e bate R$ 5,80",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQnhLMVdfUFJIQ0MwOXl2VjFtZ2hYdlhjaTJBclptMFVMNFdtbGFwM2QzekpMRmlqbU1CeWF2akhlak53QVIzQUdIWjQ1c2QxNWdJTHc0SG9zcDhVdURZaFphQS1ER2g3Qzlhb3Y5dXRKWFdCRlBSU2VCWW5nbFo3b001QUNiMC1LRXZZeVdubE5GMFBGalo3bVhyNURZM3M1Rkc1ZGpyd0hhWElD?oc=5",
@@ -1481,6 +1470,18 @@
    "tickers": [
     "ITUB4"
    ]
+  },
+  {
+   "titulo": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+   "publicado": "2026-11-17T10:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Ibovespa sobe em recuperação com apoio de Petrobras, de olho em ajuste fiscal",
