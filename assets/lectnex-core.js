@@ -882,6 +882,65 @@
         pushButtons();
     }
 
+    /* ------------------------------------------------------------------ CONVITE NA HORA CERTA */
+    // Convite discreto para a Leitura do Dia por e-mail, só DEPOIS de a pessoa usar algo: fim de um pregão no simulador,
+    // 3 mudanças na calculadora de risco ou de IR, ou ler 70% de uma página de conteúdo por 40 s. Nunca na entrada,
+    // no máximo 1 vez por semana, nunca para quem já se inscreveu ou fechou há menos de 14 dias.
+    const CV = { sem: 'lx-conv-visto', fechou: 'lx-conv-fechou', inscrito: 'lx-inscrito' };
+    const lsGet = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+    const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) { } };
+    let convAberto = false;
+    LX.convite = function (motivo) {
+        if (!LX.config.newsletter || convAberto || lsGet(CV.inscrito)) return;
+        const agora = Date.now(), dia = 864e5;
+        if (+lsGet(CV.sem) > agora - 7 * dia || +lsGet(CV.fechou) > agora - 14 * dia) return;
+        if (document.getElementById('lx-cookies') || document.querySelector('[role=dialog][open], dialog[open]')) return;  // não empilha com outro aviso
+        try { if (sessionStorage.getItem('lx-conv')) return; sessionStorage.setItem('lx-conv', '1'); } catch (e) { }
+        convAberto = true; lsSet(CV.sem, String(agora));
+        const tit = { simulador: 'Gostou de treinar?', risco: 'Quer começar o pregão já com o plano pronto?', leitura: 'Quer receber isso todo dia?' }[motivo] || 'Quer receber a Leitura do Dia?';
+        const el = document.createElement('div');
+        el.id = 'lx-convite'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', 'Receber a Leitura do Dia');
+        el.className = 'lx-conv';
+        el.innerHTML = `<button type="button" class="lx-conv-x" aria-label="Fechar"><i class="ph-bold ph-x"></i></button>
+            <span class="lx-conv-tag"><i class="ph-fill ph-envelope-simple"></i> GRÁTIS · TODO DIA ÀS 7H40</span>
+            <strong class="lx-conv-tit">${LX.esc(tit)}</strong>
+            <p class="lx-conv-txt">A Leitura do Dia chega antes da abertura: viés de WIN e WDO, agenda com horários e as notícias que mexem no preço.</p>
+            <form action="https://buttondown.com/api/emails/embed-subscribe/${encodeURIComponent(LX.config.newsletter)}" method="post" target="_blank" class="lx-conv-form">
+                <input type="hidden" name="embed" value="1"><input type="hidden" name="tag" value="convite-${LX.esc(motivo || 'site')}">
+                <label class="sr-only" for="lx-conv-email">Seu e-mail</label>
+                <input id="lx-conv-email" type="email" name="email" required placeholder="seu@email.com" autocomplete="email" class="lx-input !text-sm">
+                <button type="submit" class="lx-conv-btn">RECEBER</button>
+            </form>
+            <span class="lx-conv-ok hidden">✓ Quase lá: confirme pelo link que chegou no seu e-mail.</span>`;
+        document.body.appendChild(el);
+        requestAnimationFrame(() => el.classList.add('lx-conv-on'));
+        const fechar = (marcar) => { if (marcar) lsSet(CV.fechou, String(Date.now())); el.classList.remove('lx-conv-on'); setTimeout(() => el.remove(), 300); convAberto = false; document.removeEventListener('keydown', esc); };
+        const esc = ev => { if (ev.key === 'Escape') fechar(true); };
+        document.addEventListener('keydown', esc);
+        el.querySelector('.lx-conv-x').onclick = () => { fechar(true); LX.track('convite_fechou', { motivo }); };
+        const f = el.querySelector('form');
+        f.addEventListener('submit', ev => {
+            ev.preventDefault(); lsSet(CV.inscrito, '1'); LX.track('sign_up', { method: 'convite', motivo });
+            fetch(f.action, { method: 'POST', body: new URLSearchParams(new FormData(f)), mode: 'no-cors' })
+                .then(() => { f.classList.add('hidden'); el.querySelector('.lx-conv-ok').classList.remove('hidden'); setTimeout(() => fechar(false), 6000); })
+                .catch(() => f.submit());
+        });
+        LX.track('convite_mostrou', { motivo });
+    };
+    function convites() {
+        document.addEventListener('submit', ev => { if (ev.target.matches && ev.target.matches('form[action*="buttondown"]')) lsSet(CV.inscrito, '1'); }, true);
+        // calculadoras: 3 mudanças de valor
+        let mexidas = 0;
+        document.addEventListener('change', ev => { const t = ev.target; if (t.closest && t.closest('#risco, #ir-bruto, [id^="ir-"], [id^="vp-"]') && ++mexidas === 3) setTimeout(() => LX.convite('risco'), 1500); }, true);
+        // páginas de conteúdo: 70% lidos depois de 40 s
+        const pg = document.body.dataset.page || '';
+        if (['semana', 'hoje', 'glossario', 'macro', 'copom', 'comece'].includes(pg)) {
+            const ini = Date.now();
+            const ver = () => { const h = document.documentElement; if (Date.now() - ini > 4e4 && (h.scrollTop + innerHeight) / h.scrollHeight > 0.7) { removeEventListener('scroll', ver); LX.convite('leitura'); } };
+            addEventListener('scroll', ver, { passive: true });
+        }
+    }
+
     /* ------------------------------------------------------------------ CONTRATOS VIGENTES E ÚLTIMO PREGÃO */
     // WIN: negocia até o próprio vencimento (quarta mais próxima do dia 15). WDO: até o último dia útil ANTES do vencimento
     // (1º dia útil do mês). Fechamento considerado: 18h25 de Brasília.
@@ -1347,7 +1406,7 @@
         especular();
         const hc = document.getElementById('lx-hc'); if (hc) hc.onclick = () => { const on = document.documentElement.classList.toggle('lx-hc'); try { localStorage.setItem('lectnex-hc', on ? '1' : '0'); } catch (_) { } };
         LX.dados('calendario').then(j => { calEvs = j && Array.isArray(j.eventos) ? j.eventos : []; nextBar(); setInterval(nextBar, 30000); }).catch(() => { calEvs = []; nextBar(); });
-        newsForms();
+        newsForms(); convites();
         (window.requestIdleCallback || (f => setTimeout(f, 1500)))(footStatus); setInterval(footStatus, 5 * 6e4);
         setTimeout(() => (window.requestIdleCallback || (f => f()))(glossDicas), 1800);
         avisosNoticias();

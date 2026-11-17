@@ -198,3 +198,20 @@ p, li, dd { text-wrap: pretty; }
 #pg-capa kbd { font-family: 'JetBrains Mono', monospace; font-size: .7rem; padding: 0 .3rem; border: 1px solid #94A3B8; }
 .pg-btn-dc { background: #5865F2; border-color: #5865F2; color: #fff; }
 .pg-btn-dc:hover:not(:disabled) { background: #4752C4; border-color: #4752C4; color: #fff; }
+
+/* Convite na hora certa (LX.convite) */
+.lx-conv { position: fixed; z-index: 70; right: 1rem; bottom: 1rem; width: min(380px, calc(100vw - 2rem)); background: #0C1A2A; color: #F1F5F9; border: 1px solid #1E2D42; border-left: 4px solid #F39200; padding: 1.1rem 1.1rem 1rem; box-shadow: 0 20px 50px rgba(0,0,0,.45); transform: translateY(16px); opacity: 0; transition: transform .25s ease, opacity .25s ease; }
+.lx-conv.lx-conv-on { transform: none; opacity: 1; }
+@media (max-width: 640px) { .lx-conv { right: .75rem; left: .75rem; bottom: .75rem; width: auto; } }
+@media (prefers-reduced-motion: reduce) { .lx-conv { transition: none; } }
+.lx-conv-x { position: absolute; top: .4rem; right: .4rem; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; color: #94A3B8; }
+.lx-conv-x:hover { color: #fff; }
+.lx-conv-tag { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: .12em; color: #F39200; }
+.lx-conv-tit { display: block; font-family: 'Space Grotesk', 'Inter', sans-serif; font-size: 1.15rem; margin-top: .35rem; padding-right: 1.5rem; }
+.lx-conv-txt { font-size: .8rem; line-height: 1.45; color: #CBD5E1; margin-top: .35rem; }
+.lx-conv-form { display: flex; gap: .5rem; margin-top: .75rem; }
+.lx-conv-form .lx-input { flex: 1; min-width: 0; }
+.lx-conv-btn { padding: .5rem .9rem; background: #F39200; color: #0C1A2A; font-family: 'JetBrains Mono', monospace; font-size: .75rem; font-weight: 700; }
+.lx-conv-btn:hover { filter: brightness(1.1); }
+.lx-conv-ok { display: block; margin-top: .75rem; font-size: .85rem; color: #34D399; font-weight: 600; }
+.lx-conv-ok.hidden { display: none; }
