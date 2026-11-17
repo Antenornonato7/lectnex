@@ -282,6 +282,7 @@
                     <div class="flex flex-wrap gap-2 font-mono text-xs">
                         <button type="button" id="pg-share" class="pg-btn pg-btn-teal min-h-[44px]"><i class="ph-bold ph-share-network"></i><span>DESAFIAR UM AMIGO</span></button>
                         ${codigo ? `<button type="button" id="pg-dc" class="pg-btn pg-btn-dc min-h-[44px]"><i class="ph-fill ph-discord-logo"></i><span>COPIAR PARA O DISCORD</span></button>` : ''}
+                        <button type="button" id="pg-img" class="pg-btn min-h-[44px]"><i class="ph-bold ph-image"></i><span>BAIXAR IMAGEM</span></button>
                         <button type="button" id="pg-outro" class="pg-btn min-h-[44px]"><i class="ph-bold ph-shuffle"></i>OUTRO DIA</button>
                     </div>
                 </div>
@@ -300,12 +301,56 @@
                 LX.track('simulador_discord', { ativo });
                 if (LX.config.discord) setTimeout(() => window.open(LX.config.discord, '_blank', 'noopener'), 600);
             };
-            $('pg-share').onclick = () => {
+            const dados = { r, cap, ops: ops.length, acerto: ops.length ? Math.round(ganhos.length / ops.length * 100) : null, dd: maxDD, data: `${d}/${m}/${a}`, nome: sp.nome };
+            $('pg-share').onclick = async () => {
                 const txt = `Fiz ${sinal(r)} operando ${sp.nome} no replay do pregão de ${d}/${m} no simulador grátis do Lectnex. Consegue mais? ${url}`;
-                (navigator.share ? navigator.share({ text: txt }).catch(() => { }) : navigator.clipboard.writeText(txt).then(() => { $('pg-share').querySelector('span').textContent = 'COPIADO!'; }).catch(() => { }));
                 LX.track('simulador_compartilhar', { ativo });
+                try {
+                    const blob = await cartao(dados), arq = new File([blob], `lectnex-simulador-${dia}.png`, { type: 'image/png' });
+                    if (navigator.canShare && navigator.canShare({ files: [arq] })) return await navigator.share({ files: [arq], text: txt });
+                } catch (e) { if (e && e.name === 'AbortError') return; }
+                if (navigator.share) return navigator.share({ text: txt }).catch(() => { });
+                navigator.clipboard.writeText(txt).then(() => { $('pg-share').querySelector('span').textContent = 'LINK COPIADO!'; }).catch(() => { });
+            };
+            $('pg-img').onclick = async () => {
+                const blob = await cartao(dados), a2 = document.createElement('a');
+                a2.href = URL.createObjectURL(blob); a2.download = `lectnex-simulador-${dia}.png`; document.body.appendChild(a2); a2.click(); a2.remove();
+                setTimeout(() => URL.revokeObjectURL(a2.href), 4000); LX.track('simulador_imagem', { ativo });
             };
             LX.track('simulador_fim', { ativo, resultado: Math.round(r), operacoes: ops.length });
+        }
+
+        // Cartão 1080×1920 (Story/WhatsApp) desenhado no navegador: resultado, gráfico do dia com as entradas e chamada para o site.
+        function cartao(o) {
+            const cv = document.createElement('canvas'); cv.width = 1080; cv.height = 1920; const c = cv.getContext('2d');
+            const F = (p, t, fam) => `${p} ${t}px ${fam === 'm' ? '"JetBrains Mono", ui-monospace, monospace' : 'Inter, system-ui, sans-serif'}`;
+            const centro = (t, y, f, cor) => { c.font = f; c.fillStyle = cor; c.textAlign = 'center'; c.fillText(t, 540, y); };
+            c.fillStyle = '#060D17'; c.fillRect(0, 0, 1080, 1920);
+            c.strokeStyle = '#0B1626'; c.lineWidth = 1; for (let x = 0; x < 1080; x += 60) { c.beginPath(); c.moveTo(x, 0); c.lineTo(x, 1920); c.stroke(); } for (let y = 0; y < 1920; y += 60) { c.beginPath(); c.moveTo(0, y); c.lineTo(1080, y); c.stroke(); }
+            c.fillStyle = '#00B4A2'; c.fillRect(0, 0, 1080, 12);
+            c.textAlign = 'left'; c.font = F('700', 56); c.fillStyle = '#F1F5F9'; c.fillText('Lect', 90, 190); const lw = c.measureText('Lect').width; c.fillStyle = '#00B4A2'; c.fillText('nex', 90 + lw, 190);
+            c.font = F('700', 28, 'm'); c.fillStyle = '#94A3B8'; c.textAlign = 'right'; c.fillText('SIMULADOR DE PREGÃO', 990, 186);
+            centro(`${o.nome} · PREGÃO DE ${o.data}`, 380, F('700', 34, 'm'), '#00B4A2');
+            const cr = o.r > 0 ? '#10B981' : o.r < 0 ? '#F43F5E' : '#F1F5F9';
+            centro(sinal(o.r), 540, F('800', 150), cr);
+            centro(`${o.r >= 0 ? '+' : '−'}${LX.num(Math.abs(o.r / o.cap * 100), 2)}% de uma conta de ${LX.brl(o.cap, 0)}`, 620, F('500', 38), '#94A3B8');
+            // gráfico
+            const gx0 = 90, gx1 = 990, gy0 = 720, gy1 = 1220, t0 = serie[0][0], t1 = serie[serie.length - 1][0];
+            const ys = serie.map(x => x[1]); let lo = Math.min(...ys), hi = Math.max(...ys); const pd = (hi - lo) * 0.12 || 10; lo -= pd; hi += pd;
+            const X = t => gx0 + (t - t0) / Math.max(1, t1 - t0) * (gx1 - gx0), Y = v => gy0 + (hi - v) / (hi - lo) * (gy1 - gy0);
+            c.fillStyle = '#0B1626'; c.fillRect(gx0 - 30, gy0 - 40, gx1 - gx0 + 60, gy1 - gy0 + 80); c.strokeStyle = '#1E2D42'; c.lineWidth = 2; c.strokeRect(gx0 - 30, gy0 - 40, gx1 - gx0 + 60, gy1 - gy0 + 80);
+            const up = serie[serie.length - 1][1] >= (serie.ant || serie[0][1]), cl = up ? '#10B981' : '#F43F5E';
+            c.beginPath(); serie.forEach((x, n) => n ? c.lineTo(X(x[0]), Y(x[1])) : c.moveTo(X(x[0]), Y(x[1]))); c.strokeStyle = cl; c.lineWidth = 6; c.lineJoin = 'round'; c.stroke();
+            entradas.forEach(e => { const x = X(e.t), y = Y(e.p); c.beginPath(); if (e.q > 0) { c.moveTo(x, y + 10); c.lineTo(x - 16, y + 38); c.lineTo(x + 16, y + 38); c.fillStyle = '#10B981'; } else { c.moveTo(x, y - 10); c.lineTo(x - 16, y - 38); c.lineTo(x + 16, y - 38); c.fillStyle = '#F43F5E'; } c.closePath(); c.fill(); });
+            // números
+            const cel = [['OPERAÇÕES', String(o.ops)], ['ACERTO', o.acerto == null ? '—' : o.acerto + '%'], ['PIOR MOMENTO', '−' + LX.brl(o.dd, 0)]];
+            cel.forEach((k, n) => { const x = 90 + n * 310; c.fillStyle = '#0B1626'; c.fillRect(x, 1320, 280, 150); c.strokeStyle = '#1E2D42'; c.strokeRect(x, 1320, 280, 150);
+                c.textAlign = 'left'; c.font = F('700', 24, 'm'); c.fillStyle = '#94A3B8'; c.fillText(k[0], x + 24, 1366); c.font = F('700', 52, 'm'); c.fillStyle = '#F1F5F9'; c.fillText(k[1], x + 24, 1440); });
+            centro('Consegue mais?', 1590, F('800', 76), '#F1F5F9');
+            c.fillStyle = '#F39200'; c.fillRect(140, 1640, 800, 120);
+            centro('lectnex.com.br/simulador', 1718, F('800', 50), '#060D17');
+            centro('Grátis · dinheiro fictício · conteúdo educacional', 1830, F('500', 28, 'm'), '#64748B');
+            return new Promise(res => cv.toBlob(res, 'image/png'));
         }
 
         $('pg-play').onclick = () => rodando ? pausar() : tocar();
