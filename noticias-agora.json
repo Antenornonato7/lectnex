@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T18:28-03:00",
+  "atualizado_em": "2026-11-17T18:30-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -804,11 +804,7 @@
     ],
     [
      "18:25",
-     5.776
-    ],
-    [
-     "18:28",
-     5.7765
+     5.7774
     ]
    ]
   },
@@ -1729,7 +1725,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.05
+    "dolar30": 0.07
    }
   ]
  },
@@ -2711,7 +2707,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T18:28-03:00",
+ "atualizado_em": "2026-11-17T18:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2795,18 +2791,7 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa contraria índices dos EUA e sobe de olho em balanços; Nubank salta em NY",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPQlVHRWxTNDBkR1lISXBWODJOVlBrNkRFaWNZeFFCOWVLdnVydFgtQWtaZkFoVnQ2alhPTW1GeE5tZEczd3dKeGpES3ZLVnFCNTJXZHNXQzFqTldTNWY4ak9mTkJ6U0s1WkNpWVpmUmt3cVlsMFNiYnVfbXZHVGduYU1tNzhHcU1MU3VwT1dQbk1Tay1UNXVLQm9yWGYwMmRhcmJfUldWNGtTWlpZa2IzS0dyNmUxZFhWNjJUeTdTSTU3VmVva0J4QmpSX2xsRW54NXk4MnU3UDYyWldHTk1EQnZVRF9rQ0o1QzY1ZjFjUGVEMUU?oc=5",
-   "publicado": "2026-11-17T17:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Senado adia votação do ajuste fiscal em meio a risco de desidratar impacto de R$ 56 bi",
+   "titulo": "Sem acordo, Senado adia votação do ajuste fiscal em meio a risco de desidratar impacto de R$ 56 bi",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/senado-adia-votacao-do-ajuste-fiscal-em-meio-a-risco-de-desidratar-impacto-de-r-56-bi/",
    "publicado": "2026-11-17T17:32-03:00",
@@ -2851,6 +2836,19 @@
    "tickers": []
   },
   {
+   "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNS3lNOFRBcFo5WExteHotY2hzM1g4R09CV0FUazVYTWVIZDJzQ3dQR2hfLWtWcWhjcVhKR2h2TklxTVBUaWlYbjByWGI3MVpQRENlREx2T0k2UVdNNzYwU3N1OFEwbU5kQ2dfS0NJZXJjT2hDNWhUa05jSEtjZnJWdVBMT01HVjZLZEJ5RzUyVHFRUVFIYV9TN3VMTkRxc3ZfZDRSUWlDRXN4SzlybmgzTHJqd201a0lBYVhGSy1jcnk4a1JHZDdKeWF1N0o4eVhaeHd6TmhFLS1Jdw?oc=5",
+   "publicado": "2026-11-17T17:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
    "titulo": "Ibovespa vai incluir empresas listadas em Nova York; veja as 4 que entrariam hoje",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDI2Z2JCN1dZWERLQVVrQzJFUjVDelRuUlhldVR5WGhlMS1LSUlTOEwzNG94akJaQlZHUUVxUXRVa2lwZEgxN29EMklBTGt4LWJqaGVEOXQyQ2tDbUx4NDRYRlNBMWZUN2RXMjZJUktFNEpxbUJneHJuaUw1U1ZJMDVWYms1RDI1eUlvY2RwRGY4YnIxY3I3QmRZUV9wSW85dnlOM2tIdnlRQnFUSmFFMWN4Q1pzZw?oc=5",
@@ -2862,17 +2860,15 @@
    "tickers": []
   },
   {
-   "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
+   "titulo": "BDR do Mercado Livre não cumpre requisito para entrar no Ibovespa",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUGUxOFI1Y0xfMVo4UG9kNlVSZWotVHl5bXNORHlxSTdkcGYyWHpRSlE1QWJuRC1qbEhWMUd5MTY0TmlDZFdXQndkN18xUjh2d3pDUnJJYmtINDQyZzhxamYtQnA0MVkzRkg1X2h0SjQxTWk2bHQzRWctSVZRQ2RFWTloWkpuMEREZW9EeEJCNzVFZXMwRlRVaFJ0aTVLcnVYMHc3dEdoVHQ5X2dmRldCLUNnRDV6Sm9KcnBaY002aDJaR040c1RienZXQjh5eWRhZFduONIB1AFBVV95cUxPUGUxOFI1Y0xfMVo4UG9kNlVSZWotVHl5bXNORHlxSTdkcGYyWHpRSlE1QWJuRC1qbEhWMUd5MTY0TmlDZFdXQndkN18xUjh2d3pDUnJJYmtINDQyZzhxamYtQnA0MVkzRkg1X2h0SjQxTWk2bHQzRWctSVZRQ2RFWTloWkpuMEREZW9EeEJCNzVFZXMwRlRVaFJ0aTVLcnVYMHc3dEdoVHQ5X2dmRldCLUNnRDV6Sm9KcnBaY002aDJaR040c1RienZXQjh5eWRhZFduOA?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbkxhSVJNVnBVb3ZfRTFOUXFndHJNRzd0YzdvTmo2ZGtRcWJPVTVfNkpsLTBlN3RScHhHMlk1SHB5MFcyY0RudnF6YVNfVVpRNnNqTVptTE1pNjJiTFBGZ0dLNGFsNDZRUXhoWm1jVjN6dzdya3NaT2IwRG1XV19FcTRJVVhfRllmZTBZZTc2SkZPTzRjQVlGbXRSZGxFY3FKalR3SnQtZjhCS1hHS2JXYmtlX1BRQ1VrZWpXQUlzWWNJYUd6TjJ6TEhMTUE?oc=5",
    "publicado": "2026-11-17T17:14-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
    ],
-   "tickers": [
-    "B3SA3"
-   ]
+   "tickers": []
   },
   {
    "titulo": "Vale tem contrato de 20 anos de compra de minério da Cedro",
