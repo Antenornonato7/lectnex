@@ -196,3 +196,5 @@ p, li, dd { text-wrap: pretty; }
 @keyframes pg-in { from { opacity: 0; transform: translateY(-4px); } }
 @media (prefers-reduced-motion: reduce) { .pg-new { animation: none; } }
 #pg-capa kbd { font-family: 'JetBrains Mono', monospace; font-size: .7rem; padding: 0 .3rem; border: 1px solid #94A3B8; }
+.pg-btn-dc { background: #5865F2; border-color: #5865F2; color: #fff; }
+.pg-btn-dc:hover:not(:disabled) { background: #4752C4; border-color: #4752C4; color: #fff; }
