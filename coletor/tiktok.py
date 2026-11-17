@@ -113,6 +113,33 @@ def publicar(video_url, legenda, privacidade=None):
     return d.get('publish_id'), privacidade
 
 
+def rascunho(video_url):
+    """Envia o vídeo como RASCUNHO para a caixa de entrada do TikTok (Upload, sem Direct Post): o dono recebe a notificação no app
+    e publica de lá, escolhendo música e privacidade. Devolve o publish_id."""
+    tok = acesso()
+    video = urllib.request.urlopen(video_url, timeout=120).read()
+    n = len(video)
+    d = api('post/publish/inbox/video/init/', tok, {'source_info': {'source': 'FILE_UPLOAD', 'video_size': n, 'chunk_size': n, 'total_chunk_count': 1}})
+    req = urllib.request.Request(d['upload_url'], data=video, method='PUT',
+                                 headers={'Content-Type': 'video/mp4', 'Content-Length': str(n), 'Content-Range': f'bytes 0-{n - 1}/{n}'})
+    try:
+        urllib.request.urlopen(req, timeout=300).read()
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f'TikTok upload HTTP {e.code}: {e.read().decode()[:200]}') from None
+    return d.get('publish_id')
+
+
+def teste_rascunho():
+    import datetime as dt
+    dia = os.environ.get('KIT_DIA') or dt.datetime.now(ig.BRT).date().isoformat()
+    pid = rascunho(ig.RAW + f'kit/{dia}/reel.mp4')
+    ig.note('notice', f'TikTok: Reels de {dia} enviado como rascunho (publish_id {pid}).')
+    try:
+        ig.tg('sendMessage', chat_id=ig.admin(), text='🎵 Teste do TikTok: o Reels de hoje foi para a caixa de entrada do TikTok da @lectnex como RASCUNHO. Abra o app do TikTok, veja a notificação, ajuste e publique.')
+    except Exception:
+        pass
+
+
 def link():
     estado = hashlib.sha256(os.urandom(16)).hexdigest()[:16]
     url = 'https://www.tiktok.com/v2/auth/authorize/?' + urllib.parse.urlencode({
@@ -161,6 +188,8 @@ if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'teste'
     if cmd == 'link':
         link()
+    elif cmd == 'teste-rascunho':
+        teste_rascunho()
     elif cmd == 'teste-post':
         teste_post()
     elif cmd == 'conectar':

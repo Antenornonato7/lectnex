@@ -8,7 +8,7 @@ on:
       acao:
         description: 'link (manda o link de autorização no Telegram), conectar (cole o código da página do site), teste ou teste-post (Reels do dia como privado)'
         type: choice
-        options: [link, conectar, teste, teste-post]
+        options: [link, conectar, teste, teste-post, teste-rascunho]
         default: link
       codigo:
         description: 'Só para conectar: o código mostrado em lectnex.com.br/tiktok-callback.html'
