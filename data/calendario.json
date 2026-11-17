@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-11-16T12:47:00-03:00",
+  "atualizado_em": "2026-11-17T08:20:00-03:00",
   "eventos": [
     {
-      "data": "2026-11-16",
-      "hora": "08h25",
+      "data": "2026-11-17",
+      "hora": "10h",
       "pais": "BR",
-      "evento": "Boletim Focus (BCB)",
+      "evento": "Durigan na CAE do Senado (alíquota da CBS 2027)",
       "importancia": 1,
       "anterior": null,
       "consenso": null,
@@ -13,91 +13,8 @@
       "impacto": {
         "di": "volatil"
       },
-      "nota": "Expectativas de Selic, IPCA e câmbio depois do IPCA de outubro.",
-      "tipo": "focus",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-16",
-      "hora": "09h",
-      "pais": "BR",
-      "evento": "IBC-Br (set, m/m, BCB)",
-      "importancia": 2,
-      "anterior": "0,3%",
-      "consenso": "0,0%",
-      "resultado": "-0,2%",
-      "impacto": {
-        "di": "volatil",
-        "win": "volatil"
-      },
-      "nota": "Prévia do PIB calculada pelo BC; consenso do InfoMoney. Atividade fraca reforça a desaceleração.",
-      "tipo": "ibc-br",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-16",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Índice Empire State de manufatura (nov)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "7,8",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Primeira pesquisa regional da indústria americana no mês.",
-      "tipo": "empire-state",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-16",
-      "hora": "11h05",
-      "pais": "US",
-      "evento": "Fala de John Williams (Fed de Nova York)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Sinal sobre o ritmo de juros em dezembro.",
-      "tipo": "fala-fed",
-      "surpresa": null
-    },
-    {
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "surpresa": null,
-      "data": "2026-11-16",
-      "hora": "14h",
-      "pais": "US",
-      "evento": "Fala do presidente do Fed, Kevin Warsh (abertura de conferência)",
-      "importancia": 2,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Primeira semana após o CPI de outubro (+0,3%); sinal sobre alta de juros em dezembro mexe no dólar global.",
-      "tipo": "fala-fed"
-    },
-    {
-      "data": "2026-11-16",
-      "hora": "19h",
-      "pais": "BR",
-      "evento": "Galípolo (BC) em jantar da ABBC",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Evento fechado à imprensa; repercussão pode chegar ao DI na terça.",
-      "tipo": "fala-bcb",
+      "nota": "TCU recomendou alíquota de referência de 11,3% para a CBS; Senado fixa o valor até 15/12.",
+      "tipo": "fala-fazenda",
       "surpresa": null
     },
     {
@@ -113,8 +30,25 @@
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Consenso Newsquawk: +0,2% m/m (grupo de controle +0,4%, ant. 0,1%). Consumo forte reforça a aposta de alta do Fed em dezembro.",
+      "nota": "Consenso +0,2% m/m (núcleo ex-autos +0,4%, ant. +0,9%). Consumo forte reforça a aposta de alta do Fed em dezembro.",
       "tipo": "varejo-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-17",
+      "hora": "11h10",
+      "pais": "US",
+      "evento": "Fala de Christopher Waller (Fed)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Sinal sobre o ritmo de juros em dezembro.",
+      "tipo": "fala-fed",
       "surpresa": null
     },
     {
@@ -124,13 +58,29 @@
       "evento": "Produção industrial (out, m/m)",
       "importancia": 1,
       "anterior": "0,7%",
+      "consenso": "0,1%",
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Atividade da indústria americana (Fed); consenso do calendário do Yahoo Finance.",
+      "tipo": "producao-industrial-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-17",
+      "hora": "16h25",
+      "pais": "US",
+      "evento": "Fala de John Williams (Fed de Nova York)",
+      "importancia": 1,
+      "anterior": null,
       "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
       },
-      "nota": "Atividade da indústria americana (Fed).",
-      "tipo": "producao-industrial-eua",
+      "nota": "Conversa em evento; segunda fala dele na semana.",
+      "tipo": "fala-fed",
       "surpresa": null
     },
     {

@@ -1,148 +1,90 @@
 {
   "tipo": "pregao",
-  "data": "2026-11-16",
-  "gerado_em": "2026-11-16T07:50:00-03:00",
-  "titulo": "China fraca e Nasdaq em queda antes da Nvidia; IBC-Br às 9h",
+  "data": "2026-11-17",
+  "gerado_em": "2026-11-17T08:20:00-03:00",
+  "titulo": "Fiscal no Senado e Nvidia à noite; dólar parte de R$ 5,77",
   "resumo": [
-    "No último pregão (sexta, 13), o Ibovespa subiu 0,66%, a 172.457,77 pontos (+2,35% na semana), e o dólar à vista subiu 0,11%, a R$ 5,657 (+2,63% na semana), segundo a Agência Brasil; o WIN parte desse nível com o real ainda carregando prêmio fiscal.",
-    "A China decepcionou em outubro: produção industrial +4,8% a/a (consenso 5,3%), varejo +0,4% (consenso 0,8%) e investimento −8,1% no ano, segundo a Reuters; atividade chinesa fraca pesa em minério, Vale e moedas emergentes.",
-    "Antes da abertura, o futuro do Nasdaq cai 0,94% e o do S&P 500 recua 0,34%, com o EWZ em −0,31% e o VIX em alta de 3,94%; a cautela vem da espera pelo balanço da Nvidia (terça, depois do fechamento) e da ata do FOMC (quarta).",
-    "Na agenda local, saem o Focus (8h25) e o IBC-Br de setembro (9h; consenso de 0,0% no mês, segundo o InfoMoney); dado fraco reforça a desaceleração e mexe nos vértices curtos do DI.",
-    "Em Brasília, o Senado deve votar nesta semana os quatro destaques do ajuste fiscal (PLP 299) e Lula prepara o anúncio da equipe econômica do quarto mandato; a percepção de pacote tímido mantém o prêmio no DI longo e no dólar."
+    "No último pregão (segunda, 16), o Ibovespa caiu 1,83%, para a casa dos 169 mil pontos, e o dólar à vista subiu 2,15%, a R$ 5,77, maior nível desde abril de 2025, segundo o InfoMoney; o motivo citado foi o risco fiscal, com os juros futuros em alta.",
+    "O Senado vota hoje os quatro destaques da oposição ao ajuste fiscal (PLP 299/2026), cujo texto-base passou por 45 a 31; o governo estima melhora de até R$ 56,1 bi nas contas de 2027, e o desfecho mexe direto no DI longo e no dólar.",
+    "Às 10h, o ministro Dario Durigan vai à CAE explicar a alíquota de referência de 11,3% da CBS para 2027 recomendada pelo TCU; segundo o requerimento, somada ao IBS ela fica perto de 30%, acima da trava de 26,5%, tema sensível para a curva.",
+    "Lá fora, o futuro do S&P 500 cai 0,35% e o do Nasdaq 0,36% às 7h30, com EWZ −0,52% e VIX +3,10%: a nova regra americana contra o acesso da China a chips de IA derrubou a Ásia, e o balanço da Nvidia sai depois do fechamento.",
+    "Às 10h30 saem as vendas no varejo dos EUA de outubro (consenso +0,2%, anterior +0,8%); consumo forte reforça a aposta de alta do Fed em dezembro e tende a fortalecer o dólar global."
+  ],
+  "pontos": [
+    { "titulo": "Senado vota destaques do ajuste fiscal", "texto": "Quatro destaques podem alterar o PLP 299; desfecho mexe no DI longo e no dólar, que fechou a R$ 5,77." },
+    { "titulo": "Varejo dos EUA às 10h30", "texto": "Consenso +0,2% em outubro; dado forte reforça alta do Fed em dezembro e pressiona o WDO." },
+    { "titulo": "Nvidia divulga balanço após o fechamento", "texto": "Futuros de NY já recuam antes do resultado; apetite a risco global pesa no WIN ao longo do dia." }
   ],
   "termometro": {
     "win": {
       "leitura": "bearish",
-      "motivo": "Nasdaq fut. −0,94%, S&P fut. −0,34% e EWZ −0,31% às 7h30, somados à China abaixo do esperado (pesa em Vale); em linha com o sinal quantitativo."
+      "motivo": "S&P fut. −0,35%, EWZ −0,52% e VIX +3,10% às 7h30, com Ásia em queda pelas restrições a chips; em linha com o sinal quantitativo. Aprovação limpa do fiscal no Senado pode aliviar."
     },
     "wdo": {
       "leitura": "bullish",
-      "motivo": "Aversão a risco (VIX +3,94%, EWZ −0,31%), DXY +0,08% e dados fracos da China pressionam emergentes; em linha com o sinal quantitativo, com o fiscal ainda no radar."
+      "motivo": "EWZ −0,52%, VIX +3,10% e DXY +0,04% antes da abertura, com prêmio fiscal ainda alto após o dólar a R$ 5,77; em linha com o sinal quantitativo."
     }
   },
   "destaques": [
-    {
-      "hora": "8h25",
-      "evento": "Boletim Focus (BCB)",
-      "por_que": "Expectativas de Selic, IPCA e câmbio depois de uma semana de dólar em alta de 2,63%."
-    },
-    {
-      "hora": "9h",
-      "evento": "IBC-Br de setembro (BCB)",
-      "por_que": "Prévia do PIB (consenso 0,0% m/m); surpresa mexe nos vértices curtos do DI e no WIN."
-    },
-    {
-      "hora": "11h05",
-      "evento": "Fala de John Williams (Fed de Nova York)",
-      "por_que": "Sinal sobre alta de juros em dezembro mexe nas Treasuries e no dólar global."
-    },
-    {
-      "hora": "14h",
-      "evento": "Fala de Kevin Warsh, presidente do Fed",
-      "por_que": "Primeira fala dele depois do CPI de outubro (+0,3%); tom duro fortalece o dólar e pressiona o WDO."
-    }
+    { "hora": "10h", "evento": "Durigan na CAE do Senado (alíquota da CBS)", "por_que": "CBS de 11,3% recomendada pelo TCU; sinal sobre carga tributária mexe no DI longo." },
+    { "hora": "10h30", "evento": "Vendas no varejo dos EUA (out)", "por_que": "Consenso +0,2% (ant. +0,8%); surpresa mexe nas Treasuries e no dólar global." },
+    { "hora": "11h10", "evento": "Fala de Christopher Waller (Fed)", "por_que": "Diretor do Fed; tom sobre dezembro mexe no DXY e no WDO." },
+    { "hora": "a definir", "evento": "Senado vota destaques do ajuste fiscal", "por_que": "Conclusão do PLP 299 é o principal vetor local para dólar e DI." }
   ],
   "exterior": [
-    {
-      "ativo": "S&P 500 fut.",
-      "variacao": "−0,34%"
-    },
-    {
-      "ativo": "Nasdaq fut.",
-      "variacao": "−0,94%"
-    },
-    {
-      "ativo": "EWZ (Brasil em NY)",
-      "variacao": "−0,31%"
-    },
-    {
-      "ativo": "DXY",
-      "variacao": "+0,08%"
-    },
-    {
-      "ativo": "VIX",
-      "variacao": "+3,94%"
-    },
-    {
-      "ativo": "Nikkei (fech.)",
-      "variacao": "−2,25%"
-    }
+    { "ativo": "S&P 500 fut.", "variacao": "−0,35%" },
+    { "ativo": "Nasdaq fut.", "variacao": "−0,36%" },
+    { "ativo": "EWZ (Brasil em NY)", "variacao": "−0,52%" },
+    { "ativo": "DXY", "variacao": "+0,04%" },
+    { "ativo": "Brent", "variacao": "+0,05%" },
+    { "ativo": "VIX", "variacao": "+3,10%" }
   ],
   "noticias": [
     {
-      "titulo": "Economia chinesa desacelera em outubro; produção e varejo ficam abaixo do esperado",
-      "fonte": "Reuters (via Business Standard)",
-      "hora": "01h24",
-      "url": "https://www.business-standard.com/amp/world-news/china-s-economy-slows-in-oct-as-factory-output-retail-sales-miss-forecasts-126111600592_1.html",
-      "por_que": "Produção industrial +4,8% a/a (consenso 5,3%) e varejo +0,4% (consenso 0,8%); demanda chinesa fraca pesa em minério, Vale e no real.",
-      "impacto": {
-        "win": "baixa",
-        "wdo": "alta"
-      }
+      "titulo": "Dólar sobe 2,15% e fecha a R$ 5,77, maior valor desde abril de 2025, com risco fiscal",
+      "fonte": "InfoMoney",
+      "hora": "seg 17h",
+      "url": "https://www.infomoney.com.br/mercados/dolar-hoje-avanca-com-dados-domesticos-e-politica-fiscal-em-foco/",
+      "por_que": "O WDO abre carregando o maior prêmio fiscal em 19 meses; o Ibovespa caiu 1,83% no mesmo pregão.",
+      "impacto": { "wdo": "alta", "di": "alta" }
     },
     {
-      "titulo": "Futuros de Nova York recuam antes do balanço da Nvidia; Warsh fala hoje",
-      "fonte": "Investing.com",
-      "hora": "06h04",
-      "url": "https://ca.investing.com/news/economy-news/nvidia-results-ahead-this-week-feds-warsh-to-speak--whats-moving-markets-4959912",
-      "por_que": "Nasdaq em queda puxa o apetite a risco para baixo antes da abertura; a fala de Warsh pode reforçar a aposta de alta dos juros americanos em dezembro.",
-      "impacto": {
-        "win": "baixa",
-        "wdo": "alta"
-      }
+      "titulo": "Senado deve concluir hoje o ajuste fiscal com a votação de quatro destaques",
+      "fonte": "Brasil 61",
+      "hora": "04h30",
+      "url": "https://brasil61.com/n/congresso-tem-semana-de-votacoes-sobre-ajuste-fiscal-e-debates-sobre-reforma-tributaria-bras2617482",
+      "por_que": "O PLP 299 amplia o bloqueio de despesas e corta benefícios tributários; mudança no texto pelos destaques pode ampliar o prêmio no DI e no dólar."
     },
     {
-      "titulo": "Lula deve anunciar equipe econômica do quarto mandato nos próximos dias",
-      "fonte": "Money Times",
-      "hora": "07h01",
-      "url": "https://www.moneytimes.com.br/investidores-aguardam-definicao-da-equipe-economica-em-semana-mais-curta-ibovespa-em-dolar-cai-nesta-segunda-feira-16-rens/",
-      "por_que": "O nome para a Fazenda é o principal sinal sobre o rumo fiscal de 2027 e pode mexer de forma forte no DI longo e no dólar quando sair.",
-      "impacto": {}
+      "titulo": "EUA exigem licença para chips de IA em data centers que atendam empresas chinesas",
+      "fonte": "TechCrunch",
+      "hora": "seg 12h02",
+      "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
+      "por_que": "A regra, que inclui o Brasil entre os países com exigência de licença, derrubou a Ásia e pesa no apetite a risco global antes da Nvidia.",
+      "impacto": { "win": "baixa", "wdo": "alta" }
     },
     {
-      "titulo": "Ajuste fiscal aprovado no Senado é visto como tímido por economistas; destaques ficam para esta semana",
-      "fonte": "O Povo",
-      "hora": "dom 22h15",
-      "url": "https://mais.opovo.com.br/jornal/economia/2026/11/16/pacote-fiscal-de-lula-divide-a-esquerda-e-e-visto-como-timido-por-economistas.html",
-      "por_que": "O plano prevê até R$ 60 bi em 2027 para um superávit de 0,5% do PIB; segundo a matéria, Mansueto Almeida (BTG) vê direção correta, mas tamanho pequeno, o que sustenta o prêmio na curva.",
-      "impacto": {
-        "wdo": "alta",
-        "di": "alta"
-      }
+      "titulo": "Ações de tecnologia ampliam queda e futuros de NY recuam antes do balanço da Nvidia",
+      "fonte": "Bloomberg (via Swissinfo)",
+      "hora": "06h21",
+      "url": "https://www.swissinfo.ch/eng/tech-stocks-extend-selloff-as-nvidia-results-near%3a-markets-wrap/92391739",
+      "por_que": "MSCI Ásia-Pacífico −1,5% e emergentes −1,3%; aversão a risco global costuma pesar no WIN e favorecer o dólar contra o real.",
+      "impacto": { "win": "baixa", "wdo": "alta" }
     },
     {
-      "titulo": "STF leva julgamento sobre o fim da escala 6x1 ao plenário presencial; transição de 16/12 segue mantida",
-      "fonte": "Conjur",
-      "hora": "sáb 11h43",
-      "url": "https://conjur.com.br/2026-nov-15/stf-vai-reiniciar-julgamento-sobre-fim-da-escala-6x1-em-plenario/",
-      "por_que": "Pedido de destaque de Luiz Fux zera o julgamento virtual, sem data; a jornada cai de 44 para 42 horas em 16/12, tema que pesa no custo de varejo e serviços na bolsa.",
-      "impacto": {}
+      "titulo": "Varejo e indústria nos EUA, Durigan no Senado e balanço da Nvidia movimentam o dia",
+      "fonte": "InfoMoney",
+      "hora": "06h05",
+      "url": "https://www.infomoney.com.br/mercados/varejo-industria-eua-nvidia-ajuste-fiscal-agenda-17112026/",
+      "por_que": "Agenda concentrada entre 10h e 11h30 (varejo, produção industrial, Waller e Hammack) tende a elevar a volatilidade do WDO e do DI no fim da manhã."
     }
   ],
   "fontes": [
-    {
-      "titulo": "Reuters (via Business Standard) — China's economy slows in Oct as factory output, retail sales miss forecasts",
-      "url": "https://www.business-standard.com/amp/world-news/china-s-economy-slows-in-oct-as-factory-output-retail-sales-miss-forecasts-126111600592_1.html"
-    },
-    {
-      "titulo": "InfoMoney — Prévia do PIB, Boletim Focus, falas do Fed e mais destaques desta segunda-feira",
-      "url": "https://www.infomoney.com.br/mercados/previa-pib-focus-falas-fed-agenda-segunda-feira-16112026/"
-    },
-    {
-      "titulo": "Money Times — Investidores aguardam definição da equipe econômica em semana mais curta",
-      "url": "https://www.moneytimes.com.br/investidores-aguardam-definicao-da-equipe-economica-em-semana-mais-curta-ibovespa-em-dolar-cai-nesta-segunda-feira-16-rens/"
-    },
-    {
-      "titulo": "Investing.com — Nvidia results ahead this week; Fed's Warsh to speak",
-      "url": "https://ca.investing.com/news/economy-news/nvidia-results-ahead-this-week-feds-warsh-to-speak--whats-moving-markets-4959912"
-    },
-    {
-      "titulo": "BPMoney — IBC-Br e ata do Fed marcam a semana do mercado",
-      "url": "https://bpmoney.com.br/economia/previa-pib-ata-fed-destaques-semana-calendario-indicadores/"
-    },
-    {
-      "titulo": "Conjur — STF vai reiniciar julgamento sobre fim da escala 6x1 em plenário presencial",
-      "url": "https://conjur.com.br/2026-nov-15/stf-vai-reiniciar-julgamento-sobre-fim-da-escala-6x1-em-plenario/"
-    }
+    { "titulo": "InfoMoney — Varejo e indústria nos EUA, balanço da Nvidia e ajuste fiscal movimentam os mercados", "url": "https://www.infomoney.com.br/mercados/varejo-industria-eua-nvidia-ajuste-fiscal-agenda-17112026/" },
+    { "titulo": "InfoMoney — Dólar hoje sobe 2% e vai a R$ 5,77, maior valor desde abril de 2025, com risco fiscal", "url": "https://www.infomoney.com.br/mercados/dolar-hoje-avanca-com-dados-domesticos-e-politica-fiscal-em-foco/" },
+    { "titulo": "Agência Senado — CAE: ministro da Fazenda debate alíquota da CBS na terça-feira", "url": "https://www12.senado.leg.br/noticias/materias/2026/11/13/cae-ministro-da-fazenda-debate-aliquota-da-cbs-na-terca-feira" },
+    { "titulo": "TechCrunch — US tightens AI chip export controls to deter Chinese companies from accessing compute remotely", "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/" },
+    { "titulo": "Bloomberg (via Swissinfo) — Tech Stocks Extend Selloff as Nvidia Results Near", "url": "https://www.swissinfo.ch/eng/tech-stocks-extend-selloff-as-nvidia-results-near%3a-markets-wrap/92391739" },
+    { "titulo": "Yahoo Finance — Stock market today: futures slip in countdown to Nvidia earnings", "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html" }
   ]
 }
