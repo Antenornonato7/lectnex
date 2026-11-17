@@ -95,6 +95,18 @@
   },
   {
    "data": "2026-11-17",
+   "hora": "10h",
+   "pais": "BR",
+   "evento": "Durigan na CAE do Senado (alíquota da CBS 2027)",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "TCU recomendou alíquota de referência de 11,3% para a CBS; Senado fixa o valor até 15/12.",
+   "tipo": "fala-fazenda"
+  },
+  {
+   "data": "2026-11-17",
    "hora": "10h30",
    "pais": "US",
    "evento": "Vendas no varejo (out, m/m)",
@@ -104,9 +116,22 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Consenso Newsquawk: +0,2% m/m (grupo de controle +0,4%, ant. 0,1%). Consumo forte reforça a aposta de alta do Fed em dezembro.",
+   "nota": "Consenso +0,2% m/m (núcleo ex-autos +0,4%, ant. +0,9%). Consumo forte reforça a aposta de alta do Fed em dezembro.",
    "tipo": "varejo-eua",
    "consenso": "0,2%"
+  },
+  {
+   "data": "2026-11-17",
+   "hora": "11h10",
+   "pais": "US",
+   "evento": "Fala de Christopher Waller (Fed)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Sinal sobre o ritmo de juros em dezembro.",
+   "tipo": "fala-fed"
   },
   {
    "data": "2026-11-17",
@@ -118,8 +143,21 @@
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "Atividade da indústria americana (Fed).",
-   "tipo": "producao-industrial-eua"
+   "nota": "Atividade da indústria americana (Fed); consenso do calendário do Yahoo Finance.",
+   "tipo": "producao-industrial-eua",
+   "consenso": "0,1%"
+  },
+  {
+   "data": "2026-11-17",
+   "hora": "16h25",
+   "pais": "US",
+   "evento": "Fala de John Williams (Fed de Nova York)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Conversa em evento; segunda fala dele na semana.",
+   "tipo": "fala-fed"
   },
   {
    "data": "2026-11-17",
