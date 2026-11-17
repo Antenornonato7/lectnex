@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T16:35-03:00",
+  "atualizado_em": "2026-11-17T16:38-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -311,7 +311,11 @@
     ],
     [
      "16:20",
-     169690.0
+     169660.0
+    ],
+    [
+     "16:23",
+     169633.0
     ]
    ]
   },
@@ -684,6 +688,10 @@
     ],
     [
      "16:35",
+     5.777
+    ],
+    [
+     "16:38",
      5.7775
     ]
    ]
@@ -1263,8 +1271,23 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.09,
     "dolar30": 0.01
+   },
+   {
+    "hora": "16:04",
+    "titulo": "B3 prepara BDR da Anthropic para estreia simultânea ao IPO na Nasdaq",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc3ZRV0V2VXhIdjhPRjJqMk12QnN5YXpKWlpzV2VzZjJFZUtzaUU1R1VUaFRVYUU3SXl4bllvT1kwTGRxSE9zQWo1ZTgtdDlpMWo4S3E0MGV4Q1Z6MXp4cGRBUjAySndIWExWM2ZRVng0VkM2cWh4dE01dWpaa1QtaURlTFZOM3RVRFBJcTFRT3dnMGNoNG1lYXZkREZxaVhrUF9JaWE5N0RsTmd3S2prbzZucEdpeGFjVmw3MjBR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": null,
+    "dolar30": 0.0
    },
    {
     "hora": "16:11",
@@ -1277,7 +1300,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.04
    },
    {
     "hora": "16:15",
@@ -2112,6 +2135,19 @@
    "tickers": []
   },
   {
+   "titulo": "B3 prepara BDR da Anthropic para estreia simultânea ao IPO na Nasdaq",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc3ZRV0V2VXhIdjhPRjJqMk12QnN5YXpKWlpzV2VzZjJFZUtzaUU1R1VUaFRVYUU3SXl4bllvT1kwTGRxSE9zQWo1ZTgtdDlpMWo4S3E0MGV4Q1Z6MXp4cGRBUjAySndIWExWM2ZRVng0VkM2cWh4dE01dWpaa1QtaURlTFZOM3RVRFBJcTFRT3dnMGNoNG1lYXZkREZxaVhrUF9JaWE5N0RsTmd3S2prbzZucEdpeGFjVmw3MjBR?oc=5",
+   "publicado": "2026-11-17T16:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
    "titulo": "A reforma tributária, o ‘ajuste fiscal’ e os desafios para o agronegócio",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/agronegocios/a-reforma-tributaria-o-ajuste-fiscal-e-os-desafios-para-o-agronegocio/",
@@ -2161,15 +2197,15 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T16:35-03:00",
+ "atualizado_em": "2026-11-17T16:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
   "Reuters",
   "Valor"
  ],
@@ -2197,6 +2233,19 @@
    "tickers": []
   },
   {
+   "titulo": "B3 prepara BDR da Anthropic para estreia simultânea ao IPO na Nasdaq",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc3ZRV0V2VXhIdjhPRjJqMk12QnN5YXpKWlpzV2VzZjJFZUtzaUU1R1VUaFRVYUU3SXl4bllvT1kwTGRxSE9zQWo1ZTgtdDlpMWo4S3E0MGV4Q1Z6MXp4cGRBUjAySndIWExWM2ZRVng0VkM2cWh4dE01dWpaa1QtaURlTFZOM3RVRFBJcTFRT3dnMGNoNG1lYXZkREZxaVhrUF9JaWE5N0RsTmd3S2prbzZucEdpeGFjVmw3MjBR?oc=5",
+   "publicado": "2026-11-17T16:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
    "titulo": "Durigan prevê impacto inicial da reforma tributária sobre inflação",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/durigan-preve-impacto-inicial-da-reforma-tributaria-sobre-inflacao",
@@ -2206,6 +2255,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Hapvida salta 15% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcXpOUndpdndRTjRHWWhlZDdaOEcxbkZOcmx2M3pSU1dyS0FNaE1uYUpWOXFLbHZqQWtGODVzMDAwQWQtVVRjOUdhLTNMUUprbEFxZFMwZXBCS2RBakFKdzlxdVlWVVo4Nms2MmtRNERLbW8zS2ZBay1SOG9DeWt0VUtGbVpWcGVWQUhWM0VPaGRfaGVvUWpncmtfaTAxTGZ2eFFUWDN4d3h2Nmktc0prdXlEU25wS1ExQzNON3pnVUo4RU9EUmlqaXJtbm94YlFfS3N6Q2VR?oc=5",
+   "publicado": "2026-11-17T15:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
   },
   {
    "titulo": "Governo retira urgência de projeto de bets para poder votar ajuste fiscal e proposta sobre big techs",
@@ -2230,19 +2292,6 @@
    ],
    "tickers": [
     "BPAC11"
-   ]
-  },
-  {
-   "titulo": "B3 lançará BDR da Anthropic simultaneamente ao IPO da empresa na Nasdaq",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYVFsT2VvYXhKTWFMaGoxUlBMdjMtbXRIX0kxZzhfdGtKRy0xVnV3aGtMZE9CTHl0NDEzakxGbUFvZ1R6NVFFYzRBZ29SQmdGYm1mdkpXbVRNMlZjNTZGTGkwbFNmMm5IaHF2RDh1NWJLOEpIU01EZ1p5Ykw1cnNwWUhOMm14V25aZUY1a3dVa05ockFEeWJNRUFvclZGTDRfZk5ERk85TWdRTVkxWVJF0gG0AUFVX3lxTE1LYkk2SG1QTkkyRF9pM1otdVFmLXQzQ3djN3U4YlVNYkxlUlpIRk44YXkzaG5ZTHVuN25ZNjByZEdmUVFINEhMT0lvMElwbjMtZWJHUFZrOGgtMTVsOWM1MTYzWmtlcExTNmk4OThhMDVMejQyWkNpM1ZhcWxFZ2hOOWlCTXVxT3cxQmhSQU1oQXRsbmdjMm0xdUM4eTlYcGNNYUFWcWItNVRQOHlfX3QtLTBNaA?oc=5",
-   "publicado": "2026-11-17T13:37-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
    ]
   }
  ]
