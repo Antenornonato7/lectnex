@@ -141,7 +141,8 @@ def legenda_tiktok(leg):
         gancho = f'{ativo[:1].upper() + ativo[1:]} {var} hoje {"📉" if cai else "📈"} Veja a notícia que mais {"derrubou" if cai else "puxou"} o preço 👀'
     else:
         gancho = (linhas[0] if linhas else 'O que mexeu no mercado hoje 👀')[:120]
-    pergunta = next((l[:l.rindex('?') + 1] for l in linhas[1:] if '?' in l), 'Você teria visto essa notícia a tempo?')
+    pergunta = next((l[:l.rindex('?') + 1] for l in linhas[1:] if '?' in l and not re.match(r'\d+\.\s', l)),
+                    'Você teria visto essa notícia a tempo? Conta aqui 👇')
     dolar = 'dólar' in (leg or '').lower() and 'ibovespa' not in gancho.lower()
     tags = '#daytrade #minidolar #dolar #bolsadevalores #trader' if dolar else '#daytrade #miniindice #ibovespa #bolsadevalores #trader'
     return '\n'.join([gancho, '', pergunta, '', 'Siga para ver o resumo de todo pregão em 15s. Conteúdo educacional.', tags])
