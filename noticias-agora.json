@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T12:38-03:00",
+  "atualizado_em": "2026-11-17T12:40-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -119,11 +119,11 @@
     ],
     [
      "12:20",
-     171400.0
+     171652.0
     ],
     [
-     "12:23",
-     171502.0
+     "12:25",
+     171750.0
     ]
    ]
   },
@@ -304,11 +304,11 @@
     ],
     [
      "12:35",
-     5.7843
+     5.7835
     ],
     [
-     "12:38",
-     5.7857
+     "12:40",
+     5.7871
     ]
    ]
   },
@@ -659,7 +659,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.23,
+    "ibov30": 0.37,
     "dolar30": 0.11
    },
    {
@@ -672,7 +672,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.25,
     "dolar30": -0.03
    },
    {
@@ -1385,7 +1385,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T12:38-03:00",
+ "atualizado_em": "2026-11-17T12:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1400,6 +1400,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
+   "publicado": "2026-11-17T12:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ministro da Fazenda defende disciplina fiscal e diz que meta para 2027 não é ilusória",
    "fonte": "Folha",
@@ -1430,18 +1442,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
-   "publicado": "2026-11-17T12:03-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -1541,6 +1541,17 @@
    "tickers": []
   },
   {
+   "titulo": "O que esperar para o dólar nos próximos dias após moeda passar os R$ 5,80?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSkozYkdLcE0xVjFZaVYydUZKZDZuZjNQRDJaWVp2ek9vem9yY2UxMUNna3hnb0V4WnZOWC1saFdKSm90ZDJOMkxwdjlaRGltdjVtZW5rXzI0Um01ajN4bElMUU1RNFhhMlp3WDZ3UzVVVXMzZnFRaFh5aTBwT2NKN19TWF9scno4bnRILU1PamNfNF9WdXIyaEV5TlV3NFkwSENsekljVUtna1IxYVpN0gG0AUFVX3lxTFA2X28zQkp1RzJkdzBkMVBBNmhJbl9fenpHR2tRTnU3VFhqX1lGdndFZlJ0c09YeER2Q1VseGw3NDRWVXBqWi1lc0VESlFJNXhDak5tSFZEMmlkVGN0N1Z5N3lzdl90QUtVdG1nNVoydXp4VW5DU1duTkkwV3ZYQVF0b25NaFg0dmMteWUxOGF2d2IteVlmODhLSTBlOHNjZjUxN0I3cklyZEdZQ2hCLWRhZEJ4eQ?oc=5",
+   "publicado": "2026-11-17T11:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa sobe e retoma os 170 mil pontos; dólar segue em alta e bate R$ 5,80",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQnhLMVdfUFJIQ0MwOXl2VjFtZ2hYdlhjaTJBclptMFVMNFdtbGFwM2QzekpMRmlqbU1CeWF2akhlak53QVIzQUdIWjQ1c2QxNWdJTHc0SG9zcDhVdURZaFphQS1ER2g3Qzlhb3Y5dXRKWFdCRlBSU2VCWW5nbFo3b001QUNiMC1LRXZZeVdubE5GMFBGalo3bVhyNURZM3M1Rkc1ZGpyd0hhWElD?oc=5",
@@ -1577,20 +1588,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe em recuperação com apoio de Petrobras, de olho em ajuste fiscal",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ3p3ZnpKMVZnbHlBOWtaMGFKSlVVeG5EU2hDT3Y3cE9rbkZPNmZ0MEM1MDFxQzdBTm1Ebm5waFFUVGZiS29qNWJZaHdHYkVKTUZJb3NmeF9JTHZNODR5aWhHVVZ3bC1pNHlFcjFTalNoU21TeFFRZ3RnQ05mbkR6MHdGNW9vMXdqNDFjZVMzQmtpUnJEUEJyOGVQeFNDbzRsNGJsUWFfYU9sSlhONk56SHJ6MGl2S2IzQl9VWjRCWTk0enExZjlJY3dxMmZ1U3PSAd4BQVVfeXFMTlhtd1dUU0FweFZ4eDFMb3RJY0FfZW1FUVNlcDFEcFNzY0Y4LUdyQklwTEdZUFZvMUYzTTR1cmstWUNURTl0cDBjcFJzYWxiendtRGRzc3JBVEFUWWphVGswMzdOSnFzVFBPU1NYeTRpM0FQbU9EUFpJRUFHbG5JVDE3eFF0Yi1FcU1BM3F3dDMyUW1nWUgtdW5BWTYweFZ5T2FkRTRHOGpnSHBDZDJSMjgyNTFJWHlKODdqVlRmTmFtOV9VNklnbTlDdTZLMTc1UVpSNkxOSFhIT1ZwQnp3?oc=5",
-   "publicado": "2026-11-17T10:39-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   }
  ]
 }
