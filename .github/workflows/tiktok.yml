@@ -8,7 +8,7 @@ on:
       acao:
         description: 'link (manda o link de autorização no Telegram), conectar (cole o código da página do site), teste ou teste-post (Reels do dia como privado)'
         type: choice
-        options: [link, conectar, teste, teste-post, teste-rascunho, legenda]
+        options: [link, conectar, teste, teste-post, teste-rascunho, legenda, status]
         default: link
       codigo:
         description: 'Só para conectar: o código mostrado em lectnex.com.br/tiktok-callback.html'
@@ -28,6 +28,7 @@ jobs:
           TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
           TIKTOK_CODE: ${{ inputs.codigo }}
+          TIKTOK_PID: ${{ inputs.codigo }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
           GITHUB_TOKEN: ${{ github.token }}

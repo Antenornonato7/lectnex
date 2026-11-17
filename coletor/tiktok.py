@@ -182,6 +182,15 @@ def teste_rascunho():
         pass
 
 
+def status(pid=None):
+    """Situação de um envio (padrão: os últimos guardados em tiktok/envios.json ou o publish_id dado)."""
+    tok = acesso()
+    pids = [pid] if pid else [p for p in (os.environ.get('TIKTOK_PID') or '').split() if p]
+    for p in pids:
+        d = api('post/publish/status/fetch/', tok, {'publish_id': p})
+        ig.note('notice', f'TikTok {p}: {json.dumps(d, ensure_ascii=False)[:400]}')
+
+
 def link():
     estado = hashlib.sha256(os.urandom(16)).hexdigest()[:16]
     url = 'https://www.tiktok.com/v2/auth/authorize/?' + urllib.parse.urlencode({
@@ -230,6 +239,8 @@ if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'teste'
     if cmd == 'link':
         link()
+    elif cmd == 'status':
+        status()
     elif cmd == 'legenda':
         import datetime as dt
         legenda_do_dia(os.environ.get('KIT_DIA') or dt.datetime.now(ig.BRT).date().isoformat())
