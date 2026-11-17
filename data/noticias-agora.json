@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T16:38-03:00",
+  "atualizado_em": "2026-11-17T17:08-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -311,11 +311,31 @@
     ],
     [
      "16:20",
-     169660.0
+     169570.0
     ],
     [
-     "16:23",
-     169633.0
+     "16:25",
+     169516.0
+    ],
+    [
+     "16:30",
+     169546.0
+    ],
+    [
+     "16:35",
+     169563.0
+    ],
+    [
+     "16:40",
+     169564.0
+    ],
+    [
+     "16:45",
+     169527.0
+    ],
+    [
+     "16:50",
+     169507.0
     ]
    ]
   },
@@ -688,11 +708,35 @@
     ],
     [
      "16:35",
-     5.777
+     5.7775
     ],
     [
-     "16:38",
-     5.7775
+     "16:40",
+     5.778
+    ],
+    [
+     "16:45",
+     5.78
+    ],
+    [
+     "16:50",
+     5.7788
+    ],
+    [
+     "16:55",
+     5.781
+    ],
+    [
+     "17:00",
+     5.7833
+    ],
+    [
+     "17:05",
+     5.7825
+    ],
+    [
+     "17:08",
+     5.783
     ]
    ]
   },
@@ -1271,7 +1315,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.09,
+    "ibov30": -0.15,
     "dolar30": 0.01
    },
    {
@@ -1286,7 +1330,7 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": null,
+    "ibov30": -0.12,
     "dolar30": 0.0
    },
    {
@@ -1299,8 +1343,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.04
+    "ibov30": -0.09,
+    "dolar30": 0.05
    },
    {
     "hora": "16:15",
@@ -1312,6 +1356,63 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": -0.08,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "16:51",
+    "titulo": "Vale tem contrato de 20 anos de compra de minério da Cedro",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/vale-tem-contrato-de-20-anos-de-compra-de-minerio-da-cedro.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "VALE3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:00",
+    "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/ibovespa-incluira-acoes-de-empresas-brasileiras-listadas-no-exterior-a-partir-de-2027.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:01",
+    "titulo": "Ibovespa vai mudar: índice passará por segundo grande alteração em quase 60 anos",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhBREZ6UnMxbEtvYXdQcmJuVWxBZkY0UnVlRzZMVjVrYW13WjVvRzhBTHpuSHFZSlBxLVk1MlFLNzU4VWRvcDNNbld0ZkhYOWduWk9QUmJ4WFFtejJoeFR1dHl4ZFhFUTJHaG1DY1ZwVmplcXcySmJJVDdMYzJNT05OVGViODV2bHhkZEpkRFBBRGUxQzBtSFN5SFZsTGV3Yk5ZMkd4dXdjcno3LVVTbjF5bnoyUQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:02",
+    "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQlZoOVhmS1VqamxHdC1YZW9nMVpHbjlpVG9zRG1NQmRCRWJ5cXlKWXJ0OXhDbXowNnJKNHZ4U3lYWDZWOGw0bTl6aDZSNV95VFFnRjE5dk1FUG9QM1NUd0JxTnNEYWw1SGpfSFdVR3NwUEJ6RVRuWVFzUTFYQ1diNGp3cmJUck9DSDA2bnNKUmNsZ29ac1ZzS3NDRmZodldvSDFJSVVTSHpjZjJudlUyTTFnOHZNWldQMWJTZWZtM2lDTlJIRVl2d2tMZHluU00?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -2168,6 +2269,55 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Vale tem contrato de 20 anos de compra de minério da Cedro",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/vale-tem-contrato-de-20-anos-de-compra-de-minerio-da-cedro.shtml",
+   "publicado": "2026-11-17T16:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/ibovespa-incluira-acoes-de-empresas-brasileiras-listadas-no-exterior-a-partir-de-2027.shtml",
+   "publicado": "2026-11-17T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa vai mudar: índice passará por segundo grande alteração em quase 60 anos",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhBREZ6UnMxbEtvYXdQcmJuVWxBZkY0UnVlRzZMVjVrYW13WjVvRzhBTHpuSHFZSlBxLVk1MlFLNzU4VWRvcDNNbld0ZkhYOWduWk9QUmJ4WFFtejJoeFR1dHl4ZFhFUTJHaG1DY1ZwVmplcXcySmJJVDdMYzJNT05OVGViODV2bHhkZEpkRFBBRGUxQzBtSFN5SFZsTGV3Yk5ZMkd4dXdjcno3LVVTbjF5bnoyUQ?oc=5",
+   "publicado": "2026-11-17T17:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQlZoOVhmS1VqamxHdC1YZW9nMVpHbjlpVG9zRG1NQmRCRWJ5cXlKWXJ0OXhDbXowNnJKNHZ4U3lYWDZWOGw0bTl6aDZSNV95VFFnRjE5dk1FUG9QM1NUd0JxTnNEYWw1SGpfSFdVR3NwUEJ6RVRuWVFzUTFYQ1diNGp3cmJUck9DSDA2bnNKUmNsZ29ac1ZzS3NDRmZodldvSDFJSVVTSHpjZjJudlUyTTFnOHZNWldQMWJTZWZtM2lDTlJIRVl2d2tMZHluU00?oc=5",
+   "publicado": "2026-11-17T17:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
   }
  ],
  "enviadas": [
@@ -2197,7 +2347,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T16:38-03:00",
+ "atualizado_em": "2026-11-17T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2206,10 +2356,60 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
+  "Money Times",
   "Reuters",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQlZoOVhmS1VqamxHdC1YZW9nMVpHbjlpVG9zRG1NQmRCRWJ5cXlKWXJ0OXhDbXowNnJKNHZ4U3lYWDZWOGw0bTl6aDZSNV95VFFnRjE5dk1FUG9QM1NUd0JxTnNEYWw1SGpfSFdVR3NwUEJ6RVRuWVFzUTFYQ1diNGp3cmJUck9DSDA2bnNKUmNsZ29ac1ZzS3NDRmZodldvSDFJSVVTSHpjZjJudlUyTTFnOHZNWldQMWJTZWZtM2lDTlJIRVl2d2tMZHluU00?oc=5",
+   "publicado": "2026-11-17T17:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa vai mudar: índice passará por segundo grande alteração em quase 60 anos",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhBREZ6UnMxbEtvYXdQcmJuVWxBZkY0UnVlRzZMVjVrYW13WjVvRzhBTHpuSHFZSlBxLVk1MlFLNzU4VWRvcDNNbld0ZkhYOWduWk9QUmJ4WFFtejJoeFR1dHl4ZFhFUTJHaG1DY1ZwVmplcXcySmJJVDdMYzJNT05OVGViODV2bHhkZEpkRFBBRGUxQzBtSFN5SFZsTGV3Yk5ZMkd4dXdjcno3LVVTbjF5bnoyUQ?oc=5",
+   "publicado": "2026-11-17T17:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/ibovespa-incluira-acoes-de-empresas-brasileiras-listadas-no-exterior-a-partir-de-2027.shtml",
+   "publicado": "2026-11-17T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Vale tem contrato de 20 anos de compra de minério da Cedro",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/vale-tem-contrato-de-20-anos-de-compra-de-minerio-da-cedro.shtml",
+   "publicado": "2026-11-17T16:51-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
   {
    "titulo": "We’re watching Cramer’s favorite market indicator for a signal to buy stocks",
    "fonte": "CNBC",
@@ -2218,6 +2418,18 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar recua após bater R$ 5,81 e Bolsa sobe com política fiscal no radar",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWUdLN2UyTkVwbkZyTEFXVDFCZ3JkeFI4TnVzYkRMdnB0YnhFdFVxMlV6dGN6eFF1bS01T054LTFzdWJGdGpSUXNWenlYQjVFdzVCd0QxZnBSZUV1QVBHN0NHVjJ3Uk85cVhjYWpXb2xJWm95Z1p6ZDBqaTN2ekZiRWpiQWVwekNMX21NdURDdlpaa1A1eTRNNVFMemFKQnV0RnVjUWRn?oc=5",
+   "publicado": "2026-11-17T16:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2257,20 +2469,7 @@
    "tickers": []
   },
   {
-   "titulo": "Hapvida salta 15% e lidera ganhos do Ibovespa após balanço; veja maiores altas e baixas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcXpOUndpdndRTjRHWWhlZDdaOEcxbkZOcmx2M3pSU1dyS0FNaE1uYUpWOXFLbHZqQWtGODVzMDAwQWQtVVRjOUdhLTNMUUprbEFxZFMwZXBCS2RBakFKdzlxdVlWVVo4Nms2MmtRNERLbW8zS2ZBay1SOG9DeWt0VUtGbVpWcGVWQUhWM0VPaGRfaGVvUWpncmtfaTAxTGZ2eFFUWDN4d3h2Nmktc0prdXlEU25wS1ExQzNON3pnVUo4RU9EUmlqaXJtbm94YlFfS3N6Q2VR?oc=5",
-   "publicado": "2026-11-17T15:20-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "HAPV3"
-   ]
-  },
-  {
-   "titulo": "Governo retira urgência de projeto de bets para poder votar ajuste fiscal e proposta sobre big techs",
+   "titulo": "Governo retira urgência de projeto de bets para destravar votação de ajuste fiscal na Câmara",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/politica/governo-retira-urgencia-de-projeto-de-bets-para-poder-votar-ajuste-fiscal-e-proposta-sobre-big-techs/",
    "publicado": "2026-11-17T15:14-03:00",
@@ -2279,20 +2478,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Dólar fecha no maior patamar em mais de um ano; balanços de BB e BTG pressionaram Ibovespa hoje",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQNnRib3puU0NsZEs4YUt5YW9XWWFxd01iTkhwWkVJWXctY3IyalhVOWJKZjFnUUZOdFNkSmlSNEZtV1NVcG4zYmJjTnZrMzdJVU5aYkVkcEVPVy1OSlozdVd3STlfc1d6OHFuNGhySFl6d3VWNXNiaXd5SjZjUDNfSGZzQ2dnZHVsUGEtT1RqdUFNdVBJTUNrazY1SnB4Z0NUZHp6c01nSGNTZFhyZW9TazlQUjBoU2xyUkd3ekxBVEQxNHNXUjlUdmRhRXdUZVRsR21WWDF5OFdDeklkLVhhc0tnSWdFNjBPM1ctb1dSYi14WlZQ?oc=5",
-   "publicado": "2026-11-17T14:39-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "BPAC11"
-   ]
   }
  ]
 }
