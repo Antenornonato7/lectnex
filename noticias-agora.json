@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T12:20-03:00",
+  "atualizado_em": "2026-11-17T12:23-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -107,7 +107,11 @@
     ],
     [
      "12:05",
-     171332.0
+     171302.0
+    ],
+    [
+     "12:08",
+     171338.0
     ]
    ]
   },
@@ -276,7 +280,11 @@
     ],
     [
      "12:20",
-     5.7877
+     5.7906
+    ],
+    [
+     "12:23",
+     5.7865
     ]
    ]
   },
@@ -597,7 +605,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.11,
+    "ibov30": 0.1,
     "dolar30": 0.31
    },
    {
@@ -628,7 +636,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.08
+    "dolar30": 0.13
    },
    {
     "hora": "12:00",
@@ -1305,7 +1313,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T12:20-03:00",
+ "atualizado_em": "2026-11-17T12:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1320,6 +1328,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Investor Steve Eisman says the AI neocloud stocks are in 'big trouble' from Nvidia fallout",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/big-short-investor-steve-eisman-to-discuss-nvidia-anthropic-and-ai-bull-on-cnbc.html",
+   "publicado": "2026-11-17T12:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
    "fonte": "CNBC",
@@ -1364,17 +1383,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Investor Steve Eisman says the AI neocloud stocks are in 'big trouble' from Nvidia fallout",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/big-short-investor-steve-eisman-to-discuss-nvidia-anthropic-and-ai-bull-on-cnbc.html",
-   "publicado": "2026-11-17T11:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
@@ -1461,6 +1469,20 @@
    "tickers": []
   },
   {
+   "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
+   "publicado": "2026-11-17T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
    "titulo": "Ibovespa sobe em recuperação com apoio de Petrobras, de olho em ajuste fiscal",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ3p3ZnpKMVZnbHlBOWtaMGFKSlVVeG5EU2hDT3Y3cE9rbkZPNmZ0MEM1MDFxQzdBTm1Ebm5waFFUVGZiS29qNWJZaHdHYkVKTUZJb3NmeF9JTHZNODR5aWhHVVZ3bC1pNHlFcjFTalNoU21TeFFRZ3RnQ05mbkR6MHdGNW9vMXdqNDFjZVMzQmtpUnJEUEJyOGVQeFNDbzRsNGJsUWFfYU9sSlhONk56SHJ6MGl2S2IzQl9VWjRCWTk0enExZjlJY3dxMmZ1U3PSAd4BQVVfeXFMTlhtd1dUU0FweFZ4eDFMb3RJY0FfZW1FUVNlcDFEcFNzY0Y4LUdyQklwTEdZUFZvMUYzTTR1cmstWUNURTl0cDBjcFJzYWxiendtRGRzc3JBVEFUWWphVGswMzdOSnFzVFBPU1NYeTRpM0FQbU9EUFpJRUFHbG5JVDE3eFF0Yi1FcU1BM3F3dDMyUW1nWUgtdW5BWTYweFZ5T2FkRTRHOGpnSHBDZDJSMjgyNTFJWHlKODdqVlRmTmFtOV9VNklnbTlDdTZLMTc1UVpSNkxOSFhIT1ZwQnp3?oc=5",
@@ -1494,18 +1516,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar cai com pauta fiscal no Brasil e expectativa sobre dados no exterior",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWUdLN2UyTkVwbkZyTEFXVDFCZ3JkeFI4TnVzYkRMdnB0YnhFdFVxMlV6dGN6eFF1bS01T054LTFzdWJGdGpSUXNWenlYQjVFdzVCd0QxZnBSZUV1QVBHN0NHVjJ3Uk85cVhjYWpXb2xJWm95Z1p6ZDBqaTN2ekZiRWpiQWVwekNMX21NdURDdlpaa1A1eTRNNVFMemFKQnV0RnVjUWRn?oc=5",
-   "publicado": "2026-11-17T09:21-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
