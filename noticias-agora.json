@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T15:23-03:00",
+  "atualizado_em": "2026-11-17T15:25-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -251,11 +251,11 @@
     ],
     [
      "15:05",
-     170492.0
+     170421.0
     ],
     [
-     "15:08",
-     170464.0
+     "15:10",
+     170276.0
     ]
    ]
   },
@@ -568,11 +568,11 @@
     ],
     [
      "15:20",
-     5.781
+     5.7783
     ],
     [
-     "15:23",
-     5.7813
+     "15:25",
+     5.7785
     ]
    ]
   },
@@ -1096,6 +1096,19 @@
     ],
     "ibov30": -0.11,
     "dolar30": 0.03
+   },
+   {
+    "hora": "15:14",
+    "titulo": "Governo retira urgência de projeto de bets para poder votar ajuste fiscal e proposta sobre big techs",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/politica/governo-retira-urgencia-de-projeto-de-bets-para-poder-votar-ajuste-fiscal-e-proposta-sobre-big-techs/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1866,6 +1879,17 @@
     "ITUB4",
     "TIMS3"
    ]
+  },
+  {
+   "titulo": "Governo retira urgência de projeto de bets para poder votar ajuste fiscal e proposta sobre big techs",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/politica/governo-retira-urgencia-de-projeto-de-bets-para-poder-votar-ajuste-fiscal-e-proposta-sobre-big-techs/",
+   "publicado": "2026-11-17T15:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1895,7 +1919,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T15:23-03:00",
+ "atualizado_em": "2026-11-17T15:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1909,6 +1933,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Governo retira urgência de projeto de bets para poder votar ajuste fiscal e proposta sobre big techs",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/politica/governo-retira-urgencia-de-projeto-de-bets-para-poder-votar-ajuste-fiscal-e-proposta-sobre-big-techs/",
+   "publicado": "2026-11-17T15:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Itaú BBA eleva TIM (TIMS3) para compra e cita três fatores que tornam a ação difícil de ignorar",
    "fonte": "Money Times",
@@ -1988,17 +2023,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ministro-da-fazenda-defende-disciplina-fiscal-e-diz-que-meta-para-2027-nao-e-ilusoria.shtml",
    "publicado": "2026-11-17T12:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Relator vai mudar proposta que regula big techs para restringir empresas fiscalizadas pelo Cade",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/relator-vai-alterar-projeto-que-regula-mercados-digitais-para-restringir-empresas-fiscalizadas-pelo-cade.shtml",
-   "publicado": "2026-11-17T12:24-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
