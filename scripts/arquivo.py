@@ -67,6 +67,9 @@ def pagina(d, datas):
            'dateModified': d.get('gerado_em') or d['data'], 'author': {'@id': BASE + '#org'}, 'publisher': {'@id': BASE + '#org'}, 'image': BASE + 'assets/brand/og-mercado.jpg'}]
     img = f'{BASE}assets/og/leitura-{d["data"]}.jpg' if os.path.exists(f'assets/og/leitura-{d["data"]}.jpg') else None
     if img: ld[0]['image'] = img
+    ld.append({'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Lectnex', 'item': BASE},
+                                                              {'@type': 'ListItem', 'position': 2, 'name': 'Arquivo da Leitura do Dia', 'item': BASE + 'leitura/'},
+                                                              {'@type': 'ListItem', 'position': 3, 'name': f'Leitura de {br(dt.date.fromisoformat(d["data"]))}', 'item': url}]})
     return head(titulo + ' | Lectnex', desc, url, ld, img) + f'''
         <section class="border-b border-slate-300 dark:border-lect-borderDark grid-bg"><div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
             <span class="term-label text-lect-teal font-bold">LEITURA DO DIA · {DIAS[dia.weekday()].upper()} {br(dia, True)}{" · SEM PREGÃO" if sem else ""}</span>

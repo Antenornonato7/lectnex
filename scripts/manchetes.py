@@ -209,7 +209,10 @@ def pagina(m, datas):
     publicado = m.get('atualizado_em') or (m['data'] + 'T19:00-03:00')
     ld = [{'@type': 'NewsArticle', 'headline': titulo[:110], 'description': desc, 'url': url, 'mainEntityOfPage': url, 'inLanguage': 'pt-BR',
            'datePublished': publicado, 'dateModified': publicado, 'author': {'@id': BASE + '#org'}, 'publisher': {'@id': BASE + '#org'},
-           'image': [img or BASE + 'assets/brand/og-mercado.jpg'], 'isAccessibleForFree': True}]
+           'image': [img or BASE + 'assets/brand/og-mercado.jpg'], 'isAccessibleForFree': True},
+          {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Lectnex', 'item': BASE},
+                                                           {'@type': 'ListItem', 'position': 2, 'name': 'Arquivo de manchetes', 'item': BASE + 'manchetes.html'},
+                                                           {'@type': 'ListItem', 'position': 3, 'name': f'Manchetes de {m["data"][8:]}/{m["data"][5:7]}/{m["data"][:4]}', 'item': url}]}]
     return head(titulo + ' | Lectnex', desc, url, ld, img) + f'''
         <section class="border-b border-slate-300 dark:border-lect-borderDark grid-bg"><div class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
             <span class="term-label text-lect-teal font-bold">NOTÍCIA × PREÇO · {DIAS[dia.weekday()].upper()} {br(dia, True)}</span>
