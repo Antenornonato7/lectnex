@@ -135,6 +135,7 @@ class Aula:
             d.rectangle([M + 40, 1160, W - M - 40, 1290], fill=mix(dc, c))
             self.centro(d, 1176, 'Tire dúvidas no Discord', fonte('InterDisplay-Bold.otf', 44), mix(WHITE, c, dc))
             self.centro(d, 1232, DISCORD, fonte('JetBrainsMono-Bold.ttf', 26), mix(WHITE, c, dc))
+            self.centro(d, 1340, 'Seja fundador da Lectnex Pro · lectnex.com.br/pro', fonte('JetBrainsMono-Bold.ttf', 28), mix(ORANGE, c))
             self.centro(d, 1560, 'conteúdo educacional · não é recomendação', fonte('JetBrainsMono-Bold.ttf', 26), mix(MUTED, c))
         return im
 
@@ -143,7 +144,7 @@ def textos(a):
     t = a.t
     leg = '\n'.join([f'📚 Dicionário do trader #{a.n}: {t["t"]}', '', a.d, ''] + ([f'Na prática: {a.x}', ''] if a.x else []) +
                     ['💾 Salve para revisar e mande para quem está começando.', 'Todo dia útil um termo novo: siga para não perder.', '',
-                     f'💬 Dúvidas? Comunidade no Discord: {DISCORD}', 'Glossário completo e grátis: lectnex.com.br/glossario', '',
+                     f'💬 Dúvidas? Comunidade no Discord: {DISCORD}', '👑 Seja fundador da Lectnex Pro (lista de espera): lectnex.com.br/pro', 'Glossário completo e grátis: lectnex.com.br/glossario', '',
                      'Conteúdo educacional, não é recomendação.',
                      '#educacaofinanceira #mercadofinanceiro #daytrade #bolsadevalores #investimentos #trader'])
     corpo = a.d if len(a.d) <= 170 else a.d[:167].rsplit(' ', 1)[0] + '…'

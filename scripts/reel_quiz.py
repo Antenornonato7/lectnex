@@ -146,6 +146,7 @@ class Quiz(Reel):
             d.rectangle([M + 40, 1170, W - M - 40, 1300], fill=mix(dc, c))
             self.centro(d, 1188, 'Desafio diário no Discord', fonte('InterDisplay-Bold.otf', 44), mix(WHITE, c, dc))
             self.centro(d, 1244, DISCORD, self.F['monos'], mix(WHITE, c, dc))
+            self.centro(d, 1350, 'Seja fundador da Lectnex Pro · lectnex.com.br/pro', self.F['monos'], mix(ORANGE, c))
             self.centro(d, 1560, 'Variação de 30 min após a manchete · não prova causa', self.F['pq'], mix((100, 112, 130), c))
             self.centro(d, 1600, 'Cotações de 5 min (Yahoo Finance) · conteúdo educacional', self.F['pq'], mix((100, 112, 130), c))
         return im
@@ -163,7 +164,7 @@ class Quiz(Reel):
 def textos(q):
     legenda = '\n'.join([f'DESAFIO: {len(q.mks)} manchetes reais de hoje ({q.dia:%d/%m}). O {q.nome} subiu ou caiu nos 30 minutos seguintes? 🤔', '',
                          'Pause, chute e só depois veja a resposta. Comenta quantas você acertou 👇', '',
-                         f'💬 Desafio todo dia na comunidade do Discord: {DISCORD}', 'Conteúdo educacional, não é recomendação. lectnex.com.br',
+                         f'💬 Desafio todo dia na comunidade do Discord: {DISCORD}', '👑 Seja fundador da Lectnex Pro (lista de espera): lectnex.com.br/pro', 'Conteúdo educacional, não é recomendação. lectnex.com.br',
                          '#daytrade #miniindice #minidolar #ibovespa #trader #b3'])
     mk = next((x for x in q.mks if not DICA.search(x['titulo'])), q.mks[0])
     x = '\n\n'.join([f'Desafio de hoje 🎯 {mk["hora"]}: "{mk["titulo"][:120]}"',
