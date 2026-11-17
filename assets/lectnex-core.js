@@ -576,6 +576,7 @@
                 <a href="leitura/" class="block hover:text-lect-tealLight">Arquivo da Leitura</a>
                 <a href="comece.html" class="block hover:text-lect-tealLight">Comece por aqui</a>
                 <a href="sobre.html" class="block hover:text-lect-tealLight">Sobre o Lectnex</a>
+                <a href="pro.html" class="block text-lect-orange hover:text-lect-tealLight">Lectnex Pro · lista de espera</a>
                 <a href="hoje.html" class="block hover:text-lect-tealLight">O que mexeu hoje</a>
                 <a href="manchetes.html" class="block hover:text-lect-tealLight">Arquivo de manchetes</a>
                 <a href="placar.html" class="block hover:text-lect-tealLight">Placar de acertos</a>

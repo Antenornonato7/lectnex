@@ -482,14 +482,30 @@ def relatorio_redes():
             atual['discord'] = json.loads(urllib.request.urlopen(req, timeout=30).read()).get('approximate_member_count')
     except Exception as e:
         linhas.append(f'Discord: sem dados ({str(e)[:80]})')
+    try:  # lista de espera da Lectnex Pro e newsletter (Buttondown)
+        bk = os.environ.get('BUTTONDOWN_API_KEY', '').strip()
+        if bk:
+            def bd(q):
+                req = urllib.request.Request(f'https://api.buttondown.com/v1/subscribers?{q}', headers={'Authorization': f'Token {bk}', 'X-API-Version': '2026-04-01'})
+                return json.loads(urllib.request.urlopen(req, timeout=30).read()).get('count')
+            atual['newsletter'] = bd('type=regular')
+            atual['lista_pro'] = bd('tag=lista-pro')
+            for t in ('pro-academia', 'pro-ferramentas', 'pro-comunidade'):
+                atual[t] = bd(f'tag={t}')
+    except Exception as e:
+        linhas.append(f'Buttondown: sem dados ({str(e)[:80]})')
     ant = hist.get('ultimo', {})
-    nomes = {'instagram': 'Instagram', 'facebook': 'Facebook', 'discord': 'Discord'}
+    nomes = {'instagram': 'Instagram', 'facebook': 'Facebook', 'discord': 'Discord', 'newsletter': 'Newsletter', 'lista_pro': '👑 Lista Pro'}
     topo = []
     for k, n in nomes.items():
         if atual.get(k) is None:
             continue
         dlt = atual[k] - ant[k] if ant.get(k) is not None else None
         topo.append(f'• {n}: <b>{atual[k]}</b>' + (f' ({"+" if dlt >= 0 else ""}{dlt} na semana)' if dlt is not None else ''))
+    votos = {k: atual.get(k) for k in ('pro-academia', 'pro-ferramentas', 'pro-comunidade') if atual.get(k) is not None}
+    if votos and sum(votos.values()):
+        rot = {'pro-academia': 'trilhas', 'pro-ferramentas': 'ferramentas', 'pro-comunidade': 'comunidade'}
+        topo.append('  ↳ quer mais: ' + ' · '.join(f'{rot[k]} {v}' for k, v in sorted(votos.items(), key=lambda x: -x[1])))
     # posts da semana por alcance
     posts = []
     try:
