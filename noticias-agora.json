@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T10:50-03:00",
+  "atualizado_em": "2026-11-17T10:53-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -35,7 +35,11 @@
     ],
     [
      "10:35",
-     170086.0
+     170077.0
+    ],
+    [
+     "10:38",
+     170121.0
     ]
    ]
   },
@@ -132,7 +136,11 @@
     ],
     [
      "10:50",
-     5.7916
+     5.7978
+    ],
+    [
+     "10:53",
+     5.7985
     ]
    ]
   },
@@ -288,7 +296,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.06
    },
    {
     "hora": "10:36",
@@ -315,6 +323,22 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:47",
+    "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -796,6 +820,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
+   "publicado": "2026-11-17T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
   }
  ],
  "enviadas": [
@@ -825,7 +863,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T10:50-03:00",
+ "atualizado_em": "2026-11-17T10:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -847,6 +885,31 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
+   "publicado": "2026-11-17T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Tempo real: Bolsa recupera os 170 mil pontos e dólar passa dos R$ 5,80; acompanhe",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRzVxdzVUblhqOVQ4WUQ2ZWVaUy1MR0VxYVlyUlFvWC02czFkN2l2VUxPakNQSC1EVHVBZ0lyRjFNcmhWRmE5b0FLSmdYSUFubU9VdjZEOVVkU05YQjJYSnAyUmdlRnM3SGQxck5oQ2pOYXJtei0tOWM5U0VLTEZabU5nNlhWbmRtWEUydmRoZ3dTSWxSTzVFY2VBTU1oNG42bGNSZXh5V1RHcjdSTGs4?oc=5",
+   "publicado": "2026-11-17T10:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -922,20 +985,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dívida pode superar 100% do PIB se nada for feito nos próximos 4 anos, diz presidente do Itaú",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/itau-maluhy-divida-publica-pib-se-nada-for-feito-proximos-4-anos/",
-   "publicado": "2026-11-17T10:19-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
-  {
    "titulo": "Um conto de duas Chinas: a economia chinesa lembra um fisiculturista que trabalhou só o tronco",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/um-conto-de-duas-chinas/",
@@ -971,17 +1020,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar sobe e bate R$ 5,80 em dia de votação de ajustes fiscais no Senado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZlBOVWFwMmt2dkVWclZmSE5SbGVjSDJPSHRFeXlJRnNvV2hzV2xsNlNzaHVIREpRcFphNF9EZUttMWhQZlZvTUUyMmtudFYzUGtDSWlJUUFmUWpWdDlIRFpXcjFjYjN1d0hkQXBUdzJGWlNtUEN5VnlxS0pSU3B1Nm9VcE82aW1IZUIxcHBpZjMzWmotRVNGZHJNU23SAaIBQVVfeXFMT2phWEdDeHN5WHNES0ZIdjVHbklsWFRnc3FQcUNaWXVYYllra0VjcHhpNlRUSUh4ei1kU2dBX0N0LVpfYmtLRDl0Umk3VmEybDI0VGU2SUdHNHR2Wm5Rby1HVWZyMTQ0cHAzQU1GenNZbWhTcmx1YzlQdzJJMVZ5Slh1M21JUW9jN0djdWh5cnFkWVBZSVVZcGxIUGRQVjdMWUlR?oc=5",
-   "publicado": "2026-11-17T09:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar cai com pauta fiscal no Brasil e expectativa sobre dados no exterior",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWUdLN2UyTkVwbkZyTEFXVDFCZ3JkeFI4TnVzYkRMdnB0YnhFdFVxMlV6dGN6eFF1bS01T054LTFzdWJGdGpSUXNWenlYQjVFdzVCd0QxZnBSZUV1QVBHN0NHVjJ3Uk85cVhjYWpXb2xJWm95Z1p6ZDBqaTN2ekZiRWpiQWVwekNMX21NdURDdlpaa1A1eTRNNVFMemFKQnV0RnVjUWRn?oc=5",
@@ -1008,7 +1046,7 @@
   {
    "titulo": "O investimento preferido das brasileiras é justamente o que menos aproveita a Selic alta",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQkZ1Q2I4UGZIUmM1S3c0WEZJM1R2YkpGb0RlZVk1bzM3TnphaW41NGRIamg3RlNIQzlXNUhua1ZocmZWMnA2aUhIMi1PdTdsNkFaYzFMcHpzSGlNdm5NbnZ6QUxWQUN1VUtTWEdZZFRUMUNTbmxHaEc4VHItQVhNbTh0cHllS1dPRS03OVl0OEhCVTROVkhBWnA5RGFLYnRpRHhsTWMzYVZkZTZPWUcwQTNKNUIwY2FBSm9JdHY0UExPOTExaUFqb3RMNm5nbnNSY0ZQeWFPREdMUdIB3wFBVV95cUxQdlo4XzBTQWVZNWlnUmJWQ0dEbGstVUFsVi1JVnhWdFJCZ3NQMjl1STBKNGt0SW9GSXp0SWFqdWdXVGVEdnNxcVpNUUg1MFNJZmxiM3lGUmFEa0ZpZFVwdmdSTHB6dTVxcUxLRFUzZV9rckxZdTB0LUtpb0xxSV9vYlRqXzFVa3lmTVFfaTRYMXp0MFBTOUNlcndYRlJ3LWt0Mldnb1lGLW9TWWNnV3NsQ3BEdHFqeGNWSE1VSGk1QmJRRDFZeFh0VGtDU2gyX2dzRXJwSUZJdjdNWHE1MFlr?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdlo4XzBTQWVZNWlnUmJWQ0dEbGstVUFsVi1JVnhWdFJCZ3NQMjl1STBKNGt0SW9GSXp0SWFqdWdXVGVEdnNxcVpNUUg1MFNJZmxiM3lGUmFEa0ZpZFVwdmdSTHB6dTVxcUxLRFUzZV9rckxZdTB0LUtpb0xxSV9vYlRqXzFVa3lmTVFfaTRYMXp0MFBTOUNlcndYRlJ3LWt0Mldnb1lGLW9TWWNnV3NsQ3BEdHFqeGNWSE1VSGk1QmJRRDFZeFh0VGtDU2gyX2dzRXJwSUZJdjdNWHE1MFlr0gHfAUFVX3lxTFB2WjhfMFNBZVk1aWdSYlZDR0Rsay1VQWxWLUlWeFZ0UkJnc1AyOXVJMEo0a3RJb0ZJenRJYWp1Z1dUZUR2c3FxWk1RSDUwU0lmbGIzeUZSYURrRmlkVXB2Z1JMcHp1NXFxTEtEVTNlX2tyTFl1MHQtS2lvTHFJX29iVGpfMVVreWZNUV9pNFgxenQwUFM5Q2Vyd1hGUncta3QyV2dvWUYtb1NZY2dXc2xDcER0cWp4Y1ZITVVIaTVCYlFEMVl4WHRUa0NTaDJfZ3NFcnBJRkl2N01YcTUwWWs?oc=5",
    "publicado": "2026-11-17T09:00-03:00",
    "impacto": "alto",
    "ativos": [
