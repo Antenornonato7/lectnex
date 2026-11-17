@@ -50,6 +50,22 @@ def corpo(d):
             itens.append(f'{tit} <span style="color:{H.CINZA};font-size:13px">({H.e(n.get("fonte", ""))})</span> {tags}<br><span style="color:{H.CINZA};font-size:14px">{H.e(n.get("por_que", ""))}</span>')
         blocos.append(H.secao('Notícias que importam', H.lista(itens)))
     blocos.append(H.botao('ABRIR O TERMINAL LECTNEX →', SITE + '?utm_source=newsletter&utm_medium=email'))
+    # Dica do dia: um "comece por aqui" em rodízio, para quem acabou de chegar descobrir uma ferramenta por dia (de graça, sem automação paga)
+    import datetime as _dt
+    DICAS = [('Calculadora de risco', 'Antes de entrar, saiba quantos contratos cabem na sua conta e quanto custa o stop em reais.', 'futuros.html#risco'),
+             ('Plano do Dia', 'Eventos do dia, contrato vigente e o seu limite de perda numa tela só, antes da abertura.', 'futuros.html#plano'),
+             ('O que mexeu hoje', 'O gráfico do Ibovespa e do dólar com cada manchete marcada no horário em que saiu.', 'hoje.html'),
+             ('Glossário do trader', '67 termos explicados com exemplo em reais: ajuste diário, PTAX, rolagem e mais.', 'glossario.html'),
+             ('Comunidade no Discord', 'Desafio diário SUBIU ou CAIU, ranking do simulador e um lugar para tirar dúvidas.', 'https://discord.gg/kM6YcQA82P')]
+    try:
+        n = _dt.date.fromisoformat(d.get('data', ''))
+        tit, txt, url = DICAS[n.toordinal() % len(DICAS)]
+        if not url.startswith('http'):
+            pag, _, ancora = url.partition('#')
+            url = SITE + pag + '?utm_source=newsletter&utm_medium=email&utm_campaign=dica' + ('#' + ancora if ancora else '')
+        blocos.append(H.secao('Dica do dia · conheça o Lectnex', H.paragrafo(f'<strong>{H.e(tit)}:</strong> {H.e(txt)} <a href="{H.e(url)}" style="color:{H.TEAL_D};font-weight:700">Abrir →</a>', 14), H.ORANGE))
+    except Exception:
+        pass
     blocos.append(H.destaque(
         f'<div style="{H.MONO}font-size:11px;letter-spacing:1.5px;color:#00B4A2;font-weight:700">SIMULADOR DE PREGÃO · GRÁTIS</div>'
         f'<div style="font-size:17px;font-weight:800;margin:6px 0">Treine um dia real de WIN ou WDO</div>'
