@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T17:03-03:00",
+  "atualizado_em": "2026-11-17T17:05-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -331,7 +331,7 @@
     ],
     [
      "16:45",
-     169477.0
+     169527.0
     ]
    ]
   },
@@ -724,11 +724,11 @@
     ],
     [
      "17:00",
-     5.7843
+     5.7833
     ],
     [
-     "17:03",
-     5.782
+     "17:05",
+     5.783
     ]
    ]
   },
@@ -1377,6 +1377,34 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:01",
+    "titulo": "Ibovespa vai mudar: índice passará por segundo grande alteração em quase 60 anos",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhBREZ6UnMxbEtvYXdQcmJuVWxBZkY0UnVlRzZMVjVrYW13WjVvRzhBTHpuSHFZSlBxLVk1MlFLNzU4VWRvcDNNbld0ZkhYOWduWk9QUmJ4WFFtejJoeFR1dHl4ZFhFUTJHaG1DY1ZwVmplcXcySmJJVDdMYzJNT05OVGViODV2bHhkZEpkRFBBRGUxQzBtSFN5SFZsTGV3Yk5ZMkd4dXdjcno3LVVTbjF5bnoyUQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:02",
+    "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQlZoOVhmS1VqamxHdC1YZW9nMVpHbjlpVG9zRG1NQmRCRWJ5cXlKWXJ0OXhDbXowNnJKNHZ4U3lYWDZWOGw0bTl6aDZSNV95VFFnRjE5dk1FUG9QM1NUd0JxTnNEYWw1SGpfSFdVR3NwUEJ6RVRuWVFzUTFYQ1diNGp3cmJUck9DSDA2bnNKUmNsZ29ac1ZzS3NDRmZodldvSDFJSVVTSHpjZjJudlUyTTFnOHZNWldQMWJTZWZtM2lDTlJIRVl2d2tMZHluU00?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -2258,6 +2286,30 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa vai mudar: índice passará por segundo grande alteração em quase 60 anos",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhBREZ6UnMxbEtvYXdQcmJuVWxBZkY0UnVlRzZMVjVrYW13WjVvRzhBTHpuSHFZSlBxLVk1MlFLNzU4VWRvcDNNbld0ZkhYOWduWk9QUmJ4WFFtejJoeFR1dHl4ZFhFUTJHaG1DY1ZwVmplcXcySmJJVDdMYzJNT05OVGViODV2bHhkZEpkRFBBRGUxQzBtSFN5SFZsTGV3Yk5ZMkd4dXdjcno3LVVTbjF5bnoyUQ?oc=5",
+   "publicado": "2026-11-17T17:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQlZoOVhmS1VqamxHdC1YZW9nMVpHbjlpVG9zRG1NQmRCRWJ5cXlKWXJ0OXhDbXowNnJKNHZ4U3lYWDZWOGw0bTl6aDZSNV95VFFnRjE5dk1FUG9QM1NUd0JxTnNEYWw1SGpfSFdVR3NwUEJ6RVRuWVFzUTFYQ1diNGp3cmJUck9DSDA2bnNKUmNsZ29ac1ZzS3NDRmZodldvSDFJSVVTSHpjZjJudlUyTTFnOHZNWldQMWJTZWZtM2lDTlJIRVl2d2tMZHluU00?oc=5",
+   "publicado": "2026-11-17T17:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
   }
  ],
  "enviadas": [
@@ -2287,7 +2339,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T17:03-03:00",
+ "atualizado_em": "2026-11-17T17:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2296,10 +2348,35 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
+  "Money Times",
   "Reuters",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQlZoOVhmS1VqamxHdC1YZW9nMVpHbjlpVG9zRG1NQmRCRWJ5cXlKWXJ0OXhDbXowNnJKNHZ4U3lYWDZWOGw0bTl6aDZSNV95VFFnRjE5dk1FUG9QM1NUd0JxTnNEYWw1SGpfSFdVR3NwUEJ6RVRuWVFzUTFYQ1diNGp3cmJUck9DSDA2bnNKUmNsZ29ac1ZzS3NDRmZodldvSDFJSVVTSHpjZjJudlUyTTFnOHZNWldQMWJTZWZtM2lDTlJIRVl2d2tMZHluU00?oc=5",
+   "publicado": "2026-11-17T17:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa vai mudar: índice passará por segundo grande alteração em quase 60 anos",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhBREZ6UnMxbEtvYXdQcmJuVWxBZkY0UnVlRzZMVjVrYW13WjVvRzhBTHpuSHFZSlBxLVk1MlFLNzU4VWRvcDNNbld0ZkhYOWduWk9QUmJ4WFFtejJoeFR1dHl4ZFhFUTJHaG1DY1ZwVmplcXcySmJJVDdMYzJNT05OVGViODV2bHhkZEpkRFBBRGUxQzBtSFN5SFZsTGV3Yk5ZMkd4dXdjcno3LVVTbjF5bnoyUQ?oc=5",
+   "publicado": "2026-11-17T17:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
    "fonte": "Folha",
