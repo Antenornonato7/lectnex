@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T10:38-03:00",
+  "atualizado_em": "2026-11-17T11:08-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -23,11 +23,35 @@
     ],
     [
      "10:20",
-     169888.0
+     169928.0
     ],
     [
-     "10:23",
-     169916.0
+     "10:25",
+     170250.0
+    ],
+    [
+     "10:30",
+     169996.0
+    ],
+    [
+     "10:35",
+     169997.0
+    ],
+    [
+     "10:40",
+     170109.0
+    ],
+    [
+     "10:45",
+     170415.0
+    ],
+    [
+     "10:50",
+     170344.0
+    ],
+    [
+     "10:53",
+     170270.0
     ]
    ]
   },
@@ -112,11 +136,35 @@
     ],
     [
      "10:35",
-     5.8066
+     5.8046
     ],
     [
-     "10:38",
-     5.8047
+     "10:40",
+     5.8017
+    ],
+    [
+     "10:45",
+     5.7936
+    ],
+    [
+     "10:50",
+     5.8001
+    ],
+    [
+     "10:55",
+     5.767
+    ],
+    [
+     "11:00",
+     5.7726
+    ],
+    [
+     "11:05",
+     5.7715
+    ],
+    [
+     "11:08",
+     5.7681
     ]
    ]
   },
@@ -231,6 +279,22 @@
     "dolar30": 0.33
    },
    {
+    "hora": "10:19",
+    "titulo": "Dívida pode superar 100% do PIB se nada for feito nos próximos 4 anos, diz presidente do Itaú",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/itau-maluhy-divida-publica-pib-se-nada-for-feito-proximos-4-anos/",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": 0.29,
+    "dolar30": -0.14
+   },
+   {
     "hora": "10:20",
     "titulo": "Investor Steve Eisman says the AI neocloud stocks are in 'big trouble' from Nvidia fallout",
     "fonte": "CNBC",
@@ -240,8 +304,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.29,
+    "dolar30": -0.09
    },
    {
     "hora": "10:27",
@@ -255,14 +319,127 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": 0.01,
+    "dolar30": -0.6
+   },
+   {
+    "hora": "10:36",
+    "titulo": "Ibovespa recupera os 170 mil pontos de olho no ajuste fiscal; 5 coisas para saber antes de investir hoje (17)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaHYxSFA0VXE3cUt6VU5MUTdBTDZSV0ZHYThqSDA1alRheE93cVgxdEp4QWR4Mm1JaFhoRGwyYUk2ajBxME16WTBzRko5Vmd5UnkwZnJDOEpya2FqcTNZeTVKZzFiRUVDZmtTYm5kbEtPYXdkOGg3Rm1wbmcyNXFGQW4wbFpFZmJ0WjVWWnJPelRPV19sQ0FZUVlLdEdoRUstVHYxSVBoc2lwNlNMLUlkcG9leXFDc1hnR3hUWnZ2UmFMSnNvVE1JNV9LY2wycDQxY3c5eC1DMWFEQQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.57
    },
    {
     "hora": "10:38",
     "titulo": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
     "fonte": "CNBC",
     "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.57
+   },
+   {
+    "hora": "10:39",
+    "titulo": "Ibovespa sobe em recuperação com apoio de Petrobras, de olho em ajuste fiscal",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ3p3ZnpKMVZnbHlBOWtaMGFKSlVVeG5EU2hDT3Y3cE9rbkZPNmZ0MEM1MDFxQzdBTm1Ebm5waFFUVGZiS29qNWJZaHdHYkVKTUZJb3NmeF9JTHZNODR5aWhHVVZ3bC1pNHlFcjFTalNoU21TeFFRZ3RnQ05mbkR6MHdGNW9vMXdqNDFjZVMzQmtpUnJEUEJyOGVQeFNDbzRsNGJsUWFfYU9sSlhONk56SHJ6MGl2S2IzQl9VWjRCWTk0enExZjlJY3dxMmZ1U3PSAd4BQVVfeXFMTlhtd1dUU0FweFZ4eDFMb3RJY0FfZW1FUVNlcDFEcFNzY0Y4LUdyQklwTEdZUFZvMUYzTTR1cmstWUNURTl0cDBjcFJzYWxiendtRGRzc3JBVEFUWWphVGswMzdOSnFzVFBPU1NYeTRpM0FQbU9EUFpJRUFHbG5JVDE3eFF0Yi1FcU1BM3F3dDMyUW1nWUgtdW5BWTYweFZ5T2FkRTRHOGpnSHBDZDJSMjgyNTFJWHlKODdqVlRmTmFtOV9VNklnbTlDdTZLMTc1UVpSNkxOSFhIT1ZwQnp3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": -0.57
+   },
+   {
+    "hora": "10:47",
+    "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:49",
+    "titulo": "Citi projeta que real continuará desvalorização, mas vê dólar a R$ 5,50 em 2027",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNWstOFNSR0NWZEFneVVJcEgxV2RVTHplbkJ4NEczMTBLRGFxUnlvbUE3dnp5R1RZcmhROFVidnhLWVRFT2gwWUtFNHBKN1R5eVJUSndibFd5REl2dnU5Um93QnV4U212RVBMWnY0ZEJzVjhBY2YxZi1QVm9rR25Bb1lSdmRFZXl5UzI1N1lVXzhJXzR2ODNTY2NvSWxNMElhU05WR1pyQ2JqbW9GMEFWaFMyMEFFQdIBuwFBVV95cUxNV2p2X3NEbVE3bmdneFVBdzN3NmNCbGNyeFF0SlRXZUhVc21mdnVtazdoRGpsRmxzd1dUZVhPWjdweU9nYXl1VVlhVFg1Q1M3VG1zVEZiU1ByWEg4ck1VY05mMnFKSTNZMW5xWG04Zkt5eEpRamZuNVR0NWZKUGhtM2F1V2tsbmlFTDdhdmtMcFh5UDRNVDQzSFNDQXpqSnR4LW1reEswREJKa21XYWV1S0ZtUFhmMHhmRmEw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:50",
+    "titulo": "Economistas pioram previsões para déficit fiscal em 2026 e 2027, mostra Prisma",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGFIdWl3MFA0VjFJS3R1R0dpMFVOcHgzcjhjMzVLdVVXdjRKZWlpZHFEd0tMbWYtTUFyQ2NianRSV3hwUzE3YXRDRnVnV2k3c0VDdGpMQ1BKV2dXNFNNY19QcE84YkRtbnRKT2U4NVcycEhpOTFVZHhuUnRMcGxhV1llZzNqcTNjRE1wZWlEb2RvSGhqWnJ3NFRYTklQNmVNYWlIMVRRN1hqRXdnQkxmQmJrTQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:51",
+    "titulo": "Crise fiscal nas economias ricas drena recursos e afeta países pobres e emergentes",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/crise-fiscal-nas-economias-ricas-drena-recursos-e-afeta-paises-pobres-e-emergentes.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:53",
+    "titulo": "Ibovespa sobe e retoma os 170 mil pontos; dólar segue em alta e bate R$ 5,80",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQnhLMVdfUFJIQ0MwOXl2VjFtZ2hYdlhjaTJBclptMFVMNFdtbGFwM2QzekpMRmlqbU1CeWF2akhlak53QVIzQUdIWjQ1c2QxNWdJTHc0SG9zcDhVdURZaFphQS1ER2g3Qzlhb3Y5dXRKWFdCRlBSU2VCWW5nbFo3b001QUNiMC1LRXZZeVdubE5GMFBGalo3bVhyNURZM3M1Rkc1ZGpyd0hhWElD?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:54",
+    "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -690,6 +867,20 @@
    "tickers": []
   },
   {
+   "titulo": "Dívida pode superar 100% do PIB se nada for feito nos próximos 4 anos, diz presidente do Itaú",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/itau-maluhy-divida-publica-pib-se-nada-for-feito-proximos-4-anos/",
+   "publicado": "2026-11-17T10:19-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
    "titulo": "Investor Steve Eisman says the AI neocloud stocks are in 'big trouble' from Nvidia fallout",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/17/big-short-investor-steve-eisman-to-discuss-nvidia-anthropic-and-ai-bull-on-cnbc.html",
@@ -714,10 +905,107 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa recupera os 170 mil pontos de olho no ajuste fiscal; 5 coisas para saber antes de investir hoje (17)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaHYxSFA0VXE3cUt6VU5MUTdBTDZSV0ZHYThqSDA1alRheE93cVgxdEp4QWR4Mm1JaFhoRGwyYUk2ajBxME16WTBzRko5Vmd5UnkwZnJDOEpya2FqcTNZeTVKZzFiRUVDZmtTYm5kbEtPYXdkOGg3Rm1wbmcyNXFGQW4wbFpFZmJ0WjVWWnJPelRPV19sQ0FZUVlLdEdoRUstVHYxSVBoc2lwNlNMLUlkcG9leXFDc1hnR3hUWnZ2UmFMSnNvVE1JNV9LY2wycDQxY3c5eC1DMWFEQQ?oc=5",
+   "publicado": "2026-11-17T10:36-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
    "publicado": "2026-11-17T10:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe em recuperação com apoio de Petrobras, de olho em ajuste fiscal",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ3p3ZnpKMVZnbHlBOWtaMGFKSlVVeG5EU2hDT3Y3cE9rbkZPNmZ0MEM1MDFxQzdBTm1Ebm5waFFUVGZiS29qNWJZaHdHYkVKTUZJb3NmeF9JTHZNODR5aWhHVVZ3bC1pNHlFcjFTalNoU21TeFFRZ3RnQ05mbkR6MHdGNW9vMXdqNDFjZVMzQmtpUnJEUEJyOGVQeFNDbzRsNGJsUWFfYU9sSlhONk56SHJ6MGl2S2IzQl9VWjRCWTk0enExZjlJY3dxMmZ1U3PSAd4BQVVfeXFMTlhtd1dUU0FweFZ4eDFMb3RJY0FfZW1FUVNlcDFEcFNzY0Y4LUdyQklwTEdZUFZvMUYzTTR1cmstWUNURTl0cDBjcFJzYWxiendtRGRzc3JBVEFUWWphVGswMzdOSnFzVFBPU1NYeTRpM0FQbU9EUFpJRUFHbG5JVDE3eFF0Yi1FcU1BM3F3dDMyUW1nWUgtdW5BWTYweFZ5T2FkRTRHOGpnSHBDZDJSMjgyNTFJWHlKODdqVlRmTmFtOV9VNklnbTlDdTZLMTc1UVpSNkxOSFhIT1ZwQnp3?oc=5",
+   "publicado": "2026-11-17T10:39-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
+   "publicado": "2026-11-17T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Citi projeta que real continuará desvalorização, mas vê dólar a R$ 5,50 em 2027",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNWstOFNSR0NWZEFneVVJcEgxV2RVTHplbkJ4NEczMTBLRGFxUnlvbUE3dnp5R1RZcmhROFVidnhLWVRFT2gwWUtFNHBKN1R5eVJUSndibFd5REl2dnU5Um93QnV4U212RVBMWnY0ZEJzVjhBY2YxZi1QVm9rR25Bb1lSdmRFZXl5UzI1N1lVXzhJXzR2ODNTY2NvSWxNMElhU05WR1pyQ2JqbW9GMEFWaFMyMEFFQdIBuwFBVV95cUxNV2p2X3NEbVE3bmdneFVBdzN3NmNCbGNyeFF0SlRXZUhVc21mdnVtazdoRGpsRmxzd1dUZVhPWjdweU9nYXl1VVlhVFg1Q1M3VG1zVEZiU1ByWEg4ck1VY05mMnFKSTNZMW5xWG04Zkt5eEpRamZuNVR0NWZKUGhtM2F1V2tsbmlFTDdhdmtMcFh5UDRNVDQzSFNDQXpqSnR4LW1reEswREJKa21XYWV1S0ZtUFhmMHhmRmEw?oc=5",
+   "publicado": "2026-11-17T10:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Economistas pioram previsões para déficit fiscal em 2026 e 2027, mostra Prisma",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGFIdWl3MFA0VjFJS3R1R0dpMFVOcHgzcjhjMzVLdVVXdjRKZWlpZHFEd0tMbWYtTUFyQ2NianRSV3hwUzE3YXRDRnVnV2k3c0VDdGpMQ1BKV2dXNFNNY19QcE84YkRtbnRKT2U4NVcycEhpOTFVZHhuUnRMcGxhV1llZzNqcTNjRE1wZWlEb2RvSGhqWnJ3NFRYTklQNmVNYWlIMVRRN1hqRXdnQkxmQmJrTQ?oc=5",
+   "publicado": "2026-11-17T10:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Crise fiscal nas economias ricas drena recursos e afeta países pobres e emergentes",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/crise-fiscal-nas-economias-ricas-drena-recursos-e-afeta-paises-pobres-e-emergentes.shtml",
+   "publicado": "2026-11-17T10:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe e retoma os 170 mil pontos; dólar segue em alta e bate R$ 5,80",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQnhLMVdfUFJIQ0MwOXl2VjFtZ2hYdlhjaTJBclptMFVMNFdtbGFwM2QzekpMRmlqbU1CeWF2akhlak53QVIzQUdIWjQ1c2QxNWdJTHc0SG9zcDhVdURZaFphQS1ER2g3Qzlhb3Y5dXRKWFdCRlBSU2VCWW5nbFo3b001QUNiMC1LRXZZeVdubE5GMFBGalo3bVhyNURZM3M1Rkc1ZGpyd0hhWElD?oc=5",
+   "publicado": "2026-11-17T10:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
+   "publicado": "2026-11-17T10:54-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -753,7 +1041,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T10:38-03:00",
+ "atualizado_em": "2026-11-17T11:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -761,6 +1049,7 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -768,10 +1057,21 @@
  ],
  "noticias": [
   {
-   "titulo": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+   "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
+   "publicado": "2026-11-17T11:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
    "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
-   "publicado": "2026-11-17T10:38-03:00",
+   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
+   "publicado": "2026-11-17T10:54-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -780,12 +1080,13 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
-   "publicado": "2026-11-17T10:36-03:00",
-   "impacto": "medio",
+   "titulo": "Ibovespa sobe e retoma os 170 mil pontos; dólar segue em alta e bate R$ 5,80",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQnhLMVdfUFJIQ0MwOXl2VjFtZ2hYdlhjaTJBclptMFVMNFdtbGFwM2QzekpMRmlqbU1CeWF2akhlak53QVIzQUdIWjQ1c2QxNWdJTHc0SG9zcDhVdURZaFphQS1ER2g3Qzlhb3Y5dXRKWFdCRlBSU2VCWW5nbFo3b001QUNiMC1LRXZZeVdubE5GMFBGalo3bVhyNURZM3M1Rkc1ZGpyd0hhWElD?oc=5",
+   "publicado": "2026-11-17T10:53-03:00",
+   "impacto": "alto",
    "ativos": [
+    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -794,10 +1095,106 @@
    "titulo": "Investor Steve Eisman says the AI neocloud stocks are in 'big trouble' from Nvidia fallout",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/17/big-short-investor-steve-eisman-to-discuss-nvidia-anthropic-and-ai-bull-on-cnbc.html",
-   "publicado": "2026-11-17T10:33-03:00",
+   "publicado": "2026-11-17T10:53-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Crise fiscal nas economias ricas drena recursos e afeta países pobres e emergentes",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/crise-fiscal-nas-economias-ricas-drena-recursos-e-afeta-paises-pobres-e-emergentes.shtml",
+   "publicado": "2026-11-17T10:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Economistas pioram previsões para déficit fiscal em 2026 e 2027, mostra Prisma",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGFIdWl3MFA0VjFJS3R1R0dpMFVOcHgzcjhjMzVLdVVXdjRKZWlpZHFEd0tMbWYtTUFyQ2NianRSV3hwUzE3YXRDRnVnV2k3c0VDdGpMQ1BKV2dXNFNNY19QcE84YkRtbnRKT2U4NVcycEhpOTFVZHhuUnRMcGxhV1llZzNqcTNjRE1wZWlEb2RvSGhqWnJ3NFRYTklQNmVNYWlIMVRRN1hqRXdnQkxmQmJrTQ?oc=5",
+   "publicado": "2026-11-17T10:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Citi projeta que real continuará desvalorização, mas vê dólar a R$ 5,50 em 2027",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNWstOFNSR0NWZEFneVVJcEgxV2RVTHplbkJ4NEczMTBLRGFxUnlvbUE3dnp5R1RZcmhROFVidnhLWVRFT2gwWUtFNHBKN1R5eVJUSndibFd5REl2dnU5Um93QnV4U212RVBMWnY0ZEJzVjhBY2YxZi1QVm9rR25Bb1lSdmRFZXl5UzI1N1lVXzhJXzR2ODNTY2NvSWxNMElhU05WR1pyQ2JqbW9GMEFWaFMyMEFFQdIBuwFBVV95cUxNV2p2X3NEbVE3bmdneFVBdzN3NmNCbGNyeFF0SlRXZUhVc21mdnVtazdoRGpsRmxzd1dUZVhPWjdweU9nYXl1VVlhVFg1Q1M3VG1zVEZiU1ByWEg4ck1VY05mMnFKSTNZMW5xWG04Zkt5eEpRamZuNVR0NWZKUGhtM2F1V2tsbmlFTDdhdmtMcFh5UDRNVDQzSFNDQXpqSnR4LW1reEswREJKa21XYWV1S0ZtUFhmMHhmRmEw?oc=5",
+   "publicado": "2026-11-17T10:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
+   "publicado": "2026-11-17T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Tempo real: Bolsa recupera os 170 mil pontos e dólar passa dos R$ 5,80; acompanhe",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRzVxdzVUblhqOVQ4WUQ2ZWVaUy1MR0VxYVlyUlFvWC02czFkN2l2VUxPakNQSC1EVHVBZ0lyRjFNcmhWRmE5b0FLSmdYSUFubU9VdjZEOVVkU05YQjJYSnAyUmdlRnM3SGQxck5oQ2pOYXJtei0tOWM5U0VLTEZabU5nNlhWbmRtWEUydmRoZ3dTSWxSTzVFY2VBTU1oNG42bGNSZXh5V1RHcjdSTGs4?oc=5",
+   "publicado": "2026-11-17T10:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+   "publicado": "2026-11-17T10:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe em recuperação com apoio de Petrobras, de olho em ajuste fiscal",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ3p3ZnpKMVZnbHlBOWtaMGFKSlVVeG5EU2hDT3Y3cE9rbkZPNmZ0MEM1MDFxQzdBTm1Ebm5waFFUVGZiS29qNWJZaHdHYkVKTUZJb3NmeF9JTHZNODR5aWhHVVZ3bC1pNHlFcjFTalNoU21TeFFRZ3RnQ05mbkR6MHdGNW9vMXdqNDFjZVMzQmtpUnJEUEJyOGVQeFNDbzRsNGJsUWFfYU9sSlhONk56SHJ6MGl2S2IzQl9VWjRCWTk0enExZjlJY3dxMmZ1U3PSAd4BQVVfeXFMTlhtd1dUU0FweFZ4eDFMb3RJY0FfZW1FUVNlcDFEcFNzY0Y4LUdyQklwTEdZUFZvMUYzTTR1cmstWUNURTl0cDBjcFJzYWxiendtRGRzc3JBVEFUWWphVGswMzdOSnFzVFBPU1NYeTRpM0FQbU9EUFpJRUFHbG5JVDE3eFF0Yi1FcU1BM3F3dDMyUW1nWUgtdW5BWTYweFZ5T2FkRTRHOGpnSHBDZDJSMjgyNTFJWHlKODdqVlRmTmFtOV9VNklnbTlDdTZLMTc1UVpSNkxOSFhIT1ZwQnp3?oc=5",
+   "publicado": "2026-11-17T10:39-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Ibovespa recupera os 170 mil pontos de olho no ajuste fiscal; 5 coisas para saber antes de investir hoje (17)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaHYxSFA0VXE3cUt6VU5MUTdBTDZSV0ZHYThqSDA1alRheE93cVgxdEp4QWR4Mm1JaFhoRGwyYUk2ajBxME16WTBzRko5Vmd5UnkwZnJDOEpya2FqcTNZeTVKZzFiRUVDZmtTYm5kbEtPYXdkOGg3Rm1wbmcyNXFGQW4wbFpFZmJ0WjVWWnJPelRPV19sQ0FZUVlLdEdoRUstVHYxSVBoc2lwNlNMLUlkcG9leXFDc1hnR3hUWnZ2UmFMSnNvVE1JNV9LY2wycDQxY3c5eC1DMWFEQQ?oc=5",
+   "publicado": "2026-11-17T10:36-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
    ],
    "tickers": []
   },
@@ -815,30 +1212,6 @@
    "tickers": []
   },
   {
-   "titulo": "China diz que restrição de chips dos EUA é exemplo de coerção e promete medidas necessárias",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/china-diz-que-restricao-de-chips-dos-eua-e-exemplo-de-coercao-e-promete-medidas-necessarias.shtml",
-   "publicado": "2026-11-17T10:21-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Um conto de duas Chinas: a economia chinesa lembra um fisiculturista que trabalhou só o tronco",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/um-conto-de-duas-chinas/",
-   "publicado": "2026-11-17T10:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar abre em alta e chega a R$ 5,79 com mercado à espera de votação de projeto fiscal no Senado",
    "fonte": "Folha",
    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWWFFank0UVNNUk1WT1IwSEJacjJrb3loRTc3SVRaMnl6SUd4aVFaS1JSZXIwU1dmXzV0azgzXzYwSHdQWWNEYjNYUHloNlV0bDhuTkdIODFMYWtGeHdva3hBQmg3YXNBWk9PNjBmc01xam5nbFZiUTZnYUF6R1h5WjFES3RhZTBQY0xKaXNNaENRWTQ4UERETUNzYlJ5b0Z5VEtmcURGaUtsdG45RnkzQ3J2TW91dFphN1dURHhCdWFjME9pSU9nRXZIbVh0OUw1ck5vNGtyOWZPeEZ5bjE4?oc=5",
@@ -847,28 +1220,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar ronda estabilidade, sem alívio após subir ao maior nível em 19 meses na véspera",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaVJVZnV1bURodFczVTRMbmwzbFB3Zzc3Nl9TVWRsb2haVFlXbDMwOXZVR18zWTBrMXlrX2pVRzVyZVJwR3l2T1o1RmVVMFo3VmRPTm9VOTJocG1JTmJIUzV2QWZnNzVnNkRDbUNZUFcwZzktell4MWlJZzQxQWpEU3MyS2VKMXMwS1FrZXNhaFJNRG94SGs4bVdZRU5acnJJQjVnQVM3eWUyaEdrenpLb2VuU05LMnVPamVYQTEyelBrZ0lPbkVqZTRUQV9qTk1ZTzFOU0gxdEVsUdIB6AFBVV95cUxQT3hPTExTUEpkLUhhS2NrVWQzVFZqdFBMMkV0RTY4NF96MkdHeFJJMWF3c3Z4V3hjaTdtWW1fdE4wdGt6NFJVTDhGVGx1NkQ2SUlDZzJfcHZYUmZrbk1kcURacVlsZVBRa2U5aVVYdjRmbEtzUGNlcXYxcVRBS0Z2ZVVhRDBSV091YWFjQ0ZJNk9peGg4MnlwclpscnE3VXFuS0JNZ0F3UmstREp2TFAxa2VFSEt4Y3Mwc1BMVnIycEtXS2g5d1JaZmRwb0VlMXN2bUpXYmJMSU4zd2tBWDFDalBMbm9pdHZZ?oc=5",
-   "publicado": "2026-11-17T09:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe e se aproxima de R$ 5,80 em dia de votação de ajustes fiscais no Senado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZlBOVWFwMmt2dkVWclZmSE5SbGVjSDJPSHRFeXlJRnNvV2hzV2xsNlNzaHVIREpRcFphNF9EZUttMWhQZlZvTUUyMmtudFYzUGtDSWlJUUFmUWpWdDlIRFpXcjFjYjN1d0hkQXBUdzJGWlNtUEN5VnlxS0pSU3B1Nm9VcE82aW1IZUIxcHBpZjMzWmotRVNGZHJNU23SAaIBQVVfeXFMT2phWEdDeHN5WHNES0ZIdjVHbklsWFRnc3FQcUNaWXVYYllra0VjcHhpNlRUSUh4ei1kU2dBX0N0LVpfYmtLRDl0Umk3VmEybDI0VGU2SUdHNHR2Wm5Rby1HVWZyMTQ0cHAzQU1GenNZbWhTcmx1YzlQdzJJMVZ5Slh1M21JUW9jN0djdWh5cnFkWVBZSVVZcGxIUGRQVjdMWUlR?oc=5",
-   "publicado": "2026-11-17T09:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
@@ -885,71 +1236,11 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar volta a subir e passa de R$ 5,78; Ibovespa tenta reagir após tombo com saída de capital gringo",
+   "titulo": "Dólar volta a subir e passa de R$ 5,8; Ibovespa tenta reagir após tombo com saída de capital gringo",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcHI1ZU15cmhQM0pQQzBNZkF4VUR1aVdPT0otTWYxdmUwN1VsdjRLSngzeU5OeWM0YXE4d0VlVkZWR09qclZ0WGdOVlFYcF8xVEdpZHRHQkNLVFhFOFlFcDBXaWJlUWttYy1IbFNnWDNTOE1od3Q3V1JaS29XM2QxRER5XzFJLUN4UE53VFdvLS1fc0Nvc1A0TktjWmQ5RDk4QkxpTHAxSUxpbUMtbEpUWGtMc0RuVE9XNC1mc3MySDFkT1h1RXpKYkxhUV9uWUEzb1VraUhjcFdhMnBscW9DcXVmaGg4aXBm0gHuAUFVX3lxTE9sXzd2Z29OekRyOTJ1SDRyQ1lWekdKMERGUDVDSEFJeVRnSVFpMkJiaWdJR25QUFpGa2JENGNQWXpZd0dUaG8xeGJUOTlxMkNjclp5amxTOWp4dl9VNUpRa194RHFYZDhoX3ZPQlkxd3hIMVM4M2lJZDFjT1JGekN0cE1GSWhnU19qWlNpSi16c1g5MWxSR1NwblQyVll5akFiSUhtbHprTXlmcElfOUNrWFRDclkzLWljcE5reXRwSnFfS1UxZmN2MHB3QllsQ3lqYVBrWThhOFV0MkJTTy1XVndlS2l0cUM2ZmxZcmc?oc=5",
    "publicado": "2026-11-17T09:10-03:00",
    "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa Futuro amplia perdas após tombo na véspera, em meio a temores fiscais",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSEY1cktHVEJCZ1BROU1rMDBPWEJhNFpLVzRhQXVyTDBwdTFqZG9OVG1rY2tYdGJXbmVsVi14djd1b1J2U191VW1uODdRTWxMLXdTSV9YbEVKREphUm50SWZLSGpldHJBN0FMR0ptaFlKNjA2aUplNktuOERSMExXc1FEZmdLRklSU1hNMEgtNE9IZG5RdE5KbVU0S0VybDBFZnlRM1dGWUpKTG1NSzF4NW56QTBVY0nSAbwBQVVfeXFMUGk4dC1zNEpkSHM0bTZGSVhlU1c4U2NnYmtoQ0hCWTBnQTJvWmJmVWVCcHdpaWU2Rk5BMXQzd05vY3c4cVlWckdOZVR0a1hKNVgtOGdqZkJDN2N5MEhYRWNBaGRlWUhick9uS041dXZwc2hzQjJwckR2S1BFWGFWcEFRMnozTmdIc29uNE85a2sweE9weFBuMGpYQXNMRkxMZWdmQzVHM29kYlFhajJ4aURSM0xudVUtdVExWUI?oc=5",
-   "publicado": "2026-11-17T09:05-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "O investimento preferido das brasileiras é justamente o que menos aproveita a Selic alta",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQkZ1Q2I4UGZIUmM1S3c0WEZJM1R2YkpGb0RlZVk1bzM3TnphaW41NGRIamg3RlNIQzlXNUhua1ZocmZWMnA2aUhIMi1PdTdsNkFaYzFMcHpzSGlNdm5NbnZ6QUxWQUN1VUtTWEdZZFRUMUNTbmxHaEc4VHItQVhNbTh0cHllS1dPRS03OVl0OEhCVTROVkhBWnA5RGFLYnRpRHhsTWMzYVZkZTZPWUcwQTNKNUIwY2FBSm9JdHY0UExPOTExaUFqb3RMNm5nbnNSY0ZQeWFPREdMUdIB3wFBVV95cUxQdlo4XzBTQWVZNWlnUmJWQ0dEbGstVUFsVi1JVnhWdFJCZ3NQMjl1STBKNGt0SW9GSXp0SWFqdWdXVGVEdnNxcVpNUUg1MFNJZmxiM3lGUmFEa0ZpZFVwdmdSTHB6dTVxcUxLRFUzZV9rckxZdTB0LUtpb0xxSV9vYlRqXzFVa3lmTVFfaTRYMXp0MFBTOUNlcndYRlJ3LWt0Mldnb1lGLW9TWWNnV3NsQ3BEdHFqeGNWSE1VSGk1QmJRRDFZeFh0VGtDU2gyX2dzRXJwSUZJdjdNWHE1MFlr?oc=5",
-   "publicado": "2026-11-17T09:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Lara Resende volta a defender corte da Selic e critica Galípolo por juros elevados",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPX0tKNTZRc2NBb05vN3JOUEZCRURuMDJaNHdlTmswaHI4ekdSTUliWk1xUnF4REdremVRNGlScmh3SlBPN3BTLXpZdXNTWkVaWGxfNExfWVducHd6NDhnRGExdjZqT18xcktmLUhsZlJ3a3BiX0ZkcWJWRGZCNnJsNTlBZDVDWlhESWJ6UHlwSlNsdURrV3F1M1NjMXo3Y2s1NEY0Q1B0d1JiZllIbFRKVC1OYTJHRmpVbm1qR1lR0gHDAUFVX3lxTE5OeTllazBBS1E1bXV0Z290cEtkN3NoSXpJeFluOVNpS3Exc0k5akNqMjlmZ1NUbzNPOGxrSlpKdGpsejFqSVE1SF9jMEdndHhCVm4zeWVmZ0xXS3hzOGtNMWVzaktsX1NpanIyazlNMF9zUm9pMFE4UV9aLVRwbFNoYkxyREFST2l2Rmo0ZmJDcW1aN0pWNnVRTlpoTFR5T0dqVTg2VzMyQ0RYbm5OYmFfa25ING42ODRyZkFXQ25OQVpYdw?oc=5",
-   "publicado": "2026-11-17T08:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China reduz tarifas sobre carne suína, peixes e frutos do mar do Canadá",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOGlOY1ExaEd4WHdEallJNWhYTDZOMkZndkEtN0dDWVQ4bm1OdHhZYmN2cXRPR0V0eTNXejN2R1l2bjhMT1RUWEVWbUZBaGI4YlhFWG0yeERURUFtcFBrTVIyYWlPd1Eyel9jLVc1T2xZVXp3UzZQaHRhQzN1MXlvTXk4RlJPMnpOQlhxODcyMEo5ZktjaGJMTF9yX0hHWEUzNTFEVU9PRU8?oc=5",
-   "publicado": "2026-11-17T08:45-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Iran escalates threats as third U.S. carrier arrives in Middle East, tanker struck in Hormuz",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
-   "publicado": "2026-11-17T08:22-03:00",
-   "impacto": "medio",
    "ativos": [
     "WIN",
     "WDO"
