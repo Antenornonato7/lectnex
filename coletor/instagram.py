@@ -523,11 +523,14 @@ def processar():
                 p['erro_fb'] = str(e)[:200]
                 fbmsg = f'\n⚠️ Facebook: {str(e)[:150]}'
             if p.get('video') and p.get('tipo') != 'story' and os.environ.get('TIKTOK_CLIENT_KEY'):
-                try:  # Reels também no TikTok (enquanto o app não for auditado, sai como "só eu")
+                try:  # Reels também no TikTok: vai como rascunho para a caixa de entrada do app; o dono publica de lá
                     import tiktok
-                    tid, priv = tiktok.publicar(p['video'], p.get('legenda', ''))
-                    p['tiktok'] = tid
-                    fbmsg += '\n✅ TikTok: enviado' + (' (privado até a auditoria do app)' if priv == 'SELF_ONLY' else '')
+                    p['tiktok'] = tiktok.rascunho(p['video'])
+                    fbmsg += '\n🎵 TikTok: rascunho na caixa de entrada do app (abra o TikTok e publique; a legenda segue abaixo)'
+                    try:
+                        tg('sendMessage', chat_id=admin(), text=p.get('legenda', '')[:2000] or 'Lectnex', reply_to_message_id=mid)
+                    except Exception:
+                        pass
                 except Exception as e:
                     p['erro_tiktok'] = str(e)[:200]
                     fbmsg += f'\n⚠️ TikTok: {str(e)[:150]}'
