@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T12:38-03:00",
+  "atualizado_em": "2026-11-17T13:08-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -119,11 +119,35 @@
     ],
     [
      "12:20",
-     171400.0
+     171652.0
     ],
     [
-     "12:23",
-     171502.0
+     "12:25",
+     171652.0
+    ],
+    [
+     "12:30",
+     171568.0
+    ],
+    [
+     "12:35",
+     171551.0
+    ],
+    [
+     "12:40",
+     171326.0
+    ],
+    [
+     "12:45",
+     171173.0
+    ],
+    [
+     "12:50",
+     171160.0
+    ],
+    [
+     "12:53",
+     171152.0
     ]
    ]
   },
@@ -304,11 +328,35 @@
     ],
     [
      "12:35",
-     5.7843
+     5.7835
     ],
     [
-     "12:38",
-     5.7857
+     "12:40",
+     5.7835
+    ],
+    [
+     "12:45",
+     5.7898
+    ],
+    [
+     "12:50",
+     5.7966
+    ],
+    [
+     "12:55",
+     5.793
+    ],
+    [
+     "13:00",
+     5.79
+    ],
+    [
+     "13:05",
+     5.7848
+    ],
+    [
+     "13:08",
+     5.7856
     ]
    ]
   },
@@ -649,6 +697,22 @@
     "dolar30": 0.25
    },
    {
+    "hora": "11:45",
+    "titulo": "Itaú BBA e BTG Pactual reiteram indicação de compra para ações da XP após balanço | Finanças",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOelpUa2FjYUhUSjkyWVJva0xfMkR4MFl4WnhPQWFDTFUtWkFaYkRoNTYzeDdLSDJXS3o4SWNUb3hsbHJISFc1YWdaVzZiYnhFQ21KUXIyZ1BEOFV4Qk9oeUZOWkFwTzN6MGFEOWZFMG43NFg2NTduRkJMZEdXd3ZiZW0tMDJUbkdwUVU3MHZSYXkwM19UdVJ0dTU3aWpGTTRLX2Z3RHJXU1c2bTlDWE5lczhLX3FObFlpb2hNaDJnclFUdFVvdDdrSXNjMWp0SGRNYkhTajF3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BPAC11",
+     "ITUB4"
+    ],
+    "ibov30": 0.08,
+    "dolar30": 0.25
+   },
+   {
     "hora": "11:51",
     "titulo": "Wall Street opera em leve queda à espera do resultado da Nvidia e preços do petróleo",
     "fonte": "Money Times",
@@ -659,7 +723,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.23,
+    "ibov30": 0.37,
     "dolar30": 0.11
    },
    {
@@ -672,7 +736,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.2,
     "dolar30": -0.03
    },
    {
@@ -685,8 +749,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.29,
+    "dolar30": 0.12
    },
    {
     "hora": "12:30",
@@ -698,6 +762,36 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.02
+   },
+   {
+    "hora": "12:41",
+    "titulo": "Menos de R$ 100: B3 terá BDR da Anthropic (ANTH34) já nesta semana; veja como comprar",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWFNIemZ5RDRzWS1xVk5DUTk3LVRpRGQ4ZFBBQ0VtMXJ4enV5blhLYlhYR3VGNXVnb0pXaXFFdjJkbTJqeFZPRS1ZdHppY2pETE8xbHhPcDZTLWNvQmc0VVNHRTh0RHBtTUtlc2pISjhKUXI3anE4cFNidi1HMEJ6TDB3Q3J4aDlNVUJLU2E1Rk81UGZTTk5RQTh3cFNpSHdrU25uV0xMMS1HTVNkcHpGMlBRa212RjdqRHJxYnJXWGFiRU52dlhhMlo4a00tQm82dU9vNGdyOA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": null,
+    "dolar30": 0.04
+   },
+   {
+    "hora": "13:01",
+    "titulo": "Hapvida salta 10% e lidera maiores altas do Ibovespa hoje; veja os destaques",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZzNNeUl2Um8wb0E5NHhXTXFqOGM3RDZPMjhFVnZPd3pDYmdtUkZXSTRrUFVOWmVtOWE4WnVkeE94ZlRMb3V6WWRieDhFUlBtcllIY3lORTA3b25hV0tNUGZCNWFyZ1JPeUY5dlB5MXJkbWpYQ21CZDJid253NldQd1l2MWdoRXZadkdPb3RZUTdyemdGWHM2dk9aNk9lVnVmWHdjNllQTlQyR1B4bE1JLTJldEtVZmRtUWR1WGhjYUs2TkRTbkdvOE04VTlrd9IB0wFBVV95cUxQOVFRVXY5X1F3TGs5bnRHYXlxOHYwdHdmR2lZNGRqQlpqRjlQMGhVNXVHQmlMWkNNN1dQUkxVYzI0SEM5UUlrSmpjdGpmb3EtaTVoOTN3bDVqSUFGdUZvdG1aWThoZ0ZzUUdDR2xxcldob00ybHFSbzBLWl9fcWJvalYtclJHY1hCend1S0c5QWhhZVJYX0xTUDRyY05ZNDRQWUlVd0I2UTJ5Y05HOTMtRWpVdDB2M0x0NTV0anpzOF9VdUNJbGpGN0pwNUhSN0FISlh3?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "HAPV3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1313,6 +1407,20 @@
    ]
   },
   {
+   "titulo": "Itaú BBA e BTG Pactual reiteram indicação de compra para ações da XP após balanço | Finanças",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOelpUa2FjYUhUSjkyWVJva0xfMkR4MFl4WnhPQWFDTFUtWkFaYkRoNTYzeDdLSDJXS3o4SWNUb3hsbHJISFc1YWdaVzZiYnhFQ21KUXIyZ1BEOFV4Qk9oeUZOWkFwTzN6MGFEOWZFMG43NFg2NTduRkJMZEdXd3ZiZW0tMDJUbkdwUVU3MHZSYXkwM19UdVJ0dTU3aWpGTTRLX2Z3RHJXU1c2bTlDWE5lczhLX3FObFlpb2hNaDJnclFUdFVvdDdrSXNjMWp0SGRNYkhTajF3?oc=5",
+   "publicado": "2026-11-17T11:45-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BPAC11",
+    "ITUB4"
+   ]
+  },
+  {
    "titulo": "Wall Street opera em leve queda à espera do resultado da Nvidia e preços do petróleo",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOEtuaFFHRVB3WEM1S2g5bDZuLWxQWTJmTEVhQkFKa2VpZFhTZHdnaFVWUjNWX0Q4Mldsd3pfU3pFUUc4bzFZVjRkX1NJVmJpeE1HbUxtakpkeWhpdTB0RjJEc25kTkFRYng1RkZvREg0OFUzQWwyVV9fbUVtX0s3WkV3VlRYdm0wRndrSGt4NzQ5N3Y5c09FcmlEZThHZTNLQXF2YWFRaEZLRjZhWk5jNDM4bTBRMktZU3EwZA?oc=5",
@@ -1356,6 +1464,32 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Menos de R$ 100: B3 terá BDR da Anthropic (ANTH34) já nesta semana; veja como comprar",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWFNIemZ5RDRzWS1xVk5DUTk3LVRpRGQ4ZFBBQ0VtMXJ4enV5blhLYlhYR3VGNXVnb0pXaXFFdjJkbTJqeFZPRS1ZdHppY2pETE8xbHhPcDZTLWNvQmc0VVNHRTh0RHBtTUtlc2pISjhKUXI3anE4cFNidi1HMEJ6TDB3Q3J4aDlNVUJLU2E1Rk81UGZTTk5RQTh3cFNpSHdrU25uV0xMMS1HTVNkcHpGMlBRa212RjdqRHJxYnJXWGFiRU52dlhhMlo4a00tQm82dU9vNGdyOA?oc=5",
+   "publicado": "2026-11-17T12:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Hapvida salta 10% e lidera maiores altas do Ibovespa hoje; veja os destaques",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZzNNeUl2Um8wb0E5NHhXTXFqOGM3RDZPMjhFVnZPd3pDYmdtUkZXSTRrUFVOWmVtOWE4WnVkeE94ZlRMb3V6WWRieDhFUlBtcllIY3lORTA3b25hV0tNUGZCNWFyZ1JPeUY5dlB5MXJkbWpYQ21CZDJid253NldQd1l2MWdoRXZadkdPb3RZUTdyemdGWHM2dk9aNk9lVnVmWHdjNllQTlQyR1B4bE1JLTJldEtVZmRtUWR1WGhjYUs2TkRTbkdvOE04VTlrd9IB0wFBVV95cUxQOVFRVXY5X1F3TGs5bnRHYXlxOHYwdHdmR2lZNGRqQlpqRjlQMGhVNXVHQmlMWkNNN1dQUkxVYzI0SEM5UUlrSmpjdGpmb3EtaTVoOTN3bDVqSUFGdUZvdG1aWThoZ0ZzUUdDR2xxcldob00ybHFSbzBLWl9fcWJvalYtclJHY1hCend1S0c5QWhhZVJYX0xTUDRyY05ZNDRQWUlVd0I2UTJ5Y05HOTMtRWpVdDB2M0x0NTV0anpzOF9VdUNJbGpGN0pwNUhSN0FISlh3?oc=5",
+   "publicado": "2026-11-17T13:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
   }
  ],
  "enviadas": [
@@ -1385,21 +1519,55 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T12:38-03:00",
+ "atualizado_em": "2026-11-17T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
+   "publicado": "2026-11-17T13:03-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Hapvida salta 10% e lidera maiores altas do Ibovespa hoje; veja os destaques",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZzNNeUl2Um8wb0E5NHhXTXFqOGM3RDZPMjhFVnZPd3pDYmdtUkZXSTRrUFVOWmVtOWE4WnVkeE94ZlRMb3V6WWRieDhFUlBtcllIY3lORTA3b25hV0tNUGZCNWFyZ1JPeUY5dlB5MXJkbWpYQ21CZDJid253NldQd1l2MWdoRXZadkdPb3RZUTdyemdGWHM2dk9aNk9lVnVmWHdjNllQTlQyR1B4bE1JLTJldEtVZmRtUWR1WGhjYUs2TkRTbkdvOE04VTlrd9IB0wFBVV95cUxQOVFRVXY5X1F3TGs5bnRHYXlxOHYwdHdmR2lZNGRqQlpqRjlQMGhVNXVHQmlMWkNNN1dQUkxVYzI0SEM5UUlrSmpjdGpmb3EtaTVoOTN3bDVqSUFGdUZvdG1aWThoZ0ZzUUdDR2xxcldob00ybHFSbzBLWl9fcWJvalYtclJHY1hCend1S0c5QWhhZVJYX0xTUDRyY05ZNDRQWUlVd0I2UTJ5Y05HOTMtRWpVdDB2M0x0NTV0anpzOF9VdUNJbGpGN0pwNUhSN0FISlh3?oc=5",
+   "publicado": "2026-11-17T13:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
+  },
+  {
+   "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
+   "publicado": "2026-11-17T12:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ministro da Fazenda defende disciplina fiscal e diz que meta para 2027 não é ilusória",
    "fonte": "Folha",
@@ -1430,18 +1598,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
-   "publicado": "2026-11-17T12:03-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -1481,9 +1637,9 @@
    "tickers": []
   },
   {
-   "titulo": "Itaú BBA e BTG Pactual reiteram indicação de compra para ações da XP após balanço",
+   "titulo": "Itaú BBA e BTG Pactual reiteram indicação de compra para ações da XP após balanço | Finanças",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOelpUa2FjYUhUSjkyWVJva0xfMkR4MFl4WnhPQWFDTFUtWkFaYkRoNTYzeDdLSDJXS3o4SWNUb3hsbHJISFc1YWdaVzZiYnhFQ21KUXIyZ1BEOFV4Qk9oeUZOWkFwTzN6MGFEOWZFMG43NFg2NTduRkJMZEdXd3ZiZW0tMDJUbkdwUVU3MHZSYXkwM19UdVJ0dTU3aWpGTTRLX2Z3RHJXU1c2bTlDWE5lczhLX3FObFlpb2hNaDJnclFUdFVvdDdrSXNjMWp0SGRNYkhTajF30gHkAUFVX3lxTE02STdpSkhGT0RnNXctOTl2VjA3WUJueUFDdEJUa09nVlNNWHR1VGoxalF2ZUVfTTd2Vl9SRmZweXZqU2VUVWFNMlpYSU9tbTFrSms4cDdldjB4VGNNVl9FU1FoSmNPRzQtb3U5TG5UVXZOVmhzVENyNTY3eWN5bzFSVWV1ODJNbmZtUXB1YmZ3MGo2ZGJxazA4Q3dHRXpBWE9ydWYwZnExdTNIdjc5V1RiZG9XUFdKb2lFakVCTFV5Y1VIaUpTUnE5YTRnVllKaGV0aEx5cEZqNkF3aU1PZThjMVhXMg?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOelpUa2FjYUhUSjkyWVJva0xfMkR4MFl4WnhPQWFDTFUtWkFaYkRoNTYzeDdLSDJXS3o4SWNUb3hsbHJISFc1YWdaVzZiYnhFQ21KUXIyZ1BEOFV4Qk9oeUZOWkFwTzN6MGFEOWZFMG43NFg2NTduRkJMZEdXd3ZiZW0tMDJUbkdwUVU3MHZSYXkwM19UdVJ0dTU3aWpGTTRLX2Z3RHJXU1c2bTlDWE5lczhLX3FObFlpb2hNaDJnclFUdFVvdDdrSXNjMWp0SGRNYkhTajF3?oc=5",
    "publicado": "2026-11-17T11:45-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1495,7 +1651,7 @@
    ]
   },
   {
-   "titulo": "Dólar reduz alta, mas opera acima de R$ 5,7; Ibovespa tenta reagir após tombo",
+   "titulo": "Dólar sobe e opera acima de R$ 5,79; Ibovespa avança mais de 1% com Petrobras e Vale em alta",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcHI1ZU15cmhQM0pQQzBNZkF4VUR1aVdPT0otTWYxdmUwN1VsdjRLSngzeU5OeWM0YXE4d0VlVkZWR09qclZ0WGdOVlFYcF8xVEdpZHRHQkNLVFhFOFlFcDBXaWJlUWttYy1IbFNnWDNTOE1od3Q3V1JaS29XM2QxRER5XzFJLUN4UE53VFdvLS1fc0Nvc1A0TktjWmQ5RDk4QkxpTHAxSUxpbUMtbEpUWGtMc0RuVE9XNC1mc3MySDFkT1h1RXpKYkxhUV9uWUEzb1VraUhjcFdhMnBscW9DcXVmaGg4aXBm0gHuAUFVX3lxTE9sXzd2Z29OekRyOTJ1SDRyQ1lWekdKMERGUDVDSEFJeVRnSVFpMkJiaWdJR25QUFpGa2JENGNQWXpZd0dUaG8xeGJUOTlxMkNjclp5amxTOWp4dl9VNUpRa194RHFYZDhoX3ZPQlkxd3hIMVM4M2lJZDFjT1JGekN0cE1GSWhnU19qWlNpSi16c1g5MWxSR1NwblQyVll5akFiSUhtbHprTXlmcElfOUNrWFRDclkzLWljcE5reXRwSnFfS1UxZmN2MHB3QllsQ3lqYVBrWThhOFV0MkJTTy1XVndlS2l0cUM2ZmxZcmc?oc=5",
    "publicado": "2026-11-17T11:39-03:00",
@@ -1504,18 +1660,10 @@
     "WIN",
     "WDO"
    ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
-   "publicado": "2026-11-17T11:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
   },
   {
    "titulo": "Ibovespa sobe mais de 1% de olho em plano fiscal, mas mercado segue cauteloso",
@@ -1541,13 +1689,12 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa sobe e retoma os 170 mil pontos; dólar segue em alta e bate R$ 5,80",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQnhLMVdfUFJIQ0MwOXl2VjFtZ2hYdlhjaTJBclptMFVMNFdtbGFwM2QzekpMRmlqbU1CeWF2akhlak53QVIzQUdIWjQ1c2QxNWdJTHc0SG9zcDhVdURZaFphQS1ER2g3Qzlhb3Y5dXRKWFdCRlBSU2VCWW5nbFo3b001QUNiMC1LRXZZeVdubE5GMFBGalo3bVhyNURZM3M1Rkc1ZGpyd0hhWElD?oc=5",
-   "publicado": "2026-11-17T10:53-03:00",
-   "impacto": "alto",
+   "titulo": "O que esperar para o dólar nos próximos dias após moeda passar os R$ 5,80?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSkozYkdLcE0xVjFZaVYydUZKZDZuZjNQRDJaWVp2ek9vem9yY2UxMUNna3hnb0V4WnZOWC1saFdKSm90ZDJOMkxwdjlaRGltdjVtZW5rXzI0Um01ajN4bElMUU1RNFhhMlp3WDZ3UzVVVXMzZnFRaFh5aTBwT2NKN19TWF9scno4bnRILU1PamNfNF9WdXIyaEV5TlV3NFkwSENsekljVUtna1IxYVpN0gG0AUFVX3lxTFA2X28zQkp1RzJkdzBkMVBBNmhJbl9fenpHR2tRTnU3VFhqX1lGdndFZlJ0c09YeER2Q1VseGw3NDRWVXBqWi1lc0VESlFJNXhDak5tSFZEMmlkVGN0N1Z5N3lzdl90QUtVdG1nNVoydXp4VW5DU1duTkkwV3ZYQVF0b25NaFg0dmMteWUxOGF2d2IteVlmODhLSTBlOHNjZjUxN0I3cklyZEdZQ2hCLWRhZEJ4eQ?oc=5",
+   "publicado": "2026-11-17T11:23-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -1577,20 +1724,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe em recuperação com apoio de Petrobras, de olho em ajuste fiscal",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ3p3ZnpKMVZnbHlBOWtaMGFKSlVVeG5EU2hDT3Y3cE9rbkZPNmZ0MEM1MDFxQzdBTm1Ebm5waFFUVGZiS29qNWJZaHdHYkVKTUZJb3NmeF9JTHZNODR5aWhHVVZ3bC1pNHlFcjFTalNoU21TeFFRZ3RnQ05mbkR6MHdGNW9vMXdqNDFjZVMzQmtpUnJEUEJyOGVQeFNDbzRsNGJsUWFfYU9sSlhONk56SHJ6MGl2S2IzQl9VWjRCWTk0enExZjlJY3dxMmZ1U3PSAd4BQVVfeXFMTlhtd1dUU0FweFZ4eDFMb3RJY0FfZW1FUVNlcDFEcFNzY0Y4LUdyQklwTEdZUFZvMUYzTTR1cmstWUNURTl0cDBjcFJzYWxiendtRGRzc3JBVEFUWWphVGswMzdOSnFzVFBPU1NYeTRpM0FQbU9EUFpJRUFHbG5JVDE3eFF0Yi1FcU1BM3F3dDMyUW1nWUgtdW5BWTYweFZ5T2FkRTRHOGpnSHBDZDJSMjgyNTFJWHlKODdqVlRmTmFtOV9VNklnbTlDdTZLMTc1UVpSNkxOSFhIT1ZwQnp3?oc=5",
-   "publicado": "2026-11-17T10:39-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   }
  ]
 }
