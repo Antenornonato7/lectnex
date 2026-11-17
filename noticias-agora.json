@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T17:43-03:00",
+  "atualizado_em": "2026-11-17T17:45-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     169659.0
+     169694.0
     ]
    ]
   },
@@ -768,11 +768,11 @@
     ],
     [
      "17:40",
-     5.7726
+     5.7746
     ],
     [
-     "17:43",
-     5.7726
+     "17:45",
+     5.7748
     ]
    ]
   },
@@ -1476,7 +1476,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.12
+    "dolar30": -0.08
    },
    {
     "hora": "17:14",
@@ -1489,7 +1489,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.12
+    "dolar30": -0.08
    },
    {
     "hora": "17:14",
@@ -1504,7 +1504,7 @@
      "B3SA3"
     ],
     "ibov30": null,
-    "dolar30": -0.12
+    "dolar30": -0.08
    },
    {
     "hora": "17:15",
@@ -1517,7 +1517,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.09
+    "dolar30": -0.06
    },
    {
     "hora": "17:21",
@@ -1600,21 +1600,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:36",
+    "titulo": "Dólar pode chegar a R$ 5,50 com pressão de três fatores sobre o real, aponta Citi",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQXlGaFM5TkN0M2I0d21EVEVoT29rWHlwQUNKazRkNl9pWjdDd0pWb0hJM3JvX3lZNlNTRmxKN3ZNN1l5SjFQYWZqaGl4YlF2NEQwZ0JXcjN4MVdGWXZTRXN5eXNHTEMzSTRVLUkwdG4yNzItSjh0THRUWGZVRktGMTdPSldmTEhZQVFaRmtrTE5XYzd2ZElENm5YWnhQUUx3Vkp2QnBRT2F0enhxWWZFTHZaVngwLWJzVXBpYlBMNE1VVnQ0VEJ5T1djZmw2cWg5dFNr0gHYAUFVX3lxTE1GUkNyUXZOcWxVLWxTNnNJc3lsYlhRbVZkdHpQZ1BHT3hqZTJBR2tPbFY2a1BfNy1xdFU4OC1uZDZhU3RaVXltVXJVaEhvRmpnQTNGQ3BNS0x1ajh6NFRrLWFiemFodHh0SFVuZ0Q1V1ZwZlFEbEtPNjV6U3ZmWlM2Vm45Uk52cF9qWXpZVjNqUXVidU5TcHB3RFl5R3lKTUVIZ1p2Y0Vua0JJRTJKeUViUnZ2TU8wdmNVUmhCMUdXb2ZSVGRucS1keTdsY0NzdDAwLVlFZ1JvWg?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Treasury yields are broadly flat as investors await retail sales data",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/treasury-yields-bonds-inflation.html",
-   "publicado": "2026-11-17T05:23-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Inflação: efeitos do El Niño nos preços devem se intensificar em 2027, com impacto nos juros",
    "fonte": "Estadão",
@@ -2552,6 +2554,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar pode chegar a R$ 5,50 com pressão de três fatores sobre o real, aponta Citi",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQXlGaFM5TkN0M2I0d21EVEVoT29rWHlwQUNKazRkNl9pWjdDd0pWb0hJM3JvX3lZNlNTRmxKN3ZNN1l5SjFQYWZqaGl4YlF2NEQwZ0JXcjN4MVdGWXZTRXN5eXNHTEMzSTRVLUkwdG4yNzItSjh0THRUWGZVRktGMTdPSldmTEhZQVFaRmtrTE5XYzd2ZElENm5YWnhQUUx3Vkp2QnBRT2F0enhxWWZFTHZaVngwLWJzVXBpYlBMNE1VVnQ0VEJ5T1djZmw2cWg5dFNr0gHYAUFVX3lxTE1GUkNyUXZOcWxVLWxTNnNJc3lsYlhRbVZkdHpQZ1BHT3hqZTJBR2tPbFY2a1BfNy1xdFU4OC1uZDZhU3RaVXltVXJVaEhvRmpnQTNGQ3BNS0x1ajh6NFRrLWFiemFodHh0SFVuZ0Q1V1ZwZlFEbEtPNjV6U3ZmWlM2Vm45Uk52cF9qWXpZVjNqUXVidU5TcHB3RFl5R3lKTUVIZ1p2Y0Vua0JJRTJKeUViUnZ2TU8wdmNVUmhCMUdXb2ZSVGRucS1keTdsY0NzdDAwLVlFZ1JvWg?oc=5",
+   "publicado": "2026-11-17T17:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2581,7 +2594,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T17:43-03:00",
+ "atualizado_em": "2026-11-17T17:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2595,6 +2608,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar pode chegar a R$ 5,50 com pressão de três fatores sobre o real, aponta Citi",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQXlGaFM5TkN0M2I0d21EVEVoT29rWHlwQUNKazRkNl9pWjdDd0pWb0hJM3JvX3lZNlNTRmxKN3ZNN1l5SjFQYWZqaGl4YlF2NEQwZ0JXcjN4MVdGWXZTRXN5eXNHTEMzSTRVLUkwdG4yNzItSjh0THRUWGZVRktGMTdPSldmTEhZQVFaRmtrTE5XYzd2ZElENm5YWnhQUUx3Vkp2QnBRT2F0enhxWWZFTHZaVngwLWJzVXBpYlBMNE1VVnQ0VEJ5T1djZmw2cWg5dFNr0gHYAUFVX3lxTE1GUkNyUXZOcWxVLWxTNnNJc3lsYlhRbVZkdHpQZ1BHT3hqZTJBR2tPbFY2a1BfNy1xdFU4OC1uZDZhU3RaVXltVXJVaEhvRmpnQTNGQ3BNS0x1ajh6NFRrLWFiemFodHh0SFVuZ0Q1V1ZwZlFEbEtPNjV6U3ZmWlM2Vm45Uk52cF9qWXpZVjNqUXVidU5TcHB3RFl5R3lKTUVIZ1p2Y0Vua0JJRTJKeUViUnZ2TU8wdmNVUmhCMUdXb2ZSVGRucS1keTdsY0NzdDAwLVlFZ1JvWg?oc=5",
+   "publicado": "2026-11-17T17:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "A generational flight from tech to defensive stocks is underway. How we’re capitalizing",
    "fonte": "CNBC",
@@ -2770,17 +2794,6 @@
    "tickers": [
     "B3SA3"
    ]
-  },
-  {
-   "titulo": "Durigan prevê impacto inicial da reforma tributária sobre inflação",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/durigan-preve-impacto-inicial-da-reforma-tributaria-sobre-inflacao",
-   "publicado": "2026-11-17T15:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
