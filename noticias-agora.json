@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T11:48-03:00",
+  "atualizado_em": "2026-11-17T11:50-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -79,11 +79,11 @@
     ],
     [
      "11:30",
-     170968.0
+     171025.0
     ],
     [
-     "11:33",
-     171010.0
+     "11:35",
+     170949.0
     ]
    ]
   },
@@ -224,11 +224,11 @@
     ],
     [
      "11:45",
-     5.7721
+     5.7772
     ],
     [
-     "11:48",
-     5.7725
+     "11:50",
+     5.7779
     ]
    ]
   },
@@ -537,7 +537,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": 0.03
    },
    {
     "hora": "11:36",
@@ -1177,7 +1177,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T11:48-03:00",
+ "atualizado_em": "2026-11-17T11:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1294,24 +1294,28 @@
    "tickers": []
   },
   {
-   "titulo": "Economistas pioram previsões para déficit fiscal em 2026 e 2027, mostra Prisma",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcGFIdWl3MFA0VjFJS3R1R0dpMFVOcHgzcjhjMzVLdVVXdjRKZWlpZHFEd0tMbWYtTUFyQ2NianRSV3hwUzE3YXRDRnVnV2k3c0VDdGpMQ1BKV2dXNFNNY19QcE84YkRtbnRKT2U4NVcycEhpOTFVZHhuUnRMcGxhV1llZzNqcTNjRE1wZWlEb2RvSGhqWnJ3NFRYTklQNmVNYWlIMVRRN1hqRXdnQkxmQmJrTQ?oc=5",
-   "publicado": "2026-11-17T10:50-03:00",
-   "impacto": "medio",
+   "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
+   "publicado": "2026-11-17T10:47-03:00",
+   "impacto": "alto",
    "ativos": [
+    "WIN",
     "DI"
    ],
-   "tickers": []
+   "tickers": [
+    "ITUB4"
+   ]
   },
   {
-   "titulo": "Citi projeta que real seguirá com desvalorização, mas vê dólar a R$ 5,50 em 2027",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQNWstOFNSR0NWZEFneVVJcEgxV2RVTHplbkJ4NEczMTBLRGFxUnlvbUE3dnp5R1RZcmhROFVidnhLWVRFT2gwWUtFNHBKN1R5eVJUSndibFd5REl2dnU5Um93QnV4U212RVBMWnY0ZEJzVjhBY2YxZi1QVm9rR25Bb1lSdmRFZXl5UzI1N1lVXzhJXzR2ODNTY2NvSWxNMElhU05WR1pyQ2JqbW9GMEFWaFMyMEFFQdIBuwFBVV95cUxNV2p2X3NEbVE3bmdneFVBdzN3NmNCbGNyeFF0SlRXZUhVc21mdnVtazdoRGpsRmxzd1dUZVhPWjdweU9nYXl1VVlhVFg1Q1M3VG1zVEZiU1ByWEg4ck1VY05mMnFKSTNZMW5xWG04Zkt5eEpRamZuNVR0NWZKUGhtM2F1V2tsbmlFTDdhdmtMcFh5UDRNVDQzSFNDQXpqSnR4LW1reEswREJKa21XYWV1S0ZtUFhmMHhmRmEw?oc=5",
-   "publicado": "2026-11-17T10:49-03:00",
-   "impacto": "medio",
+   "titulo": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
+   "publicado": "2026-11-17T10:40-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
