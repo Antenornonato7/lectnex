@@ -32,15 +32,15 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png", "email": "contato@lectnex.com.br", "sameAs": ["https://www.instagram.com/lectnex.oficial/", "https://www.tiktok.com/@lectnex", "https://x.com/lectnex", "https://t.me/lectnex"], "slogan": "Educação conectada ao mercado"}, {"@type": "WebApplication", "name": "Simulador de pregão: replay grátis de um dia real de WIN e WDO", "url": "https://lectnex.com.br/simulador.html", "description": "Opere um dia real de mini índice ou mini dólar em replay, com as manchetes aparecendo no horário. Dinheiro fictício, resultado e erros de risco no fim. Grátis e sem cadastro.", "applicationCategory": "EducationalApplication", "isAccessibleForFree": true, "inLanguage": "pt-BR", "about": {"@id": "https://lectnex.com.br/#org"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261116f">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261116g">
     <link rel="expect" href="#lx-pronto" blocking="render">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261116f">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261116f">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261116g">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261116g">
 </head>
 <body data-page="simulador" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -115,12 +115,14 @@
 
         <section id="pg-fim" class="hidden mt-6 term-panel p-5 sm:p-6 border-l-4 !border-l-lect-orange" aria-live="polite"></section>
 
+        <section id="pg-hist" class="hidden mt-6 term-panel p-5 sm:p-6"></section>
+
         <p class="text-[11px] text-slate-500 mt-6 leading-relaxed max-w-4xl"><span class="lx-demo">SIMULAÇÃO</span> Preços de 5 em 5 minutos do Ibovespa à vista (base do WIN, sem o ágio do futuro) e do dólar comercial (base do WDO), Yahoo Finance; manchetes da nossa lista de fontes. As ordens executam no último preço, sem fila, sem slippage e sem o horário estendido. WIN: R$ 0,20 por ponto; WDO: R$ 10 por ponto. Custo padrão por contrato e por lado: R$ 0,50 (WIN) e R$ 1,50 (WDO). Conteúdo educacional, não é recomendação.</p>
     </main>
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261116f"></script><span id="lx-pronto" hidden></span>
+    <script src="assets/lectnex-core.js?v=20261116g"></script><span id="lx-pronto" hidden></span>
     <script>
     (function () {
         const $ = id => document.getElementById(id);
@@ -272,6 +274,12 @@
             if (bloqueado) erros.push(['ph-hand', 'Bateu o limite de perda', 'Bom sinal que o limite existia: na vida real, sem ele, o dia ruim costuma virar uma semana ruim.']);
             const pmed = ganhos.length && perdas.length ? (ganhos.reduce((a, o) => a + o.r, 0) / ganhos.length) / Math.abs(perdas.reduce((a, o) => a + o.r, 0) / perdas.length) : null;
             if (pmed != null && pmed < 1 && ganhos.length >= perdas.length) erros.push(['ph-scales', 'Ganha pouco, perde muito', `Você acertou mais do que errou, mas o ganho médio é ${LX.num(pmed, 2)}× a perda média. Cortar o lucro cedo e deixar a perda correr é o erro mais comum.`]);
+            if (ops.length || !bloqueado) {
+                const h = ler('lx-sim-hist') || [];
+                h.push({ q: new Date().toISOString().slice(0, 10), dia, ativo, r: Math.round(r), cap, ops: ops.length, ac: ops.length ? Math.round(ganhos.length / ops.length * 100) : null,
+                    err: erros.map(e => e[1]), semStop: ops.filter(o => !o.stop).length, lim: bloqueado });
+                guardar('lx-sim-hist', h.slice(-200));
+            }
             const melhor = ler('lx-sim-melhor') || {}, chave = `${dia}-${ativo}`, rec = melhor[chave] == null || r > melhor[chave];
             if (ops.length && rec) { melhor[chave] = r; guardar('lx-sim-melhor', melhor); }
             const [a, m, d] = dia.split('-');
@@ -321,6 +329,53 @@
                 setTimeout(() => URL.revokeObjectURL(a2.href), 4000); LX.track('simulador_imagem', { ativo });
             };
             LX.track('simulador_fim', { ativo, resultado: Math.round(r), operacoes: ops.length });
+            historico();
+        }
+
+        // Meu histórico: cada partida fica só neste aparelho (localStorage) e vira evolução.
+        function historico() {
+            const h = (ler('lx-sim-hist') || []).filter(x => x && typeof x.r === 'number'), el = $('pg-hist');
+            if (!h.length) { el.classList.add('hidden'); return; }
+            const soma = h.reduce((a, x) => a + x.r, 0), pos = h.filter(x => x.r > 0).length, media = a => a.length ? a.reduce((s, v) => s + v, 0) / a.length : null;
+            const kpi = (rot, val, cls = '') => `<div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><span class="term-label block">${rot}</span><strong class="block text-xl mt-1 ${cls}">${val}</strong></div>`;
+            const ult = h.slice(-30), mx = Math.max(...ult.map(x => Math.abs(x.r)), 1), bw = 100 / ult.length;
+            const barras = ult.map((x, n) => { const hh = Math.max(2, Math.abs(x.r) / mx * 44); return `<rect x="${n * bw + bw * 0.15}" y="${x.r >= 0 ? 50 - hh : 50}" width="${bw * 0.7}" height="${hh}" fill="${x.r >= 0 ? '#10B981' : '#F43F5E'}"><title>${x.dia} ${x.ativo.toUpperCase()}: ${sinal(x.r)}</title></rect>`; }).join('');
+            // evolução: últimas 5 × as 5 anteriores
+            const dicas = [];
+            if (h.length >= 6) {
+                const a = h.slice(-10, -5).length ? h.slice(-Math.min(10, h.length), -5) : [], b = h.slice(-5);
+                const pct = (arr, f) => arr.length ? arr.filter(f).length / arr.length * 100 : null;
+                const sa = pct(a, x => x.semStop > 0), sb = pct(b, x => x.semStop > 0);
+                if (sa != null && sa - sb >= 20) dicas.push(['ph-shield-check', `Você está usando mais stop: operou sem stop em ${Math.round(sb)}% das últimas 5 partidas, contra ${Math.round(sa)}% antes.`]);
+                else if (sb >= 60) dicas.push(['ph-shield-slash', `Em ${Math.round(sb)}% das últimas partidas teve operação sem stop. Esse é o hábito que mais vale mudar.`]);
+                const aa = media(a.filter(x => x.ac != null).map(x => x.ac)), ab = media(b.filter(x => x.ac != null).map(x => x.ac));
+                if (aa != null && ab != null && Math.abs(ab - aa) >= 5) dicas.push([ab > aa ? 'ph-trend-up' : 'ph-trend-down', `Sua taxa de acerto ${ab > aa ? 'subiu' : 'caiu'} de ${Math.round(aa)}% para ${Math.round(ab)}% nas últimas 5 partidas.`]);
+                const oa = media(a.map(x => x.ops)), ob = media(b.map(x => x.ops));
+                if (oa != null && oa - ob >= 2) dicas.push(['ph-hourglass-medium', `Menos impulso: média de ${LX.num(ob, 1)} operações por pregão, contra ${LX.num(oa, 1)} antes.`]);
+                else if (ob >= 10) dicas.push(['ph-repeat', `Média de ${LX.num(ob, 1)} operações por pregão nas últimas 5. Operar menos costuma custar menos.`]);
+                const la = pct(a, x => x.lim), lb = pct(b, x => x.lim);
+                if (lb >= 40) dicas.push(['ph-hand', `Bateu o limite de perda em ${Math.round(lb)}% das últimas partidas: experimente metade dos contratos.`]);
+                else if (la != null && la - lb >= 20) dicas.push(['ph-hand', 'Você parou de bater o limite de perda. Disciplina antes de resultado.']);
+                const ra = media(a.map(x => x.r / (x.cap || 5000) * 100)), rb = media(b.map(x => x.r / (x.cap || 5000) * 100));
+                if (ra != null && rb - ra >= 0.3) dicas.push(['ph-chart-line-up', `Resultado médio subiu de ${LX.num(ra, 2)}% para ${LX.num(rb, 2)}% da conta por pregão.`]);
+            }
+            const freq = {}; h.slice(-10).forEach(x => (x.err || []).forEach(e => { freq[e] = (freq[e] || 0) + 1; }));
+            const top = Object.entries(freq).sort((a, b) => b[1] - a[1])[0];
+            if (top && top[1] >= 3) dicas.push(['ph-target', `Erro que mais se repete nas últimas 10: <strong>${LX.esc(top[0])}</strong> (${top[1]} vezes).`]);
+            if (!dicas.length) dicas.push(['ph-info', h.length < 6 ? `Jogue mais ${6 - h.length} pregão(ões) para ver a sua evolução comparada.` : 'Sem mudança clara nas últimas partidas. Constância também é evolução.']);
+            const linhas = h.slice(-10).reverse().map(x => { const [a2, m2, d2] = x.dia.split('-'); return `<tr class="border-b border-slate-200 dark:border-lect-borderDark"><td class="py-1.5 pr-3">${d2}/${m2}</td><td class="py-1.5 pr-3">${x.ativo.toUpperCase()}</td><td class="py-1.5 pr-3 text-right ${cor(x.r)}">${sinal(x.r)}</td><td class="py-1.5 pr-3 text-right">${x.ops}</td><td class="py-1.5 text-right">${(x.err || []).length ? `<span class="text-lect-orange">${x.err.length}</span>` : '<span class="text-emerald-600 dark:text-emerald-400">0</span>'}</td></tr>`; }).join('');
+            el.innerHTML = `
+                <div class="flex flex-wrap items-end justify-between gap-3"><div><span class="term-label text-lect-teal font-bold">MEU HISTÓRICO</span><h2 class="font-display text-2xl font-bold mt-1">A sua evolução no simulador</h2></div>
+                    <button type="button" id="pg-hist-del" class="text-[11px] font-mono text-slate-500 hover:text-rose-500 underline">apagar meu histórico</button></div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4 font-mono tabular-nums">${kpi('Partidas', h.length)}${kpi('Resultado somado', sinal(soma), cor(soma))}${kpi('Pregões no positivo', Math.round(pos / h.length * 100) + '%')}${kpi('Operações por pregão', LX.num(media(h.map(x => x.ops)), 1))}</div>
+                <div class="mt-4"><span class="term-label">Resultado por partida (últimas ${ult.length})</span><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-full h-24 mt-1 block"><line x1="0" x2="100" y1="50" y2="50" stroke="#94A3B8" stroke-width=".3"/>${barras}</svg></div>
+                <ul class="mt-4 space-y-2">${dicas.map(d => `<li class="flex gap-3 text-sm"><i class="ph-duotone ${d[0]} text-xl text-lect-orange shrink-0"></i><span>${d[1]}</span></li>`).join('')}</ul>
+                <div class="overflow-x-auto mt-4"><table class="w-full font-mono text-xs tabular-nums"><thead><tr class="text-left text-slate-500 border-b border-slate-300 dark:border-lect-borderDark"><th class="py-1.5 pr-3 font-normal">Pregão</th><th class="py-1.5 pr-3 font-normal">Contrato</th><th class="py-1.5 pr-3 font-normal text-right">Resultado</th><th class="py-1.5 pr-3 font-normal text-right">Operações</th><th class="py-1.5 font-normal text-right">Erros</th></tr></thead><tbody>${linhas}</tbody></table></div>
+                <p class="text-[11px] text-slate-500 mt-3">Fica salvo só neste aparelho e navegador. Ninguém mais vê.</p>`;
+            el.classList.remove('hidden');
+            let conf = false;
+            $('pg-hist-del').onclick = () => { if (!conf) { conf = true; $('pg-hist-del').textContent = 'toque de novo para apagar tudo'; setTimeout(() => { conf = false; if ($('pg-hist-del')) $('pg-hist-del').textContent = 'apagar meu histórico'; }, 4000); return; }
+                try { localStorage.removeItem('lx-sim-hist'); localStorage.removeItem('lx-sim-melhor'); } catch (e) { } historico(); };
         }
 
         // Cartão 1080×1920 (Story/WhatsApp) desenhado no navegador: resultado, gráfico do dia com as entradas e chamada para o site.
@@ -368,6 +423,7 @@
             else if (!silencioso) offTxt(navigator.onLine ? 'TENTE DE NOVO' : 'SEM INTERNET AGORA');
         }
         $('pg-off').onclick = () => baixarTudo(false);
+        historico();
         if (ler('lx-sim-offline')) { offTxt('✓ PREGÕES OFFLINE'); $('pg-off').classList.add('pg-on'); }
 
         $('pg-play').onclick = () => rodando ? pausar() : tocar();
