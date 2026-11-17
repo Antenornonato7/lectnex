@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T13:08-03:00",
+  "atualizado_em": "2026-11-17T13:38-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -143,11 +143,35 @@
     ],
     [
      "12:50",
-     171160.0
+     171138.0
     ],
     [
-     "12:53",
-     171152.0
+     "12:55",
+     171251.0
+    ],
+    [
+     "13:00",
+     171428.0
+    ],
+    [
+     "13:05",
+     171213.0
+    ],
+    [
+     "13:10",
+     171287.0
+    ],
+    [
+     "13:15",
+     171157.0
+    ],
+    [
+     "13:20",
+     171013.0
+    ],
+    [
+     "13:23",
+     170985.0
     ]
    ]
   },
@@ -352,11 +376,35 @@
     ],
     [
      "13:05",
-     5.7848
+     5.7818
     ],
     [
-     "13:08",
-     5.7856
+     "13:10",
+     5.7766
+    ],
+    [
+     "13:15",
+     5.7798
+    ],
+    [
+     "13:20",
+     5.7853
+    ],
+    [
+     "13:25",
+     5.783
+    ],
+    [
+     "13:30",
+     5.7808
+    ],
+    [
+     "13:35",
+     5.7798
+    ],
+    [
+     "13:38",
+     5.7815
     ]
    ]
   },
@@ -749,7 +797,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.29,
+    "ibov30": -0.3,
     "dolar30": 0.12
    },
    {
@@ -762,7 +810,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.18,
     "dolar30": -0.02
    },
    {
@@ -777,8 +825,8 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": null,
-    "dolar30": 0.04
+    "ibov30": -0.02,
+    "dolar30": -0.12
    },
    {
     "hora": "13:01",
@@ -793,7 +841,35 @@
      "HAPV3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.16
+   },
+   {
+    "hora": "13:08",
+    "titulo": "Brookfield critica revisão de tarifas de gasodutos e vê risco a investimento no Brasil",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/11/brookfield-eleva-pressao-sobre-anp-e-ve-risco-a-investimento-no-brasil.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "13:10",
+    "titulo": "Hapvida salta 10% e lidera maiores altas do Ibovespa hoje; veja os destaques",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZ3FOQ080Wmk3M2VWS1VyLTBQMFpGWFBubU9PbkwzQTBybW9OX2o5ZG5sRDVqaUJ0RFkxek1fVkh2aXdBQjRSOFFNMkJfcDRzUmtsLVVRcVlIckZuaHJIOFgwVWg0bHRDWndQWmdIVDFXcnpFNURVbF96UmhRTU9lejd6LUNPbGx5NUV0ekVWcXFPZW5kVG1lUTlSNmNtbnpGNXQ1VlFQWFFaZ0NkSHNGSGduWDlEOG9kMC15N0lwQ1FJMEJ5QU01Y01VVlpNcFFKcVI2NEhHTFM?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "HAPV3"
+    ],
+    "ibov30": null,
+    "dolar30": 0.06
    }
   ]
  },
@@ -1490,6 +1566,30 @@
    "tickers": [
     "HAPV3"
    ]
+  },
+  {
+   "titulo": "Brookfield critica revisão de tarifas de gasodutos e vê risco a investimento no Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/11/brookfield-eleva-pressao-sobre-anp-e-ve-risco-a-investimento-no-brasil.shtml",
+   "publicado": "2026-11-17T13:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Hapvida salta 10% e lidera maiores altas do Ibovespa hoje; veja os destaques",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZ3FOQ080Wmk3M2VWS1VyLTBQMFpGWFBubU9PbkwzQTBybW9OX2o5ZG5sRDVqaUJ0RFkxek1fVkh2aXdBQjRSOFFNMkJfcDRzUmtsLVVRcVlIckZuaHJIOFgwVWg0bHRDWndQWmdIVDFXcnpFNURVbF96UmhRTU9lejd6LUNPbGx5NUV0ekVWcXFPZW5kVG1lUTlSNmNtbnpGNXQ1VlFQWFFaZ0NkSHNGSGduWDlEOG9kMC15N0lwQ1FJMEJ5QU01Y01VVlpNcFFKcVI2NEhHTFM?oc=5",
+   "publicado": "2026-11-17T13:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
   }
  ],
  "enviadas": [
@@ -1519,7 +1619,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T13:08-03:00",
+ "atualizado_em": "2026-11-17T13:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1533,6 +1633,41 @@
  ],
  "noticias": [
   {
+   "titulo": "Hapvida salta 10% e lidera maiores altas do Ibovespa hoje; veja os destaques",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZ3FOQ080Wmk3M2VWS1VyLTBQMFpGWFBubU9PbkwzQTBybW9OX2o5ZG5sRDVqaUJ0RFkxek1fVkh2aXdBQjRSOFFNMkJfcDRzUmtsLVVRcVlIckZuaHJIOFgwVWg0bHRDWndQWmdIVDFXcnpFNURVbF96UmhRTU9lejd6LUNPbGx5NUV0ekVWcXFPZW5kVG1lUTlSNmNtbnpGNXQ1VlFQWFFaZ0NkSHNGSGduWDlEOG9kMC15N0lwQ1FJMEJ5QU01Y01VVlpNcFFKcVI2NEhHTFM?oc=5",
+   "publicado": "2026-11-17T13:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3"
+   ]
+  },
+  {
+   "titulo": "Brookfield critica revisão de tarifas de gasodutos e vê risco a investimento no Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/11/brookfield-eleva-pressao-sobre-anp-e-ve-risco-a-investimento-no-brasil.shtml",
+   "publicado": "2026-11-17T13:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Wall Street cai à espera de balanço da Nvidia e em meio a falha em rede de segurança dos EUA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONF9peVVBSnNpZ0Fza2JXelloY2hCc2tjenlFdlYzb2stX2ZFOFRyYThpTzREYThoUGxadGhoN1YyZDgtVEJGUkxjWnFqRXZEV3hPUDdIRmdvdDF0RTd3UjhxZ1l4OVFQaFpQQzV5aTJBX185bmhWRkhmNWNkVFgtVWR4MFM3VFVxNUpvQVBscFVPYVJ1akpzMGwwTG9QXzlDM3oyZXB6MFdWOFVoSEw1cnBnTGRQU1ZHWnc2a0d3ZTVYa203c3Budm5ZWVZlOEhPbW1Ba0FYWGtGU3fSAeABQVVfeXFMT0FiUlRycWdlekJXM1BWXzRXTmJmWW0tZnpqaXBRTEk3MWZPb20xN0lZQkxvR2lJN3VCUXZ2UEkwSG13THJIVnhNQ3BEcHRlZlNKM0MtV01RSGdoTzRMSjN1SHpsdnRXYTZGcmpWV2JXU0xPTkpDaXVTZkNDTl9MNDZ6c0syTjlBV2ZrWFVtcE5wUjRnYmttLVFVMTFEaVJkZTRkMVJ5TFJvR3NjM2FpZmN4RC16UlZVdkRZYWxHc3phWTM4azZ3RVlkbnN1eG1MV1ViME5BdndEcnB2SWhWR0k?oc=5",
+   "publicado": "2026-11-17T13:05-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
@@ -1543,19 +1678,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Hapvida salta 10% e lidera maiores altas do Ibovespa hoje; veja os destaques",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZzNNeUl2Um8wb0E5NHhXTXFqOGM3RDZPMjhFVnZPd3pDYmdtUkZXSTRrUFVOWmVtOWE4WnVkeE94ZlRMb3V6WWRieDhFUlBtcllIY3lORTA3b25hV0tNUGZCNWFyZ1JPeUY5dlB5MXJkbWpYQ21CZDJid253NldQd1l2MWdoRXZadkdPb3RZUTdyemdGWHM2dk9aNk9lVnVmWHdjNllQTlQyR1B4bE1JLTJldEtVZmRtUWR1WGhjYUs2TkRTbkdvOE04VTlrd9IB0wFBVV95cUxQOVFRVXY5X1F3TGs5bnRHYXlxOHYwdHdmR2lZNGRqQlpqRjlQMGhVNXVHQmlMWkNNN1dQUkxVYzI0SEM5UUlrSmpjdGpmb3EtaTVoOTN3bDVqSUFGdUZvdG1aWThoZ0ZzUUdDR2xxcldob00ybHFSbzBLWl9fcWJvalYtclJHY1hCend1S0c5QWhhZVJYX0xTUDRyY05ZNDRQWUlVd0I2UTJ5Y05HOTMtRWpVdDB2M0x0NTV0anpzOF9VdUNJbGpGN0pwNUhSN0FISlh3?oc=5",
-   "publicado": "2026-11-17T13:01-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "HAPV3"
-   ]
   },
   {
    "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
@@ -1602,10 +1724,10 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar em alta: 7 fatores que podem mudar a trajetória da moeda",
+   "titulo": "Dólar hoje sobe após superar os R$ 5,81",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQUdMZTJYZUZvUnI0YkRyc3hVRzR2Q19hVTQxX19pR0ExWkl5SjNtSjJtSmdURUFGa0V5NVlKWlZOZUlWMUswSGN6Uk05REpDSjJOdTJRYUFta2J0UlUzam9pdVJ3TnEwSlg1LWtHdWxZelVEeG9yaDFpY1dvZVVpS2VLT0ktd9IBiwFBVV95cUxONnlvSm95ZUt2TmVzS0lQQU5qSDVIR2htZmRqMWthc0s2bHljZmh2MkFhbGhRb0pUNEd3d2F0aGwxS0JBWlNRRUhjaUhTWmRLVDBmMzZMV1Jua0stejBQMm53RC1HNzdrLVhNa1VOWjRyZ2RtUDM5ZWdfS21neWluR00yQUQ5WWgxNjZ3?oc=5",
-   "publicado": "2026-11-17T12:00-03:00",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZlBOVWFwMmt2dkVWclZmSE5SbGVjSDJPSHRFeXlJRnNvV2hzV2xsNlNzaHVIREpRcFphNF9EZUttMWhQZlZvTUUyMmtudFYzUGtDSWlJUUFmUWpWdDlIRFpXcjFjYjN1d0hkQXBUdzJGWlNtUEN5VnlxS0pSU3B1Nm9VcE82aW1IZUIxcHBpZjMzWmotRVNGZHJNU23SAaIBQVVfeXFMT2phWEdDeHN5WHNES0ZIdjVHbklsWFRnc3FQcUNaWXVYYllra0VjcHhpNlRUSUh4ei1kU2dBX0N0LVpfYmtLRDl0Umk3VmEybDI0VGU2SUdHNHR2Wm5Rby1HVWZyMTQ0cHAzQU1GenNZbWhTcmx1YzlQdzJJMVZ5Slh1M21JUW9jN0djdWh5cnFkWVBZSVVZcGxIUGRQVjdMWUlR?oc=5",
+   "publicado": "2026-11-17T12:21-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -1613,13 +1735,12 @@
    "tickers": []
   },
   {
-   "titulo": "Wall Street recua à espera de balanço da Nvidia, enquanto tensão no Oriente Médio faz petróleo subir",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONF9peVVBSnNpZ0Fza2JXelloY2hCc2tjenlFdlYzb2stX2ZFOFRyYThpTzREYThoUGxadGhoN1YyZDgtVEJGUkxjWnFqRXZEV3hPUDdIRmdvdDF0RTd3UjhxZ1l4OVFQaFpQQzV5aTJBX185bmhWRkhmNWNkVFgtVWR4MFM3VFVxNUpvQVBscFVPYVJ1akpzMGwwTG9QXzlDM3oyZXB6MFdWOFVoSEw1cnBnTGRQU1ZHWnc2a0d3ZTVYa203c3Budm5ZWVZlOEhPbW1Ba0FYWGtGU3fSAeABQVVfeXFMT0FiUlRycWdlekJXM1BWXzRXTmJmWW0tZnpqaXBRTEk3MWZPb20xN0lZQkxvR2lJN3VCUXZ2UEkwSG13THJIVnhNQ3BEcHRlZlNKM0MtV01RSGdoTzRMSjN1SHpsdnRXYTZGcmpWV2JXU0xPTkpDaXVTZkNDTl9MNDZ6c0syTjlBV2ZrWFVtcE5wUjRnYmttLVFVMTFEaVJkZTRkMVJ5TFJvR3NjM2FpZmN4RC16UlZVdkRZYWxHc3phWTM4azZ3RVlkbnN1eG1MV1ViME5BdndEcnB2SWhWR0k?oc=5",
-   "publicado": "2026-11-17T11:59-03:00",
-   "impacto": "alto",
+   "titulo": "Dólar em alta: 7 fatores que podem mudar a trajetória da moeda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQUdMZTJYZUZvUnI0YkRyc3hVRzR2Q19hVTQxX19pR0ExWkl5SjNtSjJtSmdURUFGa0V5NVlKWlZOZUlWMUswSGN6Uk05REpDSjJOdTJRYUFta2J0UlUzam9pdVJ3TnEwSlg1LWtHdWxZelVEeG9yaDFpY1dvZVVpS2VLT0ktd9IBiwFBVV95cUxONnlvSm95ZUt2TmVzS0lQQU5qSDVIR2htZmRqMWthc0s2bHljZmh2MkFhbGhRb0pUNEd3d2F0aGwxS0JBWlNRRUhjaUhTWmRLVDBmMzZMV1Jua0stejBQMm53RC1HNzdrLVhNa1VOWjRyZ2RtUDM5ZWdfS21neWluR00yQUQ5WWgxNjZ3?oc=5",
+   "publicado": "2026-11-17T12:00-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -1666,36 +1787,13 @@
    ]
   },
   {
-   "titulo": "Ibovespa sobe mais de 1% de olho em plano fiscal, mas mercado segue cauteloso",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPYnAxRmZpWnVMYUMwSUp2bEFOLTRzanVlSy1XNHhaSWpNemxiaW1BclFBUHBIYzNnb1I1UVNRajBha09qOGFBMURFcTViZ1JMd2NxUUVxdWs3eU8wN3JYRkI2Z2t5c2RFandVc2d4a1hVaHpKSEUtenNWcUg5M3JLTkx4R0RJUGJFUnp0M2J5NlhLa0Z2VXVQV3hSZWxmUGZ2ZEluWm1GR3EwR2R4YlJJcjVpd3cya3dVazN4Q3NEUdIBxAFBVV95cUxQU3RiMFhOTmtidjcydkFCQXRZdFI1VnU2dzN5NC1IaFk2aHZ1b1l3STA3TnduY2pQRkFhd2JJbjJ5UFpLRmFCVVVrdjBkSkhCa1F4T1E4M2R6UkZ5WWowWGY3ekQ0WF9aRXk1M18tYmZoRHN1aS1sRldTVHpaQlhmeEE2dDc1NDAxOWVzWktFY2JzZ09JV1R3a1EtWnpMemhDamJpdnpZald2ZUdJNXMtNzBxc05hTnhDQlJ2N1U2MmZNMkxl?oc=5",
-   "publicado": "2026-11-17T11:36-03:00",
-   "impacto": "alto",
+   "titulo": "Ajuste fiscal: Moretti e base do governo se reúnem antes de votação para tentar evitar ‘fogo amigo’",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/ajuste-fiscal-moretti-base-governo-se-reunem-antes-votacao-evitar-fogo-amigo/",
+   "publicado": "2026-11-17T11:00-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje oscila após superar os R$ 5,81",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZlBOVWFwMmt2dkVWclZmSE5SbGVjSDJPSHRFeXlJRnNvV2hzV2xsNlNzaHVIREpRcFphNF9EZUttMWhQZlZvTUUyMmtudFYzUGtDSWlJUUFmUWpWdDlIRFpXcjFjYjN1d0hkQXBUdzJGWlNtUEN5VnlxS0pSU3B1Nm9VcE82aW1IZUIxcHBpZjMzWmotRVNGZHJNU23SAaIBQVVfeXFMT2phWEdDeHN5WHNES0ZIdjVHbklsWFRnc3FQcUNaWXVYYllra0VjcHhpNlRUSUh4ei1kU2dBX0N0LVpfYmtLRDl0Umk3VmEybDI0VGU2SUdHNHR2Wm5Rby1HVWZyMTQ0cHAzQU1GenNZbWhTcmx1YzlQdzJJMVZ5Slh1M21JUW9jN0djdWh5cnFkWVBZSVVZcGxIUGRQVjdMWUlR?oc=5",
-   "publicado": "2026-11-17T11:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "O que esperar para o dólar nos próximos dias após moeda passar os R$ 5,80?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSkozYkdLcE0xVjFZaVYydUZKZDZuZjNQRDJaWVp2ek9vem9yY2UxMUNna3hnb0V4WnZOWC1saFdKSm90ZDJOMkxwdjlaRGltdjVtZW5rXzI0Um01ajN4bElMUU1RNFhhMlp3WDZ3UzVVVXMzZnFRaFh5aTBwT2NKN19TWF9scno4bnRILU1PamNfNF9WdXIyaEV5TlV3NFkwSENsekljVUtna1IxYVpN0gG0AUFVX3lxTFA2X28zQkp1RzJkdzBkMVBBNmhJbl9fenpHR2tRTnU3VFhqX1lGdndFZlJ0c09YeER2Q1VseGw3NDRWVXBqWi1lc0VESlFJNXhDak5tSFZEMmlkVGN0N1Z5N3lzdl90QUtVdG1nNVoydXp4VW5DU1duTkkwV3ZYQVF0b25NaFg0dmMteWUxOGF2d2IteVlmODhLSTBlOHNjZjUxN0I3cklyZEdZQ2hCLWRhZEJ4eQ?oc=5",
-   "publicado": "2026-11-17T11:23-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
