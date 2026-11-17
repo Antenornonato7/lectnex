@@ -10,7 +10,7 @@ permissions:
 jobs:
   termo:
     runs-on: ubuntu-latest
-    timeout-minutes: 4
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - name: Gerar e enviar
@@ -21,3 +21,12 @@ jobs:
         run: |
           pip install -q pillow==12.0.0 || pip install -q pillow
           python3 scripts/termo_dia.py "$RUNNER_TEMP/termo-do-dia.png"
+      - name: Reels educativo (Dicionário do trader) para o Kit do dia
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          [ "$(TZ=America/Sao_Paulo date +%u)" -le 5 ] || exit 0
+          pip install -q numpy
+          command -v ffmpeg >/dev/null || sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || exit 0
+          python3 scripts/reel_aula.py "$RUNNER_TEMP/aula.mp4" --capa "$RUNNER_TEMP/aula-capa.png" --legenda "$RUNNER_TEMP/aula.txt" --x "$RUNNER_TEMP/aula-x.txt" || { echo "::warning::Falha no Reels educativo."; exit 0; }
+          python3 -c "import sys; sys.path.insert(0, 'scripts'); from kit import registrar_video; registrar_video(sys.argv[1], open(sys.argv[2], encoding='utf-8').read(), sys.argv[3], 'reel-aula', 'Dicionário do trader (Reels educativo)', open(sys.argv[4], encoding='utf-8').read())" "$RUNNER_TEMP/aula.mp4" "$RUNNER_TEMP/aula.txt" "$RUNNER_TEMP/aula-capa.png" "$RUNNER_TEMP/aula-x.txt"

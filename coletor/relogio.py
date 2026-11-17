@@ -87,7 +87,8 @@ TAREFAS = [
     ('carrossel.yml', 'Carrossel da semana', {'previa': 'false'}, ('horarios', ['09:47'], 360), lambda: AGORA.weekday() == 5),
     ('discord-plantao.yml', None, {'automatico': 'true'}, ('horarios', ['09:07', '13:07', '17:07', '21:07'], 120), lambda: True),
     ('instagram.yml', 'Instagram kit', {'acao': 'kit', 'pecas': ''}, ('horarios', ['19:40'], 150), lambda: UTIL),
-    ('instagram.yml', 'Instagram kit', {'acao': 'kit', 'pecas': 'leitura termo'}, ('horarios', ['08:25'], 150), lambda: True),
+    ('instagram.yml', 'Instagram kit', {'acao': 'kit', 'pecas': 'leitura termo reel-aula'}, ('horarios', ['08:25'], 150), lambda: True),
+    ('discord-desafio.yml', 'Discord desafio revelar', {'acao': 'revelar'}, ('horarios', ['21:40'], 120), lambda: UTIL),
     ('instagram.yml', 'Instagram redes', {'acao': 'redes', 'pecas': ''}, ('horarios', ['18:05'], 180), lambda: AGORA.weekday() == 6),
     ('resumo-site.yml', 'Resumo semanal do site', {'enviar': 'true'}, ('horarios', ['11:07'], 360), lambda: AGORA.weekday() == 6),
 ]

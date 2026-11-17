@@ -1,0 +1,33 @@
+# Desafio SUBIU ou CAIU no Discord: revela as respostas às 21h40 (coletor/relogio.py) e, no último pregão da semana, o ranking.
+name: Discord desafio
+run-name: Discord desafio ${{ inputs.acao }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      acao:
+        type: choice
+        options: [revelar, postar-hoje]
+        default: revelar
+
+permissions:
+  contents: write
+
+jobs:
+  desafio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Desafio ${{ inputs.acao }}
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ inputs.acao }}" = "postar-hoje" ]; then
+            pip install -q pillow numpy
+            curl -sfH "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github.raw" "https://api.github.com/repos/${{ github.repository }}/contents/noticias-agora.json?ref=ao-vivo" | python3 -c "import json,sys; json.dump(json.load(sys.stdin)['mercado'], open('m.json','w'))"
+            python3 coletor/discord_desafio.py postar m.json
+          else
+            python3 coletor/discord_desafio.py ${{ inputs.acao }}
+          fi

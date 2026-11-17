@@ -86,12 +86,14 @@ jobs:
           python3 scripts/reel_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/reel-dia.mp4" --capa "$RUNNER_TEMP/reel-capa.png" --legenda "$RUNNER_TEMP/reel-legenda.txt" || { echo "::warning::Falha ao gerar o reel do dia."; exit 0; }
           LEG=""; [ -f "$RUNNER_TEMP/reel-legenda.txt" ] && LEG="$(cat "$RUNNER_TEMP/reel-legenda.txt")"
           python3 -c "import sys; sys.path.insert(0, 'scripts'); from kit import registrar_video; registrar_video(sys.argv[1], sys.argv[2], sys.argv[3])" "$RUNNER_TEMP/reel-dia.mp4" "$LEG" "$RUNNER_TEMP/reel-capa.png"
-      - name: Desafio SUBIU ou CAIU (Reels para viralizar) para o Kit do dia
+      - name: Desafio SUBIU ou CAIU (Reels para viralizar) para o Kit do dia e no Discord
         if: ${{ !inputs.previa_story }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: |
           [ -f "$RUNNER_TEMP/mercado.json" ] || exit 0
+          python3 coletor/discord_desafio.py postar "$RUNNER_TEMP/mercado.json" || true
           command -v ffmpeg >/dev/null || exit 0
           python3 scripts/reel_quiz.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/reel-quiz.mp4" --capa "$RUNNER_TEMP/reel-quiz-capa.png" --legenda "$RUNNER_TEMP/reel-quiz-legenda.txt" --x "$RUNNER_TEMP/reel-quiz-x.txt" || { echo "::warning::Falha ao gerar o desafio."; exit 0; }
           [ -f "$RUNNER_TEMP/reel-quiz.mp4" ] || exit 0
