@@ -4,7 +4,8 @@ Roda no workflow "Newsletter" quando data/leitura.json muda. Só envia quando a 
 diferente da versão anterior do arquivo (correções no mesmo dia não reenviam), a não ser em disparo manual.
 Requer o segredo BUTTONDOWN_API_KEY. Só biblioteca padrão.
 """
-import json, os, subprocess, sys, urllib.request
+import json, os, subprocess, sys, urllib.error, urllib.request
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 KEY = os.environ.get('BUTTONDOWN_API_KEY', '').strip()
 SITE = 'https://lectnex.com.br/'
@@ -19,38 +20,43 @@ def anterior():
 
 
 def corpo(d):
-    TH = {'bullish': '🟢 viés de alta', 'neutro': '⚪ neutro', 'bearish': '🔴 viés de baixa'}
-    imp = {'alta': '▲', 'baixa': '▼', 'neutro': '●'}
-    L = []
+    """Leitura do Dia em HTML de e-mail (modelo da marca em email_html.py)."""
+    import email_html as H
+    imp = {'alta': ('▲', H.VERDE), 'baixa': ('▼', H.VERM), 'neutro': ('●', H.CINZA)}
+    blocos = []
     if d.get('tipo') == 'sem-pregao':
         pp = d.get('proximo_pregao') or {}
         dt = pp.get('data', '')
-        if len(dt) == 10:
-            dt = f'{dt[8:]}/{dt[5:7]}'
-        L += ['**Edição sem pregão** · próximo pregão: ' + dt, '', pp.get('o_que_esperar', ''), '']
+        dt = f'{dt[8:]}/{dt[5:7]}' if len(dt) == 10 else dt
+        blocos.append(H.secao(f'Edição sem pregão · próximo pregão {dt}', H.paragrafo(H.e(pp.get('o_que_esperar', '')))))
     else:
         t = d.get('termometro') or {}
-        L += ['**Viés do modelo na abertura** (experimental, não é recomendação)', '']
-        for k, nome in (('win', 'WIN (mini índice)'), ('wdo', 'WDO (mini dólar)')):
-            if t.get(k):
-                L.append(f"- **{nome}:** {TH.get(t[k].get('leitura'), t[k].get('leitura', ''))} — {t[k].get('motivo', '')}")
-        L.append('')
-    L += ['**O que importa**', ''] + [f'- {x}' for x in d.get('resumo', [])] + ['']
+        vs = ''.join(H.vies(nome, t[k].get('leitura'), t[k].get('motivo', '')) for k, nome in (('win', 'WIN · mini índice'), ('wdo', 'WDO · mini dólar')) if t.get(k))
+        if vs:
+            blocos.append(H.secao('Viés do modelo na abertura (experimental)', vs))
+    if d.get('resumo'):
+        blocos.append(H.secao('O que importa hoje', H.lista([H.e(x) for x in d['resumo']])))
     if d.get('destaques'):
-        L += ['**Agenda**', ''] + [f"- **{x.get('hora', '')}** · {x.get('evento', '')} — {x.get('por_que', '')}" for x in d['destaques']] + ['']
+        linhas = ''.join(f'<tr><td width="64" valign="top" style="padding:8px 8px 8px 0;border-bottom:1px solid {H.LINHA};{H.MONO}font-size:13px;font-weight:700;color:{H.ORANGE}">{H.e(x.get("hora", ""))}</td>'
+                         f'<td style="padding:8px 0;border-bottom:1px solid {H.LINHA};font-size:14px;line-height:1.5"><strong>{H.e(x.get("evento", ""))}</strong><br><span style="color:{H.CINZA}">{H.e(x.get("por_que", ""))}</span></td></tr>'
+                         for x in d['destaques'])
+        blocos.append(H.secao('Agenda do dia', f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">{linhas}</table>', H.ORANGE))
     if d.get('noticias'):
-        L += ['**Notícias que importam**', '']
+        itens = []
         for n in d['noticias']:
-            tags = ' '.join(f"{k.upper()} {imp.get(v, '')}" for k, v in (n.get('impacto') or {}).items())
-            tit = f"[{n.get('titulo', '')}]({n['url']})" if n.get('url') else n.get('titulo', '')
-            L.append(f"- {tit} ({n.get('fonte', '')}){' · ' + tags if tags else ''}  \n  {n.get('por_que', '')}")
-        L.append('')
-    L += ['---', '', '👑 **A Lectnex Pro está em construção.** Entre na lista de fundadores (grátis) e vote no que vamos construir primeiro: '
-          f'[lectnex.com.br/pro]({SITE}pro.html?utm_source=newsletter&utm_medium=email)', '',
-          f'💬 Desafio diário SUBIU ou CAIU e dúvidas na [comunidade do Discord](https://discord.gg/kM6YcQA82P).', '']
-    L += [f'[Abrir o Lectnex Terminal]({SITE}) · mapa de calor, placar de vencimento, Plano do Dia e mais.', '',
-          '_Conteúdo educacional gerado com apoio de IA a partir de fontes públicas. Não é recomendação de investimento._']
-    return '\n'.join(L)
+            tags = ' '.join(f'<span style="{H.MONO}font-size:11px;font-weight:700;color:{imp.get(v, ("", H.CINZA))[1]};border:1px solid {imp.get(v, ("", H.CINZA))[1]};padding:1px 5px">{k.upper()} {imp.get(v, ("", ""))[0]}</span>'
+                            for k, v in (n.get('impacto') or {}).items())
+            tit = f'<a href="{H.e(n["url"])}" style="color:{H.NAVY};font-weight:700;text-decoration:underline">{H.e(n.get("titulo", ""))}</a>' if n.get('url') else f'<strong>{H.e(n.get("titulo", ""))}</strong>'
+            itens.append(f'{tit} <span style="color:{H.CINZA};font-size:13px">({H.e(n.get("fonte", ""))})</span> {tags}<br><span style="color:{H.CINZA};font-size:14px">{H.e(n.get("por_que", ""))}</span>')
+        blocos.append(H.secao('Notícias que importam', H.lista(itens)))
+    blocos.append(H.botao('ABRIR O TERMINAL LECTNEX →', SITE + '?utm_source=newsletter&utm_medium=email'))
+    blocos.append(H.destaque(
+        f'<div style="{H.MONO}font-size:11px;letter-spacing:1.5px;color:#00B4A2;font-weight:700">SIMULADOR DE PREGÃO · GRÁTIS</div>'
+        f'<div style="font-size:17px;font-weight:800;margin:6px 0">Treine um dia real de WIN ou WDO</div>'
+        f'<div style="font-size:14px;color:#CBD5E1;line-height:1.5">Replay com as manchetes no horário, dinheiro fictício e treinador no fim. Ranking toda semana no Discord.</div>'
+        + H.botao('JOGAR AGORA', SITE + 'simulador.html?utm_source=newsletter&utm_medium=email', H.TEAL, '#FFFFFF')))
+    blocos.append(H.paragrafo(f'👑 A Lectnex Pro está em construção. <a href="{SITE}pro.html?utm_source=newsletter&amp;utm_medium=email" style="color:{H.TEAL_D};font-weight:700">Entre na lista de fundadores (grátis)</a> e vote no que vem primeiro.', 14))
+    return H.documento(d.get('titulo', 'Leitura do Dia'), (d.get('resumo') or [''])[0][:140], blocos)
 
 
 def main():
@@ -66,6 +72,9 @@ def main():
             'X-Buttondown-Live-Dangerously': 'true'})
         with urllib.request.urlopen(req, timeout=30) as r:
             return r.status
+    if os.environ.get('RASCUNHO'):
+        st = post('draft')
+        print(f"::notice title=Newsletter em rascunho::Prévia criada no Buttondown (HTTP {st}): confira em Emails → Drafts."); return
     try:
         st = post('about_to_send')
         print(f"::notice title=Newsletter enviada::{d.get('data')} · {d.get('titulo', '')} (HTTP {st})")

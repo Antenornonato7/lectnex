@@ -149,6 +149,28 @@ def main():
           '', f'👑 A Lectnex Pro está em construção. [Entre na lista de fundadores (grátis)]({SITE}pro.html?utm_source=newsletter&utm_medium=email) e vote no que vem primeiro.']
     m += ['', f'[Agenda completa da semana]({SITE}semana/{prox.isoformat()}.html) · [Mercado Hoje]({SITE})', '', '_Conteúdo educacional. Não é recomendação de investimento._']
     texto_md = '\n'.join(m)
+    try:  # versão HTML com o modelo da marca (o markdown acima fica como reserva)
+        import email_html as H
+        cards = []
+        if ib: v, c = H.var(ibv); cards.append(('IBOVESPA', br(ib, 0), v + ' na semana', c))
+        if us: v, c = H.var(usv); cards.append(('DÓLAR', 'R$ ' + br(us, 3), v + ' na semana', c))
+        if juros: cards.append((f'PRÉ {juros[0]}', br(juros[1]) + '%', f'{"+" if juros[2] >= 0 else "−"}{abs(round(juros[2]))} bps', H.VERM if juros[2] > 0 else H.VERDE))
+        bl = [H.paragrafo(f'Os números da semana de <strong>{seg:%d/%m} a {sex:%d/%m}</strong> e o que vem pela frente.')]
+        if cards: bl.append(H.secao('Como fechou', H.numeros(cards)))
+        if tot: bl.append(H.paragrafo(f'🎯 <strong>Viés do modelo (experimental):</strong> {ok} de {tot} acertos na semana.', 14))
+        if top3: bl.append(H.secao('As notícias que mais mexeram', H.lista([f'<strong>{dt.date.fromisoformat(d):%d/%m} {H.e(mk["hora"])}</strong> · {H.e(mk["titulo"])} → {nome} <strong style="color:{H.var(v)[1]}">{H.var(v)[0]}</strong> em 30 min · <a href="{SITE}manchetes/{d}.html" style="color:{H.TEAL_D}">o dia completo</a>' for d, mk, nome, v in top3])))
+        if surp: bl.append(H.secao('Surpresas da semana', H.lista([f'<strong>{H.e(x["evento"])}:</strong> {H.e(x["resultado"])} (consenso {H.e(x.get("consenso") or "—")})' + (f'<br><span style="color:{H.CINZA};font-size:14px">{H.e(x["surpresa"]["reacao"])}</span>' if x["surpresa"].get("reacao") else '') for x in surp[:6]]), H.ORANGE))
+        if altos: bl.append(H.secao('O que move WIN, WDO e DI na próxima semana', H.lista([f'<strong>{DIAS[dt.date.fromisoformat(x["data"]).weekday()]} {H.e(x.get("hora") or "")}</strong> · {H.e(x["evento"])}' for x in altos])))
+        bl.append(H.botao('AGENDA COMPLETA DA SEMANA →', f'{SITE}semana/{prox.isoformat()}.html?utm_source=newsletter&utm_medium=email'))
+        pod = ''
+        if pod_sim: pod += '<div style="font-size:14px;margin-top:8px">' + '<br>'.join(f'{med[i]} <strong>{H.e(x["nome"])}</strong>: {brl(x["r"])}' for i, x in enumerate(pod_sim)) + '</div>'
+        bl.append(H.destaque(f'<div style="{H.MONO}font-size:11px;letter-spacing:1.5px;color:#00B4A2;font-weight:700">SIMULADOR · PREGÃO DA SEMANA</div>'
+                             '<div style="font-size:17px;font-weight:800;margin:6px 0">Segunda sai um novo pregão para treinar</div>' + pod +
+                             H.botao('JOGAR GRÁTIS', SITE + 'simulador.html?utm_source=newsletter&utm_medium=email', H.TEAL, '#FFFFFF')))
+        bl.append(H.paragrafo(f'👑 A Lectnex Pro está em construção. <a href="{SITE}pro.html?utm_source=newsletter&amp;utm_medium=email" style="color:{H.TEAL_D};font-weight:700">Entre na lista de fundadores (grátis)</a>.', 14))
+        texto_md = H.documento(titulo, f'Ibovespa {pct(ibv)} e dólar {pct(usv)} na semana' if ib and us else titulo, bl)
+    except Exception as err:
+        tg.note('warning', f'Resumo semanal: HTML falhou, vai em texto ({err.__class__.__name__}: {err})')
 
     if not ENVIAR:
         print(texto_tg); print('-----'); print(texto_md)
