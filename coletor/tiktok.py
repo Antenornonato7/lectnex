@@ -84,18 +84,26 @@ def api(caminho, token, corpo=None):
     return j.get('data') or {}
 
 
-def publicar(video_url, legenda):
-    """Direct Post por upload do arquivo. Devolve o publish_id."""
+def publicar(video_url, legenda, privacidade=None):
+    """Direct Post por upload do arquivo. Devolve (publish_id, privacidade usada).
+    App ainda não auditado: o TikTok só aceita SELF_ONLY; se recusar o público, tenta de novo como privado."""
     tok = acesso()
     info = api('post/publish/creator_info/query/', tok)
     opcoes = info.get('privacy_level_options') or ['SELF_ONLY']
-    privacidade = 'PUBLIC_TO_EVERYONE' if 'PUBLIC_TO_EVERYONE' in opcoes else opcoes[0]
+    privacidade = privacidade or ('PUBLIC_TO_EVERYONE' if 'PUBLIC_TO_EVERYONE' in opcoes else opcoes[0])
     video = urllib.request.urlopen(video_url, timeout=120).read()
     n = len(video)
-    d = api('post/publish/video/init/', tok, {
-        'post_info': {'title': legenda[:2200], 'privacy_level': privacidade, 'disable_duet': False, 'disable_comment': False,
+    corpo = lambda priv: {
+        'post_info': {'title': legenda[:2200], 'privacy_level': priv, 'disable_duet': False, 'disable_comment': False,
                       'disable_stitch': False, 'brand_content_toggle': False, 'brand_organic_toggle': False},
-        'source_info': {'source': 'FILE_UPLOAD', 'video_size': n, 'chunk_size': n, 'total_chunk_count': 1}})
+        'source_info': {'source': 'FILE_UPLOAD', 'video_size': n, 'chunk_size': n, 'total_chunk_count': 1}}
+    try:
+        d = api('post/publish/video/init/', tok, corpo(privacidade))
+    except RuntimeError as e:
+        if privacidade == 'SELF_ONLY' or 'unaudited' not in str(e).lower():
+            raise
+        privacidade = 'SELF_ONLY'
+        d = api('post/publish/video/init/', tok, corpo(privacidade))
     req = urllib.request.Request(d['upload_url'], data=video, method='PUT',
                                  headers={'Content-Type': 'video/mp4', 'Content-Length': str(n), 'Content-Range': f'bytes 0-{n - 1}/{n}'})
     try:
@@ -133,10 +141,28 @@ def teste():
     ig.note('notice', f'TikTok: @{info.get("creator_username")} · privacidade permitida: {info.get("privacy_level_options")}')
 
 
+def teste_post():
+    """Publica o Reels do dia (Kit) como "só eu", para conferir a publicação sem aparecer para o público."""
+    import datetime as dt
+    dia = os.environ.get('KIT_DIA') or dt.datetime.now(ig.BRT).date().isoformat()
+    kit, _ = ig.gh_ler(f'kit/{dia}/kit.json')
+    rl = ((kit or {}).get('reels') or {}).get('reel')
+    if not rl:
+        raise RuntimeError(f'Sem Reels no kit de {dia}')
+    pid, priv = publicar(ig.RAW + f'kit/{dia}/reel.mp4', rl.get('legenda', ''), 'SELF_ONLY')
+    ig.note('notice', f'TikTok: Reels de {dia} enviado como {priv} (publish_id {pid}). Confira no app do TikTok, aba de vídeos privados.')
+    try:
+        ig.tg('sendMessage', chat_id=ig.admin(), text=f'🎵 Teste do TikTok: o Reels de hoje foi enviado para a conta @lectnex como PRIVADO (só você vê). Confira no app do TikTok.')
+    except Exception:
+        pass
+
+
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'teste'
     if cmd == 'link':
         link()
+    elif cmd == 'teste-post':
+        teste_post()
     elif cmd == 'conectar':
         conectar(os.environ.get('TIKTOK_CODE') or sys.argv[2])
     else:
