@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T18:18-03:00",
+  "atualizado_em": "2026-11-17T18:20-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     169816.0
+     169811.0
     ]
    ]
   },
@@ -796,11 +796,11 @@
     ],
     [
      "18:15",
-     5.7778
+     5.7741
     ],
     [
-     "18:18",
-     5.7756
+     "18:20",
+     5.7741
     ]
    ]
   },
@@ -1681,7 +1681,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.0
    },
    {
     "hora": "17:52",
@@ -1694,7 +1694,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.01
+    "dolar30": -0.03
    },
    {
     "hora": "18:00",
@@ -2692,7 +2692,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T18:18-03:00",
+ "atualizado_em": "2026-11-17T18:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2706,6 +2706,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Petróleo fecha em alta com ataques a petroleiros no Estreito de Ormuz",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdkZuT0dPQU5Yc2pfY01RWXcwVF94ZHktamtjcm5qWWp2UXpiamNNOTZoelo2SjFBM1lIWlJhRm1WVWtjWGtaeTRuM0xqcnVQUjBVV3FGd21nRUwwOUplN2NrWDNyVGowN0QzbFE4NkJRdWtuTUpwcm5iZl9xVU8yWWlBTm9aVWJ2WEZXbENjZHM0dWlGUkg1NWh0YTJkeGFRWkpETFNMSkpEX2dzTGxVcVRoTjFJbXhkVHpUVW51VQ?oc=5",
+   "publicado": "2026-11-17T18:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Você precisa mesmo ter ações, dólar e títulos IPCA+ na sua carteira?",
    "fonte": "Folha",
@@ -2797,7 +2809,7 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar tem leve alta diante de cautela com política fiscal brasileira",
+   "titulo": "Dólar tem leve alta diante de cautela com política fiscal brasileira | Finanças",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeF9UdU1lQXJPbUdaMmtndl9sOHFtQUxQbExUTFRWeVp4YXNGOVpQMzlFOTBlMVVneTZlTElQaEVsanJSRHlLTVMzUFgtZF95WTZzZHV4NWR2dUJaRmN6dXVyVlp2SnNhR0dQRmZYN25feDNlNm4yUzlnaTczTlhrZVc1TUZRMUVSaFZvZlFxUFEzTVlJTnVReTF1eDhpcHVtN0F0Sl9QTXZNSzN5SjZ0aWNfOVdTcUpTWHNoLXhRQ2hTUThE?oc=5",
    "publicado": "2026-11-17T17:21-03:00",
@@ -2840,17 +2852,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Até onde o dólar pode subir? Por que o real é a moeda que mais perdeu valor desde a reeleição de Lula",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ate-onde-o-dolar-pode-subir-por-que-o-real-e-a-moeda-que-mais-perdeu-valor-desde-a-reeleicao-de-lula.shtml",
-   "publicado": "2026-11-17T17:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
