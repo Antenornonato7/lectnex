@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T18:00-03:00",
+  "atualizado_em": "2026-11-17T18:03-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     169807.0
+     169787.0
     ]
    ]
   },
@@ -784,7 +784,11 @@
     ],
     [
      "18:00",
-     5.7721
+     5.7741
+    ],
+    [
+     "18:03",
+     5.7736
     ]
    ]
   },
@@ -1611,7 +1615,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": 0.02
    },
    {
     "hora": "17:32",
@@ -1624,7 +1628,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": 0.02
    },
    {
     "hora": "17:36",
@@ -1637,7 +1641,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.03
    },
    {
     "hora": "17:47",
@@ -2645,7 +2649,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T18:00-03:00",
+ "atualizado_em": "2026-11-17T18:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2808,17 +2812,6 @@
    ]
   },
   {
-   "titulo": "Ibovespa vai mudar: índice passará por segundo grande alteração em quase 60 anos",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhBREZ6UnMxbEtvYXdQcmJuVWxBZkY0UnVlRzZMVjVrYW13WjVvRzhBTHpuSHFZSlBxLVk1MlFLNzU4VWRvcDNNbld0ZkhYOWduWk9QUmJ4WFFtejJoeFR1dHl4ZFhFUTJHaG1DY1ZwVmplcXcySmJJVDdMYzJNT05OVGViODV2bHhkZEpkRFBBRGUxQzBtSFN5SFZsTGV3Yk5ZMkd4dXdjcno3LVVTbjF5bnoyUQ?oc=5",
-   "publicado": "2026-11-17T17:01-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Vale tem contrato de 20 anos de compra de minério da Cedro",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/vale-tem-contrato-de-20-anos-de-compra-de-minerio-da-cedro.shtml",
@@ -2843,6 +2836,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "B3 prepara BDR da Anthropic para estreia simultânea ao IPO na Nasdaq",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc3ZRV0V2VXhIdjhPRjJqMk12QnN5YXpKWlpzV2VzZjJFZUtzaUU1R1VUaFRVYUU3SXl4bllvT1kwTGRxSE9zQWo1ZTgtdDlpMWo4S3E0MGV4Q1Z6MXp4cGRBUjAySndIWExWM2ZRVng0VkM2cWh4dE01dWpaa1QtaURlTFZOM3RVRFBJcTFRT3dnMGNoNG1lYXZkREZxaVhrUF9JaWE5N0RsTmd3S2prbzZucEdpeGFjVmw3MjBR?oc=5",
+   "publicado": "2026-11-17T16:04-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
   }
  ]
 }
