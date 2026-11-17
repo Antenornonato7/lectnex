@@ -118,7 +118,8 @@
    },
    "nota": "Consenso +0,2% m/m (núcleo ex-autos +0,4%, ant. +0,9%). Consumo forte reforça a aposta de alta do Fed em dezembro.",
    "tipo": "varejo-eua",
-   "consenso": "0,2%"
+   "consenso": "0,2%",
+   "resultado": "0,2%"
   },
   {
    "data": "2026-11-17",
@@ -145,7 +146,12 @@
    },
    "nota": "Atividade da indústria americana (Fed); consenso do calendário do Yahoo Finance.",
    "tipo": "producao-industrial-eua",
-   "consenso": "0,1%"
+   "consenso": "0,1%",
+   "resultado": "-0,4%",
+   "surpresa": {
+    "direcao": "abaixo",
+    "reacao": "Atividade industrial mais fraca que o esperado costuma aliviar os juros dos Treasuries e tirar força do dólar global, com efeito em geral moderado no WDO e no DI."
+   }
   },
   {
    "data": "2026-11-17",
