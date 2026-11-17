@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T11:20-03:00",
+  "atualizado_em": "2026-11-17T11:23-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -59,7 +59,11 @@
     ],
     [
      "11:05",
-     170636.0
+     170568.0
+    ],
+    [
+     "11:08",
+     170561.0
     ]
    ]
   },
@@ -180,7 +184,11 @@
     ],
     [
      "11:20",
-     5.7761
+     5.7798
+    ],
+    [
+     "11:23",
+     5.7822
     ]
    ]
   },
@@ -349,7 +357,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.38,
+    "ibov30": 0.34,
     "dolar30": -0.58
    },
    {
@@ -363,7 +371,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.38,
+    "ibov30": 0.34,
     "dolar30": -0.58
    },
    {
@@ -379,7 +387,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": 0.38,
+    "ibov30": 0.34,
     "dolar30": -0.58
    },
    {
@@ -435,7 +443,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.41
+    "dolar30": -0.35
    },
    {
     "hora": "10:53",
@@ -449,7 +457,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.41
+    "dolar30": -0.35
    },
    {
     "hora": "10:54",
@@ -463,7 +471,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.41
+    "dolar30": -0.35
    },
    {
     "hora": "11:00",
@@ -1081,7 +1089,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T11:20-03:00",
+ "atualizado_em": "2026-11-17T11:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1096,6 +1104,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
+   "publicado": "2026-11-17T11:20-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
    "fonte": "Folha",
@@ -1114,18 +1134,6 @@
    "publicado": "2026-11-17T11:00-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
-   "publicado": "2026-11-17T10:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
@@ -1201,6 +1209,17 @@
    ]
   },
   {
+   "titulo": "Tempo real: Bolsa recupera os 170 mil pontos e dólar passa dos R$ 5,80; acompanhe",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRzVxdzVUblhqOVQ4WUQ2ZWVaUy1MR0VxYVlyUlFvWC02czFkN2l2VUxPakNQSC1EVHVBZ0lyRjFNcmhWRmE5b0FLSmdYSUFubU9VdjZEOVVkU05YQjJYSnAyUmdlRnM3SGQxck5oQ2pOYXJtei0tOWM5U0VLTEZabU5nNlhWbmRtWEUydmRoZ3dTSWxSTzVFY2VBTU1oNG42bGNSZXh5V1RHcjdSTGs4?oc=5",
+   "publicado": "2026-11-17T10:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
@@ -1246,18 +1265,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar abre em alta e chega a R$ 5,79 com mercado à espera de votação de projeto fiscal no Senado",
-   "fonte": "Folha",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWWFFank0UVNNUk1WT1IwSEJacjJrb3loRTc3SVRaMnl6SUd4aVFaS1JSZXIwU1dmXzV0azgzXzYwSHdQWWNEYjNYUHloNlV0bDhuTkdIODFMYWtGeHdva3hBQmg3YXNBWk9PNjBmc01xam5nbFZiUTZnYUF6R1h5WjFES3RhZTBQY0xKaXNNaENRWTQ4UERETUNzYlJ5b0Z5VEtmcURGaUtsdG45RnkzQ3J2TW91dFphN1dURHhCdWFjME9pSU9nRXZIbVh0OUw1ck5vNGtyOWZPeEZ5bjE4?oc=5",
-   "publicado": "2026-11-17T09:47-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
