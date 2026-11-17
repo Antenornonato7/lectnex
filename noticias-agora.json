@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T11:00-03:00",
+  "atualizado_em": "2026-11-17T11:03-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -43,7 +43,11 @@
     ],
     [
      "10:45",
-     170091.0
+     170394.0
+    ],
+    [
+     "10:48",
+     170361.0
     ]
    ]
   },
@@ -148,7 +152,11 @@
     ],
     [
      "11:00",
-     5.7631
+     5.7702
+    ],
+    [
+     "11:03",
+     5.7694
     ]
    ]
   },
@@ -275,7 +283,7 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": 0.1,
+    "ibov30": 0.28,
     "dolar30": -0.14
    },
    {
@@ -288,7 +296,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.1,
+    "ibov30": 0.27,
     "dolar30": -0.09
    },
    {
@@ -318,7 +326,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.61
    },
    {
     "hora": "10:38",
@@ -332,7 +340,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.61
    },
    {
     "hora": "10:39",
@@ -1025,7 +1033,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T11:00-03:00",
+ "atualizado_em": "2026-11-17T11:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1040,6 +1048,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
+   "publicado": "2026-11-17T11:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Lisa Cook lawyer signals Fed gov won't attend Trump committee's hearing",
    "fonte": "CNBC",
@@ -1168,17 +1187,6 @@
    "ativos": [
     "WIN",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
-   "publicado": "2026-11-17T10:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
