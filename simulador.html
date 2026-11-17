@@ -59,6 +59,7 @@
                 <label class="flex flex-col gap-1"><span class="term-label">Contrato</span><select id="pg-ativo" class="lx-input !py-2"><option value="win">WIN · mini índice</option><option value="wdo">WDO · mini dólar</option></select></label>
                 <label class="flex flex-col gap-1"><span class="term-label">Capital (R$)</span><input id="pg-cap" type="number" min="500" step="500" value="5000" class="lx-input !py-2 w-28"></label>
                 <label class="flex flex-col gap-1"><span class="term-label">Limite de perda (%)</span><input id="pg-lim" type="number" min="0.5" step="0.5" value="2" class="lx-input !py-2 w-24"></label>
+                <div class="flex flex-col gap-1"><span class="term-label">Sem internet</span><button type="button" id="pg-off" class="pg-btn !py-2 min-h-[38px]"><i class="ph-bold ph-download-simple"></i><span>TREINAR OFFLINE</span></button></div>
             </div>
         </div>
 
@@ -153,7 +154,9 @@
                 reset();
             });
         }
+        const CAPA = $('pg-capa').innerHTML;
         function reset() {
+            $('pg-capa').innerHTML = CAPA;
             i = 0; pos = 0; medio = 0; realizado = 0; custos = 0; ops = []; aberta = null; pico = 0; maxDD = 0; bloqueado = false; fim = false; entradas = [];
             $('pg-stop').value = SPEC[ativo].stop; $('pg-stop').step = SPEC[ativo].tick;
             $('pg-feed').innerHTML = `<li class="text-slate-500 text-xs">${origem[dia] === 'sim' ? 'Este pregão é do histórico e não tem manchetes gravadas: só o gráfico. Os pregões marcados "com manchetes" trazem as notícias no horário.' : 'As notícias de alto impacto aparecem aqui conforme o relógio anda.'}</li>`;
@@ -353,11 +356,25 @@
             return new Promise(res => cv.toBlob(res, 'image/png'));
         }
 
+        // Treinar offline: baixa todos os pregões uma vez; o service worker (sw.js) guarda cada arquivo e a página funciona sem internet.
+        const offTxt = t => { $('pg-off').querySelector('span').textContent = t; };
+        async function baixarTudo(silencioso) {
+            if (!('serviceWorker' in navigator) || !navigator.serviceWorker.controller) { if (!silencioso) offTxt('ABRA DE NOVO E TENTE'); return; }
+            let ok = 0; const fila = dias.slice();
+            if (!silencioso) offTxt(`BAIXANDO 0/${fila.length}`);
+            const um = async () => { while (fila.length) { const d = fila.shift(); try { const r = await fetch(`data/${origem[d]}/${d}.json`); if (r.ok) ok++; } catch (e) { } if (!silencioso) offTxt(`BAIXANDO ${ok}/${dias.length}`); } };
+            await Promise.all([um(), um(), um(), um()]);
+            if (ok === dias.length) { guardar('lx-sim-offline', Date.now()); offTxt(`✓ ${ok} PREGÕES OFFLINE`); $('pg-off').classList.add('pg-on'); if (!silencioso) LX.track('simulador_offline', { dias: ok }); }
+            else if (!silencioso) offTxt(navigator.onLine ? 'TENTE DE NOVO' : 'SEM INTERNET AGORA');
+        }
+        $('pg-off').onclick = () => baixarTudo(false);
+        if (ler('lx-sim-offline')) { offTxt('✓ PREGÕES OFFLINE'); $('pg-off').classList.add('pg-on'); }
+
         $('pg-play').onclick = () => rodando ? pausar() : tocar();
         document.querySelectorAll('.pg-vel').forEach(b => b.onclick = () => { vel = +b.dataset.vel; document.querySelectorAll('.pg-vel').forEach(x => x.classList.toggle('pg-on', x === b)); if (rodando) { clearInterval(timer); timer = setInterval(passo, vel); } });
         $('pg-compra').onclick = () => ordem(1); $('pg-venda').onclick = () => ordem(-1);
         $('pg-zera').onclick = () => { if (pos) executar(-pos, preco(), 'manual'); };
-        $('pg-dia').onchange = () => carregarDia($('pg-dia').value); $('pg-ativo').onchange = () => carregarDia(dia);
+        $('pg-dia').onchange = () => carregarDia($('pg-dia').value).catch(() => { $('pg-capa').classList.remove('hidden'); $('pg-capa').innerHTML = '<span class="text-sm">Este pregão não está guardado no aparelho. Escolha outro ou conecte-se à internet.</span>'; }); $('pg-ativo').onchange = () => carregarDia(dia);
         $('pg-cap').oninput = $('pg-lim').oninput = painel;
         let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(desenhar, 150); });
         document.addEventListener('keydown', e => {
@@ -377,7 +394,9 @@
             $('pg-dia').innerHTML = dias.map((d, n) => `<option value="${d}">${SEMANA && d === q.get('dia') ? '🎮 Pregão da semana' : `Pregão ${n + 1}${origem[d] === 'dias' ? ' · com manchetes' : ''}`}</option>`).join('');
             if (SEMANA) { const b = document.createElement('div'); b.className = 'mt-4 p-3 bg-[#5865F2]/10 border-l-4 border-[#5865F2] text-sm flex flex-wrap items-center gap-x-3 gap-y-1'; b.innerHTML = '<i class="ph-fill ph-discord-logo text-[#5865F2] text-xl"></i><span><strong>Desafio da semana:</strong> todo mundo joga este mesmo pregão. No fim, copie o resultado e cole no canal #ranking-simulador do Discord. Ranking na sexta.</span>'; document.querySelector('main > div').after(b); }
             const ini = dias.includes(q.get('dia')) ? q.get('dia') : dias[Math.floor(Math.random() * dias.length)];
-            $('pg-dia').value = ini; carregarDia(ini);
+            $('pg-dia').value = ini; carregarDia(ini).catch(() => { $('pg-capa').innerHTML = '<span class="text-sm">Este pregão não está guardado no aparelho. Escolha outro ou conecte-se à internet.</span>'; });
+            const instalado = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+            if (ler('lx-sim-offline') || instalado) setTimeout(() => baixarTudo(true), 4000);  // mantém os pregões novos guardados
         }).catch(() => { $('pg-capa').innerHTML = '<span class="text-sm">Não consegui carregar os pregões agora. Tente de novo em instantes.</span>'; });
     })();
     </script>
