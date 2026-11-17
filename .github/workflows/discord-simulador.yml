@@ -1,0 +1,26 @@
+# Desafio semanal do Simulador de pregão no Discord: segunda 09h35 posta o pregão da semana, sexta 18h30 o ranking (coletor/relogio.py).
+name: Discord simulador
+run-name: Discord simulador ${{ inputs.acao }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      acao:
+        type: choice
+        options: [semana, ranking, quem]
+        default: semana
+
+permissions:
+  contents: write
+
+jobs:
+  simulador:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Simulador ${{ inputs.acao }}
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 coletor/discord_simulador.py ${{ inputs.acao }}
