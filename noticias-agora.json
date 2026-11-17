@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T17:16-03:00",
+  "atualizado_em": "2026-11-17T17:19-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     169351.0
+     169486.0
     ]
    ]
   },
@@ -748,11 +748,11 @@
     ],
     [
      "17:15",
-     5.78
+     5.779
     ],
     [
-     "17:16",
-     5.78
+     "17:19",
+     5.7785
     ]
    ]
   },
@@ -1389,7 +1389,7 @@
      "VALE3"
     ],
     "ibov30": null,
-    "dolar30": 0.02
+    "dolar30": -0.01
    },
    {
     "hora": "17:00",
@@ -1429,6 +1429,19 @@
     "tickers": [
      "B3SA3"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:14",
+    "titulo": "Até onde o dólar pode subir? Por que o real é a moeda que mais perdeu valor desde a reeleição de Lula",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ate-onde-o-dolar-pode-subir-por-que-o-real-e-a-moeda-que-mais-perdeu-valor-desde-a-reeleicao-de-lula.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -2334,6 +2347,17 @@
    "tickers": [
     "B3SA3"
    ]
+  },
+  {
+   "titulo": "Até onde o dólar pode subir? Por que o real é a moeda que mais perdeu valor desde a reeleição de Lula",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ate-onde-o-dolar-pode-subir-por-que-o-real-e-a-moeda-que-mais-perdeu-valor-desde-a-reeleicao-de-lula.shtml",
+   "publicado": "2026-11-17T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2363,7 +2387,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T17:16-03:00",
+ "atualizado_em": "2026-11-17T17:19-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2373,6 +2397,17 @@
   "Folha"
  ],
  "noticias": [
+  {
+   "titulo": "Até onde o dólar pode subir? Por que o real é a moeda que mais perdeu valor desde a reeleição de Lula",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ate-onde-o-dolar-pode-subir-por-que-o-real-e-a-moeda-que-mais-perdeu-valor-desde-a-reeleicao-de-lula.shtml",
+   "publicado": "2026-11-17T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
    "fonte": "Folha",
