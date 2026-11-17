@@ -143,7 +143,7 @@ def textos(f):
     chave, pagina, _, gancho, promessa, tag = f
     url = 'lectnex.com.br/' + pagina.split('#')[0].replace('index.html', '')
     legenda = '\n'.join([gancho, '', promessa, '', f'👉 Grátis e sem cadastro: {url}',
-                         f'💬 Comunidade de traders no Discord: {DISCORD}', '👑 Seja fundador da Lectnex Pro (lista de espera): lectnex.com.br/pro', '',
+                         f'💬 Comunidade de traders no Discord: {DISCORD}', '👑 Lista de fundadores da Lectnex Pro (grátis): lectnex.com.br/pro', '',
                          'Salve para usar no próximo pregão. Conteúdo educacional, não é recomendação.',
                          f'#daytrade #miniindice #b3 #trader {tag}'])
     x = '\n\n'.join([gancho, promessa, f'Grátis, sem cadastro 👇\nhttps://{url}',

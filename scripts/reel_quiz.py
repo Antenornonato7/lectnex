@@ -164,7 +164,7 @@ class Quiz(Reel):
 def textos(q):
     legenda = '\n'.join([f'DESAFIO: {len(q.mks)} manchetes reais de hoje ({q.dia:%d/%m}). O {q.nome} subiu ou caiu nos 30 minutos seguintes? 🤔', '',
                          'Pause, chute e só depois veja a resposta. Comenta quantas você acertou 👇', '',
-                         f'💬 Desafio todo dia na comunidade do Discord: {DISCORD}', '👑 Seja fundador da Lectnex Pro (lista de espera): lectnex.com.br/pro', 'Conteúdo educacional, não é recomendação. lectnex.com.br',
+                         f'💬 Desafio todo dia na comunidade do Discord: {DISCORD}', '👑 Lista de fundadores da Lectnex Pro (grátis): lectnex.com.br/pro', 'Conteúdo educacional, não é recomendação. lectnex.com.br',
                          '#daytrade #miniindice #minidolar #ibovespa #trader #b3'])
     mk = next((x for x in q.mks if not DICA.search(x['titulo'])), q.mks[0])
     x = '\n\n'.join([f'Desafio de hoje 🎯 {mk["hora"]}: "{mk["titulo"][:120]}"',

@@ -144,7 +144,7 @@ def textos(a):
     t = a.t
     leg = '\n'.join([f'📚 Dicionário do trader #{a.n}: {t["t"]}', '', a.d, ''] + ([f'Na prática: {a.x}', ''] if a.x else []) +
                     ['💾 Salve para revisar e mande para quem está começando.', 'Todo dia útil um termo novo: siga para não perder.', '',
-                     f'💬 Dúvidas? Comunidade no Discord: {DISCORD}', '👑 Seja fundador da Lectnex Pro (lista de espera): lectnex.com.br/pro', 'Glossário completo e grátis: lectnex.com.br/glossario', '',
+                     f'💬 Dúvidas? Comunidade no Discord: {DISCORD}', '👑 Lista de fundadores da Lectnex Pro (grátis): lectnex.com.br/pro', 'Glossário completo e grátis: lectnex.com.br/glossario', '',
                      'Conteúdo educacional, não é recomendação.',
                      '#educacaofinanceira #mercadofinanceiro #daytrade #bolsadevalores #investimentos #trader'])
     corpo = a.d if len(a.d) <= 170 else a.d[:167].rsplit(' ', 1)[0] + '…'

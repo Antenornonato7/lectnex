@@ -45,7 +45,7 @@ def corpo(d):
             tit = f"[{n.get('titulo', '')}]({n['url']})" if n.get('url') else n.get('titulo', '')
             L.append(f"- {tit} ({n.get('fonte', '')}){' · ' + tags if tags else ''}  \n  {n.get('por_que', '')}")
         L.append('')
-    L += ['---', '', '👑 **A Lectnex Pro está chegando.** Entre na lista de fundadores, ganhe acesso antecipado e vote no que vamos construir primeiro: '
+    L += ['---', '', '👑 **A Lectnex Pro está em construção.** Entre na lista de fundadores (grátis) e vote no que vamos construir primeiro: '
           f'[lectnex.com.br/pro]({SITE}pro.html?utm_source=newsletter&utm_medium=email)', '',
           f'💬 Desafio diário SUBIU ou CAIU e dúvidas na [comunidade do Discord](https://discord.gg/kM6YcQA82P).', '']
     L += [f'[Abrir o Lectnex Terminal]({SITE}) · mapa de calor, placar de vencimento, Plano do Dia e mais.', '',
