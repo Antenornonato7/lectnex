@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T12:30-03:00",
+  "atualizado_em": "2026-11-17T12:33-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -115,7 +115,11 @@
     ],
     [
      "12:15",
-     171573.0
+     171535.0
+    ],
+    [
+     "12:18",
+     171524.0
     ]
    ]
   },
@@ -292,7 +296,11 @@
     ],
     [
      "12:30",
-     5.7906
+     5.7951
+    ],
+    [
+     "12:33",
+     5.7943
     ]
    ]
   },
@@ -643,7 +651,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.3,
     "dolar30": 0.11
    },
    {
@@ -664,6 +672,19 @@
     "titulo": "Relator vai alterar projeto que regula mercados digitais para restringir empresas fiscalizadas pelo Cade",
     "fonte": "Folha",
     "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/relator-vai-alterar-projeto-que-regula-mercados-digitais-para-restringir-empresas-fiscalizadas-pelo-cade.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:30",
+    "titulo": "Ministro da Fazenda defende disciplina fiscal e diz que meta para 2027 não é ilusória",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ministro-da-fazenda-defende-disciplina-fiscal-e-diz-que-meta-para-2027-nao-e-ilusoria.shtml",
     "impacto": "medio",
     "ativos": [
      "DI"
@@ -1316,6 +1337,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ministro da Fazenda defende disciplina fiscal e diz que meta para 2027 não é ilusória",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ministro-da-fazenda-defende-disciplina-fiscal-e-diz-que-meta-para-2027-nao-e-ilusoria.shtml",
+   "publicado": "2026-11-17T12:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1345,7 +1377,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T12:30-03:00",
+ "atualizado_em": "2026-11-17T12:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1360,6 +1392,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ministro da Fazenda defende disciplina fiscal e diz que meta para 2027 não é ilusória",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ministro-da-fazenda-defende-disciplina-fiscal-e-diz-que-meta-para-2027-nao-e-ilusoria.shtml",
+   "publicado": "2026-11-17T12:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Relator vai alterar projeto que regula mercados digitais para restringir empresas fiscalizadas pelo Cade",
    "fonte": "Folha",
@@ -1474,17 +1517,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje oscila após superar os R$ 5,81",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZlBOVWFwMmt2dkVWclZmSE5SbGVjSDJPSHRFeXlJRnNvV2hzV2xsNlNzaHVIREpRcFphNF9EZUttMWhQZlZvTUUyMmtudFYzUGtDSWlJUUFmUWpWdDlIRFpXcjFjYjN1d0hkQXBUdzJGWlNtUEN5VnlxS0pSU3B1Nm9VcE82aW1IZUIxcHBpZjMzWmotRVNGZHJNU23SAaIBQVVfeXFMT2phWEdDeHN5WHNES0ZIdjVHbklsWFRnc3FQcUNaWXVYYllra0VjcHhpNlRUSUh4ei1kU2dBX0N0LVpfYmtLRDl0Umk3VmEybDI0VGU2SUdHNHR2Wm5Rby1HVWZyMTQ0cHAzQU1GenNZbWhTcmx1YzlQdzJJMVZ5Slh1M21JUW9jN0djdWh5cnFkWVBZSVVZcGxIUGRQVjdMWUlR?oc=5",
-   "publicado": "2026-11-17T11:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
