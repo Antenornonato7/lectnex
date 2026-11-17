@@ -454,6 +454,10 @@ def enviar_x(texto, imagem=None):
     tg('sendMessage', chat_id=admin(), text=texto, disable_web_page_preview=True)
 
 
+ORIGENS = {'convite-simulador': 'convite no simulador', 'convite-risco': 'convite nas calculadoras', 'convite-leitura': 'convite nas páginas de leitura',
+           'site': 'formulários do site (rodapé e páginas)', 'lista-pro': 'página da Lectnex Pro'}
+
+
 def relatorio_redes():
     """Relatório semanal no Telegram privado (domingo): seguidores no Instagram, Facebook e Discord com a variação da semana,
     e os posts dos últimos 7 dias ordenados por alcance, para saber o que repetir."""
@@ -492,6 +496,8 @@ def relatorio_redes():
             atual['lista_pro'] = bd('tag=lista-pro')
             for t in ('pro-academia', 'pro-ferramentas', 'pro-comunidade'):
                 atual[t] = bd(f'tag={t}')
+            for t in ORIGENS:
+                atual['o:' + t] = bd(f'tag={t}')
     except Exception as e:
         linhas.append(f'Buttondown: sem dados ({str(e)[:80]})')
     ant = hist.get('ultimo', {})
@@ -506,6 +512,15 @@ def relatorio_redes():
     if votos and sum(votos.values()):
         rot = {'pro-academia': 'trilhas', 'pro-ferramentas': 'ferramentas', 'pro-comunidade': 'comunidade'}
         topo.append('  ↳ quer mais: ' + ' · '.join(f'{rot[k]} {v}' for k, v in sorted(votos.items(), key=lambda x: -x[1])))
+    orig = [(t, atual.get('o:' + t)) for t in ORIGENS if atual.get('o:' + t) is not None]
+    if orig and sum(v for _, v in orig):
+        topo += ['', '<b>De onde vêm os inscritos</b> (total · na semana)']
+        for t, v in sorted(orig, key=lambda x: -((x[1] or 0) - (ant.get('o:' + x[0]) or 0) if ant.get('o:' + x[0]) is not None else x[1] or 0)):
+            dl = v - ant['o:' + t] if ant.get('o:' + t) is not None else None
+            topo.append(f'• {ORIGENS[t]}: <b>{v}</b>' + (f' · {"+" if dl >= 0 else ""}{dl}' if dl is not None else ''))
+        melhor = max(orig, key=lambda x: (x[1] or 0) - (ant.get('o:' + x[0]) or 0))
+        if ant and (melhor[1] or 0) - (ant.get('o:' + melhor[0]) or 0) > 0:
+            topo.append(f'💡 Quem mais trouxe inscritos nesta semana: {ORIGENS[melhor[0]]}.')
     # posts da semana por alcance
     posts = []
     try:
