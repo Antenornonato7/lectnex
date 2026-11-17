@@ -222,6 +222,10 @@ def pagina(m, datas):
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">{cards}</div>
             {graf}
             <a href="hoje.html?dia={m["data"]}" class="inline-flex items-center gap-1 font-mono text-xs text-lect-teal hover:underline">Ver o gráfico interativo deste dia <i class="ph-bold ph-arrow-right"></i></a>
+            <section class="relative overflow-hidden p-5 bg-lect-navy text-white border-l-4 border-lect-teal flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div><span class="font-mono text-[10px] font-bold tracking-widest text-lect-tealLight">SIMULADOR DE PREGÃO · GRÁTIS</span><h2 class="font-display font-bold text-lg mt-1">Você teria lucrado neste dia?</h2><p class="text-sm text-slate-300 mt-1">Jogue este pregão em replay, com estas manchetes aparecendo no horário. Dinheiro fictício, e no fim o seu resultado e os erros de risco.</p></div>
+                <div class="flex gap-2 shrink-0 font-mono text-xs font-bold"><a href="simulador.html?dia={m["data"]}&amp;ativo=win" class="px-4 py-3 bg-lect-teal hover:bg-lect-tealDark inline-flex items-center gap-1.5"><i class="ph-fill ph-play"></i>JOGAR WIN</a><a href="simulador.html?dia={m["data"]}&amp;ativo=wdo" class="px-4 py-3 border border-white/30 hover:border-lect-tealLight inline-flex items-center gap-1.5"><i class="ph-fill ph-play"></i>JOGAR WDO</a></div>
+            </section>
             {f'<section><h2 class="font-display font-bold text-lg mb-3">As 3 maiores reações em 30 minutos</h2><ol class="space-y-3">{destaque}</ol></section>' if destaque else ''}
             {f'<section><h2 class="font-display font-bold text-lg mb-3">Todas as manchetes do dia</h2><ol class="term-panel divide-y divide-slate-200 dark:divide-lect-borderDark">{lista}</ol></section>' if lista else ''}
             <p class="text-[11px] text-slate-500">Variação do último preço antes da manchete até 30 minutos depois (cotações de 5 min do Yahoo Finance, Ibovespa e dólar à vista). O movimento seguinte não prova que a notícia foi a causa: o mercado reage a muitas coisas ao mesmo tempo. Conteúdo educacional, não é recomendação de investimento.</p>
