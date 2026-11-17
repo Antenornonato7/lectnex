@@ -1,9 +1,10 @@
 /* Lectnex — service worker: abre rápido e funciona com internet ruim.
    Páginas e dados: rede primeiro (sempre o mais novo), cache se a rede falhar.
    CSS/JS/ícones/imagens locais: cache primeiro, atualizando por trás (os arquivos têm ?v= de versão).
-   Outros domínios (TradingView, APIs) passam direto, sem cache. */
-const CACHE = 'lectnex-v2';
-const PAGINAS = ['./', 'index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'sobre.html', 'glossario.html'];
+   Outros domínios (TradingView, APIs) passam direto, sem cache.
+   Simulador: a página e os índices entram na instalação; os pregões são guardados quando a pessoa toca em "Treinar offline". */
+const CACHE = 'lectnex-v3';
+const PAGINAS = ['./', 'index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'sobre.html', 'glossario.html', 'simulador.html', 'data/dias/indice.json', 'data/sim/indice.json'];
 
 self.addEventListener('install', e => {
     e.waitUntil(caches.open(CACHE).then(c => c.addAll(PAGINAS)).catch(() => { }).then(() => self.skipWaiting()));
