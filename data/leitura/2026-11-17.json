@@ -1,0 +1,160 @@
+{
+ "tipo": "pregao",
+ "data": "2026-11-17",
+ "gerado_em": "2026-11-17T08:20:00-03:00",
+ "titulo": "Fiscal no Senado e Nvidia à noite; dólar parte de R$ 5,77",
+ "resumo": [
+  "No último pregão (segunda, 16), o Ibovespa caiu 1,83%, para a casa dos 169 mil pontos, e o dólar à vista subiu 2,15%, a R$ 5,77, maior nível desde abril de 2025, segundo o InfoMoney; o motivo citado foi o risco fiscal, com os juros futuros em alta.",
+  "O Senado vota hoje os quatro destaques da oposição ao ajuste fiscal (PLP 299/2026), cujo texto-base passou por 45 a 31; o governo estima melhora de até R$ 56,1 bi nas contas de 2027, e o desfecho mexe direto no DI longo e no dólar.",
+  "Às 10h, o ministro Dario Durigan vai à CAE explicar a alíquota de referência de 11,3% da CBS para 2027 recomendada pelo TCU; segundo o requerimento, somada ao IBS ela fica perto de 30%, acima da trava de 26,5%, tema sensível para a curva.",
+  "Lá fora, o futuro do S&P 500 cai 0,35% e o do Nasdaq 0,36% às 7h30, com EWZ −0,52% e VIX +3,10%: a nova regra americana contra o acesso da China a chips de IA derrubou a Ásia, e o balanço da Nvidia sai depois do fechamento.",
+  "Às 10h30 saem as vendas no varejo dos EUA de outubro (consenso +0,2%, anterior +0,8%); consumo forte reforça a aposta de alta do Fed em dezembro e tende a fortalecer o dólar global."
+ ],
+ "pontos": [
+  {
+   "titulo": "Senado vota destaques do ajuste fiscal",
+   "texto": "Quatro destaques podem alterar o PLP 299; desfecho mexe no DI longo e no dólar, que fechou a R$ 5,77."
+  },
+  {
+   "titulo": "Varejo dos EUA às 10h30",
+   "texto": "Consenso +0,2% em outubro; dado forte reforça alta do Fed em dezembro e pressiona o WDO."
+  },
+  {
+   "titulo": "Nvidia divulga balanço após o fechamento",
+   "texto": "Futuros de NY já recuam antes do resultado; apetite a risco global pesa no WIN ao longo do dia."
+  }
+ ],
+ "termometro": {
+  "win": {
+   "leitura": "bearish",
+   "motivo": "S&P fut. −0,35%, EWZ −0,52% e VIX +3,10% às 7h30, com Ásia em queda pelas restrições a chips; em linha com o sinal quantitativo. Aprovação limpa do fiscal no Senado pode aliviar."
+  },
+  "wdo": {
+   "leitura": "bullish",
+   "motivo": "EWZ −0,52%, VIX +3,10% e DXY +0,04% antes da abertura, com prêmio fiscal ainda alto após o dólar a R$ 5,77; em linha com o sinal quantitativo."
+  }
+ },
+ "destaques": [
+  {
+   "hora": "10h",
+   "evento": "Durigan na CAE do Senado (alíquota da CBS)",
+   "por_que": "CBS de 11,3% recomendada pelo TCU; sinal sobre carga tributária mexe no DI longo."
+  },
+  {
+   "hora": "10h30",
+   "evento": "Vendas no varejo dos EUA (out)",
+   "por_que": "Consenso +0,2% (ant. +0,8%); surpresa mexe nas Treasuries e no dólar global."
+  },
+  {
+   "hora": "11h10",
+   "evento": "Fala de Christopher Waller (Fed)",
+   "por_que": "Diretor do Fed; tom sobre dezembro mexe no DXY e no WDO."
+  },
+  {
+   "hora": "a definir",
+   "evento": "Senado vota destaques do ajuste fiscal",
+   "por_que": "Conclusão do PLP 299 é o principal vetor local para dólar e DI."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 fut.",
+   "variacao": "−0,35%"
+  },
+  {
+   "ativo": "Nasdaq fut.",
+   "variacao": "−0,36%"
+  },
+  {
+   "ativo": "EWZ (Brasil em NY)",
+   "variacao": "−0,52%"
+  },
+  {
+   "ativo": "DXY",
+   "variacao": "+0,04%"
+  },
+  {
+   "ativo": "Brent",
+   "variacao": "+0,05%"
+  },
+  {
+   "ativo": "VIX",
+   "variacao": "+3,10%"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Dólar sobe 2,15% e fecha a R$ 5,77, maior valor desde abril de 2025, com risco fiscal",
+   "fonte": "InfoMoney",
+   "hora": "seg 17h",
+   "url": "https://www.infomoney.com.br/mercados/dolar-hoje-avanca-com-dados-domesticos-e-politica-fiscal-em-foco/",
+   "por_que": "O WDO abre carregando o maior prêmio fiscal em 19 meses; o Ibovespa caiu 1,83% no mesmo pregão.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Senado deve concluir hoje o ajuste fiscal com a votação de quatro destaques",
+   "fonte": "Brasil 61",
+   "hora": "04h30",
+   "url": "https://brasil61.com/n/congresso-tem-semana-de-votacoes-sobre-ajuste-fiscal-e-debates-sobre-reforma-tributaria-bras2617482",
+   "por_que": "O PLP 299 amplia o bloqueio de despesas e corta benefícios tributários; mudança no texto pelos destaques pode ampliar o prêmio no DI e no dólar."
+  },
+  {
+   "titulo": "EUA exigem licença para chips de IA em data centers que atendam empresas chinesas",
+   "fonte": "TechCrunch",
+   "hora": "seg 12h02",
+   "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
+   "por_que": "A regra, que inclui o Brasil entre os países com exigência de licença, derrubou a Ásia e pesa no apetite a risco global antes da Nvidia.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Ações de tecnologia ampliam queda e futuros de NY recuam antes do balanço da Nvidia",
+   "fonte": "Bloomberg (via Swissinfo)",
+   "hora": "06h21",
+   "url": "https://www.swissinfo.ch/eng/tech-stocks-extend-selloff-as-nvidia-results-near%3a-markets-wrap/92391739",
+   "por_que": "MSCI Ásia-Pacífico −1,5% e emergentes −1,3%; aversão a risco global costuma pesar no WIN e favorecer o dólar contra o real.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Varejo e indústria nos EUA, Durigan no Senado e balanço da Nvidia movimentam o dia",
+   "fonte": "InfoMoney",
+   "hora": "06h05",
+   "url": "https://www.infomoney.com.br/mercados/varejo-industria-eua-nvidia-ajuste-fiscal-agenda-17112026/",
+   "por_que": "Agenda concentrada entre 10h e 11h30 (varejo, produção industrial, Waller e Hammack) tende a elevar a volatilidade do WDO e do DI no fim da manhã."
+  }
+ ],
+ "fontes": [
+  {
+   "titulo": "InfoMoney — Varejo e indústria nos EUA, balanço da Nvidia e ajuste fiscal movimentam os mercados",
+   "url": "https://www.infomoney.com.br/mercados/varejo-industria-eua-nvidia-ajuste-fiscal-agenda-17112026/"
+  },
+  {
+   "titulo": "InfoMoney — Dólar hoje sobe 2% e vai a R$ 5,77, maior valor desde abril de 2025, com risco fiscal",
+   "url": "https://www.infomoney.com.br/mercados/dolar-hoje-avanca-com-dados-domesticos-e-politica-fiscal-em-foco/"
+  },
+  {
+   "titulo": "Agência Senado — CAE: ministro da Fazenda debate alíquota da CBS na terça-feira",
+   "url": "https://www12.senado.leg.br/noticias/materias/2026/11/13/cae-ministro-da-fazenda-debate-aliquota-da-cbs-na-terca-feira"
+  },
+  {
+   "titulo": "TechCrunch — US tightens AI chip export controls to deter Chinese companies from accessing compute remotely",
+   "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/"
+  },
+  {
+   "titulo": "Bloomberg (via Swissinfo) — Tech Stocks Extend Selloff as Nvidia Results Near",
+   "url": "https://www.swissinfo.ch/eng/tech-stocks-extend-selloff-as-nvidia-results-near%3a-markets-wrap/92391739"
+  },
+  {
+   "titulo": "Yahoo Finance — Stock market today: futures slip in countdown to Nvidia earnings",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html"
+  }
+ ]
+}
