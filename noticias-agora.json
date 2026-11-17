@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T13:03-03:00",
+  "atualizado_em": "2026-11-17T13:05-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -139,11 +139,11 @@
     ],
     [
      "12:45",
-     171288.0
+     171173.0
     ],
     [
-     "12:48",
-     171249.0
+     "12:50",
+     171316.0
     ]
    ]
   },
@@ -344,11 +344,11 @@
     ],
     [
      "13:00",
-     5.7929
+     5.79
     ],
     [
-     "13:03",
-     5.7935
+     "13:05",
+     5.7881
     ]
    ]
   },
@@ -741,7 +741,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.2,
     "dolar30": 0.12
    },
    {
@@ -1483,7 +1483,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T13:03-03:00",
+ "atualizado_em": "2026-11-17T13:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1497,6 +1497,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
+   "publicado": "2026-11-17T13:03-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
@@ -1504,18 +1516,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
-   "publicado": "2026-11-17T12:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
