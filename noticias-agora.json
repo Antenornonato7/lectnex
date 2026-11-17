@@ -1,7 +1,16 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T10:13-03:00",
+  "atualizado_em": "2026-11-17T10:15-03:00",
+  "ibov": {
+   "anterior": 169295.4,
+   "pontos": [
+    [
+     "10:00",
+     169310.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.7858,
    "pontos": [
@@ -63,11 +72,11 @@
     ],
     [
      "10:10",
-     5.7821
+     5.7873
     ],
     [
-     "10:13",
-     5.7838
+     "10:15",
+     5.7881
     ]
    ]
   },
@@ -83,6 +92,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.05
    },
    {
@@ -95,6 +105,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.16
    },
    {
@@ -108,6 +119,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.14
    },
    {
@@ -120,6 +132,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.14
    },
    {
@@ -132,6 +145,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.02
    },
    {
@@ -145,7 +159,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.03
+    "ibov30": null,
+    "dolar30": 0.1
    }
   ]
  },
@@ -568,7 +583,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T10:13-03:00",
+ "atualizado_em": "2026-11-17T10:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -582,6 +597,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Um conto de duas Chinas: a economia chinesa lembra um fisiculturista que trabalhou só o tronco",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/um-conto-de-duas-chinas/",
+   "publicado": "2026-11-17T10:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar abre em alta e chega a R$ 5,79 com mercado à espera de votação de projeto fiscal no Senado",
    "fonte": "Folha",
