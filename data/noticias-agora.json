@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T17:08-03:00",
+  "atualizado_em": "2026-11-17T17:38-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     169507.0
+     169637.0
+    ],
+    [
+     "16:55",
+     169536.0
+    ],
+    [
+     "17:00",
+     169722.0
     ]
    ]
   },
@@ -732,11 +740,35 @@
     ],
     [
      "17:05",
-     5.7825
+     5.7845
     ],
     [
-     "17:08",
-     5.783
+     "17:10",
+     5.7795
+    ],
+    [
+     "17:15",
+     5.778
+    ],
+    [
+     "17:20",
+     5.7771
+    ],
+    [
+     "17:25",
+     5.7801
+    ],
+    [
+     "17:30",
+     5.7731
+    ],
+    [
+     "17:35",
+     5.7739
+    ],
+    [
+     "17:38",
+     5.7731
     ]
    ]
   },
@@ -1373,7 +1405,7 @@
      "VALE3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.03
    },
    {
     "hora": "17:00",
@@ -1386,7 +1418,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.06
    },
    {
     "hora": "17:01",
@@ -1399,7 +1431,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.18
    },
    {
     "hora": "17:02",
@@ -1414,78 +1446,146 @@
      "B3SA3"
     ],
     "ibov30": null,
+    "dolar30": -0.18
+   },
+   {
+    "hora": "17:09",
+    "titulo": "Ibovespa vai incluir BDRs de companhias brasileiras listadas no exterior em 2027",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPb0xpQUVvX2xvWFFMQzZNdGtnTUgxanR2MEJvMklTM3VfWXRySHYxWV80NE41WUl3UGFYdWRRSjJOWllrSElsUndSMHBlOU1odFp0cmhJU2tQUkN4WUFVRTRIQnZjWTd5N1RhWmpzR0dJX1dyRW9fQS1TcE4zYkNoT2NaUk5CNk0tN0JLcGIwN050SmYwdFIzejd1RmUyYkhic1VBc245VGRzYkQzTTZWTm9RS0o0V2hRMm5Kb1J3b05IWTdFRUlHVzFrWTZLU09nOVBSaNIB4wFBVV95cUxOX3lHY1RCdXgzS1RIbkc1Q2ZlYVQ1ZFJHV3FiY0VFWVFMbWRNYXByWkNNcDNMRVZzejdTc2hjU0g5QWd3NlFmeXJseWVIT2xYWVJmMlpBanVoQ2pBUnhwRWFNeHhfaUJtQ3FPeFhYdTRLcXJNckxCS1JOczRRQjZBdk52cU45aVlENmJhNWxhMnp2WHVZaWNaWDdWZ0syTHdkb3VaTXJja2dxbElqQlE4UVZNUTNnMGFzSXRHMzdvTmE4VVd3dlFYR00ybDZiTHdFSFowOHhQRS1VXzRQMVl5d1FsWQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.18
+   },
+   {
+    "hora": "17:14",
+    "titulo": "Até onde o dólar pode subir? Por que o real é a moeda que mais perdeu valor desde a reeleição de Lula",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ate-onde-o-dolar-pode-subir-por-que-o-real-e-a-moeda-que-mais-perdeu-valor-desde-a-reeleicao-de-lula.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:14",
+    "titulo": "BDR do Mercado Livre não cumpre requisito para entrar no Ibovespa",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbkxhSVJNVnBVb3ZfRTFOUXFndHJNRzd0YzdvTmo2ZGtRcWJPVTVfNkpsLTBlN3RScHhHMlk1SHB5MFcyY0RudnF6YVNfVVpRNnNqTVptTE1pNjJiTFBGZ0dLNGFsNDZRUXhoWm1jVjN6dzdya3NaT2IwRG1XV19FcTRJVVhfRllmZTBZZTc2SkZPTzRjQVlGbXRSZGxFY3FKalR3SnQtZjhCS1hHS2JXYmtlX1BRQ1VrZWpXQUlzWWNJYUd6TjJ6TEhMTUE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:14",
+    "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPR3B6a0hGMUduSUt2RVFHSTlZSnZTQWZVQlZMZExVd0dwS1dqcTY0LXRwSGlSU3dIc1J4clpRWjkzVC1NS0Mwek1PMi02a214YnQ4QWxFY2tpVHlfb0Y1NlVaUHJ5aEJOdVg2dU1qb0ZJblg3ZFRzS0dQSVhJb3l6X1RJVWZHMjJJSUgwZllCV0YxeVZqemtkMnpSZTgtc1BPak5YSzZndkN2S3RwM3pBWmpBR0Z3V1NSX0ZKdG54T1JrZW56Z2RpcGY5eUdBSmPSAdQBQVVfeXFMT1BlMThSNWNMXzFaOFBvZDZVUmVqLVR5eW1zTkR5cUk3ZHBmMlh6UUpRNUFibkQtamxIVjFHeTE2NE5pQ2RXV0J3ZDdfMVI4dnd6Q1JySWJrSDQ0Mmc4cWpmLUJwNDFZM0ZINV9odEo0MU1pNmx0M0VnLUlWUUNkRVk5aFpKbjBERGVvRHhCQjc1RWVzMEZUVWhSdGk1S3J1WDB3N3RHaFR0OV9nZkZXQi1DZ0Q1ekpvSnJwWmNNNmgyWkdONHNUYnp2V0I4eXlkYWRXbjg?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:15",
+    "titulo": "Ibovespa vai incluir empresas listadas em Nova York; veja as 4 que entrariam hoje",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDI2Z2JCN1dZWERLQVVrQzJFUjVDelRuUlhldVR5WGhlMS1LSUlTOEwzNG94akJaQlZHUUVxUXRVa2lwZEgxN29EMklBTGt4LWJqaGVEOXQyQ2tDbUx4NDRYRlNBMWZUN2RXMjZJUktFNEpxbUJneHJuaUw1U1ZJMDVWYms1RDI1eUlvY2RwRGY4YnIxY3I3QmRZUV9wSW85dnlOM2tIdnlRQnFUSmFFMWN4Q1pzZw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:21",
+    "titulo": "Dólar tem leve alta diante de cautela com política fiscal brasileira",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeF9UdU1lQXJPbUdaMmtndl9sOHFtQUxQbExUTFRWeVp4YXNGOVpQMzlFOTBlMVVneTZlTElQaEVsanJSRHlLTVMzUFgtZF95WTZzZHV4NWR2dUJaRmN6dXVyVlp2SnNhR0dQRmZYN25feDNlNm4yUzlnaTczTlhrZVc1TUZRMUVSaFZvZlFxUFEzTVlJTnVReTF1eDhpcHVtN0F0Sl9QTXZNSzN5SjZ0aWNfOVdTcUpTWHNoLXhRQ2hTUThE0gHTAUFVX3lxTE9hVzh0MjVKUHZaQnQyd01ldWFsZzFHcldWSVJud2xDdmhrR1YxdEFZTnI0NUJFM3FBM25kWEcycVAxRjlGOU5ldk80MFJpdnFDc3dtZG4xYy1zNl9fRVNRbWRFdmdJVVpXcDhNNU9JZUxXQkwwdnhCb3I0VWplTGRFcDNPbHc3aUk2X2tNWHEzVHB3dTJQOVJzV2VfNUxkM2VXRWlENnJ5cHdrSGdSTzBieUZ1dlBmQzNmRnppUXhfS0JNMlk2a0RqM1RDZGc2ekd3MTA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:22",
+    "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNS3lNOFRBcFo5WExteHotY2hzM1g4R09CV0FUazVYTWVIZDJzQ3dQR2hfLWtWcWhjcVhKR2h2TklxTVBUaWlYbjByWGI3MVpQRENlREx2T0k2UVdNNzYwU3N1OFEwbU5kQ2dfS0NJZXJjT2hDNWhUa05jSEtjZnJWdVBMT01HVjZLZEJ5RzUyVHFRUVFIYV9TN3VMTkRxc3ZfZDRSUWlDRXN4SzlybmgzTHJqd201a0lBYVhGSy1jcnk4a1JHZDdKeWF1N0o4eVhaeHd6TmhFLS1Jdw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:25",
+    "titulo": "Ouro fecha em leve alta em meio às expectativas de juros dos EUA e ao dólar forte",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWlQ0cFoxOU1FU25CSy1CcjZUVUZXUFU2aFl6Q2d2cllEYk1CSC04SHBmZWpTSG1JZUstU3VpNlhPZkRuTUhhUXdCUFRLWmFkWEdTWFBLOXM5cDl1andKb1BPSlFmb0JadVVFQ3hiZUNEeHdWYW13bkhDS253UDU3Z2VkbXpiX2dlS3d5VnJEaGJtelFDVGdyMlJFYl90VW0yRzAzYjNIYVFXN2NvbUhCZ3dtTGF5QWgwanc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:28",
+    "titulo": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:31",
+    "titulo": "A generational flight from tech to defensive stocks is underway. How we’re capitalizing",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/investingclub/2026/11/17/a-generational-flight-from-tech-to-defensive-stocks-is-underway-how-were-capitalizing.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ruído fiscal no governo eleva incerteza e acelera deterioração do câmbio",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWGdkSkNzb005V1NFVndIVHpXa0FZbzlDNGF1RmNkcF9wSXNTdi1iOXpWUWZyOExxakV4cHlLQkk2cUtsbGFXaFh2MG9sc1dhMHdKYVM1SnFQQjhIM3VhOEcySkM1SmxmYWFuYTZtUTJVMXZqZ1FoT0xmdGtuYU1CWjJrY0ZCaVVZMkpBdl81TTZFbmMzalFhSEd6UEpkbktQbTVZdTR6VTJVckpOdlJvR1d3QmhQZ3Qza0NCRWRUU2REaWM?oc=5",
-   "publicado": "2026-11-17T04:16-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar supera R$ 5,77 e bolsa recua 1,83% com incertezas fiscais no radar",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbzBxaHJaNDh1bkdfZ3YwZnc4UHNTaUxvbmJKMk4xdzlST0JiMWg3U3pabXJoQUxtOGJqbGhjMjZNUDYzQXJJRjVHWGNQMVNqQ0FmaU9KTktTd1BVdENubW5VbmhWOWk5bFlzb2xQQUxxYWpkSUMzbEFLcFZZT19aUE9zVkNyeUZPQm5lX3dmVnlFUVJEZzlxTWNKRmd2NjlUYlU3WUt0cmVKemdoZkFMTEdRVklCNWR1N2RvMkhjRTc1UHBt0gHTAUFVX3lxTFByRFFYWGhwdk9pZzJsV1FPUzBtWnRTLWIxeGxLWHhLUVNKVVVQMUZhYmx5SGFNT3RsTVlfelJJMmxESFo5ek1kWFFnUjJYVnV2OXo0QjZJQnVZa0F2NHRsT3Q4STlvVldOeGxQUXNmSS1IamVIZTFYVHZmX3lDZ21ZM0owc3k4MW5vSXlHMDQ3TTE5MzZhZTdOS3NlUlVLYlFoMEFJbGZaanF4SG5uZzBId0hpUE1yMjVhUmpnVm1mM1VYSGNSM3R4SUhNcW9kaFFIYk0?oc=5",
-   "publicado": "2026-11-17T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Como planejar uma viagem ao exterior com o dólar a R$ 5,70?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU3VsdGl5cVNjclNRSnpxLXhRTGl2c3dSeG1mcjl3cFpfVm15WEdXSVVlMldGY3dnQjJVTVVPbDZDVkFMLThjN2U4X3AyclpaWVNoRDRLTEx6Y2hoa2hBS2lITmVqT3doRGxRbWpqZURTel9lQVZzNV9LNGNBeVREMjRrck84M1dHNUlnSERNU2ZfZXVBclVUUjJuMU1pTjg?oc=5",
-   "publicado": "2026-11-17T05:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Kinea evita Bolsa e compra dólar diante dos riscos no Brasil: 'pode piorar muito mais'",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQa1dsMko2N2tBczNnVWxKZ19aRlpMSGgxWjFUQlhYWDdsR0VIOGhwdGRDdmhHcmRqTEpjdjFKTWlpUkNsNlVvc2JEbGdQUGY4WkJZWENwRGdsZl9XWEdhc3o2UW9QcnNfbk5icEs4VnJpekgta3pid2kyYnFKRlJhWkpxWEh6YXhmTVV3d2NpM2RIcTRqQWNJTnAzZW1DUTdSUTVrQkxaRlNjWjJaZmI1WWw0aWhQNXF2cFE?oc=5",
-   "publicado": "2026-11-17T05:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Temor com Lula 4 leva dólar a R$ 5,77 e gera disparada dos juros",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT05SRnl0Rm1saURHYldOZU1ReHpRR0RZMXVIVmhsUjRRUFdQZ0JtaElnS0pBX3hyNWpfeEVLc3JKVTRpc18xeElTMkRiQ1dLckxBWTFVLWdWXzhwc25xdXhaZExsMk55T3FDREFheXRUOXlLUGZLbFZ3b2VMN01VZDNRTUN5T0JJX2NZT001S3dNZXRoa2VMdW55NHdBeDBxcDBzS3VzeXZ3ZjNzY3lDZGJ5dnhMMUd2TXVpQg?oc=5",
-   "publicado": "2026-11-17T05:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Com quase US$ 17 bi em compras de estrangeiros, dólar se aproxima de R$ 6",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTXExWlJQZHNuSVNUeFh5QklLT2FzWnB5M1dPM2pjMlAzX09nOElYQTR1YmxZV01wa1Nwc3o5TFhZUDhRREJ1RUZtODA1OXdSekUyZ3NLaVpteHpMTFBxSlpFWDNIN3p6eDM5V290X1FOeEJnZHVXeVNYdTdIS0liQVFLV0dLSWN6b3fSAY8BQVVfeXFMTllBbm9kZy1FX2VfOWdtZXZmT09xYTZoQ1pWNDV0THdYWUNYa0JEN1puWG1fZ1hDSzJnVDdjQWE5QmtyWE9hR2gyQU0wZkpXTDZJVnI5c1oybmw0Z2txbV82eDAzVTBweWh2UDRDcWVNMmJDWnRIc2dSTTlZLXVvdjc2MG1ySy1rSGJvZ3MtNVk?oc=5",
-   "publicado": "2026-11-17T05:15-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "CSN desaba 12% após balanço e lidera perdas do Ibovespa; veja maiores altas e baixas",
    "fonte": "Estadão",
@@ -2318,6 +2418,121 @@
    "tickers": [
     "B3SA3"
    ]
+  },
+  {
+   "titulo": "Ibovespa vai incluir BDRs de companhias brasileiras listadas no exterior em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPb0xpQUVvX2xvWFFMQzZNdGtnTUgxanR2MEJvMklTM3VfWXRySHYxWV80NE41WUl3UGFYdWRRSjJOWllrSElsUndSMHBlOU1odFp0cmhJU2tQUkN4WUFVRTRIQnZjWTd5N1RhWmpzR0dJX1dyRW9fQS1TcE4zYkNoT2NaUk5CNk0tN0JLcGIwN050SmYwdFIzejd1RmUyYkhic1VBc245VGRzYkQzTTZWTm9RS0o0V2hRMm5Kb1J3b05IWTdFRUlHVzFrWTZLU09nOVBSaNIB4wFBVV95cUxOX3lHY1RCdXgzS1RIbkc1Q2ZlYVQ1ZFJHV3FiY0VFWVFMbWRNYXByWkNNcDNMRVZzejdTc2hjU0g5QWd3NlFmeXJseWVIT2xYWVJmMlpBanVoQ2pBUnhwRWFNeHhfaUJtQ3FPeFhYdTRLcXJNckxCS1JOczRRQjZBdk52cU45aVlENmJhNWxhMnp2WHVZaWNaWDdWZ0syTHdkb3VaTXJja2dxbElqQlE4UVZNUTNnMGFzSXRHMzdvTmE4VVd3dlFYR00ybDZiTHdFSFowOHhQRS1VXzRQMVl5d1FsWQ?oc=5",
+   "publicado": "2026-11-17T17:09-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Até onde o dólar pode subir? Por que o real é a moeda que mais perdeu valor desde a reeleição de Lula",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ate-onde-o-dolar-pode-subir-por-que-o-real-e-a-moeda-que-mais-perdeu-valor-desde-a-reeleicao-de-lula.shtml",
+   "publicado": "2026-11-17T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "BDR do Mercado Livre não cumpre requisito para entrar no Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbkxhSVJNVnBVb3ZfRTFOUXFndHJNRzd0YzdvTmo2ZGtRcWJPVTVfNkpsLTBlN3RScHhHMlk1SHB5MFcyY0RudnF6YVNfVVpRNnNqTVptTE1pNjJiTFBGZ0dLNGFsNDZRUXhoWm1jVjN6dzdya3NaT2IwRG1XV19FcTRJVVhfRllmZTBZZTc2SkZPTzRjQVlGbXRSZGxFY3FKalR3SnQtZjhCS1hHS2JXYmtlX1BRQ1VrZWpXQUlzWWNJYUd6TjJ6TEhMTUE?oc=5",
+   "publicado": "2026-11-17T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPR3B6a0hGMUduSUt2RVFHSTlZSnZTQWZVQlZMZExVd0dwS1dqcTY0LXRwSGlSU3dIc1J4clpRWjkzVC1NS0Mwek1PMi02a214YnQ4QWxFY2tpVHlfb0Y1NlVaUHJ5aEJOdVg2dU1qb0ZJblg3ZFRzS0dQSVhJb3l6X1RJVWZHMjJJSUgwZllCV0YxeVZqemtkMnpSZTgtc1BPak5YSzZndkN2S3RwM3pBWmpBR0Z3V1NSX0ZKdG54T1JrZW56Z2RpcGY5eUdBSmPSAdQBQVVfeXFMT1BlMThSNWNMXzFaOFBvZDZVUmVqLVR5eW1zTkR5cUk3ZHBmMlh6UUpRNUFibkQtamxIVjFHeTE2NE5pQ2RXV0J3ZDdfMVI4dnd6Q1JySWJrSDQ0Mmc4cWpmLUJwNDFZM0ZINV9odEo0MU1pNmx0M0VnLUlWUUNkRVk5aFpKbjBERGVvRHhCQjc1RWVzMEZUVWhSdGk1S3J1WDB3N3RHaFR0OV9nZkZXQi1DZ0Q1ekpvSnJwWmNNNmgyWkdONHNUYnp2V0I4eXlkYWRXbjg?oc=5",
+   "publicado": "2026-11-17T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa vai incluir empresas listadas em Nova York; veja as 4 que entrariam hoje",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDI2Z2JCN1dZWERLQVVrQzJFUjVDelRuUlhldVR5WGhlMS1LSUlTOEwzNG94akJaQlZHUUVxUXRVa2lwZEgxN29EMklBTGt4LWJqaGVEOXQyQ2tDbUx4NDRYRlNBMWZUN2RXMjZJUktFNEpxbUJneHJuaUw1U1ZJMDVWYms1RDI1eUlvY2RwRGY4YnIxY3I3QmRZUV9wSW85dnlOM2tIdnlRQnFUSmFFMWN4Q1pzZw?oc=5",
+   "publicado": "2026-11-17T17:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar tem leve alta diante de cautela com política fiscal brasileira",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeF9UdU1lQXJPbUdaMmtndl9sOHFtQUxQbExUTFRWeVp4YXNGOVpQMzlFOTBlMVVneTZlTElQaEVsanJSRHlLTVMzUFgtZF95WTZzZHV4NWR2dUJaRmN6dXVyVlp2SnNhR0dQRmZYN25feDNlNm4yUzlnaTczTlhrZVc1TUZRMUVSaFZvZlFxUFEzTVlJTnVReTF1eDhpcHVtN0F0Sl9QTXZNSzN5SjZ0aWNfOVdTcUpTWHNoLXhRQ2hTUThE0gHTAUFVX3lxTE9hVzh0MjVKUHZaQnQyd01ldWFsZzFHcldWSVJud2xDdmhrR1YxdEFZTnI0NUJFM3FBM25kWEcycVAxRjlGOU5ldk80MFJpdnFDc3dtZG4xYy1zNl9fRVNRbWRFdmdJVVpXcDhNNU9JZUxXQkwwdnhCb3I0VWplTGRFcDNPbHc3aUk2X2tNWHEzVHB3dTJQOVJzV2VfNUxkM2VXRWlENnJ5cHdrSGdSTzBieUZ1dlBmQzNmRnppUXhfS0JNMlk2a0RqM1RDZGc2ekd3MTA?oc=5",
+   "publicado": "2026-11-17T17:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNS3lNOFRBcFo5WExteHotY2hzM1g4R09CV0FUazVYTWVIZDJzQ3dQR2hfLWtWcWhjcVhKR2h2TklxTVBUaWlYbjByWGI3MVpQRENlREx2T0k2UVdNNzYwU3N1OFEwbU5kQ2dfS0NJZXJjT2hDNWhUa05jSEtjZnJWdVBMT01HVjZLZEJ5RzUyVHFRUVFIYV9TN3VMTkRxc3ZfZDRSUWlDRXN4SzlybmgzTHJqd201a0lBYVhGSy1jcnk4a1JHZDdKeWF1N0o4eVhaeHd6TmhFLS1Jdw?oc=5",
+   "publicado": "2026-11-17T17:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Ouro fecha em leve alta em meio às expectativas de juros dos EUA e ao dólar forte",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWlQ0cFoxOU1FU25CSy1CcjZUVUZXUFU2aFl6Q2d2cllEYk1CSC04SHBmZWpTSG1JZUstU3VpNlhPZkRuTUhhUXdCUFRLWmFkWEdTWFBLOXM5cDl1andKb1BPSlFmb0JadVVFQ3hiZUNEeHdWYW13bkhDS253UDU3Z2VkbXpiX2dlS3d5VnJEaGJtelFDVGdyMlJFYl90VW0yRzAzYjNIYVFXN2NvbUhCZ3dtTGF5QWgwanc?oc=5",
+   "publicado": "2026-11-17T17:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+   "publicado": "2026-11-17T17:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "A generational flight from tech to defensive stocks is underway. How we’re capitalizing",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/17/a-generational-flight-from-tech-to-defensive-stocks-is-underway-how-were-capitalizing.html",
+   "publicado": "2026-11-17T17:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2347,7 +2562,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T17:08-03:00",
+ "atualizado_em": "2026-11-17T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2355,12 +2570,115 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "Money Times",
   "Reuters",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "A generational flight from tech to defensive stocks is underway. How we’re capitalizing",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/17/a-generational-flight-from-tech-to-defensive-stocks-is-underway-how-were-capitalizing.html",
+   "publicado": "2026-11-17T17:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+   "publicado": "2026-11-17T17:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ouro fecha em leve alta em meio às expectativas de juros dos EUA e ao dólar forte",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWlQ0cFoxOU1FU25CSy1CcjZUVUZXUFU2aFl6Q2d2cllEYk1CSC04SHBmZWpTSG1JZUstU3VpNlhPZkRuTUhhUXdCUFRLWmFkWEdTWFBLOXM5cDl1andKb1BPSlFmb0JadVVFQ3hiZUNEeHdWYW13bkhDS253UDU3Z2VkbXpiX2dlS3d5VnJEaGJtelFDVGdyMlJFYl90VW0yRzAzYjNIYVFXN2NvbUhCZ3dtTGF5QWgwanc?oc=5",
+   "publicado": "2026-11-17T17:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar tem leve alta diante de cautela com política fiscal brasileira",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeF9UdU1lQXJPbUdaMmtndl9sOHFtQUxQbExUTFRWeVp4YXNGOVpQMzlFOTBlMVVneTZlTElQaEVsanJSRHlLTVMzUFgtZF95WTZzZHV4NWR2dUJaRmN6dXVyVlp2SnNhR0dQRmZYN25feDNlNm4yUzlnaTczTlhrZVc1TUZRMUVSaFZvZlFxUFEzTVlJTnVReTF1eDhpcHVtN0F0Sl9QTXZNSzN5SjZ0aWNfOVdTcUpTWHNoLXhRQ2hTUThE0gHTAUFVX3lxTE9hVzh0MjVKUHZaQnQyd01ldWFsZzFHcldWSVJud2xDdmhrR1YxdEFZTnI0NUJFM3FBM25kWEcycVAxRjlGOU5ldk80MFJpdnFDc3dtZG4xYy1zNl9fRVNRbWRFdmdJVVpXcDhNNU9JZUxXQkwwdnhCb3I0VWplTGRFcDNPbHc3aUk2X2tNWHEzVHB3dTJQOVJzV2VfNUxkM2VXRWlENnJ5cHdrSGdSTzBieUZ1dlBmQzNmRnppUXhfS0JNMlk2a0RqM1RDZGc2ekd3MTA?oc=5",
+   "publicado": "2026-11-17T17:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNS3lNOFRBcFo5WExteHotY2hzM1g4R09CV0FUazVYTWVIZDJzQ3dQR2hfLWtWcWhjcVhKR2h2TklxTVBUaWlYbjByWGI3MVpQRENlREx2T0k2UVdNNzYwU3N1OFEwbU5kQ2dfS0NJZXJjT2hDNWhUa05jSEtjZnJWdVBMT01HVjZLZEJ5RzUyVHFRUVFIYV9TN3VMTkRxc3ZfZDRSUWlDRXN4SzlybmgzTHJqd201a0lBYVhGSy1jcnk4a1JHZDdKeWF1N0o4eVhaeHd6TmhFLS1Jdw?oc=5",
+   "publicado": "2026-11-17T17:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa vai incluir empresas listadas em Nova York; veja as 4 que entrariam hoje",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDI2Z2JCN1dZWERLQVVrQzJFUjVDelRuUlhldVR5WGhlMS1LSUlTOEwzNG94akJaQlZHUUVxUXRVa2lwZEgxN29EMklBTGt4LWJqaGVEOXQyQ2tDbUx4NDRYRlNBMWZUN2RXMjZJUktFNEpxbUJneHJuaUw1U1ZJMDVWYms1RDI1eUlvY2RwRGY4YnIxY3I3QmRZUV9wSW85dnlOM2tIdnlRQnFUSmFFMWN4Q1pzZw?oc=5",
+   "publicado": "2026-11-17T17:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "BDR do Mercado Livre não cumpre requisito para entrar no Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbkxhSVJNVnBVb3ZfRTFOUXFndHJNRzd0YzdvTmo2ZGtRcWJPVTVfNkpsLTBlN3RScHhHMlk1SHB5MFcyY0RudnF6YVNfVVpRNnNqTVptTE1pNjJiTFBGZ0dLNGFsNDZRUXhoWm1jVjN6dzdya3NaT2IwRG1XV19FcTRJVVhfRllmZTBZZTc2SkZPTzRjQVlGbXRSZGxFY3FKalR3SnQtZjhCS1hHS2JXYmtlX1BRQ1VrZWpXQUlzWWNJYUd6TjJ6TEhMTUE?oc=5",
+   "publicado": "2026-11-17T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Até onde o dólar pode subir? Por que o real é a moeda que mais perdeu valor desde a reeleição de Lula",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ate-onde-o-dolar-pode-subir-por-que-o-real-e-a-moeda-que-mais-perdeu-valor-desde-a-reeleicao-de-lula.shtml",
+   "publicado": "2026-11-17T17:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa vai incluir BDRs de companhias brasileiras listadas no exterior em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPb0xpQUVvX2xvWFFMQzZNdGtnTUgxanR2MEJvMklTM3VfWXRySHYxWV80NE41WUl3UGFYdWRRSjJOWllrSElsUndSMHBlOU1odFp0cmhJU2tQUkN4WUFVRTRIQnZjWTd5N1RhWmpzR0dJX1dyRW9fQS1TcE4zYkNoT2NaUk5CNk0tN0JLcGIwN050SmYwdFIzejd1RmUyYkhic1VBc245VGRzYkQzTTZWTm9RS0o0V2hRMm5Kb1J3b05IWTdFRUlHVzFrWTZLU09nOVBSaNIB4wFBVV95cUxOX3lHY1RCdXgzS1RIbkc1Q2ZlYVQ1ZFJHV3FiY0VFWVFMbWRNYXByWkNNcDNMRVZzejdTc2hjU0g5QWd3NlFmeXJseWVIT2xYWVJmMlpBanVoQ2pBUnhwRWFNeHhfaUJtQ3FPeFhYdTRLcXJNckxCS1JOczRRQjZBdk52cU45aVlENmJhNWxhMnp2WHVZaWNaWDdWZ0syTHdkb3VaTXJja2dxbElqQlE4UVZNUTNnMGFzSXRHMzdvTmE4VVd3dlFYR00ybDZiTHdFSFowOHhQRS1VXzRQMVl5d1FsWQ?oc=5",
+   "publicado": "2026-11-17T17:09-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
    "fonte": "Estadão",
@@ -2386,17 +2704,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/ibovespa-incluira-acoes-de-empresas-brasileiras-listadas-no-exterior-a-partir-de-2027.shtml",
-   "publicado": "2026-11-17T17:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Vale tem contrato de 20 anos de compra de minério da Cedro",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/vale-tem-contrato-de-20-anos-de-compra-de-minerio-da-cedro.shtml",
@@ -2409,17 +2716,6 @@
    "tickers": [
     "VALE3"
    ]
-  },
-  {
-   "titulo": "We’re watching Cramer’s favorite market indicator for a signal to buy stocks",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/investingclub/2026/11/17/were-watching-cramers-favorite-indicator-for-a-signal-to-buy-stocks.html",
-   "publicado": "2026-11-17T16:15-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Dólar recua após bater R$ 5,81 e Bolsa sobe com política fiscal no radar",
@@ -2462,17 +2758,6 @@
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/durigan-preve-impacto-inicial-da-reforma-tributaria-sobre-inflacao",
    "publicado": "2026-11-17T15:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Governo retira urgência de projeto de bets para destravar votação de ajuste fiscal na Câmara",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/politica/governo-retira-urgencia-de-projeto-de-bets-para-poder-votar-ajuste-fiscal-e-proposta-sobre-big-techs/",
-   "publicado": "2026-11-17T15:14-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
