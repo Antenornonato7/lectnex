@@ -1,0 +1,25 @@
+# Pregões extras para o Simulador (últimos 60 dias de barras de 5 min do Yahoo). Roda à mão e todo sábado (coletor/relogio.py).
+name: Simulador historico
+run-name: Simulador historico
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  historico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar e gravar
+        run: |
+          python3 scripts/simulador_historico.py
+          git config user.name "lectnex-bot"
+          git config user.email "bot@lectnex.com.br"
+          git add data/sim
+          git diff --cached --quiet && exit 0
+          git commit -m "simulador: pregões extras $(TZ=America/Sao_Paulo date '+%F')"
+          ok=0; for i in 1 2 3 4; do git pull --rebase -q origin main && git push -q origin HEAD:main && { ok=1; break; }; sleep $((i*5)); done; [ "$ok" = 1 ]

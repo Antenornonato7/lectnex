@@ -88,6 +88,7 @@ TAREFAS = [
     ('discord-plantao.yml', None, {'automatico': 'true'}, ('horarios', ['09:07', '13:07', '17:07', '21:07'], 120), lambda: True),
     ('instagram.yml', 'Instagram kit', {'acao': 'kit', 'pecas': ''}, ('horarios', ['19:40'], 150), lambda: UTIL),
     ('instagram.yml', 'Instagram kit', {'acao': 'kit', 'pecas': 'leitura termo reel-aula'}, ('horarios', ['08:25'], 150), lambda: True),
+    ('simulador-historico.yml', 'Simulador historico', {}, ('horarios', ['10:15'], 240), lambda: AGORA.weekday() == 5),
     ('discord-simulador.yml', 'Discord simulador semana', {'acao': 'semana'}, ('horarios', ['09:35'], 180), lambda: AGORA.weekday() == 0),
     ('discord-simulador.yml', 'Discord simulador ranking', {'acao': 'ranking'}, ('horarios', ['18:30'], 180), lambda: AGORA.weekday() == 4),
     ('discord-desafio.yml', 'Discord desafio revelar', {'acao': 'revelar'}, ('horarios', ['21:40'], 120), lambda: UTIL),
