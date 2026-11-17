@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T17:08-03:00",
+  "atualizado_em": "2026-11-17T17:10-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -335,7 +335,7 @@
     ],
     [
      "16:50",
-     169507.0
+     169637.0
     ]
    ]
   },
@@ -732,11 +732,15 @@
     ],
     [
      "17:05",
-     5.7825
+     5.7845
     ],
     [
-     "17:08",
-     5.783
+     "17:10",
+     5.784
+    ],
+    [
+     "17:10",
+     5.7835
     ]
    ]
   },
@@ -2347,44 +2351,16 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T17:08-03:00",
+ "atualizado_em": "2026-11-17T17:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
-  "Folha",
-  "Money Times",
-  "Reuters",
-  "Valor"
+  "Folha"
  ],
  "noticias": [
-  {
-   "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQlZoOVhmS1VqamxHdC1YZW9nMVpHbjlpVG9zRG1NQmRCRWJ5cXlKWXJ0OXhDbXowNnJKNHZ4U3lYWDZWOGw0bTl6aDZSNV95VFFnRjE5dk1FUG9QM1NUd0JxTnNEYWw1SGpfSFdVR3NwUEJ6RVRuWVFzUTFYQ1diNGp3cmJUck9DSDA2bnNKUmNsZ29ac1ZzS3NDRmZodldvSDFJSVVTSHpjZjJudlUyTTFnOHZNWldQMWJTZWZtM2lDTlJIRVl2d2tMZHluU00?oc=5",
-   "publicado": "2026-11-17T17:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa vai mudar: índice passará por segundo grande alteração em quase 60 anos",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUhBREZ6UnMxbEtvYXdQcmJuVWxBZkY0UnVlRzZMVjVrYW13WjVvRzhBTHpuSHFZSlBxLVk1MlFLNzU4VWRvcDNNbld0ZkhYOWduWk9QUmJ4WFFtejJoeFR1dHl4ZFhFUTJHaG1DY1ZwVmplcXcySmJJVDdMYzJNT05OVGViODV2bHhkZEpkRFBBRGUxQzBtSFN5SFZsTGV3Yk5ZMkd4dXdjcno3LVVTbjF5bnoyUQ?oc=5",
-   "publicado": "2026-11-17T17:01-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
    "fonte": "Folha",
@@ -2422,18 +2398,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar recua após bater R$ 5,81 e Bolsa sobe com política fiscal no radar",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWUdLN2UyTkVwbkZyTEFXVDFCZ3JkeFI4TnVzYkRMdnB0YnhFdFVxMlV6dGN6eFF1bS01T054LTFzdWJGdGpSUXNWenlYQjVFdzVCd0QxZnBSZUV1QVBHN0NHVjJ3Uk85cVhjYWpXb2xJWm95Z1p6ZDBqaTN2ekZiRWpiQWVwekNMX21NdURDdlpaa1A1eTRNNVFMemFKQnV0RnVjUWRn?oc=5",
-   "publicado": "2026-11-17T16:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "A reforma tributária, o ‘ajuste fiscal’ e os desafios para o agronegócio",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/agronegocios/a-reforma-tributaria-o-ajuste-fiscal-e-os-desafios-para-o-agronegocio/",
@@ -2443,19 +2407,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "B3 prepara BDR da Anthropic para estreia simultânea ao IPO na Nasdaq",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc3ZRV0V2VXhIdjhPRjJqMk12QnN5YXpKWlpzV2VzZjJFZUtzaUU1R1VUaFRVYUU3SXl4bllvT1kwTGRxSE9zQWo1ZTgtdDlpMWo4S3E0MGV4Q1Z6MXp4cGRBUjAySndIWExWM2ZRVng0VkM2cWh4dE01dWpaa1QtaURlTFZOM3RVRFBJcTFRT3dnMGNoNG1lYXZkREZxaVhrUF9JaWE5N0RsTmd3S2prbzZucEdpeGFjVmw3MjBR?oc=5",
-   "publicado": "2026-11-17T16:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
   },
   {
    "titulo": "Durigan prevê impacto inicial da reforma tributária sobre inflação",
