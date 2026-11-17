@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T17:28-03:00",
+  "atualizado_em": "2026-11-17T17:30-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     169563.0
+     169581.0
     ]
    ]
   },
@@ -756,11 +756,11 @@
     ],
     [
      "17:25",
-     5.7786
+     5.7801
     ],
     [
-     "17:28",
-     5.7816
+     "17:30",
+     5.781
     ]
    ]
   },
@@ -1410,7 +1410,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.08
+    "dolar30": -0.06
    },
    {
     "hora": "17:01",
@@ -1423,7 +1423,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.03
+    "dolar30": -0.04
    },
    {
     "hora": "17:02",
@@ -1438,7 +1438,7 @@
      "B3SA3"
     ],
     "ibov30": null,
-    "dolar30": -0.03
+    "dolar30": -0.04
    },
    {
     "hora": "17:09",
@@ -1508,6 +1508,20 @@
     "dolar30": null
    },
    {
+    "hora": "17:21",
+    "titulo": "Dólar tem leve alta diante de cautela com política fiscal brasileira",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeF9UdU1lQXJPbUdaMmtndl9sOHFtQUxQbExUTFRWeVp4YXNGOVpQMzlFOTBlMVVneTZlTElQaEVsanJSRHlLTVMzUFgtZF95WTZzZHV4NWR2dUJaRmN6dXVyVlp2SnNhR0dQRmZYN25feDNlNm4yUzlnaTczTlhrZVc1TUZRMUVSaFZvZlFxUFEzTVlJTnVReTF1eDhpcHVtN0F0Sl9QTXZNSzN5SjZ0aWNfOVdTcUpTWHNoLXhRQ2hTUThE0gHTAUFVX3lxTE9hVzh0MjVKUHZaQnQyd01ldWFsZzFHcldWSVJud2xDdmhrR1YxdEFZTnI0NUJFM3FBM25kWEcycVAxRjlGOU5ldk80MFJpdnFDc3dtZG4xYy1zNl9fRVNRbWRFdmdJVVpXcDhNNU9JZUxXQkwwdnhCb3I0VWplTGRFcDNPbHc3aUk2X2tNWHEzVHB3dTJQOVJzV2VfNUxkM2VXRWlENnJ5cHdrSGdSTzBieUZ1dlBmQzNmRnppUXhfS0JNMlk2a0RqM1RDZGc2ekd3MTA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
     "hora": "17:22",
     "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
     "fonte": "Estadão",
@@ -1521,32 +1535,23 @@
     ],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:28",
+    "titulo": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Como planejar uma viagem ao exterior com o dólar a R$ 5,70?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU3VsdGl5cVNjclNRSnpxLXhRTGl2c3dSeG1mcjl3cFpfVm15WEdXSVVlMldGY3dnQjJVTVVPbDZDVkFMLThjN2U4X3AyclpaWVNoRDRLTEx6Y2hoa2hBS2lITmVqT3doRGxRbWpqZURTel9lQVZzNV9LNGNBeVREMjRrck84M1dHNUlnSERNU2ZfZXVBclVUUjJuMU1pTjg?oc=5",
-   "publicado": "2026-11-17T05:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Kinea evita Bolsa e compra dólar diante dos riscos no Brasil: 'pode piorar muito mais'",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQa1dsMko2N2tBczNnVWxKZ19aRlpMSGgxWjFUQlhYWDdsR0VIOGhwdGRDdmhHcmRqTEpjdjFKTWlpUkNsNlVvc2JEbGdQUGY4WkJZWENwRGdsZl9XWEdhc3o2UW9QcnNfbk5icEs4VnJpekgta3pid2kyYnFKRlJhWkpxWEh6YXhmTVV3d2NpM2RIcTRqQWNJTnAzZW1DUTdSUTVrQkxaRlNjWjJaZmI1WWw0aWhQNXF2cFE?oc=5",
-   "publicado": "2026-11-17T05:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Temor com Lula 4 leva dólar a R$ 5,77 e gera disparada dos juros",
    "fonte": "Valor",
@@ -2460,6 +2465,18 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar tem leve alta diante de cautela com política fiscal brasileira",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeF9UdU1lQXJPbUdaMmtndl9sOHFtQUxQbExUTFRWeVp4YXNGOVpQMzlFOTBlMVVneTZlTElQaEVsanJSRHlLTVMzUFgtZF95WTZzZHV4NWR2dUJaRmN6dXVyVlp2SnNhR0dQRmZYN25feDNlNm4yUzlnaTczTlhrZVc1TUZRMUVSaFZvZlFxUFEzTVlJTnVReTF1eDhpcHVtN0F0Sl9QTXZNSzN5SjZ0aWNfOVdTcUpTWHNoLXhRQ2hTUThE0gHTAUFVX3lxTE9hVzh0MjVKUHZaQnQyd01ldWFsZzFHcldWSVJud2xDdmhrR1YxdEFZTnI0NUJFM3FBM25kWEcycVAxRjlGOU5ldk80MFJpdnFDc3dtZG4xYy1zNl9fRVNRbWRFdmdJVVpXcDhNNU9JZUxXQkwwdnhCb3I0VWplTGRFcDNPbHc3aUk2X2tNWHEzVHB3dTJQOVJzV2VfNUxkM2VXRWlENnJ5cHdrSGdSTzBieUZ1dlBmQzNmRnppUXhfS0JNMlk2a0RqM1RDZGc2ekd3MTA?oc=5",
+   "publicado": "2026-11-17T17:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNS3lNOFRBcFo5WExteHotY2hzM1g4R09CV0FUazVYTWVIZDJzQ3dQR2hfLWtWcWhjcVhKR2h2TklxTVBUaWlYbjByWGI3MVpQRENlREx2T0k2UVdNNzYwU3N1OFEwbU5kQ2dfS0NJZXJjT2hDNWhUa05jSEtjZnJWdVBMT01HVjZLZEJ5RzUyVHFRUVFIYV9TN3VMTkRxc3ZfZDRSUWlDRXN4SzlybmgzTHJqd201a0lBYVhGSy1jcnk4a1JHZDdKeWF1N0o4eVhaeHd6TmhFLS1Jdw?oc=5",
@@ -2471,6 +2488,17 @@
    "tickers": [
     "B3SA3"
    ]
+  },
+  {
+   "titulo": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+   "publicado": "2026-11-17T17:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2500,7 +2528,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T17:28-03:00",
+ "atualizado_em": "2026-11-17T17:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2515,6 +2543,29 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Wall Street's fear gauge is surging again and this time it's not just about AI jitters",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/wall-streets-fear-gauge-is-surging-again-and-this-time-its-not-just-about-ai-jitters.html",
+   "publicado": "2026-11-17T17:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar tem leve alta diante de cautela com política fiscal brasileira",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeF9UdU1lQXJPbUdaMmtndl9sOHFtQUxQbExUTFRWeVp4YXNGOVpQMzlFOTBlMVVneTZlTElQaEVsanJSRHlLTVMzUFgtZF95WTZzZHV4NWR2dUJaRmN6dXVyVlp2SnNhR0dQRmZYN25feDNlNm4yUzlnaTczTlhrZVc1TUZRMUVSaFZvZlFxUFEzTVlJTnVReTF1eDhpcHVtN0F0Sl9QTXZNSzN5SjZ0aWNfOVdTcUpTWHNoLXhRQ2hTUThE0gHTAUFVX3lxTE9hVzh0MjVKUHZaQnQyd01ldWFsZzFHcldWSVJud2xDdmhrR1YxdEFZTnI0NUJFM3FBM25kWEcycVAxRjlGOU5ldk80MFJpdnFDc3dtZG4xYy1zNl9fRVNRbWRFdmdJVVpXcDhNNU9JZUxXQkwwdnhCb3I0VWplTGRFcDNPbHc3aUk2X2tNWHEzVHB3dTJQOVJzV2VfNUxkM2VXRWlENnJ5cHdrSGdSTzBieUZ1dlBmQzNmRnppUXhfS0JNMlk2a0RqM1RDZGc2ekd3MTA?oc=5",
+   "publicado": "2026-11-17T17:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Nubank no Ibovespa? B3 mapeia quatro BDRs que podem entrar no índice em 2027",
    "fonte": "Estadão",
