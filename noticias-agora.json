@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T13:40-03:00",
+  "atualizado_em": "2026-11-17T13:43-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -171,7 +171,11 @@
     ],
     [
      "13:25",
-     171066.0
+     171096.0
+    ],
+    [
+     "13:28",
+     171076.0
     ]
    ]
   },
@@ -404,7 +408,11 @@
     ],
     [
      "13:40",
-     5.7803
+     5.7816
+    ],
+    [
+     "13:43",
+     5.783
     ]
    ]
   },
@@ -840,7 +848,7 @@
     "tickers": [
      "HAPV3"
     ],
-    "ibov30": null,
+    "ibov30": -0.21,
     "dolar30": -0.16
    },
    {
@@ -1619,7 +1627,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T13:40-03:00",
+ "atualizado_em": "2026-11-17T13:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1798,6 +1806,17 @@
    "tickers": []
   },
   {
+   "titulo": "Crise fiscal nas economias ricas drena recursos e afeta países pobres e emergentes",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/crise-fiscal-nas-economias-ricas-drena-recursos-e-afeta-paises-pobres-e-emergentes.shtml",
+   "publicado": "2026-11-17T10:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Se nada for feito, risco é dívida estar acima de 100% do PIB em 4 anos, diz CEO do Itaú",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/se-nada-for-feito-risco-e-divida-estar-acima-de-100-do-pib-em-4-anos-diz-ceo-do-itau.shtml",
@@ -1810,18 +1829,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
-   "publicado": "2026-11-17T10:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
