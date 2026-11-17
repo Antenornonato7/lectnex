@@ -129,11 +129,52 @@ def rascunho(video_url):
     return d.get('publish_id')
 
 
+def legenda_tiktok(leg):
+    """Legenda do TikTok a partir da do Instagram: gancho em 1 linha, a pergunta (puxa comentário), chamada para seguir e
+    4-5 hashtags do nicho (no TikTok, poucas e específicas rendem mais que muitas)."""
+    import re
+    linhas = [l.strip() for l in (leg or '').splitlines() if l.strip() and not l.strip().startswith('#')]
+    m = re.match(r'O que mexeu no (.+?) hoje \(([^)]+)\)', linhas[0]) if linhas else None
+    if m:
+        ativo, var = m.groups()
+        cai = var.startswith(('−', '-'))
+        gancho = f'{ativo[:1].upper() + ativo[1:]} {var} hoje {"📉" if cai else "📈"} Veja a notícia que mais {"derrubou" if cai else "puxou"} o preço 👀'
+    else:
+        gancho = (linhas[0] if linhas else 'O que mexeu no mercado hoje 👀')[:120]
+    pergunta = next((l[:l.rindex('?') + 1] for l in linhas[1:] if '?' in l), 'Você teria visto essa notícia a tempo?')
+    dolar = 'dólar' in (leg or '').lower() and 'ibovespa' not in gancho.lower()
+    tags = '#daytrade #minidolar #dolar #bolsadevalores #trader' if dolar else '#daytrade #miniindice #ibovespa #bolsadevalores #trader'
+    return '\n'.join([gancho, '', pergunta, '', 'Siga para ver o resumo de todo pregão em 15s. Conteúdo educacional.', tags])
+
+
+def enviar_legenda(leg, reply_to=None):
+    """Manda a legenda do TikTok sozinha numa mensagem (toque longo → copiar) e a dica de som."""
+    txt = legenda_tiktok(leg)
+    kw = {'reply_to_message_id': reply_to} if reply_to else {}
+    ig.tg('sendMessage', chat_id=ig.admin(), text='🎵 Legenda para o TikTok (copie a próxima mensagem). Dica: no app, toque em "Adicionar som" e escolha um da aba "Em alta" com volume baixo.', **kw)
+    ig.tg('sendMessage', chat_id=ig.admin(), text=txt)
+    return txt
+
+
+def legenda_do_dia(dia):
+    """Manda no Telegram a legenda do TikTok do kit do dia (sem subir vídeo)."""
+    try:
+        import json
+        kit = json.loads(urllib.request.urlopen(ig.RAW + f'kit/{dia}/kit.json', timeout=30).read())
+        pecas = {x['chave']: x.get('legenda', '') for x in kit['pecas']}
+        leg = pecas.get('reels') or pecas.get('grafico', '')
+        ig.note('notice', 'Legenda TikTok: ' + legenda_tiktok(leg).replace(chr(10), ' | '))
+        enviar_legenda(leg)
+    except Exception as e:
+        ig.note('notice', f'Sem legenda do kit: {e}')
+
+
 def teste_rascunho():
     import datetime as dt
     dia = os.environ.get('KIT_DIA') or dt.datetime.now(ig.BRT).date().isoformat()
     pid = rascunho(ig.RAW + f'kit/{dia}/reel.mp4')
     ig.note('notice', f'TikTok: Reels de {dia} enviado como rascunho (publish_id {pid}).')
+    legenda_do_dia(dia)
     try:
         ig.tg('sendMessage', chat_id=ig.admin(), text='🎵 Teste do TikTok: o Reels de hoje foi para a caixa de entrada do TikTok da @lectnex como RASCUNHO. Abra o app do TikTok, veja a notificação, ajuste e publique.')
     except Exception:
@@ -188,6 +229,9 @@ if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'teste'
     if cmd == 'link':
         link()
+    elif cmd == 'legenda':
+        import datetime as dt
+        legenda_do_dia(os.environ.get('KIT_DIA') or dt.datetime.now(ig.BRT).date().isoformat())
     elif cmd == 'teste-rascunho':
         teste_rascunho()
     elif cmd == 'teste-post':

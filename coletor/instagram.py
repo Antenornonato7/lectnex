@@ -526,9 +526,9 @@ def processar():
                 try:  # Reels também no TikTok: vai como rascunho para a caixa de entrada do app; o dono publica de lá
                     import tiktok
                     p['tiktok'] = tiktok.rascunho(p['video'])
-                    fbmsg += '\n🎵 TikTok: rascunho na caixa de entrada do app (abra o TikTok e publique; a legenda segue abaixo)'
+                    fbmsg += '\n🎵 TikTok: rascunho na caixa de entrada do app (abra o TikTok e publique; a legenda própria do TikTok segue abaixo)'
                     try:
-                        tg('sendMessage', chat_id=admin(), text=p.get('legenda', '')[:2000] or 'Lectnex', reply_to_message_id=mid)
+                        tiktok.enviar_legenda(p.get('legenda', ''), reply_to=mid)
                     except Exception:
                         pass
                 except Exception as e:
