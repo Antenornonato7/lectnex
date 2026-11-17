@@ -396,15 +396,16 @@ def kit_instagram(dia=None, so=None):
     if not kit:
         note('warning', f'Sem kit em kit/{dia}/'); return
     agora, d8 = dt.datetime.now(BRT), dia.replace('-', '')
-    so = so or ['grafico', 'reel', 'reel-semana', 'fechamento']
+    so = so or ['grafico', 'reel', 'reel-quiz', 'reel-ferramenta', 'reel-semana', 'fechamento']
     pecas = {pc['chave']: pc for pc in kit.get('pecas', [])}
     novos = []
     for chave in so:
         if chave == 'grafico' and 'grafico' in pecas:
             novos.append({'id': f'{d8}-kit-grafico', 'tipo': 'grafico', 'legenda': pecas['grafico'].get('legenda', ''), 'imagens': [RAW + f'kit/{dia}/grafico.jpg']})
         elif chave in (kit.get('reels') or {}):
-            novos.append({'id': f'{d8}-kit-{chave}', 'tipo': 'reel' if chave == 'reel' else 'reel-semana', 'legenda': kit['reels'][chave].get('legenda', ''),
-                          'imagens': [], 'video': RAW + f'kit/{dia}/{chave}.mp4'})
+            rl = kit['reels'][chave]
+            novos.append({'id': f'{d8}-kit-{chave}', 'tipo': 'reel' if chave == 'reel' else 'reel-semana', 'legenda': rl.get('legenda', ''),
+                          'nome': rl.get('nome'), 'imagens': [], 'video': RAW + f'kit/{dia}/{chave}.mp4', 'x': rl.get('x', '')})
         elif chave in pecas and pecas[chave].get('formato') == 'story':
             novos.append({'id': f'{d8}-kit-story-{chave}', 'tipo': 'story', 'nome': STORIES_KIT.get(chave, pecas[chave].get('nome')), 'legenda': '',
                           'imagens': [RAW + f'kit/{dia}/{chave}.jpg']})
@@ -417,10 +418,122 @@ def kit_instagram(dia=None, so=None):
         n.update(status='aguardando', criado=agora.isoformat(timespec='minutes'))
         enviar_previa(n)
         f['pedidos'].append(n)
+        try:  # texto pronto para o X (postado à mão, sem pagar a API)
+            xt = n.pop('x', '') or (texto_x_grafico(n['legenda']) if n['tipo'] == 'grafico' else '')
+            if xt:
+                enviar_x(xt, n['imagens'][0] if n.get('imagens') else None)
+        except Exception as e:
+            note('warning', f'Texto do X não enviado: {e}')
     f['pedidos'] = f['pedidos'][-40:]
     if novos:
         fila_gravar(f, sha)
     note('notice', f'{len(novos)} peça(s) do kit propostas no Telegram' + (': ' + ', '.join(n.get('nome') or n['tipo'] for n in novos) if novos else ''))
+
+
+def texto_x_grafico(leg):
+    """Post do X a partir da legenda do gráfico do dia: 1ª frase + a manchete que mais mexeu + link + Discord (até ~280 caracteres)."""
+    linhas = [l.strip() for l in (leg or '').splitlines() if l.strip() and not l.strip().startswith('#')]
+    if not linhas:
+        return ''
+    abre = linhas[0].split(':')[0].rstrip('.') + ' 👇'
+    top = next((l for l in linhas[1:] if l[:2].rstrip('.').isdigit()), '')
+    top = top.split('·', 1)[-1].strip() if top else ''
+    corpo = abre + ('\n\n' + (top[:120] + ('…' if len(top) > 120 else '')) if top else '')
+    return corpo + '\n\nGráfico com as manchetes no horário:\nhttps://lectnex.com.br/hoje.html\n\nComunidade: https://discord.gg/kM6YcQA82P'
+
+
+def enviar_x(texto, imagem=None):
+    """Manda no Telegram privado um post pronto para o X: a imagem (se houver) e o texto sozinho para copiar."""
+    tg('sendMessage', chat_id=admin(), text='🐦 <b>Post para o X</b>' + (' (salve a imagem acima e anexe)' if imagem else '') + ': copie a próxima mensagem.',
+       parse_mode='HTML')
+    if imagem:
+        try:
+            tg('sendPhoto', chat_id=admin(), photo=imagem)
+        except Exception:
+            pass
+    tg('sendMessage', chat_id=admin(), text=texto, disable_web_page_preview=True)
+
+
+def relatorio_redes():
+    """Relatório semanal no Telegram privado (domingo): seguidores no Instagram, Facebook e Discord com a variação da semana,
+    e os posts dos últimos 7 dias ordenados por alcance, para saber o que repetir."""
+    agora = dt.datetime.now(BRT)
+    hist, sha = gh_ler('ig/redes.json')
+    hist = hist or {}
+    atual, linhas = {}, []
+    uid = ig_user()
+    try:
+        perfil = ig('GET', uid, fields='followers_count,media_count')
+        atual['instagram'] = perfil.get('followers_count')
+    except Exception as e:
+        linhas.append(f'Instagram: sem dados ({str(e)[:80]})')
+    try:
+        pid, ptok = fb_pagina()
+        pg = fb('GET', pid, ptok, fields='followers_count,fan_count')
+        atual['facebook'] = pg.get('followers_count') or pg.get('fan_count')
+    except Exception as e:
+        linhas.append(f'Facebook: sem dados ({str(e)[:80]})')
+    try:
+        tok = os.environ.get('DISCORD_BOT_TOKEN', '').strip()
+        if tok:
+            guild = os.environ.get('DISCORD_GUILD_ID', '1565140434445934722')
+            req = urllib.request.Request(f'https://discord.com/api/v10/guilds/{guild}?with_counts=true',
+                                         headers={'Authorization': f'Bot {tok}', 'User-Agent': 'LectnexBot (lectnex.com.br, 1.0)'})
+            atual['discord'] = json.loads(urllib.request.urlopen(req, timeout=30).read()).get('approximate_member_count')
+    except Exception as e:
+        linhas.append(f'Discord: sem dados ({str(e)[:80]})')
+    ant = hist.get('ultimo', {})
+    nomes = {'instagram': 'Instagram', 'facebook': 'Facebook', 'discord': 'Discord'}
+    topo = []
+    for k, n in nomes.items():
+        if atual.get(k) is None:
+            continue
+        dlt = atual[k] - ant[k] if ant.get(k) is not None else None
+        topo.append(f'• {n}: <b>{atual[k]}</b>' + (f' ({"+" if dlt >= 0 else ""}{dlt} na semana)' if dlt is not None else ''))
+    # posts da semana por alcance
+    posts = []
+    try:
+        desde = agora - dt.timedelta(days=7)
+        for m in ig('GET', f'{uid}/media', fields='id,caption,media_product_type,timestamp,permalink,like_count,comments_count', limit=30).get('data', []):
+            quando = dt.datetime.fromisoformat(m['timestamp'].replace('+0000', '+00:00'))
+            if quando < desde:
+                continue
+            met = {}
+            for lista in ('reach,saved,shares,views', 'reach,saved,shares', 'reach'):
+                try:
+                    for x in ig('GET', f'{m["id"]}/insights', metric=lista).get('data', []):
+                        met[x['name']] = (x.get('values') or [{}])[0].get('value', x.get('total_value', {}).get('value'))
+                    break
+                except Exception:
+                    continue
+            posts.append((met.get('reach') or 0, m, met))
+    except Exception as e:
+        linhas.append(f'Posts: sem dados ({str(e)[:80]})')
+    posts.sort(key=lambda x: -x[0])
+    tipo = {'REELS': 'Reels', 'FEED': 'Post', 'STORY': 'Story'}
+    txt = ['📊 <b>Redes da Lectnex: semana até ' + agora.strftime('%d/%m') + '</b>', '', '<b>Seguidores</b>'] + (topo or ['• sem dados'])
+    if posts:
+        txt += ['', f'<b>Instagram: {len(posts)} publicações em 7 dias, por alcance</b>']
+        for i, (alc, m, met) in enumerate(posts[:5], 1):
+            cap = esc((m.get('caption') or '').split('\n')[0][:60])
+            extras = ' · '.join(x for x in (f'{met["views"]} views' if met.get('views') else '', f'{met.get("saved") or 0} salv.',
+                                            f'{met.get("shares") or 0} compart.', f'{m.get("comments_count") or 0} coment.') if x)
+            txt.append(f'{i}. {tipo.get(m.get("media_product_type"), "Post")} · alcance <b>{alc}</b> · {extras}\n   <a href="{m["permalink"]}">{cap or "ver"}</a>')
+        melhor = posts[0][1].get('media_product_type')
+        reels = [p for p in posts if p[1].get('media_product_type') == 'REELS']
+        feed = [p for p in posts if p[1].get('media_product_type') != 'REELS']
+        if reels and feed:
+            mr, mf = sum(p[0] for p in reels) / len(reels), sum(p[0] for p in feed) / len(feed)
+            txt += ['', f'💡 Alcance médio: Reels {mr:.0f} × posts {mf:.0f}. ' + ('Reels estão rendendo mais: priorize os desafios.' if mr > mf else 'Os posts estão rendendo mais que os Reels nesta semana.')]
+        elif melhor:
+            txt += ['', '💡 Repita o formato do 1º lugar nesta semana.']
+    txt += linhas and ['', '<i>' + esc(' · '.join(linhas)) + '</i>'] or []
+    tg('sendMessage', chat_id=admin(), text='\n'.join(txt), parse_mode='HTML', disable_web_page_preview=True)
+    hist['ultimo'] = {k: v for k, v in atual.items() if v is not None}
+    hist.setdefault('historico', []).append({'data': agora.date().isoformat(), **hist['ultimo']})
+    hist['historico'] = hist['historico'][-60:]
+    gh_gravar('ig/redes.json', json.dumps(hist, ensure_ascii=False, indent=1).encode(), sha, msg='redes: semana')
+    note('notice', 'Relatório das redes enviado: ' + ', '.join(f'{k}={v}' for k, v in atual.items()))
 
 
 def reenviar():
@@ -625,5 +738,7 @@ if __name__ == '__main__':
     elif cmd == 'facebook-teste':
         pid, _ = fb_pagina()
         note('notice', f'Página do Facebook encontrada: {pid}')
+    elif cmd == 'redes':
+        relatorio_redes()
     elif cmd == 'kit':
         kit_instagram(os.environ.get('KIT_DIA') or None, [c for c in os.environ.get('KIT_PECAS', '').replace(',', ' ').split() if c] or None)

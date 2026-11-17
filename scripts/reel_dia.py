@@ -233,7 +233,8 @@ def legenda_reel(r):
     linhas = [f'O que mexeu no {r.nome} hoje ({pct(r.vdia)}) 📈' if r.vdia >= 0 else f'O que mexeu no {r.nome} hoje ({pct(r.vdia)}) 📉', '']
     if top:
         linhas.append(f'A maior reação veio às {top["hora"]}: {pct(top[r.campo])} em 30 minutos.')
-    linhas += [q, '', 'Conteúdo educacional, não é recomendação. Todo pregão em lectnex.com.br.',
+    linhas += [q, '', '💬 Comunidade de traders no Discord: discord.gg/kM6YcQA82P',
+               'Conteúdo educacional, não é recomendação. Todo pregão em lectnex.com.br.',
                '#ibovespa #dolar #daytrade #miniindice #minidolar #b3 #mercadofinanceiro']
     return '\n'.join(linhas)
 

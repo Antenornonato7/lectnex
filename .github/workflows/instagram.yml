@@ -9,7 +9,7 @@ on:
       acao:
         description: 'teste (confere token e conta), renovar, processar, reenviar (pedidos sem botão) ou kit (propõe post, Reels e story do Kit do dia)'
         type: choice
-        options: [teste, renovar, processar, reenviar, kit, facebook-teste, facebook-perfil, facebook-hoje, facebook-apresentacao]
+        options: [teste, renovar, processar, reenviar, kit, facebook-teste, facebook-perfil, facebook-hoje, facebook-apresentacao, redes]
         default: teste
       pecas:
         description: 'Só para kit: chaves do Kit do dia (ex.: "leitura termo"); vazio = gráfico, Reels e story do fechamento'
@@ -32,6 +32,7 @@ jobs:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           GITHUB_TOKEN: ${{ github.token }}
           KIT_PECAS: ${{ inputs.pecas }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: |
           if [ -z "$INSTAGRAM_TOKEN" ] && [ "${{ inputs.acao }}" = "teste" ]; then echo "::error::Falta o segredo INSTAGRAM_TOKEN."; exit 1; fi
           python3 coletor/instagram.py ${{ inputs.acao }}

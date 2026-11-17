@@ -90,7 +90,7 @@ def registrar(caminho, legenda):
         print(f'::warning::Kit do dia: não registrei a peça ({e.__class__.__name__}: {str(e)[:80]})')
 
 
-def registrar_video(caminho, legenda='', capa=None, chave='reel', nome='Reel do dia'):
+def registrar_video(caminho, legenda='', capa=None, chave='reel', nome='Reel do dia', x=''):
     """Reel (do dia ou da semana): guarda o MP4, a capa e a legenda para o kit das 19h30."""
     if not os.environ.get('GITHUB_TOKEN'):
         return
@@ -105,7 +105,7 @@ def registrar_video(caminho, legenda='', capa=None, chave='reel', nome='Reel do 
         for _ in range(3):
             bruto, sha = ler(f'kit/{hoje}/kit.json')
             kit = json.loads(bruto) if bruto else {'data': hoje, 'pecas': []}
-            kit.setdefault('reels', {})[chave] = {'nome': nome, 'legenda': legenda, 'hora': dt.datetime.now(BRT).strftime('%H:%M')}
+            kit.setdefault('reels', {})[chave] = {'nome': nome, 'legenda': legenda, 'hora': dt.datetime.now(BRT).strftime('%H:%M'), **({'x': x} if x else {})}
             try:
                 gravar(f'kit/{hoje}/kit.json', json.dumps(kit, ensure_ascii=False, indent=1).encode(), sha)
                 break

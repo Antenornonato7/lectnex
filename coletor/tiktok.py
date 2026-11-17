@@ -162,8 +162,8 @@ def legenda_do_dia(dia):
     try:
         import json
         kit = json.loads(urllib.request.urlopen(ig.RAW + f'kit/{dia}/kit.json', timeout=30).read())
-        pecas = {x['chave']: x.get('legenda', '') for x in kit['pecas']}
-        leg = pecas.get('reels') or pecas.get('grafico', '')
+        pecas = {x['chave']: x.get('legenda', '') for x in kit.get('pecas', [])}
+        leg = (kit.get('reels') or {}).get('reel', {}).get('legenda') or pecas.get('grafico', '')
         ig.note('notice', 'Legenda TikTok: ' + legenda_tiktok(leg).replace(chr(10), ' | '))
         enviar_legenda(leg)
     except Exception as e:
