@@ -52,7 +52,7 @@
             <div>
                 <span class="term-label text-lect-orange font-bold">LABORATÓRIO · <span class="lx-demo">SIMULAÇÃO</span></span>
                 <h1 class="font-display text-3xl sm:text-4xl font-bold mt-2 leading-tight">Simulador de pregão</h1>
-                <p class="text-slate-600 dark:text-slate-300 mt-2 max-w-2xl">Opere um <strong>dia real</strong> de mini índice ou mini dólar em replay, com as manchetes aparecendo no horário em que saíram. Dinheiro fictício. No fim, o seu resultado e os erros de risco.</p>
+                <p class="text-slate-600 dark:text-slate-300 mt-2 max-w-2xl">Opere um entre <strong>dezenas de dias reais</strong> de mini índice ou mini dólar em replay, com as manchetes aparecendo no horário em que saíram. Dinheiro fictício. No fim, o seu resultado e os erros de risco.</p>
             </div>
             <div class="flex flex-wrap gap-2 font-mono text-xs" id="pg-cfg">
                 <label class="flex flex-col gap-1"><span class="term-label">Dia</span><select id="pg-dia" class="lx-input !py-2 min-w-[11rem]"></select></label>
@@ -125,7 +125,7 @@
         const $ = id => document.getElementById(id);
         const SPEC = { win: { pv: 0.2, tick: 5, custo: 0.5, nome: 'WIN', stop: 150 }, wdo: { pv: 10, tick: 0.5, custo: 1.5, nome: 'WDO', stop: 10 } };
         let W = 800, H = 320; const PL = 8, PR = 64, PT = 14, PB = 26;
-        let dias = [], dia = null, ativo = 'win', serie = [], marc = [], i = 0, timer = null, vel = 600, rodando = false, fim = false;
+        let dias = [], origem = {}, dia = null, ativo = 'win', serie = [], marc = [], i = 0, timer = null, vel = 600, rodando = false, fim = false;
         let pos = 0, medio = 0, realizado = 0, custos = 0, ops = [], aberta = null, pico = 0, maxDD = 0, bloqueado = false, entradas = [];
         const SEMANA = new URLSearchParams(location.search).get('semana') === '1';
         const verif = (d, a, r, o) => { let h = 0x811c9dc5; for (const ch of `lectnex|${d}|${a}|${r}|${o}`) { h ^= ch.charCodeAt(0); h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(36).padStart(6, '0').slice(-6); };
@@ -143,7 +143,7 @@
 
         function carregarDia(d) {
             parar(); dia = d; ativo = $('pg-ativo').value;
-            return fetch(`data/dias/${d}.json`, { cache: 'no-store' }).then(r => r.json()).then(j => {
+            return fetch(`data/${origem[d] || 'dias'}/${d}.json`, { cache: 'no-store' }).then(r => r.json()).then(j => {
                 const k = ativo === 'win' ? 'ibov' : 'dolar', p = (j[k] || {}).pontos || [];
                 const t = SPEC[ativo].tick, conv = v => ativo === 'win' ? Math.round(v / t) * t : Math.round(v * 1000 / t) * t;
                 serie = p.filter(x => ativo === 'win' || min(x[0]) <= 18 * 60 + 25).map(x => [min(x[0]), conv(x[1])]);
@@ -156,7 +156,7 @@
         function reset() {
             i = 0; pos = 0; medio = 0; realizado = 0; custos = 0; ops = []; aberta = null; pico = 0; maxDD = 0; bloqueado = false; fim = false; entradas = [];
             $('pg-stop').value = SPEC[ativo].stop; $('pg-stop').step = SPEC[ativo].tick;
-            $('pg-feed').innerHTML = '<li class="text-slate-500 text-xs">As notícias de alto impacto aparecem aqui conforme o relógio anda.</li>';
+            $('pg-feed').innerHTML = `<li class="text-slate-500 text-xs">${origem[dia] === 'sim' ? 'Este pregão é do histórico e não tem manchetes gravadas: só o gráfico. Os pregões marcados "com manchetes" trazem as notícias no horário.' : 'As notícias de alto impacto aparecem aqui conforme o relógio anda.'}</li>`;
             $('pg-fim').classList.add('hidden'); $('pg-capa').classList.remove('hidden');
             $('pg-play').innerHTML = '<i class="ph-fill ph-play"></i><span>INICIAR</span>';
             botoes(); desenhar(); painel();
@@ -292,7 +292,7 @@
                     ${erros.length ? `<ul class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3">${erros.map(e => `<li class="flex gap-3 p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark"><i class="ph-duotone ${e[0]} text-2xl text-lect-orange shrink-0"></i><span class="text-sm"><strong class="block">${e[1]}</strong><span class="text-slate-600 dark:text-slate-400">${e[2]}</span></span></li>`).join('')}</ul>`
                     : `<p class="text-sm mt-2 text-slate-600 dark:text-slate-400">${ops.length ? 'Nenhum erro clássico de risco hoje. Disciplina vale mais que o resultado de um dia.' : 'Você não operou. Às vezes ficar de fora é a melhor decisão, mas experimente operar com stop.'}</p>`}
                 </div>
-                <div class="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm"><a href="futuros.html#risco" class="text-lect-teal hover:underline"><i class="ph-bold ph-calculator"></i> Calcule o tamanho certo da posição</a><a href="manchetes/${dia}.html" class="text-lect-teal hover:underline"><i class="ph-bold ph-newspaper"></i> As manchetes deste dia e a reação</a>${LX.dcBtn ? LX.dcBtn('link') : ''}</div>`;
+                <div class="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm"><a href="futuros.html#risco" class="text-lect-teal hover:underline"><i class="ph-bold ph-calculator"></i> Calcule o tamanho certo da posição</a>${origem[dia] === 'dias' ? `<a href="manchetes/${dia}.html" class="text-lect-teal hover:underline"><i class="ph-bold ph-newspaper"></i> As manchetes deste dia e a reação</a>` : ''}${LX.dcBtn ? LX.dcBtn('link') : ''}</div>`;
             $('pg-fim').classList.remove('hidden'); $('pg-fim').scrollIntoView({ behavior: 'smooth', block: 'start' });
             $('pg-outro').onclick = () => { const o = dias.filter(x => x !== dia); const n = o[Math.floor(Math.random() * o.length)] || dia; $('pg-dia').value = n; carregarDia(n); window.scrollTo({ top: 0, behavior: 'smooth' }); };
             if ($('pg-dc')) $('pg-dc').onclick = () => {
@@ -367,13 +367,16 @@
             else if (k === ' ') { e.preventDefault(); rodando ? pausar() : tocar(); }
         });
 
-        fetch('data/dias/indice.json', { cache: 'no-store' }).then(r => r.json()).then(j => {
-            dias = (j.dias || []).slice().reverse();
+        const idx = p => fetch(p, { cache: 'no-store' }).then(r => r.ok ? r.json() : { dias: [] }).catch(() => ({ dias: [] }));
+        Promise.all([idx('data/dias/indice.json'), idx('data/sim/indice.json')]).then(([j, h]) => {
+            (h.dias || []).forEach(d => { origem[d] = 'sim'; }); (j.dias || []).forEach(d => { origem[d] = 'dias'; });
+            dias = Object.keys(origem).sort().reverse();
+            if (!dias.length) throw new Error('sem pregões');
             const q = new URLSearchParams(location.search);
             if (q.get('ativo') === 'wdo') $('pg-ativo').value = 'wdo';
-            $('pg-dia').innerHTML = dias.map((d, n) => `<option value="${d}">${SEMANA && d === q.get('dia') ? '🎮 Pregão da semana' : `Pregão ${n + 1} (dia às cegas)`}</option>`).join('');
+            $('pg-dia').innerHTML = dias.map((d, n) => `<option value="${d}">${SEMANA && d === q.get('dia') ? '🎮 Pregão da semana' : `Pregão ${n + 1}${origem[d] === 'dias' ? ' · com manchetes' : ''}`}</option>`).join('');
             if (SEMANA) { const b = document.createElement('div'); b.className = 'mt-4 p-3 bg-[#5865F2]/10 border-l-4 border-[#5865F2] text-sm flex flex-wrap items-center gap-x-3 gap-y-1'; b.innerHTML = '<i class="ph-fill ph-discord-logo text-[#5865F2] text-xl"></i><span><strong>Desafio da semana:</strong> todo mundo joga este mesmo pregão. No fim, copie o resultado e cole no canal #ranking-simulador do Discord. Ranking na sexta.</span>'; document.querySelector('main > div').after(b); }
-            const ini = dias.includes(q.get('dia')) ? q.get('dia') : dias[Math.floor(Math.random() * Math.min(dias.length, 10))];
+            const ini = dias.includes(q.get('dia')) ? q.get('dia') : dias[Math.floor(Math.random() * dias.length)];
             $('pg-dia').value = ini; carregarDia(ini);
         }).catch(() => { $('pg-capa').innerHTML = '<span class="text-sm">Não consegui carregar os pregões agora. Tente de novo em instantes.</span>'; });
     })();
