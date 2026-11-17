@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T17:00-03:00",
+  "atualizado_em": "2026-11-17T17:03-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -328,6 +328,10 @@
     [
      "16:40",
      169564.0
+    ],
+    [
+     "16:45",
+     169477.0
     ]
    ]
   },
@@ -720,7 +724,11 @@
     ],
     [
      "17:00",
-     5.7815
+     5.7843
+    ],
+    [
+     "17:03",
+     5.782
     ]
    ]
   },
@@ -1356,6 +1364,19 @@
     "tickers": [
      "VALE3"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:00",
+    "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/ibovespa-incluira-acoes-de-empresas-brasileiras-listadas-no-exterior-a-partir-de-2027.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -2226,6 +2247,17 @@
    "tickers": [
     "VALE3"
    ]
+  },
+  {
+   "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/ibovespa-incluira-acoes-de-empresas-brasileiras-listadas-no-exterior-a-partir-de-2027.shtml",
+   "publicado": "2026-11-17T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2255,7 +2287,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T17:00-03:00",
+ "atualizado_em": "2026-11-17T17:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2268,6 +2300,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa incluirá ações de empresas brasileiras listadas no exterior a partir de 2027",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/ibovespa-incluira-acoes-de-empresas-brasileiras-listadas-no-exterior-a-partir-de-2027.shtml",
+   "publicado": "2026-11-17T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Vale tem contrato de 20 anos de compra de minério da Cedro",
    "fonte": "Folha",
