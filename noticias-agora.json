@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T16:15-03:00",
+  "atualizado_em": "2026-11-17T16:18-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -295,7 +295,11 @@
     ],
     [
      "16:00",
-     169793.0
+     169826.0
+    ],
+    [
+     "16:03",
+     169808.0
     ]
    ]
   },
@@ -652,7 +656,11 @@
     ],
     [
      "16:15",
-     5.7739
+     5.7735
+    ],
+    [
+     "16:18",
+     5.7716
     ]
    ]
   },
@@ -1229,6 +1237,19 @@
     "impacto": "medio",
     "ativos": [
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:15",
+    "titulo": "We’re watching Cramer’s favorite market indicator for a signal to buy stocks",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/investingclub/2026/11/17/were-watching-cramers-favorite-indicator-for-a-signal-to-buy-stocks.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
     ],
     "tickers": [],
     "ibov30": null,
@@ -2052,6 +2073,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "We’re watching Cramer’s favorite market indicator for a signal to buy stocks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/17/were-watching-cramers-favorite-indicator-for-a-signal-to-buy-stocks.html",
+   "publicado": "2026-11-17T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2081,7 +2113,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T16:15-03:00",
+ "atualizado_em": "2026-11-17T16:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2094,6 +2126,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "We’re watching Cramer’s favorite market indicator for a signal to buy stocks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/investingclub/2026/11/17/were-watching-cramers-favorite-indicator-for-a-signal-to-buy-stocks.html",
+   "publicado": "2026-11-17T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Durigan prevê impacto inicial da reforma tributária sobre inflação",
    "fonte": "Agência Brasil",
