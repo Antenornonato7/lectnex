@@ -51,6 +51,43 @@ def semana_var(sym, seg, sex):
     return fim[-1], (fim[-1] / ini[-1] - 1) * 100
 
 
+def ao_vivo(caminho):
+    try:
+        req = urllib.request.Request(f'https://raw.githubusercontent.com/{os.environ.get("GITHUB_REPOSITORY", "Antenornonato7/lectnex")}/ao-vivo/{caminho}', headers=UA)
+        return json.load(urllib.request.urlopen(req, timeout=20))
+    except Exception:
+        return None
+
+
+def destaques_semana(seg, sex):
+    """As 3 manchetes com maior reação em 30 min na semana (data/dias), com o dia para linkar a página do dia."""
+    out = []
+    for d in (ler('data/dias/indice.json') or {}).get('dias', []):
+        if not (seg.isoformat() <= d <= sex.isoformat()):
+            continue
+        for mk in (ler(f'data/dias/{d}.json') or {}).get('marcadores', []):
+            for campo, nome in (('ibov30', 'Ibovespa'), ('dolar30', 'dólar')):
+                if mk.get(campo) is not None:
+                    out.append((abs(mk[campo]), d, mk, nome, mk[campo]))
+    out.sort(key=lambda x: -x[0])
+    vistos, top = set(), []
+    for _, d, mk, nome, v in out:
+        h, m_ = map(int, mk['hora'].split(':'))
+        if mk['titulo'][:40] in vistos or any(d == d2 and abs(h * 60 + m_ - int(mk2['hora'][:2]) * 60 - int(mk2['hora'][3:5])) < 30 for d2, mk2, _, _ in top):
+            continue  # a mesma reação aparece em várias manchetes do mesmo momento: fica a primeira
+        vistos.add(mk['titulo'][:40]); top.append((d, mk, nome, v))
+        if len(top) == 3:
+            break
+    return top
+
+
+def rankings():
+    """Pódio do simulador (sexta) e do desafio SUBIU ou CAIU (último pregão da semana), gravados pelo robô do Discord."""
+    sim, des = ao_vivo('discord/simulador.json') or {}, ao_vivo('discord/desafio.json') or {}
+    hs = (sim.get('historico') or [{}])[-1] if sim.get('publicado') else {}
+    return [x for x in hs.get('top', [])][:3], (des.get('ranking_anterior') or [])[:3]
+
+
 def main():
     hoje = dt.datetime.now(BRT).date()
     seg = hoje - dt.timedelta(days=(hoje.weekday() - 0) % 7 or 7) if hoje.weekday() != 6 else hoje - dt.timedelta(days=6)
@@ -76,6 +113,10 @@ def main():
     cal = (ler(f'data/semana/{prox.isoformat()}.json') or {}).get('eventos', []) or [e for e in (ler('data/calendario.json') or {}).get('eventos', []) if prox.isoformat() <= e.get('data', '') <= (prox + dt.timedelta(days=6)).isoformat()]
     altos = sorted([e for e in cal if (e.get('importancia') or 1) >= 3], key=lambda e: (e['data'], e.get('hora') or ''))[:7]
     titulo = f'Resumo da semana · {seg:%d/%m} a {sex:%d/%m}'
+    top3 = destaques_semana(seg, sex)
+    pod_sim, pod_des = rankings()
+    med = ['🥇', '🥈', '🥉']
+    brl = lambda v: ('+' if v > 0 else '−' if v < 0 else '') + 'R$ ' + f'{abs(v):,}'.replace(',', '.')
 
     # Telegram (HTML)
     e = tg.e
@@ -84,8 +125,11 @@ def main():
     if us: t.append(f'Dólar <b>R$ {br(us, 3)}</b> ({pct(usv)} na semana)')
     if juros: t.append(f'Juro prefixado {juros[0]}: <b>{br(juros[1])}%</b> ({"+" if juros[2] >= 0 else "−"}{abs(round(juros[2]))} bps)')
     if tot: t += ['', f'🎯 Viés do modelo: <b>{ok}/{tot}</b> acertos na semana']
+    if top3: t += ['', '📰 <b>As notícias que mais mexeram</b>'] + [f'{dt.date.fromisoformat(d):%d/%m} {mk["hora"]} · {e(mk["titulo"][:90])} → {nome} {pct(v)} em 30 min' for d, mk, nome, v in top3]
     if surp: t += ['', '⚡ <b>Surpresas</b>'] + [f'{FLAG.get(x.get("pais"), "")} {e(x["evento"])}: {e(x["resultado"])} (cons. {e(x.get("consenso") or "—")})' for x in surp[:5]]
     if altos: t += ['', '📅 <b>Próxima semana</b>'] + [f'{DIAS[dt.date.fromisoformat(x["data"]).weekday()]} {e(x.get("hora") or "")} {FLAG.get(x.get("pais"), "")} {e(x["evento"])}' for x in altos]
+    if pod_sim: t += ['', '🎮 <b>Ranking do simulador</b>'] + [f'{med[i]} {e(x["nome"])}: {brl(x["r"])}' for i, x in enumerate(pod_sim)]
+    t += ['', f'🎮 Segunda sai o novo pregão da semana: <a href="{SITE}simulador.html">jogue grátis</a> · ranking no <a href="https://discord.gg/kM6YcQA82P">Discord</a>']
     t += ['', f'<a href="{SITE}semana/{prox.isoformat()}.html">Agenda completa da semana →</a>', '<i>Educacional. Não é recomendação.</i>']
     texto_tg = '\n'.join(t)
 
@@ -95,8 +139,14 @@ def main():
     if us: m.append(f'- **Dólar à vista:** R$ {br(us, 3)} ({pct(usv)} na semana)')
     if juros: m.append(f'- **Juro prefixado {juros[0]} (Tesouro):** {br(juros[1])}% ao ano ({"+" if juros[2] >= 0 else "−"}{abs(round(juros[2]))} bps)')
     if tot: m += ['', f'**Placar do viés do modelo (experimental):** {ok} de {tot} acertos na semana. [Ver o histórico]({SITE}#placar-term)']
+    if top3: m += ['', '## As notícias que mais mexeram'] + [f'- **{dt.date.fromisoformat(d):%d/%m} {mk["hora"]}** · {mk["titulo"]} → {nome} **{pct(v)}** em 30 min ([o dia completo]({SITE}manchetes/{d}.html))' for d, mk, nome, v in top3]
     if surp: m += ['', '## Surpresas da semana'] + [f'- {x["evento"]}: **{x["resultado"]}** (consenso {x.get("consenso") or "—"}){" — " + x["surpresa"]["reacao"] if x["surpresa"].get("reacao") else ""}' for x in surp[:6]]
     if altos: m += ['', '## O que move WIN, WDO e DI na próxima semana'] + [f'- **{DIAS[dt.date.fromisoformat(x["data"]).weekday()]} {x.get("hora") or ""}** · {x["evento"]}' for x in altos]
+    m += ['', '## Treine no simulador']
+    if pod_sim: m += ['Pódio do pregão da semana:'] + [f'{med[i]} **{x["nome"]}**: {brl(x["r"])} em {x["ops"]} operação(ões)' for i, x in enumerate(pod_sim)] + ['']
+    if pod_des: m += ['Desafio SUBIU ou CAIU no Discord:'] + [f'{med[i]} **{x["nome"]}**: {x["pts"]} ponto(s)' for i, x in enumerate(pod_des)] + ['']
+    m += [f'Segunda sai o novo **pregão da semana**: opere um dia real de WIN ou WDO com as manchetes no horário, dinheiro fictício. [Jogar grátis]({SITE}simulador.html?utm_source=newsletter&utm_medium=email) · [Ranking no Discord](https://discord.gg/kM6YcQA82P)',
+          '', f'👑 A Lectnex Pro está em construção. [Entre na lista de fundadores (grátis)]({SITE}pro.html?utm_source=newsletter&utm_medium=email) e vote no que vem primeiro.']
     m += ['', f'[Agenda completa da semana]({SITE}semana/{prox.isoformat()}.html) · [Mercado Hoje]({SITE})', '', '_Conteúdo educacional. Não é recomendação de investimento._']
     texto_md = '\n'.join(m)
 
