@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T12:55-03:00",
+  "atualizado_em": "2026-11-17T12:58-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -135,7 +135,11 @@
     ],
     [
      "12:40",
-     171523.0
+     171375.0
+    ],
+    [
+     "12:43",
+     171320.0
     ]
    ]
   },
@@ -332,7 +336,11 @@
     ],
     [
      "12:55",
-     5.7966
+     5.7956
+    ],
+    [
+     "12:58",
+     5.794
     ]
    ]
   },
@@ -723,7 +731,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.03
    },
    {
     "hora": "12:41",
@@ -1437,7 +1445,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T12:55-03:00",
+ "atualizado_em": "2026-11-17T12:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1450,6 +1458,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
+   "publicado": "2026-11-17T12:55-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
    "fonte": "CNBC",
@@ -1558,17 +1577,6 @@
     "PETR4",
     "VALE3"
    ]
-  },
-  {
-   "titulo": "Dólar chega a R$ 5,81 à espera de votação do plano Moretti no Senado; Bolsa sobe",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-chega-a-r-579-com-mercado-a-espera-de-votacao-de-projeto-fiscal-no-senado.shtml",
-   "publicado": "2026-11-17T11:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Ibovespa sobe mais de 1% de olho em plano fiscal, mas mercado segue cauteloso",
