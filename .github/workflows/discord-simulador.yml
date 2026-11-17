@@ -7,7 +7,7 @@ on:
     inputs:
       acao:
         type: choice
-        options: [semana, ranking, quem]
+        options: [semana, ranking, quem, post]
         default: semana
 
 permissions:
@@ -23,4 +23,9 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 coletor/discord_simulador.py ${{ inputs.acao }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        run: |
+          pip install -q pillow
+          python3 coletor/discord_simulador.py ${{ inputs.acao }}

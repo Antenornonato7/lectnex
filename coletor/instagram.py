@@ -43,7 +43,7 @@ def pela_pagina():
     return os.environ.get('INSTAGRAM_TOKEN', '').strip().startswith('EAA')
 FILA = 'ig/fila.json'
 TIPOS = {'grafico': 'Gráfico do dia (notícia × preço)', 'carrossel': 'Carrossel da semana', 'reel': 'Reels do dia',
-         'story': 'Story do fechamento', 'reel-semana': 'Reels da semana'}
+         'story': 'Story do fechamento', 'reel-semana': 'Reels da semana', 'simulador': 'Simulador: pregão da semana'}
 
 
 def note(k, m):

@@ -87,6 +87,43 @@ def semana():
     except Exception:
         pass
     note('notice', f'Simulador: pregão da semana {dia} ({ativo}).')
+    try:
+        post_redes(dia, ativo, link)
+    except Exception as e:
+        note('warning', f'Simulador: post das redes não gerado ({e.__class__.__name__}: {str(e)[:120]})')
+
+
+def post_redes(dia, ativo, link):
+    """Imagem "Você teria lucrado neste pregão?" no Telegram privado com botão de publicar (Instagram + Facebook) e o texto do X."""
+    import tempfile
+    import instagram as ig
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+    from simulador_post import gerar, textos
+    pasta = tempfile.mkdtemp()
+    img, arq = os.path.join(pasta, 'post.jpg'), os.path.join(pasta, 'legenda.txt')
+    gerar(dia, ativo, img)
+    leg, x = textos(ativo, link.replace('&semana=1', ''))
+    open(arq, 'w', encoding='utf-8').write(leg)
+    with open(img, 'rb') as f:
+        _foto(ig, f.read(), 'Prévia: post do Simulador (pregão da semana)')
+    if os.environ.get('INSTAGRAM_TOKEN', '').strip():
+        ig.propor('simulador', arq, [img])
+    else:
+        ig.tg('sendMessage', chat_id=ig.admin(), text=leg, disable_web_page_preview=True)
+    ig.enviar_x(x)
+
+
+def _foto(ig, dados, legenda):
+    """sendPhoto com arquivo (multipart): o Telegram recebe a imagem sem precisar de URL pública."""
+    import uuid
+    import urllib.request
+    b = uuid.uuid4().hex
+    corpo = (f'--{b}\r\nContent-Disposition: form-data; name="chat_id"\r\n\r\n{ig.admin()}\r\n'
+             f'--{b}\r\nContent-Disposition: form-data; name="caption"\r\n\r\n{legenda}\r\n'
+             f'--{b}\r\nContent-Disposition: form-data; name="photo"; filename="post.jpg"\r\nContent-Type: image/jpeg\r\n\r\n').encode() + dados + f'\r\n--{b}--\r\n'.encode()
+    tok = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip()
+    req = urllib.request.Request(f'https://api.telegram.org/bot{tok}/sendPhoto', data=corpo, headers={'Content-Type': f'multipart/form-data; boundary={b}'})
+    urllib.request.urlopen(req, timeout=60).read()
 
 
 def mensagens(cid, depois):
@@ -139,6 +176,9 @@ if __name__ == '__main__':
     try:
         if cmd == 'quem':
             note('notice', 'Robô: ' + dc._req('GET', '/users/@me')['id'])
+        elif cmd == 'post':
+            est, _ = gh_ler(ESTADO)
+            post_redes(est['dia'], est['ativo'], f'{SITE}?dia={est["dia"]}&ativo={est["ativo"]}')
         elif cmd == 'ranking':
             ranking()
         else:
