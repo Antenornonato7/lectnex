@@ -13,7 +13,7 @@ const PAGINAS = [...raiz, ...sub('semana'), ...sub('leitura'), ...sub('acoes').f
     ...sub('glossario').filter(f => /\/(rolagem|dv01|mini-indice-win|risk-on-e-risk-off)\.html$/.test(f))];
 const MOBILE = ['vencimento-mini-indice-mini-dolar.html', 'calculadora-ir-day-trade.html', 'valor-do-ponto-mini-indice-mini-dolar.html', 'index.html', 'macro.html', 'futuros.html', 'acoes.html', 'laboratorio.html', 'status.html', 'glossario.html', 'comece.html', 'copom.html', 'links.html', 'hoje.html', 'manchetes.html', 'placar.html'];
 // Terceiros fora do nosso controle: bloqueados para o teste ser estável e rápido.
-const BLOQUEAR = /(tradingview|googleapis|gstatic|onesignal|googletagmanager|google-analytics|t\.me|instagram|tiktok|x\.com)/;
+const BLOQUEAR = /^https?:\/\/[^/]*(tradingview|googleapis|gstatic|onesignal|googletagmanager|google-analytics|t\.me|instagram|tiktok|x\.com)/;  // só o domínio (a página tiktok-callback.html é nossa)
 const LIXO = /\b(undefined|NaN)\b|\[object Object\]/;
 
 (async () => {

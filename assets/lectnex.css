@@ -170,3 +170,10 @@ h1, h2, h3, .font-display { text-wrap: balance; }
 p, li, dd { text-wrap: pretty; }
 /* content-visibility foi testado no Mercado Hoje e desligado: o tamanho estimado das seções fazia os links internos
    (#leitura, #indicadores…) pararem no lugar errado. Reavaliar quando as seções tiverem altura estável. */
+
+/* Lectnex Pro: opções da lista de espera */
+.pro-op { display: flex; align-items: flex-start; gap: .75rem; padding: .8rem .9rem; border: 1px solid #CBD5E1; cursor: pointer; transition: border-color .15s, background .15s; }
+.dark .pro-op { border-color: #1E2D42; }
+.pro-op:hover { border-color: #009988; }
+.pro-op:has(input:checked) { border-color: #009988; background: rgba(0, 153, 136, .08); }
+.pro-op input { margin-top: .3rem; }

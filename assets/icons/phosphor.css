@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=df21700c") format("woff");
+  src: url("./Phosphor.woff?v=5bc35e81") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -121,6 +121,9 @@
 .ph.ph-chart-line-up:before {
   content: "\e156";
 }
+.ph.ph-chats-circle:before {
+  content: "\e17e";
+}
 .ph.ph-check:before {
   content: "\e182";
 }
@@ -147,6 +150,9 @@
 }
 .ph.ph-cookie:before {
   content: "\e6ca";
+}
+.ph.ph-crown:before {
+  content: "\e614";
 }
 .ph.ph-cube:before {
   content: "\e1da";
@@ -388,6 +394,9 @@
 .ph.ph-warning-octagon:before {
   content: "\e4e4";
 }
+.ph.ph-wrench:before {
+  content: "\e5d4";
+}
 .ph.ph-x:before {
   content: "\e4f6";
 }
@@ -399,7 +408,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=df21700c") format("woff");
+  src: url("./Phosphor-Bold.woff?v=5bc35e81") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -518,6 +527,9 @@
 .ph-bold.ph-chart-line-up:before {
   content: "\e156";
 }
+.ph-bold.ph-chats-circle:before {
+  content: "\e17e";
+}
 .ph-bold.ph-check:before {
   content: "\e182";
 }
@@ -544,6 +556,9 @@
 }
 .ph-bold.ph-cookie:before {
   content: "\e6ca";
+}
+.ph-bold.ph-crown:before {
+  content: "\e614";
 }
 .ph-bold.ph-cube:before {
   content: "\e1da";
@@ -785,6 +800,9 @@
 .ph-bold.ph-warning-octagon:before {
   content: "\e4e4";
 }
+.ph-bold.ph-wrench:before {
+  content: "\e5d4";
+}
 .ph-bold.ph-x:before {
   content: "\e4f6";
 }
@@ -796,7 +814,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=df21700c") format("woff");
+  src: url("./Phosphor-Fill.woff?v=5bc35e81") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -915,6 +933,9 @@
 .ph-fill.ph-chart-line-up:before {
   content: "\e156";
 }
+.ph-fill.ph-chats-circle:before {
+  content: "\e17e";
+}
 .ph-fill.ph-check:before {
   content: "\e182";
 }
@@ -941,6 +962,9 @@
 }
 .ph-fill.ph-cookie:before {
   content: "\e6ca";
+}
+.ph-fill.ph-crown:before {
+  content: "\e614";
 }
 .ph-fill.ph-cube:before {
   content: "\e1da";
@@ -1182,6 +1206,9 @@
 .ph-fill.ph-warning-octagon:before {
   content: "\e4e4";
 }
+.ph-fill.ph-wrench:before {
+  content: "\e5d4";
+}
 .ph-fill.ph-x:before {
   content: "\e4f6";
 }
@@ -1193,7 +1220,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=df21700c") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=5bc35e81") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1452,6 +1479,14 @@
   content: "\e157";
   margin-left: -1em;
 }
+.ph-duotone.ph-chats-circle:before {
+  content: "\e17e";
+  opacity: 0.2;
+}
+.ph-duotone.ph-chats-circle:after {
+  content: "\e17f";
+  margin-left: -1em;
+}
 .ph-duotone.ph-check:before {
   content: "\e182";
   opacity: 0.2;
@@ -1522,6 +1557,14 @@
 }
 .ph-duotone.ph-cookie:after {
   content: "\e6cb";
+  margin-left: -1em;
+}
+.ph-duotone.ph-crown:before {
+  content: "\e614";
+  opacity: 0.2;
+}
+.ph-duotone.ph-crown:after {
+  content: "\e615";
   margin-left: -1em;
 }
 .ph-duotone.ph-cube:before {
@@ -2162,6 +2205,14 @@
 }
 .ph-duotone.ph-warning-octagon:after {
   content: "\e4e5";
+  margin-left: -1em;
+}
+.ph-duotone.ph-wrench:before {
+  content: "\e5d4";
+  opacity: 0.2;
+}
+.ph-duotone.ph-wrench:after {
+  content: "\e5d5";
   margin-left: -1em;
 }
 .ph-duotone.ph-x:before {

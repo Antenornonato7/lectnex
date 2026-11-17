@@ -33,6 +33,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           KIT_PECAS: ${{ inputs.pecas }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY || secrets.SITE_LECTNEX }}
         run: |
           if [ -z "$INSTAGRAM_TOKEN" ] && [ "${{ inputs.acao }}" = "teste" ]; then echo "::error::Falta o segredo INSTAGRAM_TOKEN."; exit 1; fi
           python3 coletor/instagram.py ${{ inputs.acao }}
