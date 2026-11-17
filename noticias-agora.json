@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-17",
-  "atualizado_em": "2026-11-17T17:55-03:00",
+  "atualizado_em": "2026-11-17T17:58-03:00",
   "ibov": {
    "anterior": 169295.4,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     169838.0
+     169817.0
     ]
    ]
   },
@@ -780,7 +780,11 @@
     ],
     [
      "17:55",
-     5.7766
+     5.7746
+    ],
+    [
+     "17:58",
+     5.7735
     ]
    ]
   },
@@ -1594,7 +1598,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": -0.1
    },
    {
     "hora": "17:31",
@@ -1607,7 +1611,20 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.01
+   },
+   {
+    "hora": "17:32",
+    "titulo": "Senado adia votação do ajuste fiscal em meio a risco de desidratar impacto de R$ 56 bi",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/senado-adia-votacao-do-ajuste-fiscal-em-meio-a-risco-de-desidratar-impacto-de-r-56-bi/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.01
    },
    {
     "hora": "17:36",
@@ -1651,17 +1668,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ajuste fiscal no Senado, Durigan com investidores e falas do Fed: o que move os mercados",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNN0FzWUppWmF3UjNHOEpQRnQxdTJneEhsUkJabFdiQ3ZOYm9ESjR5OFpNNEZQcDhnWHdheEoteENxYzN6T2x2MmRia0xmdTh2XzBsVlc5MWxxS3dsQXBOaTJ1RkRNbmI1UEV2eDhJZzVKcHpLaG9ibURVekFuREdRcE4zamRTQlE3djBDM3Q1UTRCM3hIVkUteGxHMGdhc1Q2RVd2UUZ5N1FzcVVPQWFtdktkTldpZnJEc2hzM2xR?oc=5",
-   "publicado": "2026-11-17T05:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ibovespa tenta reagir após tombo com saída de capital estrangeiro e balanço da Nvidia no radar",
    "fonte": "Estadão",
@@ -2568,6 +2574,17 @@
    "tickers": []
   },
   {
+   "titulo": "Senado adia votação do ajuste fiscal em meio a risco de desidratar impacto de R$ 56 bi",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/senado-adia-votacao-do-ajuste-fiscal-em-meio-a-risco-de-desidratar-impacto-de-r-56-bi/",
+   "publicado": "2026-11-17T17:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar pode chegar a R$ 5,50 com pressão de três fatores sobre o real, aponta Citi",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNQXlGaFM5TkN0M2I0d21EVEVoT29rWHlwQUNKazRkNl9pWjdDd0pWb0hJM3JvX3lZNlNTRmxKN3ZNN1l5SjFQYWZqaGl4YlF2NEQwZ0JXcjN4MVdGWXZTRXN5eXNHTEMzSTRVLUkwdG4yNzItSjh0THRUWGZVRktGMTdPSldmTEhZQVFaRmtrTE5XYzd2ZElENm5YWnhQUUx3Vkp2QnBRT2F0enhxWWZFTHZaVngwLWJzVXBpYlBMNE1VVnQ0VEJ5T1djZmw2cWg5dFNr0gHYAUFVX3lxTE1GUkNyUXZOcWxVLWxTNnNJc3lsYlhRbVZkdHpQZ1BHT3hqZTJBR2tPbFY2a1BfNy1xdFU4OC1uZDZhU3RaVXltVXJVaEhvRmpnQTNGQ3BNS0x1ajh6NFRrLWFiemFodHh0SFVuZ0Q1V1ZwZlFEbEtPNjV6U3ZmWlM2Vm45Uk52cF9qWXpZVjNqUXVidU5TcHB3RFl5R3lKTUVIZ1p2Y0Vua0JJRTJKeUViUnZ2TU8wdmNVUmhCMUdXb2ZSVGRucS1keTdsY0NzdDAwLVlFZ1JvWg?oc=5",
@@ -2628,7 +2645,7 @@
    "em": "2026-11-17T12:33:07+00:00"
   }
  ],
- "atualizado_em": "2026-11-17T17:55-03:00",
+ "atualizado_em": "2026-11-17T17:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2661,6 +2678,17 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Senado adia votação do ajuste fiscal em meio a risco de desidratar impacto de R$ 56 bi",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/senado-adia-votacao-do-ajuste-fiscal-em-meio-a-risco-de-desidratar-impacto-de-r-56-bi/",
+   "publicado": "2026-11-17T17:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -2815,19 +2843,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "B3 prepara BDR da Anthropic para estreia simultânea ao IPO na Nasdaq",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPc3ZRV0V2VXhIdjhPRjJqMk12QnN5YXpKWlpzV2VzZjJFZUtzaUU1R1VUaFRVYUU3SXl4bllvT1kwTGRxSE9zQWo1ZTgtdDlpMWo4S3E0MGV4Q1Z6MXp4cGRBUjAySndIWExWM2ZRVng0VkM2cWh4dE01dWpaa1QtaURlTFZOM3RVRFBJcTFRT3dnMGNoNG1lYXZkREZxaVhrUF9JaWE5N0RsTmd3S2prbzZucEdpeGFjVmw3MjBR?oc=5",
-   "publicado": "2026-11-17T16:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
   }
  ]
 }
