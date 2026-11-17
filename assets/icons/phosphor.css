@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=e2b68cc8") format("woff");
+  src: url("./Phosphor.woff?v=e59d6330") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -241,6 +241,9 @@
 .ph.ph-handshake:before {
   content: "\e582";
 }
+.ph.ph-image:before {
+  content: "\e2ca";
+}
 .ph.ph-instagram-logo:before {
   content: "\e2d0";
 }
@@ -426,7 +429,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=e2b68cc8") format("woff");
+  src: url("./Phosphor-Bold.woff?v=e59d6330") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -665,6 +668,9 @@
 .ph-bold.ph-handshake:before {
   content: "\e582";
 }
+.ph-bold.ph-image:before {
+  content: "\e2ca";
+}
 .ph-bold.ph-instagram-logo:before {
   content: "\e2d0";
 }
@@ -850,7 +856,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=e2b68cc8") format("woff");
+  src: url("./Phosphor-Fill.woff?v=e59d6330") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1089,6 +1095,9 @@
 .ph-fill.ph-handshake:before {
   content: "\e582";
 }
+.ph-fill.ph-image:before {
+  content: "\e2ca";
+}
 .ph-fill.ph-instagram-logo:before {
   content: "\e2d0";
 }
@@ -1274,7 +1283,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=e2b68cc8") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=e59d6330") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1851,6 +1860,14 @@
 }
 .ph-duotone.ph-handshake:after {
   content: "\e583";
+  margin-left: -1em;
+}
+.ph-duotone.ph-image:before {
+  content: "\e2ca";
+  opacity: 0.2;
+}
+.ph-duotone.ph-image:after {
+  content: "\e2cb";
   margin-left: -1em;
 }
 .ph-duotone.ph-instagram-logo:before {
