@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T16:38-03:00",
+  "atualizado_em": "2026-11-18T17:08-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -311,11 +311,31 @@
     ],
     [
      "16:20",
-     167511.0
+     167561.0
     ],
     [
-     "16:23",
-     167534.0
+     "16:25",
+     167598.0
+    ],
+    [
+     "16:30",
+     167538.0
+    ],
+    [
+     "16:35",
+     167470.0
+    ],
+    [
+     "16:40",
+     167507.0
+    ],
+    [
+     "16:45",
+     167509.0
+    ],
+    [
+     "16:50",
+     167638.0
     ]
    ]
   },
@@ -688,11 +708,35 @@
     ],
     [
      "16:35",
-     5.8596
+     5.8646
     ],
     [
-     "16:38",
-     5.8591
+     "16:40",
+     5.8646
+    ],
+    [
+     "16:45",
+     5.8636
+    ],
+    [
+     "16:50",
+     5.8641
+    ],
+    [
+     "16:55",
+     5.8646
+    ],
+    [
+     "17:00",
+     5.8641
+    ],
+    [
+     "17:05",
+     5.8611
+    ],
+    [
+     "17:08",
+     5.8616
     ]
    ]
   },
@@ -1377,7 +1421,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.14,
     "dolar30": 0.14
    },
    {
@@ -1391,23 +1435,52 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": 0.02,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "16:43",
+    "titulo": "Por que o real caiu mais que outras moedas? Commodities explicam só parte",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFpFeWlxTkRBZzl3THAwT0s4VGQ0a2pLXy1OeDdKbHBndEhiOHBzNGlnb3ctVk1DVjFLNkFIX3FoVVpqQnlYaU8wQlZES21TQlRTMTZIdlU0ZHdpbjY0ZXdrMWhMaDZkRVcteWYySVRTRGR0ZWFnX29GYTVDQVltdjhLUk5lOENrR0UyU9IBkgFBVV95cUxNQzZzRVl2c3R4NGtCZGM1QmJ3eFRBMHdaQUFHa3lOSjNvbGRORjhEeEtGVGJxTEhpT1BYWU12MHpWLTd0enA1b1RQa2NGUDlodVVZRG1DMlYybFNZa05Hd2dFRTl1b2p3cV9NMTNXLWVDNnBHWU5JNjBRWDNSODBGRVFwWXFROFJuZWlFMmx2ak11QQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.05
+   },
+   {
+    "hora": "16:43",
+    "titulo": "Ata do Fed mostra preocupação com inflação e possibilidade de novas altas de juros",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-fed-mostra-preocupacao-com-inflacao-e-possibilidade-de-novas-altas-de-juros.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.05
+   },
+   {
+    "hora": "17:00",
+    "titulo": "ANP rejeita pedidos para suspender processo de revisão das tarifas de gasodutos",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/anp-rejeita-pedidos-para-suspender-processo-de-revisao-das-tarifas-de-gasodutos.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html",
-   "publicado": "2026-11-18T04:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "B3 muda metodologia do Ibovespa para permitir BDRs a partir de maio de 2027",
    "fonte": "Money Times",
@@ -2332,6 +2405,40 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Por que o real caiu mais que outras moedas? Commodities explicam só parte",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFpFeWlxTkRBZzl3THAwT0s4VGQ0a2pLXy1OeDdKbHBndEhiOHBzNGlnb3ctVk1DVjFLNkFIX3FoVVpqQnlYaU8wQlZES21TQlRTMTZIdlU0ZHdpbjY0ZXdrMWhMaDZkRVcteWYySVRTRGR0ZWFnX29GYTVDQVltdjhLUk5lOENrR0UyU9IBkgFBVV95cUxNQzZzRVl2c3R4NGtCZGM1QmJ3eFRBMHdaQUFHa3lOSjNvbGRORjhEeEtGVGJxTEhpT1BYWU12MHpWLTd0enA1b1RQa2NGUDlodVVZRG1DMlYybFNZa05Hd2dFRTl1b2p3cV9NMTNXLWVDNnBHWU5JNjBRWDNSODBGRVFwWXFROFJuZWlFMmx2ak11QQ?oc=5",
+   "publicado": "2026-11-18T16:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ata do Fed mostra preocupação com inflação e possibilidade de novas altas de juros",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-fed-mostra-preocupacao-com-inflacao-e-possibilidade-de-novas-altas-de-juros.shtml",
+   "publicado": "2026-11-18T16:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "ANP rejeita pedidos para suspender processo de revisão das tarifas de gasodutos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/anp-rejeita-pedidos-para-suspender-processo-de-revisao-das-tarifas-de-gasodutos.shtml",
+   "publicado": "2026-11-18T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2361,7 +2468,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T16:38-03:00",
+ "atualizado_em": "2026-11-18T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2375,10 +2482,56 @@
  ],
  "noticias": [
   {
+   "titulo": "ANP rejeita pedidos para suspender processo de revisão das tarifas de gasodutos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/anp-rejeita-pedidos-para-suspender-processo-de-revisao-das-tarifas-de-gasodutos.shtml",
+   "publicado": "2026-11-18T17:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+   "publicado": "2026-11-18T16:47-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Por que o real caiu mais que outras moedas? Commodities explicam só parte",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFpFeWlxTkRBZzl3THAwT0s4VGQ0a2pLXy1OeDdKbHBndEhiOHBzNGlnb3ctVk1DVjFLNkFIX3FoVVpqQnlYaU8wQlZES21TQlRTMTZIdlU0ZHdpbjY0ZXdrMWhMaDZkRVcteWYySVRTRGR0ZWFnX29GYTVDQVltdjhLUk5lOENrR0UyU9IBkgFBVV95cUxNQzZzRVl2c3R4NGtCZGM1QmJ3eFRBMHdaQUFHa3lOSjNvbGRORjhEeEtGVGJxTEhpT1BYWU12MHpWLTd0enA1b1RQa2NGUDlodVVZRG1DMlYybFNZa05Hd2dFRTl1b2p3cV9NMTNXLWVDNnBHWU5JNjBRWDNSODBGRVFwWXFROFJuZWlFMmx2ak11QQ?oc=5",
+   "publicado": "2026-11-18T16:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ata do Fed mostra preocupação com inflação e possibilidade de novas altas de juros",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-fed-mostra-preocupacao-com-inflacao-e-possibilidade-de-novas-altas-de-juros.shtml",
+   "publicado": "2026-11-18T16:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
-   "publicado": "2026-11-18T16:26-03:00",
+   "publicado": "2026-11-18T16:41-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2478,17 +2631,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Safra de soja vive melhor momento com preço elevado pelo dólar, diz consultoria",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/agro/2026/11/safra-de-soja-vive-melhor-momento-com-preco-elevado-pelo-dolar-diz-consultoria.shtml",
-   "publicado": "2026-11-18T14:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   }
