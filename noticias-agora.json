@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T12:30-03:00",
+  "atualizado_em": "2026-11-18T12:33-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -115,7 +115,11 @@
     ],
     [
      "12:15",
-     168668.0
+     168772.0
+    ],
+    [
+     "12:18",
+     168836.0
     ]
    ]
   },
@@ -292,7 +296,11 @@
     ],
     [
      "12:30",
-     5.8048
+     5.8068
+    ],
+    [
+     "12:33",
+     5.8073
     ]
    ]
   },
@@ -648,7 +656,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.29,
     "dolar30": 0.36
    },
    {
@@ -662,7 +670,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.29,
     "dolar30": 0.36
    },
    {
@@ -690,7 +698,21 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.27
+    "dolar30": 0.3
+   },
+   {
+    "hora": "12:24",
+    "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSjVINm0xY0hxUlNUYjktREM3WTRWYTEybTVackhVLTU0NXVvQy00ZkpTSmoyQXR1WnBlVUdDMVY2bzlUZU5FWlEwV0pDVmxTVm9MSHBiYlVZVDBFS2dpd0ViT0hFZWF5MXUtNTZ2WlpnYTlndENyYUE5MlBGM3hUcGtkMGdwXzdXYVhZb29sSGlfNVJSdm43Z2JSbU9NSUhiUWRzel9YZ3FhT0hUZl9CUzQzd2tEUXdWUHhuSVhlME42SVlMMnFSQWN1YjlBRUc5amhjMXFjcFJOUnVJT19iYS1MdkM5Q3JybkHSAfgBQVVfeXFMUDVtbFVOdjd5NWIxdkpZTEtkOFB5azVYV3pzVmFIQlpvV3VCZDRqWGdocEY5em94U0Q2TmlXV1lFdUlSOXptcEFoWUg4eGdvbW1QdlhaQWxXS0pRZkhqaTVTYndZOXp6ZGd6UVpTYTdIWEU3NW9ZZW9HYVJKVV9rWi04VmlFOE9YaXNxVko0dGdNbFQzYWZUa3IyT1Nmd245aGUxZVI5NXBxODBrREw1aEJXaVloZzh1MjQ1UDZhSDBPSHJCclVyV2dvOWZXQU5nTU1hRjRMamRPSFpIVVFBTk9SMkduSXdDWkxPcXhGODJOQ1U0aDgwdVA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1372,6 +1394,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSjVINm0xY0hxUlNUYjktREM3WTRWYTEybTVackhVLTU0NXVvQy00ZkpTSmoyQXR1WnBlVUdDMVY2bzlUZU5FWlEwV0pDVmxTVm9MSHBiYlVZVDBFS2dpd0ViT0hFZWF5MXUtNTZ2WlpnYTlndENyYUE5MlBGM3hUcGtkMGdwXzdXYVhZb29sSGlfNVJSdm43Z2JSbU9NSUhiUWRzel9YZ3FhT0hUZl9CUzQzd2tEUXdWUHhuSVhlME42SVlMMnFSQWN1YjlBRUc5amhjMXFjcFJOUnVJT19iYS1MdkM5Q3JybkHSAfgBQVVfeXFMUDVtbFVOdjd5NWIxdkpZTEtkOFB5azVYV3pzVmFIQlpvV3VCZDRqWGdocEY5em94U0Q2TmlXV1lFdUlSOXptcEFoWUg4eGdvbW1QdlhaQWxXS0pRZkhqaTVTYndZOXp6ZGd6UVpTYTdIWEU3NW9ZZW9HYVJKVV9rWi04VmlFOE9YaXNxVko0dGdNbFQzYWZUa3IyT1Nmd245aGUxZVI5NXBxODBrREw1aEJXaVloZzh1MjQ1UDZhSDBPSHJCclVyV2dvOWZXQU5nTU1hRjRMamRPSFpIVVFBTk9SMkduSXdDWkxPcXhGODJOQ1U0aDgwdVA?oc=5",
+   "publicado": "2026-11-18T12:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1401,7 +1435,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T12:30-03:00",
+ "atualizado_em": "2026-11-18T12:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1416,6 +1450,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSjVINm0xY0hxUlNUYjktREM3WTRWYTEybTVackhVLTU0NXVvQy00ZkpTSmoyQXR1WnBlVUdDMVY2bzlUZU5FWlEwV0pDVmxTVm9MSHBiYlVZVDBFS2dpd0ViT0hFZWF5MXUtNTZ2WlpnYTlndENyYUE5MlBGM3hUcGtkMGdwXzdXYVhZb29sSGlfNVJSdm43Z2JSbU9NSUhiUWRzel9YZ3FhT0hUZl9CUzQzd2tEUXdWUHhuSVhlME42SVlMMnFSQWN1YjlBRUc5amhjMXFjcFJOUnVJT19iYS1MdkM5Q3JybkHSAfgBQVVfeXFMUDVtbFVOdjd5NWIxdkpZTEtkOFB5azVYV3pzVmFIQlpvV3VCZDRqWGdocEY5em94U0Q2TmlXV1lFdUlSOXptcEFoWUg4eGdvbW1QdlhaQWxXS0pRZkhqaTVTYndZOXp6ZGd6UVpTYTdIWEU3NW9ZZW9HYVJKVV9rWi04VmlFOE9YaXNxVko0dGdNbFQzYWZUa3IyT1Nmd245aGUxZVI5NXBxODBrREw1aEJXaVloZzh1MjQ1UDZhSDBPSHJCclVyV2dvOWZXQU5nTU1hRjRMamRPSFpIVVFBTk9SMkduSXdDWkxPcXhGODJOQ1U0aDgwdVA?oc=5",
+   "publicado": "2026-11-18T12:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
    "fonte": "CNBC",
@@ -1575,6 +1621,18 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa tem leve queda com alta dos juros futuros e de olho em ajuste fiscal",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV1M4d3g2eGZ6R1k4Mm5MQlJnQVVkam5CREpmWmlUTTA1OWJBblE0b3lLakkwanlveFAwSkFiWG0xNE41MThtajdOZE8tV0p1bVlYbW9fQlFia3NOWWN6Q1FfV1o2Z0ZRLS1rWGw2NUZYc25Mbks1T1lDNVc0MTk3VEM5clBiRXlMQ0NkZ1JMX3FrbTJoTVc5WWRZT3ZkUmRvUWZwZEVsak1LSGV2UEwyRjZ3SDRLRXM5Z3RJNUhZbjBSTlQ1MUJrb2RPclkwUFNOLVhudVNYR0wyWTAtcFVn0gHfAUFVX3lxTE9XUzh3eDZ4ZnpHWTgybkxCUmdBVWRqbkJESmZaaVRNMDU5YkFuUTRveUtqSTBqeW94UDBKQWJYbTE0TjUxOG1qN05kTy1XSnVtWVhtb19CUWJrc05ZY3pDUV9XWjZnRlEtLWtYbDY1RlhzbkxuSzVPWUM1VzQxOTdUQzlyUGJFeUxDQ2RnUkxfcWttMmhNVzlZZFlPdmRSZG9RZnBkRWxqTUtIZXZQTDJGNndINEtFczlndEk1SFluMFJOVDUxQmtvZE9yWTBQU04tWG51U1hHTDJZMC1wVWc?oc=5",
+   "publicado": "2026-11-18T10:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Xi e Putin criticam 'protecionismo' ocidental e sanções na chegada de Trump à China",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468060",
@@ -1582,30 +1640,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Rede D'Or vende Sul América Investimentos para a BlackRock por R$850 mi",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/rede-dor-vende-sul-america-investimentos-para-a-blackrock-por-r850-mi.shtml",
-   "publicado": "2026-11-18T09:45-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "RDOR3"
-   ]
-  },
-  {
-   "titulo": "Dólar avança e chega a R$ 5,82, mas desacelera após leilões do BC; Bolsa oscila",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-nesta-quarta-com-mercado-a-espera-de-leilao-do-bc-e-votacao-sobre-ajuste-fiscal.shtml",
-   "publicado": "2026-11-18T09:33-03:00",
-   "impacto": "medio",
-   "ativos": [
     "WDO"
    ],
    "tickers": []
