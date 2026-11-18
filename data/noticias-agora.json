@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T10:08-03:00",
+  "atualizado_em": "2026-11-18T10:38-03:00",
+  "ibov": {
+   "anterior": 169816.64,
+   "pontos": [
+    [
+     "10:00",
+     169376.0
+    ],
+    [
+     "10:05",
+     169247.0
+    ],
+    [
+     "10:10",
+     169646.0
+    ],
+    [
+     "10:15",
+     169735.0
+    ],
+    [
+     "10:20",
+     169693.0
+    ],
+    [
+     "10:23",
+     169583.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.7657,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.8172
+     5.8162
     ],
     [
-     "10:08",
-     5.8172
+     "10:10",
+     5.8072
+    ],
+    [
+     "10:15",
+     5.8082
+    ],
+    [
+     "10:20",
+     5.8072
+    ],
+    [
+     "10:25",
+     5.8137
+    ],
+    [
+     "10:30",
+     5.8125
+    ],
+    [
+     "10:35",
+     5.8082
+    ],
+    [
+     "10:38",
+     5.8072
     ]
    ]
   },
@@ -79,6 +132,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.45
    },
    {
@@ -91,6 +145,20 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.24
+   },
+   {
+    "hora": "09:16",
+    "titulo": "Juros futuros sobem de olho em ajuste fiscal e após alívio da véspera",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZjExUWdOMUZjeFFudF85bUNrajhCSkVtWExmMHhtUjRoRDBMZFdpR1VNUDh2YWJMVldwZTZXUjVXQUxFN1ZpczlaVzNaRjhkU3BGUnNiWDExRTBtRkktWVEwOVZMUjVUR1dha0JNdDhVWHk1dE5lMFBsdkJtWi1NeUtPZUhRQXlDd1JsR1c4NW5MUjFlTUdWZVl3X05qak42ZjNnTEZXR29yMnc4X3BGdVBmWnFXLUJISEEwS2dNZGNQUG8tOC1GZWJzNTFTV05BLTcwZNIB1AFBVV95cUxNZjExUWdOMUZjeFFudF85bUNrajhCSkVtWExmMHhtUjRoRDBMZFdpR1VNUDh2YWJMVldwZTZXUjVXQUxFN1ZpczlaVzNaRjhkU3BGUnNiWDExRTBtRkktWVEwOVZMUjVUR1dha0JNdDhVWHk1dE5lMFBsdkJtWi1NeUtPZUhRQXlDd1JsR1c4NW5MUjFlTUdWZVl3X05qak42ZjNnTEZXR29yMnc4X3BGdVBmWnFXLUJISEEwS2dNZGNQUG8tOC1GZWJzNTFTV05BLTcwZA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": 0.24
    },
    {
@@ -104,6 +172,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.22
    },
    {
@@ -117,6 +186,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.22
    },
    {
@@ -130,6 +200,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.22
    },
    {
@@ -143,6 +214,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.22
    },
    {
@@ -156,6 +228,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.14
    },
    {
@@ -169,6 +242,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.28
    },
    {
@@ -182,6 +256,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.28
    },
    {
@@ -198,7 +273,8 @@
      "B3SA3",
      "BBAS3"
     ],
-    "dolar30": -0.03
+    "ibov30": null,
+    "dolar30": -0.05
    },
    {
     "hora": "09:45",
@@ -212,7 +288,8 @@
     "tickers": [
      "RDOR3"
     ],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.19
    },
    {
     "hora": "10:01",
@@ -225,7 +302,22 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.23
+   },
+   {
+    "hora": "10:03",
+    "titulo": "Parcela relevante do crédito permanece relativamente protegida das flutuações da Selic, mostra estudo do BC",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPMS1ucE4zUWxvUVN0N3hNRHc2aVN1MWI2MUN6NzdMSkJRMjhiYUJmZXo5ZW1MS2ZtTFFKeDc1Y0JidFZqa1hSSm81SjBKN05TdkMxa1BwaXVwdGU1Wm9ZQkpEbl9qeTVzcFFPc0ZfUFpRc0dDUklyMXRlOUlfY2NNOU0yWWtBWFJEdzVRNERNX2dqY3RPZGg2WmQzOExVWUliNmx1Qjhxa3J0S2ZQdVc5eEF4VkliZGtCYVJwcGFFdURBdXNieFFMckIwUm9sUDlGZ3QzYm1TNnJacHdFdnAtVDFqU0Q1WGJwS09HSGJpWTBoWmtURkIw0gGGAkFVX3lxTE01SVZTYWxRT0tWSTNYT2pjdENiWkpFOVVJc1lQelNtcXFXNGZVaFhuaVY2LXMtTFNQcXc2OFpMaWtYZnczQjhtY25rYThBNTFxQ2E4VmRKcHQ3NVJuMUVPNHB5YU1NVVlTVy1qWjFwWUhWOHZzbzdJODdTR2hIZXh0bjhkWE02LXozQVpkMHQ5UlpSYTh6cUZqU1hRRFJDVlBUS0Q2VnZidXc2TllJTU0ycmRzbnV3TU1GUTlTdmR4YzktNFBqRjNfZ0tuQlprZWZYWklFUU4wRi1tbVdNYU42OFQxZ0NtM1NINk8wZU9ZQlAySlVaazRiLXAxZFhjdmVvMXJuNEE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.23
    }
   ]
  },
@@ -593,6 +685,17 @@
    "tickers": []
   },
   {
+   "titulo": "Juros futuros sobem de olho em ajuste fiscal e após alívio da véspera",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZjExUWdOMUZjeFFudF85bUNrajhCSkVtWExmMHhtUjRoRDBMZFdpR1VNUDh2YWJMVldwZTZXUjVXQUxFN1ZpczlaVzNaRjhkU3BGUnNiWDExRTBtRkktWVEwOVZMUjVUR1dha0JNdDhVWHk1dE5lMFBsdkJtWi1NeUtPZUhRQXlDd1JsR1c4NW5MUjFlTUdWZVl3X05qak42ZjNnTEZXR29yMnc4X3BGdVBmWnFXLUJISEEwS2dNZGNQUG8tOC1GZWJzNTFTV05BLTcwZNIB1AFBVV95cUxNZjExUWdOMUZjeFFudF85bUNrajhCSkVtWExmMHhtUjRoRDBMZFdpR1VNUDh2YWJMVldwZTZXUjVXQUxFN1ZpczlaVzNaRjhkU3BGUnNiWDExRTBtRkktWVEwOVZMUjVUR1dha0JNdDhVWHk1dE5lMFBsdkJtWi1NeUtPZUhRQXlDd1JsR1c4NW5MUjFlTUdWZVl3X05qak42ZjNnTEZXR29yMnc4X3BGdVBmWnFXLUJISEEwS2dNZGNQUG8tOC1GZWJzNTFTV05BLTcwZA?oc=5",
+   "publicado": "2026-11-18T09:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Fed officials set to raise rates again in December, but the future still looks murky",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
@@ -715,6 +818,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Parcela relevante do crédito permanece relativamente protegida das flutuações da Selic, mostra estudo do BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPMS1ucE4zUWxvUVN0N3hNRHc2aVN1MWI2MUN6NzdMSkJRMjhiYUJmZXo5ZW1MS2ZtTFFKeDc1Y0JidFZqa1hSSm81SjBKN05TdkMxa1BwaXVwdGU1Wm9ZQkpEbl9qeTVzcFFPc0ZfUFpRc0dDUklyMXRlOUlfY2NNOU0yWWtBWFJEdzVRNERNX2dqY3RPZGg2WmQzOExVWUliNmx1Qjhxa3J0S2ZQdVc5eEF4VkliZGtCYVJwcGFFdURBdXNieFFMckIwUm9sUDlGZ3QzYm1TNnJacHdFdnAtVDFqU0Q1WGJwS09HSGJpWTBoWmtURkIw0gGGAkFVX3lxTE01SVZTYWxRT0tWSTNYT2pjdENiWkpFOVVJc1lQelNtcXFXNGZVaFhuaVY2LXMtTFNQcXc2OFpMaWtYZnczQjhtY25rYThBNTFxQ2E4VmRKcHQ3NVJuMUVPNHB5YU1NVVlTVy1qWjFwWUhWOHZzbzdJODdTR2hIZXh0bjhkWE02LXozQVpkMHQ5UlpSYTh6cUZqU1hRRFJDVlBUS0Q2VnZidXc2TllJTU0ycmRzbnV3TU1GUTlTdmR4YzktNFBqRjNfZ0tuQlprZWZYWklFUU4wRi1tbVdNYU42OFQxZ0NtM1NINk8wZU9ZQlAySlVaazRiLXAxZFhjdmVvMXJuNEE?oc=5",
+   "publicado": "2026-11-18T10:03-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -744,7 +859,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T10:08-03:00",
+ "atualizado_em": "2026-11-18T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -759,10 +874,10 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar supera R$ 5,80 antes de leilões do BC e com pacote fiscal no foco",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOTVKMzlQWDAzelNxc0pyZy1UR05LeVIwNzczM3loRlB5V1FOb3pjSkRidDljZU1YbkYydHM4SVRVbmd5dEZKMDhpM2RmOEh4UHJNNDZhS3JONDJqNmdTbHJfOVYyNEJhSXl2TFM5VWhhemxxa0wwV0RTc1NNbDFVMWY4RmxkTFV6VklpV0ZjMlJweU9WU0Y4aXpULXZKa1lq?oc=5",
-   "publicado": "2026-11-18T10:01-03:00",
+   "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+   "publicado": "2026-11-18T10:32-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -771,10 +886,22 @@
    "tickers": []
   },
   {
-   "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
-   "publicado": "2026-11-18T09:58-03:00",
+   "titulo": "Parcela relevante do crédito permanece relativamente protegida das flutuações da Selic, mostra estudo do BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPMS1ucE4zUWxvUVN0N3hNRHc2aVN1MWI2MUN6NzdMSkJRMjhiYUJmZXo5ZW1MS2ZtTFFKeDc1Y0JidFZqa1hSSm81SjBKN05TdkMxa1BwaXVwdGU1Wm9ZQkpEbl9qeTVzcFFPc0ZfUFpRc0dDUklyMXRlOUlfY2NNOU0yWWtBWFJEdzVRNERNX2dqY3RPZGg2WmQzOExVWUliNmx1Qjhxa3J0S2ZQdVc5eEF4VkliZGtCYVJwcGFFdURBdXNieFFMckIwUm9sUDlGZ3QzYm1TNnJacHdFdnAtVDFqU0Q1WGJwS09HSGJpWTBoWmtURkIw0gGGAkFVX3lxTE01SVZTYWxRT0tWSTNYT2pjdENiWkpFOVVJc1lQelNtcXFXNGZVaFhuaVY2LXMtTFNQcXc2OFpMaWtYZnczQjhtY25rYThBNTFxQ2E4VmRKcHQ3NVJuMUVPNHB5YU1NVVlTVy1qWjFwWUhWOHZzbzdJODdTR2hIZXh0bjhkWE02LXozQVpkMHQ5UlpSYTh6cUZqU1hRRFJDVlBUS0Q2VnZidXc2TllJTU0ycmRzbnV3TU1GUTlTdmR4YzktNFBqRjNfZ0tuQlprZWZYWklFUU4wRi1tbVdNYU42OFQxZ0NtM1NINk8wZU9ZQlAySlVaazRiLXAxZFhjdmVvMXJuNEE?oc=5",
+   "publicado": "2026-11-18T10:03-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar supera R$ 5,80 antes de leilões do BC e com pacote fiscal no foco",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOTVKMzlQWDAzelNxc0pyZy1UR05LeVIwNzczM3loRlB5V1FOb3pjSkRidDljZU1YbkYydHM4SVRVbmd5dEZKMDhpM2RmOEh4UHJNNDZhS3JONDJqNmdTbHJfOVYyNEJhSXl2TFM5VWhhemxxa0wwV0RTc1NNbDFVMWY4RmxkTFV6VklpV0ZjMlJweU9WU0Y4aXpULXZKa1lq?oc=5",
+   "publicado": "2026-11-18T10:01-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -859,18 +986,6 @@
    "tickers": []
   },
   {
-   "titulo": "Trump arrives in China for historic meeting with Xi, Putin",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-china-apec.html",
-   "publicado": "2026-11-18T09:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar no exterior permanece nas máximas desde abril de 2025 com apostas de alta de juros pelo Fed | Finanças",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQNExMZnZyOGhyWDVhZ1hKWUNNVmZ2ZWw2aGNObWJtNjRVemVaVG16NUJ0UmR5RDlUcnNtQ0xTNjktSEhrQ080MlJ6YWtIN1EtZXZTWnRrOTRxY3Z6STlUeFdUUHhiX0NPbjdBVFFRc3JTdjJtUUVNR1JMV2tKZ3hwSWtjdEhMMnJzT25ySnRHanFJTXdyS2JobVQ0NFZWSjAzcGE3bEVLd1AtdXlnOW1uUHEwVGlPTnlxalZaS0tVUHA0NUI1MG5Sc2ZKc0g4RUJYcUVsYzdoZlRBb0otNEx4amhXUTVoN2ZM?oc=5",
@@ -918,7 +1033,7 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar sobe e supera R$ 5,8; Ibovespa encara votação de ajuste fiscal no Senado e ata do Fed",
+   "titulo": "Dólar sobe e supera R$ 5,8; Ibovespa cai em dia de votação de ajuste fiscal no Senado e ata do Fed",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNT3hzSDZ5Q1NiSXVXalV0N0pxWDZISEwwbjIybFpUTlhWMmZfdlRZMWNONjdiMHB3RTU3QUU4RDdXSzhIaXVXMkFBVkV0NzAzQTJWejFBNXo2eGF0Q1FkRFh1SUMtdHVnOEl1eU5ZS2FjX2JOaDdlZlJvTVFIV1JVc2lfaGNKR2QzSFh1YTZOdlV5bHhEWUpxVThvX0RvSHMyLWliYWJDRmM3ODg2VkpjdWJxNU5Md3BDUDlKdkpMUkc2NV9KdV9tOFlqT2lwdW1HdFdtS2hwX2VWUXlCc0xjM05qUdIB6AFBVV95cUxQbGVCNEtZM0xvOUpROE8yWUUzMGZLdldYUXlCbm5EZzdFWEdpOExXNEJ4WkszRnJ4aXhTMG5kMnFiMmE0VGowNERDanJYYzR3YnRiTWtHYUlZVFRhVzF0b2ZrWk91UkJPa3UzUjhqLWJ1d0I1TXhBSGhLMGpKZG13Qy1lWklDamowUVpxNEFfbTJjYjc1cDhLQVJLZk1WRFhnMzcxdTU4Z25ScldOQXhkb2NkWU9xdndlNnRzd0dyaDZpMHRiOFFXeVJicXQ3VjBjblg3Sjl4MXFUSkJMNTZwX2tkVVFsN3JK?oc=5",
    "publicado": "2026-11-18T09:08-03:00",
