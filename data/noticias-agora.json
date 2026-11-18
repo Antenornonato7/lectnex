@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T12:38-03:00",
+  "atualizado_em": "2026-11-18T13:08-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -119,11 +119,35 @@
     ],
     [
      "12:20",
-     168394.0
+     168231.0
     ],
     [
-     "12:23",
-     168323.0
+     "12:25",
+     168280.0
+    ],
+    [
+     "12:30",
+     168220.0
+    ],
+    [
+     "12:35",
+     168128.0
+    ],
+    [
+     "12:40",
+     168146.0
+    ],
+    [
+     "12:45",
+     168049.0
+    ],
+    [
+     "12:50",
+     168028.0
+    ],
+    [
+     "12:53",
+     168051.0
     ]
    ]
   },
@@ -307,8 +331,32 @@
      5.8118
     ],
     [
-     "12:38",
-     5.8113
+     "12:40",
+     5.8118
+    ],
+    [
+     "12:45",
+     5.8138
+    ],
+    [
+     "12:50",
+     5.8133
+    ],
+    [
+     "12:55",
+     5.8168
+    ],
+    [
+     "13:00",
+     5.8163
+    ],
+    [
+     "13:05",
+     5.8218
+    ],
+    [
+     "13:08",
+     5.8181
     ]
    ]
   },
@@ -654,6 +702,34 @@
     "dolar30": -0.27
    },
    {
+    "hora": "11:45",
+    "titulo": "BDR do Mercado Livre não cumpre requisito para entrar no Ibovespa",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQmhEeFdFNHFINFdSQW1hSE4tSXROZVNaRlhvQVE1aGhKclRWc3FISzY4Y1NVbU1NNDlZbXlPVWZOMkZEVTFoOWI3RW1sZG5pd3Zrem5FRWhGQjcwaE1hbENJMWdlWktDbldUZllPdXYyTkdqYUNKZWZ1SUUydkZjaHliYjAtMkk5RWhJS29WLWdab0ZtZWVveENQMHVHLVo2b3JOeFhPUGxaMXhpSVdpM0M5MnI5WXF4cHlKNUtJWkNIQdIBxwFBVV95cUxNTW9yS2wwdlZDdnAtajlSWjVYemE3SzYxd1ZERnVFdDNrd2FvVlI5dl83VTRaeExrX2JkMTFnUUVfNktCTGtCMUtub2JNbnNHQVhWaHd0b2lnYlZtUkczNE5rMGE3Q2Y0SFpCZGhOTmI5VWlkMm5scVY3dENHcUhVZWQ3aFE0MXNNcTFmemtzUWlCYWl5Rnl5Wmo4MmY3VmtrUElteGJKRXdzNDNzN1FXT0Y3NndSX2pkTFZwNUNGaU9vNmNoTkFr?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": -0.28,
+    "dolar30": 0.08
+   },
+   {
+    "hora": "11:46",
+    "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUWJNZXhkTWw3UlNERXNlVUxTbDNMOFNULVNSQXhqd1dhTk9RRXFlSElJM1NkQ1dNVEFfWUJTVjFleVRVd3V6LXlhaDh3azhrT0Q4YXAyVEFTM2xhckNRMmU5VGRpQjNSMmdMRVo2cTBQWkFRZ3ZTMW50S2VJNVY4YVQ2UGtSQmcxLV9KU2E3Vk9hVkZjUHc3T1ZRMUV6UC1MQWdFeWVmU0Yyb1FLRV9HZlZjeGtZUHJEeFo5ZlB5VEJkNkl40gHKAUFVX3lxTE9yd3RmSk9fdGE1T2k5SS1BRXNaNVNXUjl0OUMtcWJ2WWVoRVhKbldNdllYRDNLWU1WQmlRd3hsMDhyMEVUTV9pQ2xUWDRudi1lVXpyQzBxc3dXZmNubkNHVUFNTXRKNFM5ZHFaYllpYXlRVkVkQ1hYYnFYaEltMkpoNDNCeVYweS1leWVhbTRXMHd3NS1ack1qT002cUxJTjl1NjBXSkVGbjJmenZ2T3drSlgxVFpndktsX1pETGlLQ3VzdHpnNzFjRWc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": -0.25,
+    "dolar30": 0.03
+   },
+   {
     "hora": "11:52",
     "titulo": "Apesar de estresse no câmbio, dólar corrigido pela inflação está longe do pico de R$ 8,45 de 2002",
     "fonte": "Valor",
@@ -664,7 +740,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.55,
+    "ibov30": -0.64,
     "dolar30": 0.36
    },
    {
@@ -678,7 +754,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.55,
+    "ibov30": -0.64,
     "dolar30": 0.36
    },
    {
@@ -692,7 +768,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.55,
+    "ibov30": -0.64,
     "dolar30": 0.36
    },
    {
@@ -705,7 +781,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.45,
     "dolar30": 0.37
    },
    {
@@ -717,6 +793,45 @@
     "ativos": [
      "WDO",
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.12,
+    "dolar30": 0.21
+   },
+   {
+    "hora": "12:37",
+    "titulo": "Wall Street prevê que crescimento dos lucros das empresas cairá pela metade em 2027",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/wall-street-preve-que-crescimento-dos-lucros-das-empresas-caira-pela-metade-em-2027.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.17
+   },
+   {
+    "hora": "12:44",
+    "titulo": "Minerva dispara 10% e BB lidera as maiores altas do Ibovespa hoje; veja os destaques do pregão",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTWdQQWdMMUNIb0s5Z0dyRC1COHN3d0FmaDYwNEdaRkloSk9BMFduZjBUZ3Q4TEl1OHFvVEVHdmFWMVgwY2RWZDZibl9Bd3J6SXo4TWNnS1FJVnBFZ1pmclBibmtPY1ZVcGFuWkRIdjNLMXc4cEZmRTZGVjgtNzBQaDFVUFlsdjlIS3hVZS00TXhUWGdvZm1HMkpEVUgzcFo3aDRIVGhVc0JqYlJrSkhSVFBTdkZVWmEzUE9xenpYXzlMRjhjR0tSOFdjUjRoNVVzbVHSAdcBQVVfeXFMT0ZyTm0wQmszUXZkRUlmY01uR0ZLVDNONDlWQ2dodVRQUjJHTjdRb3U0ZjRZem5VTG4yZ3RtZEUtd1VpZE14R2xSdGN5V1l0ODBVUHlUS205cjUxLXdVNTZucE1hVkpQdkI1ejVqZ0ZBZXVIWHRmOHRNMlJ5cnVfdmd1UmI4MTZaOWxXUC1jdG8ycTZFWmlBMm1Gd1NlYmxSN1lqRmdZNVBUTlhKNTlNdDVhX3FjdlJGOUQtNks3QWtFSnVoWFZNTF9TOExvMDlrUzk3c0FVMjA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:52",
+    "titulo": "Minerva dispara 10% e BB lidera as maiores altas do Ibovespa hoje; veja os destaques do pregão",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzOHR0cHdIRERHZDhFMnItR2ozMzRPTVVsYjdaRlFqVkdKbnJWYm9STkJoUlhNN3NUUjU3MDR4WWVqcy0tUTRydDlTd1hmdzVUR0xNZkFidTlkM1BvTHVXT3FpRUxST3o3OUs2dDFjOVVJVEowRnpxVEtCZGQ5MjB4UmFFUFVEdU0yU1QxenV3X3JVUmdtdlB0QXZMem9qNXRLMTRPRWlKWDVkS2ZxVWhjeFVqT2xaNjBBOGRfbzlVT1hBaGxib2U3R0c3VkVDY3llVDFhUnVXLXNU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1357,6 +1472,30 @@
    "tickers": []
   },
   {
+   "titulo": "BDR do Mercado Livre não cumpre requisito para entrar no Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQmhEeFdFNHFINFdSQW1hSE4tSXROZVNaRlhvQVE1aGhKclRWc3FISzY4Y1NVbU1NNDlZbXlPVWZOMkZEVTFoOWI3RW1sZG5pd3Zrem5FRWhGQjcwaE1hbENJMWdlWktDbldUZllPdXYyTkdqYUNKZWZ1SUUydkZjaHliYjAtMkk5RWhJS29WLWdab0ZtZWVveENQMHVHLVo2b3JOeFhPUGxaMXhpSVdpM0M5MnI5WXF4cHlKNUtJWkNIQdIBxwFBVV95cUxNTW9yS2wwdlZDdnAtajlSWjVYemE3SzYxd1ZERnVFdDNrd2FvVlI5dl83VTRaeExrX2JkMTFnUUVfNktCTGtCMUtub2JNbnNHQVhWaHd0b2lnYlZtUkczNE5rMGE3Q2Y0SFpCZGhOTmI5VWlkMm5scVY3dENHcUhVZWQ3aFE0MXNNcTFmemtzUWlCYWl5Rnl5Wmo4MmY3VmtrUElteGJKRXdzNDNzN1FXT0Y3NndSX2pkTFZwNUNGaU9vNmNoTkFr?oc=5",
+   "publicado": "2026-11-18T11:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUWJNZXhkTWw3UlNERXNlVUxTbDNMOFNULVNSQXhqd1dhTk9RRXFlSElJM1NkQ1dNVEFfWUJTVjFleVRVd3V6LXlhaDh3azhrT0Q4YXAyVEFTM2xhckNRMmU5VGRpQjNSMmdMRVo2cTBQWkFRZ3ZTMW50S2VJNVY4YVQ2UGtSQmcxLV9KU2E3Vk9hVkZjUHc3T1ZRMUV6UC1MQWdFeWVmU0Yyb1FLRV9HZlZjeGtZUHJEeFo5ZlB5VEJkNkl40gHKAUFVX3lxTE9yd3RmSk9fdGE1T2k5SS1BRXNaNVNXUjl0OUMtcWJ2WWVoRVhKbldNdllYRDNLWU1WQmlRd3hsMDhyMEVUTV9pQ2xUWDRudi1lVXpyQzBxc3dXZmNubkNHVUFNTXRKNFM5ZHFaYllpYXlRVkVkQ1hYYnFYaEltMkpoNDNCeVYweS1leWVhbTRXMHd3NS1ack1qT002cUxJTjl1NjBXSkVGbjJmenZ2T3drSlgxVFpndktsX1pETGlLQ3VzdHpnNzFjRWc?oc=5",
+   "publicado": "2026-11-18T11:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
    "titulo": "Apesar de estresse no câmbio, dólar corrigido pela inflação está longe do pico de R$ 8,45 de 2002",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOVZVSHRQbVBIdnJHdXJVYTE4SEdvT2lFVmI5SnBRYkhfM3VpUHNYVTJ5TTdKTDVIUFIxcVdhcUFZalNVMDNMemJTVVJ3S29TeFM3NmRvODVrUjZHVWdrU2JLTUpoLW1aZUoxSzVPTjJvMzM0LUF3WnJ3dWhJX0hBd2NWN3JZTnp6WVdmMTJTYkl2WExxWnRCRDJJT1BkQ2h5SG1HQzVBR2luZDNjMkQteVpDTmNTOTJPbmlBZVktQnZ6R3ZhbVdROHZpcUo5c2NPdHRJVDZwN0xGTVZKWnRybtIB7wFBVV95cUxPU2NEa1p4UUhsMVFpWXhydTZ0RlBwUDREdTNaZktURjhGdm9VcWIwZlA3WmhYV28tRkVJbkFrR1ItX1B3eTVPNm5ESUNPNmhteFlDZXJuT1REeHBDZ3BBandwSkUtVVhPdVpiNGxzdDhrazhmeDJ3clBoLWRxSVRiQWdoWTlidVRFQndKbWVxN0xOQWVUaXpfbU1FcXZSRUNRbklmNnFHWGdOWUNBejM0NXRvcnp5czRSOE9CX0pMZ3dERy1maDdHemx2YWhxUzkxRUl4d1N6OWlOVHE4ZFJMZ0xlOS1kOEFjMVZDNFhVSQ?oc=5",
@@ -1414,6 +1553,39 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Wall Street prevê que crescimento dos lucros das empresas cairá pela metade em 2027",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/wall-street-preve-que-crescimento-dos-lucros-das-empresas-caira-pela-metade-em-2027.shtml",
+   "publicado": "2026-11-18T12:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Minerva dispara 10% e BB lidera as maiores altas do Ibovespa hoje; veja os destaques do pregão",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTWdQQWdMMUNIb0s5Z0dyRC1COHN3d0FmaDYwNEdaRkloSk9BMFduZjBUZ3Q4TEl1OHFvVEVHdmFWMVgwY2RWZDZibl9Bd3J6SXo4TWNnS1FJVnBFZ1pmclBibmtPY1ZVcGFuWkRIdjNLMXc4cEZmRTZGVjgtNzBQaDFVUFlsdjlIS3hVZS00TXhUWGdvZm1HMkpEVUgzcFo3aDRIVGhVc0JqYlJrSkhSVFBTdkZVWmEzUE9xenpYXzlMRjhjR0tSOFdjUjRoNVVzbVHSAdcBQVVfeXFMT0ZyTm0wQmszUXZkRUlmY01uR0ZLVDNONDlWQ2dodVRQUjJHTjdRb3U0ZjRZem5VTG4yZ3RtZEUtd1VpZE14R2xSdGN5V1l0ODBVUHlUS205cjUxLXdVNTZucE1hVkpQdkI1ejVqZ0ZBZXVIWHRmOHRNMlJ5cnVfdmd1UmI4MTZaOWxXUC1jdG8ycTZFWmlBMm1Gd1NlYmxSN1lqRmdZNVBUTlhKNTlNdDVhX3FjdlJGOUQtNks3QWtFSnVoWFZNTF9TOExvMDlrUzk3c0FVMjA?oc=5",
+   "publicado": "2026-11-18T12:44-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Minerva dispara 10% e BB lidera as maiores altas do Ibovespa hoje; veja os destaques do pregão",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzOHR0cHdIRERHZDhFMnItR2ozMzRPTVVsYjdaRlFqVkdKbnJWYm9STkJoUlhNN3NUUjU3MDR4WWVqcy0tUTRydDlTd1hmdzVUR0xNZkFidTlkM1BvTHVXT3FpRUxST3o3OUs2dDFjOVVJVEowRnpxVEtCZGQ5MjB4UmFFUFVEdU0yU1QxenV3X3JVUmdtdlB0QXZMem9qNXRLMTRPRWlKWDVkS2ZxVWhjeFVqT2xaNjBBOGRfbzlVT1hBaGxib2U3R0c3VkVDY3llVDFhUnVXLXNU?oc=5",
+   "publicado": "2026-11-18T12:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1443,7 +1615,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T12:38-03:00",
+ "atualizado_em": "2026-11-18T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1454,10 +1626,43 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+   "publicado": "2026-11-18T13:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Minerva dispara 10% e BB lidera as maiores altas do Ibovespa hoje; veja os destaques do pregão",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzOHR0cHdIRERHZDhFMnItR2ozMzRPTVVsYjdaRlFqVkdKbnJWYm9STkJoUlhNN3NUUjU3MDR4WWVqcy0tUTRydDlTd1hmdzVUR0xNZkFidTlkM1BvTHVXT3FpRUxST3o3OUs2dDFjOVVJVEowRnpxVEtCZGQ5MjB4UmFFUFVEdU0yU1QxenV3X3JVUmdtdlB0QXZMem9qNXRLMTRPRWlKWDVkS2ZxVWhjeFVqT2xaNjBBOGRfbzlVT1hBaGxib2U3R0c3VkVDY3llVDFhUnVXLXNU?oc=5",
+   "publicado": "2026-11-18T12:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Wall Street prevê que crescimento dos lucros das empresas cairá pela metade em 2027",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/wall-street-preve-que-crescimento-dos-lucros-das-empresas-caira-pela-metade-em-2027.shtml",
+   "publicado": "2026-11-18T12:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
    "fonte": "Valor",
@@ -1514,6 +1719,30 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUWJNZXhkTWw3UlNERXNlVUxTbDNMOFNULVNSQXhqd1dhTk9RRXFlSElJM1NkQ1dNVEFfWUJTVjFleVRVd3V6LXlhaDh3azhrT0Q4YXAyVEFTM2xhckNRMmU5VGRpQjNSMmdMRVo2cTBQWkFRZ3ZTMW50S2VJNVY4YVQ2UGtSQmcxLV9KU2E3Vk9hVkZjUHc3T1ZRMUV6UC1MQWdFeWVmU0Yyb1FLRV9HZlZjeGtZUHJEeFo5ZlB5VEJkNkl40gHKAUFVX3lxTE9yd3RmSk9fdGE1T2k5SS1BRXNaNVNXUjl0OUMtcWJ2WWVoRVhKbldNdllYRDNLWU1WQmlRd3hsMDhyMEVUTV9pQ2xUWDRudi1lVXpyQzBxc3dXZmNubkNHVUFNTXRKNFM5ZHFaYllpYXlRVkVkQ1hYYnFYaEltMkpoNDNCeVYweS1leWVhbTRXMHd3NS1ack1qT002cUxJTjl1NjBXSkVGbjJmenZ2T3drSlgxVFpndktsX1pETGlLQ3VzdHpnNzFjRWc?oc=5",
+   "publicado": "2026-11-18T11:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "BDR do Mercado Livre não cumpre requisito para entrar no Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQmhEeFdFNHFINFdSQW1hSE4tSXROZVNaRlhvQVE1aGhKclRWc3FISzY4Y1NVbU1NNDlZbXlPVWZOMkZEVTFoOWI3RW1sZG5pd3Zrem5FRWhGQjcwaE1hbENJMWdlWktDbldUZllPdXYyTkdqYUNKZWZ1SUUydkZjaHliYjAtMkk5RWhJS29WLWdab0ZtZWVveENQMHVHLVo2b3JOeFhPUGxaMXhpSVdpM0M5MnI5WXF4cHlKNUtJWkNIQdIBxwFBVV95cUxNTW9yS2wwdlZDdnAtajlSWjVYemE3SzYxd1ZERnVFdDNrd2FvVlI5dl83VTRaeExrX2JkMTFnUUVfNktCTGtCMUtub2JNbnNHQVhWaHd0b2lnYlZtUkczNE5rMGE3Q2Y0SFpCZGhOTmI5VWlkMm5scVY3dENHcUhVZWQ3aFE0MXNNcTFmemtzUWlCYWl5Rnl5Wmo4MmY3VmtrUElteGJKRXdzNDNzN1FXT0Y3NndSX2pkTFZwNUNGaU9vNmNoTkFr?oc=5",
+   "publicado": "2026-11-18T11:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -1576,81 +1805,6 @@
    ],
    "tickers": [
     "BBAS3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa perde força e dólar avança para R$ 5,80 com ajuste fiscal no radar",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORml2R1RKYlZiVmxjMmNKTHhBdVRiWUQxV1RKNTBTeVZiTzJXZ0NhNmV6WHJocmc2RG1uSEx3ZUlWekZTd2NPQmFoV0FtV1F3Q2xPYTlIRExfdzdoNWNiN3VDUUhCX0Uwc3JlX3N1VmNCNkpFVHduWDE1V1dPRDJ5V1pfZmR1dGhZZmlKOGVETFNrdzJrYmhWTVpTUU83XzJtaGdWYmtaM2I2X01q?oc=5",
-   "publicado": "2026-11-18T10:57-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Itaú BBA corta preço-alvo da Direcional, mas vê alta de 64% na Bolsa; o que pesa na análise?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWEdGQWh0VlJ5QnljeEdLaHowUHh2bnJvdHpUMFlLdzNQYTRSMW1kWWk2TktoOXpXNnQxSmMyaXlFd3FHTmpiWGI4bVFSLVk2d0ZjYWxMXzhiZnhkWHVuOGJkTHZPR3daYmVqdHpmVDdxa1lqc1V6cmxzbUxGeWJ2eXRzQVdiV0paV2dDUXVFTHdyaUNfLW9JVWt4RmRMMDI1QXUyNlhsRk9JRWRrUm9vbkx3a3NUR1Q2Y2UycmNKWGdoZHd3UG5xMURsa3hNQ01iQjZWZ09remtzbFF4YzcwVNIB5gFBVV95cUxPTkZKMXpUTVJIdnZYWWxCVVdvVmlyTUJad05rU3dud0dpY0R3cEY3aWNadXBmaWRKNmtwN2cwYzlfZHJfbVpHWnAtRTl6MlN0ZkRERHY1R3kyaHJwSzhIbzlEc3pQbnZSY0h0dVAwZDU5c0pWd3FzNDNjQy0zWjhjUzE0enNMeHZETU5wNjFkV3dOWDI5YThMWjVjcmRhTHRJSDBWbG1pcGJhYzh0akljUnNha1VSNWpWMW94eDBDdDVvQlRVVzI4elBHenp0T1RRak42VDNWZHJxdk9qVFAxZ054UktsUQ?oc=5",
-   "publicado": "2026-11-18T10:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
-  {
-   "titulo": "Ibovespa recua com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (18)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWHlOSDhJS19vdXpKLW5qNC1UTmhMVzF2b01iUnphRVJVNlVLZ3RDdWJmQlJURDEyLUNUN1RMdmxGNVhZVDNSTE9xeTNlYjRqOF8yQXZlR3BTR3RWVF9DR1FOckdlV3ptQ3B4NHBzVjBlTjU3Z1gtSUVFZGllbEpialpyUUVPaUxfbEg3azVTbFdBczBDQnNwUGUxTFhkbjZBbHA3MElfSlpsR2sxdFlsTXZYcFREdktnQm9sRlhTbjFzSjB2?oc=5",
-   "publicado": "2026-11-18T10:46-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ações da Nvidia (NVDA) em alta: balanço forte prepara empresa para disputa entre EUA e China; veja números",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNXy1HdWZMTnhOdkMxSHdDeTVfUGI0ZGJMN2ZRUzJfNm00VmUwRGlUdjlvSjlFTEF2ZnhDMnZwRlpoN0FOdjkxV2lxenFQbl9LLXBqZjdnQ3FaX01wV3VWanhBYmlLUWdycVBQUldBRS1xZXlpS1d6WWIzcHNRY0tkcTlHeGdZb3VrZm9adWo1TTBDTnBGRzJ6YjBoR1ZLb3M4c2RLeTM4N0ZOc01DYnVfLWNZeElJNlFuU3VBMThZU1kxNmI5Y081SW1LMEk1M0k?oc=5",
-   "publicado": "2026-11-18T10:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Xi e Putin criticam 'protecionismo' ocidental e sanções na chegada de Trump à China",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468060",
-   "publicado": "2026-11-18T09:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Rede D'Or vende Sul América Investimentos para a BlackRock por R$850 mi",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/rede-dor-vende-sul-america-investimentos-para-a-blackrock-por-r850-mi.shtml",
-   "publicado": "2026-11-18T09:45-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "RDOR3"
    ]
   }
  ]
