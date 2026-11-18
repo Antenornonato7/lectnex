@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T11:38-03:00",
+  "atualizado_em": "2026-11-18T11:40-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -71,11 +71,11 @@
     ],
     [
      "11:20",
-     169678.0
+     169874.0
     ],
     [
-     "11:23",
-     169673.0
+     "11:25",
+     169926.0
     ]
    ]
   },
@@ -208,11 +208,11 @@
     ],
     [
      "11:35",
-     5.7943
+     5.7918
     ],
     [
-     "11:38",
-     5.7951
+     "11:40",
+     5.7938
     ]
    ]
   },
@@ -483,7 +483,7 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": -0.02,
+    "ibov30": 0.09,
     "dolar30": -0.06
    },
    {
@@ -498,7 +498,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.15,
+    "ibov30": -0.0,
     "dolar30": -0.19
    },
    {
@@ -513,7 +513,7 @@
     "tickers": [
      "BBAS3"
     ],
-    "ibov30": null,
+    "ibov30": 0.08,
     "dolar30": -0.16
    },
    {
@@ -1169,7 +1169,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T11:38-03:00",
+ "atualizado_em": "2026-11-18T11:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1184,6 +1184,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+   "publicado": "2026-11-18T11:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Mortgage demand turns lower, as interest rates shoot back up to the highest level in three weeks",
    "fonte": "CNBC",
@@ -1279,18 +1291,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
-   "publicado": "2026-11-18T10:32-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
