@@ -264,13 +264,3 @@ p, li, dd { text-wrap: pretty; }
   body[data-aba="dom"] .dm-tab[data-tab="dom"], body[data-aba="fluxo"] .dm-tab[data-tab="fluxo"], body[data-aba="grafico"] .dm-tab[data-tab="grafico"], body[data-aba="painel"] .dm-tab[data-tab="painel"] { display: block; }
   body[data-aba="dom"] #dm-boleta-mob { display: block; }
 }
-/* gráfico do simulador de fluxo: tempos, indicadores e tela cheia */
-.dm-chip { display: inline-flex; align-items: center; gap: 4px; padding: 3px 7px; border: 1px solid #CBD5E1; font-weight: 700; color: #64748B; min-height: 26px; }
-.dark .dm-chip { border-color: #1E2D42; color: #94A3B8; }
-.dm-chip:hover { border-color: #009988; }
-.dm-chip.dm-on { border-color: #009988; color: #009988; background: rgba(0,153,136,.08); }
-.dark .dm-chip.dm-on { color: #00B4A2; }
-.dm-dot { width: 7px; height: 7px; border-radius: 9999px; display: inline-block; }
-body.dm-cheia-on #dm-graf-box { position: fixed; inset: 0; z-index: 80; overflow: auto; background: #fff; }
-.dark body.dm-cheia-on #dm-graf-box, html.dark body.dm-cheia-on #dm-graf-box { background: #060D17; }
-body.dm-cheia-on { overflow: hidden; }
