@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T09:55-03:00",
+  "atualizado_em": "2026-11-18T09:58-03:00",
   "dolar": {
    "anterior": 5.7657,
    "pontos": [
@@ -51,7 +51,11 @@
     ],
     [
      "09:55",
-     5.8189
+     5.8214
+    ],
+    [
+     "09:58",
+     5.8194
     ]
    ]
   },
@@ -144,7 +148,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "dolar30": 0.17
    },
    {
     "hora": "09:34",
@@ -677,7 +681,7 @@
    "em": "2026-11-18T12:38:20+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T09:55-03:00",
+ "atualizado_em": "2026-11-18T09:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -694,11 +698,23 @@
    "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
-   "publicado": "2026-11-18T09:50-03:00",
+   "publicado": "2026-11-18T09:56-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Xi e Putin criticam 'protecionismo' ocidental e sanções na chegada de Trump à China",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468060",
+   "publicado": "2026-11-18T09:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -858,17 +874,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nem o ouro escapa: dólar forte e temor de juros mais altos derrubam o metal a mínima de um ano",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQUHBnb3NhdGlNaEhxeDlOdUNCeVRyOU11ZUhWM1RxdzRvS0xvOEZkS2lBbnF0MTJWRUpfTUxKS3VSdGhQT0lwX0lfYWIyMTZTTXBDOXh5NjJ4dUx2UngxUEdfYklrcG5NaFBFY3gwMkdCUllIcnRkT3VRR2M5Rm12YkdzSVpONXdVWlJrZDFFcE1ZTkpRdTRSMEhJYzRESmtic3ZOVmNEUHVWd1psTUU0bFVRbjFJdjRubkhZRjFTeFJCSFRkUGRST3g2OHJId2piaDAxMUFIb2w5dDBkQklyOG5NVTFvYlp3dWx2SVNaakpxQQ?oc=5",
-   "publicado": "2026-11-18T08:46-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
