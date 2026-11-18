@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T13:15-03:00",
+  "atualizado_em": "2026-11-18T13:18-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -151,11 +151,11 @@
     ],
     [
      "13:00",
-     168043.0
+     167850.0
     ],
     [
-     "13:01",
-     167946.0
+     "13:03",
+     167840.0
     ]
    ]
   },
@@ -368,11 +368,11 @@
     ],
     [
      "13:15",
-     5.8188
+     5.8221
     ],
     [
-     "13:16",
-     5.8183
+     "13:18",
+     5.8223
     ]
    ]
   },
@@ -824,7 +824,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.17,
     "dolar30": 0.12
    },
    {
@@ -848,6 +848,19 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.15
+   },
+   {
+    "hora": "13:16",
+    "titulo": "Dólar a R$ 5,80 é oportunidade? Goldman vê real rendendo mais que a bolsa em 2027",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSGFvUE5kVlpPRVZLZ3lLS2pKQ1VQdFlOVlEwSm5mcTlSeTdsdlpsaVZwd0RoaWcyVlJtVFZBSy0tSHZwQjRCRlItMVFvTHFXa0RNcWdrOXZBT1N0TVBEaWpyY1NzZmt3T2ZOM0hRamdPTWNLWHFyQW8xZ0txVkxtSjBGTnhrZEc2a2l1Rl9CVWQwT1N6eUI1VkRmVk9jaVZsYWxuWUVDaXd1UkpkRDgwT2JtTQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1602,6 +1615,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar a R$ 5,80 é oportunidade? Goldman vê real rendendo mais que a bolsa em 2027",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSGFvUE5kVlpPRVZLZ3lLS2pKQ1VQdFlOVlEwSm5mcTlSeTdsdlpsaVZwd0RoaWcyVlJtVFZBSy0tSHZwQjRCRlItMVFvTHFXa0RNcWdrOXZBT1N0TVBEaWpyY1NzZmt3T2ZOM0hRamdPTWNLWHFyQW8xZ0txVkxtSjBGTnhrZEc2a2l1Rl9CVWQwT1N6eUI1VkRmVk9jaVZsYWxuWUVDaXd1UkpkRDgwT2JtTQ?oc=5",
+   "publicado": "2026-11-18T13:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1631,18 +1655,32 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T13:15-03:00",
+ "atualizado_em": "2026-11-18T13:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar a R$ 5,80 é oportunidade? Goldman vê real rendendo mais que a bolsa em 2027",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSGFvUE5kVlpPRVZLZ3lLS2pKQ1VQdFlOVlEwSm5mcTlSeTdsdlpsaVZwd0RoaWcyVlJtVFZBSy0tSHZwQjRCRlItMVFvTHFXa0RNcWdrOXZBT1N0TVBEaWpyY1NzZmt3T2ZOM0hRamdPTWNLWHFyQW8xZ0txVkxtSjBGTnhrZEc2a2l1Rl9CVWQwT1N6eUI1VkRmVk9jaVZsYWxuWUVDaXd1UkpkRDgwT2JtTQ?oc=5",
+   "publicado": "2026-11-18T13:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
    "fonte": "CNBC",
@@ -1658,8 +1696,8 @@
   {
    "titulo": "Minerva dispara 10% e BB lidera as maiores altas do Ibovespa hoje; veja os destaques do pregão",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTWdQQWdMMUNIb0s5Z0dyRC1COHN3d0FmaDYwNEdaRkloSk9BMFduZjBUZ3Q4TEl1OHFvVEVHdmFWMVgwY2RWZDZibl9Bd3J6SXo4TWNnS1FJVnBFZ1pmclBibmtPY1ZVcGFuWkRIdjNLMXc4cEZmRTZGVjgtNzBQaDFVUFlsdjlIS3hVZS00TXhUWGdvZm1HMkpEVUgzcFo3aDRIVGhVc0JqYlJrSkhSVFBTdkZVWmEzUE9xenpYXzlMRjhjR0tSOFdjUjRoNVVzbVHSAdcBQVVfeXFMT0ZyTm0wQmszUXZkRUlmY01uR0ZLVDNONDlWQ2dodVRQUjJHTjdRb3U0ZjRZem5VTG4yZ3RtZEUtd1VpZE14R2xSdGN5V1l0ODBVUHlUS205cjUxLXdVNTZucE1hVkpQdkI1ejVqZ0ZBZXVIWHRmOHRNMlJ5cnVfdmd1UmI4MTZaOWxXUC1jdG8ycTZFWmlBMm1Gd1NlYmxSN1lqRmdZNVBUTlhKNTlNdDVhX3FjdlJGOUQtNks3QWtFSnVoWFZNTF9TOExvMDlrUzk3c0FVMjA?oc=5",
-   "publicado": "2026-11-18T12:44-03:00",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzOHR0cHdIRERHZDhFMnItR2ozMzRPTVVsYjdaRlFqVkdKbnJWYm9STkJoUlhNN3NUUjU3MDR4WWVqcy0tUTRydDlTd1hmdzVUR0xNZkFidTlkM1BvTHVXT3FpRUxST3o3OUs2dDFjOVVJVEowRnpxVEtCZGQ5MjB4UmFFUFVEdU0yU1QxenV3X3JVUmdtdlB0QXZMem9qNXRLMTRPRWlKWDVkS2ZxVWhjeFVqT2xaNjBBOGRfbzlVT1hBaGxib2U3R0c3VkVDY3llVDFhUnVXLXNU?oc=5",
+   "publicado": "2026-11-18T12:52-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -1678,6 +1716,18 @@
    "tickers": []
   },
   {
+   "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSjVINm0xY0hxUlNUYjktREM3WTRWYTEybTVackhVLTU0NXVvQy00ZkpTSmoyQXR1WnBlVUdDMVY2bzlUZU5FWlEwV0pDVmxTVm9MSHBiYlVZVDBFS2dpd0ViT0hFZWF5MXUtNTZ2WlpnYTlndENyYUE5MlBGM3hUcGtkMGdwXzdXYVhZb29sSGlfNVJSdm43Z2JSbU9NSUhiUWRzel9YZ3FhT0hUZl9CUzQzd2tEUXdWUHhuSVhlME42SVlMMnFSQWN1YjlBRUc5amhjMXFjcFJOUnVJT19iYS1MdkM5Q3JybkHSAfgBQVVfeXFMUDVtbFVOdjd5NWIxdkpZTEtkOFB5azVYV3pzVmFIQlpvV3VCZDRqWGdocEY5em94U0Q2TmlXV1lFdUlSOXptcEFoWUg4eGdvbW1QdlhaQWxXS0pRZkhqaTVTYndZOXp6ZGd6UVpTYTdIWEU3NW9ZZW9HYVJKVV9rWi04VmlFOE9YaXNxVko0dGdNbFQzYWZUa3IyT1Nmd245aGUxZVI5NXBxODBrREw1aEJXaVloZzh1MjQ1UDZhSDBPSHJCclVyV2dvOWZXQU5nTU1hRjRMamRPSFpIVVFBTk9SMkduSXdDWkxPcXhGODJOQ1U0aDgwdVA?oc=5",
+   "publicado": "2026-11-18T12:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
@@ -1690,6 +1740,54 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar forte e juros nos EUA levam TS Lombard a reduzir exposição ao Brasil",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTlFRTzZ1Vk93OHNkTEYxcHZaZ0VMTkZyNEFoWkFidnVxenhLaVNndlAwdlRnTk9HRWNXbzh5LXJTdnpOMlVBdkdGc3dFVF9CZFJxajEtNGJ5YThjVE5zVTIzbUxOT3hhOEdYWVR6QzdRc3JUN296bDFHUzVNaGVVcXNLQ1NZaDFNVS13QThUNkNMdlZmdkJMOEFER0JzcDQza21rNzM0b0FOQU9RUnB5MGJNX1QxV1ZVOTZNOW94aHNJcEE5OW1BUNIB1wFBVV95cUxPSDFrb3pJTFBQNkhYTzdoNEdrQklfNHVqT2gtMnBybG1aRjdVRDJRNW1LcFBfV0g0SjkxbnNhTUtpQmtYcWZLRFpiTGpSYVJJN0NoV2lXeGxpUzBrek5jSnhfSER2WHZRdTJIenIyaHRzbzVhSDVhN2xEZ2k0bE5QVjkzYkJYVDhmS25TbXZuMFE5UUFrQmgtd3luUGc3eXQtd2ZZZXhxWm0xQjh6bWJQOF9lR2VaNzdPakYxRFE0MFJrZEFKc2lIVXpMYk5pbm9OVkFJZHo1SQ?oc=5",
+   "publicado": "2026-11-18T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Selic parada em 13,75% até metade de 2027 é certeza, diz Padovani, do BV",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2l0amNBMFozcElfZ2dOWXQzajJuWjdja2pjWVJ6ZjQ3Q29FZnFIQWtqbHg0a1d4cmJpSk9DZG5RRVRtYkV5Tmp2Q25tbG53SzYtZDByUFZHNmF4TElCMGxGZDJJc3BVaXNYYnVwdm9qbFJpbVF2Wjl0WnZtMXBjSGtacWJReUtGRzByOFhBNTRUOGJYdzN4WllsMUY?oc=5",
+   "publicado": "2026-11-18T11:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Apesar de estresse no câmbio, dólar corrigido pela inflação está longe do pico de 2002",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOVZVSHRQbVBIdnJHdXJVYTE4SEdvT2lFVmI5SnBRYkhfM3VpUHNYVTJ5TTdKTDVIUFIxcVdhcUFZalNVMDNMemJTVVJ3S29TeFM3NmRvODVrUjZHVWdrU2JLTUpoLW1aZUoxSzVPTjJvMzM0LUF3WnJ3dWhJX0hBd2NWN3JZTnp6WVdmMTJTYkl2WExxWnRCRDJJT1BkQ2h5SG1HQzVBR2luZDNjMkQteVpDTmNTOTJPbmlBZVktQnZ6R3ZhbVdROHZpcUo5c2NPdHRJVDZwN0xGTVZKWnRybtIB7wFBVV95cUxPU2NEa1p4UUhsMVFpWXhydTZ0RlBwUDREdTNaZktURjhGdm9VcWIwZlA3WmhYV28tRkVJbkFrR1ItX1B3eTVPNm5ESUNPNmhteFlDZXJuT1REeHBDZ3BBandwSkUtVVhPdVpiNGxzdDhrazhmeDJ3clBoLWRxSVRiQWdoWTlidVRFQndKbWVxN0xOQWVUaXpfbU1FcXZSRUNRbklmNnFHWGdOWUNBejM0NXRvcnp5czRSOE9CX0pMZ3dERy1maDdHemx2YWhxUzkxRUl4d1N6OWlOVHE4ZFJMZ0xlOS1kOEFjMVZDNFhVSQ?oc=5",
+   "publicado": "2026-11-18T11:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "B3 revela regras para inclusão de BDRs no Ibovespa a partir de 2027",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUWJNZXhkTWw3UlNERXNlVUxTbDNMOFNULVNSQXhqd1dhTk9RRXFlSElJM1NkQ1dNVEFfWUJTVjFleVRVd3V6LXlhaDh3azhrT0Q4YXAyVEFTM2xhckNRMmU5VGRpQjNSMmdMRVo2cTBQWkFRZ3ZTMW50S2VJNVY4YVQ2UGtSQmcxLV9KU2E3Vk9hVkZjUHc3T1ZRMUV6UC1MQWdFeWVmU0Yyb1FLRV9HZlZjeGtZUHJEeFo5ZlB5VEJkNkl40gHKAUFVX3lxTE9yd3RmSk9fdGE1T2k5SS1BRXNaNVNXUjl0OUMtcWJ2WWVoRVhKbldNdllYRDNLWU1WQmlRd3hsMDhyMEVUTV9pQ2xUWDRudi1lVXpyQzBxc3dXZmNubkNHVUFNTXRKNFM5ZHFaYllpYXlRVkVkQ1hYYnFYaEltMkpoNDNCeVYweS1leWVhbTRXMHd3NS1ack1qT002cUxJTjl1NjBXSkVGbjJmenZ2T3drSlgxVFpndktsX1pETGlLQ3VzdHpnNzFjRWc?oc=5",
+   "publicado": "2026-11-18T11:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
    "titulo": "Dólar sobe e supera R$ 5,79; Ibovespa cai em dia de votação de ajuste fiscal no Senado e ata do Fed",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNT3hzSDZ5Q1NiSXVXalV0N0pxWDZISEwwbjIybFpUTlhWMmZfdlRZMWNONjdiMHB3RTU3QUU4RDdXSzhIaXVXMkFBVkV0NzAzQTJWejFBNXo2eGF0Q1FkRFh1SUMtdHVnOEl1eU5ZS2FjX2JOaDdlZlJvTVFIV1JVc2lfaGNKR2QzSFh1YTZOdlV5bHhEWUpxVThvX0RvSHMyLWliYWJDRmM3ODg2VkpjdWJxNU5Md3BDUDlKdkpMUkc2NV9KdV9tOFlqT2lwdW1HdFdtS2hwX2VWUXlCc0xjM05qUdIB6AFBVV95cUxQbGVCNEtZM0xvOUpROE8yWUUzMGZLdldYUXlCbm5EZzdFWEdpOExXNEJ4WkszRnJ4aXhTMG5kMnFiMmE0VGowNERDanJYYzR3YnRiTWtHYUlZVFRhVzF0b2ZrWk91UkJPa3UzUjhqLWJ1d0I1TXhBSGhLMGpKZG13Qy1lWklDamowUVpxNEFfbTJjYjc1cDhLQVJLZk1WRFhnMzcxdTU4Z25ScldOQXhkb2NkWU9xdndlNnRzd0dyaDZpMHRiOFFXeVJicXQ3VjBjblg3Sjl4MXFUSkJMNTZwX2tkVVFsN3JK?oc=5",
@@ -1697,6 +1795,29 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas de juros sobem após Senado adiar votação de ajuste fiscal",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSi1UQ3VaZzhXQWlJZ0JSeTl2YWRIV2FRaWxrc1lxamxHLVA0U09VcGJ6ZGw4Ni1EM3FQVEI2MmcwUm5DM0ljeWp2VjdVUkNweG9Fei1wdExvQmVzVDZOUFdwdkNVWVhkNVRrXzBFRGYtcGpjaW5aX09weWdXNk5EcG85RHhZMnVRMHo5RWhWNUlDWkFsM19xbHpYdmxYME1tcExDSVJOWHBFaVpXUnVUQ0xWcW14RjRERTNRSHJJMXlBVXJvQjh6TA?oc=5",
+   "publicado": "2026-11-18T11:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar hoje sobe com pacote fiscal no radar e expectativa pela ata do Fed",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZnBWSzN0VVZ2UktNb3lKa2RsNTUzcU41OHZ5R2VQUW5WWnNfaVRrY1Z5eXBMYzY1ZHNHMUV2X0tCWjA3UWRDTU5kbVlUUFdrVW40VUtOUVdNS2NMSWIxN1N6M20yVklMVGFkVnhnQnIxNjBkbVpFSTA1SmZkNTk0WFRHMHp1N1NZdnNCVlNrR1JKbHhOVkdQTnU1aXHSAaIBQVVfeXFMUFNsdlF3UXY1dDEweFZPX2lwNlNrYkJOWmpncU94V0VtMzhNdGkwcmxISDU0NF9GRngzSU5pUWRGSTV1bWVFdmpBOXBsVmhuWHZ0eDVTOV9fbVRabi1ZRmZSUndYSXZoeHZGRkZmeXJ0ZV83aXg5b3NRWUFNb2hyTkg5a1E4czJVbmpzamR1cWVNQU9KRUFFRXNQOExjX0laOW5n?oc=5",
+   "publicado": "2026-11-18T11:20-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
@@ -1713,32 +1834,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Previ acumula perda bilionária com queda das ações do Banco do Brasil",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/previ-acumula-perda-bilionaria-com-queda-das-acoes-do-banco-do-brasil.shtml",
-   "publicado": "2026-11-18T11:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3"
-   ]
-  },
-  {
-   "titulo": "Itaú BBA corta preço-alvo da Direcional, mas vê alta de 64% na Bolsa; o que pesa na análise?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWEdGQWh0VlJ5QnljeEdLaHowUHh2bnJvdHpUMFlLdzNQYTRSMW1kWWk2TktoOXpXNnQxSmMyaXlFd3FHTmpiWGI4bVFSLVk2d0ZjYWxMXzhiZnhkWHVuOGJkTHZPR3daYmVqdHpmVDdxa1lqc1V6cmxzbUxGeWJ2eXRzQVdiV0paV2dDUXVFTHdyaUNfLW9JVWt4RmRMMDI1QXUyNlhsRk9JRWRrUm9vbkx3a3NUR1Q2Y2UycmNKWGdoZHd3UG5xMURsa3hNQ01iQjZWZ09remtzbFF4YzcwVNIB5gFBVV95cUxPTkZKMXpUTVJIdnZYWWxCVVdvVmlyTUJad05rU3dud0dpY0R3cEY3aWNadXBmaWRKNmtwN2cwYzlfZHJfbVpHWnAtRTl6MlN0ZkRERHY1R3kyaHJwSzhIbzlEc3pQbnZSY0h0dVAwZDU5c0pWd3FzNDNjQy0zWjhjUzE0enNMeHZETU5wNjFkV3dOWDI5YThMWjVjcmRhTHRJSDBWbG1pcGJhYzh0akljUnNha1VSNWpWMW94eDBDdDVvQlRVVzI4elBHenp0T1RRak42VDNWZHJxdk9qVFAxZ054UktsUQ?oc=5",
-   "publicado": "2026-11-18T10:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
   },
   {
    "titulo": "Ibovespa recua com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (18)",
