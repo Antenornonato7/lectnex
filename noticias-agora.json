@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T15:28-03:00",
+  "atualizado_em": "2026-11-18T15:30-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -255,11 +255,11 @@
     ],
     [
      "15:10",
-     168086.0
+     168099.0
     ],
     [
-     "15:13",
-     168097.0
+     "15:15",
+     168084.0
     ]
    ]
   },
@@ -576,11 +576,11 @@
     ],
     [
      "15:25",
-     5.835
+     5.836
     ],
     [
-     "15:28",
-     5.8355
+     "15:30",
+     5.836
     ]
    ]
   },
@@ -1184,6 +1184,21 @@
     "tickers": [],
     "ibov30": 0.25,
     "dolar30": 0.13
+   },
+   {
+    "hora": "15:28",
+    "titulo": "Durigan descarta recessão econômica e defende ajuste fiscal e reforma do Judiciário",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-descarta-recessao-economica-e-defende-ajuste-fiscal-e-reforma-do-judiciario.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -2040,6 +2055,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Durigan descarta recessão econômica e defende ajuste fiscal e reforma do Judiciário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-descarta-recessao-economica-e-defende-ajuste-fiscal-e-reforma-do-judiciario.shtml",
+   "publicado": "2026-11-18T15:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2069,7 +2097,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T15:28-03:00",
+ "atualizado_em": "2026-11-18T15:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2082,6 +2110,19 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Durigan descarta recessão econômica e defende ajuste fiscal e reforma do Judiciário",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-descarta-recessao-economica-e-defende-ajuste-fiscal-e-reforma-do-judiciario.shtml",
+   "publicado": "2026-11-18T15:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Read Jim Cramer’s full interview with Nvidia’s Colette Kress: Demand, buybacks and China",
    "fonte": "CNBC",
