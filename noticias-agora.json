@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T12:13-03:00",
+  "atualizado_em": "2026-11-18T12:15-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -99,11 +99,11 @@
     ],
     [
      "11:55",
-     169296.0
+     169185.0
     ],
     [
-     "11:58",
-     169272.0
+     "12:00",
+     169355.0
     ]
    ]
   },
@@ -264,11 +264,11 @@
     ],
     [
      "12:10",
-     5.7928
+     5.7938
     ],
     [
-     "12:13",
-     5.7923
+     "12:15",
+     5.7933
     ]
    ]
   },
@@ -650,6 +650,19 @@
     "ativos": [
      "WDO",
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:01",
+    "titulo": "Dólar forte e juros nos EUA levam TS Lombard a reduzir exposição ao Brasil",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTlFRTzZ1Vk93OHNkTEYxcHZaZ0VMTkZyNEFoWkFidnVxenhLaVNndlAwdlRnTk9HRWNXbzh5LXJTdnpOMlVBdkdGc3dFVF9CZFJxajEtNGJ5YThjVE5zVTIzbUxOT3hhOEdYWVR6QzdRc3JUN296bDFHUzVNaGVVcXNLQ1NZaDFNVS13QThUNkNMdlZmdkJMOEFER0JzcDQza21rNzM0b0FOQU9RUnB5MGJNX1QxV1ZVOTZNOW94aHNJcEE5OW1BUNIB1wFBVV95cUxPSDFrb3pJTFBQNkhYTzdoNEdrQklfNHVqT2gtMnBybG1aRjdVRDJRNW1LcFBfV0g0SjkxbnNhTUtpQmtYcWZLRFpiTGpSYVJJN0NoV2lXeGxpUzBrek5jSnhfSER2WHZRdTJIenIyaHRzbzVhSDVhN2xEZ2k0bE5QVjkzYkJYVDhmS25TbXZuMFE5UUFrQmgtd3luUGc3eXQtd2ZZZXhxWm0xQjh6bWJQOF9lR2VaNzdPakYxRFE0MFJrZEFKc2lIVXpMYk5pbm9OVkFJZHo1SQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1324,6 +1337,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar forte e juros nos EUA levam TS Lombard a reduzir exposição ao Brasil",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTlFRTzZ1Vk93OHNkTEYxcHZaZ0VMTkZyNEFoWkFidnVxenhLaVNndlAwdlRnTk9HRWNXbzh5LXJTdnpOMlVBdkdGc3dFVF9CZFJxajEtNGJ5YThjVE5zVTIzbUxOT3hhOEdYWVR6QzdRc3JUN296bDFHUzVNaGVVcXNLQ1NZaDFNVS13QThUNkNMdlZmdkJMOEFER0JzcDQza21rNzM0b0FOQU9RUnB5MGJNX1QxV1ZVOTZNOW94aHNJcEE5OW1BUNIB1wFBVV95cUxPSDFrb3pJTFBQNkhYTzdoNEdrQklfNHVqT2gtMnBybG1aRjdVRDJRNW1LcFBfV0g0SjkxbnNhTUtpQmtYcWZLRFpiTGpSYVJJN0NoV2lXeGxpUzBrek5jSnhfSER2WHZRdTJIenIyaHRzbzVhSDVhN2xEZ2k0bE5QVjkzYkJYVDhmS25TbXZuMFE5UUFrQmgtd3luUGc3eXQtd2ZZZXhxWm0xQjh6bWJQOF9lR2VaNzdPakYxRFE0MFJrZEFKc2lIVXpMYk5pbm9OVkFJZHo1SQ?oc=5",
+   "publicado": "2026-11-18T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1353,7 +1377,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T12:13-03:00",
+ "atualizado_em": "2026-11-18T12:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1372,11 +1396,22 @@
    "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
-   "publicado": "2026-11-18T12:07-03:00",
+   "publicado": "2026-11-18T12:13-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar forte e juros nos EUA levam TS Lombard a reduzir exposição ao Brasil",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTlFRTzZ1Vk93OHNkTEYxcHZaZ0VMTkZyNEFoWkFidnVxenhLaVNndlAwdlRnTk9HRWNXbzh5LXJTdnpOMlVBdkdGc3dFVF9CZFJxajEtNGJ5YThjVE5zVTIzbUxOT3hhOEdYWVR6QzdRc3JUN296bDFHUzVNaGVVcXNLQ1NZaDFNVS13QThUNkNMdlZmdkJMOEFER0JzcDQza21rNzM0b0FOQU9RUnB5MGJNX1QxV1ZVOTZNOW94aHNJcEE5OW1BUNIB1wFBVV95cUxPSDFrb3pJTFBQNkhYTzdoNEdrQklfNHVqT2gtMnBybG1aRjdVRDJRNW1LcFBfV0g0SjkxbnNhTUtpQmtYcWZLRFpiTGpSYVJJN0NoV2lXeGxpUzBrek5jSnhfSER2WHZRdTJIenIyaHRzbzVhSDVhN2xEZ2k0bE5QVjkzYkJYVDhmS25TbXZuMFE5UUFrQmgtd3luUGc3eXQtd2ZZZXhxWm0xQjh6bWJQOF9lR2VaNzdPakYxRFE0MFJrZEFKc2lIVXpMYk5pbm9OVkFJZHo1SQ?oc=5",
+   "publicado": "2026-11-18T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1393,9 +1428,9 @@
    "tickers": []
   },
   {
-   "titulo": "Apesar de estresse no câmbio, dólar corrigido pela inflação está longe do pico de R$ 8,45 de 2002",
+   "titulo": "Apesar de estresse no câmbio, dólar corrigido pela inflação está longe do pico de 2002",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOVZVSHRQbVBIdnJHdXJVYTE4SEdvT2lFVmI5SnBRYkhfM3VpUHNYVTJ5TTdKTDVIUFIxcVdhcUFZalNVMDNMemJTVVJ3S29TeFM3NmRvODVrUjZHVWdrU2JLTUpoLW1aZUoxSzVPTjJvMzM0LUF3WnJ3dWhJX0hBd2NWN3JZTnp6WVdmMTJTYkl2WExxWnRCRDJJT1BkQ2h5SG1HQzVBR2luZDNjMkQteVpDTmNTOTJPbmlBZVktQnZ6R3ZhbVdROHZpcUo5c2NPdHRJVDZwN0xGTVZKWnRybg?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOVZVSHRQbVBIdnJHdXJVYTE4SEdvT2lFVmI5SnBRYkhfM3VpUHNYVTJ5TTdKTDVIUFIxcVdhcUFZalNVMDNMemJTVVJ3S29TeFM3NmRvODVrUjZHVWdrU2JLTUpoLW1aZUoxSzVPTjJvMzM0LUF3WnJ3dWhJX0hBd2NWN3JZTnp6WVdmMTJTYkl2WExxWnRCRDJJT1BkQ2h5SG1HQzVBR2luZDNjMkQteVpDTmNTOTJPbmlBZVktQnZ6R3ZhbVdROHZpcUo5c2NPdHRJVDZwN0xGTVZKWnRybtIB7wFBVV95cUxPU2NEa1p4UUhsMVFpWXhydTZ0RlBwUDREdTNaZktURjhGdm9VcWIwZlA3WmhYV28tRkVJbkFrR1ItX1B3eTVPNm5ESUNPNmhteFlDZXJuT1REeHBDZ3BBandwSkUtVVhPdVpiNGxzdDhrazhmeDJ3clBoLWRxSVRiQWdoWTlidVRFQndKbWVxN0xOQWVUaXpfbU1FcXZSRUNRbklmNnFHWGdOWUNBejM0NXRvcnp5czRSOE9CX0pMZ3dERy1maDdHemx2YWhxUzkxRUl4d1N6OWlOVHE4ZFJMZ0xlOS1kOEFjMVZDNFhVSQ?oc=5",
    "publicado": "2026-11-18T11:52-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1516,6 +1551,18 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa tem leve queda com alta dos juros futuros e de olho em ajuste fiscal",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPV1M4d3g2eGZ6R1k4Mm5MQlJnQVVkam5CREpmWmlUTTA1OWJBblE0b3lLakkwanlveFAwSkFiWG0xNE41MThtajdOZE8tV0p1bVlYbW9fQlFia3NOWWN6Q1FfV1o2Z0ZRLS1rWGw2NUZYc25Mbks1T1lDNVc0MTk3VEM5clBiRXlMQ0NkZ1JMX3FrbTJoTVc5WWRZT3ZkUmRvUWZwZEVsak1LSGV2UEwyRjZ3SDRLRXM5Z3RJNUhZbjBSTlQ1MUJrb2RPclkwUFNOLVhudVNYR0wyWTAtcFVn0gHfAUFVX3lxTE9XUzh3eDZ4ZnpHWTgybkxCUmdBVWRqbkJESmZaaVRNMDU5YkFuUTRveUtqSTBqeW94UDBKQWJYbTE0TjUxOG1qN05kTy1XSnVtWVhtb19CUWJrc05ZY3pDUV9XWjZnRlEtLWtYbDY1RlhzbkxuSzVPWUM1VzQxOTdUQzlyUGJFeUxDQ2RnUkxfcWttMmhNVzlZZFlPdmRSZG9RZnBkRWxqTUtIZXZQTDJGNndINEtFczlndEk1SFluMFJOVDUxQmtvZE9yWTBQU04tWG51U1hHTDJZMC1wVWc?oc=5",
+   "publicado": "2026-11-18T10:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar atinge maior cotação em 19 meses; crescem apostas de Fed elevar juro",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMWx4UmYyOGkwVm9LWnpfRVRVYkx0dXE3LXloUXpwbk9KS3lHR0JiNlR2WmM0VEJEV3BGWVV4LVBUNW1EcjkzaU1ucHR3RWlkeVN1RFc3N0hpQUxxQ3YtT1FJX2JKQ21aWWRJRWlGMjJqd1NuYVlOZ240X3M3RnhCYlpOZ25WRWxmQzJqbHJzQmM4UEgtbS1lV0pxUktZN1FqZmx2SmZiYzVpMlVINjI0Ql84cXZoYjFPRkFQSjhZcGhVRXEz?oc=5",
@@ -1524,29 +1571,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Xi e Putin criticam 'protecionismo' ocidental e sanções na chegada de Trump à China",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468060",
-   "publicado": "2026-11-18T09:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar avança e chega a R$ 5,82, mas desacelera após leilões do BC; Bolsa oscila",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-nesta-quarta-com-mercado-a-espera-de-leilao-do-bc-e-votacao-sobre-ajuste-fiscal.shtml",
-   "publicado": "2026-11-18T09:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
