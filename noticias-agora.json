@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T13:55-03:00",
+  "atualizado_em": "2026-11-18T13:58-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -183,7 +183,11 @@
     ],
     [
      "13:40",
-     167660.0
+     167677.0
+    ],
+    [
+     "13:43",
+     167638.0
     ]
    ]
   },
@@ -428,7 +432,11 @@
     ],
     [
      "13:55",
-     5.8276
+     5.8268
+    ],
+    [
+     "13:58",
+     5.8263
     ]
    ]
   },
@@ -933,7 +941,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.07,
     "dolar30": 0.05
    },
    {
@@ -1761,7 +1769,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T13:55-03:00",
+ "atualizado_em": "2026-11-18T13:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1771,7 +1779,6 @@
   "Estadão",
   "Exame",
   "Folha",
-  "Money Times",
   "Valor"
  ],
  "noticias": [
@@ -1783,6 +1790,18 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa aprofunda perdas e dólar chega a R$ 5,82: veja o que abala o mercado",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORml2R1RKYlZiVmxjMmNKTHhBdVRiWUQxV1RKNTBTeVZiTzJXZ0NhNmV6WHJocmc2RG1uSEx3ZUlWekZTd2NPQmFoV0FtV1F3Q2xPYTlIRExfdzdoNWNiN3VDUUhCX0Uwc3JlX3N1VmNCNkpFVHduWDE1V1dPRDJ5V1pfZmR1dGhZZmlKOGVETFNrdzJrYmhWTVpTUU83XzJtaGdWYmtaM2I2X01q?oc=5",
+   "publicado": "2026-11-18T13:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1846,7 +1865,7 @@
   {
    "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQNW1sVU52N3k1YjF2SllMS2Q4UHlrNVhXenNWYUhCWm9XdUJkNGpYZ2hwRjl6b3hTRDZOaVdXWUV1SVI5em1wQWhZSDh4Z29tbVB2WFpBbFdLSlFmSGppNVNid1k5enpkZ3pRWlNhN0hYRTc1b1llb0dhUkpVX2taLThWaUU4T1hpc3FWSjR0Z01sVDNhZlRrcjJPU2Z3bjloZTFlUjk1cHE4MGtETDVoQldpWWhnOHUyNDVQNmFIME9IckJyVXJXZ285ZldBTmdNTWFGNExqZE9IWkhVUUFOT1IyR25Jd0NaTE9xeEY4Mk5DVTRoODB1UNIB-AFBVV95cUxQNW1sVU52N3k1YjF2SllMS2Q4UHlrNVhXenNWYUhCWm9XdUJkNGpYZ2hwRjl6b3hTRDZOaVdXWUV1SVI5em1wQWhZSDh4Z29tbVB2WFpBbFdLSlFmSGppNVNid1k5enpkZ3pRWlNhN0hYRTc1b1llb0dhUkpVX2taLThWaUU4T1hpc3FWSjR0Z01sVDNhZlRrcjJPU2Z3bjloZTFlUjk1cHE4MGtETDVoQldpWWhnOHUyNDVQNmFIME9IckJyVXJXZ285ZldBTmdNTWFGNExqZE9IWkhVUUFOT1IyR25Jd0NaTE9xeEY4Mk5DVTRoODB1UA?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSjVINm0xY0hxUlNUYjktREM3WTRWYTEybTVackhVLTU0NXVvQy00ZkpTSmoyQXR1WnBlVUdDMVY2bzlUZU5FWlEwV0pDVmxTVm9MSHBiYlVZVDBFS2dpd0ViT0hFZWF5MXUtNTZ2WlpnYTlndENyYUE5MlBGM3hUcGtkMGdwXzdXYVhZb29sSGlfNVJSdm43Z2JSbU9NSUhiUWRzel9YZ3FhT0hUZl9CUzQzd2tEUXdWUHhuSVhlME42SVlMMnFSQWN1YjlBRUc5amhjMXFjcFJOUnVJT19iYS1MdkM5Q3JybkHSAfgBQVVfeXFMUDVtbFVOdjd5NWIxdkpZTEtkOFB5azVYV3pzVmFIQlpvV3VCZDRqWGdocEY5em94U0Q2TmlXV1lFdUlSOXptcEFoWUg4eGdvbW1QdlhaQWxXS0pRZkhqaTVTYndZOXp6ZGd6UVpTYTdIWEU3NW9ZZW9HYVJKVV9rWi04VmlFOE9YaXNxVko0dGdNbFQzYWZUa3IyT1Nmd245aGUxZVI5NXBxODBrREw1aEJXaVloZzh1MjQ1UDZhSDBPSHJCclVyV2dvOWZXQU5nTU1hRjRMamRPSFpIVVFBTk9SMkduSXdDWkxPcXhGODJOQ1U0aDgwdVA?oc=5",
    "publicado": "2026-11-18T12:24-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1875,18 +1894,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Selic parada em 13,75% até metade de 2027 é certeza, diz Padovani, do BV",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2l0amNBMFozcElfZ2dOWXQzajJuWjdja2pjWVJ6ZjQ3Q29FZnFIQWtqbHg0a1d4cmJpSk9DZG5RRVRtYkV5Tmp2Q25tbG53SzYtZDByUFZHNmF4TElCMGxGZDJJc3BVaXNYYnVwdm9qbFJpbVF2Wjl0WnZtMXBjSGtacWJReUtGRzByOFhBNTRUOGJYdzN4WllsMUY?oc=5",
-   "publicado": "2026-11-18T11:55-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -1927,18 +1934,6 @@
    "tickers": [
     "BBAS3"
    ]
-  },
-  {
-   "titulo": "Ibovespa recua com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (18)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWHlOSDhJS19vdXpKLW5qNC1UTmhMVzF2b01iUnphRVJVNlVLZ3RDdWJmQlJURDEyLUNUN1RMdmxGNVhZVDNSTE9xeTNlYjRqOF8yQXZlR3BTR3RWVF9DR1FOckdlV3ptQ3B4NHBzVjBlTjU3Z1gtSUVFZGllbEpialpyUUVPaUxfbEg3azVTbFdBczBDQnNwUGUxTFhkbjZBbHA3MElfSlpsR2sxdFlsTXZYcFREdktnQm9sRlhTbjFzSjB2?oc=5",
-   "publicado": "2026-11-18T10:57-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
