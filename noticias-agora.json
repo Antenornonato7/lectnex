@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T11:15-03:00",
+  "atualizado_em": "2026-11-18T11:18-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -55,7 +55,11 @@
     ],
     [
      "11:00",
-     169957.0
+     169881.0
+    ],
+    [
+     "11:03",
+     169873.0
     ]
    ]
   },
@@ -172,7 +176,11 @@
     ],
     [
      "11:15",
-     5.8003
+     5.7983
+    ],
+    [
+     "11:18",
+     5.7983
     ]
    ]
   },
@@ -415,7 +423,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": -0.05
    },
    {
     "hora": "10:53",
@@ -430,7 +438,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.02
    },
    {
     "hora": "10:56",
@@ -1103,7 +1111,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T11:15-03:00",
+ "atualizado_em": "2026-11-18T11:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1118,6 +1126,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Mortgage demand turns lower, as interest rates shoot back up to the highest level in three weeks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/mortgage-demand-turns-lower-as-interest-rates-shoot-back-up-to-the-highest-level-in-three-weeks.html",
+   "publicado": "2026-11-18T11:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar atinge maior cotação em 19 meses; crescem apostas de Fed elevar juro",
    "fonte": "CNN Brasil",
@@ -1157,6 +1177,19 @@
    "tickers": []
   },
   {
+   "titulo": "Itaú BBA corta preço-alvo da Direcional, mas vê alta de 64% na Bolsa; o que pesa na análise?",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWEdGQWh0VlJ5QnljeEdLaHowUHh2bnJvdHpUMFlLdzNQYTRSMW1kWWk2TktoOXpXNnQxSmMyaXlFd3FHTmpiWGI4bVFSLVk2d0ZjYWxMXzhiZnhkWHVuOGJkTHZPR3daYmVqdHpmVDdxa1lqc1V6cmxzbUxGeWJ2eXRzQVdiV0paV2dDUXVFTHdyaUNfLW9JVWt4RmRMMDI1QXUyNlhsRk9JRWRrUm9vbkx3a3NUR1Q2Y2UycmNKWGdoZHd3UG5xMURsa3hNQ01iQjZWZ09remtzbFF4YzcwVNIB5gFBVV95cUxPTkZKMXpUTVJIdnZYWWxCVVdvVmlyTUJad05rU3dud0dpY0R3cEY3aWNadXBmaWRKNmtwN2cwYzlfZHJfbVpHWnAtRTl6MlN0ZkRERHY1R3kyaHJwSzhIbzlEc3pQbnZSY0h0dVAwZDU5c0pWd3FzNDNjQy0zWjhjUzE0enNMeHZETU5wNjFkV3dOWDI5YThMWjVjcmRhTHRJSDBWbG1pcGJhYzh0akljUnNha1VSNWpWMW94eDBDdDVvQlRVVzI4elBHenp0T1RRak42VDNWZHJxdk9qVFAxZ054UktsUQ?oc=5",
+   "publicado": "2026-11-18T10:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
    "titulo": "Ibovespa recua com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (18)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWHlOSDhJS19vdXpKLW5qNC1UTmhMVzF2b01iUnphRVJVNlVLZ3RDdWJmQlJURDEyLUNUN1RMdmxGNVhZVDNSTE9xeTNlYjRqOF8yQXZlR3BTR3RWVF9DR1FOckdlV3ptQ3B4NHBzVjBlTjU3Z1gtSUVFZGllbEpialpyUUVPaUxfbEg3azVTbFdBczBDQnNwUGUxTFhkbjZBbHA3MElfSlpsR2sxdFlsTXZYcFREdktnQm9sRlhTbjFzSjB2?oc=5",
@@ -1165,6 +1198,18 @@
    "ativos": [
     "WIN",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ações da Nvidia (NVDA) em alta: balanço forte prepara empresa para disputa entre EUA e China; veja números",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNXy1HdWZMTnhOdkMxSHdDeTVfUGI0ZGJMN2ZRUzJfNm00VmUwRGlUdjlvSjlFTEF2ZnhDMnZwRlpoN0FOdjkxV2lxenFQbl9LLXBqZjdnQ3FaX01wV3VWanhBYmlLUWdycVBQUldBRS1xZXlpS1d6WWIzcHNRY0tkcTlHeGdZb3VrZm9adWo1TTBDTnBGRzJ6YjBoR1ZLb3M4c2RLeTM4N0ZOc01DYnVfLWNZeElJNlFuU3VBMThZU1kxNmI5Y081SW1LMEk1M0k?oc=5",
+   "publicado": "2026-11-18T10:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1210,33 +1255,6 @@
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNOTVKMzlQWDAzelNxc0pyZy1UR05LeVIwNzczM3loRlB5V1FOb3pjSkRidDljZU1YbkYydHM4SVRVbmd5dEZKMDhpM2RmOEh4UHJNNDZhS3JONDJqNmdTbHJfOVYyNEJhSXl2TFM5VWhhemxxa0wwV0RTc1NNbDFVMWY4RmxkTFV6VklpV0ZjMlJweU9WU0Y4aXpULXZKa1lq?oc=5",
    "publicado": "2026-11-18T10:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Banco do Brasil (BBAS3), B3 (B3SA3), Americanas (AMER3) e outros destaques desta quarta-feira (18)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNHlwSlp0ZGpaMEs2c25zaGc1RDRkLXVMdEhaR2w3WkdscnBuYi1SMFlTNXlCemU4RXVkMk5aOE5tcWVES192bW5PVUFKSzhEYVRCRENDcGNSNG9fVHp0WUVLX0RaUkpFaFd0OU03M2VjTGNBbEp3YXJnaGtvTWRwY0RPc2tYa012endlbW5XRTBlcmRHR215UGdiWWpBeHVUZlpqUThGS3E5N0hIUkg3UGVJY3htdXV4LUN5UjN3?oc=5",
-   "publicado": "2026-11-18T09:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AMER3",
-    "B3SA3",
-    "BBAS3"
-   ]
-  },
-  {
-   "titulo": "Mortgage demand turns lower, as interest rates shoot back up to the highest level in three weeks.",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/18/mortgage-demand-turns-lower-as-interest-rates-shoot-back-up-to-the-highest-level-in-three-weeks.html",
-   "publicado": "2026-11-18T09:34-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -1300,17 +1318,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros sobem de olho em ajuste fiscal e após alívio da véspera",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZjExUWdOMUZjeFFudF85bUNrajhCSkVtWExmMHhtUjRoRDBMZFdpR1VNUDh2YWJMVldwZTZXUjVXQUxFN1ZpczlaVzNaRjhkU3BGUnNiWDExRTBtRkktWVEwOVZMUjVUR1dha0JNdDhVWHk1dE5lMFBsdkJtWi1NeUtPZUhRQXlDd1JsR1c4NW5MUjFlTUdWZVl3X05qak42ZjNnTEZXR29yMnc4X3BGdVBmWnFXLUJISEEwS2dNZGNQUG8tOC1GZWJzNTFTV05BLTcwZNIB1AFBVV95cUxNZjExUWdOMUZjeFFudF85bUNrajhCSkVtWExmMHhtUjRoRDBMZFdpR1VNUDh2YWJMVldwZTZXUjVXQUxFN1ZpczlaVzNaRjhkU3BGUnNiWDExRTBtRkktWVEwOVZMUjVUR1dha0JNdDhVWHk1dE5lMFBsdkJtWi1NeUtPZUhRQXlDd1JsR1c4NW5MUjFlTUdWZVl3X05qak42ZjNnTEZXR29yMnc4X3BGdVBmWnFXLUJISEEwS2dNZGNQUG8tOC1GZWJzNTFTV05BLTcwZA?oc=5",
-   "publicado": "2026-11-18T09:16-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
