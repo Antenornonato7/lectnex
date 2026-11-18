@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T11:00-03:00",
+  "atualizado_em": "2026-11-18T11:03-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -43,7 +43,11 @@
     ],
     [
      "10:45",
-     169635.0
+     169544.0
+    ],
+    [
+     "10:48",
+     169534.0
     ]
    ]
   },
@@ -148,7 +152,11 @@
     ],
     [
      "11:00",
-     5.7952
+     5.7942
+    ],
+    [
+     "11:03",
+     5.7948
     ]
    ]
   },
@@ -997,7 +1005,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T11:00-03:00",
+ "atualizado_em": "2026-11-18T11:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1005,12 +1013,26 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa perde força e dólar avança para R$ 5,80 com ajuste fiscal no radar",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORml2R1RKYlZiVmxjMmNKTHhBdVRiWUQxV1RKNTBTeVZiTzJXZ0NhNmV6WHJocmc2RG1uSEx3ZUlWekZTd2NPQmFoV0FtV1F3Q2xPYTlIRExfdzdoNWNiN3VDUUhCX0Uwc3JlX3N1VmNCNkpFVHduWDE1V1dPRDJ5V1pfZmR1dGhZZmlKOGVETFNrdzJrYmhWTVpTUU83XzJtaGdWYmtaM2I2X01q?oc=5",
+   "publicado": "2026-11-18T10:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa recua com pressão do cenário fiscal; 5 coisas para saber antes de investir hoje (18)",
    "fonte": "Money Times",
@@ -1191,18 +1213,6 @@
    "publicado": "2026-11-18T09:16-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje sobe a R$ 5,80 antes de leilões do BC e com pacote fiscal no radar",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU2x2UXdRdjV0MTB4Vk9faXA2U2tiQk5aamdxT3hXRW0zOE10aTBybEhINTQ0X0ZGeDNJTmlRZEZJNXVtZUV2akE5cGxWaG5YdnR4NVM5X19tVFpuLVlGZlJSd1hJdmh4dkZGRmZ5cnRlXzdpeDlvc1FZQU1vaHJOSDlrUThzMlVuanNqZHVxZU1BT0pFQUVFc1A4TGNfSVo5bmfSAaIBQVVfeXFMUFNsdlF3UXY1dDEweFZPX2lwNlNrYkJOWmpncU94V0VtMzhNdGkwcmxISDU0NF9GRngzSU5pUWRGSTV1bWVFdmpBOXBsVmhuWHZ0eDVTOV9fbVRabi1ZRmZSUndYSXZoeHZGRkZmeXJ0ZV83aXg5b3NRWUFNb2hyTkg5a1E4czJVbmpzamR1cWVNQU9KRUFFRXNQOExjX0laOW5n?oc=5",
-   "publicado": "2026-11-18T09:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
