@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T13:20-03:00",
+  "atualizado_em": "2026-11-18T13:23-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -155,7 +155,11 @@
     ],
     [
      "13:05",
-     167868.0
+     167832.0
+    ],
+    [
+     "13:08",
+     167806.0
     ]
    ]
   },
@@ -372,6 +376,10 @@
     ],
     [
      "13:20",
+     5.8228
+    ],
+    [
+     "13:23",
      5.8223
     ]
    ]
@@ -838,7 +846,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.15,
+    "ibov30": -0.18,
     "dolar30": 0.12
    },
    {
@@ -865,7 +873,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.15
+    "dolar30": 0.16
    },
    {
     "hora": "13:16",
@@ -1681,13 +1689,12 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T13:20-03:00",
+ "atualizado_em": "2026-11-18T13:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
@@ -1809,17 +1816,6 @@
    "ativos": [
     "WIN",
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Taxas de juros sobem após Senado adiar votação de ajuste fiscal",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSi1UQ3VaZzhXQWlJZ0JSeTl2YWRIV2FRaWxrc1lxamxHLVA0U09VcGJ6ZGw4Ni1EM3FQVEI2MmcwUm5DM0ljeWp2VjdVUkNweG9Fei1wdExvQmVzVDZOUFdwdkNVWVhkNVRrXzBFRGYtcGpjaW5aX09weWdXNk5EcG85RHhZMnVRMHo5RWhWNUlDWkFsM19xbHpYdmxYME1tcExDSVJOWHBFaVpXUnVUQ0xWcW14RjRERTNRSHJJMXlBVXJvQjh6TA?oc=5",
-   "publicado": "2026-11-18T11:22-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
