@@ -1,125 +1,6 @@
 {
-  "atualizado_em": "2026-11-17T19:40:00-03:00",
+  "atualizado_em": "2026-11-18T08:05:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-17",
-      "hora": "10h",
-      "pais": "BR",
-      "evento": "Durigan na CAE do Senado (alíquota da CBS 2027)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Defendeu a CBS: estima alíquota efetiva de 8,5% (os 11,3% do TCU compensam setores com redução) e prometeu meta de superávit de 0,5% do PIB em 2027",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "TCU recomendou alíquota de referência de 11,3% para a CBS; Senado fixa o valor até 15/12.",
-      "tipo": "fala-fazenda",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-17",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Vendas no varejo (out, m/m)",
-      "importancia": 2,
-      "anterior": "0,8%",
-      "consenso": "0,2%",
-      "resultado": "0,2%",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Consenso +0,2% m/m (núcleo ex-autos +0,4%, ant. +0,9%). Consumo forte reforça a aposta de alta do Fed em dezembro.",
-      "tipo": "varejo-eua",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-17",
-      "hora": "11h10",
-      "pais": "US",
-      "evento": "Fala de Christopher Waller (Fed)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Sem sinal sobre juros: falou de pagamentos e inovação digital e não tratou de política monetária no discurso",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Sinal sobre o ritmo de juros em dezembro.",
-      "tipo": "fala-fed",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-17",
-      "hora": "11h15",
-      "pais": "US",
-      "evento": "Produção industrial (out, m/m)",
-      "importancia": 1,
-      "anterior": "0,7%",
-      "consenso": "0,1%",
-      "resultado": "-0,4%",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Atividade da indústria americana (Fed); consenso do calendário do Yahoo Finance.",
-      "tipo": "producao-industrial-eua",
-      "surpresa": {
-        "direcao": "abaixo",
-        "reacao": "Atividade industrial mais fraca que o esperado costuma aliviar os juros dos Treasuries e tirar força do dólar global, com efeito em geral moderado no WDO e no DI."
-      }
-    },
-    {
-      "data": "2026-11-17",
-      "hora": "16h25",
-      "pais": "US",
-      "evento": "Fala de John Williams (Fed de Nova York)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Vê provável nova alta de juros, mas sem necessidade de “ação dramática”; afastou alta de 0,50 p.p. em dezembro",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Conversa em evento; segunda fala dele na semana.",
-      "tipo": "fala-fed",
-      "surpresa": null
-    },
-    {
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Receita de US$ 115,8 bi (+103% a/a), data center US$ 107,6 bi; projeta US$ 130 bi (±3%) no 4º tri",
-      "surpresa": null,
-      "data": "2026-11-17",
-      "hora": "18h20",
-      "pais": "US",
-      "evento": "Balanço da Nvidia (3º tri fiscal 2027)",
-      "importancia": 2,
-      "impacto": {
-        "win": "volatil"
-      },
-      "nota": "Primeiro resultado depois da renúncia de Jensen Huang; teleconferência às 19h. Mexe no Nasdaq e no apetite a risco global.",
-      "tipo": "balanco-nvidia"
-    },
-    {
-      "data": "2026-11-17",
-      "hora": null,
-      "pais": "BR",
-      "evento": "Senado vota destaques do ajuste fiscal (PLP 299/2026)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Adiada para quarta (18/11): relator pediu mais tempo para acordo sobre os quatro destaques",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil",
-        "win": "volatil"
-      },
-      "nota": "Quatro destaques podem alterar o texto-base aprovado por 45 a 31; depois o projeto segue à Câmara.",
-      "tipo": "ajuste-fiscal",
-      "surpresa": null
-    },
     {
       "data": "2026-11-18",
       "hora": "04h",
@@ -154,6 +35,22 @@
     },
     {
       "data": "2026-11-18",
+      "hora": "11h",
+      "pais": "BR",
+      "evento": "Fala de Dario Durigan (Fazenda) em fórum do Bradesco BBI",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil"
+      },
+      "nota": "Sinais sobre o ajuste fiscal no dia da votação dos destaques no Senado.",
+      "tipo": "fala-fazenda",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-18",
       "hora": "16h",
       "pais": "US",
       "evento": "Ata do FOMC (reunião de 27–28/out)",
@@ -168,6 +65,24 @@
       },
       "nota": "Reunião que manteve os juros em 3,75%–4,00% (votação 10–2); mercado precifica alta em dezembro.",
       "tipo": "ata-fomc",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-18",
+      "hora": "16h",
+      "pais": "BR",
+      "evento": "Senado vota destaques do ajuste fiscal (PLP 299/2026)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Adiada de terça; primeiro item da sessão plenária. Quatro destaques podem alterar o texto-base aprovado por 45 a 31.",
+      "tipo": "ajuste-fiscal",
       "surpresa": null
     },
     {
@@ -251,6 +166,23 @@
       "surpresa": null
     },
     {
+      "data": "2026-11-19",
+      "hora": null,
+      "pais": "CN",
+      "evento": "Encontro Trump–Xi–Putin na cúpula da APEC (Shenzhen)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "win": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Reunião confirmada pela Casa Branca à margem da APEC; comércio EUA–China mexe com minério e emergentes.",
+      "tipo": "cupula-eua-china",
+      "surpresa": null
+    },
+    {
       "data": "2026-11-20",
       "hora": "12h",
       "pais": "US",
@@ -282,6 +214,22 @@
     },
     {
       "data": "2026-11-23",
+      "hora": "06h",
+      "pais": "EU",
+      "evento": "PMIs preliminares da zona do euro (nov)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Atividade da indústria e dos serviços; mexe com o euro e o dólar global.",
+      "tipo": "pmi-zona-euro",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-23",
       "hora": "08h25",
       "pais": "BR",
       "evento": "Boletim Focus (BCB)",
@@ -294,6 +242,90 @@
       },
       "nota": "Expectativas de Selic, IPCA e câmbio.",
       "tipo": "focus",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-23",
+      "hora": "11h45",
+      "pais": "US",
+      "evento": "PMI composto preliminar S&P Global (nov)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Primeira leitura de atividade de novembro nos EUA.",
+      "tipo": "pmi-sp-global-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-24",
+      "hora": "12h",
+      "pais": "US",
+      "evento": "Confiança do consumidor Conference Board (nov)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Termômetro do consumo americano.",
+      "tipo": "conference-board",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-25",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "PIB dos EUA — 2ª estimativa (3º tri, anualizado)",
+      "importancia": 2,
+      "anterior": "3,4%",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Primeira estimativa mostrou alta de 3,4% (BEA).",
+      "tipo": "pib-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-25",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Inflação PCE (out)",
+      "importancia": 3,
+      "anterior": "3,1% (núcleo a/a)",
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Medida de inflação preferida do Fed; anterior = núcleo em 12 meses de setembro. Sai antes do feriado de Ação de Graças.",
+      "tipo": "pce-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-25",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Encomendas de bens duráveis (out)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Investimento e demanda da indústria americana.",
+      "tipo": "bens-duraveis-eua",
       "surpresa": null
     }
   ]
