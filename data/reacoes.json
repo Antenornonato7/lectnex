@@ -2169,8 +2169,34 @@
    "surpresa": null,
    "win": null,
    "wdo": -0.137
+  },
+  {
+   "id": "2026-11-18|16h|ajuste-fiscal",
+   "data": "2026-11-18",
+   "hora": "16h",
+   "tipo": "ajuste-fiscal",
+   "evento": "Senado vota destaques do ajuste fiscal (PLP 299/2026)",
+   "pais": "BR",
+   "resultado": "Aprovado por 69 a 2 no turno suplementar; 3 destaques rejeitados; texto vai à Câmara",
+   "consenso": null,
+   "surpresa": null,
+   "win": -0.139,
+   "wdo": 0.137
+  },
+  {
+   "id": "2026-11-18|16h|ata-fomc",
+   "data": "2026-11-18",
+   "hora": "16h",
+   "tipo": "ata-fomc",
+   "evento": "Ata do FOMC (reunião de 27–28/out)",
+   "pais": "US",
+   "resultado": "Quase todos esperam alta de 0,25 p.p. em dezembro",
+   "consenso": null,
+   "surpresa": null,
+   "win": -0.139,
+   "wdo": 0.137
   }
  ],
- "atualizado_em": "2026-11-17T19:50:27-03:00",
+ "atualizado_em": "2026-11-18T19:50:26-03:00",
  "metodo_di": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte. Fonte: Tesouro Transparente (preços e taxas do Tesouro Direto)."
 }
