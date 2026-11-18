@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T18:08-03:00",
+  "atualizado_em": "2026-11-18T18:38-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     167602.0
+     167538.0
     ]
    ]
   },
@@ -1586,6 +1586,19 @@
     "dolar30": -0.32
    },
    {
+    "hora": "17:18",
+    "titulo": "Dólar à vista dispara, bate R$ 5,86 e renova máxima em 19 meses com juros americanos no foco",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPV29LZV9uZzgtV0daQ1l4XzdDeVR4OFA1X3hiZlBFTDJINlJRT3N0aXpoaFU2NTdJeDZ6UUZ4MWREdVFxTndRazlZOU1Fb2JFMDZ3Zm5UYmFwRm1BSmhvS0FDdFRmNVFxNk52ajRFYjFzbjJkeUM5RzNBa0REOUp2R2VYelZzeW9LVm9VYTBJeENvV1BLOWZBWjBocFBvbnpwNzQxUXVZZnZTRUFac2hLd3RWZk9DZDVOYWRDWTVVVTRrSTJBN0RfZjRTUVdaQ3hmaGFMMDdxTHRDYlpCWG04ZWpRU1VvZVpjTHRnZ3hMZ9IB7wFBVV95cUxPV29LZV9uZzgtV0daQ1l4XzdDeVR4OFA1X3hiZlBFTDJINlJRT3N0aXpoaFU2NTdJeDZ6UUZ4MWREdVFxTndRazlZOU1Fb2JFMDZ3Zm5UYmFwRm1BSmhvS0FDdFRmNVFxNk52ajRFYjFzbjJkeUM5RzNBa0REOUp2R2VYelZzeW9LVm9VYTBJeENvV1BLOWZBWjBocFBvbnpwNzQxUXVZZnZTRUFac2hLd3RWZk9DZDVOYWRDWTVVVTRrSTJBN0RfZjRTUVdaQ3hmaGFMMDdxTHRDYlpCWG04ZWpRU1VvZVpjTHRnZ3hMZw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.32
+   },
+   {
     "hora": "17:27",
     "titulo": "Petróleo fecha em queda em meio à alta do dólar e recuperação da oferta",
     "fonte": "Money Times",
@@ -1654,55 +1667,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ata do Fed, reação ao balanço da Nvidia, votação do ajuste fiscal e mais destaques",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOWVPc1BOem51aEJHeFBqc1FMd001WFNrTlN5OXJNVXdGUGd0QmR3Z1hRVVJPcElRSEdMNFo3VUVMS3E4OW5NZXVrQTVTaGJYaHA3dm1ZLTZZbWlXTmxCNG9zNk1aaGJJRWpJekFHOEgyRFRmNHktWEVnTUxKVDBKckdlNjJnYVXSAYwBQVVfeXFMUEw4S05VOTZhT1AtWVRqMUZybFRZUWk0MEhtVEhURkFidGFtYnRBX0pKMHZTNy1pbXprMFU1QUZIZkpyV25vaG5ERjZBM1M5TGhFRlM4cmM5ZXVrMUliV1IwdThTQ3dISWhHY2xCRTlHaDRqZlJQS3pSbl9wSGpKVXBldlpIdV9tMUQ3b2M?oc=5",
-   "publicado": "2026-11-18T05:57-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa acompanha divulgação da ata do Fomc e do fluxo cambial do Brasil",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VT3hqVHp1SnlpSV8tRGRCckFpeEtFdFU4aGgzU0ZFQjlTd21vWDlBZkY0WWFFQW5ZRzZnTnI3c2FNLXZMa1JRTEZOaVMycXRyaVlVR3BJdENDWFlzWndFMDFKNTBYcWJK?oc=5",
-   "publicado": "2026-11-18T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pré-Black Friday tem recuo de vendas no Brasil, mostra Itaú",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pre-black-friday-tem-recuo-de-vendas-no-brasil-mostra-itau.shtml",
-   "publicado": "2026-11-18T06:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
-  {
-   "titulo": "Converter dólar em real: veja como fazer a melhor escolha e economizar",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOLTRDaUNtaHRRMmZrS2gyQlJIcTBya19uTGhicjNjTkhWM0NhUVhET0MxbXJWQmV1eko4U1M2X05QZVpfbWdaM01LZGdvTEdWYXFNSVNCazRLdTl5N2RCOXpwRjJSRklOeUNkQ2NSR1FSUXJZUkpmeGlSRVA4M1RxeTdOV0xLYTIyWFY1UFpTYl9xWVNUYXJ1YVZBaXJuVlV4TDRCQlNONE1uTlVvdk9ENVRJNXJ3d1dIdzhfd1lqbmU?oc=5",
-   "publicado": "2026-11-18T06:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ibovespa testa fôlego de alta com votação do ajuste fiscal no Senado e ata do Fed no radar",
    "fonte": "Estadão",
@@ -2538,6 +2502,17 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar à vista dispara, bate R$ 5,86 e renova máxima em 19 meses com juros americanos no foco",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPV29LZV9uZzgtV0daQ1l4XzdDeVR4OFA1X3hiZlBFTDJINlJRT3N0aXpoaFU2NTdJeDZ6UUZ4MWREdVFxTndRazlZOU1Fb2JFMDZ3Zm5UYmFwRm1BSmhvS0FDdFRmNVFxNk52ajRFYjFzbjJkeUM5RzNBa0REOUp2R2VYelZzeW9LVm9VYTBJeENvV1BLOWZBWjBocFBvbnpwNzQxUXVZZnZTRUFac2hLd3RWZk9DZDVOYWRDWTVVVTRrSTJBN0RfZjRTUVdaQ3hmaGFMMDdxTHRDYlpCWG04ZWpRU1VvZVpjTHRnZ3hMZ9IB7wFBVV95cUxPV29LZV9uZzgtV0daQ1l4XzdDeVR4OFA1X3hiZlBFTDJINlJRT3N0aXpoaFU2NTdJeDZ6UUZ4MWREdVFxTndRazlZOU1Fb2JFMDZ3Zm5UYmFwRm1BSmhvS0FDdFRmNVFxNk52ajRFYjFzbjJkeUM5RzNBa0REOUp2R2VYelZzeW9LVm9VYTBJeENvV1BLOWZBWjBocFBvbnpwNzQxUXVZZnZTRUFac2hLd3RWZk9DZDVOYWRDWTVVVTRrSTJBN0RfZjRTUVdaQ3hmaGFMMDdxTHRDYlpCWG04ZWpRU1VvZVpjTHRnZ3hMZw?oc=5",
+   "publicado": "2026-11-18T17:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Petróleo fecha em queda em meio à alta do dólar e recuperação da oferta",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPU2MxVUlWU1EwTUJVdVZHZzRNWF8yLXY2TFBZT2d4RW9NMDFjRDV3S1lzQ2hQNk1HNnBoRU92VUx2ekx3UHlybEpJdjl0VkxJdmcxWTBVXy1oQko5V3FEYzdjejViS3VvbEZlMjZQekZGdzItYS1wd1NUU1M4ajhOQ2VRN1FoZlpacE95bXhYc0hEVjBSazdvdHpTNzRKb1VKZlpSaUVXb3hLMUU?oc=5",
@@ -2603,6 +2578,42 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Juros futuros sobem com pressão do câmbio e aversão a risco",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNLXloUnVnXzllakZ1MHhCUm9qRk9ncENhNTBlUWtYOWppcTJnTEg3X3JNY1lJV0l2TGwzSXladG1wRjNNdlJ0eWpyb3NGNk1OQUFsX3lhUWJsbVp1MXN2LWx5d3lzdWEzV2U2bWhoVGJKTm9yMVFXY3B6amkzMHI4WEFnUWE2VmFQR0tmTjdWR0xqdk5XektwcV8tUV8zU2N5YjdISkxuRG5rcE4zdTVwOU10MGlZVUZt0gHHAUFVX3lxTE11Ulg3SFNLNzQ0MF9HaTUxNzZleVNMTDdIQWZKNFkyQU1iOExBclV3czBNZ1VydGowTkcwWFVmYUpmNVVXRHluRjhfRjM5bUZHQnM4WEpEd0dod2lJWWx3MzNPZ0hrR1lNVWZjSHBVTE1GUDVLVTBpSzRydi0yTktycFRMNFV4UjlsLTdHVVl2aDhXMGQyUmEtZkhkR282QkpCTnNGZjgteTdrV0NSMjRLUnZ3akhKQ2NjaWdVOXZWdDBNbkpSNXc?oc=5",
+   "publicado": "2026-11-18T18:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa perde os 168 mil pontos com votação do PLP do ajuste fiscal e queda forte de bancos",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQeXVMVnhwU2pFeERLR2xGRlc2bGh6V2VuRFdtMlRCd2E2SEx1dXRRS0h0d1QxNk1uNDZiRnhKMWRxREVhY1dWODZGbUlEb2F1OUZUbmh2RFR3azFmM1h1TlZFYTVIQ1ZmclBUVkZiZm9yNnd5emExNkFlNzBuUUFwQjlIX2pKZ0ZaWXR0UUJnV080Q2Y5QUxzMEtNNXE5VVZoTW0zQlRBX2FBWi0tVVVXTDBVa0hNVFNweE1pWVR5OUlzaEV1WFYweE5FNVFNQXpnMERlWnNiS0hkY2I2RjVTWWJSVXPSAfMBQVVfeXFMUEhNcVdzOGFoQVVnaVJldVpwY1Q3TENsU2lLUkVaZUxJN25nX0IwRUdXdG1ZQ0RlWVRDSEhsbi1PMHRKZ1dPSGpYc29IaFlCaldoZzlRNG9PdzdoaFRtTFJLazlrblRYdmx3YUs4THJZZlNoV0xQeS1zcnFuaVYyb2Q2NTdRZnpmdkVlWEhZVzlkeFFJMm9OTklLMElKZkJrcHV6SFVpNnRqNTVvaW53NWo4TFlUalJObnhWVjNRNUZFQkJvRWllQ1hOSlhpQTVPUlc2Q2RBUkFNSmlBY2xsZUNvdDRCaFV6b2d2QVQ2Uk5VUGxF?oc=5",
+   "publicado": "2026-11-18T18:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Caldeira explode em fábrica da Klabin em SC e dez trabalhadores são hospitalizados",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/caldeira-explode-em-fabrica-da-klabin-em-sc-e-dez-trabalhadores-sao-hospitalizados.shtml",
+   "publicado": "2026-11-18T18:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "KLBN11"
+   ]
   }
  ],
  "enviadas": [
@@ -2632,7 +2643,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T18:08-03:00",
+ "atualizado_em": "2026-11-18T18:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2647,6 +2658,42 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Caldeira explode em fábrica da Klabin em SC e dez trabalhadores são hospitalizados",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/caldeira-explode-em-fabrica-da-klabin-em-sc-e-dez-trabalhadores-sao-hospitalizados.shtml",
+   "publicado": "2026-11-18T18:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "KLBN11"
+   ]
+  },
+  {
+   "titulo": "Ibovespa perde os 168 mil pontos com votação do PLP do ajuste fiscal e queda forte de bancos",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQeXVMVnhwU2pFeERLR2xGRlc2bGh6V2VuRFdtMlRCd2E2SEx1dXRRS0h0d1QxNk1uNDZiRnhKMWRxREVhY1dWODZGbUlEb2F1OUZUbmh2RFR3azFmM1h1TlZFYTVIQ1ZmclBUVkZiZm9yNnd5emExNkFlNzBuUUFwQjlIX2pKZ0ZaWXR0UUJnV080Q2Y5QUxzMEtNNXE5VVZoTW0zQlRBX2FBWi0tVVVXTDBVa0hNVFNweE1pWVR5OUlzaEV1WFYweE5FNVFNQXpnMERlWnNiS0hkY2I2RjVTWWJSVXPSAfMBQVVfeXFMUEhNcVdzOGFoQVVnaVJldVpwY1Q3TENsU2lLUkVaZUxJN25nX0IwRUdXdG1ZQ0RlWVRDSEhsbi1PMHRKZ1dPSGpYc29IaFlCaldoZzlRNG9PdzdoaFRtTFJLazlrblRYdmx3YUs4THJZZlNoV0xQeS1zcnFuaVYyb2Q2NTdRZnpmdkVlWEhZVzlkeFFJMm9OTklLMElKZkJrcHV6SFVpNnRqNTVvaW53NWo4TFlUalJObnhWVjNRNUZFQkJvRWllQ1hOSlhpQTVPUlc2Q2RBUkFNSmlBY2xsZUNvdDRCaFV6b2d2QVQ2Uk5VUGxF?oc=5",
+   "publicado": "2026-11-18T18:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Juros futuros sobem com pressão do câmbio e aversão a risco",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNLXloUnVnXzllakZ1MHhCUm9qRk9ncENhNTBlUWtYOWppcTJnTEg3X3JNY1lJV0l2TGwzSXladG1wRjNNdlJ0eWpyb3NGNk1OQUFsX3lhUWJsbVp1MXN2LWx5d3lzdWEzV2U2bWhoVGJKTm9yMVFXY3B6amkzMHI4WEFnUWE2VmFQR0tmTjdWR0xqdk5XektwcV8tUV8zU2N5YjdISkxuRG5rcE4zdTVwOU10MGlZVUZt0gHHAUFVX3lxTE11Ulg3SFNLNzQ0MF9HaTUxNzZleVNMTDdIQWZKNFkyQU1iOExBclV3czBNZ1VydGowTkcwWFVmYUpmNVVXRHluRjhfRjM5bUZHQnM4WEpEd0dod2lJWWx3MzNPZ0hrR1lNVWZjSHBVTE1GUDVLVTBpSzRydi0yTktycFRMNFV4UjlsLTdHVVl2aDhXMGQyUmEtZkhkR282QkpCTnNGZjgteTdrV0NSMjRLUnZ3akhKQ2NjaWdVOXZWdDBNbkpSNXc?oc=5",
+   "publicado": "2026-11-18T18:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar à vista supera os R$ 5,85 e fecha na maior cotação em 19 meses",
    "fonte": "Money Times",
@@ -2786,49 +2833,12 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar hoje sobe mais de 1%, a R$ 5,87, com foco em pacote fiscal e ata do Fed",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZnBWSzN0VVZ2UktNb3lKa2RsNTUzcU41OHZ5R2VQUW5WWnNfaVRrY1Z5eXBMYzY1ZHNHMUV2X0tCWjA3UWRDTU5kbVlUUFdrVW40VUtOUVdNS2NMSWIxN1N6M20yVklMVGFkVnhnQnIxNjBkbVpFSTA1SmZkNTk0WFRHMHp1N1NZdnNCVlNrR1JKbHhOVkdQTnU1aXE?oc=5",
-   "publicado": "2026-11-18T16:37-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Moedas emergentes sofrem forte pressão com Fed conservador e queda das commodities",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZWt4YlY0b1dQOUhwLVdCMzd2TC0zTXRMc0g0TzVHVTllQmRRdVNoaTNwWldTNDlSSUVBRE9ybmlyUjNJZ1lyNmZWYTZWdXlpR2ZtOTBOVE93ZXBsMGYtUl9GV1RxaHFjVzFGSTh5QTRoNlBqTHZKUkJZYzFjVnVucDlyQ1NoT1QyWWdhS0RmVDdQbU8tSWI0YmxMbEQwTFM1TXhlVjdhckFxRTZXclp1V255MVNEMGR6QXdTSTktTFA3emFaT3d5Y1FucVpoMlVpUEl6UUJVcndJNGZqZmZSTWpDdlbSAeQBQVVfeXFMTWVreGJWNG9XUDlIcC1XQjM3dkwtM010THNINE81R1U5ZUJkUXVTaGkzcFpXUzQ5UklFQURPcm5pclIzSWdZcjZmVmE2VnV5aUdmbTkwTlRPd2VwbDBmLVJfRldUcWhxY1cxRkk4eUE0aDZQakx2SlJCWWMxY1Z1bnA5ckNTaE9UMllnYUtEZlQ3UG1PLUliNGJsTGxEMExTNU14ZVY3YXJBcUU2V3JadVdueTFTRDBkekF3U0k5LUxQN3phWk93eWNRbnFaaDJVaVBJelFCVXJ3STRmamZmUk1qQ3ZW?oc=5",
-   "publicado": "2026-11-18T16:19-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ajuste fiscal: Alcolumbre calcula que governo tem votos para manter texto; oposição aposta em revés",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/ajuste-fiscal-alcolumbre-calcula-que-governo-tem-votos-para-manter-texto-oposicao-aposta-em-reves/",
    "publicado": "2026-11-18T15:41-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Durigan descarta recessão econômica e defende ajuste fiscal e reforma do Judiciário",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-descarta-recessao-economica-e-defende-ajuste-fiscal-e-reforma-do-judiciario.shtml",
-   "publicado": "2026-11-18T15:28-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
     "DI"
    ],
    "tickers": []
