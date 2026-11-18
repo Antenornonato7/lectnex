@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T12:08-03:00",
+  "atualizado_em": "2026-11-18T12:38-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -95,11 +95,35 @@
     ],
     [
      "11:50",
-     169394.0
+     169322.0
     ],
     [
-     "11:53",
-     169483.0
+     "11:55",
+     169185.0
+    ],
+    [
+     "12:00",
+     168978.0
+    ],
+    [
+     "12:05",
+     168834.0
+    ],
+    [
+     "12:10",
+     168750.0
+    ],
+    [
+     "12:15",
+     168803.0
+    ],
+    [
+     "12:20",
+     168394.0
+    ],
+    [
+     "12:23",
+     168323.0
     ]
    ]
   },
@@ -256,11 +280,35 @@
     ],
     [
      "12:05",
-     5.7918
+     5.7913
     ],
     [
-     "12:08",
-     5.7918
+     "12:10",
+     5.7938
+    ],
+    [
+     "12:15",
+     5.7908
+    ],
+    [
+     "12:20",
+     5.8013
+    ],
+    [
+     "12:25",
+     5.8033
+    ],
+    [
+     "12:30",
+     5.8108
+    ],
+    [
+     "12:35",
+     5.8118
+    ],
+    [
+     "12:38",
+     5.8113
     ]
    ]
   },
@@ -602,7 +650,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.28,
+    "ibov30": -0.33,
     "dolar30": -0.27
    },
    {
@@ -616,8 +664,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.55,
+    "dolar30": 0.36
    },
    {
     "hora": "11:52",
@@ -630,14 +678,41 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.55,
+    "dolar30": 0.36
    },
    {
     "hora": "11:54",
     "titulo": "Selic parada em 13,75% até metade de 2027 é certeza, diz Padovani, do BV",
     "fonte": "Exame",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ2l0amNBMFozcElfZ2dOWXQzajJuWjdja2pjWVJ6ZjQ3Q29FZnFIQWtqbHg0a1d4cmJpSk9DZG5RRVRtYkV5Tmp2Q25tbG53SzYtZDByUFZHNmF4TElCMGxGZDJJc3BVaXNYYnVwdm9qbFJpbVF2Wjl0WnZtMXBjSGtacWJReUtGRzByOFhBNTRUOGJYdzN4WllsMUY?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.55,
+    "dolar30": 0.36
+   },
+   {
+    "hora": "12:01",
+    "titulo": "Dólar forte e juros nos EUA levam TS Lombard a reduzir exposição ao Brasil",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTlFRTzZ1Vk93OHNkTEYxcHZaZ0VMTkZyNEFoWkFidnVxenhLaVNndlAwdlRnTk9HRWNXbzh5LXJTdnpOMlVBdkdGc3dFVF9CZFJxajEtNGJ5YThjVE5zVTIzbUxOT3hhOEdYWVR6QzdRc3JUN296bDFHUzVNaGVVcXNLQ1NZaDFNVS13QThUNkNMdlZmdkJMOEFER0JzcDQza21rNzM0b0FOQU9RUnB5MGJNX1QxV1ZVOTZNOW94aHNJcEE5OW1BUNIB1wFBVV95cUxPSDFrb3pJTFBQNkhYTzdoNEdrQklfNHVqT2gtMnBybG1aRjdVRDJRNW1LcFBfV0g0SjkxbnNhTUtpQmtYcWZLRFpiTGpSYVJJN0NoV2lXeGxpUzBrek5jSnhfSER2WHZRdTJIenIyaHRzbzVhSDVhN2xEZ2k0bE5QVjkzYkJYVDhmS25TbXZuMFE5UUFrQmgtd3luUGc3eXQtd2ZZZXhxWm0xQjh6bWJQOF9lR2VaNzdPakYxRFE0MFJrZEFKc2lIVXpMYk5pbm9OVkFJZHo1SQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.37
+   },
+   {
+    "hora": "12:24",
+    "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSjVINm0xY0hxUlNUYjktREM3WTRWYTEybTVackhVLTU0NXVvQy00ZkpTSmoyQXR1WnBlVUdDMVY2bzlUZU5FWlEwV0pDVmxTVm9MSHBiYlVZVDBFS2dpd0ViT0hFZWF5MXUtNTZ2WlpnYTlndENyYUE5MlBGM3hUcGtkMGdwXzdXYVhZb29sSGlfNVJSdm43Z2JSbU9NSUhiUWRzel9YZ3FhT0hUZl9CUzQzd2tEUXdWUHhuSVhlME42SVlMMnFSQWN1YjlBRUc5amhjMXFjcFJOUnVJT19iYS1MdkM5Q3JybkHSAfgBQVVfeXFMUDVtbFVOdjd5NWIxdkpZTEtkOFB5azVYV3pzVmFIQlpvV3VCZDRqWGdocEY5em94U0Q2TmlXV1lFdUlSOXptcEFoWUg4eGdvbW1QdlhaQWxXS0pRZkhqaTVTYndZOXp6ZGd6UVpTYTdIWEU3NW9ZZW9HYVJKVV9rWi04VmlFOE9YaXNxVko0dGdNbFQzYWZUa3IyT1Nmd245aGUxZVI5NXBxODBrREw1aEJXaVloZzh1MjQ1UDZhSDBPSHJCclVyV2dvOWZXQU5nTU1hRjRMamRPSFpIVVFBTk9SMkduSXdDWkxPcXhGODJOQ1U0aDgwdVA?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -1316,6 +1391,29 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar forte e juros nos EUA levam TS Lombard a reduzir exposição ao Brasil",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTlFRTzZ1Vk93OHNkTEYxcHZaZ0VMTkZyNEFoWkFidnVxenhLaVNndlAwdlRnTk9HRWNXbzh5LXJTdnpOMlVBdkdGc3dFVF9CZFJxajEtNGJ5YThjVE5zVTIzbUxOT3hhOEdYWVR6QzdRc3JUN296bDFHUzVNaGVVcXNLQ1NZaDFNVS13QThUNkNMdlZmdkJMOEFER0JzcDQza21rNzM0b0FOQU9RUnB5MGJNX1QxV1ZVOTZNOW94aHNJcEE5OW1BUNIB1wFBVV95cUxPSDFrb3pJTFBQNkhYTzdoNEdrQklfNHVqT2gtMnBybG1aRjdVRDJRNW1LcFBfV0g0SjkxbnNhTUtpQmtYcWZLRFpiTGpSYVJJN0NoV2lXeGxpUzBrek5jSnhfSER2WHZRdTJIenIyaHRzbzVhSDVhN2xEZ2k0bE5QVjkzYkJYVDhmS25TbXZuMFE5UUFrQmgtd3luUGc3eXQtd2ZZZXhxWm0xQjh6bWJQOF9lR2VaNzdPakYxRFE0MFJrZEFKc2lIVXpMYk5pbm9OVkFJZHo1SQ?oc=5",
+   "publicado": "2026-11-18T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSjVINm0xY0hxUlNUYjktREM3WTRWYTEybTVackhVLTU0NXVvQy00ZkpTSmoyQXR1WnBlVUdDMVY2bzlUZU5FWlEwV0pDVmxTVm9MSHBiYlVZVDBFS2dpd0ViT0hFZWF5MXUtNTZ2WlpnYTlndENyYUE5MlBGM3hUcGtkMGdwXzdXYVhZb29sSGlfNVJSdm43Z2JSbU9NSUhiUWRzel9YZ3FhT0hUZl9CUzQzd2tEUXdWUHhuSVhlME42SVlMMnFSQWN1YjlBRUc5amhjMXFjcFJOUnVJT19iYS1MdkM5Q3JybkHSAfgBQVVfeXFMUDVtbFVOdjd5NWIxdkpZTEtkOFB5azVYV3pzVmFIQlpvV3VCZDRqWGdocEY5em94U0Q2TmlXV1lFdUlSOXptcEFoWUg4eGdvbW1QdlhaQWxXS0pRZkhqaTVTYndZOXp6ZGd6UVpTYTdIWEU3NW9ZZW9HYVJKVV9rWi04VmlFOE9YaXNxVko0dGdNbFQzYWZUa3IyT1Nmd245aGUxZVI5NXBxODBrREw1aEJXaVloZzh1MjQ1UDZhSDBPSHJCclVyV2dvOWZXQU5nTU1hRjRMamRPSFpIVVFBTk9SMkduSXdDWkxPcXhGODJOQ1U0aDgwdVA?oc=5",
+   "publicado": "2026-11-18T12:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1345,7 +1443,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T12:08-03:00",
+ "atualizado_em": "2026-11-18T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1361,14 +1459,37 @@
  ],
  "noticias": [
   {
-   "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
-   "publicado": "2026-11-18T12:07-03:00",
+   "titulo": "Se cenário se mantiver, no 2º trimestre vamos estar discutindo alta da Selic, diz ex-diretor do BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSjVINm0xY0hxUlNUYjktREM3WTRWYTEybTVackhVLTU0NXVvQy00ZkpTSmoyQXR1WnBlVUdDMVY2bzlUZU5FWlEwV0pDVmxTVm9MSHBiYlVZVDBFS2dpd0ViT0hFZWF5MXUtNTZ2WlpnYTlndENyYUE5MlBGM3hUcGtkMGdwXzdXYVhZb29sSGlfNVJSdm43Z2JSbU9NSUhiUWRzel9YZ3FhT0hUZl9CUzQzd2tEUXdWUHhuSVhlME42SVlMMnFSQWN1YjlBRUc5amhjMXFjcFJOUnVJT19iYS1MdkM5Q3JybkHSAfgBQVVfeXFMUDVtbFVOdjd5NWIxdkpZTEtkOFB5azVYV3pzVmFIQlpvV3VCZDRqWGdocEY5em94U0Q2TmlXV1lFdUlSOXptcEFoWUg4eGdvbW1QdlhaQWxXS0pRZkhqaTVTYndZOXp6ZGd6UVpTYTdIWEU3NW9ZZW9HYVJKVV9rWi04VmlFOE9YaXNxVko0dGdNbFQzYWZUa3IyT1Nmd245aGUxZVI5NXBxODBrREw1aEJXaVloZzh1MjQ1UDZhSDBPSHJCclVyV2dvOWZXQU5nTU1hRjRMamRPSFpIVVFBTk9SMkduSXdDWkxPcXhGODJOQ1U0aDgwdVA?oc=5",
+   "publicado": "2026-11-18T12:24-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+   "publicado": "2026-11-18T12:13-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar forte e juros nos EUA levam TS Lombard a reduzir exposição ao Brasil",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTlFRTzZ1Vk93OHNkTEYxcHZaZ0VMTkZyNEFoWkFidnVxenhLaVNndlAwdlRnTk9HRWNXbzh5LXJTdnpOMlVBdkdGc3dFVF9CZFJxajEtNGJ5YThjVE5zVTIzbUxOT3hhOEdYWVR6QzdRc3JUN296bDFHUzVNaGVVcXNLQ1NZaDFNVS13QThUNkNMdlZmdkJMOEFER0JzcDQza21rNzM0b0FOQU9RUnB5MGJNX1QxV1ZVOTZNOW94aHNJcEE5OW1BUNIB1wFBVV95cUxPSDFrb3pJTFBQNkhYTzdoNEdrQklfNHVqT2gtMnBybG1aRjdVRDJRNW1LcFBfV0g0SjkxbnNhTUtpQmtYcWZLRFpiTGpSYVJJN0NoV2lXeGxpUzBrek5jSnhfSER2WHZRdTJIenIyaHRzbzVhSDVhN2xEZ2k0bE5QVjkzYkJYVDhmS25TbXZuMFE5UUFrQmgtd3luUGc3eXQtd2ZZZXhxWm0xQjh6bWJQOF9lR2VaNzdPakYxRFE0MFJrZEFKc2lIVXpMYk5pbm9OVkFJZHo1SQ?oc=5",
+   "publicado": "2026-11-18T12:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1385,9 +1506,9 @@
    "tickers": []
   },
   {
-   "titulo": "Apesar de estresse no câmbio, dólar corrigido pela inflação está longe do pico de R$ 8,45 de 2002",
+   "titulo": "Apesar de estresse no câmbio, dólar corrigido pela inflação está longe do pico de 2002",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOVZVSHRQbVBIdnJHdXJVYTE4SEdvT2lFVmI5SnBRYkhfM3VpUHNYVTJ5TTdKTDVIUFIxcVdhcUFZalNVMDNMemJTVVJ3S29TeFM3NmRvODVrUjZHVWdrU2JLTUpoLW1aZUoxSzVPTjJvMzM0LUF3WnJ3dWhJX0hBd2NWN3JZTnp6WVdmMTJTYkl2WExxWnRCRDJJT1BkQ2h5SG1HQzVBR2luZDNjMkQteVpDTmNTOTJPbmlBZVktQnZ6R3ZhbVdROHZpcUo5c2NPdHRJVDZwN0xGTVZKWnRybg?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNOVZVSHRQbVBIdnJHdXJVYTE4SEdvT2lFVmI5SnBRYkhfM3VpUHNYVTJ5TTdKTDVIUFIxcVdhcUFZalNVMDNMemJTVVJ3S29TeFM3NmRvODVrUjZHVWdrU2JLTUpoLW1aZUoxSzVPTjJvMzM0LUF3WnJ3dWhJX0hBd2NWN3JZTnp6WVdmMTJTYkl2WExxWnRCRDJJT1BkQ2h5SG1HQzVBR2luZDNjMkQteVpDTmNTOTJPbmlBZVktQnZ6R3ZhbVdROHZpcUo5c2NPdHRJVDZwN0xGTVZKWnRybtIB7wFBVV95cUxPU2NEa1p4UUhsMVFpWXhydTZ0RlBwUDREdTNaZktURjhGdm9VcWIwZlA3WmhYV28tRkVJbkFrR1ItX1B3eTVPNm5ESUNPNmhteFlDZXJuT1REeHBDZ3BBandwSkUtVVhPdVpiNGxzdDhrazhmeDJ3clBoLWRxSVRiQWdoWTlidVRFQndKbWVxN0xOQWVUaXpfbU1FcXZSRUNRbklmNnFHWGdOWUNBejM0NXRvcnp5czRSOE9CX0pMZ3dERy1maDdHemx2YWhxUzkxRUl4d1N6OWlOVHE4ZFJMZ0xlOS1kOEFjMVZDNFhVSQ?oc=5",
    "publicado": "2026-11-18T11:52-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1461,7 +1582,7 @@
    "titulo": "Ibovespa perde força e dólar avança para R$ 5,80 com ajuste fiscal no radar",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORml2R1RKYlZiVmxjMmNKTHhBdVRiWUQxV1RKNTBTeVZiTzJXZ0NhNmV6WHJocmc2RG1uSEx3ZUlWekZTd2NPQmFoV0FtV1F3Q2xPYTlIRExfdzdoNWNiN3VDUUhCX0Uwc3JlX3N1VmNCNkpFVHduWDE1V1dPRDJ5V1pfZmR1dGhZZmlKOGVETFNrdzJrYmhWTVpTUU83XzJtaGdWYmtaM2I2X01q?oc=5",
-   "publicado": "2026-11-18T10:56-03:00",
+   "publicado": "2026-11-18T10:57-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -1508,18 +1629,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar atinge maior cotação em 19 meses; crescem apostas de Fed elevar juro",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMWx4UmYyOGkwVm9LWnpfRVRVYkx0dXE3LXloUXpwbk9KS3lHR0JiNlR2WmM0VEJEV3BGWVV4LVBUNW1EcjkzaU1ucHR3RWlkeVN1RFc3N0hpQUxxQ3YtT1FJX2JKQ21aWWRJRWlGMjJqd1NuYVlOZ240X3M3RnhCYlpOZ25WRWxmQzJqbHJzQmM4UEgtbS1lV0pxUktZN1FqZmx2SmZiYzVpMlVINjI0Ql84cXZoYjFPRkFQSjhZcGhVRXEz?oc=5",
-   "publicado": "2026-11-18T10:19-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Xi e Putin criticam 'protecionismo' ocidental e sanções na chegada de Trump à China",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468060",
@@ -1532,27 +1641,17 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar avança e chega a R$ 5,82, mas desacelera após leilões do BC; Bolsa oscila",
+   "titulo": "Rede D'Or vende Sul América Investimentos para a BlackRock por R$850 mi",
    "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-nesta-quarta-com-mercado-a-espera-de-leilao-do-bc-e-votacao-sobre-ajuste-fiscal.shtml",
-   "publicado": "2026-11-18T09:33-03:00",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/rede-dor-vende-sul-america-investimentos-para-a-blackrock-por-r850-mi.shtml",
+   "publicado": "2026-11-18T09:45-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
+    "WIN"
    ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa oscila de olho no ajuste fiscal e na repercussão do balanço da Nvidia",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VT3hqVHp1SnlpSV8tRGRCckFpeEtFdFU4aGgzU0ZFQjlTd21vWDlBZkY0WWFFQW5ZRzZnTnI3c2FNLXZMa1JRTEZOaVMycXRyaVlVR3BJdENDWFlzWndFMDFKNTBYcWJK?oc=5",
-   "publicado": "2026-11-18T09:17-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
+   "tickers": [
+    "RDOR3"
+   ]
   }
  ]
 }
