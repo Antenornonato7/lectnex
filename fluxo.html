@@ -32,15 +32,15 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebApplication", "name": "Simulador de fluxo (DOM) do mini índice", "url": "https://lectnex.com.br/fluxo.html", "description": "Treine leitura de fluxo no mini índice (WIN): Super DOM com fila, times & trades, players grandes simulados e um professor que explica absorção, varredura e exaustão. Grátis e sem cadastro.", "applicationCategory": "EducationalApplication", "operatingSystem": "Web (celular e computador)", "isAccessibleForFree": true, "inLanguage": "pt-BR", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Lectnex", "item": "https://lectnex.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Laboratório", "item": "https://lectnex.com.br/laboratorio.html"}, {"@type": "ListItem", "position": 3, "name": "Simulador de fluxo", "item": "https://lectnex.com.br/fluxo.html"}]}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261118a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261118b">
     <link rel="expect" href="#lx-pronto" blocking="render">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261118a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261118a">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261118b">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261118b">
 </head>
 <body data-page="fluxo" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -83,7 +83,7 @@
             <!-- DOM -->
             <section class="dm-tab lg:col-span-3 term-panel p-2" data-tab="dom">
                 <div class="flex items-center justify-between px-1 pb-1.5"><span class="term-label">Super DOM</span><span class="text-[10px] text-slate-500 font-mono">clique: ordem limitada</span></div>
-                <div class="dm-ladder font-mono tabular-nums text-[11px]" id="dm-ladder" role="grid" aria-label="Livro de ofertas"></div>
+                <div class="dm-ladder font-mono tabular-nums text-[11px]" id="dm-ladder" data-sem-glossario role="grid" aria-label="Livro de ofertas"></div>
                 <div class="lg:hidden grid grid-cols-3 gap-1 mt-2 font-mono text-[11px]">
                     <button type="button" data-espelho="dm-compra" class="pg-btn pg-btn-verde min-h-[44px]" disabled>COMPRA</button>
                     <button type="button" data-espelho="dm-venda" class="pg-btn pg-btn-vermelho min-h-[44px]" disabled>VENDA</button>
@@ -94,9 +94,25 @@
 
             <!-- centro: gráfico + boleta -->
             <section class="dm-tab lg:col-span-6 space-y-3" data-tab="grafico">
-                <div class="term-panel p-2">
-                    <div class="flex items-center justify-between px-1"><span class="term-label">Gráfico de 1 minuto · VWAP</span><span class="text-[10px] font-mono text-slate-500"><span class="inline-block w-3 h-[2px] bg-lect-orange align-middle"></span> VWAP</span></div>
-                    <canvas id="dm-graf" class="w-full block mt-1" height="300" aria-label="Gráfico de candles de 1 minuto"></canvas>
+                <div class="term-panel p-2" id="dm-graf-box">
+                    <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 px-1 font-mono text-[10px]">
+                        <div class="flex items-center gap-0.5" role="group" aria-label="Tempo gráfico" id="dm-tf">
+                            <button type="button" data-tf="1" class="dm-chip dm-on">1m</button><button type="button" data-tf="2" class="dm-chip">2m</button><button type="button" data-tf="5" class="dm-chip">5m</button><button type="button" data-tf="15" class="dm-chip">15m</button><button type="button" data-tf="30" class="dm-chip">30m</button><button type="button" data-tf="60" class="dm-chip">60m</button>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-0.5" role="group" aria-label="Indicadores" id="dm-ind">
+                            <button type="button" data-ind="vwap" class="dm-chip dm-on" aria-pressed="true"><i class="dm-dot" style="background:#F39200"></i>VWAP</button>
+                            <button type="button" data-ind="mm9" class="dm-chip dm-on" aria-pressed="true"><i class="dm-dot" style="background:#38BDF8"></i>MME 9</button>
+                            <button type="button" data-ind="mm21" class="dm-chip dm-on" aria-pressed="true"><i class="dm-dot" style="background:#A78BFA"></i>MME 21</button>
+                            <button type="button" data-ind="bb" class="dm-chip" aria-pressed="false"><i class="dm-dot" style="background:#94A3B8"></i>Bollinger</button>
+                            <button type="button" data-ind="volume" class="dm-chip dm-on" aria-pressed="true">Volume</button>
+                            <button type="button" data-ind="ifr" class="dm-chip" aria-pressed="false">IFR 14</button>
+                        </div>
+                        <button type="button" id="dm-cheia" class="dm-chip ml-auto" aria-label="Gráfico em tela cheia"><i class="ph-bold ph-arrows-out"></i></button>
+                    </div>
+                    <div class="relative mt-1">
+                        <canvas id="dm-graf" class="w-full block" aria-label="Gráfico de candles com indicadores"></canvas>
+                        <div id="dm-ohlc" data-sem-glossario class="absolute left-1 top-1 font-mono text-[10px] tabular-nums text-slate-500 pointer-events-none"></div>
+                    </div>
                 </div>
                 <div class="term-panel p-3" id="dm-boleta">
                     <div class="grid grid-cols-3 gap-2 font-mono text-xs">
@@ -130,12 +146,12 @@
                 </div>
                 <div class="term-panel p-2">
                     <div class="flex items-center justify-between px-1"><span class="term-label">Times &amp; trades</span><span class="text-[10px] font-mono text-slate-500">≥ 50 em destaque</span></div>
-                    <div class="dm-tape font-mono tabular-nums text-[11px] mt-1" id="dm-tape" aria-live="off"></div>
+                    <div class="dm-tape font-mono tabular-nums text-[11px] mt-1" id="dm-tape" data-sem-glossario aria-live="off"></div>
                 </div>
             </section>
                 <section class="dm-tab term-panel p-2" data-tab="painel">
                     <span class="term-label px-1 flex items-center gap-1.5"><i class="ph-fill ph-chalkboard-teacher text-lect-orange"></i>Professor</span>
-                    <ol id="dm-prof-feed" class="mt-1.5 space-y-2 text-xs max-h-[18rem] overflow-y-auto" aria-live="polite"><li class="text-slate-500">Inicie o pregão. Quando o fluxo mostrar algo que vale estudar, aparece aqui com a explicação.</li></ol>
+                    <ol id="dm-prof-feed" data-sem-glossario class="mt-1.5 space-y-2 text-xs max-h-[18rem] overflow-y-auto" aria-live="polite"><li class="text-slate-500">Inicie o pregão. Quando o fluxo mostrar algo que vale estudar, aparece aqui com a explicação.</li></ol>
                 </section>
             </div>
         </div>
@@ -159,7 +175,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261118a"></script><span id="lx-pronto" hidden></span>
-    <script src="assets/fluxo.js?v=20261118a"></script>
+    <script src="assets/lectnex-core.js?v=20261118b"></script><span id="lx-pronto" hidden></span>
+    <script src="assets/fluxo.js?v=20261118b"></script>
 </body>
 </html>
