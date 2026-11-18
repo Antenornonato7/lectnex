@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T17:05-03:00",
+  "atualizado_em": "2026-11-18T17:08-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -332,6 +332,10 @@
     [
      "16:45",
      167509.0
+    ],
+    [
+     "16:50",
+     167638.0
     ]
    ]
   },
@@ -728,7 +732,11 @@
     ],
     [
      "17:05",
-     5.8629
+     5.8611
+    ],
+    [
+     "17:08",
+     5.8616
     ]
    ]
   },
@@ -1427,7 +1435,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.02,
     "dolar30": 0.07
    },
    {
@@ -1441,7 +1449,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.05
    },
    {
     "hora": "16:43",
@@ -1455,7 +1463,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.05
    },
    {
     "hora": "17:00",
@@ -2460,7 +2468,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T17:05-03:00",
+ "atualizado_em": "2026-11-18T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2623,17 +2631,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Safra de soja vive melhor momento com preço elevado pelo dólar, diz consultoria",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/agro/2026/11/safra-de-soja-vive-melhor-momento-com-preco-elevado-pelo-dolar-diz-consultoria.shtml",
-   "publicado": "2026-11-18T14:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   }
