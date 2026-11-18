@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T13:30-03:00",
+  "atualizado_em": "2026-11-18T13:33-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -163,7 +163,11 @@
     ],
     [
      "13:15",
-     167820.0
+     167814.0
+    ],
+    [
+     "13:18",
+     167773.0
     ]
    ]
   },
@@ -388,7 +392,11 @@
     ],
     [
      "13:30",
-     5.8208
+     5.8203
+    ],
+    [
+     "13:33",
+     5.8198
     ]
    ]
   },
@@ -880,7 +888,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.19,
     "dolar30": 0.09
    },
    {
@@ -1697,12 +1705,13 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T13:30-03:00",
+ "atualizado_em": "2026-11-18T13:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
@@ -1727,6 +1736,18 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
    "publicado": "2026-11-18T13:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "China busca chips da Nvidia para armas de IA, apesar das restrições dos EUA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNNElLX0xxN1VKb0EyQ2EwdFY0LXMzZFZqNzVXbW9XZHl5YkkycUdnQThiazA5b0tZS2xES3psX05FdnFmRDZ3UEdPZEJyQTA2U3NZQUVxSHZYclpkUVNETUdaNkt4UzNOeThKa1pQU3hiQTJ2bjlxaTZrbnd1LTI4Q1RyeDNCQWRfN0lPaGNILWpERVk0bnZqeERmQ1Jfd2liQ1E1SXFzMTlYSUlVZnk0WTJUS25fbkNlbnI5a0NQaXB3ZnlDNUNxZVQzZkZHaEZFSE9aOVVrTGJkZHM?oc=5",
+   "publicado": "2026-11-18T13:00-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -1875,19 +1896,6 @@
    ],
    "tickers": [
     "BBAS3"
-   ]
-  },
-  {
-   "titulo": "Itaú BBA corta preço-alvo da Direcional, mas vê alta de 64% na Bolsa; o que pesa na análise?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQWEdGQWh0VlJ5QnljeEdLaHowUHh2bnJvdHpUMFlLdzNQYTRSMW1kWWk2TktoOXpXNnQxSmMyaXlFd3FHTmpiWGI4bVFSLVk2d0ZjYWxMXzhiZnhkWHVuOGJkTHZPR3daYmVqdHpmVDdxa1lqc1V6cmxzbUxGeWJ2eXRzQVdiV0paV2dDUXVFTHdyaUNfLW9JVWt4RmRMMDI1QXUyNlhsRk9JRWRrUm9vbkx3a3NUR1Q2Y2UycmNKWGdoZHd3UG5xMURsa3hNQ01iQjZWZ09remtzbFF4YzcwVNIB5gFBVV95cUxPTkZKMXpUTVJIdnZYWWxCVVdvVmlyTUJad05rU3dud0dpY0R3cEY3aWNadXBmaWRKNmtwN2cwYzlfZHJfbVpHWnAtRTl6MlN0ZkRERHY1R3kyaHJwSzhIbzlEc3pQbnZSY0h0dVAwZDU5c0pWd3FzNDNjQy0zWjhjUzE0enNMeHZETU5wNjFkV3dOWDI5YThMWjVjcmRhTHRJSDBWbG1pcGJhYzh0akljUnNha1VSNWpWMW94eDBDdDVvQlRVVzI4elBHenp0T1RRak42VDNWZHJxdk9qVFAxZ054UktsUQ?oc=5",
-   "publicado": "2026-11-18T10:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
    ]
   },
   {
