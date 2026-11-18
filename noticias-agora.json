@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T12:15-03:00",
+  "atualizado_em": "2026-11-18T12:18-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -103,7 +103,11 @@
     ],
     [
      "12:00",
-     169355.0
+     169025.0
+    ],
+    [
+     "12:03",
+     168956.0
     ]
    ]
   },
@@ -268,7 +272,11 @@
     ],
     [
      "12:15",
-     5.7933
+     5.7948
+    ],
+    [
+     "12:18",
+     5.7958
     ]
    ]
   },
@@ -625,7 +633,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.27
    },
    {
     "hora": "11:52",
@@ -639,7 +647,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.27
    },
    {
     "hora": "11:54",
@@ -1377,7 +1385,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T12:15-03:00",
+ "atualizado_em": "2026-11-18T12:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1575,14 +1583,13 @@
    "tickers": []
   },
   {
-   "titulo": "Tempo real: Ibovespa oscila de olho no ajuste fiscal e na repercussão do balanço da Nvidia",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VT3hqVHp1SnlpSV8tRGRCckFpeEtFdFU4aGgzU0ZFQjlTd21vWDlBZkY0WWFFQW5ZRzZnTnI3c2FNLXZMa1JRTEZOaVMycXRyaVlVR3BJdENDWFlzWndFMDFKNTBYcWJK?oc=5",
-   "publicado": "2026-11-18T09:17-03:00",
-   "impacto": "alto",
+   "titulo": "Dólar avança e chega a R$ 5,82, mas desacelera após leilões do BC; Bolsa oscila",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-nesta-quarta-com-mercado-a-espera-de-leilao-do-bc-e-votacao-sobre-ajuste-fiscal.shtml",
+   "publicado": "2026-11-18T09:33-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
-    "DI"
+    "WDO"
    ],
    "tickers": []
   }
