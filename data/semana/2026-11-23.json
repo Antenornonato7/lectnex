@@ -3,6 +3,18 @@
  "eventos": [
   {
    "data": "2026-11-23",
+   "hora": "06h",
+   "pais": "EU",
+   "evento": "PMIs preliminares da zona do euro (nov)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Atividade da indústria e dos serviços; mexe com o euro e o dólar global.",
+   "tipo": "pmi-zona-euro"
+  },
+  {
+   "data": "2026-11-23",
    "hora": "08h25",
    "pais": "BR",
    "evento": "Boletim Focus (BCB)",
@@ -12,6 +24,72 @@
    },
    "nota": "Expectativas de Selic, IPCA e câmbio.",
    "tipo": "focus"
+  },
+  {
+   "data": "2026-11-23",
+   "hora": "11h45",
+   "pais": "US",
+   "evento": "PMI composto preliminar S&P Global (nov)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Primeira leitura de atividade de novembro nos EUA.",
+   "tipo": "pmi-sp-global-eua"
+  },
+  {
+   "data": "2026-11-24",
+   "hora": "12h",
+   "pais": "US",
+   "evento": "Confiança do consumidor Conference Board (nov)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Termômetro do consumo americano.",
+   "tipo": "conference-board"
+  },
+  {
+   "data": "2026-11-25",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "PIB dos EUA — 2ª estimativa (3º tri, anualizado)",
+   "importancia": 2,
+   "anterior": "3,4%",
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Primeira estimativa mostrou alta de 3,4% (BEA).",
+   "tipo": "pib-eua"
+  },
+  {
+   "data": "2026-11-25",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Inflação PCE (out)",
+   "importancia": 3,
+   "anterior": "3,1% (núcleo a/a)",
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil",
+    "win": "volatil"
+   },
+   "nota": "Medida de inflação preferida do Fed; anterior = núcleo em 12 meses de setembro. Sai antes do feriado de Ação de Graças.",
+   "tipo": "pce-eua"
+  },
+  {
+   "data": "2026-11-25",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Encomendas de bens duráveis (out)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Investimento e demanda da indústria americana.",
+   "tipo": "bens-duraveis-eua"
   }
  ]
 }
