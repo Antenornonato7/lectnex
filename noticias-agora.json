@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T16:45-03:00",
+  "atualizado_em": "2026-11-18T16:48-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -319,7 +319,11 @@
     ],
     [
      "16:30",
-     167555.0
+     167412.0
+    ],
+    [
+     "16:33",
+     167438.0
     ]
    ]
   },
@@ -700,7 +704,11 @@
     ],
     [
      "16:45",
-     5.8646
+     5.8631
+    ],
+    [
+     "16:48",
+     5.8636
     ]
    ]
   },
@@ -1385,7 +1393,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.13,
+    "ibov30": -0.21,
     "dolar30": 0.14
    },
    {
@@ -1393,6 +1401,33 @@
     "titulo": "Ouro fecha em forte queda com alta do dólar e expectativas para a ata do Fed",
     "fonte": "Money Times",
     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbWo3UDNGT2NPSTJLa2lXSGMxcTBQRTJJMERPMzVuTi1qeU56U0lxM1FRVnU3U2l1TjZEVkF3aWlSLVBGNVNIbjZJZnVoOWU1d014dy1PcURCWUpXS2lONmg2YjRyUGNwMnVvdGpaMk5wbjVmNjgyNjk1MWpqal9lZnJ0bUpaT2xlRWVQLVowMmdzeEZwWjFaYWZWRFpPRzZGUWZfekg4aldHdWxNanJrOHlB?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:43",
+    "titulo": "Por que o real caiu mais que outras moedas? Commodities explicam só parte",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFpFeWlxTkRBZzl3THAwT0s4VGQ0a2pLXy1OeDdKbHBndEhiOHBzNGlnb3ctVk1DVjFLNkFIX3FoVVpqQnlYaU8wQlZES21TQlRTMTZIdlU0ZHdpbjY0ZXdrMWhMaDZkRVcteWYySVRTRGR0ZWFnX29GYTVDQVltdjhLUk5lOENrR0UyU9IBkgFBVV95cUxNQzZzRVl2c3R4NGtCZGM1QmJ3eFRBMHdaQUFHa3lOSjNvbGRORjhEeEtGVGJxTEhpT1BYWU12MHpWLTd0enA1b1RQa2NGUDlodVVZRG1DMlYybFNZa05Hd2dFRTl1b2p3cV9NMTNXLWVDNnBHWU5JNjBRWDNSODBGRVFwWXFROFJuZWlFMmx2ak11QQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:43",
+    "titulo": "Ata do Fed mostra preocupação com inflação e possibilidade de novas altas de juros",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-fed-mostra-preocupacao-com-inflacao-e-possibilidade-de-novas-altas-de-juros.shtml",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -2340,6 +2375,29 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Por que o real caiu mais que outras moedas? Commodities explicam só parte",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFpFeWlxTkRBZzl3THAwT0s4VGQ0a2pLXy1OeDdKbHBndEhiOHBzNGlnb3ctVk1DVjFLNkFIX3FoVVpqQnlYaU8wQlZES21TQlRTMTZIdlU0ZHdpbjY0ZXdrMWhMaDZkRVcteWYySVRTRGR0ZWFnX29GYTVDQVltdjhLUk5lOENrR0UyU9IBkgFBVV95cUxNQzZzRVl2c3R4NGtCZGM1QmJ3eFRBMHdaQUFHa3lOSjNvbGRORjhEeEtGVGJxTEhpT1BYWU12MHpWLTd0enA1b1RQa2NGUDlodVVZRG1DMlYybFNZa05Hd2dFRTl1b2p3cV9NMTNXLWVDNnBHWU5JNjBRWDNSODBGRVFwWXFROFJuZWlFMmx2ak11QQ?oc=5",
+   "publicado": "2026-11-18T16:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ata do Fed mostra preocupação com inflação e possibilidade de novas altas de juros",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-fed-mostra-preocupacao-com-inflacao-e-possibilidade-de-novas-altas-de-juros.shtml",
+   "publicado": "2026-11-18T16:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2369,7 +2427,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T16:45-03:00",
+ "atualizado_em": "2026-11-18T16:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2382,6 +2440,41 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+   "publicado": "2026-11-18T16:47-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Por que o real caiu mais que outras moedas? Commodities explicam só parte",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFpFeWlxTkRBZzl3THAwT0s4VGQ0a2pLXy1OeDdKbHBndEhiOHBzNGlnb3ctVk1DVjFLNkFIX3FoVVpqQnlYaU8wQlZES21TQlRTMTZIdlU0ZHdpbjY0ZXdrMWhMaDZkRVcteWYySVRTRGR0ZWFnX29GYTVDQVltdjhLUk5lOENrR0UyU9IBkgFBVV95cUxNQzZzRVl2c3R4NGtCZGM1QmJ3eFRBMHdaQUFHa3lOSjNvbGRORjhEeEtGVGJxTEhpT1BYWU12MHpWLTd0enA1b1RQa2NGUDlodVVZRG1DMlYybFNZa05Hd2dFRTl1b2p3cV9NMTNXLWVDNnBHWU5JNjBRWDNSODBGRVFwWXFROFJuZWlFMmx2ak11QQ?oc=5",
+   "publicado": "2026-11-18T16:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ata do Fed mostra preocupação com inflação e possibilidade de novas altas de juros",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ata-do-fed-mostra-preocupacao-com-inflacao-e-possibilidade-de-novas-altas-de-juros.shtml",
+   "publicado": "2026-11-18T16:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
    "fonte": "CNBC",
