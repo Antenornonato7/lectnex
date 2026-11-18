@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T15:38-03:00",
+  "atualizado_em": "2026-11-18T16:08-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -263,11 +263,35 @@
     ],
     [
      "15:20",
-     168050.0
+     168074.0
     ],
     [
-     "15:23",
-     168039.0
+     "15:25",
+     168019.0
+    ],
+    [
+     "15:30",
+     168096.0
+    ],
+    [
+     "15:35",
+     168110.0
+    ],
+    [
+     "15:40",
+     168119.0
+    ],
+    [
+     "15:45",
+     168121.0
+    ],
+    [
+     "15:50",
+     168065.0
+    ],
+    [
+     "15:53",
+     167967.0
     ]
    ]
   },
@@ -592,11 +616,35 @@
     ],
     [
      "15:35",
-     5.838
+     5.8398
     ],
     [
-     "15:38",
-     5.8385
+     "15:40",
+     5.843
+    ],
+    [
+     "15:45",
+     5.8466
+    ],
+    [
+     "15:50",
+     5.8474
+    ],
+    [
+     "15:55",
+     5.8539
+    ],
+    [
+     "16:00",
+     5.8541
+    ],
+    [
+     "16:05",
+     5.8566
+    ],
+    [
+     "16:08",
+     5.8621
     ]
    ]
   },
@@ -1213,8 +1261,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.03,
+    "dolar30": 0.31
    },
    {
     "hora": "15:33",
@@ -1224,6 +1272,33 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.27
+   },
+   {
+    "hora": "15:41",
+    "titulo": "Ajuste fiscal: Alcolumbre calcula que governo tem votos para manter texto; oposição aposta em revés",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/ajuste-fiscal-alcolumbre-calcula-que-governo-tem-votos-para-manter-texto-oposicao-aposta-em-reves/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.33
+   },
+   {
+    "hora": "16:03",
+    "titulo": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -2108,6 +2183,29 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ajuste fiscal: Alcolumbre calcula que governo tem votos para manter texto; oposição aposta em revés",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/ajuste-fiscal-alcolumbre-calcula-que-governo-tem-votos-para-manter-texto-oposicao-aposta-em-reves/",
+   "publicado": "2026-11-18T15:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
+   "publicado": "2026-11-18T16:03-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2137,7 +2235,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T15:38-03:00",
+ "atualizado_em": "2026-11-18T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2150,6 +2248,29 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
+   "publicado": "2026-11-18T16:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ajuste fiscal: Alcolumbre calcula que governo tem votos para manter texto; oposição aposta em revés",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/ajuste-fiscal-alcolumbre-calcula-que-governo-tem-votos-para-manter-texto-oposicao-aposta-em-reves/",
+   "publicado": "2026-11-18T15:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar rompe os R$ 5,84 hoje: até onde a moeda ainda pode subir?",
    "fonte": "Money Times",
@@ -2169,6 +2290,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar hoje sobe 1%, a R$ 5,84, com foco em pacote fiscal e ata do Fed",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZnBWSzN0VVZ2UktNb3lKa2RsNTUzcU41OHZ5R2VQUW5WWnNfaVRrY1Z5eXBMYzY1ZHNHMUV2X0tCWjA3UWRDTU5kbVlUUFdrVW40VUtOUVdNS2NMSWIxN1N6M20yVklMVGFkVnhnQnIxNjBkbVpFSTA1SmZkNTk0WFRHMHp1N1NZdnNCVlNrR1JKbHhOVkdQTnU1aXHSAaIBQVVfeXFMUFNsdlF3UXY1dDEweFZPX2lwNlNrYkJOWmpncU94V0VtMzhNdGkwcmxISDU0NF9GRngzSU5pUWRGSTV1bWVFdmpBOXBsVmhuWHZ0eDVTOV9fbVRabi1ZRmZSUndYSXZoeHZGRkZmeXJ0ZV83aXg5b3NRWUFNb2hyTkg5a1E4czJVbmpzamR1cWVNQU9KRUFFRXNQOExjX0laOW5n?oc=5",
+   "publicado": "2026-11-18T15:15-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
@@ -2222,30 +2355,6 @@
    "tickers": []
   },
   {
-   "titulo": "Tesouro Direto hoje: disparada do dólar e preocupação fiscal pesam nas taxas; prefixado supera 15%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNd2FxT3hFVndubmlHNHl4U3ZSS2dOMEhYUW93V3RmTEM5VGRFeE1QRWNnS0RuM1p3Y1N6WGdfeEplVWZDMkd0OHYzd0tpM3ZMOTRKX194SElNelJ6RjlEc01mc0VJVktfcmxEUGNPN2ppM3FteWpIWGtoclFYNEZhWmZNaW5wcGxyUVI4RmVya0FuS04yZUlBUzhka1RxeXk3S01yRGdobWNTUVl1ODRUcWV4cGhkS3Mtb0JFS29yWFFkUjhENi1xWTZuLXlmNzliQTE2RTRydy1PY09wbWFjMVFHemtMdlBqQmJRVnBfX3ZKUEJE?oc=5",
-   "publicado": "2026-11-18T14:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Preços da soja dependem do clima no Brasil e de compras da China",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdnBLMHNVYTZ1Ukg0dk5TcE9nSFI5Q1BSa2ptbmpFeWlMRUtHQ3lnX2dxbGREYk5CeEdBbDlhbHVvT0d1UkptdjZxa0NXYzRlY2ZhaEF5ellCTjhLN1laWmVtTVZRVEF6c05xanE3RWs2UmV3V1dHSVcwa3VEM3dfRHp5MGxIVWpkV1QwUHNVQldydzRGalBld3VxOXI4NFNP?oc=5",
-   "publicado": "2026-11-18T13:58-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
@@ -2254,17 +2363,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Minerva dispara 10% e BB lidera as maiores altas do Ibovespa hoje; veja os destaques do pregão",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzOHR0cHdIRERHZDhFMnItR2ozMzRPTVVsYjdaRlFqVkdKbnJWYm9STkJoUlhNN3NUUjU3MDR4WWVqcy0tUTRydDlTd1hmdzVUR0xNZkFidTlkM1BvTHVXT3FpRUxST3o3OUs2dDFjOVVJVEowRnpxVEtCZGQ5MjB4UmFFUFVEdU0yU1QxenV3X3JVUmdtdlB0QXZMem9qNXRLMTRPRWlKWDVkS2ZxVWhjeFVqT2xaNjBBOGRfbzlVT1hBaGxib2U3R0c3VkVDY3llVDFhUnVXLXNU?oc=5",
-   "publicado": "2026-11-18T12:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   }
