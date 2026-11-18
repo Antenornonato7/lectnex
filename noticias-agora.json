@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T16:05-03:00",
+  "atualizado_em": "2026-11-18T16:08-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -287,7 +287,11 @@
     ],
     [
      "15:50",
-     168099.0
+     168065.0
+    ],
+    [
+     "15:53",
+     167967.0
     ]
    ]
   },
@@ -636,7 +640,11 @@
     ],
     [
      "16:05",
-     5.8561
+     5.8566
+    ],
+    [
+     "16:08",
+     5.8621
     ]
    ]
   },
@@ -1253,7 +1261,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.03,
     "dolar30": 0.31
    },
    {
@@ -1268,6 +1276,19 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": 0.27
+   },
+   {
+    "hora": "15:41",
+    "titulo": "Ajuste fiscal: Alcolumbre calcula que governo tem votos para manter texto; oposição aposta em revés",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/ajuste-fiscal-alcolumbre-calcula-que-governo-tem-votos-para-manter-texto-oposicao-aposta-em-reves/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.33
    },
    {
     "hora": "16:03",
@@ -2164,6 +2185,17 @@
    "tickers": []
   },
   {
+   "titulo": "Ajuste fiscal: Alcolumbre calcula que governo tem votos para manter texto; oposição aposta em revés",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/ajuste-fiscal-alcolumbre-calcula-que-governo-tem-votos-para-manter-texto-oposicao-aposta-em-reves/",
+   "publicado": "2026-11-18T15:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
@@ -2203,7 +2235,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T16:05-03:00",
+ "atualizado_em": "2026-11-18T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2220,10 +2252,21 @@
    "titulo": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
-   "publicado": "2026-11-18T16:03-03:00",
+   "publicado": "2026-11-18T16:07-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ajuste fiscal: Alcolumbre calcula que governo tem votos para manter texto; oposição aposta em revés",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/ajuste-fiscal-alcolumbre-calcula-que-governo-tem-votos-para-manter-texto-oposicao-aposta-em-reves/",
+   "publicado": "2026-11-18T15:41-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -2308,18 +2351,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tesouro Direto hoje: disparada do dólar e preocupação fiscal pesam nas taxas; prefixado supera 15%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNd2FxT3hFVndubmlHNHl4U3ZSS2dOMEhYUW93V3RmTEM5VGRFeE1QRWNnS0RuM1p3Y1N6WGdfeEplVWZDMkd0OHYzd0tpM3ZMOTRKX194SElNelJ6RjlEc01mc0VJVktfcmxEUGNPN2ppM3FteWpIWGtoclFYNEZhWmZNaW5wcGxyUVI4RmVya0FuS04yZUlBUzhka1RxeXk3S01yRGdobWNTUVl1ODRUcWV4cGhkS3Mtb0JFS29yWFFkUjhENi1xWTZuLXlmNzliQTE2RTRydy1PY09wbWFjMVFHemtMdlBqQmJRVnBfX3ZKUEJE?oc=5",
-   "publicado": "2026-11-18T14:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
