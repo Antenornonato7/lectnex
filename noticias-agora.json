@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T10:48-03:00",
+  "atualizado_em": "2026-11-18T10:50-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -31,11 +31,11 @@
     ],
     [
      "10:30",
-     169472.0
+     169376.0
     ],
     [
-     "10:33",
-     169405.0
+     "10:35",
+     169480.0
     ]
    ]
   },
@@ -128,11 +128,11 @@
     ],
     [
      "10:45",
-     5.8042
+     5.8012
     ],
     [
-     "10:48",
-     5.8027
+     "10:50",
+     5.799
     ]
    ]
   },
@@ -318,7 +318,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": -0.0,
     "dolar30": -0.23
    },
    {
@@ -332,7 +332,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": -0.0,
     "dolar30": -0.23
    },
    {
@@ -927,7 +927,7 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T10:48-03:00",
+ "atualizado_em": "2026-11-18T10:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -962,6 +962,19 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe e supera R$ 5,80; Ibovespa cai em dia de votação de ajuste fiscal no Senado e ata do Fed",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNT3hzSDZ5Q1NiSXVXalV0N0pxWDZISEwwbjIybFpUTlhWMmZfdlRZMWNONjdiMHB3RTU3QUU4RDdXSzhIaXVXMkFBVkV0NzAzQTJWejFBNXo2eGF0Q1FkRFh1SUMtdHVnOEl1eU5ZS2FjX2JOaDdlZlJvTVFIV1JVc2lfaGNKR2QzSFh1YTZOdlV5bHhEWUpxVThvX0RvSHMyLWliYWJDRmM3ODg2VkpjdWJxNU5Md3BDUDlKdkpMUkc2NV9KdV9tOFlqT2lwdW1HdFdtS2hwX2VWUXlCc0xjM05qUdIB6AFBVV95cUxQbGVCNEtZM0xvOUpROE8yWUUzMGZLdldYUXlCbm5EZzdFWEdpOExXNEJ4WkszRnJ4aXhTMG5kMnFiMmE0VGowNERDanJYYzR3YnRiTWtHYUlZVFRhVzF0b2ZrWk91UkJPa3UzUjhqLWJ1d0I1TXhBSGhLMGpKZG13Qy1lWklDamowUVpxNEFfbTJjYjc1cDhLQVJLZk1WRFhnMzcxdTU4Z25ScldOQXhkb2NkWU9xdndlNnRzd0dyaDZpMHRiOFFXeVJicXQ3VjBjblg3Sjl4MXFUSkJMNTZwX2tkVVFsN3JK?oc=5",
+   "publicado": "2026-11-18T10:41-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1120,19 +1133,6 @@
    "publicado": "2026-11-18T09:16-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe e supera R$ 5,8; Ibovespa cai em dia de votação de ajuste fiscal no Senado e ata do Fed",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNT3hzSDZ5Q1NiSXVXalV0N0pxWDZISEwwbjIybFpUTlhWMmZfdlRZMWNONjdiMHB3RTU3QUU4RDdXSzhIaXVXMkFBVkV0NzAzQTJWejFBNXo2eGF0Q1FkRFh1SUMtdHVnOEl1eU5ZS2FjX2JOaDdlZlJvTVFIV1JVc2lfaGNKR2QzSFh1YTZOdlV5bHhEWUpxVThvX0RvSHMyLWliYWJDRmM3ODg2VkpjdWJxNU5Md3BDUDlKdkpMUkc2NV9KdV9tOFlqT2lwdW1HdFdtS2hwX2VWUXlCc0xjM05qUdIB6AFBVV95cUxQbGVCNEtZM0xvOUpROE8yWUUzMGZLdldYUXlCbm5EZzdFWEdpOExXNEJ4WkszRnJ4aXhTMG5kMnFiMmE0VGowNERDanJYYzR3YnRiTWtHYUlZVFRhVzF0b2ZrWk91UkJPa3UzUjhqLWJ1d0I1TXhBSGhLMGpKZG13Qy1lWklDamowUVpxNEFfbTJjYjc1cDhLQVJLZk1WRFhnMzcxdTU4Z25ScldOQXhkb2NkWU9xdndlNnRzd0dyaDZpMHRiOFFXeVJicXQ3VjBjblg3Sjl4MXFUSkJMNTZwX2tkVVFsN3JK?oc=5",
-   "publicado": "2026-11-18T09:08-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
     "DI"
    ],
    "tickers": []
