@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-18",
-  "atualizado_em": "2026-11-18T14:35-03:00",
+  "atualizado_em": "2026-11-18T14:38-03:00",
   "ibov": {
    "anterior": 169816.64,
    "pontos": [
@@ -215,11 +215,11 @@
     ],
     [
      "14:20",
-     167414.0
+     167456.0
     ],
     [
-     "14:21",
-     167507.0
+     "14:23",
+     167478.0
     ]
    ]
   },
@@ -496,11 +496,11 @@
     ],
     [
      "14:35",
-     5.8238
+     5.8248
     ],
     [
-     "14:36",
-     5.8238
+     "14:38",
+     5.8248
     ]
    ]
   },
@@ -1033,7 +1033,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.0,
+    "ibov30": 0.03,
     "dolar30": -0.01
    },
    {
@@ -1047,7 +1047,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.15
+    "dolar30": -0.13
    },
    {
     "hora": "14:16",
@@ -1963,15 +1963,17 @@
    "em": "2026-11-18T13:03:08+00:00"
   }
  ],
- "atualizado_em": "2026-11-18T14:35-03:00",
+ "atualizado_em": "2026-11-18T14:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
+  "InfoMoney",
   "Money Times"
  ],
  "noticias": [
@@ -2006,6 +2008,18 @@
    "publicado": "2026-11-18T14:07-03:00",
    "impacto": "medio",
    "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Preços da soja dependem do clima no Brasil e de compras da China",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdnBLMHNVYTZ1Ukg0dk5TcE9nSFI5Q1BSa2ptbmpFeWlMRUtHQ3lnX2dxbGREYk5CeEdBbDlhbHVvT0d1UkptdjZxa0NXYzRlY2ZhaEF5ellCTjhLN1laWmVtTVZRVEF6c05xanE3RWs2UmV3V1dHSVcwa3VEM3dfRHp5MGxIVWpkV1QwUHNVQldydzRGalBld3VxOXI4NFNP?oc=5",
+   "publicado": "2026-11-18T13:58-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -2057,6 +2071,18 @@
    "tickers": []
   },
   {
+   "titulo": "China busca chips da Nvidia para armas de IA, apesar das restrições dos EUA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNNElLX0xxN1VKb0EyQ2EwdFY0LXMzZFZqNzVXbW9XZHl5YkkycUdnQThiazA5b0tZS2xES3psX05FdnFmRDZ3UEdPZEJyQTA2U3NZQUVxSHZYclpkUVNETUdaNkt4UzNOeThKa1pQU3hiQTJ2bjlxaTZrbnd1LTI4Q1RyeDNCQWRfN0lPaGNILWpERVk0bnZqeERmQ1Jfd2liQ1E1SXFzMTlYSUlVZnk0WTJUS25fbkNlbnI5a0NQaXB3ZnlDNUNxZVQzZkZHaEZFSE9aOVVrTGJkZHM?oc=5",
+   "publicado": "2026-11-18T13:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Minerva dispara 10% e BB lidera as maiores altas do Ibovespa hoje; veja os destaques do pregão",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzOHR0cHdIRERHZDhFMnItR2ozMzRPTVVsYjdaRlFqVkdKbnJWYm9STkJoUlhNN3NUUjU3MDR4WWVqcy0tUTRydDlTd1hmdzVUR0xNZkFidTlkM1BvTHVXT3FpRUxST3o3OUs2dDFjOVVJVEowRnpxVEtCZGQ5MjB4UmFFUFVEdU0yU1QxenV3X3JVUmdtdlB0QXZMem9qNXRLMTRPRWlKWDVkS2ZxVWhjeFVqT2xaNjBBOGRfbzlVT1hBaGxib2U3R0c3VkVDY3llVDFhUnVXLXNU?oc=5",
@@ -2085,6 +2111,19 @@
    "publicado": "2026-11-18T12:13-03:00",
    "impacto": "alto",
    "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe e supera R$ 5,84; Ibovespa recua mais de 1% em dia de votação de ajuste fiscal no Senado",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNT3hzSDZ5Q1NiSXVXalV0N0pxWDZISEwwbjIybFpUTlhWMmZfdlRZMWNONjdiMHB3RTU3QUU4RDdXSzhIaXVXMkFBVkV0NzAzQTJWejFBNXo2eGF0Q1FkRFh1SUMtdHVnOEl1eU5ZS2FjX2JOaDdlZlJvTVFIV1JVc2lfaGNKR2QzSFh1YTZOdlV5bHhEWUpxVThvX0RvSHMyLWliYWJDRmM3ODg2VkpjdWJxNU5Md3BDUDlKdkpMUkc2NV9KdV9tOFlqT2lwdW1HdFdtS2hwX2VWUXlCc0xjM05qUdIB6AFBVV95cUxQbGVCNEtZM0xvOUpROE8yWUUzMGZLdldYUXlCbm5EZzdFWEdpOExXNEJ4WkszRnJ4aXhTMG5kMnFiMmE0VGowNERDanJYYzR3YnRiTWtHYUlZVFRhVzF0b2ZrWk91UkJPa3UzUjhqLWJ1d0I1TXhBSGhLMGpKZG13Qy1lWklDamowUVpxNEFfbTJjYjc1cDhLQVJLZk1WRFhnMzcxdTU4Z25ScldOQXhkb2NkWU9xdndlNnRzd0dyaDZpMHRiOFFXeVJicXQ3VjBjblg3Sjl4MXFUSkJMNTZwX2tkVVFsN3JK?oc=5",
+   "publicado": "2026-11-18T11:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
