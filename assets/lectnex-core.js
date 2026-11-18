@@ -579,7 +579,6 @@
                 <a href="pro.html" class="block text-lect-orange hover:text-lect-tealLight">Lectnex Pro · lista de espera</a>
                 <a href="hoje.html" class="block hover:text-lect-tealLight">O que mexeu hoje</a>
                 <a href="simulador.html" class="block hover:text-lect-tealLight">Simulador de pregão</a>
-                <a href="fluxo.html" class="block hover:text-lect-tealLight">Simulador de fluxo (DOM)</a>
                 <a href="manchetes.html" class="block hover:text-lect-tealLight">Arquivo de manchetes</a>
                 <a href="placar.html" class="block hover:text-lect-tealLight">Placar de acertos</a>
                 <a href="status.html" class="block hover:text-lect-tealLight">Status do site</a>
@@ -641,7 +640,6 @@
         ['mercado', 'REGIME', 'Regimes de risco', 'Risk-on, risk-off e como os ativos reagem', 'macro.html#regimes', 'ph-gauge', 'regime risco risk on off aversao apetite intermercado'],
         ['mercado', 'MAPA', 'Mapa de calor da B3', 'Ações do Ibovespa por setor, coloridas pela variação do dia', 'index.html#mapa', 'ph-squares-four', 'mapa calor heatmap setores acoes ibovespa fluxo variacao'],
         ['mercado', 'HOJE', 'O que mexeu no mercado hoje', 'Gráfico do Ibovespa e do dólar com as manchetes marcadas', 'hoje.html', 'ph-chart-line', 'hoje grafico noticia preco reacao manchete intraday'],
-        ['lab', 'FLUXO', 'Simulador de fluxo do mini índice (DOM)', 'Super DOM, times & trades e players simulados, com professor de leitura de fluxo', 'fluxo.html', 'ph-list-numbers', 'fluxo dom super dom book livro de ofertas tape times trades agressao absorcao varredura tape reading leitura de fluxo win'],
         ['lab', 'SIMULADOR', 'Simulador de pregão (replay)', 'Opere um dia real de WIN ou WDO com as manchetes no horário, dinheiro fictício', 'simulador.html', 'ph-play-circle', 'simulador replay pregao treino treinar operar win wdo demo conta demo paper trading'],
         ['mercado', 'PLACAR', 'Placar do Lectnex', 'Acertos e erros do viés do modelo e do histórico nos dias de evento', 'placar.html', 'ph-target', 'placar acerto erro termometro historico resultado transparencia'],
         ['mercado', 'ARQUIVO', 'Arquivo de manchetes', 'Como o Ibovespa e o dólar reagiram a cada notícia (busca por tema)', 'manchetes.html', 'ph-archive', 'arquivo manchetes historico noticia reacao copom payroll inflacao petrobras padrao'],

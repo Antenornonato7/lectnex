@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=b5be4b88") format("woff");
+  src: url("./Phosphor.woff?v=265196cd") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -73,9 +73,6 @@
 .ph.ph-bank:before {
   content: "\e0b4";
 }
-.ph.ph-battery-low:before {
-  content: "\e0c4";
-}
 .ph.ph-bell-ringing:before {
   content: "\e5e8";
 }
@@ -87,9 +84,6 @@
 }
 .ph.ph-book-open-text:before {
   content: "\e8f2";
-}
-.ph.ph-broom:before {
-  content: "\ec54";
 }
 .ph.ph-buildings:before {
   content: "\e102";
@@ -117,9 +111,6 @@
 }
 .ph.ph-caret-up:before {
   content: "\e13c";
-}
-.ph.ph-chalkboard-teacher:before {
-  content: "\e600";
 }
 .ph.ph-chart-bar:before {
   content: "\e150";
@@ -162,9 +153,6 @@
 }
 .ph.ph-cookie:before {
   content: "\e6ca";
-}
-.ph.ph-crosshair:before {
-  content: "\e1d6";
 }
 .ph.ph-crown:before {
   content: "\e614";
@@ -277,14 +265,8 @@
 .ph.ph-list-checks:before {
   content: "\eadc";
 }
-.ph.ph-list-numbers:before {
-  content: "\e2f6";
-}
 .ph.ph-magnifying-glass:before {
   content: "\e30c";
-}
-.ph.ph-megaphone:before {
-  content: "\e324";
 }
 .ph.ph-minus-circle:before {
   content: "\e32c";
@@ -345,9 +327,6 @@
 }
 .ph.ph-share-network:before {
   content: "\e408";
-}
-.ph.ph-shield:before {
-  content: "\e40a";
 }
 .ph.ph-shield-check:before {
   content: "\e40c";
@@ -442,9 +421,6 @@
 .ph.ph-warning-octagon:before {
   content: "\e4e4";
 }
-.ph.ph-waveform:before {
-  content: "\e802";
-}
 .ph.ph-wrench:before {
   content: "\e5d4";
 }
@@ -459,7 +435,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=b5be4b88") format("woff");
+  src: url("./Phosphor-Bold.woff?v=265196cd") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -530,9 +506,6 @@
 .ph-bold.ph-bank:before {
   content: "\e0b4";
 }
-.ph-bold.ph-battery-low:before {
-  content: "\e0c4";
-}
 .ph-bold.ph-bell-ringing:before {
   content: "\e5e8";
 }
@@ -544,9 +517,6 @@
 }
 .ph-bold.ph-book-open-text:before {
   content: "\e8f2";
-}
-.ph-bold.ph-broom:before {
-  content: "\ec54";
 }
 .ph-bold.ph-buildings:before {
   content: "\e102";
@@ -574,9 +544,6 @@
 }
 .ph-bold.ph-caret-up:before {
   content: "\e13c";
-}
-.ph-bold.ph-chalkboard-teacher:before {
-  content: "\e600";
 }
 .ph-bold.ph-chart-bar:before {
   content: "\e150";
@@ -619,9 +586,6 @@
 }
 .ph-bold.ph-cookie:before {
   content: "\e6ca";
-}
-.ph-bold.ph-crosshair:before {
-  content: "\e1d6";
 }
 .ph-bold.ph-crown:before {
   content: "\e614";
@@ -734,14 +698,8 @@
 .ph-bold.ph-list-checks:before {
   content: "\eadc";
 }
-.ph-bold.ph-list-numbers:before {
-  content: "\e2f6";
-}
 .ph-bold.ph-magnifying-glass:before {
   content: "\e30c";
-}
-.ph-bold.ph-megaphone:before {
-  content: "\e324";
 }
 .ph-bold.ph-minus-circle:before {
   content: "\e32c";
@@ -802,9 +760,6 @@
 }
 .ph-bold.ph-share-network:before {
   content: "\e408";
-}
-.ph-bold.ph-shield:before {
-  content: "\e40a";
 }
 .ph-bold.ph-shield-check:before {
   content: "\e40c";
@@ -899,9 +854,6 @@
 .ph-bold.ph-warning-octagon:before {
   content: "\e4e4";
 }
-.ph-bold.ph-waveform:before {
-  content: "\e802";
-}
 .ph-bold.ph-wrench:before {
   content: "\e5d4";
 }
@@ -916,7 +868,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=b5be4b88") format("woff");
+  src: url("./Phosphor-Fill.woff?v=265196cd") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -987,9 +939,6 @@
 .ph-fill.ph-bank:before {
   content: "\e0b4";
 }
-.ph-fill.ph-battery-low:before {
-  content: "\e0c4";
-}
 .ph-fill.ph-bell-ringing:before {
   content: "\e5e8";
 }
@@ -1001,9 +950,6 @@
 }
 .ph-fill.ph-book-open-text:before {
   content: "\e8f2";
-}
-.ph-fill.ph-broom:before {
-  content: "\ec54";
 }
 .ph-fill.ph-buildings:before {
   content: "\e102";
@@ -1031,9 +977,6 @@
 }
 .ph-fill.ph-caret-up:before {
   content: "\e13c";
-}
-.ph-fill.ph-chalkboard-teacher:before {
-  content: "\e600";
 }
 .ph-fill.ph-chart-bar:before {
   content: "\e150";
@@ -1076,9 +1019,6 @@
 }
 .ph-fill.ph-cookie:before {
   content: "\e6ca";
-}
-.ph-fill.ph-crosshair:before {
-  content: "\e1d6";
 }
 .ph-fill.ph-crown:before {
   content: "\e614";
@@ -1191,14 +1131,8 @@
 .ph-fill.ph-list-checks:before {
   content: "\eadc";
 }
-.ph-fill.ph-list-numbers:before {
-  content: "\e2f6";
-}
 .ph-fill.ph-magnifying-glass:before {
   content: "\e30c";
-}
-.ph-fill.ph-megaphone:before {
-  content: "\e324";
 }
 .ph-fill.ph-minus-circle:before {
   content: "\e32c";
@@ -1259,9 +1193,6 @@
 }
 .ph-fill.ph-share-network:before {
   content: "\e408";
-}
-.ph-fill.ph-shield:before {
-  content: "\e40a";
 }
 .ph-fill.ph-shield-check:before {
   content: "\e40c";
@@ -1356,9 +1287,6 @@
 .ph-fill.ph-warning-octagon:before {
   content: "\e4e4";
 }
-.ph-fill.ph-waveform:before {
-  content: "\e802";
-}
 .ph-fill.ph-wrench:before {
   content: "\e5d4";
 }
@@ -1373,7 +1301,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=b5be4b88") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=265196cd") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1504,14 +1432,6 @@
   content: "\e0b5";
   margin-left: -1em;
 }
-.ph-duotone.ph-battery-low:before {
-  content: "\e0c4";
-  opacity: 0.2;
-}
-.ph-duotone.ph-battery-low:after {
-  content: "\e0c5";
-  margin-left: -1em;
-}
 .ph-duotone.ph-bell-ringing:before {
   content: "\e5e8";
   opacity: 0.2;
@@ -1542,14 +1462,6 @@
 }
 .ph-duotone.ph-book-open-text:after {
   content: "\e8f3";
-  margin-left: -1em;
-}
-.ph-duotone.ph-broom:before {
-  content: "\ec54";
-  opacity: 0.2;
-}
-.ph-duotone.ph-broom:after {
-  content: "\ec55";
   margin-left: -1em;
 }
 .ph-duotone.ph-buildings:before {
@@ -1622,14 +1534,6 @@
 }
 .ph-duotone.ph-caret-up:after {
   content: "\e13d";
-  margin-left: -1em;
-}
-.ph-duotone.ph-chalkboard-teacher:before {
-  content: "\e600";
-  opacity: 0.2;
-}
-.ph-duotone.ph-chalkboard-teacher:after {
-  content: "\e601";
   margin-left: -1em;
 }
 .ph-duotone.ph-chart-bar:before {
@@ -1742,14 +1646,6 @@
 }
 .ph-duotone.ph-cookie:after {
   content: "\e6cb";
-  margin-left: -1em;
-}
-.ph-duotone.ph-crosshair:before {
-  content: "\e1d6";
-  opacity: 0.2;
-}
-.ph-duotone.ph-crosshair:after {
-  content: "\e1d7";
   margin-left: -1em;
 }
 .ph-duotone.ph-crown:before {
@@ -2048,28 +1944,12 @@
   content: "\eadd";
   margin-left: -1em;
 }
-.ph-duotone.ph-list-numbers:before {
-  content: "\e2f6";
-  opacity: 0.2;
-}
-.ph-duotone.ph-list-numbers:after {
-  content: "\e2f7";
-  margin-left: -1em;
-}
 .ph-duotone.ph-magnifying-glass:before {
   content: "\e30c";
   opacity: 0.2;
 }
 .ph-duotone.ph-magnifying-glass:after {
   content: "\e30d";
-  margin-left: -1em;
-}
-.ph-duotone.ph-megaphone:before {
-  content: "\e324";
-  opacity: 0.2;
-}
-.ph-duotone.ph-megaphone:after {
-  content: "\e325";
   margin-left: -1em;
 }
 .ph-duotone.ph-minus-circle:before {
@@ -2230,14 +2110,6 @@
 }
 .ph-duotone.ph-share-network:after {
   content: "\e40b";
-  margin-left: -1em;
-}
-.ph-duotone.ph-shield:before {
-  content: "\e40a";
-  opacity: 0.2;
-}
-.ph-duotone.ph-shield:after {
-  content: "\e40d";
   margin-left: -1em;
 }
 .ph-duotone.ph-shield-check:before {
@@ -2486,14 +2358,6 @@
 }
 .ph-duotone.ph-warning-octagon:after {
   content: "\e4e5";
-  margin-left: -1em;
-}
-.ph-duotone.ph-waveform:before {
-  content: "\e802";
-  opacity: 0.2;
-}
-.ph-duotone.ph-waveform:after {
-  content: "\e803";
   margin-left: -1em;
 }
 .ph-duotone.ph-wrench:before {
