@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de fluxo (DOM) do mini índice: book, tape e players simulados</title>
+    <meta name="description" content="Treine leitura de fluxo no mini índice (WIN): Super DOM com fila, times & trades, players grandes simulados e um professor que explica absorção, varredura e exaustão. Grátis e sem cadastro.">
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="canonical" href="https://lectnex.com.br/fluxo.html">
+    <meta name="theme-color" content="#060D17">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lectnex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lectnex Terminal">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Simulador de fluxo (DOM) do mini índice: book, tape e players simulados">
+    <meta property="og:description" content="Treine leitura de fluxo no mini índice (WIN): Super DOM com fila, times & trades, players grandes simulados e um professor que explica absorção, varredura e exaustão. Grátis e sem cadastro.">
+    <meta property="og:url" content="https://lectnex.com.br/fluxo.html">
+    <meta property="og:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Simulador de pregão: replay grátis de um dia real de WIN e WDO">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simulador de fluxo (DOM) do mini índice: book, tape e players simulados">
+    <meta name="twitter:description" content="Treine leitura de fluxo no mini índice (WIN): Super DOM com fila, times & trades, players grandes simulados e um professor que explica absorção, varredura e exaustão. Grátis e sem cadastro.">
+    <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-futuros.jpg">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebApplication", "name": "Simulador de fluxo (DOM) do mini índice", "url": "https://lectnex.com.br/fluxo.html", "description": "Treine leitura de fluxo no mini índice (WIN): Super DOM com fila, times & trades, players grandes simulados e um professor que explica absorção, varredura e exaustão. Grátis e sem cadastro.", "applicationCategory": "EducationalApplication", "operatingSystem": "Web (celular e computador)", "isAccessibleForFree": true, "inLanguage": "pt-BR", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Lectnex", "item": "https://lectnex.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Laboratório", "item": "https://lectnex.com.br/laboratorio.html"}, {"@type": "ListItem", "position": 3, "name": "Simulador de fluxo", "item": "https://lectnex.com.br/fluxo.html"}]}]}</script>
+    <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261118a">
+    <link rel="expect" href="#lx-pronto" blocking="render">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261118a">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261118a">
+</head>
+<body data-page="fluxo" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
+
+    <div id="lx-topbar"></div>
+    <header id="lx-header"></header>
+
+    <main class="max-w-[1500px] mx-auto px-3 sm:px-5 lg:px-6 py-5 sm:py-7 pb-24 lg:pb-8">
+        <div class="flex flex-col xl:flex-row xl:items-end justify-between gap-3">
+            <div>
+                <span class="term-label text-lect-orange font-bold">LABORATÓRIO · <span class="lx-demo">SIMULAÇÃO</span></span>
+                <h1 class="font-display text-2xl sm:text-3xl font-bold mt-1 leading-tight">Simulador de fluxo do mini índice</h1>
+                <p class="text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-3xl">Super DOM com fila, times &amp; trades e players grandes simulados. Leia o fluxo, opere com stop e alvo, e deixe o <strong>professor</strong> apontar absorção, varredura e exaustão enquanto acontecem.</p>
+            </div>
+            <div class="flex flex-wrap items-end gap-2 font-mono text-[11px]" id="dm-cfg">
+                <label class="flex flex-col gap-1"><span class="term-label">Cenário</span><select id="dm-regime" class="lx-input !py-1.5 !text-xs"><option value="auto">Automático</option><option value="tend">Tendência</option><option value="lat">Lateral</option><option value="noticia">Dia de notícia</option></select></label>
+                <label class="flex flex-col gap-1"><span class="term-label">Volatilidade</span><select id="dm-vol" class="lx-input !py-1.5 !text-xs"><option value="0.7">Baixa</option><option value="1" selected>Normal</option><option value="1.6">Alta</option></select></label>
+                <label class="flex items-center gap-2 min-h-[34px]"><input id="dm-big" type="checkbox" checked class="accent-[#009988]"><span>Players grandes</span></label>
+                <label class="flex items-center gap-2 min-h-[34px]"><input id="dm-prof" type="checkbox" checked class="accent-[#009988]"><span>Professor</span></label>
+                <label class="flex flex-col gap-1"><span class="term-label">Semente</span><input id="dm-seed" type="text" maxlength="8" class="lx-input !py-1.5 !text-xs w-24 uppercase" spellcheck="false" autocomplete="off"></label>
+            </div>
+        </div>
+
+        <!-- cotação -->
+        <section class="term-panel mt-4 px-3 py-2.5 flex flex-wrap items-center gap-x-5 gap-y-2 font-mono tabular-nums text-xs">
+            <div class="flex items-baseline gap-2"><span class="font-bold text-slate-500">WINFUT</span><strong id="dm-ult" class="text-2xl">—</strong><span id="dm-var" class="font-bold">—</span></div>
+            <div class="hidden sm:block"><span class="text-slate-500">Hora</span> <strong id="dm-hora">09:00:00</strong></div>
+            <div><span class="text-slate-500">Máx</span> <strong id="dm-max">—</strong></div>
+            <div><span class="text-slate-500">Mín</span> <strong id="dm-min">—</strong></div>
+            <div class="hidden sm:block"><span class="text-slate-500">Volume</span> <strong id="dm-volume">0</strong></div>
+            <div class="hidden md:block"><span class="text-slate-500">Negócios</span> <strong id="dm-neg">0</strong></div>
+            <div class="ml-auto flex items-center gap-1" role="group" aria-label="Velocidade">
+                <button type="button" id="dm-play" class="pg-btn pg-btn-teal !py-1.5"><i class="ph-fill ph-play"></i><span>INICIAR</span></button>
+                <button type="button" data-v="1" class="pg-vel !py-1.5">1×</button>
+                <button type="button" data-v="5" class="pg-vel pg-on !py-1.5">5×</button>
+                <button type="button" data-v="20" class="pg-vel !py-1.5">20×</button>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 mt-3">
+            <!-- DOM -->
+            <section class="dm-tab lg:col-span-3 term-panel p-2" data-tab="dom">
+                <div class="flex items-center justify-between px-1 pb-1.5"><span class="term-label">Super DOM</span><span class="text-[10px] text-slate-500 font-mono">clique: ordem limitada</span></div>
+                <div class="dm-ladder font-mono tabular-nums text-[11px]" id="dm-ladder" role="grid" aria-label="Livro de ofertas"></div>
+                <div class="lg:hidden grid grid-cols-3 gap-1 mt-2 font-mono text-[11px]">
+                    <button type="button" data-espelho="dm-compra" class="pg-btn pg-btn-verde min-h-[44px]" disabled>COMPRA</button>
+                    <button type="button" data-espelho="dm-venda" class="pg-btn pg-btn-vermelho min-h-[44px]" disabled>VENDA</button>
+                    <button type="button" data-espelho="dm-zera" class="pg-btn min-h-[44px]" disabled>ZERAR</button>
+                </div>
+                <p class="lg:hidden text-[10px] text-slate-500 mt-1 px-1">Contratos, stop e alvo ficam na aba Gráfico.</p>
+            </section>
+
+            <!-- centro: gráfico + boleta -->
+            <section class="dm-tab lg:col-span-6 space-y-3" data-tab="grafico">
+                <div class="term-panel p-2">
+                    <div class="flex items-center justify-between px-1"><span class="term-label">Gráfico de 1 minuto · VWAP</span><span class="text-[10px] font-mono text-slate-500"><span class="inline-block w-3 h-[2px] bg-lect-orange align-middle"></span> VWAP</span></div>
+                    <canvas id="dm-graf" class="w-full block mt-1" height="300" aria-label="Gráfico de candles de 1 minuto"></canvas>
+                </div>
+                <div class="term-panel p-3" id="dm-boleta">
+                    <div class="grid grid-cols-3 gap-2 font-mono text-xs">
+                        <label class="flex flex-col gap-1"><span class="term-label">Contratos</span><input id="dm-qtd" type="number" min="1" max="50" value="1" class="lx-input !py-1.5"></label>
+                        <label class="flex flex-col gap-1"><span class="term-label">Stop (pts)</span><input id="dm-stop" type="number" min="0" step="5" value="100" class="lx-input !py-1.5 text-rose-600"></label>
+                        <label class="flex flex-col gap-1"><span class="term-label">Alvo (pts)</span><input id="dm-alvo" type="number" min="0" step="5" value="150" class="lx-input !py-1.5 text-emerald-600"></label>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-2">
+                        <button type="button" id="dm-compra" class="pg-btn pg-btn-verde min-h-[44px]" disabled><i class="ph-bold ph-arrow-up"></i>COMPRA A MERCADO</button>
+                        <button type="button" id="dm-venda" class="pg-btn pg-btn-vermelho min-h-[44px]" disabled><i class="ph-bold ph-arrow-down"></i>VENDA A MERCADO</button>
+                        <button type="button" id="dm-zera" class="pg-btn min-h-[44px]" disabled><i class="ph-bold ph-x"></i>ZERAR</button>
+                        <button type="button" id="dm-cancela" class="pg-btn min-h-[44px]" disabled><i class="ph-bold ph-trash"></i>CANCELAR ORDENS</button>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mt-3 font-mono text-xs tabular-nums">
+                        <span id="dm-pos" class="text-slate-500">Sem posição</span>
+                        <span>Resultado <strong id="dm-res">R$ 0,00</strong> <span id="dm-res-pts" class="text-slate-500">0 pts</span></span>
+                    </div>
+                    <p class="text-[10px] text-slate-500 mt-2">Atalhos (computador): <kbd>C</kbd> compra · <kbd>V</kbd> venda · <kbd>Z</kbd> zera · <kbd>espaço</kbd> pausa. Stop e alvo entram juntos a cada entrada (um cancela o outro).</p>
+                </div>
+            </section>
+
+            <!-- direita: tape, agressão, professor -->
+            <div class="lg:col-span-3 space-y-3">
+            <section class="dm-tab space-y-3" data-tab="fluxo">
+                <div class="term-panel p-2">
+                    <span class="term-label px-1">Agressão</span>
+                    <div class="px-1 mt-1.5 space-y-2 font-mono text-[11px] tabular-nums">
+                        <div><div class="flex justify-between"><span>Último minuto</span><span id="dm-ag1-txt">—</span></div><div class="dm-bar"><div id="dm-ag1" style="width:50%"></div></div></div>
+                        <div><div class="flex justify-between"><span>No dia</span><span id="dm-agd-txt">—</span></div><div class="dm-bar"><div id="dm-agd" style="width:50%"></div></div></div>
+                    </div>
+                </div>
+                <div class="term-panel p-2">
+                    <div class="flex items-center justify-between px-1"><span class="term-label">Times &amp; trades</span><span class="text-[10px] font-mono text-slate-500">≥ 50 em destaque</span></div>
+                    <div class="dm-tape font-mono tabular-nums text-[11px] mt-1" id="dm-tape" aria-live="off"></div>
+                </div>
+            </section>
+                <section class="dm-tab term-panel p-2" data-tab="painel">
+                    <span class="term-label px-1 flex items-center gap-1.5"><i class="ph-fill ph-chalkboard-teacher text-lect-orange"></i>Professor</span>
+                    <ol id="dm-prof-feed" class="mt-1.5 space-y-2 text-xs max-h-[18rem] overflow-y-auto" aria-live="polite"><li class="text-slate-500">Inicie o pregão. Quando o fluxo mostrar algo que vale estudar, aparece aqui com a explicação.</li></ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 mt-3">
+            <button type="button" id="dm-fim-btn" class="pg-btn min-h-[40px]" disabled><i class="ph-bold ph-flag-checkered"></i>ENCERRAR E VER O RELATÓRIO</button>
+            <a href="simulador.html" class="text-xs text-lect-teal hover:underline"><i class="ph-bold ph-play-circle"></i> Prefere um dia real? Simulador de pregão (replay)</a>
+        </div>
+        <section id="dm-fim" class="hidden mt-4 term-panel p-5 border-l-4 !border-l-lect-orange" aria-live="polite"></section>
+
+        <p class="text-[11px] text-slate-500 mt-5 leading-relaxed max-w-4xl"><span class="lx-demo">SIMULAÇÃO</span> O livro, os negócios e os players são <strong>gerados por computador</strong> para treino: não são ordens reais da B3 nem tentam prever o mercado. Parte do último fechamento real do Ibovespa. WIN: variação mínima de 5 pontos, R$ 0,20 por ponto por contrato; custo considerado R$ 0,50 por contrato por lado. Execução simplificada (fila estimada, sem slippage de verdade). Conteúdo educacional, não é recomendação.</p>
+    </main>
+
+    <!-- abas no celular -->
+    <nav class="dm-nav lg:hidden" aria-label="Painéis do simulador">
+        <button type="button" data-ir="dom" class="dm-on"><i class="ph-bold ph-list-numbers"></i>DOM</button>
+        <button type="button" data-ir="fluxo"><i class="ph-bold ph-waveform"></i>Fluxo</button>
+        <button type="button" data-ir="grafico"><i class="ph-bold ph-chart-line"></i>Gráfico</button>
+        <button type="button" data-ir="painel"><i class="ph-bold ph-chalkboard-teacher"></i>Professor</button>
+    </nav>
+
+    <div id="lx-footer"></div>
+
+    <script src="assets/lectnex-core.js?v=20261118a"></script><span id="lx-pronto" hidden></span>
+    <script src="assets/fluxo.js?v=20261118a"></script>
+</body>
+</html>
