@@ -13,7 +13,7 @@ on:
       modo:
         description: 'enviar = manda a Leitura de hoje; rascunho = cria só um rascunho no Buttondown para conferir; verificar = testa a chave e conta inscritos'
         type: choice
-        options: ['verificar', 'enviar', 'rascunho']
+        options: ['verificar', 'enviar', 'rascunho', 'nome-e-enviar']
         default: 'verificar'
 
 permissions:
@@ -32,11 +32,13 @@ jobs:
         with:
           fetch-depth: 2
       - name: Enviar edição
-        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && (inputs.modo == 'enviar' || inputs.modo == 'rascunho'))
+        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && (inputs.modo == 'enviar' || inputs.modo == 'rascunho' || inputs.modo == 'nome-e-enviar'))
         env:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY || secrets.SITE_LECTNEX }}
           MANUAL: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
           RASCUNHO: ${{ inputs.modo == 'rascunho' && '1' || '' }}
+          NOME: ${{ inputs.modo == 'nome-e-enviar' && '1' || '' }}
+          MANUAL_ENVIO: ${{ inputs.modo == 'nome-e-enviar' && '1' || '' }}
         run: python3 coletor/newsletter.py
       - name: Atualizar contagem de inscritos
         if: always()

@@ -75,9 +75,29 @@ def corpo(d):
     return H.documento(d.get('titulo', 'Leitura do Dia'), (d.get('resumo') or [''])[0][:140], blocos)
 
 
+def dar_nome(nome='Lectnex · Leitura do Dia'):
+    """O Buttondown recusa envios ('give your newsletter a name') se o nome da newsletter estiver vazio: preenche só se estiver vazio."""
+    h = {'Authorization': f'Token {KEY}', 'Content-Type': 'application/json', 'X-API-Version': '2026-04-01'}
+    lista = json.load(urllib.request.urlopen(urllib.request.Request('https://api.buttondown.com/v1/newsletters', headers=h), timeout=30))
+    for n in lista.get('results', lista if isinstance(lista, list) else []):
+        atual = (n.get('name') or '').strip()
+        print(f"::notice title=Newsletter::{n.get('username')}: nome atual {atual!r}")
+        if not atual:
+            req = urllib.request.Request(f"https://api.buttondown.com/v1/newsletters/{n['id']}", data=json.dumps({'name': nome}).encode(), method='PATCH', headers=h)
+            r = json.load(urllib.request.urlopen(req, timeout=30))
+            print(f"::notice title=Newsletter::nome definido: {r.get('name')!r}")
+
+
 def main():
     if not KEY:
         print('::warning title=Newsletter::Sem o segredo BUTTONDOWN_API_KEY — nada foi enviado.'); return
+    if os.environ.get('NOME'):
+        try:
+            dar_nome()
+        except urllib.error.HTTPError as e:
+            print(f'::error title=Newsletter::nome: HTTP {e.code} {e.read().decode()[:300]}'); sys.exit(1)
+        if not os.environ.get('MANUAL_ENVIO'):
+            return
     d = json.load(open(os.path.join(ROOT, 'data', 'leitura.json'), encoding='utf-8'))
     if not os.environ.get('MANUAL') and anterior().get('data') == d.get('data'):
         print('::notice title=Newsletter::Mesma edição do dia (correção) — não reenviado.'); return
