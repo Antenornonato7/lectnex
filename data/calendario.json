@@ -1,109 +1,9 @@
 {
-  "atualizado_em": "2026-11-18T19:40:00-03:00",
+  "atualizado_em": "2026-11-19T08:20:00-03:00",
   "eventos": [
     {
-      "data": "2026-11-18",
-      "hora": "04h",
-      "pais": "UK",
-      "evento": "CPI do Reino Unido (out, a/a)",
-      "importancia": 1,
-      "anterior": "3,5%",
-      "consenso": null,
-      "resultado": "3,6%",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Inflação britânica; mexe com a libra e o dólar global.",
-      "tipo": "cpi-reino-unido",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-18",
-      "hora": "07h",
-      "pais": "EU",
-      "evento": "Inflação da zona do euro — HICP final (out, a/a)",
-      "importancia": 1,
-      "anterior": "4,0%",
-      "consenso": null,
-      "resultado": "4,0%",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Anterior = estimativa preliminar (flash) de outubro.",
-      "tipo": "inflacao-zona-euro",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-18",
-      "hora": "11h",
-      "pais": "BR",
-      "evento": "Fala de Dario Durigan (Fazenda) em fórum do Bradesco BBI",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Negou controle de capital e mudança na meta de inflação",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Sinais sobre o ajuste fiscal no dia da votação dos destaques no Senado.",
-      "tipo": "fala-fazenda",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-18",
-      "hora": "16h",
-      "pais": "US",
-      "evento": "Ata do FOMC (reunião de 27–28/out)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Quase todos esperam alta de 0,25 p.p. em dezembro",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil",
-        "win": "volatil"
-      },
-      "nota": "Reunião que manteve os juros em 3,75%–4,00% (votação 10–2); mercado precifica alta em dezembro.",
-      "tipo": "ata-fomc",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-18",
-      "hora": "16h",
-      "pais": "BR",
-      "evento": "Senado vota destaques do ajuste fiscal (PLP 299/2026)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Aprovado por 69 a 2 no turno suplementar; 3 destaques rejeitados; texto vai à Câmara",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil",
-        "win": "volatil"
-      },
-      "nota": "Adiada de terça; primeiro item da sessão plenária. Quatro destaques podem alterar o texto-base aprovado por 45 a 31.",
-      "tipo": "ajuste-fiscal",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-19",
-      "hora": "09h",
-      "pais": "BR",
-      "evento": "Reunião do Conselho Monetário Nacional (CMN)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Reunião ordinária do mês.",
-      "tipo": "cmn",
-      "surpresa": null
-    },
-    {
-      "anterior": null,
-      "consenso": null,
+      "anterior": "200 mil",
+      "consenso": "198 mil",
       "resultado": null,
       "surpresa": null,
       "data": "2026-11-19",
@@ -118,8 +18,8 @@
       "tipo": "seguro-desemprego"
     },
     {
-      "anterior": null,
-      "consenso": null,
+      "anterior": "20,9",
+      "consenso": "20,6",
       "resultado": null,
       "surpresa": null,
       "data": "2026-11-19",
@@ -134,8 +34,41 @@
       "tipo": "philly-fed"
     },
     {
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "surpresa": null,
       "data": "2026-11-19",
-      "hora": "22h",
+      "hora": "10h50",
+      "pais": "US",
+      "evento": "Falas do Fed: Hammack (10h50), Jefferson (11h25), Goolsbee (14h30) e Barr (16h15)",
+      "importancia": 1,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Primeiras falas depois da ata, que apontou novas altas de juros.",
+      "tipo": "fala-fed"
+    },
+    {
+      "data": "2026-11-19",
+      "hora": "18h",
+      "pais": "BR",
+      "evento": "Reunião do Conselho Monetário Nacional (CMN)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil"
+      },
+      "nota": "Reunião ordinária do mês, depois do fechamento.",
+      "tipo": "cmn",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-19",
+      "hora": "22h30",
       "pais": "CN",
       "evento": "Taxa LPR de 1 e 5 anos (PBoC, nov)",
       "importancia": 1,
@@ -178,7 +111,7 @@
         "win": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Reunião confirmada pela Casa Branca à margem da APEC; comércio EUA–China mexe com minério e emergentes.",
+      "nota": "Trump, Xi e Putin reunidos à margem da APEC; comércio, petróleo em Hormuz e Ucrânia na pauta. Mexe com minério e emergentes.",
       "tipo": "cupula-eua-china",
       "surpresa": null
     },
@@ -262,6 +195,24 @@
       "surpresa": null
     },
     {
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "surpresa": null,
+      "data": "2026-11-23",
+      "hora": null,
+      "pais": "BR",
+      "evento": "Câmara pode votar o ajuste fiscal (PLP 299/2026)",
+      "importancia": 2,
+      "impacto": {
+        "win": "volatil",
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Relator Mauro Benevides prevê votação na segunda (23) se houver quórum, ou na terça (24), segundo a CNN Brasil.",
+      "tipo": "ajuste-fiscal"
+    },
+    {
       "data": "2026-11-24",
       "hora": "12h",
       "pais": "US",
@@ -327,6 +278,23 @@
       "nota": "Investimento e demanda da indústria americana.",
       "tipo": "bens-duraveis-eua",
       "surpresa": null
+    },
+    {
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "surpresa": null,
+      "data": "2026-11-26",
+      "hora": null,
+      "pais": "US",
+      "evento": "Ação de Graças — bolsas de NY fechadas",
+      "importancia": 1,
+      "impacto": {
+        "win": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
+      "tipo": "feriado-eua"
     }
   ]
 }

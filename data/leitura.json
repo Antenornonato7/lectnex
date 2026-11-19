@@ -1,87 +1,161 @@
 {
   "tipo": "pregao",
-  "data": "2026-11-18",
-  "gerado_em": "2026-11-18T08:05:00-03:00",
-  "titulo": "Nvidia anima NY; fiscal no Senado e ata do Fed às 16h",
+  "data": "2026-11-19",
+  "gerado_em": "2026-11-19T08:20:00-03:00",
+  "titulo": "Senado conclui ajuste fiscal e IPO da Anthropic anima NY",
   "resumo": [
-    "No último pregão (terça, 17), o Ibovespa subiu 0,31%, aos 169.816 pontos, e o dólar à vista avançou 0,10%, a R$ 5,782, quarta alta seguida, segundo o InfoMoney; os juros futuros recuaram em toda a curva, com o DI para janeiro de 2029 a 14,795%.",
-    "A Nvidia faturou US$ 115,8 bi no trimestre, acima do consenso de US$ 109,1 bi, e projetou US$ 130 bi para o próximo; às 7h30 o S&P 500 futuro sobe 0,58%, o Nasdaq futuro 1,10% e o VIX cai 6,95%, alívio no apetite a risco global depois de quatro quedas seguidas em NY.",
-    "O Senado vota às 16h, como primeiro item do plenário, os quatro destaques do ajuste fiscal (PLP 299/2026), adiados na terça por falta de acordo; o projeto prevê economia de R$ 50 bi a R$ 60 bi em 2027, e o desfecho é o principal vetor local para o DI longo e o dólar.",
-    "Também às 16h sai a ata do FOMC; segundo a Bloomberg, o mercado já precifica integralmente uma alta de 0,25 p.p. em 9 de dezembro, e sinais de aperto mais forte tendem a sustentar o dólar global (DXY +0,26% às 7h30).",
-    "Os dois eventos fortes do dia saem só depois das 16h, no fim do pregão: a manhã tende a ser guiada pelo exterior, com risco de volatilidade concentrada na última hora."
+    "No último pregão (quarta, 18), o Ibovespa caiu 1,34%, aos 167.538 pontos, e o dólar à vista disparou pela quinta sessão seguida, a R$ 5,86, segundo o InfoMoney, com cautela antes da votação do ajuste fiscal e dólar forte no exterior.",
+    "À noite, o Senado concluiu a votação do ajuste fiscal (PLP 299/2026): 69 a 2 no turno suplementar, com os destaques da oposição rejeitados; o texto vai à Câmara, e a retirada desse risco é o principal vetor local para o DI longo e o dólar hoje.",
+    "Segundo o relator Eduardo Braga, as mudanças reduziram o impacto previsto para cerca de R$ 50 bi em 2027 (antes até R$ 56,1 bi); o acordo sobre a Lei Kandir ajudou a destravar a votação.",
+    "No exterior, a Anthropic precificou o maior IPO da história (US$ 81,3 bi, a US$ 83 por ação) e estreia hoje na Nasdaq: às 7h30, S&P 500 futuro +1,20%, Nasdaq futuro +2,14%, EWZ +0,50% e VIX −9,73%; o risco é a ata do Fed, que apontou novas altas de juros.",
+    "Hoje vencem as opções de novembro, antecipadas porque a B3 fecha amanhã (Consciência Negra); ajustes de posição antes do feriado podem ampliar as oscilações, e o seguro-desemprego e o Fed da Filadélfia saem às 10h30."
   ],
   "pontos": [
-    { "titulo": "Senado vota destaques do fiscal às 16h", "texto": "Quatro destaques podem mudar o PLP 299; desfecho mexe no DI longo e no dólar, que está a R$ 5,78." },
-    { "titulo": "Ata do Fed também às 16h", "texto": "Mercado precifica alta de juros em dezembro; tom mais duro sustenta o DXY e pressiona o WDO." },
-    { "titulo": "Nvidia supera previsões e NY sobe", "texto": "Nasdaq futuro +1,10% e VIX −6,95% às 7h30 melhoram o apetite a risco que costuma ajudar o WIN." }
+    {
+      "titulo": "Senado conclui ajuste fiscal",
+      "texto": "Aprovado por 69 a 2, vai à Câmara; tira um risco do DI longo e do dólar, que fechou a R$ 5,86."
+    },
+    {
+      "titulo": "Anthropic estreia na Nasdaq hoje",
+      "texto": "Maior IPO da história leva Nasdaq fut. a +2%; apetite a risco costuma ajudar o WIN."
+    },
+    {
+      "titulo": "Vencimento de opções e véspera de feriado",
+      "texto": "B3 fecha sexta (Consciência Negra); ajuste de posições pode ampliar a oscilação de WIN e WDO."
+    }
   ],
   "termometro": {
     "win": {
       "leitura": "bullish",
-      "motivo": "S&P fut. +0,58%, Nasdaq fut. +1,10% e VIX −6,95% às 7h30 após a Nvidia. Discorda do sinal quantitativo (baixa), puxado pelo Brent −4,14%, queda que a Saxo não confirma (−1%); EWZ −0,29% e fiscal às 16h são o risco."
+      "motivo": "S&P fut. +1,20%, Nasdaq fut. +2,14% e EWZ +0,50% às 7h30, com o fiscal concluído no Senado; sinal quantitativo também de alta. Risco: vencimento de opções e véspera de feriado."
     },
     "wdo": {
-      "leitura": "neutro",
-      "motivo": "Conflito: DXY +0,26% e fiscal em aberto sustentam o dólar, mas o VIX −6,95% e o S&P fut. +0,58% aliviam; sinal quantitativo neutro e Senado e ata do Fed só às 16h."
+      "leitura": "bearish",
+      "motivo": "DXY −0,19% e VIX −9,73% às 7h30, e o fim da votação do ajuste no Senado alivia o prêmio após o dólar a R$ 5,86; sinal quantitativo de baixa. Risco: Fed duro e ajustes antes do feriado."
     }
   },
   "destaques": [
-    { "hora": "9h", "evento": "Pnad Contínua trimestral (IBGE)", "por_que": "Desemprego e renda mexem nas apostas para a Selic e nos vértices curtos do DI." },
-    { "hora": "11h", "evento": "Fala de Dario Durigan (Fazenda)", "por_que": "Sinais sobre o ajuste no dia da votação dos destaques mexem no DI longo." },
-    { "hora": "16h", "evento": "Ata do FOMC (reunião de outubro)", "por_que": "Mercado precifica alta em dezembro; tom mexe nas Treasuries, no DXY e no WDO." },
-    { "hora": "16h", "evento": "Senado vota destaques do ajuste fiscal", "por_que": "Conclusão do PLP 299 é o principal vetor local para dólar e DI." }
+    {
+      "hora": "10h30",
+      "evento": "Pedidos de seguro-desemprego (EUA)",
+      "por_que": "Consenso de 198 mil; emprego firme reforça a alta de juros do Fed e o dólar global."
+    },
+    {
+      "hora": "10h30",
+      "evento": "Índice do Fed da Filadélfia (nov)",
+      "por_que": "Consenso de 20,6; atividade forte mexe nas Treasuries e no WDO."
+    },
+    {
+      "hora": "10h50",
+      "evento": "Fala de Beth Hammack (Fed)",
+      "por_que": "Votante deste ano; tom sobre juros em dezembro mexe no DXY e no DI."
+    },
+    {
+      "hora": "11h25",
+      "evento": "Fala de Philip Jefferson (vice do Fed)",
+      "por_que": "Depois da ata dura, sinais sobre o ritmo das altas mexem no dólar."
+    }
   ],
   "exterior": [
-    { "ativo": "S&P 500 fut.", "variacao": "+0,58%" },
-    { "ativo": "Nasdaq fut.", "variacao": "+1,10%" },
-    { "ativo": "EWZ (Brasil em NY)", "variacao": "−0,29%" },
-    { "ativo": "DXY", "variacao": "+0,26%" },
-    { "ativo": "Brent (jan, Saxo)", "variacao": "−1,0%" },
-    { "ativo": "VIX", "variacao": "−6,95%" }
+    {
+      "ativo": "S&P 500 fut.",
+      "variacao": "+1,20%"
+    },
+    {
+      "ativo": "Nasdaq fut.",
+      "variacao": "+2,14%"
+    },
+    {
+      "ativo": "DXY",
+      "variacao": "−0,19%"
+    },
+    {
+      "ativo": "Brent (InfoMoney, 5h43)",
+      "variacao": "+0,34%"
+    },
+    {
+      "ativo": "Minério (Dalian)",
+      "variacao": "+0,47%"
+    },
+    {
+      "ativo": "VIX",
+      "variacao": "−9,73%"
+    }
   ],
   "noticias": [
     {
-      "titulo": "Nvidia fatura US$ 115,8 bi, supera previsões e futuros de NY sobem",
+      "titulo": "Senado conclui votação do ajuste fiscal por 69 a 2; texto vai à Câmara",
+      "fonte": "Agência Senado",
+      "hora": "qua 20h04",
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/18/senado-completa-votacao-e-ajuste-fiscal-segue-para-a-camara",
+      "por_que": "Os destaques que limitavam o crescimento do gasto e a compensação tributária foram rejeitados; a conclusão tira um foco de incerteza que pressionou dólar e DI.",
+      "impacto": {
+        "win": "alta",
+        "wdo": "baixa",
+        "di": "baixa"
+      }
+    },
+    {
+      "titulo": "Impacto do ajuste cai para cerca de R$ 50 bi em 2027, diz relator",
+      "fonte": "CNN Brasil",
+      "hora": "qua 20h23",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/saiba-como-fica-ajuste-fiscal-com-mudanca-no-senado-impacto-cai-a-r-50-bi/",
+      "por_que": "Segundo Eduardo Braga, o efeito previsto recuou de até R$ 56,1 bi; uma economia menor limita o alívio no prêmio de risco do DI longo."
+    },
+    {
+      "titulo": "Anthropic levanta US$ 81,3 bi no maior IPO da história e futuros de NY sobem",
+      "fonte": "InfoMoney",
+      "hora": "05h43",
+      "url": "https://www.infomoney.com.br/mercados/futuros-de-ny-avancam-com-euforia-em-torno-do-ipo-recorde-da-anthropic/",
+      "por_que": "A euforia com a estreia na Nasdaq vem depois de cinco quedas seguidas do S&P 500 e melhora o apetite a risco que costuma favorecer emergentes.",
+      "impacto": {
+        "win": "alta",
+        "wdo": "baixa"
+      }
+    },
+    {
+      "titulo": "Ata do Fed indica novas altas de juros nos próximos meses",
       "fonte": "Bloomberg (via Swissinfo)",
-      "hora": "ter noite",
-      "url": "https://www.swissinfo.ch/eng/us-stock-futures-jump-after-nvidia-earnings:-markets-wrap/92397458",
-      "por_que": "Projeção de US$ 130 bi para o 4º trimestre, acima dos US$ 125,3 bi esperados, alivia a aversão a risco que derrubou NY por quatro pregões.",
-      "impacto": { "win": "alta", "wdo": "baixa" }
+      "hora": "qua 22h40",
+      "url": "https://www.swissinfo.ch/eng/stocks,-us-futures-rebound-after-nvidia-earnings:-markets-wrap/92397458",
+      "por_que": "Segundo a Bloomberg, quase todos os dirigentes veem mais altas à frente, com a Treasury de 10 anos perto de 5,06%; juro americano alto sustenta o dólar global.",
+      "impacto": {
+        "wdo": "alta",
+        "di": "alta"
+      }
     },
     {
-      "titulo": "Senado adia destaques do ajuste fiscal para hoje, às 16h",
+      "titulo": "Ibovespa cai 1,34% e dólar dispara mais uma vez, a R$ 5,86",
       "fonte": "InfoMoney",
-      "hora": "05h57",
-      "url": "https://www.infomoney.com.br/mercados/ata-fed-nvidia-plp-ajuste-fiscal-18112026/",
-      "por_que": "Alcolumbre adiou a pedido do relator Eduardo Braga por falta de acordo; mudanças no texto podem reduzir a economia de R$ 50 bi a R$ 60 bi prevista para 2027."
-    },
-    {
-      "titulo": "Ibovespa sobe 0,31% e dólar tem quarta alta seguida, a R$ 5,782",
-      "fonte": "InfoMoney",
-      "hora": "ter 18h25",
-      "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17112026/",
-      "por_que": "Recuperação técnica depois da queda de 1,83% na segunda; juros futuros caíram em toda a curva, e o WDOZ26 fechou em −0,15%, a 5.791."
-    },
-    {
-      "titulo": "Mercado precifica alta de juros do Fed em dezembro antes da ata",
-      "fonte": "Bloomberg (via Swissinfo)",
-      "hora": "ter noite",
-      "url": "https://www.swissinfo.ch/eng/us-stock-futures-jump-after-nvidia-earnings:-markets-wrap/92397458",
-      "por_que": "Segundo a Bloomberg, a alta de 0,25 p.p. em 9/12 está toda precificada, com Treasury de 10 anos acima de 5%; ata às 16h pode reforçar ou aliviar a pressão no dólar global.",
-      "impacto": { "wdo": "alta", "di": "alta" }
-    },
-    {
-      "titulo": "Senado aprova MP do Brasil Soberano, com R$ 22,6 bi em crédito",
-      "fonte": "InfoMoney",
-      "hora": "05h57",
-      "url": "https://www.infomoney.com.br/mercados/ata-fed-nvidia-plp-ajuste-fiscal-18112026/",
-      "por_que": "São R$ 13,5 bi do Tesouro e R$ 9,1 bi do BNDES; o texto segue à sanção e entra na conta do risco fiscal que pesa no DI."
+      "hora": "qua",
+      "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18112026/",
+      "por_que": "Bancos e Petrobras puxaram a queda na véspera da conclusão do fiscal; o ponto de partida é de dólar no maior nível desde abril de 2025."
     }
   ],
   "fontes": [
-    { "titulo": "InfoMoney — Ata do Fed, reação ao balanço da Nvidia, votação do ajuste fiscal e mais destaques", "url": "https://www.infomoney.com.br/mercados/ata-fed-nvidia-plp-ajuste-fiscal-18112026/" },
-    { "titulo": "InfoMoney — Ibovespa desidrata durante o dia mas fecha positivo; dólar sobe de novo", "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17112026/" },
-    { "titulo": "Bloomberg (via Swissinfo) — US Stock Futures Jump After Nvidia Earnings: Markets Wrap", "url": "https://www.swissinfo.ch/eng/us-stock-futures-jump-after-nvidia-earnings:-markets-wrap/92397458" },
-    { "titulo": "Saxo — Market Quick Take: Nvidia tries to stabilize after strong earnings (18/11/2026)", "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---nvidia-tries-to-stabilize-after-strong-earnings---18-november-2026-18112026" }
+    {
+      "titulo": "Agência Senado — Senado completa votação, e ajuste fiscal segue para a Câmara",
+      "url": "https://www12.senado.leg.br/noticias/materias/2026/11/18/senado-completa-votacao-e-ajuste-fiscal-segue-para-a-camara"
+    },
+    {
+      "titulo": "CNN Brasil — Senado faz acordo sobre Lei Kandir e conclui votação do PLP do ajuste fiscal",
+      "url": "https://www.cnnbrasil.com.br/politica/senado-faz-acordo-sobre-lei-kandir-e-conclui-votacao-do-plp-ajuste-fiscal/"
+    },
+    {
+      "titulo": "InfoMoney — Anthropic, pacote fiscal, cúpula entre Trump, Xi e Putin e mais destaques desta 5ª",
+      "url": "https://www.infomoney.com.br/mercados/anthropic-pacote-fiscal-cupula-trump-xi-putin-agenda-19112026/"
+    },
+    {
+      "titulo": "InfoMoney — Futuros de NY avançam com euforia em torno do IPO recorde da Anthropic",
+      "url": "https://www.infomoney.com.br/mercados/futuros-de-ny-avancam-com-euforia-em-torno-do-ipo-recorde-da-anthropic/"
+    },
+    {
+      "titulo": "Reuters (via Investing.com) — Nasdaq futures jump as Anthropic's record IPO pricing fuels hopes for strong debut",
+      "url": "https://investing.com/news/stock-market-news/nasdaq-futures-jump-as-anthropics-record-ipo-pricing-fuels-hopes-for-strong-debut-5038156"
+    },
+    {
+      "titulo": "Bloomberg (via Swissinfo) — Markets Wrap, 18/11",
+      "url": "https://www.swissinfo.ch/eng/stocks,-us-futures-rebound-after-nvidia-earnings:-markets-wrap/92397458"
+    }
   ]
 }
