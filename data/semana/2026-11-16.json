@@ -288,7 +288,8 @@
    "nota": "Termômetro semanal do mercado de trabalho americano.",
    "tipo": "seguro-desemprego",
    "anterior": "200 mil",
-   "consenso": "198 mil"
+   "consenso": "198 mil",
+   "resultado": "203 mil"
   },
   {
    "data": "2026-11-19",
@@ -302,7 +303,12 @@
    "nota": "Pesquisa regional da indústria americana.",
    "tipo": "philly-fed",
    "anterior": "20,9",
-   "consenso": "20,6"
+   "consenso": "20,6",
+   "resultado": "6,3",
+   "surpresa": {
+    "direcao": "abaixo",
+    "reacao": "Indústria americana mais fraca que o esperado costuma aliviar os juros dos Treasuries e o dólar global, o que tende a tirar pressão do WDO e dos DIs."
+   }
   },
   {
    "data": "2026-11-19",
