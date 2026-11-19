@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T12:08-03:00",
+  "atualizado_em": "2026-11-19T12:10-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -95,11 +95,11 @@
     ],
     [
      "11:50",
-     168042.0
+     167891.0
     ],
     [
-     "11:53",
-     167997.0
+     "11:55",
+     167894.0
     ]
    ]
   },
@@ -256,11 +256,11 @@
     ],
     [
      "12:05",
-     5.8655
+     5.8685
     ],
     [
-     "12:08",
-     5.8617
+     "12:10",
+     5.8635
     ]
    ]
   },
@@ -608,7 +608,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": -0.85
+    "dolar30": -0.82
    },
    {
     "hora": "11:54",
@@ -1205,7 +1205,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T12:08-03:00",
+ "atualizado_em": "2026-11-19T12:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1220,18 +1220,6 @@
   "Valor"
  ],
  "noticias": [
-  {
-   "titulo": "Dólar hoje sobe e opera próximo de R$ 5,90 após aprovação de projeto fiscal no Senado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcGZ5T0QwdHlHdmZCYmNWWHE5elM5OVNhdHpLaUVpazN5UDRrWlloNVZ2WjdHeENiR1hhN2h0YU94Y0xYc0diY2FJb2dGREZaMFNUcmlPcGNwcWNhcW5hdjZJUzlfcDBGSTA3WjY4MllHTFJVWnNHWnZrNGF2eXlhZ1VfSVIydm1pcjFzVDlNT3B4X1VkbEJ3TTdSWTXSAaIBQVVfeXFMUFNmNHRwVHJLVXdzVV9DY2hQVURjYXFub2ZLUlpmWHlEenJ0aUdtaGtfWWdIYUdPa3V4TmhYYV9LSDBGRFNrZnJ6R1hxc2dXM0hJRm5YdkF3ejNDb0VYTHBCNkh4MkdULTdEWkx5SVVNMnVOMUx3S2tPQVplbHNaSndweGVKWTcxV0tsR1VFRFpDM056bzhzeXRveFFBd1N3Tnh3?oc=5",
-   "publicado": "2026-11-19T11:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
    "fonte": "CNN Brasil",
@@ -1352,6 +1340,19 @@
    "tickers": [
     "B3SA3"
    ]
+  },
+  {
+   "titulo": "Ibovespa sobe com aprovação de pacote fiscal no Senado; dólar se aproxima de R$ 5,90",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5EcVBycVMwTTJhYlBKN0syZkU5ZmdZdnhPVFU4VmdFc2xYZGIybmlxV09qTGR0eVkwamVlb0FOc1g1ME1OZ29ZVU4tdFI5LTRrMmhxZWQ2N01jeEZSRXR5cHhyQXJnVEtfOWJZ?oc=5",
+   "publicado": "2026-11-19T10:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Ibovespa tenta recuperar os 169 mil pontos de olho no fiscal e alta do dólar; 5 coisas para saber antes de investir hoje (19)",
