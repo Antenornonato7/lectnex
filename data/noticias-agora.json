@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T13:38-03:00",
+  "atualizado_em": "2026-11-19T14:08-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -167,11 +167,35 @@
     ],
     [
      "13:20",
-     166708.0
+     166682.0
     ],
     [
-     "13:23",
-     166690.0
+     "13:25",
+     166474.0
+    ],
+    [
+     "13:30",
+     166478.0
+    ],
+    [
+     "13:35",
+     166569.0
+    ],
+    [
+     "13:40",
+     166495.0
+    ],
+    [
+     "13:45",
+     166775.0
+    ],
+    [
+     "13:50",
+     166424.0
+    ],
+    [
+     "13:53",
+     166347.0
     ]
    ]
   },
@@ -400,11 +424,35 @@
     ],
     [
      "13:35",
-     5.9123
+     5.9114
     ],
     [
-     "13:38",
-     5.9102
+     "13:40",
+     5.9023
+    ],
+    [
+     "13:45",
+     5.8974
+    ],
+    [
+     "13:50",
+     5.9012
+    ],
+    [
+     "13:55",
+     5.9082
+    ],
+    [
+     "14:00",
+     5.9117
+    ],
+    [
+     "14:05",
+     5.9127
+    ],
+    [
+     "14:08",
+     5.9172
     ]
    ]
   },
@@ -849,7 +897,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.06,
+    "ibov30": -0.19,
     "dolar30": 0.24
    },
    {
@@ -862,7 +910,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.06,
+    "ibov30": -0.19,
     "dolar30": 0.24
    },
    {
@@ -876,7 +924,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.19,
     "dolar30": 0.24
    },
    {
@@ -890,8 +938,21 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.0,
     "dolar30": 0.06
+   },
+   {
+    "hora": "14:02",
+    "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1554,6 +1615,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+   "publicado": "2026-11-19T14:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1583,7 +1655,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T13:38-03:00",
+ "atualizado_em": "2026-11-19T14:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1591,7 +1663,6 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -1599,14 +1670,48 @@
  ],
  "noticias": [
   {
-   "titulo": "AMD falls on short-seller report of alleged China exposure",
+   "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+   "publicado": "2026-11-19T14:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
    "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-   "publicado": "2026-11-19T13:24-03:00",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
+   "publicado": "2026-11-19T14:01-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "AMD falls on short-seller report of alleged China exposure",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+   "publicado": "2026-11-19T13:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas dos DIs aceleram altas após declarações de Lula sobre área fiscal",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOY2RsUkZXNDNOcjhKTGhBVXp5T3F5VUZNck50dU9pODVIeC1GVTNCNEFEaFlvMTFFVG1pUWRzT1I0RmFLS0RsWUVrbl9IR3NlQzVUcTNlX3ZVTENLLVJkQjZvQ3E0eHpfcjZvYjRQOXY0VVhTOXVSR3dzYVdVTGQwUEpSRl9VbW1RXzR3T1RYM2ZRTEgySjZ2aWZXcjVlTnE0ZE9QLVZaTFJzZVFnNjFMN2ttZm1McE93NG1rSFVhcnBUWFZJZmJsRENR0gHPAUFVX3lxTE10ODM4cDEyZWdUc3EwQV9HeGFwUzlsckk0cW1kcXdOWTVTc2xyQURXSkRCLUswdTBmU1VXMm5LTk9HQWdzOEV2bUlFanhCNUtYeXYtaWNTLUs4Yl9Wa2NBNDJRVHIwVGE4NmNUaVhtcXJaRUpaUTE1cDVQS0tfU0tmbG03UzVqTFFjRVU5WklTVjZ5RnBrT295ZEpZOXpjSjZWQmRvRVZJenpGNGY3MDhvTmJlVGZPX2JLd285eEdBS3lVTERXY3NxYXlLdjMzOA?oc=5",
+   "publicado": "2026-11-19T13:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -1617,18 +1722,6 @@
    "publicado": "2026-11-19T13:23-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
-   "publicado": "2026-11-19T13:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -1727,6 +1820,17 @@
    "tickers": []
   },
   {
+   "titulo": "‘Não é o mercado que deseja o controle fiscal; quem deseja sou eu’, diz Lula",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lula-mercado-controle-fiscal-quem-deseja-sou-eu/",
+   "publicado": "2026-11-19T12:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
@@ -1741,17 +1845,6 @@
    ]
   },
   {
-   "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT1k5UDQwQ0QxMFdfRy1EU0oxcmk4QWMzeUJlMjNNWjhPaFZXT203N0xyRW1jUzlfMk14ejhIdkVmNFp2TkJiZ3hKa0cybXpEODZMUDBjNUJ0SExLd0JXTlVfNGtWSDFPcWJHdnNOUUQwUmdPS29Jdl9pZzdwd19TZmFxQ2dvbV9zV2VJTjRCMng2bWthajdtaGkxNFAzMWMySDE0?oc=5",
-   "publicado": "2026-11-19T11:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "BNDES tem lucro de R$ 20,3 bi até setembro, puxado por venda de ações da Petrobras",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bndes-tem-lucro-de-r-203-bi-ate-setembro-puxado-por-venda-de-acoes-da-petrobras.shtml",
@@ -1763,31 +1856,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Perdas do Ueno Bank se aproximam de US$ 1 bilhão, diz Banco Central do Paraguai",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/perdas-do-ueno-bank-se-aproximam-de-1-bilhao-diz-banco-central-do-paraguai-npr/",
-   "publicado": "2026-11-19T10:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe com aprovação de pacote fiscal no Senado; dólar se aproxima de R$ 5,90",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5EcVBycVMwTTJhYlBKN0syZkU5ZmdZdnhPVFU4VmdFc2xYZGIybmlxV09qTGR0eVkwamVlb0FOc1g1ME1OZ29ZVU4tdFI5LTRrMmhxZWQ2N01jeEZSRXR5cHhyQXJnVEtfOWJZ?oc=5",
-   "publicado": "2026-11-19T10:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
