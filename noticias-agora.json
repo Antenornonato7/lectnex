@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T15:18-03:00",
+  "atualizado_em": "2026-11-19T15:20-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -215,7 +215,7 @@
     ],
     [
      "14:20",
-     166438.0
+     166519.0
     ],
     [
      "14:25",
@@ -247,11 +247,11 @@
     ],
     [
      "15:00",
-     166623.0
+     166569.0
     ],
     [
-     "15:03",
-     166583.0
+     "15:05",
+     166524.0
     ]
    ]
   },
@@ -560,11 +560,11 @@
     ],
     [
      "15:15",
-     5.9135
+     5.9111
     ],
     [
-     "15:18",
-     5.9125
+     "15:20",
+     5.9101
     ]
    ]
   },
@@ -1102,7 +1102,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.08,
     "dolar30": 0.19
    }
   ]
@@ -1839,7 +1839,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T15:18-03:00",
+ "atualizado_em": "2026-11-19T15:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1853,6 +1853,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "AMD dives on short-seller report of alleged China exposure",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+   "publicado": "2026-11-19T15:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Apesar da estreia das ações da Anthropic acima do preço do IPO, Nasdaq cai",
    "fonte": "Money Times",
@@ -1880,18 +1892,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
    "publicado": "2026-11-19T14:01-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "AMD falls on short-seller report of alleged China exposure",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-   "publicado": "2026-11-19T13:53-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
