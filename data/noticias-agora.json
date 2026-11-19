@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T12:08-03:00",
+  "atualizado_em": "2026-11-19T12:38-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -95,11 +95,35 @@
     ],
     [
      "11:50",
-     168042.0
+     167891.0
     ],
     [
-     "11:53",
-     167997.0
+     "11:55",
+     167886.0
+    ],
+    [
+     "12:00",
+     167678.0
+    ],
+    [
+     "12:05",
+     167317.0
+    ],
+    [
+     "12:10",
+     167055.0
+    ],
+    [
+     "12:15",
+     166847.0
+    ],
+    [
+     "12:20",
+     167065.0
+    ],
+    [
+     "12:23",
+     166925.0
     ]
    ]
   },
@@ -256,11 +280,35 @@
     ],
     [
      "12:05",
-     5.8655
+     5.8685
     ],
     [
-     "12:08",
-     5.8617
+     "12:10",
+     5.8821
+    ],
+    [
+     "12:15",
+     5.8797
+    ],
+    [
+     "12:20",
+     5.8941
+    ],
+    [
+     "12:25",
+     5.897
+    ],
+    [
+     "12:30",
+     5.895
+    ],
+    [
+     "12:35",
+     5.8987
+    ],
+    [
+     "12:38",
+     5.8991
     ]
    ]
   },
@@ -607,8 +655,22 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
-    "dolar30": -0.85
+    "ibov30": -0.67,
+    "dolar30": -0.51
+   },
+   {
+    "hora": "11:50",
+    "titulo": "Pedidos semanais de auxílio-desemprego nos EUA têm leve alta",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRDM2OXFEX2ViY1Z5M2dEcGZKUjRhSmljVDZ5TGNrN2dyVEFiY0pRb2Z5dkdqSVZ4NTdUcHZXQm8yQUtzVlduVnpDV1pIRG5YekJkMXVXeGdUYkRrMHNVT0l3dlJRNnVjRjBPb2FtYi1Od2lnZXdvVzVhQVBzU3RlcXA2WGdZd0hfeGQxUWRxdHNzSUs3Z1RBOW8yN25tckhxRTA4SGFFWkdHVjdLRFROM0pvUDF1S2VROVRMSzJn?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.62,
+    "dolar30": -0.7
    },
    {
     "hora": "11:54",
@@ -620,8 +682,37 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": -0.49,
+    "dolar30": -0.46
+   },
+   {
+    "hora": "12:00",
+    "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.34
+   },
+   {
+    "hora": "12:13",
+    "titulo": "Proposta de ajuste fiscal deve passar na Câmara sem alterações substanciais",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/proposta-de-ajuste-fiscal-deve-passar-na-camara-sem-alteracoes-substanciais.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.29
    }
   ]
  },
@@ -1167,6 +1258,18 @@
    ]
   },
   {
+   "titulo": "Pedidos semanais de auxílio-desemprego nos EUA têm leve alta",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRDM2OXFEX2ViY1Z5M2dEcGZKUjRhSmljVDZ5TGNrN2dyVEFiY0pRb2Z5dkdqSVZ4NTdUcHZXQm8yQUtzVlduVnpDV1pIRG5YekJkMXVXeGdUYkRrMHNVT0l3dlJRNnVjRjBPb2FtYi1Od2lnZXdvVzVhQVBzU3RlcXA2WGdZd0hfeGQxUWRxdHNzSUs3Z1RBOW8yN25tckhxRTA4SGFFWkdHVjdLRFROM0pvUDF1S2VROVRMSzJn?oc=5",
+   "publicado": "2026-11-19T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT1k5UDQwQ0QxMFdfRy1EU0oxcmk4QWMzeUJlMjNNWjhPaFZXT203N0xyRW1jUzlfMk14ejhIdkVmNFp2TkJiZ3hKa0cybXpEODZMUDBjNUJ0SExLd0JXTlVfNGtWSDFPcWJHdnNOUUQwUmdPS29Jdl9pZzdwd19TZmFxQ2dvbV9zV2VJTjRCMng2bWthajdtaGkxNFAzMWMySDE0?oc=5",
@@ -1174,6 +1277,31 @@
    "impacto": "alto",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
+   "publicado": "2026-11-19T12:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Proposta de ajuste fiscal deve passar na Câmara sem alterações substanciais",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/proposta-de-ajuste-fiscal-deve-passar-na-camara-sem-alteracoes-substanciais.shtml",
+   "publicado": "2026-11-19T12:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   }
@@ -1205,7 +1333,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T12:08-03:00",
+ "atualizado_em": "2026-11-19T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1221,7 +1349,43 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar hoje sobe e opera próximo de R$ 5,90 após aprovação de projeto fiscal no Senado",
+   "titulo": "Proposta de ajuste fiscal deve passar na Câmara sem alterações substanciais",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/proposta-de-ajuste-fiscal-deve-passar-na-camara-sem-alteracoes-substanciais.shtml",
+   "publicado": "2026-11-19T12:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dow Jones hoje: estreia da Anthropic impulsiona Nasdaq e ações de tecnologia disparam",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGptdmxXZG1aY3J6dURQQUc1bTJURVVDOWNtTFNEV0JmMl94c2tmOG10RlA5ZVB4dzVhSDlUY08yZ2RWYXM2QVJxc3BheV9TQnkxWHk1aGtKT1QyX3FJWXlDNkpqcVBMOXdyQUItbnFuTU9EdmJvbU1Ra1U2Z1pYVzF4NXQ4WFZPTGhEbUtmeEdybWJ0WldMSVNlQVIxSHBVYkFSOEJZV2NCTGN1REp0TEcxT3owakZOWVNIbDFEZm5VUS1VQVBNSGNEUmdScWtIZDlDa09pVXpIWUZzT05VQl9RZ9IB6AFBVV95cUxPRzhNUXc2cDJqbndSN0NOMHV5d1g1dGtieGkyazlPOXVydEZiamxpbmtkMk94aWN1c3JicnZVV1U1QmM0NnFrNG90VmlzZUtjbkdvRFBZbUFCYl9wMm1MZTR6TzNOZ2RKUG0tSUtYdWVzNHdsUGRaUVdWSHlNR0JwMlNwbWRuSVBqMmxhOHlpaFNOYTVHMWM4ME9kZEJUa0l4NzlwS1duNkZxNV9PZzVWdXYtemVZeUt5RExHb1ZvZVZiMm41TUV2REg1bVZFU0lPNEFSUXdBTkRVOVgyaEtfbVFJRFloMHJm?oc=5",
+   "publicado": "2026-11-19T12:11-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
+   "publicado": "2026-11-19T12:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Dólar hoje avança e ultrapassa R$ 5,90 após aprovação de projeto fiscal no Senado",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcGZ5T0QwdHlHdmZCYmNWWHE5elM5OVNhdHpLaUVpazN5UDRrWlloNVZ2WjdHeENiR1hhN2h0YU94Y0xYc0diY2FJb2dGREZaMFNUcmlPcGNwcWNhcW5hdjZJUzlfcDBGSTA3WjY4MllHTFJVWnNHWnZrNGF2eXlhZ1VfSVIydm1pcjFzVDlNT3B4X1VkbEJ3TTdSWTXSAaIBQVVfeXFMUFNmNHRwVHJLVXdzVV9DY2hQVURjYXFub2ZLUlpmWHlEenJ0aUdtaGtfWWdIYUdPa3V4TmhYYV9LSDBGRFNrZnJ6R1hxc2dXM0hJRm5YdkF3ejNDb0VYTHBCNkh4MkdULTdEWkx5SVVNMnVOMUx3S2tPQVplbHNaSndweGVKWTcxV0tsR1VFRFpDM056bzhzeXRveFFBd1N3Tnh3?oc=5",
    "publicado": "2026-11-19T11:54-03:00",
@@ -1271,18 +1435,6 @@
    ]
   },
   {
-   "titulo": "Trump says U.S., China, Russia ‘uniquely positioned’ to discuss reducing nuclear weapons at historic meeting",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
-   "publicado": "2026-11-19T11:05-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Perdas do Ueno Bank se aproximam de US$ 1 bilhão, diz Banco Central do Paraguai",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/perdas-do-ueno-bank-se-aproximam-de-1-bilhao-diz-banco-central-do-paraguai-npr/",
@@ -1330,17 +1482,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dow Jones hoje sobe, Nasdaq dispara com estreia da Anthropic e juros dos EUA chamam atenção",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGptdmxXZG1aY3J6dURQQUc1bTJURVVDOWNtTFNEV0JmMl94c2tmOG10RlA5ZVB4dzVhSDlUY08yZ2RWYXM2QVJxc3BheV9TQnkxWHk1aGtKT1QyX3FJWXlDNkpqcVBMOXdyQUItbnFuTU9EdmJvbU1Ra1U2Z1pYVzF4NXQ4WFZPTGhEbUtmeEdybWJ0WldMSVNlQVIxSHBVYkFSOEJZV2NCTGN1REp0TEcxT3owakZOWVNIbDFEZm5VUS1VQVBNSGNEUmdScWtIZDlDa09pVXpIWUZzT05VQl9RZ9IB6AFBVV95cUxPRzhNUXc2cDJqbndSN0NOMHV5d1g1dGtieGkyazlPOXVydEZiamxpbmtkMk94aWN1c3JicnZVV1U1QmM0NnFrNG90VmlzZUtjbkdvRFBZbUFCYl9wMm1MZTR6TzNOZ2RKUG0tSUtYdWVzNHdsUGRaUVdWSHlNR0JwMlNwbWRuSVBqMmxhOHlpaFNOYTVHMWM4ME9kZEJUa0l4NzlwS1duNkZxNV9PZzVWdXYtemVZeUt5RExHb1ZvZVZiMm41TUV2REg1bVZFU0lPNEFSUXdBTkRVOVgyaEtfbVFJRFloMHJm?oc=5",
-   "publicado": "2026-11-19T10:45-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Anthropic estreia na B3 e permite compra de ações por cerca de R$ 60",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/anthropic-estreia-na-b3-e-permite-compra-de-bdrs-por-cerca-de-r-60.shtml",
@@ -1354,9 +1495,9 @@
    ]
   },
   {
-   "titulo": "Ibovespa tenta recuperar os 169 mil pontos de olho no fiscal e alta do dólar; 5 coisas para saber antes de investir hoje (19)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQXZZb09BSkd4RVFvY0c5cDByMUZlREsxeURacGgtMTFUM2taV3AxYThrd2VPRlY5aTJkeFRFTjBNZ3o1cmJKV2prOGFXRkFZNVl2Rk82bmdBNTJ1eXlXWmJvM1BVR0JmckNZaXlybTkyY2J1UUN3cjhHYzRKdnVOM00zWWhPSzVvWVJxSUFHX181Y1RFR0x0YzE3X0tYSXl4R3lKOUJFRllsUXl4Ym5JclFKUGF5VnJDM1I0YmpUdXNFTC1HbmhVUE5fN0lubWdQQ1pmZzZFdk53UQ?oc=5",
+   "titulo": "Ibovespa sobe com aprovação de pacote fiscal no Senado; dólar se aproxima de R$ 5,90",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5EcVBycVMwTTJhYlBKN0syZkU5ZmdZdnhPVFU4VmdFc2xYZGIybmlxV09qTGR0eVkwamVlb0FOc1g1ME1OZ29ZVU4tdFI5LTRrMmhxZWQ2N01jeEZSRXR5cHhyQXJnVEtfOWJZ?oc=5",
    "publicado": "2026-11-19T10:38-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1367,14 +1508,15 @@
    "tickers": []
   },
   {
-   "titulo": "China, Rússia e EUA planejam ampliar oferta de petróleo refinado, diz agência",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/china-russia-e-eua-planejam-ampliar-oferta-de-petroleo-refinado-diz-agencia.shtml",
-   "publicado": "2026-11-19T10:31-03:00",
-   "impacto": "medio",
+   "titulo": "Ibovespa tenta recuperar os 169 mil pontos de olho no fiscal e alta do dólar; 5 coisas para saber antes de investir hoje (19)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQXZZb09BSkd4RVFvY0c5cDByMUZlREsxeURacGgtMTFUM2taV3AxYThrd2VPRlY5aTJkeFRFTjBNZ3o1cmJKV2prOGFXRkFZNVl2Rk82bmdBNTJ1eXlXWmJvM1BVR0JmckNZaXlybTkyY2J1UUN3cjhHYzRKdnVOM00zWWhPSzVvWVJxSUFHX181Y1RFR0x0YzE3X0tYSXl4R3lKOUJFRllsUXl4Ym5JclFKUGF5VnJDM1I0YmpUdXNFTC1HbmhVUE5fN0lubWdQQ1pmZzZFdk53UQ?oc=5",
+   "publicado": "2026-11-19T10:38-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1401,19 +1543,6 @@
     "WIN"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Itaú BBA rebaixa ações brasileiras e projeta Ibovespa a 195 mil pontos em 2027",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOejl3X1QtMUF6U013TzM2YkN6UklFcWNXd3Q5SEdaOTZyb1ZTZ1NxSkdhMmNPaHJMZ1VJMDIxV3ZWVVdZR2tMU1lDT05VUHVHLW5YV2dLbEMzZmdETXQ1WlFKeUNNWWVZWDdvUXFvUHZhYmZsN0k2TldnZERvMFpCVFg0VUJUWGdtMXRRU1FCaTMzeWRudTdKU3BXTnA1OEZUOC0yWjVhYXFxdkk2QWszYkZCaEFudnJMR1FzYllhR0tZOUtReEhMY2lrcGROQdIB3AFBVV95cUxOZm5FSzlJdWJVSlh2Wkt6NWlnYmo0SXV3aVA5UnhmMHhCVkR3VC13NzVaT3dZNlhYSENrbnEyRE5lbWU4RGl0OFoxY3JJMUx5MWkybnhERzA2d012NmpDbWVOWkdaOHVOS25XaW1VWVpVc2R5aC1JTlNPcGxnT01henN6TXVqaV9jVmN5YVlSRDRqNXJJcHNCWG1vV0pIMzdXSXdOc0J2SFV2aXFWMFVna1l0WW1BeDZvaTJ4MnQwRGdrSnN1QmlaRFJZSjYza0tFY3lIZ1hTejN6Unhh?oc=5",
-   "publicado": "2026-11-19T09:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
   }
  ]
 }
