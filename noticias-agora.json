@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T14:03-03:00",
+  "atualizado_em": "2026-11-19T14:05-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -187,11 +187,15 @@
     ],
     [
      "13:45",
-     166557.0
+     166775.0
     ],
     [
-     "13:48",
-     166520.0
+     "13:50",
+     166713.0
+    ],
+    [
+     "13:51",
+     166707.0
     ]
    ]
   },
@@ -440,11 +444,15 @@
     ],
     [
      "14:00",
-     5.9122
+     5.9117
     ],
     [
-     "14:03",
-     5.9132
+     "14:05",
+     5.9182
+    ],
+    [
+     "14:06",
+     5.9193
     ]
    ]
   },
@@ -932,6 +940,19 @@
     "tickers": [],
     "ibov30": -0.0,
     "dolar30": 0.06
+   },
+   {
+    "hora": "14:02",
+    "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1594,6 +1615,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+   "publicado": "2026-11-19T14:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1623,7 +1655,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T14:03-03:00",
+ "atualizado_em": "2026-11-19T14:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1633,10 +1665,20 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+   "publicado": "2026-11-19T14:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
    "fonte": "CNBC",
@@ -1662,17 +1704,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar segue acima de R$ 5,90 mesmo após BC vender US$ 1 bilhão em leilão extraordinário",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWDVmUFpNcWdDXzVrbW9FWDA1UklMV3A5ZkE5TWVJU1FmdEd1bmNubVh5aV9tU1dZbThkSkx4Q2FQOEV6Wm80bF9BSUtkTkk3cHltcHN2Nm5vR3RHTVZOcC1TRVBLbERxVGMtbEp6UVJ2cVpzRHl3S0wyUHRTZ0tLdzh5MHY5NUpKUmd3SnZhZHZvU1BnQ2JoUnM0RzlKcE43eDJ1NGEwUFRFTFNtd0UwdEJvWVdaZHlwMDYw0gHKAUFVX3lxTE5lWVByb2p6SVVvX1NKZVJFVW05VEV3bm9hZnhXbWlzTzVqV2NyUTRZUXVoYkE3VmI2Q0lvQ0IwZ2I3YjVHN0NSWUhodnc1eDBGeTd3eDczakQxSVFyVVZXUEJyVFZXaUJMR0ZtajYzLVVDcmFfLUxqdlNXUFR5cUVZUnBkQnRVWlY3WEpmVDVxWXZDcnN4My1TbjFmM2IwdUFaU05pSHNpdHZLSGZpUTNBZGRHLVVnUTMtN3dFelM2T2tlTHZIcUI4Wnc?oc=5",
-   "publicado": "2026-11-19T13:23-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar nas alturas: Banco Central intervém em leilão de US$ 1 bilhão",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYTYtcXJiVUM4WnpSX28tZ3ZQUG1PYWNtQl95Y092eGVHTmNRYW02X1Y3WG8yWmNLNHNvdTFGZFpyM2ZvZU9GRDd4VmR5N29TQkhoQ0JmWXhTUDhaZHhRTVIzVTdvMmpOaTRVT29qM2p5ZGxsbGdBem5WRUN4RVluMWFINEJhUWRFVjdCRmV4LWJsR0JCS1Fla0QwSXY?oc=5",
@@ -1680,52 +1711,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros sobem com dólar e exterior, após aprovação do ajuste fiscal",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVGp6Ym85cXVHVTJlSi1hNjNRMUp6ekNuZ1A1SE1RcVFGcnZhUGFnQnRoVlpqNVp2cm5ncWJKeTd6T0NlOG1WRGRxbVJVYUZCNktsUm12aFdkNzg4dUJCNUtabC1TQXRLbWpBVU5xek9KdWowbXIyMUtZVy1CaUZHVEw1TUQ0czdfcVY5eVhsaWUxUXE4NW9EQ25OV0FpaUlpUWFOUjBhRU50em1teDVoTF9qemdvQV9RanVVOVg3RlZrS2s?oc=5",
-   "publicado": "2026-11-19T12:59-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar reduz alta após leilão do BC, mas opera acima de R$ 5,90, maior cotação em 19 meses",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM0RZR3FtdGNiaEZfak1xMHVxVmxWRTJ0TlAtVWxPVk10S2tNXzV6a182V3lLWlBWdk9uVndONmxWSUczZ21sbHdVdTNNQU5CV0hMUzhCaUFFWjc0NmxIMzdlVnpYTkdkcGNJa1ZPdFZIVE01RlRpckU2UXBSTV9acjFMekhMZUhvVFM0MXJjbnRpTjc2d2FxQTlkTDZBdW5UY09VQmctYzZBVmtMdl9RSk1wYmkyQ2t3Uk9uRi1Ea042WFlFZ1RvaFcxcW5lWGNmMkJiVHpsb2c4c1BCOWpwakhLLVU4clFJLXfSAe8BQVVfeXFMTjBRbU93NEhWTnpoU2Y3dnlBSFNaOTNsVGNySWhTWDlRdTQyNVJLSjdHaE9ZY3h1V1doQUR6NE5UTkVxMmF3S0FacHgtNU9RLXR0Q3B1VTJhWkdLWkFoV095VEZfYmdLOGh6Nk1salo2NXg0S2JPb0pQNFR6RVVjbUVvdU9FcUtNeFY3NGVMSGFBYzlOTmViT296d3JjdS1Cc0YtSDVNS2l6V1p0UUJSTkNPRGdoaWpxRk9hdGw3QS1VYjFWUUpUc3M0eDJRSzd6VjAtSkJKa3o1d1BlUjdmUmthMGZpYU55ZVV6YldDaFE?oc=5",
-   "publicado": "2026-11-19T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Rumo aos R$ 6? Dólar rompe os R$ 5,90 hoje; entenda o que impulsiona a moeda",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZ3dKQTVrdl9uS2pEV1UxekpqMWtqQm14OGxWemFGaG8yS0gzYVFoSkpUdndEZHQ4dGVFMGhjYzFvSVRnT0o5cktCV0JlZjU4WUxUWVNWSThqN01ZdG9ZeE1QR28wcGR5VjdsaWh4VGN0aWt0cVlyVk5Mbl9tNzVlYWtLbWIyWnV5Wmp3XzVVSVIyOXNVQmlUZXlQeXUxbnhKTS1jX2xJUW9PZU0?oc=5",
-   "publicado": "2026-11-19T12:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pacote fiscal ‘tímido’ impede avanço do Ibovespa",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ1BmcVZ4UUN2UzR4Wi15Rm5KOThZVm1jYjdVaHVQVVFZUElkb1c3VHhDRGtXY2RlRWVJRG9BSjNybzYxY1hBc0ZoTnNwUDUzX1dqcGdpMjBzUmZDWmtQa2tzZWdnVFN3VGpyZmNFb2ljelk0MG9GUEhCQUtWTnlURkh3MHVoU010c3czSFhB0gGTAUFVX3lxTE5LM3lON1cyUUVHQXhWeTJEUUptSTR5X2h2V2dQNENTUUtjWUYya0x0Z3R4ZDdiOXFPWVN2V2VsdDZiN0VuYVR0OFFDMURyRnF2cVQzNnlqRmNOUFJRZTFLdl8yLXZjU3dBUU13ODdUZHFwSGxyZzZxRWxVaUNBUkxILXNjMUFsZTk5U1hTd0NjLTVHQQ?oc=5",
-   "publicado": "2026-11-19T12:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "DI"
    ],
    "tickers": []
@@ -1742,17 +1727,6 @@
    "tickers": [
     "BBDC4"
    ]
-  },
-  {
-   "titulo": "Dólar hoje chega a zerar após leilão do BC, mas volta a subir e encosta nos R$ 5,90",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcGZ5T0QwdHlHdmZCYmNWWHE5elM5OVNhdHpLaUVpazN5UDRrWlloNVZ2WjdHeENiR1hhN2h0YU94Y0xYc0diY2FJb2dGREZaMFNUcmlPcGNwcWNhcW5hdjZJUzlfcDBGSTA3WjY4MllHTFJVWnNHWnZrNGF2eXlhZ1VfSVIydm1pcjFzVDlNT3B4X1VkbEJ3TTdSWTXSAaIBQVVfeXFMUFNmNHRwVHJLVXdzVV9DY2hQVURjYXFub2ZLUlpmWHlEenJ0aUdtaGtfWWdIYUdPa3V4TmhYYV9LSDBGRFNrZnJ6R1hxc2dXM0hJRm5YdkF3ejNDb0VYTHBCNkh4MkdULTdEWkx5SVVNMnVOMUx3S2tPQVplbHNaSndweGVKWTcxV0tsR1VFRFpDM056bzhzeXRveFFBd1N3Tnh3?oc=5",
-   "publicado": "2026-11-19T12:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "‘Não é o mercado que deseja o controle fiscal; quem deseja sou eu’, diz Lula",
@@ -1773,17 +1747,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dow Jones hoje: estreia da Anthropic impulsiona Nasdaq e ações de tecnologia disparam",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGptdmxXZG1aY3J6dURQQUc1bTJURVVDOWNtTFNEV0JmMl94c2tmOG10RlA5ZVB4dzVhSDlUY08yZ2RWYXM2QVJxc3BheV9TQnkxWHk1aGtKT1QyX3FJWXlDNkpqcVBMOXdyQUItbnFuTU9EdmJvbU1Ra1U2Z1pYVzF4NXQ4WFZPTGhEbUtmeEdybWJ0WldMSVNlQVIxSHBVYkFSOEJZV2NCTGN1REp0TEcxT3owakZOWVNIbDFEZm5VUS1VQVBNSGNEUmdScWtIZDlDa09pVXpIWUZzT05VQl9RZ9IB6AFBVV95cUxPRzhNUXc2cDJqbndSN0NOMHV5d1g1dGtieGkyazlPOXVydEZiamxpbmtkMk94aWN1c3JicnZVV1U1QmM0NnFrNG90VmlzZUtjbkdvRFBZbUFCYl9wMm1MZTR6TzNOZ2RKUG0tSUtYdWVzNHdsUGRaUVdWSHlNR0JwMlNwbWRuSVBqMmxhOHlpaFNOYTVHMWM4ME9kZEJUa0l4NzlwS1duNkZxNV9PZzVWdXYtemVZeUt5RExHb1ZvZVZiMm41TUV2REg1bVZFU0lPNEFSUXdBTkRVOVgyaEtfbVFJRFloMHJm?oc=5",
-   "publicado": "2026-11-19T12:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
