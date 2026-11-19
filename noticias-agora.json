@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T11:18-03:00",
+  "atualizado_em": "2026-11-19T11:20-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -55,11 +55,11 @@
     ],
     [
      "11:00",
-     167783.0
+     167768.0
     ],
     [
-     "11:03",
-     167669.0
+     "11:05",
+     167950.0
     ]
    ]
   },
@@ -176,11 +176,11 @@
     ],
     [
      "11:15",
-     5.8775
+     5.8926
     ],
     [
-     "11:18",
-     5.8824
+     "11:20",
+     5.8945
     ]
    ]
   },
@@ -397,7 +397,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.33,
+    "ibov30": -0.16,
     "dolar30": 0.2
    },
    {
@@ -411,7 +411,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.16,
     "dolar30": 0.2
    },
    {
@@ -425,7 +425,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.26,
     "dolar30": 0.21
    },
    {
@@ -454,7 +454,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": 0.26
    },
    {
     "hora": "10:48",
@@ -469,7 +469,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": 0.26
    },
    {
     "hora": "10:56",
@@ -1042,7 +1042,7 @@
    "em": "2026-11-19T13:40:26+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T11:18-03:00",
+ "atualizado_em": "2026-11-19T11:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1126,6 +1126,17 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dow Jones hoje sobe, Nasdaq dispara com estreia da Anthropic e juros dos EUA chamam atenção",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGptdmxXZG1aY3J6dURQQUc1bTJURVVDOWNtTFNEV0JmMl94c2tmOG10RlA5ZVB4dzVhSDlUY08yZ2RWYXM2QVJxc3BheV9TQnkxWHk1aGtKT1QyX3FJWXlDNkpqcVBMOXdyQUItbnFuTU9EdmJvbU1Ra1U2Z1pYVzF4NXQ4WFZPTGhEbUtmeEdybWJ0WldMSVNlQVIxSHBVYkFSOEJZV2NCTGN1REp0TEcxT3owakZOWVNIbDFEZm5VUS1VQVBNSGNEUmdScWtIZDlDa09pVXpIWUZzT05VQl9RZ9IB6AFBVV95cUxPRzhNUXc2cDJqbndSN0NOMHV5d1g1dGtieGkyazlPOXVydEZiamxpbmtkMk94aWN1c3JicnZVV1U1QmM0NnFrNG90VmlzZUtjbkdvRFBZbUFCYl9wMm1MZTR6TzNOZ2RKUG0tSUtYdWVzNHdsUGRaUVdWSHlNR0JwMlNwbWRuSVBqMmxhOHlpaFNOYTVHMWM4ME9kZEJUa0l4NzlwS1duNkZxNV9PZzVWdXYtemVZeUt5RExHb1ZvZVZiMm41TUV2REg1bVZFU0lPNEFSUXdBTkRVOVgyaEtfbVFJRFloMHJm?oc=5",
+   "publicado": "2026-11-19T10:45-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -1232,19 +1243,6 @@
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWHR3Z1hOTUV2eHZYU2F4OWRrTGcwZ3ZxaEV5aEhDZVFWV0Q3Z0E3Rkx5cnlRVF9uQnpOVW1IcEpNdUo3MS1Ra0RuSkZjUTZhWmt4elk4WEkybkZadzZoc3NRYXU4QjBDcWZGd0RBWnc1bUx6UUNYUU10by1MZDdRaGtwRVc3UklUOGVRRmc4VXFWTVNVdmJBYzZ3T3dRdVRvX1lzc1o5b3NWT0tXVzB4QXFVTjRRd3lf?oc=5",
    "publicado": "2026-11-19T09:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe com mercado reagindo à pauta fiscal e IPO da Anthropic nos EUA",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOENyQ3ZkUGVqQ2JBc0VwZWZWam45QmIwVGVmTjVMYTF1cS1saldIVnRJY0g4UXNYVm1tZURwUFh2UXFXTzJRSGxwX1F1TER4aER4UlluOUJiWHFVczg2czhYUVZZR0pKNG15bS1IcWNXX2lRVWctNkxxczRCdlFKRGQ0X054MWdkd1ZNaW1QdFUzMUJMcGdXalB2dUV2M0pBRU1yQjZn?oc=5",
-   "publicado": "2026-11-19T09:18-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
