@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T11:30-03:00",
+  "atualizado_em": "2026-11-19T11:33-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -67,7 +67,11 @@
     ],
     [
      "11:15",
-     168387.0
+     168173.0
+    ],
+    [
+     "11:18",
+     168249.0
     ]
    ]
   },
@@ -196,7 +200,11 @@
     ],
     [
      "11:30",
-     5.8995
+     5.9026
+    ],
+    [
+     "11:33",
+     5.9035
     ]
    ]
   },
@@ -469,7 +477,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.05,
+    "ibov30": -0.08,
     "dolar30": 0.26
    },
    {
@@ -484,7 +492,7 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": 0.05,
+    "ibov30": -0.08,
     "dolar30": 0.26
    },
    {
@@ -515,7 +523,7 @@
      "VALE3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.29
    }
   ]
  },
@@ -1058,7 +1066,7 @@
    "em": "2026-11-19T13:40:26+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T11:30-03:00",
+ "atualizado_em": "2026-11-19T11:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1066,6 +1074,7 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -1170,9 +1179,9 @@
    ]
   },
   {
-   "titulo": "Ibovespa tenta recuperar os 169 mil pontos de olho no fiscal e alta do dólar; 5 coisas para saber antes de investir hoje (19)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQXZZb09BSkd4RVFvY0c5cDByMUZlREsxeURacGgtMTFUM2taV3AxYThrd2VPRlY5aTJkeFRFTjBNZ3o1cmJKV2prOGFXRkFZNVl2Rk82bmdBNTJ1eXlXWmJvM1BVR0JmckNZaXlybTkyY2J1UUN3cjhHYzRKdnVOM00zWWhPSzVvWVJxSUFHX181Y1RFR0x0YzE3X0tYSXl4R3lKOUJFRllsUXl4Ym5JclFKUGF5VnJDM1I0YmpUdXNFTC1HbmhVUE5fN0lubWdQQ1pmZzZFdk53UQ?oc=5",
+   "titulo": "Ibovespa sobe com aprovação de pacote fiscal no Senado; dólar se aproxima de R$ 5,90",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5EcVBycVMwTTJhYlBKN0syZkU5ZmdZdnhPVFU4VmdFc2xYZGIybmlxV09qTGR0eVkwamVlb0FOc1g1ME1OZ29ZVU4tdFI5LTRrMmhxZWQ2N01jeEZSRXR5cHhyQXJnVEtfOWJZ?oc=5",
    "publicado": "2026-11-19T10:38-03:00",
    "impacto": "alto",
    "ativos": [
@@ -1183,14 +1192,15 @@
    "tickers": []
   },
   {
-   "titulo": "China, Rússia e EUA planejam ampliar oferta de petróleo refinado, diz agência",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/china-russia-e-eua-planejam-ampliar-oferta-de-petroleo-refinado-diz-agencia.shtml",
-   "publicado": "2026-11-19T10:31-03:00",
-   "impacto": "medio",
+   "titulo": "Ibovespa tenta recuperar os 169 mil pontos de olho no fiscal e alta do dólar; 5 coisas para saber antes de investir hoje (19)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQXZZb09BSkd4RVFvY0c5cDByMUZlREsxeURacGgtMTFUM2taV3AxYThrd2VPRlY5aTJkeFRFTjBNZ3o1cmJKV2prOGFXRkFZNVl2Rk82bmdBNTJ1eXlXWmJvM1BVR0JmckNZaXlybTkyY2J1UUN3cjhHYzRKdnVOM00zWWhPSzVvWVJxSUFHX181Y1RFR0x0YzE3X0tYSXl4R3lKOUJFRllsUXl4Ym5JclFKUGF5VnJDM1I0YmpUdXNFTC1HbmhVUE5fN0lubWdQQ1pmZzZFdk53UQ?oc=5",
+   "publicado": "2026-11-19T10:38-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1206,18 +1216,6 @@
    "tickers": [
     "BBAS3"
    ]
-  },
-  {
-   "titulo": "Dólar hoje sobe e opera próximo de R$ 5,90 após aprovação de projeto fiscal no Senado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcGZ5T0QwdHlHdmZCYmNWWHE5elM5OVNhdHpLaUVpazN5UDRrWlloNVZ2WjdHeENiR1hhN2h0YU94Y0xYc0diY2FJb2dGREZaMFNUcmlPcGNwcWNhcW5hdjZJUzlfcDBGSTA3WjY4MllHTFJVWnNHWnZrNGF2eXlhZ1VfSVIydm1pcjFzVDlNT3B4X1VkbEJ3TTdSWTXSAaIBQVVfeXFMUFNmNHRwVHJLVXdzVV9DY2hQVURjYXFub2ZLUlpmWHlEenJ0aUdtaGtfWWdIYUdPa3V4TmhYYV9LSDBGRFNrZnJ6R1hxc2dXM0hJRm5YdkF3ejNDb0VYTHBCNkh4MkdULTdEWkx5SVVNMnVOMUx3S2tPQVplbHNaSndweGVKWTcxV0tsR1VFRFpDM056bzhzeXRveFFBd1N3Tnh3?oc=5",
-   "publicado": "2026-11-19T09:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "DIs sobem com dólar e exterior, apesar de aprovação de ajuste fiscal no Senado",
@@ -1263,6 +1261,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Itaú BBA rebaixa ações brasileiras e projeta Ibovespa a 195 mil pontos em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOejl3X1QtMUF6U013TzM2YkN6UklFcWNXd3Q5SEdaOTZyb1ZTZ1NxSkdhMmNPaHJMZ1VJMDIxV3ZWVVdZR2tMU1lDT05VUHVHLW5YV2dLbEMzZmdETXQ1WlFKeUNNWWVZWDdvUXFvUHZhYmZsN0k2TldnZERvMFpCVFg0VUJUWGdtMXRRU1FCaTMzeWRudTdKU3BXTnA1OEZUOC0yWjVhYXFxdkk2QWszYkZCaEFudnJMR1FzYllhR0tZOUtReEhMY2lrcGROQdIB3AFBVV95cUxOZm5FSzlJdWJVSlh2Wkt6NWlnYmo0SXV3aVA5UnhmMHhCVkR3VC13NzVaT3dZNlhYSENrbnEyRE5lbWU4RGl0OFoxY3JJMUx5MWkybnhERzA2d012NmpDbWVOWkdaOHVOS25XaW1VWVpVc2R5aC1JTlNPcGxnT01henN6TXVqaV9jVmN5YVlSRDRqNXJJcHNCWG1vV0pIMzdXSXdOc0J2SFV2aXFWMFVna1l0WW1BeDZvaTJ4MnQwRGdrSnN1QmlaRFJZSjYza0tFY3lIZ1hTejN6Unhh?oc=5",
+   "publicado": "2026-11-19T09:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
   }
  ]
 }
