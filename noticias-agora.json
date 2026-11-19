@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T11:13-03:00",
+  "atualizado_em": "2026-11-19T11:15-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -51,11 +51,11 @@
     ],
     [
      "10:55",
-     168028.0
+     167987.0
     ],
     [
-     "10:58",
-     167970.0
+     "11:00",
+     167832.0
     ]
    ]
   },
@@ -168,11 +168,11 @@
     ],
     [
      "11:10",
-     5.893
+     5.8735
     ],
     [
-     "11:13",
-     5.8929
+     "11:15",
+     5.8693
     ]
    ]
   },
@@ -433,7 +433,20 @@
      "B3SA3"
     ],
     "ibov30": null,
-    "dolar30": 0.32
+    "dolar30": -0.01
+   },
+   {
+    "hora": "10:46",
+    "titulo": "Ajuste fiscal, amarras de Lula e soluções mágicas",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/fernando-dantas/ajuste-fiscal-amarras-de-lula-e-solucoes-magicas/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.14
    },
    {
     "hora": "10:48",
@@ -448,7 +461,21 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": -0.14
+   },
+   {
+    "hora": "10:56",
+    "titulo": "Perdas do Ueno Bank se aproximam de US$ 1 bilhão, diz Banco Central do Paraguai",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/perdas-do-ueno-bank-se-aproximam-de-1-bilhao-diz-banco-central-do-paraguai-npr/",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    },
    {
     "hora": "11:06",
@@ -935,6 +962,17 @@
    ]
   },
   {
+   "titulo": "Ajuste fiscal, amarras de Lula e soluções mágicas",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/fernando-dantas/ajuste-fiscal-amarras-de-lula-e-solucoes-magicas/",
+   "publicado": "2026-11-19T10:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa pode subir 20%, mas Itaú BBA não vê motivos para comprar; banco rebaixa bolsa para neutra",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMGFubFowSlYwSXBNcTBvRGh5OW8tc0NMUzBKN3p2d1lpN05lQWxaN0VLVDVNdExNMXhJeVJ3ZEJuTEhLSjQ2WG5Dcm5pR1dUYXBpWGRsc3BseHlxNzhKdEphUWVxMmdtTE5qVDA1RFRDeUF0UlRVY0xBTGg1SkVVZWVtdWVzYXRMeVlUUkh2OG1ZWG1xZ2RCNXlzQ1ZPclB0cG5ZOHdaNEl4N3NwWVpHa1FrS2hjNU53THBvR18xWGEwTDNwN2ZLSHd3UQ?oc=5",
@@ -946,6 +984,18 @@
    "tickers": [
     "ITUB4"
    ]
+  },
+  {
+   "titulo": "Perdas do Ueno Bank se aproximam de US$ 1 bilhão, diz Banco Central do Paraguai",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/perdas-do-ueno-bank-se-aproximam-de-1-bilhao-diz-banco-central-do-paraguai-npr/",
+   "publicado": "2026-11-19T10:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "É tarde demais para a Vale (VALE3)? Por que o BTG ainda não rebaixou a recomendação para o papel",
@@ -984,7 +1034,7 @@
    "em": "2026-11-19T13:40:26+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T11:13-03:00",
+ "atualizado_em": "2026-11-19T11:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1025,6 +1075,29 @@
    "tickers": []
   },
   {
+   "titulo": "Perdas do Ueno Bank se aproximam de US$ 1 bilhão, diz Banco Central do Paraguai",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/perdas-do-ueno-bank-se-aproximam-de-1-bilhao-diz-banco-central-do-paraguai-npr/",
+   "publicado": "2026-11-19T10:56-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar dispara e bate máxima a R$ 5,91, maior cotação em 19 meses",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM0RZR3FtdGNiaEZfak1xMHVxVmxWRTJ0TlAtVWxPVk10S2tNXzV6a182V3lLWlBWdk9uVndONmxWSUczZ21sbHdVdTNNQU5CV0hMUzhCaUFFWjc0NmxIMzdlVnpYTkdkcGNJa1ZPdFZIVE01RlRpckU2UXBSTV9acjFMekhMZUhvVFM0MXJjbnRpTjc2d2FxQTlkTDZBdW5UY09VQmctYzZBVmtMdl9RSk1wYmkyQ2t3Uk9uRi1Ea042WFlFZ1RvaFcxcW5lWGNmMkJiVHpsb2c4c1BCOWpwakhLLVU4clFJLXfSAe8BQVVfeXFMTjBRbU93NEhWTnpoU2Y3dnlBSFNaOTNsVGNySWhTWDlRdTQyNVJLSjdHaE9ZY3h1V1doQUR6NE5UTkVxMmF3S0FacHgtNU9RLXR0Q3B1VTJhWkdLWkFoV095VEZfYmdLOGh6Nk1salo2NXg0S2JPb0pQNFR6RVVjbUVvdU9FcUtNeFY3NGVMSGFBYzlOTmViT296d3JjdS1Cc0YtSDVNS2l6V1p0UUJSTkNPRGdoaWpxRk9hdGw3QS1VYjFWUUpUc3M0eDJRSzd6VjAtSkJKa3o1d1BlUjdmUmthMGZpYU55ZVV6YldDaFE?oc=5",
+   "publicado": "2026-11-19T10:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa pode subir 20%, mas Itaú BBA não vê motivos para comprar; banco rebaixa bolsa para neutra",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMGFubFowSlYwSXBNcTBvRGh5OW8tc0NMUzBKN3p2d1lpN05lQWxaN0VLVDVNdExNMXhJeVJ3ZEJuTEhLSjQ2WG5Dcm5pR1dUYXBpWGRsc3BseHlxNzhKdEphUWVxMmdtTE5qVDA1RFRDeUF0UlRVY0xBTGg1SkVVZWVtdWVzYXRMeVlUUkh2OG1ZWG1xZ2RCNXlzQ1ZPclB0cG5ZOHdaNEl4N3NwWVpHa1FrS2hjNU53THBvR18xWGEwTDNwN2ZLSHd3UQ?oc=5",
@@ -1036,6 +1109,17 @@
    "tickers": [
     "ITUB4"
    ]
+  },
+  {
+   "titulo": "Ajuste fiscal, amarras de Lula e soluções mágicas",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/fernando-dantas/ajuste-fiscal-amarras-de-lula-e-solucoes-magicas/",
+   "publicado": "2026-11-19T10:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Anthropic estreia na B3 e permite compra de ações por cerca de R$ 60",
@@ -1058,18 +1142,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar disparada e chega a R$ 5,90 após aprovação de ajuste fiscal no Senado",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM0RZR3FtdGNiaEZfak1xMHVxVmxWRTJ0TlAtVWxPVk10S2tNXzV6a182V3lLWlBWdk9uVndONmxWSUczZ21sbHdVdTNNQU5CV0hMUzhCaUFFWjc0NmxIMzdlVnpYTkdkcGNJa1ZPdFZIVE01RlRpckU2UXBSTV9acjFMekhMZUhvVFM0MXJjbnRpTjc2d2FxQTlkTDZBdW5UY09VQmctYzZBVmtMdl9RSk1wYmkyQ2t3Uk9uRi1Ea042WFlFZ1RvaFcxcW5lWGNmMkJiVHpsb2c4c1BCOWpwakhLLVU4clFJLXfSAe8BQVVfeXFMTjBRbU93NEhWTnpoU2Y3dnlBSFNaOTNsVGNySWhTWDlRdTQyNVJLSjdHaE9ZY3h1V1doQUR6NE5UTkVxMmF3S0FacHgtNU9RLXR0Q3B1VTJhWkdLWkFoV095VEZfYmdLOGh6Nk1salo2NXg0S2JPb0pQNFR6RVVjbUVvdU9FcUtNeFY3NGVMSGFBYzlOTmViT296d3JjdS1Cc0YtSDVNS2l6V1p0UUJSTkNPRGdoaWpxRk9hdGw3QS1VYjFWUUpUc3M0eDJRSzd6VjAtSkJKa3o1d1BlUjdmUmthMGZpYU55ZVV6YldDaFE?oc=5",
-   "publicado": "2026-11-19T10:39-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
@@ -1113,23 +1185,25 @@
    ]
   },
   {
-   "titulo": "Family offices move more money into stocks, hedge AI risk, according to CNBC Family Office Portfolio Tracker",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/19/family-offices-moved-more-money-into-stocks-but-hedged-ai-risk.html",
-   "publicado": "2026-11-19T09:46-03:00",
-   "impacto": "medio",
+   "titulo": "Dólar hoje sobe e opera próximo de R$ 5,90 após aprovação de projeto fiscal no Senado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcGZ5T0QwdHlHdmZCYmNWWHE5elM5OVNhdHpLaUVpazN5UDRrWlloNVZ2WjdHeENiR1hhN2h0YU94Y0xYc0diY2FJb2dGREZaMFNUcmlPcGNwcWNhcW5hdjZJUzlfcDBGSTA3WjY4MllHTFJVWnNHWnZrNGF2eXlhZ1VfSVIydm1pcjFzVDlNT3B4X1VkbEJ3TTdSWTXSAaIBQVVfeXFMUFNmNHRwVHJLVXdzVV9DY2hQVURjYXFub2ZLUlpmWHlEenJ0aUdtaGtfWWdIYUdPa3V4TmhYYV9LSDBGRFNrZnJ6R1hxc2dXM0hJRm5YdkF3ejNDb0VYTHBCNkh4MkdULTdEWkx5SVVNMnVOMUx3S2tPQVplbHNaSndweGVKWTcxV0tsR1VFRFpDM056bzhzeXRveFFBd1N3Tnh3?oc=5",
+   "publicado": "2026-11-19T09:54-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
   {
-   "titulo": "Juros futuros avançam de olho em ajuste fiscal e nomes para Fazenda",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVkNPdG9VZlczbnB4RURCT2FZc24zNHpacmk4S1ZvR1RJMEt6NzcwT2VOd1hBLXFUU0lBMVpJNFRZWlZucnJoUTY0ZnY2MjFvZUFndlV1ZWsyY2Z2Y3VuTzFhTFd4bHFIanRua1Vndkh0ZG9tTkh4X2lHcXVGVF95ZUcwVkRpcjhoTjBXQlhfaU8zQWFyeldWWkk5akhGbVJSandFb19LaUh2NTloUDdBS2pFMGd2blJzRXQwV1JBcDNjLUnSAdIBQVVfeXFMT0pfQWlnQ3BBanptRG1RVElsQ2JnUGF5QlVvczltWWgyREVRRDdtSU1MZDE4YzhfLXhuZ21DdjN4YTVtR3lZYlIwTk9UclFod0lOM194dmw2dWw3UUhnQnhwM29neGh1d3poWU9tMlo1T0gyRE11dDRwSDktOHpHOFdmM21MR3JZaUhDRVAwTkVfWDJlUGx0YmF4a0h5eDlfZkZRb0NYX1FYaXQtblp3VFpwOXZzVmFLVHJLbUthekFUX2pKRmdBcDZDSWl5UlFldUdR?oc=5",
-   "publicado": "2026-11-19T09:39-03:00",
-   "impacto": "medio",
+   "titulo": "DIs sobem com dólar e exterior, apesar de aprovação de ajuste fiscal no Senado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOY2RsUkZXNDNOcjhKTGhBVXp5T3F5VUZNck50dU9pODVIeC1GVTNCNEFEaFlvMTFFVG1pUWRzT1I0RmFLS0RsWUVrbl9IR3NlQzVUcTNlX3ZVTENLLVJkQjZvQ3E0eHpfcjZvYjRQOXY0VVhTOXVSR3dzYVdVTGQwUEpSRl9VbW1RXzR3T1RYM2ZRTEgySjZ2aWZXcjVlTnE0ZE9QLVZaTFJzZVFnNjFMN2ttZm1McE93NG1rSFVhcnBUWFZJZmJsRENR0gHPAUFVX3lxTE10ODM4cDEyZWdUc3EwQV9HeGFwUzlsckk0cW1kcXdOWTVTc2xyQURXSkRCLUswdTBmU1VXMm5LTk9HQWdzOEV2bUlFanhCNUtYeXYtaWNTLUs4Yl9Wa2NBNDJRVHIwVGE4NmNUaVhtcXJaRUpaUTE1cDVQS0tfU0tmbG03UzVqTFFjRVU5WklTVjZ5RnBrT295ZEpZOXpjSjZWQmRvRVZJenpGNGY3MDhvTmJlVGZPX2JLd285eEdBS3lVTERXY3NxYXlLdjMzOA?oc=5",
+   "publicado": "2026-11-19T09:48-03:00",
+   "impacto": "alto",
    "ativos": [
+    "WDO",
     "DI"
    ],
    "tickers": []
@@ -1159,19 +1233,6 @@
    "tickers": []
   },
   {
-   "titulo": "Itaú BBA rebaixa ações brasileiras e projeta Ibovespa a 195 mil pontos em 2027",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOejl3X1QtMUF6U013TzM2YkN6UklFcWNXd3Q5SEdaOTZyb1ZTZ1NxSkdhMmNPaHJMZ1VJMDIxV3ZWVVdZR2tMU1lDT05VUHVHLW5YV2dLbEMzZmdETXQ1WlFKeUNNWWVZWDdvUXFvUHZhYmZsN0k2TldnZERvMFpCVFg0VUJUWGdtMXRRU1FCaTMzeWRudTdKU3BXTnA1OEZUOC0yWjVhYXFxdkk2QWszYkZCaEFudnJMR1FzYllhR0tZOUtReEhMY2lrcGROQdIB3AFBVV95cUxOZm5FSzlJdWJVSlh2Wkt6NWlnYmo0SXV3aVA5UnhmMHhCVkR3VC13NzVaT3dZNlhYSENrbnEyRE5lbWU4RGl0OFoxY3JJMUx5MWkybnhERzA2d012NmpDbWVOWkdaOHVOS25XaW1VWVpVc2R5aC1JTlNPcGxnT01henN6TXVqaV9jVmN5YVlSRDRqNXJJcHNCWG1vV0pIMzdXSXdOc0J2SFV2aXFWMFVna1l0WW1BeDZvaTJ4MnQwRGdrSnN1QmlaRFJZSjYza0tFY3lIZ1hTejN6Unhh?oc=5",
-   "publicado": "2026-11-19T09:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
-  {
    "titulo": "Dólar sobe com mercado reagindo à pauta fiscal e IPO da Anthropic nos EUA",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOENyQ3ZkUGVqQ2JBc0VwZWZWam45QmIwVGVmTjVMYTF1cS1saldIVnRJY0g4UXNYVm1tZURwUFh2UXFXTzJRSGxwX1F1TER4aER4UlluOUJiWHFVczg2czhYUVZZR0pKNG15bS1IcWNXX2lRVWctNkxxczRCdlFKRGQ0X054MWdkd1ZNaW1QdFUzMUJMcGdXalB2dUV2M0pBRU1yQjZn?oc=5",
@@ -1180,18 +1241,6 @@
    "ativos": [
     "WIN",
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa sobe de olho no ajuste fiscal; veja os destaques desta quinta-feira (19)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OWUVWNEN5VmYxazRpeDBhWXhiMVNQNjV0QjFFT2tFUzJIdzJraWZZd254NXA5NDl4Qk9Kclh1SDZPelZLZnBXQnJoLVRnZFYyM0pJU0V3TFhLZk9nbXVEdkFXUDVQN29I?oc=5",
-   "publicado": "2026-11-19T09:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "DI"
    ],
    "tickers": []
