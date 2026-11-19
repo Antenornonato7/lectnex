@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T12:15-03:00",
+  "atualizado_em": "2026-11-19T12:18-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -103,11 +103,11 @@
     ],
     [
      "12:00",
-     167777.0
+     167893.0
     ],
     [
-     "12:01",
-     167887.0
+     "12:03",
+     167745.0
     ]
    ]
   },
@@ -272,11 +272,11 @@
     ],
     [
      "12:15",
-     5.879
+     5.8747
     ],
     [
-     "12:16",
-     5.8787
+     "12:18",
+     5.8762
     ]
    ]
   },
@@ -638,7 +638,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.71
+    "dolar30": -0.79
    },
    {
     "hora": "11:54",
@@ -666,6 +666,19 @@
     "tickers": [
      "BBDC4"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:13",
+    "titulo": "Proposta de ajuste fiscal deve passar na Câmara sem alterações substanciais",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/proposta-de-ajuste-fiscal-deve-passar-na-camara-sem-alteracoes-substanciais.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1248,6 +1261,17 @@
    "tickers": [
     "BBDC4"
    ]
+  },
+  {
+   "titulo": "Proposta de ajuste fiscal deve passar na Câmara sem alterações substanciais",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/proposta-de-ajuste-fiscal-deve-passar-na-camara-sem-alteracoes-substanciais.shtml",
+   "publicado": "2026-11-19T12:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1277,7 +1301,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T12:15-03:00",
+ "atualizado_em": "2026-11-19T12:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1292,6 +1316,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Proposta de ajuste fiscal deve passar na Câmara sem alterações substanciais",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/proposta-de-ajuste-fiscal-deve-passar-na-camara-sem-alteracoes-substanciais.shtml",
+   "publicado": "2026-11-19T12:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
    "fonte": "Estadão",
@@ -1355,18 +1390,6 @@
     "BPAC11",
     "VALE3"
    ]
-  },
-  {
-   "titulo": "Trump says U.S., China, Russia ‘uniquely positioned’ to discuss reducing nuclear weapons at historic meeting",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
-   "publicado": "2026-11-19T11:05-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Perdas do Ueno Bank se aproximam de US$ 1 bilhão, diz Banco Central do Paraguai",
