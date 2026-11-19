@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T13:25-03:00",
+  "atualizado_em": "2026-11-19T13:28-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -159,7 +159,11 @@
     ],
     [
      "13:10",
-     166604.0
+     166590.0
+    ],
+    [
+     "13:13",
+     166622.0
     ]
    ]
   },
@@ -380,7 +384,11 @@
     ],
     [
      "13:25",
-     5.9233
+     5.9219
+    ],
+    [
+     "13:28",
+     5.923
     ]
    ]
   },
@@ -811,7 +819,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": -0.25,
+    "ibov30": -0.26,
     "dolar30": 0.18
    },
    {
@@ -826,7 +834,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": 0.24
    },
    {
     "hora": "12:57",
@@ -839,7 +847,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": 0.24
    },
    {
     "hora": "12:59",
@@ -853,7 +861,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": 0.24
    },
    {
     "hora": "13:04",
@@ -1559,7 +1567,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T13:25-03:00",
+ "atualizado_em": "2026-11-19T13:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1574,6 +1582,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "AMD falls on short-seller report of alleged China exposure",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+   "publicado": "2026-11-19T13:24-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
    "fonte": "CNBC",
@@ -1687,17 +1707,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dow Jones hoje: estreia da Anthropic impulsiona Nasdaq e ações de tecnologia disparam",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGptdmxXZG1aY3J6dURQQUc1bTJURVVDOWNtTFNEV0JmMl94c2tmOG10RlA5ZVB4dzVhSDlUY08yZ2RWYXM2QVJxc3BheV9TQnkxWHk1aGtKT1QyX3FJWXlDNkpqcVBMOXdyQUItbnFuTU9EdmJvbU1Ra1U2Z1pYVzF4NXQ4WFZPTGhEbUtmeEdybWJ0WldMSVNlQVIxSHBVYkFSOEJZV2NCTGN1REp0TEcxT3owakZOWVNIbDFEZm5VUS1VQVBNSGNEUmdScWtIZDlDa09pVXpIWUZzT05VQl9RZ9IB6AFBVV95cUxPRzhNUXc2cDJqbndSN0NOMHV5d1g1dGtieGkyazlPOXVydEZiamxpbmtkMk94aWN1c3JicnZVV1U1QmM0NnFrNG90VmlzZUtjbkdvRFBZbUFCYl9wMm1MZTR6TzNOZ2RKUG0tSUtYdWVzNHdsUGRaUVdWSHlNR0JwMlNwbWRuSVBqMmxhOHlpaFNOYTVHMWM4ME9kZEJUa0l4NzlwS1duNkZxNV9PZzVWdXYtemVZeUt5RExHb1ZvZVZiMm41TUV2REg1bVZFU0lPNEFSUXdBTkRVOVgyaEtfbVFJRFloMHJm?oc=5",
-   "publicado": "2026-11-19T12:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
