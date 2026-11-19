@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T16:08-03:00",
+  "atualizado_em": "2026-11-19T16:10-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -287,11 +287,11 @@
     ],
     [
      "15:50",
-     166147.0
+     166175.0
     ],
     [
-     "15:53",
-     166151.0
+     "15:55",
+     166066.0
     ]
    ]
   },
@@ -640,11 +640,11 @@
     ],
     [
      "16:05",
-     5.9136
+     5.9163
     ],
     [
-     "16:08",
-     5.9122
+     "16:10",
+     5.9129
     ]
    ]
   },
@@ -1224,7 +1224,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.1
    },
    {
     "hora": "15:45",
@@ -1237,7 +1237,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.12
    },
    {
     "hora": "15:48",
@@ -2043,7 +2043,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T16:08-03:00",
+ "atualizado_em": "2026-11-19T16:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2053,8 +2053,7 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
@@ -2076,18 +2075,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Moedas emergentes recuam com dólar forte e apostas em altas de juros pelo Fed",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZ3lvQk5fSllnS2pydlRqaTlJM3ZFX3dnekFrbXYzVFIybEQ5R1FkaHpPLWtWUTlWOG5oWnN6NEwzNTlnUUtua1R1SENPc1dvSm1QVy10aWk0Qlo4SU15V1pONHdyRGQ2enVjZUtEdlVIcUd0T09uOFdudVR2Z2pXdXk4Yk9GYnFBOW9EOEg4bmNUZzNhQm04VTA3RS1jaVU4MXkwMDB1SlNoUVJuMHJ0Tm1kSV9xREUyMHhVUU9IVlFBeWItNUVMUjd3WHVPdDDSAd4BQVVfeXFMTVZTQ2pBRzl4ZXhyRWxUbUVHWlRudW1zRE16ME1XOTZDTm9CUlNyN0NHQ3VQX2M4WmVQYnhwNzFuWlRLQ18zdGdHek9FSVRNMUVjUzQ0d2FTOUg4SmNNWFkyeXlXbkxwMjlwQXdwOFFMRFRvUEU2TGlJMlVWdEZhTDJwRlRwdkpQT0hDWXhGbmctbkUyRnRZOVdOM3JCXzUxSFFXSXBqS2xFd19lczgtUU9vODRrd3ZHTi1FQUR2VWphYlNkZWNSa1ZfLVFFMTJ2LUFudzVzY2lfZWVxal93?oc=5",
-   "publicado": "2026-11-19T15:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -2126,17 +2113,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar pode chegar a R$ 5,50 com pressão de três fatores sobre o real, aponta Citi",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUjRzS0plRVVlSHZrN2NGRl92dlZMVFVnQVltN0lpa2d5NUhuVFctRHVFR1l1MFhGc1hyX1FJM0c0SkJObnRiejFxaUFXOW1CemViRzFBYkstWEsxUDJFN1BCWmpJME1lRWVMUTlVbHBCbzZjNnRkTmM5cG9WeWxOZjJYV0ZuYlNGdmtXY2RCd2EybFVXdEE5MTdxeFEzei1VQUJhMV9JbGUyTlZWUlJwb20wbFRNSzZHQlBrekhCX2ktVlp3OWhnR1lmYktDNllWUUtOSnlVckJtR09FdVE?oc=5",
-   "publicado": "2026-11-19T14:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Apesar da estreia das ações da Anthropic acima do preço do IPO, Nasdaq cai",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb244Y0hkZmoweExXZ3hjZVZBR19CU3cydURyS0JSX0F4VE9EVGJVSzVhVWxyVHEwWk9EM1NIVFRHeXE5N0JrZXFBbVBveVJQRWtGVW1FdDJrNEkyZHRzeDRIenNpcUpaRk1jS0YyZlFhMnAyM1ZDZEFZN0poLXM5SkEtckFyT01Ma0xqc0YyX044dkF1ZkNPZF9PcGFxenhWMUM4QmRoaDdBYUFyeEE?oc=5",
@@ -2144,18 +2120,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado reduz projeção para inflação e PIB no ano e prevê Selic mais alta em 2027",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNalUzYlhmd0x2OWktdDJTX18xRmdFSVNXY1RENEx3dXUyUFhoR3laNHlQbWVvVUx1c0ptZmZ2ZWxMTURwNlVwM0RYYkJGdkJlLXdUZ05WUm9nUGFfTHlvT2pqWU0yRGlJdUtrRmJMSXpuaERxeThHNzZpRWdDU2xER2o0N0RqWFhiSlkxMk5KWElKLVJZUVI3QnVXU0xSVWVhR3duQ0dhSnNWdWM?oc=5",
-   "publicado": "2026-11-19T14:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
