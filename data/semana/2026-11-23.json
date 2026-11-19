@@ -3,6 +3,19 @@
  "eventos": [
   {
    "data": "2026-11-23",
+   "pais": "BR",
+   "evento": "Câmara pode votar o ajuste fiscal (PLP 299/2026)",
+   "importancia": 2,
+   "impacto": {
+    "win": "volatil",
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Relator Mauro Benevides prevê votação na segunda (23) se houver quórum, ou na terça (24), segundo a CNN Brasil.",
+   "tipo": "ajuste-fiscal"
+  },
+  {
+   "data": "2026-11-23",
    "hora": "06h",
    "pais": "EU",
    "evento": "PMIs preliminares da zona do euro (nov)",
@@ -90,6 +103,18 @@
    },
    "nota": "Investimento e demanda da indústria americana.",
    "tipo": "bens-duraveis-eua"
+  },
+  {
+   "data": "2026-11-26",
+   "pais": "US",
+   "evento": "Ação de Graças — bolsas de NY fechadas",
+   "importancia": 1,
+   "impacto": {
+    "win": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
+   "tipo": "feriado-eua"
   }
  ]
 }
