@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T10:08-03:00",
+  "atualizado_em": "2026-11-19T10:38-03:00",
+  "ibov": {
+   "anterior": 167537.95,
+   "pontos": [
+    [
+     "10:00",
+     167765.0
+    ],
+    [
+     "10:05",
+     168042.0
+    ],
+    [
+     "10:10",
+     167741.0
+    ],
+    [
+     "10:15",
+     167892.0
+    ],
+    [
+     "10:20",
+     167966.0
+    ],
+    [
+     "10:23",
+     168061.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.8488,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.8903
+     5.8883
     ],
     [
-     "10:08",
-     5.8863
+     "10:10",
+     5.8898
+    ],
+    [
+     "10:15",
+     5.8883
+    ],
+    [
+     "10:20",
+     5.8841
+    ],
+    [
+     "10:25",
+     5.8776
+    ],
+    [
+     "10:30",
+     5.8701
+    ],
+    [
+     "10:35",
+     5.8726
+    ],
+    [
+     "10:38",
+     5.8731
     ]
    ]
   },
@@ -79,6 +132,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.41
    },
    {
@@ -95,6 +149,7 @@
      "BPAC11",
      "ITUB4"
     ],
+    "ibov30": null,
     "dolar30": -0.41
    },
    {
@@ -108,6 +163,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.42
    },
    {
@@ -122,6 +178,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.42
    },
    {
@@ -134,6 +191,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.11
    },
    {
@@ -148,6 +206,7 @@
     "tickers": [
      "ITUB4"
     ],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -162,6 +221,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.04
    },
    {
@@ -174,6 +234,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.07
    },
    {
@@ -186,7 +247,8 @@
      "WIN"
     ],
     "tickers": [],
-    "dolar30": 0.2
+    "ibov30": null,
+    "dolar30": 0.17
    },
    {
     "hora": "09:39",
@@ -199,7 +261,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.2
+    "ibov30": null,
+    "dolar30": 0.17
    },
    {
     "hora": "09:39",
@@ -211,7 +274,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.2
+    "ibov30": null,
+    "dolar30": 0.17
    },
    {
     "hora": "09:42",
@@ -225,7 +289,8 @@
     "tickers": [
      "BBSE3"
     ],
-    "dolar30": 0.14
+    "ibov30": null,
+    "dolar30": 0.2
    },
    {
     "hora": "09:48",
@@ -238,7 +303,23 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": 0.13
+   },
+   {
+    "hora": "10:07",
+    "titulo": "Banco do Brasil notifica clientes sobre vazamentos de dados; veja cuidados",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-notifica-clientes-sobre-vazamentos-de-dados-veja-cuidados.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBAS3"
+    ],
+    "ibov30": null,
+    "dolar30": -0.27
    }
   ]
  },
@@ -644,6 +725,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil notifica clientes sobre vazamentos de dados; veja cuidados",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-notifica-clientes-sobre-vazamentos-de-dados-veja-cuidados.shtml",
+   "publicado": "2026-11-19T10:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
   }
  ],
  "enviadas": [
@@ -663,7 +757,7 @@
    "em": "2026-11-19T12:43:04+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T10:08-03:00",
+ "atualizado_em": "2026-11-19T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -677,6 +771,31 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "China, Rússia e EUA planejam ampliar oferta de petróleo refinado, diz agência",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/china-russia-e-eua-planejam-ampliar-oferta-de-petroleo-refinado-diz-agencia.shtml",
+   "publicado": "2026-11-19T10:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil notifica clientes sobre vazamentos de dados; veja cuidados",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-notifica-clientes-sobre-vazamentos-de-dados-veja-cuidados.shtml",
+   "publicado": "2026-11-19T10:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
+  },
   {
    "titulo": "DIs sobem com dólar e exterior, apesar de aprovação de ajuste fiscal no Senado",
    "fonte": "InfoMoney",
@@ -835,31 +954,6 @@
     "BPAC11",
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "Copel (CPLE3) prevê R$ 21,1 bilhões em investimentos entre 2027 e 2030, com foco na distribuição de energia",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVUZTS0RLU1BOOHBRVEVzWEVzUGpWdmpJLXg4ZE9QWTh2aTJuel9qc1QycTl1eUpObDd4STJHVk1PT3pMUUwxVFdXYU16SWFEUE9SZEhtbk5zdFZocTl6YVVxT2dnZnZUTzB1blEzYlNURkdEU2VkSFRsWHF6dmtTSVdmT0t1MzVaWHhBc2Z1R1VQVnFOWW1PT2ppcGl5U21way14U1FDZlNBdGxXNm1kVVprMGtKN0hxUmp6N09GQ3pWRnplT25KbzJHZXEzRUhlUnNfUg?oc=5",
-   "publicado": "2026-11-19T08:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "CPLE3"
-   ]
-  },
-  {
-   "titulo": "Trump says U.S., China, Russia ‘uniquely positioned’ to discuss reducing nuclear weapons at historic meeting",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
-   "publicado": "2026-11-19T07:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
