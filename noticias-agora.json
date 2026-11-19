@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T11:03-03:00",
+  "atualizado_em": "2026-11-19T11:05-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -43,11 +43,15 @@
     ],
     [
      "10:45",
-     168493.0
+     168309.0
     ],
     [
-     "10:48",
-     168458.0
+     "10:50",
+     168483.0
+    ],
+    [
+     "10:51",
+     168445.0
     ]
    ]
   },
@@ -152,11 +156,15 @@
     ],
     [
      "11:00",
-     5.8877
+     5.886
     ],
     [
-     "11:03",
-     5.888
+     "11:05",
+     5.8828
+    ],
+    [
+     "11:06",
+     5.8835
     ]
    ]
   },
@@ -374,7 +382,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.22
+    "dolar30": 0.13
    },
    {
     "hora": "10:39",
@@ -388,7 +396,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.13
    },
    {
     "hora": "10:40",
@@ -402,7 +410,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.15
    },
    {
     "hora": "10:44",
@@ -938,7 +946,7 @@
    "em": "2026-11-19T13:40:26+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T11:03-03:00",
+ "atualizado_em": "2026-11-19T11:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -952,6 +960,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Trump says U.S., China, Russia ‘uniquely positioned’ to discuss reducing nuclear weapons at historic meeting",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
+   "publicado": "2026-11-19T11:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa pode subir 20%, mas Itaú BBA não vê motivos para comprar; banco rebaixa bolsa para neutra",
    "fonte": "Money Times",
@@ -1098,17 +1118,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "Dólar volta a subir e alcança R$ 5,91 em meio a mal-estar local",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWDVmUFpNcWdDXzVrbW9FWDA1UklMV3A5ZkE5TWVJU1FmdEd1bmNubVh5aV9tU1dZbThkSkx4Q2FQOEV6Wm80bF9BSUtkTkk3cHltcHN2Nm5vR3RHTVZOcC1TRVBLbERxVGMtbEp6UVJ2cVpzRHl3S0wyUHRTZ0tLdzh5MHY5NUpKUmd3SnZhZHZvU1BnQ2JoUnM0RzlKcE43eDJ1NGEwUFRFTFNtd0UwdEJvWVdaZHlwMDYw0gHKAUFVX3lxTE5lWVByb2p6SVVvX1NKZVJFVW05VEV3bm9hZnhXbWlzTzVqV2NyUTRZUXVoYkE3VmI2Q0lvQ0IwZ2I3YjVHN0NSWUhodnc1eDBGeTd3eDczakQxSVFyVVZXUEJyVFZXaUJMR0ZtajYzLVVDcmFfLUxqdlNXUFR5cUVZUnBkQnRVWlY3WEpmVDVxWXZDcnN4My1TbjFmM2IwdUFaU05pSHNpdHZLSGZpUTNBZGRHLVVnUTMtN3dFelM2T2tlTHZIcUI4Wnc?oc=5",
-   "publicado": "2026-11-19T09:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Dólar sobe com mercado reagindo à pauta fiscal e IPO da Anthropic nos EUA",
