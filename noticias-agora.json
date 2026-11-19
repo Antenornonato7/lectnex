@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T16:48-03:00",
+  "atualizado_em": "2026-11-19T16:50-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -215,7 +215,7 @@
     ],
     [
      "14:20",
-     166519.0
+     166438.0
     ],
     [
      "14:25",
@@ -319,11 +319,11 @@
     ],
     [
      "16:30",
-     166321.0
+     166232.0
     ],
     [
-     "16:33",
-     166273.0
+     "16:35",
+     166237.0
     ]
    ]
   },
@@ -704,11 +704,11 @@
     ],
     [
      "16:45",
-     5.9267
+     5.9328
     ],
     [
-     "16:48",
-     5.9303
+     "16:50",
+     5.9314
     ]
    ]
   },
@@ -2285,30 +2285,19 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T16:48-03:00",
+ "atualizado_em": "2026-11-19T16:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
-  {
-   "titulo": "Azzas tomba 5% e sofre maior queda do dia; veja os destaques do Ibovespa hoje",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNc0NPU1ZzNEZpUnQzNG9uWDFEcVRSNUMwQi1BOXI4bWlFemNnem9uUXRHMUZhOTJNQUdtekVSMldydkRIYURBZFJzcS1OZmQyTm95czhiY3pWUi1BTWt2R1dFdWxnd1ItYmltRkxiQUk1TjZjUGRLaDlzZkgyR1BQYjFvOGxiV3NqZF9QV25DZkZ5Q3dUdWtqVmpWbVZpd2RfY2taMFFab2dHLXFpeHdzTThyaEczdnlFZkNsaWJuQksyQi01c3R5djEtd1hzVkJ6Z2hkZ2VCVjhrUQ?oc=5",
-   "publicado": "2026-11-19T16:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Gastos públicos federais no ano superam valor de mercado de todas as empresas da B3",
    "fonte": "InfoMoney",
@@ -2358,6 +2347,18 @@
    "tickers": []
   },
   {
+   "titulo": "Moedas emergentes recuam com dólar forte e apostas em altas de juros pelo Fed",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZ3lvQk5fSllnS2pydlRqaTlJM3ZFX3dnekFrbXYzVFIybEQ5R1FkaHpPLWtWUTlWOG5oWnN6NEwzNTlnUUtua1R1SENPc1dvSm1QVy10aWk0Qlo4SU15V1pONHdyRGQ2enVjZUtEdlVIcUd0T09uOFdudVR2Z2pXdXk4Yk9GYnFBOW9EOEg4bmNUZzNhQm04VTA3RS1jaVU4MXkwMDB1SlNoUVJuMHJ0Tm1kSV9xREUyMHhVUU9IVlFBeWItNUVMUjd3WHVPdDDSAd4BQVVfeXFMTVZTQ2pBRzl4ZXhyRWxUbUVHWlRudW1zRE16ME1XOTZDTm9CUlNyN0NHQ3VQX2M4WmVQYnhwNzFuWlRLQ18zdGdHek9FSVRNMUVjUzQ0d2FTOUg4SmNNWFkyeXlXbkxwMjlwQXdwOFFMRFRvUEU2TGlJMlVWdEZhTDJwRlRwdkpQT0hDWXhGbmctbkUyRnRZOVdOM3JCXzUxSFFXSXBqS2xFd19lczgtUU9vODRrd3ZHTi1FQUR2VWphYlNkZWNSa1ZfLVFFMTJ2LUFudzVzY2lfZWVxal93?oc=5",
+   "publicado": "2026-11-19T15:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar sobe após bater máxima a R$ 5,93, na maior cotação em 19 meses",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM0RZR3FtdGNiaEZfak1xMHVxVmxWRTJ0TlAtVWxPVk10S2tNXzV6a182V3lLWlBWdk9uVndONmxWSUczZ21sbHdVdTNNQU5CV0hMUzhCaUFFWjc0NmxIMzdlVnpYTkdkcGNJa1ZPdFZIVE01RlRpckU2UXBSTV9acjFMekhMZUhvVFM0MXJjbnRpTjc2d2FxQTlkTDZBdW5UY09VQmctYzZBVmtMdl9RSk1wYmkyQ2t3Uk9uRi1Ea042WFlFZ1RvaFcxcW5lWGNmMkJiVHpsb2c4c1BCOWpwakhLLVU4clFJLXfSAe8BQVVfeXFMTjBRbU93NEhWTnpoU2Y3dnlBSFNaOTNsVGNySWhTWDlRdTQyNVJLSjdHaE9ZY3h1V1doQUR6NE5UTkVxMmF3S0FacHgtNU9RLXR0Q3B1VTJhWkdLWkFoV095VEZfYmdLOGh6Nk1salo2NXg0S2JPb0pQNFR6RVVjbUVvdU9FcUtNeFY3NGVMSGFBYzlOTmViT296d3JjdS1Cc0YtSDVNS2l6V1p0UUJSTkNPRGdoaWpxRk9hdGw3QS1VYjFWUUpUc3M0eDJRSzd6VjAtSkJKa3o1d1BlUjdmUmthMGZpYU55ZVV6YldDaFE?oc=5",
@@ -2399,17 +2400,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Anthropic atinge US$ 2 trilhões em valor de mercado em estreia na Nasdaq",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdDBCc1pBSzVjQ3JTZC1RTHpYQ1dyeFN6aS1GLXpJTjJhQk55SUozd1o4S2R6RFFfU2xER2QyVTBqM0tBcml2QlRNQnhtM2N1bjl4WDJ2bHZqZUdnZDlwVy0wR01qN2hSWk9HdFBMMzVGYjdSY09ydjRnVDc4WHV3dTI0ODk0U3R3QS1SLUE2YjVXMUM2Vl9YM2cwMHpNTzkwd05BLW03YjJUZy1wZ1FhQXN1aGtfTFFwckdKQVd5Z2NTZw?oc=5",
-   "publicado": "2026-11-19T14:49-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
