@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T14:38-03:00",
+  "atualizado_em": "2026-11-19T15:08-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -215,11 +215,35 @@
     ],
     [
      "14:20",
-     166334.0
+     166438.0
     ],
     [
-     "14:23",
-     166427.0
+     "14:25",
+     166587.0
+    ],
+    [
+     "14:30",
+     166548.0
+    ],
+    [
+     "14:35",
+     166394.0
+    ],
+    [
+     "14:40",
+     166535.0
+    ],
+    [
+     "14:45",
+     166673.0
+    ],
+    [
+     "14:50",
+     166818.0
+    ],
+    [
+     "14:53",
+     166816.0
     ]
    ]
   },
@@ -496,11 +520,35 @@
     ],
     [
      "14:35",
-     5.8959
+     5.8968
     ],
     [
-     "14:38",
-     5.8958
+     "14:40",
+     5.8937
+    ],
+    [
+     "14:45",
+     5.8915
+    ],
+    [
+     "14:50",
+     5.886
+    ],
+    [
+     "14:55",
+     5.8967
+    ],
+    [
+     "15:00",
+     5.9051
+    ],
+    [
+     "15:05",
+     5.9111
+    ],
+    [
+     "15:08",
+     5.9092
     ]
    ]
   },
@@ -999,7 +1047,20 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.33,
+    "dolar30": -0.3
+   },
+   {
+    "hora": "14:02",
+    "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": 0.33,
     "dolar30": -0.3
    },
    {
@@ -1012,8 +1073,21 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": 0.42,
+    "dolar30": -0.49
+   },
+   {
+    "hora": "14:39",
+    "titulo": "Dólar pode chegar a R$ 5,50 com pressão de três fatores sobre o real, aponta Citi",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUjRzS0plRVVlSHZrN2NGRl92dlZMVFVnQVltN0lpa2d5NUhuVFctRHVFR1l1MFhGc1hyX1FJM0c0SkJObnRiejFxaUFXOW1CemViRzFBYkstWEsxUDJFN1BCWmpJME1lRWVMUTlVbHBCbzZjNnRkTmM5cG9WeWxOZjJYV0ZuYlNGdmtXY2RCd2EybFVXdEE5MTdxeFEzei1VQUJhMV9JbGUyTlZWUlJwb20wbFRNSzZHQlBrekhCX2ktVlp3OWhnR1lmYktDNllWUUtOSnlVckJtR09FdVE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.24
    }
   ]
  },
@@ -1689,6 +1763,17 @@
    "tickers": []
   },
   {
+   "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+   "publicado": "2026-11-19T14:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Apesar da estreia das ações da Anthropic acima do preço do IPO, Nasdaq cai",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb244Y0hkZmoweExXZ3hjZVZBR19CU3cydURyS0JSX0F4VE9EVGJVSzVhVWxyVHEwWk9EM1NIVFRHeXE5N0JrZXFBbVBveVJQRWtGVW1FdDJrNEkyZHRzeDRIenNpcUpaRk1jS0YyZlFhMnAyM1ZDZEFZN0poLXM5SkEtckFyT01Ma0xqc0YyX044dkF1ZkNPZF9PcGFxenhWMUM4QmRoaDdBYUFyeEE?oc=5",
@@ -1696,6 +1781,17 @@
    "impacto": "alto",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar pode chegar a R$ 5,50 com pressão de três fatores sobre o real, aponta Citi",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUjRzS0plRVVlSHZrN2NGRl92dlZMVFVnQVltN0lpa2d5NUhuVFctRHVFR1l1MFhGc1hyX1FJM0c0SkJObnRiejFxaUFXOW1CemViRzFBYkstWEsxUDJFN1BCWmpJME1lRWVMUTlVbHBCbzZjNnRkTmM5cG9WeWxOZjJYV0ZuYlNGdmtXY2RCd2EybFVXdEE5MTdxeFEzei1VQUJhMV9JbGUyTlZWUlJwb20wbFRNSzZHQlBrekhCX2ktVlp3OWhnR1lmYktDNllWUUtOSnlVckJtR09FdVE?oc=5",
+   "publicado": "2026-11-19T14:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   }
@@ -1727,7 +1823,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T14:38-03:00",
+ "atualizado_em": "2026-11-19T15:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1742,6 +1838,17 @@
  ],
  "noticias": [
   {
+   "titulo": "Dólar pode chegar a R$ 5,50 com pressão de três fatores sobre o real, aponta Citi",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUjRzS0plRVVlSHZrN2NGRl92dlZMVFVnQVltN0lpa2d5NUhuVFctRHVFR1l1MFhGc1hyX1FJM0c0SkJObnRiejFxaUFXOW1CemViRzFBYkstWEsxUDJFN1BCWmpJME1lRWVMUTlVbHBCbzZjNnRkTmM5cG9WeWxOZjJYV0ZuYlNGdmtXY2RCd2EybFVXdEE5MTdxeFEzei1VQUJhMV9JbGUyTlZWUlJwb20wbFRNSzZHQlBrekhCX2ktVlp3OWhnR1lmYktDNllWUUtOSnlVckJtR09FdVE?oc=5",
+   "publicado": "2026-11-19T14:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Apesar da estreia das ações da Anthropic acima do preço do IPO, Nasdaq cai",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb244Y0hkZmoweExXZ3hjZVZBR19CU3cydURyS0JSX0F4VE9EVGJVSzVhVWxyVHEwWk9EM1NIVFRHeXE5N0JrZXFBbVBveVJQRWtGVW1FdDJrNEkyZHRzeDRIenNpcUpaRk1jS0YyZlFhMnAyM1ZDZEFZN0poLXM5SkEtckFyT01Ma0xqc0YyX044dkF1ZkNPZF9PcGFxenhWMUM4QmRoaDdBYUFyeEE?oc=5",
@@ -1755,7 +1862,7 @@
   {
    "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
    "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
    "publicado": "2026-11-19T14:02-03:00",
    "impacto": "medio",
    "ativos": [
@@ -1810,64 +1917,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar nas alturas: Banco Central intervém em leilão de US$ 1 bilhão",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYTYtcXJiVUM4WnpSX28tZ3ZQUG1PYWNtQl95Y092eGVHTmNRYW02X1Y3WG8yWmNLNHNvdTFGZFpyM2ZvZU9GRDd4VmR5N29TQkhoQ0JmWXhTUDhaZHhRTVIzVTdvMmpOaTRVT29qM2p5ZGxsbGdBem5WRUN4RVluMWFINEJhUWRFVjdCRmV4LWJsR0JCS1Fla0QwSXY?oc=5",
-   "publicado": "2026-11-19T13:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros sobem com dólar e exterior, após aprovação do ajuste fiscal",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVGp6Ym85cXVHVTJlSi1hNjNRMUp6ekNuZ1A1SE1RcVFGcnZhUGFnQnRoVlpqNVp2cm5ncWJKeTd6T0NlOG1WRGRxbVJVYUZCNktsUm12aFdkNzg4dUJCNUtabC1TQXRLbWpBVU5xek9KdWowbXIyMUtZVy1CaUZHVEw1TUQ0czdfcVY5eVhsaWUxUXE4NW9EQ25OV0FpaUlpUWFOUjBhRU50em1teDVoTF9qemdvQV9RanVVOVg3RlZrS2s?oc=5",
-   "publicado": "2026-11-19T12:59-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar reduz alta após leilão do BC, mas opera acima de R$ 5,90, maior cotação em 19 meses",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM0RZR3FtdGNiaEZfak1xMHVxVmxWRTJ0TlAtVWxPVk10S2tNXzV6a182V3lLWlBWdk9uVndONmxWSUczZ21sbHdVdTNNQU5CV0hMUzhCaUFFWjc0NmxIMzdlVnpYTkdkcGNJa1ZPdFZIVE01RlRpckU2UXBSTV9acjFMekhMZUhvVFM0MXJjbnRpTjc2d2FxQTlkTDZBdW5UY09VQmctYzZBVmtMdl9RSk1wYmkyQ2t3Uk9uRi1Ea042WFlFZ1RvaFcxcW5lWGNmMkJiVHpsb2c4c1BCOWpwakhLLVU4clFJLXfSAe8BQVVfeXFMTjBRbU93NEhWTnpoU2Y3dnlBSFNaOTNsVGNySWhTWDlRdTQyNVJLSjdHaE9ZY3h1V1doQUR6NE5UTkVxMmF3S0FacHgtNU9RLXR0Q3B1VTJhWkdLWkFoV095VEZfYmdLOGh6Nk1salo2NXg0S2JPb0pQNFR6RVVjbUVvdU9FcUtNeFY3NGVMSGFBYzlOTmViT296d3JjdS1Cc0YtSDVNS2l6V1p0UUJSTkNPRGdoaWpxRk9hdGw3QS1VYjFWUUpUc3M0eDJRSzd6VjAtSkJKa3o1d1BlUjdmUmthMGZpYU55ZVV6YldDaFE?oc=5",
-   "publicado": "2026-11-19T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Rumo aos R$ 6? Dólar rompe os R$ 5,90 hoje; entenda o que impulsiona a moeda",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZ3dKQTVrdl9uS2pEV1UxekpqMWtqQm14OGxWemFGaG8yS0gzYVFoSkpUdndEZHQ4dGVFMGhjYzFvSVRnT0o5cktCV0JlZjU4WUxUWVNWSThqN01ZdG9ZeE1QR28wcGR5VjdsaWh4VGN0aWt0cVlyVk5Mbl9tNzVlYWtLbWIyWnV5Wmp3XzVVSVIyOXNVQmlUZXlQeXUxbnhKTS1jX2xJUW9PZU0?oc=5",
-   "publicado": "2026-11-19T12:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pacote fiscal ‘tímido’ impede avanço do Ibovespa",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ1BmcVZ4UUN2UzR4Wi15Rm5KOThZVm1jYjdVaHVQVVFZUElkb1c3VHhDRGtXY2RlRWVJRG9BSjNybzYxY1hBc0ZoTnNwUDUzX1dqcGdpMjBzUmZDWmtQa2tzZWdnVFN3VGpyZmNFb2ljelk0MG9GUEhCQUtWTnlURkh3MHVoU010c3czSFhB0gGTAUFVX3lxTE5LM3lON1cyUUVHQXhWeTJEUUptSTR5X2h2V2dQNENTUUtjWUYya0x0Z3R4ZDdiOXFPWVN2V2VsdDZiN0VuYVR0OFFDMURyRnF2cVQzNnlqRmNOUFJRZTFLdl8yLXZjU3dBUU13ODdUZHFwSGxyZzZxRWxVaUNBUkxILXNjMUFsZTk5U1hTd0NjLTVHQQ?oc=5",
-   "publicado": "2026-11-19T12:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Com El Niño, Bradesco Seguros registra alta de 37,5% nos casos de prejuízos ligados ao clima",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/com-el-nino-bradesco-seguros-registra-alta-de-375-nos-casos-de-prejuizos-ligados-ao-clima.shtml",
@@ -1901,33 +1950,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
-   "publicado": "2026-11-19T12:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
-   "titulo": "BNDES tem lucro de R$ 20,3 bi até setembro, puxado por venda de ações da Petrobras",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bndes-tem-lucro-de-r-203-bi-ate-setembro-puxado-por-venda-de-acoes-da-petrobras.shtml",
-   "publicado": "2026-11-19T11:41-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   }
  ]
 }
