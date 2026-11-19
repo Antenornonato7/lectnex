@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T12:55-03:00",
+  "atualizado_em": "2026-11-19T12:58-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -135,7 +135,11 @@
     ],
     [
      "12:40",
-     167162.0
+     167132.0
+    ],
+    [
+     "12:43",
+     167036.0
     ]
    ]
   },
@@ -332,7 +336,11 @@
     ],
     [
      "12:55",
-     5.9039
+     5.9057
+    ],
+    [
+     "12:58",
+     5.9066
     ]
    ]
   },
@@ -735,7 +743,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.05,
     "dolar30": 0.28
    },
    {
@@ -1409,7 +1417,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T12:55-03:00",
+ "atualizado_em": "2026-11-19T12:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1558,17 +1566,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar dispara e bate máxima a R$ 5,91, maior cotação em 19 meses",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM0RZR3FtdGNiaEZfak1xMHVxVmxWRTJ0TlAtVWxPVk10S2tNXzV6a182V3lLWlBWdk9uVndONmxWSUczZ21sbHdVdTNNQU5CV0hMUzhCaUFFWjc0NmxIMzdlVnpYTkdkcGNJa1ZPdFZIVE01RlRpckU2UXBSTV9acjFMekhMZUhvVFM0MXJjbnRpTjc2d2FxQTlkTDZBdW5UY09VQmctYzZBVmtMdl9RSk1wYmkyQ2t3Uk9uRi1Ea042WFlFZ1RvaFcxcW5lWGNmMkJiVHpsb2c4c1BCOWpwakhLLVU4clFJLXfSAe8BQVVfeXFMTjBRbU93NEhWTnpoU2Y3dnlBSFNaOTNsVGNySWhTWDlRdTQyNVJLSjdHaE9ZY3h1V1doQUR6NE5UTkVxMmF3S0FacHgtNU9RLXR0Q3B1VTJhWkdLWkFoV095VEZfYmdLOGh6Nk1salo2NXg0S2JPb0pQNFR6RVVjbUVvdU9FcUtNeFY3NGVMSGFBYzlOTmViT296d3JjdS1Cc0YtSDVNS2l6V1p0UUJSTkNPRGdoaWpxRk9hdGw3QS1VYjFWUUpUc3M0eDJRSzd6VjAtSkJKa3o1d1BlUjdmUmthMGZpYU55ZVV6YldDaFE?oc=5",
-   "publicado": "2026-11-19T10:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa pode subir 20%, mas Itaú BBA não vê motivos para comprar; banco rebaixa bolsa para neutra",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMGFubFowSlYwSXBNcTBvRGh5OW8tc0NMUzBKN3p2d1lpN05lQWxaN0VLVDVNdExNMXhJeVJ3ZEJuTEhLSjQ2WG5Dcm5pR1dUYXBpWGRsc3BseHlxNzhKdEphUWVxMmdtTE5qVDA1RFRDeUF0UlRVY0xBTGg1SkVVZWVtdWVzYXRMeVlUUkh2OG1ZWG1xZ2RCNXlzQ1ZPclB0cG5ZOHdaNEl4N3NwWVpHa1FrS2hjNU53THBvR18xWGEwTDNwN2ZLSHd3UQ?oc=5",
@@ -1617,6 +1614,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil notifica clientes sobre vazamentos de dados; veja cuidados",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/banco-do-brasil-notifica-clientes-sobre-vazamentos-de-dados-veja-cuidados.shtml",
+   "publicado": "2026-11-19T10:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
   }
  ]
 }
