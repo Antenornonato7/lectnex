@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T11:10-03:00",
+  "atualizado_em": "2026-11-19T11:13-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -51,7 +51,11 @@
     ],
     [
      "10:55",
-     168202.0
+     168028.0
+    ],
+    [
+     "10:58",
+     167970.0
     ]
    ]
   },
@@ -164,7 +168,11 @@
     ],
     [
      "11:10",
-     5.886
+     5.893
+    ],
+    [
+     "11:13",
+     5.8929
     ]
    ]
   },
@@ -425,7 +433,7 @@
      "B3SA3"
     ],
     "ibov30": null,
-    "dolar30": 0.2
+    "dolar30": 0.32
    },
    {
     "hora": "10:48",
@@ -440,7 +448,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.26
    },
    {
     "hora": "11:06",
@@ -976,7 +984,7 @@
    "em": "2026-11-19T13:40:26+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T11:10-03:00",
+ "atualizado_em": "2026-11-19T11:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1151,6 +1159,19 @@
    "tickers": []
   },
   {
+   "titulo": "Itaú BBA rebaixa ações brasileiras e projeta Ibovespa a 195 mil pontos em 2027",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOejl3X1QtMUF6U013TzM2YkN6UklFcWNXd3Q5SEdaOTZyb1ZTZ1NxSkdhMmNPaHJMZ1VJMDIxV3ZWVVdZR2tMU1lDT05VUHVHLW5YV2dLbEMzZmdETXQ1WlFKeUNNWWVZWDdvUXFvUHZhYmZsN0k2TldnZERvMFpCVFg0VUJUWGdtMXRRU1FCaTMzeWRudTdKU3BXTnA1OEZUOC0yWjVhYXFxdkk2QWszYkZCaEFudnJMR1FzYllhR0tZOUtReEhMY2lrcGROQdIB3AFBVV95cUxOZm5FSzlJdWJVSlh2Wkt6NWlnYmo0SXV3aVA5UnhmMHhCVkR3VC13NzVaT3dZNlhYSENrbnEyRE5lbWU4RGl0OFoxY3JJMUx5MWkybnhERzA2d012NmpDbWVOWkdaOHVOS25XaW1VWVpVc2R5aC1JTlNPcGxnT01henN6TXVqaV9jVmN5YVlSRDRqNXJJcHNCWG1vV0pIMzdXSXdOc0J2SFV2aXFWMFVna1l0WW1BeDZvaTJ4MnQwRGdrSnN1QmlaRFJZSjYza0tFY3lIZ1hTejN6Unhh?oc=5",
+   "publicado": "2026-11-19T09:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
    "titulo": "Dólar sobe com mercado reagindo à pauta fiscal e IPO da Anthropic nos EUA",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOENyQ3ZkUGVqQ2JBc0VwZWZWam45QmIwVGVmTjVMYTF1cS1saldIVnRJY0g4UXNYVm1tZURwUFh2UXFXTzJRSGxwX1F1TER4aER4UlluOUJiWHFVczg2czhYUVZZR0pKNG15bS1IcWNXX2lRVWctNkxxczRCdlFKRGQ0X054MWdkd1ZNaW1QdFUzMUJMcGdXalB2dUV2M0pBRU1yQjZn?oc=5",
@@ -1168,18 +1189,6 @@
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OWUVWNEN5VmYxazRpeDBhWXhiMVNQNjV0QjFFT2tFUzJIdzJraWZZd254NXA5NDl4Qk9Kclh1SDZPelZLZnBXQnJoLVRnZFYyM0pJU0V3TFhLZk9nbXVEdkFXUDVQN29I?oc=5",
    "publicado": "2026-11-19T09:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa Futuro sobe com mercado de olho no fiscal após projeto passar pelo Senado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZVhHXzJnSDFqZmZZSDBxZmFXcDAyM0xucTZmMlNjT0kxMlVPVldFYkNNQ3pzUnp3RDlxRVgxZnp0QWhPUDI2R2R1N2kzTkpUMU92X2Q0SDF3UlNEdVdxZ1BDczVibXl5N082b3UxdkRRaWJMZGpZR0pMSmI4c1IwUGtYOGhDTW5FRWRPQU51VVgyMGJqdnJfbEM2MkRjWXdWSjBiZXEzbFlxSkNHZ3NRSEtwdHN0U2NmM2ZKWWN30gHDAUFVX3lxTE90RjNTRlhCcnNad0YzX1NyUUlKODJsdzV0S1ByTG5IT3VvMm1Bc0dudmRqcUo0VEhFS2tqbTNKeFV6MTNsTlo1cmdrUENwc0FwNDRwY3ctQTAzaF92djI3aDBTbk5TeW12RWd2ZUYtTldjcFRiNDMzMmVIV2ItRlRiczd6SExSXzluX1dGNnhWWGZOaXNPSWQyZURQZ0ExT0Z0WjdtNlctRFdZM1h6YlBZOVItSGZsNWtnWV9XVG9HS0VWWQ?oc=5",
-   "publicado": "2026-11-19T09:11-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
