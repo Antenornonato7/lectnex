@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T13:38-03:00",
+  "atualizado_em": "2026-11-19T13:40-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -167,11 +167,11 @@
     ],
     [
      "13:20",
-     166708.0
+     166682.0
     ],
     [
-     "13:23",
-     166690.0
+     "13:25",
+     166666.0
     ]
    ]
   },
@@ -400,11 +400,11 @@
     ],
     [
      "13:35",
-     5.9123
+     5.9114
     ],
     [
-     "13:38",
-     5.9102
+     "13:40",
+     5.9128
     ]
    ]
   },
@@ -849,7 +849,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.06,
+    "ibov30": -0.08,
     "dolar30": 0.24
    },
    {
@@ -862,7 +862,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.06,
+    "ibov30": -0.08,
     "dolar30": 0.24
    },
    {
@@ -876,7 +876,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.08,
     "dolar30": 0.24
    },
    {
@@ -1583,7 +1583,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T13:38-03:00",
+ "atualizado_em": "2026-11-19T13:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1591,7 +1591,6 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -1727,6 +1726,17 @@
    "tickers": []
   },
   {
+   "titulo": "‘Não é o mercado que deseja o controle fiscal; quem deseja sou eu’, diz Lula",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lula-mercado-controle-fiscal-quem-deseja-sou-eu/",
+   "publicado": "2026-11-19T12:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
@@ -1771,19 +1781,6 @@
    "publicado": "2026-11-19T10:56-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe com aprovação de pacote fiscal no Senado; dólar se aproxima de R$ 5,90",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5EcVBycVMwTTJhYlBKN0syZkU5ZmdZdnhPVFU4VmdFc2xYZGIybmlxV09qTGR0eVkwamVlb0FOc1g1ME1OZ29ZVU4tdFI5LTRrMmhxZWQ2N01jeEZSRXR5cHhyQXJnVEtfOWJZ?oc=5",
-   "publicado": "2026-11-19T10:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
