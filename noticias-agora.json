@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T17:20-03:00",
+  "atualizado_em": "2026-11-19T17:22-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     166007.0
+     166013.0
     ]
    ]
   },
@@ -752,7 +752,11 @@
     ],
     [
      "17:20",
-     5.9404
+     5.9458
+    ],
+    [
+     "17:23",
+     5.9458
     ]
    ]
   },
@@ -1467,7 +1471,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.18
+    "dolar30": 0.27
    },
    {
     "hora": "16:56",
@@ -1480,7 +1484,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.26
    },
    {
     "hora": "17:19",
@@ -2401,7 +2405,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T17:20-03:00",
+ "atualizado_em": "2026-11-19T17:22-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2411,7 +2415,8 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
@@ -2492,6 +2497,18 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Moedas emergentes recuam com dólar forte e apostas em altas de juros pelo Fed",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPZ3lvQk5fSllnS2pydlRqaTlJM3ZFX3dnekFrbXYzVFIybEQ5R1FkaHpPLWtWUTlWOG5oWnN6NEwzNTlnUUtua1R1SENPc1dvSm1QVy10aWk0Qlo4SU15V1pONHdyRGQ2enVjZUtEdlVIcUd0T09uOFdudVR2Z2pXdXk4Yk9GYnFBOW9EOEg4bmNUZzNhQm04VTA3RS1jaVU4MXkwMDB1SlNoUVJuMHJ0Tm1kSV9xREUyMHhVUU9IVlFBeWItNUVMUjd3WHVPdDDSAd4BQVVfeXFMTVZTQ2pBRzl4ZXhyRWxUbUVHWlRudW1zRE16ME1XOTZDTm9CUlNyN0NHQ3VQX2M4WmVQYnhwNzFuWlRLQ18zdGdHek9FSVRNMUVjUzQ0d2FTOUg4SmNNWFkyeXlXbkxwMjlwQXdwOFFMRFRvUEU2TGlJMlVWdEZhTDJwRlRwdkpQT0hDWXhGbmctbkUyRnRZOVdOM3JCXzUxSFFXSXBqS2xFd19lczgtUU9vODRrd3ZHTi1FQUR2VWphYlNkZWNSa1ZfLVFFMTJ2LUFudzVzY2lfZWVxal93?oc=5",
+   "publicado": "2026-11-19T15:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
