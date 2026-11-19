@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T13:08-03:00",
+  "atualizado_em": "2026-11-19T13:38-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -143,11 +143,35 @@
     ],
     [
      "12:50",
-     166821.0
+     166797.0
     ],
     [
-     "12:53",
-     166818.0
+     "12:55",
+     166798.0
+    ],
+    [
+     "13:00",
+     166479.0
+    ],
+    [
+     "13:05",
+     166520.0
+    ],
+    [
+     "13:10",
+     166586.0
+    ],
+    [
+     "13:15",
+     166722.0
+    ],
+    [
+     "13:20",
+     166708.0
+    ],
+    [
+     "13:23",
+     166690.0
     ]
    ]
   },
@@ -352,11 +376,35 @@
     ],
     [
      "13:05",
-     5.9192
+     5.918
     ],
     [
-     "13:08",
-     5.9184
+     "13:10",
+     5.9091
+    ],
+    [
+     "13:15",
+     5.9161
+    ],
+    [
+     "13:20",
+     5.9179
+    ],
+    [
+     "13:25",
+     5.9223
+    ],
+    [
+     "13:30",
+     5.9172
+    ],
+    [
+     "13:35",
+     5.9123
+    ],
+    [
+     "13:38",
+     5.9102
     ]
    ]
   },
@@ -772,7 +820,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.01,
+    "ibov30": -0.01,
     "dolar30": 0.23
    },
    {
@@ -787,8 +835,8 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.26,
+    "dolar30": 0.18
    },
    {
     "hora": "12:56",
@@ -801,8 +849,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.06,
+    "dolar30": 0.24
    },
    {
     "hora": "12:57",
@@ -814,8 +862,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.06,
+    "dolar30": 0.24
    },
    {
     "hora": "12:59",
@@ -829,7 +877,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.24
    },
    {
     "hora": "13:04",
@@ -843,7 +891,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.06
    }
   ]
  },
@@ -1535,7 +1583,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T13:08-03:00",
+ "atualizado_em": "2026-11-19T13:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1550,6 +1598,41 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "AMD falls on short-seller report of alleged China exposure",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+   "publicado": "2026-11-19T13:24-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar segue acima de R$ 5,90 mesmo após BC vender US$ 1 bilhão em leilão extraordinário",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWDVmUFpNcWdDXzVrbW9FWDA1UklMV3A5ZkE5TWVJU1FmdEd1bmNubVh5aV9tU1dZbThkSkx4Q2FQOEV6Wm80bF9BSUtkTkk3cHltcHN2Nm5vR3RHTVZOcC1TRVBLbERxVGMtbEp6UVJ2cVpzRHl3S0wyUHRTZ0tLdzh5MHY5NUpKUmd3SnZhZHZvU1BnQ2JoUnM0RzlKcE43eDJ1NGEwUFRFTFNtd0UwdEJvWVdaZHlwMDYw0gHKAUFVX3lxTE5lWVByb2p6SVVvX1NKZVJFVW05VEV3bm9hZnhXbWlzTzVqV2NyUTRZUXVoYkE3VmI2Q0lvQ0IwZ2I3YjVHN0NSWUhodnc1eDBGeTd3eDczakQxSVFyVVZXUEJyVFZXaUJMR0ZtajYzLVVDcmFfLUxqdlNXUFR5cUVZUnBkQnRVWlY3WEpmVDVxWXZDcnN4My1TbjFmM2IwdUFaU05pSHNpdHZLSGZpUTNBZGRHLVVnUTMtN3dFelM2T2tlTHZIcUI4Wnc?oc=5",
+   "publicado": "2026-11-19T13:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
+   "publicado": "2026-11-19T13:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar nas alturas: Banco Central intervém em leilão de US$ 1 bilhão",
    "fonte": "Money Times",
@@ -1571,6 +1654,17 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar reduz alta após leilão do BC, mas opera acima de R$ 5,90, maior cotação em 19 meses",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM0RZR3FtdGNiaEZfak1xMHVxVmxWRTJ0TlAtVWxPVk10S2tNXzV6a182V3lLWlBWdk9uVndONmxWSUczZ21sbHdVdTNNQU5CV0hMUzhCaUFFWjc0NmxIMzdlVnpYTkdkcGNJa1ZPdFZIVE01RlRpckU2UXBSTV9acjFMekhMZUhvVFM0MXJjbnRpTjc2d2FxQTlkTDZBdW5UY09VQmctYzZBVmtMdl9RSk1wYmkyQ2t3Uk9uRi1Ea042WFlFZ1RvaFcxcW5lWGNmMkJiVHpsb2c4c1BCOWpwakhLLVU4clFJLXfSAe8BQVVfeXFMTjBRbU93NEhWTnpoU2Y3dnlBSFNaOTNsVGNySWhTWDlRdTQyNVJLSjdHaE9ZY3h1V1doQUR6NE5UTkVxMmF3S0FacHgtNU9RLXR0Q3B1VTJhWkdLWkFoV095VEZfYmdLOGh6Nk1salo2NXg0S2JPb0pQNFR6RVVjbUVvdU9FcUtNeFY3NGVMSGFBYzlOTmViT296d3JjdS1Cc0YtSDVNS2l6V1p0UUJSTkNPRGdoaWpxRk9hdGw3QS1VYjFWUUpUc3M0eDJRSzd6VjAtSkJKa3o1d1BlUjdmUmthMGZpYU55ZVV6YldDaFE?oc=5",
+   "publicado": "2026-11-19T12:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1633,39 +1727,6 @@
    "tickers": []
   },
   {
-   "titulo": "‘Não é o mercado que deseja o controle fiscal; quem deseja sou eu’, diz Lula",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/lula-mercado-controle-fiscal-quem-deseja-sou-eu/",
-   "publicado": "2026-11-19T12:23-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Proposta de ajuste fiscal deve passar na Câmara sem alterações substanciais",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/proposta-de-ajuste-fiscal-deve-passar-na-camara-sem-alteracoes-substanciais.shtml",
-   "publicado": "2026-11-19T12:13-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dow Jones hoje: estreia da Anthropic impulsiona Nasdaq e ações de tecnologia disparam",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGptdmxXZG1aY3J6dURQQUc1bTJURVVDOWNtTFNEV0JmMl94c2tmOG10RlA5ZVB4dzVhSDlUY08yZ2RWYXM2QVJxc3BheV9TQnkxWHk1aGtKT1QyX3FJWXlDNkpqcVBMOXdyQUItbnFuTU9EdmJvbU1Ra1U2Z1pYVzF4NXQ4WFZPTGhEbUtmeEdybWJ0WldMSVNlQVIxSHBVYkFSOEJZV2NCTGN1REp0TEcxT3owakZOWVNIbDFEZm5VUS1VQVBNSGNEUmdScWtIZDlDa09pVXpIWUZzT05VQl9RZ9IB6AFBVV95cUxPRzhNUXc2cDJqbndSN0NOMHV5d1g1dGtieGkyazlPOXVydEZiamxpbmtkMk94aWN1c3JicnZVV1U1QmM0NnFrNG90VmlzZUtjbkdvRFBZbUFCYl9wMm1MZTR6TzNOZ2RKUG0tSUtYdWVzNHdsUGRaUVdWSHlNR0JwMlNwbWRuSVBqMmxhOHlpaFNOYTVHMWM4ME9kZEJUa0l4NzlwS1duNkZxNV9PZzVWdXYtemVZeUt5RExHb1ZvZVZiMm41TUV2REg1bVZFU0lPNEFSUXdBTkRVOVgyaEtfbVFJRFloMHJm?oc=5",
-   "publicado": "2026-11-19T12:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
@@ -1678,6 +1739,17 @@
    "tickers": [
     "BBDC4"
    ]
+  },
+  {
+   "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT1k5UDQwQ0QxMFdfRy1EU0oxcmk4QWMzeUJlMjNNWjhPaFZXT203N0xyRW1jUzlfMk14ejhIdkVmNFp2TkJiZ3hKa0cybXpEODZMUDBjNUJ0SExLd0JXTlVfNGtWSDFPcWJHdnNOUUQwUmdPS29Jdl9pZzdwd19TZmFxQ2dvbV9zV2VJTjRCMng2bWthajdtaGkxNFAzMWMySDE0?oc=5",
+   "publicado": "2026-11-19T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   },
   {
    "titulo": "BNDES tem lucro de R$ 20,3 bi até setembro, puxado por venda de ações da Petrobras",
@@ -1700,30 +1772,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa pode subir 20%, mas Itaú BBA não vê motivos para comprar; banco rebaixa bolsa para neutra",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMGFubFowSlYwSXBNcTBvRGh5OW8tc0NMUzBKN3p2d1lpN05lQWxaN0VLVDVNdExNMXhJeVJ3ZEJuTEhLSjQ2WG5Dcm5pR1dUYXBpWGRsc3BseHlxNzhKdEphUWVxMmdtTE5qVDA1RFRDeUF0UlRVY0xBTGg1SkVVZWVtdWVzYXRMeVlUUkh2OG1ZWG1xZ2RCNXlzQ1ZPclB0cG5ZOHdaNEl4N3NwWVpHa1FrS2hjNU53THBvR18xWGEwTDNwN2ZLSHd3UQ?oc=5",
-   "publicado": "2026-11-19T10:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
-  {
-   "titulo": "Ajuste fiscal, amarras de Lula e soluções mágicas",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/fernando-dantas/ajuste-fiscal-amarras-de-lula-e-solucoes-magicas/",
-   "publicado": "2026-11-19T10:46-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
