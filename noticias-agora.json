@@ -1,7 +1,16 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T10:13-03:00",
+  "atualizado_em": "2026-11-19T10:15-03:00",
+  "ibov": {
+   "anterior": 167537.95,
+   "pontos": [
+    [
+     "10:00",
+     167559.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.8488,
    "pontos": [
@@ -63,11 +72,11 @@
     ],
     [
      "10:10",
-     5.8883
+     5.8898
     ],
     [
-     "10:13",
-     5.8878
+     "10:15",
+     5.8913
     ]
    ]
   },
@@ -83,6 +92,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.41
    },
    {
@@ -99,6 +109,7 @@
      "BPAC11",
      "ITUB4"
     ],
+    "ibov30": null,
     "dolar30": -0.41
    },
    {
@@ -112,6 +123,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.42
    },
    {
@@ -126,6 +138,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.42
    },
    {
@@ -138,6 +151,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.11
    },
    {
@@ -152,6 +166,7 @@
     "tickers": [
      "ITUB4"
     ],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -166,6 +181,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.04
    },
    {
@@ -178,6 +194,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.07
    },
    {
@@ -190,6 +207,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.17
    },
    {
@@ -203,6 +221,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.17
    },
    {
@@ -215,6 +234,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.17
    },
    {
@@ -229,7 +249,8 @@
     "tickers": [
      "BBSE3"
     ],
-    "dolar30": 0.18
+    "ibov30": null,
+    "dolar30": 0.2
    },
    {
     "hora": "09:48",
@@ -242,7 +263,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.12
+    "ibov30": null,
+    "dolar30": 0.18
    },
    {
     "hora": "10:07",
@@ -256,6 +278,7 @@
     "tickers": [
      "BBAS3"
     ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -694,7 +717,7 @@
    "em": "2026-11-19T12:43:04+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T10:13-03:00",
+ "atualizado_em": "2026-11-19T10:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
