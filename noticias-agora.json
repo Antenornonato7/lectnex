@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T17:00-03:00",
+  "atualizado_em": "2026-11-19T17:03-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -328,6 +328,10 @@
     [
      "16:40",
      166341.0
+    ],
+    [
+     "16:45",
+     166345.0
     ]
    ]
   },
@@ -720,7 +724,11 @@
     ],
     [
      "17:00",
-     5.9323
+     5.9358
+    ],
+    [
+     "17:03",
+     5.9364
     ]
    ]
   },
@@ -1422,7 +1430,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.22
    },
    {
     "hora": "16:52",
@@ -1432,6 +1440,19 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:56",
+    "titulo": "Juros futuros têm forte alta com desconfiança sobre ajuste fiscal",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM2NCOTNOYWxGdzlVdGgyT2gxSXFjRXN6YTlrVWJ4QTZzT2liX0FVREwwZUd6aEI0VnhyV09ZV29hZENDZ3ZEa00yRmtyTk1IOHNIQXk4dEJXMXlPRjlZY3Q5TEFzbkcxTllUaDhFN3VnNUVqQ0s2RkdsbjMyUFpFUDJFSkQtdjFqNU1KVFhOMnBLRG91MmVxMUFaaXN1azZEQUd1eVhPRm1NYVZKekJ3VWhZdTZBVENqMmc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -2292,6 +2313,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Juros futuros têm forte alta com desconfiança sobre ajuste fiscal",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM2NCOTNOYWxGdzlVdGgyT2gxSXFjRXN6YTlrVWJ4QTZzT2liX0FVREwwZUd6aEI0VnhyV09ZV29hZENDZ3ZEa00yRmtyTk1IOHNIQXk4dEJXMXlPRjlZY3Q5TEFzbkcxTllUaDhFN3VnNUVqQ0s2RkdsbjMyUFpFUDJFSkQtdjFqNU1KVFhOMnBLRG91MmVxMUFaaXN1azZEQUd1eVhPRm1NYVZKekJ3VWhZdTZBVENqMmc?oc=5",
+   "publicado": "2026-11-19T16:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2321,19 +2353,30 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T17:00-03:00",
+ "atualizado_em": "2026-11-19T17:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Juros futuros têm forte alta com desconfiança sobre ajuste fiscal",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM2NCOTNOYWxGdzlVdGgyT2gxSXFjRXN6YTlrVWJ4QTZzT2liX0FVREwwZUd6aEI0VnhyV09ZV29hZENDZ3ZEa00yRmtyTk1IOHNIQXk4dEJXMXlPRjlZY3Q5TEFzbkcxTllUaDhFN3VnNUVqQ0s2RkdsbjMyUFpFUDJFSkQtdjFqNU1KVFhOMnBLRG91MmVxMUFaaXN1azZEQUd1eVhPRm1NYVZKekJ3VWhZdTZBVENqMmc?oc=5",
+   "publicado": "2026-11-19T16:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "S&P 500 heads for 6th straight decline. Plus, J&J advances two key products",
    "fonte": "CNBC",
@@ -2436,29 +2479,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ações da Anthropic estreiam com alta de mais de 30% na Nasdaq",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/acoes-da-anthropic-estreiam-com-alta-de-mais-de-30-na-nasdaq.shtml",
-   "publicado": "2026-11-19T14:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
-   "publicado": "2026-11-19T14:01-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
