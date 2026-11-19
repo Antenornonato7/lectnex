@@ -82,7 +82,7 @@ def dar_nome(nome='Lectnex · Leitura do Dia'):
     for n in lista.get('results', lista if isinstance(lista, list) else []):
         atual = (n.get('name') or '').strip()
         print(f"::notice title=Newsletter::{n.get('username')}: nome atual {atual!r}")
-        if not atual:
+        if not atual or atual.lower() in ('my awesome newsletter', 'my newsletter', 'untitled'):  # nome padrão do Buttondown conta como 'sem nome'
             req = urllib.request.Request(f"https://api.buttondown.com/v1/newsletters/{n['id']}", data=json.dumps({'name': nome}).encode(), method='PATCH', headers=h)
             r = json.load(urllib.request.urlopen(req, timeout=30))
             print(f"::notice title=Newsletter::nome definido: {r.get('name')!r}")
