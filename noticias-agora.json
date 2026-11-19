@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T12:13-03:00",
+  "atualizado_em": "2026-11-19T12:15-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -99,11 +99,15 @@
     ],
     [
      "11:55",
-     168005.0
+     167886.0
     ],
     [
-     "11:58",
-     167933.0
+     "12:00",
+     167777.0
+    ],
+    [
+     "12:01",
+     167887.0
     ]
    ]
   },
@@ -264,11 +268,15 @@
     ],
     [
      "12:10",
-     5.8725
+     5.8821
     ],
     [
-     "12:13",
-     5.864
+     "12:15",
+     5.879
+    ],
+    [
+     "12:16",
+     5.8787
     ]
    ]
   },
@@ -616,7 +624,21 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": -0.67
+    "dolar30": -0.51
+   },
+   {
+    "hora": "11:50",
+    "titulo": "Pedidos semanais de auxílio-desemprego nos EUA têm leve alta",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRDM2OXFEX2ViY1Z5M2dEcGZKUjRhSmljVDZ5TGNrN2dyVEFiY0pRb2Z5dkdqSVZ4NTdUcHZXQm8yQUtzVlduVnpDV1pIRG5YekJkMXVXeGdUYkRrMHNVT0l3dlJRNnVjRjBPb2FtYi1Od2lnZXdvVzVhQVBzU3RlcXA2WGdZd0hfeGQxUWRxdHNzSUs3Z1RBOW8yN25tckhxRTA4SGFFWkdHVjdLRFROM0pvUDF1S2VROVRMSzJn?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.71
    },
    {
     "hora": "11:54",
@@ -628,6 +650,22 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:00",
+    "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1175,6 +1213,18 @@
    ]
   },
   {
+   "titulo": "Pedidos semanais de auxílio-desemprego nos EUA têm leve alta",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRDM2OXFEX2ViY1Z5M2dEcGZKUjRhSmljVDZ5TGNrN2dyVEFiY0pRb2Z5dkdqSVZ4NTdUcHZXQm8yQUtzVlduVnpDV1pIRG5YekJkMXVXeGdUYkRrMHNVT0l3dlJRNnVjRjBPb2FtYi1Od2lnZXdvVzVhQVBzU3RlcXA2WGdZd0hfeGQxUWRxdHNzSUs3Z1RBOW8yN25tckhxRTA4SGFFWkdHVjdLRFROM0pvUDF1S2VROVRMSzJn?oc=5",
+   "publicado": "2026-11-19T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT1k5UDQwQ0QxMFdfRy1EU0oxcmk4QWMzeUJlMjNNWjhPaFZXT203N0xyRW1jUzlfMk14ejhIdkVmNFp2TkJiZ3hKa0cybXpEODZMUDBjNUJ0SExLd0JXTlVfNGtWSDFPcWJHdnNOUUQwUmdPS29Jdl9pZzdwd19TZmFxQ2dvbV9zV2VJTjRCMng2bWthajdtaGkxNFAzMWMySDE0?oc=5",
@@ -1184,6 +1234,20 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
+   "publicado": "2026-11-19T12:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   }
  ],
  "enviadas": [
@@ -1213,7 +1277,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T12:13-03:00",
+ "atualizado_em": "2026-11-19T12:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1229,6 +1293,20 @@
  ],
  "noticias": [
   {
+   "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
+   "publicado": "2026-11-19T12:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
    "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT1k5UDQwQ0QxMFdfRy1EU0oxcmk4QWMzeUJlMjNNWjhPaFZXT203N0xyRW1jUzlfMk14ejhIdkVmNFp2TkJiZ3hKa0cybXpEODZMUDBjNUJ0SExLd0JXTlVfNGtWSDFPcWJHdnNOUUQwUmdPS29Jdl9pZzdwd19TZmFxQ2dvbV9zV2VJTjRCMng2bWthajdtaGkxNFAzMWMySDE0?oc=5",
@@ -1236,6 +1314,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Pedidos semanais de auxílio-desemprego nos EUA têm leve alta",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRDM2OXFEX2ViY1Z5M2dEcGZKUjRhSmljVDZ5TGNrN2dyVEFiY0pRb2Z5dkdqSVZ4NTdUcHZXQm8yQUtzVlduVnpDV1pIRG5YekJkMXVXeGdUYkRrMHNVT0l3dlJRNnVjRjBPb2FtYi1Od2lnZXdvVzVhQVBzU3RlcXA2WGdZd0hfeGQxUWRxdHNzSUs3Z1RBOW8yN25tckhxRTA4SGFFWkdHVjdLRFROM0pvUDF1S2VROVRMSzJn?oc=5",
+   "publicado": "2026-11-19T11:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1326,17 +1416,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dow Jones hoje sobe, Nasdaq dispara com estreia da Anthropic e juros dos EUA chamam atenção",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGptdmxXZG1aY3J6dURQQUc1bTJURVVDOWNtTFNEV0JmMl94c2tmOG10RlA5ZVB4dzVhSDlUY08yZ2RWYXM2QVJxc3BheV9TQnkxWHk1aGtKT1QyX3FJWXlDNkpqcVBMOXdyQUItbnFuTU9EdmJvbU1Ra1U2Z1pYVzF4NXQ4WFZPTGhEbUtmeEdybWJ0WldMSVNlQVIxSHBVYkFSOEJZV2NCTGN1REp0TEcxT3owakZOWVNIbDFEZm5VUS1VQVBNSGNEUmdScWtIZDlDa09pVXpIWUZzT05VQl9RZ9IB6AFBVV95cUxPRzhNUXc2cDJqbndSN0NOMHV5d1g1dGtieGkyazlPOXVydEZiamxpbmtkMk94aWN1c3JicnZVV1U1QmM0NnFrNG90VmlzZUtjbkdvRFBZbUFCYl9wMm1MZTR6TzNOZ2RKUG0tSUtYdWVzNHdsUGRaUVdWSHlNR0JwMlNwbWRuSVBqMmxhOHlpaFNOYTVHMWM4ME9kZEJUa0l4NzlwS1duNkZxNV9PZzVWdXYtemVZeUt5RExHb1ZvZVZiMm41TUV2REg1bVZFU0lPNEFSUXdBTkRVOVgyaEtfbVFJRFloMHJm?oc=5",
-   "publicado": "2026-11-19T10:45-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Anthropic estreia na B3 e permite compra de ações por cerca de R$ 60",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/anthropic-estreia-na-b3-e-permite-compra-de-bdrs-por-cerca-de-r-60.shtml",
@@ -1372,18 +1451,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China, Rússia e EUA planejam ampliar oferta de petróleo refinado, diz agência",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/china-russia-e-eua-planejam-ampliar-oferta-de-petroleo-refinado-diz-agencia.shtml",
-   "publicado": "2026-11-19T10:31-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
