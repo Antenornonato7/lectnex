@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T14:40-03:00",
+  "atualizado_em": "2026-11-19T14:43-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -219,7 +219,11 @@
     ],
     [
      "14:25",
-     166570.0
+     166448.0
+    ],
+    [
+     "14:28",
+     166434.0
     ]
    ]
   },
@@ -500,7 +504,11 @@
     ],
     [
      "14:40",
-     5.8973
+     5.893
+    ],
+    [
+     "14:43",
+     5.8929
     ]
    ]
   },
@@ -999,7 +1007,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.27,
     "dolar30": -0.3
    },
    {
@@ -1013,7 +1021,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.47
    }
   ]
  },
@@ -1727,7 +1735,7 @@
    "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T14:40-03:00",
+ "atualizado_em": "2026-11-19T14:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1903,6 +1911,17 @@
    "tickers": []
   },
   {
+   "titulo": "Proposta de ajuste fiscal deve passar na Câmara sem alterações substanciais",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/proposta-de-ajuste-fiscal-deve-passar-na-camara-sem-alteracoes-substanciais.shtml",
+   "publicado": "2026-11-19T12:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Se o câmbio ficar nesse patamar por quatro meses, 2027 será ainda mais difícil, diz CEO do Bradesco",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/entrevista-marcelo-noronha-bradesco-primeiro-ano-governo-cambio-ajuste/",
@@ -1914,19 +1933,6 @@
    ],
    "tickers": [
     "BBDC4"
-   ]
-  },
-  {
-   "titulo": "BNDES tem lucro de R$ 20,3 bi até setembro, puxado por venda de ações da Petrobras",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bndes-tem-lucro-de-r-203-bi-ate-setembro-puxado-por-venda-de-acoes-da-petrobras.shtml",
-   "publicado": "2026-11-19T11:41-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
    ]
   }
  ]
