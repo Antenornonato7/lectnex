@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-19",
-  "atualizado_em": "2026-11-19T11:38-03:00",
+  "atualizado_em": "2026-11-19T12:08-03:00",
   "ibov": {
    "anterior": 167537.95,
    "pontos": [
@@ -71,11 +71,35 @@
     ],
     [
      "11:20",
-     168080.0
+     168123.0
     ],
     [
-     "11:23",
-     168033.0
+     "11:25",
+     168173.0
+    ],
+    [
+     "11:30",
+     168011.0
+    ],
+    [
+     "11:35",
+     168371.0
+    ],
+    [
+     "11:40",
+     168183.0
+    ],
+    [
+     "11:45",
+     168044.0
+    ],
+    [
+     "11:50",
+     168042.0
+    ],
+    [
+     "11:53",
+     167997.0
     ]
    ]
   },
@@ -208,11 +232,35 @@
     ],
     [
      "11:35",
-     5.8965
+     5.9077
     ],
     [
-     "11:38",
-     5.8991
+     "11:40",
+     5.9122
+    ],
+    [
+     "11:45",
+     5.9152
+    ],
+    [
+     "11:50",
+     5.9212
+    ],
+    [
+     "11:55",
+     5.921
+    ],
+    [
+     "12:00",
+     5.8772
+    ],
+    [
+     "12:05",
+     5.8655
+    ],
+    [
+     "12:08",
+     5.8617
     ]
    ]
   },
@@ -461,6 +509,20 @@
     "dolar30": 0.21
    },
    {
+    "hora": "10:40",
+    "titulo": "Ibovespa sobe com baixa liquidez após aprovação do pacote fiscal no Senado",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNN3NTdTVaVzJQbm5mZHNTT0tPeVhhSW5VRTJ0TS1qSHZSV2s3a2k0bExjUmtCeWs1Zm1TaVZ2UkR5NWhXVlJXcWxpZXQyOWxnMFpSQzlqRW1teGloUHJOejYyRjF0V1VzM0dvQmk2Q1VTb3F0T3Q5MV9rV0NPb0w0QUxvR09rSjdNWVhkWEV3X1VqWEc2QU5EQ3ppWDlXZVdsMGVGc0lNTy1iVXpRMHh3a2xtSFFDa2NpT0l0NXEyaDdoQW9jdVhpTmcwX0Qyb0IxZk10WFg3ZnVNSFHSAdsBQVVfeXFMTTdzU3U1WlcyUG5uZmRzU09LT3lYYUluVUUydE0takh2UldrN2tpNGxMY1JrQnlrNWZtU2lWdlJEeTVoV1ZSV3FsaWV0MjlsZzBaUkM5akVtbXhpaFByTno2MkYxdFdVczNHb0JpNkNVU29xdE90OTFfa1dDT29MNEFMb0dPa0o3TVlYZFhFd19ValhHNkFOREN6aVg5V2VXbDBlRnNJTU8tYlV6UTB4d2tsbUhRQ2tjaU9JdDVxMmg3aEFvY3VYaU5nMF9EMm9CMWZNdFhYN2Z1TUhR?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.28,
+    "dolar30": 0.21
+   },
+   {
     "hora": "10:44",
     "titulo": "Anthropic estreia na B3 e permite compra de ações por cerca de R$ 60",
     "fonte": "Folha",
@@ -514,7 +576,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.03,
+    "ibov30": 0.11,
     "dolar30": 0.33
    },
    {
@@ -530,8 +592,36 @@
      "BPAC11",
      "VALE3"
     ],
+    "ibov30": 0.26,
+    "dolar30": 0.36
+   },
+   {
+    "hora": "11:41",
+    "titulo": "BNDES tem lucro de R$ 20,3 bi até setembro, puxado por venda de ações da Petrobras",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bndes-tem-lucro-de-r-203-bi-ate-setembro-puxado-por-venda-de-acoes-da-petrobras.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
-    "dolar30": 0.17
+    "dolar30": -0.85
+   },
+   {
+    "hora": "11:54",
+    "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT1k5UDQwQ0QxMFdfRy1EU0oxcmk4QWMzeUJlMjNNWjhPaFZXT203N0xyRW1jUzlfMk14ejhIdkVmNFp2TkJiZ3hKa0cybXpEODZMUDBjNUJ0SExLd0JXTlVfNGtWSDFPcWJHdnNOUUQwUmdPS29Jdl9pZzdwd19TZmFxQ2dvbV9zV2VJTjRCMng2bWthajdtaGkxNFAzMWMySDE0?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -989,6 +1079,18 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa sobe com baixa liquidez após aprovação do pacote fiscal no Senado",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNN3NTdTVaVzJQbm5mZHNTT0tPeVhhSW5VRTJ0TS1qSHZSV2s3a2k0bExjUmtCeWs1Zm1TaVZ2UkR5NWhXVlJXcWxpZXQyOWxnMFpSQzlqRW1teGloUHJOejYyRjF0V1VzM0dvQmk2Q1VTb3F0T3Q5MV9rV0NPb0w0QUxvR09rSjdNWVhkWEV3X1VqWEc2QU5EQ3ppWDlXZVdsMGVGc0lNTy1iVXpRMHh3a2xtSFFDa2NpT0l0NXEyaDdoQW9jdVhpTmcwX0Qyb0IxZk10WFg3ZnVNSFHSAdsBQVVfeXFMTTdzU3U1WlcyUG5uZmRzU09LT3lYYUluVUUydE0takh2UldrN2tpNGxMY1JrQnlrNWZtU2lWdlJEeTVoV1ZSV3FsaWV0MjlsZzBaUkM5akVtbXhpaFByTno2MkYxdFdVczNHb0JpNkNVU29xdE90OTFfa1dDT29MNEFMb0dPa0o3TVlYZFhFd19ValhHNkFOREN6aVg5V2VXbDBlRnNJTU8tYlV6UTB4d2tsbUhRQ2tjaU9JdDVxMmg3aEFvY3VYaU5nMF9EMm9CMWZNdFhYN2Z1TUhR?oc=5",
+   "publicado": "2026-11-19T10:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Anthropic estreia na B3 e permite compra de ações por cerca de R$ 60",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/anthropic-estreia-na-b3-e-permite-compra-de-bdrs-por-cerca-de-r-60.shtml",
@@ -1050,6 +1152,30 @@
     "BPAC11",
     "VALE3"
    ]
+  },
+  {
+   "titulo": "BNDES tem lucro de R$ 20,3 bi até setembro, puxado por venda de ações da Petrobras",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bndes-tem-lucro-de-r-203-bi-ate-setembro-puxado-por-venda-de-acoes-da-petrobras.shtml",
+   "publicado": "2026-11-19T11:41-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT1k5UDQwQ0QxMFdfRy1EU0oxcmk4QWMzeUJlMjNNWjhPaFZXT203N0xyRW1jUzlfMk14ejhIdkVmNFp2TkJiZ3hKa0cybXpEODZMUDBjNUJ0SExLd0JXTlVfNGtWSDFPcWJHdnNOUUQwUmdPS29Jdl9pZzdwd19TZmFxQ2dvbV9zV2VJTjRCMng2bWthajdtaGkxNFAzMWMySDE0?oc=5",
+   "publicado": "2026-11-19T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1072,9 +1198,14 @@
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQXZZb09BSkd4RVFvY0c5cDByMUZlREsxeURacGgtMTFUM2taV3AxYThrd2VPRlY5aTJkeFRFTjBNZ3o1cmJKV2prOGFXRkFZNVl2Rk82bmdBNTJ1eXlXWmJvM1BVR0JmckNZaXlybTkyY2J1UUN3cjhHYzRKdnVOM00zWWhPSzVvWVJxSUFHX181Y1RFR0x0YzE3X0tYSXl4R3lKOUJFRllsUXl4Ym5JclFKUGF5VnJDM1I0YmpUdXNFTC1HbmhVUE5fN0lubWdQQ1pmZzZFdk53UQ?oc=5",
    "titulo": "Ibovespa tenta recuperar os 169 mil pontos de olho no fiscal e alta do dólar; 5 coisas para saber antes de investir hoje (19)",
    "em": "2026-11-19T13:40:26+00:00"
+  },
+  {
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bndes-tem-lucro-de-r-203-bi-ate-setembro-puxado-por-venda-de-acoes-da-petrobras.shtml",
+   "titulo": "BNDES tem lucro de R$ 20,3 bi até setembro, puxado por venda de ações da Petrobras",
+   "em": "2026-11-19T14:45:40+00:00"
   }
  ],
- "atualizado_em": "2026-11-19T11:38-03:00",
+ "atualizado_em": "2026-11-19T12:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1089,6 +1220,42 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar hoje sobe e opera próximo de R$ 5,90 após aprovação de projeto fiscal no Senado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcGZ5T0QwdHlHdmZCYmNWWHE5elM5OVNhdHpLaUVpazN5UDRrWlloNVZ2WjdHeENiR1hhN2h0YU94Y0xYc0diY2FJb2dGREZaMFNUcmlPcGNwcWNhcW5hdjZJUzlfcDBGSTA3WjY4MllHTFJVWnNHWnZrNGF2eXlhZ1VfSVIydm1pcjFzVDlNT3B4X1VkbEJ3TTdSWTXSAaIBQVVfeXFMUFNmNHRwVHJLVXdzVV9DY2hQVURjYXFub2ZLUlpmWHlEenJ0aUdtaGtfWWdIYUdPa3V4TmhYYV9LSDBGRFNrZnJ6R1hxc2dXM0hJRm5YdkF3ejNDb0VYTHBCNkh4MkdULTdEWkx5SVVNMnVOMUx3S2tPQVplbHNaSndweGVKWTcxV0tsR1VFRFpDM056bzhzeXRveFFBd1N3Tnh3?oc=5",
+   "publicado": "2026-11-19T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nasdaq sobe mais de 1% na abertura com impulso de IA e IPO da Anthropic",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT1k5UDQwQ0QxMFdfRy1EU0oxcmk4QWMzeUJlMjNNWjhPaFZXT203N0xyRW1jUzlfMk14ejhIdkVmNFp2TkJiZ3hKa0cybXpEODZMUDBjNUJ0SExLd0JXTlVfNGtWSDFPcWJHdnNOUUQwUmdPS29Jdl9pZzdwd19TZmFxQ2dvbV9zV2VJTjRCMng2bWthajdtaGkxNFAzMWMySDE0?oc=5",
+   "publicado": "2026-11-19T11:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "BNDES tem lucro de R$ 20,3 bi até setembro, puxado por venda de ações da Petrobras",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/bndes-tem-lucro-de-r-203-bi-ate-setembro-puxado-por-venda-de-acoes-da-petrobras.shtml",
+   "publicado": "2026-11-19T11:41-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "É tarde demais para a Vale (VALE3)? Por que o BTG ainda não rebaixou a recomendação para o papel",
    "fonte": "Money Times",
@@ -1187,19 +1354,6 @@
    ]
   },
   {
-   "titulo": "Ibovespa sobe com aprovação de pacote fiscal no Senado; dólar se aproxima de R$ 5,90",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5EcVBycVMwTTJhYlBKN0syZkU5ZmdZdnhPVFU4VmdFc2xYZGIybmlxV09qTGR0eVkwamVlb0FOc1g1ME1OZ29ZVU4tdFI5LTRrMmhxZWQ2N01jeEZSRXR5cHhyQXJnVEtfOWJZ?oc=5",
-   "publicado": "2026-11-19T10:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa tenta recuperar os 169 mil pontos de olho no fiscal e alta do dólar; 5 coisas para saber antes de investir hoje (19)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQXZZb09BSkd4RVFvY0c5cDByMUZlREsxeURacGgtMTFUM2taV3AxYThrd2VPRlY5aTJkeFRFTjBNZ3o1cmJKV2prOGFXRkFZNVl2Rk82bmdBNTJ1eXlXWmJvM1BVR0JmckNZaXlybTkyY2J1UUN3cjhHYzRKdnVOM00zWWhPSzVvWVJxSUFHX181Y1RFR0x0YzE3X0tYSXl4R3lKOUJFRllsUXl4Ym5JclFKUGF5VnJDM1I0YmpUdXNFTC1HbmhVUE5fN0lubWdQQ1pmZzZFdk53UQ?oc=5",
@@ -1238,18 +1392,6 @@
    ]
   },
   {
-   "titulo": "DIs sobem com dólar e exterior, apesar de aprovação de ajuste fiscal no Senado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOY2RsUkZXNDNOcjhKTGhBVXp5T3F5VUZNck50dU9pODVIeC1GVTNCNEFEaFlvMTFFVG1pUWRzT1I0RmFLS0RsWUVrbl9IR3NlQzVUcTNlX3ZVTENLLVJkQjZvQ3E0eHpfcjZvYjRQOXY0VVhTOXVSR3dzYVdVTGQwUEpSRl9VbW1RXzR3T1RYM2ZRTEgySjZ2aWZXcjVlTnE0ZE9QLVZaTFJzZVFnNjFMN2ttZm1McE93NG1rSFVhcnBUWFZJZmJsRENR0gHPAUFVX3lxTE10ODM4cDEyZWdUc3EwQV9HeGFwUzlsckk0cW1kcXdOWTVTc2xyQURXSkRCLUswdTBmU1VXMm5LTk9HQWdzOEV2bUlFanhCNUtYeXYtaWNTLUs4Yl9Wa2NBNDJRVHIwVGE4NmNUaVhtcXJaRUpaUTE1cDVQS0tfU0tmbG03UzVqTFFjRVU5WklTVjZ5RnBrT295ZEpZOXpjSjZWQmRvRVZJenpGNGY3MDhvTmJlVGZPX2JLd285eEdBS3lVTERXY3NxYXlLdjMzOA?oc=5",
-   "publicado": "2026-11-19T09:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Family offices move more money into stocks, hedge AI risk, according to CNBC Family Office Portfolio Tracker",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/19/family-offices-moved-more-money-into-stocks-but-hedged-ai-risk.html",
@@ -1257,17 +1399,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros avançam de olho em ajuste fiscal e nomes para Fazenda",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVkNPdG9VZlczbnB4RURCT2FZc24zNHpacmk4S1ZvR1RJMEt6NzcwT2VOd1hBLXFUU0lBMVpJNFRZWlZucnJoUTY0ZnY2MjFvZUFndlV1ZWsyY2Z2Y3VuTzFhTFd4bHFIanRua1Vndkh0ZG9tTkh4X2lHcXVGVF95ZUcwVkRpcjhoTjBXQlhfaU8zQWFyeldWWkk5akhGbVJSandFb19LaUh2NTloUDdBS2pFMGd2blJzRXQwV1JBcDNjLUnSAdIBQVVfeXFMT0pfQWlnQ3BBanptRG1RVElsQ2JnUGF5QlVvczltWWgyREVRRDdtSU1MZDE4YzhfLXhuZ21DdjN4YTVtR3lZYlIwTk9UclFod0lOM194dmw2dWw3UUhnQnhwM29neGh1d3poWU9tMlo1T0gyRE11dDRwSDktOHpHOFdmM21MR3JZaUhDRVAwTkVfWDJlUGx0YmF4a0h5eDlfZkZRb0NYX1FYaXQtblp3VFpwOXZzVmFLVHJLbUthekFUX2pKRmdBcDZDSWl5UlFldUdR?oc=5",
-   "publicado": "2026-11-19T09:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   },
