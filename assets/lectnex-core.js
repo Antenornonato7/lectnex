@@ -39,7 +39,7 @@
     const nf = (min, max) => nfCache[min + ':' + max] || (nfCache[min + ':' + max] = new Intl.NumberFormat('pt-BR', { minimumFractionDigits: min, maximumFractionDigits: max }));
     LX.num = (v, d = 2) => (v == null || isNaN(v)) ? '—' : nf(d, d).format(v);
     LX.brl = (v, d = 2) => (v == null || isNaN(v)) ? '—' : 'R$ ' + nf(d, d).format(v);
-    LX.pct = (v, d = 2, sign = false) => (v == null || isNaN(v)) ? '—' : (sign && v > 0 ? '+' : '') + nf(d, d).format(v) + '%';
+    LX.pct = (v, d = 2, sign = false) => (v == null || isNaN(v)) ? '—' : (sign && v > 0 ? '+' : '') + nf(d, d).format(v).replace(/^-/, '−') + '%';
     LX.signClass = (v) => v > 0 ? 'text-emerald-600 dark:text-emerald-400' : (v < 0 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500');
     LX.esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -211,6 +211,18 @@
         if (min >= s.pre && min < s.open) return { state: 'pre', text: 'PRÉ-ABERTURA' };
         return { state: 'closed', text: 'FECHADO' };
     };
+    /* Estado do mercado brasileiro (horário de Brasília e calendário da B3), usado pela home para escolher o que mostrar primeiro.
+       fase: pre (dia de pregão, antes dos futuros abrirem) · aberto (futuros negociando) · pos (dia de pregão, depois do fechamento)
+             sem (fim de semana ou feriado). reabre: próximo dia de pregão (quando hoje não tem pregão ou já fechou). */
+    LX.estadoMercado = function () {
+        const f = LX.sessions.b3f, a = LX.sessions.b3, { min } = hmIn('America/Sao_Paulo'), hoje = LX.todayBRT(), util = LX.isBusinessDay(hoje);
+        const nome = LX.b3Holidays(hoje.getFullYear()).get(LX.iso(hoje)) || null, fds = hoje.getDay() === 0 || hoje.getDay() === 6;
+        let fase = !util ? 'sem' : min < f.open ? 'pre' : min < f.close ? 'aberto' : 'pos';
+        const reabre = fase === 'pre' ? hoje : LX.nextBusinessDay(addDays(hoje, 1));
+        const hh = m => `${Math.floor(m / 60)}h${m % 60 ? String(m % 60).padStart(2, '0') : ''}`;
+        return { fase, motivo: !util ? (fds ? 'fim de semana' : nome || 'feriado') : null, reabre, minAgora: min, abreFut: hh(f.open), abreAcoes: hh(a.open), fechaFut: hh(f.close), fechaAcoes: hh(a.close),
+            faltaMin: fase === 'pre' ? f.open - min : null };
+    };
     /* ------------------------------------------------------------------ STATUS DE UMA COTAÇÃO (rótulo único em todo o site)
        quando: horário da cotação NA FONTE · lido: quando o site consultou · mercado: 'b3' (ações e Ibovespa) ou 'b3f' (câmbio/futuros)
        atraso: atraso conhecido da fonte em minutos (só aparece no rótulo se for conhecido) · intervalo: de quanto em quanto tempo o site atualiza
@@ -240,7 +252,7 @@
             return { estado: 'atrasado', rotulo: `Dados desatualizados · última cotação ${dQ ? 'em ' + dQ + ' ' : ''}às ${hQ} BRT`, curto: `desatualizado · ${dQ ? dQ + ' ' : ''}${hQ}`, alerta: true, secundario: sec };
         }
         if (ehFechamento) return fech();
-        return { estado: 'pendente', rotulo: `Fechamento ainda indisponível · última cotação ${dQ ? 'em ' + dQ + ' ' : ''}às ${hQ} BRT`, curto: 'fech. pendente', alerta: true, secundario: sec };
+        return { estado: 'pendente', rotulo: `Fechamento oficial ainda não publicado pela fonte · mostrando a última cotação, ${dQ ? 'de ' + dQ + ' ' : ''}às ${hQ} BRT`, curto: `última cotação ${dQ ? dQ + ' ' : ''}${hQ}`, alerta: true, secundario: sec };
     };
     /* Noticiário: "ao vivo" enquanto a coleta (6h às 23h59, a cada poucos minutos) está em dia */
     LX.statusNoticias = function (atualizado) {
@@ -400,7 +412,9 @@
 
     // Preenche elementos declarativos: <span data-lx="selic"></span>
     LX.fill = function () {
-        const d = LX.data, usd = d.fx.USDBRL;
+        const d = LX.data, fx = d.fx.USDBRL, ref = LX.mesaAtivo && LX.mesaAtivo('USDBRL');
+        // na home, o cabeçalho usa o mesmo registro do dólar da mesa (valor, variação, fonte e horário iguais em todos os blocos)
+        const usd = ref && ref.preco != null ? { bid: ref.preco, pct: ref.var } : fx;
         const map = {
             selic: LX.pct(d.selic.value), 'selic-src': `${d.selic.src} · ${d.selic.date}`,
             cdi: LX.pct(d.cdi.value), 'cdi-src': `${d.cdi.src} · ${d.cdi.date}`,
