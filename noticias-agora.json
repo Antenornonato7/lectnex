@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T15:15-03:00",
+  "atualizado_em": "2026-11-20T15:20-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -190,7 +190,11 @@
      5.9488
     ],
     [
-     "14:36",
+     "15:15",
+     5.9488
+    ],
+    [
+     "15:19",
      5.9488
     ]
    ]
@@ -784,7 +788,7 @@
    "em": "2026-11-20T15:28:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T15:15-03:00",
+ "atualizado_em": "2026-11-20T15:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -796,6 +800,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Jensen Huang wasn't mentioned in latest talks with China, Bessent says",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+   "publicado": "2026-11-20T15:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
@@ -803,18 +819,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Jensen Huang wasn't mentioned in latest talks with China, Bessent says",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-   "publicado": "2026-11-20T14:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
