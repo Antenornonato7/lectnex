@@ -1,0 +1,37 @@
+# Teste dos "15 segundos" (20/11/2026): todo dia às 7h50 (Relógio) abre lectnex.com.br num celular de 360 px e confere se o
+# estado da B3, a manchete e o próximo horário aparecem sem rolar. Só avisa no Telegram privado quando algo sai do lugar.
+name: Teste da primeira tela
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  celular:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Instalar Chromium
+        run: |
+          npm init -y >/dev/null
+          npm install --no-save --no-audit --no-fund playwright@1.48.2
+          npx playwright install --with-deps chromium
+      - name: Abrir a home no celular
+        id: t
+        run: |
+          set +e
+          node tests/primeira_tela.cjs https://lectnex.com.br/ "$RUNNER_TEMP/tela.png" | tee "$RUNNER_TEMP/res.txt"
+          echo "rc=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+      - name: Avisar no Telegram se falhou
+        if: steps.t.outputs.rc != '0'
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+        run: |
+          MSG="⚠️ Primeira tela da home (celular 360 px): $(cat "$RUNNER_TEMP/res.txt" | tail -1 | cut -c1-800)"
+          curl -s -o /dev/null "https://api.telegram.org/bot$TOKEN/sendPhoto" --form-string "chat_id=$CHAT" -F "photo=@$RUNNER_TEMP/tela.png" --form-string "caption=$MSG" || \
+          curl -s -o /dev/null "https://api.telegram.org/bot$TOKEN/sendMessage" --form-string "chat_id=$CHAT" --form-string "text=$MSG"
+          exit 1

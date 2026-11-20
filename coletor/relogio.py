@@ -78,6 +78,7 @@ TAREFAS = [
     ('telegram.yml', 'Telegram contar', {'acao': 'contar'}, ('horarios', ['08:17'], 240), lambda: True),
     ('termo.yml', None, {}, ('horarios', ['08:05'], 240), lambda: True),
     ('sinais.yml', 'Sinais da manhã', {}, ('horarios', ['07:22'], 25), lambda: PREGAO),
+    ('primeira-tela.yml', 'Teste da primeira tela', {}, ('horarios', ['07:50'], 60), lambda: True),  # 20/11/2026: teste dos 15 segundos
     ('instagram.yml', 'Instagram renovar', {'acao': 'renovar'}, ('horarios', ['06:47'], 240), lambda: AGORA.weekday() == 0),
     ('antes.yml', 'Antes do dado', {'enviar': 'true'}, ('horarios', ['07:20'], 180), lambda: UTIL),
     ('coletor-cvm.yml', None, {}, ('horarios', ['07:17'], 360), lambda: AGORA.weekday() in (1, 2, 3, 4, 5)),
@@ -172,7 +173,7 @@ def devida(regra, runs):
 NOMES = {'cotacoes.yml': 'Cotações das ações', 'monitor.yml': 'Monitor do site', 'noticias.yml': 'Notícias', 'curva.yml': 'Curva de juros',
          'reacao.yml': 'Reação do mercado', 'fechamento.yml': 'Fechamento do dia', 'resumo-dono.yml': 'Resumo do dono', 'kit.yml': 'Kit do dia',
          'lembrete.yml': 'Lembrete', 'checar-resultados.yml': 'Conferir resultados', 'telegram.yml': 'Contagem do Telegram', 'termo.yml': 'Termômetro',
-         'sinais.yml': 'Sinais da manhã', 'instagram.yml': 'Instagram', 'antes.yml': 'Antes do dado', 'coletor-cvm.yml': 'Coletor CVM',
+         'sinais.yml': 'Sinais da manhã', 'primeira-tela.yml': 'Teste da primeira tela', 'instagram.yml': 'Instagram', 'antes.yml': 'Antes do dado', 'coletor-cvm.yml': 'Coletor CVM',
          'semanal.yml': 'Resumo semanal', 'carrossel.yml': 'Carrossel da semana', 'posts-semana.yml': 'Posts da semana', 'search-console.yml': 'Relatório do Google', 'teste-menu.yml': 'Teste do menu', 'resumo-site.yml': 'Resumo semanal do site', 'plano-push.yml': 'Lembrete do Plano do Dia (8h45)'}
 
 
