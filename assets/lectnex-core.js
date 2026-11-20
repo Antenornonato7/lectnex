@@ -223,6 +223,18 @@
         return { fase, motivo: !util ? (fds ? 'fim de semana' : nome || 'feriado') : null, reabre, minAgora: min, abreFut: hh(f.open), abreAcoes: hh(a.open), fechaFut: hh(f.close), fechaAcoes: hh(a.close),
             faltaMin: fase === 'pre' ? f.open - min : null };
     };
+    /* Status de um evento da agenda (o mesmo no topo da home, na agenda curta e no calendário completo).
+       Horário em Brasília; "12h–15h30" vale o início; sem hora = o dia todo. */
+    LX.eventoQuando = e => { const m = /^(\d{1,2})h(\d{2})?/.exec((e && e.hora) || ''); return new Date(`${e.data}T${m ? String(m[1]).padStart(2, '0') : '23'}:${m ? (m[2] || '00') : '59'}:00-03:00`).getTime(); };
+    LX.statusEvento = function (e, agora) {
+        agora = agora || Date.now();
+        if (e && e.resultado != null && e.resultado !== '') return { estado: 'divulgado', rotulo: 'Resultado: ' + e.resultado, curto: String(e.resultado) };
+        const t = LX.eventoQuando(e), temHora = /^\d{1,2}h/.test(e.hora || '');
+        if (temHora && t <= agora) return { estado: 'aguardando', rotulo: 'Aguardando resultado', curto: 'aguardando resultado' };
+        return { estado: 'futuro', rotulo: '', curto: '' };
+    };
+    // contagem por extenso: "1 acerto em 2 observações"
+    LX.contagem = (ok, n, s1 = 'acerto', s2 = 'acertos') => `${ok} ${ok === 1 ? s1 : s2} em ${n} observaç${n === 1 ? 'ão' : 'ões'}`;
     /* ------------------------------------------------------------------ STATUS DE UMA COTAÇÃO (rótulo único em todo o site)
        quando: horário da cotação NA FONTE · lido: quando o site consultou · mercado: 'b3' (ações e Ibovespa) ou 'b3f' (câmbio/futuros)
        atraso: atraso conhecido da fonte em minutos (só aparece no rótulo se for conhecido) · intervalo: de quanto em quanto tempo o site atualiza

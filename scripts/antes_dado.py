@@ -70,7 +70,8 @@ def montar(hoje):
     temas = ler('data/manchetes.json', {}).get('temas', {})
     out = {'data': hoje.isoformat(), 'tipo': ev['tipo'], 'curto': curto, 'evento': ev['evento'], 'hora': ev.get('hora'), 'pais': ev.get('pais'),
            'consenso': ev.get('consenso'), 'anterior': ev.get('anterior'), 'passadas': passadas,
-           'divulgacoes': {'win': estat([p['win'] for p in todas]), 'wdo': estat([p['wdo'] for p in todas]), 'desde': todas[-1]['data'] if todas else None},
+           'divulgacoes': {'win': estat([p['win'] for p in todas]), 'wdo': estat([p['wdo'] for p in todas]), 'desde': todas[-1]['data'] if todas else None,
+                           'janelas': {j: sum(1 for p in todas if p.get('janela', '30min') == j) for j in ('30min', '1h')}},
            'por_surpresa': {sp: {'win': estat([p['win'] for p in todas if p['surpresa'] == sp]), 'wdo': estat([p['wdo'] for p in todas if p['surpresa'] == sp])}
                             for sp in ('acima', 'abaixo') if sum(1 for p in todas if p['surpresa'] == sp) >= 3},
            'manchetes': {'tema': tema, 'nome': temas.get(tema, tema), 'win': estat([x.get('ib') for x in mc]), 'wdo': estat([x.get('dl') for x in mc])},

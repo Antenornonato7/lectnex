@@ -96,7 +96,7 @@ def pagina(r, nome, tipo, outras):
     kpi = lambda rot, v, c='': f'<div class="term-panel p-3"><span class="term-label block">{rot}</span><strong class="font-mono text-xl {c}">{v}</strong></div>'
     janela = '1 hora' if r.get('janela') == '1h' else '30 min'
     lista = ''.join(f'<li><a href="dados/{SLUG.get(tipo, tipo)}-{o["data"]}.html" class="hover:text-lect-teal">{br(dt.date.fromisoformat(o["data"]), True)}</a> · saiu {e(o.get("resultado") or "—")}'
-                    f' · WIN <span class="{cor(o.get("win"))}">{pct(o.get("win"))}</span></li>' for o in outras if o['data'] != r['data'])[:4000]
+                    f' · Ibovespa à vista <span class="{cor(o.get("win"))}">{pct(o.get("win"))}</span></li>' for o in outras if o['data'] != r['data'])[:4000]
     ld = [{'@type': 'NewsArticle', 'headline': titulo.replace(' | Lectnex', ''), 'datePublished': f'{r["data"]}T{(r.get("hora") or "09h").replace("h", ":")[:5].ljust(5, "0")}:00-03:00',
            'dateModified': dt.datetime.now(dt.timezone(dt.timedelta(hours=-3))).isoformat(timespec='seconds'), 'url': url, 'inLanguage': 'pt-BR',
            'author': {'@id': BASE + '#org'}, 'publisher': {'@id': BASE + '#org'}, 'description': desc}]
@@ -107,7 +107,7 @@ def pagina(r, nome, tipo, outras):
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Divulgado em {DIAS_SEMANA[dia.weekday()]}, {br(dia, True)}{" às " + e(r["hora"]) + " (Brasília)" if r.get("hora") else ""}. O resultado {sup_txt}{" (" + e(r["consenso"]) + ")" if r.get("consenso") else ""}.</p>
             <div class="mt-5 grid grid-cols-2 md:grid-cols-4 gap-3">
                 {kpi("Saiu", e(r.get("resultado") or "—"))}{kpi("Consenso", e(r.get("consenso") or "—"), "text-slate-500")}
-                {kpi(f"WIN em {janela}", pct(r.get("win")) + ("*" if r.get("win_abertura") else ""), cor(r.get("win")))}{kpi(f"WDO em {janela}", pct(r.get("wdo")), cor(r.get("wdo")))}
+                {kpi(f"Ibovespa à vista em {janela} · 1 obs", pct(r.get("win")) + ("*" if r.get("win_abertura") else ""), cor(r.get("win")))}{kpi(f"Dólar à vista em {janela} · 1 obs", pct(r.get("wdo")), cor(r.get("wdo")))}
             </div>
             <p class="mt-2 font-mono text-[11px] text-slate-500">DI de 2 anos no dia: <strong class="{cor(r.get("di_bps"), True)}">{bps(r.get("di_bps")) if "di_bps" in r and r.get("di_bps") is not None else (r.get("di_obs") or "medido no pregão seguinte")}</strong>{" · * bolsa fechada na hora do dado: inclui o gap da abertura" if r.get("win_abertura") else ""}</p>
         </div></section>
@@ -116,7 +116,7 @@ def pagina(r, nome, tipo, outras):
             <section class="term-panel p-4"><h2 class="font-display font-bold">Divulgações anteriores</h2><ul class="mt-2 space-y-1 font-mono text-xs">{lista}</ul>
             <p class="mt-2 text-xs"><a href="dados/{SLUG.get(tipo, tipo)}.html" class="font-bold text-lect-teal hover:underline">Histórico completo e médias do {e(nome)} →</a></p></section>
             <div class="hidden" data-lx-news="chamada" data-titulo="Receba a agenda e os resultados dos dados às 7h40, antes da abertura."></div>
-            <p class="text-[11px] text-slate-500">WIN pelo Ibovespa à vista e WDO pelo dólar à vista, do último preço antes do dado até {janela} depois. DI: taxa prefixada de 2 anos do Tesouro Direto, da manhã do dia à manhã do pregão seguinte. Consenso de fontes públicas. Conteúdo educacional, não é recomendação de investimento. <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p>
+            <p class="text-[11px] text-slate-500">Ativo medido: Ibovespa à vista (referência para o WIN) e dólar à vista (referência para o WDO), não os contratos futuros; do último preço antes do dado até {janela} depois. DI: taxa prefixada de 2 anos do Tesouro Direto, da manhã do dia à manhã do pregão seguinte. Consenso de fontes públicas. Conteúdo educacional, não é recomendação de investimento. <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p>
         </div>
 '''
     img = None
