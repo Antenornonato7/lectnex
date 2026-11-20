@@ -34,15 +34,15 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261120a">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261120b">
     <link rel="expect" href="#lx-pronto" blocking="render">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261120a">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261120a">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261120b">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261120b">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -55,7 +55,7 @@
     <div id="lx-next" style="display:none !important"></div>
     <div id="faixa" data-sem-glossario class="border-b border-slate-200 dark:border-lect-borderDark bg-white dark:bg-[#0B1422]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-stretch">
-            <ul id="fx-lista" class="flex-1 min-w-0 flex items-stretch overflow-x-auto thin-scroll divide-x divide-slate-200 dark:divide-lect-borderDark" aria-label="Indicadores essenciais">
+            <ul id="fx-lista" class="flex-1 min-w-0 grid grid-cols-3 sm:flex items-stretch sm:overflow-x-auto thin-scroll divide-x divide-slate-200 dark:divide-lect-borderDark" aria-label="Indicadores essenciais">
                 <li class="py-2.5 pr-5 text-sm text-slate-500">Carregando indicadores…</li>
             </ul>
             <button type="button" id="pg-open" class="shrink-0 my-2 ml-3 px-2.5 border border-slate-300 dark:border-lect-borderDark text-slate-600 dark:text-slate-300 hover:text-lect-teal hover:border-lect-teal font-mono text-[11px] font-bold inline-flex items-center gap-1.5" title="Tela simplificada para acompanhar o pregão no celular"><i class="ph-bold ph-device-mobile"></i><span class="hidden sm:inline">MODO PREGÃO</span></button>
@@ -64,41 +64,52 @@
 
     <section id="mesa" data-sem-glossario class="py-5 sm:py-6" aria-label="Mesa de acompanhamento">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="sr-only">Mercado Hoje: acompanhamento do pregão</h1>
-            <!-- Estado da B3 agora (pré-abertura, pregão aberto, encerrado, sem pregão): decide a ordem dos blocos abaixo -->
-            <div id="ms-estado" class="mb-4 min-h-[44px]" aria-live="polite"></div>
-            <div class="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-6 lg:items-start">
+            <h1 class="sr-only">Mercado Hoje: a B3 está aberta, o que mexe com o mercado e o próximo horário importante</h1>
+            <div class="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-6 lg:items-start">
 
-                <!-- COLUNA PRINCIPAL (no celular os blocos se intercalam com a lateral pela ordem) -->
-                <div class="contents lg:flex lg:flex-col lg:gap-5 min-w-0">
+                <!-- COLUNA PRINCIPAL: manchete → próximo evento → preparar → gráfico → agenda curta → notícias -->
+                <div class="flex flex-col gap-5 min-w-0">
 
-                    <!-- Resumo editorial curto e datado -->
-                    <article id="ms-resumo" class="order-1 lg:order-none min-w-0" aria-labelledby="ms-resumo-t">
+                    <!-- Resumo do dia: manchete + até dois destaques (texto longo no arquivo da Leitura) -->
+                    <article id="ms-resumo" class="min-w-0" aria-labelledby="ms-resumo-t">
                         <span id="ms-resumo-quando" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-lect-orange">Leitura do Dia</span>
                         <h2 id="ms-resumo-t" class="font-display text-xl sm:text-2xl font-bold leading-tight mt-1">Carregando a edição…</h2>
+                        <p id="ms-resumo-sub" class="hidden mt-2 text-sm leading-snug text-slate-700 dark:text-slate-300"></p>
                         <ol id="ms-pontos" class="mt-3 grid gap-x-6 gap-y-3 md:grid-cols-2"></ol>
-                        <p id="ms-fech" class="hidden mt-3 text-sm"></p>
                         <div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11px]">
-                            <a href="#leitura" class="font-bold text-lect-teal hover:underline">Leitura completa ↓</a>
-                            <span class="sm:hidden text-slate-600 dark:text-slate-400">Escrito com IA · não é recomendação</span>
-                            <span id="ms-resumo-nota" class="hidden sm:inline text-slate-600 dark:text-slate-400">Texto escrito com IA antes da abertura, com notícias e dados públicos. Não é recomendação.</span>
+                            <a id="ms-analise" href="leitura/" class="font-bold text-lect-teal hover:underline">Ler análise completa →</a>
+                            <span id="ms-resumo-nota" class="text-slate-600 dark:text-slate-400">Escrito com IA a partir de notícias e dados públicos · não é recomendação</span>
                         </div>
-                        <!-- Atalhos: abrem direto a ferramenta -->
-                        <nav class="mt-4 flex flex-wrap gap-2" aria-label="Atalhos">
-                            <a href="#agenda-economica" data-atalho="agenda" class="flex-1 basis-[6.5rem] sm:basis-[10.5rem] min-h-[44px] inline-flex items-center gap-2 sm:gap-2.5 px-2.5 sm:px-3 py-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><i class="ph-bold ph-calendar-dots text-lg text-lect-teal shrink-0"></i><span class="min-w-0 leading-tight"><strong class="block text-[13px] sm:text-sm">Agenda econômica</strong><span id="at-agenda-sub" class="hidden sm:block text-[11px] text-slate-500 truncate">próximo evento da semana</span></span></a>
-                            <a href="futuros.html#risco" data-atalho="risco" class="flex-1 basis-[6.5rem] sm:basis-[10.5rem] min-h-[44px] inline-flex items-center gap-2 sm:gap-2.5 px-2.5 sm:px-3 py-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><i class="ph-bold ph-calculator text-lg text-lect-teal shrink-0"></i><span class="min-w-0 leading-tight"><strong class="block text-[13px] sm:text-sm">Calculadora de risco</strong><span class="hidden sm:block text-[11px] text-slate-500 truncate">tamanho da posição</span></span></a>
-                            <a href="futuros.html#registrar" data-atalho="diario" class="flex-1 basis-[6.5rem] sm:basis-[10.5rem] min-h-[44px] inline-flex items-center gap-2 sm:gap-2.5 px-2.5 sm:px-3 py-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><i class="ph-bold ph-notebook text-lg text-lect-teal shrink-0"></i><span class="min-w-0 leading-tight"><strong class="block text-[13px] sm:text-sm">Diário de operações</strong><span class="hidden sm:block text-[11px] text-slate-500 truncate">registrar operação</span></span></a>
-                        </nav>
                     </article>
 
+                    <!-- Próximo evento de alto impacto (mesmo status e resultado da agenda completa) -->
+                    <section id="ms-evento" class="min-w-0 border-l-4 border-lect-orange bg-white dark:bg-lect-cardDark border-y border-r border-y-slate-200 border-r-slate-200 dark:border-y-lect-borderDark dark:border-r-lect-borderDark px-4 py-3" aria-labelledby="ms-evento-t">
+                        <div class="flex items-baseline justify-between gap-2">
+                            <h2 id="ms-evento-t" class="term-label font-bold !mb-0">Próximo evento · alto impacto</h2>
+                            <span id="ms-ev-cd" class="font-mono text-xs font-bold text-slate-600 dark:text-slate-400"></span>
+                        </div>
+                        <div id="ms-ev" class="mt-1 text-sm text-slate-600 dark:text-slate-400">Carregando agenda…</div>
+                    </section>
+
+                    <!-- Preparar meu pregão: as ferramentas que já existem, em sequência -->
+                    <nav id="ms-preparar" aria-label="Preparar meu pregão" class="min-w-0">
+                        <div class="flex items-baseline justify-between gap-2"><span class="term-label font-bold !mb-0">Preparar meu pregão</span><a href="futuros.html#plano" data-atalho="plano" class="font-mono text-[11px] text-lect-teal hover:underline">plano do dia completo →</a></div>
+                        <ol class="mt-1.5 grid grid-cols-2 lg:grid-cols-4 gap-2 text-[13px] leading-tight">
+                            <li><a id="pp-evento" href="#ms-evento" data-atalho="evento" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">1</span><span class="min-w-0"><strong class="block">Ver o evento</strong><span id="pp-evento-sub" class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">próximo horário</span></span></a></li>
+                            <li><a id="pp-hist" href="#reacao" data-atalho="historico" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">2</span><span class="min-w-0"><strong class="block">Ver o histórico</strong><span id="pp-hist-sub" class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">reação passada</span></span></a></li>
+                            <li><a href="futuros.html#risco" data-atalho="risco" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">3</span><span class="min-w-0"><strong class="block">Risco do stop</strong><span class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">em reais</span></span></a></li>
+                            <li><a href="futuros.html#salvar-plano" data-atalho="diario" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">4</span><span class="min-w-0"><strong class="block">Salvar o plano</strong><span class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">fica "Planejado"</span></span></a></li>
+                        </ol>
+                    </nav>
+
                     <!-- Ativo selecionado: cabeçalho + gráfico -->
-                    <article id="ms-grafico" class="order-2 lg:order-none min-w-0 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark" aria-labelledby="ms-nome">
-                        <!-- seletor rápido no celular (a lista completa fica mais abaixo) -->
-                        <div class="lg:hidden border-b border-slate-200 dark:border-lect-borderDark overflow-x-auto thin-scroll"><div id="ms-chips" class="flex gap-1.5 p-2 w-max" role="group" aria-label="Escolher ativo"></div></div>
-                        <div class="px-4 sm:px-5 pt-4 flex flex-wrap items-start justify-between gap-x-6 gap-y-2">
+                    <article id="ms-grafico" class="min-w-0 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark" aria-labelledby="ms-nome">
+                        <label class="lg:hidden flex items-center gap-2 px-4 pt-3 font-mono text-[11px] font-bold text-slate-600 dark:text-slate-400"><span class="shrink-0">TROCAR ATIVO</span>
+                            <select id="ms-trocar" class="lx-input !py-2 !text-sm !font-sans font-semibold flex-1 min-w-0" aria-label="Trocar ativo do gráfico"></select></label>
+                        <div class="px-4 sm:px-5 pt-3 sm:pt-4 flex flex-wrap items-start justify-between gap-x-6 gap-y-2">
                             <div class="min-w-0">
                                 <h2 id="ms-nome" class="font-display text-xl font-bold leading-tight">—</h2>
-                                <span id="ms-sub" class="block text-xs text-slate-500 mt-0.5">—</span>
+                                <span id="ms-sub" class="block text-xs text-slate-600 dark:text-slate-400 mt-0.5">—</span>
                             </div>
                             <div class="sm:text-right tabular-nums">
                                 <strong id="ms-preco" class="block text-3xl font-bold leading-none">—</strong>
@@ -106,41 +117,40 @@
                             </div>
                         </div>
                         <div id="ms-meta" class="px-4 sm:px-5 mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs text-slate-600 dark:text-slate-400">&nbsp;</div>
-                        <div id="ms-chart" class="relative mt-2 h-[230px] sm:h-[300px] select-none touch-pan-y" role="img" aria-label="Gráfico do ativo selecionado"></div>
+                        <div id="ms-chart" class="relative mt-2 h-[220px] sm:h-[300px] select-none touch-pan-y" role="img" aria-label="Gráfico do ativo selecionado"></div>
                         <div id="ms-chart-nota" class="px-4 sm:px-5 pb-3 font-mono text-[11px] text-slate-600 dark:text-slate-400 min-h-[1.5rem]"></div>
                     </article>
 
-                    <!-- Detalhes do ativo selecionado -->
-                    <section id="ms-info" class="order-6 lg:order-none min-w-0 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark p-4 lg:-mt-5 lg:border-t-0" aria-labelledby="ms-info-t">
+                    <!-- Detalhes do ativo (no computador) -->
+                    <section id="ms-info" class="hidden lg:block min-w-0 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark p-4 lg:-mt-5 lg:border-t-0" aria-labelledby="ms-info-t">
                         <h2 id="ms-info-t" class="term-label font-bold !mb-0">Sobre <span id="ms-info-nome">—</span></h2>
                         <dl id="ms-info-dl" class="mt-2 grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-2 text-sm tabular-nums"></dl>
                         <div id="ms-info-ev" class="mt-3"></div>
                     </section>
-                    <!-- Notícias ligadas ao ativo (só com associação verificável) -->
-                    <section id="ms-rel" class="order-4 lg:order-none min-w-0" aria-labelledby="ms-rel-t">
-                        <div class="flex flex-wrap items-baseline justify-between gap-2">
-                            <h2 id="ms-rel-t" class="font-display text-base font-bold">Notícias ligadas <span id="ms-rel-nome">—</span></h2>
-                            <a href="#ao-vivo" class="font-mono text-[11px] font-bold text-lect-teal hover:underline">todas as notícias ↓</a>
+
+                    <!-- Agenda curta -->
+                    <section id="ms-agenda" class="min-w-0" aria-labelledby="ms-agenda-t">
+                        <div class="flex items-baseline justify-between gap-2">
+                            <h2 id="ms-agenda-t" class="font-display text-base font-bold">Agenda <span class="font-mono text-[11px] font-normal text-slate-600 dark:text-slate-400">horário de Brasília</span></h2>
+                            <a href="#agenda-economica" id="ms-agenda-tudo" data-atalho="agenda" class="font-mono text-[11px] font-bold text-lect-teal hover:underline">Ver agenda completa →</a>
                         </div>
-                        <p id="ms-rel-crit" class="text-[11px] text-slate-500 mt-0.5"></p>
-                        <ul id="ms-rel-lista" class="mt-2 divide-y divide-slate-200 dark:divide-lect-borderDark"></ul>
-                        <p class="text-[11px] text-slate-500 mt-2">Uma notícia publicada perto de uma oscilação não prova que ela causou o movimento.</p>
+                        <ul id="ms-agenda-lista" class="mt-1 divide-y divide-slate-200 dark:divide-lect-borderDark"></ul>
+                    </section>
+
+                    <!-- Notícias: uma lista só (coletas juntas, mesma matéria uma vez) -->
+                    <section id="ms-news" class="min-w-0" aria-labelledby="ms-news-t">
+                        <div class="flex flex-wrap items-baseline justify-between gap-2">
+                            <h2 id="ms-news-t" class="font-display text-base font-bold flex items-center gap-2">Notícias recentes <span id="agora-badge" class="px-1.5 py-0.5 bg-slate-500 text-white text-[10px] font-mono tracking-wider flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>NOTICIÁRIO</span></h2>
+                            <span class="flex items-center gap-3 font-mono text-[11px]"><button id="agora-alertas" type="button" class="text-slate-600 dark:text-slate-400 hover:text-lect-teal" title="Avisos de manchete forte enquanto você navega"></button><a href="manchetes.html" class="font-bold text-lect-teal hover:underline">Ver todas as notícias →</a></span>
+                        </div>
+                        <ol id="ms-news-lista" class="mt-1 divide-y divide-slate-200 dark:divide-lect-borderDark"><li class="py-2 text-sm text-slate-600 dark:text-slate-400">Carregando notícias…</li></ol>
+                        <p class="mt-1 font-mono text-[11px] text-slate-600 dark:text-slate-400"><span id="agora-hora"></span> · seleção automática pelo título (<a href="#como-classificamos" class="underline">como classificamos</a>) · a variação ao lado de uma ação é a da cotação indicada, não prova reação à notícia</p>
                     </section>
                 </div>
 
-                <!-- COLUNA LATERAL -->
-                <aside class="contents lg:flex lg:flex-col lg:gap-5 min-w-0" aria-label="Acompanhamento">
-                    <!-- Próximo evento -->
-                    <section id="ms-evento" class="order-3 lg:order-none min-w-0 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark p-4" aria-labelledby="ms-evento-t">
-                        <div class="flex items-baseline justify-between gap-2">
-                            <h2 id="ms-evento-t" class="term-label font-bold !mb-0">Próximo evento</h2>
-                            <span id="ms-ev-cd" class="font-mono text-[11px] font-bold text-slate-500"></span>
-                        </div>
-                        <div id="ms-ev" class="mt-2 text-sm text-slate-500">Carregando agenda…</div>
-                    </section>
-
-                    <!-- Lista de ativos -->
-                    <section id="ms-lista-box" class="order-5 lg:order-first min-w-0 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark" aria-labelledby="ms-lista-t">
+                <!-- COLUNA LATERAL (computador): lista de acompanhamento -->
+                <aside class="hidden lg:flex lg:flex-col lg:gap-5 min-w-0" aria-label="Acompanhamento">
+                    <section id="ms-lista-box" class="min-w-0 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark" aria-labelledby="ms-lista-t">
                         <div class="px-4 pt-3 pb-2 flex items-baseline justify-between gap-2">
                             <h2 id="ms-lista-t" class="term-label font-bold !mb-0">Acompanhamento</h2>
                             <span class="font-mono text-[10px] text-slate-600 dark:text-slate-400">preço · var. desde o fech. anterior</span>
@@ -148,25 +158,23 @@
                         <ul id="ms-lista" class="font-sans tabular-nums" role="listbox" aria-label="Ativos"></ul>
                         <p id="ms-lista-fonte" class="px-4 py-2 border-t border-slate-200 dark:border-lect-borderDark font-mono text-[11px] text-slate-600 dark:text-slate-400 leading-snug"></p>
                     </section>
-
                 </aside>
             </div>
         </div>
     </section>
 
-    <!-- Atalhos e navegação da página (depois da primeira entrega de valor) -->
+    <!-- Navegação da página e personalização -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="hidden mb-5" data-lx-news="chamada" data-titulo="Receba o resumo do dia às 7h40, antes da abertura"></div>
         <div id="pn-acoes" class="hidden mb-4 term-panel px-4 py-2 font-mono text-xs flex items-center gap-x-4 gap-y-1 flex-wrap"></div>
         <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 py-3 border-y border-slate-200 dark:border-lect-borderDark font-mono text-xs" aria-label="Seções e ferramentas">
             <a href="#setores" class="hover:text-lect-teal">Setores</a>
-            <a href="#ao-vivo" class="hover:text-lect-teal">Notícias</a>
-            <a href="#noticias" class="hover:text-lect-teal">Agenda</a>
-            <a href="#leitura" class="hover:text-lect-teal">Leitura completa</a>
+            <a href="#noticias" class="hover:text-lect-teal">Agenda completa</a>
+            <a href="#reacao" class="hover:text-lect-teal">Reação histórica</a>
             <a href="#indicadores" class="hover:text-lect-teal">Juros e inflação</a>
             <a href="#agenda" class="hover:text-lect-teal">Vencimentos</a>
+            <a href="leitura/" class="hover:text-lect-teal">Arquivo da Leitura</a>
             <span class="hidden sm:inline text-slate-300 dark:text-slate-600">|</span>
-            <a href="futuros.html#plano" data-atalho="plano" class="text-lect-teal hover:underline">Preparar meu dia</a>
             <a href="laboratorio.html" data-atalho="estudo" class="text-lect-teal hover:underline">Continuar estudando</a>
             <button type="button" id="pn-open" class="ml-auto inline-flex items-center gap-1.5 text-slate-500 hover:text-lect-teal"><i class="ph-bold ph-sliders-horizontal"></i>Personalizar</button>
         </nav>
@@ -188,24 +196,10 @@
 
     <!-- ================================================================================= -->
 
-    <!-- Notícias relevantes, quase ao vivo -->
-    <section id="ao-vivo" class="py-8 scroll-mt-28">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="font-display text-xl font-bold mb-3">Notícias relevantes</h2>
-                <div id="ultimas" class="border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark min-h-[260px]">
-                    <div class="px-5 pt-4 flex flex-wrap items-center justify-between gap-2">
-                        <span class="term-label font-bold flex items-center gap-2"><span id="agora-badge" class="px-1.5 py-0.5 bg-slate-500 text-white text-[10px] tracking-wider flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>NOTICIÁRIO</span>AGORA NO MERCADO <span class="hidden sm:inline font-normal text-slate-500 normal-case">· atualiza sozinho durante o dia</span></span>
-                        <span class="flex items-center gap-3"><a href="hoje.html" class="font-mono text-[10px] font-bold text-lect-teal hover:underline">gráfico do dia →</a><span id="agora-hora" class="font-mono text-[10px] font-bold text-slate-500"></span><button id="agora-alertas" type="button" class="font-mono text-[10px] text-slate-500 hover:text-lect-teal" title="Avisos de manchete forte enquanto você navega"></button></span>
-                    </div>
-                    <div class="px-5 pt-3 flex items-center gap-2 font-mono text-[10px] font-bold"><span id="agora-titulo10" class="text-slate-500">⚡ ÚLTIMOS 10 MINUTOS</span><span class="flex-1 h-px bg-slate-200 dark:bg-lect-borderDark"></span></div>
-                    <ol id="agora-lista" class="px-5 pt-1 pb-3 divide-y divide-slate-200 dark:divide-lect-borderDark"></ol>
-                    <details id="agora-linha" class="mx-5 mb-3 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-bgDark group" open>
-                        <summary class="px-3 py-2 cursor-pointer font-mono text-[10px] font-bold flex items-center justify-between"><span>LINHA DO TEMPO · ÚLTIMAS 3 HORAS <span id="agora-qtd" class="text-slate-500 font-normal"></span></span><i class="ph-bold ph-caret-down group-open:rotate-180 transition-transform"></i></summary>
-                        <ol id="agora-tempo" class="max-h-[330px] overflow-y-auto thin-scroll divide-y divide-slate-100 dark:divide-lect-borderDark"></ol>
-                    </details>
-                    <div class="px-5 pb-4 space-y-2">
+    <!-- Como as notícias da home são escolhidas (a lista fica na mesa) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-6 space-y-2">
                         <p class="lx-fonte"><b>Fonte</b><span>Reuters, Valor, InfoMoney, Folha, Estadão, Bloomberg Línea, Agência Brasil e CNBC</span><span>· coleta a cada ~2,5 min</span><span>· variação das empresas com atraso de ~30 min</span></p>
-                        <details class="lx-explica"><summary>como classificamos o impacto</summary>
+                        <details id="como-classificamos" class="lx-explica scroll-mt-28"><summary>como classificamos o impacto</summary>
                             <div class="mt-2 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300 max-w-3xl">
                                 <p>A classificação é automática e lê <strong>só o título</strong> da manchete, não a matéria. Cada tema encontrado soma pontos e marca os ativos que costuma mexer:</p>
                                 <ul class="mt-2 grid sm:grid-cols-2 gap-x-6 gap-y-1 font-mono text-xs">
@@ -220,10 +214,7 @@
                                 <p class="mt-1 text-slate-500">Como é por palavra, a regra erra: uma manchete pode citar "Selic" sem mudar nada. Abra a fonte antes de tirar conclusão.</p>
                             </div>
                         </details>
-                    </div>
-                </div>
-        </div>
-    </section>
+    </div>
 
     <!-- ================================================================================= -->
     <section id="noticias" class="py-10 bg-white dark:bg-[#08111F] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
@@ -247,7 +238,7 @@
                 </div>
                 <div class="hidden lg:col-span-6 term-panel h-[560px] overflow-hidden" id="tv-calendar"></div>
             </div>
-            <div id="rx-wrap" class="hidden mt-6"></div>
+            <div id="reacao" class="scroll-mt-28"></div><div id="rx-wrap" class="hidden mt-6"></div>
             <div id="ph-wrap" class="hidden mt-4 term-panel"></div>
             <script>(function(){
                 fetch('data/placar-historico.json?t='+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(p){
@@ -255,7 +246,7 @@
                     if(!ev.length)return;
                     var tot=function(k){var c=ev.filter(function(e){return e.acerto[k]!=null});return{n:c.length,ok:c.filter(function(e){return e.acerto[k]}).length}};
                     var w=tot('win'),d=tot('wdo'),esc=LX.esc;
-                    var card=function(l,t){return '<div class="text-center"><span class="term-label block">'+l+'</span><strong class="block font-display text-2xl mt-1">'+(t.n?t.ok+'/'+t.n:'—')+'</strong><span class="block font-mono text-[11px] text-slate-500">'+(t.n?LX.num(t.ok/t.n*100,0)+'% de acerto':'sem eventos')+'</span></div>'};
+                    var card=function(l,t){return '<div class="text-center"><span class="term-label block">'+l+'</span><strong class="block font-display text-lg leading-tight mt-1">'+(t.n?LX.contagem(t.ok,t.n):'sem observações')+'</strong><span class="block font-mono text-[11px] text-slate-500">'+(t.n?LX.num(t.ok/t.n*100,0)+'% · reação de 30 min'+(t.n<20?' · amostra pequena':''):'')+'</span></div>'};
                     var cel=function(e,k){var s=e.sobe[k],v=e.reacao[k],a=e.acerto[k];if(v==null)return '<td class="px-2 text-slate-400">pendente</td>';
                         var ind=s==null?'—':s>=60?'▲ '+s+'%':s<=40?'▼ '+(100-s)+'%':'dividido';
                         return '<td class="px-2 whitespace-nowrap"><span class="text-slate-500">'+ind+'</span> → <b class="'+(v>0?'text-emerald-600 dark:text-emerald-400':v<0?'text-rose-600 dark:text-rose-400':'')+'">'+LX.pct(v,2,true)+'</b>'+(a==null?'':' <span class="'+(a?'text-emerald-600 dark:text-emerald-400':'text-rose-600 dark:text-rose-400')+'">'+(a?'acertou':'errou')+'</span>')+'</td>'};
@@ -263,8 +254,8 @@
                     var rows=(p.eventos||[]).slice(-8).reverse().map(function(e){return '<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="px-2 py-2 whitespace-nowrap">'+e.data.slice(8,10)+'/'+e.data.slice(5,7)+'</td><td class="px-2 font-sans font-semibold">'+esc(e.evento)+(e.surpresa?' <span class="font-mono text-[10px] text-slate-500">'+esc(SP[e.surpresa]||e.surpresa)+'</span>':'')+'</td>'+cel(e,'win')+cel(e,'wdo')+'</tr>'}).join('');
                     var el=document.getElementById('ph-wrap');
                     el.innerHTML='<div class="px-5 py-4 border-b border-slate-200 dark:border-lect-borderDark flex flex-wrap items-baseline justify-between gap-2"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-target text-lect-orange"></i>O HISTÓRICO ACERTOU?</span><span class="font-mono text-[11px] text-slate-500">Antes × depois nos dias de evento forte</span></div>'
-                        +'<div class="grid grid-cols-2 gap-3 px-5 py-4">'+card('IBOVESPA · WIN',w)+card('DÓLAR · WDO',d)+'</div>'
-                        +'<div class="overflow-x-auto"><table class="w-full font-mono text-xs"><thead><tr class="text-[10px] text-slate-500 text-left"><th class="px-2 py-1 font-normal">DIA</th><th class="px-2 font-normal">EVENTO</th><th class="px-2 font-normal">WIN: HISTÓRICO → HOJE</th><th class="px-2 font-normal">WDO: HISTÓRICO → HOJE</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
+                        +'<div class="grid grid-cols-2 gap-3 px-5 py-4">'+card('IBOVESPA À VISTA (REF. WIN)',w)+card('DÓLAR À VISTA (REF. WDO)',d)+'</div>'
+                        +'<div class="overflow-x-auto"><table class="w-full font-mono text-xs"><thead><tr class="text-[10px] text-slate-500 text-left"><th class="px-2 py-1 font-normal">DIA</th><th class="px-2 font-normal">EVENTO</th><th class="px-2 font-normal">IBOVESPA À VISTA: HISTÓRICO → DIA (30 MIN)</th><th class="px-2 font-normal">DÓLAR À VISTA: HISTÓRICO → DIA (30 MIN)</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
                         +'<p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">O histórico indica alta quando o ativo subiu em 60% ou mais das divulgações anteriores com a mesma surpresa, e queda quando subiu em 40% ou menos. Entre os dois, fica dividido e não conta. Reação de 30 min (ou da abertura seguinte). <a href="placar.html" class="text-lect-teal hover:underline">Placar completo →</a> <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p>';
                     el.classList.remove('hidden');
                 }).catch(function(){});
@@ -298,10 +289,10 @@
         </div>
     </section>
 
-    <section id="leitura"  class="py-8 min-h-[640px] border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
+    <section id="antes-dado" class="scroll-mt-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Antes do dado: data/antes.json (scripts/antes_dado.py, 7h20 nos dias de evento forte) -->
-            <div id="antes" class="hidden mb-4 term-panel border-l-4 border-l-lect-orange"></div>
+            <div id="antes" class="hidden my-6 term-panel border-l-4 border-l-lect-orange"></div>
             <script>(function(){
                 var el=document.getElementById('antes');
                 fetch('data/antes.json?t='+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(a){
@@ -310,7 +301,8 @@
                     var chip=function(l,v){return v==null?'':'<span class="px-1.5 py-0.5 font-mono text-[10px] font-bold '+(v>0?'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400':v<0?'bg-rose-500/15 text-rose-700 dark:text-rose-400':'bg-slate-500/10')+'">'+l+' '+p(v)+'</span>'};
                     var SP={'acima':'acima do esperado','abaixo':'abaixo do esperado','em linha':'em linha'};
                     var rows=(a.passadas||[]).slice(0,5).map(function(x){return '<li class="flex flex-wrap items-center gap-x-3 gap-y-1 py-1.5"><span class="font-mono text-xs font-bold w-16">'+x.data.slice(8,10)+'/'+x.data.slice(5,7)+'/'+x.data.slice(2,4)+'</span><span class="text-xs text-slate-500 w-32">'+esc(SP[x.surpresa]||x.resultado||'')+'</span>'+chip('WIN',x.win)+chip('WDO',x.wdo)+(x.abertura?'<span class="font-mono text-[10px] text-slate-400" title="dado saiu com a bolsa fechada: inclui o gap da abertura">*abertura</span>':'')+(x.janela==='1h'?'<span class="font-mono text-[10px] text-slate-400" title="divulgação antiga: medida com barras de 1 hora">1 h</span>':'')+'</li>'}).join('');
-                    var st=function(nome,e){return e?'<div class="text-center"><span class="term-label block">'+nome+'</span><strong class="block font-display text-lg">'+e.sobe+'% <span class="text-[11px] font-mono text-slate-500 font-normal">subiu</span></strong><span class="block font-mono text-[11px]"><span class="'+cor(e.mediana)+'">mediana '+p(e.mediana)+'</span> · ±'+LX.num(e.movimento,2)+'%</span></div>':''};
+                    var jj=(a.divulgacoes||{}).janelas||{},jan=jj['1h']&&jj['30min']?'janelas de 30 min e 1 h':jj['1h']?'janela de 1 h':'janela de 30 min';
+                    var st=function(nome,e,jt){return e?'<div class="text-center"><span class="term-label block">'+nome+'</span><span class="block font-mono text-[10px] text-slate-600 dark:text-slate-400">'+e.n+' observações · '+(jt||jan)+'</span><strong class="block font-display text-lg">'+e.sobe+'% <span class="text-[11px] font-mono text-slate-500 font-normal">subiu</span></strong><span class="block font-mono text-[11px]"><span class="'+cor(e.mediana)+'">mediana '+p(e.mediana)+'</span> · ±'+LX.num(e.movimento,2)+'%</span></div>':''};
                     var dv=a.divulgacoes||{},mm=a.manchetes||{},n=Math.max((dv.win||{}).n||0,(dv.wdo||{}).n||0),nm=(mm.win||{}).n||0;
                     el.innerHTML='<div class="p-4 sm:p-5 grid gap-4 lg:grid-cols-[1.1fr_1fr] items-start">'
                         +'<div><span class="term-label text-lect-orange font-bold flex items-center gap-1.5"><i class="ph-bold ph-clock-counter-clockwise"></i>ANTES DO DADO · HOJE'+(a.hora?' ÀS '+esc(a.hora).toUpperCase():'')+'</span>'
@@ -318,45 +310,15 @@
                         +(a.consenso?'<p class="font-mono text-xs text-slate-500 mt-1">consenso '+esc(String(a.consenso))+(a.anterior?' · anterior '+esc(String(a.anterior)):'')+'</p>':'')
                         +(rows?'<p class="text-sm mt-3 text-slate-600 dark:text-slate-300">Como o mercado reagiu nas últimas vezes (30 min depois; 1 h nas mais antigas):</p><ul class="mt-1 divide-y divide-slate-200 dark:divide-lect-borderDark">'+rows+'</ul>':'<p class="text-sm mt-3 text-slate-500">Primeira divulgação no nosso histórico de reações.</p>')+'</div>'
                         +'<div class="space-y-3">'
-                        +(n>=3?'<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold">NAS ÚLTIMAS '+n+' DIVULGAÇÕES</span><div class="grid grid-cols-2 gap-2 mt-2">'+st('IBOVESPA · WIN',dv.win)+st('DÓLAR · WDO',dv.wdo)+'</div></div>':'')
+                        +(n>=3?'<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold">NAS ÚLTIMAS '+n+' DIVULGAÇÕES</span><div class="grid grid-cols-2 gap-2 mt-2">'+st('IBOVESPA À VISTA (REF. WIN)',dv.win)+st('DÓLAR À VISTA (REF. WDO)',dv.wdo)+'</div></div>':'')
                         +(a.por_surpresa&&a.por_surpresa.acima&&a.por_surpresa.abaixo?(function(ps){var c=function(e){return e?'<b>'+e.sobe+'%</b>':'—'};var n=function(x){return Math.max((x.win||{}).n||0,(x.wdo||{}).n||0)};return '<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold text-lect-orange">SE VIER ACIMA OU ABAIXO DO CONSENSO</span><table class="w-full mt-2 font-mono text-xs text-center"><thead><tr class="text-[10px] text-slate-500"><th class="text-left font-normal py-1">SURPRESA</th><th class="font-normal">VEZES</th><th class="font-normal">WIN SUBIU</th><th class="font-normal">WDO SUBIU</th></tr></thead><tbody><tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="text-left py-1.5">▲ Acima</td><td>'+n(ps.acima)+'</td><td>'+c(ps.acima.win)+'</td><td>'+c(ps.acima.wdo)+'</td></tr><tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="text-left py-1.5">▼ Abaixo</td><td>'+n(ps.abaixo)+'</td><td>'+c(ps.abaixo.win)+'</td><td>'+c(ps.abaixo.wdo)+'</td></tr></tbody></table></div>'})(a.por_surpresa):'')
-                        +(nm>=3?'<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold">'+nm+' MANCHETES DE '+esc((mm.nome||'').toUpperCase())+'</span><div class="grid grid-cols-2 gap-2 mt-2">'+st('IBOVESPA · WIN',mm.win)+st('DÓLAR · WDO',mm.wdo)+'</div></div>':'')
+                        +(nm>=3?'<div class="bg-slate-50 dark:bg-white/[0.03] p-3"><span class="term-label font-bold">'+nm+' MANCHETES DE '+esc((mm.nome||'').toUpperCase())+'</span><div class="grid grid-cols-2 gap-2 mt-2">'+st('IBOVESPA À VISTA (REF. WIN)',mm.win,'janela de 30 min')+st('DÓLAR À VISTA (REF. WDO)',mm.wdo,'janela de 30 min')+'</div></div>':'')
                         +(n<5?'<p class="text-[11px] text-lect-orange">Amostra pequena: o histórico cresce a cada divulgação. O passado não garante o próximo movimento.</p>':'<p class="text-[11px] text-slate-500">O passado não garante o próximo movimento.</p>')
                         +'<a href="manchetes.html#'+esc(mm.tema||'')+'" class="inline-flex items-center gap-1 font-mono text-xs font-bold text-lect-teal hover:underline">Histórico completo no arquivo de manchetes <i class="ph-bold ph-arrow-right"></i></a> <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></div></div>';
                     el.classList.remove('hidden');
                     LX.track&&LX.track('antes_do_dado_visto',{evento:a.tipo});
                 }).catch(function(){});
             })();</script>
-            <div class="term-panel overflow-hidden !border-t-4 !border-t-lect-orange">
-                <div class="flex flex-wrap items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
-                    <div class="flex items-center gap-3">
-                        <span class="w-9 h-9 grid place-items-center bg-lect-orange/15"><i class="ph-duotone ph-sparkle text-xl text-lect-orange"></i></span>
-                        <div><span class="term-label font-bold text-lect-orange block">LEITURA DO DIA · IA · CENÁRIO DE ABERTURA</span><strong id="lt-title" class="font-display text-lg leading-tight">—</strong></div>
-                    </div>
-                    <div class="flex items-center gap-2 font-mono text-[10px]">
-                        <span id="lt-when" class="px-2 py-1 bg-slate-100 dark:bg-lect-bgDark text-slate-500"></span>
-                        <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-slate-200 dark:divide-lect-borderDark">
-                    <div class="lg:col-span-5 p-5">
-                        <span id="lt-resumo-lbl" class="term-label font-bold">O QUE IMPORTA HOJE</span>
-                        <ul id="lt-resumo" class="mt-2 space-y-2"></ul>
-                    </div>
-                    <div class="lg:col-span-3 p-5">
-                        <span class="term-label font-bold">NA AGENDA</span>
-                        <div id="lt-destaques" class="mt-2 space-y-2"></div>
-                        <div id="lt-exterior" class="mt-4"></div>
-                    </div>
-                    <div class="lg:col-span-4 p-5 space-y-3" id="lt-thermo"></div>
-                </div>
-
-                <div id="lt-news-wrap" class="hidden border-t border-slate-200 dark:border-lect-borderDark">
-                    <div class="px-5 pt-4 flex items-center justify-between"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-newspaper text-lect-teal"></i>NOTÍCIAS QUE IMPORTAM</span><span class="font-mono text-[10px] text-slate-500">seleção da IA · com o impacto em cada ativo</span></div>
-                    <div id="lt-news" class="p-5 pt-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3"></div>
-                </div>
-                <div id="lt-fontes" class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[10px] font-mono text-slate-500 flex flex-wrap gap-x-3 gap-y-1"></div>
-            </div>
         </div>
     </section>
 
@@ -481,7 +443,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261120a"></script><span id="lx-pronto" hidden></span>
+    <script src="assets/lectnex-core.js?v=20261120b"></script><span id="lx-pronto" hidden></span>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -558,64 +520,6 @@
             });
         })();
 
-        // Agora no mercado: branch "ao-vivo" (coleta a cada ~2,5 min), reserva em data/noticias-agora.json
-        (function () {
-            const AOVIVO = 'https://raw.githubusercontent.com/Antenornonato7/lectnex/ao-vivo/noticias-agora.json';
-            let dados = null, cot = {}, vistos = null;
-            const $ = id => document.getElementById(id);
-            const rel = iso => { const m = Math.round((Date.now() - new Date(iso)) / 6e4); return m < 1 ? 'agora' : m < 60 ? `há ${m} min` : `há ${Math.floor(m / 60)}h${String(m % 60).padStart(2, '0')}`; };
-            const minutos = iso => (Date.now() - new Date(iso)) / 6e4;
-            const chipAtivo = a => `<span class="px-1.5 py-0.5 border border-slate-300 dark:border-lect-borderDark font-mono text-[9px] font-bold">${LX.esc(a)}</span>`;
-            const chipAcao = tk => { const c = cot[tk]; if (!c) return `<span class="px-1.5 py-0.5 bg-slate-100 dark:bg-white/5 font-mono text-[9px] font-bold">${tk}</span>`; const v = c.var_pct; return `<span class="px-1.5 py-0.5 font-mono text-[9px] font-bold ${v > 0 ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' : v < 0 ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400' : 'bg-slate-100 dark:bg-white/5'}" title="Variação do dia (atraso de ~30 min)">${tk} ${LX.pct(v, 2, true)}</span>`; };
-            // selo e rótulo do noticiário: "Ao vivo" só com a coleta ativa e dentro do intervalo esperado
-            const SELO = { 'ao-vivo': ['AO VIVO', 'bg-lect-teal', 'text-lect-teal'], atrasado: ['ATRASADO', 'bg-amber-600', 'text-amber-600 dark:text-amber-400'], pausa: ['EM PAUSA', 'bg-slate-500', 'text-slate-500'], sem: ['SEM DADOS', 'bg-amber-600', 'text-amber-600 dark:text-amber-400'] };
-            function selo() {
-                const st = LX.statusNoticias(dados && dados.atualizado_em), c = SELO[st.estado];
-                $('agora-badge').className = `px-1.5 py-0.5 ${c[1]} text-white text-[10px] tracking-wider flex items-center gap-1`;
-                $('agora-badge').innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-white${st.estado === 'ao-vivo' ? ' animate-pulse' : ''}"></span>${c[0]}`;
-                $('agora-hora').className = `font-mono text-[10px] font-bold ${c[2]}`;
-                $('agora-hora').textContent = st.rotulo;
-            }
-            function pintar() {
-                selo();
-                if (!dados) return;
-                const ns = dados.noticias || [];
-                selo();
-                const gs = LX.agruparNoticias(ns), minG = g => (Date.now() - g.recente) / 6e4;
-                let top = gs.filter(g => minG(g) <= 10);
-                let titulo = '⚡ ÚLTIMOS 10 MINUTOS';
-                if (!top.length) { top = gs.filter(g => minG(g) <= 60); titulo = 'NA ÚLTIMA HORA · nada forte nos últimos 10 min'; }
-                if (!top.length) { top = gs.slice(); titulo = 'MAIS RECENTES'; }
-                top = top.slice().sort((a, b) => b.alto - a.alto || b.recente - a.recente).slice(0, 4);
-                $('agora-titulo10').textContent = titulo;
-                const ol = $('agora-lista'), hm = iso => new Date(iso).toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' });
-                if (!ns.length) { ol.innerHTML = '<li class="py-3 text-sm text-slate-500">Sem manchetes de impacto nas últimas 3 horas.</li>'; }
-                else ol.innerHTML = top.map(g => {
-                    const n = g.principal, novo = vistos && !vistos.has(n.url), rec = minG(g) <= 15;
-                    return `<li class="${novo ? 'lx-novo' : ''} flex gap-3 py-3"><span class="w-14 shrink-0 font-mono text-[11px] text-slate-500 pt-0.5">${hm(n.publicado)}</span>
-                        <div class="flex-1 min-w-0"><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="block font-semibold leading-snug hover:text-lect-teal">${LX.esc(n.titulo)}</a>
-                        <span class="flex flex-wrap items-center gap-x-2 gap-y-1 mt-1 font-mono text-[11px] text-slate-500">${rec ? '<span class="font-bold text-amber-600 dark:text-amber-400">novo</span>' : ''}${g.alto ? '<span class="font-bold text-amber-600 dark:text-amber-400">alto impacto</span>' : ''}<span>${LX.esc(n.fonte)} · ${rel(n.publicado)}</span>${(n.ativos || []).map(chipAtivo).join('')}${(n.tickers || []).map(chipAcao).join('')}</span>
-                        ${LX.coberturas(g)}</div></li>`;
-                }).join('');
-                $('agora-qtd').textContent = `· ${gs.length} acontecimento${gs.length === 1 ? '' : 's'}${gs.length !== ns.length ? `, ${ns.length} manchetes` : ''}`;
-                $('agora-tempo').innerHTML = gs.map(g => { const n = g.principal; return `<li class="${vistos && !vistos.has(n.url) ? 'lx-novo' : ''} flex gap-3 px-3 py-2">
-                    <span class="font-mono text-[11px] font-bold ${g.alto ? 'text-amber-600 dark:text-amber-400' : 'text-lect-teal'} w-11 shrink-0 pt-0.5">${hm(n.publicado)}</span>
-                    <div class="flex-1 min-w-0"><a href="${LX.esc(n.url)}" target="_blank" rel="noopener nofollow" class="text-sm leading-snug hover:text-lect-teal hover:underline">${LX.esc(n.titulo)}</a> <span class="font-mono text-[10px] text-slate-500 whitespace-nowrap">· ${LX.esc(n.fonte)}</span>${(n.tickers || []).length ? ' ' + n.tickers.map(chipAcao).join(' ') : ''}
-                    ${LX.coberturas(g)}</div></li>`; }).join('');
-                vistos = new Set(ns.map(n => n.url));
-            }
-            function buscar() {
-                const t = Math.floor(Date.now() / 6e4);
-                fetch(AOVIVO + '?t=' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : Promise.reject())
-                    .catch(() => fetch('data/noticias-agora.json?t=' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : null))
-                    .then(d => { if (d && (!dados || d.atualizado_em >= dados.atualizado_em)) dados = d; pintar(); }).catch(() => selo());
-            }
-            LX.dados('cotacoes').then(c => { if (c) [...(c.mapa || []), ...(c.itens || [])].forEach(x => { if (x.ticker) cot[x.ticker] = x; }); pintar(); }).catch(() => { });
-            buscar(); setInterval(buscar, 60000); setInterval(pintar, 30000);
-            const bt = $('agora-alertas');
-            const pintaBt = () => { bt.textContent = LX.avisosNoticias() ? '🔔 avisos ligados' : '🔕 avisos desligados'; };
-            bt.onclick = () => { LX.avisosNoticias(!LX.avisosNoticias()); pintaBt(); }; pintaBt();
-        })();
         /* ---------- Placar do termômetro: transparência sobre acertos e erros ---------- */
         LX.dados('placar-termometro').then(pl => {
             const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(d => d && d.data && (d.win || d.wdo));
@@ -623,10 +527,10 @@
             const SET = { bullish: 'alta', bearish: 'baixa', neutro: 'neutro' };
             const taxa = (k, n) => { const v = dias.slice(-n).filter(d => d[k]); const ok = v.filter(d => d[k].acerto).length; return { ok, n: v.length, p: v.length ? ok / v.length * 100 : null }; };
             const kpi = (k, nome, ref) => { const a = taxa(k, 20), b = taxa(k, 60); return `<div class="p-4 bg-slate-50 dark:bg-lect-bgDark border-l-2 ${k === 'win' ? 'border-lect-teal' : 'border-lect-orange'}"><span class="term-label">${nome}</span>
-                <div class="flex items-baseline gap-2 mt-1"><strong class="font-mono text-3xl ${a.p == null ? '' : a.p >= 55 ? 'text-emerald-600 dark:text-emerald-400' : a.p < 45 ? 'text-rose-600 dark:text-rose-400' : ''}">${a.p == null ? '—' : LX.num(a.p, 0) + '%'}</strong></div>
-                <span class="block font-mono text-[11px] text-slate-600 dark:text-slate-300">${a.ok} de ${a.n} · últimos ${Math.min(20, dias.length)} pregões</span>
+                <strong class="block font-display text-xl leading-tight mt-1">${a.n ? LX.contagem(a.ok, a.n) : 'sem observações'}</strong>
+                <span class="block font-mono text-[11px] text-slate-600 dark:text-slate-300">${a.p == null ? '' : LX.num(a.p, 0) + '% · '}últimos ${Math.min(20, dias.length)} pregões${a.n < 20 ? ' · amostra pequena' : ''}</span>
                 ${b.n > a.n ? `<span class="block font-mono text-[10px] text-slate-500">${LX.num(b.p, 0)}% em ${Math.min(60, dias.length)} pregões</span>` : ''}
-                <span class="block font-mono text-[10px] text-slate-500 mt-1">medido pelo ${ref}</span></div>`; };
+                <span class="block font-mono text-[10px] text-slate-500 mt-1">medido pelo ${ref} à vista, no fechamento</span></div>`; };
             const ult = dias.slice(-60);
             const row = (k, nome, ref) => `<div class="flex items-center gap-2"><span class="w-9 shrink-0 font-mono text-[10px] text-slate-500">${nome}</span><div class="flex flex-wrap gap-[3px]">${ult.map(d => { const x = d[k], dt = LX.brShort(LX.parseISO(d.data));
                 if (!x) return `<span class="w-3 h-3 bg-slate-200 dark:bg-lect-borderDark" title="${dt} · sem viés do modelo"></span>`;
@@ -637,7 +541,7 @@
                     <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-target text-lect-orange"></i>Placar do viés do modelo <span class="lx-demo">EXPERIMENTAL</span></span>
                     <span class="font-mono text-[10px] text-slate-500">mostramos os acertos e os erros · ${dias.length} pregões registrados</span></div>
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 p-5">
-                    <div class="lg:col-span-5 grid grid-cols-2 gap-3">${kpi('win', 'WIN', 'Ibovespa')}${kpi('wdo', 'WDO', 'dólar à vista')}</div>
+                    <div class="lg:col-span-5 grid grid-cols-2 gap-3">${kpi('win', 'Viés WIN', 'Ibovespa')}${kpi('wdo', 'Viés WDO', 'dólar')}</div>
                     <div class="lg:col-span-7 space-y-2"><span class="term-label block">Últimos ${ult.length} pregões <span class="normal-case">(passe o mouse para ver o dia)</span></span>${row('win', 'WIN', 'IBOV')}${row('wdo', 'WDO', 'dólar')}
                         <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] text-slate-500 pt-1"><span><span class="inline-block w-2.5 h-2.5 bg-emerald-500 align-middle"></span> acertou</span><span><span class="inline-block w-2.5 h-2.5 bg-rose-500 align-middle"></span> errou</span><span><span class="inline-block w-2.5 h-2.5 bg-slate-200 dark:bg-lect-borderDark align-middle"></span> sem termômetro</span></div></div>
                 </div>
@@ -716,80 +620,55 @@
             }
             const stCurto = d => !d ? 'indisponível' : `<span class="${d.st.alerta ? 'text-amber-600 dark:text-amber-400' : ''}">${d.st.curto}</span>`;
             const stCompleto = d => !d ? '<span>Cotação indisponível</span>' : `<span class="${d.st.alerta ? 'font-bold text-amber-600 dark:text-amber-400' : 'text-slate-700 dark:text-slate-300 font-semibold'}">${d.st.rotulo}</span>${d.st.atraso ? `<span>${d.st.atraso}</span>` : ''}`;
-            /* ---------- faixa de indicadores ---------- */
+            /* ---------- faixa: estado da B3, Ibovespa e dólar (com a referência de cada cotação), depois juros e inflação ---------- */
             function faixa() {
                 const ib = ativoIndice('ibov'), us = ativoIndice('dolar'), D = LX.data || {}, v = x => x && typeof x === 'object' ? x.value : x;
                 const selic = v(D.selic), ipca = v(D.ipca12m), real = selic != null && ipca != null ? ((1 + selic / 100) / (1 + ipca / 100) - 1) * 100 : null;
-                const b3 = LX.sessionStatus('b3'), b3f = LX.sessionStatus('b3f');
-                // quando o Banco Central não responde, o núcleo usa valores de referência: a faixa diz isso em vez de parecer dado ao vivo
+                const e = LX.estadoMercado(), dm = d => `${LX.weekday(d)} ${LX.brShort(d)}`;
                 const refNota = (x, ok) => x && x.src === 'ref' ? `<span class="text-amber-600 dark:text-amber-400">valor de referência${x.date ? ' de ' + esc(String(x.date)) : ''}</span>` : ok;
-                const est = s => s.state === 'open' ? 'aberto' : s.state === 'pre' ? 'pré-abertura' : s.text === 'FERIADO' ? 'feriado' : 'fechado';
-                const item = (rot, val, varv, nota, href) => `<li class="shrink-0 py-2 px-4 first:pl-0"><${href ? `a href="${href}" class="block hover:text-lect-teal"` : 'div'}><span class="block font-mono text-[10px] uppercase tracking-wider text-slate-500">${rot}</span><span class="block text-[15px] font-semibold tabular-nums leading-tight">${val}${varv != null ? ` <span class="text-xs ${cor(varv)}">${pctTxt(varv)}</span>` : ''}</span><span class="block font-mono text-[10px] text-slate-500">${nota}</span></${href ? 'a' : 'div'}></li>`;
+                // celular: só B3, Ibovespa e dólar, em três colunas (juros e inflação ficam na seção própria)
+                const item = (rot, val, varv, nota, href, cls) => `<li class="min-w-0 sm:shrink-0 py-2 px-2 sm:px-4 first:pl-0 ${cls || ''}"><${href ? `a href="${href}" class="block hover:text-lect-teal"` : 'div'}><span class="block font-mono text-[10px] uppercase tracking-wider text-slate-600 dark:text-slate-400 truncate">${rot}</span><span class="block text-sm sm:text-[15px] font-semibold tabular-nums leading-tight">${val}${varv != null ? ` <span class="block sm:inline text-xs ${cor(varv)}">${pctTxt(varv)}</span>` : ''}</span><span class="block font-mono text-[10px] text-slate-600 dark:text-slate-400 sm:whitespace-nowrap leading-snug">${nota}</span></${href ? 'a' : 'div'}></li>`;
+                const B3 = {
+                    aberto: ['<span class="text-emerald-600 dark:text-emerald-400">● Aberta</span>', `futuros até ${e.fechaFut}<span class="hidden sm:inline"> · ações até ${e.fechaAcoes}</span>`],
+                    pre: ['<span class="text-amber-600 dark:text-amber-400">● Pré-abertura</span>', `abre às ${e.abreFut}${e.faltaMin != null ? ` (em ${e.faltaMin >= 60 ? Math.floor(e.faltaMin / 60) + 'h' + String(e.faltaMin % 60).padStart(2, '0') : e.faltaMin + ' min'})` : ''}<span class="hidden sm:inline"> · ações às ${e.abreAcoes}</span>`],
+                    pos: ['<span>● Encerrada</span>', `reabre ${dm(e.reabre)}, ${e.abreFut}`],
+                    sem: ['<span class="text-lect-orange">● Fechada hoje</span>', `<span class="hidden sm:inline">${esc(e.motivo)} · </span>reabre ${dm(e.reabre)}, ${e.abreFut}`]
+                }[e.fase];
                 $('fx-lista').innerHTML =
+                    item('B3<span class="hidden sm:inline"> · horário de Brasília</span>', B3[0], null, B3[1], null, e.fase === 'sem' ? 'bg-lect-orange/10 !pl-2 sm:!pl-3' : '') +
                     item('Ibovespa', ib ? LX.num(ib.preco, 0) : '—', ib ? ib.var : null, stCurto(ib)) +
-                    item('Dólar (USD/BRL)', us ? 'R$ ' + LX.num(us.preco, 4) : '—', us ? us.var : null, stCurto(us)) +
-                    item('Selic', selic != null ? LX.num(selic, 2) + '%' : '—', null, refNota(D.selic, 'meta · Banco Central'), '#indicadores') +
-                    item('IPCA 12 meses', ipca != null ? LX.num(ipca, 2) + '%' : '—', null, refNota(D.ipca12m, 'IBGE via Banco Central'), '#indicadores') +
-                    item('Juro real', real != null ? LX.num(real, 2) + '%' : '—', null, 'Selic − IPCA 12m', '#indicadores') +
-                    item('Pregão B3', `<span class="text-sm">ações ${est(b3)}</span>`, null, `futuros ${est(b3f)} · horário de Brasília`);
+                    item('Dólar<span class="hidden sm:inline"> comercial</span>', us ? 'R$ ' + LX.num(us.preco, 4) : '—', us ? us.var : null, stCurto(us)) +
+                    item('Selic', selic != null ? LX.num(selic, 2) + '%' : '—', null, refNota(D.selic, 'meta · Banco Central'), '#indicadores', 'hidden sm:block') +
+                    item('IPCA 12 meses', ipca != null ? LX.num(ipca, 2) + '%' : '—', null, refNota(D.ipca12m, 'IBGE via Banco Central'), '#indicadores', 'hidden sm:block') +
+                    item('Juro real', real != null ? LX.num(real, 2) + '%' : '—', null, 'Selic − IPCA 12m', '#indicadores', 'hidden sm:block');
             }
 
-            /* ---------- resumo editorial ---------- */
+            /* ---------- resumo do dia: manchete + até dois destaques; o texto longo fica no arquivo da Leitura ---------- */
             function resumo() {
-                const l = MKT.leitura, alvo = $('ms-pontos');
+                const l = MKT.leitura, alvo = $('ms-pontos'), sub = $('ms-resumo-sub'), e = LX.estadoMercado();
                 if (!l || !Array.isArray(l.resumo) || !l.resumo.length) {
-                    $('ms-resumo-t').textContent = 'A Leitura do Dia sai às 7h40';
-                    $('ms-resumo-quando').textContent = 'Leitura do Dia'; alvo.innerHTML = '';
-                } else {
-                    const dia = LX.parseISO(l.data), hora = l.gerado_em ? hm(new Date(l.gerado_em)) : '';
-                    // manchete = o título da própria edição; destaques = os dois primeiros pontos (ou frases do resumo)
-                    $('ms-resumo-t').textContent = l.titulo || l.resumo[0];
-                    $('ms-resumo-quando').textContent = `Leitura do Dia · ${l.tipo === 'sem-pregao' ? 'edição sem pregão' : 'cenário de abertura'} · ${LX.weekday(dia)} ${LX.brShort(dia)}${hora ? ' · ' + hora.replace(':', 'h') : ''} · IA`;
-                    let pts = Array.isArray(l.pontos) && l.pontos.length ? l.pontos.slice(0, 2).map(p => [p.titulo || '', p.texto || '']) : null;
-                    if (!pts) { const r = l.resumo.length > 2 && /^(No último pregão|Ontem|Na (segunda|terça|quarta|quinta|sexta)|A B3 está fechada)/i.test(l.resumo[0]) ? l.resumo.slice(1) : l.resumo; pts = r.slice(0, 2).map(x => ['', x]); }
-                    const ab = LX.estadoMercado().fase === 'aberto';
-                    alvo.innerHTML = pts.map(([t, x], i) => `<li class="${i && ab ? 'hidden md:block ' : ''}min-w-0 text-sm leading-snug text-slate-700 dark:text-slate-300 pl-3 border-l-2 border-lect-teal/60">${t ? `<strong class="block text-slate-900 dark:text-white">${esc(t)}</strong>` : ''}<span class="line-clamp-3">${esc(x)}</span></li>`).join('');
-                    $('ms-resumo-nota').textContent = `Números desta edição, escrita${hora ? ' às ' + hora.replace(':', 'h') : ''} com IA a partir de notícias e dados públicos; a última cotação de cada ativo está em Acompanhamento. ${l.data !== hojeISO() && LX.estadoMercado().fase !== 'sem' ? 'A edição de hoje sai às 7h40. ' : ''}Não é recomendação.`;
+                    $('ms-resumo-t').textContent = 'A Leitura do Dia sai às 7h40'; $('ms-resumo-quando').textContent = 'Leitura do Dia'; alvo.innerHTML = ''; sub.classList.add('hidden'); return;
                 }
-                // fechamento do último pregão: o MESMO registro (valor, variação, fonte) da lista e do gráfico quando é do mesmo dia
-                const ref = (() => { let d = new Date(LX.todayBRT()); if (!LX.isBusinessDay(d) || LX.estadoMercado().fase === 'pre') { d = LX.addDays(d, -1); while (!LX.isBusinessDay(d)) d = LX.addDays(d, -1); } else if (LX.estadoMercado().fase !== 'pos') { d = LX.addDays(d, -1); while (!LX.isBusinessDay(d)) d = LX.addDays(d, -1); } return LX.iso(d); })();
-                const f = MKT.placar && (MKT.placar.dias || []).find(x => x.data === ref), el = $('ms-fech');
-                const doRef = tipo => { const v = ativoIndice(tipo); if (v && v.data === ref) return v; const a = deSerie(MKT.arq, tipo); return a && a.data === ref ? a : null; };
-                const ib = doRef('ibov'), us = doRef('dolar');
-                const doDia = d => d && d.data === ref && d.var != null;
-                const parte = (nome, d, dec, pre, pf) => doDia(d) ? `${nome} <b>${pre}${LX.num(d.preco, dec)}</b> <b class="${cor(d.var)}">${pctTxt(d.var)}</b>` : pf != null ? `${nome} <b class="${cor(pf)}">${pctTxt(pf)}</b>` : '';
-                const txt = [parte('Ibovespa', ib, 0, '', f && f.win && f.win.var_pct), parte('dólar comercial', us, 4, 'R$ ', f && f.wdo && f.wdo.var_pct)].filter(Boolean);
-                if (!txt.length) { el.classList.add('hidden'); return; }
-                const fonte = doDia(ib) || doDia(us) ? (doDia(us) ? us.fonte : ib.fonte) : 'fechamento conferido pelo placar';
-                el.innerHTML = `<span class="font-mono text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 mr-2">Fechamento de ${LX.weekday(LX.parseISO(ref))} ${LX.brShort(LX.parseISO(ref))}</span>${txt.join(' · ')} <span class="text-xs text-slate-600 dark:text-slate-400">· variação desde o fechamento anterior · ${esc(fonte)}${f && (f.win || f.wdo) ? ' · <a href="#placar-term" class="text-lect-teal hover:underline">placar do modelo</a>' : ''}</span>`;
-                el.classList.remove('hidden');
-                el.classList.toggle('max-sm:hidden', LX.estadoMercado().fase === 'aberto'); // pregão aberto no celular: o gráfico sobe
-            }
-
-            /* ---------- estado da B3: faixa no topo da mesa e ordem dos blocos ---------- */
-            function estado() {
-                const e = LX.estadoMercado(), box = $('ms-estado'), dia = d => `${LX.weekday(d)}, ${LX.brShort(d)}`;
-                const ib = ativoIndice('ibov'), base = 'flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-2.5 border text-sm';
-                const ponto = c => `<span class="inline-block w-2 h-2 rounded-full ${c}"></span>`;
-                let html;
-                if (e.fase === 'aberto') {
-                    html = `<div class="${base} border-emerald-500/40 bg-emerald-500/5">${ponto('bg-emerald-500 animate-pulse')}<strong>Pregão aberto</strong><span class="text-slate-600 dark:text-slate-400">futuros até ${e.fechaFut}, ações até ${e.fechaAcoes} (Brasília)</span>${ib ? `<span class="font-mono text-xs text-slate-600 dark:text-slate-400">${esc(ib.st.rotulo)}${ib.st.atraso ? ' · ' + esc(ib.st.atraso) : ''} · ${esc(ib.fonte)}</span>` : ''}</div>`;
-                } else if (e.fase === 'pre') {
-                    const m = e.faltaMin;
-                    html = `<div class="${base} border-amber-500/40 bg-amber-500/5">${ponto('bg-amber-500')}<strong>Pré-abertura</strong><span class="text-slate-600 dark:text-slate-400">futuros abrem às ${e.abreFut}${m != null ? ` (em ${m >= 60 ? Math.floor(m / 60) + 'h' + String(m % 60).padStart(2, '0') : m + ' min'})` : ''} e ações às ${e.abreAcoes}</span></div>`;
-                } else if (e.fase === 'pos') {
-                    html = `<div class="${base} border-slate-300 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark">${ponto('bg-slate-400')}<strong>Pregão encerrado</strong><span class="text-slate-600 dark:text-slate-400">mostrando a sessão de hoje, ${LX.brShort(LX.todayBRT())} · reabre ${dia(e.reabre)} às ${e.abreFut}</span></div>`;
+                const dia = LX.parseISO(l.data), hora = l.gerado_em ? hm(new Date(l.gerado_em)).replace(':', 'h') : '';
+                $('ms-analise').href = `leitura/${l.data}.html`;
+                let pts = Array.isArray(l.pontos) && l.pontos.length ? l.pontos.map(p => [p.titulo || '', p.texto || '']) : null;
+                if (!pts) { const r = l.resumo.length > 2 && /^(No último pregão|Ontem|Na (segunda|terça|quarta|quinta|sexta)|A B3 está fechada)/i.test(l.resumo[0]) ? l.resumo.slice(1) : l.resumo; pts = r.map(x => ['', x]); }
+                const pp = l.proximo_pregao;
+                if (e.fase === 'sem' && pp && pp.o_que_esperar) {
+                    // feriado/fim de semana: o aviso de bolsa fechada já está na faixa; a manchete diz o que acompanhar até a reabertura
+                    const r = LX.parseISO(pp.data || LX.iso(e.reabre));
+                    $('ms-resumo-quando').textContent = `Até o próximo pregão · ${LX.weekday(r)} ${LX.brShort(r)} · Leitura de ${LX.brShort(dia)}${hora ? ', ' + hora : ''} · IA`;
+                    const usaPonto = pp.o_que_esperar.length > 150 && pts[0] && pts[0][0];
+                    $('ms-resumo-t').textContent = usaPonto ? pts[0][0] : pp.o_que_esperar;
+                    sub.textContent = usaPonto ? pp.o_que_esperar : ''; sub.classList.toggle('hidden', !usaPonto);
+                    if (usaPonto) pts = pts.slice(1);
                 } else {
-                    // sem pregão: quando reabre e os eventos até lá (agenda do site)
-                    const fim = new Date(`${LX.iso(e.reabre)}T23:59:00-03:00`).getTime(), agora = Date.now();
-                    const evs = ((MKT.cal && MKT.cal.eventos) || []).map(x => ({ x, t: quando(x) })).filter(o => !/^feriado/.test(o.x.tipo || '') && !/B3 fechada/i.test(o.x.evento || '') && o.t >= agora - 3600e3 && o.t <= fim).sort((a, b) => (b.x.importancia || 1) - (a.x.importancia || 1) || a.t - b.t).slice(0, 3).sort((a, b) => a.t - b.t);
-                    html = `<div class="px-4 py-3 border border-lect-orange/50 bg-lect-orange/5"><div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">${ponto('bg-lect-orange')}<strong class="text-base">B3 fechada hoje</strong><span class="text-sm text-slate-600 dark:text-slate-400">${esc(e.motivo)} · reabre ${dia(e.reabre)}: futuros às ${e.abreFut}, ações às ${e.abreAcoes}</span></div>
-                        ${evs.length ? `<p class="mt-2 font-mono text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">Até o fim do próximo pregão</p><ul class="mt-1 grid gap-1 sm:grid-cols-3 text-sm">${evs.map(o => `<li class="min-w-0"><span class="font-mono text-xs text-slate-600 dark:text-slate-400">${LX.iso(LX.parseISO(o.x.data)) === hojeISO() ? 'hoje' : LX.weekday(LX.parseISO(o.x.data)) + ' ' + LX.brShort(LX.parseISO(o.x.data))}${o.x.hora ? ' ' + esc(o.x.hora) : ''}</span> ${(LX.calFlag || {})[o.x.pais] || ''} ${esc(o.x.evento)}</li>`).join('')}</ul>` : '<p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Nenhum evento relevante marcado na agenda até a reabertura.</p>'}</div>`;
+                    $('ms-resumo-quando').textContent = `Leitura do Dia · ${l.tipo === 'sem-pregao' ? 'edição sem pregão' : 'cenário de abertura'} · ${LX.weekday(dia)} ${LX.brShort(dia)}${hora ? ' · ' + hora : ''} · IA`;
+                    $('ms-resumo-t').textContent = l.titulo || l.resumo[0]; sub.classList.add('hidden');
                 }
-                box.innerHTML = html;
-                // ordem dos blocos: com o pregão aberto, o gráfico vem logo após a manchete; fora dele, o próximo evento vem antes do gráfico
-                const ab = e.fase === 'aberto', set = (id, o) => { const n = $(id); n.classList.remove('order-1', 'order-2', 'order-3'); n.classList.add(o); };
-                set('ms-resumo', 'order-1'); set('ms-grafico', ab ? 'order-2' : 'order-3'); set('ms-evento', ab ? 'order-3' : 'order-2');
+                const ab = e.fase === 'aberto';
+                alvo.innerHTML = pts.slice(0, 2).map(([t, x], i) => `<li class="${i && ab ? 'hidden md:block ' : ''}min-w-0 text-sm leading-snug text-slate-700 dark:text-slate-300 pl-3 border-l-2 border-lect-teal/60">${t ? `<strong class="block text-slate-900 dark:text-white">${esc(t)}</strong>` : ''}<span class="line-clamp-3">${esc(x)}</span></li>`).join('');
+                $('ms-resumo-nota').textContent = `${l.data !== hojeISO() && e.fase !== 'sem' ? 'Edição anterior: a de hoje sai às 7h40 · ' : ''}números da edição${hora ? ' das ' + hora : ''} · escrito com IA · não é recomendação`;
             }
 
             /* ---------- lista de ativos + chips ---------- */
@@ -799,17 +678,19 @@
                     return `${i === 2 ? '<li class="px-4 pt-3 pb-1 font-mono text-[10px] uppercase tracking-wider text-slate-500" role="presentation">Ações</li>' : ''}<li role="presentation"><button type="button" role="option" aria-selected="${on}" data-ativo="${a.id}" class="w-full flex items-center gap-3 px-4 py-2 text-left border-l-2 ${on ? 'border-lect-teal bg-lect-teal/10' : 'border-transparent hover:bg-slate-50 dark:hover:bg-white/[0.03]'} focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal focus-visible:-outline-offset-2">
                         <span class="flex-1 min-w-0"><span class="block text-sm font-semibold ${on ? 'text-lect-teal' : ''}">${esc(a.nome)}</span><span class="block text-[11px] text-slate-500 truncate">${esc(a.sub)}</span></span>
                         <span class="text-right"><span class="block text-sm">${d && d.preco != null ? a.pre + LX.num(d.preco, a.dec) : '—'}</span><span class="block text-xs font-semibold ${cor(d && d.var)}">${d ? pctTxt(d.var) : 'indisponível'}</span><span class="block font-mono text-[10px] text-slate-500 whitespace-nowrap">${stCurto(d)}</span></span></button></li>`; }).join('');
-                $('ms-chips').innerHTML = cat.map(a => `<button type="button" data-ativo="${a.id}" aria-pressed="${a.id === SEL}" class="shrink-0 px-3 py-1.5 text-xs font-semibold border ${a.id === SEL ? 'border-lect-teal bg-lect-teal text-white' : 'border-slate-300 dark:border-lect-borderDark'}">${esc(a.id === 'USDBRL' ? 'Dólar' : a.nome)} <span class="${a.id === SEL ? '' : cor(a.d && a.d.var)}">${a.d ? pctTxt(a.d.var) : ''}</span></button>`).join('');
+                // celular: seletor "Trocar ativo" com o nome do ativo atual
+                $('ms-trocar').innerHTML = cat.map(a => `<option value="${a.id}"${a.id === SEL ? ' selected' : ''}>${esc(a.id === 'USDBRL' ? 'Dólar comercial' : a.nome)}${a.d && a.d.var != null ? ' · ' + pctTxt(a.d.var) : ''}</option>`).join('');
                 const c = MKT.cot, ib = ativoIndice('ibov'), us = ativoIndice('dolar');
                 $('ms-lista-fonte').textContent = [ib && `Ibovespa: ${ib.fonte}`, us && `Dólar: ${us.fonte}`, c && `Ações: brapi (atraso de ~30 min), consultado às ${LX.hBRT(new Date(c.atualizado_em))}`].filter(Boolean).join(' · ');
             }
             function selecionar(id, foco) {
                 SEL = id; try { localStorage.setItem('lectnex-ativo', id); } catch (_) { }
-                lista(); ativo(); relacionadas(); info(); evento();
+                lista(); ativo(); info(); evento();
                 if (foco) { const b = document.querySelector(`#ms-lista [data-ativo="${id}"]`); if (b && foco === 'lista') b.focus(); }
                 LX.track && LX.track('ativo_selecionado', { ativo: id });
             }
-            document.addEventListener('click', ev => { const b = ev.target.closest('#ms-lista [data-ativo], #ms-chips [data-ativo]'); if (b) selecionar(b.dataset.ativo, b.closest('#ms-lista') ? 'lista' : null); });
+            document.addEventListener('click', ev => { const b = ev.target.closest('#ms-lista [data-ativo]'); if (b) selecionar(b.dataset.ativo, 'lista'); });
+            $('ms-trocar').addEventListener('change', ev => selecionar(ev.target.value));
             $('ms-lista').addEventListener('keydown', ev => { // setas para percorrer a lista
                 if (!['ArrowDown', 'ArrowUp'].includes(ev.key)) return; ev.preventDefault();
                 const bs = [...$('ms-lista').querySelectorAll('[data-ativo]')], i = bs.findIndex(b => b.dataset.ativo === SEL), n = bs[Math.max(0, Math.min(bs.length - 1, i + (ev.key === 'ArrowDown' ? 1 : -1)))];
@@ -876,20 +757,34 @@
                 box.onpointerleave = () => { const c = $('ms-cross'), t = $('ms-tip'); c && c.classList.add('hidden'); t && t.classList.add('hidden'); };
             }
 
-            /* ---------- notícias ligadas ao ativo ---------- */
-            function relacionadas() {
-                const a = catalogo().find(x => x.id === SEL); if (!a) return;
-                $('ms-rel-nome').textContent = a.id === 'USDBRL' ? 'ao dólar' : a.acao ? 'a ' + a.id : 'ao Ibovespa';
-                const ns = MKT.noticias || [];
-                let sel, crit;
-                if (a.acao) { sel = ns.filter(n => (n.tickers || []).includes(a.id)); crit = `Manchetes que citam ${a.id} no título.`; }
-                else { const k = a.id === 'IBOV' ? 'WIN' : 'WDO'; sel = ns.filter(n => (n.ativos || []).includes(k) && n.impacto === 'alto'); crit = `Manchetes de alto impacto que a regra automática do site liga ${a.id === 'IBOV' ? 'à bolsa' : 'ao câmbio'} (classificação por palavras do título).`; }
-                $('ms-rel-crit').textContent = crit;
-                const gsel = LX.agruparNoticias ? LX.agruparNoticias(sel) : sel.map(n => ({ principal: n, outras: [] }));
-                $('ms-rel-lista').innerHTML = gsel.length ? gsel.slice(0, 5).map(g => { const n = g.principal, t = n.publicado ? new Date(n.publicado) : null;
-                    return `<li class="py-2 flex gap-3 text-sm"><span class="shrink-0 w-12 font-mono text-xs text-slate-500 pt-0.5">${t ? (diaDe(t) === hojeISO() ? hm(t) : LX.brShort(t)) : ''}</span><div class="min-w-0"><a href="${esc(n.url)}" target="_blank" rel="noopener" class="hover:text-lect-teal hover:underline">${esc(n.titulo)}</a> <span class="font-mono text-[11px] text-slate-500 whitespace-nowrap">· ${esc(n.fonte)}</span>${LX.coberturas ? LX.coberturas(g) : ''}</div></li>`; }).join('')
-                    : `<li class="py-2 text-sm text-slate-500">Nenhuma manchete recente com essa ligação.</li>`;
+            /* ---------- notícias: uma lista só (coleta ao vivo + manchetes do dia), mesma matéria uma vez ---------- */
+            // variação de ação ao lado da manchete: sempre com a data/hora da cotação; com a bolsa fechada, "no fechamento de dd/mm"
+            function chipAcao(tk, pub) {
+                const q = acoes().find(x => x.ticker === tk);
+                if (!q || q.var_pct == null || !q.t) return `<span class="px-1.5 py-0.5 bg-slate-100 dark:bg-white/5 font-mono text-[10px] font-bold">${esc(tk)}</span>`;
+                const t = new Date(q.t), dq = diaDe(t), mq = (+t.toLocaleTimeString('en-GB', { hour: '2-digit', timeZone: TZ }).slice(0, 2)) * 60 + +t.toLocaleTimeString('en-GB', { minute: '2-digit', timeZone: TZ }).slice(-2);
+                const fech = dq < hojeISO() || mq >= LX.sessions.b3.close || LX.estadoMercado().fase !== 'aberto';
+                const ref = fech ? `no fechamento de ${dq.slice(8, 10)}/${dq.slice(5, 7)}` : `às ${hm(t).replace(':', 'h')}`;
+                const v = q.var_pct;
+                return `<span class="px-1.5 py-0.5 font-mono text-[10px] font-bold ${v > 0 ? 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400' : v < 0 ? 'bg-rose-500/15 text-rose-700 dark:text-rose-400' : 'bg-slate-100 dark:bg-white/5'}" title="Cotação brapi (atraso ~30 min)">${esc(tk)} ${pctTxt(v)} ${ref}</span>`;
             }
+            const SELO = { 'ao-vivo': ['AO VIVO', 'bg-lect-teal'], atrasado: ['ATRASADO', 'bg-amber-600'], pausa: ['EM PAUSA', 'bg-slate-500'], sem: ['SEM DADOS', 'bg-amber-600'] };
+            function noticias() {
+                const st = LX.statusNoticias(MKT.noticiasEm), c = SELO[st.estado] || SELO.sem;
+                $('agora-badge').className = `px-1.5 py-0.5 ${c[1]} text-white text-[10px] font-mono tracking-wider flex items-center gap-1`;
+                $('agora-badge').innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-white${st.estado === 'ao-vivo' ? ' animate-pulse' : ''}"></span>${c[0]}`;
+                $('agora-hora').textContent = st.rotulo;
+                const gs = (LX.agruparNoticias ? LX.agruparNoticias(MKT.noticias || []) : (MKT.noticias || []).map(n => ({ principal: n, outras: [], recente: new Date(n.publicado).getTime() }))).sort((a, b) => b.recente - a.recente).slice(0, 5);
+                const quando = iso => { const d = new Date(iso); return isNaN(d) ? '' : diaDe(d) === hojeISO() ? hm(d) : `${LX.brShort(d)} ${hm(d)}`; };
+                $('ms-news-lista').innerHTML = gs.length ? gs.map(g => { const n = g.principal;
+                    return `<li class="py-2.5 flex gap-3"><span class="w-12 shrink-0 font-mono text-xs text-slate-600 dark:text-slate-400 pt-0.5">${quando(n.publicado)}</span><div class="min-w-0 flex-1">
+                        <a href="${esc(n.url)}" target="_blank" rel="noopener nofollow" class="block text-[15px] font-semibold leading-snug hover:text-lect-teal">${esc(n.titulo)}</a>
+                        <span class="flex flex-wrap items-center gap-x-2 gap-y-1 mt-1 font-mono text-[11px] text-slate-600 dark:text-slate-400">${g.alto ? '<span class="font-bold text-amber-600 dark:text-amber-400">alto impacto</span>' : ''}<span>${esc(n.fonte || '')}</span>${(n.tickers || []).slice(0, 3).map(tk => chipAcao(tk, n.publicado)).join('')}</span>
+                        ${LX.coberturas ? LX.coberturas(g) : ''}</div></li>`; }).join('')
+                    : '<li class="py-2 text-sm text-slate-600 dark:text-slate-400">Nenhuma manchete de impacto nas últimas horas.</li>';
+            }
+            const btAl = $('agora-alertas'), pintaAl = () => { btAl.textContent = LX.avisosNoticias && LX.avisosNoticias() ? '🔔 avisos ligados' : '🔕 avisos desligados'; };
+            btAl.onclick = () => { LX.avisosNoticias(!LX.avisosNoticias()); pintaAl(); }; pintaAl();
 
             /* ---------- detalhes do ativo ---------- */
             function info() {
@@ -905,35 +800,44 @@
                 $('ms-info-dl').innerHTML = h || '<p class="col-span-2 text-sm text-slate-500">Sem detalhes disponíveis agora.</p>';
             }
 
-            /* ---------- próximo evento (destaca quando a agenda liga o evento ao ativo) ---------- */
+            /* ---------- próximo evento de alto impacto + agenda curta (mesmo status e resultado do calendário completo) ---------- */
             const EF = { volatil: '↕ pode oscilar forte', alta: '▲ costuma subir', baixa: '▼ costuma cair', neutro: '● efeito pequeno' };
-            const quando = e => { const m = /^(\d{1,2})h(\d{2})?/.exec(e.hora || ''); return new Date(`${e.data}T${m ? String(m[1]).padStart(2, '0') : '23'}:${m ? (m[2] || '00') : '59'}:00-03:00`).getTime(); }; // "12h–15h30" vale o início; sem hora = o dia todo
+            const quando = LX.eventoQuando;
+            const DADOS_TIPO = { ipca: 'ipca', 'ipca-15': 'ipca', payroll: 'payroll', 'cpi-eua': 'cpi-eua', fomc: 'fomc', copom: 'copom' };
+            const diaTxt = d => d === hojeISO() ? 'hoje' : d === LX.iso(LX.addDays(LX.todayBRT(), 1)) ? 'amanhã' : `${LX.weekday(LX.parseISO(d))} ${LX.brShort(LX.parseISO(d))}`;
+            function escolherEvento(evs, agora) {
+                // 1º: alto impacto já divulgado há menos de 1 h ou esperando resultado (até 3 h); depois o próximo alto impacto
+                const lst = evs.filter(e => (e.importancia || 1) >= 3 && !/^feriado/.test(e.tipo || '')).map(e => ({ e, t: quando(e), s: LX.statusEvento(e, agora) })).sort((a, b) => a.t - b.t);
+                return lst.find(x => (x.s.estado === 'aguardando' && x.t > agora - 3 * 3600e3) || (x.s.estado === 'divulgado' && x.t > agora - 3600e3) || (x.s.estado === 'futuro' && x.t > agora)) || null;
+            }
             function evento() {
                 const evs = (MKT.cal && MKT.cal.eventos) || [], agora = Date.now(), chave = SEL === 'IBOV' ? 'win' : SEL === 'USDBRL' ? 'wdo' : null;
-                const fut = evs.map(e => ({ e, t: quando(e) })).filter(x => (x.e.importancia || 1) >= 3 && !(x.e.resultado != null && x.e.resultado !== '') && x.t > agora - 5 * 6e4).sort((a, b) => a.t - b.t);
-                const nx = fut[0];
-                const sub = $('at-agenda-sub');
-                const nxa = nx || evs.map(e => ({ e, t: quando(e) })).filter(x => (x.e.importancia || 1) >= 2 && !(x.e.resultado != null && x.e.resultado !== '') && x.t > agora - 5 * 6e4).sort((a, b) => a.t - b.t)[0];
-                if (sub) sub.textContent = nxa ? `próximo: ${nxa.e.evento}${nxa.e.hora ? ' · ' + (nxa.e.data === hojeISO() ? 'hoje ' : LX.brShort(LX.parseISO(nxa.e.data)) + ' ') + nxa.e.hora : ''}` : 'eventos da semana';
+                const nx = escolherEvento(evs, agora);
+                const ppSub = $('pp-evento-sub'), hs = $('pp-hist'), hsSub = $('pp-hist-sub');
                 if (!MKT.cal) { $('ms-ev').textContent = 'Agenda indisponível no momento.'; $('ms-ev-cd').textContent = ''; }
-                else if (!nx) { $('ms-ev').innerHTML = '<span class="text-sm">Nenhum dado de alto impacto marcado.</span> <a href="#noticias" class="font-mono text-[11px] text-lect-teal hover:underline">agenda ↓</a>'; $('ms-ev-cd').textContent = ''; }
+                else if (!nx) { $('ms-ev').innerHTML = '<span>Nenhum evento de alto impacto marcado nos próximos dias.</span>'; $('ms-ev-cd').textContent = ''; }
                 else {
-                    const e = nx.e, min = Math.max(0, Math.round((nx.t - agora) / 6e4)), d = LX.parseISO(e.data);
-                    const dia = e.data === hojeISO() ? 'hoje' : e.data === LX.iso(LX.addDays(LX.todayBRT(), 1)) ? 'amanhã' : `${LX.weekday(d)} ${LX.brShort(d)}`;
-                    $('ms-ev-cd').textContent = min < 60 ? `em ${min} min` : min < 2880 ? `em ${Math.floor(min / 60)}h${String(min % 60).padStart(2, '0')}` : `em ${Math.round(min / 1440)} dias`;
-                    $('ms-ev-cd').className = 'font-mono text-[11px] font-bold ' + (min <= 15 ? 'text-amber-600 dark:text-amber-400' : 'text-slate-500');
+                    const e = nx.e, s = nx.s, min = Math.round((nx.t - agora) / 6e4);
+                    $('ms-ev-cd').textContent = s.estado === 'divulgado' ? 'divulgado' : s.estado === 'aguardando' ? 'aguardando resultado' : min < 60 ? `em ${min} min` : min < 2880 ? `em ${Math.floor(min / 60)}h${String(min % 60).padStart(2, '0')}` : `em ${Math.round(min / 1440)} dias`;
+                    $('ms-ev-cd').className = 'font-mono text-xs font-bold ' + (s.estado === 'aguardando' || (s.estado === 'futuro' && min <= 15) ? 'text-amber-600 dark:text-amber-400' : s.estado === 'divulgado' ? 'text-lect-teal' : 'text-slate-600 dark:text-slate-400');
                     const liga = chave && e.impacto && EF[e.impacto[chave]];
-                    $('ms-ev').innerHTML = `<strong class="block text-[15px] leading-snug text-slate-900 dark:text-white">${(LX.calFlag || {})[e.pais] || ''} ${esc(e.evento)}</strong>
-                        <span class="block text-xs text-slate-500 mt-0.5">${dia}${e.hora ? ', ' + esc(e.hora) : ''} (Brasília)</span>
-                        <table class="mt-2 w-full text-xs tabular-nums"><tr class="text-slate-500"><td>Anterior</td><td>Consenso</td><td>Divulgado</td></tr><tr class="font-semibold"><td>${esc(e.anterior || '—')}</td><td>${esc(e.consenso || '—')}</td><td>—</td></tr></table>
-                        ${liga ? `<p class="mt-2 text-xs"><span class="text-amber-600 dark:text-amber-400 font-semibold">Ligado ao ativo selecionado:</span> ${e.impacto[chave] === 'volatil' ? 'a agenda marca este dado como capaz de mexer forte no ' : 'reação típica no '}${SEL === 'IBOV' ? 'índice' : 'dólar'} (${EF[e.impacto[chave]]}).</p>` : ''}
-                        <a href="${e.tipo === 'copom' ? 'copom.html' : '#noticias'}" class="inline-block mt-2 font-mono text-[11px] font-bold text-lect-teal hover:underline">${e.tipo === 'copom' ? 'Página do Copom →' : 'agenda completa ↓'}</a>`;
+                    $('ms-ev').innerHTML = `<div class="flex flex-wrap items-baseline gap-x-3"><strong class="text-[15px] leading-snug text-slate-900 dark:text-white">${(LX.calFlag || {})[e.pais] || ''} ${esc(e.evento)}</strong><span class="font-mono text-xs font-bold text-slate-700 dark:text-slate-300">${diaTxt(e.data)}${e.hora ? ', ' + esc(e.hora) : ''}</span></div>
+                        <div class="mt-1 flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs tabular-nums"><span><span class="text-slate-600 dark:text-slate-400">anterior</span> ${esc(e.anterior || '—')}</span><span><span class="text-slate-600 dark:text-slate-400">consenso</span> ${esc(e.consenso || '—')}</span><span class="${s.estado === 'divulgado' ? 'font-bold text-slate-900 dark:text-white' : s.estado === 'aguardando' ? 'font-bold text-amber-600 dark:text-amber-400' : 'text-slate-600 dark:text-slate-400'}">${s.estado === 'divulgado' ? 'resultado ' + esc(String(e.resultado)) : s.estado === 'aguardando' ? 'Aguardando resultado' : 'resultado às ' + esc(e.hora || '—')}</span></div>
+                        ${liga ? `<p class="mt-1 text-xs"><span class="text-amber-600 dark:text-amber-400 font-semibold">Ligado ao ${SEL === 'IBOV' ? 'Ibovespa' : 'dólar'}:</span> ${EF[e.impacto[chave]]}.</p>` : ''}`;
                 }
-                // eventos de hoje/amanhã ligados ao ativo (relação definida na agenda: campo "impacto")
+                if (ppSub) ppSub.textContent = nx ? `${nx.e.evento} · ${diaTxt(nx.e.data)}${nx.e.hora ? ' ' + nx.e.hora : ''}` : 'agenda da semana';
+                if (hs) { const tp = nx && DADOS_TIPO[nx.e.tipo]; hs.href = tp ? `dados/${tp}.html` : '#reacao'; hsSub.textContent = tp ? `${nx.e.evento.split(' (')[0]}: divulgações passadas` : 'reação a cada tipo de dado'; }
+                // agenda curta: até 3 eventos a partir de agora (sem repetir o de cima), mesmo status do calendário completo
+                const lst = evs.filter(e => !/^feriado/.test(e.tipo || '') && !(nx && e === nx.e)).map(e => ({ e, t: quando(e), s: LX.statusEvento(e, agora) }))
+                    .filter(x => (x.s.estado === 'futuro' && x.t > agora) || (x.s.estado !== 'futuro' && x.t > agora - 3 * 3600e3)).sort((a, b) => a.t - b.t);
+                const top = lst.filter(x => (x.e.importancia || 1) >= 2).concat(lst.filter(x => (x.e.importancia || 1) < 2)).slice(0, 3).sort((a, b) => a.t - b.t);
+                $('ms-agenda-lista').innerHTML = top.length ? top.map(({ e, s }) => `<li class="py-2 flex gap-3 text-sm"><span class="w-24 shrink-0 font-mono text-xs text-slate-600 dark:text-slate-400 pt-0.5">${diaTxt(e.data)}${e.hora ? ' ' + esc(e.hora) : ''}</span><span class="min-w-0 flex-1">${(LX.calFlag || {})[e.pais] || ''} ${esc(e.evento)} <span class="font-mono text-[10px] text-lect-orange">${'●'.repeat(Math.max(1, Math.min(3, e.importancia || 1)))}</span>${s.estado === 'divulgado' ? ` <span class="font-mono text-xs font-bold">· resultado ${esc(String(e.resultado))}</span>` : s.estado === 'aguardando' ? ' <span class="font-mono text-xs font-bold text-amber-600 dark:text-amber-400">· aguardando resultado</span>' : ''}</span></li>`).join('')
+                    : '<li class="py-2 text-sm text-slate-600 dark:text-slate-400">Nada mais marcado na agenda dos próximos dias.</li>';
+                // detalhes do ativo (computador): outros dados que a agenda liga ao ativo
                 const box = $('ms-info-ev');
                 if (!chave) { box.innerHTML = ''; return; }
-                const rel = fut.filter(x => x.e.impacto && x.e.impacto[chave] && x.e.impacto[chave] !== 'neutro' && x !== nx).slice(0, 3);
-                box.innerHTML = rel.length ? `<span class="text-[11px] text-slate-500">Outros dados que a agenda liga ${SEL === 'IBOV' ? 'à bolsa' : 'ao dólar'}</span><ul class="mt-1 space-y-1 text-xs">${rel.map(x => `<li class="flex gap-2"><span class="w-24 shrink-0 font-mono text-slate-500">${LX.brShort(LX.parseISO(x.e.data))} ${esc(x.e.hora || '')}</span><span>${esc(x.e.evento)}</span></li>`).join('')}</ul>` : '';
+                const rel = lst.filter(x => x.s.estado === 'futuro' && x.e.impacto && x.e.impacto[chave] && x.e.impacto[chave] !== 'neutro').slice(0, 3);
+                box.innerHTML = rel.length ? `<span class="text-[11px] text-slate-600 dark:text-slate-400">Outros dados que a agenda liga ${SEL === 'IBOV' ? 'à bolsa' : 'ao dólar'}</span><ul class="mt-1 space-y-1 text-xs">${rel.map(x => `<li class="flex gap-2"><span class="w-24 shrink-0 font-mono text-slate-600 dark:text-slate-400">${LX.brShort(LX.parseISO(x.e.data))} ${esc(x.e.hora || '')}</span><span>${esc(x.e.evento)}</span></li>`).join('')}</ul>` : '';
             }
 
             /* ---------- setores ---------- */
@@ -947,13 +851,14 @@
             }
 
             /* ---------- carregar e atualizar sem mexer na seleção ---------- */
-            function tudo() { estado(); faixa(); resumo(); lista(); ativo(); relacionadas(); info(); evento(); setores(); LX.fill && LX.fill(); document.dispatchEvent(new Event('lx:mesa')); }
+            function tudo() { faixa(); resumo(); lista(); ativo(); noticias(); info(); evento(); setores(); LX.fill && LX.fill(); document.dispatchEvent(new Event('lx:mesa')); }
             // o Modo Pregão lê daqui o mesmo valor e o mesmo status de cada ativo
             LX.mesaAtivo = id => { const a = catalogo().find(x => x.id === id); return a ? a.d : null; };
             // o status depende do relógio (ex.: dado que fica velho, pregão que fecha): recalcula a cada minuto
-            setInterval(() => { estado(); faixa(); lista(); ativo(); }, 6e4);
+            setInterval(() => { faixa(); lista(); ativo(); noticias(); }, 6e4);
             function aplicarAoVivo(n) {
                 if (!n) return;
+                if (n.atualizado_em && (!MKT.noticiasEm || n.atualizado_em >= MKT.noticiasEm)) MKT.noticiasEm = n.atualizado_em;
                 if (n.mercado && (n.mercado.ibov || n.mercado.dolar)) MKT.serie = n.mercado;
                 MKT.noticias = [...(n.noticias || []), ...(n.hoje || [])].filter((x, i, arr) => x && x.titulo && arr.findIndex(y => y.titulo === x.titulo) === i)
                     .sort((a, b) => String(b.publicado || '').localeCompare(String(a.publicado || '')));
@@ -976,7 +881,9 @@
                 .finally(() => { MKT.fx = LX.data && LX.data.fx && LX.data.fx.USDBRL || null; tudo(); });
             document.addEventListener('lx:fx', () => { MKT.fx = LX.data.fx.USDBRL || null; faixa(); if (!MKT.serie) { lista(); if (SEL === 'USDBRL') ativo(); } });
             document.addEventListener('lx:macro', faixa);
-            setInterval(() => buscarAoVivo().then(() => { faixa(); lista(); ativo(); relacionadas(); info(); resumo(); }), 75000);
+            setInterval(() => buscarAoVivo().then(() => { faixa(); lista(); ativo(); noticias(); info(); resumo(); }), 75000);
+            // agenda: relê o calendário a cada 5 min; o topo e o calendário completo usam o mesmo arquivo e o mesmo status
+            setInterval(() => LX.dados('calendario', true).then(c => { if (c) { MKT.cal = c; evento(); document.dispatchEvent(new CustomEvent('lx:calendario', { detail: c })); } }), 5 * 6e4);
             setInterval(() => LX.dados('cotacoes', true).then(c => { if (c) { MKT.cot = c; lista(); faixa(); setores(); if (SEL !== 'IBOV' && SEL !== 'USDBRL') { ativo(); info(); } } }), 5 * 6e4);
             setInterval(evento, 30000);
             let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { const a = catalogo().find(x => x.id === SEL); if (a) grafico(a); }, 150); });
@@ -994,17 +901,24 @@
             const tipos = Object.entries(g).filter(([, rs]) => rs.length >= 2).sort((a, b) => b[1].length - a[1].length);
             if (!tipos.length) return;
             const FL = { BR: '🇧🇷', US: '🇺🇸', CN: '🇨🇳', EU: '🇪🇺', JP: '🇯🇵', UK: '🇬🇧' };
-            const avg = (rs, k, f) => { const v = rs.filter(f || (() => true)).map(r => r[k]).filter(x => typeof x === 'number'); return v.length ? { m: v.reduce((a, b) => a + b, 0) / v.length, n: v.length } : null; };
-            const absm = (rs, k) => { const v = rs.map(r => r[k]).filter(x => typeof x === 'number'); return v.length ? v.reduce((a, b) => a + Math.abs(b), 0) / v.length : null; };
-            const cel = x => x ? `<span class="${x.m > 0 ? 'text-emerald-600 dark:text-emerald-400' : x.m < 0 ? 'text-rose-600 dark:text-rose-400' : ''}">${(x.m > 0 ? '+' : x.m < 0 ? '−' : '') + LX.num(Math.abs(x.m), 2)}%</span> <span class="text-slate-400">(${x.n})</span>` : '<span class="text-slate-400">—</span>';
+            // janela de cada registro: 30 min (padrão) ou 1 h (antes de set/2026)
+            const jan = rs => { const h = rs.filter(r => r.janela === '1h').length, m = rs.length - h; return h && m ? '30 min + 1 h' : h ? '1 h' : '30 min'; };
+            const val = (rs, k) => rs.filter(r => typeof r[k] === 'number');
+            const avg = (rs, k, f) => { const v = val(rs.filter(f || (() => true)), k); return v.length ? { m: v.reduce((a, r) => a + r[k], 0) / v.length, n: v.length, j: jan(v) } : null; };
+            const absm = (rs, k) => { const v = val(rs, k); return v.length ? { m: v.reduce((a, r) => a + Math.abs(r[k]), 0) / v.length, n: v.length, j: jan(v) } : null; };
+            const obs = x => `<span class="block text-[10px] text-slate-600 dark:text-slate-400 whitespace-nowrap">${x.n} obs · ${x.j}</span>`;
+            const cel = x => x ? `<span class="${x.m > 0 ? 'text-emerald-600 dark:text-emerald-400' : x.m < 0 ? 'text-rose-600 dark:text-rose-400' : ''}">${(x.m > 0 ? '+' : x.m < 0 ? '−' : '') + LX.num(Math.abs(x.m), 2)}%</span>${obs(x)}` : '<span class="text-slate-400">—</span>';
+            const mov = x => x ? `±${LX.num(x.m, 2)}%${obs(x)}` : '—';
+            const mistura = tipos.some(([, rs]) => jan(rs) === '30 min + 1 h');
             const el = document.getElementById('rx-wrap');
             el.innerHTML = `<div class="term-panel">
-                <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark"><span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-clock-counter-clockwise text-lect-orange"></i>Reação histórica aos dados</span><span class="font-mono text-[10px] text-slate-500">variação nos 30 min após a divulgação · ${j.registros.length} divulgações medidas</span></div>
-                <div class="overflow-x-auto thin-scroll"><table class="w-full font-mono text-xs tabular-nums"><thead><tr class="text-[10px] text-slate-500 uppercase"><th class="text-left px-5 py-2 font-bold">Dado</th><th class="px-2 py-2 font-bold">Vezes</th><th class="px-2 py-2 font-bold">WIN média ±</th><th class="px-2 py-2 font-bold">WDO média ±</th><th class="px-2 py-2 font-bold">WDO se acima</th><th class="px-2 py-2 font-bold">WDO se abaixo</th><th class="px-2 py-2 font-bold">WIN se acima</th><th class="px-2 py-2 font-bold">WIN se abaixo</th><th class="px-2 py-2 font-bold" title="Taxa prefixada de 2 anos do Tesouro: manhã do dia do dado → manhã do pregão seguinte">DI 2a no dia ±</th></tr></thead>
-                <tbody>${tipos.map(([t, rs]) => { const ult = rs[rs.length - 1], aw = absm(rs, 'win'), au = absm(rs, 'wdo');
-                    return `<tr class="border-t border-slate-100 dark:border-lect-borderDark"><td class="px-5 py-2 font-sans font-semibold whitespace-nowrap">${FL[ult.pais] || ''} ${DADOS_PAG.includes(t) ? `<a href="dados/${t}.html" class="hover:text-lect-teal underline decoration-dotted">${LX.esc(ult.evento.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</a>` : LX.esc(ult.evento.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</td><td class="text-center px-2">${rs.length}</td><td class="text-center px-2">${aw != null ? '±' + LX.num(aw, 2) + '%' : '—'}${rs.some(r => r.win_abertura) ? '<sup class="text-lect-orange" title="Dado sai antes da abertura da bolsa: inclui o gap de abertura">*</sup>' : ''}</td><td class="text-center px-2">${au != null ? '±' + LX.num(au, 2) + '%' : '—'}</td>
-                    <td class="text-center px-2">${cel(avg(rs, 'wdo', r => r.surpresa === 'acima'))}</td><td class="text-center px-2">${cel(avg(rs, 'wdo', r => r.surpresa === 'abaixo'))}</td><td class="text-center px-2">${cel(avg(rs, 'win', r => r.surpresa === 'acima'))}</td><td class="text-center px-2">${cel(avg(rs, 'win', r => r.surpresa === 'abaixo'))}</td><td class="text-center px-2">${(x => x != null ? '±' + LX.num(x, 0) + ' bps' : '—')(absm(rs, 'di_bps'))}</td></tr>`; }).join('')}</tbody></table></div>
-                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">Medimos do último preço antes do dado até 30 minutos depois (ou a abertura seguinte, se o mercado estava fechado). Divulgações anteriores a setembro de 2026 foram medidas com barras de 1 hora (até 1 hora depois). WIN pelo Ibovespa à vista e WDO pelo dólar à vista; entre parênteses, quantas vezes. <span class="text-lect-orange">*</span> dado sai com a bolsa fechada (antes das 10h ou depois das 17h): no WIN a medida inclui o gap da abertura. DI: a curva pública do Tesouro tem uma taxa por dia (a da manhã), então a coluna mede o dia inteiro, da manhã do dado à manhã do pregão seguinte, no vértice de 2 anos. Amostra pequena no começo: o histórico cresce a cada divulgação. <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p></div>`;
+                <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark"><span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-clock-counter-clockwise text-lect-orange"></i>Reação histórica aos dados</span><span class="font-mono text-[10px] text-slate-600 dark:text-slate-400">Ibovespa à vista e dólar à vista · ${j.registros.length} divulgações medidas</span></div>
+                ${mistura ? '<p class="px-5 py-2 border-b border-slate-200 dark:border-lect-borderDark font-mono text-[11px] text-amber-700 dark:text-amber-400"><i class="ph-bold ph-warning"></i> Esta tabela mistura janelas: 30 min desde set/2026 e 1 h nas divulgações anteriores (barras de 1 hora). Cada célula diz quantas observações e qual janela usou.</p>' : ''}
+                <div class="overflow-x-auto thin-scroll"><table class="w-full font-mono text-xs tabular-nums"><thead><tr class="text-[10px] text-slate-600 dark:text-slate-400 uppercase align-bottom"><th class="text-left px-5 py-2 font-bold">Dado</th><th class="px-2 py-2 font-bold">Vezes</th><th class="px-2 py-2 font-bold">Ibovespa à vista<br><span class="font-normal normal-case">(ref. WIN) movimento ±</span></th><th class="px-2 py-2 font-bold">Dólar à vista<br><span class="font-normal normal-case">(ref. WDO) movimento ±</span></th><th class="px-2 py-2 font-bold">Dólar à vista<br><span class="font-normal normal-case">se acima</span></th><th class="px-2 py-2 font-bold">Dólar à vista<br><span class="font-normal normal-case">se abaixo</span></th><th class="px-2 py-2 font-bold">Ibovespa à vista<br><span class="font-normal normal-case">se acima</span></th><th class="px-2 py-2 font-bold">Ibovespa à vista<br><span class="font-normal normal-case">se abaixo</span></th><th class="px-2 py-2 font-bold" title="Taxa prefixada de 2 anos do Tesouro: manhã do dia do dado → manhã do pregão seguinte">DI 2 anos<br><span class="font-normal normal-case">janela: o dia</span></th></tr></thead>
+                <tbody>${tipos.map(([t, rs]) => { const ult = rs[rs.length - 1], di = val(rs, 'di_bps');
+                    return `<tr class="border-t border-slate-100 dark:border-lect-borderDark align-top"><td class="px-5 py-2 font-sans font-semibold whitespace-nowrap">${FL[ult.pais] || ''} ${DADOS_PAG.includes(t) ? `<a href="dados/${t}.html" class="hover:text-lect-teal underline decoration-dotted">${LX.esc(ult.evento.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</a>` : LX.esc(ult.evento.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</td><td class="text-center px-2 py-2">${rs.length}</td><td class="text-center px-2 py-2">${mov(absm(rs, 'win'))}${rs.some(r => r.win_abertura) ? '<sup class="text-lect-orange" title="Dado sai antes da abertura da bolsa: inclui o gap de abertura">*</sup>' : ''}</td><td class="text-center px-2 py-2">${mov(absm(rs, 'wdo'))}</td>
+                    <td class="text-center px-2 py-2">${cel(avg(rs, 'wdo', r => r.surpresa === 'acima'))}</td><td class="text-center px-2 py-2">${cel(avg(rs, 'wdo', r => r.surpresa === 'abaixo'))}</td><td class="text-center px-2 py-2">${cel(avg(rs, 'win', r => r.surpresa === 'acima'))}</td><td class="text-center px-2 py-2">${cel(avg(rs, 'win', r => r.surpresa === 'abaixo'))}</td><td class="text-center px-2 py-2">${di.length ? '±' + LX.num(di.reduce((a, r) => a + Math.abs(r.di_bps), 0) / di.length, 0) + ' bps' + `<span class="block text-[10px] text-slate-600 dark:text-slate-400">${di.length} obs</span>` : '—'}</td></tr>`; }).join('')}</tbody></table></div>
+                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-600 dark:text-slate-400">O ativo medido é o <strong>Ibovespa à vista</strong> (referência para o WIN) e o <strong>dólar à vista</strong> (referência para o WDO), não os contratos futuros. Medimos do último preço antes do dado até 30 minutos depois (ou a abertura seguinte, se o mercado estava fechado); divulgações anteriores a setembro de 2026 foram medidas com barras de 1 hora (até 1 hora depois). "Obs" = quantas divulgações entraram na conta. <span class="text-lect-orange">*</span> dado sai com a bolsa fechada (antes das 10h ou depois das 17h): a medida do Ibovespa inclui o gap da abertura. DI: a curva pública do Tesouro tem uma taxa por dia (a da manhã), então a coluna mede o dia inteiro, no vértice de 2 anos. <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p></div>`;
             el.classList.remove('hidden');
         }
 
@@ -1013,7 +927,8 @@
             const fallback = () => { document.getElementById('cal-wrap').classList.add('hidden'); const tv = document.getElementById('tv-calendar'); tv.classList.remove('hidden'); LX.tv('tv-calendar', 'events', { width: '100%', height: '100%', importanceFilter: '0,1', countryFilter: 'br,us,cn,eu' }); };
             LX.dados('calendario').then(d => {
                 const today = LX.iso(LX.todayBRT());
-                const evs = (d && Array.isArray(d.eventos) ? d.eventos : []).filter(e => e && e.data && e.evento && e.data >= today).sort((a, b) => (a.data + (a.hora || '')).localeCompare(b.data + (b.hora || '')));
+                const filtra = d => (d && Array.isArray(d.eventos) ? d.eventos : []).filter(e => e && e.data && e.evento && e.data >= today).sort((a, b) => (a.data + (a.hora || '')).localeCompare(b.data + (b.hora || '')));
+                let evs = filtra(d);
                 if (!evs.length) return fallback();
                 const FLAG = { BR: '🇧🇷', US: '🇺🇸', CN: '🇨🇳', EU: '🇪🇺', JP: '🇯🇵', UK: '🇬🇧' };
                 const IMP = { alta: ['▲', 'text-emerald-600 dark:text-emerald-400 border-emerald-500/40'], baixa: ['▼', 'text-rose-600 dark:text-rose-400 border-rose-500/40'], neutro: ['●', 'text-slate-500 border-slate-400/40'], volatil: ['↕', 'text-lect-orange border-lect-orange/40'] };
@@ -1024,7 +939,8 @@
                     const rs = RX[rxTipo(e)]; if (!rs || rs.length < 2) return '';
                     const med = k => { const v = rs.map(r => r[k]).filter(x => typeof x === 'number'); return v.length ? v.reduce((a, b) => a + Math.abs(b), 0) / v.length : null; };
                     const w = med('win'), u = med('wdo'), di = med('di_bps');
-                    return `<p class="mt-1 font-mono text-[10px] text-slate-500"><i class="ph-bold ph-clock-counter-clockwise"></i> Nas últimas ${rs.length}: WIN mexeu ${w != null ? '±' + LX.num(w, 2) + '%' : '—'} · WDO ${u != null ? '±' + LX.num(u, 2) + '%' : '—'} após o dado${di != null ? ` · DI 2 anos ±${LX.num(di, 0)} bps no dia` : ''}${DADOS_PAG.includes(rxTipo(e)) ? ` · <a href="dados/${rxTipo(e)}.html" class="text-lect-teal hover:underline">histórico →</a>` : ''}</p>`;
+                    const j1 = rs.filter(r => r.janela === '1h').length, jt = j1 && j1 < rs.length ? '30 min ou 1 h' : j1 ? '1 h' : '30 min';
+                    return `<p class="mt-1 font-mono text-[10px] text-slate-600 dark:text-slate-400"><i class="ph-bold ph-clock-counter-clockwise"></i> Nas últimas ${rs.length} (janela de ${jt}): Ibovespa à vista mexeu ${w != null ? '±' + LX.num(w, 2) + '%' : '—'} · dólar à vista ${u != null ? '±' + LX.num(u, 2) + '%' : '—'} após o dado${di != null ? ` · DI 2 anos ±${LX.num(di, 0)} bps no dia` : ''}${DADOS_PAG.includes(rxTipo(e)) ? ` · <a href="dados/${rxTipo(e)}.html" class="text-lect-teal hover:underline">histórico →</a>` : ''}</p>`;
                 }
                 const days = [...new Set(evs.map(e => e.data))].slice(0, 7);
                 let sel = days[0];
@@ -1057,7 +973,7 @@
                         const imp = Math.max(1, Math.min(3, e.importancia || 1)), dots = `<span class="text-lect-orange">${'●'.repeat(imp)}</span><span class="text-slate-300 dark:text-slate-600">${'●'.repeat(3 - imp)}</span>`;
                         const num = (l, v, cls = '') => v == null || v === '' ? '' : `<span class="${cls}"><span class="text-slate-400">${l}</span> ${LX.esc(String(v))}</span>`;
                         const tags = Object.entries(e.impacto || {}).filter(([, v]) => IMP[v]).map(([k, v]) => `<span class="px-1 border text-[9px] font-bold ${IMP[v][1]}">${LX.esc(k.toUpperCase())} ${IMP[v][0]}</span>`).join('');
-                        const done = e.resultado != null && e.resultado !== '';
+                        const stE = LX.statusEvento(e), done = stE.estado === 'divulgado';
                         const sp = spOf(e);
                         return `<div data-evk="${LX.esc(e.data + ' ' + (e.hora || '') + ' ' + e.evento)}" class="px-4 py-2.5 scroll-mt-2 ${imp >= 3 ? 'bg-lect-orange/5' : ''}">
                             <div class="flex items-start gap-3"><span class="w-11 shrink-0 font-mono text-xs font-bold ${done ? 'text-slate-400' : 'text-lect-teal'}">${e.hora ? LX.esc(e.hora) : '<span class="text-[10px] text-slate-400">O DIA</span>'}</span>
@@ -1065,10 +981,12 @@
                             ${e.nota ? `<p class="text-[11px] text-slate-500 leading-snug mt-0.5">${LX.esc(e.nota)}</p>` : ''}
                             ${rxLinha(e)}
                             ${sp ? `<p class="mt-1 text-[11px] leading-snug"><span class="px-1 mr-1 font-mono text-[9px] font-bold bg-lect-orange text-lect-navy">SURPRESA ${sp.seta}</span><span class="text-slate-600 dark:text-slate-300">${LX.esc(sp.reacao || sp.lbl)}</span></p>` : ''}
-                            <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 font-mono text-[11px]">${num('ant.', e.anterior)}${num('cons.', e.consenso)}${done ? num('result.', e.resultado, 'font-bold text-slate-800 dark:text-white') : ''}${tags ? `<span class="flex gap-1">${tags}</span>` : ''}</div></div></div></div>`;
+                            <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 font-mono text-[11px]">${num('ant.', e.anterior)}${num('cons.', e.consenso)}${done ? num('result.', e.resultado, 'font-bold text-slate-800 dark:text-white') : stE.estado === 'aguardando' ? '<span class="font-bold text-amber-600 dark:text-amber-400">Aguardando resultado</span>' : ''}${tags ? `<span class="flex gap-1">${tags}</span>` : ''}</div></div></div></div>`;
                     }).join('');
                 }
                 render(); document.addEventListener('lx:painel', render);
+                // a mesa relê o calendário a cada 5 min: o resultado novo aparece igual no topo e aqui
+                document.addEventListener('lx:calendario', ev => { const n = filtra(ev.detail); if (n.length) { evs = n; render(); } });
                 fetch('data/reacoes.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => {
                     if (!j || !Array.isArray(j.registros)) return;
                     j.registros.forEach(r => (RX[r.tipo] = RX[r.tipo] || []).push(r)); render(); rxTabela(j);
@@ -1161,83 +1079,6 @@
             }).catch(() => { });
         })();
 
-        /* ---------- Leitura do Dia (IA) ---------- */
-        (function () {
-            const esc = LX.esc, el = id => document.getElementById(id);
-            const TH = {
-                bullish: ['Viés de alta', 'ph-trend-up', 'text-emerald-600 dark:text-emerald-400', 'bg-emerald-500', 85],
-                neutro: ['Neutro', 'ph-arrows-left-right', 'text-slate-500', 'bg-slate-400', 50],
-                bearish: ['Viés de baixa', 'ph-trend-down', 'text-rose-600 dark:text-rose-400', 'bg-rose-500', 15]
-            };
-            LX.dados('leitura').then(d => {
-                const ltHide = () => el('leitura').classList.add('hidden');
-                if (!d || !d.data || !Array.isArray(d.resumo) || !d.resumo.length) return ltHide();
-                const day = LX.parseISO(d.data), today = LX.todayBRT(), old = (today - day) / 864e5;
-                if (old > 4) return ltHide(); // leitura velha demais: melhor não mostrar
-                el('leitura').classList.remove('hidden', 'min-h-[640px]');
-                el('lt-title').textContent = d.titulo || 'Leitura do dia';
-                const hora = d.gerado_em ? new Date(d.gerado_em).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' }) : '';
-                el('lt-when').innerHTML = +day === +today ? `<i class="ph-bold ph-clock"></i> escrito hoje${hora ? ' às ' + hora : ''} · não atualiza durante o dia` : `<i class="ph-bold ph-clock-counter-clockwise"></i> leitura de ${LX.weekday(day)} ${LX.brShort(day)}`;
-                const gauge = (k, label) => {
-                    const t = (d.termometro || {})[k]; if (!t) return '';
-                    const c = TH[t.leitura] || TH.neutro;
-                    return `<div class="p-3 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark">
-                        <div class="flex items-center justify-between"><span class="font-mono text-xs font-bold">${label}</span><span class="inline-flex items-center gap-1 font-bold text-sm ${c[2]}"><i class="ph-bold ${c[1]}"></i>${c[0]}</span></div>
-                        <div class="relative h-1.5 mt-2 bg-gradient-to-r from-rose-500 via-slate-400 to-emerald-500 opacity-70"><span class="absolute -top-1 w-1.5 h-3.5 bg-lect-navy dark:bg-white border border-white dark:border-lect-navy" style="left:calc(${c[4]}% - 3px)"></span></div>
-                        ${t.motivo ? `<p class="text-[11px] text-slate-600 dark:text-slate-300 mt-2 leading-snug">${esc(t.motivo)}</p>` : ''}</div>`;
-                };
-                const semPregao = d.tipo === 'sem-pregao' || !d.termometro;
-                if (semPregao) {
-                    const pp = d.proximo_pregao || {}, ppd = pp.data ? LX.parseISO(pp.data) : LX.nextBusinessDay(LX.addDays(today, 1));
-                    el('lt-thermo').innerHTML = `<span class="term-label font-bold">EDIÇÃO SEM PREGÃO</span>
-                        <div class="p-3 bg-lect-navy text-white border-l-4 border-lect-orange"><span class="block font-mono text-[10px] text-slate-400">PRÓXIMO PREGÃO</span><strong class="font-display text-lg">${LX.weekday(ppd)} ${LX.br(ppd)}</strong>
-                        ${pp.o_que_esperar ? `<p class="text-xs text-slate-300 mt-1.5 leading-snug">${esc(pp.o_que_esperar)}</p>` : ''}</div>
-                        <p class="text-[11px] text-slate-500 leading-snug">Sem viés do modelo: a bolsa está fechada. Ele volta na edição do próximo pregão.</p>`;
-                } else {
-                    el('lt-thermo').innerHTML = `<div class="flex items-center justify-between gap-2"><span class="term-label font-bold !mb-0">VIÉS DO MODELO NA ABERTURA</span><span class="lx-demo">EXPERIMENTAL</span></div>
-                        <p class="text-xs text-slate-500 leading-snug">Leitura automática feita antes da abertura${hora ? ' (' + hora + ')' : ''}. Não muda ao longo do dia e não é recomendação de compra ou venda.</p>`
-                        + gauge('win', 'WIN · mini índice') + gauge('wdo', 'WDO · mini dólar') + '<div id="lt-sinais"></div>'
-                        + `<div id="lt-placar" class="p-3 bg-lect-orange/5 border border-lect-orange/40 text-xs leading-snug text-slate-600 dark:text-slate-300"><strong class="block text-slate-900 dark:text-white">Quanto dá para confiar?</strong><span id="lt-placar-n">O modelo é novo e ainda tem poucos pregões medidos.</span> A conferência é feita pelo Ibovespa e pelo dólar à vista, não pelos contratos futuros. <a href="#placar-term" class="font-bold text-lect-teal hover:underline whitespace-nowrap">Método e histórico ↓</a></div>`;
-                    LX.dados('placar-termometro').catch(() => null).then(pl => {
-                        const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(x => x && (x.win || x.wdo)), alvo = el('lt-placar-n');
-                        if (!dias.length || !alvo) return;
-                        const conta = k => { const v = dias.filter(x => x[k]); return `${v.filter(x => x[k].acerto).length} de ${v.length}`; };
-                        alvo.innerHTML = `Até aqui o modelo acertou <strong>${conta('win')}</strong> pregões no WIN e <strong>${conta('wdo')}</strong> no WDO.${dias.length < 30 ? ' É uma amostra pequena: ainda não dá para tirar conclusão.' : ''}`;
-                    });
-                    fetch('data/sinais.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null).then(sg => {
-                        if (!sg || sg.data !== d.data || !(sg.ativos || []).length || !el('lt-sinais')) return;
-                        const SG = { bullish: ['▲ alta', 'text-emerald-600 dark:text-emerald-400'], bearish: ['▼ baixa', 'text-rose-600 dark:text-rose-400'], neutro: ['● neutro', 'text-slate-500'] };
-                        const sl = k => { const x = SG[(sg[k] || {}).leitura]; return x ? `<span class="${x[1]} font-bold">${x[0]}</span>` : '—'; };
-                        el('lt-sinais').innerHTML = `<div class="p-3 border border-dashed border-slate-300 dark:border-lect-borderDark">
-                            <div class="flex items-center justify-between gap-2"><span class="font-mono text-[10px] font-bold text-slate-500">SINAIS MEDIDOS ÀS ${esc(sg.hora)}</span><span class="lx-demo">EXPERIMENTAL</span></div>
-                            <div class="flex flex-wrap gap-x-3 gap-y-1 mt-1.5 font-mono text-[11px]">${sg.ativos.filter(a => a.id !== 'brl').map(a => `<span><span class="text-slate-500">${esc(a.nome)}</span> <b class="${a.var > 0 ? 'text-emerald-600 dark:text-emerald-400' : a.var < 0 ? 'text-rose-600 dark:text-rose-400' : ''}">${LX.pct(a.var, 2, true)}</b></span>`).join('')}</div>
-                            <p class="mt-1.5 font-mono text-[11px]">Sinal quantitativo: WIN ${sl('win')} · WDO ${sl('wdo')}</p>
-                            <p class="mt-1 text-[10px] text-slate-500 leading-snug" title="${esc(sg.regra || '')}">Conta simples com o exterior antes da abertura, conferida à parte no <a href="placar.html" class="text-lect-teal hover:underline">placar</a>.</p></div>`;
-                    });
-                }
-                if (semPregao) el('lt-resumo-lbl').textContent = 'O QUE ACONTECEU E O QUE ESPERAR';
-                el('lt-resumo').innerHTML = d.resumo.slice(0, 5).map(x => `<li class="flex gap-2.5 text-sm leading-relaxed"><span class="mt-2 w-1.5 h-1.5 bg-lect-orange shrink-0"></span><span class="text-slate-700 dark:text-slate-300">${esc(x)}</span></li>`).join('');
-                el('lt-destaques').innerHTML = (d.destaques || []).slice(0, 4).map(x => `<div class="flex gap-2"><span class="shrink-0 w-12 font-mono text-[11px] font-bold text-lect-teal pt-0.5">${esc(x.hora || '')}</span><div><strong class="block text-xs">${esc(x.evento || '')}</strong>${x.por_que ? `<span class="block text-[11px] text-slate-500 leading-snug">${esc(x.por_que)}</span>` : ''}</div></div>`).join('') || '<p class="text-xs text-slate-500">Sem evento relevante marcado.</p>';
-                el('lt-exterior').innerHTML = (d.exterior || []).length ? `<span class="term-label font-bold">EXTERIOR</span><div class="space-y-1 mt-1.5 font-mono text-[11px]">${d.exterior.slice(0, 6).map(x => { const neg = /^[−-]/.test(x.variacao || ''); return `<div class="flex justify-between gap-3 px-2 py-1 bg-slate-50 dark:bg-lect-bgDark"><span class="text-slate-500">${esc(x.ativo)}</span><strong class="text-right ${neg ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'}">${esc(x.variacao)}</strong></div>`; }).join('')}</div>` : '';
-                const IMP = { alta: ['▲', 'text-emerald-600 dark:text-emerald-400 border-emerald-500/40'], baixa: ['▼', 'text-rose-600 dark:text-rose-400 border-rose-500/40'], neutro: ['●', 'text-slate-500 border-slate-400/40'] };
-                const cartao = n => {
-                        const tags = Object.entries(n.impacto || {}).filter(([, v]) => IMP[v]).map(([k, v]) => `<span class="px-1.5 py-0.5 border font-mono text-[10px] font-bold ${IMP[v][1]}">${esc(k.toUpperCase())} ${IMP[v][0]}</span>`).join('');
-                        const link = /^https?:\/\//.test(n.url || '');
-                        return `<${link ? `a href="${esc(n.url)}" target="_blank" rel="noopener nofollow"` : 'div'} class="group block p-3.5 bg-slate-50 dark:bg-lect-bgDark border border-slate-200 dark:border-lect-borderDark hover:border-lect-teal transition-colors">
-                            <div class="flex items-center justify-between gap-2 font-mono text-[10px] text-slate-500"><span class="truncate">${esc(n.fonte || '')}${n.hora ? ' · ' + esc(n.hora) : ''}</span>${link ? '<i class="ph-bold ph-arrow-up-right group-hover:text-lect-teal"></i>' : ''}</div>
-                            <strong class="block text-sm leading-snug mt-1.5">${esc(n.titulo)}</strong>
-                            ${n.por_que ? `<p class="text-[11px] text-slate-600 dark:text-slate-300 mt-1.5 leading-snug">${esc(n.por_que)}</p>` : ''}
-                            ${tags ? `<div class="flex flex-wrap gap-1 mt-2">${tags}</div>` : ''}</${link ? 'a' : 'div'}>`;
-                };
-                const news = (d.noticias || []).filter(n => n && n.titulo).slice(0, 6);
-                if (news.length) {
-                    el('lt-news-wrap').classList.remove('hidden');
-                    el('lt-news-wrap').querySelector('.term-label').lastChild.textContent = 'NOTÍCIAS DA MANHÃ';
-                    el('lt-news').innerHTML = news.map(cartao).join('');
-                }
-                el('lt-fontes').innerHTML = '<span><i class="ph-bold ph-sparkle"></i> Gerado por IA (Claude) a partir de fontes públicas · pode conter imprecisões.</span><a href="leitura/" class="text-lect-teal font-bold hover:underline">edições anteriores →</a>' + (d.fontes || []).slice(0, 6).map(f => /^https?:\/\//.test(f.url || '') ? `<a href="${esc(f.url)}" target="_blank" rel="noopener nofollow" class="hover:text-lect-teal underline decoration-dotted">${esc(f.titulo || f.url)}</a>` : '').join('');
-            }).catch(() => document.getElementById('leitura').classList.add('hidden'));
-        })();
 
         /* ---------- Contratos vigentes ---------- */
         const win = LX.upcomingWIN(6), wdo = LX.upcomingWDO(6), opt = LX.upcomingOptions(4);
@@ -1336,7 +1177,7 @@
 
     })();
     </script>
-    <script src="assets/lectnex-pregao.js?v=20261120a" defer></script>
-    <script src="assets/lectnex-painel.js?v=20261111f" defer></script>
+    <script src="assets/lectnex-pregao.js?v=20261120b" defer></script>
+    <script src="assets/lectnex-painel.js?v=20261120b" defer></script>
 </body>
 </html>
