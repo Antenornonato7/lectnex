@@ -1,0 +1,159 @@
+{
+ "tipo": "sem-pregao",
+ "data": "2026-11-20",
+ "gerado_em": "2026-11-20T07:49:00-03:00",
+ "titulo": "Feriado na B3 com NY em queda e dólar no maior nível em 19 meses",
+ "resumo": [
+  "A B3 está fechada hoje (Consciência Negra). No último pregão (quinta, 19), o Ibovespa caiu 0,69%, aos 166.376 pontos, e o dólar à vista subiu cerca de 1,1%, a R$ 5,93, o maior fechamento desde abril de 2025, segundo a BPMoney, mesmo com a venda de US$ 1 bi pelo Banco Central.",
+  "A pressão local veio da dúvida sobre a equipe econômica do próximo governo Lula e da avaliação de parte do mercado de que o ajuste fiscal aprovado no Senado ainda é insuficiente; o texto vai à Câmara, e Hugo Motta disse que convoca sessão extraordinária na segunda à noite.",
+  "Lá fora, Wall Street caiu mais de 2% na quinta (S&P 500 −2,02%), mesmo com a estreia da Anthropic, que fechou 17% acima do preço do IPO; a Ásia caminha para a pior semana desde 2020, segundo a Reuters, e o dólar global segue firme.",
+  "NY funciona normalmente hoje: perto das 5h, S&P 500 futuro −0,4% e Nasdaq futuro −0,7%. Como a B3 não abre, o que acontecer em NY e no EWZ até o fim do dia vira referência para a abertura de segunda (23).",
+  "No petróleo, Trump disse à Reuters que só fala sobre novos ataques ao Irã depois do início do ano, e o Brent recuava 1,7%, a US$ 90,88, às 6h; minas que atingiram petroleiros em Hormuz seguem como risco de alta para a commodity."
+ ],
+ "pontos": [
+  {
+   "titulo": "Câmara pode iniciar ajuste fiscal na segunda",
+   "texto": "Motta prevê sessão extraordinária na noite de 23; o andamento do texto mexe no DI longo e no WDO."
+  },
+  {
+   "titulo": "Dólar a R$ 5,93 e NY sob pressão",
+   "texto": "Queda de mais de 2% em Wall Street e dólar global firme pesam sobre WIN e WDO na reabertura."
+  },
+  {
+   "titulo": "PMIs e Focus abrem a agenda de segunda",
+   "texto": "PMIs da Europa (6h) e dos EUA (11h45) e o Focus (8h25) dão o tom para juros e dólar."
+  }
+ ],
+ "destaques": [
+  {
+   "hora": "seg 6h",
+   "evento": "PMIs preliminares da zona do euro (nov)",
+   "por_que": "Atividade europeia mexe com o euro e o dólar global antes da abertura."
+  },
+  {
+   "hora": "seg 8h25",
+   "evento": "Boletim Focus (BCB)",
+   "por_que": "Expectativas de Selic, IPCA e câmbio mexem nos vértices do DI."
+  },
+  {
+   "hora": "seg 11h45",
+   "evento": "PMI composto preliminar S&P Global (EUA, nov)",
+   "por_que": "Com o Fed falando em novas altas, atividade forte pressiona Treasuries e o WDO."
+  },
+  {
+   "hora": "seg noite",
+   "evento": "Câmara: sessão extraordinária sobre o ajuste fiscal",
+   "por_que": "Motta prevê iniciar a discussão; o ritmo da votação mexe no prêmio do DI longo e no dólar."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 (qui)",
+   "variacao": "−2,02%"
+  },
+  {
+   "ativo": "Nasdaq (qui)",
+   "variacao": "−2,25%"
+  },
+  {
+   "ativo": "S&P 500 fut. (5h)",
+   "variacao": "−0,4%"
+  },
+  {
+   "ativo": "Nasdaq 100 fut. (5h)",
+   "variacao": "−0,7%"
+  },
+  {
+   "ativo": "Brent (6h)",
+   "variacao": "−1,7%"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Ibovespa cai 0,69% e dólar fecha a R$ 5,93, maior nível em 19 meses",
+   "fonte": "BPMoney",
+   "hora": "qui 18h24",
+   "url": "https://bpmoney.com.br/mercado/ibovespa-cai-dolar-renova-maxima-19-meses-r-593/",
+   "por_que": "O dólar subiu pela sexta sessão, apesar do leilão de US$ 1 bi do BC, com dúvidas sobre a equipe econômica de 2027 e o fiscal; é o ponto de partida do WDO na segunda.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Ajuste fiscal vai à Câmara, e Motta prevê sessão extraordinária na segunda à noite",
+   "fonte": "InfoMoney",
+   "hora": "qui 09h04",
+   "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-19112026/",
+   "por_que": "O governo quer aprovar o texto sem mudanças para sancionar rápido; avanço reduz a incerteza fiscal, enquanto atraso ou alterações tendem a pressionar DI e dólar.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa",
+    "di": "baixa"
+   }
+  },
+  {
+   "titulo": "Anthropic fecha 17% acima do IPO, mas Wall Street cai mais de 2%",
+   "fonte": "The National",
+   "hora": "sex 01h43",
+   "url": "https://www.thenationalnews.com/business/markets/2026/11/20/anthropic-share-price-today-ant-listing/",
+   "por_que": "A ação abriu 34% acima dos US$ 83 e devolveu parte do ganho; a estreia não segurou a venda em tecnologia, o que reduz o apetite a risco em emergentes.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Bolsas da Ásia caminham para a pior semana desde 2020 e dólar avança",
+   "fonte": "Reuters (via TradingView)",
+   "hora": "sex",
+   "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N471079:0-asian-shares-head-for-worst-week-since-2020-as-ai-rout-deepens/",
+   "por_que": "Segundo a Reuters, a estreia da Anthropic não devolveu a confiança no setor de IA e a busca por proteção fortalece o dólar global, vetor de alta para o WDO.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Trump adia para o ano que vem decisão sobre novos ataques ao Irã; Brent recua",
+   "fonte": "Engine (citando a Reuters)",
+   "hora": "sex 06h",
+   "url": "https://www.engine.online/news/brent-declines-as-trump-pushes-iran-strike-decision-into-next-year-845d",
+   "por_que": "O Brent caía US$ 1,58, a US$ 90,88; petróleo mais baixo tira suporte de Petrobras no WIN, mas as minas em Hormuz mantêm o risco de alta.",
+   "impacto": {
+    "win": "baixa"
+   }
+  }
+ ],
+ "proximo_pregao": {
+  "data": "2026-11-23",
+  "o_que_esperar": "A B3 reabre na segunda absorvendo dois dias de NY (incluindo a sexta, com futuros em queda) e o dólar a R$ 5,93; no radar, PMIs, Focus e a sessão da Câmara sobre o ajuste fiscal à noite."
+ },
+ "fontes": [
+  {
+   "titulo": "BPMoney — Ibovespa recua 0,69% e dólar renova máxima em 19 meses a R$ 5,93",
+   "url": "https://bpmoney.com.br/mercado/ibovespa-cai-dolar-renova-maxima-19-meses-r-593/"
+  },
+  {
+   "titulo": "InfoMoney — Ibovespa hoje, ao vivo (19/11/2026)",
+   "url": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-19112026/"
+  },
+  {
+   "titulo": "The National — Anthropic shares close 17% above IPO price after volatile Nasdaq debut",
+   "url": "https://www.thenationalnews.com/business/markets/2026/11/20/anthropic-share-price-today-ant-listing/"
+  },
+  {
+   "titulo": "Reuters (via TradingView) — Asian shares head for worst week since 2020 as AI rout deepens",
+   "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N471079:0-asian-shares-head-for-worst-week-since-2020-as-ai-rout-deepens/"
+  },
+  {
+   "titulo": "Yahoo Finance — US Stock Futures Fall as Anthropic Shares Retreat",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-fall-anthropic-094420820.html"
+  },
+  {
+   "titulo": "Engine — Brent declines as Trump pushes Iran strike decision into next year",
+   "url": "https://www.engine.online/news/brent-declines-as-trump-pushes-iran-strike-decision-into-next-year-845d"
+  }
+ ]
+}
