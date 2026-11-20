@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T11:07-03:00",
+  "atualizado_em": "2026-11-20T11:38-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -107,11 +107,31 @@
     ],
     [
      "11:05",
-     5.9426
+     5.9443
     ],
     [
-     "11:07",
-     5.9434
+     "11:10",
+     5.947
+    ],
+    [
+     "11:15",
+     5.947
+    ],
+    [
+     "11:20",
+     5.9443
+    ],
+    [
+     "11:25",
+     5.9452
+    ],
+    [
+     "11:35",
+     5.9417
+    ],
+    [
+     "11:38",
+     5.9452
     ]
    ]
   },
@@ -245,7 +265,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.03
+    "dolar30": 0.06
    },
    {
     "hora": "10:38",
@@ -258,7 +278,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.03
+    "dolar30": 0.06
    },
    {
     "hora": "10:48",
@@ -272,7 +292,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "dolar30": 0.17
    }
   ]
  },
@@ -550,7 +570,7 @@
    "em": "2026-11-20T13:53:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T11:07-03:00",
+ "atualizado_em": "2026-11-20T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -559,7 +579,6 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
   "Money Times",
   "Valor"
  ],
@@ -629,19 +648,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dividendos à vista: Porto Seguro (PSSA3) confirma pagamento de R$ 567 milhões; veja valor por ação",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTHJMNGxKd0JRc3U3SDRtQ19hV0ZvVHczR2NqdTc2aFNZMVQ1YVdsakdfUDYweHoyM3VfSFhfSUhEbGV3c3BuSWRPdUI5NWl4LVktLUN4TkFrVTlOUkRTU3JEUHk2cmJDb09La0U2TEdsd0NxcnBTWWhxVVRKZWtqQ090NHpjaFhUbzRYUnlpWFB0Ni1BU3FCN2xVTnI5WjhtU2lQNmF3TDdaUmRaZVZoSzFWQWV5QVZBWnNRdUd6TnpDaFJUVVhSSA?oc=5",
-   "publicado": "2026-11-20T10:04-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PSSA3"
-   ]
-  },
-  {
    "titulo": "Dólar recua levemente no exterior, mas segue elevado com apostas em altas de juros pelo Fed",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRGNiZzNmU3FHMTFiUmlyTkstRnVGUzNBM1BLeUNDdlZ5UElOYUVwLVByZEhwUV9MMGU0ZDNwX3RYdi1ob0xCdnVudXFwZy1aaHRzOFV6REJnY2MwS0F5QkRhVnBzNEhtZ1o0dzF3aVdmcXZRS3dnSFFFVlIzd0Uwd202ZHN4bDlyWFhtNzl1aUxRQ0tKWUd3ckdwdlgxWEMxLVVtSGZibDVDREhRUW9xT2lxSzNBellkaTQ5UDFrcXVPZ3J4ZVZZYWR5Nl9GcHZfMzBQb2xDeUF6eEVNcEtZTdIB7wFBVV95cUxPeVBLT1RSOWZ0SXBaQlFyazVSYmtEWHh6cF9TYWwyeS1JRUxYTnhNb3VKRTNRQlp5UjJMYVhOejMwbUw1Wm5ua0xRYzRhVVpKYzAwR1YzaUdUMWotdFotTS04X253dHp6WkVDckl5SnUteElMZGdTTEJaMFJzSUZ2b0VvYk1PTmZXRVBqTDh6ai1FOS03TGIyeVBPVG1hQnh6d2NpRWZMUzJmTTFDQWRsV1NhQm5XSk1hRFVWSmpVZHByc05WWEJFOFoyMUNHWllJYkNPcV9XM1dkODl1aGgyRkVwUGFLYmtsYTRKRWZJdw?oc=5",
@@ -654,17 +660,6 @@
    "tickers": []
   },
   {
-   "titulo": "Vai viajar e precisa comprar dólar? Como comparar o custo em espécie e na conta global",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPNjh4cWxVZ2V1TnRKZHZPZUZIUVY5UFZscEJxQU9VT0VrM09IbTNhYmNuQUlLM1hYSUZpR3FSc2k1dnVicC05TmphdjlQSXFkY0s3MjlFQ2xUOXAtMHpqZTlmMk1jT0FUSDhIc2VYTDZqTUFrSmktb3VsazFKWWJCM1ZiSHVLZ29nYnBTVkY1V2oyVkZzcDNVWW0xTDVkNm1wOGthRmVxeFp0Mmc5YVQxUW1QdDlGdWlxdEU2a1JuRzlxbk1rSlhJLXl5MzJMM3RLLThwZVFGeXVnRFJTRmV0SmpIWlhzUQ?oc=5",
-   "publicado": "2026-11-20T09:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "The Tech Download: Anthropic charmed Wall Street. But one big uncertainty hangs over the business",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html",
@@ -672,18 +667,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "TSMC endurece restrições a chips de IA da China após novas regras dos EUA fecharem brecha na fabricação, dizem fontes",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/tsmc-endurece-restricoes-a-chips-de-ia-da-china-apos-novas-regras-dos-eua-fecharem-brecha-na-fabricacao-dizem-fontes.shtml",
-   "publicado": "2026-11-20T08:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
