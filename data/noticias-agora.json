@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T13:08-03:00",
+  "atualizado_em": "2026-11-20T13:38-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -175,6 +175,10 @@
     ],
     [
      "12:40",
+     5.9488
+    ],
+    [
+     "13:00",
      5.9488
     ],
     [
@@ -745,7 +749,7 @@
    "em": "2026-11-20T15:28:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T13:08-03:00",
+ "atualizado_em": "2026-11-20T13:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -759,6 +763,18 @@
  ],
  "noticias": [
   {
+   "titulo": "Jensen Huang wasn't mentioned in latest talks with China, Bessent says",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+   "publicado": "2026-11-20T13:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
@@ -766,18 +782,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Jensen Huang wasn't mentioned in latest talks with China, Bessent says",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-   "publicado": "2026-11-20T12:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -830,30 +834,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Dólar caminha para quarta alta semanal, apoiado por expectativas de aperto do Fed e busca por proteção impulsionada pela IA",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-caminha-para-quarta-alta-semanal-apoiado-por-expectativas-de-aperto-do-fed-e-busca-por-protecao-impulsionada-pela-ia.shtml",
-   "publicado": "2026-11-20T10:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
-   "publicado": "2026-11-20T10:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
