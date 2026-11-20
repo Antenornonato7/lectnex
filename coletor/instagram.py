@@ -459,6 +459,72 @@ ORIGENS = {'convite-simulador': 'convite no simulador', 'convite-risco': 'convit
            'site': 'formulários do site (rodapé e páginas)', 'lista-pro': 'página da Lectnex Pro'}
 
 
+def _metricas(mid):
+    met = {}
+    for lista in ('reach,saved,shares,views', 'reach,saved,shares', 'reach'):
+        try:
+            for x in ig('GET', f'{mid}/insights', metric=lista).get('data', []):
+                met[x['name']] = (x.get('values') or [{}])[0].get('value', x.get('total_value', {}).get('value'))
+            break
+        except Exception:
+            continue
+    return met
+
+
+def placar_formatos(uid, dias=30):
+    """Placar dos formatos (combinado em 19/11/2026): junta cada publicação dos últimos `dias` ao formato que a gerou (pelo link
+    gravado na fila de aprovação) e calcula alcance, salvamentos e compartilhamentos médios por formato.
+    Cliques no link por post não existem na API do Instagram: salvamento e compartilhamento são o melhor sinal de interesse."""
+    f, _ = fila_ler()
+    formato = {}
+    for p in f.get('pedidos', []):
+        if p.get('link'):
+            formato[p['link'].rstrip('/')] = p.get('nome') or TIPOS.get(p.get('tipo'), p.get('tipo') or 'Outros')
+    desde = dt.datetime.now(BRT) - dt.timedelta(days=dias)
+    grupos, url, pags = {}, None, 0
+    params = dict(fields='id,permalink,media_product_type,timestamp', limit=50)
+    while pags < 4:
+        r = ig('GET', url or f'{uid}/media', **({} if url else params)) if not url else json.loads(urllib.request.urlopen(url, timeout=40).read())
+        dados = r.get('data', [])
+        velho = False
+        for m in dados:
+            if dt.datetime.fromisoformat(m['timestamp'].replace('+0000', '+00:00')) < desde:
+                velho = True
+                continue
+            nome = formato.get((m.get('permalink') or '').rstrip('/')) or {'REELS': 'Reels (manual)', 'FEED': 'Post (manual)'}.get(m.get('media_product_type'), 'Outros')
+            met = _metricas(m['id'])
+            g = grupos.setdefault(nome, {'n': 0, 'alcance': 0, 'salvos': 0, 'compart': 0})
+            g['n'] += 1
+            g['alcance'] += met.get('reach') or 0
+            g['salvos'] += met.get('saved') or 0
+            g['compart'] += met.get('shares') or 0
+        url = (r.get('paging') or {}).get('next')
+        pags += 1
+        if velho or not url:
+            break
+    res = []
+    for nome, g in grupos.items():
+        n = g['n']
+        res.append({'formato': nome, 'posts': n, 'alcance': round(g['alcance'] / n), 'salvos': round(g['salvos'] / n, 1),
+                    'compart': round(g['compart'] / n, 1), 'interesse': round((g['salvos'] + g['compart']) / max(1, g['alcance']) * 1000, 1)})
+    return sorted(res, key=lambda x: -x['alcance'])
+
+
+def texto_placar(res, mes):
+    if not res:
+        return []
+    txt = ['', f'🏁 <b>Placar dos formatos · {mes}</b> (média por publicação)']
+    for i, x in enumerate(res[:8], 1):
+        txt.append(f'{i}. {esc(x["formato"])} ({x["posts"]}×): alcance <b>{x["alcance"]}</b> · {x["salvos"]} salv. · {x["compart"]} compart.')
+    com = [x for x in res if x['posts'] >= 2]
+    if len(com) >= 2:
+        top = max(com, key=lambda x: x['interesse'])
+        fraco = min(com, key=lambda x: x['alcance'])
+        txt.append(f'💡 Mais salvo/compartilhado por alcance: <b>{esc(top["formato"])}</b>. Mais fraco: {esc(fraco["formato"])}: candidato a trocar no mês que vem.')
+    txt.append('<i>Clique no link por post não existe na API do Instagram: salvamento e compartilhamento medem o interesse.</i>')
+    return txt
+
+
 def relatorio_redes():
     """Relatório semanal no Telegram privado (domingo): seguidores no Instagram, Facebook e Discord com a variação da semana,
     e os posts dos últimos 7 dias ordenados por alcance, para saber o que repetir."""
@@ -559,8 +625,18 @@ def relatorio_redes():
             txt += ['', f'💡 Alcance médio: Reels {mr:.0f} × posts {mf:.0f}. ' + ('Reels estão rendendo mais: priorize os desafios.' if mr > mf else 'Os posts estão rendendo mais que os Reels nesta semana.')]
         elif melhor:
             txt += ['', '💡 Repita o formato do 1º lugar nesta semana.']
+    if (agora + dt.timedelta(days=7)).month != agora.month or os.environ.get('PLACAR_FORCAR'):
+        # último domingo do mês: placar dos formatos dos últimos 30 dias (fica pronto antes da troca de formatos do dia 1º)
+        try:
+            res = placar_formatos(uid)
+            mes = agora.strftime('%m/%Y')
+            txt += texto_placar(res, mes)
+            hist.setdefault('formatos', []).append({'data': agora.date().isoformat(), 'mes': mes, 'placar': res})
+            hist['formatos'] = hist['formatos'][-12:]
+        except Exception as e:
+            linhas.append(f'Placar dos formatos: sem dados ({str(e)[:80]})')
     txt += linhas and ['', '<i>' + esc(' · '.join(linhas)) + '</i>'] or []
-    tg('sendMessage', chat_id=admin(), text='\n'.join(txt), parse_mode='HTML', disable_web_page_preview=True)
+    tg('sendMessage', chat_id=admin(), text='\n'.join(txt)[:4090], parse_mode='HTML', disable_web_page_preview=True)
     hist['ultimo'] = {k: v for k, v in atual.items() if v is not None}
     hist.setdefault('historico', []).append({'data': agora.date().isoformat(), **hist['ultimo']})
     hist['historico'] = hist['historico'][-60:]
