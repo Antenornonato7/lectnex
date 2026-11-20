@@ -1,0 +1,38 @@
+# Posts da semana no padrão "um gráfico, uma conclusão" (19/11/2026), propostos no Telegram privado com botão de publicar:
+# ranking (sexta 19h52): carrossel com as 5 manchetes que mais mexeram na semana · agenda (segunda 7h47): os 5 eventos da semana.
+# Horários em coletor/relogio.py. Também manda o texto pronto do X.
+name: Posts da semana
+run-name: "${{ inputs.tipo == 'agenda' && 'Agenda da semana' || 'Ranking da semana' }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      tipo:
+        description: 'ranking (sexta) ou agenda (segunda)'
+        type: choice
+        options: [ranking, agenda]
+        default: ranking
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar e propor
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || secrets.LECTNEX_ALERTAS_BOT || secrets.TELEGRAM_TOKEN || secrets.BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID || secrets.TELEGRAM_ADMIN || secrets.ADMIN_CHAT_ID || secrets.MEU_CHAT_ID }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+          TIPO: ${{ inputs.tipo }}
+        run: |
+          pip install -q pillow==12.0.0 || pip install -q pillow
+          O="$RUNNER_TEMP/post"
+          IMGS=$(python3 scripts/posts_semana.py "$TIPO" "$O" "$(TZ=America/Sao_Paulo date +%F)")
+          python3 coletor/instagram.py propor "$TIPO" "$O/legenda.txt" $IMGS || echo "::warning::Falha ao propor o post."
+          python3 -c "import sys; sys.path.insert(0, 'coletor'); import instagram as ig; ig.enviar_x(open(sys.argv[1], encoding='utf-8').read())" "$O/x.txt" || true

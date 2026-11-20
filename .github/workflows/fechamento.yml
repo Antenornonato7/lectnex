@@ -50,6 +50,9 @@ jobs:
           pip install -q pillow==12.0.0 numpy || pip install -q pillow numpy
           if [ -n "$PREVIA" ]; then
             python3 scripts/story_fechamento.py "$RUNNER_TEMP/fechamento.json" "$RUNNER_TEMP/story.png" --previa "PRÉVIA · PARCIAL $(TZ=America/Sao_Paulo date +%Hh%M)"
+          elif [ -f "$RUNNER_TEMP/mercado.json" ] && python3 scripts/reel_historia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/x.mp4" --story "$RUNNER_TEMP/story.png" --so-story; then
+            # padrão novo (19/11/2026): o gráfico do dia na vertical, com espaço para a enquete
+            python3 -c "import sys; sys.path.insert(0, 'scripts'); from story_leitura import enviar; enviar(sys.argv[1], '📲 Story do fechamento (padrão novo). Ponha a figurinha de enquete na caixa de baixo.')" "$RUNNER_TEMP/story.png"
           else
             python3 scripts/story_fechamento.py "$RUNNER_TEMP/fechamento.json" "$RUNNER_TEMP/story.png"
           fi || echo "::warning::Falha ao gerar ou enviar o story (o fechamento não é afetado)."
@@ -76,16 +79,15 @@ jobs:
           python3 scripts/grafico_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/grafico-dia.png" || { echo "::warning::Falha no post do gráfico do dia."; exit 0; }
           [ -f "$IG_LEGENDA" ] && { python3 coletor/instagram.py propor grafico "$IG_LEGENDA" "$RUNNER_TEMP/grafico-dia.png" || echo "::warning::Falha ao propor o post no Instagram."; }
           python3 coletor/discord_post.py fechamento "📈 **Gráfico do dia:** o que as notícias fizeram com o preço. *Educacional, não é recomendação.*" "$RUNNER_TEMP/grafico-dia.png" || true
-      - name: Reel do dia (15 s) para o Kit do dia
+      - name: Reels do dia (12 s, título-conclusão, áudio com a cara do dia) para o Kit do dia
         if: ${{ !inputs.previa_story }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           [ -f "$RUNNER_TEMP/mercado.json" ] || exit 0
           command -v ffmpeg >/dev/null || { sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || { echo "::warning::Sem ffmpeg: reel não gerado."; exit 0; }; }
-          python3 scripts/reel_dia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/reel-dia.mp4" --capa "$RUNNER_TEMP/reel-capa.png" --legenda "$RUNNER_TEMP/reel-legenda.txt" || { echo "::warning::Falha ao gerar o reel do dia."; exit 0; }
-          LEG=""; [ -f "$RUNNER_TEMP/reel-legenda.txt" ] && LEG="$(cat "$RUNNER_TEMP/reel-legenda.txt")"
-          python3 -c "import sys; sys.path.insert(0, 'scripts'); from kit import registrar_video; registrar_video(sys.argv[1], sys.argv[2], sys.argv[3])" "$RUNNER_TEMP/reel-dia.mp4" "$LEG" "$RUNNER_TEMP/reel-capa.png"
+          python3 scripts/reel_historia.py "$RUNNER_TEMP/mercado.json" "$RUNNER_TEMP/reel-dia.mp4" --capa "$RUNNER_TEMP/reel-capa.png" --legenda "$RUNNER_TEMP/reel-legenda.txt" --x "$RUNNER_TEMP/reel-x.txt" || { echo "::warning::Falha ao gerar o reel do dia."; exit 0; }
+          python3 -c "import sys; sys.path.insert(0, 'scripts'); from kit import registrar_video; registrar_video(sys.argv[1], open(sys.argv[2], encoding='utf-8').read(), sys.argv[3], 'reel', 'Reels do dia', open(sys.argv[4], encoding='utf-8').read())" "$RUNNER_TEMP/reel-dia.mp4" "$RUNNER_TEMP/reel-legenda.txt" "$RUNNER_TEMP/reel-capa.png" "$RUNNER_TEMP/reel-x.txt"
       - name: Desafio SUBIU ou CAIU (Reels para viralizar) para o Kit do dia e no Discord
         if: ${{ !inputs.previa_story }}
         env:

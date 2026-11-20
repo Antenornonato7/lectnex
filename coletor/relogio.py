@@ -84,7 +84,9 @@ TAREFAS = [
     ('semanal.yml', 'Resumo semanal enviar', {'enviar': 'true'}, ('horarios', ['10:17'], 360), lambda: AGORA.weekday() == 6),
     ('search-console.yml', 'Search Console semanal', {'teste': 'false'}, ('horarios', ['09:12'], 360), lambda: AGORA.weekday() == 0),
     ('teste-menu.yml', 'Teste do menu semanal', {'teste': 'false'}, ('horarios', ['09:27'], 360), lambda: AGORA.weekday() == 0 and AGORA.date() <= dt.date(2026, 12, 1)),
-    ('carrossel.yml', 'Carrossel da semana', {'previa': 'false'}, ('horarios', ['09:47'], 360), lambda: AGORA.weekday() == 5),
+    # 19/11/2026: o carrossel de sábado deu lugar ao ranking de sexta e à agenda de segunda (padrão "um gráfico, uma conclusão")
+    ('posts-semana.yml', 'Ranking da semana', {'tipo': 'ranking'}, ('horarios', ['19:52'], 180), lambda: AGORA.weekday() == 4),
+    ('posts-semana.yml', 'Agenda da semana', {'tipo': 'agenda'}, ('horarios', ['07:47'], 180), lambda: AGORA.weekday() == 0),
     ('discord-plantao.yml', None, {'automatico': 'true'}, ('horarios', ['09:07', '13:07', '17:07', '21:07'], 120), lambda: True),
     ('instagram.yml', 'Instagram kit', {'acao': 'kit', 'pecas': ''}, ('horarios', ['19:40'], 150), lambda: UTIL),
     ('instagram.yml', 'Instagram kit', {'acao': 'kit', 'pecas': 'leitura termo reel-aula'}, ('horarios', ['08:25'], 150), lambda: True),
@@ -171,7 +173,7 @@ NOMES = {'cotacoes.yml': 'Cotações das ações', 'monitor.yml': 'Monitor do si
          'reacao.yml': 'Reação do mercado', 'fechamento.yml': 'Fechamento do dia', 'resumo-dono.yml': 'Resumo do dono', 'kit.yml': 'Kit do dia',
          'lembrete.yml': 'Lembrete', 'checar-resultados.yml': 'Conferir resultados', 'telegram.yml': 'Contagem do Telegram', 'termo.yml': 'Termômetro',
          'sinais.yml': 'Sinais da manhã', 'instagram.yml': 'Instagram', 'antes.yml': 'Antes do dado', 'coletor-cvm.yml': 'Coletor CVM',
-         'semanal.yml': 'Resumo semanal', 'carrossel.yml': 'Carrossel da semana', 'search-console.yml': 'Relatório do Google', 'teste-menu.yml': 'Teste do menu', 'resumo-site.yml': 'Resumo semanal do site', 'plano-push.yml': 'Lembrete do Plano do Dia (8h45)'}
+         'semanal.yml': 'Resumo semanal', 'carrossel.yml': 'Carrossel da semana', 'posts-semana.yml': 'Posts da semana', 'search-console.yml': 'Relatório do Google', 'teste-menu.yml': 'Teste do menu', 'resumo-site.yml': 'Resumo semanal do site', 'plano-push.yml': 'Lembrete do Plano do Dia (8h45)'}
 
 
 def alertar(arq, titulo, al):

@@ -171,12 +171,14 @@ def main():
     h = Historia(m)
     saida = args[1] if len(args) > 1 else 'reel-historia.mp4'
     val = lambda o: sys.argv[sys.argv.index(o) + 1] if o in sys.argv else None
+    if val('--story'):
+        story(h, val('--story'))
+        if '--so-story' in sys.argv:
+            return
     if val('--quadros'):
         for t in map(float, val('--quadros').split(',')):
             h.quadro(t).save(f'{os.path.splitext(saida)[0]}-q{t}.png')
         return
-    if val('--story'):
-        story(h, val('--story'))
     if val('--capa'):
         capa(h, val('--capa'))
     if val('--legenda'):
@@ -194,8 +196,8 @@ def main():
         raise SystemExit('ffmpeg falhou')
     os.replace(tmp, saida)
     try:
-        from trilha import juntar, trilha
-        wav = trilha(TOTAL, pops=[0.2, T_TIT], sinal=T_LINHA, final=T_FIM, saida=saida + '.wav')
+        from trilha import estilo_do_dia, juntar, trilha
+        wav = trilha(TOTAL, pops=[0.2, T_TIT], sinal=T_LINHA, final=T_FIM, saida=saida + '.wav', estilo=estilo_do_dia(h.k, h.vdia))
         juntar(saida, wav)
         os.remove(wav)
     except Exception as e:
