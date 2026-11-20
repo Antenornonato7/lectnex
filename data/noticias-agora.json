@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T16:08-03:00",
+  "atualizado_em": "2026-11-20T16:38-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -194,7 +194,11 @@
      5.9488
     ],
     [
-     "15:19",
+     "16:20",
+     5.9488
+    ],
+    [
+     "16:20",
      5.9488
     ]
    ]
@@ -473,13 +477,25 @@
      "WIN"
     ],
     "tickers": [],
-    "dolar30": 0.0
+    "dolar30": null
    },
    {
     "hora": "15:05",
     "titulo": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
     "fonte": "CNBC",
     "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "16:33",
+    "titulo": "A massive bearish trade just happened in the chip stocks",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/20/a-massive-bearish-trade-just-happened-in-the-chip-stocks.html",
     "impacto": "medio",
     "ativos": [
      "WIN"
@@ -858,6 +874,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "A massive bearish trade just happened in the chip stocks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/a-massive-bearish-trade-just-happened-in-the-chip-stocks.html",
+   "publicado": "2026-11-20T16:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -882,7 +909,7 @@
    "em": "2026-11-20T15:28:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T16:08-03:00",
+ "atualizado_em": "2026-11-20T16:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -894,6 +921,28 @@
  ],
  "noticias": [
   {
+   "titulo": "A massive bearish trade just happened in the chip stocks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/a-massive-bearish-trade-just-happened-in-the-chip-stocks.html",
+   "publicado": "2026-11-20T16:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
+   "publicado": "2026-11-20T16:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "A wave of 'pent-up quits' could boost turnover in the job market, expert says: 'The labor market is a bit like a coiled spring'",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/make-it/2026/11/20/worker-turnover-quits-hiring-2027.html",
@@ -902,17 +951,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
-   "publicado": "2026-11-20T15:41-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
@@ -929,10 +967,10 @@
    "tickers": []
   },
   {
-   "titulo": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
-   "publicado": "2026-11-20T14:25-03:00",
+   "titulo": "Bradespar tomba quase 6% e lidera perdas do Ibovespa hoje; veja maiores altas e baixas",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOY3RienczdzhuT2RYa1Y4bDV4ekhfTzJyVHUzUTV4eVkySzVBbGwyTjJfbGxBd2FpNTZfQk8zQzZKdWRnWlRwLUsxN2I5UmVONkw4aFRyY25oMU9wZmFid3AzQUZ5Z1c2LVVFbTVqdFlfdEFWYkNibGFxaW40cXEzWjVyMnFISmxta0hLMDIyWUd5emUzaldMX3BmSkdwdjlFT3RWRmR4N2pPcGk1Ri1fbEZkTGNfTUpDcmJEN2RvdFU2Q2NDZVBHWHpQSll1ejQtMUN6Ry03cnI5RHRZb0s4NUdjTkE?oc=5",
+   "publicado": "2026-11-20T14:54-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -940,13 +978,13 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar nas alturas! O que explica a disparada da moeda americana e qual é o recado do mercado?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdWg5eXRBdnZvTHlrLWVnaUFQQWk1VTZRRjV4RFVwU1V1TUJTNXZKcGYybnVpNFVyR2xaNUUzU3RxT3k4ZFR6eHR6RTlGWmlqZmdLZXZmdVVYaW1uUE5ld0NJU2RUNFk1cjk4a1BvV2NLWDIyWTZJOGtHeDM3THN2aGJ2Nnhua0NVWll6TzBzSnRVNHpHYV9UVENJSWtockF4WXNRbVNSSTFLNVRPT25ZVnJuN2Fham1wRXA3S2VSTjhXUFh6Nlk2NjNZUQ?oc=5",
-   "publicado": "2026-11-20T14:14-03:00",
+   "titulo": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
+   "publicado": "2026-11-20T14:25-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
+    "WIN"
    ],
    "tickers": []
   }
