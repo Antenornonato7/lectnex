@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T15:08-03:00",
+  "atualizado_em": "2026-11-20T15:38-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -190,7 +190,11 @@
      5.9488
     ],
     [
-     "14:36",
+     "15:15",
+     5.9488
+    ],
+    [
+     "15:19",
      5.9488
     ]
    ]
@@ -432,6 +436,18 @@
     "tickers": [
      "CMIN3"
     ],
+    "dolar30": null
+   },
+   {
+    "hora": "15:05",
+    "titulo": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
     "dolar30": null
    }
   ]
@@ -760,6 +776,17 @@
    "tickers": [
     "CMIN3"
    ]
+  },
+  {
+   "titulo": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
+   "publicado": "2026-11-20T15:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -784,7 +811,7 @@
    "em": "2026-11-20T15:28:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T15:08-03:00",
+ "atualizado_em": "2026-11-20T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -796,21 +823,10 @@
  ],
  "noticias": [
   {
-   "titulo": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
-   "publicado": "2026-11-20T14:25-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Jensen Huang wasn't mentioned in latest talks with China, Bessent says",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-   "publicado": "2026-11-20T14:11-03:00",
+   "titulo": "De trabalhadores informais a magnatas, China busca dinheiro em todos os bolsos",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/de-trabalhadores-informais-a-magnatas-china-busca-dinheiro-em-todos-os-bolsos.shtml",
+   "publicado": "2026-11-20T15:21-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -819,15 +835,36 @@
    "tickers": []
   },
   {
-   "titulo": "Warsh wants Fed officials to talk less. Instead, they’re talking more",
+   "titulo": "Jensen Huang wasn't mentioned in latest talks with China, Bessent says",
    "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/warsh-fed-forward-guidance-rate-hikes.html",
-   "publicado": "2026-11-20T12:20-03:00",
-   "impacto": "alto",
+   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+   "publicado": "2026-11-20T15:15-03:00",
+   "impacto": "medio",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
+   "publicado": "2026-11-20T15:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
+   "publicado": "2026-11-20T14:25-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   }
