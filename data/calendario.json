@@ -1,139 +1,6 @@
 {
-  "atualizado_em": "2026-11-19T12:45:00-03:00",
+  "atualizado_em": "2026-11-20T07:50:00-03:00",
   "eventos": [
-    {
-      "anterior": "200 mil",
-      "consenso": "198 mil",
-      "resultado": "203 mil",
-      "surpresa": null,
-      "data": "2026-11-19",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Pedidos de seguro-desemprego (semana até 14/nov)",
-      "importancia": 1,
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Termômetro semanal do mercado de trabalho americano.",
-      "tipo": "seguro-desemprego"
-    },
-    {
-      "anterior": "20,9",
-      "consenso": "20,6",
-      "resultado": "6,3",
-      "surpresa": {
-        "direcao": "abaixo",
-        "reacao": "Indústria americana mais fraca que o esperado costuma aliviar os juros dos Treasuries e o dólar global, o que tende a tirar pressão do WDO e dos DIs."
-      },
-      "data": "2026-11-19",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Índice de atividade do Fed da Filadélfia (nov)",
-      "importancia": 1,
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Pesquisa regional da indústria americana.",
-      "tipo": "philly-fed"
-    },
-    {
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "surpresa": null,
-      "data": "2026-11-19",
-      "hora": "10h50",
-      "pais": "US",
-      "evento": "Falas do Fed: Hammack (10h50), Jefferson (11h25), Goolsbee (14h30) e Barr (16h15)",
-      "importancia": 1,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Primeiras falas depois da ata, que apontou novas altas de juros.",
-      "tipo": "fala-fed"
-    },
-    {
-      "data": "2026-11-19",
-      "hora": "18h",
-      "pais": "BR",
-      "evento": "Reunião do Conselho Monetário Nacional (CMN)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Reunião ordinária do mês, depois do fechamento.",
-      "tipo": "cmn",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-19",
-      "hora": "22h30",
-      "pais": "CN",
-      "evento": "Taxa LPR de 1 e 5 anos (PBoC, nov)",
-      "importancia": 1,
-      "anterior": "3,00% / 3,50%",
-      "consenso": "3,00% / 3,50%",
-      "resultado": null,
-      "impacto": {
-        "win": "volatil"
-      },
-      "nota": "Consenso Newsquawk: manutenção pelo 18º mês seguido. Mexe com minério e Vale.",
-      "tipo": "lpr-china",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-19",
-      "hora": null,
-      "pais": "BR",
-      "evento": "Vencimento de opções de novembro (antecipado)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "win": "volatil"
-      },
-      "nota": "Antecipado por causa do feriado da Consciência Negra (sexta, 20/11, B3 fechada).",
-      "tipo": "vencimento-opcoes",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-19",
-      "hora": null,
-      "pais": "CN",
-      "evento": "Encontro Trump–Xi–Putin na cúpula da APEC (Shenzhen)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "win": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Trump, Xi e Putin reunidos à margem da APEC; comércio, petróleo em Hormuz e Ucrânia na pauta. Mexe com minério e emergentes.",
-      "tipo": "cupula-eua-china",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-20",
-      "hora": "12h",
-      "pais": "US",
-      "evento": "Sentimento do consumidor Michigan (nov, final)",
-      "importancia": 1,
-      "anterior": "51,0",
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Anterior = leitura preliminar de novembro; expectativa de inflação em 1 ano caiu a 4,3%.",
-      "tipo": "michigan",
-      "surpresa": null
-    },
     {
       "anterior": null,
       "consenso": null,
@@ -147,6 +14,22 @@
       "impacto": {},
       "nota": "Feriado nacional; sem pregão. Bolsas americanas funcionam normalmente.",
       "tipo": "feriado-b3"
+    },
+    {
+      "data": "2026-11-20",
+      "hora": "12h",
+      "pais": "US",
+      "evento": "Sentimento do consumidor Michigan (nov, final)",
+      "importancia": 1,
+      "anterior": "51,0",
+      "consenso": "51,5",
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Anterior = leitura preliminar de novembro; expectativa de inflação em 1 ano caiu a 4,3%.",
+      "tipo": "michigan",
+      "surpresa": null
     },
     {
       "data": "2026-11-23",
@@ -203,16 +86,16 @@
       "resultado": null,
       "surpresa": null,
       "data": "2026-11-23",
-      "hora": null,
+      "hora": "noite",
       "pais": "BR",
-      "evento": "Câmara pode votar o ajuste fiscal (PLP 299/2026)",
+      "evento": "Câmara: sessão extraordinária sobre o ajuste fiscal (PLP 299/2026)",
       "importancia": 2,
       "impacto": {
         "win": "volatil",
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Relator Mauro Benevides prevê votação na segunda (23) se houver quórum, ou na terça (24), segundo a CNN Brasil.",
+      "nota": "Hugo Motta disse que convoca sessão extraordinária na segunda à noite para começar a discutir e depois votar o texto aprovado no Senado (InfoMoney).",
       "tipo": "ajuste-fiscal"
     },
     {
@@ -238,7 +121,7 @@
       "evento": "PIB dos EUA — 2ª estimativa (3º tri, anualizado)",
       "importancia": 2,
       "anterior": "3,4%",
-      "consenso": null,
+      "consenso": "3,4%",
       "resultado": null,
       "impacto": {
         "wdo": "volatil",
@@ -272,8 +155,8 @@
       "pais": "US",
       "evento": "Encomendas de bens duráveis (out)",
       "importancia": 1,
-      "anterior": null,
-      "consenso": null,
+      "anterior": "1,8%",
+      "consenso": "0,0%",
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -298,6 +181,24 @@
       },
       "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
       "tipo": "feriado-eua"
+    },
+    {
+      "data": "2026-11-26",
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "IPCA-15 de novembro (IBGE)",
+      "importancia": 3,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Prévia da inflação oficial; mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
+      "tipo": "ipca-15",
+      "surpresa": null
     }
   ]
 }
