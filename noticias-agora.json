@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T11:10-03:00",
+  "atualizado_em": "2026-11-20T11:13-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -111,7 +111,11 @@
     ],
     [
      "11:10",
-     5.9443
+     5.9434
+    ],
+    [
+     "11:12",
+     5.9461
     ]
    ]
   },
@@ -550,7 +554,7 @@
    "em": "2026-11-20T13:53:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T11:10-03:00",
+ "atualizado_em": "2026-11-20T11:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -560,8 +564,7 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
@@ -590,21 +593,6 @@
    "tickers": []
   },
   {
-   "titulo": "Minerva (BEEF3) ganha fôlego com alta do dólar, e Natura (NATU3) fica na lanterna; veja o que rolou no Ibovespa",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQYk1ZbDR4NHdpV0hYNkFpeVJlMjFvZE5qVjVHMGlmM19Sc2dJYTdOdzU4T2MyRDJpcEdrckE0Q2JYNklKMTk5YjlmLXVSOGFxRkRvTWZ2M0VpRzBIaTVNOFN6UFhIWnBvRFFKTFkySkY3a1lIMmRFMWdYa2loTk1GVWRyczMtWGQyLW1ZUFZobFRDWUFPNVdaLWc5VEN4YV94U0I2aGQyWkpwaXRJZF9acXNDR3lLYVdNR1B1cHZjSXp2SUVTZVNWU25lRTFCbThmdlJzdVBycU0?oc=5",
-   "publicado": "2026-11-20T10:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "BEEF3",
-    "NATU3"
-   ]
-  },
-  {
    "titulo": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
@@ -613,18 +601,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar valoriza globalmente com chances de Fed subir juro e receios com IA",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdEFaVWFtMTE0R1FSRlMyanVROWc1cjhmZ1hOY2xOU29ucHFXMmpIQ3A3aks2ZDRaY1ByTHBmWFRjQkxqeHZBYkdEbk53bFZPZUR0emJyeXA3bGNpVjVTNkx5OEk5dEk2TXpWel9ENHlxdmxwM1B3NDN1aDVoUEUwZFhvbkZsNTlHX2NJRWpjQ2FXTTBNa2xNaDQxT0pQLUFQMGRnZGxoVEZlcEJHVm4wOC03NFJINXNpVnpVVE45WjRjVTdl?oc=5",
-   "publicado": "2026-11-20T10:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
@@ -640,40 +616,6 @@
    "tickers": [
     "PSSA3"
    ]
-  },
-  {
-   "titulo": "Dólar recua levemente no exterior, mas segue elevado com apostas em altas de juros pelo Fed",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRGNiZzNmU3FHMTFiUmlyTkstRnVGUzNBM1BLeUNDdlZ5UElOYUVwLVByZEhwUV9MMGU0ZDNwX3RYdi1ob0xCdnVudXFwZy1aaHRzOFV6REJnY2MwS0F5QkRhVnBzNEhtZ1o0dzF3aVdmcXZRS3dnSFFFVlIzd0Uwd202ZHN4bDlyWFhtNzl1aUxRQ0tKWUd3ckdwdlgxWEMxLVVtSGZibDVDREhRUW9xT2lxSzNBellkaTQ5UDFrcXVPZ3J4ZVZZYWR5Nl9GcHZfMzBQb2xDeUF6eEVNcEtZTdIB7wFBVV95cUxPeVBLT1RSOWZ0SXBaQlFyazVSYmtEWHh6cF9TYWwyeS1JRUxYTnhNb3VKRTNRQlp5UjJMYVhOejMwbUw1Wm5ua0xRYzRhVVpKYzAwR1YzaUdUMWotdFotTS04X253dHp6WkVDckl5SnUteElMZGdTTEJaMFJzSUZ2b0VvYk1PTmZXRVBqTDh6ai1FOS03TGIyeVBPVG1hQnh6d2NpRWZMUzJmTTFDQWRsV1NhQm5XSk1hRFVWSmpVZHByc05WWEJFOFoyMUNHWllJYkNPcV9XM1dkODl1aGgyRkVwUGFLYmtsYTRKRWZJdw?oc=5",
-   "publicado": "2026-11-20T09:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsas de NY caem com pressão das ações de tecnologia; dólar bate maior valor desde abril de 2025",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNYUxWcWV0X0hGMXlFU2hkQUNmOGw0SXZhWDA1bmFWNVh5a1BCcTk3dWhOeVhqb09tZ21na3pJVGtfVkhSRFVSOWs4bWk2N1FQcHg5Y3VDYzFjZWxhV3VyUTdUNVBzZ0NCZU5GYnpES3B1TWhGV3BqdGI2ajRwMFd4dW1OemlWdVF4eHRscGo2dU8xcHdwaDJCWmJLaTVVakV2cTdrTnJ4dTA5emg0czRTSWh1alRMdkZ2OS1Ub1FTNVI3VmFRMW5uRmU3Q0hmRkRCWGZiN0E0eUhBdXJfQkZ2MUJIUTU5RTFPcWpUdHlhajE?oc=5",
-   "publicado": "2026-11-20T09:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Vai viajar e precisa comprar dólar? Como comparar o custo em espécie e na conta global",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPNjh4cWxVZ2V1TnRKZHZPZUZIUVY5UFZscEJxQU9VT0VrM09IbTNhYmNuQUlLM1hYSUZpR3FSc2k1dnVicC05TmphdjlQSXFkY0s3MjlFQ2xUOXAtMHpqZTlmMk1jT0FUSDhIc2VYTDZqTUFrSmktb3VsazFKWWJCM1ZiSHVLZ29nYnBTVkY1V2oyVkZzcDNVWW0xTDVkNm1wOGthRmVxeFp0Mmc5YVQxUW1QdDlGdWlxdEU2a1JuRzlxbk1rSlhJLXl5MzJMM3RLLThwZVFGeXVnRFJTRmV0SmpIWlhzUQ?oc=5",
-   "publicado": "2026-11-20T09:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "The Tech Download: Anthropic charmed Wall Street. But one big uncertainty hangs over the business",
