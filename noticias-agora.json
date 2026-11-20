@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T10:43-03:00",
+  "atualizado_em": "2026-11-20T10:45-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -88,6 +88,10 @@
     [
      "10:40",
      5.9424
+    ],
+    [
+     "10:45",
+     5.9433
     ]
    ]
   },
@@ -201,6 +205,19 @@
     "titulo": "Dólar caminha para quarta alta semanal, apoiado por expectativas de aperto do Fed e busca por proteção impulsionada pela IA",
     "fonte": "Folha",
     "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-caminha-para-quarta-alta-semanal-apoiado-por-expectativas-de-aperto-do-fed-e-busca-por-protecao-impulsionada-pela-ia.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "10:38",
+    "titulo": "Fed sustenta dólar forte com temor sobre IA - 20/11/2026 - Economia",
+    "fonte": "Folha",
+    "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQdHpjMnROV2Z1RmtJZVd1aHRENDJxV0xyN1lnblJ3ZlF1dW15ZHNEdG1PTGRaQ2Zhc1QwM3FxUXNLbXF4Y0ZjWDViZ25PZElqQ3RaRXVROEtkalFsazdNWUc1UzczU0RMUDJYQk1JRnA5UEZLbXRZbE1lZFVveHVxSkdsaV9KRldoZ0phMzMycUZRM2VNRUhhZklWb1VneDlSUXA4M05rZTFjOEluLTJNMmUybkFRcjhlb2g1SHM2NDEzU29PSjRaU0h0a28zM1l5TTRRWjlydWxDWDZ6bXhiYnlyVHNscWdNRE9QLTB1QkozVFZRWXJYZ1ZfaWxMaHE0YUtFVA?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -423,6 +440,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Fed sustenta dólar forte com temor sobre IA - 20/11/2026 - Economia",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQdHpjMnROV2Z1RmtJZVd1aHRENDJxV0xyN1lnblJ3ZlF1dW15ZHNEdG1PTGRaQ2Zhc1QwM3FxUXNLbXF4Y0ZjWDViZ25PZElqQ3RaRXVROEtkalFsazdNWUc1UzczU0RMUDJYQk1JRnA5UEZLbXRZbE1lZFVveHVxSkdsaV9KRldoZ0phMzMycUZRM2VNRUhhZklWb1VneDlSUXA4M05rZTFjOEluLTJNMmUybkFRcjhlb2g1SHM2NDEzU29PSjRaU0h0a28zM1l5TTRRWjlydWxDWDZ6bXhiYnlyVHNscWdNRE9QLTB1QkozVFZRWXJYZ1ZfaWxMaHE0YUtFVA?oc=5",
+   "publicado": "2026-11-20T10:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -442,16 +471,18 @@
    "em": "2026-11-20T13:33:03+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T10:43-03:00",
+ "atualizado_em": "2026-11-20T10:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
@@ -467,6 +498,33 @@
    "tickers": []
   },
   {
+   "titulo": "Fed sustenta dólar forte com temor sobre IA - 20/11/2026 - Economia",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQdHpjMnROV2Z1RmtJZVd1aHRENDJxV0xyN1lnblJ3ZlF1dW15ZHNEdG1PTGRaQ2Zhc1QwM3FxUXNLbXF4Y0ZjWDViZ25PZElqQ3RaRXVROEtkalFsazdNWUc1UzczU0RMUDJYQk1JRnA5UEZLbXRZbE1lZFVveHVxSkdsaV9KRldoZ0phMzMycUZRM2VNRUhhZklWb1VneDlSUXA4M05rZTFjOEluLTJNMmUybkFRcjhlb2g1SHM2NDEzU29PSjRaU0h0a28zM1l5TTRRWjlydWxDWDZ6bXhiYnlyVHNscWdNRE9QLTB1QkozVFZRWXJYZ1ZfaWxMaHE0YUtFVA?oc=5",
+   "publicado": "2026-11-20T10:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Minerva (BEEF3) ganha fôlego com alta do dólar, e Natura (NATU3) fica na lanterna; veja o que rolou no Ibovespa",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQYk1ZbDR4NHdpV0hYNkFpeVJlMjFvZE5qVjVHMGlmM19Sc2dJYTdOdzU4T2MyRDJpcEdrckE0Q2JYNklKMTk5YjlmLXVSOGFxRkRvTWZ2M0VpRzBIaTVNOFN6UFhIWnBvRFFKTFkySkY3a1lIMmRFMWdYa2loTk1GVWRyczMtWGQyLW1ZUFZobFRDWUFPNVdaLWc5VEN4YV94U0I2aGQyWkpwaXRJZF9acXNDR3lLYVdNR1B1cHZjSXp2SUVTZVNWU25lRTFCbThmdlJzdVBycU0?oc=5",
+   "publicado": "2026-11-20T10:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "BEEF3",
+    "NATU3"
+   ]
+  },
+  {
    "titulo": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
@@ -479,6 +537,54 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar valoriza globalmente com chances de Fed subir juro e receios com IA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdEFaVWFtMTE0R1FSRlMyanVROWc1cjhmZ1hOY2xOU29ucHFXMmpIQ3A3aks2ZDRaY1ByTHBmWFRjQkxqeHZBYkdEbk53bFZPZUR0emJyeXA3bGNpVjVTNkx5OEk5dEk2TXpWel9ENHlxdmxwM1B3NDN1aDVoUEUwZFhvbkZsNTlHX2NJRWpjQ2FXTTBNa2xNaDQxT0pQLUFQMGRnZGxoVEZlcEJHVm4wOC03NFJINXNpVnpVVE45WjRjVTdl?oc=5",
+   "publicado": "2026-11-20T10:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar recua levemente no exterior, mas segue elevado com apostas em altas de juros pelo Fed",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRGNiZzNmU3FHMTFiUmlyTkstRnVGUzNBM1BLeUNDdlZ5UElOYUVwLVByZEhwUV9MMGU0ZDNwX3RYdi1ob0xCdnVudXFwZy1aaHRzOFV6REJnY2MwS0F5QkRhVnBzNEhtZ1o0dzF3aVdmcXZRS3dnSFFFVlIzd0Uwd202ZHN4bDlyWFhtNzl1aUxRQ0tKWUd3ckdwdlgxWEMxLVVtSGZibDVDREhRUW9xT2lxSzNBellkaTQ5UDFrcXVPZ3J4ZVZZYWR5Nl9GcHZfMzBQb2xDeUF6eEVNcEtZTdIB7wFBVV95cUxPeVBLT1RSOWZ0SXBaQlFyazVSYmtEWHh6cF9TYWwyeS1JRUxYTnhNb3VKRTNRQlp5UjJMYVhOejMwbUw1Wm5ua0xRYzRhVVpKYzAwR1YzaUdUMWotdFotTS04X253dHp6WkVDckl5SnUteElMZGdTTEJaMFJzSUZ2b0VvYk1PTmZXRVBqTDh6ai1FOS03TGIyeVBPVG1hQnh6d2NpRWZMUzJmTTFDQWRsV1NhQm5XSk1hRFVWSmpVZHByc05WWEJFOFoyMUNHWllJYkNPcV9XM1dkODl1aGgyRkVwUGFLYmtsYTRKRWZJdw?oc=5",
+   "publicado": "2026-11-20T09:42-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Vai viajar e precisa comprar dólar? Como comparar o custo em espécie e na conta global",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPNjh4cWxVZ2V1TnRKZHZPZUZIUVY5UFZscEJxQU9VT0VrM09IbTNhYmNuQUlLM1hYSUZpR3FSc2k1dnVicC05TmphdjlQSXFkY0s3MjlFQ2xUOXAtMHpqZTlmMk1jT0FUSDhIc2VYTDZqTUFrSmktb3VsazFKWWJCM1ZiSHVLZ29nYnBTVkY1V2oyVkZzcDNVWW0xTDVkNm1wOGthRmVxeFp0Mmc5YVQxUW1QdDlGdWlxdEU2a1JuRzlxbk1rSlhJLXl5MzJMM3RLLThwZVFGeXVnRFJTRmV0SmpIWlhzUQ?oc=5",
+   "publicado": "2026-11-20T09:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Só 10 empresas da B3 elevaram o ROE por cinco períodos seguidos; 6 superaram o Ibovespa desde 2021",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZ0hSeF9kdzZRZmpzNXd5UTJIVDdTR3hZeTNQM1JqeUQ1T18ySmZKVVRfV0k0Z3BSSW5teTJINVUzdHo3cmlBXzdhVUpKWTlhTFJaYzlMUkVURmswNUtaaU1yS2VpSnpOVVZDUUZWTVJzYjdybzluQzBrekI3UXdRRThRbTRtRjN2SkwwOHFqcnY2WkRkMmdQU3BUMWUtbldCeDk1WktHcnF6NzFzTURUd0ZMYnByM1VRXzY0cndGSkxCdnVTWThZ?oc=5",
+   "publicado": "2026-11-20T09:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
    "titulo": "The Tech Download: Anthropic charmed Wall Street. But one big uncertainty hangs over the business",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html",
@@ -486,6 +592,19 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar bate R$ 5,86 e IBOV cai 1,34% com ajuste fiscal, rebaixamento do Brasil e PL sobre dividendos",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNcnBXZkVvdFdac2ZPR1ZiQjVEUFloRDYtVXlJQVN3bnpRV3FaRFhBMzZIalZGNnRNNmRuX2pMVTFKY3VIemRvOHdVTi1ZNEtfTTVqaVNpRHAzRklYX2dHSHBZOWVJUmIyT1VHYVlRek1VNUVKbGppY1JjWlYydGo5NWRtVWlpMjBNaGxjVHRINTdjUXNaLXl6Wm5mcWZMQmNpSm52MVRUblpaeGpDX0xTUXhtZk5uaU1qb0FMOFdFdlQ3VXZnN1Z4LWVMbmlSRURXREFiblBpMDF2M1NNbERYaC04a3RHc3BTMU9vQkx3?oc=5",
+   "publicado": "2026-11-20T08:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
