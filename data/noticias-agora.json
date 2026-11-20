@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T18:08-03:00",
+  "atualizado_em": "2026-11-20T18:38-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -198,7 +198,11 @@
      5.9488
     ],
     [
-     "16:20",
+     "18:10",
+     5.9488
+    ],
+    [
+     "18:13",
      5.9488
     ]
    ]
@@ -539,7 +543,7 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": null
+    "dolar30": 0.0
    },
    {
     "hora": "17:52",
@@ -992,6 +996,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Em queda livre: Ibovespa em dólar (EWZ) despenca mais de 3% — e a culpa não é só do governo",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQUNReDRFUXhvaWlxSFQzb3c5LVJJdEU0Uy1pOFMtQjRHb29NSmI0dFpYQVdIVzJtYmRXZlhwcDhJSEFEQjBCdmdwdEp5cERMdHZXRlQxYWZZd1ZkT3E5dkhXMTZ5Mk1fMWh4YVRGbnJlZzJISDFuRFJ2a3FZWXdEckk4VGJrUDBLQmw2NlJfSS1QR2V2dzFHRzc1Vmk0NkxYVHV3T1pwajJwSHJmcDN2OVd2M2NKTzQ?oc=5",
+   "publicado": "2026-11-20T18:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1014,9 +1030,14 @@
    "url": "https://www.cnbc.com/2026/11/20/warsh-fed-forward-guidance-rate-hikes.html",
    "titulo": "Warsh wants Fed officials to talk less. Instead, they’re talking more",
    "em": "2026-11-20T15:28:19+00:00"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQUNReDRFUXhvaWlxSFQzb3c5LVJJdEU0Uy1pOFMtQjRHb29NSmI0dFpYQVdIVzJtYmRXZlhwcDhJSEFEQjBCdmdwdEp5cERMdHZXRlQxYWZZd1ZkT3E5dkhXMTZ5Mk1fMWh4YVRGbnJlZzJISDFuRFJ2a3FZWXdEckk4VGJrUDBLQmw2NlJfSS1QR2V2dzFHRzc1Vmk0NkxYVHV3T1pwajJwSHJmcDN2OVd2M2NKTzQ?oc=5",
+   "titulo": "Em queda livre: Ibovespa em dólar (EWZ) despenca mais de 3% — e a culpa não é só do governo",
+   "em": "2026-11-20T21:30:27+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T18:08-03:00",
+ "atualizado_em": "2026-11-20T18:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1024,9 +1045,48 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Folha"
+  "Folha",
+  "InfoMoney",
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Em queda livre: Ibovespa em dólar (EWZ) despenca mais de 3% — e a culpa não é só do governo",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQUNReDRFUXhvaWlxSFQzb3c5LVJJdEU0Uy1pOFMtQjRHb29NSmI0dFpYQVdIVzJtYmRXZlhwcDhJSEFEQjBCdmdwdEp5cERMdHZXRlQxYWZZd1ZkT3E5dkhXMTZ5Mk1fMWh4YVRGbnJlZzJISDFuRFJ2a3FZWXdEckk4VGJrUDBLQmw2NlJfSS1QR2V2dzFHRzc1Vmk0NkxYVHV3T1pwajJwSHJmcDN2OVd2M2NKTzQ?oc=5",
+   "publicado": "2026-11-20T18:28-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Alice Huang, suspeita de espionagem na Nvidia, tem parentes ligados à indústria militar da China",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/alice-huang-suspeita-de-espionagem-na-nvidia-tem-parentes-ligados-a-industria-militar-da-china.shtml",
+   "publicado": "2026-11-20T18:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Warsh wants Fed officials to talk less. Instead, they’re talking more",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/warsh-fed-forward-guidance-rate-hikes.html",
+   "publicado": "2026-11-20T18:10-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Opinião | Nem US$ 1 bilhão do BC conteve a alta do dólar; o que isso revela sobre a economia?",
    "fonte": "Estadão",
@@ -1061,19 +1121,6 @@
    "tickers": []
   },
   {
-   "titulo": "Hapvida salta mais de 12% e lidera maiores altas do Ibovespa hoje; veja os destaques",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZ3FOQ080Wmk3M2VWS1VyLTBQMFpGWFBubU9PbkwzQTBybW9OX2o5ZG5sRDVqaUJ0RFkxek1fVkh2aXdBQjRSOFFNMkJfcDRzUmtsLVVRcVlIckZuaHJIOFgwVWg0bHRDWndQWmdIVDFXcnpFNURVbF96UmhRTU9lejd6LUNPbGx5NUV0ekVWcXFPZW5kVG1lUTlSNmNtbnpGNXQ1VlFQWFFaZ0NkSHNGSGduWDlEOG9kMC15N0lwQ1FJMEJ5QU01Y01VVlpNcFFKcVI2NEhHTFM?oc=5",
-   "publicado": "2026-11-20T17:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "HAPV3"
-   ]
-  },
-  {
    "titulo": "A massive bearish trade just happened in the chip stocks",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/20/a-massive-bearish-trade-just-happened-in-the-chip-stocks.html",
@@ -1089,18 +1136,6 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/make-it/2026/11/20/worker-turnover-quits-hiring-2027.html",
    "publicado": "2026-11-20T15:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "De trabalhadores informais a magnatas, China busca dinheiro em todos os bolsos",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/de-trabalhadores-informais-a-magnatas-china-busca-dinheiro-em-todos-os-bolsos.shtml",
-   "publicado": "2026-11-20T15:21-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
