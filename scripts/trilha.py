@@ -1,6 +1,10 @@
-"""Trilha original dos reels (sintetizada aqui, sem direito autoral de terceiros): batida leve a 100 BPM, acorde de fundo,
-"pop" quando cada manchete aparece, sinal no resultado e um sobe-som curto na chamada final.
-trilha(segundos, pops=[t...], sinal=t, final=t, saida='trilha.wav')  ·  juntar(video, wav) põe o áudio no MP4 (AAC).
+"""Trilha original dos reels (sintetizada aqui, sem direito autoral de terceiros), com "pop" quando cada manchete aparece,
+sinal no resultado e um sobe-som curto na chamada final.
+trilha(segundos, pops=[t...], sinal=t, final=t, saida='trilha.wav', estilo=None)  ·  juntar(video, wav) põe o áudio no MP4 (AAC).
+
+Estilos: 'lofi' (82 BPM, acordes de sétima, chiado de vinil) e 'batida' (a trilha original, 100 BPM).
+O estilo muda de tempos em tempos (combinado em 19/11/2026: o áudio troca junto com os formatos, todo mês). Para trocar:
+acrescente o mês em ESTILO_DO_MES. TRILHA_ESTILO no ambiente força um estilo (teste).
 """
 import os
 import subprocess
@@ -9,6 +13,9 @@ import wave
 import numpy as np
 
 SR = 44100
+ESTILO_DO_MES = {'2026-11': 'lofi', '2026-12': 'lofi'}
+PADRAO = 'lofi'
+nota = lambda m: 440 * 2 ** ((m - 69) / 12)
 
 
 def _env(n, ataque=0.005, queda=0.2):
@@ -24,10 +31,66 @@ def _por(buf, t, som, ganho=1.0):
     buf[i:j] += som[: j - i] * ganho
 
 
-def trilha(seg, pops=(), sinal=None, final=None, saida='trilha.wav', bpm=100, semente=7):
+def estilo_atual():
+    import datetime as dt
+    return os.environ.get('TRILHA_ESTILO', '').strip() or ESTILO_DO_MES.get(dt.date.today().strftime('%Y-%m'), PADRAO)
+
+
+def _lp(x, a):
+    """Passa-baixa de 1 polo (só para trechos curtos)."""
+    y, acc = np.zeros_like(x), 0.0
+    for i in range(len(x)):
+        acc += a * (x[i] - acc)
+        y[i] = acc
+    return y
+
+
+def _lofi(seg, pops, sinal, final, rng, semente):
     n = int(seg * SR)
-    buf = np.zeros(n)
+    b = np.zeros(n)
+    bt = 60 / 82
+    progs = [[[57, 60, 64, 67], [53, 57, 60, 64], [55, 59, 62, 65], [52, 55, 59, 62]],   # Am7 Fmaj7 G7 Em7
+             [[50, 53, 57, 60], [55, 59, 62, 65], [48, 52, 55, 59], [57, 60, 64, 67]]]   # Dm7 G7 Cmaj7 Am7
+    acordes = progs[semente % len(progs)]
+    cn = int(bt * 4 * SR)
+    tt = np.arange(cn) / SR
+    for k in range(int(seg / (bt * 4)) + 1):
+        s = np.zeros(cn)
+        for m in acordes[k % 4]:
+            f = nota(m)
+            s += (np.sin(2 * np.pi * f * tt) + 0.3 * np.sin(4 * np.pi * f * tt)) * (1 + 0.15 * np.sin(2 * np.pi * 4 * tt))
+        _por(b, k * bt * 4, s * _env(cn, 0.02, 2.5), 0.08)
+    kn = int(0.3 * SR)
+    kt = np.arange(kn) / SR
+    kick = np.sin(2 * np.pi * (45 + 60 * np.exp(-kt * 25)) * kt) * _env(kn, 0.002, 0.15)
+    sn = int(0.2 * SR)
+    snare = _lp(rng.standard_normal(sn), 0.3) * _env(sn, 0.002, 0.07)
+    for i in range(int(seg / bt) + 1):
+        if i * bt >= 0.3:
+            _por(b, i * bt + (0.02 if i % 2 else 0), kick if i % 2 == 0 else snare, 0.5 if i % 2 == 0 else 0.25)
+    b += rng.standard_normal(n) * 0.18 * (rng.random(n) > 0.9993)   # chiado de vinil
+    pn = int(0.15 * SR)
+    pt = np.arange(pn) / SR
+    for p in pops:
+        _por(b, p, np.sin(2 * np.pi * nota(81) * pt) * _env(pn, 0.001, 0.05), 0.18)
+    if sinal is not None:
+        sn2 = int(0.8 * SR)
+        st = np.arange(sn2) / SR
+        _por(b, sinal, (np.sin(2 * np.pi * nota(76) * st) + np.sin(2 * np.pi * nota(83) * st)) * _env(sn2, 0.005, 0.4), 0.2)
+    if final is not None:
+        fn = int(1.4 * SR)
+        ft = np.arange(fn) / SR
+        _por(b, final, sum(np.sin(2 * np.pi * nota(m) * ft) for m in (69, 72, 76, 79)) * _env(fn, 0.01, 0.7), 0.07)
+    return b
+
+
+def trilha(seg, pops=(), sinal=None, final=None, saida='trilha.wav', bpm=100, semente=7, estilo=None):
+    estilo = estilo or estilo_atual()
+    n = int(seg * SR)
     rng = np.random.default_rng(semente)
+    if estilo == 'lofi':
+        return _salvar(_lofi(seg, pops, sinal, final, rng, semente), saida)
+    buf = np.zeros(n)
     t = np.arange(n) / SR
     beat = 60 / bpm
     # bumbo (seno grave com queda de altura) em cada tempo; chimbal (ruído filtrado) no contratempo
@@ -72,6 +135,10 @@ def trilha(seg, pops=(), sinal=None, final=None, saida='trilha.wav', bpm=100, se
         rn = int(0.9 * SR)
         sobe = np.convolve(rng.standard_normal(rn), np.ones(40) / 40, 'same') * np.linspace(0, 1, rn) ** 2
         _por(buf, max(0, final - 0.9), sobe, 0.5)
+    return _salvar(buf, saida)
+
+
+def _salvar(buf, saida):
     # entrada e saída suaves, normalização com folga
     fade = int(0.6 * SR)
     buf[:fade] *= np.linspace(0, 1, fade)

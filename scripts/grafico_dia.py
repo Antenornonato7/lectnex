@@ -41,91 +41,76 @@ def escolher(m):
     return k, campo, sorted(mks, key=lambda x: x['hora']), var(k)
 
 
+def titulo_conclusao(m, k, vdia):
+    """O título é a própria conclusão do dia (padrão aprovado em 19/11: um gráfico, uma conclusão)."""
+    ult = m[k]['pontos'][-1][1]
+    verbo = 'sobe' if vdia > 0 else 'cai' if vdia < 0 else 'fica estável'
+    vv = f' {pct(vdia)[1:]}' if vdia else ''
+    if k == 'ibov':
+        return f'Ibovespa {verbo}{vv} e fecha aos {ult:,.0f} pontos'.replace(',', '.')
+    return f'Dólar {verbo}{vv} e fecha a R$ {ult:.2f}'.replace('.', ',')
+
+
 def gerar(m, saida):
     k, campo, mks, vdia = escolher(m)
     s = m[k]
-    pts, base = s['pontos'], s.get('anterior') or s['pontos'][0][1]
-    nome = 'IBOVESPA' if k == 'ibov' else 'DÓLAR À VISTA'
+    pts = [(minutos(h), v) for h, v in s['pontos'] if k == 'ibov' or minutos(h) <= 18 * 60 + 25]
+    base = s.get('anterior') or pts[0][1]
+    outro = 'dolar' if k == 'ibov' else 'ibov'
+    so = m.get(outro) or {}
+    vo = (so['pontos'][-1][1] / (so.get('anterior') or so['pontos'][0][1]) - 1) * 100 if so.get('pontos') else None
+    cor = VERDE if vdia >= 0 else VERMELHO
+    fmtv = (lambda v: f'{v:,.0f}'.replace(',', '.')) if k == 'ibov' else (lambda v: f'R$ {v:.2f}'.replace('.', ','))
     im = Image.new('RGB', (W, H), BG)
     dr = ImageDraw.Draw(im)
-    for x in range(0, W, 48):
-        dr.line([(x, 0), (x, H)], fill='#0A1422')
-    for y in range(0, H, 48):
-        dr.line([(0, y), (W, y)], fill='#0A1422')
-    dr.rectangle([0, 0, W, 10], fill=ORANGE)
-    try:
-        logo = Image.open('assets/brand/icon-192.png').convert('RGBA').resize((56, 56))
-        im.paste(logo, (M, 52), logo)
-    except Exception:
-        pass
-    fb = fonte('InterDisplay-Bold.otf', 38)
-    dr.text((M + 72, 58), 'Lect', font=fb, fill=WHITE)
-    dr.text((M + 72 + dr.textlength('Lect', font=fb), 58), 'nex', font=fb, fill=TEAL_L)
+    dr.rectangle([0, 0, W, 10], fill=TEAL_L)
+    fb = fonte('InterDisplay-Bold.otf', 40)
+    dr.text((M, 60), 'Lect', font=fb, fill=WHITE)
+    dr.text((M + dr.textlength('Lect', font=fb), 60), 'nex', font=fb, fill=TEAL_L)
     d = dt.date.fromisoformat(m['data'])
-    dr.text((M, 140), f'NOTÍCIA × PREÇO · {DIAS[d.weekday()]} {d:%d/%m}', font=fonte('JetBrainsMono-Bold.ttf', 28), fill=ORANGE)
-    dr.text((M, 180), 'O que mexeu no', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
-    dr.text((M, 252), ('Ibovespa' if k == 'ibov' else 'dólar') + ' hoje', font=fonte('InterDisplay-Bold.otf', 64), fill=WHITE)
-    cor = VERDE if vdia >= 0 else VERMELHO
-    t = pct(vdia)
-    fv = fonte('InterDisplay-Bold.otf', 64)
-    dr.text((W - M - dr.textlength(t, font=fv), 252), t, font=fv, fill=cor)
-
-    # gráfico
-    gx0, gx1, gy0, gy1 = M + 4, W - M - 120, 370, 790
-    dr.rectangle([M - 12, gy0 - 24, W - M + 12, gy1 + 50], fill=CARD, outline=LINE, width=2)
-    xs = [minutos(p[0]) for p in pts]
-    x0, x1 = min(600, xs[0]), max(1080, xs[-1])
-    ys = [p[1] for p in pts] + [base]
+    tag = f'GRÁFICO DO DIA · {DIAS[d.weekday()]} {d:%d/%m}'
+    dr.text((W - M - dr.textlength(tag, font=fonte('JetBrainsMono-Bold.ttf', 24)), 72), tag, font=fonte('JetBrainsMono-Bold.ttf', 24), fill=MUTED)
+    ft = fonte('InterDisplay-Bold.otf', 74)
+    y = 150
+    for l in quebrar(dr, titulo_conclusao(m, k, vdia), ft, W - 2 * M, 3):
+        dr.text((M, y), l, font=ft, fill=WHITE)
+        y += 83
+    sub = (f'{"Dólar" if outro == "dolar" else "Ibovespa"} {pct(vo)} no mesmo dia. ' if vo is not None else '') + \
+          ('Ibovespa' if k == 'ibov' else 'Dólar comercial') + ', de 5 em 5 minutos.'
+    for i2, l in enumerate(quebrar(dr, sub, fonte('Inter-Medium.otf', 34), W - 2 * M, 2)):
+        dr.text((M, y + 10 + i2 * 44), l, font=fonte('Inter-Medium.otf', 34), fill=MUTED)
+    gx0, gx1, gy0, gy1 = M, W - M - 160, y + 150, H - 230
+    ys = [v for _, v in pts] + [base]
     lo, hi = min(ys), max(ys)
-    pad = (hi - lo) * 0.1 or base * 0.002
-    X = lambda v: gx0 + (v - x0) / (x1 - x0) * (gx1 - gx0)
-    Y = lambda v: gy0 + (1 - (v - (lo - pad)) / ((hi + pad) - (lo - pad))) * (gy1 - gy0)
-    fm = fonte('JetBrainsMono-Bold.ttf', 20)
+    pad = (hi - lo) * 0.12 or base * 0.002
+    X = lambda t: gx0 + (t - pts[0][0]) / max(1, pts[-1][0] - pts[0][0]) * (gx1 - gx0)
+    Y = lambda v: gy1 - (v - lo + pad) / (hi - lo + 2 * pad) * (gy1 - gy0)
+    fm = fonte('JetBrainsMono-Bold.ttf', 22)
+    dr.line([(gx0, Y(base)), (gx1, Y(base))], fill=LINE, width=2)
+    dr.text((gx1 + 14, Y(base) - 14), 'ontem\n' + fmtv(base), font=fm, fill=MUTED)
+    dr.line([(X(t), Y(v)) for t, v in pts], fill=cor, width=6, joint='curve')
+    xe, ye = X(pts[-1][0]), Y(pts[-1][1])
+    dr.ellipse([xe - 9, ye - 9, xe + 9, ye + 9], fill=cor)
+    dr.text((gx1 + 14, ye - 32), fmtv(pts[-1][1]), font=fonte('JetBrainsMono-Bold.ttf', 30 if k == 'dolar' else 26), fill=WHITE)
+    dr.text((gx1 + 14, ye + 4), pct(vdia), font=fonte('JetBrainsMono-Bold.ttf', 26), fill=cor)
+    top = max(mks, key=lambda x: abs(x[campo])) if mks else None
+    if top:   # um destaque só: a manchete com a maior reação em 30 min
+        t0 = minutos(top['hora'])
+        antes = [v for t, v in pts if t <= t0] or [pts[0][1]]
+        x, yy = X(t0), Y(antes[-1])
+        dr.ellipse([x - 8, yy - 8, x + 8, yy + 8], fill=ORANGE)
+        ly = gy0 + 10 if yy > (gy0 + gy1) / 2 else gy1 - 150
+        dr.line([(x, yy), (x, ly + (100 if ly < yy else 0))], fill=ORANGE, width=2)
+        tx = max(gx0, min(x - 10, gx1 - 440))
+        dr.text((tx, ly), f'{top["hora"]} · {pct(top[campo])} em 30 min', font=fm, fill=ORANGE)
+        for i2, l in enumerate(quebrar(dr, top['titulo'], fonte('Inter-Medium.otf', 26), 440, 2)):
+            dr.text((tx, ly + 30 + i2 * 32), l, font=fonte('Inter-Medium.otf', 26), fill=WHITE)
     for h in range(10, 19, 2):
-        x = X(h * 60)
-        dr.line([(x, gy0), (x, gy1)], fill='#13233A')
-        dr.text((x - 14, gy1 + 12), f'{h}h', font=fm, fill=MUTED)
-    yb = Y(base)
-    for x in range(int(gx0), int(gx1), 14):
-        dr.line([(x, yb), (x + 7, yb)], fill='#475569', width=2)
-    dr.text((gx1 + 10, yb - 12), 'ant.', font=fm, fill=MUTED)
-    linha = [(X(minutos(p[0])), Y(p[1])) for p in pts]
-    dr.polygon(linha + [(linha[-1][0], gy1), (linha[0][0], gy1)], fill=(16, 50, 40) if vdia >= 0 else (60, 18, 30))
-    dr.line(linha, fill=cor, width=4, joint='curve')
-    ult = pts[-1][1]
-    dr.text((gx1 + 10, Y(ult) - 12), f'{ult:,.0f}'.replace(',', '.') if k == 'ibov' else f'{ult:.3f}'.replace('.', ','), font=fm, fill=cor)
-    fn = fonte('InterDisplay-Bold.otf', 28)
-    for i, mk in enumerate(mks, 1):
-        t0 = minutos(mk['hora'])
-        antes = [p for p in pts if minutos(p[0]) <= t0] or pts[:1]
-        x, y = X(t0), Y(antes[-1][1])
-        for yy in range(gy0, gy1, 10):
-            dr.line([(x, yy), (x, yy + 5)], fill=ORANGE, width=2)
-        dr.ellipse([x - 22, y - 22, x + 22, y + 22], fill=ORANGE, outline=BG, width=4)
-        dr.text((x - dr.textlength(str(i), font=fn) / 2, y - 17), str(i), font=fn, fill=BG)
-
-    # legenda das manchetes
-    y = 870
-    if not mks:
-        dr.text((M, y), 'Sem manchetes com reação medida neste dia.', font=fonte('Inter-Medium.otf', 32), fill=MUTED)
-    fh, ft, fr = fonte('JetBrainsMono-Bold.ttf', 24), fonte('Inter-Medium.otf', 30), fonte('JetBrainsMono-Bold.ttf', 26)
-    for i, mk in enumerate(mks, 1):
-        dr.ellipse([M, y + 2, M + 40, y + 42], fill=ORANGE)
-        dr.text((M + 20 - dr.textlength(str(i), font=fn) / 2, y + 5), str(i), font=fn, fill=BG)
-        dr.text((M + 58, y + 6), f'{mk["hora"]} · {mk["fonte"]}', font=fh, fill=MUTED)
-        r = mk[campo]
-        tr = f'{pct(r)} em 30 min'
-        dr.text((W - M - dr.textlength(tr, font=fr), y + 4), tr, font=fr, fill=VERDE if r > 0 else VERMELHO)
-        yy = y + 42
-        for l in quebrar(dr, mk['titulo'], ft, W - 2 * M - 58, 2):
-            dr.text((M + 58, yy), l, font=ft, fill=WHITE)
-            yy += 38
-        y = yy + 22
-    fs = fonte('Inter-Medium.otf', 22)
-    for i, l in enumerate(('Variação do último preço antes da manchete até 30 min depois.',
-                           'O movimento seguinte não prova que a notícia foi a causa.',
-                           'Cotações de 5 min (Yahoo Finance) · lectnex.com.br/hoje · conteúdo educacional')):
-        dr.text(((W - dr.textlength(l, font=fs)) / 2, H - 116 + i * 32), l, font=fs, fill=MUTED)
+        if pts[0][0] <= h * 60 <= pts[-1][0]:
+            dr.text((X(h * 60) - 18, gy1 + 12), f'{h}h', font=fm, fill=MUTED)
+    dr.line([(M, H - 120), (W - M, H - 120)], fill=LINE, width=2)
+    dr.text((M, H - 95), 'Fonte: Yahoo Finance (cotações de 5 min) · reação em 30 min não prova causa', font=fonte('JetBrainsMono-Bold.ttf', 20), fill=MUTED)
+    dr.text((M, H - 60), 'lectnex.com.br · conteúdo educacional, não é recomendação', font=fonte('JetBrainsMono-Bold.ttf', 22), fill=MUTED)
     im.save(saida, 'PNG', optimize=True)
     return k, mks, vdia
 
@@ -140,15 +125,16 @@ def main():
     d = dt.date.fromisoformat(m['data'])
     nome = 'Ibovespa' if k == 'ibov' else 'dólar'
     lst = '\n'.join(f'{i}. {x["hora"]} · {x["titulo"]}' for i, x in enumerate(mks, 1))
+    tit = titulo_conclusao(m, k, vdia)
     legenda = (f'🗞️ <b>Post do dia: notícia × preço</b> · {DIAS[d.weekday()].lower()} {d:%d/%m}\n\n'
                '<b>Sugestão de legenda:</b>\n'
-               f'O que mexeu no {nome} hoje ({pct(vdia)}): marcamos no gráfico as manchetes seguidas dos maiores movimentos em 30 minutos.\n'
+               f'{tit}. As manchetes seguidas dos maiores movimentos em 30 minutos:\n'
                f'{lst}\n'
                'O movimento seguinte não prova causa, mas mostra como o mercado reage à notícia. Veja o dia completo em lectnex.com.br. '
                'Conteúdo educacional. #ibovespa #dolar #daytrade #miniindice #minidolar #b3')
     if os.environ.get('IG_LEGENDA'):  # legenda limpa para o post no Instagram (coletor/instagram.py)
         open(os.environ['IG_LEGENDA'], 'w', encoding='utf-8').write(
-            f'O que mexeu no {nome} hoje ({pct(vdia)}): marcamos no gráfico as manchetes seguidas dos maiores movimentos em 30 minutos.\n\n'
+            f'{tit} 📊\n\nAs manchetes seguidas dos maiores movimentos em 30 minutos:\n'
             f'{lst}\n\nO movimento seguinte não prova causa, mas mostra como o mercado reage à notícia. Veja o dia completo em lectnex.com.br.\n\n'
             'Conteúdo educacional, não é recomendação.\n#ibovespa #dolar #daytrade #miniindice #minidolar #b3')
     enviar(saida, legenda)
