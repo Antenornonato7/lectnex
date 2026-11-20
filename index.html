@@ -34,15 +34,15 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261120b">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261120c">
     <link rel="expect" href="#lx-pronto" blocking="render">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261120b">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261120b">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261120c">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261120c">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -96,7 +96,7 @@
                         <div class="flex items-baseline justify-between gap-2"><span class="term-label font-bold !mb-0">Preparar meu pregão</span><a href="futuros.html#plano" data-atalho="plano" class="font-mono text-[11px] text-lect-teal hover:underline">plano do dia completo →</a></div>
                         <ol class="mt-1.5 grid grid-cols-2 lg:grid-cols-4 gap-2 text-[13px] leading-tight">
                             <li><a id="pp-evento" href="#ms-evento" data-atalho="evento" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">1</span><span class="min-w-0"><strong class="block">Ver o evento</strong><span id="pp-evento-sub" class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">próximo horário</span></span></a></li>
-                            <li><a id="pp-hist" href="#reacao" data-atalho="historico" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">2</span><span class="min-w-0"><strong class="block">Ver o histórico</strong><span id="pp-hist-sub" class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">reação passada</span></span></a></li>
+                            <li><a id="pp-hist" href="dados/" data-atalho="historico" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">2</span><span class="min-w-0"><strong class="block">Ver o histórico</strong><span id="pp-hist-sub" class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">reação passada</span></span></a></li>
                             <li><a href="futuros.html#risco" data-atalho="risco" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">3</span><span class="min-w-0"><strong class="block">Risco do stop</strong><span class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">em reais</span></span></a></li>
                             <li><a href="futuros.html#salvar-plano" data-atalho="diario" class="px-2.5 py-2 min-h-[44px] flex items-center gap-2 border border-slate-200 dark:border-lect-borderDark bg-white dark:bg-lect-cardDark hover:border-lect-teal hover:text-lect-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-lect-teal"><span class="font-mono text-[11px] font-bold text-lect-teal">4</span><span class="min-w-0"><strong class="block">Salvar o plano</strong><span class="block text-[11px] text-slate-600 dark:text-slate-400 truncate">fica "Planejado"</span></span></a></li>
                         </ol>
@@ -170,9 +170,8 @@
         <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 py-3 border-y border-slate-200 dark:border-lect-borderDark font-mono text-xs" aria-label="Seções e ferramentas">
             <a href="#setores" class="hover:text-lect-teal">Setores</a>
             <a href="#noticias" class="hover:text-lect-teal">Agenda completa</a>
-            <a href="#reacao" class="hover:text-lect-teal">Reação histórica</a>
             <a href="#indicadores" class="hover:text-lect-teal">Juros e inflação</a>
-            <a href="#agenda" class="hover:text-lect-teal">Vencimentos</a>
+            <a href="#cambio" class="hover:text-lect-teal">Câmbio</a>
             <a href="leitura/" class="hover:text-lect-teal">Arquivo da Leitura</a>
             <span class="hidden sm:inline text-slate-300 dark:text-slate-600">|</span>
             <a href="laboratorio.html" data-atalho="estudo" class="text-lect-teal hover:underline">Continuar estudando</a>
@@ -198,9 +197,9 @@
 
     <!-- Como as notícias da home são escolhidas (a lista fica na mesa) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-6 space-y-2">
-                        <p class="lx-fonte"><b>Fonte</b><span>Reuters, Valor, InfoMoney, Folha, Estadão, Bloomberg Línea, Agência Brasil e CNBC</span><span>· coleta a cada ~2,5 min</span><span>· variação das empresas com atraso de ~30 min</span></p>
-                        <details id="como-classificamos" class="lx-explica scroll-mt-28"><summary>como classificamos o impacto</summary>
+                        <details id="como-classificamos" class="lx-explica scroll-mt-28"><summary>como as notícias da home são escolhidas</summary>
                             <div class="mt-2 text-[13px] leading-relaxed text-slate-600 dark:text-slate-300 max-w-3xl">
+                                <p class="lx-fonte"><b>Fonte</b><span>Reuters, Valor, InfoMoney, Folha, Estadão, Bloomberg Línea, Agência Brasil e CNBC</span><span>· coleta a cada ~2,5 min</span><span>· variação das empresas com atraso de ~30 min</span></p>
                                 <p>A classificação é automática e lê <strong>só o título</strong> da manchete, não a matéria. Cada tema encontrado soma pontos e marca os ativos que costuma mexer:</p>
                                 <ul class="mt-2 grid sm:grid-cols-2 gap-x-6 gap-y-1 font-mono text-xs">
                                     <li><b>5 pts</b> · juros e bancos centrais (Copom, Selic, Fed) → DI, WDO</li>
@@ -238,28 +237,6 @@
                 </div>
                 <div class="hidden lg:col-span-6 term-panel h-[560px] overflow-hidden" id="tv-calendar"></div>
             </div>
-            <div id="reacao" class="scroll-mt-28"></div><div id="rx-wrap" class="hidden mt-6"></div>
-            <div id="ph-wrap" class="hidden mt-4 term-panel"></div>
-            <script>(function(){
-                fetch('data/placar-historico.json?t='+Math.floor(Date.now()/6e5),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(p){
-                    var ev=(p&&p.eventos||[]).filter(function(e){return e.acerto&&(e.acerto.win!=null||e.acerto.wdo!=null)});
-                    if(!ev.length)return;
-                    var tot=function(k){var c=ev.filter(function(e){return e.acerto[k]!=null});return{n:c.length,ok:c.filter(function(e){return e.acerto[k]}).length}};
-                    var w=tot('win'),d=tot('wdo'),esc=LX.esc;
-                    var card=function(l,t){return '<div class="text-center"><span class="term-label block">'+l+'</span><strong class="block font-display text-lg leading-tight mt-1">'+(t.n?LX.contagem(t.ok,t.n):'sem observações')+'</strong><span class="block font-mono text-[11px] text-slate-500">'+(t.n?LX.num(t.ok/t.n*100,0)+'% · reação de 30 min'+(t.n<20?' · amostra pequena':''):'')+'</span></div>'};
-                    var cel=function(e,k){var s=e.sobe[k],v=e.reacao[k],a=e.acerto[k];if(v==null)return '<td class="px-2 text-slate-400">pendente</td>';
-                        var ind=s==null?'—':s>=60?'▲ '+s+'%':s<=40?'▼ '+(100-s)+'%':'dividido';
-                        return '<td class="px-2 whitespace-nowrap"><span class="text-slate-500">'+ind+'</span> → <b class="'+(v>0?'text-emerald-600 dark:text-emerald-400':v<0?'text-rose-600 dark:text-rose-400':'')+'">'+LX.pct(v,2,true)+'</b>'+(a==null?'':' <span class="'+(a?'text-emerald-600 dark:text-emerald-400':'text-rose-600 dark:text-rose-400')+'">'+(a?'acertou':'errou')+'</span>')+'</td>'};
-                    var SP={'acima':'acima','abaixo':'abaixo','em linha':'em linha'};
-                    var rows=(p.eventos||[]).slice(-8).reverse().map(function(e){return '<tr class="border-t border-slate-200 dark:border-lect-borderDark"><td class="px-2 py-2 whitespace-nowrap">'+e.data.slice(8,10)+'/'+e.data.slice(5,7)+'</td><td class="px-2 font-sans font-semibold">'+esc(e.evento)+(e.surpresa?' <span class="font-mono text-[10px] text-slate-500">'+esc(SP[e.surpresa]||e.surpresa)+'</span>':'')+'</td>'+cel(e,'win')+cel(e,'wdo')+'</tr>'}).join('');
-                    var el=document.getElementById('ph-wrap');
-                    el.innerHTML='<div class="px-5 py-4 border-b border-slate-200 dark:border-lect-borderDark flex flex-wrap items-baseline justify-between gap-2"><span class="term-label font-bold flex items-center gap-1.5"><i class="ph-bold ph-target text-lect-orange"></i>O HISTÓRICO ACERTOU?</span><span class="font-mono text-[11px] text-slate-500">Antes × depois nos dias de evento forte</span></div>'
-                        +'<div class="grid grid-cols-2 gap-3 px-5 py-4">'+card('IBOVESPA À VISTA (REF. WIN)',w)+card('DÓLAR À VISTA (REF. WDO)',d)+'</div>'
-                        +'<div class="overflow-x-auto"><table class="w-full font-mono text-xs"><thead><tr class="text-[10px] text-slate-500 text-left"><th class="px-2 py-1 font-normal">DIA</th><th class="px-2 font-normal">EVENTO</th><th class="px-2 font-normal">IBOVESPA À VISTA: HISTÓRICO → DIA (30 MIN)</th><th class="px-2 font-normal">DÓLAR À VISTA: HISTÓRICO → DIA (30 MIN)</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
-                        +'<p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">O histórico indica alta quando o ativo subiu em 60% ou mais das divulgações anteriores com a mesma surpresa, e queda quando subiu em 40% ou menos. Entre os dois, fica dividido e não conta. Reação de 30 min (ou da abertura seguinte). <a href="placar.html" class="text-lect-teal hover:underline">Placar completo →</a> <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p>';
-                    el.classList.remove('hidden');
-                }).catch(function(){});
-            })();</script>
         </div>
     </section>
 
@@ -384,8 +361,6 @@
     <!-- ================================================================================= -->
     <!-- 01 · CALENDÁRIO E NOTÍCIAS + CALENDÁRIO ECONÔMICO GLOBAL                                       -->
 
-    <!-- PLACAR DO TERMÔMETRO (data/placar-termometro.json; aparece a partir de 5 pregões) -->
-    <div id="placar-term" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 scroll-mt-28"></div>
 
     <!-- INSCRIÇÃO NA NEWSLETTER (aparece quando LX.config.newsletter estiver preenchido) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6"><div data-lx-news="completo" class="hidden"></div></div>
@@ -399,22 +374,8 @@
     <section id="agenda"  class="py-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
-            <!-- AGENDA DO MERCADO -->
-            <div class="lg:col-span-7 term-panel overflow-hidden">
-                <div class="panel-head">
-                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-calendar-dots text-lect-orange"></i>Agenda que Move o Mercado</span>
-                    <span class="font-mono text-[10px] text-slate-300">VENCIMENTOS CALCULADOS PELAS REGRAS B3</span>
-                </div>
-                <div class="flex flex-wrap gap-1.5 p-3 border-b border-slate-200 dark:border-lect-borderDark font-mono text-[11px]" id="agenda-filters"></div>
-                <div id="agenda-list" class="divide-y divide-slate-200 dark:divide-lect-borderDark max-h-[460px] overflow-y-auto thin-scroll"></div>
-                <div class="px-4 py-2.5 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark font-mono text-[10px] text-slate-500 flex flex-wrap justify-between gap-2">
-                    <span>DU = dias úteis de pregão até o evento</span>
-                    <a href="futuros.html#vencimentos" class="text-lect-teal font-bold hover:underline">Calendário completo de vencimentos →</a>
-                </div>
-            </div>
-
             <!-- CÂMBIO & CRIPTO -->
-            <div id="cambio" class="lg:col-span-5 term-panel overflow-hidden scroll-mt-28">
+            <div id="cambio" class="lg:col-span-7 term-panel overflow-hidden scroll-mt-28">
                 <div class="panel-head">
                     <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-currency-circle-dollar text-lect-orange"></i>Câmbio</span>
                     <span id="fx-time" class="font-mono text-[10px] text-emerald-400">—</span>
@@ -443,7 +404,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261120b"></script><span id="lx-pronto" hidden></span>
+    <script src="assets/lectnex-core.js?v=20261120c"></script><span id="lx-pronto" hidden></span>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -519,35 +480,6 @@
                 const n = (b.textContent.match(/\d+/) || [''])[0]; b.innerHTML = `<i class="ph-bold ${on ? 'ph-caret-up' : 'ph-caret-down'}"></i>${on ? 'Ocultar' : 'Ver'} outra${n > 1 ? 's' : ''} ${n} cobertura${n > 1 ? 's' : ''}`;
             });
         })();
-
-        /* ---------- Placar do termômetro: transparência sobre acertos e erros ---------- */
-        LX.dados('placar-termometro').then(pl => {
-            const dias = (pl && Array.isArray(pl.dias) ? pl.dias : []).filter(d => d && d.data && (d.win || d.wdo));
-            if (dias.length < 5) return;
-            const SET = { bullish: 'alta', bearish: 'baixa', neutro: 'neutro' };
-            const taxa = (k, n) => { const v = dias.slice(-n).filter(d => d[k]); const ok = v.filter(d => d[k].acerto).length; return { ok, n: v.length, p: v.length ? ok / v.length * 100 : null }; };
-            const kpi = (k, nome, ref) => { const a = taxa(k, 20), b = taxa(k, 60); return `<div class="p-4 bg-slate-50 dark:bg-lect-bgDark border-l-2 ${k === 'win' ? 'border-lect-teal' : 'border-lect-orange'}"><span class="term-label">${nome}</span>
-                <strong class="block font-display text-xl leading-tight mt-1">${a.n ? LX.contagem(a.ok, a.n) : 'sem observações'}</strong>
-                <span class="block font-mono text-[11px] text-slate-600 dark:text-slate-300">${a.p == null ? '' : LX.num(a.p, 0) + '% · '}últimos ${Math.min(20, dias.length)} pregões${a.n < 20 ? ' · amostra pequena' : ''}</span>
-                ${b.n > a.n ? `<span class="block font-mono text-[10px] text-slate-500">${LX.num(b.p, 0)}% em ${Math.min(60, dias.length)} pregões</span>` : ''}
-                <span class="block font-mono text-[10px] text-slate-500 mt-1">medido pelo ${ref} à vista, no fechamento</span></div>`; };
-            const ult = dias.slice(-60);
-            const row = (k, nome, ref) => `<div class="flex items-center gap-2"><span class="w-9 shrink-0 font-mono text-[10px] text-slate-500">${nome}</span><div class="flex flex-wrap gap-[3px]">${ult.map(d => { const x = d[k], dt = LX.brShort(LX.parseISO(d.data));
-                if (!x) return `<span class="w-3 h-3 bg-slate-200 dark:bg-lect-borderDark" title="${dt} · sem viés do modelo"></span>`;
-                return `<span class="w-3 h-3 ${x.acerto ? 'bg-emerald-500' : 'bg-rose-500'}" title="${dt} · ${nome} ${SET[x.leitura] || x.leitura} · ${ref} ${x.var_pct > 0 ? '+' : ''}${LX.num(x.var_pct, 2)}% · ${x.acerto ? 'acertou' : 'errou'}"></span>`; }).join('')}</div></div>`;
-            const el = document.getElementById('placar-term');
-            el.innerHTML = `<div class="term-panel">
-                <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark">
-                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-target text-lect-orange"></i>Placar do viés do modelo <span class="lx-demo">EXPERIMENTAL</span></span>
-                    <span class="font-mono text-[10px] text-slate-500">mostramos os acertos e os erros · ${dias.length} pregões registrados</span></div>
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 p-5">
-                    <div class="lg:col-span-5 grid grid-cols-2 gap-3">${kpi('win', 'Viés WIN', 'Ibovespa')}${kpi('wdo', 'Viés WDO', 'dólar')}</div>
-                    <div class="lg:col-span-7 space-y-2"><span class="term-label block">Últimos ${ult.length} pregões <span class="normal-case">(passe o mouse para ver o dia)</span></span>${row('win', 'WIN', 'IBOV')}${row('wdo', 'WDO', 'dólar')}
-                        <div class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] text-slate-500 pt-1"><span><span class="inline-block w-2.5 h-2.5 bg-emerald-500 align-middle"></span> acertou</span><span><span class="inline-block w-2.5 h-2.5 bg-rose-500 align-middle"></span> errou</span><span><span class="inline-block w-2.5 h-2.5 bg-slate-200 dark:bg-lect-borderDark align-middle"></span> sem termômetro</span></div></div>
-                </div>
-                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-500">${dias.length < 30 ? `<strong class="text-lect-orange">Amostra pequena (${dias.length} pregões): os percentuais acima ainda não dizem se o modelo é bom ou ruim.</strong> ` : ''}Como medimos: o viés do modelo sai às 7h40, antes da abertura, e é conferido no fechamento. <strong>Alta</strong> acerta se o ativo subiu, <strong>baixa</strong> se caiu, <strong>neutro</strong> se ficou dentro da faixa (desde 09/11: ±0,7% no WIN e ±0,4% no WDO; antes, ±0,5% nos dois). A conferência usa o <strong>Ibovespa à vista</strong> (para o WIN) e o <strong>dólar à vista</strong> (para o WDO), não os contratos futuros. <a href="placar.html" class="text-lect-teal hover:underline">Placar completo, com todos os erros →</a> <span class="lx-demo">EDUCACIONAL · NÃO É RECOMENDAÇÃO</span></p></div>`;
-            el.classList.remove('hidden');
-        }).catch(() => { });
 
         /* ---------- Meu painel: preferências salvas no navegador (assets/lectnex-painel.js edita) ---------- */
         window.lxPainel = () => { try { return Object.assign({ foco: 'ambos', acoes: [], ocultas: [] }, JSON.parse(localStorage.getItem('lectnex-painel-v1') || '{}')); } catch (_) { return { foco: 'ambos', acoes: [], ocultas: [] }; } };
@@ -826,7 +758,7 @@
                         ${liga ? `<p class="mt-1 text-xs"><span class="text-amber-600 dark:text-amber-400 font-semibold">Ligado ao ${SEL === 'IBOV' ? 'Ibovespa' : 'dólar'}:</span> ${EF[e.impacto[chave]]}.</p>` : ''}`;
                 }
                 if (ppSub) ppSub.textContent = nx ? `${nx.e.evento} · ${diaTxt(nx.e.data)}${nx.e.hora ? ' ' + nx.e.hora : ''}` : 'agenda da semana';
-                if (hs) { const tp = nx && DADOS_TIPO[nx.e.tipo]; hs.href = tp ? `dados/${tp}.html` : '#reacao'; hsSub.textContent = tp ? `${nx.e.evento.split(' (')[0]}: divulgações passadas` : 'reação a cada tipo de dado'; }
+                if (hs) { const tp = nx && DADOS_TIPO[nx.e.tipo]; hs.href = tp ? `dados/${tp}.html` : 'dados/'; hsSub.textContent = tp ? `${nx.e.evento.split(' (')[0]}: divulgações passadas` : 'reação a cada tipo de dado'; }
                 // agenda curta: até 3 eventos a partir de agora (sem repetir o de cima), mesmo status do calendário completo
                 const lst = evs.filter(e => !/^feriado/.test(e.tipo || '') && !(nx && e === nx.e)).map(e => ({ e, t: quando(e), s: LX.statusEvento(e, agora) }))
                     .filter(x => (x.s.estado === 'futuro' && x.t > agora) || (x.s.estado !== 'futuro' && x.t > agora - 3 * 3600e3)).sort((a, b) => a.t - b.t);
@@ -892,35 +824,6 @@
             document.querySelector('[data-atalho="agenda"]').addEventListener('click', abrirAgenda);
             if (location.hash === '#agenda-economica') { const t0 = Date.now(), tenta = () => window.lxAgendaProximo ? abrirAgenda() : Date.now() - t0 < 5000 && setTimeout(tenta, 200); setTimeout(tenta, 300); }
         })();
-
-        /* ---------- Reação histórica: como WIN e WDO reagiram a cada tipo de dado ---------- */
-        const DADOS_PAG = ['ipca', 'payroll', 'cpi-eua', 'fomc', 'copom'];  // páginas em dados/ (scripts/dados_paginas.py)
-        function rxTabela(j) {
-            const g = {};
-            j.registros.forEach(r => (g[r.tipo] = g[r.tipo] || []).push(r));
-            const tipos = Object.entries(g).filter(([, rs]) => rs.length >= 2).sort((a, b) => b[1].length - a[1].length);
-            if (!tipos.length) return;
-            const FL = { BR: '🇧🇷', US: '🇺🇸', CN: '🇨🇳', EU: '🇪🇺', JP: '🇯🇵', UK: '🇬🇧' };
-            // janela de cada registro: 30 min (padrão) ou 1 h (antes de set/2026)
-            const jan = rs => { const h = rs.filter(r => r.janela === '1h').length, m = rs.length - h; return h && m ? '30 min + 1 h' : h ? '1 h' : '30 min'; };
-            const val = (rs, k) => rs.filter(r => typeof r[k] === 'number');
-            const avg = (rs, k, f) => { const v = val(rs.filter(f || (() => true)), k); return v.length ? { m: v.reduce((a, r) => a + r[k], 0) / v.length, n: v.length, j: jan(v) } : null; };
-            const absm = (rs, k) => { const v = val(rs, k); return v.length ? { m: v.reduce((a, r) => a + Math.abs(r[k]), 0) / v.length, n: v.length, j: jan(v) } : null; };
-            const obs = x => `<span class="block text-[10px] text-slate-600 dark:text-slate-400 whitespace-nowrap">${x.n} obs · ${x.j}</span>`;
-            const cel = x => x ? `<span class="${x.m > 0 ? 'text-emerald-600 dark:text-emerald-400' : x.m < 0 ? 'text-rose-600 dark:text-rose-400' : ''}">${(x.m > 0 ? '+' : x.m < 0 ? '−' : '') + LX.num(Math.abs(x.m), 2)}%</span>${obs(x)}` : '<span class="text-slate-400">—</span>';
-            const mov = x => x ? `±${LX.num(x.m, 2)}%${obs(x)}` : '—';
-            const mistura = tipos.some(([, rs]) => jan(rs) === '30 min + 1 h');
-            const el = document.getElementById('rx-wrap');
-            el.innerHTML = `<div class="term-panel">
-                <div class="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b border-slate-200 dark:border-lect-borderDark"><span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-clock-counter-clockwise text-lect-orange"></i>Reação histórica aos dados</span><span class="font-mono text-[10px] text-slate-600 dark:text-slate-400">Ibovespa à vista e dólar à vista · ${j.registros.length} divulgações medidas</span></div>
-                ${mistura ? '<p class="px-5 py-2 border-b border-slate-200 dark:border-lect-borderDark font-mono text-[11px] text-amber-700 dark:text-amber-400"><i class="ph-bold ph-warning"></i> Esta tabela mistura janelas: 30 min desde set/2026 e 1 h nas divulgações anteriores (barras de 1 hora). Cada célula diz quantas observações e qual janela usou.</p>' : ''}
-                <div class="overflow-x-auto thin-scroll"><table class="w-full font-mono text-xs tabular-nums"><thead><tr class="text-[10px] text-slate-600 dark:text-slate-400 uppercase align-bottom"><th class="text-left px-5 py-2 font-bold">Dado</th><th class="px-2 py-2 font-bold">Vezes</th><th class="px-2 py-2 font-bold">Ibovespa à vista<br><span class="font-normal normal-case">(ref. WIN) movimento ±</span></th><th class="px-2 py-2 font-bold">Dólar à vista<br><span class="font-normal normal-case">(ref. WDO) movimento ±</span></th><th class="px-2 py-2 font-bold">Dólar à vista<br><span class="font-normal normal-case">se acima</span></th><th class="px-2 py-2 font-bold">Dólar à vista<br><span class="font-normal normal-case">se abaixo</span></th><th class="px-2 py-2 font-bold">Ibovespa à vista<br><span class="font-normal normal-case">se acima</span></th><th class="px-2 py-2 font-bold">Ibovespa à vista<br><span class="font-normal normal-case">se abaixo</span></th><th class="px-2 py-2 font-bold" title="Taxa prefixada de 2 anos do Tesouro: manhã do dia do dado → manhã do pregão seguinte">DI 2 anos<br><span class="font-normal normal-case">janela: o dia</span></th></tr></thead>
-                <tbody>${tipos.map(([t, rs]) => { const ult = rs[rs.length - 1], di = val(rs, 'di_bps');
-                    return `<tr class="border-t border-slate-100 dark:border-lect-borderDark align-top"><td class="px-5 py-2 font-sans font-semibold whitespace-nowrap">${FL[ult.pais] || ''} ${DADOS_PAG.includes(t) ? `<a href="dados/${t}.html" class="hover:text-lect-teal underline decoration-dotted">${LX.esc(ult.evento.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</a>` : LX.esc(ult.evento.replace(/\s*\(.*?\)\s*/g, ' ').trim())}</td><td class="text-center px-2 py-2">${rs.length}</td><td class="text-center px-2 py-2">${mov(absm(rs, 'win'))}${rs.some(r => r.win_abertura) ? '<sup class="text-lect-orange" title="Dado sai antes da abertura da bolsa: inclui o gap de abertura">*</sup>' : ''}</td><td class="text-center px-2 py-2">${mov(absm(rs, 'wdo'))}</td>
-                    <td class="text-center px-2 py-2">${cel(avg(rs, 'wdo', r => r.surpresa === 'acima'))}</td><td class="text-center px-2 py-2">${cel(avg(rs, 'wdo', r => r.surpresa === 'abaixo'))}</td><td class="text-center px-2 py-2">${cel(avg(rs, 'win', r => r.surpresa === 'acima'))}</td><td class="text-center px-2 py-2">${cel(avg(rs, 'win', r => r.surpresa === 'abaixo'))}</td><td class="text-center px-2 py-2">${di.length ? '±' + LX.num(di.reduce((a, r) => a + Math.abs(r.di_bps), 0) / di.length, 0) + ' bps' + `<span class="block text-[10px] text-slate-600 dark:text-slate-400">${di.length} obs</span>` : '—'}</td></tr>`; }).join('')}</tbody></table></div>
-                <p class="px-5 py-2.5 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-600 dark:text-slate-400">O ativo medido é o <strong>Ibovespa à vista</strong> (referência para o WIN) e o <strong>dólar à vista</strong> (referência para o WDO), não os contratos futuros. Medimos do último preço antes do dado até 30 minutos depois (ou a abertura seguinte, se o mercado estava fechado); divulgações anteriores a setembro de 2026 foram medidas com barras de 1 hora (até 1 hora depois). "Obs" = quantas divulgações entraram na conta. <span class="text-lect-orange">*</span> dado sai com a bolsa fechada (antes das 10h ou depois das 17h): a medida do Ibovespa inclui o gap da abertura. DI: a curva pública do Tesouro tem uma taxa por dia (a da manhã), então a coluna mede o dia inteiro, no vértice de 2 anos. <span class="lx-demo">ESTATÍSTICA · NÃO É RECOMENDAÇÃO</span></p></div>`;
-            el.classList.remove('hidden');
-        }
 
         /* ---------- Calendário próprio (data/calendario.json); reserva: widget do TradingView ---------- */
         (function () {
@@ -989,7 +892,7 @@
                 document.addEventListener('lx:calendario', ev => { const n = filtra(ev.detail); if (n.length) { evs = n; render(); } });
                 fetch('data/reacoes.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(j => {
                     if (!j || !Array.isArray(j.registros)) return;
-                    j.registros.forEach(r => (RX[r.tipo] = RX[r.tipo] || []).push(r)); render(); rxTabela(j);
+                    j.registros.forEach(r => (RX[r.tipo] = RX[r.tipo] || []).push(r)); render();
                 }).catch(() => { });
                 const t = d.atualizado_em ? new Date(d.atualizado_em) : null;
                 if (t) document.getElementById('cal-when').textContent = 'atualizado ' + LX.brShort(t) + ' ' + t.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
@@ -1086,49 +989,6 @@
         // Na véspera/dia do vencimento do WDO a liquidez já migrou para o próximo
         document.getElementById('hero-wdo').textContent = wdo[0].du <= 2 ? `${wdo[1].code} (rolagem)` : wdo[0].code;
 
-        /* ---------- Agenda ---------- */
-        const fixed = LX.agendaFixed.map(([d, k, t, n]) => ({ date: LX.parseISO(d), kind: k, title: t, note: n }));
-
-        // Focus: toda segunda-feira (dia útil) às 8h25
-        let mon = LX.addDays(today, (8 - today.getDay()) % 7);
-        for (let i = 0; i < 6; i++, mon = LX.addDays(mon, 7)) {
-            if (LX.isBusinessDay(mon)) fixed.push({ date: mon, kind: 'focus', title: 'Boletim Focus (BCB)', note: '8h25. Expectativas de IPCA, Selic, PIB e câmbio.' });
-        }
-        win.slice(0, 2).forEach(c => fixed.push({ date: c.expiry, kind: 'venc', title: `Vencimento ${c.code} (Ibovespa futuro)`, note: 'Quarta-feira mais próxima do dia 15. Rolagem costuma começar na semana anterior.' }));
-        wdo.slice(0, 3).forEach(c => fixed.push({ date: c.expiry, kind: 'venc', title: `Vencimento ${c.code} (dólar futuro)`, note: 'Primeiro dia útil do mês. Formação da PTAX do último dia útil anterior define a liquidação.' }));
-        opt.slice(0, 3).forEach(c => fixed.push({ date: c.expiry, kind: 'venc', title: `Vencimento de opções sobre ações (séries ${c.callLetter}/${c.putLetter})`, note: 'Terceira sexta-feira; em feriado, antecipa para o dia útil anterior.' }));
-
-        const KIND = {
-            copom: ['Copom/FOMC', 'bg-lect-navy text-white'], inflacao: ['Inflação', 'bg-emerald-600 text-white'],
-            venc: ['Vencimentos', 'bg-lect-orange text-lect-navy'], global: ['Global', 'bg-sky-700 text-white'],
-            focus: ['Focus', 'bg-purple-600 text-white'], feriado: ['Feriados', 'bg-slate-500 text-white']
-        };
-        const events = fixed.filter(e => e.date >= today).sort((a, b) => a.date - b.date);
-        let agendaFilter = 'all';
-        function renderAgenda() {
-            document.getElementById('agenda-filters').innerHTML = [['all', 'Todos']].concat(Object.entries(KIND).map(([k, v]) => [k, v[0]]))
-                .map(([k, l]) => `<button data-k="${k}" class="px-2.5 py-1 ${agendaFilter === k ? 'bg-lect-teal text-white font-bold' : 'bg-slate-100 dark:bg-lect-bgDark text-slate-600 dark:text-slate-300'}">${l}</button>`).join('');
-            document.querySelectorAll('#agenda-filters button').forEach(b => b.onclick = () => { agendaFilter = b.dataset.k; renderAgenda(); });
-            document.getElementById('agenda-list').innerHTML = events.filter(e => agendaFilter === 'all' || e.kind === agendaFilter).map(e => {
-                const du = LX.businessDaysBetween(today, e.date, true);
-                const isToday = +e.date === +today;
-                const when = isToday ? '<span class="text-rose-500 font-bold">HOJE</span>' : e.kind === 'feriado' ? `${e.date - today > 0 ? Math.round((e.date - today) / 864e5) + ' dias' : ''}` : `${du} DU`;
-                return `<div class="p-3.5 flex items-start gap-3 hover:bg-slate-50 dark:hover:bg-lect-bgDark/60">
-                    <div class="w-14 shrink-0 text-center font-mono border border-slate-200 dark:border-lect-borderDark">
-                        <div class="text-[9px] uppercase bg-slate-100 dark:bg-lect-bgDark text-slate-500">${LX.monthName[e.date.getMonth()]}</div>
-                        <div class="text-lg font-bold leading-6">${String(e.date.getDate()).padStart(2, '0')}</div>
-                        <div class="text-[9px] text-slate-400 uppercase">${LX.weekday(e.date)}</div>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <div class="flex flex-wrap items-center gap-2"><span class="px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase ${KIND[e.kind][1]}">${KIND[e.kind][0]}</span><strong class="text-sm">${e.title}</strong></div>
-                        <p class="text-xs text-slate-500 mt-1">${e.note}</p>
-                    </div>
-                    <span class="font-mono text-[11px] text-slate-500 shrink-0">${when}</span>
-                </div>`;
-            }).join('') || '<p class="p-4 text-xs text-slate-500">Nenhum evento neste filtro.</p>';
-        }
-        renderAgenda();
-
         const nextCopom = LX.copom2026.map(([d]) => LX.parseISO(d)).find(d => d >= today);
         document.getElementById('next-copom').textContent = nextCopom ? `${LX.br(nextCopom)} (${LX.businessDaysBetween(today, nextCopom, true)} DU)` : 'calendário 2027 a publicar';
 
@@ -1177,7 +1037,7 @@
 
     })();
     </script>
-    <script src="assets/lectnex-pregao.js?v=20261120b" defer></script>
-    <script src="assets/lectnex-painel.js?v=20261120b" defer></script>
+    <script src="assets/lectnex-pregao.js?v=20261120c" defer></script>
+    <script src="assets/lectnex-painel.js?v=20261120c" defer></script>
 </body>
 </html>
