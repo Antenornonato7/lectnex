@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T14:29-03:00",
+  "atualizado_em": "2026-11-20T14:30-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -749,14 +749,17 @@
    "em": "2026-11-20T15:28:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T14:29-03:00",
+ "atualizado_em": "2026-11-20T14:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
-  "Folha"
+  "Folha",
+  "InfoMoney",
+  "Money Times"
  ],
  "noticias": [
   {
@@ -779,6 +782,30 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil (BBAS3): XP vê recuperação mais distante e derruba preço-alvo",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTE0td1JacjJ4WmpuY3RBZGtVU09SVHNnREdMN1pOMmdJb056NTZaVlNOTDF4bUlOdTJUbnNXb24tWmMzd3hPM19uOTQyQ1NyaVpwbFBONjN4VzQ4NmlhSFFoSHdySlE5aEd1dmxCV1hldTY0OXpjaGltUjBseGVOZ1J2QWpVeXN1LVU2UmhndXBXckZvNEV4Mlg0NXRRWTdVZ1J5OEFlWkxVRzQ?oc=5",
+   "publicado": "2026-11-20T12:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
+  },
+  {
+   "titulo": "Nasdaq abre em baixa de 1% com pressão sobre ações de IA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVkdMT0NoSHNNd2l1ckh6cXliM2ZMdkJULW4yeE4walVrU1RQTlBuOFFzODhlTTdkUjFZS1dyMlNpa1B3aURjUnlUT2lVMElGQ2NqWWR1QmdLYnQ1TUdIeWUzaGNfM2xWR1pEaFRNUDVGTmxPNEtGRW1UNWdSZ0xqdFBzNW05NUlpRVZv?oc=5",
+   "publicado": "2026-11-20T12:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
