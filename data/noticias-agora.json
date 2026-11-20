@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-20",
-  "atualizado_em": "2026-11-20T12:38-03:00",
+  "atualizado_em": "2026-11-20T13:08-03:00",
   "dolar": {
    "anterior": 5.9052,
    "pontos": [
@@ -171,11 +171,15 @@
     ],
     [
      "12:35",
-     5.9452
+     5.9461
     ],
     [
-     "12:38",
-     5.947
+     "12:40",
+     5.9488
+    ],
+    [
+     "13:02",
+     5.9488
     ]
    ]
   },
@@ -362,7 +366,7 @@
      "WIN"
     ],
     "tickers": [],
-    "dolar30": -0.06
+    "dolar30": -0.05
    },
    {
     "hora": "12:20",
@@ -388,7 +392,21 @@
      "WIN"
     ],
     "tickers": [],
-    "dolar30": null
+    "dolar30": 0.05
+   },
+   {
+    "hora": "12:33",
+    "titulo": "Banco do Brasil (BBAS3): XP derruba preço-alvo e vê recuperação mais lenta",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTE0td1JacjJ4WmpuY3RBZGtVU09SVHNnREdMN1pOMmdJb056NTZaVlNOTDF4bUlOdTJUbnNXb24tWmMzd3hPM19uOTQyQ1NyaVpwbFBONjN4VzQ4NmlhSFFoSHdySlE5aEd1dmxCV1hldTY0OXpjaGltUjBseGVOZ1J2QWpVeXN1LVU2UmhndXBXckZvNEV4Mlg0NXRRWTdVZ1J5OEFlWkxVRzQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBAS3"
+    ],
+    "dolar30": 0.05
    }
   ]
  },
@@ -690,6 +708,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil (BBAS3): XP derruba preço-alvo e vê recuperação mais lenta",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTE0td1JacjJ4WmpuY3RBZGtVU09SVHNnREdMN1pOMmdJb056NTZaVlNOTDF4bUlOdTJUbnNXb24tWmMzd3hPM19uOTQyQ1NyaVpwbFBONjN4VzQ4NmlhSFFoSHdySlE5aEd1dmxCV1hldTY0OXpjaGltUjBseGVOZ1J2QWpVeXN1LVU2UmhndXBXckZvNEV4Mlg0NXRRWTdVZ1J5OEFlWkxVRzQ?oc=5",
+   "publicado": "2026-11-20T12:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
   }
  ],
  "enviadas": [
@@ -714,7 +745,7 @@
    "em": "2026-11-20T15:28:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-20T12:38-03:00",
+ "atualizado_em": "2026-11-20T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -727,6 +758,42 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
+   "publicado": "2026-11-20T12:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Jensen Huang wasn't mentioned in latest talks with China, Bessent says",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+   "publicado": "2026-11-20T12:52-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Banco do Brasil (BBAS3): XP vê recuperação mais distante e derruba preço-alvo",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTE0td1JacjJ4WmpuY3RBZGtVU09SVHNnREdMN1pOMmdJb056NTZaVlNOTDF4bUlOdTJUbnNXb24tWmMzd3hPM19uOTQyQ1NyaVpwbFBONjN4VzQ4NmlhSFFoSHdySlE5aEd1dmxCV1hldTY0OXpjaGltUjBseGVOZ1J2QWpVeXN1LVU2UmhndXBXckZvNEV4Mlg0NXRRWTdVZ1J5OEFlWkxVRzQ?oc=5",
+   "publicado": "2026-11-20T12:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBAS3"
+   ]
+  },
   {
    "titulo": "Nasdaq abre em baixa de 1% com pressão sobre ações de IA",
    "fonte": "CNN Brasil",
@@ -752,17 +819,6 @@
    "tickers": []
   },
   {
-   "titulo": "Bitcoin selloff: Crypto is failing the 'digital gold' test again as it sinks with stocks",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
-   "publicado": "2026-11-20T12:09-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Novo supercomputador da Petrobras e do Cesar busca soberania em inteligência artificial; entenda",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/negocios/novo-supercomputador-da-petrobras-e-do-cesar-busca-soberania-em-inteligencia-artificial-entenda/",
@@ -774,19 +830,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Galípolo diz que relatou vazamento de reuniões internas sobre Master à PF",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVVFlZWc0eUNPb0NfR3dZdzVGdTJJUHJVZ21pdWc4U0diX1pjZHpCQ2Rhd3p3YkdPdG12ejdwb2hZNUpwLWVlRDhTSUx4ZC1JUnctZzhDeTBxb0xOQll1Z0hiSTJ2el8yQ05CTWZlVTRCTmNVTGZveXdhYVRjN2x2YlBtb1hadnFiZG5YaEo0enhkVTlxbDA0QWJVQUVURlAwUDdrWnZrNHkxekxRUzAxUzFB?oc=5",
-   "publicado": "2026-11-20T10:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Dólar caminha para quarta alta semanal, apoiado por expectativas de aperto do Fed e busca por proteção impulsionada pela IA",
