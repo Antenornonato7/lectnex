@@ -3,19 +3,6 @@
  "eventos": [
   {
    "data": "2026-11-23",
-   "pais": "BR",
-   "evento": "Câmara pode votar o ajuste fiscal (PLP 299/2026)",
-   "importancia": 2,
-   "impacto": {
-    "win": "volatil",
-    "wdo": "volatil",
-    "di": "volatil"
-   },
-   "nota": "Relator Mauro Benevides prevê votação na segunda (23) se houver quórum, ou na terça (24), segundo a CNN Brasil.",
-   "tipo": "ajuste-fiscal"
-  },
-  {
-   "data": "2026-11-23",
    "hora": "06h",
    "pais": "EU",
    "evento": "PMIs preliminares da zona do euro (nov)",
@@ -52,6 +39,20 @@
    "tipo": "pmi-sp-global-eua"
   },
   {
+   "data": "2026-11-23",
+   "hora": "noite",
+   "pais": "BR",
+   "evento": "Câmara: sessão extraordinária sobre o ajuste fiscal (PLP 299/2026)",
+   "importancia": 2,
+   "impacto": {
+    "win": "volatil",
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Hugo Motta disse que convoca sessão extraordinária na segunda à noite para começar a discutir e depois votar o texto aprovado no Senado (InfoMoney).",
+   "tipo": "ajuste-fiscal"
+  },
+  {
    "data": "2026-11-24",
    "hora": "12h",
    "pais": "US",
@@ -75,7 +76,8 @@
     "di": "volatil"
    },
    "nota": "Primeira estimativa mostrou alta de 3,4% (BEA).",
-   "tipo": "pib-eua"
+   "tipo": "pib-eua",
+   "consenso": "3,4%"
   },
   {
    "data": "2026-11-25",
@@ -102,7 +104,9 @@
     "wdo": "volatil"
    },
    "nota": "Investimento e demanda da indústria americana.",
-   "tipo": "bens-duraveis-eua"
+   "tipo": "bens-duraveis-eua",
+   "anterior": "1,8%",
+   "consenso": "0,0%"
   },
   {
    "data": "2026-11-26",
@@ -115,6 +119,20 @@
    },
    "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
    "tipo": "feriado-eua"
+  },
+  {
+   "data": "2026-11-26",
+   "hora": "09h",
+   "pais": "BR",
+   "evento": "IPCA-15 de novembro (IBGE)",
+   "importancia": 3,
+   "impacto": {
+    "di": "volatil",
+    "wdo": "volatil",
+    "win": "volatil"
+   },
+   "nota": "Prévia da inflação oficial; mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
+   "tipo": "ipca-15"
   }
  ]
 }
