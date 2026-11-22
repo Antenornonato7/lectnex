@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-21T08:05:00-03:00",
+  "atualizado_em": "2026-11-22T07:50:00-03:00",
   "eventos": [
     {
       "data": "2026-11-23",
@@ -65,7 +65,7 @@
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Hugo Motta disse que convoca sessão extraordinária na segunda à noite para começar a discutir e depois votar o texto aprovado no Senado (InfoMoney).",
+      "nota": "Hugo Motta marcou para segunda a votação do texto aprovado no Senado; o pacote pode melhorar as contas de 2027 em até R$ 56 bi (O Tempo).",
       "tipo": "ajuste-fiscal"
     },
     {
@@ -158,7 +158,7 @@
       "pais": "BR",
       "evento": "IPCA-15 de novembro (IBGE)",
       "importancia": 3,
-      "anterior": null,
+      "anterior": "0,32% (out)",
       "consenso": null,
       "resultado": null,
       "impacto": {
@@ -166,9 +166,26 @@
         "wdo": "volatil",
         "win": "volatil"
       },
-      "nota": "Prévia da inflação oficial; mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
+      "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
       "tipo": "ipca-15",
       "surpresa": null
+    },
+    {
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "surpresa": null,
+      "data": "2026-11-27",
+      "hora": "15h",
+      "pais": "US",
+      "evento": "NY: pregão encurtado (fecha às 13h de Nova York)",
+      "importancia": 1,
+      "impacto": {
+        "win": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Liquidez menor em NY no pós-feriado de Ação de Graças.",
+      "tipo": "pregao-curto-eua"
     }
   ]
 }

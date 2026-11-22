@@ -1,27 +1,27 @@
 {
   "tipo": "sem-pregao",
-  "data": "2026-11-21",
-  "gerado_em": "2026-11-21T08:05:00-03:00",
-  "titulo": "Nasdaq desaba 5,3% e EWZ cai 3,25% com a B3 fechada",
+  "data": "2026-11-22",
+  "gerado_em": "2026-11-22T07:50:00-03:00",
+  "titulo": "Ataques a petroleiros em Hormuz somam risco à reabertura da B3",
   "resumo": [
-    "Sem pregão hoje (sábado). No último pregão (quinta, 19), o Ibovespa caiu 0,69%, aos 166.376 pontos, e o dólar à vista subiu 1,10%, a R$ 5,93, o maior fechamento desde abril de 2025, mesmo com a venda de US$ 1 bi pelo Banco Central.",
-    "Na sexta, com a B3 fechada, Wall Street teve o pior dia da série recente: S&P 500 −3,7% e Nasdaq −5,3%; segundo a Reuters, a Nvidia caiu 14% depois de a agência noticiar que a SEC investiga a contabilidade da empresa. S&P e Dow entraram em correção.",
-    "Os ativos brasileiros em NY acompanharam: o EWZ fechou em queda de 3,25%, a US$ 28,55, menor nível em 14 meses, segundo o Estadão. É o principal termômetro para o WIN na reabertura de segunda (23).",
-    "No juro americano, o Treasury de 10 anos recuou 12 pontos-base, a 4,93%, com a busca por proteção; o Brent subiu 0,6%, a US$ 92,57, mas fechou a terceira semana seguida de queda.",
-    "Aqui, a Câmara deve começar a votar na noite de segunda o projeto de ajuste fiscal aprovado no Senado (meta de superávit de 0,5% do PIB em 2027); o mercado segue cético sobre o tamanho do ajuste e sem nome para a Fazenda, o que mantém o DI longo e o WDO sensíveis."
+    "Sem pregão hoje (domingo). No último pregão (quinta, 19), o Ibovespa caiu 0,69%, aos 166.376 pontos, e o dólar à vista subiu 1,10%, a R$ 5,93, o maior fechamento desde abril de 2025.",
+    "O fim de semana foi de poucas notícias novas no Brasil; o fato mais relevante veio do Golfo: segundo a Reuters, a agência marítima britânica UKMTO relatou no sábado dois petroleiros atingidos por projéteis perto de Khasab, no Estreito de Hormuz, sem vítimas. Petróleo mais caro pesa na inflação e no DI e costuma favorecer Petrobras.",
+    "Lá fora, a referência continua sendo a sexta de forte queda em NY (S&P 500 −3,7%, Nasdaq −5,3%), com a Nvidia sob investigação da SEC e o VIX acima de 37; o EWZ caiu 3,25% com a B3 fechada. A probabilidade de alta de juros pelo Fed em dezembro passou de 90% no CME FedWatch, o que sustenta o dólar global.",
+    "Em entrevista citada pela Folhapress, o ministro Dario Durigan disse ver desaceleração em 2027, mas descartou recessão e negou planos de controle de capitais ou de mudar a meta de inflação. A Câmara deve começar a votar o ajuste fiscal na noite de segunda, o principal vetor local para o DI longo e o WDO.",
+    "A semana é encurtada nos EUA: PCE e PIB saem na quarta (25), NY fecha na quinta (26, Ação de Graças) — mesmo dia do IPCA-15 aqui — e tem pregão curto na sexta."
   ],
   "pontos": [
     {
-      "titulo": "EWZ −3,25% no feriado da B3",
-      "texto": "Ativos brasileiros em NY caíram com o tombo de tecnologia; é a referência do WIN na abertura de segunda."
+      "titulo": "Petroleiros atingidos em Hormuz",
+      "texto": "Risco de oferta pode levar o Brent para cima na segunda: mexe em Petrobras no WIN e na inflação do DI."
     },
     {
       "titulo": "Câmara vota ajuste fiscal na segunda",
-      "texto": "Sessão extraordinária à noite; o ritmo da votação e mudanças no texto mexem no DI longo e no WDO."
+      "texto": "Sessão à noite; mudanças no texto ou atraso na votação mexem no prêmio do DI longo e no WDO."
     },
     {
-      "titulo": "Aversão a risco global e dólar a R$ 5,93",
-      "texto": "Wall Street em correção e VIX em 37 pressionam emergentes; o WDO reabre com dois dias de NY para absorver."
+      "titulo": "WIN reabre após NY em correção",
+      "texto": "EWZ −3,25% na sexta e Fed perto de subir juros em dezembro mantêm pressão sobre emergentes e o dólar."
     }
   ],
   "destaques": [
@@ -74,88 +74,89 @@
   ],
   "noticias": [
     {
-      "titulo": "Nasdaq despenca 5,3% e S&P 500 cai 3,7%; Nvidia recua 14%",
-      "fonte": "Reuters (via Yahoo Finance)",
-      "hora": "sex 18h17",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-plunges-5-day-anthropic-211724232.html",
-      "por_que": "Segundo a Reuters, a queda da Nvidia veio após reportagem da agência sobre investigação da SEC na contabilidade da empresa; o VIX subiu a 37 e o Treasury de 10 anos caiu a 4,93%. A aversão a risco tende a pesar sobre emergentes na segunda.",
-      "impacto": {
-        "win": "baixa",
-        "wdo": "alta"
-      }
-    },
-    {
-      "titulo": "EWZ fecha em queda de 3,25%, no menor nível em 14 meses",
-      "fonte": "Estadão",
-      "hora": "sex 22h04",
-      "url": "https://paiquerefm.com.br/estadao/aversao-ao-risco-contamina-ativos-brasileiros-em-ny-e-ewz-fecha-no-menor-nivel-em-14-meses/",
-      "por_que": "Com a B3 fechada, o ETF de ações brasileiras e os ADRs (Vale −3,46%, Itaú −2,54%, Petrobras −1,7%) antecipam a pressão sobre o WIN na reabertura.",
-      "impacto": {
-        "win": "baixa",
-        "wdo": "alta"
-      }
-    },
-    {
-      "titulo": "Dólar fecha a R$ 5,9323, maior nível desde abril de 2025, apesar de leilão do BC",
-      "fonte": "Reuters (via Investing.com)",
-      "hora": "qui 17h14",
-      "url": "https://br.investing.com/news/forex-news/dolar-a-vista-fecha-em-alta-de-110-a-r59323-na-venda-2133235",
-      "por_que": "Alta de 4,87% na semana; Lula disse não ter pressa para nomear a nova equipe econômica e o mercado vê com ceticismo o ajuste aprovado no Senado. É o ponto de partida do WDO na segunda.",
+      "titulo": "Dois petroleiros são atingidos por projéteis perto do Estreito de Hormuz",
+      "fonte": "Reuters (via gCaptain)",
+      "hora": "sáb 16h38",
+      "url": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/",
+      "por_que": "Segundo a UKMTO, um navio foi atingido na popa e outro na casa de máquinas, sem vítimas; o Irã diz que um petroleiro bateu numa mina, versão que a Reuters não confirmou. Risco à oferta tende a pressionar o petróleo, a inflação e o dólar na reabertura.",
       "impacto": {
         "wdo": "alta",
         "di": "alta"
       }
     },
     {
-      "titulo": "Câmara fará sessão extraordinária na segunda para votar ajuste fiscal",
-      "fonte": "Correio Braziliense",
-      "hora": "qua 20h30",
-      "url": "https://www.correiobraziliense.com.br/politica/2026/11/7540926-motta-anuncia-votacao-do-ajuste-fiscal-na-segunda-feira-23-11.html",
-      "por_que": "O Senado aprovou o projeto por 69 a 2; o relator estima economia perto de R$ 50 bi em 2027. Aprovação rápida e sem desidratação pode aliviar o prêmio do DI longo; atrasos tendem a pressionar.",
+      "titulo": "Durigan vê desaceleração em 2027, mas descarta recessão",
+      "fonte": "Folhapress (via Jornal do Brasil)",
+      "hora": "sáb 08h",
+      "url": "https://www.jb.com.br/economia/2026/11/1061611-durigan-diz-que-desaceleracao-em-2027-nao-significa-recessao.html",
+      "por_que": "O ministro da Fazenda negou planos de controle de capitais ou de mudança na meta de inflação e disse que déficits seguidos não são sustentáveis; o tom importa para o prêmio de risco às vésperas da votação do ajuste.",
       "impacto": {
-        "di": "neutro"
+        "di": "neutro",
+        "wdo": "neutro"
       }
     },
     {
-      "titulo": "Brent sobe 0,6% na sexta, a US$ 92,57, mas cai 3,4% na semana",
-      "fonte": "WSJ (via Yahoo Finance)",
-      "hora": "sex 18h16",
-      "url": "https://finance.yahoo.com/energy/articles/oil-prices-retreat-traders-assess-123700195.html",
-      "por_que": "Terceira semana de queda, com fluxo resiliente em Hormuz e Trump sem novos ataques ao Irã; petróleo mais fraco reduz o apoio de Petrobras ao WIN e alivia a inflação via combustíveis.",
+      "titulo": "Wall Street tem a pior semana em mais de 18 meses; S&P 500 cai 8,6%",
+      "fonte": "TipRanks",
+      "hora": "dom 07h02",
+      "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-22",
+      "por_que": "Nvidia caiu 22,9% em cinco sessões após notícias de exame da SEC na contabilidade; a ata do Fed apontou para mais altas de juros. Aversão a risco global tende a pesar sobre o WIN na segunda.",
       "impacto": {
         "win": "baixa",
-        "di": "baixa"
+        "wdo": "alta"
+      }
+    },
+    {
+      "titulo": "Chance de alta de juros do Fed em dezembro chega a 92%",
+      "fonte": "Charles Schwab",
+      "hora": "sex 14h10",
+      "url": "https://www.schwab.com/learn/story/market-volatility",
+      "por_que": "Pelo CME FedWatch, a chance de duas ou mais altas até junho passou de 80%; juro americano mais alto fortalece o dólar e pressiona o DI.",
+      "impacto": {
+        "wdo": "alta",
+        "di": "alta",
+        "win": "baixa"
+      }
+    },
+    {
+      "titulo": "Câmara marca votação do ajuste fiscal para segunda (23)",
+      "fonte": "O Tempo",
+      "hora": "qui 08h01",
+      "url": "https://www.otempo.com.br/politica/congresso/2026/11/19/motta-marca-votacao-do-pacote-de-ajuste-fiscal-na-camara-para-a-proxima-segunda-23-11",
+      "por_que": "O pacote pode melhorar as contas de 2027 em até R$ 56 bi, segundo o texto; aprovação sem desidratação tende a aliviar o DI longo, e atrasos tendem a pressionar.",
+      "impacto": {
+        "di": "neutro"
       }
     }
   ],
   "proximo_pregao": {
     "data": "2026-11-23",
-    "o_que_esperar": "A B3 reabre na segunda absorvendo a sexta de forte queda em NY (EWZ −3,25%) com o dólar em R$ 5,93; no radar, PMIs, Focus e a sessão da Câmara sobre o ajuste fiscal à noite."
+    "o_que_esperar": "A B3 reabre na segunda absorvendo dois dias de NY (EWZ −3,25% na sexta) e os ataques a petroleiros em Hormuz no sábado, com o dólar em R$ 5,93; no radar, PMIs, Focus e a sessão da Câmara sobre o ajuste fiscal à noite."
   },
   "fontes": [
     {
-      "titulo": "Reuters (via Yahoo Finance) — Nasdaq plunges 5% a day after Anthropic debut, but investors still believe in AI",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-plunges-5-day-anthropic-211724232.html"
+      "titulo": "Reuters (via gCaptain) — Two Tanker Incidents Reported Near Oman; Vessel Hit Mine East Of Hormuz",
+      "url": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/"
     },
     {
-      "titulo": "Estadão — Aversão ao risco contamina ativos brasileiros em NY e EWZ fecha no menor nível em 14 meses",
-      "url": "https://paiquerefm.com.br/estadao/aversao-ao-risco-contamina-ativos-brasileiros-em-ny-e-ewz-fecha-no-menor-nivel-em-14-meses/"
+      "titulo": "Jornal do Brasil (com Folhapress) — Durigan diz ver desaceleração em 2027, mas afasta recessão",
+      "url": "https://www.jb.com.br/economia/2026/11/1061611-durigan-diz-que-desaceleracao-em-2027-nao-significa-recessao.html"
     },
     {
-      "titulo": "Reuters (via Investing.com) — Dólar à vista fecha em alta de 1,10%, a R$ 5,9323",
-      "url": "https://br.investing.com/news/forex-news/dolar-a-vista-fecha-em-alta-de-110-a-r59323-na-venda-2133235"
+      "titulo": "Charles Schwab — November Nightmare on Wall Street: AI Trade Cracks",
+      "url": "https://www.schwab.com/learn/story/market-volatility"
     },
     {
-      "titulo": "AP (via Yakima Herald) — How major US stock indexes fared Friday 11/20/2026",
-      "url": "https://www.yakimaherald.com/news/nation_and_world/business/how-major-us-stock-indexes-fared-friday-11-20-2026/article_963ce6d2-85a3-5fd6-981d-e60b72a58fbb.html"
+      "titulo": "TipRanks — The Week That Was, The Week Ahead: Macro and Markets, November 22",
+      "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-22"
     },
     {
-      "titulo": "WSJ (via Yahoo Finance) — Oil Futures Fall for Third Straight Week on Supply Outlook",
-      "url": "https://finance.yahoo.com/energy/articles/oil-prices-retreat-traders-assess-123700195.html"
+      "titulo": "O Tempo — Motta marca votação do pacote de ajuste fiscal na Câmara para a próxima segunda (23/11)",
+      "url": "https://www.otempo.com.br/politica/congresso/2026/11/19/motta-marca-votacao-do-pacote-de-ajuste-fiscal-na-camara-para-a-proxima-segunda-23-11"
     },
     {
-      "titulo": "Correio Braziliense — Motta anuncia que Câmara votará ajuste fiscal na segunda (23/11)",
-      "url": "https://www.correiobraziliense.com.br/politica/2026/11/7540926-motta-anuncia-votacao-do-ajuste-fiscal-na-segunda-feira-23-11.html"
+      "titulo": "Agência Gov (via IBGE) — Prévia da inflação de outubro é menor, com queda de preços de água e luz",
+      "url": "https://agenciagov.ebc.com.br/noticias/202610/previa-da-inflacao-de-outubro-e-menor-com-queda-de-precos-de-agua-e-luz"
     }
   ]
 }
