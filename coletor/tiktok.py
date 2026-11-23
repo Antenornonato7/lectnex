@@ -38,7 +38,8 @@ def ler_token():
         if e.code == 404:
             return None, None
         raise
-    bruto = base64.b64decode(j['content'])
+    # o conteúdo da API de "contents" chega recodificado para arquivo binário; a de blobs devolve os bytes exatos
+    bruto = base64.b64decode(ig.gh('GET', f'{ig.GH}/git/blobs/{j["sha"]}')['content'])
     try:
         return json.loads(AESGCM(chave()).decrypt(bruto[:12], bruto[12:], None)), j['sha']
     except Exception as e:   # InvalidTag: o arquivo foi cifrado com outro TIKTOK_CLIENT_SECRET
