@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T10:13-03:00",
+  "atualizado_em": "2026-11-23T10:15-03:00",
   "dolar": {
    "anterior": 5.9488,
    "pontos": [
@@ -63,11 +63,11 @@
     ],
     [
      "10:10",
-     5.9902
+     5.993
     ],
     [
-     "10:13",
-     5.9903
+     "10:15",
+     6.0003
     ]
    ]
   },
@@ -236,7 +236,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.26
+    "dolar30": 0.31
    },
    {
     "hora": "09:44",
@@ -249,7 +249,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.26
+    "dolar30": 0.31
    },
    {
     "hora": "09:54",
@@ -259,6 +259,19 @@
     "impacto": "alto",
     "ativos": [
      "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "dolar30": null
+   },
+   {
+    "hora": "10:12",
+    "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
      "WDO",
      "DI"
     ],
@@ -731,6 +744,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+   "publicado": "2026-11-23T10:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -765,7 +790,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T10:13-03:00",
+ "atualizado_em": "2026-11-23T10:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -780,6 +805,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+   "publicado": "2026-11-23T10:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
    "fonte": "CNBC",
@@ -957,18 +994,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
-   "publicado": "2026-11-23T07:15-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
