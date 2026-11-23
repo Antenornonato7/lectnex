@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T12:08-03:00",
+  "atualizado_em": "2026-11-23T12:38-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -95,11 +95,35 @@
     ],
     [
      "11:50",
-     165459.0
+     165383.0
     ],
     [
-     "11:53",
-     165365.0
+     "11:55",
+     165634.0
+    ],
+    [
+     "12:00",
+     165751.0
+    ],
+    [
+     "12:05",
+     165527.0
+    ],
+    [
+     "12:10",
+     165538.0
+    ],
+    [
+     "12:15",
+     165584.0
+    ],
+    [
+     "12:20",
+     165639.0
+    ],
+    [
+     "12:23",
+     165534.0
     ]
    ]
   },
@@ -256,11 +280,35 @@
     ],
     [
      "12:05",
-     5.9562
+     5.9661
     ],
     [
-     "12:08",
-     5.9608
+     "12:10",
+     5.9675
+    ],
+    [
+     "12:15",
+     5.9627
+    ],
+    [
+     "12:20",
+     5.9636
+    ],
+    [
+     "12:25",
+     5.9657
+    ],
+    [
+     "12:30",
+     5.9666
+    ],
+    [
+     "12:35",
+     5.9662
+    ],
+    [
+     "12:38",
+     5.9681
     ]
    ]
   },
@@ -706,7 +754,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.24,
     "dolar30": -0.23
    },
    {
@@ -719,8 +767,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.15
+    "ibov30": 0.08,
+    "dolar30": 0.26
    },
    {
     "hora": "11:53",
@@ -734,6 +782,45 @@
     "tickers": [
      "BRKM5"
     ],
+    "ibov30": 0.16,
+    "dolar30": 0.22
+   },
+   {
+    "hora": "12:07",
+    "titulo": "Dólar a R$ 6 e a armadilha de tentar proteger o patrimônio tarde demais",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWko4eW9IQ0FCdjhvNmE3elBHQjFCSHFOM2UySEQxVVZQUnFCc09sWjNtMXdiQ3ZydjE2LTVQOVRBU0NwS3NlNEJxc3pGSE4xWkpsNU85RmlhbnQtckV3U09GYlV1MklOMkNTSmlVYlkyYlk3Zk93ZlR1VmtaZXA3Wk5oYUNENGtldTgyalNjZllmT0RLSnRvUXhXcy1QM0tsZ2dTaFE1b2VIc3dqN0RzazFfb0Y3OVdXZUFwS1N4MF9PTklwUWsyaNIBzgFBVV95cUxNQ3FKRWdzWWE4QXZBSG9nUGlkTEZmdWM3ckpnNllqRWRaWXZPRFJzVGhvb2pOQXRiQzNTRFhQY1QxNWtSOG1zNFdKYmFQZ20wSUh5WC1XRlNGbDhDMU1NclF2Nm9hUG1Ddy1peTFabldfanRsbHk3a21mb09RdDdteXVJN0Q4eGtLRmUtQW9mVmx4Yk1jTTlLaVdqcnpDeFNubXRxTHcwSC1JYkYtc1NVMnNKUno1TlVpOGg1NHBEaXlCX2VsTWtUY2xGdjN2QQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.0
+   },
+   {
+    "hora": "12:16",
+    "titulo": "O que explica o dólar saltar de R$ 5 para quase R$ 6 em um mês?",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:28",
+    "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOFh6M2xldzk3bGFlaXM2TlB0QXdUSktUNkUwZUllZnhXc0VYN3Y3MzRkVFE5NFMzWTF6UXZFWVYxN1ZnZkRWc2pKNnlGYjV4OUh5WnhJRzF1VFlLODdmN3JFcV9xMTlKbTlTbHpWTzVBZThlZVVVT1JnNGV0TkJmVXZUcDhrS01wWnJpdnd2c0hhek1ka2tVeFdCdVhlVzZpXzdRWTRkRXNtdUhmRkx1ajZR0gG3AUFVX3lxTE15SUhRT2ZySWRXMFNzX1RrOXJ3VkJVc2ltdlpPRDQ1SURLb3o3VENhY3FxZzkzMlc2d1FzYWVGeDY5MmVqMWg4V1Z6dFdodlUzQXlqS09ISkd0VVdDcnc2TmpvNXc0LTJfWFYySWRUYWg5VDRLOTMxa09YRDdtRFZKbEVuZkRxRTg1c3duVDVsakVDMGJFc1Z2T1ZtVldTeWk4WlpfdWRHa1NkaGZudElXQUROTXZrRQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1441,14 +1528,42 @@
    "tickers": [
     "BRKM5"
    ]
+  },
+  {
+   "titulo": "Dólar a R$ 6 e a armadilha de tentar proteger o patrimônio tarde demais",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWko4eW9IQ0FCdjhvNmE3elBHQjFCSHFOM2UySEQxVVZQUnFCc09sWjNtMXdiQ3ZydjE2LTVQOVRBU0NwS3NlNEJxc3pGSE4xWkpsNU85RmlhbnQtckV3U09GYlV1MklOMkNTSmlVYlkyYlk3Zk93ZlR1VmtaZXA3Wk5oYUNENGtldTgyalNjZllmT0RLSnRvUXhXcy1QM0tsZ2dTaFE1b2VIc3dqN0RzazFfb0Y3OVdXZUFwS1N4MF9PTklwUWsyaNIBzgFBVV95cUxNQ3FKRWdzWWE4QXZBSG9nUGlkTEZmdWM3ckpnNllqRWRaWXZPRFJzVGhvb2pOQXRiQzNTRFhQY1QxNWtSOG1zNFdKYmFQZ20wSUh5WC1XRlNGbDhDMU1NclF2Nm9hUG1Ddy1peTFabldfanRsbHk3a21mb09RdDdteXVJN0Q4eGtLRmUtQW9mVmx4Yk1jTTlLaVdqcnpDeFNubXRxTHcwSC1JYkYtc1NVMnNKUno1TlVpOGg1NHBEaXlCX2VsTWtUY2xGdjN2QQ?oc=5",
+   "publicado": "2026-11-23T12:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "O que explica o dólar saltar de R$ 5 para quase R$ 6 em um mês?",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
+   "publicado": "2026-11-23T12:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOFh6M2xldzk3bGFlaXM2TlB0QXdUSktUNkUwZUllZnhXc0VYN3Y3MzRkVFE5NFMzWTF6UXZFWVYxN1ZnZkRWc2pKNnlGYjV4OUh5WnhJRzF1VFlLODdmN3JFcV9xMTlKbTlTbHpWTzVBZThlZVVVT1JnNGV0TkJmVXZUcDhrS01wWnJpdnd2c0hhek1ka2tVeFdCdVhlVzZpXzdRWTRkRXNtdUhmRkx1ajZR0gG3AUFVX3lxTE15SUhRT2ZySWRXMFNzX1RrOXJ3VkJVc2ltdlpPRDQ1SURLb3o3VENhY3FxZzkzMlc2d1FzYWVGeDY5MmVqMWg4V1Z6dFdodlUzQXlqS09ISkd0VVdDcnc2TmpvNXc0LTJfWFYySWRUYWg5VDRLOTMxa09YRDdtRFZKbEVuZkRxRTg1c3duVDVsakVDMGJFc1Z2T1ZtVldTeWk4WlpfdWRHa1NkaGZudElXQUROTXZrRQ?oc=5",
+   "publicado": "2026-11-23T12:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
-  {
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bolsas-da-china-afrouxam-margem-e-cortam-tarifas-para-sustentar-acoes.shtml",
-   "titulo": "Bolsas da China afrouxam margem e cortam tarifas para sustentar ações",
-   "em": "2026-11-22T15:12:58+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQc0o5b3ZfTncyckFRWFJTc1ozeE5YcHlHbDRFbkNGTldXVkgxUXRlNUFOemRvUFRrcTRZOVJfTUxVbVRSaXlJVnlZOE1aLTJ0dWV5UURhWHZ4SXFieVFwRGtFcDNMVEtwV1M5dXIxUUhlNzRSU2F2S1ZhZTI5V3RkdTNfcTlod2FDU19jRXhVU09jbktKektZNmUzOA?oc=5",
    "titulo": "Petrobras (PETR4), Taesa (TAEE3) e mais empresas pagam dividendos nesta semana; veja valores",
@@ -1475,13 +1590,12 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T12:08-03:00",
+ "atualizado_em": "2026-11-23T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
@@ -1491,10 +1605,43 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar bate os R$ 6: o que explica disparada e até onde a moeda pode ir?",
+   "titulo": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/tokenized-stocks-face-pushback-as-nyse-nasdaq-pivot-for-a-new-market-.html",
+   "publicado": "2026-11-23T12:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOFh6M2xldzk3bGFlaXM2TlB0QXdUSktUNkUwZUllZnhXc0VYN3Y3MzRkVFE5NFMzWTF6UXZFWVYxN1ZnZkRWc2pKNnlGYjV4OUh5WnhJRzF1VFlLODdmN3JFcV9xMTlKbTlTbHpWTzVBZThlZVVVT1JnNGV0TkJmVXZUcDhrS01wWnJpdnd2c0hhek1ka2tVeFdCdVhlVzZpXzdRWTRkRXNtdUhmRkx1ajZR0gG3AUFVX3lxTE15SUhRT2ZySWRXMFNzX1RrOXJ3VkJVc2ltdlpPRDQ1SURLb3o3VENhY3FxZzkzMlc2d1FzYWVGeDY5MmVqMWg4V1Z6dFdodlUzQXlqS09ISkd0VVdDcnc2TmpvNXc0LTJfWFYySWRUYWg5VDRLOTMxa09YRDdtRFZKbEVuZkRxRTg1c3duVDVsakVDMGJFc1Z2T1ZtVldTeWk4WlpfdWRHa1NkaGZudElXQUROTXZrRQ?oc=5",
+   "publicado": "2026-11-23T12:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "O que explica o dólar saltar de R$ 5 para quase R$ 6 em um mês?",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
+   "publicado": "2026-11-23T12:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar a R$ 6 e a armadilha de tentar proteger o patrimônio tarde demais",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYjE1T3BQazF6TVFBZlowQVpCYnhVcHVRRXFjSVRwRUlfM1RVVndWeDB2NHlvbVRxVkROUlhzNlZpeUI2ejVkX3Y3S0o3cFpYOXlqNXZZRVNYSS1EZkQ5enZ4Wng4dVNYbnlwazFyLWtCTkxEUW04NTRDYnFtTXRtc21uTElkQ2lQdF9NeFlEaEpBUkw5bU8wS2pYZjdCOUNIOElIQTAzRDQxYTTSAbABQVVfeXFMT1lKckJBakRVeFpQRHJjRDVaRHFiTGtra1BORTdfMllvSXdrRmNVVGhsb3ZjeVlqdVQ1OExnaDlmUm0wZExLNHdtdFRhX2w2cWdkSzFYaENwTHZOSno3REt0aU5OY25Qd2VsU0VNQldldTAzUmZkNUwyYUZKQXhJRVpuel8zejRmZVJFbFZuRmFDXzBmcUdseUVJWVpxalJvRGxTTGFWVkdDU0p3TW54bUQ?oc=5",
-   "publicado": "2026-11-23T11:42-03:00",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWko4eW9IQ0FCdjhvNmE3elBHQjFCSHFOM2UySEQxVVZQUnFCc09sWjNtMXdiQ3ZydjE2LTVQOVRBU0NwS3NlNEJxc3pGSE4xWkpsNU85RmlhbnQtckV3U09GYlV1MklOMkNTSmlVYlkyYlk3Zk93ZlR1VmtaZXA3Wk5oYUNENGtldTgyalNjZllmT0RLSnRvUXhXcy1QM0tsZ2dTaFE1b2VIc3dqN0RzazFfb0Y3OVdXZUFwS1N4MF9PTklwUWsyaNIBzgFBVV95cUxNQ3FKRWdzWWE4QXZBSG9nUGlkTEZmdWM3ckpnNllqRWRaWXZPRFJzVGhvb2pOQXRiQzNTRFhQY1QxNWtSOG1zNFdKYmFQZ20wSUh5WC1XRlNGbDhDMU1NclF2Nm9hUG1Ddy1peTFabldfanRsbHk3a21mb09RdDdteXVJN0Q4eGtLRmUtQW9mVmx4Yk1jTTlLaVdqcnpDeFNubXRxTHcwSC1JYkYtc1NVMnNKUno1TlVpOGg1NHBEaXlCX2VsTWtUY2xGdjN2QQ?oc=5",
+   "publicado": "2026-11-23T12:07-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -1505,12 +1652,36 @@
    "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal do governo Lula; Ibovespa reduz queda com NY",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
-   "publicado": "2026-11-23T11:41-03:00",
+   "publicado": "2026-11-23T12:03-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Braskem fecha acordo com credores para capitalização de US$ 4,9 bilhões, dizem fontes",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-fecha-acordo-com-credores-para-capitalizacao-de-us-49-bilhoes-dizem-fontes.shtml",
+   "publicado": "2026-11-23T11:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
+  },
+  {
+   "titulo": "Dólar bate os R$ 6: o que explica disparada e até onde a moeda pode ir?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYjE1T3BQazF6TVFBZlowQVpCYnhVcHVRRXFjSVRwRUlfM1RVVndWeDB2NHlvbVRxVkROUlhzNlZpeUI2ejVkX3Y3S0o3cFpYOXlqNXZZRVNYSS1EZkQ5enZ4Wng4dVNYbnlwazFyLWtCTkxEUW04NTRDYnFtTXRtc21uTElkQ2lQdF9NeFlEaEpBUkw5bU8wS2pYZjdCOUNIOElIQTAzRDQxYTTSAbABQVVfeXFMT1lKckJBakRVeFpQRHJjRDVaRHFiTGtra1BORTdfMllvSXdrRmNVVGhsb3ZjeVlqdVQ1OExnaDlmUm0wZExLNHdtdFRhX2w2cWdkSzFYaENwTHZOSno3REt0aU5OY25Qd2VsU0VNQldldTAzUmZkNUwyYUZKQXhJRVpuel8zejRmZVJFbFZuRmFDXzBmcUdseUVJWVpxalJvRGxTTGFWVkdDU0p3TW54bUQ?oc=5",
+   "publicado": "2026-11-23T11:42-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1526,13 +1697,14 @@
    "tickers": []
   },
   {
-   "titulo": "Wall Street's 'Fear Gauge' just flashed a buy sign",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
-   "publicado": "2026-11-23T11:14-03:00",
-   "impacto": "medio",
+   "titulo": "Tempo real: Ibovespa cai de olho no dólar e retorno do CEO da Nvidia; veja os destaques desta segunda-feira (23)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
+   "publicado": "2026-11-23T11:19-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1600,56 +1772,6 @@
    "tickers": []
   },
   {
-   "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
-   "publicado": "2026-11-23T10:31-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeEM4ckUwNnZEZktwWFhXZUpFTEkyc01TeG95TFF5YTZlNXJzWXZJZVlvTG5hYnd4ZUZrYldOb1lIZzVOWXVLdVRiUWZpQ1JKeDhHN3ppU0JIMmxNLUVONFA1aDdKbVFLYVBqUXBoWmJCOHd1WXpHX2tNc1hzVjJfZzlCUERUdVRqUkpZQUhDNXRnM0VHUGUxNNIBngFBVV95cUxPQ0JBdXh2bDZxM2tPYmtLWDZ6cDhKV1NLXzJQWTJseHRraEFsajFWQUhaZFlKbE8wTFhwUEZUVjdNMmtMQmZ2ODdtQ2RzVjBMUllTZkRITkVWUUozWjMtTTlNcElOUE1FdFJlRkJQajVlQ3A4am42b0RxazEwci1VSmNYZ0oxWExwWFV3RVBfcERHa1ZVQVBrODJHX3Rsdw?oc=5",
-   "publicado": "2026-11-23T10:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar perto de R$ 6 e piora da inflação testam tolerância do BC",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUlpnOTRFcndtWWFoUk4zQU5fV0NidlV6Y2F3WGhXZDVKYmlEaHlfZGYtOFpGSloySXd0LW4wY1FBakpldDhodkRRX1h6RkRSNmVVOGxBX3RKUV85SVhfWDI2cndncDRTc1B2aVlXb1RoTk1GZDhZZXAwLVJsOFVvM0d1OElvWkJTTjZSWGhBT202LVViMXNkb3lhdm1GT1pEZ2RlYnF6QW9UNVl5Q1J1eXF4cDVIcm83OUhqd0JsNjHSAc8BQVVfeXFMUHFQOG5wMzc5dnRfdGZrT0dRcDc1YTZodjR6LTJzOGpGblFwRWlqQTZyQTFEWWFLZHVYaDM4a3E1Wm9ObXlGNno2N2ljdW9vMlRVVmRyQVBDYjBuRVdUc0FfTHhlRkNzc2FwdllmNkhGZkhULXBTRlZ5Vk1fVUVrX1lfcmQ3NGQ0ZDdxYWVVbFR3TmRzZ1pYVXhMOFd6ZXYxc2kxREdJTWxPRkljVl9USEJoenh2R1ViOF94cnh2aGloOGZ6cWZ3R1pLWVNLT3lB?oc=5",
-   "publicado": "2026-11-23T10:17-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa cai de olho no dólar, Boletim Focus e PMI dos EUA; veja os destaques desta segunda-feira (23)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
-   "publicado": "2026-11-23T10:08-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/dolar-fuga-de-capital-cenario-sombrio-ajuste-fiscal-ashmore/",
@@ -1666,18 +1788,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-supera-r-598-com-votacao-de-pacote-fiscal-e-aversao-global-ao-risco.shtml",
    "publicado": "2026-11-23T09:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado eleva projeção para inflação e dólar e prevê PIB menor em 2026",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/focus-mercado-eleva-projecao-inflacao-dolar-preve-pib-menor-2026/",
-   "publicado": "2026-11-23T09:35-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
