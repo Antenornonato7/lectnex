@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T17:08-03:00",
+  "atualizado_em": "2026-11-23T17:38-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     164794.0
+     164810.0
+    ],
+    [
+     "16:55",
+     164856.0
+    ],
+    [
+     "17:00",
+     164981.0
     ]
    ]
   },
@@ -732,11 +740,35 @@
     ],
     [
      "17:05",
-     5.9265
+     5.9235
     ],
     [
-     "17:08",
-     5.9265
+     "17:10",
+     5.927
+    ],
+    [
+     "17:15",
+     5.931
+    ],
+    [
+     "17:20",
+     5.9293
+    ],
+    [
+     "17:25",
+     5.9305
+    ],
+    [
+     "17:30",
+     5.9336
+    ],
+    [
+     "17:35",
+     5.931
+    ],
+    [
+     "17:38",
+     5.9311
     ]
    ]
   },
@@ -1754,7 +1786,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.11,
+    "ibov30": -0.1,
     "dolar30": 0.1
    },
    {
@@ -1767,7 +1799,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.08,
     "dolar30": -0.02
    },
    {
@@ -1783,7 +1815,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    },
    {
     "hora": "16:57",
@@ -1796,58 +1828,65 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": 0.05
+   },
+   {
+    "hora": "17:08",
+    "titulo": "Dólar fecha em leve queda após ultrapassar os R$ 6 com tensão fiscal",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhOXdPSUp1cnN0LTFqRWVZenJRb2g2NkE2SlowUmQ1SFVNMnQ3cmR6aERNQmFySzhBVTY1QUNCa2xCSDFFa20yS01fLWNiVWhVWlprd0l3N014RkZ3SVJpQmFB?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.13
+   },
+   {
+    "hora": "17:25",
+    "titulo": "Dólar a R$ 6 preocupa governo, mas Fazenda não vê recessão em 2027, só desaceleração, diz secretária",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLU04a3djTlJvVWpxQmNEdzRjNWc5QnlOOEloR2pvM3pka1RnaWdwVlF2TnY3bHFXa1dxS2N3THpvanFSV0tOT3hZMnBkZWU2d0lYendDeWpnc3BadTJadF9rMWhaaUdRTy1vRE1HZG85SjZpcXVtNnlyQ2VFVHJwU0d0R2xFdl94c1liWDZ0b3Vmc2Q0c280OFRMMkZKSF9xa1dYVmROWmRVWkQ2RVRyT2FWeWdWZDRETHlZS2ZvMHpiU2pCQjlQS1B4NmtFTnVNVmVSR3dsRG4?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:31",
+    "titulo": "Economistas veem risco de estagflação e pedem ajuste fiscal além do plano Moretti",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-veem-risco-de-estagflacao-e-pedem-ajuste-fiscal-alem-do-plano-moretti.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:34",
+    "titulo": "Tarcísio critica plano Moretti e diz que ajuste fiscal do governo Lula não 'ataca a raiz do problema'",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tarcisio-critica-plano-moretti-e-diz-que-ajuste-fiscal-do-governo-lula-nao-ataca-a-raiz-do-problema.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Tempestade perfeita? Goldman vê real atrativo, mas recomenda cautela no curto prazo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZGMxX3h3RzJyZ0dLQzVnNENBMlp3eVBRcklUTUotUGVDcERsOVJ0bzY1NjRwMnNTd29XZnRlN3lOMmFwYUc4dFVidWI4d25oVG4wOVExVVh2aS1tb0JOQmdjU1l3dVd4NUN5clR4X3AtdlA1WW5LUXU1d2x4LTFmNWM0aUstN3l0em0wM2VEeHVwUVlmX0J0UERkRmRXY2RxeDlpLXBINW9YUE5ob0NncV96Vm1mWmxWVHg4YlFyX2lkcFBKS2fSAcsBQVVfeXFMTjRJaG13TDdVLWd0YjVCNEpXWmR3dUlQWjktdzYzazNrcTR6U1FoRUF6SmcwdkhrUnZ5dHdyelZPcWtjWUZIYUJwQ05HbDcxNTFhMXJOYlY4Zy1oUUFMeEMyS1gxN3cyNDlSNTVXMWpVbGQ5VkVzeFdCQ282cWNpY090TWtMMUg3ZjQ4OTN6M2VTTWk5QlYzcWMtRGVLZzNqRmg2YmphSWxRR0RRUFpfRzl5NkpGWVpHLUppQUpHSzVpekRtUV9Jamp0NG8?oc=5",
-   "publicado": "2026-11-23T08:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Economistas elevam projeções para Selic e inflação em 2027; confira o Focus desta segunda-feira (23)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQzdsLVFZVW9QNnZDeF9tY1V1ck1yZkN0azN0c2QxOHFLMXBRcmlSVDlRdHAteFlHS2xCdFJKc0lYc0lnLThCOHRrTzd4SUVfVXNCSV9vOTQwQ2tOdDJaVmtjTmFfVk5fRHJsUFY3eGxsdnhwb0lOUDE2LU9CSE9kTHN1QjVMdDUwYWpnX0I4akpfbHFfLXNNTVNsd0FrVUZoeGtxekRmd203cEticDhmdHFrYXlhWTNHNllUMk1OMVliZW95T2RMZEhXeUo0UQ?oc=5",
-   "publicado": "2026-11-23T08:43-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado eleva expectativa de juros para 13% em 2027, mostra Focus",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOElWMkxyaVZyQU05LW82ZjVPSmRkYXMzNThqZ0hRZGFKdHg2VTJMd1ZxYUNmZkotMDFPSlY4RXczOUdPaExrZXVNZHRLN2k2azhJSDNreE9Md05IZUp0S21rbk43ZjdIbFVyanNobk1fS25rT3dBRkFGQ2NBZElpMkl6a1F2Z3hXZ3B2SkVOMy0xc2V3S1N2b2lHbzQ2aFV1ejVzYjNscV9oSVpwd2pOTElOOU92QWRYZ1Y4YUc2NA?oc=5",
-   "publicado": "2026-11-23T08:49-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Plano de investimentos da Petrobras 2027-2031 deve superar US$ 120 bi, dizem fontes",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcWxsLThCR3JGVW9IV3g3TF9leWtJRUJWZmJOMFN3V0tSLXMxRDMtY1pGb2tWZHhkTjhOTnNCRkRLUVVqbEp6aExqTkZiUkhfQzV0ZDdjakw5VEJyUEVJa1ZVb3NsY2hfNk12d2RWbUZLc0ZHMnZTQVM5azVBRTBXMkR4aEV4c0RhbzNpRHNqTE83eEpWVjVhUF9ReW03djlyTkYzdTlweUZzM1Y3QVJNSQ?oc=5",
-   "publicado": "2026-11-23T08:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
   {
    "titulo": "Boletim Focus: mercado eleva projeção do IPCA de 2026 para 5,15%",
    "fonte": "Exame",
@@ -2752,6 +2791,52 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em leve queda após ultrapassar os R$ 6 com tensão fiscal",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhOXdPSUp1cnN0LTFqRWVZenJRb2g2NkE2SlowUmQ1SFVNMnQ3cmR6aERNQmFySzhBVTY1QUNCa2xCSDFFa20yS01fLWNiVWhVWlprd0l3N014RkZ3SVJpQmFB?oc=5",
+   "publicado": "2026-11-23T17:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar a R$ 6 preocupa governo, mas Fazenda não vê recessão em 2027, só desaceleração, diz secretária",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLU04a3djTlJvVWpxQmNEdzRjNWc5QnlOOEloR2pvM3pka1RnaWdwVlF2TnY3bHFXa1dxS2N3THpvanFSV0tOT3hZMnBkZWU2d0lYendDeWpnc3BadTJadF9rMWhaaUdRTy1vRE1HZG85SjZpcXVtNnlyQ2VFVHJwU0d0R2xFdl94c1liWDZ0b3Vmc2Q0c280OFRMMkZKSF9xa1dYVmROWmRVWkQ2RVRyT2FWeWdWZDRETHlZS2ZvMHpiU2pCQjlQS1B4NmtFTnVNVmVSR3dsRG4?oc=5",
+   "publicado": "2026-11-23T17:25-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Economistas veem risco de estagflação e pedem ajuste fiscal além do plano Moretti",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-veem-risco-de-estagflacao-e-pedem-ajuste-fiscal-alem-do-plano-moretti.shtml",
+   "publicado": "2026-11-23T17:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tarcísio critica plano Moretti e diz que ajuste fiscal do governo Lula não 'ataca a raiz do problema'",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tarcisio-critica-plano-moretti-e-diz-que-ajuste-fiscal-do-governo-lula-nao-ataca-a-raiz-do-problema.shtml",
+   "publicado": "2026-11-23T17:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2781,7 +2866,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T17:08-03:00",
+ "atualizado_em": "2026-11-23T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2796,6 +2881,52 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Tarcísio critica plano Moretti e diz que ajuste fiscal do governo Lula não 'ataca a raiz do problema'",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tarcisio-critica-plano-moretti-e-diz-que-ajuste-fiscal-do-governo-lula-nao-ataca-a-raiz-do-problema.shtml",
+   "publicado": "2026-11-23T17:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Economistas veem risco de estagflação e pedem ajuste fiscal além do plano Moretti",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-veem-risco-de-estagflacao-e-pedem-ajuste-fiscal-alem-do-plano-moretti.shtml",
+   "publicado": "2026-11-23T17:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar a R$ 6 preocupa governo, mas Fazenda não vê recessão em 2027, só desaceleração, diz secretária",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLU04a3djTlJvVWpxQmNEdzRjNWc5QnlOOEloR2pvM3pka1RnaWdwVlF2TnY3bHFXa1dxS2N3THpvanFSV0tOT3hZMnBkZWU2d0lYendDeWpnc3BadTJadF9rMWhaaUdRTy1vRE1HZG85SjZpcXVtNnlyQ2VFVHJwU0d0R2xFdl94c1liWDZ0b3Vmc2Q0c280OFRMMkZKSF9xa1dYVmROWmRVWkQ2RVRyT2FWeWdWZDRETHlZS2ZvMHpiU2pCQjlQS1B4NmtFTnVNVmVSR3dsRG4?oc=5",
+   "publicado": "2026-11-23T17:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em leve queda após ultrapassar os R$ 6 com tensão fiscal",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhOXdPSUp1cnN0LTFqRWVZenJRb2g2NkE2SlowUmQ1SFVNMnQ3cmR6aERNQmFySzhBVTY1QUNCa2xCSDFFa20yS01fLWNiVWhVWlprd0l3N014RkZ3SVJpQmFB?oc=5",
+   "publicado": "2026-11-23T17:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Câmara pode votar ajuste fiscal nesta segunda-feira",
    "fonte": "Agência Brasil",
@@ -2833,7 +2964,7 @@
    "tickers": []
   },
   {
-   "titulo": "Depois de superar R$ 6, dólar passa a cair; Ibovespa segue no negativo com queda de 2% da Petrobras",
+   "titulo": "Dólar supera R$ 6, mas fecha em queda enquanto Ibovespa recua com baixa de 3% da Petrobras",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
    "publicado": "2026-11-23T16:36-03:00",
@@ -2845,18 +2976,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
-   "publicado": "2026-11-23T16:35-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Alongar a dívida agora ou esperar: o crédito com garantia real depois da eleição",
@@ -2904,19 +3023,6 @@
    "tickers": []
   },
   {
-   "titulo": "Custo Brasil corrói a eficiência interna das empresas, diz Jorge Gerdau",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/custo-brasil-corroi-a-eficiencia-interna-das-empresas-diz-jorge-gerdau/",
-   "publicado": "2026-11-23T16:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "GGBR4"
-   ]
-  },
-  {
    "titulo": "Não tem ninguém para avisar o Lula que o dólar enfraqueceu nos últimos anos por causa do cenário externo?, questiona Oriz",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOd2NuRS1sdUhRU0JDYmtsLURta0E4QWJZc0RraHczb2Y2QVpEWHRRZUMyWWQydXhZejVlLVMtemR1S2lRU2kxUU1kbDg2Q2U5dVFfQWxsV1NfenpZT2hzMHZRcTl1c3JYelFBdlpBSV9vdWoyV21ESzBOMnYtdUNSWDBlM1RhUE1SZm4xZDdQYzVTTW1vSWcxd3Fkc3AtOGNCcFl1aWxDdUlqUHVMQzMzTGRueVRoWFFfZHhvMk43VERUUjJBOEhSSDZlYTV2ZjlSWHBzNVlUdUNselNoWDV2ak1naTFJWWxrMjVNRllJVVNodWFpMDcxVFFvVTllRHFUN0lWTHdTMXHSAZcCQVVfeXFMT3FCbTBZT1F5di1ycDBTS3BKRDV6aGlmSzlXSEZmWTRxYWtNX3lPLUV5NUZQQ2ppQmo5dTdmb1ZvWElXVXBaWFN2OTItUXBIaExoQ3FSQi1Vem9nQTBzUENLX05LNm4yckhsZDNEU2d2cFZHb2EybDNoVWdRU1FRb2l5SUpSLXpyUWw4Qnp2TndBbzkxa1VGeWEwWE1UQ1I5OWEtTkpONmd0dUdlbG5qOUQ0dkFQMGdldUNPSS1Vc3lvOHdtVTlCb0l5YktlTy1PQ2Vjb05jcDd5OTRLLW4zQW9hNTYyVkJ0QW1sMUhNNzlkaXdQSjJSbEJia25qMjRvS05fWW5mbGhmWDM3RXU1OFNBN0MyOTlJ?oc=5",
@@ -2950,18 +3056,7 @@
    "tickers": []
   },
   {
-   "titulo": "Ao mercado, Durigan diz que ajuste fiscal é preciso para juros civilizados",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ2prQ0dtMFZkRS03aWo4VVA2dWstNHRCUDl2dk5vaW9MYTFmYTNic05uRU9na0thWUNCOWFJUG9qSDkxT1E2b2tEX3RwQkQwbWZVeXljclRNeGN6SjRXTF94SlZTR0VxMDlrYWRTd0FiMk1KcFFSUVhISThERFlQV2w5anNYeHVnc2FBYTdKN3E1T0lnZ2FiRm8yZFF4T3cxZnZuZ2xTS3lMUFA5MHE0elBWczJKQ2dFdW9iMkkwR1E0bW1VRVF5cjNTREs?oc=5",
-   "publicado": "2026-11-23T16:01-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Governo Lula reduz projeção de crescimento e vê inflação mais alta e dólar mais caro ao fim de 2026",
+   "titulo": "Governo Lula reduz projeção de crescimento e vê inflação mais alta e dólar mais caro em 2026",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/governo-lula-reduz-projecao-do-pib-para-este-ano-e-ve-inflacao-acima-da-meta/",
    "publicado": "2026-11-23T15:50-03:00",
@@ -2969,18 +3064,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa cai de olho no dólar e retorno do CEO da Nvidia; veja os destaques desta segunda-feira (23)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
-   "publicado": "2026-11-23T14:13-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
