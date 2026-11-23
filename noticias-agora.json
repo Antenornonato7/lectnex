@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T17:10-03:00",
+  "atualizado_em": "2026-11-23T17:13-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -335,6 +335,10 @@
     ],
     [
      "16:50",
+     164810.0
+    ],
+    [
+     "16:55",
      164810.0
     ]
    ]
@@ -736,7 +740,11 @@
     ],
     [
      "17:10",
-     5.9255
+     5.9275
+    ],
+    [
+     "17:13",
+     5.926
     ]
    ]
   },
@@ -1767,7 +1775,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.11,
     "dolar30": -0.02
    },
    {
@@ -1797,21 +1805,24 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:08",
+    "titulo": "Dólar fecha em leve queda após ultrapassar os R$ 6 com tensão fiscal",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhOXdPSUp1cnN0LTFqRWVZenJRb2g2NkE2SlowUmQ1SFVNMnQ3cmR6aERNQmFySzhBVTY1QUNCa2xCSDFFa20yS01fLWNiVWhVWlprd0l3N014RkZ3SVJpQmFB?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Tempestade perfeita? Goldman vê real atrativo, mas recomenda cautela no curto prazo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZGMxX3h3RzJyZ0dLQzVnNENBMlp3eVBRcklUTUotUGVDcERsOVJ0bzY1NjRwMnNTd29XZnRlN3lOMmFwYUc4dFVidWI4d25oVG4wOVExVVh2aS1tb0JOQmdjU1l3dVd4NUN5clR4X3AtdlA1WW5LUXU1d2x4LTFmNWM0aUstN3l0em0wM2VEeHVwUVlmX0J0UERkRmRXY2RxeDlpLXBINW9YUE5ob0NncV96Vm1mWmxWVHg4YlFyX2lkcFBKS2fSAcsBQVVfeXFMTjRJaG13TDdVLWd0YjVCNEpXWmR3dUlQWjktdzYzazNrcTR6U1FoRUF6SmcwdkhrUnZ5dHdyelZPcWtjWUZIYUJwQ05HbDcxNTFhMXJOYlY4Zy1oUUFMeEMyS1gxN3cyNDlSNTVXMWpVbGQ5VkVzeFdCQ282cWNpY090TWtMMUg3ZjQ4OTN6M2VTTWk5QlYzcWMtRGVLZzNqRmg2YmphSWxRR0RRUFpfRzl5NkpGWVpHLUppQUpHSzVpekRtUV9Jamp0NG8?oc=5",
-   "publicado": "2026-11-23T08:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Economistas elevam projeções para Selic e inflação em 2027; confira o Focus desta segunda-feira (23)",
    "fonte": "Money Times",
@@ -2752,6 +2763,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em leve queda após ultrapassar os R$ 6 com tensão fiscal",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhOXdPSUp1cnN0LTFqRWVZenJRb2g2NkE2SlowUmQ1SFVNMnQ3cmR6aERNQmFySzhBVTY1QUNCa2xCSDFFa20yS01fLWNiVWhVWlprd0l3N014RkZ3SVJpQmFB?oc=5",
+   "publicado": "2026-11-23T17:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2781,7 +2804,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T17:10-03:00",
+ "atualizado_em": "2026-11-23T17:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2796,6 +2819,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar fecha em leve queda após ultrapassar os R$ 6 com tensão fiscal",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhOXdPSUp1cnN0LTFqRWVZenJRb2g2NkE2SlowUmQ1SFVNMnQ3cmR6aERNQmFySzhBVTY1QUNCa2xCSDFFa20yS01fLWNiVWhVWlprd0l3N014RkZ3SVJpQmFB?oc=5",
+   "publicado": "2026-11-23T17:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Câmara pode votar ajuste fiscal nesta segunda-feira",
    "fonte": "Agência Brasil",
@@ -2902,19 +2937,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Custo Brasil corrói a eficiência interna das empresas, diz Jorge Gerdau",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/custo-brasil-corroi-a-eficiencia-interna-das-empresas-diz-jorge-gerdau/",
-   "publicado": "2026-11-23T16:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "GGBR4"
-   ]
   },
   {
    "titulo": "Não tem ninguém para avisar o Lula que o dólar enfraqueceu nos últimos anos por causa do cenário externo?, questiona Oriz",
