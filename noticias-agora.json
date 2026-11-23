@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T12:30-03:00",
+  "atualizado_em": "2026-11-23T12:33-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -115,7 +115,11 @@
     ],
     [
      "12:15",
-     165624.0
+     165553.0
+    ],
+    [
+     "12:18",
+     165560.0
     ]
    ]
   },
@@ -292,7 +296,11 @@
     ],
     [
      "12:30",
-     5.9661
+     5.9617
+    ],
+    [
+     "12:33",
+     5.9621
     ]
    ]
   },
@@ -766,7 +774,7 @@
     "tickers": [
      "BRKM5"
     ],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": 0.22
    },
    {
@@ -780,13 +788,26 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.07
    },
    {
     "hora": "12:16",
     "titulo": "O que explica o dólar saltar de R$ 5 para quase R$ 6 em um mês?",
     "fonte": "Valor",
     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:28",
+    "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOFh6M2xldzk3bGFlaXM2TlB0QXdUSktUNkUwZUllZnhXc0VYN3Y3MzRkVFE5NFMzWTF6UXZFWVYxN1ZnZkRWc2pKNnlGYjV4OUh5WnhJRzF1VFlLODdmN3JFcV9xMTlKbTlTbHpWTzVBZThlZVVVT1JnNGV0TkJmVXZUcDhrS01wWnJpdnd2c0hhek1ka2tVeFdCdVhlVzZpXzdRWTRkRXNtdUhmRkx1ajZR0gG3AUFVX3lxTE15SUhRT2ZySWRXMFNzX1RrOXJ3VkJVc2ltdlpPRDQ1SURLb3o3VENhY3FxZzkzMlc2d1FzYWVGeDY5MmVqMWg4V1Z6dFdodlUzQXlqS09ISkd0VVdDcnc2TmpvNXc0LTJfWFYySWRUYWg5VDRLOTMxa09YRDdtRFZKbEVuZkRxRTg1c3duVDVsakVDMGJFc1Z2T1ZtVldTeWk4WlpfdWRHa1NkaGZudElXQUROTXZrRQ?oc=5",
     "impacto": "medio",
     "ativos": [
      "WDO"
@@ -1521,6 +1542,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOFh6M2xldzk3bGFlaXM2TlB0QXdUSktUNkUwZUllZnhXc0VYN3Y3MzRkVFE5NFMzWTF6UXZFWVYxN1ZnZkRWc2pKNnlGYjV4OUh5WnhJRzF1VFlLODdmN3JFcV9xMTlKbTlTbHpWTzVBZThlZVVVT1JnNGV0TkJmVXZUcDhrS01wWnJpdnd2c0hhek1ka2tVeFdCdVhlVzZpXzdRWTRkRXNtdUhmRkx1ajZR0gG3AUFVX3lxTE15SUhRT2ZySWRXMFNzX1RrOXJ3VkJVc2ltdlpPRDQ1SURLb3o3VENhY3FxZzkzMlc2d1FzYWVGeDY5MmVqMWg4V1Z6dFdodlUzQXlqS09ISkd0VVdDcnc2TmpvNXc0LTJfWFYySWRUYWg5VDRLOTMxa09YRDdtRFZKbEVuZkRxRTg1c3duVDVsakVDMGJFc1Z2T1ZtVldTeWk4WlpfdWRHa1NkaGZudElXQUROTXZrRQ?oc=5",
+   "publicado": "2026-11-23T12:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1550,13 +1582,12 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T12:30-03:00",
+ "atualizado_em": "2026-11-23T12:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
@@ -1569,10 +1600,21 @@
    "titulo": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/23/tokenized-stocks-face-pushback-as-nyse-nasdaq-pivot-for-a-new-market-.html",
-   "publicado": "2026-11-23T12:29-03:00",
+   "publicado": "2026-11-23T12:30-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOFh6M2xldzk3bGFlaXM2TlB0QXdUSktUNkUwZUllZnhXc0VYN3Y3MzRkVFE5NFMzWTF6UXZFWVYxN1ZnZkRWc2pKNnlGYjV4OUh5WnhJRzF1VFlLODdmN3JFcV9xMTlKbTlTbHpWTzVBZThlZVVVT1JnNGV0TkJmVXZUcDhrS01wWnJpdnd2c0hhek1ka2tVeFdCdVhlVzZpXzdRWTRkRXNtdUhmRkx1ajZR0gG3AUFVX3lxTE15SUhRT2ZySWRXMFNzX1RrOXJ3VkJVc2ltdlpPRDQ1SURLb3o3VENhY3FxZzkzMlc2d1FzYWVGeDY5MmVqMWg4V1Z6dFdodlUzQXlqS09ISkd0VVdDcnc2TmpvNXc0LTJfWFYySWRUYWg5VDRLOTMxa09YRDdtRFZKbEVuZkRxRTg1c3duVDVsakVDMGJFc1Z2T1ZtVldTeWk4WlpfdWRHa1NkaGZudElXQUROTXZrRQ?oc=5",
+   "publicado": "2026-11-23T12:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1700,19 +1742,6 @@
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUmJjdTl0OVAxVVVEQTdHRmJKYVJkaE1RX2xOcmVNX1BDNllFNXVmNUV2WGR2YndRRDVSaVp3d0s2ZUkteF9yZTdGUUFiRXFFMVFPMkpvUHNqT0dWQlA1U1BXMzFPV1dTNFVKU0xLaTc4Q3pmV3J0bHpPX3hQN1hRY1JUT1hsUHkzWGdSOTZ5Q2VSWTZYT2xmcjBYNVNoNDJaWjZZX3hKeEVUdWpqdnhHWDBLVUd4dmZQQzZSczNWUkp2dTNPT0otMHR5WjdYVy1pb3A1V3RPNXlLQUhhbGZSNzlKbk5DdEFjb1pMdF85QzQ2cnRZZ3ZaUG1kZTBjQdIBjAJBVV95cUxOZDNNRlV2dlhCZGo5RVZ2MmM1d1dub3RBbFJwekduZUVxNUMxU1FIQTh6Zk5tSFRzRGMyRXg0eTlWRnRzT1pyUUIwd0dwSWNXVE9oYUdOZWw2Mm4xVnZrYkc4WjhKUXRnTERSWVk4OVA0RjMydXhIbEQza20wNEZNTTNfSkQyaFM0cDgyUk1oT3pPUnpfUF9YbUlkODJSMUY0djR2ejY4MjBxTDQwc1UxMTZKbjBSVGRYUzI3bFJ2T3E5aW1Ha2ppQWRiMHNxVWtRWVN4bFhjQ1BEb2NaQlk5QkJGNVBVbU04NTJYcWZSZVFJODFMY2czTTg1Q0xwczdXSkZWZjRNUkxDV2I1?oc=5",
    "publicado": "2026-11-23T10:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
-   "publicado": "2026-11-23T10:31-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
