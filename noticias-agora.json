@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T16:53-03:00",
+  "atualizado_em": "2026-11-23T16:55-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -323,11 +323,11 @@
     ],
     [
      "16:35",
-     164766.0
+     164734.0
     ],
     [
-     "16:38",
-     164729.0
+     "16:40",
+     164703.0
     ]
    ]
   },
@@ -712,11 +712,11 @@
     ],
     [
      "16:50",
-     5.9291
+     5.9283
     ],
     [
-     "16:53",
-     5.9287
+     "16:55",
+     5.9266
     ]
    ]
   },
@@ -1679,7 +1679,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.14,
+    "ibov30": -0.16,
     "dolar30": 0.12
    },
    {
@@ -1692,7 +1692,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.14,
+    "ibov30": -0.16,
     "dolar30": 0.12
    },
    {
@@ -1707,7 +1707,7 @@
     "tickers": [
      "GGBR4"
     ],
-    "ibov30": -0.17,
+    "ibov30": -0.19,
     "dolar30": 0.05
    },
    {
@@ -1720,7 +1720,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.17,
+    "ibov30": -0.19,
     "dolar30": 0.05
    },
    {
@@ -1735,7 +1735,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.12
+    "dolar30": 0.1
    }
   ]
  },
@@ -2722,7 +2722,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T16:53-03:00",
+ "atualizado_em": "2026-11-23T16:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2737,6 +2737,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Venda de minas de níquel brasileiras à China preocupa indústria da União Europeia",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/11/venda-de-minas-de-niquel-brasileiras-a-china-preocupa-industria-da-uniao-europeia.shtml",
+   "publicado": "2026-11-23T16:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
    "fonte": "CNBC",
@@ -2877,7 +2889,7 @@
   {
    "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB0gHQAUFVX3lxTFA0cGhXSVJaaERDWDk2eElLMklMY0xPcTczbm1aVEJsd1AwWnp3bEQzSFI4XzFETmdpdlZQQmNGbzE2OFJhUWRaeVBNNWVocjdUazdYT3NKN2V5TFdNZDBZTGg3UXB1Y0hnSW9yOElqZTZydG5jMFQzQ3N2ckx1c3dTQnY5UXV3OVY2QmNrM3RNSzBOOXJkbTNLN0JYOHVHZXY4NXVjeHExZUJpTkhhczdGMW04SWRxZHlsRHpNbUpTOEp0N0VxNldzVnVwNk9QVEE?oc=5",
    "publicado": "2026-11-23T15:33-03:00",
    "impacto": "medio",
    "ativos": [
@@ -2886,21 +2898,6 @@
    "tickers": [
     "B3SA3",
     "BRKM5"
-   ]
-  },
-  {
-   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal; Ibovespa acelera queda com piora da Petrobras",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
-   "publicado": "2026-11-23T15:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
    ]
   },
   {
