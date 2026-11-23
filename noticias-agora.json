@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T18:19-03:00",
+  "atualizado_em": "2026-11-23T18:22-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     164844.0
+     164808.0
     ]
    ]
   },
@@ -800,25 +800,15 @@
     ],
     [
      "18:20",
-     5.9268
+     5.9295
+    ],
+    [
+     "18:22",
+     5.9306
     ]
    ]
   },
   "marcadores": [
-   {
-    "hora": "09:11",
-    "titulo": "Ibovespa Futuro cai 1% no retorno do feriado com mercado de olho no fiscal",
-    "fonte": "InfoMoney",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM2M5Q0FEeWxsUGNpd1lHUjc0NjhGTkhiVlY4VkRDUUUxUTVGdjVFZm5wZ1FaUG9QT2ZrT1M5d05fNlQ0OWlUZkhpRE5VNzVjZmRVOXVRSm9lMW1EX1p5YTVTdVlqR1NlOE1XcmJieUM1d2QwQXNISkJoVDV5UjlzZzJZeFhLOHFZV1N4QmpxVDI5VFNONkQtdXg2Rm9KZzdvUC1tWVVlRjdlTjRaN3JvVzBR0gG3AUFVX3lxTE9rN29fejRfUU9SME91bGsxTW5FMXpLWEhpeE5vV2tETHBIcmpIdi1hdTA5Z3Z4di1KZk9rQ0J4N1l3YWZ0VjBRdHR5SkdqQlpLREZOeDhQb0dmWTgzSzJlU3NzV2VfSEVpZ0hGUWNEbkF2bWplbk9paEJPdTIycHlONmpkRlQ2SDlyRkxJSEk2V3NQbjlzM2tiV0lyR0VxaGpfQlJ2NVdudHVGYnlNYk84ZkJPbk95Yw?oc=5",
-    "impacto": "alto",
-    "ativos": [
-     "WIN",
-     "DI"
-    ],
-    "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.03
-   },
    {
     "hora": "09:14",
     "titulo": "Plano de investimentos da Petrobras 2027-2031 deve superar US$ 120 bi, dizem fontes",
@@ -1808,6 +1798,19 @@
     "dolar30": -0.02
    },
    {
+    "hora": "16:48",
+    "titulo": "Fazenda reduz previsão do PIB e eleva inflação para 2027",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/fazenda-reduz-previsao-do-pib-e-eleva-inflacao-para-2027",
+    "impacto": "alto",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.03
+   },
+   {
     "hora": "16:56",
     "titulo": "Custo de capital é o principal desafio para crescimento do Brasil, diz CEO do Itaú",
     "fonte": "Folha",
@@ -1905,18 +1908,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ibovespa Futuro cai 1% no retorno do feriado com mercado de olho no fiscal",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM2M5Q0FEeWxsUGNpd1lHUjc0NjhGTkhiVlY4VkRDUUUxUTVGdjVFZm5wZ1FaUG9QT2ZrT1M5d05fNlQ0OWlUZkhpRE5VNzVjZmRVOXVRSm9lMW1EX1p5YTVTdVlqR1NlOE1XcmJieUM1d2QwQXNISkJoVDV5UjlzZzJZeFhLOHFZV1N4QmpxVDI5VFNONkQtdXg2Rm9KZzdvUC1tWVVlRjdlTjRaN3JvVzBR0gG3AUFVX3lxTE9rN29fejRfUU9SME91bGsxTW5FMXpLWEhpeE5vV2tETHBIcmpIdi1hdTA5Z3Z4di1KZk9rQ0J4N1l3YWZ0VjBRdHR5SkdqQlpLREZOeDhQb0dmWTgzSzJlU3NzV2VfSEVpZ0hGUWNEbkF2bWplbk9paEJPdTIycHlONmpkRlQ2SDlyRkxJSEk2V3NQbjlzM2tiV0lyR0VxaGpfQlJ2NVdudHVGYnlNYk84ZkJPbk95Yw?oc=5",
-   "publicado": "2026-11-23T09:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Plano de investimentos da Petrobras 2027-2031 deve superar US$ 120 bi, dizem fontes",
    "fonte": "InfoMoney",
@@ -2764,6 +2755,17 @@
    "tickers": []
   },
   {
+   "titulo": "Fazenda reduz previsão do PIB e eleva inflação para 2027",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/fazenda-reduz-previsao-do-pib-e-eleva-inflacao-para-2027",
+   "publicado": "2026-11-23T16:48-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Custo de capital é o principal desafio para crescimento do Brasil, diz CEO do Itaú",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/custo-de-capital-e-o-principal-desafio-para-crescimento-do-brasil-diz-ceo-do-itau.shtml",
@@ -2884,7 +2886,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T18:19-03:00",
+ "atualizado_em": "2026-11-23T18:22-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2898,6 +2900,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Tech stocks see monster rally after Jensen Huang returns as Nvidia CEO",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
+   "publicado": "2026-11-23T18:22-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
    "fonte": "CNBC",
@@ -3004,6 +3017,17 @@
    ]
   },
   {
+   "titulo": "Fazenda reduz previsão do PIB e eleva inflação para 2027",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/fazenda-reduz-previsao-do-pib-e-eleva-inflacao-para-2027",
+   "publicado": "2026-11-23T16:48-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar supera R$ 6, mas fecha em queda enquanto Ibovespa recua com baixa de 3% da Petrobras",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
@@ -3025,29 +3049,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Fazenda eleva projeção de inflação para 2027 e vê Selic mais alta por mais tempo",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMGs3UmdXYVlQYTI0V3JwWGQxd2NRS0ItXzN2Ulh2Nk9LLXI2SGxTOWdZTFh2aG5GMkd4QnBhUFNPNTYyeDRCZ3hxMndPb1ZIdVA3ZDVYMkoyLXhiQ0ZZeFFoM0NyZXg0UzVGLV9GTjFibVBhSnlTajNNR0MyZTROMHduVVJLUU42ZU8wRHZ3X2VjTVo5RU9sWHEydFBwVDgwc0QtWjhpbE1YTnZYc2lUYUFmeURQUzQ?oc=5",
-   "publicado": "2026-11-23T16:21-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tech stocks rally after Nvidia board approves Jensen Huang's return as CEO",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
-   "publicado": "2026-11-23T16:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
