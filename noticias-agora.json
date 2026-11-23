@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T15:48-03:00",
+  "atualizado_em": "2026-11-23T15:50-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -271,11 +271,11 @@
     ],
     [
      "15:30",
-     165234.0
+     165223.0
     ],
     [
-     "15:33",
-     165323.0
+     "15:35",
+     165251.0
     ]
    ]
   },
@@ -608,11 +608,11 @@
     ],
     [
      "15:45",
-     5.9369
+     5.9317
     ],
     [
-     "15:48",
-     5.9411
+     "15:50",
+     5.9306
     ]
    ]
   },
@@ -1378,7 +1378,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.42,
+    "ibov30": 0.41,
     "dolar30": -0.74
    },
    {
@@ -1408,7 +1408,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": -0.41
+    "dolar30": -0.59
    },
    {
     "hora": "15:33",
@@ -1438,24 +1438,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "15:38",
+    "titulo": "Economistas alertam para efeito em cadeia na economia com dólar batendo em R$ 6",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMlFoQWY3RTdNd2ZKdkNndTlJQVJqbWVocXJqUlhQajV5Mlcxa204amJ4WjhFX2JuT0x3QndibUgxTGxfamlIZ1pSSDZNNjdvcmpiNXdXUXJoMmlKOXhQRDkwS2J1aTAzT1oxc241Vjg3WEZXTTFEdXVidDZnbnM1NVNVWVk5THNsRHluR1FvX0dQUFXSAZgBQVVfeXFMTm1yQW01VnVNbTZLZVlEeVl0eFpMbXpPU0tJV3lnRGdQeGQtdTc5d0ZWaW5lNUFzTGVlN0kwYVJ6NFp5cHdOd2ozemkwcUxXYWdKZFBlQW5uYjUtdEZRd2ZzeUhxcmFEZkJYYldCTUlxMFl1OC1zMXB6QjNtbW1IaEc0Uko3ZGFwUlRBaU5HblgwX2IyNGl1SHY?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ibovespa hoje acompanha ajuste fiscal, PMIs e plano da Petrobras nesta segunda, 23",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA3OVVkOTF5ZEpWcnN3dlM1MkJ2VTg4Z3Z4eGN0Vm1RYXlseEY4Yk5ZdXJTNnJUX0JYbzBscHVUT0ROMEdFUThhYXdKZjYwMkJBNjE4UnRFa3hpS2REUzBVeDFxYnV5cm1VMThr?oc=5",
-   "publicado": "2026-11-23T05:03-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
   {
    "titulo": "Estrangeiros reforçam compras de dólar futuro e pressão sobre o real continua",
    "fonte": "InfoMoney",
@@ -2398,6 +2397,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Economistas alertam para efeito em cadeia na economia com dólar batendo em R$ 6",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMlFoQWY3RTdNd2ZKdkNndTlJQVJqbWVocXJqUlhQajV5Mlcxa204amJ4WjhFX2JuT0x3QndibUgxTGxfamlIZ1pSSDZNNjdvcmpiNXdXUXJoMmlKOXhQRDkwS2J1aTAzT1oxc241Vjg3WEZXTTFEdXVidDZnbnM1NVNVWVk5THNsRHluR1FvX0dQUFXSAZgBQVVfeXFMTm1yQW01VnVNbTZLZVlEeVl0eFpMbXpPU0tJV3lnRGdQeGQtdTc5d0ZWaW5lNUFzTGVlN0kwYVJ6NFp5cHdOd2ozemkwcUxXYWdKZFBlQW5uYjUtdEZRd2ZzeUhxcmFEZkJYYldCTUlxMFl1OC1zMXB6QjNtbW1IaEc0Uko3ZGFwUlRBaU5HblgwX2IyNGl1SHY?oc=5",
+   "publicado": "2026-11-23T15:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2427,7 +2437,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T15:48-03:00",
+ "atualizado_em": "2026-11-23T15:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2441,6 +2451,28 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar hoje bate R$ 6 na máxima, mas ameniza com cenário externo",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYWVUcEYyVUJZR3VGWmgzcVdSZ0NJd0hDYW55blFkdnF0WW9mbjZuRWFpT3lKUS0xS25BSlQ4TnBVV2tGVU9XaEVpRndDN1FMRWtRWmpfUzREdFpSOU5EUThlNm9YZTFoMVc4c2hBYmZoc1Jmd0wycjk2TXo1eTdpenltUk1hMWU3b25tMV8ya0tVNEJoSF91YVYxZGPSAaIBQVVfeXFMT3lHY2Y3LVZzZ3BwUGJ5dS0tczVRX2lUQ2d5MTdSLWo1OWZTNG4zRzd4a29oQU5IajJrOGpDb3Z5bVNCREZSOVRUbUdVUXhGYkduT3ctUVFCbW5xZkkzUm1SZUpxRGZWYVhId2ItazBlS2l6MlJaZzBRZ1o0X3JzckJmYUZlUXFVU0VYMUxRdWRLa25za25PSTd4T1I5MzkwMnpR?oc=5",
+   "publicado": "2026-11-23T15:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Economistas alertam para efeito em cadeia na economia com dólar batendo em R$ 6",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMlFoQWY3RTdNd2ZKdkNndTlJQVJqbWVocXJqUlhQajV5Mlcxa204amJ4WjhFX2JuT0x3QndibUgxTGxfamlIZ1pSSDZNNjdvcmpiNXdXUXJoMmlKOXhQRDkwS2J1aTAzT1oxc241Vjg3WEZXTTFEdXVidDZnbnM1NVNVWVk5THNsRHluR1FvX0dQUFXSAZgBQVVfeXFMTm1yQW01VnVNbTZLZVlEeVl0eFpMbXpPU0tJV3lnRGdQeGQtdTc5d0ZWaW5lNUFzTGVlN0kwYVJ6NFp5cHdOd2ozemkwcUxXYWdKZFBlQW5uYjUtdEZRd2ZzeUhxcmFEZkJYYldCTUlxMFl1OC1zMXB6QjNtbW1IaEc0Uko3ZGFwUlRBaU5HblgwX2IyNGl1SHY?oc=5",
+   "publicado": "2026-11-23T15:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
    "fonte": "Estadão",
