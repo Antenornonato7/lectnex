@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T12:55-03:00",
+  "atualizado_em": "2026-11-23T12:58-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -135,7 +135,11 @@
     ],
     [
      "12:40",
-     165278.0
+     165201.0
+    ],
+    [
+     "12:43",
+     165143.0
     ]
    ]
   },
@@ -332,7 +336,11 @@
     ],
     [
      "12:55",
-     5.9705
+     5.9763
+    ],
+    [
+     "12:58",
+     5.9726
     ]
    ]
   },
@@ -832,7 +840,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.27,
     "dolar30": 0.12
    },
    {
@@ -846,7 +854,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.08
+    "dolar30": 0.18
    },
    {
     "hora": "12:40",
@@ -858,6 +866,21 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:40",
+    "titulo": "Braskem fecha acordo com credores envolvendo capitalização de US$ 4,9 bilhões",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/negocios/braskem-fecha-acordo-credores-capitalizacao/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BRKM5"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1609,6 +1632,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Braskem fecha acordo com credores envolvendo capitalização de US$ 4,9 bilhões",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/negocios/braskem-fecha-acordo-credores-capitalizacao/",
+   "publicado": "2026-11-23T12:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
   }
  ],
  "enviadas": [
@@ -1638,7 +1674,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T12:55-03:00",
+ "atualizado_em": "2026-11-23T12:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1653,6 +1689,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Braskem fecha acordo com credores envolvendo capitalização de US$ 4,9 bilhões",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/negocios/braskem-fecha-acordo-credores-capitalizacao/",
+   "publicado": "2026-11-23T12:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
+  },
   {
    "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
    "fonte": "Estadão",
@@ -1787,17 +1836,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar bate R$ 6: passagem, hospedagem e compras, como planejar uma viagem ao exterior?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVHlTdHFQVzVDMG0tcnMxR3FnQ0NzV1J0eUlJMjR2S19JcDNlTjNOTVdpRGFZVk84RHFpZl92cGpnZ2twTTkwZVJPdlFUZXlWY29oOUxmcXBQR0hnV0NEeGMySDRKWWh4eFBxTDBXcEdvVm9fOXRfLTRCd0ZKSGRLWDIyaVdxYXJuSEd5cVpJd084dDBRSjk4WDE3TmFrRXpxam5DN1BMSTJ0VzA3QUtHempJcWNuUVVYQ2IxeDFnOVE?oc=5",
-   "publicado": "2026-11-23T10:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
