@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T10:45-03:00",
+  "atualizado_em": "2026-11-23T10:48-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -31,7 +31,11 @@
     ],
     [
      "10:30",
-     164334.0
+     164518.0
+    ],
+    [
+     "10:33",
+     164557.0
     ]
    ]
   },
@@ -124,7 +128,11 @@
     ],
     [
      "10:45",
-     5.9875
+     5.9852
+    ],
+    [
+     "10:48",
+     5.9825
     ]
    ]
   },
@@ -363,7 +371,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.31
    },
    {
     "hora": "10:24",
@@ -387,6 +395,20 @@
     "impacto": "alto",
     "ativos": [
      "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:43",
+    "titulo": "Tesouro volta a abrir prêmio com dólar a R$ 6 antes de votação fiscal; IPCA+ 2032 chega a 7,93%",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNWtFSTlwcDZTem1FWW9vb2JnNGtwMHhrRWxtczRmUE5jSWlXWU8tN0JHa2dQUkNWejhTYTN0Q1pLcGJfdlBjcnlUM3FHbHNwb21XSi1MMWdwNHZzd3dzVXk1a3AtSXYzanRWNnJoNUh1NGFlLXY5blBtd3l2LU1pbk5VQTRHMmYwc3hFUXRUb3RyZS01RkdIUHhQMlBZdTA1V1o0X3M3ZHp2UTA3WlRPTXZpdkRGRmppckEtd3RTaE53MmZpbjZvT0N0a01ieWQzZGNZSGhZd0otWUlxR3hMM3BtTdIB6AFBVV95cUxOWEdCVHBkNTNXbjNiMjV5ZHZmT3AyRnhVeEZmM0tSSXRfSU1aNVIzOHFQWXRUWTYyS0J6MERXSmVJWktRYkYxX2w4UmdlZUdZdDBHbFAxS1pUZFBYV2JuazNqdHE1djZ2Q2lhcHBGQWNEYkdfYUlJRVI3Vk1WTm1SR3FsTlp5QUFXa2NtRWp2ZzBpMzdKeHBlZENCQTR0WFluMHM5ckRURktrTTdOdDdYdDYtdG1GaWJWMjVjcWZLd19iaHUzUVYtZTdiMTk5TVB4VjRvenQ0dnhIdjJVTDBOdWs0VGJpSHNs?oc=5",
+    "impacto": "alto",
+    "ativos": [
      "WDO",
      "DI"
     ],
@@ -921,6 +943,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Tesouro volta a abrir prêmio com dólar a R$ 6 antes de votação fiscal; IPCA+ 2032 chega a 7,93%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNWtFSTlwcDZTem1FWW9vb2JnNGtwMHhrRWxtczRmUE5jSWlXWU8tN0JHa2dQUkNWejhTYTN0Q1pLcGJfdlBjcnlUM3FHbHNwb21XSi1MMWdwNHZzd3dzVXk1a3AtSXYzanRWNnJoNUh1NGFlLXY5blBtd3l2LU1pbk5VQTRHMmYwc3hFUXRUb3RyZS01RkdIUHhQMlBZdTA1V1o0X3M3ZHp2UTA3WlRPTXZpdkRGRmppckEtd3RTaE53MmZpbjZvT0N0a01ieWQzZGNZSGhZd0otWUlxR3hMM3BtTdIB6AFBVV95cUxOWEdCVHBkNTNXbjNiMjV5ZHZmT3AyRnhVeEZmM0tSSXRfSU1aNVIzOHFQWXRUWTYyS0J6MERXSmVJWktRYkYxX2w4UmdlZUdZdDBHbFAxS1pUZFBYV2JuazNqdHE1djZ2Q2lhcHBGQWNEYkdfYUlJRVI3Vk1WTm1SR3FsTlp5QUFXa2NtRWp2ZzBpMzdKeHBlZENCQTR0WFluMHM5ckRURktrTTdOdDdYdDYtdG1GaWJWMjVjcWZLd19iaHUzUVYtZTdiMTk5TVB4VjRvenQ0dnhIdjJVTDBOdWs0VGJpSHNs?oc=5",
+   "publicado": "2026-11-23T10:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -955,7 +989,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T10:45-03:00",
+ "atualizado_em": "2026-11-23T10:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -969,6 +1003,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Tesouro volta a abrir prêmio com dólar a R$ 6 antes de votação fiscal; IPCA+ 2032 chega a 7,93%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNWtFSTlwcDZTem1FWW9vb2JnNGtwMHhrRWxtczRmUE5jSWlXWU8tN0JHa2dQUkNWejhTYTN0Q1pLcGJfdlBjcnlUM3FHbHNwb21XSi1MMWdwNHZzd3dzVXk1a3AtSXYzanRWNnJoNUh1NGFlLXY5blBtd3l2LU1pbk5VQTRHMmYwc3hFUXRUb3RyZS01RkdIUHhQMlBZdTA1V1o0X3M3ZHp2UTA3WlRPTXZpdkRGRmppckEtd3RTaE53MmZpbjZvT0N0a01ieWQzZGNZSGhZd0otWUlxR3hMM3BtTdIB6AFBVV95cUxOWEdCVHBkNTNXbjNiMjV5ZHZmT3AyRnhVeEZmM0tSSXRfSU1aNVIzOHFQWXRUWTYyS0J6MERXSmVJWktRYkYxX2w4UmdlZUdZdDBHbFAxS1pUZFBYV2JuazNqdHE1djZ2Q2lhcHBGQWNEYkdfYUlJRVI3Vk1WTm1SR3FsTlp5QUFXa2NtRWp2ZzBpMzdKeHBlZENCQTR0WFluMHM5ckRURktrTTdOdDdYdDYtdG1GaWJWMjVjcWZLd19iaHUzUVYtZTdiMTk5TVB4VjRvenQ0dnhIdjJVTDBOdWs0VGJpSHNs?oc=5",
+   "publicado": "2026-11-23T10:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
    "fonte": "CNBC",
@@ -999,18 +1045,6 @@
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
    "publicado": "2026-11-23T10:31-03:00",
    "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-   "publicado": "2026-11-23T10:28-03:00",
-   "impacto": "medio",
    "ativos": [
     "WIN",
     "WDO"
