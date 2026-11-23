@@ -41,7 +41,8 @@ def ler_token():
     bruto = base64.b64decode(j['content'])
     try:
         return json.loads(AESGCM(chave()).decrypt(bruto[:12], bruto[12:], None)), j['sha']
-    except Exception:   # InvalidTag: o arquivo foi cifrado com outro TIKTOK_CLIENT_SECRET
+    except Exception as e:   # InvalidTag: o arquivo foi cifrado com outro TIKTOK_CLIENT_SECRET
+        ig.note('warning', f'TikTok: token não abriu ({e.__class__.__name__}: {str(e)[:120]}; {len(bruto)} bytes)')
         return {'_invalido': True}, j['sha']
 
 
