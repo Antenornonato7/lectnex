@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T11:00-03:00",
+  "atualizado_em": "2026-11-23T11:03-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -43,7 +43,11 @@
     ],
     [
      "10:45",
-     164812.0
+     164848.0
+    ],
+    [
+     "10:48",
+     164882.0
     ]
    ]
   },
@@ -148,7 +152,11 @@
     ],
     [
      "11:00",
-     5.9681
+     5.9606
+    ],
+    [
+     "11:03",
+     5.9606
     ]
    ]
   },
@@ -400,7 +408,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.32,
     "dolar30": -0.18
    },
    {
@@ -430,7 +438,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.49
+    "dolar30": -0.61
    },
    {
     "hora": "10:41",
@@ -1211,7 +1219,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T11:00-03:00",
+ "atualizado_em": "2026-11-23T11:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1270,17 +1278,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa tem queda forte com recuo de blue chips na contramão de Wall Street",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVWcyWWZjd1AzSFZOUjRFU2J2Q2hpMGZGbDVOSkJLV25pMjZOTi1xWF85cHFQS194dzBPOHRvaGlyclBiTUdjRGo4WE9fRlZnSzEyNW05aUF2XzN5Q0pwUGpOVnY5ZzBiVndwMzlCOG5pVGJiUkVDUzRmdGJlcjdYY3BoY2VEajhNNFpQQ2d0dU9VWmtKb1VJZDRZaUFFdHk2LXJiUS1zVzRITUgyYmQtVFhQdXJjM0dWQ0lMaV9ZN01yVENhbThheHNnXzdpdm_SAd4BQVVfeXFMUGJXYUR1emZrZUxHMng5c1FEOFRmVkxoeVN5U2xKbU5RZEpkTEMyT1k3TGk0bnl4LXdvbGtfMXQyTzhFaGplZnlsM2NBTTRsX1FHUUJxZmJxb1BRaWNDOEFuYjRLVWpNbHZNb1N0MW1oVnVPbUxJYUlBa3Rwc3p5YThnMld1Y05IaGZuckk3b0xoMDk0b0FCTXUxSC1YNUtYTmh4YzBsMkxacGUxWVN0SDJfWXdSWkM1eUdoOVRJYVBVcHpfdmIxMXF4TEcwcnJQbTkwVnBUc2hYemR4a1pR?oc=5",
-   "publicado": "2026-11-23T10:45-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
@@ -1366,6 +1363,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar supera R$ 6 com votação de pacote fiscal e aversão global ao risco",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-supera-r-598-com-votacao-de-pacote-fiscal-e-aversao-global-ao-risco.shtml",
+   "publicado": "2026-11-23T09:44-03:00",
+   "impacto": "alto",
+   "ativos": [
     "WDO",
     "DI"
    ],
