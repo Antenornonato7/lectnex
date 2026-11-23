@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T16:30-03:00",
+  "atualizado_em": "2026-11-23T16:33-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -307,7 +307,11 @@
     ],
     [
      "16:15",
-     164993.0
+     164998.0
+    ],
+    [
+     "16:18",
+     164957.0
     ]
    ]
   },
@@ -676,7 +680,11 @@
     ],
     [
      "16:30",
-     5.928
+     5.929
+    ],
+    [
+     "16:33",
+     5.9295
     ]
    ]
   },
@@ -1583,7 +1591,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.03,
     "dolar30": -0.1
    },
    {
@@ -1597,7 +1605,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.05
+    "dolar30": 0.06
    },
    {
     "hora": "16:03",
@@ -1610,13 +1618,26 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.05
+    "dolar30": 0.06
    },
    {
     "hora": "16:08",
     "titulo": "Não tem ninguém para avisar o Lula que o dólar enfraqueceu nos últimos anos por causa do cenário externo?, questiona Oriz",
     "fonte": "Valor",
     "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOd2NuRS1sdUhRU0JDYmtsLURta0E4QWJZc0RraHczb2Y2QVpEWHRRZUMyWWQydXhZejVlLVMtemR1S2lRU2kxUU1kbDg2Q2U5dVFfQWxsV1NfenpZT2hzMHZRcTl1c3JYelFBdlpBSV9vdWoyV21ESzBOMnYtdUNSWDBlM1RhUE1SZm4xZDdQYzVTTW1vSWcxd3Fkc3AtOGNCcFl1aWxDdUlqUHVMQzMzTGRueVRoWFFfZHhvMk43VERUUjJBOEhSSDZlYTV2ZjlSWHBzNVlUdUNselNoWDV2ak1naTFJWWxrMjVNRllJVVNodWFpMDcxVFFvVTllRHFUN0lWTHdTMXHSAZcCQVVfeXFMT3FCbTBZT1F5di1ycDBTS3BKRDV6aGlmSzlXSEZmWTRxYWtNX3lPLUV5NUZQQ2ppQmo5dTdmb1ZvWElXVXBaWFN2OTItUXBIaExoQ3FSQi1Vem9nQTBzUENLX05LNm4yckhsZDNEU2d2cFZHb2EybDNoVWdRU1FRb2l5SUpSLXpyUWw4Qnp2TndBbzkxa1VGeWEwWE1UQ1I5OWEtTkpONmd0dUdlbG5qOUQ0dkFQMGdldUNPSS1Vc3lvOHdtVTlCb0l5YktlTy1PQ2Vjb05jcDd5OTRLLW4zQW9hNTYyVkJ0QW1sMUhNNzlkaXdQSjJSbEJia25qMjRvS05fWW5mbGhmWDM3RXU1OFNBN0MyOTlJ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.05
+   },
+   {
+    "hora": "16:13",
+    "titulo": "Os riscos do dólar a R$ 6 para a economia",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaWxLNGE5TktOa1ZLcTNMMTJPQldyeEVGRF85MHFianlFZWkxZG1CcVYzdVVrdDhtTEJNN282VG4tM3p0dkNPSTktYjRkS2pLRzRmZDRLNWVSQUUyWGo3Tlo4TGFWLXl6SHNPVklaVGs2OTVvSlpGdHVvU3ZNYXh2SHFpbjBiYjZVZVBOTNIBmwFBVV95cUxQUHkyenlYWVc2MldBdGVaZkFpcW5ONF85UDJkMjlfQXFCbU1uX0tqOThDc1hlWVkyQ0FOZE5zaXRsNEZyNXA0U2hZWlFvUXpJTUFuWVk1Rm9WNzRaUU5HMUJvNzFDOFU3M19wVXA2VGlzUndHc0dBMHczaGw2R3A4MFBwQVctb0I2UWk2N2FheXdfcS03N0h6RlhPMA?oc=5",
     "impacto": "medio",
     "ativos": [
      "WDO"
@@ -1642,18 +1663,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
-   "publicado": "2026-11-23T07:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ibovespa hoje enfrenta novo teste com dados dos EUA e projeções de juros e inflação no Brasil",
    "fonte": "Estadão",
@@ -2581,6 +2590,17 @@
    "tickers": []
   },
   {
+   "titulo": "Os riscos do dólar a R$ 6 para a economia",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaWxLNGE5TktOa1ZLcTNMMTJPQldyeEVGRF85MHFianlFZWkxZG1CcVYzdVVrdDhtTEJNN282VG4tM3p0dkNPSTktYjRkS2pLRzRmZDRLNWVSQUUyWGo3Tlo4TGFWLXl6SHNPVklaVGs2OTVvSlpGdHVvU3ZNYXh2SHFpbjBiYjZVZVBOTNIBmwFBVV95cUxQUHkyenlYWVc2MldBdGVaZkFpcW5ONF85UDJkMjlfQXFCbU1uX0tqOThDc1hlWVkyQ0FOZE5zaXRsNEZyNXA0U2hZWlFvUXpJTUFuWVk1Rm9WNzRaUU5HMUJvNzFDOFU3M19wVXA2VGlzUndHc0dBMHczaGw2R3A4MFBwQVctb0I2UWk2N2FheXdfcS03N0h6RlhPMA?oc=5",
+   "publicado": "2026-11-23T16:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Fazenda eleva projeção de inflação para 2027 e vê Selic mais alta por mais tempo",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMGs3UmdXYVlQYTI0V3JwWGQxd2NRS0ItXzN2Ulh2Nk9LLXI2SGxTOWdZTFh2aG5GMkd4QnBhUFNPNTYyeDRCZ3hxMndPb1ZIdVA3ZDVYMkoyLXhiQ0ZZeFFoM0NyZXg0UzVGLV9GTjFibVBhSnlTajNNR0MyZTROMHduVVJLUU42ZU8wRHZ3X2VjTVo5RU9sWHEydFBwVDgwc0QtWjhpbE1YTnZYc2lUYUFmeURQUzQ?oc=5",
@@ -2620,7 +2640,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T16:30-03:00",
+ "atualizado_em": "2026-11-23T16:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2655,6 +2675,17 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Os riscos do dólar a R$ 6 para a economia",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaWxLNGE5TktOa1ZLcTNMMTJPQldyeEVGRF85MHFianlFZWkxZG1CcVYzdVVrdDhtTEJNN282VG4tM3p0dkNPSTktYjRkS2pLRzRmZDRLNWVSQUUyWGo3Tlo4TGFWLXl6SHNPVklaVGs2OTVvSlpGdHVvU3ZNYXh2SHFpbjBiYjZVZVBOTNIBmwFBVV95cUxQUHkyenlYWVc2MldBdGVaZkFpcW5ONF85UDJkMjlfQXFCbU1uX0tqOThDc1hlWVkyQ0FOZE5zaXRsNEZyNXA0U2hZWlFvUXpJTUFuWVk1Rm9WNzRaUU5HMUJvNzFDOFU3M19wVXA2VGlzUndHc0dBMHczaGw2R3A4MFBwQVctb0I2UWk2N2FheXdfcS03N0h6RlhPMA?oc=5",
+   "publicado": "2026-11-23T16:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -2737,17 +2768,6 @@
    "tickers": []
   },
   {
-   "titulo": "Economistas alertam para efeito em cadeia na economia com dólar batendo em R$ 6",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMlFoQWY3RTdNd2ZKdkNndTlJQVJqbWVocXJqUlhQajV5Mlcxa204amJ4WjhFX2JuT0x3QndibUgxTGxfamlIZ1pSSDZNNjdvcmpiNXdXUXJoMmlKOXhQRDkwS2J1aTAzT1oxc241Vjg3WEZXTTFEdXVidDZnbnM1NVNVWVk5THNsRHluR1FvX0dQUFXSAZgBQVVfeXFMTm1yQW01VnVNbTZLZVlEeVl0eFpMbXpPU0tJV3lnRGdQeGQtdTc5d0ZWaW5lNUFzTGVlN0kwYVJ6NFp5cHdOd2ozemkwcUxXYWdKZFBlQW5uYjUtdEZRd2ZzeUhxcmFEZkJYYldCTUlxMFl1OC1zMXB6QjNtbW1IaEc0Uko3ZGFwUlRBaU5HblgwX2IyNGl1SHY?oc=5",
-   "publicado": "2026-11-23T15:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
@@ -2762,37 +2782,35 @@
    ]
   },
   {
-   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal; Ibovespa acelera queda com piora da Petrobras",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
-   "publicado": "2026-11-23T15:29-03:00",
-   "impacto": "alto",
+   "titulo": "Braskem (BRKM5) dispara com acordo com credores no radar; Petrobras pode aportar US$ 1,3 bilhão, diz jornal",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbExoYXE4bjJtcUtYRzRSYURuMXpUb1RHME1OWl9GQnJiVkl4U21DYWNJdTJCeWw4dXNsLXNPVTh1T0xTcEZ1dVJUeXJad1l6UjJwSlZwMTNyeDJKc3pDMUluMnR5d1VSSzFSUDlOZVdqSTE0VVhfeU1pUENDSTRmLVlNczBjWjRnSVN4SGVuMzBQMnNyR3VLQldCRnl3YTBwS1JORkdPOGFEaFBVUWRLME9GeWJlYkJWXzNDZFBib1RRZVlwQ3dkbHl5S3plX3ZOdlBR?oc=5",
+   "publicado": "2026-11-23T15:23-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
+    "WIN"
    ],
    "tickers": [
+    "BRKM5",
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Ministério da Fazenda prevê crescimento menor e mais inflação em 2026 e 2027",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObVZKY0JVdm1DeXY5aHVVUTBnaXI3YVUtZFI4dXhLSTEzd2pyUEFpLU5MZ0Z5U2NCeW5HaG5OaGgxd0NxbUMzT09jMllMYi1NbjBnSnlrV01pS1RmM1FBQzlfNW4zMm9JZTg2QTJCU0xodEp0bE9WRXNRTGxsTWFELWR1akttSFMzV0x5aVc2VXloaDhfaVlQQm9hbEtKcFdaTVNKbmtybkZvNGR1WjRlZ0R1Nmg1Z9IBuwFBVV95cUxPSm1FM2NNdnFhN0Jfb2EyUTVIMjZTNjkxUHdYVm9jZzRZOEF4amdXYjZoMVdCWDJFSFlwdUpFM0xWQk5KTVg3ZFlOYlAtNjB6Z3dmcklzZGtCNnczR25iQmZjRlg3NkllQmY2VHVlU1RjdldGOEtGRTdNalMwYXZ5WTVlZnZQWDZhNGY3QmlHcElKWWJwanltQV9fUzBRNHJXeTE2Mk55RXJCck9vZVZveFA3eVJCNjlFUnY0?oc=5",
+   "publicado": "2026-11-23T15:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Dólar dispara no exterior com apostas em alta de juros pelo Fed e recuperação de ações de IA",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSjFvOHA5eWtTMFBIaFJsUzloSFVkNEllaXJSb3hNYzBodmQ5ZmpLR1B2Yk9ESXdBN2VEN0tKVGZxSmZkQVNCSFNUZmFsTWZ6eWRMQ1d5NXVXeVoxZkxrRGJhLVBGdmk3Ri1KTW5OVmNvOGtGOHM4eFJzcUstMlFmOHFKX2Njck9CTkJIM0d2ZWt5cS1naUtiUjZza1RCeUVFck1Hc19YQ2JISTVpbkRCRko3VkNIUzF4Ty1xQUlNcFpRemJQa1k1UzY5TF9GQjVSTmxjaUVIcU1KYUljU2fSAewBQVVfeXFMT3g4bkhFeXBHSHlhTEJmRDlyZ1dDbW15ZnowcDhrdEtxMVRobHRPQjEtUGhNNUZaZUJtRDk1Vk5uMThIWUhLS1lJMG9rQ2l0c3gzcTRleDZsdGJPR0VuTUVDOS1UeXl6eFV1QnFvbWtnLVgxM2pwcjQyNHFlU0dZNlRkUE5Uc3NuQU15WG9NbDJwZGxvM1lpRUdBd2V5cXRucXhfalJ5S3RCcnlxTmdOeks2dEZCSW1WZ0tBXzI3dG5NTFdFdHVTWkRYemJGYUpYTEVLWDQtZ2s2WUFyTnR5OTAyaHNQV0UwRnFoZkM?oc=5",
    "publicado": "2026-11-23T14:47-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe após bater R$ 6 com política fiscal no radar; Bolsa cai",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVGI2ekpOSmxXbFVBYzYwZjNreXI3MGcwX0NVT29NSWRQTTVVb05YLXB5YlRwNXJDdW1NSFgxbVdTdFJ5OHpzRHlscmw4SzF1b0xFT2lzQTQxZ2lGUndKQjVOYXV6R2dsaGtwWFdSWGluX0dfUmlnNGhfY214OFZMeVJrR3NCQkt1S3BDRlp4R1JjeVl1MnpzM1RBR1BXbWo5NlRYUWpn?oc=5",
-   "publicado": "2026-11-23T14:44-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
