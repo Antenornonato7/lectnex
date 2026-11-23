@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T12:20-03:00",
+  "atualizado_em": "2026-11-23T12:23-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -107,7 +107,11 @@
     ],
     [
      "12:05",
-     165717.0
+     165622.0
+    ],
+    [
+     "12:08",
+     165582.0
     ]
    ]
   },
@@ -276,7 +280,11 @@
     ],
     [
      "12:20",
-     5.9606
+     5.9611
+    ],
+    [
+     "12:23",
+     5.9601
     ]
    ]
   },
@@ -735,7 +743,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": 0.26
    },
    {
@@ -751,13 +759,26 @@
      "BRKM5"
     ],
     "ibov30": null,
-    "dolar30": 0.17
+    "dolar30": 0.18
    },
    {
     "hora": "12:07",
     "titulo": "Dólar a R$ 6 e a armadilha de tentar proteger o patrimônio tarde demais",
     "fonte": "InfoMoney",
     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWko4eW9IQ0FCdjhvNmE3elBHQjFCSHFOM2UySEQxVVZQUnFCc09sWjNtMXdiQ3ZydjE2LTVQOVRBU0NwS3NlNEJxc3pGSE4xWkpsNU85RmlhbnQtckV3U09GYlV1MklOMkNTSmlVYlkyYlk3Zk93ZlR1VmtaZXA3Wk5oYUNENGtldTgyalNjZllmT0RLSnRvUXhXcy1QM0tsZ2dTaFE1b2VIc3dqN0RzazFfb0Y3OVdXZUFwS1N4MF9PTklwUWsyaNIBzgFBVV95cUxNQ3FKRWdzWWE4QXZBSG9nUGlkTEZmdWM3ckpnNllqRWRaWXZPRFJzVGhvb2pOQXRiQzNTRFhQY1QxNWtSOG1zNFdKYmFQZ20wSUh5WC1XRlNGbDhDMU1NclF2Nm9hUG1Ddy1peTFabldfanRsbHk3a21mb09RdDdteXVJN0Q4eGtLRmUtQW9mVmx4Yk1jTTlLaVdqcnpDeFNubXRxTHcwSC1JYkYtc1NVMnNKUno1TlVpOGg1NHBEaXlCX2VsTWtUY2xGdjN2QQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:16",
+    "titulo": "O que explica o dólar saltar de R$ 5 para quase R$ 6 em um mês?",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
     "impacto": "medio",
     "ativos": [
      "WDO"
@@ -1481,6 +1502,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "O que explica o dólar saltar de R$ 5 para quase R$ 6 em um mês?",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
+   "publicado": "2026-11-23T12:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1510,7 +1542,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T12:20-03:00",
+ "atualizado_em": "2026-11-23T12:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1533,6 +1565,17 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "O que explica o dólar saltar de R$ 5 para quase R$ 6 em um mês?",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVEItX08wQU1XR3FlX3gxS3JlY1hZNndVU3k3UFhZc29DbzFmakZjSXlrVVl1Q29rODhYYjlZZklWX1MzYkV4TFBJZHhlZHkwcEtzS3N2b0lULV9Mb0pQeGRhRjByWWUzd2ZMWEU5Q2VvVDk5dG9MaVRrejM0LUxfZ2s1V3F5U3JaRzZHUk1ld0kzQjVoQkxkejU1blpCOThlQXRCcDBGQXNxSXFuWDMzWWIyYkjSAcMBQVVfeXFMTjNTV2dHUTE3RDUyV0lYSjhUaU8yZXpFYmlUY3NpUHB5RDRPaFdVS3FmZ0V4emNIQkJOdFN0Qmp1ZndGVkdQQmUzUFIwSGhnNUZwSWo1NEtRQ2xDVEtvbWZ5MC1FYnZpZEZOc2wta3hGOUJrXzQzN3N2ZVhEM0R6WjVlTXBUc0otVUxVekNubVFnU0RRZ2FoWko5X2ZGdDJLUl9CY2FUbU43WEVxSEJIamVIQVBvSkNudGI0SmZlNFJMbllv?oc=5",
+   "publicado": "2026-11-23T12:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1666,18 +1709,6 @@
    "ativos": [
     "WIN",
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeEM4ckUwNnZEZktwWFhXZUpFTEkyc01TeG95TFF5YTZlNXJzWXZJZVlvTG5hYnd4ZUZrYldOb1lIZzVOWXVLdVRiUWZpQ1JKeDhHN3ppU0JIMmxNLUVONFA1aDdKbVFLYVBqUXBoWmJCOHd1WXpHX2tNc1hzVjJfZzlCUERUdVRqUkpZQUhDNXRnM0VHUGUxNNIBngFBVV95cUxPQ0JBdXh2bDZxM2tPYmtLWDZ6cDhKV1NLXzJQWTJseHRraEFsajFWQUhaZFlKbE8wTFhwUEZUVjdNMmtMQmZ2ODdtQ2RzVjBMUllTZkRITkVWUUozWjMtTTlNcElOUE1FdFJlRkJQajVlQ3A4am42b0RxazEwci1VSmNYZ0oxWExwWFV3RVBfcERHa1ZVQVBrODJHX3Rsdw?oc=5",
-   "publicado": "2026-11-23T10:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "DI"
    ],
    "tickers": []
