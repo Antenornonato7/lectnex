@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T14:38-03:00",
+  "atualizado_em": "2026-11-23T15:08-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -215,11 +215,35 @@
     ],
     [
      "14:20",
+     164530.0
+    ],
+    [
+     "14:25",
+     164620.0
+    ],
+    [
+     "14:30",
+     164661.0
+    ],
+    [
+     "14:35",
      164509.0
     ],
     [
-     "14:23",
-     164491.0
+     "14:40",
+     164376.0
+    ],
+    [
+     "14:45",
+     164240.0
+    ],
+    [
+     "14:50",
+     164294.0
+    ],
+    [
+     "14:53",
+     164287.0
     ]
    ]
   },
@@ -496,11 +520,35 @@
     ],
     [
      "14:35",
-     5.9873
+     5.9867
     ],
     [
-     "14:38",
+     "14:40",
+     5.9908
+    ],
+    [
+     "14:45",
+     5.9988
+    ],
+    [
+     "14:50",
+     5.9982
+    ],
+    [
+     "14:55",
+     5.9967
+    ],
+    [
+     "15:00",
      5.9882
+    ],
+    [
+     "15:05",
+     5.9781
+    ],
+    [
+     "15:08",
+     5.9797
     ]
    ]
   },
@@ -1179,13 +1227,72 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.2
    },
    {
     "hora": "14:30",
     "titulo": "Copom mantém previsão da taxa básica de juros para 13% em 2017",
     "fonte": "Agência Brasil",
     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTWVzMENZeWhlaHJ1MWRBaUQ5VDRCOHdTbGh6bVNNOXNtQk0tamVkeWlKM29kMk5IT2xKWFloMVB6eC1NUnNVNFpabTBfRE9tQ2Y5V0dLV0JhZ3F3Rzc5R2ZQckJMdFRHbldSWl9VVTBjWndjU2h1VzBVUnBKcldwclNValhKLXpvN1hjRDN6Zl9NZGFzMHNMMXlhRjJCXzlQZUUxSTdKUTNlazljUmNlOFlXM3pkcjM2YnpuMlIwTmFOU0xJa24zVWs4MnQ3M3Y5NnNBZmF3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.2
+   },
+   {
+    "hora": "14:47",
+    "titulo": "Hapvida derrete 6% e lidera destaques negativos do Ibovespa; Magalu dispara",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2d3UEFSLTJVSnhQb0d6VEJTQnV0QXRoMWR0OE15M3lBd3FNRGM4TF9KYkVMM0htQ3k1OEdXNjNVSDNZeHNPS3RaVGFRZ2JVVE1GdGxtNDFvMGlLR0pwQ3VFUkVqUG84UDFUQ04xOWR2VTROVjRTNWVUMFFKbzhkWjBDWjc2RW4xMXpyZGVuaUh6bUpoeGI5ODlxS2ZLbVdIanFZS040NHZSNDlWbGVhT1Z0QzdNNTRqQ09nSGd0bzk4eG52NzBDWE42bldFUWdWXzdOd1lGYw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "HAPV3",
+     "MGLU3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:47",
+    "titulo": "Dólar dispara no exterior com apostas em alta de juros pelo Fed e recuperação de ações de IA",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSjFvOHA5eWtTMFBIaFJsUzloSFVkNEllaXJSb3hNYzBodmQ5ZmpLR1B2Yk9ESXdBN2VEN0tKVGZxSmZkQVNCSFNUZmFsTWZ6eWRMQ1d5NXVXeVoxZkxrRGJhLVBGdmk3Ri1KTW5OVmNvOGtGOHM4eFJzcUstMlFmOHFKX2Njck9CTkJIM0d2ZWt5cS1naUtiUjZza1RCeUVFck1Hc19YQ2JISTVpbkRCRko3VkNIUzF4Ty1xQUlNcFpRemJQa1k1UzY5TF9GQjVSTmxjaUVIcU1KYUljU2fSAewBQVVfeXFMT3g4bkhFeXBHSHlhTEJmRDlyZ1dDbW15ZnowcDhrdEtxMVRobHRPQjEtUGhNNUZaZUJtRDk1Vk5uMThIWUhLS1lJMG9rQ2l0c3gzcTRleDZsdGJPR0VuTUVDOS1UeXl6eFV1QnFvbWtnLVgxM2pwcjQyNHFlU0dZNlRkUE5Uc3NuQU15WG9NbDJwZGxvM1lpRUdBd2V5cXRucXhfalJ5S3RCcnlxTmdOeks2dEZCSW1WZ0tBXzI3dG5NTFdFdHVTWkRYemJGYUpYTEVLWDQtZ2s2WUFyTnR5OTAyaHNQV0UwRnFoZkM?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:00",
+    "titulo": "Gerdau: Juro é definido no mercado; não há governo que consiga comandar esse processo",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/gerdau-juro-e-definido-no-mercado-nao-ha-governo-que-consiga-comandar-esse-processo/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "GGBR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:02",
+    "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fazenda-reduz-projecao-de-crescimento-para-o-ano-e-ve-alta-do-dolar-e-inflacao.shtml",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -2085,6 +2192,57 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Hapvida derrete 6% e lidera destaques negativos do Ibovespa; Magalu dispara",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2d3UEFSLTJVSnhQb0d6VEJTQnV0QXRoMWR0OE15M3lBd3FNRGM4TF9KYkVMM0htQ3k1OEdXNjNVSDNZeHNPS3RaVGFRZ2JVVE1GdGxtNDFvMGlLR0pwQ3VFUkVqUG84UDFUQ04xOWR2VTROVjRTNWVUMFFKbzhkWjBDWjc2RW4xMXpyZGVuaUh6bUpoeGI5ODlxS2ZLbVdIanFZS040NHZSNDlWbGVhT1Z0QzdNNTRqQ09nSGd0bzk4eG52NzBDWE42bldFUWdWXzdOd1lGYw?oc=5",
+   "publicado": "2026-11-23T14:47-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3",
+    "MGLU3"
+   ]
+  },
+  {
+   "titulo": "Dólar dispara no exterior com apostas em alta de juros pelo Fed e recuperação de ações de IA",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSjFvOHA5eWtTMFBIaFJsUzloSFVkNEllaXJSb3hNYzBodmQ5ZmpLR1B2Yk9ESXdBN2VEN0tKVGZxSmZkQVNCSFNUZmFsTWZ6eWRMQ1d5NXVXeVoxZkxrRGJhLVBGdmk3Ri1KTW5OVmNvOGtGOHM4eFJzcUstMlFmOHFKX2Njck9CTkJIM0d2ZWt5cS1naUtiUjZza1RCeUVFck1Hc19YQ2JISTVpbkRCRko3VkNIUzF4Ty1xQUlNcFpRemJQa1k1UzY5TF9GQjVSTmxjaUVIcU1KYUljU2fSAewBQVVfeXFMT3g4bkhFeXBHSHlhTEJmRDlyZ1dDbW15ZnowcDhrdEtxMVRobHRPQjEtUGhNNUZaZUJtRDk1Vk5uMThIWUhLS1lJMG9rQ2l0c3gzcTRleDZsdGJPR0VuTUVDOS1UeXl6eFV1QnFvbWtnLVgxM2pwcjQyNHFlU0dZNlRkUE5Uc3NuQU15WG9NbDJwZGxvM1lpRUdBd2V5cXRucXhfalJ5S3RCcnlxTmdOeks2dEZCSW1WZ0tBXzI3dG5NTFdFdHVTWkRYemJGYUpYTEVLWDQtZ2s2WUFyTnR5OTAyaHNQV0UwRnFoZkM?oc=5",
+   "publicado": "2026-11-23T14:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Gerdau: Juro é definido no mercado; não há governo que consiga comandar esse processo",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/gerdau-juro-e-definido-no-mercado-nao-ha-governo-que-consiga-comandar-esse-processo/",
+   "publicado": "2026-11-23T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GGBR4"
+   ]
+  },
+  {
+   "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fazenda-reduz-projecao-de-crescimento-para-o-ano-e-ve-alta-do-dolar-e-inflacao.shtml",
+   "publicado": "2026-11-23T15:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2114,7 +2272,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T14:38-03:00",
+ "atualizado_em": "2026-11-23T15:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2124,9 +2282,73 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fazenda-reduz-projecao-de-crescimento-para-o-ano-e-ve-alta-do-dolar-e-inflacao.shtml",
+   "publicado": "2026-11-23T15:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Gerdau: Juro é definido no mercado; não há governo que consiga comandar esse processo",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/gerdau-juro-e-definido-no-mercado-nao-ha-governo-que-consiga-comandar-esse-processo/",
+   "publicado": "2026-11-23T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GGBR4"
+   ]
+  },
+  {
+   "titulo": "Dólar dispara no exterior com apostas em alta de juros pelo Fed e recuperação de ações de IA",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSjFvOHA5eWtTMFBIaFJsUzloSFVkNEllaXJSb3hNYzBodmQ5ZmpLR1B2Yk9ESXdBN2VEN0tKVGZxSmZkQVNCSFNUZmFsTWZ6eWRMQ1d5NXVXeVoxZkxrRGJhLVBGdmk3Ri1KTW5OVmNvOGtGOHM4eFJzcUstMlFmOHFKX2Njck9CTkJIM0d2ZWt5cS1naUtiUjZza1RCeUVFck1Hc19YQ2JISTVpbkRCRko3VkNIUzF4Ty1xQUlNcFpRemJQa1k1UzY5TF9GQjVSTmxjaUVIcU1KYUljU2fSAewBQVVfeXFMT3g4bkhFeXBHSHlhTEJmRDlyZ1dDbW15ZnowcDhrdEtxMVRobHRPQjEtUGhNNUZaZUJtRDk1Vk5uMThIWUhLS1lJMG9rQ2l0c3gzcTRleDZsdGJPR0VuTUVDOS1UeXl6eFV1QnFvbWtnLVgxM2pwcjQyNHFlU0dZNlRkUE5Uc3NuQU15WG9NbDJwZGxvM1lpRUdBd2V5cXRucXhfalJ5S3RCcnlxTmdOeks2dEZCSW1WZ0tBXzI3dG5NTFdFdHVTWkRYemJGYUpYTEVLWDQtZ2s2WUFyTnR5OTAyaHNQV0UwRnFoZkM?oc=5",
+   "publicado": "2026-11-23T14:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Hapvida derrete 6% e lidera destaques negativos do Ibovespa; Magalu dispara",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2d3UEFSLTJVSnhQb0d6VEJTQnV0QXRoMWR0OE15M3lBd3FNRGM4TF9KYkVMM0htQ3k1OEdXNjNVSDNZeHNPS3RaVGFRZ2JVVE1GdGxtNDFvMGlLR0pwQ3VFUkVqUG84UDFUQ04xOWR2VTROVjRTNWVUMFFKbzhkWjBDWjc2RW4xMXpyZGVuaUh6bUpoeGI5ODlxS2ZLbVdIanFZS040NHZSNDlWbGVhT1Z0QzdNNTRqQ09nSGd0bzk4eG52NzBDWE42bldFUWdWXzdOd1lGYw?oc=5",
+   "publicado": "2026-11-23T14:47-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3",
+    "MGLU3"
+   ]
+  },
+  {
+   "titulo": "Focus aponta piora da inflação e eleva Selic 2027, enquanto PIB perde força; veja as previsões",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRnZRS3pDTkxfbEJTWUJyVDdHZk4xTFEyT25fck1vYlJZbUhBRnV2SEprU1NkNHh0REFiR2UxZk84MlJvWG91OERlOE9IUHlWdUxtOVotZEZ2SFNKODM1eDc5aWNSU2p4ZGs0U25aSFNBa3lHUG1TY3RMNlo0SjhXNVg5aEhMSVRfdmlQXzJqM2NXRkFzcnpOSmdhQW9Ncm0tWGNXcWZjQUw0bGR4M1hNOWNfMGV5UUpzSEZnMVYyX05pNXlKb1RYZlRrNjRMNW1xMW1ySlc1NzA0TjY0dWFhaTYwcERUZ9IB6wFBVV95cUxOWE1ELUs0SE5ES1VHYmxSTWhoUUpVQjdFYmh2OGxhX1MtVzFFdHNoejQ0cnk0aHcyNURBM29VWHBIdWhZZ0EwWV8zd09MbTctZllyMW5mRm1JX292X253a3ViZFlUc3QycWZ6T28xZnRxS0xuS3o2RmlVWDM3MlpCUE0tTjVoc1FIQ01sYUhFY2FFV29tbVI4TUZBUU96U0F1LWljZWgtSTJ3UkNEYTJNSFh1WEpjd05EaXh1X25sdmFKekZUUzNaTTA0ZWZvSHR3RVRlSXdpRDN3X3REMGU2SU5pYTFIRFQ4eGFB?oc=5",
+   "publicado": "2026-11-23T14:39-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Copom mantém previsão da taxa básica de juros para 13% em 2017",
    "fonte": "Agência Brasil",
@@ -2186,19 +2408,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal do governo Lula; Ibovespa reduz queda com NY",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
-   "publicado": "2026-11-23T12:57-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Braskem fecha acordo com credores envolvendo capitalização de US$ 4,9 bilhões",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/negocios/braskem-fecha-acordo-credores-capitalizacao/",
@@ -2210,17 +2419,6 @@
    "tickers": [
     "BRKM5"
    ]
-  },
-  {
-   "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONEYwRlNLaXVvM2IxcllCUlBXUExmQjFBdENWdWRVcEd4WU9aM0gxVFk2TFYwQnpsNE92Q2ZORzI3TXNTd0tIMktyemU0RmZCRDE3OG05dmJfMXZaRFJ2Q29uTlgzSEhHZDBoTXB5eDFWOUwxRzlYd2w2X25qZ2xEQjhNajE0X0F1S1Y2cmN5QkhtM2llUWNEUnRfWG1ONFVSMGJzQ3VvYTN1SnZ6cW04dEQxSnVLZUJER0ZlTQ?oc=5",
-   "publicado": "2026-11-23T12:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Tech stocks rally after Nvidia board approves Jensen Huang's return as CEO",
