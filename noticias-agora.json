@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T15:00-03:00",
+  "atualizado_em": "2026-11-23T15:03-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -235,7 +235,11 @@
     ],
     [
      "14:45",
-     164340.0
+     164290.0
+    ],
+    [
+     "14:48",
+     164293.0
     ]
    ]
   },
@@ -532,7 +536,11 @@
     ],
     [
      "15:00",
-     5.9969
+     5.9937
+    ],
+    [
+     "15:03",
+     5.9911
     ]
    ]
   },
@@ -1254,6 +1262,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:00",
+    "titulo": "Gerdau: Juro é definido no mercado; não há governo que consiga comandar esse processo",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/gerdau-juro-e-definido-no-mercado-nao-ha-governo-que-consiga-comandar-esse-processo/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "GGBR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -2173,6 +2196,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Gerdau: Juro é definido no mercado; não há governo que consiga comandar esse processo",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/gerdau-juro-e-definido-no-mercado-nao-ha-governo-que-consiga-comandar-esse-processo/",
+   "publicado": "2026-11-23T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GGBR4"
+   ]
   }
  ],
  "enviadas": [
@@ -2202,7 +2238,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T15:00-03:00",
+ "atualizado_em": "2026-11-23T15:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2216,6 +2252,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Gerdau: Juro é definido no mercado; não há governo que consiga comandar esse processo",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/gerdau-juro-e-definido-no-mercado-nao-ha-governo-que-consiga-comandar-esse-processo/",
+   "publicado": "2026-11-23T15:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "GGBR4"
+   ]
+  },
   {
    "titulo": "Dólar dispara no exterior com apostas em alta de juros pelo Fed e recuperação de ações de IA",
    "fonte": "Valor",
