@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T11:35-03:00",
+  "atualizado_em": "2026-11-23T11:38-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -71,7 +71,11 @@
     ],
     [
      "11:20",
-     165766.0
+     165791.0
+    ],
+    [
+     "11:23",
+     165832.0
     ]
    ]
   },
@@ -204,7 +208,11 @@
     ],
     [
      "11:35",
-     5.9666
+     5.9535
+    ],
+    [
+     "11:38",
+     5.9536
     ]
    ]
   },
@@ -597,7 +605,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.75,
+    "ibov30": 0.76,
     "dolar30": -0.5
    },
    {
@@ -610,7 +618,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.39,
     "dolar30": -0.19
    },
    {
@@ -1343,7 +1351,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T11:35-03:00",
+ "atualizado_em": "2026-11-23T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1472,6 +1480,18 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+   "publicado": "2026-11-23T10:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Tempo real: Ibovespa cai de olho no dólar, Boletim Focus e PMI dos EUA; veja os destaques desta segunda-feira (23)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
@@ -1479,18 +1499,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/dolar-fuga-de-capital-cenario-sombrio-ajuste-fiscal-ashmore/",
-   "publicado": "2026-11-23T10:04-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
