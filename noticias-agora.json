@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T16:18-03:00",
+  "atualizado_em": "2026-11-23T16:20-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -295,11 +295,11 @@
     ],
     [
      "16:00",
-     164949.0
+     165090.0
     ],
     [
-     "16:03",
-     165026.0
+     "16:05",
+     165126.0
     ]
    ]
   },
@@ -656,11 +656,11 @@
     ],
     [
      "16:15",
-     5.9327
+     5.9316
     ],
     [
-     "16:18",
-     5.9306
+     "16:20",
+     5.9326
     ]
    ]
   },
@@ -1485,7 +1485,7 @@
      "B3SA3",
      "BRKM5"
     ],
-    "ibov30": -0.17,
+    "ibov30": -0.08,
     "dolar30": -0.32
    },
    {
@@ -1498,7 +1498,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.17,
+    "ibov30": -0.08,
     "dolar30": -0.32
    },
    {
@@ -1511,7 +1511,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.0,
+    "ibov30": 0.06,
     "dolar30": -0.37
    },
    {
@@ -1525,7 +1525,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.07
+    "dolar30": 0.06
    },
    {
     "hora": "15:52",
@@ -1538,7 +1538,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.07
    },
    {
     "hora": "16:01",
@@ -2558,7 +2558,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T16:18-03:00",
+ "atualizado_em": "2026-11-23T16:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2573,6 +2573,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Tech stocks rally after Nvidia board approves Jensen Huang's return as CEO",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
+   "publicado": "2026-11-23T16:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Não tem ninguém para avisar o Lula que o dólar enfraqueceu nos últimos anos por causa do cenário externo?, questiona Oriz",
    "fonte": "Valor",
@@ -2689,18 +2700,6 @@
     "BRKM5",
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Preço do petróleo usado nos EUA fica abaixo de US$ 80 após três meses",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468067",
-   "publicado": "2026-11-23T15:20-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
