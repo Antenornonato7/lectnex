@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T10:08-03:00",
+  "atualizado_em": "2026-11-23T10:38-03:00",
+  "ibov": {
+   "anterior": 166376.44,
+   "pontos": [
+    [
+     "10:00",
+     165227.0
+    ],
+    [
+     "10:05",
+     164439.0
+    ],
+    [
+     "10:10",
+     164713.0
+    ],
+    [
+     "10:15",
+     164737.0
+    ],
+    [
+     "10:20",
+     164573.0
+    ],
+    [
+     "10:23",
+     164511.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.9488,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.997
+     5.9963
     ],
     [
-     "10:08",
-     5.9955
+     "10:10",
+     5.993
+    ],
+    [
+     "10:15",
+     5.9968
+    ],
+    [
+     "10:20",
+     6.0012
+    ],
+    [
+     "10:25",
+     5.9957
+    ],
+    [
+     "10:30",
+     5.9972
+    ],
+    [
+     "10:35",
+     5.987
+    ],
+    [
+     "10:38",
+     5.9862
     ]
    ]
   },
@@ -78,6 +131,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.0
    },
    {
@@ -91,6 +145,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.13
    },
    {
@@ -103,6 +158,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.11
    },
    {
@@ -116,6 +172,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.03
    },
    {
@@ -130,6 +187,7 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
     "dolar30": 0.03
    },
    {
@@ -143,6 +201,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.13
    },
    {
@@ -156,6 +215,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.13
    },
    {
@@ -169,6 +229,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.36
    },
    {
@@ -182,6 +243,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.11
    },
    {
@@ -194,6 +256,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.03
    },
    {
@@ -206,6 +269,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.03
    },
    {
@@ -219,7 +283,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.27
+    "ibov30": null,
+    "dolar30": 0.26
    },
    {
     "hora": "09:43",
@@ -232,7 +297,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": 0.35
+    "ibov30": null,
+    "dolar30": 0.31
    },
    {
     "hora": "09:44",
@@ -245,7 +311,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": 0.31
    },
    {
     "hora": "09:54",
@@ -259,6 +326,64 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.27
+   },
+   {
+    "hora": "10:12",
+    "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.11
+   },
+   {
+    "hora": "10:22",
+    "titulo": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeEM4ckUwNnZEZktwWFhXZUpFTEkyc01TeG95TFF5YTZlNXJzWXZJZVlvTG5hYnd4ZUZrYldOb1lIZzVOWXVLdVRiUWZpQ1JKeDhHN3ppU0JIMmxNLUVONFA1aDdKbVFLYVBqUXBoWmJCOHd1WXpHX2tNc1hzVjJfZzlCUERUdVRqUkpZQUhDNXRnM0VHUGUxNNIBngFBVV95cUxPQ0JBdXh2bDZxM2tPYmtLWDZ6cDhKV1NLXzJQWTJseHRraEFsajFWQUhaZFlKbE8wTFhwUEZUVjdNMmtMQmZ2ODdtQ2RzVjBMUllTZkRITkVWUUozWjMtTTlNcElOUE1FdFJlRkJQajVlQ3A4am42b0RxazEwci1VSmNYZ0oxWExwWFV3RVBfcERHa1ZVQVBrODJHX3Rsdw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:24",
+    "titulo": "Ibovespa cai enquanto dólar chega aos R$ 6; 5 coisas para saber antes de investir hoje (23)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQd2dzNHJSbmJlNVhrUGRXQWdTTW1mell4VnN6SEUzSnloTm90QmxxY3JPYVdlVkdJeGw0R3dycGEyekNqanFfblY2aXU2SHBZTkYzZVZjSk9IV210cnNYZGc0ak9xSmZfMldZM3V3enAyM0syTnJPNXVic0ZPQ21jZEVxVkJDV2hYcFQ4VVpBYzh6eFpLRXRuLWtYWDU4NGd3eE5qRnl0V0ZENU1rbzVFbjFjelpPTUV2SzJ1OVRfTm0?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:31",
+    "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -527,6 +652,18 @@
    "tickers": []
   },
   {
+   "titulo": "Economistas elevam projeções para Selic e inflação em 2027; confira o Focus desta segunda-feira (23)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQzdsLVFZVW9QNnZDeF9tY1V1ck1yZkN0azN0c2QxOHFLMXBRcmlSVDlRdHAteFlHS2xCdFJKc0lYc0lnLThCOHRrTzd4SUVfVXNCSV9vOTQwQ2tOdDJaVmtjTmFfVk5fRHJsUFY3eGxsdnhwb0lOUDE2LU9CSE9kTHN1QjVMdDUwYWpnX0I4akpfbHFfLXNNTVNsd0FrVUZoeGtxekRmd203cEticDhmdHFrYXlhWTNHNllUMk1OMVliZW95T2RMZEhXeUo0UQ?oc=5",
+   "publicado": "2026-11-23T08:43-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Mercado eleva expectativa de juros para 13% em 2027, mostra Focus",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOElWMkxyaVZyQU05LW82ZjVPSmRkYXMzNThqZ0hRZGFKdHg2VTJMd1ZxYUNmZkotMDFPSlY4RXczOUdPaExrZXVNZHRLN2k2azhJSDNreE9Md05IZUp0S21rbk43ZjdIbFVyanNobk1fS25rT3dBRkFGQ2NBZElpMkl6a1F2Z3hXZ3B2SkVOMy0xc2V3S1N2b2lHbzQ2aFV1ejVzYjNscV9oSVpwd2pOTElOOU92QWRYZ1Y4YUc2NA?oc=5",
@@ -727,6 +864,55 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+   "publicado": "2026-11-23T10:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeEM4ckUwNnZEZktwWFhXZUpFTEkyc01TeG95TFF5YTZlNXJzWXZJZVlvTG5hYnd4ZUZrYldOb1lIZzVOWXVLdVRiUWZpQ1JKeDhHN3ppU0JIMmxNLUVONFA1aDdKbVFLYVBqUXBoWmJCOHd1WXpHX2tNc1hzVjJfZzlCUERUdVRqUkpZQUhDNXRnM0VHUGUxNNIBngFBVV95cUxPQ0JBdXh2bDZxM2tPYmtLWDZ6cDhKV1NLXzJQWTJseHRraEFsajFWQUhaZFlKbE8wTFhwUEZUVjdNMmtMQmZ2ODdtQ2RzVjBMUllTZkRITkVWUUozWjMtTTlNcElOUE1FdFJlRkJQajVlQ3A4am42b0RxazEwci1VSmNYZ0oxWExwWFV3RVBfcERHa1ZVQVBrODJHX3Rsdw?oc=5",
+   "publicado": "2026-11-23T10:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cai enquanto dólar chega aos R$ 6; 5 coisas para saber antes de investir hoje (23)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQd2dzNHJSbmJlNVhrUGRXQWdTTW1mell4VnN6SEUzSnloTm90QmxxY3JPYVdlVkdJeGw0R3dycGEyekNqanFfblY2aXU2SHBZTkYzZVZjSk9IV210cnNYZGc0ak9xSmZfMldZM3V3enAyM0syTnJPNXVic0ZPQ21jZEVxVkJDV2hYcFQ4VVpBYzh6eFpLRXRuLWtYWDU4NGd3eE5qRnl0V0ZENU1rbzVFbjFjelpPTUV2SzJ1OVRfTm0?oc=5",
+   "publicado": "2026-11-23T10:24-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
+   "publicado": "2026-11-23T10:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -761,7 +947,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T10:08-03:00",
+ "atualizado_em": "2026-11-23T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -769,7 +955,6 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -777,10 +962,23 @@
  ],
  "noticias": [
   {
+   "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
+   "publicado": "2026-11-23T10:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-   "publicado": "2026-11-23T10:05-03:00",
+   "publicado": "2026-11-23T10:28-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN",
@@ -789,14 +987,38 @@
    "tickers": []
   },
   {
-   "titulo": "China lamenta fracasso da COP31 mas afirma que transição verde é 'irreversível'",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/china-lamenta-fracasso-da-cop31-mas-afirma-que-transicao-verde-e-irreversivel.shtml",
-   "publicado": "2026-11-23T09:56-03:00",
-   "impacto": "medio",
+   "titulo": "Ibovespa cai enquanto dólar chega aos R$ 6; 5 coisas para saber antes de investir hoje (23)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQd2dzNHJSbmJlNVhrUGRXQWdTTW1mell4VnN6SEUzSnloTm90QmxxY3JPYVdlVkdJeGw0R3dycGEyekNqanFfblY2aXU2SHBZTkYzZVZjSk9IV210cnNYZGc0ak9xSmZfMldZM3V3enAyM0syTnJPNXVic0ZPQ21jZEVxVkJDV2hYcFQ4VVpBYzh6eFpLRXRuLWtYWDU4NGd3eE5qRnl0V0ZENU1rbzVFbjFjelpPTUV2SzJ1OVRfTm0?oc=5",
+   "publicado": "2026-11-23T10:24-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeEM4ckUwNnZEZktwWFhXZUpFTEkyc01TeG95TFF5YTZlNXJzWXZJZVlvTG5hYnd4ZUZrYldOb1lIZzVOWXVLdVRiUWZpQ1JKeDhHN3ppU0JIMmxNLUVONFA1aDdKbVFLYVBqUXBoWmJCOHd1WXpHX2tNc1hzVjJfZzlCUERUdVRqUkpZQUhDNXRnM0VHUGUxNNIBngFBVV95cUxPQ0JBdXh2bDZxM2tPYmtLWDZ6cDhKV1NLXzJQWTJseHRraEFsajFWQUhaZFlKbE8wTFhwUEZUVjdNMmtMQmZ2ODdtQ2RzVjBMUllTZkRITkVWUUozWjMtTTlNcElOUE1FdFJlRkJQajVlQ3A4am42b0RxazEwci1VSmNYZ0oxWExwWFV3RVBfcERHa1ZVQVBrODJHX3Rsdw?oc=5",
+   "publicado": "2026-11-23T10:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+   "publicado": "2026-11-23T10:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -814,7 +1036,7 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar abre em alta e supera R$ 5,98 com votação de pacote fiscal e aversão global ao risco",
+   "titulo": "Dólar supera R$ 6 com votação de pacote fiscal e aversão global ao risco",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-supera-r-598-com-votacao-de-pacote-fiscal-e-aversao-global-ao-risco.shtml",
    "publicado": "2026-11-23T09:44-03:00",
@@ -846,17 +1068,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar à vista avança e testa R$ 5,98 com cautela pela política econômica local e exterior desfavorável",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPVHNzYzRHVHo5UFktMnZnenhTNTVzRlhWNFhqcE83RG9KenktSjNqRVNPaTF6WlE5eHI3WTJjYVdtQkUyNlFCcVk4aGNLS2wtT1Z1aGpTbG5ub0tsbmp2M195M2lLLTVjN2FIQURoczBHd2lHQm9oRmE1T0dadVJONE1Jejk4N3VKTjlQcGsxei1lMTF6bU9YNnFtbi1vZTlSMTRSRzl3dkdSVFlJOEtmTFFNTXBqc3c5dHdHZ2lUdW5lVDlrYkVrYzU4YXhoaGNrZ3RfVXhROVZzaHNEXzNkMlJvX1N1NmhfYmZoYU9vWdIB_gFBVV95cUxQRkFlYmlKZ1FkSWNrQmw5Nk5OZUIxZ3J3ZVlRRzJxUXkzSWh0MVhpODhtR2p1MXMxNzE4RzFfanJIa0JOcVRqMVA4UkFscnd3aC00YVlXcnV2bGloQWxWUjZaV3NjcTdDRXdfN3JId0dRa0JFX185eTMxVWNDRFVCTVVORzRFbDRRaWY0X0VyMDNUOWVBZVdHejZNNFdEUXp3amFodUVoZk9STFhqU1JOVVZhd1hjLWVKSlMzQ3NxV3dQa29qOWt1eVNQZjJxV1Y4cmZUMTdIelhtV0R3QXREVGM3VzBSRE42X00wOTlfb1BkM2VUMjd1dE5fRGVEdw?oc=5",
-   "publicado": "2026-11-23T09:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
@@ -897,18 +1108,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa Futuro cai 1% no retorno do feriado com mercado de olho no fiscal",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM2M5Q0FEeWxsUGNpd1lHUjc0NjhGTkhiVlY4VkRDUUUxUTVGdjVFZm5wZ1FaUG9QT2ZrT1M5d05fNlQ0OWlUZkhpRE5VNzVjZmRVOXVRSm9lMW1EX1p5YTVTdVlqR1NlOE1XcmJieUM1d2QwQXNISkJoVDV5UjlzZzJZeFhLOHFZV1N4QmpxVDI5VFNONkQtdXg2Rm9KZzdvUC1tWVVlRjdlTjRaN3JvVzBR0gG3AUFVX3lxTE9rN29fejRfUU9SME91bGsxTW5FMXpLWEhpeE5vV2tETHBIcmpIdi1hdTA5Z3Z4di1KZk9rQ0J4N1l3YWZ0VjBRdHR5SkdqQlpLREZOeDhQb0dmWTgzSzJlU3NzV2VfSEVpZ0hGUWNEbkF2bWplbk9paEJPdTIycHlONmpkRlQ2SDlyRkxJSEk2V3NQbjlzM2tiV0lyR0VxaGpfQlJ2NVdudHVGYnlNYk84ZkJPbk95Yw?oc=5",
-   "publicado": "2026-11-23T09:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Tempo real: Ibovespa cai de olho no dólar, Boletim Focus e PMI dos EUA; veja os destaques desta segunda-feira (23)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
@@ -934,35 +1133,22 @@
    "tickers": []
   },
   {
-   "titulo": "Boletim Focus eleva projeções para inflação e dólar e prevê Selic a 13% em 2027",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11WUVGWmFkMjM0a0RjREZRblluSkxpQ21fOC1xUEROT0l0MzN2Zlh1NUxaX0FwX1pzckdaRkY0ZG1HT2xrYWNsRUZBNWhoTnBLS0QwWUladFRldXNsYmlzS2xwMEgxYlVza29OQmE2V01LMTc4aUp0OWFibw?oc=5",
-   "publicado": "2026-11-23T08:32-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Manhã no mercado: Dólar a caminho de R$ 6, Galípolo e recuperação das bolsas de NY devem marcar sessão",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNYi1ORkRWT0dlMURJX2VYMXBjb1FVc3h0NmJOcnVuMVRqYjgtNVF3MUgwc0gwbFVpdlhmNXhOZ2p1UEU3U0dLdUxVeXNPSUo0RDNnSFoxMUVrbW9GbXliVnBWbzNJQXlYbk9WSW1NNndIbXU4RXNCS3FLUEpKVmlQb1lkRVRsdTRPd09ueEM4QlJrVENwWlR6YUY0N0RhSVRkNG5zU3FlaklHZXIyc2JyclQ1c1pXX3BhMXdlaW9QalJGcG5ZY1R3OVRqZnhhOWlXNm83QXpLMVRpd0xpU200NWRSU2ltMmdGVjBydnVR0gH8AUFVX3lxTE83bVhwLXRzS2dWT2duOF9hUS1uYmdCSHg4UjJXODcyTnpvN25iYkc1Ujd2XzU5QmU2bzZkaEJHNEx2V1RDT1g4aEFtbWMxNWIzOFpTMU1xNVliLWs4WnRCQXJjaUhlMnhaeDdaNGVXdlNtb3pSVnVOa29ndGJOVVlZWkYxSFVlUFkwVVRmV2NIMTJSejJDeEduRngyN3ZMUm1IS2ljVHNfOEE2TXZGUlh0UTJjajd2YTNCLXRYYTUxdDFWY29sZHBzOEtZTU5hcGZOTkxyMzZXZ0RWa0FUcEFGYWtUNTlCNmFrNVJSMjhvUGEtUHdILUp5Yi1MdA?oc=5",
-   "publicado": "2026-11-23T08:26-03:00",
+   "titulo": "Ibovespa hoje testa recuperação junto com exterior após tombo global; dólar sobe a R$ 5,95",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
+   "publicado": "2026-11-23T09:00-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
+    "WDO"
    ],
    "tickers": []
   },
   {
-   "titulo": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
-   "publicado": "2026-11-23T07:15-03:00",
+   "titulo": "Economistas elevam projeções para Selic e inflação em 2027; confira o Focus desta segunda-feira (23)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQzdsLVFZVW9QNnZDeF9tY1V1ck1yZkN0azN0c2QxOHFLMXBRcmlSVDlRdHAteFlHS2xCdFJKc0lYc0lnLThCOHRrTzd4SUVfVXNCSV9vOTQwQ2tOdDJaVmtjTmFfVk5fRHJsUFY3eGxsdnhwb0lOUDE2LU9CSE9kTHN1QjVMdDUwYWpnX0I4akpfbHFfLXNNTVNsd0FrVUZoeGtxekRmd203cEticDhmdHFrYXlhWTNHNllUMk1OMVliZW95T2RMZEhXeUo0UQ?oc=5",
+   "publicado": "2026-11-23T08:43-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
