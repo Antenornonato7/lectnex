@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T12:00-03:00",
+  "atualizado_em": "2026-11-23T12:03-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -91,7 +91,11 @@
     ],
     [
      "11:45",
-     165571.0
+     165504.0
+    ],
+    [
+     "11:48",
+     165523.0
     ]
    ]
   },
@@ -244,7 +248,11 @@
     ],
     [
      "12:00",
-     5.9429
+     5.9451
+    ],
+    [
+     "12:03",
+     5.9481
     ]
    ]
   },
@@ -691,7 +699,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.32
+    "dolar30": -0.29
    },
    {
     "hora": "11:42",
@@ -1459,7 +1467,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T12:00-03:00",
+ "atualizado_em": "2026-11-23T12:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1612,6 +1620,18 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar perto de R$ 6 e piora da inflação testam tolerância do BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUlpnOTRFcndtWWFoUk4zQU5fV0NidlV6Y2F3WGhXZDVKYmlEaHlfZGYtOFpGSloySXd0LW4wY1FBakpldDhodkRRX1h6RkRSNmVVOGxBX3RKUV85SVhfWDI2cndncDRTc1B2aVlXb1RoTk1GZDhZZXAwLVJsOFVvM0d1OElvWkJTTjZSWGhBT202LVViMXNkb3lhdm1GT1pEZ2RlYnF6QW9UNVl5Q1J1eXF4cDVIcm83OUhqd0JsNjHSAc8BQVVfeXFMUHFQOG5wMzc5dnRfdGZrT0dRcDc1YTZodjR6LTJzOGpGblFwRWlqQTZyQTFEWWFLZHVYaDM4a3E1Wm9ObXlGNno2N2ljdW9vMlRVVmRyQVBDYjBuRVdUc0FfTHhlRkNzc2FwdllmNkhGZkhULXBTRlZ5Vk1fVUVrX1lfcmQ3NGQ0ZDdxYWVVbFR3TmRzZ1pYVXhMOFd6ZXYxc2kxREdJTWxPRkljVl9USEJoenh2R1ViOF94cnh2aGloOGZ6cWZ3R1pLWVNLT3lB?oc=5",
+   "publicado": "2026-11-23T10:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Tempo real: Ibovespa cai de olho no dólar, Boletim Focus e PMI dos EUA; veja os destaques desta segunda-feira (23)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
@@ -1653,18 +1673,6 @@
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/focus-mercado-eleva-projecao-inflacao-dolar-preve-pib-menor-2026/",
    "publicado": "2026-11-23T09:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Economistas sobem previsão da inflação e do dólar e diminuem a do PIB neste ano",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-sobem-previsao-da-inflacao-e-do-dolar-e-diminuem-a-do-pib-neste-ano.shtml",
-   "publicado": "2026-11-23T09:01-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
