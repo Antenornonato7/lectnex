@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T16:20-03:00",
+  "atualizado_em": "2026-11-23T16:23-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -299,7 +299,11 @@
     ],
     [
      "16:05",
-     165126.0
+     165105.0
+    ],
+    [
+     "16:08",
+     165072.0
     ]
    ]
   },
@@ -660,7 +664,11 @@
     ],
     [
      "16:20",
-     5.9326
+     5.9345
+    ],
+    [
+     "16:23",
+     5.935
     ]
    ]
   },
@@ -1385,6 +1393,20 @@
     "dolar30": 0.2
    },
    {
+    "hora": "14:30",
+    "titulo": "Copom mantém previsão da taxa básica de juros para 13% em 2027",
+    "fonte": "Agência Brasil",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcGc0WEpaNzBTTW5oM3I2Qm1lSVRSa3ktSlJsTXJuZWl0VW1ncC1RdXNJMExZdmhFdXNZdXVpUnZTMEVIdXF0OU54RVhKQklua0ZwTGVLZEZycjgtUzRGQWpiMWU2dGVOaW1maDV5elV1bkpCcjZmclNhMnlaQ3dGR0Fmd21LMm9zajFaSlBGT2NyQ2JsSDZrNzJ1TmJYTkg0SkM5MUE4UVQ3cnJtRzQxQW5tQ1pzYmMzMy03cUo2dlNucFlkRmFQcXdxbG5ZT1JqTGFqTzJ3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.18,
+    "dolar30": 0.2
+   },
+   {
     "hora": "14:47",
     "titulo": "Hapvida derrete 6% e lidera destaques negativos do Ibovespa; Magalu dispara",
     "fonte": "Estadão",
@@ -1511,7 +1533,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.05,
     "dolar30": -0.37
    },
    {
@@ -1538,7 +1560,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.07
+    "dolar30": 0.1
    },
    {
     "hora": "16:01",
@@ -1578,33 +1600,24 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "16:21",
+    "titulo": "Fazenda eleva projeção de inflação para 2027 e vê Selic mais alta por mais tempo",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMGs3UmdXYVlQYTI0V3JwWGQxd2NRS0ItXzN2Ulh2Nk9LLXI2SGxTOWdZTFh2aG5GMkd4QnBhUFNPNTYyeDRCZ3hxMndPb1ZIdVA3ZDVYMkoyLXhiQ0ZZeFFoM0NyZXg0UzVGLV9GTjFibVBhSnlTajNNR0MyZTROMHduVVJLUU42ZU8wRHZ3X2VjTVo5RU9sWHEydFBwVDgwc0QtWjhpbE1YTnZYc2lUYUFmeURQUzQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Day Trade hoje (23): Ibovespa pressiona suporte e dólar se aproxima dos 6 mil pontos",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbEUzbzFJYTdHbXROSlhSRkFNMlRuX19kZUtvQ0ZpeXBZc0x6RFgzVm9RVXpEc2lCdVdNdkx1OEZ3Ylh4ZUJZeFdRcnlGVHNNVjJvVnlObWZlTUFpZWlpdVZ1cVNabVcxalF1QVl2M1dTdExEUjkzUXY0VU13MVlqeHp2WHFVb1FQ0gGOAUFVX3lxTFBFdXotalRVblRoWDM3aHJaR3Zma2UxSnVqdmxGa2EwOEJBX1ZHSWdOMTJhckVIYkxyTFhJSEJwTXNHZVVvcElMMUJmWUNVY2o4SGhyZlZnejhJZlphOFJrYldlOHA5VVZUcmxtdDhRU09hVXg2N012MjI0RXFNeThkRk83SThPekpYYU5la0E?oc=5",
-   "publicado": "2026-11-23T07:02-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Minidólar (WDOZ26) mira os 6 mil pontos, mas correção exige atenção hoje (23)",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZ3ZZczltdGlSZ1J0WlQ0S0lzdGpnQ1FpVGhUY29iT1oyb0NkMnozV3pUNXA4dXNnYUxodmpkbWFpdnczRTFad2VxMTNvOUtNVGtNT3RQOUtud05xWDNZN0oybHhBLVE4cWFsd0E0WFk3dHZqUkp5X3BheHYtY1pGUllQN2RoQTJHcXdaS2F30gGTAUFVX3lxTE9DYzNOaFVaODJESmVwN1BJMi1ENEFLMkZKY05leXNiTWlVX0ViUlhsRDJsVFcxek45UV9POGctOXU0c2I4YWRITlFXMm5WT3Mwcm5RLWlEc0lpQmRXSGFoemlBRW5MckVNWlJRMGtyZ2s0ZmhyUVo2UnR2RnJ1SjN5czZpblJTTldzdWRjZ1AxRTU4bw?oc=5",
-   "publicado": "2026-11-23T07:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ajuste fiscal mexe com bolsa enquanto semana é mais curta lá fora; Ibovespa em dólar salta nesta segunda-feira (23)",
    "fonte": "Money Times",
@@ -2364,6 +2377,18 @@
    "tickers": []
   },
   {
+   "titulo": "Copom mantém previsão da taxa básica de juros para 13% em 2027",
+   "fonte": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcGc0WEpaNzBTTW5oM3I2Qm1lSVRSa3ktSlJsTXJuZWl0VW1ncC1RdXNJMExZdmhFdXNZdXVpUnZTMEVIdXF0OU54RVhKQklua0ZwTGVLZEZycjgtUzRGQWpiMWU2dGVOaW1maDV5elV1bkpCcjZmclNhMnlaQ3dGR0Fmd21LMm9zajFaSlBGT2NyQ2JsSDZrNzJ1TmJYTkg0SkM5MUE4UVQ3cnJtRzQxQW5tQ1pzYmMzMy03cUo2dlNucFlkRmFQcXdxbG5ZT1JqTGFqTzJ3?oc=5",
+   "publicado": "2026-11-23T14:30-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Hapvida derrete 6% e lidera destaques negativos do Ibovespa; Magalu dispara",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2d3UEFSLTJVSnhQb0d6VEJTQnV0QXRoMWR0OE15M3lBd3FNRGM4TF9KYkVMM0htQ3k1OEdXNjNVSDNZeHNPS3RaVGFRZ2JVVE1GdGxtNDFvMGlLR0pwQ3VFUkVqUG84UDFUQ04xOWR2VTROVjRTNWVUMFFKbzhkWjBDWjc2RW4xMXpyZGVuaUh6bUpoeGI5ODlxS2ZLbVdIanFZS040NHZSNDlWbGVhT1Z0QzdNNTRqQ09nSGd0bzk4eG52NzBDWE42bldFUWdWXzdOd1lGYw?oc=5",
@@ -2529,6 +2554,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Fazenda eleva projeção de inflação para 2027 e vê Selic mais alta por mais tempo",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMGs3UmdXYVlQYTI0V3JwWGQxd2NRS0ItXzN2Ulh2Nk9LLXI2SGxTOWdZTFh2aG5GMkd4QnBhUFNPNTYyeDRCZ3hxMndPb1ZIdVA3ZDVYMkoyLXhiQ0ZZeFFoM0NyZXg0UzVGLV9GTjFibVBhSnlTajNNR0MyZTROMHduVVJLUU42ZU8wRHZ3X2VjTVo5RU9sWHEydFBwVDgwc0QtWjhpbE1YTnZYc2lUYUFmeURQUzQ?oc=5",
+   "publicado": "2026-11-23T16:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2558,7 +2595,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T16:20-03:00",
+ "atualizado_em": "2026-11-23T16:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2573,6 +2610,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fazenda eleva projeção de inflação para 2027 e vê Selic mais alta por mais tempo",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMGs3UmdXYVlQYTI0V3JwWGQxd2NRS0ItXzN2Ulh2Nk9LLXI2SGxTOWdZTFh2aG5GMkd4QnBhUFNPNTYyeDRCZ3hxMndPb1ZIdVA3ZDVYMkoyLXhiQ0ZZeFFoM0NyZXg0UzVGLV9GTjFibVBhSnlTajNNR0MyZTROMHduVVJLUU42ZU8wRHZ3X2VjTVo5RU9sWHEydFBwVDgwc0QtWjhpbE1YTnZYc2lUYUFmeURQUzQ?oc=5",
+   "publicado": "2026-11-23T16:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Tech stocks rally after Nvidia board approves Jensen Huang's return as CEO",
    "fonte": "CNBC",
@@ -2688,32 +2737,6 @@
    ]
   },
   {
-   "titulo": "Braskem (BRKM5) dispara com acordo com credores no radar; Petrobras pode aportar US$ 1,3 bilhão, diz jornal",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbExoYXE4bjJtcUtYRzRSYURuMXpUb1RHME1OWl9GQnJiVkl4U21DYWNJdTJCeWw4dXNsLXNPVTh1T0xTcEZ1dVJUeXJad1l6UjJwSlZwMTNyeDJKc3pDMUluMnR5d1VSSzFSUDlOZVdqSTE0VVhfeU1pUENDSTRmLVlNczBjWjRnSVN4SGVuMzBQMnNyR3VLQldCRnl3YTBwS1JORkdPOGFEaFBVUWRLME9GeWJlYkJWXzNDZFBib1RRZVlwQ3dkbHl5S3plX3ZOdlBR?oc=5",
-   "publicado": "2026-11-23T15:23-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BRKM5",
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fazenda-reduz-projecao-de-crescimento-para-o-ano-e-ve-alta-do-dolar-e-inflacao.shtml",
-   "publicado": "2026-11-23T15:02-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar dispara no exterior com apostas em alta de juros pelo Fed e recuperação de ações de IA",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSjFvOHA5eWtTMFBIaFJsUzloSFVkNEllaXJSb3hNYzBodmQ5ZmpLR1B2Yk9ESXdBN2VEN0tKVGZxSmZkQVNCSFNUZmFsTWZ6eWRMQ1d5NXVXeVoxZkxrRGJhLVBGdmk3Ri1KTW5OVmNvOGtGOHM4eFJzcUstMlFmOHFKX2Njck9CTkJIM0d2ZWt5cS1naUtiUjZza1RCeUVFck1Hc19YQ2JISTVpbkRCRko3VkNIUzF4Ty1xQUlNcFpRemJQa1k1UzY5TF9GQjVSTmxjaUVIcU1KYUljU2fSAewBQVVfeXFMT3g4bkhFeXBHSHlhTEJmRDlyZ1dDbW15ZnowcDhrdEtxMVRobHRPQjEtUGhNNUZaZUJtRDk1Vk5uMThIWUhLS1lJMG9rQ2l0c3gzcTRleDZsdGJPR0VuTUVDOS1UeXl6eFV1QnFvbWtnLVgxM2pwcjQyNHFlU0dZNlRkUE5Uc3NuQU15WG9NbDJwZGxvM1lpRUdBd2V5cXRucXhfalJ5S3RCcnlxTmdOeks2dEZCSW1WZ0tBXzI3dG5NTFdFdHVTWkRYemJGYUpYTEVLWDQtZ2s2WUFyTnR5OTAyaHNQV0UwRnFoZkM?oc=5",
@@ -2742,6 +2765,18 @@
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRnZRS3pDTkxfbEJTWUJyVDdHZk4xTFEyT25fck1vYlJZbUhBRnV2SEprU1NkNHh0REFiR2UxZk84MlJvWG91OERlOE9IUHlWdUxtOVotZEZ2SFNKODM1eDc5aWNSU2p4ZGs0U25aSFNBa3lHUG1TY3RMNlo0SjhXNVg5aEhMSVRfdmlQXzJqM2NXRkFzcnpOSmdhQW9Ncm0tWGNXcWZjQUw0bGR4M1hNOWNfMGV5UUpzSEZnMVYyX05pNXlKb1RYZlRrNjRMNW1xMW1ySlc1NzA0TjY0dWFhaTYwcERUZ9IB6wFBVV95cUxOWE1ELUs0SE5ES1VHYmxSTWhoUUpVQjdFYmh2OGxhX1MtVzFFdHNoejQ0cnk0aHcyNURBM29VWHBIdWhZZ0EwWV8zd09MbTctZllyMW5mRm1JX292X253a3ViZFlUc3QycWZ6T28xZnRxS0xuS3o2RmlVWDM3MlpCUE0tTjVoc1FIQ01sYUhFY2FFV29tbVI4TUZBUU96U0F1LWljZWgtSTJ3UkNEYTJNSFh1WEpjd05EaXh1X25sdmFKekZUUzNaTTA0ZWZvSHR3RVRlSXdpRDN3X3REMGU2SU5pYTFIRFQ4eGFB?oc=5",
    "publicado": "2026-11-23T14:39-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Copom mantém previsão da taxa básica de juros para 13% em 2027",
+   "fonte": "Agência Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcGc0WEpaNzBTTW5oM3I2Qm1lSVRSa3ktSlJsTXJuZWl0VW1ncC1RdXNJMExZdmhFdXNZdXVpUnZTMEVIdXF0OU54RVhKQklua0ZwTGVLZEZycjgtUzRGQWpiMWU2dGVOaW1maDV5elV1bkpCcjZmclNhMnlaQ3dGR0Fmd21LMm9zajFaSlBGT2NyQ2JsSDZrNzJ1TmJYTkg0SkM5MUE4UVQ3cnJtRzQxQW5tQ1pzYmMzMy03cUo2dlNucFlkRmFQcXdxbG5ZT1JqTGFqTzJ3?oc=5",
+   "publicado": "2026-11-23T14:30-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
