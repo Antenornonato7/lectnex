@@ -42,15 +42,27 @@
    "data": "2026-11-23",
    "hora": "noite",
    "pais": "BR",
-   "evento": "Câmara: sessão extraordinária sobre o ajuste fiscal (PLP 299/2026)",
+   "evento": "Câmara: votação do ajuste fiscal (urgência e mérito)",
    "importancia": 2,
    "impacto": {
     "win": "volatil",
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Hugo Motta marcou para segunda a votação do texto aprovado no Senado; o pacote pode melhorar as contas de 2027 em até R$ 56 bi (O Tempo).",
+   "nota": "Relator Mauro Benevides Filho manteve o texto do Senado; impacto estimado de R$ 50 bi em 2027. Destaques que mudem o texto devolvem o projeto ao Senado (Times Brasil).",
    "tipo": "ajuste-fiscal"
+  },
+  {
+   "data": "2026-11-24",
+   "pais": "BR",
+   "evento": "Relatório bimestral de receitas e despesas",
+   "importancia": 2,
+   "impacto": {
+    "di": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Governo quer o ajuste aprovado antes do relatório (Times Brasil); bloqueios ou contingenciamentos mexem no prêmio fiscal.",
+   "tipo": "relatorio-bimestral"
   },
   {
    "data": "2026-11-24",
@@ -109,6 +121,19 @@
    "consenso": "0,0%"
   },
   {
+   "data": "2026-11-25",
+   "hora": "16h",
+   "pais": "US",
+   "evento": "Livro Bege (Fed)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil"
+   },
+   "nota": "Retrato regional da economia americana antes da reunião do Fed de 8 e 9 de dezembro.",
+   "tipo": "livro-bege"
+  },
+  {
    "data": "2026-11-26",
    "pais": "US",
    "evento": "Ação de Graças — bolsas de NY fechadas",
@@ -119,6 +144,18 @@
    },
    "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
    "tipo": "feriado-eua"
+  },
+  {
+   "data": "2026-11-26",
+   "hora": "08h30",
+   "pais": "BR",
+   "evento": "Transações correntes e IED (out, BCB)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Fluxo externo ajuda a explicar a pressão sobre o real.",
+   "tipo": "transacoes-correntes"
   },
   {
    "data": "2026-11-26",
@@ -134,6 +171,43 @@
    "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
    "tipo": "ipca-15",
    "anterior": "0,32% (out)"
+  },
+  {
+   "data": "2026-11-27",
+   "hora": "08h",
+   "pais": "BR",
+   "evento": "IGP-M de novembro (FGV)",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Inflação no atacado; corrige contratos de aluguel.",
+   "tipo": "igp-m"
+  },
+  {
+   "data": "2026-11-27",
+   "hora": "08h30",
+   "pais": "BR",
+   "evento": "Resultado fiscal do setor público e dívida bruta (out, BCB)",
+   "importancia": 2,
+   "impacto": {
+    "di": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Sai em semana de votação do ajuste; dívida bruta é o número que o mercado acompanha.",
+   "tipo": "resultado-fiscal"
+  },
+  {
+   "data": "2026-11-27",
+   "hora": "09h",
+   "pais": "BR",
+   "evento": "Taxa de desemprego — PNAD Contínua (out, IBGE)",
+   "importancia": 2,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Mercado de trabalho apertado sustenta a inflação de serviços e mexe nos vértices do DI.",
+   "tipo": "pnad"
   },
   {
    "data": "2026-11-27",
