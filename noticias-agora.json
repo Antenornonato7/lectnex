@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T10:35-03:00",
+  "atualizado_em": "2026-11-23T10:38-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -23,7 +23,11 @@
     ],
     [
      "10:20",
-     164763.0
+     164573.0
+    ],
+    [
+     "10:23",
+     164511.0
     ]
    ]
   },
@@ -108,7 +112,11 @@
     ],
     [
      "10:35",
-     5.9948
+     5.987
+    ],
+    [
+     "10:38",
+     5.9862
     ]
    ]
   },
@@ -333,7 +341,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.11
    },
    {
     "hora": "10:22",
@@ -358,6 +366,21 @@
     "ativos": [
      "WIN",
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:31",
+    "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -877,6 +900,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
+   "publicado": "2026-11-23T10:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -911,7 +947,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T10:35-03:00",
+ "atualizado_em": "2026-11-23T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -925,6 +961,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
+   "publicado": "2026-11-23T10:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
    "fonte": "CNBC",
@@ -970,18 +1019,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China lamenta fracasso da COP31 mas afirma que transição verde é 'irreversível'",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/china-lamenta-fracasso-da-cop31-mas-afirma-que-transicao-verde-e-irreversivel.shtml",
-   "publicado": "2026-11-23T09:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
