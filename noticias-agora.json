@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T12:03-03:00",
+  "atualizado_em": "2026-11-23T12:05-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -91,11 +91,11 @@
     ],
     [
      "11:45",
-     165504.0
+     165370.0
     ],
     [
-     "11:48",
-     165523.0
+     "11:50",
+     165362.0
     ]
    ]
   },
@@ -248,11 +248,11 @@
     ],
     [
      "12:00",
-     5.9451
+     5.9485
     ],
     [
-     "12:03",
-     5.9481
+     "12:05",
+     5.9517
     ]
    ]
   },
@@ -699,7 +699,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.29
+    "dolar30": -0.23
    },
    {
     "hora": "11:42",
@@ -1467,7 +1467,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T12:03-03:00",
+ "atualizado_em": "2026-11-23T12:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1478,8 +1478,7 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
@@ -1496,17 +1495,6 @@
    ]
   },
   {
-   "titulo": "Dólar bate os R$ 6: o que explica disparada e até onde a moeda pode ir?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYjE1T3BQazF6TVFBZlowQVpCYnhVcHVRRXFjSVRwRUlfM1RVVndWeDB2NHlvbVRxVkROUlhzNlZpeUI2ejVkX3Y3S0o3cFpYOXlqNXZZRVNYSS1EZkQ5enZ4Wng4dVNYbnlwazFyLWtCTkxEUW04NTRDYnFtTXRtc21uTElkQ2lQdF9NeFlEaEpBUkw5bU8wS2pYZjdCOUNIOElIQTAzRDQxYTTSAbABQVVfeXFMT1lKckJBakRVeFpQRHJjRDVaRHFiTGtra1BORTdfMllvSXdrRmNVVGhsb3ZjeVlqdVQ1OExnaDlmUm0wZExLNHdtdFRhX2w2cWdkSzFYaENwTHZOSno3REt0aU5OY25Qd2VsU0VNQldldTAzUmZkNUwyYUZKQXhJRVpuel8zejRmZVJFbFZuRmFDXzBmcUdseUVJWVpxalJvRGxTTGFWVkdDU0p3TW54bUQ?oc=5",
-   "publicado": "2026-11-23T11:42-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal do governo Lula; Ibovespa reduz queda com NY",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
@@ -1520,14 +1508,24 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar sustenta alta e ultrapassa os R$ 6,00 com cautela fiscal",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONmNBT2E3M0N2QVNsQjhZamdoQ1hiUTBKQVJ6X1M5Skx4dkRmVGdwdWNES3RPMi1lSmJvR2lTWXkwUjA4REJBblNZUndQQzAtNVRpMVBMTEtOX2JMR0lWQnU4UVp1MFRvZ3pGSUpMNWdqdkgwbzhpNmdQZVMtVG8zdG9FN19fa0JfOFhoSjcySUJPUDF6N1F0RmdBejZmVHlYcHc?oc=5",
-   "publicado": "2026-11-23T11:04-03:00",
-   "impacto": "alto",
+   "titulo": "Wall Street's 'Fear Gauge' just flashed a buy sign",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
+   "publicado": "2026-11-23T11:14-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WDO",
-    "DI"
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/tokenized-stocks-face-pushback-as-nyse-nasdaq-pivot-for-a-new-market-.html",
+   "publicado": "2026-11-23T11:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
    ],
    "tickers": []
   },
@@ -1545,35 +1543,10 @@
    "tickers": []
   },
   {
-   "titulo": "Tesouro volta a abrir prêmio com dólar a R$ 6 antes de votação fiscal; IPCA+ 2032 chega a 7,93%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSVFQaFNTazg5TG1BNnA3T0piZVU0d2NyT1dROGs1SkcwUWRnRXd0VUFOeEk1Um5zQlhTS1BBR0VQb1kyRVRhREsxSm5vajRrcDUtOC11MUdaUWFKbmtNQl96LVc0dWlSV2RNTDQ1b3VCR0dCQW9WeVl2YXFhN2NqS2tjam5QdXplVnFKbzF3QkpGbjdYWUFVeGtnbjZydlVzS2xPMWZKc0lkWEV2S1FJanM5bGpKbmJOU3d1UmRLS2lsa1UzNy1lRUxOZWFXTXdfWlVOdkgza1N5Ujl3eTd0WFByOG1wWVVvdjhsQkVn?oc=5",
-   "publicado": "2026-11-23T10:49-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Galípolo defende conciliar agenda social e regras fiscais para conter a dívida",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/galipolo-defende-conciliar-agenda-social-e-regras-fiscais-para-conter-a-divida.shtml",
    "publicado": "2026-11-23T10:48-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Quem diz que perdemos oportunidade de cortar Selic em 2025 não entende de relações mínimas de economia, diz Galípolo",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUmJjdTl0OVAxVVVEQTdHRmJKYVJkaE1RX2xOcmVNX1BDNllFNXVmNUV2WGR2YndRRDVSaVp3d0s2ZUkteF9yZTdGUUFiRXFFMVFPMkpvUHNqT0dWQlA1U1BXMzFPV1dTNFVKU0xLaTc4Q3pmV3J0bHpPX3hQN1hRY1JUT1hsUHkzWGdSOTZ5Q2VSWTZYT2xmcjBYNVNoNDJaWjZZX3hKeEVUdWpqdnhHWDBLVUd4dmZQQzZSczNWUkp2dTNPT0otMHR5WjdYVy1pb3A1V3RPNXlLQUhhbGZSNzlKbk5DdEFjb1pMdF85QzQ2cnRZZ3ZaUG1kZTBjQdIBjAJBVV95cUxOZDNNRlV2dlhCZGo5RVZ2MmM1d1dub3RBbFJwekduZUVxNUMxU1FIQTh6Zk5tSFRzRGMyRXg0eTlWRnRzT1pyUUIwd0dwSWNXVE9oYUdOZWw2Mm4xVnZrYkc4WjhKUXRnTERSWVk4OVA0RjMydXhIbEQza20wNEZNTTNfSkQyaFM0cDgyUk1oT3pPUnpfUF9YbUlkODJSMUY0djR2ejY4MjBxTDQwc1UxMTZKbjBSVGRYUzI3bFJ2T3E5aW1Ha2ppQWRiMHNxVWtRWVN4bFhjQ1BEb2NaQlk5QkJGNVBVbU04NTJYcWZSZVFJODFMY2czTTg1Q0xwczdXSkZWZjRNUkxDV2I1?oc=5",
-   "publicado": "2026-11-23T10:44-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -1596,38 +1569,14 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa cai cerca de 1% de olho no fiscal e com ajustes pós-feriado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeEM4ckUwNnZEZktwWFhXZUpFTEkyc01TeG95TFF5YTZlNXJzWXZJZVlvTG5hYnd4ZUZrYldOb1lIZzVOWXVLdVRiUWZpQ1JKeDhHN3ppU0JIMmxNLUVONFA1aDdKbVFLYVBqUXBoWmJCOHd1WXpHX2tNc1hzVjJfZzlCUERUdVRqUkpZQUhDNXRnM0VHUGUxNNIBngFBVV95cUxPQ0JBdXh2bDZxM2tPYmtLWDZ6cDhKV1NLXzJQWTJseHRraEFsajFWQUhaZFlKbE8wTFhwUEZUVjdNMmtMQmZ2ODdtQ2RzVjBMUllTZkRITkVWUUozWjMtTTlNcElOUE1FdFJlRkJQajVlQ3A4am42b0RxazEwci1VSmNYZ0oxWExwWFV3RVBfcERHa1ZVQVBrODJHX3Rsdw?oc=5",
-   "publicado": "2026-11-23T10:22-03:00",
-   "impacto": "alto",
+   "titulo": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+   "publicado": "2026-11-23T10:28-03:00",
+   "impacto": "medio",
    "ativos": [
     "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje sobe e bate R$ 6 com tensão fiscal no retorno do feriado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYWVUcEYyVUJZR3VGWmgzcVdSZ0NJd0hDYW55blFkdnF0WW9mbjZuRWFpT3lKUS0xS25BSlQ4TnBVV2tGVU9XaEVpRndDN1FMRWtRWmpfUzREdFpSOU5EUThlNm9YZTFoMVc4c2hBYmZoc1Jmd0wycjk2TXo1eTdpenltUk1hMWU3b25tMV8ya0tVNEJoSF91YVYxZGPSAaIBQVVfeXFMT3lHY2Y3LVZzZ3BwUGJ5dS0tczVRX2lUQ2d5MTdSLWo1OWZTNG4zRzd4a29oQU5IajJrOGpDb3Z5bVNCREZSOVRUbUdVUXhGYkduT3ctUVFCbW5xZkkzUm1SZUpxRGZWYVhId2ItazBlS2l6MlJaZzBRZ1o0X3JzckJmYUZlUXFVU0VYMUxRdWRLa25za25PSTd4T1I5MzkwMnpR?oc=5",
-   "publicado": "2026-11-23T10:18-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar perto de R$ 6 e piora da inflação testam tolerância do BC",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUlpnOTRFcndtWWFoUk4zQU5fV0NidlV6Y2F3WGhXZDVKYmlEaHlfZGYtOFpGSloySXd0LW4wY1FBakpldDhodkRRX1h6RkRSNmVVOGxBX3RKUV85SVhfWDI2cndncDRTc1B2aVlXb1RoTk1GZDhZZXAwLVJsOFVvM0d1OElvWkJTTjZSWGhBT202LVViMXNkb3lhdm1GT1pEZ2RlYnF6QW9UNVl5Q1J1eXF4cDVIcm83OUhqd0JsNjHSAc8BQVVfeXFMUHFQOG5wMzc5dnRfdGZrT0dRcDc1YTZodjR6LTJzOGpGblFwRWlqQTZyQTFEWWFLZHVYaDM4a3E1Wm9ObXlGNno2N2ljdW9vMlRVVmRyQVBDYjBuRVdUc0FfTHhlRkNzc2FwdllmNkhGZkhULXBTRlZ5Vk1fVUVrX1lfcmQ3NGQ0ZDdxYWVVbFR3TmRzZ1pYVXhMOFd6ZXYxc2kxREdJTWxPRkljVl9USEJoenh2R1ViOF94cnh2aGloOGZ6cWZ3R1pLWVNLT3lB?oc=5",
-   "publicado": "2026-11-23T10:17-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
+    "WDO"
    ],
    "tickers": []
   },
@@ -1657,6 +1606,18 @@
    "tickers": []
   },
   {
+   "titulo": "China lamenta fracasso da COP31 mas afirma que transição verde é 'irreversível'",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/economia-sustentavel/2026/11/china-lamenta-fracasso-da-cop31-mas-afirma-que-transicao-verde-e-irreversivel.shtml",
+   "publicado": "2026-11-23T09:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar supera R$ 6 com votação de pacote fiscal e aversão global ao risco; Bolsa recua",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-supera-r-598-com-votacao-de-pacote-fiscal-e-aversao-global-ao-risco.shtml",
@@ -1676,6 +1637,29 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Pacote de ajuste fiscal do governo é um ‘band-aid’ para um problema grave",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/duquesa-de-tax/pacote-ajuste-fiscal-governo-band-aid-problema-grave/",
+   "publicado": "2026-11-23T09:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa Futuro cai 1% no retorno do feriado com mercado de olho no fiscal",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM2M5Q0FEeWxsUGNpd1lHUjc0NjhGTkhiVlY4VkRDUUUxUTVGdjVFZm5wZ1FaUG9QT2ZrT1M5d05fNlQ0OWlUZkhpRE5VNzVjZmRVOXVRSm9lMW1EX1p5YTVTdVlqR1NlOE1XcmJieUM1d2QwQXNISkJoVDV5UjlzZzJZeFhLOHFZV1N4QmpxVDI5VFNONkQtdXg2Rm9KZzdvUC1tWVVlRjdlTjRaN3JvVzBR0gG3AUFVX3lxTE9rN29fejRfUU9SME91bGsxTW5FMXpLWEhpeE5vV2tETHBIcmpIdi1hdTA5Z3Z4di1KZk9rQ0J4N1l3YWZ0VjBRdHR5SkdqQlpLREZOeDhQb0dmWTgzSzJlU3NzV2VfSEVpZ0hGUWNEbkF2bWplbk9paEJPdTIycHlONmpkRlQ2SDlyRkxJSEk2V3NQbjlzM2tiV0lyR0VxaGpfQlJ2NVdudHVGYnlNYk84ZkJPbk95Yw?oc=5",
+   "publicado": "2026-11-23T09:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "DI"
    ],
    "tickers": []
