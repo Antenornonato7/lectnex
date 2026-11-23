@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T16:25-03:00",
+  "atualizado_em": "2026-11-23T16:28-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -303,7 +303,11 @@
     ],
     [
      "16:10",
-     164981.0
+     165009.0
+    ],
+    [
+     "16:13",
+     165033.0
     ]
    ]
   },
@@ -668,7 +672,11 @@
     ],
     [
      "16:25",
-     5.925
+     5.9293
+    ],
+    [
+     "16:28",
+     5.9288
     ]
    ]
   },
@@ -1524,6 +1532,22 @@
     "dolar30": -0.32
    },
    {
+    "hora": "15:33",
+    "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB0gHQAUFVX3lxTFA0cGhXSVJaaERDWDk2eElLMklMY0xPcTczbm1aVEJsd1AwWnp3bEQzSFI4XzFETmdpdlZQQmNGbzE2OFJhUWRaeVBNNWVocjdUazdYT3NKN2V5TFdNZDBZTGg3UXB1Y0hnSW9yOElqZTZydG5jMFQzQ3N2ckx1c3dTQnY5UXV3OVY2QmNrM3RNSzBOOXJkbTNLN0JYOHVHZXY4NXVjeHExZUJpTkhhczdGMW04SWRxZHlsRHpNbUpTOEp0N0VxNldzVnVwNk9QVEE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3",
+     "BRKM5"
+    ],
+    "ibov30": -0.08,
+    "dolar30": -0.32
+   },
+   {
     "hora": "15:38",
     "titulo": "Economistas alertam para efeito em cadeia na economia com dólar batendo em R$ 6",
     "fonte": "InfoMoney",
@@ -1573,7 +1597,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.06
    },
    {
     "hora": "16:03",
@@ -1586,7 +1610,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.06
    },
    {
     "hora": "16:08",
@@ -1618,19 +1642,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ajuste fiscal mexe com bolsa enquanto semana é mais curta lá fora; Ibovespa em dólar salta nesta segunda-feira (23)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQLUc0YjB3U1NvNE4wZ25WdEh3NzBycy1NT2FmMW9aV3A1TWV3VExuYzBKbkNBc2dPQ3NBU0UzelFyRV8wNVBXUXNkVy03bFBjd3VuNlg2SVVtRlJlZGNYSlBNY0FDNmxCREd5QjBNbXd2Yi1lTmtmQnZZWnB0ZHNvWGNoMWttNlhmdkF2Z2dnN3BsbnE2Q2ZxQ2lJZ2lrQmJwWFhMQ1c0U0lVcThYOW8ydWl4V1BHSm13SVIwbm42dkpqRC1WajFJazdxbHo1MHItM1d4SElTd3QzZDlJZUs2UVFR?oc=5",
-   "publicado": "2026-11-23T07:13-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
    "fonte": "CNBC",
@@ -2490,6 +2501,20 @@
    "tickers": []
   },
   {
+   "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB0gHQAUFVX3lxTFA0cGhXSVJaaERDWDk2eElLMklMY0xPcTczbm1aVEJsd1AwWnp3bEQzSFI4XzFETmdpdlZQQmNGbzE2OFJhUWRaeVBNNWVocjdUazdYT3NKN2V5TFdNZDBZTGg3UXB1Y0hnSW9yOElqZTZydG5jMFQzQ3N2ckx1c3dTQnY5UXV3OVY2QmNrM3RNSzBOOXJkbTNLN0JYOHVHZXY4NXVjeHExZUJpTkhhczdGMW04SWRxZHlsRHpNbUpTOEp0N0VxNldzVnVwNk9QVEE?oc=5",
+   "publicado": "2026-11-23T15:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3",
+    "BRKM5"
+   ]
+  },
+  {
    "titulo": "Economistas alertam para efeito em cadeia na economia com dólar batendo em R$ 6",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMlFoQWY3RTdNd2ZKdkNndTlJQVJqbWVocXJqUlhQajV5Mlcxa204amJ4WjhFX2JuT0x3QndibUgxTGxfamlIZ1pSSDZNNjdvcmpiNXdXUXJoMmlKOXhQRDkwS2J1aTAzT1oxc241Vjg3WEZXTTFEdXVidDZnbnM1NVNVWVk5THNsRHluR1FvX0dQUFXSAZgBQVVfeXFMTm1yQW01VnVNbTZLZVlEeVl0eFpMbXpPU0tJV3lnRGdQeGQtdTc5d0ZWaW5lNUFzTGVlN0kwYVJ6NFp5cHdOd2ozemkwcUxXYWdKZFBlQW5uYjUtdEZRd2ZzeUhxcmFEZkJYYldCTUlxMFl1OC1zMXB6QjNtbW1IaEc0Uko3ZGFwUlRBaU5HblgwX2IyNGl1SHY?oc=5",
@@ -2595,7 +2620,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T16:25-03:00",
+ "atualizado_em": "2026-11-23T16:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2725,7 +2750,7 @@
   {
    "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB0gHQAUFVX3lxTFA0cGhXSVJaaERDWDk2eElLMklMY0xPcTczbm1aVEJsd1AwWnp3bEQzSFI4XzFETmdpdlZQQmNGbzE2OFJhUWRaeVBNNWVocjdUazdYT3NKN2V5TFdNZDBZTGg3UXB1Y0hnSW9yOElqZTZydG5jMFQzQ3N2ckx1c3dTQnY5UXV3OVY2QmNrM3RNSzBOOXJkbTNLN0JYOHVHZXY4NXVjeHExZUJpTkhhczdGMW04SWRxZHlsRHpNbUpTOEp0N0VxNldzVnVwNk9QVEE?oc=5",
    "publicado": "2026-11-23T15:33-03:00",
    "impacto": "medio",
    "ativos": [
