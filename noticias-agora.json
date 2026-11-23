@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T11:55-03:00",
+  "atualizado_em": "2026-11-23T11:58-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -87,7 +87,11 @@
     ],
     [
      "11:40",
-     165128.0
+     165399.0
+    ],
+    [
+     "11:43",
+     165383.0
     ]
    ]
   },
@@ -236,7 +240,11 @@
     ],
     [
      "11:55",
-     5.9482
+     5.9441
+    ],
+    [
+     "11:58",
+     5.9426
     ]
    ]
   },
@@ -669,7 +677,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.18,
+    "ibov30": -0.02,
     "dolar30": -0.21
    },
    {
@@ -683,7 +691,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.33
    },
    {
     "hora": "11:42",
@@ -695,6 +703,21 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:53",
+    "titulo": "Braskem fecha acordo com credores para capitalização de US$ 4,9 bilhões, dizem fontes",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-fecha-acordo-com-credores-para-capitalizacao-de-us-49-bilhoes-dizem-fontes.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BRKM5"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1389,6 +1412,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Braskem fecha acordo com credores para capitalização de US$ 4,9 bilhões, dizem fontes",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-fecha-acordo-com-credores-para-capitalizacao-de-us-49-bilhoes-dizem-fontes.shtml",
+   "publicado": "2026-11-23T11:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
   }
  ],
  "enviadas": [
@@ -1423,7 +1459,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T11:55-03:00",
+ "atualizado_em": "2026-11-23T11:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1439,6 +1475,19 @@
  ],
  "noticias": [
   {
+   "titulo": "Braskem fecha acordo com credores para capitalização de US$ 4,9 bilhões, dizem fontes",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-fecha-acordo-com-credores-para-capitalizacao-de-us-49-bilhoes-dizem-fontes.shtml",
+   "publicado": "2026-11-23T11:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
+  },
+  {
    "titulo": "Dólar bate os R$ 6: o que explica disparada e até onde a moeda pode ir?",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYjE1T3BQazF6TVFBZlowQVpCYnhVcHVRRXFjSVRwRUlfM1RVVndWeDB2NHlvbVRxVkROUlhzNlZpeUI2ejVkX3Y3S0o3cFpYOXlqNXZZRVNYSS1EZkQ5enZ4Wng4dVNYbnlwazFyLWtCTkxEUW04NTRDYnFtTXRtc21uTElkQ2lQdF9NeFlEaEpBUkw5bU8wS2pYZjdCOUNIOElIQTAzRDQxYTTSAbABQVVfeXFMT1lKckJBakRVeFpQRHJjRDVaRHFiTGtra1BORTdfMllvSXdrRmNVVGhsb3ZjeVlqdVQ1OExnaDlmUm0wZExLNHdtdFRhX2w2cWdkSzFYaENwTHZOSno3REt0aU5OY25Qd2VsU0VNQldldTAzUmZkNUwyYUZKQXhJRVpuel8zejRmZVJFbFZuRmFDXzBmcUdseUVJWVpxalJvRGxTTGFWVkdDU0p3TW54bUQ?oc=5",
@@ -1446,17 +1495,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Taxas de prefixados do Tesouro renovam máximas do ano na volta do feriado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSndvVmlSX1E3TEdjT0VkemJYSkg2WExtOGYtYVpVbTVHYlp3ejZiWXh3cUhaQ0E1dHFteVJzdFpFeHRyZzBiWF9xajVocEcyX3RtV1RuNHJvbUY5Rmpnbi0ycm9sQklLZmVGRjlYWWYtbzdDTnZkakdWUG15eWtPU1pQbXVJU0l6NTNZUFMwRmNVMC1vd3dMbUY4X0ZUUlNqTDhZMkp2cDVMVnBCTFkyaEVkb1lHTS1p0gG-AUFVX3lxTE5sZE9iR3cwOU5JZ0J2eUgyamFfc0tYUVR4OVYtZ01Ld1I4MGItQkZZc0h0bXJVSWhDTUQyUm9kRVRZMDdhWkozUzRsRV9pRHFGZ2w0YXhFd0xnRWQ5a0RVWGNHQ1g4VThlSllTQ3h3NnJaY2g2eHlEeFJpdFAwbHJfSkJWZl9wT2o0cF9SaTF2dUtrU2pESTdvbmFhVVZ1aDVsalB5eUpfRm43WlFwaHhYSjRSTEw2Ul82b1luM2c?oc=5",
-   "publicado": "2026-11-23T11:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   },
