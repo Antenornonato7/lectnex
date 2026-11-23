@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T15:03-03:00",
+  "atualizado_em": "2026-11-23T15:05-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -235,11 +235,15 @@
     ],
     [
      "14:45",
-     164290.0
+     164240.0
     ],
     [
-     "14:48",
-     164293.0
+     "14:50",
+     164273.0
+    ],
+    [
+     "14:51",
+     164280.0
     ]
    ]
   },
@@ -536,11 +540,15 @@
     ],
     [
      "15:00",
-     5.9937
+     5.9882
     ],
     [
-     "15:03",
-     5.9911
+     "15:05",
+     5.9814
+    ],
+    [
+     "15:06",
+     5.9822
     ]
    ]
   },
@@ -1277,6 +1285,20 @@
     "tickers": [
      "GGBR4"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:02",
+    "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fazenda-reduz-projecao-de-crescimento-para-o-ano-e-ve-alta-do-dolar-e-inflacao.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -2209,6 +2231,18 @@
    "tickers": [
     "GGBR4"
    ]
+  },
+  {
+   "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fazenda-reduz-projecao-de-crescimento-para-o-ano-e-ve-alta-do-dolar-e-inflacao.shtml",
+   "publicado": "2026-11-23T15:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2238,7 +2272,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T15:03-03:00",
+ "atualizado_em": "2026-11-23T15:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2252,6 +2286,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fazenda-reduz-projecao-de-crescimento-para-o-ano-e-ve-alta-do-dolar-e-inflacao.shtml",
+   "publicado": "2026-11-23T15:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Gerdau: Juro é definido no mercado; não há governo que consiga comandar esse processo",
    "fonte": "Estadão",
