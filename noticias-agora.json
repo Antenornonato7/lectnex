@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T12:33-03:00",
+  "atualizado_em": "2026-11-23T12:35-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -115,11 +115,11 @@
     ],
     [
      "12:15",
-     165553.0
+     165584.0
     ],
     [
-     "12:18",
-     165560.0
+     "12:20",
+     165609.0
     ]
    ]
   },
@@ -296,11 +296,11 @@
     ],
     [
      "12:30",
-     5.9617
+     5.9666
     ],
     [
-     "12:33",
-     5.9621
+     "12:35",
+     5.9666
     ]
    ]
   },
@@ -774,7 +774,7 @@
     "tickers": [
      "BRKM5"
     ],
-    "ibov30": 0.11,
+    "ibov30": 0.14,
     "dolar30": 0.22
    },
    {
@@ -788,7 +788,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.07
+    "dolar30": 0.01
    },
    {
     "hora": "12:16",
@@ -1582,7 +1582,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T12:33-03:00",
+ "atualizado_em": "2026-11-23T12:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1652,6 +1652,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Braskem fecha acordo com credores para capitalização de US$ 4,9 bilhões, dizem fontes",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-fecha-acordo-com-credores-para-capitalizacao-de-us-49-bilhoes-dizem-fontes.shtml",
+   "publicado": "2026-11-23T11:53-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
   },
   {
    "titulo": "Dólar bate os R$ 6: o que explica disparada e até onde a moeda pode ir?",
@@ -1767,18 +1780,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-alta-e-supera-r-598-com-votacao-de-pacote-fiscal-e-aversao-global-ao-risco.shtml",
    "publicado": "2026-11-23T09:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado eleva projeção para inflação e dólar e prevê PIB menor em 2026",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/focus-mercado-eleva-projecao-inflacao-dolar-preve-pib-menor-2026/",
-   "publicado": "2026-11-23T09:35-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
