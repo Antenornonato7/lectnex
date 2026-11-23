@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T15:08-03:00",
+  "atualizado_em": "2026-11-23T15:38-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -239,11 +239,35 @@
     ],
     [
      "14:50",
-     164294.0
+     164403.0
     ],
     [
-     "14:53",
-     164287.0
+     "14:55",
+     164372.0
+    ],
+    [
+     "15:00",
+     164543.0
+    ],
+    [
+     "15:05",
+     164680.0
+    ],
+    [
+     "15:10",
+     164905.0
+    ],
+    [
+     "15:15",
+     164874.0
+    ],
+    [
+     "15:20",
+     164902.0
+    ],
+    [
+     "15:23",
+     164883.0
     ]
    ]
   },
@@ -544,11 +568,35 @@
     ],
     [
      "15:05",
-     5.9781
+     5.9762
     ],
     [
-     "15:08",
-     5.9797
+     "15:10",
+     5.9619
+    ],
+    [
+     "15:15",
+     5.9657
+    ],
+    [
+     "15:20",
+     5.9655
+    ],
+    [
+     "15:25",
+     5.958
+    ],
+    [
+     "15:30",
+     5.9441
+    ],
+    [
+     "15:35",
+     5.9412
+    ],
+    [
+     "15:38",
+     5.9446
     ]
    ]
   },
@@ -1216,6 +1264,21 @@
     "dolar30": 0.05
    },
    {
+    "hora": "13:56",
+    "titulo": "CSN Mineração lidera altas e MRV tomba quase 5%; veja os destaques do pregão",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzOHR0cHdIRERHZDhFMnItR2ozMzRPTVVsYjdaRlFqVkdKbnJWYm9STkJoUlhNN3NUUjU3MDR4WWVqcy0tUTRydDlTd1hmdzVUR0xNZkFidTlkM1BvTHVXT3FpRUxST3o3OUs2dDFjOVVJVEowRnpxVEtCZGQ5MjB4UmFFUFVEdU0yU1QxenV3X3JVUmdtdlB0QXZMem9qNXRLMTRPRWlKWDVkS2ZxVWhjeFVqT2xaNjBBOGRfbzlVT1hBaGxib2U3R0c3VkVDY3llVDFhUnVXLXNU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "CMIN3"
+    ],
+    "ibov30": -0.28,
+    "dolar30": 0.1
+   },
+   {
     "hora": "14:30",
     "titulo": "Copom mantém previsão da taxa básica de juros para 13% em 2017",
     "fonte": "Agência Brasil",
@@ -1226,7 +1289,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.18,
     "dolar30": 0.2
    },
    {
@@ -1240,7 +1303,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.18,
     "dolar30": 0.2
    },
    {
@@ -1256,8 +1319,8 @@
      "HAPV3",
      "MGLU3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.39,
+    "dolar30": -0.55
    },
    {
     "hora": "14:47",
@@ -1270,8 +1333,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.39,
+    "dolar30": -0.55
    },
    {
     "hora": "15:00",
@@ -1286,7 +1349,7 @@
      "GGBR4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.5
    },
    {
     "hora": "15:02",
@@ -1300,56 +1363,69 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": -0.74
+   },
+   {
+    "hora": "15:12",
+    "titulo": "Ministério da Fazenda prevê crescimento menor e mais inflação em 2026 e 2027",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObVZKY0JVdm1DeXY5aHVVUTBnaXI3YVUtZFI4dXhLSTEzd2pyUEFpLU5MZ0Z5U2NCeW5HaG5OaGgxd0NxbUMzT09jMllMYi1NbjBnSnlrV01pS1RmM1FBQzlfNW4zMm9JZTg2QTJCU0xodEp0bE9WRXNRTGxsTWFELWR1akttSFMzV0x5aVc2VXloaDhfaVlQQm9hbEtKcFdaTVNKbmtybkZvNGR1WjRlZ0R1Nmg1Z9IBuwFBVV95cUxPSm1FM2NNdnFhN0Jfb2EyUTVIMjZTNjkxUHdYVm9jZzRZOEF4amdXYjZoMVdCWDJFSFlwdUpFM0xWQk5KTVg3ZFlOYlAtNjB6Z3dmcklzZGtCNnczR25iQmZjRlg3NkllQmY2VHVlU1RjdldGOEtGRTdNalMwYXZ5WTVlZnZQWDZhNGY3QmlHcElKWWJwanltQV9fUzBRNHJXeTE2Mk55RXJCck9vZVZveFA3eVJCNjlFUnY0?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.29
+   },
+   {
+    "hora": "15:23",
+    "titulo": "Braskem (BRKM5) dispara com acordo com credores no radar; Petrobras pode aportar US$ 1,3 bilhão, diz jornal",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbExoYXE4bjJtcUtYRzRSYURuMXpUb1RHME1OWl9GQnJiVkl4U21DYWNJdTJCeWw4dXNsLXNPVTh1T0xTcEZ1dVJUeXJad1l6UjJwSlZwMTNyeDJKc3pDMUluMnR5d1VSSzFSUDlOZVdqSTE0VVhfeU1pUENDSTRmLVlNczBjWjRnSVN4SGVuMzBQMnNyR3VLQldCRnl3YTBwS1JORkdPOGFEaFBVUWRLME9GeWJlYkJWXzNDZFBib1RRZVlwQ3dkbHl5S3plX3ZOdlBR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BRKM5",
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:33",
+    "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3",
+     "BRKM5"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "15:33",
+    "titulo": "Durigan diz que ajuste fiscal e revisão de gastos são necessários para queda dos juros",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-diz-que-ajuste-fiscal-e-revisao-de-gastos-sao-necessarios-para-queda-dos-juros.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "How Asian countries are looking to prop up markets as AI downturn sinks stocks",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/asia-markets-kospi-taiwan-china-csi300.html",
-   "publicado": "2026-11-23T03:50-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa hoje enfrenta novo teste com dados dos EUA e projeções de juros e inflação no Brasil",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMm9kOXBlODlDb2pkY0RhTmVDeUtNMUYtZDZCSVpRbVhOV1BNdzFqQWE4SHJmUUtzYUpjVGNZZE1DaWVkMVc0eTU3RVZGOTVIYTBNQ1Nhek1KajBmQ0lpNnctc0dGYmV4N0ZHRjZxSTNCVjIxcmlFQW03YTFoM3I4UTVIVG91OGNwNnN5UVpBXzVBOFF6N1o1MU8zMFZqcEg4c3pQVVdlM0FZbUdfYmxsU1cwd0JPQTN6LV9SVkYwQ1QzZUFNMmRBR3NKaTNmT1VKQ1ZjeXhidS1BUy1BenJQSDJiQXYtWkp6OGxzTFZfZ0xvdw?oc=5",
-   "publicado": "2026-11-23T04:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Os riscos do dólar a R$ 6 para a economia",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUHkyenlYWVc2MldBdGVaZkFpcW5ONF85UDJkMjlfQXFCbU1uX0tqOThDc1hlWVkyQ0FOZE5zaXRsNEZyNXA0U2hZWlFvUXpJTUFuWVk1Rm9WNzRaUU5HMUJvNzFDOFU3M19wVXA2VGlzUndHc0dBMHczaGw2R3A4MFBwQVctb0I2UWk2N2FheXdfcS03N0h6RlhPMNIBmwFBVV95cUxQUHkyenlYWVc2MldBdGVaZkFpcW5ONF85UDJkMjlfQXFCbU1uX0tqOThDc1hlWVkyQ0FOZE5zaXRsNEZyNXA0U2hZWlFvUXpJTUFuWVk1Rm9WNzRaUU5HMUJvNzFDOFU3M19wVXA2VGlzUndHc0dBMHczaGw2R3A4MFBwQVctb0I2UWk2N2FheXdfcS03N0h6RlhPMA?oc=5",
-   "publicado": "2026-11-23T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Os riscos do dólar a R$ 6 para a economia",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaWxLNGE5TktOa1ZLcTNMMTJPQldyeEVGRF85MHFianlFZWkxZG1CcVYzdVVrdDhtTEJNN282VG4tM3p0dkNPSTktYjRkS2pLRzRmZDRLNWVSQUUyWGo3Tlo4TGFWLXl6SHNPVklaVGs2OTVvSlpGdHVvU3ZNYXh2SHFpbjBiYjZVZVBOTNIBmwFBVV95cUxQUHkyenlYWVc2MldBdGVaZkFpcW5ONF85UDJkMjlfQXFCbU1uX0tqOThDc1hlWVkyQ0FOZE5zaXRsNEZyNXA0U2hZWlFvUXpJTUFuWVk1Rm9WNzRaUU5HMUJvNzFDOFU3M19wVXA2VGlzUndHc0dBMHczaGw2R3A4MFBwQVctb0I2UWk2N2FheXdfcS03N0h6RlhPMA?oc=5",
-   "publicado": "2026-11-23T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Ibovespa hoje acompanha ajuste fiscal, PMIs e plano da Petrobras nesta segunda, 23",
    "fonte": "Exame",
@@ -2170,6 +2246,19 @@
    "tickers": []
   },
   {
+   "titulo": "CSN Mineração lidera altas e MRV tomba quase 5%; veja os destaques do pregão",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNODQzOHR0cHdIRERHZDhFMnItR2ozMzRPTVVsYjdaRlFqVkdKbnJWYm9STkJoUlhNN3NUUjU3MDR4WWVqcy0tUTRydDlTd1hmdzVUR0xNZkFidTlkM1BvTHVXT3FpRUxST3o3OUs2dDFjOVVJVEowRnpxVEtCZGQ5MjB4UmFFUFVEdU0yU1QxenV3X3JVUmdtdlB0QXZMem9qNXRLMTRPRWlKWDVkS2ZxVWhjeFVqT2xaNjBBOGRfbzlVT1hBaGxib2U3R0c3VkVDY3llVDFhUnVXLXNU?oc=5",
+   "publicado": "2026-11-23T13:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "CMIN3"
+   ]
+  },
+  {
    "titulo": "Copom mantém previsão da taxa básica de juros para 13% em 2017",
    "fonte": "Agência Brasil",
    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1NdS1Jdi1RZ3hUOTViU2lQWWdnSE9ZaDJNZC1GYjdMelVtZ21KajFHV003aGJJakVMQ016ZXk2NExyUGZMQXNwQmZHdXZnazczZFoxcXM3VUdLdUxv?oc=5",
@@ -2243,6 +2332,56 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ministério da Fazenda prevê crescimento menor e mais inflação em 2026 e 2027",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObVZKY0JVdm1DeXY5aHVVUTBnaXI3YVUtZFI4dXhLSTEzd2pyUEFpLU5MZ0Z5U2NCeW5HaG5OaGgxd0NxbUMzT09jMllMYi1NbjBnSnlrV01pS1RmM1FBQzlfNW4zMm9JZTg2QTJCU0xodEp0bE9WRXNRTGxsTWFELWR1akttSFMzV0x5aVc2VXloaDhfaVlQQm9hbEtKcFdaTVNKbmtybkZvNGR1WjRlZ0R1Nmg1Z9IBuwFBVV95cUxPSm1FM2NNdnFhN0Jfb2EyUTVIMjZTNjkxUHdYVm9jZzRZOEF4amdXYjZoMVdCWDJFSFlwdUpFM0xWQk5KTVg3ZFlOYlAtNjB6Z3dmcklzZGtCNnczR25iQmZjRlg3NkllQmY2VHVlU1RjdldGOEtGRTdNalMwYXZ5WTVlZnZQWDZhNGY3QmlHcElKWWJwanltQV9fUzBRNHJXeTE2Mk55RXJCck9vZVZveFA3eVJCNjlFUnY0?oc=5",
+   "publicado": "2026-11-23T15:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Braskem (BRKM5) dispara com acordo com credores no radar; Petrobras pode aportar US$ 1,3 bilhão, diz jornal",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbExoYXE4bjJtcUtYRzRSYURuMXpUb1RHME1OWl9GQnJiVkl4U21DYWNJdTJCeWw4dXNsLXNPVTh1T0xTcEZ1dVJUeXJad1l6UjJwSlZwMTNyeDJKc3pDMUluMnR5d1VSSzFSUDlOZVdqSTE0VVhfeU1pUENDSTRmLVlNczBjWjRnSVN4SGVuMzBQMnNyR3VLQldCRnl3YTBwS1JORkdPOGFEaFBVUWRLME9GeWJlYkJWXzNDZFBib1RRZVlwQ3dkbHl5S3plX3ZOdlBR?oc=5",
+   "publicado": "2026-11-23T15:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5",
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
+   "publicado": "2026-11-23T15:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3",
+    "BRKM5"
+   ]
+  },
+  {
+   "titulo": "Durigan diz que ajuste fiscal e revisão de gastos são necessários para queda dos juros",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-diz-que-ajuste-fiscal-e-revisao-de-gastos-sao-necessarios-para-queda-dos-juros.shtml",
+   "publicado": "2026-11-23T15:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2272,7 +2411,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T15:08-03:00",
+ "atualizado_em": "2026-11-23T15:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2286,6 +2425,83 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
+   "publicado": "2026-11-23T15:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3",
+    "BRKM5"
+   ]
+  },
+  {
+   "titulo": "Durigan diz que ajuste fiscal e revisão de gastos são necessários para queda dos juros",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-diz-que-ajuste-fiscal-e-revisao-de-gastos-sao-necessarios-para-queda-dos-juros.shtml",
+   "publicado": "2026-11-23T15:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Braskem (BRKM5) dispara com acordo com credores no radar; Petrobras pode aportar US$ 1,3 bilhão, diz jornal",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbExoYXE4bjJtcUtYRzRSYURuMXpUb1RHME1OWl9GQnJiVkl4U21DYWNJdTJCeWw4dXNsLXNPVTh1T0xTcEZ1dVJUeXJad1l6UjJwSlZwMTNyeDJKc3pDMUluMnR5d1VSSzFSUDlOZVdqSTE0VVhfeU1pUENDSTRmLVlNczBjWjRnSVN4SGVuMzBQMnNyR3VLQldCRnl3YTBwS1JORkdPOGFEaFBVUWRLME9GeWJlYkJWXzNDZFBib1RRZVlwQ3dkbHl5S3plX3ZOdlBR?oc=5",
+   "publicado": "2026-11-23T15:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5",
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Preço do petróleo usado nos EUA fica abaixo de US$ 80 após três meses",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468067",
+   "publicado": "2026-11-23T15:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ministério da Fazenda prevê crescimento menor e mais inflação em 2026 e 2027",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObVZKY0JVdm1DeXY5aHVVUTBnaXI3YVUtZFI4dXhLSTEzd2pyUEFpLU5MZ0Z5U2NCeW5HaG5OaGgxd0NxbUMzT09jMllMYi1NbjBnSnlrV01pS1RmM1FBQzlfNW4zMm9JZTg2QTJCU0xodEp0bE9WRXNRTGxsTWFELWR1akttSFMzV0x5aVc2VXloaDhfaVlQQm9hbEtKcFdaTVNKbmtybkZvNGR1WjRlZ0R1Nmg1Z9IBuwFBVV95cUxPSm1FM2NNdnFhN0Jfb2EyUTVIMjZTNjkxUHdYVm9jZzRZOEF4amdXYjZoMVdCWDJFSFlwdUpFM0xWQk5KTVg3ZFlOYlAtNjB6Z3dmcklzZGtCNnczR25iQmZjRlg3NkllQmY2VHVlU1RjdldGOEtGRTdNalMwYXZ5WTVlZnZQWDZhNGY3QmlHcElKWWJwanltQV9fUzBRNHJXeTE2Mk55RXJCck9vZVZveFA3eVJCNjlFUnY0?oc=5",
+   "publicado": "2026-11-23T15:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal; Ibovespa acelera queda com piora da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
+   "publicado": "2026-11-23T15:12-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
    "fonte": "Folha",
@@ -2338,6 +2554,18 @@
    ]
   },
   {
+   "titulo": "Dólar sobe após bater R$ 6 com política fiscal no radar; Bolsa cai",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVGI2ekpOSmxXbFVBYzYwZjNreXI3MGcwX0NVT29NSWRQTTVVb05YLXB5YlRwNXJDdW1NSFgxbVdTdFJ5OHpzRHlscmw4SzF1b0xFT2lzQTQxZ2lGUndKQjVOYXV6R2dsaGtwWFdSWGluX0dfUmlnNGhfY214OFZMeVJrR3NCQkt1S3BDRlp4R1JjeVl1MnpzM1RBR1BXbWo5NlRYUWpn?oc=5",
+   "publicado": "2026-11-23T14:44-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Focus aponta piora da inflação e eleva Selic 2027, enquanto PIB perde força; veja as previsões",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRnZRS3pDTkxfbEJTWUJyVDdHZk4xTFEyT25fck1vYlJZbUhBRnV2SEprU1NkNHh0REFiR2UxZk84MlJvWG91OERlOE9IUHlWdUxtOVotZEZ2SFNKODM1eDc5aWNSU2p4ZGs0U25aSFNBa3lHUG1TY3RMNlo0SjhXNVg5aEhMSVRfdmlQXzJqM2NXRkFzcnpOSmdhQW9Ncm0tWGNXcWZjQUw0bGR4M1hNOWNfMGV5UUpzSEZnMVYyX05pNXlKb1RYZlRrNjRMNW1xMW1ySlc1NzA0TjY0dWFhaTYwcERUZ9IB6wFBVV95cUxOWE1ELUs0SE5ES1VHYmxSTWhoUUpVQjdFYmh2OGxhX1MtVzFFdHNoejQ0cnk0aHcyNURBM29VWHBIdWhZZ0EwWV8zd09MbTctZllyMW5mRm1JX292X253a3ViZFlUc3QycWZ6T28xZnRxS0xuS3o2RmlVWDM3MlpCUE0tTjVoc1FIQ01sYUhFY2FFV29tbVI4TUZBUU96U0F1LWljZWgtSTJ3UkNEYTJNSFh1WEpjd05EaXh1X25sdmFKekZUUzNaTTA0ZWZvSHR3RVRlSXdpRDN3X3REMGU2SU5pYTFIRFQ4eGFB?oc=5",
@@ -2362,52 +2590,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar vai a R$ 6 e Ibovespa cai enquanto Nvidia e outras empresas de chips disparam; veja o que impacta o mercado hoje (23)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUnBFcnpYbFk5dVdXOUZocHdRV0ZxY2ZyUTlXWmU2aVpWVFhHWFlzWUtnR3JNUnZpVjBmaVZMZGJzS3RYcktWOFhhU2xxNHpiTUtDR3NSOFdHRkdfbjZLd29qVTZKQW5FMUdvblJHY214dllKa3V3bHk4QXpGYnRwZkZXdGd5RXJZZmRMUzY1SUgteGlaa3ljZ1lpYmsxZzBQclJEc2M0eDZ0c2pQMGxkWE5YQm11dw?oc=5",
-   "publicado": "2026-11-23T13:36-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Alta na expectativa da inflação para 2027 pode impactar Ibovespa",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNnQ5anNBclNqdFNZYmRqTFpfNGFJenByM0RPRVRRakFjNDBIVmlyc0Y3cTg1RG40dTU5QWhIZ1JyYTJvazB2MXF3ZURQeEoyc3FuTFFfR3Z2cnY5aGFTR1UzbDBUNVg4NlNveVg0Vi1jWG9ZSGloRE1PVjZiX3NQbnZ6NkhpV3ZwVkhoSkxIS2NMQ1RBaEdTc0N6WnRXUnNvTV9ialFCeVFVb0lYVXNEQW1TZ05BdTRB?oc=5",
-   "publicado": "2026-11-23T13:25-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Incertezas seguram taxas do Tesouro Direto acima de 15%; título de 2032 paga 15,59%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNWtFSTlwcDZTem1FWW9vb2JnNGtwMHhrRWxtczRmUE5jSWlXWU8tN0JHa2dQUkNWejhTYTN0Q1pLcGJfdlBjcnlUM3FHbHNwb21XSi1MMWdwNHZzd3dzVXk1a3AtSXYzanRWNnJoNUh1NGFlLXY5blBtd3l2LU1pbk5VQTRHMmYwc3hFUXRUb3RyZS01RkdIUHhQMlBZdTA1V1o0X3M3ZHp2UTA3WlRPTXZpdkRGRmppckEtd3RTaE53MmZpbjZvT0N0a01ieWQzZGNZSGhZd0otWUlxR3hMM3BtTdIB6AFBVV95cUxOWEdCVHBkNTNXbjNiMjV5ZHZmT3AyRnhVeEZmM0tSSXRfSU1aNVIzOHFQWXRUWTYyS0J6MERXSmVJWktRYkYxX2w4UmdlZUdZdDBHbFAxS1pUZFBYV2JuazNqdHE1djZ2Q2lhcHBGQWNEYkdfYUlJRVI3Vk1WTm1SR3FsTlp5QUFXa2NtRWp2ZzBpMzdKeHBlZENCQTR0WFluMHM5ckRURktrTTdOdDdYdDYtdG1GaWJWMjVjcWZLd19iaHUzUVYtZTdiMTk5TVB4VjRvenQ0dnhIdjJVTDBOdWs0VGJpSHNs?oc=5",
-   "publicado": "2026-11-23T13:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Real cai 14,6% em um mês: por que sofreu mais que outras 31 moedas?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbzZRdUJJUF9nelUwemwyMDY1MjNmcVQ2YVpIMEF3N0RfMDc3OWJ3ZWU5OHd5c2NzTktFN0JhdW84OEpReVBJMHJWb0ZnNHFGZ21SSF9LV0dvSVlzUC1qTktXX0hXc0l2Nkd3dHlSRzc4VkRnS3Q3Qm1NSV9fSzgwMUpmYU1sLVHSAYwBQVVfeXFMUDRnNjcwUWJLMU1KUGpIalFhWUtjS1FHdWt4TWdXRERIWnFlWTZ2TFdDUWZWcERnUXdYWVVQUGtCb1RpYnFWS3JlU1FlaWRlSWp1S25pWWtuOWVVcDJpSGlzM2NMVXNhbkM1ZDY1UC15aVUtN3h2VjFQalMwUUZIdWV3SWJTMjQyWTJYYk8?oc=5",
-   "publicado": "2026-11-23T13:09-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Braskem fecha acordo com credores envolvendo capitalização de US$ 4,9 bilhões",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/negocios/braskem-fecha-acordo-credores-capitalizacao/",
@@ -2419,40 +2601,6 @@
    "tickers": [
     "BRKM5"
    ]
-  },
-  {
-   "titulo": "Tech stocks rally after Nvidia board approves Jensen Huang's return as CEO",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
-   "publicado": "2026-11-23T12:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/tokenized-stocks-face-pushback-as-nyse-nasdaq-pivot-for-a-new-market-.html",
-   "publicado": "2026-11-23T12:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa cai de olho no dólar e retorno do CEO da Nvidia; veja os destaques desta segunda-feira (23)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
-   "publicado": "2026-11-23T12:20-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
