@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T11:52-03:00",
+  "atualizado_em": "2026-11-23T11:55-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -83,11 +83,11 @@
     ],
     [
      "11:35",
-     164809.0
+     165048.0
     ],
     [
-     "11:37",
-     164961.0
+     "11:40",
+     165128.0
     ]
    ]
   },
@@ -232,11 +232,11 @@
     ],
     [
      "11:50",
-     5.9548
+     5.9506
     ],
     [
-     "11:52",
-     5.9526
+     "11:55",
+     5.9482
     ]
    ]
   },
@@ -669,7 +669,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.18,
     "dolar30": -0.21
    },
    {
@@ -1423,7 +1423,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T11:52-03:00",
+ "atualizado_em": "2026-11-23T11:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1446,6 +1446,17 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Taxas de prefixados do Tesouro renovam máximas do ano na volta do feriado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSndvVmlSX1E3TEdjT0VkemJYSkg2WExtOGYtYVpVbTVHYlp3ejZiWXh3cUhaQ0E1dHFteVJzdFpFeHRyZzBiWF9xajVocEcyX3RtV1RuNHJvbUY5Rmpnbi0ycm9sQklLZmVGRjlYWWYtbzdDTnZkakdWUG15eWtPU1pQbXVJU0l6NTNZUFMwRmNVMC1vd3dMbUY4X0ZUUlNqTDhZMkp2cDVMVnBCTFkyaEVkb1lHTS1p0gG-AUFVX3lxTE5sZE9iR3cwOU5JZ0J2eUgyamFfc0tYUVR4OVYtZ01Ld1I4MGItQkZZc0h0bXJVSWhDTUQyUm9kRVRZMDdhWkozUzRsRV9pRHFGZ2w0YXhFd0xnRWQ5a0RVWGNHQ1g4VThlSllTQ3h3NnJaY2g2eHlEeFJpdFAwbHJfSkJWZl9wT2o0cF9SaTF2dUtrU2pESTdvbmFhVVZ1aDVsalB5eUpfRm43WlFwaHhYSjRSTEw2Ul82b1luM2c?oc=5",
+   "publicado": "2026-11-23T11:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -1582,19 +1593,6 @@
    "publicado": "2026-11-23T10:04-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros caem com Galípolo, fiscal e exterior no radar",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYkJWMmtrcnVmVVVFTmpOYUNHMUtuaEtaX1dnNXl1bnpHbDU0azdzREUyaWVfLWcxZXMzcGw3bFZtS24xY3BLSlFjNm5ac2NlQU55eHkwa2dCLTZtSWZicXQzZWRMaWROZ0dXdXJIeTZWMmRZOEo5Rzk2eHBaNkpQRVpFSEFLbzgxSGxpS09RdGY1UkJwR184bXVZeTkyV282VzlBU3NUbndzWHhfZW1FZnVpVjJfaHPSAcYBQVVfeXFMTWlLVGV1OEp3bWwxdHg5ZWN0WWZtaDJJRXA5aGpPTlNMR0VKQzdKY2JqYXZraldsT2NCMnd6UGdfY1F1OUtRbFdJRjRhWXFGdFQ4OThOc2lhTTVXRk40RHdyYmdhd20wSmZkUVRQZmU2d1FPWVV0eENSLWozTHB6YlpmSzU2U193allMaEw0aTZlUk5pS3VfN0Q1SWt4R1E3M0hkN1k0YVBNcE91VnVLWjhtT2JNMndWa0s4ZGtiLUNteHBIVlRB?oc=5",
-   "publicado": "2026-11-23T09:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO",
     "DI"
    ],
