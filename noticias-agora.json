@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T16:28-03:00",
+  "atualizado_em": "2026-11-23T16:30-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -303,11 +303,11 @@
     ],
     [
      "16:10",
-     165009.0
+     165017.0
     ],
     [
-     "16:13",
-     165033.0
+     "16:15",
+     164993.0
     ]
    ]
   },
@@ -672,11 +672,11 @@
     ],
     [
      "16:25",
-     5.9293
+     5.9285
     ],
     [
-     "16:28",
-     5.9288
+     "16:30",
+     5.928
     ]
    ]
   },
@@ -1570,7 +1570,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.01,
     "dolar30": 0.06
    },
    {
@@ -1597,7 +1597,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.05
    },
    {
     "hora": "16:03",
@@ -1610,7 +1610,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.05
    },
    {
     "hora": "16:08",
@@ -2620,7 +2620,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T16:28-03:00",
+ "atualizado_em": "2026-11-23T16:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2750,7 +2750,7 @@
   {
    "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB0gHQAUFVX3lxTFA0cGhXSVJaaERDWDk2eElLMklMY0xPcTczbm1aVEJsd1AwWnp3bEQzSFI4XzFETmdpdlZQQmNGbzE2OFJhUWRaeVBNNWVocjdUazdYT3NKN2V5TFdNZDBZTGg3UXB1Y0hnSW9yOElqZTZydG5jMFQzQ3N2ckx1c3dTQnY5UXV3OVY2QmNrM3RNSzBOOXJkbTNLN0JYOHVHZXY4NXVjeHExZUJpTkhhczdGMW04SWRxZHlsRHpNbUpTOEp0N0VxNldzVnVwNk9QVEE?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
    "publicado": "2026-11-23T15:33-03:00",
    "impacto": "medio",
    "ativos": [
@@ -2762,16 +2762,17 @@
    ]
   },
   {
-   "titulo": "Braskem (BRKM5) dispara com acordo com credores no radar; Petrobras pode aportar US$ 1,3 bilhão, diz jornal",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbExoYXE4bjJtcUtYRzRSYURuMXpUb1RHME1OWl9GQnJiVkl4U21DYWNJdTJCeWw4dXNsLXNPVTh1T0xTcEZ1dVJUeXJad1l6UjJwSlZwMTNyeDJKc3pDMUluMnR5d1VSSzFSUDlOZVdqSTE0VVhfeU1pUENDSTRmLVlNczBjWjRnSVN4SGVuMzBQMnNyR3VLQldCRnl3YTBwS1JORkdPOGFEaFBVUWRLME9GeWJlYkJWXzNDZFBib1RRZVlwQ3dkbHl5S3plX3ZOdlBR?oc=5",
-   "publicado": "2026-11-23T15:23-03:00",
-   "impacto": "medio",
+   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal; Ibovespa acelera queda com piora da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
+   "publicado": "2026-11-23T15:29-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": [
-    "BRKM5",
     "PETR4"
    ]
   },
@@ -2788,10 +2789,10 @@
    "tickers": []
   },
   {
-   "titulo": "Focus aponta piora da inflação e eleva Selic 2027, enquanto PIB perde força; veja as previsões",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRnZRS3pDTkxfbEJTWUJyVDdHZk4xTFEyT25fck1vYlJZbUhBRnV2SEprU1NkNHh0REFiR2UxZk84MlJvWG91OERlOE9IUHlWdUxtOVotZEZ2SFNKODM1eDc5aWNSU2p4ZGs0U25aSFNBa3lHUG1TY3RMNlo0SjhXNVg5aEhMSVRfdmlQXzJqM2NXRkFzcnpOSmdhQW9Ncm0tWGNXcWZjQUw0bGR4M1hNOWNfMGV5UUpzSEZnMVYyX05pNXlKb1RYZlRrNjRMNW1xMW1ySlc1NzA0TjY0dWFhaTYwcERUZ9IB6wFBVV95cUxOWE1ELUs0SE5ES1VHYmxSTWhoUUpVQjdFYmh2OGxhX1MtVzFFdHNoejQ0cnk0aHcyNURBM29VWHBIdWhZZ0EwWV8zd09MbTctZllyMW5mRm1JX292X253a3ViZFlUc3QycWZ6T28xZnRxS0xuS3o2RmlVWDM3MlpCUE0tTjVoc1FIQ01sYUhFY2FFV29tbVI4TUZBUU96U0F1LWljZWgtSTJ3UkNEYTJNSFh1WEpjd05EaXh1X25sdmFKekZUUzNaTTA0ZWZvSHR3RVRlSXdpRDN3X3REMGU2SU5pYTFIRFQ4eGFB?oc=5",
-   "publicado": "2026-11-23T14:39-03:00",
+   "titulo": "Dólar sobe após bater R$ 6 com política fiscal no radar; Bolsa cai",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVGI2ekpOSmxXbFVBYzYwZjNreXI3MGcwX0NVT29NSWRQTTVVb05YLXB5YlRwNXJDdW1NSFgxbVdTdFJ5OHpzRHlscmw4SzF1b0xFT2lzQTQxZ2lGUndKQjVOYXV6R2dsaGtwWFdSWGluX0dfUmlnNGhfY214OFZMeVJrR3NCQkt1S3BDRlp4R1JjeVl1MnpzM1RBR1BXbWo5NlRYUWpn?oc=5",
+   "publicado": "2026-11-23T14:44-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
@@ -2800,10 +2801,10 @@
    "tickers": []
   },
   {
-   "titulo": "Copom mantém previsão da taxa básica de juros para 13% em 2027",
-   "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcGc0WEpaNzBTTW5oM3I2Qm1lSVRSa3ktSlJsTXJuZWl0VW1ncC1RdXNJMExZdmhFdXNZdXVpUnZTMEVIdXF0OU54RVhKQklua0ZwTGVLZEZycjgtUzRGQWpiMWU2dGVOaW1maDV5elV1bkpCcjZmclNhMnlaQ3dGR0Fmd21LMm9zajFaSlBGT2NyQ2JsSDZrNzJ1TmJYTkg0SkM5MUE4UVQ3cnJtRzQxQW5tQ1pzYmMzMy03cUo2dlNucFlkRmFQcXdxbG5ZT1JqTGFqTzJ3?oc=5",
-   "publicado": "2026-11-23T14:30-03:00",
+   "titulo": "Focus aponta piora da inflação e eleva Selic 2027, enquanto PIB perde força; veja as previsões",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRnZRS3pDTkxfbEJTWUJyVDdHZk4xTFEyT25fck1vYlJZbUhBRnV2SEprU1NkNHh0REFiR2UxZk84MlJvWG91OERlOE9IUHlWdUxtOVotZEZ2SFNKODM1eDc5aWNSU2p4ZGs0U25aSFNBa3lHUG1TY3RMNlo0SjhXNVg5aEhMSVRfdmlQXzJqM2NXRkFzcnpOSmdhQW9Ncm0tWGNXcWZjQUw0bGR4M1hNOWNfMGV5UUpzSEZnMVYyX05pNXlKb1RYZlRrNjRMNW1xMW1ySlc1NzA0TjY0dWFhaTYwcERUZ9IB6wFBVV95cUxOWE1ELUs0SE5ES1VHYmxSTWhoUUpVQjdFYmh2OGxhX1MtVzFFdHNoejQ0cnk0aHcyNURBM29VWHBIdWhZZ0EwWV8zd09MbTctZllyMW5mRm1JX292X253a3ViZFlUc3QycWZ6T28xZnRxS0xuS3o2RmlVWDM3MlpCUE0tTjVoc1FIQ01sYUhFY2FFV29tbVI4TUZBUU96U0F1LWljZWgtSTJ3UkNEYTJNSFh1WEpjd05EaXh1X25sdmFKekZUUzNaTTA0ZWZvSHR3RVRlSXdpRDN3X3REMGU2SU5pYTFIRFQ4eGFB?oc=5",
+   "publicado": "2026-11-23T14:39-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
