@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T13:45-03:00",
+  "atualizado_em": "2026-11-23T13:48-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -175,7 +175,11 @@
     ],
     [
      "13:30",
-     165300.0
+     165280.0
+    ],
+    [
+     "13:33",
+     165281.0
     ]
    ]
   },
@@ -412,7 +416,11 @@
     ],
     [
      "13:45",
-     5.9832
+     5.9811
+    ],
+    [
+     "13:48",
+     5.9846
     ]
    ]
   },
@@ -1950,7 +1958,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T13:45-03:00",
+ "atualizado_em": "2026-11-23T13:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2010,6 +2018,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Braskem fecha acordo com credores envolvendo capitalização de US$ 4,9 bilhões",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/negocios/braskem-fecha-acordo-credores-capitalizacao/",
+   "publicado": "2026-11-23T12:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
   },
   {
    "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
@@ -2130,19 +2151,6 @@
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA3OVVkOTF5ZEpWcnN3dlM1MkJ2VTg4Z3Z4eGN0Vm1RYXlseEY4Yk5ZdXJTNnJUX0JYbzBscHVUT0ROMEdFUThhYXdKZjYwMkJBNjE4UnRFa3hpS2REUzBVeDFxYnV5cm1VMThr?oc=5",
    "publicado": "2026-11-23T10:50-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Galípolo defende conciliar agenda social e regras fiscais para conter a dívida",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/galipolo-defende-conciliar-agenda-social-e-regras-fiscais-para-conter-a-divida.shtml",
-   "publicado": "2026-11-23T10:48-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
