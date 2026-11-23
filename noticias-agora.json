@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T18:03-03:00",
+  "atualizado_em": "2026-11-23T18:05-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     164939.0
+     164868.0
     ]
    ]
   },
@@ -784,29 +784,19 @@
     ],
     [
      "18:00",
-     5.9295
+     5.9308
     ],
     [
-     "18:03",
-     5.9303
+     "18:05",
+     5.9313
+    ],
+    [
+     "18:05",
+     5.9313
     ]
    ]
   },
   "marcadores": [
-   {
-    "hora": "09:01",
-    "titulo": "Economistas sobem previsão da inflação e do dólar e diminuem a do PIB neste ano",
-    "fonte": "Folha",
-    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-sobem-previsao-da-inflacao-e-do-dolar-e-diminuem-a-do-pib-neste-ano.shtml",
-    "impacto": "alto",
-    "ativos": [
-     "WDO",
-     "DI"
-    ],
-    "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.13
-   },
    {
     "hora": "09:05",
     "titulo": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
@@ -1876,7 +1866,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.07
+    "dolar30": -0.05
    },
    {
     "hora": "17:34",
@@ -1889,7 +1879,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.07
+    "dolar30": -0.05
    },
    {
     "hora": "17:44",
@@ -1907,18 +1897,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Economistas sobem previsão da inflação e do dólar e diminuem a do PIB neste ano",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/economistas-sobem-previsao-da-inflacao-e-do-dolar-e-diminuem-a-do-pib-neste-ano.shtml",
-   "publicado": "2026-11-23T09:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
    "fonte": "CNBC",
@@ -2857,6 +2835,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+   "publicado": "2026-11-23T18:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2886,7 +2876,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T18:03-03:00",
+ "atualizado_em": "2026-11-23T18:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2900,6 +2890,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+   "publicado": "2026-11-23T18:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
    "fonte": "CNBC",
@@ -3060,17 +3062,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "‘Nas próximas duas semanas, indicações, fiscal e alíquota da CBS estarão resolvidos’, diz Durigan",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/nas-proximas-duas-semanas-indicacoes-fiscal-e-aliquota-da-cbs-estarao-resolvidos-diz-durigan/",
-   "publicado": "2026-11-23T16:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   },
