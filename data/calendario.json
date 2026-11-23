@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-22T07:50:00-03:00",
+  "atualizado_em": "2026-11-23T08:20:00-03:00",
   "eventos": [
     {
       "data": "2026-11-23",
@@ -58,15 +58,32 @@
       "data": "2026-11-23",
       "hora": "noite",
       "pais": "BR",
-      "evento": "Câmara: sessão extraordinária sobre o ajuste fiscal (PLP 299/2026)",
+      "evento": "Câmara: votação do ajuste fiscal (urgência e mérito)",
       "importancia": 2,
       "impacto": {
         "win": "volatil",
         "wdo": "volatil",
         "di": "volatil"
       },
-      "nota": "Hugo Motta marcou para segunda a votação do texto aprovado no Senado; o pacote pode melhorar as contas de 2027 em até R$ 56 bi (O Tempo).",
+      "nota": "Relator Mauro Benevides Filho manteve o texto do Senado; impacto estimado de R$ 50 bi em 2027. Destaques que mudem o texto devolvem o projeto ao Senado (Times Brasil).",
       "tipo": "ajuste-fiscal"
+    },
+    {
+      "data": "2026-11-24",
+      "hora": null,
+      "pais": "BR",
+      "evento": "Relatório bimestral de receitas e despesas",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Governo quer o ajuste aprovado antes do relatório (Times Brasil); bloqueios ou contingenciamentos mexem no prêmio fiscal.",
+      "tipo": "relatorio-bimestral",
+      "surpresa": null
     },
     {
       "data": "2026-11-24",
@@ -91,7 +108,7 @@
       "evento": "PIB dos EUA — 2ª estimativa (3º tri, anualizado)",
       "importancia": 2,
       "anterior": "3,4%",
-      "consenso": "3,4%",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil",
@@ -136,6 +153,23 @@
       "surpresa": null
     },
     {
+      "data": "2026-11-25",
+      "hora": "16h",
+      "pais": "US",
+      "evento": "Livro Bege (Fed)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Retrato regional da economia americana antes da reunião do Fed de 8 e 9 de dezembro.",
+      "tipo": "livro-bege",
+      "surpresa": null
+    },
+    {
       "anterior": null,
       "consenso": null,
       "resultado": null,
@@ -154,6 +188,22 @@
     },
     {
       "data": "2026-11-26",
+      "hora": "08h30",
+      "pais": "BR",
+      "evento": "Transações correntes e IED (out, BCB)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Fluxo externo ajuda a explicar a pressão sobre o real.",
+      "tipo": "transacoes-correntes",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-26",
       "hora": "09h",
       "pais": "BR",
       "evento": "IPCA-15 de novembro (IBGE)",
@@ -168,6 +218,55 @@
       },
       "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
       "tipo": "ipca-15",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-27",
+      "hora": "08h",
+      "pais": "BR",
+      "evento": "IGP-M de novembro (FGV)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil"
+      },
+      "nota": "Inflação no atacado; corrige contratos de aluguel.",
+      "tipo": "igp-m",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-27",
+      "hora": "08h30",
+      "pais": "BR",
+      "evento": "Resultado fiscal do setor público e dívida bruta (out, BCB)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Sai em semana de votação do ajuste; dívida bruta é o número que o mercado acompanha.",
+      "tipo": "resultado-fiscal",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-27",
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "Taxa de desemprego — PNAD Contínua (out, IBGE)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil"
+      },
+      "nota": "Mercado de trabalho apertado sustenta a inflação de serviços e mexe nos vértices do DI.",
+      "tipo": "pnad",
       "surpresa": null
     },
     {

@@ -1,162 +1,166 @@
 {
-  "tipo": "sem-pregao",
-  "data": "2026-11-22",
-  "gerado_em": "2026-11-22T07:50:00-03:00",
-  "titulo": "Ataques a petroleiros em Hormuz somam risco à reabertura da B3",
+  "tipo": "pregao",
+  "data": "2026-11-23",
+  "gerado_em": "2026-11-23T08:20:00-03:00",
+  "titulo": "NY ensaia alívio após semana de correção; Câmara vota ajuste à noite",
   "resumo": [
-    "Sem pregão hoje (domingo). No último pregão (quinta, 19), o Ibovespa caiu 0,69%, aos 166.376 pontos, e o dólar à vista subiu 1,10%, a R$ 5,93, o maior fechamento desde abril de 2025.",
-    "O fim de semana foi de poucas notícias novas no Brasil; o fato mais relevante veio do Golfo: segundo a Reuters, a agência marítima britânica UKMTO relatou no sábado dois petroleiros atingidos por projéteis perto de Khasab, no Estreito de Hormuz, sem vítimas. Petróleo mais caro pesa na inflação e no DI e costuma favorecer Petrobras.",
-    "Lá fora, a referência continua sendo a sexta de forte queda em NY (S&P 500 −3,7%, Nasdaq −5,3%), com a Nvidia sob investigação da SEC e o VIX acima de 37; o EWZ caiu 3,25% com a B3 fechada. A probabilidade de alta de juros pelo Fed em dezembro passou de 90% no CME FedWatch, o que sustenta o dólar global.",
-    "Em entrevista citada pela Folhapress, o ministro Dario Durigan disse ver desaceleração em 2027, mas descartou recessão e negou planos de controle de capitais ou de mudar a meta de inflação. A Câmara deve começar a votar o ajuste fiscal na noite de segunda, o principal vetor local para o DI longo e o WDO.",
-    "A semana é encurtada nos EUA: PCE e PIB saem na quarta (25), NY fecha na quinta (26, Ação de Graças) — mesmo dia do IPCA-15 aqui — e tem pregão curto na sexta."
+    "A B3 reabre depois do feriado de sexta. No último pregão (quinta, 19), o Ibovespa caiu 0,69%, aos 166.376 pontos, e o dólar à vista subiu 1,10%, a R$ 5,93, o maior fechamento desde abril de 2025, mesmo com venda de US$ 1 bi à vista pelo Banco Central.",
+    "Lá fora, os futuros de NY devolvem parte da queda de sexta (S&P 500 −3,7%, Nasdaq −5,3%): às 7h30, S&P futuro +2,7%, Nasdaq futuro +3,5%, EWZ +1,4% e VIX −16%. Segundo a Reuters, o movimento é um repique das ações ligadas a IA, e analistas citados ainda tratam o rali com cautela.",
+    "No domingo, o secretário do Tesouro dos EUA, Scott Bessent, alertou o Fed contra apertar demais os juros; segundo o Investing.com, o mercado deixou de precificar integralmente uma alta em dezembro. Juro americano menos pressionado tende a aliviar o dólar global e o DI.",
+    "O principal vetor local é a sessão da Câmara à noite sobre o ajuste fiscal (impacto estimado de R$ 50 bi em 2027): primeiro a urgência, depois o mérito. Mudanças no texto devolveriam o projeto ao Senado — risco para o prêmio do DI longo e para o WDO, que já passa de R$ 5,90.",
+    "Petróleo em queda (Brent −3,6% ante o fechamento anterior, pelo nosso painel), com a oferta em recuperação apesar de novos incidentes com navios no Golfo relatados pela UKMTO; agenda local fraca até a noite (Focus às 8h25 e PMI americano às 11h45)."
   ],
   "pontos": [
     {
-      "titulo": "Petroleiros atingidos em Hormuz",
-      "texto": "Risco de oferta pode levar o Brent para cima na segunda: mexe em Petrobras no WIN e na inflação do DI."
+      "titulo": "Futuros de NY sobem mais de 2%",
+      "texto": "Repique após correção de 10% no S&P 500 e EWZ +1,4% dão tom positivo à abertura do WIN e aliviam o WDO."
     },
     {
-      "titulo": "Câmara vota ajuste fiscal na segunda",
-      "texto": "Sessão à noite; mudanças no texto ou atraso na votação mexem no prêmio do DI longo e no WDO."
+      "titulo": "Câmara vota ajuste fiscal à noite",
+      "texto": "Urgência e mérito hoje; desidratação ou volta ao Senado pesam no DI longo e no dólar, que está em R$ 5,93."
     },
     {
-      "titulo": "WIN reabre após NY em correção",
-      "texto": "EWZ −3,25% na sexta e Fed perto de subir juros em dezembro mantêm pressão sobre emergentes e o dólar."
+      "titulo": "Bessent pede cautela ao Fed",
+      "texto": "Mercado reduziu aposta de alta em dezembro; juro americano menor tende a aliviar o dólar global e o DI."
     }
   ],
+  "termometro": {
+    "win": {
+      "leitura": "bullish",
+      "motivo": "S&P futuro +2,7%, Nasdaq futuro +3,5% e EWZ +1,4% antes da abertura, com agenda local fraca até a votação do ajuste à noite."
+    },
+    "wdo": {
+      "leitura": "bearish",
+      "motivo": "VIX −16%, S&P futuro +2,7% e dólar no exterior −0,4% apontam alívio após seis altas seguidas; DXY estável (+0,04%) e o risco fiscal da votação à noite limitam a queda."
+    }
+  },
   "destaques": [
     {
-      "hora": "seg 6h",
-      "evento": "PMIs preliminares da zona do euro (nov)",
-      "por_que": "Atividade europeia mexe com o euro e o dólar global antes da abertura."
-    },
-    {
-      "hora": "seg 8h25",
+      "hora": "8h25",
       "evento": "Boletim Focus (BCB)",
-      "por_que": "Expectativas de Selic, IPCA e câmbio mexem nos vértices do DI."
+      "por_que": "Expectativas de Selic, IPCA e câmbio mexem nos vértices do DI após semana de dólar em alta."
     },
     {
-      "hora": "seg 11h45",
+      "hora": "11h45",
       "evento": "PMI composto preliminar S&P Global (EUA, nov)",
-      "por_que": "Atividade americana mexe com Treasuries e o dólar num momento de forte aversão a risco."
+      "por_que": "Atividade americana mexe com Treasuries e o dólar global num momento de aposta menor em alta do Fed."
     },
     {
-      "hora": "seg noite",
-      "evento": "Câmara: sessão extraordinária sobre o ajuste fiscal",
-      "por_que": "O andamento da votação mexe no prêmio do DI longo e no dólar."
+      "hora": "após 18h",
+      "evento": "Balanço da HPE (EUA)",
+      "por_que": "Termômetro do setor de tecnologia/IA, que puxou a correção em NY na semana passada."
+    },
+    {
+      "hora": "noite",
+      "evento": "Câmara: votação do ajuste fiscal (urgência e mérito)",
+      "por_que": "Aprovação sem mudanças evita volta ao Senado; o resultado mexe no DI longo e no WDO de terça."
     }
   ],
   "exterior": [
     {
-      "ativo": "S&P 500 (sex)",
-      "variacao": "−3,70%"
+      "ativo": "S&P 500 fut.",
+      "variacao": "+2,69%"
     },
     {
-      "ativo": "Nasdaq (sex)",
-      "variacao": "−5,28%"
+      "ativo": "Nasdaq fut.",
+      "variacao": "+3,50%"
     },
     {
-      "ativo": "Dow Jones (sex)",
-      "variacao": "−1,93%"
+      "ativo": "EWZ",
+      "variacao": "+1,37%"
     },
     {
-      "ativo": "EWZ (sex)",
-      "variacao": "−3,25%"
+      "ativo": "DXY",
+      "variacao": "+0,04%"
     },
     {
-      "ativo": "Treasury 10a (sex)",
-      "variacao": "−0,12 p.p. (4,93%)"
+      "ativo": "Brent",
+      "variacao": "−3,59%"
     },
     {
-      "ativo": "Brent (sex)",
-      "variacao": "+0,6%"
+      "ativo": "VIX",
+      "variacao": "−16,08%"
     }
   ],
   "noticias": [
     {
-      "titulo": "Dois petroleiros são atingidos por projéteis perto do Estreito de Hormuz",
-      "fonte": "Reuters (via gCaptain)",
-      "hora": "sáb 16h38",
-      "url": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/",
-      "por_que": "Segundo a UKMTO, um navio foi atingido na popa e outro na casa de máquinas, sem vítimas; o Irã diz que um petroleiro bateu numa mina, versão que a Reuters não confirmou. Risco à oferta tende a pressionar o petróleo, a inflação e o dólar na reabertura.",
+      "titulo": "Futuros de Wall Street se recuperam após semana difícil para ações de IA",
+      "fonte": "Reuters (via Investing.com)",
+      "hora": "04h54",
+      "url": "https://investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594",
+      "por_que": "S&P 500 e Dow confirmaram correção (mais de 10% abaixo do recorde) na sexta; o repique dos futuros (Nasdaq 100 +3%) melhora o apetite por risco e tende a ajudar o WIN na abertura.",
       "impacto": {
-        "wdo": "alta",
-        "di": "alta"
+        "win": "alta",
+        "wdo": "baixa"
       }
     },
     {
-      "titulo": "Durigan vê desaceleração em 2027, mas descarta recessão",
-      "fonte": "Folhapress (via Jornal do Brasil)",
-      "hora": "sáb 08h",
-      "url": "https://www.jb.com.br/economia/2026/11/1061611-durigan-diz-que-desaceleracao-em-2027-nao-significa-recessao.html",
-      "por_que": "O ministro da Fazenda negou planos de controle de capitais ou de mudança na meta de inflação e disse que déficits seguidos não são sustentáveis; o tom importa para o prêmio de risco às vésperas da votação do ajuste.",
+      "titulo": "Bessent diz que governo vai apurar vendas de chips da Nvidia à China e alerta Fed",
+      "fonte": "Investing.com",
+      "hora": "07h12",
+      "url": "https://za.investing.com/news/economy-news/futures-bounce-after-ai-selloff-bessent-on-nvidia-probe--whats-moving-markets-4591507",
+      "por_que": "O secretário do Tesouro também disse que apertar demais os juros pode pôr a economia em risco; segundo o texto, o mercado deixou de precificar integralmente uma alta do Fed em dezembro, o que tende a aliviar o dólar global e o DI.",
+      "impacto": {
+        "wdo": "baixa",
+        "di": "baixa"
+      }
+    },
+    {
+      "titulo": "Câmara vota nesta segunda ajuste fiscal com impacto estimado de R$ 50 bi em 2027",
+      "fonte": "Times Brasil (CNBC)",
+      "hora": "06h55",
+      "url": "https://timesbrasil.com.br/brasil/camara-vota-nesta-segunda-pacote-fiscal-que-pode-gerar-economia-de-r-50-bilhoes-em-2027/",
+      "por_que": "O relator Mauro Benevides Filho manteve o texto do Senado (limite de gastos, corte linear de 10% em benefícios e teto para compensação de créditos); destaques da oposição podem devolvê-lo ao Senado. O desfecho mexe no prêmio do DI longo e no dólar.",
       "impacto": {
         "di": "neutro",
         "wdo": "neutro"
       }
     },
     {
-      "titulo": "Wall Street tem a pior semana em mais de 18 meses; S&P 500 cai 8,6%",
-      "fonte": "TipRanks",
-      "hora": "dom 07h02",
-      "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-22",
-      "por_que": "Nvidia caiu 22,9% em cinco sessões após notícias de exame da SEC na contabilidade; a ata do Fed apontou para mais altas de juros. Aversão a risco global tende a pesar sobre o WIN na segunda.",
+      "titulo": "Futuros dos EUA sobem; Ásia cai na maioria e Kospi recua 3,3%",
+      "fonte": "AP (via KPRC)",
+      "hora": "04h37",
+      "url": "https://www.click2houston.com/business/2026/11/23/us-futures-climb-and-asian-shares-mostly-decline-as-some-tech-stocks-fall/",
+      "por_que": "Tecnologia ainda pesou na Ásia (Samsung −3,1%), mas Taiwan subiu 2,2% e Xangai 0,2%; o Brent cai para cerca de US$ 92 com a recuperação da oferta, o que alivia a inflação e o DI e tira força de Petrobras no WIN.",
       "impacto": {
-        "win": "baixa",
-        "wdo": "alta"
+        "di": "baixa"
       }
     },
     {
-      "titulo": "Chance de alta de juros do Fed em dezembro chega a 92%",
-      "fonte": "Charles Schwab",
-      "hora": "sex 14h10",
-      "url": "https://www.schwab.com/learn/story/market-volatility",
-      "por_que": "Pelo CME FedWatch, a chance de duas ou mais altas até junho passou de 80%; juro americano mais alto fortalece o dólar e pressiona o DI.",
+      "titulo": "BC vende US$ 1 bi à vista, mas dólar fecha no maior valor desde abril de 2025",
+      "fonte": "Times Brasil (CNBC)",
+      "hora": "qui 17h33",
+      "url": "https://timesbrasil.com.br/brasil/economia-brasileira/apesar-de-intervencao-do-bc-dolar-fecha-a-r-593/",
+      "por_que": "Foi a sexta alta seguida, com dúvidas sobre a capacidade do ajuste de estabilizar a dívida; o leilão extraordinário mostra que o BC está atento a disfuncionalidades no câmbio na reabertura.",
       "impacto": {
-        "wdo": "alta",
-        "di": "alta",
-        "win": "baixa"
-      }
-    },
-    {
-      "titulo": "Câmara marca votação do ajuste fiscal para segunda (23)",
-      "fonte": "O Tempo",
-      "hora": "qui 08h01",
-      "url": "https://www.otempo.com.br/politica/congresso/2026/11/19/motta-marca-votacao-do-pacote-de-ajuste-fiscal-na-camara-para-a-proxima-segunda-23-11",
-      "por_que": "O pacote pode melhorar as contas de 2027 em até R$ 56 bi, segundo o texto; aprovação sem desidratação tende a aliviar o DI longo, e atrasos tendem a pressionar.",
-      "impacto": {
-        "di": "neutro"
+        "wdo": "neutro"
       }
     }
   ],
-  "proximo_pregao": {
-    "data": "2026-11-23",
-    "o_que_esperar": "A B3 reabre na segunda absorvendo dois dias de NY (EWZ −3,25% na sexta) e os ataques a petroleiros em Hormuz no sábado, com o dólar em R$ 5,93; no radar, PMIs, Focus e a sessão da Câmara sobre o ajuste fiscal à noite."
-  },
   "fontes": [
     {
-      "titulo": "Reuters (via gCaptain) — Two Tanker Incidents Reported Near Oman; Vessel Hit Mine East Of Hormuz",
-      "url": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/"
+      "titulo": "Reuters (via Investing.com) — Wall Street futures rebound after rough week for AI-linked shares",
+      "url": "https://investing.com/news/stock-market-news/wall-street-futures-rebound-after-rough-week-for-ailinked-shares-5044594"
     },
     {
-      "titulo": "Jornal do Brasil (com Folhapress) — Durigan diz ver desaceleração em 2027, mas afasta recessão",
-      "url": "https://www.jb.com.br/economia/2026/11/1061611-durigan-diz-que-desaceleracao-em-2027-nao-significa-recessao.html"
+      "titulo": "Investing.com — Futures bounce after AI selloff; Bessent on Nvidia probe: what's moving markets",
+      "url": "https://za.investing.com/news/economy-news/futures-bounce-after-ai-selloff-bessent-on-nvidia-probe--whats-moving-markets-4591507"
     },
     {
-      "titulo": "Charles Schwab — November Nightmare on Wall Street: AI Trade Cracks",
-      "url": "https://www.schwab.com/learn/story/market-volatility"
+      "titulo": "Times Brasil — Câmara vota nesta segunda pacote fiscal que pode gerar economia de R$ 50 bilhões em 2027",
+      "url": "https://timesbrasil.com.br/brasil/camara-vota-nesta-segunda-pacote-fiscal-que-pode-gerar-economia-de-r-50-bilhoes-em-2027/"
     },
     {
-      "titulo": "TipRanks — The Week That Was, The Week Ahead: Macro and Markets, November 22",
-      "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-november-22"
+      "titulo": "AP (via KPRC) — US futures climb and Asian shares mostly decline as some tech stocks fall",
+      "url": "https://www.click2houston.com/business/2026/11/23/us-futures-climb-and-asian-shares-mostly-decline-as-some-tech-stocks-fall/"
     },
     {
-      "titulo": "O Tempo — Motta marca votação do pacote de ajuste fiscal na Câmara para a próxima segunda (23/11)",
-      "url": "https://www.otempo.com.br/politica/congresso/2026/11/19/motta-marca-votacao-do-pacote-de-ajuste-fiscal-na-camara-para-a-proxima-segunda-23-11"
+      "titulo": "Times Brasil — Apesar de intervenção do BC, dólar fecha a R$ 5,93",
+      "url": "https://timesbrasil.com.br/brasil/economia-brasileira/apesar-de-intervencao-do-bc-dolar-fecha-a-r-593/"
     },
     {
-      "titulo": "Agência Gov (via IBGE) — Prévia da inflação de outubro é menor, com queda de preços de água e luz",
-      "url": "https://agenciagov.ebc.com.br/noticias/202610/previa-da-inflacao-de-outubro-e-menor-com-queda-de-precos-de-agua-e-luz"
+      "titulo": "Money Times — Inflação no Brasil e nos EUA movimentam a semana; veja a agenda",
+      "url": "https://www.moneytimes.com.br/inflacao-no-brasil-e-nos-eua-movimentam-a-semana-veja-a-agenda-de-indicadores/"
     }
   ]
 }
