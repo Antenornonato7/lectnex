@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T10:03-03:00",
+  "atualizado_em": "2026-11-23T10:05-03:00",
   "dolar": {
    "anterior": 5.9488,
    "pontos": [
@@ -55,11 +55,11 @@
     ],
     [
      "10:00",
-     5.9868
+     5.9905
     ],
     [
-     "10:03",
-     5.9888
+     "10:05",
+     5.9935
     ]
    ]
   },
@@ -215,7 +215,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "dolar30": 0.21
    },
    {
     "hora": "09:43",
@@ -757,7 +757,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T10:03-03:00",
+ "atualizado_em": "2026-11-23T10:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -772,6 +772,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+   "publicado": "2026-11-23T10:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "China lamenta fracasso da COP31 mas afirma que transição verde é 'irreversível'",
    "fonte": "Folha",
@@ -852,17 +864,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pacote de ajuste fiscal do governo é um ‘band-aid’ para um problema grave",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/duquesa-de-tax/pacote-ajuste-fiscal-governo-band-aid-problema-grave/",
-   "publicado": "2026-11-23T09:30-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
