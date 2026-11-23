@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T13:50-03:00",
+  "atualizado_em": "2026-11-23T13:53-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -179,7 +179,11 @@
     ],
     [
      "13:35",
-     165346.0
+     165081.0
+    ],
+    [
+     "13:38",
+     165097.0
     ]
    ]
   },
@@ -420,7 +424,11 @@
     ],
     [
      "13:50",
-     5.9836
+     5.9866
+    ],
+    [
+     "13:53",
+     5.9888
     ]
    ]
   },
@@ -1043,7 +1051,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.03,
+    "ibov30": -0.19,
     "dolar30": -0.08
    },
    {
@@ -1058,7 +1066,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.11
+    "dolar30": 0.16
    },
    {
     "hora": "13:36",
@@ -1958,7 +1966,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T13:50-03:00",
+ "atualizado_em": "2026-11-23T13:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1966,7 +1974,6 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -2016,6 +2023,19 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal do governo Lula; Ibovespa reduz queda com NY",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
+   "publicado": "2026-11-23T12:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2090,15 +2110,13 @@
    ]
   },
   {
-   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal do governo Lula; Ibovespa reduz queda com NY",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
-   "publicado": "2026-11-23T12:08-03:00",
-   "impacto": "alto",
+   "titulo": "Dólar a R$ 6 e a armadilha de tentar proteger o patrimônio tarde demais",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWko4eW9IQ0FCdjhvNmE3elBHQjFCSHFOM2UySEQxVVZQUnFCc09sWjNtMXdiQ3ZydjE2LTVQOVRBU0NwS3NlNEJxc3pGSE4xWkpsNU85RmlhbnQtckV3U09GYlV1MklOMkNTSmlVYlkyYlk3Zk93ZlR1VmtaZXA3Wk5oYUNENGtldTgyalNjZllmT0RLSnRvUXhXcy1QM0tsZ2dTaFE1b2VIc3dqN0RzazFfb0Y3OVdXZUFwS1N4MF9PTklwUWsyaNIBzgFBVV95cUxNQ3FKRWdzWWE4QXZBSG9nUGlkTEZmdWM3ckpnNllqRWRaWXZPRFJzVGhvb2pOQXRiQzNTRFhQY1QxNWtSOG1zNFdKYmFQZ20wSUh5WC1XRlNGbDhDMU1NclF2Nm9hUG1Ddy1peTFabldfanRsbHk3a21mb09RdDdteXVJN0Q4eGtLRmUtQW9mVmx4Yk1jTTlLaVdqcnpDeFNubXRxTHcwSC1JYkYtc1NVMnNKUno1TlVpOGg1NHBEaXlCX2VsTWtUY2xGdjN2QQ?oc=5",
+   "publicado": "2026-11-23T12:07-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
+    "WDO"
    ],
    "tickers": []
   },
@@ -2122,19 +2140,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar bate R$ 6 e Ibovespa cai mais de 1% com pacote fiscal no radar",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA3OVVkOTF5ZEpWcnN3dlM1MkJ2VTg4Z3Z4eGN0Vm1RYXlseEY4Yk5ZdXJTNnJUX0JYbzBscHVUT0ROMEdFUThhYXdKZjYwMkJBNjE4UnRFa3hpS2REUzBVeDFxYnV5cm1VMThr?oc=5",
-   "publicado": "2026-11-23T10:50-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
