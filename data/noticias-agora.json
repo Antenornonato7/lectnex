@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T16:38-03:00",
+  "atualizado_em": "2026-11-23T17:08-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -311,11 +311,31 @@
     ],
     [
      "16:20",
-     164958.0
+     164968.0
     ],
     [
-     "16:23",
-     164929.0
+     "16:25",
+     164987.0
+    ],
+    [
+     "16:30",
+     164820.0
+    ],
+    [
+     "16:35",
+     164734.0
+    ],
+    [
+     "16:40",
+     164592.0
+    ],
+    [
+     "16:45",
+     164716.0
+    ],
+    [
+     "16:50",
+     164794.0
     ]
    ]
   },
@@ -688,11 +708,35 @@
     ],
     [
      "16:35",
-     5.9312
+     5.9341
     ],
     [
-     "16:38",
-     5.9321
+     "16:40",
+     5.9325
+    ],
+    [
+     "16:45",
+     5.933
+    ],
+    [
+     "16:50",
+     5.9283
+    ],
+    [
+     "16:55",
+     5.9275
+    ],
+    [
+     "17:00",
+     5.9268
+    ],
+    [
+     "17:05",
+     5.9265
+    ],
+    [
+     "17:08",
+     5.9265
     ]
    ]
   },
@@ -1519,6 +1563,23 @@
     "dolar30": -0.62
    },
    {
+    "hora": "15:29",
+    "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal; Ibovespa acelera queda com piora da Petrobras",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": -0.02,
+    "dolar30": -0.59
+   },
+   {
     "hora": "15:33",
     "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
     "fonte": "Estadão",
@@ -1599,7 +1660,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.03,
+    "ibov30": -0.02,
     "dolar30": -0.1
    },
    {
@@ -1612,7 +1673,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.16,
     "dolar30": 0.07
    },
    {
@@ -1625,7 +1686,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.16,
     "dolar30": 0.07
    },
    {
@@ -1638,8 +1699,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.08
+    "ibov30": -0.16,
+    "dolar30": 0.12
    },
    {
     "hora": "16:08",
@@ -1651,8 +1712,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.08
+    "ibov30": -0.16,
+    "dolar30": 0.12
    },
    {
     "hora": "16:11",
@@ -1666,8 +1727,8 @@
     "tickers": [
      "GGBR4"
     ],
-    "ibov30": null,
-    "dolar30": 0.04
+    "ibov30": -0.26,
+    "dolar30": 0.05
    },
    {
     "hora": "16:13",
@@ -1679,8 +1740,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.04
+    "ibov30": -0.26,
+    "dolar30": 0.05
    },
    {
     "hora": "16:21",
@@ -1693,60 +1754,53 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": -0.11,
+    "dolar30": 0.1
+   },
+   {
+    "hora": "16:29",
+    "titulo": "Alongar a dívida agora ou esperar: o crédito com garantia real depois da eleição",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPaEhUVC02Y3FoMmZ6cnNxM2NqQUx4Q19OeTQ3VUdWSjh0NjRUYU5hbE05NXpLRkVUVmwyb0RDdFZZaFl2OE9UeU5rV094M1l3cGc0ZU9QcGtudFpMT005cnFneEJOR0pWRUtEZTdRc29CYm1kNVRheWRjaF9GZzVmYnNvLXgySDh0YUxmLTJHRTBrcWk0ZG5DYWROS2xuTHo2bm1wckdiU2pULWtuVTBDTlZ2MFdtdGJVX2ZuVGlxWVNQbzNFVFNxbW13TTNTaC1CSDE3QWlGdUREaFFZZVlSRk5hOExlc3paZlHSAfgBQVVfeXFMTVFRRWFvNEN6MjlKajQtT0FtS09zdl9DV1VKc3JqUnhIeU5hZElIeG9ldUMyb1hoZDQzckxzbkJEYmt6UzU1NkhBM0J3dUwzSk1Tcl9mTzNNdUhYNkRaZ29GOHRfaVA2OTJHck5BS29Kay1aZWFCVWZ4aFRqdjg2NXdkUWd6eVZxWE1fSmEwVVR5c0pFOVk4elEzZU81SHd3dFlrSHlLdkVUREZKMGd5c3NjdjFXUGRheTlHODBuMG9KMS01c3dlUGZGaEdoYnM0T01leTVZbWM0LWJ0SEUwRlN0dkxkN3hSM0tGQ3YyTEhSaFFLaGhVTWw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.02
+   },
+   {
+    "hora": "16:56",
+    "titulo": "Custo de capital é o principal desafio para crescimento do Brasil, diz CEO do Itaú",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/custo-de-capital-e-o-principal-desafio-para-crescimento-do-brasil-diz-ceo-do-itau.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:57",
+    "titulo": "Câmara pode votar ajuste fiscal nesta segunda-feira",
+    "fonte": "Agência Brasil",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/camara-pode-votar-ajuste-fiscal-nesta-segunda-feira",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Opinião | Nem US$ 1 bilhão do BC conteve a alta do dólar; o que isso revela sobre a economia?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOE5UZEZwX0ZHWjl1SHNfcy10bjZtYzVKaGtMOUE5d0RFTzZ3dWxVUGk3cjVRczBQeExaMWtNYkJVMHhvVmZKc1ppOUl2NDR0TVQ4VkRjdVZSNHFrTDVBTGpiNU9uUjNsVFFkaS13YV9zZFVKRHh2OENFNHhSU19jc09CVk9Uc21OV0Rld3hFZjlfMzRjWHRIZVJ4Sjh6Sk1FTDJxRkFJU0l2WVJkamo5N3Y2aDQ5ZDR2bVh5aWN6RXEtRkVsMl91V2NfZjBIQkMwdHc?oc=5",
-   "publicado": "2026-11-23T07:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Manhã no mercado: Dólar a caminho de R$ 6, Galípolo e recuperação das bolsas de NY devem marcar sessão",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNYi1ORkRWT0dlMURJX2VYMXBjb1FVc3h0NmJOcnVuMVRqYjgtNVF3MUgwc0gwbFVpdlhmNXhOZ2p1UEU3U0dLdUxVeXNPSUo0RDNnSFoxMUVrbW9GbXliVnBWbzNJQXlYbk9WSW1NNndIbXU4RXNCS3FLUEpKVmlQb1lkRVRsdTRPd09ueEM4QlJrVENwWlR6YUY0N0RhSVRkNG5zU3FlaklHZXIyc2JyclQ1c1pXX3BhMXdlaW9QalJGcG5ZY1R3OVRqZnhhOWlXNm83QXpLMVRpd0xpU200NWRSU2ltMmdGVjBydnVR0gH8AUFVX3lxTE83bVhwLXRzS2dWT2duOF9hUS1uYmdCSHg4UjJXODcyTnpvN25iYkc1Ujd2XzU5QmU2bzZkaEJHNEx2V1RDT1g4aEFtbWMxNWIzOFpTMU1xNVliLWs4WnRCQXJjaUhlMnhaeDdaNGVXdlNtb3pSVnVOa29ndGJOVVlZWkYxSFVlUFkwVVRmV2NIMTJSejJDeEduRngyN3ZMUm1IS2ljVHNfOEE2TXZGUlh0UTJjajd2YTNCLXRYYTUxdDFWY29sZHBzOEtZTU5hcGZOTkxyMzZXZ0RWa0FUcEFGYWtUNTlCNmFrNVJSMjhvUGEtUHdILUp5Yi1MdA?oc=5",
-   "publicado": "2026-11-23T08:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Boletim Focus eleva projeções para inflação e dólar e prevê Selic a 13% em 2027",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11WUVGWmFkMjM0a0RjREZRblluSkxpQ21fOC1xUEROT0l0MzN2Zlh1NUxaX0FwX1pzckdaRkY0ZG1HT2xrYWNsRUZBNWhoTnBLS0QwWUladFRldXNsYmlzS2xwMEgxYlVza29OQmE2V01LMTc4aUp0OWFib9IBgAFBVV95cUxQSjNTWnA0cWtSNjgzMEtORTVoR2hzYndBTExSVUFzSUJzblVDUzhRWUZuZm9RZ2wyMDBEeWdfWG9DdjV6VnIyaUxMUFVZekk1Y3doS2tlRVM1Z0ZCYXlsR1hpbjlpSjIwZGFBbmp1Y3B4WjdTMWlTRGVjYm5tTXpSaQ?oc=5",
-   "publicado": "2026-11-23T08:32-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Boletim Focus eleva projeções para inflação e dólar e prevê Selic a 13% em 2027",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE11WUVGWmFkMjM0a0RjREZRblluSkxpQ21fOC1xUEROT0l0MzN2Zlh1NUxaX0FwX1pzckdaRkY0ZG1HT2xrYWNsRUZBNWhoTnBLS0QwWUladFRldXNsYmlzS2xwMEgxYlVza29OQmE2V01LMTc4aUp0OWFibw?oc=5",
-   "publicado": "2026-11-23T08:32-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Tempestade perfeita? Goldman vê real atrativo, mas recomenda cautela no curto prazo",
    "fonte": "InfoMoney",
@@ -2498,6 +2552,21 @@
    ]
   },
   {
+   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal; Ibovespa acelera queda com piora da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
+   "publicado": "2026-11-23T15:29-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
@@ -2648,6 +2717,41 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Alongar a dívida agora ou esperar: o crédito com garantia real depois da eleição",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPaEhUVC02Y3FoMmZ6cnNxM2NqQUx4Q19OeTQ3VUdWSjh0NjRUYU5hbE05NXpLRkVUVmwyb0RDdFZZaFl2OE9UeU5rV094M1l3cGc0ZU9QcGtudFpMT005cnFneEJOR0pWRUtEZTdRc29CYm1kNVRheWRjaF9GZzVmYnNvLXgySDh0YUxmLTJHRTBrcWk0ZG5DYWROS2xuTHo2bm1wckdiU2pULWtuVTBDTlZ2MFdtdGJVX2ZuVGlxWVNQbzNFVFNxbW13TTNTaC1CSDE3QWlGdUREaFFZZVlSRk5hOExlc3paZlHSAfgBQVVfeXFMTVFRRWFvNEN6MjlKajQtT0FtS09zdl9DV1VKc3JqUnhIeU5hZElIeG9ldUMyb1hoZDQzckxzbkJEYmt6UzU1NkhBM0J3dUwzSk1Tcl9mTzNNdUhYNkRaZ29GOHRfaVA2OTJHck5BS29Kay1aZWFCVWZ4aFRqdjg2NXdkUWd6eVZxWE1fSmEwVVR5c0pFOVk4elEzZU81SHd3dFlrSHlLdkVUREZKMGd5c3NjdjFXUGRheTlHODBuMG9KMS01c3dlUGZGaEdoYnM0T01leTVZbWM0LWJ0SEUwRlN0dkxkN3hSM0tGQ3YyTEhSaFFLaGhVTWw?oc=5",
+   "publicado": "2026-11-23T16:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Custo de capital é o principal desafio para crescimento do Brasil, diz CEO do Itaú",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/custo-de-capital-e-o-principal-desafio-para-crescimento-do-brasil-diz-ceo-do-itau.shtml",
+   "publicado": "2026-11-23T16:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Câmara pode votar ajuste fiscal nesta segunda-feira",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/camara-pode-votar-ajuste-fiscal-nesta-segunda-feira",
+   "publicado": "2026-11-23T16:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2677,7 +2781,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T16:38-03:00",
+ "atualizado_em": "2026-11-23T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2693,6 +2797,56 @@
  ],
  "noticias": [
   {
+   "titulo": "Câmara pode votar ajuste fiscal nesta segunda-feira",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/camara-pode-votar-ajuste-fiscal-nesta-segunda-feira",
+   "publicado": "2026-11-23T16:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Custo de capital é o principal desafio para crescimento do Brasil, diz CEO do Itaú",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/custo-de-capital-e-o-principal-desafio-para-crescimento-do-brasil-diz-ceo-do-itau.shtml",
+   "publicado": "2026-11-23T16:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
+   "titulo": "Venda de minas de níquel brasileiras à China preocupa indústria da União Europeia",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/infraestrutura/2026/11/venda-de-minas-de-niquel-brasileiras-a-china-preocupa-industria-da-uniao-europeia.shtml",
+   "publicado": "2026-11-23T16:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Depois de superar R$ 6, dólar passa a cair; Ibovespa segue no negativo com queda de 2% da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
+   "publicado": "2026-11-23T16:36-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Peterson: Here’s what Bessent’s about-face on Jensen Huang reveals about Trump and China",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
@@ -2700,6 +2854,17 @@
    "impacto": "medio",
    "ativos": [
     "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Alongar a dívida agora ou esperar: o crédito com garantia real depois da eleição",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPaEhUVC02Y3FoMmZ6cnNxM2NqQUx4Q19OeTQ3VUdWSjh0NjRUYU5hbE05NXpLRkVUVmwyb0RDdFZZaFl2OE9UeU5rV094M1l3cGc0ZU9QcGtudFpMT005cnFneEJOR0pWRUtEZTdRc29CYm1kNVRheWRjaF9GZzVmYnNvLXgySDh0YUxmLTJHRTBrcWk0ZG5DYWROS2xuTHo2bm1wckdiU2pULWtuVTBDTlZ2MFdtdGJVX2ZuVGlxWVNQbzNFVFNxbW13TTNTaC1CSDE3QWlGdUREaFFZZVlSRk5hOExlc3paZlHSAfgBQVVfeXFMTVFRRWFvNEN6MjlKajQtT0FtS09zdl9DV1VKc3JqUnhIeU5hZElIeG9ldUMyb1hoZDQzckxzbkJEYmt6UzU1NkhBM0J3dUwzSk1Tcl9mTzNNdUhYNkRaZ29GOHRfaVA2OTJHck5BS29Kay1aZWFCVWZ4aFRqdjg2NXdkUWd6eVZxWE1fSmEwVVR5c0pFOVk4elEzZU81SHd3dFlrSHlLdkVUREZKMGd5c3NjdjFXUGRheTlHODBuMG9KMS01c3dlUGZGaEdoYnM0T01leTVZbWM0LWJ0SEUwRlN0dkxkN3hSM0tGQ3YyTEhSaFFLaGhVTWw?oc=5",
+   "publicado": "2026-11-23T16:29-03:00",
+   "impacto": "medio",
+   "ativos": [
     "WDO"
    ],
    "tickers": []
@@ -2796,70 +2961,10 @@
    "tickers": []
   },
   {
-   "titulo": "Por que o Ibovespa cai mesmo com as bolsas de Nova York em forte alta?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVEJjQ25LVGIwblNEaWMzOUw5VnpVVDdLd2ZsNHh0YTlHQTNOLXN3VXBCWjFIa0NvVXJCVEFaRzI3bGE1VGtPQTJRdEtWcy1tSmVONE9reWtoVXM4TGFkUFNkNVpabTBJR0w4ZnY5VjZEaFdva3VDSkRjMHp3Y3Q0bF9ONFVlZjJVTTc0QlVpX1hsMWhQRURtS1dRUjlVR2pna1JhQ2R5Zw?oc=5",
-   "publicado": "2026-11-23T15:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Governo Lula reduz projeção de crescimento e vê inflação mais alta e dólar mais caro ao fim de 2026",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/governo-lula-reduz-projecao-do-pib-para-este-ano-e-ve-inflacao-acima-da-meta/",
    "publicado": "2026-11-23T15:50-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje bate R$ 6 na máxima, mas ameniza com cenário externo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYWVUcEYyVUJZR3VGWmgzcVdSZ0NJd0hDYW55blFkdnF0WW9mbjZuRWFpT3lKUS0xS25BSlQ4TnBVV2tGVU9XaEVpRndDN1FMRWtRWmpfUzREdFpSOU5EUThlNm9YZTFoMVc4c2hBYmZoc1Jmd0wycjk2TXo1eTdpenltUk1hMWU3b25tMV8ya0tVNEJoSF91YVYxZGPSAaIBQVVfeXFMT3lHY2Y3LVZzZ3BwUGJ5dS0tczVRX2lUQ2d5MTdSLWo1OWZTNG4zRzd4a29oQU5IajJrOGpDb3Z5bVNCREZSOVRUbUdVUXhGYkduT3ctUVFCbW5xZkkzUm1SZUpxRGZWYVhId2ItazBlS2l6MlJaZzBRZ1o0X3JzckJmYUZlUXFVU0VYMUxRdWRLa25za25PSTd4T1I5MzkwMnpR?oc=5",
-   "publicado": "2026-11-23T15:40-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Braskem salta 10% na B3 e 20% em NY após notícia sobre acordo com credores",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTHdOTmtvTlluZkpXWFdSZ0VpMkFUR3FhSldOR01tTTdzZzdZLUlSTWl0blk0YU9CcWJlVUJCS2Zka2czWXBBejc2WHo3dDBpLXZMWHpNa3BjNFlubERNOGdRY0hyemFLZldDbUYyLUNsVzlXQzdkRGpuM1NGVUFfOTZYMDNMZHBWbGZGWVBnUjRIZlVEdFNrRVRpZ25uZWlweXlSa0NfaHVUVFN2QkdyNEtyVUoyUXdiVmVfWFByZzlva1EyTGxpc1QwQdIB0AFBVV95cUxQNHBoV0lSWmhEQ1g5NnhJSzJJTGNMT3E3M25tWlRCbHdQMFp6d2xEM0hSOF8xRE5naXZWUEJjRm8xNjhSYVFkWnlQTTVlaHI3VGs3WE9zSjdleUxXTWQwWUxoN1FwdWNIZ0lvcjhJamU2cnRuYzBUM0NzdnJMdXN3U0J2OVF1dzlWNkJjazN0TUswTjlyZG0zSzdCWDh1R2V2ODV1Y3hxMWVCaU5IYXM3RjFtOElkcWR5bER6TW1KUzhKdDdFcTZXc1Z1cDZPUFRB?oc=5",
-   "publicado": "2026-11-23T15:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3",
-    "BRKM5"
-   ]
-  },
-  {
-   "titulo": "Dólar dispara no exterior com apostas em alta de juros pelo Fed e recuperação de ações de IA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSjFvOHA5eWtTMFBIaFJsUzloSFVkNEllaXJSb3hNYzBodmQ5ZmpLR1B2Yk9ESXdBN2VEN0tKVGZxSmZkQVNCSFNUZmFsTWZ6eWRMQ1d5NXVXeVoxZkxrRGJhLVBGdmk3Ri1KTW5OVmNvOGtGOHM4eFJzcUstMlFmOHFKX2Njck9CTkJIM0d2ZWt5cS1naUtiUjZza1RCeUVFck1Hc19YQ2JISTVpbkRCRko3VkNIUzF4Ty1xQUlNcFpRemJQa1k1UzY5TF9GQjVSTmxjaUVIcU1KYUljU2fSAewBQVVfeXFMT3g4bkhFeXBHSHlhTEJmRDlyZ1dDbW15ZnowcDhrdEtxMVRobHRPQjEtUGhNNUZaZUJtRDk1Vk5uMThIWUhLS1lJMG9rQ2l0c3gzcTRleDZsdGJPR0VuTUVDOS1UeXl6eFV1QnFvbWtnLVgxM2pwcjQyNHFlU0dZNlRkUE5Uc3NuQU15WG9NbDJwZGxvM1lpRUdBd2V5cXRucXhfalJ5S3RCcnlxTmdOeks2dEZCSW1WZ0tBXzI3dG5NTFdFdHVTWkRYemJGYUpYTEVLWDQtZ2s2WUFyTnR5OTAyaHNQV0UwRnFoZkM?oc=5",
-   "publicado": "2026-11-23T14:47-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Focus aponta piora da inflação e eleva Selic 2027, enquanto PIB perde força; veja as previsões",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRnZRS3pDTkxfbEJTWUJyVDdHZk4xTFEyT25fck1vYlJZbUhBRnV2SEprU1NkNHh0REFiR2UxZk84MlJvWG91OERlOE9IUHlWdUxtOVotZEZ2SFNKODM1eDc5aWNSU2p4ZGs0U25aSFNBa3lHUG1TY3RMNlo0SjhXNVg5aEhMSVRfdmlQXzJqM2NXRkFzcnpOSmdhQW9Ncm0tWGNXcWZjQUw0bGR4M1hNOWNfMGV5UUpzSEZnMVYyX05pNXlKb1RYZlRrNjRMNW1xMW1ySlc1NzA0TjY0dWFhaTYwcERUZ9IB6wFBVV95cUxOWE1ELUs0SE5ES1VHYmxSTWhoUUpVQjdFYmh2OGxhX1MtVzFFdHNoejQ0cnk0aHcyNURBM29VWHBIdWhZZ0EwWV8zd09MbTctZllyMW5mRm1JX292X253a3ViZFlUc3QycWZ6T28xZnRxS0xuS3o2RmlVWDM3MlpCUE0tTjVoc1FIQ01sYUhFY2FFV29tbVI4TUZBUU96U0F1LWljZWgtSTJ3UkNEYTJNSFh1WEpjd05EaXh1X25sdmFKekZUUzNaTTA0ZWZvSHR3RVRlSXdpRDN3X3REMGU2SU5pYTFIRFQ4eGFB?oc=5",
-   "publicado": "2026-11-23T14:39-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
