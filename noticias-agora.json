@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T16:00-03:00",
+  "atualizado_em": "2026-11-23T16:03-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -283,7 +283,11 @@
     ],
     [
      "15:45",
-     165094.0
+     165073.0
+    ],
+    [
+     "15:48",
+     165091.0
     ]
    ]
   },
@@ -628,7 +632,11 @@
     ],
     [
      "16:00",
-     5.9316
+     5.9289
+    ],
+    [
+     "16:03",
+     5.9328
     ]
    ]
   },
@@ -1423,7 +1431,7 @@
      "BRKM5",
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.13,
     "dolar30": -0.62
    },
    {
@@ -1440,7 +1448,7 @@
      "BRKM5"
     ],
     "ibov30": null,
-    "dolar30": -0.21
+    "dolar30": -0.26
    },
    {
     "hora": "15:33",
@@ -1453,7 +1461,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.21
+    "dolar30": -0.26
    },
    {
     "hora": "15:38",
@@ -1463,6 +1471,19 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.27
+   },
+   {
+    "hora": "15:50",
+    "titulo": "Governo Lula reduz projeção do PIB e vê inflação acima da meta para 2026",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/governo-lula-reduz-projecao-do-pib-para-este-ano-e-ve-inflacao-acima-da-meta/",
+    "impacto": "alto",
+    "ativos": [
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1484,18 +1505,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Tempo real: Ibovespa acompanha Boletim Focus e PMI dos EUA; veja os destaques desta segunda-feira (23)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
-   "publicado": "2026-11-23T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Economia vai desacelerar mais e pesar nos balanços, diz chefe de research do BTG Pactual",
    "fonte": "Bloomberg Línea",
@@ -2428,6 +2437,17 @@
    "tickers": []
   },
   {
+   "titulo": "Governo Lula reduz projeção do PIB e vê inflação acima da meta para 2026",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-lula-reduz-projecao-do-pib-para-este-ano-e-ve-inflacao-acima-da-meta/",
+   "publicado": "2026-11-23T15:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Por que o Ibovespa cai mesmo com as bolsas de Nova York em forte alta?",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVEJjQ25LVGIwblNEaWMzOUw5VnpVVDdLd2ZsNHh0YTlHQTNOLXN3VXBCWjFIa0NvVXJCVEFaRzI3bGE1VGtPQTJRdEtWcy1tSmVONE9reWtoVXM4TGFkUFNkNVpabTBJR0w4ZnY5VjZEaFdva3VDSkRjMHp3Y3Q0bF9ONFVlZjJVTTc0QlVpX1hsMWhQRURtS1dRUjlVR2pna1JhQ2R5Zw?oc=5",
@@ -2466,7 +2486,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T16:00-03:00",
+ "atualizado_em": "2026-11-23T16:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2489,6 +2509,17 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo Lula reduz projeção do PIB e vê inflação acima da meta para 2026",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/governo-lula-reduz-projecao-do-pib-para-este-ano-e-ve-inflacao-acima-da-meta/",
+   "publicado": "2026-11-23T15:50-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -2616,20 +2647,6 @@
    "tickers": []
   },
   {
-   "titulo": "Hapvida derrete 6% e lidera destaques negativos do Ibovespa; Magalu dispara",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPN2d3UEFSLTJVSnhQb0d6VEJTQnV0QXRoMWR0OE15M3lBd3FNRGM4TF9KYkVMM0htQ3k1OEdXNjNVSDNZeHNPS3RaVGFRZ2JVVE1GdGxtNDFvMGlLR0pwQ3VFUkVqUG84UDFUQ04xOWR2VTROVjRTNWVUMFFKbzhkWjBDWjc2RW4xMXpyZGVuaUh6bUpoeGI5ODlxS2ZLbVdIanFZS040NHZSNDlWbGVhT1Z0QzdNNTRqQ09nSGd0bzk4eG52NzBDWE42bldFUWdWXzdOd1lGYw?oc=5",
-   "publicado": "2026-11-23T14:47-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "HAPV3",
-    "MGLU3"
-   ]
-  },
-  {
    "titulo": "Dólar sobe após bater R$ 6 com política fiscal no radar; Bolsa cai",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVGI2ekpOSmxXbFVBYzYwZjNreXI3MGcwX0NVT29NSWRQTTVVb05YLXB5YlRwNXJDdW1NSFgxbVdTdFJ5OHpzRHlscmw4SzF1b0xFT2lzQTQxZ2lGUndKQjVOYXV6R2dsaGtwWFdSWGluX0dfUmlnNGhfY214OFZMeVJrR3NCQkt1S3BDRlp4R1JjeVl1MnpzM1RBR1BXbWo5NlRYUWpn?oc=5",
@@ -2666,12 +2683,13 @@
    "tickers": []
   },
   {
-   "titulo": "Opinião | Nem US$ 1 bilhão do BC conteve a alta do dólar; o que isso revela sobre a economia?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOE5UZEZwX0ZHWjl1SHNfcy10bjZtYzVKaGtMOUE5d0RFTzZ3dWxVUGk3cjVRczBQeExaMWtNYkJVMHhvVmZKc1ppOUl2NDR0TVQ4VkRjdVZSNHFrTDVBTGpiNU9uUjNsVFFkaS13YV9zZFVKRHh2OENFNHhSU19jc09CVk9Uc21OV0Rld3hFZjlfMzRjWHRIZVJ4Sjh6Sk1FTDJxRkFJU0l2WVJkamo5N3Y2aDQ5ZDR2bVh5aWN6RXEtRkVsMl91V2NfZjBIQkMwdHc?oc=5",
-   "publicado": "2026-11-23T14:29-03:00",
-   "impacto": "medio",
+   "titulo": "Tempo real: Ibovespa cai de olho no dólar e retorno do CEO da Nvidia; veja os destaques desta segunda-feira (23)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aF83ZlFGdHhwV2ktaXRZOWtiRjFObWQ3MjVoMTZQMklLZmlGUHNCS1VWMGN0cUZVWkpRVjNMeTZVY1lHd0FxX18ycFh3ZEhodDJhdkR2cG0yU3NXWDktVWJMNDMtTHVk?oc=5",
+   "publicado": "2026-11-23T14:13-03:00",
+   "impacto": "alto",
    "ativos": [
+    "WIN",
     "WDO"
    ],
    "tickers": []
