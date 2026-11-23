@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T10:38-03:00",
+  "atualizado_em": "2026-11-23T10:40-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -23,11 +23,11 @@
     ],
     [
      "10:20",
-     164573.0
+     164349.0
     ],
     [
-     "10:23",
-     164511.0
+     "10:25",
+     164182.0
     ]
    ]
   },
@@ -112,11 +112,11 @@
     ],
     [
      "10:35",
-     5.987
+     5.9887
     ],
     [
-     "10:38",
-     5.9862
+     "10:40",
+     5.9913
     ]
    ]
   },
@@ -341,7 +341,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.11
+    "dolar30": -0.03
    },
    {
     "hora": "10:22",
@@ -947,7 +947,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T10:38-03:00",
+ "atualizado_em": "2026-11-23T10:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -962,6 +962,17 @@
  ],
  "noticias": [
   {
+   "titulo": "Tokenized stocks face pushback as NYSE, Nasdaq pivot for a new market",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/tokenized-stocks-face-pushback-as-nyse-nasdaq-pivot-for-a-new-market-.html",
+   "publicado": "2026-11-23T10:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Galípolo diz que há espaço para ajuste sem cortes absolutos",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxONUVEZmZSTksyTmY5MFZJRXpJMXZxeGJodEI0UmRPUWd4SjZhVFN4TE1sMllKMkpnamJySVBHR2s1U2lNYlU1eTYxeGcwZm1LZ1g0WTlIR0hIQ2NLdXRwajB6ZkQ0bHdlX1c2Tm1tWC01SkpDUjRKbC1PRGV5SGw1Y1NVOGk5Zzl4WDNCaU52S25YOUZiQ1QweVNYd2hscFZKN0YxR2ZYXzVEc05id3NjQi11Z2YxTUxQRGc?oc=5",
@@ -971,18 +982,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-   "publicado": "2026-11-23T10:28-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -1006,6 +1005,18 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar hoje sobe e bate R$ 6 com tensão fiscal no retorno do feriado",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYWVUcEYyVUJZR3VGWmgzcVdSZ0NJd0hDYW55blFkdnF0WW9mbjZuRWFpT3lKUS0xS25BSlQ4TnBVV2tGVU9XaEVpRndDN1FMRWtRWmpfUzREdFpSOU5EUThlNm9YZTFoMVc4c2hBYmZoc1Jmd0wycjk2TXo1eTdpenltUk1hMWU3b25tMV8ya0tVNEJoSF91YVYxZGPSAaIBQVVfeXFMT3lHY2Y3LVZzZ3BwUGJ5dS0tczVRX2lUQ2d5MTdSLWo1OWZTNG4zRzd4a29oQU5IajJrOGpDb3Z5bVNCREZSOVRUbUdVUXhGYkduT3ctUVFCbW5xZkkzUm1SZUpxRGZWYVhId2ItazBlS2l6MlJaZzBRZ1o0X3JzckJmYUZlUXFVU0VYMUxRdWRLa25za25PSTd4T1I5MzkwMnpR?oc=5",
+   "publicado": "2026-11-23T10:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
     "DI"
    ],
    "tickers": []
@@ -1087,18 +1098,6 @@
    "titulo": "Dólar sobe a R$ 5,98 na abertura com mercado de olho em pauta fiscal",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVGI2ekpOSmxXbFVBYzYwZjNreXI3MGcwX0NVT29NSWRQTTVVb05YLXB5YlRwNXJDdW1NSFgxbVdTdFJ5OHpzRHlscmw4SzF1b0xFT2lzQTQxZ2lGUndKQjVOYXV6R2dsaGtwWFdSWGluX0dfUmlnNGhfY214OFZMeVJrR3NCQkt1S3BDRlp4R1JjeVl1MnpzM1RBR1BXbWo5NlRYUWpn?oc=5",
-   "publicado": "2026-11-23T09:16-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje sobe e se aproxima dos R$ 6 com tensão fiscal no retorno do feriado",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYWVUcEYyVUJZR3VGWmgzcVdSZ0NJd0hDYW55blFkdnF0WW9mbjZuRWFpT3lKUS0xS25BSlQ4TnBVV2tGVU9XaEVpRndDN1FMRWtRWmpfUzREdFpSOU5EUThlNm9YZTFoMVc4c2hBYmZoc1Jmd0wycjk2TXo1eTdpenltUk1hMWU3b25tMV8ya0tVNEJoSF91YVYxZGPSAaIBQVVfeXFMT3lHY2Y3LVZzZ3BwUGJ5dS0tczVRX2lUQ2d5MTdSLWo1OWZTNG4zRzd4a29oQU5IajJrOGpDb3Z5bVNCREZSOVRUbUdVUXhGYkduT3ctUVFCbW5xZkkzUm1SZUpxRGZWYVhId2ItazBlS2l6MlJaZzBRZ1o0X3JzckJmYUZlUXFVU0VYMUxRdWRLa25za25PSTd4T1I5MzkwMnpR?oc=5",
    "publicado": "2026-11-23T09:16-03:00",
    "impacto": "alto",
    "ativos": [
