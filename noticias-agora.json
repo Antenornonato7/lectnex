@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-23",
-  "atualizado_em": "2026-11-23T15:43-03:00",
+  "atualizado_em": "2026-11-23T15:45-03:00",
   "ibov": {
    "anterior": 166376.44,
    "pontos": [
@@ -267,11 +267,15 @@
     ],
     [
      "15:25",
-     164967.0
+     165006.0
     ],
     [
-     "15:28",
-     164980.0
+     "15:30",
+     164998.0
+    ],
+    [
+     "15:31",
+     165091.0
     ]
    ]
   },
@@ -600,11 +604,15 @@
     ],
     [
      "15:40",
-     5.9334
+     5.9382
     ],
     [
-     "15:43",
-     5.9353
+     "15:45",
+     5.9346
+    ],
+    [
+     "15:46",
+     5.9366
     ]
    ]
   },
@@ -1356,7 +1364,7 @@
     "tickers": [
      "GGBR4"
     ],
-    "ibov30": 0.26,
+    "ibov30": 0.28,
     "dolar30": -0.5
    },
    {
@@ -1370,7 +1378,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.27,
+    "ibov30": 0.28,
     "dolar30": -0.74
    },
    {
@@ -1384,7 +1392,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.48
+    "dolar30": -0.4
    },
    {
     "hora": "15:23",
@@ -2419,7 +2427,7 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T15:43-03:00",
+ "atualizado_em": "2026-11-23T15:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2459,6 +2467,21 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal; Ibovespa acelera queda com piora da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
+   "publicado": "2026-11-23T15:29-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Braskem (BRKM5) dispara com acordo com credores no radar; Petrobras pode aportar US$ 1,3 bilhão, diz jornal",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbExoYXE4bjJtcUtYRzRSYURuMXpUb1RHME1OWl9GQnJiVkl4U21DYWNJdTJCeWw4dXNsLXNPVTh1T0xTcEZ1dVJUeXJad1l6UjJwSlZwMTNyeDJKc3pDMUluMnR5d1VSSzFSUDlOZVdqSTE0VVhfeU1pUENDSTRmLVlNczBjWjRnSVN4SGVuMzBQMnNyR3VLQldCRnl3YTBwS1JORkdPOGFEaFBVUWRLME9GeWJlYkJWXzNDZFBib1RRZVlwQ3dkbHl5S3plX3ZOdlBR?oc=5",
@@ -2494,21 +2517,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Dólar supera R$ 6 em dia de votação do ajuste fiscal; Ibovespa acelera queda com piora da Petrobras",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW_SAewBQVVfeXFMT1hHOW00Q20yVXMtMXJqOTJjRnlUY1VRdjJiWHVURkdwZlZvNW9tTEVqNXdaZzhwRzkxMDI3aDgyTEo3ZE00aUlUbGRGTXE5c1M5QWVDVXVXRkFKUEFtX2dmaUxzUzBJUHRLdlBQdHhseHpKWXhCdVpOMmNET0FNNU90MVNjUVFiYnBhdmktdUxSUFBwWDRyOTZQLXlYMTZ1VkF0bjRHWERGaHZNdTQ2NHFTTDRqZFM5cHpldU14ZWU5Q2JfRERPY2UyMWY2ejQzNTFvc3dmSnk4SmVmMjVhRExkZ3Fjd0RIaGh6Rjc?oc=5",
-   "publicado": "2026-11-23T15:12-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   },
   {
    "titulo": "Fazenda reduz projeção de crescimento para o ano e vê alta do dólar e inflação",
