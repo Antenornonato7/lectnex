@@ -753,8 +753,8 @@ def processar():
                     except Exception:
                         pass
                 except Exception as e:
-                    p['erro_tiktok'] = str(e)[:200]
-                    fbmsg += f'\n⚠️ TikTok: {str(e)[:150]}'
+                    p['erro_tiktok'] = (str(e) or e.__class__.__name__)[:200]
+                    fbmsg += f'\n⚠️ TikTok: {p["erro_tiktok"][:150]}'
             try:
                 tg('editMessageReplyMarkup', chat_id=admin(), message_id=mid, reply_markup={'inline_keyboard': []})
                 tg('sendMessage', chat_id=admin(), text='✅ Publicado no Instagram.' + (f'\n{link}' if link else '') + fbmsg, reply_to_message_id=mid, disable_web_page_preview=True)

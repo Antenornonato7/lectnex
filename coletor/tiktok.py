@@ -39,7 +39,10 @@ def ler_token():
             return None, None
         raise
     bruto = base64.b64decode(j['content'])
-    return json.loads(AESGCM(chave()).decrypt(bruto[:12], bruto[12:], None)), j['sha']
+    try:
+        return json.loads(AESGCM(chave()).decrypt(bruto[:12], bruto[12:], None)), j['sha']
+    except Exception:   # InvalidTag: o arquivo foi cifrado com outro TIKTOK_CLIENT_SECRET
+        return {'_invalido': True}, j['sha']
 
 
 def gravar_token(tok, sha):
@@ -66,6 +69,8 @@ def acesso():
     tok, sha = ler_token()
     if not tok:
         raise RuntimeError('TikTok não conectado (rode o workflow TikTok com acao=link e depois conectar)')
+    if tok.get('_invalido'):
+        raise RuntimeError('o token salvo do TikTok não abre com o segredo atual (o TIKTOK_CLIENT_SECRET mudou?). Reconecte: workflow TikTok → link, depois conectar')
     if time.time() > tok['obtido'] + tok.get('expires_in', 86400) - 600:
         tok = oauth({'grant_type': 'refresh_token', 'refresh_token': tok['refresh_token']})
         gravar_token(tok, sha)
@@ -213,6 +218,26 @@ def conectar(code):
         pass
 
 
+def reenviar(dias=3):
+    """Manda como rascunho os Reels já publicados no Instagram que não chegaram ao TikTok (últimos `dias`), com a legenda."""
+    import datetime as dt
+    f, sha = ig.fila_ler()
+    limite = (dt.datetime.now(ig.BRT) - dt.timedelta(days=dias)).isoformat(timespec='minutes')
+    feitos = 0
+    for p in f.get('pedidos', []):
+        if p.get('video') and p.get('tipo') != 'story' and p.get('status') == 'publicado' and not p.get('tiktok') and (p.get('publicado') or p.get('criado') or '') >= limite:
+            try:
+                p['tiktok'] = rascunho(p['video']); p.pop('erro_tiktok', None); feitos += 1
+                ig.tg('sendMessage', chat_id=ig.admin(), text=f'🎵 TikTok: "{p.get("nome") or p["id"]}" foi para a caixa de entrada do app como rascunho.')
+                enviar_legenda(p.get('legenda', ''))
+            except Exception as e:
+                p['erro_tiktok'] = (str(e) or e.__class__.__name__)[:200]
+                ig.note('warning', f'TikTok {p["id"]}: {p["erro_tiktok"]}')
+    if feitos:
+        ig.fila_gravar(f, sha)
+    ig.note('notice', f'TikTok: {feitos} Reels reenviado(s) como rascunho.')
+
+
 def teste():
     tok = acesso()
     info = api('post/publish/creator_info/query/', tok)
@@ -246,6 +271,8 @@ if __name__ == '__main__':
         legenda_do_dia(os.environ.get('KIT_DIA') or dt.datetime.now(ig.BRT).date().isoformat())
     elif cmd == 'teste-rascunho':
         teste_rascunho()
+    elif cmd == 'reenviar':
+        reenviar()
     elif cmd == 'teste-post':
         teste_post()
     elif cmd == 'conectar':
