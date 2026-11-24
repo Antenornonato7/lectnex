@@ -1894,18 +1894,6 @@
  },
  "hoje": [
   {
-   "titulo": "Ibovespa hoje: Bolsa acompanha Boletim Focus e PMIs dos EUA",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZUFMMXZFZEVmdDhQYUxDM3lnQ1FlRm8wS001d1VJQkhoNnFQMFNKWFo3TTllNUIzYkVWWVg0M29CT3Q0djlyZ0tRYjZYWTd6TV8zUEJacWw5blRpWEpHUzNMeWxtSEpiOTZQYy1mZXhNV1ZPeUN3Vy0wQ2tTa2ljNkRnckxLZGViS0lLUkd6eVdHb1NmMlZldzB0VU82YXF3X0FMVVhoM2d6NTlwUGdxS0FRb3ZyamRDSENodzJaM3ZVb0VWMEZXaUNiRFMyQ3pUUnRWUHA2YnVIN1lkT241cEZGUWNkWW8?oc=5",
-   "publicado": "2026-11-23T10:41-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Tesouro volta a abrir prêmio com dólar a R$ 6 antes de votação fiscal; IPCA+ 2032 chega a 7,93%",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNWtFSTlwcDZTem1FWW9vb2JnNGtwMHhrRWxtczRmUE5jSWlXWU8tN0JHa2dQUkNWejhTYTN0Q1pLcGJfdlBjcnlUM3FHbHNwb21XSi1MMWdwNHZzd3dzVXk1a3AtSXYzanRWNnJoNUh1NGFlLXY5blBtd3l2LU1pbk5VQTRHMmYwc3hFUXRUb3RyZS01RkdIUHhQMlBZdTA1V1o0X3M3ZHp2UTA3WlRPTXZpdkRGRmppckEtd3RTaE53MmZpbjZvT0N0a01ieWQzZGNZSGhZd0otWUlxR3hMM3BtTdIB6AFBVV95cUxOWEdCVHBkNTNXbjNiMjV5ZHZmT3AyRnhVeEZmM0tSSXRfSU1aNVIzOHFQWXRUWTYyS0J6MERXSmVJWktRYkYxX2w4UmdlZUdZdDBHbFAxS1pUZFBYV2JuazNqdHE1djZ2Q2lhcHBGQWNEYkdfYUlJRVI3Vk1WTm1SR3FsTlp5QUFXa2NtRWp2ZzBpMzdKeHBlZENCQTR0WFluMHM5ckRURktrTTdOdDdYdDYtdG1GaWJWMjVjcWZLd19iaHUzUVYtZTdiMTk5TVB4VjRvenQ0dnhIdjJVTDBOdWs0VGJpSHNs?oc=5",
@@ -2846,6 +2834,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Crédito está travado; 2027 será difícil para a economia, diz presidente do Bradesco",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/credito-esta-travado-2027-sera-dificil-para-a-economia-diz-presidente-do-bradesco/",
+   "publicado": "2026-11-23T21:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   }
  ],
  "enviadas": [
@@ -2875,28 +2876,42 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-23T21:30-03:00",
+ "atualizado_em": "2026-11-23T21:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Exame",
   "Folha",
-  "Money Times"
+  "InfoMoney"
  ],
  "noticias": [
   {
    "titulo": "Nvidia partner and supplier stocks in Asia jump after Jensen Huang's return",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-   "publicado": "2026-11-23T21:24-03:00",
+   "publicado": "2026-11-23T21:45-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Crédito está travado; 2027 será difícil para a economia, diz presidente do Bradesco",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/credito-esta-travado-2027-sera-dificil-para-a-economia-diz-presidente-do-bradesco/",
+   "publicado": "2026-11-23T21:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   },
   {
    "titulo": "Petrobras aprova pagamento de R$ 15,6 bilhões a acionistas",
@@ -2972,19 +2987,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Petrobras (PETR4) vai pagar US$ 15,6 bilhões em dividendos extraordinários; veja prazos e quem pode receber",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZG1QYWIxeFJLNm1nTVYtS3JfOHI0M1pKNnI0NDlUYVVMN0hic2xTSmNUTnB3S2E4MUptWWh4Qi1ZNS1fLWpGQmtJTlFLeTc5MHF0emNiRkkxd1lwOWQxTmlVUGozc0NhYXZPLUZkbWtVeTZVcWVUT0dZdFZDUTVWaVNPWWloeUpTM3EzRTdUcEVTVGhEeGhKQ0hhcHgtcGI4djlKMV9EWWt5LVEtRnhZd29PbkRRU0hCT1FwTUtVSWZVeU9NMmI3VHVpVHVNX2RQak5Gdg?oc=5",
-   "publicado": "2026-11-23T19:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   },
   {
    "titulo": "Dólar bate R$ 6, mas vira e fecha em queda; Ibovespa recua com Petrobras e bancos",
