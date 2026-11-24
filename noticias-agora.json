@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T12:03-03:00",
+  "atualizado_em": "2026-11-24T12:05-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -91,11 +91,11 @@
     ],
     [
      "11:45",
-     167210.0
+     166999.0
     ],
     [
-     "11:48",
-     167097.0
+     "11:50",
+     167017.0
     ]
    ]
   },
@@ -248,11 +248,11 @@
     ],
     [
      "12:00",
-     5.8449
+     5.8414
     ],
     [
-     "12:03",
-     5.8494
+     "12:05",
+     5.8468
     ]
    ]
   },
@@ -1197,7 +1197,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T12:03-03:00",
+ "atualizado_em": "2026-11-24T12:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1212,6 +1212,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Commercial real estate activity falls 14% in October, as interest rates rise",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
+   "publicado": "2026-11-24T12:05-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Wall Street cai com perda de força do rali da IA impulsionado pela Nvidia",
    "fonte": "CNN Brasil",
@@ -1371,18 +1383,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Commercial real estate activity falls 14% in October, as interest rates rise",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
-   "publicado": "2026-11-24T10:17-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
