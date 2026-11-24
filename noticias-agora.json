@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T11:38-03:00",
+  "atualizado_em": "2026-11-24T11:40-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -71,11 +71,11 @@
     ],
     [
      "11:20",
-     166513.0
+     166359.0
     ],
     [
-     "11:23",
-     166449.0
+     "11:25",
+     166420.0
     ]
    ]
   },
@@ -208,11 +208,11 @@
     ],
     [
      "11:35",
-     5.8277
+     5.8224
     ],
     [
-     "11:38",
-     5.8269
+     "11:40",
+     5.8237
     ]
    ]
   },
@@ -440,7 +440,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.29,
+    "ibov30": -0.38,
     "dolar30": 0.5
    },
    {
@@ -454,7 +454,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": -0.15
    },
    {
     "hora": "11:14",
@@ -467,7 +467,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.13
    },
    {
     "hora": "11:26",
@@ -1057,7 +1057,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T11:38-03:00",
+ "atualizado_em": "2026-11-24T11:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1241,6 +1241,17 @@
    ]
   },
   {
+   "titulo": "Dólar despenca quase 2% com expectativa de PEC sobre despesas obrigatórias",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNXF3YnhubVRxeHA4RnhlQko2dEd4RGlWeFZhUEFNUHdiY0VmbHQ5SDBrTjZsbUlZd3BXMUVmZkJJSjFyTExBUGs2NTk5WHV6LVdGS2M1ZHBLdGNKeThGcGNpS183aWlWWl9VT0VaN0pGemgxUnpXbkZXQzNRbGpla09Teks1a0NXN1lsOXdNLXBqZ2YzcEMxSmhTQ2pyMGpWREZBaVpR?oc=5",
+   "publicado": "2026-11-24T09:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "UBS BB rebaixa B3 e corta preço-alvo em 39%; entenda os efeitos dos juros na ação da dona da Bolsa",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOU3RHMXcwMEl3SnJIVXdVTENMQXItb3kxSWhHbV82amVrZXVpRFQ1Q1FiM0RRVE01MVUwaDR5RGRDNVQzRTNpQk9mQlBpeFFUT25LYlVxLUF0RkxCd1djc29SMFotZS0wSllKelcxNjMyOTY0YzY3ZVd2OTlBTEVXeHE2T2E4VmNrUERiQmg3MUdxMFV5RVdmY3JZM3ZKd1FPcUE5UWpaRExHRHREdjJLY1A1cThqOEJVNEtGaXlFNl9DaUhzNWx5WEVwTklYTENZTmZWTER1NFhQdWR6Vnl0SG8yQmItSUdFNG5N0gHwAUFVX3lxTFBRQ293VERGcnJxRlY5ZWxRRFJ3MlUtMWcyd0hZRXhsZi1lU3BQVG9jRWp6M2hUelA4THA3cG5TNTVXb0szQnBYc1lWNlNFN0FJNWVKdzc3MVpTNjIzbXBTdHNlVzR0bFV2Y2Uxc21MTFlpWjc5U3J2NmZMb3pTa0xLU2JFeXV4SjBkMjJSWWFVNFVySU93U0d6dUxTTEJjZzZNS2tqb05qbFNfRE13dzYwWWluYkFFOGc3OHRMTlFibjFvVXBoZTBGb3pmMlQxLWRjaEdQOUpkUE5BT2NRcXJ2NnJObTdWS192bHQyX1JCeg?oc=5",
@@ -1251,19 +1262,6 @@
    ],
    "tickers": [
     "B3SA3"
-   ]
-  },
-  {
-   "titulo": "Petrobras prevê US$ 7 bilhões para ampliar infraestrutura de transporte de combustíveis",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-preve-us-7-bilhoes-para-ampliar-infraestrutura-de-transporte-de-combustiveis.shtml",
-   "publicado": "2026-11-24T09:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
    ]
   }
  ]
