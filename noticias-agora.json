@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T10:33-03:00",
+  "atualizado_em": "2026-11-24T10:35-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -19,11 +19,11 @@
     ],
     [
      "10:15",
-     165522.0
+     165520.0
     ],
     [
-     "10:18",
-     165535.0
+     "10:20",
+     165636.0
     ]
    ]
   },
@@ -104,11 +104,11 @@
     ],
     [
      "10:30",
-     5.8355
+     5.8224
     ],
     [
-     "10:33",
-     5.8326
+     "10:35",
+     5.8311
     ]
    ]
   },
@@ -264,6 +264,20 @@
     "impacto": "alto",
     "ativos": [
      "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:33",
+    "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+    "impacto": "alto",
+    "ativos": [
      "WDO",
      "DI"
     ],
@@ -724,6 +738,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+   "publicado": "2026-11-24T10:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -748,7 +774,7 @@
    "em": "2026-11-24T13:15:57+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T10:33-03:00",
+ "atualizado_em": "2026-11-24T10:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -762,6 +788,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+   "publicado": "2026-11-24T10:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa sobe e dólar cai após aprovação do pacote fiscal na Câmara; 5 coisas para saber antes de investir hoje (24)",
    "fonte": "Money Times",
@@ -782,6 +820,19 @@
    "publicado": "2026-11-24T10:17-03:00",
    "impacto": "alto",
    "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tempo real: Ibovespa sobe e dólar cai com aprovação do ajuste fiscal; veja os destaques desta terça-feira (24)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16dGktLTZQcjhGOXpyS21BUlVmMFdORHNzekJCeUVET25FbUUxMnZ4dk43UThuZFVJUk40NTU4LXcxSV84eTV0Sks1bWg4eklXaVlyMV9NWGxCbzBoU05KZ1JUZVNGOTgt?oc=5",
+   "publicado": "2026-11-24T10:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO",
     "DI"
    ],
@@ -921,31 +972,6 @@
    "tickers": [
     "BRKM5"
    ]
-  },
-  {
-   "titulo": "Credores da Braskem poderão virar sócios, aceitar desconto ou receber título para 2060",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-fecha-acordo-com-credores-e-pede-mais-prazo-a-justica.shtml",
-   "publicado": "2026-11-24T08:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BRKM5"
-   ]
-  },
-  {
-   "titulo": "Dólar passa a cair enquanto Ibovespa mira arrecadação federal e confiança do consumidor nos EUA",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
-   "publicado": "2026-11-24T08:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
