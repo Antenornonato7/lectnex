@@ -61,14 +61,39 @@
   {
    "data": "2026-11-24",
    "pais": "BR",
-   "evento": "Relatório bimestral de receitas e despesas",
+   "evento": "Relatório bimestral de receitas e despesas e contingenciamento",
    "importancia": 2,
    "impacto": {
     "di": "volatil",
     "wdo": "volatil"
    },
-   "nota": "Governo quer o ajuste aprovado antes do relatório (Times Brasil); bloqueios ou contingenciamentos mexem no prêmio fiscal.",
+   "nota": "Ministro do Planejamento, Bruno Moretti, deve anunciar novo contingenciamento (O Tempo); tamanho do bloqueio mexe no prêmio fiscal.",
    "tipo": "relatorio-bimestral"
+  },
+  {
+   "data": "2026-11-24",
+   "hora": "08h",
+   "pais": "BR",
+   "evento": "Confiança do consumidor FGV (nov)",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil"
+   },
+   "nota": "Termômetro do consumo das famílias.",
+   "tipo": "confianca-fgv"
+  },
+  {
+   "data": "2026-11-24",
+   "hora": "11h",
+   "pais": "BR",
+   "evento": "Arrecadação federal (out, Receita)",
+   "importancia": 1,
+   "impacto": {
+    "di": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Receita do governo no dia em que o ajuste fiscal vai à sanção.",
+   "tipo": "arrecadacao"
   },
   {
    "data": "2026-11-24",
@@ -80,7 +105,9 @@
     "wdo": "volatil"
    },
    "nota": "Termômetro do consumo americano.",
-   "tipo": "conference-board"
+   "tipo": "conference-board",
+   "anterior": "91,7",
+   "consenso": "92,1"
   },
   {
    "data": "2026-11-25",
@@ -101,21 +128,6 @@
    "data": "2026-11-25",
    "hora": "10h30",
    "pais": "US",
-   "evento": "Inflação PCE (out)",
-   "importancia": 3,
-   "anterior": "3,1% (núcleo a/a)",
-   "impacto": {
-    "wdo": "volatil",
-    "di": "volatil",
-    "win": "volatil"
-   },
-   "nota": "Medida de inflação preferida do Fed; anterior = núcleo em 12 meses de setembro. Sai antes do feriado de Ação de Graças.",
-   "tipo": "pce-eua"
-  },
-  {
-   "data": "2026-11-25",
-   "hora": "10h30",
-   "pais": "US",
    "evento": "Encomendas de bens duráveis (out)",
    "importancia": 1,
    "impacto": {
@@ -128,6 +140,36 @@
   },
   {
    "data": "2026-11-25",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Inflação PCE — núcleo em 12 meses (out)",
+   "importancia": 3,
+   "anterior": "3,1%",
+   "consenso": "3,2%",
+   "impacto": {
+    "wdo": "volatil",
+    "di": "volatil",
+    "win": "volatil"
+   },
+   "nota": "Medida de inflação preferida do Fed, antes da reunião de dezembro; consenso de 0,3% no mês. Sai antes do feriado de Ação de Graças.",
+   "tipo": "pce-eua"
+  },
+  {
+   "data": "2026-11-25",
+   "hora": "10h30",
+   "pais": "US",
+   "evento": "Pedidos de seguro-desemprego (semanal)",
+   "importancia": 1,
+   "anterior": "203 mil",
+   "consenso": "201 mil",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Sai na quarta por causa do feriado de quinta.",
+   "tipo": "seguro-desemprego"
+  },
+  {
+   "data": "2026-11-25",
    "hora": "16h",
    "pais": "US",
    "evento": "Livro Bege (Fed)",
@@ -136,7 +178,7 @@
     "wdo": "volatil",
     "di": "volatil"
    },
-   "nota": "Retrato regional da economia americana antes da reunião do Fed de 8 e 9 de dezembro.",
+   "nota": "Retrato regional da economia americana antes da reunião do Fed de dezembro.",
    "tipo": "livro-bege"
   },
   {
@@ -200,7 +242,7 @@
     "di": "volatil",
     "wdo": "volatil"
    },
-   "nota": "Sai em semana de votação do ajuste; dívida bruta é o número que o mercado acompanha.",
+   "nota": "Dívida bruta é o número que o mercado acompanha depois da aprovação do ajuste.",
    "tipo": "resultado-fiscal"
   },
   {
@@ -227,6 +269,19 @@
    },
    "nota": "Liquidez menor em NY no pós-feriado de Ação de Graças.",
    "tipo": "pregao-curto-eua"
+  },
+  {
+   "data": "2026-11-29",
+   "hora": "22h30",
+   "pais": "CN",
+   "evento": "PMIs oficiais da China — indústria e serviços (nov, NBS)",
+   "importancia": 2,
+   "impacto": {
+    "win": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Sai no domingo à noite (segunda, 9h30 em Pequim; data estimada). Atividade chinesa mexe com minério, Vale e o real.",
+   "tipo": "pmi-china"
   }
  ]
 }
