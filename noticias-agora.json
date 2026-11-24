@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T12:08-03:00",
+  "atualizado_em": "2026-11-24T12:10-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -95,11 +95,11 @@
     ],
     [
      "11:50",
-     167045.0
+     166936.0
     ],
     [
-     "11:53",
-     166957.0
+     "11:55",
+     166761.0
     ]
    ]
   },
@@ -256,11 +256,11 @@
     ],
     [
      "12:05",
-     5.8454
+     5.8499
     ],
     [
-     "12:08",
-     5.8473
+     "12:10",
+     5.8459
     ]
    ]
   },
@@ -528,7 +528,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.26,
+    "ibov30": 0.14,
     "dolar30": 0.31
    },
    {
@@ -542,7 +542,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.44
+    "dolar30": 0.42
    },
    {
     "hora": "11:51",
@@ -580,6 +580,19 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:08",
+    "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaTBZcE1FZlZmR2hKTlJYZ2dzMjZnQXIxeEF0QlptUUw2dy1rMjFJcWJKU1BJX1dVR01UNTVjZWx6S1BzcXZCZk1lRE00QVQwMUQwdldqckdFOUg5YmRheGpiVC1tZy1BQlhFa3EzNzZEWk5SSmEweS1PZEZSZVpUT1lpOFNBYVFFSlpZbWdVWmc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1176,6 +1189,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaTBZcE1FZlZmR2hKTlJYZ2dzMjZnQXIxeEF0QlptUUw2dy1rMjFJcWJKU1BJX1dVR01UNTVjZWx6S1BzcXZCZk1lRE00QVQwMUQwdldqckdFOUg5YmRheGpiVC1tZy1BQlhFa3EzNzZEWk5SSmEweS1PZEZSZVpUT1lpOFNBYVFFSlpZbWdVWmc?oc=5",
+   "publicado": "2026-11-24T12:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1205,7 +1229,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T12:08-03:00",
+ "atualizado_em": "2026-11-24T12:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1220,6 +1244,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaTBZcE1FZlZmR2hKTlJYZ2dzMjZnQXIxeEF0QlptUUw2dy1rMjFJcWJKU1BJX1dVR01UNTVjZWx6S1BzcXZCZk1lRE00QVQwMUQwdldqckdFOUg5YmRheGpiVC1tZy1BQlhFa3EzNzZEWk5SSmEweS1PZEZSZVpUT1lpOFNBYVFFSlpZbWdVWmc?oc=5",
+   "publicado": "2026-11-24T12:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Commercial real estate activity falls 14% in October, as interest rates rise",
    "fonte": "CNBC",
@@ -1344,17 +1379,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa avança com notícias sobre PEC para tratar de despesas obrigatórias",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOHEzSUtkS3JOUXEtNFAwOWdZQzM2X1JzSmd6dEV2OFhFX1lEWWRHc1BUdlhDdGVZOHY4NEhZcU1xREQ3QVFtUmduRVM0TWNHUEc2ZUJlY0V3dDYxX1BtNko2VG43QzRXQkUzLUxFMzFnUUJnMjhwUlkyVmlaYmdCRUNfU3BCdkZUdXlwRTBVaUxTeXZka0lXYnFtdjFkUW9XdThLWjlrV2hJT21COUNaZnBEXzJLTUh4X3Blc3VRbGNFd2FiOWVmczlveTdZZ9IB3AFBVV95cUxPcTViQnZ4LXozUzhhZXhmRGRtZHI3TDFkY3pEcVdLb2oyQ1VlWkNRRkxwM09qN09icDM2MHpydGlQNEg3VlhIdTlxdHRSYUpJV2lBQjJ1aTZfX3RaZTJxdlREcERmZG1pMDgzaDdFMmQ1aDJXQzV6SnlzZEkwUGY0Q29XSGFfUGJWckpRX1p3ZXhNNC15NS1qYmwxZHl4LVFBaFpPVm5HeVhrM2NTczQycTBqdVdYWGdNVVZMMk1ON2dvbUowelZOdGFobU5aa3l5ZVpXZFpYV1ZqeHlF?oc=5",
-   "publicado": "2026-11-24T10:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
