@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T11:38-03:00",
+  "atualizado_em": "2026-11-24T12:08-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -71,11 +71,35 @@
     ],
     [
      "11:20",
-     166513.0
+     166359.0
     ],
     [
-     "11:23",
-     166449.0
+     "11:25",
+     166531.0
+    ],
+    [
+     "11:30",
+     166654.0
+    ],
+    [
+     "11:35",
+     167049.0
+    ],
+    [
+     "11:40",
+     167384.0
+    ],
+    [
+     "11:45",
+     166999.0
+    ],
+    [
+     "11:50",
+     167045.0
+    ],
+    [
+     "11:53",
+     166957.0
     ]
    ]
   },
@@ -208,11 +232,35 @@
     ],
     [
      "11:35",
-     5.8277
+     5.8224
     ],
     [
-     "11:38",
-     5.8269
+     "11:40",
+     5.8217
+    ],
+    [
+     "11:45",
+     5.8322
+    ],
+    [
+     "11:50",
+     5.8394
+    ],
+    [
+     "11:55",
+     5.8429
+    ],
+    [
+     "12:00",
+     5.8414
+    ],
+    [
+     "12:05",
+     5.8454
+    ],
+    [
+     "12:08",
+     5.8473
     ]
    ]
   },
@@ -440,7 +488,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.29,
+    "ibov30": -0.38,
     "dolar30": 0.5
    },
    {
@@ -453,8 +501,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": -0.06
+    "ibov30": 0.17,
+    "dolar30": -0.15
    },
    {
     "hora": "11:14",
@@ -466,8 +514,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.37,
+    "dolar30": -0.16
    },
    {
     "hora": "11:26",
@@ -478,6 +526,60 @@
     "ativos": [
      "WDO",
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.26,
+    "dolar30": 0.31
+   },
+   {
+    "hora": "11:41",
+    "titulo": "Ibovespa a 182 mil em 2027? Estrategistas veem ano de alta, mas com compras seletivas",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONU9IalB6ajRsOTRmcFpva2c0ZURVcTBQZ3AtaDN0cTVWZWVuVW9Ya0lLNXV1UVdKejM0Uk9NamRtdG5yWkV2cGFQcGpHME5fSUNkdnVwNWFJNng0dVVIajBrNmVGdWZEdTU4UXo0aUxiOWNZUExCZEJRNXVLZC03emtrS29lU2hNSWY3a29vLXBUbHJHQnl1R3JfX0FZQmkwcDdwNjFwSk5vS1d0b1l0Zm9hcXc1TVJiTWU5RVBYQdIBxAFBVV95cUxQazdpQmFWeW1OUjk2cE9IenUzbDVsV19ZM3BPLUI1S0ZFc3NIZjlDYUNCOUFCNk5GakJaMDNPLVJITFlVM3haX0F4TEQ0akFVdnN2SmlPREVIYjJCNVVITWNfNjBrR0M5NHBnMXhKZkZoMDBYNnBqTVVOVjdGaDVHaVBpSGFPNVBWRG10Nk1vZEdDVVZlSjZFd0RsbVQxWFFvcXpEMU1NZ1pYeGhiM09KUUFwOHdQTUJ3aWFVT2REdUgyUWJQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.44
+   },
+   {
+    "hora": "11:51",
+    "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:51",
+    "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQYkVmeDhDdFpHelJLOU5QamtVLWszQXF3ZHpkTU9vdEw0cUFGUGRPRGhRdGdCaXNRcDlUSVh6Ny14RE9NcWdQVnNtSTBRVlBOa0VWNGVnV0tEV19vekl5RGlPWDYyN3ZrY3VETjR5bkNiaWtieVZpWnVTV2ZpNlFEWmk1MzB2Ml9uc2VZQU5qbkk0NnZCRm1LTDF6c2l3TDJLQmlybWNGcUNzSmhOMnhlWVVQdXZncHF1RWRCemh1NGd5SVpwcG1vc0FRRUNvcU8wZ21XWWdVeDgxbklUX25waFNmSTJGeXdYTHfSAe8BQVVfeXFMTnI4QlFlUS1KOHIxRFNTX0xHcnhLeDNraEJsbUVham10XzNLLV9tRzhBZGpnRTdYYUdVSDBxOHpHZU9XUzJ5Yk8wZkxmRzdLRTNLV2lpT2RSeFNWVHhmLUpvdlZNSXJIWV9DdHVLVzQzYXdUZzNzWUJiTmNhdDkyalc4NzZzZDN3Uzl3S3l3OWN4U095aC02UWx5SERaRzlvdF93LWxYLWkycWljLXFQbTdTWnFtczNJSldseGZ4dmIwU3Y3c25aT2c1bUpRajNiX05XS1RzNDJQZXZHT0wzU1ZpZkl4MW1aMW5DdjFsVmM?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:56",
+    "titulo": "Wall Street cai com perda de força do rali da IA impulsionado pela Nvidia",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNWUybDNFWGVRMDBnVzJKTmE5dEUtVWNOdjdhaWdpZ0JZUEFndFRLUzlBRmdPS0E2elFKYlRNMk9Sb3RDdnhMRnVBWXlxWUw0WjB6T2VJMmw5Z2ttOGFENXRwQUNYRFlFOXF6Z3pqel96WTV4cy1zRFhuZWdmbXdFclNlc3hKSFU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1028,6 +1130,52 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa a 182 mil em 2027? Estrategistas veem ano de alta, mas com compras seletivas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONU9IalB6ajRsOTRmcFpva2c0ZURVcTBQZ3AtaDN0cTVWZWVuVW9Ya0lLNXV1UVdKejM0Uk9NamRtdG5yWkV2cGFQcGpHME5fSUNkdnVwNWFJNng0dVVIajBrNmVGdWZEdTU4UXo0aUxiOWNZUExCZEJRNXVLZC03emtrS29lU2hNSWY3a29vLXBUbHJHQnl1R3JfX0FZQmkwcDdwNjFwSk5vS1d0b1l0Zm9hcXc1TVJiTWU5RVBYQdIBxAFBVV95cUxQazdpQmFWeW1OUjk2cE9IenUzbDVsV19ZM3BPLUI1S0ZFc3NIZjlDYUNCOUFCNk5GakJaMDNPLVJITFlVM3haX0F4TEQ0akFVdnN2SmlPREVIYjJCNVVITWNfNjBrR0M5NHBnMXhKZkZoMDBYNnBqTVVOVjdGaDVHaVBpSGFPNVBWRG10Nk1vZEdDVVZlSjZFd0RsbVQxWFFvcXpEMU1NZ1pYeGhiM09KUUFwOHdQTUJ3aWFVT2REdUgyUWJQ?oc=5",
+   "publicado": "2026-11-24T11:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
+   "publicado": "2026-11-24T11:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQYkVmeDhDdFpHelJLOU5QamtVLWszQXF3ZHpkTU9vdEw0cUFGUGRPRGhRdGdCaXNRcDlUSVh6Ny14RE9NcWdQVnNtSTBRVlBOa0VWNGVnV0tEV19vekl5RGlPWDYyN3ZrY3VETjR5bkNiaWtieVZpWnVTV2ZpNlFEWmk1MzB2Ml9uc2VZQU5qbkk0NnZCRm1LTDF6c2l3TDJLQmlybWNGcUNzSmhOMnhlWVVQdXZncHF1RWRCemh1NGd5SVpwcG1vc0FRRUNvcU8wZ21XWWdVeDgxbklUX25waFNmSTJGeXdYTHfSAe8BQVVfeXFMTnI4QlFlUS1KOHIxRFNTX0xHcnhLeDNraEJsbUVham10XzNLLV9tRzhBZGpnRTdYYUdVSDBxOHpHZU9XUzJ5Yk8wZkxmRzdLRTNLV2lpT2RSeFNWVHhmLUpvdlZNSXJIWV9DdHVLVzQzYXdUZzNzWUJiTmNhdDkyalc4NzZzZDN3Uzl3S3l3OWN4U095aC02UWx5SERaRzlvdF93LWxYLWkycWljLXFQbTdTWnFtczNJSldseGZ4dmIwU3Y3c25aT2c1bUpRajNiX05XS1RzNDJQZXZHT0wzU1ZpZkl4MW1aMW5DdjFsVmM?oc=5",
+   "publicado": "2026-11-24T11:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Wall Street cai com perda de força do rali da IA impulsionado pela Nvidia",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNWUybDNFWGVRMDBnVzJKTmE5dEUtVWNOdjdhaWdpZ0JZUEFndFRLUzlBRmdPS0E2elFKYlRNMk9Sb3RDdnhMRnVBWXlxWUw0WjB6T2VJMmw5Z2ttOGFENXRwQUNYRFlFOXF6Z3pqel96WTV4cy1zRFhuZWdmbXdFclNlc3hKSFU?oc=5",
+   "publicado": "2026-11-24T11:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1057,7 +1205,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T11:38-03:00",
+ "atualizado_em": "2026-11-24T12:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1072,6 +1220,76 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Commercial real estate activity falls 14% in October, as interest rates rise",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
+   "publicado": "2026-11-24T12:05-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Wall Street cai com perda de força do rali da IA impulsionado pela Nvidia",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNWUybDNFWGVRMDBnVzJKTmE5dEUtVWNOdjdhaWdpZ0JZUEFndFRLUzlBRmdPS0E2elFKYlRNMk9Sb3RDdnhMRnVBWXlxWUw0WjB6T2VJMmw5Z2ttOGFENXRwQUNYRFlFOXF6Z3pqel96WTV4cy1zRFhuZWdmbXdFclNlc3hKSFU?oc=5",
+   "publicado": "2026-11-24T11:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Arrecadação bate recorde com ajuda de imposto do petróleo e ganhos atípicos",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUFM0UEQ2TEp2ZXVoQmdTQVl6TnFVZXM3TWhQYnNkTmNsX3drczZ5VEU3aHA4WTBtSXRPcHVTWXVUUGRFVXdsd2VsZXZrVEFSNTNSS2JXeXdsNlctZXNWVkJSbklIaTBfLXI4RXJ6S1NUNUxyTmlUcWd1WW5TckZ5VFNLbVU5bDB4Z2NTWkxIckxxT0ZmS2pOd0ptek9PMjJRaWZ2OU50aUlWY2dZMjcyMkFzRUs?oc=5",
+   "publicado": "2026-11-24T11:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQYkVmeDhDdFpHelJLOU5QamtVLWszQXF3ZHpkTU9vdEw0cUFGUGRPRGhRdGdCaXNRcDlUSVh6Ny14RE9NcWdQVnNtSTBRVlBOa0VWNGVnV0tEV19vekl5RGlPWDYyN3ZrY3VETjR5bkNiaWtieVZpWnVTV2ZpNlFEWmk1MzB2Ml9uc2VZQU5qbkk0NnZCRm1LTDF6c2l3TDJLQmlybWNGcUNzSmhOMnhlWVVQdXZncHF1RWRCemh1NGd5SVpwcG1vc0FRRUNvcU8wZ21XWWdVeDgxbklUX25waFNmSTJGeXdYTHfSAe8BQVVfeXFMTnI4QlFlUS1KOHIxRFNTX0xHcnhLeDNraEJsbUVham10XzNLLV9tRzhBZGpnRTdYYUdVSDBxOHpHZU9XUzJ5Yk8wZkxmRzdLRTNLV2lpT2RSeFNWVHhmLUpvdlZNSXJIWV9DdHVLVzQzYXdUZzNzWUJiTmNhdDkyalc4NzZzZDN3Uzl3S3l3OWN4U095aC02UWx5SERaRzlvdF93LWxYLWkycWljLXFQbTdTWnFtczNJSldseGZ4dmIwU3Y3c25aT2c1bUpRajNiX05XS1RzNDJQZXZHT0wzU1ZpZkl4MW1aMW5DdjFsVmM?oc=5",
+   "publicado": "2026-11-24T11:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
+   "publicado": "2026-11-24T11:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Ibovespa a 182 mil em 2027? Estrategistas veem ano de alta, mas com compras seletivas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONU9IalB6ajRsOTRmcFpva2c0ZURVcTBQZ3AtaDN0cTVWZWVuVW9Ya0lLNXV1UVdKejM0Uk9NamRtdG5yWkV2cGFQcGpHME5fSUNkdnVwNWFJNng0dVVIajBrNmVGdWZEdTU4UXo0aUxiOWNZUExCZEJRNXVLZC03emtrS29lU2hNSWY3a29vLXBUbHJHQnl1R3JfX0FZQmkwcDdwNjFwSk5vS1d0b1l0Zm9hcXc1TVJiTWU5RVBYQdIBxAFBVV95cUxQazdpQmFWeW1OUjk2cE9IenUzbDVsV19ZM3BPLUI1S0ZFc3NIZjlDYUNCOUFCNk5GakJaMDNPLVJITFlVM3haX0F4TEQ0akFVdnN2SmlPREVIYjJCNVVITWNfNjBrR0M5NHBnMXhKZkZoMDBYNnBqTVVOVjdGaDVHaVBpSGFPNVBWRG10Nk1vZEdDVVZlSjZFd0RsbVQxWFFvcXpEMU1NZ1pYeGhiM09KUUFwOHdQTUJ3aWFVT2REdUgyUWJQ?oc=5",
+   "publicado": "2026-11-24T11:41-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dirigente do Fed é investigada após jantar privado com banqueiros",
    "fonte": "Folha",
@@ -1130,18 +1348,6 @@
    "tickers": []
   },
   {
-   "titulo": "Russia accuses NATO member Estonia of hostile actions ‘on the verge of unleashing open war’",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/24/russia-estonia-ukraine-war-nato-finland.html",
-   "publicado": "2026-11-24T10:42-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa avança com notícias sobre PEC para tratar de despesas obrigatórias",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOHEzSUtkS3JOUXEtNFAwOWdZQzM2X1JzSmd6dEV2OFhFX1lEWWRHc1BUdlhDdGVZOHY4NEhZcU1xREQ3QVFtUmduRVM0TWNHUEc2ZUJlY0V3dDYxX1BtNko2VG43QzRXQkUzLUxFMzFnUUJnMjhwUlkyVmlaYmdCRUNfU3BCdkZUdXlwRTBVaUxTeXZka0lXYnFtdjFkUW9XdThLWjlrV2hJT21COUNaZnBEXzJLTUh4X3Blc3VRbGNFd2FiOWVmczlveTdZZ9IB3AFBVV95cUxPcTViQnZ4LXozUzhhZXhmRGRtZHI3TDFkY3pEcVdLb2oyQ1VlWkNRRkxwM09qN09icDM2MHpydGlQNEg3VlhIdTlxdHRSYUpJV2lBQjJ1aTZfX3RaZTJxdlREcERmZG1pMDgzaDdFMmQ1aDJXQzV6SnlzZEkwUGY0Q29XSGFfUGJWckpRX1p3ZXhNNC15NS1qYmwxZHl4LVFBaFpPVm5HeVhrM2NTczQycTBqdVdYWGdNVVZMMk1ON2dvbUowelZOdGFobU5aa3l5ZVpXZFpYV1ZqeHlF?oc=5",
@@ -1191,18 +1397,6 @@
    "tickers": []
   },
   {
-   "titulo": "Commercial real estate activity falls 14% in October, as interest rates rise",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
-   "publicado": "2026-11-24T10:17-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa sobe após quedas, Vale cai 3% e dólar despenca após bater R$ 6: o que está acontecendo?",
    "fonte": "Exame",
    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzdGp1U0pLeVRpX01WdUJLYlgtR25EbXFMc0tSWE9GT3lfZ2ZOWFNaX1ZzV0VrYVFaajFxaHg5RzNzdGMwTmpQUVg5Um93UVVqU1o4dTNEUUQ3cWNNUDdUVnZaLVl1dmxWYXNj?oc=5",
@@ -1214,56 +1408,6 @@
    ],
    "tickers": [
     "VALE3"
-   ]
-  },
-  {
-   "titulo": "Dólar despenca após aprovação do plano Moretti pela Câmara; Bolsa sobe",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-apos-aprovacao-do-plano-moretti-pela-camara.shtml",
-   "publicado": "2026-11-24T09:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Petrobras adquire participação em empresa que produz etanol",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-adquire-participacao-em-empresa-que-produz-etanol",
-   "publicado": "2026-11-24T09:48-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "UBS BB rebaixa B3 e corta preço-alvo em 39%; entenda os efeitos dos juros na ação da dona da Bolsa",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOU3RHMXcwMEl3SnJIVXdVTENMQXItb3kxSWhHbV82amVrZXVpRFQ1Q1FiM0RRVE01MVUwaDR5RGRDNVQzRTNpQk9mQlBpeFFUT25LYlVxLUF0RkxCd1djc29SMFotZS0wSllKelcxNjMyOTY0YzY3ZVd2OTlBTEVXeHE2T2E4VmNrUERiQmg3MUdxMFV5RVdmY3JZM3ZKd1FPcUE5UWpaRExHRHREdjJLY1A1cThqOEJVNEtGaXlFNl9DaUhzNWx5WEVwTklYTENZTmZWTER1NFhQdWR6Vnl0SG8yQmItSUdFNG5N0gHwAUFVX3lxTFBRQ293VERGcnJxRlY5ZWxRRFJ3MlUtMWcyd0hZRXhsZi1lU3BQVG9jRWp6M2hUelA4THA3cG5TNTVXb0szQnBYc1lWNlNFN0FJNWVKdzc3MVpTNjIzbXBTdHNlVzR0bFV2Y2Uxc21MTFlpWjc5U3J2NmZMb3pTa0xLU2JFeXV4SjBkMjJSWWFVNFVySU93U0d6dUxTTEJjZzZNS2tqb05qbFNfRE13dzYwWWluYkFFOGc3OHRMTlFibjFvVXBoZTBGb3pmMlQxLWRjaEdQOUpkUE5BT2NRcXJ2NnJObTdWS192bHQyX1JCeg?oc=5",
-   "publicado": "2026-11-24T09:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
-  },
-  {
-   "titulo": "Petrobras prevê US$ 7 bilhões para ampliar infraestrutura de transporte de combustíveis",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-preve-us-7-bilhoes-para-ampliar-infraestrutura-de-transporte-de-combustiveis.shtml",
-   "publicado": "2026-11-24T09:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
    ]
   }
  ]
