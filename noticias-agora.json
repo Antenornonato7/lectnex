@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T15:28-03:00",
+  "atualizado_em": "2026-11-24T15:35-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -255,11 +255,15 @@
     ],
     [
      "15:10",
-     164997.0
+     164903.0
     ],
     [
-     "15:13",
-     164920.0
+     "15:15",
+     164884.0
+    ],
+    [
+     "15:20",
+     164879.0
     ]
    ]
   },
@@ -576,11 +580,15 @@
     ],
     [
      "15:25",
-     5.8998
+     5.899
     ],
     [
-     "15:28",
-     5.9018
+     "15:30",
+     5.8943
+    ],
+    [
+     "15:35",
+     5.892
     ]
    ]
   },
@@ -1227,7 +1235,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": -0.07
    }
   ]
  },
@@ -2125,7 +2133,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T15:28-03:00",
+ "atualizado_em": "2026-11-24T15:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2137,6 +2145,17 @@
   "InfoMoney"
  ],
  "noticias": [
+  {
+   "titulo": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+   "publicado": "2026-11-24T15:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
    "fonte": "CNBC",
@@ -2264,17 +2283,6 @@
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/equipe-economica-aval-lula-pec-ajuste-fiscal/",
    "publicado": "2026-11-24T13:33-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
-   "publicado": "2026-11-24T13:06-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
