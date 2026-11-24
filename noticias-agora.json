@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T10:30-03:00",
+  "atualizado_em": "2026-11-24T10:33-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -19,7 +19,11 @@
     ],
     [
      "10:15",
-     165590.0
+     165522.0
+    ],
+    [
+     "10:18",
+     165535.0
     ]
    ]
   },
@@ -100,7 +104,11 @@
     ],
     [
      "10:30",
-     5.8284
+     5.8355
+    ],
+    [
+     "10:33",
+     5.8326
     ]
    ]
   },
@@ -740,7 +748,7 @@
    "em": "2026-11-24T13:15:57+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T10:30-03:00",
+ "atualizado_em": "2026-11-24T10:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -915,6 +923,19 @@
    ]
   },
   {
+   "titulo": "Credores da Braskem poderão virar sócios, aceitar desconto ou receber título para 2060",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/braskem-fecha-acordo-com-credores-e-pede-mais-prazo-a-justica.shtml",
+   "publicado": "2026-11-24T08:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BRKM5"
+   ]
+  },
+  {
    "titulo": "Dólar passa a cair enquanto Ibovespa mira arrecadação federal e confiança do consumidor nos EUA",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
@@ -936,19 +957,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Vale retoma parcialmente operações na mina de Viga, em Congonhas (MG)",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/vale-retoma-parcialmente-operacoes-na-mina-de-viga-em-congonhas-mg.shtml",
-   "publicado": "2026-11-24T07:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
   }
  ]
 }
