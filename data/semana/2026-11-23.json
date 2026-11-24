@@ -80,7 +80,8 @@
     "di": "volatil"
    },
    "nota": "Termômetro do consumo das famílias.",
-   "tipo": "confianca-fgv"
+   "tipo": "confianca-fgv",
+   "resultado": "83,5 (−1,2 pt)"
   },
   {
    "data": "2026-11-24",
@@ -93,7 +94,8 @@
     "wdo": "volatil"
    },
    "nota": "Receita do governo no dia em que o ajuste fiscal vai à sanção.",
-   "tipo": "arrecadacao"
+   "tipo": "arrecadacao",
+   "resultado": "R$ 293,9 bi (+7,28% real a/a)"
   },
   {
    "data": "2026-11-24",
@@ -107,7 +109,12 @@
    "nota": "Termômetro do consumo americano.",
    "tipo": "conference-board",
    "anterior": "91,7",
-   "consenso": "92,1"
+   "consenso": "92,1",
+   "resultado": "103,3",
+   "surpresa": {
+    "direcao": "acima",
+    "reacao": "Confiança bem acima do esperado costuma sustentar os juros dos Treasuries e o dólar global, pressionando o WDO para cima e os DIs longos."
+   }
   },
   {
    "data": "2026-11-25",
