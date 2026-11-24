@@ -2037,15 +2037,19 @@
    "em": "2026-11-23T12:28:25+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T06:15-03:00",
+ "atualizado_em": "2026-11-24T06:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
-  "Money Times"
+  "InfoMoney",
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
@@ -2074,6 +2078,20 @@
    ]
   },
   {
+   "titulo": "Ajuste fiscal e novo plano de negócios da Petrobras: o que move o mercado",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzdGp1U0pLeVRpX01WdUJLYlgtR25EbXFMc0tSWE9GT3lfZ2ZOWFNaX1ZzV0VrYVFaajFxaHg5RzNzdGMwTmpQUVg5Um93UVVqU1o4dTNEUUQ3cWNNUDdUVnZaLVl1dmxWYXNj?oc=5",
+   "publicado": "2026-11-24T05:36-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
@@ -2092,6 +2110,61 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Patrimônio no exterior: os riscos que vão além da variação do dólar",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORDRhWEpsX29pV3pQZ1JYWHViYzRmNlpSNVFaMXRZbG9VekxCS1NoelVVbTNYZ1RPSF9qeVVibG51cWd4WE5HN2FxbHVjcGFUdktRS2xMOG9ralVDQXBOZGxSMzN0MnZkLVpoMHdtOE5ocF9tUTlKMmxNMnJWbHpKTjhtVnExcWE30gGOAUFVX3lxTFBYaGttRi02OU1INi1vSzdtVlVZTEdwMzd5SmNTYWtBNjZacDlXMndPMFBhR04wdFlHTE5KREFjV21tLVlqQmpMbXk4XzZnTjYyR0JLUkhHZ1VPa0lsdVlBLXdLYkQ4THZ6RGlqYWExTjdwcm03MUtxcnpzY29mclRlbUpPX1FEM240ZXA3ZHc?oc=5",
+   "publicado": "2026-11-24T05:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar ultrapassa R$ 6, mas fecha em queda com rumores sobre BC",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdHpvaldJcEdPdGRGRDBQNDJSanhsY0tzZmh1TDdKczBUNTFtRnVudzI4MHZEZ20zVHVzTG5rVXdoNXk0SDh0OWNKZmtaei15eDNJd21IUVQ0cG9UMm1oV1JUNHYyeU1mZWdFV0xGM2NRU0hwMDJ3djEwUlJ1U0NWSk5mM0tmTGRVLVFjdGU0RzJ3S29VM2x1Y0xTUWd4UGhXdkk4dF81VnFHdktCMVV3T0lpN0xQc01QNUHSAcgBQVVfeXFMTWNkN2MzNzJsdTM0emdzWGxHeWhkUG0yTVZfLVo3b0NRNFd0LUFHUUtzWmkzREVoOXVzQ3BGb1RjSkxHbUd1SHJQaEcyZFMwTEcxWVcxM095NWJEOWNTdDk2amIwYnFFTFF3b05UdUdYbl9qODdpbzFOSmpYdVFRYWQydjBqLXl6b2VxVWRFNWdXQV8tNTkyQVo0SzR1bkZfYlRCR3hvN0N6US1UOFBzdFV5V3A4YW5tTmZub2kyTUhoREx3b3pWODU?oc=5",
+   "publicado": "2026-11-24T05:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "É uma boa hora para vender dólar? O que fazer com o câmbio perto de R$ 6",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNN1VieHlnN2RMbWtVUTAyY2t6WS1ZZUNLSUhuSEhubjB2T3otUEdZRks0ZmF6d3dOVW1rRjRDZm9IVGxpT2NTUkdUcnJxZ2U2NVFkcjdmTDBseF9ZRUxJX3BXbllELTdIWi0zcW5vWDRBZVV0dkF5NVRGS0VDUjlSV3hiV2JGSExCX25ZUkxZcGpvakdYSk1QQlN1dEhnRlVCOFM3MWtRSktNelpUWkdDaWtMbG3SAboBQVVfeXFMUGs4R0VUckhCZ25zTUIwS2toVGJBdVZuTGtHZW1SVVR4eDFvZVAwNUNYOXVvbHAtX3JuS1FuQjVEdmNyWFByYVpWTnBlallJWWxWLWdaaFN5R1Z6aDNaemp5SjFTWFpycHh0T1RUVjFHUWtibE1KU0dTTXZDRklFZ29jTG96clhzT2dwSVFKaFNMUEotNnYweHJOQTJHMHJDY2pTTk1BY05ha3E2X1Y5Y3hIZTRDa2RKQlhR?oc=5",
+   "publicado": "2026-11-24T05:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa hoje mira arrecadação federal e confiança do consumidor nos EUA após tombo",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-24T04:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar salta 19% em um mês e vai a R$ 6 com deterioração das expectativas",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSGJtTHF6emRYV2RWejhNdHdTSkVBeUQ0X28wS1lILWhtNjRHMnlYaldnMlNMNkhjN1QtSXhobFUxR2o5cEpieXZpNGFPemZ4UVRtN28wZGpwZTYyZWJDS3JXQlhRdHQxc2M2RnE0cGZ5ZjBpdzBMam5oV1hDVjRCeVE5SVNKSVNYVE1GLWxfTnEtV0JMSzJ0VXJuMVdRVk5LQlNLNDlRRnNwYmpMQXVQeV8zUVlXY2dPZDdpYjVHMmQ?oc=5",
+   "publicado": "2026-11-24T04:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
