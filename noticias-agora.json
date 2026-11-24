@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T13:55-03:00",
+  "atualizado_em": "2026-11-24T13:58-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -183,7 +183,11 @@
     ],
     [
      "13:40",
-     165230.0
+     165243.0
+    ],
+    [
+     "13:43",
+     165238.0
     ]
    ]
   },
@@ -428,7 +432,11 @@
     ],
     [
      "13:55",
-     5.8988
+     5.8971
+    ],
+    [
+     "13:58",
+     5.8969
     ]
    ]
   },
@@ -923,7 +931,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.02
    },
    {
     "hora": "13:46",
@@ -1741,7 +1749,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T13:55-03:00",
+ "atualizado_em": "2026-11-24T13:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1750,8 +1758,7 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
-  "Money Times"
+  "InfoMoney"
  ],
  "noticias": [
   {
@@ -1913,15 +1920,17 @@
    "tickers": []
   },
   {
-   "titulo": "Wall Street cai com perda de força do rali da IA impulsionado pela Nvidia",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNWUybDNFWGVRMDBnVzJKTmE5dEUtVWNOdjdhaWdpZ0JZUEFndFRLUzlBRmdPS0E2elFKYlRNMk9Sb3RDdnhMRnVBWXlxWUw0WjB6T2VJMmw5Z2ttOGFENXRwQUNYRFlFOXF6Z3pqel96WTV4cy1zRFhuZWdmbXdFclNlc3hKSFU?oc=5",
-   "publicado": "2026-11-24T11:56-03:00",
+   "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
+   "publicado": "2026-11-24T11:51-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
    ],
-   "tickers": []
+   "tickers": [
+    "PETR4"
+   ]
   },
   {
    "titulo": "Dirigente do Fed é investigada após jantar privado com banqueiros",
