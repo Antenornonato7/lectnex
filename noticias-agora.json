@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T13:48-03:00",
+  "atualizado_em": "2026-11-24T13:50-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -175,11 +175,11 @@
     ],
     [
      "13:30",
-     165510.0
+     165511.0
     ],
     [
-     "13:33",
-     165529.0
+     "13:35",
+     165381.0
     ]
    ]
   },
@@ -416,11 +416,11 @@
     ],
     [
      "13:45",
-     5.8882
+     5.8865
     ],
     [
-     "13:48",
-     5.8922
+     "13:50",
+     5.8894
     ]
    ]
   },
@@ -903,6 +903,46 @@
     "tickers": [],
     "ibov30": 0.2,
     "dolar30": 0.44
+   },
+   {
+    "hora": "13:33",
+    "titulo": "Equipe econômica tem aval de Lula e trabalha para enviar PEC do ajuste fiscal até a próxima semana",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/equipe-economica-aval-lula-pec-ajuste-fiscal/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:46",
+    "titulo": "Dólar sobe no mundo, mas real cai 6 vezes mais que a média de 78 moedas",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUmFWVHRlRm56RlFXa3A3UEV3RE1aY0lseUtFT05EWWtkZk4xRHdJQldtOS1zM3BWWkQtb04yTDE2c09hT3dJVHVwSGFER3JXRWx0aFd2aFhlSVhPQ2cxS2hlaV9pMzlZamw2VmFmcXBvaGlpWHFfMDlyU2tjY2NOZ2IxS19MM1nSAYwBQVVfeXFMT01remJqOTNmVGpVRXJDczA5TlRLRWdDY3Rqcl9UbmlhMk9uMDl5UWFwUHAwNk9LTzBUdDJyQUpwZkY0OTBSQUtXbl8wdzlZUHpEZWdaV2JWelpnU1pleG5hd2JBa2ZwR1ZRX1FOUUFtdlFBNE5JMDZ6VkFJek9MTEkxVGp5bEpMOGhKODQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:47",
+    "titulo": "Governo Trump deve anunciar tarifas sobre China, UE e outros países, diz jornal",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-trump-deve-anunciar-tarifas-sobre-china-ue-e-outros-paises-diz-jornal.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1630,6 +1670,40 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Equipe econômica tem aval de Lula e trabalha para enviar PEC do ajuste fiscal até a próxima semana",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/equipe-economica-aval-lula-pec-ajuste-fiscal/",
+   "publicado": "2026-11-24T13:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe no mundo, mas real cai 6 vezes mais que a média de 78 moedas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUmFWVHRlRm56RlFXa3A3UEV3RE1aY0lseUtFT05EWWtkZk4xRHdJQldtOS1zM3BWWkQtb04yTDE2c09hT3dJVHVwSGFER3JXRWx0aFd2aFhlSVhPQ2cxS2hlaV9pMzlZamw2VmFmcXBvaGlpWHFfMDlyU2tjY2NOZ2IxS19MM1nSAYwBQVVfeXFMT01remJqOTNmVGpVRXJDczA5TlRLRWdDY3Rqcl9UbmlhMk9uMDl5UWFwUHAwNk9LTzBUdDJyQUpwZkY0OTBSQUtXbl8wdzlZUHpEZWdaV2JWelpnU1pleG5hd2JBa2ZwR1ZRX1FOUUFtdlFBNE5JMDZ6VkFJek9MTEkxVGp5bEpMOGhKODQ?oc=5",
+   "publicado": "2026-11-24T13:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo Trump deve anunciar tarifas sobre China, UE e outros países, diz jornal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-trump-deve-anunciar-tarifas-sobre-china-ue-e-outros-paises-diz-jornal.shtml",
+   "publicado": "2026-11-24T13:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1659,7 +1733,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T13:48-03:00",
+ "atualizado_em": "2026-11-24T13:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1672,6 +1746,40 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Governo Trump deve anunciar tarifas sobre China, UE e outros países, diz jornal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-trump-deve-anunciar-tarifas-sobre-china-ue-e-outros-paises-diz-jornal.shtml",
+   "publicado": "2026-11-24T13:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar sobe no mundo, mas real cai 6 vezes mais que a média de 78 moedas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUmFWVHRlRm56RlFXa3A3UEV3RE1aY0lseUtFT05EWWtkZk4xRHdJQldtOS1zM3BWWkQtb04yTDE2c09hT3dJVHVwSGFER3JXRWx0aFd2aFhlSVhPQ2cxS2hlaV9pMzlZamw2VmFmcXBvaGlpWHFfMDlyU2tjY2NOZ2IxS19MM1nSAYwBQVVfeXFMT01remJqOTNmVGpVRXJDczA5TlRLRWdDY3Rqcl9UbmlhMk9uMDl5UWFwUHAwNk9LTzBUdDJyQUpwZkY0OTBSQUtXbl8wdzlZUHpEZWdaV2JWelpnU1pleG5hd2JBa2ZwR1ZRX1FOUUFtdlFBNE5JMDZ6VkFJek9MTEkxVGp5bEpMOGhKODQ?oc=5",
+   "publicado": "2026-11-24T13:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Equipe econômica tem aval de Lula e trabalha para enviar PEC do ajuste fiscal até a próxima semana",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/equipe-economica-aval-lula-pec-ajuste-fiscal/",
+   "publicado": "2026-11-24T13:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
    "fonte": "CNBC",
@@ -1806,41 +1914,6 @@
     "WIN"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa deve ter desempenho positivo em 2027 mas com retornos seletivos, segundo estrategistas",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOM0dJWERjRlZPdG1MNTl2dmp5a2ZOcXNycDZJdlFxMURsRXY4NUtmNXNVajNzeEF3a1dBVU1ZZnQ3Q2VkbldjZWhMRHdEQ1lJbUIxMTRDQXFGOUZjdmE5UVI2c3Q0MVpkMFVfTWJyMVJZT3JXWkxWY2Q5d2lFZ0JZOV9DNzFiZjVwbnc2WlFFRGs5TG5qbVBtWExMMzRCWFNGdzF1VGktMkg2T1AzZlF0RS0zdHlLTXBHVjF2YU5MMjJzN2x0ejdfUnpR?oc=5",
-   "publicado": "2026-11-24T11:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOcjhCUWVRLUo4cjFEU1NfTEdyeEt4M2toQmxtRWFqbXRfM0stX21HOEFkamdFN1hhR1VIMHE4ekdlT1dTMnliTzBmTGZHN0tFM0tXaWlPZFJ4U1ZUeGYtSm92Vk1JckhZX0N0dUtXNDNhd1RnM3NZQmJOY2F0OTJqVzg3NnNkM3dTOXdLeXc5Y3hTT3loLTZRbHlIRFpHOW90X3ctbFgtaTJxaWMtcVBtN1NacW1zM0lKV2x4Znh2YjBTdjdzblpPZzVtSlFqM2JfTldLVHM0MlBldkdPTDNTVmlmSXgxbVoxbkN2MWxWY9IB7wFBVV95cUxOcjhCUWVRLUo4cjFEU1NfTEdyeEt4M2toQmxtRWFqbXRfM0stX21HOEFkamdFN1hhR1VIMHE4ekdlT1dTMnliTzBmTGZHN0tFM0tXaWlPZFJ4U1ZUeGYtSm92Vk1JckhZX0N0dUtXNDNhd1RnM3NZQmJOY2F0OTJqVzg3NnNkM3dTOXdLeXc5Y3hTT3loLTZRbHlIRFpHOW90X3ctbFgtaTJxaWMtcVBtN1NacW1zM0lKV2x4Znh2YjBTdjdzblpPZzVtSlFqM2JfTldLVHM0MlBldkdPTDNTVmlmSXgxbVoxbkN2MWxWYw?oc=5",
-   "publicado": "2026-11-24T11:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
-   "publicado": "2026-11-24T11:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   },
   {
    "titulo": "Dirigente do Fed é investigada após jantar privado com banqueiros",
