@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T12:23-03:00",
+  "atualizado_em": "2026-11-24T12:25-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -107,11 +107,11 @@
     ],
     [
      "12:05",
-     166550.0
+     166314.0
     ],
     [
-     "12:08",
-     166527.0
+     "12:10",
+     166360.0
     ]
    ]
   },
@@ -280,11 +280,11 @@
     ],
     [
      "12:20",
-     5.8583
+     5.8534
     ],
     [
-     "12:23",
-     5.8583
+     "12:25",
+     5.8604
     ]
    ]
   },
@@ -565,7 +565,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.51,
+    "ibov30": -0.61,
     "dolar30": 0.41
    },
    {
@@ -581,7 +581,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": 0.32
+    "dolar30": 0.24
    },
    {
     "hora": "11:51",
@@ -594,7 +594,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.32
+    "dolar30": 0.24
    },
    {
     "hora": "11:56",
@@ -607,7 +607,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": 0.3
    },
    {
     "hora": "12:00",
@@ -620,7 +620,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.33
    },
    {
     "hora": "12:08",
@@ -1305,7 +1305,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T12:23-03:00",
+ "atualizado_em": "2026-11-24T12:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1313,7 +1313,6 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -1460,6 +1459,17 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar recua mais de 2% e volta para os R$ 5,80; entenda o movimento",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaG91VzV1V1pXSVdJa0x1alQ3djBORzlTdjlUZWNIcVVQS1RsVlFsYm5WMjNMdjhNRkxTWFhXUjZ4SzJYUUtIVXdSdHV0R1Ywbk9fV21wV3hXMV9lZnZJQ0E2Y3FXZzdtamk1WmFDaDh2NnFoVUFONTY1eDI5NDQ3M2I1eS1wUExSd21NandjNGVMc0xoT1poM1dRazYwVVFL?oc=5",
+   "publicado": "2026-11-24T11:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
@@ -1496,20 +1506,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe após quedas, Vale cai 3% e dólar despenca após bater R$ 6: o que está acontecendo?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzdGp1U0pLeVRpX01WdUJLYlgtR25EbXFMc0tSWE9GT3lfZ2ZOWFNaX1ZzV0VrYVFaajFxaHg5RzNzdGMwTmpQUVg5Um93UVVqU1o4dTNEUUQ3cWNNUDdUVnZaLVl1dmxWYXNj?oc=5",
-   "publicado": "2026-11-24T10:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
   }
  ]
 }
