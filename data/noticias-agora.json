@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T14:38-03:00",
+  "atualizado_em": "2026-11-24T15:08-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -215,11 +215,35 @@
     ],
     [
      "14:20",
-     164997.0
+     164922.0
     ],
     [
-     "14:23",
-     164967.0
+     "14:25",
+     165003.0
+    ],
+    [
+     "14:30",
+     165233.0
+    ],
+    [
+     "14:35",
+     165106.0
+    ],
+    [
+     "14:40",
+     165241.0
+    ],
+    [
+     "14:45",
+     165185.0
+    ],
+    [
+     "14:50",
+     165234.0
+    ],
+    [
+     "14:53",
+     165180.0
     ]
    ]
   },
@@ -496,11 +520,35 @@
     ],
     [
      "14:35",
-     5.9077
+     5.904
     ],
     [
-     "14:38",
-     5.9078
+     "14:40",
+     5.9052
+    ],
+    [
+     "14:45",
+     5.9043
+    ],
+    [
+     "14:50",
+     5.9001
+    ],
+    [
+     "14:55",
+     5.9034
+    ],
+    [
+     "15:00",
+     5.9016
+    ],
+    [
+     "15:05",
+     5.9015
+    ],
+    [
+     "15:08",
+     5.9032
     ]
    ]
   },
@@ -1062,7 +1110,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": -0.21,
+    "ibov30": -0.25,
     "dolar30": 0.3
    },
    {
@@ -1077,8 +1125,23 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": -0.02,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "14:30",
+    "titulo": "Após retomar investimentos, Petrobras buscará novas empresas de etanol",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtRkIxQVFzdGFoZE95bUcxZUQzdVhUQURScVdiREl2NFJIQTBUZGVWQUQzcHZSUzJPQmluc2M1MXdsckp1SHprWTF4MklaQ1NZeS1Bb2VaSlEzdXUtaG41dmJ2Q0NxWFBSNGs1d2RCXzhKbUJSeXA4?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    },
    {
     "hora": "14:31",
@@ -1092,6 +1155,19 @@
     "tickers": [
      "PETR4"
     ],
+    "ibov30": null,
+    "dolar30": 0.02
+   },
+   {
+    "hora": "14:59",
+    "titulo": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -1905,6 +1981,19 @@
    ]
   },
   {
+   "titulo": "Após retomar investimentos, Petrobras buscará novas empresas de etanol",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtRkIxQVFzdGFoZE95bUcxZUQzdVhUQURScVdiREl2NFJIQTBUZGVWQUQzcHZSUzJPQmluc2M1MXdsckp1SHprWTF4MklaQ1NZeS1Bb2VaSlEzdXUtaG41dmJ2Q0NxWFBSNGs1d2RCXzhKbUJSeXA4?oc=5",
+   "publicado": "2026-11-24T14:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Petrobras prevê investimentos de US$ 122 bilhões entre 2027 e 2031",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-preve-investimentos-de-us-122-bilhoes-entre-2027-e-2031",
@@ -1916,6 +2005,17 @@
    "tickers": [
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
+   "publicado": "2026-11-24T14:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1945,7 +2045,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T14:38-03:00",
+ "atualizado_em": "2026-11-24T15:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1958,6 +2058,17 @@
  ],
  "noticias": [
   {
+   "titulo": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
+   "publicado": "2026-11-24T14:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Petrobras prevê investimentos de US$ 122 bilhões entre 2027 e 2031",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-preve-investimentos-de-us-122-bilhoes-entre-2027-e-2031",
@@ -1968,6 +2079,32 @@
    ],
    "tickers": [
     "PETR4"
+   ]
+  },
+  {
+   "titulo": "Após retomar investimentos, Petrobras buscará novas empresas de etanol",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtRkIxQVFzdGFoZE95bUcxZUQzdVhUQURScVdiREl2NFJIQTBUZGVWQUQzcHZSUzJPQmluc2M1MXdsckp1SHprWTF4MklaQ1NZeS1Bb2VaSlEzdXUtaG41dmJ2Q0NxWFBSNGs1d2RCXzhKbUJSeXA4?oc=5",
+   "publicado": "2026-11-24T14:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "UBS BB rebaixa B3 e corta preço-alvo em 39%; entenda os efeitos dos juros na ação da dona da Bolsa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOU3RHMXcwMEl3SnJIVXdVTENMQXItb3kxSWhHbV82amVrZXVpRFQ1Q1FiM0RRVE01MVUwaDR5RGRDNVQzRTNpQk9mQlBpeFFUT25LYlVxLUF0RkxCd1djc29SMFotZS0wSllKelcxNjMyOTY0YzY3ZVd2OTlBTEVXeHE2T2E4VmNrUERiQmg3MUdxMFV5RVdmY3JZM3ZKd1FPcUE5UWpaRExHRHREdjJLY1A1cThqOEJVNEtGaXlFNl9DaUhzNWx5WEVwTklYTENZTmZWTER1NFhQdWR6Vnl0SG8yQmItSUdFNG5N0gHwAUFVX3lxTFBRQ293VERGcnJxRlY5ZWxRRFJ3MlUtMWcyd0hZRXhsZi1lU3BQVG9jRWp6M2hUelA4THA3cG5TNTVXb0szQnBYc1lWNlNFN0FJNWVKdzc3MVpTNjIzbXBTdHNlVzR0bFV2Y2Uxc21MTFlpWjc5U3J2NmZMb3pTa0xLU2JFeXV4SjBkMjJSWWFVNFVySU93U0d6dUxTTEJjZzZNS2tqb05qbFNfRE13dzYwWWluYkFFOGc3OHRMTlFibjFvVXBoZTBGb3pmMlQxLWRjaEdQOUpkUE5BT2NRcXJ2NnJObTdWS192bHQyX1JCeg?oc=5",
+   "publicado": "2026-11-24T14:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
    ]
   },
   {
@@ -2042,21 +2179,10 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar acima de R$ 6? Como proteger a margem de quem importa",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZE13MndMVjQxUW1uQ1hfUlBwaVdiRHNHM1FnRlVVTHkwb0RDU0NKeFFCNTRydVJRRjZBQk8wSGwzVnZ2bDBPVmpxcXZXZHNYSWJJWlVrNjBoRnVPbTJLc0gwbU04S0JGLTZhc3NJcHNNa3RUMzEtREttRlBQbWdtMllvYmxVOFRHWVJKeUlTM3lLT0JKdU4teE9fRWFDczVHT0kxbEhkMGZRSjlHSmZEYdIBtgFBVV95cUxNSmljOFBBWWJNNVpyaVBUTkQtNjRETmJmTlZjS3NJdFljQnEwdUUxUVN0OWRUR2NRTnNBMEMtLUVvRFNPcGtDdS13MUh4Y3lkYmI5alpSR1VUWEt4bm1KUFdSVVlWdXZhMV9JRjN0czRpbVRBRGNkb29pYnhrN2tqU0RVaUFFUmFCYjd5OUR0bWVlRTlFT2NvUzJIY3lJSXNBcmM0VHE5SG5tNDF3N0JpWGpuWmgwUQ?oc=5",
-   "publicado": "2026-11-24T13:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Cogna dispara quase 8% e lidera as maiores altas do Ibovespa; veja os destaques",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZTdnLTVJUTJZb3Jsck9tTGtnUWotaXppTEVwRGVoRzJZLUhqSzVqSGhERVRpM19heWZEOUZLcTdQSm50NVZyYm5iT2IwWktoTVVBRF95bEwxSnRfV3NZOUd6blZVX25yNWlNXzU2NlRiS1h2S0Q5ZFFwRkJrbnJDMVY4S1FFT1VsNXN6VURUZ1hPa3lYR3U1UXFGN1IzMWw0dGlKOS1wOE1zaFcyREg0N1RVUVVBQzlpcm91M3cyUUNCdEFlOFFqbWo5ZklKMmJLM0lLTFhIRnJUQQ?oc=5",
-   "publicado": "2026-11-24T12:57-03:00",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbTRwZUdoRVZCSnJ4Rm9mOHBiYkxQQ2JZZUdwSWFwaWJENlhlNnBpLWozTzAxUnJMc2k5MU5QN3hDS2RUUThZN2N2YzFCTHFfSHZmOEhqY0pFdUU5d2Z3U0ZuUTk0OFNrNUVfQTdiRXdTUjNzLUF2d0oyeGx4UjhkZUlXV1k5c3M0MENaYllIUHh4VUg1UHM4TzZpazJ1TjVWcE0yNjVuNFNDaklYT19zY2hyNGEyQ3Z1MG9MWGg2dVlvb3lPZTZLclUzWllsWU3SAdQBQVVfeXFMTURWalZTTGNsTzR0Rm5JWmVubnZDSmptaWJMck5DX2JXcGptV01CWjcya2RNelJYQl9tLWJBYXhWd09WYUJfbTRncnpUbzJqUUxSUTJ6ZzhvUXRLUU8xa3lfOXJLQVBDdS1IcWZZMURudk0tbl8tVkZkWndYbFZURWtZQXc5WlNNRXo0eWdaajNIT3pTUmtWXzhXVTJoaUowTTFSM1pueDZRTzVrUWw5UkcyQ2RMRHZEUFJUczEta2dzWWtrNU9iekM2SFBFWEg0a2pfWjM?oc=5",
+   "publicado": "2026-11-24T12:47-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -2073,42 +2199,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Commercial real estate activity falls 14% in October, as interest rates rise",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
-   "publicado": "2026-11-24T12:05-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/alta-dolar-consequencias-bolso-brasileiros/",
-   "publicado": "2026-11-24T12:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
-   "publicado": "2026-11-24T11:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   }
  ]
 }
