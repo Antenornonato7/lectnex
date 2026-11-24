@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T17:53-03:00",
+  "atualizado_em": "2026-11-24T17:55-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     164089.0
+     164097.0
     ]
    ]
   },
@@ -776,11 +776,11 @@
     ],
     [
      "17:50",
-     5.9065
+     5.906
     ],
     [
-     "17:53",
-     5.9078
+     "17:55",
+     5.907
     ]
    ]
   },
@@ -1503,6 +1503,19 @@
     "dolar30": 0.08
    },
    {
+    "hora": "16:19",
+    "titulo": "Após bater os R$ 6, o dólar está caro ou barato?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObTFyMnViMC1MNWdPOHNnTEJQXzN0M0xQLWJUNFZHeWx1Mkh3U1VSZ2VvenVpMFNKYXU1bVhuSy02VlBDMDV3Um5KY3NTSUhvNlFUeFhmNVJYVmtmZ19WR1ZTYjdBRGpTNDF1U2tWQ0Z4aHlXOV9NMU43bXZVVWJ6RExBenhwSGJzbnFaMdIBkgFBVV95cUxNeWNxVWc5QVdmbDZnQ1RsRE1jZnNjd3g0ZU5EWDhxNWsxbnlzcDFJbnZQRDZQa0FMNXpCYVlLX2oyOHhSaWVyWXNGOXRNajd0QkhJSzZ2eFNHUTNEb0tPcEtvR3Nsc2xNMDJXN0FyaEQtNzdDMUJKc1l5cTliTjVvNUVBbFFDRFROVWRtVXZ4WVotQQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.04,
+    "dolar30": 0.08
+   },
+   {
     "hora": "16:20",
     "titulo": "Lula sanciona sem vetos projeto de ajuste fiscal de R$ 50 bi em 2027 após aprovação na Câmara",
     "fonte": "Estadão",
@@ -1626,7 +1639,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": -0.03
    },
    {
     "hora": "17:26",
@@ -1639,7 +1652,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": -0.07
    },
    {
     "hora": "17:41",
@@ -1658,20 +1671,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Tempo real: Ibovespa de olho no ajuste fiscal e na Petrobras; veja os destaques desta terça-feira (24)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16dGktLTZQcjhGOXpyS21BUlVmMFdORHNzekJCeUVET25FbUUxMnZ4dk43UThuZFVJUk40NTU4LXcxSV84eTV0Sks1bWg4eklXaVlyMV9NWGxCbzBoU05KZ1JUZVNGOTgt?oc=5",
-   "publicado": "2026-11-24T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
   {
    "titulo": "Capital estrangeiro sustenta M&A no Brasil à espera de clareza fiscal, dizem bancos",
    "fonte": "Bloomberg Línea",
@@ -2485,6 +2484,17 @@
    ]
   },
   {
+   "titulo": "Após bater os R$ 6, o dólar está caro ou barato?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObTFyMnViMC1MNWdPOHNnTEJQXzN0M0xQLWJUNFZHeWx1Mkh3U1VSZ2VvenVpMFNKYXU1bVhuSy02VlBDMDV3Um5KY3NTSUhvNlFUeFhmNVJYVmtmZ19WR1ZTYjdBRGpTNDF1U2tWQ0Z4aHlXOV9NMU43bXZVVWJ6RExBenhwSGJzbnFaMdIBkgFBVV95cUxNeWNxVWc5QVdmbDZnQ1RsRE1jZnNjd3g0ZU5EWDhxNWsxbnlzcDFJbnZQRDZQa0FMNXpCYVlLX2oyOHhSaWVyWXNGOXRNajd0QkhJSzZ2eFNHUTNEb0tPcEtvR3Nsc2xNMDJXN0FyaEQtNzdDMUJKc1l5cTliTjVvNUVBbFFDRFROVWRtVXZ4WVotQQ?oc=5",
+   "publicado": "2026-11-24T16:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Lula sanciona sem vetos projeto de ajuste fiscal de R$ 50 bi em 2027 após aprovação na Câmara",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/lula-sanciona-sem-vetos-projeto-de-ajuste-fiscal-de-r-50-bi-em-2027-apos-aprovacao-na-camara/",
@@ -2643,7 +2653,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T17:53-03:00",
+ "atualizado_em": "2026-11-24T17:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2785,6 +2795,17 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Após bater os R$ 6, o dólar está caro ou barato?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObTFyMnViMC1MNWdPOHNnTEJQXzN0M0xQLWJUNFZHeWx1Mkh3U1VSZ2VvenVpMFNKYXU1bVhuSy02VlBDMDV3Um5KY3NTSUhvNlFUeFhmNVJYVmtmZ19WR1ZTYjdBRGpTNDF1U2tWQ0Z4aHlXOV9NMU43bXZVVWJ6RExBenhwSGJzbnFaMdIBkgFBVV95cUxNeWNxVWc5QVdmbDZnQ1RsRE1jZnNjd3g0ZU5EWDhxNWsxbnlzcDFJbnZQRDZQa0FMNXpCYVlLX2oyOHhSaWVyWXNGOXRNajd0QkhJSzZ2eFNHUTNEb0tPcEtvR3Nsc2xNMDJXN0FyaEQtNzdDMUJKc1l5cTliTjVvNUVBbFFDRFROVWRtVXZ4WVotQQ?oc=5",
+   "publicado": "2026-11-24T16:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
