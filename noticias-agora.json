@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T12:20-03:00",
+  "atualizado_em": "2026-11-24T12:23-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -107,7 +107,11 @@
     ],
     [
      "12:05",
-     166755.0
+     166550.0
+    ],
+    [
+     "12:08",
+     166527.0
     ]
    ]
   },
@@ -276,7 +280,11 @@
     ],
     [
      "12:20",
-     5.8524
+     5.8583
+    ],
+    [
+     "12:23",
+     5.8583
     ]
    ]
   },
@@ -557,7 +565,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.51,
     "dolar30": 0.41
    },
    {
@@ -573,7 +581,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": 0.22
+    "dolar30": 0.32
    },
    {
     "hora": "11:51",
@@ -586,7 +594,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.22
+    "dolar30": 0.32
    },
    {
     "hora": "11:56",
@@ -599,7 +607,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.26
    },
    {
     "hora": "12:00",
@@ -622,6 +630,21 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:09",
+    "titulo": "Dólar cai mais de 1%; Ibovespa acompanha política fiscal e arrecadação federal",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1240,6 +1263,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar cai mais de 1%; Ibovespa acompanha política fiscal e arrecadação federal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZw?oc=5",
+   "publicado": "2026-11-24T12:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1269,7 +1305,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T12:20-03:00",
+ "atualizado_em": "2026-11-24T12:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1277,6 +1313,7 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -1284,14 +1321,15 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar cai quase 2%; Ibovespa sobe com notícia sobre aval de Lula a projeto para conter gastos",
+   "titulo": "Dólar cai mais de 1%; Ibovespa acompanha política fiscal e arrecadação federal",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZw?oc=5",
    "publicado": "2026-11-24T12:09-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1400,6 +1438,17 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar cai até 2% após notícia sobre PEC para conter despesas obrigatórias",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbDlTQ1RIbFRONHR4SnhyRVBoYnFaRWstQzZmTEh5RVJWRU9vSE1sQjVYbUlvYllUUmpuY0hKRGNGN2R1Z2dSOHpkdHBZXzItSGZDRVdnMEZNeUVCUVVUcW5vblhTa1MxMURBbTluTjIwRGpIMXNkdDZILTFTZVNHZUNTd0Z4Vk9pUUdva1llaVY0NGRBbTZJbWlVb0PSAaIBQVVfeXFMTU5pcGptQkZHWFZUaTlLdnN1WlRLRWhxTnFPNUZYNjU0Vk1LVGNoNFJpNmRNVFBtVjRoTGFrQXR2bjZHQkhpLVNCUnBGTkU0MUFZTW02Umc4REozdHRkTlZaeUtReFNJWk9WTENyZG5wbUZtTVFVenlYVlg5UmJPeUlDM1Qxa1UwNGNlcXVwdU9YZ2RtS3JDbi1TM3M3ZVRjdDlR?oc=5",
+   "publicado": "2026-11-24T11:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Após dólar a R$ 6, mercado espera medidas concretas do governo, diz Guillen",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZExrVXhRc2FIOTkxZnVSWUFRZlF5b09jZ1NTendyTk9aZk5UZldwNXAzRGRLc0U3V2lJRjNvZVdCdzNPWmpNYm82ZmktZHI5Z0VwNmhKbW1QeHkyOThXQjZGNkk1OWtRSmllT0pCUElzaVVINlN1UlNrc1ZwREh6Q1hzVTRNZktPNld4eDdsN0kwRDhQeG9xbjhSOEV2WVJLREROT1lsblVPVmUzMG1JYjFDR0VMOThwbVpZQ2l3d0M1OVN3REdmMk5XQVhMTkNVaEdqQmhaTWhiRnhzQXU2V1FCbWtBZw?oc=5",
@@ -1407,28 +1456,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar recua mais de 2% e volta para os R$ 5,80; entenda o movimento",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaG91VzV1V1pXSVdJa0x1alQ3djBORzlTdjlUZWNIcVVQS1RsVlFsYm5WMjNMdjhNRkxTWFhXUjZ4SzJYUUtIVXdSdHV0R1Ywbk9fV21wV3hXMV9lZnZJQ0E2Y3FXZzdtamk1WmFDaDh2NnFoVUFONTY1eDI5NDQ3M2I1eS1wUExSd21NandjNGVMc0xoT1poM1dRazYwVVFL?oc=5",
-   "publicado": "2026-11-24T11:10-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros recuam com exterior e aprovação de ajuste fiscal na Câmara",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOX3lGSFdGeW44bUZLeEF3VUZfZXItRzdSZlpjUkVFSTFRNDctTE9UdDFycWgtRExfZmRERHNERXR3VnpCcXpPQTRuUUhRb0pSeXJURkd0S2g2OWRaeU9qdHhYcDZNZWhUSkQ2REdkR05nNk9PLXQ2aE5JaVc1NjR1RVRrYkZGODVDazV6RDJRVTZoQTBSZkluLUozTXBpVTdEWGltenBxUFdMeWVpQW8wdmpWalZWOUhEOElqbTJxa19va0k?oc=5",
-   "publicado": "2026-11-24T10:52-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   },
@@ -1469,6 +1496,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe após quedas, Vale cai 3% e dólar despenca após bater R$ 6: o que está acontecendo?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzdGp1U0pLeVRpX01WdUJLYlgtR25EbXFMc0tSWE9GT3lfZ2ZOWFNaX1ZzV0VrYVFaajFxaHg5RzNzdGMwTmpQUVg5Um93UVVqU1o4dTNEUUQ3cWNNUDdUVnZaLVl1dmxWYXNj?oc=5",
+   "publicado": "2026-11-24T10:01-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   }
  ]
 }
