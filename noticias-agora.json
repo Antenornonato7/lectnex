@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T11:53-03:00",
+  "atualizado_em": "2026-11-24T11:55-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -83,11 +83,11 @@
     ],
     [
      "11:35",
-     166933.0
+     167049.0
     ],
     [
-     "11:38",
-     166793.0
+     "11:40",
+     167173.0
     ]
    ]
   },
@@ -232,11 +232,11 @@
     ],
     [
      "11:50",
-     5.8373
+     5.8394
     ],
     [
-     "11:53",
-     5.8387
+     "11:55",
+     5.8424
     ]
    ]
   },
@@ -477,7 +477,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.1,
+    "ibov30": 0.17,
     "dolar30": -0.15
    },
    {
@@ -490,7 +490,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.24,
     "dolar30": -0.16
    },
    {
@@ -505,7 +505,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.24
+    "dolar30": 0.3
    },
    {
     "hora": "11:41",
@@ -517,6 +517,21 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:51",
+    "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1076,6 +1091,19 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
+   "publicado": "2026-11-24T11:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1105,7 +1133,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T11:53-03:00",
+ "atualizado_em": "2026-11-24T11:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1120,6 +1148,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Mercado recebe com cautela plano da Petrobras com mais investimento e produção estável",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/mercado-recebe-com-cautela-plano-da-petrobras-com-mais-investimento-e-producao-estavel.shtml",
+   "publicado": "2026-11-24T11:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Ibovespa a 182 mil em 2027? Estrategistas veem ano de alta, mas com compras seletivas",
    "fonte": "InfoMoney",
@@ -1298,19 +1339,6 @@
    ],
    "tickers": [
     "B3SA3"
-   ]
-  },
-  {
-   "titulo": "Petrobras prevê US$ 7 bilhões para ampliar infraestrutura de transporte de combustíveis",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-preve-us-7-bilhoes-para-ampliar-infraestrutura-de-transporte-de-combustiveis.shtml",
-   "publicado": "2026-11-24T09:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
    ]
   }
  ]
