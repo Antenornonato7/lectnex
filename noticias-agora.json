@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T13:03-03:00",
+  "atualizado_em": "2026-11-24T13:05-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -139,11 +139,11 @@
     ],
     [
      "12:45",
-     165417.0
+     165542.0
     ],
     [
-     "12:48",
-     165554.0
+     "12:50",
+     165492.0
     ]
    ]
   },
@@ -344,11 +344,15 @@
     ],
     [
      "13:00",
-     5.8743
+     5.8738
     ],
     [
-     "13:03",
-     5.8745
+     "13:05",
+     5.8753
+    ],
+    [
+     "13:06",
+     5.877
     ]
    ]
   },
@@ -737,7 +741,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.24,
+    "ibov30": -0.27,
     "dolar30": 0.04
    },
    {
@@ -751,7 +755,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.18
    },
    {
     "hora": "12:47",
@@ -1513,7 +1517,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T13:03-03:00",
+ "atualizado_em": "2026-11-24T13:05-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1527,6 +1531,17 @@
  ],
  "noticias": [
   {
+   "titulo": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+   "publicado": "2026-11-24T13:03-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Cogna dispara quase 8% e lidera as maiores altas do Ibovespa; veja os destaques",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZTdnLTVJUTJZb3Jsck9tTGtnUWotaXppTEVwRGVoRzJZLUhqSzVqSGhERVRpM19heWZEOUZLcTdQSm50NVZyYm5iT2IwWktoTVVBRF95bEwxSnRfV3NZOUd6blZVX25yNWlNXzU2NlRiS1h2S0Q5ZFFwRkJrbnJDMVY4S1FFT1VsNXN6VURUZ1hPa3lYR3U1UXFGN1IzMWw0dGlKOS1wOE1zaFcyREg0N1RVUVVBQzlpcm91M3cyUUNCdEFlOFFqbWo5ZklKMmJLM0lLTFhIRnJUQQ?oc=5",
@@ -1534,17 +1549,6 @@
    "impacto": "medio",
    "ativos": [
     "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
-   "publicado": "2026-11-24T12:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   },
