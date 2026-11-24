@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T13:08-03:00",
+  "atualizado_em": "2026-11-24T13:38-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -143,11 +143,35 @@
     ],
     [
      "12:50",
-     165513.0
+     165532.0
     ],
     [
-     "12:53",
-     165572.0
+     "12:55",
+     165403.0
+    ],
+    [
+     "13:00",
+     165186.0
+    ],
+    [
+     "13:05",
+     165197.0
+    ],
+    [
+     "13:10",
+     165170.0
+    ],
+    [
+     "13:15",
+     165287.0
+    ],
+    [
+     "13:20",
+     165433.0
+    ],
+    [
+     "13:23",
+     165429.0
     ]
    ]
   },
@@ -352,11 +376,35 @@
     ],
     [
      "13:05",
-     5.8782
+     5.8829
     ],
     [
-     "13:08",
-     5.8824
+     "13:10",
+     5.8945
+    ],
+    [
+     "13:15",
+     5.8905
+    ],
+    [
+     "13:20",
+     5.8982
+    ],
+    [
+     "13:25",
+     5.8998
+    ],
+    [
+     "13:30",
+     5.896
+    ],
+    [
+     "13:35",
+     5.896
+    ],
+    [
+     "13:38",
+     5.8985
     ]
    ]
   },
@@ -708,6 +756,20 @@
     "dolar30": 0.23
    },
    {
+    "hora": "12:03",
+    "titulo": "Ibovespa cai pelo 3º pregão seguido e dólar fecha em leve baixa após tocar R$ 6",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMm9kOXBlODlDb2pkY0RhTmVDeUtNMUYtZDZCSVpRbVhOV1BNdzFqQWE4SHJmUUtzYUpjVGNZZE1DaWVkMVc0eTU3RVZGOTVIYTBNQ1Nhek1KajBmQ0lpNnctc0dGYmV4N0ZHRjZxSTNCVjIxcmlFQW03YTFoM3I4UTVIVG91OGNwNnN5UVpBXzVBOFF6N1o1MU8zMFZqcEg4c3pQVVdlM0FZbUdfYmxsU1cwd0JPQTN6LV9SVkYwQ1QzZUFNMmRBR3NKaTNmT1VKQ1ZjeXhidS1BUy1BenJQSDJiQXYtWkp6OGxzTFZfZ0xvdw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.58,
+    "dolar30": 0.18
+   },
+   {
     "hora": "12:08",
     "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
     "fonte": "Estadão",
@@ -745,7 +807,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": -0.26,
+    "ibov30": -0.25,
     "dolar30": 0.04
    },
    {
@@ -758,8 +820,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.23
+    "ibov30": -0.04,
+    "dolar30": 0.31
    },
    {
     "hora": "12:47",
@@ -771,8 +833,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.15,
+    "dolar30": 0.56
    },
    {
     "hora": "12:55",
@@ -784,8 +846,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.02,
+    "dolar30": 0.54
    },
    {
     "hora": "12:57",
@@ -797,8 +859,21 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": 0.02,
+    "dolar30": 0.57
+   },
+   {
+    "hora": "13:00",
+    "titulo": "Dólar acima de R$ 6? Como proteger a margem de quem importa",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZE13MndMVjQxUW1uQ1hfUlBwaVdiRHNHM1FnRlVVTHkwb0RDU0NKeFFCNTRydVJRRjZBQk8wSGwzVnZ2bDBPVmpxcXZXZHNYSWJJWlVrNjBoRnVPbTJLc0gwbU04S0JGLTZhc3NJcHNNa3RUMzEtREttRlBQbWdtMllvYmxVOFRHWVJKeUlTM3lLT0JKdU4teE9fRWFDczVHT0kxbEhkMGZRSjlHSmZEYdIBtgFBVV95cUxNSmljOFBBWWJNNVpyaVBUTkQtNjRETmJmTlZjS3NJdFljQnEwdUUxUVN0OWRUR2NRTnNBMEMtLUVvRFNPcGtDdS13MUh4Y3lkYmI5alpSR1VUWEt4bm1KUFdSVVlWdXZhMV9JRjN0czRpbVRBRGNkb29pYnhrN2tqU0RVaUFFUmFCYjd5OUR0bWVlRTlFT2NvUzJIY3lJSXNBcmM0VHE5SG5tNDF3N0JpWGpuWmgwUQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.44
    }
   ]
  },
@@ -1415,6 +1490,18 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa cai pelo 3º pregão seguido e dólar fecha em leve baixa após tocar R$ 6",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMm9kOXBlODlDb2pkY0RhTmVDeUtNMUYtZDZCSVpRbVhOV1BNdzFqQWE4SHJmUUtzYUpjVGNZZE1DaWVkMVc0eTU3RVZGOTVIYTBNQ1Nhek1KajBmQ0lpNnctc0dGYmV4N0ZHRjZxSTNCVjIxcmlFQW03YTFoM3I4UTVIVG91OGNwNnN5UVpBXzVBOFF6N1o1MU8zMFZqcEg4c3pQVVdlM0FZbUdfYmxsU1cwd0JPQTN6LV9SVkYwQ1QzZUFNMmRBR3NKaTNmT1VKQ1ZjeXhidS1BUy1BenJQSDJiQXYtWkp6OGxzTFZfZ0xvdw?oc=5",
+   "publicado": "2026-11-24T12:03-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaTBZcE1FZlZmR2hKTlJYZ2dzMjZnQXIxeEF0QlptUUw2dy1rMjFJcWJKU1BJX1dVR01UNTVjZWx6S1BzcXZCZk1lRE00QVQwMUQwdldqckdFOUg5YmRheGpiVC1tZy1BQlhFa3EzNzZEWk5SSmEweS1PZEZSZVpUT1lpOFNBYVFFSlpZbWdVWmc?oc=5",
@@ -1492,6 +1579,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar acima de R$ 6? Como proteger a margem de quem importa",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZE13MndMVjQxUW1uQ1hfUlBwaVdiRHNHM1FnRlVVTHkwb0RDU0NKeFFCNTRydVJRRjZBQk8wSGwzVnZ2bDBPVmpxcXZXZHNYSWJJWlVrNjBoRnVPbTJLc0gwbU04S0JGLTZhc3NJcHNNa3RUMzEtREttRlBQbWdtMllvYmxVOFRHWVJKeUlTM3lLT0JKdU4teE9fRWFDczVHT0kxbEhkMGZRSjlHSmZEYdIBtgFBVV95cUxNSmljOFBBWWJNNVpyaVBUTkQtNjRETmJmTlZjS3NJdFljQnEwdUUxUVN0OWRUR2NRTnNBMEMtLUVvRFNPcGtDdS13MUh4Y3lkYmI5alpSR1VUWEt4bm1KUFdSVVlWdXZhMV9JRjN0czRpbVRBRGNkb29pYnhrN2tqU0RVaUFFUmFCYjd5OUR0bWVlRTlFT2NvUzJIY3lJSXNBcmM0VHE5SG5tNDF3N0JpWGpuWmgwUQ?oc=5",
+   "publicado": "2026-11-24T13:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1521,7 +1619,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T13:08-03:00",
+ "atualizado_em": "2026-11-24T13:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1542,6 +1640,17 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar acima de R$ 6? Como proteger a margem de quem importa",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZE13MndMVjQxUW1uQ1hfUlBwaVdiRHNHM1FnRlVVTHkwb0RDU0NKeFFCNTRydVJRRjZBQk8wSGwzVnZ2bDBPVmpxcXZXZHNYSWJJWlVrNjBoRnVPbTJLc0gwbU04S0JGLTZhc3NJcHNNa3RUMzEtREttRlBQbWdtMllvYmxVOFRHWVJKeUlTM3lLT0JKdU4teE9fRWFDczVHT0kxbEhkMGZRSjlHSmZEYdIBtgFBVV95cUxNSmljOFBBWWJNNVpyaVBUTkQtNjRETmJmTlZjS3NJdFljQnEwdUUxUVN0OWRUR2NRTnNBMEMtLUVvRFNPcGtDdS13MUh4Y3lkYmI5alpSR1VUWEt4bm1KUFdSVVlWdXZhMV9JRjN0czRpbVRBRGNkb29pYnhrN2tqU0RVaUFFUmFCYjd5OUR0bWVlRTlFT2NvUzJIY3lJSXNBcmM0VHE5SG5tNDF3N0JpWGpuWmgwUQ?oc=5",
+   "publicado": "2026-11-24T13:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1593,7 +1702,7 @@
    "titulo": "Dólar cai mais de 1%; Ibovespa sobe com notícia sobre aval de Lula a projeto para conter gastos",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
-   "publicado": "2026-11-24T12:09-03:00",
+   "publicado": "2026-11-24T12:14-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -1621,6 +1730,18 @@
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa cai pelo 3º pregão seguido e dólar fecha em leve baixa após tocar R$ 6",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMm9kOXBlODlDb2pkY0RhTmVDeUtNMUYtZDZCSVpRbVhOV1BNdzFqQWE4SHJmUUtzYUpjVGNZZE1DaWVkMVc0eTU3RVZGOTVIYTBNQ1Nhek1KajBmQ0lpNnctc0dGYmV4N0ZHRjZxSTNCVjIxcmlFQW03YTFoM3I4UTVIVG91OGNwNnN5UVpBXzVBOFF6N1o1MU8zMFZqcEg4c3pQVVdlM0FZbUdfYmxsU1cwd0JPQTN6LV9SVkYwQ1QzZUFNMmRBR3NKaTNmT1VKQ1ZjeXhidS1BUy1BenJQSDJiQXYtWkp6OGxzTFZfZ0xvdw?oc=5",
+   "publicado": "2026-11-24T12:03-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -1686,29 +1807,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dirigente-do-fed-e-investigada-apos-jantar-privado-com-banqueiros.shtml",
    "publicado": "2026-11-24T11:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Após dólar a R$ 6, mercado espera medidas concretas do governo, diz Guillen",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNZExrVXhRc2FIOTkxZnVSWUFRZlF5b09jZ1NTendyTk9aZk5UZldwNXAzRGRLc0U3V2lJRjNvZVdCdzNPWmpNYm82ZmktZHI5Z0VwNmhKbW1QeHkyOThXQjZGNkk1OWtRSmllT0pCUElzaVVINlN1UlNrc1ZwREh6Q1hzVTRNZktPNld4eDdsN0kwRDhQeG9xbjhSOEV2WVJLREROT1lsblVPVmUzMG1JYjFDR0VMOThwbVpZQ2l3d0M1OVN3REdmMk5XQVhMTkNVaEdqQmhaTWhiRnhzQXU2V1FCbWtBZw?oc=5",
-   "publicado": "2026-11-24T11:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
-   "publicado": "2026-11-24T10:33-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
