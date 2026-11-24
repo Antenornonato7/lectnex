@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T16:38-03:00",
+  "atualizado_em": "2026-11-24T17:08-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -311,11 +311,31 @@
     ],
     [
      "16:20",
+     164886.0
+    ],
+    [
+     "16:25",
+     164905.0
+    ],
+    [
+     "16:30",
+     164859.0
+    ],
+    [
+     "16:35",
+     164974.0
+    ],
+    [
+     "16:40",
+     164958.0
+    ],
+    [
+     "16:45",
      164900.0
     ],
     [
-     "16:23",
-     164888.0
+     "16:50",
+     164759.0
     ]
    ]
   },
@@ -688,11 +708,35 @@
     ],
     [
      "16:35",
-     5.8875
+     5.8883
     ],
     [
-     "16:38",
-     5.8863
+     "16:40",
+     5.8938
+    ],
+    [
+     "16:45",
+     5.8996
+    ],
+    [
+     "16:50",
+     5.8999
+    ],
+    [
+     "16:55",
+     5.908
+    ],
+    [
+     "17:00",
+     5.9123
+    ],
+    [
+     "17:05",
+     5.907
+    ],
+    [
+     "17:08",
+     5.9047
     ]
    ]
   },
@@ -1381,8 +1425,8 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.04,
+    "dolar30": 0.08
    },
    {
     "hora": "16:20",
@@ -1394,8 +1438,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.01,
+    "dolar30": 0.09
    },
    {
     "hora": "16:22",
@@ -1409,8 +1453,23 @@
     "tickers": [
      "VALE3"
     ],
+    "ibov30": -0.08,
+    "dolar30": 0.09
+   },
+   {
+    "hora": "16:40",
+    "titulo": "Vale derrete quase 5% e perde R$ 11,9 bilhões em valor de mercado só hoje",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZl9BWjFrWndLQ2lMaEQtWVlnQThuOE5aVEhSX1JwMFZmX3h6NU81dlo4aDZfNzJaNldyVWFCa1ptZ1R4bkViZzJ4dzZZSGhlTWlMaTVYeHZZeWw1MVFqc3NtZlF5MXA0bU9WWTRfRkM0aWp6QXpJaFZQc2xRUGR1RHhFV1NZeXUxOHQ2U1dNQVg3anR5X0NLeHVhOExkcXZ1UW1GTm9DN215UVZOZG9udDFwZzNDYmw4Q19TRTg5c3NSUTNkMG4wTNIBzgFBVV95cUxQUXJHb3N3YzdrY0J4T2NjWklyQmNRUEsyZ1ZhV2dtdmlhQzhRMlhMNFBKMV9oM3p2Z0oxMDg2WGxYaDJ5YWY2UDl1WW13YlR4UndoSGo1TG5JeXN4MUZZeVR1RjFZWVBRSEtZYlBPeGwtN3pRUnFERlpFQ0ZrY3ZtX1IyRW5EbkRDcGZtaFBFRDNwdXBhZGNyLXVQZjU0X3FrN3J4RjhnYTlVa0lPQjVkbHFWcXBUTWU0c0NFc0JrZmh2YVF5QUNLTW41MUlwQQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "VALE3"
+    ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.22
    }
   ]
  },
@@ -2340,6 +2399,19 @@
    "tickers": [
     "VALE3"
    ]
+  },
+  {
+   "titulo": "Vale derrete quase 5% e perde R$ 11,9 bilhões em valor de mercado só hoje",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZl9BWjFrWndLQ2lMaEQtWVlnQThuOE5aVEhSX1JwMFZmX3h6NU81dlo4aDZfNzJaNldyVWFCa1ptZ1R4bkViZzJ4dzZZSGhlTWlMaTVYeHZZeWw1MVFqc3NtZlF5MXA0bU9WWTRfRkM0aWp6QXpJaFZQc2xRUGR1RHhFV1NZeXUxOHQ2U1dNQVg3anR5X0NLeHVhOExkcXZ1UW1GTm9DN215UVZOZG9udDFwZzNDYmw4Q19TRTg5c3NSUTNkMG4wTNIBzgFBVV95cUxQUXJHb3N3YzdrY0J4T2NjWklyQmNRUEsyZ1ZhV2dtdmlhQzhRMlhMNFBKMV9oM3p2Z0oxMDg2WGxYaDJ5YWY2UDl1WW13YlR4UndoSGo1TG5JeXN4MUZZeVR1RjFZWVBRSEtZYlBPeGwtN3pRUnFERlpFQ0ZrY3ZtX1IyRW5EbkRDcGZtaFBFRDNwdXBhZGNyLXVQZjU0X3FrN3J4RjhnYTlVa0lPQjVkbHFWcXBUTWU0c0NFc0JrZmh2YVF5QUNLTW41MUlwQQ?oc=5",
+   "publicado": "2026-11-24T16:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   }
  ],
  "enviadas": [
@@ -2369,7 +2441,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T16:38-03:00",
+ "atualizado_em": "2026-11-24T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2382,6 +2454,33 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa perde fôlego e passa a cair com ações da Vale em baixa de 5%; dólar recua",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
+   "publicado": "2026-11-24T16:52-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Vale derrete quase 5% e perde R$ 11,9 bilhões em valor de mercado só hoje",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZl9BWjFrWndLQ2lMaEQtWVlnQThuOE5aVEhSX1JwMFZmX3h6NU81dlo4aDZfNzJaNldyVWFCa1ptZ1R4bkViZzJ4dzZZSGhlTWlMaTVYeHZZeWw1MVFqc3NtZlF5MXA0bU9WWTRfRkM0aWp6QXpJaFZQc2xRUGR1RHhFV1NZeXUxOHQ2U1dNQVg3anR5X0NLeHVhOExkcXZ1UW1GTm9DN215UVZOZG9udDFwZzNDYmw4Q19TRTg5c3NSUTNkMG4wTNIBzgFBVV95cUxQUXJHb3N3YzdrY0J4T2NjWklyQmNRUEsyZ1ZhV2dtdmlhQzhRMlhMNFBKMV9oM3p2Z0oxMDg2WGxYaDJ5YWY2UDl1WW13YlR4UndoSGo1TG5JeXN4MUZZeVR1RjFZWVBRSEtZYlBPeGwtN3pRUnFERlpFQ0ZrY3ZtX1IyRW5EbkRDcGZtaFBFRDNwdXBhZGNyLXVQZjU0X3FrN3J4RjhnYTlVa0lPQjVkbHFWcXBUTWU0c0NFc0JrZmh2YVF5QUNLTW41MUlwQQ?oc=5",
+   "publicado": "2026-11-24T16:40-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
   {
    "titulo": "Ações da Vale cedem quase 5% com onda vendedora e estão entre as maiores quedas do Ibovespa",
    "fonte": "Valor",
@@ -2420,20 +2519,6 @@
    ]
   },
   {
-   "titulo": "Ibovespa perde fôlego e passa a cair com ações da Vale em baixa de 5%; dólar recua",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
-   "publicado": "2026-11-24T15:46-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
-  },
-  {
    "titulo": "Dólar recua após tocar R$ 6, mas gestores mantêm R$ 6,50 no radar e indicam proteção",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUE90Q25oa0JXTHFpSkdvdF9qZWNIWlZHTzJ2aENWbURCajQ3QldVODI5NGdQRkhFVkg1eHpxRkRsX2J6b3hTd3dQMkpBanFGXzBXY19LZnJlTEtjdEl5akJIQS1uNTNzajZyVFFQd0dRcEd0SklQdEo3RW1ncEc2NTh6b1BmcXM00gGOAUFVX3lxTFBjMnhFSzF1YndFdFpMbDIwVkpucThUUVNCbkhJLXV2RDJ3OTJabWZWT1cyY0VnMXF0NEpIbVBUeXdkTkxjaS1yVS1EaUtheGV6Zi1UbDlGVHp6LTk3RVVXVnMtM2JYSk04bjBmWFBkNFAxaGtNOHZ6QWtWbW45Z3FlaDNkbnJiRFpKM2g3OGc?oc=5",
@@ -2467,17 +2552,6 @@
    "tickers": []
   },
   {
-   "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQYkVmeDhDdFpHelJLOU5QamtVLWszQXF3ZHpkTU9vdEw0cUFGUGRPRGhRdGdCaXNRcDlUSVh6Ny14RE9NcWdQVnNtSTBRVlBOa0VWNGVnV0tEV19vekl5RGlPWDYyN3ZrY3VETjR5bkNiaWtieVZpWnVTV2ZpNlFEWmk1MzB2Ml9uc2VZQU5qbkk0NnZCRm1LTDF6c2l3TDJLQmlybWNGcUNzSmhOMnhlWVVQdXZncHF1RWRCemh1NGd5SVpwcG1vc0FRRUNvcU8wZ21XWWdVeDgxbklUX25waFNmSTJGeXdYTHfSAe8BQVVfeXFMTnI4QlFlUS1KOHIxRFNTX0xHcnhLeDNraEJsbUVham10XzNLLV9tRzhBZGpnRTdYYUdVSDBxOHpHZU9XUzJ5Yk8wZkxmRzdLRTNLV2lpT2RSeFNWVHhmLUpvdlZNSXJIWV9DdHVLVzQzYXdUZzNzWUJiTmNhdDkyalc4NzZzZDN3Uzl3S3l3OWN4U095aC02UWx5SERaRzlvdF93LWxYLWkycWljLXFQbTdTWnFtczNJSldseGZ4dmIwU3Y3c25aT2c1bUpRajNiX05XS1RzNDJQZXZHT0wzU1ZpZkl4MW1aMW5DdjFsVmM?oc=5",
-   "publicado": "2026-11-24T14:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Petrobras prevê investimentos de US$ 122 bilhões entre 2027 e 2031",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-preve-investimentos-de-us-122-bilhoes-entre-2027-e-2031",
@@ -2502,18 +2576,6 @@
    "tickers": [
     "B3SA3"
    ]
-  },
-  {
-   "titulo": "Governo Trump deve anunciar tarifas sobre China, UE e outros países, diz jornal",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-trump-deve-anunciar-tarifas-sobre-china-ue-e-outros-paises-diz-jornal.shtml",
-   "publicado": "2026-11-24T13:47-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
