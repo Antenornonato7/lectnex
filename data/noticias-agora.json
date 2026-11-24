@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T12:08-03:00",
+  "atualizado_em": "2026-11-24T12:37-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -95,11 +95,35 @@
     ],
     [
      "11:50",
-     167045.0
+     166936.0
     ],
     [
-     "11:53",
-     166957.0
+     "11:55",
+     166990.0
+    ],
+    [
+     "12:00",
+     166917.0
+    ],
+    [
+     "12:05",
+     166314.0
+    ],
+    [
+     "12:10",
+     166057.0
+    ],
+    [
+     "12:15",
+     165929.0
+    ],
+    [
+     "12:20",
+     166039.0
+    ],
+    [
+     "12:22",
+     165929.0
     ]
    ]
   },
@@ -256,11 +280,35 @@
     ],
     [
      "12:05",
+     5.8499
+    ],
+    [
+     "12:10",
      5.8454
     ],
     [
-     "12:08",
-     5.8473
+     "12:15",
+     5.8559
+    ],
+    [
+     "12:20",
+     5.8534
+    ],
+    [
+     "12:25",
+     5.8549
+    ],
+    [
+     "12:30",
+     5.8519
+    ],
+    [
+     "12:35",
+     5.8588
+    ],
+    [
+     "12:37",
+     5.8592
     ]
    ]
   },
@@ -528,7 +576,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.26,
+    "ibov30": 0.28,
     "dolar30": 0.31
    },
    {
@@ -541,8 +589,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.44
+    "ibov30": -0.79,
+    "dolar30": 0.41
    },
    {
     "hora": "11:51",
@@ -556,8 +604,8 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.54,
+    "dolar30": 0.24
    },
    {
     "hora": "11:51",
@@ -569,14 +617,81 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.54,
+    "dolar30": 0.24
+   },
+   {
+    "hora": "11:51",
+    "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOcjhCUWVRLUo4cjFEU1NfTEdyeEt4M2toQmxtRWFqbXRfM0stX21HOEFkamdFN1hhR1VIMHE4ekdlT1dTMnliTzBmTGZHN0tFM0tXaWlPZFJ4U1ZUeGYtSm92Vk1JckhZX0N0dUtXNDNhd1RnM3NZQmJOY2F0OTJqVzg3NnNkM3dTOXdLeXc5Y3hTT3loLTZRbHlIRFpHOW90X3ctbFgtaTJxaWMtcVBtN1NacW1zM0lKV2x4Znh2YjBTdjdzblpPZzVtSlFqM2JfTldLVHM0MlBldkdPTDNTVmlmSXgxbVoxbkN2MWxWY9IB7wFBVV95cUxOcjhCUWVRLUo4cjFEU1NfTEdyeEt4M2toQmxtRWFqbXRfM0stX21HOEFkamdFN1hhR1VIMHE4ekdlT1dTMnliTzBmTGZHN0tFM0tXaWlPZFJ4U1ZUeGYtSm92Vk1JckhZX0N0dUtXNDNhd1RnM3NZQmJOY2F0OTJqVzg3NnNkM3dTOXdLeXc5Y3hTT3loLTZRbHlIRFpHOW90X3ctbFgtaTJxaWMtcVBtN1NacW1zM0lKV2x4Znh2YjBTdjdzblpPZzVtSlFqM2JfTldLVHM0MlBldkdPTDNTVmlmSXgxbVoxbkN2MWxWYw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.54,
+    "dolar30": 0.24
    },
    {
     "hora": "11:56",
     "titulo": "Wall Street cai com perda de força do rali da IA impulsionado pela Nvidia",
     "fonte": "CNN Brasil",
     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNWUybDNFWGVRMDBnVzJKTmE5dEUtVWNOdjdhaWdpZ0JZUEFndFRLUzlBRmdPS0E2elFKYlRNMk9Sb3RDdnhMRnVBWXlxWUw0WjB6T2VJMmw5Z2ttOGFENXRwQUNYRFlFOXF6Z3pqel96WTV4cy1zRFhuZWdmbXdFclNlc3hKSFU?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": -0.64,
+    "dolar30": 0.21
+   },
+   {
+    "hora": "12:00",
+    "titulo": "O que mais pesa para o câmbio: os fatores externos ou os dilemas internos?",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSmxGcGJISnZhWk5UMTA1YUV4TzJZWURVY0ZJbmFjS2c2YmFhSVdXR3RNdzVpRk0yeXFxSVFWRnJCTHFrRUt1UC1rNmNyWlFHN0NoN01rRmlQaWVGWHJndzZBby0wT0RHV3E2Z2tCMWhkMjlzbTVYdlZfVlpEV1lFVTQtalNGdkhXSklQbmN2dF82a0JHU2t5YTJQcVFqaXJpdVpOS3BGVVZDd1czZlJzZ9IBtgFBVV95cUxOZGh5TndydUQwMnZDeWFhTmRTU1M4WW4tQ3Z6dXRwQ1o3YXotVFhMTVJ5bENKS0FhM2daeUxCZnJsWXZpMXNwOWJaN28yZUpnT0ZZUTFnWDdsMnd6alVNbFpaUTRWSkd3Z2hXNUhOUjVZdWpGak96OGxWdDhBa0xwRkRqYjJVbkxhMHZqUTJXZGtfT0NpWnpNM2l2WnB1b01KVkhHSDY2Z21OSmhCVmxMcVVadHBtUQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.23
+   },
+   {
+    "hora": "12:08",
+    "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaTBZcE1FZlZmR2hKTlJYZ2dzMjZnQXIxeEF0QlptUUw2dy1rMjFJcWJKU1BJX1dVR01UNTVjZWx6S1BzcXZCZk1lRE00QVQwMUQwdldqckdFOUg5YmRheGpiVC1tZy1BQlhFa3EzNzZEWk5SSmEweS1PZEZSZVpUT1lpOFNBYVFFSlpZbWdVWmc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.15
+   },
+   {
+    "hora": "12:09",
+    "titulo": "Dólar cai mais de 1%; Ibovespa acompanha política fiscal e arrecadação federal",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.15
+   },
+   {
+    "hora": "12:21",
+    "titulo": "Ibovespa sobe com expectativa de novas medidas de contenção de gastos",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSzFCaGttcmFyY0RLbkttdU80SmsyRVc3a0JmLXI4Uk1XWFVqcjFSN0FMMS15VUNGZGdKLWN2ekttdXNPOHZxaGR0Z3Q4U2FZSy1odGpzdTVyTVUtRHE0bk56UV9ibW9ENDR5Qk41eThNb1BQUG42aElaWFZNaFVBRk93X1JCbGU3RWZsLW5zTEtzcm14REVlOTVtVFNrN0lBWUpGaVhHRko5RFZv0gGyAUFVX3lxTE1Od2taQWxDNEoxcENuNUh6NUg2c2NjclNNcEwtQXF1Z3RlRVRaQm1Qa1dRMi16ZmVsMVE1d3ZIRDUzb2dPQUo4OXZBdDFpa1BOLUxZMFRxdE5DM1VCOVk4aGVpclpjSGhfX3JsU1hhN2JIOXR5eV9aa19NQVVUeG5HbmVNYUVoaTdnZ0xGZDFLTDVERmhRYVlpV0YxejBZekg2dENNWURqWnRRdGM4dDN1X2c?oc=5",
     "impacto": "medio",
     "ativos": [
      "WIN"
@@ -1167,10 +1282,67 @@
    "tickers": []
   },
   {
+   "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOcjhCUWVRLUo4cjFEU1NfTEdyeEt4M2toQmxtRWFqbXRfM0stX21HOEFkamdFN1hhR1VIMHE4ekdlT1dTMnliTzBmTGZHN0tFM0tXaWlPZFJ4U1ZUeGYtSm92Vk1JckhZX0N0dUtXNDNhd1RnM3NZQmJOY2F0OTJqVzg3NnNkM3dTOXdLeXc5Y3hTT3loLTZRbHlIRFpHOW90X3ctbFgtaTJxaWMtcVBtN1NacW1zM0lKV2x4Znh2YjBTdjdzblpPZzVtSlFqM2JfTldLVHM0MlBldkdPTDNTVmlmSXgxbVoxbkN2MWxWY9IB7wFBVV95cUxOcjhCUWVRLUo4cjFEU1NfTEdyeEt4M2toQmxtRWFqbXRfM0stX21HOEFkamdFN1hhR1VIMHE4ekdlT1dTMnliTzBmTGZHN0tFM0tXaWlPZFJ4U1ZUeGYtSm92Vk1JckhZX0N0dUtXNDNhd1RnM3NZQmJOY2F0OTJqVzg3NnNkM3dTOXdLeXc5Y3hTT3loLTZRbHlIRFpHOW90X3ctbFgtaTJxaWMtcVBtN1NacW1zM0lKV2x4Znh2YjBTdjdzblpPZzVtSlFqM2JfTldLVHM0MlBldkdPTDNTVmlmSXgxbVoxbkN2MWxWYw?oc=5",
+   "publicado": "2026-11-24T11:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Wall Street cai com perda de força do rali da IA impulsionado pela Nvidia",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNWUybDNFWGVRMDBnVzJKTmE5dEUtVWNOdjdhaWdpZ0JZUEFndFRLUzlBRmdPS0E2elFKYlRNMk9Sb3RDdnhMRnVBWXlxWUw0WjB6T2VJMmw5Z2ttOGFENXRwQUNYRFlFOXF6Z3pqel96WTV4cy1zRFhuZWdmbXdFclNlc3hKSFU?oc=5",
    "publicado": "2026-11-24T11:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "O que mais pesa para o câmbio: os fatores externos ou os dilemas internos?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSmxGcGJISnZhWk5UMTA1YUV4TzJZWURVY0ZJbmFjS2c2YmFhSVdXR3RNdzVpRk0yeXFxSVFWRnJCTHFrRUt1UC1rNmNyWlFHN0NoN01rRmlQaWVGWHJndzZBby0wT0RHV3E2Z2tCMWhkMjlzbTVYdlZfVlpEV1lFVTQtalNGdkhXSklQbmN2dF82a0JHU2t5YTJQcVFqaXJpdVpOS3BGVVZDd1czZlJzZ9IBtgFBVV95cUxOZGh5TndydUQwMnZDeWFhTmRTU1M4WW4tQ3Z6dXRwQ1o3YXotVFhMTVJ5bENKS0FhM2daeUxCZnJsWXZpMXNwOWJaN28yZUpnT0ZZUTFnWDdsMnd6alVNbFpaUTRWSkd3Z2hXNUhOUjVZdWpGak96OGxWdDhBa0xwRkRqYjJVbkxhMHZqUTJXZGtfT0NpWnpNM2l2WnB1b01KVkhHSDY2Z21OSmhCVmxMcVVadHBtUQ?oc=5",
+   "publicado": "2026-11-24T12:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaTBZcE1FZlZmR2hKTlJYZ2dzMjZnQXIxeEF0QlptUUw2dy1rMjFJcWJKU1BJX1dVR01UNTVjZWx6S1BzcXZCZk1lRE00QVQwMUQwdldqckdFOUg5YmRheGpiVC1tZy1BQlhFa3EzNzZEWk5SSmEweS1PZEZSZVpUT1lpOFNBYVFFSlpZbWdVWmc?oc=5",
+   "publicado": "2026-11-24T12:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai mais de 1%; Ibovespa acompanha política fiscal e arrecadação federal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZw?oc=5",
+   "publicado": "2026-11-24T12:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe com expectativa de novas medidas de contenção de gastos",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSzFCaGttcmFyY0RLbkttdU80SmsyRVc3a0JmLXI4Uk1XWFVqcjFSN0FMMS15VUNGZGdKLWN2ekttdXNPOHZxaGR0Z3Q4U2FZSy1odGpzdTVyTVUtRHE0bk56UV9ibW9ENDR5Qk41eThNb1BQUG42aElaWFZNaFVBRk93X1JCbGU3RWZsLW5zTEtzcm14REVlOTVtVFNrN0lBWUpGaVhHRko5RFZv0gGyAUFVX3lxTE1Od2taQWxDNEoxcENuNUh6NUg2c2NjclNNcEwtQXF1Z3RlRVRaQm1Qa1dRMi16ZmVsMVE1d3ZIRDUzb2dPQUo4OXZBdDFpa1BOLUxZMFRxdE5DM1VCOVk4aGVpclpjSGhfX3JsU1hhN2JIOXR5eV9aa19NQVVUeG5HbmVNYUVoaTdnZ0xGZDFLTDVERmhRYVlpV0YxejBZekg2dENNWURqWnRRdGM4dDN1X2c?oc=5",
+   "publicado": "2026-11-24T12:21-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
@@ -1205,7 +1377,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T12:08-03:00",
+ "atualizado_em": "2026-11-24T12:37-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1213,13 +1385,46 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa sobe com expectativa de novas medidas de contenção de gastos",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSzFCaGttcmFyY0RLbkttdU80SmsyRVc3a0JmLXI4Uk1XWFVqcjFSN0FMMS15VUNGZGdKLWN2ekttdXNPOHZxaGR0Z3Q4U2FZSy1odGpzdTVyTVUtRHE0bk56UV9ibW9ENDR5Qk41eThNb1BQUG42aElaWFZNaFVBRk93X1JCbGU3RWZsLW5zTEtzcm14REVlOTVtVFNrN0lBWUpGaVhHRko5RFZv0gGyAUFVX3lxTE1Od2taQWxDNEoxcENuNUh6NUg2c2NjclNNcEwtQXF1Z3RlRVRaQm1Qa1dRMi16ZmVsMVE1d3ZIRDUzb2dPQUo4OXZBdDFpa1BOLUxZMFRxdE5DM1VCOVk4aGVpclpjSGhfX3JsU1hhN2JIOXR5eV9aa19NQVVUeG5HbmVNYUVoaTdnZ0xGZDFLTDVERmhRYVlpV0YxejBZekg2dENNWURqWnRRdGM4dDN1X2c?oc=5",
+   "publicado": "2026-11-24T12:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai mais de 1%; Ibovespa sobe com notícia sobre aval de Lula a projeto para conter gastos",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
+   "publicado": "2026-11-24T12:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Viagens, cartão de crédito, importações: alta do dólar já começa a pesar no bolso dos brasileiros",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaTBZcE1FZlZmR2hKTlJYZ2dzMjZnQXIxeEF0QlptUUw2dy1rMjFJcWJKU1BJX1dVR01UNTVjZWx6S1BzcXZCZk1lRE00QVQwMUQwdldqckdFOUg5YmRheGpiVC1tZy1BQlhFa3EzNzZEWk5SSmEweS1PZEZSZVpUT1lpOFNBYVFFSlpZbWdVWmc?oc=5",
+   "publicado": "2026-11-24T12:07-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Commercial real estate activity falls 14% in October, as interest rates rise",
    "fonte": "CNBC",
@@ -1233,24 +1438,12 @@
    "tickers": []
   },
   {
-   "titulo": "Wall Street cai com perda de força do rali da IA impulsionado pela Nvidia",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNWUybDNFWGVRMDBnVzJKTmE5dEUtVWNOdjdhaWdpZ0JZUEFndFRLUzlBRmdPS0E2elFKYlRNMk9Sb3RDdnhMRnVBWXlxWUw0WjB6T2VJMmw5Z2ttOGFENXRwQUNYRFlFOXF6Z3pqel96WTV4cy1zRFhuZWdmbXdFclNlc3hKSFU?oc=5",
-   "publicado": "2026-11-24T11:56-03:00",
+   "titulo": "O que mais pesa para o câmbio: os fatores externos ou os dilemas internos?",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSmxGcGJISnZhWk5UMTA1YUV4TzJZWURVY0ZJbmFjS2c2YmFhSVdXR3RNdzVpRk0yeXFxSVFWRnJCTHFrRUt1UC1rNmNyWlFHN0NoN01rRmlQaWVGWHJndzZBby0wT0RHV3E2Z2tCMWhkMjlzbTVYdlZfVlpEV1lFVTQtalNGdkhXSklQbmN2dF82a0JHU2t5YTJQcVFqaXJpdVpOS3BGVVZDd1czZlJzZ9IBtgFBVV95cUxOZGh5TndydUQwMnZDeWFhTmRTU1M4WW4tQ3Z6dXRwQ1o3YXotVFhMTVJ5bENKS0FhM2daeUxCZnJsWXZpMXNwOWJaN28yZUpnT0ZZUTFnWDdsMnd6alVNbFpaUTRWSkd3Z2hXNUhOUjVZdWpGak96OGxWdDhBa0xwRkRqYjJVbkxhMHZqUTJXZGtfT0NpWnpNM2l2WnB1b01KVkhHSDY2Z21OSmhCVmxMcVVadHBtUQ?oc=5",
+   "publicado": "2026-11-24T12:00-03:00",
    "impacto": "medio",
    "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Arrecadação bate recorde com ajuda de imposto do petróleo e ganhos atípicos",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUFM0UEQ2TEp2ZXVoQmdTQVl6TnFVZXM3TWhQYnNkTmNsX3drczZ5VEU3aHA4WTBtSXRPcHVTWXVUUGRFVXdsd2VsZXZrVEFSNTNSS2JXeXdsNlctZXNWVkJSbklIaTBfLXI4RXJ6S1NUNUxyTmlUcWd1WW5TckZ5VFNLbVU5bDB4Z2NTWkxIckxxT0ZmS2pOd0ptek9PMjJRaWZ2OU50aUlWY2dZMjcyMkFzRUs?oc=5",
-   "publicado": "2026-11-24T11:56-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -1258,7 +1451,7 @@
   {
    "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQYkVmeDhDdFpHelJLOU5QamtVLWszQXF3ZHpkTU9vdEw0cUFGUGRPRGhRdGdCaXNRcDlUSVh6Ny14RE9NcWdQVnNtSTBRVlBOa0VWNGVnV0tEV19vekl5RGlPWDYyN3ZrY3VETjR5bkNiaWtieVZpWnVTV2ZpNlFEWmk1MzB2Ml9uc2VZQU5qbkk0NnZCRm1LTDF6c2l3TDJLQmlybWNGcUNzSmhOMnhlWVVQdXZncHF1RWRCemh1NGd5SVpwcG1vc0FRRUNvcU8wZ21XWWdVeDgxbklUX25waFNmSTJGeXdYTHfSAe8BQVVfeXFMTnI4QlFlUS1KOHIxRFNTX0xHcnhLeDNraEJsbUVham10XzNLLV9tRzhBZGpnRTdYYUdVSDBxOHpHZU9XUzJ5Yk8wZkxmRzdLRTNLV2lpT2RSeFNWVHhmLUpvdlZNSXJIWV9DdHVLVzQzYXdUZzNzWUJiTmNhdDkyalc4NzZzZDN3Uzl3S3l3OWN4U095aC02UWx5SERaRzlvdF93LWxYLWkycWljLXFQbTdTWnFtczNJSldseGZ4dmIwU3Y3c25aT2c1bUpRajNiX05XS1RzNDJQZXZHT0wzU1ZpZkl4MW1aMW5DdjFsVmM?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOcjhCUWVRLUo4cjFEU1NfTEdyeEt4M2toQmxtRWFqbXRfM0stX21HOEFkamdFN1hhR1VIMHE4ekdlT1dTMnliTzBmTGZHN0tFM0tXaWlPZFJ4U1ZUeGYtSm92Vk1JckhZX0N0dUtXNDNhd1RnM3NZQmJOY2F0OTJqVzg3NnNkM3dTOXdLeXc5Y3hTT3loLTZRbHlIRFpHOW90X3ctbFgtaTJxaWMtcVBtN1NacW1zM0lKV2x4Znh2YjBTdjdzblpPZzVtSlFqM2JfTldLVHM0MlBldkdPTDNTVmlmSXgxbVoxbkN2MWxWY9IB7wFBVV95cUxOcjhCUWVRLUo4cjFEU1NfTEdyeEt4M2toQmxtRWFqbXRfM0stX21HOEFkamdFN1hhR1VIMHE4ekdlT1dTMnliTzBmTGZHN0tFM0tXaWlPZFJ4U1ZUeGYtSm92Vk1JckhZX0N0dUtXNDNhd1RnM3NZQmJOY2F0OTJqVzg3NnNkM3dTOXdLeXc5Y3hTT3loLTZRbHlIRFpHOW90X3ctbFgtaTJxaWMtcVBtN1NacW1zM0lKV2x4Znh2YjBTdjdzblpPZzVtSlFqM2JfTldLVHM0MlBldkdPTDNTVmlmSXgxbVoxbkN2MWxWYw?oc=5",
    "publicado": "2026-11-24T11:51-03:00",
    "impacto": "medio",
    "ativos": [
@@ -1336,18 +1529,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar cai quase 2%; Ibovespa sobe com notícia sobre aval de Lula a projeto para conter gastos",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
-   "publicado": "2026-11-24T10:44-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa avança com notícias sobre PEC para tratar de despesas obrigatórias",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOHEzSUtkS3JOUXEtNFAwOWdZQzM2X1JzSmd6dEV2OFhFX1lEWWRHc1BUdlhDdGVZOHY4NEhZcU1xREQ3QVFtUmduRVM0TWNHUEc2ZUJlY0V3dDYxX1BtNko2VG43QzRXQkUzLUxFMzFnUUJnMjhwUlkyVmlaYmdCRUNfU3BCdkZUdXlwRTBVaUxTeXZka0lXYnFtdjFkUW9XdThLWjlrV2hJT21COUNaZnBEXzJLTUh4X3Blc3VRbGNFd2FiOWVmczlveTdZZ9IB3AFBVV95cUxPcTViQnZ4LXozUzhhZXhmRGRtZHI3TDFkY3pEcVdLb2oyQ1VlWkNRRkxwM09qN09icDM2MHpydGlQNEg3VlhIdTlxdHRSYUpJV2lBQjJ1aTZfX3RaZTJxdlREcERmZG1pMDgzaDdFMmQ1aDJXQzV6SnlzZEkwUGY0Q29XSGFfUGJWckpRX1p3ZXhNNC15NS1qYmwxZHl4LVFBaFpPVm5HeVhrM2NTczQycTBqdVdYWGdNVVZMMk1ON2dvbUowelZOdGFobU5aa3l5ZVpXZFpYV1ZqeHlF?oc=5",
@@ -1371,43 +1552,27 @@
    "tickers": []
   },
   {
-   "titulo": "Tempo real: Ibovespa sobe e dólar cai com aprovação do ajuste fiscal; veja os destaques desta terça-feira (24)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16dGktLTZQcjhGOXpyS21BUlVmMFdORHNzekJCeUVET25FbUUxMnZ4dk43UThuZFVJUk40NTU4LXcxSV84eTV0Sks1bWg4eklXaVlyMV9NWGxCbzBoU05KZ1JUZVNGOTgt?oc=5",
-   "publicado": "2026-11-24T10:32-03:00",
-   "impacto": "alto",
+   "titulo": "Dólar despenca após aprovação do plano Moretti pela Câmara; Bolsa sobe",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-apos-aprovacao-do-plano-moretti-pela-camara.shtml",
+   "publicado": "2026-11-24T09:51-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe e dólar cai após aprovação do pacote fiscal na Câmara; 5 coisas para saber antes de investir hoje (24)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMGNpcFZKWTd3aktGWTBkSV96d3FOVUd4anY4X01NdDBtbk0zVU95Q0NiMktEV0g0TXRxWE90TzZYZFFMUHowaThwekUwY2FlY0t4ZnNmT0NhQWM5QWtMSF9QaDBvdk1yZ1dDTy1kNlo4eEdKLXFjXzFpUUp2QnFfc1JzNmx4SG1kSzBLbjd5YW9NM3ZVQ1hRbFoybzliODRNRUk3Mzk4OFN6MVdrOXZHTFgwb2VlYjY5UFdXeVVtT2RubW9UUUljdlpkLUhTaVU2TktyUTZ0OS1DNHBlTXVYaGFsQQ?oc=5",
-   "publicado": "2026-11-24T10:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe após quedas, Vale cai 3% e dólar despenca após bater R$ 6: o que está acontecendo?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzdGp1U0pLeVRpX01WdUJLYlgtR25EbXFMc0tSWE9GT3lfZ2ZOWFNaX1ZzV0VrYVFaajFxaHg5RzNzdGMwTmpQUVg5Um93UVVqU1o4dTNEUUQ3cWNNUDdUVnZaLVl1dmxWYXNj?oc=5",
-   "publicado": "2026-11-24T10:01-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras adquire participação em empresa que produz etanol",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/petrobras-adquire-participacao-em-empresa-que-produz-etanol",
+   "publicado": "2026-11-24T09:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
    "tickers": [
-    "VALE3"
+    "PETR4"
    ]
   }
  ]
