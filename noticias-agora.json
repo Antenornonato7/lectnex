@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T10:40-03:00",
+  "atualizado_em": "2026-11-24T10:43-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -27,7 +27,11 @@
     ],
     [
      "10:25",
-     165620.0
+     165580.0
+    ],
+    [
+     "10:28",
+     165619.0
     ]
    ]
   },
@@ -116,7 +120,11 @@
     ],
     [
      "10:40",
-     5.8109
+     5.8163
+    ],
+    [
+     "10:43",
+     5.8069
     ]
    ]
   },
@@ -261,7 +269,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.23,
+    "ibov30": 0.21,
     "dolar30": -0.73
    },
    {
@@ -787,7 +795,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T10:40-03:00",
+ "atualizado_em": "2026-11-24T10:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -797,6 +805,18 @@
   "Folha"
  ],
  "noticias": [
+  {
+   "titulo": "Russia accuses NATO member Estonia of hostile actions ‘on the verge of unleashing open war’",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/24/russia-estonia-ukraine-war-nato-finland.html",
+   "publicado": "2026-11-24T10:42-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
    "fonte": "CNBC",
@@ -844,18 +864,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Russia accuses NATO member Estonia of hostile actions ‘on the verge of unleashing open war’",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/24/russia-estonia-ukraine-war-nato-finland.html",
-   "publicado": "2026-11-24T09:32-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Petrobras prevê US$ 7 bilhões para ampliar infraestrutura de transporte de combustíveis",
