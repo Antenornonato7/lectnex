@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T17:48-03:00",
+  "atualizado_em": "2026-11-24T17:50-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     164642.0
+     164590.0
     ]
    ]
   },
@@ -680,7 +680,7 @@
     ],
     [
      "15:50",
-     5.9
+     5.8981
     ],
     [
      "15:55",
@@ -772,11 +772,11 @@
     ],
     [
      "17:45",
-     5.913
+     5.912
     ],
     [
-     "17:48",
-     5.9133
+     "17:50",
+     5.9118
     ]
    ]
   },
@@ -1596,7 +1596,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.07
+    "dolar30": 0.05
    },
    {
     "hora": "17:20",
@@ -1609,7 +1609,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.09
+    "dolar30": 0.07
    },
    {
     "hora": "17:24",
@@ -1622,7 +1622,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.07
    },
    {
     "hora": "17:26",
@@ -2639,7 +2639,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T17:48-03:00",
+ "atualizado_em": "2026-11-24T17:50-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2653,6 +2653,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "China prorroga suspensão de controles sobre exportações de minerais críticos aos EUA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/china-prorroga-suspensao-de-controles-sobre-exportacoes-de-minerais-criticos-aos-eua.shtml",
+   "publicado": "2026-11-24T17:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Banco Central autoriza Binance a operar no mercado de câmbio no Brasil",
    "fonte": "CNN Brasil",
@@ -2751,7 +2763,7 @@
   {
    "titulo": "Ações da Vale cedem quase 5% com onda vendedora e estão entre as maiores quedas do Ibovespa",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQa1YzUDBiZWNDZ0NkSk9fV2xEZ3hHUFlvbFVyaFRKSXljVE1hWTZqVzNVWEVuTG5YUnVxRURGbHFJOUdvTUFmMjNFMDZUcFhrYk8tZ0JXc093S2VuTk9GVDhOZlRDYVp5RkNNdlNHLXFVT1Q1ODNwbDVxOE8xYjlqNHFZby1mUjlHb3R4VG1MaW9BbDBPYmlCd0JlOGNaOUZXbEhmYnV3Ujg2WEhnUW1uSmZoMUU1QWxkaHM0ZzVXbWF1NlNNTlU5QnNtNUNzZzlDSU9fWWVPNEFFY1NudHh2Qm81YnpTU0MwQmF4WUJUVHZHZ240ZFJEdjhrNHRLM18xeWozS0V30gGGAkFVX3lxTFBrVjNQMGJlY0NnQ2RKT19XbERneEdQWW9sVXJoVEpJeWNUTWFZNmpXM1VYRW5MblhSdXFFREZscUk5R29NQWYyM0UwNlRwWGtiTy1nQldzT3dLZW5OT0ZUOE5mVENhWnlGQ012U0ctcVVPVDU4M3BsNXE4TzFiOWo0cVlvLWZSOUdvdHhUbUxpb0FsME9iaUJ3QmU4Y1o5RldsSGZidXdSODZYSGdRbW5KZmgxRTVBbGRoczRnNVdtYXU2U01OVTlCc201Q3NnOUNJT19ZZU80QUVjU250eHZCbzVielNTQzBCYXhZQlRUdkdnbjRkUkR2OGs0dEszXzF5ajNLRXc?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTnFCOHlBbUdXemM0YjZNOWFVTWVYY05kVHcycjlOOUlab0ZyUHBQOHFkV0lrS0YzLWJnY2ZvOGRnRG1GR3U0aVMtRk8wNkxaX0tRZEhzZS1aY0FEeXNuTXhwdkFKbjhGV2VoMlpFdUI5UHJCMENFdUd2VWZFSm5fU2NWZ3A5bS0yMkp0bnlSRF8tX09rVVVwYkxtUHlOZWcyUjZVc2sxWDRDSi1Sa0ZjS21iOVhDdFBwMFJTZHFHT29wSTM2RGZWU25VLWR0QkdxWGlhbHRCX0xCQTQ4Z3FPd1RJVk5OaHNLWm5JN01hYXZyVUdrems40gGGAkFVX3lxTFBrVjNQMGJlY0NnQ2RKT19XbERneEdQWW9sVXJoVEpJeWNUTWFZNmpXM1VYRW5MblhSdXFFREZscUk5R29NQWYyM0UwNlRwWGtiTy1nQldzT3dLZW5OT0ZUOE5mVENhWnlGQ012U0ctcVVPVDU4M3BsNXE4TzFiOWo0cVlvLWZSOUdvdHhUbUxpb0FsME9iaUJ3QmU4Y1o5RldsSGZidXdSODZYSGdRbW5KZmgxRTVBbGRoczRnNVdtYXU2U01OVTlCc201Q3NnOUNJT19ZZU80QUVjU250eHZCbzVielNTQzBCYXhZQlRUdkdnbjRkUkR2OGs0dEszXzF5ajNLRXc?oc=5",
    "publicado": "2026-11-24T16:22-03:00",
    "impacto": "medio",
    "ativos": [
@@ -2771,19 +2783,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Petrobras buscará outras empresas de etanol de milho após compra de fatia na Neomille, dizem fontes",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOM3NETmJxWjdZWlhkaUZDUExOQXlNRkkzcS1RREtyOUIwblgwQVdabFhKRTk1MVBZSlBCcGVlejNwUnpfMk5kMV80ZEs2bnV0b3V6eUxXbk12NHNzRnU4NEVfdkQzcWtZUm1wdzRDOGU3Zk1HOGozVEZIYllGSUV0ZUx0bjNpeGhMeGdFbEZDdGdVNXFSSkZOYnhIUG9JcVZxMUd1Yjc2dWlqU0U2ZXhwT01kRXJwb2NWbE94R1RHZ2Y1MHNHdjBjWEZaT2FsbHphNU5VYm84dEQ1R2hOWTFZVzRuTl9obWQ2ZmMwWUs1T3NRc2Zlek1lTdIB-AFBVV95cUxOM3NETmJxWjdZWlhkaUZDUExOQXlNRkkzcS1RREtyOUIwblgwQVdabFhKRTk1MVBZSlBCcGVlejNwUnpfMk5kMV80ZEs2bnV0b3V6eUxXbk12NHNzRnU4NEVfdkQzcWtZUm1wdzRDOGU3Zk1HOGozVEZIYllGSUV0ZUx0bjNpeGhMeGdFbEZDdGdVNXFSSkZOYnhIUG9JcVZxMUd1Yjc2dWlqU0U2ZXhwT01kRXJwb2NWbE94R1RHZ2Y1MHNHdjBjWEZaT2FsbHphNU5VYm84dEQ1R2hOWTFZVzRuTl9obWQ2ZmMwWUs1T3NRc2Zlek1lTQ?oc=5",
-   "publicado": "2026-11-24T16:17-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
   },
   {
    "titulo": "XP (XPBR31) e B3 (B3SA3) podem ter um 2027 mais difícil: Safra rebaixa ações e corta preço-alvo; confira",
