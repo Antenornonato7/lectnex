@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T08:15:00-03:00",
+  "atualizado_em": "2026-11-24T12:50:00-03:00",
   "eventos": [
     {
       "data": "2026-11-24",
@@ -9,7 +9,7 @@
       "importancia": 1,
       "anterior": null,
       "consenso": null,
-      "resultado": null,
+      "resultado": "83,5 (−1,2 pt)",
       "impacto": {
         "di": "volatil"
       },
@@ -25,7 +25,7 @@
       "importancia": 1,
       "anterior": null,
       "consenso": null,
-      "resultado": null,
+      "resultado": "R$ 293,9 bi (+7,28% real a/a)",
       "impacto": {
         "di": "volatil",
         "wdo": "volatil"
@@ -42,13 +42,16 @@
       "importancia": 1,
       "anterior": "91,7",
       "consenso": "92,1",
-      "resultado": null,
+      "resultado": "103,3",
       "impacto": {
         "wdo": "volatil"
       },
       "nota": "Termômetro do consumo americano.",
       "tipo": "conference-board",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "Confiança bem acima do esperado costuma sustentar os juros dos Treasuries e o dólar global, pressionando o WDO para cima e os DIs longos."
+      }
     },
     {
       "data": "2026-11-24",
