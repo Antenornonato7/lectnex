@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T16:10-03:00",
+  "atualizado_em": "2026-11-24T16:13-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -291,7 +291,11 @@
     ],
     [
      "15:55",
-     164761.0
+     164831.0
+    ],
+    [
+     "15:58",
+     164829.0
     ]
    ]
   },
@@ -644,7 +648,11 @@
     ],
     [
      "16:10",
-     5.9028
+     5.8983
+    ],
+    [
+     "16:13",
+     5.8978
     ]
    ]
   },
@@ -1319,7 +1327,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.12
+    "dolar30": 0.04
    }
   ]
  },
@@ -2241,7 +2249,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T16:10-03:00",
+ "atualizado_em": "2026-11-24T16:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2250,8 +2258,7 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
-  "Valor"
+  "InfoMoney"
  ],
  "noticias": [
   {
@@ -2295,6 +2302,17 @@
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
    "publicado": "2026-11-24T14:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro Direto: taxas caem e Prefixado 2029 passa a pagar menos de 15%, de olho em política fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQYkVmeDhDdFpHelJLOU5QamtVLWszQXF3ZHpkTU9vdEw0cUFGUGRPRGhRdGdCaXNRcDlUSVh6Ny14RE9NcWdQVnNtSTBRVlBOa0VWNGVnV0tEV19vekl5RGlPWDYyN3ZrY3VETjR5bkNiaWtieVZpWnVTV2ZpNlFEWmk1MzB2Ml9uc2VZQU5qbkk0NnZCRm1LTDF6c2l3TDJLQmlybWNGcUNzSmhOMnhlWVVQdXZncHF1RWRCemh1NGd5SVpwcG1vc0FRRUNvcU8wZ21XWWdVeDgxbklUX25waFNmSTJGeXdYTHfSAe8BQVVfeXFMTnI4QlFlUS1KOHIxRFNTX0xHcnhLeDNraEJsbUVham10XzNLLV9tRzhBZGpnRTdYYUdVSDBxOHpHZU9XUzJ5Yk8wZkxmRzdLRTNLV2lpT2RSeFNWVHhmLUpvdlZNSXJIWV9DdHVLVzQzYXdUZzNzWUJiTmNhdDkyalc4NzZzZDN3Uzl3S3l3OWN4U095aC02UWx5SERaRzlvdF93LWxYLWkycWljLXFQbTdTWnFtczNJSldseGZ4dmIwU3Y3c25aT2c1bUpRajNiX05XS1RzNDJQZXZHT0wzU1ZpZkl4MW1aMW5DdjFsVmM?oc=5",
+   "publicado": "2026-11-24T14:57-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
