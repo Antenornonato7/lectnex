@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T18:18-03:00",
+  "atualizado_em": "2026-11-24T18:20-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -796,11 +796,11 @@
     ],
     [
      "18:15",
-     5.909
+     5.908
     ],
     [
-     "18:18",
-     5.91
+     "18:20",
+     5.907
     ]
    ]
   },
@@ -1714,7 +1714,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.02
    }
   ]
  },
@@ -2701,7 +2701,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T18:18-03:00",
+ "atualizado_em": "2026-11-24T18:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2895,15 +2895,17 @@
    "tickers": []
   },
   {
-   "titulo": "Após bater os R$ 6, o dólar está caro ou barato?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObTFyMnViMC1MNWdPOHNnTEJQXzN0M0xQLWJUNFZHeWx1Mkh3U1VSZ2VvenVpMFNKYXU1bVhuSy02VlBDMDV3Um5KY3NTSUhvNlFUeFhmNVJYVmtmZ19WR1ZTYjdBRGpTNDF1U2tWQ0Z4aHlXOV9NMU43bXZVVWJ6RExBenhwSGJzbnFaMdIBkgFBVV95cUxNeWNxVWc5QVdmbDZnQ1RsRE1jZnNjd3g0ZU5EWDhxNWsxbnlzcDFJbnZQRDZQa0FMNXpCYVlLX2oyOHhSaWVyWXNGOXRNajd0QkhJSzZ2eFNHUTNEb0tPcEtvR3Nsc2xNMDJXN0FyaEQtNzdDMUJKc1l5cTliTjVvNUVBbFFDRFROVWRtVXZ4WVotQQ?oc=5",
-   "publicado": "2026-11-24T16:19-03:00",
+   "titulo": "XP (XPBR31) e B3 (B3SA3) podem ter um 2027 mais difícil: Safra rebaixa ações e corta preço-alvo; confira",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPX1I5a2FzU0JqOE40RE1JLS1kWlhHU3ctSlFwdm4wOEhDVnROaDJ0UDN0NWNwX3NKUFNxTWNQX2VLTjA1d2JpSVpBRWlqdDh2Y3RuSFEzdFVsT09wLWpmM2hRcmc3R2xLVElYdWVqRW9RalpXUXBZNnl2U3BVb0hLZ0lLc0ZtZXRGZ0FSZTd5ZG43eENtMDAzWXBvd2M1U2lrV3UydXhlRXo1NklxaFl3SWJYSUtCVDRfcjlCSm9n?oc=5",
+   "publicado": "2026-11-24T16:17-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
+    "WIN"
    ],
-   "tickers": []
+   "tickers": [
+    "B3SA3"
+   ]
   }
  ]
 }
