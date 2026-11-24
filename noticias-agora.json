@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-24",
-  "atualizado_em": "2026-11-24T16:00-03:00",
+  "atualizado_em": "2026-11-24T16:03-03:00",
   "ibov": {
    "anterior": 164796.05,
    "pontos": [
@@ -283,7 +283,11 @@
     ],
     [
      "15:45",
-     164872.0
+     164919.0
+    ],
+    [
+     "15:48",
+     164883.0
     ]
    ]
   },
@@ -628,7 +632,11 @@
     ],
     [
      "16:00",
-     5.8983
+     5.901
+    ],
+    [
+     "16:03",
+     5.9043
     ]
    ]
   },
@@ -2225,7 +2233,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T16:00-03:00",
+ "atualizado_em": "2026-11-24T16:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2234,7 +2242,8 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney"
+  "InfoMoney",
+  "Valor"
  ],
  "noticias": [
   {
@@ -2247,6 +2256,20 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa perde fôlego e passa a cair com ações da Vale em baixa de 5%; dólar recua",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
+   "publicado": "2026-11-24T15:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   },
   {
    "titulo": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
@@ -2297,20 +2320,6 @@
    ]
   },
   {
-   "titulo": "Ibovespa perde fôlego e passa a cair com ações da Vale em baixa de 5%; dólar recua",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcFFtQ1pwY25fR192RU1zTEo1VWZRcXQ1SWFacnU3WGEtdUhyLW1lLTJpZFpvR2cyeGRqYlc2WlU0eG5UV2d6ekFDbGdLR0tCazc1ZTJnV0dvbTF4VHE0OXRSQWttZVAySFc2Wk51c0p5ZWdla3U2UUU5Z3Q4M2d5azVCLW5YQjg2ZXpvT2ZicDJFVXNMbFhwN3UxeGw3TlNCaWJjWDFPVnJkckhkcF93NmRiSGdKYlo2bW1udHhqaGxpaFRob0E0VkY1dVNra0Q5bXNhNW1XTmwxZ9IB3wFBVV95cUxOU2xMN0t6dkpTSzlJblVoUW5QOENBb0lIZHNuOGxkVi1ENVVweWRkQS1tN3BkOFh2ZWlhaF92VmViN0p4U05lWmVqdmpOdHlCSGlYaU01VHpCWjdNYTM1TVprTTlXa21zdWhOVncwdEFhUl92YTJUUVdIVmRXVE1xckQ1SVZSLU9KMW9qUmFXbDluUTBhQkxCTkY1bVJfa3pWS3U2SzlUNDhlQ19EbXF2RU9zNnAxSkFFRVRDUmV6cWlmVjlXcTlZbVcxUE8xMnVOMW01WlJYZmtCNlg3eUtZ?oc=5",
-   "publicado": "2026-11-24T14:27-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "VALE3"
-   ]
-  },
-  {
    "titulo": "Morgan Stanley vê dólar a R$ 5,25 em 2027 e aposta em real mais forte",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM094d3V6dGxiQlFXWnEwY1RnQVJqUnFhX2p6Zm5rZlJiYVNpc2FpWHVWcXcwa1MzemUxejdGbllSREtqbHRXMnM0ZmZWT0tlVzlVZjJXQ2pQdHFZOVJpRVJiREJkWlk2d1JiVGdHN1RfTVF3UmdmdEN1d1VEOWVjelF1Q0NsZVppa3FRLThubXpIZTExV09OeDlJQl8zR1dWN3Q2S19HaUtaOHBvTmlz0gGvAUFVX3lxTE4zT3h3dXp0bGJCUVdacTBjVGdBUmpScWFfanpmbmtmUmJhU2lzYWlYdVZxdzBrUzN6ZTF6N0ZuWVJES2psdFcyczRmZlZPS2VXOVVmMldDalB0cVk5UmlFUmJEQmRaWTZ3UmJUZ0c3VF9NUXdSZ2Z0Q3V3VUQ5ZWN6UXVDQ2xlWmlrcVEtOG5tekhlMTFXT054OUlCXzNHV1Y3dDZLX0dpS1o4cG9OaXM?oc=5",
@@ -2332,19 +2341,6 @@
    ],
    "tickers": [
     "B3SA3"
-   ]
-  },
-  {
-   "titulo": "Ibovespa: após subir mais de 1%, índice ameniza ganhos com forte pressão de Vale",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSzFCaGttcmFyY0RLbkttdU80SmsyRVc3a0JmLXI4Uk1XWFVqcjFSN0FMMS15VUNGZGdKLWN2ekttdXNPOHZxaGR0Z3Q4U2FZSy1odGpzdTVyTVUtRHE0bk56UV9ibW9ENDR5Qk41eThNb1BQUG42aElaWFZNaFVBRk93X1JCbGU3RWZsLW5zTEtzcm14REVlOTVtVFNrN0lBWUpGaVhHRko5RFZv0gGyAUFVX3lxTE1Od2taQWxDNEoxcENuNUh6NUg2c2NjclNNcEwtQXF1Z3RlRVRaQm1Qa1dRMi16ZmVsMVE1d3ZIRDUzb2dPQUo4OXZBdDFpa1BOLUxZMFRxdE5DM1VCOVk4aGVpclpjSGhfX3JsU1hhN2JIOXR5eV9aa19NQVVUeG5HbmVNYUVoaTdnZ0xGZDFLTDVERmhRYVlpV0YxejBZekg2dENNWURqWnRRdGM4dDN1X2c?oc=5",
-   "publicado": "2026-11-24T14:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "VALE3"
    ]
   },
   {
