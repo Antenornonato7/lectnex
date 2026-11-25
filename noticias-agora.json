@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T15:20-03:00",
+  "atualizado_em": "2026-11-25T15:23-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -251,7 +251,11 @@
     ],
     [
      "15:05",
-     166341.0
+     166288.0
+    ],
+    [
+     "15:08",
+     166272.0
     ]
    ]
   },
@@ -564,7 +568,11 @@
     ],
     [
      "15:20",
-     5.8151
+     5.8177
+    ],
+    [
+     "15:23",
+     5.8165
     ]
    ]
   },
@@ -1364,7 +1372,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.03
+    "dolar30": 0.08
    },
    {
     "hora": "15:00",
@@ -1418,21 +1426,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "15:18",
+    "titulo": "Bolsas da Europa fecham em queda com nova proposta tarifária dos EUA",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSENCT282TWg5ZG1lU1Z1TU1rWUxYRHVNRUp6YjRuSFBEbUVyMjV3b243MlRlSkdxYngtZmpLNHFxcXdGcHhfQ2p0OHFaY1h6eUZBYlAteU1QM29uLUpCaFI5dG01eGVIdEQ0NTBRZUllbU5FRmFSMlREZW1Qd0dpdnBuQlRLbTdocGxMOWVSYW1mdWtRM0ZkMUkzaU5sRDRSbW4zZjdjZGQxWThuTzMxaEhlUDdHT1c5dkN1U0xINzk0XzJWcTZ3eVc5N0V2aHJ2Nmc?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Entenda como o dólar ao redor de R$ 6 encarece comida, eletrônicos e passagens aéreas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZk16SG1hVUVfWXdNaUY5YXZlV3pTTVR6QlBLYnp0MXJRMjNNTmpqdGlNaWdPYnVFb010cElNS01hcTNIYXllR2lyWWpwb3JPelUtZm8yYTVTejU1TkI3MHd6RENmWVdVWFlpRWxRN19VV1Z0S2RucFNhQzBOcWF6R0NLRlDSAYoBQVVfeXFMTkNObFd1WXBSNjY1eFVUN2E5Q1pzc2FqYmF6aE1nYy1qNVBmVXRWSlE3enJyV0FsUVdZbzNUbWhpUWYtWlFUUURVWDRPcjZwakc2OWNrSWNqMlZiT3lLb1hYcDBueWpfbjR2NGtKODRkczlsbTZfWDducW1HS05KYUJhM0ZSaWY4anR3?oc=5",
-   "publicado": "2026-11-25T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Governo trabalha em PEC com novas medidas fiscais; dólar recua e fecha a R$ 5,91",
    "fonte": "Valor",
@@ -2387,6 +2397,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Bolsas da Europa fecham em queda com nova proposta tarifária dos EUA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSENCT282TWg5ZG1lU1Z1TU1rWUxYRHVNRUp6YjRuSFBEbUVyMjV3b243MlRlSkdxYngtZmpLNHFxcXdGcHhfQ2p0OHFaY1h6eUZBYlAteU1QM29uLUpCaFI5dG01eGVIdEQ0NTBRZUllbU5FRmFSMlREZW1Qd0dpdnBuQlRLbTdocGxMOWVSYW1mdWtRM0ZkMUkzaU5sRDRSbW4zZjdjZGQxWThuTzMxaEhlUDdHT1c5dkN1U0xINzk0XzJWcTZ3eVc5N0V2aHJ2Nmc?oc=5",
+   "publicado": "2026-11-25T15:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2416,18 +2437,30 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T15:20-03:00",
+ "atualizado_em": "2026-11-25T15:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Bolsas da Europa fecham em queda com nova proposta tarifária dos EUA",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSENCT282TWg5ZG1lU1Z1TU1rWUxYRHVNRUp6YjRuSFBEbUVyMjV3b243MlRlSkdxYngtZmpLNHFxcXdGcHhfQ2p0OHFaY1h6eUZBYlAteU1QM29uLUpCaFI5dG01eGVIdEQ0NTBRZUllbU5FRmFSMlREZW1Qd0dpdnBuQlRLbTdocGxMOWVSYW1mdWtRM0ZkMUkzaU5sRDRSbW4zZjdjZGQxWThuTzMxaEhlUDdHT1c5dkN1U0xINzk0XzJWcTZ3eVc5N0V2aHJ2Nmc?oc=5",
+   "publicado": "2026-11-25T15:18-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
    "fonte": "CNBC",
@@ -2606,19 +2639,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Luiz Carlos Trabuco, do Bradesco, entra na lista de cotados para o Ministério da Fazenda",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/luiz-carlos-trabuco-bradesco-cotados-ministerio-da-fazenda/",
-   "publicado": "2026-11-25T12:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
   }
  ]
 }
