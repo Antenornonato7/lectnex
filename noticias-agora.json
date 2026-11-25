@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:28-03:00",
+  "atualizado_em": "2026-11-25T11:30-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -63,11 +63,11 @@
     ],
     [
      "11:10",
-     164968.0
+     164765.0
     ],
     [
-     "11:13",
-     164865.0
+     "11:15",
+     164688.0
     ]
    ]
   },
@@ -192,11 +192,11 @@
     ],
     [
      "11:25",
-     5.8986
+     5.8973
     ],
     [
-     "11:28",
-     5.8988
+     "11:30",
+     5.8978
     ]
    ]
   },
@@ -523,7 +523,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.04,
+    "ibov30": -0.17,
     "dolar30": 0.3
    },
    {
@@ -539,7 +539,7 @@
     "tickers": [
      "VALE3"
     ],
-    "ibov30": 0.01,
+    "ibov30": -0.1,
     "dolar30": 0.2
    },
    {
@@ -556,7 +556,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": -0.02
    }
   ]
  },
@@ -1177,7 +1177,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:28-03:00",
+ "atualizado_em": "2026-11-25T11:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1191,6 +1191,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
+   "publicado": "2026-11-25T11:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Budget carrier Norse Atlantic falls 78% after warning its finances are ‘critical’ amid soaring fuel costs",
    "fonte": "CNBC",
@@ -1278,17 +1290,6 @@
    "tickers": []
   },
   {
-   "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
-   "publicado": "2026-11-25T10:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Após proposta tarifária dos EUA, papéis da Embraer despencam no Ibovespa",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUjJ2VnhHeFRpMHV1SVFVVTBBSmFLUnhKUUczTDNsS25QRFltS0E0OEtnOUt0cEt4aDBwM3gzb3RuT01jYUxzSmQwY2lGRUxBRXRKVjhTYzNRSS1rcFZsZEN6Y2lFWllFMWZCendJZGFvZVFtX3FJVHlNTzZJbjVRNEE3dHZhcmlFaTJreFZkNmpnLTExUzFTY215V0NsbkxBaGEzNmFIckYwTDhBSGd3d21UWHBIWHhsUVRHQ25mVWU0UQ?oc=5",
@@ -1311,17 +1312,6 @@
    "ativos": [
     "WIN",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "EUA criticam governo Lula e propõem elevar tarifas sobre o Brasil, incluindo taxa de 10% sobre aviões",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-realizara-audiencia-em-janeiro-sobre-proposta-de-alteracao-das-tarifas-aplicadas-ao-brasil.shtml",
-   "publicado": "2026-11-25T10:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
@@ -1349,6 +1339,21 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar forte favorece Vale e CSN Mineração, mas pressiona Usiminas, diz Morgan Stanley",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYXlZdzl5anZQRmlzenVrZVg0a2MyRHFabVk3a3BNbjFJOEJTMC1JTG9ibnJ5c0g1RmtxbDUxWU93dV8wM1pvOVpLMFZpbEtUVEFZWXQ3T0Q0SmZQU29vaExiWkZ6T0Rsa1VKeGJPZEFnTlMwZVhna1ZnOS1LUlZPMURkSkpkYVpzRVVYRVAzSnRCU3Z0enJ2QzFGcEFFcllZMWJrbktPbWNxX0ZZVjVaMW8wOHFDZU4xTV9YLVpzVEVMUFIt0gHEAUFVX3lxTFBheVl3OXlqdlBGaXN6dWtlWDRrYzJEcVptWTdrcE1uMUk4QlMwLUlMb2JucnlzSDVGa3FsNTFZT3d1XzAzWm85WkswVmlsS1RUQVlZdDdPRDRKZlBTb29oTGJaRnpPRGxrVUp4Yk9kQWdOUzBlWGdrVmc5LUtSVk8xRGRKSmRhWnNFVVhFUDNKdEJTdnR6cnZDMUZwQUVyWVkxYmtuS09tY3FfRllWNVoxbzA4cUNlTjFNX1gtWnNURUxQUi0?oc=5",
+   "publicado": "2026-11-25T10:05-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "CMIN3",
+    "VALE3"
+   ]
   },
   {
    "titulo": "Dólar cai e Bolsa avança com inflação dos EUA no radar, expectativa por sinais fiscais e elevação de tarifas de Trump",
