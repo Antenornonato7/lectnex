@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:43-03:00",
+  "atualizado_em": "2026-11-25T11:45-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -75,11 +75,11 @@
     ],
     [
      "11:25",
-     164871.0
+     164728.0
     ],
     [
-     "11:28",
-     164844.0
+     "11:30",
+     164357.0
     ]
    ]
   },
@@ -216,11 +216,11 @@
     ],
     [
      "11:40",
-     5.9031
+     5.9111
     ],
     [
-     "11:43",
-     5.9057
+     "11:45",
+     5.9058
     ]
    ]
   },
@@ -511,6 +511,20 @@
     "dolar30": 0.19
    },
    {
+    "hora": "10:35",
+    "titulo": "Trump propõe novas tarifas contra 14 parceiros comerciais; China será a mais afetada",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaW9FWXJEQjU0dVpzS3hCS2MteEtDMEV1ckdoMnZzQzJNYUZZZmhNT0tLUFVKNW91UkxLVnpOX19QVTVSd3hwSlNGQTRoQ2pCZWxQdUZJUmJuUTFBWWRRZVVYMjFxYVI2ZTRmMDB4X3BzbFkwZ0NUOUlncUlpRVV3ZTJkN2M4QmU1ai1LLWRZWXdkSEt3bWFRV2dSSnlacU0wWWQ5NXU2VE8xWmdEYmwybDR5WUdDZHloRy1v0gHAAUFVX3lxTE1ncUJ4blRUV25mQnBPYWRLYVZ0aTlOd0JhZ1lxMjV4ZHQySllUNm1BLWtSM090T1JYcGxwTWJJeXFNTEdZRmNEYlpydG53VFZOdVhaNXNhQXRRX0NQQ1JiRzZydFJhYkQxbDZ0ZmtDOWs4b3ZCc3hPSDB1NGV3dHdlWm01eVIzQm1QWXV6SVBZSWlBcHlMb1ZTWHBVYW9WakpxRlZQVmJqQ1FZa21DUlh2MU9aRzAzT3VhVFAwaE16VA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.2,
+    "dolar30": 0.24
+   },
+   {
     "hora": "10:36",
     "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
     "fonte": "Estadão",
@@ -579,8 +593,23 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": 0.24,
+    "ibov30": 0.15,
     "dolar30": -0.02
+   },
+   {
+    "hora": "11:11",
+    "titulo": "Ministro cita ‘dever cumprido’ e promete orçamento no azul no Lula 4 em meio à preocupação fiscal",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/ministro-cita-dever-cumprido-e-promete-orcamento-no-azul-no-lula-4-em-meio-a-preocupacao-fiscal/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [
+     "AZUL4"
+    ],
+    "ibov30": null,
+    "dolar30": 0.11
    },
    {
     "hora": "11:12",
@@ -593,7 +622,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.03
+    "dolar30": 0.11
    },
    {
     "hora": "11:26",
@@ -1168,6 +1197,18 @@
    "tickers": []
   },
   {
+   "titulo": "Trump propõe novas tarifas contra 14 parceiros comerciais; China será a mais afetada",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaW9FWXJEQjU0dVpzS3hCS2MteEtDMEV1ckdoMnZzQzJNYUZZZmhNT0tLUFVKNW91UkxLVnpOX19QVTVSd3hwSlNGQTRoQ2pCZWxQdUZJUmJuUTFBWWRRZVVYMjFxYVI2ZTRmMDB4X3BzbFkwZ0NUOUlncUlpRVV3ZTJkN2M4QmU1ai1LLWRZWXdkSEt3bWFRV2dSSnlacU0wWWQ5NXU2VE8xWmdEYmwybDR5WUdDZHloRy1v0gHAAUFVX3lxTE1ncUJ4blRUV25mQnBPYWRLYVZ0aTlOd0JhZ1lxMjV4ZHQySllUNm1BLWtSM090T1JYcGxwTWJJeXFNTEdZRmNEYlpydG53VFZOdVhaNXNhQXRRX0NQQ1JiRzZydFJhYkQxbDZ0ZmtDOWs4b3ZCc3hPSDB1NGV3dHdlWm01eVIzQm1QWXV6SVBZSWlBcHlMb1ZTWHBVYW9WakpxRlZQVmJqQ1FZa21DUlh2MU9aRzAzT3VhVFAwaE16VA?oc=5",
+   "publicado": "2026-11-25T10:35-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
@@ -1227,6 +1268,19 @@
    ],
    "tickers": [
     "EMBR3"
+   ]
+  },
+  {
+   "titulo": "Ministro cita ‘dever cumprido’ e promete orçamento no azul no Lula 4 em meio à preocupação fiscal",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/ministro-cita-dever-cumprido-e-promete-orcamento-no-azul-no-lula-4-em-meio-a-preocupacao-fiscal/",
+   "publicado": "2026-11-25T11:11-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": [
+    "AZUL4"
    ]
   },
   {
@@ -1305,7 +1359,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:43-03:00",
+ "atualizado_em": "2026-11-25T11:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1331,18 +1385,6 @@
    "tickers": [
     "EMBJ3"
    ]
-  },
-  {
-   "titulo": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-   "publicado": "2026-11-25T11:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Ações da Embraer caem mais de 6% após anúncio de tarifa dos EUA sobre aviões brasileiros",
@@ -1405,6 +1447,19 @@
    "tickers": []
   },
   {
+   "titulo": "Ministro cita ‘dever cumprido’ e promete orçamento no azul no Lula 4 em meio à preocupação fiscal",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/ministro-cita-dever-cumprido-e-promete-orcamento-no-azul-no-lula-4-em-meio-a-preocupacao-fiscal/",
+   "publicado": "2026-11-25T11:11-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": [
+    "AZUL4"
+   ]
+  },
+  {
    "titulo": "Ações da Embraer tombam após anúncio de novas tarifas dos EUA e lideram perdas do Ibovespa",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdWFXV3FteHJyck0wNXgxTTRUMDJ4UHkzRl9OZWx2cGdXODNrazF4ZEMxVXBneC1XS1hGbnItTm9Vcnl1WjVaSDdBa1pGSlhGVjVBeWdvZFhJb00xOW5mU1hBN05YQ3U4bFUxU2xZd3B0WTN3TmdyMjdUb0cwODU0LXpLS0RMWGh3a3ZMZGhuN2pOMFVfQ0ZTZ3JkMHVKUVRndWZaem4wNG5yeDlDQjByOXpSb3FfTzJhX3Y3dzkzWWljTHVrcnNpUHpKY1drbGtnYXVYeGlsOFRWa25V0gHrAUFVX3lxTE9WaFJrTUhzRmMyNjlfbUlzUU9Mang4RDNfa1pnN25XcTY4MDhNQU5ocVVfQnBaVTRVay1RMEhLdEZHNEFTRjdjMjk2RGxJalBjTlZlUHp1Y2ttQ0w5STg1eFludkVNdkwxUjhoSk9UYkI4WlNUZFhlZWNJM2YyQnFRamVydldtNzR5d3hueDNESjV3U0dpblo5OFk0eG1iSHNnTHZBVVN3WDJjQkVUdXBrZm1SM1NsRUZGclVJaEtYdmJDbGZsQWx0dWtUUnd2eGhzSnEtUEIzN2pWZ2NNN2hVXzRMSTBRejlTSFk?oc=5",
@@ -1457,6 +1512,18 @@
    "tickers": []
   },
   {
+   "titulo": "Trump propõe novas tarifas contra 14 parceiros comerciais; China será a mais afetada",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaW9FWXJEQjU0dVpzS3hCS2MteEtDMEV1ckdoMnZzQzJNYUZZZmhNT0tLUFVKNW91UkxLVnpOX19QVTVSd3hwSlNGQTRoQ2pCZWxQdUZJUmJuUTFBWWRRZVVYMjFxYVI2ZTRmMDB4X3BzbFkwZ0NUOUlncUlpRVV3ZTJkN2M4QmU1ai1LLWRZWXdkSEt3bWFRV2dSSnlacU0wWWQ5NXU2VE8xWmdEYmwybDR5WUdDZHloRy1v0gHAAUFVX3lxTE1ncUJ4blRUV25mQnBPYWRLYVZ0aTlOd0JhZ1lxMjV4ZHQySllUNm1BLWtSM090T1JYcGxwTWJJeXFNTEdZRmNEYlpydG53VFZOdVhaNXNhQXRRX0NQQ1JiRzZydFJhYkQxbDZ0ZmtDOWs4b3ZCc3hPSDB1NGV3dHdlWm01eVIzQm1QWXV6SVBZSWlBcHlMb1ZTWHBVYW9WakpxRlZQVmJqQ1FZa21DUlh2MU9aRzAzT3VhVFAwaE16VA?oc=5",
+   "publicado": "2026-11-25T10:35-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Após proposta tarifária dos EUA, papéis da Embraer despencam no Ibovespa",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUjJ2VnhHeFRpMHV1SVFVVTBBSmFLUnhKUUczTDNsS25QRFltS0E0OEtnOUt0cEt4aDBwM3gzb3RuT01jYUxzSmQwY2lGRUxBRXRKVjhTYzNRSS1rcFZsZEN6Y2lFWllFMWZCendJZGFvZVFtX3FJVHlNTzZJbjVRNEE3dHZhcmlFaTJreFZkNmpnLTExUzFTY215V0NsbkxBaGEzNmFIckYwTDhBSGd3d21UWHBIWHhsUVRHQ25mVWU0UQ?oc=5",
@@ -1483,21 +1550,9 @@
    "tickers": []
   },
   {
-   "titulo": "Governo Trump propõe novas tarifas de até 20% sobre China, UE e mais 12 países",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml",
-   "publicado": "2026-11-25T10:23-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar forte favorece Vale e CSN Mineração, mas pressiona Usiminas, diz Morgan Stanley",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYXlZdzl5anZQRmlzenVrZVg0a2MyRHFabVk3a3BNbjFJOEJTMC1JTG9ibnJ5c0g1RmtxbDUxWU93dV8wM1pvOVpLMFZpbEtUVEFZWXQ3T0Q0SmZQU29vaExiWkZ6T0Rsa1VKeGJPZEFnTlMwZVhna1ZnOS1LUlZPMURkSkpkYVpzRVVYRVAzSnRCU3Z0enJ2QzFGcEFFcllZMWJrbktPbWNxX0ZZVjVaMW8wOHFDZU4xTV9YLVpzVEVMUFIt0gHEAUFVX3lxTFBheVl3OXlqdlBGaXN6dWtlWDRrYzJEcVptWTdrcE1uMUk4QlMwLUlMb2JucnlzSDVGa3FsNTFZT3d1XzAzWm85WkswVmlsS1RUQVlZdDdPRDRKZlBTb29oTGJaRnpPRGxrVUp4Yk9kQWdOUzBlWGdrVmc5LUtSVk8xRGRKSmRhWnNFVVhFUDNKdEJTdnR6cnZDMUZwQUVyWVkxYmtuS09tY3FfRllWNVoxbzA4cUNlTjFNX1gtWnNURUxQUi0?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPR1Bud1dhd3JrSXFueU5ScUNTQWNxZEhmLTZNZk5kclZGVzJ2OTA1WUIwUVp5VHV2RTdIVWdOMm9MRTVfbzJqUUpLc2FvWnhDY19zMzFmeHdUREJmZU5SWHlzc1drZ0NQZW0tbWlLblJwWUtXYnlHQThaMXJCOEg3ZXpReTVFRGNJZngwWWZBcU1YUjFaMmIzaUhVd0FQcTBvbENxc1BrM2NsSzZMUENKQldYY0FvcUQ2a0hxQTJvTdIBxAFBVV95cUxQYXlZdzl5anZQRmlzenVrZVg0a2MyRHFabVk3a3BNbjFJOEJTMC1JTG9ibnJ5c0g1RmtxbDUxWU93dV8wM1pvOVpLMFZpbEtUVEFZWXQ3T0Q0SmZQU29vaExiWkZ6T0Rsa1VKeGJPZEFnTlMwZVhna1ZnOS1LUlZPMURkSkpkYVpzRVVYRVAzSnRCU3Z0enJ2QzFGcEFFcllZMWJrbktPbWNxX0ZZVjVaMW8wOHFDZU4xTV9YLVpzVEVMUFIt?oc=5",
    "publicado": "2026-11-25T10:05-03:00",
    "impacto": "alto",
    "ativos": [
