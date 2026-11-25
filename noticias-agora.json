@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T16:03-03:00",
+  "atualizado_em": "2026-11-25T16:06-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -283,11 +283,15 @@
     ],
     [
      "15:45",
-     167105.0
+     167082.0
     ],
     [
-     "15:48",
-     167057.0
+     "15:50",
+     167086.0
+    ],
+    [
+     "15:51",
+     167017.0
     ]
    ]
   },
@@ -632,11 +636,15 @@
     ],
     [
      "16:00",
-     5.8191
+     5.8186
     ],
     [
-     "16:03",
-     5.8175
+     "16:05",
+     5.8162
+    ],
+    [
+     "16:06",
+     5.816
     ]
    ]
   },
@@ -1501,7 +1509,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.29,
+    "ibov30": 0.28,
     "dolar30": -0.04
    },
    {
@@ -1515,7 +1523,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.02
+    "dolar30": -0.04
    },
    {
     "hora": "15:39",
@@ -1530,7 +1538,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.04
    },
    {
     "hora": "15:39",
@@ -1546,7 +1554,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.04
    },
    {
     "hora": "15:51",
@@ -1560,22 +1568,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "16:02",
+    "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcFZBZGlENGNEMjgxeV96UUtyaUh3bzVuNTl0MzZNT0pZUVREdzFIdEwtLW9zZGtiejlpN3pWWVhFV05BdjNZT1RsX2hXZVY3eTRseFN0NFF4dW5weHhNd0tIcVg1NEJNejR3ekN2enAzY3VNbmNfS0xlbjZFcDBETFBsN3U4U3NoY2NKb0lnd25tajYxR1JaZllTVWJsVERCdWRWQ0otR2hBaktPeHVTUGkwdk1ydnotSFBTVVpUdDVDVnlHc0lrSi1QemJqekFNSk5BX2ZR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Real segue pressionado por fiscal, mas bancões veem espaço para alta em 2027; entenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnQ4M0o2cVB0NTVZT1phQTFPOWJvcFdkWngxM0tpR3JRYmhtTzVFNDUzYS1IWllYeUJqTUdtc1QtTF9FWGpBb3Atc2h1RmlxT2RBSzU0a2huWnhJakdiWWp2dGJUSENmdmk4NTN6bEdsd3Y1WWpVSHY5Skp5NVVzNlVWV0FMMWRUOUVSTVI4SWZuLXB3eWVGTV85YmlOMG9XS2M2amZpaGhFbEllM085MzJ6TGMtZ1IyOVFRV2R1OXJ1MHhXY25scVdYbnZBczZJ0gHWAUFVX3lxTE1Zby1fY2w4OG9xR3FOOUF2dXlsbEpkYXVkMnFtMWVLOGdRbWRHdlM2MTl2U1VnR1VyOEhWUTdXUk9ZODF6WXJRR2tiSllLaUhpSmJtVmZJUnpvQm5wZlFYTHc0UzhKODlmd1JpbHYwNHRUM2laeGh2Qll3b2RIeTJQcjVZaW1NZzJvRW1idEpueVNHdzhYQktuaHRmWlJMYVVtdUkyaWJUaEJPXzAtS18ySWtjZnFnQ1h0SHFUdG9YZnVjSDJscDZ5cklZamJ4UGxnNzBTSmc?oc=5",
-   "publicado": "2026-11-25T06:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Real perde 15,6% ante o dólar e lidera queda entre 27 moedas um mês após reeleição de Lula",
    "fonte": "Exame",
@@ -2530,6 +2539,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcFZBZGlENGNEMjgxeV96UUtyaUh3bzVuNTl0MzZNT0pZUVREdzFIdEwtLW9zZGtiejlpN3pWWVhFV05BdjNZT1RsX2hXZVY3eTRseFN0NFF4dW5weHhNd0tIcVg1NEJNejR3ekN2enAzY3VNbmNfS0xlbjZFcDBETFBsN3U4U3NoY2NKb0lnd25tajYxR1JaZllTVWJsVERCdWRWQ0otR2hBaktPeHVTUGkwdk1ydnotSFBTVVpUdDVDVnlHc0lrSi1QemJqekFNSk5BX2ZR?oc=5",
+   "publicado": "2026-11-25T16:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2559,7 +2579,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T16:03-03:00",
+ "atualizado_em": "2026-11-25T16:06-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2575,8 +2595,8 @@
   {
    "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcF84T0I2REV0MUNhLU5xVzlKNEM0NXVYUmVOTTJ4NjJtSE5qWEN1UTZMaGt2VDZRLVBVMlB1OXNCcFhKbGJnN2psZDRRc09tR2FRRU1IUWNKcHNVWEowUVZmQTNlODdsQVFsbWRHX01Uc0k5N0twdG11SWJ0by1iSl9BQ3pvMnlZSGdpenFvOGx3NWhwZG1sUGwwYkF4NENVVl91LWRrNElwQlJXekhMY1R5REZLam05Umw3bUZSUElETG5nY0VGWEM0ONIB0AFBVV95cUxNOVB2bzQzVXpzNDEtTHNDdlBDUEZGVk1MUXNxbUNZOE4zS01NYTVhaFFMdGFTNWhpTGRFUTJ5eGttNXFBQTA0d2tYRDExT3AtdzlQSjZRVGRheWcxM1FMWkZnRk5aNDZQYU53enF2cDhTNHpNZHRZcVFnVXR4MTNseGF5RFNWUWVFdnpxQU5PQ1g1Vm5aSVZIdEV0UnZWZnJEWHJOU1VvRHlrYlAyMzNreFFOR2hMTVZncGEwZWNUS0tPM1FneW1BRHpvMTFHUW1Z?oc=5",
-   "publicado": "2026-11-25T15:51-03:00",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcFZBZGlENGNEMjgxeV96UUtyaUh3bzVuNTl0MzZNT0pZUVREdzFIdEwtLW9zZGtiejlpN3pWWVhFV05BdjNZT1RsX2hXZVY3eTRseFN0NFF4dW5weHhNd0tIcVg1NEJNejR3ekN2enAzY3VNbmNfS0xlbjZFcDBETFBsN3U4U3NoY2NKb0lnd25tajYxR1JaZllTVWJsVERCdWRWQ0otR2hBaktPeHVTUGkwdk1ydnotSFBTVVpUdDVDVnlHc0lrSi1QemJqekFNSk5BX2ZR?oc=5",
+   "publicado": "2026-11-25T16:02-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -2714,16 +2734,18 @@
    "tickers": []
   },
   {
-   "titulo": "Mais S&P 500 e menos Ibovespa: a estratégia da Itaú Asset para os investimentos em 2027",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRXZPNmhjajB0bzNfcEQ3dWd5bkoxSmh2QW96eEtDSXotN0hVZ3NCZHJMZ293QVNkaUNwc3U3Z2VWdTJ5V0xoazNwSERvLVdWdkp6U1d4NVFTVlRJYnIyaHktLUxPTnBORlRhVWtaS3E1eWVKS3NCWnF3X3VvQVlqYl85VTZUaGE0Wmo3S3I1NFl1azRCaFF5cEZlVklaa1lCRGItQ0ZzdHR1Sy03ZmRISXpUbFBweEROMkZfQWZB?oc=5",
-   "publicado": "2026-11-25T14:04-03:00",
-   "impacto": "medio",
+   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-25T14:09-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WIN",
+    "WDO"
    ],
    "tickers": [
-    "ITUB4"
+    "PETR4",
+    "VALE3"
    ]
   },
   {
