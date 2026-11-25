@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:35-03:00",
+  "atualizado_em": "2026-11-25T11:38-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -71,7 +71,11 @@
     ],
     [
      "11:20",
-     164545.0
+     164607.0
+    ],
+    [
+     "11:23",
+     164671.0
     ]
    ]
   },
@@ -204,7 +208,11 @@
     ],
     [
      "11:35",
-     5.9013
+     5.9023
+    ],
+    [
+     "11:38",
+     5.9011
     ]
    ]
   },
@@ -563,7 +571,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": null,
+    "ibov30": 0.12,
     "dolar30": -0.02
    },
    {
@@ -577,7 +585,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.06
    },
    {
     "hora": "11:26",
@@ -603,6 +611,21 @@
     ],
     "tickers": [
      "EMBR3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:30",
+    "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal no radar; tarifas pressionam EMBJ3",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ1RjWkZvaVEzX2VESmpsSHN4bFBBUEU3RFNWYzhIcGRXcU42YkFXbGRKYUM1MVVBeTVwdVJwNGRZb2V0Yl9VdXYzbVNCZ3JuelVVcThUSkpia3ItRFpnbHotV0JBNlR0TVBxRHZJTkFNcm9qazZ0SHpESFZNNHBkRnAyWlJMSDlJR1lmQnBYOA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "EMBJ3"
     ],
     "ibov30": null,
     "dolar30": null
@@ -1232,6 +1255,19 @@
    "tickers": [
     "EMBR3"
    ]
+  },
+  {
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal no radar; tarifas pressionam EMBJ3",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ1RjWkZvaVEzX2VESmpsSHN4bFBBUEU3RFNWYzhIcGRXcU42YkFXbGRKYUM1MVVBeTVwdVJwNGRZb2V0Yl9VdXYzbVNCZ3JuelVVcThUSkpia3ItRFpnbHotV0JBNlR0TVBxRHZJTkFNcm9qazZ0SHpESFZNNHBkRnAyWlJMSDlJR1lmQnBYOA?oc=5",
+   "publicado": "2026-11-25T11:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBJ3"
+   ]
   }
  ],
  "enviadas": [
@@ -1261,7 +1297,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:35-03:00",
+ "atualizado_em": "2026-11-25T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1275,6 +1311,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal no radar; tarifas pressionam EMBJ3",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ1RjWkZvaVEzX2VESmpsSHN4bFBBUEU3RFNWYzhIcGRXcU42YkFXbGRKYUM1MVVBeTVwdVJwNGRZb2V0Yl9VdXYzbVNCZ3JuelVVcThUSkpia3ItRFpnbHotV0JBNlR0TVBxRHZJTkFNcm9qazZ0SHpESFZNNHBkRnAyWlJMSDlJR1lmQnBYOA?oc=5",
+   "publicado": "2026-11-25T11:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBJ3"
+   ]
+  },
   {
    "titulo": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
    "fonte": "CNBC",
@@ -1331,17 +1380,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Açúcar e aeronaves: como a nova proposta de tarifas dos EUA pode pressionar o Brasil",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/acucar-aeronaves-nova-proposta-tarifas-eua-pressionar-brasil/",
-   "publicado": "2026-11-25T11:12-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
