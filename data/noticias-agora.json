@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T10:08-03:00",
+  "atualizado_em": "2026-11-25T10:37-03:00",
+  "ibov": {
+   "anterior": 164089.81,
+   "pontos": [
+    [
+     "10:00",
+     164440.0
+    ],
+    [
+     "10:05",
+     164702.0
+    ],
+    [
+     "10:10",
+     164601.0
+    ],
+    [
+     "10:15",
+     164183.0
+    ],
+    [
+     "10:20",
+     164042.0
+    ],
+    [
+     "10:22",
+     164187.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.8933,
    "pontos": [
@@ -59,11 +88,35 @@
     ],
     [
      "10:05",
-     5.9029
+     5.8979
     ],
     [
-     "10:08",
-     5.9009
+     "10:10",
+     5.8984
+    ],
+    [
+     "10:15",
+     5.8972
+    ],
+    [
+     "10:20",
+     5.8869
+    ],
+    [
+     "10:25",
+     5.89
+    ],
+    [
+     "10:30",
+     5.8842
+    ],
+    [
+     "10:35",
+     5.8822
+    ],
+    [
+     "10:37",
+     5.8812
     ]
    ]
   },
@@ -79,6 +132,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.43
    },
    {
@@ -94,6 +148,7 @@
      "BBAS3",
      "ITUB4"
     ],
+    "ibov30": null,
     "dolar30": -0.2
    },
    {
@@ -106,6 +161,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.2
    },
    {
@@ -118,6 +174,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.25
    },
    {
@@ -131,6 +188,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.31
    },
    {
@@ -145,6 +203,7 @@
     "tickers": [
      "SUZB3"
     ],
+    "ibov30": null,
     "dolar30": -0.31
    },
    {
@@ -157,7 +216,8 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.16
    },
    {
     "hora": "09:56",
@@ -170,6 +230,106 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.21
+   },
+   {
+    "hora": "10:11",
+    "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.29
+   },
+   {
+    "hora": "10:13",
+    "titulo": "Nova pesquisa do IBGE sobre consumo das famílias pode alterar projeções do IPCA",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/nova-pesquisa-ibge-consumo-familias-projecoes-ipca/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:15",
+    "titulo": "The Fed is likely to raise rates in December. What it means for your holiday spending",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/25/fed-december-rate-hike-consumer-impact.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:23",
+    "titulo": "EUA anunciam novas tarifas de até 20% sobre China, UE e mais 14 países",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:31",
+    "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:34",
+    "titulo": "Após proposta tarifária dos EUA, papéis da Embraer despencam no Ibovespa",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUjJ2VnhHeFRpMHV1SVFVVTBBSmFLUnhKUUczTDNsS25QRFltS0E0OEtnOUt0cEt4aDBwM3gzb3RuT01jYUxzSmQwY2lGRUxBRXRKVjhTYzNRSS1rcFZsZEN6Y2lFWllFMWZCendJZGFvZVFtX3FJVHlNTzZJbjVRNEE3dHZhcmlFaTJreFZkNmpnLTExUzFTY215V0NsbkxBaGEzNmFIckYwTDhBSGd3d21UWHBIWHhsUVRHQ25mVWU0UQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "EMBR3"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:34",
+    "titulo": "Ibovespa sobe com novas medidas fiscais e PCE dos EUA; 5 coisas para saber antes de investir hoje (25)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcWxrZFU1eWxyLXVFeDVPRXZ2cW1EcFN3TnI3dVRNWmw2QzFNMUJzVktDTF96SUs0Mkk1MkExdU9HUXVDeUVKc2thX0dmck9VN1JRSmQycXB5dkVWVXVTdzJscHlfUFN3SjR1UDNFMzhSZXRvTkF1RGkxZnlxQkh0TmFaUkxiQjZXRFA4bFZiNG93eGlITWtNa2JBYTZHZkY2RE1yWERWUTFOeV9nX05GbGZ5TGtkY3ZZSDlGczhwM3ZLS283Y1ZMRUtmbFl4MjV3QVoxV0JuWngyNlRYYU1KSDVzZEZfOU1aeGc?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -551,14 +711,94 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+   "publicado": "2026-11-25T10:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nova pesquisa do IBGE sobre consumo das famílias pode alterar projeções do IPCA",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/nova-pesquisa-ibge-consumo-familias-projecoes-ipca/",
+   "publicado": "2026-11-25T10:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "The Fed is likely to raise rates in December. What it means for your holiday spending",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/fed-december-rate-hike-consumer-impact.html",
+   "publicado": "2026-11-25T10:15-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA anunciam novas tarifas de até 20% sobre China, UE e mais 14 países",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml",
+   "publicado": "2026-11-25T10:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+   "publicado": "2026-11-25T10:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Após proposta tarifária dos EUA, papéis da Embraer despencam no Ibovespa",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUjJ2VnhHeFRpMHV1SVFVVTBBSmFLUnhKUUczTDNsS25QRFltS0E0OEtnOUt0cEt4aDBwM3gzb3RuT01jYUxzSmQwY2lGRUxBRXRKVjhTYzNRSS1rcFZsZEN6Y2lFWllFMWZCendJZGFvZVFtX3FJVHlNTzZJbjVRNEE3dHZhcmlFaTJreFZkNmpnLTExUzFTY215V0NsbkxBaGEzNmFIckYwTDhBSGd3d21UWHBIWHhsUVRHQ25mVWU0UQ?oc=5",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa sobe com novas medidas fiscais e PCE dos EUA; 5 coisas para saber antes de investir hoje (25)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcWxrZFU1eWxyLXVFeDVPRXZ2cW1EcFN3TnI3dVRNWmw2QzFNMUJzVktDTF96SUs0Mkk1MkExdU9HUXVDeUVKc2thX0dmck9VN1JRSmQycXB5dkVWVXVTdzJscHlfUFN3SjR1UDNFMzhSZXRvTkF1RGkxZnlxQkh0TmFaUkxiQjZXRFA4bFZiNG93eGlITWtNa2JBYTZHZkY2RE1yWERWUTFOeV9nX05GbGZ5TGtkY3ZZSDlGczhwM3ZLS283Y1ZMRUtmbFl4MjV3QVoxV0JuWngyNlRYYU1KSDVzZEZfOU1aeGc?oc=5",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
-  {
-   "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
-   "titulo": "Property Play: Commercial real estate activity falls 14% in October, as interest rates rise",
-   "em": "2026-11-24T13:15:57+00:00"
-  },
   {
    "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
    "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
@@ -583,9 +823,14 @@
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-leve-alta-em-linha-com-exterior-e-a-espera-de-novos-sinais-sobre-politica-fiscal.shtml",
    "titulo": "Dólar abre em leve alta em linha com exterior e à espera de novos sinais sobre política fiscal",
    "em": "2026-11-25T13:00:37+00:00"
+  },
+  {
+   "url": "https://www.cnbc.com/2026/11/25/fed-december-rate-hike-consumer-impact.html",
+   "titulo": "The Fed is likely to raise rates in December. What it means for your holiday spending",
+   "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T10:08-03:00",
+ "atualizado_em": "2026-11-25T10:37-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -599,6 +844,103 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Após proposta tarifária dos EUA, papéis da Embraer despencam no Ibovespa",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUjJ2VnhHeFRpMHV1SVFVVTBBSmFLUnhKUUczTDNsS25QRFltS0E0OEtnOUt0cEt4aDBwM3gzb3RuT01jYUxzSmQwY2lGRUxBRXRKVjhTYzNRSS1rcFZsZEN6Y2lFWllFMWZCendJZGFvZVFtX3FJVHlNTzZJbjVRNEE3dHZhcmlFaTJreFZkNmpnLTExUzFTY215V0NsbkxBaGEzNmFIckYwTDhBSGd3d21UWHBIWHhsUVRHQ25mVWU0UQ?oc=5",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa sobe com novas medidas fiscais e PCE dos EUA; 5 coisas para saber antes de investir hoje (25)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcWxrZFU1eWxyLXVFeDVPRXZ2cW1EcFN3TnI3dVRNWmw2QzFNMUJzVktDTF96SUs0Mkk1MkExdU9HUXVDeUVKc2thX0dmck9VN1JRSmQycXB5dkVWVXVTdzJscHlfUFN3SjR1UDNFMzhSZXRvTkF1RGkxZnlxQkh0TmFaUkxiQjZXRFA4bFZiNG93eGlITWtNa2JBYTZHZkY2RE1yWERWUTFOeV9nX05GbGZ5TGtkY3ZZSDlGczhwM3ZLS283Y1ZMRUtmbFl4MjV3QVoxV0JuWngyNlRYYU1KSDVzZEZfOU1aeGc?oc=5",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA anunciam novas tarifas de até 20% sobre China, UE e mais 14 países",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml",
+   "publicado": "2026-11-25T10:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "The Fed is likely to raise rates in December. What it means for your holiday spending",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/fed-december-rate-hike-consumer-impact.html",
+   "publicado": "2026-11-25T10:15-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Huang violou lei para exportar chips para China, diz líder da oposição no Senado dos EUA",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/huang-violou-lei-para-exportar-chips-para-china-diz-lider-da-oposicao-no-senado-dos-eua.shtml",
+   "publicado": "2026-11-25T10:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nova pesquisa do IBGE sobre consumo das famílias pode alterar projeções do IPCA",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/nova-pesquisa-ibge-consumo-familias-projecoes-ipca/",
+   "publicado": "2026-11-25T10:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+   "publicado": "2026-11-25T10:11-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar abre em leve alta em linha com exterior e à espera de novos sinais sobre política fiscal",
    "fonte": "Folha",
@@ -659,43 +1001,6 @@
    "tickers": []
   },
   {
-   "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
-   "publicado": "2026-11-25T09:26-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje acompanha exterior e sobe ante o real",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcEpha3pvUHNvaFpaWF9BZlhGQkZoWVF6aDZlaWE5ODhMc3NJc2l1RDJkQ2wyT0JoclJ2d2ZmRV96OVA3MDlacEJyNVRGbVhnNk9qM0xDTXIyOUotbmQzZ3ZRSHdFZ1owS3FfRXhyaXp0b1BESTFoV3V3Yk9CTlRvc01Qc1VNb3lVWVpMWWllSU5WaW01RUJXUjNGczLSAaIBQVVfeXFMUF9PSWJHUGdUWFBkR09VOFRibjlTX1RKQjZoV1JULUliV1dFd0tjN2xOLXBuVXpEQUNUMFd4bXFyeEphaDYyUGdpU3NtNDJzdUstTzZWYWtTMnVQdnJfdzJta2pSVUZ0bVlnVzV2dkYtU1dvSjVpQ3JBQ2lZRE12SjRrZDlRWjZxallhT3dhM0M2cWVad1oxOHdfcG1WZ0JWaWt3?oc=5",
-   "publicado": "2026-11-25T09:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Itaú (ITUB4), Banco do Brasil (BBAS3), Nvidia e outros destaques desta quarta-feira (25)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOUpWNGxnbU1ibFBhM09nTWJTdzlRNVFtQzdoTVdYSzBRSDVzeU9qZWY1OWNveHF3cHpXbHdLUTNhZkhpNTdZU3dwM2RsQjkzY3Y2aHktaVVhdkFlYVhjeG9GTnlDTEJJMXVTOHFIT0c2bjdybVlyRW5NNklyUDE5RDhwLTVPbmpRenhDT3AwS05jdE81REFCNUZXZzl5c2g5MTQxc19hVzNITjFwZVp3NjlOTQ?oc=5",
-   "publicado": "2026-11-25T09:24-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBAS3",
-    "ITUB4"
-   ]
-  },
-  {
    "titulo": "Ibovespa Futuro cai com piora da projeção fiscal e cautela no exterior",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMzVSdHdQNXRwdHB1NDM4N3dObmFVNy1uRS1JdXZELTAtZEs5SUNJMm90X0JOMVRzMk9ReWptMFlNZ1h1a0ZXN3lSN1hHaV80UnN4UkNOTkhuT2RsalUyYjR6eTZILTBWYjM0eVJyRFRIVVM0dy1IbDdRbHZCRGxlaFo1M2xnbFNubnBwbVdFR0hGVHFzbnZuejdtNmVqQXF3cFNNWkw5bldBemNodFHSAbMBQVVfeXFMUFZYMFBKS0FWT1lCTEcyT08zZmI0cVBBNThUcDJWYzBXRHZSZ2t2ZG9oWlRHZnhxNVNHREl5S25QUDJjTmY4SG9XQ28tYnVzelRXYXY5MjhTa1I3NndXbWlsVmk5b3ZMMkV5TFRNaDNWRm83eEZGNjluYl9SZ3luakRQajI3elFFTnQ1ZXlqUEdfZ2ZEXzk1UUpBNUQ1UTgtb0dOaS0yUkloeXRJSnVSblRBd28?oc=5",
@@ -717,43 +1022,6 @@
     "WIN",
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "BTG Pactual vê oportunidade em meio a risco fiscal no Brasil e amplia presença regional",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/mercados/btg-pactual-ve-oportunidade-em-meio-a-risco-fiscal-no-brasil-e-amplia-presenca-regional/",
-   "publicado": "2026-11-25T08:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": [
-    "BPAC11"
-   ]
-  },
-  {
-   "titulo": "Budget carrier Norse Atlantic falls 77% after warning its finances are ‘critical’ amid soaring fuel costs",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
-   "publicado": "2026-11-25T08:10-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsas da China caem e têm menor patamar em mais de um ano; Seul desaba 6,16%",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468070",
-   "publicado": "2026-11-25T07:54-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
