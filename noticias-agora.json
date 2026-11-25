@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T10:28-03:00",
+  "atualizado_em": "2026-11-25T10:30-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -15,11 +15,11 @@
     ],
     [
      "10:10",
-     164748.0
+     164601.0
     ],
     [
-     "10:13",
-     164731.0
+     "10:15",
+     164506.0
     ]
    ]
   },
@@ -96,11 +96,11 @@
     ],
     [
      "10:25",
-     5.892
+     5.89
     ],
     [
-     "10:28",
-     5.8894
+     "10:30",
+     5.8944
     ]
    ]
   },
@@ -215,7 +215,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.18
+    "dolar30": -0.21
    },
    {
     "hora": "10:11",
@@ -226,6 +226,19 @@
     "ativos": [
      "WIN",
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:13",
+    "titulo": "Nova pesquisa do IBGE sobre consumo das famílias pode alterar projeções do IPCA",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/nova-pesquisa-ibge-consumo-familias-projecoes-ipca/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -652,6 +665,17 @@
    "tickers": []
   },
   {
+   "titulo": "Nova pesquisa do IBGE sobre consumo das famílias pode alterar projeções do IPCA",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/nova-pesquisa-ibge-consumo-familias-projecoes-ipca/",
+   "publicado": "2026-11-25T10:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "The Fed is likely to raise rates in December. What it means for your holiday spending",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/fed-december-rate-hike-consumer-impact.html",
@@ -708,7 +732,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T10:28-03:00",
+ "atualizado_em": "2026-11-25T10:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -755,6 +779,17 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Nova pesquisa do IBGE sobre consumo das famílias pode alterar projeções do IPCA",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/nova-pesquisa-ibge-consumo-familias-projecoes-ipca/",
+   "publicado": "2026-11-25T10:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -825,18 +860,6 @@
    "publicado": "2026-11-25T09:29-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
-   "publicado": "2026-11-25T09:26-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
