@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T17:08-03:00",
+  "atualizado_em": "2026-11-25T17:38-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     166862.0
+     166801.0
+    ],
+    [
+     "16:55",
+     166662.0
+    ],
+    [
+     "17:00",
+     166736.0
     ]
    ]
   },
@@ -548,7 +556,7 @@
     ],
     [
      "13:15",
-     5.8612
+     5.863
     ],
     [
      "13:20",
@@ -732,11 +740,35 @@
     ],
     [
      "17:05",
+     5.8126
+    ],
+    [
+     "17:10",
+     5.8107
+    ],
+    [
+     "17:15",
+     5.8161
+    ],
+    [
+     "17:20",
+     5.8156
+    ],
+    [
+     "17:25",
+     5.812
+    ],
+    [
+     "17:30",
      5.8152
     ],
     [
-     "17:08",
-     5.8163
+     "17:35",
+     5.8145
+    ],
+    [
+     "17:38",
+     5.8171
     ]
    ]
   },
@@ -1728,7 +1760,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.22,
+    "ibov30": 0.18,
     "dolar30": -0.01
    },
    {
@@ -1742,7 +1774,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.07
    },
    {
     "hora": "17:00",
@@ -1756,35 +1788,37 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "17:16",
+    "titulo": "Dólar recua para os R$ 5,80 com expectativas sobre equipe econômica de Lula",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnd3NExpWVVncXhIVGhOYnM2TjZzTDN0NllGZS1rQkFIa2tpdnJCNDhKckxmOWJTVUJONXBWQzNyeFJ6MnNjeEJoZE5GNEJBUFdFX2NQN0lpdWJjSlVoa1J5WEVGTHJ1ZXB4SlpORUJOb3pXbUZBdy0yRDZYZUFRZjhRMURZbHB5eE9xZXBkcTBsZWlHUlE3Vzk0elN2VHFiRTl6ZFFXZFZUSjV0Y0E?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:16",
+    "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE0gHfAUFVX3lxTFBZc2E1MUY2aWVqTWtsMzNSbEIzYnRLR3NTRjgySFE1bkduQi1kd3cxZTNQOVJkSWRuQnhWSmVFR1ltcW1YU3YzTGt6cDROU3F3ekc2MklwMXVuUHV1cjlSUU5xNlhNZE56NS01STBNV2g4T2N6aDkyak9hS2Riek1BcjAyekVkYVdRcnRRQ0VHTjl1WUNuNktRT2VrR25hRTlVWHVYczVmbGxPTEx6Vi1CUlRHZmh4TFgwME1kWjBiQnJPNG9vaXY1NzlLbUJydVA1bzNNY1VsYWRQS3p0R2c?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Política de preços da Petrobras segue adequada, mas empresa ainda avalia ajuste",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSWZuLTQtdkd6OG1HRExza3UyQ1h6cm93VmxWeDlKXzNOREdULXJONEZJUWtHYTNaWVFWTHB1RzhsWmNNMjZmLUtxcGpqUzREWjhibEN1VGFjVldJLWVuMjR4QXdPXzdJR0JtWXlQN1J2TW1NOHFRMGtDWlBlelZYLTlfNjRPQVhjM3d0WlRCVnRMaVg0UVRYTmZKVWRPdm43YnVuYVRtV21jcG43M0publA2R1hVU3ZT0gG-AUFVX3lxTE0zSzV0TUdMemFxSVZDaGI1WlR6Z3JpallxSWh2bG9zMUVpTDlRLWt1R3Q0WnM4MENwekhRdG8yMU55S1daNGxHVnZjU1VMWlB5ZF8tRnRIUVktUXl4X1BnOWRfX2hNNmU0UExmN182T0Z0YldyRXVWaS1zS3ZQRWVaRFkwUkQxQjRWdkVNM2R6bnM0ZlRLTTRiTnZKWmlGeUVuem94QlQtemNWLWw5V3ZManpYYzg1Z1lqMzY0Z2c?oc=5",
-   "publicado": "2026-11-25T07:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
-   "titulo": "Governo libera R$ 3,43 bilhões do Orçamento após ajuste fiscal",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-libera-r-343-bilhoes-do-orcamento-apos-ajuste-fiscal",
-   "publicado": "2026-11-25T07:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Day Trade hoje (25): Ibovespa pode acelerar queda e dólar testar os 6 mil pontos",
    "fonte": "InfoMoney",
@@ -2731,6 +2765,28 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar recua para os R$ 5,80 com expectativas sobre equipe econômica de Lula",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnd3NExpWVVncXhIVGhOYnM2TjZzTDN0NllGZS1rQkFIa2tpdnJCNDhKckxmOWJTVUJONXBWQzNyeFJ6MnNjeEJoZE5GNEJBUFdFX2NQN0lpdWJjSlVoa1J5WEVGTHJ1ZXB4SlpORUJOb3pXbUZBdy0yRDZYZUFRZjhRMURZbHB5eE9xZXBkcTBsZWlHUlE3Vzk0elN2VHFiRTl6ZFFXZFZUSjV0Y0E?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE0gHfAUFVX3lxTFBZc2E1MUY2aWVqTWtsMzNSbEIzYnRLR3NTRjgySFE1bkduQi1kd3cxZTNQOVJkSWRuQnhWSmVFR1ltcW1YU3YzTGt6cDROU3F3ekc2MklwMXVuUHV1cjlSUU5xNlhNZE56NS01STBNV2g4T2N6aDkyak9hS2Riek1BcjAyekVkYVdRcnRRQ0VHTjl1WUNuNktRT2VrR25hRTlVWHVYczVmbGxPTEx6Vi1CUlRHZmh4TFgwME1kWjBiQnJPNG9vaXY1NzlLbUJydVA1bzNNY1VsYWRQS3p0R2c?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2760,7 +2816,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T17:08-03:00",
+ "atualizado_em": "2026-11-25T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2771,9 +2827,44 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE0gHfAUFVX3lxTFBZc2E1MUY2aWVqTWtsMzNSbEIzYnRLR3NTRjgySFE1bkduQi1kd3cxZTNQOVJkSWRuQnhWSmVFR1ltcW1YU3YzTGt6cDROU3F3ekc2MklwMXVuUHV1cjlSUU5xNlhNZE56NS01STBNV2g4T2N6aDkyak9hS2Riek1BcjAyekVkYVdRcnRRQ0VHTjl1WUNuNktRT2VrR25hRTlVWHVYczVmbGxPTEx6Vi1CUlRHZmh4TFgwME1kWjBiQnJPNG9vaXY1NzlLbUJydVA1bzNNY1VsYWRQS3p0R2c?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar recua para os R$ 5,80 com expectativas sobre equipe econômica de Lula",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnd3NExpWVVncXhIVGhOYnM2TjZzTDN0NllGZS1rQkFIa2tpdnJCNDhKckxmOWJTVUJONXBWQzNyeFJ6MnNjeEJoZE5GNEJBUFdFX2NQN0lpdWJjSlVoa1J5WEVGTHJ1ZXB4SlpORUJOb3pXbUZBdy0yRDZYZUFRZjhRMURZbHB5eE9xZXBkcTBsZWlHUlE3Vzk0elN2VHFiRTl6ZFFXZFZUSjV0Y0E?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai mais de 1% e fecha em R$ 5,82; Ibovespa sobe com ações de bancos em alta de até 6%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
+   "publicado": "2026-11-25T17:06-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
    "fonte": "InfoMoney",
@@ -2783,18 +2874,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar cai mais de 1% e vai a R$ 5,81; Ibovespa sobe com ações de bancos em alta de até 5,68%",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
-   "publicado": "2026-11-25T16:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -2903,28 +2982,6 @@
    "tickers": [
     "ITUB4"
    ]
-  },
-  {
-   "titulo": "Segurar dólares à força pode sair pela culatra: o alerta do UBS WM para o Brasil não seguir o caminho de Argentina e Venezuela",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUUFyX0Y4MUNiNkh5X2poQU5JZGpHeVdac3FMbFBidElBcGw4Q3BvOVNqbGh0VEJ0Sk0xaGo1SEhrZkg4X2pUdkVDalJfc3ZTM2hGYy0xT3cxcHRMMnkwZ2pXUkNKX3pWUVZwWXpiYXFGQTBBM2JkTnk1QWFpOU1CVVdWOEtUZzk3VXJLN3B2WXk3WHJFRTVLZnlpUF9rWFplTWhxN1FaWXdScDhnbUM0TWtaNzgtWnFaVExzZ2lTWXBkRFgtMHFheGwxUktySGx1amtsMjNXN1NHYmlsTjhYWUNQdjBNTnZXV18wOTVFZnZuUlE?oc=5",
-   "publicado": "2026-11-25T15:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsas da Europa fecham em queda com nova proposta tarifária dos EUA",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSENCT282TWg5ZG1lU1Z1TU1rWUxYRHVNRUp6YjRuSFBEbUVyMjV3b243MlRlSkdxYngtZmpLNHFxcXdGcHhfQ2p0OHFaY1h6eUZBYlAteU1QM29uLUpCaFI5dG01eGVIdEQ0NTBRZUllbU5FRmFSMlREZW1Qd0dpdnBuQlRLbTdocGxMOWVSYW1mdWtRM0ZkMUkzaU5sRDRSbW4zZjdjZGQxWThuTzMxaEhlUDdHT1c5dkN1U0xINzk0XzJWcTZ3eVc5N0V2aHJ2Nmc?oc=5",
-   "publicado": "2026-11-25T15:18-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
