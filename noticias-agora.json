@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T13:45-03:00",
+  "atualizado_em": "2026-11-25T13:48-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -175,7 +175,11 @@
     ],
     [
      "13:30",
-     164748.0
+     164792.0
+    ],
+    [
+     "13:33",
+     164839.0
     ]
    ]
   },
@@ -412,7 +416,11 @@
     ],
     [
      "13:45",
-     5.8447
+     5.8451
+    ],
+    [
+     "13:48",
+     5.8472
     ]
    ]
   },
@@ -1054,6 +1062,20 @@
     "dolar30": 0.01
    },
    {
+    "hora": "12:53",
+    "titulo": "Banco Central vende US$ 2 bilhões em leilão de linha",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZkZWLVZpd1ZiRVh4bjlheEJfaW1Rd1psNkFVQmhLdVFsXzVTb2hDbjg1VHM5TXZIZm40OVFkQzcxVnFXQjd3YjVLWmRmOV9KaGN0UGlDbUVoNnJuRGVNOW5pYlVOQ29seVNqY1B6M0N0UDVWcy04LVczaXpCYlpqZk9fTERnTWdJYmd0SEZ5MklBdFR4bFpyeTdNLTByQ2ppY3FjZlQ3aW9seEtFdWJn?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.38,
+    "dolar30": -0.03
+   },
+   {
     "hora": "12:59",
     "titulo": "Luiz Carlos Trabuco, do Bradesco, entra na lista de cotados para o Ministério da Fazenda",
     "fonte": "Estadão",
@@ -1081,7 +1103,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.14
    },
    {
     "hora": "13:22",
@@ -1094,7 +1116,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.14
    },
    {
     "hora": "13:30",
@@ -1942,6 +1964,18 @@
    "tickers": []
   },
   {
+   "titulo": "Banco Central vende US$ 2 bilhões em leilão de linha",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZkZWLVZpd1ZiRVh4bjlheEJfaW1Rd1psNkFVQmhLdVFsXzVTb2hDbjg1VHM5TXZIZm40OVFkQzcxVnFXQjd3YjVLWmRmOV9KaGN0UGlDbUVoNnJuRGVNOW5pYlVOQ29seVNqY1B6M0N0UDVWcy04LVczaXpCYlpqZk9fTERnTWdJYmd0SEZ5MklBdFR4bFpyeTdNLTByQ2ppY3FjZlQ3aW9seEtFdWJn?oc=5",
+   "publicado": "2026-11-25T12:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Luiz Carlos Trabuco, do Bradesco, entra na lista de cotados para o Ministério da Fazenda",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/luiz-carlos-trabuco-bradesco-cotados-ministerio-da-fazenda/",
@@ -2019,7 +2053,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T13:45-03:00",
+ "atualizado_em": "2026-11-25T13:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2029,7 +2063,6 @@
   "Estadão",
   "Exame",
   "Folha",
-  "InfoMoney",
   "Money Times"
  ],
  "noticias": [
@@ -2131,6 +2164,18 @@
    "tickers": []
   },
   {
+   "titulo": "Banco Central vende US$ 2 bilhões em leilão de linha",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZkZWLVZpd1ZiRVh4bjlheEJfaW1Rd1psNkFVQmhLdVFsXzVTb2hDbjg1VHM5TXZIZm40OVFkQzcxVnFXQjd3YjVLWmRmOV9KaGN0UGlDbUVoNnJuRGVNOW5pYlVOQ29seVNqY1B6M0N0UDVWcy04LVczaXpCYlpqZk9fTERnTWdJYmd0SEZ5MklBdFR4bFpyeTdNLTByQ2ppY3FjZlQ3aW9seEtFdWJn?oc=5",
+   "publicado": "2026-11-25T12:53-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Saiba quais países podem ser tarifados após nova ofensiva comercial dos EUA",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/quais-paises-tarifados-nova-ofensiva-comercial-eua/",
@@ -2149,18 +2194,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa cai pelo 3º pregão seguido e dólar fecha em leve baixa após tocar R$ 6",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMm9kOXBlODlDb2pkY0RhTmVDeUtNMUYtZDZCSVpRbVhOV1BNdzFqQWE4SHJmUUtzYUpjVGNZZE1DaWVkMVc0eTU3RVZGOTVIYTBNQ1Nhek1KajBmQ0lpNnctc0dGYmV4N0ZHRjZxSTNCVjIxcmlFQW03YTFoM3I4UTVIVG91OGNwNnN5UVpBXzVBOFF6N1o1MU8zMFZqcEg4c3pQVVdlM0FZbUdfYmxsU1cwd0JPQTN6LV9SVkYwQ1QzZUFNMmRBR3NKaTNmT1VKQ1ZjeXhidS1BUy1BenJQSDJiQXYtWkp6OGxzTFZfZ0xvdw?oc=5",
-   "publicado": "2026-11-25T12:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -2200,6 +2233,17 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar na escala 6x1 chegou e você vai pagar essa conta",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONEYwRlNLaXVvM2IxcllCUlBXUExmQjFBdENWdWRVcEd4WU9aM0gxVFk2TFYwQnpsNE92Q2ZORzI3TXNTd0tIMktyemU0RmZCRDE3OG05dmJfMXZaRFJ2Q29uTlgzSEhHZDBoTXB5eDFWOUwxRzlYd2w2X25qZ2xEQjhNajE0X0F1S1Y2cmN5QkhtM2llUWNEUnRfWG1ONFVSMGJzQ3VvYTN1SnZ6cW04dEQxSnVLZUJER0ZlTQ?oc=5",
+   "publicado": "2026-11-25T11:54-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar volta a R$ 5,90 com discussão fiscal em foco; Ibovespa sobe",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY2VoQlJkYi1tLWtsZVV0bUVRaXRPdXh3OHB3RzBHMW1mUVdPNmN2S2RDT0ZiVk9JUlZYVUhMQWlON0NHOWpmcHNrcGZ6V0t5M2lNVkJyTV91YXBGd1JiU0dEVmZPa3R6X3ExdGZLN2VEaDhDSFJKRS13UEJUTnktSllONW5leHpkbXMxdDR3dnpiWjE3N0F3ZmVFRDU0Q2pIWktKcHV3?oc=5",
@@ -2207,18 +2251,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Banco Central vende US$ 2 bilhões em leilão em meio à pressão sobre o dólar",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUHhoSmt4LVV4QllRU0d5YTBzUXZJakZobnVRWWtQenZqMTBINUNtMjFNSmRLSldudThmZzZMaktNRk1JalZtSjQzLWpOM3REcTRmMU9kZHVVZ0FnbmE5YWh6VXF2cXRxNnJUaHNURWR1VjlmWmNxYU16dVVTcUpFSGFocUpiWjNhdU54ZDdaMDhicHM4ZkY5d0s1b2hsam42c0VwV0U1UUlTd0ZTX2Jr?oc=5",
-   "publicado": "2026-11-25T11:48-03:00",
-   "impacto": "alto",
-   "ativos": [
     "WDO",
     "DI"
    ],
