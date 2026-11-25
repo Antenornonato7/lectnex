@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:00-03:00",
+  "atualizado_em": "2026-11-25T11:03-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -43,7 +43,11 @@
     ],
     [
      "10:45",
-     165006.0
+     164939.0
+    ],
+    [
+     "10:48",
+     164947.0
     ]
    ]
   },
@@ -148,7 +152,11 @@
     ],
     [
      "11:00",
-     5.9019
+     5.8979
+    ],
+    [
+     "11:03",
+     5.8988
     ]
    ]
   },
@@ -334,7 +342,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.44,
     "dolar30": 0.11
    },
    {
@@ -349,7 +357,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.3
+    "dolar30": 0.23
    },
    {
     "hora": "10:34",
@@ -365,7 +373,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": 0.3
+    "dolar30": 0.23
    },
    {
     "hora": "10:34",
@@ -379,7 +387,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.3
+    "dolar30": 0.23
    },
    {
     "hora": "10:34",
@@ -392,7 +400,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.3
+    "dolar30": 0.23
    },
    {
     "hora": "10:34",
@@ -405,7 +413,34 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.3
+    "dolar30": 0.23
+   },
+   {
+    "hora": "10:36",
+    "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.29
+   },
+   {
+    "hora": "10:40",
+    "titulo": "EUA planejam aumentar tarifas comerciais sobre Brasil, UE, China e Japão",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/eua-planejam-aumentar-tarifas-brasil-ue-china-japao/",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    },
    {
     "hora": "10:43",
@@ -923,6 +958,29 @@
    "tickers": []
   },
   {
+   "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
+   "publicado": "2026-11-25T10:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA planejam aumentar tarifas comerciais sobre Brasil, UE, China e Japão",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/eua-planejam-aumentar-tarifas-brasil-ue-china-japao/",
+   "publicado": "2026-11-25T10:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "EUA propõem novas tarifas sobre 14 parceiros e cita questão industrial",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaHUtWDZsM0c1Ui0zMzVnZGdIaE5JeExFMW90NlJpVFRlRVRqWkM0cWVicDQ4QVBkbzJxQkl4TERRcEZ2U3hkY0xfdG8tVzd2cEFsa3M5ZDUyMVV5WXM2NHhMR2NnbG5sSGppT0YzN3NFQ0hjR1g0Nkxfc1ZNQ3FncHpVZnZhVS1nOC1EWXVPSUJhVXNXZTQ2eTVHQ3Judy1WSzBHdTNsZTMzSl9lLWRpREd2a0tkLXlrcWM0SWh2LWxIbFRoUkNDNA?oc=5",
@@ -961,7 +1019,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:00-03:00",
+ "atualizado_em": "2026-11-25T11:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -999,6 +1057,18 @@
    "tickers": []
   },
   {
+   "titulo": "EUA planejam aumentar tarifas comerciais sobre Brasil, UE, China e Japão",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/eua-planejam-aumentar-tarifas-brasil-ue-china-japao/",
+   "publicado": "2026-11-25T10:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
@@ -1007,6 +1077,17 @@
    "ativos": [
     "WIN",
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
+   "publicado": "2026-11-25T10:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
@@ -1072,7 +1153,7 @@
    "tickers": []
   },
   {
-   "titulo": "EUA anunciam novas tarifas de até 20% sobre China, UE e mais 12 países",
+   "titulo": "Governo Trump propõe novas tarifas de até 20% sobre China, UE e mais 12 países",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml",
    "publicado": "2026-11-25T10:23-03:00",
@@ -1096,18 +1177,6 @@
    "tickers": []
   },
   {
-   "titulo": "Huang violou lei para exportar chips para China, diz líder da oposição no Senado dos EUA",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/huang-violou-lei-para-exportar-chips-para-china-diz-lider-da-oposicao-no-senado-dos-eua.shtml",
-   "publicado": "2026-11-25T10:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Nova pesquisa do IBGE sobre consumo das famílias pode alterar projeções do IPCA",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/nova-pesquisa-ibge-consumo-familias-projecoes-ipca/",
@@ -1126,17 +1195,6 @@
    "impacto": "alto",
    "ativos": [
     "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros futuros longos recuam em linha com exterior, em dia de dados de inflação nos EUA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTXVuV085bW1LdUg2MXJrbzNodUZVY3cyQmw2Q0FJRnRxVjFScTQtM1lZR3A0ZXo2dUUzZlRseDFzc3p6SmpnRURxdnFHLTB2YXc1M0R0SDY0V19PV0h4SkxWLU93NE01QWZ2S2JaTzBtcGsyR3NIQWs5MUZsVllqYl8wMXI0OEQwbk9NS3ZERGdldjUzbWx6aFNOZEtNNmw5VVV0ZXBSaU10YVVXRUxzR1BqR1REeVpvaHJSNWYxYU1DRm5zVHNZOWlYRUUtQ1oxSURFYlhKa1JuTW_SAeoBQVVfeXFMTzRHd1RodlBPSUdXUU5PNjRkaHdKWXdhY195ajNkd3hJWVVCWDZEUTNfVjlFNGFUSHNaUUZ4TTNhT1IxRnQ2UHhqWXJsdjZ1WVN0clJwNDBjbkk0eFQweVpNN0l6Y01kcVdYdmp3MUNINkpCMmdGZ0ZuODRQWHVZRDlsTEdPai10d3F3UVRYVHFIbjh6aFY1bS1HdFloTk5aMFViUjMxX2FQeFk4WjRhbDB1ZTM4TDh2SFB1SVVSaGM5NHJNOXhoQ0FTUEpWS2hSSTFjdmR1c2lfR2pMNUdROWlNRWpVN0x2ZFBn?oc=5",
-   "publicado": "2026-11-25T09:44-03:00",
-   "impacto": "medio",
-   "ativos": [
     "DI"
    ],
    "tickers": []
