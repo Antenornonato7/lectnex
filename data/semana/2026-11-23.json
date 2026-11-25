@@ -118,6 +118,19 @@
   },
   {
    "data": "2026-11-25",
+   "hora": "10h",
+   "pais": "BR",
+   "evento": "Coletiva de Moretti sobre o relatório bimestral (Planejamento)",
+   "importancia": 2,
+   "impacto": {
+    "di": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Relatório reduziu o contingenciamento de 2026 para R$ 12,3 bi e elevou o déficit projetado para R$ 89,3 bi antes dos abatimentos (SBT News).",
+   "tipo": "relatorio-bimestral"
+  },
+  {
+   "data": "2026-11-25",
    "hora": "10h30",
    "pais": "US",
    "evento": "PIB dos EUA — 2ª estimativa (3º tri, anualizado)",
@@ -129,7 +142,7 @@
    },
    "nota": "Primeira estimativa mostrou alta de 3,4% (BEA).",
    "tipo": "pib-eua",
-   "consenso": "3,4%"
+   "consenso": "3,5%"
   },
   {
    "data": "2026-11-25",
@@ -142,7 +155,7 @@
    },
    "nota": "Investimento e demanda da indústria americana.",
    "tipo": "bens-duraveis-eua",
-   "anterior": "1,8%",
+   "anterior": "1,9%",
    "consenso": "0,0%"
   },
   {
@@ -158,7 +171,7 @@
     "di": "volatil",
     "win": "volatil"
    },
-   "nota": "Medida de inflação preferida do Fed, antes da reunião de dezembro; consenso de 0,3% no mês. Sai antes do feriado de Ação de Graças.",
+   "nota": "Medida de inflação preferida do Fed, antes da reunião de dezembro; consenso de 0,3% no mês para o núcleo e de 3,8% em 12 meses para o índice cheio (Dow Jones, via InfoMoney). Sai antes do feriado de Ação de Graças.",
    "tipo": "pce-eua"
   },
   {
@@ -174,6 +187,31 @@
    },
    "nota": "Sai na quarta por causa do feriado de quinta.",
    "tipo": "seguro-desemprego"
+  },
+  {
+   "data": "2026-11-25",
+   "hora": "10h30",
+   "pais": "BR",
+   "evento": "BC: dois leilões de linha de até US$ 2 bi",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Oferta de dólar com compromisso de recompra; ajuda a liquidez do câmbio no fim do mês.",
+   "tipo": "leilao-linha-bcb"
+  },
+  {
+   "data": "2026-11-25",
+   "hora": "15h",
+   "pais": "BR",
+   "evento": "Lula se reúne com a equipe econômica sobre a PEC de gastos",
+   "importancia": 2,
+   "impacto": {
+    "di": "volatil",
+    "wdo": "volatil"
+   },
+   "nota": "Define o alcance da PEC de contenção das despesas obrigatórias (InfoMoney).",
+   "tipo": "pec-gastos"
   },
   {
    "data": "2026-11-25",
@@ -202,18 +240,6 @@
   },
   {
    "data": "2026-11-26",
-   "hora": "08h30",
-   "pais": "BR",
-   "evento": "Transações correntes e IED (out, BCB)",
-   "importancia": 1,
-   "impacto": {
-    "wdo": "volatil"
-   },
-   "nota": "Fluxo externo ajuda a explicar a pressão sobre o real.",
-   "tipo": "transacoes-correntes"
-  },
-  {
-   "data": "2026-11-26",
    "hora": "09h",
    "pais": "BR",
    "evento": "IPCA-15 de novembro (IBGE)",
@@ -223,9 +249,21 @@
     "wdo": "volatil",
     "win": "volatil"
    },
-   "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
+   "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). O Bradesco projeta 0,36% em novembro. Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
    "tipo": "ipca-15",
    "anterior": "0,32% (out)"
+  },
+  {
+   "data": "2026-11-26",
+   "hora": "11h30",
+   "pais": "BR",
+   "evento": "Setor externo: transações correntes e IED (out, BCB)",
+   "importancia": 1,
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Fluxo externo ajuda a explicar a pressão sobre o real.",
+   "tipo": "transacoes-correntes"
   },
   {
    "data": "2026-11-27",
