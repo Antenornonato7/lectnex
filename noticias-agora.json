@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:30-03:00",
+  "atualizado_em": "2026-11-25T11:33-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -67,7 +67,11 @@
     ],
     [
      "11:15",
-     164688.0
+     164474.0
+    ],
+    [
+     "11:18",
+     164484.0
     ]
    ]
   },
@@ -196,7 +200,11 @@
     ],
     [
      "11:30",
-     5.8978
+     5.8963
+    ],
+    [
+     "11:33",
+     5.8998
     ]
    ]
   },
@@ -539,7 +547,7 @@
     "tickers": [
      "VALE3"
     ],
-    "ibov30": -0.1,
+    "ibov30": -0.23,
     "dolar30": 0.2
    },
    {
@@ -557,6 +565,47 @@
     ],
     "ibov30": null,
     "dolar30": -0.02
+   },
+   {
+    "hora": "11:12",
+    "titulo": "Açúcar e aeronaves: como a nova proposta de tarifas dos EUA pode pressionar o Brasil",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/acucar-aeronaves-nova-proposta-tarifas-eua-pressionar-brasil/",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:26",
+    "titulo": "Inflação nos EUA sobe ainda mais em outubro",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-nos-eua-sobe-ainda-mais-em-outubro.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:27",
+    "titulo": "Ações da Embraer caem mais de 6% após anúncio de tarifa dos EUA sobre aviões brasileiros",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-embraer-caem-mais-de-6-apos-anuncio-de-tarifa-dos-eua-sobre-avioes-brasileiros.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [
+     "EMBR3"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1148,6 +1197,41 @@
    "tickers": [
     "EMBR3"
    ]
+  },
+  {
+   "titulo": "Açúcar e aeronaves: como a nova proposta de tarifas dos EUA pode pressionar o Brasil",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/acucar-aeronaves-nova-proposta-tarifas-eua-pressionar-brasil/",
+   "publicado": "2026-11-25T11:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Inflação nos EUA sobe ainda mais em outubro",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-nos-eua-sobe-ainda-mais-em-outubro.shtml",
+   "publicado": "2026-11-25T11:26-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ações da Embraer caem mais de 6% após anúncio de tarifa dos EUA sobre aviões brasileiros",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-embraer-caem-mais-de-6-apos-anuncio-de-tarifa-dos-eua-sobre-avioes-brasileiros.shtml",
+   "publicado": "2026-11-25T11:27-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
   }
  ],
  "enviadas": [
@@ -1177,7 +1261,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:30-03:00",
+ "atualizado_em": "2026-11-25T11:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1204,6 +1288,30 @@
    "tickers": []
   },
   {
+   "titulo": "Ações da Embraer caem mais de 6% após anúncio de tarifa dos EUA sobre aviões brasileiros",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-embraer-caem-mais-de-6-apos-anuncio-de-tarifa-dos-eua-sobre-avioes-brasileiros.shtml",
+   "publicado": "2026-11-25T11:27-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
+   "titulo": "Inflação nos EUA sobe ainda mais em outubro",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-nos-eua-sobe-ainda-mais-em-outubro.shtml",
+   "publicado": "2026-11-25T11:26-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Budget carrier Norse Atlantic falls 78% after warning its finances are ‘critical’ amid soaring fuel costs",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
@@ -1223,6 +1331,17 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Açúcar e aeronaves: como a nova proposta de tarifas dos EUA pode pressionar o Brasil",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/acucar-aeronaves-nova-proposta-tarifas-eua-pressionar-brasil/",
+   "publicado": "2026-11-25T11:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1253,17 +1372,6 @@
    "tickers": [
     "VALE3"
    ]
-  },
-  {
-   "titulo": "EUA propõem novas tarifas sobre 14 parceiros e cita questão industrial",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaHUtWDZsM0c1Ui0zMzVnZGdIaE5JeExFMW90NlJpVFRlRVRqWkM0cWVicDQ4QVBkbzJxQkl4TERRcEZ2U3hkY0xfdG8tVzd2cEFsa3M5ZDUyMVV5WXM2NHhMR2NnbG5sSGppT0YzN3NFQ0hjR1g0Nkxfc1ZNQ3FncHpVZnZhVS1nOC1EWXVPSUJhVXNXZTQ2eTVHQ3Judy1WSzBHdTNsZTMzSl9lLWRpREd2a0tkLXlrcWM0SWh2LWxIbFRoUkNDNA?oc=5",
-   "publicado": "2026-11-25T10:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "EUA planejam aumentar tarifas comerciais sobre Brasil, UE, China e Japão",
@@ -1360,30 +1468,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-leve-alta-em-linha-com-exterior-e-a-espera-de-novos-sinais-sobre-politica-fiscal.shtml",
    "publicado": "2026-11-25T09:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar abre em leve alta em linha com exterior e à espera de novos sinais sobre política fiscal",
-   "fonte": "Folha",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNOXA2VWlkZ2t2Mjc2TXhCRklvS2xnZUZkck5LVFV4S3B2VXF4NVQzaC1RNEJ2ZjFVbm5UQ1MwZG1TWjVORkxsVjFCaUZwcTdfNVpvY0hhNl9QeEgyQ1QwTlVkNFZqNXBJUXZ0ZHpyOFBXTXNqTzRoWF9jNmdhZmpsV1RvZEpmY3FhRWgwVGZ4S2hPREw3X1dVT1JLaVcwcXRmVHljM2RFeG1fZVl4RmRBSFd0VFU2cjZJSS13N2ZWVVY0OVZNY3VBQmY3V29JbEF5VDBGSjktY05FT3lNcFF3?oc=5",
-   "publicado": "2026-11-25T09:56-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe diante de piora em projeção fiscal e inflação dos EUA no radar",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY2VoQlJkYi1tLWtsZVV0bUVRaXRPdXh3OHB3RzBHMW1mUVdPNmN2S2RDT0ZiVk9JUlZYVUhMQWlON0NHOWpmcHNrcGZ6V0t5M2lNVkJyTV91YXBGd1JiU0dEVmZPa3R6X3ExdGZLN2VEaDhDSFJKRS13UEJUTnktSllONW5leHpkbXMxdDR3dnpiWjE3N0F3ZmVFRDU0Q2pIWktKcHV3?oc=5",
-   "publicado": "2026-11-25T09:32-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
