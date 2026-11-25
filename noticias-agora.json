@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:10-03:00",
+  "atualizado_em": "2026-11-25T11:13-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -51,7 +51,11 @@
     ],
     [
      "10:55",
-     164519.0
+     164469.0
+    ],
+    [
+     "10:58",
+     164552.0
     ]
    ]
   },
@@ -164,7 +168,11 @@
     ],
     [
      "11:10",
-     5.9014
+     5.9019
+    ],
+    [
+     "11:13",
+     5.9006
     ]
    ]
   },
@@ -378,7 +386,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.1,
     "dolar30": 0.19
    },
    {
@@ -475,7 +483,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.25
+    "dolar30": 0.26
    },
    {
     "hora": "10:57",
@@ -1083,7 +1091,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:10-03:00",
+ "atualizado_em": "2026-11-25T11:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1098,13 +1106,12 @@
  ],
  "noticias": [
   {
-   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
-   "publicado": "2026-11-25T11:04-03:00",
-   "impacto": "alto",
+   "publicado": "2026-11-25T11:11-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WDO",
     "DI"
    ],
    "tickers": []
