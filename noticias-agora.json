@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:38-03:00",
+  "atualizado_em": "2026-11-25T11:40-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -71,11 +71,11 @@
     ],
     [
      "11:20",
-     164607.0
+     164838.0
     ],
     [
-     "11:23",
-     164671.0
+     "11:25",
+     164721.0
     ]
    ]
   },
@@ -208,11 +208,11 @@
     ],
     [
      "11:35",
-     5.9023
+     5.9016
     ],
     [
-     "11:38",
-     5.9011
+     "11:40",
+     5.9036
     ]
    ]
   },
@@ -571,7 +571,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": 0.12,
+    "ibov30": 0.15,
     "dolar30": -0.02
    },
    {
@@ -585,7 +585,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": -0.02
    },
    {
     "hora": "11:26",
@@ -1297,7 +1297,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:38-03:00",
+ "atualizado_em": "2026-11-25T11:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1361,16 +1361,18 @@
    "tickers": []
   },
   {
-   "titulo": "Budget carrier Norse Atlantic falls 78% after warning its finances are ‘critical’ amid soaring fuel costs",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
-   "publicado": "2026-11-25T11:24-03:00",
-   "impacto": "medio",
+   "titulo": "Dólar cai e Ibovespa sobe com expectativa por medidas fiscais; Embraer tomba com tarifa dos EUA",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
+   "publicado": "2026-11-25T11:20-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
    ],
-   "tickers": []
+   "tickers": [
+    "EMBR3"
+   ]
   },
   {
    "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
@@ -1380,6 +1382,17 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Açúcar e aeronaves: como a nova proposta de tarifas dos EUA pode pressionar o Brasil",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/acucar-aeronaves-nova-proposta-tarifas-eua-pressionar-brasil/",
+   "publicado": "2026-11-25T11:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -1457,19 +1470,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar passa a cair e Ibovespa sobe antes de dado de inflação preferido do Fed",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
-   "publicado": "2026-11-25T10:27-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
     "DI"
    ],
    "tickers": []
