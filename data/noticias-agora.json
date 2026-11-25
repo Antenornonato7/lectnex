@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T17:38-03:00",
+  "atualizado_em": "2026-11-25T18:08-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     166736.0
+     166884.0
     ]
    ]
   },
@@ -556,7 +556,7 @@
     ],
     [
      "13:15",
-     5.863
+     5.8612
     ],
     [
      "13:20",
@@ -764,11 +764,35 @@
     ],
     [
      "17:35",
+     5.8152
+    ],
+    [
+     "17:40",
+     5.8122
+    ],
+    [
+     "17:45",
+     5.819
+    ],
+    [
+     "17:50",
+     5.816
+    ],
+    [
+     "17:55",
      5.8145
     ],
     [
-     "17:38",
-     5.8171
+     "18:00",
+     5.8162
+    ],
+    [
+     "18:05",
+     5.821
+    ],
+    [
+     "18:08",
+     5.8206
     ]
    ]
   },
@@ -1709,6 +1733,19 @@
     "dolar30": -0.04
    },
    {
+    "hora": "15:51",
+    "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/agronegocios/industria-de-insumos-agricolas-ve-custo-de-producao-subir-com-dolar-proximo-a-r-6/",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.3,
+    "dolar30": -0.04
+   },
+   {
     "hora": "16:02",
     "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
     "fonte": "Estadão",
@@ -1777,6 +1814,20 @@
     "dolar30": 0.07
    },
    {
+    "hora": "16:54",
+    "titulo": "Focus aponta piora da inflação e eleva Selic 2027, enquanto PIB perde força; veja as previsões",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbEkyX29sNld6X1NPWGJ6TnBJbmEyaHlSRF9kQklrWWNUQ1hGUWp1eTVFSnJaV3AtMnc2SnVWYzVwR21ZMTVzRjQ1SlR1R1hqOEFncDZ0dHhCSTdINVFGLXNtaHVPT3V4UmxlbHRqQy1RalktalVRYUgyWG5yd0V3eHQ3T0x2R0ktcEppZ1lrcVpWOUhLVjBnMEpsVnJUaWxOYkh6NE5Ca21xSnF1Z2ZOZVdJcFYzTUNENnI4eVZuVVAwYmkzbFVwNk56cTQyNW03YWpacU9venZZMmxmQ3FadEZVejdDMXdpaTlJWDFMMk4?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.07
+   },
+   {
     "hora": "17:00",
     "titulo": "Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
     "fonte": "InfoMoney",
@@ -1801,7 +1852,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.05
    },
    {
     "hora": "17:16",
@@ -1814,72 +1865,40 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": 0.05
+   },
+   {
+    "hora": "17:16",
+    "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira | Finanças",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.05
+   },
+   {
+    "hora": "17:57",
+    "titulo": "Grão Investimentos, do Grupo Primo, lança ETF de Tesouro Prefixado na B3",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/grao-investimentos-do-grupo-primo-lanca-etf-de-tesouro-prefixado-na-b3.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Day Trade hoje (25): Ibovespa pode acelerar queda e dólar testar os 6 mil pontos",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcXJ6ZGZDc09FN1c1WlR6ekprRnpueHhsc3diOWV6djh1Q2dQOEI5VkRfTERfUmlzNERZcUlzWkFDbGFBVVdZZEVtSDY4dFJLTUdPcE1Nc2lmaUZuSDg1X0JUel9DaWlEcncyT3NjRzZIT2hXMlE2UEQ4MHc5MzY5Z3owNWZ6alRN0gGOAUFVX3lxTFBUV3lqc1I5WTdRRlZnZlBMc2pVZUxPTnBqRGRDYzk3RnEwU1o2aURVZ19FVUJLbzRTc3VueUh3di13RjFMWUh6MHVXYlp0VmRaRUxLX2c5OW5WQmJwYnllZHhlNk9Mem1Yb0pkTzF4aUFjSXpwUklUODgtWFh4NS1tblg5ZDQ0ekdMLVhqTGc?oc=5",
-   "publicado": "2026-11-25T07:03-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "PCE e Livro Bege nos EUA mexem com bolsas hoje; Ibovespa em dólar cai nesta quarta-feira (25)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNng1MXlPWGJjMmlvcllCZFU0cDFQWnB6R21HdmtoanVySnB2R0pPMEZ2ck9mb20zcW5XaWtBd3VMSGRzLWJKcVZWRHhSdmRjcVN0T2Y0dUFnb2M0enRkUUVBQVNUekhZNDlqUUhUajVyNlJUbl9CRGJsNEFDSlM2SGoyQUR1dFRyMHJabUczTFZlMWtOU0VKeHdwMEtJYmtvWWRPbTR1VUFMZk8xSm1tYTJrRUdsbkZDQ0kxOUVPaWFwTEdG?oc=5",
-   "publicado": "2026-11-25T07:06-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Minidólar (WDOZ26): pode voltar aos 6 mil pontos? Confira a análise técnica",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSndzODloc3J5dERkVXJYNlBkNDBFOEtfXy1URzR4RkJ3WV83T2hQS0ZUNmNCRUZNWVhwT0dDTXV6Sk82UjZXcEZpSTdlcGxlSjI5elBzajdMWDVWMWYwMThyeExrVmhpOFNEOVhKLVBvY3NoOUhuZThGS0MyWUJnWENFajdxNWQ4aExPZjdR0gGTAUFVX3lxTE5oQjctOXZtd1Yyd1FWZ0JrQjFHN3lyUVBaTEJlMXhsYVh0TjFTX3JBcHdvMmdfR0U4M3ZQMU9jV1E0bWRTeUpGcU9sUkRvSHpGOWhYVUcwREFDZmNBdk9Ld0V2TlJ2cEk3MzdtbERFVGl2R1p1MXdFbXJnWVFPdEtRUWFxMWxyUUxCT1BNZ1VqUURFbw?oc=5",
-   "publicado": "2026-11-25T07:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China rebate EUA sobre ameaça de nova tarifa, vê manipulação e diz que guerra comercial não interessa",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/china-rebate-eua-sobre-ameaca-de-nova-tarifa-ve-manipulacao-e-diz-que-guerra-comercial-nao-interessa.shtml",
-   "publicado": "2026-11-25T07:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe e supera R$ 5,97; Ibovespa hoje repercute inflação preferida do Fed",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
-   "publicado": "2026-11-25T07:59-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "BTG Pactual vê oportunidade em meio a risco fiscal no Brasil e amplia presença regional",
    "fonte": "Bloomberg Línea",
@@ -2699,6 +2718,17 @@
   {
    "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
    "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/agronegocios/industria-de-insumos-agricolas-ve-custo-de-producao-subir-com-dolar-proximo-a-r-6/",
+   "publicado": "2026-11-25T15:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
+   "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcFZBZGlENGNEMjgxeV96UUtyaUh3bzVuNTl0MzZNT0pZUVREdzFIdEwtLW9zZGtiejlpN3pWWVhFV05BdjNZT1RsX2hXZVY3eTRseFN0NFF4dW5weHhNd0tIcVg1NEJNejR3ekN2enAzY3VNbmNfS0xlbjZFcDBETFBsN3U4U3NoY2NKb0lnd25tajYxR1JaZllTVWJsVERCdWRWQ0otR2hBaktPeHVTUGkwdk1ydnotSFBTVVpUdDVDVnlHc0lrSi1QemJqekFNSk5BX2ZR?oc=5",
    "publicado": "2026-11-25T16:02-03:00",
    "impacto": "medio",
@@ -2755,6 +2785,18 @@
    "tickers": []
   },
   {
+   "titulo": "Focus aponta piora da inflação e eleva Selic 2027, enquanto PIB perde força; veja as previsões",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbEkyX29sNld6X1NPWGJ6TnBJbmEyaHlSRF9kQklrWWNUQ1hGUWp1eTVFSnJaV3AtMnc2SnVWYzVwR21ZMTVzRjQ1SlR1R1hqOEFncDZ0dHhCSTdINVFGLXNtaHVPT3V4UmxlbHRqQy1RalktalVRYUgyWG5yd0V3eHQ3T0x2R0ktcEppZ1lrcVpWOUhLVjBnMEpsVnJUaWxOYkh6NE5Ca21xSnF1Z2ZOZVdJcFYzTUNENnI4eVZuVVAwYmkzbFVwNk56cTQyNW03YWpacU9venZZMmxmQ3FadEZVejdDMXdpaTlJWDFMMk4?oc=5",
+   "publicado": "2026-11-25T16:54-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFJyR1U2SGtpajlvRm9WWk0xSUNLUVdrNTFyUFRoUDliZTNYbmlLbGd1VFRrVUQ1M1JPRHVoQ3FpZXRCNUlqUmx1cmZDMzdZWlRnWHdfTzVrTkpoTzRxVnRyVGl2aE0yS3I4enNJUjhvQUk2X1RwSXY1c3VzeThVR25Va25obDdpd3JwdUVjSFJOT3dxRUJMNjZacHl6LU5ndF9TME91MW1nYWlyOFRsY1dxeUwtM0JjaW5TTVZJSWN4QdIBxwFBVV95cUxQaXNsQUpiTFFmQWRqRVp1aER6YU14OTFEdHZxZnZ2TjhicWFwckwwYUNNTno1cTZlaFpnZWZvaGV6MkJGWjF3TXdzejRMR3FmZFRqazhmUi1sMkpOSW1ReXlaNU0zdHJkNFpRY2s0Yi0wc1VWWlcyU1kzTUcwRXZ6eVRHNmp2M19Bb004WU1yTjBtemxyLVBHbUFTZVA0aHRlUFlYOU9HTnhKdVE4QlhFeHVrT1d0OXJtXzJuc0VXOEdjRUdnQkYw?oc=5",
@@ -2782,6 +2824,42 @@
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE0gHfAUFVX3lxTFBZc2E1MUY2aWVqTWtsMzNSbEIzYnRLR3NTRjgySFE1bkduQi1kd3cxZTNQOVJkSWRuQnhWSmVFR1ltcW1YU3YzTGt6cDROU3F3ekc2MklwMXVuUHV1cjlSUU5xNlhNZE56NS01STBNV2g4T2N6aDkyak9hS2Riek1BcjAyekVkYVdRcnRRQ0VHTjl1WUNuNktRT2VrR25hRTlVWHVYczVmbGxPTEx6Vi1CUlRHZmh4TFgwME1kWjBiQnJPNG9vaXY1NzlLbUJydVA1bzNNY1VsYWRQS3p0R2c?oc=5",
    "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira | Finanças",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Grão Investimentos, do Grupo Primo, lança ETF de Tesouro Prefixado na B3",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/grao-investimentos-do-grupo-primo-lanca-etf-de-tesouro-prefixado-na-b3.shtml",
+   "publicado": "2026-11-25T17:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Dólar a R$ 6 e juros futuros em 15%: o que Lula precisa fazer para acalmar o mercado",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVmM0V1ZfWFJyM2JjRGRDYy1JQ3FFN2dXRkdkTXdxb3NLbW9pSmVsVDVSNWJPek5PcmhZa1p0T25wb3p3eGpGUkZELXJVcDE3SVNXc3NwR0NfRlQ2Y3Y3RVVpZnJ4ZGJJZzdYTGpQY1pWUVRDNXBiUjItbXVHYmpENXB3dnlwam1DM050Wi1HbnNuRzY4UHJBSUFyTDhpRmlQSDZJRktTSzR1bzNVZWFHRmpB?oc=5",
+   "publicado": "2026-11-25T18:05-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -2816,7 +2894,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T17:38-03:00",
+ "atualizado_em": "2026-11-25T18:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2832,9 +2910,57 @@
  ],
  "noticias": [
   {
-   "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira",
+   "titulo": "Dólar a R$ 6 e juros futuros em 15%: o que Lula precisa fazer para acalmar o mercado",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVmM0V1ZfWFJyM2JjRGRDYy1JQ3FFN2dXRkdkTXdxb3NLbW9pSmVsVDVSNWJPek5PcmhZa1p0T25wb3p3eGpGUkZELXJVcDE3SVNXc3NwR0NfRlQ2Y3Y3RVVpZnJ4ZGJJZzdYTGpQY1pWUVRDNXBiUjItbXVHYmpENXB3dnlwam1DM050Wi1HbnNuRzY4UHJBSUFyTDhpRmlQSDZJRktTSzR1bzNVZWFHRmpB?oc=5",
+   "publicado": "2026-11-25T18:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+   "publicado": "2026-11-25T18:02-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Grão Investimentos, do Grupo Primo, lança ETF de Tesouro Prefixado na B3",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/grao-investimentos-do-grupo-primo-lanca-etf-de-tesouro-prefixado-na-b3.shtml",
+   "publicado": "2026-11-25T17:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa registra forte alta de mais de 1% com alívio no dólar e juros futuros",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nRkd2YjktU0paekNSX2psWmJxbzJaSVpxdFdrTDVxOHJXclk2TE1BQlotMS1VYjh4eHRnaVBETko5dVprdjVvYVJ4anBOSFJzNVVxZ05VY3ZaSFBhY2FDWDNYdG1UM2F0cXlV?oc=5",
+   "publicado": "2026-11-25T17:48-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira | Finanças",
    "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE0gHfAUFVX3lxTFBZc2E1MUY2aWVqTWtsMzNSbEIzYnRLR3NTRjgySFE1bkduQi1kd3cxZTNQOVJkSWRuQnhWSmVFR1ltcW1YU3YzTGt6cDROU3F3ekc2MklwMXVuUHV1cjlSUU5xNlhNZE56NS01STBNV2g4T2N6aDkyak9hS2Riek1BcjAyekVkYVdRcnRRQ0VHTjl1WUNuNktRT2VrR25hRTlVWHVYczVmbGxPTEx6Vi1CUlRHZmh4TFgwME1kWjBiQnJPNG9vaXY1NzlLbUJydVA1bzNNY1VsYWRQS3p0R2c?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE?oc=5",
    "publicado": "2026-11-25T17:16-03:00",
    "impacto": "medio",
    "ativos": [
@@ -2901,18 +3027,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa registra forte alta de mais de 1% com alívo no dólar e juros futuros",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nRkd2YjktU0paekNSX2psWmJxbzJaSVpxdFdrTDVxOHJXclk2TE1BQlotMS1VYjh4eHRnaVBETko5dVprdjVvYVJ4anBOSFJzNVVxZ05VY3ZaSFBhY2FDWDNYdG1UM2F0cXlV?oc=5",
-   "publicado": "2026-11-25T16:18-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Prefixados do Tesouro recuam forte e IPCA+ sobe em meio a rumores sobre a Fazenda",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYnFreE1HaVk0Z3JEWUtIbUN3UUZvcEpQSVpjTjdDcy1Vb09vVVNCRm9tQmUxVXR3NndUZEYxS1hWeU5oY1cwLUJLS3VYUUNPZV9Ec1ZCekxxTkdzWGhVc3RzcUdWRTF6S0FlZzBFZkwteG1sbTdSeU04VXh4cG5RWDBmZHRxMHA4UURSdlFhbWXSAZYBQVVfeXFMTWI0UTlyaWFQamFTN1ZaaFAyUVpmRmFoYzFDdjlTckJEanR6NHJCdUtFam5mQl84cVZCUHd1OVhUTWw5WjVTcUtmNjV1VDZzcE14SVY3bHItbm04LVpmWXVSMmV0ZTJIclhfcTFRbnc2YjBnR2ZVYTBXOHFicDBsZGYyVW4ydkRmSnFXZVlKMHQyS1d3UUVn?oc=5",
@@ -2936,85 +3050,13 @@
    "tickers": []
   },
   {
-   "titulo": "Itaú BBA aponta quem pode entrar, sair e ganhar espaço na nova carteira do Ibovespa",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWldwR2ozVmxPTWppUGxGUHVfV1hVTGNEX0poYlYtbGtsX3hsYk5NbjA4Q182V3J0Xzh2NmpNajZyX3VGTXBpcXQ5Yl9VSjBtNzdSb21ZZDBxQjc3ZEFoVXpsWmdLZ1hMNktRVFdLY002YkN2MDdheXh6OWlqT3ZCclNRNzIxemJYNExaMDlCNTlqcG9US0lIb1FzLXpEaGl0Z3dJVnpOQ0o5U0ZwS3VyV1puem1vbmVuUVZ1eldXUXgya293NzhWazM0Q3Z4M0hTZUhhejAtaDZCUUhOWXduM0lETQ?oc=5",
-   "publicado": "2026-11-25T16:07-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
-  {
-   "titulo": "Dólar hoje cai mais de 1,5%, a R$ 5,82, com especulações sobre ministro da Fazenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcEpha3pvUHNvaFpaWF9BZlhGQkZoWVF6aDZlaWE5ODhMc3NJc2l1RDJkQ2wyT0JoclJ2d2ZmRV96OVA3MDlacEJyNVRGbVhnNk9qM0xDTXIyOUotbmQzZ3ZRSHdFZ1owS3FfRXhyaXp0b1BESTFoV3V3Yk9CTlRvc01Qc1VNb3lVWVpMWWllSU5WaW01RUJXUjNGczLSAaIBQVVfeXFMUF9PSWJHUGdUWFBkR09VOFRibjlTX1RKQjZoV1JULUliV1dFd0tjN2xOLXBuVXpEQUNUMFd4bXFyeEphaDYyUGdpU3NtNDJzdUstTzZWYWtTMnVQdnJfdzJta2pSVUZ0bVlnVzV2dkYtU1dvSjVpQ3JBQ2lZRE12SjRrZDlRWjZxallhT3dhM0M2cWVad1oxOHdfcG1WZ0JWaWt3?oc=5",
-   "publicado": "2026-11-25T16:05-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcFZBZGlENGNEMjgxeV96UUtyaUh3bzVuNTl0MzZNT0pZUVREdzFIdEwtLW9zZGtiejlpN3pWWVhFV05BdjNZT1RsX2hXZVY3eTRseFN0NFF4dW5weHhNd0tIcVg1NEJNejR3ekN2enAzY3VNbmNfS0xlbjZFcDBETFBsN3U4U3NoY2NKb0lnd25tajYxR1JaZllTVWJsVERCdWRWQ0otR2hBaktPeHVTUGkwdk1ydnotSFBTVVpUdDVDVnlHc0lrSi1QemJqekFNSk5BX2ZR?oc=5",
-   "publicado": "2026-11-25T16:02-03:00",
+   "url": "https://www.estadao.com.br/economia/agronegocios/industria-de-insumos-agricolas-ve-custo-de-producao-subir-com-dolar-proximo-a-r-6/",
+   "publicado": "2026-11-25T15:51-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj0gHkAUFVX3lxTE1GTEFxaWhVZmtILWFGZkRELUpfdDAyQ3dYbENpUDhYVTJoQ3ZZdW82ZGJCR1lUeXkzTHV2aERpMmdwRXBtQ1BpSzVLZ203RWJPLThoeFdPdUdGODJMUXEtekhfS29icVZDYWRNN2p3SW5yTFZRVUVuUGVQa1hJcUpIQllGVVpZRlpDQXBfZW4wbVhBdDEyQnItd1VpTy1PY3FkVHVVaFQ5ei1NMUszVHg0aVZzYjRqcmZfaVo5bWJSaE5hdTB6Tl9WSXgtT25WaVBSQ1RYU3JXY1ZFLXJzT2ctMzhNRQ?oc=5",
-   "publicado": "2026-11-25T15:39-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
-  },
-  {
-   "titulo": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
-   "publicado": "2026-11-25T15:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "União Europeia rejeita premissa dos EUA para tarifas e pede respeito a limite de 15%",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/uniao-europeia-premissa-eua-tarifas-respeito-limite/",
-   "publicado": "2026-11-25T15:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Juros forçados para baixo podem acabar em recessão, com mais inflação e pobreza",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/juros-forcados-para-baixo-podem-acabar-em-recessao-com-mais-inflacao-e-pobreza.shtml",
-   "publicado": "2026-11-25T14:51-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
