@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:13-03:00",
+  "atualizado_em": "2026-11-25T11:15-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -51,11 +51,11 @@
     ],
     [
      "10:55",
-     164469.0
+     164477.0
     ],
     [
-     "10:58",
-     164552.0
+     "11:00",
+     164482.0
     ]
    ]
   },
@@ -168,11 +168,11 @@
     ],
     [
      "11:10",
-     5.9019
+     5.9046
     ],
     [
-     "11:13",
-     5.9006
+     "11:15",
+     5.9083
     ]
    ]
   },
@@ -386,7 +386,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.1,
+    "ibov30": -0.14,
     "dolar30": 0.19
    },
    {
@@ -402,7 +402,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": null,
+    "ibov30": -0.14,
     "dolar30": 0.19
    },
    {
@@ -416,7 +416,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.14,
     "dolar30": 0.19
    },
    {
@@ -429,7 +429,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.14,
     "dolar30": 0.19
    },
    {
@@ -442,7 +442,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.14,
     "dolar30": 0.19
    },
    {
@@ -483,7 +483,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.26
+    "dolar30": 0.3
    },
    {
     "hora": "10:57",
@@ -1091,7 +1091,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:13-03:00",
+ "atualizado_em": "2026-11-25T11:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1214,6 +1214,17 @@
    "tickers": []
   },
   {
+   "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQUZvQ2lmYVhfLXY3eGVDWm9hcVp4UWRUQTU5eFIzYXJ3WXN1VktSS211dDZvc1p2SlZ1SWloU09RR29ObnBCanM0S01LUk12eU5KRW5PNXJWQ0xFc18tY1BGQjUtUzBVeUNuQjFkaE9WeGlaTm5lNFRyd3A4RVpabEpHQVVKYXdqVjlHUzFFckdfeGs2aU5vb0N3SlJua2ZVTUhNal8zT1NDZ1dnOVY0Zi1uOFlBS09IN3FHRFVkaFlneEh4dk01ZGZyOGI0Wl9MSlBGM0N0LXREeUotSHdF?oc=5",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar passa a cair e Ibovespa sobe antes de dado de inflação preferido do Fed",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
@@ -1235,18 +1246,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "The Fed is likely to raise rates in December. What it means for your holiday spending",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/fed-december-rate-hike-consumer-impact.html",
-   "publicado": "2026-11-25T10:15-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
