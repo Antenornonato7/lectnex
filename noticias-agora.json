@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T15:55-03:00",
+  "atualizado_em": "2026-11-25T15:58-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -279,7 +279,11 @@
     ],
     [
      "15:40",
-     166877.0
+     166940.0
+    ],
+    [
+     "15:43",
+     167004.0
     ]
    ]
   },
@@ -620,7 +624,11 @@
     ],
     [
      "15:55",
-     5.8156
+     5.8136
+    ],
+    [
+     "15:58",
+     5.8169
     ]
    ]
   },
@@ -1485,7 +1493,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.23,
     "dolar30": -0.04
    },
    {
@@ -1515,23 +1523,26 @@
     ],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "15:39",
+    "titulo": "Investir no exterior: orientação do Itaú sobre dólar",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Ibovespa hoje acompanha inflação preferida do Fed e novas projeções para as contas públicas",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQczJFalltWGczRWxSOU5fUExWM2tkLXkyRU94Z0FTT1MzUFE4cEZ0ZkFUVjVCSFNDWV9tVTh1ZjI2M2pzR3BlblRtaUxPMkVxYkFjVlRyQi1zLVpEOXZSLWJfQTFfbUp1Z3ZJcUFtN010SkFZYVZVcENvXzZnVlYzSWxScy1MRUZScXR4enc5d05kUHpmd2ZoWGRoaEhLakFmR0p1THN2N0VxUFZKUGRreDlyUTAwQldFaC03NVFUNmczeU81cHdmeHpUS1NJUzVZNUd4THhxSnlLVk9oX1B3cXcxcGtBb3ZVY1oxZTJnVQ?oc=5",
-   "publicado": "2026-11-25T05:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "CEO da Latam vê demanda estável e mantém planos com jatos da Embraer no Brasil",
    "fonte": "Bloomberg Línea",
@@ -2486,6 +2497,20 @@
    "tickers": [
     "ITUB4"
    ]
+  },
+  {
+   "titulo": "Investir no exterior: orientação do Itaú sobre dólar",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj?oc=5",
+   "publicado": "2026-11-25T15:39-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
   }
  ],
  "enviadas": [
@@ -2515,7 +2540,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T15:55-03:00",
+ "atualizado_em": "2026-11-25T15:58-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2529,13 +2554,14 @@
  ],
  "noticias": [
   {
-   "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
+   "titulo": "Investir no exterior: orientação do Itaú sobre dólar",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj0gHkAUFVX3lxTE1GTEFxaWhVZmtILWFGZkRELUpfdDAyQ3dYbENpUDhYVTJoQ3ZZdW82ZGJCR1lUeXkzTHV2aERpMmdwRXBtQ1BpSzVLZ203RWJPLThoeFdPdUdGODJMUXEtekhfS29icVZDYWRNN2p3SW5yTFZRVUVuUGVQa1hJcUpIQllGVVpZRlpDQXBfZW4wbVhBdDEyQnItd1VpTy1PY3FkVHVVaFQ5ei1NMUszVHg0aVZzYjRqcmZfaVo5bWJSaE5hdTB6Tl9WSXgtT25WaVBSQ1RYU3JXY1ZFLXJzT2ctMzhNRQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj?oc=5",
    "publicado": "2026-11-25T15:39-03:00",
-   "impacto": "medio",
+   "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WIN",
+    "WDO"
    ],
    "tickers": [
     "ITUB4"
@@ -2648,6 +2674,21 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-25T14:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Mais S&P 500 e menos Ibovespa: a estratégia da Itaú Asset para os investimentos em 2027",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRXZPNmhjajB0bzNfcEQ3dWd5bkoxSmh2QW96eEtDSXotN0hVZ3NCZHJMZ293QVNkaUNwc3U3Z2VWdTJ5V0xoazNwSERvLVdWdkp6U1d4NVFTVlRJYnIyaHktLUxPTnBORlRhVWtaS3E1eWVKS3NCWnF3X3VvQVlqYl85VTZUaGE0Wmo3S3I1NFl1azRCaFF5cEZlVklaa1lCRGItQ0ZzdHR1Sy03ZmRISXpUbFBweEROMkZfQWZB?oc=5",
@@ -2697,17 +2738,6 @@
    "tickers": [
     "BBDC4"
    ]
-  },
-  {
-   "titulo": "Governo Lula vê novo tarifaço dos EUA como pressão para impor condições em negociação",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/governo-lula-novo-tarifaco-eua-pressao-impor-condicoes-negociacao/",
-   "publicado": "2026-11-25T13:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
