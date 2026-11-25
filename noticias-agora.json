@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T10:00-03:00",
+  "atualizado_em": "2026-11-25T10:03-03:00",
   "dolar": {
    "anterior": 5.8933,
    "pontos": [
@@ -55,7 +55,11 @@
     ],
     [
      "10:00",
-     5.9049
+     5.9009
+    ],
+    [
+     "10:03",
+     5.9024
     ]
    ]
   },
@@ -123,7 +127,7 @@
      "DI"
     ],
     "tickers": [],
-    "dolar30": -0.27
+    "dolar30": -0.33
    },
    {
     "hora": "09:34",
@@ -137,7 +141,7 @@
     "tickers": [
      "SUZB3"
     ],
-    "dolar30": -0.27
+    "dolar30": -0.33
    },
    {
     "hora": "09:44",
@@ -577,7 +581,7 @@
    "em": "2026-11-25T13:00:37+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T10:00-03:00",
+ "atualizado_em": "2026-11-25T10:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -758,17 +762,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Governo libera R$ 3,43 bilhões do Orçamento após ajuste fiscal",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-libera-r-343-bilhoes-do-orcamento-apos-ajuste-fiscal",
-   "publicado": "2026-11-25T07:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   }
