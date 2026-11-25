@@ -1724,31 +1724,6 @@
  },
  "hoje": [
   {
-   "titulo": "Commercial real estate activity falls 14% in October, as interest rates rise",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
-   "publicado": "2026-11-24T10:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe e dólar cai após aprovação do pacote fiscal na Câmara; 5 coisas para saber antes de investir hoje (24)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMGNpcFZKWTd3aktGWTBkSV96d3FOVUd4anY4X01NdDBtbk0zVU95Q0NiMktEV0g0TXRxWE90TzZYZFFMUHowaThwekUwY2FlY0t4ZnNmT0NhQWM5QWtMSF9QaDBvdk1yZ1dDTy1kNlo4eEdKLXFjXzFpUUp2QnFfc1JzNmx4SG1kSzBLbjd5YW9NM3ZVQ1hRbFoybzliODRNRUk3Mzk4OFN6MVdrOXZHTFgwb2VlYjY5UFdXeVVtT2RubW9UUUljdlpkLUhTaVU2TktyUTZ0OS1DNHBlTXVYaGFsQQ?oc=5",
-   "publicado": "2026-11-24T10:25-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
@@ -2662,6 +2637,31 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Contenção de gastos cai para R$ 12,6 bilhões após pacote fiscal, mas previsão de déficit sobe",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/contencao-de-gastos-no-orcamento-cai-de-r-161-bi-para-r-126-bi-apos-aprovacao-de-pacote-fiscal/",
+   "publicado": "2026-11-24T23:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Petrobras diversifica investimentos com etanol de milho e vê Brent estável no longo prazo",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/petrobras-diversifica-investimentos-com-etanol-de-milho-e-ve-brent-estavel-no-longo-prazo/",
+   "publicado": "2026-11-24T23:32-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -2691,7 +2691,7 @@
    "em": "2026-11-24T13:38:32+00:00"
   }
  ],
- "atualizado_em": "2026-11-24T23:38-03:00",
+ "atualizado_em": "2026-11-24T23:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2701,6 +2701,31 @@
   "Folha"
  ],
  "noticias": [
+  {
+   "titulo": "Petrobras diversifica investimentos com etanol de milho e vê Brent estável no longo prazo",
+   "fonte": "Bloomberg Línea",
+   "url": "https://www.bloomberglinea.com.br/negocios/petrobras-diversifica-investimentos-com-etanol-de-milho-e-ve-brent-estavel-no-longo-prazo/",
+   "publicado": "2026-11-24T23:32-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Contenção de gastos cai para R$ 12,6 bilhões após pacote fiscal, mas previsão de déficit sobe",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/contencao-de-gastos-no-orcamento-cai-de-r-161-bi-para-r-126-bi-apos-aprovacao-de-pacote-fiscal/",
+   "publicado": "2026-11-24T23:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Governo Lula libera R$ 3,4 bi do Orçamento após excluir mais R$ 10,5 bi da meta fiscal de 2026",
    "fonte": "Folha",
