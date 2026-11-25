@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T13:03-03:00",
+  "atualizado_em": "2026-11-25T13:08-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -139,11 +139,15 @@
     ],
     [
      "12:45",
-     165031.0
+     165262.0
     ],
     [
-     "12:48",
-     165027.0
+     "12:50",
+     165161.0
+    ],
+    [
+     "12:53",
+     165123.0
     ]
    ]
   },
@@ -344,11 +348,15 @@
     ],
     [
      "13:00",
-     5.8517
+     5.8625
     ],
     [
-     "13:03",
-     5.857
+     "13:05",
+     5.8654
+    ],
+    [
+     "13:08",
+     5.859
     ]
    ]
   },
@@ -905,7 +913,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.14,
+    "ibov30": 0.28,
     "dolar30": -0.24
    },
    {
@@ -919,7 +927,35 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.12
+    "dolar30": 0.06
+   },
+   {
+    "hora": "12:36",
+    "titulo": "Saiba quais países podem ser tarifados após nova ofensiva comercial dos EUA",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/quais-paises-tarifados-nova-ofensiva-comercial-eua/",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.11
+   },
+   {
+    "hora": "12:59",
+    "titulo": "Luiz Carlos Trabuco, do Bradesco, entra na lista de cotados para o Ministério da Fazenda",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/luiz-carlos-trabuco-bradesco-cotados-ministerio-da-fazenda/",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1692,6 +1728,30 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Saiba quais países podem ser tarifados após nova ofensiva comercial dos EUA",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/quais-paises-tarifados-nova-ofensiva-comercial-eua/",
+   "publicado": "2026-11-25T12:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Luiz Carlos Trabuco, do Bradesco, entra na lista de cotados para o Ministério da Fazenda",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/luiz-carlos-trabuco-bradesco-cotados-ministerio-da-fazenda/",
+   "publicado": "2026-11-25T12:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   }
  ],
  "enviadas": [
@@ -1721,7 +1781,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T13:03-03:00",
+ "atualizado_em": "2026-11-25T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1748,6 +1808,31 @@
    "tickers": []
   },
   {
+   "titulo": "Investors led by U.S. billionaire Todd Boehly to buy Lukoil's oil and gas assets outside Russia, sources say",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/investors-led-by-todd-boehly-to-buy-lukoil-oil-and-gas-assets-outside-russia.html",
+   "publicado": "2026-11-25T13:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Luiz Carlos Trabuco, do Bradesco, entra na lista de cotados para o Ministério da Fazenda",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/luiz-carlos-trabuco-bradesco-cotados-ministerio-da-fazenda/",
+   "publicado": "2026-11-25T12:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
    "titulo": "China e EUA realizam primeiras reuniões de grupo para debater agricultura",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468071",
@@ -1755,6 +1840,17 @@
    "impacto": "medio",
    "ativos": [
     "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Saiba quais países podem ser tarifados após nova ofensiva comercial dos EUA",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/quais-paises-tarifados-nova-ofensiva-comercial-eua/",
+   "publicado": "2026-11-25T12:36-03:00",
+   "impacto": "medio",
+   "ativos": [
     "WDO"
    ],
    "tickers": []
@@ -1863,40 +1959,6 @@
    "publicado": "2026-11-25T11:26-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
-   "publicado": "2026-11-25T11:18-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Açúcar e aeronaves: como a nova proposta de tarifas dos EUA pode pressionar o Brasil",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/acucar-aeronaves-nova-proposta-tarifas-eua-pressionar-brasil/",
-   "publicado": "2026-11-25T11:12-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa sobe de olho na PEC fiscal e no PCE dos EUA; veja os destaques desta quarta-feira (25)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0ySlZrRWtZNGNtT1ZmR1QyU0YxX3VhWVZoNWpZanhhbmx4WDdCLW1VMWUyRGxEMXdJMm5Zbk9rSENJT0s3Z0hlcGE2S01WSVFqYnlQZExTVlgwOXN1eG5WQ29LY0RFRXRv?oc=5",
-   "publicado": "2026-11-25T11:04-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "DI"
    ],
    "tickers": []
