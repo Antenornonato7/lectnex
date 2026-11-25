@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:58-03:00",
+  "atualizado_em": "2026-11-25T12:00-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -87,11 +87,11 @@
     ],
     [
      "11:40",
-     164214.0
+     164142.0
     ],
     [
-     "11:43",
-     164318.0
+     "11:45",
+     164150.0
     ]
    ]
   },
@@ -240,11 +240,11 @@
     ],
     [
      "11:55",
-     5.8826
+     5.883
     ],
     [
-     "11:58",
-     5.8817
+     "12:00",
+     5.8823
     ]
    ]
   },
@@ -662,7 +662,7 @@
     "tickers": [
      "AZUL4"
     ],
-    "ibov30": -0.33,
+    "ibov30": -0.38,
     "dolar30": 0.11
    },
    {
@@ -675,7 +675,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.33,
+    "ibov30": -0.38,
     "dolar30": 0.11
    },
    {
@@ -689,7 +689,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.25
+    "dolar30": -0.24
    },
    {
     "hora": "11:27",
@@ -704,7 +704,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": -0.25
+    "dolar30": -0.24
    },
    {
     "hora": "11:30",
@@ -719,7 +719,7 @@
      "EMBJ3"
     ],
     "ibov30": null,
-    "dolar30": -0.31
+    "dolar30": -0.3
    },
    {
     "hora": "11:47",
@@ -758,6 +758,20 @@
     "impacto": "alto",
     "ativos": [
      "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:58",
+    "titulo": "Ibovespa sobe levemente com mercado monitorando nova PEC fiscal e inflação dos EUA",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nRkd2YjktU0paekNSX2psWmJxbzJaSVpxdFdrTDVxOHJXclk2TE1BQlotMS1VYjh4eHRnaVBETko5dVprdjVvYVJ4anBOSFJzNVVxZ05VY3ZaSFBhY2FDWDNYdG1UM2F0cXlV?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
      "DI"
     ],
     "tickers": [],
@@ -1490,6 +1504,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe levemente com mercado monitorando nova PEC fiscal e inflação dos EUA",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nRkd2YjktU0paekNSX2psWmJxbzJaSVpxdFdrTDVxOHJXclk2TE1BQlotMS1VYjh4eHRnaVBETko5dVprdjVvYVJ4anBOSFJzNVVxZ05VY3ZaSFBhY2FDWDNYdG1UM2F0cXlV?oc=5",
+   "publicado": "2026-11-25T11:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1519,7 +1545,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:58-03:00",
+ "atualizado_em": "2026-11-25T12:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1527,12 +1553,25 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa sobe levemente com mercado monitorando nova PEC fiscal e inflação dos EUA",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nRkd2YjktU0paekNSX2psWmJxbzJaSVpxdFdrTDVxOHJXclk2TE1BQlotMS1VYjh4eHRnaVBETko5dVprdjVvYVJ4anBOSFJzNVVxZ05VY3ZaSFBhY2FDWDNYdG1UM2F0cXlV?oc=5",
+   "publicado": "2026-11-25T11:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Banco Central vende US$ 2 bilhões em leilão em meio à pressão sobre o dólar",
    "fonte": "Money Times",
@@ -1672,18 +1711,6 @@
    "tickers": []
   },
   {
-   "titulo": "Trump propõe novas tarifas contra 14 parceiros comerciais; China será a mais afetada",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaW9FWXJEQjU0dVpzS3hCS2MteEtDMEV1ckdoMnZzQzJNYUZZZmhNT0tLUFVKNW91UkxLVnpOX19QVTVSd3hwSlNGQTRoQ2pCZWxQdUZJUmJuUTFBWWRRZVVYMjFxYVI2ZTRmMDB4X3BzbFkwZ0NUOUlncUlpRVV3ZTJkN2M4QmU1ai1LLWRZWXdkSEt3bWFRV2dSSnlacU0wWWQ5NXU2VE8xWmdEYmwybDR5WUdDZHloRy1v0gHAAUFVX3lxTE1ncUJ4blRUV25mQnBPYWRLYVZ0aTlOd0JhZ1lxMjV4ZHQySllUNm1BLWtSM090T1JYcGxwTWJJeXFNTEdZRmNEYlpydG53VFZOdVhaNXNhQXRRX0NQQ1JiRzZydFJhYkQxbDZ0ZmtDOWs4b3ZCc3hPSDB1NGV3dHdlWm01eVIzQm1QWXV6SVBZSWlBcHlMb1ZTWHBVYW9WakpxRlZQVmJqQ1FZa21DUlh2MU9aRzAzT3VhVFAwaE16VA?oc=5",
-   "publicado": "2026-11-25T10:35-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Após proposta tarifária dos EUA, papéis da Embraer despencam no Ibovespa",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUjJ2VnhHeFRpMHV1SVFVVTBBSmFLUnhKUUczTDNsS25QRFltS0E0OEtnOUt0cEt4aDBwM3gzb3RuT01jYUxzSmQwY2lGRUxBRXRKVjhTYzNRSS1rcFZsZEN6Y2lFWllFMWZCendJZGFvZVFtX3FJVHlNTzZJbjVRNEE3dHZhcmlFaTJreFZkNmpnLTExUzFTY215V0NsbkxBaGEzNmFIckYwTDhBSGd3d21UWHBIWHhsUVRHQ25mVWU0UQ?oc=5",
@@ -1710,19 +1737,16 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar forte favorece Vale e CSN Mineração, mas pressiona Usiminas, diz Morgan Stanley",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQYXlZdzl5anZQRmlzenVrZVg0a2MyRHFabVk3a3BNbjFJOEJTMC1JTG9ibnJ5c0g1RmtxbDUxWU93dV8wM1pvOVpLMFZpbEtUVEFZWXQ3T0Q0SmZQU29vaExiWkZ6T0Rsa1VKeGJPZEFnTlMwZVhna1ZnOS1LUlZPMURkSkpkYVpzRVVYRVAzSnRCU3Z0enJ2QzFGcEFFcllZMWJrbktPbWNxX0ZZVjVaMW8wOHFDZU4xTV9YLVpzVEVMUFIt0gHEAUFVX3lxTFBheVl3OXlqdlBGaXN6dWtlWDRrYzJEcVptWTdrcE1uMUk4QlMwLUlMb2JucnlzSDVGa3FsNTFZT3d1XzAzWm85WkswVmlsS1RUQVlZdDdPRDRKZlBTb29oTGJaRnpPRGxrVUp4Yk9kQWdOUzBlWGdrVmc5LUtSVk8xRGRKSmRhWnNFVVhFUDNKdEJTdnR6cnZDMUZwQUVyWVkxYmtuS09tY3FfRllWNVoxbzA4cUNlTjFNX1gtWnNURUxQUi0?oc=5",
-   "publicado": "2026-11-25T10:05-03:00",
+   "titulo": "Governo Trump propõe novas tarifas de até 20% sobre China, UE e mais 12 países",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml",
+   "publicado": "2026-11-25T10:23-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
    ],
-   "tickers": [
-    "CMIN3",
-    "VALE3"
-   ]
+   "tickers": []
   },
   {
    "titulo": "Dólar cai e Bolsa avança com inflação dos EUA no radar, expectativa por sinais fiscais e elevação de tarifas de Trump",
