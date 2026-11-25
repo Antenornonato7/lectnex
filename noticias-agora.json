@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T17:15-03:00",
+  "atualizado_em": "2026-11-25T17:18-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     166648.0
+     166651.0
     ]
    ]
   },
@@ -748,7 +748,11 @@
     ],
     [
      "17:15",
-     5.8108
+     5.8153
+    ],
+    [
+     "17:18",
+     5.8153
     ]
    ]
   },
@@ -1754,7 +1758,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.06
    },
    {
     "hora": "17:00",
@@ -1769,23 +1773,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:16",
+    "titulo": "Dólar recua para os R$ 5,80 com expectativas sobre equipe econômica de Lula",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnd3NExpWVVncXhIVGhOYnM2TjZzTDN0NllGZS1rQkFIa2tpdnJCNDhKckxmOWJTVUJONXBWQzNyeFJ6MnNjeEJoZE5GNEJBUFdFX2NQN0lpdWJjSlVoa1J5WEVGTHJ1ZXB4SlpORUJOb3pXbUZBdy0yRDZYZUFRZjhRMURZbHB5eE9xZXBkcTBsZWlHUlE3Vzk0elN2VHFiRTl6ZFFXZFZUSjV0Y0E?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Política de preços da Petrobras segue adequada, mas empresa ainda avalia ajuste",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSWZuLTQtdkd6OG1HRExza3UyQ1h6cm93VmxWeDlKXzNOREdULXJONEZJUWtHYTNaWVFWTHB1RzhsWmNNMjZmLUtxcGpqUzREWjhibEN1VGFjVldJLWVuMjR4QXdPXzdJR0JtWXlQN1J2TW1NOHFRMGtDWlBlelZYLTlfNjRPQVhjM3d0WlRCVnRMaVg0UVRYTmZKVWRPdm43YnVuYVRtV21jcG43M0publA2R1hVU3ZT0gG-AUFVX3lxTE0zSzV0TUdMemFxSVZDaGI1WlR6Z3JpallxSWh2bG9zMUVpTDlRLWt1R3Q0WnM4MENwekhRdG8yMU55S1daNGxHVnZjU1VMWlB5ZF8tRnRIUVktUXl4X1BnOWRfX2hNNmU0UExmN182T0Z0YldyRXVWaS1zS3ZQRWVaRFkwUkQxQjRWdkVNM2R6bnM0ZlRLTTRiTnZKWmlGeUVuem94QlQtemNWLWw5V3ZManpYYzg1Z1lqMzY0Z2c?oc=5",
-   "publicado": "2026-11-25T07:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
   {
    "titulo": "Governo libera R$ 3,43 bilhões do Orçamento após ajuste fiscal",
    "fonte": "Agência Brasil",
@@ -2743,6 +2747,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar recua para os R$ 5,80 com expectativas sobre equipe econômica de Lula",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnd3NExpWVVncXhIVGhOYnM2TjZzTDN0NllGZS1rQkFIa2tpdnJCNDhKckxmOWJTVUJONXBWQzNyeFJ6MnNjeEJoZE5GNEJBUFdFX2NQN0lpdWJjSlVoa1J5WEVGTHJ1ZXB4SlpORUJOb3pXbUZBdy0yRDZYZUFRZjhRMURZbHB5eE9xZXBkcTBsZWlHUlE3Vzk0elN2VHFiRTl6ZFFXZFZUSjV0Y0E?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2772,7 +2787,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T17:15-03:00",
+ "atualizado_em": "2026-11-25T17:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2786,6 +2801,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar recua para os R$ 5,80 com expectativas sobre equipe econômica de Lula",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTnd3NExpWVVncXhIVGhOYnM2TjZzTDN0NllGZS1rQkFIa2tpdnJCNDhKckxmOWJTVUJONXBWQzNyeFJ6MnNjeEJoZE5GNEJBUFdFX2NQN0lpdWJjSlVoa1J5WEVGTHJ1ZXB4SlpORUJOb3pXbUZBdy0yRDZYZUFRZjhRMURZbHB5eE9xZXBkcTBsZWlHUlE3Vzk0elN2VHFiRTl6ZFFXZFZUSjV0Y0E?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
    "fonte": "InfoMoney",
@@ -2894,7 +2920,7 @@
   {
    "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj0gHkAUFVX3lxTE1GTEFxaWhVZmtILWFGZkRELUpfdDAyQ3dYbENpUDhYVTJoQ3ZZdW82ZGJCR1lUeXkzTHV2aERpMmdwRXBtQ1BpSzVLZ203RWJPLThoeFdPdUdGODJMUXEtekhfS29icVZDYWRNN2p3SW5yTFZRVUVuUGVQa1hJcUpIQllGVVpZRlpDQXBfZW4wbVhBdDEyQnItd1VpTy1PY3FkVHVVaFQ5ei1NMUszVHg0aVZzYjRqcmZfaVo5bWJSaE5hdTB6Tl9WSXgtT25WaVBSQ1RYU3JXY1ZFLXJzT2ctMzhNRQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRkxBcWloVWZrSC1hRmZERC1KX3QwMkN3WGxDaVA4WFUyaEN2WXVvNmRiQkdZVHl5M0x1dmhEaTJncEVwbUNQaUs1S2dtN0ViTy04aHhXT3VHRjgyTFFxLXpIX0tvYnFWQ2FkTTdqd0luckxWUVVFblBlUGtYSXFKSEJZRlVaWUZaQ0FwX2VuMG1YQXQxMkJyLXdVaU8tT2NxZFR1VWhUOXotTTFLM1R4NGlWc2I0anJmX2laOW1iUmhOYXUwek5fVkl4LU9uVmlQUkNUWFNyV2NWRS1yc09nLTM4TUXSAeQBQVVfeXFMTUZMQXFpaFVma0gtYUZmREQtSl90MDJDd1hsQ2lQOFhVMmhDdll1bzZkYkJHWVR5eTNMdXZoRGkyZ3BFcG1DUGlLNUtnbTdFYk8tOGh4V091R0Y4MkxRcS16SF9Lb2JxVkNhZE03andJbnJMVlFVRW5QZVBrWElxSkhCWUZVWllGWkNBcF9lbjBtWEF0MTJCci13VWlPLU9jcWRUdVVoVDl6LU0xSzNUeDRpVnNiNGpyZl9pWjltYlJoTmF1MHpOX1ZJeC1PblZpUFJDVFhTcldjVkUtcnNPZy0zOE1F?oc=5",
    "publicado": "2026-11-25T15:39-03:00",
    "impacto": "medio",
    "ativos": [
@@ -2909,17 +2935,6 @@
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUUFyX0Y4MUNiNkh5X2poQU5JZGpHeVdac3FMbFBidElBcGw4Q3BvOVNqbGh0VEJ0Sk0xaGo1SEhrZkg4X2pUdkVDalJfc3ZTM2hGYy0xT3cxcHRMMnkwZ2pXUkNKX3pWUVZwWXpiYXFGQTBBM2JkTnk1QWFpOU1CVVdWOEtUZzk3VXJLN3B2WXk3WHJFRTVLZnlpUF9rWFplTWhxN1FaWXdScDhnbUM0TWtaNzgtWnFaVExzZ2lTWXBkRFgtMHFheGwxUktySGx1amtsMjNXN1NHYmlsTjhYWUNQdjBNTnZXV18wOTVFZnZuUlE?oc=5",
    "publicado": "2026-11-25T15:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsas da Europa fecham em queda com nova proposta tarifária dos EUA",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSENCT282TWg5ZG1lU1Z1TU1rWUxYRHVNRUp6YjRuSFBEbUVyMjV3b243MlRlSkdxYngtZmpLNHFxcXdGcHhfQ2p0OHFaY1h6eUZBYlAteU1QM29uLUpCaFI5dG01eGVIdEQ0NTBRZUllbU5FRmFSMlREZW1Qd0dpdnBuQlRLbTdocGxMOWVSYW1mdWtRM0ZkMUkzaU5sRDRSbW4zZjdjZGQxWThuTzMxaEhlUDdHT1c5dkN1U0xINzk0XzJWcTZ3eVc5N0V2aHJ2Nmc?oc=5",
-   "publicado": "2026-11-25T15:18-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
