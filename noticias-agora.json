@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T10:37-03:00",
+  "atualizado_em": "2026-11-25T10:40-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -23,11 +23,11 @@
     ],
     [
      "10:20",
-     164042.0
+     164227.0
     ],
     [
-     "10:22",
-     164187.0
+     "10:25",
+     164195.0
     ]
    ]
   },
@@ -112,11 +112,11 @@
     ],
     [
      "10:35",
-     5.8822
+     5.8815
     ],
     [
-     "10:37",
-     5.8812
+     "10:40",
+     5.8824
     ]
    ]
   },
@@ -245,7 +245,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.29
+    "dolar30": -0.27
    },
    {
     "hora": "10:13",
@@ -258,7 +258,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.27
    },
    {
     "hora": "10:15",
@@ -272,7 +272,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.25
    },
    {
     "hora": "10:23",
@@ -327,6 +327,19 @@
     "ativos": [
      "WIN",
      "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:34",
+    "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-realizara-audiencia-em-janeiro-sobre-proposta-de-alteracao-das-tarifas-aplicadas-ao-brasil.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -796,14 +809,20 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-realizara-audiencia-em-janeiro-sobre-proposta-de-alteracao-das-tarifas-aplicadas-ao-brasil.shtml",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
-  {
-   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
-   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
-   "em": "2026-11-24T13:38:32+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcXJ6ZGZDc09FN1c1WlR6ekprRnpueHhsc3diOWV6djh1Q2dQOEI5VkRfTERfUmlzNERZcUlzWkFDbGFBVVdZZEVtSDY4dFJLTUdPcE1Nc2lmaUZuSDg1X0JUel9DaWlEcncyT3NjRzZIT2hXMlE2UEQ4MHc5MzY5Z3owNWZ6alRN0gGOAUFVX3lxTFBUV3lqc1I5WTdRRlZnZlBMc2pVZUxPTnBqRGRDYzk3RnEwU1o2aURVZ19FVUJLbzRTc3VueUh3di13RjFMWUh6MHVXYlp0VmRaRUxLX2c5OW5WQmJwYnllZHhlNk9Mem1Yb0pkTzF4aUFjSXpwUklUODgtWFh4NS1tblg5ZDQ0ekdMLVhqTGc?oc=5",
    "titulo": "Day Trade hoje (25): Ibovespa pode acelerar queda e dólar testar os 6 mil pontos",
@@ -830,7 +849,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T10:37-03:00",
+ "atualizado_em": "2026-11-25T10:40-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -848,11 +867,23 @@
    "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
-   "publicado": "2026-11-25T10:34-03:00",
+   "publicado": "2026-11-25T10:39-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+   "publicado": "2026-11-25T10:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
@@ -878,6 +909,30 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-realizara-audiencia-em-janeiro-sobre-proposta-de-alteracao-das-tarifas-aplicadas-ao-brasil.shtml",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar passa a cair e Ibovespa sobe antes de dado de inflação preferido do Fed",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
+   "publicado": "2026-11-25T10:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
     "DI"
    ],
    "tickers": []
@@ -926,18 +981,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-   "publicado": "2026-11-25T10:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -1009,31 +1052,6 @@
    "ativos": [
     "WIN",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe e supera R$ 5,97; Ibovespa hoje repercute inflação preferida do Fed",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
-   "publicado": "2026-11-25T09:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China rebate EUA sobre ameaça de nova tarifa, vê manipulação e diz que guerra comercial não interessa",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/china-rebate-eua-sobre-ameaca-de-nova-tarifa-ve-manipulacao-e-diz-que-guerra-comercial-nao-interessa.shtml",
-   "publicado": "2026-11-25T07:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
