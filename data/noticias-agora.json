@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T10:37-03:00",
+  "atualizado_em": "2026-11-25T11:08-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -23,11 +23,35 @@
     ],
     [
      "10:20",
-     164042.0
+     164227.0
     ],
     [
-     "10:22",
-     164187.0
+     "10:25",
+     164396.0
+    ],
+    [
+     "10:30",
+     164715.0
+    ],
+    [
+     "10:35",
+     165034.0
+    ],
+    [
+     "10:40",
+     165037.0
+    ],
+    [
+     "10:45",
+     164848.0
+    ],
+    [
+     "10:50",
+     164738.0
+    ],
+    [
+     "10:53",
+     164639.0
     ]
    ]
   },
@@ -112,11 +136,35 @@
     ],
     [
      "10:35",
-     5.8822
+     5.8815
     ],
     [
-     "10:37",
-     5.8812
+     "10:40",
+     5.8867
+    ],
+    [
+     "10:45",
+     5.8909
+    ],
+    [
+     "10:50",
+     5.8934
+    ],
+    [
+     "10:55",
+     5.8983
+    ],
+    [
+     "11:00",
+     5.8956
+    ],
+    [
+     "11:05",
+     5.8984
+    ],
+    [
+     "11:08",
+     5.8961
     ]
    ]
   },
@@ -234,6 +282,23 @@
     "dolar30": -0.21
    },
    {
+    "hora": "10:05",
+    "titulo": "Dólar forte favorece Vale e CSN Mineração, mas pressiona Usiminas, diz Morgan Stanley",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPR1Bud1dhd3JrSXFueU5ScUNTQWNxZEhmLTZNZk5kclZGVzJ2OTA1WUIwUVp5VHV2RTdIVWdOMm9MRTVfbzJqUUpLc2FvWnhDY19zMzFmeHdUREJmZU5SWHlzc1drZ0NQZW0tbWlLblJwWUtXYnlHQThaMXJCOEg3ZXpReTVFRGNJZngwWWZBcU1YUjFaMmIzaUhVd0FQcTBvbENxc1BrM2NsSzZMUENKQldYY0FvcUQ2a0hxQTJvTdIBxAFBVV95cUxQYXlZdzl5anZQRmlzenVrZVg0a2MyRHFabVk3a3BNbjFJOEJTMC1JTG9ibnJ5c0g1RmtxbDUxWU93dV8wM1pvOVpLMFZpbEtUVEFZWXQ3T0Q0SmZQU29vaExiWkZ6T0Rsa1VKeGJPZEFnTlMwZVhna1ZnOS1LUlZPMURkSkpkYVpzRVVYRVAzSnRCU3Z0enJ2QzFGcEFFcllZMWJrbktPbWNxX0ZZVjVaMW8wOHFDZU4xTV9YLVpzVEVMUFIt?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "CMIN3",
+     "VALE3"
+    ],
+    "ibov30": 0.01,
+    "dolar30": -0.23
+   },
+   {
     "hora": "10:11",
     "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
     "fonte": "CNBC",
@@ -244,8 +309,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": -0.29
+    "ibov30": 0.26,
+    "dolar30": -0.2
    },
    {
     "hora": "10:13",
@@ -257,8 +322,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.26,
+    "dolar30": -0.2
    },
    {
     "hora": "10:15",
@@ -271,8 +336,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.52,
+    "dolar30": -0.18
    },
    {
     "hora": "10:23",
@@ -285,8 +350,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.31,
+    "dolar30": 0.11
    },
    {
     "hora": "10:31",
@@ -300,7 +365,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.19
    },
    {
     "hora": "10:34",
@@ -316,7 +381,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.19
    },
    {
     "hora": "10:34",
@@ -329,6 +394,88 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.19
+   },
+   {
+    "hora": "10:34",
+    "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-realizara-audiencia-em-janeiro-sobre-proposta-de-alteracao-das-tarifas-aplicadas-ao-brasil.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.19
+   },
+   {
+    "hora": "10:34",
+    "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+    "fonte": "Folha",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQUZvQ2lmYVhfLXY3eGVDWm9hcVp4UWRUQTU5eFIzYXJ3WXN1VktSS211dDZvc1p2SlZ1SWloU09RR29ObnBCanM0S01LUk12eU5KRW5PNXJWQ0xFc18tY1BGQjUtUzBVeUNuQjFkaE9WeGlaTm5lNFRyd3A4RVpabEpHQVVKYXdqVjlHUzFFckdfeGs2aU5vb0N3SlJua2ZVTUhNal8zT1NDZ1dnOVY0Zi1uOFlBS09IN3FHRFVkaFlneEh4dk01ZGZyOGI0Wl9MSlBGM0N0LXREeUotSHdF?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.19
+   },
+   {
+    "hora": "10:36",
+    "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.29
+   },
+   {
+    "hora": "10:40",
+    "titulo": "EUA planejam aumentar tarifas comerciais sobre Brasil, UE, China e Japão",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/eua-planejam-aumentar-tarifas-brasil-ue-china-japao/",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.2
+   },
+   {
+    "hora": "10:43",
+    "titulo": "EUA propõem novas tarifas sobre 14 parceiros e cita questão industrial",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaHUtWDZsM0c1Ui0zMzVnZGdIaE5JeExFMW90NlJpVFRlRVRqWkM0cWVicDQ4QVBkbzJxQkl4TERRcEZ2U3hkY0xfdG8tVzd2cEFsa3M5ZDUyMVV5WXM2NHhMR2NnbG5sSGppT0YzN3NFQ0hjR1g0Nkxfc1ZNQ3FncHpVZnZhVS1nOC1EWXVPSUJhVXNXZTQ2eTVHQ3Judy1WSzBHdTNsZTMzSl9lLWRpREd2a0tkLXlrcWM0SWh2LWxIbFRoUkNDNA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.16
+   },
+   {
+    "hora": "10:57",
+    "titulo": "Ações da Embraer tombam após anúncio de novas tarifas dos EUA e lideram perdas do Ibovespa",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdWFXV3FteHJyck0wNXgxTTRUMDJ4UHkzRl9OZWx2cGdXODNrazF4ZEMxVXBneC1XS1hGbnItTm9Vcnl1WjVaSDdBa1pGSlhGVjVBeWdvZFhJb00xOW5mU1hBN05YQ3U4bFUxU2xZd3B0WTN3TmdyMjdUb0cwODU0LXpLS0RMWGh3a3ZMZGhuN2pOMFVfQ0ZTZ3JkMHVKUVRndWZaem4wNG5yeDlDQjByOXpSb3FfTzJhX3Y3dzkzWWljTHVrcnNpUHpKY1drbGtnYXVYeGlsOFRWa25V0gHrAUFVX3lxTE9WaFJrTUhzRmMyNjlfbUlzUU9Mang4RDNfa1pnN25XcTY4MDhNQU5ocVVfQnBaVTRVay1RMEhLdEZHNEFTRjdjMjk2RGxJalBjTlZlUHp1Y2ttQ0w5STg1eFludkVNdkwxUjhoSk9UYkI4WlNUZFhlZWNJM2YyQnFRamVydldtNzR5d3hueDNESjV3U0dpblo5OFk0eG1iSHNnTHZBVVN3WDJjQkVUdXBrZm1SM1NsRUZGclVJaEtYdmJDbGZsQWx0dWtUUnd2eGhzSnEtUEIzN2pWZ2NNN2hVXzRMSTBRejlTSFk?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "EMBR3"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -713,6 +860,21 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar forte favorece Vale e CSN Mineração, mas pressiona Usiminas, diz Morgan Stanley",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPR1Bud1dhd3JrSXFueU5ScUNTQWNxZEhmLTZNZk5kclZGVzJ2OTA1WUIwUVp5VHV2RTdIVWdOMm9MRTVfbzJqUUpLc2FvWnhDY19zMzFmeHdUREJmZU5SWHlzc1drZ0NQZW0tbWlLblJwWUtXYnlHQThaMXJCOEg3ZXpReTVFRGNJZngwWWZBcU1YUjFaMmIzaUhVd0FQcTBvbENxc1BrM2NsSzZMUENKQldYY0FvcUQ2a0hxQTJvTdIBxAFBVV95cUxQYXlZdzl5anZQRmlzenVrZVg0a2MyRHFabVk3a3BNbjFJOEJTMC1JTG9ibnJ5c0g1RmtxbDUxWU93dV8wM1pvOVpLMFZpbEtUVEFZWXQ3T0Q0SmZQU29vaExiWkZ6T0Rsa1VKeGJPZEFnTlMwZVhna1ZnOS1LUlZPMURkSkpkYVpzRVVYRVAzSnRCU3Z0enJ2QzFGcEFFcllZMWJrbktPbWNxX0ZZVjVaMW8wOHFDZU4xTV9YLVpzVEVMUFIt?oc=5",
+   "publicado": "2026-11-25T10:05-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "CMIN3",
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
@@ -796,14 +958,79 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-realizara-audiencia-em-janeiro-sobre-proposta-de-alteracao-das-tarifas-aplicadas-ao-brasil.shtml",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQUZvQ2lmYVhfLXY3eGVDWm9hcVp4UWRUQTU5eFIzYXJ3WXN1VktSS211dDZvc1p2SlZ1SWloU09RR29ObnBCanM0S01LUk12eU5KRW5PNXJWQ0xFc18tY1BGQjUtUzBVeUNuQjFkaE9WeGlaTm5lNFRyd3A4RVpabEpHQVVKYXdqVjlHUzFFckdfeGs2aU5vb0N3SlJua2ZVTUhNal8zT1NDZ1dnOVY0Zi1uOFlBS09IN3FHRFVkaFlneEh4dk01ZGZyOGI0Wl9MSlBGM0N0LXREeUotSHdF?oc=5",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
+   "publicado": "2026-11-25T10:36-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA planejam aumentar tarifas comerciais sobre Brasil, UE, China e Japão",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/eua-planejam-aumentar-tarifas-brasil-ue-china-japao/",
+   "publicado": "2026-11-25T10:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA propõem novas tarifas sobre 14 parceiros e cita questão industrial",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaHUtWDZsM0c1Ui0zMzVnZGdIaE5JeExFMW90NlJpVFRlRVRqWkM0cWVicDQ4QVBkbzJxQkl4TERRcEZ2U3hkY0xfdG8tVzd2cEFsa3M5ZDUyMVV5WXM2NHhMR2NnbG5sSGppT0YzN3NFQ0hjR1g0Nkxfc1ZNQ3FncHpVZnZhVS1nOC1EWXVPSUJhVXNXZTQ2eTVHQ3Judy1WSzBHdTNsZTMzSl9lLWRpREd2a0tkLXlrcWM0SWh2LWxIbFRoUkNDNA?oc=5",
+   "publicado": "2026-11-25T10:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ações da Embraer tombam após anúncio de novas tarifas dos EUA e lideram perdas do Ibovespa",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdWFXV3FteHJyck0wNXgxTTRUMDJ4UHkzRl9OZWx2cGdXODNrazF4ZEMxVXBneC1XS1hGbnItTm9Vcnl1WjVaSDdBa1pGSlhGVjVBeWdvZFhJb00xOW5mU1hBN05YQ3U4bFUxU2xZd3B0WTN3TmdyMjdUb0cwODU0LXpLS0RMWGh3a3ZMZGhuN2pOMFVfQ0ZTZ3JkMHVKUVRndWZaem4wNG5yeDlDQjByOXpSb3FfTzJhX3Y3dzkzWWljTHVrcnNpUHpKY1drbGtnYXVYeGlsOFRWa25V0gHrAUFVX3lxTE9WaFJrTUhzRmMyNjlfbUlzUU9Mang4RDNfa1pnN25XcTY4MDhNQU5ocVVfQnBaVTRVay1RMEhLdEZHNEFTRjdjMjk2RGxJalBjTlZlUHp1Y2ttQ0w5STg1eFludkVNdkwxUjhoSk9UYkI4WlNUZFhlZWNJM2YyQnFRamVydldtNzR5d3hueDNESjV3U0dpblo5OFk0eG1iSHNnTHZBVVN3WDJjQkVUdXBrZm1SM1NsRUZGclVJaEtYdmJDbGZsQWx0dWtUUnd2eGhzSnEtUEIzN2pWZ2NNN2hVXzRMSTBRejlTSFk?oc=5",
+   "publicado": "2026-11-25T10:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
   }
  ],
  "enviadas": [
-  {
-   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
-   "titulo": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
-   "em": "2026-11-24T13:38:32+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcXJ6ZGZDc09FN1c1WlR6ekprRnpueHhsc3diOWV6djh1Q2dQOEI5VkRfTERfUmlzNERZcUlzWkFDbGFBVVdZZEVtSDY4dFJLTUdPcE1Nc2lmaUZuSDg1X0JUel9DaWlEcncyT3NjRzZIT2hXMlE2UEQ4MHc5MzY5Z3owNWZ6alRN0gGOAUFVX3lxTFBUV3lqc1I5WTdRRlZnZlBMc2pVZUxPTnBqRGRDYzk3RnEwU1o2aURVZ19FVUJLbzRTc3VueUh3di13RjFMWUh6MHVXYlp0VmRaRUxLX2c5OW5WQmJwYnllZHhlNk9Mem1Yb0pkTzF4aUFjSXpwUklUODgtWFh4NS1tblg5ZDQ0ekdMLVhqTGc?oc=5",
    "titulo": "Day Trade hoje (25): Ibovespa pode acelerar queda e dólar testar os 6 mil pontos",
@@ -830,7 +1057,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T10:37-03:00",
+ "atualizado_em": "2026-11-25T11:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -848,10 +1075,70 @@
    "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
-   "publicado": "2026-11-25T10:34-03:00",
+   "publicado": "2026-11-25T11:04-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ações da Embraer tombam após anúncio de novas tarifas dos EUA e lideram perdas do Ibovespa",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdWFXV3FteHJyck0wNXgxTTRUMDJ4UHkzRl9OZWx2cGdXODNrazF4ZEMxVXBneC1XS1hGbnItTm9Vcnl1WjVaSDdBa1pGSlhGVjVBeWdvZFhJb00xOW5mU1hBN05YQ3U4bFUxU2xZd3B0WTN3TmdyMjdUb0cwODU0LXpLS0RMWGh3a3ZMZGhuN2pOMFVfQ0ZTZ3JkMHVKUVRndWZaem4wNG5yeDlDQjByOXpSb3FfTzJhX3Y3dzkzWWljTHVrcnNpUHpKY1drbGtnYXVYeGlsOFRWa25V0gHrAUFVX3lxTE9WaFJrTUhzRmMyNjlfbUlzUU9Mang4RDNfa1pnN25XcTY4MDhNQU5ocVVfQnBaVTRVay1RMEhLdEZHNEFTRjdjMjk2RGxJalBjTlZlUHp1Y2ttQ0w5STg1eFludkVNdkwxUjhoSk9UYkI4WlNUZFhlZWNJM2YyQnFRamVydldtNzR5d3hueDNESjV3U0dpblo5OFk0eG1iSHNnTHZBVVN3WDJjQkVUdXBrZm1SM1NsRUZGclVJaEtYdmJDbGZsQWx0dWtUUnd2eGhzSnEtUEIzN2pWZ2NNN2hVXzRMSTBRejlTSFk?oc=5",
+   "publicado": "2026-11-25T10:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
+   "titulo": "EUA propõem novas tarifas sobre 14 parceiros e cita questão industrial",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaHUtWDZsM0c1Ui0zMzVnZGdIaE5JeExFMW90NlJpVFRlRVRqWkM0cWVicDQ4QVBkbzJxQkl4TERRcEZ2U3hkY0xfdG8tVzd2cEFsa3M5ZDUyMVV5WXM2NHhMR2NnbG5sSGppT0YzN3NFQ0hjR1g0Nkxfc1ZNQ3FncHpVZnZhVS1nOC1EWXVPSUJhVXNXZTQ2eTVHQ3Judy1WSzBHdTNsZTMzSl9lLWRpREd2a0tkLXlrcWM0SWh2LWxIbFRoUkNDNA?oc=5",
+   "publicado": "2026-11-25T10:43-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA planejam aumentar tarifas comerciais sobre Brasil, UE, China e Japão",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/eua-planejam-aumentar-tarifas-brasil-ue-china-japao/",
+   "publicado": "2026-11-25T10:40-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+   "publicado": "2026-11-25T10:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
+   "publicado": "2026-11-25T10:36-03:00",
+   "impacto": "medio",
+   "ativos": [
     "DI"
    ],
    "tickers": []
@@ -883,7 +1170,42 @@
    "tickers": []
   },
   {
-   "titulo": "EUA anunciam novas tarifas de até 20% sobre China, UE e mais 14 países",
+   "titulo": "EUA propõem elevar tarifas sobre importações do Brasil, incluindo taxa de 10% sobre aviões",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-realizara-audiencia-em-janeiro-sobre-proposta-de-alteracao-das-tarifas-aplicadas-ao-brasil.shtml",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA realizará audiência em janeiro sobre proposta de alteração das tarifas aplicadas ao Brasil",
+   "fonte": "Folha",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQUZvQ2lmYVhfLXY3eGVDWm9hcVp4UWRUQTU5eFIzYXJ3WXN1VktSS211dDZvc1p2SlZ1SWloU09RR29ObnBCanM0S01LUk12eU5KRW5PNXJWQ0xFc18tY1BGQjUtUzBVeUNuQjFkaE9WeGlaTm5lNFRyd3A4RVpabEpHQVVKYXdqVjlHUzFFckdfeGs2aU5vb0N3SlJua2ZVTUhNal8zT1NDZ1dnOVY0Zi1uOFlBS09IN3FHRFVkaFlneEh4dk01ZGZyOGI0Wl9MSlBGM0N0LXREeUotSHdF?oc=5",
+   "publicado": "2026-11-25T10:34-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar passa a cair e Ibovespa sobe antes de dado de inflação preferido do Fed",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
+   "publicado": "2026-11-25T10:27-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo Trump propõe novas tarifas de até 20% sobre China, UE e mais 12 países",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-anunciam-novas-tarifas-de-ate-20-sobre-china-ue-e-mais-14-paises.shtml",
    "publicado": "2026-11-25T10:23-03:00",
@@ -907,41 +1229,6 @@
    "tickers": []
   },
   {
-   "titulo": "Huang violou lei para exportar chips para China, diz líder da oposição no Senado dos EUA",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/ia/2026/11/huang-violou-lei-para-exportar-chips-para-china-diz-lider-da-oposicao-no-senado-dos-eua.shtml",
-   "publicado": "2026-11-25T10:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Nova pesquisa do IBGE sobre consumo das famílias pode alterar projeções do IPCA",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/nova-pesquisa-ibge-consumo-familias-projecoes-ipca/",
-   "publicado": "2026-11-25T10:13-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-   "publicado": "2026-11-25T10:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar abre em leve alta em linha com exterior e à espera de novos sinais sobre política fiscal",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-leve-alta-em-linha-com-exterior-e-a-espera-de-novos-sinais-sobre-politica-fiscal.shtml",
@@ -952,30 +1239,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Juros futuros longos recuam em linha com exterior, em dia de dados de inflação nos EUA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTXVuV085bW1LdUg2MXJrbzNodUZVY3cyQmw2Q0FJRnRxVjFScTQtM1lZR3A0ZXo2dUUzZlRseDFzc3p6SmpnRURxdnFHLTB2YXc1M0R0SDY0V19PV0h4SkxWLU93NE01QWZ2S2JaTzBtcGsyR3NIQWs5MUZsVllqYl8wMXI0OEQwbk9NS3ZERGdldjUzbWx6aFNOZEtNNmw5VVV0ZXBSaU10YVVXRUxzR1BqR1REeVpvaHJSNWYxYU1DRm5zVHNZOWlYRUUtQ1oxSURFYlhKa1JuTW_SAeoBQVVfeXFMTzRHd1RodlBPSUdXUU5PNjRkaHdKWXdhY195ajNkd3hJWVVCWDZEUTNfVjlFNGFUSHNaUUZ4TTNhT1IxRnQ2UHhqWXJsdjZ1WVN0clJwNDBjbkk0eFQweVpNN0l6Y01kcVdYdmp3MUNINkpCMmdGZ0ZuODRQWHVZRDlsTEdPai10d3F3UVRYVHFIbjh6aFY1bS1HdFloTk5aMFViUjMxX2FQeFk4WjRhbDB1ZTM4TDh2SFB1SVVSaGM5NHJNOXhoQ0FTUEpWS2hSSTFjdmR1c2lfR2pMNUdROWlNRWpVN0x2ZFBn?oc=5",
-   "publicado": "2026-11-25T09:44-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Suzano (SUZB3) sobe 30% em meio à queda do Ibovespa; ainda há espaço para alta?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVF9hVlRydWFyb1VGM2ZYNFFFLTNlYlNOZ1FQa3YzSVdJTnB1RU9sODlkeWkwdzR2SjhkZTlXT2RMYUw4OEpka2RHenNLa0JyQzA3LWotbWVBcTFOZUFkMy1RdFRORXJZbWxOQV83ckgySFRzeDBDWi1la2pqdEZDeTdPTEJSanBnTTgxNEpPVlB6UEFKTkNVNThIcEx1ekhTMGpVdkp3SV9Wa04zNXU3WNIBtgFBVV95cUxQdnl6YnZMLVFsQmMtZVpNVGowWmlTVndHNHByYzNUZGJlXzlFZm5CdFp1V05TTjQwYnlObWZlOGVhTXh5alo0NTVrMGxqU1NTaUhya0VTNTRjeXlKbmdtN1FjTHdxU24xQnh0Slg0Rl95ZklKa1BvczlweHBMWUxjNkhoTUlfSWc0YnNxYXQ4R0NaUDkzQUNLZldNNHMzZ1ktckNKNVZFWldQR1R4UzVzeTVEZmc0UQ?oc=5",
-   "publicado": "2026-11-25T09:34-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "SUZB3"
-   ]
   },
   {
    "titulo": "Dólar sobe diante de piora em projeção fiscal e inflação dos EUA no radar",
@@ -990,17 +1253,6 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar à vista avança em linha com exterior em véspera de feriado nos EUA",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTjVHejdoX0hDWVRWaXZDZW5YNl9yZGtLamJfR1U4Wk1GenB4b04zM2ozTFBUbm9kakN6d1FUZjFQZWxHdVlJTkVfZnJtWlNUUG1sTXRoVE41ZWZCeFhaZVI4Z0RnbVU1U1dQcHpXTTMweVRKbEEzSlRTM2ZCbTV5eW5VVHlQWWlBdm55cVhWbTNlWF95TnpFWXVzT3NmZEMzM1V5NUdhVDlKSDR5TlRmTjhIazJrWGpVRlhYU3VPazI2dTBvMmxzTlJB0gHYAUFVX3lxTE5rWUo4Rm5wMGgzcklUVW14TVUyd0lRaTUta1k3bjQ1OXd6WEVCSW1MczJDYVpkRlAyLW5ZdFBBMF93X00yTDZKanI4Yy1vZHZETFRtSVkyVm1aQ0lvN0hBejNlYUhOM3ZVSUQ5U09HMHBubTNkUVJpVzRodE5RcWRtOWlfdkV2TEFRaTdfejR3cEZwTHNadlY0LWpfRDk3NmpuanVzdzVnRVlVWUc1TnZONmhWSndPQ2hNeGM0MDZIZHVobDVvZnQ0WDV0TjhIVFRRVENXR1JXbw?oc=5",
-   "publicado": "2026-11-25T09:29-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa Futuro cai com piora da projeção fiscal e cautela no exterior",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMzVSdHdQNXRwdHB1NDM4N3dObmFVNy1uRS1JdXZELTAtZEs5SUNJMm90X0JOMVRzMk9ReWptMFlNZ1h1a0ZXN3lSN1hHaV80UnN4UkNOTkhuT2RsalUyYjR6eTZILTBWYjM0eVJyRFRIVVM0dy1IbDdRbHZCRGxlaFo1M2xnbFNubnBwbVdFR0hGVHFzbnZuejdtNmVqQXF3cFNNWkw5bldBemNodFHSAbMBQVVfeXFMUFZYMFBKS0FWT1lCTEcyT08zZmI0cVBBNThUcDJWYzBXRHZSZ2t2ZG9oWlRHZnhxNVNHREl5S25QUDJjTmY4SG9XQ28tYnVzelRXYXY5MjhTa1I3NndXbWlsVmk5b3ZMMkV5TFRNaDNWRm83eEZGNjluYl9SZ3luakRQajI3elFFTnQ1ZXlqUEdfZ2ZEXzk1UUpBNUQ1UTgtb0dOaS0yUkloeXRJSnVSblRBd28?oc=5",
@@ -1009,31 +1261,6 @@
    "ativos": [
     "WIN",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar sobe e supera R$ 5,97; Ibovespa hoje repercute inflação preferida do Fed",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
-   "publicado": "2026-11-25T09:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China rebate EUA sobre ameaça de nova tarifa, vê manipulação e diz que guerra comercial não interessa",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/china-rebate-eua-sobre-ameaca-de-nova-tarifa-ve-manipulacao-e-diz-que-guerra-comercial-nao-interessa.shtml",
-   "publicado": "2026-11-25T07:40-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
