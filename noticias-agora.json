@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T17:58-03:00",
+  "atualizado_em": "2026-11-25T18:00-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     166736.0
+     166747.0
     ]
    ]
   },
@@ -556,7 +556,7 @@
     ],
     [
      "13:15",
-     5.863
+     5.8612
     ],
     [
      "13:20",
@@ -780,11 +780,11 @@
     ],
     [
      "17:55",
-     5.8127
+     5.8145
     ],
     [
-     "17:58",
-     5.8147
+     "18:00",
+     5.8175
     ]
    ]
   },
@@ -1858,21 +1858,26 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": 0.05
+   },
+   {
+    "hora": "17:57",
+    "titulo": "Grão Investimentos, do Grupo Primo, lança ETF de Tesouro Prefixado na B3",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/grao-investimentos-do-grupo-primo-lanca-etf-de-tesouro-prefixado-na-b3.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Minidólar (WDOZ26): pode voltar aos 6 mil pontos? Confira a análise técnica",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSndzODloc3J5dERkVXJYNlBkNDBFOEtfXy1URzR4RkJ3WV83T2hQS0ZUNmNCRUZNWVhwT0dDTXV6Sk82UjZXcEZpSTdlcGxlSjI5elBzajdMWDVWMWYwMThyeExrVmhpOFNEOVhKLVBvY3NoOUhuZThGS0MyWUJnWENFajdxNWQ4aExPZjdR0gGTAUFVX3lxTE5oQjctOXZtd1Yyd1FWZ0JrQjFHN3lyUVBaTEJlMXhsYVh0TjFTX3JBcHdvMmdfR0U4M3ZQMU9jV1E0bWRTeUpGcU9sUkRvSHpGOWhYVUcwREFDZmNBdk9Ld0V2TlJ2cEk3MzdtbERFVGl2R1p1MXdFbXJnWVFPdEtRUWFxMWxyUUxCT1BNZ1VqUURFbw?oc=5",
-   "publicado": "2026-11-25T07:11-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "China rebate EUA sobre ameaça de nova tarifa, vê manipulação e diz que guerra comercial não interessa",
    "fonte": "Folha",
@@ -2828,6 +2833,20 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Grão Investimentos, do Grupo Primo, lança ETF de Tesouro Prefixado na B3",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/grao-investimentos-do-grupo-primo-lanca-etf-de-tesouro-prefixado-na-b3.shtml",
+   "publicado": "2026-11-25T17:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
   }
  ],
  "enviadas": [
@@ -2857,7 +2876,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T17:58-03:00",
+ "atualizado_em": "2026-11-25T18:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2872,6 +2891,20 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Grão Investimentos, do Grupo Primo, lança ETF de Tesouro Prefixado na B3",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/grao-investimentos-do-grupo-primo-lanca-etf-de-tesouro-prefixado-na-b3.shtml",
+   "publicado": "2026-11-25T17:57-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
   {
    "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira | Finanças",
    "fonte": "Valor",
@@ -2911,18 +2944,6 @@
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFJyR1U2SGtpajlvRm9WWk0xSUNLUVdrNTFyUFRoUDliZTNYbmlLbGd1VFRrVUQ1M1JPRHVoQ3FpZXRCNUlqUmx1cmZDMzdZWlRnWHdfTzVrTkpoTzRxVnRyVGl2aE0yS3I4enNJUjhvQUk2X1RwSXY1c3VzeThVR25Va25obDdpd3JwdUVjSFJOT3dxRUJMNjZacHl6LU5ndF9TME91MW1nYWlyOFRsY1dxeUwtM0JjaW5TTVZJSWN4QdIBxwFBVV95cUxQaXNsQUpiTFFmQWRqRVp1aER6YU14OTFEdHZxZnZ2TjhicWFwckwwYUNNTno1cTZlaFpnZWZvaGV6MkJGWjF3TXdzejRMR3FmZFRqazhmUi1sMkpOSW1ReXlaNU0zdHJkNFpRY2s0Yi0wc1VWWlcyU1kzTUcwRXZ6eVRHNmp2M19Bb004WU1yTjBtemxyLVBHbUFTZVA0aHRlUFlYOU9HTnhKdVE4QlhFeHVrT1d0OXJtXzJuc0VXOEdjRUdnQkYw?oc=5",
    "publicado": "2026-11-25T17:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Focus aponta piora da inflação e eleva Selic 2027, enquanto PIB perde força; veja as previsões",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbEkyX29sNld6X1NPWGJ6TnBJbmEyaHlSRF9kQklrWWNUQ1hGUWp1eTVFSnJaV3AtMnc2SnVWYzVwR21ZMTVzRjQ1SlR1R1hqOEFncDZ0dHhCSTdINVFGLXNtaHVPT3V4UmxlbHRqQy1RalktalVRYUgyWG5yd0V3eHQ3T0x2R0ktcEppZ1lrcVpWOUhLVjBnMEpsVnJUaWxOYkh6NE5Ca21xSnF1Z2ZOZVdJcFYzTUNENnI4eVZuVVAwYmkzbFVwNk56cTQyNW03YWpacU9venZZMmxmQ3FadEZVejdDMXdpaTlJWDFMMk4?oc=5",
-   "publicado": "2026-11-25T16:54-03:00",
    "impacto": "alto",
    "ativos": [
     "WDO",
