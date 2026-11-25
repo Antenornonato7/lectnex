@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T17:20-03:00",
+  "atualizado_em": "2026-11-25T17:23-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     166598.0
+     166567.0
     ]
    ]
   },
@@ -752,7 +752,11 @@
     ],
     [
      "17:20",
-     5.8142
+     5.8128
+    ],
+    [
+     "17:23",
+     5.8136
     ]
    ]
   },
@@ -1758,7 +1762,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.04
+    "dolar30": 0.02
    },
    {
     "hora": "17:00",
@@ -2787,7 +2791,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T17:20-03:00",
+ "atualizado_em": "2026-11-25T17:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2808,6 +2812,18 @@
    "publicado": "2026-11-25T17:16-03:00",
    "impacto": "medio",
    "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai mais de 1% e fecha em R$ 5,82; Ibovespa sobe com ações de bancos em alta de até 6%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbXB5T05UWmg1TENfbl9xbUo0eWc0N1JveG9heERUb0xzekk2R0hVTDJ2bWI2YUFRN2RWazVMbTg1cm10a1phNnpqYlBLM2FHRzdJSWhmcHdLRU0yLXQzMFBCNWFna3V2LU9CRXVFTHJ0R3NLelhHTVFtSW1PYnFpd3R0TWlUS1E3RU5EZjJQZ1RGTWJqZF8xbWJGazQ0NEJveDN0X1pPR0ZVY2pJLXo3RXRjNmRQY1ZPN290b3lYNUFkVG5Vb0ZCV19GOFlwcXp0T3hnRklfYnNUZnZLNkh6dktkOGfSAeoBQVVfeXFMUDNJaFd2bVd4TFY0azl6TG1lZEw3Q1VkbFZsLWhVbk9wcy1UbmJQeXdFcnJKRUJSLWVCd3JiYlg3U2xiVHBqRkJfdldhRkpFbmpZS2lKY0ZwMk1NVFVkYnQ4QzA5VXJ3TjdiYXVGUmJ6eHRVOGRkNEFzZXp5dGVaNHhCNENzbll2RmdrXzRGdTMzU19XdDF3dUpLS29wSkdLd0I1bHdQUUFEcmVlTTJMakRnMW9nNXZOTk40M3ZGZGFRVU1IQUs3RTB0SjFQeGxrWUNzTGdRbnItbk9PNmVicER3b3pIT1Z3NTJB?oc=5",
+   "publicado": "2026-11-25T17:06-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO"
    ],
    "tickers": []
