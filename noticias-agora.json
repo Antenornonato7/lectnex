@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T17:05-03:00",
+  "atualizado_em": "2026-11-25T17:08-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -332,6 +332,10 @@
     [
      "16:45",
      166750.0
+    ],
+    [
+     "16:50",
+     166862.0
     ]
    ]
   },
@@ -728,7 +732,11 @@
     ],
     [
      "17:05",
-     5.8166
+     5.8152
+    ],
+    [
+     "17:08",
+     5.8163
     ]
    ]
   },
@@ -1720,7 +1728,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.22,
     "dolar30": -0.01
    },
    {
@@ -1735,21 +1743,24 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:00",
+    "titulo": "Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFJyR1U2SGtpajlvRm9WWk0xSUNLUVdrNTFyUFRoUDliZTNYbmlLbGd1VFRrVUQ1M1JPRHVoQ3FpZXRCNUlqUmx1cmZDMzdZWlRnWHdfTzVrTkpoTzRxVnRyVGl2aE0yS3I4enNJUjhvQUk2X1RwSXY1c3VzeThVR25Va25obDdpd3JwdUVjSFJOT3dxRUJMNjZacHl6LU5ndF9TME91MW1nYWlyOFRsY1dxeUwtM0JjaW5TTVZJSWN4QdIBxwFBVV95cUxQaXNsQUpiTFFmQWRqRVp1aER6YU14OTFEdHZxZnZ2TjhicWFwckwwYUNNTno1cTZlaFpnZWZvaGV6MkJGWjF3TXdzejRMR3FmZFRqazhmUi1sMkpOSW1ReXlaNU0zdHJkNFpRY2s0Yi0wc1VWWlcyU1kzTUcwRXZ6eVRHNmp2M19Bb004WU1yTjBtemxyLVBHbUFTZVA0aHRlUFlYOU9HTnhKdVE4QlhFeHVrT1d0OXJtXzJuc0VXOEdjRUdnQkYw?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "A frase que faltou no pacote fiscal",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/mauricio-portugal-ribeiro/2026/11/a-frase-que-faltou-no-pacote-fiscal.shtml",
-   "publicado": "2026-11-25T07:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Política de preços da Petrobras segue adequada, mas empresa ainda avalia ajuste",
    "fonte": "InfoMoney",
@@ -2708,6 +2719,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFJyR1U2SGtpajlvRm9WWk0xSUNLUVdrNTFyUFRoUDliZTNYbmlLbGd1VFRrVUQ1M1JPRHVoQ3FpZXRCNUlqUmx1cmZDMzdZWlRnWHdfTzVrTkpoTzRxVnRyVGl2aE0yS3I4enNJUjhvQUk2X1RwSXY1c3VzeThVR25Va25obDdpd3JwdUVjSFJOT3dxRUJMNjZacHl6LU5ndF9TME91MW1nYWlyOFRsY1dxeUwtM0JjaW5TTVZJSWN4QdIBxwFBVV95cUxQaXNsQUpiTFFmQWRqRVp1aER6YU14OTFEdHZxZnZ2TjhicWFwckwwYUNNTno1cTZlaFpnZWZvaGV6MkJGWjF3TXdzejRMR3FmZFRqazhmUi1sMkpOSW1ReXlaNU0zdHJkNFpRY2s0Yi0wc1VWWlcyU1kzTUcwRXZ6eVRHNmp2M19Bb004WU1yTjBtemxyLVBHbUFTZVA0aHRlUFlYOU9HTnhKdVE4QlhFeHVrT1d0OXJtXzJuc0VXOEdjRUdnQkYw?oc=5",
+   "publicado": "2026-11-25T17:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2737,7 +2760,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T17:05-03:00",
+ "atualizado_em": "2026-11-25T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2751,6 +2774,18 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Ouro fecha em queda com perspectiva de alta nos juros do Fed com inflação persistente",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbFJyR1U2SGtpajlvRm9WWk0xSUNLUVdrNTFyUFRoUDliZTNYbmlLbGd1VFRrVUQ1M1JPRHVoQ3FpZXRCNUlqUmx1cmZDMzdZWlRnWHdfTzVrTkpoTzRxVnRyVGl2aE0yS3I4enNJUjhvQUk2X1RwSXY1c3VzeThVR25Va25obDdpd3JwdUVjSFJOT3dxRUJMNjZacHl6LU5ndF9TME91MW1nYWlyOFRsY1dxeUwtM0JjaW5TTVZJSWN4QdIBxwFBVV95cUxQaXNsQUpiTFFmQWRqRVp1aER6YU14OTFEdHZxZnZ2TjhicWFwckwwYUNNTno1cTZlaFpnZWZvaGV6MkJGWjF3TXdzejRMR3FmZFRqazhmUi1sMkpOSW1ReXlaNU0zdHJkNFpRY2s0Yi0wc1VWWlcyU1kzTUcwRXZ6eVRHNmp2M19Bb004WU1yTjBtemxyLVBHbUFTZVA0aHRlUFlYOU9HTnhKdVE4QlhFeHVrT1d0OXJtXzJuc0VXOEdjRUdnQkYw?oc=5",
+   "publicado": "2026-11-25T17:00-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar cai mais de 1% e vai a R$ 5,81; Ibovespa sobe com ações de bancos em alta de até 5,68%",
    "fonte": "Estadão",
