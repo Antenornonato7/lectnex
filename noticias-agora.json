@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T15:40-03:00",
+  "atualizado_em": "2026-11-25T15:43-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -267,7 +267,11 @@
     ],
     [
      "15:25",
-     166810.0
+     166811.0
+    ],
+    [
+     "15:28",
+     166825.0
     ]
    ]
   },
@@ -596,7 +600,11 @@
     ],
     [
      "15:40",
-     5.8175
+     5.8147
+    ],
+    [
+     "15:43",
+     5.8136
     ]
    ]
   },
@@ -1435,7 +1443,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.24,
     "dolar30": 0.26
    },
    {
@@ -1462,22 +1470,24 @@
     ],
     "tickers": [],
     "ibov30": null,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "15:37",
+    "titulo": "Segurar dólares à força pode sair pela culatra: o alerta do UBS WM para o Brasil não seguir o caminho de Argentina e Venezuela",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUUFyX0Y4MUNiNkh5X2poQU5JZGpHeVdac3FMbFBidElBcGw4Q3BvOVNqbGh0VEJ0Sk0xaGo1SEhrZkg4X2pUdkVDalJfc3ZTM2hGYy0xT3cxcHRMMnkwZ2pXUkNKX3pWUVZwWXpiYXFGQTBBM2JkTnk1QWFpOU1CVVdWOEtUZzk3VXJLN3B2WXk3WHJFRTVLZnlpUF9rWFplTWhxN1FaWXdScDhnbUM0TWtaNzgtWnFaVExzZ2lTWXBkRFgtMHFheGwxUktySGx1amtsMjNXN1NHYmlsTjhYWUNQdjBNTnZXV18wOTVFZnZuUlE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Governo trabalha em PEC com novas medidas fiscais; dólar recua e fecha a R$ 5,91",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeUoweG1BdVNrOHdKYjc5dFlfZDBEWFFjUlRsdFFpVW5fa1ZYaTdlWVZEQm42eGRpQzlfb25uanNRRURITWpGLWtJdU1BN1R4REhNdTlQQ3hFSEJ2R2lGQ1AzRTJkUlJfZG4yZGRaMndVN2JPeUt3YlZWZ1FCQm9xSzBnemZqOWxwclQ0UDZ5LUZ6eGVDdjl3MW9TaXJ5S3RXUW9pamJqWE5aRm01LWtVa2cySFFzVnlhMFp3WEpUbHdGNWtoYU0wUkV5WjRWaW8t0gHfAUFVX3lxTE11TEw2XzFjZDJOWmRUTEkwTi1ObGhvSW9lOVNtbGpqSXgyS1ZVX2g2cHNIS2tZbFFsVkpxektsaEFKQUZ4TGxWZGI1ODdKdnZwMndmUEVOa3VvcHc0NVo3R19tR0VlYWdyWjVxblZiNl9rU3ZLZ0dGTk9PWnRmTGF1WTBqWTBIOVBEVjA5UzBJYjJacnN0NlZIZUFJS09yX1lDTE5LV0dVb1FRZW03TGdvWEJMNHhzSmdrRlItQVNvLVhjLWZjTHJOdF9aZVpjdkh3LU9xOTNHNVZfRFY5NG8?oc=5",
-   "publicado": "2026-11-25T05:00-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Preocupação fiscal cresce e bancos de NY à Faria Lima reduzem recomendação de Brasil nas carteiras",
    "fonte": "Estadão",
@@ -2432,6 +2442,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Segurar dólares à força pode sair pela culatra: o alerta do UBS WM para o Brasil não seguir o caminho de Argentina e Venezuela",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUUFyX0Y4MUNiNkh5X2poQU5JZGpHeVdac3FMbFBidElBcGw4Q3BvOVNqbGh0VEJ0Sk0xaGo1SEhrZkg4X2pUdkVDalJfc3ZTM2hGYy0xT3cxcHRMMnkwZ2pXUkNKX3pWUVZwWXpiYXFGQTBBM2JkTnk1QWFpOU1CVVdWOEtUZzk3VXJLN3B2WXk3WHJFRTVLZnlpUF9rWFplTWhxN1FaWXdScDhnbUM0TWtaNzgtWnFaVExzZ2lTWXBkRFgtMHFheGwxUktySGx1amtsMjNXN1NHYmlsTjhYWUNQdjBNTnZXV18wOTVFZnZuUlE?oc=5",
+   "publicado": "2026-11-25T15:37-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2461,13 +2482,12 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T15:40-03:00",
+ "atualizado_em": "2026-11-25T15:43-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
@@ -2475,10 +2495,10 @@
  ],
  "noticias": [
   {
-   "titulo": "Bolsas da Europa fecham em queda com nova proposta tarifária dos EUA",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSENCT282TWg5ZG1lU1Z1TU1rWUxYRHVNRUp6YjRuSFBEbUVyMjV3b243MlRlSkdxYngtZmpLNHFxcXdGcHhfQ2p0OHFaY1h6eUZBYlAteU1QM29uLUpCaFI5dG01eGVIdEQ0NTBRZUllbU5FRmFSMlREZW1Qd0dpdnBuQlRLbTdocGxMOWVSYW1mdWtRM0ZkMUkzaU5sRDRSbW4zZjdjZGQxWThuTzMxaEhlUDdHT1c5dkN1U0xINzk0XzJWcTZ3eVc5N0V2aHJ2Nmc?oc=5",
-   "publicado": "2026-11-25T15:18-03:00",
+   "titulo": "Segurar dólares à força pode sair pela culatra: o alerta do UBS WM para o Brasil não seguir o caminho de Argentina e Venezuela",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUUFyX0Y4MUNiNkh5X2poQU5JZGpHeVdac3FMbFBidElBcGw4Q3BvOVNqbGh0VEJ0Sk0xaGo1SEhrZkg4X2pUdkVDalJfc3ZTM2hGYy0xT3cxcHRMMnkwZ2pXUkNKX3pWUVZwWXpiYXFGQTBBM2JkTnk1QWFpOU1CVVdWOEtUZzk3VXJLN3B2WXk3WHJFRTVLZnlpUF9rWFplTWhxN1FaWXdScDhnbUM0TWtaNzgtWnFaVExzZ2lTWXBkRFgtMHFheGwxUktySGx1amtsMjNXN1NHYmlsTjhYWUNQdjBNTnZXV18wOTVFZnZuUlE?oc=5",
+   "publicado": "2026-11-25T15:37-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
