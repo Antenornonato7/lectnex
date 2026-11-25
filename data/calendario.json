@@ -1,63 +1,11 @@
 {
-  "atualizado_em": "2026-11-24T12:50:00-03:00",
+  "atualizado_em": "2026-11-25T07:50:00-03:00",
   "eventos": [
     {
-      "data": "2026-11-24",
-      "hora": "08h",
+      "data": "2026-11-25",
+      "hora": "10h",
       "pais": "BR",
-      "evento": "Confiança do consumidor FGV (nov)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "83,5 (−1,2 pt)",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Termômetro do consumo das famílias.",
-      "tipo": "confianca-fgv",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-24",
-      "hora": "11h",
-      "pais": "BR",
-      "evento": "Arrecadação federal (out, Receita)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "R$ 293,9 bi (+7,28% real a/a)",
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Receita do governo no dia em que o ajuste fiscal vai à sanção.",
-      "tipo": "arrecadacao",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-24",
-      "hora": "12h",
-      "pais": "US",
-      "evento": "Confiança do consumidor Conference Board (nov)",
-      "importancia": 1,
-      "anterior": "91,7",
-      "consenso": "92,1",
-      "resultado": "103,3",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Termômetro do consumo americano.",
-      "tipo": "conference-board",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "Confiança bem acima do esperado costuma sustentar os juros dos Treasuries e o dólar global, pressionando o WDO para cima e os DIs longos."
-      }
-    },
-    {
-      "data": "2026-11-24",
-      "hora": null,
-      "pais": "BR",
-      "evento": "Relatório bimestral de receitas e despesas e contingenciamento",
+      "evento": "Coletiva de Moretti sobre o relatório bimestral (Planejamento)",
       "importancia": 2,
       "anterior": null,
       "consenso": null,
@@ -66,7 +14,7 @@
         "di": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Ministro do Planejamento, Bruno Moretti, deve anunciar novo contingenciamento (O Tempo); tamanho do bloqueio mexe no prêmio fiscal.",
+      "nota": "Relatório reduziu o contingenciamento de 2026 para R$ 12,3 bi e elevou o déficit projetado para R$ 89,3 bi antes dos abatimentos (SBT News).",
       "tipo": "relatorio-bimestral",
       "surpresa": null
     },
@@ -77,7 +25,7 @@
       "evento": "PIB dos EUA — 2ª estimativa (3º tri, anualizado)",
       "importancia": 2,
       "anterior": "3,4%",
-      "consenso": null,
+      "consenso": "3,5%",
       "resultado": null,
       "impacto": {
         "wdo": "volatil",
@@ -101,7 +49,7 @@
         "di": "volatil",
         "win": "volatil"
       },
-      "nota": "Medida de inflação preferida do Fed, antes da reunião de dezembro; consenso de 0,3% no mês. Sai antes do feriado de Ação de Graças.",
+      "nota": "Medida de inflação preferida do Fed, antes da reunião de dezembro; consenso de 0,3% no mês para o núcleo e de 3,8% em 12 meses para o índice cheio (Dow Jones, via InfoMoney). Sai antes do feriado de Ação de Graças.",
       "tipo": "pce-eua",
       "surpresa": null
     },
@@ -111,8 +59,8 @@
       "pais": "US",
       "evento": "Encomendas de bens duráveis (out)",
       "importancia": 1,
-      "anterior": null,
-      "consenso": "0,0%",
+      "anterior": "1,9%",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
@@ -128,13 +76,46 @@
       "evento": "Pedidos de seguro-desemprego (semanal)",
       "importancia": 1,
       "anterior": "203 mil",
-      "consenso": "201 mil",
+      "consenso": null,
       "resultado": null,
       "impacto": {
         "wdo": "volatil"
       },
       "nota": "Sai na quarta por causa do feriado de quinta.",
       "tipo": "seguro-desemprego",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-25",
+      "hora": "10h30",
+      "pais": "BR",
+      "evento": "BC: dois leilões de linha de até US$ 2 bi",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "Oferta de dólar com compromisso de recompra; ajuda a liquidez do câmbio no fim do mês.",
+      "tipo": "leilao-linha-bcb",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-25",
+      "hora": "15h",
+      "pais": "BR",
+      "evento": "Lula se reúne com a equipe econômica sobre a PEC de gastos",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Define o alcance da PEC de contenção das despesas obrigatórias (InfoMoney).",
+      "tipo": "pec-gastos",
       "surpresa": null
     },
     {
@@ -156,26 +137,27 @@
     },
     {
       "data": "2026-11-26",
-      "hora": null,
-      "pais": "US",
-      "evento": "Ação de Graças — bolsas de NY fechadas",
-      "importancia": 1,
-      "anterior": null,
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "IPCA-15 de novembro (IBGE)",
+      "importancia": 3,
+      "anterior": "0,32% (out)",
       "consenso": null,
       "resultado": null,
       "impacto": {
-        "win": "volatil",
-        "wdo": "volatil"
+        "di": "volatil",
+        "wdo": "volatil",
+        "win": "volatil"
       },
-      "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
-      "tipo": "feriado-eua",
+      "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). O Bradesco projeta 0,36% em novembro. Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
+      "tipo": "ipca-15",
       "surpresa": null
     },
     {
       "data": "2026-11-26",
-      "hora": "08h30",
+      "hora": "11h30",
       "pais": "BR",
-      "evento": "Transações correntes e IED (out, BCB)",
+      "evento": "Setor externo: transações correntes e IED (out, BCB)",
       "importancia": 1,
       "anterior": null,
       "consenso": null,
@@ -189,20 +171,19 @@
     },
     {
       "data": "2026-11-26",
-      "hora": "09h",
-      "pais": "BR",
-      "evento": "IPCA-15 de novembro (IBGE)",
-      "importancia": 3,
-      "anterior": "0,32% (out)",
+      "hora": null,
+      "pais": "US",
+      "evento": "Ação de Graças — bolsas de NY fechadas",
+      "importancia": 1,
+      "anterior": null,
       "consenso": null,
       "resultado": null,
       "impacto": {
-        "di": "volatil",
-        "wdo": "volatil",
-        "win": "volatil"
+        "win": "volatil",
+        "wdo": "volatil"
       },
-      "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
-      "tipo": "ipca-15",
+      "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
+      "tipo": "feriado-eua",
       "surpresa": null
     },
     {
@@ -307,22 +288,6 @@
     },
     {
       "data": "2026-12-01",
-      "hora": null,
-      "pais": "BR",
-      "evento": "Vencimento do mini dólar (WDO)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "1º dia útil do mês: rolagem para o contrato de janeiro costuma concentrar volume nos dias anteriores.",
-      "tipo": "vencimento-wdo",
-      "surpresa": null
-    },
-    {
-      "data": "2026-12-01",
       "hora": "12h",
       "pais": "US",
       "evento": "ISM industrial (nov)",
@@ -336,6 +301,22 @@
       },
       "nota": "Primeiro dado de atividade de dezembro nos EUA; mexe com Treasuries e o dólar global.",
       "tipo": "ism-industrial",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-01",
+      "hora": null,
+      "pais": "BR",
+      "evento": "Vencimento do mini dólar (WDO)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil"
+      },
+      "nota": "1º dia útil do mês: rolagem para o contrato de janeiro costuma concentrar volume nos dias anteriores.",
+      "tipo": "vencimento-wdo",
       "surpresa": null
     }
   ]

@@ -1,166 +1,135 @@
 {
   "tipo": "pregao",
-  "data": "2026-11-24",
-  "gerado_em": "2026-11-24T08:15:00-03:00",
-  "titulo": "Ajuste fiscal vai à sanção; NY devolve parte do rali da Nvidia",
+  "data": "2026-11-25",
+  "gerado_em": "2026-11-25T07:50:00-03:00",
+  "titulo": "Venda em tecnologia derruba NY antes do PCE; fiscal ganha PEC",
   "resumo": [
-    "A Câmara aprovou na madrugada o ajuste fiscal sem mudar o texto do Senado (texto-base por 353 a 128); segundo O Tempo, todos os destaques foram rejeitados e o projeto vai à sanção. Sai o risco de volta ao Senado, mas o governo deve anunciar hoje um novo contingenciamento — vetor para o DI longo e o WDO.",
-    "No último pregão (segunda, 23), o Ibovespa caiu 0,95%, aos 164.796 pontos, menor fechamento desde 13 de janeiro, puxado por Petrobras (−3,21%). O dólar à vista tocou R$ 6 de manhã e fechou a R$ 5,9293 (−0,05%), segundo o InfoMoney.",
-    "Lá fora, depois de o S&P 500 subir 4,7% na segunda com a volta de Jensen Huang ao comando da Nvidia (+31,5%), os futuros devolvem parte do ganho: às 7h30, S&P futuro −0,38%, Nasdaq futuro −1,02%, EWZ −0,27% e VIX +3,7%. O Treasury de 10 anos está em 4,93% (AP).",
-    "Segundo o Yahoo Finance, o mercado precifica cerca de 95% de chance de alta de 0,25 ponto do Fed em dezembro; John Williams (Fed de NY) disse que a inflação das tarifas 'em grande parte' arrefeceu, segundo o Investing.com. Juro americano alto segue sustentando o dólar global.",
-    "Petrobras, maior peso do Ibovespa, apresenta às 13h30 o plano 2027–2031 (US$ 122 bi em investimentos e dividendo extraordinário de R$ 15,6 bi) num dia de Brent em queda (−2,9%). Na agenda: arrecadação às 11h e confiança do consumidor dos EUA às 12h; PCE e PIB americano saem amanhã."
+    "A venda de ações de IA voltou com força: às 7h30, S&P futuro −1,40%, Nasdaq futuro −2,34%, EWZ −1,02% e VIX +10,9%. Na Ásia, segundo a AP, o Kospi caiu 6,2% e o Nikkei 2,8%, com Samsung e SK Hynix perto de −10%. Aversão a risco pesa na abertura do WIN e favorece o dólar.",
+    "No último pregão (terça, 24), o Ibovespa caiu 0,43%, aos 164.089,81 pontos, depois de devolver a alta com Petrobras (PN −1,8%, segundo o Money Times). O dólar à vista fechou a R$ 5,9085 (−0,35%), após mínima de R$ 5,80 com a notícia de uma PEC para conter gastos, segundo o InfoMoney.",
+    "Fiscal: Lula sancionou sem vetos o ajuste fiscal (Lei Complementar 239/26), segundo a Agência Câmara, e o relatório bimestral reduziu o contingenciamento de 2026 para R$ 12,3 bi, com déficit projetado de R$ 89,3 bi antes dos abatimentos (SBT News). Moretti detalha os números às 10h e Lula discute a PEC de despesas obrigatórias às 15h — vetores para o DI longo e o WDO.",
+    "Às 10h30 saem o PCE de outubro (consenso do núcleo: 3,2% em 12 meses, ante 3,1%) e a 2ª leitura do PIB americano. Nas 24 divulgações de inflação dos EUA desde nov/2024 acompanhadas pelo Lectnex, o movimento típico na primeira hora foi de 0,64% no WIN e 0,43% no WDO; o dólar subiu em só 21% delas.",
+    "Segundo a Reuters, o mercado precifica em grande parte uma alta de 0,25 ponto do Fed em dezembro, e o Treasury de 10 anos está em 4,92% (Bloomberg). Segundo a AP, com base em fontes anônimas, os EUA se preparam para anunciar tarifas sobre China, UE e outras 14 economias. NY fecha amanhã (Ação de Graças), dia do IPCA-15."
   ],
   "pontos": [
     {
-      "titulo": "Ajuste fiscal vai à sanção sem mudanças",
-      "texto": "Tira o risco de volta ao Senado; o contingenciamento previsto para hoje mexe no DI longo e no WDO."
+      "titulo": "PCE e PIB dos EUA às 10h30",
+      "texto": "Inflação preferida do Fed (núcleo: consenso 3,2%) mexe no juro americano, no WDO e no DI."
     },
     {
-      "titulo": "Futuros de NY recuam após rali da Nvidia",
-      "texto": "S&P futuro −0,4% e Nasdaq −1% após o S&P subir 4,7% na segunda; tom externo pesa na abertura do WIN."
+      "titulo": "Venda em tecnologia derruba NY e a Ásia",
+      "texto": "S&P futuro −1,4%, Nasdaq −2,3% e Kospi −6%; a aversão a risco pesa na abertura do WIN."
     },
     {
-      "titulo": "Petrobras detalha plano de US$ 122 bi",
-      "texto": "Maior peso do Ibovespa, com Brent −2,9% e coletiva às 13h30; reação das ações pode mexer no WIN."
+      "titulo": "Lula discute PEC de gastos às 15h",
+      "texto": "Após a sanção do ajuste, a PEC de despesas obrigatórias pode mexer no prêmio do DI longo e no WDO."
     }
   ],
   "termometro": {
     "win": {
       "leitura": "bearish",
-      "motivo": "S&P futuro −0,38%, Nasdaq futuro −1,02%, EWZ −0,27% e Brent −2,9% (pesa em Petrobras) antes da abertura; a aprovação do ajuste sem mudanças limita a queda."
+      "motivo": "S&P futuro −1,40%, Nasdaq futuro −2,34%, EWZ −1,02% e Brent −3,19% (pesa em Petrobras) antes da abertura; o PCE às 10h30 pode ampliar ou reduzir o movimento."
     },
     "wdo": {
       "leitura": "bullish",
-      "motivo": "Futuros de NY em queda e VIX +3,7% favorecem a busca por dólar; a aprovação do ajuste e o DXY −0,14% limitam a alta, e o contingenciamento de hoje pode trazer volatilidade."
+      "motivo": "VIX +10,9%, DXY +0,20% e EWZ −1,02% favorecem a busca por dólar; a sanção do ajuste e a discussão da PEC de gastos limitam a alta."
     }
   },
   "destaques": [
     {
-      "hora": "11h",
-      "evento": "Arrecadação federal de outubro (Receita)",
-      "por_que": "Receita forte ou fraca muda a leitura do fiscal no dia da sanção do ajuste e mexe no DI longo."
+      "hora": "10h",
+      "evento": "Coletiva de Moretti sobre o relatório bimestral",
+      "por_que": "Contingenciamento menor e déficit projetado maior: o tom da explicação mexe no prêmio do DI longo."
     },
     {
-      "hora": "12h",
-      "evento": "Confiança do consumidor Conference Board (EUA, nov)",
-      "por_que": "Consenso de 92,1 (anterior 91,7); consumo americano mexe com Treasuries e o dólar global."
+      "hora": "10h30",
+      "evento": "PCE de outubro e PIB do 3º tri (2ª leitura) — EUA",
+      "por_que": "Núcleo do PCE com consenso de 3,2% em 12 meses; reforça ou não a alta do Fed em dezembro. Na mesma hora, o BC faz leilões de linha de até US$ 2 bi."
     },
     {
-      "hora": "13h30",
-      "evento": "Petrobras: coletiva do plano 2027–2031 (webcast às 16h)",
-      "por_que": "Detalhes de investimento e dividendos mexem na ação de maior peso do Ibovespa."
+      "hora": "15h",
+      "evento": "Lula se reúne com a equipe econômica sobre a PEC de gastos",
+      "por_que": "Alcance da PEC de despesas obrigatórias pode mexer no WDO e nos vértices longos do DI."
     },
     {
-      "hora": "ao longo do dia",
-      "evento": "Relatório bimestral e contingenciamento (Planejamento)",
-      "por_que": "Tamanho do bloqueio de gastos testa a credibilidade fiscal; mexe no prêmio do DI e no WDO."
+      "hora": "16h",
+      "evento": "Livro Bege (Fed)",
+      "por_que": "Retrato da economia americana antes da reunião de dezembro; mexe com Treasuries e o dólar global."
     }
   ],
   "exterior": [
-    {
-      "ativo": "S&P 500 fut.",
-      "variacao": "−0,38%"
-    },
-    {
-      "ativo": "Nasdaq fut.",
-      "variacao": "−1,02%"
-    },
-    {
-      "ativo": "EWZ",
-      "variacao": "−0,27%"
-    },
-    {
-      "ativo": "DXY",
-      "variacao": "−0,14%"
-    },
-    {
-      "ativo": "Brent",
-      "variacao": "−2,91%"
-    },
-    {
-      "ativo": "VIX",
-      "variacao": "+3,72%"
-    }
+    { "ativo": "S&P 500 fut.", "variacao": "−1,40%" },
+    { "ativo": "Nasdaq fut.", "variacao": "−2,34%" },
+    { "ativo": "EWZ", "variacao": "−1,02%" },
+    { "ativo": "DXY", "variacao": "+0,20%" },
+    { "ativo": "Brent", "variacao": "−3,19%" },
+    { "ativo": "VIX", "variacao": "+10,89%" }
   ],
   "noticias": [
     {
-      "titulo": "Câmara rejeita todos os destaques e ajuste fiscal vai à sanção como saiu do Senado",
-      "fonte": "O Tempo",
-      "hora": "01h08",
-      "url": "https://www.otempo.com.br/politica/2026/11/24/governo-barra-todas-as-mudancas-e-ajuste-fiscal-de-lula-vai-a-sancao-como-saiu-do-senado",
-      "por_que": "Sem mudanças, o texto não volta ao Senado; o governo estima melhora de R$ 45,1 bi a R$ 56,1 bi no resultado de 2027. Tira um risco de cauda do DI longo e do câmbio.",
-      "impacto": {
-        "win": "alta",
-        "wdo": "baixa",
-        "di": "baixa"
-      }
+      "titulo": "Lei do ajuste fiscal é sancionada sem vetos e já está em vigor",
+      "fonte": "Agência Câmara",
+      "hora": "18h58",
+      "url": "https://www.camara.leg.br/noticias/1322586-lei-do-ajuste-fiscal-e-sancionada-sem-vetos-e-ja-esta-em-vigor",
+      "por_que": "A Lei Complementar 239/26 limita o crescimento real das despesas a 2% e fixa meta de R$ 18,7 bi em 2027 após deduções; tira incerteza do DI longo e do câmbio.",
+      "impacto": { "wdo": "baixa", "di": "baixa" }
     },
     {
-      "titulo": "Mesmo com o ajuste aprovado, analistas veem pressão no dólar",
-      "fonte": "Metrópoles",
-      "hora": "04h00",
-      "url": "https://www.metropoles.com/brasil/mesmo-com-aprovacao-do-ajuste-fiscal-dolar-deve-continuar-em-alta",
-      "por_que": "Operador ouvido pelo jornal vê o pacote como pequeno e concentrado em receitas, além da alta provável dos juros nos EUA — sinal de que a aprovação pode não bastar para aliviar o WDO.",
-      "impacto": {
-        "wdo": "alta"
-      }
-    },
-    {
-      "titulo": "Petrobras prevê US$ 122 bi em investimentos e dividendo extraordinário de R$ 15,6 bi",
+      "titulo": "Lula autoriza PEC para conter despesas obrigatórias; reunião às 15h define alcance",
       "fonte": "InfoMoney",
-      "hora": "06h14",
-      "url": "https://www.infomoney.com.br/mercados/ajuste-fiscal-petrobras-confianca-consumidor-24112026/",
-      "por_que": "O plano 2027–2031 veio em linha com a expectativa de mais de US$ 120 bi; com o Brent em queda, a reação da ação de maior peso do índice define parte do humor do WIN.",
-      "impacto": {
-        "win": "neutro"
-      }
+      "hora": "17h31",
+      "url": "https://infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-24112026",
+      "por_que": "Segundo CNN Brasil e O Globo (confirmado à Reuters por uma fonte), a PEC criaria novos limites para saúde, educação e emendas; a notícia levou o dólar à mínima de R$ 5,80 na terça.",
+      "impacto": { "wdo": "baixa", "di": "baixa" }
     },
     {
-      "titulo": "Futuros de NY oscilam após o maior rali do S&P desde abril de 2025",
-      "fonte": "Yahoo Finance",
-      "hora": "06h06",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-rebound-090614276.html",
-      "por_que": "Nvidia cai cerca de 3% no pré-mercado após subir mais de 30%; o mercado ainda precifica cerca de 95% de chance de alta do Fed em dezembro, o que sustenta o dólar global.",
-      "impacto": {
-        "win": "baixa",
-        "wdo": "alta"
-      }
+      "titulo": "Relatório bimestral reduz contingenciamento para R$ 12,3 bi e eleva déficit projetado",
+      "fonte": "SBT News",
+      "hora": "00h17",
+      "url": "https://sbtnews.sbt.com.br/noticia/economia/governo-reduz-contingenciamento-para-r-12-3-bi-em-2026",
+      "por_que": "O déficit primário de 2026 antes dos abatimentos subiu de R$ 80,9 bi para R$ 89,3 bi; sem o desconto do diesel, o bloqueio poderia chegar a R$ 22,8 bi. Ponto de atenção para o DI longo na coletiva das 10h.",
+      "impacto": { "di": "alta" }
     },
     {
-      "titulo": "Bolsas da Ásia disparam com tecnologia; Brent cai a US$ 86 com sinais de oferta maior",
+      "titulo": "Ações de chips despencam na Ásia após nova queda da Nvidia",
+      "fonte": "AP",
+      "hora": "06h49",
+      "url": "https://www.clickondetroit.com/business/2026/11/25/asian-stocks-mostly-decline-as-ai-shares-fall-following-a-retreat-on-wall-street/",
+      "por_que": "Nvidia caiu 5,9% na terça e Kospi (−6,2%), Taiex (−5%) e Nikkei (−2,8%) recuam; Xangai cai 2%, menor nível em mais de um ano. Aversão a risco global pesa no WIN e favorece o dólar.",
+      "impacto": { "win": "baixa", "wdo": "alta" }
+    },
+    {
+      "titulo": "EUA preparam tarifas sobre China, UE e outras 14 economias, segundo a AP",
       "fonte": "AP (via Korea Times)",
-      "hora": "02h26",
-      "url": "https://www.koreatimes.co.kr/world/20261124/asian-stocks-rally-after-wall-street-rebound-as-jensen-huang-returns-as-nvidias-ceo",
-      "por_que": "Taiwan subiu mais de 9% e Kospi 6,5%; o petróleo em queda alivia a inflação e o DI, mas tira força de Petrobras no WIN. Treasury de 10 anos em 4,93%.",
-      "impacto": {
-        "di": "baixa"
-      }
+      "hora": "22h13",
+      "url": "https://www.koreatimes.co.kr/world/20261125/us-ready-to-slap-tariffs-on-china-eu-and-others-over-subsidized-production-ap-sources-say",
+      "por_que": "Segundo duas fontes anônimas, o anúncio pode sair nos próximos dias após investigação sobre subsídios; a lista completa não foi divulgada. Risco de nova rodada de aversão a risco e de pressão no dólar global.",
+      "impacto": { "win": "baixa", "wdo": "alta" }
     }
   ],
   "fontes": [
     {
-      "titulo": "O Tempo — Governo barra todas as mudanças, e pacote fiscal de Lula vai à sanção como saiu do Senado",
-      "url": "https://www.otempo.com.br/politica/2026/11/24/governo-barra-todas-as-mudancas-e-ajuste-fiscal-de-lula-vai-a-sancao-como-saiu-do-senado"
+      "titulo": "InfoMoney — Dólar cai a R$ 5,91, longe da mínima do dia, com notícia sobre PEC para conter gastos",
+      "url": "https://infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-24112026"
     },
     {
-      "titulo": "InfoMoney — Dólar hoje recua e fecha a R$ 5,92, após bater R$ 6 na máxima",
-      "url": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-23112026/"
+      "titulo": "Money Times — Tempo real: Ibovespa fecha no vermelho e dólar recua para os R$ 5,90",
+      "url": "https://www.moneytimes.com.br/tempo-real-24-11-2026-davs/"
     },
     {
-      "titulo": "SBT News — Ibovespa fecha em queda 0,95% e renova mínima de janeiro",
-      "url": "https://sbtnews.sbt.com.br/noticia/economia/ibovespa-fecha-em-queda-0-95-e-renova-minima-de-janeiro"
+      "titulo": "InfoMoney — Inflação nos EUA, reunião de Lula com equipe econômica e mais destaques desta 4ª",
+      "url": "https://www.infomoney.com.br/mercados/inflacao-eua-livro-bege-pec-medidas-fiscais-25112026/"
     },
     {
-      "titulo": "InfoMoney — Ajuste fiscal, plano da Petrobras e confiança do consumidor movimentam a terça-feira",
-      "url": "https://www.infomoney.com.br/mercados/ajuste-fiscal-petrobras-confianca-consumidor-24112026/"
+      "titulo": "Reuters (via MarketScreener) — Nasdaq, S&P 500 end lower following Monday's Nvidia-fueled rally",
+      "url": "https://www.marketscreener.com/news/nasdaq-s-p-500-end-lower-following-monday-s-nvidia-fueled-rally-ce7851dbdd81f720"
     },
     {
-      "titulo": "Investing.com (via Finwire) — Huang comeback in focus; Fed's Williams on rates",
-      "url": "https://finwire.io/news/economy-news/huang-comeback-in-focus-feds-williams-on-rates-whats-moving-markets"
+      "titulo": "Bloomberg (via Swissinfo) — Asian Stocks Fall as AI Trade Doubts Resurface",
+      "url": "https://www.swissinfo.ch/eng/asian-stocks-fall-as-ai-trade-doubts-resurface:-markets-wrap/92432172"
     },
     {
-      "titulo": "AP (via Korea Times) — Asian stocks rally after Wall Street rebound as Jensen Huang returns as Nvidia's CEO",
-      "url": "https://www.koreatimes.co.kr/world/20261124/asian-stocks-rally-after-wall-street-rebound-as-jensen-huang-returns-as-nvidias-ceo"
+      "titulo": "Agência Câmara — Lei do ajuste fiscal é sancionada sem vetos e já está em vigor",
+      "url": "https://www.camara.leg.br/noticias/1322586-lei-do-ajuste-fiscal-e-sancionada-sem-vetos-e-ja-esta-em-vigor"
     }
   ]
 }
