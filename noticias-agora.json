@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T17:25-03:00",
+  "atualizado_em": "2026-11-25T17:28-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     166672.0
+     166956.0
     ]
    ]
   },
@@ -756,7 +756,11 @@
     ],
     [
      "17:25",
-     5.8145
+     5.8148
+    ],
+    [
+     "17:28",
+     5.8135
     ]
    ]
   },
@@ -1790,21 +1794,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:16",
+    "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE0gHfAUFVX3lxTFBZc2E1MUY2aWVqTWtsMzNSbEIzYnRLR3NTRjgySFE1bkduQi1kd3cxZTNQOVJkSWRuQnhWSmVFR1ltcW1YU3YzTGt6cDROU3F3ekc2MklwMXVuUHV1cjlSUU5xNlhNZE56NS01STBNV2g4T2N6aDkyak9hS2Riek1BcjAyekVkYVdRcnRRQ0VHTjl1WUNuNktRT2VrR25hRTlVWHVYczVmbGxPTEx6Vi1CUlRHZmh4TFgwME1kWjBiQnJPNG9vaXY1NzlLbUJydVA1bzNNY1VsYWRQS3p0R2c?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Governo libera R$ 3,43 bilhões do Orçamento após ajuste fiscal",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-libera-r-343-bilhoes-do-orcamento-apos-ajuste-fiscal",
-   "publicado": "2026-11-25T07:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Day Trade hoje (25): Ibovespa pode acelerar queda e dólar testar os 6 mil pontos",
    "fonte": "InfoMoney",
@@ -2762,6 +2768,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE0gHfAUFVX3lxTFBZc2E1MUY2aWVqTWtsMzNSbEIzYnRLR3NTRjgySFE1bkduQi1kd3cxZTNQOVJkSWRuQnhWSmVFR1ltcW1YU3YzTGt6cDROU3F3ekc2MklwMXVuUHV1cjlSUU5xNlhNZE56NS01STBNV2g4T2N6aDkyak9hS2Riek1BcjAyekVkYVdRcnRRQ0VHTjl1WUNuNktRT2VrR25hRTlVWHVYczVmbGxPTEx6Vi1CUlRHZmh4TFgwME1kWjBiQnJPNG9vaXY1NzlLbUJydVA1bzNNY1VsYWRQS3p0R2c?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2791,7 +2808,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T17:25-03:00",
+ "atualizado_em": "2026-11-25T17:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2802,9 +2819,21 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar recua e vai a R$ 5,81 com expectativa sobre política econômica brasileira",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORkE2QTNYemxpazRSTjhDeGczTTJNRVlJM1NLbzloZy1rUlp2eUdDMDlYUUtnMjFjbmlhZEx4d051eGtYaVVYT2FEakg2OW43UWlkWW9JZ3Nsa19wTlI0S1NBUGdQNHNoRTB6VEFSUmZsRHpNWVRMRlpBLXd4OFdvUFZoekR3RWdqRkNjRDRXSkU1TVl6bzNDUjB2VjgyUXhCRjBVZnZBR0NNVVlFX2lhMzhHM3ZqZl91UlhSVnNaODVyU3VXX1o1R2VTbDBhcjVE0gHfAUFVX3lxTFBZc2E1MUY2aWVqTWtsMzNSbEIzYnRLR3NTRjgySFE1bkduQi1kd3cxZTNQOVJkSWRuQnhWSmVFR1ltcW1YU3YzTGt6cDROU3F3ekc2MklwMXVuUHV1cjlSUU5xNlhNZE56NS01STBNV2g4T2N6aDkyak9hS2Riek1BcjAyekVkYVdRcnRRQ0VHTjl1WUNuNktRT2VrR25hRTlVWHVYczVmbGxPTEx6Vi1CUlRHZmh4TFgwME1kWjBiQnJPNG9vaXY1NzlLbUJydVA1bzNNY1VsYWRQS3p0R2c?oc=5",
+   "publicado": "2026-11-25T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar recua para os R$ 5,80 com expectativas sobre equipe econômica de Lula",
    "fonte": "Money Times",
@@ -2965,17 +2994,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "União Europeia rejeita premissa dos EUA para tarifas e pede respeito a limite de 15%",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/uniao-europeia-premissa-eua-tarifas-respeito-limite/",
-   "publicado": "2026-11-25T15:02-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   },
