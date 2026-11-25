@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T11:20-03:00",
+  "atualizado_em": "2026-11-25T11:23-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -59,7 +59,11 @@
     ],
     [
      "11:05",
-     164771.0
+     164739.0
+    ],
+    [
+     "11:08",
+     164789.0
     ]
    ]
   },
@@ -180,7 +184,11 @@
     ],
     [
      "11:20",
-     5.9039
+     5.8948
+    ],
+    [
+     "11:23",
+     5.8971
     ]
    ]
   },
@@ -463,7 +471,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.16,
+    "ibov30": -0.18,
     "dolar30": 0.27
    },
    {
@@ -477,7 +485,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.16,
+    "ibov30": -0.18,
     "dolar30": 0.18
    },
    {
@@ -490,8 +498,24 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.15,
     "dolar30": 0.3
+   },
+   {
+    "hora": "10:47",
+    "titulo": "Ibovespa avança com fiscal e PCE; Vale tem leve recuperação",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVkFLeFdnUUdrYXNNUmZTSnVmVmRqQmNyR09vRUM5WmtSQUp2XzF2YnVqMU81TXV5cExWRVF5UkYyQWdoTUtOZmMwRnVqMkdrN2ZyVXI3RWdyX2pibFkzVkJWV0IxdkQ5MXRaWmJ3MHlYWE94b0xFM0M4NUVCMVlKVDc0T1FTVGtZdlQ3ZkFKSEgtelczeDZyQmx2MmVOa1I1RlRiRTVmOWtLUmhjZGl1RG5DZzVURmPSAcYBQVVfeXFMTmwtbTV6V0NWVDJCdThoWm5jX0NMMlNaUGV0eHlmeHVibnJHWm9NRV84NG5ZdDd0QzNZWXVKbWtaX0hMN1hNbWJ6S0dMeFkwS1JqQXVVTHV2TndGVGptREhuMlA1SDhVNGhhcU5ZV1RRbUNIU0FGaUNkWHg5SHdwLUFkNmRjbWlpbXc1ZkxzOGxuM1Zyb010cExxbW1PTmNnUF9sOFJCWURaekFPUjFoa1lYQVk4cEQ4VWNIZlQyR3ZRSGRZZFF3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [
+     "VALE3"
+    ],
+    "ibov30": null,
+    "dolar30": 0.2
    },
    {
     "hora": "10:57",
@@ -507,7 +531,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.02
    }
   ]
  },
@@ -1058,6 +1082,20 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa avança com fiscal e PCE; Vale tem leve recuperação",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVkFLeFdnUUdrYXNNUmZTSnVmVmRqQmNyR09vRUM5WmtSQUp2XzF2YnVqMU81TXV5cExWRVF5UkYyQWdoTUtOZmMwRnVqMkdrN2ZyVXI3RWdyX2pibFkzVkJWV0IxdkQ5MXRaWmJ3MHlYWE94b0xFM0M4NUVCMVlKVDc0T1FTVGtZdlQ3ZkFKSEgtelczeDZyQmx2MmVOa1I1RlRiRTVmOWtLUmhjZGl1RG5DZzVURmPSAcYBQVVfeXFMTmwtbTV6V0NWVDJCdThoWm5jX0NMMlNaUGV0eHlmeHVibnJHWm9NRV84NG5ZdDd0QzNZWXVKbWtaX0hMN1hNbWJ6S0dMeFkwS1JqQXVVTHV2TndGVGptREhuMlA1SDhVNGhhcU5ZV1RRbUNIU0FGaUNkWHg5SHdwLUFkNmRjbWlpbXc1ZkxzOGxuM1Zyb010cExxbW1PTmNnUF9sOFJCWURaekFPUjFoa1lYQVk4cEQ4VWNIZlQyR3ZRSGRZZFF3?oc=5",
+   "publicado": "2026-11-25T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Ações da Embraer tombam após anúncio de novas tarifas dos EUA e lideram perdas do Ibovespa",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdWFXV3FteHJyck0wNXgxTTRUMDJ4UHkzRl9OZWx2cGdXODNrazF4ZEMxVXBneC1XS1hGbnItTm9Vcnl1WjVaSDdBa1pGSlhGVjVBeWdvZFhJb00xOW5mU1hBN05YQ3U4bFUxU2xZd3B0WTN3TmdyMjdUb0cwODU0LXpLS0RMWGh3a3ZMZGhuN2pOMFVfQ0ZTZ3JkMHVKUVRndWZaem4wNG5yeDlDQjByOXpSb3FfTzJhX3Y3dzkzWWljTHVrcnNpUHpKY1drbGtnYXVYeGlsOFRWa25V0gHrAUFVX3lxTE9WaFJrTUhzRmMyNjlfbUlzUU9Mang4RDNfa1pnN25XcTY4MDhNQU5ocVVfQnBaVTRVay1RMEhLdEZHNEFTRjdjMjk2RGxJalBjTlZlUHp1Y2ttQ0w5STg1eFludkVNdkwxUjhoSk9UYkI4WlNUZFhlZWNJM2YyQnFRamVydldtNzR5d3hueDNESjV3U0dpblo5OFk0eG1iSHNnTHZBVVN3WDJjQkVUdXBrZm1SM1NsRUZGclVJaEtYdmJDbGZsQWx0dWtUUnd2eGhzSnEtUEIzN2pWZ2NNN2hVXzRMSTBRejlTSFk?oc=5",
@@ -1099,7 +1137,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T11:20-03:00",
+ "atualizado_em": "2026-11-25T11:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1148,6 +1186,20 @@
    ],
    "tickers": [
     "EMBR3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa avança com fiscal e PCE; Vale tem leve recuperação",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVkFLeFdnUUdrYXNNUmZTSnVmVmRqQmNyR09vRUM5WmtSQUp2XzF2YnVqMU81TXV5cExWRVF5UkYyQWdoTUtOZmMwRnVqMkdrN2ZyVXI3RWdyX2pibFkzVkJWV0IxdkQ5MXRaWmJ3MHlYWE94b0xFM0M4NUVCMVlKVDc0T1FTVGtZdlQ3ZkFKSEgtelczeDZyQmx2MmVOa1I1RlRiRTVmOWtLUmhjZGl1RG5DZzVURmPSAcYBQVVfeXFMTmwtbTV6V0NWVDJCdThoWm5jX0NMMlNaUGV0eHlmeHVibnJHWm9NRV84NG5ZdDd0QzNZWXVKbWtaX0hMN1hNbWJ6S0dMeFkwS1JqQXVVTHV2TndGVGptREhuMlA1SDhVNGhhcU5ZV1RRbUNIU0FGaUNkWHg5SHdwLUFkNmRjbWlpbXc1ZkxzOGxuM1Zyb010cExxbW1PTmNnUF9sOFJCWURaekFPUjFoa1lYQVk4cEQ4VWNIZlQyR3ZRSGRZZFF3?oc=5",
+   "publicado": "2026-11-25T10:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": [
+    "VALE3"
    ]
   },
   {
@@ -1223,7 +1275,7 @@
    "tickers": []
   },
   {
-   "titulo": "EUA propõem elevar tarifas sobre importações do Brasil, incluindo taxa de 10% sobre aviões",
+   "titulo": "EUA criticam governo Lula e propõem elevar tarifas sobre o Brasil, incluindo taxa de 10% sobre aviões",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-realizara-audiencia-em-janeiro-sobre-proposta-de-alteracao-das-tarifas-aplicadas-ao-brasil.shtml",
    "publicado": "2026-11-25T10:34-03:00",
@@ -1257,21 +1309,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Dólar forte favorece Vale e CSN Mineração, mas pressiona Usiminas, diz Morgan Stanley",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPR1Bud1dhd3JrSXFueU5ScUNTQWNxZEhmLTZNZk5kclZGVzJ2OTA1WUIwUVp5VHV2RTdIVWdOMm9MRTVfbzJqUUpLc2FvWnhDY19zMzFmeHdUREJmZU5SWHlzc1drZ0NQZW0tbWlLblJwWUtXYnlHQThaMXJCOEg3ZXpReTVFRGNJZngwWWZBcU1YUjFaMmIzaUhVd0FQcTBvbENxc1BrM2NsSzZMUENKQldYY0FvcUQ2a0hxQTJvTdIBxAFBVV95cUxQYXlZdzl5anZQRmlzenVrZVg0a2MyRHFabVk3a3BNbjFJOEJTMC1JTG9ibnJ5c0g1RmtxbDUxWU93dV8wM1pvOVpLMFZpbEtUVEFZWXQ3T0Q0SmZQU29vaExiWkZ6T0Rsa1VKeGJPZEFnTlMwZVhna1ZnOS1LUlZPMURkSkpkYVpzRVVYRVAzSnRCU3Z0enJ2QzFGcEFFcllZMWJrbktPbWNxX0ZZVjVaMW8wOHFDZU4xTV9YLVpzVEVMUFIt?oc=5",
-   "publicado": "2026-11-25T10:05-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "CMIN3",
-    "VALE3"
-   ]
   },
   {
    "titulo": "Dólar cai e Bolsa avança com inflação dos EUA no radar, expectativa por sinais fiscais e elevação de tarifas de Trump",
