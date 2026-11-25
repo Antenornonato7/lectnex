@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T15:25-03:00",
+  "atualizado_em": "2026-11-25T15:28-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -255,7 +255,11 @@
     ],
     [
      "15:10",
-     166308.0
+     166344.0
+    ],
+    [
+     "15:13",
+     166298.0
     ]
    ]
   },
@@ -572,7 +576,11 @@
     ],
     [
      "15:25",
-     5.8116
+     5.8157
+    ],
+    [
+     "15:28",
+     5.8163
     ]
    ]
   },
@@ -1386,7 +1394,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.12
+    "dolar30": 0.19
    },
    {
     "hora": "15:00",
@@ -1399,7 +1407,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.12
+    "dolar30": 0.19
    },
    {
     "hora": "15:02",
@@ -1412,7 +1420,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.2
    },
    {
     "hora": "15:08",
@@ -2437,7 +2445,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T15:25-03:00",
+ "atualizado_em": "2026-11-25T15:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2543,6 +2551,21 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-25T14:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Mais S&P 500 e menos Ibovespa: a estratégia da Itaú Asset para os investimentos em 2027",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRXZPNmhjajB0bzNfcEQ3dWd5bkoxSmh2QW96eEtDSXotN0hVZ3NCZHJMZ293QVNkaUNwc3U3Z2VWdTJ5V0xoazNwSERvLVdWdkp6U1d4NVFTVlRJYnIyaHktLUxPTnBORlRhVWtaS3E1eWVKS3NCWnF3X3VvQVlqYl85VTZUaGE0Wmo3S3I1NFl1azRCaFF5cEZlVklaa1lCRGItQ0ZzdHR1Sy03ZmRISXpUbFBweEROMkZfQWZB?oc=5",
@@ -2614,19 +2637,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Após taxação dos EUA, Embraer defende tarifa zero para a setor aeroespacial",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468072",
-   "publicado": "2026-11-25T13:21-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
   },
   {
    "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
