@@ -2865,14 +2865,18 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T20:26-03:00",
+ "atualizado_em": "2026-11-25T20:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
-  "Folha"
+  "Exame",
+  "Folha",
+  "InfoMoney",
+  "Money Times"
  ],
  "noticias": [
   {
@@ -2894,6 +2898,31 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Cosan (CSAN3) negocia reduzir participação na Rumo, Compass e Moove, dizem fontes",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVEdvWTdrVHo4ZjljNGcwVEo2S1JKYlhiVzZKWnl2eVJJOWhCdmlaeTl3XzJaN1VybVNIRWxoSmdjMFBLWDNpYmN5bl82UDVQc2VBV0h6WHJaWHV5TDJpOWxrNmZsTHcyOFR4OE9sUUhidm1mdHhNRVRRV19jYmhlLVdqTWlub3h0WGttd29UaXNhVl9tYzNNR0h6WWN2SUoxYWs5dVVlR2lSbDd5NUpORmlLWQ?oc=5",
+   "publicado": "2026-11-25T19:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "CSAN3"
+   ]
+  },
+  {
+   "titulo": "Ibovespa fecha em forte alta, acima de 1%, com expectativa de nova rodada de ajuste fiscal",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nRkd2YjktU0paekNSX2psWmJxbzJaSVpxdFdrTDVxOHJXclk2TE1BQlotMS1VYjh4eHRnaVBETko5dVprdjVvYVJ4anBOSFJzNVVxZ05VY3ZaSFBhY2FDWDNYdG1UM2F0cXlV?oc=5",
+   "publicado": "2026-11-25T19:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
    ],
    "tickers": []
   },
@@ -2943,10 +2972,33 @@
    "tickers": []
   },
   {
+   "titulo": "Especulações para Fazenda e fiscal: o que fez Ibovespa subir 1,6% após 4 quedas",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOXzEtcEhCb1Utb0MzaWZQZDF4cE16MldqeG8yMEdPZEdzYkktTEV0TDQtVVotWVZHbkx1MnNwMXoxbTYydGI3ZEd5TUZYSlFtNXh1R3I1SU9PNXdhVGktY3F0a1FSZnFLSEVzY3BIQV9WQVBKWTRvaGItVTBReUJMVy15MFpTdV9oZGZz0gGQAUFVX3lxTE1yMlFkRnFRYTczQjhOM3ZxVHV4ZzEyaURJai1IQlVXeDlVNk1wbUVNU01TMVRwRWtEN0ZTNGxjMDFkUUVqMFctR2VIVFJYTnJjV3B5MmV5ODVWY25SZ21EYXlJa040Q1FiUE1JQ0pfRUNTcHhLV0VaZW5sYTBlcVBVZGJHa3BLelZmeVZ5VGlaMg?oc=5",
+   "publicado": "2026-11-25T18:49-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Governo diz que novas tarifas dos EUA são ‘ação inaceitável’, buscam pressionar País e atingir Pix",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/governo-diz-que-novas-tarifas-dos-eua-sao-acao-inaceitavel-buscam-pressionar-pais-e-atingir-pix/",
    "publicado": "2026-11-25T18:49-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo Lula reage a nova tarifa dos EUA e diz que Brasil não cederá a “ameaças”",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUVhvbkNKNDh5eG5FQUdENEtCU0NaX3BHNndCOEpmMHRGRHY3ZTZaaVFfcUpJX2hMYS1PZVFIOVFveEhTa21GbGQzcjBFWmRBV2liVnNKM2xhYmh1NVVuMGhfYWh3empxUWstck8xRmM2aEdiZWU4WkFBVHhnRXVOSVlJMGs5eXJKZEZtUlJzZDJGeXFLT0kxdHlBaWFXNlltanFWUnR5bEpudVVhY2Jpb2Q4VEzSAboBQVVfeXFMTkphUWtuSXRfVk1EbUpuUDY2ai1aUXh4c19NOTlLWHltSHZKNl9va3ktZmZFY2dkUTBhMzVPSXpUMzhhc2R4VHVORnhpeWhGejFUQzBXbjZPbkx0aHJLMDFzQjZfdnRCVXlqRXRZbE9GRnVBMFpLSlhzX2wyN2tWOUlaRlBacm05WENPS1dQRFd0cWxFX1VmRXVyeFJGZ0FaTnJpcjRyYnpLd1NMbHgzZVpuR2UzeDRCRmtR?oc=5",
+   "publicado": "2026-11-25T18:43-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
