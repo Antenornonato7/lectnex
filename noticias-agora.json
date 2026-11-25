@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T15:10-03:00",
+  "atualizado_em": "2026-11-25T15:13-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -243,7 +243,11 @@
     ],
     [
      "14:55",
-     166274.0
+     166392.0
+    ],
+    [
+     "14:58",
+     166330.0
     ]
    ]
   },
@@ -548,7 +552,11 @@
     ],
     [
      "15:10",
-     5.8086
+     5.8121
+    ],
+    [
+     "15:13",
+     5.8111
     ]
    ]
   },
@@ -1389,22 +1397,23 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "15:08",
+    "titulo": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Dólar e juros futuros caem com esperança de novo pacote fiscal",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM3hpMmpPQ09GOC13MFFQQmN2b0VuR0V1Tm15dGxBX3k5anBhQnNUZTEwWHlHRzlaT3poX3VyVUIyS1owenVHcXZhd0xOT0p4R3VDQXZGTjBDSkFFQVA2aVlVdmkxc3dVRzFRMzF1QklJNUpUYkU3cWdPZ2pCYmhfVUZ6SDhoS1QtTjZQa2JOemFkNFlGNG5mckR2Ukg2ZXRrYWdWemFaQWhfaHBHcU1Zdy0yc1BLYVNIQ0dfQ9IBywFBVV95cUxPdkladU9od0RuN0diS1BZLTVxS081M2c4WGgycjQ3V1FuRTU0c242azFvU1FwN25kaGIydjRTc1hwaXhWNE1HNE1oeUNlWmIwaUdDT2lDcmxaT005VTlFQnR6Z0NBd180Vy1EdnFVRjZPejVadk8tTHU4bThoQjhfTW5nbktjSDBjR0s3OVJLeWFiOFloMGtEZmNBUmZ0QVdBWG1zQ1NhQ2Z3OTB3UTJIR1VicEFhTWdfUnprcVIzT1ZwWnp3UTJRV3VHWQ?oc=5",
-   "publicado": "2026-11-25T05:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Entenda como o dólar ao redor de R$ 6 encarece comida, eletrônicos e passagens aéreas",
    "fonte": "InfoMoney",
@@ -2359,6 +2368,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+   "publicado": "2026-11-25T15:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2388,7 +2408,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T15:10-03:00",
+ "atualizado_em": "2026-11-25T15:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2480,6 +2500,21 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-25T14:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
   },
   {
    "titulo": "Mais S&P 500 e menos Ibovespa: a estratégia da Itaú Asset para os investimentos em 2027",
@@ -2580,17 +2615,6 @@
    "tickers": [
     "BBDC4"
    ]
-  },
-  {
-   "titulo": "Saiba quais países podem ser tarifados após nova ofensiva comercial dos EUA",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/quais-paises-tarifados-nova-ofensiva-comercial-eua/",
-   "publicado": "2026-11-25T12:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
