@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T16:08-03:00",
+  "atualizado_em": "2026-11-25T16:10-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -287,11 +287,11 @@
     ],
     [
      "15:50",
-     167016.0
+     167002.0
     ],
     [
-     "15:53",
-     167011.0
+     "15:55",
+     167002.0
     ]
    ]
   },
@@ -504,7 +504,7 @@
     ],
     [
      "13:15",
-     5.8612
+     5.863
     ],
     [
      "13:20",
@@ -640,11 +640,11 @@
     ],
     [
      "16:05",
-     5.8191
+     5.8126
     ],
     [
-     "16:08",
-     5.8135
+     "16:10",
+     5.8139
     ]
    ]
   },
@@ -1523,7 +1523,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": -0.1
    },
    {
     "hora": "15:39",
@@ -1538,7 +1538,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": -0.1
    },
    {
     "hora": "15:39",
@@ -1554,7 +1554,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": 0.01
+    "dolar30": -0.1
    },
    {
     "hora": "15:51",
@@ -1581,21 +1581,25 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "16:08",
+    "titulo": "Itaú BBA aponta quem pode entrar, sair e ganhar espaço na nova carteira do Ibovespa",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWldwR2ozVmxPTWppUGxGUHVfV1hVTGNEX0poYlYtbGtsX3hsYk5NbjA4Q182V3J0Xzh2NmpNajZyX3VGTXBpcXQ5Yl9VSjBtNzdSb21ZZDBxQjc3ZEFoVXpsWmdLZ1hMNktRVFdLY002YkN2MDdheXh6OWlqT3ZCclNRNzIxemJYNExaMDlCNTlqcG9US0lIb1FzLXpEaGl0Z3dJVnpOQ0o5U0ZwS3VyV1puem1vbmVuUVZ1eldXUXgya293NzhWazM0Q3Z4M0hTZUhhejAtaDZCUUhOWXduM0lETQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Real perde 15,6% ante o dólar e lidera queda entre 27 moedas um mês após reeleição de Lula",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNV2p2UXN5bXdjVkVxWDFXbzh6OENKZldocHNUM2ZWMUV5R1RfTUZFQmxfZDV5LXhSOEE0NFVjY3h2LVdIV3o3bDdhZlhZRFhjVVdnQ0l6VThWS2hmR1h5VDBURklGWUd6enF5enlaMy0zeEkyUTFhcERUSG1lc21aMVpqMkttZ3JlbUNBOVpGang5RjlfLVcydUltNllmdDJqN1drWThIdDl1ajltdUUydF9EcDJqQ2d2ZS0yQ1VIeXk?oc=5",
-   "publicado": "2026-11-25T06:03-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Inflação nos EUA, reunião de Lula com equipe econômica e mais destaques desta 4ª",
    "fonte": "InfoMoney",
@@ -2550,6 +2554,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Itaú BBA aponta quem pode entrar, sair e ganhar espaço na nova carteira do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWldwR2ozVmxPTWppUGxGUHVfV1hVTGNEX0poYlYtbGtsX3hsYk5NbjA4Q182V3J0Xzh2NmpNajZyX3VGTXBpcXQ5Yl9VSjBtNzdSb21ZZDBxQjc3ZEFoVXpsWmdLZ1hMNktRVFdLY002YkN2MDdheXh6OWlqT3ZCclNRNzIxemJYNExaMDlCNTlqcG9US0lIb1FzLXpEaGl0Z3dJVnpOQ0o5U0ZwS3VyV1puem1vbmVuUVZ1eldXUXgya293NzhWazM0Q3Z4M0hTZUhhejAtaDZCUUhOWXduM0lETQ?oc=5",
+   "publicado": "2026-11-25T16:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
   }
  ],
  "enviadas": [
@@ -2579,7 +2596,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T16:08-03:00",
+ "atualizado_em": "2026-11-25T16:10-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2592,6 +2609,19 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Itaú BBA aponta quem pode entrar, sair e ganhar espaço na nova carteira do Ibovespa",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWldwR2ozVmxPTWppUGxGUHVfV1hVTGNEX0poYlYtbGtsX3hsYk5NbjA4Q182V3J0Xzh2NmpNajZyX3VGTXBpcXQ5Yl9VSjBtNzdSb21ZZDBxQjc3ZEFoVXpsWmdLZ1hMNktRVFdLY002YkN2MDdheXh6OWlqT3ZCclNRNzIxemJYNExaMDlCNTlqcG9US0lIb1FzLXpEaGl0Z3dJVnpOQ0o5U0ZwS3VyV1puem1vbmVuUVZ1eldXUXgya293NzhWazM0Q3Z4M0hTZUhhejAtaDZCUUhOWXduM0lETQ?oc=5",
+   "publicado": "2026-11-25T16:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
   {
    "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
    "fonte": "Estadão",
@@ -2769,17 +2799,6 @@
    "tickers": [
     "BBDC4"
    ]
-  },
-  {
-   "titulo": "Governo Lula vê novo tarifaço dos EUA como pressão para impor condições em negociação",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/governo-lula-novo-tarifaco-eua-pressao-impor-condicoes-negociacao/",
-   "publicado": "2026-11-25T13:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
