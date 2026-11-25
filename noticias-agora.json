@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T17:00-03:00",
+  "atualizado_em": "2026-11-25T17:03-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -328,6 +328,10 @@
     [
      "16:40",
      166764.0
+    ],
+    [
+     "16:45",
+     166807.0
     ]
    ]
   },
@@ -720,7 +724,11 @@
     ],
     [
      "17:00",
-     5.8158
+     5.8151
+    ],
+    [
+     "17:03",
+     5.8156
     ]
    ]
   },
@@ -1633,6 +1641,21 @@
     "dolar30": -0.1
    },
    {
+    "hora": "15:39",
+    "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRkxBcWloVWZrSC1hRmZERC1KX3QwMkN3WGxDaVA4WFUyaEN2WXVvNmRiQkdZVHl5M0x1dmhEaTJncEVwbUNQaUs1S2dtN0ViTy04aHhXT3VHRjgyTFFxLXpIX0tvYnFWQ2FkTTdqd0luckxWUVVFblBlUGtYSXFKSEJZRlVaWUZaQ0FwX2VuMG1YQXQxMkJyLXdVaU8tT2NxZFR1VWhUOXotTTFLM1R4NGlWc2I0anJmX2laOW1iUmhOYXUwek5fVkl4LU9uVmlQUkNUWFNyV2NWRS1yc09nLTM4TUXSAeQBQVVfeXFMTUZMQXFpaFVma0gtYUZmREQtSl90MDJDd1hsQ2lQOFhVMmhDdll1bzZkYkJHWVR5eTNMdXZoRGkyZ3BFcG1DUGlLNUtnbTdFYk8tOGh4V091R0Y4MkxRcS16SF9Lb2JxVkNhZE03andJbnJMVlFVRW5QZVBrWElxSkhCWUZVWllGWkNBcF9lbjBtWEF0MTJCci13VWlPLU9jcWRUdVVoVDl6LU0xSzNUeDRpVnNiNGpyZl9pWjltYlJoTmF1MHpOX1ZJeC1PblZpUFJDVFhTcldjVkUtcnNPZy0zOE1F?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "ITUB4"
+    ],
+    "ibov30": -0.0,
+    "dolar30": -0.1
+   },
+   {
     "hora": "15:51",
     "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
     "fonte": "Estadão",
@@ -1703,18 +1726,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Tempo real: Ibovespa acompanha novas medidas de ajuste fiscal e PCE dos EUA; veja os destaques desta quarta-feira (25)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0ySlZrRWtZNGNtT1ZmR1QyU0YxX3VhWVZoNWpZanhhbmx4WDdCLW1VMWUyRGxEMXdJMm5Zbk9rSENJT0s3Z0hlcGE2S01WSVFqYnlQZExTVlgwOXN1eG5WQ29LY0RFRXRv?oc=5",
-   "publicado": "2026-11-25T06:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Vai viajar e precisa comprar dólar? Como comparar o custo em espécie e na conta global",
    "fonte": "Estadão",
@@ -2615,6 +2626,19 @@
    ]
   },
   {
+   "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRkxBcWloVWZrSC1hRmZERC1KX3QwMkN3WGxDaVA4WFUyaEN2WXVvNmRiQkdZVHl5M0x1dmhEaTJncEVwbUNQaUs1S2dtN0ViTy04aHhXT3VHRjgyTFFxLXpIX0tvYnFWQ2FkTTdqd0luckxWUVVFblBlUGtYSXFKSEJZRlVaWUZaQ0FwX2VuMG1YQXQxMkJyLXdVaU8tT2NxZFR1VWhUOXotTTFLM1R4NGlWc2I0anJmX2laOW1iUmhOYXUwek5fVkl4LU9uVmlQUkNUWFNyV2NWRS1yc09nLTM4TUXSAeQBQVVfeXFMTUZMQXFpaFVma0gtYUZmREQtSl90MDJDd1hsQ2lQOFhVMmhDdll1bzZkYkJHWVR5eTNMdXZoRGkyZ3BFcG1DUGlLNUtnbTdFYk8tOGh4V091R0Y4MkxRcS16SF9Lb2JxVkNhZE03andJbnJMVlFVRW5QZVBrWElxSkhCWUZVWllGWkNBcF9lbjBtWEF0MTJCci13VWlPLU9jcWRUdVVoVDl6LU0xSzNUeDRpVnNiNGpyZl9pWjltYlJoTmF1MHpOX1ZJeC1PblZpUFJDVFhTcldjVkUtcnNPZy0zOE1F?oc=5",
+   "publicado": "2026-11-25T15:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "ITUB4"
+   ]
+  },
+  {
    "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcF84T0I2REV0MUNhLU5xVzlKNEM0NXVYUmVOTTJ4NjJtSE5qWEN1UTZMaGt2VDZRLVBVMlB1OXNCcFhKbGJnN2psZDRRc09tR2FRRU1IUWNKcHNVWEowUVZmQTNlODdsQVFsbWRHX01Uc0k5N0twdG11SWJ0by1iSl9BQ3pvMnlZSGdpenFvOGx3NWhwZG1sUGwwYkF4NENVVl91LWRrNElwQlJXekhMY1R5REZLam05Umw3bUZSUElETG5nY0VGWEM0ONIB0AFBVV95cUxNOVB2bzQzVXpzNDEtTHNDdlBDUEZGVk1MUXNxbUNZOE4zS01NYTVhaFFMdGFTNWhpTGRFUTJ5eGttNXFBQTA0d2tYRDExT3AtdzlQSjZRVGRheWcxM1FMWkZnRk5aNDZQYU53enF2cDhTNHpNZHRZcVFnVXR4MTNseGF5RFNWUWVFdnpxQU5PQ1g1Vm5aSVZIdEV0UnZWZnJEWHJOU1VvRHlrYlAyMzNreFFOR2hMTVZncGEwZWNUS0tPM1FneW1BRHpvMTFHUW1Z?oc=5",
@@ -2700,7 +2724,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T17:00-03:00",
+ "atualizado_em": "2026-11-25T17:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2811,7 +2835,7 @@
   {
    "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj0gHkAUFVX3lxTE1GTEFxaWhVZmtILWFGZkRELUpfdDAyQ3dYbENpUDhYVTJoQ3ZZdW82ZGJCR1lUeXkzTHV2aERpMmdwRXBtQ1BpSzVLZ203RWJPLThoeFdPdUdGODJMUXEtekhfS29icVZDYWRNN2p3SW5yTFZRVUVuUGVQa1hJcUpIQllGVVpZRlpDQXBfZW4wbVhBdDEyQnItd1VpTy1PY3FkVHVVaFQ5ei1NMUszVHg0aVZzYjRqcmZfaVo5bWJSaE5hdTB6Tl9WSXgtT25WaVBSQ1RYU3JXY1ZFLXJzT2ctMzhNRQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRkxBcWloVWZrSC1hRmZERC1KX3QwMkN3WGxDaVA4WFUyaEN2WXVvNmRiQkdZVHl5M0x1dmhEaTJncEVwbUNQaUs1S2dtN0ViTy04aHhXT3VHRjgyTFFxLXpIX0tvYnFWQ2FkTTdqd0luckxWUVVFblBlUGtYSXFKSEJZRlVaWUZaQ0FwX2VuMG1YQXQxMkJyLXdVaU8tT2NxZFR1VWhUOXotTTFLM1R4NGlWc2I0anJmX2laOW1iUmhOYXUwek5fVkl4LU9uVmlQUkNUWFNyV2NWRS1yc09nLTM4TUXSAeQBQVVfeXFMTUZMQXFpaFVma0gtYUZmREQtSl90MDJDd1hsQ2lQOFhVMmhDdll1bzZkYkJHWVR5eTNMdXZoRGkyZ3BFcG1DUGlLNUtnbTdFYk8tOGh4V091R0Y4MkxRcS16SF9Lb2JxVkNhZE03andJbnJMVlFVRW5QZVBrWElxSkhCWUZVWllGWkNBcF9lbjBtWEF0MTJCci13VWlPLU9jcWRUdVVoVDl6LU0xSzNUeDRpVnNiNGpyZl9pWjltYlJoTmF1MHpOX1ZJeC1PblZpUFJDVFhTcldjVkUtcnNPZy0zOE1F?oc=5",
    "publicado": "2026-11-25T15:39-03:00",
    "impacto": "medio",
    "ativos": [
