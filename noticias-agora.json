@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T13:00-03:00",
+  "atualizado_em": "2026-11-25T13:03-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -139,7 +139,11 @@
     ],
     [
      "12:45",
-     164943.0
+     165031.0
+    ],
+    [
+     "12:48",
+     165027.0
     ]
    ]
   },
@@ -340,7 +344,11 @@
     ],
     [
      "13:00",
-     5.852
+     5.8517
+    ],
+    [
+     "13:03",
+     5.857
     ]
    ]
   },
@@ -897,7 +905,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.09,
+    "ibov30": 0.14,
     "dolar30": -0.24
    },
    {
@@ -911,7 +919,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.11
+    "dolar30": -0.12
    }
   ]
  },
@@ -1713,7 +1721,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T13:00-03:00",
+ "atualizado_em": "2026-11-25T13:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1727,6 +1735,30 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+   "publicado": "2026-11-25T13:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "China e EUA realizam primeiras reuniões de grupo para debater agricultura",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://aovivo.folha.uol.com.br/mercado/2026/10/25/6568-dolar-empresas-e-bolsas-acompanhe-ao-vivo-o-mercado.shtml#post468071",
+   "publicado": "2026-11-25T12:59-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "PGFN diz que não há contradição entre alíquota elevada para Imposto Seletivo e função extrafiscal",
    "fonte": "Folha",
@@ -1878,29 +1910,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-   "publicado": "2026-11-25T10:37-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Orçamento 2027: Congresso aumenta projeção de receitas em R$ 37 bilhões após pacote fiscal de Lula",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/orcamento-2027-congresso-aumenta-projecao-de-receitas-em-r-37-bilhoes-apos-pacote-fiscal-de-lula/",
-   "publicado": "2026-11-25T10:36-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   },
