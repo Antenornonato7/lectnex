@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T10:30-03:00",
+  "atualizado_em": "2026-11-25T10:33-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -19,7 +19,11 @@
     ],
     [
      "10:15",
-     164506.0
+     164453.0
+    ],
+    [
+     "10:18",
+     164489.0
     ]
    ]
   },
@@ -100,7 +104,11 @@
     ],
     [
      "10:30",
-     5.8944
+     5.8882
+    ],
+    [
+     "10:33",
+     5.8882
     ]
    ]
   },
@@ -267,6 +275,20 @@
     "ativos": [
      "WIN",
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:31",
+    "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -698,6 +720,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+   "publicado": "2026-11-25T10:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -732,7 +766,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T10:30-03:00",
+ "atualizado_em": "2026-11-25T10:33-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -746,6 +780,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Fed’s preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+   "publicado": "2026-11-25T10:31-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "EUA anunciam novas tarifas de até 20% sobre China, UE e mais 14 países",
    "fonte": "Folha",
@@ -913,19 +959,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "BTG Pactual vê oportunidade em meio a risco fiscal no Brasil e amplia presença regional",
-   "fonte": "Bloomberg Línea",
-   "url": "https://www.bloomberglinea.com.br/mercados/btg-pactual-ve-oportunidade-em-meio-a-risco-fiscal-no-brasil-e-amplia-presenca-regional/",
-   "publicado": "2026-11-25T08:37-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": [
-    "BPAC11"
-   ]
   },
   {
    "titulo": "China rebate EUA sobre ameaça de nova tarifa, vê manipulação e diz que guerra comercial não interessa",
