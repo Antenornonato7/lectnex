@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T12:25-03:00",
+  "atualizado_em": "2026-11-25T12:28-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -111,7 +111,11 @@
     ],
     [
      "12:10",
-     164951.0
+     165249.0
+    ],
+    [
+     "12:13",
+     165184.0
     ]
    ]
   },
@@ -284,7 +288,11 @@
     ],
     [
      "12:25",
-     5.8738
+     5.8698
+    ],
+    [
+     "12:28",
+     5.8699
     ]
    ]
   },
@@ -772,7 +780,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.41,
     "dolar30": -0.57
    },
    {
@@ -787,7 +795,7 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": null,
+    "ibov30": 0.41,
     "dolar30": -0.57
    },
    {
@@ -801,7 +809,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.41,
     "dolar30": -0.57
    },
    {
@@ -816,7 +824,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.16
+    "dolar30": -0.22
    }
   ]
  },
@@ -1585,7 +1593,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T12:25-03:00",
+ "atualizado_em": "2026-11-25T12:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1662,26 +1670,27 @@
    "tickers": []
   },
   {
-   "titulo": "Ações da Embraer caem mais de 9% após proposta dos EUA de tarifa sobre aviões brasileiros",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/acoes-da-embraer-caem-mais-de-6-apos-anuncio-de-tarifa-dos-eua-sobre-avioes-brasileiros.shtml",
-   "publicado": "2026-11-25T11:27-03:00",
+   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe com fiscal no radar; tarifas pressionam EMBJ3",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ1RjWkZvaVEzX2VESmpsSHN4bFBBUEU3RFNWYzhIcGRXcU42YkFXbGRKYUM1MVVBeTVwdVJwNGRZb2V0Yl9VdXYzbVNCZ3JuelVVcThUSkpia3ItRFpnbHotV0JBNlR0TVBxRHZJTkFNcm9qazZ0SHpESFZNNHBkRnAyWlJMSDlJR1lmQnBYOA?oc=5",
+   "publicado": "2026-11-25T11:30-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
+    "WIN"
    ],
    "tickers": [
-    "EMBR3"
+    "EMBJ3"
    ]
   },
   {
-   "titulo": "Inflação nos EUA sobe ainda mais em outubro",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/inflacao-nos-eua-sobe-ainda-mais-em-outubro.shtml",
-   "publicado": "2026-11-25T11:26-03:00",
+   "titulo": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
+   "publicado": "2026-11-25T11:29-03:00",
    "impacto": "medio",
    "ativos": [
-    "DI"
+    "WIN",
+    "WDO"
    ],
    "tickers": []
   },
