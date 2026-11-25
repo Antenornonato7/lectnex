@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-25T07:50:00-03:00",
+  "atualizado_em": "2026-11-25T12:55:00-03:00",
   "eventos": [
     {
       "data": "2026-11-25",
@@ -26,14 +26,17 @@
       "importancia": 2,
       "anterior": "3,4%",
       "consenso": "3,5%",
-      "resultado": null,
+      "resultado": "4,3%",
       "impacto": {
         "wdo": "volatil",
         "di": "volatil"
       },
       "nota": "Primeira estimativa mostrou alta de 3,4% (BEA).",
       "tipo": "pib-eua",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "PIB americano forte costuma sustentar juros longos dos EUA e o dólar global, o que tende a pressionar o WDO e os DIs para cima."
+      }
     },
     {
       "data": "2026-11-25",
@@ -43,7 +46,7 @@
       "importancia": 3,
       "anterior": "3,1%",
       "consenso": "3,2%",
-      "resultado": null,
+      "resultado": "3,3%",
       "impacto": {
         "wdo": "volatil",
         "di": "volatil",
@@ -51,7 +54,10 @@
       },
       "nota": "Medida de inflação preferida do Fed, antes da reunião de dezembro; consenso de 0,3% no mês para o núcleo e de 3,8% em 12 meses para o índice cheio (Dow Jones, via InfoMoney). Sai antes do feriado de Ação de Graças.",
       "tipo": "pce-eua",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "Núcleo do PCE acima do esperado reforça a aposta em juros altos do Fed, o que costuma fortalecer o dólar, pressionar os DIs e pesar no WIN."
+      }
     },
     {
       "data": "2026-11-25",
@@ -61,7 +67,7 @@
       "importancia": 1,
       "anterior": "1,9%",
       "consenso": null,
-      "resultado": null,
+      "resultado": "0,2%",
       "impacto": {
         "wdo": "volatil"
       },
@@ -77,7 +83,7 @@
       "importancia": 1,
       "anterior": "203 mil",
       "consenso": null,
-      "resultado": null,
+      "resultado": "189 mil",
       "impacto": {
         "wdo": "volatil"
       },
