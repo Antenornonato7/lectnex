@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-25",
-  "atualizado_em": "2026-11-25T15:05-03:00",
+  "atualizado_em": "2026-11-25T15:08-03:00",
   "ibov": {
    "anterior": 164089.81,
    "pontos": [
@@ -239,11 +239,11 @@
     ],
     [
      "14:50",
-     166099.0
+     166087.0
     ],
     [
-     "14:51",
-     166122.0
+     "14:53",
+     166080.0
     ]
    ]
   },
@@ -544,11 +544,11 @@
     ],
     [
      "15:05",
-     5.8024
+     5.8087
     ],
     [
-     "15:06",
-     5.8047
+     "15:08",
+     5.8111
     ]
    ]
   },
@@ -1319,6 +1319,23 @@
     "dolar30": 0.04
    },
    {
+    "hora": "14:09",
+    "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "PETR4",
+     "VALE3"
+    ],
+    "ibov30": 0.05,
+    "dolar30": -0.07
+   },
+   {
     "hora": "14:51",
     "titulo": "Juros forçados para baixo podem acabar em recessão, com mais inflação e pobreza",
     "fonte": "Folha",
@@ -1363,17 +1380,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Por que o dólar passou de R$ 5,90 hoje?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRS12V2E5S3cyVXRLVmk0UXpyUkRHM0pyM01Pc1JwcVVvaEFFVE1HQjRCZEx0TGFSVEl4Zkd3UWtRQ042VTRhazFrQzMyN19ZNzl1ODJ6a091anNvbm9pb05ZemhmcERpU0R5cUhFN2pDazlVUjEyWnVPNGNWRDl0cXdqeldtbmdncnl4b2Zhc3pBSWN3cVcyWmZPVTNOZmFOWEt4bDBn?oc=5",
-   "publicado": "2026-11-25T04:40-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Treasury yields fall as investors await key inflation signal",
    "fonte": "CNBC",
@@ -2291,6 +2297,21 @@
    ]
   },
   {
+   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-25T14:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Juros forçados para baixo podem acabar em recessão, com mais inflação e pobreza",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/juros-forcados-para-baixo-podem-acabar-em-recessao-com-mais-inflacao-e-pobreza.shtml",
@@ -2354,7 +2375,7 @@
    "em": "2026-11-25T13:23:05+00:00"
   }
  ],
- "atualizado_em": "2026-11-25T15:05-03:00",
+ "atualizado_em": "2026-11-25T15:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2366,6 +2387,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+   "publicado": "2026-11-25T15:08-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Até onde o dólar pode ir diante da incerteza fiscal no governo Lula 4?",
    "fonte": "Money Times",
@@ -2415,6 +2447,32 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar hoje cai mais de 1,6%, a R$ 5,81, com especulações sobre ministro da Fazenda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcEpha3pvUHNvaFpaWF9BZlhGQkZoWVF6aDZlaWE5ODhMc3NJc2l1RDJkQ2wyT0JoclJ2d2ZmRV96OVA3MDlacEJyNVRGbVhnNk9qM0xDTXIyOUotbmQzZ3ZRSHdFZ1owS3FfRXhyaXp0b1BESTFoV3V3Yk9CTlRvc01Qc1VNb3lVWVpMWWllSU5WaW01RUJXUjNGczLSAaIBQVVfeXFMUF9PSWJHUGdUWFBkR09VOFRibjlTX1RKQjZoV1JULUliV1dFd0tjN2xOLXBuVXpEQUNUMFd4bXFyeEphaDYyUGdpU3NtNDJzdUstTzZWYWtTMnVQdnJfdzJta2pSVUZ0bVlnVzV2dkYtU1dvSjVpQ3JBQ2lZRE12SjRrZDlRWjZxallhT3dhM0M2cWVad1oxOHdfcG1WZ0JWaWt3?oc=5",
+   "publicado": "2026-11-25T14:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-25T14:09-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Mais S&P 500 e menos Ibovespa: a estratégia da Itaú Asset para os investimentos em 2027",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRXZPNmhjajB0bzNfcEQ3dWd5bkoxSmh2QW96eEtDSXotN0hVZ3NCZHJMZ293QVNkaUNwc3U3Z2VWdTJ5V0xoazNwSERvLVdWdkp6U1d4NVFTVlRJYnIyaHktLUxPTnBORlRhVWtaS3E1eWVKS3NCWnF3X3VvQVlqYl85VTZUaGE0Wmo3S3I1NFl1azRCaFF5cEZlVklaa1lCRGItQ0ZzdHR1Sy03ZmRISXpUbFBweEROMkZfQWZB?oc=5",
@@ -2451,17 +2509,6 @@
    "tickers": [
     "EMBR3"
    ]
-  },
-  {
-   "titulo": "Opinião | Nem US$ 1 bilhão do BC conteve a alta do dólar; o que isso revela sobre a economia?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOOE5UZEZwX0ZHWjl1SHNfcy10bjZtYzVKaGtMOUE5d0RFTzZ3dWxVUGk3cjVRczBQeExaMWtNYkJVMHhvVmZKc1ppOUl2NDR0TVQ4VkRjdVZSNHFrTDVBTGpiNU9uUjNsVFFkaS13YV9zZFVKRHh2OENFNHhSU19jc09CVk9Uc21OV0Rld3hFZjlfMzRjWHRIZVJ4Sjh6Sk1FTDJxRkFJU0l2WVJkamo5N3Y2aDQ5ZDR2bVh5aWN6RXEtRkVsMl91V2NfZjBIQkMwdHc?oc=5",
-   "publicado": "2026-11-25T13:38-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Trabuco, do Bradesco, vira opção para ministro da Fazenda de Lula, e ala do PT lembra fantasma de Levy",
@@ -2501,17 +2548,6 @@
    ]
   },
   {
-   "titulo": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
-   "publicado": "2026-11-25T13:20-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
@@ -2544,17 +2580,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "PGFN diz que não há contradição entre alíquota elevada para Imposto Seletivo e função extrafiscal",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/blogs/que-imposto-e-esse/2026/11/pgfn-diz-que-nao-ha-contradicao-entre-aliquota-elevada-para-imposto-seletivo-e-funcao-extrafiscal.shtml",
-   "publicado": "2026-11-25T12:35-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   }
