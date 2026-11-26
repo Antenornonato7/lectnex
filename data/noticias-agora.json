@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T11:08-03:00",
+  "atualizado_em": "2026-11-26T11:38-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -47,11 +47,35 @@
     ],
     [
      "10:50",
-     172639.0
+     172770.0
     ],
     [
-     "10:53",
-     172643.0
+     "10:55",
+     172969.0
+    ],
+    [
+     "11:00",
+     173040.0
+    ],
+    [
+     "11:05",
+     173219.0
+    ],
+    [
+     "11:10",
+     173696.0
+    ],
+    [
+     "11:15",
+     173956.0
+    ],
+    [
+     "11:20",
+     173523.0
+    ],
+    [
+     "11:23",
+     173637.0
     ]
    ]
   },
@@ -160,11 +184,35 @@
     ],
     [
      "11:05",
-     5.7227
+     5.7237
     ],
     [
-     "11:08",
-     5.7199
+     "11:10",
+     5.7185
+    ],
+    [
+     "11:15",
+     5.724
+    ],
+    [
+     "11:20",
+     5.722
+    ],
+    [
+     "11:25",
+     5.7175
+    ],
+    [
+     "11:30",
+     5.7143
+    ],
+    [
+     "11:35",
+     5.7177
+    ],
+    [
+     "11:38",
+     5.7202
     ]
    ]
   },
@@ -341,7 +389,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.41,
+    "ibov30": 0.48,
     "dolar30": -0.45
    },
    {
@@ -355,7 +403,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.41,
+    "ibov30": 0.48,
     "dolar30": -0.45
    },
    {
@@ -368,7 +416,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.29,
     "dolar30": -0.35
    },
    {
@@ -382,7 +430,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.29,
     "dolar30": -0.35
    },
    {
@@ -395,8 +443,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": -0.12
+    "ibov30": 0.5,
+    "dolar30": -0.14
    },
    {
     "hora": "10:47",
@@ -410,8 +458,8 @@
     "tickers": [
      "ITUB4"
     ],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.74,
+    "dolar30": 0.01
    },
    {
     "hora": "10:54",
@@ -424,8 +472,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.44,
+    "dolar30": -0.09
    }
   ]
  },
@@ -1006,7 +1054,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T11:08-03:00",
+ "atualizado_em": "2026-11-26T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1014,12 +1062,26 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa dispara mais de 3% com ‘efeito Trabuco’ e IPCA-15 abaixo do esperado; dólar cai a R$ 5,73",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
+   "publicado": "2026-11-26T11:14-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "IPCA-15 surpreende para baixo e reforça aposta em Selic “parada” por mais tempo",
    "fonte": "InfoMoney",
@@ -1057,19 +1119,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa dispara mais de 3% com ‘efeito Trabuco’ e IPCA-15 abaixo do esperado; dólar cai a R$ 5,73",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
-   "publicado": "2026-11-26T10:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Ibovespa sobe mais de 3% com expectativa sobre Lula 4 e IPCA-15; apenas duas ações caem",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdDRPZkdLbm5TQ0pLUm53LV9lMDhVRjFza3NBTUM5OFJyejlrZGlPZEV6RVhrYkstVU5GQmxiN0trbkRGejBreGx5T2R1Ymp1Y2hwdGdoeXdEMjRob1h2dWpvc3RXUS1CYWJmLTBVakZoSkN1SERKMVZYMmdWUkwtR3M0M1BtRVNJU0dQV0s1bVJtVEg4TkZrVUc3bDhHeHhkSFNzYXdOTmw1OG9OY0JSdmQ5T0hjSXhWMlNhWTlwWk9NeVhJNkhfUVpva3dyNVByWVlYbDNOa3d0SnlhYl9rWmJtZ1DSAfMBQVVfeXFMT094Z0luUE9lTkRralRyd21SWXZlMU9KQ0I3TzVpVnU0cDc4SXlhdXVpYV9WSmVPZl9UczdaYWJUdl83WGNfdm9oUlVFMUdBZ3N4ZlRHN2ZXaWpRZ3k5aS1RUEtPMnRWeUM4eElZR3JaSmJZSjJZb08xRm1OWGE1dUZlMU1LLV9MbEl4VDMzMEt2MFRYbXo5MGU5NEF1bTdnbVlrQUhZVXhQTEJJZlFITFdOMGd3T19QUFNIeW9WUUpDeV9mMTZySTBQTjBFX3UzZW4zWEw4a1IyVFBpNU9tTE1jQkFzb3pfNEdKcFBqbmNGSzNz?oc=5",
@@ -1089,6 +1138,42 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai abaixo de R$ 5,80 após Lula sondar possibilidade de Trabuco assumir Fazenda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNalNKN3NTMklPcXB3TjhTbk0wbUg1SnBEQnozek9pZ1JxbU5uVW9XZ3o4OVhRaGhhX0ZTaVdRN3FpNlA4UnNUbFhUM3RmOXV2T05CcS1LNVVBRENLdk5Ib3JCQUF3VWhYTWZsd2lYN3RCZXlldUZpM0FiejNLcHFQdnNpYnhtV0Y5T3ZGUXF0YkZveDY4bXA3a0FsOUbSAaIBQVVfeXFMTWFlcmhCZ2NBd0xqa01fYnZLWmtmeTdMb0RvZW85eXEzNkRCeXMyZ05JSElCa2RFemZmVDY5aVU1dzRVYXFVWlJ3aF9tZk1xaUNQZm5lN2xRYkVZUzVRWU1TZ1BVdURPVHVZb2NPRWlFQ0FMRTEtZi12S1duN0tfaEJpQ1dRTVRMTVViR0ZKYnlkbnVhNlNSaEVaemFDSzhDZWxB?oc=5",
+   "publicado": "2026-11-26T10:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tempo real: Ibovespa sobe forte e recupera os 172 mil pontos com IPCA-15; veja os destaques desta quinta-feira (26)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fSThLVDhWRmFMZVpGOEx2TGhrTjRqQVc4V0tReVVaeHR3cGE0Z3hNNHpTa2RVRWYwcWd1VTNCaDdMM3hyU2pLUXdfbWVfZGNsV2hCU1JrYTF4SmVKVERXVWhRVFFUNTds?oc=5",
+   "publicado": "2026-11-26T10:29-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa dispara e dólar cai com expectativa sobre a Fazenda e IPCA-15 menor que o esperado",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1kOXA3bGlHMW13UHRnNTlJWFE1TzdURnF0UzktN0dIdnVtRmxkTkVYQm9VU0dpVHA3S3JBSEVsbGVKMk9PZ25XT2RKQ2FJalp3MVNZZk9UdUFvR3ZPYWZCUzVZOXN0R0l3Vjhj?oc=5",
+   "publicado": "2026-11-26T10:26-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -1116,31 +1201,6 @@
    "tickers": []
   },
   {
-   "titulo": "Latam realiza primeiro voo oficial com avião da Embraer entre Guarulhos e Brasília",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/latam-realiza-primeiro-voo-oficial-com-aviao-da-embraer-entre-guarulhos-e-brasilia-npr/",
-   "publicado": "2026-11-26T10:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
-  },
-  {
-   "titulo": "Semiconductor chips are the new oil. Here's why",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
-   "publicado": "2026-11-26T10:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trump-usa-tarifas-para-pressionar-asiaticos-a-fecharem-acordos-dizem-analistas.shtml",
@@ -1152,7 +1212,7 @@
    "tickers": []
   },
   {
-   "titulo": "Bolsa dispara mais de 3% com possibilidade de Trabuco na Fazenda; dólar cai a R$ 5,74",
+   "titulo": "Bolsa dispara mais de 4% com possibilidade de Trabuco na Fazenda; dólar cai a R$ 5,72",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-de-mais-de-1-com-possibilidade-de-trabuco-na-fazenda.shtml",
    "publicado": "2026-11-26T09:54-03:00",
@@ -1174,14 +1234,13 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar cai a R$ 5,75 com feriado nos EUA e \"prévia da inflação\" no Brasil",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV19Pd0tYcl9NV01FOS04bUVMdGdieXVjOEljbHlQV0NhWnNQZEp5R0tscHN4endnUmYyWDVnSWVXUXZmTmdFLTNWbEVib2swaWRHR01TR1BKcFVneG5HYjRsZV9nYk82SUlxQUQtNlFoWi13TlZQQjE5UWNkSURkV0dvekRLWUF6NGdWX21HNS02WEtmT1BTVHg2RFFHRVhscU42VlR3?oc=5",
-   "publicado": "2026-11-26T09:36-03:00",
-   "impacto": "alto",
+   "titulo": "Dólar tem forte queda e toca os R$ 5,75 com melhora de expectativas sobre o governo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMXBRUXpSS1k2X3hHWVp1NjliMGVjYWlxTjBVa0wwZW10ck9CeGVHUG53YXJMd2drdWU4dl9kbWtFcmk2LVRkMFJ1Z1VPdkRqbUpUbm9keE1oa25yMU9PVlpvcUg5allROG5PR19zcktVM2ZYX0JQYklJV1VrS18xeThJRmpsbE9jLTE4cW9tTVo0WlJGYWYzZTBvSmREdld3YlJ6R2lWd3psTjExbkRlLXAwR3l0V3RIMzVVbEl5Qk9yTW9MSUo3cFRYeWY1ZFpodUhnV3F30gHkAUFVX3lxTFBGZHF6NVo5VWFBR3RhdFNXS2VHREU2ZFdEbGZVUmxtWHhPZktPMkxheExBek4zWHp0dTNqd05CT0RJdUhESm42alhzTVNNcEt6YkNVRGk1b1B4akpITGhQSzhvZU9POTRubzNjSTQ5blI5cGFLcnJUMGxzenkwdXlKdDJuSUp4Z3AwWloteEZlWWlJRjljanhYVzVLRHM5MVhjMG1LSm04NENwcGlxdENJcUVtZnF0MkpQTEswVWh1NTltWFI2dU11NTBON3VZWFNrNHQ0WWswT0xoVDNaZ2ZneElQWg?oc=5",
+   "publicado": "2026-11-26T09:50-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WDO",
-    "DI"
+    "WDO"
    ],
    "tickers": []
   },
@@ -1194,18 +1253,6 @@
    "ativos": [
     "WIN",
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa Futuro sobe mais de 1% com fiscal e Fazenda no centro das atenções",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPb29Rc0k5UzRQVkpzTk5PS19sS0hoR2pZVHJoZVBhMTFsaXh5aVVhUzRvY1hQRmZKRE02QUJ6MlZnR3ZYTVp1bEJERmZlUmxNYTVva05KdW14NEZCc0FnZm5kaVlQSVhPTDNLblR0QjBacmFYRlNQTkJzMzZXUlFqVUVZdmFqNWxjZ3ljejgwdkdqd1hNbTBlZUs5SWpzUmVHYzBFY0tvMHRtMTdVYjV0VlgxY9IBuAFBVV95cUxQMFRLNnJZaE54S2ZNU0l4OGZBRTUtWDJoelFBc2kxRXJqaVA2YlEwUGRYTTNZQUNHcDhNTnFFVEFsRFVMc1JFaV84R1JxQnFicDVXQTdfUS0xLURxSFVsQVZLWFhXUjRLenh5dGEwcDdNVjVJUDlPcnVIMVBpcTNZQkZVbkgtbEFJOUZibUJPbjBlNGZ4RWJXbF9pVnpDMnNSaXg3dl93OUVLN2Rkeml3YXM5REtDV0hx?oc=5",
-   "publicado": "2026-11-26T09:11-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
    ],
    "tickers": []
   }
