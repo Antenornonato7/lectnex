@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T16:08-03:00",
+  "atualizado_em": "2026-11-26T16:38-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -287,11 +287,35 @@
     ],
     [
      "15:50",
-     173153.0
+     173389.0
     ],
     [
-     "15:53",
-     173216.0
+     "15:55",
+     173454.0
+    ],
+    [
+     "16:00",
+     173343.0
+    ],
+    [
+     "16:05",
+     173437.0
+    ],
+    [
+     "16:10",
+     173610.0
+    ],
+    [
+     "16:15",
+     173391.0
+    ],
+    [
+     "16:20",
+     173436.0
+    ],
+    [
+     "16:23",
+     173353.0
     ]
    ]
   },
@@ -640,11 +664,35 @@
     ],
     [
      "16:05",
-     5.7418
+     5.7398
     ],
     [
-     "16:08",
+     "16:10",
+     5.7374
+    ],
+    [
+     "16:15",
+     5.7424
+    ],
+    [
+     "16:20",
+     5.7483
+    ],
+    [
+     "16:25",
+     5.7498
+    ],
+    [
+     "16:30",
      5.7415
+    ],
+    [
+     "16:35",
+     5.7438
+    ],
+    [
+     "16:38",
+     5.7429
     ]
    ]
   },
@@ -1200,7 +1248,21 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.22,
+    "ibov30": 0.36,
+    "dolar30": 0.02
+   },
+   {
+    "hora": "15:22",
+    "titulo": "Pablo Hernández de Cos vence disputa pela presidência do Banco Central Europeu",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/pablo-hernandez-de-cos-vence-disputa-pela-presidencia-do-banco-central-europeu.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.36,
     "dolar30": 0.02
    },
    {
@@ -1213,7 +1275,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.3,
     "dolar30": -0.15
    },
    {
@@ -1226,8 +1288,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": 0.15,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "16:15",
+    "titulo": "Governo descarta nova ligação de Lula a Trump sobre tarifas e aguarda setor privado",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-descarta-nova-ligacao-de-lula-a-trump-sobre-tarifas-e-aguarda-setor-privado.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
     "ibov30": null,
-    "dolar30": 0.0
+    "dolar30": null
    }
   ]
  },
@@ -2035,6 +2110,18 @@
    "tickers": []
   },
   {
+   "titulo": "Pablo Hernández de Cos vence disputa pela presidência do Banco Central Europeu",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/pablo-hernandez-de-cos-vence-disputa-pela-presidencia-do-banco-central-europeu.shtml",
+   "publicado": "2026-11-26T15:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "O que explica a forte alta do Ibovespa nesta quinta-feira (26)?",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObWswRlByQkp1eVN1TEtGekdmVlN0Yl84Q05NaHdDSFB0Xy00bE1vWG1uM3d6UllqejFGY2htTWRsNUQ1TUtHdFAxWTQ4NXgwQm5UOXI3eHdvUEpJME8xZE12ZkpKaXYyUUZabm9RczZrb2RRM3ZzSTlGclBSTnRrZ2NCWkY2eVNJUURPcndubkV6Tml1VE9wTkpoTHBTeHFQdzlHTm1USkhyRTdNWl94VVh5ZVE3U3J1bTYwZ0l5c0R1WGZNYmc?oc=5",
@@ -2053,6 +2140,17 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Governo descarta nova ligação de Lula a Trump sobre tarifas e aguarda setor privado",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-descarta-nova-ligacao-de-lula-a-trump-sobre-tarifas-e-aguarda-setor-privado.shtml",
+   "publicado": "2026-11-26T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   }
@@ -2084,19 +2182,28 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T16:08-03:00",
+ "atualizado_em": "2026-11-26T16:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Governo descarta nova ligação de Lula a Trump sobre tarifas e aguarda setor privado",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-descarta-nova-ligacao-de-lula-a-trump-sobre-tarifas-e-aguarda-setor-privado.shtml",
+   "publicado": "2026-11-26T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Notícia é sinal de que governo pode ter agenda fiscal mais ambiciosa, diz BNP sobre ‘Trabuco Day’",
    "fonte": "Estadão",
@@ -2134,7 +2241,7 @@
   {
    "titulo": "Pablo Hernández de Cos vence disputa pela presidência do Banco Central Europeu",
    "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/pablo-hernandez-de-cos-vence-disputa-pela-presidencia-do-banco-central-europeu.shtml",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/pablo-hernandez-de-cos-vence-disputa-pela-presidencia-do-banco-central-europeu.shtml",
    "publicado": "2026-11-26T15:22-03:00",
    "impacto": "alto",
    "ativos": [
@@ -2189,31 +2296,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Banco Central Europeu deve nomear primeiro presidente espanhol",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRmdJMjRiSVRqeUgyOVhfZDBNd3lfbFlTUFNQY1ZNUi02UlFKVnhxRUZhakFJZjl2bTFqY3FDX3N0OXlkZWc5MDdKSzk2QXBxZWs2cGdsN1lQNnpqeERyNGhhY2xpcEJma1NOMS1UUTU0VTVKcWVaZVBYM3FrWXN4dGhnZnFVMGU5SVZSV3FsQm9TODlvZk5HWWVCSHBpS01xVkJUR0Vuc28wZndadnBpQ0NfcGpPWW51SWdsZjhB?oc=5",
-   "publicado": "2026-11-26T14:23-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Embraer diz que foi pega de surpresa com possibilidade de tarifas dos EUA e ‘conta com bom-senso’",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/negocios/embraer-surpresa-possibilidade-tarifas-eua-bom-senso/",
-   "publicado": "2026-11-26T13:12-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
   }
  ]
 }
