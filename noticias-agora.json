@@ -1,7 +1,20 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T10:15-03:00",
+  "atualizado_em": "2026-11-26T10:18-03:00",
+  "ibov": {
+   "anterior": 166684.61,
+   "pontos": [
+    [
+     "10:00",
+     166696.0
+    ],
+    [
+     "10:03",
+     166696.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.821,
    "pontos": [
@@ -67,7 +80,11 @@
     ],
     [
      "10:15",
-     5.7542
+     5.7481
+    ],
+    [
+     "10:18",
+     5.7434
     ]
    ]
   },
@@ -84,6 +101,7 @@
     "tickers": [
      "EMBR3"
     ],
+    "ibov30": null,
     "dolar30": -0.12
    },
    {
@@ -97,6 +115,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.31
    },
    {
@@ -109,6 +128,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.24
    },
    {
@@ -121,6 +141,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.18
    },
    {
@@ -133,6 +154,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.19
    },
    {
@@ -146,6 +168,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": 0.01
    },
    {
@@ -158,7 +181,8 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": -0.28
+    "ibov30": null,
+    "dolar30": -0.39
    },
    {
     "hora": "09:54",
@@ -170,6 +194,20 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:14",
+    "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trump-usa-tarifas-para-pressionar-asiaticos-a-fecharem-acordos-dizem-analistas.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -594,6 +632,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trump-usa-tarifas-para-pressionar-asiaticos-a-fecharem-acordos-dizem-analistas.shtml",
+   "publicado": "2026-11-26T10:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -623,7 +672,7 @@
    "em": "2026-11-26T12:23:01+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T10:15-03:00",
+ "atualizado_em": "2026-11-26T10:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -636,6 +685,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trump-usa-tarifas-para-pressionar-asiaticos-a-fecharem-acordos-dizem-analistas.shtml",
+   "publicado": "2026-11-26T10:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar abre em queda de mais de 1% com possibilidade de Trabuco na Fazenda",
    "fonte": "Folha",
@@ -774,23 +834,24 @@
    "tickers": []
   },
   {
+   "titulo": "Sem Wall Street, Ibovespa fica sensível ao ‘efeito Trabuco’ e aos dados do IPCA-15; dólar cai 1%",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
+   "publicado": "2026-11-26T08:18-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "China diz que tomará 'medidas necessárias' e Japão critica proposta de nova tarifa dos EUA",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/china-diz-que-tomara-medidas-necessarias-e-japao-critica-proposta-de-nova-tarifa-dos-eua.shtml",
    "publicado": "2026-11-26T08:08-03:00",
    "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "China avança no mercado global de carros e ameaça montadoras ocidentais",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/china-avanca-no-mercado-global-de-carros-e-ameaca-montadoras-ocidentais.shtml",
-   "publicado": "2026-11-26T08:00-03:00",
-   "impacto": "medio",
    "ativos": [
     "WIN",
     "WDO"
