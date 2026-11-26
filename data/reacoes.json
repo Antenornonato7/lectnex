@@ -2242,8 +2242,22 @@
    "surpresa": null,
    "win": 0.167,
    "wdo": -0.308
+  },
+  {
+   "id": "2026-11-26|09h|ipca-15",
+   "data": "2026-11-26",
+   "hora": "09h",
+   "tipo": "ipca-15",
+   "evento": "IPCA-15 de novembro (IBGE)",
+   "pais": "BR",
+   "resultado": "0,22% (4,64% em 12 meses)",
+   "consenso": "0,34%",
+   "surpresa": "abaixo",
+   "win": 0.068,
+   "win_abertura": true,
+   "wdo": -0.125
   }
  ],
- "atualizado_em": "2026-11-25T19:50:26-03:00",
+ "atualizado_em": "2026-11-26T12:50:25-03:00",
  "metodo_di": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte. Fonte: Tesouro Transparente (preços e taxas do Tesouro Direto)."
 }
