@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T15:25-03:00",
+  "atualizado_em": "2026-11-26T15:28-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -255,7 +255,11 @@
     ],
     [
      "15:10",
-     172661.0
+     172789.0
+    ],
+    [
+     "15:13",
+     172832.0
     ]
    ]
   },
@@ -572,7 +576,11 @@
     ],
     [
      "15:25",
-     5.744
+     5.7408
+    ],
+    [
+     "15:28",
+     5.7409
     ]
    ]
   },
@@ -1086,7 +1094,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.23,
     "dolar30": -0.16
    },
    {
@@ -1115,7 +1123,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.1
+    "dolar30": -0.15
    },
    {
     "hora": "15:22",
@@ -1964,7 +1972,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T15:25-03:00",
+ "atualizado_em": "2026-11-26T15:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2085,16 +2093,15 @@
    "tickers": []
   },
   {
-   "titulo": "Embraer (EMBJ3) diz que foi pega de surpresa com possibilidade de tarifas dos EUA e conta com bom-senso",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQblpEdldEZDRJOEl3Tk0tUGVfbmJCM0ZSZU9tLVFMUURQSlhhMGk5OXJRMFVTeG42N2ctRE45ckpIbWhCUGN6akJQSGw1Nk1uR3dFYThaT3RLa3R0cVFxamtpSHBZZkMwYl9wdnZrZmpGSV9ZT2ZlZjFSZ1ljY2ZwdWFVeWNJdGRONm1ENTM4VmZfY3EzWm8zUEFzVFJIRlYwU2RFVTRtV1dyallOVFV6cHc5ckc5ZnRnMnlIN2N3RW5hVkJIS0M0YmpBd1JDY3hqYVdN?oc=5",
-   "publicado": "2026-11-26T13:28-03:00",
+   "titulo": "Embraer diz que foi pega de surpresa com possibilidade de tarifas dos EUA e ‘conta com bom-senso’",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/negocios/embraer-surpresa-possibilidade-tarifas-eua-bom-senso/",
+   "publicado": "2026-11-26T13:12-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
    ],
    "tickers": [
-    "EMBJ3",
     "EMBR3"
    ]
   },
