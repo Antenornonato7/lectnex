@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T12:58-03:00",
+  "atualizado_em": "2026-11-26T13:00-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -135,11 +135,11 @@
     ],
     [
      "12:40",
-     173467.0
+     173461.0
     ],
     [
-     "12:43",
-     173511.0
+     "12:45",
+     173392.0
     ]
    ]
   },
@@ -336,11 +336,11 @@
     ],
     [
      "12:55",
-     5.7336
+     5.7351
     ],
     [
-     "12:58",
-     5.7336
+     "13:00",
+     5.7362
     ]
    ]
   },
@@ -714,7 +714,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.38,
     "dolar30": -0.03
    },
    {
@@ -728,7 +728,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.16
    },
    {
     "hora": "12:46",
@@ -1444,18 +1444,16 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T12:58-03:00",
+ "atualizado_em": "2026-11-26T13:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
   {
@@ -1604,18 +1602,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa sobe mais de 3% com expectativa sobre Lula 4 e IPCA-15; apenas duas ações caem",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPT3hnSW5QT2VORGtqVHJ3bVJZdmUxT0pDQjdPNWlWdTRwNzhJeWF1dWlhX1ZKZU9mX1RzN1phYlR2XzdYY192b2hSVUUxR0Fnc3hmVEc3ZldpalFneTlpLVFQS08ydFZ5Qzh4SVlHclpKYllKMllvTzFGbU5YYTV1RmUxTUstX0xsSXhUMzMwS3YwVFhtejkwZTk0QXVtN2dtWWtBSFlVeFBMQklmUUhMV04wZ3dPX1BQU0h5b1ZRSkN5X2YxNnJJMFBOMEVfdTNlbjNYTDhrUjJUUGk1T21MTWNCQXNvel80R0pwUGpuY0ZLM3PSAfMBQVVfeXFMT094Z0luUE9lTkRralRyd21SWXZlMU9KQ0I3TzVpVnU0cDc4SXlhdXVpYV9WSmVPZl9UczdaYWJUdl83WGNfdm9oUlVFMUdBZ3N4ZlRHN2ZXaWpRZ3k5aS1RUEtPMnRWeUM4eElZR3JaSmJZSjJZb08xRm1OWGE1dUZlMU1LLV9MbEl4VDMzMEt2MFRYbXo5MGU5NEF1bTdnbVlrQUhZVXhQTEJJZlFITFdOMGd3T19QUFNIeW9WUUpDeV9mMTZySTBQTjBFX3UzZW4zWEw4a1IyVFBpNU9tTE1jQkFzb3pfNEdKcFBqbmNGSzNz?oc=5",
-   "publicado": "2026-11-26T10:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Tarifa sobre aviões é descabida e 'não existe em lugar nenhum do mundo', diz Alckmin",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tarifa-sobre-avioes-e-descabida-e-nao-existe-em-lugar-nenhum-do-mundo-diz-alckmin.shtml",
@@ -1638,6 +1624,18 @@
    "tickers": [
     "EMBR3"
    ]
+  },
+  {
+   "titulo": "Semiconductor chips are the new oil. Here's why",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+   "publicado": "2026-11-26T10:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
