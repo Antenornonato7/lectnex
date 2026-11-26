@@ -1,192 +1,192 @@
 {
- "data": "2026-11-25",
- "tipo": "pce-eua",
- "curto": "PCE",
- "evento": "Inflação PCE — núcleo em 12 meses (out)",
- "hora": "10h30",
- "pais": "US",
- "consenso": "3,2%",
- "anterior": "3,1%",
+ "data": "2026-11-26",
+ "tipo": "ipca-15",
+ "curto": "IPCA-15",
+ "evento": "IPCA-15 de novembro (IBGE)",
+ "hora": "09h",
+ "pais": "BR",
+ "consenso": null,
+ "anterior": "0,32% (out)",
  "passadas": [
   {
-   "data": "2026-11-10",
-   "evento": "CPI — inflação ao consumidor (out, m/m)",
-   "resultado": "0,4%",
-   "consenso": "0,3%",
-   "surpresa": "acima",
-   "win": -0.255,
-   "wdo": 0.18,
-   "abertura": false,
+   "data": "2026-11-12",
+   "evento": "IPCA de outubro (IBGE)",
+   "resultado": "0,14%",
+   "consenso": "0,25%",
+   "surpresa": "abaixo",
+   "win": -0.654,
+   "wdo": 0.217,
+   "abertura": true,
    "janela": "30min"
   },
   {
-   "data": "2026-10-14",
-   "evento": "CPI — inflação ao consumidor (set)",
-   "resultado": "0,6%",
-   "consenso": "0,6%",
-   "surpresa": "em linha",
-   "win": -0.327,
-   "wdo": -0.056,
+   "data": "2026-10-09",
+   "evento": "IPCA (set)",
+   "resultado": "0,82%",
+   "consenso": "0,76%",
+   "surpresa": "acima",
+   "win": 0.472,
+   "wdo": 0.102,
+   "abertura": true,
+   "janela": "30min"
+  },
+  {
+   "data": "2026-09-25",
+   "evento": "IPCA-15 (set)",
+   "resultado": "0,70%",
+   "consenso": "0,52%",
+   "surpresa": "acima",
+   "win": -0.352,
+   "wdo": 0.021,
    "abertura": true,
    "janela": "30min"
   },
   {
    "data": "2026-09-11",
-   "evento": "CPI — inflação ao consumidor (ago)",
-   "resultado": "0,4%",
-   "consenso": "0,4%",
-   "surpresa": "em linha",
+   "evento": "IPCA (ago)",
+   "resultado": "−0,32%",
+   "consenso": "−0,29%",
+   "surpresa": "abaixo",
    "win": 0.154,
-   "wdo": -0.596,
+   "wdo": 0.027,
    "abertura": true,
    "janela": "30min"
   },
   {
-   "data": "2026-08-12",
-   "evento": "CPI — inflação ao consumidor (jul)",
-   "resultado": "0,1%",
-   "consenso": "0,1%",
-   "surpresa": "em linha",
-   "win": -0.151,
-   "wdo": -0.073,
+   "data": "2026-08-11",
+   "evento": "IPCA (jul)",
+   "resultado": "0,07%",
+   "consenso": "0,03%",
+   "surpresa": "acima",
+   "win": -0.05,
+   "wdo": -0.047,
    "abertura": true,
    "janela": "1h"
   },
   {
-   "data": "2026-07-14",
-   "evento": "CPI — inflação ao consumidor (jun)",
-   "resultado": "−0,4%",
-   "consenso": "−0,1%",
+   "data": "2026-07-10",
+   "evento": "IPCA (jun)",
+   "resultado": "0,16%",
+   "consenso": "0,31%",
    "surpresa": "abaixo",
-   "win": 0.649,
-   "wdo": -1.167,
+   "win": -0.039,
+   "wdo": -0.209,
    "abertura": true,
    "janela": "1h"
   },
   {
-   "data": "2026-06-10",
-   "evento": "CPI — inflação ao consumidor (mai)",
-   "resultado": "0,5%",
-   "consenso": "0,5%",
-   "surpresa": "em linha",
-   "win": -0.342,
-   "wdo": -0.443,
+   "data": "2026-06-12",
+   "evento": "IPCA (mai)",
+   "resultado": "0,58%",
+   "consenso": "0,53%",
+   "surpresa": "acima",
+   "win": 0.0,
+   "wdo": -0.174,
    "abertura": true,
    "janela": "1h"
   },
   {
    "data": "2026-05-12",
-   "evento": "CPI — inflação ao consumidor (abr)",
-   "resultado": "0,6%",
-   "consenso": "0,6%",
-   "surpresa": "em linha",
-   "win": -0.402,
-   "wdo": 0.074,
+   "evento": "IPCA (abr)",
+   "resultado": "0,67%",
+   "consenso": "0,70%",
+   "surpresa": "abaixo",
+   "win": -0.021,
+   "wdo": -0.153,
    "abertura": true,
    "janela": "1h"
   },
   {
    "data": "2026-04-10",
-   "evento": "CPI — inflação ao consumidor (mar)",
-   "resultado": "0,9%",
-   "consenso": null,
-   "surpresa": null,
-   "win": 1.077,
-   "wdo": -0.881,
+   "evento": "IPCA (mar)",
+   "resultado": "0,88%",
+   "consenso": "0,77%",
+   "surpresa": "acima",
+   "win": -0.123,
+   "wdo": -0.737,
    "abertura": true,
    "janela": "1h"
   },
   {
-   "data": "2026-03-11",
-   "evento": "CPI — inflação ao consumidor (fev)",
-   "resultado": "0,3%",
-   "consenso": "0,3%",
-   "surpresa": "em linha",
-   "win": 1.026,
-   "wdo": -0.259,
+   "data": "2026-03-12",
+   "evento": "IPCA (fev)",
+   "resultado": "0,70%",
+   "consenso": "0,65%",
+   "surpresa": "acima",
+   "win": 0.107,
+   "wdo": 0.089,
    "abertura": true,
    "janela": "1h"
   },
   {
-   "data": "2026-02-13",
-   "evento": "CPI — inflação ao consumidor (jan)",
-   "resultado": "0,2%",
-   "consenso": "0,3%",
-   "surpresa": "abaixo",
-   "win": -2.036,
-   "wdo": 0.51,
-   "abertura": false,
-   "janela": "1h"
-  },
-  {
-   "data": "2026-01-13",
-   "evento": "CPI — inflação ao consumidor (dez)",
-   "resultado": "0,3%",
-   "consenso": "0,3%",
+   "data": "2026-02-10",
+   "evento": "IPCA (jan)",
+   "resultado": "0,33%",
+   "consenso": "0,32%",
    "surpresa": "em linha",
-   "win": -0.501,
-   "wdo": -0.091,
-   "abertura": false,
+   "win": 0.104,
+   "wdo": 0.167,
+   "abertura": true,
    "janela": "1h"
   },
   {
-   "data": "2025-12-18",
-   "evento": "CPI — inflação ao consumidor (nov)",
-   "resultado": "2,7% a/a",
-   "consenso": "3,1% a/a",
-   "surpresa": "abaixo",
-   "win": 0.131,
-   "wdo": -0.47,
-   "abertura": false,
+   "data": "2026-01-09",
+   "evento": "IPCA (dez)",
+   "resultado": "0,33%",
+   "consenso": "0,32%",
+   "surpresa": "em linha",
+   "win": 0.237,
+   "wdo": -0.165,
+   "abertura": true,
    "janela": "1h"
   }
  ],
  "divulgacoes": {
   "win": {
-   "n": 24,
-   "sobe": 46,
-   "mediana": -0.08,
-   "movimento": 0.64
+   "n": 26,
+   "sobe": 42,
+   "mediana": -0.01,
+   "movimento": 0.15
   },
   "wdo": {
-   "n": 24,
-   "sobe": 21,
-   "mediana": -0.33,
-   "movimento": 0.43
+   "n": 26,
+   "sobe": 38,
+   "mediana": -0.08,
+   "movimento": 0.25
   },
-  "desde": "2024-11-13",
+  "desde": "2024-11-08",
   "janelas": {
-   "30min": 3,
-   "1h": 21
+   "30min": 4,
+   "1h": 22
   }
  },
  "por_surpresa": {
   "acima": {
    "win": {
-    "n": 4,
-    "sobe": 50,
-    "mediana": 0.16,
-    "movimento": 0.86
+    "n": 9,
+    "sobe": 33,
+    "mediana": -0.01,
+    "movimento": 0.13
    },
    "wdo": {
-    "n": 4,
-    "sobe": 25,
-    "mediana": -0.17,
-    "movimento": 0.22
+    "n": 9,
+    "sobe": 44,
+    "mediana": -0.05,
+    "movimento": 0.25
    }
   },
   "abaixo": {
    "win": {
-    "n": 8,
-    "sobe": 62,
-    "mediana": 0.15,
-    "movimento": 0.66
+    "n": 9,
+    "sobe": 44,
+    "mediana": -0.02,
+    "movimento": 0.14
    },
    "wdo": {
-    "n": 8,
-    "sobe": 25,
-    "mediana": -0.43,
-    "movimento": 0.58
+    "n": 9,
+    "sobe": 33,
+    "mediana": -0.1,
+    "movimento": 0.17
    }
   }
  },
@@ -194,17 +194,17 @@
   "tema": "inflacao",
   "nome": "Inflação",
   "win": {
-   "n": 56,
-   "sobe": 45,
-   "mediana": -0.04,
-   "movimento": 0.29
+   "n": 65,
+   "sobe": 46,
+   "mediana": -0.01,
+   "movimento": 0.27
   },
   "wdo": {
-   "n": 89,
-   "sobe": 66,
-   "mediana": 0.07,
+   "n": 102,
+   "sobe": 64,
+   "mediana": 0.06,
    "movimento": 0.15
   }
  },
- "gerado_em": "2026-11-25T07:20-03:00"
+ "gerado_em": "2026-11-26T07:20-03:00"
 }
