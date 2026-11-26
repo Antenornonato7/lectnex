@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T17:00-03:00",
+  "atualizado_em": "2026-11-26T17:03-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -328,6 +328,10 @@
     [
      "16:40",
      173710.0
+    ],
+    [
+     "16:45",
+     173663.0
     ]
    ]
   },
@@ -720,7 +724,11 @@
     ],
     [
      "17:00",
-     5.7414
+     5.744
+    ],
+    [
+     "17:03",
+     5.7435
     ]
    ]
   },
@@ -1331,6 +1339,19 @@
     "tickers": [],
     "ibov30": 0.18,
     "dolar30": -0.01
+   },
+   {
+    "hora": "16:42",
+    "titulo": "Líder do PT na Câmara diz que Trabuco na Fazenda ‘não é a melhor opção’ e rechaça ‘ajuste fiscal 2′",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/lider-do-pt-na-camara-diz-que-trabuco-na-fazenda-nao-e-a-melhor-opcao-e-rechaca-ajuste-fiscal-2/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    },
    {
     "hora": "16:48",
@@ -2225,6 +2246,17 @@
    "tickers": []
   },
   {
+   "titulo": "Líder do PT na Câmara diz que Trabuco na Fazenda ‘não é a melhor opção’ e rechaça ‘ajuste fiscal 2′",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lider-do-pt-na-camara-diz-que-trabuco-na-fazenda-nao-e-a-melhor-opcao-e-rechaca-ajuste-fiscal-2/",
+   "publicado": "2026-11-26T16:42-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Veja o que Trabuco, cotado para Fazenda, já disse sobre política fiscal, programas sociais e reforma tributária",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/veja-o-que-trabuco-cotado-para-fazenda-ja-disse-sobre-politica-fiscal-programas-sociais-e-reforma-tributaria.shtml",
@@ -2288,14 +2320,16 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T17:00-03:00",
+ "atualizado_em": "2026-11-26T17:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
-  "Folha"
+  "Folha",
+  "InfoMoney"
  ],
  "noticias": [
   {
@@ -2328,6 +2362,17 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/veja-o-que-trabuco-cotado-para-fazenda-ja-disse-sobre-politica-fiscal-programas-sociais-e-reforma-tributaria.shtml",
    "publicado": "2026-11-26T16:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Líder do PT na Câmara diz que Trabuco na Fazenda ‘não é a melhor opção’ e rechaça ‘ajuste fiscal 2′",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/lider-do-pt-na-camara-diz-que-trabuco-na-fazenda-nao-e-a-melhor-opcao-e-rechaca-ajuste-fiscal-2/",
+   "publicado": "2026-11-26T16:42-03:00",
    "impacto": "medio",
    "ativos": [
     "DI"
