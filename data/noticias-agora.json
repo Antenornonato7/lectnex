@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T14:03-03:00",
+  "atualizado_em": "2026-11-26T14:38-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -187,11 +187,39 @@
     ],
     [
      "13:45",
-     172631.0
+     172544.0
     ],
     [
-     "13:48",
-     172506.0
+     "13:50",
+     172416.0
+    ],
+    [
+     "13:55",
+     172818.0
+    ],
+    [
+     "14:00",
+     172990.0
+    ],
+    [
+     "14:05",
+     172765.0
+    ],
+    [
+     "14:10",
+     172540.0
+    ],
+    [
+     "14:15",
+     172500.0
+    ],
+    [
+     "14:20",
+     172483.0
+    ],
+    [
+     "14:23",
+     172503.0
     ]
    ]
   },
@@ -440,11 +468,39 @@
     ],
     [
      "14:00",
-     5.7345
+     5.7343
     ],
     [
-     "14:03",
-     5.7338
+     "14:05",
+     5.739
+    ],
+    [
+     "14:10",
+     5.7458
+    ],
+    [
+     "14:15",
+     5.746
+    ],
+    [
+     "14:20",
+     5.7445
+    ],
+    [
+     "14:25",
+     5.7459
+    ],
+    [
+     "14:30",
+     5.7508
+    ],
+    [
+     "14:35",
+     5.7479
+    ],
+    [
+     "14:38",
+     5.7494
     ]
    ]
   },
@@ -917,8 +973,22 @@
      "EMBJ3",
      "EMBR3"
     ],
-    "ibov30": null,
+    "ibov30": -0.13,
     "dolar30": -0.11
+   },
+   {
+    "hora": "14:23",
+    "titulo": "Banco Central Europeu deve nomear primeiro presidente espanhol",
+    "fonte": "CNN Brasil",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRmdJMjRiSVRqeUgyOVhfZDBNd3lfbFlTUFNQY1ZNUi02UlFKVnhxRUZhakFJZjl2bTFqY3FDX3N0OXlkZWc5MDdKSzk2QXBxZWs2cGdsN1lQNnpqeERyNGhhY2xpcEJma1NOMS1UUTU0VTVKcWVaZVBYM3FrWXN4dGhnZnFVMGU5SVZSV3FsQm9TODlvZk5HWWVCSHBpS01xVkJUR0Vuc28wZndadnBpQ0NfcGpPWW51SWdsZjhB?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1653,6 +1723,18 @@
     "EMBJ3",
     "EMBR3"
    ]
+  },
+  {
+   "titulo": "Banco Central Europeu deve nomear primeiro presidente espanhol",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRmdJMjRiSVRqeUgyOVhfZDBNd3lfbFlTUFNQY1ZNUi02UlFKVnhxRUZhakFJZjl2bTFqY3FDX3N0OXlkZWc5MDdKSzk2QXBxZWs2cGdsN1lQNnpqeERyNGhhY2xpcEJma1NOMS1UUTU0VTVKcWVaZVBYM3FrWXN4dGhnZnFVMGU5SVZSV3FsQm9TODlvZk5HWWVCSHBpS01xVkJUR0Vuc28wZndadnBpQ0NfcGpPWW51SWdsZjhB?oc=5",
+   "publicado": "2026-11-26T14:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1682,12 +1764,13 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T14:03-03:00",
+ "atualizado_em": "2026-11-26T14:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
+  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
@@ -1696,10 +1779,22 @@
  ],
  "noticias": [
   {
+   "titulo": "Banco Central Europeu deve nomear primeiro presidente espanhol",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRmdJMjRiSVRqeUgyOVhfZDBNd3lfbFlTUFNQY1ZNUi02UlFKVnhxRUZhakFJZjl2bTFqY3FDX3N0OXlkZWc5MDdKSzk2QXBxZWs2cGdsN1lQNnpqeERyNGhhY2xpcEJma1NOMS1UUTU0VTVKcWVaZVBYM3FrWXN4dGhnZnFVMGU5SVZSV3FsQm9TODlvZk5HWWVCSHBpS01xVkJUR0Vuc28wZndadnBpQ0NfcGpPWW51SWdsZjhB?oc=5",
+   "publicado": "2026-11-26T14:23-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ibovespa dispara quase 4% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,74",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
-   "publicado": "2026-11-26T13:37-03:00",
+   "publicado": "2026-11-26T14:15-03:00",
    "impacto": "alto",
    "ativos": [
     "WIN",
@@ -1768,28 +1863,6 @@
    "tickers": []
   },
   {
-   "titulo": "Cotação da stablecoin USDT pode se afastar do dólar à vista",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNDJQYzJYZmtyc0ZGYmVFcjlTWnk4LXpVLTZTV1JoMU9CMmN0ZUF3V28tamZabjVtTmN2V1hpMUN6M3VMUzhBMC1memRkUjVNdUhJS0poN281YzVnR2g5dU9MakpkOXFDZTZtV0NFdXV0VTZRVk5UcU1iSWJLeXdBWGdRd1JPbnlHb2M1cXRXdjgxTW5pSmFMTnVQWDFsUGRnemdxclg0LUMxN0YtUFVhTFdEUWJXUVdQYUx2bUVXeFl5T0lEYW1wZWpTSmpnaHBwdmVMUWx6RHTSAdgBQVVfeXFMTTQyUGMyWGZrcnNGRmJlRXI5U1p5OC16VS02U1dSaDFPQjJjdGVBd1dvLWpmWm41bU5jdldYaTFDejN1TFM4QTAtZnpkZFI1TXVISUtKaDdvNWM1Z0doOXVPTGpKZDlxQ2U2bVdDRXV1dFU2UVZOVHFNYkliS3l3QVhnUXdST255R29jNXF0V3Y4MU1uaUphTE51UFgxbFBkZ3pncXJYNC1DMTdGLVBVYUxXRFFiV1FXUGFMdm1FV3hZeU9JRGFtcGVqU0pqZ2hwcHZlTFFsekR0?oc=5",
-   "publicado": "2026-11-26T12:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar cai abaixo de R$ 5,80 após Lula sondar possibilidade de Trabuco assumir Fazenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNalNKN3NTMklPcXB3TjhTbk0wbUg1SnBEQnozek9pZ1JxbU5uVW9XZ3o4OVhRaGhhX0ZTaVdRN3FpNlA4UnNUbFhUM3RmOXV2T05CcS1LNVVBRENLdk5Ib3JCQUF3VWhYTWZsd2lYN3RCZXlldUZpM0FiejNLcHFQdnNpYnhtV0Y5T3ZGUXF0YkZveDY4bXA3a0FsOUbSAaIBQVVfeXFMTWFlcmhCZ2NBd0xqa01fYnZLWmtmeTdMb0RvZW85eXEzNkRCeXMyZ05JSElCa2RFemZmVDY5aVU1dzRVYXFVWlJ3aF9tZk1xaUNQZm5lN2xRYkVZUzVRWU1TZ1BVdURPVHVZb2NPRWlFQ0FMRTEtZi12S1duN0tfaEJpQ1dRTVRMTVViR0ZKYnlkbnVhNlNSaEVaemFDSzhDZWxB?oc=5",
-   "publicado": "2026-11-26T12:13-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Lukoil venderá ativos no exterior a grupo americano por US$ 10 bilhões",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/lukoil-vendera-ativos-no-exterior-a-grupo-americano-por-us-10-bilhoes.shtml",
@@ -1800,33 +1873,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Ibovespa sobe mais de 4% e dólar recua a R$ 5,71 com otimismo no mercado",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXZwWDM1WHAzUVgtaUMwVWlKa1o1TzFaM2lZZU1STWlRTmpHOTg4SzRnMmE3dXJSSDNiS2ZjdU02eUZJSF9Sci03UHd5MGVCdmlRRFNKUDdNZWhNc2M0b1BMSG13NzRrbWFZbmI1NEtHanFYVUNRN2o0Y05CR1M3eFZFS1d5all5UFdVcDlOcTNNMkczc3NzdEdiS3dLQWlEMUNZR1prNXdTX2NtT19ZbA?oc=5",
-   "publicado": "2026-11-26T12:10-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Letras Financeiras superam retorno do Tesouro Selic e lideram ranking de renda fixa da B3",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQzdFNzZnNTJDY3VBQWV5Y2lkSnBvOGdDVWxWOFRHNjJmT3ItckRlM1ktalo4SG5WY2NvVjZQRllnLUFWVXhvSWVwZ0hlVjVocjNubjQxUW1GdTY5SjZjT3F4UnhRTGdGTlljcFlhbmF2U0xJWmk4ZWxTSVdVRWxacXdwQ19RdGZGX0ZHUWpyakRkREw3SjVKdWNhUjAxVzBFeVpSaG5GOEJyNEE2RUVoNTBtdGxBbENSWVNTSC1ROXptZkU?oc=5",
-   "publicado": "2026-11-26T12:07-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
   },
   {
    "titulo": "Durigan fala em combater supersalários e mudar aposentadoria de militares em novo pacote fiscal",
@@ -1850,19 +1896,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Embraer foi pega de surpresa e vai insistir no argumento econômico para evitar tarifas, diz presidente",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/embraer-foi-pega-de-surpresa-e-vai-insistir-no-argumento-economico-para-evitar-tarifas-diz-presidente.shtml",
-   "publicado": "2026-11-26T11:10-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
   }
  ]
 }
