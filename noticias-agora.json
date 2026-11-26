@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T17:28-03:00",
+  "atualizado_em": "2026-11-26T17:30-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     173858.0
+     173875.0
     ]
    ]
   },
@@ -756,11 +756,11 @@
     ],
     [
      "17:25",
-     5.7083
+     5.7073
     ],
     [
-     "17:28",
-     5.71
+     "17:30",
+     5.701
     ]
    ]
   },
@@ -1481,24 +1481,25 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": null
+   },
+   {
+    "hora": "17:22",
+    "titulo": "Ibovespa dispara e dólar cai 1,26% com aposta em Trabuco na Fazenda e ajuste fiscal",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nTzFxSXVwWmxEZTQ4X3kzMGtkVUNzY18ybzJmZFVCbHlTT183Y2Z2SGM2MUxKYjhlYXc2UE9qcTFkeDE3RDJDR2lmdmhWdkI3OFVRMmRldG42S3U0RWU1R19jQVhfcGduNkZVSlp3?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
  "hoje": [
-  {
-   "titulo": "Petrobras prevê retirar do mar 27 plataformas de petróleo até 2031; custo é de US$ 11,2 bi",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/petrobras-preve-retirar-do-mar-27-plataformas-de-petroleo-ate-2031-custo-e-de-us-112-bi.shtml",
-   "publicado": "2026-11-26T04:00-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
   {
    "titulo": "Companhias aéreas dos EUA terão custos mais altos com tarifa sobre jatos da Embraer",
    "fonte": "Folha",
@@ -2425,6 +2426,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa dispara e dólar cai 1,26% com aposta em Trabuco na Fazenda e ajuste fiscal",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nTzFxSXVwWmxEZTQ4X3kzMGtkVUNzY18ybzJmZFVCbHlTT183Y2Z2SGM2MUxKYjhlYXc2UE9qcTFkeDE3RDJDR2lmdmhWdkI3OFVRMmRldG42S3U0RWU1R19jQVhfcGduNkZVSlp3?oc=5",
+   "publicado": "2026-11-26T17:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2454,7 +2468,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T17:28-03:00",
+ "atualizado_em": "2026-11-26T17:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2462,12 +2476,26 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa dispara e dólar cai 1,26% com aposta em Trabuco na Fazenda e ajuste fiscal",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nTzFxSXVwWmxEZTQ4X3kzMGtkVUNzY18ybzJmZFVCbHlTT183Y2Z2SGM2MUxKYjhlYXc2UE9qcTFkeDE3RDJDR2lmdmhWdkI3OFVRMmRldG42S3U0RWU1R19jQVhfcGduNkZVSlp3?oc=5",
+   "publicado": "2026-11-26T17:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Brent fecha em alta diante de temores com interrupções no abastecimento",
    "fonte": "InfoMoney",
@@ -2605,17 +2633,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "O que explica a forte alta do Ibovespa nesta quinta-feira (26)?",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObWswRlByQkp1eVN1TEtGekdmVlN0Yl84Q05NaHdDSFB0Xy00bE1vWG1uM3d6UllqejFGY2htTWRsNUQ1TUtHdFAxWTQ4NXgwQm5UOXI3eHdvUEpJME8xZE12ZkpKaXYyUUZabm9RczZrb2RRM3ZzSTlGclBSTnRrZ2NCWkY2eVNJUURPcndubkV6Tml1VE9wTkpoTHBTeHFQdzlHTm1USkhyRTdNWl94VVh5ZVE3U3J1bTYwZ0l5c0R1WGZNYmc?oc=5",
-   "publicado": "2026-11-26T15:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   },
