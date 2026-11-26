@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T11:35-03:00",
+  "atualizado_em": "2026-11-26T11:38-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -71,7 +71,11 @@
     ],
     [
      "11:20",
-     173870.0
+     173523.0
+    ],
+    [
+     "11:23",
+     173637.0
     ]
    ]
   },
@@ -204,7 +208,11 @@
     ],
     [
      "11:35",
-     5.7156
+     5.7177
+    ],
+    [
+     "11:38",
+     5.7202
     ]
    ]
   },
@@ -464,7 +472,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.64,
+    "ibov30": 0.44,
     "dolar30": -0.09
    }
   ]
@@ -1046,7 +1054,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T11:35-03:00",
+ "atualizado_em": "2026-11-26T11:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1127,6 +1135,17 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tarifa-sobre-avioes-e-descabida-e-nao-existe-em-lugar-nenhum-do-mundo-diz-alckmin.shtml",
    "publicado": "2026-11-26T10:33-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai abaixo de R$ 5,80 após Lula sondar possibilidade de Trabuco assumir Fazenda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNalNKN3NTMklPcXB3TjhTbk0wbUg1SnBEQnozek9pZ1JxbU5uVW9XZ3o4OVhRaGhhX0ZTaVdRN3FpNlA4UnNUbFhUM3RmOXV2T05CcS1LNVVBRENLdk5Ib3JCQUF3VWhYTWZsd2lYN3RCZXlldUZpM0FiejNLcHFQdnNpYnhtV0Y5T3ZGUXF0YkZveDY4bXA3a0FsOUbSAaIBQVVfeXFMTWFlcmhCZ2NBd0xqa01fYnZLWmtmeTdMb0RvZW85eXEzNkRCeXMyZ05JSElCa2RFemZmVDY5aVU1dzRVYXFVWlJ3aF9tZk1xaUNQZm5lN2xRYkVZUzVRWU1TZ1BVdURPVHVZb2NPRWlFQ0FMRTEtZi12S1duN0tfaEJpQ1dRTVRMTVViR0ZKYnlkbnVhNlNSaEVaemFDSzhDZWxB?oc=5",
+   "publicado": "2026-11-26T10:29-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -1222,18 +1241,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar cai a R$ 5,75 com feriado nos EUA e \"prévia da inflação\" no Brasil",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV19Pd0tYcl9NV01FOS04bUVMdGdieXVjOEljbHlQV0NhWnNQZEp5R0tscHN4endnUmYyWDVnSWVXUXZmTmdFLTNWbEVib2swaWRHR01TR1BKcFVneG5HYjRsZV9nYk82SUlxQUQtNlFoWi13TlZQQjE5UWNkSURkV0dvekRLWUF6NGdWX21HNS02WEtmT1BTVHg2RFFHRVhscU42VlR3?oc=5",
-   "publicado": "2026-11-26T09:36-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   },
