@@ -1,0 +1,165 @@
+{
+ "tipo": "pregao",
+ "data": "2026-11-26",
+ "gerado_em": "2026-11-26T07:55:00-03:00",
+ "titulo": "IPCA-15 às 9h abre pregão sem Nova York; tarifa mira aviões do Brasil",
+ "resumo": [
+  "No último pregão (quarta, 25), o Ibovespa subiu 1,58%, aos 166.684,61 pontos, e o dólar à vista caiu 1,53%, a R$ 5,817, depois de bater R$ 5,97 na abertura, segundo a CNN Brasil. A expectativa de novas medidas para conter despesas obrigatórias e o leilão de linha de US$ 2 bi do BC explicaram a virada.",
+  "Às 9h sai o IPCA-15 de novembro: o InfoMoney cita expectativa de 0,34% no mês e 4,78% em 12 meses (outubro: 0,32% e 4,62%). Nas 26 divulgações de inflação local acompanhadas pelo Lectnex desde nov/2024, o movimento típico logo após o dado foi de 0,15% no WIN e 0,25% no WDO — reação costuma ser menor que a de dados americanos, mas mexe nos DIs curtos.",
+  "Nova York está fechada (Ação de Graças): sem mercado à vista nem de Treasuries, a liquidez da B3 tende a cair. Às 7h30, S&P futuro +0,72%, Nasdaq futuro +1,11%, EWZ +2,09% e VIX −4,88%; na Ásia, segundo a AP, Nikkei +1,3%, Kospi +1,2% e Hang Seng +1,9%, com recuperação das ações de IA.",
+  "Nos EUA, o núcleo do PCE de outubro subiu a 3,3% em 12 meses, acima dos 3,2% esperados, e o PIB do 3º tri foi revisado para 4,3%; segundo o Yahoo Finance, citando o CME, a chance de alta de 0,25 ponto do Fed em dezembro está em 98%. Treasury de 10 anos perto de 4,86% (AP).",
+  "Comércio: o USTR propôs tarifa adicional de 10% sobre aviões brasileiros prontos e há tarifa sobre açúcar acima das cotas, dentro de um pacote contra 14 parceiros, segundo o InfoMoney; o governo chamou a medida de inaceitável. A Embraer caiu cerca de 4% ontem."
+ ],
+ "pontos": [
+  {
+   "titulo": "IPCA-15 de novembro às 9h",
+   "texto": "Expectativa de 0,34% no mês (InfoMoney); surpresa mexe nos DIs curtos e no WDO na abertura."
+  },
+  {
+   "titulo": "NY fechada pela Ação de Graças",
+   "texto": "Sem referência de Nova York, liquidez menor pode ampliar oscilações do WIN e do WDO."
+  },
+  {
+   "titulo": "PEC de gastos segue em discussão",
+   "texto": "Sinais sobre o alcance das medidas de despesas obrigatórias mexem no prêmio do DI longo e no WDO."
+  }
+ ],
+ "termometro": {
+  "win": {
+   "leitura": "bullish",
+   "motivo": "EWZ +2,09%, S&P futuro +0,72% e VIX −4,88% antes da abertura, com Ásia em alta; o IPCA-15 às 9h e a liquidez baixa sem NY podem reduzir o movimento."
+  },
+  "wdo": {
+   "leitura": "bearish",
+   "motivo": "EWZ +2,09% e VIX −4,88% sinalizam apetite por risco, apesar do DXY +0,14%; IPCA-15 acima do esperado e o pacote de tarifas dos EUA são o risco para essa leitura."
+  }
+ },
+ "destaques": [
+  {
+   "hora": "8h30",
+   "evento": "Transações correntes e IDP de outubro (BCB)",
+   "por_que": "Fluxo externo ajuda a explicar a pressão recente sobre o real; anterior: déficit de US$ 5,10 bi."
+  },
+  {
+   "hora": "9h",
+   "evento": "IPCA-15 de novembro (IBGE)",
+   "por_que": "Prévia da inflação com expectativa de 0,34% no mês; mexe nos vértices curtos do DI e na leitura do Copom."
+  },
+  {
+   "hora": "11h",
+   "evento": "Moretti em seminário da bancada do PT",
+   "por_que": "Falas sobre o 'cardápio' de medidas de despesas obrigatórias podem mexer no DI longo e no WDO."
+  },
+  {
+   "hora": "15h",
+   "evento": "Entrevista do BC sobre o setor externo",
+   "por_que": "Detalhes sobre fluxo cambial e investimento estrangeiro no fim do mês mexem no WDO."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 fut.",
+   "variacao": "+0,72%"
+  },
+  {
+   "ativo": "Nasdaq fut.",
+   "variacao": "+1,11%"
+  },
+  {
+   "ativo": "EWZ",
+   "variacao": "+2,09%"
+  },
+  {
+   "ativo": "DXY",
+   "variacao": "+0,14%"
+  },
+  {
+   "ativo": "VIX",
+   "variacao": "−4,88%"
+  },
+  {
+   "ativo": "Nikkei",
+   "variacao": "+1,3%"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "EUA propõem tarifa de 10% sobre aviões brasileiros em pacote contra 14 parceiros",
+   "fonte": "InfoMoney",
+   "hora": "06h28",
+   "url": "https://www.infomoney.com.br/mercados/ipca-15-debate-fiscal-feriado-eua-agenda-26112026/",
+   "por_que": "Proposta do USTR (Seção 301) inclui aeronaves prontas e açúcar acima das cotas; ainda passa por consulta pública. Pesa em Embraer e reforça o risco comercial para o real.",
+   "impacto": {
+    "win": "baixa",
+    "wdo": "alta"
+   }
+  },
+  {
+   "titulo": "Núcleo do PCE sobe a 3,3% e PIB dos EUA é revisado para 4,3%",
+   "fonte": "Yahoo Finance",
+   "hora": "19h52",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
+   "por_que": "Inflação acima do esperado reforça a alta do Fed em dezembro (98% de chance no CME, segundo a página); juro americano alto sustenta o dólar global e os DIs.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  },
+  {
+   "titulo": "Bolsa sobe 1,58% e dólar cai a R$ 5,81 com expectativa fiscal",
+   "fonte": "CNN Brasil",
+   "hora": "20h58",
+   "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-25-novembro-2026/",
+   "por_que": "Moretti disse trabalhar num 'cardápio' de medidas para despesas obrigatórias e negou que haja PEC pronta; a Reuters havia informado, com base em fontes, que Lula autorizou o envio de uma PEC. O desfecho mexe no prêmio do DI longo.",
+   "impacto": {
+    "wdo": "baixa",
+    "di": "baixa"
+   }
+  },
+  {
+   "titulo": "Ações asiáticas se recuperam lideradas por empresas de IA; NY fechada hoje",
+   "fonte": "AP",
+   "hora": "02h21",
+   "url": "https://www.clickondetroit.com/business/2026/11/26/asian-shares-rebound-led-by-ai-stocks-after-wall-street-pares-sharp-losses/",
+   "por_que": "Nikkei +1,3%, Kospi +1,2% e Taiex +2,6% após Wall Street reduzir perdas na quarta (S&P −0,3%, Nasdaq −0,6%); alívio no apetite por risco ajuda emergentes.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa"
+   }
+  },
+  {
+   "titulo": "Nomes para a Fazenda entram no radar; mercado cita Trabuco, Alckmin e Durigan",
+   "fonte": "InfoMoney",
+   "hora": "06h28",
+   "url": "https://www.infomoney.com.br/mercados/ipca-15-debate-fiscal-feriado-eua-agenda-26112026/",
+   "por_que": "Segundo o InfoMoney, os três são cotados; não há confirmação oficial. A especulação ajudou a queda do dólar ontem e pode voltar a mexer no WDO e no DI longo.",
+   "impacto": {}
+  }
+ ],
+ "fontes": [
+  {
+   "titulo": "CNN Brasil — Dólar fecha em R$ 5,81 e Bolsa sobe com fiscal, tarifaço e inflação dos EUA",
+   "url": "https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-25-novembro-2026/"
+  },
+  {
+   "titulo": "InfoMoney — IPCA-15, agenda fiscal de Lula, feriado nos EUA e outros destaques desta quinta-feira",
+   "url": "https://www.infomoney.com.br/mercados/ipca-15-debate-fiscal-feriado-eua-agenda-26112026/"
+  },
+  {
+   "titulo": "Yahoo Finance — Stock market today: Dow erases losses to end positive, S&P 500 and Nasdaq recover ground",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+  },
+  {
+   "titulo": "AP (via ClickOnDetroit) — Asian shares rebound led by AI stocks after Wall Street pares sharp losses",
+   "url": "https://www.clickondetroit.com/business/2026/11/26/asian-shares-rebound-led-by-ai-stocks-after-wall-street-pares-sharp-losses/"
+  },
+  {
+   "titulo": "Reuters (via Investing.com) — Lula autoriza envio de PEC sobre despesas obrigatórias ao Congresso, diz fonte",
+   "url": "https://br.investing.com/news/economy-news/lula-autoriza-envio-de-pec-sobre-despesas-obrigatorias-ao-congresso-diz-fonte-2136976"
+  },
+  {
+   "titulo": "Exame — IPCA-15, PEC dos gastos e feriado nos EUA: o que move o mercado",
+   "url": "https://exame.com/invest/mercados/ibovespa-hoje-26-11-2026/"
+  }
+ ]
+}
