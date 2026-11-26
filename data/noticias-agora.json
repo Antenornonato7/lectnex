@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T12:38-03:00",
+  "atualizado_em": "2026-11-26T13:08-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -119,11 +119,35 @@
     ],
     [
      "12:20",
-     172821.0
+     173071.0
     ],
     [
-     "12:23",
-     172999.0
+     "12:25",
+     173171.0
+    ],
+    [
+     "12:30",
+     173180.0
+    ],
+    [
+     "12:35",
+     173557.0
+    ],
+    [
+     "12:40",
+     173461.0
+    ],
+    [
+     "12:45",
+     173209.0
+    ],
+    [
+     "12:50",
+     173035.0
+    ],
+    [
+     "12:53",
+     173007.0
     ]
    ]
   },
@@ -304,11 +328,35 @@
     ],
     [
      "12:35",
-     5.7287
+     5.7268
     ],
     [
-     "12:38",
-     5.7275
+     "12:40",
+     5.7317
+    ],
+    [
+     "12:45",
+     5.7327
+    ],
+    [
+     "12:50",
+     5.7367
+    ],
+    [
+     "12:55",
+     5.7351
+    ],
+    [
+     "13:00",
+     5.7395
+    ],
+    [
+     "13:05",
+     5.7359
+    ],
+    [
+     "13:08",
+     5.7385
     ]
    ]
   },
@@ -544,6 +592,20 @@
     "dolar30": -0.35
    },
    {
+    "hora": "10:33",
+    "titulo": "Ibovespa sobe mais de 3% com expectativa sobre Lula 4 e IPCA-15; apenas duas ações caem",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPT3hnSW5QT2VORGtqVHJ3bVJZdmUxT0pDQjdPNWlWdTRwNzhJeWF1dWlhX1ZKZU9mX1RzN1phYlR2XzdYY192b2hSVUUxR0Fnc3hmVEc3ZldpalFneTlpLVFQS08ydFZ5Qzh4SVlHclpKYllKMllvTzFGbU5YYTV1RmUxTUstX0xsSXhUMzMwS3YwVFhtejkwZTk0QXVtN2dtWWtBSFlVeFBMQklmUUhMV04wZ3dPX1BQU0h5b1ZRSkN5X2YxNnJJMFBOMEVfdTNlbjNYTDhrUjJUUGk1T21MTWNCQXNvel80R0pwUGpuY0ZLM3PSAfMBQVVfeXFMT094Z0luUE9lTkRralRyd21SWXZlMU9KQ0I3TzVpVnU0cDc4SXlhdXVpYV9WSmVPZl9UczdaYWJUdl83WGNfdm9oUlVFMUdBZ3N4ZlRHN2ZXaWpRZ3k5aS1RUEtPMnRWeUM4eElZR3JaSmJZSjJZb08xRm1OWGE1dUZlMU1LLV9MbEl4VDMzMEt2MFRYbXo5MGU5NEF1bTdnbVlrQUhZVXhQTEJJZlFITFdOMGd3T19QUFNIeW9WUUpDeV9mMTZySTBQTjBFX3UzZW4zWEw4a1IyVFBpNU9tTE1jQkFzb3pfNEdKcFBqbmNGSzNz?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.29,
+    "dolar30": -0.35
+   },
+   {
     "hora": "10:43",
     "titulo": "IPCA-15 desacelera a 0,22% em novembro, com alívio nas passagens aéreas e nos combustíveis",
     "fonte": "Folha",
@@ -625,7 +687,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.31,
+    "ibov30": -0.17,
     "dolar30": 0.08
    },
    {
@@ -638,8 +700,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": -0.07
+    "ibov30": 0.49,
+    "dolar30": -0.1
    },
    {
     "hora": "12:07",
@@ -655,8 +717,8 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": null,
-    "dolar30": -0.07
+    "ibov30": 0.49,
+    "dolar30": -0.1
    },
    {
     "hora": "12:19",
@@ -666,6 +728,33 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": 0.28,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "12:35",
+    "titulo": "Dólar alto traz incerteza, mas Latam mantém planos de expansão para 2027",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/dolar-alto-traz-incerteza-mas-latam-mantem-planos-de-expansao-para-2027.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.22
+   },
+   {
+    "hora": "12:46",
+    "titulo": "Ajuste fiscal, Previdência, tarifas, bets, IA: o que Trabuco já disse sobre temas-chave da economia",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/o-que-trabuco-ja-disse-sobre-temas-chave-da-economia/",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1199,6 +1288,18 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa sobe mais de 3% com expectativa sobre Lula 4 e IPCA-15; apenas duas ações caem",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPT3hnSW5QT2VORGtqVHJ3bVJZdmUxT0pDQjdPNWlWdTRwNzhJeWF1dWlhX1ZKZU9mX1RzN1phYlR2XzdYY192b2hSVUUxR0Fnc3hmVEc3ZldpalFneTlpLVFQS08ydFZ5Qzh4SVlHclpKYllKMllvTzFGbU5YYTV1RmUxTUstX0xsSXhUMzMwS3YwVFhtejkwZTk0QXVtN2dtWWtBSFlVeFBMQklmUUhMV04wZ3dPX1BQU0h5b1ZRSkN5X2YxNnJJMFBOMEVfdTNlbjNYTDhrUjJUUGk1T21MTWNCQXNvel80R0pwUGpuY0ZLM3PSAfMBQVVfeXFMT094Z0luUE9lTkRralRyd21SWXZlMU9KQ0I3TzVpVnU0cDc4SXlhdXVpYV9WSmVPZl9UczdaYWJUdl83WGNfdm9oUlVFMUdBZ3N4ZlRHN2ZXaWpRZ3k5aS1RUEtPMnRWeUM4eElZR3JaSmJZSjJZb08xRm1OWGE1dUZlMU1LLV9MbEl4VDMzMEt2MFRYbXo5MGU5NEF1bTdnbVlrQUhZVXhQTEJJZlFITFdOMGd3T19QUFNIeW9WUUpDeV9mMTZySTBQTjBFX3UzZW4zWEw4a1IyVFBpNU9tTE1jQkFzb3pfNEdKcFBqbmNGSzNz?oc=5",
+   "publicado": "2026-11-26T10:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "IPCA-15 desacelera a 0,22% em novembro, com alívio nas passagens aéreas e nos combustíveis",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ipca-15-desacelera-a-022-em-novembro-com-alivio-nas-passagens-aereas-e-nos-combustiveis.shtml",
@@ -1307,6 +1408,29 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar alto traz incerteza, mas Latam mantém planos de expansão para 2027",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/dolar-alto-traz-incerteza-mas-latam-mantem-planos-de-expansao-para-2027.shtml",
+   "publicado": "2026-11-26T12:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ajuste fiscal, Previdência, tarifas, bets, IA: o que Trabuco já disse sobre temas-chave da economia",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/o-que-trabuco-ja-disse-sobre-temas-chave-da-economia/",
+   "publicado": "2026-11-26T12:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1336,19 +1460,42 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T12:38-03:00",
+ "atualizado_em": "2026-11-26T13:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ajuste fiscal, Previdência, tarifas, bets, IA: o que Trabuco já disse sobre temas-chave da economia",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/o-que-trabuco-ja-disse-sobre-temas-chave-da-economia/",
+   "publicado": "2026-11-26T12:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar alto traz incerteza, mas Latam mantém planos de expansão para 2027",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/dolar-alto-traz-incerteza-mas-latam-mantem-planos-de-expansao-para-2027.shtml",
+   "publicado": "2026-11-26T12:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Lukoil venderá ativos no exterior a grupo americano por US$ 10 bilhões",
    "fonte": "Folha",
@@ -1411,7 +1558,7 @@
    "tickers": []
   },
   {
-   "titulo": "\"Jensanity\" toma conta de Taiwan e da China com retorno do fundador da Nvidia",
+   "titulo": "'Jensanity' toma conta de Taiwan e da China com retorno do fundador da Nvidia",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/jensanity-toma-conta-de-taiwan-e-da-china-com-retorno-do-fundador-da-nvidia.shtml",
    "publicado": "2026-11-26T11:39-03:00",
@@ -1436,42 +1583,16 @@
    ]
   },
   {
-   "titulo": "PACC11: mesmo com surpresa do IPCA-15, títulos indexados à inflação seguem interessantes",
+   "titulo": "Tempo real: Ibovespa sobe forte e recupera os 173 mil pontos com IPCA-15; veja os destaques desta quinta-feira (26)",
    "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaXdOWlJveGpRZ21McnVaQXd5OVZNMHN6N1djRVNvSTlGdjdGNUhaRFNtaDIwRkozanFDYjR5RWdKWk00ajhPZFNzLWIwcHpWVGhwb3Q1eWM2NldoY2tqZmF3S1FfV3psRTNrb1c5UjN3ZzZDNXBSdlZJZ2oydzRsd3duTUQwNEMxd2V4NndTcTRRQnd2azRFZjgyRW4zdXRlN3lzeXM5cUhLdVU5b28yQ1p1REMzZDYx?oc=5",
-   "publicado": "2026-11-26T11:05-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": [
-    "PACC11"
-   ]
-  },
-  {
-   "titulo": "IPCA-15 surpreende para baixo e reforça aposta em Selic “parada” por mais tempo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUnJNWVItc2l5M2tadTBnTUVBUWc1S1VfU3VDWGFNMDFKbzVPNENlVE1NQ0tMVGtkX1RlN2Qta1BscXROakNxM1YteDRqa2U4eXNYd3VtTjZjaVpxWm9rT1pTaF9Sb3FEaFM3V0pGeVNTN0JVRGNpSUZKaWlrOWdpM3MyLTBOSGZhYTBsaUJTUGQ4V1pFZmV3R1pHMV9iZXhGYm15ZlZvRklsRVd2QXM3RXE5SVllNkHSAbwBQVVfeXFMT3VRWTNTeHJtOXJwaUk4LXV3YTVHRXhLYUsxTTQ3M2Ywb09hZXJ4RldpRHMzRW5Vc2pMRG5nWWpRUUxBSGs4VUx3N3lXbDBxR0NURm52dmVqSzFWeTlOUE81NFhrNUIwZ09sU01hT0FvZGRQNlVwZ0YtMk1DSGgzaDExbVdoT2JHTzFkMWthaTh4eWw3SG16M0YzMkJQT3dLNXJvcWd5Ukc2ZXdyNmN1eGx3OXJZVnV6M0RwRnc?oc=5",
-   "publicado": "2026-11-26T10:54-03:00",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fSThLVDhWRmFMZVpGOEx2TGhrTjRqQVc4V0tReVVaeHR3cGE0Z3hNNHpTa2RVRWYwcWd1VTNCaDdMM3hyU2pLUXdfbWVfZGNsV2hCU1JrYTF4SmVKVERXVWhRVFFUNTds?oc=5",
+   "publicado": "2026-11-26T11:08-03:00",
    "impacto": "alto",
    "ativos": [
-    "WDO",
+    "WIN",
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj0gHkAUFVX3lxTE1GTEFxaWhVZmtILWFGZkRELUpfdDAyQ3dYbENpUDhYVTJoQ3ZZdW82ZGJCR1lUeXkzTHV2aERpMmdwRXBtQ1BpSzVLZ203RWJPLThoeFdPdUdGODJMUXEtekhfS29icVZDYWRNN2p3SW5yTFZRVUVuUGVQa1hJcUpIQllGVVpZRlpDQXBfZW4wbVhBdDEyQnItd1VpTy1PY3FkVHVVaFQ5ei1NMUszVHg0aVZzYjRqcmZfaVo5bWJSaE5hdTB6Tl9WSXgtT25WaVBSQ1RYU3JXY1ZFLXJzT2ctMzhNRQ?oc=5",
-   "publicado": "2026-11-26T10:47-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
   },
   {
    "titulo": "IPCA-15 desacelera a 0,22% em novembro, com alívio nas passagens aéreas e nos combustíveis",
@@ -1480,6 +1601,18 @@
    "publicado": "2026-11-26T10:43-03:00",
    "impacto": "medio",
    "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe mais de 3% com expectativa sobre Lula 4 e IPCA-15; apenas duas ações caem",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPT3hnSW5QT2VORGtqVHJ3bVJZdmUxT0pDQjdPNWlWdTRwNzhJeWF1dWlhX1ZKZU9mX1RzN1phYlR2XzdYY192b2hSVUUxR0Fnc3hmVEc3ZldpalFneTlpLVFQS08ydFZ5Qzh4SVlHclpKYllKMllvTzFGbU5YYTV1RmUxTUstX0xsSXhUMzMwS3YwVFhtejkwZTk0QXVtN2dtWWtBSFlVeFBMQklmUUhMV04wZ3dPX1BQU0h5b1ZRSkN5X2YxNnJJMFBOMEVfdTNlbjNYTDhrUjJUUGk1T21MTWNCQXNvel80R0pwUGpuY0ZLM3PSAfMBQVVfeXFMT094Z0luUE9lTkRralRyd21SWXZlMU9KQ0I3TzVpVnU0cDc4SXlhdXVpYV9WSmVPZl9UczdaYWJUdl83WGNfdm9oUlVFMUdBZ3N4ZlRHN2ZXaWpRZ3k5aS1RUEtPMnRWeUM4eElZR3JaSmJZSjJZb08xRm1OWGE1dUZlMU1LLV9MbEl4VDMzMEt2MFRYbXo5MGU5NEF1bTdnbVlrQUhZVXhQTEJJZlFITFdOMGd3T19QUFNIeW9WUUpDeV9mMTZySTBQTjBFX3UzZW4zWEw4a1IyVFBpNU9tTE1jQkFzb3pfNEdKcFBqbmNGSzNz?oc=5",
+   "publicado": "2026-11-26T10:33-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "DI"
    ],
    "tickers": []
@@ -1496,43 +1629,35 @@
    "tickers": []
   },
   {
+   "titulo": "Latam realiza primeiro voo oficial com avião da Embraer entre Guarulhos e Brasília",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/latam-realiza-primeiro-voo-oficial-com-aviao-da-embraer-entre-guarulhos-e-brasilia-npr/",
+   "publicado": "2026-11-26T10:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
+   "titulo": "Semiconductor chips are the new oil. Here's why",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+   "publicado": "2026-11-26T10:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trump-usa-tarifas-para-pressionar-asiaticos-a-fecharem-acordos-dizem-analistas.shtml",
    "publicado": "2026-11-26T10:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsa dispara mais de 4% com possibilidade de Trabuco na Fazenda; dólar cai a R$ 5,71",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-de-mais-de-1-com-possibilidade-de-trabuco-na-fazenda.shtml",
-   "publicado": "2026-11-26T09:54-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Prévia da inflação: IPCA-15 desacelera e fecha novembro em 0,22%, abaixo do esperado",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/ibge-ipca-15-previa-inflacao-novembro-2026/",
-   "publicado": "2026-11-26T09:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
-   "publicado": "2026-11-26T09:46-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
