@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T15:50-03:00",
+  "atualizado_em": "2026-11-26T15:53-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -275,7 +275,11 @@
     ],
     [
      "15:35",
-     172964.0
+     173060.0
+    ],
+    [
+     "15:38",
+     173247.0
     ]
    ]
   },
@@ -612,6 +616,10 @@
     ],
     [
      "15:50",
+     5.7433
+    ],
+    [
+     "15:53",
      5.743
     ]
    ]
@@ -2052,7 +2060,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T15:50-03:00",
+ "atualizado_em": "2026-11-26T15:53-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2077,6 +2085,18 @@
    "tickers": []
   },
   {
+   "titulo": "Ibovespa dispara 3% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,74",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
+   "publicado": "2026-11-26T15:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "O que explica a forte alta do Ibovespa nesta quinta-feira (26)?",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObWswRlByQkp1eVN1TEtGekdmVlN0Yl84Q05NaHdDSFB0Xy00bE1vWG1uM3d6UllqejFGY2htTWRsNUQ1TUtHdFAxWTQ4NXgwQm5UOXI3eHdvUEpJME8xZE12ZkpKaXYyUUZabm9RczZrb2RRM3ZzSTlGclBSTnRrZ2NCWkY2eVNJUURPcndubkV6Tml1VE9wTkpoTHBTeHFQdzlHTm1USkhyRTdNWl94VVh5ZVE3U3J1bTYwZ0l5c0R1WGZNYmc?oc=5",
@@ -2096,18 +2116,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa dispara 3% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,74",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
-   "publicado": "2026-11-26T15:18-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -2167,18 +2175,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Otimismo com equipe econômica leva Ibovespa a alta de 1,5%; dólar caiu mais de 1%, cotado a R$ 5,91",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQczJFalltWGczRWxSOU5fUExWM2tkLXkyRU94Z0FTT1MzUFE4cEZ0ZkFUVjVCSFNDWV9tVTh1ZjI2M2pzR3BlblRtaUxPMkVxYkFjVlRyQi1zLVpEOXZSLWJfQTFfbUp1Z3ZJcUFtN010SkFZYVZVcENvXzZnVlYzSWxScy1MRUZScXR4enc5d05kUHpmd2ZoWGRoaEhLakFmR0p1THN2N0VxUFZKUGRreDlyUTAwQldFaC03NVFUNmczeU81cHdmeHpUS1NJUzVZNUd4THhxSnlLVk9oX1B3cXcxcGtBb3ZVY1oxZTJnVQ?oc=5",
-   "publicado": "2026-11-26T13:52-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
