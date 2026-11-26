@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T12:08-03:00",
+  "atualizado_em": "2026-11-26T12:38-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -95,11 +95,35 @@
     ],
     [
      "11:50",
-     173400.0
+     173367.0
     ],
     [
-     "11:53",
-     173361.0
+     "11:55",
+     173122.0
+    ],
+    [
+     "12:00",
+     173034.0
+    ],
+    [
+     "12:05",
+     172713.0
+    ],
+    [
+     "12:10",
+     172649.0
+    ],
+    [
+     "12:15",
+     172731.0
+    ],
+    [
+     "12:20",
+     172821.0
+    ],
+    [
+     "12:23",
+     172999.0
     ]
    ]
   },
@@ -259,8 +283,32 @@
      5.7326
     ],
     [
-     "12:08",
-     5.7327
+     "12:10",
+     5.7315
+    ],
+    [
+     "12:15",
+     5.7346
+    ],
+    [
+     "12:20",
+     5.7332
+    ],
+    [
+     "12:25",
+     5.7341
+    ],
+    [
+     "12:30",
+     5.7337
+    ],
+    [
+     "12:35",
+     5.7287
+    ],
+    [
+     "12:38",
+     5.7275
     ]
    ]
   },
@@ -538,6 +586,21 @@
     "dolar30": -0.09
    },
    {
+    "hora": "11:05",
+    "titulo": "PACC11: mesmo com surpresa do IPCA-15, títulos indexados à inflação seguem interessantes",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaXdOWlJveGpRZ21McnVaQXd5OVZNMHN6N1djRVNvSTlGdjdGNUhaRFNtaDIwRkozanFDYjR5RWdKWk00ajhPZFNzLWIwcHpWVGhwb3Q1eWM2NldoY2tqZmF3S1FfV3psRTNrb1c5UjN3ZzZDNXBSdlZJZ2oydzRsd3duTUQwNEMxd2V4NndTcTRRQnd2azRFZjgyRW4zdXRlN3lzeXM5cUhLdVU5b28yQ1p1REMzZDYx?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [
+     "PACC11"
+    ],
+    "ibov30": 0.51,
+    "dolar30": -0.16
+   },
+   {
     "hora": "11:10",
     "titulo": "Embraer foi pega de surpresa e vai insistir no argumento econômico para evitar tarifas, diz presidente",
     "fonte": "Folha",
@@ -557,6 +620,49 @@
     "titulo": "Real frente ao dólar: por que Goldman projeta retorno de 20% em 12 meses?",
     "fonte": "InfoMoney",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY3BfYS10QWRadTZKT1QwZ2tUelg3VkdDel9LRzV4V3E4N1JGY2lNTGVKdS1EMGlrNTB3VkVweU5CdnRYWGxiU0tqUVhpNzMwVTFoQVVCX1dlTWxPRExTWUpIN3IwX2syS204TUxJaGJldkZsdXltT3BYZDRMa3JaLUgxSkfSAYoBQVVfeXFMTUNrM0xBZWVFal9VQnl2dWNJWkhHdl9CZV9rMS1YUlA0OXR4VzV6UGstOHVKZ1I2RjFFRXpNeW5seDNtcFRLQ0poalRGbFRIOXVCUkJVSjM3QjdzYVBkNURDcUVVT2p4eWc4Z2NtQXY1UGVPeTRhYVM1RF91T3B4d0oyd1hvTUtuX0p3?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.31,
+    "dolar30": 0.08
+   },
+   {
+    "hora": "12:06",
+    "titulo": "Durigan fala em combater supersalários e mudar aposentadoria de militares em novo pacote fiscal",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-fala-em-combater-supersalarios-e-mudar-aposentadoria-de-militares-em-novo-pacote-fiscal.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "12:07",
+    "titulo": "Letras Financeiras superam retorno do Tesouro Selic e lideram ranking de renda fixa da B3",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQzdFNzZnNTJDY3VBQWV5Y2lkSnBvOGdDVWxWOFRHNjJmT3ItckRlM1ktalo4SG5WY2NvVjZQRllnLUFWVXhvSWVwZ0hlVjVocjNubjQxUW1GdTY5SjZjT3F4UnhRTGdGTlljcFlhbmF2U0xJWmk4ZWxTSVdVRWxacXdwQ19RdGZGX0ZHUWpyakRkREw3SjVKdWNhUjAxVzBFeVpSaG5GOEJyNEE2RUVoNTBtdGxBbENSWVNTSC1ROXptZkU?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO",
+     "DI"
+    ],
+    "tickers": [
+     "B3SA3"
+    ],
+    "ibov30": null,
+    "dolar30": -0.07
+   },
+   {
+    "hora": "12:19",
+    "titulo": "Cotação da stablecoin USDT pode se afastar do dólar à vista",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaVpiVXdMSGRXb1BYb2hEMGxfbmpxdXFIdkFQQmlDWVpYUUZlYXp3d3BkXzd2MTUyY2xrN2VnR2ZEdlFZc1VxUzJXa1dONmYxTnFoMGk0VGFucWY2YnFkY2luSUNGZE1OTVpIdkxWVkx3eG0zbWxHa2gxanpaT19oUE9KQlFKbjRNSmU3cDNRaFh6MmFKR21RZjVOXy14NEpyTFNVRTNrTTVkY1lXSDktSGYzNVA5OFkxckkyWGJuWUUzYWxyeU9GMk9B0gHYAUFVX3lxTE00MlBjMlhma3JzRkZiZUVyOVNaeTgtelUtNlNXUmgxT0IyY3RlQXdXby1qZlpuNW1OY3ZXWGkxQ3ozdUxTOEEwLWZ6ZGRSNU11SElLSmg3bzVjNWdHaDl1T0xqSmQ5cUNlNm1XQ0V1dXRVNlFWTlRxTWJJYkt5d0FYZ1F3Uk9ueUdvYzVxdFd2ODFNbmlKYUxOdVBYMWxQZGd6Z3FyWDQtQzE3Ri1QVWFMV0RRYldRV1BhTHZtRVd4WXlPSURhbXBlalNKamdocHB2ZUxRbHpEdA?oc=5",
     "impacto": "medio",
     "ativos": [
      "WDO"
@@ -1129,6 +1235,19 @@
    "tickers": []
   },
   {
+   "titulo": "PACC11: mesmo com surpresa do IPCA-15, títulos indexados à inflação seguem interessantes",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaXdOWlJveGpRZ21McnVaQXd5OVZNMHN6N1djRVNvSTlGdjdGNUhaRFNtaDIwRkozanFDYjR5RWdKWk00ajhPZFNzLWIwcHpWVGhwb3Q1eWM2NldoY2tqZmF3S1FfV3psRTNrb1c5UjN3ZzZDNXBSdlZJZ2oydzRsd3duTUQwNEMxd2V4NndTcTRRQnd2azRFZjgyRW4zdXRlN3lzeXM5cUhLdVU5b28yQ1p1REMzZDYx?oc=5",
+   "publicado": "2026-11-26T11:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": [
+    "PACC11"
+   ]
+  },
+  {
    "titulo": "Embraer foi pega de surpresa e vai insistir no argumento econômico para evitar tarifas, diz presidente",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/embraer-foi-pega-de-surpresa-e-vai-insistir-no-argumento-economico-para-evitar-tarifas-diz-presidente.shtml",
@@ -1146,6 +1265,43 @@
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY3BfYS10QWRadTZKT1QwZ2tUelg3VkdDel9LRzV4V3E4N1JGY2lNTGVKdS1EMGlrNTB3VkVweU5CdnRYWGxiU0tqUVhpNzMwVTFoQVVCX1dlTWxPRExTWUpIN3IwX2syS204TUxJaGJldkZsdXltT3BYZDRMa3JaLUgxSkfSAYoBQVVfeXFMTUNrM0xBZWVFal9VQnl2dWNJWkhHdl9CZV9rMS1YUlA0OXR4VzV6UGstOHVKZ1I2RjFFRXpNeW5seDNtcFRLQ0poalRGbFRIOXVCUkJVSjM3QjdzYVBkNURDcUVVT2p4eWc4Z2NtQXY1UGVPeTRhYVM1RF91T3B4d0oyd1hvTUtuX0p3?oc=5",
    "publicado": "2026-11-26T11:51-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Durigan fala em combater supersalários e mudar aposentadoria de militares em novo pacote fiscal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-fala-em-combater-supersalarios-e-mudar-aposentadoria-de-militares-em-novo-pacote-fiscal.shtml",
+   "publicado": "2026-11-26T12:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Letras Financeiras superam retorno do Tesouro Selic e lideram ranking de renda fixa da B3",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQzdFNzZnNTJDY3VBQWV5Y2lkSnBvOGdDVWxWOFRHNjJmT3ItckRlM1ktalo4SG5WY2NvVjZQRllnLUFWVXhvSWVwZ0hlVjVocjNubjQxUW1GdTY5SjZjT3F4UnhRTGdGTlljcFlhbmF2U0xJWmk4ZWxTSVdVRWxacXdwQ19RdGZGX0ZHUWpyakRkREw3SjVKdWNhUjAxVzBFeVpSaG5GOEJyNEE2RUVoNTBtdGxBbENSWVNTSC1ROXptZkU?oc=5",
+   "publicado": "2026-11-26T12:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Cotação da stablecoin USDT pode se afastar do dólar à vista",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaVpiVXdMSGRXb1BYb2hEMGxfbmpxdXFIdkFQQmlDWVpYUUZlYXp3d3BkXzd2MTUyY2xrN2VnR2ZEdlFZc1VxUzJXa1dONmYxTnFoMGk0VGFucWY2YnFkY2luSUNGZE1OTVpIdkxWVkx3eG0zbWxHa2gxanpaT19oUE9KQlFKbjRNSmU3cDNRaFh6MmFKR21RZjVOXy14NEpyTFNVRTNrTTVkY1lXSDktSGYzNVA5OFkxckkyWGJuWUUzYWxyeU9GMk9B0gHYAUFVX3lxTE00MlBjMlhma3JzRkZiZUVyOVNaeTgtelUtNlNXUmgxT0IyY3RlQXdXby1qZlpuNW1OY3ZXWGkxQ3ozdUxTOEEwLWZ6ZGRSNU11SElLSmg3bzVjNWdHaDl1T0xqSmQ5cUNlNm1XQ0V1dXRVNlFWTlRxTWJJYkt5d0FYZ1F3Uk9ueUdvYzVxdFd2ODFNbmlKYUxOdVBYMWxQZGd6Z3FyWDQtQzE3Ri1QVWFMV0RRYldRV1BhTHZtRVd4WXlPSURhbXBlalNKamdocHB2ZUxRbHpEdA?oc=5",
+   "publicado": "2026-11-26T12:19-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -1180,7 +1336,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T12:08-03:00",
+ "atualizado_em": "2026-11-26T12:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1188,13 +1344,49 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times",
-  "Valor"
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Lukoil venderá ativos no exterior a grupo americano por US$ 10 bilhões",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/lukoil-vendera-ativos-no-exterior-a-grupo-americano-por-us-10-bilhoes.shtml",
+   "publicado": "2026-11-26T12:11-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Letras Financeiras superam retorno do Tesouro Selic e lideram ranking de renda fixa da B3",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQzdFNzZnNTJDY3VBQWV5Y2lkSnBvOGdDVWxWOFRHNjJmT3ItckRlM1ktalo4SG5WY2NvVjZQRllnLUFWVXhvSWVwZ0hlVjVocjNubjQxUW1GdTY5SjZjT3F4UnhRTGdGTlljcFlhbmF2U0xJWmk4ZWxTSVdVRWxacXdwQ19RdGZGX0ZHUWpyakRkREw3SjVKdWNhUjAxVzBFeVpSaG5GOEJyNEE2RUVoNTBtdGxBbENSWVNTSC1ROXptZkU?oc=5",
+   "publicado": "2026-11-26T12:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO",
+    "DI"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Durigan fala em combater supersalários e mudar aposentadoria de militares em novo pacote fiscal",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/durigan-fala-em-combater-supersalarios-e-mudar-aposentadoria-de-militares-em-novo-pacote-fiscal.shtml",
+   "publicado": "2026-11-26T12:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Real frente ao dólar: por que Goldman projeta retorno de 20% em 12 meses?",
    "fonte": "InfoMoney",
@@ -1244,6 +1436,19 @@
    ]
   },
   {
+   "titulo": "PACC11: mesmo com surpresa do IPCA-15, títulos indexados à inflação seguem interessantes",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaXdOWlJveGpRZ21McnVaQXd5OVZNMHN6N1djRVNvSTlGdjdGNUhaRFNtaDIwRkozanFDYjR5RWdKWk00ajhPZFNzLWIwcHpWVGhwb3Q1eWM2NldoY2tqZmF3S1FfV3psRTNrb1c5UjN3ZzZDNXBSdlZJZ2oydzRsd3duTUQwNEMxd2V4NndTcTRRQnd2azRFZjgyRW4zdXRlN3lzeXM5cUhLdVU5b28yQ1p1REMzZDYx?oc=5",
+   "publicado": "2026-11-26T11:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": [
+    "PACC11"
+   ]
+  },
+  {
    "titulo": "IPCA-15 surpreende para baixo e reforça aposta em Selic “parada” por mais tempo",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUnJNWVItc2l5M2tadTBnTUVBUWc1S1VfU3VDWGFNMDFKbzVPNENlVE1NQ0tMVGtkX1RlN2Qta1BscXROakNxM1YteDRqa2U4eXNYd3VtTjZjaVpxWm9rT1pTaF9Sb3FEaFM3V0pGeVNTN0JVRGNpSUZKaWlrOWdpM3MyLTBOSGZhYTBsaUJTUGQ4V1pFZmV3R1pHMV9iZXhGYm15ZlZvRklsRVd2QXM3RXE5SVllNkHSAbwBQVVfeXFMT3VRWTNTeHJtOXJwaUk4LXV3YTVHRXhLYUsxTTQ3M2Ywb09hZXJ4RldpRHMzRW5Vc2pMRG5nWWpRUUxBSGs4VUx3N3lXbDBxR0NURm52dmVqSzFWeTlOUE81NFhrNUIwZ09sU01hT0FvZGRQNlVwZ0YtMk1DSGgzaDExbVdoT2JHTzFkMWthaTh4eWw3SG16M0YzMkJQT3dLNXJvcWd5Ukc2ZXdyNmN1eGx3OXJZVnV6M0RwRnc?oc=5",
@@ -1280,18 +1485,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa sobe mais de 3% com expectativa sobre Lula 4 e IPCA-15; apenas duas ações caem",
-   "fonte": "Valor",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdDRPZkdLbm5TQ0pLUm53LV9lMDhVRjFza3NBTUM5OFJyejlrZGlPZEV6RVhrYkstVU5GQmxiN0trbkRGejBreGx5T2R1Ymp1Y2hwdGdoeXdEMjRob1h2dWpvc3RXUS1CYWJmLTBVakZoSkN1SERKMVZYMmdWUkwtR3M0M1BtRVNJU0dQV0s1bVJtVEg4TkZrVUc3bDhHeHhkSFNzYXdOTmw1OG9OY0JSdmQ5T0hjSXhWMlNhWTlwWk9NeVhJNkhfUVpva3dyNVByWVlYbDNOa3d0SnlhYl9rWmJtZ1DSAfMBQVVfeXFMT094Z0luUE9lTkRralRyd21SWXZlMU9KQ0I3TzVpVnU0cDc4SXlhdXVpYV9WSmVPZl9UczdaYWJUdl83WGNfdm9oUlVFMUdBZ3N4ZlRHN2ZXaWpRZ3k5aS1RUEtPMnRWeUM4eElZR3JaSmJZSjJZb08xRm1OWGE1dUZlMU1LLV9MbEl4VDMzMEt2MFRYbXo5MGU5NEF1bTdnbVlrQUhZVXhQTEJJZlFITFdOMGd3T19QUFNIeW9WUUpDeV9mMTZySTBQTjBFX3UzZW4zWEw4a1IyVFBpNU9tTE1jQkFzb3pfNEdKcFBqbmNGSzNz?oc=5",
-   "publicado": "2026-11-26T10:33-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Tarifa sobre aviões é descabida e 'não existe em lugar nenhum do mundo', diz Alckmin",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/tarifa-sobre-avioes-e-descabida-e-nao-existe-em-lugar-nenhum-do-mundo-diz-alckmin.shtml",
@@ -1303,10 +1496,10 @@
    "tickers": []
   },
   {
-   "titulo": "Dólar cai abaixo de R$ 5,80 após Lula sondar possibilidade de Trabuco assumir Fazenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNalNKN3NTMklPcXB3TjhTbk0wbUg1SnBEQnozek9pZ1JxbU5uVW9XZ3o4OVhRaGhhX0ZTaVdRN3FpNlA4UnNUbFhUM3RmOXV2T05CcS1LNVVBRENLdk5Ib3JCQUF3VWhYTWZsd2lYN3RCZXlldUZpM0FiejNLcHFQdnNpYnhtV0Y5T3ZGUXF0YkZveDY4bXA3a0FsOUbSAaIBQVVfeXFMTWFlcmhCZ2NBd0xqa01fYnZLWmtmeTdMb0RvZW85eXEzNkRCeXMyZ05JSElCa2RFemZmVDY5aVU1dzRVYXFVWlJ3aF9tZk1xaUNQZm5lN2xRYkVZUzVRWU1TZ1BVdURPVHVZb2NPRWlFQ0FMRTEtZi12S1duN0tfaEJpQ1dRTVRMTVViR0ZKYnlkbnVhNlNSaEVaemFDSzhDZWxB?oc=5",
-   "publicado": "2026-11-26T10:29-03:00",
+   "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trump-usa-tarifas-para-pressionar-asiaticos-a-fecharem-acordos-dizem-analistas.shtml",
+   "publicado": "2026-11-26T10:14-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -1314,72 +1507,34 @@
    "tickers": []
   },
   {
-   "titulo": "Tempo real: Ibovespa sobe forte e recupera os 172 mil pontos com IPCA-15; veja os destaques desta quinta-feira (26)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fSThLVDhWRmFMZVpGOEx2TGhrTjRqQVc4V0tReVVaeHR3cGE0Z3hNNHpTa2RVRWYwcWd1VTNCaDdMM3hyU2pLUXdfbWVfZGNsV2hCU1JrYTF4SmVKVERXVWhRVFFUNTds?oc=5",
-   "publicado": "2026-11-26T10:29-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa dispara e dólar cai com expectativa sobre a Fazenda e IPCA-15 menor que o esperado",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1kOXA3bGlHMW13UHRnNTlJWFE1TzdURnF0UzktN0dIdnVtRmxkTkVYQm9VU0dpVHA3S3JBSEVsbGVKMk9PZ25XT2RKQ2FJalp3MVNZZk9UdUFvR3ZPYWZCUzVZOXN0R0l3Vjhj?oc=5",
-   "publicado": "2026-11-26T10:26-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa salta mais de 3% e recupera os 172 mil pontos; 5 coisas para saber antes de investir hoje (26)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQaFFDR0c4OVZWT3ZXazNYWFFKUldvdGpsSHpfVWltRGZYSjg2VzJHR1BYQk5kSkJneWQ2WVRPWEFUc3h2aGw5cW05czd3Q0g0REpKOVhveVpzdDJIcmdJTUNRZUliaktNbzBpWE9YRUxjLUUxOUg1TjV5bVZ3TzU3YkdZSGpXVkkwNVNkN045eWtrREFHbU9HMVZrQU9VRUlOc3h4Yld0SXBqSkJMT3A5czBWN3RKQk1OcGlmR3dUbUgzOGs5UUFteHpjbUZreU5DdVYySV9wcWp1OVZQQU4tZUozZjBLaDVWX0pXZzhrTQ?oc=5",
-   "publicado": "2026-11-26T10:24-03:00",
+   "titulo": "Bolsa dispara mais de 4% com possibilidade de Trabuco na Fazenda; dólar cai a R$ 5,71",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-de-mais-de-1-com-possibilidade-de-trabuco-na-fazenda.shtml",
+   "publicado": "2026-11-26T09:54-03:00",
    "impacto": "medio",
    "ativos": [
-    "WIN"
+    "WDO"
    ],
    "tickers": []
   },
   {
-   "titulo": "Ibovespa salta 3% e supera os 172 mil pontos com possibilidade de Trabuco na Fazenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNnI4ekczOGUwSmxpZjZBMWt0MldYMExxVEpvN2dUNjBxaVhHa2ZMNU5KbjBhM1lxZnZWaUFvUElOLWF2M3Zka3plbWtWdVJYVk1mRzJpWTV0TkVsX01BTWRjNGU0ZkN5R2FBU3pxOU5QMHhENUlYb2U1RDQ0LUNqRl9RTm1xM2FBYVRENEJqN3FVTFdmSEtUcUY3Qk9vSGhTMlRXbmJyVEEtRWRwUVNkemw4R1lfcmZsTjFOb09MQdIBxAFBVV95cUxPMXVnZVVLRmJDRXlzSTRtaUNmeElMYVdYUVpTME1kRk5ESWZ0Q01vYzNnMk1pZUVrZGFiTVROQ2NsN28tcXV1LW90NVJLV3VPU3k5a3NNZmNZQVlBTzRxa3pHZlM1MHJic3U2T2c0bWlNa0VjS1lFR00tdGVLX0JHLVpqV2RITmQxTnpyRC1oNWVnSFRYVE15RUNmV2pPWGdaSU9GVDZBZFBRYk1WSEI3dE15TDA3RnNpMnZ0b0RxUlhBSExP?oc=5",
-   "publicado": "2026-11-26T10:21-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa cai pelo 3º pregão seguido e dólar fecha em leve baixa após tocar R$ 6",
+   "titulo": "Prévia da inflação: IPCA-15 desacelera e fecha novembro em 0,22%, abaixo do esperado",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMm9kOXBlODlDb2pkY0RhTmVDeUtNMUYtZDZCSVpRbVhOV1BNdzFqQWE4SHJmUUtzYUpjVGNZZE1DaWVkMVc0eTU3RVZGOTVIYTBNQ1Nhek1KajBmQ0lpNnctc0dGYmV4N0ZHRjZxSTNCVjIxcmlFQW03YTFoM3I4UTVIVG91OGNwNnN5UVpBXzVBOFF6N1o1MU8zMFZqcEg4c3pQVVdlM0FZbUdfYmxsU1cwd0JPQTN6LV9SVkYwQ1QzZUFNMmRBR3NKaTNmT1VKQ1ZjeXhidS1BUy1BenJQSDJiQXYtWkp6OGxzTFZfZ0xvdw?oc=5",
-   "publicado": "2026-11-26T10:16-03:00",
-   "impacto": "alto",
+   "url": "https://www.estadao.com.br/economia/ibge-ipca-15-previa-inflacao-novembro-2026/",
+   "publicado": "2026-11-26T09:53-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
-    "WDO"
+    "DI"
    ],
    "tickers": []
   },
   {
-   "titulo": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
+   "titulo": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
    "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
-   "publicado": "2026-11-26T09:22-03:00",
-   "impacto": "alto",
+   "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+   "publicado": "2026-11-26T09:46-03:00",
+   "impacto": "medio",
    "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
