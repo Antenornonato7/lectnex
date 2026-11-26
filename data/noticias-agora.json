@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T18:08-03:00",
+  "atualizado_em": "2026-11-26T18:38-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     175328.0
+     176800.0
     ]
    ]
   },
@@ -785,6 +785,18 @@
     [
      "18:00",
      5.644
+    ],
+    [
+     "18:15",
+     5.6423
+    ],
+    [
+     "18:20",
+     5.646
+    ],
+    [
+     "18:25",
+     5.6508
     ]
    ]
   },
@@ -1566,29 +1578,6 @@
   ]
  },
  "hoje": [
-  {
-   "titulo": "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
-   "publicado": "2026-11-26T04:23-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Sem Wall Street, Ibovespa hoje fica mais sensível a notícias de Brasília e prévia da inflação",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPR1IzLXprZWFZeXFXZTdXUktwckQ4OHQyZjY5TURreHV2REJBbExQSEdIczg5ZGhjU2c2RGkzb0NWNFBwaGllaE5wVjV5enFzaktzdFBCWFR3bkphckZMNkFOLXhYUTlUZ21zRndyMkVrMDdIUDc4TnJNRnNJZ1ZpcVNlMktBZ2JHTUlmUllLSTItV3ltSW5jMnF2SzZvcHdlUnBBay0tWWtadHVMcjRYSVNNNVdNRUJvYnJtSzJNekJIelZWc2NzN0VQZ1p2WXc4Tl85T2tpZV96ZXNlbXBKS2VZWklZMHlmLXdhcDBCb2Q?oc=5",
-   "publicado": "2026-11-26T04:34-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "DI"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "Até pequeno investidor corre para dólar, e bancos lá fora já têm fila de brasileiros",
    "fonte": "InfoMoney",
@@ -2504,6 +2493,31 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Banco Central se manifesta a favor de devolução de R$ 316 milhões ao BRB",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/banco-central-se-manifesta-a-favor-de-devolucao-de-r-316-milhoes-ao-brb/",
+   "publicado": "2026-11-26T18:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Vale tem direitos minerários com potencial para terras raras, diz CEO à CNN",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVW42YzZneTJDc2l3S3JqVmZYeFh5cWJZTlVwaGVmT1g2cVBaTzVlN1lhbnkyZnJPMWJRVDZoRTJfdWtiTlRhNU1feTFzZkF0MDBlbl9faEUwcmdsOWl6MEN0dEdHU1RhUzV3bDFLckxuOF9VNkFPdlpIdFJKQUdMZVVtYmxTQk83YW11TW5lZFIzdEhZMDF1RGxaVTN2ak1oMERQbHFVWWVKRmg4cnNj?oc=5",
+   "publicado": "2026-11-26T18:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
   }
  ],
  "enviadas": [
@@ -2533,7 +2547,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T18:08-03:00",
+ "atualizado_em": "2026-11-26T18:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2541,6 +2555,7 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
+  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
@@ -2548,11 +2563,48 @@
  ],
  "noticias": [
   {
+   "titulo": "Vale tem direitos minerários com potencial para terras raras, diz CEO à CNN",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVW42YzZneTJDc2l3S3JqVmZYeFh5cWJZTlVwaGVmT1g2cVBaTzVlN1lhbnkyZnJPMWJRVDZoRTJfdWtiTlRhNU1feTFzZkF0MDBlbl9faEUwcmdsOWl6MEN0dEdHU1RhUzV3bDFLckxuOF9VNkFPdlpIdFJKQUdMZVVtYmxTQk83YW11TW5lZFIzdEhZMDF1RGxaVTN2ak1oMERQbHFVWWVKRmg4cnNj?oc=5",
+   "publicado": "2026-11-26T18:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Banco Central se manifesta a favor de devolução de R$ 316 milhões ao BRB",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/banco-central-se-manifesta-a-favor-de-devolucao-de-r-316-milhoes-ao-brb/",
+   "publicado": "2026-11-26T18:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Latam pega R$ 2,7 bilhões de crédito do BNDES para ajudar aéreas após guerra no Irã",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/latam-pega-r-27-bilhoes-de-credito-do-bndes-para-ajudar-aereas-apos-guerra-no-ira.shtml",
    "publicado": "2026-11-26T18:00-03:00",
    "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa dispara 5% com ‘efeito Trabuco’ e recupera os 175 mil pontos; dólar cai a R$ 5,74",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
+   "publicado": "2026-11-26T17:59-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
@@ -2571,14 +2623,15 @@
    "tickers": []
   },
   {
-   "titulo": "Brent fecha em alta diante de temores com interrupções no abastecimento",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOS3hRWTNNMUEzY3lQenFFSkdQZFVQc0lKM0JBV3REOXR1ckhSdmxuR3lZSTZENFU0VDRXTGRtanh1cmJ6S2RCcGhYMVZnNENBLTc0MVE5WVFtajQwSHlLUGtIQ1hHeHo3U0psY1l1ZnV0X1NMZGhVaHJCZEtmU3ZJVUpxaTRvWG81Z0EwcHpjQldnaGw0dmY2WEZpNEUxNV9IV3ZGRld4aTJzcEhIa0hF0gG0AUFVX3lxTE45dDhqVlZXTkZJUEhXY1B1cVhFMEUyMVBkNXF2VGQ5cXRsb0FvOHcxU1FkR055Z0tUQ05sOEZIQ2R2LWozYUREMjFqNmFnVnlSckhLY2dRcE53VDlwbTY5d1hwN21IZlhZenBiVndubUVwUlo2Q3J6SHFIYmgtcVFTdTlQUkJOYm1mOHVyYUtLOGt3SWdBb0tTMVc5MUZkRkljNngwcnBsdm82eFRBQ1N3aml6OA?oc=5",
-   "publicado": "2026-11-26T17:18-03:00",
-   "impacto": "medio",
+   "titulo": "Ibovespa dispara e dólar cai 1,26% com aposta em Trabuco na Fazenda e ajuste fiscal",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nTzFxSXVwWmxEZTQ4X3kzMGtkVUNzY18ybzJmZFVCbHlTT183Y2Z2SGM2MUxKYjhlYXc2UE9qcTFkeDE3RDJDR2lmdmhWdkI3OFVRMmRldG42S3U0RWU1R19jQVhfcGduNkZVSlp3?oc=5",
+   "publicado": "2026-11-26T17:22-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
@@ -2652,18 +2705,6 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa dispara 4% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,74",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
-   "publicado": "2026-11-26T16:52-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Localiza lidera altas do Ibovespa hoje e apenas uma ação cai; veja qual",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcHVtQUZGQ1BHbDBIZGtmSXBWSk1NOVBzYUJGTU8xdEpkdXloOVNSQ21Dd2doZ0RXRjNZTzZRUnlkRVpGX2xLa2w2SXZIMm53Z0tvblZmcmdLa0c1RjJnTXF3bEQzQ0FrdTN4Sko3S2t4ell6SF92dG0tREZ1QUxIVURfZWJMdTZBQjg0MThrNm9xdFAzTGVOR1lmWlEwSnE5RWUwUG1ka3B0SlItOUdzMi1WZ0lvb2UxeEtiSXd6LXJMajlXaU9ZeFpRcVhDRmYtZDhn?oc=5",
@@ -2699,19 +2740,6 @@
    "tickers": []
   },
   {
-   "titulo": "Petrobras paralisa plataforma P-77 em Búzios após raio causar princípio de incêndio",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNU2x4MnZqd1dDMTBlbGdyUUZZQzNIQnoybHF5cW9ZcWhVR1hISmFSRjBMTUdwbHk4cXEyX1FRMjJVVjNtWDZjZ0dLRzNTNjBxV00yQUZOVERWVjEyNVh2YzB2d0pnUl9Zbk04NkNqM1ktNmJIUU5GWXhTajB5VTAyY2JEYUdlQzN0RTc2SzBwdS1Rb1NsZGVyaHNJOGtwaVZGbVhHOVZFTkROR2VZWFFxdjBCYXBCcFdyUmZxX01oUdIBxAFBVV95cUxNSHZURTAtclZFdHozdjNTM3BBdXhNMkNCTllLdlVKRm1YVF9mb25FTk5jN0pCTTdGeFc0dXIySGo0OC15cUFLT0lYazZRZ2VPYlZrUW14UTNieGJVNXF6YzQ2cURkTFBSaVJsMVZ0LXUwVWFwQmNWS1J5S0NFdHp3R01qcklfejlOTFZ0aHpTZ19UMkpGV3hEOGs0WWpuMGNRdkE3cnRueGEzOGtYcXFYQ3JVOEUtaEF4NXVrWXVJZWFRTjVm?oc=5",
-   "publicado": "2026-11-26T16:22-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
-   ]
-  },
-  {
    "titulo": "Governo descarta nova ligação de Lula a Trump sobre tarifas e aguarda setor privado",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-descarta-nova-ligacao-de-lula-a-trump-sobre-tarifas-e-aguarda-setor-privado.shtml",
@@ -2719,18 +2747,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Pablo Hernández de Cos vence disputa pela presidência do Banco Central Europeu",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/pablo-hernandez-de-cos-vence-disputa-pela-presidencia-do-banco-central-europeu.shtml",
-   "publicado": "2026-11-26T15:22-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
    ],
    "tickers": []
   }
