@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T16:15-03:00",
+  "atualizado_em": "2026-11-26T16:18-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -295,7 +295,11 @@
     ],
     [
      "16:00",
-     173488.0
+     173314.0
+    ],
+    [
+     "16:03",
+     173339.0
     ]
    ]
   },
@@ -652,7 +656,11 @@
     ],
     [
      "16:15",
-     5.7393
+     5.7418
+    ],
+    [
+     "16:18",
+     5.7425
     ]
    ]
   },
@@ -1250,6 +1258,19 @@
     "tickers": [],
     "ibov30": null,
     "dolar30": -0.07
+   },
+   {
+    "hora": "16:15",
+    "titulo": "Governo descarta nova ligação de Lula a Trump sobre tarifas e aguarda setor privado",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-descarta-nova-ligacao-de-lula-a-trump-sobre-tarifas-e-aguarda-setor-privado.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -2089,6 +2110,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Governo descarta nova ligação de Lula a Trump sobre tarifas e aguarda setor privado",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-descarta-nova-ligacao-de-lula-a-trump-sobre-tarifas-e-aguarda-setor-privado.shtml",
+   "publicado": "2026-11-26T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2118,7 +2150,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T16:15-03:00",
+ "atualizado_em": "2026-11-26T16:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2127,10 +2159,20 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney",
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Governo descarta nova ligação de Lula a Trump sobre tarifas e aguarda setor privado",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/governo-descarta-nova-ligacao-de-lula-a-trump-sobre-tarifas-e-aguarda-setor-privado.shtml",
+   "publicado": "2026-11-26T16:15-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Notícia é sinal de que governo pode ter agenda fiscal mais ambiciosa, diz BNP sobre ‘Trabuco Day’",
    "fonte": "Estadão",
