@@ -250,8 +250,21 @@
     "win": "volatil",
     "wdo": "volatil"
    },
-   "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
+   "nota": "Sem mercado à vista nem de Treasuries em NY; liquidez costuma cair na B3.",
    "tipo": "feriado-eua"
+  },
+  {
+   "data": "2026-11-26",
+   "hora": "08h30",
+   "pais": "BR",
+   "evento": "Setor externo: transações correntes e IDP (out, BCB)",
+   "importancia": 1,
+   "anterior": "−US$ 5,10 bi",
+   "impacto": {
+    "wdo": "volatil"
+   },
+   "nota": "Fluxo externo ajuda a explicar a pressão sobre o real; IDP anterior de US$ 11,29 bi (Boletim Nacional). Entrevista do BC às 15h.",
+   "tipo": "transacoes-correntes"
   },
   {
    "data": "2026-11-26",
@@ -264,21 +277,22 @@
     "wdo": "volatil",
     "win": "volatil"
    },
-   "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). O Bradesco projeta 0,36% em novembro. Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
+   "nota": "Expectativa de 0,34% no mês e 4,78% em 12 meses, segundo o InfoMoney; o Bradesco projeta 0,36% (Exame). Em outubro: 4,62% em 12 meses. Sai com NY fechada.",
    "tipo": "ipca-15",
-   "anterior": "0,32% (out)"
+   "anterior": "0,32% (out)",
+   "consenso": "0,34%"
   },
   {
    "data": "2026-11-26",
-   "hora": "11h30",
-   "pais": "BR",
-   "evento": "Setor externo: transações correntes e IED (out, BCB)",
+   "hora": "09h30",
+   "pais": "EU",
+   "evento": "Ata da reunião do BCE",
    "importancia": 1,
    "impacto": {
     "wdo": "volatil"
    },
-   "nota": "Fluxo externo ajuda a explicar a pressão sobre o real.",
-   "tipo": "transacoes-correntes"
+   "nota": "Sinais sobre os próximos passos do BCE mexem no euro e no dólar global.",
+   "tipo": "ata-bce"
   },
   {
    "data": "2026-11-27",
@@ -290,7 +304,8 @@
     "di": "volatil"
    },
    "nota": "Inflação no atacado; corrige contratos de aluguel.",
-   "tipo": "igp-m"
+   "tipo": "igp-m",
+   "anterior": "1,47% (out)"
   },
   {
    "data": "2026-11-27",
@@ -302,15 +317,16 @@
     "di": "volatil",
     "wdo": "volatil"
    },
-   "nota": "Dívida bruta é o número que o mercado acompanha depois da aprovação do ajuste.",
+   "nota": "Dívida bruta é o número que o mercado acompanha em meio à discussão das medidas de gastos.",
    "tipo": "resultado-fiscal"
   },
   {
    "data": "2026-11-27",
    "hora": "09h",
    "pais": "BR",
-   "evento": "Taxa de desemprego — PNAD Contínua (out, IBGE)",
+   "evento": "Taxa de desemprego — PNAD Contínua (trim. até out, IBGE)",
    "importancia": 2,
+   "anterior": "5,2%",
    "impacto": {
     "di": "volatil"
    },
