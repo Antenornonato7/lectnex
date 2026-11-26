@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T15:38-03:00",
+  "atualizado_em": "2026-11-26T16:08-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -263,11 +263,35 @@
     ],
     [
      "15:20",
-     172860.0
+     172776.0
     ],
     [
-     "15:23",
-     172830.0
+     "15:25",
+     173015.0
+    ],
+    [
+     "15:30",
+     172938.0
+    ],
+    [
+     "15:35",
+     173232.0
+    ],
+    [
+     "15:40",
+     173345.0
+    ],
+    [
+     "15:45",
+     173239.0
+    ],
+    [
+     "15:50",
+     173153.0
+    ],
+    [
+     "15:53",
+     173216.0
     ]
    ]
   },
@@ -592,11 +616,35 @@
     ],
     [
      "15:35",
-     5.7424
+     5.7433
     ],
     [
-     "15:38",
-     5.744
+     "15:40",
+     5.7413
+    ],
+    [
+     "15:45",
+     5.7428
+    ],
+    [
+     "15:50",
+     5.7428
+    ],
+    [
+     "15:55",
+     5.7379
+    ],
+    [
+     "16:00",
+     5.7428
+    ],
+    [
+     "16:05",
+     5.7418
+    ],
+    [
+     "16:08",
+     5.7415
     ]
    ]
   },
@@ -1138,7 +1186,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.28,
+    "ibov30": 0.39,
     "dolar30": -0.1
    },
    {
@@ -1152,8 +1200,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": 0.22,
+    "dolar30": 0.02
    },
    {
     "hora": "15:30",
@@ -1166,7 +1214,20 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.15
+   },
+   {
+    "hora": "15:42",
+    "titulo": "Notícia é sinal de que governo pode ter agenda fiscal mais ambiciosa, diz BNP sobre ‘Trabuco Day’",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSEZIWXVIM2VyWEtMNmFOYUxqd2p4aUpyOUtKWkVLZlF0UjZHcWVMb1kzQ3dDNVJubGtpVUdpNTRmZzZVZUxNYnlpNHNlT1VwWWFLUEYxU3dzYUVKcFRaUXFrbEhPSll3YjBaT2FUS19zMy1pbl8zWlpqQjdtSWFtNXNPNHZaMDJVdmV3Nm1nOU1aYlRDVFhCM1BTaTlqbExucEhFM3JLR1ZlUGNObkExd3c4cS1WeXZ2YUpKb2FWbFZCTWk5YlNFSlBJZW9yOEZsWms1bW1ycXQzSWtOdS1fcTc4dzZUdkVn0gHuAUFVX3lxTFBKNmtfU2xyTWJMR3J2QnpXc1pSYzhQMTRHWFhkVnRjLVdYT20yWEdHQWNCTlJabUlPRVpON2dMaG0tX1FxNW1sQ0U0ZnBWcXkwRHJ3NHdtRzh6MElJd2NRaEVfUEhvRVNOYkhSREs0VVdGenBmdTlGWEN0dXd0WnBkdktEaS1LWWNZREVZWDZZclJ0SE9rUVp4cllBYUF2bElvcTRBRk01OUFOaHRJcmJvVzM2a1RtNEZGLXRDSU5SMlUxWHhtNjQyWENqdmY1ODM3dzhQUnQwSDV0VFhVLUMwNFFwTk16SzJSUlRkalE?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.0
    }
   ]
  },
@@ -1983,6 +2044,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Notícia é sinal de que governo pode ter agenda fiscal mais ambiciosa, diz BNP sobre ‘Trabuco Day’",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSEZIWXVIM2VyWEtMNmFOYUxqd2p4aUpyOUtKWkVLZlF0UjZHcWVMb1kzQ3dDNVJubGtpVUdpNTRmZzZVZUxNYnlpNHNlT1VwWWFLUEYxU3dzYUVKcFRaUXFrbEhPSll3YjBaT2FUS19zMy1pbl8zWlpqQjdtSWFtNXNPNHZaMDJVdmV3Nm1nOU1aYlRDVFhCM1BTaTlqbExucEhFM3JLR1ZlUGNObkExd3c4cS1WeXZ2YUpKb2FWbFZCTWk5YlNFSlBJZW9yOEZsWms1bW1ycXQzSWtOdS1fcTc4dzZUdkVn0gHuAUFVX3lxTFBKNmtfU2xyTWJMR3J2QnpXc1pSYzhQMTRHWFhkVnRjLVdYT20yWEdHQWNCTlJabUlPRVpON2dMaG0tX1FxNW1sQ0U0ZnBWcXkwRHJ3NHdtRzh6MElJd2NRaEVfUEhvRVNOYkhSREs0VVdGenBmdTlGWEN0dXd0WnBkdktEaS1LWWNZREVZWDZZclJ0SE9rUVp4cllBYUF2bElvcTRBRk01OUFOaHRJcmJvVzM2a1RtNEZGLXRDSU5SMlUxWHhtNjQyWENqdmY1ODM3dzhQUnQwSDV0VFhVLUMwNFFwTk16SzJSUlRkalE?oc=5",
+   "publicado": "2026-11-26T15:42-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2012,7 +2084,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T15:38-03:00",
+ "atualizado_em": "2026-11-26T16:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2025,6 +2097,29 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Notícia é sinal de que governo pode ter agenda fiscal mais ambiciosa, diz BNP sobre ‘Trabuco Day’",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSEZIWXVIM2VyWEtMNmFOYUxqd2p4aUpyOUtKWkVLZlF0UjZHcWVMb1kzQ3dDNVJubGtpVUdpNTRmZzZVZUxNYnlpNHNlT1VwWWFLUEYxU3dzYUVKcFRaUXFrbEhPSll3YjBaT2FUS19zMy1pbl8zWlpqQjdtSWFtNXNPNHZaMDJVdmV3Nm1nOU1aYlRDVFhCM1BTaTlqbExucEhFM3JLR1ZlUGNObkExd3c4cS1WeXZ2YUpKb2FWbFZCTWk5YlNFSlBJZW9yOEZsWms1bW1ycXQzSWtOdS1fcTc4dzZUdkVn0gHuAUFVX3lxTFBKNmtfU2xyTWJMR3J2QnpXc1pSYzhQMTRHWFhkVnRjLVdYT20yWEdHQWNCTlJabUlPRVpON2dMaG0tX1FxNW1sQ0U0ZnBWcXkwRHJ3NHdtRzh6MElJd2NRaEVfUEhvRVNOYkhSREs0VVdGenBmdTlGWEN0dXd0WnBkdktEaS1LWWNZREVZWDZZclJ0SE9rUVp4cllBYUF2bElvcTRBRk01OUFOaHRJcmJvVzM2a1RtNEZGLXRDSU5SMlUxWHhtNjQyWENqdmY1ODM3dzhQUnQwSDV0VFhVLUMwNFFwTk16SzJSUlRkalE?oc=5",
+   "publicado": "2026-11-26T15:42-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa dispara 3% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,74",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
+   "publicado": "2026-11-26T15:38-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "O que explica a forte alta do Ibovespa nesta quinta-feira (26)?",
    "fonte": "Estadão",
@@ -2045,18 +2140,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa dispara 3% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,74",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
-   "publicado": "2026-11-26T15:18-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -2120,18 +2203,6 @@
    "tickers": []
   },
   {
-   "titulo": "Otimismo com equipe econômica leva Ibovespa a alta de 1,5%; dólar caiu mais de 1%, cotado a R$ 5,91",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQczJFalltWGczRWxSOU5fUExWM2tkLXkyRU94Z0FTT1MzUFE4cEZ0ZkFUVjVCSFNDWV9tVTh1ZjI2M2pzR3BlblRtaUxPMkVxYkFjVlRyQi1zLVpEOXZSLWJfQTFfbUp1Z3ZJcUFtN010SkFZYVZVcENvXzZnVlYzSWxScy1MRUZScXR4enc5d05kUHpmd2ZoWGRoaEhLakFmR0p1THN2N0VxUFZKUGRreDlyUTAwQldFaC03NVFUNmczeU81cHdmeHpUS1NJUzVZNUd4THhxSnlLVk9oX1B3cXcxcGtBb3ZVY1oxZTJnVQ?oc=5",
-   "publicado": "2026-11-26T13:52-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Embraer diz que foi pega de surpresa com possibilidade de tarifas dos EUA e ‘conta com bom-senso’",
    "fonte": "Estadão",
    "url": "https://www.estadao.com.br/economia/negocios/embraer-surpresa-possibilidade-tarifas-eua-bom-senso/",
@@ -2143,18 +2214,6 @@
    "tickers": [
     "EMBR3"
    ]
-  },
-  {
-   "titulo": "Ajuste fiscal, Previdência, tarifas, bets, IA: o que Trabuco já disse sobre temas-chave da economia",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/o-que-trabuco-ja-disse-sobre-temas-chave-da-economia/",
-   "publicado": "2026-11-26T12:46-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
