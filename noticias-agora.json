@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T16:58-03:00",
+  "atualizado_em": "2026-11-26T17:00-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -327,11 +327,7 @@
     ],
     [
      "16:40",
-     173494.0
-    ],
-    [
-     "16:43",
-     173508.0
+     173710.0
     ]
    ]
   },
@@ -720,11 +716,11 @@
     ],
     [
      "16:55",
-     5.7449
+     5.7424
     ],
     [
-     "16:58",
-     5.7463
+     "17:00",
+     5.7414
     ]
    ]
   },
@@ -1333,7 +1329,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": 0.06,
+    "ibov30": 0.18,
     "dolar30": -0.01
    },
    {
@@ -1361,6 +1357,20 @@
     "tickers": [
      "RENT3"
     ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "16:55",
+    "titulo": "Fed mantém postura dura e deve aumentar juros apesar de queda das ações",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fed-mantem-postura-dura-e-deve-aumentar-juros-apesar-de-queda-das-acoes.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
     "dolar30": null
    }
@@ -2237,6 +2247,18 @@
    "tickers": [
     "RENT3"
    ]
+  },
+  {
+   "titulo": "Fed mantém postura dura e deve aumentar juros apesar de queda das ações",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fed-mantem-postura-dura-e-deve-aumentar-juros-apesar-de-queda-das-acoes.shtml",
+   "publicado": "2026-11-26T16:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2266,17 +2288,28 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T16:58-03:00",
+ "atualizado_em": "2026-11-26T17:00-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
   "Bloomberg Línea",
   "CNBC",
-  "CNN Brasil",
   "Estadão",
   "Folha"
  ],
  "noticias": [
+  {
+   "titulo": "Fed mantém postura dura e deve aumentar juros apesar de queda das ações",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fed-mantem-postura-dura-e-deve-aumentar-juros-apesar-de-queda-das-acoes.shtml",
+   "publicado": "2026-11-26T16:55-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Localiza lidera altas do Ibovespa hoje e apenas uma ação cai; veja qual",
    "fonte": "Estadão",
