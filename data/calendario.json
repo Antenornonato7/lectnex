@@ -1,144 +1,20 @@
 {
-  "atualizado_em": "2026-11-25T19:35:00-03:00",
+  "atualizado_em": "2026-11-26T07:55:00-03:00",
   "eventos": [
     {
-      "data": "2026-11-25",
-      "hora": "10h",
+      "data": "2026-11-26",
+      "hora": "08h30",
       "pais": "BR",
-      "evento": "Coletiva de Moretti sobre o relatório bimestral (Planejamento)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Congelamento total caiu para R$ 12,6 bi (era R$ 16,1 bi); déficit efetivo subiu para R$ 89,3 bi; Moretti disse não haver decisão sobre PEC",
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Relatório reduziu o contingenciamento de 2026 para R$ 12,3 bi e elevou o déficit projetado para R$ 89,3 bi antes dos abatimentos (SBT News).",
-      "tipo": "relatorio-bimestral",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-25",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "PIB dos EUA — 2ª estimativa (3º tri, anualizado)",
-      "importancia": 2,
-      "anterior": "3,4%",
-      "consenso": "3,5%",
-      "resultado": "4,3%",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Primeira estimativa mostrou alta de 3,4% (BEA).",
-      "tipo": "pib-eua",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "PIB americano forte costuma sustentar juros longos dos EUA e o dólar global, o que tende a pressionar o WDO e os DIs para cima."
-      }
-    },
-    {
-      "data": "2026-11-25",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Inflação PCE — núcleo em 12 meses (out)",
-      "importancia": 3,
-      "anterior": "3,1%",
-      "consenso": "3,2%",
-      "resultado": "3,3%",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil",
-        "win": "volatil"
-      },
-      "nota": "Medida de inflação preferida do Fed, antes da reunião de dezembro; consenso de 0,3% no mês para o núcleo e de 3,8% em 12 meses para o índice cheio (Dow Jones, via InfoMoney). Sai antes do feriado de Ação de Graças.",
-      "tipo": "pce-eua",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "Núcleo do PCE acima do esperado reforça a aposta em juros altos do Fed, o que costuma fortalecer o dólar, pressionar os DIs e pesar no WIN."
-      }
-    },
-    {
-      "data": "2026-11-25",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Encomendas de bens duráveis (out)",
+      "evento": "Setor externo: transações correntes e IDP (out, BCB)",
       "importancia": 1,
-      "anterior": "1,9%",
-      "consenso": null,
-      "resultado": "0,2%",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Investimento e demanda da indústria americana.",
-      "tipo": "bens-duraveis-eua",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-25",
-      "hora": "10h30",
-      "pais": "US",
-      "evento": "Pedidos de seguro-desemprego (semanal)",
-      "importancia": 1,
-      "anterior": "203 mil",
-      "consenso": null,
-      "resultado": "189 mil",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Sai na quarta por causa do feriado de quinta.",
-      "tipo": "seguro-desemprego",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-25",
-      "hora": "10h30",
-      "pais": "BR",
-      "evento": "BC: dois leilões de linha de até US$ 2 bi",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "US$ 2 bi vendidos (um leilão; o outro sem propostas aceitas)",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Oferta de dólar com compromisso de recompra; ajuda a liquidez do câmbio no fim do mês.",
-      "tipo": "leilao-linha-bcb",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-25",
-      "hora": "15h",
-      "pais": "BR",
-      "evento": "Lula se reúne com a equipe econômica sobre a PEC de gastos",
-      "importancia": 2,
-      "anterior": null,
+      "anterior": "−US$ 5,10 bi",
       "consenso": null,
       "resultado": null,
       "impacto": {
-        "di": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Define o alcance da PEC de contenção das despesas obrigatórias (InfoMoney).",
-      "tipo": "pec-gastos",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-25",
-      "hora": "16h",
-      "pais": "US",
-      "evento": "Livro Bege (Fed)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "8 de 12 distritos com crescimento leve a moderado (4 estáveis); preços em alta moderada e emprego com leve avanço",
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Retrato regional da economia americana antes da reunião do Fed de dezembro.",
-      "tipo": "livro-bege",
+      "nota": "Fluxo externo ajuda a explicar a pressão sobre o real; IDP anterior de US$ 11,29 bi (Boletim Nacional). Entrevista do BC às 15h.",
+      "tipo": "transacoes-correntes",
       "surpresa": null
     },
     {
@@ -148,22 +24,22 @@
       "evento": "IPCA-15 de novembro (IBGE)",
       "importancia": 3,
       "anterior": "0,32% (out)",
-      "consenso": null,
+      "consenso": "0,34%",
       "resultado": null,
       "impacto": {
         "di": "volatil",
         "wdo": "volatil",
         "win": "volatil"
       },
-      "nota": "Prévia da inflação; em outubro subiu 0,32% no mês e 4,62% em 12 meses (IBGE). O Bradesco projeta 0,36% em novembro. Mexe nos vértices curtos do DI. Sai com NY fechada (Ação de Graças).",
+      "nota": "Expectativa de 0,34% no mês e 4,78% em 12 meses, segundo o InfoMoney; o Bradesco projeta 0,36% (Exame). Em outubro: 4,62% em 12 meses. Sai com NY fechada.",
       "tipo": "ipca-15",
       "surpresa": null
     },
     {
       "data": "2026-11-26",
-      "hora": "11h30",
-      "pais": "BR",
-      "evento": "Setor externo: transações correntes e IED (out, BCB)",
+      "hora": "09h30",
+      "pais": "EU",
+      "evento": "Ata da reunião do BCE",
       "importancia": 1,
       "anterior": null,
       "consenso": null,
@@ -171,8 +47,8 @@
       "impacto": {
         "wdo": "volatil"
       },
-      "nota": "Fluxo externo ajuda a explicar a pressão sobre o real.",
-      "tipo": "transacoes-correntes",
+      "nota": "Sinais sobre os próximos passos do BCE mexem no euro e no dólar global.",
+      "tipo": "ata-bce",
       "surpresa": null
     },
     {
@@ -188,7 +64,7 @@
         "win": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Sem referência de Nova York; liquidez costuma cair na B3.",
+      "nota": "Sem mercado à vista nem de Treasuries em NY; liquidez costuma cair na B3.",
       "tipo": "feriado-eua",
       "surpresa": null
     },
@@ -198,7 +74,7 @@
       "pais": "BR",
       "evento": "IGP-M de novembro (FGV)",
       "importancia": 1,
-      "anterior": null,
+      "anterior": "1,47% (out)",
       "consenso": null,
       "resultado": null,
       "impacto": {
@@ -221,7 +97,7 @@
         "di": "volatil",
         "wdo": "volatil"
       },
-      "nota": "Dívida bruta é o número que o mercado acompanha depois da aprovação do ajuste.",
+      "nota": "Dívida bruta é o número que o mercado acompanha em meio à discussão das medidas de gastos.",
       "tipo": "resultado-fiscal",
       "surpresa": null
     },
@@ -229,9 +105,9 @@
       "data": "2026-11-27",
       "hora": "09h",
       "pais": "BR",
-      "evento": "Taxa de desemprego — PNAD Contínua (out, IBGE)",
+      "evento": "Taxa de desemprego — PNAD Contínua (trim. até out, IBGE)",
       "importancia": 2,
-      "anterior": null,
+      "anterior": "5,2%",
       "consenso": null,
       "resultado": null,
       "impacto": {
@@ -277,6 +153,22 @@
     },
     {
       "data": "2026-11-30",
+      "hora": "08h25",
+      "pais": "BR",
+      "evento": "Boletim Focus (BCB)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil"
+      },
+      "nota": "Projeções do mercado para IPCA, Selic e câmbio; a de IPCA 2026 está acima do teto da meta.",
+      "tipo": "focus",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-30",
       "hora": "22h45",
       "pais": "CN",
       "evento": "PMI industrial RatingDog/S&P Global (antigo Caixin, nov)",
@@ -311,6 +203,23 @@
     },
     {
       "data": "2026-12-01",
+      "hora": "12h",
+      "pais": "US",
+      "evento": "JOLTS — vagas abertas (out, BLS)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil"
+      },
+      "nota": "Demanda por trabalho nos EUA antes do payroll e da reunião do Fed de dezembro.",
+      "tipo": "jolts",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-01",
       "hora": null,
       "pais": "BR",
       "evento": "Vencimento do mini dólar (WDO)",
@@ -323,6 +232,59 @@
       },
       "nota": "1º dia útil do mês: rolagem para o contrato de janeiro costuma concentrar volume nos dias anteriores.",
       "tipo": "vencimento-wdo",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-02",
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "PIB do Brasil — 3º trimestre (IBGE)",
+      "importancia": 3,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Ritmo da atividade pesa na leitura de juros do Copom e nos vértices do DI.",
+      "tipo": "pib-brasil",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-03",
+      "hora": "09h",
+      "pais": "BR",
+      "evento": "Produção industrial (out, IBGE)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Termômetro da atividade no 4º trimestre.",
+      "tipo": "producao-industrial",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-04",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Payroll — criação de vagas e desemprego (nov, BLS)",
+      "importancia": 3,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": {
+        "wdo": "volatil",
+        "di": "volatil",
+        "win": "volatil"
+      },
+      "nota": "Último grande dado de emprego antes da reunião do Fed de dezembro.",
+      "tipo": "payroll",
       "surpresa": null
     }
   ]
