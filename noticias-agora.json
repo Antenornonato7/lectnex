@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T12:53-03:00",
+  "atualizado_em": "2026-11-26T12:55-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -131,11 +131,11 @@
     ],
     [
      "12:35",
-     173268.0
+     173557.0
     ],
     [
-     "12:38",
-     173348.0
+     "12:40",
+     173502.0
     ]
    ]
   },
@@ -328,11 +328,11 @@
     ],
     [
      "12:50",
-     5.7347
+     5.7367
     ],
     [
-     "12:53",
-     5.7327
+     "12:55",
+     5.733
     ]
    ]
   },
@@ -676,7 +676,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.32,
+    "ibov30": 0.49,
     "dolar30": -0.1
    },
    {
@@ -693,7 +693,7 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": 0.32,
+    "ibov30": 0.49,
     "dolar30": -0.1
    },
    {
@@ -717,6 +717,20 @@
     "impacto": "medio",
     "ativos": [
      "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "12:46",
+    "titulo": "Ajuste fiscal, Previdência, tarifas, bets, IA: o que Trabuco já disse sobre temas-chave da economia",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/o-que-trabuco-ja-disse-sobre-temas-chave-da-economia/",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
     ],
     "tickers": [],
     "ibov30": null,
@@ -1381,6 +1395,18 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ajuste fiscal, Previdência, tarifas, bets, IA: o que Trabuco já disse sobre temas-chave da economia",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/o-que-trabuco-ja-disse-sobre-temas-chave-da-economia/",
+   "publicado": "2026-11-26T12:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1410,7 +1436,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T12:53-03:00",
+ "atualizado_em": "2026-11-26T12:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1424,6 +1450,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ajuste fiscal, Previdência, tarifas, bets, IA: o que Trabuco já disse sobre temas-chave da economia",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/o-que-trabuco-ja-disse-sobre-temas-chave-da-economia/",
+   "publicado": "2026-11-26T12:46-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Dólar alto traz incerteza, mas Latam mantém planos de expansão para 2027",
    "fonte": "Folha",
@@ -1522,6 +1560,18 @@
    ]
   },
   {
+   "titulo": "Tempo real: Ibovespa sobe forte e recupera os 173 mil pontos com IPCA-15; veja os destaques desta quinta-feira (26)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fSThLVDhWRmFMZVpGOEx2TGhrTjRqQVc4V0tReVVaeHR3cGE0Z3hNNHpTa2RVRWYwcWd1VTNCaDdMM3hyU2pLUXdfbWVfZGNsV2hCU1JrYTF4SmVKVERXVWhRVFFUNTds?oc=5",
+   "publicado": "2026-11-26T11:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "PACC11: mesmo com surpresa do IPCA-15, títulos indexados à inflação seguem interessantes",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaXdOWlJveGpRZ21McnVaQXd5OVZNMHN6N1djRVNvSTlGdjdGNUhaRFNtaDIwRkozanFDYjR5RWdKWk00ajhPZFNzLWIwcHpWVGhwb3Q1eWM2NldoY2tqZmF3S1FfV3psRTNrb1c5UjN3ZzZDNXBSdlZJZ2oydzRsd3duTUQwNEMxd2V4NndTcTRRQnd2azRFZjgyRW4zdXRlN3lzeXM5cUhLdVU5b28yQ1p1REMzZDYx?oc=5",
@@ -1533,18 +1583,6 @@
    "tickers": [
     "PACC11"
    ]
-  },
-  {
-   "titulo": "IPCA-15 surpreende para baixo e reforça aposta em Selic “parada” por mais tempo",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUnJNWVItc2l5M2tadTBnTUVBUWc1S1VfU3VDWGFNMDFKbzVPNENlVE1NQ0tMVGtkX1RlN2Qta1BscXROakNxM1YteDRqa2U4eXNYd3VtTjZjaVpxWm9rT1pTaF9Sb3FEaFM3V0pGeVNTN0JVRGNpSUZKaWlrOWdpM3MyLTBOSGZhYTBsaUJTUGQ4V1pFZmV3R1pHMV9iZXhGYm15ZlZvRklsRVd2QXM3RXE5SVllNkHSAbwBQVVfeXFMT3VRWTNTeHJtOXJwaUk4LXV3YTVHRXhLYUsxTTQ3M2Ywb09hZXJ4RldpRHMzRW5Vc2pMRG5nWWpRUUxBSGs4VUx3N3lXbDBxR0NURm52dmVqSzFWeTlOUE81NFhrNUIwZ09sU01hT0FvZGRQNlVwZ0YtMk1DSGgzaDExbVdoT2JHTzFkMWthaTh4eWw3SG16M0YzMkJQT3dLNXJvcWd5Ukc2ZXdyNmN1eGx3OXJZVnV6M0RwRnc?oc=5",
-   "publicado": "2026-11-26T10:54-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
   },
   {
    "titulo": "IPCA-15 desacelera a 0,22% em novembro, com alívio nas passagens aéreas e nos combustíveis",
@@ -1581,6 +1619,19 @@
    "tickers": []
   },
   {
+   "titulo": "Latam realiza primeiro voo oficial com avião da Embraer entre Guarulhos e Brasília",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/latam-realiza-primeiro-voo-oficial-com-aviao-da-embraer-entre-guarulhos-e-brasilia-npr/",
+   "publicado": "2026-11-26T10:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "EMBR3"
+   ]
+  },
+  {
    "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trump-usa-tarifas-para-pressionar-asiaticos-a-fecharem-acordos-dizem-analistas.shtml",
@@ -1588,28 +1639,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Bolsa dispara mais de 4% com possibilidade de Trabuco na Fazenda; dólar cai a R$ 5,71",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-de-mais-de-1-com-possibilidade-de-trabuco-na-fazenda.shtml",
-   "publicado": "2026-11-26T09:54-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Prévia da inflação: IPCA-15 desacelera e fecha novembro em 0,22%, abaixo do esperado",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/ibge-ipca-15-previa-inflacao-novembro-2026/",
-   "publicado": "2026-11-26T09:53-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
    ],
    "tickers": []
   }
