@@ -264,7 +264,8 @@
     "wdo": "volatil"
    },
    "nota": "Fluxo externo ajuda a explicar a pressão sobre o real; IDP anterior de US$ 11,29 bi (Boletim Nacional). Entrevista do BC às 15h.",
-   "tipo": "transacoes-correntes"
+   "tipo": "transacoes-correntes",
+   "resultado": "−US$ 3,97 bi; IDP de US$ 9,09 bi"
   },
   {
    "data": "2026-11-26",
@@ -280,7 +281,12 @@
    "nota": "Expectativa de 0,34% no mês e 4,78% em 12 meses, segundo o InfoMoney; o Bradesco projeta 0,36% (Exame). Em outubro: 4,62% em 12 meses. Sai com NY fechada.",
    "tipo": "ipca-15",
    "anterior": "0,32% (out)",
-   "consenso": "0,34%"
+   "consenso": "0,34%",
+   "resultado": "0,22% (4,64% em 12 meses)",
+   "surpresa": {
+    "direcao": "abaixo",
+    "reacao": "IPCA-15 abaixo do consenso costuma puxar as taxas de DI para baixo, com mais espaço para cortes da Selic, e tende a ajudar o WIN; no WDO a reação costuma ser menor e mista."
+   }
   },
   {
    "data": "2026-11-26",
@@ -292,7 +298,8 @@
     "wdo": "volatil"
    },
    "nota": "Sinais sobre os próximos passos do BCE mexem no euro e no dólar global.",
-   "tipo": "ata-bce"
+   "tipo": "ata-bce",
+   "resultado": "Ata confirma viés de aperto; para o ING, alta de juros em 18/dez é quase certa"
   },
   {
    "data": "2026-11-27",
