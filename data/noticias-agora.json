@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T17:38-03:00",
+  "atualizado_em": "2026-11-26T18:08-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     175529.0
+     175328.0
     ]
    ]
   },
@@ -764,11 +764,27 @@
     ],
     [
      "17:35",
-     5.6945
+     5.6898
     ],
     [
-     "17:38",
-     5.6933
+     "17:40",
+     5.678
+    ],
+    [
+     "17:45",
+     5.6835
+    ],
+    [
+     "17:50",
+     5.672
+    ],
+    [
+     "17:55",
+     5.6458
+    ],
+    [
+     "18:00",
+     5.644
     ]
    ]
   },
@@ -1477,7 +1493,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.72
+    "dolar30": -0.8
    },
    {
     "hora": "17:11",
@@ -1490,7 +1506,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.77
+    "dolar30": -1.03
    },
    {
     "hora": "17:11",
@@ -1504,7 +1520,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.77
+    "dolar30": -1.03
    },
    {
     "hora": "17:14",
@@ -1517,7 +1533,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -1.03
    },
    {
     "hora": "17:22",
@@ -1532,7 +1548,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.8
    },
    {
     "hora": "17:25",
@@ -1545,7 +1561,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.62
    }
   ]
  },
@@ -2517,7 +2533,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T17:38-03:00",
+ "atualizado_em": "2026-11-26T18:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2525,13 +2541,24 @@
   "CNBC",
   "CNN Brasil",
   "Estadão",
-  "Exame",
   "Folha",
   "InfoMoney",
   "Money Times",
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Latam pega R$ 2,7 bilhões de crédito do BNDES para ajudar aéreas após guerra no Irã",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/latam-pega-r-27-bilhoes-de-credito-do-bndes-para-ajudar-aereas-apos-guerra-no-ira.shtml",
+   "publicado": "2026-11-26T18:00-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Taxas caem com expectativa de Trabuco na Fazenda e IPCA-15 abaixo do esperado",
    "fonte": "InfoMoney",
@@ -2544,15 +2571,14 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa dispara e dólar cai 1,26% com aposta em Trabuco na Fazenda e ajuste fiscal",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nTzFxSXVwWmxEZTQ4X3kzMGtkVUNzY18ybzJmZFVCbHlTT183Y2Z2SGM2MUxKYjhlYXc2UE9qcTFkeDE3RDJDR2lmdmhWdkI3OFVRMmRldG42S3U0RWU1R19jQVhfcGduNkZVSlp3?oc=5",
-   "publicado": "2026-11-26T17:22-03:00",
-   "impacto": "alto",
+   "titulo": "Brent fecha em alta diante de temores com interrupções no abastecimento",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOS3hRWTNNMUEzY3lQenFFSkdQZFVQc0lKM0JBV3REOXR1ckhSdmxuR3lZSTZENFU0VDRXTGRtanh1cmJ6S2RCcGhYMVZnNENBLTc0MVE5WVFtajQwSHlLUGtIQ1hHeHo3U0psY1l1ZnV0X1NMZGhVaHJCZEtmU3ZJVUpxaTRvWG81Z0EwcHpjQldnaGw0dmY2WEZpNEUxNV9IV3ZGRld4aTJzcEhIa0hF0gG0AUFVX3lxTE45dDhqVlZXTkZJUEhXY1B1cVhFMEUyMVBkNXF2VGQ5cXRsb0FvOHcxU1FkR055Z0tUQ05sOEZIQ2R2LWozYUREMjFqNmFnVnlSckhLY2dRcE53VDlwbTY5d1hwN21IZlhZenBiVndubUVwUlo2Q3J6SHFIYmgtcVFTdTlQUkJOYm1mOHVyYUtLOGt3SWdBb0tTMVc5MUZkRkljNngwcnBsdm82eFRBQ1N3aml6OA?oc=5",
+   "publicado": "2026-11-26T17:18-03:00",
+   "impacto": "medio",
    "ativos": [
     "WIN",
-    "WDO",
-    "DI"
+    "WDO"
    ],
    "tickers": []
   },
@@ -2673,16 +2699,16 @@
    "tickers": []
   },
   {
-   "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe 4% com notícias sobre Fazenda; Bradesco dispara 7%",
+   "titulo": "Petrobras paralisa plataforma P-77 em Búzios após raio causar princípio de incêndio",
    "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUWM2dXVvZ0wxN0NqQlUtd3pZdldSSW52alRseG5RdTRKcm9rX3h6My1oeTlPOVIzY0JfMzdJejVGeDdtMzZIalR4UXpjTlJBRVk5MVhOdEdTOEplRHkyNEJGakNOVDNNMXVXVXJtOHBuNUd3RndoYklhc0hGbjFIWGFTWGsxamhtVXY2bWdBdw?oc=5",
-   "publicado": "2026-11-26T16:16-03:00",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNU2x4MnZqd1dDMTBlbGdyUUZZQzNIQnoybHF5cW9ZcWhVR1hISmFSRjBMTUdwbHk4cXEyX1FRMjJVVjNtWDZjZ0dLRzNTNjBxV00yQUZOVERWVjEyNVh2YzB2d0pnUl9Zbk04NkNqM1ktNmJIUU5GWXhTajB5VTAyY2JEYUdlQzN0RTc2SzBwdS1Rb1NsZGVyaHNJOGtwaVZGbVhHOVZFTkROR2VZWFFxdjBCYXBCcFdyUmZxX01oUdIBxAFBVV95cUxNSHZURTAtclZFdHozdjNTM3BBdXhNMkNCTllLdlVKRm1YVF9mb25FTk5jN0pCTTdGeFc0dXIySGo0OC15cUFLT0lYazZRZ2VPYlZrUW14UTNieGJVNXF6YzQ2cURkTFBSaVJsMVZ0LXUwVWFwQmNWS1J5S0NFdHp3R01qcklfejlOTFZ0aHpTZ19UMkpGV3hEOGs0WWpuMGNRdkE3cnRueGEzOGtYcXFYQ3JVOEUtaEF4NXVrWXVJZWFRTjVm?oc=5",
+   "publicado": "2026-11-26T16:22-03:00",
    "impacto": "medio",
    "ativos": [
     "WIN"
    ],
    "tickers": [
-    "BBDC4"
+    "PETR4"
    ]
   },
   {
@@ -2705,17 +2731,6 @@
    "ativos": [
     "WDO",
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Alckmin trata possível tarifa a aviões do Brasil como “descabida”",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/alckmin-trata-possivel-tarifa-avioes-do-brasil-como-descabida",
-   "publicado": "2026-11-26T14:46-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
    ],
    "tickers": []
   }
