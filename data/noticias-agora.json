@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T13:38-03:00",
+  "atualizado_em": "2026-11-26T14:03-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -167,11 +167,31 @@
     ],
     [
      "13:20",
-     172993.0
+     173016.0
     ],
     [
-     "13:23",
-     173061.0
+     "13:25",
+     173048.0
+    ],
+    [
+     "13:30",
+     172852.0
+    ],
+    [
+     "13:35",
+     172659.0
+    ],
+    [
+     "13:40",
+     172824.0
+    ],
+    [
+     "13:45",
+     172631.0
+    ],
+    [
+     "13:48",
+     172506.0
     ]
    ]
   },
@@ -400,11 +420,31 @@
     ],
     [
      "13:35",
-     5.7419
+     5.7425
     ],
     [
-     "13:38",
-     5.7433
+     "13:40",
+     5.7393
+    ],
+    [
+     "13:45",
+     5.7428
+    ],
+    [
+     "13:50",
+     5.7408
+    ],
+    [
+     "13:55",
+     5.7345
+    ],
+    [
+     "14:00",
+     5.7345
+    ],
+    [
+     "14:03",
+     5.7338
     ]
    ]
   },
@@ -769,10 +809,37 @@
     "dolar30": -0.1
    },
    {
+    "hora": "12:10",
+    "titulo": "Ibovespa sobe mais de 4% e dólar recua a R$ 5,71 com otimismo no mercado",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXZwWDM1WHAzUVgtaUMwVWlKa1o1TzFaM2lZZU1STWlRTmpHOTg4SzRnMmE3dXJSSDNiS2ZjdU02eUZJSF9Sci03UHd5MGVCdmlRRFNKUDdNZWhNc2M0b1BMSG13NzRrbWFZbmI1NEtHanFYVUNRN2o0Y05CR1M3eFZFS1d5all5UFdVcDlOcTNNMkczc3NzdEdiS3dLQWlEMUNZR1prNXdTX2NtT19ZbA?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": 0.53,
+    "dolar30": -0.08
+   },
+   {
     "hora": "12:19",
     "titulo": "Cotação da stablecoin USDT pode se afastar do dólar à vista",
     "fonte": "Valor",
     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaVpiVXdMSGRXb1BYb2hEMGxfbmpxdXFIdkFQQmlDWVpYUUZlYXp3d3BkXzd2MTUyY2xrN2VnR2ZEdlFZc1VxUzJXa1dONmYxTnFoMGk0VGFucWY2YnFkY2luSUNGZE1OTVpIdkxWVkx3eG0zbWxHa2gxanpaT19oUE9KQlFKbjRNSmU3cDNRaFh6MmFKR21RZjVOXy14NEpyTFNVRTNrTTVkY1lXSDktSGYzNVA5OFkxckkyWGJuWUUzYWxyeU9GMk9B0gHYAUFVX3lxTE00MlBjMlhma3JzRkZiZUVyOVNaeTgtelUtNlNXUmgxT0IyY3RlQXdXby1qZlpuNW1OY3ZXWGkxQ3ozdUxTOEEwLWZ6ZGRSNU11SElLSmg3bzVjNWdHaDl1T0xqSmQ5cUNlNm1XQ0V1dXRVNlFWTlRxTWJJYkt5d0FYZ1F3Uk9ueUdvYzVxdFd2ODFNbmlKYUxOdVBYMWxQZGd6Z3FyWDQtQzE3Ri1QVWFMV0RRYldRV1BhTHZtRVd4WXlPSURhbXBlalNKamdocHB2ZUxRbHpEdA?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": 0.28,
+    "dolar30": -0.03
+   },
+   {
+    "hora": "12:19",
+    "titulo": "Cotação da stablecoin USDT pode se afastar do dólar à vista",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNDJQYzJYZmtyc0ZGYmVFcjlTWnk4LXpVLTZTV1JoMU9CMmN0ZUF3V28tamZabjVtTmN2V1hpMUN6M3VMUzhBMC1memRkUjVNdUhJS0poN281YzVnR2g5dU9MakpkOXFDZTZtV0NFdXV0VTZRVk5UcU1iSWJLeXdBWGdRd1JPbnlHb2M1cXRXdjgxTW5pSmFMTnVQWDFsUGRnemdxclg0LUMxN0YtUFVhTFdEUWJXUVdQYUx2bUVXeFl5T0lEYW1wZWpTSmpnaHBwdmVMUWx6RHTSAdgBQVVfeXFMTTQyUGMyWGZrcnNGRmJlRXI5U1p5OC16VS02U1dSaDFPQjJjdGVBd1dvLWpmWm41bU5jdldYaTFDejN1TFM4QTAtZnpkZFI1TXVISUtKaDdvNWM1Z0doOXVPTGpKZDlxQ2U2bVdDRXV1dFU2UVZOVHFNYkliS3l3QVhnUXdST255R29jNXF0V3Y4MU1uaUphTE51UFgxbFBkZ3pncXJYNC1DMTdGLVBVYUxXRFFiV1FXUGFMdm1FV3hZeU9JRGFtcGVqU0pqZ2hwcHZlTFFsekR0?oc=5",
     "impacto": "medio",
     "ativos": [
      "WDO"
@@ -834,8 +901,8 @@
     "tickers": [
      "EMBR3"
     ],
-    "ibov30": null,
-    "dolar30": 0.09
+    "ibov30": -0.26,
+    "dolar30": 0.02
    },
    {
     "hora": "13:28",
@@ -851,7 +918,7 @@
      "EMBR3"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.11
    }
   ]
  },
@@ -1492,9 +1559,32 @@
    ]
   },
   {
+   "titulo": "Ibovespa sobe mais de 4% e dólar recua a R$ 5,71 com otimismo no mercado",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXZwWDM1WHAzUVgtaUMwVWlKa1o1TzFaM2lZZU1STWlRTmpHOTg4SzRnMmE3dXJSSDNiS2ZjdU02eUZJSF9Sci03UHd5MGVCdmlRRFNKUDdNZWhNc2M0b1BMSG13NzRrbWFZbmI1NEtHanFYVUNRN2o0Y05CR1M3eFZFS1d5all5UFdVcDlOcTNNMkczc3NzdEdiS3dLQWlEMUNZR1prNXdTX2NtT19ZbA?oc=5",
+   "publicado": "2026-11-26T12:10-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Cotação da stablecoin USDT pode se afastar do dólar à vista",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaVpiVXdMSGRXb1BYb2hEMGxfbmpxdXFIdkFQQmlDWVpYUUZlYXp3d3BkXzd2MTUyY2xrN2VnR2ZEdlFZc1VxUzJXa1dONmYxTnFoMGk0VGFucWY2YnFkY2luSUNGZE1OTVpIdkxWVkx3eG0zbWxHa2gxanpaT19oUE9KQlFKbjRNSmU3cDNRaFh6MmFKR21RZjVOXy14NEpyTFNVRTNrTTVkY1lXSDktSGYzNVA5OFkxckkyWGJuWUUzYWxyeU9GMk9B0gHYAUFVX3lxTE00MlBjMlhma3JzRkZiZUVyOVNaeTgtelUtNlNXUmgxT0IyY3RlQXdXby1qZlpuNW1OY3ZXWGkxQ3ozdUxTOEEwLWZ6ZGRSNU11SElLSmg3bzVjNWdHaDl1T0xqSmQ5cUNlNm1XQ0V1dXRVNlFWTlRxTWJJYkt5d0FYZ1F3Uk9ueUdvYzVxdFd2ODFNbmlKYUxOdVBYMWxQZGd6Z3FyWDQtQzE3Ri1QVWFMV0RRYldRV1BhTHZtRVd4WXlPSURhbXBlalNKamdocHB2ZUxRbHpEdA?oc=5",
+   "publicado": "2026-11-26T12:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Cotação da stablecoin USDT pode se afastar do dólar à vista",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNDJQYzJYZmtyc0ZGYmVFcjlTWnk4LXpVLTZTV1JoMU9CMmN0ZUF3V28tamZabjVtTmN2V1hpMUN6M3VMUzhBMC1memRkUjVNdUhJS0poN281YzVnR2g5dU9MakpkOXFDZTZtV0NFdXV0VTZRVk5UcU1iSWJLeXdBWGdRd1JPbnlHb2M1cXRXdjgxTW5pSmFMTnVQWDFsUGRnemdxclg0LUMxN0YtUFVhTFdEUWJXUVdQYUx2bUVXeFl5T0lEYW1wZWpTSmpnaHBwdmVMUWx6RHTSAdgBQVVfeXFMTTQyUGMyWGZrcnNGRmJlRXI5U1p5OC16VS02U1dSaDFPQjJjdGVBd1dvLWpmWm41bU5jdldYaTFDejN1TFM4QTAtZnpkZFI1TXVISUtKaDdvNWM1Z0doOXVPTGpKZDlxQ2U2bVdDRXV1dFU2UVZOVHFNYkliS3l3QVhnUXdST255R29jNXF0V3Y4MU1uaUphTE51UFgxbFBkZ3pncXJYNC1DMTdGLVBVYUxXRFFiV1FXUGFMdm1FV3hZeU9JRGFtcGVqU0pqZ2hwcHZlTFFsekR0?oc=5",
    "publicado": "2026-11-26T12:19-03:00",
    "impacto": "medio",
    "ativos": [
@@ -1592,7 +1682,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T13:38-03:00",
+ "atualizado_em": "2026-11-26T14:03-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1601,9 +1691,33 @@
   "Estadão",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa dispara quase 4% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,74",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
+   "publicado": "2026-11-26T13:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe 4% com ‘efeito Trabuco’ e posicionamento técnico leve dos investidores",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdDRPZkdLbm5TQ0pLUm53LV9lMDhVRjFza3NBTUM5OFJyejlrZGlPZEV6RVhrYkstVU5GQmxiN0trbkRGejBreGx5T2R1Ymp1Y2hwdGdoeXdEMjRob1h2dWpvc3RXUS1CYWJmLTBVakZoSkN1SERKMVZYMmdWUkwtR3M0M1BtRVNJU0dQV0s1bVJtVEg4TkZrVUc3bDhHeHhkSFNzYXdOTmw1OG9OY0JSdmQ5T0hjSXhWMlNhWTlwWk9NeVhJNkhfUVpva3dyNVByWVlYbDNOa3d0SnlhYl9rWmJtZ1DSAfMBQVVfeXFMT094Z0luUE9lTkRralRyd21SWXZlMU9KQ0I3TzVpVnU0cDc4SXlhdXVpYV9WSmVPZl9UczdaYWJUdl83WGNfdm9oUlVFMUdBZ3N4ZlRHN2ZXaWpRZ3k5aS1RUEtPMnRWeUM4eElZR3JaSmJZSjJZb08xRm1OWGE1dUZlMU1LLV9MbEl4VDMzMEt2MFRYbXo5MGU5NEF1bTdnbVlrQUhZVXhQTEJJZlFITFdOMGd3T19QUFNIeW9WUUpDeV9mMTZySTBQTjBFX3UzZW4zWEw4a1IyVFBpNU9tTE1jQkFzb3pfNEdKcFBqbmNGSzNz?oc=5",
+   "publicado": "2026-11-26T13:32-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Embraer (EMBJ3) diz que foi pega de surpresa com possibilidade de tarifas dos EUA e conta com bom-senso",
    "fonte": "Money Times",
@@ -1654,11 +1768,45 @@
    "tickers": []
   },
   {
+   "titulo": "Cotação da stablecoin USDT pode se afastar do dólar à vista",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNDJQYzJYZmtyc0ZGYmVFcjlTWnk4LXpVLTZTV1JoMU9CMmN0ZUF3V28tamZabjVtTmN2V1hpMUN6M3VMUzhBMC1memRkUjVNdUhJS0poN281YzVnR2g5dU9MakpkOXFDZTZtV0NFdXV0VTZRVk5UcU1iSWJLeXdBWGdRd1JPbnlHb2M1cXRXdjgxTW5pSmFMTnVQWDFsUGRnemdxclg0LUMxN0YtUFVhTFdEUWJXUVdQYUx2bUVXeFl5T0lEYW1wZWpTSmpnaHBwdmVMUWx6RHTSAdgBQVVfeXFMTTQyUGMyWGZrcnNGRmJlRXI5U1p5OC16VS02U1dSaDFPQjJjdGVBd1dvLWpmWm41bU5jdldYaTFDejN1TFM4QTAtZnpkZFI1TXVISUtKaDdvNWM1Z0doOXVPTGpKZDlxQ2U2bVdDRXV1dFU2UVZOVHFNYkliS3l3QVhnUXdST255R29jNXF0V3Y4MU1uaUphTE51UFgxbFBkZ3pncXJYNC1DMTdGLVBVYUxXRFFiV1FXUGFMdm1FV3hZeU9JRGFtcGVqU0pqZ2hwcHZlTFFsekR0?oc=5",
+   "publicado": "2026-11-26T12:19-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai abaixo de R$ 5,80 após Lula sondar possibilidade de Trabuco assumir Fazenda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNalNKN3NTMklPcXB3TjhTbk0wbUg1SnBEQnozek9pZ1JxbU5uVW9XZ3o4OVhRaGhhX0ZTaVdRN3FpNlA4UnNUbFhUM3RmOXV2T05CcS1LNVVBRENLdk5Ib3JCQUF3VWhYTWZsd2lYN3RCZXlldUZpM0FiejNLcHFQdnNpYnhtV0Y5T3ZGUXF0YkZveDY4bXA3a0FsOUbSAaIBQVVfeXFMTWFlcmhCZ2NBd0xqa01fYnZLWmtmeTdMb0RvZW85eXEzNkRCeXMyZ05JSElCa2RFemZmVDY5aVU1dzRVYXFVWlJ3aF9tZk1xaUNQZm5lN2xRYkVZUzVRWU1TZ1BVdURPVHVZb2NPRWlFQ0FMRTEtZi12S1duN0tfaEJpQ1dRTVRMTVViR0ZKYnlkbnVhNlNSaEVaemFDSzhDZWxB?oc=5",
+   "publicado": "2026-11-26T12:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Lukoil venderá ativos no exterior a grupo americano por US$ 10 bilhões",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/lukoil-vendera-ativos-no-exterior-a-grupo-americano-por-us-10-bilhoes.shtml",
    "publicado": "2026-11-26T12:11-03:00",
    "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe mais de 4% e dólar recua a R$ 5,71 com otimismo no mercado",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdXZwWDM1WHAzUVgtaUMwVWlKa1o1TzFaM2lZZU1STWlRTmpHOTg4SzRnMmE3dXJSSDNiS2ZjdU02eUZJSF9Sci03UHd5MGVCdmlRRFNKUDdNZWhNc2M0b1BMSG13NzRrbWFZbmI1NEtHanFYVUNRN2o0Y05CR1M3eFZFS1d5all5UFdVcDlOcTNNMkczc3NzdEdiS3dLQWlEMUNZR1prNXdTX2NtT19ZbA?oc=5",
+   "publicado": "2026-11-26T12:10-03:00",
+   "impacto": "alto",
    "ativos": [
     "WIN",
     "WDO"
@@ -1692,29 +1840,6 @@
    "tickers": []
   },
   {
-   "titulo": "Real frente ao dólar: por que Goldman projeta retorno acima de 20% em 12 meses?",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQY3BfYS10QWRadTZKT1QwZ2tUelg3VkdDel9LRzV4V3E4N1JGY2lNTGVKdS1EMGlrNTB3VkVweU5CdnRYWGxiU0tqUVhpNzMwVTFoQVVCX1dlTWxPRExTWUpIN3IwX2syS204TUxJaGJldkZsdXltT3BYZDRMa3JaLUgxSkfSAYoBQVVfeXFMTUNrM0xBZWVFal9VQnl2dWNJWkhHdl9CZV9rMS1YUlA0OXR4VzV6UGstOHVKZ1I2RjFFRXpNeW5seDNtcFRLQ0poalRGbFRIOXVCUkJVSjM3QjdzYVBkNURDcUVVT2p4eWc4Z2NtQXY1UGVPeTRhYVM1RF91T3B4d0oyd1hvTUtuX0p3?oc=5",
-   "publicado": "2026-11-26T11:51-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa dispara 4% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,72",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPLUFiVGVBdHQ3S1pYQlA5R21CWjVpV3hhMU84MDhCQjlrVjdkTEVod09TbVMtdFVpakR1bTBabExkcnBEcFNGRjlHU2JDR0o2M0NRQm0yZGJ2bTNrOU55QlkzNFczcW9VdW1BYWtwSkNld28xcnZqRU1VQ3Nxb2FUN3FSWTkwTkZrS1dXS3FqX2R4ZVppWUp0MGM0V2hwb2FxX1J0ZFNjZGQ1OEtEQmZCUWUybjVSVUN3cTRzajFhRlRmS0lXQlgwYlhhalVUYmxYWFh5OE5aWUVxcTNpZ1dKOG90YXVtUdIB6wFBVV95cUxPRFotOEpTcVNVMUVudTk1S1htZm9rbVJ2bzU5WGNvVkVGMGE2bFFYRWNnQ3dYUUo4OXE0WGVvSmlGNjF0RUowbGtjamNJT2lSWXpjV1ROTlJNaHJLejF1Mm5mRTJncVJYVmY2UlBlVW9YLWNhZVV4cUtnNjVfMTdFUW5XSnA5Z282VEFTeVJoOVNQbWxoZWFuUDZYNzNyM3JQRHByanIxZVlQUElQWE9JWlVsczVja2JZeTlFNDB6VVVqVmVQREFrN3ZObmR1WjNZNFZUYjVWQXprRW5Yazd2V3VYNHN3WWNBNWxZ?oc=5",
-   "publicado": "2026-11-26T11:47-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "'Jensanity' toma conta de Taiwan e da China com retorno do fundador da Nvidia",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/jensanity-toma-conta-de-taiwan-e-da-china-com-retorno-do-fundador-da-nvidia.shtml",
@@ -1738,17 +1863,6 @@
    "tickers": [
     "EMBR3"
    ]
-  },
-  {
-   "titulo": "IPCA-15 desacelera a 0,22% em novembro, com alívio nas passagens aéreas e nos combustíveis",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ipca-15-desacelera-a-022-em-novembro-com-alivio-nas-passagens-aereas-e-nos-combustiveis.shtml",
-   "publicado": "2026-11-26T10:43-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
   }
  ]
 }
