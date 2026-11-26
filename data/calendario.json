@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-26T07:55:00-03:00",
+  "atualizado_em": "2026-11-26T12:45:00-03:00",
   "eventos": [
     {
       "data": "2026-11-26",
@@ -9,7 +9,7 @@
       "importancia": 1,
       "anterior": "−US$ 5,10 bi",
       "consenso": null,
-      "resultado": null,
+      "resultado": "−US$ 3,97 bi; IDP de US$ 9,09 bi",
       "impacto": {
         "wdo": "volatil"
       },
@@ -25,7 +25,7 @@
       "importancia": 3,
       "anterior": "0,32% (out)",
       "consenso": "0,34%",
-      "resultado": null,
+      "resultado": "0,22% (4,64% em 12 meses)",
       "impacto": {
         "di": "volatil",
         "wdo": "volatil",
@@ -33,7 +33,10 @@
       },
       "nota": "Expectativa de 0,34% no mês e 4,78% em 12 meses, segundo o InfoMoney; o Bradesco projeta 0,36% (Exame). Em outubro: 4,62% em 12 meses. Sai com NY fechada.",
       "tipo": "ipca-15",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "abaixo",
+        "reacao": "IPCA-15 abaixo do consenso costuma puxar as taxas de DI para baixo, com mais espaço para cortes da Selic, e tende a ajudar o WIN; no WDO a reação costuma ser menor e mista."
+      }
     },
     {
       "data": "2026-11-26",
@@ -43,7 +46,7 @@
       "importancia": 1,
       "anterior": null,
       "consenso": null,
-      "resultado": null,
+      "resultado": "Ata confirma viés de aperto; para o ING, alta de juros em 18/dez é quase certa",
       "impacto": {
         "wdo": "volatil"
       },
