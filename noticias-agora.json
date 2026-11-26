@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T15:23-03:00",
+  "atualizado_em": "2026-11-26T15:25-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -251,11 +251,11 @@
     ],
     [
      "15:05",
-     172672.0
+     172638.0
     ],
     [
-     "15:08",
-     172728.0
+     "15:10",
+     172661.0
     ]
    ]
   },
@@ -568,11 +568,11 @@
     ],
     [
      "15:20",
-     5.7413
+     5.7415
     ],
     [
-     "15:23",
-     5.7425
+     "15:25",
+     5.744
     ]
    ]
   },
@@ -1115,7 +1115,21 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.12
+    "dolar30": -0.1
+   },
+   {
+    "hora": "15:22",
+    "titulo": "Pablo Hernández de Cos vence disputa pela presidência do Banco Central Europeu",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/pablo-hernandez-de-cos-vence-disputa-pela-presidencia-do-banco-central-europeu.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1909,6 +1923,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Pablo Hernández de Cos vence disputa pela presidência do Banco Central Europeu",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/pablo-hernandez-de-cos-vence-disputa-pela-presidencia-do-banco-central-europeu.shtml",
+   "publicado": "2026-11-26T15:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1938,7 +1964,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T15:23-03:00",
+ "atualizado_em": "2026-11-26T15:25-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1952,6 +1978,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Pablo Hernández de Cos vence disputa pela presidência do Banco Central Europeu",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/pablo-hernandez-de-cos-vence-disputa-pela-presidencia-do-banco-central-europeu.shtml",
+   "publicado": "2026-11-26T15:22-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa dispara quase 4% com ‘efeito Trabuco’ e recupera os 173 mil pontos; dólar cai a R$ 5,74",
    "fonte": "Estadão",
