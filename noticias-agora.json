@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T12:45-03:00",
+  "atualizado_em": "2026-11-26T12:48-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -127,7 +127,11 @@
     ],
     [
      "12:30",
-     173150.0
+     173190.0
+    ],
+    [
+     "12:33",
+     173170.0
     ]
    ]
   },
@@ -316,7 +320,11 @@
     ],
     [
      "12:45",
-     5.7301
+     5.7264
+    ],
+    [
+     "12:48",
+     5.7289
     ]
    ]
   },
@@ -660,7 +668,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.26,
     "dolar30": -0.1
    },
    {
@@ -677,7 +685,7 @@
     "tickers": [
      "B3SA3"
     ],
-    "ibov30": null,
+    "ibov30": 0.26,
     "dolar30": -0.1
    },
    {
@@ -691,7 +699,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.08
+    "dolar30": -0.14
    },
    {
     "hora": "12:35",
@@ -1394,7 +1402,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T12:45-03:00",
+ "atualizado_em": "2026-11-26T12:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1481,6 +1489,18 @@
    "tickers": []
   },
   {
+   "titulo": "'Jensanity' toma conta de Taiwan e da China com retorno do fundador da Nvidia",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/negocios/2026/11/jensanity-toma-conta-de-taiwan-e-da-china-com-retorno-do-fundador-da-nvidia.shtml",
+   "publicado": "2026-11-26T11:39-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Embraer foi pega de surpresa e vai insistir no argumento econômico para evitar tarifas, diz presidente",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/embraer-foi-pega-de-surpresa-e-vai-insistir-no-argumento-economico-para-evitar-tarifas-diz-presidente.shtml",
@@ -1517,19 +1537,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Investe no exterior por medo do Brasil? Então você está fazendo isso errado, explica Itaú",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMmtpS1dHWUEtMWktODNuQ0NEQ0xwM0NHVlJzdUdCYWxYMHBpSUE5Z09NRXNXbFZrVGRxWkJJTDVaa0Ewb1dFbzhxcVlKUWpYeXhrOERqUkNmSWYwZUVyTTdWSWN1VWJnaC1KcXA2czBSUGFvR202TFktclNUdXMwZTJtVHR1a0lVUTY0NnFrcjVFeUNiLVE1SVFXUDk1TzBPMEh5RGFtZmNMMTB4S0d1SjRyRmFrbFlBSkxwOW1TRTZ1UThpWlJIOHRKdEsxWlFDdmJhQTlDRnRHMFc2RXBj0gHkAUFVX3lxTE1GTEFxaWhVZmtILWFGZkRELUpfdDAyQ3dYbENpUDhYVTJoQ3ZZdW82ZGJCR1lUeXkzTHV2aERpMmdwRXBtQ1BpSzVLZ203RWJPLThoeFdPdUdGODJMUXEtekhfS29icVZDYWRNN2p3SW5yTFZRVUVuUGVQa1hJcUpIQllGVVpZRlpDQXBfZW4wbVhBdDEyQnItd1VpTy1PY3FkVHVVaFQ5ei1NMUszVHg0aVZzYjRqcmZfaVo5bWJSaE5hdTB6Tl9WSXgtT25WaVBSQ1RYU3JXY1ZFLXJzT2ctMzhNRQ?oc=5",
-   "publicado": "2026-11-26T10:47-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "ITUB4"
-   ]
   },
   {
    "titulo": "IPCA-15 desacelera a 0,22% em novembro, com alívio nas passagens aéreas e nos combustíveis",
