@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T17:08-03:00",
+  "atualizado_em": "2026-11-26T17:09-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -335,7 +335,7 @@
     ],
     [
      "16:50",
-     173698.0
+     173704.0
     ]
    ]
   },
@@ -732,11 +732,11 @@
     ],
     [
      "17:05",
-     5.7403
+     5.7358
     ],
     [
-     "17:08",
-     5.7398
+     "17:09",
+     5.7358
     ]
    ]
   },
@@ -1359,7 +1359,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": -0.03
+    "dolar30": -0.1
    },
    {
     "hora": "16:48",
@@ -1394,6 +1394,20 @@
     "titulo": "Fed mantém postura dura e deve aumentar juros apesar de queda das ações",
     "fonte": "Folha",
     "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/fed-mantem-postura-dura-e-deve-aumentar-juros-apesar-de-queda-das-acoes.shtml",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "17:07",
+    "titulo": "Dólar recua para os R$ 5,7435 com IPCA-15 e expectativas sobre equipe econômica de Lula",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYUlWVDFYWDl2Sm9SQUhuWE1kaTBVcFhuUmhWbUY4eFNfUzRHN25MZDUyNW1WcUp6eVZQMFN6MmZGend4aFNpdm5SLVdrTTNldGUyRk1GZ1NUR25ZZHdpQnZOejl6R0laWEV1cW00VUZFc3Z4RHN3S1dicUlGb29MR2V0UnBvMGtabVA4MTJDVkxnVGJHS01idWlPdVcweGdGaG5kM3Rwdi1xU2xaR1ZzTkdFanZSendJVFJ6TlFR?oc=5",
     "impacto": "alto",
     "ativos": [
      "WDO",
@@ -2299,6 +2313,18 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar recua para os R$ 5,7435 com IPCA-15 e expectativas sobre equipe econômica de Lula",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYUlWVDFYWDl2Sm9SQUhuWE1kaTBVcFhuUmhWbUY4eFNfUzRHN25MZDUyNW1WcUp6eVZQMFN6MmZGend4aFNpdm5SLVdrTTNldGUyRk1GZ1NUR25ZZHdpQnZOejl6R0laWEV1cW00VUZFc3Z4RHN3S1dicUlGb29MR2V0UnBvMGtabVA4MTJDVkxnVGJHS01idWlPdVcweGdGaG5kM3Rwdi1xU2xaR1ZzTkdFanZSendJVFJ6TlFR?oc=5",
+   "publicado": "2026-11-26T17:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2328,7 +2354,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T17:08-03:00",
+ "atualizado_em": "2026-11-26T17:09-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2337,9 +2363,22 @@
   "CNN Brasil",
   "Estadão",
   "Folha",
-  "InfoMoney"
+  "InfoMoney",
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar recua para os R$ 5,7435 com IPCA-15 e expectativas sobre equipe econômica de Lula",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYUlWVDFYWDl2Sm9SQUhuWE1kaTBVcFhuUmhWbUY4eFNfUzRHN25MZDUyNW1WcUp6eVZQMFN6MmZGend4aFNpdm5SLVdrTTNldGUyRk1GZ1NUR25ZZHdpQnZOejl6R0laWEV1cW00VUZFc3Z4RHN3S1dicUlGb29MR2V0UnBvMGtabVA4MTJDVkxnVGJHS01idWlPdVcweGdGaG5kM3Rwdi1xU2xaR1ZzTkdFanZSendJVFJ6TlFR?oc=5",
+   "publicado": "2026-11-26T17:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Fed mantém postura dura e deve aumentar juros apesar de queda das ações",
    "fonte": "Folha",
