@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-26",
-  "atualizado_em": "2026-11-26T11:18-03:00",
+  "atualizado_em": "2026-11-26T11:20-03:00",
   "ibov": {
    "anterior": 166684.61,
    "pontos": [
@@ -55,11 +55,11 @@
     ],
     [
      "11:00",
-     173039.0
+     173040.0
     ],
     [
-     "11:03",
-     173047.0
+     "11:05",
+     173124.0
     ]
    ]
   },
@@ -176,11 +176,11 @@
     ],
     [
      "11:15",
-     5.7197
+     5.724
     ],
     [
-     "11:18",
-     5.7214
+     "11:20",
+     5.7199
     ]
    ]
   },
@@ -427,7 +427,7 @@
      "ITUB4"
     ],
     "ibov30": null,
-    "dolar30": -0.06
+    "dolar30": 0.01
    },
    {
     "hora": "10:54",
@@ -441,7 +441,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": -0.13
    }
   ]
  },
@@ -1022,7 +1022,7 @@
    "em": "2026-11-26T13:25:50+00:00"
   }
  ],
- "atualizado_em": "2026-11-26T11:18-03:00",
+ "atualizado_em": "2026-11-26T11:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1144,31 +1144,6 @@
    "tickers": []
   },
   {
-   "titulo": "Latam realiza primeiro voo oficial com avião da Embraer entre Guarulhos e Brasília",
-   "fonte": "Estadão",
-   "url": "https://www.estadao.com.br/economia/latam-realiza-primeiro-voo-oficial-com-aviao-da-embraer-entre-guarulhos-e-brasilia-npr/",
-   "publicado": "2026-11-26T10:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "EMBR3"
-   ]
-  },
-  {
-   "titulo": "Semiconductor chips are the new oil. Here's why",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
-   "publicado": "2026-11-26T10:19-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Trump usa tarifas para pressionar asiáticos a fecharem acordos, dizem analistas",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/trump-usa-tarifas-para-pressionar-asiaticos-a-fecharem-acordos-dizem-analistas.shtml",
@@ -1180,7 +1155,7 @@
    "tickers": []
   },
   {
-   "titulo": "Bolsa dispara mais de 3% com possibilidade de Trabuco na Fazenda; dólar cai a R$ 5,74",
+   "titulo": "Bolsa dispara mais de 4% com possibilidade de Trabuco na Fazenda; dólar cai a R$ 5,72",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-de-mais-de-1-com-possibilidade-de-trabuco-na-fazenda.shtml",
    "publicado": "2026-11-26T09:54-03:00",
@@ -1198,6 +1173,28 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar tem forte queda e toca os R$ 5,75 com melhora de expectativas sobre o governo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMXBRUXpSS1k2X3hHWVp1NjliMGVjYWlxTjBVa0wwZW10ck9CeGVHUG53YXJMd2drdWU4dl9kbWtFcmk2LVRkMFJ1Z1VPdkRqbUpUbm9keE1oa25yMU9PVlpvcUg5allROG5PR19zcktVM2ZYX0JQYklJV1VrS18xeThJRmpsbE9jLTE4cW9tTVo0WlJGYWYzZTBvSmREdld3YlJ6R2lWd3psTjExbkRlLXAwR3l0V3RIMzVVbEl5Qk9yTW9MSUo3cFRYeWY1ZFpodUhnV3F30gHkAUFVX3lxTFBGZHF6NVo5VWFBR3RhdFNXS2VHREU2ZFdEbGZVUmxtWHhPZktPMkxheExBek4zWHp0dTNqd05CT0RJdUhESm42alhzTVNNcEt6YkNVRGk1b1B4akpITGhQSzhvZU9POTRubzNjSTQ5blI5cGFLcnJUMGxzenkwdXlKdDJuSUp4Z3AwWloteEZlWWlJRjljanhYVzVLRHM5MVhjMG1LSm04NENwcGlxdENJcUVtZnF0MkpQTEswVWh1NTltWFI2dU11NTBON3VZWFNrNHQ0WWswT0xoVDNaZ2ZneElQWg?oc=5",
+   "publicado": "2026-11-26T09:50-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+   "publicado": "2026-11-26T09:46-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
