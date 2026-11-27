@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:13-03:00",
+  "atualizado_em": "2026-11-27T10:16-03:00",
   "dolar": {
    "anterior": 5.6513,
    "pontos": [
@@ -59,11 +59,15 @@
     ],
     [
      "10:10",
-     5.4926
+     5.5016
     ],
     [
-     "10:13",
-     5.4929
+     "10:15",
+     5.5056
+    ],
+    [
+     "10:16",
+     5.507
     ]
    ]
   },
@@ -196,7 +200,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "dolar30": -0.28
+    "dolar30": -0.12
    },
    {
     "hora": "09:47",
@@ -209,13 +213,25 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": -0.3
+    "dolar30": -0.07
    },
    {
     "hora": "09:51",
     "titulo": "Rendimento real do trabalhador cresceu 3,5% em um ano",
     "fonte": "Agência Brasil",
     "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/rendimento-real-do-trabalhador-cresceu-35-em-um-ano",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "dolar30": 0.0
+   },
+   {
+    "hora": "10:10",
+    "titulo": "Tributária, 6x1 e tarifaço impulsionam salário de lobistas no Brasil",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/tributaria-6x1-e-tarifaco-impulsionam-salario-de-lobistas-no-brasil.shtml",
     "impacto": "medio",
     "ativos": [
      "WDO"
@@ -627,6 +643,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Tributária, 6x1 e tarifaço impulsionam salário de lobistas no Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/tributaria-6x1-e-tarifaco-impulsionam-salario-de-lobistas-no-brasil.shtml",
+   "publicado": "2026-11-27T10:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -651,7 +678,7 @@
    "em": "2026-11-27T12:48:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:13-03:00",
+ "atualizado_em": "2026-11-27T10:16-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -666,6 +693,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Tributária, 6x1 e tarifaço impulsionam salário de lobistas no Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/tributaria-6x1-e-tarifaco-impulsionam-salario-de-lobistas-no-brasil.shtml",
+   "publicado": "2026-11-27T10:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Rendimento real do trabalhador cresceu 3,5% em um ano",
    "fonte": "Agência Brasil",
@@ -787,7 +825,7 @@
    "tickers": []
   },
   {
-   "titulo": "Tempo real: Ibovespa de olho em Trabuco no Ministério da Fazenda e no IGP-M; veja os destaques desta sexta-feira (27)",
+   "titulo": "Tempo real: Ibovespa recupera os 183 mil pontos com Trabuco no Ministério da Fazenda; veja os destaques desta sexta-feira (27)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nTmtmU2FZZVdPdWFxRkFMdkFudjdIeUJtV1ZwMHhzNnJmLVkzbEZpcGtMNl9KOVNFSXVpb0dRYUFtXzJVc0RJMjhjcGY4M21idmVNdTRWd19KeWswSWJzNTRTWEl6Rmtp?oc=5",
    "publicado": "2026-11-27T08:55-03:00",
