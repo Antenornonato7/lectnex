@@ -2,7 +2,7 @@
    Recorte com só os ícones usados no Lectnex. Para acrescentar ícones, rode: python3 scripts/icones.py */
 @font-face {
   font-family: "Phosphor";
-  src: url("./Phosphor.woff?v=961b88f2") format("woff");
+  src: url("./Phosphor.woff?v=efb4feb9") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -162,9 +162,6 @@
 }
 .ph.ph-currency-btc:before {
   content: "\e618";
-}
-.ph.ph-currency-circle-dollar:before {
-  content: "\e54c";
 }
 .ph.ph-currency-dollar:before {
   content: "\e550";
@@ -435,7 +432,7 @@
 }
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("./Phosphor-Bold.woff?v=961b88f2") format("woff");
+  src: url("./Phosphor-Bold.woff?v=efb4feb9") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -595,9 +592,6 @@
 }
 .ph-bold.ph-currency-btc:before {
   content: "\e618";
-}
-.ph-bold.ph-currency-circle-dollar:before {
-  content: "\e54c";
 }
 .ph-bold.ph-currency-dollar:before {
   content: "\e550";
@@ -868,7 +862,7 @@
 }
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("./Phosphor-Fill.woff?v=961b88f2") format("woff");
+  src: url("./Phosphor-Fill.woff?v=efb4feb9") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1028,9 +1022,6 @@
 }
 .ph-fill.ph-currency-btc:before {
   content: "\e618";
-}
-.ph-fill.ph-currency-circle-dollar:before {
-  content: "\e54c";
 }
 .ph-fill.ph-currency-dollar:before {
   content: "\e550";
@@ -1301,7 +1292,7 @@
 }
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("./Phosphor-Duotone.woff?v=961b88f2") format("woff");
+  src: url("./Phosphor-Duotone.woff?v=efb4feb9") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1670,14 +1661,6 @@
 }
 .ph-duotone.ph-currency-btc:after {
   content: "\e619";
-  margin-left: -1em;
-}
-.ph-duotone.ph-currency-circle-dollar:before {
-  content: "\e54c";
-  opacity: 0.2;
-}
-.ph-duotone.ph-currency-circle-dollar:after {
-  content: "\e54d";
   margin-left: -1em;
 }
 .ph-duotone.ph-currency-dollar:before {
