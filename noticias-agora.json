@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:28-03:00",
+  "atualizado_em": "2026-11-27T10:30-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -15,11 +15,11 @@
     ],
     [
      "10:10",
-     183384.0
+     183289.0
     ],
     [
-     "10:13",
-     183458.0
+     "10:15",
+     183189.0
     ]
    ]
   },
@@ -92,11 +92,11 @@
     ],
     [
      "10:25",
-     5.5234
+     5.5301
     ],
     [
-     "10:28",
-     5.5251
+     "10:30",
+     5.5346
     ]
    ]
   },
@@ -816,7 +816,7 @@
    "em": "2026-11-27T13:23:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:28-03:00",
+ "atualizado_em": "2026-11-27T10:30-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -831,6 +831,18 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
+   "publicado": "2026-11-27T10:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Trabuco na Fazenda: Bolsa sobe, dólar e juros caem, mas mercado vê riscos que ameaçam o rali",
    "fonte": "Estadão",
@@ -1003,17 +1015,6 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa recupera os 183 mil pontos com Trabuco no Ministério da Fazenda; veja os destaques desta sexta-feira (27)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nTmtmU2FZZVdPdWFxRkFMdkFudjdIeUJtV1ZwMHhzNnJmLVkzbEZpcGtMNl9KOVNFSXVpb0dRYUFtXzJVc0RJMjhjcGY4M21idmVNdTRWd19KeWswSWJzNTRTWEl6Rmtp?oc=5",
-   "publicado": "2026-11-27T08:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
    ],
    "tickers": []
   }
