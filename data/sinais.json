@@ -1,5 +1,5 @@
 {
- "data": "2026-11-26",
+ "data": "2026-11-27",
  "hora": "07:30",
  "ativos": [
   {
@@ -30,7 +30,7 @@
   {
    "id": "vix",
    "nome": "VIX",
-   "var": -4.88
+   "var": -7.01
   },
   {
    "id": "brl",
@@ -49,11 +49,11 @@
  },
  "wdo": {
   "leitura": "bearish",
-  "score": -0.857,
+  "score": -0.899,
   "motivos": [
    "EWZ (Brasil em NY) +2,09%",
    "S&P 500 fut. +0,72%",
-   "VIX −4,88%"
+   "VIX −7,01%"
   ]
  },
  "regra": "WIN = 0,5·S&P fut + 0,3·EWZ − 0,4·DXY + 0,1·Brent (alta ≥ +0,15; baixa ≤ −0,15). WDO = 0,6·DXY − 0,3·S&P fut − 0,3·EWZ + 0,02·VIX (alta ≥ +0,12; baixa ≤ −0,12). Variações contra o fechamento anterior, Yahoo Finance.",
