@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T17:25-03:00",
+  "atualizado_em": "2026-11-27T17:28-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     177349.0
+     177283.0
     ]
    ]
   },
@@ -752,7 +752,11 @@
     ],
     [
      "17:25",
-     5.5193
+     5.5182
+    ],
+    [
+     "17:28",
+     5.5187
     ]
    ]
   },
@@ -1406,6 +1410,19 @@
     "dolar30": -0.11
    },
    {
+    "hora": "15:35",
+    "titulo": "Tesouro Direto tem emissão líquida de R$ 2,87 bilhões em outubro",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3d9IBwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3dw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.11,
+    "dolar30": -0.04
+   },
+   {
     "hora": "16:35",
     "titulo": "Qual será a política fiscal de Lula 4?",
     "fonte": "Folha",
@@ -1415,7 +1432,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": 0.04,
+    "ibov30": 0.0,
     "dolar30": -0.16
    },
    {
@@ -2250,6 +2267,17 @@
    ]
   },
   {
+   "titulo": "Tesouro Direto tem emissão líquida de R$ 2,87 bilhões em outubro",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3d9IBwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3dw?oc=5",
+   "publicado": "2026-11-27T15:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Qual será a política fiscal de Lula 4?",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/marcos-mendes/2026/11/qual-sera-a-politica-fiscal-de-lula-4.shtml",
@@ -2299,7 +2327,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T17:25-03:00",
+ "atualizado_em": "2026-11-27T17:28-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2309,7 +2337,8 @@
   "Estadão",
   "Exame",
   "Folha",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
@@ -2354,6 +2383,17 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tesouro Direto tem emissão líquida de R$ 2,87 bilhões em outubro",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3d9IBwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3dw?oc=5",
+   "publicado": "2026-11-27T15:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   },
