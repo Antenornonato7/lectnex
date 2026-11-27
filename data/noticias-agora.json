@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:38-03:00",
+  "atualizado_em": "2026-11-27T11:08-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -23,11 +23,35 @@
     ],
     [
      "10:20",
-     182745.0
+     182598.0
     ],
     [
-     "10:23",
-     182703.0
+     "10:25",
+     182381.0
+    ],
+    [
+     "10:30",
+     181736.0
+    ],
+    [
+     "10:35",
+     182106.0
+    ],
+    [
+     "10:40",
+     181639.0
+    ],
+    [
+     "10:45",
+     181654.0
+    ],
+    [
+     "10:50",
+     181291.0
+    ],
+    [
+     "10:53",
+     181415.0
     ]
    ]
   },
@@ -108,11 +132,35 @@
     ],
     [
      "10:35",
-     5.5338
+     5.5349
     ],
     [
-     "10:38",
-     5.5362
+     "10:40",
+     5.532
+    ],
+    [
+     "10:45",
+     5.5267
+    ],
+    [
+     "10:50",
+     5.5287
+    ],
+    [
+     "10:55",
+     5.5383
+    ],
+    [
+     "11:00",
+     5.5365
+    ],
+    [
+     "11:05",
+     5.5386
+    ],
+    [
+     "11:08",
+     5.5371
     ]
    ]
   },
@@ -227,6 +275,19 @@
     "dolar30": -0.45
    },
    {
+    "hora": "09:14",
+    "titulo": "Dólar à vista tem forte queda e vai até R$ 5,51 com confirmação de Trabuco na Fazenda",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVHU4SjhheDBZeWo2NDR5TVJmNER1M0dsT3dMZXU2VU82Nk1hS1hLUGlaSW9VMUVuMmwyU0R4U1otZVRtcmRHZGRuUkt3SVJtY2tNTnJrYVhjX1hlRXlTbWJYUS1SZmt4UGdoSi10RFY4am14X2ZYNkFNN0g0SVlaSDFJS01PQ1E0U1dPbEs1VjFTOW13WjNPSDBMMWxTdXhBV3Z5bzJsMllVaUlvUjJ5VHZ0eWtIbk5HampJRnhEd002am45MXJ4aE9UWDNGYmdTalhiY08ySFpEQVBUd3diSjdaNXBsRjDSAecBQVVfeXFMUFR1OEo4YXgwWXlqNjQ0eU1SZjREdTNHbE93TGV1NlVPNjZNYUtYS1BpWklvVTFFbjJsMlNEeFNaLWVUbXJkR2RkblJLd0lSbWNrTU5ya2FYY19YZUV5U21iWFEtUmZreFBnaEotdERWOGpteF9mWDZBTTdINElZWkgxSUtNT0NRNFNXT2xLNVYxUzltd1ozT0gwTDFsU3V4QVd2eW8ybDJZVWlJb1IyeVR2dHlrSG5OR2pqSUZ4RHdNNmpuOTFyeGhPVFgzRmJnU2pYYmNPMkhaREFQVHd3Yko3WjVwbEYw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.45
+   },
+   {
     "hora": "09:21",
     "titulo": "Ativos brasileiros disparam em NY após escolha de Trabuco; XP e Bradesco saltam 18%",
     "fonte": "Folha",
@@ -294,8 +355,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.59
+    "ibov30": -0.65,
+    "dolar30": 0.61
    },
    {
     "hora": "10:12",
@@ -307,8 +368,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": 0.63
+    "ibov30": -0.9,
+    "dolar30": 0.55
    },
    {
     "hora": "10:20",
@@ -320,8 +381,8 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.52,
+    "dolar30": 0.14
    },
    {
     "hora": "10:23",
@@ -333,8 +394,21 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.72,
+    "dolar30": 0.18
+   },
+   {
+    "hora": "10:24",
+    "titulo": "Haddad deseja sorte a Trabuco e defende que Fazenda mire ‘programa eleito pelas ruas’",
+    "fonte": "Estadão",
+    "url": "https://www.estadao.com.br/economia/haddad-trabuco-fazenda-programa-eleito-pelas-ruas/",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": -0.72,
+    "dolar30": 0.18
    },
    {
     "hora": "10:26",
@@ -343,6 +417,61 @@
     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOcnNRMDdaZWNTeUdKaWFfZDhDSUtLUUU3Q3VtRDFtVWduQmVHUVU1S3U2dXBnY2pwdm9ETVNLREpQNkpJakNyWVQ3MGNXRjk2bE1pLURra0lseHZlYUlnRHlmUXJFeDJneDJGb0JtdGFmM2RLeDNjQUtONXB6aVp0MnljNTFEQjJ5NXFVSklmVGp0OUdBVk80aFEwWFYtOVFVcTVSQ05sRHBhLU5yd1BZY1VBMjFjWTU4dU9HTEx2YlF4cnV4bF9iR2pYSkZkMTdWcnpTNzZpMFl0ZzFqZ285djREU1R4SGhIUnM2Mw?oc=5",
     "impacto": "medio",
     "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": -0.53,
+    "dolar30": 0.15
+   },
+   {
+    "hora": "10:37",
+    "titulo": "Ibovespa sobe mais de 3% com Trabuco na Fazenda; ADRs do Bradesco disparam 24%",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOWNXYjkxMTFxMnVCVTg2OHp5RXBYaWdoVVlUazl5SUZ4dXRIQ1o1Ym5ReWZUUTN4dDQ1X0ItUWtlTjFKRThOS0JLeWxxcC14V0FtRlhSTUJGVzh6MXFqYU9PNldiRWxaZV9UNGZzVlFuWDZ6UDNrQ1U5LXRzck50MjdDZWswR3Y5b3JqdmJaODZHUnl0YmQ4MlNlczMtRUJ4NWRNMzBUTjU4WEdqQy1ia0JrZWZhT2FDT293ekdZZllnZk1GdFlreE50dnZPX084b2lwbVZDMDF3UjZjUVhrdtIB7wFBVV95cUxPUkFmbmR2QVRWUHdTcFFNUmdrYk9RNERoaUhlbFg0ZVBzcVppbDdXanRCYkxQYjBzQnZSWW8zZFYxamtWMXpHcjJlelpmR09mX29zTzcxUy1hX2pmRzFTamZUUjNWSk15SlF2bUtKU3pqc3BYc3EtZzJfcTdRMWVtdUN5dDhDM1gtR0FZUGpMeE94QmNaRmVsZ2Q1MlRTaGlDNG5HMzZfLXNtcmtFMG16THRfMjBjMlZGTm54d25YdHprNWNQbXVSRWRZeTVYaFlwT3YxcXAzeUd0VjdjWnNleWVuVTgwZ1l1UzZoTjlhcw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
+    "ibov30": null,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "10:38",
+    "titulo": "Haddad deseja 'sorte e serenidade' a Trabuco e diz que Fazenda deve mirar programa eleito nas ruas",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/haddad-deseja-sorte-e-serenidade-a-trabuco-e-diz-que-fazenda-deve-mirar-programa-eleito-nas-ruas.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.07
+   },
+   {
+    "hora": "10:56",
+    "titulo": "Dólar cai e ativos brasileiros disparam após anúncio de Trabuco como ministro da Fazenda",
+    "fonte": "Bloomberg Línea",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRmFrZkJkWlU2SnpqU2RrWkhEcm5NUmo1Z1pHLS1uQ0JZdzlNdDE4eUFuVkloc1U1X1o0OHBXazJZN3ZBMDAydVl6ZHZ1dV9ZSnhmSTdmbFNmNndaU0F0c09IdGRWOXJLOE9ybEt2c1NmOU9tVGRyc1VXb3pMc3kzQ1hfalVOWExhMEQ1a0JzWWxvRVdkT0lnRWlfb2pQaXp3dTMwU1ZmVlY0LUZSVk9IQUptaHNhc1FaYXM5SFRqUEZtUXFKYldBUlR30gHeAUFVX3lxTE56bk82ZEhyTFFOWHYyTkIwWGk0QV9iX1dJZWZhSTFVeUd3M1Q2SGJGdV9yTmxmWmpPVElRazVsVE1mN2loN0x2T2ZRV29nOVBNOC0zd3VKcG55ZDZac1B2T0FRRlZDU01QWmZoX1ZZT0Njczd4QkowVDFSRHdqOTAyMm9ZZmZUTmlCZzAtbjNXSzJFVU5FUUxfRDVtT0NIOE9sYlpCeFFfSkF2OTBBYzNUclpYejBWeXJGS1J3SHFwTllQUkt1elhUWFYwMGdYb0VJYzJEeEdhS3JkOTZzdw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "11:07",
+    "titulo": "Ibovespa dispara e dólar cai abaixo de R$ 5,55: por que Trabuco na Fazenda agrada ao mercado?",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVcmttTWVDV3ZxMmFxeU5LcGZpZnRObGRxVUZ2S2ZOQlZpYkV5UDI4U19maXZUOFBHVzhhODZCQTRkQmtULUIwMEJneFVjWVc2NE4yWEtvelEtTnpOejBOYWNxZXBMMFl1NlFr?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
      "WDO"
     ],
     "tickers": [],
@@ -705,6 +834,17 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar à vista tem forte queda e vai até R$ 5,51 com confirmação de Trabuco na Fazenda",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVHU4SjhheDBZeWo2NDR5TVJmNER1M0dsT3dMZXU2VU82Nk1hS1hLUGlaSW9VMUVuMmwyU0R4U1otZVRtcmRHZGRuUkt3SVJtY2tNTnJrYVhjX1hlRXlTbWJYUS1SZmt4UGdoSi10RFY4am14X2ZYNkFNN0g0SVlaSDFJS01PQ1E0U1dPbEs1VjFTOW13WjNPSDBMMWxTdXhBV3Z5bzJsMllVaUlvUjJ5VHZ0eWtIbk5HampJRnhEd002am45MXJ4aE9UWDNGYmdTalhiY08ySFpEQVBUd3diSjdaNXBsRjDSAecBQVVfeXFMUFR1OEo4YXgwWXlqNjQ0eU1SZjREdTNHbE93TGV1NlVPNjZNYUtYS1BpWklvVTFFbjJsMlNEeFNaLWVUbXJkR2RkblJLd0lSbWNrTU5ya2FYY19YZUV5U21iWFEtUmZreFBnaEotdERWOGpteF9mWDZBTTdINElZWkgxSUtNT0NRNFNXT2xLNVYxUzltd1ozT0gwTDFsU3V4QVd2eW8ybDJZVWlJb1IyeVR2dHlrSG5OR2pqSUZ4RHdNNmpuOTFyeGhPVFgzRmJnU2pYYmNPMkhaREFQVHd3Yko3WjVwbEYw?oc=5",
+   "publicado": "2026-11-27T09:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Ativos brasileiros disparam em NY após escolha de Trabuco; XP e Bradesco saltam 18%",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ativos-brasileiros-disparam-em-ny-apos-escolha-de-trabuco-xp-e-bradesco-saltam-18.shtml",
@@ -799,12 +939,70 @@
    "tickers": []
   },
   {
+   "titulo": "Haddad deseja sorte a Trabuco e defende que Fazenda mire ‘programa eleito pelas ruas’",
+   "fonte": "Estadão",
+   "url": "https://www.estadao.com.br/economia/haddad-trabuco-fazenda-programa-eleito-pelas-ruas/",
+   "publicado": "2026-11-27T10:24-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Trabuco na Fazenda: Bolsa sobe, dólar e juros caem, mas mercado vê riscos que ameaçam o rali",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOcnNRMDdaZWNTeUdKaWFfZDhDSUtLUUU3Q3VtRDFtVWduQmVHUVU1S3U2dXBnY2pwdm9ETVNLREpQNkpJakNyWVQ3MGNXRjk2bE1pLURra0lseHZlYUlnRHlmUXJFeDJneDJGb0JtdGFmM2RLeDNjQUtONXB6aVp0MnljNTFEQjJ5NXFVSklmVGp0OUdBVk80aFEwWFYtOVFVcTVSQ05sRHBhLU5yd1BZY1VBMjFjWTU4dU9HTEx2YlF4cnV4bF9iR2pYSkZkMTdWcnpTNzZpMFl0ZzFqZ285djREU1R4SGhIUnM2Mw?oc=5",
    "publicado": "2026-11-27T10:26-03:00",
    "impacto": "medio",
    "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe mais de 3% com Trabuco na Fazenda; ADRs do Bradesco disparam 24%",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOWNXYjkxMTFxMnVCVTg2OHp5RXBYaWdoVVlUazl5SUZ4dXRIQ1o1Ym5ReWZUUTN4dDQ1X0ItUWtlTjFKRThOS0JLeWxxcC14V0FtRlhSTUJGVzh6MXFqYU9PNldiRWxaZV9UNGZzVlFuWDZ6UDNrQ1U5LXRzck50MjdDZWswR3Y5b3JqdmJaODZHUnl0YmQ4MlNlczMtRUJ4NWRNMzBUTjU4WEdqQy1ia0JrZWZhT2FDT293ekdZZllnZk1GdFlreE50dnZPX084b2lwbVZDMDF3UjZjUVhrdtIB7wFBVV95cUxPUkFmbmR2QVRWUHdTcFFNUmdrYk9RNERoaUhlbFg0ZVBzcVppbDdXanRCYkxQYjBzQnZSWW8zZFYxamtWMXpHcjJlelpmR09mX29zTzcxUy1hX2pmRzFTamZUUjNWSk15SlF2bUtKU3pqc3BYc3EtZzJfcTdRMWVtdUN5dDhDM1gtR0FZUGpMeE94QmNaRmVsZ2Q1MlRTaGlDNG5HMzZfLXNtcmtFMG16THRfMjBjMlZGTm54d25YdHprNWNQbXVSRWRZeTVYaFlwT3YxcXAzeUd0VjdjWnNleWVuVTgwZ1l1UzZoTjlhcw?oc=5",
+   "publicado": "2026-11-27T10:37-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
+  {
+   "titulo": "Haddad deseja 'sorte e serenidade' a Trabuco e diz que Fazenda deve mirar programa eleito nas ruas",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/haddad-deseja-sorte-e-serenidade-a-trabuco-e-diz-que-fazenda-deve-mirar-programa-eleito-nas-ruas.shtml",
+   "publicado": "2026-11-27T10:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai e ativos brasileiros disparam após anúncio de Trabuco como ministro da Fazenda",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRmFrZkJkWlU2SnpqU2RrWkhEcm5NUmo1Z1pHLS1uQ0JZdzlNdDE4eUFuVkloc1U1X1o0OHBXazJZN3ZBMDAydVl6ZHZ1dV9ZSnhmSTdmbFNmNndaU0F0c09IdGRWOXJLOE9ybEt2c1NmOU9tVGRyc1VXb3pMc3kzQ1hfalVOWExhMEQ1a0JzWWxvRVdkT0lnRWlfb2pQaXp3dTMwU1ZmVlY0LUZSVk9IQUptaHNhc1FaYXM5SFRqUEZtUXFKYldBUlR30gHeAUFVX3lxTE56bk82ZEhyTFFOWHYyTkIwWGk0QV9iX1dJZWZhSTFVeUd3M1Q2SGJGdV9yTmxmWmpPVElRazVsVE1mN2loN0x2T2ZRV29nOVBNOC0zd3VKcG55ZDZac1B2T0FRRlZDU01QWmZoX1ZZT0Njczd4QkowVDFSRHdqOTAyMm9ZZmZUTmlCZzAtbjNXSzJFVU5FUUxfRDVtT0NIOE9sYlpCeFFfSkF2OTBBYzNUclpYejBWeXJGS1J3SHFwTllQUkt1elhUWFYwMGdYb0VJYzJEeEdhS3JkOTZzdw?oc=5",
+   "publicado": "2026-11-27T10:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa dispara e dólar cai abaixo de R$ 5,55: por que Trabuco na Fazenda agrada ao mercado?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVcmttTWVDV3ZxMmFxeU5LcGZpZnRObGRxVUZ2S2ZOQlZpYkV5UDI4U19maXZUOFBHVzhhODZCQTRkQmtULUIwMEJneFVjWVc2NE4yWEtvelEtTnpOejBOYWNxZXBMMFl1NlFr?oc=5",
+   "publicado": "2026-11-27T11:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -832,7 +1030,7 @@
    "em": "2026-11-27T13:23:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:38-03:00",
+ "atualizado_em": "2026-11-27T11:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -847,6 +1045,65 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa dispara e dólar cai abaixo de R$ 5,55: por que Trabuco na Fazenda agrada ao mercado?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVcmttTWVDV3ZxMmFxeU5LcGZpZnRObGRxVUZ2S2ZOQlZpYkV5UDI4U19maXZUOFBHVzhhODZCQTRkQmtULUIwMEJneFVjWVc2NE4yWEtvelEtTnpOejBOYWNxZXBMMFl1NlFr?oc=5",
+   "publicado": "2026-11-27T11:07-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "EUA pressionaram Venezuela e Iraque a deixar Opep, diz agência",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-pressionaram-venezuela-e-iraque-a-deixar-opep-diz-agencia.shtml",
+   "publicado": "2026-11-27T10:57-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai e ativos brasileiros disparam após anúncio de Trabuco como ministro da Fazenda",
+   "fonte": "Bloomberg Línea",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRmFrZkJkWlU2SnpqU2RrWkhEcm5NUmo1Z1pHLS1uQ0JZdzlNdDE4eUFuVkloc1U1X1o0OHBXazJZN3ZBMDAydVl6ZHZ1dV9ZSnhmSTdmbFNmNndaU0F0c09IdGRWOXJLOE9ybEt2c1NmOU9tVGRyc1VXb3pMc3kzQ1hfalVOWExhMEQ1a0JzWWxvRVdkT0lnRWlfb2pQaXp3dTMwU1ZmVlY0LUZSVk9IQUptaHNhc1FaYXM5SFRqUEZtUXFKYldBUlR30gHeAUFVX3lxTE56bk82ZEhyTFFOWHYyTkIwWGk0QV9iX1dJZWZhSTFVeUd3M1Q2SGJGdV9yTmxmWmpPVElRazVsVE1mN2loN0x2T2ZRV29nOVBNOC0zd3VKcG55ZDZac1B2T0FRRlZDU01QWmZoX1ZZT0Njczd4QkowVDFSRHdqOTAyMm9ZZmZUTmlCZzAtbjNXSzJFVU5FUUxfRDVtT0NIOE9sYlpCeFFfSkF2OTBBYzNUclpYejBWeXJGS1J3SHFwTllQUkt1elhUWFYwMGdYb0VJYzJEeEdhS3JkOTZzdw?oc=5",
+   "publicado": "2026-11-27T10:56-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Haddad deseja 'sorte e serenidade' a Trabuco e diz que Fazenda deve mirar programa eleito nas ruas",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/haddad-deseja-sorte-e-serenidade-a-trabuco-e-diz-que-fazenda-deve-mirar-programa-eleito-nas-ruas.shtml",
+   "publicado": "2026-11-27T10:38-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe mais de 3% com Trabuco na Fazenda; ADRs do Bradesco disparam 24%",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOWNXYjkxMTFxMnVCVTg2OHp5RXBYaWdoVVlUazl5SUZ4dXRIQ1o1Ym5ReWZUUTN4dDQ1X0ItUWtlTjFKRThOS0JLeWxxcC14V0FtRlhSTUJGVzh6MXFqYU9PNldiRWxaZV9UNGZzVlFuWDZ6UDNrQ1U5LXRzck50MjdDZWswR3Y5b3JqdmJaODZHUnl0YmQ4MlNlczMtRUJ4NWRNMzBUTjU4WEdqQy1ia0JrZWZhT2FDT293ekdZZllnZk1GdFlreE50dnZPX084b2lwbVZDMDF3UjZjUVhrdtIB7wFBVV95cUxPUkFmbmR2QVRWUHdTcFFNUmdrYk9RNERoaUhlbFg0ZVBzcVppbDdXanRCYkxQYjBzQnZSWW8zZFYxamtWMXpHcjJlelpmR09mX29zTzcxUy1hX2pmRzFTamZUUjNWSk15SlF2bUtKU3pqc3BYc3EtZzJfcTdRMWVtdUN5dDhDM1gtR0FZUGpMeE94QmNaRmVsZ2Q1MlRTaGlDNG5HMzZfLXNtcmtFMG16THRfMjBjMlZGTm54d25YdHprNWNQbXVSRWRZeTVYaFlwT3YxcXAzeUd0VjdjWnNleWVuVTgwZ1l1UzZoTjlhcw?oc=5",
+   "publicado": "2026-11-27T10:37-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
   {
    "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
    "fonte": "CNBC",
@@ -952,45 +1209,10 @@
    ]
   },
   {
-   "titulo": "Ativos brasileiros disparam em NY após escolha de Trabuco; XP e Bradesco saltam 18%",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ativos-brasileiros-disparam-em-ny-apos-escolha-de-trabuco-xp-e-bradesco-saltam-18.shtml",
-   "publicado": "2026-11-27T09:21-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
    "titulo": "Dólar à vista tem forte queda e vai até R$ 5,51 com confirmação de Trabuco na Fazenda",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSEpkYlVqUUNLcEZqc2RuZ29aWThiTjVUWU96UzBZWHlRa2xIcXV3TGNlTjNweVRWMlBsSHU4UzdwN2FSMGVUd1hwSkVYNFRBbm5xMVpzaW5ZMzU2MUJ0NWtUZW9RMW0yVzBRR3YtQ0tSOFVuUjBNQnJDZ2VOdEhIQmpPYl95c0dlVjFUVldvRnhlRmtTcWN2bEhrUFJ6VXJNS1R4ZWZkMFhkazRnN1R5UTV6TS1nOVdZZWxBV0xHT0dXWmxYMEJOZU5KMTJVb255REFTUVZYS3nSAecBQVVfeXFMUFR1OEo4YXgwWXlqNjQ0eU1SZjREdTNHbE93TGV1NlVPNjZNYUtYS1BpWklvVTFFbjJsMlNEeFNaLWVUbXJkR2RkblJLd0lSbWNrTU5ya2FYY19YZUV5U21iWFEtUmZreFBnaEotdERWOGpteF9mWDZBTTdINElZWkgxSUtNT0NRNFNXT2xLNVYxUzltd1ozT0gwTDFsU3V4QVd2eW8ybDJZVWlJb1IyeVR2dHlrSG5OR2pqSUZ4RHdNNmpuOTFyeGhPVFgzRmJnU2pYYmNPMkhaREFQVHd3Yko3WjVwbEYw?oc=5",
    "publicado": "2026-11-27T09:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar cai mais de 4% e chega a R$ 5,48 após confirmação de Trabuco na Fazenda; Bolsa dispara",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-de-quase-4-e-atinge-r-552-apos-confirmacao-de-trabuco-na-fazenda.shtml",
-   "publicado": "2026-11-27T09:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar hoje desaba mais de 3% e flerta com R$ 5,50 com ida de Trabuco para Fazenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOVgyazlobGVfeUluNm5INjc3Y2o2THEtSjFBdWotOGJZRXhHb2Z0TFJncGNKNzNBT2tLTDFMWVpIR3FId1A2U19pcEVMU3kzbHNhV2RzdDF5Z2M3RHoteXhyZUtHU1p5czM5VUM2Z0JIYzRXLU8wbXR4bTdCbFhMaXNrS2hYVV9HX2pKM3JWbmE2cTc4YzVQYmo3ejXSAaIBQVVfeXFMUF9pejkwWmhkRWVudW44TnE5T1JvRklkTGx0Y1pqUy1ZRS1RTG1TQXRDbFdHR1JjRlBJSGZWQmFMZDFwZU1zVDQ2NURYcDVhOHNpTWpwVXRSbkJobC0ybWtTaUwyZGJjUllVMVlKU3N0RGYtQWgtUVNiS0E2cjY0MFgxbk1HUDBCYW5CZzM4X2VQR1lWVDVOZy1ndFRTNmk2cGVn?oc=5",
-   "publicado": "2026-11-27T09:09-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
@@ -1005,31 +1227,6 @@
    "impacto": "alto",
    "ativos": [
     "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Axia Energia (AXIA3), Banco do Brasil (BBAS3), Banco BRB e outros destaques desta sexta-feira (27)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVlFCTFFDbGRKN2xfQjlGdEFhSUUxOE1sdXN6OUdMNFJLY0RZVWRkVl9Ra09HVU5wNGE3ZDNISjE5VnZDckpsalM4ZVFKVFYwaG5PY1U0a044aGJLUXpQNkpCVHN1VVdvT2dsT2JBUWFjR1lwVDF1b1RQSktaMFNwMXk3RllzcFFvTGJqZFRMYjRJaUFVWERLdU12dENfdi1VV2R6ZDJfcGxOVS0tSGJtSHd4T2puOUZoM25VN2dzZlc?oc=5",
-   "publicado": "2026-11-27T09:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AXIA3",
-    "BBAS3"
-   ]
-  },
-  {
-   "titulo": "Dólar despenca a R$ 5,53 após escolha de Trabuco para a Fazenda",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRF9BUGlndXZLTWUxUUhXbzJpUG16aTlhUHJ1MWJwX2pZZU1MTnY4bUJpM2VFU2wzdy1IWlJxSjJWWGlhTVc4OGZYbXBwSXlkMU5CdzNhRDNMaFJ5bDl4X2FGSTJ6Z3dMZi1Pc2hRZHZLUFdTQTN5TWpRSWwxdk5IaFZVSUZ4b0R1bVlYc1Z1a19pTi1yZEZGYVU1RktRbkE0VkRCR0d3?oc=5",
-   "publicado": "2026-11-27T09:06-03:00",
-   "impacto": "medio",
-   "ativos": [
     "WDO"
    ],
    "tickers": []
