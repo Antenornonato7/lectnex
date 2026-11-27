@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T11:45-03:00",
+  "atualizado_em": "2026-11-27T11:48-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -79,7 +79,11 @@
     ],
     [
      "11:30",
-     180016.0
+     179701.0
+    ],
+    [
+     "11:33",
+     179668.0
     ]
    ]
   },
@@ -216,7 +220,11 @@
     ],
     [
      "11:45",
-     5.5775
+     5.5795
+    ],
+    [
+     "11:48",
+     5.5821
     ]
    ]
   },
@@ -560,7 +568,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -1.18,
     "dolar30": 0.54
    },
    {
@@ -1197,7 +1205,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T11:45-03:00",
+ "atualizado_em": "2026-11-27T11:48-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1297,17 +1305,6 @@
    ]
   },
   {
-   "titulo": "Tempo real: Ibovespa recupera os 182 mil pontos com Trabuco no Ministério da Fazenda; veja os destaques desta sexta-feira (27)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nTmtmU2FZZVdPdWFxRkFMdkFudjdIeUJtV1ZwMHhzNnJmLVkzbEZpcGtMNl9KOVNFSXVpb0dRYUFtXzJVc0RJMjhjcGY4M21idmVNdTRWd19KeWswSWJzNTRTWEl6Rmtp?oc=5",
-   "publicado": "2026-11-27T10:30-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Trabuco na Fazenda: Bolsa sobe, dólar e juros caem, mas mercado vê riscos que ameaçam o rali",
    "fonte": "Estadão",
    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOcnNRMDdaZWNTeUdKaWFfZDhDSUtLUUU3Q3VtRDFtVWduQmVHUVU1S3U2dXBnY2pwdm9ETVNLREpQNkpJakNyWVQ3MGNXRjk2bE1pLURra0lseHZlYUlnRHlmUXJFeDJneDJGb0JtdGFmM2RLeDNjQUtONXB6aVp0MnljNTFEQjJ5NXFVSklmVGp0OUdBVk80aFEwWFYtOVFVcTVSQ05sRHBhLU5yd1BZY1VBMjFjWTU4dU9HTEx2YlF4cnV4bF9iR2pYSkZkMTdWcnpTNzZpMFl0ZzFqZ285djREU1R4SGhIUnM2Mw?oc=5",
@@ -1384,6 +1381,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ativos brasileiros disparam em NY após escolha de Trabuco; XP e Bradesco saltam 18%",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/ativos-brasileiros-disparam-em-ny-apos-escolha-de-trabuco-xp-e-bradesco-saltam-18.shtml",
+   "publicado": "2026-11-27T09:21-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   },
   {
    "titulo": "Bolsas da China têm maior alta em mais de dois anos após aval do governo; Nasdaq sobe mais de 3%",
