@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T17:38-03:00",
+  "atualizado_em": "2026-11-27T18:08-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -343,7 +343,7 @@
     ],
     [
      "17:00",
-     176961.0
+     176739.0
     ]
    ]
   },
@@ -760,11 +760,35 @@
     ],
     [
      "17:35",
-     5.531
+     5.5328
     ],
     [
-     "17:38",
-     5.5302
+     "17:40",
+     5.5332
+    ],
+    [
+     "17:45",
+     5.5397
+    ],
+    [
+     "17:50",
+     5.5475
+    ],
+    [
+     "17:55",
+     5.552
+    ],
+    [
+     "18:00",
+     5.5543
+    ],
+    [
+     "18:05",
+     5.5456
+    ],
+    [
+     "18:08",
+     5.5472
     ]
    ]
   },
@@ -1440,8 +1464,36 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": -0.18,
+    "ibov30": -0.3,
     "dolar30": -0.16
+   },
+   {
+    "hora": "17:02",
+    "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WDO",
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.17
+   },
+   {
+    "hora": "17:08",
+    "titulo": "Dólar a R$ 6 preocupa governo, mas Fazenda não vê recessão em 2027, só desaceleração, diz secretária",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLU04a3djTlJvVWpxQmNEdzRjNWc5QnlOOEloR2pvM3pka1RnaWdwVlF2TnY3bHFXa1dxS2N3THpvanFSV0tOT3hZMnBkZWU2d0lYendDeWpnc3BadTJadF9rMWhaaUdRTy1vRE1HZG85SjZpcXVtNnlyQ2VFVHJwU0d0R2xFdl94c1liWDZ0b3Vmc2Q0c280OFRMMkZKSF9xa1dYVmROWmRVWkQ2RVRyT2FWeWdWZDRETHlZS2ZvMHpiU2pCQjlQS1B4NmtFTnVNVmVSR3dsRG4?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.33
    },
    {
     "hora": "17:12",
@@ -1454,7 +1506,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.18
+    "dolar30": 0.24
    },
    {
     "hora": "17:16",
@@ -1467,7 +1519,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.34
    }
   ]
  },
@@ -2310,6 +2362,30 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+   "publicado": "2026-11-27T17:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar a R$ 6 preocupa governo, mas Fazenda não vê recessão em 2027, só desaceleração, diz secretária",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLU04a3djTlJvVWpxQmNEdzRjNWc5QnlOOEloR2pvM3pka1RnaWdwVlF2TnY3bHFXa1dxS2N3THpvanFSV0tOT3hZMnBkZWU2d0lYendDeWpnc3BadTJadF9rMWhaaUdRTy1vRE1HZG85SjZpcXVtNnlyQ2VFVHJwU0d0R2xFdl94c1liWDZ0b3Vmc2Q0c280OFRMMkZKSF9xa1dYVmROWmRVWkQ2RVRyT2FWeWdWZDRETHlZS2ZvMHpiU2pCQjlQS1B4NmtFTnVNVmVSR3dsRG4?oc=5",
+   "publicado": "2026-11-27T17:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar recua para os R$ 5,5156 com efeito Trabuco e acumula queda de 7% na semana",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZXV3bkxHazllTGRiUGs2cjhldTR4N3VMRE0xeUkxQlNFZkxPQlNub25RQUFTWk4yeW1pckR5b1dVdWlxVzhPX3VVNE5BMXlBWk1RdFpTMUJ5QkhMUUdhZTNsM2JtTmNRWXRESkxrdl8wbHJfOUlRX0ZLX2hhVl8xVk81TFZzNnlJX1JZN3BCOWkwSDVlei0yV0xtaUlULW5OZTA4N3hyQ1Fqelo0STNrTHdoVQ?oc=5",
@@ -2328,6 +2404,17 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Vendas do Tesouro Direto registram melhor outubro da história",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/vendas-do-tesouro-direto-registram-melhor-outubro-da-historia",
+   "publicado": "2026-11-27T18:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
    ],
    "tickers": []
   }
@@ -2359,7 +2446,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T17:38-03:00",
+ "atualizado_em": "2026-11-27T18:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2375,6 +2462,17 @@
  ],
  "noticias": [
   {
+   "titulo": "Vendas do Tesouro Direto registram melhor outubro da história",
+   "fonte": "Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/vendas-do-tesouro-direto-registram-melhor-outubro-da-historia",
+   "publicado": "2026-11-27T18:01-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Com ‘efeito Trabuco’, dólar despenca 7% na semana, maior queda desde 2008 para o período",
    "fonte": "Valor",
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNWtnTjdNSWtYTlNkOXN0OTVXOF9RNkw1S2d2ZUNVUHVDNGkwbUFDTEc3SnU5dkJYclpCXzI1anRPN2pvMERQcERfcmM1MzZoNWxQQ0tZOXRfdGpRbE5XZFQwUXd5YXVVVThicHBieDRmbExiQk1YNkZBSDhfSWc2NzU1TXJwQ2Zqb3ZiMU1WY0dXZ3RUcDJMWW9DYWZVeFFMQjY2UnVxRnpyQ2lrX0xqeWQtdWlLdF9OUW5TODdwdE5tM1BUQzZTWWNodG5FYmwzM0w5S21TY0tJcTJKdmg5cWhn0gHwAUFVX3lxTE44RTZhMTVnMU9sVlZ5U0gwQUI2aG1XWEdVUzdmbVJJQzJudlhXZEQwWjRGT29abThxYTY4ZlZaYld3NzZ4bXQ1LUkwNnF2M0VLZTlPNEk4U0VlZ0VBNW4wNmRzbF9PSy1nejNseFhyc1pnN2hpZTZmT1JyeFI2RURTNUU5ODhlTkRsUVZrRWZrVGZMVXd1dGVtTzFmclJTQ2hLNV92TjFGS0ZtSnFJbjQzX2c5clVxV3MtYlY0SzhJaUVCbGJSbFdaV0cxVng3bm9kN3RmVU1ORkpiTmNERmR0VU9oUVdSUmY1ZTFtcUNjag?oc=5",
@@ -2382,6 +2480,30 @@
    "impacto": "medio",
    "ativos": [
     "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar a R$ 6 preocupa governo, mas Fazenda não vê recessão em 2027, só desaceleração, diz secretária",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPLU04a3djTlJvVWpxQmNEdzRjNWc5QnlOOEloR2pvM3pka1RnaWdwVlF2TnY3bHFXa1dxS2N3THpvanFSV0tOT3hZMnBkZWU2d0lYendDeWpnc3BadTJadF9rMWhaaUdRTy1vRE1HZG85SjZpcXVtNnlyQ2VFVHJwU0d0R2xFdl94c1liWDZ0b3Vmc2Q0c280OFRMMkZKSF9xa1dYVmROWmRVWkQ2RVRyT2FWeWdWZDRETHlZS2ZvMHpiU2pCQjlQS1B4NmtFTnVNVmVSR3dsRG4?oc=5",
+   "publicado": "2026-11-27T17:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar perto de R$ 8 e fuga de US$ 460 bi: gestora vê cenário sombrio no Brasil sem ajuste fiscal",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSTdnSWxONmIxbU9wQm1LakZ6ZW9PT2xRNUpuS1djTERFZ3ZIMEZ3ZHB4SE9qLW1ITHM4RVJweXJUQ01fcmlEejNKdXE5NlBZUlhBSmZGZG5hc3FfZGNZSkFJcS1tUEtuMFFNcjg0MTgydzkzbl9GSU5WamxZZWJGOWZqQi1Mc0I5dG9UT1QweFNjVzgyUFRpSkM3bG1EX1RDc2NjSlZiSQ?oc=5",
+   "publicado": "2026-11-27T17:02-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
    ],
    "tickers": []
   },
