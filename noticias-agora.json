@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:10-03:00",
+  "atualizado_em": "2026-11-27T10:13-03:00",
   "dolar": {
    "anterior": 5.6513,
    "pontos": [
@@ -59,7 +59,11 @@
     ],
     [
      "10:10",
-     5.4978
+     5.4926
+    ],
+    [
+     "10:13",
+     5.4929
     ]
    ]
   },
@@ -192,7 +196,20 @@
     "tickers": [
      "BBDC4"
     ],
-    "dolar30": -0.19
+    "dolar30": -0.28
+   },
+   {
+    "hora": "09:47",
+    "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "dolar30": -0.3
    },
    {
     "hora": "09:51",
@@ -589,6 +606,18 @@
    ]
   },
   {
+   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+   "publicado": "2026-11-27T09:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Rendimento real do trabalhador cresceu 3,5% em um ano",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/rendimento-real-do-trabalhador-cresceu-35-em-um-ano",
@@ -622,7 +651,7 @@
    "em": "2026-11-27T12:48:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:10-03:00",
+ "atualizado_em": "2026-11-27T10:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -644,6 +673,18 @@
    "publicado": "2026-11-27T09:51-03:00",
    "impacto": "medio",
    "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+   "publicado": "2026-11-27T09:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
     "WDO"
    ],
    "tickers": []
