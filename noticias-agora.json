@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T13:20-03:00",
+  "atualizado_em": "2026-11-27T13:23-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -155,7 +155,11 @@
     ],
     [
      "13:05",
-     177166.0
+     177036.0
+    ],
+    [
+     "13:08",
+     177035.0
     ]
    ]
   },
@@ -368,7 +372,11 @@
     ],
     [
      "13:20",
-     5.5569
+     5.553
+    ],
+    [
+     "13:23",
+     5.5502
     ]
    ]
   },
@@ -824,7 +832,7 @@
      "PETR4"
     ],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.04
    },
    {
     "hora": "13:05",
@@ -852,6 +860,22 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "13:13",
+    "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYnVOMl9LdVc3VmlLczZnNTdvc2RXM3Y3ZGt1TUQyd2NwUzF0SHVhNUx3SUQtREVJcURGNGNYTGt1SmVXcXhYdmlfSllDX1lzNVVPNV9fOVdYc184UVd0cTVycDE0dmpiLU1EY3lrTWJLM2NhYUMwdXpxcWRTd3RRRnJDSmdrb2wtM3VvRnBJS0g2ejdFa2NOYVhOcVFGNUwwc2FPUjQ3cEhDWmxRUDZ2Z21ENXFxM0V3LUNyc2hreklZa3djS0hXc2tkdWtidUotVnV3?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "HAPV3",
+     "PETR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1528,6 +1552,20 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYnVOMl9LdVc3VmlLczZnNTdvc2RXM3Y3ZGt1TUQyd2NwUzF0SHVhNUx3SUQtREVJcURGNGNYTGt1SmVXcXhYdmlfSllDX1lzNVVPNV9fOVdYc184UVd0cTVycDE0dmpiLU1EY3lrTWJLM2NhYUMwdXpxcWRTd3RRRnJDSmdrb2wtM3VvRnBJS0g2ejdFa2NOYVhOcVFGNUwwc2FPUjQ3cEhDWmxRUDZ2Z21ENXFxM0V3LUNyc2hreklZa3djS0hXc2tkdWtidUotVnV3?oc=5",
+   "publicado": "2026-11-27T13:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3",
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1557,7 +1595,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T13:20-03:00",
+ "atualizado_em": "2026-11-27T13:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1571,6 +1609,20 @@
  ],
  "noticias": [
   {
+   "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYnVOMl9LdVc3VmlLczZnNTdvc2RXM3Y3ZGt1TUQyd2NwUzF0SHVhNUx3SUQtREVJcURGNGNYTGt1SmVXcXhYdmlfSllDX1lzNVVPNV9fOVdYc184UVd0cTVycDE0dmpiLU1EY3lrTWJLM2NhYUMwdXpxcWRTd3RRRnJDSmdrb2wtM3VvRnBJS0g2ejdFa2NOYVhOcVFGNUwwc2FPUjQ3cEhDWmxRUDZ2Z21ENXFxM0V3LUNyc2hreklZa3djS0hXc2tkdWtidUotVnV3?oc=5",
+   "publicado": "2026-11-27T13:13-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3",
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "Ibovespa reduz fôlego após euforia com Trabuco no comando da Fazenda; entenda",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQX1RHMEo3eE1NSGlucnJGY3lFWWZITlVzeGVBRXBkend0ZVlBN29lRC1QckFvdjdEanZXeVpOc2ZfaHk4TU9VZTBUdHFFZENQX19pTXVMcEJGbmZWeGFXTGhpeWxkeFVxQThIWnEwQ0MtekdHMjJiMVVzd0FPMEJ3OWVveEYwbWxVNkw3UV9PZDA5Vi1hV1BzR0lCSDEtTXFXcTRWRHhNVQ?oc=5",
@@ -1580,20 +1632,6 @@
     "WIN"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZEN5YWJuTi1YaTRpRFdMbGRtNzc4bUN2Rk0wbXdfenVoWGJ5aEFBVXpMU2twVGk4LTk2LVVfWUtzM2x2cWNpQkpmUHcwLWZrQUFGVzhaX3VBc0NOVGkzUDJrR3o3Q0ZXM2tIbGFxSmpQOXdTTHUta3o5ellFTlE4eVJGcVJxY0lZQlltVnRFREpsWlp6QjlQLTZ3NC1JTUswcWpveU1fdWhlMF9EUElYTDZ4Qms3bC1ZMXpTczdXWG5raFRCYmxtZdIBzgFBVV95cUxOeHMzeHRiVWtjM0xxaUd5VmVhZVVTcFJ5cmp6bGJZMXN6X3VyNE5ES2FybHRBUExrTm9nTDVwQTk1WklacnhsU1ZPbUIzM1V1VEJVRFB6b09DcWdaaS1MQ3F0OENSY0ktMV9tVFhFcFNZNmcwWXB2MXlTRmVuNUtYWW9tM3I4NGtOUjlKanlJUTBwdXc5bXRwZkpFTWwzVWJGbWNwRHQzNndjdkVSMDRuVmhPUTZRXzBkZUY0c2RLN2ZaT1hPcUNhNTl3RzM0UQ?oc=5",
-   "publicado": "2026-11-27T13:05-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "HAPV3",
-    "PETR4"
-   ]
   },
   {
    "titulo": "Por que Petrobras (PETR4) recua em dia de altas no Ibovespa?",
@@ -1675,29 +1713,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa salta mais de 3% e recupera os 182 mil pontos; 5 coisas para saber antes de investir hoje (27)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObEJVRk5Wc19kaVhDeE5GSW5EZk1yRnRwN1Y4d3JPM2FkZUtWckFZMXBPMUNsQkNicFZqRHE2NGkxQVJjTlZub09CU0t4eEhlc2E1eEhpZkFnWWw0WEVBY0JIUWVET184aHpsMjYzWUxQTDZmY2duc3VkeTd1UGl0N2xZOHhVY1c0VUJ0b3E3VmdESjUzNElWQ3pnQ0FVSUprYTd2UVl5eDZpcVVHY2tVWGdlVTlaUWNKX1dYbGpMeUptbmxEMmNYUnBFSVZ6Uk1Y?oc=5",
-   "publicado": "2026-11-27T10:23-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
-   "publicado": "2026-11-27T10:21-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   }
