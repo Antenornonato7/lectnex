@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T11:15-03:00",
+  "atualizado_em": "2026-11-27T11:18-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -55,7 +55,11 @@
     ],
     [
      "11:00",
-     181910.0
+     181774.0
+    ],
+    [
+     "11:03",
+     181669.0
     ]
    ]
   },
@@ -168,7 +172,11 @@
     ],
     [
      "11:15",
-     5.5301
+     5.5265
+    ],
+    [
+     "11:18",
+     5.5283
     ]
    ]
   },
@@ -443,7 +451,7 @@
     "tickers": [
      "BBDC4"
     ],
-    "ibov30": null,
+    "ibov30": -0.24,
     "dolar30": -0.02
    },
    {
@@ -456,7 +464,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.24,
     "dolar30": -0.02
    },
    {
@@ -1069,7 +1077,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T11:15-03:00",
+ "atualizado_em": "2026-11-27T11:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1156,6 +1164,17 @@
    ]
   },
   {
+   "titulo": "Tempo real: Ibovespa recupera os 182 mil pontos com Trabuco no Ministério da Fazenda; veja os destaques desta sexta-feira (27)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nTmtmU2FZZVdPdWFxRkFMdkFudjdIeUJtV1ZwMHhzNnJmLVkzbEZpcGtMNl9KOVNFSXVpb0dRYUFtXzJVc0RJMjhjcGY4M21idmVNdTRWd19KeWswSWJzNTRTWEl6Rmtp?oc=5",
+   "publicado": "2026-11-27T10:30-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
    "fonte": "CNBC",
    "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
@@ -1228,17 +1247,6 @@
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/tributaria-6x1-e-tarifaco-impulsionam-salario-de-lobistas-no-brasil.shtml",
    "publicado": "2026-11-27T10:10-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Rendimento real do trabalhador cresceu 3,5% em um ano",
-   "fonte": "Agência Brasil",
-   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/rendimento-real-do-trabalhador-cresceu-35-em-um-ano",
-   "publicado": "2026-11-27T09:51-03:00",
    "impacto": "medio",
    "ativos": [
     "WDO"
