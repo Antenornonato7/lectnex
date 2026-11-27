@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T11:10-03:00",
+  "atualizado_em": "2026-11-27T11:13-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -51,7 +51,11 @@
     ],
     [
      "10:55",
-     181628.0
+     182077.0
+    ],
+    [
+     "10:58",
+     182144.0
     ]
    ]
   },
@@ -160,7 +164,11 @@
     ],
     [
      "11:10",
-     5.534
+     5.532
+    ],
+    [
+     "11:13",
+     5.533
     ]
    ]
   },
@@ -420,7 +428,7 @@
      "WDO"
     ],
     "tickers": [],
-    "ibov30": -0.41,
+    "ibov30": -0.17,
     "dolar30": 0.15
    },
    {
@@ -1061,7 +1069,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T11:10-03:00",
+ "atualizado_em": "2026-11-27T11:13-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1076,18 +1084,6 @@
   "Valor"
  ],
  "noticias": [
-  {
-   "titulo": "Ibovespa dispara e dólar cai abaixo de R$ 5,55: por que Trabuco na Fazenda agrada ao mercado?",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVcmttTWVDV3ZxMmFxeU5LcGZpZnRObGRxVUZ2S2ZOQlZpYkV5UDI4U19maXZUOFBHVzhhODZCQTRkQmtULUIwMEJneFVjWVc2NE4yWEtvelEtTnpOejBOYWNxZXBMMFl1NlFr?oc=5",
-   "publicado": "2026-11-27T11:07-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
   {
    "titulo": "BC pede projeções de impacto da reforma tributária na inflação antes do próximo Copom",
    "fonte": "Valor",
@@ -1250,6 +1246,17 @@
    "tickers": [
     "BBDC4"
    ]
+  },
+  {
+   "titulo": "Dólar à vista tem forte queda e vai até R$ 5,51 com confirmação de Trabuco na Fazenda",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVHU4SjhheDBZeWo2NDR5TVJmNER1M0dsT3dMZXU2VU82Nk1hS1hLUGlaSW9VMUVuMmwyU0R4U1otZVRtcmRHZGRuUkt3SVJtY2tNTnJrYVhjX1hlRXlTbWJYUS1SZmt4UGdoSi10RFY4am14X2ZYNkFNN0g0SVlaSDFJS01PQ1E0U1dPbEs1VjFTOW13WjNPSDBMMWxTdXhBV3Z5bzJsMllVaUlvUjJ5VHZ0eWtIbk5HampJRnhEd002am45MXJ4aE9UWDNGYmdTalhiY08ySFpEQVBUd3diSjdaNXBsRjDSAecBQVVfeXFMUFR1OEo4YXgwWXlqNjQ0eU1SZjREdTNHbE93TGV1NlVPNjZNYUtYS1BpWklvVTFFbjJsMlNEeFNaLWVUbXJkR2RkblJLd0lSbWNrTU5ya2FYY19YZUV5U21iWFEtUmZreFBnaEotdERWOGpteF9mWDZBTTdINElZWkgxSUtNT0NRNFNXT2xLNVYxUzltd1ozT0gwTDFsU3V4QVd2eW8ybDJZVWlJb1IyeVR2dHlrSG5OR2pqSUZ4RHdNNmpuOTFyeGhPVFgzRmJnU2pYYmNPMkhaREFQVHd3Yko3WjVwbEYw?oc=5",
+   "publicado": "2026-11-27T09:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   },
   {
    "titulo": "Bolsas da China têm maior alta em mais de dois anos após aval do governo; Nasdaq sobe mais de 3%",
