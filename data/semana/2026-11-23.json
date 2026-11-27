@@ -312,7 +312,12 @@
     "wdo": "volatil"
    },
    "nota": "Superávit esperado segundo o InfoMoney; número entra no debate fiscal com a chegada de Trabuco à Fazenda.",
-   "tipo": "resultado-primario"
+   "tipo": "resultado-primario",
+   "resultado": "superávit de R$ 52,3 bi",
+   "surpresa": {
+    "direcao": "acima",
+    "reacao": "Superávit maior que o esperado tende a aliviar o prêmio de risco fiscal, o que costuma favorecer queda nos vértices longos do DI e algum alívio no dólar."
+   }
   },
   {
    "data": "2026-11-27",
@@ -326,7 +331,12 @@
    "nota": "Inflação no atacado; corrige contratos de aluguel. Expectativa de alta de 0,94%, segundo o InfoMoney.",
    "tipo": "igp-m",
    "anterior": "1,47% (out)",
-   "consenso": "0,94%"
+   "consenso": "0,94%",
+   "resultado": "1,24%",
+   "surpresa": {
+    "direcao": "acima",
+    "reacao": "Inflação no atacado acima do esperado costuma pressionar as taxas curtas do DI, com efeito em geral pequeno sobre WIN e WDO por ser indicador de menor peso."
+   }
   },
   {
    "data": "2026-11-27",
@@ -340,7 +350,8 @@
    },
    "nota": "Projeção de 5,1%, segundo o InfoMoney. Mercado de trabalho apertado sustenta a inflação de serviços e mexe nos vértices do DI.",
    "tipo": "pnad",
-   "consenso": "5,1%"
+   "consenso": "5,1%",
+   "resultado": "5,1%"
   },
   {
    "data": "2026-11-27",
