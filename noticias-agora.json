@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:43-03:00",
+  "atualizado_em": "2026-11-27T10:45-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -27,11 +27,11 @@
     ],
     [
      "10:25",
-     182739.0
+     182381.0
     ],
     [
-     "10:28",
-     182691.0
+     "10:30",
+     182107.0
     ]
    ]
   },
@@ -116,11 +116,11 @@
     ],
     [
      "10:40",
-     5.5329
+     5.532
     ],
     [
-     "10:43",
-     5.531
+     "10:45",
+     5.5265
     ]
    ]
   },
@@ -316,7 +316,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.57
+    "dolar30": 0.55
    },
    {
     "hora": "10:20",
@@ -329,7 +329,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.14
    },
    {
     "hora": "10:23",
@@ -367,6 +367,21 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:37",
+    "titulo": "Ibovespa sobe mais de 3% com Trabuco na Fazenda; ADRs do Bradesco disparam 24%",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOWNXYjkxMTFxMnVCVTg2OHp5RXBYaWdoVVlUazl5SUZ4dXRIQ1o1Ym5ReWZUUTN4dDQ1X0ItUWtlTjFKRThOS0JLeWxxcC14V0FtRlhSTUJGVzh6MXFqYU9PNldiRWxaZV9UNGZzVlFuWDZ6UDNrQ1U5LXRzck50MjdDZWswR3Y5b3JqdmJaODZHUnl0YmQ4MlNlczMtRUJ4NWRNMzBUTjU4WEdqQy1ia0JrZWZhT2FDT293ekdZZllnZk1GdFlreE50dnZPX084b2lwbVZDMDF3UjZjUVhrdtIB7wFBVV95cUxPUkFmbmR2QVRWUHdTcFFNUmdrYk9RNERoaUhlbFg0ZVBzcVppbDdXanRCYkxQYjBzQnZSWW8zZFYxamtWMXpHcjJlelpmR09mX29zTzcxUy1hX2pmRzFTamZUUjNWSk15SlF2bUtKU3pqc3BYc3EtZzJfcTdRMWVtdUN5dDhDM1gtR0FZUGpMeE94QmNaRmVsZ2Q1MlRTaGlDNG5HMzZfLXNtcmtFMG16THRfMjBjMlZGTm54d25YdHprNWNQbXVSRWRZeTVYaFlwT3YxcXAzeUd0VjdjWnNleWVuVTgwZ1l1UzZoTjlhcw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "BBDC4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -840,6 +855,19 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa sobe mais de 3% com Trabuco na Fazenda; ADRs do Bradesco disparam 24%",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOWNXYjkxMTFxMnVCVTg2OHp5RXBYaWdoVVlUazl5SUZ4dXRIQ1o1Ym5ReWZUUTN4dDQ1X0ItUWtlTjFKRThOS0JLeWxxcC14V0FtRlhSTUJGVzh6MXFqYU9PNldiRWxaZV9UNGZzVlFuWDZ6UDNrQ1U5LXRzck50MjdDZWswR3Y5b3JqdmJaODZHUnl0YmQ4MlNlczMtRUJ4NWRNMzBUTjU4WEdqQy1ia0JrZWZhT2FDT293ekdZZllnZk1GdFlreE50dnZPX084b2lwbVZDMDF3UjZjUVhrdtIB7wFBVV95cUxPUkFmbmR2QVRWUHdTcFFNUmdrYk9RNERoaUhlbFg0ZVBzcVppbDdXanRCYkxQYjBzQnZSWW8zZFYxamtWMXpHcjJlelpmR09mX29zTzcxUy1hX2pmRzFTamZUUjNWSk15SlF2bUtKU3pqc3BYc3EtZzJfcTdRMWVtdUN5dDhDM1gtR0FZUGpMeE94QmNaRmVsZ2Q1MlRTaGlDNG5HMzZfLXNtcmtFMG16THRfMjBjMlZGTm54d25YdHprNWNQbXVSRWRZeTVYaFlwT3YxcXAzeUd0VjdjWnNleWVuVTgwZ1l1UzZoTjlhcw?oc=5",
+   "publicado": "2026-11-27T10:37-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
   }
  ],
  "enviadas": [
@@ -864,7 +892,7 @@
    "em": "2026-11-27T13:23:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:43-03:00",
+ "atualizado_em": "2026-11-27T10:45-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -879,6 +907,19 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa sobe mais de 3% com Trabuco na Fazenda; ADRs do Bradesco disparam 24%",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOWNXYjkxMTFxMnVCVTg2OHp5RXBYaWdoVVlUazl5SUZ4dXRIQ1o1Ym5ReWZUUTN4dDQ1X0ItUWtlTjFKRThOS0JLeWxxcC14V0FtRlhSTUJGVzh6MXFqYU9PNldiRWxaZV9UNGZzVlFuWDZ6UDNrQ1U5LXRzck50MjdDZWswR3Y5b3JqdmJaODZHUnl0YmQ4MlNlczMtRUJ4NWRNMzBUTjU4WEdqQy1ia0JrZWZhT2FDT293ekdZZllnZk1GdFlreE50dnZPX084b2lwbVZDMDF3UjZjUVhrdtIB7wFBVV95cUxPUkFmbmR2QVRWUHdTcFFNUmdrYk9RNERoaUhlbFg0ZVBzcVppbDdXanRCYkxQYjBzQnZSWW8zZFYxamtWMXpHcjJlelpmR09mX29zTzcxUy1hX2pmRzFTamZUUjNWSk15SlF2bUtKU3pqc3BYc3EtZzJfcTdRMWVtdUN5dDhDM1gtR0FZUGpMeE94QmNaRmVsZ2Q1MlRTaGlDNG5HMzZfLXNtcmtFMG16THRfMjBjMlZGTm54d25YdHprNWNQbXVSRWRZeTVYaFlwT3YxcXAzeUd0VjdjWnNleWVuVTgwZ1l1UzZoTjlhcw?oc=5",
+   "publicado": "2026-11-27T10:37-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "BBDC4"
+   ]
+  },
   {
    "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
    "fonte": "CNBC",
@@ -1051,20 +1092,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Axia Energia (AXIA3), Banco do Brasil (BBAS3), Banco BRB e outros destaques desta sexta-feira (27)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVlFCTFFDbGRKN2xfQjlGdEFhSUUxOE1sdXN6OUdMNFJLY0RZVWRkVl9Ra09HVU5wNGE3ZDNISjE5VnZDckpsalM4ZVFKVFYwaG5PY1U0a044aGJLUXpQNkpCVHN1VVdvT2dsT2JBUWFjR1lwVDF1b1RQSktaMFNwMXk3RllzcFFvTGJqZFRMYjRJaUFVWERLdU12dENfdi1VV2R6ZDJfcGxOVS0tSGJtSHd4T2puOUZoM25VN2dzZlc?oc=5",
-   "publicado": "2026-11-27T09:08-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AXIA3",
-    "BBAS3"
-   ]
   }
  ]
 }
