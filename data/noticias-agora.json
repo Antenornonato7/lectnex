@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T13:38-03:00",
+  "atualizado_em": "2026-11-27T14:08-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -167,11 +167,35 @@
     ],
     [
      "13:20",
-     177032.0
+     177006.0
     ],
     [
-     "13:23",
-     177063.0
+     "13:25",
+     176839.0
+    ],
+    [
+     "13:30",
+     177114.0
+    ],
+    [
+     "13:35",
+     177095.0
+    ],
+    [
+     "13:40",
+     176901.0
+    ],
+    [
+     "13:45",
+     176695.0
+    ],
+    [
+     "13:50",
+     176701.0
+    ],
+    [
+     "13:53",
+     176753.0
     ]
    ]
   },
@@ -396,11 +420,35 @@
     ],
     [
      "13:35",
-     5.5349
+     5.5415
     ],
     [
-     "13:38",
-     5.5364
+     "13:40",
+     5.5319
+    ],
+    [
+     "13:45",
+     5.5387
+    ],
+    [
+     "13:50",
+     5.543
+    ],
+    [
+     "13:55",
+     5.5338
+    ],
+    [
+     "14:00",
+     5.5325
+    ],
+    [
+     "14:05",
+     5.5302
+    ],
+    [
+     "14:08",
+     5.5312
     ]
    ]
   },
@@ -855,7 +903,7 @@
     "tickers": [
      "PETR4"
     ],
-    "ibov30": -0.23,
+    "ibov30": -0.36,
     "dolar30": -0.03
    },
    {
@@ -871,7 +919,7 @@
      "HAPV3",
      "PETR4"
     ],
-    "ibov30": null,
+    "ibov30": 0.08,
     "dolar30": -0.26
    },
    {
@@ -884,8 +932,8 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": -0.35
+    "ibov30": 0.02,
+    "dolar30": -0.23
    },
    {
     "hora": "13:13",
@@ -900,8 +948,36 @@
      "HAPV3",
      "PETR4"
     ],
+    "ibov30": -0.09,
+    "dolar30": -0.41
+   },
+   {
+    "hora": "13:48",
+    "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bancos-estrangeiros-elogiam-trabuco-e-condicionam-melhora-fiscal-a-autonomia-dele-na-fazenda.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
     "ibov30": null,
-    "dolar30": -0.32
+    "dolar30": null
+   },
+   {
+    "hora": "14:06",
+    "titulo": "Pluxee e Petrobras integram grupo sobre segurança alimentar de trabalhadores na ONU",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pluxee-e-petrobras-integram-grupo-sobre-seguranca-alimentar-de-trabalhadores-na-onu.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1590,6 +1666,30 @@
     "HAPV3",
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bancos-estrangeiros-elogiam-trabuco-e-condicionam-melhora-fiscal-a-autonomia-dele-na-fazenda.shtml",
+   "publicado": "2026-11-27T13:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Pluxee e Petrobras integram grupo sobre segurança alimentar de trabalhadores na ONU",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pluxee-e-petrobras-integram-grupo-sobre-seguranca-alimentar-de-trabalhadores-na-onu.shtml",
+   "publicado": "2026-11-27T14:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1619,7 +1719,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T13:38-03:00",
+ "atualizado_em": "2026-11-27T14:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1632,6 +1732,45 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Pluxee e Petrobras integram grupo sobre segurança alimentar de trabalhadores na ONU",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pluxee-e-petrobras-integram-grupo-sobre-seguranca-alimentar-de-trabalhadores-na-onu.shtml",
+   "publicado": "2026-11-27T14:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Petrobras e Vale derrubam ritmo do Ibovespa, enquanto dólar segue abaixo de R$ 5,56",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVcmttTWVDV3ZxMmFxeU5LcGZpZnRObGRxVUZ2S2ZOQlZpYkV5UDI4U19maXZUOFBHVzhhODZCQTRkQmtULUIwMEJneFVjWVc2NE4yWEtvelEtTnpOejBOYWNxZXBMMFl1NlFr?oc=5",
+   "publicado": "2026-11-27T13:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
+   "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bancos-estrangeiros-elogiam-trabuco-e-condicionam-melhora-fiscal-a-autonomia-dele-na-fazenda.shtml",
+   "publicado": "2026-11-27T13:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
    "fonte": "Estadão",
@@ -1691,54 +1830,6 @@
    "tickers": [
     "PETR4"
    ]
-  },
-  {
-   "titulo": "Secretário do Tesouro diz esperar envolvimento de Trabuco em novas medidas fiscais",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQblBjd3NSQjhrUndKZnExSjhyRlQtVXc1X2hpX09sZUxTUG8yZ2VEMk5RcEFhWHlZNW9PTkFyZTdPa1VSQ3lHUzUwQ3hudkJqcnVCNTdJYTRfNDV6NE1EWkI2R185c05tUTIyVFlvQi1Tc1EtRC1wTHhBX0ZfNXBMbVRqQ1Btd3hNQUphLThlM3FxSHJEZFdCVHRzM25vSGxiXzFJVXdlb2RDdmdzWElrT2JScXBkLWRUdnc?oc=5",
-   "publicado": "2026-11-27T11:59-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Dólar cai a R$ 5,74 e Ibovespa dispara 6,07% após anúncio de Trabuco",
-   "fonte": "Agência Brasil",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ1k0cE9OLVdLOHl4eWlqX3dTd2l4TmVZUU4yNlVQWHhQOVRJRXNhdUNHdmhOOUdjaS1IYWs1b2YwR2V6R0lyWXNCS3NkRXl4SHNiVjRiMGxoR09WXzRWVTVmZDdUS2E3c3hqYk0yV28wQVhnVEcwZlNBT0NreFlNWHJyb2ltbXJUZWhaQVBrYmtHSkg1WTB6dVdBSWxKcE1wNHpxSTI1WUt0dmVBMHg1Xy1vbk1sMVZsVW9EalBSM21NWUNiOUw0dHFWc0FteFI5NWtMcWRTVQ?oc=5",
-   "publicado": "2026-11-27T11:42-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Apenas 9 ações do Ibovespa caem nesta 6ª; Suzano lidera perdas",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRzNETHc0YXd4ek9qLWM5OS1LVDdjX1AxaTdvT3RlR1cxX3FoVEF5SnQ4ZFA4TEVMX29BS0ZDeHpvUGlRd001N0hqY0FwOHpybS1aTmtTUVFnQ0pGQWdHazFoRUlSTGhEWmpTVzZwTDRieXl5TU0wM19iaGROclhadVhaQdIBiAFBVV95cUxNNDlNQWlDak9ucWYzM2M5X0d3STZMb1JPRnNEcTBpUU9HSjJuOVhpam9lUmFlWXg0a2Q0SlZtXzB3aVdJbE8tWmQ4aTRfWDNqT2FWMm84Z3ZHWERNTmNSODE4NzdidnBqVU5BR1F4dUFuRGdWVGthOE9LZkZ6cXBfVE4tTEZXbnhG?oc=5",
-   "publicado": "2026-11-27T11:40-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "SUZB3"
-   ]
-  },
-  {
-   "titulo": "EUA pressionaram Venezuela e Iraque a deixar Opep, diz agência",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/eua-pressionaram-venezuela-e-iraque-a-deixar-opep-diz-agencia.shtml",
-   "publicado": "2026-11-27T10:57-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
