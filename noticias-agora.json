@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T17:13-03:00",
+  "atualizado_em": "2026-11-27T17:15-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -339,7 +339,11 @@
     ],
     [
      "16:55",
-     177445.0
+     177375.0
+    ],
+    [
+     "17:00",
+     177478.0
     ]
    ]
   },
@@ -736,11 +740,11 @@
     ],
     [
      "17:10",
-     5.5145
+     5.5202
     ],
     [
-     "17:13",
-     5.5147
+     "17:15",
+     5.5202
     ]
    ]
   },
@@ -1403,8 +1407,21 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.11,
     "dolar30": -0.16
+   },
+   {
+    "hora": "17:12",
+    "titulo": "Dólar recua para os R$ 5,5156 com efeito Trabuco e acumula queda de 7% na semana",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZXV3bkxHazllTGRiUGs2cjhldTR4N3VMRE0xeUkxQlNFZkxPQlNub25RQUFTWk4yeW1pckR5b1dVdWlxVzhPX3VVNE5BMXlBWk1RdFpTMUJ5QkhMUUdhZTNsM2JtTmNRWXRESkxrdl8wbHJfOUlRX0ZLX2hhVl8xVk81TFZzNnlJX1JZN3BCOWkwSDVlei0yV0xtaUlULW5OZTA4N3hyQ1Fqelo0STNrTHdoVQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -2234,6 +2251,17 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar recua para os R$ 5,5156 com efeito Trabuco e acumula queda de 7% na semana",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZXV3bkxHazllTGRiUGs2cjhldTR4N3VMRE0xeUkxQlNFZkxPQlNub25RQUFTWk4yeW1pckR5b1dVdWlxVzhPX3VVNE5BMXlBWk1RdFpTMUJ5QkhMUUdhZTNsM2JtTmNRWXRESkxrdl8wbHJfOUlRX0ZLX2hhVl8xVk81TFZzNnlJX1JZN3BCOWkwSDVlei0yV0xtaUlULW5OZTA4N3hyQ1Fqelo0STNrTHdoVQ?oc=5",
+   "publicado": "2026-11-27T17:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -2263,7 +2291,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T17:13-03:00",
+ "atualizado_em": "2026-11-27T17:15-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2273,9 +2301,20 @@
   "Estadão",
   "Exame",
   "Folha",
-  "InfoMoney"
+  "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Dólar recua para os R$ 5,5156 com efeito Trabuco e acumula queda de 7% na semana",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZXV3bkxHazllTGRiUGs2cjhldTR4N3VMRE0xeUkxQlNFZkxPQlNub25RQUFTWk4yeW1pckR5b1dVdWlxVzhPX3VVNE5BMXlBWk1RdFpTMUJ5QkhMUUdhZTNsM2JtTmNRWXRESkxrdl8wbHJfOUlRX0ZLX2hhVl8xVk81TFZzNnlJX1JZN3BCOWkwSDVlei0yV0xtaUlULW5OZTA4N3hyQ1Fqelo0STNrTHdoVQ?oc=5",
+   "publicado": "2026-11-27T17:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa destoa do otimismo com Trabuco e perde força; dólar cai mais de 3% e fica abaixo de R$ 5,53",
    "fonte": "Exame",
@@ -2336,19 +2375,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "B3 fecha acordo com bancos para criar stablecoin em reais",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-fecha-acordo-com-bancos-para-criar-stablecoin-em-reais.shtml",
-   "publicado": "2026-11-27T14:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
-   ]
   }
  ]
 }
