@@ -1,7 +1,36 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:08-03:00",
+  "atualizado_em": "2026-11-27T10:38-03:00",
+  "ibov": {
+   "anterior": 176799.84,
+   "pontos": [
+    [
+     "10:00",
+     177006.0
+    ],
+    [
+     "10:05",
+     183151.0
+    ],
+    [
+     "10:10",
+     183289.0
+    ],
+    [
+     "10:15",
+     182685.0
+    ],
+    [
+     "10:20",
+     182745.0
+    ],
+    [
+     "10:23",
+     182703.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.6513,
    "pontos": [
@@ -55,11 +84,35 @@
     ],
     [
      "10:05",
-     5.4975
+     5.4954
     ],
     [
-     "10:08",
-     5.4999
+     "10:10",
+     5.5016
+    ],
+    [
+     "10:15",
+     5.5062
+    ],
+    [
+     "10:20",
+     5.519
+    ],
+    [
+     "10:25",
+     5.5301
+    ],
+    [
+     "10:30",
+     5.5396
+    ],
+    [
+     "10:35",
+     5.5338
+    ],
+    [
+     "10:38",
+     5.5362
     ]
    ]
   },
@@ -74,6 +127,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -86,6 +140,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -101,6 +156,7 @@
      "AXIA3",
      "BBAS3"
     ],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -114,6 +170,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -127,6 +184,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -139,6 +197,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -151,6 +210,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.45
    },
    {
@@ -163,6 +223,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.45
    },
    {
@@ -177,6 +238,7 @@
     "tickers": [
      "BBDC4"
     ],
+    "ibov30": null,
     "dolar30": -0.66
    },
    {
@@ -192,7 +254,22 @@
     "tickers": [
      "BBDC4"
     ],
-    "dolar30": null
+    "ibov30": null,
+    "dolar30": -0.12
+   },
+   {
+    "hora": "09:47",
+    "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+    "fonte": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": -0.06
    },
    {
     "hora": "09:51",
@@ -204,6 +281,72 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.22
+   },
+   {
+    "hora": "10:10",
+    "titulo": "Tributária, 6x1 e tarifaço impulsionam salário de lobistas no Brasil",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/tributaria-6x1-e-tarifaco-impulsionam-salario-de-lobistas-no-brasil.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.59
+   },
+   {
+    "hora": "10:12",
+    "titulo": "Ibovespa salta quase 4% e supera 183 mil pontos com confirmação de Trabuco na Fazenda",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcFpiY2hxUVNYbEZrYlZ1R2dQSThoU0NSVnlONW9IaDdSZ1dabXZEdEEtODRyR2kxWmhwZklMYzFTNlFlRl8wZk9fMWlwaXV3T2Z4eUpMcnBDeTFzZnhCdkliSWRKLVJicHZoRkZrUjFQXzZLS1dBZU03U3BMRzVYamhZblpzZGRfcXQ3cFUtbGZwekxsVEJ4WlBPZFRqZ1N4U1puT0ZIbUxWRGpLSXM1THZTVdIBuAFBVV95cUxOeElEYWxFdmRabUN2cHVRcGlmOThiekV6a3NTNWtIbzl0S3QzWm8xV2tmd1Q2Vk9fX2U0dmpmQkJtR2NwaDZxNmhLUXR5bHI0WjE0ekwyclhBOEt3UVYzcHBiZVVqc2dLMmgzblhDelpaTE1mZ3BfajNOOW1Wa2JjcW15MVl0bW1pNGJtRG5qTThUdC1ZS1hUZElqbjBUa2lqanNqeF9GbXdvV0RoTUxJd01fSnNlZ1BN?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.63
+   },
+   {
+    "hora": "10:20",
+    "titulo": "Dólar cai abaixo de R$ 5,50 com 'efeito Trabuco': é hora de comprar?",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcDh0Mi1uUGNqODNjTkwyR3VEUDAzb0VfSzNFTDRrVmhERWpFOWRSU1BBNmZVajhFOFpua214VWYzYzVQY25Va1JxNVNLa1RJbWVZUmVQNmFnajlYX0drTFBCUTdQd05HalJpSTQ3Nl9oNVJtNksydU1FVmkyWmRib251X3VXbTJFVHA5MEF4X19xT0o0V2dvYWd0RXJfUQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:23",
+    "titulo": "Ibovespa salta mais de 3% e recupera os 182 mil pontos; 5 coisas para saber antes de investir hoje (27)",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObEJVRk5Wc19kaVhDeE5GSW5EZk1yRnRwN1Y4d3JPM2FkZUtWckFZMXBPMUNsQkNicFZqRHE2NGkxQVJjTlZub09CU0t4eEhlc2E1eEhpZkFnWWw0WEVBY0JIUWVET184aHpsMjYzWUxQTDZmY2duc3VkeTd1UGl0N2xZOHhVY1c0VUJ0b3E3VmdESjUzNElWQ3pnQ0FVSUprYTd2UVl5eDZpcVVHY2tVWGdlVTlaUWNKX1dYbGpMeUptbmxEMmNYUnBFSVZ6Uk1Y?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:26",
+    "titulo": "Trabuco na Fazenda: Bolsa sobe, dólar e juros caem, mas mercado vê riscos que ameaçam o rali",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOcnNRMDdaZWNTeUdKaWFfZDhDSUtLUUU3Q3VtRDFtVWduQmVHUVU1S3U2dXBnY2pwdm9ETVNLREpQNkpJakNyWVQ3MGNXRjk2bE1pLURra0lseHZlYUlnRHlmUXJFeDJneDJGb0JtdGFmM2RLeDNjQUtONXB6aVp0MnljNTFEQjJ5NXFVSklmVGp0OUdBVk80aFEwWFYtOVFVcTVSQ05sRHBhLU5yd1BZY1VBMjFjWTU4dU9HTEx2YlF4cnV4bF9iR2pYSkZkMTdWcnpTNzZpMFl0ZzFqZ285djREU1R4SGhIUnM2Mw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -589,6 +732,18 @@
    ]
   },
   {
+   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+   "publicado": "2026-11-27T09:47-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Rendimento real do trabalhador cresceu 3,5% em um ano",
    "fonte": "Agência Brasil",
    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/rendimento-real-do-trabalhador-cresceu-35-em-um-ano",
@@ -598,14 +753,64 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Tributária, 6x1 e tarifaço impulsionam salário de lobistas no Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/tributaria-6x1-e-tarifaco-impulsionam-salario-de-lobistas-no-brasil.shtml",
+   "publicado": "2026-11-27T10:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa salta quase 4% e supera 183 mil pontos com confirmação de Trabuco na Fazenda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcFpiY2hxUVNYbEZrYlZ1R2dQSThoU0NSVnlONW9IaDdSZ1dabXZEdEEtODRyR2kxWmhwZklMYzFTNlFlRl8wZk9fMWlwaXV3T2Z4eUpMcnBDeTFzZnhCdkliSWRKLVJicHZoRkZrUjFQXzZLS1dBZU03U3BMRzVYamhZblpzZGRfcXQ3cFUtbGZwekxsVEJ4WlBPZFRqZ1N4U1puT0ZIbUxWRGpLSXM1THZTVdIBuAFBVV95cUxOeElEYWxFdmRabUN2cHVRcGlmOThiekV6a3NTNWtIbzl0S3QzWm8xV2tmd1Q2Vk9fX2U0dmpmQkJtR2NwaDZxNmhLUXR5bHI0WjE0ekwyclhBOEt3UVYzcHBiZVVqc2dLMmgzblhDelpaTE1mZ3BfajNOOW1Wa2JjcW15MVl0bW1pNGJtRG5qTThUdC1ZS1hUZElqbjBUa2lqanNqeF9GbXdvV0RoTUxJd01fSnNlZ1BN?oc=5",
+   "publicado": "2026-11-27T10:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai abaixo de R$ 5,50 com 'efeito Trabuco': é hora de comprar?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcDh0Mi1uUGNqODNjTkwyR3VEUDAzb0VfSzNFTDRrVmhERWpFOWRSU1BBNmZVajhFOFpua214VWYzYzVQY25Va1JxNVNLa1RJbWVZUmVQNmFnajlYX0drTFBCUTdQd05HalJpSTQ3Nl9oNVJtNksydU1FVmkyWmRib251X3VXbTJFVHA5MEF4X19xT0o0V2dvYWd0RXJfUQ?oc=5",
+   "publicado": "2026-11-27T10:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa salta mais de 3% e recupera os 182 mil pontos; 5 coisas para saber antes de investir hoje (27)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObEJVRk5Wc19kaVhDeE5GSW5EZk1yRnRwN1Y4d3JPM2FkZUtWckFZMXBPMUNsQkNicFZqRHE2NGkxQVJjTlZub09CU0t4eEhlc2E1eEhpZkFnWWw0WEVBY0JIUWVET184aHpsMjYzWUxQTDZmY2duc3VkeTd1UGl0N2xZOHhVY1c0VUJ0b3E3VmdESjUzNElWQ3pnQ0FVSUprYTd2UVl5eDZpcVVHY2tVWGdlVTlaUWNKX1dYbGpMeUptbmxEMmNYUnBFSVZ6Uk1Y?oc=5",
+   "publicado": "2026-11-27T10:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Trabuco na Fazenda: Bolsa sobe, dólar e juros caem, mas mercado vê riscos que ameaçam o rali",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOcnNRMDdaZWNTeUdKaWFfZDhDSUtLUUU3Q3VtRDFtVWduQmVHUVU1S3U2dXBnY2pwdm9ETVNLREpQNkpJakNyWVQ3MGNXRjk2bE1pLURra0lseHZlYUlnRHlmUXJFeDJneDJGb0JtdGFmM2RLeDNjQUtONXB6aVp0MnljNTFEQjJ5NXFVSklmVGp0OUdBVk80aFEwWFYtOVFVcTVSQ05sRHBhLU5yd1BZY1VBMjFjWTU4dU9HTEx2YlF4cnV4bF9iR2pYSkZkMTdWcnpTNzZpMFl0ZzFqZ285djREU1R4SGhIUnM2Mw?oc=5",
+   "publicado": "2026-11-27T10:26-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
-  {
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQaFFDR0c4OVZWT3ZXazNYWFFKUldvdGpsSHpfVWltRGZYSjg2VzJHR1BYQk5kSkJneWQ2WVRPWEFUc3h2aGw5cW05czd3Q0g0REpKOVhveVpzdDJIcmdJTUNRZUliaktNbzBpWE9YRUxjLUUxOUg1TjV5bVZ3TzU3YkdZSGpXVkkwNVNkN045eWtrREFHbU9HMVZrQU9VRUlOc3h4Yld0SXBqSkJMT3A5czBWN3RKQk1OcGlmR3dUbUgzOGs5UUFteHpjbUZreU5DdVYySV9wcWp1OVZQQU4tZUozZjBLaDVWX0pXZzhrTQ?oc=5",
-   "titulo": "Ibovespa salta mais de 3% e recupera os 172 mil pontos com impulso do IPCA-15; 5 coisas para saber antes de investir hoje (26)",
-   "em": "2026-11-26T13:25:50+00:00"
-  },
   {
    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPREIza3Eyc1lNSjl3eXpSVVpRVlVlVDVUelg4LUNLaWlPbGwtWFpCOF9YdnlKMDBrVGFialVid2FDVDNyNmtrNUVOYzN3ZzR4QllzUXR4SW5oY2lSdVR1Tk14V3M3b1Qzbmhsa1dXSlB2Nko1VENhdXRqNTBEZ21NQWJDTzlud2g5U3JUUzRsZkZjZWhjeWs1alRLTDBGQU1OSzRJeFhyWTVKMlVORzN4RGRCVlNuaWVMeE1pMzVWUmtJVFMwTDBvU2tSaEQyRkQ2U1pYMEtjdVItNWxzUmlqdWx1cHYyYXYxQi1F?oc=5",
    "titulo": "Lula saca Trabuco na Fazenda e anima mercado local em dia curto no exterior; Ibovespa em dólar dispara 11% nesta sexta (27)",
@@ -620,9 +825,14 @@
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSTZKLU9Ka20tYUQ4WDJlZkUtUmxfaG5WeFVwVHZITjVhd1l2aXdSa0JGUFZIcXBoRU5hLWROZWc1bnk5MFNuR01DN1d2SVZWem5sVVdfX3cwZEx0aFVkZzdMd0R3RnVnU2oycGE3R3BoRkQ1T3J6YnpXUmZfVVpWTHpxWTRiRndYMVVwemFNeVozVG02am9nZnFNRHBCNUk0eXRoTGQ1d08tay1S?oc=5",
    "titulo": "Trabuco pode levar ações brasileiras a subir 30% em dólar, diz Bradesco BBI",
    "em": "2026-11-27T12:48:19+00:00"
+  },
+  {
+   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+   "em": "2026-11-27T13:23:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:08-03:00",
+ "atualizado_em": "2026-11-27T10:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -637,6 +847,85 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
+   "publicado": "2026-11-27T10:29-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Trabuco na Fazenda: Bolsa sobe, dólar e juros caem, mas mercado vê riscos que ameaçam o rali",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOcnNRMDdaZWNTeUdKaWFfZDhDSUtLUUU3Q3VtRDFtVWduQmVHUVU1S3U2dXBnY2pwdm9ETVNLREpQNkpJakNyWVQ3MGNXRjk2bE1pLURra0lseHZlYUlnRHlmUXJFeDJneDJGb0JtdGFmM2RLeDNjQUtONXB6aVp0MnljNTFEQjJ5NXFVSklmVGp0OUdBVk80aFEwWFYtOVFVcTVSQ05sRHBhLU5yd1BZY1VBMjFjWTU4dU9HTEx2YlF4cnV4bF9iR2pYSkZkMTdWcnpTNzZpMFl0ZzFqZ285djREU1R4SGhIUnM2Mw?oc=5",
+   "publicado": "2026-11-27T10:28-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa salta mais de 3% e recupera os 182 mil pontos; 5 coisas para saber antes de investir hoje (27)",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObEJVRk5Wc19kaVhDeE5GSW5EZk1yRnRwN1Y4d3JPM2FkZUtWckFZMXBPMUNsQkNicFZqRHE2NGkxQVJjTlZub09CU0t4eEhlc2E1eEhpZkFnWWw0WEVBY0JIUWVET184aHpsMjYzWUxQTDZmY2duc3VkeTd1UGl0N2xZOHhVY1c0VUJ0b3E3VmdESjUzNElWQ3pnQ0FVSUprYTd2UVl5eDZpcVVHY2tVWGdlVTlaUWNKX1dYbGpMeUptbmxEMmNYUnBFSVZ6Uk1Y?oc=5",
+   "publicado": "2026-11-27T10:23-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+   "publicado": "2026-11-27T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai abaixo de R$ 5,50 com 'efeito Trabuco': é hora de comprar?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcDh0Mi1uUGNqODNjTkwyR3VEUDAzb0VfSzNFTDRrVmhERWpFOWRSU1BBNmZVajhFOFpua214VWYzYzVQY25Va1JxNVNLa1RJbWVZUmVQNmFnajlYX0drTFBCUTdQd05HalJpSTQ3Nl9oNVJtNksydU1FVmkyWmRib251X3VXbTJFVHA5MEF4X19xT0o0V2dvYWd0RXJfUQ?oc=5",
+   "publicado": "2026-11-27T10:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Ibovespa salta quase 4% e supera 183 mil pontos com confirmação de Trabuco na Fazenda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcFpiY2hxUVNYbEZrYlZ1R2dQSThoU0NSVnlONW9IaDdSZ1dabXZEdEEtODRyR2kxWmhwZklMYzFTNlFlRl8wZk9fMWlwaXV3T2Z4eUpMcnBDeTFzZnhCdkliSWRKLVJicHZoRkZrUjFQXzZLS1dBZU03U3BMRzVYamhZblpzZGRfcXQ3cFUtbGZwekxsVEJ4WlBPZFRqZ1N4U1puT0ZIbUxWRGpLSXM1THZTVdIBuAFBVV95cUxOeElEYWxFdmRabUN2cHVRcGlmOThiekV6a3NTNWtIbzl0S3QzWm8xV2tmd1Q2Vk9fX2U0dmpmQkJtR2NwaDZxNmhLUXR5bHI0WjE0ekwyclhBOEt3UVYzcHBiZVVqc2dLMmgzblhDelpaTE1mZ3BfajNOOW1Wa2JjcW15MVl0bW1pNGJtRG5qTThUdC1ZS1hUZElqbjBUa2lqanNqeF9GbXdvV0RoTUxJd01fSnNlZ1BN?oc=5",
+   "publicado": "2026-11-27T10:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Tributária, 6x1 e tarifaço impulsionam salário de lobistas no Brasil",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/tributaria-6x1-e-tarifaco-impulsionam-salario-de-lobistas-no-brasil.shtml",
+   "publicado": "2026-11-27T10:10-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Rendimento real do trabalhador cresceu 3,5% em um ano",
    "fonte": "Agência Brasil",
@@ -687,6 +976,17 @@
    "tickers": []
   },
   {
+   "titulo": "Dólar cai mais de 4% e chega a R$ 5,48 após confirmação de Trabuco na Fazenda; Bolsa dispara",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/dolar-abre-em-queda-de-quase-4-e-atinge-r-552-apos-confirmacao-de-trabuco-na-fazenda.shtml",
+   "publicado": "2026-11-27T09:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Dólar hoje desaba mais de 3% e flerta com R$ 5,50 com ida de Trabuco para Fazenda",
    "fonte": "InfoMoney",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOVgyazlobGVfeUluNm5INjc3Y2o2THEtSjFBdWotOGJZRXhHb2Z0TFJncGNKNzNBT2tLTDFMWVpIR3FId1A2U19pcEVMU3kzbHNhV2RzdDF5Z2M3RHoteXhyZUtHU1p5czM5VUM2Z0JIYzRXLU8wbXR4bTdCbFhMaXNrS2hYVV9HX2pKM3JWbmE2cTc4YzVQYmo3ejXSAaIBQVVfeXFMUF9pejkwWmhkRWVudW44TnE5T1JvRklkTGx0Y1pqUy1ZRS1RTG1TQXRDbFdHR1JjRlBJSGZWQmFMZDFwZU1zVDQ2NURYcDVhOHNpTWpwVXRSbkJobC0ybWtTaUwyZGJjUllVMVlKU3N0RGYtQWgtUVNiS0E2cjY0MFgxbk1HUDBCYW5CZzM4X2VQR1lWVDVOZy1ndFRTNmk2cGVn?oc=5",
@@ -724,17 +1024,6 @@
    ]
   },
   {
-   "titulo": "Ibovespa Futuro dispara quase 3% após confirmação de Trabuco na Fazenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcS1melFYdGZadHVjQl9TVFRtZncxeVloTUswQnh0QlJzZkcyQ3A2bk5xMS1BNTFkSHJmTGk0UW1JQkhTN1lLTEpTXzRkeGwxNThnR2c5bDFMWHVCUjZ3ZDJqYVlkOTVob2NFTXdWOVZ4Q29kWFVyV0h3ZmRlZkROR2o0VHlsWXZ1TUktSFRQb1QtNVRvRmNoaWpCRFJnamVyTUppaTUxeWFKR1VKX1HSAbMBQVVfeXFMTTQ5Q2lhOWRyTjFmUE40aVc1emxOc1NCcjBvQUVETVl6Qmh5NENHckZ3ZmpNVGFzV2JBekhLZ1JtaUptdXFSUW96RnVaMFc3LXpSeXgwUG5wUVB3UlNOY1k1RzU5aDlfRU5pM3RpaDRLQVJHQktpeHFKcVRGWVFuVXhPRXdEeUt2TEpHcTdTNExtZWVlUEZna2huLXBTdWRNeXVCeGEzckYyZURjU1FhTU10eFk?oc=5",
-   "publicado": "2026-11-27T09:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
    "titulo": "Dólar despenca a R$ 5,53 após escolha de Trabuco para a Fazenda",
    "fonte": "CNN Brasil",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRF9BUGlndXZLTWUxUUhXbzJpUG16aTlhUHJ1MWJwX2pZZU1MTnY4bUJpM2VFU2wzdy1IWlJxSjJWWGlhTVc4OGZYbXBwSXlkMU5CdzNhRDNMaFJ5bDl4X2FGSTJ6Z3dMZi1Pc2hRZHZLUFdTQTN5TWpRSWwxdk5IaFZVSUZ4b0R1bVlYc1Z1a19pTi1yZEZGYVU1RktRbkE0VkRCR0d3?oc=5",
@@ -744,43 +1033,6 @@
     "WDO"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Tempo real: Ibovespa de olho em Trabuco no Ministério da Fazenda e no IGP-M; veja os destaques desta sexta-feira (27)",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nTmtmU2FZZVdPdWFxRkFMdkFudjdIeUJtV1ZwMHhzNnJmLVkzbEZpcGtMNl9KOVNFSXVpb0dRYUFtXzJVc0RJMjhjcGY4M21idmVNdTRWd19KeWswSWJzNTRTWEl6Rmtp?oc=5",
-   "publicado": "2026-11-27T08:55-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "“Efeito Trabuco” chega à bolsa: Bradesco BBI eleva Brasil para compra e vê alta de 30%",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORWNRZUhEQzRyVVdtNDB0Z19OZGpRTExiUG5wZTJnNldBU1pFR2NLa0tHLVdHdHFsSHRFVEl6TkZvSVJWWTNJSjJHOFBkLVJHc3hHUjdTa1gwTzBCMEsweGFocXVyU3gxZGczMXJySV9xT3JoZi1STm0zc0VXb0pfNHVoNkhXUVRzd2w1WTdjYTdVRnB1OGJhQm9NNzdjU1dJejY4S1p0T2RHVE02d1N6VFJhM09najQwVW1fUmpR?oc=5",
-   "publicado": "2026-11-27T08:21-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
-  },
-  {
-   "titulo": "Axia Energia (AXIA3) aprova resgate de R$ 6 bilhões em ações preferenciais classe C",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRFBxLWVGSURQbE5pSTJ1ZVlJOUIyZmRmVmU1RXAzS08xZ2JXNXF5Zy1yeTBnQkwyQXBqaXlxMFNXTTNzRzNhUFZSNExwdFpmem1Db1ZMRkVSSEYxQXhuV2dmMWtRXzVFWDBLTVZHclNlNHJVRklSdG9YQlo0SEN1M0JJYXlDUnB6dUpUREJxdjNuNjZDQ1Y1VzJIRExLNWhVbU5VVEEyOWVzVWVUQ0lIRHZib3EwR2h0Mlp30gHAAUFVX3lxTE9zM2l1a3pWV0FQZTU2bkNnb2tidmFnWS1sNzBSM1RUaktSMVV4RkZuTkNSZkRyNXA5WE05UnI5Vld1MXJVM3NMT3ZWS3FKd3VlS1RreURuNVNtb29uVkc1Umo3OW9hbHB3QkdKcGFyZlN5T2FsUm9hMUJWUTdNNEpPSENMVUVWbUFidFVJUTg5TktPRjEzajlKUk03N01WSlVWMDhyejdMZUhmRHdzVllyRFF2SFh5NVpCRUxFRVBJSA?oc=5",
-   "publicado": "2026-11-27T08:16-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "AXIA3"
-   ]
   }
  ]
 }
