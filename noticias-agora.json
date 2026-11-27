@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T13:53-03:00",
+  "atualizado_em": "2026-11-27T13:55-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -179,11 +179,11 @@
     ],
     [
      "13:35",
-     177212.0
+     177095.0
     ],
     [
-     "13:38",
-     177192.0
+     "13:40",
+     177019.0
     ]
    ]
   },
@@ -420,11 +420,11 @@
     ],
     [
      "13:50",
-     5.5437
+     5.543
     ],
     [
-     "13:53",
-     5.5438
+     "13:55",
+     5.5404
     ]
    ]
   },
@@ -908,7 +908,7 @@
      "WIN"
     ],
     "tickers": [],
-    "ibov30": 0.09,
+    "ibov30": 0.02,
     "dolar30": -0.23
    },
    {
@@ -924,8 +924,21 @@
      "HAPV3",
      "PETR4"
     ],
-    "ibov30": 0.08,
+    "ibov30": -0.02,
     "dolar30": -0.41
+   },
+   {
+    "hora": "13:48",
+    "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bancos-estrangeiros-elogiam-trabuco-e-condicionam-melhora-fiscal-a-autonomia-dele-na-fazenda.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -1614,6 +1627,17 @@
     "HAPV3",
     "PETR4"
    ]
+  },
+  {
+   "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bancos-estrangeiros-elogiam-trabuco-e-condicionam-melhora-fiscal-a-autonomia-dele-na-fazenda.shtml",
+   "publicado": "2026-11-27T13:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -1643,7 +1667,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T13:53-03:00",
+ "atualizado_em": "2026-11-27T13:55-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1656,6 +1680,17 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bancos-estrangeiros-elogiam-trabuco-e-condicionam-melhora-fiscal-a-autonomia-dele-na-fazenda.shtml",
+   "publicado": "2026-11-27T13:48-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
    "fonte": "Estadão",
