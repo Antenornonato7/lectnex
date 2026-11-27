@@ -34,15 +34,15 @@
     <meta name="twitter:image" content="https://lectnex.com.br/assets/brand/og-mercado.jpg">
     <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://lectnex.com.br/#org", "name": "Lectnex", "url": "https://lectnex.com.br/", "logo": "https://lectnex.com.br/assets/brand/icon-512.png"}, {"@type": "WebSite", "@id": "https://lectnex.com.br/#site", "name": "Lectnex Terminal", "url": "https://lectnex.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://lectnex.com.br/#org"}}, {"@type": "WebPage", "name": "Mercado Hoje: Selic, Dólar, Agenda e Notícias | Lectnex", "url": "https://lectnex.com.br/", "description": "Painel do mercado brasileiro em segundos: Selic, CDI, IPCA e PTAX do Banco Central, câmbio ao vivo, agenda de Copom, payroll e vencimentos B3, mercados globais.", "isPartOf": {"@id": "https://lectnex.com.br/#site"}}]}</script>
     <script>try{if(localStorage.getItem('lectnex-theme')!=='light')document.documentElement.classList.add('dark');if(localStorage.getItem('lectnex-hc')==='1')document.documentElement.classList.add('lx-hc')}catch(e){document.documentElement.classList.add('dark')}</script>
-    <link rel="stylesheet" href="assets/tailwind.css?v=20261120d">
+    <link rel="stylesheet" href="assets/tailwind.css?v=20261127a">
     <link rel="expect" href="#lx-pronto" blocking="render">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet"></noscript>
-    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261120d">
-    <link rel="stylesheet" href="assets/lectnex.css?v=20261120d">
+    <link rel="stylesheet" href="assets/icons/phosphor.css?v=20261127a">
+    <link rel="stylesheet" href="assets/lectnex.css?v=20261127a">
 </head>
 <body data-page="mercado" class="bg-[#F4F6F9] text-lect-navy dark:bg-lect-bgDark dark:text-slate-100 font-sans antialiased selection:bg-lect-teal selection:text-white">
 
@@ -171,7 +171,6 @@
             <a href="#setores" class="hover:text-lect-teal">Setores</a>
             <a href="#ms-agenda" class="hover:text-lect-teal">Agenda</a>
             <a href="#indicadores" class="hover:text-lect-teal">Juros e inflação</a>
-            <a href="#cambio" class="hover:text-lect-teal">Câmbio</a>
             <a href="leitura/" class="hover:text-lect-teal">Arquivo da Leitura</a>
             <span class="hidden sm:inline text-slate-300 dark:text-slate-600">|</span>
             <a href="laboratorio.html" data-atalho="estudo" class="text-lect-teal hover:underline">Continuar estudando</a>
@@ -342,25 +341,9 @@
     <!-- MAPA DE CALOR DA B3 — data/cotacoes.json (campo "mapa"), atualizado de hora em hora no pregão -->
 
     <!-- ================================================================================= -->
-    <!-- 02 · AGENDA + CÂMBIO                                           -->
+    <!-- 02 · LINK PARA MACRO & JUROS                                    -->
     <!-- ================================================================================= -->
-    <section id="agenda"  class="py-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-
-            <!-- CÂMBIO & CRIPTO -->
-            <div id="cambio" class="lg:col-span-7 term-panel overflow-hidden scroll-mt-28">
-                <div class="panel-head">
-                    <span class="font-display text-sm font-bold uppercase tracking-wide inline-flex items-center gap-2"><i class="ph-bold ph-currency-circle-dollar text-lect-orange"></i>Câmbio</span>
-                    <span id="fx-time" class="font-mono text-[10px] text-emerald-400">—</span>
-                </div>
-                <div class="quote-row quote-head font-mono uppercase tracking-wider"><span>Par</span><span>Cotação</span><span>Var 24h</span><span>Mín / Máx</span></div>
-                <div id="fx-table" class="font-mono tabular-nums text-xs"></div>
-                <p id="fx-base" class="px-4 py-2 border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-600 dark:text-slate-400"></p>
-                <div class="p-3 bg-slate-50 dark:bg-lect-bgDark border-t border-slate-200 dark:border-lect-borderDark text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
-                    <strong>Para quem opera WDO:</strong> o mini dólar é cotado em R$ por US$ 1.000. Dólar à vista a <span class="font-mono" data-lx="usd">—</span> equivale a <strong class="font-mono" id="fx-wdo-eq">—</strong> pontos no spot; o futuro negocia acima disso pelo diferencial de juros (cupom). <a href="futuros.html#paridade" class="text-lect-teal font-bold hover:underline">Calcular preço justo →</a>
-                </div>
-            </div>
-        </div>
+    <section id="agenda"  class="pb-10 border-b border-slate-300 dark:border-lect-borderDark scroll-mt-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><a href="macro.html" class="group mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-5 bg-lect-navy text-white border-l-4 border-lect-orange hover:bg-[#10233a] transition-colors">
                 <span class="flex items-center gap-4"><i class="ph-duotone ph-chart-line-up text-3xl text-lect-orange shrink-0"></i>
                     <span><span class="term-label !text-slate-400 block">POR TRÁS DOS NÚMEROS</span><strong class="font-display text-lg block">Copom, Focus, curva DI e o mapa “E se…?”</strong><span class="text-xs text-slate-300">Entenda por que o mercado se move — na página Macro &amp; Juros.</span></span></span>
@@ -377,7 +360,7 @@
 
     <div id="lx-footer"></div>
 
-    <script src="assets/lectnex-core.js?v=20261120d"></script><span id="lx-pronto" hidden></span>
+    <script src="assets/lectnex-core.js?v=20261127a"></script><span id="lx-pronto" hidden></span>
     <script>
     (function () {
         const today = LX.todayBRT();
@@ -897,30 +880,7 @@
         const nextCopom = LX.copom2026.map(([d]) => LX.parseISO(d)).find(d => d >= today);
         document.getElementById('next-copom').textContent = nextCopom ? `${LX.br(nextCopom)} (${LX.businessDaysBetween(today, nextCopom, true)} DU)` : 'calendário 2027 a publicar';
 
-        /* ---------- Câmbio ---------- */
-        const FX_ROWS = [['USDBRL', 'Dólar comercial', 4], ['EURBRL', 'Euro', 4], ['GBPBRL', 'Libra', 4], ['CNYBRL', 'Yuan', 4], ['ARSBRL', 'Peso argentino', 5], ['EURUSD', 'EUR/USD', 4], ['USDJPY', 'USD/JPY', 2]];
-        const lastFx = {};
-        document.addEventListener('lx:fx', () => {
-            const fx = LX.data.fx;
-            if (!LX.data.fxOk) { document.getElementById('fx-table').innerHTML = '<p class="p-4 text-xs text-slate-500">Cotações indisponíveis no momento. Tentando novamente em 30s.</p>'; return; }
-            const ref = LX.mesaAtivo && LX.mesaAtivo('USDBRL');
-            document.getElementById('fx-table').innerHTML = FX_ROWS.filter(([k]) => fx[k]).map(([k, name, d]) => {
-                const q = k === 'USDBRL' && ref && ref.preco != null ? Object.assign({}, fx[k], { bid: ref.preco, pct: ref.var }, ref.pontos ? { low: Math.min(...ref.pontos.map(p => p[1])), high: Math.max(...ref.pontos.map(p => p[1])) } : {}) : fx[k], flash = lastFx[k] != null && lastFx[k] !== q.bid ? (q.bid > lastFx[k] ? 'tick-up' : 'tick-down') : '';
-                lastFx[k] = q.bid;
-                return `<div class="quote-row ${flash}"><div><strong class="block">${k.slice(0, 3)}/${k.slice(3)}</strong><span class="text-[10px] text-slate-500">${name}</span></div>
-                    <strong>${LX.num(q.bid, d)}</strong><span class="${LX.signClass(q.pct)} font-semibold">${LX.pct(q.pct, 2, true)}</span>
-                    <span class="text-[10px] text-slate-500">${LX.num(q.low, d)}<br>${LX.num(q.high, d)}</span></div>`;
-            }).join('');
-            const u = fx.USDBRL;
-            if (u) {
-                document.getElementById('fx-time').textContent = 'ATUALIZADO ' + u.time.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo' }) + ' BRT';
-                document.getElementById('fx-wdo-eq').textContent = LX.num((ref && ref.preco != null ? ref.preco : u.bid) * 1000, 1);
-            }
-            document.getElementById('fx-base').innerHTML = ref && ref.preco != null
-                ? `Dólar comercial: mesmo registro da lista Acompanhamento (${LX.esc(ref.fonte)}${ref.hora ? ', ' + ref.hora : ''}${ref.data && ref.data !== LX.iso(LX.todayBRT()) ? ' de ' + LX.brShort(LX.parseISO(ref.data)) : ''}; variação ${LX.esc(ref.base)}). Demais moedas: variação em 24 h (AwesomeAPI). Não é a PTAX nem o contrato WDO.`
-                : 'Variação em 24 h (AwesomeAPI). Dólar comercial à vista: não é a PTAX nem o contrato WDO.';
-            renderSummary();
-        });
+        document.addEventListener('lx:fx', () => renderSummary());
 
         /* ---------- Resumo do dia gerado a partir dos dados ---------- */
         function renderSummary() {
@@ -942,7 +902,7 @@
 
     })();
     </script>
-    <script src="assets/lectnex-pregao.js?v=20261120d" defer></script>
-    <script src="assets/lectnex-painel.js?v=20261120d" defer></script>
+    <script src="assets/lectnex-pregao.js?v=20261127a" defer></script>
+    <script src="assets/lectnex-painel.js?v=20261127a" defer></script>
 </body>
 </html>
