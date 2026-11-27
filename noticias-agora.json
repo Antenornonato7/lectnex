@@ -1,7 +1,20 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:16-03:00",
+  "atualizado_em": "2026-11-27T10:19-03:00",
+  "ibov": {
+   "anterior": 176799.84,
+   "pontos": [
+    [
+     "10:00",
+     176829.0
+    ],
+    [
+     "10:04",
+     176988.0
+    ]
+   ]
+  },
   "dolar": {
    "anterior": 5.6513,
    "pontos": [
@@ -63,11 +76,11 @@
     ],
     [
      "10:15",
-     5.5056
+     5.5079
     ],
     [
-     "10:16",
-     5.507
+     "10:19",
+     5.5078
     ]
    ]
   },
@@ -82,6 +95,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -94,6 +108,7 @@
      "WIN"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -109,6 +124,7 @@
      "AXIA3",
      "BBAS3"
     ],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -122,6 +138,7 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -135,6 +152,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -147,6 +165,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.08
    },
    {
@@ -159,6 +178,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.45
    },
    {
@@ -171,6 +191,7 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
     "dolar30": -0.45
    },
    {
@@ -185,6 +206,7 @@
     "tickers": [
      "BBDC4"
     ],
+    "ibov30": null,
     "dolar30": -0.66
    },
    {
@@ -200,6 +222,7 @@
     "tickers": [
      "BBDC4"
     ],
+    "ibov30": null,
     "dolar30": -0.12
    },
    {
@@ -213,7 +236,8 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": -0.07
+    "ibov30": null,
+    "dolar30": -0.03
    },
    {
     "hora": "09:51",
@@ -225,7 +249,8 @@
      "WDO"
     ],
     "tickers": [],
-    "dolar30": 0.0
+    "ibov30": null,
+    "dolar30": 0.02
    },
    {
     "hora": "10:10",
@@ -237,6 +262,20 @@
      "WDO"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:12",
+    "titulo": "Ibovespa salta quase 4% e supera 183 mil pontos com confirmação de Trabuco na Fazenda",
+    "fonte": "InfoMoney",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcFpiY2hxUVNYbEZrYlZ1R2dQSThoU0NSVnlONW9IaDdSZ1dabXZEdEEtODRyR2kxWmhwZklMYzFTNlFlRl8wZk9fMWlwaXV3T2Z4eUpMcnBDeTFzZnhCdkliSWRKLVJicHZoRkZrUjFQXzZLS1dBZU03U3BMRzVYamhZblpzZGRfcXQ3cFUtbGZwekxsVEJ4WlBPZFRqZ1N4U1puT0ZIbUxWRGpLSXM1THZTVdIBuAFBVV95cUxOeElEYWxFdmRabUN2cHVRcGlmOThiekV6a3NTNWtIbzl0S3QzWm8xV2tmd1Q2Vk9fX2U0dmpmQkJtR2NwaDZxNmhLUXR5bHI0WjE0ekwyclhBOEt3UVYzcHBiZVVqc2dLMmgzblhDelpaTE1mZ3BfajNOOW1Wa2JjcW15MVl0bW1pNGJtRG5qTThUdC1ZS1hUZElqbjBUa2lqanNqeF9GbXdvV0RoTUxJd01fSnNlZ1BN?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
     "dolar30": null
    }
   ]
@@ -654,6 +693,17 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Ibovespa salta quase 4% e supera 183 mil pontos com confirmação de Trabuco na Fazenda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcFpiY2hxUVNYbEZrYlZ1R2dQSThoU0NSVnlONW9IaDdSZ1dabXZEdEEtODRyR2kxWmhwZklMYzFTNlFlRl8wZk9fMWlwaXV3T2Z4eUpMcnBDeTFzZnhCdkliSWRKLVJicHZoRkZrUjFQXzZLS1dBZU03U3BMRzVYamhZblpzZGRfcXQ3cFUtbGZwekxsVEJ4WlBPZFRqZ1N4U1puT0ZIbUxWRGpLSXM1THZTVdIBuAFBVV95cUxOeElEYWxFdmRabUN2cHVRcGlmOThiekV6a3NTNWtIbzl0S3QzWm8xV2tmd1Q2Vk9fX2U0dmpmQkJtR2NwaDZxNmhLUXR5bHI0WjE0ekwyclhBOEt3UVYzcHBiZVVqc2dLMmgzblhDelpaTE1mZ3BfajNOOW1Wa2JjcW15MVl0bW1pNGJtRG5qTThUdC1ZS1hUZElqbjBUa2lqanNqeF9GbXdvV0RoTUxJd01fSnNlZ1BN?oc=5",
+   "publicado": "2026-11-27T10:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -678,7 +728,7 @@
    "em": "2026-11-27T12:48:19+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:16-03:00",
+ "atualizado_em": "2026-11-27T10:19-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -693,6 +743,17 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa salta quase 4% e supera 183 mil pontos com confirmação de Trabuco na Fazenda",
+   "fonte": "InfoMoney",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcFpiY2hxUVNYbEZrYlZ1R2dQSThoU0NSVnlONW9IaDdSZ1dabXZEdEEtODRyR2kxWmhwZklMYzFTNlFlRl8wZk9fMWlwaXV3T2Z4eUpMcnBDeTFzZnhCdkliSWRKLVJicHZoRkZrUjFQXzZLS1dBZU03U3BMRzVYamhZblpzZGRfcXQ3cFUtbGZwekxsVEJ4WlBPZFRqZ1N4U1puT0ZIbUxWRGpLSXM1THZTVdIBuAFBVV95cUxOeElEYWxFdmRabUN2cHVRcGlmOThiekV6a3NTNWtIbzl0S3QzWm8xV2tmd1Q2Vk9fX2U0dmpmQkJtR2NwaDZxNmhLUXR5bHI0WjE0ekwyclhBOEt3UVYzcHBiZVVqc2dLMmgzblhDelpaTE1mZ3BfajNOOW1Wa2JjcW15MVl0bW1pNGJtRG5qTThUdC1ZS1hUZElqbjBUa2lqanNqeF9GbXdvV0RoTUxJd01fSnNlZ1BN?oc=5",
+   "publicado": "2026-11-27T10:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Tributária, 6x1 e tarifaço impulsionam salário de lobistas no Brasil",
    "fonte": "Folha",
@@ -801,17 +862,6 @@
     "AXIA3",
     "BBAS3"
    ]
-  },
-  {
-   "titulo": "Ibovespa Futuro dispara quase 3% após confirmação de Trabuco na Fazenda",
-   "fonte": "InfoMoney",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcS1melFYdGZadHVjQl9TVFRtZncxeVloTUswQnh0QlJzZkcyQ3A2bk5xMS1BNTFkSHJmTGk0UW1JQkhTN1lLTEpTXzRkeGwxNThnR2c5bDFMWHVCUjZ3ZDJqYVlkOTVob2NFTXdWOVZ4Q29kWFVyV0h3ZmRlZkROR2o0VHlsWXZ1TUktSFRQb1QtNVRvRmNoaWpCRFJnamVyTUppaTUxeWFKR1VKX1HSAbMBQVVfeXFMTTQ5Q2lhOWRyTjFmUE40aVc1emxOc1NCcjBvQUVETVl6Qmh5NENHckZ3ZmpNVGFzV2JBekhLZ1JtaUptdXFSUW96RnVaMFc3LXpSeXgwUG5wUVB3UlNOY1k1RzU5aDlfRU5pM3RpaDRLQVJHQktpeHFKcVRGWVFuVXhPRXdEeUt2TEpHcTdTNExtZWVlUEZna2huLXBTdWRNeXVCeGEzckYyZURjU1FhTU10eFk?oc=5",
-   "publicado": "2026-11-27T09:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": []
   },
   {
    "titulo": "Dólar despenca a R$ 5,53 após escolha de Trabuco para a Fazenda",
