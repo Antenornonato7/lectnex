@@ -1,76 +1,6 @@
 {
-  "atualizado_em": "2026-11-26T12:45:00-03:00",
+  "atualizado_em": "2026-11-27T07:50:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-26",
-      "hora": "08h30",
-      "pais": "BR",
-      "evento": "Setor externo: transações correntes e IDP (out, BCB)",
-      "importancia": 1,
-      "anterior": "−US$ 5,10 bi",
-      "consenso": null,
-      "resultado": "−US$ 3,97 bi; IDP de US$ 9,09 bi",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Fluxo externo ajuda a explicar a pressão sobre o real; IDP anterior de US$ 11,29 bi (Boletim Nacional). Entrevista do BC às 15h.",
-      "tipo": "transacoes-correntes",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-26",
-      "hora": "09h",
-      "pais": "BR",
-      "evento": "IPCA-15 de novembro (IBGE)",
-      "importancia": 3,
-      "anterior": "0,32% (out)",
-      "consenso": "0,34%",
-      "resultado": "0,22% (4,64% em 12 meses)",
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil",
-        "win": "volatil"
-      },
-      "nota": "Expectativa de 0,34% no mês e 4,78% em 12 meses, segundo o InfoMoney; o Bradesco projeta 0,36% (Exame). Em outubro: 4,62% em 12 meses. Sai com NY fechada.",
-      "tipo": "ipca-15",
-      "surpresa": {
-        "direcao": "abaixo",
-        "reacao": "IPCA-15 abaixo do consenso costuma puxar as taxas de DI para baixo, com mais espaço para cortes da Selic, e tende a ajudar o WIN; no WDO a reação costuma ser menor e mista."
-      }
-    },
-    {
-      "data": "2026-11-26",
-      "hora": "09h30",
-      "pais": "EU",
-      "evento": "Ata da reunião do BCE",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": "Ata confirma viés de aperto; para o ING, alta de juros em 18/dez é quase certa",
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "Sinais sobre os próximos passos do BCE mexem no euro e no dólar global.",
-      "tipo": "ata-bce",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-26",
-      "hora": null,
-      "pais": "US",
-      "evento": "Ação de Graças — bolsas de NY fechadas",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "win": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Sem mercado à vista nem de Treasuries em NY; liquidez costuma cair na B3.",
-      "tipo": "feriado-eua",
-      "surpresa": null
-    },
     {
       "data": "2026-11-27",
       "hora": "08h",
@@ -78,30 +8,13 @@
       "evento": "IGP-M de novembro (FGV)",
       "importancia": 1,
       "anterior": "1,47% (out)",
-      "consenso": null,
+      "consenso": "0,94%",
       "resultado": null,
       "impacto": {
         "di": "volatil"
       },
-      "nota": "Inflação no atacado; corrige contratos de aluguel.",
+      "nota": "Inflação no atacado; corrige contratos de aluguel. Expectativa de alta de 0,94%, segundo o InfoMoney.",
       "tipo": "igp-m",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-27",
-      "hora": "08h30",
-      "pais": "BR",
-      "evento": "Resultado fiscal do setor público e dívida bruta (out, BCB)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Dívida bruta é o número que o mercado acompanha em meio à discussão das medidas de gastos.",
-      "tipo": "resultado-fiscal",
       "surpresa": null
     },
     {
@@ -111,12 +24,12 @@
       "evento": "Taxa de desemprego — PNAD Contínua (trim. até out, IBGE)",
       "importancia": 2,
       "anterior": "5,2%",
-      "consenso": null,
+      "consenso": "5,1%",
       "resultado": null,
       "impacto": {
         "di": "volatil"
       },
-      "nota": "Mercado de trabalho apertado sustenta a inflação de serviços e mexe nos vértices do DI.",
+      "nota": "Projeção de 5,1%, segundo o InfoMoney. Mercado de trabalho apertado sustenta a inflação de serviços e mexe nos vértices do DI.",
       "tipo": "pnad",
       "surpresa": null
     },
@@ -135,6 +48,23 @@
       },
       "nota": "Liquidez menor em NY no pós-feriado de Ação de Graças.",
       "tipo": "pregao-curto-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-11-27",
+      "hora": null,
+      "pais": "BR",
+      "evento": "Resultado primário do Governo Central (out, Tesouro)",
+      "importancia": 2,
+      "anterior": null,
+      "consenso": "superávit de R$ 47,55 bi",
+      "resultado": null,
+      "impacto": {
+        "di": "volatil",
+        "wdo": "volatil"
+      },
+      "nota": "Superávit esperado segundo o InfoMoney; número entra no debate fiscal com a chegada de Trabuco à Fazenda.",
+      "tipo": "resultado-primario",
       "surpresa": null
     },
     {
