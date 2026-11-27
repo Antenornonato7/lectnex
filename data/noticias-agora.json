@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T17:08-03:00",
+  "atualizado_em": "2026-11-27T17:38-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -335,7 +335,15 @@
     ],
     [
      "16:50",
-     177625.0
+     177679.0
+    ],
+    [
+     "16:55",
+     177375.0
+    ],
+    [
+     "17:00",
+     176961.0
     ]
    ]
   },
@@ -728,11 +736,35 @@
     ],
     [
      "17:05",
-     5.5132
+     5.5147
     ],
     [
-     "17:08",
-     5.513
+     "17:10",
+     5.5202
+    ],
+    [
+     "17:15",
+     5.5207
+    ],
+    [
+     "17:20",
+     5.5182
+    ],
+    [
+     "17:25",
+     5.5192
+    ],
+    [
+     "17:30",
+     5.5235
+    ],
+    [
+     "17:35",
+     5.531
+    ],
+    [
+     "17:38",
+     5.5302
     ]
    ]
   },
@@ -1386,6 +1418,19 @@
     "dolar30": -0.11
    },
    {
+    "hora": "15:35",
+    "titulo": "Tesouro Direto tem emissão líquida de R$ 2,87 bilhões em outubro",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3d9IBwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3dw?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "DI"
+    ],
+    "tickers": [],
+    "ibov30": 0.11,
+    "dolar30": -0.04
+   },
+   {
     "hora": "16:35",
     "titulo": "Qual será a política fiscal de Lula 4?",
     "fonte": "Folha",
@@ -1395,8 +1440,34 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": -0.18,
     "dolar30": -0.16
+   },
+   {
+    "hora": "17:12",
+    "titulo": "Dólar recua para os R$ 5,5156 com efeito Trabuco e acumula queda de 7% na semana",
+    "fonte": "Money Times",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZXV3bkxHazllTGRiUGs2cjhldTR4N3VMRE0xeUkxQlNFZkxPQlNub25RQUFTWk4yeW1pckR5b1dVdWlxVzhPX3VVNE5BMXlBWk1RdFpTMUJ5QkhMUUdhZTNsM2JtTmNRWXRESkxrdl8wbHJfOUlRX0ZLX2hhVl8xVk81TFZzNnlJX1JZN3BCOWkwSDVlei0yV0xtaUlULW5OZTA4N3hyQ1Fqelo0STNrTHdoVQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": 0.18
+   },
+   {
+    "hora": "17:16",
+    "titulo": "Com ‘efeito Trabuco’, dólar despenca 7% na semana, maior queda desde 2008 para o período",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNWtnTjdNSWtYTlNkOXN0OTVXOF9RNkw1S2d2ZUNVUHVDNGkwbUFDTEc3SnU5dkJYclpCXzI1anRPN2pvMERQcERfcmM1MzZoNWxQQ0tZOXRfdGpRbE5XZFQwUXd5YXVVVThicHBieDRmbExiQk1YNkZBSDhfSWc2NzU1TXJwQ2Zqb3ZiMU1WY0dXZ3RUcDJMWW9DYWZVeFFMQjY2UnVxRnpyQ2lrX0xqeWQtdWlLdF9OUW5TODdwdE5tM1BUQzZTWWNodG5FYmwzM0w5S21TY0tJcTJKdmg5cWhn0gHwAUFVX3lxTE44RTZhMTVnMU9sVlZ5U0gwQUI2aG1XWEdVUzdmbVJJQzJudlhXZEQwWjRGT29abThxYTY4ZlZaYld3NzZ4bXQ1LUkwNnF2M0VLZTlPNEk4U0VlZ0VBNW4wNmRzbF9PSy1nejNseFhyc1pnN2hpZTZmT1JyeFI2RURTNUU5ODhlTkRsUVZrRWZrVGZMVXd1dGVtTzFmclJTQ2hLNV92TjFGS0ZtSnFJbjQzX2c5clVxV3MtYlY0SzhJaUVCbGJSbFdaV0cxVng3bm9kN3RmVU1ORkpiTmNERmR0VU9oUVdSUmY1ZTFtcUNjag?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
    }
   ]
  },
@@ -2217,6 +2288,17 @@
    ]
   },
   {
+   "titulo": "Tesouro Direto tem emissão líquida de R$ 2,87 bilhões em outubro",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3d9IBwgFBVV95cUxOc3pMY2o2eGNvSzFhbTljSUZNMXd4RzNJTDdHNW9LbDdtWmZwT0IzVU5GY2pzSWxwUTR2OUN4QklWSGJqTkxIOVRtb0xCUHM0VnBtWlpROHUwTENiaWVDazE4SlBxcDdlM0tMR21jeDFlUlcxWFhCcnpXcVU1bDd0cWtaQi1ITlVEenpPVDNfSUZwM2dQTmp6WllkQ3c0bW0wWHZMOEJXUHRxQ0hUNTBYb3hBeThHMXBUbnUyVFRJZUF3dw?oc=5",
+   "publicado": "2026-11-27T15:35-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Qual será a política fiscal de Lula 4?",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/marcos-mendes/2026/11/qual-sera-a-politica-fiscal-de-lula-4.shtml",
@@ -2224,6 +2306,28 @@
    "impacto": "medio",
    "ativos": [
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar recua para os R$ 5,5156 com efeito Trabuco e acumula queda de 7% na semana",
+   "fonte": "Money Times",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZXV3bkxHazllTGRiUGs2cjhldTR4N3VMRE0xeUkxQlNFZkxPQlNub25RQUFTWk4yeW1pckR5b1dVdWlxVzhPX3VVNE5BMXlBWk1RdFpTMUJ5QkhMUUdhZTNsM2JtTmNRWXRESkxrdl8wbHJfOUlRX0ZLX2hhVl8xVk81TFZzNnlJX1JZN3BCOWkwSDVlei0yV0xtaUlULW5OZTA4N3hyQ1Fqelo0STNrTHdoVQ?oc=5",
+   "publicado": "2026-11-27T17:12-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Com ‘efeito Trabuco’, dólar despenca 7% na semana, maior queda desde 2008 para o período",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNWtnTjdNSWtYTlNkOXN0OTVXOF9RNkw1S2d2ZUNVUHVDNGkwbUFDTEc3SnU5dkJYclpCXzI1anRPN2pvMERQcERfcmM1MzZoNWxQQ0tZOXRfdGpRbE5XZFQwUXd5YXVVVThicHBieDRmbExiQk1YNkZBSDhfSWc2NzU1TXJwQ2Zqb3ZiMU1WY0dXZ3RUcDJMWW9DYWZVeFFMQjY2UnVxRnpyQ2lrX0xqeWQtdWlLdF9OUW5TODdwdE5tM1BUQzZTWWNodG5FYmwzM0w5S21TY0tJcTJKdmg5cWhn0gHwAUFVX3lxTE44RTZhMTVnMU9sVlZ5U0gwQUI2aG1XWEdVUzdmbVJJQzJudlhXZEQwWjRGT29abThxYTY4ZlZaYld3NzZ4bXQ1LUkwNnF2M0VLZTlPNEk4U0VlZ0VBNW4wNmRzbF9PSy1nejNseFhyc1pnN2hpZTZmT1JyeFI2RURTNUU5ODhlTkRsUVZrRWZrVGZMVXd1dGVtTzFmclJTQ2hLNV92TjFGS0ZtSnFJbjQzX2c5clVxV3MtYlY0SzhJaUVCbGJSbFdaV0cxVng3bm9kN3RmVU1ORkpiTmNERmR0VU9oUVdSUmY1ZTFtcUNjag?oc=5",
+   "publicado": "2026-11-27T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   }
@@ -2255,7 +2359,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T17:08-03:00",
+ "atualizado_em": "2026-11-27T17:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2264,9 +2368,23 @@
   "CNN Brasil",
   "Estadão",
   "Exame",
-  "Folha"
+  "Folha",
+  "InfoMoney",
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "Com ‘efeito Trabuco’, dólar despenca 7% na semana, maior queda desde 2008 para o período",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNWtnTjdNSWtYTlNkOXN0OTVXOF9RNkw1S2d2ZUNVUHVDNGkwbUFDTEc3SnU5dkJYclpCXzI1anRPN2pvMERQcERfcmM1MzZoNWxQQ0tZOXRfdGpRbE5XZFQwUXd5YXVVVThicHBieDRmbExiQk1YNkZBSDhfSWc2NzU1TXJwQ2Zqb3ZiMU1WY0dXZ3RUcDJMWW9DYWZVeFFMQjY2UnVxRnpyQ2lrX0xqeWQtdWlLdF9OUW5TODdwdE5tM1BUQzZTWWNodG5FYmwzM0w5S21TY0tJcTJKdmg5cWhn0gHwAUFVX3lxTE44RTZhMTVnMU9sVlZ5U0gwQUI2aG1XWEdVUzdmbVJJQzJudlhXZEQwWjRGT29abThxYTY4ZlZaYld3NzZ4bXQ1LUkwNnF2M0VLZTlPNEk4U0VlZ0VBNW4wNmRzbF9PSy1nejNseFhyc1pnN2hpZTZmT1JyeFI2RURTNUU5ODhlTkRsUVZrRWZrVGZMVXd1dGVtTzFmclJTQ2hLNV92TjFGS0ZtSnFJbjQzX2c5clVxV3MtYlY0SzhJaUVCbGJSbFdaV0cxVng3bm9kN3RmVU1ORkpiTmNERmR0VU9oUVdSUmY1ZTFtcUNjag?oc=5",
+   "publicado": "2026-11-27T17:16-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa destoa do otimismo com Trabuco e perde força; dólar cai mais de 3% e fica abaixo de R$ 5,53",
    "fonte": "Exame",
@@ -2313,32 +2431,6 @@
    "tickers": [
     "ITUB4",
     "SBSP3"
-   ]
-  },
-  {
-   "titulo": "PIB da França recua pelo segundo trimestre seguido e país entra em recessão",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/pib-da-franca-recua-pelo-segundo-trimestre-seguido-e-pais-entra-em-recessao.shtml",
-   "publicado": "2026-11-27T14:38-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO",
-    "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "B3 fecha acordo com bancos para criar stablecoin em reais",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-fecha-acordo-com-bancos-para-criar-stablecoin-em-reais.shtml",
-   "publicado": "2026-11-27T14:14-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "B3SA3"
    ]
   }
  ]
