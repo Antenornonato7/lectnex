@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-27T07:50:00-03:00",
+  "atualizado_em": "2026-11-27T12:45:00-03:00",
   "eventos": [
     {
       "data": "2026-11-27",
@@ -9,13 +9,16 @@
       "importancia": 1,
       "anterior": "1,47% (out)",
       "consenso": "0,94%",
-      "resultado": null,
+      "resultado": "1,24%",
       "impacto": {
         "di": "volatil"
       },
       "nota": "Inflação no atacado; corrige contratos de aluguel. Expectativa de alta de 0,94%, segundo o InfoMoney.",
       "tipo": "igp-m",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "Inflação no atacado acima do esperado costuma pressionar as taxas curtas do DI, com efeito em geral pequeno sobre WIN e WDO por ser indicador de menor peso."
+      }
     },
     {
       "data": "2026-11-27",
@@ -25,7 +28,7 @@
       "importancia": 2,
       "anterior": "5,2%",
       "consenso": "5,1%",
-      "resultado": null,
+      "resultado": "5,1%",
       "impacto": {
         "di": "volatil"
       },
@@ -58,14 +61,17 @@
       "importancia": 2,
       "anterior": null,
       "consenso": "superávit de R$ 47,55 bi",
-      "resultado": null,
+      "resultado": "superávit de R$ 52,3 bi",
       "impacto": {
         "di": "volatil",
         "wdo": "volatil"
       },
       "nota": "Superávit esperado segundo o InfoMoney; número entra no debate fiscal com a chegada de Trabuco à Fazenda.",
       "tipo": "resultado-primario",
-      "surpresa": null
+      "surpresa": {
+        "direcao": "acima",
+        "reacao": "Superávit maior que o esperado tende a aliviar o prêmio de risco fiscal, o que costuma favorecer queda nos vértices longos do DI e algum alívio no dólar."
+      }
     },
     {
       "data": "2026-11-29",
