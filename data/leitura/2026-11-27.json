@@ -1,0 +1,164 @@
+{
+ "tipo": "pregao",
+ "data": "2026-11-27",
+ "gerado_em": "2026-11-27T07:50:00-03:00",
+ "titulo": "Trabuco confirmado na Fazenda; NY volta com futuros em alta forte",
+ "resumo": [
+  "No último pregão (quinta, 26), o Ibovespa disparou 6,07%, aos 176.800 pontos, e o dólar à vista recuou 1,23%, a R$ 5,7464, segundo o InfoMoney; a CNN Brasil relatou queda dos juros futuros ao longo de toda a curva. O gatilho foi a escolha de Luiz Carlos Trabuco para a Fazenda.",
+  "À noite, o Planalto confirmou por nota que Trabuco, presidente do conselho do Bradesco, aceitou comandar a Fazenda em 2027 (CNN Brasil). Depois de duas sessões de forte alívio, o teste de hoje é se o prêmio fiscal no DI longo e no WDO continua cedendo ou se há realização.",
+  "Nova York reabre após a Ação de Graças com pregão reduzido (fecha às 15h de Brasília). Antes da abertura, o InfoMoney mostrava S&P 500 futuro +1,80% e Nasdaq futuro +2,58%, puxados pela recuperação das ações de tecnologia e IA; na Ásia, Xangai +3,73% e Nikkei +2,11%.",
+  "Petróleo segue em alta (Brent +1,20%, a US$ 97,73, segundo o InfoMoney), com ataques a petroleiros no Estreito de Ormuz e à infraestrutura de energia saudita: ajuda Petrobras no WIN, mas pressiona expectativas de inflação e os DIs.",
+  "Agenda local cedo: IGP-M de novembro às 8h (expectativa de 0,94%) e desemprego da PNAD às 9h (projeção de 5,1%), segundo o InfoMoney; o resultado primário do Governo Central (superávit esperado de R$ 47,55 bi) também sai hoje e entra no debate fiscal."
+ ],
+ "pontos": [
+  {
+   "titulo": "Trabuco confirmado na Fazenda para 2027",
+   "texto": "Após Ibovespa +6,07% e dólar −1,23%, resta ver se o alívio no DI longo e no WDO se sustenta."
+  },
+  {
+   "titulo": "Futuros de NY sobem forte; pregão curto",
+   "texto": "S&P futuro +1,80% favorece risco no WIN; NY fecha às 15h e a liquidez cai à tarde."
+  },
+  {
+   "titulo": "IGP-M às 8h e desemprego às 9h",
+   "texto": "Inflação no atacado e mercado de trabalho mexem nos vértices do DI logo na abertura."
+  }
+ ],
+ "termometro": {
+  "win": {
+   "leitura": "bullish",
+   "motivo": "S&P futuro +1,80%, Nasdaq futuro +2,58% e Ásia em alta forte (Xangai +3,73%), em linha com o sinal quantitativo; realização após a alta de 6,07% é o risco para essa leitura."
+  },
+  "wdo": {
+   "leitura": "bearish",
+   "motivo": "Confirmação de Trabuco e apetite global por risco (VIX −7,01%) favorecem o real, em linha com o sinal quantitativo; DXY firme (+0,14%) e correção após duas quedas fortes podem frear."
+  }
+ },
+ "destaques": [
+  {
+   "hora": "8h",
+   "evento": "IGP-M de novembro (FGV)",
+   "por_que": "Expectativa de 0,94% (InfoMoney); outubro: 1,47%. Inflação no atacado mexe nos DIs curtos."
+  },
+  {
+   "hora": "9h",
+   "evento": "Desemprego — PNAD Contínua (IBGE)",
+   "por_que": "Projeção de 5,1% (InfoMoney); mercado de trabalho apertado sustenta inflação de serviços e juros altos."
+  },
+  {
+   "hora": "15h",
+   "evento": "NY encerra pregão reduzido",
+   "por_que": "Sem referência de Nova York na última parte do pregão, WIN e WDO tendem a operar com liquidez menor."
+  }
+ ],
+ "exterior": [
+  {
+   "ativo": "S&P 500 fut.",
+   "variacao": "+1,80%"
+  },
+  {
+   "ativo": "Nasdaq fut.",
+   "variacao": "+2,58%"
+  },
+  {
+   "ativo": "Xangai",
+   "variacao": "+3,73%"
+  },
+  {
+   "ativo": "Nikkei",
+   "variacao": "+2,11%"
+  },
+  {
+   "ativo": "Brent",
+   "variacao": "+1,20%"
+  },
+  {
+   "ativo": "Minério (Dalian)",
+   "variacao": "−0,30%"
+  }
+ ],
+ "noticias": [
+  {
+   "titulo": "Planalto confirma que Trabuco aceitou comandar a Fazenda em 2027",
+   "fonte": "CNN Brasil",
+   "hora": "20h11",
+   "url": "https://www.cnnbrasil.com.br/politica/planalto-confirma-que-trabuco-aceitou-convite-para-comandar-fazenda/",
+   "por_que": "A nota oficial tira a dúvida que ainda existia no fechamento de ontem; nome visto como técnico tende a reduzir o prêmio de risco fiscal.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa",
+    "di": "baixa"
+   }
+  },
+  {
+   "titulo": "Economistas veem mais credibilidade com Trabuco; juros futuros caem em toda a curva",
+   "fonte": "CNN Brasil",
+   "hora": "15h51",
+   "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/trabuco-na-fazenda-traz-maior-credibilidade-ao-lula-4-apontam-economistas/",
+   "por_que": "Parte dos economistas ouvidos pede cautela: sem respaldo político para cortar gastos, o efeito pode ser limitado, o que mantém o DI longo sensível a qualquer sinal fiscal.",
+   "impacto": {
+    "di": "baixa",
+    "wdo": "baixa"
+   }
+  },
+  {
+   "titulo": "Futuros de NY sobem com tecnologia no retorno da Ação de Graças",
+   "fonte": "InfoMoney",
+   "hora": "05h51",
+   "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-sobe-mais-de-1-no-retorno-do-feriado-de-acao-de-gracas/",
+   "por_que": "S&P futuro +1,80% e Nasdaq futuro +2,58% em sessão de horário reduzido; apetite por risco lá fora costuma ajudar o WIN e o real.",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa"
+   }
+  },
+  {
+   "titulo": "Bolsas da Ásia sobem com ações de IA; Kospi avança 4,2% e Xangai 3,2%",
+   "fonte": "AP",
+   "hora": "03h32",
+   "url": "https://www.ksat.com/business/2026/11/27/asian-shares-mostly-rise-ahead-of-wall-streets-reopening-after-thanksgiving/",
+   "por_que": "A alta forte na China ajuda o humor com emergentes e com nomes ligados a commodities; o minério em Dalian, porém, recuou 0,30% (InfoMoney).",
+   "impacto": {
+    "win": "alta",
+    "wdo": "baixa"
+   }
+  },
+  {
+   "titulo": "Dólar global caminha para o 3º mês de alta, com apostas de alta de 0,5 ponto do Fed perdendo força",
+   "fonte": "Reuters",
+   "hora": "madrugada",
+   "url": "https://wkzo.com/2026/11/27/morning-bid-is-this-a-dead-turkey-bounce/",
+   "por_que": "Segundo a Reuters, o rali de risco elevou um pouco os Treasuries; dólar forte lá fora limita o espaço de queda do WDO mesmo com o alívio local.",
+   "impacto": {
+    "wdo": "alta",
+    "di": "alta"
+   }
+  }
+ ],
+ "fontes": [
+  {
+   "titulo": "InfoMoney — Trabuco na Fazenda, desemprego e IGP-M movimentam os mercados nesta sexta-feira",
+   "url": "https://www.infomoney.com.br/mercados/trabuco-fazenda-desemprego-igp-m-agenda-27112026/"
+  },
+  {
+   "titulo": "CNN Brasil — Planalto confirma que Trabuco aceitou convite para comandar Fazenda",
+   "url": "https://www.cnnbrasil.com.br/politica/planalto-confirma-que-trabuco-aceitou-convite-para-comandar-fazenda/"
+  },
+  {
+   "titulo": "CNN Brasil — Trabuco na Fazenda traz maior credibilidade ao Lula 4, apontam economistas",
+   "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/trabuco-na-fazenda-traz-maior-credibilidade-ao-lula-4-apontam-economistas/"
+  },
+  {
+   "titulo": "InfoMoney — Dow Jones Futuro sobe mais de 1% no retorno do feriado de Ação de Graças",
+   "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-sobe-mais-de-1-no-retorno-do-feriado-de-acao-de-gracas/"
+  },
+  {
+   "titulo": "AP (via KSAT) — Global shares mostly rise ahead of Wall Street's reopening after Thanksgiving",
+   "url": "https://www.ksat.com/business/2026/11/27/asian-shares-mostly-rise-ahead-of-wall-streets-reopening-after-thanksgiving/"
+  },
+  {
+   "titulo": "Reuters (via WKZO) — Morning Bid: Is this a dead turkey bounce?",
+   "url": "https://wkzo.com/2026/11/27/morning-bid-is-this-a-dead-turkey-bounce/"
+  }
+ ]
+}
