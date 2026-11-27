@@ -2256,8 +2256,23 @@
    "win": 0.068,
    "win_abertura": true,
    "wdo": -0.125
+  },
+  {
+   "id": "2026-11-27|09h|pnad",
+   "data": "2026-11-27",
+   "hora": "09h",
+   "tipo": "pnad",
+   "evento": "Taxa de desemprego — PNAD Contínua (trim. até out, IBGE)",
+   "pais": "BR",
+   "resultado": "5,1%",
+   "consenso": "5,1%",
+   "surpresa": "em linha",
+   "win": 1.835,
+   "win_abertura": true,
+   "wdo": -2.13,
+   "wdo_abertura": true
   }
  ],
- "atualizado_em": "2026-11-26T12:50:25-03:00",
+ "atualizado_em": "2026-11-27T12:50:26-03:00",
  "metodo_di": "dia: taxa prefixada de 2 anos (Tesouro, manhã) do dia do dado ao pregão seguinte. Fonte: Tesouro Transparente (preços e taxas do Tesouro Direto)."
 }
