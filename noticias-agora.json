@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T14:05-03:00",
+  "atualizado_em": "2026-11-27T14:08-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -191,11 +191,11 @@
     ],
     [
      "13:50",
-     176745.0
+     176701.0
     ],
     [
-     "13:51",
-     176710.0
+     "13:53",
+     176753.0
     ]
    ]
   },
@@ -444,11 +444,11 @@
     ],
     [
      "14:05",
-     5.5332
+     5.5302
     ],
     [
-     "14:06",
-     5.5347
+     "14:08",
+     5.5312
     ]
    ]
   },
@@ -961,6 +961,21 @@
      "DI"
     ],
     "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:06",
+    "titulo": "Pluxee e Petrobras integram grupo sobre segurança alimentar de trabalhadores na ONU",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pluxee-e-petrobras-integram-grupo-sobre-seguranca-alimentar-de-trabalhadores-na-onu.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
     "ibov30": null,
     "dolar30": null
    }
@@ -1662,6 +1677,19 @@
     "DI"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Pluxee e Petrobras integram grupo sobre segurança alimentar de trabalhadores na ONU",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pluxee-e-petrobras-integram-grupo-sobre-seguranca-alimentar-de-trabalhadores-na-onu.shtml",
+   "publicado": "2026-11-27T14:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
   }
  ],
  "enviadas": [
@@ -1691,7 +1719,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T14:05-03:00",
+ "atualizado_em": "2026-11-27T14:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1704,6 +1732,34 @@
   "Money Times"
  ],
  "noticias": [
+  {
+   "titulo": "Pluxee e Petrobras integram grupo sobre segurança alimentar de trabalhadores na ONU",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pluxee-e-petrobras-integram-grupo-sobre-seguranca-alimentar-de-trabalhadores-na-onu.shtml",
+   "publicado": "2026-11-27T14:06-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "Petrobras e Vale derrubam ritmo do Ibovespa, enquanto dólar segue abaixo de R$ 5,56",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVcmttTWVDV3ZxMmFxeU5LcGZpZnRObGRxVUZ2S2ZOQlZpYkV5UDI4U19maXZUOFBHVzhhODZCQTRkQmtULUIwMEJneFVjWVc2NE4yWEtvelEtTnpOejBOYWNxZXBMMFl1NlFr?oc=5",
+   "publicado": "2026-11-27T13:58-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
   {
    "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
    "fonte": "Folha",
