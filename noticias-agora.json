@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T17:05-03:00",
+  "atualizado_em": "2026-11-27T17:08-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -332,6 +332,10 @@
     [
      "16:45",
      177463.0
+    ],
+    [
+     "16:50",
+     177625.0
     ]
    ]
   },
@@ -724,7 +728,11 @@
     ],
     [
      "17:05",
-     5.5142
+     5.5132
+    ],
+    [
+     "17:08",
+     5.513
     ]
    ]
   },
@@ -2247,7 +2255,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T17:05-03:00",
+ "atualizado_em": "2026-11-27T17:08-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2256,10 +2264,21 @@
   "CNN Brasil",
   "Estadão",
   "Exame",
-  "Folha",
-  "InfoMoney"
+  "Folha"
  ],
  "noticias": [
+  {
+   "titulo": "Ibovespa destoa do otimismo com Trabuco e perde força; dólar cai mais de 3% e fica abaixo de R$ 5,53",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVcmttTWVDV3ZxMmFxeU5LcGZpZnRObGRxVUZ2S2ZOQlZpYkV5UDI4U19maXZUOFBHVzhhODZCQTRkQmtULUIwMEJneFVjWVc2NE4yWEtvelEtTnpOejBOYWNxZXBMMFl1NlFr?oc=5",
+   "publicado": "2026-11-27T16:37-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Qual será a política fiscal de Lula 4?",
    "fonte": "Folha",
@@ -2268,18 +2287,6 @@
    "impacto": "medio",
    "ativos": [
     "DI"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "Ibovespa destoa do otimismo com Trabuco e perde força; dólar cai mais de 3% e fica abaixo de R$ 5,53",
-   "fonte": "Exame",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVcmttTWVDV3ZxMmFxeU5LcGZpZnRObGRxVUZ2S2ZOQlZpYkV5UDI4U19maXZUOFBHVzhhODZCQTRkQmtULUIwMEJneFVjWVc2NE4yWEtvelEtTnpOejBOYWNxZXBMMFl1NlFr?oc=5",
-   "publicado": "2026-11-27T16:30-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
    ],
    "tickers": []
   },
@@ -2332,19 +2339,6 @@
    ],
    "tickers": [
     "B3SA3"
-   ]
-  },
-  {
-   "titulo": "Pluxee e Petrobras integram grupo sobre segurança alimentar de trabalhadores na ONU",
-   "fonte": "Folha",
-   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/colunas/painelsa/2026/11/pluxee-e-petrobras-integram-grupo-sobre-seguranca-alimentar-de-trabalhadores-na-onu.shtml",
-   "publicado": "2026-11-27T14:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "PETR4"
    ]
   }
  ]
