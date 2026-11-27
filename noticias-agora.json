@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:33-03:00",
+  "atualizado_em": "2026-11-27T10:35-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -19,11 +19,11 @@
     ],
     [
      "10:15",
-     182944.0
+     182685.0
     ],
     [
-     "10:18",
-     182757.0
+     "10:20",
+     182582.0
     ]
    ]
   },
@@ -100,11 +100,11 @@
     ],
     [
      "10:30",
-     5.5359
+     5.5396
     ],
     [
-     "10:33",
-     5.5383
+     "10:35",
+     5.5396
     ]
    ]
   },
@@ -287,7 +287,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": null
+    "dolar30": 0.69
    },
    {
     "hora": "10:12",
@@ -824,7 +824,7 @@
    "em": "2026-11-27T13:23:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:33-03:00",
+ "atualizado_em": "2026-11-27T10:35-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1002,6 +1002,18 @@
    "tickers": []
   },
   {
+   "titulo": "Inadimplência bate novo recorde em outubro, segundo Banco Central",
+   "fonte": "CNN Brasil",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVVJodjlLQU5nNWNkdGQwY05GWnZzREdkSlRfNE9rWmtjTUM5SWgwT3FnVGJwWUJETldFWjVZQ2xVU1pNUUh5Z0UxNzR3SlBXdFZTRlRaRU9SamQ2YTNIS2dHUy1jN1lKNFNmY3N2THdSOElFd1VPSkhEbks0M1pRSXhWZjlRQXdmSlF6Mm5FYVpzN29QZk1OVHUyeU9GWi1XcnBkeV9B?oc=5",
+   "publicado": "2026-11-27T09:08-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WDO",
+    "DI"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "Axia Energia (AXIA3), Banco do Brasil (BBAS3), Banco BRB e outros destaques desta sexta-feira (27)",
    "fonte": "Money Times",
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVlFCTFFDbGRKN2xfQjlGdEFhSUUxOE1sdXN6OUdMNFJLY0RZVWRkVl9Ra09HVU5wNGE3ZDNISjE5VnZDckpsalM4ZVFKVFYwaG5PY1U0a044aGJLUXpQNkpCVHN1VVdvT2dsT2JBUWFjR1lwVDF1b1RQSktaMFNwMXk3RllzcFFvTGJqZFRMYjRJaUFVWERLdU12dENfdi1VV2R6ZDJfcGxOVS0tSGJtSHd4T2puOUZoM25VN2dzZlc?oc=5",
@@ -1014,17 +1026,6 @@
     "AXIA3",
     "BBAS3"
    ]
-  },
-  {
-   "titulo": "Dólar despenca a R$ 5,53 após escolha de Trabuco para a Fazenda",
-   "fonte": "CNN Brasil",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRF9BUGlndXZLTWUxUUhXbzJpUG16aTlhUHJ1MWJwX2pZZU1MTnY4bUJpM2VFU2wzdy1IWlJxSjJWWGlhTVc4OGZYbXBwSXlkMU5CdzNhRDNMaFJ5bDl4X2FGSTJ6Z3dMZi1Pc2hRZHZLUFdTQTN5TWpRSWwxdk5IaFZVSUZ4b0R1bVlYc1Z1a19pTi1yZEZGYVU1RktRbkE0VkRCR0d3?oc=5",
-   "publicado": "2026-11-27T09:06-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WDO"
-   ],
-   "tickers": []
   }
  ]
 }
