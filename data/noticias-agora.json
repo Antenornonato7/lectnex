@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T14:08-03:00",
+  "atualizado_em": "2026-11-27T14:38-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -191,11 +191,35 @@
     ],
     [
      "13:50",
-     176701.0
+     176657.0
     ],
     [
-     "13:53",
-     176753.0
+     "13:55",
+     176886.0
+    ],
+    [
+     "14:00",
+     176615.0
+    ],
+    [
+     "14:05",
+     176611.0
+    ],
+    [
+     "14:10",
+     176422.0
+    ],
+    [
+     "14:15",
+     176417.0
+    ],
+    [
+     "14:20",
+     176449.0
+    ],
+    [
+     "14:23",
+     176398.0
     ]
    ]
   },
@@ -444,11 +468,35 @@
     ],
     [
      "14:05",
-     5.5302
+     5.5279
     ],
     [
-     "14:08",
-     5.5312
+     "14:10",
+     5.5309
+    ],
+    [
+     "14:15",
+     5.5338
+    ],
+    [
+     "14:20",
+     5.5336
+    ],
+    [
+     "14:25",
+     5.5324
+    ],
+    [
+     "14:30",
+     5.5217
+    ],
+    [
+     "14:35",
+     5.5297
+    ],
+    [
+     "14:38",
+     5.532
     ]
    ]
   },
@@ -952,6 +1000,23 @@
     "dolar30": -0.41
    },
    {
+    "hora": "13:17",
+    "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "PETR4",
+     "VALE3"
+    ],
+    "ibov30": -0.03,
+    "dolar30": -0.37
+   },
+   {
     "hora": "13:48",
     "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
     "fonte": "Folha",
@@ -961,8 +1026,8 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
-    "dolar30": null
+    "ibov30": -0.16,
+    "dolar30": -0.09
    },
    {
     "hora": "14:06",
@@ -975,6 +1040,37 @@
     ],
     "tickers": [
      "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": 0.03
+   },
+   {
+    "hora": "14:13",
+    "titulo": "Petrobras recua com queda do dólar e desvalorização do petróleo",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0ZySU1sT1RQRERCQ1UybWRqT1JHZnowWi1aSWdkWWVCYzAyRk5QVXlZekYzOUp2cDd6ZDBUZk9DcmozMm9Jd191U09sWDlLd3hqcGFlV3VsUTJ1Q3YwbE9jVzhRNUgxcUMzZkZFc2RFcTB3VEtZUERQY3RiODcyb0x4d0tiaGl3XzdhdS1TNXJmakNqVEh6RjJMZEkxZDFLNnFjZzhxbS1aeTNlTXQ3eDRTRUllc3RlcXJQenJn0gHMAUFVX3lxTFBaT1BJSWJITVZaQXdHYkFpdHdUbDc3YjZmSlRlMTRYRk8wcGRJRzVwRFBvdm9VeUg4Und6V1dvZjBxZ0ZDeWxjQWVBSm4tU29KZVpXZUVfN2UyYTlLVGx4czBOZ0RFbk5zWHgySm1fck1mU1BNWlJCTXowY3AwSkswMUxVMWdzaUhiUWtwZVpTdEQwS3dHdUY2cmhjb2cxRDY3ZjVJQ1A5ODR0RWE2NV82ckE5WVFVV0tCaUdBWFl6YlRFUjctTk5TSUZJbg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": 0.02
+   },
+   {
+    "hora": "14:14",
+    "titulo": "B3 fecha acordo com bancos para criar stablecoin em reais",
+    "fonte": "Folha",
+    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-fecha-acordo-com-bancos-para-criar-stablecoin-em-reais.shtml",
+    "impacto": "medio",
+    "ativos": [
+     "WIN"
+    ],
+    "tickers": [
+     "B3SA3"
     ],
     "ibov30": null,
     "dolar30": null
@@ -1668,6 +1764,21 @@
    ]
   },
   {
+   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-27T13:17-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4",
+    "VALE3"
+   ]
+  },
+  {
    "titulo": "Bancos estrangeiros elogiam Trabuco e condicionam melhora fiscal à autonomia dele na Fazenda",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/bancos-estrangeiros-elogiam-trabuco-e-condicionam-melhora-fiscal-a-autonomia-dele-na-fazenda.shtml",
@@ -1689,6 +1800,33 @@
    ],
    "tickers": [
     "PETR4"
+   ]
+  },
+  {
+   "titulo": "Petrobras recua com queda do dólar e desvalorização do petróleo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0ZySU1sT1RQRERCQ1UybWRqT1JHZnowWi1aSWdkWWVCYzAyRk5QVXlZekYzOUp2cDd6ZDBUZk9DcmozMm9Jd191U09sWDlLd3hqcGFlV3VsUTJ1Q3YwbE9jVzhRNUgxcUMzZkZFc2RFcTB3VEtZUERQY3RiODcyb0x4d0tiaGl3XzdhdS1TNXJmakNqVEh6RjJMZEkxZDFLNnFjZzhxbS1aeTNlTXQ3eDRTRUllc3RlcXJQenJn0gHMAUFVX3lxTFBaT1BJSWJITVZaQXdHYkFpdHdUbDc3YjZmSlRlMTRYRk8wcGRJRzVwRFBvdm9VeUg4Und6V1dvZjBxZ0ZDeWxjQWVBSm4tU29KZVpXZUVfN2UyYTlLVGx4czBOZ0RFbk5zWHgySm1fck1mU1BNWlJCTXowY3AwSkswMUxVMWdzaUhiUWtwZVpTdEQwS3dHdUY2cmhjb2cxRDY3ZjVJQ1A5ODR0RWE2NV82ckE5WVFVV0tCaUdBWFl6YlRFUjctTk5TSUZJbg?oc=5",
+   "publicado": "2026-11-27T14:13-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
+   "titulo": "B3 fecha acordo com bancos para criar stablecoin em reais",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-fecha-acordo-com-bancos-para-criar-stablecoin-em-reais.shtml",
+   "publicado": "2026-11-27T14:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
    ]
   }
  ],
@@ -1719,7 +1857,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T14:08-03:00",
+ "atualizado_em": "2026-11-27T14:38-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1729,9 +1867,37 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "B3 fecha acordo com bancos para criar stablecoin em reais",
+   "fonte": "Folha",
+   "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-fecha-acordo-com-bancos-para-criar-stablecoin-em-reais.shtml",
+   "publicado": "2026-11-27T14:14-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Petrobras recua com queda do dólar e desvalorização do petróleo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0ZySU1sT1RQRERCQ1UybWRqT1JHZnowWi1aSWdkWWVCYzAyRk5QVXlZekYzOUp2cDd6ZDBUZk9DcmozMm9Jd191U09sWDlLd3hqcGFlV3VsUTJ1Q3YwbE9jVzhRNUgxcUMzZkZFc2RFcTB3VEtZUERQY3RiODcyb0x4d0tiaGl3XzdhdS1TNXJmakNqVEh6RjJMZEkxZDFLNnFjZzhxbS1aeTNlTXQ3eDRTRUllc3RlcXJQenJn0gHMAUFVX3lxTFBaT1BJSWJITVZaQXdHYkFpdHdUbDc3YjZmSlRlMTRYRk8wcGRJRzVwRFBvdm9VeUg4Und6V1dvZjBxZ0ZDeWxjQWVBSm4tU29KZVpXZUVfN2UyYTlLVGx4czBOZ0RFbk5zWHgySm1fck1mU1BNWlJCTXowY3AwSkswMUxVMWdzaUhiUWtwZVpTdEQwS3dHdUY2cmhjb2cxRDY3ZjVJQ1A5ODR0RWE2NV82ckE5WVFVV0tCaUdBWFl6YlRFUjctTk5TSUZJbg?oc=5",
+   "publicado": "2026-11-27T14:13-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
   {
    "titulo": "Pluxee e Petrobras integram grupo sobre segurança alimentar de trabalhadores na ONU",
    "fonte": "Folha",
@@ -1772,17 +1938,18 @@
    "tickers": []
   },
   {
-   "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
+   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
    "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNYnVOMl9LdVc3VmlLczZnNTdvc2RXM3Y3ZGt1TUQyd2NwUzF0SHVhNUx3SUQtREVJcURGNGNYTGt1SmVXcXhYdmlfSllDX1lzNVVPNV9fOVdYc184UVd0cTVycDE0dmpiLU1EY3lrTWJLM2NhYUMwdXpxcWRTd3RRRnJDSmdrb2wtM3VvRnBJS0g2ejdFa2NOYVhOcVFGNUwwc2FPUjQ3cEhDWmxRUDZ2Z21ENXFxM0V3LUNyc2hreklZa3djS0hXc2tkdWtidUotVnV3?oc=5",
-   "publicado": "2026-11-27T13:13-03:00",
-   "impacto": "medio",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
+   "publicado": "2026-11-27T13:17-03:00",
+   "impacto": "alto",
    "ativos": [
-    "WIN"
+    "WIN",
+    "WDO"
    ],
    "tickers": [
-    "HAPV3",
-    "PETR4"
+    "PETR4",
+    "VALE3"
    ]
   },
   {
@@ -1817,6 +1984,20 @@
     "WDO"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZEN5YWJuTi1YaTRpRFdMbGRtNzc4bUN2Rk0wbXdfenVoWGJ5aEFBVXpMU2twVGk4LTk2LVVfWUtzM2x2cWNpQkpmUHcwLWZrQUFGVzhaX3VBc0NOVGkzUDJrR3o3Q0ZXM2tIbGFxSmpQOXdTTHUta3o5ellFTlE4eVJGcVJxY0lZQlltVnRFREpsWlp6QjlQLTZ3NC1JTUswcWpveU1fdWhlMF9EUElYTDZ4Qms3bC1ZMXpTczdXWG5raFRCYmxtZdIBzgFBVV95cUxOeHMzeHRiVWtjM0xxaUd5VmVhZVVTcFJ5cmp6bGJZMXN6X3VyNE5ES2FybHRBUExrTm9nTDVwQTk1WklacnhsU1ZPbUIzM1V1VEJVRFB6b09DcWdaaS1MQ3F0OENSY0ktMV9tVFhFcFNZNmcwWXB2MXlTRmVuNUtYWW9tM3I4NGtOUjlKanlJUTBwdXc5bXRwZkpFTWwzVWJGbWNwRHQzNndjdkVSMDRuVmhPUTZRXzBkZUY0c2RLN2ZaT1hPcUNhNTl3RzM0UQ?oc=5",
+   "publicado": "2026-11-27T13:05-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WIN"
+   ],
+   "tickers": [
+    "HAPV3",
+    "PETR4"
+   ]
   },
   {
    "titulo": "Por que Petrobras (PETR4) recua em dia de altas no Ibovespa?",
