@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T10:20-03:00",
+  "atualizado_em": "2026-11-27T10:23-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -11,7 +11,11 @@
     ],
     [
      "10:05",
-     176996.0
+     176901.0
+    ],
+    [
+     "10:08",
+     176896.0
     ]
    ]
   },
@@ -80,7 +84,11 @@
     ],
     [
      "10:20",
-     5.5104
+     5.5189
+    ],
+    [
+     "10:23",
+     5.5231
     ]
    ]
   },
@@ -250,7 +258,7 @@
     ],
     "tickers": [],
     "ibov30": null,
-    "dolar30": 0.06
+    "dolar30": 0.22
    },
    {
     "hora": "10:10",
@@ -273,6 +281,19 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "10:20",
+    "titulo": "Dólar cai abaixo de R$ 5,50 com 'efeito Trabuco': é hora de comprar?",
+    "fonte": "Exame",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcDh0Mi1uUGNqODNjTkwyR3VEUDAzb0VfSzNFTDRrVmhERWpFOWRSU1BBNmZVajhFOFpua214VWYzYzVQY25Va1JxNVNLa1RJbWVZUmVQNmFnajlYX0drTFBCUTdQd05HalJpSTQ3Nl9oNVJtNksydU1FVmkyWmRib251X3VXbTJFVHA5MEF4X19xT0o0V2dvYWd0RXJfUQ?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
     ],
     "tickers": [],
     "ibov30": null,
@@ -704,6 +725,17 @@
     "WIN"
    ],
    "tickers": []
+  },
+  {
+   "titulo": "Dólar cai abaixo de R$ 5,50 com 'efeito Trabuco': é hora de comprar?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcDh0Mi1uUGNqODNjTkwyR3VEUDAzb0VfSzNFTDRrVmhERWpFOWRSU1BBNmZVajhFOFpua214VWYzYzVQY25Va1JxNVNLa1RJbWVZUmVQNmFnajlYX0drTFBCUTdQd05HalJpSTQ3Nl9oNVJtNksydU1FVmkyWmRib251X3VXbTJFVHA5MEF4X19xT0o0V2dvYWd0RXJfUQ?oc=5",
+   "publicado": "2026-11-27T10:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
   }
  ],
  "enviadas": [
@@ -726,9 +758,14 @@
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSTZKLU9Ka20tYUQ4WDJlZkUtUmxfaG5WeFVwVHZITjVhd1l2aXdSa0JGUFZIcXBoRU5hLWROZWc1bnk5MFNuR01DN1d2SVZWem5sVVdfX3cwZEx0aFVkZzdMd0R3RnVnU2oycGE3R3BoRkQ1T3J6YnpXUmZfVVpWTHpxWTRiRndYMVVwemFNeVozVG02am9nZnFNRHBCNUk0eXRoTGQ1d08tay1S?oc=5",
    "titulo": "Trabuco pode levar ações brasileiras a subir 30% em dólar, diz Bradesco BBI",
    "em": "2026-11-27T12:48:19+00:00"
+  },
+  {
+   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+   "em": "2026-11-27T13:23:02+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T10:20-03:00",
+ "atualizado_em": "2026-11-27T10:23-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -743,6 +780,29 @@
   "Valor"
  ],
  "noticias": [
+  {
+   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+   "fonte": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+   "publicado": "2026-11-27T10:21-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Dólar cai abaixo de R$ 5,50 com 'efeito Trabuco': é hora de comprar?",
+   "fonte": "Exame",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcDh0Mi1uUGNqODNjTkwyR3VEUDAzb0VfSzNFTDRrVmhERWpFOWRSU1BBNmZVajhFOFpua214VWYzYzVQY25Va1JxNVNLa1RJbWVZUmVQNmFnajlYX0drTFBCUTdQd05HalJpSTQ3Nl9oNVJtNksydU1FVmkyWmRib251X3VXbTJFVHA5MEF4X19xT0o0V2dvYWd0RXJfUQ?oc=5",
+   "publicado": "2026-11-27T10:20-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
   {
    "titulo": "Ibovespa salta quase 4% e supera 183 mil pontos com confirmação de Trabuco na Fazenda",
    "fonte": "InfoMoney",
@@ -772,18 +832,6 @@
    "publicado": "2026-11-27T09:51-03:00",
    "impacto": "medio",
    "ativos": [
-    "WDO"
-   ],
-   "tickers": []
-  },
-  {
-   "titulo": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
-   "fonte": "CNBC",
-   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
-   "publicado": "2026-11-27T09:47-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
     "WDO"
    ],
    "tickers": []
@@ -884,19 +932,6 @@
     "WIN"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "“Efeito Trabuco” chega à bolsa: Bradesco BBI eleva Brasil para compra e vê alta de 30%",
-   "fonte": "Money Times",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORWNRZUhEQzRyVVdtNDB0Z19OZGpRTExiUG5wZTJnNldBU1pFR2NLa0tHLVdHdHFsSHRFVEl6TkZvSVJWWTNJSjJHOFBkLVJHc3hHUjdTa1gwTzBCMEsweGFocXVyU3gxZGczMXJySV9xT3JoZi1STm0zc0VXb0pfNHVoNkhXUVRzd2w1WTdjYTdVRnB1OGJhQm9NNzdjU1dJejY4S1p0T2RHVE02d1N6VFJhM09najQwVW1fUmpR?oc=5",
-   "publicado": "2026-11-27T08:21-03:00",
-   "impacto": "medio",
-   "ativos": [
-    "WIN"
-   ],
-   "tickers": [
-    "BBDC4"
-   ]
   },
   {
    "titulo": "Axia Energia (AXIA3) aprova resgate de R$ 6 bilhões em ações preferenciais classe C",
