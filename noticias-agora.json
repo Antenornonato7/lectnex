@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T15:15-03:00",
+  "atualizado_em": "2026-11-27T15:18-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -247,7 +247,11 @@
     ],
     [
      "15:00",
-     176419.0
+     176625.0
+    ],
+    [
+     "15:03",
+     176623.0
     ]
    ]
   },
@@ -552,7 +556,11 @@
     ],
     [
      "15:15",
-     5.5392
+     5.5336
+    ],
+    [
+     "15:18",
+     5.533
     ]
    ]
   },
@@ -1148,6 +1156,19 @@
     "dolar30": 0.24
    },
    {
+    "hora": "14:31",
+    "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
+    "fonte": "Estadão",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcFZBZGlENGNEMjgxeV96UUtyaUh3bzVuNTl0MzZNT0pZUVREdzFIdEwtLW9zZGtiejlpN3pWWVhFV05BdjNZT1RsX2hXZVY3eTRseFN0NFF4dW5weHhNd0tIcVg1NEJNejR3ekN2enAzY3VNbmNfS0xlbjZFcDBETFBsN3U4U3NoY2NKb0lnd25tajYxR1JaZllTVWJsVERCdWRWQ0otR2hBaktPeHVTUGkwdk1ydnotSFBTVVpUdDVDVnlHc0lrSi1QemJqekFNSk5BX2ZR?oc=5",
+    "impacto": "medio",
+    "ativos": [
+     "WDO"
+    ],
+    "tickers": [],
+    "ibov30": 0.11,
+    "dolar30": 0.26
+   },
+   {
     "hora": "14:38",
     "titulo": "PIB da França recua pelo segundo trimestre seguido e país entra em recessão",
     "fonte": "Folha",
@@ -1159,7 +1180,7 @@
      "DI"
     ],
     "tickers": [],
-    "ibov30": null,
+    "ibov30": 0.36,
     "dolar30": -0.19
    }
   ]
@@ -1931,6 +1952,17 @@
    ]
   },
   {
+   "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcFZBZGlENGNEMjgxeV96UUtyaUh3bzVuNTl0MzZNT0pZUVREdzFIdEwtLW9zZGtiejlpN3pWWVhFV05BdjNZT1RsX2hXZVY3eTRseFN0NFF4dW5weHhNd0tIcVg1NEJNejR3ekN2enAzY3VNbmNfS0xlbjZFcDBETFBsN3U4U3NoY2NKb0lnd25tajYxR1JaZllTVWJsVERCdWRWQ0otR2hBaktPeHVTUGkwdk1ydnotSFBTVVpUdDVDVnlHc0lrSi1QemJqekFNSk5BX2ZR?oc=5",
+   "publicado": "2026-11-27T14:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
+   ],
+   "tickers": []
+  },
+  {
    "titulo": "PIB da França recua pelo segundo trimestre seguido e país entra em recessão",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://www1.folha.uol.com.br/mercado/2026/11/pib-da-franca-recua-pelo-segundo-trimestre-seguido-e-pais-entra-em-recessao.shtml",
@@ -1971,7 +2003,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T15:15-03:00",
+ "atualizado_em": "2026-11-27T15:18-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -2005,6 +2037,17 @@
     "WIN",
     "WDO",
     "DI"
+   ],
+   "tickers": []
+  },
+  {
+   "titulo": "Indústria de insumos agrícolas vê custo de produção subir com dólar próximo a R$ 6",
+   "fonte": "Estadão",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcFZBZGlENGNEMjgxeV96UUtyaUh3bzVuNTl0MzZNT0pZUVREdzFIdEwtLW9zZGtiejlpN3pWWVhFV05BdjNZT1RsX2hXZVY3eTRseFN0NFF4dW5weHhNd0tIcVg1NEJNejR3ekN2enAzY3VNbmNfS0xlbjZFcDBETFBsN3U4U3NoY2NKb0lnd25tajYxR1JaZllTVWJsVERCdWRWQ0otR2hBaktPeHVTUGkwdk1ydnotSFBTVVpUdDVDVnlHc0lrSi1QemJqekFNSk5BX2ZR?oc=5",
+   "publicado": "2026-11-27T14:31-03:00",
+   "impacto": "medio",
+   "ativos": [
+    "WDO"
    ],
    "tickers": []
   },
@@ -2073,21 +2116,6 @@
     "DI"
    ],
    "tickers": []
-  },
-  {
-   "titulo": "Dólar fecha em queda, mas fica acima de R$ 5,91; Ibovespa cai com tombo da Vale e da Petrobras",
-   "fonte": "Estadão",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWl9oX25YS1E3cmNiRFRhT3ZDNS1WUy1GQ1Y5MU5HU2lPOUtLSFF0bVZsUmw4eWUyTVFmODhwRnluWTN1dnE3WUt1TDJhTlFvWi01MEJ0UGhENHpZckdRNVBCaGRaaC14U1RpTHJYM3I0S3I2d1gtam9kV2pjU1BEOUFULTRCWDhFNXl2cWlqMHlLeTVmYm9tMmFrckhYQW1JWGk4QU8yQVpEeHJXRVNBSkhLUDRNVnYyQ1lOY1hpem5yYjNab3Jyd0NjVmRleVdRQ3Z2R1FkYXhybGYxQzltY3cxUWE?oc=5",
-   "publicado": "2026-11-27T13:17-03:00",
-   "impacto": "alto",
-   "ativos": [
-    "WIN",
-    "WDO"
-   ],
-   "tickers": [
-    "PETR4",
-    "VALE3"
-   ]
   },
   {
    "titulo": "Hapvida salta quase 12% e Petrobras fica entre as maiores baixas do Ibovespa hoje",
