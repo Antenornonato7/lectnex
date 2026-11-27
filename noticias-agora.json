@@ -1,7 +1,7 @@
 {
  "mercado": {
   "data": "2026-11-27",
-  "atualizado_em": "2026-11-27T14:18-03:00",
+  "atualizado_em": "2026-11-27T14:20-03:00",
   "ibov": {
    "anterior": 176799.84,
    "pontos": [
@@ -199,11 +199,11 @@
     ],
     [
      "14:00",
-     176724.0
+     176615.0
     ],
     [
-     "14:03",
-     176626.0
+     "14:05",
+     176549.0
     ]
    ]
   },
@@ -460,11 +460,11 @@
     ],
     [
      "14:15",
-     5.5337
+     5.5338
     ],
     [
-     "14:18",
-     5.5317
+     "14:20",
+     5.5332
     ]
    ]
   },
@@ -1005,6 +1005,22 @@
     "impacto": "medio",
     "ativos": [
      "WIN"
+    ],
+    "tickers": [
+     "PETR4"
+    ],
+    "ibov30": null,
+    "dolar30": null
+   },
+   {
+    "hora": "14:13",
+    "titulo": "Petrobras recua com queda do dólar e desvalorização do petróleo",
+    "fonte": "Valor",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0ZySU1sT1RQRERCQ1UybWRqT1JHZnowWi1aSWdkWWVCYzAyRk5QVXlZekYzOUp2cDd6ZDBUZk9DcmozMm9Jd191U09sWDlLd3hqcGFlV3VsUTJ1Q3YwbE9jVzhRNUgxcUMzZkZFc2RFcTB3VEtZUERQY3RiODcyb0x4d0tiaGl3XzdhdS1TNXJmakNqVEh6RjJMZEkxZDFLNnFjZzhxbS1aeTNlTXQ3eDRTRUllc3RlcXJQenJn0gHMAUFVX3lxTFBaT1BJSWJITVZaQXdHYkFpdHdUbDc3YjZmSlRlMTRYRk8wcGRJRzVwRFBvdm9VeUg4Und6V1dvZjBxZ0ZDeWxjQWVBSm4tU29KZVpXZUVfN2UyYTlLVGx4czBOZ0RFbk5zWHgySm1fck1mU1BNWlJCTXowY3AwSkswMUxVMWdzaUhiUWtwZVpTdEQwS3dHdUY2cmhjb2cxRDY3ZjVJQ1A5ODR0RWE2NV82ckE5WVFVV0tCaUdBWFl6YlRFUjctTk5TSUZJbg?oc=5",
+    "impacto": "alto",
+    "ativos": [
+     "WIN",
+     "WDO"
     ],
     "tickers": [
      "PETR4"
@@ -1755,6 +1771,20 @@
    ]
   },
   {
+   "titulo": "Petrobras recua com queda do dólar e desvalorização do petróleo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0ZySU1sT1RQRERCQ1UybWRqT1JHZnowWi1aSWdkWWVCYzAyRk5QVXlZekYzOUp2cDd6ZDBUZk9DcmozMm9Jd191U09sWDlLd3hqcGFlV3VsUTJ1Q3YwbE9jVzhRNUgxcUMzZkZFc2RFcTB3VEtZUERQY3RiODcyb0x4d0tiaGl3XzdhdS1TNXJmakNqVEh6RjJMZEkxZDFLNnFjZzhxbS1aeTNlTXQ3eDRTRUllc3RlcXJQenJn0gHMAUFVX3lxTFBaT1BJSWJITVZaQXdHYkFpdHdUbDc3YjZmSlRlMTRYRk8wcGRJRzVwRFBvdm9VeUg4Und6V1dvZjBxZ0ZDeWxjQWVBSm4tU29KZVpXZUVfN2UyYTlLVGx4czBOZ0RFbk5zWHgySm1fck1mU1BNWlJCTXowY3AwSkswMUxVMWdzaUhiUWtwZVpTdEQwS3dHdUY2cmhjb2cxRDY3ZjVJQ1A5ODR0RWE2NV82ckE5WVFVV0tCaUdBWFl6YlRFUjctTk5TSUZJbg?oc=5",
+   "publicado": "2026-11-27T14:13-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
+   ]
+  },
+  {
    "titulo": "B3 fecha acordo com bancos para criar stablecoin em reais",
    "fonte": "Folha",
    "url": "https://redir.folha.com.br/redir/online/mercado/rss091/*https://c-level.folha.uol.com.br/financas/2026/11/b3-fecha-acordo-com-bancos-para-criar-stablecoin-em-reais.shtml",
@@ -1795,7 +1825,7 @@
    "em": "2026-11-27T14:10:29+00:00"
   }
  ],
- "atualizado_em": "2026-11-27T14:18-03:00",
+ "atualizado_em": "2026-11-27T14:20-03:00",
  "janela_horas": 3,
  "fontes_ok": [
   "Agência Brasil",
@@ -1805,7 +1835,8 @@
   "Exame",
   "Folha",
   "InfoMoney",
-  "Money Times"
+  "Money Times",
+  "Valor"
  ],
  "noticias": [
   {
@@ -1819,6 +1850,20 @@
    ],
    "tickers": [
     "B3SA3"
+   ]
+  },
+  {
+   "titulo": "Petrobras recua com queda do dólar e desvalorização do petróleo",
+   "fonte": "Valor",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0ZySU1sT1RQRERCQ1UybWRqT1JHZnowWi1aSWdkWWVCYzAyRk5QVXlZekYzOUp2cDd6ZDBUZk9DcmozMm9Jd191U09sWDlLd3hqcGFlV3VsUTJ1Q3YwbE9jVzhRNUgxcUMzZkZFc2RFcTB3VEtZUERQY3RiODcyb0x4d0tiaGl3XzdhdS1TNXJmakNqVEh6RjJMZEkxZDFLNnFjZzhxbS1aeTNlTXQ3eDRTRUllc3RlcXJQenJn0gHMAUFVX3lxTFBaT1BJSWJITVZaQXdHYkFpdHdUbDc3YjZmSlRlMTRYRk8wcGRJRzVwRFBvdm9VeUg4Und6V1dvZjBxZ0ZDeWxjQWVBSm4tU29KZVpXZUVfN2UyYTlLVGx4czBOZ0RFbk5zWHgySm1fck1mU1BNWlJCTXowY3AwSkswMUxVMWdzaUhiUWtwZVpTdEQwS3dHdUY2cmhjb2cxRDY3ZjVJQ1A5ODR0RWE2NV82ckE5WVFVV0tCaUdBWFl6YlRFUjctTk5TSUZJbg?oc=5",
+   "publicado": "2026-11-27T14:13-03:00",
+   "impacto": "alto",
+   "ativos": [
+    "WIN",
+    "WDO"
+   ],
+   "tickers": [
+    "PETR4"
    ]
   },
   {
