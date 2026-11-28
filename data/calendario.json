@@ -1,92 +1,17 @@
 {
-  "atualizado_em": "2026-11-27T12:45:00-03:00",
+  "atualizado_em": "2026-11-28T07:50:00-03:00",
   "eventos": [
-    {
-      "data": "2026-11-27",
-      "hora": "08h",
-      "pais": "BR",
-      "evento": "IGP-M de novembro (FGV)",
-      "importancia": 1,
-      "anterior": "1,47% (out)",
-      "consenso": "0,94%",
-      "resultado": "1,24%",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Inflação no atacado; corrige contratos de aluguel. Expectativa de alta de 0,94%, segundo o InfoMoney.",
-      "tipo": "igp-m",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "Inflação no atacado acima do esperado costuma pressionar as taxas curtas do DI, com efeito em geral pequeno sobre WIN e WDO por ser indicador de menor peso."
-      }
-    },
-    {
-      "data": "2026-11-27",
-      "hora": "09h",
-      "pais": "BR",
-      "evento": "Taxa de desemprego — PNAD Contínua (trim. até out, IBGE)",
-      "importancia": 2,
-      "anterior": "5,2%",
-      "consenso": "5,1%",
-      "resultado": "5,1%",
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Projeção de 5,1%, segundo o InfoMoney. Mercado de trabalho apertado sustenta a inflação de serviços e mexe nos vértices do DI.",
-      "tipo": "pnad",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-27",
-      "hora": "15h",
-      "pais": "US",
-      "evento": "NY: pregão encurtado (fecha às 13h de Nova York)",
-      "importancia": 1,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "win": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Liquidez menor em NY no pós-feriado de Ação de Graças.",
-      "tipo": "pregao-curto-eua",
-      "surpresa": null
-    },
-    {
-      "data": "2026-11-27",
-      "hora": null,
-      "pais": "BR",
-      "evento": "Resultado primário do Governo Central (out, Tesouro)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": "superávit de R$ 47,55 bi",
-      "resultado": "superávit de R$ 52,3 bi",
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Superávit esperado segundo o InfoMoney; número entra no debate fiscal com a chegada de Trabuco à Fazenda.",
-      "tipo": "resultado-primario",
-      "surpresa": {
-        "direcao": "acima",
-        "reacao": "Superávit maior que o esperado tende a aliviar o prêmio de risco fiscal, o que costuma favorecer queda nos vértices longos do DI e algum alívio no dólar."
-      }
-    },
     {
       "data": "2026-11-29",
       "hora": "22h30",
       "pais": "CN",
       "evento": "PMIs oficiais da China — indústria e serviços (nov, NBS)",
       "importancia": 2,
-      "anterior": null,
-      "consenso": null,
+      "anterior": "49,3 (indústria, out)",
+      "consenso": "49,4 (indústria)",
       "resultado": null,
-      "impacto": {
-        "win": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Sai no domingo à noite (segunda, 9h30 em Pequim; data estimada). Atividade chinesa mexe com minério, Vale e o real.",
+      "impacto": { "win": "volatil", "wdo": "volatil" },
+      "nota": "Sai no domingo à noite (segunda, 9h30 em Pequim). Consenso da pesquisa Reuters; PMI de serviços anterior: 49,7 (Newsquawk). Atividade chinesa mexe com minério, Vale e o real.",
       "tipo": "pmi-china",
       "surpresa": null
     },
@@ -99,10 +24,8 @@
       "anterior": null,
       "consenso": null,
       "resultado": null,
-      "impacto": {
-        "di": "volatil"
-      },
-      "nota": "Projeções do mercado para IPCA, Selic e câmbio; a de IPCA 2026 está acima do teto da meta.",
+      "impacto": { "di": "volatil" },
+      "nota": "Projeções do mercado para IPCA, Selic e câmbio; primeira edição após a confirmação de Trabuco na Fazenda.",
       "tipo": "focus",
       "surpresa": null
     },
@@ -112,15 +35,40 @@
       "pais": "CN",
       "evento": "PMI industrial RatingDog/S&P Global (antigo Caixin, nov)",
       "importancia": 1,
+      "anterior": "52,0",
+      "consenso": "51,5",
+      "resultado": null,
+      "impacto": { "win": "volatil", "wdo": "volatil" },
+      "nota": "Leitura privada da indústria chinesa; sai na noite de segunda (terça, 9h45 em Pequim). Consenso da pesquisa Reuters.",
+      "tipo": "pmi-china-privado",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-01",
+      "hora": "07h",
+      "pais": "EU",
+      "evento": "Inflação ao consumidor da zona do euro — prévia (nov, Eurostat)",
+      "importancia": 2,
+      "anterior": "4,0% em 12 meses",
+      "consenso": null,
+      "resultado": null,
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Inflação europeia mexe nas apostas para o BCE e no dólar global (DXY).",
+      "tipo": "inflacao-zona-euro",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-01",
+      "hora": null,
+      "pais": "BR",
+      "evento": "Vencimento do mini dólar (WDO)",
+      "importancia": 2,
       "anterior": null,
       "consenso": null,
       "resultado": null,
-      "impacto": {
-        "win": "volatil",
-        "wdo": "volatil"
-      },
-      "nota": "Leitura privada da indústria chinesa; sai na noite de segunda (terça, 9h45 em Pequim).",
-      "tipo": "pmi-china-privado",
+      "impacto": { "wdo": "volatil" },
+      "nota": "1º dia útil do mês: rolagem para o contrato de janeiro costuma concentrar volume nos dias anteriores.",
+      "tipo": "vencimento-wdo",
       "surpresa": null
     },
     {
@@ -129,14 +77,11 @@
       "pais": "US",
       "evento": "ISM industrial (nov)",
       "importancia": 2,
-      "anterior": null,
-      "consenso": null,
+      "anterior": "55,5",
+      "consenso": "55,2",
       "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Primeiro dado de atividade de dezembro nos EUA; mexe com Treasuries e o dólar global.",
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Primeiro dado de atividade de dezembro nos EUA; mexe com Treasuries e o dólar global. Consenso segundo a Newsquawk.",
       "tipo": "ism-industrial",
       "surpresa": null
     },
@@ -149,28 +94,9 @@
       "anterior": null,
       "consenso": null,
       "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil"
-      },
-      "nota": "Demanda por trabalho nos EUA antes do payroll e da reunião do Fed de dezembro.",
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Demanda por trabalho nos EUA antes do payroll e da reunião do Fed de 9/12.",
       "tipo": "jolts",
-      "surpresa": null
-    },
-    {
-      "data": "2026-12-01",
-      "hora": null,
-      "pais": "BR",
-      "evento": "Vencimento do mini dólar (WDO)",
-      "importancia": 2,
-      "anterior": null,
-      "consenso": null,
-      "resultado": null,
-      "impacto": {
-        "wdo": "volatil"
-      },
-      "nota": "1º dia útil do mês: rolagem para o contrato de janeiro costuma concentrar volume nos dias anteriores.",
-      "tipo": "vencimento-wdo",
       "surpresa": null
     },
     {
@@ -182,13 +108,23 @@
       "anterior": null,
       "consenso": null,
       "resultado": null,
-      "impacto": {
-        "di": "volatil",
-        "wdo": "volatil",
-        "win": "volatil"
-      },
-      "nota": "Ritmo da atividade pesa na leitura de juros do Copom e nos vértices do DI.",
+      "impacto": { "di": "volatil", "wdo": "volatil", "win": "volatil" },
+      "nota": "Ritmo da atividade pesa na leitura de juros do Copom de 9/12 e nos vértices do DI.",
       "tipo": "pib-brasil",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-02",
+      "hora": "10h15",
+      "pais": "US",
+      "evento": "ADP — emprego privado (nov)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Prévia privada do mercado de trabalho antes do payroll de sexta.",
+      "tipo": "adp",
       "surpresa": null
     },
     {
@@ -200,30 +136,79 @@
       "anterior": null,
       "consenso": null,
       "resultado": null,
-      "impacto": {
-        "di": "volatil",
-        "win": "volatil"
-      },
+      "impacto": { "di": "volatil", "win": "volatil" },
       "nota": "Termômetro da atividade no 4º trimestre.",
       "tipo": "producao-industrial",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-03",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Pedidos de seguro-desemprego (semanal)",
+      "importancia": 1,
+      "anterior": null,
+      "consenso": null,
+      "resultado": null,
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Leitura semanal do mercado de trabalho americano na véspera do payroll.",
+      "tipo": "seguro-desemprego",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-03",
+      "hora": "12h",
+      "pais": "US",
+      "evento": "ISM de serviços (nov)",
+      "importancia": 2,
+      "anterior": "54,5",
+      "consenso": null,
+      "resultado": null,
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Serviços são a maior parte da economia americana; dado forte reforça juros altos nos EUA.",
+      "tipo": "ism-servicos",
       "surpresa": null
     },
     {
       "data": "2026-12-04",
       "hora": "10h30",
       "pais": "US",
-      "evento": "Payroll — criação de vagas e desemprego (nov, BLS)",
+      "evento": "Payroll — criação de vagas (nov, BLS)",
       "importancia": 3,
-      "anterior": null,
-      "consenso": null,
+      "anterior": "165 mil",
+      "consenso": "90 mil",
       "resultado": null,
-      "impacto": {
-        "wdo": "volatil",
-        "di": "volatil",
-        "win": "volatil"
-      },
-      "nota": "Último grande dado de emprego antes da reunião do Fed de dezembro.",
+      "impacto": { "wdo": "volatil", "di": "volatil", "win": "volatil" },
+      "nota": "Último grande dado de emprego antes do Fed de 9/12. Consenso segundo a Newsquawk; emprego forte tende a fortalecer o dólar global.",
       "tipo": "payroll",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-04",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Taxa de desemprego dos EUA (nov, BLS)",
+      "importancia": 2,
+      "anterior": "4,1%",
+      "consenso": "4,1%",
+      "resultado": null,
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Sai junto com o payroll. Consenso segundo a Newsquawk.",
+      "tipo": "desemprego-eua",
+      "surpresa": null
+    },
+    {
+      "data": "2026-12-04",
+      "hora": "10h30",
+      "pais": "US",
+      "evento": "Salário médio por hora nos EUA (nov, BLS)",
+      "importancia": 2,
+      "anterior": "+0,4% no mês",
+      "consenso": "+0,3% no mês",
+      "resultado": null,
+      "impacto": { "wdo": "volatil", "di": "volatil" },
+      "nota": "Pressão salarial pesa nas apostas para o Fed. Consenso segundo a Newsquawk.",
+      "tipo": "salario-eua",
       "surpresa": null
     }
   ]
